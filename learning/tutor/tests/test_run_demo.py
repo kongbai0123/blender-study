@@ -19,7 +19,8 @@ class RunnerTests(unittest.TestCase):
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory(prefix="blender-runner-test-")
         self.addCleanup(self.temp.cleanup)
-        self.root = Path(self.temp.name)
+        # Windows TEMP 可能使用 8.3 別名；與 runner 的安全路徑解析使用同一實體根目錄。
+        self.root = Path(self.temp.name).resolve()
         self.here = self.root / "tutor"
         (self.here / "scenarios").mkdir(parents=True)
         (self.here / "scenarios" / "lesson05.py").write_text("# test", encoding="utf-8")

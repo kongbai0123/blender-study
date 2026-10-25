@@ -58,5 +58,21 @@
     "No native Blender replay or printing/fit/strength qualification in this release check.",
     "Local test results are Windows/Python3.13; hosted workflow separately checks Python3.10 and3.13.",
     "Package manifest will be regenerated for this report and build-only tool cleanup; tested dashboard/tutor/Blender evidence unchanged."
-  ]
+  ],
+  "hostedCiFollowUp": {
+    "initialCommit": "94ed370da7d02fb586ee75cbdc535bea00b7af68",
+    "initialRun": "https://github.com/kongbai0123/blender-study/actions/runs/40213809146",
+    "initialResult": "Both Windows Python 3.10 and 3.13 passed manifest/bootstrap/dashboard checks, then failed 22 tutor tests because fixture paths used a Windows 8.3 alias while validated paths were canonical.",
+    "fix": "Resolve temporary fixture roots before writing evidence JSON or comparing paths; 15 importer fixture roots and one runner fixture root. Production validators, original evidence, learner state and skip conditions are unchanged.",
+    "localRegression": {
+      "condition": "Forced tempfile.tempdir to an actual GetShortPathNameW alias; alias spelling differs and resolves to the same real directory.",
+      "testsRun": 270,
+      "passed": 269,
+      "skipped": 1,
+      "seconds": 23.689,
+      "exitCode": 0,
+      "skipReason": "Existing symlink privilege restriction on this local Windows account; no new skips added."
+    },
+    "followUpHostedResult": "Recorded by GitHub Actions for the follow-up commit; this pre-push report does not assert its future result."
+  }
 }

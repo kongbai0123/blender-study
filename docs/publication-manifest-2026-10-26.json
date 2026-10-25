@@ -165,8 +165,8 @@
     },
     {
       "path": "docs/release-checks-2026-10-26.json",
-      "bytes": 2801,
-      "sha256": "e7a5924b5c7153db21529771aac16e670c6251f5aac92a1d401ecf5e5b8c9e2e",
+      "bytes": 3998,
+      "sha256": "cadb1c1fa120537a69a366ece46737c85c825b03f61e119974992ce20fbec46b",
       "kind": "original_project_file",
       "includedBecause": [
         "portable code/documentation/source facts"
@@ -15599,8 +15599,8 @@
     },
     {
       "path": "learning/tutor/tests/test_import_run.py",
-      "bytes": 246517,
-      "sha256": "2382469c2530e1984fd87dd2645c240bf25645234242d91c038e09f60b584da5",
+      "bytes": 246686,
+      "sha256": "f437804c5c619ce5f7c2728160e649f79f0a040206d0d8e254bfbf98e07a0bfc",
       "kind": "original_project_file",
       "includedBecause": [
         "dependency referenced by docs/release-portability-review-2026-10-26.json",
@@ -15638,8 +15638,8 @@
     },
     {
       "path": "learning/tutor/tests/test_run_demo.py",
-      "bytes": 10169,
-      "sha256": "869bd50c3b9860ad6a2ff27fe82a948f236c2cf3dad36e8d5a4b6a621ee460e0",
+      "bytes": 10291,
+      "sha256": "8bd1f0ed598be79218991a9722d02cab1f119c7f2f60e3e9a08d352a6f148452",
       "kind": "original_project_file",
       "includedBecause": [
         "dependency referenced by docs/release-portability-review-2026-10-26.json",

@@ -1,4 +1,4 @@
-"""證據匯入的完整性與失敗不污染 catalog；全部資料都在 TemporaryDirectory。"""
+"""證據匯入的完整性與失敗不污染 catalog；TemporaryDirectory 根目錄先解析 Windows 8.3 別名。"""
 import copy
 import hashlib
 import importlib.util
@@ -73,7 +73,7 @@ class ImportRunTests(unittest.TestCase):
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory(prefix="blender-import-test-")
         self.addCleanup(self.temp.cleanup)
-        self.project = Path(self.temp.name)
+        self.project = Path(self.temp.name).resolve()
         self.run_dir = self.project / "learning" / "evidence" / "05" / RUN_ID
         self.run_dir.mkdir(parents=True)
         self.catalog_path = self.project / "learning" / "catalog.json"
@@ -242,7 +242,7 @@ class HolePlateImportTests(unittest.TestCase):
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory(prefix="blender-holes-import-test-")
         self.addCleanup(self.temp.cleanup)
-        self.project = Path(self.temp.name)
+        self.project = Path(self.temp.name).resolve()
         self.run_dir = self.project / "learning" / "evidence" / "05" / HOLES_RUN_ID
         self.run_dir.mkdir(parents=True)
         self.catalog_path = self.project / "learning" / "catalog.json"
@@ -394,7 +394,7 @@ class StlExportImportTests(unittest.TestCase):
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory(prefix="blender-stl-import-test-")
         self.addCleanup(self.temp.cleanup)
-        self.project = Path(self.temp.name)
+        self.project = Path(self.temp.name).resolve()
         self.run_dir = self.project / "learning" / "evidence" / "05" / EXPORT_RUN_ID
         self.run_dir.mkdir(parents=True)
         self.catalog_path = self.project / "learning" / "catalog.json"
@@ -566,7 +566,7 @@ class LidGeometryImportTests(unittest.TestCase):
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory(prefix="blender-lid-import-test-")
         self.addCleanup(self.temp.cleanup)
-        self.project = Path(self.temp.name)
+        self.project = Path(self.temp.name).resolve()
         self.run_dir = self.project / "learning" / "evidence" / "05" / LID_RUN_ID
         self.run_dir.mkdir(parents=True)
         self.catalog_path = self.project / "learning" / "catalog.json"
@@ -735,7 +735,7 @@ class LidStlExportImportTests(unittest.TestCase):
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory(prefix="blender-lid-stl-import-test-")
         self.addCleanup(self.temp.cleanup)
-        self.project = Path(self.temp.name)
+        self.project = Path(self.temp.name).resolve()
         self.run_dir = self.project / "learning" / "evidence" / "05" / LID_EXPORT_RUN_ID
         self.run_dir.mkdir(parents=True)
         self.catalog_path = self.project / "learning" / "catalog.json"
@@ -909,7 +909,7 @@ class TenonGeometryImportTests(unittest.TestCase):
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory(prefix="blender-tenon-import-test-")
         self.addCleanup(self.temp.cleanup)
-        self.project = Path(self.temp.name)
+        self.project = Path(self.temp.name).resolve()
         self.run_dir = self.project / "learning" / "evidence" / "06" / TENON_RUN_ID
         self.run_dir.mkdir(parents=True)
         self.catalog_path = self.project / "learning" / "catalog.json"
@@ -1184,7 +1184,7 @@ class DovetailGeometryImportTests(unittest.TestCase):
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory(prefix="blender-dovetail-import-test-")
         self.addCleanup(self.temp.cleanup)
-        self.project = Path(self.temp.name)
+        self.project = Path(self.temp.name).resolve()
         self.run_dir = self.project / "learning" / "evidence" / "06" / DOVETAIL_RUN_ID
         self.run_dir.mkdir(parents=True)
         self.catalog_path = self.project / "learning" / "catalog.json"
@@ -1499,7 +1499,7 @@ class DovetailStlExportImportTests(unittest.TestCase):
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory(prefix="blender-dovetail-stl-import-test-")
         self.addCleanup(self.temp.cleanup)
-        self.project = Path(self.temp.name)
+        self.project = Path(self.temp.name).resolve()
         self.run_dir = self.project / "learning" / "evidence" / "06" / DOVETAIL_EXPORT_RUN_ID
         self.run_dir.mkdir(parents=True)
         self.catalog_path = self.project / "learning" / "catalog.json"
@@ -1783,7 +1783,7 @@ class ThreadParameterImportTests(unittest.TestCase):
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory(prefix="blender-parameter-import-test-")
         self.addCleanup(self.temp.cleanup)
-        self.project = Path(self.temp.name)
+        self.project = Path(self.temp.name).resolve()
         self.run_dir = self.project / "learning" / "evidence" / "08" / THREAD_PARAMETERS_RUN_ID
         self.run_dir.mkdir(parents=True)
         self.catalog_path = self.project / "learning" / "catalog.json"
@@ -1999,7 +1999,7 @@ class CantileverParameterImportTests(unittest.TestCase):
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory(prefix="blender-parameter-import-test-")
         self.addCleanup(self.temp.cleanup)
-        self.project = Path(self.temp.name)
+        self.project = Path(self.temp.name).resolve()
         self.run_dir = self.project / "learning" / "evidence" / "07" / PARAMETERS_RUN_ID
         self.run_dir.mkdir(parents=True)
         self.catalog_path = self.project / "learning" / "catalog.json"
@@ -2230,7 +2230,7 @@ class CantileverSnapImportTests(unittest.TestCase):
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory(prefix="blender-snap-import-test-")
         self.addCleanup(self.temp.cleanup)
-        self.project = Path(self.temp.name)
+        self.project = Path(self.temp.name).resolve()
         self.run_dir = self.project / "learning" / "evidence" / "07" / SNAP_RUN_ID
         self.run_dir.mkdir(parents=True)
         self.catalog_path = self.project / "learning" / "catalog.json"
@@ -2496,7 +2496,7 @@ class PrintOrientationImportTests(unittest.TestCase):
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory(prefix="blender-orientation-import-test-")
         self.addCleanup(self.temp.cleanup)
-        self.project = Path(self.temp.name)
+        self.project = Path(self.temp.name).resolve()
         self.run_dir = self.project / "learning/evidence/07" / OVERHANG_RUN_ID
         self.run_dir.mkdir(parents=True)
         self.catalog_path = self.project / "learning/catalog.json"
@@ -2765,7 +2765,7 @@ class SnapfitCandidateStlImportTests(unittest.TestCase):
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory(prefix="blender-snap-stl-import-test-")
         self.addCleanup(self.temp.cleanup)
-        self.project = Path(self.temp.name)
+        self.project = Path(self.temp.name).resolve()
         self.run_dir = self.project / "learning/evidence/07" / SNAP_EXPORT_RUN_ID
         self.run_dir.mkdir(parents=True)
         self.catalog_path = self.project / "learning/catalog.json"
@@ -3023,7 +3023,7 @@ class CouponStlImportTests(unittest.TestCase):
 
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory(prefix="coupon-stl-import-"); self.addCleanup(self.temp.cleanup)
-        self.project = Path(self.temp.name)
+        self.project = Path(self.temp.name).resolve()
         self.run_dir = self.project / "learning/evidence/07" / COUPON_EXPORT_RUN_ID
         self.run_dir.mkdir(parents=True)
         self.catalog_path = self.project / "learning/catalog.json"
@@ -3228,7 +3228,7 @@ class CouponStlImportTests(unittest.TestCase):
 class LengthCouponImportTests(unittest.TestCase):
     def setUp(self):
         self.temp=tempfile.TemporaryDirectory(prefix='blender-coupons-import-test-');self.addCleanup(self.temp.cleanup)
-        self.project=Path(self.temp.name);self.run_dir=self.project/'learning/evidence/07'/COUPONS_RUN_ID;self.run_dir.mkdir(parents=True)
+        self.project=Path(self.temp.name).resolve();self.run_dir=self.project/'learning/evidence/07'/COUPONS_RUN_ID;self.run_dir.mkdir(parents=True)
         self.catalog_path=self.project/'learning/catalog.json';self.catalog_path.write_text(json.dumps({'lessons':[{'id':'07','steps':[{'id':'07-05','guide':[],'figures':[]}]}]}),encoding='utf-8')
         self.original_catalog=self.catalog_path.read_bytes();self.progress=self.project/'learning/progress.json';self.progress.write_bytes(b'{"revision":18}')
         fs=importlib.util.spec_from_file_location('coupon_import_fixtures',Path(__file__).with_name('test_coupon_checks.py'));self.fixture=importlib.util.module_from_spec(fs);fs.loader.exec_module(self.fixture);self.checks=self.fixture.checks
