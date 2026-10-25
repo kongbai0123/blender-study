@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "reviewDate": "2026-10-26",
+  "scope": "Read-only release portability review of the existing project before the root agent's bootstrap and CI changes.",
+  "reviewer": "release_portability_audit",
+  "reviewedFiles": [
+    ".gitignore",
+    "Start-Learning.cmd",
+    "Stop-Learning.cmd",
+    "learning/Start-Learning.ps1",
+    "learning/Stop-Learning.ps1",
+    "learning/manage.py",
+    "learning/server.py",
+    "learning/tests/test_server.py",
+    "learning/tutor/run_demo.py",
+    "learning/tutor/scenarios/common.py",
+    "learning/tutor/tests/test_run_demo.py",
+    "learning/tutor/tests/test_import_run.py"
+  ],
+  "baselineFindings": [
+    {
+      "id": "fresh-progress",
+      "severity": "release_blocker",
+      "observation": "The original gitignore excludes learning/progress.json. manage.load_state and server.main require this file; the original launcher does not initialize a fresh clone.",
+      "requiredResolution": "Add explicit non-destructive initialization using the existing manage OS lock and atomic write, then exercise it in a release-tree smoke test. Do not publish an author's private progress as a template."
+    },
+    {
+      "id": "server-tests-progress",
+      "severity": "ci_blocker",
+      "observation": "The original DashboardTests.setUp reads and copies the author's learning/progress.json before creating its isolated server.",
+      "requiredResolution": "Initialize an independent scratch state, or initialize a disposable clean checkout before testing. Tests must not create, reset, or advance the author's live progress."
+    },
+    {
+      "id": "parameter-tests-source-scene",
+      "severity": "ci_blocker",
+      "observation": "The parameter-import tests copy the original 04 box Blender scene from learning/evidence/04/2026-10-22-lesson04-demo-v001/demo-files/u04_box_v001.blend. The original gitignore excludes evidence, so a code-only checkout cannot run the full tutor suite.",
+      "requiredResolution": "Include the reviewed source checkpoint and required fixtures in the public release tree, or deliberately redesign the test fixture contract and describe that change. Do not silently skip these tests."
+    },
+    {
+      "id": "platform-scope",
+      "severity": "documentation",
+      "observation": "The local HTTP service and progress code use Python's standard library and platform-specific locks. Native workspace/Blender launching is explicitly Windows-only. Start/Stop launchers use their own resolved script directory rather than a hardcoded author workspace.",
+      "requiredResolution": "Document Windows as the demonstrated native/UI automation platform. Distinguish any Linux CI checks of pure code and HTTP behavior from unperformed Linux Blender event/screenshot reproduction."
+    },
+    {
+      "id": "blender-ui-reproduction",
+      "severity": "documentation",
+      "observation": "run_demo accepts BLENDER_EXE but defaults to a Windows Blender installation. The common UI helper records Windows-specific path separators, 1494 by 1019 window geometry, English labels, and coordinates measured in Blender 5.2.1 LTS.",
+      "requiredResolution": "State the actual demonstrated environment and require fresh evidence for a changed build, UI scale, font, layout, or operating system. A successful mocked runner unit test does not verify native GUI actions."
+    },
+    {
+      "id": "historical-publishers",
+      "severity": "documentation",
+      "observation": "Several historical publish/finalize helpers use a fixed localhost port 8766 and frozen run/progress baselines. They are not general-purpose fresh-clone setup commands.",
+      "requiredResolution": "Treat these helpers as historical authoring/review tools rather than instructing new learners to rerun them."
+    }
+  ],
+  "reportsRouteReview": {
+    "result": "No required privilege expansion identified in the reviewed route.",
+    "constraintsObserved": [
+      "Only flat lower-case slug filenames ending in html or css are accepted under /reports/.",
+      "Resolved report paths must remain under both the reports directory and the web directory.",
+      "The server binds to loopback and checks the HTTP Host header.",
+      "CSP and nosniff are supplied by the common response helper.",
+      "The /files/ extension allowlist does not permit HTML or CSS.",
+      "Existing API tests exercise valid report HTML/CSS and traversal, nested path, script, unknown extension, and missing-file cases."
+    ],
+    "limit": "This is a source-code and test-case review, not a penetration-test certification or a review of every possible browser behavior."
+  },
+  "suggestedBootstrapContract": {
+    "initialState": {
+      "schemaVersion": 1,
+      "revision": 1,
+      "activeLesson": "first catalog lesson",
+      "interfaceLanguage": null,
+      "completedSteps": "empty for all lessons",
+      "notes": "empty for all lessons",
+      "fileVersions": [],
+      "events": [],
+      "workspaces": "project-relative learning/workspaces/<catalog lesson id>"
+    },
+    "invariants": [
+      "Acquire manage.progress_lock, then check whether progress already exists inside the lock.",
+      "Do not overwrite an existing state, including malformed JSON; fail clearly for an unreadable or invalid state.",
+      "Do not copy the author's interface language, hardware, decisions, notes, Blender version, or completion evidence.",
+      "Use manage.atomic_write for the first revision; manage.commit increments a revision and is not the first-state initializer.",
+      "Validate catalog lesson and step identifiers before using any identifier as a path component.",
+      "Resolve workspace boundaries and refuse links that escape the project before creating directories."
+    ]
+  },
+  "minimumNewTests": [
+    "A clean release-tree copy with no progress, workspace, history, runtime, or logs initializes all catalog lessons and can run status and GET /api/bootstrap.",
+    "Re-running initialization preserves an existing progress file byte for byte and does not reset learner state or append events.",
+    "Malformed existing progress is rejected without replacement.",
+    "Malformed or escaping catalog identifiers are rejected before writing progress or creating an out-of-project workspace.",
+    "A held progress lock prevents concurrent initialization from writing a partial state.",
+    "A relocated checkout path containing spaces and non-ASCII text remains usable.",
+    "CI runs the server/progress suite and the tutor suite without a native Blender requirement, while clearly marking native GUI reproduction as outside those tests."
+  ],
+  "executedValidation": [
+    {
+      "command": "python -X utf8 -m unittest discover -s learning/tutor/tests -v",
+      "environment": "Existing Windows working tree with the existing evidence files available",
+      "testsRun": 270,
+      "passed": 269,
+      "skipped": 1,
+      "skipReason": "The Windows account cannot create the symlink needed by one boundary test.",
+      "durationSeconds": 23.989,
+      "exitCode": 0,
+      "limits": "This execution predates the bootstrap/CI release edits and does not establish fresh-clone behavior or native Blender UI reproduction."
+    }
+  ],
+  "unperformed": [
+    "Git clone from the remote repository",
+    "Linux test execution",
+    "Native Blender UI execution",
+    "Final release-tree or GitHub Actions verification after root changes"
+  ]
+}

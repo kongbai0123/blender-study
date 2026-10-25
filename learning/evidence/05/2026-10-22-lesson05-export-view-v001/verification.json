@@ -1,0 +1,4672 @@
+{
+  "passed": true,
+  "kind": "fit_coupon_stl_supplementary_views",
+  "authoritative_export_run": "2026-10-22-lesson05-export-demo-v003",
+  "sources": [
+    {
+      "kind": "pin",
+      "original": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\05\\2026-10-22-lesson05-export-demo-v003\\demo-files\\exports\\u05_fit_coupon_v001.stl",
+      "copy": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\05\\2026-10-22-lesson05-export-view-v001\\demo-files\\sources\\u05_fit_coupon_v001.stl",
+      "sha256": "bc10342c54a94d87c15eccb050fb9b30a7ae00bf4079d4c7869ac53d199db784"
+    },
+    {
+      "kind": "hole_plate",
+      "original": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\05\\2026-10-22-lesson05-export-demo-v003\\demo-files\\exports\\u05_hole_plate_v001.stl",
+      "copy": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\05\\2026-10-22-lesson05-export-view-v001\\demo-files\\sources\\u05_hole_plate_v001.stl",
+      "sha256": "8105d1ebdc04ed12a2b7f98cc3b728db74063c453961c33d165ac50e694c7c8b"
+    }
+  ],
+  "imports": [
+    {
+      "kind": "pin",
+      "filename": "u05_fit_coupon_v001.stl",
+      "object_name": "u05_fit_coupon_v001",
+      "dimensions_mm": [
+        10.000000474974513,
+        10.000000474974513,
+        8.00000037997961
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "non_manifold_edges": 0,
+      "volume_mm3": 800.0001139938881,
+      "stl_sha256": "bc10342c54a94d87c15eccb050fb9b30a7ae00bf4079d4c7869ac53d199db784",
+      "stl_unchanged": true,
+      "stl_dimensions_mm": [
+        10.0,
+        10.0,
+        8.0
+      ]
+    },
+    {
+      "kind": "hole_plate",
+      "filename": "u05_hole_plate_v001.stl",
+      "object_name": "u05_hole_plate_v001",
+      "dimensions_mm": [
+        96.00000455975533,
+        26.000001234933734,
+        4.000000189989805
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "non_manifold_edges": 0,
+      "volume_mm3": 7393.4826553540415,
+      "stl_sha256": "8105d1ebdc04ed12a2b7f98cc3b728db74063c453961c33d165ac50e694c7c8b",
+      "stl_unchanged": true,
+      "stl_dimensions_mm": [
+        96.0,
+        26.0,
+        4.0
+      ],
+      "actual_mesh_verification": {
+        "passed": true,
+        "measurement_source": "evaluated final plate mesh in world-space millimetres",
+        "object_name": "u05_hole_plate_v001",
+        "board_dimensions_mm": [
+          96.0,
+          26.0,
+          4.0
+        ],
+        "board_bounds_mm": {
+          "min": [
+            -48.0,
+            -13.0,
+            -2.0
+          ],
+          "max": [
+            48.0,
+            13.0,
+            2.0
+          ]
+        },
+        "pin_nominal_mm": 10.0,
+        "pin_dimensions_mm": [
+          10.0,
+          10.0,
+          8.0
+        ],
+        "trial_total_clearances_mm": [
+          0.1,
+          0.2,
+          0.3,
+          0.4,
+          0.5,
+          0.6
+        ],
+        "measured_hole_widths_mm": [
+          [
+            10.1000061,
+            10.099999
+          ],
+          [
+            10.2000008,
+            10.1999989
+          ],
+          [
+            10.2999954,
+            10.2999992
+          ],
+          [
+            10.3999996,
+            10.3999987
+          ],
+          [
+            10.5000019,
+            10.4999995
+          ],
+          [
+            10.5999985,
+            10.5999999
+          ]
+        ],
+        "measured_hole_x_mm": [
+          10.1000061,
+          10.2000008,
+          10.2999954,
+          10.3999996,
+          10.5000019,
+          10.5999985
+        ],
+        "measured_hole_y_mm": [
+          10.099999,
+          10.1999989,
+          10.2999992,
+          10.3999987,
+          10.4999995,
+          10.5999999
+        ],
+        "measured_hole_heights_mm": [
+          10.099999,
+          10.1999989,
+          10.2999992,
+          10.3999987,
+          10.4999995,
+          10.5999999
+        ],
+        "through_holes": 6,
+        "holes": [
+          {
+            "number": 1,
+            "centre_mm": [
+              -35.0,
+              2.0
+            ],
+            "nominal_width_mm": 10.1,
+            "width_mm": 10.1000061,
+            "height_mm": 10.099999,
+            "measured_total_clearance_x_mm": 0.1000061,
+            "measured_total_clearance_y_mm": 0.099999,
+            "through_at_centre": true,
+            "vertical_ray_from_above": null,
+            "vertical_ray_from_below": null,
+            "inner_walls": [
+              {
+                "axis": "X",
+                "coordinate_mm": -40.0499992,
+                "bounds_min_mm": [
+                  -40.0499992,
+                  -3.0500007,
+                  -2.0
+                ],
+                "bounds_max_mm": [
+                  -40.0499992,
+                  7.0499983,
+                  2.0
+                ],
+                "area_mm2": 40.3999939,
+                "face_count": 2
+              },
+              {
+                "axis": "X",
+                "coordinate_mm": -29.9499931,
+                "bounds_min_mm": [
+                  -29.9499931,
+                  -3.0500007,
+                  -2.0
+                ],
+                "bounds_max_mm": [
+                  -29.9499931,
+                  7.0499983,
+                  2.0
+                ],
+                "area_mm2": 40.3999939,
+                "face_count": 2
+              },
+              {
+                "axis": "Y",
+                "coordinate_mm": -3.0500007,
+                "bounds_min_mm": [
+                  -40.0499992,
+                  -3.0500007,
+                  -2.0
+                ],
+                "bounds_max_mm": [
+                  -29.9499931,
+                  -3.0500007,
+                  2.0
+                ],
+                "area_mm2": 40.4000244,
+                "face_count": 3
+              },
+              {
+                "axis": "Y",
+                "coordinate_mm": 7.0499983,
+                "bounds_min_mm": [
+                  -40.0499992,
+                  7.0499983,
+                  -2.0
+                ],
+                "bounds_max_mm": [
+                  -29.9499931,
+                  7.0499983,
+                  2.0
+                ],
+                "area_mm2": 40.4000244,
+                "face_count": 2
+              }
+            ],
+            "side_rays": [
+              {
+                "origin_mm": [
+                  -35.0,
+                  2.0,
+                  -1.0
+                ],
+                "direction": [
+                  -1,
+                  0,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    -40.0499992,
+                    2.0,
+                    -1.0
+                  ],
+                  "normal": [
+                    1.0,
+                    0.0,
+                    -0.0
+                  ],
+                  "face_index": 909,
+                  "distance_mm": 5.0499992
+                }
+              },
+              {
+                "origin_mm": [
+                  -35.0,
+                  2.0,
+                  -1.0
+                ],
+                "direction": [
+                  1,
+                  0,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    -29.9499931,
+                    2.0,
+                    -1.0
+                  ],
+                  "normal": [
+                    -1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "face_index": 913,
+                  "distance_mm": 5.0500073
+                }
+              },
+              {
+                "origin_mm": [
+                  -35.0,
+                  2.0,
+                  -1.0
+                ],
+                "direction": [
+                  0,
+                  -1,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    -35.0,
+                    -3.0500007,
+                    -1.0
+                  ],
+                  "normal": [
+                    0.0,
+                    1.0,
+                    0.0
+                  ],
+                  "face_index": 915,
+                  "distance_mm": 5.0500007
+                }
+              },
+              {
+                "origin_mm": [
+                  -35.0,
+                  2.0,
+                  -1.0
+                ],
+                "direction": [
+                  0,
+                  1,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    -35.0,
+                    7.0499983,
+                    -1.0
+                  ],
+                  "normal": [
+                    0.0,
+                    -1.0,
+                    0.0
+                  ],
+                  "face_index": 911,
+                  "distance_mm": 5.0499983
+                }
+              },
+              {
+                "origin_mm": [
+                  -35.0,
+                  2.0,
+                  0.0
+                ],
+                "direction": [
+                  -1,
+                  0,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    -40.0499992,
+                    2.0,
+                    0.0
+                  ],
+                  "normal": [
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "face_index": 910,
+                  "distance_mm": 5.0499997
+                }
+              },
+              {
+                "origin_mm": [
+                  -35.0,
+                  2.0,
+                  0.0
+                ],
+                "direction": [
+                  1,
+                  0,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    -29.9499931,
+                    2.0,
+                    0.0
+                  ],
+                  "normal": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                  ],
+                  "face_index": 914,
+                  "distance_mm": 5.0500073
+                }
+              },
+              {
+                "origin_mm": [
+                  -35.0,
+                  2.0,
+                  0.0
+                ],
+                "direction": [
+                  0,
+                  -1,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    -35.0,
+                    -3.0500007,
+                    0.0
+                  ],
+                  "normal": [
+                    0.0,
+                    1.0,
+                    0.0
+                  ],
+                  "face_index": 917,
+                  "distance_mm": 5.0500007
+                }
+              },
+              {
+                "origin_mm": [
+                  -35.0,
+                  2.0,
+                  0.0
+                ],
+                "direction": [
+                  0,
+                  1,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    -35.0,
+                    7.0499983,
+                    0.0
+                  ],
+                  "normal": [
+                    0.0,
+                    -1.0,
+                    0.0
+                  ],
+                  "face_index": 911,
+                  "distance_mm": 5.0499983
+                }
+              },
+              {
+                "origin_mm": [
+                  -35.0,
+                  2.0,
+                  1.0
+                ],
+                "direction": [
+                  -1,
+                  0,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    -40.0499992,
+                    2.0,
+                    1.0
+                  ],
+                  "normal": [
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "face_index": 910,
+                  "distance_mm": 5.0499992
+                }
+              },
+              {
+                "origin_mm": [
+                  -35.0,
+                  2.0,
+                  1.0
+                ],
+                "direction": [
+                  1,
+                  0,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    -29.9499931,
+                    2.0,
+                    1.0
+                  ],
+                  "normal": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                  ],
+                  "face_index": 914,
+                  "distance_mm": 5.0500069
+                }
+              },
+              {
+                "origin_mm": [
+                  -35.0,
+                  2.0,
+                  1.0
+                ],
+                "direction": [
+                  0,
+                  -1,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    -35.0,
+                    -3.0500011,
+                    1.0
+                  ],
+                  "normal": [
+                    0.0,
+                    1.0,
+                    0.0
+                  ],
+                  "face_index": 917,
+                  "distance_mm": 5.0500011
+                }
+              },
+              {
+                "origin_mm": [
+                  -35.0,
+                  2.0,
+                  1.0
+                ],
+                "direction": [
+                  0,
+                  1,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    -35.0,
+                    7.0499983,
+                    1.0
+                  ],
+                  "normal": [
+                    -0.0,
+                    -1.0,
+                    -0.0
+                  ],
+                  "face_index": 912,
+                  "distance_mm": 5.0499983
+                }
+              }
+            ]
+          },
+          {
+            "number": 2,
+            "centre_mm": [
+              -21.0,
+              2.0
+            ],
+            "nominal_width_mm": 10.2,
+            "width_mm": 10.2000008,
+            "height_mm": 10.1999989,
+            "measured_total_clearance_x_mm": 0.2000008,
+            "measured_total_clearance_y_mm": 0.1999989,
+            "through_at_centre": true,
+            "vertical_ray_from_above": null,
+            "vertical_ray_from_below": null,
+            "inner_walls": [
+              {
+                "axis": "X",
+                "coordinate_mm": -26.0999947,
+                "bounds_min_mm": [
+                  -26.0999947,
+                  -3.1000004,
+                  -2.0
+                ],
+                "bounds_max_mm": [
+                  -26.0999947,
+                  7.0999985,
+                  2.0
+                ],
+                "area_mm2": 40.7999954,
+                "face_count": 3
+              },
+              {
+                "axis": "X",
+                "coordinate_mm": -15.8999939,
+                "bounds_min_mm": [
+                  -15.8999939,
+                  -3.1000004,
+                  -2.0
+                ],
+                "bounds_max_mm": [
+                  -15.8999939,
+                  7.0999985,
+                  2.0
+                ],
+                "area_mm2": 40.7999954,
+                "face_count": 2
+              },
+              {
+                "axis": "Y",
+                "coordinate_mm": -3.1000004,
+                "bounds_min_mm": [
+                  -26.0999947,
+                  -3.1000004,
+                  -2.0
+                ],
+                "bounds_max_mm": [
+                  -15.8999939,
+                  -3.1000004,
+                  2.0
+                ],
+                "area_mm2": 40.8000031,
+                "face_count": 2
+              },
+              {
+                "axis": "Y",
+                "coordinate_mm": 7.0999985,
+                "bounds_min_mm": [
+                  -26.0999947,
+                  7.0999985,
+                  -2.0
+                ],
+                "bounds_max_mm": [
+                  -15.8999939,
+                  7.0999985,
+                  2.0
+                ],
+                "area_mm2": 40.8000031,
+                "face_count": 2
+              }
+            ],
+            "side_rays": [
+              {
+                "origin_mm": [
+                  -21.0,
+                  2.0,
+                  -1.0
+                ],
+                "direction": [
+                  -1,
+                  0,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    -26.0999947,
+                    2.0,
+                    -1.0
+                  ],
+                  "normal": [
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "face_index": 920,
+                  "distance_mm": 5.0999947
+                }
+              },
+              {
+                "origin_mm": [
+                  -21.0,
+                  2.0,
+                  -1.0
+                ],
+                "direction": [
+                  1,
+                  0,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    -15.8999939,
+                    2.0,
+                    -1.0
+                  ],
+                  "normal": [
+                    -1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "face_index": 923,
+                  "distance_mm": 5.1000061
+                }
+              },
+              {
+                "origin_mm": [
+                  -21.0,
+                  2.0,
+                  -1.0
+                ],
+                "direction": [
+                  0,
+                  -1,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    -21.0,
+                    -3.1000004,
+                    -1.0
+                  ],
+                  "normal": [
+                    -0.0,
+                    1.0,
+                    0.0
+                  ],
+                  "face_index": 925,
+                  "distance_mm": 5.1000004
+                }
+              },
+              {
+                "origin_mm": [
+                  -21.0,
+                  2.0,
+                  -1.0
+                ],
+                "direction": [
+                  0,
+                  1,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    -21.0,
+                    7.0999985,
+                    -1.0
+                  ],
+                  "normal": [
+                    0.0,
+                    -1.0,
+                    0.0
+                  ],
+                  "face_index": 921,
+                  "distance_mm": 5.0999985
+                }
+              },
+              {
+                "origin_mm": [
+                  -21.0,
+                  2.0,
+                  0.0
+                ],
+                "direction": [
+                  -1,
+                  0,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    -26.0999947,
+                    2.0,
+                    0.0
+                  ],
+                  "normal": [
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "face_index": 920,
+                  "distance_mm": 5.0999947
+                }
+              },
+              {
+                "origin_mm": [
+                  -21.0,
+                  2.0,
+                  0.0
+                ],
+                "direction": [
+                  1,
+                  0,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    -15.8999939,
+                    2.0,
+                    0.0
+                  ],
+                  "normal": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                  ],
+                  "face_index": 924,
+                  "distance_mm": 5.1000056
+                }
+              },
+              {
+                "origin_mm": [
+                  -21.0,
+                  2.0,
+                  0.0
+                ],
+                "direction": [
+                  0,
+                  -1,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    -21.0,
+                    -3.1000004,
+                    0.0
+                  ],
+                  "normal": [
+                    -0.0,
+                    1.0,
+                    0.0
+                  ],
+                  "face_index": 925,
+                  "distance_mm": 5.1000004
+                }
+              },
+              {
+                "origin_mm": [
+                  -21.0,
+                  2.0,
+                  0.0
+                ],
+                "direction": [
+                  0,
+                  1,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    -21.0,
+                    7.0999985,
+                    0.0
+                  ],
+                  "normal": [
+                    0.0,
+                    -1.0,
+                    0.0
+                  ],
+                  "face_index": 921,
+                  "distance_mm": 5.0999985
+                }
+              },
+              {
+                "origin_mm": [
+                  -21.0,
+                  2.0,
+                  1.0
+                ],
+                "direction": [
+                  -1,
+                  0,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    -26.0999947,
+                    2.0,
+                    1.0
+                  ],
+                  "normal": [
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "face_index": 918,
+                  "distance_mm": 5.0999947
+                }
+              },
+              {
+                "origin_mm": [
+                  -21.0,
+                  2.0,
+                  1.0
+                ],
+                "direction": [
+                  1,
+                  0,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    -15.8999939,
+                    2.0,
+                    1.0
+                  ],
+                  "normal": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                  ],
+                  "face_index": 924,
+                  "distance_mm": 5.1000061
+                }
+              },
+              {
+                "origin_mm": [
+                  -21.0,
+                  2.0,
+                  1.0
+                ],
+                "direction": [
+                  0,
+                  -1,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    -21.0,
+                    -3.0999999,
+                    1.0
+                  ],
+                  "normal": [
+                    0.0,
+                    1.0,
+                    0.0
+                  ],
+                  "face_index": 926,
+                  "distance_mm": 5.0999999
+                }
+              },
+              {
+                "origin_mm": [
+                  -21.0,
+                  2.0,
+                  1.0
+                ],
+                "direction": [
+                  0,
+                  1,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    -21.0,
+                    7.0999985,
+                    1.0
+                  ],
+                  "normal": [
+                    -0.0,
+                    -1.0,
+                    -0.0
+                  ],
+                  "face_index": 922,
+                  "distance_mm": 5.0999985
+                }
+              }
+            ]
+          },
+          {
+            "number": 3,
+            "centre_mm": [
+              -7.0,
+              2.0
+            ],
+            "nominal_width_mm": 10.3,
+            "width_mm": 10.2999954,
+            "height_mm": 10.2999992,
+            "measured_total_clearance_x_mm": 0.2999954,
+            "measured_total_clearance_y_mm": 0.2999992,
+            "through_at_centre": true,
+            "vertical_ray_from_above": null,
+            "vertical_ray_from_below": null,
+            "inner_walls": [
+              {
+                "axis": "X",
+                "coordinate_mm": -12.1499939,
+                "bounds_min_mm": [
+                  -12.1499939,
+                  -3.1500006,
+                  -2.0
+                ],
+                "bounds_max_mm": [
+                  -12.1499939,
+                  7.1499987,
+                  2.0
+                ],
+                "area_mm2": 41.1999969,
+                "face_count": 2
+              },
+              {
+                "axis": "X",
+                "coordinate_mm": -1.8499985,
+                "bounds_min_mm": [
+                  -1.8499985,
+                  -3.1500006,
+                  -2.0
+                ],
+                "bounds_max_mm": [
+                  -1.8499985,
+                  7.1499987,
+                  2.0
+                ],
+                "area_mm2": 41.1999969,
+                "face_count": 2
+              },
+              {
+                "axis": "Y",
+                "coordinate_mm": -3.1500006,
+                "bounds_min_mm": [
+                  -12.1499939,
+                  -3.1500006,
+                  -2.0
+                ],
+                "bounds_max_mm": [
+                  -1.8499985,
+                  -3.1500006,
+                  2.0
+                ],
+                "area_mm2": 41.1999817,
+                "face_count": 4
+              },
+              {
+                "axis": "Y",
+                "coordinate_mm": 7.1499987,
+                "bounds_min_mm": [
+                  -12.1499939,
+                  7.1499987,
+                  -2.0
+                ],
+                "bounds_max_mm": [
+                  -1.8499985,
+                  7.1499987,
+                  2.0
+                ],
+                "area_mm2": 41.1999817,
+                "face_count": 2
+              }
+            ],
+            "side_rays": [
+              {
+                "origin_mm": [
+                  -7.0,
+                  2.0,
+                  -1.0
+                ],
+                "direction": [
+                  -1,
+                  0,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    -12.1499939,
+                    2.0,
+                    -1.0
+                  ],
+                  "normal": [
+                    1.0,
+                    0.0,
+                    -0.0
+                  ],
+                  "face_index": 927,
+                  "distance_mm": 5.1499939
+                }
+              },
+              {
+                "origin_mm": [
+                  -7.0,
+                  2.0,
+                  -1.0
+                ],
+                "direction": [
+                  1,
+                  0,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    -1.8499985,
+                    2.0,
+                    -1.0
+                  ],
+                  "normal": [
+                    -1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "face_index": 931,
+                  "distance_mm": 5.1500015
+                }
+              },
+              {
+                "origin_mm": [
+                  -7.0,
+                  2.0,
+                  -1.0
+                ],
+                "direction": [
+                  0,
+                  -1,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    -7.0,
+                    -3.1500006,
+                    -1.0
+                  ],
+                  "normal": [
+                    0.0,
+                    1.0,
+                    0.0
+                  ],
+                  "face_index": 933,
+                  "distance_mm": 5.1500006
+                }
+              },
+              {
+                "origin_mm": [
+                  -7.0,
+                  2.0,
+                  -1.0
+                ],
+                "direction": [
+                  0,
+                  1,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    -7.0,
+                    7.1499982,
+                    -1.0
+                  ],
+                  "normal": [
+                    0.0,
+                    -1.0,
+                    0.0
+                  ],
+                  "face_index": 929,
+                  "distance_mm": 5.1499982
+                }
+              },
+              {
+                "origin_mm": [
+                  -7.0,
+                  2.0,
+                  0.0
+                ],
+                "direction": [
+                  -1,
+                  0,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    -12.1499939,
+                    2.0,
+                    0.0
+                  ],
+                  "normal": [
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "face_index": 928,
+                  "distance_mm": 5.1499939
+                }
+              },
+              {
+                "origin_mm": [
+                  -7.0,
+                  2.0,
+                  0.0
+                ],
+                "direction": [
+                  1,
+                  0,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    -1.849999,
+                    2.0,
+                    0.0
+                  ],
+                  "normal": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                  ],
+                  "face_index": 932,
+                  "distance_mm": 5.150001
+                }
+              },
+              {
+                "origin_mm": [
+                  -7.0,
+                  2.0,
+                  0.0
+                ],
+                "direction": [
+                  0,
+                  -1,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    -7.0,
+                    -3.1500006,
+                    0.0
+                  ],
+                  "normal": [
+                    0.0,
+                    0.9999999,
+                    -0.0
+                  ],
+                  "face_index": 935,
+                  "distance_mm": 5.1500006
+                }
+              },
+              {
+                "origin_mm": [
+                  -7.0,
+                  2.0,
+                  0.0
+                ],
+                "direction": [
+                  0,
+                  1,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    -7.0,
+                    7.1499982,
+                    0.0
+                  ],
+                  "normal": [
+                    0.0,
+                    -1.0,
+                    0.0
+                  ],
+                  "face_index": 929,
+                  "distance_mm": 5.1499982
+                }
+              },
+              {
+                "origin_mm": [
+                  -7.0,
+                  2.0,
+                  1.0
+                ],
+                "direction": [
+                  -1,
+                  0,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    -12.1499939,
+                    2.0,
+                    1.0
+                  ],
+                  "normal": [
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "face_index": 928,
+                  "distance_mm": 5.1499939
+                }
+              },
+              {
+                "origin_mm": [
+                  -7.0,
+                  2.0,
+                  1.0
+                ],
+                "direction": [
+                  1,
+                  0,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    -1.849999,
+                    2.0,
+                    1.0
+                  ],
+                  "normal": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                  ],
+                  "face_index": 932,
+                  "distance_mm": 5.150001
+                }
+              },
+              {
+                "origin_mm": [
+                  -7.0,
+                  2.0,
+                  1.0
+                ],
+                "direction": [
+                  0,
+                  -1,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    -7.0,
+                    -3.1500006,
+                    1.0
+                  ],
+                  "normal": [
+                    0.0,
+                    0.9999999,
+                    -0.0
+                  ],
+                  "face_index": 935,
+                  "distance_mm": 5.1500006
+                }
+              },
+              {
+                "origin_mm": [
+                  -7.0,
+                  2.0,
+                  1.0
+                ],
+                "direction": [
+                  0,
+                  1,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    -7.0,
+                    7.1499982,
+                    1.0
+                  ],
+                  "normal": [
+                    -0.0,
+                    -1.0,
+                    -0.0
+                  ],
+                  "face_index": 930,
+                  "distance_mm": 5.1499982
+                }
+              }
+            ]
+          },
+          {
+            "number": 4,
+            "centre_mm": [
+              7.0,
+              2.0
+            ],
+            "nominal_width_mm": 10.4,
+            "width_mm": 10.3999996,
+            "height_mm": 10.3999987,
+            "measured_total_clearance_x_mm": 0.3999996,
+            "measured_total_clearance_y_mm": 0.3999987,
+            "through_at_centre": true,
+            "vertical_ray_from_above": null,
+            "vertical_ray_from_below": null,
+            "inner_walls": [
+              {
+                "axis": "X",
+                "coordinate_mm": 1.8000031,
+                "bounds_min_mm": [
+                  1.8000031,
+                  -3.2000008,
+                  -2.0
+                ],
+                "bounds_max_mm": [
+                  1.8000031,
+                  7.1999979,
+                  2.0
+                ],
+                "area_mm2": 41.5999947,
+                "face_count": 2
+              },
+              {
+                "axis": "X",
+                "coordinate_mm": 12.2000027,
+                "bounds_min_mm": [
+                  12.2000027,
+                  -3.2000008,
+                  -2.0
+                ],
+                "bounds_max_mm": [
+                  12.2000027,
+                  7.1999979,
+                  2.0
+                ],
+                "area_mm2": 41.5999947,
+                "face_count": 2
+              },
+              {
+                "axis": "Y",
+                "coordinate_mm": -3.2000008,
+                "bounds_min_mm": [
+                  1.8000031,
+                  -3.2000008,
+                  -2.0
+                ],
+                "bounds_max_mm": [
+                  12.2000027,
+                  -3.2000008,
+                  2.0
+                ],
+                "area_mm2": 41.5999985,
+                "face_count": 3
+              },
+              {
+                "axis": "Y",
+                "coordinate_mm": 7.1999979,
+                "bounds_min_mm": [
+                  1.8000031,
+                  7.1999979,
+                  -2.0
+                ],
+                "bounds_max_mm": [
+                  12.2000027,
+                  7.1999979,
+                  2.0
+                ],
+                "area_mm2": 41.5999985,
+                "face_count": 2
+              }
+            ],
+            "side_rays": [
+              {
+                "origin_mm": [
+                  7.0,
+                  2.0,
+                  -1.0
+                ],
+                "direction": [
+                  -1,
+                  0,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    1.8000031,
+                    2.0,
+                    -1.0
+                  ],
+                  "normal": [
+                    0.9999999,
+                    0.0,
+                    -0.0
+                  ],
+                  "face_index": 937,
+                  "distance_mm": 5.1999969
+                }
+              },
+              {
+                "origin_mm": [
+                  7.0,
+                  2.0,
+                  -1.0
+                ],
+                "direction": [
+                  1,
+                  0,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    12.2000027,
+                    2.0,
+                    -1.0
+                  ],
+                  "normal": [
+                    -0.9999999,
+                    0.0,
+                    0.0
+                  ],
+                  "face_index": 941,
+                  "distance_mm": 5.2000027
+                }
+              },
+              {
+                "origin_mm": [
+                  7.0,
+                  2.0,
+                  -1.0
+                ],
+                "direction": [
+                  0,
+                  -1,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    7.0,
+                    -3.2000008,
+                    -1.0
+                  ],
+                  "normal": [
+                    0.0,
+                    1.0,
+                    0.0
+                  ],
+                  "face_index": 943,
+                  "distance_mm": 5.2000008
+                }
+              },
+              {
+                "origin_mm": [
+                  7.0,
+                  2.0,
+                  -1.0
+                ],
+                "direction": [
+                  0,
+                  1,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    7.0,
+                    7.1999979,
+                    -1.0
+                  ],
+                  "normal": [
+                    0.0,
+                    -1.0,
+                    0.0
+                  ],
+                  "face_index": 939,
+                  "distance_mm": 5.1999979
+                }
+              },
+              {
+                "origin_mm": [
+                  7.0,
+                  2.0,
+                  0.0
+                ],
+                "direction": [
+                  -1,
+                  0,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    1.8000035,
+                    2.0,
+                    0.0
+                  ],
+                  "normal": [
+                    0.9999999,
+                    0.0,
+                    0.0
+                  ],
+                  "face_index": 938,
+                  "distance_mm": 5.1999965
+                }
+              },
+              {
+                "origin_mm": [
+                  7.0,
+                  2.0,
+                  0.0
+                ],
+                "direction": [
+                  1,
+                  0,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    12.2000027,
+                    2.0,
+                    0.0
+                  ],
+                  "normal": [
+                    -0.9999999,
+                    -0.0,
+                    -0.0
+                  ],
+                  "face_index": 942,
+                  "distance_mm": 5.2000022
+                }
+              },
+              {
+                "origin_mm": [
+                  7.0,
+                  2.0,
+                  0.0
+                ],
+                "direction": [
+                  0,
+                  -1,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    7.0,
+                    -3.2000008,
+                    0.0
+                  ],
+                  "normal": [
+                    0.0,
+                    1.0,
+                    0.0
+                  ],
+                  "face_index": 945,
+                  "distance_mm": 5.2000008
+                }
+              },
+              {
+                "origin_mm": [
+                  7.0,
+                  2.0,
+                  0.0
+                ],
+                "direction": [
+                  0,
+                  1,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    7.0,
+                    7.1999979,
+                    0.0
+                  ],
+                  "normal": [
+                    0.0,
+                    -1.0,
+                    0.0
+                  ],
+                  "face_index": 939,
+                  "distance_mm": 5.1999979
+                }
+              },
+              {
+                "origin_mm": [
+                  7.0,
+                  2.0,
+                  1.0
+                ],
+                "direction": [
+                  -1,
+                  0,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    1.8000035,
+                    2.0,
+                    1.0
+                  ],
+                  "normal": [
+                    0.9999999,
+                    0.0,
+                    0.0
+                  ],
+                  "face_index": 938,
+                  "distance_mm": 5.1999965
+                }
+              },
+              {
+                "origin_mm": [
+                  7.0,
+                  2.0,
+                  1.0
+                ],
+                "direction": [
+                  1,
+                  0,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    12.2000027,
+                    2.0,
+                    1.0
+                  ],
+                  "normal": [
+                    -0.9999999,
+                    -0.0,
+                    -0.0
+                  ],
+                  "face_index": 942,
+                  "distance_mm": 5.2000027
+                }
+              },
+              {
+                "origin_mm": [
+                  7.0,
+                  2.0,
+                  1.0
+                ],
+                "direction": [
+                  0,
+                  -1,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    7.0,
+                    -3.2000008,
+                    1.0
+                  ],
+                  "normal": [
+                    0.0,
+                    1.0,
+                    0.0
+                  ],
+                  "face_index": 945,
+                  "distance_mm": 5.2000008
+                }
+              },
+              {
+                "origin_mm": [
+                  7.0,
+                  2.0,
+                  1.0
+                ],
+                "direction": [
+                  0,
+                  1,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    7.0,
+                    7.1999979,
+                    1.0
+                  ],
+                  "normal": [
+                    -0.0,
+                    -1.0,
+                    -0.0
+                  ],
+                  "face_index": 940,
+                  "distance_mm": 5.1999979
+                }
+              }
+            ]
+          },
+          {
+            "number": 5,
+            "centre_mm": [
+              21.0,
+              2.0
+            ],
+            "nominal_width_mm": 10.5,
+            "width_mm": 10.5000019,
+            "height_mm": 10.4999995,
+            "measured_total_clearance_x_mm": 0.5000019,
+            "measured_total_clearance_y_mm": 0.4999995,
+            "through_at_centre": true,
+            "vertical_ray_from_above": null,
+            "vertical_ray_from_below": null,
+            "inner_walls": [
+              {
+                "axis": "X",
+                "coordinate_mm": 15.7500019,
+                "bounds_min_mm": [
+                  15.7500019,
+                  -3.2500005,
+                  -2.0
+                ],
+                "bounds_max_mm": [
+                  15.7500019,
+                  7.249999,
+                  2.0
+                ],
+                "area_mm2": 42.0,
+                "face_count": 2
+              },
+              {
+                "axis": "X",
+                "coordinate_mm": 26.2500038,
+                "bounds_min_mm": [
+                  26.2500038,
+                  -3.2500005,
+                  -2.0
+                ],
+                "bounds_max_mm": [
+                  26.2500038,
+                  7.249999,
+                  2.0
+                ],
+                "area_mm2": 42.0,
+                "face_count": 3
+              },
+              {
+                "axis": "Y",
+                "coordinate_mm": -3.2500005,
+                "bounds_min_mm": [
+                  15.7500019,
+                  -3.2500005,
+                  -2.0
+                ],
+                "bounds_max_mm": [
+                  26.2500038,
+                  -3.2500005,
+                  2.0
+                ],
+                "area_mm2": 42.0000076,
+                "face_count": 3
+              },
+              {
+                "axis": "Y",
+                "coordinate_mm": 7.249999,
+                "bounds_min_mm": [
+                  15.7500019,
+                  7.249999,
+                  -2.0
+                ],
+                "bounds_max_mm": [
+                  26.2500038,
+                  7.249999,
+                  2.0
+                ],
+                "area_mm2": 42.0000076,
+                "face_count": 2
+              }
+            ],
+            "side_rays": [
+              {
+                "origin_mm": [
+                  21.0,
+                  2.0,
+                  -1.0
+                ],
+                "direction": [
+                  -1,
+                  0,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    15.7500019,
+                    2.0,
+                    -1.0
+                  ],
+                  "normal": [
+                    1.0,
+                    0.0,
+                    -0.0
+                  ],
+                  "face_index": 946,
+                  "distance_mm": 5.2499981
+                }
+              },
+              {
+                "origin_mm": [
+                  21.0,
+                  2.0,
+                  -1.0
+                ],
+                "direction": [
+                  1,
+                  0,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    26.2500038,
+                    2.0,
+                    -1.0
+                  ],
+                  "normal": [
+                    -1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "face_index": 950,
+                  "distance_mm": 5.2500038
+                }
+              },
+              {
+                "origin_mm": [
+                  21.0,
+                  2.0,
+                  -1.0
+                ],
+                "direction": [
+                  0,
+                  -1,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    21.0,
+                    -3.2500005,
+                    -1.0
+                  ],
+                  "normal": [
+                    0.0,
+                    0.9999999,
+                    0.0
+                  ],
+                  "face_index": 953,
+                  "distance_mm": 5.2500005
+                }
+              },
+              {
+                "origin_mm": [
+                  21.0,
+                  2.0,
+                  -1.0
+                ],
+                "direction": [
+                  0,
+                  1,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    21.0,
+                    7.249999,
+                    -1.0
+                  ],
+                  "normal": [
+                    0.0,
+                    -0.9999999,
+                    0.0
+                  ],
+                  "face_index": 948,
+                  "distance_mm": 5.249999
+                }
+              },
+              {
+                "origin_mm": [
+                  21.0,
+                  2.0,
+                  0.0
+                ],
+                "direction": [
+                  -1,
+                  0,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    15.7500019,
+                    2.0,
+                    0.0
+                  ],
+                  "normal": [
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "face_index": 947,
+                  "distance_mm": 5.2499981
+                }
+              },
+              {
+                "origin_mm": [
+                  21.0,
+                  2.0,
+                  0.0
+                ],
+                "direction": [
+                  1,
+                  0,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    26.2500038,
+                    2.0,
+                    0.0
+                  ],
+                  "normal": [
+                    -1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "face_index": 950,
+                  "distance_mm": 5.2500038
+                }
+              },
+              {
+                "origin_mm": [
+                  21.0,
+                  2.0,
+                  0.0
+                ],
+                "direction": [
+                  0,
+                  -1,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    21.0,
+                    -3.2500005,
+                    0.0
+                  ],
+                  "normal": [
+                    0.0,
+                    0.9999999,
+                    0.0
+                  ],
+                  "face_index": 955,
+                  "distance_mm": 5.2500005
+                }
+              },
+              {
+                "origin_mm": [
+                  21.0,
+                  2.0,
+                  0.0
+                ],
+                "direction": [
+                  0,
+                  1,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    21.0,
+                    7.249999,
+                    0.0
+                  ],
+                  "normal": [
+                    0.0,
+                    -0.9999999,
+                    0.0
+                  ],
+                  "face_index": 948,
+                  "distance_mm": 5.249999
+                }
+              },
+              {
+                "origin_mm": [
+                  21.0,
+                  2.0,
+                  1.0
+                ],
+                "direction": [
+                  -1,
+                  0,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    15.7500019,
+                    2.0,
+                    1.0
+                  ],
+                  "normal": [
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "face_index": 947,
+                  "distance_mm": 5.2499981
+                }
+              },
+              {
+                "origin_mm": [
+                  21.0,
+                  2.0,
+                  1.0
+                ],
+                "direction": [
+                  1,
+                  0,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    26.2500038,
+                    2.0,
+                    1.0
+                  ],
+                  "normal": [
+                    -0.9999999,
+                    -0.0,
+                    -0.0
+                  ],
+                  "face_index": 951,
+                  "distance_mm": 5.2500033
+                }
+              },
+              {
+                "origin_mm": [
+                  21.0,
+                  2.0,
+                  1.0
+                ],
+                "direction": [
+                  0,
+                  -1,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    21.0,
+                    -3.2500005,
+                    1.0
+                  ],
+                  "normal": [
+                    0.0,
+                    0.9999999,
+                    0.0
+                  ],
+                  "face_index": 955,
+                  "distance_mm": 5.2500005
+                }
+              },
+              {
+                "origin_mm": [
+                  21.0,
+                  2.0,
+                  1.0
+                ],
+                "direction": [
+                  0,
+                  1,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    21.0,
+                    7.249999,
+                    1.0
+                  ],
+                  "normal": [
+                    -0.0,
+                    -0.9999999,
+                    -0.0
+                  ],
+                  "face_index": 949,
+                  "distance_mm": 5.249999
+                }
+              }
+            ]
+          },
+          {
+            "number": 6,
+            "centre_mm": [
+              35.0,
+              2.0
+            ],
+            "nominal_width_mm": 10.6,
+            "width_mm": 10.5999985,
+            "height_mm": 10.5999999,
+            "measured_total_clearance_x_mm": 0.5999985,
+            "measured_total_clearance_y_mm": 0.5999999,
+            "through_at_centre": true,
+            "vertical_ray_from_above": null,
+            "vertical_ray_from_below": null,
+            "inner_walls": [
+              {
+                "axis": "X",
+                "coordinate_mm": 29.7000046,
+                "bounds_min_mm": [
+                  29.7000046,
+                  -3.3000007,
+                  -2.0
+                ],
+                "bounds_max_mm": [
+                  29.7000046,
+                  7.2999992,
+                  2.0
+                ],
+                "area_mm2": 42.4000015,
+                "face_count": 2
+              },
+              {
+                "axis": "X",
+                "coordinate_mm": 40.3000031,
+                "bounds_min_mm": [
+                  40.3000031,
+                  -3.3000007,
+                  -2.0
+                ],
+                "bounds_max_mm": [
+                  40.3000031,
+                  7.2999992,
+                  2.0
+                ],
+                "area_mm2": 42.4000015,
+                "face_count": 2
+              },
+              {
+                "axis": "Y",
+                "coordinate_mm": -3.3000007,
+                "bounds_min_mm": [
+                  29.7000046,
+                  -3.3000007,
+                  -2.0
+                ],
+                "bounds_max_mm": [
+                  40.3000031,
+                  -3.3000007,
+                  2.0
+                ],
+                "area_mm2": 42.3999939,
+                "face_count": 3
+              },
+              {
+                "axis": "Y",
+                "coordinate_mm": 7.2999992,
+                "bounds_min_mm": [
+                  29.7000046,
+                  7.2999992,
+                  -2.0
+                ],
+                "bounds_max_mm": [
+                  40.3000031,
+                  7.2999992,
+                  2.0
+                ],
+                "area_mm2": 42.3999939,
+                "face_count": 2
+              }
+            ],
+            "side_rays": [
+              {
+                "origin_mm": [
+                  35.0,
+                  2.0,
+                  -1.0
+                ],
+                "direction": [
+                  -1,
+                  0,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    29.7000046,
+                    2.0,
+                    -1.0
+                  ],
+                  "normal": [
+                    1.0,
+                    0.0,
+                    -0.0
+                  ],
+                  "face_index": 956,
+                  "distance_mm": 5.2999949
+                }
+              },
+              {
+                "origin_mm": [
+                  35.0,
+                  2.0,
+                  -1.0
+                ],
+                "direction": [
+                  1,
+                  0,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    40.3000031,
+                    2.0,
+                    -1.0
+                  ],
+                  "normal": [
+                    -1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "face_index": 960,
+                  "distance_mm": 5.3000031
+                }
+              },
+              {
+                "origin_mm": [
+                  35.0,
+                  2.0,
+                  -1.0
+                ],
+                "direction": [
+                  0,
+                  -1,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    35.0,
+                    -3.3000011,
+                    -1.0
+                  ],
+                  "normal": [
+                    0.0,
+                    1.0,
+                    0.0
+                  ],
+                  "face_index": 962,
+                  "distance_mm": 5.3000011
+                }
+              },
+              {
+                "origin_mm": [
+                  35.0,
+                  2.0,
+                  -1.0
+                ],
+                "direction": [
+                  0,
+                  1,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    35.0,
+                    7.2999997,
+                    -1.0
+                  ],
+                  "normal": [
+                    0.0,
+                    -1.0,
+                    0.0
+                  ],
+                  "face_index": 958,
+                  "distance_mm": 5.2999997
+                }
+              },
+              {
+                "origin_mm": [
+                  35.0,
+                  2.0,
+                  0.0
+                ],
+                "direction": [
+                  -1,
+                  0,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    29.7000046,
+                    2.0,
+                    0.0
+                  ],
+                  "normal": [
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "face_index": 957,
+                  "distance_mm": 5.2999949
+                }
+              },
+              {
+                "origin_mm": [
+                  35.0,
+                  2.0,
+                  0.0
+                ],
+                "direction": [
+                  1,
+                  0,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    40.3000031,
+                    2.0,
+                    0.0
+                  ],
+                  "normal": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                  ],
+                  "face_index": 961,
+                  "distance_mm": 5.3000031
+                }
+              },
+              {
+                "origin_mm": [
+                  35.0,
+                  2.0,
+                  0.0
+                ],
+                "direction": [
+                  0,
+                  -1,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    35.0,
+                    -3.3000011,
+                    0.0
+                  ],
+                  "normal": [
+                    0.0,
+                    1.0,
+                    0.0
+                  ],
+                  "face_index": 964,
+                  "distance_mm": 5.3000011
+                }
+              },
+              {
+                "origin_mm": [
+                  35.0,
+                  2.0,
+                  0.0
+                ],
+                "direction": [
+                  0,
+                  1,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    35.0,
+                    7.2999997,
+                    0.0
+                  ],
+                  "normal": [
+                    0.0,
+                    -1.0,
+                    0.0
+                  ],
+                  "face_index": 958,
+                  "distance_mm": 5.2999997
+                }
+              },
+              {
+                "origin_mm": [
+                  35.0,
+                  2.0,
+                  1.0
+                ],
+                "direction": [
+                  -1,
+                  0,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    29.7000046,
+                    2.0,
+                    1.0
+                  ],
+                  "normal": [
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "face_index": 957,
+                  "distance_mm": 5.2999949
+                }
+              },
+              {
+                "origin_mm": [
+                  35.0,
+                  2.0,
+                  1.0
+                ],
+                "direction": [
+                  1,
+                  0,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    40.3000031,
+                    2.0,
+                    1.0
+                  ],
+                  "normal": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                  ],
+                  "face_index": 961,
+                  "distance_mm": 5.3000026
+                }
+              },
+              {
+                "origin_mm": [
+                  35.0,
+                  2.0,
+                  1.0
+                ],
+                "direction": [
+                  0,
+                  -1,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    35.0,
+                    -3.3000007,
+                    1.0
+                  ],
+                  "normal": [
+                    0.0,
+                    1.0,
+                    0.0
+                  ],
+                  "face_index": 964,
+                  "distance_mm": 5.3000007
+                }
+              },
+              {
+                "origin_mm": [
+                  35.0,
+                  2.0,
+                  1.0
+                ],
+                "direction": [
+                  0,
+                  1,
+                  0
+                ],
+                "hit": {
+                  "location_mm": [
+                    35.0,
+                    7.2999997,
+                    1.0
+                  ],
+                  "normal": [
+                    -0.0,
+                    -1.0,
+                    -0.0
+                  ],
+                  "face_index": 959,
+                  "distance_mm": 5.2999997
+                }
+              }
+            ]
+          }
+        ],
+        "marker_counts": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "marker_total": 21,
+        "markers": [
+          {
+            "hole_number": 1,
+            "count": 1,
+            "points": [
+              {
+                "number_in_row": 1,
+                "centre_mm": [
+                  -35.0,
+                  -8.5
+                ],
+                "floor_z_mm": 1.2000003,
+                "depth_mm": 0.7999997,
+                "remaining_bottom_thickness_mm": 3.2000003,
+                "floor_ray": {
+                  "location_mm": [
+                    -35.0,
+                    -8.5,
+                    1.2000003
+                  ],
+                  "normal": [
+                    0.0,
+                    -0.0,
+                    1.0
+                  ],
+                  "face_index": 1057,
+                  "distance_mm": 1.7999997
+                },
+                "bottom_ray": {
+                  "location_mm": [
+                    -35.0,
+                    -8.5,
+                    -2.0
+                  ],
+                  "normal": [
+                    -0.0,
+                    0.0,
+                    -1.0
+                  ],
+                  "face_index": 22,
+                  "distance_mm": 1.0
+                },
+                "solid_top_controls": [
+                  {
+                    "origin_mm": [
+                      -35.0,
+                      -9.4,
+                      3.0
+                    ],
+                    "hit": {
+                      "location_mm": [
+                        -35.0,
+                        -9.3999996,
+                        2.0
+                      ],
+                      "normal": [
+                        0.0,
+                        0.0,
+                        1.0
+                      ],
+                      "face_index": 499,
+                      "distance_mm": 0.9999999
+                    }
+                  },
+                  {
+                    "origin_mm": [
+                      -35.0,
+                      -7.6,
+                      3.0
+                    ],
+                    "hit": {
+                      "location_mm": [
+                        -35.0,
+                        -7.5999999,
+                        2.0
+                      ],
+                      "normal": [
+                        0.0,
+                        -0.0,
+                        1.0
+                      ],
+                      "face_index": 56,
+                      "distance_mm": 1.0
+                    }
+                  }
+                ],
+                "floor_patch": {
+                  "bounds_min_mm": [
+                    -35.5999947,
+                    -9.1000004,
+                    1.2000003
+                  ],
+                  "bounds_max_mm": [
+                    -34.3999901,
+                    -7.9000001,
+                    1.2000003
+                  ],
+                  "area_mm2": 1.1237251,
+                  "face_count": 30
+                }
+              }
+            ]
+          },
+          {
+            "hole_number": 2,
+            "count": 2,
+            "points": [
+              {
+                "number_in_row": 1,
+                "centre_mm": [
+                  -21.8,
+                  -8.5
+                ],
+                "floor_z_mm": 1.2000005,
+                "depth_mm": 0.7999995,
+                "remaining_bottom_thickness_mm": 3.2000005,
+                "floor_ray": {
+                  "location_mm": [
+                    -21.7999992,
+                    -8.5,
+                    1.2000005
+                  ],
+                  "normal": [
+                    0.0,
+                    -0.0,
+                    1.0
+                  ],
+                  "face_index": 1152,
+                  "distance_mm": 1.7999995
+                },
+                "bottom_ray": {
+                  "location_mm": [
+                    -21.7999992,
+                    -8.5,
+                    -2.0
+                  ],
+                  "normal": [
+                    -0.0,
+                    0.0,
+                    -1.0
+                  ],
+                  "face_index": 26,
+                  "distance_mm": 1.0
+                },
+                "solid_top_controls": [
+                  {
+                    "origin_mm": [
+                      -21.8,
+                      -9.4,
+                      3.0
+                    ],
+                    "hit": {
+                      "location_mm": [
+                        -21.7999992,
+                        -9.3999996,
+                        2.0
+                      ],
+                      "normal": [
+                        0.0,
+                        0.0,
+                        1.0
+                      ],
+                      "face_index": 620,
+                      "distance_mm": 1.0
+                    }
+                  },
+                  {
+                    "origin_mm": [
+                      -21.8,
+                      -7.6,
+                      3.0
+                    ],
+                    "hit": {
+                      "location_mm": [
+                        -21.7999992,
+                        -7.5999999,
+                        2.0
+                      ],
+                      "normal": [
+                        -0.0,
+                        0.0,
+                        1.0
+                      ],
+                      "face_index": 533,
+                      "distance_mm": 1.0
+                    }
+                  }
+                ],
+                "floor_patch": {
+                  "bounds_min_mm": [
+                    -22.3999901,
+                    -9.1000004,
+                    1.2000003
+                  ],
+                  "bounds_max_mm": [
+                    -21.1999893,
+                    -7.9000001,
+                    1.2000003
+                  ],
+                  "area_mm2": 1.1237225,
+                  "face_count": 30
+                }
+              },
+              {
+                "number_in_row": 2,
+                "centre_mm": [
+                  -20.2,
+                  -8.5
+                ],
+                "floor_z_mm": 1.2000004,
+                "depth_mm": 0.7999996,
+                "remaining_bottom_thickness_mm": 3.2000004,
+                "floor_ray": {
+                  "location_mm": [
+                    -20.2000008,
+                    -8.5,
+                    1.2000004
+                  ],
+                  "normal": [
+                    0.0,
+                    -0.0,
+                    1.0
+                  ],
+                  "face_index": 1247,
+                  "distance_mm": 1.7999996
+                },
+                "bottom_ray": {
+                  "location_mm": [
+                    -20.2000008,
+                    -8.5,
+                    -2.0
+                  ],
+                  "normal": [
+                    -0.0,
+                    0.0,
+                    -1.0
+                  ],
+                  "face_index": 26,
+                  "distance_mm": 1.0
+                },
+                "solid_top_controls": [
+                  {
+                    "origin_mm": [
+                      -20.2,
+                      -9.4,
+                      3.0
+                    ],
+                    "hit": {
+                      "location_mm": [
+                        -20.2000008,
+                        -9.3999996,
+                        2.0
+                      ],
+                      "normal": [
+                        0.0,
+                        0.0,
+                        1.0
+                      ],
+                      "face_index": 620,
+                      "distance_mm": 1.0
+                    }
+                  },
+                  {
+                    "origin_mm": [
+                      -20.2,
+                      -7.6,
+                      3.0
+                    ],
+                    "hit": {
+                      "location_mm": [
+                        -20.2000008,
+                        -7.5999999,
+                        2.0
+                      ],
+                      "normal": [
+                        0.0,
+                        0.0,
+                        1.0
+                      ],
+                      "face_index": 514,
+                      "distance_mm": 0.9999999
+                    }
+                  }
+                ],
+                "floor_patch": {
+                  "bounds_min_mm": [
+                    -20.7999954,
+                    -9.1000004,
+                    1.2000003
+                  ],
+                  "bounds_max_mm": [
+                    -19.5999985,
+                    -7.9000001,
+                    1.2000003
+                  ],
+                  "area_mm2": 1.123723,
+                  "face_count": 30
+                }
+              }
+            ]
+          },
+          {
+            "hole_number": 3,
+            "count": 3,
+            "points": [
+              {
+                "number_in_row": 1,
+                "centre_mm": [
+                  -8.6,
+                  -8.5
+                ],
+                "floor_z_mm": 1.2000003,
+                "depth_mm": 0.7999997,
+                "remaining_bottom_thickness_mm": 3.2000003,
+                "floor_ray": {
+                  "location_mm": [
+                    -8.6000004,
+                    -8.5,
+                    1.2000003
+                  ],
+                  "normal": [
+                    0.0,
+                    -0.0,
+                    1.0
+                  ],
+                  "face_index": 1342,
+                  "distance_mm": 1.7999997
+                },
+                "bottom_ray": {
+                  "location_mm": [
+                    -8.6000004,
+                    -8.5,
+                    -2.0
+                  ],
+                  "normal": [
+                    0.0,
+                    0.0,
+                    -1.0
+                  ],
+                  "face_index": 25,
+                  "distance_mm": 1.0
+                },
+                "solid_top_controls": [
+                  {
+                    "origin_mm": [
+                      -8.6,
+                      -9.4,
+                      3.0
+                    ],
+                    "hit": {
+                      "location_mm": [
+                        -8.6000004,
+                        -9.3999996,
+                        2.0
+                      ],
+                      "normal": [
+                        0.0,
+                        0.0,
+                        1.0
+                      ],
+                      "face_index": 775,
+                      "distance_mm": 1.0
+                    }
+                  },
+                  {
+                    "origin_mm": [
+                      -8.6,
+                      -7.6,
+                      3.0
+                    ],
+                    "hit": {
+                      "location_mm": [
+                        -8.6000004,
+                        -7.5999999,
+                        2.0
+                      ],
+                      "normal": [
+                        0.0,
+                        0.0,
+                        1.0
+                      ],
+                      "face_index": 735,
+                      "distance_mm": 1.0
+                    }
+                  }
+                ],
+                "floor_patch": {
+                  "bounds_min_mm": [
+                    -9.1999931,
+                    -9.1000004,
+                    1.2000003
+                  ],
+                  "bounds_max_mm": [
+                    -7.9999924,
+                    -7.9000001,
+                    1.2000003
+                  ],
+                  "area_mm2": 1.1237218,
+                  "face_count": 30
+                }
+              },
+              {
+                "number_in_row": 2,
+                "centre_mm": [
+                  -7.0,
+                  -8.5
+                ],
+                "floor_z_mm": 1.2000003,
+                "depth_mm": 0.7999997,
+                "remaining_bottom_thickness_mm": 3.2000003,
+                "floor_ray": {
+                  "location_mm": [
+                    -7.0,
+                    -8.5,
+                    1.2000003
+                  ],
+                  "normal": [
+                    0.0,
+                    -0.0,
+                    1.0
+                  ],
+                  "face_index": 1438,
+                  "distance_mm": 1.7999997
+                },
+                "bottom_ray": {
+                  "location_mm": [
+                    -7.0,
+                    -8.5,
+                    -2.0
+                  ],
+                  "normal": [
+                    0.0,
+                    0.0,
+                    -1.0
+                  ],
+                  "face_index": 23,
+                  "distance_mm": 1.0
+                },
+                "solid_top_controls": [
+                  {
+                    "origin_mm": [
+                      -7.0,
+                      -9.4,
+                      3.0
+                    ],
+                    "hit": {
+                      "location_mm": [
+                        -7.0,
+                        -9.3999996,
+                        2.0
+                      ],
+                      "normal": [
+                        0.0,
+                        0.0,
+                        1.0
+                      ],
+                      "face_index": 775,
+                      "distance_mm": 1.0
+                    }
+                  },
+                  {
+                    "origin_mm": [
+                      -7.0,
+                      -7.6,
+                      3.0
+                    ],
+                    "hit": {
+                      "location_mm": [
+                        -7.0,
+                        -7.5999999,
+                        2.0
+                      ],
+                      "normal": [
+                        -0.0,
+                        -0.0,
+                        1.0
+                      ],
+                      "face_index": 739,
+                      "distance_mm": 1.0
+                    }
+                  }
+                ],
+                "floor_patch": {
+                  "bounds_min_mm": [
+                    -7.5999947,
+                    -9.1000004,
+                    1.2000003
+                  ],
+                  "bounds_max_mm": [
+                    -6.3999939,
+                    -7.9000001,
+                    1.2000003
+                  ],
+                  "area_mm2": 1.1237209,
+                  "face_count": 30
+                }
+              },
+              {
+                "number_in_row": 3,
+                "centre_mm": [
+                  -5.4,
+                  -8.5
+                ],
+                "floor_z_mm": 1.2000003,
+                "depth_mm": 0.7999997,
+                "remaining_bottom_thickness_mm": 3.2000003,
+                "floor_ray": {
+                  "location_mm": [
+                    -5.4000001,
+                    -8.5,
+                    1.2000003
+                  ],
+                  "normal": [
+                    0.0,
+                    -0.0,
+                    1.0
+                  ],
+                  "face_index": 1533,
+                  "distance_mm": 1.7999997
+                },
+                "bottom_ray": {
+                  "location_mm": [
+                    -5.4000001,
+                    -8.5,
+                    -2.0
+                  ],
+                  "normal": [
+                    0.0,
+                    0.0,
+                    -1.0
+                  ],
+                  "face_index": 23,
+                  "distance_mm": 1.0
+                },
+                "solid_top_controls": [
+                  {
+                    "origin_mm": [
+                      -5.4,
+                      -9.4,
+                      3.0
+                    ],
+                    "hit": {
+                      "location_mm": [
+                        -5.4000001,
+                        -9.3999996,
+                        2.0
+                      ],
+                      "normal": [
+                        0.0,
+                        0.0,
+                        1.0
+                      ],
+                      "face_index": 775,
+                      "distance_mm": 1.0
+                    }
+                  },
+                  {
+                    "origin_mm": [
+                      -5.4,
+                      -7.6,
+                      3.0
+                    ],
+                    "hit": {
+                      "location_mm": [
+                        -5.4000001,
+                        -7.5999999,
+                        2.0
+                      ],
+                      "normal": [
+                        0.0,
+                        -0.0,
+                        0.9999999
+                      ],
+                      "face_index": 740,
+                      "distance_mm": 0.9999999
+                    }
+                  }
+                ],
+                "floor_patch": {
+                  "bounds_min_mm": [
+                    -5.9999924,
+                    -9.1000004,
+                    1.2000003
+                  ],
+                  "bounds_max_mm": [
+                    -4.7999916,
+                    -7.9000001,
+                    1.2000003
+                  ],
+                  "area_mm2": 1.1237209,
+                  "face_count": 30
+                }
+              }
+            ]
+          },
+          {
+            "hole_number": 4,
+            "count": 4,
+            "points": [
+              {
+                "number_in_row": 1,
+                "centre_mm": [
+                  4.6,
+                  -8.5
+                ],
+                "floor_z_mm": 1.2000003,
+                "depth_mm": 0.7999997,
+                "remaining_bottom_thickness_mm": 3.2000003,
+                "floor_ray": {
+                  "location_mm": [
+                    4.5999999,
+                    -8.5,
+                    1.2000003
+                  ],
+                  "normal": [
+                    0.0,
+                    -0.0,
+                    1.0
+                  ],
+                  "face_index": 1627,
+                  "distance_mm": 1.7999997
+                },
+                "bottom_ray": {
+                  "location_mm": [
+                    4.5999999,
+                    -8.5,
+                    -2.0
+                  ],
+                  "normal": [
+                    0.0,
+                    0.0,
+                    -1.0
+                  ],
+                  "face_index": 23,
+                  "distance_mm": 1.0
+                },
+                "solid_top_controls": [
+                  {
+                    "origin_mm": [
+                      4.6,
+                      -9.4,
+                      3.0
+                    ],
+                    "hit": {
+                      "location_mm": [
+                        4.5999999,
+                        -9.3999996,
+                        2.0
+                      ],
+                      "normal": [
+                        0.0,
+                        0.0,
+                        1.0
+                      ],
+                      "face_index": 691,
+                      "distance_mm": 1.0
+                    }
+                  },
+                  {
+                    "origin_mm": [
+                      4.6,
+                      -7.6,
+                      3.0
+                    ],
+                    "hit": {
+                      "location_mm": [
+                        4.5999999,
+                        -7.5999999,
+                        2.0
+                      ],
+                      "normal": [
+                        0.0,
+                        -0.0,
+                        1.0
+                      ],
+                      "face_index": 97,
+                      "distance_mm": 1.0
+                    }
+                  }
+                ],
+                "floor_patch": {
+                  "bounds_min_mm": [
+                    4.0000076,
+                    -9.1000004,
+                    1.2000003
+                  ],
+                  "bounds_max_mm": [
+                    5.2000046,
+                    -7.9000001,
+                    1.2000003
+                  ],
+                  "area_mm2": 1.12372,
+                  "face_count": 30
+                }
+              },
+              {
+                "number_in_row": 2,
+                "centre_mm": [
+                  6.2,
+                  -8.5
+                ],
+                "floor_z_mm": 1.2000002,
+                "depth_mm": 0.7999998,
+                "remaining_bottom_thickness_mm": 3.2000002,
+                "floor_ray": {
+                  "location_mm": [
+                    6.1999998,
+                    -8.5,
+                    1.2000002
+                  ],
+                  "normal": [
+                    0.0,
+                    -0.0,
+                    1.0
+                  ],
+                  "face_index": 1722,
+                  "distance_mm": 1.7999998
+                },
+                "bottom_ray": {
+                  "location_mm": [
+                    6.1999998,
+                    -8.5,
+                    -2.0
+                  ],
+                  "normal": [
+                    0.0,
+                    0.0,
+                    -1.0
+                  ],
+                  "face_index": 23,
+                  "distance_mm": 1.0
+                },
+                "solid_top_controls": [
+                  {
+                    "origin_mm": [
+                      6.2,
+                      -9.4,
+                      3.0
+                    ],
+                    "hit": {
+                      "location_mm": [
+                        6.1999998,
+                        -9.3999996,
+                        2.0
+                      ],
+                      "normal": [
+                        0.0,
+                        0.0,
+                        1.0
+                      ],
+                      "face_index": 628,
+                      "distance_mm": 1.0
+                    }
+                  },
+                  {
+                    "origin_mm": [
+                      6.2,
+                      -7.6,
+                      3.0
+                    ],
+                    "hit": {
+                      "location_mm": [
+                        6.1999998,
+                        -7.5999999,
+                        2.0
+                      ],
+                      "normal": [
+                        0.0,
+                        -0.0,
+                        0.9999999
+                      ],
+                      "face_index": 111,
+                      "distance_mm": 1.0
+                    }
+                  }
+                ],
+                "floor_patch": {
+                  "bounds_min_mm": [
+                    5.6000061,
+                    -9.1000004,
+                    1.2000003
+                  ],
+                  "bounds_max_mm": [
+                    6.8000069,
+                    -7.9000001,
+                    1.2000003
+                  ],
+                  "area_mm2": 1.1237198,
+                  "face_count": 30
+                }
+              },
+              {
+                "number_in_row": 3,
+                "centre_mm": [
+                  7.8,
+                  -8.5
+                ],
+                "floor_z_mm": 1.2000003,
+                "depth_mm": 0.7999997,
+                "remaining_bottom_thickness_mm": 3.2000003,
+                "floor_ray": {
+                  "location_mm": [
+                    7.8000002,
+                    -8.5,
+                    1.2000003
+                  ],
+                  "normal": [
+                    0.0,
+                    -0.0,
+                    1.0
+                  ],
+                  "face_index": 1815,
+                  "distance_mm": 1.7999997
+                },
+                "bottom_ray": {
+                  "location_mm": [
+                    7.8000002,
+                    -8.5,
+                    -2.0
+                  ],
+                  "normal": [
+                    0.0,
+                    0.0,
+                    -1.0
+                  ],
+                  "face_index": 23,
+                  "distance_mm": 1.0
+                },
+                "solid_top_controls": [
+                  {
+                    "origin_mm": [
+                      7.8,
+                      -9.4,
+                      3.0
+                    ],
+                    "hit": {
+                      "location_mm": [
+                        7.8000002,
+                        -9.3999996,
+                        2.0
+                      ],
+                      "normal": [
+                        0.0,
+                        0.0,
+                        1.0
+                      ],
+                      "face_index": 627,
+                      "distance_mm": 1.0
+                    }
+                  },
+                  {
+                    "origin_mm": [
+                      7.8,
+                      -7.6,
+                      3.0
+                    ],
+                    "hit": {
+                      "location_mm": [
+                        7.8000002,
+                        -7.5999999,
+                        2.0
+                      ],
+                      "normal": [
+                        0.0,
+                        0.0,
+                        1.0
+                      ],
+                      "face_index": 125,
+                      "distance_mm": 1.0
+                    }
+                  }
+                ],
+                "floor_patch": {
+                  "bounds_min_mm": [
+                    7.2000065,
+                    -9.1000004,
+                    1.2000003
+                  ],
+                  "bounds_max_mm": [
+                    8.4000053,
+                    -7.9000001,
+                    1.2000003
+                  ],
+                  "area_mm2": 1.1237205,
+                  "face_count": 30
+                }
+              },
+              {
+                "number_in_row": 4,
+                "centre_mm": [
+                  9.4,
+                  -8.5
+                ],
+                "floor_z_mm": 1.2000003,
+                "depth_mm": 0.7999997,
+                "remaining_bottom_thickness_mm": 3.2000003,
+                "floor_ray": {
+                  "location_mm": [
+                    9.3999996,
+                    -8.5,
+                    1.2000003
+                  ],
+                  "normal": [
+                    0.0,
+                    -0.0,
+                    1.0
+                  ],
+                  "face_index": 1910,
+                  "distance_mm": 1.7999997
+                },
+                "bottom_ray": {
+                  "location_mm": [
+                    9.3999996,
+                    -8.5,
+                    -2.0
+                  ],
+                  "normal": [
+                    0.0,
+                    0.0,
+                    -1.0
+                  ],
+                  "face_index": 23,
+                  "distance_mm": 1.0
+                },
+                "solid_top_controls": [
+                  {
+                    "origin_mm": [
+                      9.4,
+                      -9.4,
+                      3.0
+                    ],
+                    "hit": {
+                      "location_mm": [
+                        9.3999996,
+                        -9.3999996,
+                        2.0
+                      ],
+                      "normal": [
+                        0.0,
+                        0.0,
+                        1.0
+                      ],
+                      "face_index": 626,
+                      "distance_mm": 0.9999999
+                    }
+                  },
+                  {
+                    "origin_mm": [
+                      9.4,
+                      -7.6,
+                      3.0
+                    ],
+                    "hit": {
+                      "location_mm": [
+                        9.3999996,
+                        -7.5999999,
+                        2.0
+                      ],
+                      "normal": [
+                        0.0,
+                        0.0,
+                        1.0
+                      ],
+                      "face_index": 103,
+                      "distance_mm": 1.0
+                    }
+                  }
+                ],
+                "floor_patch": {
+                  "bounds_min_mm": [
+                    8.8000069,
+                    -9.1000004,
+                    1.2000003
+                  ],
+                  "bounds_max_mm": [
+                    10.0000076,
+                    -7.9000001,
+                    1.2000003
+                  ],
+                  "area_mm2": 1.1237198,
+                  "face_count": 30
+                }
+              }
+            ]
+          },
+          {
+            "hole_number": 5,
+            "count": 5,
+            "points": [
+              {
+                "number_in_row": 1,
+                "centre_mm": [
+                  17.8,
+                  -8.5
+                ],
+                "floor_z_mm": 1.2000003,
+                "depth_mm": 0.7999997,
+                "remaining_bottom_thickness_mm": 3.2000003,
+                "floor_ray": {
+                  "location_mm": [
+                    17.7999992,
+                    -8.5,
+                    1.2000003
+                  ],
+                  "normal": [
+                    0.0,
+                    -0.0,
+                    1.0
+                  ],
+                  "face_index": 2004,
+                  "distance_mm": 1.7999997
+                },
+                "bottom_ray": {
+                  "location_mm": [
+                    17.7999992,
+                    -8.5,
+                    -2.0
+                  ],
+                  "normal": [
+                    0.0,
+                    0.0,
+                    -1.0
+                  ],
+                  "face_index": 23,
+                  "distance_mm": 1.0
+                },
+                "solid_top_controls": [
+                  {
+                    "origin_mm": [
+                      17.8,
+                      -9.4,
+                      3.0
+                    ],
+                    "hit": {
+                      "location_mm": [
+                        17.7999992,
+                        -9.3999996,
+                        2.0
+                      ],
+                      "normal": [
+                        0.0,
+                        0.0,
+                        1.0
+                      ],
+                      "face_index": 486,
+                      "distance_mm": 1.0
+                    }
+                  },
+                  {
+                    "origin_mm": [
+                      17.8,
+                      -7.6,
+                      3.0
+                    ],
+                    "hit": {
+                      "location_mm": [
+                        17.7999992,
+                        -7.5999999,
+                        2.0
+                      ],
+                      "normal": [
+                        -0.0,
+                        0.0,
+                        1.0
+                      ],
+                      "face_index": 631,
+                      "distance_mm": 1.0
+                    }
+                  }
+                ],
+                "floor_patch": {
+                  "bounds_min_mm": [
+                    17.2000065,
+                    -9.1000004,
+                    1.2000003
+                  ],
+                  "bounds_max_mm": [
+                    18.4000053,
+                    -7.9000001,
+                    1.2000003
+                  ],
+                  "area_mm2": 1.1237204,
+                  "face_count": 30
+                }
+              },
+              {
+                "number_in_row": 2,
+                "centre_mm": [
+                  19.4,
+                  -8.5
+                ],
+                "floor_z_mm": 1.2,
+                "depth_mm": 0.8,
+                "remaining_bottom_thickness_mm": 3.2,
+                "floor_ray": {
+                  "location_mm": [
+                    19.3999996,
+                    -8.5,
+                    1.2
+                  ],
+                  "normal": [
+                    0.0,
+                    -0.0,
+                    1.0
+                  ],
+                  "face_index": 2098,
+                  "distance_mm": 1.8
+                },
+                "bottom_ray": {
+                  "location_mm": [
+                    19.3999996,
+                    -8.5,
+                    -2.0
+                  ],
+                  "normal": [
+                    0.0,
+                    0.0,
+                    -1.0
+                  ],
+                  "face_index": 23,
+                  "distance_mm": 1.0
+                },
+                "solid_top_controls": [
+                  {
+                    "origin_mm": [
+                      19.4,
+                      -9.4,
+                      3.0
+                    ],
+                    "hit": {
+                      "location_mm": [
+                        19.3999996,
+                        -9.3999996,
+                        2.0
+                      ],
+                      "normal": [
+                        -0.0,
+                        0.0,
+                        1.0
+                      ],
+                      "face_index": 482,
+                      "distance_mm": 1.0
+                    }
+                  },
+                  {
+                    "origin_mm": [
+                      19.4,
+                      -7.6,
+                      3.0
+                    ],
+                    "hit": {
+                      "location_mm": [
+                        19.3999996,
+                        -7.5999999,
+                        2.0
+                      ],
+                      "normal": [
+                        0.0,
+                        -0.0,
+                        1.0
+                      ],
+                      "face_index": 177,
+                      "distance_mm": 1.0
+                    }
+                  }
+                ],
+                "floor_patch": {
+                  "bounds_min_mm": [
+                    18.8000069,
+                    -9.1000004,
+                    1.2000003
+                  ],
+                  "bounds_max_mm": [
+                    20.0000057,
+                    -7.9000001,
+                    1.2000003
+                  ],
+                  "area_mm2": 1.1237212,
+                  "face_count": 30
+                }
+              },
+              {
+                "number_in_row": 3,
+                "centre_mm": [
+                  21.0,
+                  -8.5
+                ],
+                "floor_z_mm": 1.2000002,
+                "depth_mm": 0.7999998,
+                "remaining_bottom_thickness_mm": 3.2000002,
+                "floor_ray": {
+                  "location_mm": [
+                    21.0,
+                    -8.5,
+                    1.2000002
+                  ],
+                  "normal": [
+                    0.0,
+                    -0.0,
+                    1.0
+                  ],
+                  "face_index": 2192,
+                  "distance_mm": 1.7999998
+                },
+                "bottom_ray": {
+                  "location_mm": [
+                    21.0,
+                    -8.5,
+                    -2.0
+                  ],
+                  "normal": [
+                    0.0,
+                    0.0,
+                    -1.0
+                  ],
+                  "face_index": 23,
+                  "distance_mm": 1.0
+                },
+                "solid_top_controls": [
+                  {
+                    "origin_mm": [
+                      21.0,
+                      -9.4,
+                      3.0
+                    ],
+                    "hit": {
+                      "location_mm": [
+                        21.0,
+                        -9.3999996,
+                        2.0
+                      ],
+                      "normal": [
+                        -0.0,
+                        0.0,
+                        1.0
+                      ],
+                      "face_index": 482,
+                      "distance_mm": 1.0
+                    }
+                  },
+                  {
+                    "origin_mm": [
+                      21.0,
+                      -7.6,
+                      3.0
+                    ],
+                    "hit": {
+                      "location_mm": [
+                        21.0,
+                        -7.5999999,
+                        2.0
+                      ],
+                      "normal": [
+                        0.0,
+                        0.0,
+                        1.0
+                      ],
+                      "face_index": 196,
+                      "distance_mm": 1.0
+                    }
+                  }
+                ],
+                "floor_patch": {
+                  "bounds_min_mm": [
+                    20.4000053,
+                    -9.1000004,
+                    1.2000003
+                  ],
+                  "bounds_max_mm": [
+                    21.6000061,
+                    -7.9000001,
+                    1.2000003
+                  ],
+                  "area_mm2": 1.1237205,
+                  "face_count": 30
+                }
+              },
+              {
+                "number_in_row": 4,
+                "centre_mm": [
+                  22.6,
+                  -8.5
+                ],
+                "floor_z_mm": 1.2000002,
+                "depth_mm": 0.7999998,
+                "remaining_bottom_thickness_mm": 3.2000002,
+                "floor_ray": {
+                  "location_mm": [
+                    22.6000004,
+                    -8.5,
+                    1.2000002
+                  ],
+                  "normal": [
+                    0.0,
+                    -0.0,
+                    1.0
+                  ],
+                  "face_index": 2286,
+                  "distance_mm": 1.7999998
+                },
+                "bottom_ray": {
+                  "location_mm": [
+                    22.6000004,
+                    -8.5,
+                    -2.0
+                  ],
+                  "normal": [
+                    0.0,
+                    0.0,
+                    -1.0
+                  ],
+                  "face_index": 23,
+                  "distance_mm": 1.0
+                },
+                "solid_top_controls": [
+                  {
+                    "origin_mm": [
+                      22.6,
+                      -9.4,
+                      3.0
+                    ],
+                    "hit": {
+                      "location_mm": [
+                        22.6000004,
+                        -9.3999996,
+                        2.0
+                      ],
+                      "normal": [
+                        -0.0,
+                        0.0,
+                        1.0
+                      ],
+                      "face_index": 482,
+                      "distance_mm": 1.0
+                    }
+                  },
+                  {
+                    "origin_mm": [
+                      22.6,
+                      -7.6,
+                      3.0
+                    ],
+                    "hit": {
+                      "location_mm": [
+                        22.6000004,
+                        -7.5999999,
+                        2.0
+                      ],
+                      "normal": [
+                        0.0,
+                        0.0,
+                        0.9999999
+                      ],
+                      "face_index": 174,
+                      "distance_mm": 0.9999999
+                    }
+                  }
+                ],
+                "floor_patch": {
+                  "bounds_min_mm": [
+                    22.0000057,
+                    -9.1000004,
+                    1.2000003
+                  ],
+                  "bounds_max_mm": [
+                    23.2000065,
+                    -7.9000001,
+                    1.2000003
+                  ],
+                  "area_mm2": 1.1237203,
+                  "face_count": 30
+                }
+              },
+              {
+                "number_in_row": 5,
+                "centre_mm": [
+                  24.2,
+                  -8.5
+                ],
+                "floor_z_mm": 1.2000002,
+                "depth_mm": 0.7999998,
+                "remaining_bottom_thickness_mm": 3.2000002,
+                "floor_ray": {
+                  "location_mm": [
+                    24.2000008,
+                    -8.5,
+                    1.2000002
+                  ],
+                  "normal": [
+                    0.0,
+                    -0.0,
+                    1.0
+                  ],
+                  "face_index": 2380,
+                  "distance_mm": 1.7999998
+                },
+                "bottom_ray": {
+                  "location_mm": [
+                    24.2000008,
+                    -8.5,
+                    -2.0
+                  ],
+                  "normal": [
+                    0.0,
+                    0.0,
+                    -1.0
+                  ],
+                  "face_index": 23,
+                  "distance_mm": 1.0
+                },
+                "solid_top_controls": [
+                  {
+                    "origin_mm": [
+                      24.2,
+                      -9.4,
+                      3.0
+                    ],
+                    "hit": {
+                      "location_mm": [
+                        24.2000008,
+                        -9.3999996,
+                        2.0
+                      ],
+                      "normal": [
+                        -0.0,
+                        0.0,
+                        1.0
+                      ],
+                      "face_index": 482,
+                      "distance_mm": 1.0
+                    }
+                  },
+                  {
+                    "origin_mm": [
+                      24.2,
+                      -7.6,
+                      3.0
+                    ],
+                    "hit": {
+                      "location_mm": [
+                        24.2000008,
+                        -7.5999999,
+                        2.0
+                      ],
+                      "normal": [
+                        0.0,
+                        0.0,
+                        0.9999999
+                      ],
+                      "face_index": 171,
+                      "distance_mm": 0.9999999
+                    }
+                  }
+                ],
+                "floor_patch": {
+                  "bounds_min_mm": [
+                    23.6000061,
+                    -9.1000004,
+                    1.2000003
+                  ],
+                  "bounds_max_mm": [
+                    24.8000069,
+                    -7.9000001,
+                    1.2000003
+                  ],
+                  "area_mm2": 1.1237208,
+                  "face_count": 30
+                }
+              }
+            ]
+          },
+          {
+            "hole_number": 6,
+            "count": 6,
+            "points": [
+              {
+                "number_in_row": 1,
+                "centre_mm": [
+                  31.0,
+                  -8.5
+                ],
+                "floor_z_mm": 1.2000003,
+                "depth_mm": 0.7999997,
+                "remaining_bottom_thickness_mm": 3.2000003,
+                "floor_ray": {
+                  "location_mm": [
+                    31.0,
+                    -8.5,
+                    1.2000003
+                  ],
+                  "normal": [
+                    0.0,
+                    -0.0,
+                    1.0
+                  ],
+                  "face_index": 2475,
+                  "distance_mm": 1.7999997
+                },
+                "bottom_ray": {
+                  "location_mm": [
+                    31.0,
+                    -8.5,
+                    -2.0
+                  ],
+                  "normal": [
+                    0.0,
+                    0.0,
+                    -1.0
+                  ],
+                  "face_index": 23,
+                  "distance_mm": 1.0
+                },
+                "solid_top_controls": [
+                  {
+                    "origin_mm": [
+                      31.0,
+                      -9.4,
+                      3.0
+                    ],
+                    "hit": {
+                      "location_mm": [
+                        31.0,
+                        -9.3999996,
+                        2.0
+                      ],
+                      "normal": [
+                        0.0,
+                        0.0,
+                        1.0
+                      ],
+                      "face_index": 473,
+                      "distance_mm": 1.0
+                    }
+                  },
+                  {
+                    "origin_mm": [
+                      31.0,
+                      -7.6,
+                      3.0
+                    ],
+                    "hit": {
+                      "location_mm": [
+                        31.0,
+                        -7.5999999,
+                        2.0
+                      ],
+                      "normal": [
+                        0.0,
+                        0.0,
+                        1.0
+                      ],
+                      "face_index": 372,
+                      "distance_mm": 1.0
+                    }
+                  }
+                ],
+                "floor_patch": {
+                  "bounds_min_mm": [
+                    30.4000072,
+                    -9.1000004,
+                    1.2000003
+                  ],
+                  "bounds_max_mm": [
+                    31.600008,
+                    -7.9000001,
+                    1.2000003
+                  ],
+                  "area_mm2": 1.1237205,
+                  "face_count": 30
+                }
+              },
+              {
+                "number_in_row": 2,
+                "centre_mm": [
+                  32.6,
+                  -8.5
+                ],
+                "floor_z_mm": 1.2000003,
+                "depth_mm": 0.7999997,
+                "remaining_bottom_thickness_mm": 3.2000003,
+                "floor_ray": {
+                  "location_mm": [
+                    32.5999985,
+                    -8.5,
+                    1.2000003
+                  ],
+                  "normal": [
+                    0.0,
+                    -0.0,
+                    1.0
+                  ],
+                  "face_index": 2570,
+                  "distance_mm": 1.7999997
+                },
+                "bottom_ray": {
+                  "location_mm": [
+                    32.5999985,
+                    -8.5,
+                    -2.0
+                  ],
+                  "normal": [
+                    0.0,
+                    0.0,
+                    -1.0
+                  ],
+                  "face_index": 23,
+                  "distance_mm": 1.0
+                },
+                "solid_top_controls": [
+                  {
+                    "origin_mm": [
+                      32.6,
+                      -9.4,
+                      3.0
+                    ],
+                    "hit": {
+                      "location_mm": [
+                        32.5999985,
+                        -9.3999996,
+                        2.0
+                      ],
+                      "normal": [
+                        0.0,
+                        0.0,
+                        1.0
+                      ],
+                      "face_index": 473,
+                      "distance_mm": 1.0
+                    }
+                  },
+                  {
+                    "origin_mm": [
+                      32.6,
+                      -7.6,
+                      3.0
+                    ],
+                    "hit": {
+                      "location_mm": [
+                        32.5999985,
+                        -7.5999999,
+                        2.0
+                      ],
+                      "normal": [
+                        0.0,
+                        -0.0,
+                        1.0
+                      ],
+                      "face_index": 257,
+                      "distance_mm": 1.0
+                    }
+                  }
+                ],
+                "floor_patch": {
+                  "bounds_min_mm": [
+                    32.0000076,
+                    -9.1000004,
+                    1.2000003
+                  ],
+                  "bounds_max_mm": [
+                    33.2000046,
+                    -7.9000001,
+                    1.2000003
+                  ],
+                  "area_mm2": 1.12372,
+                  "face_count": 30
+                }
+              },
+              {
+                "number_in_row": 3,
+                "centre_mm": [
+                  34.2,
+                  -8.5
+                ],
+                "floor_z_mm": 1.2000003,
+                "depth_mm": 0.7999997,
+                "remaining_bottom_thickness_mm": 3.2000003,
+                "floor_ray": {
+                  "location_mm": [
+                    34.2000008,
+                    -8.5,
+                    1.2000003
+                  ],
+                  "normal": [
+                    0.0,
+                    -0.0,
+                    1.0
+                  ],
+                  "face_index": 2664,
+                  "distance_mm": 1.7999997
+                },
+                "bottom_ray": {
+                  "location_mm": [
+                    34.2000008,
+                    -8.5,
+                    -2.0
+                  ],
+                  "normal": [
+                    0.0,
+                    0.0,
+                    -1.0
+                  ],
+                  "face_index": 23,
+                  "distance_mm": 1.0
+                },
+                "solid_top_controls": [
+                  {
+                    "origin_mm": [
+                      34.2,
+                      -9.4,
+                      3.0
+                    ],
+                    "hit": {
+                      "location_mm": [
+                        34.2000008,
+                        -9.3999996,
+                        2.0
+                      ],
+                      "normal": [
+                        0.0,
+                        0.0,
+                        1.0
+                      ],
+                      "face_index": 473,
+                      "distance_mm": 1.0
+                    }
+                  },
+                  {
+                    "origin_mm": [
+                      34.2,
+                      -7.6,
+                      3.0
+                    ],
+                    "hit": {
+                      "location_mm": [
+                        34.2000008,
+                        -7.5999999,
+                        2.0
+                      ],
+                      "normal": [
+                        0.0,
+                        -0.0,
+                        1.0
+                      ],
+                      "face_index": 273,
+                      "distance_mm": 1.0
+                    }
+                  }
+                ],
+                "floor_patch": {
+                  "bounds_min_mm": [
+                    33.6000061,
+                    -9.1000004,
+                    1.2000003
+                  ],
+                  "bounds_max_mm": [
+                    34.8000031,
+                    -7.9000001,
+                    1.2000003
+                  ],
+                  "area_mm2": 1.12372,
+                  "face_count": 30
+                }
+              },
+              {
+                "number_in_row": 4,
+                "centre_mm": [
+                  35.8,
+                  -8.5
+                ],
+                "floor_z_mm": 1.2000003,
+                "depth_mm": 0.7999997,
+                "remaining_bottom_thickness_mm": 3.2000003,
+                "floor_ray": {
+                  "location_mm": [
+                    35.7999992,
+                    -8.5,
+                    1.2000003
+                  ],
+                  "normal": [
+                    0.0,
+                    -0.0,
+                    1.0
+                  ],
+                  "face_index": 2758,
+                  "distance_mm": 1.7999997
+                },
+                "bottom_ray": {
+                  "location_mm": [
+                    35.7999992,
+                    -8.5,
+                    -2.0
+                  ],
+                  "normal": [
+                    0.0,
+                    0.0,
+                    -1.0
+                  ],
+                  "face_index": 23,
+                  "distance_mm": 1.0
+                },
+                "solid_top_controls": [
+                  {
+                    "origin_mm": [
+                      35.8,
+                      -9.4,
+                      3.0
+                    ],
+                    "hit": {
+                      "location_mm": [
+                        35.7999992,
+                        -9.3999996,
+                        2.0
+                      ],
+                      "normal": [
+                        0.0,
+                        0.0,
+                        1.0
+                      ],
+                      "face_index": 473,
+                      "distance_mm": 1.0
+                    }
+                  },
+                  {
+                    "origin_mm": [
+                      35.8,
+                      -7.6,
+                      3.0
+                    ],
+                    "hit": {
+                      "location_mm": [
+                        35.7999992,
+                        -7.5999999,
+                        2.0
+                      ],
+                      "normal": [
+                        0.0,
+                        0.0,
+                        1.0
+                      ],
+                      "face_index": 284,
+                      "distance_mm": 0.9999999
+                    }
+                  }
+                ],
+                "floor_patch": {
+                  "bounds_min_mm": [
+                    35.2000046,
+                    -9.1000004,
+                    1.2000003
+                  ],
+                  "bounds_max_mm": [
+                    36.4000053,
+                    -7.9000001,
+                    1.2000003
+                  ],
+                  "area_mm2": 1.1237206,
+                  "face_count": 30
+                }
+              },
+              {
+                "number_in_row": 5,
+                "centre_mm": [
+                  37.4,
+                  -8.5
+                ],
+                "floor_z_mm": 1.2000003,
+                "depth_mm": 0.7999997,
+                "remaining_bottom_thickness_mm": 3.2000003,
+                "floor_ray": {
+                  "location_mm": [
+                    37.4000015,
+                    -8.5,
+                    1.2000003
+                  ],
+                  "normal": [
+                    0.0,
+                    -0.0,
+                    1.0
+                  ],
+                  "face_index": 2852,
+                  "distance_mm": 1.7999997
+                },
+                "bottom_ray": {
+                  "location_mm": [
+                    37.4000015,
+                    -8.5,
+                    -2.0
+                  ],
+                  "normal": [
+                    0.0,
+                    0.0,
+                    -1.0
+                  ],
+                  "face_index": 23,
+                  "distance_mm": 1.0
+                },
+                "solid_top_controls": [
+                  {
+                    "origin_mm": [
+                      37.4,
+                      -9.4,
+                      3.0
+                    ],
+                    "hit": {
+                      "location_mm": [
+                        37.4000015,
+                        -9.3999996,
+                        2.0
+                      ],
+                      "normal": [
+                        0.0,
+                        0.0,
+                        1.0
+                      ],
+                      "face_index": 473,
+                      "distance_mm": 1.0
+                    }
+                  },
+                  {
+                    "origin_mm": [
+                      37.4,
+                      -7.6,
+                      3.0
+                    ],
+                    "hit": {
+                      "location_mm": [
+                        37.4000015,
+                        -7.5999999,
+                        2.0
+                      ],
+                      "normal": [
+                        0.0,
+                        0.0,
+                        1.0
+                      ],
+                      "face_index": 281,
+                      "distance_mm": 1.0
+                    }
+                  }
+                ],
+                "floor_patch": {
+                  "bounds_min_mm": [
+                    36.8000031,
+                    -9.1000004,
+                    1.2000003
+                  ],
+                  "bounds_max_mm": [
+                    38.0000038,
+                    -7.9000001,
+                    1.2000003
+                  ],
+                  "area_mm2": 1.1237206,
+                  "face_count": 30
+                }
+              },
+              {
+                "number_in_row": 6,
+                "centre_mm": [
+                  39.0,
+                  -8.5
+                ],
+                "floor_z_mm": 1.2000004,
+                "depth_mm": 0.7999996,
+                "remaining_bottom_thickness_mm": 3.2000004,
+                "floor_ray": {
+                  "location_mm": [
+                    39.0,
+                    -8.5,
+                    1.2000004
+                  ],
+                  "normal": [
+                    0.0,
+                    0.0,
+                    1.0
+                  ],
+                  "face_index": 908,
+                  "distance_mm": 1.7999996
+                },
+                "bottom_ray": {
+                  "location_mm": [
+                    39.0,
+                    -8.5,
+                    -2.0
+                  ],
+                  "normal": [
+                    0.0,
+                    0.0,
+                    -1.0
+                  ],
+                  "face_index": 23,
+                  "distance_mm": 1.0
+                },
+                "solid_top_controls": [
+                  {
+                    "origin_mm": [
+                      39.0,
+                      -9.4,
+                      3.0
+                    ],
+                    "hit": {
+                      "location_mm": [
+                        39.0,
+                        -9.3999996,
+                        2.0
+                      ],
+                      "normal": [
+                        -0.0,
+                        0.0,
+                        1.0
+                      ],
+                      "face_index": 470,
+                      "distance_mm": 1.0
+                    }
+                  },
+                  {
+                    "origin_mm": [
+                      39.0,
+                      -7.6,
+                      3.0
+                    ],
+                    "hit": {
+                      "location_mm": [
+                        39.0,
+                        -7.5999999,
+                        2.0
+                      ],
+                      "normal": [
+                        0.0,
+                        0.0,
+                        1.0
+                      ],
+                      "face_index": 280,
+                      "distance_mm": 1.0
+                    }
+                  }
+                ],
+                "floor_patch": {
+                  "bounds_min_mm": [
+                    38.4000015,
+                    -9.1000004,
+                    1.2000003
+                  ],
+                  "bounds_max_mm": [
+                    39.6000023,
+                    -7.9000001,
+                    1.2000003
+                  ],
+                  "area_mm2": 1.1237206,
+                  "face_count": 30
+                }
+              }
+            ]
+          }
+        ],
+        "non_manifold_edges": 0,
+        "isolated_vertices": 0,
+        "connected_shells": 1,
+        "euler_characteristic": -10,
+        "genus": 6,
+        "closed_volume": true,
+        "volume_mm3": 7393.4816018,
+        "expected_volume_from_measured_mesh_mm3": 7393.4815965,
+        "mesh_counts": {
+          "vertices": 1417,
+          "edges": 4281,
+          "faces": 2854
+        },
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "unit_scale": 0.001,
+        "length_unit": "MILLIMETERS",
+        "solid_plate_control_rays": {
+          "top": {
+            "location_mm": [
+              -46.0,
+              0.0,
+              2.0
+            ],
+            "normal": [
+              -0.0,
+              0.0,
+              1.0
+            ],
+            "face_index": 475,
+            "distance_mm": 1.0
+          },
+          "bottom": {
+            "location_mm": [
+              -46.0,
+              0.0,
+              -2.0
+            ],
+            "normal": [
+              -0.0,
+              -0.0,
+              -1.0
+            ],
+            "face_index": 20,
+            "distance_mm": 1.0
+          }
+        },
+        "printed": false,
+        "fit_tested": false,
+        "qualified_clearance_mm": null,
+        "clearance_status": "experimental trial points; no qualified printed fit",
+        "numericComparison": {
+          "purpose": "Floating point reconstruction only; not manufacturing tolerance or fit acceptance",
+          "dimensionsAbsMm": 0.0001,
+          "normalAbs": 1e-06,
+          "volumeRelative": 1e-05
+        }
+      }
+    }
+  ],
+  "source_stls_unchanged": true,
+  "saved_scene": false,
+  "printed": false,
+  "fit_tested": false,
+  "physical_measurements": null,
+  "fit_results": null,
+  "qualified_clearance_mm": null,
+  "slicer_checked": false,
+  "trial_total_clearances_mm": [
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    0.6
+  ],
+  "numericComparison": {
+    "purpose": "Floating point reconstruction only; not manufacturing tolerance or fit acceptance",
+    "dimensionsAbsMm": 0.0001,
+    "volumeRelative": 1e-05
+  }
+}

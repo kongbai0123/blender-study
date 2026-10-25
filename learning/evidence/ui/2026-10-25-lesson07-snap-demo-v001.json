@@ -1,0 +1,39 @@
+{
+  "recordedAt": "2026-10-25T07:54:08.569290+00:00",
+  "url": "http://127.0.0.1:8766/",
+  "lesson": "07",
+  "step": "07-02",
+  "browser": "ChatGPT in-app browser",
+  "screenshots": [
+    {
+      "path": "learning/evidence/ui/2026-10-25-lesson07-snap-demo-v001-overview.jpg",
+      "role": "overview",
+      "sha256": "f31c154a696aa27e6aab711c55ffcdbbc86a9a8df1505575b6e0c2bb2dc7532d",
+      "bytes": 37423,
+      "width": 304,
+      "height": 848,
+      "pixelEdits": false
+    },
+    {
+      "path": "learning/evidence/ui/2026-10-25-lesson07-snap-demo-v001-parameters.jpg",
+      "role": "parameters",
+      "sha256": "b61a9f7c34502a640df3fb495399b924068e419a82d90daf6ef653758affc04d",
+      "bytes": 34005,
+      "width": 304,
+      "height": 848,
+      "pixelEdits": false
+    }
+  ],
+  "visibleChecks": [
+    "原始Blender卡扣與上蓋實拍",
+    "13項草案參數及單位",
+    "材料與允許應變待定",
+    "未計算強度或力量、無實體配合合格結果",
+    "新場景及幾何草案JSON下載"
+  ],
+  "learnerCompletionConfirmed": false,
+  "frontendSource": {
+    "javascriptSha256": "22653a24b77215cc3690f092180fb3efa1c43c15fbc713ef17612a771c7b7e36",
+    "cssSha256": "b6c9f2794a07c7fb4d0f33b209be48486d27b1d32776229f98ffdce51b00e457"
+  }
+}

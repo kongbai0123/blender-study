@@ -1,0 +1,53 @@
+{
+  "recordedAt": "2026-10-25T06:49:40.635331+00:00",
+  "files": [
+    {
+      "source": "learning/tutor/run_demo.py",
+      "snapshot": "source-snapshot/run_demo.py",
+      "sha256": "8a0afa081716cab276c99fc811f6a2453ac82f45b28d8a0b1c639eef67347058"
+    },
+    {
+      "source": "learning/tutor/blender_demo.py",
+      "snapshot": "source-snapshot/blender_demo.py",
+      "sha256": "96321d8180b1e05a9b77d47551adefbf43ddd04e6add2505eca3b30ceb831a6c"
+    },
+    {
+      "source": "learning/tutor/scenarios/common.py",
+      "snapshot": "source-snapshot/common.py",
+      "sha256": "45044c48522bf5a2dee130382f902a07243e82027addaf6594cbae59b3369c3d"
+    },
+    {
+      "source": "learning/tutor/scenarios/lesson06_dovetail_export.py",
+      "snapshot": "source-snapshot/lesson06_dovetail_export.py",
+      "sha256": "11aa6b1e14a27e7f6784f451ecdbacb9e51342c827d9e8f95d732acf0ff7682f"
+    },
+    {
+      "source": "learning/tutor/scenarios/lid_checks.py",
+      "snapshot": "source-snapshot/lid_checks.py",
+      "sha256": "b2e2438126695cca24cb560dce046ca743c2de2c348116141ff6ed75c42e52c3"
+    },
+    {
+      "source": "learning/tutor/scenarios/tenon_checks.py",
+      "snapshot": "source-snapshot/tenon_checks.py",
+      "sha256": "4defe55d142ac78be924cef8d82abc3bd24bd2db6f380332eb29cb5b0d89d13d"
+    },
+    {
+      "source": "learning/tutor/scenarios/dovetail_checks.py",
+      "snapshot": "source-snapshot/dovetail_checks.py",
+      "sha256": "d3baee5fdae4682de29585daf0200932267643579bbc94fe41e129f8a56cdad2"
+    },
+    {
+      "source": "learning/tutor/scenarios/stl_checks.py",
+      "snapshot": "source-snapshot/stl_checks.py",
+      "sha256": "36f09e213a7759a95ea07cee1f70fbaaaf2287551b9c97d9308778a658fe922c"
+    },
+    {
+      "source": "learning/tutor/scenarios/dovetail_stl_checks.py",
+      "snapshot": "source-snapshot/dovetail_stl_checks.py",
+      "sha256": "d91865140e13b531d5988867bb10e0708fe2403be5060c8f6dcb1ea67f35d483"
+    }
+  ],
+  "sourceScene": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\06\\2026-10-25-lesson06-dovetail-demo-v002\\demo-files\\u06_dovetail_slide_v001.blend",
+  "sourceCopy": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\06\\2026-10-25-lesson06-dovetail-export-demo-v001\\demo-files\\sources\\u06_dovetail_slide_v001.blend",
+  "sourceSha256": "b7da592c4b080163566cb6e1a90390832eae6db8421fbf7be23bfb9071ae0c3e"
+}

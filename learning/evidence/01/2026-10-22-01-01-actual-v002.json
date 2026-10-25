@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "kind": "actual_window_screenshot",
+  "capturedOn": "2026-10-22",
+  "savedAt": "2026-10-22T13:09:24+08:00",
+  "timezone": "Asia/Taipei",
+  "captureMethod": "Windows Computer Use / @oai/sky.get_window_state(include_screenshot=true)",
+  "windowTitle": "(Unsaved) - Blender 5.2.1 LTS",
+  "path": "learning/evidence/01/2026-10-22-01-01-actual-v002.jpg",
+  "width": 1494,
+  "height": 1019,
+  "sha256": "4d42ad885683085cfe7136bcbd83a792a3aca8f8bb311adc0537acda6b10ac3d",
+  "pixelEdits": false,
+  "observations": [
+    "Traditional Chinese menus",
+    "Object mode label: 物體模式",
+    "Cube selected with orange outline",
+    "Outliner rows: Camera, Cube, Light",
+    "Unsaved title"
+  ],
+  "presentation": {
+    "fullOriginal": true,
+    "focusView": {
+      "method": "CSS viewport of same original image",
+      "x": 1228,
+      "y": 55,
+      "width": 264,
+      "height": 165
+    }
+  },
+  "learnerConfirmation": false,
+  "sceneModifiedByTutor": false,
+  "mimeType": "image/jpeg"
+}

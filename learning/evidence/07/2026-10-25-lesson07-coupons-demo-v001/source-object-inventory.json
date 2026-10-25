@@ -1,0 +1,214 @@
+{
+  "Body": {
+    "type": "MESH",
+    "hidden": false,
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "modifier_count": 0,
+    "matrix_world": [
+      [
+        -4.371138828673793e-08,
+        0.0,
+        1.0,
+        -40.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        -1.0,
+        0.0,
+        -4.371138828673793e-08,
+        30.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "location_mm": [
+      -40.0,
+      0.0,
+      30.0
+    ],
+    "rotation_euler_radians": [
+      -0.0,
+      1.5707963705062866,
+      0.0
+    ],
+    "object_axis_dimensions_mm": [
+      60.0,
+      44.5,
+      30.0
+    ],
+    "mesh_data_name": "Cube",
+    "local_mesh_sha256": "8356fcf46ad59b976a68ea4056f187e6501bea69413529506f2170b23f32ee3e"
+  },
+  "Lid": {
+    "type": "MESH",
+    "hidden": false,
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "modifier_count": 0,
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        40.0
+      ],
+      [
+        0.0,
+        -1.0,
+        8.742277657347586e-08,
+        -3.0
+      ],
+      [
+        0.0,
+        -8.742277657347586e-08,
+        -1.0,
+        1.0000009536743164
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "location_mm": [
+      40.0,
+      -3.0,
+      1.0000009536743164
+    ],
+    "rotation_euler_radians": [
+      3.1415927410125732,
+      -0.0,
+      0.0
+    ],
+    "object_axis_dimensions_mm": [
+      60.0,
+      46.0,
+      7.000000953674316
+    ],
+    "mesh_data_name": "Cube.002",
+    "local_mesh_sha256": "e6dfc80b83997fce6363cd28d60afa2b641af2f42c6eaf2aaf18382629c599d1"
+  },
+  "SnapTool": {
+    "type": "MESH",
+    "hidden": true,
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "modifier_count": 0,
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        -22.200000762939453
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        -9.5
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "location_mm": [
+      0.0,
+      -22.200000762939453,
+      -9.5
+    ],
+    "rotation_euler_radians": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "object_axis_dimensions_mm": [
+      9.0,
+      4.599999904632568,
+      24.0
+    ],
+    "mesh_data_name": "Cube.001",
+    "local_mesh_sha256": "70aa7799e1bb0110ab65ab94b0f5135ec365c936773f43d49bfa651077bae2b2"
+  },
+  "FlangeTool": {
+    "type": "MESH",
+    "hidden": true,
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "modifier_count": 0,
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        -25.25
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        10.5
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "location_mm": [
+      0.0,
+      -25.25,
+      10.5
+    ],
+    "rotation_euler_radians": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "object_axis_dimensions_mm": [
+      10.0,
+      2.700000047683716,
+      5.200000286102295
+    ],
+    "mesh_data_name": "Cube.003",
+    "local_mesh_sha256": "47dd0f7ac66f8bff2bb7f39c1db7db26c65299759fb5eda2d2685dc976d214c5"
+  }
+}

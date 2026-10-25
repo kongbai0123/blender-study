@@ -1,0 +1,168 @@
+{
+  "kind": "coupon_stl_ui_technical_review",
+  "passed": true,
+  "reviewedAt": "2026-10-25T09:58:00.782533+00:00",
+  "scope": "Original native UI image review, artifacts/record/snapshot hashes and source/progress safeguards; independent pure geometry audit is separate.",
+  "photographs": [
+    {
+      "path": "07-05-06-A_L19-export-options.png",
+      "sha256": "787fb50995b0e44804a9248170bd2d1e77cb9be6527929af45df330d68b3e796",
+      "width": 1060,
+      "height": 600,
+      "original_native_pixels": true,
+      "visual_readback": "原生File Browser：Selection Only開、Scale1、Scene Unit關、Binary、Y Forward／Z Up；獨立A檔名可見。"
+    },
+    {
+      "path": "07-05-24-A_L19-reimport-dimensions.png",
+      "sha256": "5a3634959a94caac6d6a50ad0a4aed7b79dc5a0f0ddaf9e4abaf4c8f54120cb0",
+      "width": 1494,
+      "height": 1019,
+      "original_native_pixels": true,
+      "visual_readback": "A_L19_STL實際Item24×4.6×9，R0／Scale1／Location0，Metric／mm／0.001可見。"
+    },
+    {
+      "path": "07-05-28-B_L17-reimport-dimensions.png",
+      "sha256": "902135e64eab461cb83502e97f9f63ebbf772214512077a0505c8782377c92a3",
+      "width": 1494,
+      "height": 1019,
+      "original_native_pixels": true,
+      "visual_readback": "B_L17_STL實際Item22×4.6×9，R0／Scale1／Location0可見。"
+    },
+    {
+      "path": "07-05-32-C_L21-reimport-dimensions.png",
+      "sha256": "9b21f1f1224b36e130db26148fc57bc5b5f06bb8c21685a66fb743891903e6aa",
+      "width": 1494,
+      "height": 1019,
+      "original_native_pixels": true,
+      "visual_readback": "C_L21_STL實際Item26×4.6×9，R0／Scale1／Location0可見。"
+    },
+    {
+      "path": "07-05-35-reimport-layout.png",
+      "sha256": "8897c764ca05fb2d93f3c08fd415c34c9d9de007b3f6120da051b403a557ba1d",
+      "width": 1494,
+      "height": 1019,
+      "original_native_pixels": true,
+      "visual_readback": "只有三件新匯入mesh；active C，N面板26×4.6×9屬C。world原列位保留，不把Location0當零件world外框。"
+    }
+  ],
+  "artifacts": [
+    {
+      "variant": "A_L19",
+      "stl_path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\07\\2026-10-25-lesson07-coupon-export-demo-v001\\demo-files\\exports\\u07_A_L19_v001.stl",
+      "stl_sha256": "bb40b5f669601e11bc97d41f48e8a65552bfe99bb21645d47d359098c62af168",
+      "stl_bytes": 4084,
+      "stl_triangles": 80,
+      "stl_dimensions_mm": [
+        24.00000023841858,
+        4.600000381469727,
+        9.0
+      ],
+      "stl_bounds_mm": {
+        "min": [
+          -1.500000238418579,
+          -14.300000190734863,
+          0.0
+        ],
+        "max": [
+          22.5,
+          -9.699999809265137,
+          9.0
+        ]
+      },
+      "stl_non_manifold_edges": 0,
+      "stl_connected_shells": 1,
+      "stl_genus": 0
+    },
+    {
+      "variant": "B_L17",
+      "stl_path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\07\\2026-10-25-lesson07-coupon-export-demo-v001\\demo-files\\exports\\u07_B_L17_v001.stl",
+      "stl_sha256": "ac0f9ca920197544f7c47465901beb98059b69b99d5aa9ad88ac9d73d16d017a",
+      "stl_bytes": 4084,
+      "stl_triangles": 80,
+      "stl_dimensions_mm": [
+        22.00000023841858,
+        4.599999904632568,
+        9.0
+      ],
+      "stl_bounds_mm": {
+        "min": [
+          -1.500000238418579,
+          -2.299999952316284,
+          0.0
+        ],
+        "max": [
+          20.5,
+          2.299999952316284,
+          9.0
+        ]
+      },
+      "stl_non_manifold_edges": 0,
+      "stl_connected_shells": 1,
+      "stl_genus": 0
+    },
+    {
+      "variant": "C_L21",
+      "stl_path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\07\\2026-10-25-lesson07-coupon-export-demo-v001\\demo-files\\exports\\u07_C_L21_v001.stl",
+      "stl_sha256": "1e3bb7cb883fd5d00319ebd9f44b761843b3c1b8f4c644e3333ac7a463083788",
+      "stl_bytes": 4084,
+      "stl_triangles": 80,
+      "stl_dimensions_mm": [
+        26.00000023841858,
+        4.600000381469727,
+        9.0
+      ],
+      "stl_bounds_mm": {
+        "min": [
+          -1.500000238418579,
+          9.699999809265137,
+          0.0
+        ],
+        "max": [
+          24.5,
+          14.300000190734863,
+          9.0
+        ]
+      },
+      "stl_non_manifold_edges": 0,
+      "stl_connected_shells": 1,
+      "stl_genus": 0
+    }
+  ],
+  "record_count": 36,
+  "raw_mesh_files": 6,
+  "python_snapshots": 12,
+  "data_bindings": 7,
+  "snapshot_hashes_match": true,
+  "source_seven_meshes_matrices_datablock_names_unchanged": true,
+  "source_and_copy_unchanged": true,
+  "source_coupon_record_and_plan_unchanged": true,
+  "reference_pose_is_not_stl_transform": true,
+  "actual_reimport_location_zero_rotation_zero_scale_one": true,
+  "reimport_mesh_datablocks_created": 3,
+  "new_specimen_design_created": false,
+  "source_geometry_modified": false,
+  "saved_new_scene": false,
+  "final_objects": [
+    "A_L19_STL",
+    "B_L17_STL",
+    "C_L21_STL"
+  ],
+  "row_projection_gap_mm": 7.3999998569488525,
+  "unit_scope": "STL is unitless; values interpreted as millimetres; original world candidate poses retained.",
+  "operator_scope": "Live File Browser operator/options captured before native confirm; new binary STL and native reimport readbacks demonstrate execution. No operator history entry is invented.",
+  "geometry_scope": "new_geometry_created=false refers to no new specimen design; native STL reimport creates three new mesh datablocks with the unchanged source world geometry.",
+  "bed_scope": "Only anchor-side numeric contact, beam/root/hook raised geometry retained; support and printability remain pending.",
+  "export_record_sha256": "21b7b935add72f1bce455882222079b6abc13591bc4c6b7f2c23e02927772b80",
+  "verification_sha256": "ec7f678e47fe410c3f10482d2f64baf88abcf83b1dd5f9597d7866227d5f200d",
+  "learner_workspaces_unchanged": true,
+  "progress_sha256": "d92e4f2ee78a1cf41386816b8616bf635b89fb25f8bfd813ac00cd20ed20b4ef",
+  "material_grade": null,
+  "effective_mechanical_length_mm": null,
+  "improvement_validated": null,
+  "support_required": null,
+  "printed": false,
+  "fit_tested": false,
+  "slicer_checked": false,
+  "qualified_clearance_mm": null,
+  "qualified_strength_N": null
+}

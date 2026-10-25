@@ -1,0 +1,523 @@
+{
+  "schema_version": 1,
+  "run": "2026-10-25-lesson06-tenon-demo-v006",
+  "run_version": "v006",
+  "scene_version": "v001",
+  "recorded_on": "2026-10-25",
+  "timezone": "Asia/Taipei",
+  "performed_by": "tutor",
+  "completion_scope": "06-01 locating-pin and hole CAD geometry, save and reopen only; no STL, slicing, printing, measurement or physical fit test",
+  "source_scene": {
+    "path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\05\\2026-10-22-lesson05-lid-demo-v001\\demo-files\\u05_lid_v001.blend",
+    "sha256": "ab08f331dcb26c5ffc6c6ca56c7c7f022df96791c4777e37c5f01a964fbed6ff",
+    "bytes": 99064,
+    "version": "v001",
+    "unchanged": true,
+    "prior_verification": {
+      "path": "learning/evidence/05/2026-10-22-lesson05-lid-demo-v001/verification.json",
+      "sha256": "e226c9e5059a1cc8c75306cba70ee0512662779af7609ee2d27f2d8937a276c6",
+      "bytes": 19281
+    }
+  },
+  "opened_source_copy": {
+    "path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\06\\2026-10-25-lesson06-tenon-demo-v006\\demo-files\\sources\\u05_lid_v001.blend",
+    "sha256": "ab08f331dcb26c5ffc6c6ca56c7c7f022df96791c4777e37c5f01a964fbed6ff",
+    "bytes": 99064,
+    "unchanged": true,
+    "copy_of": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\05\\2026-10-22-lesson05-lid-demo-v001\\demo-files\\u05_lid_v001.blend"
+  },
+  "scene": {
+    "path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\06\\2026-10-25-lesson06-tenon-demo-v006\\demo-files\\u06_locating_tenon_v001.blend",
+    "sha256": "f94dc6c5d342f04c41dddc37a4682805a5f7d87b5cf7a8b7bda37cd8ec51040f",
+    "bytes": 105466,
+    "version": "v001",
+    "reopened": true,
+    "contains": [
+      "Body",
+      "Lid",
+      "TenonTool",
+      "HoleTool"
+    ]
+  },
+  "final_objects": {
+    "Body": {
+      "object_name": "Body",
+      "type": "MESH",
+      "modifier_count": 0,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hidden": false
+    },
+    "Lid": {
+      "object_name": "Lid",
+      "type": "MESH",
+      "modifier_count": 0,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hidden": false
+    },
+    "TenonTool": {
+      "object_name": "TenonTool",
+      "type": "MESH",
+      "modifier_count": 0,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hidden": true
+    },
+    "HoleTool": {
+      "object_name": "HoleTool",
+      "type": "MESH",
+      "modifier_count": 0,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hidden": true
+    }
+  },
+  "geometry_summary": {
+    "source_shell_dimensions_mm": [
+      60.0,
+      40.0,
+      30.0
+    ],
+    "source_cavity_envelope_mm": [
+      56.0,
+      36.0,
+      28.0
+    ],
+    "body_with_pin_dimensions_mm": [
+      60.0,
+      40.0,
+      31.5
+    ],
+    "body_bounds_mm": {
+      "min": [
+        -30.0,
+        -20.0,
+        -15.0
+      ],
+      "max": [
+        30.0,
+        20.0,
+        16.5
+      ]
+    },
+    "body_volume_mm3": 15920.330541274525,
+    "body_non_manifold_edges": 0,
+    "body_connected_shells": 1,
+    "body_genus": 0,
+    "lid_dimensions_mm": [
+      60.0,
+      40.0,
+      6.0
+    ],
+    "lid_plate_dimensions_mm": [
+      60.0,
+      40.0,
+      2.0
+    ],
+    "lid_volume_mm3": 6164.984350685121,
+    "lid_hole_through": true,
+    "lid_hole_z_mm": [
+      15.0,
+      17.0
+    ],
+    "lid_non_manifold_edges": 0,
+    "lid_connected_shells": 1,
+    "lid_genus": 1,
+    "pin_segments": 32,
+    "pin_nominal_circumdiameter_mm": 4.0,
+    "hole_segments": 32,
+    "hole_nominal_circumdiameter_mm": 4.4,
+    "hole_boundary_levels": [
+      {
+        "z_mm": 15.0,
+        "boundary_sample_count": 33,
+        "corner_count": 32,
+        "collinear_split_count": 1
+      },
+      {
+        "z_mm": 17.0,
+        "boundary_sample_count": 32,
+        "corner_count": 32,
+        "collinear_split_count": 0
+      }
+    ]
+  },
+  "geometry_evidence": [
+    {
+      "role": "body",
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/body_mesh.json",
+      "sha256": "930fcafdf6e09ba60bf7ea20e3e448f3cbdac9056d7a44e98e4369ca75ffde08",
+      "bytes": 13565,
+      "coordinate_space": "world-space millimetres",
+      "vertices": 80,
+      "triangles": 156,
+      "cad_metadata": {
+        "object_name": "Body",
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "unit_scale": 0.0010000000474974513,
+        "length_unit": "MILLIMETERS",
+        "measurement_source": "evaluated final mesh loop triangles in world-space millimetres",
+        "modifier_count": 0,
+        "object_location_mm": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "role": "lid",
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/lid_mesh.json",
+      "sha256": "4ae28e1981fa44e9be4d504a2d62b5fcecda16ec9634c84127aaa8191e797d9a",
+      "bytes": 15525,
+      "coordinate_space": "world-space millimetres",
+      "vertices": 89,
+      "triangles": 178,
+      "cad_metadata": {
+        "object_name": "Lid",
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "unit_scale": 0.0010000000474974513,
+        "length_unit": "MILLIMETERS",
+        "measurement_source": "evaluated final mesh loop triangles in world-space millimetres",
+        "modifier_count": 0,
+        "object_location_mm": [
+          0.0,
+          0.0,
+          16.0
+        ]
+      }
+    },
+    {
+      "role": "construction_pin",
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/pin_tool_mesh.json",
+      "sha256": "6174d4ab03382dab5f78e5c64a03420d5159ee2731ec8cafa9169e77d4595f4c",
+      "bytes": 11193,
+      "coordinate_space": "world-space millimetres",
+      "vertices": 64,
+      "triangles": 124,
+      "cad_metadata": {
+        "object_name": "TenonTool",
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "unit_scale": 0.0010000000474974513,
+        "length_unit": "MILLIMETERS",
+        "measurement_source": "evaluated final mesh loop triangles in world-space millimetres",
+        "modifier_count": 0,
+        "object_location_mm": [
+          23.0,
+          13.0,
+          1.5
+        ]
+      }
+    },
+    {
+      "role": "construction_cutter",
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/hole_tool_mesh.json",
+      "sha256": "265695b0ddce711a6cfeaf3aa9942a4f73b3f03ae450b94a49d07eec6a4a5cd7",
+      "bytes": 11201,
+      "coordinate_space": "world-space millimetres",
+      "vertices": 64,
+      "triangles": 124,
+      "cad_metadata": {
+        "object_name": "HoleTool",
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "unit_scale": 0.0010000000474974513,
+        "length_unit": "MILLIMETERS",
+        "measurement_source": "evaluated final mesh loop triangles in world-space millimetres",
+        "modifier_count": 0,
+        "object_location_mm": [
+          23.0,
+          13.0,
+          16.0
+        ]
+      }
+    }
+  ],
+  "source_snapshot_manifest": {
+    "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/source-snapshot/manifest.json",
+    "sha256": "15b557021b2e3cd841d7d3dc05a85f83cd3039ce69f2ef25e4fbcc8a05f09a45",
+    "bytes": 1924
+  },
+  "script_snapshots": [
+    {
+      "source": "learning/tutor/run_demo.py",
+      "snapshot": "source-snapshot/run_demo.py",
+      "sha256": "8a0afa081716cab276c99fc811f6a2453ac82f45b28d8a0b1c639eef67347058",
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/source-snapshot/run_demo.py"
+    },
+    {
+      "source": "learning/tutor/blender_demo.py",
+      "snapshot": "source-snapshot/blender_demo.py",
+      "sha256": "96321d8180b1e05a9b77d47551adefbf43ddd04e6add2505eca3b30ceb831a6c",
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/source-snapshot/blender_demo.py"
+    },
+    {
+      "source": "learning/tutor/scenarios/common.py",
+      "snapshot": "source-snapshot/common.py",
+      "sha256": "45044c48522bf5a2dee130382f902a07243e82027addaf6594cbae59b3369c3d",
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/source-snapshot/common.py"
+    },
+    {
+      "source": "learning/tutor/scenarios/lesson06_tenon.py",
+      "snapshot": "source-snapshot/lesson06_tenon.py",
+      "sha256": "dff30f0f29b77cba69059edc642a19aeb10545991c6c49e01c957450c213c290",
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/source-snapshot/lesson06_tenon.py"
+    },
+    {
+      "source": "learning/tutor/scenarios/lid_checks.py",
+      "snapshot": "source-snapshot/lid_checks.py",
+      "sha256": "b2e2438126695cca24cb560dce046ca743c2de2c348116141ff6ed75c42e52c3",
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/source-snapshot/lid_checks.py"
+    },
+    {
+      "source": "learning/tutor/scenarios/stl_checks.py",
+      "snapshot": "source-snapshot/stl_checks.py",
+      "sha256": "36f09e213a7759a95ea07cee1f70fbaaaf2287551b9c97d9308778a658fe922c",
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/source-snapshot/stl_checks.py"
+    },
+    {
+      "source": "learning/tutor/scenarios/tenon_checks.py",
+      "snapshot": "source-snapshot/tenon_checks.py",
+      "sha256": "4defe55d142ac78be924cef8d82abc3bd24bd2db6f380332eb29cb5b0d89d13d",
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/source-snapshot/tenon_checks.py"
+    }
+  ],
+  "operation_evidence": {
+    "run": {
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/run.json",
+      "sha256": "3d2214c81c4164e8781476c1ab4969a4c439cdab6385a908a99e86ed925817e1",
+      "bytes": 14927
+    },
+    "verification": {
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/verification.json",
+      "sha256": "9c3134c4d4254f4b5726a71be9a92451e01b768c3b2fda5c3773983163d3e324",
+      "bytes": 289785
+    },
+    "runner": {
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/runner-status.json",
+      "sha256": "44f3515f0814d23ce5ee6d398cf94cbe0aabd95f09ee9c4d4a23b0a638e6505a",
+      "bytes": 54434
+    },
+    "operand_attempts": {
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/operand-attempts.json",
+      "sha256": "b09566608d4eeef28d23bd4f97516ff54af82422c88283faab10d913a647eee9",
+      "bytes": 94
+    },
+    "operand_attempt_results": [
+      {
+        "attempt": 0,
+        "operation": "DIFFERENCE",
+        "operand": "HoleTool"
+      }
+    ],
+    "local_retry_used": false,
+    "original_png_count": 20
+  },
+  "execution_history": [
+    {
+      "run": "2026-10-25-lesson06-tenon-demo-v001",
+      "status": "failed",
+      "blender_exit_code": 0,
+      "original_png_count": 8,
+      "saved_final_scene": false,
+      "published": false,
+      "interruption_reason": "Lid 顯示／Boolean operand 的介面操作未符合預期；眼睛顯示點擊後視覺狀態不符，Boolean 指定檢查中止。",
+      "recorded_error_last_line": "RuntimeError: Boolean operation/operand differ",
+      "run_evidence": {
+        "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v001/run.json",
+        "sha256": "2eb79ea64e831aaf9e93879a454a8a71f3b4275690302a59c469e70ad08a579a",
+        "bytes": 7246
+      },
+      "runner_evidence": {
+        "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v001/runner-status.json",
+        "sha256": "67f1689207312d2cf61a1a6ddd4d473cf5c0396aed93ae07b647f2d244ec39e8",
+        "bytes": 54985
+      }
+    },
+    {
+      "run": "2026-10-25-lesson06-tenon-demo-v002",
+      "status": "failed",
+      "blender_exit_code": 0,
+      "original_png_count": 2,
+      "saved_final_scene": false,
+      "published": false,
+      "interruption_reason": "新的隱藏操作 guard 誤用僅接受 active mesh 的函式處理 Camera；相機不是網格而中止，屬 guard 型態限制。",
+      "recorded_error_last_line": "RuntimeError: Expected an active mesh",
+      "run_evidence": {
+        "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v002/run.json",
+        "sha256": "2edde7a1d07e6207234db0182cf4238fcfae0a8c3a9f92a7d7cbe6ae11af007d",
+        "bytes": 2361
+      },
+      "runner_evidence": {
+        "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v002/runner-status.json",
+        "sha256": "76d9b302bbeb3718139218b0f539db28e12c834208b2d656825d1d15e4c94ed9",
+        "bytes": 54655
+      }
+    },
+    {
+      "run": "2026-10-25-lesson06-tenon-demo-v003",
+      "status": "failed",
+      "blender_exit_code": 0,
+      "original_png_count": 9,
+      "saved_final_scene": false,
+      "published": false,
+      "interruption_reason": "前置 Boolean 選項已有實際原圖，Lid 為 Difference，但滴管未指定 HoleTool，實際 operand=None 而中止。",
+      "recorded_error_last_line": "RuntimeError: Boolean operation/operand differ: ('Lid', 'DIFFERENCE', None)",
+      "run_evidence": {
+        "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v003/run.json",
+        "sha256": "81ba9af21915cfa42f194e950e3c0a7ccabe38393e3e04d046f6bd5707bb5202",
+        "bytes": 7868
+      },
+      "runner_evidence": {
+        "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v003/runner-status.json",
+        "sha256": "e80fc82654da44056d15c362c8343f572ae90f134669818048d9c1a5b57b393e",
+        "bytes": 55079
+      }
+    },
+    {
+      "run": "2026-10-25-lesson06-tenon-demo-v004",
+      "status": "failed",
+      "blender_exit_code": 0,
+      "original_png_count": 10,
+      "saved_final_scene": false,
+      "published": false,
+      "interruption_reason": "Object 名稱搜尋在完整流程中的焦點／點擊時序不同，清單未打開；實際 operand=None，未因短 probe 成功就繼續。",
+      "recorded_error_last_line": "RuntimeError: Boolean operation/operand differ: ('Lid', 'DIFFERENCE', None)",
+      "run_evidence": {
+        "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v004/run.json",
+        "sha256": "34eb3a9cf78f7179adee4f1813aa1cdd94ae13e089f7c24df4fbb9fe75616aa8",
+        "bytes": 8231
+      },
+      "runner_evidence": {
+        "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v004/runner-status.json",
+        "sha256": "6b466180042731050546e1c38cc70e077df0a1b97da3c7845d282638f9178ad0",
+        "bytes": 54822
+      }
+    },
+    {
+      "run": "2026-10-25-lesson06-tenon-demo-v005",
+      "status": "failed",
+      "blender_exit_code": 0,
+      "original_png_count": 11,
+      "saved_final_scene": false,
+      "published": false,
+      "interruption_reason": "operand-attempt 0 已讀回 Difference/HoleTool；Apply 後舊 checker 要求邊界恰有 32 個樣本，未辨識 Exact Boolean 額外的共線分割點而中止。後續實際 raw mesh 分析確認不是第 33 個角，驗證器已修正，EPS 未放寬。",
+      "recorded_error_last_line": "ValueError: 06-01 geometry validation: radial boundary must have exactly 32 vertices",
+      "run_evidence": {
+        "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v005/run.json",
+        "sha256": "bd41727b0edcab06ce97a8902e05522d500d4e9ed49f7975aec750c8ff07e2a0",
+        "bytes": 10092
+      },
+      "runner_evidence": {
+        "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v005/runner-status.json",
+        "sha256": "26bf0d4d5bcbc8899c72a933491ffd162bbc64acf0f6f96ff8ccc8413b9e366e",
+        "bytes": 56043
+      }
+    }
+  ],
+  "diagnostic_probes": [
+    {
+      "run": "2026-10-25-tenon-operand-probe-v001",
+      "status": "completed",
+      "scope": "UI/mesh diagnostics only; not the main teaching scene",
+      "original_png_count": 4,
+      "run_evidence": {
+        "path": "learning/evidence/06/2026-10-25-tenon-operand-probe-v001/run.json",
+        "sha256": "8ab531bd908701ef51b15ea43dd894c9197c1960a59934a3a2d035ca6dbd0eca",
+        "bytes": 2477
+      },
+      "runner_evidence": {
+        "path": "learning/evidence/06/2026-10-25-tenon-operand-probe-v001/runner-status.json",
+        "sha256": "45f11c8d5102bbdf98d849291de8a60e5e49a37106e689b19f294689e0a53b7f",
+        "bytes": 54068
+      },
+      "final_observation": "Actual modifier: DIFFERENCE / HoleTool; objects [('Body', False), ('Light', False), ('Camera', False), ('Lid', False), ('TenonTool', True), ('HoleTool', True)]",
+      "saved_scene": null
+    },
+    {
+      "run": "2026-10-25-tenon-operand-probe-v002",
+      "status": "completed",
+      "scope": "UI/mesh diagnostics only; not the main teaching scene",
+      "original_png_count": 5,
+      "run_evidence": {
+        "path": "learning/evidence/06/2026-10-25-tenon-operand-probe-v002/run.json",
+        "sha256": "258c18413334582c81cda49f04365ffa4cfda9d93c22b0761573e2df35ae8d04",
+        "bytes": 3009
+      },
+      "runner_evidence": {
+        "path": "learning/evidence/06/2026-10-25-tenon-operand-probe-v002/runner-status.json",
+        "sha256": "95084bd05caf62512ff5b4e01b0eada246be646d8e60f004135c85f382b364fe",
+        "bytes": 54441
+      },
+      "final_observation": "Diagnostic final mesh: 89 vertices / 178 triangles; no qualification or print result.",
+      "raw_mesh": {
+        "path": "learning/evidence/06/2026-10-25-tenon-operand-probe-v002/lid_mesh.json",
+        "sha256": "4ae28e1981fa44e9be4d504a2d62b5fcecda16ec9634c84127aaa8191e797d9a",
+        "bytes": 15525
+      },
+      "diagnostic_scene": {
+        "path": "learning/evidence/06/2026-10-25-tenon-operand-probe-v002/demo-files/u06_hole_diagnostic_v001.blend",
+        "sha256": "4bb61f26597282913d272ae4932ec77ffc0b7ce761bbd88438490b13233d2d11",
+        "bytes": 103874
+      },
+      "not_teaching_scene": true
+    }
+  ],
+  "workspace_check": {
+    "unchanged": true,
+    "snapshot_encoding": "SHA-256 of UTF-8 JSON, sorted keys, compact separators, ensure_ascii=false",
+    "snapshot_sha256_before": "4ad6905b1cef7594ff1bfed45b81e7794fdbf128011df09b4686bdb44d0a7d2f",
+    "snapshot_sha256_after": "4ad6905b1cef7594ff1bfed45b81e7794fdbf128011df09b4686bdb44d0a7d2f",
+    "directory_entries": 11,
+    "file_entries": 0,
+    "changes": []
+  },
+  "progress_baseline": {
+    "revision": 5,
+    "sha256": "d92e4f2ee78a1cf41386816b8616bf635b89fb25f8bfd813ac00cd20ed20b4ef",
+    "modified": false
+  },
+  "numeric_comparison": {
+    "dimensionsAbsMm": 0.0001,
+    "volumeRelative": 1e-05,
+    "purpose": "Floating point reconstruction only; not manufacturing tolerance or printed fit acceptance"
+  },
+  "numeric_comparison_note": "Floating-point reconstruction only; not manufacturing tolerances or fit acceptance limits.",
+  "journal": "learning/journal/2026-10-25-lesson06-tenon-demo-v006.md",
+  "exported_stl": false,
+  "slicer_checked": false,
+  "printed": false,
+  "fit_tested": false,
+  "physical_measurements": null,
+  "fit_results": null,
+  "physical_interference": null,
+  "qualified_clearance_mm": null
+}

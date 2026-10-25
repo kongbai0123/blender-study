@@ -1,0 +1,3533 @@
+{
+  "schema_version": 1,
+  "run": "2026-10-25-lesson07-overhang-demo-v001",
+  "run_version": "v001",
+  "scene_version": "v001",
+  "recorded_on": "2026-10-25",
+  "timezone": "Asia/Taipei",
+  "performed_by": "tutor",
+  "completion_scope": "07-03 rigid baseline/candidate orientation, native Mesh Analysis Overhang UI settings and original screenshots, independent polygon/loop-triangle angle and area readback, and a separately saved/reopened comparison scene. No material, strength, support, slicer, STL, printing or physical-fit qualification.",
+  "source_scene": {
+    "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/demo-files/u07_cantilever_snap_v001.blend",
+    "sha256": "5fec09b934f2935839d615376beaf598962d47f1b7ac2504f2666c7880a26305",
+    "bytes": 106700,
+    "absolute_path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\07\\2026-10-25-lesson07-snap-demo-v001\\demo-files\\u07_cantilever_snap_v001.blend",
+    "unchanged": true
+  },
+  "opened_source_copy": {
+    "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/demo-files/sources/u07_cantilever_snap_v001.blend",
+    "sha256": "5fec09b934f2935839d615376beaf598962d47f1b7ac2504f2666c7880a26305",
+    "bytes": 106700,
+    "absolute_path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\07\\2026-10-25-lesson07-overhang-demo-v001\\demo-files\\sources\\u07_cantilever_snap_v001.blend",
+    "copy_of": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\07\\2026-10-25-lesson07-snap-demo-v001\\demo-files\\u07_cantilever_snap_v001.blend",
+    "unchanged": true,
+    "is_new_checkpoint": false
+  },
+  "source_geometry_draft_record": {
+    "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/geometry-draft-record-v001.json",
+    "sha256": "4f201124cbf51dc849c7978ee85f7ff5e58ca4273cdd9b006d3eba6c52521b7a",
+    "bytes": 58367,
+    "unchanged": true,
+    "role": "07-02 geometry draft, including unresolved material/mechanical/physical conditions, preserved byte-for-byte"
+  },
+  "orientation_plan": {
+    "path": "learning/plans/07-03-print-orientation-draft-v001.json",
+    "sha256": "33831347ce131a3f29c107d18f24f0015b3314e8e8672dc2159b1d9badd4f6ac",
+    "bytes": 4412,
+    "chosen_by": "tutor",
+    "support_strategy_status": "pending_slicer_review",
+    "declared_poses": {
+      "body_baseline": {
+        "rotation_degrees": [
+          0,
+          0,
+          0
+        ],
+        "object_location_mm_nominal": [
+          -40,
+          0,
+          15
+        ],
+        "world_rotation_rows": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "world_translation_mm_nominal": [
+          -40,
+          0,
+          15
+        ],
+        "description": "原向盒底朝下，獨立移到Z0。"
+      },
+      "body_candidate": {
+        "rotation_degrees": [
+          0,
+          90,
+          0
+        ],
+        "object_location_mm_nominal": [
+          -40,
+          0,
+          30
+        ],
+        "world_rotation_rows": [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            -1,
+            0,
+            0
+          ]
+        ],
+        "world_translation_mm_nominal": [
+          -40,
+          0,
+          30
+        ],
+        "description": "繞全局Y正90°側放；原臂長+Z轉世界+X，原彎曲+Y仍為世界+Y，兩方向平行XY。僅幾何方向條件，未驗層間強度。"
+      },
+      "lid_baseline": {
+        "rotation_degrees": [
+          0,
+          0,
+          0
+        ],
+        "object_location_mm_nominal": [
+          40,
+          -3,
+          6
+        ],
+        "world_rotation_rows": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "world_translation_mm_nominal": [
+          40,
+          0,
+          -10.2
+        ],
+        "description": "原向蓋裙／凸緣低面落床；大蓋板底面仍高於床面。"
+      },
+      "lid_candidate": {
+        "rotation_degrees": [
+          180,
+          0,
+          0
+        ],
+        "object_location_mm_nominal": [
+          40,
+          -3,
+          1
+        ],
+        "world_rotation_rows": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            -1
+          ]
+        ],
+        "world_translation_mm_nominal": [
+          40,
+          -6,
+          17.2
+        ],
+        "description": "以自身原點繞全局X180°翻面，使原板頂面朝床；蓋裙／凸緣朝上，仍須檢查局部朝下面。Object Location不等同world剛體translation。"
+      }
+    }
+  },
+  "orientation_record": {
+    "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/print-orientation-record-v001.json",
+    "sha256": "b515d433f7c6b8e65e3247337f135a07bf56b0f6f9817efbab446fbf5c708986",
+    "bytes": 559144,
+    "record_overrides": {
+      "source_scene": "Resolved original scene path/hash binding replaces the relative plan string.",
+      "poses": "Measured four-pose readbacks replace the plan declarations; the immutable referenced plan retains all original declarations."
+    }
+  },
+  "new_scene": {
+    "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/demo-files/u07_print_orientation_v001.blend",
+    "sha256": "360417f208287a94ca13501f4365b70b3396ca6aba579231e0f8d2a442ecf47d",
+    "bytes": 106462,
+    "absolute_path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\07\\2026-10-25-lesson07-overhang-demo-v001\\demo-files\\u07_print_orientation_v001.blend",
+    "scene_role": "print_orientation_comparison_draft",
+    "reopened": true,
+    "saved_pose": "body_candidate_and_lid_candidate"
+  },
+  "only_rigid_rotation_and_translation": true,
+  "apply_rotation": false,
+  "shape_preservation": "Prescribed world rigid transforms and matched source vertices, followed by inverse-transform snapfit geometry checks. Geometry was not deformed or remodeled.",
+  "poses": {
+    "body_baseline": {
+      "part_kind": "body",
+      "pose": "baseline",
+      "rotation_matrix_world": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "world_translation_mm": [
+        -40.0,
+        0.0,
+        15.0
+      ],
+      "max_rigid_vertex_residual_mm": 1.6689300537109375e-06,
+      "rigid_shape_preserved": true,
+      "rotation_applied_to_mesh": false,
+      "bounds_mm": {
+        "min": [
+          -70.0,
+          -24.5,
+          0.0
+        ],
+        "max": [
+          -10.0,
+          20.0,
+          30.0
+        ]
+      },
+      "dimensions_mm": [
+        60.0,
+        44.5,
+        30.0
+      ],
+      "volume_mm3": 15888.78453133742,
+      "mesh_counts": {
+        "vertices": 60,
+        "edges": 174,
+        "faces": 116,
+        "triangles": 116,
+        "representation": "world-space triangulated mesh"
+      },
+      "non_manifold_edges": 0,
+      "connected_shells": 1,
+      "genus": 0,
+      "minimum_world_z_mm": 0.0,
+      "bed_contact_area_mm2": 2400.0,
+      "angle_boundary_band_deg": 0.0001,
+      "numeric_height_epsilon_mm": 0.0001,
+      "statistics_scope": "independently derived angles/areas and scalar remap; not GPU face-count or framebuffer readback",
+      "derived_polygon_summary": {
+        "all": {
+          "count": 55,
+          "area_mm2": 16391.84228564218,
+          "indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54
+          ]
+        },
+        "bed_contact": {
+          "count": 1,
+          "area_mm2": 2400.0,
+          "indices": [
+            3
+          ]
+        },
+        "downward_not_bed_contact": {
+          "count": 2,
+          "area_mm2": 47.70000457763672,
+          "indices": [
+            18,
+            23
+          ]
+        },
+        "fully_elevated_downward": {
+          "count": 2,
+          "area_mm2": 47.70000457763672,
+          "indices": [
+            18,
+            23
+          ]
+        },
+        "downward_touching_bed_edge": {
+          "count": 0,
+          "area_mm2": 0.0,
+          "indices": []
+        },
+        "derived_native_visible": {
+          "count": 3,
+          "area_mm2": 2447.7000045776367,
+          "indices": [
+            3,
+            18,
+            23
+          ]
+        },
+        "derived_native_visible_not_bed_contact": {
+          "count": 2,
+          "area_mm2": 47.70000457763672,
+          "indices": [
+            18,
+            23
+          ]
+        },
+        "above_maximum_gray": {
+          "count": 52,
+          "area_mm2": 13944.142281064542,
+          "indices": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            19,
+            20,
+            21,
+            22,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54
+          ]
+        },
+        "angle_boundary_band": {
+          "count": 3,
+          "area_mm2": 2447.7000045776367,
+          "indices": [
+            3,
+            18,
+            23
+          ]
+        }
+      },
+      "derived_loop_triangle_summary": {
+        "all": {
+          "count": 116,
+          "area_mm2": 16391.84228564218,
+          "indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104,
+            105,
+            106,
+            107,
+            108,
+            109,
+            110,
+            111,
+            112,
+            113,
+            114,
+            115
+          ]
+        },
+        "bed_contact": {
+          "count": 2,
+          "area_mm2": 2400.0,
+          "indices": [
+            12,
+            13
+          ]
+        },
+        "downward_not_bed_contact": {
+          "count": 4,
+          "area_mm2": 47.70000457763672,
+          "indices": [
+            42,
+            43,
+            52,
+            53
+          ]
+        },
+        "fully_elevated_downward": {
+          "count": 4,
+          "area_mm2": 47.70000457763672,
+          "indices": [
+            42,
+            43,
+            52,
+            53
+          ]
+        },
+        "downward_touching_bed_edge": {
+          "count": 0,
+          "area_mm2": 0.0,
+          "indices": []
+        },
+        "derived_native_visible": {
+          "count": 6,
+          "area_mm2": 2447.7000045776367,
+          "indices": [
+            12,
+            13,
+            42,
+            43,
+            52,
+            53
+          ]
+        },
+        "derived_native_visible_not_bed_contact": {
+          "count": 4,
+          "area_mm2": 47.70000457763672,
+          "indices": [
+            42,
+            43,
+            52,
+            53
+          ]
+        },
+        "above_maximum_gray": {
+          "count": 110,
+          "area_mm2": 13944.142281064542,
+          "indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104,
+            105,
+            106,
+            107,
+            108,
+            109,
+            110,
+            111,
+            112,
+            113,
+            114,
+            115
+          ]
+        },
+        "angle_boundary_band": {
+          "count": 6,
+          "area_mm2": 2447.7000045776367,
+          "indices": [
+            12,
+            13,
+            42,
+            43,
+            52,
+            53
+          ]
+        }
+      },
+      "layer_direction_readback": {
+        "layer_plane_normal_world": [
+          0,
+          0,
+          1
+        ],
+        "arm_length_direction_world": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "nominal_bending_direction_world": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "arm_length_parallel_bed": false,
+        "bending_direction_parallel_bed": true,
+        "scope": "geometric direction only; no layer adhesion, strain, fatigue or strength qualification"
+      }
+    },
+    "body_candidate": {
+      "part_kind": "body",
+      "pose": "candidate",
+      "rotation_matrix_world": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          -1,
+          0,
+          0
+        ]
+      ],
+      "world_translation_mm": [
+        -39.999999046325684,
+        0.0,
+        29.99999967216459
+      ],
+      "max_rigid_vertex_residual_mm": 3.123569869763596e-06,
+      "rigid_shape_preserved": true,
+      "rotation_applied_to_mesh": false,
+      "bounds_mm": {
+        "min": [
+          -55.0,
+          -24.5,
+          -6.556708171956416e-07
+        ],
+        "max": [
+          -24.999998092651367,
+          20.0,
+          60.0
+        ]
+      },
+      "dimensions_mm": [
+        30.000001907348633,
+        44.5,
+        60.00000065567082
+      ],
+      "volume_mm3": 15888.784404193018,
+      "mesh_counts": {
+        "vertices": 60,
+        "edges": 174,
+        "faces": 116,
+        "triangles": 116,
+        "representation": "world-space triangulated mesh"
+      },
+      "non_manifold_edges": 0,
+      "connected_shells": 1,
+      "genus": 0,
+      "minimum_world_z_mm": -6.556708171956416e-07,
+      "bed_contact_area_mm2": 1199.9999237060558,
+      "angle_boundary_band_deg": 0.0001,
+      "numeric_height_epsilon_mm": 0.0001,
+      "statistics_scope": "independently derived angles/areas and scalar remap; not GPU face-count or framebuffer readback",
+      "derived_polygon_summary": {
+        "all": {
+          "count": 55,
+          "area_mm2": 16391.842261227568,
+          "indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54
+          ]
+        },
+        "bed_contact": {
+          "count": 1,
+          "area_mm2": 1199.9999237060558,
+          "indices": [
+            4
+          ]
+        },
+        "downward_not_bed_contact": {
+          "count": 11,
+          "area_mm2": 1057.5339735839243,
+          "indices": [
+            7,
+            16,
+            22,
+            26,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            54
+          ]
+        },
+        "fully_elevated_downward": {
+          "count": 11,
+          "area_mm2": 1057.5339735839243,
+          "indices": [
+            7,
+            16,
+            22,
+            26,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            54
+          ]
+        },
+        "downward_touching_bed_edge": {
+          "count": 0,
+          "area_mm2": 0.0,
+          "indices": []
+        },
+        "derived_native_visible": {
+          "count": 10,
+          "area_mm2": 2257.3240613190947,
+          "indices": [
+            4,
+            7,
+            16,
+            22,
+            26,
+            35,
+            36,
+            39,
+            40,
+            54
+          ]
+        },
+        "derived_native_visible_not_bed_contact": {
+          "count": 9,
+          "area_mm2": 1057.3241376130395,
+          "indices": [
+            7,
+            16,
+            22,
+            26,
+            35,
+            36,
+            39,
+            40,
+            54
+          ]
+        },
+        "above_maximum_gray": {
+          "count": 45,
+          "area_mm2": 14134.518199908476,
+          "indices": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            6,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            17,
+            18,
+            19,
+            20,
+            21,
+            23,
+            24,
+            25,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            37,
+            38,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53
+          ]
+        },
+        "angle_boundary_band": {
+          "count": 6,
+          "area_mm2": 2256.819964294432,
+          "indices": [
+            4,
+            7,
+            16,
+            22,
+            26,
+            54
+          ]
+        }
+      },
+      "derived_loop_triangle_summary": {
+        "all": {
+          "count": 116,
+          "area_mm2": 16391.842261227568,
+          "indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104,
+            105,
+            106,
+            107,
+            108,
+            109,
+            110,
+            111,
+            112,
+            113,
+            114,
+            115
+          ]
+        },
+        "bed_contact": {
+          "count": 2,
+          "area_mm2": 1199.9999237060558,
+          "indices": [
+            14,
+            15
+          ]
+        },
+        "downward_not_bed_contact": {
+          "count": 19,
+          "area_mm2": 1057.5339735839243,
+          "indices": [
+            20,
+            21,
+            38,
+            39,
+            50,
+            51,
+            58,
+            59,
+            60,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            112,
+            113,
+            114,
+            115
+          ]
+        },
+        "fully_elevated_downward": {
+          "count": 19,
+          "area_mm2": 1057.5339735839243,
+          "indices": [
+            20,
+            21,
+            38,
+            39,
+            50,
+            51,
+            58,
+            59,
+            60,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            112,
+            113,
+            114,
+            115
+          ]
+        },
+        "downward_touching_bed_edge": {
+          "count": 0,
+          "area_mm2": 0.0,
+          "indices": []
+        },
+        "derived_native_visible": {
+          "count": 19,
+          "area_mm2": 2257.3240613190947,
+          "indices": [
+            14,
+            15,
+            20,
+            21,
+            38,
+            39,
+            50,
+            51,
+            58,
+            59,
+            60,
+            72,
+            73,
+            76,
+            77,
+            112,
+            113,
+            114,
+            115
+          ]
+        },
+        "derived_native_visible_not_bed_contact": {
+          "count": 17,
+          "area_mm2": 1057.3241376130395,
+          "indices": [
+            20,
+            21,
+            38,
+            39,
+            50,
+            51,
+            58,
+            59,
+            60,
+            72,
+            73,
+            76,
+            77,
+            112,
+            113,
+            114,
+            115
+          ]
+        },
+        "above_maximum_gray": {
+          "count": 97,
+          "area_mm2": 14134.51819990847,
+          "indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            16,
+            17,
+            18,
+            19,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            74,
+            75,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104,
+            105,
+            106,
+            107,
+            108,
+            109,
+            110,
+            111
+          ]
+        },
+        "angle_boundary_band": {
+          "count": 15,
+          "area_mm2": 2256.819964294432,
+          "indices": [
+            14,
+            15,
+            20,
+            21,
+            38,
+            39,
+            50,
+            51,
+            58,
+            59,
+            60,
+            112,
+            113,
+            114,
+            115
+          ]
+        }
+      },
+      "layer_direction_readback": {
+        "layer_plane_normal_world": [
+          0,
+          0,
+          1
+        ],
+        "arm_length_direction_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "nominal_bending_direction_world": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "arm_length_parallel_bed": true,
+        "bending_direction_parallel_bed": true,
+        "scope": "geometric direction only; no layer adhesion, strain, fatigue or strength qualification"
+      }
+    },
+    "lid_baseline": {
+      "part_kind": "lid",
+      "pose": "baseline",
+      "rotation_matrix_world": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "world_translation_mm": [
+        40.0,
+        0.0,
+        -10.199999809265137
+      ],
+      "max_rigid_vertex_residual_mm": 4.76837158203125e-07,
+      "rigid_shape_preserved": true,
+      "rotation_applied_to_mesh": false,
+      "bounds_mm": {
+        "min": [
+          10.0,
+          -26.0,
+          0.0
+        ],
+        "max": [
+          70.0,
+          20.0,
+          7.000000953674316
+        ]
+      },
+      "dimensions_mm": [
+        60.0,
+        46.0,
+        7.000000953674316
+      ],
+      "volume_mm3": 5602.200023460391,
+      "mesh_counts": {
+        "vertices": 26,
+        "edges": 72,
+        "faces": 48,
+        "triangles": 48,
+        "representation": "world-space triangulated mesh"
+      },
+      "non_manifold_edges": 0,
+      "connected_shells": 1,
+      "genus": 0,
+      "minimum_world_z_mm": 0.0,
+      "bed_contact_area_mm2": 27.00000762939453,
+      "angle_boundary_band_deg": 0.0001,
+      "numeric_height_epsilon_mm": 0.0001,
+      "statistics_scope": "independently derived angles/areas and scalar remap; not GPU face-count or framebuffer readback",
+      "derived_polygon_summary": {
+        "all": {
+          "count": 20,
+          "area_mm2": 6084.440039024354,
+          "indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ]
+        },
+        "bed_contact": {
+          "count": 2,
+          "area_mm2": 27.00000762939453,
+          "indices": [
+            11,
+            17
+          ]
+        },
+        "downward_not_bed_contact": {
+          "count": 1,
+          "area_mm2": 2745.0,
+          "indices": [
+            5
+          ]
+        },
+        "fully_elevated_downward": {
+          "count": 1,
+          "area_mm2": 2745.0,
+          "indices": [
+            5
+          ]
+        },
+        "downward_touching_bed_edge": {
+          "count": 0,
+          "area_mm2": 0.0,
+          "indices": []
+        },
+        "derived_native_visible": {
+          "count": 3,
+          "area_mm2": 2772.0000076293945,
+          "indices": [
+            5,
+            11,
+            17
+          ]
+        },
+        "derived_native_visible_not_bed_contact": {
+          "count": 1,
+          "area_mm2": 2745.0,
+          "indices": [
+            5
+          ]
+        },
+        "above_maximum_gray": {
+          "count": 17,
+          "area_mm2": 3312.440031394959,
+          "indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            6,
+            7,
+            8,
+            9,
+            10,
+            12,
+            13,
+            14,
+            15,
+            16,
+            18,
+            19
+          ]
+        },
+        "angle_boundary_band": {
+          "count": 3,
+          "area_mm2": 2772.0000076293945,
+          "indices": [
+            5,
+            11,
+            17
+          ]
+        }
+      },
+      "derived_loop_triangle_summary": {
+        "all": {
+          "count": 48,
+          "area_mm2": 6084.440039024354,
+          "indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47
+          ]
+        },
+        "bed_contact": {
+          "count": 4,
+          "area_mm2": 27.00000762939453,
+          "indices": [
+            30,
+            31,
+            42,
+            43
+          ]
+        },
+        "downward_not_bed_contact": {
+          "count": 6,
+          "area_mm2": 2745.0,
+          "indices": [
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ]
+        },
+        "fully_elevated_downward": {
+          "count": 6,
+          "area_mm2": 2745.0,
+          "indices": [
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ]
+        },
+        "downward_touching_bed_edge": {
+          "count": 0,
+          "area_mm2": 0.0,
+          "indices": []
+        },
+        "derived_native_visible": {
+          "count": 10,
+          "area_mm2": 2772.0000076293945,
+          "indices": [
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            30,
+            31,
+            42,
+            43
+          ]
+        },
+        "derived_native_visible_not_bed_contact": {
+          "count": 6,
+          "area_mm2": 2745.0,
+          "indices": [
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ]
+        },
+        "above_maximum_gray": {
+          "count": 38,
+          "area_mm2": 3312.440031394959,
+          "indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            44,
+            45,
+            46,
+            47
+          ]
+        },
+        "angle_boundary_band": {
+          "count": 10,
+          "area_mm2": 2772.0000076293945,
+          "indices": [
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            30,
+            31,
+            42,
+            43
+          ]
+        }
+      }
+    },
+    "lid_candidate": {
+      "part_kind": "lid",
+      "pose": "candidate",
+      "rotation_matrix_world": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ],
+      "world_translation_mm": [
+        40.0,
+        -6.0,
+        17.200001664926162
+      ],
+      "max_rigid_vertex_residual_mm": 2.062411454062385e-06,
+      "rigid_shape_preserved": true,
+      "rotation_applied_to_mesh": false,
+      "bounds_mm": {
+        "min": [
+          10.0,
+          -26.0,
+          -1.05704953057284e-06
+        ],
+        "max": [
+          70.0,
+          20.0,
+          7.000003814697266
+        ]
+      },
+      "dimensions_mm": [
+        60.0,
+        46.0,
+        7.000004871746796
+      ],
+      "volume_mm3": 5602.19990320802,
+      "mesh_counts": {
+        "vertices": 26,
+        "edges": 72,
+        "faces": 48,
+        "triangles": 48,
+        "representation": "world-space triangulated mesh"
+      },
+      "non_manifold_edges": 0,
+      "connected_shells": 1,
+      "genus": 0,
+      "minimum_world_z_mm": -1.05704953057284e-06,
+      "bed_contact_area_mm2": 2760.0000000000105,
+      "angle_boundary_band_deg": 0.0001,
+      "numeric_height_epsilon_mm": 0.0001,
+      "statistics_scope": "independently derived angles/areas and scalar remap; not GPU face-count or framebuffer readback",
+      "derived_polygon_summary": {
+        "all": {
+          "count": 20,
+          "area_mm2": 6084.44002638819,
+          "indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ]
+        },
+        "bed_contact": {
+          "count": 1,
+          "area_mm2": 2760.0000000000105,
+          "indices": [
+            6
+          ]
+        },
+        "downward_not_bed_contact": {
+          "count": 1,
+          "area_mm2": 12.000007629394531,
+          "indices": [
+            18
+          ]
+        },
+        "fully_elevated_downward": {
+          "count": 1,
+          "area_mm2": 12.000007629394531,
+          "indices": [
+            18
+          ]
+        },
+        "downward_touching_bed_edge": {
+          "count": 0,
+          "area_mm2": 0.0,
+          "indices": []
+        },
+        "derived_native_visible": {
+          "count": 2,
+          "area_mm2": 2772.000007629405,
+          "indices": [
+            6,
+            18
+          ]
+        },
+        "derived_native_visible_not_bed_contact": {
+          "count": 1,
+          "area_mm2": 12.000007629394531,
+          "indices": [
+            18
+          ]
+        },
+        "above_maximum_gray": {
+          "count": 18,
+          "area_mm2": 3312.440018758785,
+          "indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            19
+          ]
+        },
+        "angle_boundary_band": {
+          "count": 2,
+          "area_mm2": 2772.000007629405,
+          "indices": [
+            6,
+            18
+          ]
+        }
+      },
+      "derived_loop_triangle_summary": {
+        "all": {
+          "count": 48,
+          "area_mm2": 6084.440026388191,
+          "indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47
+          ]
+        },
+        "bed_contact": {
+          "count": 2,
+          "area_mm2": 2760.0000000000105,
+          "indices": [
+            20,
+            21
+          ]
+        },
+        "downward_not_bed_contact": {
+          "count": 2,
+          "area_mm2": 12.000007629394531,
+          "indices": [
+            44,
+            45
+          ]
+        },
+        "fully_elevated_downward": {
+          "count": 2,
+          "area_mm2": 12.000007629394531,
+          "indices": [
+            44,
+            45
+          ]
+        },
+        "downward_touching_bed_edge": {
+          "count": 0,
+          "area_mm2": 0.0,
+          "indices": []
+        },
+        "derived_native_visible": {
+          "count": 4,
+          "area_mm2": 2772.000007629405,
+          "indices": [
+            20,
+            21,
+            44,
+            45
+          ]
+        },
+        "derived_native_visible_not_bed_contact": {
+          "count": 2,
+          "area_mm2": 12.000007629394531,
+          "indices": [
+            44,
+            45
+          ]
+        },
+        "above_maximum_gray": {
+          "count": 44,
+          "area_mm2": 3312.4400187587853,
+          "indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            46,
+            47
+          ]
+        },
+        "angle_boundary_band": {
+          "count": 4,
+          "area_mm2": 2772.000007629405,
+          "indices": [
+            20,
+            21,
+            44,
+            45
+          ]
+        }
+      }
+    }
+  },
+  "analysis_settings": {
+    "type": "OVERHANG",
+    "axis": "NEG_Z",
+    "minimum_radians": 0.0,
+    "maximum_radians": 0.7853981852531433,
+    "minimum_deg": 0.0,
+    "maximum_deg": 45.00000125223908,
+    "show_statvis": true,
+    "show_overlays": true,
+    "shading": "SOLID",
+    "xray": false
+  },
+  "analysis_settings_by_pose": {
+    "body_baseline": {
+      "type": "OVERHANG",
+      "axis": "NEG_Z",
+      "minimum_radians": 0.0,
+      "maximum_radians": 0.7853981852531433,
+      "minimum_deg": 0.0,
+      "maximum_deg": 45.00000125223908,
+      "show_statvis": true,
+      "show_overlays": true,
+      "shading": "SOLID",
+      "xray": false
+    },
+    "body_candidate": {
+      "type": "OVERHANG",
+      "axis": "NEG_Z",
+      "minimum_radians": 0.0,
+      "maximum_radians": 0.7853981852531433,
+      "minimum_deg": 0.0,
+      "maximum_deg": 45.00000125223908,
+      "show_statvis": true,
+      "show_overlays": true,
+      "shading": "SOLID",
+      "xray": false
+    },
+    "lid_baseline": {
+      "type": "OVERHANG",
+      "axis": "NEG_Z",
+      "minimum_radians": 0.0,
+      "maximum_radians": 0.7853981852531433,
+      "minimum_deg": 0.0,
+      "maximum_deg": 45.00000125223908,
+      "show_statvis": true,
+      "show_overlays": true,
+      "shading": "SOLID",
+      "xray": false
+    },
+    "lid_candidate": {
+      "type": "OVERHANG",
+      "axis": "NEG_Z",
+      "minimum_radians": 0.0,
+      "maximum_radians": 0.7853981852531433,
+      "minimum_deg": 0.0,
+      "maximum_deg": 45.00000125223908,
+      "show_statvis": true,
+      "show_overlays": true,
+      "shading": "SOLID",
+      "xray": false
+    }
+  },
+  "analysis_contexts": {
+    "body_baseline": {
+      "mode": "EDIT_MESH",
+      "active_object": "Body",
+      "only_finished_part_visible": "Body",
+      "source_tools_hidden": true,
+      "native_popover_checked": true
+    },
+    "body_candidate": {
+      "mode": "EDIT_MESH",
+      "active_object": "Body",
+      "only_finished_part_visible": "Body",
+      "source_tools_hidden": true,
+      "native_popover_checked": true
+    },
+    "lid_baseline": {
+      "mode": "EDIT_MESH",
+      "active_object": "Lid",
+      "only_finished_part_visible": "Lid",
+      "source_tools_hidden": true,
+      "native_popover_checked": true
+    },
+    "lid_candidate": {
+      "mode": "EDIT_MESH",
+      "active_object": "Lid",
+      "only_finished_part_visible": "Lid",
+      "source_tools_hidden": true,
+      "native_popover_checked": true
+    }
+  },
+  "native_analysis_scope": {
+    "axis": "world NEG_Z",
+    "angle_definition": "Outward polygon normal to world negative Z: horizontal down=0 degrees, vertical=90, up=180.",
+    "range_role": "Tutor-chosen display range only; not a printer, material or support acceptance angle.",
+    "source_commit": "9e2066aef7ef",
+    "source_facts": {
+      "path": "sources/engineering/overhang-source-facts-v001.json",
+      "sha256": "a2fa8d6c556cacb533b94648a994e2cb92baa33fccd4b513d9681d34187d8c05",
+      "bytes": 6947
+    },
+    "native_readback": "Actual RNA radians/degrees and Edit Mode overlay settings plus original screenshots.",
+    "derived_statistics": "Polygon and loop-triangle angles/areas/counts are independent reconstructions, not counts supplied by the native panel and not sampled GPU colours.",
+    "boundary_handling": "Faces within 1e-4 degree of the display boundaries are listed separately; the band does not widen the native remap.",
+    "minimum_saturation": "Below Minimum saturates to weight 1; above Maximum maps to -1/gray; exact Maximum maps to 0."
+  },
+  "bed_reference": {
+    "plane_z_mm": 0,
+    "description": "僅以世界XY網格作Z0基準；未指定機型、床幅、切片原點或實體平台。",
+    "contact_readback_epsilon_mm": 0.0001,
+    "epsilon_role": "浮點落床讀值核對，不是製造公差或附著合格值。"
+  },
+  "candidate_layout": {
+    "passed": true,
+    "kind": "snapfit_print_layout",
+    "x_projection_gap_mm": 34.99999809265137,
+    "parts_geometrically_separate": true,
+    "bed_reference_z_mm": 0,
+    "printer_bed_dimensions_mm": null,
+    "bed_capacity_checked": false,
+    "support_required": null,
+    "support_generation_performed": false,
+    "slicer_checked": false,
+    "printed": false,
+    "fit_tested": false,
+    "physical_measurements": null,
+    "fit_results": null,
+    "qualified_strength_N": null,
+    "qualified_clearance_mm": null
+  },
+  "dimensions_context": {
+    "object_axis_body_dimensions_mm": [
+      60,
+      44.5,
+      30
+    ],
+    "world_axis_candidate_body_bounds": {
+      "min": [
+        -55.0,
+        -24.5,
+        -6.556708171956416e-07
+      ],
+      "max": [
+        -24.999998092651367,
+        20.0,
+        60.0
+      ]
+    },
+    "world_axis_candidate_body_spans_mm": [
+      30.000001907348633,
+      44.5,
+      60.00000065567082
+    ],
+    "note": "The native N-panel retains the object-axis dimensions after an unapplied rotation. World X/Y/Z bounds/spans in this manifest come from evaluated world vertices, not a direct reading of N-panel Dimensions.",
+    "object_location_vs_rigid_translation": "Lid origin is not world zero: Object Location and the affine world translation that maps the source vertices are different quantities; each pose retains both through raw CAD metadata and measured pose data."
+  },
+  "source_tools": {
+    "SnapTool": {
+      "type": "MESH",
+      "hidden": true,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "location": [
+        0.0,
+        -22.200000762939453,
+        -9.5
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "modifier_count": 0,
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -22.200000762939453
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -9.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "local_mesh_sha256": "70aa7799e1bb0110ab65ab94b0f5135ec365c936773f43d49bfa651077bae2b2"
+    },
+    "FlangeTool": {
+      "type": "MESH",
+      "hidden": true,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "location": [
+        0.0,
+        -25.25,
+        10.5
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "modifier_count": 0,
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -25.25
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          10.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "local_mesh_sha256": "47dd0f7ac66f8bff2bb7f39c1db7db26c65299759fb5eda2d2685dc976d214c5"
+    }
+  },
+  "final_tools": {
+    "SnapTool": {
+      "type": "MESH",
+      "hidden": true,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "location": [
+        0.0,
+        -22.200000762939453,
+        -9.5
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "modifier_count": 0,
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -22.200000762939453
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -9.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "local_mesh_sha256": "70aa7799e1bb0110ab65ab94b0f5135ec365c936773f43d49bfa651077bae2b2"
+    },
+    "FlangeTool": {
+      "type": "MESH",
+      "hidden": true,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "location": [
+        0.0,
+        -25.25,
+        10.5
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "modifier_count": 0,
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -25.25
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          10.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "local_mesh_sha256": "47dd0f7ac66f8bff2bb7f39c1db7db26c65299759fb5eda2d2685dc976d214c5"
+    }
+  },
+  "tools_unchanged": true,
+  "tools_included_in_overhang_analysis": false,
+  "final_objects": {
+    "Body": {
+      "object_name": "Body",
+      "type": "MESH",
+      "hidden": false,
+      "modifier_count": 0,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "location_mm": [
+        -40.0,
+        0.0,
+        30.0
+      ],
+      "rotation_euler_radians": [
+        -0.0,
+        1.5707963705062866,
+        0.0
+      ],
+      "matrix_world": [
+        [
+          -4.371138828673793e-08,
+          0.0,
+          1.0,
+          -40.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          -1.0,
+          0.0,
+          -4.371138828673793e-08,
+          30.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "Lid": {
+      "object_name": "Lid",
+      "type": "MESH",
+      "hidden": false,
+      "modifier_count": 0,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "location_mm": [
+        40.0,
+        -3.0,
+        1.0000009536743164
+      ],
+      "rotation_euler_radians": [
+        3.1415927410125732,
+        -0.0,
+        0.0
+      ],
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          40.0
+        ],
+        [
+          0.0,
+          -1.0,
+          8.742277657347586e-08,
+          -3.0
+        ],
+        [
+          0.0,
+          -8.742277657347586e-08,
+          -1.0,
+          1.0000009536743164
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "SnapTool": {
+      "object_name": "SnapTool",
+      "type": "MESH",
+      "hidden": true,
+      "modifier_count": 0,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "location_mm": [
+        0.0,
+        -22.200000762939453,
+        -9.5
+      ],
+      "rotation_euler_radians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -22.200000762939453
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -9.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "FlangeTool": {
+      "object_name": "FlangeTool",
+      "type": "MESH",
+      "hidden": true,
+      "modifier_count": 0,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "location_mm": [
+        0.0,
+        -25.25,
+        10.5
+      ],
+      "rotation_euler_radians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -25.25
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          10.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  },
+  "evidence": {
+    "run": {
+      "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/run.json",
+      "sha256": "06e47c21e84c3fe4ed9aed068d3317df79123c058555a5e523dafb194c3a0686",
+      "bytes": 11558
+    },
+    "runner_status": {
+      "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/runner-status.json",
+      "sha256": "3c83c14d7c6da739861aba7f2ca75aab302b0bc595e2a17a588fb9b77cfc1b30",
+      "bytes": 54470
+    },
+    "verification": {
+      "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/verification.json",
+      "sha256": "ab84fcc47ee59d2303a1174a8b67c27c898255c5c556e3b0deaee616741b9dc7",
+      "bytes": 566596
+    },
+    "pose_verification": {
+      "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/pose-verification.json",
+      "sha256": "bca19cf01c7c9c8e2cb3f3671ec7c85a1072fbda34b2985bba5c94c359efc9b1",
+      "bytes": 515275
+    },
+    "analysis_settings_by_pose": {
+      "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/analysis-settings-by-pose.json",
+      "sha256": "3996be72fd79eb35b9aad2cc767a618d60f6ce36c6a02547540d1b7b5ddd0dee",
+      "bytes": 1249
+    },
+    "source_tool_inventory": {
+      "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/source-tool-inventory.json",
+      "sha256": "136ec212c02f611e9faffe869f54f8a87fdc242ed45b9975028af3c737c9fa71",
+      "bytes": 1435
+    },
+    "raw_meshes": [
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/source_body_mesh.json",
+        "sha256": "06bc7b62c64c740a1485d6e636b1b6566c60f3711e5b7f1de47f25d4b7bfcf63",
+        "bytes": 18193,
+        "role": "source_body",
+        "vertex_count": 60,
+        "native_polygon_count": 55,
+        "loop_triangle_count": 116,
+        "cad_metadata": {
+          "object_name": "Body",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "modifier_count": 0,
+          "object_location_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "object_rotation_euler_radians": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "unit_scale": 0.0010000000474974513,
+          "length_unit": "MILLIMETERS",
+          "measurement_source": "evaluated world-mm polygons and loop triangles; read only",
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "object_rotation_euler_degrees": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/source_lid_mesh.json",
+        "sha256": "e689e8005cc1c19951953a041c96939c44a06029269399313103cb0cf75265a8",
+        "bytes": 7693,
+        "role": "source_lid",
+        "vertex_count": 26,
+        "native_polygon_count": 20,
+        "loop_triangle_count": 48,
+        "cad_metadata": {
+          "object_name": "Lid",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "modifier_count": 0,
+          "object_location_mm": [
+            0.0,
+            -3.0,
+            16.200000762939453
+          ],
+          "object_rotation_euler_radians": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "unit_scale": 0.0010000000474974513,
+          "length_unit": "MILLIMETERS",
+          "measurement_source": "evaluated world-mm polygons and loop triangles; read only",
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              -3.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              16.200000762939453
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "object_rotation_euler_degrees": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/body_baseline_mesh.json",
+        "sha256": "102f51a95f6a9c9259d30fc2544468e65c96dc942fc20bce71172e50ff62b93e",
+        "bytes": 18207,
+        "role": "body_baseline",
+        "vertex_count": 60,
+        "native_polygon_count": 55,
+        "loop_triangle_count": 116,
+        "cad_metadata": {
+          "object_name": "Body",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "modifier_count": 0,
+          "object_location_mm": [
+            -40.0,
+            0.0,
+            15.0
+          ],
+          "object_rotation_euler_radians": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "unit_scale": 0.0010000000474974513,
+          "length_unit": "MILLIMETERS",
+          "measurement_source": "evaluated world-mm polygons and loop triangles; read only",
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              -40.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              15.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "object_rotation_euler_degrees": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/body_candidate_mesh.json",
+        "sha256": "e87e0387385977798febd880956379e5e9694928cac1f20d43a94d92f03caec8",
+        "bytes": 19173,
+        "role": "body_candidate",
+        "vertex_count": 60,
+        "native_polygon_count": 55,
+        "loop_triangle_count": 116,
+        "cad_metadata": {
+          "object_name": "Body",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "modifier_count": 0,
+          "object_location_mm": [
+            -40.0,
+            0.0,
+            30.0
+          ],
+          "object_rotation_euler_radians": [
+            -0.0,
+            1.5707963705062866,
+            0.0
+          ],
+          "unit_scale": 0.0010000000474974513,
+          "length_unit": "MILLIMETERS",
+          "measurement_source": "evaluated world-mm polygons and loop triangles; read only",
+          "matrix_world": [
+            [
+              -4.371138828673793e-08,
+              0.0,
+              1.0,
+              -40.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              -1.0,
+              0.0,
+              -4.371138828673793e-08,
+              30.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "object_rotation_euler_degrees": [
+            -0.0,
+            90.00000250447816,
+            0.0
+          ]
+        }
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/lid_baseline_mesh.json",
+        "sha256": "a8140e4e6bb9b511c342468064fd203a888a22853ea426b41199c5ebc8ead00f",
+        "bytes": 7594,
+        "role": "lid_baseline",
+        "vertex_count": 26,
+        "native_polygon_count": 20,
+        "loop_triangle_count": 48,
+        "cad_metadata": {
+          "object_name": "Lid",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "modifier_count": 0,
+          "object_location_mm": [
+            40.0,
+            -3.0,
+            6.000000953674316
+          ],
+          "object_rotation_euler_radians": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "unit_scale": 0.0010000000474974513,
+          "length_unit": "MILLIMETERS",
+          "measurement_source": "evaluated world-mm polygons and loop triangles; read only",
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              40.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              -3.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              6.000000953674316
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "object_rotation_euler_degrees": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/lid_candidate_mesh.json",
+        "sha256": "99e7b3aced9fb8892f37d5480c1d7326cb48a11c987ff7ceee8f809ce1d27573",
+        "bytes": 7963,
+        "role": "lid_candidate",
+        "vertex_count": 26,
+        "native_polygon_count": 20,
+        "loop_triangle_count": 48,
+        "cad_metadata": {
+          "object_name": "Lid",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "modifier_count": 0,
+          "object_location_mm": [
+            40.0,
+            -3.0,
+            1.0000009536743164
+          ],
+          "object_rotation_euler_radians": [
+            3.1415927410125732,
+            -0.0,
+            0.0
+          ],
+          "unit_scale": 0.0010000000474974513,
+          "length_unit": "MILLIMETERS",
+          "measurement_source": "evaluated world-mm polygons and loop triangles; read only",
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              40.0
+            ],
+            [
+              0.0,
+              -1.0,
+              8.742277657347586e-08,
+              -3.0
+            ],
+            [
+              0.0,
+              -8.742277657347586e-08,
+              -1.0,
+              1.0000009536743164
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "object_rotation_euler_degrees": [
+            180.00000500895632,
+            -0.0,
+            0.0
+          ]
+        }
+      }
+    ],
+    "snapshot_manifest": {
+      "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/source-snapshot/manifest.json",
+      "sha256": "5906d69e0f7f26537d255fa91872b1aef90b7f2a2312fa913c5e1457efee009a",
+      "bytes": 3215
+    },
+    "script_bindings": [
+      {
+        "source": {
+          "path": "learning/tutor/run_demo.py",
+          "sha256": "8a0afa081716cab276c99fc811f6a2453ac82f45b28d8a0b1c639eef67347058",
+          "bytes": 11779
+        },
+        "snapshot": {
+          "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/source-snapshot/run_demo.py",
+          "sha256": "8a0afa081716cab276c99fc811f6a2453ac82f45b28d8a0b1c639eef67347058",
+          "bytes": 11779
+        }
+      },
+      {
+        "source": {
+          "path": "learning/tutor/blender_demo.py",
+          "sha256": "96321d8180b1e05a9b77d47551adefbf43ddd04e6add2505eca3b30ceb831a6c",
+          "bytes": 7140
+        },
+        "snapshot": {
+          "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/source-snapshot/blender_demo.py",
+          "sha256": "96321d8180b1e05a9b77d47551adefbf43ddd04e6add2505eca3b30ceb831a6c",
+          "bytes": 7140
+        }
+      },
+      {
+        "source": {
+          "path": "learning/tutor/scenarios/common.py",
+          "sha256": "45044c48522bf5a2dee130382f902a07243e82027addaf6594cbae59b3369c3d",
+          "bytes": 11133
+        },
+        "snapshot": {
+          "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/source-snapshot/common.py",
+          "sha256": "45044c48522bf5a2dee130382f902a07243e82027addaf6594cbae59b3369c3d",
+          "bytes": 11133
+        }
+      },
+      {
+        "source": {
+          "path": "learning/tutor/scenarios/lesson07_overhang.py",
+          "sha256": "b1f329cf514b648020baf783b56ceae641f6a63503aa3fea450765b5ba5642c6",
+          "bytes": 18645
+        },
+        "snapshot": {
+          "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/source-snapshot/lesson07_overhang.py",
+          "sha256": "b1f329cf514b648020baf783b56ceae641f6a63503aa3fea450765b5ba5642c6",
+          "bytes": 18645
+        }
+      },
+      {
+        "source": {
+          "path": "learning/tutor/scenarios/overhang_checks.py",
+          "sha256": "66023ffe41bb121f75c77b6db362fc559075c7ba56decd9c00d75832c57bb25a",
+          "bytes": 16817
+        },
+        "snapshot": {
+          "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/source-snapshot/overhang_checks.py",
+          "sha256": "66023ffe41bb121f75c77b6db362fc559075c7ba56decd9c00d75832c57bb25a",
+          "bytes": 16817
+        }
+      },
+      {
+        "source": {
+          "path": "learning/tutor/scenarios/snapfit_checks.py",
+          "sha256": "0b37846f663d2607764158046cf130d81e15792c006eed9d9631f8ba28e7f4c3",
+          "bytes": 16912
+        },
+        "snapshot": {
+          "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/source-snapshot/snapfit_checks.py",
+          "sha256": "0b37846f663d2607764158046cf130d81e15792c006eed9d9631f8ba28e7f4c3",
+          "bytes": 16912
+        }
+      },
+      {
+        "source": {
+          "path": "learning/tutor/scenarios/tenon_checks.py",
+          "sha256": "4defe55d142ac78be924cef8d82abc3bd24bd2db6f380332eb29cb5b0d89d13d",
+          "bytes": 24591
+        },
+        "snapshot": {
+          "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/source-snapshot/tenon_checks.py",
+          "sha256": "4defe55d142ac78be924cef8d82abc3bd24bd2db6f380332eb29cb5b0d89d13d",
+          "bytes": 24591
+        }
+      },
+      {
+        "source": {
+          "path": "learning/tutor/scenarios/lid_checks.py",
+          "sha256": "b2e2438126695cca24cb560dce046ca743c2de2c348116141ff6ed75c42e52c3",
+          "bytes": 17073
+        },
+        "snapshot": {
+          "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/source-snapshot/lid_checks.py",
+          "sha256": "b2e2438126695cca24cb560dce046ca743c2de2c348116141ff6ed75c42e52c3",
+          "bytes": 17073
+        }
+      }
+    ],
+    "data_bindings": [
+      {
+        "source": {
+          "path": "learning/plans/07-03-print-orientation-draft-v001.json",
+          "sha256": "33831347ce131a3f29c107d18f24f0015b3314e8e8672dc2159b1d9badd4f6ac",
+          "bytes": 4412
+        },
+        "snapshot": {
+          "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/source-snapshot/print-orientation-plan-v001.json",
+          "sha256": "33831347ce131a3f29c107d18f24f0015b3314e8e8672dc2159b1d9badd4f6ac",
+          "bytes": 4412
+        }
+      },
+      {
+        "source": {
+          "path": "sources/engineering/overhang-source-facts-v001.json",
+          "sha256": "a2fa8d6c556cacb533b94648a994e2cb92baa33fccd4b513d9681d34187d8c05",
+          "bytes": 6947
+        },
+        "snapshot": {
+          "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/source-snapshot/overhang-source-facts-v001.json",
+          "sha256": "a2fa8d6c556cacb533b94648a994e2cb92baa33fccd4b513d9681d34187d8c05",
+          "bytes": 6947
+        }
+      },
+      {
+        "source": {
+          "path": "sources/engineering/snapfit-source-facts-v001.json",
+          "sha256": "291d1704ea12834969e74e79b948cf2677524fda7a852fa8434c017a674169f8",
+          "bytes": 7457
+        },
+        "snapshot": {
+          "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/source-snapshot/snapfit-source-facts-v001.json",
+          "sha256": "291d1704ea12834969e74e79b948cf2677524fda7a852fa8434c017a674169f8",
+          "bytes": 7457
+        }
+      },
+      {
+        "source": {
+          "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/geometry-draft-record-v001.json",
+          "sha256": "4f201124cbf51dc849c7978ee85f7ff5e58ca4273cdd9b006d3eba6c52521b7a",
+          "bytes": 58367
+        },
+        "snapshot": {
+          "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/source-snapshot/source-geometry-record-v001.json",
+          "sha256": "4f201124cbf51dc849c7978ee85f7ff5e58ca4273cdd9b006d3eba6c52521b7a",
+          "bytes": 58367
+        }
+      }
+    ],
+    "original_png_count": 16,
+    "original_screenshots": [
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-01-source-dialog.png",
+        "sha256": "2f97c85df79d8650f4019128ff16a90a7fc48fd81cc1775f426f3adc0023eb88",
+        "bytes": 52653,
+        "seq": 1,
+        "slug": "source-dialog",
+        "recordedAt": "2026-10-25T08:21:14.120Z",
+        "width": 1060,
+        "height": 600,
+        "action": "File > Open，開啟07-02卡扣幾何草案同hash副本"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-02-source-geometry.png",
+        "sha256": "2187dc09ca5146a8ebdeca93fa1a59e142bf6f973f7c4beaa55b05f3439d9244",
+        "bytes": 157542,
+        "seq": 2,
+        "slug": "source-geometry",
+        "recordedAt": "2026-10-25T08:21:17.520Z",
+        "width": 1494,
+        "height": 1019,
+        "action": "改姿態前保存原幾何與原生polygon法線讀值"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-03-body_baseline-controls.png",
+        "sha256": "eeed2a415d1a609be54f2c1fc30cfac7409850ed4426202ef2337a5a8730ebf3",
+        "bytes": 182536,
+        "seq": 3,
+        "slug": "body_baseline-controls",
+        "recordedAt": "2026-10-25T08:21:25.420Z",
+        "width": 1494,
+        "height": 1019,
+        "action": "Edit Mode > 專用Overlays > Mesh Analysis：實拍並核對同一組原生設定"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-04-body_baseline-analysis.png",
+        "sha256": "f49f0a5f0c0ca9f72cb6208e0ad71fd781ce36a7ccfaae2287739d8bf6a5e577",
+        "bytes": 164139,
+        "seq": 4,
+        "slug": "body_baseline-analysis",
+        "recordedAt": "2026-10-25T08:21:27.920Z",
+        "width": 1494,
+        "height": 1019,
+        "action": "關閉popover，以原生Overhang著色視角檢查；保存polygon／loop triangle讀值"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-05-body_candidate-controls.png",
+        "sha256": "ae2b92aa3d09015b0eebb69320b3cec6eb6f2bef803ed252de71aaf5c904f6e1",
+        "bytes": 173091,
+        "seq": 5,
+        "slug": "body_candidate-controls",
+        "recordedAt": "2026-10-25T08:21:34.721Z",
+        "width": 1494,
+        "height": 1019,
+        "action": "Edit Mode > 專用Overlays > Mesh Analysis：實拍並核對同一組原生設定"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-06-body_candidate-analysis.png",
+        "sha256": "c03a6f17d0432d03b9790801f6a68e473a5dc3eb095bca11259c50af6b6940e5",
+        "bytes": 162173,
+        "seq": 6,
+        "slug": "body_candidate-analysis",
+        "recordedAt": "2026-10-25T08:21:37.221Z",
+        "width": 1494,
+        "height": 1019,
+        "action": "關閉popover，以原生Overhang著色視角檢查；保存polygon／loop triangle讀值"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-07-lid_baseline-controls.png",
+        "sha256": "c2102bc64d6eb2118032c578409305f1fe3654587778e1edf950d93840de0c55",
+        "bytes": 182777,
+        "seq": 7,
+        "slug": "lid_baseline-controls",
+        "recordedAt": "2026-10-25T08:21:48.021Z",
+        "width": 1494,
+        "height": 1019,
+        "action": "Edit Mode > 專用Overlays > Mesh Analysis：實拍並核對同一組原生設定"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-08-lid_baseline-analysis.png",
+        "sha256": "a260dcf271361a95899755dc6b1f9b0adbdf2faa7557441add8c5fbf3e5f18da",
+        "bytes": 168495,
+        "seq": 8,
+        "slug": "lid_baseline-analysis",
+        "recordedAt": "2026-10-25T08:21:50.521Z",
+        "width": 1494,
+        "height": 1019,
+        "action": "關閉popover，以原生Overhang著色視角檢查；保存polygon／loop triangle讀值"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-09-lid_candidate-controls.png",
+        "sha256": "d56f28ecfbc1d2625cac3b526468ab815851ef09101f81c1ed40a7950d9fe03c",
+        "bytes": 184774,
+        "seq": 9,
+        "slug": "lid_candidate-controls",
+        "recordedAt": "2026-10-25T08:21:57.322Z",
+        "width": 1494,
+        "height": 1019,
+        "action": "Edit Mode > 專用Overlays > Mesh Analysis：實拍並核對同一組原生設定"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-10-lid_candidate-analysis.png",
+        "sha256": "d7e18cd95f29cfbcb84e6ef8b51b19535f2e74b10eeaea264f4abfd92f3e8e3b",
+        "bytes": 165374,
+        "seq": 10,
+        "slug": "lid_candidate-analysis",
+        "recordedAt": "2026-10-25T08:21:59.822Z",
+        "width": 1494,
+        "height": 1019,
+        "action": "關閉popover，以原生Overhang著色視角檢查；保存polygon／loop triangle讀值"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-11-lid-candidate-profile.png",
+        "sha256": "99f3ca7c6885b1c562b205ffd565b6630b3dd1d965c82ee1bee8a9e3b206cbef",
+        "bytes": 201585,
+        "seq": 11,
+        "slug": "lid-candidate-profile",
+        "recordedAt": "2026-10-25T08:22:01.322Z",
+        "width": 1494,
+        "height": 1019,
+        "action": "右視查看翻面蓋板與高處凸緣的真實高度關係"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-12-candidate-layout.png",
+        "sha256": "01508cf7b1b0b8978491626498a3e4d03ecee1479eff7e0b430e6e2b4be8ba22",
+        "bytes": 160549,
+        "seq": 12,
+        "slug": "candidate-layout",
+        "recordedAt": "2026-10-25T08:22:09.022Z",
+        "width": 1494,
+        "height": 1019,
+        "action": "Object Mode顯示兩件獨立候選方向，核對落床與分離距離"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-13-save-dialog.png",
+        "sha256": "9cd1bb428fee4143af37b260087008b912ad365265103a82028422707db61f76",
+        "bytes": 53088,
+        "seq": 13,
+        "slug": "save-dialog",
+        "recordedAt": "2026-10-25T08:22:13.922Z",
+        "width": 1060,
+        "height": 600,
+        "action": "File > Save As，另存方向與Overhang比較草案u07_print_orientation_v001.blend"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-14-saved.png",
+        "sha256": "f85fb794d6b4dd889f3dd20c3c1f5fff17ce5f632f0ecdf8eab1e69873451708",
+        "bytes": 164868,
+        "seq": 14,
+        "slug": "saved",
+        "recordedAt": "2026-10-25T08:22:17.222Z",
+        "width": 1494,
+        "height": 1019,
+        "action": "Save As後讀回新檔名／bytes／hash"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-15-open-saved.png",
+        "sha256": "8d22eec8caa88cebdc61502cde319c5bacb31272d98d4f916b35f734a4f3da98",
+        "bytes": 57784,
+        "seq": 15,
+        "slug": "open-saved",
+        "recordedAt": "2026-10-25T08:22:22.122Z",
+        "width": 1060,
+        "height": 600,
+        "action": "File > Open，重開同一方向比較版本"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-16-reopened-verified.png",
+        "sha256": "671959f98066449519611df236ddff019281ef8c0a09d95a6b336d06cc533762",
+        "bytes": 158070,
+        "seq": 16,
+        "slug": "reopened-verified",
+        "recordedAt": "2026-10-25T08:22:25.522Z",
+        "width": 1494,
+        "height": 1019,
+        "action": "Open後重驗候選mesh、四姿態統計、設定與版本，保存比較紀錄"
+      }
+    ],
+    "pixels_modified": false
+  },
+  "retained_unpublished_probes": [
+    {
+      "run": "2026-10-25-lesson07-overhang-ui-probe-v001",
+      "status": "completed",
+      "original_png_count": 4,
+      "run_record": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-overhang-ui-probe-v001/run.json",
+        "sha256": "2fbfa1d4ae11e31ee01e5b53896eb5d7240775ad617bdb5f8ed6542deb4cf526",
+        "bytes": 8806
+      },
+      "runner_status": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-overhang-ui-probe-v001/runner-status.json",
+        "sha256": "eacb719865c4b97af452f663e77baf331f64264e85ef852193b3207abc3a8c8e",
+        "bytes": 54103
+      },
+      "last_error_line": null,
+      "role": "retained native UI diagnostic only; excluded from formal lesson events and the formal script snapshot"
+    },
+    {
+      "run": "2026-10-25-lesson07-overhang-ui-probe-v002",
+      "status": "completed",
+      "original_png_count": 4,
+      "run_record": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-overhang-ui-probe-v002/run.json",
+        "sha256": "0bab318621a9bd10d866a51ad991fc302c6bd492bf30cc0c82c48e7efb97a146",
+        "bytes": 8807
+      },
+      "runner_status": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-overhang-ui-probe-v002/runner-status.json",
+        "sha256": "114cdd9ab2cc0bd5b184564ccc2362d060e19bd21bd4902520b5c7c70ab0c720",
+        "bytes": 54103
+      },
+      "last_error_line": null,
+      "role": "retained native UI diagnostic only; excluded from formal lesson events and the formal script snapshot"
+    },
+    {
+      "run": "2026-10-25-lesson07-overhang-ui-probe-v003",
+      "status": "completed",
+      "original_png_count": 5,
+      "run_record": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-overhang-ui-probe-v003/run.json",
+        "sha256": "c69fedc8d9bc000165515be68787c367cdc98fc2b7440d98f4bb41e7a4aa32f3",
+        "bytes": 11501
+      },
+      "runner_status": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-overhang-ui-probe-v003/runner-status.json",
+        "sha256": "81d28ee8827e5056c76c148f38dc40e7eed126fe0bb691ae289e522ca589c65f",
+        "bytes": 54103
+      },
+      "last_error_line": null,
+      "role": "retained native UI diagnostic only; excluded from formal lesson events and the formal script snapshot"
+    },
+    {
+      "run": "2026-10-25-lesson07-overhang-full-probe-v001",
+      "status": "completed",
+      "original_png_count": 11,
+      "run_record": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-overhang-full-probe-v001/run.json",
+        "sha256": "50a14e525df8c4391a2d5acdd2d6135e7ed5f72ae42b3f9a11d00ddac498e532",
+        "bytes": 8494
+      },
+      "runner_status": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-overhang-full-probe-v001/runner-status.json",
+        "sha256": "3affef20d733fec8b0e2e314bc808308abfdddb443b22050a73f6d4f67492f62",
+        "bytes": 54110
+      },
+      "last_error_line": null,
+      "role": "retained native UI diagnostic only; excluded from formal lesson events and the formal script snapshot"
+    }
+  ],
+  "supplemental_view_note": "Any later focus-view evidence is a separate read-only run; it is not inserted into these sixteen formal events or eight frozen script snapshots.",
+  "not_performed": {
+    "geometry_modified": false,
+    "rotation_applied_to_mesh": false,
+    "strength_analysis_performed": false,
+    "fit_qualification": false,
+    "exported_stl": false,
+    "slicer_checked": false,
+    "printed": false,
+    "fit_tested": false,
+    "support_generation_performed": false
+  },
+  "unresolved_or_unqualified": {
+    "material_grade": null,
+    "epsilon_allow": null,
+    "Q": null,
+    "required_deflection_mm": null,
+    "delta_allow_mm": null,
+    "forces": null,
+    "physical_measurements": null,
+    "fit_results": null,
+    "physical_interference": null,
+    "qualified_strength_N": null,
+    "qualified_clearance_mm": null,
+    "support_required": null,
+    "final_print_orientation_approved": null,
+    "slicer_support_settings": null,
+    "bridge_or_support_qualified": null
+  },
+  "support_strategy_status": "pending_slicer_review",
+  "limitations": [
+    "Geometric parallelism to the layer plane does not prove layer adhesion, allowable strain, fatigue life or strength.",
+    "Bed-contact downward faces and non-bed-contact downward faces are separate groups; local face angle alone does not determine support.",
+    "The world Z0 reference is not a machine bed capacity/origin/adhesion check.",
+    "No bridge span, previous-layer support, support-removal access, slicer support generation, printing or physical fit was checked.",
+    "The known 0.4 mm nozzle does not determine material, line width, angle threshold, clearance, strain or strength."
+  ],
+  "numeric_comparison": {
+    "mesh_dimensions_abs_mm": 0.0001,
+    "angle_boundary_band_deg": 0.0001,
+    "volume_relative": 1e-05,
+    "purpose": "Floating-point geometry/normal/angle/landing reconstruction only; not manufacturing tolerance, support qualification, layer adhesion, strength or fit acceptance."
+  },
+  "validation": {
+    "actual_run_pure_import_validation": "passed; no formal import performed by this task",
+    "original_png_records_validation": "passed",
+    "related_import_tests_run": 110,
+    "related_import_tests_passed": 110,
+    "new_orientation_import_test_methods": 10
+  },
+  "learner_protection": {
+    "publication_baseline": {
+      "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/publication-baseline-v001.json",
+      "sha256": "562ef86731f0754020d7269d41d3c5867a30dc287c1c508cd8c4ff54186813d6",
+      "bytes": 4431
+    },
+    "baseline_step_count": 52,
+    "progress_revision": 5,
+    "progress_sha256": "d92e4f2ee78a1cf41386816b8616bf635b89fb25f8bfd813ac00cd20ed20b4ef",
+    "progress_matches_run_baseline": true,
+    "workspaces_unchanged": true,
+    "workspace_entries": 11,
+    "workspace_file_count": 0,
+    "workspace_canonical_sha256": "4ad6905b1cef7594ff1bfed45b81e7794fdbf128011df09b4686bdb44d0a7d2f",
+    "learner_completion_confirmed_by_this_run": false,
+    "registered_as_learner_file": false
+  },
+  "journal": "learning/journal/2026-10-25-lesson07-overhang-demo-v001.md",
+  "publication_note": "Formal catalog import, HTTP/browser delivery and any focused supplementary view are owned and recorded separately by the publishing agent; publication completion is not asserted here.",
+  "supplementary_read_only_view": {
+    "run": "learning/evidence/07/2026-10-25-lesson07-overhang-focus-v002",
+    "publishable_image": {
+      "path": "learning/evidence/07/2026-10-25-lesson07-overhang-focus-v002/07-03-06-elevated-ledge-closeup.png",
+      "sha256": "39933f912508246987d4bf47773313b1d4ae312a60980c66c3cdda58faec799a",
+      "width": 1494,
+      "height": 1019
+    },
+    "review": {
+      "path": "learning/evidence/07/2026-10-25-lesson07-overhang-focus-v002/focus-image-review-v001.json",
+      "sha256": "aa2558cf2f44286ba845b9031a8be7dbca3598ca4149c81970591ab6b87d60d3"
+    },
+    "main_scene_unchanged": true,
+    "main_events_unchanged": true,
+    "new_scene_saved": false,
+    "excluded_probe": "2026-10-25-lesson07-overhang-focus-v001: observed zero degree; not published"
+  },
+  "publication_audits": [
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/independent-audit-v001.json",
+      "sha256": "0541cdfe468b68a3972094b103395e592be3de333e7e3f7e31f0adadd72e4a10"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/automated-checks-v001.json",
+      "sha256": "ee5d447c5ba7ae14c1be6c743bb7902732f0c6685eab4f0f17fe5599ff69a3ae"
+    }
+  ]
+}

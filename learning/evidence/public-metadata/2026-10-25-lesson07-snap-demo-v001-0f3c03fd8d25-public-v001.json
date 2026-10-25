@@ -1,0 +1,4544 @@
+{
+  "schemaVersion": 1,
+  "kind": "redacted_public_derivative",
+  "redacted_public_derivative": true,
+  "preparedOn": "2026-10-26",
+  "originalPath": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001.json",
+  "originalSha256": "ee11bc17b5b48fd0550f2e2f29af9489f5f018dbeb99d4392e8c76d1ea6eef57",
+  "originalBytes": 178269,
+  "originalAvailableInPublicPackage": false,
+  "redactedKeys": [
+    "/runnerStatus/recentCleanup"
+  ],
+  "redactionPolicy": "Recursively omit Windows Recent inventory keys recentCleanup, beforeLinks and afterLinks. Original stays unchanged locally. This derivative is not the original execution record.",
+  "content": {
+    "id": "2026-10-25-lesson07-snap-demo-v001",
+    "actor": "tutor",
+    "authorization": "依使用者要求延續獨立 Blender 的卡扣建模示範與原始實拍、讀值及版本紀錄。新增尺寸由助教選為幾何草案，材料與允許應變仍待定，沒有強度、裝配行程或配合合格判定。",
+    "application": "Blender 5.2.1 LTS",
+    "buildHash": "9e2066aef7ef",
+    "captureMethod": "Blender bpy.ops.screen.screenshot；獨立實例 --factory-startup --enable-event-simulate，滑鼠／鍵盤以 Window.event_simulate 模擬；檔案瀏覽器的資料夾與檔名欄位由程式寫入",
+    "script": "learning/tutor/scenarios/lesson07_snap.py",
+    "pixelEdits": false,
+    "highlightsDrawnBy": "教學頁 CSS 疊框（原圖未修改）",
+    "learnerWorkspaceWrites": false,
+    "demoFiles": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/demo-files/",
+    "records": [
+      {
+        "seq": 1,
+        "step": "07-02",
+        "slug": "source-open-dialog",
+        "recordedAt": "2026-10-25T07:44:45.481Z",
+        "action": "File > Open，開啟07-01原盒參考版同hash副本",
+        "observed": "資料夾 D:\\others\\study\\Blender-Learning\\learning\\evidence\\07\\2026-10-25-lesson07-snap-demo-v001\\demo-files\\sources\\；檔名 u07_snap_reference_v001.blend。",
+        "window": "FILE_BROWSER",
+        "highlights": [],
+        "clicks": [],
+        "file": "07-02-01-source-open-dialog.png",
+        "width": 1060,
+        "height": 600,
+        "sha256": "1f7f2ca254807157eb5c4c7d73240a8941f8175254beb9ca57540ac838563ee4",
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-01-source-open-dialog.png"
+      },
+      {
+        "seq": 2,
+        "step": "07-02",
+        "slug": "source-geometry",
+        "recordedAt": "2026-10-25T07:44:49.481Z",
+        "action": "改前重驗原盒；這次另建卡扣分支",
+        "observed": "原盒60×40×30、內腔56×36×28、壁底2mm；來源與07-01參數紀錄hash固定。新增尺寸為草案，不填材料或允許應變。",
+        "window": "main",
+        "highlights": [],
+        "clicks": [],
+        "file": "07-02-02-source-geometry.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "eb1b309daf2eb94b631e60f65c6b55643e90d8bc0d01080c24416f90a9b242c9",
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-02-source-geometry.png"
+      },
+      {
+        "seq": 3,
+        "step": "07-02",
+        "slug": "anchor-top",
+        "recordedAt": "2026-10-25T07:45:16.481Z",
+        "action": "選anchor頂面，檢查9×4.6×3基塊真實位置",
+        "observed": "實選1面，world min [-4.5, -24.5, -8.0]、max [4.5, -19.900001525878906, -8.0] mm。",
+        "window": "main",
+        "highlights": [],
+        "clicks": [],
+        "file": "07-02-03-anchor-top.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "f9a79c854125df1b976b4ec9795d38402463e0a6915ff42ce2c435b61e523c45",
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-03-anchor-top.png"
+      },
+      {
+        "seq": 4,
+        "step": "07-02",
+        "slug": "beam-inset",
+        "recordedAt": "2026-10-25T07:45:18.581Z",
+        "action": "頂面Inset1.5mm，形成6×1.6mm直臂截面",
+        "observed": "實選1面，world min [-3.0, -23.0, -8.0]、max [3.0, -21.400001525878906, -8.0] mm。",
+        "window": "main",
+        "highlights": [],
+        "clicks": [],
+        "file": "07-02-04-beam-inset.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "a5d7b5fedbdc7fba842bf9b1048159ecf781a02c1858d3cfd4549aab24e21323",
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-04-beam-inset.png"
+      },
+      {
+        "seq": 5,
+        "step": "07-02",
+        "slug": "beam-extruded",
+        "recordedAt": "2026-10-25T07:45:24.681Z",
+        "action": "Edit Mode E19mm、再E2mm（頂面法向+Z），讀回臂頂Z13；扣鉤根層Z11",
+        "observed": "實選1面，world min [-3.0, -23.0, 13.0]、max [3.0, -21.400001525878906, 13.0] mm。",
+        "window": "main",
+        "highlights": [],
+        "clicks": [],
+        "file": "07-02-05-beam-extruded.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "b5c5733263019f34bf999fd9b254d397986b82af251d7015bb065180fab78c6e",
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-05-beam-extruded.png"
+      },
+      {
+        "seq": 6,
+        "step": "07-02",
+        "slug": "hook-extruded",
+        "recordedAt": "2026-10-25T07:45:27.982Z",
+        "action": "選最高2mm的−Y外側面，E1.2mm沿面法向−Y形成外鉤",
+        "observed": "實選1面，world min [-3.0, -24.200000762939453, 11.0]、max [3.0, -24.200000762939453, 13.0] mm。",
+        "window": "main",
+        "highlights": [],
+        "clicks": [],
+        "file": "07-02-06-hook-extruded.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "da5c5212f2d879e6cff41e0dc5baa148b84101b7a8b95d0f9835407b46648202",
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-06-hook-extruded.png"
+      },
+      {
+        "seq": 7,
+        "step": "07-02",
+        "slug": "hook-edge",
+        "recordedAt": "2026-10-25T07:45:33.582Z",
+        "action": "Xray精確點選鉤外頂的一條X向邊",
+        "observed": "精確選中1條hook邊，端點world座標 [[[3.0, -24.200000762939453, 13.0], [-3.0, -24.200000762939453, 13.0]]] mm；不是整盒外緣。",
+        "window": "main",
+        "highlights": [],
+        "clicks": [],
+        "file": "07-02-07-hook-edge.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "4ac1c870113243b992898bd1f273e194d3ac39f8e1a4a72f6e1480a8ae02f5ec",
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-07-hook-edge.png"
+      },
+      {
+        "seq": 8,
+        "step": "07-02",
+        "slug": "hook-bevel",
+        "recordedAt": "2026-10-25T07:45:35.882Z",
+        "action": "Ctrl+B：hook offset 0.8 mm、1段；立即讀回原生operator",
+        "observed": "實際 Bevel operator：{'offset': 0.800000011920929, 'offset_type': 'OFFSET', 'segments': 1, 'profile': 0.5, 'affect': 'EDGES', 'clamp_overlap': False, 'operator_id': 'MESH_OT_bevel', 'offset_mm': 0.8000000499188906}。輸入offset與實際圓角輪廓分開記錄。",
+        "window": "main",
+        "highlights": [],
+        "clicks": [],
+        "file": "07-02-08-hook-bevel.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "7b2a90308506aeb2af3818c6a086d868e4d2a88bccec590bf2eeff21f23e07a2",
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-08-hook-bevel.png"
+      },
+      {
+        "seq": 9,
+        "step": "07-02",
+        "slug": "root-edges",
+        "recordedAt": "2026-10-25T07:45:38.882Z",
+        "action": "Xray只選兩條臂腳與anchor頂面的凹根部邊",
+        "observed": "精確選中2條root邊，端點world座標 [[[-3.0, -21.400001525878906, -8.0], [3.0, -21.400001525878906, -8.0]], [[3.0, -23.0, -8.0], [-3.0, -23.0, -8.0]]] mm；不是整盒外緣。",
+        "window": "main",
+        "highlights": [],
+        "clicks": [],
+        "file": "07-02-09-root-edges.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "e1f2fe071d2110f727fc930a108e4e48725099a2b88c76de05140a50996a2ccb",
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-09-root-edges.png"
+      },
+      {
+        "seq": 10,
+        "step": "07-02",
+        "slug": "root-bevel",
+        "recordedAt": "2026-10-25T07:45:41.582Z",
+        "action": "Ctrl+B：root offset 0.6 mm、3段；立即讀回原生operator",
+        "observed": "實際 Bevel operator：{'offset': 0.6000000238418579, 'offset_type': 'OFFSET', 'segments': 3, 'profile': 0.5, 'affect': 'EDGES', 'clamp_overlap': False, 'operator_id': 'MESH_OT_bevel', 'offset_mm': 0.6000000523403298}。輸入offset與實際圓角輪廓分開記錄。",
+        "window": "main",
+        "highlights": [],
+        "clicks": [],
+        "file": "07-02-10-root-bevel.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "d865ea78ef61836a85a4763fb1f21565906123191d06a1776d7a20c7ead756f3",
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-10-root-bevel.png"
+      },
+      {
+        "seq": 11,
+        "step": "07-02",
+        "slug": "snap-tool",
+        "recordedAt": "2026-10-25T07:45:46.582Z",
+        "action": "回Object Mode，讀回一體anchor／臂／鉤與實際根部圓角網格",
+        "observed": "SnapTool 實際外框 [9.0, 4.599998, 24.0] mm、體積 339.484 mm³，單殼／Non Manifold 0。 直臂h 1.6／b 6、根平面至承接面 19、鉤突出 1.2 mm；兩根部3段弦端擬合R [0.600002, 0.600002] mm。",
+        "window": "main",
+        "highlights": [],
+        "clicks": [],
+        "file": "07-02-11-snap-tool.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "dc11e6bb2c2425a3a3a5f264a0a813898225cbd6e8f364144f9a1e00b1de7652",
+        "note": "這些是幾何草案；未計算允許撓度或裝配行程，不代表已可扣入。",
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-11-snap-tool.png"
+      },
+      {
+        "seq": 12,
+        "step": "07-02",
+        "slug": "body-union",
+        "recordedAt": "2026-10-25T07:45:56.282Z",
+        "action": "選Body，Boolean Union／Exact 指定SnapTool，隱藏工具後看真正預覽",
+        "observed": "實際修改器 [('UNION', 'EXACT', 'SnapTool')]",
+        "window": "main",
+        "highlights": [],
+        "clicks": [],
+        "file": "07-02-12-body-union.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "e309eca04f69348913340b6a4bf7c83ca7ee62e0aa9fa28a54d815c1eeb21dc8",
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-12-body-union.png"
+      },
+      {
+        "seq": 13,
+        "step": "07-02",
+        "slug": "body-applied",
+        "recordedAt": "2026-10-25T07:46:02.082Z",
+        "action": "Apply Union，從成品Body讀回原盒核心與外掛卡扣",
+        "observed": "Body 實際外框 [60.0, 44.5, 30.0] mm、體積 15888.8 mm³，單殼／Non Manifold 0。 直臂h 1.6／b 6、根平面至承接面 19、鉤突出 1.2 mm；兩根部3段弦端擬合R [0.600002, 0.600002] mm。",
+        "window": "main",
+        "highlights": [],
+        "clicks": [],
+        "file": "07-02-13-body-applied.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "e91033de781ec3ff6daabe8232258e1c592ac1a38f299cbb1dc56271b66a8b08",
+        "note": "原盒核心60×40×30保留；含anchor的Body外框Y44.5mm，不宣稱整件仍寬40。",
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-13-body-applied.png"
+      },
+      {
+        "seq": 14,
+        "step": "07-02",
+        "slug": "body-non-manifold",
+        "recordedAt": "2026-10-25T07:46:05.282Z",
+        "action": "Tab／邊模式／Alt+A／Select Non Manifold",
+        "observed": "Body：Select Non Manifold選中0條邊，實際非流形邊0；不作強度或製程判定。",
+        "window": "main",
+        "highlights": [],
+        "clicks": [],
+        "file": "07-02-14-body-non-manifold.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "c00e798a40ecd39c8d3d932804a85a844f4d2f8faa5b918d06009d9985c34e81",
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-14-body-non-manifold.png"
+      },
+      {
+        "seq": 15,
+        "step": "07-02",
+        "slug": "lid-plate",
+        "recordedAt": "2026-10-25T07:46:24.983Z",
+        "action": "新增草案蓋板60×46×2，前緣Y−26、板底Z15.2",
+        "observed": "Lid Location (0 mm, -3 mm, 16.2 mm)、Dimensions (60 mm, 46 mm, 2 mm)、Scale (1, 1, 1)",
+        "window": "main",
+        "highlights": [],
+        "clicks": [],
+        "file": "07-02-15-lid-plate.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "dc6530a5c98c913ccffdf5517443dbbff148d34a0258bcaaaeb36f46cfc015c8",
+        "note": "此為新卡扣蓋板，不是舊環唇或燕尾上蓋。",
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-15-lid-plate.png"
+      },
+      {
+        "seq": 16,
+        "step": "07-02",
+        "slug": "flange-extruded",
+        "recordedAt": "2026-10-25T07:46:47.897Z",
+        "action": "基塊頂面E4.6mm沿+Z成裙，內側低面E1.2mm沿+Y成承接凸緣",
+        "observed": "實選1面，world min [-5.0, -23.299999237060547, 10.199999809265137]、max [5.0, -23.299999237060547, 10.800000190734863] mm。",
+        "window": "main",
+        "highlights": [],
+        "clicks": [],
+        "file": "07-02-16-flange-extruded.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "5ba23c17fa1cc9f405a8a16e5054ee1ce5b3f82ee67837b9604091467f11e67f",
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-16-flange-extruded.png"
+      },
+      {
+        "seq": 17,
+        "step": "07-02",
+        "slug": "flange-tool",
+        "recordedAt": "2026-10-25T07:46:52.597Z",
+        "action": "讀回一體蓋裙／承接凸緣的實際網格",
+        "observed": "FlangeTool 實際外框 [10.0, 2.700001, 5.2] mm、體積 85.2 mm³，單殼／Non Manifold 0。",
+        "window": "main",
+        "highlights": [],
+        "clicks": [],
+        "file": "07-02-17-flange-tool.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "fb8ec958f4c9067afa5a94d69a4f2cc2ff961b14b8f66ba4424d567ab9fc8a23",
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-17-flange-tool.png"
+      },
+      {
+        "seq": 18,
+        "step": "07-02",
+        "slug": "lid-union",
+        "recordedAt": "2026-10-25T07:47:03.697Z",
+        "action": "選Lid，Boolean Union／Exact 指定FlangeTool，隱藏工具後看真正預覽",
+        "observed": "實際修改器 [('UNION', 'EXACT', 'FlangeTool')]",
+        "window": "main",
+        "highlights": [],
+        "clicks": [],
+        "file": "07-02-18-lid-union.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "08d8a9e57b5d7867bd43421927d8651dcd42e5b9d4c176c6d4bdfb615ddfc491",
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-18-lid-union.png"
+      },
+      {
+        "seq": 19,
+        "step": "07-02",
+        "slug": "lid-applied",
+        "recordedAt": "2026-10-25T07:47:09.497Z",
+        "action": "Apply Union，讀回一體蓋板／裙／承接凸緣",
+        "observed": "Lid 實際外框 [60.0, 46.0, 7.000001] mm、體積 5602.2 mm³，單殼／Non Manifold 0。 蓋板 [60, 46, 2.0] mm；凸緣寬 10、厚 0.6、突出 1.2 mm。",
+        "window": "main",
+        "highlights": [],
+        "clicks": [],
+        "file": "07-02-19-lid-applied.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "6675dba6fd84226747e36d5fa56dba5719d35239ba6df889f04193e79f2dc0a6",
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-19-lid-applied.png"
+      },
+      {
+        "seq": 20,
+        "step": "07-02",
+        "slug": "lid-non-manifold",
+        "recordedAt": "2026-10-25T07:47:12.697Z",
+        "action": "Tab／邊模式／Alt+A／Select Non Manifold",
+        "observed": "Lid：Select Non Manifold選中0條邊，實際非流形邊0；不作強度或製程判定。",
+        "window": "main",
+        "highlights": [],
+        "clicks": [],
+        "file": "07-02-20-lid-non-manifold.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "2142b5895b6d8c48d19ea867f949666a9fcfd74502a4baf83da059a37e43fc28",
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-20-lid-non-manifold.png"
+      },
+      {
+        "seq": 21,
+        "step": "07-02",
+        "slug": "lid-raised",
+        "recordedAt": "2026-10-25T07:47:21.306Z",
+        "action": "僅將Lid抬高12mm展示hook與ledge；沒有模擬接觸或彎曲",
+        "observed": "Lid實際Location [0.0, -3.0, 28.200000762939453]；展示位置，不作裝配路徑證明。",
+        "window": "main",
+        "highlights": [],
+        "clicks": [],
+        "file": "07-02-21-lid-raised.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "5da0a1365b79f87138ddc12bdf5c249f9dfa0407f2935893ccd3dedcc2a4f2d2",
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-21-lid-raised.png"
+      },
+      {
+        "seq": 22,
+        "step": "07-02",
+        "slug": "assembly-geometry",
+        "recordedAt": "2026-10-25T07:47:27.706Z",
+        "action": "Lid回原位置，讀取靜態間距、投影重疊與根部局部淨空",
+        "observed": "實際靜態讀值：板底／盒頂 0.200001、臂／凸緣 0.299999、鉤／裙 0.299999、鉤底／凸緣頂 0.2 mm；Y投影重疊 0.900002、直臂內側淨空 1.4、內根部局部淨空 0.800001 mm。δ_req、材料及允許應變仍待定。",
+        "window": "main",
+        "highlights": [],
+        "clicks": [],
+        "file": "07-02-22-assembly-geometry.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "56a6d9581be8daf0ce670b28e959122f9c692d8797a5c90dbd5c689fead5942f",
+        "note": "未變形靜態幾何；不等於裝配可行、保持力、強度或試配合格。",
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-22-assembly-geometry.png"
+      },
+      {
+        "seq": 23,
+        "step": "07-02",
+        "slug": "save-dialog",
+        "recordedAt": "2026-10-25T07:47:32.606Z",
+        "action": "File > Save As，另存卡扣幾何草案u07_cantilever_snap_v001.blend",
+        "observed": "資料夾 D:\\others\\study\\Blender-Learning\\learning\\evidence\\07\\2026-10-25-lesson07-snap-demo-v001\\demo-files\\；檔名 u07_cantilever_snap_v001.blend。",
+        "window": "FILE_BROWSER",
+        "highlights": [],
+        "clicks": [],
+        "file": "07-02-23-save-dialog.png",
+        "width": 1060,
+        "height": 600,
+        "sha256": "b37863ceecd919c0576a803e87af47b9d9bc8be5fb99aaf0e807e8b614c275e8",
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-23-save-dialog.png"
+      },
+      {
+        "seq": 24,
+        "step": "07-02",
+        "slug": "saved",
+        "recordedAt": "2026-10-25T07:47:35.906Z",
+        "action": "Save As後讀回新版本hash與bytes",
+        "observed": "另存106700 bytes，SHA-256 5fec09b934f2935839d615376beaf598962d47f1b7ac2504f2666c7880a26305。",
+        "window": "main",
+        "highlights": [],
+        "clicks": [],
+        "file": "07-02-24-saved.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "c4488d061d3658f6765962d2d271df490033f12e7c4619f1a8cb323d535013a2",
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-24-saved.png"
+      },
+      {
+        "seq": 25,
+        "step": "07-02",
+        "slug": "open-saved",
+        "recordedAt": "2026-10-25T07:47:40.807Z",
+        "action": "File > Open，重開剛才卡扣幾何草案版本",
+        "observed": "資料夾 D:\\others\\study\\Blender-Learning\\learning\\evidence\\07\\2026-10-25-lesson07-snap-demo-v001\\demo-files\\；檔名 u07_cantilever_snap_v001.blend。",
+        "window": "FILE_BROWSER",
+        "highlights": [],
+        "clicks": [],
+        "file": "07-02-25-open-saved.png",
+        "width": 1060,
+        "height": 600,
+        "sha256": "080ddab2dce15827a86684c03728a5a93e09523a0d8254d2ddf1dcba1ce6ac1b",
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-25-open-saved.png"
+      },
+      {
+        "seq": 26,
+        "step": "07-02",
+        "slug": "reopened-verified",
+        "recordedAt": "2026-10-25T07:47:44.207Z",
+        "action": "Open後重驗幾何與版本，保存草案及verification",
+        "observed": "重開版本、實際Body／Lid／工具／根部Bevel與靜態間距已重驗；材料、允許撓度、裝配行程、力、列印與試配結果仍空白。",
+        "window": "main",
+        "highlights": [],
+        "clicks": [],
+        "file": "07-02-26-reopened-verified.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "2187dc09ca5146a8ebdeca93fa1a59e142bf6f973f7c4beaa55b05f3439d9244",
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-26-reopened-verified.png"
+      }
+    ],
+    "verification": {
+      "passed": true,
+      "kind": "cantilever_snap_geometry_demo",
+      "source_scene_path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\07\\2026-10-25-lesson07-parameters-demo-v001\\demo-files\\u07_snap_reference_v001.blend",
+      "source_scene_sha256": "6a6b6c03295c8b6047b97c3efdea9884954b714da87b45b7aa36b4d2b612d3a9",
+      "opened_scene_path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\07\\2026-10-25-lesson07-snap-demo-v001\\demo-files\\sources\\u07_snap_reference_v001.blend",
+      "opened_scene_sha256": "6a6b6c03295c8b6047b97c3efdea9884954b714da87b45b7aa36b4d2b612d3a9",
+      "source_unchanged": true,
+      "opened_copy_unchanged": true,
+      "source_body": {
+        "bounds_mm": {
+          "min": [
+            -30.0,
+            -20.0,
+            -15.0
+          ],
+          "max": [
+            30.0,
+            20.0,
+            15.0
+          ]
+        },
+        "dimensions_mm": [
+          60.0,
+          40.0,
+          30.0
+        ],
+        "volume_mm3": 15552.0,
+        "non_manifold_edges": 0,
+        "non_manifold_vertex_links": 0,
+        "inconsistent_winding_edges": 0,
+        "connected_shells": 1,
+        "euler_characteristic": 2,
+        "genus": 0,
+        "mesh_counts": {
+          "vertices": 16,
+          "edges": 42,
+          "faces": 28,
+          "triangles": 28,
+          "representation": "evaluated loop-triangulated mesh"
+        },
+        "passed": true,
+        "printed": false,
+        "fit_tested": false,
+        "physical_interference": null,
+        "qualified_clearance_mm": null,
+        "numericComparison": {
+          "purpose": "Floating point reconstruction only; not manufacturing tolerance or fit acceptance",
+          "dimensionsAbsMm": 0.0001,
+          "volumeRelative": 1e-05
+        },
+        "kind": "box_body",
+        "outer_dimensions_mm": [
+          60.0,
+          40.0,
+          30.0
+        ],
+        "cavity_bounds_mm": {
+          "min": [
+            -28.0,
+            -18.0,
+            -13.0
+          ],
+          "max": [
+            28.0,
+            18.0,
+            15.0
+          ]
+        },
+        "cavity_dimensions_mm": [
+          56.0,
+          36.0,
+          28.0
+        ],
+        "wall_thicknesses_mm": [
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "floor_thickness_mm": 2.0,
+        "rim_z_mm": 15.0,
+        "actual_face_planes": {
+          "X": [
+            {
+              "coordinate_mm": -30.0,
+              "area_mm2": 1200.0,
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  -20.0,
+                  -15.0
+                ],
+                "max": [
+                  -30.0,
+                  20.0,
+                  15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": -28.0,
+              "area_mm2": 1008.0,
+              "bounds_mm": {
+                "min": [
+                  -28.0,
+                  -18.0,
+                  -13.0
+                ],
+                "max": [
+                  -28.0,
+                  18.0,
+                  15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 28.0,
+              "area_mm2": 1008.0,
+              "bounds_mm": {
+                "min": [
+                  28.0,
+                  -18.0,
+                  -13.0
+                ],
+                "max": [
+                  28.0,
+                  18.0,
+                  15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 30.0,
+              "area_mm2": 1200.0,
+              "bounds_mm": {
+                "min": [
+                  30.0,
+                  -20.0,
+                  -15.0
+                ],
+                "max": [
+                  30.0,
+                  20.0,
+                  15.0
+                ]
+              }
+            }
+          ],
+          "Y": [
+            {
+              "coordinate_mm": -20.0,
+              "area_mm2": 1800.0,
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  -20.0,
+                  -15.0
+                ],
+                "max": [
+                  30.0,
+                  -20.0,
+                  15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": -18.0,
+              "area_mm2": 1568.0,
+              "bounds_mm": {
+                "min": [
+                  -28.0,
+                  -18.0,
+                  -13.0
+                ],
+                "max": [
+                  28.0,
+                  -18.0,
+                  15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 18.0,
+              "area_mm2": 1568.0,
+              "bounds_mm": {
+                "min": [
+                  -28.0,
+                  18.0,
+                  -13.0
+                ],
+                "max": [
+                  28.0,
+                  18.0,
+                  15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 20.0,
+              "area_mm2": 1800.0,
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  20.0,
+                  -15.0
+                ],
+                "max": [
+                  30.0,
+                  20.0,
+                  15.0
+                ]
+              }
+            }
+          ],
+          "Z": [
+            {
+              "coordinate_mm": -15.0,
+              "area_mm2": 2400.0,
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  -20.0,
+                  -15.0
+                ],
+                "max": [
+                  30.0,
+                  20.0,
+                  -15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": -13.0,
+              "area_mm2": 2016.0,
+              "bounds_mm": {
+                "min": [
+                  -28.0,
+                  -18.0,
+                  -13.0
+                ],
+                "max": [
+                  28.0,
+                  18.0,
+                  -13.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 15.0,
+              "area_mm2": 384.0,
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  -20.0,
+                  15.0
+                ],
+                "max": [
+                  30.0,
+                  20.0,
+                  15.0
+                ]
+              }
+            }
+          ]
+        },
+        "vertical_rays": [
+          {
+            "label": "cavity centre",
+            "xy_mm": [
+              0,
+              0
+            ],
+            "z_hits_mm": [
+              -15.0,
+              -13.0
+            ]
+          },
+          {
+            "label": "negative X rim",
+            "xy_mm": [
+              -29,
+              0
+            ],
+            "z_hits_mm": [
+              -15.0,
+              15.0
+            ]
+          },
+          {
+            "label": "positive X rim",
+            "xy_mm": [
+              29,
+              0
+            ],
+            "z_hits_mm": [
+              -15.0,
+              15.0
+            ]
+          },
+          {
+            "label": "negative Y rim",
+            "xy_mm": [
+              0,
+              -19
+            ],
+            "z_hits_mm": [
+              -15.0,
+              15.0
+            ]
+          },
+          {
+            "label": "positive Y rim",
+            "xy_mm": [
+              0,
+              19
+            ],
+            "z_hits_mm": [
+              -15.0,
+              15.0
+            ]
+          },
+          {
+            "label": "near cavity corner",
+            "xy_mm": [
+              27,
+              17
+            ],
+            "z_hits_mm": [
+              -15.0,
+              -13.0
+            ]
+          }
+        ],
+        "measurement_scope": "actual source body mesh; no physical fit conclusion"
+      },
+      "body": {
+        "bounds_mm": {
+          "min": [
+            -30.0,
+            -24.5,
+            -15.0
+          ],
+          "max": [
+            30.0,
+            20.0,
+            15.0
+          ]
+        },
+        "dimensions_mm": [
+          60.0,
+          44.5,
+          30.0
+        ],
+        "volume_mm3": 15888.784532071566,
+        "non_manifold_edges": 0,
+        "non_manifold_vertex_links": 0,
+        "inconsistent_winding_edges": 0,
+        "connected_shells": 1,
+        "euler_characteristic": 2,
+        "genus": 0,
+        "mesh_counts": {
+          "vertices": 60,
+          "edges": 174,
+          "faces": 116,
+          "triangles": 116,
+          "representation": "world-space triangulated mesh"
+        },
+        "passed": true,
+        "printed": false,
+        "fit_tested": false,
+        "physical_measurements": null,
+        "fit_results": null,
+        "physical_interference": null,
+        "qualified_clearance_mm": null,
+        "trial_status": "experimental_geometry_only",
+        "numericComparison": {
+          "purpose": "Floating point reconstruction only; not manufacturing tolerance or fit acceptance",
+          "dimensionsAbsMm": 0.0001,
+          "volumeRelative": 1e-05
+        },
+        "kind": "snapfit_body",
+        "material_grade": null,
+        "epsilon_allow": null,
+        "root_flexibility_Q": null,
+        "required_deflection_mm": null,
+        "delta_allow_mm": null,
+        "insertion_force_N": null,
+        "retention_force_N": null,
+        "qualified_strength_N": null,
+        "strength_assessment": null,
+        "fit_assessment": null,
+        "strength_analysis_performed": false,
+        "deformation_analysis_performed": false,
+        "exported_stl": false,
+        "slicer_checked": false,
+        "actual_axis_planes": {
+          "X": [
+            {
+              "coordinate_mm": -30.0,
+              "area_mm2": 1200.0,
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  -20.0,
+                  -15.0
+                ],
+                "max": [
+                  -30.0,
+                  20.0,
+                  15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": -28.0,
+              "area_mm2": 1008.0,
+              "bounds_mm": {
+                "min": [
+                  -28.0,
+                  -18.0,
+                  -13.0
+                ],
+                "max": [
+                  -28.0,
+                  18.0,
+                  15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": -4.5,
+              "area_mm2": 13.5,
+              "bounds_mm": {
+                "min": [
+                  -4.5,
+                  -24.5,
+                  -11.0
+                ],
+                "max": [
+                  -4.5,
+                  -20.0,
+                  -8.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": -3.0,
+              "area_mm2": 35.319971065520804,
+              "bounds_mm": {
+                "min": [
+                  -3.0,
+                  -24.200000762939453,
+                  -8.0
+                ],
+                "max": [
+                  -3.0,
+                  -21.400001525878906,
+                  13.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 3.0,
+              "area_mm2": 35.319971065520804,
+              "bounds_mm": {
+                "min": [
+                  3.0,
+                  -24.200000762939453,
+                  -8.0
+                ],
+                "max": [
+                  3.0,
+                  -21.400001525878906,
+                  13.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 4.5,
+              "area_mm2": 13.5,
+              "bounds_mm": {
+                "min": [
+                  4.5,
+                  -24.5,
+                  -11.0
+                ],
+                "max": [
+                  4.5,
+                  -20.0,
+                  -8.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 28.0,
+              "area_mm2": 1008.0,
+              "bounds_mm": {
+                "min": [
+                  28.0,
+                  -18.0,
+                  -13.0
+                ],
+                "max": [
+                  28.0,
+                  18.0,
+                  15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 30.0,
+              "area_mm2": 1200.0,
+              "bounds_mm": {
+                "min": [
+                  30.0,
+                  -20.0,
+                  -15.0
+                ],
+                "max": [
+                  30.0,
+                  20.0,
+                  15.0
+                ]
+              }
+            }
+          ],
+          "Y": [
+            {
+              "coordinate_mm": -24.5,
+              "area_mm2": 27.0,
+              "bounds_mm": {
+                "min": [
+                  -4.5,
+                  -24.5,
+                  -11.0
+                ],
+                "max": [
+                  4.5,
+                  -24.5,
+                  -8.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": -24.200000762939453,
+              "area_mm2": 7.200004577636719,
+              "bounds_mm": {
+                "min": [
+                  -3.0,
+                  -24.200000762939453,
+                  11.0
+                ],
+                "max": [
+                  3.0,
+                  -24.200000762939453,
+                  12.200000762939453
+                ]
+              }
+            },
+            {
+              "coordinate_mm": -23.0,
+              "area_mm2": 110.40000057220459,
+              "bounds_mm": {
+                "min": [
+                  -3.0,
+                  -23.0,
+                  -7.400000095367432
+                ],
+                "max": [
+                  3.0,
+                  -23.0,
+                  11.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": -21.400001525878906,
+              "area_mm2": 122.40000057220459,
+              "bounds_mm": {
+                "min": [
+                  -3.0,
+                  -21.400001525878906,
+                  -7.400000095367432
+                ],
+                "max": [
+                  3.0,
+                  -21.400001525878906,
+                  13.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": -20.0,
+              "area_mm2": 1773.0,
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  -20.0,
+                  -15.0
+                ],
+                "max": [
+                  30.0,
+                  -20.0,
+                  15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": -18.0,
+              "area_mm2": 1568.0,
+              "bounds_mm": {
+                "min": [
+                  -28.0,
+                  -18.0,
+                  -13.0
+                ],
+                "max": [
+                  28.0,
+                  -18.0,
+                  15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 18.0,
+              "area_mm2": 1568.0,
+              "bounds_mm": {
+                "min": [
+                  -28.0,
+                  18.0,
+                  -13.0
+                ],
+                "max": [
+                  28.0,
+                  18.0,
+                  15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 20.0,
+              "area_mm2": 1800.0,
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  20.0,
+                  -15.0
+                ],
+                "max": [
+                  30.0,
+                  20.0,
+                  15.0
+                ]
+              }
+            }
+          ],
+          "Z": [
+            {
+              "coordinate_mm": -15.0,
+              "area_mm2": 2400.0,
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  -20.0,
+                  -15.0
+                ],
+                "max": [
+                  30.0,
+                  20.0,
+                  -15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": -13.0,
+              "area_mm2": 2016.0,
+              "bounds_mm": {
+                "min": [
+                  -28.0,
+                  -18.0,
+                  -13.0
+                ],
+                "max": [
+                  28.0,
+                  18.0,
+                  -13.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": -11.0,
+              "area_mm2": 40.5,
+              "bounds_mm": {
+                "min": [
+                  -4.5,
+                  -24.5,
+                  -11.0
+                ],
+                "max": [
+                  4.5,
+                  -20.0,
+                  -11.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": -8.0,
+              "area_mm2": 22.260006179809352,
+              "bounds_mm": {
+                "min": [
+                  -4.5,
+                  -24.5,
+                  -8.0
+                ],
+                "max": [
+                  4.5,
+                  -20.0,
+                  -8.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 11.0,
+              "area_mm2": 7.200004577636719,
+              "bounds_mm": {
+                "min": [
+                  -3.0,
+                  -24.200000762939453,
+                  11.0
+                ],
+                "max": [
+                  3.0,
+                  -23.0,
+                  11.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 13.0,
+              "area_mm2": 12.0,
+              "bounds_mm": {
+                "min": [
+                  -3.0,
+                  -23.400001525878906,
+                  13.0
+                ],
+                "max": [
+                  3.0,
+                  -21.400001525878906,
+                  13.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 15.0,
+              "area_mm2": 384.0,
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  -20.0,
+                  15.0
+                ],
+                "max": [
+                  30.0,
+                  20.0,
+                  15.0
+                ]
+              }
+            }
+          ]
+        },
+        "profiles": {
+          "fillets": [
+            {
+              "side": "outer",
+              "segments": 3,
+              "chord_endpoints_yz_mm": [
+                [
+                  -23.600000381469727,
+                  -8.0
+                ],
+                [
+                  -23.30000114440918,
+                  -7.919615268707275
+                ],
+                [
+                  -23.080385208129883,
+                  -7.699999809265137
+                ],
+                [
+                  -23.0,
+                  -7.400000095367432
+                ]
+              ],
+              "fitted_circle_centre_yz_mm": [
+                -23.6000015007451,
+                -7.3999984992537655
+              ],
+              "fitted_circle_radius_mm": 0.6000015007472784,
+              "radius_definition": "circle through actual chord endpoints; the mesh is faceted",
+              "input_bevel_offset_mm": 0.6
+            },
+            {
+              "side": "inner",
+              "segments": 3,
+              "chord_endpoints_yz_mm": [
+                [
+                  -20.80000114440918,
+                  -8.0
+                ],
+                [
+                  -21.100000381469727,
+                  -7.919615268707275
+                ],
+                [
+                  -21.319616317749023,
+                  -7.699999809265137
+                ],
+                [
+                  -21.400001525878906,
+                  -7.400000095367432
+                ]
+              ],
+              "fitted_circle_centre_yz_mm": [
+                -20.800000025133848,
+                -7.399998499253873
+              ],
+              "fitted_circle_radius_mm": 0.600001500747171,
+              "radius_definition": "circle through actual chord endpoints; the mesh is faceted",
+              "input_bevel_offset_mm": 0.6
+            }
+          ],
+          "entry_angle_deg": 45.0,
+          "entry_ramp_endpoints_yz_mm": [
+            [
+              -23.400001525878906,
+              13.0
+            ],
+            [
+              -24.200000762939453,
+              12.200000762939453
+            ]
+          ],
+          "facets": [
+            {
+              "feature": "outer",
+              "segment": 0,
+              "corners_mm": [
+                [
+                  -3.5999999046325684,
+                  -23.600000381469727,
+                  -8.0
+                ],
+                [
+                  3.5999999046325684,
+                  -23.600000381469727,
+                  -8.0
+                ],
+                [
+                  3.299999952316284,
+                  -23.30000114440918,
+                  -7.919615268707275
+                ],
+                [
+                  -3.299999952316284,
+                  -23.30000114440918,
+                  -7.919615268707275
+                ]
+              ],
+              "bounds_mm": {
+                "min": [
+                  -3.5999999046325684,
+                  -23.600000381469727,
+                  -8.0
+                ],
+                "max": [
+                  3.5999999046325684,
+                  -23.30000114440918,
+                  -7.919615268707275
+                ]
+              },
+              "area_mm2": 2.143016516902052,
+              "triangle_count": 2,
+              "normal": [
+                0.0,
+                -0.25881957980542364,
+                0.9659256830156986
+              ],
+              "endpoints_yz_mm": [
+                [
+                  -23.600000381469727,
+                  -8.0
+                ],
+                [
+                  -23.30000114440918,
+                  -7.919615268707275
+                ]
+              ]
+            },
+            {
+              "feature": "outer",
+              "segment": 1,
+              "corners_mm": [
+                [
+                  -3.299999952316284,
+                  -23.30000114440918,
+                  -7.919615268707275
+                ],
+                [
+                  3.299999952316284,
+                  -23.30000114440918,
+                  -7.919615268707275
+                ],
+                [
+                  3.0803849697113037,
+                  -23.080385208129883,
+                  -7.699999809265137
+                ],
+                [
+                  -3.0803849697113037,
+                  -23.080385208129883,
+                  -7.699999809265137
+                ]
+              ],
+              "bounds_mm": {
+                "min": [
+                  -3.299999952316284,
+                  -23.30000114440918,
+                  -7.919615268707275
+                ],
+                "max": [
+                  3.299999952316284,
+                  -23.080385208129883,
+                  -7.699999809265137
+                ]
+              },
+              "area_mm2": 1.981642270380441,
+              "triangle_count": 2,
+              "normal": [
+                0.0,
+                -0.7071060135388466,
+                0.7071075488334151
+              ],
+              "endpoints_yz_mm": [
+                [
+                  -23.30000114440918,
+                  -7.919615268707275
+                ],
+                [
+                  -23.080385208129883,
+                  -7.699999809265137
+                ]
+              ]
+            },
+            {
+              "feature": "outer",
+              "segment": 2,
+              "corners_mm": [
+                [
+                  -3.0803849697113037,
+                  -23.080385208129883,
+                  -7.699999809265137
+                ],
+                [
+                  3.0803849697113037,
+                  -23.080385208129883,
+                  -7.699999809265137
+                ],
+                [
+                  3.0,
+                  -23.0,
+                  -7.400000095367432
+                ],
+                [
+                  -3.0,
+                  -23.0,
+                  -7.400000095367432
+                ]
+              ],
+              "bounds_mm": {
+                "min": [
+                  -3.0803849697113037,
+                  -23.080385208129883,
+                  -7.699999809265137
+                ],
+                "max": [
+                  3.0803849697113037,
+                  -23.0,
+                  -7.400000095367432
+                ]
+              },
+              "area_mm2": 1.8884623465300583,
+              "triangle_count": 2,
+              "normal": [
+                0.0,
+                -0.9659254020356838,
+                0.25882062843251646
+              ],
+              "endpoints_yz_mm": [
+                [
+                  -23.080385208129883,
+                  -7.699999809265137
+                ],
+                [
+                  -23.0,
+                  -7.400000095367432
+                ]
+              ]
+            },
+            {
+              "feature": "inner",
+              "segment": 0,
+              "corners_mm": [
+                [
+                  -3.299999952316284,
+                  -21.100000381469727,
+                  -7.919615268707275
+                ],
+                [
+                  3.299999952316284,
+                  -21.100000381469727,
+                  -7.919615268707275
+                ],
+                [
+                  3.5999999046325684,
+                  -20.80000114440918,
+                  -8.0
+                ],
+                [
+                  -3.5999999046325684,
+                  -20.80000114440918,
+                  -8.0
+                ]
+              ],
+              "bounds_mm": {
+                "min": [
+                  -3.5999999046325684,
+                  -21.100000381469727,
+                  -8.0
+                ],
+                "max": [
+                  3.5999999046325684,
+                  -20.80000114440918,
+                  -7.919615268707275
+                ]
+              },
+              "area_mm2": 2.143016516902052,
+              "triangle_count": 2,
+              "normal": [
+                -0.0,
+                0.25881957980542364,
+                0.9659256830156986
+              ],
+              "endpoints_yz_mm": [
+                [
+                  -20.80000114440918,
+                  -8.0
+                ],
+                [
+                  -21.100000381469727,
+                  -7.919615268707275
+                ]
+              ]
+            },
+            {
+              "feature": "inner",
+              "segment": 1,
+              "corners_mm": [
+                [
+                  -3.0803849697113037,
+                  -21.319616317749023,
+                  -7.699999809265137
+                ],
+                [
+                  3.0803849697113037,
+                  -21.319616317749023,
+                  -7.699999809265137
+                ],
+                [
+                  3.299999952316284,
+                  -21.100000381469727,
+                  -7.919615268707275
+                ],
+                [
+                  -3.299999952316284,
+                  -21.100000381469727,
+                  -7.919615268707275
+                ]
+              ],
+              "bounds_mm": {
+                "min": [
+                  -3.299999952316284,
+                  -21.319616317749023,
+                  -7.919615268707275
+                ],
+                "max": [
+                  3.299999952316284,
+                  -21.100000381469727,
+                  -7.699999809265137
+                ]
+              },
+              "area_mm2": 1.981642270380441,
+              "triangle_count": 2,
+              "normal": [
+                -0.0,
+                0.7071060135388466,
+                0.7071075488334151
+              ],
+              "endpoints_yz_mm": [
+                [
+                  -21.100000381469727,
+                  -7.919615268707275
+                ],
+                [
+                  -21.319616317749023,
+                  -7.699999809265137
+                ]
+              ]
+            },
+            {
+              "feature": "inner",
+              "segment": 2,
+              "corners_mm": [
+                [
+                  -3.0,
+                  -21.400001525878906,
+                  -7.400000095367432
+                ],
+                [
+                  3.0,
+                  -21.400001525878906,
+                  -7.400000095367432
+                ],
+                [
+                  3.0803849697113037,
+                  -21.319616317749023,
+                  -7.699999809265137
+                ],
+                [
+                  -3.0803849697113037,
+                  -21.319616317749023,
+                  -7.699999809265137
+                ]
+              ],
+              "bounds_mm": {
+                "min": [
+                  -3.0803849697113037,
+                  -21.400001525878906,
+                  -7.699999809265137
+                ],
+                "max": [
+                  3.0803849697113037,
+                  -21.319616317749023,
+                  -7.400000095367432
+                ]
+              },
+              "area_mm2": 1.8884623465300583,
+              "triangle_count": 2,
+              "normal": [
+                -0.0,
+                0.9659254020356838,
+                0.25882062843251646
+              ],
+              "endpoints_yz_mm": [
+                [
+                  -21.319616317749023,
+                  -7.699999809265137
+                ],
+                [
+                  -21.400001525878906,
+                  -7.400000095367432
+                ]
+              ]
+            },
+            {
+              "feature": "entry_ramp",
+              "segment": 0,
+              "corners_mm": [
+                [
+                  -3.0,
+                  -24.200000762939453,
+                  12.200000762939453
+                ],
+                [
+                  3.0,
+                  -24.200000762939453,
+                  12.200000762939453
+                ],
+                [
+                  3.0,
+                  -23.400001525878906,
+                  13.0
+                ],
+                [
+                  -3.0,
+                  -23.400001525878906,
+                  13.0
+                ]
+              ],
+              "bounds_mm": {
+                "min": [
+                  -3.0,
+                  -24.200000762939453,
+                  12.200000762939453
+                ],
+                "max": [
+                  3.0,
+                  -23.400001525878906,
+                  13.0
+                ]
+              },
+              "area_mm2": 6.788218625634925,
+              "triangle_count": 2,
+              "normal": [
+                0.0,
+                -0.7071067811865476,
+                0.7071067811865476
+              ],
+              "endpoints_yz_mm": [
+                [
+                  -23.400001525878906,
+                  13.0
+                ],
+                [
+                  -24.200000762939453,
+                  12.200000762939453
+                ]
+              ]
+            }
+          ],
+          "native_end_miters": [
+            {
+              "feature": "outer_miter_-1",
+              "segment": 0,
+              "corners_mm": [
+                [
+                  -3.5999999046325684,
+                  -23.600000381469727,
+                  -8.0
+                ],
+                [
+                  -3.299999952316284,
+                  -23.30000114440918,
+                  -7.919615268707275
+                ],
+                [
+                  -3.0,
+                  -22.400001525878906,
+                  -8.0
+                ]
+              ],
+              "bounds_mm": {
+                "min": [
+                  -3.5999999046325684,
+                  -23.600000381469727,
+                  -8.0
+                ],
+                "max": [
+                  -3.0,
+                  -22.400001525878906,
+                  -7.919615268707275
+                ]
+              },
+              "area_mm2": 0.1049179220354859,
+              "triangle_count": 1,
+              "normal": [
+                -0.4597002289352403,
+                0.22985029713625338,
+                0.8578138145444288
+              ]
+            },
+            {
+              "feature": "outer_miter_1",
+              "segment": 0,
+              "corners_mm": [
+                [
+                  3.0,
+                  -22.400001525878906,
+                  -8.0
+                ],
+                [
+                  3.299999952316284,
+                  -23.30000114440918,
+                  -7.919615268707275
+                ],
+                [
+                  3.5999999046325684,
+                  -23.600000381469727,
+                  -8.0
+                ]
+              ],
+              "bounds_mm": {
+                "min": [
+                  3.0,
+                  -23.600000381469727,
+                  -8.0
+                ],
+                "max": [
+                  3.5999999046325684,
+                  -22.400001525878906,
+                  -7.919615268707275
+                ]
+              },
+              "area_mm2": 0.1049179220354859,
+              "triangle_count": 1,
+              "normal": [
+                0.4597002289352403,
+                0.22985029713625338,
+                0.8578138145444288
+              ]
+            },
+            {
+              "feature": "outer_miter_-1",
+              "segment": 1,
+              "corners_mm": [
+                [
+                  -3.299999952316284,
+                  -23.30000114440918,
+                  -7.919615268707275
+                ],
+                [
+                  -3.0803849697113037,
+                  -23.080385208129883,
+                  -7.699999809265137
+                ],
+                [
+                  -3.0,
+                  -22.400001525878906,
+                  -8.0
+                ]
+              ],
+              "bounds_mm": {
+                "min": [
+                  -3.299999952316284,
+                  -23.30000114440918,
+                  -8.0
+                ],
+                "max": [
+                  -3.0,
+                  -22.400001525878906,
+                  -7.699999809265137
+                ]
+              },
+              "area_mm2": 0.13294640295636456,
+              "triangle_count": 1,
+              "normal": [
+                -0.8097533778982905,
+                0.31418043988951316,
+                0.4955704976823584
+              ]
+            },
+            {
+              "feature": "outer_miter_1",
+              "segment": 1,
+              "corners_mm": [
+                [
+                  3.0,
+                  -22.400001525878906,
+                  -8.0
+                ],
+                [
+                  3.0803849697113037,
+                  -23.080385208129883,
+                  -7.699999809265137
+                ],
+                [
+                  3.299999952316284,
+                  -23.30000114440918,
+                  -7.919615268707275
+                ]
+              ],
+              "bounds_mm": {
+                "min": [
+                  3.0,
+                  -23.30000114440918,
+                  -8.0
+                ],
+                "max": [
+                  3.299999952316284,
+                  -22.400001525878906,
+                  -7.699999809265137
+                ]
+              },
+              "area_mm2": 0.13294640295636456,
+              "triangle_count": 1,
+              "normal": [
+                0.8097533778982905,
+                0.31418043988951316,
+                0.4955704976823584
+              ]
+            },
+            {
+              "feature": "outer_miter_-1",
+              "segment": 2,
+              "corners_mm": [
+                [
+                  -3.0803849697113037,
+                  -23.080385208129883,
+                  -7.699999809265137
+                ],
+                [
+                  -3.0,
+                  -23.0,
+                  -7.400000095367432
+                ],
+                [
+                  -3.0,
+                  -22.400001525878906,
+                  -8.0
+                ]
+              ],
+              "bounds_mm": {
+                "min": [
+                  -3.0803849697113037,
+                  -23.080385208129883,
+                  -8.0
+                ],
+                "max": [
+                  -3.0,
+                  -22.400001525878906,
+                  -7.400000095367432
+                ]
+              },
+              "area_mm2": 0.11910247499553664,
+              "triangle_count": 1,
+              "normal": [
+                -0.9581265536074691,
+                0.20247679220134415,
+                0.20247630945897646
+              ]
+            },
+            {
+              "feature": "outer_miter_1",
+              "segment": 2,
+              "corners_mm": [
+                [
+                  3.0,
+                  -22.400001525878906,
+                  -8.0
+                ],
+                [
+                  3.0,
+                  -23.0,
+                  -7.400000095367432
+                ],
+                [
+                  3.0803849697113037,
+                  -23.080385208129883,
+                  -7.699999809265137
+                ]
+              ],
+              "bounds_mm": {
+                "min": [
+                  3.0,
+                  -23.080385208129883,
+                  -8.0
+                ],
+                "max": [
+                  3.0803849697113037,
+                  -22.400001525878906,
+                  -7.400000095367432
+                ]
+              },
+              "area_mm2": 0.11910247499553664,
+              "triangle_count": 1,
+              "normal": [
+                0.9581265536074691,
+                0.20247679220134415,
+                0.20247630945897646
+              ]
+            },
+            {
+              "feature": "inner_miter_-1",
+              "segment": 0,
+              "corners_mm": [
+                [
+                  -3.0,
+                  -22.0,
+                  -8.0
+                ],
+                [
+                  -3.299999952316284,
+                  -21.100000381469727,
+                  -7.919615268707275
+                ],
+                [
+                  -3.5999999046325684,
+                  -20.80000114440918,
+                  -8.0
+                ]
+              ],
+              "bounds_mm": {
+                "min": [
+                  -3.5999999046325684,
+                  -22.0,
+                  -8.0
+                ],
+                "max": [
+                  -3.0,
+                  -20.80000114440918,
+                  -7.919615268707275
+                ]
+              },
+              "area_mm2": 0.1049179220354859,
+              "triangle_count": 1,
+              "normal": [
+                -0.4597002289352403,
+                -0.22985029713625338,
+                0.8578138145444288
+              ]
+            },
+            {
+              "feature": "inner_miter_1",
+              "segment": 0,
+              "corners_mm": [
+                [
+                  3.5999999046325684,
+                  -20.80000114440918,
+                  -8.0
+                ],
+                [
+                  3.299999952316284,
+                  -21.100000381469727,
+                  -7.919615268707275
+                ],
+                [
+                  3.0,
+                  -22.0,
+                  -8.0
+                ]
+              ],
+              "bounds_mm": {
+                "min": [
+                  3.0,
+                  -22.0,
+                  -8.0
+                ],
+                "max": [
+                  3.5999999046325684,
+                  -20.80000114440918,
+                  -7.919615268707275
+                ]
+              },
+              "area_mm2": 0.1049179220354859,
+              "triangle_count": 1,
+              "normal": [
+                0.4597002289352403,
+                -0.22985029713625338,
+                0.8578138145444288
+              ]
+            },
+            {
+              "feature": "inner_miter_-1",
+              "segment": 1,
+              "corners_mm": [
+                [
+                  -3.0,
+                  -22.0,
+                  -8.0
+                ],
+                [
+                  -3.0803849697113037,
+                  -21.319616317749023,
+                  -7.699999809265137
+                ],
+                [
+                  -3.299999952316284,
+                  -21.100000381469727,
+                  -7.919615268707275
+                ]
+              ],
+              "bounds_mm": {
+                "min": [
+                  -3.299999952316284,
+                  -22.0,
+                  -8.0
+                ],
+                "max": [
+                  -3.0,
+                  -21.100000381469727,
+                  -7.699999809265137
+                ]
+              },
+              "area_mm2": 0.13294640295636456,
+              "triangle_count": 1,
+              "normal": [
+                -0.8097533778982905,
+                -0.31418043988951316,
+                0.4955704976823584
+              ]
+            },
+            {
+              "feature": "inner_miter_1",
+              "segment": 1,
+              "corners_mm": [
+                [
+                  3.299999952316284,
+                  -21.100000381469727,
+                  -7.919615268707275
+                ],
+                [
+                  3.0803849697113037,
+                  -21.319616317749023,
+                  -7.699999809265137
+                ],
+                [
+                  3.0,
+                  -22.0,
+                  -8.0
+                ]
+              ],
+              "bounds_mm": {
+                "min": [
+                  3.0,
+                  -22.0,
+                  -8.0
+                ],
+                "max": [
+                  3.299999952316284,
+                  -21.100000381469727,
+                  -7.699999809265137
+                ]
+              },
+              "area_mm2": 0.13294640295636456,
+              "triangle_count": 1,
+              "normal": [
+                0.8097533778982905,
+                -0.31418043988951316,
+                0.4955704976823584
+              ]
+            },
+            {
+              "feature": "inner_miter_-1",
+              "segment": 2,
+              "corners_mm": [
+                [
+                  -3.0,
+                  -22.0,
+                  -8.0
+                ],
+                [
+                  -3.0,
+                  -21.400001525878906,
+                  -7.400000095367432
+                ],
+                [
+                  -3.0803849697113037,
+                  -21.319616317749023,
+                  -7.699999809265137
+                ]
+              ],
+              "bounds_mm": {
+                "min": [
+                  -3.0803849697113037,
+                  -22.0,
+                  -8.0
+                ],
+                "max": [
+                  -3.0,
+                  -21.319616317749023,
+                  -7.400000095367432
+                ]
+              },
+              "area_mm2": 0.11910247499553664,
+              "triangle_count": 1,
+              "normal": [
+                -0.9581265536074691,
+                -0.20247679220134415,
+                0.20247630945897646
+              ]
+            },
+            {
+              "feature": "inner_miter_1",
+              "segment": 2,
+              "corners_mm": [
+                [
+                  3.0803849697113037,
+                  -21.319616317749023,
+                  -7.699999809265137
+                ],
+                [
+                  3.0,
+                  -21.400001525878906,
+                  -7.400000095367432
+                ],
+                [
+                  3.0,
+                  -22.0,
+                  -8.0
+                ]
+              ],
+              "bounds_mm": {
+                "min": [
+                  3.0,
+                  -22.0,
+                  -8.0
+                ],
+                "max": [
+                  3.0803849697113037,
+                  -21.319616317749023,
+                  -7.400000095367432
+                ]
+              },
+              "area_mm2": 0.11910247499553664,
+              "triangle_count": 1,
+              "normal": [
+                0.9581265536074691,
+                -0.20247679220134415,
+                0.20247630945897646
+              ]
+            }
+          ],
+          "native_miter_count": 12,
+          "native_root_volume_mm3": 1.2047076581449612
+        },
+        "vertical_rays": [
+          {
+            "label": "original cavity centre",
+            "xy_mm": [
+              0,
+              0
+            ],
+            "z_hits_mm": [
+              -15.0,
+              -13.0
+            ]
+          },
+          {
+            "label": "original front rim away from snap",
+            "xy_mm": [
+              10,
+              -19
+            ],
+            "z_hits_mm": [
+              -15.0,
+              15.0
+            ]
+          },
+          {
+            "label": "original back rim",
+            "xy_mm": [
+              0,
+              19
+            ],
+            "z_hits_mm": [
+              -15.0,
+              15.0
+            ]
+          },
+          {
+            "label": "anchor outside original box",
+            "xy_mm": [
+              0,
+              -24.4
+            ],
+            "z_hits_mm": [
+              -11.0,
+              -8.0
+            ]
+          },
+          {
+            "label": "straight beam",
+            "xy_mm": [
+              0,
+              -22
+            ],
+            "z_hits_mm": [
+              -11.0,
+              13.0
+            ]
+          },
+          {
+            "label": "hook and anchor",
+            "xy_mm": [
+              0,
+              -24
+            ],
+            "z_hits_mm": [
+              -11.0,
+              -8.0,
+              11.0,
+              12.400001525878906
+            ]
+          },
+          {
+            "label": "air behind arm",
+            "xy_mm": [
+              0,
+              -20.5
+            ],
+            "z_hits_mm": [
+              -11.0,
+              -8.0
+            ]
+          }
+        ],
+        "snap_profile": {
+          "beam_x_mm": [
+            -3,
+            3
+          ],
+          "beam_outer_y_mm": -23.0,
+          "beam_inner_y_mm": -21.400001525878906,
+          "beam_thickness_mm": 1.5999984741210938,
+          "beam_width_mm": 6,
+          "root_plane_z_mm": -8.0,
+          "bearing_z_mm": 11.0,
+          "arm_top_z_mm": 13.0,
+          "root_to_bearing_geometric_length_mm": 19.0,
+          "full_arm_geometric_height_mm": 21.0,
+          "hook_outer_y_mm": -24.200000762939453,
+          "hook_projection_mm": 1.2000007629394531,
+          "return_angle_deg": 90,
+          "root_fillets": [
+            {
+              "side": "outer",
+              "segments": 3,
+              "chord_endpoints_yz_mm": [
+                [
+                  -23.600000381469727,
+                  -8.0
+                ],
+                [
+                  -23.30000114440918,
+                  -7.919615268707275
+                ],
+                [
+                  -23.080385208129883,
+                  -7.699999809265137
+                ],
+                [
+                  -23.0,
+                  -7.400000095367432
+                ]
+              ],
+              "fitted_circle_centre_yz_mm": [
+                -23.6000015007451,
+                -7.3999984992537655
+              ],
+              "fitted_circle_radius_mm": 0.6000015007472784,
+              "radius_definition": "circle through actual chord endpoints; the mesh is faceted",
+              "input_bevel_offset_mm": 0.6
+            },
+            {
+              "side": "inner",
+              "segments": 3,
+              "chord_endpoints_yz_mm": [
+                [
+                  -20.80000114440918,
+                  -8.0
+                ],
+                [
+                  -21.100000381469727,
+                  -7.919615268707275
+                ],
+                [
+                  -21.319616317749023,
+                  -7.699999809265137
+                ],
+                [
+                  -21.400001525878906,
+                  -7.400000095367432
+                ]
+              ],
+              "fitted_circle_centre_yz_mm": [
+                -20.800000025133848,
+                -7.399998499253873
+              ],
+              "fitted_circle_radius_mm": 0.600001500747171,
+              "radius_definition": "circle through actual chord endpoints; the mesh is faceted",
+              "input_bevel_offset_mm": 0.6
+            }
+          ],
+          "entry_angle_deg": 45.0,
+          "entry_ramp_endpoints_yz_mm": [
+            [
+              -23.400001525878906,
+              13.0
+            ],
+            [
+              -24.200000762939453,
+              12.200000762939453
+            ]
+          ],
+          "effective_mechanical_length_confirmed": false
+        },
+        "original_core_outer_mm": [
+          60,
+          40,
+          30
+        ],
+        "cavity_dimensions_mm": [
+          56,
+          36,
+          28
+        ],
+        "wall_and_floor_mm": 2,
+        "original_rim_z_mm": 15.0,
+        "original_front_wall_y_mm": -20.0,
+        "source_body_metadata_compared": true,
+        "source_core_preserved": true,
+        "whole_body_geometry_unchanged": false,
+        "measurement_scope": "original box surfaces and integrated exterior snap; static geometry only"
+      },
+      "lid": {
+        "bounds_mm": {
+          "min": [
+            -30.0,
+            -26.0,
+            10.199999809265137
+          ],
+          "max": [
+            30.0,
+            20.0,
+            17.200000762939453
+          ]
+        },
+        "dimensions_mm": [
+          60.0,
+          46.0,
+          7.000000953674316
+        ],
+        "volume_mm3": 5602.200023460391,
+        "non_manifold_edges": 0,
+        "non_manifold_vertex_links": 0,
+        "inconsistent_winding_edges": 0,
+        "connected_shells": 1,
+        "euler_characteristic": 2,
+        "genus": 0,
+        "mesh_counts": {
+          "vertices": 26,
+          "edges": 72,
+          "faces": 48,
+          "triangles": 48,
+          "representation": "world-space triangulated mesh"
+        },
+        "passed": true,
+        "printed": false,
+        "fit_tested": false,
+        "physical_measurements": null,
+        "fit_results": null,
+        "physical_interference": null,
+        "qualified_clearance_mm": null,
+        "trial_status": "experimental_geometry_only",
+        "numericComparison": {
+          "purpose": "Floating point reconstruction only; not manufacturing tolerance or fit acceptance",
+          "dimensionsAbsMm": 0.0001,
+          "volumeRelative": 1e-05
+        },
+        "kind": "snapfit_lid",
+        "material_grade": null,
+        "epsilon_allow": null,
+        "root_flexibility_Q": null,
+        "required_deflection_mm": null,
+        "delta_allow_mm": null,
+        "insertion_force_N": null,
+        "retention_force_N": null,
+        "qualified_strength_N": null,
+        "strength_assessment": null,
+        "fit_assessment": null,
+        "strength_analysis_performed": false,
+        "deformation_analysis_performed": false,
+        "exported_stl": false,
+        "slicer_checked": false,
+        "actual_axis_planes": {
+          "X": [
+            {
+              "coordinate_mm": -30.0,
+              "area_mm2": 92.0,
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  -26.0,
+                  15.200000762939453
+                ],
+                "max": [
+                  -30.0,
+                  20.0,
+                  17.200000762939453
+                ]
+              }
+            },
+            {
+              "coordinate_mm": -5.0,
+              "area_mm2": 8.22000234603911,
+              "bounds_mm": {
+                "min": [
+                  -5.0,
+                  -26.0,
+                  10.199999809265137
+                ],
+                "max": [
+                  -5.0,
+                  -23.299999237060547,
+                  15.200000762939453
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 5.0,
+              "area_mm2": 8.22000234603911,
+              "bounds_mm": {
+                "min": [
+                  5.0,
+                  -26.0,
+                  10.199999809265137
+                ],
+                "max": [
+                  5.0,
+                  -23.299999237060547,
+                  15.200000762939453
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 30.0,
+              "area_mm2": 92.0,
+              "bounds_mm": {
+                "min": [
+                  30.0,
+                  -26.0,
+                  15.200000762939453
+                ],
+                "max": [
+                  30.0,
+                  20.0,
+                  17.200000762939453
+                ]
+              }
+            }
+          ],
+          "Y": [
+            {
+              "coordinate_mm": -26.0,
+              "area_mm2": 170.00000953674316,
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  -26.0,
+                  10.199999809265137
+                ],
+                "max": [
+                  30.0,
+                  -26.0,
+                  17.200000762939453
+                ]
+              }
+            },
+            {
+              "coordinate_mm": -24.5,
+              "area_mm2": 44.0000057220459,
+              "bounds_mm": {
+                "min": [
+                  -5.0,
+                  -24.5,
+                  10.800000190734863
+                ],
+                "max": [
+                  5.0,
+                  -24.5,
+                  15.200000762939453
+                ]
+              }
+            },
+            {
+              "coordinate_mm": -23.299999237060547,
+              "area_mm2": 6.000003814697266,
+              "bounds_mm": {
+                "min": [
+                  -5.0,
+                  -23.299999237060547,
+                  10.199999809265137
+                ],
+                "max": [
+                  5.0,
+                  -23.299999237060547,
+                  10.800000190734863
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 20.0,
+              "area_mm2": 120.0,
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  20.0,
+                  15.200000762939453
+                ],
+                "max": [
+                  30.0,
+                  20.0,
+                  17.200000762939453
+                ]
+              }
+            }
+          ],
+          "Z": [
+            {
+              "coordinate_mm": 10.199999809265137,
+              "area_mm2": 27.00000762939453,
+              "bounds_mm": {
+                "min": [
+                  -5.0,
+                  -26.0,
+                  10.199999809265137
+                ],
+                "max": [
+                  5.0,
+                  -23.299999237060547,
+                  10.199999809265137
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 10.800000190734863,
+              "area_mm2": 12.000007629394531,
+              "bounds_mm": {
+                "min": [
+                  -5.0,
+                  -24.5,
+                  10.800000190734863
+                ],
+                "max": [
+                  5.0,
+                  -23.299999237060547,
+                  10.800000190734863
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 15.200000762939453,
+              "area_mm2": 2745.0,
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  -26.0,
+                  15.200000762939453
+                ],
+                "max": [
+                  30.0,
+                  20.0,
+                  15.200000762939453
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 17.200000762939453,
+              "area_mm2": 2760.0,
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  -26.0,
+                  17.200000762939453
+                ],
+                "max": [
+                  30.0,
+                  20.0,
+                  17.200000762939453
+                ]
+              }
+            }
+          ]
+        },
+        "mating_profile": {
+          "skirt_inner_y_mm": -24.5,
+          "ledge_inner_y_mm": -23.299999237060547,
+          "skirt_outer_y_mm": -26.0,
+          "ledge_bottom_z_mm": 10.199999809265137,
+          "ledge_top_z_mm": 10.800000190734863,
+          "ledge_thickness_mm": 0.6000003814697266,
+          "ledge_projection_mm": 1.2000007629394531,
+          "flange_width_mm": 10
+        },
+        "plate_z_mm": [
+          15.200000762939453,
+          17.200000762939453
+        ],
+        "plate_thickness_mm": 2.0,
+        "plate_dimensions_mm": [
+          60,
+          46,
+          2.0
+        ],
+        "profiles": {
+          "mating": {
+            "skirt_inner_y_mm": -24.5,
+            "ledge_inner_y_mm": -23.299999237060547,
+            "skirt_outer_y_mm": -26.0,
+            "ledge_bottom_z_mm": 10.199999809265137,
+            "ledge_top_z_mm": 10.800000190734863,
+            "ledge_thickness_mm": 0.6000003814697266,
+            "ledge_projection_mm": 1.2000007629394531,
+            "flange_width_mm": 10
+          }
+        },
+        "vertical_rays": [
+          {
+            "label": "plate centre",
+            "xy_mm": [
+              0,
+              0
+            ],
+            "z_hits_mm": [
+              15.200000762939455,
+              17.200000762939453
+            ]
+          },
+          {
+            "label": "integrated skirt",
+            "xy_mm": [
+              0,
+              -25
+            ],
+            "z_hits_mm": [
+              10.199999809265137,
+              17.200000762939453
+            ]
+          },
+          {
+            "label": "ledge under plate",
+            "xy_mm": [
+              0,
+              -24
+            ],
+            "z_hits_mm": [
+              10.199999809265137,
+              10.800000190734863,
+              15.200000762939453,
+              17.200000762939453
+            ]
+          },
+          {
+            "label": "plate beside narrow flange",
+            "xy_mm": [
+              10,
+              -25
+            ],
+            "z_hits_mm": [
+              15.200000762939453,
+              17.200000762939453
+            ]
+          }
+        ]
+      },
+      "construction_snap": {
+        "bounds_mm": {
+          "min": [
+            -4.5,
+            -24.5,
+            -11.0
+          ],
+          "max": [
+            4.5,
+            -19.900001525878906,
+            13.0
+          ]
+        },
+        "dimensions_mm": [
+          9.0,
+          4.599998474121094,
+          24.0
+        ],
+        "volume_mm3": 339.4844908728352,
+        "non_manifold_edges": 0,
+        "non_manifold_vertex_links": 0,
+        "inconsistent_winding_edges": 0,
+        "connected_shells": 1,
+        "euler_characteristic": 2,
+        "genus": 0,
+        "mesh_counts": {
+          "vertices": 42,
+          "edges": 120,
+          "faces": 80,
+          "triangles": 80,
+          "representation": "world-space triangulated mesh"
+        },
+        "passed": true,
+        "printed": false,
+        "fit_tested": false,
+        "physical_measurements": null,
+        "fit_results": null,
+        "physical_interference": null,
+        "qualified_clearance_mm": null,
+        "trial_status": "experimental_geometry_only",
+        "numericComparison": {
+          "purpose": "Floating point reconstruction only; not manufacturing tolerance or fit acceptance",
+          "dimensionsAbsMm": 0.0001,
+          "volumeRelative": 1e-05
+        },
+        "kind": "snapfit_construction_tool",
+        "material_grade": null,
+        "epsilon_allow": null,
+        "root_flexibility_Q": null,
+        "required_deflection_mm": null,
+        "delta_allow_mm": null,
+        "insertion_force_N": null,
+        "retention_force_N": null,
+        "qualified_strength_N": null,
+        "strength_assessment": null,
+        "fit_assessment": null,
+        "strength_analysis_performed": false,
+        "deformation_analysis_performed": false,
+        "exported_stl": false,
+        "slicer_checked": false,
+        "tool_kind": "snap",
+        "actual_axis_planes": {
+          "X": [
+            {
+              "coordinate_mm": -4.5,
+              "area_mm2": 13.799995422363281,
+              "bounds_mm": {
+                "min": [
+                  -4.5,
+                  -24.5,
+                  -11.0
+                ],
+                "max": [
+                  -4.5,
+                  -19.900001525878906,
+                  -8.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": -3.0,
+              "area_mm2": 35.319971065520804,
+              "bounds_mm": {
+                "min": [
+                  -3.0,
+                  -24.200000762939453,
+                  -8.0
+                ],
+                "max": [
+                  -3.0,
+                  -21.400001525878906,
+                  13.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 3.0,
+              "area_mm2": 35.319971065520804,
+              "bounds_mm": {
+                "min": [
+                  3.0,
+                  -24.200000762939453,
+                  -8.0
+                ],
+                "max": [
+                  3.0,
+                  -21.400001525878906,
+                  13.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 4.5,
+              "area_mm2": 13.799995422363281,
+              "bounds_mm": {
+                "min": [
+                  4.5,
+                  -24.5,
+                  -11.0
+                ],
+                "max": [
+                  4.5,
+                  -19.900001525878906,
+                  -8.0
+                ]
+              }
+            }
+          ],
+          "Y": [
+            {
+              "coordinate_mm": -24.5,
+              "area_mm2": 27.0,
+              "bounds_mm": {
+                "min": [
+                  -4.5,
+                  -24.5,
+                  -11.0
+                ],
+                "max": [
+                  4.5,
+                  -24.5,
+                  -8.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": -24.200000762939453,
+              "area_mm2": 7.200004577636719,
+              "bounds_mm": {
+                "min": [
+                  -3.0,
+                  -24.200000762939453,
+                  11.0
+                ],
+                "max": [
+                  3.0,
+                  -24.200000762939453,
+                  12.200000762939453
+                ]
+              }
+            },
+            {
+              "coordinate_mm": -23.0,
+              "area_mm2": 110.40000057220459,
+              "bounds_mm": {
+                "min": [
+                  -3.0,
+                  -23.0,
+                  -7.400000095367432
+                ],
+                "max": [
+                  3.0,
+                  -23.0,
+                  11.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": -21.400001525878906,
+              "area_mm2": 122.40000057220459,
+              "bounds_mm": {
+                "min": [
+                  -3.0,
+                  -21.400001525878906,
+                  -7.400000095367432
+                ],
+                "max": [
+                  3.0,
+                  -21.400001525878906,
+                  13.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": -19.900001525878906,
+              "area_mm2": 27.0,
+              "bounds_mm": {
+                "min": [
+                  -4.5,
+                  -19.900001525878906,
+                  -11.0
+                ],
+                "max": [
+                  4.5,
+                  -19.900001525878906,
+                  -8.0
+                ]
+              }
+            }
+          ],
+          "Z": [
+            {
+              "coordinate_mm": -11.0,
+              "area_mm2": 41.399986267089844,
+              "bounds_mm": {
+                "min": [
+                  -4.5,
+                  -24.5,
+                  -11.0
+                ],
+                "max": [
+                  4.5,
+                  -19.900001525878906,
+                  -11.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": -8.0,
+              "area_mm2": 23.159992446899196,
+              "bounds_mm": {
+                "min": [
+                  -4.5,
+                  -24.5,
+                  -8.0
+                ],
+                "max": [
+                  4.5,
+                  -19.900001525878906,
+                  -8.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 11.0,
+              "area_mm2": 7.200004577636719,
+              "bounds_mm": {
+                "min": [
+                  -3.0,
+                  -24.200000762939453,
+                  11.0
+                ],
+                "max": [
+                  3.0,
+                  -23.0,
+                  11.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 13.0,
+              "area_mm2": 12.0,
+              "bounds_mm": {
+                "min": [
+                  -3.0,
+                  -23.400001525878906,
+                  13.0
+                ],
+                "max": [
+                  3.0,
+                  -21.400001525878906,
+                  13.0
+                ]
+              }
+            }
+          ]
+        },
+        "profiles": {
+          "fillets": [
+            {
+              "side": "outer",
+              "segments": 3,
+              "chord_endpoints_yz_mm": [
+                [
+                  -23.600000381469727,
+                  -8.0
+                ],
+                [
+                  -23.30000114440918,
+                  -7.919615268707275
+                ],
+                [
+                  -23.080385208129883,
+                  -7.699999809265137
+                ],
+                [
+                  -23.0,
+                  -7.400000095367432
+                ]
+              ],
+              "fitted_circle_centre_yz_mm": [
+                -23.6000015007451,
+                -7.3999984992537655
+              ],
+              "fitted_circle_radius_mm": 0.6000015007472784,
+              "radius_definition": "circle through actual chord endpoints; the mesh is faceted",
+              "input_bevel_offset_mm": 0.6
+            },
+            {
+              "side": "inner",
+              "segments": 3,
+              "chord_endpoints_yz_mm": [
+                [
+                  -20.80000114440918,
+                  -8.0
+                ],
+                [
+                  -21.100000381469727,
+                  -7.919615268707275
+                ],
+                [
+                  -21.319616317749023,
+                  -7.699999809265137
+                ],
+                [
+                  -21.400001525878906,
+                  -7.400000095367432
+                ]
+              ],
+              "fitted_circle_centre_yz_mm": [
+                -20.800000025133848,
+                -7.399998499253873
+              ],
+              "fitted_circle_radius_mm": 0.600001500747171,
+              "radius_definition": "circle through actual chord endpoints; the mesh is faceted",
+              "input_bevel_offset_mm": 0.6
+            }
+          ],
+          "entry_angle_deg": 45.0,
+          "entry_ramp_endpoints_yz_mm": [
+            [
+              -23.400001525878906,
+              13.0
+            ],
+            [
+              -24.200000762939453,
+              12.200000762939453
+            ]
+          ],
+          "facets": [
+            {
+              "feature": "outer",
+              "segment": 0,
+              "corners_mm": [
+                [
+                  -3.5999999046325684,
+                  -23.600000381469727,
+                  -8.0
+                ],
+                [
+                  3.5999999046325684,
+                  -23.600000381469727,
+                  -8.0
+                ],
+                [
+                  3.299999952316284,
+                  -23.30000114440918,
+                  -7.919615268707275
+                ],
+                [
+                  -3.299999952316284,
+                  -23.30000114440918,
+                  -7.919615268707275
+                ]
+              ],
+              "bounds_mm": {
+                "min": [
+                  -3.5999999046325684,
+                  -23.600000381469727,
+                  -8.0
+                ],
+                "max": [
+                  3.5999999046325684,
+                  -23.30000114440918,
+                  -7.919615268707275
+                ]
+              },
+              "area_mm2": 2.143016516902052,
+              "triangle_count": 2,
+              "normal": [
+                0.0,
+                -0.25881957980542364,
+                0.9659256830156986
+              ],
+              "endpoints_yz_mm": [
+                [
+                  -23.600000381469727,
+                  -8.0
+                ],
+                [
+                  -23.30000114440918,
+                  -7.919615268707275
+                ]
+              ]
+            },
+            {
+              "feature": "outer",
+              "segment": 1,
+              "corners_mm": [
+                [
+                  -3.299999952316284,
+                  -23.30000114440918,
+                  -7.919615268707275
+                ],
+                [
+                  3.299999952316284,
+                  -23.30000114440918,
+                  -7.919615268707275
+                ],
+                [
+                  3.0803849697113037,
+                  -23.080385208129883,
+                  -7.699999809265137
+                ],
+                [
+                  -3.0803849697113037,
+                  -23.080385208129883,
+                  -7.699999809265137
+                ]
+              ],
+              "bounds_mm": {
+                "min": [
+                  -3.299999952316284,
+                  -23.30000114440918,
+                  -7.919615268707275
+                ],
+                "max": [
+                  3.299999952316284,
+                  -23.080385208129883,
+                  -7.699999809265137
+                ]
+              },
+              "area_mm2": 1.981642270380441,
+              "triangle_count": 2,
+              "normal": [
+                0.0,
+                -0.7071060135388466,
+                0.7071075488334151
+              ],
+              "endpoints_yz_mm": [
+                [
+                  -23.30000114440918,
+                  -7.919615268707275
+                ],
+                [
+                  -23.080385208129883,
+                  -7.699999809265137
+                ]
+              ]
+            },
+            {
+              "feature": "outer",
+              "segment": 2,
+              "corners_mm": [
+                [
+                  -3.0803849697113037,
+                  -23.080385208129883,
+                  -7.699999809265137
+                ],
+                [
+                  3.0803849697113037,
+                  -23.080385208129883,
+                  -7.699999809265137
+                ],
+                [
+                  3.0,
+                  -23.0,
+                  -7.400000095367432
+                ],
+                [
+                  -3.0,
+                  -23.0,
+                  -7.400000095367432
+                ]
+              ],
+              "bounds_mm": {
+                "min": [
+                  -3.0803849697113037,
+                  -23.080385208129883,
+                  -7.699999809265137
+                ],
+                "max": [
+                  3.0803849697113037,
+                  -23.0,
+                  -7.400000095367432
+                ]
+              },
+              "area_mm2": 1.8884623465300583,
+              "triangle_count": 2,
+              "normal": [
+                0.0,
+                -0.9659254020356838,
+                0.25882062843251646
+              ],
+              "endpoints_yz_mm": [
+                [
+                  -23.080385208129883,
+                  -7.699999809265137
+                ],
+                [
+                  -23.0,
+                  -7.400000095367432
+                ]
+              ]
+            },
+            {
+              "feature": "inner",
+              "segment": 0,
+              "corners_mm": [
+                [
+                  -3.299999952316284,
+                  -21.100000381469727,
+                  -7.919615268707275
+                ],
+                [
+                  3.299999952316284,
+                  -21.100000381469727,
+                  -7.919615268707275
+                ],
+                [
+                  3.5999999046325684,
+                  -20.80000114440918,
+                  -8.0
+                ],
+                [
+                  -3.5999999046325684,
+                  -20.80000114440918,
+                  -8.0
+                ]
+              ],
+              "bounds_mm": {
+                "min": [
+                  -3.5999999046325684,
+                  -21.100000381469727,
+                  -8.0
+                ],
+                "max": [
+                  3.5999999046325684,
+                  -20.80000114440918,
+                  -7.919615268707275
+                ]
+              },
+              "area_mm2": 2.143016516902052,
+              "triangle_count": 2,
+              "normal": [
+                -0.0,
+                0.25881957980542364,
+                0.9659256830156986
+              ],
+              "endpoints_yz_mm": [
+                [
+                  -20.80000114440918,
+                  -8.0
+                ],
+                [
+                  -21.100000381469727,
+                  -7.919615268707275
+                ]
+              ]
+            },
+            {
+              "feature": "inner",
+              "segment": 1,
+              "corners_mm": [
+                [
+                  -3.0803849697113037,
+                  -21.319616317749023,
+                  -7.699999809265137
+                ],
+                [
+                  3.0803849697113037,
+                  -21.319616317749023,
+                  -7.699999809265137
+                ],
+                [
+                  3.299999952316284,
+                  -21.100000381469727,
+                  -7.919615268707275
+                ],
+                [
+                  -3.299999952316284,
+                  -21.100000381469727,
+                  -7.919615268707275
+                ]
+              ],
+              "bounds_mm": {
+                "min": [
+                  -3.299999952316284,
+                  -21.319616317749023,
+                  -7.919615268707275
+                ],
+                "max": [
+                  3.299999952316284,
+                  -21.100000381469727,
+                  -7.699999809265137
+                ]
+              },
+              "area_mm2": 1.981642270380441,
+              "triangle_count": 2,
+              "normal": [
+                -0.0,
+                0.7071060135388466,
+                0.7071075488334151
+              ],
+              "endpoints_yz_mm": [
+                [
+                  -21.100000381469727,
+                  -7.919615268707275
+                ],
+                [
+                  -21.319616317749023,
+                  -7.699999809265137
+                ]
+              ]
+            },
+            {
+              "feature": "inner",
+              "segment": 2,
+              "corners_mm": [
+                [
+                  -3.0,
+                  -21.400001525878906,
+                  -7.400000095367432
+                ],
+                [
+                  3.0,
+                  -21.400001525878906,
+                  -7.400000095367432
+                ],
+                [
+                  3.0803849697113037,
+                  -21.319616317749023,
+                  -7.699999809265137
+                ],
+                [
+                  -3.0803849697113037,
+                  -21.319616317749023,
+                  -7.699999809265137
+                ]
+              ],
+              "bounds_mm": {
+                "min": [
+                  -3.0803849697113037,
+                  -21.400001525878906,
+                  -7.699999809265137
+                ],
+                "max": [
+                  3.0803849697113037,
+                  -21.319616317749023,
+                  -7.400000095367432
+                ]
+              },
+              "area_mm2": 1.8884623465300583,
+              "triangle_count": 2,
+              "normal": [
+                -0.0,
+                0.9659254020356838,
+                0.25882062843251646
+              ],
+              "endpoints_yz_mm": [
+                [
+                  -21.319616317749023,
+                  -7.699999809265137
+                ],
+                [
+                  -21.400001525878906,
+                  -7.400000095367432
+                ]
+              ]
+            },
+            {
+              "feature": "entry_ramp",
+              "segment": 0,
+              "corners_mm": [
+                [
+                  -3.0,
+                  -24.200000762939453,
+                  12.200000762939453
+                ],
+                [
+                  3.0,
+                  -24.200000762939453,
+                  12.200000762939453
+                ],
+                [
+                  3.0,
+                  -23.400001525878906,
+                  13.0
+                ],
+                [
+                  -3.0,
+                  -23.400001525878906,
+                  13.0
+                ]
+              ],
+              "bounds_mm": {
+                "min": [
+                  -3.0,
+                  -24.200000762939453,
+                  12.200000762939453
+                ],
+                "max": [
+                  3.0,
+                  -23.400001525878906,
+                  13.0
+                ]
+              },
+              "area_mm2": 6.788218625634925,
+              "triangle_count": 2,
+              "normal": [
+                0.0,
+                -0.7071067811865476,
+                0.7071067811865476
+              ],
+              "endpoints_yz_mm": [
+                [
+                  -23.400001525878906,
+                  13.0
+                ],
+                [
+                  -24.200000762939453,
+                  12.200000762939453
+                ]
+              ]
+            }
+          ],
+          "native_end_miters": [
+            {
+              "feature": "outer_miter_-1",
+              "segment": 0,
+              "corners_mm": [
+                [
+                  -3.5999999046325684,
+                  -23.600000381469727,
+                  -8.0
+                ],
+                [
+                  -3.299999952316284,
+                  -23.30000114440918,
+                  -7.919615268707275
+                ],
+                [
+                  -3.0,
+                  -22.400001525878906,
+                  -8.0
+                ]
+              ],
+              "bounds_mm": {
+                "min": [
+                  -3.5999999046325684,
+                  -23.600000381469727,
+                  -8.0
+                ],
+                "max": [
+                  -3.0,
+                  -22.400001525878906,
+                  -7.919615268707275
+                ]
+              },
+              "area_mm2": 0.1049179220354859,
+              "triangle_count": 1,
+              "normal": [
+                -0.4597002289352403,
+                0.22985029713625338,
+                0.8578138145444288
+              ]
+            },
+            {
+              "feature": "outer_miter_1",
+              "segment": 0,
+              "corners_mm": [
+                [
+                  3.0,
+                  -22.400001525878906,
+                  -8.0
+                ],
+                [
+                  3.299999952316284,
+                  -23.30000114440918,
+                  -7.919615268707275
+                ],
+                [
+                  3.5999999046325684,
+                  -23.600000381469727,
+                  -8.0
+                ]
+              ],
+              "bounds_mm": {
+                "min": [
+                  3.0,
+                  -23.600000381469727,
+                  -8.0
+                ],
+                "max": [
+                  3.5999999046325684,
+                  -22.400001525878906,
+                  -7.919615268707275
+                ]
+              },
+              "area_mm2": 0.1049179220354859,
+              "triangle_count": 1,
+              "normal": [
+                0.4597002289352403,
+                0.22985029713625338,
+                0.8578138145444288
+              ]
+            },
+            {
+              "feature": "outer_miter_-1",
+              "segment": 1,
+              "corners_mm": [
+                [
+                  -3.299999952316284,
+                  -23.30000114440918,
+                  -7.919615268707275
+                ],
+                [
+                  -3.0803849697113037,
+                  -23.080385208129883,
+                  -7.699999809265137
+                ],
+                [
+                  -3.0,
+                  -22.400001525878906,
+                  -8.0
+                ]
+              ],
+              "bounds_mm": {
+                "min": [
+                  -3.299999952316284,
+                  -23.30000114440918,
+                  -8.0
+                ],
+                "max": [
+                  -3.0,
+                  -22.400001525878906,
+                  -7.699999809265137
+                ]
+              },
+              "area_mm2": 0.13294640295636456,
+              "triangle_count": 1,
+              "normal": [
+                -0.8097533778982905,
+                0.31418043988951316,
+                0.4955704976823584
+              ]
+            },
+            {
+              "feature": "outer_miter_1",
+              "segment": 1,
+              "corners_mm": [
+                [
+                  3.0,
+                  -22.400001525878906,
+                  -8.0
+                ],
+                [
+                  3.0803849697113037,
+                  -23.080385208129883,
+                  -7.699999809265137
+                ],
+                [
+                  3.299999952316284,
+                  -23.30000114440918,
+                  -7.919615268707275
+                ]
+              ],
+              "bounds_mm": {
+                "min": [
+                  3.0,
+                  -23.30000114440918,
+                  -8.0
+                ],
+                "max": [
+                  3.299999952316284,
+                  -22.400001525878906,
+                  -7.699999809265137
+                ]
+              },
+              "area_mm2": 0.13294640295636456,
+              "triangle_count": 1,
+              "normal": [
+                0.8097533778982905,
+                0.31418043988951316,
+                0.4955704976823584
+              ]
+            },
+            {
+              "feature": "outer_miter_-1",
+              "segment": 2,
+              "corners_mm": [
+                [
+                  -3.0803849697113037,
+                  -23.080385208129883,
+                  -7.699999809265137
+                ],
+                [
+                  -3.0,
+                  -23.0,
+                  -7.400000095367432
+                ],
+                [
+                  -3.0,
+                  -22.400001525878906,
+                  -8.0
+                ]
+              ],
+              "bounds_mm": {
+                "min": [
+                  -3.0803849697113037,
+                  -23.080385208129883,
+                  -8.0
+                ],
+                "max": [
+                  -3.0,
+                  -22.400001525878906,
+                  -7.400000095367432
+                ]
+              },
+              "area_mm2": 0.11910247499553664,
+              "triangle_count": 1,
+              "normal": [
+                -0.9581265536074691,
+                0.20247679220134415,
+                0.20247630945897646
+              ]
+            },
+            {
+              "feature": "outer_miter_1",
+              "segment": 2,
+              "corners_mm": [
+                [
+                  3.0,
+                  -22.400001525878906,
+                  -8.0
+                ],
+                [
+                  3.0,
+                  -23.0,
+                  -7.400000095367432
+                ],
+                [
+                  3.0803849697113037,
+                  -23.080385208129883,
+                  -7.699999809265137
+                ]
+              ],
+              "bounds_mm": {
+                "min": [
+                  3.0,
+                  -23.080385208129883,
+                  -8.0
+                ],
+                "max": [
+                  3.0803849697113037,
+                  -22.400001525878906,
+                  -7.400000095367432
+                ]
+              },
+              "area_mm2": 0.11910247499553664,
+              "triangle_count": 1,
+              "normal": [
+                0.9581265536074691,
+                0.20247679220134415,
+                0.20247630945897646
+              ]
+            },
+            {
+              "feature": "inner_miter_-1",
+              "segment": 0,
+              "corners_mm": [
+                [
+                  -3.0,
+                  -22.0,
+                  -8.0
+                ],
+                [
+                  -3.299999952316284,
+                  -21.100000381469727,
+                  -7.919615268707275
+                ],
+                [
+                  -3.5999999046325684,
+                  -20.80000114440918,
+                  -8.0
+                ]
+              ],
+              "bounds_mm": {
+                "min": [
+                  -3.5999999046325684,
+                  -22.0,
+                  -8.0
+                ],
+                "max": [
+                  -3.0,
+                  -20.80000114440918,
+                  -7.919615268707275
+                ]
+              },
+              "area_mm2": 0.1049179220354859,
+              "triangle_count": 1,
+              "normal": [
+                -0.4597002289352403,
+                -0.22985029713625338,
+                0.8578138145444288
+              ]
+            },
+            {
+              "feature": "inner_miter_1",
+              "segment": 0,
+              "corners_mm": [
+                [
+                  3.5999999046325684,
+                  -20.80000114440918,
+                  -8.0
+                ],
+                [
+                  3.299999952316284,
+                  -21.100000381469727,
+                  -7.919615268707275
+                ],
+                [
+                  3.0,
+                  -22.0,
+                  -8.0
+                ]
+              ],
+              "bounds_mm": {
+                "min": [
+                  3.0,
+                  -22.0,
+                  -8.0
+                ],
+                "max": [
+                  3.5999999046325684,
+                  -20.80000114440918,
+                  -7.919615268707275
+                ]
+              },
+              "area_mm2": 0.1049179220354859,
+              "triangle_count": 1,
+              "normal": [
+                0.4597002289352403,
+                -0.22985029713625338,
+                0.8578138145444288
+              ]
+            },
+            {
+              "feature": "inner_miter_-1",
+              "segment": 1,
+              "corners_mm": [
+                [
+                  -3.0,
+                  -22.0,
+                  -8.0
+                ],
+                [
+                  -3.0803849697113037,
+                  -21.319616317749023,
+                  -7.699999809265137
+                ],
+                [
+                  -3.299999952316284,
+                  -21.100000381469727,
+                  -7.919615268707275
+                ]
+              ],
+              "bounds_mm": {
+                "min": [
+                  -3.299999952316284,
+                  -22.0,
+                  -8.0
+                ],
+                "max": [
+                  -3.0,
+                  -21.100000381469727,
+                  -7.699999809265137
+                ]
+              },
+              "area_mm2": 0.13294640295636456,
+              "triangle_count": 1,
+              "normal": [
+                -0.8097533778982905,
+                -0.31418043988951316,
+                0.4955704976823584
+              ]
+            },
+            {
+              "feature": "inner_miter_1",
+              "segment": 1,
+              "corners_mm": [
+                [
+                  3.299999952316284,
+                  -21.100000381469727,
+                  -7.919615268707275
+                ],
+                [
+                  3.0803849697113037,
+                  -21.319616317749023,
+                  -7.699999809265137
+                ],
+                [
+                  3.0,
+                  -22.0,
+                  -8.0
+                ]
+              ],
+              "bounds_mm": {
+                "min": [
+                  3.0,
+                  -22.0,
+                  -8.0
+                ],
+                "max": [
+                  3.299999952316284,
+                  -21.100000381469727,
+                  -7.699999809265137
+                ]
+              },
+              "area_mm2": 0.13294640295636456,
+              "triangle_count": 1,
+              "normal": [
+                0.8097533778982905,
+                -0.31418043988951316,
+                0.4955704976823584
+              ]
+            },
+            {
+              "feature": "inner_miter_-1",
+              "segment": 2,
+              "corners_mm": [
+                [
+                  -3.0,
+                  -22.0,
+                  -8.0
+                ],
+                [
+                  -3.0,
+                  -21.400001525878906,
+                  -7.400000095367432
+                ],
+                [
+                  -3.0803849697113037,
+                  -21.319616317749023,
+                  -7.699999809265137
+                ]
+              ],
+              "bounds_mm": {
+                "min": [
+                  -3.0803849697113037,
+                  -22.0,
+                  -8.0
+                ],
+                "max": [
+                  -3.0,
+                  -21.319616317749023,
+                  -7.400000095367432
+                ]
+              },
+              "area_mm2": 0.11910247499553664,
+              "triangle_count": 1,
+              "normal": [
+                -0.9581265536074691,
+                -0.20247679220134415,
+                0.20247630945897646
+              ]
+            },
+            {
+              "feature": "inner_miter_1",
+              "segment": 2,
+              "corners_mm": [
+                [
+                  3.0803849697113037,
+                  -21.319616317749023,
+                  -7.699999809265137
+                ],
+                [
+                  3.0,
+                  -21.400001525878906,
+                  -7.400000095367432
+                ],
+                [
+                  3.0,
+                  -22.0,
+                  -8.0
+                ]
+              ],
+              "bounds_mm": {
+                "min": [
+                  3.0,
+                  -22.0,
+                  -8.0
+                ],
+                "max": [
+                  3.0803849697113037,
+                  -21.319616317749023,
+                  -7.400000095367432
+                ]
+              },
+              "area_mm2": 0.11910247499553664,
+              "triangle_count": 1,
+              "normal": [
+                0.9581265536074691,
+                -0.20247679220134415,
+                0.20247630945897646
+              ]
+            }
+          ],
+          "native_miter_count": 12,
+          "native_root_volume_mm3": 1.2047076581449612
+        },
+        "vertical_rays": [
+          {
+            "label": "anchor outer shoulder",
+            "xy_mm": [
+              0,
+              -24.4
+            ],
+            "z_hits_mm": [
+              -11.0,
+              -8.0
+            ]
+          },
+          {
+            "label": "straight beam",
+            "xy_mm": [
+              0,
+              -22
+            ],
+            "z_hits_mm": [
+              -11.0,
+              13.0
+            ]
+          },
+          {
+            "label": "hook ledge",
+            "xy_mm": [
+              0,
+              -24
+            ],
+            "z_hits_mm": [
+              -11.0,
+              -8.0,
+              11.0,
+              12.400001525878906
+            ]
+          }
+        ],
+        "snap_profile": {
+          "beam_x_mm": [
+            -3,
+            3
+          ],
+          "beam_outer_y_mm": -23.0,
+          "beam_inner_y_mm": -21.400001525878906,
+          "beam_thickness_mm": 1.5999984741210938,
+          "beam_width_mm": 6,
+          "root_plane_z_mm": -8.0,
+          "bearing_z_mm": 11.0,
+          "arm_top_z_mm": 13.0,
+          "root_to_bearing_geometric_length_mm": 19.0,
+          "full_arm_geometric_height_mm": 21.0,
+          "hook_outer_y_mm": -24.200000762939453,
+          "hook_projection_mm": 1.2000007629394531,
+          "return_angle_deg": 90,
+          "root_fillets": [
+            {
+              "side": "outer",
+              "segments": 3,
+              "chord_endpoints_yz_mm": [
+                [
+                  -23.600000381469727,
+                  -8.0
+                ],
+                [
+                  -23.30000114440918,
+                  -7.919615268707275
+                ],
+                [
+                  -23.080385208129883,
+                  -7.699999809265137
+                ],
+                [
+                  -23.0,
+                  -7.400000095367432
+                ]
+              ],
+              "fitted_circle_centre_yz_mm": [
+                -23.6000015007451,
+                -7.3999984992537655
+              ],
+              "fitted_circle_radius_mm": 0.6000015007472784,
+              "radius_definition": "circle through actual chord endpoints; the mesh is faceted",
+              "input_bevel_offset_mm": 0.6
+            },
+            {
+              "side": "inner",
+              "segments": 3,
+              "chord_endpoints_yz_mm": [
+                [
+                  -20.80000114440918,
+                  -8.0
+                ],
+                [
+                  -21.100000381469727,
+                  -7.919615268707275
+                ],
+                [
+                  -21.319616317749023,
+                  -7.699999809265137
+                ],
+                [
+                  -21.400001525878906,
+                  -7.400000095367432
+                ]
+              ],
+              "fitted_circle_centre_yz_mm": [
+                -20.800000025133848,
+                -7.399998499253873
+              ],
+              "fitted_circle_radius_mm": 0.600001500747171,
+              "radius_definition": "circle through actual chord endpoints; the mesh is faceted",
+              "input_bevel_offset_mm": 0.6
+            }
+          ],
+          "entry_angle_deg": 45.0,
+          "entry_ramp_endpoints_yz_mm": [
+            [
+              -23.400001525878906,
+              13.0
+            ],
+            [
+              -24.200000762939453,
+              12.200000762939453
+            ]
+          ],
+          "effective_mechanical_length_confirmed": false
+        }
+      },
+      "construction_flange": {
+        "bounds_mm": {
+          "min": [
+            -5.0,
+            -26.0,
+            10.199999809265137
+          ],
+          "max": [
+            5.0,
+            -23.299999237060547,
+            15.399999618530273
+          ]
+        },
+        "dimensions_mm": [
+          10.0,
+          2.700000762939453,
+          5.199999809265137
+        ],
+        "volume_mm3": 85.2000062942534,
+        "non_manifold_edges": 0,
+        "non_manifold_vertex_links": 0,
+        "inconsistent_winding_edges": 0,
+        "connected_shells": 1,
+        "euler_characteristic": 2,
+        "genus": 0,
+        "mesh_counts": {
+          "vertices": 16,
+          "edges": 42,
+          "faces": 28,
+          "triangles": 28,
+          "representation": "world-space triangulated mesh"
+        },
+        "passed": true,
+        "printed": false,
+        "fit_tested": false,
+        "physical_measurements": null,
+        "fit_results": null,
+        "physical_interference": null,
+        "qualified_clearance_mm": null,
+        "trial_status": "experimental_geometry_only",
+        "numericComparison": {
+          "purpose": "Floating point reconstruction only; not manufacturing tolerance or fit acceptance",
+          "dimensionsAbsMm": 0.0001,
+          "volumeRelative": 1e-05
+        },
+        "kind": "snapfit_construction_tool",
+        "material_grade": null,
+        "epsilon_allow": null,
+        "root_flexibility_Q": null,
+        "required_deflection_mm": null,
+        "delta_allow_mm": null,
+        "insertion_force_N": null,
+        "retention_force_N": null,
+        "qualified_strength_N": null,
+        "strength_assessment": null,
+        "fit_assessment": null,
+        "strength_analysis_performed": false,
+        "deformation_analysis_performed": false,
+        "exported_stl": false,
+        "slicer_checked": false,
+        "tool_kind": "flange",
+        "actual_axis_planes": {
+          "X": [
+            {
+              "coordinate_mm": -5.0,
+              "area_mm2": 8.52000062942534,
+              "bounds_mm": {
+                "min": [
+                  -5.0,
+                  -26.0,
+                  10.199999809265137
+                ],
+                "max": [
+                  -5.0,
+                  -23.299999237060547,
+                  15.399999618530273
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 5.0,
+              "area_mm2": 8.52000062942534,
+              "bounds_mm": {
+                "min": [
+                  5.0,
+                  -26.0,
+                  10.199999809265137
+                ],
+                "max": [
+                  5.0,
+                  -23.299999237060547,
+                  15.399999618530273
+                ]
+              }
+            }
+          ],
+          "Y": [
+            {
+              "coordinate_mm": -26.0,
+              "area_mm2": 51.99999809265137,
+              "bounds_mm": {
+                "min": [
+                  -5.0,
+                  -26.0,
+                  10.199999809265137
+                ],
+                "max": [
+                  5.0,
+                  -26.0,
+                  15.399999618530273
+                ]
+              }
+            },
+            {
+              "coordinate_mm": -24.5,
+              "area_mm2": 45.9999942779541,
+              "bounds_mm": {
+                "min": [
+                  -5.0,
+                  -24.5,
+                  10.800000190734863
+                ],
+                "max": [
+                  5.0,
+                  -24.5,
+                  15.399999618530273
+                ]
+              }
+            },
+            {
+              "coordinate_mm": -23.299999237060547,
+              "area_mm2": 6.000003814697266,
+              "bounds_mm": {
+                "min": [
+                  -5.0,
+                  -23.299999237060547,
+                  10.199999809265137
+                ],
+                "max": [
+                  5.0,
+                  -23.299999237060547,
+                  10.800000190734863
+                ]
+              }
+            }
+          ],
+          "Z": [
+            {
+              "coordinate_mm": 10.199999809265137,
+              "area_mm2": 27.00000762939453,
+              "bounds_mm": {
+                "min": [
+                  -5.0,
+                  -26.0,
+                  10.199999809265137
+                ],
+                "max": [
+                  5.0,
+                  -23.299999237060547,
+                  10.199999809265137
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 10.800000190734863,
+              "area_mm2": 12.000007629394531,
+              "bounds_mm": {
+                "min": [
+                  -5.0,
+                  -24.5,
+                  10.800000190734863
+                ],
+                "max": [
+                  5.0,
+                  -23.299999237060547,
+                  10.800000190734863
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 15.399999618530273,
+              "area_mm2": 15.0,
+              "bounds_mm": {
+                "min": [
+                  -5.0,
+                  -26.0,
+                  15.399999618530273
+                ],
+                "max": [
+                  5.0,
+                  -24.5,
+                  15.399999618530273
+                ]
+              }
+            }
+          ]
+        },
+        "profiles": {},
+        "vertical_rays": [
+          {
+            "label": "skirt",
+            "xy_mm": [
+              0,
+              -25
+            ],
+            "z_hits_mm": [
+              10.199999809265137,
+              15.399999618530273
+            ]
+          },
+          {
+            "label": "ledge",
+            "xy_mm": [
+              0,
+              -24
+            ],
+            "z_hits_mm": [
+              10.199999809265137,
+              10.800000190734863
+            ]
+          }
+        ]
+      },
+      "assembly": {
+        "plate_rim_gap_mm": 0.20000076293945312,
+        "beam_ledge_gap_mm": 0.2999992370605469,
+        "hook_skirt_gap_mm": 0.2999992370605469,
+        "hook_ledge_projection_overlap_mm": 0.9000015258789062,
+        "hook_ledge_vertical_gap_mm": 0.19999980926513672,
+        "straight_beam_inward_static_space_mm": 1.4000015258789062,
+        "inner_root_fillet_local_static_gap_mm": 0.8000011444091797,
+        "passed": true,
+        "kind": "snapfit_static_assembly",
+        "geometric_nonintersection": true,
+        "scope": "undeformed nominal placement only; no contact/deformation/insertion path solved",
+        "required_deflection_mm": null,
+        "delta_allow_mm": null,
+        "root_flexibility_Q": null,
+        "material_grade": null,
+        "epsilon_allow": null,
+        "insertion_force_N": null,
+        "retention_force_N": null,
+        "strength_analysis_performed": false,
+        "deformation_analysis_performed": false,
+        "printed": false,
+        "fit_tested": false,
+        "physical_measurements": null,
+        "fit_results": null,
+        "physical_interference": null,
+        "qualified_strength_N": null,
+        "qualified_clearance_mm": null,
+        "trial_status": "experimental_geometry_only",
+        "numericComparison": {
+          "purpose": "Floating point reconstruction only; not manufacturing tolerance or fit acceptance",
+          "dimensionsAbsMm": 0.0001,
+          "volumeRelative": 1e-05
+        }
+      },
+      "bevel_operations": {
+        "hook": {
+          "offset": 0.800000011920929,
+          "offset_type": "OFFSET",
+          "segments": 1,
+          "profile": 0.5,
+          "affect": "EDGES",
+          "clamp_overlap": false,
+          "operator_id": "MESH_OT_bevel",
+          "offset_mm": 0.8000000499188906
+        },
+        "root": {
+          "offset": 0.6000000238418579,
+          "offset_type": "OFFSET",
+          "segments": 3,
+          "profile": 0.5,
+          "affect": "EDGES",
+          "clamp_overlap": false,
+          "operator_id": "MESH_OT_bevel",
+          "offset_mm": 0.6000000523403298
+        }
+      },
+      "source_snap_parameter_path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\07\\2026-10-25-lesson07-parameters-demo-v001\\parameter-record-v001.json",
+      "source_snap_parameter_sha256": "57d411f24486aad351056854b8eb427aae853b99f290372c9d0294d367ac6ead",
+      "scene_path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\07\\2026-10-25-lesson07-snap-demo-v001\\demo-files\\u07_cantilever_snap_v001.blend",
+      "scene_sha256": "5fec09b934f2935839d615376beaf598962d47f1b7ac2504f2666c7880a26305",
+      "scene_bytes": 106700,
+      "reopened": true,
+      "final_objects": {
+        "Body": {
+          "object_name": "Body",
+          "type": "MESH",
+          "hidden": false,
+          "modifier_count": 0,
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "Lid": {
+          "object_name": "Lid",
+          "type": "MESH",
+          "hidden": false,
+          "modifier_count": 0,
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "SnapTool": {
+          "object_name": "SnapTool",
+          "type": "MESH",
+          "hidden": true,
+          "modifier_count": 0,
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "FlangeTool": {
+          "object_name": "FlangeTool",
+          "type": "MESH",
+          "hidden": true,
+          "modifier_count": 0,
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      },
+      "draft_plan_path": "D:\\others\\study\\Blender-Learning\\learning\\plans\\07-02-cantilever-geometry-draft-v001.json",
+      "draft_plan_sha256": "f4f0fab02a47eaade189c3b1c6cb8094753b435fe1a3ab570843af65fb2044be",
+      "draft_record_path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\07\\2026-10-25-lesson07-snap-demo-v001\\geometry-draft-record-v001.json",
+      "draft_record_sha256": "4f201124cbf51dc849c7978ee85f7ff5e58ca4273cdd9b006d3eba6c52521b7a",
+      "geometry_modified": true,
+      "strength_analysis_performed": false,
+      "fit_qualification": false,
+      "exported_stl": false,
+      "slicer_checked": false,
+      "printed": false,
+      "fit_tested": false,
+      "material_grade": null,
+      "epsilon_allow": null,
+      "Q": null,
+      "delta_allow_mm": null,
+      "required_deflection_mm": null,
+      "forces": null,
+      "physical_measurements": null,
+      "fit_results": null,
+      "physical_interference": null,
+      "qualified_strength_N": null,
+      "qualified_clearance_mm": null,
+      "numericComparison": {
+        "dimensionsAbsMm": 0.0001,
+        "purpose": "Floating point reconstruction only; not manufacturing tolerance or strength/fit qualification"
+      }
+    },
+    "runnerStatus": {
+      "status": "completed",
+      "scenario": "lesson07_snap",
+      "outputDir": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\07\\2026-10-25-lesson07-snap-demo-v001",
+      "startedAt": "2026-10-25T07:44:35.527Z",
+      "endedAt": "2026-10-25T07:47:45.160Z",
+      "blenderExitCode": 0,
+      "timeoutSeconds": 600,
+      "workspacesUnchanged": true,
+      "runErrors": [],
+      "workspacesBefore": {
+        ".": {
+          "kind": "directory"
+        },
+        "01": {
+          "kind": "directory"
+        },
+        "02": {
+          "kind": "directory"
+        },
+        "03": {
+          "kind": "directory"
+        },
+        "04": {
+          "kind": "directory"
+        },
+        "05": {
+          "kind": "directory"
+        },
+        "06": {
+          "kind": "directory"
+        },
+        "07": {
+          "kind": "directory"
+        },
+        "08": {
+          "kind": "directory"
+        },
+        "09": {
+          "kind": "directory"
+        },
+        "04/exports": {
+          "kind": "directory"
+        }
+      },
+      "workspacesAfter": {
+        ".": {
+          "kind": "directory"
+        },
+        "01": {
+          "kind": "directory"
+        },
+        "02": {
+          "kind": "directory"
+        },
+        "03": {
+          "kind": "directory"
+        },
+        "04": {
+          "kind": "directory"
+        },
+        "05": {
+          "kind": "directory"
+        },
+        "06": {
+          "kind": "directory"
+        },
+        "07": {
+          "kind": "directory"
+        },
+        "08": {
+          "kind": "directory"
+        },
+        "09": {
+          "kind": "directory"
+        },
+        "04/exports": {
+          "kind": "directory"
+        }
+      },
+      "workspaceChanges": []
+    },
+    "verificationEvidence": {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/verification.json",
+      "sha256": "1d66ca17c632f943c098a9566cbd93af884cd407f2f50bfaa31f15bc51f86c54"
+    },
+    "runnerEvidence": {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/runner-status.json",
+      "sha256": "0658620c8bcfc139b29e01e5613fd14fbe4e85875f4884cc58d63f072777882a"
+    },
+    "numericComparison": {
+      "meshReadbackAbsToleranceMm": 0.0001,
+      "declaredParametersAbsToleranceMm": 1e-06,
+      "volumeRelativeTolerance": 1e-05,
+      "purpose": "僅處理實際網格、斜面／圓角與靜態距離的浮點讀回，不是製造公差、允許撓度或強度／配合合格門檻。"
+    },
+    "completionScope": "07-02 卡扣／配合蓋的實驗幾何建模、Bevel、靜態擺位及另存重開；材料、力學估算、接觸／裝配路徑、STL、切片、列印與試配尚未完成",
+    "geometryEvidence": [
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/source_body_mesh.json",
+        "sha256": "b3101108787bd264bf95af51db1d5c23aff408a95b4c961f77a66bb37ad29370"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/snap_tool_mesh.json",
+        "sha256": "c60a6ed737f426277e0157ad1f7554a3070ba4395aec319693d6a2d9104c6140"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/body_mesh.json",
+        "sha256": "f40578c09793b6418afaf6b3f5508016a7186022f46bf37695f0c9d25e6df86f"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/flange_tool_mesh.json",
+        "sha256": "1e88912ceafbb4c8c6cd1d267fc66043f7b39ce96b2d1499870fb7e79a2a5e05"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/lid_mesh.json",
+        "sha256": "54bcbdce1ca5ab3ee8b1118d6f5135c44ff2519fa2c5821b0ce30ed746c08dd8"
+      }
+    ],
+    "dataEvidence": [
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/geometry-draft-record-v001.json",
+        "sha256": "4f201124cbf51dc849c7978ee85f7ff5e58ca4273cdd9b006d3eba6c52521b7a"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/bevel-operations.json",
+        "sha256": "83af62000140eb52c8b9dd205fd5c8256da080f0c34848a9981466c30191cfe6"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/selected-root-hook-edges.json",
+        "sha256": "de144250d1613acf52b7ec733eab46393c75af1ead31ae6c71ba32e6371b6c32"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/operand-attempts.json",
+        "sha256": "10b1366e05965d938bd3ad7e9771b298475a1d4a26add66000737f8784c1d707"
+      }
+    ],
+    "sourceSnapshotEvidence": {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/source-snapshot/manifest.json",
+      "sha256": "6be39b5500e26c1f2aebe5f7a4d4f8b3a6d283a08d21eac3f93780507c5bb7a7"
+    }
+  }
+}

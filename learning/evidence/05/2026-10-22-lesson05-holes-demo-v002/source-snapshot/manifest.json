@@ -1,0 +1,30 @@
+{
+  "recordedAt": "2026-10-22T07:30:47.936030+00:00",
+  "files": [
+    {
+      "source": "learning/tutor/run_demo.py",
+      "snapshot": "source-snapshot/run_demo.py",
+      "sha256": "8a0afa081716cab276c99fc811f6a2453ac82f45b28d8a0b1c639eef67347058"
+    },
+    {
+      "source": "learning/tutor/blender_demo.py",
+      "snapshot": "source-snapshot/blender_demo.py",
+      "sha256": "96321d8180b1e05a9b77d47551adefbf43ddd04e6add2505eca3b30ceb831a6c"
+    },
+    {
+      "source": "learning/tutor/scenarios/common.py",
+      "snapshot": "source-snapshot/common.py",
+      "sha256": "45044c48522bf5a2dee130382f902a07243e82027addaf6594cbae59b3369c3d"
+    },
+    {
+      "source": "learning/tutor/scenarios/lesson05_holes.py",
+      "snapshot": "source-snapshot/lesson05_holes.py",
+      "sha256": "833af861ae00a6e1ea3aeb66877999a8b33ca4a37c3b89898ed1ebf7705566de"
+    },
+    {
+      "source": "learning/tutor/scenarios/holeplate_checks.py",
+      "snapshot": "source-snapshot/holeplate_checks.py",
+      "sha256": "7a36a5fe96e69dfd021cb626876a47b808f2f32879e76b2dd0c8099dc5e0c31e"
+    }
+  ]
+}

@@ -1,0 +1,2901 @@
+{
+  "schemaVersion": 1,
+  "kind": "redacted_public_derivative",
+  "redacted_public_derivative": true,
+  "preparedOn": "2026-10-26",
+  "originalPath": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002.json",
+  "originalSha256": "a5d80f0127c040dca81cde067f85c518c42f450c5c3c63af23a0cbc1032eba5f",
+  "originalBytes": 138755,
+  "originalAvailableInPublicPackage": false,
+  "redactedKeys": [
+    "/runnerStatus/recentCleanup"
+  ],
+  "redactionPolicy": "Recursively omit Windows Recent inventory keys recentCleanup, beforeLinks and afterLinks. Original stays unchanged locally. This derivative is not the original execution record.",
+  "content": {
+    "id": "2026-10-25-lesson06-dovetail-demo-v002",
+    "actor": "tutor",
+    "authorization": "使用者要求接續獨立 Blender 工程教學的逐步實拍、讀值與版本紀錄。本次從第四單元原盒另做燕尾槽與滑蓋幾何分支；水平總差 0.4 mm／每側 0.2 mm 為助教選用的幾何試驗值，不是實體合格間隙。",
+    "application": "Blender 5.2.1 LTS",
+    "buildHash": "9e2066aef7ef",
+    "captureMethod": "Blender bpy.ops.screen.screenshot；獨立實例 --factory-startup --enable-event-simulate，滑鼠／鍵盤以 Window.event_simulate 模擬；檔案瀏覽器的資料夾與檔名欄位由程式寫入",
+    "script": "learning/tutor/scenarios/lesson06_dovetail.py",
+    "pixelEdits": false,
+    "highlightsDrawnBy": "教學頁 CSS 疊框（原圖未修改）",
+    "learnerWorkspaceWrites": false,
+    "demoFiles": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/demo-files/",
+    "records": [
+      {
+        "seq": 1,
+        "step": "06-02",
+        "slug": "source-open-dialog",
+        "recordedAt": "2026-10-25T06:32:37.123Z",
+        "action": "File > Open，開啟原04通用小盒同 hash 副本，建立獨立滑蓋分支",
+        "observed": "資料夾 D:\\others\\study\\Blender-Learning\\learning\\evidence\\06\\2026-10-25-lesson06-dovetail-demo-v002\\demo-files\\sources\\；檔名 u04_box_v001.blend。",
+        "window": "FILE_BROWSER",
+        "highlights": [],
+        "clicks": [],
+        "file": "06-02-01-source-open-dialog.png",
+        "width": 1060,
+        "height": 600,
+        "sha256": "a7d4e02fbdccfc1490fbde3565114960f21eb2259f46fec3ee6b08927ef9205d",
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-01-source-open-dialog.png"
+      },
+      {
+        "seq": 2,
+        "step": "06-02",
+        "slug": "source-geometry",
+        "recordedAt": "2026-10-25T06:32:44.323Z",
+        "action": "修改前核對原盒，確認這次沒有定位柱或環唇",
+        "observed": "原盒60 × 40 × 30、內腔56 × 36 × 28、壁底2 mm，改前重驗。06-01 的定位柱與環唇會阻擋滑動，因此本次另建滑蓋分支，不覆寫前版。",
+        "window": "main",
+        "highlights": [],
+        "clicks": [],
+        "file": "06-02-02-source-geometry.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "269975dc4137eabae1d2685ddd01dd787ed724aaaf8e63af50b4cae8ba2a4d3c",
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-02-source-geometry.png"
+      },
+      {
+        "seq": 3,
+        "step": "06-02",
+        "slug": "guide-blocks",
+        "recordedAt": "2026-10-25T06:33:14.874Z",
+        "action": "新增60 × 6 × 5方塊，中心Y17／Z12.5；Edit Mode Shift+D Y−34mm，做對稱導軌加厚工具",
+        "observed": "GuideTool Dimensions (60 mm, 40 mm, 5 mm)、Location (0 mm, 17 mm, 12.5 mm)、Scale (1, 1, 1)。Item Dimensions 是成對工具總外框，Location 為第一條建構時的物件原點。單條名義60 × 6 × 5 mm；成對Y外框40 mm。兩條實際中心Y±17、截面、端面與封閉工具網格均已由world mesh核對。",
+        "window": "main",
+        "highlights": [],
+        "clicks": [],
+        "file": "06-02-03-guide-blocks.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "0a2fe628ad11e6b0ebd89a88a399dc7563eb2ed2cc102e4ed85ee0673dc5d3c0",
+        "note": "導軌向盒內增加4 mm；局部盒口會縮小，不宣稱原內腔全高仍36 mm寬。",
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-03-guide-blocks.png"
+      },
+      {
+        "seq": 4,
+        "step": "06-02",
+        "slug": "guide-union",
+        "recordedAt": "2026-10-25T06:33:22.474Z",
+        "action": "選 Body，新增 Boolean UNION，Object 搜尋指定 GuideTool",
+        "observed": "Body：UNION／EXACT，Object GuideTool；這是 Apply 前的真實預覽。",
+        "window": "main",
+        "highlights": [],
+        "clicks": [],
+        "file": "06-02-04-guide-union.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "b1bcc1c5a15a82effaa45275052a670b6d095e8e50abf2b29ea6350257438965",
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-04-guide-union.png"
+      },
+      {
+        "seq": 5,
+        "step": "06-02",
+        "slug": "guides-applied",
+        "recordedAt": "2026-10-25T06:33:25.174Z",
+        "action": "Apply Union，核對實際加厚導軌與原盒連成一體",
+        "observed": "Body Dimensions (60 mm, 40 mm, 30 mm)、Location (0 mm, 0 mm, 0 mm)、Scale (1, 1, 1)。加厚區位於Y±14～20、Z10～15，原外形未增加。",
+        "window": "main",
+        "highlights": [],
+        "clicks": [],
+        "file": "06-02-05-guides-applied.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "026367974362bd7bca5bc6c69f4273ef5dfa0ae8e632a9c66d39085e5d567e79",
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-05-guides-applied.png"
+      },
+      {
+        "seq": 6,
+        "step": "06-02",
+        "slug": "groove-tools",
+        "recordedAt": "2026-10-25T06:33:50.825Z",
+        "action": "建62 × 3.6 × 4切割體；頂面 S Y 0.555555556 使頂寬2，再複製Y−34mm",
+        "observed": "GrooveTool Dimensions (62 mm, 37.6 mm, 4 mm)、Location (0 mm, 17 mm, 13.8 mm)、Scale (1, 1, 1)。Item Dimensions 是成對工具總外框，Location 為第一條建構時的物件原點。單條名義長62／底寬3.6／頂寬2／高4 mm；成對Y外框37.6 mm。兩條實際中心Y±17、截面、端面與封閉工具網格均已由world mesh核對。",
+        "window": "main",
+        "highlights": [],
+        "clicks": [],
+        "file": "06-02-06-groove-tools.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "1116896ca9d646839c8dbee7279f08d42e353ffcbdb17e4d26922cee6434c3a8",
+        "note": "切割體Z11.8～15.8；X±31超出原盒兩端，避免封閉入口。斜率由上下實際輪廓讀回。",
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-06-groove-tools.png"
+      },
+      {
+        "seq": 7,
+        "step": "06-02",
+        "slug": "groove-difference",
+        "recordedAt": "2026-10-25T06:33:58.725Z",
+        "action": "選 Body，新增 Boolean DIFFERENCE，Object 搜尋指定 GrooveTool",
+        "observed": "Body：DIFFERENCE／EXACT，Object GrooveTool；這是 Apply 前的真實預覽。",
+        "window": "main",
+        "highlights": [],
+        "clicks": [],
+        "file": "06-02-07-groove-difference.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "e832535badf710d8120deacd39047c3466c39e1c96327add42c0f7a88aeb8d69",
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-07-groove-difference.png"
+      },
+      {
+        "seq": 8,
+        "step": "06-02",
+        "slug": "body-grooves",
+        "recordedAt": "2026-10-25T06:34:04.625Z",
+        "action": "Apply Difference，核對兩端開口、斜槽、剩餘壁厚與原盒外形",
+        "observed": "Body 外形仍 60 × 40 × 30 mm；兩側加厚導軌 Z10～15，盒口中央局部縮至 56 × 28。燕尾槽在 X 兩端貫通，槽底 Z11.8、寬3.6，rim Z15 的槽口寬2.32 mm；單殼、Non Manifold 0。",
+        "window": "main",
+        "highlights": [],
+        "clicks": [],
+        "file": "06-02-08-body-grooves.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "a7f9a013a829ccfb55037488e188dc7fca264a855fde2ed258f15f8efbc48b37",
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-08-body-grooves.png"
+      },
+      {
+        "seq": 9,
+        "step": "06-02",
+        "slug": "body-end-profile",
+        "recordedAt": "2026-10-25T06:34:08.325Z",
+        "action": "沿X看盒體實際端面，查看兩個貫通燕尾槽入口",
+        "observed": "Body 外形仍 60 × 40 × 30 mm；兩側加厚導軌 Z10～15，盒口中央局部縮至 56 × 28。燕尾槽在 X 兩端貫通，槽底 Z11.8、寬3.6，rim Z15 的槽口寬2.32 mm；單殼、Non Manifold 0。",
+        "window": "main",
+        "highlights": [],
+        "clicks": [],
+        "file": "06-02-09-body-end-profile.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "75f83513063b274cbc10fbea3761154118f574a7c75823ef87089e47863b2afd",
+        "note": "這是Right Orthographic的真實端面視圖，未切片或重畫剖面；槽口到槽底的深度3.2 mm。",
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-09-body-end-profile.png"
+      },
+      {
+        "seq": 10,
+        "step": "06-02",
+        "slug": "body-non-manifold",
+        "recordedAt": "2026-10-25T06:34:11.525Z",
+        "action": "選 Body，Tab > 邊選取 > Select None > Select Non Manifold",
+        "observed": "Body：Select Non Manifold 選到0條邊；實際網格非流形邊0。",
+        "window": "main",
+        "highlights": [],
+        "clicks": [],
+        "file": "06-02-10-body-non-manifold.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "72bc86d2fcd77b1d03ab734e7d2c143566174d7d6557641852b85a9cfaea152e",
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-10-body-non-manifold.png"
+      },
+      {
+        "seq": 11,
+        "step": "06-02",
+        "slug": "lid-plate",
+        "recordedAt": "2026-10-25T06:34:30.376Z",
+        "action": "新增滑蓋板60 × 40 × 2 mm，中心Z16.2，板底留在盒頂上方0.2 mm",
+        "observed": "SlidingLid Dimensions (60 mm, 40 mm, 2 mm)、Location (0 mm, 0 mm, 16.2 mm)、Scale (1, 1, 1)。",
+        "window": "main",
+        "highlights": [],
+        "clicks": [],
+        "file": "06-02-11-lid-plate.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "22cd7d1b9dc4f3cd0ef8b28b5fcab08047085787754d310dc14b2fa7970c61a9",
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-11-lid-plate.png"
+      },
+      {
+        "seq": 12,
+        "step": "06-02",
+        "slug": "male-ribs",
+        "recordedAt": "2026-10-25T06:34:56.033Z",
+        "action": "燕尾榫工具底寬3.12／頂寬1.76、高3.4；中心Z13.7、Y±17，讀回兩條同斜率榫",
+        "observed": "MaleTool Dimensions (60 mm, 37.12 mm, 3.4 mm)、Location (0 mm, 17 mm, 13.7 mm)、Scale (1, 1, 1)。Item Dimensions 是成對工具總外框，Location 為第一條建構時的物件原點。單條名義長60／底寬3.12／頂寬1.76／高3.4 mm；成對Y外框37.12 mm。兩條實際中心Y±17、截面、端面與封閉工具網格均已由world mesh核對。",
+        "window": "main",
+        "highlights": [],
+        "clicks": [],
+        "file": "06-02-12-male-ribs.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "68f9b3508492b2a9e82840c80e1fb5565f2118db11f25abf5d30e69465629401",
+        "note": "工具頂Z15.4與板交入0.2；Union後埋入板內的頂面消失，成品可見榫到板底Z15.2。0.4是同高度水平總差試驗值。",
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-12-male-ribs.png"
+      },
+      {
+        "seq": 13,
+        "step": "06-02",
+        "slug": "lid-union",
+        "recordedAt": "2026-10-25T06:35:05.733Z",
+        "action": "選 SlidingLid，新增 Boolean UNION，Object 搜尋指定 MaleTool",
+        "observed": "SlidingLid：UNION／EXACT，Object MaleTool；這是 Apply 前的真實預覽。",
+        "window": "main",
+        "highlights": [],
+        "clicks": [],
+        "file": "06-02-13-lid-union.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "b3f4c8bec99c35b4609c64922bcdcc4f7f525f8fd454bdf4542ece1fac1768a5",
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-13-lid-union.png"
+      },
+      {
+        "seq": 14,
+        "step": "06-02",
+        "slug": "lid-underside",
+        "recordedAt": "2026-10-25T06:35:11.650Z",
+        "action": "Apply Union，從底部斜視核對一體燕尾榫與滑蓋板",
+        "observed": "SlidingLid 外形 60 × 40 × 5.2 mm；蓋板厚2、Z15.2～17.2。兩條燕尾榫底 Z12、寬3.12，與板底相交處 Z15.2、寬1.84；已 Union 一體閉合，Non Manifold 0。",
+        "window": "main",
+        "highlights": [],
+        "clicks": [],
+        "file": "06-02-14-lid-underside.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "a524c1369371e2c3134cd56ba7e3ff1caa66c04904c243b7924c0c4d3f304b4b",
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-14-lid-underside.png"
+      },
+      {
+        "seq": 15,
+        "step": "06-02",
+        "slug": "lid-end-profile",
+        "recordedAt": "2026-10-25T06:35:15.350Z",
+        "action": "沿X看滑蓋實際端面，核對下寬上窄的兩條燕尾榫",
+        "observed": "SlidingLid 外形 60 × 40 × 5.2 mm；蓋板厚2、Z15.2～17.2。兩條燕尾榫底 Z12、寬3.12，與板底相交處 Z15.2、寬1.84；已 Union 一體閉合，Non Manifold 0。",
+        "window": "main",
+        "highlights": [],
+        "clicks": [],
+        "file": "06-02-15-lid-end-profile.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "7d6f39f90b987a1b6d2dc1444ce9d5d7bee1c13fd286aeba973f00e148867d63",
+        "note": "真實Right Orthographic視圖；榫外露深3.2 mm，建構工具交入板內的0.2 mm已在Union後消失。",
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-15-lid-end-profile.png"
+      },
+      {
+        "seq": 16,
+        "step": "06-02",
+        "slug": "lid-non-manifold",
+        "recordedAt": "2026-10-25T06:35:18.550Z",
+        "action": "選 SlidingLid，Tab > 邊選取 > Select None > Select Non Manifold",
+        "observed": "SlidingLid：Select Non Manifold 選到0條邊；實際網格非流形邊0。",
+        "window": "main",
+        "highlights": [],
+        "clicks": [],
+        "file": "06-02-16-lid-non-manifold.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "357690116eb54d80516c45782d0a0c77466cf13809529fe053572b614bc7c3e3",
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-16-lid-non-manifold.png"
+      },
+      {
+        "seq": 17,
+        "step": "06-02",
+        "slug": "assembly-geometry",
+        "recordedAt": "2026-10-25T06:35:27.050Z",
+        "action": "回名義組裝位置，從實際截面量水平差、斜面法向gap與垂直餘量",
+        "observed": "水平截面總差0.4／每側0.2 mm為助教試驗；斜面法向間距約0.196116 mm，槽底與榫底、盒頂與板底各0.2 mm。槽和榫斜面同斜率0.2（距垂直約11.3099°）；未列印試配。",
+        "window": "main",
+        "highlights": [],
+        "clicks": [],
+        "file": "06-02-17-assembly-geometry.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "e149c3589f991976fb26335cf0c638446d22f5cc9ee202eb9636ed5fc83218cd",
+        "note": "兩端貫通，這版沒有端擋、止退或鎖定設計；不能當成已驗證列印結構。",
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-17-assembly-geometry.png"
+      },
+      {
+        "seq": 18,
+        "step": "06-02",
+        "slug": "slide-x30",
+        "recordedAt": "2026-10-25T06:35:32.500Z",
+        "action": "沿X移動滑蓋至 +30 mm，拍攝入口與導軌相對位置",
+        "observed": "SlidingLid 實際Location X=30 mm；已保存此位置world mesh。這是數位滑動檢視，非實體試配。",
+        "window": "main",
+        "highlights": [],
+        "clicks": [],
+        "file": "06-02-18-slide-x30.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "bdb153cb11647b779e878b08a0439c8053e6b5ac50e9a53ad9ee98e0951bd028",
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-18-slide-x30.png"
+      },
+      {
+        "seq": 19,
+        "step": "06-02",
+        "slug": "slide-x62",
+        "recordedAt": "2026-10-25T06:35:37.950Z",
+        "action": "沿X移動滑蓋至 +62 mm，拍攝入口與導軌相對位置",
+        "observed": "SlidingLid 實際Location X=62 mm；已保存此位置world mesh。這是數位滑動檢視，非實體試配。",
+        "window": "main",
+        "highlights": [],
+        "clicks": [],
+        "file": "06-02-19-slide-x62.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "769aee9d85db7ed5078039ce857648149a5f362c9387f5c35d3453587093a934",
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-19-slide-x62.png"
+      },
+      {
+        "seq": 20,
+        "step": "06-02",
+        "slug": "slide-return",
+        "recordedAt": "2026-10-25T06:35:44.401Z",
+        "action": "回X0，結合實際截面、兩端入口與移動網格核對滑動路徑",
+        "observed": "滑蓋已回X0；+30／+62的實際網格是純X平移。兩端入口與沿X均勻截面共同驗證無碰撞平移路徑；不是實體滑動合格證明。",
+        "window": "main",
+        "highlights": [],
+        "clicks": [],
+        "file": "06-02-20-slide-return.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "269741e536fef83555f23de0623cd2eee6db6962f3edebb45ef58ae197119f8d",
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-20-slide-return.png"
+      },
+      {
+        "seq": 21,
+        "step": "06-02",
+        "slug": "save-dialog",
+        "recordedAt": "2026-10-25T06:35:49.301Z",
+        "action": "File > Save As，另存燕尾滑蓋分支 u06_dovetail_slide_v001.blend",
+        "observed": "資料夾 D:\\others\\study\\Blender-Learning\\learning\\evidence\\06\\2026-10-25-lesson06-dovetail-demo-v002\\demo-files\\；檔名 u06_dovetail_slide_v001.blend。",
+        "window": "FILE_BROWSER",
+        "highlights": [],
+        "clicks": [],
+        "file": "06-02-21-save-dialog.png",
+        "width": 1060,
+        "height": 600,
+        "sha256": "a3ec08435b7d46c6d85958ee12144b230e65dda461dbbce5072cb34ae41bb896",
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-21-save-dialog.png"
+      },
+      {
+        "seq": 22,
+        "step": "06-02",
+        "slug": "saved",
+        "recordedAt": "2026-10-25T06:35:52.601Z",
+        "action": "按 Save As，讀回新檔案版本與hash",
+        "observed": "已另存新場景v001，106782 bytes；SHA-256 b7da592c4b080163566cb6e1a90390832eae6db8421fbf7be23bfb9071ae0c3e。",
+        "window": "main",
+        "highlights": [],
+        "clicks": [],
+        "file": "06-02-22-saved.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "73e7775b088aab229f869d5ffc40e41648e8f24355ea5b74402d7bf9fae8fd81",
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-22-saved.png"
+      },
+      {
+        "seq": 23,
+        "step": "06-02",
+        "slug": "open-saved",
+        "recordedAt": "2026-10-25T06:35:57.501Z",
+        "action": "File > Open，重新開啟本次燕尾滑蓋 v001",
+        "observed": "資料夾 D:\\others\\study\\Blender-Learning\\learning\\evidence\\06\\2026-10-25-lesson06-dovetail-demo-v002\\demo-files\\；檔名 u06_dovetail_slide_v001.blend。",
+        "window": "FILE_BROWSER",
+        "highlights": [],
+        "clicks": [],
+        "file": "06-02-23-open-saved.png",
+        "width": 1060,
+        "height": 600,
+        "sha256": "1103c886a437094da8f53ef3209839cd594de1b63e6f0b26fc767411d6b4c598",
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-23-open-saved.png"
+      },
+      {
+        "seq": 24,
+        "step": "06-02",
+        "slug": "reopened-verified",
+        "recordedAt": "2026-10-25T06:36:00.901Z",
+        "action": "按 Open，重讀最終網格、版本及行程證據，保存 verification",
+        "observed": "重新開啟後hash、Body／SlidingLid及三工具、X0組裝與行程證據一致。未匯出STL、切片、列印或實體試配；Overhang介面分析待後續，合格值留空。",
+        "window": "main",
+        "highlights": [],
+        "clicks": [],
+        "file": "06-02-24-reopened-verified.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "fa52e7159268dc72d0a481026c2cb6f2831558e3356e2cb2ef1d71524f22a9aa",
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-24-reopened-verified.png"
+      }
+    ],
+    "verification": {
+      "passed": true,
+      "kind": "dovetail_slide_geometry_demo",
+      "source_scene_path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\04\\2026-10-22-lesson04-demo-v001\\demo-files\\u04_box_v001.blend",
+      "source_scene_sha256": "b918ee87d26e289f4c8a2f6633beceb854c7d0511e3eddcc969a0696afcd2530",
+      "opened_scene_path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\06\\2026-10-25-lesson06-dovetail-demo-v002\\demo-files\\sources\\u04_box_v001.blend",
+      "opened_scene_sha256": "b918ee87d26e289f4c8a2f6633beceb854c7d0511e3eddcc969a0696afcd2530",
+      "source_unchanged": true,
+      "opened_copy_unchanged": true,
+      "source_body": {
+        "bounds_mm": {
+          "min": [
+            -30.0,
+            -20.0,
+            -15.0
+          ],
+          "max": [
+            30.0,
+            20.0,
+            15.0
+          ]
+        },
+        "dimensions_mm": [
+          60.0,
+          40.0,
+          30.0
+        ],
+        "volume_mm3": 15552.0,
+        "non_manifold_edges": 0,
+        "non_manifold_vertex_links": 0,
+        "inconsistent_winding_edges": 0,
+        "connected_shells": 1,
+        "euler_characteristic": 2,
+        "genus": 0,
+        "mesh_counts": {
+          "vertices": 16,
+          "edges": 42,
+          "faces": 28,
+          "triangles": 28,
+          "representation": "evaluated loop-triangulated mesh"
+        },
+        "passed": true,
+        "printed": false,
+        "fit_tested": false,
+        "physical_interference": null,
+        "qualified_clearance_mm": null,
+        "numericComparison": {
+          "purpose": "Floating point reconstruction only; not manufacturing tolerance or fit acceptance",
+          "dimensionsAbsMm": 0.0001,
+          "volumeRelative": 1e-05
+        },
+        "kind": "box_body",
+        "outer_dimensions_mm": [
+          60.0,
+          40.0,
+          30.0
+        ],
+        "cavity_bounds_mm": {
+          "min": [
+            -28.0,
+            -18.0,
+            -13.0
+          ],
+          "max": [
+            28.0,
+            18.0,
+            15.0
+          ]
+        },
+        "cavity_dimensions_mm": [
+          56.0,
+          36.0,
+          28.0
+        ],
+        "wall_thicknesses_mm": [
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "floor_thickness_mm": 2.0,
+        "rim_z_mm": 15.0,
+        "actual_face_planes": {
+          "X": [
+            {
+              "coordinate_mm": -30.0,
+              "area_mm2": 1200.0,
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  -20.0,
+                  -15.0
+                ],
+                "max": [
+                  -30.0,
+                  20.0,
+                  15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": -28.0,
+              "area_mm2": 1008.0,
+              "bounds_mm": {
+                "min": [
+                  -28.0,
+                  -18.0,
+                  -13.0
+                ],
+                "max": [
+                  -28.0,
+                  18.0,
+                  15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 28.0,
+              "area_mm2": 1008.0,
+              "bounds_mm": {
+                "min": [
+                  28.0,
+                  -18.0,
+                  -13.0
+                ],
+                "max": [
+                  28.0,
+                  18.0,
+                  15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 30.0,
+              "area_mm2": 1200.0,
+              "bounds_mm": {
+                "min": [
+                  30.0,
+                  -20.0,
+                  -15.0
+                ],
+                "max": [
+                  30.0,
+                  20.0,
+                  15.0
+                ]
+              }
+            }
+          ],
+          "Y": [
+            {
+              "coordinate_mm": -20.0,
+              "area_mm2": 1800.0,
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  -20.0,
+                  -15.0
+                ],
+                "max": [
+                  30.0,
+                  -20.0,
+                  15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": -18.0,
+              "area_mm2": 1568.0,
+              "bounds_mm": {
+                "min": [
+                  -28.0,
+                  -18.0,
+                  -13.0
+                ],
+                "max": [
+                  28.0,
+                  -18.0,
+                  15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 18.0,
+              "area_mm2": 1568.0,
+              "bounds_mm": {
+                "min": [
+                  -28.0,
+                  18.0,
+                  -13.0
+                ],
+                "max": [
+                  28.0,
+                  18.0,
+                  15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 20.0,
+              "area_mm2": 1800.0,
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  20.0,
+                  -15.0
+                ],
+                "max": [
+                  30.0,
+                  20.0,
+                  15.0
+                ]
+              }
+            }
+          ],
+          "Z": [
+            {
+              "coordinate_mm": -15.0,
+              "area_mm2": 2400.0,
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  -20.0,
+                  -15.0
+                ],
+                "max": [
+                  30.0,
+                  20.0,
+                  -15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": -13.0,
+              "area_mm2": 2016.0,
+              "bounds_mm": {
+                "min": [
+                  -28.0,
+                  -18.0,
+                  -13.0
+                ],
+                "max": [
+                  28.0,
+                  18.0,
+                  -13.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 15.0,
+              "area_mm2": 384.0,
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  -20.0,
+                  15.0
+                ],
+                "max": [
+                  30.0,
+                  20.0,
+                  15.0
+                ]
+              }
+            }
+          ]
+        },
+        "vertical_rays": [
+          {
+            "label": "cavity centre",
+            "xy_mm": [
+              0,
+              0
+            ],
+            "z_hits_mm": [
+              -15.0,
+              -13.0
+            ]
+          },
+          {
+            "label": "negative X rim",
+            "xy_mm": [
+              -29,
+              0
+            ],
+            "z_hits_mm": [
+              -15.0,
+              15.0
+            ]
+          },
+          {
+            "label": "positive X rim",
+            "xy_mm": [
+              29,
+              0
+            ],
+            "z_hits_mm": [
+              -15.0,
+              15.0
+            ]
+          },
+          {
+            "label": "negative Y rim",
+            "xy_mm": [
+              0,
+              -19
+            ],
+            "z_hits_mm": [
+              -15.0,
+              15.0
+            ]
+          },
+          {
+            "label": "positive Y rim",
+            "xy_mm": [
+              0,
+              19
+            ],
+            "z_hits_mm": [
+              -15.0,
+              15.0
+            ]
+          },
+          {
+            "label": "near cavity corner",
+            "xy_mm": [
+              27,
+              17
+            ],
+            "z_hits_mm": [
+              -15.0,
+              -13.0
+            ]
+          }
+        ],
+        "measurement_scope": "actual source body mesh; no physical fit conclusion",
+        "object_name": "Cube",
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "unit_scale": 0.0010000000474974513,
+        "length_unit": "MILLIMETERS",
+        "measurement_source": "evaluated final mesh loop triangles in world-space millimetres"
+      },
+      "scene_path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\06\\2026-10-25-lesson06-dovetail-demo-v002\\demo-files\\u06_dovetail_slide_v001.blend",
+      "scene_sha256": "b7da592c4b080163566cb6e1a90390832eae6db8421fbf7be23bfb9071ae0c3e",
+      "scene_bytes": 106782,
+      "reopened": true,
+      "construction_guides": {
+        "bounds_mm": {
+          "min": [
+            -30.0,
+            -20.0,
+            10.0
+          ],
+          "max": [
+            30.0,
+            20.0,
+            15.0
+          ]
+        },
+        "dimensions_mm": [
+          60.0,
+          40.0,
+          5.0
+        ],
+        "volume_mm3": 3600.0,
+        "non_manifold_edges": 0,
+        "non_manifold_vertex_links": 0,
+        "inconsistent_winding_edges": 0,
+        "connected_shells": 2,
+        "euler_characteristic": 4,
+        "genus": 0,
+        "mesh_counts": {
+          "vertices": 16,
+          "edges": 36,
+          "faces": 24,
+          "triangles": 24,
+          "representation": "paired world-space triangulated tools"
+        },
+        "passed": true,
+        "printed": false,
+        "fit_tested": false,
+        "physical_measurements": null,
+        "fit_results": null,
+        "physical_interference": null,
+        "qualified_clearance_mm": null,
+        "trial_status": "experimental_geometry_only",
+        "numericComparison": {
+          "purpose": "Floating point reconstruction only; not manufacturing tolerance or fit acceptance",
+          "dimensionsAbsMm": 0.0001,
+          "volumeRelative": 1e-05
+        },
+        "kind": "paired_dovetail_tool",
+        "geometry_signature": {
+          "algorithm": "SHA-256 of sorted oriented triangle coordinates on numeric comparison grid",
+          "coordinate_grid_mm": 0.0001,
+          "sha256": "e50739b764e690bf8a6b38c13113f1b7123fc9b5db08ff29a6af24983fcc47b2"
+        },
+        "exported_stl": false,
+        "slicer_checked": false,
+        "overhang_analysis_performed": false,
+        "tool_kind": "guide",
+        "profiles": [],
+        "actual_axis_planes": {
+          "X": [
+            {
+              "coordinate_mm": -30.0,
+              "area_mm2": 60.0,
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  -20.0,
+                  10.0
+                ],
+                "max": [
+                  -30.0,
+                  20.0,
+                  15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 30.0,
+              "area_mm2": 60.0,
+              "bounds_mm": {
+                "min": [
+                  30.0,
+                  -20.0,
+                  10.0
+                ],
+                "max": [
+                  30.0,
+                  20.0,
+                  15.0
+                ]
+              }
+            }
+          ],
+          "Y": [
+            {
+              "coordinate_mm": -20.0,
+              "area_mm2": 300.0,
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  -20.0,
+                  10.0
+                ],
+                "max": [
+                  30.0,
+                  -20.0,
+                  15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": -14.0,
+              "area_mm2": 300.0,
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  -14.0,
+                  10.0
+                ],
+                "max": [
+                  30.0,
+                  -14.0,
+                  15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 14.0,
+              "area_mm2": 300.0,
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  14.0,
+                  10.0
+                ],
+                "max": [
+                  30.0,
+                  14.0,
+                  15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 20.0,
+              "area_mm2": 300.0,
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  20.0,
+                  10.0
+                ],
+                "max": [
+                  30.0,
+                  20.0,
+                  15.0
+                ]
+              }
+            }
+          ],
+          "Z": [
+            {
+              "coordinate_mm": 10.0,
+              "area_mm2": 720.0,
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  -20.0,
+                  10.0
+                ],
+                "max": [
+                  30.0,
+                  20.0,
+                  10.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 15.0,
+              "area_mm2": 720.0,
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  -20.0,
+                  15.0
+                ],
+                "max": [
+                  30.0,
+                  20.0,
+                  15.0
+                ]
+              }
+            }
+          ]
+        },
+        "measurement_scope": "full paired construction tools; clipped final geometry is measured separately"
+      },
+      "construction_grooves": {
+        "bounds_mm": {
+          "min": [
+            -31.0,
+            -18.799999237060547,
+            11.800000190734863
+          ],
+          "max": [
+            31.0,
+            18.799999237060547,
+            15.800000190734863
+          ]
+        },
+        "dimensions_mm": [
+          62.0,
+          37.599998474121094,
+          4.0
+        ],
+        "volume_mm3": 1388.7997398376465,
+        "non_manifold_edges": 0,
+        "non_manifold_vertex_links": 0,
+        "inconsistent_winding_edges": 0,
+        "connected_shells": 2,
+        "euler_characteristic": 4,
+        "genus": 0,
+        "mesh_counts": {
+          "vertices": 16,
+          "edges": 36,
+          "faces": 24,
+          "triangles": 24,
+          "representation": "paired world-space triangulated tools"
+        },
+        "passed": true,
+        "printed": false,
+        "fit_tested": false,
+        "physical_measurements": null,
+        "fit_results": null,
+        "physical_interference": null,
+        "qualified_clearance_mm": null,
+        "trial_status": "experimental_geometry_only",
+        "numericComparison": {
+          "purpose": "Floating point reconstruction only; not manufacturing tolerance or fit acceptance",
+          "dimensionsAbsMm": 0.0001,
+          "volumeRelative": 1e-05
+        },
+        "kind": "paired_dovetail_tool",
+        "geometry_signature": {
+          "algorithm": "SHA-256 of sorted oriented triangle coordinates on numeric comparison grid",
+          "coordinate_grid_mm": 0.0001,
+          "sha256": "b633e8535a7aad35440e333cda95897def00b3688497dc9e7477490e5a69931a"
+        },
+        "exported_stl": false,
+        "slicer_checked": false,
+        "overhang_analysis_performed": false,
+        "tool_kind": "groove",
+        "profiles": [
+          {
+            "centre_y_mm": -17.0,
+            "x_mm": [
+              -31,
+              31
+            ],
+            "profile": {
+              "z_mm": [
+                11.800000190734863,
+                15.800000190734863
+              ],
+              "widths_mm": [
+                3.5999984741210938,
+                2.0
+              ],
+              "side_slope_abs": 0.1999998092651367,
+              "side_planes": [
+                {
+                  "side": "negative_y",
+                  "slope_z": -0.1999998092651367,
+                  "offset_mm": -21.159997024536096,
+                  "equation": "y + slope_z*z = offset_mm",
+                  "bounds_mm": {
+                    "min": [
+                      -31.0,
+                      -18.799999237060547,
+                      11.800000190734863
+                    ],
+                    "max": [
+                      31.0,
+                      -18.0,
+                      15.800000190734863
+                    ]
+                  },
+                  "area_mm2": 252.91135859747268,
+                  "triangle_count": 2
+                },
+                {
+                  "side": "positive_y",
+                  "slope_z": 0.1999998092651367,
+                  "offset_mm": -12.840002975463904,
+                  "equation": "y + slope_z*z = offset_mm",
+                  "bounds_mm": {
+                    "min": [
+                      -31.0,
+                      -16.0,
+                      11.800000190734863
+                    ],
+                    "max": [
+                      31.0,
+                      -15.200000762939453,
+                      15.800000190734863
+                    ]
+                  },
+                  "area_mm2": 252.91135859747268,
+                  "triangle_count": 2
+                }
+              ]
+            }
+          },
+          {
+            "centre_y_mm": 17.0,
+            "x_mm": [
+              -31,
+              31
+            ],
+            "profile": {
+              "z_mm": [
+                11.800000190734863,
+                15.800000190734863
+              ],
+              "widths_mm": [
+                3.59999942779541,
+                2.0
+              ],
+              "side_slope_abs": 0.19999992847442624,
+              "side_planes": [
+                {
+                  "side": "negative_y",
+                  "slope_z": -0.2000000476837158,
+                  "offset_mm": 12.839999208450308,
+                  "equation": "y + slope_z*z = offset_mm",
+                  "bounds_mm": {
+                    "min": [
+                      -31.0,
+                      15.199999809265137,
+                      11.800000190734863
+                    ],
+                    "max": [
+                      31.0,
+                      16.0,
+                      15.800000190734863
+                    ]
+                  },
+                  "area_mm2": 252.9113701933858,
+                  "triangle_count": 2
+                },
+                {
+                  "side": "positive_y",
+                  "slope_z": 0.1999998092651367,
+                  "offset_mm": 21.159997024536096,
+                  "equation": "y + slope_z*z = offset_mm",
+                  "bounds_mm": {
+                    "min": [
+                      -31.0,
+                      18.0,
+                      11.800000190734863
+                    ],
+                    "max": [
+                      31.0,
+                      18.799999237060547,
+                      15.800000190734863
+                    ]
+                  },
+                  "area_mm2": 252.91135859747268,
+                  "triangle_count": 2
+                }
+              ]
+            }
+          }
+        ],
+        "actual_axis_planes": {
+          "X": [
+            {
+              "coordinate_mm": -31.0,
+              "area_mm2": 22.399995803833008,
+              "bounds_mm": {
+                "min": [
+                  -31.0,
+                  -18.799999237060547,
+                  11.800000190734863
+                ],
+                "max": [
+                  -31.0,
+                  18.799999237060547,
+                  15.800000190734863
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 31.0,
+              "area_mm2": 22.399995803833008,
+              "bounds_mm": {
+                "min": [
+                  31.0,
+                  -18.799999237060547,
+                  11.800000190734863
+                ],
+                "max": [
+                  31.0,
+                  18.799999237060547,
+                  15.800000190734863
+                ]
+              }
+            }
+          ],
+          "Y": [],
+          "Z": [
+            {
+              "coordinate_mm": 11.800000190734863,
+              "area_mm2": 446.39986991882324,
+              "bounds_mm": {
+                "min": [
+                  -31.0,
+                  -18.799999237060547,
+                  11.800000190734863
+                ],
+                "max": [
+                  31.0,
+                  18.799999237060547,
+                  11.800000190734863
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 15.800000190734863,
+              "area_mm2": 248.0,
+              "bounds_mm": {
+                "min": [
+                  -31.0,
+                  -18.0,
+                  15.800000190734863
+                ],
+                "max": [
+                  31.0,
+                  18.0,
+                  15.800000190734863
+                ]
+              }
+            }
+          ]
+        },
+        "measurement_scope": "full paired construction tools; clipped final geometry is measured separately"
+      },
+      "construction_males": {
+        "bounds_mm": {
+          "min": [
+            -30.0,
+            -18.560001373291016,
+            12.0
+          ],
+          "max": [
+            30.0,
+            18.559999465942383,
+            15.399999618530273
+          ]
+        },
+        "dimensions_mm": [
+          60.0,
+          37.1200008392334,
+          3.3999996185302734
+        ],
+        "volume_mm3": 995.5202034759168,
+        "non_manifold_edges": 0,
+        "non_manifold_vertex_links": 0,
+        "inconsistent_winding_edges": 0,
+        "connected_shells": 2,
+        "euler_characteristic": 4,
+        "genus": 0,
+        "mesh_counts": {
+          "vertices": 16,
+          "edges": 36,
+          "faces": 24,
+          "triangles": 24,
+          "representation": "paired world-space triangulated tools"
+        },
+        "passed": true,
+        "printed": false,
+        "fit_tested": false,
+        "physical_measurements": null,
+        "fit_results": null,
+        "physical_interference": null,
+        "qualified_clearance_mm": null,
+        "trial_status": "experimental_geometry_only",
+        "numericComparison": {
+          "purpose": "Floating point reconstruction only; not manufacturing tolerance or fit acceptance",
+          "dimensionsAbsMm": 0.0001,
+          "volumeRelative": 1e-05
+        },
+        "kind": "paired_dovetail_tool",
+        "geometry_signature": {
+          "algorithm": "SHA-256 of sorted oriented triangle coordinates on numeric comparison grid",
+          "coordinate_grid_mm": 0.0001,
+          "sha256": "62c051264484c649c4384230013ffe80ea1e6287ea734f65b0ad43207ae5ebb7"
+        },
+        "exported_stl": false,
+        "slicer_checked": false,
+        "overhang_analysis_performed": false,
+        "tool_kind": "male",
+        "profiles": [
+          {
+            "centre_y_mm": -17.0,
+            "x_mm": [
+              -30,
+              30
+            ],
+            "profile": {
+              "z_mm": [
+                12.0,
+                15.399999618530273
+              ],
+              "widths_mm": [
+                3.1200027465820312,
+                1.7600021362304688
+              ],
+              "side_slope_abs": 0.200000112196991,
+              "side_planes": [
+                {
+                  "side": "negative_y",
+                  "slope_z": -0.200000112196991,
+                  "offset_mm": -20.96000271965491,
+                  "equation": "y + slope_z*z = offset_mm",
+                  "bounds_mm": {
+                    "min": [
+                      -30.0,
+                      -18.560001373291016,
+                      12.0
+                    ],
+                    "max": [
+                      30.0,
+                      -17.880001068115234,
+                      15.399999618530273
+                    ]
+                  },
+                  "area_mm2": 208.03997730186998,
+                  "triangle_count": 2
+                },
+                {
+                  "side": "positive_y",
+                  "slope_z": 0.200000112196991,
+                  "offset_mm": -13.039997280345093,
+                  "equation": "y + slope_z*z = offset_mm",
+                  "bounds_mm": {
+                    "min": [
+                      -30.0,
+                      -16.119998931884766,
+                      12.0
+                    ],
+                    "max": [
+                      30.0,
+                      -15.439998626708984,
+                      15.399999618530273
+                    ]
+                  },
+                  "area_mm2": 208.03997730186998,
+                  "triangle_count": 2
+                }
+              ]
+            }
+          },
+          {
+            "centre_y_mm": 17.0,
+            "x_mm": [
+              -30,
+              30
+            ],
+            "profile": {
+              "z_mm": [
+                12.0,
+                15.399999618530273
+              ],
+              "widths_mm": [
+                3.119999885559082,
+                1.7599983215332031
+              ],
+              "side_slope_abs": 0.20000025244322972,
+              "side_planes": [
+                {
+                  "side": "negative_y",
+                  "slope_z": -0.20000039268946845,
+                  "offset_mm": 13.03999486810968,
+                  "equation": "y + slope_z*z = offset_mm",
+                  "bounds_mm": {
+                    "min": [
+                      -30.0,
+                      15.4399995803833,
+                      12.0
+                    ],
+                    "max": [
+                      30.0,
+                      16.1200008392334,
+                      15.399999618530273
+                    ]
+                  },
+                  "area_mm2": 208.03998852373886,
+                  "triangle_count": 2
+                },
+                {
+                  "side": "positive_y",
+                  "slope_z": 0.200000112196991,
+                  "offset_mm": 20.960000812306276,
+                  "equation": "y + slope_z*z = offset_mm",
+                  "bounds_mm": {
+                    "min": [
+                      -30.0,
+                      17.8799991607666,
+                      12.0
+                    ],
+                    "max": [
+                      30.0,
+                      18.559999465942383,
+                      15.399999618530273
+                    ]
+                  },
+                  "area_mm2": 208.03997730186998,
+                  "triangle_count": 2
+                }
+              ]
+            }
+          }
+        ],
+        "actual_axis_planes": {
+          "X": [
+            {
+              "coordinate_mm": -30.0,
+              "area_mm2": 16.59200339126528,
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  -18.560001373291016,
+                  12.0
+                ],
+                "max": [
+                  -30.0,
+                  18.559999465942383,
+                  15.399999618530273
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 30.0,
+              "area_mm2": 16.59200339126528,
+              "bounds_mm": {
+                "min": [
+                  30.0,
+                  -18.560001373291016,
+                  12.0
+                ],
+                "max": [
+                  30.0,
+                  18.559999465942383,
+                  15.399999618530273
+                ]
+              }
+            }
+          ],
+          "Y": [],
+          "Z": [
+            {
+              "coordinate_mm": 12.0,
+              "area_mm2": 374.4001579284668,
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  -18.560001373291016,
+                  12.0
+                ],
+                "max": [
+                  30.0,
+                  18.559999465942383,
+                  12.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 15.399999618530273,
+              "area_mm2": 211.2000274658203,
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  -17.880001068115234,
+                  15.399999618530273
+                ],
+                "max": [
+                  30.0,
+                  17.8799991607666,
+                  15.399999618530273
+                ]
+              }
+            }
+          ]
+        },
+        "measurement_scope": "full paired construction tools; clipped final geometry is measured separately"
+      },
+      "body": {
+        "bounds_mm": {
+          "min": [
+            -30.0,
+            -20.0,
+            -15.0
+          ],
+          "max": [
+            30.0,
+            20.0,
+            15.0
+          ]
+        },
+        "dimensions_mm": [
+          60.0,
+          40.0,
+          30.0
+        ],
+        "volume_mm3": 16655.36032775877,
+        "non_manifold_edges": 0,
+        "non_manifold_vertex_links": 0,
+        "inconsistent_winding_edges": 0,
+        "connected_shells": 1,
+        "euler_characteristic": 2,
+        "genus": 0,
+        "mesh_counts": {
+          "vertices": 64,
+          "edges": 186,
+          "faces": 124,
+          "triangles": 124,
+          "representation": "world-space triangulated mesh"
+        },
+        "passed": true,
+        "printed": false,
+        "fit_tested": false,
+        "physical_measurements": null,
+        "fit_results": null,
+        "physical_interference": null,
+        "qualified_clearance_mm": null,
+        "trial_status": "experimental_geometry_only",
+        "numericComparison": {
+          "purpose": "Floating point reconstruction only; not manufacturing tolerance or fit acceptance",
+          "dimensionsAbsMm": 0.0001,
+          "volumeRelative": 1e-05
+        },
+        "kind": "dovetail_body",
+        "geometry_signature": {
+          "algorithm": "SHA-256 of sorted oriented triangle coordinates on numeric comparison grid",
+          "coordinate_grid_mm": 0.0001,
+          "sha256": "9b400d963d4ac5cb8770a5424f5542af69affb6e727f27ea0a6bb77caac501f8"
+        },
+        "exported_stl": false,
+        "slicer_checked": false,
+        "overhang_analysis_performed": false,
+        "channels": [
+          {
+            "centre_y_mm": -17.0,
+            "x_mm": [
+              -30,
+              30
+            ],
+            "profile": {
+              "z_mm": [
+                11.800000190734863,
+                15.0
+              ],
+              "widths_mm": [
+                3.599998474121092,
+                2.319999694824217
+              ],
+              "side_slope_abs": 0.199999821186055,
+              "side_planes": [
+                {
+                  "side": "negative_y",
+                  "slope_z": -0.199999821186055,
+                  "offset_mm": -21.159997165202935,
+                  "equation": "y + slope_z*z = offset_mm",
+                  "bounds_mm": {
+                    "min": [
+                      -30.0,
+                      -18.799999237060547,
+                      11.800000190734863
+                    ],
+                    "max": [
+                      30.0,
+                      -18.15999984741211,
+                      15.0
+                    ]
+                  },
+                  "area_mm2": 195.8023309181232,
+                  "triangle_count": 4
+                },
+                {
+                  "side": "positive_y",
+                  "slope_z": 0.199999821186055,
+                  "offset_mm": -12.840002834797067,
+                  "equation": "y + slope_z*z = offset_mm",
+                  "bounds_mm": {
+                    "min": [
+                      -30.0,
+                      -15.84000015258789,
+                      11.800000190734863
+                    ],
+                    "max": [
+                      30.0,
+                      -15.200000762939453,
+                      15.0
+                    ]
+                  },
+                  "area_mm2": 195.8023309181232,
+                  "triangle_count": 4
+                }
+              ]
+            },
+            "open_ends": true
+          },
+          {
+            "centre_y_mm": 17.0,
+            "x_mm": [
+              -30,
+              30
+            ],
+            "profile": {
+              "z_mm": [
+                11.800000190734863,
+                15.0
+              ],
+              "widths_mm": [
+                3.59999942779541,
+                2.3199996948242188
+              ],
+              "side_slope_abs": 0.19999997019767585,
+              "side_planes": [
+                {
+                  "side": "negative_y",
+                  "slope_z": -0.20000011920929667,
+                  "offset_mm": 12.83999836444844,
+                  "equation": "y + slope_z*z = offset_mm",
+                  "bounds_mm": {
+                    "min": [
+                      -30.0,
+                      15.199999809265137,
+                      11.800000190734863
+                    ],
+                    "max": [
+                      30.0,
+                      15.84000015258789,
+                      15.0
+                    ]
+                  },
+                  "area_mm2": 195.80234213997684,
+                  "triangle_count": 4
+                },
+                {
+                  "side": "positive_y",
+                  "slope_z": 0.199999821186055,
+                  "offset_mm": 21.159997165202935,
+                  "equation": "y + slope_z*z = offset_mm",
+                  "bounds_mm": {
+                    "min": [
+                      -30.0,
+                      18.15999984741211,
+                      11.800000190734863
+                    ],
+                    "max": [
+                      30.0,
+                      18.799999237060547,
+                      15.0
+                    ]
+                  },
+                  "area_mm2": 195.8023309181232,
+                  "triangle_count": 4
+                }
+              ]
+            },
+            "open_ends": true
+          }
+        ],
+        "original_shell_dimensions_mm": [
+          60,
+          40,
+          30
+        ],
+        "original_lower_cavity_dimensions_mm": [
+          56,
+          36,
+          28
+        ],
+        "local_cavity_width_mm": 28.0,
+        "min_guide_ligament_mm": 1.200000286102295,
+        "channel_floor_web_mm": 1.8000001907348633,
+        "rim_z_mm": 15.0,
+        "actual_axis_planes": {
+          "X": [
+            {
+              "coordinate_mm": -30.0,
+              "area_mm2": 1181.0560054626462,
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  -20.0,
+                  -15.0
+                ],
+                "max": [
+                  -30.0,
+                  20.0,
+                  15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": -28.0,
+              "area_mm2": 968.0,
+              "bounds_mm": {
+                "min": [
+                  -28.0,
+                  -18.0,
+                  -13.0
+                ],
+                "max": [
+                  -28.0,
+                  18.0,
+                  15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 28.0,
+              "area_mm2": 968.0,
+              "bounds_mm": {
+                "min": [
+                  28.0,
+                  -18.0,
+                  -13.0
+                ],
+                "max": [
+                  28.0,
+                  18.0,
+                  15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 30.0,
+              "area_mm2": 1181.0560054626462,
+              "bounds_mm": {
+                "min": [
+                  30.0,
+                  -20.0,
+                  -15.0
+                ],
+                "max": [
+                  30.0,
+                  20.0,
+                  15.0
+                ]
+              }
+            }
+          ],
+          "Y": [
+            {
+              "coordinate_mm": -20.0,
+              "area_mm2": 1800.0,
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  -20.0,
+                  -15.0
+                ],
+                "max": [
+                  30.0,
+                  -20.0,
+                  15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": -18.0,
+              "area_mm2": 1288.0,
+              "bounds_mm": {
+                "min": [
+                  -28.0,
+                  -18.0,
+                  -13.0
+                ],
+                "max": [
+                  28.0,
+                  -18.0,
+                  10.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": -14.0,
+              "area_mm2": 280.0,
+              "bounds_mm": {
+                "min": [
+                  -28.0,
+                  -14.0,
+                  10.0
+                ],
+                "max": [
+                  28.0,
+                  -14.0,
+                  15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 14.0,
+              "area_mm2": 280.0,
+              "bounds_mm": {
+                "min": [
+                  -28.0,
+                  14.0,
+                  10.0
+                ],
+                "max": [
+                  28.0,
+                  14.0,
+                  15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 18.0,
+              "area_mm2": 1288.0,
+              "bounds_mm": {
+                "min": [
+                  -28.0,
+                  18.0,
+                  -13.0
+                ],
+                "max": [
+                  28.0,
+                  18.0,
+                  10.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 20.0,
+              "area_mm2": 1800.0,
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  20.0,
+                  -15.0
+                ],
+                "max": [
+                  30.0,
+                  20.0,
+                  15.0
+                ]
+              }
+            }
+          ],
+          "Z": [
+            {
+              "coordinate_mm": -15.0,
+              "area_mm2": 2400.0,
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  -20.0,
+                  -15.0
+                ],
+                "max": [
+                  30.0,
+                  20.0,
+                  -15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": -13.0,
+              "area_mm2": 2016.0,
+              "bounds_mm": {
+                "min": [
+                  -28.0,
+                  -18.0,
+                  -13.0
+                ],
+                "max": [
+                  28.0,
+                  18.0,
+                  -13.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 10.0,
+              "area_mm2": 448.0,
+              "bounds_mm": {
+                "min": [
+                  -28.0,
+                  -18.0,
+                  10.0
+                ],
+                "max": [
+                  28.0,
+                  18.0,
+                  10.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 11.800000190734863,
+              "area_mm2": 431.99987411499023,
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  -18.799999237060547,
+                  11.800000190734863
+                ],
+                "max": [
+                  30.0,
+                  18.799999237060547,
+                  11.800000190734863
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 15.0,
+              "area_mm2": 553.6000366210938,
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  -20.0,
+                  15.0
+                ],
+                "max": [
+                  30.0,
+                  20.0,
+                  15.0
+                ]
+              }
+            }
+          ]
+        },
+        "vertical_rays": [
+          {
+            "label": "original cavity floor",
+            "xy_mm": [
+              0,
+              0
+            ],
+            "z_hits_mm": [
+              -15.0,
+              -13.0
+            ]
+          },
+          {
+            "label": "guide underside and top",
+            "xy_mm": [
+              0,
+              14.5
+            ],
+            "z_hits_mm": [
+              -15.0,
+              -13.0,
+              10.0,
+              15.0
+            ]
+          },
+          {
+            "label": "open channel floor x-29 y-17",
+            "xy_mm": [
+              -29,
+              -17.0
+            ],
+            "z_hits_mm": [
+              -15.0,
+              11.800000190734863
+            ]
+          },
+          {
+            "label": "open channel floor x-29 y17",
+            "xy_mm": [
+              -29,
+              17.0
+            ],
+            "z_hits_mm": [
+              -15.0,
+              11.800000190734863
+            ]
+          },
+          {
+            "label": "open channel floor x0 y-17",
+            "xy_mm": [
+              0,
+              -17.0
+            ],
+            "z_hits_mm": [
+              -15.0,
+              -13.0,
+              10.0,
+              11.800000190734863
+            ]
+          },
+          {
+            "label": "open channel floor x0 y17",
+            "xy_mm": [
+              0,
+              17.0
+            ],
+            "z_hits_mm": [
+              -15.0,
+              -13.0,
+              10.0,
+              11.800000190734863
+            ]
+          },
+          {
+            "label": "open channel floor x29 y-17",
+            "xy_mm": [
+              29,
+              -17.0
+            ],
+            "z_hits_mm": [
+              -14.999999999999998,
+              11.800000190734863
+            ]
+          },
+          {
+            "label": "open channel floor x29 y17",
+            "xy_mm": [
+              29,
+              17.0
+            ],
+            "z_hits_mm": [
+              -15.0,
+              11.800000190734863
+            ]
+          }
+        ],
+        "full_length_entry_proof": {
+          "both_end_faces_have_channel_cutouts": true,
+          "end_face_area_mm2": [
+            1181.0560054626462,
+            1181.0560054626462
+          ],
+          "sloped_walls_and_floors_span_x_mm": [
+            -30,
+            30
+          ]
+        },
+        "source_shell_preservation": "outer envelope, floor and lower walls retained; upper side walls locally modified"
+      },
+      "lid": {
+        "bounds_mm": {
+          "min": [
+            -30.0,
+            -20.0,
+            12.0
+          ],
+          "max": [
+            30.0,
+            20.0,
+            17.200000762939453
+          ]
+        },
+        "dimensions_mm": [
+          60.0,
+          40.0,
+          5.200000762939453
+        ],
+        "volume_mm3": 5752.3201428222455,
+        "non_manifold_edges": 0,
+        "non_manifold_vertex_links": 0,
+        "inconsistent_winding_edges": 0,
+        "connected_shells": 1,
+        "euler_characteristic": 2,
+        "genus": 0,
+        "mesh_counts": {
+          "vertices": 36,
+          "edges": 102,
+          "faces": 68,
+          "triangles": 68,
+          "representation": "world-space triangulated mesh"
+        },
+        "passed": true,
+        "printed": false,
+        "fit_tested": false,
+        "physical_measurements": null,
+        "fit_results": null,
+        "physical_interference": null,
+        "qualified_clearance_mm": null,
+        "trial_status": "experimental_geometry_only",
+        "numericComparison": {
+          "purpose": "Floating point reconstruction only; not manufacturing tolerance or fit acceptance",
+          "dimensionsAbsMm": 0.0001,
+          "volumeRelative": 1e-05
+        },
+        "kind": "dovetail_lid",
+        "geometry_signature": {
+          "algorithm": "SHA-256 of sorted oriented triangle coordinates on numeric comparison grid",
+          "coordinate_grid_mm": 0.0001,
+          "sha256": "98110c7ba4131205da3d7cd77de2ed34d583ef3da29f6ca8a693a9917bf1ddcf"
+        },
+        "exported_stl": false,
+        "slicer_checked": false,
+        "overhang_analysis_performed": false,
+        "male_ribs": [
+          {
+            "centre_y_mm": -17.0,
+            "x_mm": [
+              -30,
+              30
+            ],
+            "profile": {
+              "z_mm": [
+                12.0,
+                15.200000762939453
+              ],
+              "widths_mm": [
+                3.1200027465820312,
+                1.8400001525878906
+              ],
+              "side_slope_abs": 0.2000003576277834,
+              "side_planes": [
+                {
+                  "side": "negative_y",
+                  "slope_z": -0.2000003576277834,
+                  "offset_mm": -20.960005664824415,
+                  "equation": "y + slope_z*z = offset_mm",
+                  "bounds_mm": {
+                    "min": [
+                      -30.0,
+                      -18.560001373291016,
+                      12.0
+                    ],
+                    "max": [
+                      30.0,
+                      -17.920000076293945,
+                      15.200000762939453
+                    ]
+                  },
+                  "area_mm2": 195.80240947111875,
+                  "triangle_count": 2
+                },
+                {
+                  "side": "positive_y",
+                  "slope_z": 0.2000003576277834,
+                  "offset_mm": -13.039994335175583,
+                  "equation": "y + slope_z*z = offset_mm",
+                  "bounds_mm": {
+                    "min": [
+                      -30.0,
+                      -16.079999923706055,
+                      12.0
+                    ],
+                    "max": [
+                      30.0,
+                      -15.439998626708984,
+                      15.200000762939453
+                    ]
+                  },
+                  "area_mm2": 195.80240947111875,
+                  "triangle_count": 2
+                }
+              ]
+            }
+          },
+          {
+            "centre_y_mm": 17.0,
+            "x_mm": [
+              -30,
+              30
+            ],
+            "profile": {
+              "z_mm": [
+                12.0,
+                15.200000762939453
+              ],
+              "widths_mm": [
+                3.119999885559082,
+                1.839996337890625
+              ],
+              "side_slope_abs": 0.2000005066393598,
+              "side_planes": [
+                {
+                  "side": "negative_y",
+                  "slope_z": -0.2000006556509362,
+                  "offset_mm": 13.039991712572066,
+                  "equation": "y + slope_z*z = offset_mm",
+                  "bounds_mm": {
+                    "min": [
+                      -30.0,
+                      15.4399995803833,
+                      12.0
+                    ],
+                    "max": [
+                      30.0,
+                      16.080001831054688,
+                      15.200000762939453
+                    ]
+                  },
+                  "area_mm2": 195.80242069300135,
+                  "triangle_count": 2
+                },
+                {
+                  "side": "positive_y",
+                  "slope_z": 0.2000003576277834,
+                  "offset_mm": 20.960003757475782,
+                  "equation": "y + slope_z*z = offset_mm",
+                  "bounds_mm": {
+                    "min": [
+                      -30.0,
+                      17.919998168945312,
+                      12.0
+                    ],
+                    "max": [
+                      30.0,
+                      18.559999465942383,
+                      15.200000762939453
+                    ]
+                  },
+                  "area_mm2": 195.80240947111875,
+                  "triangle_count": 2
+                }
+              ]
+            }
+          }
+        ],
+        "plate_dimensions_mm": [
+          60,
+          40,
+          2.0
+        ],
+        "plate_z_mm": [
+          15.200000762939453,
+          17.200000762939453
+        ],
+        "exposed_male_depth_mm": 3.200000762939453,
+        "actual_axis_planes": {
+          "X": [
+            {
+              "coordinate_mm": -30.0,
+              "area_mm2": 95.87200238037076,
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  -20.0,
+                  12.0
+                ],
+                "max": [
+                  -30.0,
+                  20.0,
+                  17.200000762939453
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 30.0,
+              "area_mm2": 95.87200238037076,
+              "bounds_mm": {
+                "min": [
+                  30.0,
+                  -20.0,
+                  12.0
+                ],
+                "max": [
+                  30.0,
+                  20.0,
+                  17.200000762939453
+                ]
+              }
+            }
+          ],
+          "Y": [
+            {
+              "coordinate_mm": -20.0,
+              "area_mm2": 120.0,
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  -20.0,
+                  15.200000762939453
+                ],
+                "max": [
+                  30.0,
+                  -20.0,
+                  17.200000762939453
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 20.0,
+              "area_mm2": 120.0,
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  20.0,
+                  15.200000762939453
+                ],
+                "max": [
+                  30.0,
+                  20.0,
+                  17.200000762939453
+                ]
+              }
+            }
+          ],
+          "Z": [
+            {
+              "coordinate_mm": 12.0,
+              "area_mm2": 374.4001579284668,
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  -18.560001373291016,
+                  12.0
+                ],
+                "max": [
+                  30.0,
+                  18.559999465942383,
+                  12.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 15.200000762939453,
+              "area_mm2": 2179.200210571289,
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  -20.0,
+                  15.200000762939453
+                ],
+                "max": [
+                  30.0,
+                  20.0,
+                  15.200000762939453
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 17.200000762939453,
+              "area_mm2": 2400.0,
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  -20.0,
+                  17.200000762939453
+                ],
+                "max": [
+                  30.0,
+                  20.0,
+                  17.200000762939453
+                ]
+              }
+            }
+          ]
+        },
+        "vertical_rays": [
+          {
+            "label": "plate centre",
+            "xy_mm": [
+              0,
+              0
+            ],
+            "z_hits_mm": [
+              15.200000762939455,
+              17.200000762939453
+            ]
+          },
+          {
+            "label": "negative male centre",
+            "xy_mm": [
+              0,
+              -17
+            ],
+            "z_hits_mm": [
+              12.0,
+              17.200000762939453
+            ]
+          },
+          {
+            "label": "positive male centre",
+            "xy_mm": [
+              0,
+              17
+            ],
+            "z_hits_mm": [
+              12.0,
+              17.200000762939453
+            ]
+          },
+          {
+            "label": "outside male",
+            "xy_mm": [
+              0,
+              19
+            ],
+            "z_hits_mm": [
+              15.200000762939453,
+              17.20000076293945
+            ]
+          }
+        ],
+        "measurement_scope": "final integrated plate and exposed male profiles; buried tool top is not inferred"
+      },
+      "assembly": {
+        "passed": true,
+        "kind": "dovetail_assembly",
+        "side_clearances": [
+          {
+            "centre_y_mm": -17.0,
+            "side": "negative_y",
+            "z_overlap_mm": [
+              12.0,
+              15.0
+            ],
+            "endpoints": [
+              {
+                "z_mm": 12.0,
+                "horizontal_gap_mm": 0.19999793767926022,
+                "normal_gap_mm": 0.19611411961015116
+              },
+              {
+                "z_mm": 15.0,
+                "horizontal_gap_mm": 0.19999954700444533,
+                "normal_gap_mm": 0.19611569768338286
+              }
+            ],
+            "horizontal_gap_mm": 0.19999793767926022,
+            "normal_gap_mm": 0.19611411961015116
+          },
+          {
+            "centre_y_mm": -17.0,
+            "side": "positive_y",
+            "z_overlap_mm": [
+              12.0,
+              15.0
+            ],
+            "endpoints": [
+              {
+                "z_mm": 12.0,
+                "horizontal_gap_mm": 0.19999793767925667,
+                "normal_gap_mm": 0.19611411961014766
+              },
+              {
+                "z_mm": 15.0,
+                "horizontal_gap_mm": 0.19999954700444356,
+                "normal_gap_mm": 0.1961156976833811
+              }
+            ],
+            "horizontal_gap_mm": 0.19999793767925667,
+            "normal_gap_mm": 0.19611411961014766
+          },
+          {
+            "centre_y_mm": 17.0,
+            "side": "negative_y",
+            "z_overlap_mm": [
+              12.0,
+              15.0
+            ],
+            "endpoints": [
+              {
+                "z_mm": 12.0,
+                "horizontal_gap_mm": 0.19999978542329977,
+                "normal_gap_mm": 0.1961159202324861
+              },
+              {
+                "z_mm": 15.0,
+                "horizontal_gap_mm": 0.20000139474821665,
+                "normal_gap_mm": 0.19611749830536435
+              }
+            ],
+            "horizontal_gap_mm": 0.19999978542329977,
+            "normal_gap_mm": 0.1961159202324861
+          },
+          {
+            "centre_y_mm": 17.0,
+            "side": "positive_y",
+            "z_overlap_mm": [
+              12.0,
+              15.0
+            ],
+            "endpoints": [
+              {
+                "z_mm": 12.0,
+                "horizontal_gap_mm": 0.19999984502789303,
+                "normal_gap_mm": 0.1961159899194266
+              },
+              {
+                "z_mm": 15.0,
+                "horizontal_gap_mm": 0.20000145435307815,
+                "normal_gap_mm": 0.1961175679926583
+              }
+            ],
+            "horizontal_gap_mm": 0.19999984502789303,
+            "normal_gap_mm": 0.1961159899194266
+          }
+        ],
+        "horizontal_side_gap_mm": 0.19999793767925667,
+        "normal_side_gap_mm": 0.19611411961014766,
+        "horizontal_side_gaps_mm": [
+          0.19999793767926022,
+          0.19999793767925667,
+          0.19999978542329977,
+          0.19999984502789303
+        ],
+        "normal_side_gaps_mm": [
+          0.19611411961015116,
+          0.19611411961014766,
+          0.1961159202324861,
+          0.1961159899194266
+        ],
+        "nominal_horizontal_side_trial_mm": 0.2,
+        "nominal_horizontal_total_trial_mm": 0.4,
+        "bottom_gaps_mm": [
+          0.19999980926513672,
+          0.19999980926513672
+        ],
+        "bottom_gap_mm": 0.19999980926513672,
+        "plate_rim_gap_mm": 0.20000076293945312,
+        "retained_vertical_overlap_mm": 3.0,
+        "geometric_nonintersection": true,
+        "entry_open_both_ends": true,
+        "profile_invariant_along_x": true,
+        "printed": false,
+        "fit_tested": false,
+        "physical_measurements": null,
+        "fit_results": null,
+        "physical_interference": null,
+        "qualified_clearance_mm": null,
+        "trial_status": "experimental_geometry_only",
+        "overhang_analysis_performed": false,
+        "numericComparison": {
+          "purpose": "Floating point reconstruction only; not manufacturing tolerance or fit acceptance",
+          "dimensionsAbsMm": 0.0001,
+          "volumeRelative": 1e-05
+        }
+      },
+      "travel": {
+        "passed": true,
+        "kind": "dovetail_travel",
+        "states": [
+          {
+            "translation_x_mm": 0.0,
+            "x_bounds_mm": [
+              -30.0,
+              30.0
+            ],
+            "overlap_length_mm": 60.0,
+            "fully_disengaged": false,
+            "end_gap_mm": 0.0,
+            "geometric_nonintersection": true,
+            "same_mesh_after_normalising_translation": true
+          },
+          {
+            "translation_x_mm": 30.0,
+            "x_bounds_mm": [
+              0.0,
+              60.0
+            ],
+            "overlap_length_mm": 30.0,
+            "fully_disengaged": false,
+            "end_gap_mm": 0.0,
+            "geometric_nonintersection": true,
+            "same_mesh_after_normalising_translation": true
+          },
+          {
+            "translation_x_mm": 62.0,
+            "x_bounds_mm": [
+              32.0,
+              92.0
+            ],
+            "overlap_length_mm": 0.0,
+            "fully_disengaged": true,
+            "end_gap_mm": 2.0,
+            "geometric_nonintersection": true,
+            "same_mesh_after_normalising_translation": true
+          }
+        ],
+        "sweep_interval_x_mm": [
+          0,
+          62
+        ],
+        "continuous_sweep_geometric_nonintersection": true,
+        "proof": "full-length constant profiles, cut end openings, positive transverse gaps, and identical rigidly translated lid meshes",
+        "reference_cross_section_clearances": {
+          "passed": true,
+          "kind": "dovetail_assembly",
+          "side_clearances": [
+            {
+              "centre_y_mm": -17.0,
+              "side": "negative_y",
+              "z_overlap_mm": [
+                12.0,
+                15.0
+              ],
+              "endpoints": [
+                {
+                  "z_mm": 12.0,
+                  "horizontal_gap_mm": 0.19999793767926022,
+                  "normal_gap_mm": 0.19611411961015116
+                },
+                {
+                  "z_mm": 15.0,
+                  "horizontal_gap_mm": 0.19999954700444533,
+                  "normal_gap_mm": 0.19611569768338286
+                }
+              ],
+              "horizontal_gap_mm": 0.19999793767926022,
+              "normal_gap_mm": 0.19611411961015116
+            },
+            {
+              "centre_y_mm": -17.0,
+              "side": "positive_y",
+              "z_overlap_mm": [
+                12.0,
+                15.0
+              ],
+              "endpoints": [
+                {
+                  "z_mm": 12.0,
+                  "horizontal_gap_mm": 0.19999793767925667,
+                  "normal_gap_mm": 0.19611411961014766
+                },
+                {
+                  "z_mm": 15.0,
+                  "horizontal_gap_mm": 0.19999954700444356,
+                  "normal_gap_mm": 0.1961156976833811
+                }
+              ],
+              "horizontal_gap_mm": 0.19999793767925667,
+              "normal_gap_mm": 0.19611411961014766
+            },
+            {
+              "centre_y_mm": 17.0,
+              "side": "negative_y",
+              "z_overlap_mm": [
+                12.0,
+                15.0
+              ],
+              "endpoints": [
+                {
+                  "z_mm": 12.0,
+                  "horizontal_gap_mm": 0.19999978542329977,
+                  "normal_gap_mm": 0.1961159202324861
+                },
+                {
+                  "z_mm": 15.0,
+                  "horizontal_gap_mm": 0.20000139474821665,
+                  "normal_gap_mm": 0.19611749830536435
+                }
+              ],
+              "horizontal_gap_mm": 0.19999978542329977,
+              "normal_gap_mm": 0.1961159202324861
+            },
+            {
+              "centre_y_mm": 17.0,
+              "side": "positive_y",
+              "z_overlap_mm": [
+                12.0,
+                15.0
+              ],
+              "endpoints": [
+                {
+                  "z_mm": 12.0,
+                  "horizontal_gap_mm": 0.19999984502789303,
+                  "normal_gap_mm": 0.1961159899194266
+                },
+                {
+                  "z_mm": 15.0,
+                  "horizontal_gap_mm": 0.20000145435307815,
+                  "normal_gap_mm": 0.1961175679926583
+                }
+              ],
+              "horizontal_gap_mm": 0.19999984502789303,
+              "normal_gap_mm": 0.1961159899194266
+            }
+          ],
+          "horizontal_side_gap_mm": 0.19999793767925667,
+          "normal_side_gap_mm": 0.19611411961014766,
+          "horizontal_side_gaps_mm": [
+            0.19999793767926022,
+            0.19999793767925667,
+            0.19999978542329977,
+            0.19999984502789303
+          ],
+          "normal_side_gaps_mm": [
+            0.19611411961015116,
+            0.19611411961014766,
+            0.1961159202324861,
+            0.1961159899194266
+          ],
+          "nominal_horizontal_side_trial_mm": 0.2,
+          "nominal_horizontal_total_trial_mm": 0.4,
+          "bottom_gaps_mm": [
+            0.19999980926513672,
+            0.19999980926513672
+          ],
+          "bottom_gap_mm": 0.19999980926513672,
+          "plate_rim_gap_mm": 0.20000076293945312,
+          "retained_vertical_overlap_mm": 3.0,
+          "geometric_nonintersection": true,
+          "entry_open_both_ends": true,
+          "profile_invariant_along_x": true,
+          "printed": false,
+          "fit_tested": false,
+          "physical_measurements": null,
+          "fit_results": null,
+          "physical_interference": null,
+          "qualified_clearance_mm": null,
+          "trial_status": "experimental_geometry_only",
+          "overhang_analysis_performed": false,
+          "numericComparison": {
+            "purpose": "Floating point reconstruction only; not manufacturing tolerance or fit acceptance",
+            "dimensionsAbsMm": 0.0001,
+            "volumeRelative": 1e-05
+          }
+        },
+        "printed": false,
+        "fit_tested": false,
+        "physical_measurements": null,
+        "fit_results": null,
+        "physical_interference": null,
+        "qualified_clearance_mm": null,
+        "trial_status": "experimental_geometry_only",
+        "overhang_analysis_performed": false
+      },
+      "final_objects": {
+        "Body": {
+          "object_name": "Body",
+          "type": "MESH",
+          "modifier_count": 0,
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "hidden": false
+        },
+        "SlidingLid": {
+          "object_name": "SlidingLid",
+          "type": "MESH",
+          "modifier_count": 0,
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "hidden": false
+        },
+        "GuideTool": {
+          "object_name": "GuideTool",
+          "type": "MESH",
+          "modifier_count": 0,
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "hidden": true
+        },
+        "GrooveTool": {
+          "object_name": "GrooveTool",
+          "type": "MESH",
+          "modifier_count": 0,
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "hidden": true
+        },
+        "MaleTool": {
+          "object_name": "MaleTool",
+          "type": "MESH",
+          "modifier_count": 0,
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "hidden": true
+        }
+      },
+      "trial": {
+        "status": "experimental_geometry_only",
+        "selected_by": "tutor",
+        "horizontal_total_clearance_mm": 0.4,
+        "horizontal_side_clearance_mm": 0.2,
+        "qualified_clearance_mm": null
+      },
+      "mesh_analysis_overhang_checked": false,
+      "exported_stl": false,
+      "slicer_checked": false,
+      "printed": false,
+      "fit_tested": false,
+      "physical_measurements": null,
+      "fit_results": null,
+      "physical_interference": null,
+      "qualified_clearance_mm": null,
+      "numericComparison": {
+        "dimensionsAbsMm": 0.0001,
+        "volumeRelative": 1e-05,
+        "purpose": "Floating point reconstruction only; not manufacturing tolerance or printed fit acceptance"
+      }
+    },
+    "runnerStatus": {
+      "status": "completed",
+      "scenario": "lesson06_dovetail",
+      "outputDir": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\06\\2026-10-25-lesson06-dovetail-demo-v002",
+      "startedAt": "2026-10-25T06:32:27.202Z",
+      "endedAt": "2026-10-25T06:36:01.851Z",
+      "blenderExitCode": 0,
+      "timeoutSeconds": 600,
+      "workspacesUnchanged": true,
+      "runErrors": [],
+      "workspacesBefore": {
+        ".": {
+          "kind": "directory"
+        },
+        "01": {
+          "kind": "directory"
+        },
+        "02": {
+          "kind": "directory"
+        },
+        "03": {
+          "kind": "directory"
+        },
+        "04": {
+          "kind": "directory"
+        },
+        "05": {
+          "kind": "directory"
+        },
+        "06": {
+          "kind": "directory"
+        },
+        "07": {
+          "kind": "directory"
+        },
+        "08": {
+          "kind": "directory"
+        },
+        "09": {
+          "kind": "directory"
+        },
+        "04/exports": {
+          "kind": "directory"
+        }
+      },
+      "workspacesAfter": {
+        ".": {
+          "kind": "directory"
+        },
+        "01": {
+          "kind": "directory"
+        },
+        "02": {
+          "kind": "directory"
+        },
+        "03": {
+          "kind": "directory"
+        },
+        "04": {
+          "kind": "directory"
+        },
+        "05": {
+          "kind": "directory"
+        },
+        "06": {
+          "kind": "directory"
+        },
+        "07": {
+          "kind": "directory"
+        },
+        "08": {
+          "kind": "directory"
+        },
+        "09": {
+          "kind": "directory"
+        },
+        "04/exports": {
+          "kind": "directory"
+        }
+      },
+      "workspaceChanges": []
+    },
+    "verificationEvidence": {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/verification.json",
+      "sha256": "47ebb57ad00e006d989c65883bea6db7423aed777f216694047b5799a7dbf754"
+    },
+    "runnerEvidence": {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/runner-status.json",
+      "sha256": "299a4875a765924109e684a5d3e5f4ace64c0323d7726327fc8cc0b662e8eb9d"
+    },
+    "numericComparison": {
+      "meshReadbackAbsToleranceMm": 0.0001,
+      "declaredParametersAbsToleranceMm": 1e-06,
+      "volumeRelativeTolerance": 1e-05,
+      "purpose": "僅處理世界座標網格、斜面間距及體積的浮點重建誤差；不是製造公差、斜面合格間隙或列印支撐判定門檻。"
+    },
+    "completionScope": "06-02 燕尾剖面、滑蓋數位擺位與另存重開；Overhang 介面分析、STL、切片、列印、實測與試配尚未完成",
+    "geometryEvidence": [
+      {
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/source_body_mesh.json",
+        "sha256": "e0ec94210bff5cd7f113f32eb4a213e75553e40fb64bdf30ad3ece672a1d61bd"
+      },
+      {
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/guide_tool_mesh.json",
+        "sha256": "aedbd25b5cae2d97bdc19cfd400048daa15b016914108d98ae2916148b8e1bce"
+      },
+      {
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/groove_tool_mesh.json",
+        "sha256": "0cca5863d62cd43661302fea7cf94d2e0a86b35209af0283de99787134b9f0b5"
+      },
+      {
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/male_tool_mesh.json",
+        "sha256": "7377acc23ce77bcb73d9bde09c15c76c136b99404292ac997d90df53615bdcd4"
+      },
+      {
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/body_mesh.json",
+        "sha256": "5784246ccc9ff4d1dcab5414fde1186a44855c5b5ed9635a3d38691fd3e812eb"
+      },
+      {
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/lid_mesh.json",
+        "sha256": "e8e796e8c63402966fbf51963544ebd1bc77027230b3b077390cecb8f59ade9b"
+      },
+      {
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/travel_30_lid_mesh.json",
+        "sha256": "72e68840b1dc7df0575ba30d18998a17ac5ae4fa47c6e444a4f9bb312f5618ec"
+      },
+      {
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/travel_62_lid_mesh.json",
+        "sha256": "031782e98521b6c83139e90612ef6a39e3572abccd71cf7848919b7b9ce3c39d"
+      }
+    ],
+    "sourceSnapshotEvidence": {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/source-snapshot/manifest.json",
+      "sha256": "5ab78bb486486467d6afac8e6a40320656ac27ce2a2d5679c407a3468c2856ac"
+    }
+  }
+}

@@ -1,0 +1,455 @@
+{
+  "kind": "thread_parameter_reference_ui_technical_review",
+  "passed": true,
+  "reviewedAt": "2026-10-25T12:31:21.935610+00:00",
+  "scope": "Original native UI image review, raw mesh identity, template preservation and version/progress safeguards; source terminology audit is separate.",
+  "photographs": [
+    {
+      "path": "08-01-04-rim-face.png",
+      "sha256": "71f4e90f4ad1e2416be0df61bdb68eda91775f1eda878c732023f62cbaaf3cda",
+      "width": 1494,
+      "height": 1019,
+      "original_native_pixels": true,
+      "visual_readback": "頂視實選前側盒口quad，N面板Y−19/Z15；實點bounds Y−20..−18，壁厚數位參照2mm，非螺紋柱合格肉厚。"
+    },
+    {
+      "path": "08-01-05-inner-floor.png",
+      "sha256": "a78e713c12c3af31a8e6d3d717bea1a8ca99891e3524c6991459654c174d8e6d",
+      "width": 1494,
+      "height": 1019,
+      "original_native_pixels": true,
+      "visual_readback": "實選內底quad；N面板Z−13，實點跨度56×36mm。"
+    },
+    {
+      "path": "08-01-06-outer-floor.png",
+      "sha256": "6c583bd5aec0207b5c2c8c51ba50343bfa65b2ee6cea6c713ed21f5e5a983e52",
+      "width": 1494,
+      "height": 1019,
+      "original_native_pixels": true,
+      "visual_readback": "底視實選外底quad；N面板Z−15，實點跨度60×40mm，內外底差2mm。"
+    },
+    {
+      "path": "08-01-12-reopened-verified.png",
+      "sha256": "05ccab2799c6d1965c1878130815b63d2bbff9cd4b87417c2d63458e52bc3472",
+      "width": 1494,
+      "height": 1019,
+      "original_native_pixels": true,
+      "visual_readback": "重開Body_Reference原盒，N面板60×40×30、Scale1、Rotation0；Outliner僅盒與hidden Camera/Light，修改器區空。沒有螺紋、柱、導孔或對件。"
+    }
+  ],
+  "record_count": 12,
+  "raw_mesh_files": 2,
+  "python_snapshots": 6,
+  "data_bindings": 2,
+  "snapshot_hashes_match": true,
+  "source_and_copy_unchanged": true,
+  "source_template_and_facts_unchanged": true,
+  "source_reference_raw_vertices_triangles_matrix_local_mesh_match": true,
+  "template_keys_preserved_in_parameter_record": true,
+  "source_scene_readback_is_separate": true,
+  "draft_parameters_pending": 24,
+  "thread_route_selected": null,
+  "specimen_scope": "Unmodified original box reference only; custom printed thread is tutor candidate, not learner route selection.",
+  "measured_box": {
+    "bounds_mm": {
+      "min": [
+        -30.0,
+        -20.0,
+        -15.0
+      ],
+      "max": [
+        30.0,
+        20.0,
+        15.0
+      ]
+    },
+    "dimensions_mm": [
+      60.0,
+      40.0,
+      30.0
+    ],
+    "volume_mm3": 15552.0,
+    "non_manifold_edges": 0,
+    "non_manifold_vertex_links": 0,
+    "inconsistent_winding_edges": 0,
+    "connected_shells": 1,
+    "euler_characteristic": 2,
+    "genus": 0,
+    "mesh_counts": {
+      "vertices": 16,
+      "edges": 42,
+      "faces": 28,
+      "triangles": 28,
+      "representation": "evaluated loop-triangulated mesh"
+    },
+    "passed": true,
+    "printed": false,
+    "fit_tested": false,
+    "physical_interference": null,
+    "qualified_clearance_mm": null,
+    "numericComparison": {
+      "purpose": "Floating point reconstruction only; not manufacturing tolerance or fit acceptance",
+      "dimensionsAbsMm": 0.0001,
+      "volumeRelative": 1e-05
+    },
+    "kind": "box_body",
+    "outer_dimensions_mm": [
+      60.0,
+      40.0,
+      30.0
+    ],
+    "cavity_bounds_mm": {
+      "min": [
+        -28.0,
+        -18.0,
+        -13.0
+      ],
+      "max": [
+        28.0,
+        18.0,
+        15.0
+      ]
+    },
+    "cavity_dimensions_mm": [
+      56.0,
+      36.0,
+      28.0
+    ],
+    "wall_thicknesses_mm": [
+      2.0,
+      2.0,
+      2.0,
+      2.0
+    ],
+    "floor_thickness_mm": 2.0,
+    "rim_z_mm": 15.0,
+    "actual_face_planes": {
+      "X": [
+        {
+          "coordinate_mm": -30.0,
+          "area_mm2": 1200.0,
+          "bounds_mm": {
+            "min": [
+              -30.0,
+              -20.0,
+              -15.0
+            ],
+            "max": [
+              -30.0,
+              20.0,
+              15.0
+            ]
+          }
+        },
+        {
+          "coordinate_mm": -28.0,
+          "area_mm2": 1008.0,
+          "bounds_mm": {
+            "min": [
+              -28.0,
+              -18.0,
+              -13.0
+            ],
+            "max": [
+              -28.0,
+              18.0,
+              15.0
+            ]
+          }
+        },
+        {
+          "coordinate_mm": 28.0,
+          "area_mm2": 1008.0,
+          "bounds_mm": {
+            "min": [
+              28.0,
+              -18.0,
+              -13.0
+            ],
+            "max": [
+              28.0,
+              18.0,
+              15.0
+            ]
+          }
+        },
+        {
+          "coordinate_mm": 30.0,
+          "area_mm2": 1200.0,
+          "bounds_mm": {
+            "min": [
+              30.0,
+              -20.0,
+              -15.0
+            ],
+            "max": [
+              30.0,
+              20.0,
+              15.0
+            ]
+          }
+        }
+      ],
+      "Y": [
+        {
+          "coordinate_mm": -20.0,
+          "area_mm2": 1800.0,
+          "bounds_mm": {
+            "min": [
+              -30.0,
+              -20.0,
+              -15.0
+            ],
+            "max": [
+              30.0,
+              -20.0,
+              15.0
+            ]
+          }
+        },
+        {
+          "coordinate_mm": -18.0,
+          "area_mm2": 1568.0,
+          "bounds_mm": {
+            "min": [
+              -28.0,
+              -18.0,
+              -13.0
+            ],
+            "max": [
+              28.0,
+              -18.0,
+              15.0
+            ]
+          }
+        },
+        {
+          "coordinate_mm": 18.0,
+          "area_mm2": 1568.0,
+          "bounds_mm": {
+            "min": [
+              -28.0,
+              18.0,
+              -13.0
+            ],
+            "max": [
+              28.0,
+              18.0,
+              15.0
+            ]
+          }
+        },
+        {
+          "coordinate_mm": 20.0,
+          "area_mm2": 1800.0,
+          "bounds_mm": {
+            "min": [
+              -30.0,
+              20.0,
+              -15.0
+            ],
+            "max": [
+              30.0,
+              20.0,
+              15.0
+            ]
+          }
+        }
+      ],
+      "Z": [
+        {
+          "coordinate_mm": -15.0,
+          "area_mm2": 2400.0,
+          "bounds_mm": {
+            "min": [
+              -30.0,
+              -20.0,
+              -15.0
+            ],
+            "max": [
+              30.0,
+              20.0,
+              -15.0
+            ]
+          }
+        },
+        {
+          "coordinate_mm": -13.0,
+          "area_mm2": 2016.0,
+          "bounds_mm": {
+            "min": [
+              -28.0,
+              -18.0,
+              -13.0
+            ],
+            "max": [
+              28.0,
+              18.0,
+              -13.0
+            ]
+          }
+        },
+        {
+          "coordinate_mm": 15.0,
+          "area_mm2": 384.0,
+          "bounds_mm": {
+            "min": [
+              -30.0,
+              -20.0,
+              15.0
+            ],
+            "max": [
+              30.0,
+              20.0,
+              15.0
+            ]
+          }
+        }
+      ]
+    },
+    "vertical_rays": [
+      {
+        "label": "cavity centre",
+        "xy_mm": [
+          0,
+          0
+        ],
+        "z_hits_mm": [
+          -15.0,
+          -13.0
+        ]
+      },
+      {
+        "label": "negative X rim",
+        "xy_mm": [
+          -29,
+          0
+        ],
+        "z_hits_mm": [
+          -15.0,
+          15.0
+        ]
+      },
+      {
+        "label": "positive X rim",
+        "xy_mm": [
+          29,
+          0
+        ],
+        "z_hits_mm": [
+          -15.0,
+          15.0
+        ]
+      },
+      {
+        "label": "negative Y rim",
+        "xy_mm": [
+          0,
+          -19
+        ],
+        "z_hits_mm": [
+          -15.0,
+          15.0
+        ]
+      },
+      {
+        "label": "positive Y rim",
+        "xy_mm": [
+          0,
+          19
+        ],
+        "z_hits_mm": [
+          -15.0,
+          15.0
+        ]
+      },
+      {
+        "label": "near cavity corner",
+        "xy_mm": [
+          27,
+          17
+        ],
+        "z_hits_mm": [
+          -15.0,
+          -13.0
+        ]
+      }
+    ],
+    "measurement_scope": "actual source body mesh; no physical fit conclusion"
+  },
+  "face_bounds_mm": {
+    "rim": {
+      "min": [
+        -30.00000142492354,
+        -20.000000949949026,
+        15.00000071246177
+      ],
+      "max": [
+        30.00000142492354,
+        -18.000000854954123,
+        15.00000071246177
+      ]
+    },
+    "inner_floor": {
+      "min": [
+        -28.000001329928637,
+        -18.000000854954123,
+        -13.000000617466867
+      ],
+      "max": [
+        28.000001329928637,
+        18.000000854954123,
+        -13.000000617466867
+      ]
+    },
+    "outer_floor": {
+      "min": [
+        -30.00000142492354,
+        -20.000000949949026,
+        -15.00000071246177
+      ],
+      "max": [
+        30.00000142492354,
+        20.000000949949026,
+        -15.00000071246177
+      ]
+    }
+  },
+  "native_non_manifold_selected_edges": 0,
+  "final_objects": [
+    "Body_Reference",
+    "Camera",
+    "Light"
+  ],
+  "scene": {
+    "path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\08\\2026-10-25-lesson08-parameters-demo-v001\\demo-files\\u08_thread_reference_v001.blend",
+    "sha256": "9bda36c10fd916ef9cbe688f5ca56dcf8cfa0adb83d684300e60196225589d8f",
+    "bytes": 97955,
+    "scene_role": "unmodified_box_thread_reference",
+    "reopened": true
+  },
+  "parameter_record_sha256": "0f858377bb80e173f00f3b39303c8f7d20f78d0f929446ae985a50fa7699229a",
+  "verification_sha256": "346ccc416ca3ab6f4354779c636c982a750a01e7ab25726dedaa773ac85ba8ae",
+  "unperformed_flags": [
+    "thread_modeled",
+    "boss_modeled",
+    "pilot_hole_modeled",
+    "counterpart_modeled",
+    "modifier_created",
+    "screw_modifier_created",
+    "geometry_modified",
+    "calculations_performed",
+    "strength_analysis_performed",
+    "fit_qualification",
+    "printed",
+    "fit_tested",
+    "slicer_checked",
+    "exported_stl"
+  ],
+  "physical_measurements": null,
+  "qualified_strength_N": null,
+  "qualified_clearance_mm": null,
+  "qualified_torque_Nm": null,
+  "learner_workspaces_unchanged": true,
+  "progress_sha256": "d92e4f2ee78a1cf41386816b8616bf635b89fb25f8bfd813ac00cd20ed20b4ef"
+}

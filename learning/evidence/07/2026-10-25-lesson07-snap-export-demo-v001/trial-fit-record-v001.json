@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "record_version": "v001",
+  "recorded_on": "2026-10-25",
+  "timezone": "Asia/Taipei",
+  "created_by": "tutor",
+  "run": "2026-10-25-lesson07-snap-export-demo-v001",
+  "lesson_step": "07-04",
+  "record_role": "blank_physical_print_and_fit_template",
+  "physical_record_state": "not_executed",
+  "digital_export_completed": true,
+  "source_scene": {
+    "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/demo-files/u07_print_orientation_v001.blend",
+    "sha256": "360417f208287a94ca13501f4365b70b3396ca6aba579231e0f8d2a442ecf47d",
+    "bytes": 106462
+  },
+  "source_orientation_record": {
+    "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/print-orientation-record-v001.json",
+    "sha256": "b515d433f7c6b8e65e3247337f135a07bf56b0f6f9817efbab446fbf5c708986",
+    "bytes": 559144
+  },
+  "source_geometry_draft_record": {
+    "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/geometry-draft-record-v001.json",
+    "sha256": "4f201124cbf51dc849c7978ee85f7ff5e58ca4273cdd9b006d3eba6c52521b7a",
+    "bytes": 58367
+  },
+  "part_versions": [
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/demo-files/exports/u07_snap_body_v001.stl",
+      "sha256": "6ee4b13556db93196189604a96a0dbf3074fcaf6dd3423b3fc86cc2421910ff8",
+      "bytes": 5884,
+      "kind": "body",
+      "version": "v001"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/demo-files/exports/u07_snap_lid_v001.stl",
+      "sha256": "c80ea7d584a2f71cc0b2619ff903bdff57d8c97441d61111a0e8c7b839f55c21",
+      "bytes": 2484,
+      "kind": "lid",
+      "version": "v001"
+    }
+  ],
+  "specimen_scope": {
+    "existing_geometry_draft_count": 1,
+    "separate_parts": [
+      "Body",
+      "Lid"
+    ],
+    "new_parameter_variants_built": false,
+    "parameter_variant_comparison_results": null
+  },
+  "known_print_condition": {
+    "nozzle_diameter_mm": 0.4,
+    "evidence": {
+      "path": "learning/evidence/05/2026-10-22-print-conditions-v001.json",
+      "sha256": "61b631d2b7f815ea046b2afd5216dfa6b0f5dd8a0ef550b062fff6be6c4f6ca8",
+      "bytes": 676
+    },
+    "source": "learner_message; nozzle diameter only"
+  },
+  "pending_print_conditions": {
+    "printing_process": null,
+    "printer_model": null,
+    "material_grade": null,
+    "material_brand_and_batch": null,
+    "extrusion_width_mm": null,
+    "layer_height_mm": null,
+    "slicer_and_version": null,
+    "selected_final_orientation": null,
+    "support_settings": null,
+    "print_temperature_C": null,
+    "bed_temperature_C": null,
+    "print_speed_mm_s": null,
+    "infill_and_perimeters": null,
+    "post_processing": null
+  },
+  "orientation_and_support": {
+    "source_pose_role": "07-03 candidate comparison only; STL retains those world coordinates",
+    "support_strategy_status": "pending_slicer_review",
+    "final_print_orientation_approved": null,
+    "support_required": null,
+    "slicer_support_settings": null,
+    "bridge_or_support_qualified": null
+  },
+  "mechanical_conditions": {
+    "material_grade": null,
+    "epsilon_allow": null,
+    "root_flexibility_Q": null,
+    "required_deflection_mm": null,
+    "delta_allow_mm": null,
+    "strength_analysis_performed": false
+  },
+  "measurement_session": {
+    "measured_on": null,
+    "measured_by": null,
+    "measurement_instrument": null,
+    "instrument_resolution_mm": null,
+    "printed_specimen_ids": null
+  },
+  "physical_measurements": null,
+  "fit_results": null,
+  "measurement_fields_to_fill_in_a_new_version": {
+    "body_dimensions_mm": null,
+    "lid_dimensions_mm": null,
+    "beam_thickness_mm": null,
+    "hook_projection_mm": null,
+    "mating_feature_dimensions_mm": null,
+    "insertion_force_N": null,
+    "retention_or_removal_force_N": null,
+    "insertion_feel_notes": null,
+    "release_method": null,
+    "completed_cycles": null,
+    "first_failure_cycle": null,
+    "fracture_location": null,
+    "whitening_or_permanent_set_notes": null,
+    "support_removal_and_surface_damage_notes": null
+  },
+  "slicer_checked": false,
+  "support_generation_performed": false,
+  "printed": false,
+  "fit_tested": false,
+  "physical_interference": null,
+  "qualified_strength_N": null,
+  "qualified_clearance_mm": null,
+  "versioning_note": "Preserve this blank v001. Create a new record version linked to the exact printed STL and slicer settings when actual measurements or fit trials are performed; do not backfill invented values.",
+  "limitations": [
+    "One existing geometry draft was exported; no 2–3 arm-length/thickness variants were created.",
+    "Nozzle diameter does not determine material, line width, clearance, strain allowance, strength or support strategy.",
+    "Do not infer a failure cause from fracture location alone; no physical trial has occurred."
+  ]
+}

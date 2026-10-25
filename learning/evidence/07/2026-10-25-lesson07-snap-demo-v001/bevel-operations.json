@@ -1,0 +1,22 @@
+{
+  "hook": {
+    "offset": 0.800000011920929,
+    "offset_type": "OFFSET",
+    "segments": 1,
+    "profile": 0.5,
+    "affect": "EDGES",
+    "clamp_overlap": false,
+    "operator_id": "MESH_OT_bevel",
+    "offset_mm": 0.8000000499188906
+  },
+  "root": {
+    "offset": 0.6000000238418579,
+    "offset_type": "OFFSET",
+    "segments": 3,
+    "profile": 0.5,
+    "affect": "EDGES",
+    "clamp_overlap": false,
+    "operator_id": "MESH_OT_bevel",
+    "offset_mm": 0.6000000523403298
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "recordedOn": "2026-10-22",
+  "timezone": "Asia/Taipei",
+  "source": {
+    "type": "learner_message",
+    "quote": "為何需要提供，會影響到時麼?\n噴嘴為0.4mm"
+  },
+  "nozzleDiameterMm": 0.4,
+  "printingProcess": null,
+  "printerModel": null,
+  "material": null,
+  "extrusionWidthMm": null,
+  "layerHeightMm": null,
+  "printOrientation": null,
+  "slicer": null,
+  "selectedTotalClearanceMm": null,
+  "measuredDimensionsMm": null,
+  "note": "null 表示待定。噴嘴直徑不等於切片線寬，也不能由噴嘴直徑直接推定配合間隙。插銷名義尺寸 10 × 10 × 8 mm 是既有課程設計值，不是列印實測。"
+}

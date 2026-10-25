@@ -1,0 +1,288 @@
+{
+  "schemaVersion": 1,
+  "id": "release-content-review-2026-10-26",
+  "reviewedOn": "2026-10-26",
+  "timezone": "Asia/Taipei",
+  "actor": "read_only_release_content_auditor",
+  "purpose": "Expert editorial review before curated public GitHub release. No existing source, evidence, learner state, or Git data modified by this review.",
+  "scope": {
+    "documents": [
+      "AGENTS.md",
+      "README.md",
+      ".gitignore",
+      "learning/catalog.json",
+      "sources/manifest.json",
+      "sources/engineering/snapfit-source-facts-v001.json"
+    ],
+    "method": [
+      "Read current repository policy and direct catalog paths",
+      "Inspect audit source-cache receipts and filenames",
+      "Recursively scan evidence JSON string fields for recent-item inventories, C:/Users paths, notes and selected secret markers",
+      "Inspect two original image samples; rely on prior image ledger only for operational content, not privacy clearance"
+    ],
+    "notPerformed": [
+      "No full visual privacy review of all images",
+      "No legal or license clearance",
+      "No upstream asset download",
+      "No Git mutations, staging or push",
+      "No independent model/STL revalidation in this release content review"
+    ]
+  },
+  "catalogSnapshot": {
+    "sha256": "bccb40c653dd55883cc6ec04b46d22631681690122b258edfbfbb3e80c00e695",
+    "candidateWholeStringPaths": 656,
+    "existing": 655,
+    "missing": [
+      "learning/evidence/07/2026-10-25-lesson07-overhang-focus-v002/verification.json"
+    ],
+    "extensionCounts": {
+      ".md": 23,
+      ".jpg": 12,
+      ".json": 177,
+      ".png": 418,
+      ".blend": 11,
+      ".csv": 3,
+      ".stl": 10,
+      ".html": 1
+    },
+    "historicalAbsolutePathStringCount": 67,
+    "countLimit": "Whole strings starting learning/ or sources/, shorter than 350 characters; not a complete recursive reference graph."
+  },
+  "observations": [
+    {
+      "id": "blanket-ignore",
+      "severity": "release_blocker",
+      "finding": ".gitignore excludes all learning/evidence and learning/journal. A normal add omits the images, downloads and reports required by catalog. Force-adding the entire tree exposes unpublished probes and private provenance.",
+      "action": "Build a deterministic curated allowlist starting with catalog/web/report/approved journal references, recursively include teaching originals and required model/raw/snapshot dependencies, and apply explicit local-only overrides."
+    },
+    {
+      "id": "recent-inventory",
+      "severity": "privacy_release_blocker",
+      "finding": "runner-status.json records Windows Recent inventories, including unrelated filenames and timestamps. Top-level run metadata copies also embed runnerStatus.recentCleanup; excluding only runner-status filenames is insufficient.",
+      "action": "Do not publish raw JSON with recentCleanup, beforeLinks or afterLinks. Preserve originals locally. Publish separately named and clearly labelled sanitized summaries only if needed; record original hash and omission reason without copying unrelated inventory strings."
+    },
+    {
+      "id": "learner-state-in-baselines",
+      "severity": "privacy_release_blocker",
+      "finding": "Audit and route-decision baselines contain full progress snapshots; some publication baselines contain prior-step notes.",
+      "action": "Exclude personal progress, history, workspaces, baseline-v*.json, publication-baseline-v*.json, *-publication-baseline-v*.json, progress-baseline-v*.json and recovery inventories. Keep body_baseline_mesh.json and lid_baseline_mesh.json: these are geometry evidence, not private state."
+    },
+    {
+      "id": "copyright-cache",
+      "severity": "redistribution_release_blocker",
+      "finding": "Audit source-cache contains two full Covestro/BASF PDFs, six rendered pages and page-text extracts. sources-v002.json explicitly says redistribution license not reviewed, audit cache only.",
+      "action": "Exclude full source-cache from public files. Retain local originals, original URLs and hashes, and concise independently written facts. Public citation or download access does not establish redistribution permission. Do not add an umbrella MIT license to third-party material."
+    },
+    {
+      "id": "missing-reference",
+      "severity": "completeness_blocker",
+      "finding": "catalog contentReview references lesson07-overhang-focus-v002/verification.json; actual file is focus-verification.json.",
+      "action": "Correct the current catalog reference after verifying actual content. Do not rename or overwrite frozen run evidence."
+    },
+    {
+      "id": "historical-paths",
+      "severity": "portability_note",
+      "finding": "Catalog and raw geometry records contain historical D:/others/study/Blender-Learning paths; run metadata can also contain private C:/Users paths.",
+      "action": "Treat historical project paths as nonportable provenance, resolve current downloads by repository-relative paths, and do not rewrite frozen records to claim they were captured on a different machine. Block personal home/inventory paths from public package or use explicitly marked derived public summaries."
+    },
+    {
+      "id": "bootstrap",
+      "severity": "reproducibility_blocker",
+      "finding": "Excluded learner progress is correct for public sharing, but a fresh clone still needs deterministic local initialization with no copied learner completion/notes.",
+      "action": "Provide bootstrap/init and clean-clone checks; generate fresh progress locally, protect existing progress and workspace data, preserve current local revision/notes."
+    },
+    {
+      "id": "license-scope",
+      "severity": "release_note",
+      "finding": "SECourses upstream models have not been downloaded according to sources/manifest.json, and upstream redistribution permission has not been verified. Original teaching screenshots and locally generated geometry are distinct from upstream assets.",
+      "action": "Publish source attribution and explicit rights/limitations; do not fabricate an upstream license grant or choose a project-wide open-source license without owner instruction."
+    }
+  ],
+  "minimumPublicCollection": {
+    "include": [
+      "Application code: learning/manage.py, learning/server.py, web app/assets and launch/stop scripts",
+      "Tests and independent tutor source/scenarios required to inspect or reproduce procedures",
+      "Current catalog, approved plans, concise source fact extracts and sources/manifest.json",
+      "All catalog teaching screenshots in original pixels, companion capture metadata only when free of private inventories",
+      "11 referenced generated .blend scenes and 10 referenced STL exports, with raw geometry/verification/manifest dependencies as allowlisted",
+      "Approved journals needed for teaching provenance after text privacy review",
+      "Public report HTML/CSS and concise audit results, with local-only exclusions documented",
+      "Release manifest including path, byte count, SHA-256, source/derived status and omission reasons; independent file/URL checks"
+    ],
+    "localOnly": [
+      "learning/progress.json",
+      "learning/.history/**",
+      "learning/workspaces/**",
+      "learning/archive/**",
+      "learning/runtime.json",
+      "server logs, PID/lock data and caches",
+      "unpublished failed/probe runs unless explicitly needed and labelled as diagnostic evidence",
+      "raw metadata embedding Windows Recent lists",
+      "personal-state publication/audit baselines",
+      "recent-cleanup-recovery*.json",
+      "third-party full PDFs, rendered PDF pages and extracted page texts",
+      "environment/credential files or secret-marker matches"
+    ],
+    "boundary": "Public repository is a curated teaching and digital-evidence collection, not an exact mirror of private local execution history. Any reference deliberately omitted must be classified as local-only in release metadata, not represented as present. Current local files must remain untouched."
+  },
+  "sensitiveJsonScan": {
+    "recent_inventory": {
+      "count": 64,
+      "paths": [
+        "learning/evidence/05/2026-10-22-lesson05-demo-v002.json",
+        "learning/evidence/05/2026-10-22-lesson05-demo-v002/runner-status.json",
+        "learning/evidence/05/2026-10-22-lesson05-export-demo-v001/runner-status.json",
+        "learning/evidence/05/2026-10-22-lesson05-export-demo-v002/runner-status.json",
+        "learning/evidence/05/2026-10-22-lesson05-export-demo-v003.json",
+        "learning/evidence/05/2026-10-22-lesson05-export-demo-v003/runner-status.json",
+        "learning/evidence/05/2026-10-22-lesson05-export-view-v001/runner-status.json",
+        "learning/evidence/05/2026-10-22-lesson05-holes-demo-v001/runner-status.json",
+        "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002.json",
+        "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/runner-status.json",
+        "learning/evidence/05/2026-10-22-lesson05-holes-view-v001/runner-status.json",
+        "learning/evidence/05/2026-10-22-lesson05-lid-demo-v001.json",
+        "learning/evidence/05/2026-10-22-lesson05-lid-demo-v001/runner-status.json",
+        "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001.json",
+        "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/runner-status.json",
+        "learning/evidence/05/probes/2026-10-22-boolean-ui-v001/runner-status.json",
+        "learning/evidence/05/probes/2026-10-22-fit-export-ui-v001/runner-status.json",
+        "learning/evidence/05/probes/2026-10-22-fit-export-ui-v002/runner-status.json",
+        "learning/evidence/05/probes/2026-10-22-fit-export-ui-v003/runner-status.json",
+        "learning/evidence/06/2026-10-25-dovetail-ui-probe-v001/runner-status.json",
+        "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v001/runner-status.json",
+        "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002.json",
+        "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/runner-status.json",
+        "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001.json",
+        "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/runner-status.json",
+        "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v001/runner-status.json",
+        "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v002/runner-status.json",
+        "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v003/runner-status.json",
+        "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v004/runner-status.json",
+        "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v005/runner-status.json",
+        "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006.json",
+        "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/runner-status.json",
+        "learning/evidence/06/2026-10-25-tenon-operand-probe-v001/runner-status.json",
+        "learning/evidence/06/2026-10-25-tenon-operand-probe-v002/runner-status.json",
+        "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001.json",
+        "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/runner-status.json",
+        "learning/evidence/07/2026-10-25-lesson07-coupon-export-ui-probe-v001/runner-status.json",
+        "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001.json",
+        "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/runner-status.json",
+        "learning/evidence/07/2026-10-25-lesson07-coupons-ui-probe-v001/runner-status.json",
+        "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001.json",
+        "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/runner-status.json",
+        "learning/evidence/07/2026-10-25-lesson07-overhang-focus-v001/runner-status.json",
+        "learning/evidence/07/2026-10-25-lesson07-overhang-focus-v002/runner-status.json",
+        "learning/evidence/07/2026-10-25-lesson07-overhang-full-probe-v001/runner-status.json",
+        "learning/evidence/07/2026-10-25-lesson07-overhang-ui-probe-v001/runner-status.json",
+        "learning/evidence/07/2026-10-25-lesson07-overhang-ui-probe-v002/runner-status.json",
+        "learning/evidence/07/2026-10-25-lesson07-overhang-ui-probe-v003/runner-status.json",
+        "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001.json",
+        "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/runner-status.json",
+        "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001.json",
+        "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/runner-status.json",
+        "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001.json",
+        "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/runner-status.json",
+        "learning/evidence/07/2026-10-25-lesson07-snap-export-ui-probe-v001/runner-status.json",
+        "learning/evidence/07/2026-10-25-lesson07-snap-export-ui-probe-v002/runner-status.json",
+        "learning/evidence/07/2026-10-25-lesson07-snap-ui-probe-full-v001/runner-status.json",
+        "learning/evidence/07/2026-10-25-lesson07-snap-ui-probe-v001/runner-status.json",
+        "learning/evidence/07/2026-10-25-lesson07-snap-ui-probe-v002/runner-status.json",
+        "learning/evidence/07/2026-10-25-lesson07-snap-ui-probe-v003/runner-status.json",
+        "learning/evidence/07/2026-10-25-lesson07-snap-ui-probe-v004/runner-status.json",
+        "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001.json",
+        "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/runner-status.json",
+        "learning/evidence/08/2026-10-25-lesson08-parameters-ui-probe-v001/runner-status.json"
+      ]
+    },
+    "user_absolute_paths": {
+      "count": 63,
+      "paths": [
+        "learning/evidence/05/2026-10-22-lesson05-demo-v002/recent-cleanup-recovery.json",
+        "learning/evidence/05/2026-10-22-lesson05-export-demo-v001/runner-status.json",
+        "learning/evidence/05/2026-10-22-lesson05-export-demo-v002/runner-status.json",
+        "learning/evidence/05/2026-10-22-lesson05-export-demo-v003.json",
+        "learning/evidence/05/2026-10-22-lesson05-export-demo-v003/runner-status.json",
+        "learning/evidence/05/2026-10-22-lesson05-export-view-v001/runner-status.json",
+        "learning/evidence/05/2026-10-22-lesson05-holes-demo-v001/runner-status.json",
+        "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002.json",
+        "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/runner-status.json",
+        "learning/evidence/05/2026-10-22-lesson05-holes-view-v001/runner-status.json",
+        "learning/evidence/05/2026-10-22-lesson05-lid-demo-v001.json",
+        "learning/evidence/05/2026-10-22-lesson05-lid-demo-v001/runner-status.json",
+        "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001.json",
+        "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/runner-status.json",
+        "learning/evidence/05/probes/2026-10-22-boolean-ui-v001/runner-status.json",
+        "learning/evidence/05/probes/2026-10-22-fit-export-ui-v001/runner-status.json",
+        "learning/evidence/05/probes/2026-10-22-fit-export-ui-v002/runner-status.json",
+        "learning/evidence/05/probes/2026-10-22-fit-export-ui-v003/runner-status.json",
+        "learning/evidence/06/2026-10-25-dovetail-ui-probe-v001/runner-status.json",
+        "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v001/runner-status.json",
+        "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002.json",
+        "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/runner-status.json",
+        "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001.json",
+        "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/runner-status.json",
+        "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v001/runner-status.json",
+        "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v002/runner-status.json",
+        "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v003/runner-status.json",
+        "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v004/runner-status.json",
+        "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v005/runner-status.json",
+        "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006.json",
+        "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/runner-status.json",
+        "learning/evidence/06/2026-10-25-tenon-operand-probe-v001/runner-status.json",
+        "learning/evidence/06/2026-10-25-tenon-operand-probe-v002/runner-status.json",
+        "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001.json",
+        "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/runner-status.json",
+        "learning/evidence/07/2026-10-25-lesson07-coupon-export-ui-probe-v001/runner-status.json",
+        "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001.json",
+        "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/runner-status.json",
+        "learning/evidence/07/2026-10-25-lesson07-coupons-ui-probe-v001/runner-status.json",
+        "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001.json",
+        "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/runner-status.json",
+        "learning/evidence/07/2026-10-25-lesson07-overhang-focus-v001/runner-status.json",
+        "learning/evidence/07/2026-10-25-lesson07-overhang-focus-v002/runner-status.json",
+        "learning/evidence/07/2026-10-25-lesson07-overhang-full-probe-v001/runner-status.json",
+        "learning/evidence/07/2026-10-25-lesson07-overhang-ui-probe-v001/runner-status.json",
+        "learning/evidence/07/2026-10-25-lesson07-overhang-ui-probe-v002/runner-status.json",
+        "learning/evidence/07/2026-10-25-lesson07-overhang-ui-probe-v003/runner-status.json",
+        "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001.json",
+        "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/runner-status.json",
+        "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001.json",
+        "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/runner-status.json",
+        "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001.json",
+        "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/runner-status.json",
+        "learning/evidence/07/2026-10-25-lesson07-snap-export-ui-probe-v001/runner-status.json",
+        "learning/evidence/07/2026-10-25-lesson07-snap-export-ui-probe-v002/runner-status.json",
+        "learning/evidence/07/2026-10-25-lesson07-snap-ui-probe-full-v001/runner-status.json",
+        "learning/evidence/07/2026-10-25-lesson07-snap-ui-probe-v001/runner-status.json",
+        "learning/evidence/07/2026-10-25-lesson07-snap-ui-probe-v002/runner-status.json",
+        "learning/evidence/07/2026-10-25-lesson07-snap-ui-probe-v003/runner-status.json",
+        "learning/evidence/07/2026-10-25-lesson07-snap-ui-probe-v004/runner-status.json",
+        "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001.json",
+        "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/runner-status.json",
+        "learning/evidence/08/2026-10-25-lesson08-parameters-ui-probe-v001/runner-status.json"
+      ]
+    },
+    "learner_notes": {
+      "count": 4,
+      "paths": [
+        "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/publication-baseline-v001.json",
+        "learning/evidence/07/2026-10-25-lesson07-coupon-export-publication-baseline-v001.json",
+        "learning/evidence/08/2026-10-25-thread-route-decision-v001/baseline-v001.json",
+        "learning/evidence/audits/2026-10-25-claude-continuation-v001/baseline-v001.json"
+      ]
+    }
+  },
+  "imagePrivacySamples": [
+    {
+      "path": "learning/evidence/01/2026-10-22-01-02-language-10-main-verified-v001.jpg",
+      "observation": "Original Blender window only, unsaved default scene, no desktop or apparent account/name shown in this sample."
+    },
+    {
+      "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/08-01-01-source-open-dialog.png",
+      "observation": "Blender file browser shows historical project folder path plus standard system folders and a sop_video sidebar bookmark. No apparent real-name account data in this sample; directory labels remain visible.",
+      "limitation": "No claim that all other file-dialog screenshots are privacy-free."
+    }
+  ],
+  "releaseConclusion": "Curated release can be prepared after private inventories/source caches are excluded, actual link typo corrected, new-clone bootstrap supplied, and generated release manifest/clean-clone validation succeeds. This review does not authorize loss or rewriting of local historical evidence."
+}

@@ -1,0 +1,26 @@
+{
+  "recordedAt": "2026-10-22T07:11:08.717895+00:00",
+  "purpose": "Source snapshot retained during this demo run; source files were unchanged since launch",
+  "files": [
+    {
+      "source": "learning/tutor/run_demo.py",
+      "snapshot": "source-snapshot/run_demo.py",
+      "sha256": "01bd2316068888970d8a02a565d1265ae6bc7aa7400fd7c0013032eea0f7b941"
+    },
+    {
+      "source": "learning/tutor/blender_demo.py",
+      "snapshot": "source-snapshot/blender_demo.py",
+      "sha256": "96321d8180b1e05a9b77d47551adefbf43ddd04e6add2505eca3b30ceb831a6c"
+    },
+    {
+      "source": "learning/tutor/scenarios/common.py",
+      "snapshot": "source-snapshot/common.py",
+      "sha256": "45044c48522bf5a2dee130382f902a07243e82027addaf6594cbae59b3369c3d"
+    },
+    {
+      "source": "learning/tutor/scenarios/lesson05.py",
+      "snapshot": "source-snapshot/lesson05.py",
+      "sha256": "ceaacdfee9b7b16ee3a64b82bdf2a88cd75c3af73ab9995070466b9da1f8e574"
+    }
+  ]
+}

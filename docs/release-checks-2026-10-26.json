@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "reviewedOn": "2026-10-26",
+  "scope": "curated public staged checkout only; no author progress, private raw metadata or source-cache files present",
+  "stagedFilesAtInitialRun": 1117,
+  "publicHashedFilesAtInitialRun": 1115,
+  "manifestAndPathspecVerified": true,
+  "tests": {
+    "dashboardAndBootstrap": {
+      "run": 30,
+      "passed": 28,
+      "skipped": 2,
+      "log": "docs/checks-2026-10-26/release-dashboard-tests.txt"
+    },
+    "tutor": {
+      "run": 270,
+      "passed": 269,
+      "skipped": 1,
+      "log": "docs/checks-2026-10-26/release-tutor-tests.txt"
+    },
+    "totalRun": 300,
+    "totalPassed": 297,
+    "totalSkipped": 3,
+    "skipReason": "Windows account lacks requested symlink creation privilege; junction boundary test passed."
+  },
+  "javascriptSyntax": "passed",
+  "windowsLauncherActualSmoke": {
+    "powershellExe": "Windows PowerShell",
+    "NoBrowser": true,
+    "port": 8767,
+    "healthProjectMatchedIsolatedCheckout": true,
+    "bootstrapApiRead": true,
+    "reportAndDashboardHttp": 200,
+    "stoppedAfterCheck": true
+  },
+  "freshLearner": {
+    "revision": 1,
+    "activeLesson": "01",
+    "completedStepsEmpty": true,
+    "notesEmpty": true,
+    "eventsEmpty": true,
+    "fileVersionsEmpty": true,
+    "personalDecisionsEmpty": true,
+    "interfaceLanguage": null,
+    "blenderVersion": null
+  },
+  "authorProgressUnchanged": true,
+  "authorProgressSha256": "26130175ef80a9fb83699f93a8c33de7b098b17ffa2c10aef794808390d19325",
+  "editorialScope": [
+    "README restructured; original preserved in docs/project-history-2026-10-25.md",
+    "01-01/01-02 public-reader history framing; 08-01 original trial route choice distinguished from new learner choice",
+    "Missing focus verification reference corrected",
+    "Sensitive contentReview metadata references point to clearly labelled public derivatives; original operationRun/previousOperationRuns/setsLearner/image paths kept"
+  ],
+  "publicationBoundary": "No learner state, Windows Recent inventories, private baselines, original third-party PDFs/pages/full-text caches, unpublished probes or failed runs. Historical evidence may cite local-only files; omissions are declared.",
+  "immutableEvidenceWhitespace": "Four historical audit JSON/MD files have a blank line at EOF; retained authored bytes/hashes, while mutable code/doc whitespace check passed.",
+  "limits": [
+    "No native Blender replay or printing/fit/strength qualification in this release check.",
+    "Local test results are Windows/Python3.13; hosted workflow separately checks Python3.10 and3.13.",
+    "Package manifest will be regenerated for this report and build-only tool cleanup; tested dashboard/tutor/Blender evidence unchanged."
+  ]
+}

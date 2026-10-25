@@ -1,0 +1,27 @@
+{
+  "run": "2026-10-22-lesson05-lid-demo-v001",
+  "sceneVersion": "v001",
+  "scenePath": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\05\\2026-10-22-lesson05-lid-demo-v001\\demo-files\\u05_lid_v001.blend",
+  "sceneSha256": "ab08f331dcb26c5ffc6c6ca56c7c7f022df96791c4777e37c5f01a964fbed6ff",
+  "sceneBytes": 99064,
+  "sourceScenePath": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\04\\2026-10-22-lesson04-demo-v001\\demo-files\\u04_box_v001.blend",
+  "sourceSceneSha256": "b918ee87d26e289f4c8a2f6633beceb854c7d0511e3eddcc969a0696afcd2530",
+  "openedCopyPath": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\05\\2026-10-22-lesson05-lid-demo-v001\\demo-files\\sources\\u04_box_v001.blend",
+  "openedCopySha256": "b918ee87d26e289f4c8a2f6633beceb854c7d0511e3eddcc969a0696afcd2530",
+  "objects": [
+    "Body",
+    "Lid"
+  ],
+  "bodyUnchanged": true,
+  "reopened": true,
+  "trial": {
+    "status": "experimental_geometry_only",
+    "selected_by": "tutor",
+    "total_clearance_mm": 0.4,
+    "per_side_clearance_mm": 0.2,
+    "qualified_clearance_mm": null
+  },
+  "printed": false,
+  "fit_tested": false,
+  "qualified_clearance_mm": null
+}

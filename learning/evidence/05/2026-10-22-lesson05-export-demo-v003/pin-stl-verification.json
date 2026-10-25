@@ -1,0 +1,51 @@
+{
+  "format": "binary_stl",
+  "stl_path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\05\\2026-10-22-lesson05-export-demo-v003\\demo-files\\exports\\u05_fit_coupon_v001.stl",
+  "stl_sha256": "bc10342c54a94d87c15eccb050fb9b30a7ae00bf4079d4c7869ac53d199db784",
+  "byte_size": 684,
+  "triangle_count": 12,
+  "vertex_count": 8,
+  "edge_count": 18,
+  "bounds_mm": {
+    "min": [
+      -5.0,
+      -5.0,
+      -4.0
+    ],
+    "max": [
+      5.0,
+      5.0,
+      4.0
+    ]
+  },
+  "dimensions_mm": [
+    10.0,
+    10.0,
+    8.0
+  ],
+  "non_manifold_edges": 0,
+  "inconsistent_winding_edges": 0,
+  "non_manifold_vertex_links": 0,
+  "connected_shells": 1,
+  "euler_characteristic": 2,
+  "genus": 0,
+  "signed_volume_mm3": 800.0,
+  "volume_mm3": 800.0,
+  "nonzero_attribute_fields": 0,
+  "unit_interpretation": "STL has no units; numeric coordinates are interpreted as millimetres for this export",
+  "passed": true,
+  "kind": "pin",
+  "source_metadata_compared": [
+    "volume_mm3",
+    "dimensions_mm"
+  ],
+  "printed": false,
+  "fit_tested": false,
+  "qualified_clearance_mm": null,
+  "numericComparison": {
+    "purpose": "Floating point reconstruction only; not manufacturing tolerance or fit acceptance",
+    "dimensionsAbsMm": 0.0001,
+    "coordinateWeldMm": 1e-05,
+    "volumeRelative": 1e-05
+  }
+}

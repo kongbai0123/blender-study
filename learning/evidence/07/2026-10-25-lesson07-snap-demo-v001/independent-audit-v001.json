@@ -1,0 +1,55 @@
+{
+  "passed": true,
+  "recordedAt": "2026-10-25T07:48:34.426942+00:00",
+  "scope": "independent oriented-edge/connected-shell/volume, PNG/HTTP/provenance and pending physical conditions; no strength/fit judgement",
+  "geometry": {
+    "source_body_mesh.json": {
+      "vertices": 16,
+      "triangles": 28,
+      "euler": 2,
+      "signedVolumeMm3": 15552.0,
+      "closedOrientedSingleShell": true,
+      "sha256": "b3101108787bd264bf95af51db1d5c23aff408a95b4c961f77a66bb37ad29370"
+    },
+    "snap_tool_mesh.json": {
+      "vertices": 42,
+      "triangles": 80,
+      "euler": 2,
+      "signedVolumeMm3": 339.48449087283524,
+      "closedOrientedSingleShell": true,
+      "sha256": "c60a6ed737f426277e0157ad1f7554a3070ba4395aec319693d6a2d9104c6140"
+    },
+    "body_mesh.json": {
+      "vertices": 60,
+      "triangles": 116,
+      "euler": 2,
+      "signedVolumeMm3": 15888.784532071562,
+      "closedOrientedSingleShell": true,
+      "sha256": "f40578c09793b6418afaf6b3f5508016a7186022f46bf37695f0c9d25e6df86f"
+    },
+    "flange_tool_mesh.json": {
+      "vertices": 16,
+      "triangles": 28,
+      "euler": 2,
+      "signedVolumeMm3": 85.20000629425346,
+      "closedOrientedSingleShell": true,
+      "sha256": "1e88912ceafbb4c8c6cd1d267fc66043f7b39ce96b2d1499870fb7e79a2a5e05"
+    },
+    "lid_mesh.json": {
+      "vertices": 26,
+      "triangles": 48,
+      "euler": 2,
+      "signedVolumeMm3": 5602.200023460393,
+      "closedOrientedSingleShell": true,
+      "sha256": "54bcbdce1ca5ab3ee8b1118d6f5135c44ff2519fa2c5821b0ce30ed746c08dd8"
+    }
+  },
+  "sourceAndOpenedCopyUnchanged": true,
+  "newSceneHashVerified": true,
+  "progressUnchanged": true,
+  "physicalResultsNull": true,
+  "visualChecks": [
+    "formal17 inner ledge visible",
+    "formal21 actual temporarily raised lid shows catch and mating skirt; not deformation simulation"
+  ]
+}

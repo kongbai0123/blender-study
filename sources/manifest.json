@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "repository": "https://github.com/FurkanGozukara/Blender-Full-Tutorial-Lecture-2026-2027",
+  "lesson": "week01",
+  "reviewedReference": "https://github.com/FurkanGozukara/Blender-Full-Tutorial-Lecture-2026-2027/tree/main/week01",
+  "reviewStatus": "先前已讀的 week01 README 已整理成內部事實擷取紀錄；來源數值已核對，尚未下載或開啟上游 .blend。",
+  "upstreamBlenderVersion": "5.2.2 LTS (教材 README 自述)",
+  "pinnedCommit": null,
+  "downloadedAt": null,
+  "licenseStatus": "素材再散布授權尚未核對",
+  "files": [],
+  "note": "目前從自己的預設場景開始學習，尚未下載上游 .blend；files 為空不表示教材下載完成。",
+  "documents": [
+    {
+      "path": "sources/secourses/week01-observed-facts-2026-10-22.json",
+      "kind": "fact_extract_from_previously_read_readme",
+      "sourceURL": "https://github.com/FurkanGozukara/Blender-Full-Tutorial-Lecture-2026-2027/tree/main/week01",
+      "sourceRef": "main，未固定 commit",
+      "reviewedOn": "2026-10-22",
+      "sha256": "d910ea67d1db0a08a77b72d22073a93912ffb304c11469a99f6691cdb75f7417",
+      "note": "依本聊天先前 Firecrawl 讀取內容提取數值；不是本地模型驗證或影片逐字稿。"
+    }
+  ],
+  "engineeringReferences": [
+    {
+      "path": "sources/engineering/snapfit-source-facts-v001.json",
+      "kind": "manufacturer_formula_and_conditions_fact_extract",
+      "reviewedOn": "2026-10-25",
+      "sha256": "291d1704ea12834969e74e79b948cf2677524fda7a852fa8434c017a674169f8",
+      "sourceURL": "https://solutions.covestro.com/-/media/covestro/solution-center/brands/downloads/imported/1557218421.pdf",
+      "localPdfDownloaded": false,
+      "localPdfSha256": null,
+      "redistributionLicenseStatus": "未核對；只保存公式與簡短轉述，不收錄原圖或原冊",
+      "note": "07-01 自編工程補充依據；參數與材料條件待定，不是 SECourses 第一講內容或列印件合格資料。"
+    },
+    {
+      "path": "sources/engineering/overhang-source-facts-v001.json",
+      "kind": "installed_build_native_overhang_semantics_fact_extract",
+      "reviewedOn": "2026-10-25",
+      "sha256": "a2fa8d6c556cacb533b94648a994e2cb92baa33fccd4b513d9681d34187d8c05",
+      "sourceURL": "https://raw.githubusercontent.com/blender/blender/9e2066aef7ef/source/blender/draw/intern/mesh_extractors/extract_mesh_vbo_mesh_analysis.cc",
+      "pinnedCommit": "9e2066aef7ef",
+      "installedVersion": "5.2.1 LTS",
+      "additionalDimensionReference": {
+        "url": "https://raw.githubusercontent.com/blender/blender/9e2066aef7ef/source/blender/blenkernel/intern/object.cc",
+        "locator": "boundbox_to_dimensions／BKE_object_dimensions_get，lines 3498–3513",
+        "reviewedOn": "2026-10-25",
+        "note": "同build實作以物件boundbox邊長乘scale取得Dimensions，不以旋轉後世界XYZ外框替代。07-03重開實拍N面板與世界raw讀值分開記錄；本機未下載此原始碼全文。"
+      },
+      "localSourceDownloaded": false,
+      "localPdfDownloaded": false,
+      "redistributionLicenseStatus": "僅保存簡短事實轉述與來源位置；未收錄原始碼全文、原圖或手冊全文。",
+      "note": "07-03 自編工程補充；以同 build 官方程式及本機 UI source 核對原生角度和色帶語義。2.93 手冊僅作歷史背景。本機 UI 檔案雜湊另記 facts；衍生面積不是 GPU 讀值，也不是支撐、列印或強度合格資料。"
+    },
+    {
+      "path": "sources/engineering/thread-source-facts-v001.json",
+      "kind": "thread_terminology_and_installed_screw_mapping_fact_extract",
+      "reviewedOn": "2026-10-25",
+      "sha256": "78a0b7b1092287e7956b9a11da17f4b1ef838c7da50473e989d05cc759b67834",
+      "sourceURL": "https://docs.blender.org/manual/en/5.2/modeling/modifiers/generate/screw.html",
+      "additionalSources": [
+        "https://github.com/blender/blender/blob/9e2066aef7ef/source/blender/modifiers/intern/MOD_screw.cc",
+        "https://www.sandvik.coromant.com/en-us/knowledge/threading/thread-turning/thread-turning-application-tips"
+      ],
+      "pinnedBlenderCommit": "9e2066aef7ef",
+      "sourceImagesUsed": false,
+      "fullStandardsObtained": false,
+      "note": "08-01定義與待定參數；沒有選定M規格、建牙、列印或實體合格值。"
+    }
+  ]
+}

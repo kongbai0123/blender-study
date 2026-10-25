@@ -1,0 +1,1401 @@
+{
+  "schemaVersion": 1,
+  "auditId": "2026-10-25-claude-continuation-v001-images-06-08",
+  "reviewer": "Codex subagent /root/audit_images_06_08",
+  "checkedAt": "2026-10-25T15:24:04.775933+00:00",
+  "scope": {
+    "steps": [
+      "06-02",
+      "06-03",
+      "08-01"
+    ],
+    "catalogSha256": "ab128fec13eeb4d1e64851f452892c4b9972ddd73bd08719f697b369d2d983fd",
+    "inventoryPath": "learning/evidence/audits/2026-10-25-claude-continuation-v001/image-inventory-v001.json",
+    "inventorySha256": "02cc0006ad9c3e8afa12d4aa2a9a2872cded749171aebc82786a450b6ca22c49",
+    "publishedOnly": true,
+    "includesProbe": false,
+    "pathCount": 61,
+    "uniquePixelHashesViewed": 58,
+    "duplicatePaths": 3,
+    "byStep": {
+      "06-02": {
+        "paths": 24,
+        "firstSeenUniqueHashes": 24
+      },
+      "06-03": {
+        "paths": 25,
+        "firstSeenUniqueHashes": 22
+      },
+      "08-01": {
+        "paths": 12,
+        "firstSeenUniqueHashes": 12
+      }
+    }
+  },
+  "method": {
+    "actualInspection": "逐一使用 tools.view_image 開啟原PNG；每批2–4張個別原圖，沒有拼貼、重畫或修改像素。58個不同SHA全數實際目視，3個相同SHA路徑沿用已目視原圖並逐事件對照。",
+    "comparison": "比較catalog operationRun.events.action、observed、note與figure。記錄圖上可見、需raw／實檔的內容，不將文字讀值等同截圖已證明。",
+    "notPerformed": [
+      "本分工未啟動Blender",
+      "本分工未獨立重算STL或網格",
+      "未用舊audit取代逐圖檢查",
+      "未判斷列印／強度／試配合格",
+      "未修改catalog/progress或舊evidence"
+    ],
+    "hashes": "對61檔另以SHA-256重新計算，均與inventory一致。"
+  },
+  "result": {
+    "visibleContradictions": 0,
+    "criticalFindings": 0,
+    "highFindings": 0,
+    "mediumFindings": 0,
+    "lowFindings": 3,
+    "informationalFindingGroups": 3,
+    "qualification": "58個不同像素畫面皆與可觀察的操作敘述相容。此結論只涵蓋畫面，精確幾何／hash／拓撲仍須raw及獨立數值審查；不代表製程或物理合格。"
+  },
+  "findings": [
+    {
+      "id": "PRESENTATION-HIDE-06-02-03",
+      "severity": "low",
+      "step": "06-02",
+      "seq": 3,
+      "issue": "工具單獨顯示時Body已隱藏，該動作文字未提這項視圖準備。",
+      "recommendation": "日後補充本圖先隱藏Body、只顯示GuideTool，不改歷史原圖。"
+    },
+    {
+      "id": "PRESENTATION-GAP-06-02-17",
+      "severity": "low",
+      "step": "06-02",
+      "seq": 17,
+      "issue": "action寫從實際截面量gap，但配圖為組裝概觀，燕尾輪廓受上蓋遮擋，不能在圖讀到間隙。",
+      "recommendation": "明示本圖僅示組裝、gap來自已保存world mesh截面計算；若需教學量測介面另做新版本實拍。"
+    },
+    {
+      "id": "PRESENTATION-PROFILE-06-03-03",
+      "severity": "low",
+      "step": "06-03",
+      "seq": 3,
+      "issue": "action泛稱核對燕尾槽／榫，但當圖只顯示Body，SlidingLid及榫已隱藏。",
+      "recommendation": "改為核對Body燕尾槽端面；榫另指向Lid端視圖。"
+    },
+    {
+      "id": "UI-PRECISION-06-02-12",
+      "severity": "informational",
+      "step": "06-02",
+      "seq": 12,
+      "issue": "MaleTool Item Dimensions Y顯示37.1 mm，observed精值37.12 mm；顯示位數不足本身不構成矛盾。",
+      "recommendation": "由raw確認精值，並註明UI取顯示精度；不可宣稱畫面直接顯示37.12。"
+    },
+    {
+      "id": "LOCAL-WORLD-08-01-FACES",
+      "severity": "informational",
+      "step": "08-01",
+      "seqs": [
+        4,
+        5,
+        6
+      ],
+      "issue": "三面截圖顯示Local Median（−19/15、−13、−15），observed則為world min/max。",
+      "recommendation": "維持圖讀Median與raw world bbox分欄，僅在此reference的identity transform條件下可等同座標。"
+    },
+    {
+      "id": "DUPLICATE-PIXELS",
+      "severity": "informational",
+      "steps": [
+        "06-02",
+        "06-03"
+      ],
+      "issue": "06-03 #9與06-02 #14同SHA；#10與06-02 #15同SHA；#25與同run #24同SHA。",
+      "recommendation": "精確記為61路徑、58不同像素，不以相同畫面證新增操作；時間與實檔結果依各run raw。"
+    }
+  ],
+  "routeTiming": {
+    "currentCatalogDecision": "目前threadPlan.routeDecision.selected=both；verbatimReply=1.2.憶起；tutor解讀為1、2一起。",
+    "currentRecordPath": "learning/evidence/08/2026-10-25-thread-route-decision-v001/route-decision-v001.json",
+    "historicalRun": "08-01 operationRun與parameter v001攝錄當時route selected=null；現在catalog routeSummary已明示為選擇前狀態。",
+    "assessment": "目前決定與舊run待定敘述分開標時態，不是圖文錯誤；此分工未重驗decision檔hash。"
+  },
+  "images": [
+    {
+      "step": "06-02",
+      "seq": 1,
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-01-source-open-dialog.png",
+      "sha256": "a7d4e02fbdccfc1490fbde3565114960f21eb2259f46fec3ee6b08927ef9205d",
+      "actualSha256": "a7d4e02fbdccfc1490fbde3565114960f21eb2259f46fec3ee6b08927ef9205d",
+      "hashMatches": true,
+      "actionCompared": "File > Open，開啟原04通用小盒同 hash 副本，建立獨立滑蓋分支",
+      "observedCompared": "資料夾 D:\\others\\study\\Blender-Learning\\learning\\evidence\\06\\2026-10-25-lesson06-dovetail-demo-v002\\demo-files\\sources\\；檔名 u04_box_v001.blend。",
+      "noteCompared": null,
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Open對話框列出u04_box_v001.blend；上方路徑顯示本run/demo-files/sources尾段；Open按鈕可見。",
+      "requiresRawOrOtherEvidence": "完整路徑被截短，副本hash及另建分支須檔案／raw證據。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "06-02",
+      "seq": 2,
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-02-source-geometry.png",
+      "sha256": "269975dc4137eabae1d2685ddd01dd787ed724aaaf8e63af50b4cae8ba2a4d3c",
+      "actualSha256": "269975dc4137eabae1d2685ddd01dd787ed724aaaf8e63af50b4cae8ba2a4d3c",
+      "hashMatches": true,
+      "actionCompared": "修改前核對原盒，確認這次沒有定位柱或環唇",
+      "observedCompared": "原盒60 × 40 × 30、內腔56 × 36 × 28、壁底2 mm，改前重驗。06-01 的定位柱與環唇會阻擋滑動，因此本次另建滑蓋分支，不覆寫前版。",
+      "noteCompared": null,
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "作用Cube，空心矩形盒、沒有定位柱或環唇；Item外形60/40/30 mm、Location0、Scale1。",
+      "requiresRawOrOtherEvidence": "內腔56/36/28、壁底2及來源不覆寫不能只由本圖量出。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "06-02",
+      "seq": 3,
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-03-guide-blocks.png",
+      "sha256": "0a2fe628ad11e6b0ebd89a88a399dc7563eb2ed2cc102e4ed85ee0673dc5d3c0",
+      "actualSha256": "0a2fe628ad11e6b0ebd89a88a399dc7563eb2ed2cc102e4ed85ee0673dc5d3c0",
+      "hashMatches": true,
+      "actionCompared": "新增60 × 6 × 5方塊，中心Y17／Z12.5；Edit Mode Shift+D Y−34mm，做對稱導軌加厚工具",
+      "observedCompared": "GuideTool Dimensions (60 mm, 40 mm, 5 mm)、Location (0 mm, 17 mm, 12.5 mm)、Scale (1, 1, 1)。Item Dimensions 是成對工具總外框，Location 為第一條建構時的物件原點。單條名義60 × 6 × 5 mm；成對Y外框40 mm。兩條實際中心Y±17、截面、端面與封閉工具網格均已由world mesh核對。",
+      "noteCompared": "導軌向盒內增加4 mm；局部盒口會縮小，不宣稱原內腔全高仍36 mm寬。",
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "GuideTool為兩條分離長方塊；Item60/40/5 mm、Location0/17/12.5、Scale1，符合成對工具總外框說明。",
+      "requiresRawOrOtherEvidence": "Shift+D與單條6mm寬等建構歷程需run事件／world mesh；Body此時在Outliner隱藏，動作文字未交代這一視圖準備。",
+      "result": "compatible_with_presentation_issue",
+      "severity": "low",
+      "findingId": "PRESENTATION-HIDE-06-02-03"
+    },
+    {
+      "step": "06-02",
+      "seq": 4,
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-04-guide-union.png",
+      "sha256": "b1bcc1c5a15a82effaa45275052a670b6d095e8e50abf2b29ea6350257438965",
+      "actualSha256": "b1bcc1c5a15a82effaa45275052a670b6d095e8e50abf2b29ea6350257438965",
+      "hashMatches": true,
+      "actionCompared": "選 Body，新增 Boolean UNION，Object 搜尋指定 GuideTool",
+      "observedCompared": "Body：UNION／EXACT，Object GuideTool；這是 Apply 前的真實預覽。",
+      "noteCompared": null,
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Body Boolean面板Union與Exact已選，Object欄顯示GuideT…；盒口兩側加厚預覽可見。",
+      "requiresRawOrOtherEvidence": "Object欄截短；完整指定名與實際apply尚需raw／下一圖。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "06-02",
+      "seq": 5,
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-05-guides-applied.png",
+      "sha256": "026367974362bd7bca5bc6c69f4273ef5dfa0ae8e632a9c66d39085e5d567e79",
+      "actualSha256": "026367974362bd7bca5bc6c69f4273ef5dfa0ae8e632a9c66d39085e5d567e79",
+      "hashMatches": true,
+      "actionCompared": "Apply Union，核對實際加厚導軌與原盒連成一體",
+      "observedCompared": "Body Dimensions (60 mm, 40 mm, 30 mm)、Location (0 mm, 0 mm, 0 mm)、Scale (1, 1, 1)。加厚區位於Y±14～20、Z10～15，原外形未增加。",
+      "noteCompared": null,
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "加厚導軌與盒體外框連續；modifier面板已空；Item60/40/30、Location0、Scale1。",
+      "requiresRawOrOtherEvidence": "加厚區精確Y/Z邊界與是否單殼需world mesh。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "06-02",
+      "seq": 6,
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-06-groove-tools.png",
+      "sha256": "1116896ca9d646839c8dbee7279f08d42e353ffcbdb17e4d26922cee6434c3a8",
+      "actualSha256": "1116896ca9d646839c8dbee7279f08d42e353ffcbdb17e4d26922cee6434c3a8",
+      "hashMatches": true,
+      "actionCompared": "建62 × 3.6 × 4切割體；頂面 S Y 0.555555556 使頂寬2，再複製Y−34mm",
+      "observedCompared": "GrooveTool Dimensions (62 mm, 37.6 mm, 4 mm)、Location (0 mm, 17 mm, 13.8 mm)、Scale (1, 1, 1)。Item Dimensions 是成對工具總外框，Location 為第一條建構時的物件原點。單條名義長62／底寬3.6／頂寬2／高4 mm；成對Y外框37.6 mm。兩條實際中心Y±17、截面、端面與封閉工具網格均已由world mesh核對。",
+      "noteCompared": "切割體Z11.8～15.8；X±31超出原盒兩端，避免封閉入口。斜率由上下實際輪廓讀回。",
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "兩條梯形長工具，作用GrooveTool；Item62/37.6/4、Location0/17/13.8、Scale1。",
+      "requiresRawOrOtherEvidence": "頂縮比例及底／頂寬不能由總Dimensions逐一驗；需原始工具截面。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "06-02",
+      "seq": 7,
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-07-groove-difference.png",
+      "sha256": "e832535badf710d8120deacd39047c3466c39e1c96327add42c0f7a88aeb8d69",
+      "actualSha256": "e832535badf710d8120deacd39047c3466c39e1c96327add42c0f7a88aeb8d69",
+      "hashMatches": true,
+      "actionCompared": "選 Body，新增 Boolean DIFFERENCE，Object 搜尋指定 GrooveTool",
+      "observedCompared": "Body：DIFFERENCE／EXACT，Object GrooveTool；這是 Apply 前的真實預覽。",
+      "noteCompared": null,
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Body Boolean面板Difference及Exact已選，Object顯示Groove…；兩槽預覽可見。",
+      "requiresRawOrOtherEvidence": "完整工具名由raw；未證apply。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "06-02",
+      "seq": 8,
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-08-body-grooves.png",
+      "sha256": "a7f9a013a829ccfb55037488e188dc7fca264a855fde2ed258f15f8efbc48b37",
+      "actualSha256": "a7f9a013a829ccfb55037488e188dc7fca264a855fde2ed258f15f8efbc48b37",
+      "hashMatches": true,
+      "actionCompared": "Apply Difference，核對兩端開口、斜槽、剩餘壁厚與原盒外形",
+      "observedCompared": "Body 外形仍 60 × 40 × 30 mm；兩側加厚導軌 Z10～15，盒口中央局部縮至 56 × 28。燕尾槽在 X 兩端貫通，槽底 Z11.8、寬3.6，rim Z15 的槽口寬2.32 mm；單殼、Non Manifold 0。",
+      "noteCompared": null,
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Body兩側縱槽可見，modifier清空；Item60/40/30。",
+      "requiresRawOrOtherEvidence": "56×28口寬、3.6/2.32槽寬、Z及單殼NM0均未在圖中直接標示；需raw。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "06-02",
+      "seq": 9,
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-09-body-end-profile.png",
+      "sha256": "75f83513063b274cbc10fbea3761154118f574a7c75823ef87089e47863b2afd",
+      "actualSha256": "75f83513063b274cbc10fbea3761154118f574a7c75823ef87089e47863b2afd",
+      "hashMatches": true,
+      "actionCompared": "沿X看盒體實際端面，查看兩個貫通燕尾槽入口",
+      "observedCompared": "Body 外形仍 60 × 40 × 30 mm；兩側加厚導軌 Z10～15，盒口中央局部縮至 56 × 28。燕尾槽在 X 兩端貫通，槽底 Z11.8、寬3.6，rim Z15 的槽口寬2.32 mm；單殼、Non Manifold 0。",
+      "noteCompared": "這是Right Orthographic的真實端面視圖，未切片或重畫剖面；槽口到槽底的深度3.2 mm。",
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Right Orthographic標籤；盒頂兩個下寬上窄槽入口輪廓清楚，Item60/40/30。",
+      "requiresRawOrOtherEvidence": "正交前後遮擋不能單張證兩端貫通；Z、寬深精值需raw截面／其他視圖。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "06-02",
+      "seq": 10,
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-10-body-non-manifold.png",
+      "sha256": "72bc86d2fcd77b1d03ab734e7d2c143566174d7d6557641852b85a9cfaea152e",
+      "actualSha256": "72bc86d2fcd77b1d03ab734e7d2c143566174d7d6557641852b85a9cfaea152e",
+      "hashMatches": true,
+      "actionCompared": "選 Body，Tab > 邊選取 > Select None > Select Non Manifold",
+      "observedCompared": "Body：Select Non Manifold 選到0條邊；實際網格非流形邊0。",
+      "noteCompared": null,
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Edit Mode邊模式、Nothing selected、左下Select Non-Manifold上次操作提示，符合未選到邊。",
+      "requiresRawOrOtherEvidence": "精確NM0需選取計數與mesh；圖只證沒有可見選取。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "06-02",
+      "seq": 11,
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-11-lid-plate.png",
+      "sha256": "22cd7d1b9dc4f3cd0ef8b28b5fcab08047085787754d310dc14b2fa7970c61a9",
+      "actualSha256": "22cd7d1b9dc4f3cd0ef8b28b5fcab08047085787754d310dc14b2fa7970c61a9",
+      "hashMatches": true,
+      "actionCompared": "新增滑蓋板60 × 40 × 2 mm，中心Z16.2，板底留在盒頂上方0.2 mm",
+      "observedCompared": "SlidingLid Dimensions (60 mm, 40 mm, 2 mm)、Location (0 mm, 0 mm, 16.2 mm)、Scale (1, 1, 1)。",
+      "noteCompared": null,
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "單一SlidingLid板，Item60/40/2 mm、Location0/0/16.2、Scale1。",
+      "requiresRawOrOtherEvidence": "盒體隱藏，板底與盒頂0.2距離需raw兩件座標。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "06-02",
+      "seq": 12,
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-12-male-ribs.png",
+      "sha256": "68f9b3508492b2a9e82840c80e1fb5565f2118db11f25abf5d30e69465629401",
+      "actualSha256": "68f9b3508492b2a9e82840c80e1fb5565f2118db11f25abf5d30e69465629401",
+      "hashMatches": true,
+      "actionCompared": "燕尾榫工具底寬3.12／頂寬1.76、高3.4；中心Z13.7、Y±17，讀回兩條同斜率榫",
+      "observedCompared": "MaleTool Dimensions (60 mm, 37.12 mm, 3.4 mm)、Location (0 mm, 17 mm, 13.7 mm)、Scale (1, 1, 1)。Item Dimensions 是成對工具總外框，Location 為第一條建構時的物件原點。單條名義長60／底寬3.12／頂寬1.76／高3.4 mm；成對Y外框37.12 mm。兩條實際中心Y±17、截面、端面與封閉工具網格均已由world mesh核對。",
+      "noteCompared": "工具頂Z15.4與板交入0.2；Union後埋入板內的頂面消失，成品可見榫到板底Z15.2。0.4是同高度水平總差試驗值。",
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "MaleTool成對兩條梯形榫工具；Item60/37.1/3.4，Location0/17/13.7、Scale1。",
+      "requiresRawOrOtherEvidence": "Y讀值顯示37.1而文字精值37.12，屬UI有限位數候選，需raw確認，不能圖證37.12；底頂寬與同斜率需raw。",
+      "result": "compatible_with_information_limit",
+      "severity": "informational",
+      "findingId": "UI-PRECISION-06-02-12"
+    },
+    {
+      "step": "06-02",
+      "seq": 13,
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-13-lid-union.png",
+      "sha256": "b3f4c8bec99c35b4609c64922bcdcc4f7f525f8fd454bdf4542ece1fac1768a5",
+      "actualSha256": "b3f4c8bec99c35b4609c64922bcdcc4f7f525f8fd454bdf4542ece1fac1768a5",
+      "hashMatches": true,
+      "actionCompared": "選 SlidingLid，新增 Boolean UNION，Object 搜尋指定 MaleTool",
+      "observedCompared": "SlidingLid：UNION／EXACT，Object MaleTool；這是 Apply 前的真實預覽。",
+      "noteCompared": null,
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "SlidingLid Boolean面板Union/Exact、Object MaleTool清楚；Item60/40/5.2，為套用前預覽。",
+      "requiresRawOrOtherEvidence": "圖未表體積、拓撲及精確榫截面。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "06-02",
+      "seq": 14,
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-14-lid-underside.png",
+      "sha256": "a524c1369371e2c3134cd56ba7e3ff1caa66c04904c243b7924c0c4d3f304b4b",
+      "actualSha256": "a524c1369371e2c3134cd56ba7e3ff1caa66c04904c243b7924c0c4d3f304b4b",
+      "hashMatches": true,
+      "actionCompared": "Apply Union，從底部斜視核對一體燕尾榫與滑蓋板",
+      "observedCompared": "SlidingLid 外形 60 × 40 × 5.2 mm；蓋板厚2、Z15.2～17.2。兩條燕尾榫底 Z12、寬3.12，與板底相交處 Z15.2、寬1.84；已 Union 一體閉合，Non Manifold 0。",
+      "noteCompared": null,
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "底部斜視能見兩條燕尾榫連在蓋板底，modifier空；Item60/40/5.2。",
+      "requiresRawOrOtherEvidence": "底Z12／1.84交線寬、2厚及NM0需mesh；此角度下寬上窄細節不如下一端視圖。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "06-02",
+      "seq": 15,
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-15-lid-end-profile.png",
+      "sha256": "7d6f39f90b987a1b6d2dc1444ce9d5d7bee1c13fd286aeba973f00e148867d63",
+      "actualSha256": "7d6f39f90b987a1b6d2dc1444ce9d5d7bee1c13fd286aeba973f00e148867d63",
+      "hashMatches": true,
+      "actionCompared": "沿X看滑蓋實際端面，核對下寬上窄的兩條燕尾榫",
+      "observedCompared": "SlidingLid 外形 60 × 40 × 5.2 mm；蓋板厚2、Z15.2～17.2。兩條燕尾榫底 Z12、寬3.12，與板底相交處 Z15.2、寬1.84；已 Union 一體閉合，Non Manifold 0。",
+      "noteCompared": "真實Right Orthographic視圖；榫外露深3.2 mm，建構工具交入板內的0.2 mm已在Union後消失。",
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Right Orthographic；兩榫下寬上窄輪廓清楚，蓋與榫一連續外輪廓；Item60/40/5.2。",
+      "requiresRawOrOtherEvidence": "沒有量測標尺／尺寸註記證3.12、1.84、外露3.2；需raw。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "06-02",
+      "seq": 16,
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-16-lid-non-manifold.png",
+      "sha256": "357690116eb54d80516c45782d0a0c77466cf13809529fe053572b614bc7c3e3",
+      "actualSha256": "357690116eb54d80516c45782d0a0c77466cf13809529fe053572b614bc7c3e3",
+      "hashMatches": true,
+      "actionCompared": "選 SlidingLid，Tab > 邊選取 > Select None > Select Non Manifold",
+      "observedCompared": "SlidingLid：Select Non Manifold 選到0條邊；實際網格非流形邊0。",
+      "noteCompared": null,
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Edit Mode邊模式、Nothing selected與Select Non-Manifold操作提示；未見選取邊。",
+      "requiresRawOrOtherEvidence": "NM0及單殼仍需raw選取計數／拓撲；視圖投影看似分離不代表三件。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "06-02",
+      "seq": 17,
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-17-assembly-geometry.png",
+      "sha256": "e149c3589f991976fb26335cf0c638446d22f5cc9ee202eb9636ed5fc83218cd",
+      "actualSha256": "e149c3589f991976fb26335cf0c638446d22f5cc9ee202eb9636ed5fc83218cd",
+      "hashMatches": true,
+      "actionCompared": "回名義組裝位置，從實際截面量水平差、斜面法向gap與垂直餘量",
+      "observedCompared": "水平截面總差0.4／每側0.2 mm為助教試驗；斜面法向間距約0.196116 mm，槽底與榫底、盒頂與板底各0.2 mm。槽和榫斜面同斜率0.2（距垂直約11.3099°）；未列印試配。",
+      "noteCompared": "兩端貫通，這版沒有端擋、止退或鎖定設計；不能當成已驗證列印結構。 原始紀錄「約0.196116」為理想設計近似；最終網格最小法向間距實測0.19611411961014766 mm，水平最小單邊0.19999793767925667 mm。精確值見verification與試驗紀錄；保留原run.json和照片。 本圖作用中物件為Body，Item尺寸與Location屬盒體；SlidingLid位移由實際物件與另存world mesh讀回。",
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Body與SlidingLid均可見於組裝位置，active Body；Item60/40/30屬Body，與note一致。",
+      "requiresRawOrOtherEvidence": "本圖不是剖面量測畫面，斜槽被蓋遮住；0.4/0.196116/0.2/11.3099皆須獨立截面raw，不能以圖證。",
+      "result": "compatible_with_presentation_issue",
+      "severity": "low",
+      "findingId": "PRESENTATION-GAP-06-02-17"
+    },
+    {
+      "step": "06-02",
+      "seq": 18,
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-18-slide-x30.png",
+      "sha256": "bdb153cb11647b779e878b08a0439c8053e6b5ac50e9a53ad9ee98e0951bd028",
+      "actualSha256": "bdb153cb11647b779e878b08a0439c8053e6b5ac50e9a53ad9ee98e0951bd028",
+      "hashMatches": true,
+      "actionCompared": "沿X移動滑蓋至 +30 mm，拍攝入口與導軌相對位置",
+      "observedCompared": "SlidingLid 實際Location X=30 mm；已保存此位置world mesh。這是數位滑動檢視，非實體試配。",
+      "noteCompared": "本圖作用中物件為Body，Item尺寸與Location屬盒體；SlidingLid位移由實際物件與另存world mesh讀回。",
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "蓋明顯沿長向滑開約半長，能見盒內與導軌；active仍Body，N面板X0屬Body，note明示正確。",
+      "requiresRawOrOtherEvidence": "SlidingLid精確X30不在active N面板，須world mesh；圖不證無碰撞或可實際試配。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "06-02",
+      "seq": 19,
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-19-slide-x62.png",
+      "sha256": "769aee9d85db7ed5078039ce857648149a5f362c9387f5c35d3453587093a934",
+      "actualSha256": "769aee9d85db7ed5078039ce857648149a5f362c9387f5c35d3453587093a934",
+      "hashMatches": true,
+      "actionCompared": "沿X移動滑蓋至 +62 mm，拍攝入口與導軌相對位置",
+      "observedCompared": "SlidingLid 實際Location X=62 mm；已保存此位置world mesh。這是數位滑動檢視，非實體試配。",
+      "noteCompared": "本圖作用中物件為Body，Item尺寸與Location屬盒體；SlidingLid位移由實際物件與另存world mesh讀回。",
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "蓋完全滑到盒旁，兩件可見分離；activeBody Item不變，符合note。",
+      "requiresRawOrOtherEvidence": "精確X62／端距2須mesh；一幀不能證連續路徑。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "06-02",
+      "seq": 20,
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-20-slide-return.png",
+      "sha256": "269741e536fef83555f23de0623cd2eee6db6962f3edebb45ef58ae197119f8d",
+      "actualSha256": "269741e536fef83555f23de0623cd2eee6db6962f3edebb45ef58ae197119f8d",
+      "hashMatches": true,
+      "actionCompared": "回X0，結合實際截面、兩端入口與移動網格核對滑動路徑",
+      "observedCompared": "滑蓋已回X0；+30／+62的實際網格是純X平移。兩端入口與沿X均勻截面共同驗證無碰撞平移路徑；不是實體滑動合格證明。",
+      "noteCompared": "原始紀錄「約0.196116」為理想設計近似；最終網格最小法向間距實測0.19611411961014766 mm，水平最小單邊0.19999793767925667 mm。精確值見verification與試驗紀錄；保留原run.json和照片。 本圖作用中物件為Body，Item尺寸與Location屬盒體；SlidingLid位移由實際物件與另存world mesh讀回。",
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "蓋回完整覆蓋盒口，activeBody；與原組裝畫面一致。",
+      "requiresRawOrOtherEvidence": "純平移／全程無碰撞依賴mesh連續截面，圖只能支持回位概觀。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "06-02",
+      "seq": 21,
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-21-save-dialog.png",
+      "sha256": "a3ec08435b7d46c6d85958ee12144b230e65dda461dbbce5072cb34ae41bb896",
+      "actualSha256": "a3ec08435b7d46c6d85958ee12144b230e65dda461dbbce5072cb34ae41bb896",
+      "hashMatches": true,
+      "actionCompared": "File > Save As，另存燕尾滑蓋分支 u06_dovetail_slide_v001.blend",
+      "observedCompared": "資料夾 D:\\others\\study\\Blender-Learning\\learning\\evidence\\06\\2026-10-25-lesson06-dovetail-demo-v002\\demo-files\\；檔名 u06_dovetail_slide_v001.blend。",
+      "noteCompared": null,
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Save As對話框，檔名u06_dovetail_slide_v001.blend及demo-files路徑尾段清楚。",
+      "requiresRawOrOtherEvidence": "對話框僅證目標，尚非檔已儲存。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "06-02",
+      "seq": 22,
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-22-saved.png",
+      "sha256": "73e7775b088aab229f869d5ffc40e41648e8f24355ea5b74402d7bf9fae8fd81",
+      "actualSha256": "73e7775b088aab229f869d5ffc40e41648e8f24355ea5b74402d7bf9fae8fd81",
+      "hashMatches": true,
+      "actionCompared": "按 Save As，讀回新檔案版本與hash",
+      "observedCompared": "已另存新場景v001，106782 bytes；SHA-256 b7da592c4b080163566cb6e1a90390832eae6db8421fbf7be23bfb9071ae0c3e。",
+      "noteCompared": null,
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "回組裝畫面，底部Saved as u06_dovetail_slide_v001.blend通知可見。",
+      "requiresRawOrOtherEvidence": "106782 bytes與SHA不在圖上；須實檔hash，不由成功通知推定。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "06-02",
+      "seq": 23,
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-23-open-saved.png",
+      "sha256": "1103c886a437094da8f53ef3209839cd594de1b63e6f0b26fc767411d6b4c598",
+      "actualSha256": "1103c886a437094da8f53ef3209839cd594de1b63e6f0b26fc767411d6b4c598",
+      "hashMatches": true,
+      "actionCompared": "File > Open，重新開啟本次燕尾滑蓋 v001",
+      "observedCompared": "資料夾 D:\\others\\study\\Blender-Learning\\learning\\evidence\\06\\2026-10-25-lesson06-dovetail-demo-v002\\demo-files\\；檔名 u06_dovetail_slide_v001.blend。",
+      "noteCompared": null,
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Open對話框列出u06_dovetail_slide_v001.blend，104KiB及14:35，底部同檔名。",
+      "requiresRawOrOtherEvidence": "KiB顯示有限精度、hash/完整路徑需檔案證據。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "06-02",
+      "seq": 24,
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-24-reopened-verified.png",
+      "sha256": "fa52e7159268dc72d0a481026c2cb6f2831558e3356e2cb2ef1d71524f22a9aa",
+      "actualSha256": "fa52e7159268dc72d0a481026c2cb6f2831558e3356e2cb2ef1d71524f22a9aa",
+      "hashMatches": true,
+      "actionCompared": "按 Open，重讀最終網格、版本及行程證據，保存 verification",
+      "observedCompared": "重新開啟後hash、Body／SlidingLid及三工具、X0組裝與行程證據一致。未匯出STL、切片、列印或實體試配；Overhang介面分析待後續，合格值留空。",
+      "noteCompared": null,
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "重開後組裝概觀、Body/SlidingLid及GuideTool/GrooveTool/MaleTool列在Outliner；Item為Body60/40/30。",
+      "requiresRawOrOtherEvidence": "本圖不直接證hash/mesh等價、行程、Overhang或實體結果；歷史未匯出是06-02當時狀態。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "06-03",
+      "seq": 1,
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-01-body-source-dialog.png",
+      "sha256": "3dbebc080f14c07b0002cc0675b1a613cd6dc191f0819121497242276491c6e5",
+      "actualSha256": "3dbebc080f14c07b0002cc0675b1a613cd6dc191f0819121497242276491c6e5",
+      "hashMatches": true,
+      "actionCompared": "File > Open，開啟06-02同hash副本，準備只匯出 Body",
+      "observedCompared": "資料夾 D:\\others\\study\\Blender-Learning\\learning\\evidence\\06\\2026-10-25-lesson06-dovetail-export-demo-v001\\demo-files\\sources\\；檔名 u06_dovetail_slide_v001.blend。",
+      "noteCompared": null,
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Open對話框，u06_dovetail_slide_v001.blend 104KiB與sources路徑尾段。",
+      "requiresRawOrOtherEvidence": "同hash副本需檔案比對。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "06-03",
+      "seq": 2,
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-02-body-source-selected.png",
+      "sha256": "184531942aaeab3053aa699b601c47b76022acb12d64a4a76d65a5d6a4b47b11",
+      "actualSha256": "184531942aaeab3053aa699b601c47b76022acb12d64a4a76d65a5d6a4b47b11",
+      "hashMatches": true,
+      "actionCompared": "只選 Body，核對來源、尺寸與隱藏工具",
+      "observedCompared": "只選Body；實際Dimensions [60.0, 40.0, 30.0] mm、槽深3.2／槽口2.32 mm、單殼／Non Manifold 0。三個建構工具與另一件隱藏；來源及副本hash未變。",
+      "noteCompared": null,
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "只Body選取，工具及SlidingLid眼睛為隱藏；Item60/40/30、Scale1、R0，盒上縱槽可見。",
+      "requiresRawOrOtherEvidence": "3.2深／2.32口寬／NM0及來源hash需raw／實檔。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "06-03",
+      "seq": 3,
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-03-body-source-end-profile.png",
+      "sha256": "cfc66623c49b3ff4cb9d8e64fc197e4c915d5802a034c8cb0aa1a4554853b41f",
+      "actualSha256": "cfc66623c49b3ff4cb9d8e64fc197e4c915d5802a034c8cb0aa1a4554853b41f",
+      "hashMatches": true,
+      "actionCompared": "沿X看 Body 真實端面，核對燕尾槽／榫與整體尺寸",
+      "observedCompared": "只選Body；實際Dimensions [60.0, 40.0, 30.0] mm、槽深3.2／槽口2.32 mm、單殼／Non Manifold 0。三個建構工具與另一件隱藏；來源及副本hash未變。",
+      "noteCompared": null,
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Right Orthographic、兩個燕尾槽入口輪廓，Item60/40/30。",
+      "requiresRawOrOtherEvidence": "此圖無榫（Lid已隱藏），動作泛稱槽／榫較寬；槽尺寸精值與拓撲需raw。",
+      "result": "compatible_with_presentation_issue",
+      "severity": "low",
+      "findingId": "PRESENTATION-PROFILE-06-03-03"
+    },
+    {
+      "step": "06-03",
+      "seq": 4,
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-04-body-export-menu.png",
+      "sha256": "27c194628ce551749e797fda7a53c99efbeae7261d0e21b12239b8329b08387f",
+      "actualSha256": "27c194628ce551749e797fda7a53c99efbeae7261d0e21b12239b8329b08387f",
+      "hashMatches": true,
+      "actionCompared": "File > Export，指到 STL (.stl)，目前只選 Body",
+      "observedCompared": "已選取：Body；作用中物件：Body",
+      "noteCompared": null,
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "File > Export子選單展開，STL (.stl)反白；active Body、Outliner僅Body選取。",
+      "requiresRawOrOtherEvidence": "只證選單尚未輸出STL。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "06-03",
+      "seq": 5,
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-05-body-export-before.png",
+      "sha256": "fe4a9a6b46caae6927a5a4b7bb013780c953d3043ba02044012cdc225f2545e0",
+      "actualSha256": "fe4a9a6b46caae6927a5a4b7bb013780c953d3043ba02044012cdc225f2545e0",
+      "hashMatches": true,
+      "actionCompared": "核對 u06_dovetail_body_v001.stl 路徑、檔名與目前匯出選項",
+      "observedCompared": "資料夾 D:\\others\\study\\Blender-Learning\\learning\\evidence\\06\\2026-10-25-lesson06-dovetail-export-demo-v001\\demo-files\\exports\\；檔名 u06_dovetail_body_v001.stl；選項 {'only_selected': False, 'global_scale': 1.0, 'use_scene_unit': False, 'apply_modifiers': True, 'forward_axis': 'Y', 'up_axis': 'Z', 'ascii_format': False, 'use_batch': False, 'evaluation_mode': 'DAG_EVAL_RENDER'}。",
+      "noteCompared": null,
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Export STL檔名u06_dovetail_body_v001.stl，exports路徑尾段；ASCII/Batch/Selection Only/Scene Unit關、Scale1、Y/Z、Apply Modifiers開、Render。",
+      "requiresRawOrOtherEvidence": "完整目標路徑與新檔是否存在須operator/live記錄；尚未輸出。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "06-03",
+      "seq": 6,
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-06-body-export-options.png",
+      "sha256": "6a2a89f809465e8117320d19b53ef0720de5a10516cd39306a892d79ff6019e0",
+      "actualSha256": "6a2a89f809465e8117320d19b53ef0720de5a10516cd39306a892d79ff6019e0",
+      "hashMatches": true,
+      "actionCompared": "勾選並核對 Selection Only、Scale1、Scene Unit關，再驗證新檔目標",
+      "observedCompared": "只匯出 Body；Selection Only開、Scale1、Scene Unit關、Apply Modifiers開、Binary、Batch關、Y Forward／Z Up。",
+      "noteCompared": "STL沒有單位標記，本次座標按毫米解讀。保留來源world座標，尚未落床或核對切片擺放。",
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "同目標，Selection Only已勾；Scale1、Scene Unit關、Y/Z、ASCII關及Apply Modifiers開清楚。",
+      "requiresRawOrOtherEvidence": "圖不顯實際選取名，須上一畫面及選取raw。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "06-03",
+      "seq": 7,
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-07-body-stl-checked.png",
+      "sha256": "d92cb4111712d18dac776f64071263e22bd68517518bec08617ed92075d7a691",
+      "actualSha256": "d92cb4111712d18dac776f64071263e22bd68517518bec08617ed92075d7a691",
+      "hashMatches": true,
+      "actionCompared": "按 Export STL，直接解析實檔三角面、燕尾剖面與尺寸，再對照固定來源",
+      "observedCompared": "u06_dovetail_body_v001.stl：6284 bytes、124三角形，實檔Dimensions [60.0, 40.0, 30.0]（mm解讀）；燕尾剖面／端面／體積與來源一致，單殼、Non Manifold0；SHA-256 747e6186876f0e00c5c0617f0631de890a610696e42a930d5f7a0452f8ab4586。",
+      "noteCompared": "這是數位檔案核對，不代表列印尺寸或實體試配合格。",
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "回Body端視，File exported successfully通知可見；Item60/40/30。",
+      "requiresRawOrOtherEvidence": "124tri/6284bytes/hash及剖面等價不在圖上，需STL解析；圖是原場景非重匯入。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "06-03",
+      "seq": 8,
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-08-lid-source-dialog.png",
+      "sha256": "cce66068bc1ddef545aad82c2aa98ccbc7d6bd8e9d20d08261ae03087815db44",
+      "actualSha256": "cce66068bc1ddef545aad82c2aa98ccbc7d6bd8e9d20d08261ae03087815db44",
+      "hashMatches": true,
+      "actionCompared": "File > Open，開啟06-02同hash副本，準備只匯出 SlidingLid",
+      "observedCompared": "資料夾 D:\\others\\study\\Blender-Learning\\learning\\evidence\\06\\2026-10-25-lesson06-dovetail-export-demo-v001\\demo-files\\sources\\；檔名 u06_dovetail_slide_v001.blend。",
+      "noteCompared": null,
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Open對話框u06_dovetail_slide_v001.blend，sources路徑尾段及104KiB。",
+      "requiresRawOrOtherEvidence": "同hash／準備只匯出Lid由後續選取與raw。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "06-03",
+      "seq": 9,
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-09-lid-source-selected.png",
+      "sha256": "a524c1369371e2c3134cd56ba7e3ff1caa66c04904c243b7924c0c4d3f304b4b",
+      "actualSha256": "a524c1369371e2c3134cd56ba7e3ff1caa66c04904c243b7924c0c4d3f304b4b",
+      "hashMatches": true,
+      "actionCompared": "只選 SlidingLid，核對來源、尺寸與隱藏工具",
+      "observedCompared": "只選SlidingLid；實際Dimensions [60.0, 40.0, 5.200000762939453] mm、板厚2／外露榫深3.2 mm、單殼／Non Manifold 0。三個建構工具與另一件隱藏；來源及副本hash未變。",
+      "noteCompared": null,
+      "inspection": {
+        "method": "sha256_duplicate_already_viewed",
+        "actuallyOpenedThisPath": false,
+        "duplicateOf": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-14-lid-underside.png"
+      },
+      "observations": "與06-02 #14 SHA完全相同；已目視的原像素是SlidingLid底斜視、Item60/40/5.2、無modifier，工具與Body隱藏。",
+      "requiresRawOrOtherEvidence": "重複像素不能單獨證不同run執行，需各run事件與raw；未重新開圖。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "06-03",
+      "seq": 10,
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-10-lid-source-end-profile.png",
+      "sha256": "7d6f39f90b987a1b6d2dc1444ce9d5d7bee1c13fd286aeba973f00e148867d63",
+      "actualSha256": "7d6f39f90b987a1b6d2dc1444ce9d5d7bee1c13fd286aeba973f00e148867d63",
+      "hashMatches": true,
+      "actionCompared": "沿X看 SlidingLid 真實端面，核對燕尾槽／榫與整體尺寸",
+      "observedCompared": "只選SlidingLid；實際Dimensions [60.0, 40.0, 5.200000762939453] mm、板厚2／外露榫深3.2 mm、單殼／Non Manifold 0。三個建構工具與另一件隱藏；來源及副本hash未變。",
+      "noteCompared": null,
+      "inspection": {
+        "method": "sha256_duplicate_already_viewed",
+        "actuallyOpenedThisPath": false,
+        "duplicateOf": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-15-lid-end-profile.png"
+      },
+      "observations": "與06-02 #15 SHA完全相同；已目視的原像素是Lid Right Orthographic兩榫輪廓、Item60/40/5.2。",
+      "requiresRawOrOtherEvidence": "不能圖證新的run時間／輸出尺寸拓撲；未重新開圖。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "06-03",
+      "seq": 11,
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-11-lid-export-menu.png",
+      "sha256": "d7970ec4edea272c017646c01c43ae27a86649096b67105db08f98c4834bc116",
+      "actualSha256": "d7970ec4edea272c017646c01c43ae27a86649096b67105db08f98c4834bc116",
+      "hashMatches": true,
+      "actionCompared": "File > Export，指到 STL (.stl)，目前只選 SlidingLid",
+      "observedCompared": "已選取：SlidingLid；作用中物件：SlidingLid",
+      "noteCompared": null,
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "File > Export子選單STL (.stl)反白；active SlidingLid且僅它選取，Item60/40/5.2。",
+      "requiresRawOrOtherEvidence": "只證輸出操作入口。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "06-03",
+      "seq": 12,
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-12-lid-export-before.png",
+      "sha256": "af58f6dc9a41f6a808e35c0f2fb0ab9185c87b6c53b2e391b54c0492125fa3eb",
+      "actualSha256": "af58f6dc9a41f6a808e35c0f2fb0ab9185c87b6c53b2e391b54c0492125fa3eb",
+      "hashMatches": true,
+      "actionCompared": "核對 u06_dovetail_lid_v001.stl 路徑、檔名與目前匯出選項",
+      "observedCompared": "資料夾 D:\\others\\study\\Blender-Learning\\learning\\evidence\\06\\2026-10-25-lesson06-dovetail-export-demo-v001\\demo-files\\exports\\；檔名 u06_dovetail_lid_v001.stl；選項 {'only_selected': False, 'global_scale': 1.0, 'use_scene_unit': False, 'apply_modifiers': True, 'forward_axis': 'Y', 'up_axis': 'Z', 'ascii_format': False, 'use_batch': False, 'evaluation_mode': 'DAG_EVAL_RENDER'}。",
+      "noteCompared": null,
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Lid匯出檔名u06_dovetail_lid_v001.stl；列表已有body STL 6KiB；Selection Only未勾、Scale1、Scene Unit關、Y/Z、ASCII關。",
+      "requiresRawOrOtherEvidence": "完整路徑與精確options由live資料；尚未輸出。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "06-03",
+      "seq": 13,
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-13-lid-export-options.png",
+      "sha256": "6cfd473cb51411f616ef230f4e3d7ed8690b4f988f130172d36fd50c900d7012",
+      "actualSha256": "6cfd473cb51411f616ef230f4e3d7ed8690b4f988f130172d36fd50c900d7012",
+      "hashMatches": true,
+      "actionCompared": "勾選並核對 Selection Only、Scale1、Scene Unit關，再驗證新檔目標",
+      "observedCompared": "只匯出 SlidingLid；Selection Only開、Scale1、Scene Unit關、Apply Modifiers開、Binary、Batch關、Y Forward／Z Up。",
+      "noteCompared": "STL沒有單位標記，本次座標按毫米解讀。保留來源world座標，尚未落床或核對切片擺放。",
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Selection Only已勾，其他列選項及Lid檔名與描述一致。",
+      "requiresRawOrOtherEvidence": "需先前選取畫面／raw綁定SlidingLid。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "06-03",
+      "seq": 14,
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-14-lid-stl-checked.png",
+      "sha256": "1669aa6cfef8ac374b17192a33f29fc4d90ffa4f0025da9928d20a2eda307082",
+      "actualSha256": "1669aa6cfef8ac374b17192a33f29fc4d90ffa4f0025da9928d20a2eda307082",
+      "hashMatches": true,
+      "actionCompared": "按 Export STL，直接解析實檔三角面、燕尾剖面與尺寸，再對照固定來源",
+      "observedCompared": "u06_dovetail_lid_v001.stl：3484 bytes、68三角形，實檔Dimensions [60.0, 40.0, 5.200000762939453]（mm解讀）；燕尾剖面／端面／體積與來源一致，單殼、Non Manifold0；SHA-256 436597611a951ead9878cb330bda8a4a306f014cb70183c894987666113ee713。",
+      "noteCompared": "這是數位檔案核對，不代表列印尺寸或實體試配合格。",
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "回SlidingLid端視、File exported successfully通知可見；Item60/40/5.2。",
+      "requiresRawOrOtherEvidence": "3484bytes/68tri/hash及5.200000762939453需STL解析，UI僅5.2。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "06-03",
+      "seq": 15,
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-15-empty-mm-scene.png",
+      "sha256": "4adc8aebf5e4a772bee8fce4eb6b599831c2910744002fc3fb9242704c87f51c",
+      "actualSha256": "4adc8aebf5e4a772bee8fce4eb6b599831c2910744002fc3fb9242704c87f51c",
+      "hashMatches": true,
+      "actionCompared": "File > New > General，清空獨立場景並設Metric／mm／0.001，準備讀回兩STL",
+      "observedCompared": "場景物件0；Metric／Millimeters／Unit Scale0.001；尚無Item分頁，不在空場景點它。",
+      "noteCompared": null,
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Outliner空Collection、視窗空；Scene Units Metric、Unit Scale0.001000、Length Millimeters；側欄只有Tool/View/Animation，無Item。",
+      "requiresRawOrOtherEvidence": "精確物件0以raw計數，空畫面與Outliner支持；File New過程需run。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "06-03",
+      "seq": 16,
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-16-body-import-dialog.png",
+      "sha256": "790a2cf010ff9a9dacde6654094a4a63e631bd4ee20d6b6927fff4182c7de801",
+      "actualSha256": "790a2cf010ff9a9dacde6654094a4a63e631bd4ee20d6b6927fff4182c7de801",
+      "hashMatches": true,
+      "actionCompared": "F3搜尋 Import STL，選本次實際 u06_dovetail_body_v001.stl 並讀回匯入選項",
+      "observedCompared": "實際檔名 u06_dovetail_body_v001.stl；Scale1、Scene Unit關、Y Forward／Z Up。",
+      "noteCompared": null,
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Import STL目標body檔名，列表body與lid兩檔；Scale1、Scene Unit關、ForwardY/UpZ、Validate Mesh開、Facet Normals關。",
+      "requiresRawOrOtherEvidence": "僅檔案對話框，匯入成功由後圖。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "06-03",
+      "seq": 17,
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-17-body-reimport-dimensions.png",
+      "sha256": "594e402e24bc477199fb729a2ae876e6699a4ac7aad224df23e7d55f9b51f301",
+      "actualSha256": "594e402e24bc477199fb729a2ae876e6699a4ac7aad224df23e7d55f9b51f301",
+      "hashMatches": true,
+      "actionCompared": "實際匯入後才切Item，Frame Selected，核對 Body_STL Dimensions",
+      "observedCompared": "實際重新匯入Body_STL，Item Dimensions [60.0, 40.0, 30.0] mm、Scale1／修改器0；燕尾剖面、體積、單殼／Non Manifold0與來源及STL一致。",
+      "noteCompared": "來源world座標已烘入STL頂點；匯入物件原點為0，不能把Location當作零件world外框。",
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "單一Body_STL、空場景再匯入後Item60/40/30、R0/Location0/Scale1；兩縱槽可見，Scene毫米設置仍在。",
+      "requiresRawOrOtherEvidence": "modified0／單殼／NM0及volume需raw，非本圖可讀；Location0不代表world外框置中以外的特定原點沿用。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "06-03",
+      "seq": 18,
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-18-body-reimport-end-profile.png",
+      "sha256": "034425a0b365e02228ff8cc4426646d993df2de47878956761499c07891fc32e",
+      "actualSha256": "034425a0b365e02228ff8cc4426646d993df2de47878956761499c07891fc32e",
+      "hashMatches": true,
+      "actionCompared": "沿X看實際重新匯入 Body_STL 的燕尾端面",
+      "observedCompared": "實際重新匯入Body_STL，Item Dimensions [60.0, 40.0, 30.0] mm、Scale1／修改器0；燕尾剖面、體積、單殼／Non Manifold0與來源及STL一致。",
+      "noteCompared": null,
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Body_STL Right Orthographic雙槽端面與來源輪廓相符，Item60/40/30、Scale1。",
+      "requiresRawOrOtherEvidence": "精確語義剖面等價、體積及拓撲由mesh；單投影不能驗全長。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "06-03",
+      "seq": 19,
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-19-body-reimport-non-manifold.png",
+      "sha256": "c9d06521f4e159aa0ce1b1baff330e086f86f8c1e60d577ffc724bd7ae8c5fc6",
+      "actualSha256": "c9d06521f4e159aa0ce1b1baff330e086f86f8c1e60d577ffc724bd7ae8c5fc6",
+      "hashMatches": true,
+      "actionCompared": "Tab > 邊選取 > Select None > Select Non Manifold，核對 Body_STL",
+      "observedCompared": "Body_STL：非空網格，Select Non Manifold選到0條邊，程式讀回非流形邊0。",
+      "noteCompared": null,
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Body_STL Edit Mode邊模式，三角化端面、Nothing selected、Select Non-Manifold提示；符合未選到邊。",
+      "requiresRawOrOtherEvidence": "NM0程式計數與單殼需raw，圖只見沒有選取。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "06-03",
+      "seq": 20,
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-20-lid-import-dialog.png",
+      "sha256": "69d20151d91ba189cc6c66c403049755480dba5451fb6e83fd7e9b76d9608572",
+      "actualSha256": "69d20151d91ba189cc6c66c403049755480dba5451fb6e83fd7e9b76d9608572",
+      "hashMatches": true,
+      "actionCompared": "F3搜尋 Import STL，選本次實際 u06_dovetail_lid_v001.stl 並讀回匯入選項",
+      "observedCompared": "實際檔名 u06_dovetail_lid_v001.stl；Scale1、Scene Unit關、Y Forward／Z Up。",
+      "noteCompared": null,
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Import STL檔名lid，Scale1、Scene Unit關、Y/Z、Validate Mesh開。",
+      "requiresRawOrOtherEvidence": "完整路徑與輸入檔雜湊由live／檔案。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "06-03",
+      "seq": 21,
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-21-lid-reimport-dimensions.png",
+      "sha256": "2f347072775f85671a78161395323f414fb658609ae9ad6c068c9c2916a1ba00",
+      "actualSha256": "2f347072775f85671a78161395323f414fb658609ae9ad6c068c9c2916a1ba00",
+      "hashMatches": true,
+      "actionCompared": "實際匯入後Frame Selected，核對 SlidingLid_STL Dimensions",
+      "observedCompared": "實際重新匯入SlidingLid_STL，Item Dimensions [60.0, 40.0, 5.200000762939453] mm、Scale1／修改器0；燕尾剖面、體積、單殼／Non Manifold0與來源及STL一致。",
+      "noteCompared": "來源world座標已烘入STL頂點；匯入物件原點為0，不能把Location當作零件world外框。",
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "SlidingLid_STL選取，Body_STL隱藏；Item60/40/5.2，R0/Location0/Scale1，底面兩長榫可見。",
+      "requiresRawOrOtherEvidence": "5.200000762939453、體積／NM0／modifier0需raw；圖不直接證STL單位標記。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "06-03",
+      "seq": 22,
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-22-lid-reimport-end-profile.png",
+      "sha256": "8ddcb494177d83488c78dae42bd9de3259d2d553aeecbc5e0869184a3ae24aec",
+      "actualSha256": "8ddcb494177d83488c78dae42bd9de3259d2d553aeecbc5e0869184a3ae24aec",
+      "hashMatches": true,
+      "actionCompared": "沿X看實際重新匯入 SlidingLid_STL 的燕尾端面",
+      "observedCompared": "實際重新匯入SlidingLid_STL，Item Dimensions [60.0, 40.0, 5.200000762939453] mm、Scale1／修改器0；燕尾剖面、體積、單殼／Non Manifold0與來源及STL一致。",
+      "noteCompared": null,
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "SlidingLid_STL Right Orthographic雙燕尾榫輪廓與來源一致，Item60/40/5.2。",
+      "requiresRawOrOtherEvidence": "剖面精值、全長與體積等價需mesh。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "06-03",
+      "seq": 23,
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-23-lid-reimport-non-manifold.png",
+      "sha256": "95fdeb182b7b31ba35e33e2b674c1f9315258d3afa37a483208e98d0bb224bb9",
+      "actualSha256": "95fdeb182b7b31ba35e33e2b674c1f9315258d3afa37a483208e98d0bb224bb9",
+      "hashMatches": true,
+      "actionCompared": "Tab > 邊選取 > Select None > Select Non Manifold，核對 SlidingLid_STL",
+      "observedCompared": "SlidingLid_STL：非空網格，Select Non Manifold選到0條邊，程式讀回非流形邊0。",
+      "noteCompared": null,
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "SlidingLid_STL Edit Mode邊模式、三角化外廓、Nothing selected與Select Non-Manifold提示。",
+      "requiresRawOrOtherEvidence": "程式NM0數量需raw；圖不證強度。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "06-03",
+      "seq": 24,
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-24-reimport-assembly.png",
+      "sha256": "2bfb82486554b39de0d602488af7840f14e5dadbb3e3237e0fd86c30a2a4577c",
+      "actualSha256": "2bfb82486554b39de0d602488af7840f14e5dadbb3e3237e0fd86c30a2a4577c",
+      "hashMatches": true,
+      "actionCompared": "顯示兩件實際重新匯入的STL，核對燕尾剖面間距及原world擺位",
+      "observedCompared": "兩個實際STL在來源world位置組合；最小水平單邊0.199997938 mm、斜面法向0.196114120 mm、板底／盒頂0.200000763 mm。名義水平總差0.4仍為試驗，未列印試配。",
+      "noteCompared": "圖中active為Body_STL，Item Dimensions屬盒體。STL仍保留Body Z−15～15、SlidingLid Z12～17.2，尚未落床或核對列印方向。",
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Body_STL及SlidingLid_STL實際同場景組裝，activeBody_STL、Item60/40/30，與note一致。",
+      "requiresRawOrOtherEvidence": "本圖蓋擋住槽，0.199997938／0.196114120／0.200000763不是畫面讀值，須雙mesh截面計算；不做實體推定。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "06-03",
+      "seq": 25,
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-25-exports-verified.png",
+      "sha256": "2bfb82486554b39de0d602488af7840f14e5dadbb3e3237e0fd86c30a2a4577c",
+      "actualSha256": "2bfb82486554b39de0d602488af7840f14e5dadbb3e3237e0fd86c30a2a4577c",
+      "hashMatches": true,
+      "actionCompared": "保存兩份STL版本、來源關聯、四份world mesh及最終 verification.json",
+      "observedCompared": "Body與SlidingLid兩份STL實檔及實際重新匯入皆通過；來源與副本hash未變。已記兩檔版本、SHA-256及來源關聯，不另存新blend；切片、列印、實測、試配與合格間隙留空。",
+      "noteCompared": "本次只完成06-03燕尾滑蓋與盒體的STL匯出及數位核對，沒有完成定位榫匯出或實體階段，不代學員確認完成。",
+      "inspection": {
+        "method": "sha256_duplicate_already_viewed",
+        "actuallyOpenedThisPath": false,
+        "duplicateOf": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-24-reimport-assembly.png"
+      },
+      "observations": "與06-03 #24 SHA完全相同；共用已目視的組裝概觀。",
+      "requiresRawOrOtherEvidence": "無新增可見變化；版本/hash/verification資料寫入需實檔證據，未重新開圖。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "08-01",
+      "seq": 1,
+      "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/08-01-01-source-open-dialog.png",
+      "sha256": "2fd6a3c66d9f900dbaa7ec652b0beed9eb732edbb2f3798cffe229bf298a1c52",
+      "actualSha256": "2fd6a3c66d9f900dbaa7ec652b0beed9eb732edbb2f3798cffe229bf298a1c52",
+      "hashMatches": true,
+      "actionCompared": "File > Open…：開啟原 04 盒體的同雜湊副本",
+      "observedCompared": "資料夾 D:\\others\\study\\Blender-Learning\\learning\\evidence\\08\\2026-10-25-lesson08-parameters-demo-v001\\demo-files\\sources\\；檔名 u04_box_v001.blend。",
+      "noteCompared": null,
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Open對話框u04_box_v001.blend、96KiB與08run/sources路徑尾段。",
+      "requiresRawOrOtherEvidence": "同hash副本需實檔；時間20:28是檔列表顯示。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "08-01",
+      "seq": 2,
+      "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/08-01-02-source-checked.png",
+      "sha256": "553d16ae73d6789e63151c705c2c9231cee91ba7a5712084489555ef213e1e64",
+      "actualSha256": "553d16ae73d6789e63151c705c2c9231cee91ba7a5712084489555ef213e1e64",
+      "hashMatches": true,
+      "actionCompared": "Object Mode：選 Cube，從實際網格重驗原盒基準",
+      "observedCompared": "原盒外形 [60.0, 40.0, 30.0]、內腔 [56.0, 36.0, 28.0] mm；壁／底 2 mm、體積 15552 mm³、Non Manifold 0。",
+      "noteCompared": "本步只整理螺紋規格與建模參數；沒有牙、柱、導孔或配對件，也沒有材料或強度結果。",
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Cube作用中、Object Mode、空心原盒形；Item60/40/30、R0/Location0/Scale1、modifier欄空。",
+      "requiresRawOrOtherEvidence": "56/36/28內腔、2壁底、15552體積與NM0都不在本圖直接顯示，需要raw。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "08-01",
+      "seq": 3,
+      "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/08-01-03-reference-top.png",
+      "sha256": "4da568b6e1c627bed94f9597e4352d866a5761a755f540b838f0e58660e3f8d2",
+      "actualSha256": "4da568b6e1c627bed94f9597e4352d866a5761a755f540b838f0e58660e3f8d2",
+      "hashMatches": true,
+      "actionCompared": "隱藏 Camera／Light；UI 改名 Body_Reference，數字鍵盤 7 頂視並 Frame Selected",
+      "observedCompared": "Body_Reference Location (0 mm, 0 mm, 0 mm)、Dimensions (60 mm, 40 mm, 30 mm)、Scale (1, 1, 1)",
+      "noteCompared": "這是從原04盒另建的螺紋參照分支；完整盒形不變，沒有承接卡扣、燕尾或已核准螺紋間隙。",
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Top Orthographic，Body_Reference新名、Camera/Light隱藏；ItemLocation0/R0/Scale1與60/40/30。",
+      "requiresRawOrOtherEvidence": "平頂投影內外底重疊，不能只由本圖判原殼幾何完全不變；需mesh。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "08-01",
+      "seq": 4,
+      "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/08-01-04-rim-face.png",
+      "sha256": "71f4e90f4ad1e2416be0df61bdb68eda91775f1eda878c732023f62cbaaf3cda",
+      "actualSha256": "71f4e90f4ad1e2416be0df61bdb68eda91775f1eda878c732023f62cbaaf3cda",
+      "hashMatches": true,
+      "actionCompared": "Edit Mode 面選取：點前側盒口環面，讀回 world Y 邊界",
+      "observedCompared": "rim：實選 1 面／4 頂點，world min [-30.00000142492354, -20.000000949949026, 15.00000071246177]、max [30.00000142492354, -18.000000854954123, 15.00000071246177] mm；跨度 [60.00000284984708, 2.0000000949949026, 0.0] mm。",
+      "noteCompared": "Y −20 至 −18 的平面跨度是原盒壁厚參考 2 mm；角落斜邊不是 2 mm。這不是螺紋柱肉厚或合格條件。",
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Edit Mode面模式、前側rim面淡色選取；Median0/−19/15 mm且Local開。",
+      "requiresRawOrOtherEvidence": "圖顯示的是Local Median而不是world min/max；world邊界與4頂點須raw，僅在本件identity變換才等同world。",
+      "result": "compatible_with_information_limit",
+      "severity": "informational",
+      "findingId": "LOCAL-WORLD-08-01-FACES"
+    },
+    {
+      "step": "08-01",
+      "seq": 5,
+      "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/08-01-05-inner-floor.png",
+      "sha256": "a78e713c12c3af31a8e6d3d717bea1a8ca99891e3524c6991459654c174d8e6d",
+      "actualSha256": "a78e713c12c3af31a8e6d3d717bea1a8ca99891e3524c6991459654c174d8e6d",
+      "hashMatches": true,
+      "actionCompared": "頂視面選取：取消前一面，點內腔底面，記錄其 world Z",
+      "observedCompared": "inner_floor：實選 1 面／4 頂點，world min [-28.000001329928637, -18.000000854954123, -13.000000617466867]、max [28.000001329928637, 18.000000854954123, -13.000000617466867] mm；跨度 [56.00000265985727, 36.00000170990825, 0.0] mm。",
+      "noteCompared": "內底 world Z −13 mm；面跨度 56 × 36。螺紋路線、位置、對件及尺寸均待定，原盒內底保持。",
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Top Orthographic，內腔底單面淡色選取；Local Median0/0/−13 mm。",
+      "requiresRawOrOtherEvidence": "圖不直接顯world bbox56/36或4頂點；需face measurement raw及identity transform；路線待定是拍攝當時狀態。",
+      "result": "compatible_with_information_limit",
+      "severity": "informational",
+      "findingId": "LOCAL-WORLD-08-01-FACES"
+    },
+    {
+      "step": "08-01",
+      "seq": 6,
+      "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/08-01-06-outer-floor.png",
+      "sha256": "6c583bd5aec0207b5c2c8c51ba50343bfa65b2ee6cea6c713ed21f5e5a983e52",
+      "actualSha256": "6c583bd5aec0207b5c2c8c51ba50343bfa65b2ee6cea6c713ed21f5e5a983e52",
+      "hashMatches": true,
+      "actionCompared": "Ctrl + 數字鍵盤 7 底視：點外底面，與內底 Z 分開記錄",
+      "observedCompared": "outer_floor：實選 1 面／4 頂點，world min [-30.00000142492354, -20.000000949949026, -15.00000071246177]、max [30.00000142492354, 20.000000949949026, -15.00000071246177] mm；跨度 [60.00000284984708, 40.00000189989805, 0.0] mm。",
+      "noteCompared": "外底 Z −15 與內底 Z −13 相差 2 mm；只驗盒體基準，不推定螺紋尺寸、柱肉厚或允許扭矩。",
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Bottom Orthographic，外底單面淡色選取；Local Median0/0/−15 mm，與前內底−13分開。",
+      "requiresRawOrOtherEvidence": "60/40跨度及world精值須raw；Local=world需identity條件，圖無尺寸標註。",
+      "result": "compatible_with_information_limit",
+      "severity": "informational",
+      "findingId": "LOCAL-WORLD-08-01-FACES"
+    },
+    {
+      "step": "08-01",
+      "seq": 7,
+      "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/08-01-07-non-manifold.png",
+      "sha256": "cced4f7a89cbf44e9fe75a8cdfeefd24d06b7adff7c8407a09ed1132ea9b4962",
+      "actualSha256": "cced4f7a89cbf44e9fe75a8cdfeefd24d06b7adff7c8407a09ed1132ea9b4962",
+      "hashMatches": true,
+      "actionCompared": "邊選取、Alt+A，再 F3 > Select Non Manifold",
+      "observedCompared": "實際 Select Non Manifold：選到 0 邊；實網格 Non Manifold 0。這不是強度或製程判定。",
+      "noteCompared": null,
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Edit Mode邊模式、Nothing selected，左下Select Non-Manifold提示；網格可見但未選邊。",
+      "requiresRawOrOtherEvidence": "圖不顯計數或全拓撲，NM0由raw；不是製程判定。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "08-01",
+      "seq": 8,
+      "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/08-01-08-reference-overview.png",
+      "sha256": "76bd22f0091976802281b444aa8703b9cd939a107c4a70d4074a0d137816a576",
+      "actualSha256": "76bd22f0091976802281b444aa8703b9cd939a107c4a70d4074a0d137816a576",
+      "hashMatches": true,
+      "actionCompared": "回 Object Mode，改斜視；讀回完整原盒網格未變",
+      "observedCompared": "參考盒仍為60×40×30／內腔56×36×28、壁底2mm；24個螺紋草案參數待補、沒有實作。路線selected=null，自訂列印僅助教候選，沒有建立Screw修改器或進行計算。",
+      "noteCompared": "08-01只建立規格與建模參數紀錄；Blender映射只有文件關係，各數值未設定，沒有螺紋、柱、配對件或STL。",
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "斜視完整空心原盒，Body_Reference、Location0/R0/Scale1、Item60/40/30、modifier空。",
+      "requiresRawOrOtherEvidence": "24個草案null與路線selected=null是參數紀錄當時狀態，不在圖內；後來雙路線選擇應另證時態，不覆寫此舊拍攝證據。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "08-01",
+      "seq": 9,
+      "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/08-01-09-save-dialog.png",
+      "sha256": "c11f36e2c4a9e910cac0798597435383e393947a4827e40f03250dc370ce40f5",
+      "actualSha256": "c11f36e2c4a9e910cac0798597435383e393947a4827e40f03250dc370ce40f5",
+      "hashMatches": true,
+      "actionCompared": "File > Save As…：另存原盒螺紋參照場景 u08_thread_reference_v001.blend",
+      "observedCompared": "目標 D:\\others\\study\\Blender-Learning\\learning\\evidence\\08\\2026-10-25-lesson08-parameters-demo-v001\\demo-files\\；檔名 u08_thread_reference_v001.blend。",
+      "noteCompared": null,
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Save As目標u08_thread_reference_v001.blend，demo-files尾段，sources子目錄，Save As按鈕。",
+      "requiresRawOrOtherEvidence": "只證存檔目標，完整路徑由live記錄。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "08-01",
+      "seq": 10,
+      "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/08-01-10-saved.png",
+      "sha256": "c322d309456343e96f1e6803487fe07e2bdaa6b67069d90e3aee50cff2c566bb",
+      "actualSha256": "c322d309456343e96f1e6803487fe07e2bdaa6b67069d90e3aee50cff2c566bb",
+      "hashMatches": true,
+      "actionCompared": "按 Save As，核對新檔路徑、bytes 與 SHA-256",
+      "observedCompared": "已另存原盒參考場景，97955 bytes，SHA-256 9bda36c10fd916ef9cbe688f5ca56dcf8cfa0adb83d684300e60196225589d8f；原檔／讀取副本未變。",
+      "noteCompared": null,
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "返回原盒斜視，底部Saved as u08_thread_reference_v001.blend通知；Item外形不變。",
+      "requiresRawOrOtherEvidence": "97955bytes/SHA與原檔不變需檔案hash，成功通知不包含精值。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "08-01",
+      "seq": 11,
+      "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/08-01-11-open-saved.png",
+      "sha256": "ee21fc68888ccb7e56fb48702f26a368f7ea1262166902b802aae9008840d28c",
+      "actualSha256": "ee21fc68888ccb7e56fb48702f26a368f7ea1262166902b802aae9008840d28c",
+      "hashMatches": true,
+      "actionCompared": "File > Open…：重開剛才的原盒參考版本",
+      "observedCompared": "目標 D:\\others\\study\\Blender-Learning\\learning\\evidence\\08\\2026-10-25-lesson08-parameters-demo-v001\\demo-files\\；檔名 u08_thread_reference_v001.blend。",
+      "noteCompared": null,
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Open對話框列出u08_thread_reference_v001.blend、96KiB、20:29，底部同檔名。",
+      "requiresRawOrOtherEvidence": "檔精確bytes/hash及一致性不由KiB證，需檔案讀值。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "08-01",
+      "seq": 12,
+      "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/08-01-12-reopened-verified.png",
+      "sha256": "05ccab2799c6d1965c1878130815b63d2bbff9cd4b87417c2d63458e52bc3472",
+      "actualSha256": "05ccab2799c6d1965c1878130815b63d2bbff9cd4b87417c2d63458e52bc3472",
+      "hashMatches": true,
+      "actionCompared": "按 Open：重驗未修改原盒，保存參數表、三個實選面座標及 verification.json",
+      "observedCompared": "重開實測與來源一致：60 × 40 × 30、壁底 2 mm／NM 0；只有原盒。參數表 v001 已綁定場景 hash；24個參數／路線／修改器設定仍待定；沒有建牙或柱、計算、STL、列印或試配。",
+      "noteCompared": "助教準備完成不等於學員已完成；不更新 progress、不做強度或配合合格判定。",
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "重開後原盒斜視、Body_Reference、外形60/40/30、R0/Scale1/Location0、modifier空，無牙／柱可見。",
+      "requiresRawOrOtherEvidence": "24參數與路線待定為run當時狀態，參數JSON/hash及NM0需raw；後續路線選擇另有時間版本，不能因當時null判現在矛盾。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    }
+  ]
+}

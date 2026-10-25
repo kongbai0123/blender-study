@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-10-25T15:34:57.341Z",
+  "method": "cua_repl getScreenshot original JPEG bytes, no pixel editing",
+  "reportUrl": "http://127.0.0.1:8766/reports/2026-10-25-claude-continuation-v001.html",
+  "dashboardStep": "06-02",
+  "images": [
+    {
+      "path": "ui-dashboard-v001.jpg",
+      "sha256": "5f1ca736833d0ac43e8546a426041facc05b84a3eaeaac8b114d3d5324afbc69",
+      "scope": "dashboard 06-02 audit card visible; first URL was corrected later, same displayed risk text preserved"
+    },
+    {
+      "path": "ui-report-overview-v001.jpg",
+      "sha256": "62e9d0dcfec924b4760d5e91da792bed3264e204ec0401a75bd7976f4951c215",
+      "scope": "final authored report route, heading/counts/limits"
+    },
+    {
+      "path": "ui-report-risks-v001.jpg",
+      "sha256": "71b2eeb81213be50b37004889fed259c740b8224dfa38eb35fa781a0fc8a7182",
+      "scope": "all three engineering risks and 80.4 rounding clarification"
+    }
+  ],
+  "tabsKeptOpen": [
+    "3",
+    "4"
+  ]
+}

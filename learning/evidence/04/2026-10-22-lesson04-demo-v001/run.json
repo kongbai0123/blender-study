@@ -1,0 +1,685 @@
+{
+ "scenario": "D:\\others\\study\\Blender-Learning\\learning\\tutor\\scenarios\\lesson04.py",
+ "blender": "5.2.1 LTS",
+ "buildHash": "9e2066aef7ef",
+ "records": [
+  {
+   "seq": 1,
+   "step": "04-02",
+   "slug": "units-before",
+   "recordedAt": "2026-10-22T06:54:32.518Z",
+   "action": "File > New > General，開 Properties 的 Scene 分頁並展開 Units：目前是 Meters、Unit Scale 1",
+   "observed": "場景物件：Camera、Cube、Light；Length METERS、Unit Scale 1。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 1236,
+     "y": 364,
+     "w": 20,
+     "h": 20,
+     "label": "Scene 分頁"
+    },
+    {
+     "x": 1266,
+     "y": 477,
+     "w": 216,
+     "h": 22,
+     "label": "Unit Scale"
+    },
+    {
+     "x": 1266,
+     "y": 547,
+     "w": 216,
+     "h": 20,
+     "label": "Length"
+    }
+   ],
+   "clicks": [],
+   "file": "04-02-01-units-before.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "928e01f54e4a890d2a05c3032efb73607deac90ef62eaa383a186c4810170d92"
+  },
+  {
+   "seq": 2,
+   "step": "04-02",
+   "slug": "units-mm",
+   "recordedAt": "2026-10-22T06:54:40.218Z",
+   "action": "Length 選 Millimeters，Unit Scale 輸入 0.001，再用 View > Sidebar 打開側欄：Cube 顯示 2 mm",
+   "observed": "Length MILLIMETERS、Unit Scale 0.001；Cube Dimensions (2 mm, 2 mm, 2 mm)、Scale (1, 1, 1)。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 1266,
+     "y": 477,
+     "w": 216,
+     "h": 22,
+     "label": "Unit Scale 0.001"
+    },
+    {
+     "x": 1266,
+     "y": 547,
+     "w": 216,
+     "h": 20,
+     "label": "Length：Millimeters"
+    },
+    {
+     "x": 963,
+     "y": 383,
+     "w": 228,
+     "h": 77,
+     "label": "Dimensions 2 mm"
+    }
+   ],
+   "clicks": [],
+   "file": "04-02-02-units-mm.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "851ddbd24f1e206822492068c5549f3218b9ec25b37d6a7597f0bb0d50bf5fb9",
+   "note": "Unit Scale 0.001 表示 1 個 Blender 單位 = 1 mm。實測：這樣匯出的 STL 數值才是 mm；第二單元的 Unit Scale 1 匯出後會小 1000 倍。"
+  },
+  {
+   "seq": 3,
+   "step": "04-02",
+   "slug": "save-as-v001",
+   "recordedAt": "2026-10-22T06:54:44.318Z",
+   "action": "File > Save As…：資料夾換成自己的單元 04 練習資料夾，檔名 u04_box_v001.blend",
+   "observed": "資料夾欄位：D:\\others\\study\\Blender-Learning\\learning\\workspaces\\04\\；檔名欄位：u04_box_v001.blend；該資料夾目前內容：exports。",
+   "window": "FILE_BROWSER",
+   "highlights": [
+    {
+     "x": 394,
+     "y": 8,
+     "w": 318,
+     "h": 25,
+     "label": "資料夾路徑"
+    },
+    {
+     "x": 248,
+     "y": 566,
+     "w": 780,
+     "h": 25,
+     "label": "檔名"
+    },
+    {
+     "x": 789,
+     "y": 566,
+     "w": 126,
+     "h": 25,
+     "label": "你要按 Save As"
+    }
+   ],
+   "clicks": [],
+   "file": "04-02-03-save-as-v001.png",
+   "width": 1060,
+   "height": 600,
+   "sha256": "2c68998c5343f73b051198702a970e7098b8547e626b1684adcdee95016097a5",
+   "note": "這張是你要看到的畫面；路徑與檔名由助教以程式填入欄位，避免鍵盤誤觸檔案瀏覽器快捷鍵。助教示範到此按 Esc 取消，不寫入你的工作區，再把同名檔存到助教示範資料夾。"
+  },
+  {
+   "seq": 4,
+   "step": "04-03",
+   "slug": "dimensions",
+   "recordedAt": "2026-10-22T06:54:58.418Z",
+   "action": "Sidebar 的 Dimensions 依序輸入 60mm、40mm、30mm：Scale 跟著變成 30、20、15",
+   "observed": "Cube Dimensions (60 mm, 40 mm, 30 mm)、Scale (30, 20, 15)。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 963,
+     "y": 383,
+     "w": 228,
+     "h": 77,
+     "label": "Dimensions 60 × 40 × 30 mm"
+    },
+    {
+     "x": 963,
+     "y": 318,
+     "w": 176,
+     "h": 59,
+     "label": "Scale 30、20、15"
+    }
+   ],
+   "clicks": [],
+   "file": "04-03-01-dimensions.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "9dba577c2107d4ee0c82e3f3d0243a0ddb5a3908f40c6e744230336b8d53728e"
+  },
+  {
+   "seq": 5,
+   "step": "04-03",
+   "slug": "apply-menu",
+   "recordedAt": "2026-10-22T06:55:01.018Z",
+   "action": "3D Viewport 的 Object > Apply，指到 Scale",
+   "observed": "Object 與 Apply 子選單展開；Cube Dimensions (60 mm, 40 mm, 30 mm)、Scale (30, 20, 15)。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 289,
+     "y": 28,
+     "w": 48,
+     "h": 20,
+     "label": "Object"
+    },
+    {
+     "x": 292,
+     "y": 131,
+     "w": 192,
+     "h": 20,
+     "label": "Apply"
+    },
+    {
+     "x": 492,
+     "y": 170,
+     "w": 220,
+     "h": 20,
+     "label": "Scale"
+    }
+   ],
+   "clicks": [
+    {
+     "x": 313,
+     "y": 38
+    }
+   ],
+   "file": "04-03-02-apply-menu.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "534165b57a361df62655ab91e707b378382f53ad9ad1b3c794ded18519306a18"
+  },
+  {
+   "seq": 6,
+   "step": "04-03",
+   "slug": "applied",
+   "recordedAt": "2026-10-22T06:55:03.618Z",
+   "action": "點 Scale：Scale 回到 1，Dimensions 不變",
+   "observed": "Cube Dimensions (60 mm, 40 mm, 30 mm)、Scale (1, 1, 1)。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 963,
+     "y": 318,
+     "w": 176,
+     "h": 59,
+     "label": "Scale 1、1、1"
+    },
+    {
+     "x": 963,
+     "y": 383,
+     "w": 228,
+     "h": 77,
+     "label": "Dimensions 不變"
+    }
+   ],
+   "clicks": [],
+   "file": "04-03-03-applied.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "dda64752896cceb8a51e03e1b6cec067bc20ccb6378085ca119f830c3be5d7f6"
+  },
+  {
+   "seq": 7,
+   "step": "04-04",
+   "slug": "edit-face",
+   "recordedAt": "2026-10-22T06:55:10.118Z",
+   "action": "View > Frame Selected 再把滾輪往後滾 3 格；滑鼠在 3D Viewport 內按 Tab 進 Edit Mode、按 3 切換面選取",
+   "observed": "模式：EDIT_MESH；面選取：是；目前選取 6 個面。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 49,
+     "y": 28,
+     "w": 96,
+     "h": 20,
+     "label": "Edit Mode"
+    },
+    {
+     "x": 191,
+     "y": 29,
+     "w": 20,
+     "h": 19,
+     "label": "面選取"
+    }
+   ],
+   "clicks": [],
+   "file": "04-04-01-edit-face.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "b167ee7f67848ec9f5604c3ebbd7758efefa5d876da392420b4ec01962b772a3"
+  },
+  {
+   "seq": 8,
+   "step": "04-04",
+   "slug": "top-selected",
+   "recordedAt": "2026-10-22T06:55:13.918Z",
+   "action": "Select > None 取消全選，再點盒子頂面",
+   "observed": "選取 1 個面；Sidebar 的 Median Z 是頂面高度。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 574,
+     "y": 362,
+     "w": 80,
+     "h": 50,
+     "label": "頂面"
+    },
+    {
+     "x": 963,
+     "y": 172,
+     "w": 226,
+     "h": 20,
+     "label": "Median Z = 15 mm"
+    }
+   ],
+   "clicks": [],
+   "file": "04-04-02-top-selected.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "059e3078c132003c5c89e88c0f251eaf12140f897657c3b3f6c7eaef3e45037c"
+  },
+  {
+   "seq": 9,
+   "step": "04-04",
+   "slug": "delete-menu",
+   "recordedAt": "2026-10-22T06:55:16.318Z",
+   "action": "開 Mesh 選單 > Delete，指到 Faces",
+   "observed": "Mesh 與 Delete 子選單展開。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 343,
+     "y": 28,
+     "w": 38,
+     "h": 20,
+     "label": "Mesh"
+    },
+    {
+     "x": 344,
+     "y": 520,
+     "w": 180,
+     "h": 20,
+     "label": "Delete"
+    },
+    {
+     "x": 528,
+     "y": 563,
+     "w": 182,
+     "h": 20,
+     "label": "Faces"
+    }
+   ],
+   "clicks": [
+    {
+     "x": 362,
+     "y": 38
+    }
+   ],
+   "file": "04-04-03-delete-menu.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "f95ff212f0ff72fcac2d83808c70ec518f0ded0dd7130dc6c0fa5e2ee81a0435"
+  },
+  {
+   "seq": 10,
+   "step": "04-04",
+   "slug": "opened",
+   "recordedAt": "2026-10-22T06:55:18.919Z",
+   "action": "點 Faces：頂面刪除，盒子上方打開（還沒有厚度）",
+   "observed": "網格剩 5 個面；不封閉的邊 4 條（開口邊緣，加厚度後會封閉）。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 574,
+     "y": 362,
+     "w": 80,
+     "h": 50,
+     "label": "開口"
+    }
+   ],
+   "clicks": [],
+   "file": "04-04-04-opened.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "0e66282d00891878721b3e69dfb88a80fe95a03aad6440c20d1d9360b824803e"
+  },
+  {
+   "seq": 11,
+   "step": "04-05",
+   "slug": "add-solidify",
+   "recordedAt": "2026-10-22T06:55:23.519Z",
+   "action": "按 Tab 回 Object Mode；Properties 的 Modifier 分頁 > Add Modifier > Generate，指到 Solidify",
+   "observed": "模式：OBJECT；Add Modifier 與 Generate 子選單展開。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 1242,
+     "y": 323,
+     "w": 172,
+     "h": 20,
+     "label": "Generate"
+    },
+    {
+     "x": 1064,
+     "y": 622,
+     "w": 172,
+     "h": 20,
+     "label": "Solidify"
+    }
+   ],
+   "clicks": [
+    {
+     "x": 1383,
+     "y": 287
+    }
+   ],
+   "file": "04-05-01-add-solidify.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "9040f6dc8c226ee666821de7e4b3cc831f0d6b4c274aeeb31d18fa0f350ca6b4"
+  },
+  {
+   "seq": 12,
+   "step": "04-05",
+   "slug": "solidify-default",
+   "recordedAt": "2026-10-22T06:55:26.119Z",
+   "action": "點 Solidify：預設 Thickness 只有 0.01 mm，幾乎看不出厚度",
+   "observed": "Solidify Thickness 0.01 mm、Offset -1；外形 (60 mm, 40 mm, 30 mm)、內腔 59.9884 × 39.9884 mm、底厚 0.0058 mm、14 個面。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 1352,
+     "y": 365,
+     "w": 103,
+     "h": 20,
+     "label": "Thickness"
+    },
+    {
+     "x": 1352,
+     "y": 390,
+     "w": 103,
+     "h": 20,
+     "label": "Offset −1"
+    }
+   ],
+   "clicks": [],
+   "file": "04-05-02-solidify-default.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "81c61b4dd39497bea66e2e680ffb4bf71feadc081196c1f04888299af44027d3"
+  },
+  {
+   "seq": 13,
+   "step": "04-05",
+   "slug": "solidify-wall",
+   "recordedAt": "2026-10-22T06:55:30.219Z",
+   "action": "Thickness 輸入 2mm（示範值）並勾 Even Thickness：外形不變，厚度往內長",
+   "observed": "Solidify Thickness 2 mm、Offset -1、Even Thickness 開；外形 (60 mm, 40 mm, 30 mm)、內腔 56 × 36 mm、底厚 2 mm、14 個面。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 1352,
+     "y": 365,
+     "w": 103,
+     "h": 20,
+     "label": "Thickness 2 mm"
+    },
+    {
+     "x": 1352,
+     "y": 415,
+     "w": 103,
+     "h": 20,
+     "label": "Even Thickness"
+    }
+   ],
+   "clicks": [],
+   "file": "04-05-03-solidify-wall.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "4478d502422e66e765358cc806d94d278573050c3071ca40c4fd30b8c58b3f38",
+   "note": "2 mm 只是示範值。你的壁厚待定：等噴嘴與線寬確定後，取線寬的整數倍。"
+  },
+  {
+   "seq": 14,
+   "step": "04-06",
+   "slug": "apply-menu",
+   "recordedAt": "2026-10-22T06:55:31.619Z",
+   "action": "Solidify 標題列的下拉選單，找到 Apply",
+   "observed": "修改器：Solidify。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 1416,
+     "y": 311,
+     "w": 18,
+     "h": 18,
+     "label": "下拉選單"
+    },
+    {
+     "x": 1287,
+     "y": 333,
+     "w": 145,
+     "h": 20,
+     "label": "Apply"
+    }
+   ],
+   "clicks": [
+    {
+     "x": 1424,
+     "y": 320
+    }
+   ],
+   "file": "04-06-01-apply-menu.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "20abdf9e186cc58bbd98ae06dac6b4bfdd3f8a393b320984e992c37d34c155e7"
+  },
+  {
+   "seq": 15,
+   "step": "04-06",
+   "slug": "applied",
+   "recordedAt": "2026-10-22T06:55:34.219Z",
+   "action": "點 Apply：厚度寫進網格，Modifier 清單變空",
+   "observed": "修改器：無；外形 (60 mm, 40 mm, 30 mm)、內腔 56 × 36 mm、底厚 2 mm、14 個面。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 1266,
+     "y": 277,
+     "w": 216,
+     "h": 20,
+     "label": "Modifier 清單空了"
+    }
+   ],
+   "clicks": [],
+   "file": "04-06-02-applied.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "6d62257d00aeefb5285d7c3fb959339fdc19197c05e97a06fa2b83b0d940250c"
+  },
+  {
+   "seq": 16,
+   "step": "04-06",
+   "slug": "trait-menu",
+   "recordedAt": "2026-10-22T06:55:40.019Z",
+   "action": "按 Tab 進 Edit Mode、按 2 切換邊選取、Select > None；再開 Select > Select All by Trait，指到 Non Manifold",
+   "observed": "模式：EDIT_MESH；邊選取：是。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 171,
+     "y": 29,
+     "w": 20,
+     "h": 19,
+     "label": "邊選取"
+    },
+    {
+     "x": 260,
+     "y": 299,
+     "w": 208,
+     "h": 20,
+     "label": "Select All by Trait"
+    },
+    {
+     "x": 476,
+     "y": 298,
+     "w": 208,
+     "h": 20,
+     "label": "Non Manifold"
+    }
+   ],
+   "clicks": [
+    {
+     "x": 280,
+     "y": 38
+    }
+   ],
+   "file": "04-06-03-trait-menu.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "a03603f9caae0dff9978360dcd58da412b9e72e9d4688904c983da48c24de925",
+   "note": "面選取模式下這個子選單沒有 Non Manifold（實測），一定要先切到邊選取或頂點選取。"
+  },
+  {
+   "seq": 17,
+   "step": "04-06",
+   "slug": "non-manifold",
+   "recordedAt": "2026-10-22T06:55:42.619Z",
+   "action": "點 Non Manifold：沒有選到任何邊，網格是封閉的",
+   "observed": "不封閉的邊 0 條；目前選到 0 條邊。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 955,
+     "y": 82,
+     "w": 242,
+     "h": 52,
+     "label": "Nothing selected"
+    }
+   ],
+   "clicks": [],
+   "file": "04-06-04-non-manifold.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "5141ce34c27e3fa59203ddb267cf7f8404ec2f4c46801a59a0fe6c80dc5cce78"
+  },
+  {
+   "seq": 18,
+   "step": "04-07",
+   "slug": "export-menu",
+   "recordedAt": "2026-10-22T06:55:48.519Z",
+   "action": "按 Tab 回 Object Mode、File > Save 存檔後，開 File > Export，指到 STL (.stl)",
+   "observed": "已存檔：u04_box_v001.blend；File 與 Export 子選單展開。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 30,
+     "y": 3,
+     "w": 27,
+     "h": 21,
+     "label": "File"
+    },
+    {
+     "x": 28,
+     "y": 307,
+     "w": 202,
+     "h": 20,
+     "label": "Export"
+    },
+    {
+     "x": 236,
+     "y": 426,
+     "w": 244,
+     "h": 20,
+     "label": "STL (.stl)"
+    }
+   ],
+   "clicks": [
+    {
+     "x": 40,
+     "y": 13
+    }
+   ],
+   "file": "04-07-01-export-menu.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "5d9ede8476909290870ebbfa4fb09a7ec95eb3f7da33320c7ae1a7c411c508e5"
+  },
+  {
+   "seq": 19,
+   "step": "04-07",
+   "slug": "export-dialog",
+   "recordedAt": "2026-10-22T06:55:52.019Z",
+   "action": "點 STL (.stl)：資料夾換成單元 04 的 exports，檔名 u04_box_v001.stl；確認 Scale 1、Scene Unit 不勾",
+   "observed": "資料夾欄位：D:\\others\\study\\Blender-Learning\\learning\\workspaces\\04\\exports\\；檔名欄位：u04_box_v001.stl；該資料夾目前內容：（空資料夾）。",
+   "window": "FILE_BROWSER",
+   "highlights": [
+    {
+     "x": 394,
+     "y": 8,
+     "w": 318,
+     "h": 25,
+     "label": "exports 資料夾"
+    },
+    {
+     "x": 248,
+     "y": 566,
+     "w": 780,
+     "h": 25,
+     "label": "檔名"
+    },
+    {
+     "x": 922,
+     "y": 171,
+     "w": 130,
+     "h": 20,
+     "label": "Scale 1.000"
+    },
+    {
+     "x": 922,
+     "y": 193,
+     "w": 110,
+     "h": 20,
+     "label": "Scene Unit 不勾"
+    },
+    {
+     "x": 789,
+     "y": 566,
+     "w": 126,
+     "h": 25,
+     "label": "你要按 Export STL"
+    }
+   ],
+   "clicks": [],
+   "file": "04-07-02-export-dialog.png",
+   "width": 1060,
+   "height": 600,
+   "sha256": "a97d9f50c4f31dce935ebaf0b861563297d0d8825068e90b50e7ae6a60c8859d",
+   "note": "這張是你要看到的畫面；路徑與檔名由助教以程式填入欄位。助教示範到此按 Esc 取消，不寫入你的工作區，再把 STL 存到助教示範資料夾。"
+  },
+  {
+   "seq": 20,
+   "step": "04-07",
+   "slug": "stl-checked",
+   "recordedAt": "2026-10-22T06:56:01.119Z",
+   "action": "按 Export STL 後，讀 STL 檔案本身的尺寸核對",
+   "observed": "STL：u04_box_v001.stl（1484 bytes、28 個三角形）；檔案內的尺寸 (60, 40, 30)（切片軟體以 mm 讀取）。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 0,
+     "y": 997,
+     "w": 1494,
+     "h": 22,
+     "label": "狀態列"
+    }
+   ],
+   "clicks": [],
+   "file": "04-07-03-stl-checked.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "df19115dfbafb1efe87f7e43d99a06613339ea5f7a32088a013e5b8038eb8c21",
+   "note": "STL 尺寸由助教直接解析檔案讀出。匯入切片軟體核對（切片軟體待定）要由你做，和這裡的檔案檢查分開記錄。"
+  }
+ ]
+}

@@ -1,0 +1,256 @@
+{
+  "recordedAt": "2026-10-25T06:37:23.868919+00:00",
+  "evidencePassed": true,
+  "publicationPending": false,
+  "browserProofPending": false,
+  "images": [
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-01-source-open-dialog.png",
+      "status": 200,
+      "sha256": "a7d4e02fbdccfc1490fbde3565114960f21eb2259f46fec3ee6b08927ef9205d",
+      "width": 1060,
+      "height": 600,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-02-source-geometry.png",
+      "status": 200,
+      "sha256": "269975dc4137eabae1d2685ddd01dd787ed724aaaf8e63af50b4cae8ba2a4d3c",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-03-guide-blocks.png",
+      "status": 200,
+      "sha256": "0a2fe628ad11e6b0ebd89a88a399dc7563eb2ed2cc102e4ed85ee0673dc5d3c0",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-04-guide-union.png",
+      "status": 200,
+      "sha256": "b1bcc1c5a15a82effaa45275052a670b6d095e8e50abf2b29ea6350257438965",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-05-guides-applied.png",
+      "status": 200,
+      "sha256": "026367974362bd7bca5bc6c69f4273ef5dfa0ae8e632a9c66d39085e5d567e79",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-06-groove-tools.png",
+      "status": 200,
+      "sha256": "1116896ca9d646839c8dbee7279f08d42e353ffcbdb17e4d26922cee6434c3a8",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-07-groove-difference.png",
+      "status": 200,
+      "sha256": "e832535badf710d8120deacd39047c3466c39e1c96327add42c0f7a88aeb8d69",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-08-body-grooves.png",
+      "status": 200,
+      "sha256": "a7f9a013a829ccfb55037488e188dc7fca264a855fde2ed258f15f8efbc48b37",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-09-body-end-profile.png",
+      "status": 200,
+      "sha256": "75f83513063b274cbc10fbea3761154118f574a7c75823ef87089e47863b2afd",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-10-body-non-manifold.png",
+      "status": 200,
+      "sha256": "72bc86d2fcd77b1d03ab734e7d2c143566174d7d6557641852b85a9cfaea152e",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-11-lid-plate.png",
+      "status": 200,
+      "sha256": "22cd7d1b9dc4f3cd0ef8b28b5fcab08047085787754d310dc14b2fa7970c61a9",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-12-male-ribs.png",
+      "status": 200,
+      "sha256": "68f9b3508492b2a9e82840c80e1fb5565f2118db11f25abf5d30e69465629401",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-13-lid-union.png",
+      "status": 200,
+      "sha256": "b3f4c8bec99c35b4609c64922bcdcc4f7f525f8fd454bdf4542ece1fac1768a5",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-14-lid-underside.png",
+      "status": 200,
+      "sha256": "a524c1369371e2c3134cd56ba7e3ff1caa66c04904c243b7924c0c4d3f304b4b",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-15-lid-end-profile.png",
+      "status": 200,
+      "sha256": "7d6f39f90b987a1b6d2dc1444ce9d5d7bee1c13fd286aeba973f00e148867d63",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-16-lid-non-manifold.png",
+      "status": 200,
+      "sha256": "357690116eb54d80516c45782d0a0c77466cf13809529fe053572b614bc7c3e3",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-17-assembly-geometry.png",
+      "status": 200,
+      "sha256": "e149c3589f991976fb26335cf0c638446d22f5cc9ee202eb9636ed5fc83218cd",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-18-slide-x30.png",
+      "status": 200,
+      "sha256": "bdb153cb11647b779e878b08a0439c8053e6b5ac50e9a53ad9ee98e0951bd028",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-19-slide-x62.png",
+      "status": 200,
+      "sha256": "769aee9d85db7ed5078039ce857648149a5f362c9387f5c35d3453587093a934",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-20-slide-return.png",
+      "status": 200,
+      "sha256": "269741e536fef83555f23de0623cd2eee6db6962f3edebb45ef58ae197119f8d",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-21-save-dialog.png",
+      "status": 200,
+      "sha256": "a3ec08435b7d46c6d85958ee12144b230e65dda461dbbce5072cb34ae41bb896",
+      "width": 1060,
+      "height": 600,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-22-saved.png",
+      "status": 200,
+      "sha256": "73e7775b088aab229f869d5ffc40e41648e8f24355ea5b74402d7bf9fae8fd81",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-23-open-saved.png",
+      "status": 200,
+      "sha256": "1103c886a437094da8f53ef3209839cd594de1b63e6f0b26fc767411d6b4c598",
+      "width": 1060,
+      "height": 600,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-24-reopened-verified.png",
+      "status": 200,
+      "sha256": "fa52e7159268dc72d0a481026c2cb6f2831558e3356e2cb2ef1d71524f22a9aa",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    }
+  ],
+  "sceneDownload": {
+    "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/demo-files/u06_dovetail_slide_v001.blend",
+    "status": 200,
+    "sha256": "b7da592c4b080163566cb6e1a90390832eae6db8421fbf7be23bfb9071ae0c3e",
+    "bytes": 106782,
+    "contentDisposition": "attachment"
+  },
+  "sharedProgress": {
+    "unchanged": true,
+    "revision": 5,
+    "sha256": "d92e4f2ee78a1cf41386816b8616bf635b89fb25f8bfd813ac00cd20ed20b4ef"
+  },
+  "checks": {
+    "tutorTests": 133,
+    "tutorSkipped": 1,
+    "serverTests": 17,
+    "nodeSyntaxCheck": true,
+    "physicalQualificationClaimed": false
+  },
+  "catalogChangedStepIds": [
+    "06-02"
+  ],
+  "catalogSha256": "d1637f6327748da6101972d15fc324728bf2aa30eaa7461599a47c923ad1e2d9",
+  "passed": true,
+  "browserProof": {
+    "recordedAt": "2026-10-25T06:40:48.053577+00:00",
+    "path": "learning/evidence/ui/2026-10-25-lesson06-dovetail-demo-v002.jpg",
+    "sha256": "33c0f459d16a86c8ec9fade505492c735d290d9cc23a010c6ab16b22bd077051",
+    "bytes": 36675,
+    "width": 304,
+    "height": 848,
+    "pixelEdits": false,
+    "source": "CUA existing IAB tab3 native browser screenshot",
+    "url": "http://127.0.0.1:8766/",
+    "step": "06-02",
+    "learnerConfirmed": false
+  },
+  "apiCatalogMatchesDisk": true,
+  "apiProgressMatchesDisk": true,
+  "versionRecords": [
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/scene-manifest-v001.json",
+      "bytes": 46698,
+      "sha256": "7321fce4e626ca583ffb2207088e0d2e81da3943c70a1ec891ee74ee46a76568"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/trial-fit-record-v001.json",
+      "bytes": 26862,
+      "sha256": "8ebcd512a06bffb3da18e6325ea55b4cdee897d7e0ae2856f83c82b7b8f64a57"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002.json",
+      "bytes": 138755,
+      "sha256": "a5d80f0127c040dca81cde067f85c518c42f450c5c3c63af23a0cbc1032eba5f"
+    }
+  ]
+}

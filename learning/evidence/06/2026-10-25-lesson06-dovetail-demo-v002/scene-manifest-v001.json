@@ -1,0 +1,1447 @@
+{
+  "schema_version": 1,
+  "run": "2026-10-25-lesson06-dovetail-demo-v002",
+  "run_version": "v002",
+  "scene_version": "v001",
+  "recorded_on": "2026-10-25",
+  "timezone": "Asia/Taipei",
+  "performed_by": "tutor",
+  "completion_scope": "06-02 constant-section dovetail CAD geometry, actual X0/+30/+62 mesh placement, save and reopen only; Overhang UI analysis, STL, slicing, printing and physical fit remain undone",
+  "source_scene": {
+    "path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\04\\2026-10-22-lesson04-demo-v001\\demo-files\\u04_box_v001.blend",
+    "sha256": "b918ee87d26e289f4c8a2f6633beceb854c7d0511e3eddcc969a0696afcd2530",
+    "bytes": 97880,
+    "version": "v001",
+    "unchanged": true,
+    "prior_verification": null,
+    "note": "Original lesson04 checkpoint has no verification.json; source body was remeasured before modelling and is bound by source_body_mesh.json."
+  },
+  "opened_source_copy": {
+    "path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\06\\2026-10-25-lesson06-dovetail-demo-v002\\demo-files\\sources\\u04_box_v001.blend",
+    "sha256": "b918ee87d26e289f4c8a2f6633beceb854c7d0511e3eddcc969a0696afcd2530",
+    "bytes": 97880,
+    "unchanged": true,
+    "copy_of": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\04\\2026-10-22-lesson04-demo-v001\\demo-files\\u04_box_v001.blend"
+  },
+  "scene": {
+    "path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\06\\2026-10-25-lesson06-dovetail-demo-v002\\demo-files\\u06_dovetail_slide_v001.blend",
+    "sha256": "b7da592c4b080163566cb6e1a90390832eae6db8421fbf7be23bfb9071ae0c3e",
+    "bytes": 106782,
+    "version": "v001",
+    "reopened": true,
+    "contains": [
+      "Body",
+      "SlidingLid",
+      "GuideTool",
+      "GrooveTool",
+      "MaleTool"
+    ]
+  },
+  "final_objects": {
+    "Body": {
+      "object_name": "Body",
+      "type": "MESH",
+      "modifier_count": 0,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hidden": false
+    },
+    "SlidingLid": {
+      "object_name": "SlidingLid",
+      "type": "MESH",
+      "modifier_count": 0,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hidden": false
+    },
+    "GuideTool": {
+      "object_name": "GuideTool",
+      "type": "MESH",
+      "modifier_count": 0,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hidden": true
+    },
+    "GrooveTool": {
+      "object_name": "GrooveTool",
+      "type": "MESH",
+      "modifier_count": 0,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hidden": true
+    },
+    "MaleTool": {
+      "object_name": "MaleTool",
+      "type": "MESH",
+      "modifier_count": 0,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hidden": true
+    }
+  },
+  "geometry_summary": {
+    "original_shell_dimensions_mm": [
+      60.0,
+      40.0,
+      30.0
+    ],
+    "original_cavity_reference_dimensions_mm": [
+      56.0,
+      36.0,
+      28.0
+    ],
+    "original_wall_thicknesses_mm": [
+      2.0,
+      2.0,
+      2.0,
+      2.0
+    ],
+    "original_floor_thickness_mm": 2.0,
+    "final_body_dimensions_mm": [
+      60.0,
+      40.0,
+      30.0
+    ],
+    "final_body_bounds_mm": {
+      "min": [
+        -30.0,
+        -20.0,
+        -15.0
+      ],
+      "max": [
+        30.0,
+        20.0,
+        15.0
+      ]
+    },
+    "final_upper_central_opening_reference_mm": [
+      56,
+      28.0
+    ],
+    "upper_guide_z_mm": [
+      10,
+      15
+    ],
+    "cavity_scope_note": "56×36×28 mm describes the original source cavity only. Upper guides modify Z10..15 and reduce the central opening to 56×28; the final void is not uniformly 56×36×28.",
+    "final_body_volume_mm3": 16655.36032775877,
+    "final_body_mesh_counts": {
+      "vertices": 64,
+      "edges": 186,
+      "faces": 124,
+      "triangles": 124,
+      "representation": "world-space triangulated mesh"
+    },
+    "final_body_non_manifold_edges": 0,
+    "final_body_connected_shells": 1,
+    "final_body_genus": 0,
+    "min_guide_ligament_mm": 1.200000286102295,
+    "channel_floor_web_mm": 1.8000001907348633,
+    "final_lid_dimensions_mm": [
+      60.0,
+      40.0,
+      5.200000762939453
+    ],
+    "final_lid_bounds_mm": {
+      "min": [
+        -30.0,
+        -20.0,
+        12.0
+      ],
+      "max": [
+        30.0,
+        20.0,
+        17.200000762939453
+      ]
+    },
+    "final_plate_dimensions_mm": [
+      60,
+      40,
+      2.0
+    ],
+    "final_plate_z_mm": [
+      15.200000762939453,
+      17.200000762939453
+    ],
+    "final_exposed_male_depth_mm": 3.200000762939453,
+    "final_lid_volume_mm3": 5752.3201428222455,
+    "final_lid_mesh_counts": {
+      "vertices": 36,
+      "edges": 102,
+      "faces": 68,
+      "triangles": 68,
+      "representation": "world-space triangulated mesh"
+    },
+    "final_lid_non_manifold_edges": 0,
+    "final_lid_connected_shells": 1,
+    "final_lid_genus": 0,
+    "final_channels": [
+      {
+        "centre_y_mm": -17.0,
+        "x_mm": [
+          -30,
+          30
+        ],
+        "profile": {
+          "z_mm": [
+            11.800000190734863,
+            15.0
+          ],
+          "widths_mm": [
+            3.599998474121092,
+            2.319999694824217
+          ],
+          "side_slope_abs": 0.199999821186055,
+          "side_planes": [
+            {
+              "side": "negative_y",
+              "slope_z": -0.199999821186055,
+              "offset_mm": -21.159997165202935,
+              "equation": "y + slope_z*z = offset_mm",
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  -18.799999237060547,
+                  11.800000190734863
+                ],
+                "max": [
+                  30.0,
+                  -18.15999984741211,
+                  15.0
+                ]
+              },
+              "area_mm2": 195.8023309181232,
+              "triangle_count": 4
+            },
+            {
+              "side": "positive_y",
+              "slope_z": 0.199999821186055,
+              "offset_mm": -12.840002834797067,
+              "equation": "y + slope_z*z = offset_mm",
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  -15.84000015258789,
+                  11.800000190734863
+                ],
+                "max": [
+                  30.0,
+                  -15.200000762939453,
+                  15.0
+                ]
+              },
+              "area_mm2": 195.8023309181232,
+              "triangle_count": 4
+            }
+          ]
+        },
+        "open_ends": true
+      },
+      {
+        "centre_y_mm": 17.0,
+        "x_mm": [
+          -30,
+          30
+        ],
+        "profile": {
+          "z_mm": [
+            11.800000190734863,
+            15.0
+          ],
+          "widths_mm": [
+            3.59999942779541,
+            2.3199996948242188
+          ],
+          "side_slope_abs": 0.19999997019767585,
+          "side_planes": [
+            {
+              "side": "negative_y",
+              "slope_z": -0.20000011920929667,
+              "offset_mm": 12.83999836444844,
+              "equation": "y + slope_z*z = offset_mm",
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  15.199999809265137,
+                  11.800000190734863
+                ],
+                "max": [
+                  30.0,
+                  15.84000015258789,
+                  15.0
+                ]
+              },
+              "area_mm2": 195.80234213997684,
+              "triangle_count": 4
+            },
+            {
+              "side": "positive_y",
+              "slope_z": 0.199999821186055,
+              "offset_mm": 21.159997165202935,
+              "equation": "y + slope_z*z = offset_mm",
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  18.15999984741211,
+                  11.800000190734863
+                ],
+                "max": [
+                  30.0,
+                  18.799999237060547,
+                  15.0
+                ]
+              },
+              "area_mm2": 195.8023309181232,
+              "triangle_count": 4
+            }
+          ]
+        },
+        "open_ends": true
+      }
+    ],
+    "final_male_ribs": [
+      {
+        "centre_y_mm": -17.0,
+        "x_mm": [
+          -30,
+          30
+        ],
+        "profile": {
+          "z_mm": [
+            12.0,
+            15.200000762939453
+          ],
+          "widths_mm": [
+            3.1200027465820312,
+            1.8400001525878906
+          ],
+          "side_slope_abs": 0.2000003576277834,
+          "side_planes": [
+            {
+              "side": "negative_y",
+              "slope_z": -0.2000003576277834,
+              "offset_mm": -20.960005664824415,
+              "equation": "y + slope_z*z = offset_mm",
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  -18.560001373291016,
+                  12.0
+                ],
+                "max": [
+                  30.0,
+                  -17.920000076293945,
+                  15.200000762939453
+                ]
+              },
+              "area_mm2": 195.80240947111875,
+              "triangle_count": 2
+            },
+            {
+              "side": "positive_y",
+              "slope_z": 0.2000003576277834,
+              "offset_mm": -13.039994335175583,
+              "equation": "y + slope_z*z = offset_mm",
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  -16.079999923706055,
+                  12.0
+                ],
+                "max": [
+                  30.0,
+                  -15.439998626708984,
+                  15.200000762939453
+                ]
+              },
+              "area_mm2": 195.80240947111875,
+              "triangle_count": 2
+            }
+          ]
+        }
+      },
+      {
+        "centre_y_mm": 17.0,
+        "x_mm": [
+          -30,
+          30
+        ],
+        "profile": {
+          "z_mm": [
+            12.0,
+            15.200000762939453
+          ],
+          "widths_mm": [
+            3.119999885559082,
+            1.839996337890625
+          ],
+          "side_slope_abs": 0.2000005066393598,
+          "side_planes": [
+            {
+              "side": "negative_y",
+              "slope_z": -0.2000006556509362,
+              "offset_mm": 13.039991712572066,
+              "equation": "y + slope_z*z = offset_mm",
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  15.4399995803833,
+                  12.0
+                ],
+                "max": [
+                  30.0,
+                  16.080001831054688,
+                  15.200000762939453
+                ]
+              },
+              "area_mm2": 195.80242069300135,
+              "triangle_count": 2
+            },
+            {
+              "side": "positive_y",
+              "slope_z": 0.2000003576277834,
+              "offset_mm": 20.960003757475782,
+              "equation": "y + slope_z*z = offset_mm",
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  17.919998168945312,
+                  12.0
+                ],
+                "max": [
+                  30.0,
+                  18.559999465942383,
+                  15.200000762939453
+                ]
+              },
+              "area_mm2": 195.80240947111875,
+              "triangle_count": 2
+            }
+          ]
+        }
+      }
+    ],
+    "tool_vs_final_scope_note": "Full GrooveTool Z11.8..15.8 and full MaleTool Z12..15.4 are measured independently. Final channels stop at Body rim Z15; final exposed ribs stop at plate bottom Z15.2. Deleted/embedded tool faces are not final readbacks."
+  },
+  "full_construction_tools": {
+    "construction_guides": {
+      "dimensions_mm": [
+        60.0,
+        40.0,
+        5.0
+      ],
+      "bounds_mm": {
+        "min": [
+          -30.0,
+          -20.0,
+          10.0
+        ],
+        "max": [
+          30.0,
+          20.0,
+          15.0
+        ]
+      },
+      "volume_mm3": 3600.0,
+      "connected_shells": 2,
+      "profiles": []
+    },
+    "construction_grooves": {
+      "dimensions_mm": [
+        62.0,
+        37.599998474121094,
+        4.0
+      ],
+      "bounds_mm": {
+        "min": [
+          -31.0,
+          -18.799999237060547,
+          11.800000190734863
+        ],
+        "max": [
+          31.0,
+          18.799999237060547,
+          15.800000190734863
+        ]
+      },
+      "volume_mm3": 1388.7997398376465,
+      "connected_shells": 2,
+      "profiles": [
+        {
+          "centre_y_mm": -17.0,
+          "x_mm": [
+            -31,
+            31
+          ],
+          "profile": {
+            "z_mm": [
+              11.800000190734863,
+              15.800000190734863
+            ],
+            "widths_mm": [
+              3.5999984741210938,
+              2.0
+            ],
+            "side_slope_abs": 0.1999998092651367,
+            "side_planes": [
+              {
+                "side": "negative_y",
+                "slope_z": -0.1999998092651367,
+                "offset_mm": -21.159997024536096,
+                "equation": "y + slope_z*z = offset_mm",
+                "bounds_mm": {
+                  "min": [
+                    -31.0,
+                    -18.799999237060547,
+                    11.800000190734863
+                  ],
+                  "max": [
+                    31.0,
+                    -18.0,
+                    15.800000190734863
+                  ]
+                },
+                "area_mm2": 252.91135859747268,
+                "triangle_count": 2
+              },
+              {
+                "side": "positive_y",
+                "slope_z": 0.1999998092651367,
+                "offset_mm": -12.840002975463904,
+                "equation": "y + slope_z*z = offset_mm",
+                "bounds_mm": {
+                  "min": [
+                    -31.0,
+                    -16.0,
+                    11.800000190734863
+                  ],
+                  "max": [
+                    31.0,
+                    -15.200000762939453,
+                    15.800000190734863
+                  ]
+                },
+                "area_mm2": 252.91135859747268,
+                "triangle_count": 2
+              }
+            ]
+          }
+        },
+        {
+          "centre_y_mm": 17.0,
+          "x_mm": [
+            -31,
+            31
+          ],
+          "profile": {
+            "z_mm": [
+              11.800000190734863,
+              15.800000190734863
+            ],
+            "widths_mm": [
+              3.59999942779541,
+              2.0
+            ],
+            "side_slope_abs": 0.19999992847442624,
+            "side_planes": [
+              {
+                "side": "negative_y",
+                "slope_z": -0.2000000476837158,
+                "offset_mm": 12.839999208450308,
+                "equation": "y + slope_z*z = offset_mm",
+                "bounds_mm": {
+                  "min": [
+                    -31.0,
+                    15.199999809265137,
+                    11.800000190734863
+                  ],
+                  "max": [
+                    31.0,
+                    16.0,
+                    15.800000190734863
+                  ]
+                },
+                "area_mm2": 252.9113701933858,
+                "triangle_count": 2
+              },
+              {
+                "side": "positive_y",
+                "slope_z": 0.1999998092651367,
+                "offset_mm": 21.159997024536096,
+                "equation": "y + slope_z*z = offset_mm",
+                "bounds_mm": {
+                  "min": [
+                    -31.0,
+                    18.0,
+                    11.800000190734863
+                  ],
+                  "max": [
+                    31.0,
+                    18.799999237060547,
+                    15.800000190734863
+                  ]
+                },
+                "area_mm2": 252.91135859747268,
+                "triangle_count": 2
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "construction_males": {
+      "dimensions_mm": [
+        60.0,
+        37.1200008392334,
+        3.3999996185302734
+      ],
+      "bounds_mm": {
+        "min": [
+          -30.0,
+          -18.560001373291016,
+          12.0
+        ],
+        "max": [
+          30.0,
+          18.559999465942383,
+          15.399999618530273
+        ]
+      },
+      "volume_mm3": 995.5202034759168,
+      "connected_shells": 2,
+      "profiles": [
+        {
+          "centre_y_mm": -17.0,
+          "x_mm": [
+            -30,
+            30
+          ],
+          "profile": {
+            "z_mm": [
+              12.0,
+              15.399999618530273
+            ],
+            "widths_mm": [
+              3.1200027465820312,
+              1.7600021362304688
+            ],
+            "side_slope_abs": 0.200000112196991,
+            "side_planes": [
+              {
+                "side": "negative_y",
+                "slope_z": -0.200000112196991,
+                "offset_mm": -20.96000271965491,
+                "equation": "y + slope_z*z = offset_mm",
+                "bounds_mm": {
+                  "min": [
+                    -30.0,
+                    -18.560001373291016,
+                    12.0
+                  ],
+                  "max": [
+                    30.0,
+                    -17.880001068115234,
+                    15.399999618530273
+                  ]
+                },
+                "area_mm2": 208.03997730186998,
+                "triangle_count": 2
+              },
+              {
+                "side": "positive_y",
+                "slope_z": 0.200000112196991,
+                "offset_mm": -13.039997280345093,
+                "equation": "y + slope_z*z = offset_mm",
+                "bounds_mm": {
+                  "min": [
+                    -30.0,
+                    -16.119998931884766,
+                    12.0
+                  ],
+                  "max": [
+                    30.0,
+                    -15.439998626708984,
+                    15.399999618530273
+                  ]
+                },
+                "area_mm2": 208.03997730186998,
+                "triangle_count": 2
+              }
+            ]
+          }
+        },
+        {
+          "centre_y_mm": 17.0,
+          "x_mm": [
+            -30,
+            30
+          ],
+          "profile": {
+            "z_mm": [
+              12.0,
+              15.399999618530273
+            ],
+            "widths_mm": [
+              3.119999885559082,
+              1.7599983215332031
+            ],
+            "side_slope_abs": 0.20000025244322972,
+            "side_planes": [
+              {
+                "side": "negative_y",
+                "slope_z": -0.20000039268946845,
+                "offset_mm": 13.03999486810968,
+                "equation": "y + slope_z*z = offset_mm",
+                "bounds_mm": {
+                  "min": [
+                    -30.0,
+                    15.4399995803833,
+                    12.0
+                  ],
+                  "max": [
+                    30.0,
+                    16.1200008392334,
+                    15.399999618530273
+                  ]
+                },
+                "area_mm2": 208.03998852373886,
+                "triangle_count": 2
+              },
+              {
+                "side": "positive_y",
+                "slope_z": 0.200000112196991,
+                "offset_mm": 20.960000812306276,
+                "equation": "y + slope_z*z = offset_mm",
+                "bounds_mm": {
+                  "min": [
+                    -30.0,
+                    17.8799991607666,
+                    12.0
+                  ],
+                  "max": [
+                    30.0,
+                    18.559999465942383,
+                    15.399999618530273
+                  ]
+                },
+                "area_mm2": 208.03997730186998,
+                "triangle_count": 2
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "geometry_evidence": [
+    {
+      "role": "source_body",
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/source_body_mesh.json",
+      "sha256": "e0ec94210bff5cd7f113f32eb4a213e75553e40fb64bdf30ad3ece672a1d61bd",
+      "bytes": 2567,
+      "coordinate_space": "world-space millimetres",
+      "vertices": 16,
+      "triangles": 28,
+      "cad_metadata": {
+        "object_name": "Cube",
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "unit_scale": 0.0010000000474974513,
+        "length_unit": "MILLIMETERS",
+        "measurement_source": "evaluated final mesh loop triangles in world-space millimetres",
+        "modifier_count": 0,
+        "object_location_mm": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "role": "construction_guides",
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/guide_tool_mesh.json",
+      "sha256": "aedbd25b5cae2d97bdc19cfd400048daa15b016914108d98ae2916148b8e1bce",
+      "bytes": 2385,
+      "coordinate_space": "world-space millimetres",
+      "vertices": 16,
+      "triangles": 24,
+      "cad_metadata": {
+        "object_name": "GuideTool",
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "unit_scale": 0.0010000000474974513,
+        "length_unit": "MILLIMETERS",
+        "measurement_source": "evaluated final mesh loop triangles in world-space millimetres",
+        "modifier_count": 0,
+        "object_location_mm": [
+          0.0,
+          17.0,
+          12.5
+        ]
+      }
+    },
+    {
+      "role": "construction_grooves",
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/groove_tool_mesh.json",
+      "sha256": "0cca5863d62cd43661302fea7cf94d2e0a86b35209af0283de99787134b9f0b5",
+      "bytes": 2736,
+      "coordinate_space": "world-space millimetres",
+      "vertices": 16,
+      "triangles": 24,
+      "cad_metadata": {
+        "object_name": "GrooveTool",
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "unit_scale": 0.0010000000474974513,
+        "length_unit": "MILLIMETERS",
+        "measurement_source": "evaluated final mesh loop triangles in world-space millimetres",
+        "modifier_count": 0,
+        "object_location_mm": [
+          0.0,
+          17.0,
+          13.800000190734863
+        ]
+      }
+    },
+    {
+      "role": "construction_males",
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/male_tool_mesh.json",
+      "sha256": "7377acc23ce77bcb73d9bde09c15c76c136b99404292ac997d90df53615bdcd4",
+      "bytes": 2722,
+      "coordinate_space": "world-space millimetres",
+      "vertices": 16,
+      "triangles": 24,
+      "cad_metadata": {
+        "object_name": "MaleTool",
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "unit_scale": 0.0010000000474974513,
+        "length_unit": "MILLIMETERS",
+        "measurement_source": "evaluated final mesh loop triangles in world-space millimetres",
+        "modifier_count": 0,
+        "object_location_mm": [
+          0.0,
+          17.0,
+          13.699999809265137
+        ]
+      }
+    },
+    {
+      "role": "body",
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/body_mesh.json",
+      "sha256": "5784246ccc9ff4d1dcab5414fde1186a44855c5b5ed9635a3d38691fd3e812eb",
+      "bytes": 10227,
+      "coordinate_space": "world-space millimetres",
+      "vertices": 64,
+      "triangles": 124,
+      "cad_metadata": {
+        "object_name": "Body",
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "unit_scale": 0.0010000000474974513,
+        "length_unit": "MILLIMETERS",
+        "measurement_source": "evaluated final mesh loop triangles in world-space millimetres",
+        "modifier_count": 0,
+        "object_location_mm": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "role": "lid",
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/lid_mesh.json",
+      "sha256": "e8e796e8c63402966fbf51963544ebd1bc77027230b3b077390cecb8f59ade9b",
+      "bytes": 6311,
+      "coordinate_space": "world-space millimetres",
+      "vertices": 36,
+      "triangles": 68,
+      "cad_metadata": {
+        "object_name": "SlidingLid",
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "unit_scale": 0.0010000000474974513,
+        "length_unit": "MILLIMETERS",
+        "measurement_source": "evaluated final mesh loop triangles in world-space millimetres",
+        "modifier_count": 0,
+        "object_location_mm": [
+          0.0,
+          0.0,
+          16.200000762939453
+        ]
+      }
+    },
+    {
+      "role": "travel_x30",
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/travel_30_lid_mesh.json",
+      "sha256": "72e68840b1dc7df0575ba30d18998a17ac5ae4fa47c6e444a4f9bb312f5618ec",
+      "bytes": 6276,
+      "coordinate_space": "world-space millimetres",
+      "vertices": 36,
+      "triangles": 68,
+      "cad_metadata": {
+        "object_name": "SlidingLid",
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "unit_scale": 0.0010000000474974513,
+        "length_unit": "MILLIMETERS",
+        "measurement_source": "evaluated final mesh loop triangles in world-space millimetres",
+        "modifier_count": 0,
+        "object_location_mm": [
+          30.0,
+          0.0,
+          16.200000762939453
+        ]
+      }
+    },
+    {
+      "role": "travel_x62",
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/travel_62_lid_mesh.json",
+      "sha256": "031782e98521b6c83139e90612ef6a39e3572abccd71cf7848919b7b9ce3c39d",
+      "bytes": 6294,
+      "coordinate_space": "world-space millimetres",
+      "vertices": 36,
+      "triangles": 68,
+      "cad_metadata": {
+        "object_name": "SlidingLid",
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "unit_scale": 0.0010000000474974513,
+        "length_unit": "MILLIMETERS",
+        "measurement_source": "evaluated final mesh loop triangles in world-space millimetres",
+        "modifier_count": 0,
+        "object_location_mm": [
+          62.0,
+          0.0,
+          16.200000762939453
+        ]
+      }
+    }
+  ],
+  "source_snapshot_manifest": {
+    "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/source-snapshot/manifest.json",
+    "sha256": "5ab78bb486486467d6afac8e6a40320656ac27ce2a2d5679c407a3468c2856ac",
+    "bytes": 2149
+  },
+  "script_snapshots": [
+    {
+      "source": "learning/tutor/run_demo.py",
+      "snapshot": "source-snapshot/run_demo.py",
+      "sha256": "8a0afa081716cab276c99fc811f6a2453ac82f45b28d8a0b1c639eef67347058",
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/source-snapshot/run_demo.py",
+      "bytes": 11779
+    },
+    {
+      "source": "learning/tutor/blender_demo.py",
+      "snapshot": "source-snapshot/blender_demo.py",
+      "sha256": "96321d8180b1e05a9b77d47551adefbf43ddd04e6add2505eca3b30ceb831a6c",
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/source-snapshot/blender_demo.py",
+      "bytes": 7140
+    },
+    {
+      "source": "learning/tutor/scenarios/common.py",
+      "snapshot": "source-snapshot/common.py",
+      "sha256": "45044c48522bf5a2dee130382f902a07243e82027addaf6594cbae59b3369c3d",
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/source-snapshot/common.py",
+      "bytes": 11133
+    },
+    {
+      "source": "learning/tutor/scenarios/lesson06_dovetail.py",
+      "snapshot": "source-snapshot/lesson06_dovetail.py",
+      "sha256": "46171d7529f3f02b4e523c93b99b794c1d8f999691c4f5140e9504611590c276",
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/source-snapshot/lesson06_dovetail.py",
+      "bytes": 21402
+    },
+    {
+      "source": "learning/tutor/scenarios/lid_checks.py",
+      "snapshot": "source-snapshot/lid_checks.py",
+      "sha256": "b2e2438126695cca24cb560dce046ca743c2de2c348116141ff6ed75c42e52c3",
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/source-snapshot/lid_checks.py",
+      "bytes": 17073
+    },
+    {
+      "source": "learning/tutor/scenarios/stl_checks.py",
+      "snapshot": "source-snapshot/stl_checks.py",
+      "sha256": "36f09e213a7759a95ea07cee1f70fbaaaf2287551b9c97d9308778a658fe922c",
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/source-snapshot/stl_checks.py",
+      "bytes": 18473
+    },
+    {
+      "source": "learning/tutor/scenarios/tenon_checks.py",
+      "snapshot": "source-snapshot/tenon_checks.py",
+      "sha256": "4defe55d142ac78be924cef8d82abc3bd24bd2db6f380332eb29cb5b0d89d13d",
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/source-snapshot/tenon_checks.py",
+      "bytes": 24591
+    },
+    {
+      "source": "learning/tutor/scenarios/dovetail_checks.py",
+      "snapshot": "source-snapshot/dovetail_checks.py",
+      "sha256": "d3baee5fdae4682de29585daf0200932267643579bbc94fe41e129f8a56cdad2",
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/source-snapshot/dovetail_checks.py",
+      "bytes": 18172
+    }
+  ],
+  "operation_evidence": {
+    "run": {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/run.json",
+      "sha256": "646be23f59b69750490cb8f4c156864c7ceea150123e793a0c26cf8f9e4041dc",
+      "bytes": 15826
+    },
+    "verification": {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/verification.json",
+      "sha256": "47ebb57ad00e006d989c65883bea6db7423aed777f216694047b5799a7dbf754",
+      "bytes": 58221
+    },
+    "runner": {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/runner-status.json",
+      "sha256": "299a4875a765924109e684a5d3e5f4ace64c0323d7726327fc8cc0b662e8eb9d",
+      "bytes": 54440
+    },
+    "source_geometry_verification": {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/source-geometry-verification.json",
+      "sha256": "38664d34ec9b2726cdd5daf5752e0c25c09f9ff0b37ef26ff9f2f148f5167342",
+      "bytes": 6721
+    },
+    "operand_attempts": {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/operand-attempts.json",
+      "sha256": "77977f3456e8914e3a51eb5ea56d129c904ed9a52982bfc32053b1a7f4fab1fd",
+      "bytes": 418
+    },
+    "operand_attempt_results": [
+      {
+        "target": "Body",
+        "tool": "GuideTool",
+        "attempt": 0,
+        "operation": "UNION",
+        "operand": "GuideTool"
+      },
+      {
+        "target": "Body",
+        "tool": "GrooveTool",
+        "attempt": 0,
+        "operation": "DIFFERENCE",
+        "operand": "GrooveTool"
+      },
+      {
+        "target": "SlidingLid",
+        "tool": "MaleTool",
+        "attempt": 0,
+        "operation": "UNION",
+        "operand": "MaleTool"
+      }
+    ],
+    "local_retry_used": false,
+    "original_png_count": 24,
+    "original_pngs": [
+      {
+        "seq": 1,
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-01-source-open-dialog.png",
+        "sha256": "a7d4e02fbdccfc1490fbde3565114960f21eb2259f46fec3ee6b08927ef9205d",
+        "bytes": 51781,
+        "width": 1060,
+        "height": 600,
+        "recorded_at": "2026-10-25T06:32:37.123Z"
+      },
+      {
+        "seq": 2,
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-02-source-geometry.png",
+        "sha256": "269975dc4137eabae1d2685ddd01dd787ed724aaaf8e63af50b4cae8ba2a4d3c",
+        "bytes": 167190,
+        "width": 1494,
+        "height": 1019,
+        "recorded_at": "2026-10-25T06:32:44.323Z"
+      },
+      {
+        "seq": 3,
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-03-guide-blocks.png",
+        "sha256": "0a2fe628ad11e6b0ebd89a88a399dc7563eb2ed2cc102e4ed85ee0673dc5d3c0",
+        "bytes": 161796,
+        "width": 1494,
+        "height": 1019,
+        "recorded_at": "2026-10-25T06:33:14.874Z"
+      },
+      {
+        "seq": 4,
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-04-guide-union.png",
+        "sha256": "b1bcc1c5a15a82effaa45275052a670b6d095e8e50abf2b29ea6350257438965",
+        "bytes": 177671,
+        "width": 1494,
+        "height": 1019,
+        "recorded_at": "2026-10-25T06:33:22.474Z"
+      },
+      {
+        "seq": 5,
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-05-guides-applied.png",
+        "sha256": "026367974362bd7bca5bc6c69f4273ef5dfa0ae8e632a9c66d39085e5d567e79",
+        "bytes": 165140,
+        "width": 1494,
+        "height": 1019,
+        "recorded_at": "2026-10-25T06:33:25.174Z"
+      },
+      {
+        "seq": 6,
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-06-groove-tools.png",
+        "sha256": "1116896ca9d646839c8dbee7279f08d42e353ffcbdb17e4d26922cee6434c3a8",
+        "bytes": 163793,
+        "width": 1494,
+        "height": 1019,
+        "recorded_at": "2026-10-25T06:33:50.825Z"
+      },
+      {
+        "seq": 7,
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-07-groove-difference.png",
+        "sha256": "e832535badf710d8120deacd39047c3466c39e1c96327add42c0f7a88aeb8d69",
+        "bytes": 188136,
+        "width": 1494,
+        "height": 1019,
+        "recorded_at": "2026-10-25T06:33:58.725Z"
+      },
+      {
+        "seq": 8,
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-08-body-grooves.png",
+        "sha256": "a7f9a013a829ccfb55037488e188dc7fca264a855fde2ed258f15f8efbc48b37",
+        "bytes": 173396,
+        "width": 1494,
+        "height": 1019,
+        "recorded_at": "2026-10-25T06:34:04.625Z"
+      },
+      {
+        "seq": 9,
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-09-body-end-profile.png",
+        "sha256": "75f83513063b274cbc10fbea3761154118f574a7c75823ef87089e47863b2afd",
+        "bytes": 197536,
+        "width": 1494,
+        "height": 1019,
+        "recorded_at": "2026-10-25T06:34:08.325Z"
+      },
+      {
+        "seq": 10,
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-10-body-non-manifold.png",
+        "sha256": "72bc86d2fcd77b1d03ab734e7d2c143566174d7d6557641852b85a9cfaea152e",
+        "bytes": 202982,
+        "width": 1494,
+        "height": 1019,
+        "recorded_at": "2026-10-25T06:34:11.525Z"
+      },
+      {
+        "seq": 11,
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-11-lid-plate.png",
+        "sha256": "22cd7d1b9dc4f3cd0ef8b28b5fcab08047085787754d310dc14b2fa7970c61a9",
+        "bytes": 161688,
+        "width": 1494,
+        "height": 1019,
+        "recorded_at": "2026-10-25T06:34:30.376Z"
+      },
+      {
+        "seq": 12,
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-12-male-ribs.png",
+        "sha256": "68f9b3508492b2a9e82840c80e1fb5565f2118db11f25abf5d30e69465629401",
+        "bytes": 166726,
+        "width": 1494,
+        "height": 1019,
+        "recorded_at": "2026-10-25T06:34:56.033Z"
+      },
+      {
+        "seq": 13,
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-13-lid-union.png",
+        "sha256": "b3f4c8bec99c35b4609c64922bcdcc4f7f525f8fd454bdf4542ece1fac1768a5",
+        "bytes": 174821,
+        "width": 1494,
+        "height": 1019,
+        "recorded_at": "2026-10-25T06:35:05.733Z"
+      },
+      {
+        "seq": 14,
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-14-lid-underside.png",
+        "sha256": "a524c1369371e2c3134cd56ba7e3ff1caa66c04904c243b7924c0c4d3f304b4b",
+        "bytes": 169777,
+        "width": 1494,
+        "height": 1019,
+        "recorded_at": "2026-10-25T06:35:11.650Z"
+      },
+      {
+        "seq": 15,
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-15-lid-end-profile.png",
+        "sha256": "7d6f39f90b987a1b6d2dc1444ce9d5d7bee1c13fd286aeba973f00e148867d63",
+        "bytes": 203910,
+        "width": 1494,
+        "height": 1019,
+        "recorded_at": "2026-10-25T06:35:15.350Z"
+      },
+      {
+        "seq": 16,
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-16-lid-non-manifold.png",
+        "sha256": "357690116eb54d80516c45782d0a0c77466cf13809529fe053572b614bc7c3e3",
+        "bytes": 209074,
+        "width": 1494,
+        "height": 1019,
+        "recorded_at": "2026-10-25T06:35:18.550Z"
+      },
+      {
+        "seq": 17,
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-17-assembly-geometry.png",
+        "sha256": "e149c3589f991976fb26335cf0c638446d22f5cc9ee202eb9636ed5fc83218cd",
+        "bytes": 163771,
+        "width": 1494,
+        "height": 1019,
+        "recorded_at": "2026-10-25T06:35:27.050Z"
+      },
+      {
+        "seq": 18,
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-18-slide-x30.png",
+        "sha256": "bdb153cb11647b779e878b08a0439c8053e6b5ac50e9a53ad9ee98e0951bd028",
+        "bytes": 167349,
+        "width": 1494,
+        "height": 1019,
+        "recorded_at": "2026-10-25T06:35:32.500Z"
+      },
+      {
+        "seq": 19,
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-19-slide-x62.png",
+        "sha256": "769aee9d85db7ed5078039ce857648149a5f362c9387f5c35d3453587093a934",
+        "bytes": 167771,
+        "width": 1494,
+        "height": 1019,
+        "recorded_at": "2026-10-25T06:35:37.950Z"
+      },
+      {
+        "seq": 20,
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-20-slide-return.png",
+        "sha256": "269741e536fef83555f23de0623cd2eee6db6962f3edebb45ef58ae197119f8d",
+        "bytes": 163771,
+        "width": 1494,
+        "height": 1019,
+        "recorded_at": "2026-10-25T06:35:44.401Z"
+      },
+      {
+        "seq": 21,
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-21-save-dialog.png",
+        "sha256": "a3ec08435b7d46c6d85958ee12144b230e65dda461dbbce5072cb34ae41bb896",
+        "bytes": 53147,
+        "width": 1060,
+        "height": 600,
+        "recorded_at": "2026-10-25T06:35:49.301Z"
+      },
+      {
+        "seq": 22,
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-22-saved.png",
+        "sha256": "73e7775b088aab229f869d5ffc40e41648e8f24355ea5b74402d7bf9fae8fd81",
+        "bytes": 167789,
+        "width": 1494,
+        "height": 1019,
+        "recorded_at": "2026-10-25T06:35:52.601Z"
+      },
+      {
+        "seq": 23,
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-23-open-saved.png",
+        "sha256": "1103c886a437094da8f53ef3209839cd594de1b63e6f0b26fc767411d6b4c598",
+        "bytes": 57910,
+        "width": 1060,
+        "height": 600,
+        "recorded_at": "2026-10-25T06:35:57.501Z"
+      },
+      {
+        "seq": 24,
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-24-reopened-verified.png",
+        "sha256": "fa52e7159268dc72d0a481026c2cb6f2831558e3356e2cb2ef1d71524f22a9aa",
+        "bytes": 161342,
+        "width": 1494,
+        "height": 1019,
+        "recorded_at": "2026-10-25T06:36:00.901Z"
+      }
+    ],
+    "pixel_edits": false
+  },
+  "execution_history": [
+    {
+      "run": "2026-10-25-lesson06-dovetail-demo-v001",
+      "status": "failed",
+      "blender_exit_code": 0,
+      "successful_photo_records": 7,
+      "error_records": 1,
+      "original_png_count": 7,
+      "saved_final_scene": false,
+      "published": false,
+      "interruption_reason": "舊驗證器 expected X face planes 漏列原盒保留的內端壁 x=-28/+28，各 968 mm²；非 Boolean 操作或實體配合失敗。",
+      "recorded_error_last_line": "ValueError: 05-05 geometry validation: unexpected X face-plane count",
+      "body_rechecked_with_corrected_validator": {
+        "passed": true,
+        "volume_mm3": 16655.36032775877,
+        "non_manifold_edges": 0,
+        "connected_shells": 1,
+        "genus": 0
+      },
+      "run_evidence": {
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v001/run.json",
+        "sha256": "39d7bbc216052cc08a01417c375c7d152af93bb1ba86de54a1eb6eeb4823209f",
+        "bytes": 6498
+      },
+      "runner_evidence": {
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v001/runner-status.json",
+        "sha256": "e8e3bcd7263b0ffa7cf48996b8e6cea2c16eedda48306d408d982e35a730718e",
+        "bytes": 55951
+      },
+      "body_raw_evidence": {
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v001/body_mesh.json",
+        "sha256": "5784246ccc9ff4d1dcab5414fde1186a44855c5b5ed9635a3d38691fd3e812eb",
+        "bytes": 10227
+      }
+    }
+  ],
+  "ui_probe": {
+    "run": "2026-10-25-dovetail-ui-probe-v001",
+    "status": "completed",
+    "original_png_count": 6,
+    "elapsed_seconds": 84.614,
+    "saved_final_scene": false,
+    "published": false,
+    "scope": "短流程實際測試導軌加厚、Boolean UI 與 GrooveTool 完整工具剖面；沒有完整滑蓋、另存或重開結果。",
+    "run_evidence": {
+      "path": "learning/evidence/06/2026-10-25-dovetail-ui-probe-v001/run.json",
+      "sha256": "a1d40b5ddb6252f6b451362003e6080d753c33b62270cb627e119b6dd960ccbc",
+      "bytes": 4068
+    },
+    "runner_evidence": {
+      "path": "learning/evidence/06/2026-10-25-dovetail-ui-probe-v001/runner-status.json",
+      "sha256": "d8c5dffcf57cd9f26ba01aefce3f39c4f43b541e76a806ba806086f37876d769",
+      "bytes": 54073
+    }
+  },
+  "travel_summary": {
+    "states": [
+      {
+        "translation_x_mm": 0.0,
+        "x_bounds_mm": [
+          -30.0,
+          30.0
+        ],
+        "overlap_length_mm": 60.0,
+        "fully_disengaged": false,
+        "end_gap_mm": 0.0,
+        "geometric_nonintersection": true,
+        "same_mesh_after_normalising_translation": true
+      },
+      {
+        "translation_x_mm": 30.0,
+        "x_bounds_mm": [
+          0.0,
+          60.0
+        ],
+        "overlap_length_mm": 30.0,
+        "fully_disengaged": false,
+        "end_gap_mm": 0.0,
+        "geometric_nonintersection": true,
+        "same_mesh_after_normalising_translation": true
+      },
+      {
+        "translation_x_mm": 62.0,
+        "x_bounds_mm": [
+          32.0,
+          92.0
+        ],
+        "overlap_length_mm": 0.0,
+        "fully_disengaged": true,
+        "end_gap_mm": 2.0,
+        "geometric_nonintersection": true,
+        "same_mesh_after_normalising_translation": true
+      }
+    ],
+    "sweep_interval_x_mm": [
+      0,
+      62
+    ],
+    "continuous_sweep_geometric_nonintersection": true,
+    "proof": "full-length constant profiles, cut end openings, positive transverse gaps, and identical rigidly translated lid meshes"
+  },
+  "gap_readback_clarification": {
+    "record_sequence": 17,
+    "original_observed_approximation_mm": 0.196116,
+    "interpretation": "Ideal design reference rounded from 0.2/sqrt(1+0.2^2); not the exact minimum of the measured final mesh. Original run.json and screenshots are preserved.",
+    "ideal_design_normal_reference_mm": 0.19611613513818402,
+    "actual_final_mesh_min_horizontal_gap_mm": 0.19999793767925667,
+    "actual_final_mesh_min_normal_gap_mm": 0.19611411961014766
+  },
+  "workspace_check": {
+    "unchanged": true,
+    "snapshot_encoding": "SHA-256 of UTF-8 JSON, sorted keys, compact separators, ensure_ascii=false",
+    "snapshot_sha256_before": "4ad6905b1cef7594ff1bfed45b81e7794fdbf128011df09b4686bdb44d0a7d2f",
+    "snapshot_sha256_after": "4ad6905b1cef7594ff1bfed45b81e7794fdbf128011df09b4686bdb44d0a7d2f",
+    "directory_entries": 11,
+    "file_entries": 0,
+    "changes": []
+  },
+  "progress_baseline": {
+    "revision": 5,
+    "sha256": "d92e4f2ee78a1cf41386816b8616bf635b89fb25f8bfd813ac00cd20ed20b4ef",
+    "modified": false
+  },
+  "journal": "learning/journal/2026-10-25-lesson06-dovetail-demo-v002.md",
+  "numeric_comparison": {
+    "dimensionsAbsMm": 0.0001,
+    "volumeRelative": 1e-05,
+    "purpose": "Floating point reconstruction only; not manufacturing tolerance or printed fit acceptance"
+  },
+  "validation_checks": {
+    "pure_actual_import_validation_passed": true,
+    "original_png_integrity_checked": 24,
+    "mesh_dump_count": 8,
+    "script_snapshot_count": 8,
+    "importer_related_tests_passed": 69,
+    "reported_tutor_tests": {
+      "run": 133,
+      "passed": 132,
+      "skipped": 1
+    },
+    "reported_server_tests_passed": 17,
+    "reported_frontend_syntax_check_passed": true,
+    "publication_check_scope": "Formal import and browser/HTTP checks are recorded separately after these documents; no publication claim here."
+  },
+  "mesh_analysis_overhang_checked": false,
+  "exported_stl": false,
+  "slicer_checked": false,
+  "printed": false,
+  "fit_tested": false,
+  "physical_measurements": null,
+  "fit_results": null,
+  "physical_interference": null,
+  "qualified_clearance_mm": null
+}

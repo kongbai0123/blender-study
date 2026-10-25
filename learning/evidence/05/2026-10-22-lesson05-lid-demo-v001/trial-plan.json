@@ -1,0 +1,35 @@
+{
+  "purpose": "Geometry demonstration only, not qualified printed fit",
+  "selectedBy": "tutor for this geometry demonstration, from the existing experimental range",
+  "body_outer_mm": [
+    60,
+    40,
+    30
+  ],
+  "body_cavity_xy_mm": [
+    56,
+    36
+  ],
+  "body_demo_wall_mm": 2,
+  "plate_mm": [
+    60,
+    40,
+    2
+  ],
+  "lip_outer_mm": [
+    55.6,
+    35.6
+  ],
+  "lip_inner_mm": [
+    51.6,
+    31.6
+  ],
+  "lip_wall_mm": 2,
+  "lip_depth_mm": 4,
+  "total_clearance_mm": 0.4,
+  "per_side_clearance_mm": 0.2,
+  "status": "experimental_geometry_only",
+  "printed": false,
+  "fit_tested": false,
+  "qualified_clearance_mm": null
+}

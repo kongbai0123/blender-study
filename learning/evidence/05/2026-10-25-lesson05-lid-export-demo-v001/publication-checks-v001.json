@@ -1,0 +1,129 @@
+{
+  "recordedAt": "2026-10-25T05:28:20.160392+00:00",
+  "passed": true,
+  "scope": "05-06 STL export and actual digital reimport only",
+  "catalogChangedSteps": [
+    "05-06"
+  ],
+  "browserProofPending": false,
+  "rawScreenshots": [
+    {
+      "path": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/05-06-01-source-open-dialog.png",
+      "sha256": "4dcdab53fd8067df340d0617778190df161f4ee433449ede255408e2e6e0b5ef",
+      "httpBytesEqual": true
+    },
+    {
+      "path": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/05-06-02-lid-selected.png",
+      "sha256": "209c403efbec2304e93ec626b3ec0a9ff37f9a4ef080cfcaa78e11605bda2092",
+      "httpBytesEqual": true
+    },
+    {
+      "path": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/05-06-03-export-menu.png",
+      "sha256": "bbdd40b730bd3881bdcf1cc615bfddfb501b4b65c1e0b8d9e80ed36189218b01",
+      "httpBytesEqual": true
+    },
+    {
+      "path": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/05-06-04-export-before.png",
+      "sha256": "0d58621434de1798f1634faff6ef099811906db5123d9b226256e6a2e812864c",
+      "httpBytesEqual": true
+    },
+    {
+      "path": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/05-06-05-export-options.png",
+      "sha256": "2ba670fbc9592b460fb36d1ca2b9f66d41ff4468bfed130802b076b93ba63c8e",
+      "httpBytesEqual": true
+    },
+    {
+      "path": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/05-06-06-stl-checked.png",
+      "sha256": "6a1fc291fed85dc0c59e4efd82367235e20cd38f534d11d1359ff2f40cb64596",
+      "httpBytesEqual": true
+    },
+    {
+      "path": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/05-06-07-empty-mm-scene.png",
+      "sha256": "4adc8aebf5e4a772bee8fce4eb6b599831c2910744002fc3fb9242704c87f51c",
+      "httpBytesEqual": true
+    },
+    {
+      "path": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/05-06-08-import-dialog.png",
+      "sha256": "449c2a87c98e26c5b91dcdddee7d558287a42bde44a4b6fdcb1ce77032d73c77",
+      "httpBytesEqual": true
+    },
+    {
+      "path": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/05-06-09-reimport-dimensions.png",
+      "sha256": "ff7b6d72058f2e973be1cc6fa3d462e6f2fdbd3a64585f1116d13cb5c8ba8a84",
+      "httpBytesEqual": true
+    },
+    {
+      "path": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/05-06-10-reimport-underside.png",
+      "sha256": "c31773df47bd9714268cf1a9715c419d09c163e8f1a903091bb8251f953e48d8",
+      "httpBytesEqual": true
+    },
+    {
+      "path": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/05-06-11-non-manifold.png",
+      "sha256": "af4a7e9ad7339da7e7c301f32d80e21004f3162cd03bcff73a8807584ac1214d",
+      "httpBytesEqual": true
+    },
+    {
+      "path": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/05-06-12-verified.png",
+      "sha256": "c31773df47bd9714268cf1a9715c419d09c163e8f1a903091bb8251f953e48d8",
+      "httpBytesEqual": true
+    }
+  ],
+  "executedScriptSnapshotsChecked": 7,
+  "stl": {
+    "path": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/demo-files/exports/u05_lid_v001.stl",
+    "bytes": 2284,
+    "sha256": "0b226cf405bc70f42b5ce28fee9f46cb55eff67b84c6d786c091a2043f5f2408",
+    "httpBytesEqual": true,
+    "httpAttachment": "attachment"
+  },
+  "sourceSceneSha256": "ab08f331dcb26c5ffc6c6ca56c7c7f022df96791c4777e37c5f01a964fbed6ff",
+  "sourceAndOpenedCopyUnchanged": true,
+  "apiCatalogEqualsDisk": true,
+  "apiProgressEqualsDisk": true,
+  "progressSha256": "d92e4f2ee78a1cf41386816b8616bf635b89fb25f8bfd813ac00cd20ed20b4ef",
+  "progressRevision": 5,
+  "progressUnchanged": true,
+  "tests": {
+    "tutorSuiteBeforeProvenanceSchemaFix": {
+      "run": 85,
+      "skipped": 1,
+      "passed": true
+    },
+    "importerTestsAfterSchemaFix": {
+      "run": 42,
+      "skipped": 0,
+      "passed": true
+    },
+    "serverSuite": {
+      "run": 17,
+      "passed": true
+    },
+    "appJsSyntax": {
+      "passed": true
+    }
+  },
+  "printed": false,
+  "fit_tested": false,
+  "slicer_checked": false,
+  "physical_measurements": null,
+  "fit_results": null,
+  "qualified_clearance_mm": null,
+  "trial_total_clearance_mm": 0.4,
+  "trial_per_side_clearance_mm": 0.2,
+  "trial_status": "experimental_geometry_only",
+  "browserProof": {
+    "recordedAt": "2026-10-25T05:29:01.589321+00:00",
+    "path": "learning/evidence/ui/2026-10-25-lesson05-lid-export-demo-v001.jpg",
+    "sha256": "f40994e42c6c5bc4d0a08c9534769ca5054f42b860c7609fc08476fa9aa88d86",
+    "bytes": 37888,
+    "width": 304,
+    "height": 848,
+    "format": "JPEG",
+    "captureMethod": "MCP cua_repl Tab.getScreenshot; original browser pixels",
+    "pixelEdits": false,
+    "page": "http://127.0.0.1:8766/",
+    "step": "05-06",
+    "purpose": "Actual updated learning page displaying reimport screenshot and experimental-clearance caption; 05-06 selected for preview, no completion confirmation"
+  },
+  "browser05_06Verified": true
+}

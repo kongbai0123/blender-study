@@ -1,0 +1,526 @@
+{
+  "schema_version": 1,
+  "run": "2026-10-25-lesson06-tenon-demo-v006",
+  "recorded_on": "2026-10-25",
+  "timezone": "Asia/Taipei",
+  "scope": "Nominal CAD geometry only; no physical fit conclusion",
+  "source_scene": {
+    "path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\05\\2026-10-22-lesson05-lid-demo-v001\\demo-files\\u05_lid_v001.blend",
+    "sha256": "ab08f331dcb26c5ffc6c6ca56c7c7f022df96791c4777e37c5f01a964fbed6ff"
+  },
+  "scene": {
+    "path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\06\\2026-10-25-lesson06-tenon-demo-v006\\demo-files\\u06_locating_tenon_v001.blend",
+    "sha256": "f94dc6c5d342f04c41dddc37a4682805a5f7d87b5cf7a8b7bda37cd8ec51040f",
+    "bytes": 105466,
+    "version": "v001"
+  },
+  "nominal_trial": {
+    "status": "experimental_geometry_only",
+    "selected_by": "tutor",
+    "diameter_total_clearance_mm": 0.4,
+    "nominal_radial_clearance_mm": 0.2,
+    "qualified_clearance_mm": null,
+    "context": "Tutor-selected trial values continued from prior experiments; no qualified printed clearance"
+  },
+  "actual_cad_measurements": {
+    "measurement_scope": "Measured final world-space meshes; not printed measurements",
+    "pin_polygon": {
+      "segments": 32,
+      "centre_mm": [
+        23.0,
+        13.0
+      ],
+      "nominal_diameter_mm": 4.0,
+      "measured_circumdiameter_mm": 4.000000072261473,
+      "across_flats_diameter_mm": 3.9807381147472,
+      "phase_angle_rad": 0.0,
+      "boundary_sample_count": 32,
+      "collinear_split_count": 0
+    },
+    "hole_polygon": {
+      "segments": 32,
+      "centre_mm": [
+        23.0,
+        13.0
+      ],
+      "nominal_diameter_mm": 4.4,
+      "measured_circumdiameter_mm": 4.400000831756877,
+      "across_flats_diameter_mm": 4.3788130575646464,
+      "phase_angle_rad": 0.0,
+      "boundary_sample_count": 32,
+      "collinear_split_count": 0
+    },
+    "hole_boundary_levels": [
+      {
+        "z_mm": 15.0,
+        "boundary_sample_count": 33,
+        "corner_count": 32,
+        "collinear_split_count": 1
+      },
+      {
+        "z_mm": 17.0,
+        "boundary_sample_count": 32,
+        "corner_count": 32,
+        "collinear_split_count": 0
+      }
+    ],
+    "construction_pin": {
+      "z_mm": [
+        -13.5,
+        16.5
+      ],
+      "height_mm": 30.0,
+      "location_mm": [
+        23.0,
+        13.0,
+        1.5
+      ]
+    },
+    "construction_cutter": {
+      "z_mm": [
+        11.0,
+        21.0
+      ],
+      "height_mm": 10.0,
+      "location_mm": [
+        23.0,
+        13.0,
+        16.0
+      ]
+    },
+    "final_pin": {
+      "exposed_z_mm": [
+        -13.0,
+        16.5
+      ],
+      "exposed_height_mm": 29.5,
+      "tip_z_mm": 16.5,
+      "construction_floor_overlap_mm": 0.5
+    },
+    "polygon_normal_gaps_mm": [
+      0.19903740438812867,
+      0.19903746199278216,
+      0.19903733486324593,
+      0.19903739623663563,
+      0.1990362137307402,
+      0.19903645617641308,
+      0.19903718515551705,
+      0.1990367925791623,
+      0.1990367925791623,
+      0.19903718515551705,
+      0.19903645617641308,
+      0.1990362137307402,
+      0.19903739623663563,
+      0.19903733486324593,
+      0.19903746199278216,
+      0.19903740438812867,
+      0.19903740438812867,
+      0.19903746199278216,
+      0.19903733486324593,
+      0.19903739623663563,
+      0.1990362137307402,
+      0.19903645617641308,
+      0.19903718515551705,
+      0.1990367925791623,
+      0.1990367925791623,
+      0.19903718515551705,
+      0.19903645617641308,
+      0.1990362137307402,
+      0.19903739623663563,
+      0.19903733486324593,
+      0.19903746199278216,
+      0.19903740438812867
+    ],
+    "min_normal_gap_mm": 0.1990362137307402,
+    "normal_gap_evidence": [
+      {
+        "number": 1,
+        "normal_xy": [
+          0.9951846962795754,
+          0.098017448910535
+        ],
+        "hole_plane_offset_mm": 2.1894070910807337,
+        "pin_support_mm": 1.990369686692605,
+        "normal_gap_mm": 0.19903740438812867
+      },
+      {
+        "number": 2,
+        "normal_xy": [
+          0.9569402644926281,
+          0.29028491209978297
+        ],
+        "hole_plane_offset_mm": 2.18940704729687,
+        "pin_support_mm": 1.990369585304088,
+        "normal_gap_mm": 0.19903746199278216
+      },
+      {
+        "number": 3,
+        "normal_xy": [
+          0.8819207797047044,
+          0.4713976435293736
+        ],
+        "hole_plane_offset_mm": 2.189406753566186,
+        "pin_support_mm": 1.99036941870294,
+        "normal_gap_mm": 0.19903733486324593
+      },
+      {
+        "number": 4,
+        "normal_xy": [
+          0.7730113081986496,
+          0.6343922425416411
+        ],
+        "hole_plane_offset_mm": 2.1894068591829905,
+        "pin_support_mm": 1.9903694629463549,
+        "normal_gap_mm": 0.19903739623663563
+      },
+      {
+        "number": 5,
+        "normal_xy": [
+          0.6343911581436625,
+          0.7730121981373532
+        ],
+        "hole_plane_offset_mm": 2.1894065566752485,
+        "pin_support_mm": 1.9903703429445083,
+        "normal_gap_mm": 0.1990362137307402
+      },
+      {
+        "number": 6,
+        "normal_xy": [
+          0.4713985628409573,
+          0.8819202883205942
+        ],
+        "hole_plane_offset_mm": 2.1894065287823232,
+        "pin_support_mm": 1.9903700726059101,
+        "normal_gap_mm": 0.19903645617641308
+      },
+      {
+        "number": 7,
+        "normal_xy": [
+          0.29028491209978297,
+          0.9569402644926281
+        ],
+        "hole_plane_offset_mm": 2.18940704729687,
+        "pin_support_mm": 1.990369862141353,
+        "normal_gap_mm": 0.19903718515551705
+      },
+      {
+        "number": 8,
+        "normal_xy": [
+          0.09801525886889705,
+          0.9951849119781022
+        ],
+        "hole_plane_offset_mm": 2.1894066165353667,
+        "pin_support_mm": 1.9903698239562044,
+        "normal_gap_mm": 0.1990367925791623
+      },
+      {
+        "number": 9,
+        "normal_xy": [
+          -0.09801525886889705,
+          0.9951849119781022
+        ],
+        "hole_plane_offset_mm": 2.1894066165353667,
+        "pin_support_mm": 1.9903698239562044,
+        "normal_gap_mm": 0.1990367925791623
+      },
+      {
+        "number": 10,
+        "normal_xy": [
+          -0.29028491209978297,
+          0.9569402644926281
+        ],
+        "hole_plane_offset_mm": 2.18940704729687,
+        "pin_support_mm": 1.990369862141353,
+        "normal_gap_mm": 0.19903718515551705
+      },
+      {
+        "number": 11,
+        "normal_xy": [
+          -0.4713985628409573,
+          0.8819202883205942
+        ],
+        "hole_plane_offset_mm": 2.1894065287823232,
+        "pin_support_mm": 1.9903700726059101,
+        "normal_gap_mm": 0.19903645617641308
+      },
+      {
+        "number": 12,
+        "normal_xy": [
+          -0.6343911581436625,
+          0.7730121981373532
+        ],
+        "hole_plane_offset_mm": 2.1894065566752485,
+        "pin_support_mm": 1.9903703429445083,
+        "normal_gap_mm": 0.1990362137307402
+      },
+      {
+        "number": 13,
+        "normal_xy": [
+          -0.7730113081986496,
+          0.6343922425416411
+        ],
+        "hole_plane_offset_mm": 2.1894068591829905,
+        "pin_support_mm": 1.9903694629463549,
+        "normal_gap_mm": 0.19903739623663563
+      },
+      {
+        "number": 14,
+        "normal_xy": [
+          -0.8819207797047044,
+          0.4713976435293736
+        ],
+        "hole_plane_offset_mm": 2.189406753566186,
+        "pin_support_mm": 1.99036941870294,
+        "normal_gap_mm": 0.19903733486324593
+      },
+      {
+        "number": 15,
+        "normal_xy": [
+          -0.9569402644926281,
+          0.29028491209978297
+        ],
+        "hole_plane_offset_mm": 2.18940704729687,
+        "pin_support_mm": 1.990369585304088,
+        "normal_gap_mm": 0.19903746199278216
+      },
+      {
+        "number": 16,
+        "normal_xy": [
+          -0.9951846962795754,
+          0.098017448910535
+        ],
+        "hole_plane_offset_mm": 2.1894070910807337,
+        "pin_support_mm": 1.990369686692605,
+        "normal_gap_mm": 0.19903740438812867
+      },
+      {
+        "number": 17,
+        "normal_xy": [
+          -0.9951846962795754,
+          -0.098017448910535
+        ],
+        "hole_plane_offset_mm": 2.1894070910807337,
+        "pin_support_mm": 1.990369686692605,
+        "normal_gap_mm": 0.19903740438812867
+      },
+      {
+        "number": 18,
+        "normal_xy": [
+          -0.9569402644926281,
+          -0.29028491209978297
+        ],
+        "hole_plane_offset_mm": 2.18940704729687,
+        "pin_support_mm": 1.990369585304088,
+        "normal_gap_mm": 0.19903746199278216
+      },
+      {
+        "number": 19,
+        "normal_xy": [
+          -0.8819207797047044,
+          -0.4713976435293736
+        ],
+        "hole_plane_offset_mm": 2.189406753566186,
+        "pin_support_mm": 1.99036941870294,
+        "normal_gap_mm": 0.19903733486324593
+      },
+      {
+        "number": 20,
+        "normal_xy": [
+          -0.7730113081986496,
+          -0.6343922425416411
+        ],
+        "hole_plane_offset_mm": 2.1894068591829905,
+        "pin_support_mm": 1.9903694629463549,
+        "normal_gap_mm": 0.19903739623663563
+      },
+      {
+        "number": 21,
+        "normal_xy": [
+          -0.6343911581436625,
+          -0.7730121981373532
+        ],
+        "hole_plane_offset_mm": 2.1894065566752485,
+        "pin_support_mm": 1.9903703429445083,
+        "normal_gap_mm": 0.1990362137307402
+      },
+      {
+        "number": 22,
+        "normal_xy": [
+          -0.4713985628409573,
+          -0.8819202883205942
+        ],
+        "hole_plane_offset_mm": 2.1894065287823232,
+        "pin_support_mm": 1.9903700726059101,
+        "normal_gap_mm": 0.19903645617641308
+      },
+      {
+        "number": 23,
+        "normal_xy": [
+          -0.29028491209978297,
+          -0.9569402644926281
+        ],
+        "hole_plane_offset_mm": 2.18940704729687,
+        "pin_support_mm": 1.990369862141353,
+        "normal_gap_mm": 0.19903718515551705
+      },
+      {
+        "number": 24,
+        "normal_xy": [
+          -0.09801525886889705,
+          -0.9951849119781022
+        ],
+        "hole_plane_offset_mm": 2.1894066165353667,
+        "pin_support_mm": 1.9903698239562044,
+        "normal_gap_mm": 0.1990367925791623
+      },
+      {
+        "number": 25,
+        "normal_xy": [
+          0.09801525886889705,
+          -0.9951849119781022
+        ],
+        "hole_plane_offset_mm": 2.1894066165353667,
+        "pin_support_mm": 1.9903698239562044,
+        "normal_gap_mm": 0.1990367925791623
+      },
+      {
+        "number": 26,
+        "normal_xy": [
+          0.29028491209978297,
+          -0.9569402644926281
+        ],
+        "hole_plane_offset_mm": 2.18940704729687,
+        "pin_support_mm": 1.990369862141353,
+        "normal_gap_mm": 0.19903718515551705
+      },
+      {
+        "number": 27,
+        "normal_xy": [
+          0.4713985628409573,
+          -0.8819202883205942
+        ],
+        "hole_plane_offset_mm": 2.1894065287823232,
+        "pin_support_mm": 1.9903700726059101,
+        "normal_gap_mm": 0.19903645617641308
+      },
+      {
+        "number": 28,
+        "normal_xy": [
+          0.6343911581436625,
+          -0.7730121981373532
+        ],
+        "hole_plane_offset_mm": 2.1894065566752485,
+        "pin_support_mm": 1.9903703429445083,
+        "normal_gap_mm": 0.1990362137307402
+      },
+      {
+        "number": 29,
+        "normal_xy": [
+          0.7730113081986496,
+          -0.6343922425416411
+        ],
+        "hole_plane_offset_mm": 2.1894068591829905,
+        "pin_support_mm": 1.9903694629463549,
+        "normal_gap_mm": 0.19903739623663563
+      },
+      {
+        "number": 30,
+        "normal_xy": [
+          0.8819207797047044,
+          -0.4713976435293736
+        ],
+        "hole_plane_offset_mm": 2.189406753566186,
+        "pin_support_mm": 1.99036941870294,
+        "normal_gap_mm": 0.19903733486324593
+      },
+      {
+        "number": 31,
+        "normal_xy": [
+          0.9569402644926281,
+          -0.29028491209978297
+        ],
+        "hole_plane_offset_mm": 2.18940704729687,
+        "pin_support_mm": 1.990369585304088,
+        "normal_gap_mm": 0.19903746199278216
+      },
+      {
+        "number": 32,
+        "normal_xy": [
+          0.9951846962795754,
+          -0.098017448910535
+        ],
+        "hole_plane_offset_mm": 2.1894070910807337,
+        "pin_support_mm": 1.990369686692605,
+        "normal_gap_mm": 0.19903740438812867
+      }
+    ],
+    "across_flats_total_clearance_mm": 0.3980749428174466,
+    "phase_alignment_rad": 0.0,
+    "engagement_mm": 1.5,
+    "tip_to_lid_top_mm": 0.5,
+    "geometric_nonintersection": true,
+    "single_pin_limits_rotation": false,
+    "ringfit": {
+      "scope": "nominal mesh placement only; physical fit remains untested",
+      "geometric_nonintersection": true,
+      "interior_volume_overlap_mm3": 0.0,
+      "per_side_order": [
+        "negative_x",
+        "positive_x",
+        "negative_y",
+        "positive_y"
+      ],
+      "per_side_clearances_mm": [
+        0.20000076293945312,
+        0.20000076293945312,
+        0.20000076293945312,
+        0.20000076293945312
+      ],
+      "total_clearances_mm": [
+        0.40000152587890625,
+        0.40000152587890625
+      ],
+      "trial_total_clearance_mm": 0.4,
+      "engagement_mm": 4.0,
+      "cavity_depth_mm": 28.0,
+      "floor_reserve_mm": 24.0,
+      "rim_contact_z_mm": 15.0,
+      "physical_interference": null,
+      "printed": false,
+      "fit_tested": false,
+      "qualified_clearance_mm": null
+    }
+  },
+  "print_conditions": {
+    "evidence": {
+      "path": "learning/evidence/05/2026-10-22-print-conditions-v001.json",
+      "sha256": "61b631d2b7f815ea046b2afd5216dfa6b0f5dd8a0ef550b062fff6be6c4f6ca8",
+      "bytes": 676
+    },
+    "nozzle_diameter_mm": 0.4,
+    "printing_process": null,
+    "printer_model": null,
+    "material": null,
+    "extrusion_width_mm": null,
+    "layer_height_mm": null,
+    "print_orientation": null,
+    "slicer": null,
+    "note": "Only the learner-provided 0.4 mm nozzle diameter is known; other conditions and fit acceptance cannot be inferred."
+  },
+  "numeric_comparison": {
+    "dimensionsAbsMm": 0.0001,
+    "volumeRelative": 1e-05,
+    "purpose": "Floating point reconstruction only; not manufacturing tolerance or printed fit acceptance"
+  },
+  "numeric_comparison_note": "1e-4 mm dimensions and volume-relative 1e-5 are floating-point checks, not manufacturing tolerances.",
+  "journal": "learning/journal/2026-10-25-lesson06-tenon-demo-v006.md",
+  "scene_manifest": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/scene-manifest-v001.json",
+  "exported_stl": false,
+  "slicer_checked": false,
+  "printed": false,
+  "fit_tested": false,
+  "physical_measurements": null,
+  "fit_results": null,
+  "physical_interference": null,
+  "qualified_clearance_mm": null
+}

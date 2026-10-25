@@ -1,0 +1,420 @@
+{
+  "schema_version": 1,
+  "passed": true,
+  "kind": "independent_thread_parameter_reference_audit",
+  "audited_at": "2026-10-25T12:30:17.098916+00:00",
+  "run_dir": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\08\\2026-10-25-lesson08-parameters-demo-v001",
+  "audit_script_sha256": "1d399c103502cba498d02b51664b1950636aeb515c8fc6c13c4754095881ff82",
+  "audit_primitive_dependency_sha256": {
+    "audit_overhang.py": "d7542331badfc0babcacf47b94d80b28b7013790ec26f668aae090a544a9fb05"
+  },
+  "verification_sha256": "346ccc416ca3ab6f4354779c636c982a750a01e7ab25726dedaa773ac85ba8ae",
+  "source_scene_sha256": "b918ee87d26e289f4c8a2f6633beceb854c7d0511e3eddcc969a0696afcd2530",
+  "parameter_template_sha256": "92c0bf94ede81a48a5c16179ae1558bb8c61c521f960c79cd4ad05830f0d79bb",
+  "source_facts_sha256": "78a0b7b1092287e7956b9a11da17f4b1ef838c7da50473e989d05cc759b67834",
+  "source_and_reference_geometry_equal": true,
+  "method": "Independent directed-edge topology/volume, all 16 native corners, all oriented face-plane areas and six material-interval rays; real three-face selection coordinates; full pending document semantics and provenance. No thread/formula/model checker called.",
+  "source_geometry": {
+    "vertices": 16,
+    "triangles": 28,
+    "edges": 42,
+    "non_manifold_edges": 0,
+    "connected_shells": 1,
+    "euler_characteristic": 2,
+    "genus": 0,
+    "volume_mm3": 15552.0,
+    "bounds_mm": {
+      "min": [
+        -30.0,
+        -20.0,
+        -15.0
+      ],
+      "max": [
+        30.0,
+        20.0,
+        15.0
+      ]
+    },
+    "actual_plane_areas": {
+      "X": [
+        {
+          "coordinate_mm": -30,
+          "area_mm2": 1200.0
+        },
+        {
+          "coordinate_mm": -28,
+          "area_mm2": 1008.0
+        },
+        {
+          "coordinate_mm": 28,
+          "area_mm2": 1008.0
+        },
+        {
+          "coordinate_mm": 30,
+          "area_mm2": 1200.0
+        }
+      ],
+      "Y": [
+        {
+          "coordinate_mm": -20,
+          "area_mm2": 1800.0
+        },
+        {
+          "coordinate_mm": -18,
+          "area_mm2": 1568.0
+        },
+        {
+          "coordinate_mm": 18,
+          "area_mm2": 1568.0
+        },
+        {
+          "coordinate_mm": 20,
+          "area_mm2": 1800.0
+        }
+      ],
+      "Z": [
+        {
+          "coordinate_mm": -15,
+          "area_mm2": 2400.0
+        },
+        {
+          "coordinate_mm": -13,
+          "area_mm2": 2016.0
+        },
+        {
+          "coordinate_mm": 15,
+          "area_mm2": 384.0
+        }
+      ]
+    },
+    "vertical_rays": [
+      {
+        "xy_mm": [
+          0,
+          0
+        ],
+        "z_hits_mm": [
+          -15.0,
+          -13.0
+        ]
+      },
+      {
+        "xy_mm": [
+          -29,
+          0
+        ],
+        "z_hits_mm": [
+          -15.0,
+          15.0
+        ]
+      },
+      {
+        "xy_mm": [
+          29,
+          0
+        ],
+        "z_hits_mm": [
+          -15.0,
+          15.0
+        ]
+      },
+      {
+        "xy_mm": [
+          0,
+          -19
+        ],
+        "z_hits_mm": [
+          -15.0,
+          15.0
+        ]
+      },
+      {
+        "xy_mm": [
+          0,
+          19
+        ],
+        "z_hits_mm": [
+          -15.0,
+          15.0
+        ]
+      },
+      {
+        "xy_mm": [
+          27,
+          17
+        ],
+        "z_hits_mm": [
+          -15.0,
+          -13.0
+        ]
+      }
+    ],
+    "outer_dimensions_mm": [
+      60,
+      40,
+      30
+    ],
+    "cavity_dimensions_mm": [
+      56,
+      36,
+      28
+    ],
+    "wall_and_floor_thickness_mm": 2
+  },
+  "reference_geometry": {
+    "vertices": 16,
+    "triangles": 28,
+    "edges": 42,
+    "non_manifold_edges": 0,
+    "connected_shells": 1,
+    "euler_characteristic": 2,
+    "genus": 0,
+    "volume_mm3": 15552.0,
+    "bounds_mm": {
+      "min": [
+        -30.0,
+        -20.0,
+        -15.0
+      ],
+      "max": [
+        30.0,
+        20.0,
+        15.0
+      ]
+    },
+    "actual_plane_areas": {
+      "X": [
+        {
+          "coordinate_mm": -30,
+          "area_mm2": 1200.0
+        },
+        {
+          "coordinate_mm": -28,
+          "area_mm2": 1008.0
+        },
+        {
+          "coordinate_mm": 28,
+          "area_mm2": 1008.0
+        },
+        {
+          "coordinate_mm": 30,
+          "area_mm2": 1200.0
+        }
+      ],
+      "Y": [
+        {
+          "coordinate_mm": -20,
+          "area_mm2": 1800.0
+        },
+        {
+          "coordinate_mm": -18,
+          "area_mm2": 1568.0
+        },
+        {
+          "coordinate_mm": 18,
+          "area_mm2": 1568.0
+        },
+        {
+          "coordinate_mm": 20,
+          "area_mm2": 1800.0
+        }
+      ],
+      "Z": [
+        {
+          "coordinate_mm": -15,
+          "area_mm2": 2400.0
+        },
+        {
+          "coordinate_mm": -13,
+          "area_mm2": 2016.0
+        },
+        {
+          "coordinate_mm": 15,
+          "area_mm2": 384.0
+        }
+      ]
+    },
+    "vertical_rays": [
+      {
+        "xy_mm": [
+          0,
+          0
+        ],
+        "z_hits_mm": [
+          -15.0,
+          -13.0
+        ]
+      },
+      {
+        "xy_mm": [
+          -29,
+          0
+        ],
+        "z_hits_mm": [
+          -15.0,
+          15.0
+        ]
+      },
+      {
+        "xy_mm": [
+          29,
+          0
+        ],
+        "z_hits_mm": [
+          -15.0,
+          15.0
+        ]
+      },
+      {
+        "xy_mm": [
+          0,
+          -19
+        ],
+        "z_hits_mm": [
+          -15.0,
+          15.0
+        ]
+      },
+      {
+        "xy_mm": [
+          0,
+          19
+        ],
+        "z_hits_mm": [
+          -15.0,
+          15.0
+        ]
+      },
+      {
+        "xy_mm": [
+          27,
+          17
+        ],
+        "z_hits_mm": [
+          -15.0,
+          -13.0
+        ]
+      }
+    ],
+    "outer_dimensions_mm": [
+      60,
+      40,
+      30
+    ],
+    "cavity_dimensions_mm": [
+      56,
+      36,
+      28
+    ],
+    "wall_and_floor_thickness_mm": 2
+  },
+  "selected_faces": {
+    "rim": {
+      "bounds_mm": {
+        "min": [
+          -30.00000142492354,
+          -20.000000949949026,
+          15.00000071246177
+        ],
+        "max": [
+          30.00000142492354,
+          -18.000000854954123,
+          15.00000071246177
+        ]
+      },
+      "actual_area_mm2": 116.00001101940893,
+      "spans_mm": [
+        60.00000284984708,
+        2.0000000949949026,
+        0.0
+      ]
+    },
+    "inner_floor": {
+      "bounds_mm": {
+        "min": [
+          -28.000001329928637,
+          -18.000000854954123,
+          -13.000000617466867
+        ],
+        "max": [
+          28.000001329928637,
+          18.000000854954123,
+          -13.000000617466867
+        ]
+      },
+      "actual_area_mm2": 2016.0001915097282,
+      "spans_mm": [
+        56.00000265985727,
+        36.00000170990825,
+        0.0
+      ]
+    },
+    "outer_floor": {
+      "bounds_mm": {
+        "min": [
+          -30.00000142492354,
+          -20.000000949949026,
+          -15.00000071246177
+        ],
+        "max": [
+          30.00000142492354,
+          20.000000949949026,
+          -15.00000071246177
+        ]
+      },
+      "actual_area_mm2": 2400.0002279877717,
+      "spans_mm": [
+        60.00000284984708,
+        40.00000189989805,
+        0.0
+      ]
+    }
+  },
+  "pending_document": {
+    "passed": true,
+    "pending_parameter_count": 24,
+    "thread_route_selected": null,
+    "screw_configuration_present": false,
+    "thread_parameter_calculations_performed": false,
+    "standard_selected": null,
+    "numeric_thread_inputs_applied": false
+  },
+  "saved_scene": {
+    "path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\08\\2026-10-25-lesson08-parameters-demo-v001\\demo-files\\u08_thread_reference_v001.blend",
+    "bytes": 97955,
+    "sha256": "9bda36c10fd916ef9cbe688f5ca56dcf8cfa0adb83d684300e60196225589d8f"
+  },
+  "original_png_count": 12,
+  "raw_sha256": {
+    "source_body_mesh.json": "225d327508cea87536c14804331c828568cc7c2a425a0437a3554ed0d5d801af",
+    "reference_body_mesh.json": "6a2ff244162c253e6d0e32e1271e6f1711582749178cd2694c66b739c4cef887"
+  },
+  "snapshot_sha256": {
+    "source-snapshot/run_demo.py": "8a0afa081716cab276c99fc811f6a2453ac82f45b28d8a0b1c639eef67347058",
+    "source-snapshot/blender_demo.py": "96321d8180b1e05a9b77d47551adefbf43ddd04e6add2505eca3b30ceb831a6c",
+    "source-snapshot/common.py": "45044c48522bf5a2dee130382f902a07243e82027addaf6594cbae59b3369c3d",
+    "source-snapshot/lesson08_parameters.py": "0ffd7d76215bfd32cd4441bb339153756759b68b6dc720209d256aa983e6a909",
+    "source-snapshot/lid_checks.py": "b2e2438126695cca24cb560dce046ca743c2de2c348116141ff6ed75c42e52c3",
+    "source-snapshot/tenon_checks.py": "4defe55d142ac78be924cef8d82abc3bd24bd2db6f380332eb29cb5b0d89d13d",
+    "source-snapshot/parameter-template-v001.json": "92c0bf94ede81a48a5c16179ae1558bb8c61c521f960c79cd4ad05830f0d79bb",
+    "source-snapshot/thread-source-facts-v001.json": "78a0b7b1092287e7956b9a11da17f4b1ef838c7da50473e989d05cc759b67834"
+  },
+  "learner_progress_sha256": "d92e4f2ee78a1cf41386816b8616bf635b89fb25f8bfd813ac00cd20ed20b4ef",
+  "learner_completion_confirmed": false,
+  "geometry_measurement_recomputed": true,
+  "thread_parameter_calculations_performed": false,
+  "thread_geometry_created": false,
+  "thread_route_selected": null,
+  "thread_standard_selected": null,
+  "screw_modifier_configured": false,
+  "printed": false,
+  "fit_tested": false,
+  "slicer_checked": false,
+  "physical_measurements": null,
+  "fit_results": null,
+  "qualified_torque_Nm": null,
+  "qualified_strength_N": null,
+  "qualified_clearance_mm": null,
+  "numeric_position_epsilon_mm": 0.0001,
+  "epsilon_role": "Floating point geometry reconstruction only; not thread manufacturing tolerance or fit qualification"
+}

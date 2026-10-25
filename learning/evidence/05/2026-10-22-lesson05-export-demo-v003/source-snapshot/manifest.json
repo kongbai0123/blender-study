@@ -1,0 +1,49 @@
+{
+  "recordedAt": "2026-10-22T07:52:24.767479+00:00",
+  "files": [
+    {
+      "source": "learning/tutor/run_demo.py",
+      "snapshot": "source-snapshot/run_demo.py",
+      "sha256": "8a0afa081716cab276c99fc811f6a2453ac82f45b28d8a0b1c639eef67347058"
+    },
+    {
+      "source": "learning/tutor/blender_demo.py",
+      "snapshot": "source-snapshot/blender_demo.py",
+      "sha256": "96321d8180b1e05a9b77d47551adefbf43ddd04e6add2505eca3b30ceb831a6c"
+    },
+    {
+      "source": "learning/tutor/scenarios/common.py",
+      "snapshot": "source-snapshot/common.py",
+      "sha256": "45044c48522bf5a2dee130382f902a07243e82027addaf6594cbae59b3369c3d"
+    },
+    {
+      "source": "learning/tutor/scenarios/lesson05_export.py",
+      "snapshot": "source-snapshot/lesson05_export.py",
+      "sha256": "0aadefaf66d234ea3f4827f529fce40b1cd7d6a7279f093ffaa47c72eeeb89a3"
+    },
+    {
+      "source": "learning/tutor/scenarios/holeplate_checks.py",
+      "snapshot": "source-snapshot/holeplate_checks.py",
+      "sha256": "7a36a5fe96e69dfd021cb626876a47b808f2f32879e76b2dd0c8099dc5e0c31e"
+    },
+    {
+      "source": "learning/tutor/scenarios/stl_checks.py",
+      "snapshot": "source-snapshot/stl_checks.py",
+      "sha256": "36f09e213a7759a95ea07cee1f70fbaaaf2287551b9c97d9308778a658fe922c"
+    }
+  ],
+  "sources": [
+    {
+      "kind": "pin",
+      "original": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\05\\2026-10-22-lesson05-demo-v002\\demo-files\\u05_fit_coupon_v001.blend",
+      "copy": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\05\\2026-10-22-lesson05-export-demo-v003\\demo-files\\sources\\u05_fit_coupon_v001.blend",
+      "sha256": "c2f3edd915324ba66bbd3fb8c6ad1ea0214a539f74cbc732e37adc35f7325162"
+    },
+    {
+      "kind": "hole_plate",
+      "original": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\05\\2026-10-22-lesson05-holes-demo-v002\\demo-files\\u05_hole_plate_v001.blend",
+      "copy": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\05\\2026-10-22-lesson05-export-demo-v003\\demo-files\\sources\\u05_hole_plate_v001.blend",
+      "sha256": "10bfffd651d1583d8704164288aa0757fa617f67a30e21176d7fc892aef3e692"
+    }
+  ]
+}

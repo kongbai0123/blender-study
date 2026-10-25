@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "kind": "redacted_public_derivative",
+  "redacted_public_derivative": true,
+  "preparedOn": "2026-10-26",
+  "originalPath": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/runner-status.json",
+  "originalSha256": "2d58a71f9a45ddad1ce6269bacc99fb216b933a4b5f2df1daab7cc525a33f759",
+  "originalBytes": 54073,
+  "originalAvailableInPublicPackage": false,
+  "redactedKeys": [
+    "/recentCleanup"
+  ],
+  "redactionPolicy": "Recursively omit Windows Recent inventory keys recentCleanup, beforeLinks and afterLinks. Original stays unchanged locally. This derivative is not the original execution record.",
+  "content": {
+    "status": "completed",
+    "scenario": "lesson05_lid_export",
+    "outputDir": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\05\\2026-10-25-lesson05-lid-export-demo-v001",
+    "startedAt": "2026-10-25T05:23:44.603Z",
+    "endedAt": "2026-10-25T05:24:47.823Z",
+    "blenderExitCode": 0,
+    "timeoutSeconds": 600,
+    "workspacesUnchanged": true,
+    "runErrors": [],
+    "workspacesBefore": {
+      ".": {
+        "kind": "directory"
+      },
+      "01": {
+        "kind": "directory"
+      },
+      "02": {
+        "kind": "directory"
+      },
+      "03": {
+        "kind": "directory"
+      },
+      "04": {
+        "kind": "directory"
+      },
+      "05": {
+        "kind": "directory"
+      },
+      "06": {
+        "kind": "directory"
+      },
+      "07": {
+        "kind": "directory"
+      },
+      "08": {
+        "kind": "directory"
+      },
+      "09": {
+        "kind": "directory"
+      },
+      "04/exports": {
+        "kind": "directory"
+      }
+    },
+    "workspacesAfter": {
+      ".": {
+        "kind": "directory"
+      },
+      "01": {
+        "kind": "directory"
+      },
+      "02": {
+        "kind": "directory"
+      },
+      "03": {
+        "kind": "directory"
+      },
+      "04": {
+        "kind": "directory"
+      },
+      "05": {
+        "kind": "directory"
+      },
+      "06": {
+        "kind": "directory"
+      },
+      "07": {
+        "kind": "directory"
+      },
+      "08": {
+        "kind": "directory"
+      },
+      "09": {
+        "kind": "directory"
+      },
+      "04/exports": {
+        "kind": "directory"
+      }
+    },
+    "workspaceChanges": []
+  }
+}

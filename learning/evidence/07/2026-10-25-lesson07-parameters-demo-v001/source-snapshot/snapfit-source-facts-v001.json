@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-10-25",
+  "title": "07-01 懸臂卡扣：原廠公式與估算條件核對",
+  "review_method": "線上讀取原廠著作的 PDF 文字及 BASF 署名文章；只記簡短轉述與公式，不收錄原圖。",
+  "local_pdf_downloaded": false,
+  "local_pdf_path": null,
+  "local_pdf_sha256": null,
+  "source_ids": ["covestro_snapfit_guide", "basf_snapfit_manual", "basf_chul_lee_part3"],
+  "sources": [
+    {
+      "source_id": "covestro_snapfit_guide",
+      "author": "Covestro",
+      "title": "Snap-Fit Joints for Plastics — A Design Guide",
+      "url": "https://solutions.covestro.com/-/media/covestro/solution-center/brands/downloads/imported/1557218421.pdf",
+      "source_type": "manufacturer_original_manual",
+      "hosting": "manufacturer_official_domain",
+      "pages": [
+        {"pdf_page": 9, "page_label": "Page 9 of 26", "locator": "Table 1；均勻矩形等截面及 Symbols"},
+        {"pdf_page": 24, "page_label": "Page 24 of 26", "locator": "Section E；Both Mating Parts Elastic"}
+      ]
+    },
+    {
+      "source_id": "basf_snapfit_manual",
+      "author": "BASF",
+      "title": "Snap-Fit Design Manual",
+      "url": "https://productdesignonline.com/wp-content/uploads/2019/08/Snap-Fit-Design-Manual.pdf",
+      "source_type": "manufacturer_authored_manual_copy",
+      "hosting": "third_party_pdf_mirror",
+      "hosting_note": "BASF 原廠著作的第三方存放副本；不是 BASF 網域，也不是引用存放網站作者的教學內容。",
+      "pages": [
+        {"pdf_page": 9, "page_label": "III-2", "locator": "Figure III-3；Classical Beam Theory，均勻矩形截面"},
+        {"pdf_page": 11, "page_label": "IV-1", "locator": "Improved Cantilever Snap-Fit Design；根部牆面柔度及短樑條件"},
+        {"pdf_page": 12, "page_label": "IV-2", "locator": "Figure IV-1；Uniform Beam Q Factor，各根部配置及 L/t"},
+        {"pdf_page": 14, "page_label": "IV-4", "locator": "Figure IV-3；Improved Formulas 及符號定義"}
+      ]
+    },
+    {
+      "source_id": "basf_chul_lee_part3",
+      "author": "Chul Lee, BASF",
+      "title": "Improving Snapfit Design (Part 3)",
+      "url": "https://ulprospector.ul.com/1248/pe-snapfit-3/",
+      "source_type": "manufacturer_authored_technical_article",
+      "hosting": "third_party_publisher",
+      "hosting_note": "頁面標示由 BASF 供稿並由 BASF 工程師署名；用於交叉核對原冊的短樑及根部柔度說明。",
+      "published_on": "2007-02-19",
+      "pages": null,
+      "locator": "Improved Cantilever Design；Magnification Factors"
+    }
+  ],
+  "page_numbering": "pdf_page 是從封面起算的 1-based PDF 頁序；page_label 是頁面實際標籤，兩者不可混用。",
+  "project_notation": {
+    "L": "從固定根部至理想負載點的有效樑長；毫米",
+    "h": "彎曲方向的樑厚；均勻矩形模型中沿長度固定，BASF 使用符號 t；毫米",
+    "b": "樑寬；毫米",
+    "epsilon_root": "根部外纖維應變，小數比例",
+    "epsilon_allow": "材料及使用條件下的允許應變，小數比例；目前未知",
+    "u": "倒扣幾何量；毫米",
+    "delta_required": "組裝路徑需要該樑讓開的橫向撓度；毫米",
+    "delta_allow": "指定模型及 epsilon_allow 下估算的允許撓度；毫米",
+    "Q": "BASF 根部／牆面配置與 L/h 對應的撓度放大修正"
+  },
+  "facts": [
+    {
+      "fact_id": "covestro_constant_rectangle",
+      "source_ids": ["covestro_snapfit_guide"],
+      "pages": [{"pdf_page": 9, "page_label": "Page 9 of 26", "locator": "Table 1"}],
+      "statement": "均勻矩形懸臂的原冊係數為 0.67；允許撓度與允許根部外纖維應變、樑長平方成正比，與樑厚成反比。",
+      "manufacturer_formula": "y = 0.67 * epsilon * L^2 / h",
+      "strain_units": "epsilon_ratio = epsilon_percent / 100"
+    },
+    {
+      "fact_id": "classical_two_thirds",
+      "source_ids": ["basf_snapfit_manual", "covestro_snapfit_guide"],
+      "pages": [{"source_id": "basf_snapfit_manual", "pdf_page": 9, "page_label": "III-2", "locator": "Figure III-3"}],
+      "statement": "BASF 的均勻矩形古典式為 epsilon_root = 1.50*h*delta/L^2。代數反解的係數是 2/3；Covestro 的 0.67 為此係數的近似寫法，兩者不是精確相等。",
+      "classical_formula": "epsilon_root = 3*h*delta/(2*L^2)",
+      "derived_inverse": "delta_allow = (2/3)*epsilon_allow*L^2/h",
+      "coefficient_comparison": {"exact_classical": "2/3", "manufacturer_rounded": 0.67, "rounded_relative_difference": 0.005},
+      "interpretation": "均勻矩形、端部橫向負載、理想固定根部的古典小撓度樑估算；不是任何卡扣形狀的通用合格判定。b 在此應變／撓度關係中消去，但仍影響剛度及力，需保留為設計參數。"
+    },
+    {
+      "fact_id": "required_deflection_and_undercut",
+      "source_ids": ["covestro_snapfit_guide"],
+      "pages": [{"pdf_page": 24, "page_label": "Page 24 of 26", "locator": "Section E"}],
+      "statement": "手冊簡化情境假設較硬的配合件完全剛性，所以柔性件承擔全部倒扣位移；兩件皆可變形時，由兩件變形的總和克服倒扣。",
+      "project_application": "本專案分開記錄 u、delta_required、delta_allow。若在草案中假設 delta_required=u，必須明列剛性配合件及接觸／組裝路徑假設，不能把幾何所需撓度稱為材料允許撓度。"
+    },
+    {
+      "fact_id": "basf_short_beam_Q",
+      "source_ids": ["basf_snapfit_manual", "basf_chul_lee_part3"],
+      "pages": [
+        {"source_id": "basf_snapfit_manual", "pdf_page": 11, "page_label": "IV-1"},
+        {"source_id": "basf_snapfit_manual", "pdf_page": 12, "page_label": "IV-2", "locator": "Figure IV-1"},
+        {"source_id": "basf_snapfit_manual", "pdf_page": 14, "page_label": "IV-4", "locator": "Figure IV-3"}
+      ],
+      "statement": "古典固定根部模型忽略牆面柔度，短樑偏差更明顯；BASF 以根部／牆面配置及 L/h 對應的 Q 修正。L/h 大於約 10 時古典近似較符合原文所述情境，這不是單獨的合格門檻。",
+      "manufacturer_formula": "epsilon_root = 1.5*h*delta/(L^2*Q)",
+      "derived_inverse": "delta_allow = (2/3)*epsilon_allow*L^2*Q/h",
+      "Q_is_safety_factor": false,
+      "project_Q": null,
+      "project_Q_source": null,
+      "project_application": "未選定並核對根部配置之前，不任選 Q、不從圖估出已驗證的容許位移，也不把 Q=1 當成本盒體根部已經剛性的證據。"
+    }
+  ],
+  "project_conditions": {
+    "material_grade_provided": false,
+    "epsilon_allow_provided": false,
+    "material_grade": null,
+    "epsilon_allow": null,
+    "delta_allow_mm": null,
+    "allowable_force_N": null,
+    "manufacturer_strain_table_values_adopted": false,
+    "basis": "材料及允許應變尚未提供，不能借用手冊特定射出樹脂或短期條件的應變數字，當成本專案材料的允許值。原廠塑膠設計資料未驗證本專案列印件的材料、層向、製程或服役條件。",
+    "printed": false,
+    "fit_tested": false,
+    "physical_measurements": null,
+    "strength_qualification": null,
+    "fit_qualification": null,
+    "qualified_clearance_mm": null,
+    "scope": "幾何參數及估算適用條件的教學依據；不作列印件強度、壽命、裝拆力或配合合格宣告。"
+  }
+}

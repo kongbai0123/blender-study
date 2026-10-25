@@ -1,0 +1,353 @@
+{
+  "recordedAt": "2026-10-25T09:38:06.231330+00:00",
+  "evidencePassed": true,
+  "publicationPending": false,
+  "browserProofPending": false,
+  "images": [
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-01-source-dialog.png",
+      "status": 200,
+      "sha256": "ed8811f42229a160ef6e76d403bdfb89a5ff8ffc75de4e5cfbffac99822631af",
+      "bytes": 52531,
+      "exactBytes": true,
+      "width": 1060,
+      "height": 600,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-02-source-reference.png",
+      "status": 200,
+      "sha256": "671959f98066449519611df236ddff019281ef8c0a09d95a6b336d06cc533762",
+      "bytes": 158070,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-03-outliner-room.png",
+      "status": 200,
+      "sha256": "9cdbbe3b24f0f5a5957c7c0488f5bc8d5417f9ad0022cbd8f1b86268e061896e",
+      "bytes": 161423,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-04-A_L19-duplicate.png",
+      "status": 200,
+      "sha256": "b511ebd7b649bb8d3ee563e963649e69377874b981fa9c6eb33054db13d40f24",
+      "bytes": 146524,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-05-inherited-analysis-off.png",
+      "status": 200,
+      "sha256": "673be69151597020c44ea918a8b587d0ccd24d6800e0b617d6f54325852c86c8",
+      "bytes": 161282,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-06-A_L19-upper-selection.png",
+      "status": 200,
+      "sha256": "99118893f834c27aafc3147e89d6e2a2538590388e55cd0f16fe425819f0beff",
+      "bytes": 162655,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-07-A_L19-source-frame.png",
+      "status": 200,
+      "sha256": "fcb003eabba278cc5036cf7d7faaa7f998b8c8a9f83f0b541249c9acc1df3923",
+      "bytes": 146309,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-08-A_L19-candidate.png",
+      "status": 200,
+      "sha256": "3fcdbdeb0ffeb8e27aa704c81fbd5bbdfb6596d982d0760af5fd63bfa0349b06",
+      "bytes": 157318,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-09-A_L19-non-manifold.png",
+      "status": 200,
+      "sha256": "a20da0993b6376f9d71d8079f4f045ccbfabf280ccbdd97ca80177e197679bac",
+      "bytes": 166985,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-10-B_L17-duplicate.png",
+      "status": 200,
+      "sha256": "e8509ce64723b158b027a36cce198c63e202e8bdd6f976e54b8cc05ad52731ea",
+      "bytes": 148004,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-11-B_L17-upper-selection.png",
+      "status": 200,
+      "sha256": "2c3e23cf9c6e3dfbdbdea32a4731e4661a2f05d032db98fff97a65b21d8b7810",
+      "bytes": 164202,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-12-B_L17-source-frame.png",
+      "status": 200,
+      "sha256": "01c12db4152d03eb6cdfe6010c39e266d51229dd156b832429e1437b90eadc95",
+      "bytes": 147655,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-13-B_L17-candidate.png",
+      "status": 200,
+      "sha256": "3fbbb49c7792886205c7efb6d6c9033fb75f360f7344c204580e20436990573e",
+      "bytes": 158273,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-14-B_L17-non-manifold.png",
+      "status": 200,
+      "sha256": "3e82fb85761c328ce8555b5b688c9c8e744d39eb937d6694261f8f1306ff50e1",
+      "bytes": 165994,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-15-C_L21-duplicate.png",
+      "status": 200,
+      "sha256": "cb98a12bff20cf360d905f72a54115c329bf8043eb7daa09b027b74d8b87f8bc",
+      "bytes": 149390,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-16-C_L21-upper-selection.png",
+      "status": 200,
+      "sha256": "6ae2e35e50afb9cac1937b0ab961721f9dd48312f303e8a35c01016d6d2adea7",
+      "bytes": 165591,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-17-C_L21-source-frame.png",
+      "status": 200,
+      "sha256": "c37bfa4b431b7f39b08a934dea38e1e0b4506400f970d22da2c297591bd4c1d0",
+      "bytes": 149232,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-18-C_L21-candidate.png",
+      "status": 200,
+      "sha256": "d2f93a4f563bd2692acc705395d4be2a9ccb60a7ed015f125f923e3f1457ae4c",
+      "bytes": 162174,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-19-C_L21-non-manifold.png",
+      "status": 200,
+      "sha256": "5408d53147539f9965671909d23f9e1e5c42357895c5f2c05522025f2f2d8444",
+      "bytes": 169614,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-20-coupon-layout.png",
+      "status": 200,
+      "sha256": "208f6d3a1b05e490f1933f17cf7eb43c126c7f153faafe7d79debf35dbe2d70c",
+      "bytes": 177277,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-21-save-dialog.png",
+      "status": 200,
+      "sha256": "1279d8e1b2a83ced9bc15dbcdb3e8dd1c41878807e511947895ab4c9d35b51a9",
+      "bytes": 53465,
+      "exactBytes": true,
+      "width": 1060,
+      "height": 600,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-22-saved.png",
+      "status": 200,
+      "sha256": "0a81cd7473128c3280f3d09dcfd315b09cc6f963ff087a41125c406501eb0616",
+      "bytes": 181826,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-23-open-saved.png",
+      "status": 200,
+      "sha256": "653af27fb7b2f404fc666ee6df34764f0dee3f8fe161af6063499e66ecabd7c9",
+      "bytes": 58773,
+      "exactBytes": true,
+      "width": 1060,
+      "height": 600,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-24-reopened-verified.png",
+      "status": 200,
+      "sha256": "c5a78a219bf0d1319239f32b4b8bd6c9f7157e3667e3e7598c1f0f7451433d4b",
+      "bytes": 174932,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    }
+  ],
+  "downloads": [
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/demo-files/u07_cantilever_length_coupons_v001.blend",
+      "status": 200,
+      "sha256": "22072532eed0f6fcc506bb435ed8d65fcaeaef583ea41d90c4e8c9665b82e9b8",
+      "bytes": 108728,
+      "exactBytes": true,
+      "contentDisposition": "attachment"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/coupon-record-v001.json",
+      "status": 200,
+      "sha256": "1180c5194a5ec09af9186e2e3f69761e5460a4350f9019e9d1020a44e127c01d",
+      "bytes": 452168,
+      "exactBytes": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/geometry-manifest-v001.json",
+      "status": 200,
+      "sha256": "d73880bb5e614cf587071e9437d6f47824bcad6d7860678dc0913735bf5177d7",
+      "bytes": 83080,
+      "exactBytes": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/trial-fit-record-v001.json",
+      "status": 200,
+      "sha256": "66adde143a60fe0ef8a5ec61eb101dadc8a2a0e833b9aa4d74be19f2cdffd517",
+      "bytes": 6700,
+      "exactBytes": true
+    },
+    {
+      "path": "learning/journal/2026-10-25-lesson07-coupons-demo-v001.md",
+      "status": 200,
+      "sha256": "66d0cc908ae996c61a0b61377f2f8444f2d1f95a0ec49dde8ca6fbebc2a8543f",
+      "bytes": 9880,
+      "exactBytes": true
+    }
+  ],
+  "passed": true,
+  "changedSteps": [
+    "07-05"
+  ],
+  "stepFingerprintsCompared": 52,
+  "catalogSha256": "d4792f515eef5031fbd56fe0f15a46ebe9a0af82997d782238211c514646cd68",
+  "apiCatalogMatchesDisk": true,
+  "apiProgressMatchesDisk": true,
+  "progressSha256": "d92e4f2ee78a1cf41386816b8616bf635b89fb25f8bfd813ac00cd20ed20b4ef",
+  "progressRevision": 5,
+  "learnerCompletionConfirmed": false,
+  "sourceSceneUnchanged": true,
+  "newSceneReopened": true,
+  "previousExportFiles": [
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/demo-files/exports/u07_snap_body_v001.stl",
+      "sha256": "6ee4b13556db93196189604a96a0dbf3074fcaf6dd3423b3fc86cc2421910ff8",
+      "unchanged": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/demo-files/exports/u07_snap_lid_v001.stl",
+      "sha256": "c80ea7d584a2f71cc0b2619ff903bdff57d8c97441d61111a0e8c7b839f55c21",
+      "unchanged": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/trial-fit-record-v001.json",
+      "sha256": "3064067712844dca829fdcd9a58e68223dba5c63b3ee66b1cb8825db841e2670",
+      "unchanged": true
+    }
+  ],
+  "automatedChecks": {
+    "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/automated-checks-v001.json",
+    "sha256": "0e90c0e25804e1e11308dcbc0ce90861b22057e1ada706e11c633a08fcf1bf69"
+  },
+  "browserProof": {
+    "path": "learning/evidence/ui/2026-10-25-lesson07-coupons-demo-v001.json",
+    "sha256": "c5e1dfc25e072babe4b4886167625d2652bbf3e9bd98ab8cc93cb77aff7b8e9f",
+    "screenshots": [
+      {
+        "path": "learning/evidence/ui/2026-10-25-lesson07-coupons-demo-v001-final-overview.jpg",
+        "sha256": "08a0c2796f6f1b0fc9e6091cfbdb5d5ef053f415ceb5fdcaab2d1befd6afe0b1",
+        "bytes": 37924,
+        "width": 304,
+        "height": 848,
+        "pixelEdits": false,
+        "role": "overview"
+      },
+      {
+        "path": "learning/evidence/ui/2026-10-25-lesson07-coupons-demo-v001-final-comparison.jpg",
+        "sha256": "c6c0beb2306c58f9165788a6bb5c4ff38a9174ebeddde3f712efbd2bcc1b70a9",
+        "bytes": 36327,
+        "width": 304,
+        "height": 848,
+        "pixelEdits": false,
+        "role": "comparison"
+      },
+      {
+        "path": "learning/evidence/ui/2026-10-25-lesson07-coupons-demo-v001-final-conditions.jpg",
+        "sha256": "029961b72dbfa395113a93b3af85d034fd3972b6aebed65b82d3d305358ffff1",
+        "bytes": 45103,
+        "width": 304,
+        "height": 848,
+        "pixelEdits": false,
+        "role": "conditions"
+      }
+    ]
+  }
+}

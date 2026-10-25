@@ -1,0 +1,540 @@
+{
+  "schemaVersion": 1,
+  "kind": "redacted_public_derivative",
+  "redacted_public_derivative": true,
+  "preparedOn": "2026-10-26",
+  "originalPath": "learning/evidence/05/2026-10-22-lesson05-demo-v002.json",
+  "originalSha256": "3a6a696dd6e797a6b8db9e143dfc8bdf348dfd170e9f9213eeafb10d43731e65",
+  "originalBytes": 16532,
+  "originalAvailableInPublicPackage": false,
+  "redactedKeys": [
+    "/runnerStatus/recentCleanup"
+  ],
+  "redactionPolicy": "Recursively omit Windows Recent inventory keys recentCleanup, beforeLinks and afterLinks. Original stays unchanged locally. This derivative is not the original execution record.",
+  "content": {
+    "id": "2026-10-22-lesson05-demo-v002",
+    "actor": "tutor",
+    "authorization": "使用者要求：「先瀏覽claude的作業內容，以及如何操作，延續他後面的內容」。",
+    "application": "Blender 5.2.1 LTS",
+    "buildHash": "9e2066aef7ef",
+    "captureMethod": "Blender bpy.ops.screen.screenshot；獨立實例 --factory-startup --enable-event-simulate，滑鼠／鍵盤以 Window.event_simulate 模擬；檔案瀏覽器的資料夾與檔名欄位由程式寫入",
+    "script": "learning/tutor/scenarios/lesson05.py",
+    "pixelEdits": false,
+    "highlightsDrawnBy": "教學頁 CSS 疊框（原圖未修改）",
+    "learnerWorkspaceWrites": false,
+    "demoFiles": "learning/evidence/05/2026-10-22-lesson05-demo-v002/demo-files/",
+    "records": [
+      {
+        "seq": 1,
+        "step": "05-02",
+        "slug": "factory-scene",
+        "recordedAt": "2026-10-22T07:10:31.015Z",
+        "action": "在獨立 Blender 的出廠場景開始；不接管學員的視窗",
+        "observed": "Blender 5.2.1 LTS；模式 OBJECT；Cube Dimensions (2000 mm, 2000 mm, 2000 mm)、Scale (1, 1, 1)。",
+        "window": "main",
+        "highlights": [
+          {
+            "x": 547,
+            "y": 401,
+            "w": 141,
+            "h": 153,
+            "label": "預設 Cube"
+          }
+        ],
+        "clicks": [],
+        "file": "05-02-01-factory-scene.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "e13488de369a02a0437d128539be91c82e2941e5d93b43f48052bd063056d676",
+        "path": "learning/evidence/05/2026-10-22-lesson05-demo-v002/05-02-01-factory-scene.png"
+      },
+      {
+        "seq": 2,
+        "step": "05-02",
+        "slug": "units-before",
+        "recordedAt": "2026-10-22T07:10:33.815Z",
+        "action": "Properties 點 Scene 分頁，展開 Units",
+        "observed": "Unit System METRIC、Length METERS、Unit Scale 1。",
+        "window": "main",
+        "highlights": [
+          {
+            "x": 1236,
+            "y": 364,
+            "w": 20,
+            "h": 20,
+            "label": "Scene"
+          },
+          {
+            "x": 1266,
+            "y": 452,
+            "w": 216,
+            "h": 115,
+            "label": "Units"
+          }
+        ],
+        "clicks": [],
+        "file": "05-02-02-units-before.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "230eb6caa3632e991985c23e60cb85584db5ab014488813c9539cc3bfc73a632",
+        "path": "learning/evidence/05/2026-10-22-lesson05-demo-v002/05-02-02-units-before.png"
+      },
+      {
+        "seq": 3,
+        "step": "05-02",
+        "slug": "units-mm",
+        "recordedAt": "2026-10-22T07:10:41.316Z",
+        "action": "Length 選 Millimeters，Unit Scale 輸入 0.001，再開啟 View > Sidebar",
+        "observed": "Unit System METRIC、Length MILLIMETERS、Unit Scale 0.001；Cube Dimensions (2 mm, 2 mm, 2 mm)、Scale (1, 1, 1)。",
+        "window": "main",
+        "highlights": [
+          {
+            "x": 1266,
+            "y": 477,
+            "w": 216,
+            "h": 22,
+            "label": "Unit Scale 0.001"
+          },
+          {
+            "x": 1266,
+            "y": 547,
+            "w": 216,
+            "h": 20,
+            "label": "Millimeters"
+          },
+          {
+            "x": 963,
+            "y": 383,
+            "w": 228,
+            "h": 77,
+            "label": "目前 2 × 2 × 2 mm"
+          }
+        ],
+        "clicks": [],
+        "file": "05-02-03-units-mm.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "b53971c651a093cfaf73fcd70f2fffd16222eceb499b3f01d15c0d5118d13ce8",
+        "path": "learning/evidence/05/2026-10-22-lesson05-demo-v002/05-02-03-units-mm.png"
+      },
+      {
+        "seq": 4,
+        "step": "05-02",
+        "slug": "dimension-x",
+        "recordedAt": "2026-10-22T07:10:44.616Z",
+        "action": "Dimensions X 輸入 10mm，按 Enter",
+        "observed": "Cube Dimensions (10 mm, 2 mm, 2 mm)、Scale (5, 1, 1)。",
+        "window": "main",
+        "highlights": [
+          {
+            "x": 963,
+            "y": 401,
+            "w": 228,
+            "h": 20,
+            "label": "Dimensions X"
+          }
+        ],
+        "clicks": [],
+        "file": "05-02-04-dimension-x.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "00f97a6d3179d2e541b794c1838e6d16fccd7ebf33521c2ba41860ac504b8231",
+        "path": "learning/evidence/05/2026-10-22-lesson05-demo-v002/05-02-04-dimension-x.png"
+      },
+      {
+        "seq": 5,
+        "step": "05-02",
+        "slug": "dimension-y",
+        "recordedAt": "2026-10-22T07:10:47.916Z",
+        "action": "Dimensions Y 輸入 10mm，按 Enter",
+        "observed": "Cube Dimensions (10 mm, 10 mm, 2 mm)、Scale (5, 5, 1)。",
+        "window": "main",
+        "highlights": [
+          {
+            "x": 963,
+            "y": 420,
+            "w": 228,
+            "h": 20,
+            "label": "Dimensions Y"
+          }
+        ],
+        "clicks": [],
+        "file": "05-02-05-dimension-y.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "ab69a442fcb69b944af761959d263a8f208e82c865fec71934960c1acac6db42",
+        "path": "learning/evidence/05/2026-10-22-lesson05-demo-v002/05-02-05-dimension-y.png"
+      },
+      {
+        "seq": 6,
+        "step": "05-02",
+        "slug": "dimension-z",
+        "recordedAt": "2026-10-22T07:10:51.216Z",
+        "action": "Dimensions Z 輸入 8mm，按 Enter",
+        "observed": "Cube Dimensions (10 mm, 10 mm, 8 mm)、Scale (5, 5, 4)。",
+        "window": "main",
+        "highlights": [
+          {
+            "x": 963,
+            "y": 440,
+            "w": 228,
+            "h": 20,
+            "label": "Dimensions Z"
+          }
+        ],
+        "clicks": [],
+        "file": "05-02-06-dimension-z.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "b8999439c02ebed950df208d70fa7ab5db651affebb34c5d379142853eaf36f5",
+        "path": "learning/evidence/05/2026-10-22-lesson05-demo-v002/05-02-06-dimension-z.png"
+      },
+      {
+        "seq": 7,
+        "step": "05-02",
+        "slug": "apply-menu",
+        "recordedAt": "2026-10-22T07:10:53.816Z",
+        "action": "Object > Apply，移到 Scale",
+        "observed": "選單已展開；Cube Dimensions (10 mm, 10 mm, 8 mm)、Scale (5, 5, 4)。",
+        "window": "main",
+        "highlights": [
+          {
+            "x": 289,
+            "y": 28,
+            "w": 48,
+            "h": 20,
+            "label": "Object"
+          },
+          {
+            "x": 292,
+            "y": 131,
+            "w": 192,
+            "h": 20,
+            "label": "Apply"
+          },
+          {
+            "x": 492,
+            "y": 170,
+            "w": 220,
+            "h": 20,
+            "label": "Scale"
+          }
+        ],
+        "clicks": [],
+        "file": "05-02-07-apply-menu.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "2fe96ab91daf2d5cca911dfa7db51dee49c22ee2a1a02d4b70bf3c50e820b75b",
+        "path": "learning/evidence/05/2026-10-22-lesson05-demo-v002/05-02-07-apply-menu.png"
+      },
+      {
+        "seq": 8,
+        "step": "05-02",
+        "slug": "scale-applied",
+        "recordedAt": "2026-10-22T07:10:56.416Z",
+        "action": "點 Scale：把縮放套用到網格",
+        "observed": "Cube Dimensions (10 mm, 10 mm, 8 mm)、Scale (1, 1, 1)。",
+        "window": "main",
+        "highlights": [
+          {
+            "x": 963,
+            "y": 318,
+            "w": 176,
+            "h": 59,
+            "label": "Scale 1、1、1"
+          },
+          {
+            "x": 963,
+            "y": 383,
+            "w": 228,
+            "h": 77,
+            "label": "Dimensions 不變"
+          }
+        ],
+        "clicks": [],
+        "file": "05-02-08-scale-applied.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "7391bbaeaf56773a8205f658fdeebf06349242894cbaca0b12880d02b43cf164",
+        "path": "learning/evidence/05/2026-10-22-lesson05-demo-v002/05-02-08-scale-applied.png"
+      },
+      {
+        "seq": 9,
+        "step": "05-02",
+        "slug": "pin-checked",
+        "recordedAt": "2026-10-22T07:11:04.416Z",
+        "action": "Edit > Rename Active Item 命名 FitPin；View > Frame Selected 後縮小視角，讀回尺寸與封閉體積",
+        "observed": "FitPin Dimensions (10 mm, 10 mm, 8 mm)、Scale (1, 1, 1)；不封閉的邊 0 條，體積 800 mm³。",
+        "window": "main",
+        "highlights": [
+          {
+            "x": 366,
+            "y": 261,
+            "w": 553,
+            "h": 516,
+            "label": "10 × 10 × 8 mm 插銷"
+          },
+          {
+            "x": 963,
+            "y": 318,
+            "w": 228,
+            "h": 142,
+            "label": "Scale／Dimensions"
+          }
+        ],
+        "clicks": [],
+        "file": "05-02-09-pin-checked.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "1bd5f0870b1e9f281e248e693b9eadfbdc93ee9fc93d3e897feca2cd51e6e2ca",
+        "note": "不封閉邊數及體積由 Blender 網格讀回；尚未列印或試配，正式配合間隙待定。",
+        "path": "learning/evidence/05/2026-10-22-lesson05-demo-v002/05-02-09-pin-checked.png"
+      },
+      {
+        "seq": 10,
+        "step": "05-02",
+        "slug": "save-dialog",
+        "recordedAt": "2026-10-22T07:11:08.516Z",
+        "action": "File > Save As…：資料夾填入本次 demo-files，檔名 u05_fit_coupon_v001.blend",
+        "observed": "資料夾：D:\\others\\study\\Blender-Learning\\learning\\evidence\\05\\2026-10-22-lesson05-demo-v002\\demo-files\\；檔名：u05_fit_coupon_v001.blend。",
+        "window": "FILE_BROWSER",
+        "highlights": [
+          {
+            "x": 394,
+            "y": 8,
+            "w": 318,
+            "h": 25,
+            "label": "助教示範資料夾"
+          },
+          {
+            "x": 248,
+            "y": 566,
+            "w": 780,
+            "h": 25,
+            "label": "v001"
+          },
+          {
+            "x": 789,
+            "y": 566,
+            "w": 126,
+            "h": 25,
+            "label": "Save As"
+          }
+        ],
+        "clicks": [],
+        "file": "05-02-10-save-dialog.png",
+        "width": 1060,
+        "height": 600,
+        "sha256": "d93c44e6f3cf08a6bd8079275b723a801efede56987c262674aa3faa3a855009",
+        "note": "只有資料夾與檔名欄位用程式安全填入，其餘操作用事件模擬；這是助教示範檔，不是學員成果。",
+        "path": "learning/evidence/05/2026-10-22-lesson05-demo-v002/05-02-10-save-dialog.png"
+      },
+      {
+        "seq": 11,
+        "step": "05-02",
+        "slug": "saved",
+        "recordedAt": "2026-10-22T07:11:12.116Z",
+        "action": "按 Save As 後，核對實際檔案存在、大小與 SHA-256",
+        "observed": "已存檔 u05_fit_coupon_v001.blend（98366 bytes）；SHA-256 c2f3edd915324ba66bbd3fb8c6ad1ea0214a539f74cbc732e37adc35f7325162；FitPin Dimensions (10 mm, 10 mm, 8 mm)、Scale (1, 1, 1)。",
+        "window": "main",
+        "highlights": [
+          {
+            "x": 0,
+            "y": 997,
+            "w": 1494,
+            "h": 22,
+            "label": "存檔狀態"
+          }
+        ],
+        "clicks": [],
+        "file": "05-02-11-saved.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "8253b0f090fcffbdca00dbc3184cddde5230f8bb3bc5913bbd09b4ebd7d22473",
+        "path": "learning/evidence/05/2026-10-22-lesson05-demo-v002/05-02-11-saved.png"
+      },
+      {
+        "seq": 12,
+        "step": "05-02",
+        "slug": "reopen-dialog",
+        "recordedAt": "2026-10-22T07:11:16.216Z",
+        "action": "File > Open…：選剛儲存的 u05_fit_coupon_v001.blend",
+        "observed": "開啟資料夾：D:\\others\\study\\Blender-Learning\\learning\\evidence\\05\\2026-10-22-lesson05-demo-v002\\demo-files\\；檔名：u05_fit_coupon_v001.blend。",
+        "window": "FILE_BROWSER",
+        "highlights": [
+          {
+            "x": 248,
+            "y": 566,
+            "w": 780,
+            "h": 25,
+            "label": "同一個 v001"
+          },
+          {
+            "x": 789,
+            "y": 566,
+            "w": 126,
+            "h": 25,
+            "label": "Open"
+          }
+        ],
+        "clicks": [],
+        "file": "05-02-12-reopen-dialog.png",
+        "width": 1060,
+        "height": 600,
+        "sha256": "c9f6702dea5c70fa8137e7b4007c5a2aa2f10b4528343507f2facd21d5f57486",
+        "path": "learning/evidence/05/2026-10-22-lesson05-demo-v002/05-02-12-reopen-dialog.png"
+      },
+      {
+        "seq": 13,
+        "step": "05-02",
+        "slug": "reopened-verified",
+        "recordedAt": "2026-10-22T07:11:20.116Z",
+        "action": "按 Open，重新讀回尺寸、Scale、封閉體積及同一檔案雜湊",
+        "observed": "重開 u05_fit_coupon_v001.blend；FitPin Dimensions (10 mm, 10 mm, 8 mm)、Scale (1, 1, 1)；不封閉的邊 0 條，體積 800 mm³；磁碟檔 SHA-256 與存檔時相同。",
+        "window": "main",
+        "highlights": [
+          {
+            "x": 366,
+            "y": 261,
+            "w": 553,
+            "h": 516,
+            "label": "重新開啟的插銷"
+          },
+          {
+            "x": 963,
+            "y": 318,
+            "w": 228,
+            "h": 142,
+            "label": "10 × 10 × 8 mm／Scale 1"
+          }
+        ],
+        "clicks": [],
+        "file": "05-02-13-reopened-verified.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "80a7a51e87961d9be3d03a796ca0017ef15b31d53f79a3af5367b2e96b292f44",
+        "note": "此結果只驗證模型與檔案重開一致；不代表印出尺寸合格或已找到合適間隙。",
+        "path": "learning/evidence/05/2026-10-22-lesson05-demo-v002/05-02-13-reopened-verified.png"
+      }
+    ],
+    "verification": {
+      "passed": true,
+      "dimensions_mm": [
+        10.0,
+        10.0,
+        8.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "unit_scale": 0.001,
+      "length_unit": "MILLIMETERS",
+      "non_manifold_edges": 0,
+      "closed_volume": true,
+      "volume_mm3": 800.000114,
+      "scene_path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\05\\2026-10-22-lesson05-demo-v002\\demo-files\\u05_fit_coupon_v001.blend",
+      "scene_sha256": "c2f3edd915324ba66bbd3fb8c6ad1ea0214a539f74cbc732e37adc35f7325162",
+      "reopened": true,
+      "clearance_mm": null,
+      "printed": false,
+      "fit_tested": false,
+      "numericComparison": {
+        "purpose": "Floating point reconstruction only; not manufacturing tolerance",
+        "dimensionsAbsMm": 1e-06,
+        "volumeRelative": 1e-06
+      }
+    },
+    "runnerStatus": {
+      "status": "completed",
+      "scenario": "lesson05",
+      "outputDir": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\05\\2026-10-22-lesson05-demo-v002",
+      "startedAt": "2026-10-22T07:10:24.865Z",
+      "endedAt": "2026-10-22T07:11:21.071Z",
+      "blenderExitCode": 0,
+      "timeoutSeconds": 600,
+      "workspacesUnchanged": true,
+      "runErrors": [],
+      "workspacesBefore": {
+        ".": {
+          "kind": "directory"
+        },
+        "01": {
+          "kind": "directory"
+        },
+        "02": {
+          "kind": "directory"
+        },
+        "03": {
+          "kind": "directory"
+        },
+        "04": {
+          "kind": "directory"
+        },
+        "05": {
+          "kind": "directory"
+        },
+        "06": {
+          "kind": "directory"
+        },
+        "07": {
+          "kind": "directory"
+        },
+        "08": {
+          "kind": "directory"
+        },
+        "09": {
+          "kind": "directory"
+        },
+        "04/exports": {
+          "kind": "directory"
+        }
+      },
+      "workspacesAfter": {
+        ".": {
+          "kind": "directory"
+        },
+        "01": {
+          "kind": "directory"
+        },
+        "02": {
+          "kind": "directory"
+        },
+        "03": {
+          "kind": "directory"
+        },
+        "04": {
+          "kind": "directory"
+        },
+        "05": {
+          "kind": "directory"
+        },
+        "06": {
+          "kind": "directory"
+        },
+        "07": {
+          "kind": "directory"
+        },
+        "08": {
+          "kind": "directory"
+        },
+        "09": {
+          "kind": "directory"
+        },
+        "04/exports": {
+          "kind": "directory"
+        }
+      },
+      "workspaceChanges": []
+    },
+    "verificationEvidence": {
+      "path": "learning/evidence/05/2026-10-22-lesson05-demo-v002/verification.json",
+      "sha256": "31d9ba24e149a02731465afbe433561f2815a2e06076de0749510a1e0217715a"
+    },
+    "runnerEvidence": {
+      "path": "learning/evidence/05/2026-10-22-lesson05-demo-v002/runner-status.json",
+      "sha256": "bcb706c9bcfa8c5ef45a19e205be6885a79f6cc49b0c3578b718561a4c9f2f61"
+    }
+  }
+}

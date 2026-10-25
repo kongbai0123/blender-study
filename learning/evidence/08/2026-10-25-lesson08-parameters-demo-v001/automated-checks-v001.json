@@ -1,0 +1,49 @@
+{
+  "recordedAt": "2026-10-25T12:30:51.008501+00:00",
+  "passed": true,
+  "tutor": {
+    "command": "python -X utf8 -B -m unittest discover -s learning/tutor/tests -p test_*.py -v",
+    "testsRun": 270,
+    "passed": 269,
+    "skipped": 1,
+    "skipReason": "Windows account lacks symlink creation permission"
+  },
+  "server": {
+    "command": "python -X utf8 -B -m unittest discover -s learning/tests -p test_server.py -v",
+    "testsRun": 17,
+    "passed": 17,
+    "skipped": 0
+  },
+  "javascriptSyntax": {
+    "command": "node --check learning/web/app.js",
+    "exitCode": 0
+  },
+  "publicationScriptSyntax": {
+    "command": "python -B -m py_compile learning/tutor/publish_thread_parameters.py",
+    "exitCode": 0
+  },
+  "logs": [
+    {
+      "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/tutor-tests-v001.log",
+      "sha256": "7f589d486430de0b636067403a42832834597f494de0bcbc7566a09f490859e3"
+    },
+    {
+      "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/server-tests-v001.log",
+      "sha256": "fe53d291a0199439d6fffbe2e05a043b25a12cdc86c20ac3cea38740f4f00442"
+    },
+    {
+      "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/thread-parameter-focused-tests-v001.log",
+      "sha256": "1acd6db31830fbc5e4c32a4601c67f05a8eba83e7f0c23448a650302dcd26944"
+    }
+  ],
+  "sourceFiles": [
+    {
+      "path": "learning/tutor/import_run.py",
+      "sha256": "80097c9ed8038a1f3f77b542b9bedcfb9e06a1f3787b896c71abee711e75fa98"
+    },
+    {
+      "path": "learning/tutor/tests/test_import_run.py",
+      "sha256": "2382469c2530e1984fd87dd2645c240bf25645234242d91c038e09f60b584da5"
+    }
+  ]
+}

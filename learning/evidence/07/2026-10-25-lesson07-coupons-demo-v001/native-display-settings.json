@@ -1,0 +1,6 @@
+{
+  "show_statvis": false,
+  "shading": "SOLID",
+  "deactivated_with": "native Edit Mesh Overlays / Mesh Analysis checkbox",
+  "new_overhang_analysis_performed": false
+}

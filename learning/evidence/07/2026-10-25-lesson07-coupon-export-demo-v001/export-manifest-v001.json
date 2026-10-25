@@ -1,0 +1,1831 @@
+{
+  "schema_version": 1,
+  "run": "2026-10-25-lesson07-coupon-export-demo-v001",
+  "run_version": "v001",
+  "export_version": "v001",
+  "recorded_on": "2026-10-25",
+  "timezone": "Asia/Taipei",
+  "performed_by": "tutor",
+  "lesson_step": "07-05",
+  "completion_scope": "Native separate STL exports of three existing standalone length coupons, binary and actual UI reimport digital verification only. No new specimen design/full-box variant, saved scene, slicer, support, printing, fit, strength or improvement result.",
+  "source_scene": {
+    "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/demo-files/u07_cantilever_length_coupons_v001.blend",
+    "sha256": "22072532eed0f6fcc506bb435ed8d65fcaeaef583ea41d90c4e8c9665b82e9b8",
+    "bytes": 108728,
+    "unchanged": true
+  },
+  "opened_source_copy": {
+    "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/demo-files/sources/u07_cantilever_length_coupons_v001.blend",
+    "sha256": "22072532eed0f6fcc506bb435ed8d65fcaeaef583ea41d90c4e8c9665b82e9b8",
+    "bytes": 108728,
+    "unchanged": true,
+    "is_new_checkpoint": false
+  },
+  "source_coupon_record": {
+    "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/coupon-record-v001.json",
+    "sha256": "1180c5194a5ec09af9186e2e3f69761e5460a4350f9019e9d1020a44e127c01d",
+    "bytes": 452168,
+    "unchanged": true
+  },
+  "draft_plan": {
+    "path": "learning/plans/07-05-coupon-length-draft-v001.json",
+    "sha256": "35905a851b846b757bbdbb9321708606b4497a0dc4d5d1cdea0f8735d303dd33",
+    "bytes": 5881
+  },
+  "export_record": {
+    "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/coupon-stl-export-record-v001.json",
+    "sha256": "21b7b935add72f1bce455882222079b6abc13591bc4c6b7f2c23e02927772b80",
+    "bytes": 579059
+  },
+  "blank_trial_record": {
+    "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/trial-fit-record-v001.json",
+    "sha256": "eaf5b874fb9f137461f7308e37449699d0155dc072d4d1cf91cf134c950201fc",
+    "bytes": 9755
+  },
+  "parts": [
+    {
+      "variant": "A_L19",
+      "version": "v001",
+      "stl": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/demo-files/exports/u07_A_L19_v001.stl",
+        "sha256": "bb40b5f669601e11bc97d41f48e8a65552bfe99bb21645d47d359098c62af168",
+        "bytes": 4084
+      },
+      "source_object": "A_L19",
+      "reimport_object": "A_L19_STL",
+      "L_geometry_mm": 18.99999984105428,
+      "total_arm_height_mm": 20.99999984105428,
+      "whole_coupon_height_mm": 24.00000023841858,
+      "source_frame_L_geometry_mm": 19.0,
+      "source_frame_bearing_plane_z_mm": 11.0,
+      "source_frame_arm_top_z_mm": 13.0,
+      "world_dimensions_mm": [
+        24.00000023841858,
+        4.600000381469727,
+        9.0
+      ],
+      "world_bounds_mm": {
+        "min": [
+          -1.500000238418579,
+          -14.300000190734863,
+          0.0
+        ],
+        "max": [
+          22.5,
+          -9.699999809265137,
+          9.0
+        ]
+      },
+      "source_item_object_axis_dimensions_mm": [
+        9.0,
+        4.599999904632568,
+        24.0
+      ],
+      "actual_reimport_item_dimensions_mm": [
+        24.0,
+        4.600000381469727,
+        9.0
+      ],
+      "actual_reimport_location_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "actual_reimport_rotation_euler_radians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "actual_reimport_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "triangles": 80,
+      "non_manifold_edges": 0,
+      "connected_shells": 1,
+      "genus": 0,
+      "volume_mm3": 339.48476649747744,
+      "minimum_world_z_mm": 0.0,
+      "bed_contact_area_mm2": 13.80000114440918,
+      "bed_contact_triangle_count": 2,
+      "raised_feature_world_z_ranges_mm": {
+        "straight_beam": [
+          1.4999990463256836,
+          7.5
+        ],
+        "root_fillet_and_miters": [
+          0.9000000953674316,
+          8.100000381469727
+        ],
+        "upper_hook": [
+          1.4999990463256836,
+          7.499999046325684
+        ]
+      },
+      "export_options": {
+        "global_scale": 1.0,
+        "use_scene_unit": false,
+        "forward_axis": "Y",
+        "up_axis": "Z",
+        "only_selected": true,
+        "apply_modifiers": true,
+        "ascii_format": false,
+        "use_batch": false,
+        "evaluation_mode": "DAG_EVAL_RENDER"
+      },
+      "export_operator": {
+        "idname": "WM_OT_stl_export",
+        "options": {
+          "global_scale": 1.0,
+          "use_scene_unit": false,
+          "forward_axis": "Y",
+          "up_axis": "Z",
+          "only_selected": true,
+          "apply_modifiers": true,
+          "ascii_format": false,
+          "use_batch": false,
+          "evaluation_mode": "DAG_EVAL_RENDER"
+        },
+        "filepath": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\07\\2026-10-25-lesson07-coupon-export-demo-v001\\demo-files\\exports\\u07_A_L19_v001.stl",
+        "captured_at": "live_file_browser_before_native_confirm",
+        "operator_history_available": false,
+        "execution_verified_by": "native UI confirmation and new binary STL readback"
+      },
+      "import_options": {
+        "global_scale": 1.0,
+        "use_scene_unit": false,
+        "forward_axis": "Y",
+        "up_axis": "Z"
+      },
+      "import_operator": {
+        "idname": "WM_OT_stl_import",
+        "options": {
+          "global_scale": 1.0,
+          "use_scene_unit": false,
+          "forward_axis": "Y",
+          "up_axis": "Z"
+        },
+        "filepath": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\07\\2026-10-25-lesson07-coupon-export-demo-v001\\demo-files\\exports\\u07_A_L19_v001.stl",
+        "captured_at": "live_file_browser_before_native_confirm",
+        "operator_history_available": false,
+        "execution_verified_by": "native UI confirmation and newly created mesh readback"
+      },
+      "stl_verification": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/A_L19-stl-verification.json",
+        "sha256": "2341e01a2ccf738a1ff64579f0de70a9a451a5339ee53073ceed8c4a445dfbde",
+        "bytes": 80048
+      },
+      "source_surface_match_passed": true,
+      "actual_reimport_surface_match_passed": true
+    },
+    {
+      "variant": "B_L17",
+      "version": "v001",
+      "stl": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/demo-files/exports/u07_B_L17_v001.stl",
+        "sha256": "ac0f9ca920197544f7c47465901beb98059b69b99d5aa9ad88ac9d73d16d017a",
+        "bytes": 4084
+      },
+      "source_object": "B_L17",
+      "reimport_object": "B_L17_STL",
+      "L_geometry_mm": 16.99999984105428,
+      "total_arm_height_mm": 18.99999984105428,
+      "whole_coupon_height_mm": 22.00000023841858,
+      "source_frame_L_geometry_mm": 17.0,
+      "source_frame_bearing_plane_z_mm": 9.0,
+      "source_frame_arm_top_z_mm": 11.0,
+      "world_dimensions_mm": [
+        22.00000023841858,
+        4.599999904632568,
+        9.0
+      ],
+      "world_bounds_mm": {
+        "min": [
+          -1.500000238418579,
+          -2.299999952316284,
+          0.0
+        ],
+        "max": [
+          20.5,
+          2.299999952316284,
+          9.0
+        ]
+      },
+      "source_item_object_axis_dimensions_mm": [
+        9.0,
+        4.599999904632568,
+        22.0
+      ],
+      "actual_reimport_item_dimensions_mm": [
+        22.0,
+        4.599999904632568,
+        9.0
+      ],
+      "actual_reimport_location_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "actual_reimport_rotation_euler_radians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "actual_reimport_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "triangles": 80,
+      "non_manifold_edges": 0,
+      "connected_shells": 1,
+      "genus": 0,
+      "volume_mm3": 320.2847191896239,
+      "minimum_world_z_mm": 0.0,
+      "bed_contact_area_mm2": 13.799999713897705,
+      "bed_contact_triangle_count": 2,
+      "raised_feature_world_z_ranges_mm": {
+        "straight_beam": [
+          1.4999992847442627,
+          7.5
+        ],
+        "root_fillet_and_miters": [
+          0.9000000953674316,
+          8.100000381469727
+        ],
+        "upper_hook": [
+          1.4999990463256836,
+          7.499999046325684
+        ]
+      },
+      "export_options": {
+        "global_scale": 1.0,
+        "use_scene_unit": false,
+        "forward_axis": "Y",
+        "up_axis": "Z",
+        "only_selected": true,
+        "apply_modifiers": true,
+        "ascii_format": false,
+        "use_batch": false,
+        "evaluation_mode": "DAG_EVAL_RENDER"
+      },
+      "export_operator": {
+        "idname": "WM_OT_stl_export",
+        "options": {
+          "global_scale": 1.0,
+          "use_scene_unit": false,
+          "forward_axis": "Y",
+          "up_axis": "Z",
+          "only_selected": true,
+          "apply_modifiers": true,
+          "ascii_format": false,
+          "use_batch": false,
+          "evaluation_mode": "DAG_EVAL_RENDER"
+        },
+        "filepath": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\07\\2026-10-25-lesson07-coupon-export-demo-v001\\demo-files\\exports\\u07_B_L17_v001.stl",
+        "captured_at": "live_file_browser_before_native_confirm",
+        "operator_history_available": false,
+        "execution_verified_by": "native UI confirmation and new binary STL readback"
+      },
+      "import_options": {
+        "global_scale": 1.0,
+        "use_scene_unit": false,
+        "forward_axis": "Y",
+        "up_axis": "Z"
+      },
+      "import_operator": {
+        "idname": "WM_OT_stl_import",
+        "options": {
+          "global_scale": 1.0,
+          "use_scene_unit": false,
+          "forward_axis": "Y",
+          "up_axis": "Z"
+        },
+        "filepath": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\07\\2026-10-25-lesson07-coupon-export-demo-v001\\demo-files\\exports\\u07_B_L17_v001.stl",
+        "captured_at": "live_file_browser_before_native_confirm",
+        "operator_history_available": false,
+        "execution_verified_by": "native UI confirmation and newly created mesh readback"
+      },
+      "stl_verification": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/B_L17-stl-verification.json",
+        "sha256": "5d09fa5e6d67109afdba88fa8d97f5b21650d1f7882727d7219fc1427740d4b6",
+        "bytes": 80056
+      },
+      "source_surface_match_passed": true,
+      "actual_reimport_surface_match_passed": true
+    },
+    {
+      "variant": "C_L21",
+      "version": "v001",
+      "stl": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/demo-files/exports/u07_C_L21_v001.stl",
+        "sha256": "1e3bb7cb883fd5d00319ebd9f44b761843b3c1b8f4c644e3333ac7a463083788",
+        "bytes": 4084
+      },
+      "source_object": "C_L21",
+      "reimport_object": "C_L21_STL",
+      "L_geometry_mm": 20.99999984105428,
+      "total_arm_height_mm": 22.99999984105428,
+      "whole_coupon_height_mm": 26.00000023841858,
+      "source_frame_L_geometry_mm": 21.0,
+      "source_frame_bearing_plane_z_mm": 13.0,
+      "source_frame_arm_top_z_mm": 15.0,
+      "world_dimensions_mm": [
+        26.00000023841858,
+        4.600000381469727,
+        9.0
+      ],
+      "world_bounds_mm": {
+        "min": [
+          -1.500000238418579,
+          9.699999809265137,
+          0.0
+        ],
+        "max": [
+          24.5,
+          14.300000190734863,
+          9.0
+        ]
+      },
+      "source_item_object_axis_dimensions_mm": [
+        9.0,
+        4.599999904632568,
+        26.0
+      ],
+      "actual_reimport_item_dimensions_mm": [
+        26.0,
+        4.600000381469727,
+        9.0
+      ],
+      "actual_reimport_location_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "actual_reimport_rotation_euler_radians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "actual_reimport_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "triangles": 80,
+      "non_manifold_edges": 0,
+      "connected_shells": 1,
+      "genus": 0,
+      "volume_mm3": 358.6847710751142,
+      "minimum_world_z_mm": 0.0,
+      "bed_contact_area_mm2": 13.80000114440918,
+      "bed_contact_triangle_count": 2,
+      "raised_feature_world_z_ranges_mm": {
+        "straight_beam": [
+          1.4999990463256836,
+          7.5
+        ],
+        "root_fillet_and_miters": [
+          0.9000000953674316,
+          8.100000381469727
+        ],
+        "upper_hook": [
+          1.4999990463256836,
+          7.499999046325684
+        ]
+      },
+      "export_options": {
+        "global_scale": 1.0,
+        "use_scene_unit": false,
+        "forward_axis": "Y",
+        "up_axis": "Z",
+        "only_selected": true,
+        "apply_modifiers": true,
+        "ascii_format": false,
+        "use_batch": false,
+        "evaluation_mode": "DAG_EVAL_RENDER"
+      },
+      "export_operator": {
+        "idname": "WM_OT_stl_export",
+        "options": {
+          "global_scale": 1.0,
+          "use_scene_unit": false,
+          "forward_axis": "Y",
+          "up_axis": "Z",
+          "only_selected": true,
+          "apply_modifiers": true,
+          "ascii_format": false,
+          "use_batch": false,
+          "evaluation_mode": "DAG_EVAL_RENDER"
+        },
+        "filepath": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\07\\2026-10-25-lesson07-coupon-export-demo-v001\\demo-files\\exports\\u07_C_L21_v001.stl",
+        "captured_at": "live_file_browser_before_native_confirm",
+        "operator_history_available": false,
+        "execution_verified_by": "native UI confirmation and new binary STL readback"
+      },
+      "import_options": {
+        "global_scale": 1.0,
+        "use_scene_unit": false,
+        "forward_axis": "Y",
+        "up_axis": "Z"
+      },
+      "import_operator": {
+        "idname": "WM_OT_stl_import",
+        "options": {
+          "global_scale": 1.0,
+          "use_scene_unit": false,
+          "forward_axis": "Y",
+          "up_axis": "Z"
+        },
+        "filepath": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\07\\2026-10-25-lesson07-coupon-export-demo-v001\\demo-files\\exports\\u07_C_L21_v001.stl",
+        "captured_at": "live_file_browser_before_native_confirm",
+        "operator_history_available": false,
+        "execution_verified_by": "native UI confirmation and newly created mesh readback"
+      },
+      "stl_verification": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/C_L21-stl-verification.json",
+        "sha256": "5b6810e62178f1233b5e93eadb3cceff8c9bcb4d388582805a9caeee58e361c1",
+        "bytes": 80048
+      },
+      "source_surface_match_passed": true,
+      "actual_reimport_surface_match_passed": true
+    }
+  ],
+  "source_geometry_modified": false,
+  "new_specimen_design_created": false,
+  "reimport_mesh_datablocks_created": true,
+  "saved_new_scene": false,
+  "rotation_applied_to_source_mesh": false,
+  "source_seven_object_mesh_data_matrix_preserved": true,
+  "source_inventory": {
+    "A_L19": {
+      "type": "MESH",
+      "hidden": true,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "location_mm": [
+        0.0,
+        -12.0,
+        4.5
+      ],
+      "rotation_euler_radians": [
+        -0.0,
+        1.5707963705062866,
+        0.0
+      ],
+      "object_axis_dimensions_mm": [
+        9.0,
+        4.599999904632568,
+        24.0
+      ],
+      "modifier_count": 0,
+      "matrix_world": [
+        [
+          -4.371138828673793e-08,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -12.0
+        ],
+        [
+          -1.0,
+          0.0,
+          -4.371138828673793e-08,
+          4.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "mesh_data_name": "Cube.004",
+      "data_name": "Cube.004",
+      "local_mesh_sha256": "70aa7799e1bb0110ab65ab94b0f5135ec365c936773f43d49bfa651077bae2b2"
+    },
+    "B_L17": {
+      "type": "MESH",
+      "hidden": true,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "location_mm": [
+        0.0,
+        0.0,
+        4.5
+      ],
+      "rotation_euler_radians": [
+        -0.0,
+        1.5707963705062866,
+        0.0
+      ],
+      "object_axis_dimensions_mm": [
+        9.0,
+        4.599999904632568,
+        22.0
+      ],
+      "modifier_count": 0,
+      "matrix_world": [
+        [
+          -4.371138828673793e-08,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          -1.0,
+          0.0,
+          -4.371138828673793e-08,
+          4.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "mesh_data_name": "Cube.005",
+      "data_name": "Cube.005",
+      "local_mesh_sha256": "7e7b633fb2ea9410592031d091ec9e1637307a2082c34b835298447d9860c8d9"
+    },
+    "Body": {
+      "type": "MESH",
+      "hidden": true,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "location_mm": [
+        -40.0,
+        0.0,
+        30.0
+      ],
+      "rotation_euler_radians": [
+        -0.0,
+        1.5707963705062866,
+        0.0
+      ],
+      "object_axis_dimensions_mm": [
+        60.0,
+        44.5,
+        30.0
+      ],
+      "modifier_count": 0,
+      "matrix_world": [
+        [
+          -4.371138828673793e-08,
+          0.0,
+          1.0,
+          -40.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          -1.0,
+          0.0,
+          -4.371138828673793e-08,
+          30.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "mesh_data_name": "Cube",
+      "data_name": "Cube",
+      "local_mesh_sha256": "8356fcf46ad59b976a68ea4056f187e6501bea69413529506f2170b23f32ee3e"
+    },
+    "C_L21": {
+      "type": "MESH",
+      "hidden": false,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "location_mm": [
+        0.0,
+        12.0,
+        4.5
+      ],
+      "rotation_euler_radians": [
+        -0.0,
+        1.5707963705062866,
+        0.0
+      ],
+      "object_axis_dimensions_mm": [
+        9.0,
+        4.599999904632568,
+        26.0
+      ],
+      "modifier_count": 0,
+      "matrix_world": [
+        [
+          -4.371138828673793e-08,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          12.0
+        ],
+        [
+          -1.0,
+          0.0,
+          -4.371138828673793e-08,
+          4.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "mesh_data_name": "Cube.006",
+      "data_name": "Cube.006",
+      "local_mesh_sha256": "6f7268f3b25f053af6ad644bbbe7d5dc102ae2d000e2cfe19cfe6e882251b926"
+    },
+    "FlangeTool": {
+      "type": "MESH",
+      "hidden": true,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "location_mm": [
+        0.0,
+        -25.25,
+        10.5
+      ],
+      "rotation_euler_radians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "object_axis_dimensions_mm": [
+        10.0,
+        2.700000047683716,
+        5.200000286102295
+      ],
+      "modifier_count": 0,
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -25.25
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          10.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "mesh_data_name": "Cube.003",
+      "data_name": "Cube.003",
+      "local_mesh_sha256": "47dd0f7ac66f8bff2bb7f39c1db7db26c65299759fb5eda2d2685dc976d214c5"
+    },
+    "Lid": {
+      "type": "MESH",
+      "hidden": true,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "location_mm": [
+        40.0,
+        -3.0,
+        1.0000009536743164
+      ],
+      "rotation_euler_radians": [
+        3.1415927410125732,
+        -0.0,
+        0.0
+      ],
+      "object_axis_dimensions_mm": [
+        60.0,
+        46.0,
+        7.000000953674316
+      ],
+      "modifier_count": 0,
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          40.0
+        ],
+        [
+          0.0,
+          -1.0,
+          8.742277657347586e-08,
+          -3.0
+        ],
+        [
+          0.0,
+          -8.742277657347586e-08,
+          -1.0,
+          1.0000009536743164
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "mesh_data_name": "Cube.002",
+      "data_name": "Cube.002",
+      "local_mesh_sha256": "e6dfc80b83997fce6363cd28d60afa2b641af2f42c6eaf2aaf18382629c599d1"
+    },
+    "SnapTool": {
+      "type": "MESH",
+      "hidden": true,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "location_mm": [
+        0.0,
+        -22.200000762939453,
+        -9.5
+      ],
+      "rotation_euler_radians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "object_axis_dimensions_mm": [
+        9.0,
+        4.599999904632568,
+        24.0
+      ],
+      "modifier_count": 0,
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -22.200000762939453
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -9.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "mesh_data_name": "Cube.001",
+      "data_name": "Cube.001",
+      "local_mesh_sha256": "70aa7799e1bb0110ab65ab94b0f5135ec365c936773f43d49bfa651077bae2b2"
+    }
+  },
+  "final_reimport_inventory": {
+    "A_L19_STL": {
+      "type": "MESH",
+      "hidden": false,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "location_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_radians": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "object_axis_dimensions_mm": [
+        24.0,
+        4.600000381469727,
+        9.0
+      ],
+      "modifier_count": 0,
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "mesh_data_name": "u07_A_L19_v001",
+      "data_name": "u07_A_L19_v001",
+      "local_mesh_sha256": "d09d489995a715db7ecd85885eaf4a767d9e1a96478c7d2dd50890a662f78e5b"
+    },
+    "B_L17_STL": {
+      "type": "MESH",
+      "hidden": false,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "location_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_radians": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "object_axis_dimensions_mm": [
+        22.0,
+        4.599999904632568,
+        9.0
+      ],
+      "modifier_count": 0,
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "mesh_data_name": "u07_B_L17_v001",
+      "data_name": "u07_B_L17_v001",
+      "local_mesh_sha256": "5c58faf7c589b23e6d24a03e979ef07b96a80a10c97cbdbeac6fec4151d476d2"
+    },
+    "C_L21_STL": {
+      "type": "MESH",
+      "hidden": false,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "location_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_radians": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "object_axis_dimensions_mm": [
+        26.0,
+        4.600000381469727,
+        9.0
+      ],
+      "modifier_count": 0,
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "mesh_data_name": "u07_C_L21_v001",
+      "data_name": "u07_C_L21_v001",
+      "local_mesh_sha256": "1975db7c20700bd1e6db5de95caa428222b2c57bc4be7abfd936dd0cbcebc9c3"
+    }
+  },
+  "source_layout": {
+    "passed": true,
+    "kind": "standalone_coupon_candidate_layout",
+    "variant_count": 3,
+    "adjacent_y_gaps": [
+      {
+        "between": [
+          "A_L19",
+          "B_L17"
+        ],
+        "y_projection_gap_mm": 7.3999998569488525,
+        "nominal_row_pitch_mm": 12.0
+      },
+      {
+        "between": [
+          "B_L17",
+          "C_L21"
+        ],
+        "y_projection_gap_mm": 7.3999998569488525,
+        "nominal_row_pitch_mm": 12.0
+      }
+    ],
+    "minimum_y_projection_gap_mm": 7.3999998569488525,
+    "all_minimum_z_on_numerical_bed": true,
+    "scope": "separate standalone coupons; no full box, clamp or printer-bed capacity is represented",
+    "specimen_scope": "standalone anchor + arm + hook; full-box boundary is not reproduced",
+    "parameter_scope": "geometric root-plane-to-bearing length only",
+    "effective_mechanical_length_mm": null,
+    "full_box_boundary_equivalence": null,
+    "anchor_clamping_or_fixture": null,
+    "material_grade": null,
+    "epsilon_allow": null,
+    "root_flexibility_Q": null,
+    "required_deflection_mm": null,
+    "delta_allow_mm": null,
+    "forces": null,
+    "physical_measurements": null,
+    "fit_results": null,
+    "physical_interference": null,
+    "qualified_strength_N": null,
+    "qualified_clearance_mm": null,
+    "improvement_validated": null,
+    "improvement_assessed": false,
+    "strength_analysis_performed": false,
+    "deformation_analysis_performed": false,
+    "fit_qualification": false,
+    "support_generation_performed": false,
+    "support_strategy_status": "pending_slicer_review",
+    "final_print_orientation_approved": null,
+    "support_required": null,
+    "slicer_support_settings": null,
+    "bridge_or_support_qualified": null,
+    "slicer_checked": false,
+    "printed": false,
+    "fit_tested": false,
+    "exported_stl": false,
+    "candidate_orientation_only": true,
+    "printer_bed_dimensions_mm": null
+  },
+  "stl_layout": {
+    "passed": true,
+    "kind": "cantilever_coupon_export_layout",
+    "variant_count": 3,
+    "adjacent_y_gaps": [
+      {
+        "between": [
+          "A_L19",
+          "B_L17"
+        ],
+        "y_projection_gap_mm": 7.3999998569488525,
+        "nominal_row_pitch_mm": 12.0
+      },
+      {
+        "between": [
+          "B_L17",
+          "C_L21"
+        ],
+        "y_projection_gap_mm": 7.3999998569488525,
+        "nominal_row_pitch_mm": 12.0
+      }
+    ],
+    "minimum_y_projection_gap_mm": 7.3999998569488525,
+    "all_minimum_z_on_numerical_bed": true,
+    "scope": "Three separate standalone candidate coupons with preserved world layout; no full-box assembly, fixture or printer-bed capacity checked.",
+    "specimen_scope": "standalone anchor + arm + hook; full-box boundary is not reproduced",
+    "parameter_scope": "geometric root-plane-to-bearing length only",
+    "effective_mechanical_length_mm": null,
+    "full_box_boundary_equivalence": null,
+    "anchor_clamping_or_fixture": null,
+    "material_grade": null,
+    "epsilon_allow": null,
+    "root_flexibility_Q": null,
+    "required_deflection_mm": null,
+    "delta_allow_mm": null,
+    "forces": null,
+    "physical_measurements": null,
+    "fit_results": null,
+    "physical_interference": null,
+    "qualified_strength_N": null,
+    "qualified_clearance_mm": null,
+    "improvement_validated": null,
+    "improvement_assessed": false,
+    "strength_analysis_performed": false,
+    "deformation_analysis_performed": false,
+    "fit_qualification": false,
+    "support_generation_performed": false,
+    "support_strategy_status": "pending_slicer_review",
+    "final_print_orientation_approved": null,
+    "support_required": null,
+    "slicer_support_settings": null,
+    "bridge_or_support_qualified": null,
+    "slicer_checked": false,
+    "printed": false,
+    "fit_tested": false,
+    "exported_stl": false,
+    "candidate_orientation_only": true,
+    "printer_bed_dimensions_mm": null,
+    "source_pose": "print_candidate",
+    "source_scene_sha256": "22072532eed0f6fcc506bb435ed8d65fcaeaef583ea41d90c4e8c9665b82e9b8",
+    "geometry_modified_for_export": false,
+    "rotation_applied_for_export": false,
+    "bed_capacity_checked": false
+  },
+  "actual_reimport_layout": {
+    "passed": true,
+    "kind": "cantilever_coupon_export_layout",
+    "variant_count": 3,
+    "adjacent_y_gaps": [
+      {
+        "between": [
+          "A_L19",
+          "B_L17"
+        ],
+        "y_projection_gap_mm": 7.3999998569488525,
+        "nominal_row_pitch_mm": 12.0
+      },
+      {
+        "between": [
+          "B_L17",
+          "C_L21"
+        ],
+        "y_projection_gap_mm": 7.3999998569488525,
+        "nominal_row_pitch_mm": 12.0
+      }
+    ],
+    "minimum_y_projection_gap_mm": 7.3999998569488525,
+    "all_minimum_z_on_numerical_bed": true,
+    "scope": "Three separate standalone candidate coupons with preserved world layout; no full-box assembly, fixture or printer-bed capacity checked.",
+    "specimen_scope": "standalone anchor + arm + hook; full-box boundary is not reproduced",
+    "parameter_scope": "geometric root-plane-to-bearing length only",
+    "effective_mechanical_length_mm": null,
+    "full_box_boundary_equivalence": null,
+    "anchor_clamping_or_fixture": null,
+    "material_grade": null,
+    "epsilon_allow": null,
+    "root_flexibility_Q": null,
+    "required_deflection_mm": null,
+    "delta_allow_mm": null,
+    "forces": null,
+    "physical_measurements": null,
+    "fit_results": null,
+    "physical_interference": null,
+    "qualified_strength_N": null,
+    "qualified_clearance_mm": null,
+    "improvement_validated": null,
+    "improvement_assessed": false,
+    "strength_analysis_performed": false,
+    "deformation_analysis_performed": false,
+    "fit_qualification": false,
+    "support_generation_performed": false,
+    "support_strategy_status": "pending_slicer_review",
+    "final_print_orientation_approved": null,
+    "support_required": null,
+    "slicer_support_settings": null,
+    "bridge_or_support_qualified": null,
+    "slicer_checked": false,
+    "printed": false,
+    "fit_tested": false,
+    "exported_stl": false,
+    "candidate_orientation_only": true,
+    "printer_bed_dimensions_mm": null,
+    "source_pose": "print_candidate",
+    "source_scene_sha256": "22072532eed0f6fcc506bb435ed8d65fcaeaef583ea41d90c4e8c9665b82e9b8",
+    "geometry_modified_for_export": false,
+    "rotation_applied_for_export": false,
+    "bed_capacity_checked": false
+  },
+  "stl_unit_interpretation": "STL is unitless; numeric coordinates interpreted as millimetres; original 07-05 standalone candidate world vertices retained",
+  "pose_metadata_scope": "STL has no native object transform. Reference Ry90/origin inside checker readback is solely for inverse geometry; actual imported object R0/Location0/Scale1 is checked separately.",
+  "verification": {
+    "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/verification.json",
+    "sha256": "ec7f678e47fe410c3f10482d2f64baf88abcf83b1dd5f9597d7866227d5f200d",
+    "bytes": 791073
+  },
+  "run_record": {
+    "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/run.json",
+    "sha256": "9cc46a98fb870226f02a345662e011356285188f018e9ea6379e4ec40ee99b02",
+    "bytes": 29361
+  },
+  "runner_status": {
+    "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/runner-status.json",
+    "sha256": "9c475af2ded61c942b5f8a2f2adb12d893f32cff28c0fb92aa2da7da93ac3316",
+    "bytes": 54123
+  },
+  "source_snapshot_manifest": {
+    "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/source-snapshot/manifest.json",
+    "sha256": "86eabfe1b89668ce85c70619493cdbe969edcd0728ab4639fa81b21fb1b2b573",
+    "bytes": 4993
+  },
+  "script_snapshots": [
+    {
+      "source": "learning/tutor/run_demo.py",
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/source-snapshot/run_demo.py",
+      "sha256": "8a0afa081716cab276c99fc811f6a2453ac82f45b28d8a0b1c639eef67347058",
+      "bytes": 11779
+    },
+    {
+      "source": "learning/tutor/blender_demo.py",
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/source-snapshot/blender_demo.py",
+      "sha256": "96321d8180b1e05a9b77d47551adefbf43ddd04e6add2505eca3b30ceb831a6c",
+      "bytes": 7140
+    },
+    {
+      "source": "learning/tutor/scenarios/common.py",
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/source-snapshot/common.py",
+      "sha256": "45044c48522bf5a2dee130382f902a07243e82027addaf6594cbae59b3369c3d",
+      "bytes": 11133
+    },
+    {
+      "source": "learning/tutor/scenarios/lesson07_coupon_export.py",
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/source-snapshot/lesson07_coupon_export.py",
+      "sha256": "77f2995c7adece8783977800d4a33947a36c21456f86965bc3d86d0e6a5e4e5d",
+      "bytes": 29332
+    },
+    {
+      "source": "learning/tutor/scenarios/overhang_checks.py",
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/source-snapshot/overhang_checks.py",
+      "sha256": "66023ffe41bb121f75c77b6db362fc559075c7ba56decd9c00d75832c57bb25a",
+      "bytes": 16817
+    },
+    {
+      "source": "learning/tutor/scenarios/snapfit_checks.py",
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/source-snapshot/snapfit_checks.py",
+      "sha256": "0b37846f663d2607764158046cf130d81e15792c006eed9d9631f8ba28e7f4c3",
+      "bytes": 16912
+    },
+    {
+      "source": "learning/tutor/scenarios/tenon_checks.py",
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/source-snapshot/tenon_checks.py",
+      "sha256": "4defe55d142ac78be924cef8d82abc3bd24bd2db6f380332eb29cb5b0d89d13d",
+      "bytes": 24591
+    },
+    {
+      "source": "learning/tutor/scenarios/lid_checks.py",
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/source-snapshot/lid_checks.py",
+      "sha256": "b2e2438126695cca24cb560dce046ca743c2de2c348116141ff6ed75c42e52c3",
+      "bytes": 17073
+    },
+    {
+      "source": "learning/tutor/scenarios/stl_checks.py",
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/source-snapshot/stl_checks.py",
+      "sha256": "36f09e213a7759a95ea07cee1f70fbaaaf2287551b9c97d9308778a658fe922c",
+      "bytes": 18473
+    },
+    {
+      "source": "learning/tutor/scenarios/snapfit_stl_checks.py",
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/source-snapshot/snapfit_stl_checks.py",
+      "sha256": "71b7dcb2c9ee427b08f9979728ce440a15553a599b2bdbf6ccbf98f5e18f3c42",
+      "bytes": 12465
+    },
+    {
+      "source": "learning/tutor/scenarios/coupon_checks.py",
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/source-snapshot/coupon_checks.py",
+      "sha256": "d29ac0840e61c4da9c39cce6bc8aeda58649ac13e2de79399e01b66ea6ceaa4c",
+      "bytes": 17110
+    },
+    {
+      "source": "learning/tutor/scenarios/coupon_stl_checks.py",
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/source-snapshot/coupon_stl_checks.py",
+      "sha256": "8514ad445f9bbca193551142d7107ad54f2887ed4e2f4bcfe8008237ce9b30c4",
+      "bytes": 7905
+    }
+  ],
+  "source_data_bindings": [
+    {
+      "source": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/coupon-record-v001.json",
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/source-snapshot/source-coupon-record-v001.json",
+      "sha256": "1180c5194a5ec09af9186e2e3f69761e5460a4350f9019e9d1020a44e127c01d",
+      "bytes": 452168
+    },
+    {
+      "source": "learning/plans/07-05-coupon-length-draft-v001.json",
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/source-snapshot/coupon-plan-v001.json",
+      "sha256": "35905a851b846b757bbdbb9321708606b4497a0dc4d5d1cdea0f8735d303dd33",
+      "bytes": 5881
+    },
+    {
+      "source": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/verification.json",
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/source-snapshot/source-coupon-verification.json",
+      "sha256": "ecea0a82400931113ad34f9c1fe054d6711835558d268973680a029ea656950b",
+      "bytes": 447931
+    },
+    {
+      "source": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/source_snap_tool_mesh.json",
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/source-snapshot/source-snap-tool-reference.json",
+      "sha256": "cb01f749d093467ec90742d38f90243067cdec00eee545c6c81f3f7b20a6aee7",
+      "bytes": 13818
+    },
+    {
+      "source": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/A_L19_candidate_mesh.json",
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/source-snapshot/source-A_L19-candidate-mesh.json",
+      "sha256": "5646200083769661833503b5177306fa0d80e0117597dad691b83f97b7b7530c",
+      "bytes": 14888
+    },
+    {
+      "source": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/B_L17_candidate_mesh.json",
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/source-snapshot/source-B_L17-candidate-mesh.json",
+      "sha256": "dc7cb34b232c1853fad6ae67f5de3149a63f0da2bbf7eac595fa062ef4acbcc7",
+      "bytes": 14862
+    },
+    {
+      "source": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/C_L21_candidate_mesh.json",
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/source-snapshot/source-C_L21-candidate-mesh.json",
+      "sha256": "0a40675dd41b0c8d6eb96376295ca0aaa090696b3349360187b3f0e23bcfc8c2",
+      "bytes": 14840
+    }
+  ],
+  "geometry_evidence": [
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/source_A_L19_mesh.json",
+      "sha256": "8839aeb5c69c9a888af424c2a8478db5b047465701c16714655d702818fdbb7e",
+      "bytes": 14853
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/reimport_A_L19_mesh.json",
+      "sha256": "06f2d72547779c80e09c36d725e91ab7af34fe9762d46076bc0979c143c8f0dc",
+      "bytes": 18581
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/source_B_L17_mesh.json",
+      "sha256": "a36e9bb0bd15846f95e2c28b472fa2d6ae94583d2878c0fe1e9652f486bdddcd",
+      "bytes": 14827
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/reimport_B_L17_mesh.json",
+      "sha256": "57e41474442f7a2bcd4a84f0c1956c0a1a01b3d18f86b64b9f13ed2d48cc6ae1",
+      "bytes": 18655
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/source_C_L21_mesh.json",
+      "sha256": "5e9b74ffb402773dd4dad1673e95299b5390d9dca705d0081c962051df34f183",
+      "bytes": 14805
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/reimport_C_L21_mesh.json",
+      "sha256": "b9069a6dd48e0b9eaa7a970458c168a66eee799b95f92a4facbd2c7407163e57",
+      "bytes": 18539
+    }
+  ],
+  "screenshots": [
+    {
+      "seq": 1,
+      "slug": "A_L19-source-dialog",
+      "width": 1060,
+      "height": 600,
+      "recordedAt": "2026-10-25T09:54:14.441Z",
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-01-A_L19-source-dialog.png",
+      "sha256": "14975f8bb41ae051fc7fd9f789d13eea67cd90e574933eb29d72ce10c78bfe29",
+      "bytes": 53521
+    },
+    {
+      "seq": 2,
+      "slug": "A_L19-source-selected",
+      "width": 1494,
+      "height": 1019,
+      "recordedAt": "2026-10-25T09:54:24.092Z",
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-02-A_L19-source-selected.png",
+      "sha256": "e1365ce02ec981c8b7bb29d5b248af3812f0bbbb9436c36510146df9c19602a6",
+      "bytes": 151189
+    },
+    {
+      "seq": 3,
+      "slug": "A_L19-source-profile",
+      "width": 1494,
+      "height": 1019,
+      "recordedAt": "2026-10-25T09:54:28.042Z",
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-03-A_L19-source-profile.png",
+      "sha256": "3af56ba44c5ee8aa84a9ab8327d0f0bc0d43becf23077d01ccde593157bcb33a",
+      "bytes": 148206
+    },
+    {
+      "seq": 4,
+      "slug": "A_L19-export-menu",
+      "width": 1494,
+      "height": 1019,
+      "recordedAt": "2026-10-25T09:54:29.942Z",
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-04-A_L19-export-menu.png",
+      "sha256": "41562116cecc5163ed6030f8fb5dc4df17e0acd4dd312264d391848ea4201bbf",
+      "bytes": 170803
+    },
+    {
+      "seq": 5,
+      "slug": "A_L19-export-before",
+      "width": 1060,
+      "height": 600,
+      "recordedAt": "2026-10-25T09:54:33.942Z",
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-05-A_L19-export-before.png",
+      "sha256": "d2ac10f7bc9aae66620647a15e2110a1d68cfd4ea34f320412ae700700c71d0b",
+      "bytes": 66701
+    },
+    {
+      "seq": 6,
+      "slug": "A_L19-export-options",
+      "width": 1060,
+      "height": 600,
+      "recordedAt": "2026-10-25T09:54:35.742Z",
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-06-A_L19-export-options.png",
+      "sha256": "787fb50995b0e44804a9248170bd2d1e77cb9be6527929af45df330d68b3e796",
+      "bytes": 66999
+    },
+    {
+      "seq": 7,
+      "slug": "A_L19-stl-checked",
+      "width": 1494,
+      "height": 1019,
+      "recordedAt": "2026-10-25T09:54:38.642Z",
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-07-A_L19-stl-checked.png",
+      "sha256": "d498056d1e14b4cc257d2270d325408f568d9f01cc84e3cc813a3d5d3a60a207",
+      "bytes": 151106
+    },
+    {
+      "seq": 8,
+      "slug": "B_L17-source-dialog",
+      "width": 1060,
+      "height": 600,
+      "recordedAt": "2026-10-25T09:54:43.542Z",
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-08-B_L17-source-dialog.png",
+      "sha256": "88d88a6a80a030db091a7dffe61521d962c31de3a15c5a24585da53e8293792d",
+      "bytes": 56580
+    },
+    {
+      "seq": 9,
+      "slug": "B_L17-source-selected",
+      "width": 1494,
+      "height": 1019,
+      "recordedAt": "2026-10-25T09:54:53.192Z",
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-09-B_L17-source-selected.png",
+      "sha256": "5612dc335babe2f0c7746247e75696a421e7150906893c95209bd0915c38ccb9",
+      "bytes": 153147
+    },
+    {
+      "seq": 10,
+      "slug": "B_L17-source-profile",
+      "width": 1494,
+      "height": 1019,
+      "recordedAt": "2026-10-25T09:54:57.142Z",
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-10-B_L17-source-profile.png",
+      "sha256": "0b334e28a3fd16511559b8f2a632e6c6728740e8a6c3dafdbec204caa80360d9",
+      "bytes": 145156
+    },
+    {
+      "seq": 11,
+      "slug": "B_L17-export-menu",
+      "width": 1494,
+      "height": 1019,
+      "recordedAt": "2026-10-25T09:54:59.042Z",
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-11-B_L17-export-menu.png",
+      "sha256": "23c1a2d7c4c95830deb24d52f78915a2dd69eadd515803db8a2526f601088f5e",
+      "bytes": 168201
+    },
+    {
+      "seq": 12,
+      "slug": "B_L17-export-before",
+      "width": 1060,
+      "height": 600,
+      "recordedAt": "2026-10-25T09:55:03.042Z",
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-12-B_L17-export-before.png",
+      "sha256": "aa18c178051e9fff72f728746406f2bb695a9a1869e0dc9d1e98b4c3e3bb6c7a",
+      "bytes": 70256
+    },
+    {
+      "seq": 13,
+      "slug": "B_L17-export-options",
+      "width": 1060,
+      "height": 600,
+      "recordedAt": "2026-10-25T09:55:04.842Z",
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-13-B_L17-export-options.png",
+      "sha256": "5b3a83b925809fbe66987d616e918c3269014c416da0ae5ceea5bad6881a29ad",
+      "bytes": 70607
+    },
+    {
+      "seq": 14,
+      "slug": "B_L17-stl-checked",
+      "width": 1494,
+      "height": 1019,
+      "recordedAt": "2026-10-25T09:55:07.742Z",
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-14-B_L17-stl-checked.png",
+      "sha256": "91521b225ba9f96c7344f9fba9bce334d59a59af7a0d0d05587f8d08f815399f",
+      "bytes": 148077
+    },
+    {
+      "seq": 15,
+      "slug": "C_L21-source-dialog",
+      "width": 1060,
+      "height": 600,
+      "recordedAt": "2026-10-25T09:55:12.642Z",
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-15-C_L21-source-dialog.png",
+      "sha256": "88d88a6a80a030db091a7dffe61521d962c31de3a15c5a24585da53e8293792d",
+      "bytes": 56580
+    },
+    {
+      "seq": 16,
+      "slug": "C_L21-source-selected",
+      "width": 1494,
+      "height": 1019,
+      "recordedAt": "2026-10-25T09:55:22.293Z",
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-16-C_L21-source-selected.png",
+      "sha256": "360c2b8266050f172745eec7b3470e85269c34f75ec84faceb2fe93f963d290e",
+      "bytes": 153442
+    },
+    {
+      "seq": 17,
+      "slug": "C_L21-source-profile",
+      "width": 1494,
+      "height": 1019,
+      "recordedAt": "2026-10-25T09:55:26.243Z",
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-17-C_L21-source-profile.png",
+      "sha256": "2c9621c7078a66636d9232167c37d1e6232524e46a9131378a29ae2a78166785",
+      "bytes": 149037
+    },
+    {
+      "seq": 18,
+      "slug": "C_L21-export-menu",
+      "width": 1494,
+      "height": 1019,
+      "recordedAt": "2026-10-25T09:55:28.143Z",
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-18-C_L21-export-menu.png",
+      "sha256": "0396b2b76def40e3df7e0360df445590f9cc55b9db62662661cde349948949ef",
+      "bytes": 172073
+    },
+    {
+      "seq": 19,
+      "slug": "C_L21-export-before",
+      "width": 1060,
+      "height": 600,
+      "recordedAt": "2026-10-25T09:55:32.143Z",
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-19-C_L21-export-before.png",
+      "sha256": "e88a9fd05c815c98eccd14581031277bcc9f9bda866495d63107ce2d07852333",
+      "bytes": 73230
+    },
+    {
+      "seq": 20,
+      "slug": "C_L21-export-options",
+      "width": 1060,
+      "height": 600,
+      "recordedAt": "2026-10-25T09:55:33.943Z",
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-20-C_L21-export-options.png",
+      "sha256": "9ea4b96d526988f6c327ad563b26ffe2391d21f4fd5d980c866be13a2b40c113",
+      "bytes": 73575
+    },
+    {
+      "seq": 21,
+      "slug": "C_L21-stl-checked",
+      "width": 1494,
+      "height": 1019,
+      "recordedAt": "2026-10-25T09:55:36.843Z",
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-21-C_L21-stl-checked.png",
+      "sha256": "9b88cfd2d30b32be86813e109bbe306ddb229a05159e37d24820ea70705fd4a7",
+      "bytes": 151937
+    },
+    {
+      "seq": 22,
+      "slug": "empty-mm-scene",
+      "width": 1494,
+      "height": 1019,
+      "recordedAt": "2026-10-25T09:55:48.043Z",
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-22-empty-mm-scene.png",
+      "sha256": "4adc8aebf5e4a772bee8fce4eb6b599831c2910744002fc3fb9242704c87f51c",
+      "bytes": 163109
+    },
+    {
+      "seq": 23,
+      "slug": "A_L19-import-dialog",
+      "width": 1060,
+      "height": 600,
+      "recordedAt": "2026-10-25T09:55:52.043Z",
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-23-A_L19-import-dialog.png",
+      "sha256": "8a1817bf4a269f9421ab95a42ec2dc03fcfe70be8121323980a717f526b981ac",
+      "bytes": 71959
+    },
+    {
+      "seq": 24,
+      "slug": "A_L19-reimport-dimensions",
+      "width": 1494,
+      "height": 1019,
+      "recordedAt": "2026-10-25T09:56:02.294Z",
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-24-A_L19-reimport-dimensions.png",
+      "sha256": "5a3634959a94caac6d6a50ad0a4aed7b79dc5a0f0ddaf9e4abaf4c8f54120cb0",
+      "bytes": 178498
+    },
+    {
+      "seq": 25,
+      "slug": "A_L19-reimport-profile",
+      "width": 1494,
+      "height": 1019,
+      "recordedAt": "2026-10-25T09:56:06.244Z",
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-25-A_L19-reimport-profile.png",
+      "sha256": "3cb3be0a5808fa8a4cc732e74ea054e62d306db47e96b0abfab5b86fcd3d8f07",
+      "bytes": 173955
+    },
+    {
+      "seq": 26,
+      "slug": "A_L19-reimport-non-manifold",
+      "width": 1494,
+      "height": 1019,
+      "recordedAt": "2026-10-25T09:56:10.044Z",
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-26-A_L19-reimport-non-manifold.png",
+      "sha256": "ae3cd5f6486259fd2649a686768838e75f2b548f7f0e79e882b5be05d4f9d65f",
+      "bytes": 183770
+    },
+    {
+      "seq": 27,
+      "slug": "B_L17-import-dialog",
+      "width": 1060,
+      "height": 600,
+      "recordedAt": "2026-10-25T09:56:14.844Z",
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-27-B_L17-import-dialog.png",
+      "sha256": "9ad6b01fa9853efafa8da96c211dd38b5355a0dc4f1e92c7e7c0e90f4f361d0f",
+      "bytes": 71824
+    },
+    {
+      "seq": 28,
+      "slug": "B_L17-reimport-dimensions",
+      "width": 1494,
+      "height": 1019,
+      "recordedAt": "2026-10-25T09:56:24.594Z",
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-28-B_L17-reimport-dimensions.png",
+      "sha256": "902135e64eab461cb83502e97f9f63ebbf772214512077a0505c8782377c92a3",
+      "bytes": 181943
+    },
+    {
+      "seq": 29,
+      "slug": "B_L17-reimport-profile",
+      "width": 1494,
+      "height": 1019,
+      "recordedAt": "2026-10-25T09:56:28.544Z",
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-29-B_L17-reimport-profile.png",
+      "sha256": "f5ef0a75f65314ccdc29a4e85a97638f10ae64a8cb41a3d3207b87befa29a951",
+      "bytes": 173108
+    },
+    {
+      "seq": 30,
+      "slug": "B_L17-reimport-non-manifold",
+      "width": 1494,
+      "height": 1019,
+      "recordedAt": "2026-10-25T09:56:32.344Z",
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-30-B_L17-reimport-non-manifold.png",
+      "sha256": "0487bd01ba7988982445ea40e0cf78b023d261fbb42c275b284f681cfafe90d5",
+      "bytes": 183429
+    },
+    {
+      "seq": 31,
+      "slug": "C_L21-import-dialog",
+      "width": 1060,
+      "height": 600,
+      "recordedAt": "2026-10-25T09:56:37.144Z",
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-31-C_L21-import-dialog.png",
+      "sha256": "cdb857308cc71d91ba8910b32055291c9947e85578959514bd03ce3e6dc43059",
+      "bytes": 71940
+    },
+    {
+      "seq": 32,
+      "slug": "C_L21-reimport-dimensions",
+      "width": 1494,
+      "height": 1019,
+      "recordedAt": "2026-10-25T09:56:46.894Z",
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-32-C_L21-reimport-dimensions.png",
+      "sha256": "9b21f1f1224b36e130db26148fc57bc5b5f06bb8c21685a66fb743891903e6aa",
+      "bytes": 183977
+    },
+    {
+      "seq": 33,
+      "slug": "C_L21-reimport-profile",
+      "width": 1494,
+      "height": 1019,
+      "recordedAt": "2026-10-25T09:56:50.845Z",
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-33-C_L21-reimport-profile.png",
+      "sha256": "afae458cd829be9adb40cb33f6227f7883827c9cbf661b566506792d3c4f6f87",
+      "bytes": 177928
+    },
+    {
+      "seq": 34,
+      "slug": "C_L21-reimport-non-manifold",
+      "width": 1494,
+      "height": 1019,
+      "recordedAt": "2026-10-25T09:56:54.645Z",
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-34-C_L21-reimport-non-manifold.png",
+      "sha256": "7b4c946dd9fe7410657b9155f6180c9b62519750d65a2735cb441ed61e0a42ca",
+      "bytes": 184186
+    },
+    {
+      "seq": 35,
+      "slug": "reimport-layout",
+      "width": 1494,
+      "height": 1019,
+      "recordedAt": "2026-10-25T09:57:01.995Z",
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-35-reimport-layout.png",
+      "sha256": "8897c764ca05fb2d93f3c08fd415c34c9d9de007b3f6120da051b403a557ba1d",
+      "bytes": 189813
+    },
+    {
+      "seq": 36,
+      "slug": "coupon-exports-verified",
+      "width": 1494,
+      "height": 1019,
+      "recordedAt": "2026-10-25T09:57:03.195Z",
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-36-coupon-exports-verified.png",
+      "sha256": "8897c764ca05fb2d93f3c08fd415c34c9d9de007b3f6120da051b403a557ba1d",
+      "bytes": 189813
+    }
+  ],
+  "previous_artifacts_unchanged": [
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/demo-files/u07_cantilever_length_coupons_v001.blend",
+      "sha256": "22072532eed0f6fcc506bb435ed8d65fcaeaef583ea41d90c4e8c9665b82e9b8",
+      "bytes": 108728
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/coupon-record-v001.json",
+      "sha256": "1180c5194a5ec09af9186e2e3f69761e5460a4350f9019e9d1020a44e127c01d",
+      "bytes": 452168
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/verification.json",
+      "sha256": "ecea0a82400931113ad34f9c1fe054d6711835558d268973680a029ea656950b",
+      "bytes": 447931
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/geometry-manifest-v001.json",
+      "sha256": "d73880bb5e614cf587071e9437d6f47824bcad6d7860678dc0913735bf5177d7",
+      "bytes": 83080
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/trial-fit-record-v001.json",
+      "sha256": "66adde143a60fe0ef8a5ec61eb101dadc8a2a0e833b9aa4d74be19f2cdffd517",
+      "bytes": 6700
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/publication-checks-v001.json",
+      "sha256": "cee9ac30b9c2da06d8a9d6c551de9add9f46167e2adb8bc1d64a4d2091373b4c",
+      "bytes": 13004
+    }
+  ],
+  "publication_baseline": {
+    "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/publication-baseline-v001.json",
+    "sha256": "c081fdf6e4085709e92848158d13526e173027e7529cafeb588b239847b42b26",
+    "bytes": 42102
+  },
+  "learner_progress": {
+    "revision": 5,
+    "sha256": "d92e4f2ee78a1cf41386816b8616bf635b89fb25f8bfd813ac00cd20ed20b4ef",
+    "unchanged": true,
+    "confirmed_by_tutor": false,
+    "registered_as_learner_files": false,
+    "canonical_step_count": 52
+  },
+  "workspace_integrity": {
+    "unchanged": true,
+    "before_canonical_sha256": "4ad6905b1cef7594ff1bfed45b81e7794fdbf128011df09b4686bdb44d0a7d2f",
+    "after_canonical_sha256": "4ad6905b1cef7594ff1bfed45b81e7794fdbf128011df09b4686bdb44d0a7d2f",
+    "entries": 11
+  },
+  "numeric_comparison": {
+    "dimensionsAbsMm": 0.0001,
+    "coordinateWeldMm": 1e-05,
+    "volumeRelative": 1e-05,
+    "purpose": "Floating point reconstruction only; not manufacturing, mechanical L, improvement, support, printability or fit acceptance"
+  },
+  "support_strategy_status": "pending_slicer_review",
+  "pending_results": {
+    "mating_counterpart": null,
+    "relative_positioning_datum": null,
+    "clamping_conditions": null,
+    "effective_mechanical_length_mm": null,
+    "material_grade": null,
+    "epsilon_allow": null,
+    "Q": null,
+    "required_deflection_mm": null,
+    "delta_allow_mm": null,
+    "forces": null,
+    "support_required": null,
+    "final_print_orientation_approved": null,
+    "physical_measurements": null,
+    "fit_results": null,
+    "qualified_strength_N": null,
+    "qualified_clearance_mm": null,
+    "improvement_validated": null
+  },
+  "flags": {
+    "exported_stl": true,
+    "mesh_analysis_overhang_checked": false,
+    "support_generation_performed": false,
+    "slicer_checked": false,
+    "printed": false,
+    "fit_tested": false,
+    "strength_analysis_performed": false,
+    "deformation_analysis_performed": false,
+    "fit_qualification": false,
+    "improvement_assessed": false
+  },
+  "publication_audits": [
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/independent-coupon-export-audit-v001.json",
+      "sha256": "056ebabefae4ff81bb989ec3e6969abef5a2bee63deddaf7b792d080684ad0c3"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/automated-checks-v001.json",
+      "sha256": "5179d8ed2c784faaee9b9e3e2e444930b19e0ba80d216478e11dfe9cf9372300"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/ui-technical-review-v001.json",
+      "sha256": "12be75a96d757edc61dac0683566b61098756470b43ad0702ea70acdd0b57fd5"
+    }
+  ],
+  "journal_path": "learning/journal/2026-10-25-lesson07-coupon-export-demo-v001.md",
+  "publication_state": "Root publishing checks are tracked separately; no HTTP/browser completion claimed here."
+}

@@ -1,0 +1,694 @@
+{
+ "scenario": "D:\\others\\study\\Blender-Learning\\learning\\tutor\\scenarios\\lesson03.py",
+ "blender": "5.2.1 LTS",
+ "buildHash": "9e2066aef7ef",
+ "records": [
+  {
+   "seq": 1,
+   "step": "03-01",
+   "slug": "open-station",
+   "recordedAt": "2026-10-22T06:31:26.528Z",
+   "action": "File > Open…：選第二單元保存的訊號站 v002",
+   "observed": "開啟視窗資料夾內容：u02_mm_block_v001.blend、u02_mm_block_v001.blend1、u02_station_v001.blend、u02_station_v002.blend。",
+   "window": "FILE_BROWSER",
+   "highlights": [
+    {
+     "x": 248,
+     "y": 566,
+     "w": 780,
+     "h": 25,
+     "label": "檔名 u02_station_v002.blend"
+    },
+    {
+     "x": 789,
+     "y": 566,
+     "w": 126,
+     "h": 25,
+     "label": "按 Open"
+    }
+   ],
+   "clicks": [],
+   "file": "03-01-01-open-station.png",
+   "width": 1060,
+   "height": 600,
+   "sha256": "c4494ed5e691b534828b4c42d24179f6ed3c972b1c1c9fab20720e7155b164a9",
+   "note": "此為助教第二單元示範的訊號站；你要開的是自己單元 02 練習資料夾中已登記的 v002。"
+  },
+  {
+   "seq": 2,
+   "step": "03-01",
+   "slug": "station-opened",
+   "recordedAt": "2026-10-22T06:31:30.628Z",
+   "action": "開啟後先核對來源：檔名、Station 部件與雜湊",
+   "observed": "目前檔案：u02_station_v002.blend；SHA-256 740a47841e4cccd8；Station：Ground、Platform、BeaconBase、Post、Signal。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 1229,
+     "y": 26,
+     "w": 263,
+     "h": 352,
+     "label": "Station Collection"
+    },
+    {
+     "x": 492,
+     "y": 365,
+     "w": 260,
+     "h": 179,
+     "label": "訊號站"
+    }
+   ],
+   "clicks": [],
+   "file": "03-01-02-station-opened.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "02d2e8273660026ea0daa69d4bc95534a8957e6bd63ae8ce859a8803666e1721"
+  },
+  {
+   "seq": 3,
+   "step": "03-01",
+   "slug": "save-as-render",
+   "recordedAt": "2026-10-22T06:31:34.728Z",
+   "action": "File > Save As…：資料夾換成自己的單元 03 練習資料夾，檔名 u03_render_v001.blend",
+   "observed": "資料夾欄位：D:\\others\\study\\Blender-Learning\\learning\\workspaces\\03\\；檔名欄位：u03_render_v001.blend；該資料夾目前內容：（空資料夾）。",
+   "window": "FILE_BROWSER",
+   "highlights": [
+    {
+     "x": 394,
+     "y": 8,
+     "w": 318,
+     "h": 25,
+     "label": "資料夾路徑"
+    },
+    {
+     "x": 248,
+     "y": 566,
+     "w": 780,
+     "h": 25,
+     "label": "檔名"
+    },
+    {
+     "x": 789,
+     "y": 566,
+     "w": 126,
+     "h": 25,
+     "label": "你要按 Save As"
+    }
+   ],
+   "clicks": [],
+   "file": "03-01-03-save-as-render.png",
+   "width": 1060,
+   "height": 600,
+   "sha256": "c481a67e270a994bc8940dcf597dffff5b8c59c8dfa78352b291bced4d0ee4d7",
+   "note": "這張是你要看到的畫面；路徑與檔名由助教以程式填入欄位，避免鍵盤誤觸檔案瀏覽器快捷鍵。助教示範到此按 Esc 取消，不寫入你的工作區，再把同名檔存到助教示範資料夾。"
+  },
+  {
+   "seq": 4,
+   "step": "03-01",
+   "slug": "saved",
+   "recordedAt": "2026-10-22T06:31:42.528Z",
+   "action": "存檔後底部出現 Saved；把來源檔名與雜湊記進筆記",
+   "observed": "目前檔案：u03_render_v001.blend；來源：u02_station_v002.blend（SHA-256 740a47841e4cccd86f08ce4dd0fcc75294b0cc2b1515abecd90cd52c762b0475）。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 0,
+     "y": 997,
+     "w": 1494,
+     "h": 22,
+     "label": "狀態列：Saved"
+    }
+   ],
+   "clicks": [],
+   "file": "03-01-04-saved.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "5c7e4c8eda1fba7f007f85e512af3a579ffe3597467ac582b1a48328f3698cef"
+  },
+  {
+   "seq": 5,
+   "step": "03-02",
+   "slug": "cameras-menu",
+   "recordedAt": "2026-10-22T06:31:45.528Z",
+   "action": "Outliner 點 Camera，開 View > Cameras，找到 Active Camera",
+   "observed": "已選取：Camera；作用中物件：Camera；View 與 Cameras 子選單展開。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 1286,
+     "y": 94,
+     "w": 150,
+     "h": 20,
+     "label": "Camera"
+    },
+    {
+     "x": 169,
+     "y": 28,
+     "w": 32,
+     "h": 20,
+     "label": "View"
+    },
+    {
+     "x": 170,
+     "y": 266,
+     "w": 250,
+     "h": 19,
+     "label": "Cameras"
+    },
+    {
+     "x": 428,
+     "y": 284,
+     "w": 282,
+     "h": 20,
+     "label": "Active Camera"
+    }
+   ],
+   "clicks": [],
+   "file": "03-02-01-cameras-menu.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "7ae163877cc665b1d7a718cefb107d84b49ef043b63a13b77532a9d35357b142"
+  },
+  {
+   "seq": 6,
+   "step": "03-02",
+   "slug": "camera-view",
+   "recordedAt": "2026-10-22T06:31:48.628Z",
+   "action": "點 Active Camera：進入相機取景，核對訊號站是否完整在畫框內",
+   "observed": "相機 Location (7.3589 m, -6.9258 m, 4.9583 m)；Station 在畫框中佔 X 0.1525～0.8502、Y 0.1607～1.0098；超出畫框的部件：Signal。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 307,
+     "y": 302,
+     "w": 612,
+     "h": 344,
+     "label": "相機畫框"
+    },
+    {
+     "x": 393,
+     "y": 291,
+     "w": 442,
+     "h": 308,
+     "label": "訊號站"
+    }
+   ],
+   "clicks": [],
+   "file": "03-02-02-camera-view.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "df9748c3ac34ccd4560c98dfe7796d5cfd3adeb7d2ea335790a092c307099928"
+  },
+  {
+   "seq": 7,
+   "step": "03-02",
+   "slug": "camera-z",
+   "recordedAt": "2026-10-22T06:31:51.928Z",
+   "action": "只改一個軸：Sidebar 的 Location Z 輸入 5.3，訊號站移到畫框中央",
+   "observed": "相機 Location (7.3589 m, -6.9258 m, 5.3 m)；Station 在畫框中佔 X 0.1571～0.8455、Y 0.0814～0.9323；超出畫框的部件：無。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 963,
+     "y": 172,
+     "w": 176,
+     "h": 20,
+     "label": "Location Z"
+    },
+    {
+     "x": 307,
+     "y": 302,
+     "w": 612,
+     "h": 344,
+     "label": "相機畫框"
+    },
+    {
+     "x": 396,
+     "y": 318,
+     "w": 437,
+     "h": 308,
+     "label": "訊號站"
+    }
+   ],
+   "clicks": [],
+   "file": "03-02-03-camera-z.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "4ef0f19f3adac1e70bb0c78ecc83278ab50c419f5c0c87ead3628c85bd509938"
+  },
+  {
+   "seq": 8,
+   "step": "03-03",
+   "slug": "rendered-before",
+   "recordedAt": "2026-10-22T06:31:58.728Z",
+   "action": "Outliner 點 Light，開 Light 分頁；3D Viewport 右上切到 Rendered 預覽",
+   "observed": "Light Power 1000 W；視圖著色：RENDERED。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 1286,
+     "y": 114,
+     "w": 150,
+     "h": 20,
+     "label": "Light"
+    },
+    {
+     "x": 1179,
+     "y": 29,
+     "w": 19,
+     "h": 19,
+     "label": "Rendered"
+    },
+    {
+     "x": 1352,
+     "y": 624,
+     "w": 103,
+     "h": 20,
+     "label": "Power"
+    }
+   ],
+   "clicks": [],
+   "file": "03-03-01-rendered-before.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "5c1e7b8c993e0f852734c9b14cad7d905208c26f251d739145b8b7344054fd11"
+  },
+  {
+   "seq": 9,
+   "step": "03-03",
+   "slug": "power-after",
+   "recordedAt": "2026-10-22T06:32:05.028Z",
+   "action": "只改 Power：輸入 2000 後按 Enter，比較亮度",
+   "observed": "Power 1000 W → 2000 W。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 1352,
+     "y": 624,
+     "w": 103,
+     "h": 20,
+     "label": "Power"
+    },
+    {
+     "x": 396,
+     "y": 318,
+     "w": 437,
+     "h": 308,
+     "label": "訊號站"
+    }
+   ],
+   "clicks": [],
+   "file": "03-03-02-power-after.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "f7965606c7c212e483694a04ebae21d8c50c26b00c6313939f449c25960872c5"
+  },
+  {
+   "seq": 10,
+   "step": "03-04",
+   "slug": "material-tab",
+   "recordedAt": "2026-10-22T06:32:07.628Z",
+   "action": "Outliner 只點 Platform，開 Material 分頁：目前沒有材質，有 New 按鈕",
+   "observed": "已選取：Platform；作用中物件：Platform；Platform 沒有材質。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 1286,
+     "y": 194,
+     "w": 150,
+     "h": 20,
+     "label": "Platform"
+    },
+    {
+     "x": 1236,
+     "y": 807,
+     "w": 20,
+     "h": 20,
+     "label": "Material 分頁"
+    },
+    {
+     "x": 1298,
+     "y": 536,
+     "w": 185,
+     "h": 20,
+     "label": "New"
+    }
+   ],
+   "clicks": [],
+   "file": "03-04-01-material-tab.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "4fda4b00fd0093a6528345b0ae33b8b2814bf254a7cc7dde5fafdbdb2e73d1ce"
+  },
+  {
+   "seq": 11,
+   "step": "03-04",
+   "slug": "material-named",
+   "recordedAt": "2026-10-22T06:32:12.528Z",
+   "action": "按 New 建立材質，再點名稱欄位改成 Platform_Blue",
+   "observed": "Platform 材質：Platform_Blue；Base Color RGB (0.8, 0.8, 0.8)。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 1298,
+     "y": 536,
+     "w": 100,
+     "h": 20,
+     "label": "Platform_Blue"
+    },
+    {
+     "x": 1370,
+     "y": 662,
+     "w": 86,
+     "h": 20,
+     "label": "Base Color"
+    }
+   ],
+   "clicks": [],
+   "file": "03-04-02-material-named.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "a7ac0a814248955fc812f5f64f263e19d5a545e5d67dca9cbcca075e1786ddda"
+  },
+  {
+   "seq": 12,
+   "step": "03-04",
+   "slug": "hex",
+   "recordedAt": "2026-10-22T06:32:15.028Z",
+   "action": "點 Base Color 色塊，在顏色選擇器的 Hex 欄輸入 2F6FD8",
+   "observed": "Platform 材質：Platform_Blue；Base Color RGB (0.8, 0.8, 0.8)（尚未按 Enter）。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 1292,
+     "y": 631,
+     "w": 130,
+     "h": 22,
+     "label": "Hex"
+    }
+   ],
+   "clicks": [],
+   "file": "03-04-03-hex.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "bb1ae9f80f65412610408dfc916ac632d4f01152032c69586bbc9527490897c4"
+  },
+  {
+   "seq": 13,
+   "step": "03-04",
+   "slug": "blue",
+   "recordedAt": "2026-10-22T06:32:20.428Z",
+   "action": "按 Enter，再點一下底部狀態列空白處關閉選擇器：Rendered 預覽中只有平台變藍",
+   "observed": "Platform 材質：Platform_Blue；Base Color RGB (0.0284, 0.159, 0.6867)；其他部件材質：Ground=無、BeaconBase=無、Post=無、Signal=無。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 478,
+     "y": 421,
+     "w": 270,
+     "h": 147,
+     "label": "Platform_Blue"
+    }
+   ],
+   "clicks": [],
+   "file": "03-04-04-blue.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "b2f9b7fdb7c406080ab021fc1ce4502d984675fdae41ad2e560b36aaeb23b1fc"
+  },
+  {
+   "seq": 14,
+   "step": "03-05",
+   "slug": "render-engine",
+   "recordedAt": "2026-10-22T06:32:22.428Z",
+   "action": "Properties 的 Render 分頁：Render Engine 是 EEVEE",
+   "observed": "Render Engine BLENDER_EEVEE；Resolution 1920 × 1080、100%（輸出 1920 × 1080 px）。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 1236,
+     "y": 454,
+     "w": 20,
+     "h": 20,
+     "label": "Render 分頁"
+    },
+    {
+     "x": 1358,
+     "y": 451,
+     "w": 125,
+     "h": 22,
+     "label": "EEVEE"
+    }
+   ],
+   "clicks": [],
+   "file": "03-05-01-render-engine.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "eb96a798a0192783a8f22fa22f4362e925aa1d1d3174b53bb4564a0091f03d66"
+  },
+  {
+   "seq": 15,
+   "step": "03-05",
+   "slug": "resolution",
+   "recordedAt": "2026-10-22T06:32:26.528Z",
+   "action": "Output 分頁：Resolution % 輸入 50，輸出變成 960 × 540 px",
+   "observed": "Render Engine BLENDER_EEVEE；Resolution 1920 × 1080、50%（輸出 960 × 540 px）。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 1236,
+     "y": 482,
+     "w": 20,
+     "h": 20,
+     "label": "Output 分頁"
+    },
+    {
+     "x": 1358,
+     "y": 478,
+     "w": 118,
+     "h": 58,
+     "label": "Resolution"
+    }
+   ],
+   "clicks": [],
+   "file": "03-05-02-resolution.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "963a1c38ec1803b36c32dcf1e778d396e2c0629a101c3295b38eb7aa7cfacdea"
+  },
+  {
+   "seq": 16,
+   "step": "03-05",
+   "slug": "scene-saved",
+   "recordedAt": "2026-10-22T06:32:30.429Z",
+   "action": "先 File > Save 保存場景檢查點，再渲染",
+   "observed": "已存檔：u03_render_v001.blend（SHA-256 cb6b72e7913a9421）；Render Engine BLENDER_EEVEE；Resolution 1920 × 1080、50%（輸出 960 × 540 px）。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 0,
+     "y": 997,
+     "w": 1494,
+     "h": 22,
+     "label": "狀態列：Saved"
+    }
+   ],
+   "clicks": [],
+   "file": "03-05-03-scene-saved.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "54e4eb5bbf6e287a9a54c991c8d97956e8a2f4de80cd3ae43e17f08feb7e40ba"
+  },
+  {
+   "seq": 17,
+   "step": "03-05",
+   "slug": "render-menu",
+   "recordedAt": "2026-10-22T06:32:32.029Z",
+   "action": "上方 Render 選單，找到 Render Image（F12）",
+   "observed": "Render 選單展開。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 94,
+     "y": 3,
+     "w": 50,
+     "h": 21,
+     "label": "Render"
+    },
+    {
+     "x": 98,
+     "y": 27,
+     "w": 194,
+     "h": 19,
+     "label": "Render Image"
+    }
+   ],
+   "clicks": [],
+   "file": "03-05-04-render-menu.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "ed0ee355a415423f58a746500201feeb48604fdd1100f5ac99225b65bf992ac9"
+  },
+  {
+   "seq": 18,
+   "step": "03-05",
+   "slug": "render-window",
+   "recordedAt": "2026-10-22T06:32:35.829Z",
+   "action": "點 Render Image：另開渲染視窗，等它算完",
+   "observed": "渲染完成 1 次；Render Engine BLENDER_EEVEE；Resolution 1920 × 1080、50%（輸出 960 × 540 px）；Platform 材質：Platform_Blue；Base Color RGB (0.0284, 0.159, 0.6867)。",
+   "window": "IMAGE_EDITOR",
+   "highlights": [
+    {
+     "x": 167,
+     "y": 3,
+     "w": 36,
+     "h": 20,
+     "label": "Image 選單"
+    }
+   ],
+   "clicks": [],
+   "file": "03-05-05-render-window.png",
+   "width": 990,
+   "height": 600,
+   "sha256": "cce130454b2c4ba2620b991087947221d0d6c4a72c3270306d31e8f6eeb691f5"
+  },
+  {
+   "seq": 19,
+   "step": "03-05",
+   "slug": "save-png",
+   "recordedAt": "2026-10-22T06:32:39.929Z",
+   "action": "渲染視窗的 Image > Save As…：資料夾換成單元 03 練習資料夾，檔名含來源版本",
+   "observed": "資料夾欄位：D:\\others\\study\\Blender-Learning\\learning\\workspaces\\03\\；檔名欄位：u03_render_v001_preview.png；該資料夾目前內容：（空資料夾）。",
+   "window": "FILE_BROWSER",
+   "highlights": [
+    {
+     "x": 394,
+     "y": 8,
+     "w": 318,
+     "h": 25,
+     "label": "資料夾路徑"
+    },
+    {
+     "x": 248,
+     "y": 566,
+     "w": 780,
+     "h": 25,
+     "label": "檔名"
+    },
+    {
+     "x": 789,
+     "y": 566,
+     "w": 126,
+     "h": 25,
+     "label": "你要按 Save As Image"
+    }
+   ],
+   "clicks": [],
+   "file": "03-05-06-save-png.png",
+   "width": 1060,
+   "height": 600,
+   "sha256": "7bec66d9d6e838f00812b6d59501f9ec2bf1b8c4a2a38f5e6ce82332234732d1",
+   "note": "這張是你要看到的畫面；路徑與檔名由助教以程式填入欄位，避免鍵盤誤觸檔案瀏覽器快捷鍵。助教示範到此按 Esc 取消，不寫入你的工作區，再把同名檔存到助教示範資料夾。"
+  },
+  {
+   "seq": 20,
+   "step": "03-05",
+   "slug": "png-saved",
+   "recordedAt": "2026-10-22T06:32:46.929Z",
+   "action": "PNG 存好後核對：檔案、尺寸與來源場景",
+   "observed": "PNG：u03_render_v001_preview.png（960 × 540 px、334372 bytes）；來源場景 u03_render_v001.blend SHA-256 cb6b72e7913a9421。",
+   "window": "IMAGE_EDITOR",
+   "highlights": [],
+   "clicks": [],
+   "file": "03-05-07-png-saved.png",
+   "width": 990,
+   "height": 600,
+   "sha256": "cce130454b2c4ba2620b991087947221d0d6c4a72c3270306d31e8f6eeb691f5"
+  },
+  {
+   "seq": 21,
+   "step": "03-06",
+   "slug": "unsaved-dialog",
+   "recordedAt": "2026-10-22T06:32:50.829Z",
+   "action": "在渲染視窗按 Esc 關閉，再按 File > Open…：先跳出 Save changes before closing?",
+   "observed": "Blender 標記有未存變更：是；磁碟上的 u03_render_v001.blend SHA-256 cb6b72e7913a9421（等於登記時的 cb6b72e7913a9421）。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 527,
+     "y": 456,
+     "w": 440,
+     "h": 108,
+     "label": "Save changes before closing?"
+    },
+    {
+     "x": 716,
+     "y": 528,
+     "w": 115,
+     "h": 22,
+     "label": "按 Don't Save（不要按 Save）"
+    }
+   ],
+   "clicks": [],
+   "file": "03-06-01-unsaved-dialog.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "805ecb478849d646da780ea172cc91627793304685eb69aac37046af372855ae",
+   "note": "存檔後只做了渲染與另存 PNG，Blender 仍把檔案標成有變更。v001 已是登記過的檢查點：按 Save 會覆寫它、改變雜湊。助教先核對磁碟上的雜湊和登記時相同、場景沒有再改，才按 Don't Save；不確定時按 Cancel 並先回報。"
+  },
+  {
+   "seq": 22,
+   "step": "03-06",
+   "slug": "reopened",
+   "recordedAt": "2026-10-22T06:33:00.329Z",
+   "action": "按 Don't Save 後選 u03_render_v001.blend 開啟，核對設定是否都還在",
+   "observed": "目前檔案：u03_render_v001.blend（SHA-256 cb6b72e7913a9421）；Render Engine BLENDER_EEVEE；Resolution 1920 × 1080、50%（輸出 960 × 540 px）；Camera Location Z 5.3 m；Light Power 2000 W；Platform 材質：Platform_Blue；Base Color RGB (0.0284, 0.159, 0.6867)。3D Viewport 著色：SOLID。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 396,
+     "y": 318,
+     "w": 437,
+     "h": 308,
+     "label": "訊號站"
+    }
+   ],
+   "clicks": [],
+   "file": "03-06-02-reopened.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "40dad05b1d59b29090b087a7b81c4d87b9633ebe98b04ddb6241be94b73f6588",
+   "note": "實測：重新開檔後 3D Viewport 回到 Solid 著色，所以平台看起來是灰色；材質仍在（讀回 Platform_Blue），按右上 Rendered 才會再看到藍色。下一張渲染圖可確認顏色沒有遺失。"
+  },
+  {
+   "seq": 23,
+   "step": "03-06",
+   "slug": "render-again",
+   "recordedAt": "2026-10-22T06:33:04.729Z",
+   "action": "再按 Render > Render Image",
+   "observed": "渲染完成 2 次；Render Engine BLENDER_EEVEE；Resolution 1920 × 1080、50%（輸出 960 × 540 px）。",
+   "window": "IMAGE_EDITOR",
+   "highlights": [],
+   "clicks": [],
+   "file": "03-06-03-render-again.png",
+   "width": 990,
+   "height": 600,
+   "sha256": "49e199a6d5bf336c69973666702acb3323f53708853de50eaed94b45bd8d9859"
+  },
+  {
+   "seq": 24,
+   "step": "03-06",
+   "slug": "compare",
+   "recordedAt": "2026-10-22T06:33:10.529Z",
+   "action": "另存 u03_render_v001_repeat.png，和第一次的 PNG 逐像素比較",
+   "observed": "兩張都是 960 × 540 px；平均差 0、最大差 0（0～1），超過 1/255 的通道值 0 / 2073600。",
+   "window": "IMAGE_EDITOR",
+   "highlights": [],
+   "clicks": [],
+   "file": "03-06-04-compare.png",
+   "width": 990,
+   "height": 600,
+   "sha256": "49e199a6d5bf336c69973666702acb3323f53708853de50eaed94b45bd8d9859"
+  }
+ ]
+}

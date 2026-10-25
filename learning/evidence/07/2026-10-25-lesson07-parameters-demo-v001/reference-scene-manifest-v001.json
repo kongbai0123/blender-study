@@ -1,0 +1,584 @@
+{
+  "schema_version": 1,
+  "run": "2026-10-25-lesson07-parameters-demo-v001",
+  "run_version": "v001",
+  "scene_version": "v001",
+  "recorded_on": "2026-10-25",
+  "timezone": "Asia/Taipei",
+  "performed_by": "tutor",
+  "completion_scope": "07-01 parameter definitions, source/formula applicability conditions, actual box-face readbacks and unchanged-box reference scene only; no arm modelling, numerical calculation, strength, STL, slicing, printing or physical fit",
+  "source_scene": {
+    "path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\04\\2026-10-22-lesson04-demo-v001\\demo-files\\u04_box_v001.blend",
+    "sha256": "b918ee87d26e289f4c8a2f6633beceb854c7d0511e3eddcc969a0696afcd2530",
+    "bytes": 97880,
+    "version": "v001",
+    "unchanged": true
+  },
+  "opened_source_copy": {
+    "path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\07\\2026-10-25-lesson07-parameters-demo-v001\\demo-files\\sources\\u04_box_v001.blend",
+    "sha256": "b918ee87d26e289f4c8a2f6633beceb854c7d0511e3eddcc969a0696afcd2530",
+    "bytes": 97880,
+    "unchanged": true,
+    "copy_of": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\04\\2026-10-22-lesson04-demo-v001\\demo-files\\u04_box_v001.blend",
+    "is_new_checkpoint": false
+  },
+  "reference_scene": {
+    "path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\07\\2026-10-25-lesson07-parameters-demo-v001\\demo-files\\u07_snap_reference_v001.blend",
+    "sha256": "6a6b6c03295c8b6047b97c3efdea9884954b714da87b45b7aa36b4d2b612d3a9",
+    "bytes": 97962,
+    "version": "v001",
+    "scene_role": "unmodified_box_reference",
+    "reopened": true,
+    "only_mesh": "Body_Reference",
+    "camera_and_light": "retained and hidden; reopened script guard checked"
+  },
+  "source_body_geometry_unchanged": true,
+  "world_vertices_and_triangles_exactly_equal": true,
+  "box_summary": {
+    "outer_dimensions_mm": [
+      60.0,
+      40.0,
+      30.0
+    ],
+    "cavity_dimensions_mm": [
+      56.0,
+      36.0,
+      28.0
+    ],
+    "wall_thicknesses_mm": [
+      2.0,
+      2.0,
+      2.0,
+      2.0
+    ],
+    "floor_thickness_mm": 2.0,
+    "volume_mm3": 15552.0,
+    "non_manifold_edges": 0,
+    "connected_shells": 1,
+    "genus": 0,
+    "mesh_counts": {
+      "vertices": 16,
+      "edges": 42,
+      "faces": 28,
+      "triangles": 28,
+      "representation": "evaluated loop-triangulated mesh"
+    }
+  },
+  "face_measurements": {
+    "rim": {
+      "object_name": "Body_Reference",
+      "selected_face_count": 1,
+      "selected_vertex_count": 4,
+      "vertices_mm": [
+        [
+          -30.00000142492354,
+          -20.000000949949026,
+          15.00000071246177
+        ],
+        [
+          30.00000142492354,
+          -20.000000949949026,
+          15.00000071246177
+        ],
+        [
+          28.000001329928637,
+          -18.000000854954123,
+          15.00000071246177
+        ],
+        [
+          -28.000001329928637,
+          -18.000000854954123,
+          15.00000071246177
+        ]
+      ],
+      "bounds_mm": {
+        "min": [
+          -30.00000142492354,
+          -20.000000949949026,
+          15.00000071246177
+        ],
+        "max": [
+          30.00000142492354,
+          -18.000000854954123,
+          15.00000071246177
+        ]
+      },
+      "spans_mm": [
+        60.00000284984708,
+        2.0000000949949026,
+        0.0
+      ]
+    },
+    "inner_floor": {
+      "object_name": "Body_Reference",
+      "selected_face_count": 1,
+      "selected_vertex_count": 4,
+      "vertices_mm": [
+        [
+          -28.000001329928637,
+          18.000000854954123,
+          -13.000000617466867
+        ],
+        [
+          -28.000001329928637,
+          -18.000000854954123,
+          -13.000000617466867
+        ],
+        [
+          28.000001329928637,
+          -18.000000854954123,
+          -13.000000617466867
+        ],
+        [
+          28.000001329928637,
+          18.000000854954123,
+          -13.000000617466867
+        ]
+      ],
+      "bounds_mm": {
+        "min": [
+          -28.000001329928637,
+          -18.000000854954123,
+          -13.000000617466867
+        ],
+        "max": [
+          28.000001329928637,
+          18.000000854954123,
+          -13.000000617466867
+        ]
+      },
+      "spans_mm": [
+        56.00000265985727,
+        36.00000170990825,
+        0.0
+      ]
+    },
+    "outer_floor": {
+      "object_name": "Body_Reference",
+      "selected_face_count": 1,
+      "selected_vertex_count": 4,
+      "vertices_mm": [
+        [
+          -30.00000142492354,
+          20.000000949949026,
+          -15.00000071246177
+        ],
+        [
+          30.00000142492354,
+          20.000000949949026,
+          -15.00000071246177
+        ],
+        [
+          30.00000142492354,
+          -20.000000949949026,
+          -15.00000071246177
+        ],
+        [
+          -30.00000142492354,
+          -20.000000949949026,
+          -15.00000071246177
+        ]
+      ],
+      "bounds_mm": {
+        "min": [
+          -30.00000142492354,
+          -20.000000949949026,
+          -15.00000071246177
+        ],
+        "max": [
+          30.00000142492354,
+          20.000000949949026,
+          -15.00000071246177
+        ]
+      },
+      "spans_mm": [
+        60.00000284984708,
+        40.00000189989805,
+        0.0
+      ]
+    }
+  },
+  "derived_box_floor_thickness_reference_mm": 2.0000000949949026,
+  "measurement_scope_note": "Existing-box rim span and floor Z difference only; neither is assigned to arm h. Selected-face Python unit-factor offsets are floating-point readbacks, not manufacturing tolerances.",
+  "geometry_evidence": [
+    {
+      "role": "source_body",
+      "path": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/source_body_mesh.json",
+      "sha256": "e0ec94210bff5cd7f113f32eb4a213e75553e40fb64bdf30ad3ece672a1d61bd",
+      "bytes": 2567,
+      "vertices": 16,
+      "triangles": 28,
+      "cad_metadata": {
+        "object_name": "Cube",
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "unit_scale": 0.0010000000474974513,
+        "length_unit": "MILLIMETERS",
+        "measurement_source": "evaluated final mesh loop triangles in world-space millimetres",
+        "modifier_count": 0,
+        "object_location_mm": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "role": "reference_body",
+      "path": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/reference_body_mesh.json",
+      "sha256": "b3101108787bd264bf95af51db1d5c23aff408a95b4c961f77a66bb37ad29370",
+      "bytes": 2577,
+      "vertices": 16,
+      "triangles": 28,
+      "cad_metadata": {
+        "object_name": "Body_Reference",
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "unit_scale": 0.0010000000474974513,
+        "length_unit": "MILLIMETERS",
+        "measurement_source": "evaluated final mesh loop triangles in world-space millimetres",
+        "modifier_count": 0,
+        "object_location_mm": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    }
+  ],
+  "parameter_record": {
+    "path": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/parameter-record-v001.json",
+    "sha256": "57d411f24486aad351056854b8eb427aae853b99f290372c9d0294d367ac6ead",
+    "bytes": 16999
+  },
+  "face_measurement_evidence": {
+    "path": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/face-measurements.json",
+    "sha256": "fd4b187c59c27d01224909d596e73a5c1bd156ca70bdc97a94312b41833a7b7d",
+    "bytes": 2760
+  },
+  "source_snapshot_manifest": {
+    "path": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/source-snapshot/manifest.json",
+    "sha256": "d2b9182a3f5d33b893382e167bf16ad20caff2caca3b42450f79d95813abc65c",
+    "bytes": 2229
+  },
+  "script_snapshots": [
+    {
+      "source": "learning/tutor/run_demo.py",
+      "snapshot": "source-snapshot/run_demo.py",
+      "sha256": "8a0afa081716cab276c99fc811f6a2453ac82f45b28d8a0b1c639eef67347058",
+      "path": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/source-snapshot/run_demo.py",
+      "bytes": 11779
+    },
+    {
+      "source": "learning/tutor/blender_demo.py",
+      "snapshot": "source-snapshot/blender_demo.py",
+      "sha256": "96321d8180b1e05a9b77d47551adefbf43ddd04e6add2505eca3b30ceb831a6c",
+      "path": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/source-snapshot/blender_demo.py",
+      "bytes": 7140
+    },
+    {
+      "source": "learning/tutor/scenarios/common.py",
+      "snapshot": "source-snapshot/common.py",
+      "sha256": "45044c48522bf5a2dee130382f902a07243e82027addaf6594cbae59b3369c3d",
+      "path": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/source-snapshot/common.py",
+      "bytes": 11133
+    },
+    {
+      "source": "learning/tutor/scenarios/lesson07_parameters.py",
+      "snapshot": "source-snapshot/lesson07_parameters.py",
+      "sha256": "f975c965ac535a4d165a52979df236f60308eb012dd693ea287b1fd8dc86d9df",
+      "path": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/source-snapshot/lesson07_parameters.py",
+      "bytes": 14315
+    },
+    {
+      "source": "learning/tutor/scenarios/lid_checks.py",
+      "snapshot": "source-snapshot/lid_checks.py",
+      "sha256": "b2e2438126695cca24cb560dce046ca743c2de2c348116141ff6ed75c42e52c3",
+      "path": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/source-snapshot/lid_checks.py",
+      "bytes": 17073
+    },
+    {
+      "source": "learning/tutor/scenarios/tenon_checks.py",
+      "snapshot": "source-snapshot/tenon_checks.py",
+      "sha256": "4defe55d142ac78be924cef8d82abc3bd24bd2db6f380332eb29cb5b0d89d13d",
+      "path": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/source-snapshot/tenon_checks.py",
+      "bytes": 24591
+    }
+  ],
+  "data_bindings": [
+    {
+      "source": "learning/plans/07-01-cantilever-parameters-v001.json",
+      "snapshot": "source-snapshot/parameter-template-v001.json",
+      "sha256": "11d4ac441bb213c3f1b14aeecdb35f581cfcf7398a55ad0142a8f37972c74e36",
+      "source_evidence": {
+        "path": "learning/plans/07-01-cantilever-parameters-v001.json",
+        "sha256": "11d4ac441bb213c3f1b14aeecdb35f581cfcf7398a55ad0142a8f37972c74e36",
+        "bytes": 5686
+      },
+      "snapshot_evidence": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/source-snapshot/parameter-template-v001.json",
+        "sha256": "11d4ac441bb213c3f1b14aeecdb35f581cfcf7398a55ad0142a8f37972c74e36",
+        "bytes": 5686
+      }
+    },
+    {
+      "source": "sources/engineering/snapfit-source-facts-v001.json",
+      "snapshot": "source-snapshot/snapfit-source-facts-v001.json",
+      "sha256": "291d1704ea12834969e74e79b948cf2677524fda7a852fa8434c017a674169f8",
+      "source_evidence": {
+        "path": "sources/engineering/snapfit-source-facts-v001.json",
+        "sha256": "291d1704ea12834969e74e79b948cf2677524fda7a852fa8434c017a674169f8",
+        "bytes": 7457
+      },
+      "snapshot_evidence": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/source-snapshot/snapfit-source-facts-v001.json",
+        "sha256": "291d1704ea12834969e74e79b948cf2677524fda7a852fa8434c017a674169f8",
+        "bytes": 7457
+      }
+    }
+  ],
+  "parameter_state": {
+    "stage": "parameter_planning_only",
+    "pending_geometric_parameters": [
+      "arm_length",
+      "arm_thickness",
+      "arm_width",
+      "root_radius",
+      "undercut",
+      "required_deflection",
+      "entry_angle",
+      "exit_angle",
+      "engagement",
+      "clearance",
+      "free_space"
+    ],
+    "pending_material_parameters": [
+      "material_grade",
+      "epsilon_allow",
+      "strain_source",
+      "secant_modulus",
+      "print_orientation"
+    ],
+    "all_parameter_values_null": true,
+    "service_conditions": {
+      "assembly_cycles": null,
+      "temperature_C": null,
+      "humidity_RH": null,
+      "hold_time_hours": null,
+      "service_load_N": null,
+      "friction_coefficient": null
+    },
+    "estimates": {
+      "L_over_h": null,
+      "delta_allow_mm": null,
+      "root_strain_estimate": null,
+      "deflection_force_N": null,
+      "insertion_force_N": null,
+      "retention_force_N": null
+    },
+    "results": {
+      "strength_assessment": null,
+      "fit_assessment": null,
+      "qualified_strength_N": null,
+      "qualified_clearance_mm": null
+    },
+    "root_flexibility_Q": null,
+    "Q_source": null,
+    "formula_applicability_confirmed": null
+  },
+  "formula_reference": {
+    "expression": "δ_allow ≈ 0.67 × ε_allow × L² / h",
+    "coefficient": 0.67,
+    "notation_note": "ε_allow 用小數比例；百分比須除以 100。原冊簡化情境的 y 在此記為 δ_allow；u、δ_req 與 δ_allow 分開。0.67 是原冊近似係數，不等於精確的 2/3。",
+    "source_id": "covestro_snapfit_guide",
+    "source_url": "https://solutions.covestro.com/-/media/covestro/solution-center/brands/downloads/imported/1557218421.pdf",
+    "pdf_page": 9,
+    "locator": "Table 1，均勻矩形等截面 1A",
+    "applicability_confirmed": null,
+    "root_flexibility_Q": null,
+    "Q_source": null
+  },
+  "formula_scope_note": "Manufacturer rounded 0.67 differs from exact classical 2/3. u, delta_required and delta_allow remain distinct and unassigned. No strain table value or numerical deflection/force calculation is adopted.",
+  "reviewed_source_facts": {
+    "evidence": {
+      "path": "sources/engineering/snapfit-source-facts-v001.json",
+      "sha256": "291d1704ea12834969e74e79b948cf2677524fda7a852fa8434c017a674169f8",
+      "bytes": 7457
+    },
+    "local_pdf_downloaded": false,
+    "local_pdf_sha256": null,
+    "sources": [
+      {
+        "source_id": "covestro_snapfit_guide",
+        "author": "Covestro",
+        "title": "Snap-Fit Joints for Plastics — A Design Guide",
+        "url": "https://solutions.covestro.com/-/media/covestro/solution-center/brands/downloads/imported/1557218421.pdf",
+        "source_type": "manufacturer_original_manual",
+        "hosting": "manufacturer_official_domain",
+        "pages": [
+          {
+            "pdf_page": 9,
+            "page_label": "Page 9 of 26",
+            "locator": "Table 1；均勻矩形等截面及 Symbols"
+          },
+          {
+            "pdf_page": 24,
+            "page_label": "Page 24 of 26",
+            "locator": "Section E；Both Mating Parts Elastic"
+          }
+        ]
+      },
+      {
+        "source_id": "basf_snapfit_manual",
+        "author": "BASF",
+        "title": "Snap-Fit Design Manual",
+        "url": "https://productdesignonline.com/wp-content/uploads/2019/08/Snap-Fit-Design-Manual.pdf",
+        "source_type": "manufacturer_authored_manual_copy",
+        "hosting": "third_party_pdf_mirror",
+        "hosting_note": "BASF 原廠著作的第三方存放副本；不是 BASF 網域，也不是引用存放網站作者的教學內容。",
+        "pages": [
+          {
+            "pdf_page": 9,
+            "page_label": "III-2",
+            "locator": "Figure III-3；Classical Beam Theory，均勻矩形截面"
+          },
+          {
+            "pdf_page": 11,
+            "page_label": "IV-1",
+            "locator": "Improved Cantilever Snap-Fit Design；根部牆面柔度及短樑條件"
+          },
+          {
+            "pdf_page": 12,
+            "page_label": "IV-2",
+            "locator": "Figure IV-1；Uniform Beam Q Factor，各根部配置及 L/t"
+          },
+          {
+            "pdf_page": 14,
+            "page_label": "IV-4",
+            "locator": "Figure IV-3；Improved Formulas 及符號定義"
+          }
+        ]
+      },
+      {
+        "source_id": "basf_chul_lee_part3",
+        "author": "Chul Lee, BASF",
+        "title": "Improving Snapfit Design (Part 3)",
+        "url": "https://ulprospector.ul.com/1248/pe-snapfit-3/",
+        "source_type": "manufacturer_authored_technical_article",
+        "hosting": "third_party_publisher",
+        "hosting_note": "頁面標示由 BASF 供稿並由 BASF 工程師署名；用於交叉核對原冊的短樑及根部柔度說明。",
+        "published_on": "2007-02-19",
+        "pages": null,
+        "locator": "Improved Cantilever Design；Magnification Factors"
+      }
+    ],
+    "project_conditions": {
+      "material_grade_provided": false,
+      "epsilon_allow_provided": false,
+      "material_grade": null,
+      "epsilon_allow": null,
+      "delta_allow_mm": null,
+      "allowable_force_N": null,
+      "manufacturer_strain_table_values_adopted": false,
+      "basis": "材料及允許應變尚未提供，不能借用手冊特定射出樹脂或短期條件的應變數字，當成本專案材料的允許值。原廠塑膠設計資料未驗證本專案列印件的材料、層向、製程或服役條件。",
+      "printed": false,
+      "fit_tested": false,
+      "physical_measurements": null,
+      "strength_qualification": null,
+      "fit_qualification": null,
+      "qualified_clearance_mm": null,
+      "scope": "幾何參數及估算適用條件的教學依據；不作列印件強度、壽命、裝拆力或配合合格宣告。"
+    }
+  },
+  "print_conditions": {
+    "nozzle_diameter_mm": 0.4,
+    "source_record": "learning/evidence/05/2026-10-22-print-conditions-v001.json",
+    "process": null,
+    "printer": null,
+    "line_width_mm": null,
+    "layer_height_mm": null,
+    "slicer": null
+  },
+  "operation_evidence": {
+    "run": {
+      "path": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/run.json",
+      "sha256": "f23a58f061bac8bdb01ce9a8ab8820161006bba3cecf010dd2b52ebb081b1454",
+      "bytes": 9186
+    },
+    "verification": {
+      "path": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/verification.json",
+      "sha256": "45029ac0a80360503dc783ea9504ed9168ad2dff6854de1a51db528668ef36cb",
+      "bytes": 17801
+    },
+    "runner": {
+      "path": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/runner-status.json",
+      "sha256": "4df88e97843804f34274bf01051a1c53909daf76f7da46e7ec9386c5c8ce2285",
+      "bytes": 54444
+    },
+    "original_png_count": 12,
+    "all_png_hashes_and_dimensions_checked": true,
+    "pixel_edits": false,
+    "non_manifold_selected_edges": 0
+  },
+  "numeric_comparison": {
+    "dimensionsAbsMm": 0.0001,
+    "purpose": "Floating point reconstruction only; not manufacturing tolerance or strength/fit qualification"
+  },
+  "workspace_check": {
+    "unchanged": true,
+    "snapshot_encoding": "SHA-256 of UTF-8 JSON, sorted keys, compact separators, ensure_ascii=false",
+    "snapshot_sha256_before": "4ad6905b1cef7594ff1bfed45b81e7794fdbf128011df09b4686bdb44d0a7d2f",
+    "snapshot_sha256_after": "4ad6905b1cef7594ff1bfed45b81e7794fdbf128011df09b4686bdb44d0a7d2f",
+    "directory_entries": 11,
+    "file_entries": 0,
+    "changes": []
+  },
+  "progress_baseline": {
+    "revision": 5,
+    "sha256": "d92e4f2ee78a1cf41386816b8616bf635b89fb25f8bfd813ac00cd20ed20b4ef",
+    "modified": false,
+    "basis": "Current run publication-baseline-v001.json recorded before catalog publication; shared progress SHA unchanged",
+    "prior_baseline_evidence": {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/progress-baseline-v001.json",
+      "sha256": "475ac0b92b76dc01cfaba258fee33d09e43cf94e7016bb83ad730180ef8ee4e1",
+      "bytes": 104
+    },
+    "current_run_baseline_evidence": {
+      "path": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/publication-baseline-v001.json",
+      "sha256": "ff19a284556081a784c5e521341ebac9ae4f7fd1637cb3309baa2368595f328d",
+      "bytes": 4378
+    }
+  },
+  "journal": "learning/journal/2026-10-25-lesson07-parameters-demo-v001.md",
+  "validation_checks": {
+    "pure_actual_import_validation_passed": true,
+    "focused_importer_tests_passed": 90,
+    "reported_final_tutor_tests": {
+      "run": 165,
+      "passed": 164,
+      "skipped": 1
+    },
+    "reported_independent_audit_checks_passed": 10,
+    "reported_server_tests_passed": 17,
+    "reported_frontend_syntax_check_passed": true,
+    "publication_note": "Formal import and browser/HTTP publication details are owned and recorded separately by the publishing agent."
+  },
+  "snap_arm_modeled": false,
+  "calculations_performed": false,
+  "strength_analysis_performed": false,
+  "fit_qualification": false,
+  "printed": false,
+  "fit_tested": false,
+  "slicer_checked": false,
+  "exported": false,
+  "physical_measurements": null,
+  "fit_results": null,
+  "qualified_strength_N": null,
+  "qualified_clearance_mm": null
+}

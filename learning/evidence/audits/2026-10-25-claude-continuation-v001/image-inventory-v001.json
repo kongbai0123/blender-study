@@ -1,0 +1,3453 @@
+{
+  "schemaVersion": 1,
+  "scope": "catalog 05-08 published image references, paths deduplicated",
+  "references": 335,
+  "uniqueImages": 311,
+  "images": [
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-demo-v002/05-02-01-factory-scene.png",
+      "steps": [
+        "05-02"
+      ],
+      "references": [
+        "05-02.operationRun.events[0].figure.path"
+      ],
+      "exists": true,
+      "sha256": "e13488de369a02a0437d128539be91c82e2941e5d93b43f48052bd063056d676"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-demo-v002/05-02-02-units-before.png",
+      "steps": [
+        "05-02"
+      ],
+      "references": [
+        "05-02.operationRun.events[1].figure.path"
+      ],
+      "exists": true,
+      "sha256": "230eb6caa3632e991985c23e60cb85584db5ab014488813c9539cc3bfc73a632"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-demo-v002/05-02-03-units-mm.png",
+      "steps": [
+        "05-02"
+      ],
+      "references": [
+        "05-02.operationRun.events[2].figure.path"
+      ],
+      "exists": true,
+      "sha256": "b53971c651a093cfaf73fcd70f2fffd16222eceb499b3f01d15c0d5118d13ce8"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-demo-v002/05-02-04-dimension-x.png",
+      "steps": [
+        "05-02"
+      ],
+      "references": [
+        "05-02.operationRun.events[3].figure.path"
+      ],
+      "exists": true,
+      "sha256": "00f97a6d3179d2e541b794c1838e6d16fccd7ebf33521c2ba41860ac504b8231"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-demo-v002/05-02-05-dimension-y.png",
+      "steps": [
+        "05-02"
+      ],
+      "references": [
+        "05-02.operationRun.events[4].figure.path"
+      ],
+      "exists": true,
+      "sha256": "ab69a442fcb69b944af761959d263a8f208e82c865fec71934960c1acac6db42"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-demo-v002/05-02-06-dimension-z.png",
+      "steps": [
+        "05-02"
+      ],
+      "references": [
+        "05-02.operationRun.events[5].figure.path"
+      ],
+      "exists": true,
+      "sha256": "b8999439c02ebed950df208d70fa7ab5db651affebb34c5d379142853eaf36f5"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-demo-v002/05-02-07-apply-menu.png",
+      "steps": [
+        "05-02"
+      ],
+      "references": [
+        "05-02.operationRun.events[6].figure.path"
+      ],
+      "exists": true,
+      "sha256": "2fe96ab91daf2d5cca911dfa7db51dee49c22ee2a1a02d4b70bf3c50e820b75b"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-demo-v002/05-02-08-scale-applied.png",
+      "steps": [
+        "05-02"
+      ],
+      "references": [
+        "05-02.operationRun.events[7].figure.path"
+      ],
+      "exists": true,
+      "sha256": "7391bbaeaf56773a8205f658fdeebf06349242894cbaca0b12880d02b43cf164"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-demo-v002/05-02-09-pin-checked.png",
+      "steps": [
+        "05-02"
+      ],
+      "references": [
+        "05-02.operationRun.events[8].figure.path"
+      ],
+      "exists": true,
+      "sha256": "1bd5f0870b1e9f281e248e693b9eadfbdc93ee9fc93d3e897feca2cd51e6e2ca"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-demo-v002/05-02-10-save-dialog.png",
+      "steps": [
+        "05-02"
+      ],
+      "references": [
+        "05-02.operationRun.events[9].figure.path"
+      ],
+      "exists": true,
+      "sha256": "d93c44e6f3cf08a6bd8079275b723a801efede56987c262674aa3faa3a855009"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-demo-v002/05-02-11-saved.png",
+      "steps": [
+        "05-02"
+      ],
+      "references": [
+        "05-02.operationRun.events[10].figure.path"
+      ],
+      "exists": true,
+      "sha256": "8253b0f090fcffbdca00dbc3184cddde5230f8bb3bc5913bbd09b4ebd7d22473"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-demo-v002/05-02-12-reopen-dialog.png",
+      "steps": [
+        "05-02"
+      ],
+      "references": [
+        "05-02.operationRun.events[11].figure.path"
+      ],
+      "exists": true,
+      "sha256": "c9f6702dea5c70fa8137e7b4007c5a2aa2f10b4528343507f2facd21d5f57486"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-demo-v002/05-02-13-reopened-verified.png",
+      "steps": [
+        "05-02"
+      ],
+      "references": [
+        "05-02.operationRun.events[12].figure.path"
+      ],
+      "exists": true,
+      "sha256": "80a7a51e87961d9be3d03a796ca0017ef15b31d53f79a3af5367b2e96b292f44"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-holes-view-v001/05-03-04-supplement-oblique-verified.png",
+      "steps": [
+        "05-03"
+      ],
+      "references": [
+        "05-03.figures[0].path"
+      ],
+      "exists": true,
+      "sha256": "701acc87efbd4e39f2267d6dfa4a5f8345e91fb8078a213b0a8749f7aa56ab32"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-01-new-scene.png",
+      "steps": [
+        "05-03"
+      ],
+      "references": [
+        "05-03.operationRun.events[0].figure.path"
+      ],
+      "exists": true,
+      "sha256": "bbc3fc0d8153d6b40a2755c4777b15b314e113bfe2848df371d97cc05dff7cef"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-02-units.png",
+      "steps": [
+        "05-03"
+      ],
+      "references": [
+        "05-03.operationRun.events[1].figure.path"
+      ],
+      "exists": true,
+      "sha256": "7019a1000e5c66d571e7eb8b44949d1bbe55c33446b61affc88e38e3f6afa81c"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-03-board.png",
+      "steps": [
+        "05-03"
+      ],
+      "references": [
+        "05-03.operationRun.events[2].figure.path"
+      ],
+      "exists": true,
+      "sha256": "42d749d6442e623bceddcdeae942cb4c02730ea4abee896318c378836e628399"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-04-cutter-1.png",
+      "steps": [
+        "05-03"
+      ],
+      "references": [
+        "05-03.operationRun.events[3].figure.path"
+      ],
+      "exists": true,
+      "sha256": "a3f91c05485ffeda73bf50b40067db2091cda96ca45f8b6fe2610cc0864e67ec"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-05-cutter-2.png",
+      "steps": [
+        "05-03"
+      ],
+      "references": [
+        "05-03.operationRun.events[4].figure.path"
+      ],
+      "exists": true,
+      "sha256": "b8710f95a8ed81ce359c41ada1be5d1f721904d373ccec99ec7c1f4b0993284e"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-06-cutter-3.png",
+      "steps": [
+        "05-03"
+      ],
+      "references": [
+        "05-03.operationRun.events[5].figure.path"
+      ],
+      "exists": true,
+      "sha256": "687671a796a6883b8ef8c16b039e55cde22aea4235b732261125e70d4b0ae63a"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-07-cutter-4.png",
+      "steps": [
+        "05-03"
+      ],
+      "references": [
+        "05-03.operationRun.events[6].figure.path"
+      ],
+      "exists": true,
+      "sha256": "73ef90c9a4153ff85a9fd1efc7eac37e0c5bc8f6b6dc7e934cb4a481514692e3"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-08-cutter-5.png",
+      "steps": [
+        "05-03"
+      ],
+      "references": [
+        "05-03.operationRun.events[7].figure.path"
+      ],
+      "exists": true,
+      "sha256": "1e0a1322b2241759527b5aa5adc306f90b55284cce3cd30c5401da8d4f44aee5"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-09-cutter-6.png",
+      "steps": [
+        "05-03"
+      ],
+      "references": [
+        "05-03.operationRun.events[8].figure.path"
+      ],
+      "exists": true,
+      "sha256": "11bd92615f3ffe1d521ea102aab809e4c55a52b7b8441d6a4810a4e97ca407ef"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-10-marker-base.png",
+      "steps": [
+        "05-03"
+      ],
+      "references": [
+        "05-03.operationRun.events[9].figure.path"
+      ],
+      "exists": true,
+      "sha256": "52f080793529e67f5a60886fbbd39e2c933a657a5facf4b840ddec00d9655a6d"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-11-markers-1.png",
+      "steps": [
+        "05-03"
+      ],
+      "references": [
+        "05-03.operationRun.events[10].figure.path"
+      ],
+      "exists": true,
+      "sha256": "52f080793529e67f5a60886fbbd39e2c933a657a5facf4b840ddec00d9655a6d"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-12-markers-2.png",
+      "steps": [
+        "05-03"
+      ],
+      "references": [
+        "05-03.operationRun.events[11].figure.path"
+      ],
+      "exists": true,
+      "sha256": "29569acafe436ee75f55ab9b561cd3503f39cab9c1769d46318a44db8fe3a9b9"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-13-markers-3.png",
+      "steps": [
+        "05-03"
+      ],
+      "references": [
+        "05-03.operationRun.events[12].figure.path"
+      ],
+      "exists": true,
+      "sha256": "4ca41d5baed9524e7dcfff4e0f0e435b01d39a0f39d3f0d608efec047048a04b"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-14-markers-4.png",
+      "steps": [
+        "05-03"
+      ],
+      "references": [
+        "05-03.operationRun.events[13].figure.path"
+      ],
+      "exists": true,
+      "sha256": "bd862c6526db86ac99db6e7e5a3e6ef9d5cad43aeae365d079ab01a6839fe47a"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-15-markers-5.png",
+      "steps": [
+        "05-03"
+      ],
+      "references": [
+        "05-03.operationRun.events[14].figure.path"
+      ],
+      "exists": true,
+      "sha256": "5c502d69ba60b6c214074319ff210a45e463b2255b260eb2ceb7c28d8a033737"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-16-markers-6.png",
+      "steps": [
+        "05-03"
+      ],
+      "references": [
+        "05-03.operationRun.events[15].figure.path"
+      ],
+      "exists": true,
+      "sha256": "85076eaaa57cc61347279db3f920eb0ff3d89ba44a6dc302e23d1c4579aaf9cf"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-17-cutters-joined.png",
+      "steps": [
+        "05-03"
+      ],
+      "references": [
+        "05-03.operationRun.events[16].figure.path"
+      ],
+      "exists": true,
+      "sha256": "f6d74f882fd8915f6f1aa93b17f593560adc5d038800495c8ec3819a4393bef6"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-18-boolean-empty.png",
+      "steps": [
+        "05-03"
+      ],
+      "references": [
+        "05-03.operationRun.events[17].figure.path"
+      ],
+      "exists": true,
+      "sha256": "ecbff875c5d4b9a0e430ca3d32e21c03b6af5f2d04fa5889117249b139feaf03"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-19-boolean-assigned.png",
+      "steps": [
+        "05-03"
+      ],
+      "references": [
+        "05-03.operationRun.events[18].figure.path"
+      ],
+      "exists": true,
+      "sha256": "d0bb24fc86da2b3d9b9675dcdf44b63f65086cf0189b2f75e53bf87c73824cdc"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-20-holes-preview.png",
+      "steps": [
+        "05-03"
+      ],
+      "references": [
+        "05-03.operationRun.events[19].figure.path"
+      ],
+      "exists": true,
+      "sha256": "c6292c819628b2a08ad86cd4baae8714ed8864e40f9a51d6a4dadf5a832eff09"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-21-apply-boolean-menu.png",
+      "steps": [
+        "05-03"
+      ],
+      "references": [
+        "05-03.operationRun.events[20].figure.path"
+      ],
+      "exists": true,
+      "sha256": "b7ee68f89912455d2f146b72e7b444357ce3f62084b29da39da1c8b4de67b971"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-22-applied.png",
+      "steps": [
+        "05-03"
+      ],
+      "references": [
+        "05-03.operationRun.events[21].figure.path"
+      ],
+      "exists": true,
+      "sha256": "251ebfa8e68ce120c62db2a196e8b503a9ffcb807081f9ec3eb7f772d8933a31"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-23-non-manifold.png",
+      "steps": [
+        "05-03"
+      ],
+      "references": [
+        "05-03.operationRun.events[22].figure.path"
+      ],
+      "exists": true,
+      "sha256": "254f77b796216bc85a3a9461642282b32a4c247ba9a0b9d6c0c31fd4ba99a2b0"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-24-save-dialog.png",
+      "steps": [
+        "05-03"
+      ],
+      "references": [
+        "05-03.operationRun.events[23].figure.path"
+      ],
+      "exists": true,
+      "sha256": "339315f99e83430b91391d35d88b0702c0163833da345a9fe42eca3880ee7f70"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-25-saved.png",
+      "steps": [
+        "05-03"
+      ],
+      "references": [
+        "05-03.operationRun.events[24].figure.path"
+      ],
+      "exists": true,
+      "sha256": "fbca8f4f712b57feada96bff953b81de1146f9678c656383e519fe0e3b83fb8f"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-26-mesh-measured.png",
+      "steps": [
+        "05-03"
+      ],
+      "references": [
+        "05-03.operationRun.events[25].figure.path"
+      ],
+      "exists": true,
+      "sha256": "fbca8f4f712b57feada96bff953b81de1146f9678c656383e519fe0e3b83fb8f"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-27-open-dialog.png",
+      "steps": [
+        "05-03"
+      ],
+      "references": [
+        "05-03.operationRun.events[26].figure.path"
+      ],
+      "exists": true,
+      "sha256": "4219c8d2e151e80af25cdf338ee8fcf3f0e35e54cced1943d9ad24c90216c9a6"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-28-reopened-verified.png",
+      "steps": [
+        "05-03"
+      ],
+      "references": [
+        "05-03.operationRun.events[27].figure.path"
+      ],
+      "exists": true,
+      "sha256": "c095e81a5bd43caf63f7784f6a31dca1223ccad7892a7c82113009cd59d64479"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-export-view-v001/05-04-03-pin-dimensions.png",
+      "steps": [
+        "05-04"
+      ],
+      "references": [
+        "05-04.figures[0].path"
+      ],
+      "exists": true,
+      "sha256": "2b88890684129babf1720f083d62ad14c91e344d85441c89d7760b101f73aa65"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-export-view-v001/05-04-05-hole_plate-dimensions.png",
+      "steps": [
+        "05-04"
+      ],
+      "references": [
+        "05-04.figures[1].path"
+      ],
+      "exists": true,
+      "sha256": "ce297dee772573e67f384219b48535ed532abfe925fabba959b292eeb920e49e"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-export-demo-v003/05-04-01-pin-open-dialog.png",
+      "steps": [
+        "05-04"
+      ],
+      "references": [
+        "05-04.operationRun.events[0].figure.path"
+      ],
+      "exists": true,
+      "sha256": "3a8a9e26c594ce31328d857191ad9a02f4598b44f72eadb42fdb54376862273b"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-export-demo-v003/05-04-02-pin-source-checked.png",
+      "steps": [
+        "05-04"
+      ],
+      "references": [
+        "05-04.operationRun.events[1].figure.path"
+      ],
+      "exists": true,
+      "sha256": "266df56ccb79bb1820838a6ce259a8f71fecd37fed1759cf8217f7dbac5e4587"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-export-demo-v003/05-04-03-pin-export-menu.png",
+      "steps": [
+        "05-04"
+      ],
+      "references": [
+        "05-04.operationRun.events[2].figure.path"
+      ],
+      "exists": true,
+      "sha256": "449f2cc07be4845ce96756aa76ac98265d5b7846e4ae30f7969a1fb9491bf2f1"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-export-demo-v003/05-04-04-pin-export-before.png",
+      "steps": [
+        "05-04"
+      ],
+      "references": [
+        "05-04.operationRun.events[3].figure.path"
+      ],
+      "exists": true,
+      "sha256": "b973ec94c4f70b53afb63f4eac48eb25f006b8ee5cfab2471ea85ffe45e4020e"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-export-demo-v003/05-04-05-pin-export-options.png",
+      "steps": [
+        "05-04"
+      ],
+      "references": [
+        "05-04.operationRun.events[4].figure.path"
+      ],
+      "exists": true,
+      "sha256": "316c22ebed0ae2b4865c65f15d66dce8570e445e9530efaa3af09ac23f18d5c9"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-export-demo-v003/05-04-06-pin-stl-checked.png",
+      "steps": [
+        "05-04"
+      ],
+      "references": [
+        "05-04.operationRun.events[5].figure.path"
+      ],
+      "exists": true,
+      "sha256": "ab6c2ae598a26036bb38974629197f93fe188a8a9a60609aa3b43bc9e7fd47e2"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-export-demo-v003/05-04-07-hole_plate-open-dialog.png",
+      "steps": [
+        "05-04"
+      ],
+      "references": [
+        "05-04.operationRun.events[6].figure.path"
+      ],
+      "exists": true,
+      "sha256": "8c73d1ad3532b083835c256a713e08586f40920d345b4f47363329b98c60b2cb"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-export-demo-v003/05-04-08-hole_plate-source-checked.png",
+      "steps": [
+        "05-04"
+      ],
+      "references": [
+        "05-04.operationRun.events[7].figure.path"
+      ],
+      "exists": true,
+      "sha256": "f914646b62bac8048144171719d106dd16e16357a82946a4dbee22fe3d5a2f15"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-export-demo-v003/05-04-09-hole_plate-export-menu.png",
+      "steps": [
+        "05-04"
+      ],
+      "references": [
+        "05-04.operationRun.events[8].figure.path"
+      ],
+      "exists": true,
+      "sha256": "ba2974caa1d85f469cdb2e1418e6e472b2ecbb576cf31b820613611db1a818df"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-export-demo-v003/05-04-10-hole_plate-export-before.png",
+      "steps": [
+        "05-04"
+      ],
+      "references": [
+        "05-04.operationRun.events[9].figure.path"
+      ],
+      "exists": true,
+      "sha256": "532217dd995cb982877d5459fe142657deec29a9a4d1f06376b5277907339ccd"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-export-demo-v003/05-04-11-hole_plate-export-options.png",
+      "steps": [
+        "05-04"
+      ],
+      "references": [
+        "05-04.operationRun.events[10].figure.path"
+      ],
+      "exists": true,
+      "sha256": "6d259aaad42e4b4fb7eba90e0bcc2966a186e7e9922eaf511a68d453c106fef7"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-export-demo-v003/05-04-12-hole_plate-stl-checked.png",
+      "steps": [
+        "05-04"
+      ],
+      "references": [
+        "05-04.operationRun.events[11].figure.path"
+      ],
+      "exists": true,
+      "sha256": "0f02d0924db0fe28e4230b27478820b768bb49874f7a35ba4f4c8bb00c3b9583"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-export-demo-v003/05-04-13-empty-mm-scene.png",
+      "steps": [
+        "05-04"
+      ],
+      "references": [
+        "05-04.operationRun.events[12].figure.path"
+      ],
+      "exists": true,
+      "sha256": "df2a5c2a188dd9ee9da153082857debb20fb38264747d612dd577c367cbc4056"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-export-demo-v003/05-04-14-pin-import-dialog.png",
+      "steps": [
+        "05-04"
+      ],
+      "references": [
+        "05-04.operationRun.events[13].figure.path"
+      ],
+      "exists": true,
+      "sha256": "474dad1b2a8c4388e65630003d49ad765ae3fc79c751cd3a8fa23809b5539003"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-export-demo-v003/05-04-15-pin-reimported.png",
+      "steps": [
+        "05-04"
+      ],
+      "references": [
+        "05-04.operationRun.events[14].figure.path"
+      ],
+      "exists": true,
+      "sha256": "500102cce1362e4b7d1245888a1f7c268fe9952b2e34aadb614d13e2dab53cd7"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-export-demo-v003/05-04-16-hole_plate-import-dialog.png",
+      "steps": [
+        "05-04"
+      ],
+      "references": [
+        "05-04.operationRun.events[15].figure.path"
+      ],
+      "exists": true,
+      "sha256": "36df2ac2afed4c447e8054698b966677f622ce1662e22e803140be2e559797b1"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-export-demo-v003/05-04-17-hole_plate-reimported.png",
+      "steps": [
+        "05-04"
+      ],
+      "references": [
+        "05-04.operationRun.events[16].figure.path"
+      ],
+      "exists": true,
+      "sha256": "6e0a57531b4341284eaae57cee320aa6698313f10de4e8df094359607c20a7fc"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-export-demo-v003/05-04-18-exports-verified.png",
+      "steps": [
+        "05-04"
+      ],
+      "references": [
+        "05-04.operationRun.events[17].figure.path"
+      ],
+      "exists": true,
+      "sha256": "6e0a57531b4341284eaae57cee320aa6698313f10de4e8df094359607c20a7fc"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-lid-demo-v001/05-05-09-underside-checked.png",
+      "steps": [
+        "05-05"
+      ],
+      "references": [
+        "05-05.figures[0].path",
+        "05-05.operationRun.events[8].figure.path"
+      ],
+      "exists": true,
+      "sha256": "c97b0253251f190a6f1e4541d7ea809a0b2bcfc2acd7485bec602d3e7065afde"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-lid-demo-v001/05-05-11-separated-view.png",
+      "steps": [
+        "05-05"
+      ],
+      "references": [
+        "05-05.figures[1].path",
+        "05-05.operationRun.events[10].figure.path"
+      ],
+      "exists": true,
+      "sha256": "bc12d5f81fd5424cef7dd64c295941c8a31de430a45818782e249f8b1d2fec64"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-lid-demo-v001/05-05-01-source-open-dialog.png",
+      "steps": [
+        "05-05"
+      ],
+      "references": [
+        "05-05.operationRun.events[0].figure.path"
+      ],
+      "exists": true,
+      "sha256": "6412d82176b09f0f2b9b64c1fd32e01f2630d220af8c338bb0ae968974122164"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-lid-demo-v001/05-05-02-source-body-checked.png",
+      "steps": [
+        "05-05"
+      ],
+      "references": [
+        "05-05.operationRun.events[1].figure.path"
+      ],
+      "exists": true,
+      "sha256": "b04ade7f0a4f5ec5056fb76406b887b04e6f1e9527198d8281ffeb30e1d0e49d"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-lid-demo-v001/05-05-03-plate.png",
+      "steps": [
+        "05-05"
+      ],
+      "references": [
+        "05-05.operationRun.events[2].figure.path"
+      ],
+      "exists": true,
+      "sha256": "dd45e229322354b15550532c8419a7f227771dadf3648d0ab7cd0eb9977bbfe4"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-lid-demo-v001/05-05-04-bottom-face.png",
+      "steps": [
+        "05-05"
+      ],
+      "references": [
+        "05-05.operationRun.events[3].figure.path"
+      ],
+      "exists": true,
+      "sha256": "55405abaab833828e5e92b3413ba295a794ab0017fe037014fd96aa9085917b9"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-lid-demo-v001/05-05-05-lip-footprint.png",
+      "steps": [
+        "05-05"
+      ],
+      "references": [
+        "05-05.operationRun.events[4].figure.path"
+      ],
+      "exists": true,
+      "sha256": "89dc9643323bd2c380bf99f4617c9578d1f3f46a6f567de1897b47efedfb3cf1"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-lid-demo-v001/05-05-06-lip-depth.png",
+      "steps": [
+        "05-05"
+      ],
+      "references": [
+        "05-05.operationRun.events[5].figure.path"
+      ],
+      "exists": true,
+      "sha256": "b3dde299af17e7f358b1a32bc5dfb4f23e27692d4d64606751a61c1f63dccbb2"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-lid-demo-v001/05-05-07-lip-wall.png",
+      "steps": [
+        "05-05"
+      ],
+      "references": [
+        "05-05.operationRun.events[6].figure.path"
+      ],
+      "exists": true,
+      "sha256": "5cb9140762f03cb42d0bfbe6b2e63767c466108f3f228effa5c1f6e3939bf2f3"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-lid-demo-v001/05-05-08-lip-recess.png",
+      "steps": [
+        "05-05"
+      ],
+      "references": [
+        "05-05.operationRun.events[7].figure.path"
+      ],
+      "exists": true,
+      "sha256": "56a321ea7661ab3448514ec5a1e105f425bc58fe53712e6b44dfb1de8844da17"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-lid-demo-v001/05-05-10-non-manifold.png",
+      "steps": [
+        "05-05"
+      ],
+      "references": [
+        "05-05.operationRun.events[9].figure.path"
+      ],
+      "exists": true,
+      "sha256": "0d53d105324470377605bcafff0eadd6f2eaa167449f42893b78bcf7d3dd13bb"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-lid-demo-v001/05-05-12-assembly-geometry.png",
+      "steps": [
+        "05-05"
+      ],
+      "references": [
+        "05-05.operationRun.events[11].figure.path"
+      ],
+      "exists": true,
+      "sha256": "4f78e74781b109429121a871f06bcfba472321716c018e1a28ffa125e172a1d8"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-lid-demo-v001/05-05-13-save-dialog.png",
+      "steps": [
+        "05-05"
+      ],
+      "references": [
+        "05-05.operationRun.events[12].figure.path"
+      ],
+      "exists": true,
+      "sha256": "f910fe42fc57c7ead11f90a105c055fd6d8655c183744c84b6c69e77d4c7d509"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-lid-demo-v001/05-05-14-saved.png",
+      "steps": [
+        "05-05"
+      ],
+      "references": [
+        "05-05.operationRun.events[13].figure.path"
+      ],
+      "exists": true,
+      "sha256": "89d0a195cd591adf034f0756b16805101ee4fec1dd3d55b0b1b4a12e41df607a"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-lid-demo-v001/05-05-15-open-saved.png",
+      "steps": [
+        "05-05"
+      ],
+      "references": [
+        "05-05.operationRun.events[14].figure.path"
+      ],
+      "exists": true,
+      "sha256": "4de364f2af466552066c5bae79e8e771645da57f0362a93d01768ae0eb1b74be"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-lid-demo-v001/05-05-16-reopened-verified.png",
+      "steps": [
+        "05-05"
+      ],
+      "references": [
+        "05-05.operationRun.events[15].figure.path"
+      ],
+      "exists": true,
+      "sha256": "5dd4f07399cc16e3f2487093f2db9c6e507c771b2c9f9c7910589b465bebed0f"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/05-06-10-reimport-underside.png",
+      "steps": [
+        "05-06"
+      ],
+      "references": [
+        "05-06.figures[0].path",
+        "05-06.operationRun.events[9].figure.path"
+      ],
+      "exists": true,
+      "sha256": "c31773df47bd9714268cf1a9715c419d09c163e8f1a903091bb8251f953e48d8"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/05-06-01-source-open-dialog.png",
+      "steps": [
+        "05-06"
+      ],
+      "references": [
+        "05-06.operationRun.events[0].figure.path"
+      ],
+      "exists": true,
+      "sha256": "4dcdab53fd8067df340d0617778190df161f4ee433449ede255408e2e6e0b5ef"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/05-06-02-lid-selected.png",
+      "steps": [
+        "05-06"
+      ],
+      "references": [
+        "05-06.operationRun.events[1].figure.path"
+      ],
+      "exists": true,
+      "sha256": "209c403efbec2304e93ec626b3ec0a9ff37f9a4ef080cfcaa78e11605bda2092"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/05-06-03-export-menu.png",
+      "steps": [
+        "05-06"
+      ],
+      "references": [
+        "05-06.operationRun.events[2].figure.path"
+      ],
+      "exists": true,
+      "sha256": "bbdd40b730bd3881bdcf1cc615bfddfb501b4b65c1e0b8d9e80ed36189218b01"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/05-06-04-export-before.png",
+      "steps": [
+        "05-06"
+      ],
+      "references": [
+        "05-06.operationRun.events[3].figure.path"
+      ],
+      "exists": true,
+      "sha256": "0d58621434de1798f1634faff6ef099811906db5123d9b226256e6a2e812864c"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/05-06-05-export-options.png",
+      "steps": [
+        "05-06"
+      ],
+      "references": [
+        "05-06.operationRun.events[4].figure.path"
+      ],
+      "exists": true,
+      "sha256": "2ba670fbc9592b460fb36d1ca2b9f66d41ff4468bfed130802b076b93ba63c8e"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/05-06-06-stl-checked.png",
+      "steps": [
+        "05-06"
+      ],
+      "references": [
+        "05-06.operationRun.events[5].figure.path"
+      ],
+      "exists": true,
+      "sha256": "6a1fc291fed85dc0c59e4efd82367235e20cd38f534d11d1359ff2f40cb64596"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/05-06-07-empty-mm-scene.png",
+      "steps": [
+        "05-06"
+      ],
+      "references": [
+        "05-06.operationRun.events[6].figure.path"
+      ],
+      "exists": true,
+      "sha256": "4adc8aebf5e4a772bee8fce4eb6b599831c2910744002fc3fb9242704c87f51c"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/05-06-08-import-dialog.png",
+      "steps": [
+        "05-06"
+      ],
+      "references": [
+        "05-06.operationRun.events[7].figure.path"
+      ],
+      "exists": true,
+      "sha256": "449c2a87c98e26c5b91dcdddee7d558287a42bde44a4b6fdcb1ce77032d73c77"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/05-06-09-reimport-dimensions.png",
+      "steps": [
+        "05-06"
+      ],
+      "references": [
+        "05-06.operationRun.events[8].figure.path"
+      ],
+      "exists": true,
+      "sha256": "ff7b6d72058f2e973be1cc6fa3d462e6f2fdbd3a64585f1116d13cb5c8ba8a84"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/05-06-11-non-manifold.png",
+      "steps": [
+        "05-06"
+      ],
+      "references": [
+        "05-06.operationRun.events[10].figure.path"
+      ],
+      "exists": true,
+      "sha256": "af4a7e9ad7339da7e7c301f32d80e21004f3162cd03bcff73a8807584ac1214d"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/05-06-12-verified.png",
+      "steps": [
+        "05-06"
+      ],
+      "references": [
+        "05-06.operationRun.events[11].figure.path"
+      ],
+      "exists": true,
+      "sha256": "c31773df47bd9714268cf1a9715c419d09c163e8f1a903091bb8251f953e48d8"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-06-union-applied.png",
+      "steps": [
+        "06-01"
+      ],
+      "references": [
+        "06-01.figures[0].path",
+        "06-01.operationRun.events[5].figure.path"
+      ],
+      "exists": true,
+      "sha256": "cb3cf4356056079dc33059d598cd84463c6137093c25cec14ffa3ef8add298dc"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-12-hole-applied.png",
+      "steps": [
+        "06-01"
+      ],
+      "references": [
+        "06-01.figures[1].path",
+        "06-01.operationRun.events[11].figure.path"
+      ],
+      "exists": true,
+      "sha256": "2183fd50002e03ffa24f26eee08389f970c3a0eabace8ac2f05cfede00c46c8b"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-01-source-open-dialog.png",
+      "steps": [
+        "06-01"
+      ],
+      "references": [
+        "06-01.operationRun.events[0].figure.path"
+      ],
+      "exists": true,
+      "sha256": "7d488437f09e61da0f3e7c9a3f5683c95ed5b2cd944341b82d55dcd78c41948d"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-02-source-geometry.png",
+      "steps": [
+        "06-01"
+      ],
+      "references": [
+        "06-01.operationRun.events[1].figure.path"
+      ],
+      "exists": true,
+      "sha256": "72c84c2c8c9169f69e2095eba51abe81efb608686ef02aac1d1a8be104ca42f0"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-03-pin-tool.png",
+      "steps": [
+        "06-01"
+      ],
+      "references": [
+        "06-01.operationRun.events[2].figure.path"
+      ],
+      "exists": true,
+      "sha256": "489aacf7e93ea671b4f96b71d4882f13ffb978a4eebdcba42c4d7fa62b827093"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-04-union-operation.png",
+      "steps": [
+        "06-01"
+      ],
+      "references": [
+        "06-01.operationRun.events[3].figure.path"
+      ],
+      "exists": true,
+      "sha256": "337c93ddb306603ad421580bf60d990c1d789da30a9f2b8832b0c87f5b9239eb"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-05-union-assigned.png",
+      "steps": [
+        "06-01"
+      ],
+      "references": [
+        "06-01.operationRun.events[4].figure.path"
+      ],
+      "exists": true,
+      "sha256": "aa5753fc9837565f32941f3ed5ba86d0c3eb3dbd2d71913805be63b699922b5b"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-07-body-non-manifold.png",
+      "steps": [
+        "06-01"
+      ],
+      "references": [
+        "06-01.operationRun.events[6].figure.path"
+      ],
+      "exists": true,
+      "sha256": "43772664e87cf91bd047764c7a1738dc27ff9f4e1e4c82b5891589db2b358222"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-08-hole-tool.png",
+      "steps": [
+        "06-01"
+      ],
+      "references": [
+        "06-01.operationRun.events[7].figure.path"
+      ],
+      "exists": true,
+      "sha256": "6c3b1240f351df44b8c6545559405e4d3f9a5e7786c2bdf33b99113368b3f570"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-09-hole-boolean-empty.png",
+      "steps": [
+        "06-01"
+      ],
+      "references": [
+        "06-01.operationRun.events[8].figure.path"
+      ],
+      "exists": true,
+      "sha256": "84bedd32c38b8fb73ab8a89fbd71c166010d64109a0beca5fe1496fccb1020a1"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-10-hole-object-search.png",
+      "steps": [
+        "06-01"
+      ],
+      "references": [
+        "06-01.operationRun.events[9].figure.path"
+      ],
+      "exists": true,
+      "sha256": "00847585c0edf5864b6951154cbf07c237ec876f31bf38ee20d349c6a525d3f8"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-11-hole-difference.png",
+      "steps": [
+        "06-01"
+      ],
+      "references": [
+        "06-01.operationRun.events[10].figure.path"
+      ],
+      "exists": true,
+      "sha256": "9569d52467d2d3e4da729872f1e2603df0e2677e2f2d55a4ef0704fc7e70e582"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-13-lid-non-manifold.png",
+      "steps": [
+        "06-01"
+      ],
+      "references": [
+        "06-01.operationRun.events[12].figure.path"
+      ],
+      "exists": true,
+      "sha256": "d34c0880aa1f1ec9ca6e91c969e460a249f8ebe416d590b84c33aa320c084dc7"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-14-lid-underside.png",
+      "steps": [
+        "06-01"
+      ],
+      "references": [
+        "06-01.operationRun.events[13].figure.path"
+      ],
+      "exists": true,
+      "sha256": "2d1931fecd2342a85faa70cdaa12ac6ab5210f7bf5d23fad51eb2f6c8ee7bb09"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-15-separated-view.png",
+      "steps": [
+        "06-01"
+      ],
+      "references": [
+        "06-01.operationRun.events[14].figure.path"
+      ],
+      "exists": true,
+      "sha256": "05d8b109c613f6902c6a67d6a0be042448ee9516d71229b95647311fce5926b6"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-16-assembly-geometry.png",
+      "steps": [
+        "06-01"
+      ],
+      "references": [
+        "06-01.operationRun.events[15].figure.path"
+      ],
+      "exists": true,
+      "sha256": "a01cae28fb6a90012c0d64889f99e40e5cecd6a307033a2336da30bf65385fb4"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-17-save-dialog.png",
+      "steps": [
+        "06-01"
+      ],
+      "references": [
+        "06-01.operationRun.events[16].figure.path"
+      ],
+      "exists": true,
+      "sha256": "d0e6c3b175be31596322aa305cabc7b44499d2bce8cce4feeee3a2c611a3998e"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-18-saved.png",
+      "steps": [
+        "06-01"
+      ],
+      "references": [
+        "06-01.operationRun.events[17].figure.path"
+      ],
+      "exists": true,
+      "sha256": "6da3ef485a2680a2b3fc97f3c28837f37b57568145455cb064ddff7198a752e3"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-19-open-saved.png",
+      "steps": [
+        "06-01"
+      ],
+      "references": [
+        "06-01.operationRun.events[18].figure.path"
+      ],
+      "exists": true,
+      "sha256": "f86c450cc8192dab3d0a6d317d9bbe2071cc81477076c9de8772b939075b64f9"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-20-reopened-verified.png",
+      "steps": [
+        "06-01"
+      ],
+      "references": [
+        "06-01.operationRun.events[19].figure.path"
+      ],
+      "exists": true,
+      "sha256": "81115ee7e905909ca2a8996baec3f0299b667aae9ee8bbdadb2ce736fec4f7f2"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-18-slide-x30.png",
+      "steps": [
+        "06-02"
+      ],
+      "references": [
+        "06-02.figures[0].path",
+        "06-02.operationRun.events[17].figure.path"
+      ],
+      "exists": true,
+      "sha256": "bdb153cb11647b779e878b08a0439c8053e6b5ac50e9a53ad9ee98e0951bd028"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-09-body-end-profile.png",
+      "steps": [
+        "06-02"
+      ],
+      "references": [
+        "06-02.figures[1].path",
+        "06-02.operationRun.events[8].figure.path"
+      ],
+      "exists": true,
+      "sha256": "75f83513063b274cbc10fbea3761154118f574a7c75823ef87089e47863b2afd"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-15-lid-end-profile.png",
+      "steps": [
+        "06-02"
+      ],
+      "references": [
+        "06-02.figures[2].path",
+        "06-02.operationRun.events[14].figure.path"
+      ],
+      "exists": true,
+      "sha256": "7d6f39f90b987a1b6d2dc1444ce9d5d7bee1c13fd286aeba973f00e148867d63"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-01-source-open-dialog.png",
+      "steps": [
+        "06-02"
+      ],
+      "references": [
+        "06-02.operationRun.events[0].figure.path"
+      ],
+      "exists": true,
+      "sha256": "a7d4e02fbdccfc1490fbde3565114960f21eb2259f46fec3ee6b08927ef9205d"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-02-source-geometry.png",
+      "steps": [
+        "06-02"
+      ],
+      "references": [
+        "06-02.operationRun.events[1].figure.path"
+      ],
+      "exists": true,
+      "sha256": "269975dc4137eabae1d2685ddd01dd787ed724aaaf8e63af50b4cae8ba2a4d3c"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-03-guide-blocks.png",
+      "steps": [
+        "06-02"
+      ],
+      "references": [
+        "06-02.operationRun.events[2].figure.path"
+      ],
+      "exists": true,
+      "sha256": "0a2fe628ad11e6b0ebd89a88a399dc7563eb2ed2cc102e4ed85ee0673dc5d3c0"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-04-guide-union.png",
+      "steps": [
+        "06-02"
+      ],
+      "references": [
+        "06-02.operationRun.events[3].figure.path"
+      ],
+      "exists": true,
+      "sha256": "b1bcc1c5a15a82effaa45275052a670b6d095e8e50abf2b29ea6350257438965"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-05-guides-applied.png",
+      "steps": [
+        "06-02"
+      ],
+      "references": [
+        "06-02.operationRun.events[4].figure.path"
+      ],
+      "exists": true,
+      "sha256": "026367974362bd7bca5bc6c69f4273ef5dfa0ae8e632a9c66d39085e5d567e79"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-06-groove-tools.png",
+      "steps": [
+        "06-02"
+      ],
+      "references": [
+        "06-02.operationRun.events[5].figure.path"
+      ],
+      "exists": true,
+      "sha256": "1116896ca9d646839c8dbee7279f08d42e353ffcbdb17e4d26922cee6434c3a8"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-07-groove-difference.png",
+      "steps": [
+        "06-02"
+      ],
+      "references": [
+        "06-02.operationRun.events[6].figure.path"
+      ],
+      "exists": true,
+      "sha256": "e832535badf710d8120deacd39047c3466c39e1c96327add42c0f7a88aeb8d69"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-08-body-grooves.png",
+      "steps": [
+        "06-02"
+      ],
+      "references": [
+        "06-02.operationRun.events[7].figure.path"
+      ],
+      "exists": true,
+      "sha256": "a7f9a013a829ccfb55037488e188dc7fca264a855fde2ed258f15f8efbc48b37"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-10-body-non-manifold.png",
+      "steps": [
+        "06-02"
+      ],
+      "references": [
+        "06-02.operationRun.events[9].figure.path"
+      ],
+      "exists": true,
+      "sha256": "72bc86d2fcd77b1d03ab734e7d2c143566174d7d6557641852b85a9cfaea152e"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-11-lid-plate.png",
+      "steps": [
+        "06-02"
+      ],
+      "references": [
+        "06-02.operationRun.events[10].figure.path"
+      ],
+      "exists": true,
+      "sha256": "22cd7d1b9dc4f3cd0ef8b28b5fcab08047085787754d310dc14b2fa7970c61a9"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-12-male-ribs.png",
+      "steps": [
+        "06-02"
+      ],
+      "references": [
+        "06-02.operationRun.events[11].figure.path"
+      ],
+      "exists": true,
+      "sha256": "68f9b3508492b2a9e82840c80e1fb5565f2118db11f25abf5d30e69465629401"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-13-lid-union.png",
+      "steps": [
+        "06-02"
+      ],
+      "references": [
+        "06-02.operationRun.events[12].figure.path"
+      ],
+      "exists": true,
+      "sha256": "b3f4c8bec99c35b4609c64922bcdcc4f7f525f8fd454bdf4542ece1fac1768a5"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-14-lid-underside.png",
+      "steps": [
+        "06-02"
+      ],
+      "references": [
+        "06-02.operationRun.events[13].figure.path"
+      ],
+      "exists": true,
+      "sha256": "a524c1369371e2c3134cd56ba7e3ff1caa66c04904c243b7924c0c4d3f304b4b"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-16-lid-non-manifold.png",
+      "steps": [
+        "06-02"
+      ],
+      "references": [
+        "06-02.operationRun.events[15].figure.path"
+      ],
+      "exists": true,
+      "sha256": "357690116eb54d80516c45782d0a0c77466cf13809529fe053572b614bc7c3e3"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-17-assembly-geometry.png",
+      "steps": [
+        "06-02"
+      ],
+      "references": [
+        "06-02.operationRun.events[16].figure.path"
+      ],
+      "exists": true,
+      "sha256": "e149c3589f991976fb26335cf0c638446d22f5cc9ee202eb9636ed5fc83218cd"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-19-slide-x62.png",
+      "steps": [
+        "06-02"
+      ],
+      "references": [
+        "06-02.operationRun.events[18].figure.path"
+      ],
+      "exists": true,
+      "sha256": "769aee9d85db7ed5078039ce857648149a5f362c9387f5c35d3453587093a934"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-20-slide-return.png",
+      "steps": [
+        "06-02"
+      ],
+      "references": [
+        "06-02.operationRun.events[19].figure.path"
+      ],
+      "exists": true,
+      "sha256": "269741e536fef83555f23de0623cd2eee6db6962f3edebb45ef58ae197119f8d"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-21-save-dialog.png",
+      "steps": [
+        "06-02"
+      ],
+      "references": [
+        "06-02.operationRun.events[20].figure.path"
+      ],
+      "exists": true,
+      "sha256": "a3ec08435b7d46c6d85958ee12144b230e65dda461dbbce5072cb34ae41bb896"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-22-saved.png",
+      "steps": [
+        "06-02"
+      ],
+      "references": [
+        "06-02.operationRun.events[21].figure.path"
+      ],
+      "exists": true,
+      "sha256": "73e7775b088aab229f869d5ffc40e41648e8f24355ea5b74402d7bf9fae8fd81"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-23-open-saved.png",
+      "steps": [
+        "06-02"
+      ],
+      "references": [
+        "06-02.operationRun.events[22].figure.path"
+      ],
+      "exists": true,
+      "sha256": "1103c886a437094da8f53ef3209839cd594de1b63e6f0b26fc767411d6b4c598"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-24-reopened-verified.png",
+      "steps": [
+        "06-02"
+      ],
+      "references": [
+        "06-02.operationRun.events[23].figure.path"
+      ],
+      "exists": true,
+      "sha256": "fa52e7159268dc72d0a481026c2cb6f2831558e3356e2cb2ef1d71524f22a9aa"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-17-body-reimport-dimensions.png",
+      "steps": [
+        "06-03"
+      ],
+      "references": [
+        "06-03.figures[0].path",
+        "06-03.operationRun.events[16].figure.path"
+      ],
+      "exists": true,
+      "sha256": "594e402e24bc477199fb729a2ae876e6699a4ac7aad224df23e7d55f9b51f301"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-21-lid-reimport-dimensions.png",
+      "steps": [
+        "06-03"
+      ],
+      "references": [
+        "06-03.figures[1].path",
+        "06-03.operationRun.events[20].figure.path"
+      ],
+      "exists": true,
+      "sha256": "2f347072775f85671a78161395323f414fb658609ae9ad6c068c9c2916a1ba00"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-01-body-source-dialog.png",
+      "steps": [
+        "06-03"
+      ],
+      "references": [
+        "06-03.operationRun.events[0].figure.path"
+      ],
+      "exists": true,
+      "sha256": "3dbebc080f14c07b0002cc0675b1a613cd6dc191f0819121497242276491c6e5"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-02-body-source-selected.png",
+      "steps": [
+        "06-03"
+      ],
+      "references": [
+        "06-03.operationRun.events[1].figure.path"
+      ],
+      "exists": true,
+      "sha256": "184531942aaeab3053aa699b601c47b76022acb12d64a4a76d65a5d6a4b47b11"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-03-body-source-end-profile.png",
+      "steps": [
+        "06-03"
+      ],
+      "references": [
+        "06-03.operationRun.events[2].figure.path"
+      ],
+      "exists": true,
+      "sha256": "cfc66623c49b3ff4cb9d8e64fc197e4c915d5802a034c8cb0aa1a4554853b41f"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-04-body-export-menu.png",
+      "steps": [
+        "06-03"
+      ],
+      "references": [
+        "06-03.operationRun.events[3].figure.path"
+      ],
+      "exists": true,
+      "sha256": "27c194628ce551749e797fda7a53c99efbeae7261d0e21b12239b8329b08387f"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-05-body-export-before.png",
+      "steps": [
+        "06-03"
+      ],
+      "references": [
+        "06-03.operationRun.events[4].figure.path"
+      ],
+      "exists": true,
+      "sha256": "fe4a9a6b46caae6927a5a4b7bb013780c953d3043ba02044012cdc225f2545e0"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-06-body-export-options.png",
+      "steps": [
+        "06-03"
+      ],
+      "references": [
+        "06-03.operationRun.events[5].figure.path"
+      ],
+      "exists": true,
+      "sha256": "6a2a89f809465e8117320d19b53ef0720de5a10516cd39306a892d79ff6019e0"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-07-body-stl-checked.png",
+      "steps": [
+        "06-03"
+      ],
+      "references": [
+        "06-03.operationRun.events[6].figure.path"
+      ],
+      "exists": true,
+      "sha256": "d92cb4111712d18dac776f64071263e22bd68517518bec08617ed92075d7a691"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-08-lid-source-dialog.png",
+      "steps": [
+        "06-03"
+      ],
+      "references": [
+        "06-03.operationRun.events[7].figure.path"
+      ],
+      "exists": true,
+      "sha256": "cce66068bc1ddef545aad82c2aa98ccbc7d6bd8e9d20d08261ae03087815db44"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-09-lid-source-selected.png",
+      "steps": [
+        "06-03"
+      ],
+      "references": [
+        "06-03.operationRun.events[8].figure.path"
+      ],
+      "exists": true,
+      "sha256": "a524c1369371e2c3134cd56ba7e3ff1caa66c04904c243b7924c0c4d3f304b4b"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-10-lid-source-end-profile.png",
+      "steps": [
+        "06-03"
+      ],
+      "references": [
+        "06-03.operationRun.events[9].figure.path"
+      ],
+      "exists": true,
+      "sha256": "7d6f39f90b987a1b6d2dc1444ce9d5d7bee1c13fd286aeba973f00e148867d63"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-11-lid-export-menu.png",
+      "steps": [
+        "06-03"
+      ],
+      "references": [
+        "06-03.operationRun.events[10].figure.path"
+      ],
+      "exists": true,
+      "sha256": "d7970ec4edea272c017646c01c43ae27a86649096b67105db08f98c4834bc116"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-12-lid-export-before.png",
+      "steps": [
+        "06-03"
+      ],
+      "references": [
+        "06-03.operationRun.events[11].figure.path"
+      ],
+      "exists": true,
+      "sha256": "af58f6dc9a41f6a808e35c0f2fb0ab9185c87b6c53b2e391b54c0492125fa3eb"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-13-lid-export-options.png",
+      "steps": [
+        "06-03"
+      ],
+      "references": [
+        "06-03.operationRun.events[12].figure.path"
+      ],
+      "exists": true,
+      "sha256": "6cfd473cb51411f616ef230f4e3d7ed8690b4f988f130172d36fd50c900d7012"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-14-lid-stl-checked.png",
+      "steps": [
+        "06-03"
+      ],
+      "references": [
+        "06-03.operationRun.events[13].figure.path"
+      ],
+      "exists": true,
+      "sha256": "1669aa6cfef8ac374b17192a33f29fc4d90ffa4f0025da9928d20a2eda307082"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-15-empty-mm-scene.png",
+      "steps": [
+        "06-03"
+      ],
+      "references": [
+        "06-03.operationRun.events[14].figure.path"
+      ],
+      "exists": true,
+      "sha256": "4adc8aebf5e4a772bee8fce4eb6b599831c2910744002fc3fb9242704c87f51c"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-16-body-import-dialog.png",
+      "steps": [
+        "06-03"
+      ],
+      "references": [
+        "06-03.operationRun.events[15].figure.path"
+      ],
+      "exists": true,
+      "sha256": "790a2cf010ff9a9dacde6654094a4a63e631bd4ee20d6b6927fff4182c7de801"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-18-body-reimport-end-profile.png",
+      "steps": [
+        "06-03"
+      ],
+      "references": [
+        "06-03.operationRun.events[17].figure.path"
+      ],
+      "exists": true,
+      "sha256": "034425a0b365e02228ff8cc4426646d993df2de47878956761499c07891fc32e"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-19-body-reimport-non-manifold.png",
+      "steps": [
+        "06-03"
+      ],
+      "references": [
+        "06-03.operationRun.events[18].figure.path"
+      ],
+      "exists": true,
+      "sha256": "c9d06521f4e159aa0ce1b1baff330e086f86f8c1e60d577ffc724bd7ae8c5fc6"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-20-lid-import-dialog.png",
+      "steps": [
+        "06-03"
+      ],
+      "references": [
+        "06-03.operationRun.events[19].figure.path"
+      ],
+      "exists": true,
+      "sha256": "69d20151d91ba189cc6c66c403049755480dba5451fb6e83fd7e9b76d9608572"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-22-lid-reimport-end-profile.png",
+      "steps": [
+        "06-03"
+      ],
+      "references": [
+        "06-03.operationRun.events[21].figure.path"
+      ],
+      "exists": true,
+      "sha256": "8ddcb494177d83488c78dae42bd9de3259d2d553aeecbc5e0869184a3ae24aec"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-23-lid-reimport-non-manifold.png",
+      "steps": [
+        "06-03"
+      ],
+      "references": [
+        "06-03.operationRun.events[22].figure.path"
+      ],
+      "exists": true,
+      "sha256": "95fdeb182b7b31ba35e33e2b674c1f9315258d3afa37a483208e98d0bb224bb9"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-24-reimport-assembly.png",
+      "steps": [
+        "06-03"
+      ],
+      "references": [
+        "06-03.operationRun.events[23].figure.path"
+      ],
+      "exists": true,
+      "sha256": "2bfb82486554b39de0d602488af7840f14e5dadbb3e3237e0fd86c30a2a4577c"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-25-exports-verified.png",
+      "steps": [
+        "06-03"
+      ],
+      "references": [
+        "06-03.operationRun.events[24].figure.path"
+      ],
+      "exists": true,
+      "sha256": "2bfb82486554b39de0d602488af7840f14e5dadbb3e3237e0fd86c30a2a4577c"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/07-01-12-reopened-verified.png",
+      "steps": [
+        "07-01"
+      ],
+      "references": [
+        "07-01.figures[0].path",
+        "07-01.operationRun.events[11].figure.path"
+      ],
+      "exists": true,
+      "sha256": "05ccab2799c6d1965c1878130815b63d2bbff9cd4b87417c2d63458e52bc3472"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/07-01-01-source-open-dialog.png",
+      "steps": [
+        "07-01"
+      ],
+      "references": [
+        "07-01.operationRun.events[0].figure.path"
+      ],
+      "exists": true,
+      "sha256": "152936b79968f14cd0dfe945027ff1f7f83de5e79380e3f40a456c7685054a36"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/07-01-02-source-checked.png",
+      "steps": [
+        "07-01"
+      ],
+      "references": [
+        "07-01.operationRun.events[1].figure.path"
+      ],
+      "exists": true,
+      "sha256": "553d16ae73d6789e63151c705c2c9231cee91ba7a5712084489555ef213e1e64"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/07-01-03-reference-top.png",
+      "steps": [
+        "07-01"
+      ],
+      "references": [
+        "07-01.operationRun.events[2].figure.path"
+      ],
+      "exists": true,
+      "sha256": "4da568b6e1c627bed94f9597e4352d866a5761a755f540b838f0e58660e3f8d2"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/07-01-04-rim-face.png",
+      "steps": [
+        "07-01"
+      ],
+      "references": [
+        "07-01.operationRun.events[3].figure.path"
+      ],
+      "exists": true,
+      "sha256": "71f4e90f4ad1e2416be0df61bdb68eda91775f1eda878c732023f62cbaaf3cda"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/07-01-05-inner-floor.png",
+      "steps": [
+        "07-01"
+      ],
+      "references": [
+        "07-01.operationRun.events[4].figure.path"
+      ],
+      "exists": true,
+      "sha256": "a78e713c12c3af31a8e6d3d717bea1a8ca99891e3524c6991459654c174d8e6d"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/07-01-06-outer-floor.png",
+      "steps": [
+        "07-01"
+      ],
+      "references": [
+        "07-01.operationRun.events[5].figure.path"
+      ],
+      "exists": true,
+      "sha256": "6c583bd5aec0207b5c2c8c51ba50343bfa65b2ee6cea6c713ed21f5e5a983e52"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/07-01-07-non-manifold.png",
+      "steps": [
+        "07-01"
+      ],
+      "references": [
+        "07-01.operationRun.events[6].figure.path"
+      ],
+      "exists": true,
+      "sha256": "cced4f7a89cbf44e9fe75a8cdfeefd24d06b7adff7c8407a09ed1132ea9b4962"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/07-01-08-reference-overview.png",
+      "steps": [
+        "07-01"
+      ],
+      "references": [
+        "07-01.operationRun.events[7].figure.path"
+      ],
+      "exists": true,
+      "sha256": "76bd22f0091976802281b444aa8703b9cd939a107c4a70d4074a0d137816a576"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/07-01-09-save-dialog.png",
+      "steps": [
+        "07-01"
+      ],
+      "references": [
+        "07-01.operationRun.events[8].figure.path"
+      ],
+      "exists": true,
+      "sha256": "77eea2adedd435def8c20c832f8bb194a6c2e53e20d0a7165ce1d418c9968069"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/07-01-10-saved.png",
+      "steps": [
+        "07-01"
+      ],
+      "references": [
+        "07-01.operationRun.events[9].figure.path"
+      ],
+      "exists": true,
+      "sha256": "5158e8e781a71aa2ad82690c178ce18b75e4a19494d851824073d5f4c6d3655f"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/07-01-11-open-saved.png",
+      "steps": [
+        "07-01"
+      ],
+      "references": [
+        "07-01.operationRun.events[10].figure.path"
+      ],
+      "exists": true,
+      "sha256": "67e5701b0471e71e1424c035831cc4a9d0757e451474f3ca55a0f14533e940ae"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-21-lid-raised.png",
+      "steps": [
+        "07-02"
+      ],
+      "references": [
+        "07-02.figures[0].path",
+        "07-02.operationRun.events[20].figure.path"
+      ],
+      "exists": true,
+      "sha256": "5da0a1365b79f87138ddc12bdf5c249f9dfa0407f2935893ccd3dedcc2a4f2d2"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-19-lid-applied.png",
+      "steps": [
+        "07-02"
+      ],
+      "references": [
+        "07-02.figures[1].path",
+        "07-02.operationRun.events[18].figure.path"
+      ],
+      "exists": true,
+      "sha256": "6675dba6fd84226747e36d5fa56dba5719d35239ba6df889f04193e79f2dc0a6"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-01-source-open-dialog.png",
+      "steps": [
+        "07-02"
+      ],
+      "references": [
+        "07-02.operationRun.events[0].figure.path"
+      ],
+      "exists": true,
+      "sha256": "1f7f2ca254807157eb5c4c7d73240a8941f8175254beb9ca57540ac838563ee4"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-02-source-geometry.png",
+      "steps": [
+        "07-02"
+      ],
+      "references": [
+        "07-02.operationRun.events[1].figure.path"
+      ],
+      "exists": true,
+      "sha256": "eb1b309daf2eb94b631e60f65c6b55643e90d8bc0d01080c24416f90a9b242c9"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-03-anchor-top.png",
+      "steps": [
+        "07-02"
+      ],
+      "references": [
+        "07-02.operationRun.events[2].figure.path"
+      ],
+      "exists": true,
+      "sha256": "f9a79c854125df1b976b4ec9795d38402463e0a6915ff42ce2c435b61e523c45"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-04-beam-inset.png",
+      "steps": [
+        "07-02"
+      ],
+      "references": [
+        "07-02.operationRun.events[3].figure.path"
+      ],
+      "exists": true,
+      "sha256": "a5d7b5fedbdc7fba842bf9b1048159ecf781a02c1858d3cfd4549aab24e21323"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-05-beam-extruded.png",
+      "steps": [
+        "07-02"
+      ],
+      "references": [
+        "07-02.operationRun.events[4].figure.path"
+      ],
+      "exists": true,
+      "sha256": "b5c5733263019f34bf999fd9b254d397986b82af251d7015bb065180fab78c6e"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-06-hook-extruded.png",
+      "steps": [
+        "07-02"
+      ],
+      "references": [
+        "07-02.operationRun.events[5].figure.path"
+      ],
+      "exists": true,
+      "sha256": "da5c5212f2d879e6cff41e0dc5baa148b84101b7a8b95d0f9835407b46648202"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-07-hook-edge.png",
+      "steps": [
+        "07-02"
+      ],
+      "references": [
+        "07-02.operationRun.events[6].figure.path"
+      ],
+      "exists": true,
+      "sha256": "4ac1c870113243b992898bd1f273e194d3ac39f8e1a4a72f6e1480a8ae02f5ec"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-08-hook-bevel.png",
+      "steps": [
+        "07-02"
+      ],
+      "references": [
+        "07-02.operationRun.events[7].figure.path"
+      ],
+      "exists": true,
+      "sha256": "7b2a90308506aeb2af3818c6a086d868e4d2a88bccec590bf2eeff21f23e07a2"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-09-root-edges.png",
+      "steps": [
+        "07-02"
+      ],
+      "references": [
+        "07-02.operationRun.events[8].figure.path"
+      ],
+      "exists": true,
+      "sha256": "e1f2fe071d2110f727fc930a108e4e48725099a2b88c76de05140a50996a2ccb"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-10-root-bevel.png",
+      "steps": [
+        "07-02"
+      ],
+      "references": [
+        "07-02.operationRun.events[9].figure.path"
+      ],
+      "exists": true,
+      "sha256": "d865ea78ef61836a85a4763fb1f21565906123191d06a1776d7a20c7ead756f3"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-11-snap-tool.png",
+      "steps": [
+        "07-02"
+      ],
+      "references": [
+        "07-02.operationRun.events[10].figure.path"
+      ],
+      "exists": true,
+      "sha256": "dc11e6bb2c2425a3a3a5f264a0a813898225cbd6e8f364144f9a1e00b1de7652"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-12-body-union.png",
+      "steps": [
+        "07-02"
+      ],
+      "references": [
+        "07-02.operationRun.events[11].figure.path"
+      ],
+      "exists": true,
+      "sha256": "e309eca04f69348913340b6a4bf7c83ca7ee62e0aa9fa28a54d815c1eeb21dc8"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-13-body-applied.png",
+      "steps": [
+        "07-02"
+      ],
+      "references": [
+        "07-02.operationRun.events[12].figure.path"
+      ],
+      "exists": true,
+      "sha256": "e91033de781ec3ff6daabe8232258e1c592ac1a38f299cbb1dc56271b66a8b08"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-14-body-non-manifold.png",
+      "steps": [
+        "07-02"
+      ],
+      "references": [
+        "07-02.operationRun.events[13].figure.path"
+      ],
+      "exists": true,
+      "sha256": "c00e798a40ecd39c8d3d932804a85a844f4d2f8faa5b918d06009d9985c34e81"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-15-lid-plate.png",
+      "steps": [
+        "07-02"
+      ],
+      "references": [
+        "07-02.operationRun.events[14].figure.path"
+      ],
+      "exists": true,
+      "sha256": "dc6530a5c98c913ccffdf5517443dbbff148d34a0258bcaaaeb36f46cfc015c8"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-16-flange-extruded.png",
+      "steps": [
+        "07-02"
+      ],
+      "references": [
+        "07-02.operationRun.events[15].figure.path"
+      ],
+      "exists": true,
+      "sha256": "5ba23c17fa1cc9f405a8a16e5054ee1ce5b3f82ee67837b9604091467f11e67f"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-17-flange-tool.png",
+      "steps": [
+        "07-02"
+      ],
+      "references": [
+        "07-02.operationRun.events[16].figure.path"
+      ],
+      "exists": true,
+      "sha256": "fb8ec958f4c9067afa5a94d69a4f2cc2ff961b14b8f66ba4424d567ab9fc8a23"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-18-lid-union.png",
+      "steps": [
+        "07-02"
+      ],
+      "references": [
+        "07-02.operationRun.events[17].figure.path"
+      ],
+      "exists": true,
+      "sha256": "08d8a9e57b5d7867bd43421927d8651dcd42e5b9d4c176c6d4bdfb615ddfc491"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-20-lid-non-manifold.png",
+      "steps": [
+        "07-02"
+      ],
+      "references": [
+        "07-02.operationRun.events[19].figure.path"
+      ],
+      "exists": true,
+      "sha256": "2142b5895b6d8c48d19ea867f949666a9fcfd74502a4baf83da059a37e43fc28"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-22-assembly-geometry.png",
+      "steps": [
+        "07-02"
+      ],
+      "references": [
+        "07-02.operationRun.events[21].figure.path"
+      ],
+      "exists": true,
+      "sha256": "56a6d9581be8daf0ce670b28e959122f9c692d8797a5c90dbd5c689fead5942f"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-23-save-dialog.png",
+      "steps": [
+        "07-02"
+      ],
+      "references": [
+        "07-02.operationRun.events[22].figure.path"
+      ],
+      "exists": true,
+      "sha256": "b37863ceecd919c0576a803e87af47b9d9bc8be5fb99aaf0e807e8b614c275e8"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-24-saved.png",
+      "steps": [
+        "07-02"
+      ],
+      "references": [
+        "07-02.operationRun.events[23].figure.path"
+      ],
+      "exists": true,
+      "sha256": "c4488d061d3658f6765962d2d271df490033f12e7c4619f1a8cb323d535013a2"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-25-open-saved.png",
+      "steps": [
+        "07-02"
+      ],
+      "references": [
+        "07-02.operationRun.events[24].figure.path"
+      ],
+      "exists": true,
+      "sha256": "080ddab2dce15827a86684c03728a5a93e09523a0d8254d2ddf1dcba1ce6ac1b"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-26-reopened-verified.png",
+      "steps": [
+        "07-02"
+      ],
+      "references": [
+        "07-02.operationRun.events[25].figure.path"
+      ],
+      "exists": true,
+      "sha256": "2187dc09ca5146a8ebdeca93fa1a59e142bf6f973f7c4beaa55b05f3439d9244"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-06-body_candidate-analysis.png",
+      "steps": [
+        "07-03"
+      ],
+      "references": [
+        "07-03.figures[0].path",
+        "07-03.operationRun.events[5].figure.path"
+      ],
+      "exists": true,
+      "sha256": "c03a6f17d0432d03b9790801f6a68e473a5dc3eb095bca11259c50af6b6940e5"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-05-body_candidate-controls.png",
+      "steps": [
+        "07-03"
+      ],
+      "references": [
+        "07-03.figures[1].path",
+        "07-03.operationRun.events[4].figure.path"
+      ],
+      "exists": true,
+      "sha256": "ae2b92aa3d09015b0eebb69320b3cec6eb6f2bef803ed252de71aaf5c904f6e1"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-overhang-focus-v002/07-03-06-elevated-ledge-closeup.png",
+      "steps": [
+        "07-03"
+      ],
+      "references": [
+        "07-03.figures[2].path"
+      ],
+      "exists": true,
+      "sha256": "39933f912508246987d4bf47773313b1d4ae312a60980c66c3cdda58faec799a"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-01-source-dialog.png",
+      "steps": [
+        "07-03"
+      ],
+      "references": [
+        "07-03.operationRun.events[0].figure.path"
+      ],
+      "exists": true,
+      "sha256": "2f97c85df79d8650f4019128ff16a90a7fc48fd81cc1775f426f3adc0023eb88"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-02-source-geometry.png",
+      "steps": [
+        "07-03"
+      ],
+      "references": [
+        "07-03.operationRun.events[1].figure.path"
+      ],
+      "exists": true,
+      "sha256": "2187dc09ca5146a8ebdeca93fa1a59e142bf6f973f7c4beaa55b05f3439d9244"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-03-body_baseline-controls.png",
+      "steps": [
+        "07-03"
+      ],
+      "references": [
+        "07-03.operationRun.events[2].figure.path"
+      ],
+      "exists": true,
+      "sha256": "eeed2a415d1a609be54f2c1fc30cfac7409850ed4426202ef2337a5a8730ebf3"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-04-body_baseline-analysis.png",
+      "steps": [
+        "07-03"
+      ],
+      "references": [
+        "07-03.operationRun.events[3].figure.path"
+      ],
+      "exists": true,
+      "sha256": "f49f0a5f0c0ca9f72cb6208e0ad71fd781ce36a7ccfaae2287739d8bf6a5e577"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-07-lid_baseline-controls.png",
+      "steps": [
+        "07-03"
+      ],
+      "references": [
+        "07-03.operationRun.events[6].figure.path"
+      ],
+      "exists": true,
+      "sha256": "c2102bc64d6eb2118032c578409305f1fe3654587778e1edf950d93840de0c55"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-08-lid_baseline-analysis.png",
+      "steps": [
+        "07-03"
+      ],
+      "references": [
+        "07-03.operationRun.events[7].figure.path"
+      ],
+      "exists": true,
+      "sha256": "a260dcf271361a95899755dc6b1f9b0adbdf2faa7557441add8c5fbf3e5f18da"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-09-lid_candidate-controls.png",
+      "steps": [
+        "07-03"
+      ],
+      "references": [
+        "07-03.operationRun.events[8].figure.path"
+      ],
+      "exists": true,
+      "sha256": "d56f28ecfbc1d2625cac3b526468ab815851ef09101f81c1ed40a7950d9fe03c"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-10-lid_candidate-analysis.png",
+      "steps": [
+        "07-03"
+      ],
+      "references": [
+        "07-03.operationRun.events[9].figure.path"
+      ],
+      "exists": true,
+      "sha256": "d7e18cd95f29cfbcb84e6ef8b51b19535f2e74b10eeaea264f4abfd92f3e8e3b"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-11-lid-candidate-profile.png",
+      "steps": [
+        "07-03"
+      ],
+      "references": [
+        "07-03.operationRun.events[10].figure.path"
+      ],
+      "exists": true,
+      "sha256": "99f3ca7c6885b1c562b205ffd565b6630b3dd1d965c82ee1bee8a9e3b206cbef"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-12-candidate-layout.png",
+      "steps": [
+        "07-03"
+      ],
+      "references": [
+        "07-03.operationRun.events[11].figure.path"
+      ],
+      "exists": true,
+      "sha256": "01508cf7b1b0b8978491626498a3e4d03ecee1479eff7e0b430e6e2b4be8ba22"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-13-save-dialog.png",
+      "steps": [
+        "07-03"
+      ],
+      "references": [
+        "07-03.operationRun.events[12].figure.path"
+      ],
+      "exists": true,
+      "sha256": "9cd1bb428fee4143af37b260087008b912ad365265103a82028422707db61f76"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-14-saved.png",
+      "steps": [
+        "07-03"
+      ],
+      "references": [
+        "07-03.operationRun.events[13].figure.path"
+      ],
+      "exists": true,
+      "sha256": "f85fb794d6b4dd889f3dd20c3c1f5fff17ce5f632f0ecdf8eab1e69873451708"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-15-open-saved.png",
+      "steps": [
+        "07-03"
+      ],
+      "references": [
+        "07-03.operationRun.events[14].figure.path"
+      ],
+      "exists": true,
+      "sha256": "8d22eec8caa88cebdc61502cde319c5bacb31272d98d4f916b35f734a4f3da98"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-16-reopened-verified.png",
+      "steps": [
+        "07-03"
+      ],
+      "references": [
+        "07-03.operationRun.events[15].figure.path"
+      ],
+      "exists": true,
+      "sha256": "671959f98066449519611df236ddff019281ef8c0a09d95a6b336d06cc533762"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-17-body-reimport-dimensions.png",
+      "steps": [
+        "07-04"
+      ],
+      "references": [
+        "07-04.figures[0].path",
+        "07-04.operationRun.events[16].figure.path"
+      ],
+      "exists": true,
+      "sha256": "119395eb4abc4d935d65e166660c7cdb2bc738e62738a3eaf68d07da08fd49e3"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-21-lid-reimport-dimensions.png",
+      "steps": [
+        "07-04"
+      ],
+      "references": [
+        "07-04.figures[1].path",
+        "07-04.operationRun.events[20].figure.path"
+      ],
+      "exists": true,
+      "sha256": "1870d4391e17be49e286759fcf23b5ff726966ba26ea2a4adb08caeee023dee8"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-06-body-export-options.png",
+      "steps": [
+        "07-04"
+      ],
+      "references": [
+        "07-04.figures[2].path",
+        "07-04.operationRun.events[5].figure.path"
+      ],
+      "exists": true,
+      "sha256": "0dcb53baedfe2fb310a691c836bb7a9eda4ac9009613fb00106db98319d36a56"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-01-body-source-dialog.png",
+      "steps": [
+        "07-04"
+      ],
+      "references": [
+        "07-04.operationRun.events[0].figure.path"
+      ],
+      "exists": true,
+      "sha256": "983a391a8141c6eaa1201672c3c30641c12878fc2003185eb56981d702e0f4c5"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-02-body-source-selected.png",
+      "steps": [
+        "07-04"
+      ],
+      "references": [
+        "07-04.operationRun.events[1].figure.path"
+      ],
+      "exists": true,
+      "sha256": "25aece8c5aafe6484d02d09998acc95bf1074a4aa3d77a006e460de43c2c79f9"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-03-body-source-profile.png",
+      "steps": [
+        "07-04"
+      ],
+      "references": [
+        "07-04.operationRun.events[2].figure.path"
+      ],
+      "exists": true,
+      "sha256": "9ded1e6ae13eb76037f280eabc232b3a477c099c7a210c631d4afa8e635d0f07"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-04-body-export-menu.png",
+      "steps": [
+        "07-04"
+      ],
+      "references": [
+        "07-04.operationRun.events[3].figure.path"
+      ],
+      "exists": true,
+      "sha256": "1adcd141368a56cbcc688d4837d7be364a72d54f6254bdabb106abe610bdfd9a"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-05-body-export-before.png",
+      "steps": [
+        "07-04"
+      ],
+      "references": [
+        "07-04.operationRun.events[4].figure.path"
+      ],
+      "exists": true,
+      "sha256": "b2b95106f63c04f37583a111a40c0f17c9f1804d8484f260db1a067175a06c66"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-07-body-stl-checked.png",
+      "steps": [
+        "07-04"
+      ],
+      "references": [
+        "07-04.operationRun.events[6].figure.path"
+      ],
+      "exists": true,
+      "sha256": "9de8f23e51c7a527168defe1de33b5feac1cb31246b42c00f7b7daaa8f5e0c6d"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-08-lid-source-dialog.png",
+      "steps": [
+        "07-04"
+      ],
+      "references": [
+        "07-04.operationRun.events[7].figure.path"
+      ],
+      "exists": true,
+      "sha256": "ddf776089a4b127f3994cfdb5462801f22a3b6bb67cf4a9f30c8e09a86123389"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-09-lid-source-selected.png",
+      "steps": [
+        "07-04"
+      ],
+      "references": [
+        "07-04.operationRun.events[8].figure.path"
+      ],
+      "exists": true,
+      "sha256": "6e81d9a9bc0da28dcf24e9d8db8a6905721be173fe77543b0c58603432c095e3"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-10-lid-source-profile.png",
+      "steps": [
+        "07-04"
+      ],
+      "references": [
+        "07-04.operationRun.events[9].figure.path"
+      ],
+      "exists": true,
+      "sha256": "5887645d79efdda6f3429286e5467a503cf42d9cd67a1883166cdfd7da6e8c50"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-11-lid-export-menu.png",
+      "steps": [
+        "07-04"
+      ],
+      "references": [
+        "07-04.operationRun.events[10].figure.path"
+      ],
+      "exists": true,
+      "sha256": "1602c71e0a85b868fd707699a0a94be6252fbb2a82c33fbcd2a476cf1dce0b24"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-12-lid-export-before.png",
+      "steps": [
+        "07-04"
+      ],
+      "references": [
+        "07-04.operationRun.events[11].figure.path"
+      ],
+      "exists": true,
+      "sha256": "fbf22278fc7f16f007463b2ed2e9700432db0e139f2e8f5bccc0fd0782b79733"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-13-lid-export-options.png",
+      "steps": [
+        "07-04"
+      ],
+      "references": [
+        "07-04.operationRun.events[12].figure.path"
+      ],
+      "exists": true,
+      "sha256": "529a3a39621373e6c3936ca84b0dd57df94c4979dc63b91c24f7805bcc4a3b6c"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-14-lid-stl-checked.png",
+      "steps": [
+        "07-04"
+      ],
+      "references": [
+        "07-04.operationRun.events[13].figure.path"
+      ],
+      "exists": true,
+      "sha256": "de2465afcf4f52010e054dc123f3fc31574cd721305fb0c71e0f9534264a34eb"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-15-empty-mm-scene.png",
+      "steps": [
+        "07-04"
+      ],
+      "references": [
+        "07-04.operationRun.events[14].figure.path"
+      ],
+      "exists": true,
+      "sha256": "4adc8aebf5e4a772bee8fce4eb6b599831c2910744002fc3fb9242704c87f51c"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-16-body-import-dialog.png",
+      "steps": [
+        "07-04"
+      ],
+      "references": [
+        "07-04.operationRun.events[15].figure.path"
+      ],
+      "exists": true,
+      "sha256": "9d1ebf39c7724cc9b9949163e0632b01787da6ebbfe7a5bdc0baf9fd8c21a2c4"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-18-body-reimport-profile.png",
+      "steps": [
+        "07-04"
+      ],
+      "references": [
+        "07-04.operationRun.events[17].figure.path"
+      ],
+      "exists": true,
+      "sha256": "4206d415221f58505c95dc9bac35e25e1b8e544cc028a13c492b364039970b67"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-19-body-reimport-non-manifold.png",
+      "steps": [
+        "07-04"
+      ],
+      "references": [
+        "07-04.operationRun.events[18].figure.path"
+      ],
+      "exists": true,
+      "sha256": "da4090e7382db2237e98875efd85f9ee44c7d0bc6c3159266cf6c4fbed0092ff"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-20-lid-import-dialog.png",
+      "steps": [
+        "07-04"
+      ],
+      "references": [
+        "07-04.operationRun.events[19].figure.path"
+      ],
+      "exists": true,
+      "sha256": "e83e42d85aa2b998a3ff943aa55802fac1903458fe95623a46f60f13d6660517"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-22-lid-reimport-profile.png",
+      "steps": [
+        "07-04"
+      ],
+      "references": [
+        "07-04.operationRun.events[21].figure.path"
+      ],
+      "exists": true,
+      "sha256": "a502dcc49b2fa1cb643295d04fae0e35023fddc739c3272c28eb8a9d37374332"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-23-lid-reimport-non-manifold.png",
+      "steps": [
+        "07-04"
+      ],
+      "references": [
+        "07-04.operationRun.events[22].figure.path"
+      ],
+      "exists": true,
+      "sha256": "41a3b5b82865be5945ed1115af79c586473fe62baeae23c28ca0cb5fedace95d"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-24-reimport-layout.png",
+      "steps": [
+        "07-04"
+      ],
+      "references": [
+        "07-04.operationRun.events[23].figure.path"
+      ],
+      "exists": true,
+      "sha256": "1c60b2b28d47b635a123f4e595f0f207824d1ae1f72d6c5b076f15e86ac72cd3"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-25-exports-verified.png",
+      "steps": [
+        "07-04"
+      ],
+      "references": [
+        "07-04.operationRun.events[24].figure.path"
+      ],
+      "exists": true,
+      "sha256": "1c60b2b28d47b635a123f4e595f0f207824d1ae1f72d6c5b076f15e86ac72cd3"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-24-A_L19-reimport-dimensions.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.figures[0].path",
+        "07-05.operationRun.events[23].figure.path"
+      ],
+      "exists": true,
+      "sha256": "5a3634959a94caac6d6a50ad0a4aed7b79dc5a0f0ddaf9e4abaf4c8f54120cb0"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-28-B_L17-reimport-dimensions.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.figures[1].path",
+        "07-05.operationRun.events[27].figure.path"
+      ],
+      "exists": true,
+      "sha256": "902135e64eab461cb83502e97f9f63ebbf772214512077a0505c8782377c92a3"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-32-C_L21-reimport-dimensions.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.figures[2].path",
+        "07-05.operationRun.events[31].figure.path"
+      ],
+      "exists": true,
+      "sha256": "9b21f1f1224b36e130db26148fc57bc5b5f06bb8c21685a66fb743891903e6aa"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-01-A_L19-source-dialog.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.operationRun.events[0].figure.path"
+      ],
+      "exists": true,
+      "sha256": "14975f8bb41ae051fc7fd9f789d13eea67cd90e574933eb29d72ce10c78bfe29"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-02-A_L19-source-selected.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.operationRun.events[1].figure.path"
+      ],
+      "exists": true,
+      "sha256": "e1365ce02ec981c8b7bb29d5b248af3812f0bbbb9436c36510146df9c19602a6"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-03-A_L19-source-profile.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.operationRun.events[2].figure.path"
+      ],
+      "exists": true,
+      "sha256": "3af56ba44c5ee8aa84a9ab8327d0f0bc0d43becf23077d01ccde593157bcb33a"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-04-A_L19-export-menu.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.operationRun.events[3].figure.path"
+      ],
+      "exists": true,
+      "sha256": "41562116cecc5163ed6030f8fb5dc4df17e0acd4dd312264d391848ea4201bbf"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-05-A_L19-export-before.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.operationRun.events[4].figure.path"
+      ],
+      "exists": true,
+      "sha256": "d2ac10f7bc9aae66620647a15e2110a1d68cfd4ea34f320412ae700700c71d0b"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-06-A_L19-export-options.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.operationRun.events[5].figure.path"
+      ],
+      "exists": true,
+      "sha256": "787fb50995b0e44804a9248170bd2d1e77cb9be6527929af45df330d68b3e796"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-07-A_L19-stl-checked.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.operationRun.events[6].figure.path"
+      ],
+      "exists": true,
+      "sha256": "d498056d1e14b4cc257d2270d325408f568d9f01cc84e3cc813a3d5d3a60a207"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-08-B_L17-source-dialog.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.operationRun.events[7].figure.path"
+      ],
+      "exists": true,
+      "sha256": "88d88a6a80a030db091a7dffe61521d962c31de3a15c5a24585da53e8293792d"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-09-B_L17-source-selected.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.operationRun.events[8].figure.path"
+      ],
+      "exists": true,
+      "sha256": "5612dc335babe2f0c7746247e75696a421e7150906893c95209bd0915c38ccb9"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-10-B_L17-source-profile.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.operationRun.events[9].figure.path"
+      ],
+      "exists": true,
+      "sha256": "0b334e28a3fd16511559b8f2a632e6c6728740e8a6c3dafdbec204caa80360d9"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-11-B_L17-export-menu.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.operationRun.events[10].figure.path"
+      ],
+      "exists": true,
+      "sha256": "23c1a2d7c4c95830deb24d52f78915a2dd69eadd515803db8a2526f601088f5e"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-12-B_L17-export-before.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.operationRun.events[11].figure.path"
+      ],
+      "exists": true,
+      "sha256": "aa18c178051e9fff72f728746406f2bb695a9a1869e0dc9d1e98b4c3e3bb6c7a"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-13-B_L17-export-options.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.operationRun.events[12].figure.path"
+      ],
+      "exists": true,
+      "sha256": "5b3a83b925809fbe66987d616e918c3269014c416da0ae5ceea5bad6881a29ad"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-14-B_L17-stl-checked.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.operationRun.events[13].figure.path"
+      ],
+      "exists": true,
+      "sha256": "91521b225ba9f96c7344f9fba9bce334d59a59af7a0d0d05587f8d08f815399f"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-15-C_L21-source-dialog.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.operationRun.events[14].figure.path"
+      ],
+      "exists": true,
+      "sha256": "88d88a6a80a030db091a7dffe61521d962c31de3a15c5a24585da53e8293792d"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-16-C_L21-source-selected.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.operationRun.events[15].figure.path"
+      ],
+      "exists": true,
+      "sha256": "360c2b8266050f172745eec7b3470e85269c34f75ec84faceb2fe93f963d290e"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-17-C_L21-source-profile.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.operationRun.events[16].figure.path"
+      ],
+      "exists": true,
+      "sha256": "2c9621c7078a66636d9232167c37d1e6232524e46a9131378a29ae2a78166785"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-18-C_L21-export-menu.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.operationRun.events[17].figure.path"
+      ],
+      "exists": true,
+      "sha256": "0396b2b76def40e3df7e0360df445590f9cc55b9db62662661cde349948949ef"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-19-C_L21-export-before.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.operationRun.events[18].figure.path"
+      ],
+      "exists": true,
+      "sha256": "e88a9fd05c815c98eccd14581031277bcc9f9bda866495d63107ce2d07852333"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-20-C_L21-export-options.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.operationRun.events[19].figure.path"
+      ],
+      "exists": true,
+      "sha256": "9ea4b96d526988f6c327ad563b26ffe2391d21f4fd5d980c866be13a2b40c113"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-21-C_L21-stl-checked.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.operationRun.events[20].figure.path"
+      ],
+      "exists": true,
+      "sha256": "9b88cfd2d30b32be86813e109bbe306ddb229a05159e37d24820ea70705fd4a7"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-22-empty-mm-scene.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.operationRun.events[21].figure.path"
+      ],
+      "exists": true,
+      "sha256": "4adc8aebf5e4a772bee8fce4eb6b599831c2910744002fc3fb9242704c87f51c"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-23-A_L19-import-dialog.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.operationRun.events[22].figure.path"
+      ],
+      "exists": true,
+      "sha256": "8a1817bf4a269f9421ab95a42ec2dc03fcfe70be8121323980a717f526b981ac"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-25-A_L19-reimport-profile.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.operationRun.events[24].figure.path"
+      ],
+      "exists": true,
+      "sha256": "3cb3be0a5808fa8a4cc732e74ea054e62d306db47e96b0abfab5b86fcd3d8f07"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-26-A_L19-reimport-non-manifold.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.operationRun.events[25].figure.path"
+      ],
+      "exists": true,
+      "sha256": "ae3cd5f6486259fd2649a686768838e75f2b548f7f0e79e882b5be05d4f9d65f"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-27-B_L17-import-dialog.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.operationRun.events[26].figure.path"
+      ],
+      "exists": true,
+      "sha256": "9ad6b01fa9853efafa8da96c211dd38b5355a0dc4f1e92c7e7c0e90f4f361d0f"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-29-B_L17-reimport-profile.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.operationRun.events[28].figure.path"
+      ],
+      "exists": true,
+      "sha256": "f5ef0a75f65314ccdc29a4e85a97638f10ae64a8cb41a3d3207b87befa29a951"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-30-B_L17-reimport-non-manifold.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.operationRun.events[29].figure.path"
+      ],
+      "exists": true,
+      "sha256": "0487bd01ba7988982445ea40e0cf78b023d261fbb42c275b284f681cfafe90d5"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-31-C_L21-import-dialog.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.operationRun.events[30].figure.path"
+      ],
+      "exists": true,
+      "sha256": "cdb857308cc71d91ba8910b32055291c9947e85578959514bd03ce3e6dc43059"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-33-C_L21-reimport-profile.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.operationRun.events[32].figure.path"
+      ],
+      "exists": true,
+      "sha256": "afae458cd829be9adb40cb33f6227f7883827c9cbf661b566506792d3c4f6f87"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-34-C_L21-reimport-non-manifold.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.operationRun.events[33].figure.path"
+      ],
+      "exists": true,
+      "sha256": "7b4c946dd9fe7410657b9155f6180c9b62519750d65a2735cb441ed61e0a42ca"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-35-reimport-layout.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.operationRun.events[34].figure.path"
+      ],
+      "exists": true,
+      "sha256": "8897c764ca05fb2d93f3c08fd415c34c9d9de007b3f6120da051b403a557ba1d"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-36-coupon-exports-verified.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.operationRun.events[35].figure.path"
+      ],
+      "exists": true,
+      "sha256": "8897c764ca05fb2d93f3c08fd415c34c9d9de007b3f6120da051b403a557ba1d"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-01-source-dialog.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.previousOperationRuns[0].events[0].figure.path"
+      ],
+      "exists": true,
+      "sha256": "ed8811f42229a160ef6e76d403bdfb89a5ff8ffc75de4e5cfbffac99822631af"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-02-source-reference.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.previousOperationRuns[0].events[1].figure.path"
+      ],
+      "exists": true,
+      "sha256": "671959f98066449519611df236ddff019281ef8c0a09d95a6b336d06cc533762"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-03-outliner-room.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.previousOperationRuns[0].events[2].figure.path"
+      ],
+      "exists": true,
+      "sha256": "9cdbbe3b24f0f5a5957c7c0488f5bc8d5417f9ad0022cbd8f1b86268e061896e"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-04-A_L19-duplicate.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.previousOperationRuns[0].events[3].figure.path"
+      ],
+      "exists": true,
+      "sha256": "b511ebd7b649bb8d3ee563e963649e69377874b981fa9c6eb33054db13d40f24"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-05-inherited-analysis-off.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.previousOperationRuns[0].events[4].figure.path"
+      ],
+      "exists": true,
+      "sha256": "673be69151597020c44ea918a8b587d0ccd24d6800e0b617d6f54325852c86c8"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-06-A_L19-upper-selection.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.previousOperationRuns[0].events[5].figure.path"
+      ],
+      "exists": true,
+      "sha256": "99118893f834c27aafc3147e89d6e2a2538590388e55cd0f16fe425819f0beff"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-07-A_L19-source-frame.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.previousOperationRuns[0].events[6].figure.path"
+      ],
+      "exists": true,
+      "sha256": "fcb003eabba278cc5036cf7d7faaa7f998b8c8a9f83f0b541249c9acc1df3923"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-08-A_L19-candidate.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.previousOperationRuns[0].events[7].figure.path"
+      ],
+      "exists": true,
+      "sha256": "3fcdbdeb0ffeb8e27aa704c81fbd5bbdfb6596d982d0760af5fd63bfa0349b06"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-09-A_L19-non-manifold.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.previousOperationRuns[0].events[8].figure.path"
+      ],
+      "exists": true,
+      "sha256": "a20da0993b6376f9d71d8079f4f045ccbfabf280ccbdd97ca80177e197679bac"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-10-B_L17-duplicate.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.previousOperationRuns[0].events[9].figure.path"
+      ],
+      "exists": true,
+      "sha256": "e8509ce64723b158b027a36cce198c63e202e8bdd6f976e54b8cc05ad52731ea"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-11-B_L17-upper-selection.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.previousOperationRuns[0].events[10].figure.path"
+      ],
+      "exists": true,
+      "sha256": "2c3e23cf9c6e3dfbdbdea32a4731e4661a2f05d032db98fff97a65b21d8b7810"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-12-B_L17-source-frame.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.previousOperationRuns[0].events[11].figure.path"
+      ],
+      "exists": true,
+      "sha256": "01c12db4152d03eb6cdfe6010c39e266d51229dd156b832429e1437b90eadc95"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-13-B_L17-candidate.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.previousOperationRuns[0].events[12].figure.path"
+      ],
+      "exists": true,
+      "sha256": "3fbbb49c7792886205c7efb6d6c9033fb75f360f7344c204580e20436990573e"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-14-B_L17-non-manifold.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.previousOperationRuns[0].events[13].figure.path"
+      ],
+      "exists": true,
+      "sha256": "3e82fb85761c328ce8555b5b688c9c8e744d39eb937d6694261f8f1306ff50e1"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-15-C_L21-duplicate.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.previousOperationRuns[0].events[14].figure.path"
+      ],
+      "exists": true,
+      "sha256": "cb98a12bff20cf360d905f72a54115c329bf8043eb7daa09b027b74d8b87f8bc"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-16-C_L21-upper-selection.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.previousOperationRuns[0].events[15].figure.path"
+      ],
+      "exists": true,
+      "sha256": "6ae2e35e50afb9cac1937b0ab961721f9dd48312f303e8a35c01016d6d2adea7"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-17-C_L21-source-frame.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.previousOperationRuns[0].events[16].figure.path"
+      ],
+      "exists": true,
+      "sha256": "c37bfa4b431b7f39b08a934dea38e1e0b4506400f970d22da2c297591bd4c1d0"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-18-C_L21-candidate.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.previousOperationRuns[0].events[17].figure.path"
+      ],
+      "exists": true,
+      "sha256": "d2f93a4f563bd2692acc705395d4be2a9ccb60a7ed015f125f923e3f1457ae4c"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-19-C_L21-non-manifold.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.previousOperationRuns[0].events[18].figure.path"
+      ],
+      "exists": true,
+      "sha256": "5408d53147539f9965671909d23f9e1e5c42357895c5f2c05522025f2f2d8444"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-20-coupon-layout.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.previousOperationRuns[0].events[19].figure.path"
+      ],
+      "exists": true,
+      "sha256": "208f6d3a1b05e490f1933f17cf7eb43c126c7f153faafe7d79debf35dbe2d70c"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-21-save-dialog.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.previousOperationRuns[0].events[20].figure.path"
+      ],
+      "exists": true,
+      "sha256": "1279d8e1b2a83ced9bc15dbcdb3e8dd1c41878807e511947895ab4c9d35b51a9"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-22-saved.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.previousOperationRuns[0].events[21].figure.path"
+      ],
+      "exists": true,
+      "sha256": "0a81cd7473128c3280f3d09dcfd315b09cc6f963ff087a41125c406501eb0616"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-23-open-saved.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.previousOperationRuns[0].events[22].figure.path"
+      ],
+      "exists": true,
+      "sha256": "653af27fb7b2f404fc666ee6df34764f0dee3f8fe161af6063499e66ecabd7c9"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-24-reopened-verified.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.previousOperationRuns[0].events[23].figure.path"
+      ],
+      "exists": true,
+      "sha256": "c5a78a219bf0d1319239f32b4b8bd6c9f7157e3667e3e7598c1f0f7451433d4b"
+    },
+    {
+      "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/08-01-08-reference-overview.png",
+      "steps": [
+        "08-01"
+      ],
+      "references": [
+        "08-01.figures[0].path",
+        "08-01.operationRun.events[7].figure.path"
+      ],
+      "exists": true,
+      "sha256": "76bd22f0091976802281b444aa8703b9cd939a107c4a70d4074a0d137816a576"
+    },
+    {
+      "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/08-01-05-inner-floor.png",
+      "steps": [
+        "08-01"
+      ],
+      "references": [
+        "08-01.figures[1].path",
+        "08-01.operationRun.events[4].figure.path"
+      ],
+      "exists": true,
+      "sha256": "a78e713c12c3af31a8e6d3d717bea1a8ca99891e3524c6991459654c174d8e6d"
+    },
+    {
+      "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/08-01-06-outer-floor.png",
+      "steps": [
+        "08-01"
+      ],
+      "references": [
+        "08-01.figures[2].path",
+        "08-01.operationRun.events[5].figure.path"
+      ],
+      "exists": true,
+      "sha256": "6c583bd5aec0207b5c2c8c51ba50343bfa65b2ee6cea6c713ed21f5e5a983e52"
+    },
+    {
+      "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/08-01-01-source-open-dialog.png",
+      "steps": [
+        "08-01"
+      ],
+      "references": [
+        "08-01.operationRun.events[0].figure.path"
+      ],
+      "exists": true,
+      "sha256": "2fd6a3c66d9f900dbaa7ec652b0beed9eb732edbb2f3798cffe229bf298a1c52"
+    },
+    {
+      "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/08-01-02-source-checked.png",
+      "steps": [
+        "08-01"
+      ],
+      "references": [
+        "08-01.operationRun.events[1].figure.path"
+      ],
+      "exists": true,
+      "sha256": "553d16ae73d6789e63151c705c2c9231cee91ba7a5712084489555ef213e1e64"
+    },
+    {
+      "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/08-01-03-reference-top.png",
+      "steps": [
+        "08-01"
+      ],
+      "references": [
+        "08-01.operationRun.events[2].figure.path"
+      ],
+      "exists": true,
+      "sha256": "4da568b6e1c627bed94f9597e4352d866a5761a755f540b838f0e58660e3f8d2"
+    },
+    {
+      "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/08-01-04-rim-face.png",
+      "steps": [
+        "08-01"
+      ],
+      "references": [
+        "08-01.operationRun.events[3].figure.path"
+      ],
+      "exists": true,
+      "sha256": "71f4e90f4ad1e2416be0df61bdb68eda91775f1eda878c732023f62cbaaf3cda"
+    },
+    {
+      "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/08-01-07-non-manifold.png",
+      "steps": [
+        "08-01"
+      ],
+      "references": [
+        "08-01.operationRun.events[6].figure.path"
+      ],
+      "exists": true,
+      "sha256": "cced4f7a89cbf44e9fe75a8cdfeefd24d06b7adff7c8407a09ed1132ea9b4962"
+    },
+    {
+      "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/08-01-09-save-dialog.png",
+      "steps": [
+        "08-01"
+      ],
+      "references": [
+        "08-01.operationRun.events[8].figure.path"
+      ],
+      "exists": true,
+      "sha256": "c11f36e2c4a9e910cac0798597435383e393947a4827e40f03250dc370ce40f5"
+    },
+    {
+      "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/08-01-10-saved.png",
+      "steps": [
+        "08-01"
+      ],
+      "references": [
+        "08-01.operationRun.events[9].figure.path"
+      ],
+      "exists": true,
+      "sha256": "c322d309456343e96f1e6803487fe07e2bdaa6b67069d90e3aee50cff2c566bb"
+    },
+    {
+      "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/08-01-11-open-saved.png",
+      "steps": [
+        "08-01"
+      ],
+      "references": [
+        "08-01.operationRun.events[10].figure.path"
+      ],
+      "exists": true,
+      "sha256": "ee21fc68888ccb7e56fb48702f26a368f7ea1262166902b802aae9008840d28c"
+    },
+    {
+      "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/08-01-12-reopened-verified.png",
+      "steps": [
+        "08-01"
+      ],
+      "references": [
+        "08-01.operationRun.events[11].figure.path"
+      ],
+      "exists": true,
+      "sha256": "05ccab2799c6d1965c1878130815b63d2bbff9cd4b87417c2d63458e52bc3472"
+    }
+  ]
+}

@@ -1,0 +1,492 @@
+{
+ "scenario": "D:\\others\\study\\Blender-Learning\\learning\\tutor\\scenarios\\lesson05_export.py",
+ "blender": "5.2.1 LTS",
+ "buildHash": "9e2066aef7ef",
+ "records": [
+  {
+   "seq": 1,
+   "step": "05-04",
+   "slug": "pin-open-dialog",
+   "recordedAt": "2026-10-22T07:52:32.068Z",
+   "action": "File > Open…，開啟來源 u05_fit_coupon_v001.blend 的同雜湊副本",
+   "observed": "資料夾 D:\\others\\study\\Blender-Learning\\learning\\evidence\\05\\2026-10-22-lesson05-export-demo-v003\\demo-files\\sources\\；檔名 u05_fit_coupon_v001.blend。",
+   "window": "FILE_BROWSER",
+   "highlights": [
+    {
+     "x": 248,
+     "y": 566,
+     "w": 780,
+     "h": 25,
+     "label": "來源場景 v001"
+    },
+    {
+     "x": 789,
+     "y": 566,
+     "w": 126,
+     "h": 25,
+     "label": "Open"
+    }
+   ],
+   "clicks": [],
+   "file": "05-04-01-pin-open-dialog.png",
+   "width": 1060,
+   "height": 600,
+   "sha256": "3a8a9e26c594ce31328d857191ad9a02f4598b44f72eadb42fdb54376862273b"
+  },
+  {
+   "seq": 2,
+   "step": "05-04",
+   "slug": "pin-source-checked",
+   "recordedAt": "2026-10-22T07:52:38.468Z",
+   "action": "只選 FitPin，核對原來源與副本雜湊、尺寸及網格",
+   "observed": "FitPin；Dimensions [10.000000474974513, 10.000000474974513, 8.00000037997961] mm；Scale [1.0, 1.0, 1.0]；Non Manifold 0；來源及副本 SHA-256 相同。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 1286,
+     "y": 114,
+     "w": 150,
+     "h": 20,
+     "label": "只選 FitPin"
+    }
+   ],
+   "clicks": [],
+   "file": "05-04-02-pin-source-checked.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "266df56ccb79bb1820838a6ce259a8f71fecd37fed1759cf8217f7dbac5e4587"
+  },
+  {
+   "seq": 3,
+   "step": "05-04",
+   "slug": "pin-export-menu",
+   "recordedAt": "2026-10-22T07:52:40.368Z",
+   "action": "File > Export，指到 STL (.stl)",
+   "observed": "已選取：FitPin；作用中物件：FitPin",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 28,
+     "y": 307,
+     "w": 202,
+     "h": 20,
+     "label": "Export"
+    },
+    {
+     "x": 236,
+     "y": 426,
+     "w": 244,
+     "h": 20,
+     "label": "STL (.stl)"
+    }
+   ],
+   "clicks": [],
+   "file": "05-04-03-pin-export-menu.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "449f2cc07be4845ce96756aa76ac98265d5b7846e4ae30f7969a1fb9491bf2f1"
+  },
+  {
+   "seq": 4,
+   "step": "05-04",
+   "slug": "pin-export-before",
+   "recordedAt": "2026-10-22T07:52:44.368Z",
+   "action": "核對 STL 匯出路徑、檔名與目前選項",
+   "observed": "目標 D:\\others\\study\\Blender-Learning\\learning\\evidence\\05\\2026-10-22-lesson05-export-demo-v003\\demo-files\\exports\\ / u05_fit_coupon_v001.stl；選項 {'only_selected': False, 'global_scale': 1.0, 'use_scene_unit': False, 'apply_modifiers': True, 'forward_axis': 'Y', 'up_axis': 'Z', 'ascii_format': False, 'use_batch': False, 'evaluation_mode': 'DAG_EVAL_RENDER'}。",
+   "window": "FILE_BROWSER",
+   "highlights": [
+    {
+     "x": 248,
+     "y": 566,
+     "w": 780,
+     "h": 25,
+     "label": "匯出 v001"
+    },
+    {
+     "x": 920,
+     "y": 148,
+     "w": 135,
+     "h": 22,
+     "label": "Selection Only"
+    },
+    {
+     "x": 920,
+     "y": 170,
+     "w": 135,
+     "h": 43,
+     "label": "Scale 1 / Scene Unit"
+    }
+   ],
+   "clicks": [],
+   "file": "05-04-04-pin-export-before.png",
+   "width": 1060,
+   "height": 600,
+   "sha256": "b973ec94c4f70b53afb63f4eac48eb25f006b8ee5cfab2471ea85ffe45e4020e"
+  },
+  {
+   "seq": 5,
+   "step": "05-04",
+   "slug": "pin-export-options",
+   "recordedAt": "2026-10-22T07:52:46.168Z",
+   "action": "核對並勾選 Selection Only，其餘保持 Scale 1、Scene Unit 不勾，再驗證安全目標",
+   "observed": "Selection Only 開；Scale 1；Scene Unit 關；Apply Modifiers 開；Y Forward / Z Up；Binary；只匯出 FitPin。",
+   "window": "FILE_BROWSER",
+   "highlights": [
+    {
+     "x": 920,
+     "y": 148,
+     "w": 135,
+     "h": 22,
+     "label": "Selection Only 開"
+    },
+    {
+     "x": 920,
+     "y": 170,
+     "w": 135,
+     "h": 43,
+     "label": "Scale 1 / Scene Unit 關"
+    },
+    {
+     "x": 789,
+     "y": 566,
+     "w": 126,
+     "h": 25,
+     "label": "Export STL"
+    }
+   ],
+   "clicks": [],
+   "file": "05-04-05-pin-export-options.png",
+   "width": 1060,
+   "height": 600,
+   "sha256": "316c22ebed0ae2b4865c65f15d66dce8570e445e9530efaa3af09ac23f18d5c9",
+   "note": "這兩份場景的 Unit Scale 已是 0.001，匯出數字以毫米解讀。STL 本身沒有單位標記；這些設定由實際視窗讀回。"
+  },
+  {
+   "seq": 6,
+   "step": "05-04",
+   "slug": "pin-stl-checked",
+   "recordedAt": "2026-10-22T07:52:49.068Z",
+   "action": "按 Export STL，再直接解析磁碟 STL 的三角形、尺寸及拓樸，與來源網格比較",
+   "observed": "u05_fit_coupon_v001.stl：684 bytes、12 三角形、檔內外形 [10.0, 10.0, 8.0]（按 mm 解讀）；Non Manifold 0、單殼、genus 0；SHA-256 bc10342c54a94d87c15eccb050fb9b30a7ae00bf4079d4c7869ac53d199db784。",
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "05-04-06-pin-stl-checked.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "ab6c2ae598a26036bb38974629197f93fe188a8a9a60609aa3b43bc9e7fd47e2",
+   "note": "這是數位檔案檢查；尚未匯入切片軟體、列印、實體量測或試配。"
+  },
+  {
+   "seq": 7,
+   "step": "05-04",
+   "slug": "hole_plate-open-dialog",
+   "recordedAt": "2026-10-22T07:52:53.168Z",
+   "action": "File > Open…，開啟來源 u05_hole_plate_v001.blend 的同雜湊副本",
+   "observed": "資料夾 D:\\others\\study\\Blender-Learning\\learning\\evidence\\05\\2026-10-22-lesson05-export-demo-v003\\demo-files\\sources\\；檔名 u05_hole_plate_v001.blend。",
+   "window": "FILE_BROWSER",
+   "highlights": [
+    {
+     "x": 248,
+     "y": 566,
+     "w": 780,
+     "h": 25,
+     "label": "來源場景 v001"
+    },
+    {
+     "x": 789,
+     "y": 566,
+     "w": 126,
+     "h": 25,
+     "label": "Open"
+    }
+   ],
+   "clicks": [],
+   "file": "05-04-07-hole_plate-open-dialog.png",
+   "width": 1060,
+   "height": 600,
+   "sha256": "8c73d1ad3532b083835c256a713e08586f40920d345b4f47363329b98c60b2cb"
+  },
+  {
+   "seq": 8,
+   "step": "05-04",
+   "slug": "hole_plate-source-checked",
+   "recordedAt": "2026-10-22T07:52:59.568Z",
+   "action": "只選 Plate，核對原來源與副本雜湊、尺寸及網格",
+   "observed": "Plate；Dimensions [96.00000455975533, 26.000001234933734, 4.000000189989805] mm；Scale [1.0, 1.0, 1.0]；Non Manifold 0；來源及副本 SHA-256 相同。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 1286,
+     "y": 114,
+     "w": 150,
+     "h": 20,
+     "label": "只選 Plate"
+    }
+   ],
+   "clicks": [],
+   "file": "05-04-08-hole_plate-source-checked.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "f914646b62bac8048144171719d106dd16e16357a82946a4dbee22fe3d5a2f15"
+  },
+  {
+   "seq": 9,
+   "step": "05-04",
+   "slug": "hole_plate-export-menu",
+   "recordedAt": "2026-10-22T07:53:01.468Z",
+   "action": "File > Export，指到 STL (.stl)",
+   "observed": "已選取：Plate；作用中物件：Plate",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 28,
+     "y": 307,
+     "w": 202,
+     "h": 20,
+     "label": "Export"
+    },
+    {
+     "x": 236,
+     "y": 426,
+     "w": 244,
+     "h": 20,
+     "label": "STL (.stl)"
+    }
+   ],
+   "clicks": [],
+   "file": "05-04-09-hole_plate-export-menu.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "ba2974caa1d85f469cdb2e1418e6e472b2ecbb576cf31b820613611db1a818df"
+  },
+  {
+   "seq": 10,
+   "step": "05-04",
+   "slug": "hole_plate-export-before",
+   "recordedAt": "2026-10-22T07:53:05.468Z",
+   "action": "核對 STL 匯出路徑、檔名與目前選項",
+   "observed": "目標 D:\\others\\study\\Blender-Learning\\learning\\evidence\\05\\2026-10-22-lesson05-export-demo-v003\\demo-files\\exports\\ / u05_hole_plate_v001.stl；選項 {'only_selected': False, 'global_scale': 1.0, 'use_scene_unit': False, 'apply_modifiers': True, 'forward_axis': 'Y', 'up_axis': 'Z', 'ascii_format': False, 'use_batch': False, 'evaluation_mode': 'DAG_EVAL_RENDER'}。",
+   "window": "FILE_BROWSER",
+   "highlights": [
+    {
+     "x": 248,
+     "y": 566,
+     "w": 780,
+     "h": 25,
+     "label": "匯出 v001"
+    },
+    {
+     "x": 920,
+     "y": 148,
+     "w": 135,
+     "h": 22,
+     "label": "Selection Only"
+    },
+    {
+     "x": 920,
+     "y": 170,
+     "w": 135,
+     "h": 43,
+     "label": "Scale 1 / Scene Unit"
+    }
+   ],
+   "clicks": [],
+   "file": "05-04-10-hole_plate-export-before.png",
+   "width": 1060,
+   "height": 600,
+   "sha256": "532217dd995cb982877d5459fe142657deec29a9a4d1f06376b5277907339ccd"
+  },
+  {
+   "seq": 11,
+   "step": "05-04",
+   "slug": "hole_plate-export-options",
+   "recordedAt": "2026-10-22T07:53:07.268Z",
+   "action": "核對並勾選 Selection Only，其餘保持 Scale 1、Scene Unit 不勾，再驗證安全目標",
+   "observed": "Selection Only 開；Scale 1；Scene Unit 關；Apply Modifiers 開；Y Forward / Z Up；Binary；只匯出 Plate。",
+   "window": "FILE_BROWSER",
+   "highlights": [
+    {
+     "x": 920,
+     "y": 148,
+     "w": 135,
+     "h": 22,
+     "label": "Selection Only 開"
+    },
+    {
+     "x": 920,
+     "y": 170,
+     "w": 135,
+     "h": 43,
+     "label": "Scale 1 / Scene Unit 關"
+    },
+    {
+     "x": 789,
+     "y": 566,
+     "w": 126,
+     "h": 25,
+     "label": "Export STL"
+    }
+   ],
+   "clicks": [],
+   "file": "05-04-11-hole_plate-export-options.png",
+   "width": 1060,
+   "height": 600,
+   "sha256": "6d259aaad42e4b4fb7eba90e0bcc2966a186e7e9922eaf511a68d453c106fef7",
+   "note": "這兩份場景的 Unit Scale 已是 0.001，匯出數字以毫米解讀。STL 本身沒有單位標記；這些設定由實際視窗讀回。"
+  },
+  {
+   "seq": 12,
+   "step": "05-04",
+   "slug": "hole_plate-stl-checked",
+   "recordedAt": "2026-10-22T07:53:10.168Z",
+   "action": "按 Export STL，再直接解析磁碟 STL 的三角形、尺寸及拓樸，與來源網格比較",
+   "observed": "u05_hole_plate_v001.stl：142784 bytes、2854 三角形、檔內外形 [96.0, 26.0, 4.0]（按 mm 解讀）；Non Manifold 0、單殼、genus 6；SHA-256 8105d1ebdc04ed12a2b7f98cc3b728db74063c453961c33d165ac50e694c7c8b。",
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "05-04-12-hole_plate-stl-checked.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "0f02d0924db0fe28e4230b27478820b768bb49874f7a35ba4f4c8bb00c3b9583",
+   "note": "這是數位檔案檢查；尚未匯入切片軟體、列印、實體量測或試配。"
+  },
+  {
+   "seq": 13,
+   "step": "05-04",
+   "slug": "empty-mm-scene",
+   "recordedAt": "2026-10-22T07:53:22.569Z",
+   "action": "File > New > General，清空獨立場景，設毫米單位以重新匯入 STL 核對",
+   "observed": "本次新場景物件 0；Unit Scale 0.001；Length MILLIMETERS。",
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "05-04-13-empty-mm-scene.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "df2a5c2a188dd9ee9da153082857debb20fb38264747d612dd577c367cbc4056"
+  },
+  {
+   "seq": 14,
+   "step": "05-04",
+   "slug": "pin-import-dialog",
+   "recordedAt": "2026-10-22T07:53:25.869Z",
+   "action": "F3 搜尋 Import STL，選剛產出的實際 STL，核對匯入 Scale 與方向",
+   "observed": "從本次 exports 讀取 u05_fit_coupon_v001.stl；Scale 1、Scene Unit 關、Y Forward / Z Up。",
+   "window": "FILE_BROWSER",
+   "highlights": [
+    {
+     "x": 248,
+     "y": 566,
+     "w": 780,
+     "h": 25,
+     "label": "剛匯出的 STL"
+    },
+    {
+     "x": 789,
+     "y": 566,
+     "w": 126,
+     "h": 25,
+     "label": "Import STL"
+    }
+   ],
+   "clicks": [],
+   "file": "05-04-14-pin-import-dialog.png",
+   "width": 1060,
+   "height": 600,
+   "sha256": "474dad1b2a8c4388e65630003d49ad765ae3fc79c751cd3a8fa23809b5539003"
+  },
+  {
+   "seq": 15,
+   "step": "05-04",
+   "slug": "pin-reimported",
+   "recordedAt": "2026-10-22T07:53:31.669Z",
+   "action": "實際匯入 STL 後 Frame Selected，讀 Dimensions 與網格；孔板改斜視辨認六孔及凹點",
+   "observed": "從 STL 重新匯入 u05_fit_coupon_v001；Dimensions [10.000000474974513, 10.000000474974513, 8.00000037997961] mm；Non Manifold 0；與原來源及 STL 解析讀值一致。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 963,
+     "y": 383,
+     "w": 228,
+     "h": 77,
+     "label": "重新匯入後的 Dimensions"
+    }
+   ],
+   "clicks": [],
+   "file": "05-04-15-pin-reimported.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "500102cce1362e4b7d1245888a1f7c268fe9952b2e34aadb614d13e2dab53cd7"
+  },
+  {
+   "seq": 16,
+   "step": "05-04",
+   "slug": "hole_plate-import-dialog",
+   "recordedAt": "2026-10-22T07:53:35.369Z",
+   "action": "F3 搜尋 Import STL，選剛產出的實際 STL，核對匯入 Scale 與方向",
+   "observed": "從本次 exports 讀取 u05_hole_plate_v001.stl；Scale 1、Scene Unit 關、Y Forward / Z Up。",
+   "window": "FILE_BROWSER",
+   "highlights": [
+    {
+     "x": 248,
+     "y": 566,
+     "w": 780,
+     "h": 25,
+     "label": "剛匯出的 STL"
+    },
+    {
+     "x": 789,
+     "y": 566,
+     "w": 126,
+     "h": 25,
+     "label": "Import STL"
+    }
+   ],
+   "clicks": [],
+   "file": "05-04-16-hole_plate-import-dialog.png",
+   "width": 1060,
+   "height": 600,
+   "sha256": "36df2ac2afed4c447e8054698b966677f622ce1662e22e803140be2e559797b1"
+  },
+  {
+   "seq": 17,
+   "step": "05-04",
+   "slug": "hole_plate-reimported",
+   "recordedAt": "2026-10-22T07:53:42.869Z",
+   "action": "實際匯入 STL 後 Frame Selected，讀 Dimensions 與網格；孔板改斜視辨認六孔及凹點",
+   "observed": "從 STL 重新匯入 u05_hole_plate_v001；Dimensions [96.00000455975533, 26.000001234933734, 4.000000189989805] mm；Non Manifold 0；與原來源及 STL 解析讀值一致。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 963,
+     "y": 383,
+     "w": 228,
+     "h": 77,
+     "label": "重新匯入後的 Dimensions"
+    }
+   ],
+   "clicks": [],
+   "file": "05-04-17-hole_plate-reimported.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "6e0a57531b4341284eaae57cee320aa6698313f10de4e8df094359607c20a7fc"
+  },
+  {
+   "seq": 18,
+   "step": "05-04",
+   "slug": "exports-verified",
+   "recordedAt": "2026-10-22T07:53:44.069Z",
+   "action": "保存兩份 STL 與來源版本關聯、完整讀值及 verification.json",
+   "observed": "插銷 STL 10 × 10 × 8、孔板 STL 96 × 26 × 4（數值按 mm）；兩檔讀回及重新匯入通過。原 .blend 與副本雜湊不變；實際列印、量測、試配與合格間隙全部未填。",
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "05-04-18-exports-verified.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "6e0a57531b4341284eaae57cee320aa6698313f10de4e8df094359607c20a7fc",
+   "note": "本次完成的是 05-04 的 STL 匯出與數位尺寸核對部分；沒有完成列印／試配，也不更新學員完成進度。0.1～0.6 mm 全部保留為試驗點。"
+  }
+ ]
+}

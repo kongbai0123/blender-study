@@ -1,0 +1,33 @@
+{
+  "reviewedOn": "2026-10-25",
+  "purpose": "軟體回歸與證據完整性；不包含支撐、列印、材料、強度或配合驗證。",
+  "checks": [
+    {
+      "command": "python -X utf8 -m unittest discover -s learning/tutor/tests",
+      "exitCode": 0,
+      "testsRun": 205,
+      "passed": 204,
+      "skipped": 1,
+      "skipReason": "Windows symlink privilege not available",
+      "elapsedSecondsReported": 9.749
+    },
+    {
+      "command": "python -X utf8 -m unittest discover -s learning/tests",
+      "exitCode": 0,
+      "testsRun": 17,
+      "passed": 17,
+      "elapsedSecondsReported": 16.551
+    },
+    {
+      "command": "node --check learning/web/app.js",
+      "exitCode": 0
+    },
+    {
+      "command": "python -B learning/tutor/audit_overhang.py learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001",
+      "exitCode": 0,
+      "passed": true,
+      "reportPath": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/independent-audit-v001.json",
+      "reportSha256": "0541cdfe468b68a3972094b103395e592be3de333e7e3f7e31f0adadd72e4a10"
+    }
+  ]
+}

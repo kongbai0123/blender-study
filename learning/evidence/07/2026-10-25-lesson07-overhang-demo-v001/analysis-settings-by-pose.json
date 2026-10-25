@@ -1,0 +1,50 @@
+{
+  "body_baseline": {
+    "type": "OVERHANG",
+    "axis": "NEG_Z",
+    "minimum_radians": 0.0,
+    "maximum_radians": 0.7853981852531433,
+    "minimum_deg": 0.0,
+    "maximum_deg": 45.00000125223908,
+    "show_statvis": true,
+    "show_overlays": true,
+    "shading": "SOLID",
+    "xray": false
+  },
+  "body_candidate": {
+    "type": "OVERHANG",
+    "axis": "NEG_Z",
+    "minimum_radians": 0.0,
+    "maximum_radians": 0.7853981852531433,
+    "minimum_deg": 0.0,
+    "maximum_deg": 45.00000125223908,
+    "show_statvis": true,
+    "show_overlays": true,
+    "shading": "SOLID",
+    "xray": false
+  },
+  "lid_baseline": {
+    "type": "OVERHANG",
+    "axis": "NEG_Z",
+    "minimum_radians": 0.0,
+    "maximum_radians": 0.7853981852531433,
+    "minimum_deg": 0.0,
+    "maximum_deg": 45.00000125223908,
+    "show_statvis": true,
+    "show_overlays": true,
+    "shading": "SOLID",
+    "xray": false
+  },
+  "lid_candidate": {
+    "type": "OVERHANG",
+    "axis": "NEG_Z",
+    "minimum_radians": 0.0,
+    "maximum_radians": 0.7853981852531433,
+    "minimum_deg": 0.0,
+    "maximum_deg": 45.00000125223908,
+    "show_statvis": true,
+    "show_overlays": true,
+    "shading": "SOLID",
+    "xray": false
+  }
+}

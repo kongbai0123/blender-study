@@ -1,0 +1,3 @@
+sample_id,role,nominal_x_mm,nominal_y_mm,nominal_z_mm,designed_total_clearance_mm,designed_per_side_clearance_mm,measured_x_mm,measured_y_mm,measured_z_mm,fit_observation,conditions_reference,scene_version,notes
+pin-v001,pin,10,10,8,,,,,,,2026-10-22-print-conditions-v001.json,,Nominal design only; physical measurements pending
+hole-pending,hole,,,,,,,,,,2026-10-22-print-conditions-v001.json,,Clearance and hole sizes pending; total clearance=hole-pin; per-side=total/2 for centered matching square sections

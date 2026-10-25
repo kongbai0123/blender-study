@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "recorded_on": "2026-10-25",
+  "record_role": "thread_terminology_and_blender_sweep_source_facts",
+  "scope": "08-01自編工程補充的定義與建模映射；不是選定螺紋規格、尺寸表、製程或實體合格依據。",
+  "installed_blender": {"version":"5.2.1 LTS","build_hash":"9e2066aef7ef"},
+  "sources": [
+    {"id":"blender_screw_manual_52","title":"Blender 5.2 LTS Manual — Screw Modifier","url":"https://docs.blender.org/manual/en/5.2/modeling/modifiers/generate/screw.html","review_scope":"官方Options／Normals文字已核對，未收錄來源示意圖。latest別名讀取時標題亦為5.2 LTS。","locator":"Options: Angle, Screw, Iterations, Axis, Steps Viewport, Render, Merge; Normals"},
+    {"id":"blender_screw_api","title":"Blender Python API — ScrewModifier","url":"https://docs.blender.org/api/current/bpy.types.ScrewModifier.html","review_scope":"官方API參數定義摘錄；current可變，行為歧義另以已安裝build原始碼核對。","locator":"angle, screw_offset, iterations, steps, render_steps, use_object_screw_offset"},
+    {"id":"blender_screw_build","title":"Blender installed-build MOD_screw.cc","url":"https://github.com/blender/blender/blob/9e2066aef7ef/source/blender/modifiers/intern/MOD_screw.cc","pinned_commit":"9e2066aef7ef","review_scope":"已核對與已安裝build對應的程式片段；只保存轉述與公式推論，不收錄整檔。","locator":"L190 render/viewport steps; L325–331 angle/offset repetitions; L360 axis merge condition; L700–713 rotation and translation"},
+    {"id":"sandvik_definitions","title":"Sandvik Coromant — Threading formulas and definitions","url":"https://www.sandvik.coromant.com/en-us/knowledge/machining-formulas-definitions/threading-formulas-definitions","review_scope":"官方製造商的pitch、profile angle、helix angle定義；不採切削參數或金屬加工建議作列印值。","locator":"Pitch; Profile angle; Helix angle"},
+    {"id":"sandvik_multistart","title":"Sandvik Coromant — Thread turning application tips","url":"https://www.sandvik.coromant.com/en-us/knowledge/threading/thread-turning/thread-turning-application-tips","review_scope":"Multi-start thread段落已讀；僅借pitch/lead/starts基本關係，不借刀具或製程數值。","locator":"Multi-start thread"},
+    {"id":"iso68_scope","title":"ISO 68-1:2023 — Basic and design profiles, metric screw threads","url":"https://www.iso.org/standard/85107.html","review_scope":"只核官方摘要、標題與版次，未讀取或取得完整標準及尺寸表。","full_standard_reviewed":false},
+    {"id":"iso5408_scope","title":"ISO 5408:2009 — Screw threads, vocabulary","url":"https://www.iso.org/standard/44424.html","review_scope":"只核官方標題與詞彙標準範圍，未取得完整正文。","full_standard_reviewed":false}
+  ],
+  "facts": [
+    {"id":"pitch_lead_starts","statement":"螺距P沿軸向比較相鄰對應牙；導程l為每完整一轉的軸向前進量，線數n的關係為l=nP。線數不是掃掠重複次數。","source_ids":["sandvik_definitions","sandvik_multistart"],"kind":"paraphrased_source_definition"},
+    {"id":"profile_vs_helix_angle","statement":"牙型角在包含軸的截面中比較兩牙側；螺旋升角是在中徑位置相對垂直軸平面的角度，兩者不是同一參數。","source_ids":["sandvik_definitions"],"kind":"paraphrased_source_definition"},
+    {"id":"general_sweep_mapping","statement":"Object Screw關閉、軸固定時，令單次Angle=θ radians、Screw軸移=S、Iterations=I；總旋轉θI、總軸移SI。θ非零時每完整轉的帶符號軸向導程為2πS/θ，總旋轉圈數為|θ|I/(2π)。","source_ids":["blender_screw_api","blender_screw_build"],"kind":"inference_from_installed_build_implementation","numeric_values_applied":false},
+    {"id":"single_turn_condition","statement":"Object Screw關閉且Angle=360°時，Screw才直接對應每完整轉的導程；再限制單線n=1才能寫Screw=P。Iterations延長同一掃掠，不能拿來表示多頭螺紋。","source_ids":["blender_screw_api","blender_screw_build","sandvik_multistart"],"kind":"inference_from_source_definitions_and_implementation"},
+    {"id":"sampling_and_caps","statement":"Viewport與Render可用不同分段；程式依每段Angle掃掠取樣，360°時才可直稱每整圈分段。非零總軸移下不能把軸上Merge當成螺紋牙端自動封實；平滑著色也不增加幾何分段。","source_ids":["blender_screw_manual_52","blender_screw_build"],"kind":"implementation_and_manual_paraphrase"},
+    {"id":"clearance_scope","statement":"同軸同一對應圓截面作純徑向偏移時，直徑差為單邊徑向量的兩倍；這個幾何恆等式不能取代牙側法向間隙、軸向背隙或標準公差配合。","source_ids":[],"kind":"elementary_geometry_scope_note_not_a_manufacturing_recommendation"},
+    {"id":"standards_scope","statement":"ISO基本牙型或詞彙的官方摘要不足以選定任何M尺寸、公差等級或宣稱自訂列印件符合標準。","source_ids":["iso68_scope","iso5408_scope"],"kind":"review_scope_limitation"}
+  ],
+  "project_specific_conditions": [
+    "原04盒的60×40×30／內腔56×36×28／壁底2 mm由本地既有幾何與本次獨立Blender重新實測提供，不是螺紋來源文件給定。",
+    "第五單元只有0.1～0.6 mm總間隙幾何試驗點；尚無實際試配合格值，不能沿用為螺紋配合標準。",
+    "0.4 mm噴嘴為學員已提供條件；不據此推定線寬、材料、牙型、螺距或允許間隙。",
+    "螺紋路線、位置、對件、硬體型號、尺寸、公差、材料、列印與裝配條件尚未選定；08-01只保存原盒參照及未製作的參數表。"
+  ],
+  "source_images_used": false,
+  "full_standards_obtained": false,
+  "thread_standard_selected": null,
+  "manufacturing_parameters_selected": false,
+  "strength_or_fit_qualification": false
+}

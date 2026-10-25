@@ -1,0 +1,247 @@
+{
+ "scenario": "D:\\others\\study\\Blender-Learning\\learning\\tutor\\scenarios\\lesson08_parameters.py",
+ "blender": "5.2.1 LTS",
+ "buildHash": "9e2066aef7ef",
+ "records": [
+  {
+   "seq": 1,
+   "step": "08-01",
+   "slug": "source-open-dialog",
+   "recordedAt": "2026-10-25T12:29:02.390Z",
+   "action": "File > Open…：開啟原 04 盒體的同雜湊副本",
+   "observed": "資料夾 D:\\others\\study\\Blender-Learning\\learning\\evidence\\08\\2026-10-25-lesson08-parameters-demo-v001\\demo-files\\sources\\；檔名 u04_box_v001.blend。",
+   "window": "FILE_BROWSER",
+   "highlights": [
+    {
+     "x": 248,
+     "y": 566,
+     "w": 780,
+     "h": 25,
+     "label": "原盒 v001 副本"
+    },
+    {
+     "x": 789,
+     "y": 566,
+     "w": 126,
+     "h": 25,
+     "label": "Open"
+    }
+   ],
+   "clicks": [],
+   "file": "08-01-01-source-open-dialog.png",
+   "width": 1060,
+   "height": 600,
+   "sha256": "2fd6a3c66d9f900dbaa7ec652b0beed9eb732edbb2f3798cffe229bf298a1c52"
+  },
+  {
+   "seq": 2,
+   "step": "08-01",
+   "slug": "source-checked",
+   "recordedAt": "2026-10-25T12:29:06.390Z",
+   "action": "Object Mode：選 Cube，從實際網格重驗原盒基準",
+   "observed": "原盒外形 [60.0, 40.0, 30.0]、內腔 [56.0, 36.0, 28.0] mm；壁／底 2 mm、體積 15552 mm³、Non Manifold 0。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 963,
+     "y": 383,
+     "w": 228,
+     "h": 77,
+     "label": "原盒外形 60 × 40 × 30 mm"
+    }
+   ],
+   "clicks": [],
+   "file": "08-01-02-source-checked.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "553d16ae73d6789e63151c705c2c9231cee91ba7a5712084489555ef213e1e64",
+   "note": "本步只整理螺紋規格與建模參數；沒有牙、柱、導孔或配對件，也沒有材料或強度結果。"
+  },
+  {
+   "seq": 3,
+   "step": "08-01",
+   "slug": "reference-top",
+   "recordedAt": "2026-10-25T12:29:16.340Z",
+   "action": "隱藏 Camera／Light；UI 改名 Body_Reference，數字鍵盤 7 頂視並 Frame Selected",
+   "observed": "Body_Reference Location (0 mm, 0 mm, 0 mm)、Dimensions (60 mm, 40 mm, 30 mm)、Scale (1, 1, 1)",
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "08-01-03-reference-top.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "4da568b6e1c627bed94f9597e4352d866a5761a755f540b838f0e58660e3f8d2",
+   "note": "這是從原04盒另建的螺紋參照分支；完整盒形不變，沒有承接卡扣、燕尾或已核准螺紋間隙。"
+  },
+  {
+   "seq": 4,
+   "step": "08-01",
+   "slug": "rim-face",
+   "recordedAt": "2026-10-25T12:29:18.941Z",
+   "action": "Edit Mode 面選取：點前側盒口環面，讀回 world Y 邊界",
+   "observed": "rim：實選 1 面／4 頂點，world min [-30.00000142492354, -20.000000949949026, 15.00000071246177]、max [30.00000142492354, -18.000000854954123, 15.00000071246177] mm；跨度 [60.00000284984708, 2.0000000949949026, 0.0] mm。",
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "08-01-04-rim-face.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "71f4e90f4ad1e2416be0df61bdb68eda91775f1eda878c732023f62cbaaf3cda",
+   "note": "Y −20 至 −18 的平面跨度是原盒壁厚參考 2 mm；角落斜邊不是 2 mm。這不是螺紋柱肉厚或合格條件。"
+  },
+  {
+   "seq": 5,
+   "step": "08-01",
+   "slug": "inner-floor",
+   "recordedAt": "2026-10-25T12:29:20.941Z",
+   "action": "頂視面選取：取消前一面，點內腔底面，記錄其 world Z",
+   "observed": "inner_floor：實選 1 面／4 頂點，world min [-28.000001329928637, -18.000000854954123, -13.000000617466867]、max [28.000001329928637, 18.000000854954123, -13.000000617466867] mm；跨度 [56.00000265985727, 36.00000170990825, 0.0] mm。",
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "08-01-05-inner-floor.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "a78e713c12c3af31a8e6d3d717bea1a8ca99891e3524c6991459654c174d8e6d",
+   "note": "內底 world Z −13 mm；面跨度 56 × 36。螺紋路線、位置、對件及尺寸均待定，原盒內底保持。"
+  },
+  {
+   "seq": 6,
+   "step": "08-01",
+   "slug": "outer-floor",
+   "recordedAt": "2026-10-25T12:29:23.341Z",
+   "action": "Ctrl + 數字鍵盤 7 底視：點外底面，與內底 Z 分開記錄",
+   "observed": "outer_floor：實選 1 面／4 頂點，world min [-30.00000142492354, -20.000000949949026, -15.00000071246177]、max [30.00000142492354, 20.000000949949026, -15.00000071246177] mm；跨度 [60.00000284984708, 40.00000189989805, 0.0] mm。",
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "08-01-06-outer-floor.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "6c583bd5aec0207b5c2c8c51ba50343bfa65b2ee6cea6c713ed21f5e5a983e52",
+   "note": "外底 Z −15 與內底 Z −13 相差 2 mm；只驗盒體基準，不推定螺紋尺寸、柱肉厚或允許扭矩。"
+  },
+  {
+   "seq": 7,
+   "step": "08-01",
+   "slug": "non-manifold",
+   "recordedAt": "2026-10-25T12:29:26.341Z",
+   "action": "邊選取、Alt+A，再 F3 > Select Non Manifold",
+   "observed": "實際 Select Non Manifold：選到 0 邊；實網格 Non Manifold 0。這不是強度或製程判定。",
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "08-01-07-non-manifold.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "cced4f7a89cbf44e9fe75a8cdfeefd24d06b7adff7c8407a09ed1132ea9b4962"
+  },
+  {
+   "seq": 8,
+   "step": "08-01",
+   "slug": "reference-overview",
+   "recordedAt": "2026-10-25T12:29:29.253Z",
+   "action": "回 Object Mode，改斜視；讀回完整原盒網格未變",
+   "observed": "參考盒仍為60×40×30／內腔56×36×28、壁底2mm；24個螺紋草案參數待補、沒有實作。路線selected=null，自訂列印僅助教候選，沒有建立Screw修改器或進行計算。",
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "08-01-08-reference-overview.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "76bd22f0091976802281b444aa8703b9cd939a107c4a70d4074a0d137816a576",
+   "note": "08-01只建立規格與建模參數紀錄；Blender映射只有文件關係，各數值未設定，沒有螺紋、柱、配對件或STL。"
+  },
+  {
+   "seq": 9,
+   "step": "08-01",
+   "slug": "save-dialog",
+   "recordedAt": "2026-10-25T12:29:34.153Z",
+   "action": "File > Save As…：另存原盒螺紋參照場景 u08_thread_reference_v001.blend",
+   "observed": "目標 D:\\others\\study\\Blender-Learning\\learning\\evidence\\08\\2026-10-25-lesson08-parameters-demo-v001\\demo-files\\；檔名 u08_thread_reference_v001.blend。",
+   "window": "FILE_BROWSER",
+   "highlights": [
+    {
+     "x": 248,
+     "y": 566,
+     "w": 780,
+     "h": 25,
+     "label": "只有原盒的參考版本 v001"
+    },
+    {
+     "x": 789,
+     "y": 566,
+     "w": 126,
+     "h": 25,
+     "label": "Save As"
+    }
+   ],
+   "clicks": [],
+   "file": "08-01-09-save-dialog.png",
+   "width": 1060,
+   "height": 600,
+   "sha256": "c11f36e2c4a9e910cac0798597435383e393947a4827e40f03250dc370ce40f5"
+  },
+  {
+   "seq": 10,
+   "step": "08-01",
+   "slug": "saved",
+   "recordedAt": "2026-10-25T12:29:37.453Z",
+   "action": "按 Save As，核對新檔路徑、bytes 與 SHA-256",
+   "observed": "已另存原盒參考場景，97955 bytes，SHA-256 9bda36c10fd916ef9cbe688f5ca56dcf8cfa0adb83d684300e60196225589d8f；原檔／讀取副本未變。",
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "08-01-10-saved.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "c322d309456343e96f1e6803487fe07e2bdaa6b67069d90e3aee50cff2c566bb"
+  },
+  {
+   "seq": 11,
+   "step": "08-01",
+   "slug": "open-saved",
+   "recordedAt": "2026-10-25T12:29:42.353Z",
+   "action": "File > Open…：重開剛才的原盒參考版本",
+   "observed": "目標 D:\\others\\study\\Blender-Learning\\learning\\evidence\\08\\2026-10-25-lesson08-parameters-demo-v001\\demo-files\\；檔名 u08_thread_reference_v001.blend。",
+   "window": "FILE_BROWSER",
+   "highlights": [
+    {
+     "x": 248,
+     "y": 566,
+     "w": 780,
+     "h": 25,
+     "label": "同一參考版本 v001"
+    },
+    {
+     "x": 789,
+     "y": 566,
+     "w": 126,
+     "h": 25,
+     "label": "Open"
+    }
+   ],
+   "clicks": [],
+   "file": "08-01-11-open-saved.png",
+   "width": 1060,
+   "height": 600,
+   "sha256": "ee21fc68888ccb7e56fb48702f26a368f7ea1262166902b802aae9008840d28c"
+  },
+  {
+   "seq": 12,
+   "step": "08-01",
+   "slug": "reopened-verified",
+   "recordedAt": "2026-10-25T12:29:45.753Z",
+   "action": "按 Open：重驗未修改原盒，保存參數表、三個實選面座標及 verification.json",
+   "observed": "重開實測與來源一致：60 × 40 × 30、壁底 2 mm／NM 0；只有原盒。參數表 v001 已綁定場景 hash；24個參數／路線／修改器設定仍待定；沒有建牙或柱、計算、STL、列印或試配。",
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "08-01-12-reopened-verified.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "05ccab2799c6d1965c1878130815b63d2bbff9cd4b87417c2d63458e52bc3472",
+   "note": "助教準備完成不等於學員已完成；不更新 progress、不做強度或配合合格判定。"
+  }
+ ]
+}

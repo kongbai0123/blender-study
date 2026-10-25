@@ -1,0 +1,167 @@
+{
+  "schema_version": 1,
+  "run": "2026-10-25-lesson05-lid-export-demo-v001",
+  "recorded_on": "2026-10-25",
+  "timezone": "Asia/Taipei",
+  "scope": "Digital lid export and CAD readback only; no physical fit conclusion",
+  "source_scene": {
+    "path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\05\\2026-10-22-lesson05-lid-demo-v001\\demo-files\\u05_lid_v001.blend",
+    "sha256": "ab08f331dcb26c5ffc6c6ca56c7c7f022df96791c4777e37c5f01a964fbed6ff",
+    "version": "v001"
+  },
+  "stl": {
+    "path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\05\\2026-10-25-lesson05-lid-export-demo-v001\\demo-files\\exports\\u05_lid_v001.stl",
+    "sha256": "0b226cf405bc70f42b5ce28fee9f46cb55eff67b84c6d786c091a2043f5f2408",
+    "bytes": 2284,
+    "version": "v001"
+  },
+  "nominal_trial": {
+    "status": "experimental_geometry_only",
+    "selected_by": "tutor",
+    "selection_context": "Continues the tutor-selected 05-05 geometry trial from the earlier trial-point range; not a learner-specified qualified value.",
+    "total_clearance_mm": 0.4,
+    "per_side_clearance_mm": 0.2,
+    "qualified_clearance_mm": null
+  },
+  "actual_cad_measurements": {
+    "measurement_scope": "Nominal mesh geometry and placement; these are not physical printed measurements",
+    "source_lid": {
+      "dimensions_mm": [
+        60.0,
+        40.0,
+        6.0
+      ],
+      "bounds_mm": {
+        "min": [
+          -30.0,
+          -20.0,
+          11.0
+        ],
+        "max": [
+          30.0,
+          20.0,
+          17.0
+        ]
+      },
+      "plate_dimensions_mm": [
+        60.0,
+        40.0,
+        2.0
+      ],
+      "plate_thickness_mm": 2.0,
+      "ring_outer_mm": [
+        55.599998474121094,
+        35.599998474121094
+      ],
+      "ring_inner_mm": [
+        51.599998474121094,
+        31.599998474121094
+      ],
+      "ring_wall_mm": 2.0,
+      "ring_depth_mm": 4.0,
+      "volume_mm3": 6195.199951171875,
+      "non_manifold_edges": 0,
+      "connected_shells": 1,
+      "genus": 0
+    },
+    "reimport_lid": {
+      "dimensions_mm": [
+        60.0,
+        40.0,
+        6.0
+      ],
+      "bounds_mm": {
+        "min": [
+          -30.0,
+          -20.0,
+          11.0
+        ],
+        "max": [
+          30.0,
+          20.0,
+          17.0
+        ]
+      },
+      "plate_dimensions_mm": [
+        60.0,
+        40.0,
+        2.0
+      ],
+      "plate_thickness_mm": 2.0,
+      "ring_outer_mm": [
+        55.599998474121094,
+        35.599998474121094
+      ],
+      "ring_inner_mm": [
+        51.599998474121094,
+        31.599998474121094
+      ],
+      "ring_wall_mm": 2.0,
+      "ring_depth_mm": 4.0,
+      "volume_mm3": 6195.199951171875,
+      "non_manifold_edges": 0,
+      "connected_shells": 1,
+      "genus": 0
+    },
+    "digital_assembly": {
+      "scope": "nominal mesh placement only; physical fit remains untested",
+      "geometric_nonintersection": true,
+      "interior_volume_overlap_mm3": 0.0,
+      "per_side_order": [
+        "negative_x",
+        "positive_x",
+        "negative_y",
+        "positive_y"
+      ],
+      "per_side_clearances_mm": [
+        0.20000076293945312,
+        0.20000076293945312,
+        0.20000076293945312,
+        0.20000076293945312
+      ],
+      "total_clearances_mm": [
+        0.40000152587890625,
+        0.40000152587890625
+      ],
+      "trial_total_clearance_mm": 0.4,
+      "engagement_mm": 4.0,
+      "cavity_depth_mm": 28.0,
+      "floor_reserve_mm": 24.0,
+      "rim_contact_z_mm": 15.0,
+      "physical_interference": null,
+      "printed": false,
+      "fit_tested": false,
+      "qualified_clearance_mm": null
+    },
+    "stl_reimport_verified": true
+  },
+  "print_conditions": {
+    "evidence": {
+      "path": "learning/evidence/05/2026-10-22-print-conditions-v001.json",
+      "sha256": "61b631d2b7f815ea046b2afd5216dfa6b0f5dd8a0ef550b062fff6be6c4f6ca8"
+    },
+    "nozzle_diameter_mm": 0.4,
+    "printing_process": null,
+    "printer_model": null,
+    "material": null,
+    "extrusion_width_mm": null,
+    "layer_height_mm": null,
+    "print_orientation": null,
+    "slicer": null,
+    "note": "Only the learner-provided 0.4 mm nozzle diameter is known. It does not establish extrusion width, material, print process or a qualified fit clearance."
+  },
+  "slicer_checked": false,
+  "bed_placement_checked": false,
+  "printed": false,
+  "fit_tested": false,
+  "physical_measurements": null,
+  "fit_results": null,
+  "physical_interference": null,
+  "qualified_clearance_mm": null,
+  "numeric_comparison": {
+    "purpose": "Floating point reconstruction only; not manufacturing tolerance or printed fit acceptance",
+    "dimensionsAbsMm": 0.0001,
+    "volumeRelative": 1e-05
+  },
+  "numeric_comparison_note": "1e-4 mm and volume-relative 1e-5 are floating-point reconstruction checks, not manufacturing tolerances or fit acceptance limits."
+}

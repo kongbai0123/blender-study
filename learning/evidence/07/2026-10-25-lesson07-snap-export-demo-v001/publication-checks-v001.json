@@ -1,0 +1,346 @@
+{
+  "recordedAt": "2026-10-25T09:16:52.872807+00:00",
+  "evidencePassed": true,
+  "publicationPending": false,
+  "browserProofPending": false,
+  "images": [
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-01-body-source-dialog.png",
+      "status": 200,
+      "sha256": "983a391a8141c6eaa1201672c3c30641c12878fc2003185eb56981d702e0f4c5",
+      "bytes": 52466,
+      "exactBytes": true,
+      "width": 1060,
+      "height": 600,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-02-body-source-selected.png",
+      "status": 200,
+      "sha256": "25aece8c5aafe6484d02d09998acc95bf1074a4aa3d77a006e460de43c2c79f9",
+      "bytes": 146719,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-03-body-source-profile.png",
+      "status": 200,
+      "sha256": "9ded1e6ae13eb76037f280eabc232b3a477c099c7a210c631d4afa8e635d0f07",
+      "bytes": 198025,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-04-body-export-menu.png",
+      "status": 200,
+      "sha256": "1adcd141368a56cbcc688d4837d7be364a72d54f6254bdabb106abe610bdfd9a",
+      "bytes": 212864,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-05-body-export-before.png",
+      "status": 200,
+      "sha256": "b2b95106f63c04f37583a111a40c0f17c9f1804d8484f260db1a067175a06c66",
+      "bytes": 67022,
+      "exactBytes": true,
+      "width": 1060,
+      "height": 600,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-06-body-export-options.png",
+      "status": 200,
+      "sha256": "0dcb53baedfe2fb310a691c836bb7a9eda4ac9009613fb00106db98319d36a56",
+      "bytes": 67321,
+      "exactBytes": true,
+      "width": 1060,
+      "height": 600,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-07-body-stl-checked.png",
+      "status": 200,
+      "sha256": "9de8f23e51c7a527168defe1de33b5feac1cb31246b42c00f7b7daaa8f5e0c6d",
+      "bytes": 200970,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-08-lid-source-dialog.png",
+      "status": 200,
+      "sha256": "ddf776089a4b127f3994cfdb5462801f22a3b6bb67cf4a9f30c8e09a86123389",
+      "bytes": 55539,
+      "exactBytes": true,
+      "width": 1060,
+      "height": 600,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-09-lid-source-selected.png",
+      "status": 200,
+      "sha256": "6e81d9a9bc0da28dcf24e9d8db8a6905721be173fe77543b0c58603432c095e3",
+      "bytes": 147102,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-10-lid-source-profile.png",
+      "status": 200,
+      "sha256": "5887645d79efdda6f3429286e5467a503cf42d9cd67a1883166cdfd7da6e8c50",
+      "bytes": 198480,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-11-lid-export-menu.png",
+      "status": 200,
+      "sha256": "1602c71e0a85b868fd707699a0a94be6252fbb2a82c33fbcd2a476cf1dce0b24",
+      "bytes": 214905,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-12-lid-export-before.png",
+      "status": 200,
+      "sha256": "fbf22278fc7f16f007463b2ed2e9700432db0e139f2e8f5bccc0fd0782b79733",
+      "bytes": 70558,
+      "exactBytes": true,
+      "width": 1060,
+      "height": 600,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-13-lid-export-options.png",
+      "status": 200,
+      "sha256": "529a3a39621373e6c3936ca84b0dd57df94c4979dc63b91c24f7805bcc4a3b6c",
+      "bytes": 70912,
+      "exactBytes": true,
+      "width": 1060,
+      "height": 600,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-14-lid-stl-checked.png",
+      "status": 200,
+      "sha256": "de2465afcf4f52010e054dc123f3fc31574cd721305fb0c71e0f9534264a34eb",
+      "bytes": 201417,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-15-empty-mm-scene.png",
+      "status": 200,
+      "sha256": "4adc8aebf5e4a772bee8fce4eb6b599831c2910744002fc3fb9242704c87f51c",
+      "bytes": 163109,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-16-body-import-dialog.png",
+      "status": 200,
+      "sha256": "9d1ebf39c7724cc9b9949163e0632b01787da6ebbfe7a5bdc0baf9fd8c21a2c4",
+      "bytes": 69663,
+      "exactBytes": true,
+      "width": 1060,
+      "height": 600,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-17-body-reimport-dimensions.png",
+      "status": 200,
+      "sha256": "119395eb4abc4d935d65e166660c7cdb2bc738e62738a3eaf68d07da08fd49e3",
+      "bytes": 178642,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-18-body-reimport-profile.png",
+      "status": 200,
+      "sha256": "4206d415221f58505c95dc9bac35e25e1b8e544cc028a13c492b364039970b67",
+      "bytes": 229725,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-19-body-reimport-non-manifold.png",
+      "status": 200,
+      "sha256": "da4090e7382db2237e98875efd85f9ee44c7d0bc6c3159266cf6c4fbed0092ff",
+      "bytes": 251870,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-20-lid-import-dialog.png",
+      "status": 200,
+      "sha256": "e83e42d85aa2b998a3ff943aa55802fac1903458fe95623a46f60f13d6660517",
+      "bytes": 69412,
+      "exactBytes": true,
+      "width": 1060,
+      "height": 600,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-21-lid-reimport-dimensions.png",
+      "status": 200,
+      "sha256": "1870d4391e17be49e286759fcf23b5ff726966ba26ea2a4adb08caeee023dee8",
+      "bytes": 180437,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-22-lid-reimport-profile.png",
+      "status": 200,
+      "sha256": "a502dcc49b2fa1cb643295d04fae0e35023fddc739c3272c28eb8a9d37374332",
+      "bytes": 232104,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-23-lid-reimport-non-manifold.png",
+      "status": 200,
+      "sha256": "41a3b5b82865be5945ed1115af79c586473fe62baeae23c28ca0cb5fedace95d",
+      "bytes": 238183,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-24-reimport-layout.png",
+      "status": 200,
+      "sha256": "1c60b2b28d47b635a123f4e595f0f207824d1ae1f72d6c5b076f15e86ac72cd3",
+      "bytes": 184890,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-25-exports-verified.png",
+      "status": 200,
+      "sha256": "1c60b2b28d47b635a123f4e595f0f207824d1ae1f72d6c5b076f15e86ac72cd3",
+      "bytes": 184890,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    }
+  ],
+  "downloads": [
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/demo-files/exports/u07_snap_body_v001.stl",
+      "status": 200,
+      "sha256": "6ee4b13556db93196189604a96a0dbf3074fcaf6dd3423b3fc86cc2421910ff8",
+      "bytes": 5884,
+      "exactBytes": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/demo-files/exports/u07_snap_lid_v001.stl",
+      "status": 200,
+      "sha256": "c80ea7d584a2f71cc0b2619ff903bdff57d8c97441d61111a0e8c7b839f55c21",
+      "bytes": 2484,
+      "exactBytes": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/stl-export-record-v001.json",
+      "status": 200,
+      "sha256": "b3b3745d714a628b5155b01fbfeca81cda50855aaeb95aa757f616ea58ee268a",
+      "bytes": 386077,
+      "exactBytes": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/export-manifest-v001.json",
+      "status": 200,
+      "sha256": "4331a4cda06d06209de5f064c4dc17cdbc9f734a405d1e220f0c9ed9571757da",
+      "bytes": 54474,
+      "exactBytes": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/trial-fit-record-v001.json",
+      "status": 200,
+      "sha256": "3064067712844dca829fdcd9a58e68223dba5c63b3ee66b1cb8825db841e2670",
+      "bytes": 4979,
+      "exactBytes": true
+    },
+    {
+      "path": "learning/journal/2026-10-25-lesson07-snap-export-demo-v001.md",
+      "status": 200,
+      "sha256": "04e74d1db08a61348e43619c86079a5023b530121f201c59f02e2254dc5de1f7",
+      "bytes": 9342,
+      "exactBytes": true
+    }
+  ],
+  "passed": true,
+  "changedSteps": [
+    "07-04"
+  ],
+  "stepFingerprintsCompared": 52,
+  "catalogSha256": "c55f6752566dce71021e319333a73f7ad26f5fa91dc38fec99d181000d2b5b1c",
+  "apiCatalogMatchesDisk": true,
+  "apiProgressMatchesDisk": true,
+  "progressSha256": "d92e4f2ee78a1cf41386816b8616bf635b89fb25f8bfd813ac00cd20ed20b4ef",
+  "progressRevision": 5,
+  "learnerCompletionConfirmed": false,
+  "browserProof": {
+    "path": "learning/evidence/ui/2026-10-25-lesson07-snap-export-demo-v001.json",
+    "sha256": "2f8253abd88825e3edd8aad619380beb78cc39e9da2691684556a602ff3c4e7a",
+    "screenshots": [
+      {
+        "path": "learning/evidence/ui/2026-10-25-lesson07-snap-export-demo-v001-final-overview.jpg",
+        "sha256": "f041c0abd208d807b72aa759583b17aefadb55f4f99c11841d3a46bf4c953504",
+        "bytes": 40837,
+        "width": 304,
+        "height": 848,
+        "pixelEdits": false,
+        "role": "overview"
+      },
+      {
+        "path": "learning/evidence/ui/2026-10-25-lesson07-snap-export-demo-v001-final-comparison.jpg",
+        "sha256": "bb597f0a618a362d638d3d3550dce96ff70f5776ec29fc79415a7f922c52c7de",
+        "bytes": 29414,
+        "width": 304,
+        "height": 848,
+        "pixelEdits": false,
+        "role": "comparison"
+      },
+      {
+        "path": "learning/evidence/ui/2026-10-25-lesson07-snap-export-demo-v001-final-conditions.jpg",
+        "sha256": "e6bac09d89f4747b5b482b4af5bae1f1493a0841b07ccae8a089c52ec08239d9",
+        "bytes": 36456,
+        "width": 304,
+        "height": 848,
+        "pixelEdits": false,
+        "role": "conditions"
+      }
+    ]
+  }
+}

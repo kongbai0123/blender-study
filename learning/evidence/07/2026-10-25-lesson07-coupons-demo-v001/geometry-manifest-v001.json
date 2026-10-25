@@ -1,0 +1,2899 @@
+{
+  "schema_version": 1,
+  "run": "2026-10-25-lesson07-coupons-demo-v001",
+  "run_version": "v001",
+  "scene_version": "v001",
+  "recorded_on": "2026-10-25",
+  "timezone": "Asia/Taipei",
+  "performed_by": "tutor",
+  "completion_scope": "07-05 three independent standalone anchor/beam/hook geometry coupons with one changed geometric root-to-bearing length, candidate rigid poses and a saved/reopened scene. No full-box variant, designated counterpart/fixture, mechanical effective length, support, STL, printing, fit or validated improvement.",
+  "source_scene": {
+    "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/demo-files/u07_print_orientation_v001.blend",
+    "sha256": "360417f208287a94ca13501f4365b70b3396ca6aba579231e0f8d2a442ecf47d",
+    "bytes": 106462,
+    "unchanged": true
+  },
+  "opened_source_copy": {
+    "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/demo-files/sources/u07_print_orientation_v001.blend",
+    "sha256": "360417f208287a94ca13501f4365b70b3396ca6aba579231e0f8d2a442ecf47d",
+    "bytes": 106462,
+    "unchanged": true,
+    "is_new_checkpoint": false
+  },
+  "source_tool_reference": {
+    "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/snap_tool_mesh.json",
+    "sha256": "c60a6ed737f426277e0157ad1f7554a3070ba4395aec319693d6a2d9104c6140",
+    "bytes": 7191
+  },
+  "source_geometry_record": {
+    "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/geometry-draft-record-v001.json",
+    "sha256": "4f201124cbf51dc849c7978ee85f7ff5e58ca4273cdd9b006d3eba6c52521b7a",
+    "bytes": 58367
+  },
+  "historical_export_reference": {
+    "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/stl-export-record-v001.json",
+    "sha256": "b3b3745d714a628b5155b01fbfeca81cda50855aaeb95aa757f616ea58ee268a",
+    "bytes": 386077,
+    "role": "lineage only; no counterpart assignment"
+  },
+  "draft_plan": {
+    "path": "learning/plans/07-05-coupon-length-draft-v001.json",
+    "sha256": "35905a851b846b757bbdbb9321708606b4497a0dc4d5d1cdea0f8735d303dd33",
+    "bytes": 5881
+  },
+  "new_scene": {
+    "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/demo-files/u07_cantilever_length_coupons_v001.blend",
+    "sha256": "22072532eed0f6fcc506bb435ed8d65fcaeaef583ea41d90c4e8c9665b82e9b8",
+    "bytes": 108728,
+    "reopened": true,
+    "scene_role": "standalone_length_geometry_comparison_draft"
+  },
+  "coupon_record": {
+    "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/coupon-record-v001.json",
+    "sha256": "1180c5194a5ec09af9186e2e3f69761e5460a4350f9019e9d1020a44e127c01d",
+    "bytes": 452168
+  },
+  "blank_trial_record": {
+    "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/trial-fit-record-v001.json",
+    "sha256": "66adde143a60fe0ef8a5ec61eb101dadc8a2a0e833b9aa4d74be19f2cdffd517",
+    "bytes": 6700
+  },
+  "previous_artifacts_unchanged": [
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/demo-files/exports/u07_snap_body_v001.stl",
+      "sha256": "6ee4b13556db93196189604a96a0dbf3074fcaf6dd3423b3fc86cc2421910ff8",
+      "bytes": 5884,
+      "role": "unchanged previous artifact; not an assigned mating counterpart for these coupons"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/demo-files/exports/u07_snap_lid_v001.stl",
+      "sha256": "c80ea7d584a2f71cc0b2619ff903bdff57d8c97441d61111a0e8c7b839f55c21",
+      "bytes": 2484,
+      "role": "unchanged previous artifact; not an assigned mating counterpart for these coupons"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/trial-fit-record-v001.json",
+      "sha256": "3064067712844dca829fdcd9a58e68223dba5c63b3ee66b1cb8825db841e2670",
+      "bytes": 4979,
+      "role": "unchanged previous artifact; not an assigned mating counterpart for these coupons"
+    }
+  ],
+  "source_geometry_modified": false,
+  "coupon_geometry_modified": true,
+  "per_variant_geometry_modified": {
+    "A_L19": false,
+    "B_L17": true,
+    "C_L21": true
+  },
+  "variants": {
+    "A_L19": {
+      "geometry_modified": false,
+      "actual_source_frame_geometry": {
+        "L_geometry_mm": 19.0,
+        "root_plane_z_mm": -8.0,
+        "bearing_plane_z_mm": 11.0,
+        "arm_top_z_mm": 13.0,
+        "total_arm_height_mm": 21.0,
+        "whole_coupon_height_mm": 24.0
+      },
+      "candidate_inverse_frame_geometry": {
+        "L_geometry_mm": 18.99999984105428,
+        "root_plane_z_mm": -7.99999984105428,
+        "bearing_plane_z_mm": 11.0,
+        "arm_top_z_mm": 13.0,
+        "total_arm_height_mm": 20.99999984105428,
+        "whole_coupon_height_mm": 24.00000023841858
+      },
+      "source_frame_dimensions_mm": [
+        9.0,
+        4.599998474121094,
+        24.0
+      ],
+      "source_frame_volume_mm3": 339.4844908728352,
+      "candidate_world_bounds_mm": {
+        "min": [
+          -1.500000238418579,
+          -14.300000190734863,
+          -6.556707887739321e-08
+        ],
+        "max": [
+          22.5,
+          -9.699999809265137,
+          9.0
+        ]
+      },
+      "candidate_world_dimensions_mm": [
+        24.00000023841858,
+        4.600000381469727,
+        9.000000065567079
+      ],
+      "candidate_world_volume_mm3": 339.4847682164305,
+      "non_manifold_edges": 0,
+      "connected_shells": 1,
+      "genus": 0,
+      "mesh_counts": {
+        "vertices": 42,
+        "edges": 120,
+        "faces": 80,
+        "triangles": 80,
+        "representation": "world-space triangulated mesh"
+      },
+      "mesh_data_name": "Cube.004",
+      "object_location_mm": [
+        0.0,
+        -12.0,
+        4.5
+      ],
+      "object_rotation_euler_radians": [
+        -0.0,
+        1.5707963705062866,
+        0.0
+      ],
+      "object_axis_dimensions_mm": [
+        9.0,
+        4.599999904632568,
+        24.0
+      ],
+      "source_surface_match_passed": true,
+      "canonical_vertex_mapping": {
+        "reference_point_count": 42,
+        "reference_upper_count": 14,
+        "all_reference_vertices_present": true,
+        "maximum_nearest_vertex_residual_mm": 1.3486991523486091e-06,
+        "native_vertex_identity_proof_available": true,
+        "surface_equivalence_does_not_require_native_vertex_count": true,
+        "ui_selected_indices_are_separate_execution_evidence": true
+      },
+      "bed_and_raised_features": {
+        "bed_reference_z_mm": 0.0,
+        "minimum_world_z_mm": -6.556707887739321e-08,
+        "bed_contact_triangle_count": 2,
+        "bed_contact_triangle_indices": [
+          4,
+          5
+        ],
+        "bed_contact_area_mm2": 13.800001144409194,
+        "bed_contact_scope": "actual downward loop triangles wholly on Z=0 numeric plane; anchor side only",
+        "raised_features": {
+          "straight_beam": {
+            "world_z_range_mm": [
+              1.4999990463256836,
+              7.5
+            ],
+            "triangle_count": 6,
+            "triangle_indices": [
+              58,
+              64,
+              65,
+              70,
+              71,
+              78
+            ],
+            "surface_area_mm2": 250.24001050949147,
+            "all_feature_samples_above_bed": true
+          },
+          "root_fillet_and_miters": {
+            "world_z_range_mm": [
+              0.9000000357627869,
+              8.09999942779541
+            ],
+            "triangle_count": 26,
+            "triangle_indices": [
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51,
+              52,
+              53,
+              54,
+              55,
+              57,
+              77
+            ],
+            "surface_area_mm2": 13.694103084616344,
+            "all_feature_samples_above_bed": true
+          },
+          "upper_hook": {
+            "world_z_range_mm": [
+              1.4999990463256836,
+              7.499999046325684
+            ],
+            "triangle_count": 22,
+            "triangle_indices": [
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31
+            ],
+            "surface_area_mm2": 55.748227325664395,
+            "all_feature_samples_above_bed": true
+          }
+        },
+        "support_required": null,
+        "scope": "geometric heights/contact area only; no support, bridge, adhesion or strength decision"
+      }
+    },
+    "B_L17": {
+      "geometry_modified": true,
+      "actual_source_frame_geometry": {
+        "L_geometry_mm": 17.0,
+        "root_plane_z_mm": -8.0,
+        "bearing_plane_z_mm": 9.0,
+        "arm_top_z_mm": 11.0,
+        "total_arm_height_mm": 19.0,
+        "whole_coupon_height_mm": 22.0
+      },
+      "candidate_inverse_frame_geometry": {
+        "L_geometry_mm": 16.99999984105428,
+        "root_plane_z_mm": -7.99999984105428,
+        "bearing_plane_z_mm": 9.0,
+        "arm_top_z_mm": 11.0,
+        "total_arm_height_mm": 18.99999984105428,
+        "whole_coupon_height_mm": 22.00000023841858
+      },
+      "source_frame_dimensions_mm": [
+        9.0,
+        4.599998474121094,
+        22.0
+      ],
+      "source_frame_volume_mm3": 320.28450918338206,
+      "candidate_world_bounds_mm": {
+        "min": [
+          -1.500000238418579,
+          -2.299999952316284,
+          -6.556707887739321e-08
+        ],
+        "max": [
+          20.5,
+          2.299999952316284,
+          9.0
+        ]
+      },
+      "candidate_world_dimensions_mm": [
+        22.00000023841858,
+        4.599999904632568,
+        9.000000065567079
+      ],
+      "candidate_world_volume_mm3": 320.28472258068575,
+      "non_manifold_edges": 0,
+      "connected_shells": 1,
+      "genus": 0,
+      "mesh_counts": {
+        "vertices": 42,
+        "edges": 120,
+        "faces": 80,
+        "triangles": 80,
+        "representation": "world-space triangulated mesh"
+      },
+      "mesh_data_name": "Cube.005",
+      "object_location_mm": [
+        0.0,
+        0.0,
+        4.5
+      ],
+      "object_rotation_euler_radians": [
+        -0.0,
+        1.5707963705062866,
+        0.0
+      ],
+      "object_axis_dimensions_mm": [
+        9.0,
+        4.599999904632568,
+        22.0
+      ],
+      "source_surface_match_passed": true,
+      "canonical_vertex_mapping": {
+        "reference_point_count": 42,
+        "reference_upper_count": 14,
+        "all_reference_vertices_present": true,
+        "maximum_nearest_vertex_residual_mm": 1.2672121301573098e-06,
+        "native_vertex_identity_proof_available": true,
+        "surface_equivalence_does_not_require_native_vertex_count": true,
+        "ui_selected_indices_are_separate_execution_evidence": true
+      },
+      "bed_and_raised_features": {
+        "bed_reference_z_mm": 0.0,
+        "minimum_world_z_mm": -6.556707887739321e-08,
+        "bed_contact_triangle_count": 2,
+        "bed_contact_triangle_indices": [
+          4,
+          5
+        ],
+        "bed_contact_area_mm2": 13.79999971389772,
+        "bed_contact_scope": "actual downward loop triangles wholly on Z=0 numeric plane; anchor side only",
+        "raised_features": {
+          "straight_beam": {
+            "world_z_range_mm": [
+              1.4999991655349731,
+              7.5
+            ],
+            "triangle_count": 6,
+            "triangle_indices": [
+              58,
+              64,
+              65,
+              70,
+              71,
+              78
+            ],
+            "surface_area_mm2": 223.04000364303633,
+            "all_feature_samples_above_bed": true
+          },
+          "root_fillet_and_miters": {
+            "world_z_range_mm": [
+              0.9000000357627869,
+              8.09999942779541
+            ],
+            "triangle_count": 26,
+            "triangle_indices": [
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51,
+              52,
+              53,
+              54,
+              55,
+              57,
+              77
+            ],
+            "surface_area_mm2": 13.694112121280664,
+            "all_feature_samples_above_bed": true
+          },
+          "upper_hook": {
+            "world_z_range_mm": [
+              1.4999990463256836,
+              7.499999046325684
+            ],
+            "triangle_count": 22,
+            "triangle_indices": [
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31
+            ],
+            "surface_area_mm2": 55.74822698580193,
+            "all_feature_samples_above_bed": true
+          }
+        },
+        "support_required": null,
+        "scope": "geometric heights/contact area only; no support, bridge, adhesion or strength decision"
+      }
+    },
+    "C_L21": {
+      "geometry_modified": true,
+      "actual_source_frame_geometry": {
+        "L_geometry_mm": 21.0,
+        "root_plane_z_mm": -8.0,
+        "bearing_plane_z_mm": 13.0,
+        "arm_top_z_mm": 15.0,
+        "total_arm_height_mm": 23.0,
+        "whole_coupon_height_mm": 26.0
+      },
+      "candidate_inverse_frame_geometry": {
+        "L_geometry_mm": 20.99999984105428,
+        "root_plane_z_mm": -7.99999984105428,
+        "bearing_plane_z_mm": 13.0,
+        "arm_top_z_mm": 15.0,
+        "total_arm_height_mm": 22.99999984105428,
+        "whole_coupon_height_mm": 26.00000023841858
+      },
+      "source_frame_dimensions_mm": [
+        9.0,
+        4.599998474121094,
+        26.0
+      ],
+      "source_frame_volume_mm3": 358.6844725622883,
+      "candidate_world_bounds_mm": {
+        "min": [
+          -1.500000238418579,
+          9.699999809265137,
+          -6.556707887739321e-08
+        ],
+        "max": [
+          24.5,
+          14.300000190734863,
+          9.0
+        ]
+      },
+      "candidate_world_dimensions_mm": [
+        26.00000023841858,
+        4.600000381469727,
+        9.000000065567079
+      ],
+      "candidate_world_volume_mm3": 358.6847732995147,
+      "non_manifold_edges": 0,
+      "connected_shells": 1,
+      "genus": 0,
+      "mesh_counts": {
+        "vertices": 42,
+        "edges": 120,
+        "faces": 80,
+        "triangles": 80,
+        "representation": "world-space triangulated mesh"
+      },
+      "mesh_data_name": "Cube.006",
+      "object_location_mm": [
+        0.0,
+        12.0,
+        4.5
+      ],
+      "object_rotation_euler_radians": [
+        -0.0,
+        1.5707963705062866,
+        0.0
+      ],
+      "object_axis_dimensions_mm": [
+        9.0,
+        4.599999904632568,
+        26.0
+      ],
+      "source_surface_match_passed": true,
+      "canonical_vertex_mapping": {
+        "reference_point_count": 42,
+        "reference_upper_count": 14,
+        "all_reference_vertices_present": true,
+        "maximum_nearest_vertex_residual_mm": 1.4354699347963686e-06,
+        "native_vertex_identity_proof_available": true,
+        "surface_equivalence_does_not_require_native_vertex_count": true,
+        "ui_selected_indices_are_separate_execution_evidence": true
+      },
+      "bed_and_raised_features": {
+        "bed_reference_z_mm": 0.0,
+        "minimum_world_z_mm": -6.556707887739321e-08,
+        "bed_contact_triangle_count": 2,
+        "bed_contact_triangle_indices": [
+          4,
+          5
+        ],
+        "bed_contact_area_mm2": 13.800001144409194,
+        "bed_contact_scope": "actual downward loop triangles wholly on Z=0 numeric plane; anchor side only",
+        "raised_features": {
+          "straight_beam": {
+            "world_z_range_mm": [
+              1.4999990463256836,
+              7.5
+            ],
+            "triangle_count": 6,
+            "triangle_indices": [
+              58,
+              64,
+              65,
+              70,
+              71,
+              78
+            ],
+            "surface_area_mm2": 277.4400115108495,
+            "all_feature_samples_above_bed": true
+          },
+          "root_fillet_and_miters": {
+            "world_z_range_mm": [
+              0.9000000357627869,
+              8.09999942779541
+            ],
+            "triangle_count": 26,
+            "triangle_indices": [
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51,
+              52,
+              53,
+              54,
+              55,
+              57,
+              77
+            ],
+            "surface_area_mm2": 13.694103084616344,
+            "all_feature_samples_above_bed": true
+          },
+          "upper_hook": {
+            "world_z_range_mm": [
+              1.499998927116394,
+              7.499999046325684
+            ],
+            "triangle_count": 22,
+            "triangle_indices": [
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31
+            ],
+            "surface_area_mm2": 55.74822788968776,
+            "all_feature_samples_above_bed": true
+          }
+        },
+        "support_required": null,
+        "scope": "geometric heights/contact area only; no support, bridge, adhesion or strength decision"
+      }
+    }
+  },
+  "dimension_semantics": {
+    "actual_variant_fields": "L_geometry_mm, bearing_plane_z_mm, arm_top_z_mm, total_arm_height_mm and whole_coupon_height_mm from the coupon result TOP LEVEL.",
+    "held_geometry_readback_role": "Inverse-mapped baseline profile only; its restored L19/bearing11/top13 are NOT actual B/C dimensions.",
+    "actual_L_source_frame_mm": {
+      "A_L19": 19.0,
+      "B_L17": 17.0,
+      "C_L21": 21.0
+    },
+    "geometric_L_is_effective_mechanical_L": null,
+    "N_panel_warning": "Edit Mode Local Median and unapplied-rotation object-axis Dimensions are not the geometric L or world bounds."
+  },
+  "held_geometry_reference": {
+    "beam_width_mm": 6,
+    "beam_thickness_mm": 1.5999984741210938,
+    "hook_projection_mm": 1.2000007629394531,
+    "entry_angle_deg": 45.0,
+    "return_angle_deg": 90,
+    "root_fillets": [
+      {
+        "side": "outer",
+        "segments": 3,
+        "chord_endpoints_yz_mm": [
+          [
+            -23.600000381469727,
+            -8.0
+          ],
+          [
+            -23.30000114440918,
+            -7.919615268707275
+          ],
+          [
+            -23.080385208129883,
+            -7.699999809265137
+          ],
+          [
+            -23.0,
+            -7.400000095367432
+          ]
+        ],
+        "fitted_circle_centre_yz_mm": [
+          -23.6000015007451,
+          -7.3999984992537655
+        ],
+        "fitted_circle_radius_mm": 0.6000015007472784,
+        "radius_definition": "circle through actual chord endpoints; the mesh is faceted",
+        "input_bevel_offset_mm": 0.6
+      },
+      {
+        "side": "inner",
+        "segments": 3,
+        "chord_endpoints_yz_mm": [
+          [
+            -20.80000114440918,
+            -8.0
+          ],
+          [
+            -21.100000381469727,
+            -7.919615268707275
+          ],
+          [
+            -21.319616317749023,
+            -7.699999809265137
+          ],
+          [
+            -21.400001525878906,
+            -7.400000095367432
+          ]
+        ],
+        "fitted_circle_centre_yz_mm": [
+          -20.800000025133848,
+          -7.399998499253873
+        ],
+        "fitted_circle_radius_mm": 0.600001500747171,
+        "radius_definition": "circle through actual chord endpoints; the mesh is faceted",
+        "input_bevel_offset_mm": 0.6
+      }
+    ]
+  },
+  "source_native_root_miter_count": 12,
+  "native_execution_evidence": {
+    "source_vertices": 42,
+    "source_native_polygons": 41,
+    "source_loop_triangles": 80,
+    "original_upper_selected_vertices": 14,
+    "original_unchanged_vertices": 28,
+    "motion_proofs": {
+      "A_L19": {
+        "variant": "A_L19",
+        "upper_vertex_count": 14,
+        "unchanged_vertex_count": 28,
+        "upper_source_vertex_indices": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "unchanged_source_vertex_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41
+        ],
+        "translation_z_mm": 0,
+        "maximum_coordinate_residual_mm": 0,
+        "polygon_topology_unchanged": true,
+        "coupon_geometry_modified": false,
+        "source_frame_origin_unchanged": true
+      },
+      "B_L17": {
+        "variant": "B_L17",
+        "upper_vertex_count": 14,
+        "unchanged_vertex_count": 28,
+        "upper_source_vertex_indices": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "unchanged_source_vertex_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41
+        ],
+        "translation_z_mm": -2,
+        "maximum_coordinate_residual_mm": 0,
+        "polygon_topology_unchanged": true,
+        "coupon_geometry_modified": true,
+        "source_frame_origin_unchanged": true
+      },
+      "C_L21": {
+        "variant": "C_L21",
+        "upper_vertex_count": 14,
+        "unchanged_vertex_count": 28,
+        "upper_source_vertex_indices": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "unchanged_source_vertex_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41
+        ],
+        "translation_z_mm": 2,
+        "maximum_coordinate_residual_mm": 0,
+        "polygon_topology_unchanged": true,
+        "coupon_geometry_modified": true,
+        "source_frame_origin_unchanged": true
+      }
+    },
+    "selection_proofs_file": {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/upper-vertex-selection-proofs.json",
+      "sha256": "bf63ee38e1a800c85cd0b2bb9a50660cf5439f292b2858d7ce44b98ac41bf969",
+      "bytes": 7562
+    },
+    "duplicate_proofs": {
+      "A_L19": {
+        "source_object": "SnapTool",
+        "operation": "native Shift+D then Esc",
+        "mesh_data_name": "Cube.004",
+        "independent_from_source": true,
+        "location_mm": [
+          0.0,
+          -22.200000762939453,
+          -9.5
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "B_L17": {
+        "source_object": "SnapTool",
+        "operation": "native Shift+D then Esc",
+        "mesh_data_name": "Cube.005",
+        "independent_from_source": true,
+        "location_mm": [
+          0.0,
+          -22.200000762939453,
+          -9.5
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "C_L21": {
+        "source_object": "SnapTool",
+        "operation": "native Shift+D then Esc",
+        "mesh_data_name": "Cube.006",
+        "independent_from_source": true,
+        "location_mm": [
+          0.0,
+          -22.200000762939453,
+          -9.5
+        ],
+        "rotation_euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "independent_coupon_meshes": true,
+    "display_settings": {
+      "show_statvis": false,
+      "shading": "SOLID",
+      "deactivated_with": "native Edit Mesh Overlays / Mesh Analysis checkbox",
+      "new_overhang_analysis_performed": false
+    }
+  },
+  "source_objects": {
+    "Body": {
+      "type": "MESH",
+      "hidden": false,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "modifier_count": 0,
+      "matrix_world": [
+        [
+          -4.371138828673793e-08,
+          0.0,
+          1.0,
+          -40.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          -1.0,
+          0.0,
+          -4.371138828673793e-08,
+          30.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "location_mm": [
+        -40.0,
+        0.0,
+        30.0
+      ],
+      "rotation_euler_radians": [
+        -0.0,
+        1.5707963705062866,
+        0.0
+      ],
+      "object_axis_dimensions_mm": [
+        60.0,
+        44.5,
+        30.0
+      ],
+      "mesh_data_name": "Cube",
+      "local_mesh_sha256": "8356fcf46ad59b976a68ea4056f187e6501bea69413529506f2170b23f32ee3e"
+    },
+    "Lid": {
+      "type": "MESH",
+      "hidden": false,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "modifier_count": 0,
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          40.0
+        ],
+        [
+          0.0,
+          -1.0,
+          8.742277657347586e-08,
+          -3.0
+        ],
+        [
+          0.0,
+          -8.742277657347586e-08,
+          -1.0,
+          1.0000009536743164
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "location_mm": [
+        40.0,
+        -3.0,
+        1.0000009536743164
+      ],
+      "rotation_euler_radians": [
+        3.1415927410125732,
+        -0.0,
+        0.0
+      ],
+      "object_axis_dimensions_mm": [
+        60.0,
+        46.0,
+        7.000000953674316
+      ],
+      "mesh_data_name": "Cube.002",
+      "local_mesh_sha256": "e6dfc80b83997fce6363cd28d60afa2b641af2f42c6eaf2aaf18382629c599d1"
+    },
+    "SnapTool": {
+      "type": "MESH",
+      "hidden": true,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "modifier_count": 0,
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -22.200000762939453
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -9.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "location_mm": [
+        0.0,
+        -22.200000762939453,
+        -9.5
+      ],
+      "rotation_euler_radians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "object_axis_dimensions_mm": [
+        9.0,
+        4.599999904632568,
+        24.0
+      ],
+      "mesh_data_name": "Cube.001",
+      "local_mesh_sha256": "70aa7799e1bb0110ab65ab94b0f5135ec365c936773f43d49bfa651077bae2b2"
+    },
+    "FlangeTool": {
+      "type": "MESH",
+      "hidden": true,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "modifier_count": 0,
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -25.25
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          10.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "location_mm": [
+        0.0,
+        -25.25,
+        10.5
+      ],
+      "rotation_euler_radians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "object_axis_dimensions_mm": [
+        10.0,
+        2.700000047683716,
+        5.200000286102295
+      ],
+      "mesh_data_name": "Cube.003",
+      "local_mesh_sha256": "47dd0f7ac66f8bff2bb7f39c1db7db26c65299759fb5eda2d2685dc976d214c5"
+    }
+  },
+  "final_source_objects": {
+    "Body": {
+      "type": "MESH",
+      "hidden": true,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "modifier_count": 0,
+      "matrix_world": [
+        [
+          -4.371138828673793e-08,
+          0.0,
+          1.0,
+          -40.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          -1.0,
+          0.0,
+          -4.371138828673793e-08,
+          30.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "location_mm": [
+        -40.0,
+        0.0,
+        30.0
+      ],
+      "rotation_euler_radians": [
+        -0.0,
+        1.5707963705062866,
+        0.0
+      ],
+      "object_axis_dimensions_mm": [
+        60.0,
+        44.5,
+        30.0
+      ],
+      "mesh_data_name": "Cube",
+      "local_mesh_sha256": "8356fcf46ad59b976a68ea4056f187e6501bea69413529506f2170b23f32ee3e"
+    },
+    "Lid": {
+      "type": "MESH",
+      "hidden": true,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "modifier_count": 0,
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          40.0
+        ],
+        [
+          0.0,
+          -1.0,
+          8.742277657347586e-08,
+          -3.0
+        ],
+        [
+          0.0,
+          -8.742277657347586e-08,
+          -1.0,
+          1.0000009536743164
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "location_mm": [
+        40.0,
+        -3.0,
+        1.0000009536743164
+      ],
+      "rotation_euler_radians": [
+        3.1415927410125732,
+        -0.0,
+        0.0
+      ],
+      "object_axis_dimensions_mm": [
+        60.0,
+        46.0,
+        7.000000953674316
+      ],
+      "mesh_data_name": "Cube.002",
+      "local_mesh_sha256": "e6dfc80b83997fce6363cd28d60afa2b641af2f42c6eaf2aaf18382629c599d1"
+    },
+    "SnapTool": {
+      "type": "MESH",
+      "hidden": true,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "modifier_count": 0,
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -22.200000762939453
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -9.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "location_mm": [
+        0.0,
+        -22.200000762939453,
+        -9.5
+      ],
+      "rotation_euler_radians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "object_axis_dimensions_mm": [
+        9.0,
+        4.599999904632568,
+        24.0
+      ],
+      "mesh_data_name": "Cube.001",
+      "local_mesh_sha256": "70aa7799e1bb0110ab65ab94b0f5135ec365c936773f43d49bfa651077bae2b2"
+    },
+    "FlangeTool": {
+      "type": "MESH",
+      "hidden": true,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "modifier_count": 0,
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -25.25
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          10.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "location_mm": [
+        0.0,
+        -25.25,
+        10.5
+      ],
+      "rotation_euler_radians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "object_axis_dimensions_mm": [
+        10.0,
+        2.700000047683716,
+        5.200000286102295
+      ],
+      "mesh_data_name": "Cube.003",
+      "local_mesh_sha256": "47dd0f7ac66f8bff2bb7f39c1db7db26c65299759fb5eda2d2685dc976d214c5"
+    }
+  },
+  "final_objects": {
+    "A_L19": {
+      "type": "MESH",
+      "hidden": false,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "modifier_count": 0,
+      "matrix_world": [
+        [
+          -4.371138828673793e-08,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -12.0
+        ],
+        [
+          -1.0,
+          0.0,
+          -4.371138828673793e-08,
+          4.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "location_mm": [
+        0.0,
+        -12.0,
+        4.5
+      ],
+      "rotation_euler_radians": [
+        -0.0,
+        1.5707963705062866,
+        0.0
+      ],
+      "object_axis_dimensions_mm": [
+        9.0,
+        4.599999904632568,
+        24.0
+      ],
+      "mesh_data_name": "Cube.004",
+      "local_mesh_sha256": "70aa7799e1bb0110ab65ab94b0f5135ec365c936773f43d49bfa651077bae2b2"
+    },
+    "B_L17": {
+      "type": "MESH",
+      "hidden": false,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "modifier_count": 0,
+      "matrix_world": [
+        [
+          -4.371138828673793e-08,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          -1.0,
+          0.0,
+          -4.371138828673793e-08,
+          4.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "location_mm": [
+        0.0,
+        0.0,
+        4.5
+      ],
+      "rotation_euler_radians": [
+        -0.0,
+        1.5707963705062866,
+        0.0
+      ],
+      "object_axis_dimensions_mm": [
+        9.0,
+        4.599999904632568,
+        22.0
+      ],
+      "mesh_data_name": "Cube.005",
+      "local_mesh_sha256": "7e7b633fb2ea9410592031d091ec9e1637307a2082c34b835298447d9860c8d9"
+    },
+    "Body": {
+      "type": "MESH",
+      "hidden": true,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "modifier_count": 0,
+      "matrix_world": [
+        [
+          -4.371138828673793e-08,
+          0.0,
+          1.0,
+          -40.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          -1.0,
+          0.0,
+          -4.371138828673793e-08,
+          30.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "location_mm": [
+        -40.0,
+        0.0,
+        30.0
+      ],
+      "rotation_euler_radians": [
+        -0.0,
+        1.5707963705062866,
+        0.0
+      ],
+      "object_axis_dimensions_mm": [
+        60.0,
+        44.5,
+        30.0
+      ],
+      "mesh_data_name": "Cube",
+      "local_mesh_sha256": "8356fcf46ad59b976a68ea4056f187e6501bea69413529506f2170b23f32ee3e"
+    },
+    "C_L21": {
+      "type": "MESH",
+      "hidden": false,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "modifier_count": 0,
+      "matrix_world": [
+        [
+          -4.371138828673793e-08,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          12.0
+        ],
+        [
+          -1.0,
+          0.0,
+          -4.371138828673793e-08,
+          4.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "location_mm": [
+        0.0,
+        12.0,
+        4.5
+      ],
+      "rotation_euler_radians": [
+        -0.0,
+        1.5707963705062866,
+        0.0
+      ],
+      "object_axis_dimensions_mm": [
+        9.0,
+        4.599999904632568,
+        26.0
+      ],
+      "mesh_data_name": "Cube.006",
+      "local_mesh_sha256": "6f7268f3b25f053af6ad644bbbe7d5dc102ae2d000e2cfe19cfe6e882251b926"
+    },
+    "FlangeTool": {
+      "type": "MESH",
+      "hidden": true,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "modifier_count": 0,
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -25.25
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          10.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "location_mm": [
+        0.0,
+        -25.25,
+        10.5
+      ],
+      "rotation_euler_radians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "object_axis_dimensions_mm": [
+        10.0,
+        2.700000047683716,
+        5.200000286102295
+      ],
+      "mesh_data_name": "Cube.003",
+      "local_mesh_sha256": "47dd0f7ac66f8bff2bb7f39c1db7db26c65299759fb5eda2d2685dc976d214c5"
+    },
+    "Lid": {
+      "type": "MESH",
+      "hidden": true,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "modifier_count": 0,
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          40.0
+        ],
+        [
+          0.0,
+          -1.0,
+          8.742277657347586e-08,
+          -3.0
+        ],
+        [
+          0.0,
+          -8.742277657347586e-08,
+          -1.0,
+          1.0000009536743164
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "location_mm": [
+        40.0,
+        -3.0,
+        1.0000009536743164
+      ],
+      "rotation_euler_radians": [
+        3.1415927410125732,
+        -0.0,
+        0.0
+      ],
+      "object_axis_dimensions_mm": [
+        60.0,
+        46.0,
+        7.000000953674316
+      ],
+      "mesh_data_name": "Cube.002",
+      "local_mesh_sha256": "e6dfc80b83997fce6363cd28d60afa2b641af2f42c6eaf2aaf18382629c599d1"
+    },
+    "SnapTool": {
+      "type": "MESH",
+      "hidden": true,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "modifier_count": 0,
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -22.200000762939453
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -9.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "location_mm": [
+        0.0,
+        -22.200000762939453,
+        -9.5
+      ],
+      "rotation_euler_radians": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "object_axis_dimensions_mm": [
+        9.0,
+        4.599999904632568,
+        24.0
+      ],
+      "mesh_data_name": "Cube.001",
+      "local_mesh_sha256": "70aa7799e1bb0110ab65ab94b0f5135ec365c936773f43d49bfa651077bae2b2"
+    }
+  },
+  "candidate_layout": {
+    "passed": true,
+    "kind": "standalone_coupon_candidate_layout",
+    "variant_count": 3,
+    "adjacent_y_gaps": [
+      {
+        "between": [
+          "A_L19",
+          "B_L17"
+        ],
+        "y_projection_gap_mm": 7.3999998569488525,
+        "nominal_row_pitch_mm": 12.0
+      },
+      {
+        "between": [
+          "B_L17",
+          "C_L21"
+        ],
+        "y_projection_gap_mm": 7.3999998569488525,
+        "nominal_row_pitch_mm": 12.0
+      }
+    ],
+    "minimum_y_projection_gap_mm": 7.3999998569488525,
+    "all_minimum_z_on_numerical_bed": true,
+    "scope": "separate standalone coupons; no full box, clamp or printer-bed capacity is represented",
+    "specimen_scope": "standalone anchor + arm + hook; full-box boundary is not reproduced",
+    "parameter_scope": "geometric root-plane-to-bearing length only",
+    "effective_mechanical_length_mm": null,
+    "full_box_boundary_equivalence": null,
+    "anchor_clamping_or_fixture": null,
+    "material_grade": null,
+    "epsilon_allow": null,
+    "root_flexibility_Q": null,
+    "required_deflection_mm": null,
+    "delta_allow_mm": null,
+    "forces": null,
+    "physical_measurements": null,
+    "fit_results": null,
+    "physical_interference": null,
+    "qualified_strength_N": null,
+    "qualified_clearance_mm": null,
+    "improvement_validated": null,
+    "improvement_assessed": false,
+    "strength_analysis_performed": false,
+    "deformation_analysis_performed": false,
+    "fit_qualification": false,
+    "support_generation_performed": false,
+    "support_strategy_status": "pending_slicer_review",
+    "final_print_orientation_approved": null,
+    "support_required": null,
+    "slicer_support_settings": null,
+    "bridge_or_support_qualified": null,
+    "slicer_checked": false,
+    "printed": false,
+    "fit_tested": false,
+    "exported_stl": false,
+    "candidate_orientation_only": true,
+    "printer_bed_dimensions_mm": null
+  },
+  "evidence": {
+    "run": {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/run.json",
+      "sha256": "0160113f3666d0e687d5daca528ee54e9cb0587a212dda989cfbb84ff7329807",
+      "bytes": 16179
+    },
+    "runner_status": {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/runner-status.json",
+      "sha256": "6ddbb2d6e5391cf28bfa03a42d00e0f5a2615c4093e459142f17691f15b33b1c",
+      "bytes": 54488
+    },
+    "verification": {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/verification.json",
+      "sha256": "ecea0a82400931113ad34f9c1fe054d6711835558d268973680a029ea656950b",
+      "bytes": 447931
+    },
+    "raw_meshes": [
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/source_snap_tool_mesh.json",
+        "sha256": "cb01f749d093467ec90742d38f90243067cdec00eee545c6c81f3f7b20a6aee7",
+        "bytes": 13818,
+        "vertices": 42,
+        "native_polygons": 41,
+        "loop_triangles": 80,
+        "cad_metadata": {
+          "object_name": "SnapTool",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "modifier_count": 0,
+          "object_location_mm": [
+            0.0,
+            -22.200000762939453,
+            -9.5
+          ],
+          "object_rotation_euler_radians": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "unit_scale": 0.0010000000474974513,
+          "length_unit": "MILLIMETERS",
+          "measurement_source": "evaluated world-mm polygons and loop triangles; read only",
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              -22.200000762939453
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              -9.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "object_rotation_euler_degrees": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "object_axis_dimensions_mm": [
+            9.0,
+            4.599999904632568,
+            24.0
+          ],
+          "mesh_data_name": "Cube.001"
+        }
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/A_L19_source_frame_mesh.json",
+        "sha256": "6caa2b9bf8a92326651f78d0da75ec8e270c338171323567d524d6c51627ac55",
+        "bytes": 13815,
+        "vertices": 42,
+        "native_polygons": 41,
+        "loop_triangles": 80,
+        "cad_metadata": {
+          "object_name": "A_L19",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "modifier_count": 0,
+          "object_location_mm": [
+            0.0,
+            -22.200000762939453,
+            -9.5
+          ],
+          "object_rotation_euler_radians": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "unit_scale": 0.0010000000474974513,
+          "length_unit": "MILLIMETERS",
+          "measurement_source": "evaluated world-mm polygons and loop triangles; read only",
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              -22.200000762939453
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              -9.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "object_rotation_euler_degrees": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "object_axis_dimensions_mm": [
+            9.0,
+            4.599999904632568,
+            24.0
+          ],
+          "mesh_data_name": "Cube.004"
+        }
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/A_L19_candidate_mesh.json",
+        "sha256": "5646200083769661833503b5177306fa0d80e0117597dad691b83f97b7b7530c",
+        "bytes": 14888,
+        "vertices": 42,
+        "native_polygons": 41,
+        "loop_triangles": 80,
+        "cad_metadata": {
+          "object_name": "A_L19",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "modifier_count": 0,
+          "object_location_mm": [
+            0.0,
+            -12.0,
+            4.5
+          ],
+          "object_rotation_euler_radians": [
+            -0.0,
+            1.5707963705062866,
+            0.0
+          ],
+          "unit_scale": 0.0010000000474974513,
+          "length_unit": "MILLIMETERS",
+          "measurement_source": "evaluated world-mm polygons and loop triangles; read only",
+          "matrix_world": [
+            [
+              -4.371138828673793e-08,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              -12.0
+            ],
+            [
+              -1.0,
+              0.0,
+              -4.371138828673793e-08,
+              4.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "object_rotation_euler_degrees": [
+            -0.0,
+            90.00000250447816,
+            0.0
+          ],
+          "object_axis_dimensions_mm": [
+            9.0,
+            4.599999904632568,
+            24.0
+          ],
+          "mesh_data_name": "Cube.004"
+        }
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/B_L17_source_frame_mesh.json",
+        "sha256": "52c114ca9969d77c97cf3d47637874c98b6b564699945e279e9129890d7ad366",
+        "bytes": 13809,
+        "vertices": 42,
+        "native_polygons": 41,
+        "loop_triangles": 80,
+        "cad_metadata": {
+          "object_name": "B_L17",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "modifier_count": 0,
+          "object_location_mm": [
+            0.0,
+            -22.200000762939453,
+            -9.5
+          ],
+          "object_rotation_euler_radians": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "unit_scale": 0.0010000000474974513,
+          "length_unit": "MILLIMETERS",
+          "measurement_source": "evaluated world-mm polygons and loop triangles; read only",
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              -22.200000762939453
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              -9.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "object_rotation_euler_degrees": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "object_axis_dimensions_mm": [
+            9.0,
+            4.599999904632568,
+            22.0
+          ],
+          "mesh_data_name": "Cube.005"
+        }
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/B_L17_candidate_mesh.json",
+        "sha256": "dc7cb34b232c1853fad6ae67f5de3149a63f0da2bbf7eac595fa062ef4acbcc7",
+        "bytes": 14862,
+        "vertices": 42,
+        "native_polygons": 41,
+        "loop_triangles": 80,
+        "cad_metadata": {
+          "object_name": "B_L17",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "modifier_count": 0,
+          "object_location_mm": [
+            0.0,
+            0.0,
+            4.5
+          ],
+          "object_rotation_euler_radians": [
+            -0.0,
+            1.5707963705062866,
+            0.0
+          ],
+          "unit_scale": 0.0010000000474974513,
+          "length_unit": "MILLIMETERS",
+          "measurement_source": "evaluated world-mm polygons and loop triangles; read only",
+          "matrix_world": [
+            [
+              -4.371138828673793e-08,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              -1.0,
+              0.0,
+              -4.371138828673793e-08,
+              4.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "object_rotation_euler_degrees": [
+            -0.0,
+            90.00000250447816,
+            0.0
+          ],
+          "object_axis_dimensions_mm": [
+            9.0,
+            4.599999904632568,
+            22.0
+          ],
+          "mesh_data_name": "Cube.005"
+        }
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/C_L21_source_frame_mesh.json",
+        "sha256": "c0df90f1a980fabdb9c23de0a3e9ce78aa5239670d1798f5ba9fbff13ba9f889",
+        "bytes": 13815,
+        "vertices": 42,
+        "native_polygons": 41,
+        "loop_triangles": 80,
+        "cad_metadata": {
+          "object_name": "C_L21",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "modifier_count": 0,
+          "object_location_mm": [
+            0.0,
+            -22.200000762939453,
+            -9.5
+          ],
+          "object_rotation_euler_radians": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "unit_scale": 0.0010000000474974513,
+          "length_unit": "MILLIMETERS",
+          "measurement_source": "evaluated world-mm polygons and loop triangles; read only",
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              -22.200000762939453
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              -9.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "object_rotation_euler_degrees": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "object_axis_dimensions_mm": [
+            9.0,
+            4.599999904632568,
+            26.0
+          ],
+          "mesh_data_name": "Cube.006"
+        }
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/C_L21_candidate_mesh.json",
+        "sha256": "0a40675dd41b0c8d6eb96376295ca0aaa090696b3349360187b3f0e23bcfc8c2",
+        "bytes": 14840,
+        "vertices": 42,
+        "native_polygons": 41,
+        "loop_triangles": 80,
+        "cad_metadata": {
+          "object_name": "C_L21",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "modifier_count": 0,
+          "object_location_mm": [
+            0.0,
+            12.0,
+            4.5
+          ],
+          "object_rotation_euler_radians": [
+            -0.0,
+            1.5707963705062866,
+            0.0
+          ],
+          "unit_scale": 0.0010000000474974513,
+          "length_unit": "MILLIMETERS",
+          "measurement_source": "evaluated world-mm polygons and loop triangles; read only",
+          "matrix_world": [
+            [
+              -4.371138828673793e-08,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              12.0
+            ],
+            [
+              -1.0,
+              0.0,
+              -4.371138828673793e-08,
+              4.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "object_rotation_euler_degrees": [
+            -0.0,
+            90.00000250447816,
+            0.0
+          ],
+          "object_axis_dimensions_mm": [
+            9.0,
+            4.599999904632568,
+            26.0
+          ],
+          "mesh_data_name": "Cube.006"
+        }
+      }
+    ],
+    "source_object_inventory": {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/source-object-inventory.json",
+      "sha256": "2cd207d804350776bac2dfd15ec268e944a846eb63fc79426f66b5e9653c9e1d",
+      "bytes": 3547
+    },
+    "motion_proofs": {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/vertex-motion-proofs.json",
+      "sha256": "f7864c52940866a337e349afdf1347624420f7ed677ef79f28b8b0c7fb99aff7",
+      "bytes": 2557
+    },
+    "native_display_settings": {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/native-display-settings.json",
+      "sha256": "5ebc54faaac2e84bc897f1c17b4a6f1bd71edd12806706c7551e028a4cccc7d9",
+      "bytes": 176
+    },
+    "snapshot_manifest": {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/source-snapshot/manifest.json",
+      "sha256": "72270dcd049562c54df8553dd39066ad578d2e8e5e16cc082ec1c78c03178f5e",
+      "bytes": 4193
+    },
+    "script_bindings": [
+      {
+        "source": {
+          "path": "learning/tutor/run_demo.py",
+          "sha256": "8a0afa081716cab276c99fc811f6a2453ac82f45b28d8a0b1c639eef67347058",
+          "bytes": 11779
+        },
+        "snapshot": {
+          "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/source-snapshot/run_demo.py",
+          "sha256": "8a0afa081716cab276c99fc811f6a2453ac82f45b28d8a0b1c639eef67347058",
+          "bytes": 11779
+        }
+      },
+      {
+        "source": {
+          "path": "learning/tutor/blender_demo.py",
+          "sha256": "96321d8180b1e05a9b77d47551adefbf43ddd04e6add2505eca3b30ceb831a6c",
+          "bytes": 7140
+        },
+        "snapshot": {
+          "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/source-snapshot/blender_demo.py",
+          "sha256": "96321d8180b1e05a9b77d47551adefbf43ddd04e6add2505eca3b30ceb831a6c",
+          "bytes": 7140
+        }
+      },
+      {
+        "source": {
+          "path": "learning/tutor/scenarios/common.py",
+          "sha256": "45044c48522bf5a2dee130382f902a07243e82027addaf6594cbae59b3369c3d",
+          "bytes": 11133
+        },
+        "snapshot": {
+          "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/source-snapshot/common.py",
+          "sha256": "45044c48522bf5a2dee130382f902a07243e82027addaf6594cbae59b3369c3d",
+          "bytes": 11133
+        }
+      },
+      {
+        "source": {
+          "path": "learning/tutor/scenarios/lesson07_coupons.py",
+          "sha256": "69a54e555a00ebc99cfac5ed7e13abed37ff5519de44a97dd531ab25499210f5",
+          "bytes": 26265
+        },
+        "snapshot": {
+          "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/source-snapshot/lesson07_coupons.py",
+          "sha256": "69a54e555a00ebc99cfac5ed7e13abed37ff5519de44a97dd531ab25499210f5",
+          "bytes": 26265
+        }
+      },
+      {
+        "source": {
+          "path": "learning/tutor/scenarios/coupon_checks.py",
+          "sha256": "d29ac0840e61c4da9c39cce6bc8aeda58649ac13e2de79399e01b66ea6ceaa4c",
+          "bytes": 17110
+        },
+        "snapshot": {
+          "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/source-snapshot/coupon_checks.py",
+          "sha256": "d29ac0840e61c4da9c39cce6bc8aeda58649ac13e2de79399e01b66ea6ceaa4c",
+          "bytes": 17110
+        }
+      },
+      {
+        "source": {
+          "path": "learning/tutor/scenarios/overhang_checks.py",
+          "sha256": "66023ffe41bb121f75c77b6db362fc559075c7ba56decd9c00d75832c57bb25a",
+          "bytes": 16817
+        },
+        "snapshot": {
+          "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/source-snapshot/overhang_checks.py",
+          "sha256": "66023ffe41bb121f75c77b6db362fc559075c7ba56decd9c00d75832c57bb25a",
+          "bytes": 16817
+        }
+      },
+      {
+        "source": {
+          "path": "learning/tutor/scenarios/snapfit_checks.py",
+          "sha256": "0b37846f663d2607764158046cf130d81e15792c006eed9d9631f8ba28e7f4c3",
+          "bytes": 16912
+        },
+        "snapshot": {
+          "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/source-snapshot/snapfit_checks.py",
+          "sha256": "0b37846f663d2607764158046cf130d81e15792c006eed9d9631f8ba28e7f4c3",
+          "bytes": 16912
+        }
+      },
+      {
+        "source": {
+          "path": "learning/tutor/scenarios/snapfit_stl_checks.py",
+          "sha256": "71b7dcb2c9ee427b08f9979728ce440a15553a599b2bdbf6ccbf98f5e18f3c42",
+          "bytes": 12465
+        },
+        "snapshot": {
+          "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/source-snapshot/snapfit_stl_checks.py",
+          "sha256": "71b7dcb2c9ee427b08f9979728ce440a15553a599b2bdbf6ccbf98f5e18f3c42",
+          "bytes": 12465
+        }
+      },
+      {
+        "source": {
+          "path": "learning/tutor/scenarios/stl_checks.py",
+          "sha256": "36f09e213a7759a95ea07cee1f70fbaaaf2287551b9c97d9308778a658fe922c",
+          "bytes": 18473
+        },
+        "snapshot": {
+          "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/source-snapshot/stl_checks.py",
+          "sha256": "36f09e213a7759a95ea07cee1f70fbaaaf2287551b9c97d9308778a658fe922c",
+          "bytes": 18473
+        }
+      },
+      {
+        "source": {
+          "path": "learning/tutor/scenarios/tenon_checks.py",
+          "sha256": "4defe55d142ac78be924cef8d82abc3bd24bd2db6f380332eb29cb5b0d89d13d",
+          "bytes": 24591
+        },
+        "snapshot": {
+          "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/source-snapshot/tenon_checks.py",
+          "sha256": "4defe55d142ac78be924cef8d82abc3bd24bd2db6f380332eb29cb5b0d89d13d",
+          "bytes": 24591
+        }
+      },
+      {
+        "source": {
+          "path": "learning/tutor/scenarios/lid_checks.py",
+          "sha256": "b2e2438126695cca24cb560dce046ca743c2de2c348116141ff6ed75c42e52c3",
+          "bytes": 17073
+        },
+        "snapshot": {
+          "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/source-snapshot/lid_checks.py",
+          "sha256": "b2e2438126695cca24cb560dce046ca743c2de2c348116141ff6ed75c42e52c3",
+          "bytes": 17073
+        }
+      }
+    ],
+    "data_bindings": [
+      {
+        "source": {
+          "path": "learning/plans/07-05-coupon-length-draft-v001.json",
+          "sha256": "35905a851b846b757bbdbb9321708606b4497a0dc4d5d1cdea0f8735d303dd33",
+          "bytes": 5881
+        },
+        "snapshot": {
+          "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/source-snapshot/coupon-plan-v001.json",
+          "sha256": "35905a851b846b757bbdbb9321708606b4497a0dc4d5d1cdea0f8735d303dd33",
+          "bytes": 5881
+        }
+      },
+      {
+        "source": {
+          "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/verification.json",
+          "sha256": "ab84fcc47ee59d2303a1174a8b67c27c898255c5c556e3b0deaee616741b9dc7",
+          "bytes": 566596
+        },
+        "snapshot": {
+          "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/source-snapshot/source-orientation-verification.json",
+          "sha256": "ab84fcc47ee59d2303a1174a8b67c27c898255c5c556e3b0deaee616741b9dc7",
+          "bytes": 566596
+        }
+      },
+      {
+        "source": {
+          "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/snap_tool_mesh.json",
+          "sha256": "c60a6ed737f426277e0157ad1f7554a3070ba4395aec319693d6a2d9104c6140",
+          "bytes": 7191
+        },
+        "snapshot": {
+          "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/source-snapshot/source-snap-tool-reference.json",
+          "sha256": "c60a6ed737f426277e0157ad1f7554a3070ba4395aec319693d6a2d9104c6140",
+          "bytes": 7191
+        }
+      },
+      {
+        "source": {
+          "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/geometry-draft-record-v001.json",
+          "sha256": "4f201124cbf51dc849c7978ee85f7ff5e58ca4273cdd9b006d3eba6c52521b7a",
+          "bytes": 58367
+        },
+        "snapshot": {
+          "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/source-snapshot/source-geometry-record-v001.json",
+          "sha256": "4f201124cbf51dc849c7978ee85f7ff5e58ca4273cdd9b006d3eba6c52521b7a",
+          "bytes": 58367
+        }
+      },
+      {
+        "source": {
+          "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/stl-export-record-v001.json",
+          "sha256": "b3b3745d714a628b5155b01fbfeca81cda50855aaeb95aa757f616ea58ee268a",
+          "bytes": 386077
+        },
+        "snapshot": {
+          "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/source-snapshot/source-export-record-v001.json",
+          "sha256": "b3b3745d714a628b5155b01fbfeca81cda50855aaeb95aa757f616ea58ee268a",
+          "bytes": 386077
+        }
+      }
+    ],
+    "original_png_count": 24,
+    "original_screenshots": [
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-01-source-dialog.png",
+        "sha256": "ed8811f42229a160ef6e76d403bdfb89a5ff8ffc75de4e5cfbffac99822631af",
+        "bytes": 52531,
+        "seq": 1,
+        "slug": "source-dialog",
+        "recordedAt": "2026-10-25T09:29:58.784Z",
+        "width": 1060,
+        "height": 600,
+        "action": "File > Open，開啟07-03同hash副本；不動既有盒體與上蓋"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-02-source-reference.png",
+        "sha256": "671959f98066449519611df236ddff019281ef8c0a09d95a6b336d06cc533762",
+        "bytes": 158070,
+        "seq": 2,
+        "slug": "source-reference",
+        "recordedAt": "2026-10-25T09:30:02.184Z",
+        "width": 1494,
+        "height": 1019,
+        "action": "先讀取原SnapTool與四個來源物件，固定比較基準"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-03-outliner-room.png",
+        "sha256": "9cdbbe3b24f0f5a5957c7c0488f5bc8d5417f9ad0022cbd8f1b86268e061896e",
+        "bytes": 161423,
+        "seq": 3,
+        "slug": "outliner-room",
+        "recordedAt": "2026-10-25T09:30:04.336Z",
+        "width": 1494,
+        "height": 1019,
+        "action": "加高Outliner，避免新增三試片後名稱被裁切"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-04-A_L19-duplicate.png",
+        "sha256": "b511ebd7b649bb8d3ee563e963649e69377874b981fa9c6eb33054db13d40f24",
+        "bytes": 146524,
+        "seq": 4,
+        "slug": "A_L19-duplicate",
+        "recordedAt": "2026-10-25T09:30:14.836Z",
+        "width": 1494,
+        "height": 1019,
+        "action": "從原SnapTool另建獨立 A_L19；不複製前一個已修改試片"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-05-inherited-analysis-off.png",
+        "sha256": "673be69151597020c44ea918a8b587d0ccd24d6800e0b617d6f54325852c86c8",
+        "bytes": 161282,
+        "seq": 5,
+        "slug": "inherited-analysis-off",
+        "recordedAt": "2026-10-25T09:30:18.236Z",
+        "width": 1494,
+        "height": 1019,
+        "action": "Edit Mesh Overlays，關閉07-03留下的Mesh Analysis顯示，避免誤認本步做了分析"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-06-A_L19-upper-selection.png",
+        "sha256": "99118893f834c27aafc3147e89d6e2a2538590388e55cd0f16fe425819f0beff",
+        "bytes": 162655,
+        "seq": 6,
+        "slug": "A_L19-upper-selection",
+        "recordedAt": "2026-10-25T09:30:23.876Z",
+        "width": 1494,
+        "height": 1019,
+        "action": "Front Orthographic＋Vertex Select＋Xray，只B框選source Z≥11的完整上端"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-07-A_L19-source-frame.png",
+        "sha256": "fcb003eabba278cc5036cf7d7faaa7f998b8c8a9f83f0b541249c9acc1df3923",
+        "bytes": 146309,
+        "seq": 7,
+        "slug": "A_L19-source-frame",
+        "recordedAt": "2026-10-25T09:30:25.676Z",
+        "width": 1494,
+        "height": 1019,
+        "action": "讀回source-frame實際頂點移動、28個未動點與L幾何定義"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-08-A_L19-candidate.png",
+        "sha256": "3fcdbdeb0ffeb8e27aa704c81fbd5bbdfb6596d982d0760af5fd63bfa0349b06",
+        "bytes": 157318,
+        "seq": 8,
+        "slug": "A_L19-candidate",
+        "recordedAt": "2026-10-25T09:30:37.277Z",
+        "width": 1494,
+        "height": 1019,
+        "action": "Object Mode Ry90後，以N面板Location作獨立候選擺位；不Apply Rotation"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-09-A_L19-non-manifold.png",
+        "sha256": "a20da0993b6376f9d71d8079f4f045ccbfabf280ccbdd97ca80177e197679bac",
+        "bytes": 166985,
+        "seq": 9,
+        "slug": "A_L19-non-manifold",
+        "recordedAt": "2026-10-25T09:30:40.477Z",
+        "width": 1494,
+        "height": 1019,
+        "action": "Tab > Edge Select > Select None > Select Non Manifold，核對單一試片"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-10-B_L17-duplicate.png",
+        "sha256": "e8509ce64723b158b027a36cce198c63e202e8bdd6f976e54b8cc05ad52731ea",
+        "bytes": 148004,
+        "seq": 10,
+        "slug": "B_L17-duplicate",
+        "recordedAt": "2026-10-25T09:30:51.877Z",
+        "width": 1494,
+        "height": 1019,
+        "action": "從原SnapTool另建獨立 B_L17；不複製前一個已修改試片"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-11-B_L17-upper-selection.png",
+        "sha256": "2c3e23cf9c6e3dfbdbdea32a4731e4661a2f05d032db98fff97a65b21d8b7810",
+        "bytes": 164202,
+        "seq": 11,
+        "slug": "B_L17-upper-selection",
+        "recordedAt": "2026-10-25T09:30:59.417Z",
+        "width": 1494,
+        "height": 1019,
+        "action": "Front Orthographic＋Vertex Select＋Xray，只B框選source Z≥11的完整上端"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-12-B_L17-source-frame.png",
+        "sha256": "01c12db4152d03eb6cdfe6010c39e266d51229dd156b832429e1437b90eadc95",
+        "bytes": 147655,
+        "seq": 12,
+        "slug": "B_L17-source-frame",
+        "recordedAt": "2026-10-25T09:31:02.217Z",
+        "width": 1494,
+        "height": 1019,
+        "action": "讀回source-frame實際頂點移動、28個未動點與L幾何定義"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-13-B_L17-candidate.png",
+        "sha256": "3fbbb49c7792886205c7efb6d6c9033fb75f360f7344c204580e20436990573e",
+        "bytes": 158273,
+        "seq": 13,
+        "slug": "B_L17-candidate",
+        "recordedAt": "2026-10-25T09:31:13.817Z",
+        "width": 1494,
+        "height": 1019,
+        "action": "Object Mode Ry90後，以N面板Location作獨立候選擺位；不Apply Rotation"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-14-B_L17-non-manifold.png",
+        "sha256": "3e82fb85761c328ce8555b5b688c9c8e744d39eb937d6694261f8f1306ff50e1",
+        "bytes": 165994,
+        "seq": 14,
+        "slug": "B_L17-non-manifold",
+        "recordedAt": "2026-10-25T09:31:17.017Z",
+        "width": 1494,
+        "height": 1019,
+        "action": "Tab > Edge Select > Select None > Select Non Manifold，核對單一試片"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-15-C_L21-duplicate.png",
+        "sha256": "cb98a12bff20cf360d905f72a54115c329bf8043eb7daa09b027b74d8b87f8bc",
+        "bytes": 149390,
+        "seq": 15,
+        "slug": "C_L21-duplicate",
+        "recordedAt": "2026-10-25T09:31:29.018Z",
+        "width": 1494,
+        "height": 1019,
+        "action": "從原SnapTool另建獨立 C_L21；不複製前一個已修改試片"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-16-C_L21-upper-selection.png",
+        "sha256": "6ae2e35e50afb9cac1937b0ab961721f9dd48312f303e8a35c01016d6d2adea7",
+        "bytes": 165591,
+        "seq": 16,
+        "slug": "C_L21-upper-selection",
+        "recordedAt": "2026-10-25T09:31:36.558Z",
+        "width": 1494,
+        "height": 1019,
+        "action": "Front Orthographic＋Vertex Select＋Xray，只B框選source Z≥11的完整上端"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-17-C_L21-source-frame.png",
+        "sha256": "c37bfa4b431b7f39b08a934dea38e1e0b4506400f970d22da2c297591bd4c1d0",
+        "bytes": 149232,
+        "seq": 17,
+        "slug": "C_L21-source-frame",
+        "recordedAt": "2026-10-25T09:31:39.358Z",
+        "width": 1494,
+        "height": 1019,
+        "action": "讀回source-frame實際頂點移動、28個未動點與L幾何定義"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-18-C_L21-candidate.png",
+        "sha256": "d2f93a4f563bd2692acc705395d4be2a9ccb60a7ed015f125f923e3f1457ae4c",
+        "bytes": 162174,
+        "seq": 18,
+        "slug": "C_L21-candidate",
+        "recordedAt": "2026-10-25T09:31:50.958Z",
+        "width": 1494,
+        "height": 1019,
+        "action": "Object Mode Ry90後，以N面板Location作獨立候選擺位；不Apply Rotation"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-19-C_L21-non-manifold.png",
+        "sha256": "5408d53147539f9965671909d23f9e1e5c42357895c5f2c05522025f2f2d8444",
+        "bytes": 169614,
+        "seq": 19,
+        "slug": "C_L21-non-manifold",
+        "recordedAt": "2026-10-25T09:31:54.158Z",
+        "width": 1494,
+        "height": 1019,
+        "action": "Tab > Edge Select > Select None > Select Non Manifold，核對單一試片"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-20-coupon-layout.png",
+        "sha256": "208f6d3a1b05e490f1933f17cf7eb43c126c7f153faafe7d79debf35dbe2d70c",
+        "bytes": 177277,
+        "seq": 20,
+        "slug": "coupon-layout",
+        "recordedAt": "2026-10-25T09:32:04.559Z",
+        "width": 1494,
+        "height": 1019,
+        "action": "顯示三件單參數幾何對照；來源四件隱藏，核對三者分離與world落床"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-21-save-dialog.png",
+        "sha256": "1279d8e1b2a83ced9bc15dbcdb3e8dd1c41878807e511947895ab4c9d35b51a9",
+        "bytes": 53465,
+        "seq": 21,
+        "slug": "save-dialog",
+        "recordedAt": "2026-10-25T09:32:09.459Z",
+        "width": 1060,
+        "height": 600,
+        "action": "File > Save As，另存獨立長度對照草案新版本"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-22-saved.png",
+        "sha256": "0a81cd7473128c3280f3d09dcfd315b09cc6f963ff087a41125c406501eb0616",
+        "bytes": 181826,
+        "seq": 22,
+        "slug": "saved",
+        "recordedAt": "2026-10-25T09:32:12.759Z",
+        "width": 1494,
+        "height": 1019,
+        "action": "讀回新場景路徑／bytes／SHA-256，與所有舊版本分開保存"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-23-open-saved.png",
+        "sha256": "653af27fb7b2f404fc666ee6df34764f0dee3f8fe161af6063499e66ecabd7c9",
+        "bytes": 58773,
+        "seq": 23,
+        "slug": "open-saved",
+        "recordedAt": "2026-10-25T09:32:17.659Z",
+        "width": 1060,
+        "height": 600,
+        "action": "File > Open，重開同一coupon新版本"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-24-reopened-verified.png",
+        "sha256": "c5a78a219bf0d1319239f32b4b8bd6c9f7157e3667e3e7598c1f0f7451433d4b",
+        "bytes": 174932,
+        "seq": 24,
+        "slug": "reopened-verified",
+        "recordedAt": "2026-10-25T09:32:21.059Z",
+        "width": 1494,
+        "height": 1019,
+        "action": "Open後重驗三試片、七份raw、來源保護及新版本，保存coupon對照紀錄"
+      }
+    ],
+    "pixels_modified": false
+  },
+  "independent_geometry_audit": {
+    "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/independent-coupon-audit-v001.json",
+    "sha256": "81ecd99f47ed9e7d569bb729d82cf10ecb626f6a8a8ed0f7e32c4b489ed99c35",
+    "bytes": 11975
+  },
+  "retained_unpublished_probes": [
+    {
+      "run": "2026-10-25-lesson07-coupons-ui-probe-v001",
+      "status": "completed",
+      "original_png_count": 20,
+      "run_record": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupons-ui-probe-v001/run.json",
+        "sha256": "4e6aff77f7d0da0d09fd1fdb839dd520b61190e1a0416a80f19e76baa516417c",
+        "bytes": 12869
+      },
+      "runner_status": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupons-ui-probe-v001/runner-status.json",
+        "sha256": "72d307fb203c4763af973ca06f47d93cf4c89916c03fb51a66d5df7fae80757b",
+        "bytes": 54105
+      },
+      "role": "retained unpublished native UI probe; not the formal saved lesson checkpoint"
+    }
+  ],
+  "unresolved_or_unqualified": {
+    "full_box_boundary_equivalence": null,
+    "anchor_clamping_or_fixture": null,
+    "effective_mechanical_length_mm": null,
+    "support_required": null,
+    "final_print_orientation_approved": null,
+    "slicer_support_settings": null,
+    "bridge_or_support_qualified": null,
+    "improvement_validated": null,
+    "material_grade": null,
+    "epsilon_allow": null,
+    "Q": null,
+    "required_deflection_mm": null,
+    "delta_allow_mm": null,
+    "forces": null,
+    "physical_measurements": null,
+    "fit_results": null,
+    "physical_interference": null,
+    "qualified_strength_N": null,
+    "qualified_clearance_mm": null
+  },
+  "not_performed": {
+    "source_geometry_modified": false,
+    "full_box_modified": false,
+    "rotation_applied_to_mesh": false,
+    "exported_stl": false,
+    "mesh_analysis_overhang_checked": false,
+    "improvement_assessed": false,
+    "strength_analysis_performed": false,
+    "deformation_analysis_performed": false,
+    "fit_qualification": false,
+    "support_generation_performed": false,
+    "slicer_checked": false,
+    "printed": false,
+    "fit_tested": false
+  },
+  "mating_counterpart": null,
+  "relative_positioning_datum": null,
+  "clamping_conditions": null,
+  "support_strategy_status": "pending_slicer_review",
+  "limitations": [
+    "Standalone anchor specimens do not reproduce full Body/Lid constraints; no mating counterpart, datum or clamp has been planned.",
+    "B/C move the bearing plane to source-frame Z9/Z13 without redesigning the original Lid. The old Lid/STLs are not assigned trial counterparts.",
+    "Only the anchor +X side contacts numeric Z0, about13.8 mm2; beam samples are about1.5 mm above and native root/miter samples about0.9 mm above. No base was added.",
+    "The general geometric checker accepts valid subdivision; this run separately proves the actual native42-point UI selection and 14/28 motion partition.",
+    "No material/strain/Q/deflection/force, support, printed result, strength, fit or improvement has been qualified."
+  ],
+  "numeric_comparison": {
+    "position_epsilon_mm": 0.0001,
+    "volume_relative_epsilon": 1e-05,
+    "purpose": "Floating-point geometry/surface/rigid-pose/contact reconstruction only; not manufacturing tolerance, allowable strain, effective mechanical length, support or strength/fit/improvement acceptance."
+  },
+  "validation": {
+    "actual_run_pure_import_validation": "passed; formal import not performed by this document task",
+    "original_24_png_records_validation": "passed",
+    "new_focused_import_tests": {
+      "run": 10,
+      "passed": 10
+    },
+    "independent_stdlib_geometry_audit": "passed"
+  },
+  "learner_protection": {
+    "publication_baseline": {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/publication-baseline-v001.json",
+      "sha256": "b7669201f9645f8f7a3968be7a91b04676f8c4c8b2a9b25ead9c6883541e3c91",
+      "bytes": 4520
+    },
+    "baseline_step_count": 52,
+    "progress_revision": 5,
+    "progress_sha256": "d92e4f2ee78a1cf41386816b8616bf635b89fb25f8bfd813ac00cd20ed20b4ef",
+    "progress_matches_run_baseline": true,
+    "workspaces_unchanged": true,
+    "workspace_entries": 11,
+    "workspace_file_count": 0,
+    "workspace_canonical_sha256": "4ad6905b1cef7594ff1bfed45b81e7794fdbf128011df09b4686bdb44d0a7d2f",
+    "learner_completion_confirmed_by_this_run": false,
+    "registered_as_learner_file": false
+  },
+  "journal": "learning/journal/2026-10-25-lesson07-coupons-demo-v001.md",
+  "publication_audits": [
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/independent-coupon-audit-v001.json",
+      "sha256": "81ecd99f47ed9e7d569bb729d82cf10ecb626f6a8a8ed0f7e32c4b489ed99c35"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/automated-checks-v001.json",
+      "sha256": "0e90c0e25804e1e11308dcbc0ce90861b22057e1ada706e11c633a08fcf1bf69"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/ui-technical-review-v001.json",
+      "sha256": "152bde136d85a01d59ab7dc52a1a85ca189b36093a7a7af1e3c8d2af832453e6"
+    }
+  ]
+}

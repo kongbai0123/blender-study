@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#ed7a35">
+  <title>Blender 邊做邊學</title>
+  <link rel="stylesheet" href="/app.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">跳到本次操作</a>
+  <header class="site-header">
+    <div class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><path d="M10 9l11 8M5 18h14M9 29l11-8" stroke="currentColor" stroke-width="4" stroke-linecap="round"/><ellipse cx="25" cy="20" rx="10" ry="9" stroke="currentColor" stroke-width="4"/><circle cx="25" cy="20" r="4" fill="currentColor"/></svg></div>
+    <div class="brand-copy"><h1>Blender 邊做邊學</h1><p>從第一個場景，到有尺寸的作品</p></div>
+    <div class="header-actions"><span class="local-status" id="connection-status">正在讀取本機進度</span><button type="button" class="button quiet small" data-action="refresh">重新讀取</button><a class="button quiet small" href="/api/export" download>匯出紀錄</a></div>
+  </header>
+  <div id="notice" class="notice" role="status" aria-live="polite" hidden></div>
+  <div class="app-shell">
+    <aside class="course-sidebar" aria-label="單元課程導覽">
+      <div class="sidebar-heading"><div class="eyebrow">我的學習路線</div><h2><span id="completed-count">0</span><span class="muted"> / <span id="lesson-count">0</span> 單元</span></h2><progress id="overall-progress" max="22" value="0" aria-label="已確認的操作步驟"></progress><p id="overall-caption">只有你確認後，才會前進一步。</p></div>
+      <nav id="lesson-list" aria-label="單元與步驟"></nav>
+      <div class="roadmap"><span class="eyebrow">接下來的工程練習</span><strong>通用小盒</strong><p>內腔與壁厚 → 上蓋配合<br>卡榫、卡扣、螺紋與公差</p><span class="planned">尚未開始</span></div>
+      <div class="sidebar-bottom"><span id="revision-label">共用進度讀取中…</span><p>網頁與聊天讀取同一份<br><code>learning/progress.json</code></p></div>
+    </aside>
+    <main class="main-content" id="main-content" tabindex="-1">
+      <nav class="view-tabs" aria-label="學習頁面"><button type="button" data-view="lesson" aria-current="page">本次操作</button><button type="button" data-view="overview">單元總覽</button><button type="button" data-view="journal">學習紀錄</button><button type="button" data-view="versions">檔案版本</button></nav>
+      <div id="view-content" aria-busy="true"><section class="empty-state"><span class="loading-dot" aria-hidden="true"></span><h2>正在讀取你的學習進度</h2><p>準備課程、操作步驟與專案中的檔案紀錄。</p></section></div>
+    </main>
+  </div>
+  <footer class="site-footer">01～03 改編自 SECourses 第一講 · 毫米方塊與 04～09 工程單元為自編補充 · 圖片只使用專案內的實際截圖</footer>
+  <dialog id="copy-dialog" aria-labelledby="copy-title"><h2 id="copy-title">複製文字</h2><p>選取下方文字後，按 Ctrl＋C 複製。</p><textarea id="copy-text" rows="10" readonly aria-label="要複製的文字"></textarea><form method="dialog"><button class="button primary" value="close">完成</button></form></dialog>
+</body>
+</html>

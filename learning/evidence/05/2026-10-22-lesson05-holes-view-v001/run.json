@@ -1,0 +1,99 @@
+{
+ "scenario": "D:\\others\\study\\Blender-Learning\\learning\\tutor\\scenarios\\lesson05_holes_view.py",
+ "blender": "5.2.1 LTS",
+ "buildHash": "9e2066aef7ef",
+ "records": [
+  {
+   "seq": 1,
+   "step": "05-03",
+   "slug": "supplement-open-dialog",
+   "recordedAt": "2026-10-22T07:36:12.800Z",
+   "action": "File > Open…，指定已驗證的主示範孔板 v001；不另存",
+   "observed": "資料夾 D:\\others\\study\\Blender-Learning\\learning\\evidence\\05\\2026-10-22-lesson05-holes-demo-v002\\demo-files\\；檔名 u05_hole_plate_v001.blend。",
+   "window": "FILE_BROWSER",
+   "highlights": [
+    {
+     "x": 248,
+     "y": 566,
+     "w": 780,
+     "h": 25,
+     "label": "主示範的同一檔案"
+    },
+    {
+     "x": 789,
+     "y": 566,
+     "w": 126,
+     "h": 25,
+     "label": "Open"
+    }
+   ],
+   "clicks": [],
+   "file": "05-03-01-supplement-open-dialog.png",
+   "width": 1060,
+   "height": 600,
+   "sha256": "1383699710fc6c9104e96bbcf0709b000934a6cd389b21e95df1e6c9f951c998"
+  },
+  {
+   "seq": 2,
+   "step": "05-03",
+   "slug": "supplement-source-opened",
+   "recordedAt": "2026-10-22T07:36:16.700Z",
+   "action": "開啟後先核對來源檔案路徑與 SHA-256",
+   "observed": "以唯讀補充示範方式開啟 v002 的孔板 v001；來源 SHA-256 與主示範相同，沒有另存或覆寫。",
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "05-03-02-supplement-source-opened.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "c095e81a5bd43caf63f7784f6a31dca1223ccad7892a7c82113009cd59d64479"
+  },
+  {
+   "seq": 3,
+   "step": "05-03",
+   "slug": "supplement-orbit-15",
+   "recordedAt": "2026-10-22T07:36:18.900Z",
+   "action": "在 3D Viewport 按 N 收起側欄，再按數字鍵盤 2，向下旋轉視角 15 度",
+   "observed": "以唯讀補充示範方式開啟 v002 的孔板 v001；來源 SHA-256 與主示範相同，沒有另存或覆寫。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 338,
+     "y": 394,
+     "w": 550,
+     "h": 161,
+     "label": "實際通孔板與盲凹點"
+    }
+   ],
+   "clicks": [],
+   "file": "05-03-03-supplement-orbit-15.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "bdbe2c5f8f393b33fdc2fa0db93ba815fc0afb844ae03dc7402eebf91b4b3096"
+  },
+  {
+   "seq": 4,
+   "step": "05-03",
+   "slug": "supplement-oblique-verified",
+   "recordedAt": "2026-10-22T07:36:22.600Z",
+   "action": "再按數字鍵盤 2 兩次、6 一次，滾輪放大兩格，以傾斜視角核對凹點與板厚",
+   "observed": "傾斜視角的同一孔板：六通孔 6；盲凹點各列 [1, 2, 3, 4, 5, 6]；Non Manifold 0；來源 SHA-256 不變。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 207,
+     "y": 314,
+     "w": 813,
+     "h": 321,
+     "label": "實拍：六方孔及 1～6 點盲凹標記"
+    }
+   ],
+   "clicks": [],
+   "file": "05-03-04-supplement-oblique-verified.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "701acc87efbd4e39f2267d6dfa4a5f8345e91fb8078a213b0a8749f7aa56ab32",
+   "note": "只改獨立視窗的觀察視角，不儲存 .blend。總間隙 0.1～0.6 mm 仍為未列印、未試配的試驗點。"
+  }
+ ]
+}

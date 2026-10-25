@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "dimensions_mm": [
+    10.0,
+    10.0,
+    8.0
+  ],
+  "scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "unit_scale": 0.001,
+  "length_unit": "MILLIMETERS",
+  "non_manifold_edges": 0,
+  "closed_volume": true,
+  "volume_mm3": 800.000114,
+  "scene_path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\05\\2026-10-22-lesson05-demo-v002\\demo-files\\u05_fit_coupon_v001.blend",
+  "scene_sha256": "c2f3edd915324ba66bbd3fb8c6ad1ea0214a539f74cbc732e37adc35f7325162",
+  "reopened": true,
+  "clearance_mm": null,
+  "printed": false,
+  "fit_tested": false,
+  "numericComparison": {
+    "purpose": "Floating point reconstruction only; not manufacturing tolerance",
+    "dimensionsAbsMm": 1e-06,
+    "volumeRelative": 1e-06
+  }
+}

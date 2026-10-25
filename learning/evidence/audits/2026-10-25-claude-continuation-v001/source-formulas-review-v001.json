@@ -1,0 +1,199 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "Codex subagent /root/audit_images_07b",
+  "reviewedOn": "2026-10-25",
+  "scope": "Covestro/BASF local original-manual page semantics and equations, compared against frozen sources/engineering/snapfit-source-facts-v001.json",
+  "method": "依pdf skill，先用view_image逐頁看6張由完整PDF頁渲染的PNG，detail original；再以對應txt輔助核字。未以OCR文字代替公式分式位置與圖表目視，未修改任何既有來源或教學內容。兩PDF與6PNG及facts/receipt均重新算SHA-256。",
+  "pageImagesVisuallyReviewed": 6,
+  "files": [
+    {
+      "path": "learning/evidence/audits/2026-10-25-claude-continuation-v001/source-cache/covestro.pdf",
+      "bytes": 4382748,
+      "sha256": "eb2d446f03e615bcb138f2bc30fb5168d45716eb673d0dcf2e5b1fc30570f37f"
+    },
+    {
+      "path": "learning/evidence/audits/2026-10-25-claude-continuation-v001/source-cache/basf.pdf",
+      "bytes": 1027565,
+      "sha256": "4b85dcb2b7eda8d2e4f997465886fa6874a8358126447a1063d8be149213c8f8"
+    },
+    {
+      "path": "learning/evidence/audits/2026-10-25-claude-continuation-v001/source-cache/covestro-page-09.png",
+      "bytes": 410411,
+      "sha256": "713dca95f286221ad03fbaf7efa33b4e23e6b6f4f5139725f93357ac34816c53"
+    },
+    {
+      "path": "learning/evidence/audits/2026-10-25-claude-continuation-v001/source-cache/covestro-page-24.png",
+      "bytes": 240257,
+      "sha256": "5489fab498433f4c947d7dbfa8f03123afc63c2cb420ae3e1621b6ddcda6bab4"
+    },
+    {
+      "path": "learning/evidence/audits/2026-10-25-claude-continuation-v001/source-cache/basf-page-09.png",
+      "bytes": 302642,
+      "sha256": "1fdf28300aae28569792c46851f2a93c1f9277512291b7f1f1aa3be610b2a644"
+    },
+    {
+      "path": "learning/evidence/audits/2026-10-25-claude-continuation-v001/source-cache/basf-page-11.png",
+      "bytes": 187631,
+      "sha256": "164e4132448046a87e3568965aadcc413caf14fe9fb8f82ac8b2cfb52434a862"
+    },
+    {
+      "path": "learning/evidence/audits/2026-10-25-claude-continuation-v001/source-cache/basf-page-12.png",
+      "bytes": 139079,
+      "sha256": "5258e6874cd36af39c06dc3bb1d31a249995914be79e065d2a10986f8bc1612b"
+    },
+    {
+      "path": "learning/evidence/audits/2026-10-25-claude-continuation-v001/source-cache/basf-page-14.png",
+      "bytes": 316469,
+      "sha256": "8bb69558e9332694bc5094ea8b186d8e63955f0e6c6aa9461ad64db0c82fb533"
+    },
+    {
+      "path": "learning/evidence/audits/2026-10-25-claude-continuation-v001/source-cache/sources-v002.json",
+      "bytes": 1523,
+      "sha256": "972cf63ad66010d3f5267f076a7442a50a5759fb4ed85f40f7b2d698e703f74c"
+    },
+    {
+      "path": "sources/engineering/snapfit-source-facts-v001.json",
+      "bytes": 7457,
+      "sha256": "291d1704ea12834969e74e79b948cf2677524fda7a852fa8434c017a674169f8"
+    }
+  ],
+  "sources": [
+    {
+      "id": "covestro",
+      "url": "https://solutions.covestro.com/-/media/covestro/solution-center/brands/downloads/imported/1557218421.pdf",
+      "path": "learning/evidence/audits/2026-10-25-claude-continuation-v001/source-cache/covestro.pdf",
+      "sha256": "eb2d446f03e615bcb138f2bc30fb5168d45716eb673d0dcf2e5b1fc30570f37f",
+      "bytes": 4382748,
+      "rendered_pdf_pages_1based": [
+        9,
+        24
+      ],
+      "local_downloaded": true,
+      "hosting": "manufacturer official",
+      "redistribution_license": "not reviewed; audit cache only; not used as teaching figures"
+    },
+    {
+      "id": "basf",
+      "url": "https://productdesignonline.com/wp-content/uploads/2019/08/Snap-Fit-Design-Manual.pdf",
+      "path": "learning/evidence/audits/2026-10-25-claude-continuation-v001/source-cache/basf.pdf",
+      "sha256": "4b85dcb2b7eda8d2e4f997465886fa6874a8358126447a1063d8be149213c8f8",
+      "bytes": 1027565,
+      "rendered_pdf_pages_1based": [
+        9,
+        11,
+        12,
+        14
+      ],
+      "local_downloaded": true,
+      "hosting": "third-party mirror of BASF-authored manual",
+      "redistribution_license": "not reviewed; audit cache only; not used as teaching figures"
+    }
+  ],
+  "checks": [
+    {
+      "id": "covestro_067",
+      "factId": "covestro_constant_rectangle",
+      "result": "correct",
+      "source": "covestro",
+      "pdfPage": 9,
+      "pageLabel": "Page 9 of 26",
+      "locator": "Table 1, rectangular column A / constant cross-section row 1 and Symbols",
+      "observed": "矩形等截面、端部負載圖對應 y = 0.67 ε l²/h；Symbols把ε列為根部外纖維允許應變，公式代入為百分數除100。h為根厚、l為臂長；不是任何任意截面的通式。",
+      "formula": "y=0.67*epsilon_ratio*L^2/h",
+      "unitMapping": "epsilon_ratio=epsilon_percent/100",
+      "projectConclusion": "facts係數、均勻矩形與ratio用法準確；沒有借用表中材料應變值。"
+    },
+    {
+      "id": "basf_two_thirds",
+      "factId": "classical_two_thirds",
+      "result": "correct",
+      "source": "basf",
+      "pdfPage": 9,
+      "pageLabel": "III-2",
+      "locator": "Figure III-3, I) uniform cross section",
+      "observed": "均勻矩形的應變式為 ε=1.50(t/L²)Y；圖中端部橫力P、長L、厚t、寬b。facts以h=t、delta=Y改寫正確。",
+      "formula": "epsilon_root=1.5*h*delta/L^2",
+      "derivedInverse": "delta_allow=(2/3)*epsilon_allow*L^2/h",
+      "derivationStatus": "inverse and 0.5% coefficient difference are reviewer algebra, not additional manufacturer measurement",
+      "coefficientComparison": {
+        "exact": "2/3",
+        "rounded": 0.67,
+        "relativeDifference": 0.005
+      },
+      "projectConclusion": "0.67是2/3的近似，不能寫完全相等。應變/撓度關係內b消去，但剛度與力仍受b影響，facts已正確區分。"
+    },
+    {
+      "id": "covestro_two_parts",
+      "factId": "required_deflection_and_undercut",
+      "result": "correct",
+      "source": "covestro",
+      "pdfPage": 24,
+      "pageLabel": "Page 24 of 26",
+      "locator": "Section E and Figure 29",
+      "observed": "前文簡化把較硬配合件視為剛性，較軟件承擔全部倒扣；本頁兩件皆彈性時，以共同力與各件撓度曲線交點求分攤，圖示兩件變形和等於倒扣。",
+      "relationship": "u=delta_1+delta_2 in the manual's stated mating path; one rigid mate gives the flexible part the whole displacement",
+      "projectConclusion": "將u、幾何所需delta_required、材料模型允許delta_allow分開準確。delta_required=u僅能作有明列剛性對件與路徑的假設，不可由鉤突出1.2mm直接宣稱此盒所需或允許撓度。"
+    },
+    {
+      "id": "basf_short_beam",
+      "factId": "basf_short_beam_Q",
+      "result": "correct_with_source_caveat",
+      "source": "basf",
+      "pdfPages": [
+        11,
+        12,
+        14
+      ],
+      "pageLabels": [
+        "IV-1",
+        "IV-2",
+        "IV-4"
+      ],
+      "locator": "Improved Cantilever text / Figure IV-1 / Figure IV-3",
+      "observed": "IV-1指出剛壁假設可能在L/t大於約10時較適合，短臂需納根部／牆面柔度。IV-2圖是均勻樑Q與L/t及五種根部配置；IV-4公式顯示Q在分母。",
+      "formula": "epsilon_root=1.5*h*delta/(L^2*Q)",
+      "derivedInverse": "delta_allow=(2/3)*epsilon_allow*L^2*Q/h",
+      "QMeaning": "dimensionless deflection magnification factor tied to cross section, beam/wall configuration and L/t; not a safety factor",
+      "projectConclusion": "facts公式、Q含義與Q保留null準確。L/h約10不是單獨合格門檻，不能套Q=1或任選曲線認定本盒根部邊界。"
+    }
+  ],
+  "sourceCaveats": [
+    {
+      "id": "BASF_PROSE_VS_EQUATION",
+      "severity": "source_semantics",
+      "pdfPage": 11,
+      "relatedPdfPage": 14,
+      "issue": "IV-1敘述古典模型低估beam/wall介面應變；IV-4的Q>1式在相同指定Y下卻給較低的公式應變。這6頁沒有充分資料把介面局部應變、總撓度與各種邊界條件統一成一個偏差方向。",
+      "disposition": "以清楚的IV-4分式核公式；只說古典假設忽略牆柔度、短樑偏差會受根部配置影響。facts目前沒有宣稱偏差方向，未發現因此產生錯誤。後續勿改寫成古典式一律高估或低估本列印件應變。"
+    },
+    {
+      "id": "BASF_Q_FIGURE_REFERENCE",
+      "severity": "source_cross_reference",
+      "pdfPage": 14,
+      "issue": "IV-4符號表把Q指向Figure IV-2；但IV-1正文說Figure IV-1是通常均勻樑配置，Figure IV-2是端部厚度減半的tapered樑，而實看的PDF12=IV-2頁標明Uniform Beam Q Factor／Figure IV-1。",
+      "disposition": "不要只依IV-4的通用交叉頁碼套錯截面曲線。facts此處是均勻矩形，引用Figure IV-1合適；本專案根部/截面尚未核對，Q維持null。"
+    }
+  ],
+  "provenanceReview": {
+    "covestro": "URL為solutions.covestro.com官方網域，與原冊頁腳title及既有facts一致；本次read-only cache是原廠官方提供手冊。",
+    "basf": "URL在productdesignonline.com，屬第三方鏡像。冊中BASF Plastics方法與原廠著作內容身分，應與鏡像網站作者/教學分開；不可稱為BASF官方託管下載。",
+    "historicalDownloadFlag": "facts v001的local_pdf_downloaded=false屬舊核對時點；本次cache兩份PDF實際存在並重算hash。sources-v001錯誤receipt不採用；sources-v002已更正並與本次hash相符。",
+    "thirdArticle": "未重新開啟UL Prospector / Chul Lee文章，不把本次PDF核對宣稱為已複查該文章、出版日期或整個外部來源網路鏈。"
+  },
+  "projectLimits": {
+    "noFdmStrengthInference": true,
+    "material": null,
+    "allowableStrain": null,
+    "projectQ": null,
+    "deltaAllow": null,
+    "force": null,
+    "printed": false,
+    "fitTested": false,
+    "strengthQualification": null,
+    "fitQualification": null,
+    "reason": "原冊塑膠卡扣估算條件不驗證本專案材料、層向、製程、服役或循環；幾何L19/17/21也未轉成已核有效力學L。"
+  },
+  "conclusion": "四項facts核心公式與範圍準確，未發現0.67、2/3、Q位置、epsilon百分比轉換、u與所需／允許撓度混淆。兩項BASF原冊語義／交叉引用細節另記，不任選Q，不做工程合格判定。",
+  "changesMade": "僅新增本JSON及同名MD審查報告；未修改catalog/progress、舊facts、舊evidence或來源PDF。"
+}
+

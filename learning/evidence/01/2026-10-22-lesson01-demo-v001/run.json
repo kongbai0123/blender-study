@@ -1,0 +1,880 @@
+{
+ "scenario": "D:\\others\\study\\Blender-Learning\\learning\\tutor\\scenarios\\lesson01.py",
+ "blender": "5.2.1 LTS",
+ "buildHash": "9e2066aef7ef",
+ "records": [
+  {
+   "seq": 1,
+   "step": "01-03",
+   "slug": "default-scene",
+   "recordedAt": "2026-10-22T05:40:40.013Z",
+   "action": "開啟後先核對畫面：這是預設場景，不新建也不關閉",
+   "observed": "場景物件：Camera、Cube、Light；已選取：Cube；作用中物件：Cube；模式：OBJECT；檔案：未存檔",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 547,
+     "y": 401,
+     "w": 141,
+     "h": 153,
+     "label": "1 Cube（3D Viewport）"
+    },
+    {
+     "x": 1229,
+     "y": 26,
+     "w": 263,
+     "h": 178,
+     "label": "2 Outliner：Camera／Cube／Light"
+    },
+    {
+     "x": 1229,
+     "y": 207,
+     "w": 263,
+     "h": 789,
+     "label": "3 Properties"
+    }
+   ],
+   "clicks": [],
+   "file": "01-03-01-default-scene.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "e13488de369a02a0437d128539be91c82e2941e5d93b43f48052bd063056d676"
+  },
+  {
+   "seq": 2,
+   "step": "01-03",
+   "slug": "file-new-general",
+   "recordedAt": "2026-10-22T05:40:42.213Z",
+   "action": "畫面不是預設場景時才用：File > New > General（本示範沒有點選）",
+   "observed": "File 選單與 New 子選單展開；場景仍是 Camera、Cube、Light，未新建。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 30,
+     "y": 3,
+     "w": 27,
+     "h": 21,
+     "label": "File"
+    },
+    {
+     "x": 28,
+     "y": 26,
+     "w": 202,
+     "h": 20,
+     "label": "New"
+    },
+    {
+     "x": 240,
+     "y": 26,
+     "w": 200,
+     "h": 20,
+     "label": "General"
+    }
+   ],
+   "clicks": [
+    {
+     "x": 40,
+     "y": 13
+    }
+   ],
+   "file": "01-03-02-file-new-general.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "8e8629e4825d5df1f05802c023df1e221e102d9fbce3d67ee9bbeafce09de526"
+  },
+  {
+   "seq": 3,
+   "step": "01-04",
+   "slug": "file-menu",
+   "recordedAt": "2026-10-22T05:40:45.013Z",
+   "action": "點左上 File，找到 Save As…",
+   "observed": "File 選單展開；目前檔案：未存檔。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 30,
+     "y": 3,
+     "w": 27,
+     "h": 21,
+     "label": "File"
+    },
+    {
+     "x": 28,
+     "y": 153,
+     "w": 202,
+     "h": 20,
+     "label": "Save As…"
+    }
+   ],
+   "clicks": [
+    {
+     "x": 40,
+     "y": 13
+    }
+   ],
+   "file": "01-04-01-file-menu.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "34fb7b908b2195873b9568a38b8aa54bdef0fd7ce29eb0e74570486259fd6768"
+  },
+  {
+   "seq": 4,
+   "step": "01-04",
+   "slug": "learner-path",
+   "recordedAt": "2026-10-22T05:40:49.713Z",
+   "action": "點 Save As… 開啟存檔視窗；資料夾換成自己的單元 01 練習資料夾，檔名改為 u01_basics_v001.blend",
+   "observed": "資料夾欄位：D:\\others\\study\\Blender-Learning\\learning\\workspaces\\01\\；檔名欄位：u01_basics_v001.blend；該資料夾目前內容：（空資料夾）。",
+   "window": "FILE_BROWSER",
+   "highlights": [
+    {
+     "x": 394,
+     "y": 8,
+     "w": 318,
+     "h": 25,
+     "label": "資料夾路徑"
+    },
+    {
+     "x": 248,
+     "y": 566,
+     "w": 780,
+     "h": 25,
+     "label": "檔名"
+    },
+    {
+     "x": 789,
+     "y": 566,
+     "w": 126,
+     "h": 25,
+     "label": "你要按 Save As"
+    }
+   ],
+   "clicks": [],
+   "file": "01-04-02-learner-path.png",
+   "width": 1060,
+   "height": 600,
+   "sha256": "cb6fd3a376d45216503bccc7c90cd4242ff69ac153e5c6869ff4917935be79a1",
+   "note": "這張是你要看到的畫面；路徑與檔名由助教以程式填入欄位，避免鍵盤誤觸檔案瀏覽器快捷鍵。助教示範到此按 Esc 取消，不寫入你的工作區。"
+  },
+  {
+   "seq": 5,
+   "step": "01-04",
+   "slug": "saved-demo",
+   "recordedAt": "2026-10-22T05:40:57.313Z",
+   "action": "按下 Save As 後回到主視窗，底部出現存檔訊息",
+   "observed": "目前檔案：D:\\others\\study\\Blender-Learning\\learning\\evidence\\01\\2026-10-22-lesson01-demo-v001\\demo-files\\u01_basics_v001.blend（97259 bytes）；你的工作區內容：（空資料夾）。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 0,
+     "y": 997,
+     "w": 1494,
+     "h": 22,
+     "label": "狀態列：Saved"
+    }
+   ],
+   "clicks": [],
+   "file": "01-04-03-saved-demo.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "ec587c018a9d38947f7652fcafb7457ee891d87f6b16ac968c2d9bf38bcfb740",
+   "note": "這份檔案在助教示範資料夾，不是你的 v001；你的檔案要自己存到單元 01 練習資料夾。"
+  },
+  {
+   "seq": 6,
+   "step": "01-05",
+   "slug": "mode-menu",
+   "recordedAt": "2026-10-22T05:40:58.514Z",
+   "action": "看 3D Viewport 左上的模式選單：目前是 Object Mode",
+   "observed": "模式選單展開；已選取：Cube；作用中物件：Cube；模式：OBJECT。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 49,
+     "y": 28,
+     "w": 112,
+     "h": 20,
+     "label": "目前模式"
+    }
+   ],
+   "clicks": [
+    {
+     "x": 106,
+     "y": 38
+    }
+   ],
+   "file": "01-05-01-mode-menu.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "e97ee7415f69534627ac273b82aa517df317f0c2ac04b49a27031d5a49494f5a"
+  },
+  {
+   "seq": 7,
+   "step": "01-05",
+   "slug": "deselect",
+   "recordedAt": "2026-10-22T05:41:00.514Z",
+   "action": "先點 3D Viewport 空白處，取消選取",
+   "observed": "已選取：無；作用中物件：Cube；模式：OBJECT。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 547,
+     "y": 401,
+     "w": 141,
+     "h": 153,
+     "label": "Cube 沒有橘色外框"
+    }
+   ],
+   "clicks": [
+    {
+     "x": 300,
+     "y": 760
+    }
+   ],
+   "file": "01-05-02-deselect.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "7397e48014f30ba07aae1f23ca3ed934fe39f4cccc7275872aa4a4549d852c9d"
+  },
+  {
+   "seq": 8,
+   "step": "01-05",
+   "slug": "select-cube",
+   "recordedAt": "2026-10-22T05:41:01.714Z",
+   "action": "單擊中央 Cube",
+   "observed": "已選取：Cube；作用中物件：Cube；模式：OBJECT。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 547,
+     "y": 401,
+     "w": 141,
+     "h": 153,
+     "label": "Cube 橘色外框"
+    },
+    {
+     "x": 1286,
+     "y": 114,
+     "w": 140,
+     "h": 20,
+     "label": "Outliner 的 Cube 反白"
+    },
+    {
+     "x": 49,
+     "y": 28,
+     "w": 112,
+     "h": 20,
+     "label": "Object Mode"
+    }
+   ],
+   "clicks": [
+    {
+     "x": 617,
+     "y": 478
+    }
+   ],
+   "file": "01-05-03-select-cube.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "01bf238d99bcd2469a79916d7f8e3677f23c3d444a09ed8136b5d87a9d9f710d"
+  },
+  {
+   "seq": 9,
+   "step": "01-06",
+   "slug": "orbit-gizmo",
+   "recordedAt": "2026-10-22T05:41:04.554Z",
+   "action": "按住右上導覽軸往左拖曳，旋轉視角",
+   "observed": "視角方向已改變；Cube Location (0 m, 0 m, 0 m)、Rotation (0°, 0°, 0°)、Scale (1, 1, 1)、Dimensions (2 m, 2 m, 2 m)。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 1132,
+     "y": 86,
+     "w": 88,
+     "h": 88,
+     "label": "導覽軸"
+    },
+    {
+     "x": 558,
+     "y": 402,
+     "w": 119,
+     "h": 147,
+     "label": "Cube 換了角度"
+    }
+   ],
+   "clicks": [
+    {
+     "x": 1175,
+     "y": 130
+    }
+   ],
+   "file": "01-06-01-orbit-gizmo.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "09e86034ef690a2ee09d358485f508f6b0fa6ecba8886f378e15e24001b63bff"
+  },
+  {
+   "seq": 10,
+   "step": "01-06",
+   "slug": "transform-unchanged",
+   "recordedAt": "2026-10-22T05:41:05.754Z",
+   "action": "核對 Properties 的 Location／Rotation：轉視角不會改物件",
+   "observed": "拖曳前：Cube Location (0 m, 0 m, 0 m)、Rotation (0°, 0°, 0°)、Scale (1, 1, 1)、Dimensions (2 m, 2 m, 2 m)；拖曳後：Cube Location (0 m, 0 m, 0 m)、Rotation (0°, 0°, 0°)、Scale (1, 1, 1)、Dimensions (2 m, 2 m, 2 m)。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 1266,
+     "y": 338,
+     "w": 216,
+     "h": 128,
+     "label": "Location／Rotation 仍是 0"
+    }
+   ],
+   "clicks": [],
+   "file": "01-06-02-transform-unchanged.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "09e86034ef690a2ee09d358485f508f6b0fa6ecba8886f378e15e24001b63bff"
+  },
+  {
+   "seq": 11,
+   "step": "01-06",
+   "slug": "pan-away",
+   "recordedAt": "2026-10-22T05:41:09.354Z",
+   "action": "按住右側手形圖示往左拖曳，平移視角",
+   "observed": "視角距離 18.388 m、視角中心 (1.551 m, 19.3601 m, 0.0007 m)；Cube 在畫面內：否；已選取：Cube；作用中物件：Cube；模式：OBJECT。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 1190,
+     "y": 204,
+     "w": 26,
+     "h": 26,
+     "label": "平移（手形）"
+    }
+   ],
+   "clicks": [
+    {
+     "x": 1203,
+     "y": 217
+    }
+   ],
+   "file": "01-06-03-pan-away.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "9f901c252c28b6b3e506b9f405d01e6351910b6fde6fedb19f6228f1a6776fbe"
+  },
+  {
+   "seq": 12,
+   "step": "01-06",
+   "slug": "view-frame-selected",
+   "recordedAt": "2026-10-22T05:41:11.354Z",
+   "action": "在 Outliner 點 Cube，再開 3D Viewport 的 View 選單",
+   "observed": "已選取：Cube；作用中物件：Cube；模式：OBJECT；View 選單展開。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 1286,
+     "y": 114,
+     "w": 140,
+     "h": 20,
+     "label": "Outliner：Cube"
+    },
+    {
+     "x": 169,
+     "y": 28,
+     "w": 32,
+     "h": 20,
+     "label": "View"
+    },
+    {
+     "x": 170,
+     "y": 159,
+     "w": 250,
+     "h": 19,
+     "label": "Frame Selected"
+    }
+   ],
+   "clicks": [
+    {
+     "x": 1328,
+     "y": 124
+    },
+    {
+     "x": 184,
+     "y": 38
+    }
+   ],
+   "file": "01-06-04-view-frame-selected.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "fd46511c619b367af5f564d080e489ff5ee811950f0db230764455a2164b05f8"
+  },
+  {
+   "seq": 13,
+   "step": "01-06",
+   "slug": "framed",
+   "recordedAt": "2026-10-22T05:41:14.054Z",
+   "action": "點 Frame Selected：視角對準 Cube，並拉近到填滿畫面",
+   "observed": "視角距離 2.6503 m、視角中心 (0 m, 0 m, 0 m)；Cube Location (0 m, 0 m, 0 m)、Rotation (0°, 0°, 0°)、Scale (1, 1, 1)、Dimensions (2 m, 2 m, 2 m)。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 2,
+     "y": 67,
+     "w": 1224,
+     "h": 856,
+     "label": "Cube"
+    }
+   ],
+   "clicks": [
+    {
+     "x": 236,
+     "y": 168
+    }
+   ],
+   "file": "01-06-05-framed.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "3aa3cd8721d3dcb3459489a73b2d0084d800d813d3d39a63952dc0aa727894b6"
+  },
+  {
+   "seq": 14,
+   "step": "01-06",
+   "slug": "zoom-out",
+   "recordedAt": "2026-10-22T05:41:16.254Z",
+   "action": "滑鼠在 3D Viewport 內，滾輪往後滾 6 格縮小視角",
+   "observed": "視角距離 7.9139 m、視角中心 (0 m, 0 m, 0 m)；Cube 在畫面內：是。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 485,
+     "y": 321,
+     "w": 275,
+     "h": 322,
+     "label": "Cube"
+    }
+   ],
+   "clicks": [],
+   "file": "01-06-06-zoom-out.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "48fd79d0db00e99165627c13b037837fbc0bde8bf49e31a9071d6ef56ddd99a4"
+  },
+  {
+   "seq": 15,
+   "step": "01-07",
+   "slug": "save-as-v002",
+   "recordedAt": "2026-10-22T05:41:20.154Z",
+   "action": "File > Save As…，檔名改為 u01_basics_v002.blend（v001 保留不動）",
+   "observed": "資料夾欄位：D:\\others\\study\\Blender-Learning\\learning\\workspaces\\01\\；檔名欄位：u01_basics_v002.blend。",
+   "window": "FILE_BROWSER",
+   "highlights": [
+    {
+     "x": 394,
+     "y": 8,
+     "w": 318,
+     "h": 25,
+     "label": "資料夾路徑"
+    },
+    {
+     "x": 248,
+     "y": 566,
+     "w": 780,
+     "h": 25,
+     "label": "檔名 v002"
+    },
+    {
+     "x": 789,
+     "y": 566,
+     "w": 126,
+     "h": 25,
+     "label": "你要按 Save As"
+    }
+   ],
+   "clicks": [],
+   "file": "01-07-01-save-as-v002.png",
+   "width": 1060,
+   "height": 600,
+   "sha256": "b9f8d823d0c07e644ead5b4081c794d2a2d4d7f806610ff84d4f18b68b3f949f",
+   "note": "路徑與檔名由助教以程式填入欄位。助教示範到此按 Esc 取消，再把 v002 存到示範資料夾。"
+  },
+  {
+   "seq": 16,
+   "step": "01-07",
+   "slug": "view-sidebar",
+   "recordedAt": "2026-10-22T05:41:27.754Z",
+   "action": "開 3D Viewport 的 View 選單，找到 Sidebar（快捷鍵 N）",
+   "observed": "目前檔案：u01_basics_v002.blend；View 選單展開。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 169,
+     "y": 28,
+     "w": 32,
+     "h": 20,
+     "label": "View"
+    },
+    {
+     "x": 170,
+     "y": 72,
+     "w": 250,
+     "h": 19,
+     "label": "Sidebar"
+    }
+   ],
+   "clicks": [
+    {
+     "x": 184,
+     "y": 38
+    }
+   ],
+   "file": "01-07-02-view-sidebar.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "7c2aa6418bc22092bd1ec89d617e99692402f9a8c5a5f669055b65c550b34bb9"
+  },
+  {
+   "seq": 17,
+   "step": "01-07",
+   "slug": "sidebar-open",
+   "recordedAt": "2026-10-22T05:41:29.954Z",
+   "action": "點 Sidebar：右側出現 Item 分頁的 Transform",
+   "observed": "Sidebar 開啟：是；Cube Location (0 m, 0 m, 0 m)、Rotation (0°, 0°, 0°)、Scale (1, 1, 1)、Dimensions (2 m, 2 m, 2 m)。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 955,
+     "y": 82,
+     "w": 242,
+     "h": 382,
+     "label": "Sidebar：Item > Transform"
+    },
+    {
+     "x": 1204,
+     "y": 84,
+     "w": 20,
+     "h": 36,
+     "label": "Item"
+    }
+   ],
+   "clicks": [
+    {
+     "x": 216,
+     "y": 81
+    }
+   ],
+   "file": "01-07-03-sidebar-open.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "eed3b7670df49679c43ef14b9ad26a511e4dc78254bf2752a5b16bbef6e3d458"
+  },
+  {
+   "seq": 18,
+   "step": "01-07",
+   "slug": "location-x",
+   "recordedAt": "2026-10-22T05:41:33.254Z",
+   "action": "點 Location X 欄位，輸入 0.5 後按 Enter",
+   "observed": "Cube Location (0.5 m, 0 m, 0 m)、Rotation (0°, 0°, 0°)、Scale (1, 1, 1)、Dimensions (2 m, 2 m, 2 m)。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 963,
+     "y": 133,
+     "w": 176,
+     "h": 20,
+     "label": "Location X"
+    },
+    {
+     "x": 482,
+     "y": 342,
+     "w": 292,
+     "h": 342,
+     "label": "Cube 往 X 方向移動"
+    }
+   ],
+   "clicks": [
+    {
+     "x": 1050,
+     "y": 143
+    }
+   ],
+   "file": "01-07-04-location-x.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "37c217ebbf340bb551c76d0f299e7ebaac6f85677055dc19b81c92f21d61d243"
+  },
+  {
+   "seq": 19,
+   "step": "01-07",
+   "slug": "edit-undo-menu",
+   "recordedAt": "2026-10-22T05:41:34.454Z",
+   "action": "開左上 Edit 選單，找到 Undo",
+   "observed": "Cube Location (0.5 m, 0 m, 0 m)、Rotation (0°, 0°, 0°)、Scale (1, 1, 1)、Dimensions (2 m, 2 m, 2 m)；Edit 選單展開。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 65,
+     "y": 3,
+     "w": 22,
+     "h": 21,
+     "label": "Edit"
+    },
+    {
+     "x": 64,
+     "y": 27,
+     "w": 198,
+     "h": 19,
+     "label": "Undo"
+    }
+   ],
+   "clicks": [
+    {
+     "x": 75,
+     "y": 13
+    }
+   ],
+   "file": "01-07-05-edit-undo-menu.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "a322cbd6bb3ce61bc9a0151c0d21ca198704301322fd4faf31897e0f9b2f48ae"
+  },
+  {
+   "seq": 20,
+   "step": "01-07",
+   "slug": "undone",
+   "recordedAt": "2026-10-22T05:41:36.654Z",
+   "action": "點 Undo，撤回剛才的移動",
+   "observed": "Cube Location (0 m, 0 m, 0 m)、Rotation (0°, 0°, 0°)、Scale (1, 1, 1)、Dimensions (2 m, 2 m, 2 m)。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 963,
+     "y": 133,
+     "w": 176,
+     "h": 20,
+     "label": "Location X 回到 0 m"
+    },
+    {
+     "x": 485,
+     "y": 321,
+     "w": 275,
+     "h": 322,
+     "label": "Cube 回到原位"
+    }
+   ],
+   "clicks": [
+    {
+     "x": 104,
+     "y": 36
+    }
+   ],
+   "file": "01-07-06-undone.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "39d3c87192e30ec0acbcdd2a1450560e7a4b2d615c6e9ff2f0003f2738e68a9c"
+  },
+  {
+   "seq": 21,
+   "step": "01-08",
+   "slug": "dims-scale",
+   "recordedAt": "2026-10-22T05:41:37.854Z",
+   "action": "在 Sidebar 找到 Scale 與 Dimensions 兩組欄位",
+   "observed": "Cube Location (0 m, 0 m, 0 m)、Rotation (0°, 0°, 0°)、Scale (1, 1, 1)、Dimensions (2 m, 2 m, 2 m)。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 963,
+     "y": 300,
+     "w": 228,
+     "h": 77,
+     "label": "Scale"
+    },
+    {
+     "x": 963,
+     "y": 383,
+     "w": 228,
+     "h": 77,
+     "label": "Dimensions"
+    }
+   ],
+   "clicks": [],
+   "file": "01-08-01-dims-scale.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "39d3c87192e30ec0acbcdd2a1450560e7a4b2d615c6e9ff2f0003f2738e68a9c"
+  },
+  {
+   "seq": 22,
+   "step": "01-08",
+   "slug": "dimension-x",
+   "recordedAt": "2026-10-22T05:41:41.154Z",
+   "action": "點 Dimensions X，輸入 3 後按 Enter，觀察 Scale X",
+   "observed": "Cube Location (0 m, 0 m, 0 m)、Rotation (0°, 0°, 0°)、Scale (1.5, 1, 1)、Dimensions (3 m, 2 m, 2 m)。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 963,
+     "y": 401,
+     "w": 228,
+     "h": 20,
+     "label": "Dimensions X"
+    },
+    {
+     "x": 963,
+     "y": 319,
+     "w": 228,
+     "h": 20,
+     "label": "Scale X"
+    },
+    {
+     "x": 482,
+     "y": 302,
+     "w": 292,
+     "h": 382,
+     "label": "Cube 沿 X 變寬"
+    }
+   ],
+   "clicks": [
+    {
+     "x": 1075,
+     "y": 411
+    }
+   ],
+   "file": "01-08-02-dimension-x.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "e78abfc32b1cdacbc90eac23d947f0f3fbc10cdbef9a0fa100b0dad8af72ac28"
+  },
+  {
+   "seq": 23,
+   "step": "01-09",
+   "slug": "file-save",
+   "recordedAt": "2026-10-22T05:41:42.354Z",
+   "action": "開 File 選單，找到 Save",
+   "observed": "目前檔案：u01_basics_v002.blend；Cube Location (0 m, 0 m, 0 m)、Rotation (0°, 0°, 0°)、Scale (1.5, 1, 1)、Dimensions (3 m, 2 m, 2 m)。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 30,
+     "y": 3,
+     "w": 27,
+     "h": 21,
+     "label": "File"
+    },
+    {
+     "x": 28,
+     "y": 133,
+     "w": 202,
+     "h": 20,
+     "label": "Save"
+    }
+   ],
+   "clicks": [
+    {
+     "x": 40,
+     "y": 13
+    }
+   ],
+   "file": "01-09-01-file-save.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "7bbaab16f1d4b17aca93a7099407885ffc9a727e93f32db3bb09c5990fc9b6fc"
+  },
+  {
+   "seq": 24,
+   "step": "01-09",
+   "slug": "saved",
+   "recordedAt": "2026-10-22T05:41:45.054Z",
+   "action": "點 Save：底部出現存檔訊息",
+   "observed": "已存檔：D:\\others\\study\\Blender-Learning\\learning\\evidence\\01\\2026-10-22-lesson01-demo-v001\\demo-files\\u01_basics_v002.blend（97717 bytes）。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 0,
+     "y": 997,
+     "w": 1494,
+     "h": 22,
+     "label": "狀態列：Saved"
+    }
+   ],
+   "clicks": [
+    {
+     "x": 68,
+     "y": 143
+    }
+   ],
+   "file": "01-09-02-saved.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "bbdd2c52f783dec61a33ce2e40a4f8d2e94cd35ec18c9b00835e69c38a405a6b"
+  },
+  {
+   "seq": 25,
+   "step": "01-09",
+   "slug": "open-dialog",
+   "recordedAt": "2026-10-22T05:41:48.954Z",
+   "action": "File > Open…，選 u01_basics_v002.blend",
+   "observed": "開啟視窗：資料夾 D:\\others\\study\\Blender-Learning\\learning\\evidence\\01\\2026-10-22-lesson01-demo-v001\\demo-files\\；檔名 u01_basics_v002.blend；資料夾內容：u01_basics_v001.blend、u01_basics_v002.blend、u01_basics_v002.blend1。",
+   "window": "FILE_BROWSER",
+   "highlights": [
+    {
+     "x": 394,
+     "y": 8,
+     "w": 318,
+     "h": 25,
+     "label": "資料夾"
+    },
+    {
+     "x": 248,
+     "y": 566,
+     "w": 780,
+     "h": 25,
+     "label": "檔名 v002"
+    },
+    {
+     "x": 789,
+     "y": 566,
+     "w": 126,
+     "h": 25,
+     "label": "按 Open"
+    }
+   ],
+   "clicks": [],
+   "file": "01-09-03-open-dialog.png",
+   "width": 1060,
+   "height": 600,
+   "sha256": "df3e6a754358116a8062fc4b1435e6d2dd66a650049954a81b1707ca2f3098c5",
+   "note": "此為助教示範資料夾；你要開的是自己單元 01 練習資料夾中已登記的 v002。"
+  },
+  {
+   "seq": 26,
+   "step": "01-09",
+   "slug": "reopened",
+   "recordedAt": "2026-10-22T05:41:52.854Z",
+   "action": "按 Open：重新開啟後核對路徑與數值",
+   "observed": "目前檔案：D:\\others\\study\\Blender-Learning\\learning\\evidence\\01\\2026-10-22-lesson01-demo-v001\\demo-files\\u01_basics_v002.blend；Cube Location (0 m, 0 m, 0 m)、Rotation (0°, 0°, 0°)、Scale (1.5, 1, 1)、Dimensions (3 m, 2 m, 2 m)。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 963,
+     "y": 300,
+     "w": 228,
+     "h": 160,
+     "label": "Scale／Dimensions 與存檔前相同"
+    },
+    {
+     "x": 482,
+     "y": 302,
+     "w": 292,
+     "h": 382,
+     "label": "Cube"
+    }
+   ],
+   "clicks": [],
+   "file": "01-09-04-reopened.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "3dc246c3eae28ec8686a53bffd7633c18cce50fdf8ce71fccede5de63b059e99"
+  }
+ ]
+}

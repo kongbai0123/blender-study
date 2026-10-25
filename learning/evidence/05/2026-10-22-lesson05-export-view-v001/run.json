@@ -1,0 +1,145 @@
+{
+ "scenario": "D:\\others\\study\\Blender-Learning\\learning\\tutor\\scenarios\\lesson05_export_view.py",
+ "blender": "5.2.1 LTS",
+ "buildHash": "9e2066aef7ef",
+ "records": [
+  {
+   "seq": 1,
+   "step": "05-04",
+   "slug": "empty-mm-scene",
+   "recordedAt": "2026-10-22T07:56:22.958Z",
+   "action": "清空獨立出廠場景，設 Metric / Millimeters / Unit Scale 0.001；空場景不點 Item",
+   "observed": "場景物件 0；Unit Scale 0.001；Length MILLIMETERS。",
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "05-04-01-empty-mm-scene.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "4adc8aebf5e4a772bee8fce4eb6b599831c2910744002fc3fb9242704c87f51c"
+  },
+  {
+   "seq": 2,
+   "step": "05-04",
+   "slug": "pin-import-dialog",
+   "recordedAt": "2026-10-22T07:56:27.058Z",
+   "action": "F3 Import STL，選主匯出 v003 的同雜湊副本，核對匯入選項",
+   "observed": "本次 sources / u05_fit_coupon_v001.stl；Scale 1、Scene Unit 關、Y Forward / Z Up。",
+   "window": "FILE_BROWSER",
+   "highlights": [
+    {
+     "x": 248,
+     "y": 566,
+     "w": 780,
+     "h": 25,
+     "label": "同雜湊 STL 副本"
+    },
+    {
+     "x": 789,
+     "y": 566,
+     "w": 126,
+     "h": 25,
+     "label": "Import STL"
+    }
+   ],
+   "clicks": [],
+   "file": "05-04-02-pin-import-dialog.png",
+   "width": 1060,
+   "height": 600,
+   "sha256": "5720c022aa115c3bb1f8f8b776d5f479c5c8e9d76809a2de0e0e91b04d5a736a"
+  },
+  {
+   "seq": 3,
+   "step": "05-04",
+   "slug": "pin-dimensions",
+   "recordedAt": "2026-10-22T07:56:32.958Z",
+   "action": "實際匯入 STL：在 Item 的 Dimensions 欄核對 10 × 10 × 8 mm",
+   "observed": "重新匯入 u05_fit_coupon_v001；Item > Dimensions [10.000000474974513, 10.000000474974513, 8.00000037997961] mm；Scale 1、1、1；Non Manifold 0；原 STL 與副本 SHA-256 一致。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 963,
+     "y": 383,
+     "w": 228,
+     "h": 77,
+     "label": "STL 重新匯入後的 Dimensions"
+    }
+   ],
+   "clicks": [],
+   "file": "05-04-03-pin-dimensions.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "2b88890684129babf1720f083d62ad14c91e344d85441c89d7760b101f73aa65",
+   "note": "這是主匯出 v003 相同 STL 的補充實拍；沒有重新匯出或修改來源，也沒有列印、試配或判定合格間隙。"
+  },
+  {
+   "seq": 4,
+   "step": "05-04",
+   "slug": "hole_plate-import-dialog",
+   "recordedAt": "2026-10-22T07:56:37.458Z",
+   "action": "F3 Import STL，選主匯出 v003 的同雜湊副本，核對匯入選項",
+   "observed": "本次 sources / u05_hole_plate_v001.stl；Scale 1、Scene Unit 關、Y Forward / Z Up。",
+   "window": "FILE_BROWSER",
+   "highlights": [
+    {
+     "x": 248,
+     "y": 566,
+     "w": 780,
+     "h": 25,
+     "label": "同雜湊 STL 副本"
+    },
+    {
+     "x": 789,
+     "y": 566,
+     "w": 126,
+     "h": 25,
+     "label": "Import STL"
+    }
+   ],
+   "clicks": [],
+   "file": "05-04-04-hole_plate-import-dialog.png",
+   "width": 1060,
+   "height": 600,
+   "sha256": "8d768fb914aa1df9600460837bbc798167a5dcbccff48c8b4b545e27d3880d31"
+  },
+  {
+   "seq": 5,
+   "step": "05-04",
+   "slug": "hole_plate-dimensions",
+   "recordedAt": "2026-10-22T07:56:44.558Z",
+   "action": "實際匯入 STL：在 Item 的 Dimensions 欄核對 96 × 26 × 4 mm，斜視辨認六孔與 1～6 點",
+   "observed": "重新匯入 u05_hole_plate_v001；Item > Dimensions [96.00000455975533, 26.000001234933734, 4.000000189989805] mm；Scale 1、1、1；Non Manifold 0；原 STL 與副本 SHA-256 一致。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 963,
+     "y": 383,
+     "w": 228,
+     "h": 77,
+     "label": "STL 重新匯入後的 Dimensions"
+    }
+   ],
+   "clicks": [],
+   "file": "05-04-05-hole_plate-dimensions.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "ce297dee772573e67f384219b48535ed532abfe925fabba959b292eeb920e49e",
+   "note": "這是主匯出 v003 相同 STL 的補充實拍；沒有重新匯出或修改來源，也沒有列印、試配或判定合格間隙。"
+  },
+  {
+   "seq": 6,
+   "step": "05-04",
+   "slug": "supplement-verified",
+   "recordedAt": "2026-10-22T07:56:45.758Z",
+   "action": "保存補充實拍讀值與 verification.json；主匯出證據仍為 v003",
+   "observed": "插銷與孔板重新匯入讀值通過；原 STL 和本次副本雜湊不變。未儲存場景，未列印／實體量測／試配，合格間隙為空。",
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "05-04-06-supplement-verified.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "ce297dee772573e67f384219b48535ed532abfe925fabba959b292eeb920e49e"
+  }
+ ]
+}

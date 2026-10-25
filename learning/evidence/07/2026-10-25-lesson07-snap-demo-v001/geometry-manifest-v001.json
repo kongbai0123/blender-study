@@ -1,0 +1,1213 @@
+{
+  "schema_version": 1,
+  "run": "2026-10-25-lesson07-snap-demo-v001",
+  "run_version": "v001",
+  "scene_version": "v001",
+  "recorded_on": "2026-10-25",
+  "timezone": "Asia/Taipei",
+  "performed_by": "tutor",
+  "completion_scope": "07-02 native UI cantilever snap geometry, read-only mesh checks, static undeformed assembly, separate scene saved and reopened; no mechanical strength, deformation/contact/insertion-path solution, STL, slicing, printing or physical fit qualification",
+  "source_scene": {
+    "path": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/demo-files/u07_snap_reference_v001.blend",
+    "sha256": "6a6b6c03295c8b6047b97c3efdea9884954b714da87b45b7aa36b4d2b612d3a9",
+    "bytes": 97962,
+    "absolute_path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\07\\2026-10-25-lesson07-parameters-demo-v001\\demo-files\\u07_snap_reference_v001.blend",
+    "unchanged": true
+  },
+  "opened_source_copy": {
+    "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/demo-files/sources/u07_snap_reference_v001.blend",
+    "sha256": "6a6b6c03295c8b6047b97c3efdea9884954b714da87b45b7aa36b4d2b612d3a9",
+    "bytes": 97962,
+    "absolute_path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\07\\2026-10-25-lesson07-snap-demo-v001\\demo-files\\sources\\u07_snap_reference_v001.blend",
+    "unchanged": true,
+    "copy_of": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\07\\2026-10-25-lesson07-parameters-demo-v001\\demo-files\\u07_snap_reference_v001.blend",
+    "is_new_checkpoint": false
+  },
+  "source_parameter_record": {
+    "path": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/parameter-record-v001.json",
+    "sha256": "57d411f24486aad351056854b8eb427aae853b99f290372c9d0294d367ac6ead",
+    "bytes": 16999,
+    "unchanged": true,
+    "role": "07-01 blank conditions record preserved; not retroactively populated by this geometry draft"
+  },
+  "geometry_plan": {
+    "path": "learning/plans/07-02-cantilever-geometry-draft-v001.json",
+    "sha256": "f4f0fab02a47eaade189c3b1c6cb8094753b435fe1a3ab570843af65fb2044be",
+    "bytes": 6641,
+    "chosen_by": "tutor",
+    "status": "draft_not_material_or_fit_qualified"
+  },
+  "geometry_draft_record": {
+    "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/geometry-draft-record-v001.json",
+    "sha256": "4f201124cbf51dc849c7978ee85f7ff5e58ca4273cdd9b006d3eba6c52521b7a",
+    "bytes": 58367
+  },
+  "new_scene": {
+    "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/demo-files/u07_cantilever_snap_v001.blend",
+    "sha256": "5fec09b934f2935839d615376beaf598962d47f1b7ac2504f2666c7880a26305",
+    "bytes": 106700,
+    "absolute_path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\07\\2026-10-25-lesson07-snap-demo-v001\\demo-files\\u07_cantilever_snap_v001.blend",
+    "version": "v001",
+    "scene_role": "experimental_cantilever_geometry",
+    "reopened": true,
+    "geometry_modified": true
+  },
+  "source_core_preserved": true,
+  "whole_body_geometry_unchanged": false,
+  "source_box_summary": {
+    "kind": "box_body",
+    "bounds_mm": {
+      "min": [
+        -30.0,
+        -20.0,
+        -15.0
+      ],
+      "max": [
+        30.0,
+        20.0,
+        15.0
+      ]
+    },
+    "dimensions_mm": [
+      60.0,
+      40.0,
+      30.0
+    ],
+    "volume_mm3": 15552.0,
+    "non_manifold_edges": 0,
+    "non_manifold_vertex_links": 0,
+    "inconsistent_winding_edges": 0,
+    "connected_shells": 1,
+    "euler_characteristic": 2,
+    "genus": 0,
+    "mesh_counts": {
+      "vertices": 16,
+      "edges": 42,
+      "faces": 28,
+      "triangles": 28,
+      "representation": "evaluated loop-triangulated mesh"
+    },
+    "cavity_dimensions_mm": [
+      56.0,
+      36.0,
+      28.0
+    ],
+    "wall_thicknesses_mm": [
+      2.0,
+      2.0,
+      2.0,
+      2.0
+    ],
+    "floor_thickness_mm": 2.0
+  },
+  "geometry_readback": {
+    "body": {
+      "kind": "snapfit_body",
+      "bounds_mm": {
+        "min": [
+          -30.0,
+          -24.5,
+          -15.0
+        ],
+        "max": [
+          30.0,
+          20.0,
+          15.0
+        ]
+      },
+      "dimensions_mm": [
+        60.0,
+        44.5,
+        30.0
+      ],
+      "volume_mm3": 15888.784532071566,
+      "non_manifold_edges": 0,
+      "non_manifold_vertex_links": 0,
+      "inconsistent_winding_edges": 0,
+      "connected_shells": 1,
+      "euler_characteristic": 2,
+      "genus": 0,
+      "mesh_counts": {
+        "vertices": 60,
+        "edges": 174,
+        "faces": 116,
+        "triangles": 116,
+        "representation": "world-space triangulated mesh"
+      }
+    },
+    "lid": {
+      "kind": "snapfit_lid",
+      "bounds_mm": {
+        "min": [
+          -30.0,
+          -26.0,
+          10.199999809265137
+        ],
+        "max": [
+          30.0,
+          20.0,
+          17.200000762939453
+        ]
+      },
+      "dimensions_mm": [
+        60.0,
+        46.0,
+        7.000000953674316
+      ],
+      "volume_mm3": 5602.200023460391,
+      "non_manifold_edges": 0,
+      "non_manifold_vertex_links": 0,
+      "inconsistent_winding_edges": 0,
+      "connected_shells": 1,
+      "euler_characteristic": 2,
+      "genus": 0,
+      "mesh_counts": {
+        "vertices": 26,
+        "edges": 72,
+        "faces": 48,
+        "triangles": 48,
+        "representation": "world-space triangulated mesh"
+      }
+    },
+    "construction_snap": {
+      "kind": "snapfit_construction_tool",
+      "bounds_mm": {
+        "min": [
+          -4.5,
+          -24.5,
+          -11.0
+        ],
+        "max": [
+          4.5,
+          -19.900001525878906,
+          13.0
+        ]
+      },
+      "dimensions_mm": [
+        9.0,
+        4.599998474121094,
+        24.0
+      ],
+      "volume_mm3": 339.4844908728352,
+      "non_manifold_edges": 0,
+      "non_manifold_vertex_links": 0,
+      "inconsistent_winding_edges": 0,
+      "connected_shells": 1,
+      "euler_characteristic": 2,
+      "genus": 0,
+      "mesh_counts": {
+        "vertices": 42,
+        "edges": 120,
+        "faces": 80,
+        "triangles": 80,
+        "representation": "world-space triangulated mesh"
+      }
+    },
+    "construction_flange": {
+      "kind": "snapfit_construction_tool",
+      "bounds_mm": {
+        "min": [
+          -5.0,
+          -26.0,
+          10.199999809265137
+        ],
+        "max": [
+          5.0,
+          -23.299999237060547,
+          15.399999618530273
+        ]
+      },
+      "dimensions_mm": [
+        10.0,
+        2.700000762939453,
+        5.199999809265137
+      ],
+      "volume_mm3": 85.2000062942534,
+      "non_manifold_edges": 0,
+      "non_manifold_vertex_links": 0,
+      "inconsistent_winding_edges": 0,
+      "connected_shells": 1,
+      "euler_characteristic": 2,
+      "genus": 0,
+      "mesh_counts": {
+        "vertices": 16,
+        "edges": 42,
+        "faces": 28,
+        "triangles": 28,
+        "representation": "world-space triangulated mesh"
+      }
+    }
+  },
+  "arm_geometry": {
+    "beam_x_mm": [
+      -3,
+      3
+    ],
+    "beam_outer_y_mm": -23.0,
+    "beam_inner_y_mm": -21.400001525878906,
+    "beam_thickness_mm": 1.5999984741210938,
+    "beam_width_mm": 6,
+    "root_plane_z_mm": -8.0,
+    "bearing_z_mm": 11.0,
+    "arm_top_z_mm": 13.0,
+    "root_to_bearing_geometric_length_mm": 19.0,
+    "full_arm_geometric_height_mm": 21.0,
+    "hook_outer_y_mm": -24.200000762939453,
+    "hook_projection_mm": 1.2000007629394531,
+    "return_angle_deg": 90,
+    "root_fillets": [
+      {
+        "side": "outer",
+        "segments": 3,
+        "chord_endpoints_yz_mm": [
+          [
+            -23.600000381469727,
+            -8.0
+          ],
+          [
+            -23.30000114440918,
+            -7.919615268707275
+          ],
+          [
+            -23.080385208129883,
+            -7.699999809265137
+          ],
+          [
+            -23.0,
+            -7.400000095367432
+          ]
+        ],
+        "fitted_circle_centre_yz_mm": [
+          -23.6000015007451,
+          -7.3999984992537655
+        ],
+        "fitted_circle_radius_mm": 0.6000015007472784,
+        "radius_definition": "circle through actual chord endpoints; the mesh is faceted",
+        "input_bevel_offset_mm": 0.6
+      },
+      {
+        "side": "inner",
+        "segments": 3,
+        "chord_endpoints_yz_mm": [
+          [
+            -20.80000114440918,
+            -8.0
+          ],
+          [
+            -21.100000381469727,
+            -7.919615268707275
+          ],
+          [
+            -21.319616317749023,
+            -7.699999809265137
+          ],
+          [
+            -21.400001525878906,
+            -7.400000095367432
+          ]
+        ],
+        "fitted_circle_centre_yz_mm": [
+          -20.800000025133848,
+          -7.399998499253873
+        ],
+        "fitted_circle_radius_mm": 0.600001500747171,
+        "radius_definition": "circle through actual chord endpoints; the mesh is faceted",
+        "input_bevel_offset_mm": 0.6
+      }
+    ],
+    "entry_angle_deg": 45.0,
+    "entry_ramp_endpoints_yz_mm": [
+      [
+        -23.400001525878906,
+        13.0
+      ],
+      [
+        -24.200000762939453,
+        12.200000762939453
+      ]
+    ],
+    "effective_mechanical_length_confirmed": false
+  },
+  "lid_plate": {
+    "plate_dimensions_mm": [
+      60,
+      46,
+      2.0
+    ],
+    "plate_z_mm": [
+      15.200000762939453,
+      17.200000762939453
+    ],
+    "plate_thickness_mm": 2.0,
+    "mating_profile": {
+      "skirt_inner_y_mm": -24.5,
+      "ledge_inner_y_mm": -23.299999237060547,
+      "skirt_outer_y_mm": -26.0,
+      "ledge_bottom_z_mm": 10.199999809265137,
+      "ledge_top_z_mm": 10.800000190734863,
+      "ledge_thickness_mm": 0.6000003814697266,
+      "ledge_projection_mm": 1.2000007629394531,
+      "flange_width_mm": 10
+    }
+  },
+  "bevel_operations": {
+    "hook": {
+      "offset": 0.800000011920929,
+      "offset_type": "OFFSET",
+      "segments": 1,
+      "profile": 0.5,
+      "affect": "EDGES",
+      "clamp_overlap": false,
+      "operator_id": "MESH_OT_bevel",
+      "offset_mm": 0.8000000499188906
+    },
+    "root": {
+      "offset": 0.6000000238418579,
+      "offset_type": "OFFSET",
+      "segments": 3,
+      "profile": 0.5,
+      "affect": "EDGES",
+      "clamp_overlap": false,
+      "operator_id": "MESH_OT_bevel",
+      "offset_mm": 0.6000000523403298
+    }
+  },
+  "native_root_geometry": {
+    "actual_miter_count": 12,
+    "description": "Six varying-width chord strips with twelve finite triangular end miter caps; strip width varies from 6 to 7.2 mm. Actual facets, corners, normals, areas and all mesh samples are checked.",
+    "analytical_reference_root_volume_mm3": 1.2047076581449612,
+    "reference_volume_note": "Expected finite-facet analytical integral, not an independently measured actual root-only volume.",
+    "actual_total_tool_volume_mm3": 339.4844908728352,
+    "actual_total_body_volume_mm3": 15888.784532071566,
+    "radius_note": "Radius is fitted through actual three-segment chord endpoints; input Bevel offset and fitted radius are distinct. The mesh is faceted."
+  },
+  "static_assembly_readback": {
+    "plate_rim_gap_mm": 0.20000076293945312,
+    "beam_ledge_gap_mm": 0.2999992370605469,
+    "hook_skirt_gap_mm": 0.2999992370605469,
+    "hook_ledge_projection_overlap_mm": 0.9000015258789062,
+    "hook_ledge_vertical_gap_mm": 0.19999980926513672,
+    "straight_beam_inward_static_space_mm": 1.4000015258789062,
+    "inner_root_fillet_local_static_gap_mm": 0.8000011444091797,
+    "passed": true,
+    "kind": "snapfit_static_assembly",
+    "geometric_nonintersection": true,
+    "scope": "undeformed nominal placement only; no contact/deformation/insertion path solved",
+    "required_deflection_mm": null,
+    "delta_allow_mm": null,
+    "root_flexibility_Q": null,
+    "material_grade": null,
+    "epsilon_allow": null,
+    "insertion_force_N": null,
+    "retention_force_N": null,
+    "strength_analysis_performed": false,
+    "deformation_analysis_performed": false,
+    "printed": false,
+    "fit_tested": false,
+    "physical_measurements": null,
+    "fit_results": null,
+    "physical_interference": null,
+    "qualified_strength_N": null,
+    "qualified_clearance_mm": null,
+    "trial_status": "experimental_geometry_only",
+    "numericComparison": {
+      "purpose": "Floating point reconstruction only; not manufacturing tolerance or fit acceptance",
+      "dimensionsAbsMm": 0.0001,
+      "volumeRelative": 1e-05
+    }
+  },
+  "semantic_limits": [
+    "L=19 mm is root plane to bearing plane; full arm height is 21 mm and full construction tool height is 24 mm. Effective mechanical L remains unconfirmed.",
+    "Body overall Y=44.5 mm includes the external anchor; original box core Y=40 mm remains.",
+    "Lid overall height is about 7 mm; its plate thickness is 2 mm.",
+    "Hook projection 1.2 mm, Y projection overlap about 0.9 mm, required deflection and allowable deflection are different quantities.",
+    "Straight beam inward static space about 1.4 mm and inner-root local gap about 0.8 mm are separate measurements; neither proves available bending travel.",
+    "Lid was raised 12 mm for visibility, then returned before save; this is not an assembly/contact/deformation simulation."
+  ],
+  "final_objects": {
+    "Body": {
+      "object_name": "Body",
+      "type": "MESH",
+      "hidden": false,
+      "modifier_count": 0,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "Lid": {
+      "object_name": "Lid",
+      "type": "MESH",
+      "hidden": false,
+      "modifier_count": 0,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "SnapTool": {
+      "object_name": "SnapTool",
+      "type": "MESH",
+      "hidden": true,
+      "modifier_count": 0,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "FlangeTool": {
+      "object_name": "FlangeTool",
+      "type": "MESH",
+      "hidden": true,
+      "modifier_count": 0,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "native_boolean_operand_readbacks": [
+    {
+      "target": "Body",
+      "tool": "SnapTool",
+      "attempt": 0,
+      "operation": "UNION",
+      "operand": "SnapTool",
+      "solver": "EXACT"
+    },
+    {
+      "target": "Lid",
+      "tool": "FlangeTool",
+      "attempt": 0,
+      "operation": "UNION",
+      "operand": "FlangeTool",
+      "solver": "EXACT"
+    }
+  ],
+  "evidence": {
+    "run": {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/run.json",
+      "sha256": "0cd63521b0afd0b8c16f9d15f96d6fa6dad6ff2670e00ad44377859ccf15afcd",
+      "bytes": 15662
+    },
+    "runner_status": {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/runner-status.json",
+      "sha256": "0658620c8bcfc139b29e01e5613fd14fbe4e85875f4884cc58d63f072777882a",
+      "bytes": 54456
+    },
+    "verification": {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/verification.json",
+      "sha256": "1d66ca17c632f943c098a9566cbd93af884cd407f2f50bfaa31f15bc51f86c54",
+      "bytes": 95955
+    },
+    "bevel_operations": {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/bevel-operations.json",
+      "sha256": "83af62000140eb52c8b9dd205fd5c8256da080f0c34848a9981466c30191cfe6",
+      "bytes": 508
+    },
+    "selected_edges": {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/selected-root-hook-edges.json",
+      "sha256": "de144250d1613acf52b7ec733eab46393c75af1ead31ae6c71ba32e6371b6c32",
+      "bytes": 520
+    },
+    "operand_attempts": {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/operand-attempts.json",
+      "sha256": "10b1366e05965d938bd3ad7e9771b298475a1d4a26add66000737f8784c1d707",
+      "bytes": 320
+    },
+    "raw_meshes": [
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/source_body_mesh.json",
+        "sha256": "b3101108787bd264bf95af51db1d5c23aff408a95b4c961f77a66bb37ad29370",
+        "bytes": 2577,
+        "role": "unchanged 07-01 box before modification",
+        "cad_metadata": {
+          "object_name": "Body_Reference",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "unit_scale": 0.0010000000474974513,
+          "length_unit": "MILLIMETERS",
+          "measurement_source": "evaluated final mesh loop triangles in world-space millimetres",
+          "modifier_count": 0,
+          "object_location_mm": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/snap_tool_mesh.json",
+        "sha256": "c60a6ed737f426277e0157ad1f7554a3070ba4395aec319693d6a2d9104c6140",
+        "bytes": 7191,
+        "role": "native bevel construction mesh",
+        "cad_metadata": {
+          "object_name": "SnapTool",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "unit_scale": 0.0010000000474974513,
+          "length_unit": "MILLIMETERS",
+          "measurement_source": "evaluated final mesh loop triangles in world-space millimetres",
+          "modifier_count": 0,
+          "object_location_mm": [
+            0.0,
+            -22.200000762939453,
+            -9.5
+          ]
+        }
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/body_mesh.json",
+        "sha256": "f40578c09793b6418afaf6b3f5508016a7186022f46bf37695f0c9d25e6df86f",
+        "bytes": 9809,
+        "role": "final union Body",
+        "cad_metadata": {
+          "object_name": "Body",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "unit_scale": 0.0010000000474974513,
+          "length_unit": "MILLIMETERS",
+          "measurement_source": "evaluated final mesh loop triangles in world-space millimetres",
+          "modifier_count": 0,
+          "object_location_mm": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/flange_tool_mesh.json",
+        "sha256": "1e88912ceafbb4c8c6cd1d267fc66043f7b39ce96b2d1499870fb7e79a2a5e05",
+        "bytes": 2836,
+        "role": "native flange construction mesh",
+        "cad_metadata": {
+          "object_name": "FlangeTool",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "unit_scale": 0.0010000000474974513,
+          "length_unit": "MILLIMETERS",
+          "measurement_source": "evaluated final mesh loop triangles in world-space millimetres",
+          "modifier_count": 0,
+          "object_location_mm": [
+            0.0,
+            -25.25,
+            10.5
+          ]
+        }
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/lid_mesh.json",
+        "sha256": "54bcbdce1ca5ab3ee8b1118d6f5135c44ff2519fa2c5821b0ce30ed746c08dd8",
+        "bytes": 4466,
+        "role": "final union Lid",
+        "cad_metadata": {
+          "object_name": "Lid",
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "unit_scale": 0.0010000000474974513,
+          "length_unit": "MILLIMETERS",
+          "measurement_source": "evaluated final mesh loop triangles in world-space millimetres",
+          "modifier_count": 0,
+          "object_location_mm": [
+            0.0,
+            -3.0,
+            16.200000762939453
+          ]
+        }
+      }
+    ],
+    "snapshot_manifest": {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/source-snapshot/manifest.json",
+      "sha256": "6be39b5500e26c1f2aebe5f7a4d4f8b3a6d283a08d21eac3f93780507c5bb7a7",
+      "bytes": 2734
+    },
+    "script_bindings": [
+      {
+        "source": {
+          "path": "learning/tutor/run_demo.py",
+          "sha256": "8a0afa081716cab276c99fc811f6a2453ac82f45b28d8a0b1c639eef67347058",
+          "bytes": 11779
+        },
+        "snapshot": {
+          "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/source-snapshot/run_demo.py",
+          "sha256": "8a0afa081716cab276c99fc811f6a2453ac82f45b28d8a0b1c639eef67347058",
+          "bytes": 11779
+        }
+      },
+      {
+        "source": {
+          "path": "learning/tutor/blender_demo.py",
+          "sha256": "96321d8180b1e05a9b77d47551adefbf43ddd04e6add2505eca3b30ceb831a6c",
+          "bytes": 7140
+        },
+        "snapshot": {
+          "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/source-snapshot/blender_demo.py",
+          "sha256": "96321d8180b1e05a9b77d47551adefbf43ddd04e6add2505eca3b30ceb831a6c",
+          "bytes": 7140
+        }
+      },
+      {
+        "source": {
+          "path": "learning/tutor/scenarios/common.py",
+          "sha256": "45044c48522bf5a2dee130382f902a07243e82027addaf6594cbae59b3369c3d",
+          "bytes": 11133
+        },
+        "snapshot": {
+          "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/source-snapshot/common.py",
+          "sha256": "45044c48522bf5a2dee130382f902a07243e82027addaf6594cbae59b3369c3d",
+          "bytes": 11133
+        }
+      },
+      {
+        "source": {
+          "path": "learning/tutor/scenarios/lesson07_snap.py",
+          "sha256": "47d634ae0b77a1f062a0cb8eaa6cc38f1d59faf61006f772e5cab5b1a3b205f6",
+          "bytes": 27020
+        },
+        "snapshot": {
+          "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/source-snapshot/lesson07_snap.py",
+          "sha256": "47d634ae0b77a1f062a0cb8eaa6cc38f1d59faf61006f772e5cab5b1a3b205f6",
+          "bytes": 27020
+        }
+      },
+      {
+        "source": {
+          "path": "learning/tutor/scenarios/lid_checks.py",
+          "sha256": "b2e2438126695cca24cb560dce046ca743c2de2c348116141ff6ed75c42e52c3",
+          "bytes": 17073
+        },
+        "snapshot": {
+          "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/source-snapshot/lid_checks.py",
+          "sha256": "b2e2438126695cca24cb560dce046ca743c2de2c348116141ff6ed75c42e52c3",
+          "bytes": 17073
+        }
+      },
+      {
+        "source": {
+          "path": "learning/tutor/scenarios/tenon_checks.py",
+          "sha256": "4defe55d142ac78be924cef8d82abc3bd24bd2db6f380332eb29cb5b0d89d13d",
+          "bytes": 24591
+        },
+        "snapshot": {
+          "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/source-snapshot/tenon_checks.py",
+          "sha256": "4defe55d142ac78be924cef8d82abc3bd24bd2db6f380332eb29cb5b0d89d13d",
+          "bytes": 24591
+        }
+      },
+      {
+        "source": {
+          "path": "learning/tutor/scenarios/snapfit_checks.py",
+          "sha256": "0b37846f663d2607764158046cf130d81e15792c006eed9d9631f8ba28e7f4c3",
+          "bytes": 16912
+        },
+        "snapshot": {
+          "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/source-snapshot/snapfit_checks.py",
+          "sha256": "0b37846f663d2607764158046cf130d81e15792c006eed9d9631f8ba28e7f4c3",
+          "bytes": 16912
+        }
+      }
+    ],
+    "data_bindings": [
+      {
+        "source": {
+          "path": "learning/plans/07-02-cantilever-geometry-draft-v001.json",
+          "sha256": "f4f0fab02a47eaade189c3b1c6cb8094753b435fe1a3ab570843af65fb2044be",
+          "bytes": 6641
+        },
+        "snapshot": {
+          "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/source-snapshot/geometry-plan-v001.json",
+          "sha256": "f4f0fab02a47eaade189c3b1c6cb8094753b435fe1a3ab570843af65fb2044be",
+          "bytes": 6641
+        }
+      },
+      {
+        "source": {
+          "path": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/parameter-record-v001.json",
+          "sha256": "57d411f24486aad351056854b8eb427aae853b99f290372c9d0294d367ac6ead",
+          "bytes": 16999
+        },
+        "snapshot": {
+          "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/source-snapshot/parameter-source-v001.json",
+          "sha256": "57d411f24486aad351056854b8eb427aae853b99f290372c9d0294d367ac6ead",
+          "bytes": 16999
+        }
+      },
+      {
+        "source": {
+          "path": "sources/engineering/snapfit-source-facts-v001.json",
+          "sha256": "291d1704ea12834969e74e79b948cf2677524fda7a852fa8434c017a674169f8",
+          "bytes": 7457
+        },
+        "snapshot": {
+          "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/source-snapshot/snapfit-source-facts-v001.json",
+          "sha256": "291d1704ea12834969e74e79b948cf2677524fda7a852fa8434c017a674169f8",
+          "bytes": 7457
+        }
+      }
+    ],
+    "original_png_count": 26,
+    "original_screenshots": [
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-01-source-open-dialog.png",
+        "sha256": "1f7f2ca254807157eb5c4c7d73240a8941f8175254beb9ca57540ac838563ee4",
+        "bytes": 52596,
+        "seq": 1,
+        "step": "07-02",
+        "recordedAt": "2026-10-25T07:44:45.481Z",
+        "width": 1060,
+        "height": 600,
+        "action": "File > Open，開啟07-01原盒參考版同hash副本"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-02-source-geometry.png",
+        "sha256": "eb1b309daf2eb94b631e60f65c6b55643e90d8bc0d01080c24416f90a9b242c9",
+        "bytes": 165645,
+        "seq": 2,
+        "step": "07-02",
+        "recordedAt": "2026-10-25T07:44:49.481Z",
+        "width": 1494,
+        "height": 1019,
+        "action": "改前重驗原盒；這次另建卡扣分支"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-03-anchor-top.png",
+        "sha256": "f9a79c854125df1b976b4ec9795d38402463e0a6915ff42ce2c435b61e523c45",
+        "bytes": 139239,
+        "seq": 3,
+        "step": "07-02",
+        "recordedAt": "2026-10-25T07:45:16.481Z",
+        "width": 1494,
+        "height": 1019,
+        "action": "選anchor頂面，檢查9×4.6×3基塊真實位置"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-04-beam-inset.png",
+        "sha256": "a5d7b5fedbdc7fba842bf9b1048159ecf781a02c1858d3cfd4549aab24e21323",
+        "bytes": 142540,
+        "seq": 4,
+        "step": "07-02",
+        "recordedAt": "2026-10-25T07:45:18.581Z",
+        "width": 1494,
+        "height": 1019,
+        "action": "頂面Inset1.5mm，形成6×1.6mm直臂截面"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-05-beam-extruded.png",
+        "sha256": "b5c5733263019f34bf999fd9b254d397986b82af251d7015bb065180fab78c6e",
+        "bytes": 159728,
+        "seq": 5,
+        "step": "07-02",
+        "recordedAt": "2026-10-25T07:45:24.681Z",
+        "width": 1494,
+        "height": 1019,
+        "action": "Edit Mode E19mm、再E2mm（頂面法向+Z），讀回臂頂Z13；扣鉤根層Z11"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-06-hook-extruded.png",
+        "sha256": "da5c5212f2d879e6cff41e0dc5baa148b84101b7a8b95d0f9835407b46648202",
+        "bytes": 139710,
+        "seq": 6,
+        "step": "07-02",
+        "recordedAt": "2026-10-25T07:45:27.982Z",
+        "width": 1494,
+        "height": 1019,
+        "action": "選最高2mm的−Y外側面，E1.2mm沿面法向−Y形成外鉤"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-07-hook-edge.png",
+        "sha256": "4ac1c870113243b992898bd1f273e194d3ac39f8e1a4a72f6e1480a8ae02f5ec",
+        "bytes": 170330,
+        "seq": 7,
+        "step": "07-02",
+        "recordedAt": "2026-10-25T07:45:33.582Z",
+        "width": 1494,
+        "height": 1019,
+        "action": "Xray精確點選鉤外頂的一條X向邊"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-08-hook-bevel.png",
+        "sha256": "7b2a90308506aeb2af3818c6a086d868e4d2a88bccec590bf2eeff21f23e07a2",
+        "bytes": 173195,
+        "seq": 8,
+        "step": "07-02",
+        "recordedAt": "2026-10-25T07:45:35.882Z",
+        "width": 1494,
+        "height": 1019,
+        "action": "Ctrl+B：hook offset 0.8 mm、1段；立即讀回原生operator"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-09-root-edges.png",
+        "sha256": "e1f2fe071d2110f727fc930a108e4e48725099a2b88c76de05140a50996a2ccb",
+        "bytes": 172041,
+        "seq": 9,
+        "step": "07-02",
+        "recordedAt": "2026-10-25T07:45:38.882Z",
+        "width": 1494,
+        "height": 1019,
+        "action": "Xray只選兩條臂腳與anchor頂面的凹根部邊"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-10-root-bevel.png",
+        "sha256": "d865ea78ef61836a85a4763fb1f21565906123191d06a1776d7a20c7ead756f3",
+        "bytes": 178364,
+        "seq": 10,
+        "step": "07-02",
+        "recordedAt": "2026-10-25T07:45:41.582Z",
+        "width": 1494,
+        "height": 1019,
+        "action": "Ctrl+B：root offset 0.6 mm、3段；立即讀回原生operator"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-11-snap-tool.png",
+        "sha256": "dc11e6bb2c2425a3a3a5f264a0a813898225cbd6e8f364144f9a1e00b1de7652",
+        "bytes": 148169,
+        "seq": 11,
+        "step": "07-02",
+        "recordedAt": "2026-10-25T07:45:46.582Z",
+        "width": 1494,
+        "height": 1019,
+        "action": "回Object Mode，讀回一體anchor／臂／鉤與實際根部圓角網格"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-12-body-union.png",
+        "sha256": "e309eca04f69348913340b6a4bf7c83ca7ee62e0aa9fa28a54d815c1eeb21dc8",
+        "bytes": 172525,
+        "seq": 12,
+        "step": "07-02",
+        "recordedAt": "2026-10-25T07:45:56.282Z",
+        "width": 1494,
+        "height": 1019,
+        "action": "選Body，Boolean Union／Exact 指定SnapTool，隱藏工具後看真正預覽"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-13-body-applied.png",
+        "sha256": "e91033de781ec3ff6daabe8232258e1c592ac1a38f299cbb1dc56271b66a8b08",
+        "bytes": 154959,
+        "seq": 13,
+        "step": "07-02",
+        "recordedAt": "2026-10-25T07:46:02.082Z",
+        "width": 1494,
+        "height": 1019,
+        "action": "Apply Union，從成品Body讀回原盒核心與外掛卡扣"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-14-body-non-manifold.png",
+        "sha256": "c00e798a40ecd39c8d3d932804a85a844f4d2f8faa5b918d06009d9985c34e81",
+        "bytes": 173308,
+        "seq": 14,
+        "step": "07-02",
+        "recordedAt": "2026-10-25T07:46:05.282Z",
+        "width": 1494,
+        "height": 1019,
+        "action": "Tab／邊模式／Alt+A／Select Non Manifold"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-15-lid-plate.png",
+        "sha256": "dc6530a5c98c913ccffdf5517443dbbff148d34a0258bcaaaeb36f46cfc015c8",
+        "bytes": 152538,
+        "seq": 15,
+        "step": "07-02",
+        "recordedAt": "2026-10-25T07:46:24.983Z",
+        "width": 1494,
+        "height": 1019,
+        "action": "新增草案蓋板60×46×2，前緣Y−26、板底Z15.2"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-16-flange-extruded.png",
+        "sha256": "5ba23c17fa1cc9f405a8a16e5054ee1ce5b3f82ee67837b9604091467f11e67f",
+        "bytes": 145592,
+        "seq": 16,
+        "step": "07-02",
+        "recordedAt": "2026-10-25T07:46:47.897Z",
+        "width": 1494,
+        "height": 1019,
+        "action": "基塊頂面E4.6mm沿+Z成裙，內側低面E1.2mm沿+Y成承接凸緣"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-17-flange-tool.png",
+        "sha256": "fb8ec958f4c9067afa5a94d69a4f2cc2ff961b14b8f66ba4424d567ab9fc8a23",
+        "bytes": 142441,
+        "seq": 17,
+        "step": "07-02",
+        "recordedAt": "2026-10-25T07:46:52.597Z",
+        "width": 1494,
+        "height": 1019,
+        "action": "讀回一體蓋裙／承接凸緣的實際網格"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-18-lid-union.png",
+        "sha256": "08d8a9e57b5d7867bd43421927d8651dcd42e5b9d4c176c6d4bdfb615ddfc491",
+        "bytes": 172755,
+        "seq": 18,
+        "step": "07-02",
+        "recordedAt": "2026-10-25T07:47:03.697Z",
+        "width": 1494,
+        "height": 1019,
+        "action": "選Lid，Boolean Union／Exact 指定FlangeTool，隱藏工具後看真正預覽"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-19-lid-applied.png",
+        "sha256": "6675dba6fd84226747e36d5fa56dba5719d35239ba6df889f04193e79f2dc0a6",
+        "bytes": 158486,
+        "seq": 19,
+        "step": "07-02",
+        "recordedAt": "2026-10-25T07:47:09.497Z",
+        "width": 1494,
+        "height": 1019,
+        "action": "Apply Union，讀回一體蓋板／裙／承接凸緣"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-20-lid-non-manifold.png",
+        "sha256": "2142b5895b6d8c48d19ea867f949666a9fcfd74502a4baf83da059a37e43fc28",
+        "bytes": 165136,
+        "seq": 20,
+        "step": "07-02",
+        "recordedAt": "2026-10-25T07:47:12.697Z",
+        "width": 1494,
+        "height": 1019,
+        "action": "Tab／邊模式／Alt+A／Select Non Manifold"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-21-lid-raised.png",
+        "sha256": "5da0a1365b79f87138ddc12bdf5c249f9dfa0407f2935893ccd3dedcc2a4f2d2",
+        "bytes": 166248,
+        "seq": 21,
+        "step": "07-02",
+        "recordedAt": "2026-10-25T07:47:21.306Z",
+        "width": 1494,
+        "height": 1019,
+        "action": "僅將Lid抬高12mm展示hook與ledge；沒有模擬接觸或彎曲"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-22-assembly-geometry.png",
+        "sha256": "56a6d9581be8daf0ce670b28e959122f9c692d8797a5c90dbd5c689fead5942f",
+        "bytes": 160011,
+        "seq": 22,
+        "step": "07-02",
+        "recordedAt": "2026-10-25T07:47:27.706Z",
+        "width": 1494,
+        "height": 1019,
+        "action": "Lid回原位置，讀取靜態間距、投影重疊與根部局部淨空"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-23-save-dialog.png",
+        "sha256": "b37863ceecd919c0576a803e87af47b9d9bc8be5fb99aaf0e807e8b614c275e8",
+        "bytes": 53167,
+        "seq": 23,
+        "step": "07-02",
+        "recordedAt": "2026-10-25T07:47:32.606Z",
+        "width": 1060,
+        "height": 600,
+        "action": "File > Save As，另存卡扣幾何草案u07_cantilever_snap_v001.blend"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-24-saved.png",
+        "sha256": "c4488d061d3658f6765962d2d271df490033f12e7c4619f1a8cb323d535013a2",
+        "bytes": 164342,
+        "seq": 24,
+        "step": "07-02",
+        "recordedAt": "2026-10-25T07:47:35.906Z",
+        "width": 1494,
+        "height": 1019,
+        "action": "Save As後讀回新版本hash與bytes"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-25-open-saved.png",
+        "sha256": "080ddab2dce15827a86684c03728a5a93e09523a0d8254d2ddf1dcba1ce6ac1b",
+        "bytes": 57901,
+        "seq": 25,
+        "step": "07-02",
+        "recordedAt": "2026-10-25T07:47:40.807Z",
+        "width": 1060,
+        "height": 600,
+        "action": "File > Open，重開剛才卡扣幾何草案版本"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-26-reopened-verified.png",
+        "sha256": "2187dc09ca5146a8ebdeca93fa1a59e142bf6f973f7c4beaa55b05f3439d9244",
+        "bytes": 157542,
+        "seq": 26,
+        "step": "07-02",
+        "recordedAt": "2026-10-25T07:47:44.207Z",
+        "width": 1494,
+        "height": 1019,
+        "action": "Open後重驗幾何與版本，保存草案及verification"
+      }
+    ],
+    "pixels_modified": false
+  },
+  "retained_probe_history": [
+    {
+      "run": "2026-10-25-lesson07-snap-ui-probe-v001",
+      "status": "failed",
+      "original_png_count": 4,
+      "run_record": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-ui-probe-v001/run.json",
+        "sha256": "6b6043aa7e9f1b520747cb988490b71f01fa63c3b77f818ce5ace0bfd9344db8",
+        "bytes": 3496
+      },
+      "runner_status": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-ui-probe-v001/runner-status.json",
+        "sha256": "088c7e92d172daa3bb1669430d8c378f7a696315f392b5f01fa79aaf788cbccc",
+        "bytes": 55178
+      },
+      "role": "retained unpublished probe; not the formal lesson result",
+      "note": "No face selected at the guarded face readback."
+    },
+    {
+      "run": "2026-10-25-lesson07-snap-ui-probe-v002",
+      "status": "failed",
+      "original_png_count": 4,
+      "run_record": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-ui-probe-v002/run.json",
+        "sha256": "df34ae111229026055e106b7609a55824828da9c897475bfc83266d72795f94e",
+        "bytes": 3535
+      },
+      "runner_status": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-ui-probe-v002/runner-status.json",
+        "sha256": "9b9d529ca17c0b1e6ec9eb80574686613b92d8bdb4af10a6897cd2c7ebe36907",
+        "bytes": 55217
+      },
+      "role": "retained unpublished probe; not the formal lesson result",
+      "note": "Selected face bounds were X18..24 rather than the intended beam face; guard stopped the probe."
+    },
+    {
+      "run": "2026-10-25-lesson07-snap-ui-probe-v003",
+      "status": "failed",
+      "original_png_count": 7,
+      "run_record": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-ui-probe-v003/run.json",
+        "sha256": "43f886eaa3d44c3bb9ee4466e7f71c233581fceb1f9df392b3cbfdb8a6e95307",
+        "bytes": 4917
+      },
+      "runner_status": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-ui-probe-v003/runner-status.json",
+        "sha256": "47ac7c3a52d5a34219dd7599c39ee5f435112b20b54e9d1181f55253092ffa90",
+        "bytes": 54941
+      },
+      "role": "retained unpublished probe; not the formal lesson result",
+      "note": "Actual Bevel offset_type was DEPTH instead of the required OFFSET; guard stopped the probe."
+    },
+    {
+      "run": "2026-10-25-lesson07-snap-ui-probe-v004",
+      "status": "completed",
+      "original_png_count": 11,
+      "run_record": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-ui-probe-v004/run.json",
+        "sha256": "1fe2e420e0c82cd7bb1842efeac84aefe2347d06879636084fe0bef28a853fa5",
+        "bytes": 6753
+      },
+      "runner_status": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-ui-probe-v004/runner-status.json",
+        "sha256": "a2940aa4393e216a054547603beadb63d440ed6fccdf9e68bf1374861b648496",
+        "bytes": 54093
+      },
+      "role": "retained unpublished probe; not the formal lesson result",
+      "note": "Native SnapTool selection and Bevel diagnostic only; no scene checkpoint."
+    },
+    {
+      "run": "2026-10-25-lesson07-snap-ui-probe-full-v001",
+      "status": "completed",
+      "original_png_count": 20,
+      "run_record": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-ui-probe-full-v001/run.json",
+        "sha256": "f82dc0f9244d131595a6ec036e2ffbb9c28758f6b5904edb7f8d3328e289aec0",
+        "bytes": 11714
+      },
+      "runner_status": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-ui-probe-full-v001/runner-status.json",
+        "sha256": "d87877939f42dfa8aac63b29ad503fa7388a4999e5f3c07bb2d1e17c77e86808",
+        "bytes": 54103
+      },
+      "role": "retained unpublished probe; not the formal lesson result",
+      "note": "Full UI geometry diagnostic with five raw meshes and static assembly; no scene checkpoint."
+    }
+  ],
+  "validation": {
+    "actual_run_pure_import_validation": "passed; no import performed by this validator/document task",
+    "actual_png_records_validation": "passed",
+    "related_import_tests": {
+      "run": 100,
+      "passed": 100
+    },
+    "final_project_tests_reported_by_root": {
+      "tutor_run": 186,
+      "tutor_passed": 185,
+      "tutor_skipped": 1,
+      "skip_reason": "Windows symlink permission",
+      "server_passed": 17,
+      "javascript_syntax": "passed"
+    },
+    "numericComparison": {
+      "mesh_dimensions_abs_mm": 0.0001,
+      "declared_geometry_abs_mm": 1e-06,
+      "volume_relative": 1e-05,
+      "purpose": "Floating-point reconstruction only; not manufacturing tolerance, allowable strain, strength or fit acceptance."
+    },
+    "native_miter_correction": "Checker reference was corrected for native varying-width bevel strips and finite end miter caps; epsilon was not increased. Regression checks reject moved caps and accept valid triangle subdivision/reindexing."
+  },
+  "not_performed": {
+    "strength_analysis_performed": false,
+    "fit_qualification": false,
+    "exported_stl": false,
+    "slicer_checked": false,
+    "printed": false,
+    "fit_tested": false
+  },
+  "unknown_or_unqualified": {
+    "material_grade": null,
+    "epsilon_allow": null,
+    "Q": null,
+    "delta_allow_mm": null,
+    "required_deflection_mm": null,
+    "forces": null,
+    "physical_measurements": null,
+    "fit_results": null,
+    "physical_interference": null,
+    "qualified_strength_N": null,
+    "qualified_clearance_mm": null
+  },
+  "known_print_condition": {
+    "nozzle_diameter_mm": 0.4,
+    "does_not_determine": "material, line width, orientation, strain allowance, deflection, force or qualified clearance"
+  },
+  "learner_protection": {
+    "publication_baseline": {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/publication-baseline-v001.json",
+      "sha256": "1a3cb120326e6a86c178760a446524660a697900c1d6738be77eca18669cff79",
+      "bytes": 4431
+    },
+    "baseline_step_count": 52,
+    "progress_revision": 5,
+    "progress_sha256": "d92e4f2ee78a1cf41386816b8616bf635b89fb25f8bfd813ac00cd20ed20b4ef",
+    "progress_matches_run_baseline": true,
+    "workspaces_unchanged": true,
+    "workspace_entries": 11,
+    "workspace_file_count": 0,
+    "workspace_canonical_sha256": "4ad6905b1cef7594ff1bfed45b81e7794fdbf128011df09b4686bdb44d0a7d2f",
+    "learner_completion_confirmed_by_this_run": false,
+    "registered_as_learner_file": false
+  },
+  "journal": "learning/journal/2026-10-25-lesson07-snap-demo-v001.md",
+  "publication_note": "Formal import, catalog/HTTP/browser publication verification is owned and recorded separately by the publishing agent; this manifest does not assert publication completion."
+}

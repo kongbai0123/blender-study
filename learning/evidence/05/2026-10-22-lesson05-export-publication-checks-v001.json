@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-22",
+  "pngCounts": {
+    "2026-10-22-lesson05-export-demo-v003": 18,
+    "2026-10-22-lesson05-export-view-v001": 6
+  },
+  "originalPngHashesSizesAndHttpBytesMatch": true,
+  "stlDownloadsMatchOriginalWithAttachmentHeader": true,
+  "exports": [
+    {
+      "kind": "pin",
+      "stl_sha256": "bc10342c54a94d87c15eccb050fb9b30a7ae00bf4079d4c7869ac53d199db784",
+      "stl_bytes": 684,
+      "stl_dimensions_mm": [
+        10.0,
+        10.0,
+        8.0
+      ],
+      "stl_triangles": 12,
+      "stl_genus": 0
+    },
+    {
+      "kind": "hole_plate",
+      "stl_sha256": "8105d1ebdc04ed12a2b7f98cc3b728db74063c453961c33d165ac50e694c7c8b",
+      "stl_bytes": 142784,
+      "stl_dimensions_mm": [
+        96.0,
+        26.0,
+        4.0
+      ],
+      "stl_triangles": 2854,
+      "stl_genus": 6
+    }
+  ],
+  "sourceCopiesAndOriginalsUnchanged": true,
+  "scriptSnapshotsMatchManifest": true,
+  "physicalMeasurementsAndFitFieldsEmpty": true,
+  "qualifiedClearanceMm": null,
+  "learnerProgressSha256": "d92e4f2ee78a1cf41386816b8616bf635b89fb25f8bfd813ac00cd20ed20b4ef",
+  "learnerProgressUnchanged": true,
+  "tests": {
+    "tutor": {
+      "run": 53,
+      "skipped": 1,
+      "failed": 0
+    },
+    "dashboard": {
+      "run": 17,
+      "failed": 0
+    },
+    "frontendSyntax": "node --check passed"
+  },
+  "browserProof": "learning/evidence/ui/2026-10-22-lesson05-export-demo-v003.jpg"
+}

@@ -1,0 +1,19 @@
+{
+  "changedSteps": [
+    "05-03",
+    "05-04",
+    "06-01",
+    "06-02",
+    "06-03",
+    "07-02",
+    "07-04",
+    "07-05",
+    "08-01"
+  ],
+  "totalSteps": 52,
+  "operationRunsUnchanged": true,
+  "figuresUnchanged": true,
+  "progressSha256": "26130175ef80a9fb83699f93a8c33de7b098b17ffa2c10aef794808390d19325",
+  "catalogSha256": "7b8837cf63481dff67093fbe1373a2583acd1d7faa1b393484f0d139f5a9cfd6",
+  "sourceFilesProtected": 1661
+}

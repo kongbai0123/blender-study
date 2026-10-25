@@ -1,0 +1,273 @@
+{
+  "recordedAt": "2026-10-25T06:52:56.584100+00:00",
+  "evidencePassed": true,
+  "publicationPending": false,
+  "browserProofPending": false,
+  "images": [
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-01-body-source-dialog.png",
+      "status": 200,
+      "sha256": "3dbebc080f14c07b0002cc0675b1a613cd6dc191f0819121497242276491c6e5",
+      "width": 1060,
+      "height": 600,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-02-body-source-selected.png",
+      "status": 200,
+      "sha256": "184531942aaeab3053aa699b601c47b76022acb12d64a4a76d65a5d6a4b47b11",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-03-body-source-end-profile.png",
+      "status": 200,
+      "sha256": "cfc66623c49b3ff4cb9d8e64fc197e4c915d5802a034c8cb0aa1a4554853b41f",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-04-body-export-menu.png",
+      "status": 200,
+      "sha256": "27c194628ce551749e797fda7a53c99efbeae7261d0e21b12239b8329b08387f",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-05-body-export-before.png",
+      "status": 200,
+      "sha256": "fe4a9a6b46caae6927a5a4b7bb013780c953d3043ba02044012cdc225f2545e0",
+      "width": 1060,
+      "height": 600,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-06-body-export-options.png",
+      "status": 200,
+      "sha256": "6a2a89f809465e8117320d19b53ef0720de5a10516cd39306a892d79ff6019e0",
+      "width": 1060,
+      "height": 600,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-07-body-stl-checked.png",
+      "status": 200,
+      "sha256": "d92cb4111712d18dac776f64071263e22bd68517518bec08617ed92075d7a691",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-08-lid-source-dialog.png",
+      "status": 200,
+      "sha256": "cce66068bc1ddef545aad82c2aa98ccbc7d6bd8e9d20d08261ae03087815db44",
+      "width": 1060,
+      "height": 600,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-09-lid-source-selected.png",
+      "status": 200,
+      "sha256": "a524c1369371e2c3134cd56ba7e3ff1caa66c04904c243b7924c0c4d3f304b4b",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-10-lid-source-end-profile.png",
+      "status": 200,
+      "sha256": "7d6f39f90b987a1b6d2dc1444ce9d5d7bee1c13fd286aeba973f00e148867d63",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-11-lid-export-menu.png",
+      "status": 200,
+      "sha256": "d7970ec4edea272c017646c01c43ae27a86649096b67105db08f98c4834bc116",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-12-lid-export-before.png",
+      "status": 200,
+      "sha256": "af58f6dc9a41f6a808e35c0f2fb0ab9185c87b6c53b2e391b54c0492125fa3eb",
+      "width": 1060,
+      "height": 600,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-13-lid-export-options.png",
+      "status": 200,
+      "sha256": "6cfd473cb51411f616ef230f4e3d7ed8690b4f988f130172d36fd50c900d7012",
+      "width": 1060,
+      "height": 600,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-14-lid-stl-checked.png",
+      "status": 200,
+      "sha256": "1669aa6cfef8ac374b17192a33f29fc4d90ffa4f0025da9928d20a2eda307082",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-15-empty-mm-scene.png",
+      "status": 200,
+      "sha256": "4adc8aebf5e4a772bee8fce4eb6b599831c2910744002fc3fb9242704c87f51c",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-16-body-import-dialog.png",
+      "status": 200,
+      "sha256": "790a2cf010ff9a9dacde6654094a4a63e631bd4ee20d6b6927fff4182c7de801",
+      "width": 1060,
+      "height": 600,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-17-body-reimport-dimensions.png",
+      "status": 200,
+      "sha256": "594e402e24bc477199fb729a2ae876e6699a4ac7aad224df23e7d55f9b51f301",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-18-body-reimport-end-profile.png",
+      "status": 200,
+      "sha256": "034425a0b365e02228ff8cc4426646d993df2de47878956761499c07891fc32e",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-19-body-reimport-non-manifold.png",
+      "status": 200,
+      "sha256": "c9d06521f4e159aa0ce1b1baff330e086f86f8c1e60d577ffc724bd7ae8c5fc6",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-20-lid-import-dialog.png",
+      "status": 200,
+      "sha256": "69d20151d91ba189cc6c66c403049755480dba5451fb6e83fd7e9b76d9608572",
+      "width": 1060,
+      "height": 600,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-21-lid-reimport-dimensions.png",
+      "status": 200,
+      "sha256": "2f347072775f85671a78161395323f414fb658609ae9ad6c068c9c2916a1ba00",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-22-lid-reimport-end-profile.png",
+      "status": 200,
+      "sha256": "8ddcb494177d83488c78dae42bd9de3259d2d553aeecbc5e0869184a3ae24aec",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-23-lid-reimport-non-manifold.png",
+      "status": 200,
+      "sha256": "95fdeb182b7b31ba35e33e2b674c1f9315258d3afa37a483208e98d0bb224bb9",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-24-reimport-assembly.png",
+      "status": 200,
+      "sha256": "2bfb82486554b39de0d602488af7840f14e5dadbb3e3237e0fd86c30a2a4577c",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-25-exports-verified.png",
+      "status": 200,
+      "sha256": "2bfb82486554b39de0d602488af7840f14e5dadbb3e3237e0fd86c30a2a4577c",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    }
+  ],
+  "stlDownloads": [
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/demo-files/exports/u06_dovetail_body_v001.stl",
+      "status": 200,
+      "sha256": "747e6186876f0e00c5c0617f0631de890a610696e42a930d5f7a0452f8ab4586",
+      "bytes": 6284,
+      "contentDisposition": "attachment"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/demo-files/exports/u06_dovetail_lid_v001.stl",
+      "status": 200,
+      "sha256": "436597611a951ead9878cb330bda8a4a306f014cb70183c894987666113ee713",
+      "bytes": 3484,
+      "contentDisposition": "attachment"
+    }
+  ],
+  "sharedProgress": {
+    "unchanged": true,
+    "revision": 5,
+    "sha256": "d92e4f2ee78a1cf41386816b8616bf635b89fb25f8bfd813ac00cd20ed20b4ef"
+  },
+  "checks": {
+    "tutorTests": 155,
+    "tutorSkipped": 1,
+    "serverTests": 17,
+    "nodeSyntaxCheck": true,
+    "physicalQualificationClaimed": false
+  },
+  "catalogChangedStepIds": [
+    "06-03"
+  ],
+  "catalogSha256": "cf675d43ae66f396fbd6f9ad8c6a6e4407b21d6b484035d172cbd5928b4439a9",
+  "passed": true,
+  "browserProof": {
+    "recordedAt": "2026-10-25T06:55:27.022350+00:00",
+    "path": "learning/evidence/ui/2026-10-25-lesson06-dovetail-export-demo-v001.jpg",
+    "sha256": "84df2e63dd7dcdcd06b70fbb7a756f69bd54ba5625abd34670b0f40d79a42a96",
+    "bytes": 37953,
+    "width": 304,
+    "height": 848,
+    "pixelEdits": false,
+    "source": "CUA existing IAB tab3 native browser screenshot",
+    "url": "http://127.0.0.1:8766/",
+    "step": "06-03",
+    "learnerConfirmed": false
+  },
+  "apiCatalogMatchesDisk": true,
+  "apiProgressMatchesDisk": true,
+  "versionRecords": [
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/export-manifest-v001.json",
+      "bytes": 28244,
+      "sha256": "e46ec23525237042201f61737e431483a8a8e8dbd0e2378fdadfff7239a37ebb"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/trial-fit-record-v001.json",
+      "bytes": 26354,
+      "sha256": "801d881f235163ac51a95b1d4c48fa6b77c4d0d01104926c4974fd8a34d0faa8"
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001.json",
+      "bytes": 185333,
+      "sha256": "5abb805668a1e55a3229b6b3c5419b901dc0ed7a45dfdda0690c4336a80d8677"
+    }
+  ]
+}

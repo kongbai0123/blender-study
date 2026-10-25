@@ -1,0 +1,312 @@
+{
+ "scenario": "D:\\others\\study\\Blender-Learning\\learning\\tutor\\scenarios\\lesson05_lid_export.py",
+ "blender": "5.2.1 LTS",
+ "buildHash": "9e2066aef7ef",
+ "records": [
+  {
+   "seq": 1,
+   "step": "05-06",
+   "slug": "source-open-dialog",
+   "recordedAt": "2026-10-25T05:23:56.062Z",
+   "action": "File > Open…，開啟 05-05 上蓋 v001 的同雜湊副本",
+   "observed": "資料夾 D:\\others\\study\\Blender-Learning\\learning\\evidence\\05\\2026-10-25-lesson05-lid-export-demo-v001\\demo-files\\sources\\；檔名 u05_lid_v001.blend。",
+   "window": "FILE_BROWSER",
+   "highlights": [
+    {
+     "x": 248,
+     "y": 566,
+     "w": 780,
+     "h": 25,
+     "label": "上蓋來源 v001"
+    },
+    {
+     "x": 789,
+     "y": 566,
+     "w": 126,
+     "h": 25,
+     "label": "Open"
+    }
+   ],
+   "clicks": [],
+   "file": "05-06-01-source-open-dialog.png",
+   "width": 1060,
+   "height": 600,
+   "sha256": "4dcdab53fd8067df340d0617778190df161f4ee433449ede255408e2e6e0b5ef"
+  },
+  {
+   "seq": 2,
+   "step": "05-06",
+   "slug": "lid-selected",
+   "recordedAt": "2026-10-25T05:24:05.262Z",
+   "action": "只選 Lid，底部斜視核對 Dimensions、板厚與環形唇邊，排除 Body",
+   "observed": "只選 Lid；整體 [60.0, 40.0, 6.0] mm、板厚 2、唇深 4、環壁 2 mm；來源與副本 SHA-256 一致。Body 暫隱藏但未改幾何。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 1286,
+     "y": 134,
+     "w": 150,
+     "h": 20,
+     "label": "只選 Lid"
+    },
+    {
+     "x": 963,
+     "y": 383,
+     "w": 228,
+     "h": 77,
+     "label": "Lid 整體 60 × 40 × 6 mm"
+    }
+   ],
+   "clicks": [],
+   "file": "05-06-02-lid-selected.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "209c403efbec2304e93ec626b3ec0a9ff37f9a4ef080cfcaa78e11605bda2092",
+   "note": "板厚 2 mm 加向下唇深 4 mm，整體高 6 mm。0.4 mm 總間隙／每側 0.2 mm 仍是幾何試驗值。"
+  },
+  {
+   "seq": 3,
+   "step": "05-06",
+   "slug": "export-menu",
+   "recordedAt": "2026-10-25T05:24:07.162Z",
+   "action": "File > Export，指到 STL (.stl)",
+   "observed": "已選取：Lid；作用中物件：Lid",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 28,
+     "y": 307,
+     "w": 202,
+     "h": 20,
+     "label": "Export"
+    },
+    {
+     "x": 236,
+     "y": 426,
+     "w": 244,
+     "h": 20,
+     "label": "STL (.stl)"
+    }
+   ],
+   "clicks": [],
+   "file": "05-06-03-export-menu.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "bbdd40b730bd3881bdcf1cc615bfddfb501b4b65c1e0b8d9e80ed36189218b01"
+  },
+  {
+   "seq": 4,
+   "step": "05-06",
+   "slug": "export-before",
+   "recordedAt": "2026-10-25T05:24:11.162Z",
+   "action": "核對 STL 匯出檔名、路徑及目前選項",
+   "observed": "資料夾 D:\\others\\study\\Blender-Learning\\learning\\evidence\\05\\2026-10-25-lesson05-lid-export-demo-v001\\demo-files\\exports\\；檔名 u05_lid_v001.stl；選項 {'only_selected': False, 'global_scale': 1.0, 'use_scene_unit': False, 'apply_modifiers': True, 'forward_axis': 'Y', 'up_axis': 'Z', 'ascii_format': False, 'use_batch': False, 'evaluation_mode': 'DAG_EVAL_RENDER'}。",
+   "window": "FILE_BROWSER",
+   "highlights": [
+    {
+     "x": 248,
+     "y": 566,
+     "w": 780,
+     "h": 25,
+     "label": "u05_lid_v001.stl"
+    },
+    {
+     "x": 920,
+     "y": 148,
+     "w": 135,
+     "h": 22,
+     "label": "Selection Only"
+    },
+    {
+     "x": 920,
+     "y": 170,
+     "w": 135,
+     "h": 43,
+     "label": "Scale / Scene Unit"
+    }
+   ],
+   "clicks": [],
+   "file": "05-06-04-export-before.png",
+   "width": 1060,
+   "height": 600,
+   "sha256": "0d58621434de1798f1634faff6ef099811906db5123d9b226256e6a2e812864c"
+  },
+  {
+   "seq": 5,
+   "step": "05-06",
+   "slug": "export-options",
+   "recordedAt": "2026-10-25T05:24:12.963Z",
+   "action": "勾選並核對 Selection Only，再核對 Scale 1、Scene Unit 不勾與本次新檔路徑",
+   "observed": "Selection Only 開、Scale 1、Scene Unit 關、Apply Modifiers 開、Binary、Batch 關、Y Forward / Z Up；只匯出 Lid。",
+   "window": "FILE_BROWSER",
+   "highlights": [
+    {
+     "x": 920,
+     "y": 148,
+     "w": 135,
+     "h": 22,
+     "label": "Selection Only 開"
+    },
+    {
+     "x": 920,
+     "y": 170,
+     "w": 135,
+     "h": 43,
+     "label": "Scale 1 / Scene Unit 關"
+    },
+    {
+     "x": 789,
+     "y": 566,
+     "w": 126,
+     "h": 25,
+     "label": "Export STL"
+    }
+   ],
+   "clicks": [],
+   "file": "05-06-05-export-options.png",
+   "width": 1060,
+   "height": 600,
+   "sha256": "2ba670fbc9592b460fb36d1ca2b9f66d41ff4468bfed130802b076b93ba63c8e",
+   "note": "本場景 Unit Scale 0.001。STL 沒有長度單位標記，本次匯出數字按毫米解讀；尚未核對切片擺放。"
+  },
+  {
+   "seq": 6,
+   "step": "05-06",
+   "slug": "stl-checked",
+   "recordedAt": "2026-10-25T05:24:15.963Z",
+   "action": "按 Export STL，解析磁碟 STL 的尺寸、拓樸、唇內外平面與盲內凹，對照來源",
+   "observed": "u05_lid_v001.stl：2284 bytes、44 三角形；檔內外形 [60.0, 40.0, 6.0]（按 mm 解讀）、板厚 2／唇深 4、單殼、Non Manifold 0；SHA-256 0b226cf405bc70f42b5ce28fee9f46cb55eff67b84c6d786c091a2043f5f2408。",
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "05-06-06-stl-checked.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "6a1fc291fed85dc0c59e4efd82367235e20cd38f534d11d1359ff2f40cb64596",
+   "note": "STL 保留原場景 world Z 11～17 mm。這是數位檔案核對，尚未進行切片、落床方向、列印或試配。"
+  },
+  {
+   "seq": 7,
+   "step": "05-06",
+   "slug": "empty-mm-scene",
+   "recordedAt": "2026-10-25T05:24:27.963Z",
+   "action": "File > New > General，清空獨立場景，設 Metric / Millimeters / Unit Scale 0.001",
+   "observed": "場景物件 0；Unit Scale 0.001；Length MILLIMETERS。",
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "05-06-07-empty-mm-scene.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "4adc8aebf5e4a772bee8fce4eb6b599831c2910744002fc3fb9242704c87f51c"
+  },
+  {
+   "seq": 8,
+   "step": "05-06",
+   "slug": "import-dialog",
+   "recordedAt": "2026-10-25T05:24:32.063Z",
+   "action": "F3 搜尋 Import STL，選本次剛匯出的上蓋 STL，讀回匯入選項",
+   "observed": "實際 STL：u05_lid_v001.stl；Scale 1、Scene Unit 關、Y Forward / Z Up。",
+   "window": "FILE_BROWSER",
+   "highlights": [
+    {
+     "x": 248,
+     "y": 566,
+     "w": 780,
+     "h": 25,
+     "label": "本次 STL v001"
+    },
+    {
+     "x": 789,
+     "y": 566,
+     "w": 126,
+     "h": 25,
+     "label": "Import STL"
+    }
+   ],
+   "clicks": [],
+   "file": "05-06-08-import-dialog.png",
+   "width": 1060,
+   "height": 600,
+   "sha256": "449c2a87c98e26c5b91dcdddee7d558287a42bde44a4b6fdcb1ce77032d73c77"
+  },
+  {
+   "seq": 9,
+   "step": "05-06",
+   "slug": "reimport-dimensions",
+   "recordedAt": "2026-10-25T05:24:38.063Z",
+   "action": "實際匯入後才切 Item 分頁，Frame Selected，核對 Dimensions 60 × 40 × 6 mm",
+   "observed": "實際重新匯入 u05_lid_v001；Item Dimensions [60.0, 40.0, 6.0] mm，Scale 1、Non Manifold 0；板厚 2、唇深 4 mm，來源與 STL 幾何一致。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 963,
+     "y": 383,
+     "w": 228,
+     "h": 77,
+     "label": "STL 重新匯入：60 × 40 × 6 mm"
+    }
+   ],
+   "clicks": [],
+   "file": "05-06-09-reimport-dimensions.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "ff7b6d72058f2e973be1cc6fa3d462e6f2fdbd3a64585f1116d13cb5c8ba8a84"
+  },
+  {
+   "seq": 10,
+   "step": "05-06",
+   "slug": "reimport-underside",
+   "recordedAt": "2026-10-25T05:24:40.963Z",
+   "action": "底部斜視，從實際重新匯入的 STL 核對一體定位環與盲內凹",
+   "observed": "實際重新匯入 u05_lid_v001；Item Dimensions [60.0, 40.0, 6.0] mm，Scale 1、Non Manifold 0；板厚 2、唇深 4 mm，來源與 STL 幾何一致。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 963,
+     "y": 383,
+     "w": 228,
+     "h": 77,
+     "label": "整高 6 = 板厚 2 + 唇深 4 mm"
+    }
+   ],
+   "clicks": [],
+   "file": "05-06-10-reimport-underside.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "c31773df47bd9714268cf1a9715c419d09c163e8f1a903091bb8251f953e48d8",
+   "note": "0.4 mm 總間隙仍為幾何試驗值。STL 重新匯入成功不等於實際列印或試配合格。"
+  },
+  {
+   "seq": 11,
+   "step": "05-06",
+   "slug": "non-manifold",
+   "recordedAt": "2026-10-25T05:24:45.163Z",
+   "action": "Tab > 邊選取 > Select None，再 F3 搜尋 Select Non Manifold",
+   "observed": "非空上蓋網格，Select Non Manifold 選到邊 0；程式讀回 Non Manifold 0。",
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "05-06-11-non-manifold.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "af4a7e9ad7339da7e7c301f32d80e21004f3162cd03bcff73a8807584ac1214d"
+  },
+  {
+   "seq": 12,
+   "step": "05-06",
+   "slug": "verified",
+   "recordedAt": "2026-10-25T05:24:46.763Z",
+   "action": "保存 STL 與來源版本關聯、數位讀值及 verification.json",
+   "observed": "上蓋 STL 匯出、實檔解析、實際重新匯入皆通過；外形 60 × 40 × 6、板厚 2、唇深 4 mm；來源 hash 不變。尚未列印／實測／試配，合格間隙空白。",
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "05-06-12-verified.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "c31773df47bd9714268cf1a9715c419d09c163e8f1a903091bb8251f953e48d8",
+   "note": "本次只完成 05-06 的匯出與數位核對部分；實體結果保持 null，不代學員確認完成。"
+  }
+ ]
+}

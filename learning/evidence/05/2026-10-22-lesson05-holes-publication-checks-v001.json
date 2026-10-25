@@ -1,0 +1,27 @@
+{
+  "checkedAt": "2026-10-22",
+  "pngCounts": {
+    "2026-10-22-lesson05-holes-demo-v002": 28,
+    "2026-10-22-lesson05-holes-view-v001": 4
+  },
+  "allPngDimensionsAndSha256Match": true,
+  "allPngHttpBytesEqualOriginal": true,
+  "failedRunPublished": false,
+  "learnerProgressSha256": "d92e4f2ee78a1cf41386816b8616bf635b89fb25f8bfd813ac00cd20ed20b4ef",
+  "learnerProgressUnchanged": true,
+  "physicalMeasurementAndFitColumnsEmpty": true,
+  "mainRunnerCompleted": true,
+  "supplementalRunnerCompleted": true,
+  "tests": {
+    "dashboard": {
+      "run": 17,
+      "passed": 17
+    },
+    "tutor": {
+      "run": 33,
+      "skipped": 1,
+      "failed": 0
+    }
+  },
+  "qualifiedClearanceMm": null
+}

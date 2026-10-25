@@ -1,0 +1,1005 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "Codex audit_images_07a",
+  "date": "2026-10-25",
+  "scope": [
+    "07-01",
+    "07-02",
+    "07-03"
+  ],
+  "method": "逐張以view_image檢視原圖，對照catalog event/figure文字；未拼貼、未重畫、未依舊audit冒稱目視。數字未出現在圖上者另記需要raw，這份報告不是全模型獨立重算。",
+  "uniquePathsViewed": 55,
+  "distinctPixelFilesSha256": 54,
+  "counts": {
+    "07-01": 12,
+    "07-02": 26,
+    "07-03": 17
+  },
+  "summary": "55張原圖均與對應階段、物件及可見操作相符；未見足以判定捏造或幾何讀值錯誤的矛盾。07-02有教學座標說明不足與遮擋，07-03補充focus已呈現高處朝下面；精確數字仍需raw。",
+  "findings": [
+    {
+      "id": "07a-F01",
+      "severity": "minor_presentation",
+      "step": "07-02",
+      "images": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        16
+      ],
+      "title": "Edit Mode側欄是Local Median，事件讀值是world且缺少同處說明",
+      "detail": "例如#5畫面Z22.5mm，event world頂Z13mm；#3 LocalZ1.5對world−8。這可由SnapTool LocationZ−9.5解釋，不是數值錯誤，但學員按側欄核對時可能認為不一致。#16FlangeTool同類。",
+      "recommendation": "在相關event note明示Local Median與world換算，例22.5+(−9.5)=13；不要改原圖/raw。"
+    },
+    {
+      "id": "07a-F02",
+      "severity": "minor_presentation",
+      "step": "07-02",
+      "images": [
+        18,
+        21,
+        22
+      ],
+      "title": "部分視角遮擋；不能單張讀取微小配合尺寸",
+      "detail": "#18上方角度看不見裙/凸緣，#19底視補足。#21抬蓋畫面active Body，N不是Lid Location；#22閉蓋不能直視.2/.3等間距。未發現event聲稱圖上直接顯示這些值，故屬證據分層說明。",
+      "recommendation": "將『實際結果』註明為讀回數值，並明示active物件，連raw；如要教細部，可新增視角圖但不覆舊圖。"
+    },
+    {
+      "id": "07a-F03",
+      "severity": "evidence_limit_already_disclosed",
+      "step": "07-03",
+      "images": [
+        10,
+        11
+      ],
+      "title": "主流程翻面蓋圖不直接顯示高處小懸空紅面，補充focus已解決",
+      "detail": "#10底斜視多見床面紅，#11純側視朝下面投影為線，event note已明示；附證focus-v002淺角近拍清楚顯示高處薄紅底面與床接觸大片紅面分離。",
+      "recommendation": "保留focus原圖及現在區分床接觸/離床的文字；12mm²及面數仍引用polygon raw，不以像素冒充量測。"
+    }
+  ],
+  "images": [
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/07-01-12-reopened-verified.png",
+      "steps": [
+        "07-01"
+      ],
+      "references": [
+        "07-01.figures[0].path",
+        "07-01.operationRun.events[11].figure.path"
+      ],
+      "exists": true,
+      "sha256": "05ccab2799c6d1965c1878130815b63d2bbff9cd4b87417c2d63458e52bc3472",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 0,
+      "observed": "重開後Object Mode Body_Reference；完整開口空盒，N面板Dimensions60/40/30mm、Loc/Rot0、Scale1；沒有卡扣。",
+      "limitations": "圖像可核外框顯示與形狀，內腔56/36/28、壁底2、NM0及參數null須raw/parameter-record佐證。",
+      "result": "visible_state_consistent_with_claim; quantitative limits listed separately"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/07-01-01-source-open-dialog.png",
+      "steps": [
+        "07-01"
+      ],
+      "references": [
+        "07-01.operationRun.events[0].figure.path"
+      ],
+      "exists": true,
+      "sha256": "152936b79968f14cd0dfe945027ff1f7f83de5e79380e3f40a456c7685054a36",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 1,
+      "observed": "真實File Browser列出u04_box_v001.blend且檔名欄相同，Open按鈕可見；路徑列末端demo-files/sources。",
+      "limitations": "路徑中段省略，完整路徑和同hash須run資料佐證。",
+      "result": "visible_state_consistent_with_claim; quantitative limits listed separately"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/07-01-02-source-checked.png",
+      "steps": [
+        "07-01"
+      ],
+      "references": [
+        "07-01.operationRun.events[1].figure.path"
+      ],
+      "exists": true,
+      "sha256": "553d16ae73d6789e63151c705c2c9231cee91ba7a5712084489555ef213e1e64",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 2,
+      "observed": "Object Mode Cube空盒，Dimensions60/40/30mm，Scale1、Rot0、Loc0；Camera/Light尚在清單。",
+      "limitations": "體積、NM0與精確內腔不在畫面顯示。",
+      "result": "visible_state_consistent_with_claim; quantitative limits listed separately"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/07-01-03-reference-top.png",
+      "steps": [
+        "07-01"
+      ],
+      "references": [
+        "07-01.operationRun.events[2].figure.path"
+      ],
+      "exists": true,
+      "sha256": "4da568b6e1c627bed94f9597e4352d866a5761a755f540b838f0e58660e3f8d2",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 3,
+      "observed": "Top Orthographic、Body_Reference改名完成、Camera/Light灰隱藏；Dimensions60/40/30、Loc0、Scale1。",
+      "limitations": "Object Mode平面同色導致頂視內腔不易辨認，斜視與後續Edit圖補足。",
+      "result": "visible_state_consistent_with_claim; quantitative limits listed separately"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/07-01-04-rim-face.png",
+      "steps": [
+        "07-01"
+      ],
+      "references": [
+        "07-01.operationRun.events[3].figure.path"
+      ],
+      "exists": true,
+      "sha256": "71f4e90f4ad1e2416be0df61bdb68eda91775f1eda878c732023f62cbaaf3cda",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 4,
+      "observed": "Edit Mode面選取，前側梯形盒口面高亮；Local Median X0/Y−19/Z15mm。",
+      "limitations": "只顯Median不顯world min/max，Y−20..−18的2mm跨度須face-measurements佐證；Local不是world的通用標示。",
+      "result": "visible_state_consistent_with_claim; quantitative limits listed separately"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/07-01-05-inner-floor.png",
+      "steps": [
+        "07-01"
+      ],
+      "references": [
+        "07-01.operationRun.events[4].figure.path"
+      ],
+      "exists": true,
+      "sha256": "a78e713c12c3af31a8e6d3d717bea1a8ca99891e3524c6991459654c174d8e6d",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 5,
+      "observed": "Edit Mode Top Orthographic內底面高亮；Local Median0/0/−13mm。",
+      "limitations": "56×36跨度須實選面角點raw；Local=world只因目前identity。",
+      "result": "visible_state_consistent_with_claim; quantitative limits listed separately"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/07-01-06-outer-floor.png",
+      "steps": [
+        "07-01"
+      ],
+      "references": [
+        "07-01.operationRun.events[5].figure.path"
+      ],
+      "exists": true,
+      "sha256": "6c583bd5aec0207b5c2c8c51ba50343bfa65b2ee6cea6c713ed21f5e5a983e52",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 6,
+      "observed": "Bottom Orthographic外底整面高亮；Local Median0/0/−15mm。",
+      "limitations": "60×40跨度須raw；與內底Z差2可比較兩圖但不是臂厚。",
+      "result": "visible_state_consistent_with_claim; quantitative limits listed separately"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/07-01-07-non-manifold.png",
+      "steps": [
+        "07-01"
+      ],
+      "references": [
+        "07-01.operationRun.events[6].figure.path"
+      ],
+      "exists": true,
+      "sha256": "cced4f7a89cbf44e9fe75a8cdfeefd24d06b7adff7c8407a09ed1132ea9b4962",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 7,
+      "observed": "Edit Mode邊選取，側欄Nothing selected；左下Select Non-Manifold操作面板提示可見，沒有被高亮的邊。",
+      "limitations": "畫面支持無選中邊，但完整拓撲NM0須網格計數佐證。",
+      "result": "visible_state_consistent_with_claim; quantitative limits listed separately"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/07-01-08-reference-overview.png",
+      "steps": [
+        "07-01"
+      ],
+      "references": [
+        "07-01.operationRun.events[7].figure.path"
+      ],
+      "exists": true,
+      "sha256": "76bd22f0091976802281b444aa8703b9cd939a107c4a70d4074a0d137816a576",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 8,
+      "observed": "Body_Reference斜視可見空腔與四壁；Dimensions60/40/30、Scale1、Rot0；無卡扣幾何。",
+      "limitations": "L/h/b/材料/ε等待定只存在參數紀錄，畫面本身未列參數。",
+      "result": "visible_state_consistent_with_claim; quantitative limits listed separately"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/07-01-09-save-dialog.png",
+      "steps": [
+        "07-01"
+      ],
+      "references": [
+        "07-01.operationRun.events[8].figure.path"
+      ],
+      "exists": true,
+      "sha256": "77eea2adedd435def8c20c832f8bb194a6c2e53e20d0a7165ce1d418c9968069",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 9,
+      "observed": "Save As檔名u07_snap_reference_v001.blend可讀；路徑末端當次demo-files，資料夾含sources。",
+      "limitations": "完整路徑因UI省略須run資料。",
+      "result": "visible_state_consistent_with_claim; quantitative limits listed separately"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/07-01-10-saved.png",
+      "steps": [
+        "07-01"
+      ],
+      "references": [
+        "07-01.operationRun.events[9].figure.path"
+      ],
+      "exists": true,
+      "sha256": "5158e8e781a71aa2ad82690c178ce18b75e4a19494d851824073d5f4c6d3655f",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 10,
+      "observed": "斜視原盒、Body_Reference及尺寸60/40/30；底部Saved as u07_snap_reference_v001.blend提示。",
+      "limitations": "bytes/hash及來源未變須檔案讀值。",
+      "result": "visible_state_consistent_with_claim; quantitative limits listed separately"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/07-01-11-open-saved.png",
+      "steps": [
+        "07-01"
+      ],
+      "references": [
+        "07-01.operationRun.events[10].figure.path"
+      ],
+      "exists": true,
+      "sha256": "67e5701b0471e71e1424c035831cc4a9d0757e451474f3ca55a0f14533e940ae",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 11,
+      "observed": "Open File Browser列出u07_snap_reference_v001.blend，底部檔名相同；不是原u04檔。",
+      "limitations": "真正重開後網格同一性須後續圖與raw。",
+      "result": "visible_state_consistent_with_claim; quantitative limits listed separately"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-21-lid-raised.png",
+      "steps": [
+        "07-02"
+      ],
+      "references": [
+        "07-02.figures[0].path",
+        "07-02.operationRun.events[20].figure.path"
+      ],
+      "exists": true,
+      "sha256": "5da0a1365b79f87138ddc12bdf5c249f9dfa0407f2935893ccd3dedcc2a4f2d2",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 12,
+      "observed": "上蓋明顯抬離盒體，鉤與蓋裙相對位置可見；工具隱藏，Active Body。",
+      "limitations": "N面板是Body Loc0和60×44.5×30，非抬蓋Lid數值；Lid Z28.2及+12須run狀態/mesh佐證。",
+      "result": "visible_state_consistent_with_claim; quantitative limits listed separately"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-19-lid-applied.png",
+      "steps": [
+        "07-02"
+      ],
+      "references": [
+        "07-02.figures[1].path",
+        "07-02.operationRun.events[18].figure.path"
+      ],
+      "exists": true,
+      "sha256": "6675dba6fd84226747e36d5fa56dba5719d35239ba6df889f04193e79f2dc0a6",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 13,
+      "observed": "Lid底斜視可見一體板、裙及局部承接凸緣；Dimensions60/46/7mm，Location0/−3/16.2，Scale1，Boolean已不在面板。",
+      "limitations": "板2/凸緣.6/突出1.2未以量尺顯示，需raw。",
+      "result": "visible_state_consistent_with_claim; quantitative limits listed separately"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-01-source-open-dialog.png",
+      "steps": [
+        "07-02"
+      ],
+      "references": [
+        "07-02.operationRun.events[0].figure.path"
+      ],
+      "exists": true,
+      "sha256": "1f7f2ca254807157eb5c4c7d73240a8941f8175254beb9ca57540ac838563ee4",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 14,
+      "observed": "File Browser來源u07_snap_reference_v001.blend在sources，檔名與Open一致。",
+      "limitations": "同hash及完整路徑需檔案讀值。",
+      "result": "visible_state_consistent_with_claim; quantitative limits listed separately"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-02-source-geometry.png",
+      "steps": [
+        "07-02"
+      ],
+      "references": [
+        "07-02.operationRun.events[1].figure.path"
+      ],
+      "exists": true,
+      "sha256": "eb1b309daf2eb94b631e60f65c6b55643e90d8bc0d01080c24416f90a9b242c9",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 15,
+      "observed": "開始仍為未加卡扣原盒，Body_Reference；尺寸60/40/30、LocRot0、Scale1。",
+      "limitations": "內腔/壁底精確值與hash不在畫面。",
+      "result": "visible_state_consistent_with_claim; quantitative limits listed separately"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-03-anchor-top.png",
+      "steps": [
+        "07-02"
+      ],
+      "references": [
+        "07-02.operationRun.events[2].figure.path"
+      ],
+      "exists": true,
+      "sha256": "f9a79c854125df1b976b4ec9795d38402463e0a6915ff42ce2c435b61e523c45",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 16,
+      "observed": "SnapTool頂視Edit Mode，完整anchor頂面高亮；Local MedianZ1.5mm。",
+      "limitations": "event world頂Z−8與圖Local1.5不同座標系；9×4.6×3尺寸與world位置須matrix/raw，非圖上可讀值。",
+      "result": "visible_state_consistent_with_claim; quantitative limits listed separately"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-04-beam-inset.png",
+      "steps": [
+        "07-02"
+      ],
+      "references": [
+        "07-02.operationRun.events[3].figure.path"
+      ],
+      "exists": true,
+      "sha256": "a5d7b5fedbdc7fba842bf9b1048159ecf781a02c1858d3cfd4549aab24e21323",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 17,
+      "observed": "頂面Inset後選中較小矩形，四周框邊可見；左下Inset Faces。",
+      "limitations": "Inset1.5、截面6×1.6不在展開operator，須readback；圖Median仍Local1.5。",
+      "result": "visible_state_consistent_with_claim; quantitative limits listed separately"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-05-beam-extruded.png",
+      "steps": [
+        "07-02"
+      ],
+      "references": [
+        "07-02.operationRun.events[4].figure.path"
+      ],
+      "exists": true,
+      "sha256": "b5c5733263019f34bf999fd9b254d397986b82af251d7015bb065180fab78c6e",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 18,
+      "observed": "高臂頂面選中，可見靠近頂端的第二次Extrude分層；Local Median Z22.5mm。",
+      "limitations": "world頂Z13、承接Z11、E19再E2需讀回與object Z−9.5相加，不可把Local22.5當world13。",
+      "result": "visible_state_consistent_with_claim; quantitative limits listed separately"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-06-hook-extruded.png",
+      "steps": [
+        "07-02"
+      ],
+      "references": [
+        "07-02.operationRun.events[5].figure.path"
+      ],
+      "exists": true,
+      "sha256": "da5c5212f2d879e6cff41e0dc5baa148b84101b7a8b95d0f9835407b46648202",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 19,
+      "observed": "Front Orthographic，最高分段外側矩形高亮；Local MedianY−2/Z21.5。",
+      "limitations": "視線沿Y，突出1.2深度不可從這張判讀；world Y−24.2/Z11..13需raw與matrix。",
+      "result": "visible_state_consistent_with_claim; quantitative limits listed separately"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-07-hook-edge.png",
+      "steps": [
+        "07-02"
+      ],
+      "references": [
+        "07-02.operationRun.events[6].figure.path"
+      ],
+      "exists": true,
+      "sha256": "4ac1c870113243b992898bd1f273e194d3ac39f8e1a4a72f6e1480a8ae02f5ec",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 20,
+      "observed": "Xray啟用，鉤外頂一條橫向邊呈白色選取，非整盒外緣；可見anchor/臂/鉤。",
+      "limitations": "精確端點world座標不在圖上；側欄仍Local。",
+      "result": "visible_state_consistent_with_claim; quantitative limits listed separately"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-08-hook-bevel.png",
+      "steps": [
+        "07-02"
+      ],
+      "references": [
+        "07-02.operationRun.events[7].figure.path"
+      ],
+      "exists": true,
+      "sha256": "7b2a90308506aeb2af3818c6a086d868e4d2a88bccec590bf2eeff21f23e07a2",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 21,
+      "observed": "Bevel後鉤頂斜面新邊高亮，左下Bevel折疊；Xray仍開。",
+      "limitations": ".8mm/1segment/operator精度須readback，折疊面板未顯。",
+      "result": "visible_state_consistent_with_claim; quantitative limits listed separately"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-09-root-edges.png",
+      "steps": [
+        "07-02"
+      ],
+      "references": [
+        "07-02.operationRun.events[8].figure.path"
+      ],
+      "exists": true,
+      "sha256": "e1f2fe071d2110f727fc930a108e4e48725099a2b88c76de05140a50996a2ccb",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 22,
+      "observed": "根部兩條橫向凹邊選中（一白一黃），anchor外周未全選。",
+      "limitations": "背側邊因Xray可見但精確兩邊端點需選取raw。",
+      "result": "visible_state_consistent_with_claim; quantitative limits listed separately"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-10-root-bevel.png",
+      "steps": [
+        "07-02"
+      ],
+      "references": [
+        "07-02.operationRun.events[9].figure.path"
+      ],
+      "exists": true,
+      "sha256": "d865ea78ef61836a85a4763fb1f21565906123191d06a1776d7a20c7ead756f3",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 23,
+      "observed": "根部Bevel後多條分段邊呈黃，兩端三角miter可見，非理想均寬圓柱圓角。",
+      "limitations": ".6mm/3segment及R≈.600002須operator與mesh擬合；像素不能認定精確半徑。",
+      "result": "visible_state_consistent_with_claim; quantitative limits listed separately"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-11-snap-tool.png",
+      "steps": [
+        "07-02"
+      ],
+      "references": [
+        "07-02.operationRun.events[10].figure.path"
+      ],
+      "exists": true,
+      "sha256": "dc11e6bb2c2425a3a3a5f264a0a813898225cbd6e8f364144f9a1e00b1de7652",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 24,
+      "observed": "SnapTool Object Mode實體圖可見anchor、直臂、斜導入鉤、根部離散弦面；Dimensions9/4.6/24mm，LocY−22.2/Z−9.5，Scale1。",
+      "limitations": "L19、h1.6、b6、鉤u1.2/R擬合與NM0不直接顯示，需raw。",
+      "result": "visible_state_consistent_with_claim; quantitative limits listed separately"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-12-body-union.png",
+      "steps": [
+        "07-02"
+      ],
+      "references": [
+        "07-02.operationRun.events[11].figure.path"
+      ],
+      "exists": true,
+      "sha256": "e309eca04f69348913340b6a4bf7c83ca7ee62e0aa9fa28a54d815c1eeb21dc8",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 25,
+      "observed": "Body Boolean面板Union/Exact/SnapTool可讀；工具在Outliner灰隱藏；預覽可見外掛卡扣，Body尺寸60/44.5/30。",
+      "limitations": "預覽本身不能證Union已Apply或單殼，下一步與raw佐證。",
+      "result": "visible_state_consistent_with_claim; quantitative limits listed separately"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-13-body-applied.png",
+      "steps": [
+        "07-02"
+      ],
+      "references": [
+        "07-02.operationRun.events[12].figure.path"
+      ],
+      "exists": true,
+      "sha256": "e91033de781ec3ff6daabe8232258e1c592ac1a38f299cbb1dc56271b66a8b08",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 26,
+      "observed": "同外掛卡扣形狀，Boolean面板已無修改器；Body尺寸60/44.5/30。",
+      "limitations": "實際拓撲/體積/R需mesh。",
+      "result": "visible_state_consistent_with_claim; quantitative limits listed separately"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-14-body-non-manifold.png",
+      "steps": [
+        "07-02"
+      ],
+      "references": [
+        "07-02.operationRun.events[13].figure.path"
+      ],
+      "exists": true,
+      "sha256": "c00e798a40ecd39c8d3d932804a85a844f4d2f8faa5b918d06009d9985c34e81",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 27,
+      "observed": "Body Edit Mode Select Non-Manifold折疊操作可見，Nothing selected、沒有高亮邊；可見根部miter與盒體網格接合。",
+      "limitations": "全網格NM0/單殼仍需計數，不作強度/可印判定。",
+      "result": "visible_state_consistent_with_claim; quantitative limits listed separately"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-15-lid-plate.png",
+      "steps": [
+        "07-02"
+      ],
+      "references": [
+        "07-02.operationRun.events[14].figure.path"
+      ],
+      "exists": true,
+      "sha256": "dc6530a5c98c913ccffdf5517443dbbff148d34a0258bcaaaeb36f46cfc015c8",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 28,
+      "observed": "Lid平板尺寸60/46/2，Location0/−3/16.2，Rot0、Scale1；沒有舊環唇。",
+      "limitations": "world前緣−26/底15.2從位置及尺寸推得，但圖未單獨量尺。",
+      "result": "visible_state_consistent_with_claim; quantitative limits listed separately"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-16-flange-extruded.png",
+      "steps": [
+        "07-02"
+      ],
+      "references": [
+        "07-02.operationRun.events[15].figure.path"
+      ],
+      "exists": true,
+      "sha256": "5ba23c17fa1cc9f405a8a16e5054ee1ce5b3f82ee67837b9604091467f11e67f",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 29,
+      "observed": "FlangeTool Back Orthographic底側窄面選中；Local Median0/1.95/0，左下Extrude提示。",
+      "limitations": "E4.6再E1.2、world Y−23.3/Z10.2..10.8與local不同，需operator/mesh/matrix。",
+      "result": "visible_state_consistent_with_claim; quantitative limits listed separately"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-17-flange-tool.png",
+      "steps": [
+        "07-02"
+      ],
+      "references": [
+        "07-02.operationRun.events[16].figure.path"
+      ],
+      "exists": true,
+      "sha256": "fb8ec958f4c9067afa5a94d69a4f2cc2ff961b14b8f66ba4424d567ab9fc8a23",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 30,
+      "observed": "FlangeTool實體L形局部裙/凸緣可見；Dimensions10/2.7/5.2、Loc0/−25.25/10.5、Scale1。",
+      "limitations": "體積85.2/NM0、凸緣厚及突出需raw。",
+      "result": "visible_state_consistent_with_claim; quantitative limits listed separately"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-18-lid-union.png",
+      "steps": [
+        "07-02"
+      ],
+      "references": [
+        "07-02.operationRun.events[17].figure.path"
+      ],
+      "exists": true,
+      "sha256": "08d8a9e57b5d7867bd43421927d8651dcd42e5b9d4c176c6d4bdfb615ddfc491",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 31,
+      "observed": "Lid Boolean Union/Exact、Object FlangeT…可讀、FlangeTool在Outliner隱藏；N總高已7mm。",
+      "limitations": "上方角度被蓋板遮住裙與凸緣，不能本圖目視確認Union接合；#19底斜視補足。",
+      "result": "visible_state_consistent_with_claim; quantitative limits listed separately"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-20-lid-non-manifold.png",
+      "steps": [
+        "07-02"
+      ],
+      "references": [
+        "07-02.operationRun.events[19].figure.path"
+      ],
+      "exists": true,
+      "sha256": "2142b5895b6d8c48d19ea867f949666a9fcfd74502a4baf83da059a37e43fc28",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 32,
+      "observed": "底斜視Lid Edit Mode，板與裙凸緣網格可見；Nothing selected及Select Non-Manifold提示。",
+      "limitations": "畫面支持無選邊，NM0單殼須raw拓撲。",
+      "result": "visible_state_consistent_with_claim; quantitative limits listed separately"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-22-assembly-geometry.png",
+      "steps": [
+        "07-02"
+      ],
+      "references": [
+        "07-02.operationRun.events[21].figure.path"
+      ],
+      "exists": true,
+      "sha256": "56a6d9581be8daf0ce670b28e959122f9c692d8797a5c90dbd5c689fead5942f",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 33,
+      "observed": "上蓋已回盒口，臂上方被裙遮住，與抬蓋圖不同；Active Body，N尺寸60/44.5/30。",
+      "limitations": "細小.2/.3/.8/1.4間距及.9重疊不可據此像素測量，必須raw/交剖數值；沒有裝配動態證據。",
+      "result": "visible_state_consistent_with_claim; quantitative limits listed separately"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-23-save-dialog.png",
+      "steps": [
+        "07-02"
+      ],
+      "references": [
+        "07-02.operationRun.events[22].figure.path"
+      ],
+      "exists": true,
+      "sha256": "b37863ceecd919c0576a803e87af47b9d9bc8be5fb99aaf0e807e8b614c275e8",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 34,
+      "observed": "Save As檔名u07_cantilever_snap_v001.blend，目的末端demo-files，sources資料夾存在。",
+      "limitations": "完整路徑省略，需run。",
+      "result": "visible_state_consistent_with_claim; quantitative limits listed separately"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-24-saved.png",
+      "steps": [
+        "07-02"
+      ],
+      "references": [
+        "07-02.operationRun.events[23].figure.path"
+      ],
+      "exists": true,
+      "sha256": "c4488d061d3658f6765962d2d271df490033f12e7c4619f1a8cb323d535013a2",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 35,
+      "observed": "底部Saved as u07_cantilever_snap_v001.blend；閉蓋組裝圖與Body尺寸保持。",
+      "limitations": "bytes/hash無圖上顯示需實檔。",
+      "result": "visible_state_consistent_with_claim; quantitative limits listed separately"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-25-open-saved.png",
+      "steps": [
+        "07-02"
+      ],
+      "references": [
+        "07-02.operationRun.events[24].figure.path"
+      ],
+      "exists": true,
+      "sha256": "080ddab2dce15827a86684c03728a5a93e09523a0d8254d2ddf1dcba1ce6ac1b",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 36,
+      "observed": "Open File Browser列出u07_cantilever_snap_v001.blend104KiB，底部檔名相同。",
+      "limitations": "重開後同形與hash須下一圖/raw。",
+      "result": "visible_state_consistent_with_claim; quantitative limits listed separately"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-26-reopened-verified.png",
+      "steps": [
+        "07-02"
+      ],
+      "references": [
+        "07-02.operationRun.events[25].figure.path"
+      ],
+      "exists": true,
+      "sha256": "2187dc09ca5146a8ebdeca93fa1a59e142bf6f973f7c4beaa55b05f3439d9244",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 37,
+      "observed": "重開後閉蓋與外掛臂一致、工具隱藏；Body尺寸60/44.5/30、LocRot0、Scale1。",
+      "limitations": "細部靜態間距與根部R/形狀完整性需raw；未出現物理結果。",
+      "result": "visible_state_consistent_with_claim; quantitative limits listed separately"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-06-body_candidate-analysis.png",
+      "steps": [
+        "07-03"
+      ],
+      "references": [
+        "07-03.figures[0].path",
+        "07-03.operationRun.events[5].figure.path"
+      ],
+      "exists": true,
+      "sha256": "c03a6f17d0432d03b9790801f6a68e473a5dc3eb095bca11259c50af6b6940e5",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 38,
+      "observed": "Body候選側放，Edit Mode原生Overhang著色；腔內高處頂壁、床接觸大面及側鉤下方顯紅。",
+      "limitations": "Nothing selected，無Dimensions；world30×44.5×60/面積面數須轉換頂點/法線raw，紅色本身不區分床接觸。",
+      "result": "visible_state_consistent_with_claim; quantitative limits listed separately"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-05-body_candidate-controls.png",
+      "steps": [
+        "07-03"
+      ],
+      "references": [
+        "07-03.figures[1].path",
+        "07-03.operationRun.events[4].figure.path"
+      ],
+      "exists": true,
+      "sha256": "ae2b92aa3d09015b0eebb69320b3cec6eb6f2bef803ed252de71aaf5c904f6e1",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 39,
+      "observed": "Edit Mode專用Overlays展開，Mesh Analysis打勾、Overhang、Minimum0°/Maximum45°、−Z藍選中，底面大區顯紅。",
+      "limitations": "UI僅四捨五入45°，0.785398185rad精度需state readback；此範圍不等於可印門檻。",
+      "result": "visible_state_consistent_with_claim; quantitative limits listed separately"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-overhang-focus-v002/07-03-06-elevated-ledge-closeup.png",
+      "steps": [
+        "07-03"
+      ],
+      "references": [
+        "07-03.figures[2].path"
+      ],
+      "exists": true,
+      "sha256": "39933f912508246987d4bf47773313b1d4ae312a60980c66c3cdda58faec799a",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 40,
+      "observed": "另次focus近拍Lid Edit Mode，較高處一條薄紅色底面與下方大片床接觸紅面分開，中間有可見高度差。",
+      "limitations": "可清楚辨認高處朝下區，但12mm²/實際Z高度須polygon18與world網格讀值；非重新改模型證據。",
+      "result": "visible_state_consistent_with_claim; quantitative limits listed separately"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-01-source-dialog.png",
+      "steps": [
+        "07-03"
+      ],
+      "references": [
+        "07-03.operationRun.events[0].figure.path"
+      ],
+      "exists": true,
+      "sha256": "2f97c85df79d8650f4019128ff16a90a7fc48fd81cc1775f426f3adc0023eb88",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 41,
+      "observed": "來源File Browser u07_cantilever_snap_v001.blend、sources末端及Open可讀。",
+      "limitations": "同hash須實檔。",
+      "result": "visible_state_consistent_with_claim; quantitative limits listed separately"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-02-source-geometry.png",
+      "steps": [
+        "07-03"
+      ],
+      "references": [
+        "07-03.operationRun.events[1].figure.path"
+      ],
+      "exists": true,
+      "sha256": "2187dc09ca5146a8ebdeca93fa1a59e142bf6f973f7c4beaa55b05f3439d9244",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 42,
+      "observed": "改方向前保持閉蓋外觀，Body尺寸60/44.5/30、LocRot0、Scale1、工具灰隱藏。",
+      "limitations": "原polygon normals及完整形狀同一性需raw，非僅外觀。",
+      "result": "visible_state_consistent_with_claim; quantitative limits listed separately"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-03-body_baseline-controls.png",
+      "steps": [
+        "07-03"
+      ],
+      "references": [
+        "07-03.operationRun.events[2].figure.path"
+      ],
+      "exists": true,
+      "sha256": "eeed2a415d1a609be54f2c1fc30cfac7409850ed4426202ef2337a5a8730ebf3",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 43,
+      "observed": "Body原向Edit Mode，Mesh Edit Mode Overlays內Mesh Analysis勾、Overhang、0°/45°、−Z；表面為灰。",
+      "limitations": "灰色表面不表示全件沒有朝下面，朝下面被背側遮住；#4底斜視補足。",
+      "result": "visible_state_consistent_with_claim; quantitative limits listed separately"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-04-body_baseline-analysis.png",
+      "steps": [
+        "07-03"
+      ],
+      "references": [
+        "07-03.operationRun.events[3].figure.path"
+      ],
+      "exists": true,
+      "sha256": "f49f0a5f0c0ca9f72cb6208e0ad71fd781ce36a7ccfaae2287739d8bf6a5e577",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 44,
+      "observed": "Body原向底斜視，大塊底面與小外掛底部顯紅；原生Overhang可見，無選取橘色遮蔽。",
+      "limitations": "2400mm²床面與47.7mm²離床面不能從紅區直接精確量化，須raw按Z/法線分類。",
+      "result": "visible_state_consistent_with_claim; quantitative limits listed separately"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-07-lid_baseline-controls.png",
+      "steps": [
+        "07-03"
+      ],
+      "references": [
+        "07-03.operationRun.events[6].figure.path"
+      ],
+      "exists": true,
+      "sha256": "c2102bc64d6eb2118032c578409305f1fe3654587778e1edf950d93840de0c55",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 45,
+      "observed": "Lid原向Edit Mode，Overlays設定Overhang、0/45、−Z清楚；大片板底和裙下局部顯紅。",
+      "limitations": "畫面沒有Z標籤，不得把所有紅面當同高度或一概需支撐。",
+      "result": "visible_state_consistent_with_claim; quantitative limits listed separately"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-08-lid_baseline-analysis.png",
+      "steps": [
+        "07-03"
+      ],
+      "references": [
+        "07-03.operationRun.events[7].figure.path"
+      ],
+      "exists": true,
+      "sha256": "a260dcf271361a95899755dc6b1f9b0adbdf2faa7557441add8c5fbf3e5f18da",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 46,
+      "observed": "關閉popover後Lid原向底面紅色大片、裙/凸緣朝下部分紅色；無橘色選取。",
+      "limitations": "床接觸2面27與離床2745數值來自另算，非圖上計數。",
+      "result": "visible_state_consistent_with_claim; quantitative limits listed separately"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-09-lid_candidate-controls.png",
+      "steps": [
+        "07-03"
+      ],
+      "references": [
+        "07-03.operationRun.events[8].figure.path"
+      ],
+      "exists": true,
+      "sha256": "d56f28ecfbc1d2625cac3b526468ab815851ef09101f81c1ed40a7950d9fe03c",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 47,
+      "observed": "Lid翻面候選，Mesh Analysis Overhang/0/45/−Z設定一致；大片面紅色，外凸小區可見。",
+      "limitations": "只看同一底斜視不容易看見高處12mm²朝下面；補充focus圖可證顯色存在。",
+      "result": "visible_state_consistent_with_claim; quantitative limits listed separately"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-10-lid_candidate-analysis.png",
+      "steps": [
+        "07-03"
+      ],
+      "references": [
+        "07-03.operationRun.events[9].figure.path"
+      ],
+      "exists": true,
+      "sha256": "d7e18cd95f29cfbcb84e6ef8b51b19535f2e74b10eeaea264f4abfd92f3e8e3b",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 48,
+      "observed": "Lid候選底斜視，大片床面紅；凸緣在下緣但高處底面被遮擋，沒有選取色。",
+      "limitations": "此圖無法獨立目視12mm²高處面；event稱為另算且#11/focus補足，並非讀值捏造。",
+      "result": "visible_state_consistent_with_claim; quantitative limits listed separately"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-11-lid-candidate-profile.png",
+      "steps": [
+        "07-03"
+      ],
+      "references": [
+        "07-03.operationRun.events[10].figure.path"
+      ],
+      "exists": true,
+      "sha256": "99f3ca7c6885b1c562b205ffd565b6630b3dd1d965c82ee1bee8a9e3b206cbef",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 49,
+      "observed": "Right Orthographic截面輪廓清楚，板在world水平綠軸上，末端裙向上、凸緣往內伸；高處凸緣與板面有高度差。",
+      "limitations": "純側視朝下面線投影無紅色可見，不能以本圖讀面積；事件note已說明不保證看見每著色面。",
+      "result": "visible_state_consistent_with_claim; quantitative limits listed separately"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-12-candidate-layout.png",
+      "steps": [
+        "07-03"
+      ],
+      "references": [
+        "07-03.operationRun.events[11].figure.path"
+      ],
+      "exists": true,
+      "sha256": "01508cf7b1b0b8978491626498a3e4d03ecee1479eff7e0b430e6e2b4be8ba22",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 50,
+      "observed": "Object Mode兩件分開，Body側放、Lid翻面；Body Ry90、Location−40/0/30mm，Scale1，Item Dimensions仍60/44.5/30。",
+      "limitations": "world外框應從轉換後mesh計30/44.5/60；N不顯world AABB，35mm投影距和落床需raw。",
+      "result": "visible_state_consistent_with_claim; quantitative limits listed separately"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-13-save-dialog.png",
+      "steps": [
+        "07-03"
+      ],
+      "references": [
+        "07-03.operationRun.events[12].figure.path"
+      ],
+      "exists": true,
+      "sha256": "9cd1bb428fee4143af37b260087008b912ad365265103a82028422707db61f76",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 51,
+      "observed": "Save As u07_print_orientation_v001.blend、demo-files末端可讀。",
+      "limitations": "完整路徑需run。",
+      "result": "visible_state_consistent_with_claim; quantitative limits listed separately"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-14-saved.png",
+      "steps": [
+        "07-03"
+      ],
+      "references": [
+        "07-03.operationRun.events[13].figure.path"
+      ],
+      "exists": true,
+      "sha256": "f85fb794d6b4dd889f3dd20c3c1f5fff17ce5f632f0ecdf8eab1e69873451708",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 52,
+      "observed": "底部Saved as u07_print_orientation_v001.blend，兩件候選位置不變，Body Ry90及Item60/44.5/30保持。",
+      "limitations": "106462bytes/hash須實檔。",
+      "result": "visible_state_consistent_with_claim; quantitative limits listed separately"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-15-open-saved.png",
+      "steps": [
+        "07-03"
+      ],
+      "references": [
+        "07-03.operationRun.events[14].figure.path"
+      ],
+      "exists": true,
+      "sha256": "8d22eec8caa88cebdc61502cde319c5bacb31272d98d4f916b35f734a4f3da98",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 53,
+      "observed": "Open File Browser列出u07_print_orientation_v001.blend104KiB，底部同名。",
+      "limitations": "重開原形與全部4姿態資料非圖上可驗，需後續raw。",
+      "result": "visible_state_consistent_with_claim; quantitative limits listed separately"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-16-reopened-verified.png",
+      "steps": [
+        "07-03"
+      ],
+      "references": [
+        "07-03.operationRun.events[15].figure.path"
+      ],
+      "exists": true,
+      "sha256": "671959f98066449519611df236ddff019281ef8c0a09d95a6b336d06cc533762",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 54,
+      "observed": "重開兩候選外觀一致，工具灰隱藏；Body Ry90、Loc−40/0/30、Scale1、N尺寸60/44.5/30。",
+      "limitations": "此畫面非4次原生分析同時顯示；過程4對controls/analysis及JSON合併佐證。",
+      "result": "visible_state_consistent_with_claim; quantitative limits listed separately"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "recordedAt": "2026-10-25T05:23:47.962226+00:00",
+  "files": [
+    {
+      "source": "learning/tutor/run_demo.py",
+      "snapshot": "source-snapshot/run_demo.py",
+      "sha256": "8a0afa081716cab276c99fc811f6a2453ac82f45b28d8a0b1c639eef67347058"
+    },
+    {
+      "source": "learning/tutor/blender_demo.py",
+      "snapshot": "source-snapshot/blender_demo.py",
+      "sha256": "96321d8180b1e05a9b77d47551adefbf43ddd04e6add2505eca3b30ceb831a6c"
+    },
+    {
+      "source": "learning/tutor/scenarios/common.py",
+      "snapshot": "source-snapshot/common.py",
+      "sha256": "45044c48522bf5a2dee130382f902a07243e82027addaf6594cbae59b3369c3d"
+    },
+    {
+      "source": "learning/tutor/scenarios/lesson05_lid_export.py",
+      "snapshot": "source-snapshot/lesson05_lid_export.py",
+      "sha256": "abd9673547f617b25cc836389fbd770156beded019746c32d25b77843a8aed39"
+    },
+    {
+      "source": "learning/tutor/scenarios/lid_checks.py",
+      "snapshot": "source-snapshot/lid_checks.py",
+      "sha256": "b2e2438126695cca24cb560dce046ca743c2de2c348116141ff6ed75c42e52c3"
+    },
+    {
+      "source": "learning/tutor/scenarios/stl_checks.py",
+      "snapshot": "source-snapshot/stl_checks.py",
+      "sha256": "36f09e213a7759a95ea07cee1f70fbaaaf2287551b9c97d9308778a658fe922c"
+    },
+    {
+      "source": "learning/tutor/scenarios/lid_stl_checks.py",
+      "snapshot": "source-snapshot/lid_stl_checks.py",
+      "sha256": "7fa47654a6c6fea25f7dd3d14111ae22db6148a07a3e3fca9803a087bfb5ea5e"
+    }
+  ],
+  "sourceScene": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\05\\2026-10-22-lesson05-lid-demo-v001\\demo-files\\u05_lid_v001.blend",
+  "sourceCopy": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\05\\2026-10-25-lesson05-lid-export-demo-v001\\demo-files\\sources\\u05_lid_v001.blend",
+  "sourceSha256": "ab08f331dcb26c5ffc6c6ca56c7c7f022df96791c4777e37c5f01a964fbed6ff"
+}

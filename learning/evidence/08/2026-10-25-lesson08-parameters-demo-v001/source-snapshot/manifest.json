@@ -1,0 +1,50 @@
+{
+  "recordedAt": "2026-10-25T12:28:54.290121+00:00",
+  "files": [
+    {
+      "source": "learning/tutor/run_demo.py",
+      "snapshot": "source-snapshot/run_demo.py",
+      "sha256": "8a0afa081716cab276c99fc811f6a2453ac82f45b28d8a0b1c639eef67347058"
+    },
+    {
+      "source": "learning/tutor/blender_demo.py",
+      "snapshot": "source-snapshot/blender_demo.py",
+      "sha256": "96321d8180b1e05a9b77d47551adefbf43ddd04e6add2505eca3b30ceb831a6c"
+    },
+    {
+      "source": "learning/tutor/scenarios/common.py",
+      "snapshot": "source-snapshot/common.py",
+      "sha256": "45044c48522bf5a2dee130382f902a07243e82027addaf6594cbae59b3369c3d"
+    },
+    {
+      "source": "learning/tutor/scenarios/lesson08_parameters.py",
+      "snapshot": "source-snapshot/lesson08_parameters.py",
+      "sha256": "0ffd7d76215bfd32cd4441bb339153756759b68b6dc720209d256aa983e6a909"
+    },
+    {
+      "source": "learning/tutor/scenarios/lid_checks.py",
+      "snapshot": "source-snapshot/lid_checks.py",
+      "sha256": "b2e2438126695cca24cb560dce046ca743c2de2c348116141ff6ed75c42e52c3"
+    },
+    {
+      "source": "learning/tutor/scenarios/tenon_checks.py",
+      "snapshot": "source-snapshot/tenon_checks.py",
+      "sha256": "4defe55d142ac78be924cef8d82abc3bd24bd2db6f380332eb29cb5b0d89d13d"
+    }
+  ],
+  "dataBindings": [
+    {
+      "source": "learning/plans/08-01-thread-parameters-v001.json",
+      "snapshot": "source-snapshot/parameter-template-v001.json",
+      "sha256": "92c0bf94ede81a48a5c16179ae1558bb8c61c521f960c79cd4ad05830f0d79bb"
+    },
+    {
+      "source": "sources/engineering/thread-source-facts-v001.json",
+      "snapshot": "source-snapshot/thread-source-facts-v001.json",
+      "sha256": "78a0b7b1092287e7956b9a11da17f4b1ef838c7da50473e989d05cc759b67834"
+    }
+  ],
+  "sourceScene": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\04\\2026-10-22-lesson04-demo-v001\\demo-files\\u04_box_v001.blend",
+  "sourceCopy": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\08\\2026-10-25-lesson08-parameters-demo-v001\\demo-files\\sources\\u04_box_v001.blend",
+  "sourceSha256": "b918ee87d26e289f4c8a2f6633beceb854c7d0511e3eddcc969a0696afcd2530"
+}

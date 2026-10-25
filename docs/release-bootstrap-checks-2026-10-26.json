@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-26",
+  "change": "Non-destructive first-run personal progress initialization and Windows launcher integration",
+  "files": [
+    {"path": "learning/bootstrap.py", "sha256": "1dd360232030fd3369b0ba819f86955ab16684aacff9e8aa41f90dec1d017f3f"},
+    {"path": "learning/tests/test_bootstrap.py", "sha256": "4fcc5e9facf42eb129bcdc4c0a47d2fce6e4f5e70cc75231b4c233e519746bc9"},
+    {"path": "learning/Start-Learning.ps1", "sha256": "716aa4da9863906f6a02db4db7699e7a00c8aed239d7b9ad14d08787d1d6c184"}
+  ],
+  "validation": {
+    "command": "python -X utf8 -m unittest discover -s learning/tests -p test_bootstrap.py -v",
+    "environment": "Windows; all initialization and API state created in validated disposable scratch copies under paths containing spaces and Chinese characters",
+    "testsRun": 11,
+    "passed": 9,
+    "skipped": 2,
+    "durationSeconds": 6.371,
+    "exitCode": 0,
+    "passedCases": [
+      "Corrupt existing progress is rejected without changing its bytes or modification time",
+      "Existing personal revision, interface preference, decisions, notes, and learner completions remain byte-identical and keep their modification time",
+      "A fresh initialized checkout starts the local server and serves the same state through GET /api/bootstrap",
+      "Fresh initialization and manage status work in a relocated path containing spaces and Chinese characters",
+      "An independently held real OS progress lock prevents initialization and partial state creation",
+      "The Python initialize API returns (created, progress) for both the new and preserved-state cases",
+      "Malformed, duplicated, escaping, and empty catalog definitions fail before workspace or progress creation",
+      "An actual Windows directory junction is rejected without writing into its target",
+      "A file obstructing a later workspace prevents creation of the earlier workspaces and progress"
+    ],
+    "skippedCases": [
+      {"case": "Dangling progress symlink is never replaced", "reason": "The current Windows account cannot create file symlinks"},
+      {"case": "Workspace directory symlink is rejected without writing into its target", "reason": "The current Windows account cannot create directory symlinks"}
+    ],
+    "launcherSyntax": "PowerShell Parser.ParseFile returned no syntax errors"
+  },
+  "protectedProgress": {
+    "sha256Before": "26130175ef80a9fb83699f93a8c33de7b098b17ffa2c10aef794808390d19325",
+    "sha256After": "26130175ef80a9fb83699f93a8c33de7b098b17ffa2c10aef794808390d19325",
+    "unchanged": true,
+    "note": "The test suite itself does not read or use the author's private progress as a fixture. Only before/after hashes were compared outside the tests."
+  },
+  "limits": [
+    "This validation concerns the new bootstrap and its isolated tests, not the eventual complete public Git checkout.",
+    "No live learner completion, model, source evidence, manage.py, server.py, README, or Git metadata was changed by this subtask.",
+    "The launcher was syntax checked; it was not used to replace the currently running teaching service.",
+    "Linux execution, native Blender UI execution, and hosted GitHub Actions remain for separate verification."
+  ]
+}

@@ -1,0 +1,659 @@
+{
+  "schema_version": 1,
+  "run": "2026-10-25-lesson08-parameters-demo-v001",
+  "run_version": "v001",
+  "reference_scene_version": "v001",
+  "parameter_record_version": "v001",
+  "recorded_on": "2026-10-25",
+  "timezone": "Asia/Taipei",
+  "performed_by": "tutor",
+  "lesson_step": "08-01",
+  "completion_scope": "Original box measurement, unchanged reference Save As/Open, and pending thread specification/modeling-parameter documentation only. No selected route, thread size/standard/hardware, modifier, thread, boss, pilot hole, counterpart, STL or physical qualification.",
+  "source_scene": {
+    "path": "learning/evidence/04/2026-10-22-lesson04-demo-v001/demo-files/u04_box_v001.blend",
+    "sha256": "b918ee87d26e289f4c8a2f6633beceb854c7d0511e3eddcc969a0696afcd2530",
+    "bytes": 97880,
+    "unchanged": true
+  },
+  "opened_source_copy": {
+    "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/demo-files/sources/u04_box_v001.blend",
+    "sha256": "b918ee87d26e289f4c8a2f6633beceb854c7d0511e3eddcc969a0696afcd2530",
+    "bytes": 97880,
+    "unchanged": true,
+    "is_new_checkpoint": false
+  },
+  "new_reference_scene": {
+    "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/demo-files/u08_thread_reference_v001.blend",
+    "sha256": "9bda36c10fd916ef9cbe688f5ca56dcf8cfa0adb83d684300e60196225589d8f",
+    "bytes": 97955,
+    "reopened": true,
+    "scene_role": "unmodified_box_thread_reference",
+    "geometry_modified": false
+  },
+  "parameter_template": {
+    "path": "learning/plans/08-01-thread-parameters-v001.json",
+    "sha256": "92c0bf94ede81a48a5c16179ae1558bb8c61c521f960c79cd4ad05830f0d79bb",
+    "bytes": 10332
+  },
+  "source_facts": {
+    "path": "sources/engineering/thread-source-facts-v001.json",
+    "sha256": "78a0b7b1092287e7956b9a11da17f4b1ef838c7da50473e989d05cc759b67834",
+    "bytes": 5974
+  },
+  "parameter_record": {
+    "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/parameter-record-v001.json",
+    "sha256": "0f858377bb80e173f00f3b39303c8f7d20f78d0f929446ae985a50fa7699229a",
+    "bytes": 22644
+  },
+  "blank_trial_record": {
+    "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/trial-fit-record-v001.json",
+    "sha256": "32f09441133ef1b691c7d2ca7ee413a9ca8a318539636c00b8d5a32db0212cb5",
+    "bytes": 6537
+  },
+  "measured_box_reference": {
+    "outer_dimensions_mm": [
+      60.0,
+      40.0,
+      30.0
+    ],
+    "cavity_dimensions_mm": [
+      56.0,
+      36.0,
+      28.0
+    ],
+    "wall_thicknesses_mm": [
+      2.0,
+      2.0,
+      2.0,
+      2.0
+    ],
+    "floor_thickness_mm": 2.0,
+    "volume_mm3": 15552.0,
+    "non_manifold_edges": 0,
+    "connected_shells": 1,
+    "genus": 0,
+    "mesh_counts": {
+      "vertices": 16,
+      "edges": 42,
+      "faces": 28,
+      "triangles": 28,
+      "representation": "evaluated loop-triangulated mesh"
+    }
+  },
+  "selected_face_readback": {
+    "rim": {
+      "object_name": "Body_Reference",
+      "selected_face_count": 1,
+      "selected_vertex_count": 4,
+      "vertices_mm": [
+        [
+          -30.00000142492354,
+          -20.000000949949026,
+          15.00000071246177
+        ],
+        [
+          30.00000142492354,
+          -20.000000949949026,
+          15.00000071246177
+        ],
+        [
+          28.000001329928637,
+          -18.000000854954123,
+          15.00000071246177
+        ],
+        [
+          -28.000001329928637,
+          -18.000000854954123,
+          15.00000071246177
+        ]
+      ],
+      "bounds_mm": {
+        "min": [
+          -30.00000142492354,
+          -20.000000949949026,
+          15.00000071246177
+        ],
+        "max": [
+          30.00000142492354,
+          -18.000000854954123,
+          15.00000071246177
+        ]
+      },
+      "spans_mm": [
+        60.00000284984708,
+        2.0000000949949026,
+        0.0
+      ]
+    },
+    "inner_floor": {
+      "object_name": "Body_Reference",
+      "selected_face_count": 1,
+      "selected_vertex_count": 4,
+      "vertices_mm": [
+        [
+          -28.000001329928637,
+          18.000000854954123,
+          -13.000000617466867
+        ],
+        [
+          -28.000001329928637,
+          -18.000000854954123,
+          -13.000000617466867
+        ],
+        [
+          28.000001329928637,
+          -18.000000854954123,
+          -13.000000617466867
+        ],
+        [
+          28.000001329928637,
+          18.000000854954123,
+          -13.000000617466867
+        ]
+      ],
+      "bounds_mm": {
+        "min": [
+          -28.000001329928637,
+          -18.000000854954123,
+          -13.000000617466867
+        ],
+        "max": [
+          28.000001329928637,
+          18.000000854954123,
+          -13.000000617466867
+        ]
+      },
+      "spans_mm": [
+        56.00000265985727,
+        36.00000170990825,
+        0.0
+      ]
+    },
+    "outer_floor": {
+      "object_name": "Body_Reference",
+      "selected_face_count": 1,
+      "selected_vertex_count": 4,
+      "vertices_mm": [
+        [
+          -30.00000142492354,
+          20.000000949949026,
+          -15.00000071246177
+        ],
+        [
+          30.00000142492354,
+          20.000000949949026,
+          -15.00000071246177
+        ],
+        [
+          30.00000142492354,
+          -20.000000949949026,
+          -15.00000071246177
+        ],
+        [
+          -30.00000142492354,
+          -20.000000949949026,
+          -15.00000071246177
+        ]
+      ],
+      "bounds_mm": {
+        "min": [
+          -30.00000142492354,
+          -20.000000949949026,
+          -15.00000071246177
+        ],
+        "max": [
+          30.00000142492354,
+          20.000000949949026,
+          -15.00000071246177
+        ]
+      },
+      "spans_mm": [
+        60.00000284984708,
+        40.00000189989805,
+        0.0
+      ]
+    }
+  },
+  "draft_status": {
+    "parameter_count": 24,
+    "all_values_null": true,
+    "all_statuses": "draft_pending",
+    "route_selected": null,
+    "tutor_first_candidate": "custom_printed_thread",
+    "candidate_is_not_user_decision": true,
+    "blender_mapping_status": "documented_mapping_only_not_configured",
+    "all_modifier_inputs_null": true,
+    "modifier_created": false,
+    "measurement_scope": "Only measured_box/face_measurements describe actual Blender geometry; draft_parameters and documented relationships do not."
+  },
+  "source_and_reference_mesh": {
+    "world_vertices_and_triangles_identical": true,
+    "local_mesh_sha256": "7bdca49543ba3c35ed10f0ec8e5488cc28f8ff6d3e6f753739dfa29a9685ac26",
+    "mesh_data_name": "Cube",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "rotation_euler_radians": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "final_objects": {
+    "Body_Reference": {
+      "type": "MESH",
+      "hidden": false,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "modifier_count": 0,
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "Camera": {
+      "type": "CAMERA",
+      "hidden": true,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "modifier_count": 0,
+      "matrix_world": [
+        [
+          0.6859206557273865,
+          -0.32401347160339355,
+          0.6515582203865051,
+          7.358891487121582
+        ],
+        [
+          0.7276763319969177,
+          0.305420845746994,
+          -0.6141703724861145,
+          -6.925790786743164
+        ],
+        [
+          0.0,
+          0.8953956365585327,
+          0.44527140259742737,
+          4.958309173583984
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "Light": {
+      "type": "LIGHT",
+      "hidden": true,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "modifier_count": 0,
+      "matrix_world": [
+        [
+          -0.29086464643478394,
+          -0.7711008191108704,
+          0.5663931965827942,
+          4.076245307922363
+        ],
+        [
+          0.9551711678504944,
+          -0.1998833566904068,
+          0.21839119493961334,
+          1.0054539442062378
+        ],
+        [
+          -0.05518905818462372,
+          0.6045247316360474,
+          0.7946722507476807,
+          5.903861999511719
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  },
+  "source_geometry_modified": false,
+  "thread_modeled": false,
+  "boss_modeled": false,
+  "pilot_hole_modeled": false,
+  "counterpart_modeled": false,
+  "exported_stl": false,
+  "stl_versions": [],
+  "verification": {
+    "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/verification.json",
+    "sha256": "346ccc416ca3ab6f4354779c636c982a750a01e7ab25726dedaa773ac85ba8ae",
+    "bytes": 22589
+  },
+  "run_record": {
+    "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/run.json",
+    "sha256": "085e94bbd45e2a4df2f03f9da48c734604cb8dcd32f8b3e9aab60d815cb9d166",
+    "bytes": 9454
+  },
+  "runner_status": {
+    "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/runner-status.json",
+    "sha256": "9f22fa75ed9e021cbfa1797171e8d5c823988f99e23632e77be2ad8598d8244c",
+    "bytes": 54448
+  },
+  "source_snapshot_manifest": {
+    "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/source-snapshot/manifest.json",
+    "sha256": "12fa240bd5e52c815fe3eb54f3494594c28479a0b3b809eaf24794f980df602d",
+    "bytes": 2223
+  },
+  "script_snapshots": [
+    {
+      "source": "learning/tutor/run_demo.py",
+      "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/source-snapshot/run_demo.py",
+      "sha256": "8a0afa081716cab276c99fc811f6a2453ac82f45b28d8a0b1c639eef67347058",
+      "bytes": 11779
+    },
+    {
+      "source": "learning/tutor/blender_demo.py",
+      "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/source-snapshot/blender_demo.py",
+      "sha256": "96321d8180b1e05a9b77d47551adefbf43ddd04e6add2505eca3b30ceb831a6c",
+      "bytes": 7140
+    },
+    {
+      "source": "learning/tutor/scenarios/common.py",
+      "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/source-snapshot/common.py",
+      "sha256": "45044c48522bf5a2dee130382f902a07243e82027addaf6594cbae59b3369c3d",
+      "bytes": 11133
+    },
+    {
+      "source": "learning/tutor/scenarios/lesson08_parameters.py",
+      "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/source-snapshot/lesson08_parameters.py",
+      "sha256": "0ffd7d76215bfd32cd4441bb339153756759b68b6dc720209d256aa983e6a909",
+      "bytes": 17935
+    },
+    {
+      "source": "learning/tutor/scenarios/lid_checks.py",
+      "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/source-snapshot/lid_checks.py",
+      "sha256": "b2e2438126695cca24cb560dce046ca743c2de2c348116141ff6ed75c42e52c3",
+      "bytes": 17073
+    },
+    {
+      "source": "learning/tutor/scenarios/tenon_checks.py",
+      "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/source-snapshot/tenon_checks.py",
+      "sha256": "4defe55d142ac78be924cef8d82abc3bd24bd2db6f380332eb29cb5b0d89d13d",
+      "bytes": 24591
+    }
+  ],
+  "source_data_bindings": [
+    {
+      "source": "learning/plans/08-01-thread-parameters-v001.json",
+      "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/source-snapshot/parameter-template-v001.json",
+      "sha256": "92c0bf94ede81a48a5c16179ae1558bb8c61c521f960c79cd4ad05830f0d79bb",
+      "bytes": 10332
+    },
+    {
+      "source": "sources/engineering/thread-source-facts-v001.json",
+      "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/source-snapshot/thread-source-facts-v001.json",
+      "sha256": "78a0b7b1092287e7956b9a11da17f4b1ef838c7da50473e989d05cc759b67834",
+      "bytes": 5974
+    }
+  ],
+  "geometry_evidence": [
+    {
+      "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/source_body_mesh.json",
+      "sha256": "225d327508cea87536c14804331c828568cc7c2a425a0437a3554ed0d5d801af",
+      "bytes": 3101
+    },
+    {
+      "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/reference_body_mesh.json",
+      "sha256": "6a2ff244162c253e6d0e32e1271e6f1711582749178cd2694c66b739c4cef887",
+      "bytes": 3111
+    }
+  ],
+  "face_measurements_record": {
+    "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/face-measurements.json",
+    "sha256": "fd4b187c59c27d01224909d596e73a5c1bd156ca70bdc97a94312b41833a7b7d",
+    "bytes": 2760
+  },
+  "screenshots": [
+    {
+      "seq": 1,
+      "slug": "source-open-dialog",
+      "width": 1060,
+      "height": 600,
+      "recordedAt": "2026-10-25T12:29:02.390Z",
+      "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/08-01-01-source-open-dialog.png",
+      "sha256": "2fd6a3c66d9f900dbaa7ec652b0beed9eb732edbb2f3798cffe229bf298a1c52",
+      "bytes": 51731
+    },
+    {
+      "seq": 2,
+      "slug": "source-checked",
+      "width": 1494,
+      "height": 1019,
+      "recordedAt": "2026-10-25T12:29:06.390Z",
+      "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/08-01-02-source-checked.png",
+      "sha256": "553d16ae73d6789e63151c705c2c9231cee91ba7a5712084489555ef213e1e64",
+      "bytes": 158025
+    },
+    {
+      "seq": 3,
+      "slug": "reference-top",
+      "width": 1494,
+      "height": 1019,
+      "recordedAt": "2026-10-25T12:29:16.340Z",
+      "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/08-01-03-reference-top.png",
+      "sha256": "4da568b6e1c627bed94f9597e4352d866a5761a755f540b838f0e58660e3f8d2",
+      "bytes": 195672
+    },
+    {
+      "seq": 4,
+      "slug": "rim-face",
+      "width": 1494,
+      "height": 1019,
+      "recordedAt": "2026-10-25T12:29:18.941Z",
+      "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/08-01-04-rim-face.png",
+      "sha256": "71f4e90f4ad1e2416be0df61bdb68eda91775f1eda878c732023f62cbaaf3cda",
+      "bytes": 209188
+    },
+    {
+      "seq": 5,
+      "slug": "inner-floor",
+      "width": 1494,
+      "height": 1019,
+      "recordedAt": "2026-10-25T12:29:20.941Z",
+      "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/08-01-05-inner-floor.png",
+      "sha256": "a78e713c12c3af31a8e6d3d717bea1a8ca99891e3524c6991459654c174d8e6d",
+      "bytes": 209117
+    },
+    {
+      "seq": 6,
+      "slug": "outer-floor",
+      "width": 1494,
+      "height": 1019,
+      "recordedAt": "2026-10-25T12:29:23.341Z",
+      "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/08-01-06-outer-floor.png",
+      "sha256": "6c583bd5aec0207b5c2c8c51ba50343bfa65b2ee6cea6c713ed21f5e5a983e52",
+      "bytes": 207808
+    },
+    {
+      "seq": 7,
+      "slug": "non-manifold",
+      "width": 1494,
+      "height": 1019,
+      "recordedAt": "2026-10-25T12:29:26.341Z",
+      "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/08-01-07-non-manifold.png",
+      "sha256": "cced4f7a89cbf44e9fe75a8cdfeefd24d06b7adff7c8407a09ed1132ea9b4962",
+      "bytes": 200458
+    },
+    {
+      "seq": 8,
+      "slug": "reference-overview",
+      "width": 1494,
+      "height": 1019,
+      "recordedAt": "2026-10-25T12:29:29.253Z",
+      "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/08-01-08-reference-overview.png",
+      "sha256": "76bd22f0091976802281b444aa8703b9cd939a107c4a70d4074a0d137816a576",
+      "bytes": 167035
+    },
+    {
+      "seq": 9,
+      "slug": "save-dialog",
+      "width": 1060,
+      "height": 600,
+      "recordedAt": "2026-10-25T12:29:34.153Z",
+      "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/08-01-09-save-dialog.png",
+      "sha256": "c11f36e2c4a9e910cac0798597435383e393947a4827e40f03250dc370ce40f5",
+      "bytes": 53079
+    },
+    {
+      "seq": 10,
+      "slug": "saved",
+      "width": 1494,
+      "height": 1019,
+      "recordedAt": "2026-10-25T12:29:37.453Z",
+      "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/08-01-10-saved.png",
+      "sha256": "c322d309456343e96f1e6803487fe07e2bdaa6b67069d90e3aee50cff2c566bb",
+      "bytes": 171206
+    },
+    {
+      "seq": 11,
+      "slug": "open-saved",
+      "width": 1060,
+      "height": 600,
+      "recordedAt": "2026-10-25T12:29:42.353Z",
+      "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/08-01-11-open-saved.png",
+      "sha256": "ee21fc68888ccb7e56fb48702f26a368f7ea1262166902b802aae9008840d28c",
+      "bytes": 57922
+    },
+    {
+      "seq": 12,
+      "slug": "reopened-verified",
+      "width": 1494,
+      "height": 1019,
+      "recordedAt": "2026-10-25T12:29:45.753Z",
+      "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/08-01-12-reopened-verified.png",
+      "sha256": "05ccab2799c6d1965c1878130815b63d2bbff9cd4b87417c2d63458e52bc3472",
+      "bytes": 164705
+    }
+  ],
+  "publication_baseline": {
+    "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/publication-baseline-v001.json",
+    "sha256": "9a97c40c35566c7d7dbbcf551754e3ded7cf2ed5767f98bbed7435815490f3e3",
+    "bytes": 11016
+  },
+  "allowed_catalog_changed_steps": [
+    "08-01",
+    "08-02"
+  ],
+  "future_08_02_modeling_performed": false,
+  "learner_progress": {
+    "revision": 5,
+    "sha256": "d92e4f2ee78a1cf41386816b8616bf635b89fb25f8bfd813ac00cd20ed20b4ef",
+    "unchanged": true,
+    "confirmed_by_tutor": false,
+    "registered_as_learner_files": false,
+    "canonical_step_count": 52
+  },
+  "workspace_integrity": {
+    "unchanged": true,
+    "before_canonical_sha256": "4ad6905b1cef7594ff1bfed45b81e7794fdbf128011df09b4686bdb44d0a7d2f",
+    "after_canonical_sha256": "4ad6905b1cef7594ff1bfed45b81e7794fdbf128011df09b4686bdb44d0a7d2f",
+    "entries": 11
+  },
+  "numeric_comparison": {
+    "dimensionsAbsMm": 0.0001,
+    "purpose": "Floating point reconstruction only; not manufacturing tolerance or strength/fit qualification"
+  },
+  "pending_results": {
+    "material_grade": null,
+    "physical_measurements": null,
+    "fit_results": null,
+    "physical_interference": null,
+    "qualified_strength_N": null,
+    "qualified_clearance_mm": null,
+    "qualified_torque_Nm": null
+  },
+  "flags": {
+    "calculations_performed": false,
+    "strength_analysis_performed": false,
+    "fit_qualification": false,
+    "slicer_checked": false,
+    "printed": false,
+    "fit_tested": false
+  },
+  "publication_audits": [
+    {
+      "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/independent-thread-reference-audit-v001.json",
+      "sha256": "61b6d3f726c9c2439e2424304f4c76e47491a95b6afcf7e19932fd3118084227"
+    },
+    {
+      "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/automated-checks-v001.json",
+      "sha256": "2c87a40c2bd288527478f1da4621da53532165c007c7ef79924e784bb990112a"
+    },
+    {
+      "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/ui-technical-review-v001.json",
+      "sha256": "de83d35d1ddeb76b41c2c388016a3e331d5244c0fb3d418af6fb10fb3c3cc9f4"
+    }
+  ],
+  "journal_path": "learning/journal/2026-10-25-lesson08-parameters-demo-v001.md",
+  "publication_state": "HTTP/browser publication is tracked separately; no publication completion claimed here."
+}

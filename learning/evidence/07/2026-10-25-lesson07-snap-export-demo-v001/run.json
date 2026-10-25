@@ -1,0 +1,526 @@
+{
+ "scenario": "D:\\others\\study\\Blender-Learning\\learning\\tutor\\scenarios\\lesson07_snap_export.py",
+ "blender": "5.2.1 LTS",
+ "buildHash": "9e2066aef7ef",
+ "records": [
+  {
+   "seq": 1,
+   "step": "07-04",
+   "slug": "body-source-dialog",
+   "recordedAt": "2026-10-25T09:09:06.881Z",
+   "action": "File > Open，開啟07-03候選姿態同hash副本，準備分件匯出 Body",
+   "observed": "資料夾 D:\\others\\study\\Blender-Learning\\learning\\evidence\\07\\2026-10-25-lesson07-snap-export-demo-v001\\demo-files\\sources\\；檔名 u07_print_orientation_v001.blend。",
+   "window": "FILE_BROWSER",
+   "highlights": [],
+   "clicks": [],
+   "file": "07-04-01-body-source-dialog.png",
+   "width": 1060,
+   "height": 600,
+   "sha256": "983a391a8141c6eaa1201672c3c30641c12878fc2003185eb56981d702e0f4c5"
+  },
+  {
+   "seq": 2,
+   "step": "07-04",
+   "slug": "body-source-selected",
+   "recordedAt": "2026-10-25T09:09:15.331Z",
+   "action": "只選 Body，核對物件軸尺寸、世界外框與保留的旋轉",
+   "observed": "Body：來源Item物件軸Dimensions [60.0, 44.5, 30.0] mm；頂點世界外框 [30.000001907348633, 44.5, 60.00000065567082] mm，bounds {'min': [-55.0, -24.5, -6.556708171956416e-07], 'max': [-24.999998092651367, 20.0, 60.0]}。旋轉保留、沒有Apply；兩Tools與另一件隱藏。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 963,
+     "y": 383,
+     "w": 228,
+     "h": 77,
+     "label": "來源 Item 物件軸尺寸；非世界外框"
+    }
+   ],
+   "clicks": [],
+   "file": "07-04-02-body-source-selected.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "25aece8c5aafe6484d02d09998acc95bf1074a4aa3d77a006e460de43c2c79f9",
+   "note": "Body來源Item仍約60×44.5×30；Ry90後世界外框約30×44.5×60。數值定義不同，沒有偷偷Apply Rotation。"
+  },
+  {
+   "seq": 3,
+   "step": "07-04",
+   "slug": "body-source-profile",
+   "recordedAt": "2026-10-25T09:09:19.281Z",
+   "action": "沿世界X觀看 Body 的實際候選姿態剖面",
+   "observed": "Body：來源Item物件軸Dimensions [60.0, 44.5, 30.0] mm；頂點世界外框 [30.000001907348633, 44.5, 60.00000065567082] mm，bounds {'min': [-55.0, -24.5, -6.556708171956416e-07], 'max': [-24.999998092651367, 20.0, 60.0]}。旋轉保留、沒有Apply；兩Tools與另一件隱藏。",
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "07-04-03-body-source-profile.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "9ded1e6ae13eb76037f280eabc232b3a477c099c7a210c631d4afa8e635d0f07"
+  },
+  {
+   "seq": 4,
+   "step": "07-04",
+   "slug": "body-export-menu",
+   "recordedAt": "2026-10-25T09:09:21.181Z",
+   "action": "File > Export > STL (.stl)，目前只選 Body",
+   "observed": "已選取：Body；作用中物件：Body",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 28,
+     "y": 307,
+     "w": 202,
+     "h": 20,
+     "label": "Export"
+    },
+    {
+     "x": 236,
+     "y": 426,
+     "w": 244,
+     "h": 20,
+     "label": "STL (.stl)"
+    }
+   ],
+   "clicks": [],
+   "file": "07-04-04-body-export-menu.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "1adcd141368a56cbcc688d4837d7be364a72d54f6254bdabb106abe610bdfd9a"
+  },
+  {
+   "seq": 5,
+   "step": "07-04",
+   "slug": "body-export-before",
+   "recordedAt": "2026-10-25T09:09:25.181Z",
+   "action": "核對 u07_snap_body_v001.stl 路徑／新版本與原生匯出欄位",
+   "observed": "資料夾 D:\\others\\study\\Blender-Learning\\learning\\evidence\\07\\2026-10-25-lesson07-snap-export-demo-v001\\demo-files\\exports\\；檔名 u07_snap_body_v001.stl；原生選項 {'global_scale': 1.0, 'use_scene_unit': False, 'forward_axis': 'Y', 'up_axis': 'Z', 'only_selected': False, 'apply_modifiers': True, 'ascii_format': False, 'use_batch': False, 'evaluation_mode': 'DAG_EVAL_RENDER'}。",
+   "window": "FILE_BROWSER",
+   "highlights": [],
+   "clicks": [],
+   "file": "07-04-05-body-export-before.png",
+   "width": 1060,
+   "height": 600,
+   "sha256": "b2b95106f63c04f37583a111a40c0f17c9f1804d8484f260db1a067175a06c66"
+  },
+  {
+   "seq": 6,
+   "step": "07-04",
+   "slug": "body-export-options",
+   "recordedAt": "2026-10-25T09:09:26.981Z",
+   "action": "勾選並實讀 Selection Only／Scale1／Scene Unit關／Binary，核對新檔目標",
+   "observed": "只匯出Body；Selection Only開、Scale1、Scene Unit關、Binary、Batch關、Y Forward／Z Up。座標按mm解讀，保留原候選world位置。",
+   "window": "FILE_BROWSER",
+   "highlights": [
+    {
+     "x": 920,
+     "y": 148,
+     "w": 135,
+     "h": 22,
+     "label": "Selection Only 開"
+    },
+    {
+     "x": 920,
+     "y": 170,
+     "w": 135,
+     "h": 43,
+     "label": "Scale1／Scene Unit關"
+    },
+    {
+     "x": 789,
+     "y": 566,
+     "w": 126,
+     "h": 25,
+     "label": "Export STL"
+    }
+   ],
+   "clicks": [],
+   "file": "07-04-06-body-export-options.png",
+   "width": 1060,
+   "height": 600,
+   "sha256": "0dcb53baedfe2fb310a691c836bb7a9eda4ac9009613fb00106db98319d36a56",
+   "note": "STL沒有單位標記；本次保留07-03兩件候選的world擺位，未做切片或支撐資格判定。"
+  },
+  {
+   "seq": 7,
+   "step": "07-04",
+   "slug": "body-stl-checked",
+   "recordedAt": "2026-10-25T09:09:29.881Z",
+   "action": "按Export STL，解析原生匯出實檔並核對完整world幾何、尺寸與來源",
+   "observed": "u07_snap_body_v001.stl：實檔5884 bytes／116三角形，世界外框[30.0, 44.5, 60.0] mm、最小Z 0 mm；單殼／Non Manifold0，SHA-256 6ee4b13556db93196189604a96a0dbf3074fcaf6dd3423b3fc86cc2421910ff8。",
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "07-04-07-body-stl-checked.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "9de8f23e51c7a527168defe1de33b5feac1cb31246b42c00f7b7daaa8f5e0c6d",
+   "note": "約1e-6 mm的負Z屬浮點重建；EPS1e-4 mm只作數值核對，不是製造公差。數位檔通過不代表可直接列印或試配合格。"
+  },
+  {
+   "seq": 8,
+   "step": "07-04",
+   "slug": "lid-source-dialog",
+   "recordedAt": "2026-10-25T09:09:34.781Z",
+   "action": "File > Open，開啟07-03候選姿態同hash副本，準備分件匯出 Lid",
+   "observed": "資料夾 D:\\others\\study\\Blender-Learning\\learning\\evidence\\07\\2026-10-25-lesson07-snap-export-demo-v001\\demo-files\\sources\\；檔名 u07_print_orientation_v001.blend。",
+   "window": "FILE_BROWSER",
+   "highlights": [],
+   "clicks": [],
+   "file": "07-04-08-lid-source-dialog.png",
+   "width": 1060,
+   "height": 600,
+   "sha256": "ddf776089a4b127f3994cfdb5462801f22a3b6bb67cf4a9f30c8e09a86123389"
+  },
+  {
+   "seq": 9,
+   "step": "07-04",
+   "slug": "lid-source-selected",
+   "recordedAt": "2026-10-25T09:09:43.231Z",
+   "action": "只選 Lid，核對物件軸尺寸、世界外框與保留的旋轉",
+   "observed": "Lid：來源Item物件軸Dimensions [60.0, 46.0, 7.000000953674316] mm；頂點世界外框 [60.0, 46.0, 7.000004871746796] mm，bounds {'min': [10.0, -26.0, -1.05704953057284e-06], 'max': [70.0, 20.0, 7.000003814697266]}。旋轉保留、沒有Apply；兩Tools與另一件隱藏。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 963,
+     "y": 383,
+     "w": 228,
+     "h": 77,
+     "label": "來源 Item 物件軸尺寸；非世界外框"
+    }
+   ],
+   "clicks": [],
+   "file": "07-04-09-lid-source-selected.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "6e81d9a9bc0da28dcf24e9d8db8a6905721be173fe77543b0c58603432c095e3",
+   "note": "Body來源Item仍約60×44.5×30；Ry90後世界外框約30×44.5×60。數值定義不同，沒有偷偷Apply Rotation。"
+  },
+  {
+   "seq": 10,
+   "step": "07-04",
+   "slug": "lid-source-profile",
+   "recordedAt": "2026-10-25T09:09:47.181Z",
+   "action": "沿世界X觀看 Lid 的實際候選姿態剖面",
+   "observed": "Lid：來源Item物件軸Dimensions [60.0, 46.0, 7.000000953674316] mm；頂點世界外框 [60.0, 46.0, 7.000004871746796] mm，bounds {'min': [10.0, -26.0, -1.05704953057284e-06], 'max': [70.0, 20.0, 7.000003814697266]}。旋轉保留、沒有Apply；兩Tools與另一件隱藏。",
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "07-04-10-lid-source-profile.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "5887645d79efdda6f3429286e5467a503cf42d9cd67a1883166cdfd7da6e8c50"
+  },
+  {
+   "seq": 11,
+   "step": "07-04",
+   "slug": "lid-export-menu",
+   "recordedAt": "2026-10-25T09:09:49.081Z",
+   "action": "File > Export > STL (.stl)，目前只選 Lid",
+   "observed": "已選取：Lid；作用中物件：Lid",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 28,
+     "y": 307,
+     "w": 202,
+     "h": 20,
+     "label": "Export"
+    },
+    {
+     "x": 236,
+     "y": 426,
+     "w": 244,
+     "h": 20,
+     "label": "STL (.stl)"
+    }
+   ],
+   "clicks": [],
+   "file": "07-04-11-lid-export-menu.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "1602c71e0a85b868fd707699a0a94be6252fbb2a82c33fbcd2a476cf1dce0b24"
+  },
+  {
+   "seq": 12,
+   "step": "07-04",
+   "slug": "lid-export-before",
+   "recordedAt": "2026-10-25T09:09:53.081Z",
+   "action": "核對 u07_snap_lid_v001.stl 路徑／新版本與原生匯出欄位",
+   "observed": "資料夾 D:\\others\\study\\Blender-Learning\\learning\\evidence\\07\\2026-10-25-lesson07-snap-export-demo-v001\\demo-files\\exports\\；檔名 u07_snap_lid_v001.stl；原生選項 {'global_scale': 1.0, 'use_scene_unit': False, 'forward_axis': 'Y', 'up_axis': 'Z', 'only_selected': False, 'apply_modifiers': True, 'ascii_format': False, 'use_batch': False, 'evaluation_mode': 'DAG_EVAL_RENDER'}。",
+   "window": "FILE_BROWSER",
+   "highlights": [],
+   "clicks": [],
+   "file": "07-04-12-lid-export-before.png",
+   "width": 1060,
+   "height": 600,
+   "sha256": "fbf22278fc7f16f007463b2ed2e9700432db0e139f2e8f5bccc0fd0782b79733"
+  },
+  {
+   "seq": 13,
+   "step": "07-04",
+   "slug": "lid-export-options",
+   "recordedAt": "2026-10-25T09:09:54.881Z",
+   "action": "勾選並實讀 Selection Only／Scale1／Scene Unit關／Binary，核對新檔目標",
+   "observed": "只匯出Lid；Selection Only開、Scale1、Scene Unit關、Binary、Batch關、Y Forward／Z Up。座標按mm解讀，保留原候選world位置。",
+   "window": "FILE_BROWSER",
+   "highlights": [
+    {
+     "x": 920,
+     "y": 148,
+     "w": 135,
+     "h": 22,
+     "label": "Selection Only 開"
+    },
+    {
+     "x": 920,
+     "y": 170,
+     "w": 135,
+     "h": 43,
+     "label": "Scale1／Scene Unit關"
+    },
+    {
+     "x": 789,
+     "y": 566,
+     "w": 126,
+     "h": 25,
+     "label": "Export STL"
+    }
+   ],
+   "clicks": [],
+   "file": "07-04-13-lid-export-options.png",
+   "width": 1060,
+   "height": 600,
+   "sha256": "529a3a39621373e6c3936ca84b0dd57df94c4979dc63b91c24f7805bcc4a3b6c",
+   "note": "STL沒有單位標記；本次保留07-03兩件候選的world擺位，未做切片或支撐資格判定。"
+  },
+  {
+   "seq": 14,
+   "step": "07-04",
+   "slug": "lid-stl-checked",
+   "recordedAt": "2026-10-25T09:09:57.781Z",
+   "action": "按Export STL，解析原生匯出實檔並核對完整world幾何、尺寸與來源",
+   "observed": "u07_snap_lid_v001.stl：實檔2484 bytes／48三角形，世界外框[60.0, 46.0, 7.000004887580872] mm、最小Z -1.07288361e-06 mm；單殼／Non Manifold0，SHA-256 c80ea7d584a2f71cc0b2619ff903bdff57d8c97441d61111a0e8c7b839f55c21。",
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "07-04-14-lid-stl-checked.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "de2465afcf4f52010e054dc123f3fc31574cd721305fb0c71e0f9534264a34eb",
+   "note": "約1e-6 mm的負Z屬浮點重建；EPS1e-4 mm只作數值核對，不是製造公差。數位檔通過不代表可直接列印或試配合格。"
+  },
+  {
+   "seq": 15,
+   "step": "07-04",
+   "slug": "empty-mm-scene",
+   "recordedAt": "2026-10-25T09:10:09.782Z",
+   "action": "File > New > General，清空並設mm，準備真實重匯入兩份STL",
+   "observed": "獨立新場景物件0；Metric／Millimeters／Unit Scale0.001。空場景沒有Item，不先點分頁。",
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "07-04-15-empty-mm-scene.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "4adc8aebf5e4a772bee8fce4eb6b599831c2910744002fc3fb9242704c87f51c"
+  },
+  {
+   "seq": 16,
+   "step": "07-04",
+   "slug": "body-import-dialog",
+   "recordedAt": "2026-10-25T09:10:13.782Z",
+   "action": "F3 > Import STL，選剛匯出的 u07_snap_body_v001.stl 並讀回實際選項",
+   "observed": "實際檔名u07_snap_body_v001.stl；Scale1、Scene Unit關、Y Forward／Z Up；沒有自動移動或套用縮放。",
+   "window": "FILE_BROWSER",
+   "highlights": [
+    {
+     "x": 248,
+     "y": 566,
+     "w": 780,
+     "h": 25,
+     "label": "本次 STL v001"
+    },
+    {
+     "x": 789,
+     "y": 566,
+     "w": 126,
+     "h": 25,
+     "label": "Import STL"
+    }
+   ],
+   "clicks": [],
+   "file": "07-04-16-body-import-dialog.png",
+   "width": 1060,
+   "height": 600,
+   "sha256": "9d1ebf39c7724cc9b9949163e0632b01787da6ebbfe7a5bdc0baf9fd8c21a2c4"
+  },
+  {
+   "seq": 17,
+   "step": "07-04",
+   "slug": "body-reimport-dimensions",
+   "recordedAt": "2026-10-25T09:10:24.032Z",
+   "action": "實際重匯入後才切一次Item；核對 Body_STL 尺寸／世界外框",
+   "observed": "Body_STL實際重匯入：Item Dimensions [30.0, 44.5, 60.0] mm＝世界外框[30.0, 44.5, 60.0] mm；物件旋轉0／Scale1／修改器0。原world座標在頂點中，物件Location0不代表零件位於原點。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 963,
+     "y": 383,
+     "w": 228,
+     "h": 77,
+     "label": "重匯入 Item 尺寸＝世界外框"
+    }
+   ],
+   "clicks": [],
+   "file": "07-04-17-body-reimport-dimensions.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "119395eb4abc4d935d65e166660c7cdb2bc738e62738a3eaf68d07da08fd49e3"
+  },
+  {
+   "seq": 18,
+   "step": "07-04",
+   "slug": "body-reimport-profile",
+   "recordedAt": "2026-10-25T09:10:27.982Z",
+   "action": "沿世界X觀看實際STL Body_STL 剖面",
+   "observed": "Body_STL實際重匯入：Item Dimensions [30.0, 44.5, 60.0] mm＝世界外框[30.0, 44.5, 60.0] mm；物件旋轉0／Scale1／修改器0。原world座標在頂點中，物件Location0不代表零件位於原點。",
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "07-04-18-body-reimport-profile.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "4206d415221f58505c95dc9bac35e25e1b8e544cc028a13c492b364039970b67"
+  },
+  {
+   "seq": 19,
+   "step": "07-04",
+   "slug": "body-reimport-non-manifold",
+   "recordedAt": "2026-10-25T09:10:31.782Z",
+   "action": "Tab > Edge Select > Select None > Select Non Manifold，核對 Body_STL",
+   "observed": "Body_STL：非空網格，原生Select Non Manifold選到0條邊，程式讀回非流形邊0。",
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "07-04-19-body-reimport-non-manifold.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "da4090e7382db2237e98875efd85f9ee44c7d0bc6c3159266cf6c4fbed0092ff"
+  },
+  {
+   "seq": 20,
+   "step": "07-04",
+   "slug": "lid-import-dialog",
+   "recordedAt": "2026-10-25T09:10:36.582Z",
+   "action": "F3 > Import STL，選剛匯出的 u07_snap_lid_v001.stl 並讀回實際選項",
+   "observed": "實際檔名u07_snap_lid_v001.stl；Scale1、Scene Unit關、Y Forward／Z Up；沒有自動移動或套用縮放。",
+   "window": "FILE_BROWSER",
+   "highlights": [
+    {
+     "x": 248,
+     "y": 566,
+     "w": 780,
+     "h": 25,
+     "label": "本次 STL v001"
+    },
+    {
+     "x": 789,
+     "y": 566,
+     "w": 126,
+     "h": 25,
+     "label": "Import STL"
+    }
+   ],
+   "clicks": [],
+   "file": "07-04-20-lid-import-dialog.png",
+   "width": 1060,
+   "height": 600,
+   "sha256": "e83e42d85aa2b998a3ff943aa55802fac1903458fe95623a46f60f13d6660517"
+  },
+  {
+   "seq": 21,
+   "step": "07-04",
+   "slug": "lid-reimport-dimensions",
+   "recordedAt": "2026-10-25T09:10:46.333Z",
+   "action": "實際重匯入後核對 Lid_STL 尺寸／世界外框",
+   "observed": "Lid_STL實際重匯入：Item Dimensions [60.0, 46.0, 7.000004768371582] mm＝世界外框[60.0, 46.0, 7.000004887580872] mm；物件旋轉0／Scale1／修改器0。原world座標在頂點中，物件Location0不代表零件位於原點。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 963,
+     "y": 383,
+     "w": 228,
+     "h": 77,
+     "label": "重匯入 Item 尺寸＝世界外框"
+    }
+   ],
+   "clicks": [],
+   "file": "07-04-21-lid-reimport-dimensions.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "1870d4391e17be49e286759fcf23b5ff726966ba26ea2a4adb08caeee023dee8"
+  },
+  {
+   "seq": 22,
+   "step": "07-04",
+   "slug": "lid-reimport-profile",
+   "recordedAt": "2026-10-25T09:10:50.283Z",
+   "action": "沿世界X觀看實際STL Lid_STL 剖面",
+   "observed": "Lid_STL實際重匯入：Item Dimensions [60.0, 46.0, 7.000004768371582] mm＝世界外框[60.0, 46.0, 7.000004887580872] mm；物件旋轉0／Scale1／修改器0。原world座標在頂點中，物件Location0不代表零件位於原點。",
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "07-04-22-lid-reimport-profile.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "a502dcc49b2fa1cb643295d04fae0e35023fddc739c3272c28eb8a9d37374332"
+  },
+  {
+   "seq": 23,
+   "step": "07-04",
+   "slug": "lid-reimport-non-manifold",
+   "recordedAt": "2026-10-25T09:10:54.083Z",
+   "action": "Tab > Edge Select > Select None > Select Non Manifold，核對 Lid_STL",
+   "observed": "Lid_STL：非空網格，原生Select Non Manifold選到0條邊，程式讀回非流形邊0。",
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "07-04-23-lid-reimport-non-manifold.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "41a3b5b82865be5945ed1115af79c586473fe62baeae23c28ca0cb5fedace95d"
+  },
+  {
+   "seq": 24,
+   "step": "07-04",
+   "slug": "reimport-layout",
+   "recordedAt": "2026-10-25T09:11:00.833Z",
+   "action": "顯示兩件真實重匯入STL，核對世界位置／落床數值與35mm分隔",
+   "observed": "兩件實際STL保持07-03分件候選擺位：X投影分隔 35 mm，各自最低Z≈0；沒有改成扣合裝配。只含Body_STL／Lid_STL，無Tools，不代表床幅或支撐已核對。",
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "07-04-24-reimport-layout.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "1c60b2b28d47b635a123f4e595f0f207824d1ae1f72d6c5b076f15e86ac72cd3",
+   "note": "目前active是Body_STL，側欄Dimensions約30×44.5×60屬盒體。此擺位沿用方向候選，非最終列印方向與支撐核准。"
+  },
+  {
+   "seq": 25,
+   "step": "07-04",
+   "slug": "exports-verified",
+   "recordedAt": "2026-10-25T09:11:02.033Z",
+   "action": "保存兩份STL版本、來源與方向記錄關聯、四份raw及最終verification／export record",
+   "observed": "Body／Lid兩份v001 STL實檔與實際重匯入核對通過；07-03原scene／副本／record hash未變。保留world候選、兩檔SHA與版本紀錄，不另存blend；切片、支撐、列印、實測、試配與合格值仍留空。",
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "07-04-25-exports-verified.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "1c60b2b28d47b635a123f4e595f0f207824d1ae1f72d6c5b076f15e86ac72cd3",
+   "note": "本次完成助教數位匯出示範，不代學員確認完成；07-02間隙仍為試驗幾何，STL不是已驗證可直接列印或試配的合格件。"
+  }
+ ]
+}

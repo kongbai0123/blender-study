@@ -1,0 +1,90 @@
+{
+  "recordedAt": "2026-10-25T09:29:50.684125+00:00",
+  "files": [
+    {
+      "source": "learning/tutor/run_demo.py",
+      "snapshot": "source-snapshot/run_demo.py",
+      "sha256": "8a0afa081716cab276c99fc811f6a2453ac82f45b28d8a0b1c639eef67347058"
+    },
+    {
+      "source": "learning/tutor/blender_demo.py",
+      "snapshot": "source-snapshot/blender_demo.py",
+      "sha256": "96321d8180b1e05a9b77d47551adefbf43ddd04e6add2505eca3b30ceb831a6c"
+    },
+    {
+      "source": "learning/tutor/scenarios/common.py",
+      "snapshot": "source-snapshot/common.py",
+      "sha256": "45044c48522bf5a2dee130382f902a07243e82027addaf6594cbae59b3369c3d"
+    },
+    {
+      "source": "learning/tutor/scenarios/lesson07_coupons.py",
+      "snapshot": "source-snapshot/lesson07_coupons.py",
+      "sha256": "69a54e555a00ebc99cfac5ed7e13abed37ff5519de44a97dd531ab25499210f5"
+    },
+    {
+      "source": "learning/tutor/scenarios/coupon_checks.py",
+      "snapshot": "source-snapshot/coupon_checks.py",
+      "sha256": "d29ac0840e61c4da9c39cce6bc8aeda58649ac13e2de79399e01b66ea6ceaa4c"
+    },
+    {
+      "source": "learning/tutor/scenarios/overhang_checks.py",
+      "snapshot": "source-snapshot/overhang_checks.py",
+      "sha256": "66023ffe41bb121f75c77b6db362fc559075c7ba56decd9c00d75832c57bb25a"
+    },
+    {
+      "source": "learning/tutor/scenarios/snapfit_checks.py",
+      "snapshot": "source-snapshot/snapfit_checks.py",
+      "sha256": "0b37846f663d2607764158046cf130d81e15792c006eed9d9631f8ba28e7f4c3"
+    },
+    {
+      "source": "learning/tutor/scenarios/snapfit_stl_checks.py",
+      "snapshot": "source-snapshot/snapfit_stl_checks.py",
+      "sha256": "71b7dcb2c9ee427b08f9979728ce440a15553a599b2bdbf6ccbf98f5e18f3c42"
+    },
+    {
+      "source": "learning/tutor/scenarios/stl_checks.py",
+      "snapshot": "source-snapshot/stl_checks.py",
+      "sha256": "36f09e213a7759a95ea07cee1f70fbaaaf2287551b9c97d9308778a658fe922c"
+    },
+    {
+      "source": "learning/tutor/scenarios/tenon_checks.py",
+      "snapshot": "source-snapshot/tenon_checks.py",
+      "sha256": "4defe55d142ac78be924cef8d82abc3bd24bd2db6f380332eb29cb5b0d89d13d"
+    },
+    {
+      "source": "learning/tutor/scenarios/lid_checks.py",
+      "snapshot": "source-snapshot/lid_checks.py",
+      "sha256": "b2e2438126695cca24cb560dce046ca743c2de2c348116141ff6ed75c42e52c3"
+    }
+  ],
+  "dataBindings": [
+    {
+      "source": "learning/plans/07-05-coupon-length-draft-v001.json",
+      "snapshot": "source-snapshot/coupon-plan-v001.json",
+      "sha256": "35905a851b846b757bbdbb9321708606b4497a0dc4d5d1cdea0f8735d303dd33"
+    },
+    {
+      "source": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/verification.json",
+      "snapshot": "source-snapshot/source-orientation-verification.json",
+      "sha256": "ab84fcc47ee59d2303a1174a8b67c27c898255c5c556e3b0deaee616741b9dc7"
+    },
+    {
+      "source": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/snap_tool_mesh.json",
+      "snapshot": "source-snapshot/source-snap-tool-reference.json",
+      "sha256": "c60a6ed737f426277e0157ad1f7554a3070ba4395aec319693d6a2d9104c6140"
+    },
+    {
+      "source": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/geometry-draft-record-v001.json",
+      "snapshot": "source-snapshot/source-geometry-record-v001.json",
+      "sha256": "4f201124cbf51dc849c7978ee85f7ff5e58ca4273cdd9b006d3eba6c52521b7a"
+    },
+    {
+      "source": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/stl-export-record-v001.json",
+      "snapshot": "source-snapshot/source-export-record-v001.json",
+      "sha256": "b3b3745d714a628b5155b01fbfeca81cda50855aaeb95aa757f616ea58ee268a"
+    }
+  ],
+  "sourceScene": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\07\\2026-10-25-lesson07-overhang-demo-v001\\demo-files\\u07_print_orientation_v001.blend",
+  "sourceCopy": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\07\\2026-10-25-lesson07-coupons-demo-v001\\demo-files\\sources\\u07_print_orientation_v001.blend",
+  "sourceSha256": "360417f208287a94ca13501f4365b70b3396ca6aba579231e0f8d2a442ecf47d"
+}

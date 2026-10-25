@@ -1,0 +1,679 @@
+{
+ "scenario": "D:\\others\\study\\Blender-Learning\\learning\\tutor\\scenarios\\lesson05_holes.py",
+ "blender": "5.2.1 LTS",
+ "buildHash": "9e2066aef7ef",
+ "records": [
+  {
+   "seq": 1,
+   "step": "05-03",
+   "slug": "new-scene",
+   "recordedAt": "2026-10-22T07:30:09.229Z",
+   "action": "在獨立 Blender 選取出廠物件、X > Delete，準備孔板新場景",
+   "observed": "本次獨立場景物件數 0；原插銷檔不改寫。",
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "05-03-01-new-scene.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "bbc3fc0d8153d6b40a2755c4777b15b314e113bfe2848df371d97cc05dff7cef"
+  },
+  {
+   "seq": 2,
+   "step": "05-03",
+   "slug": "units",
+   "recordedAt": "2026-10-22T07:30:20.230Z",
+   "action": "Scene > Units：Length 選 Millimeters、Unit Scale 0.001，再開啟 Sidebar",
+   "observed": "Unit Scale 0.001；Length MILLIMETERS；Cube Dimensions (2 mm, 2 mm, 2 mm)、Location (0 mm, 0 mm, 0 mm)、Scale (1, 1, 1)。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 1266,
+     "y": 477,
+     "w": 216,
+     "h": 22,
+     "label": "0.001"
+    },
+    {
+     "x": 963,
+     "y": 383,
+     "w": 228,
+     "h": 77,
+     "label": "Dimensions"
+    }
+   ],
+   "clicks": [],
+   "file": "05-03-02-units.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "7019a1000e5c66d571e7eb8b44949d1bbe55c33446b61affc88e38e3f6afa81c"
+  },
+  {
+   "seq": 3,
+   "step": "05-03",
+   "slug": "board",
+   "recordedAt": "2026-10-22T07:30:35.830Z",
+   "action": "Dimensions 輸入 96、26、4 mm，Object > Apply > Scale，命名 Plate 並對焦",
+   "observed": "Plate Dimensions (96 mm, 26 mm, 4 mm)、Location (0 mm, 0 mm, 0 mm)、Scale (1, 1, 1)。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 483,
+     "y": 377,
+     "w": 318,
+     "h": 248,
+     "label": "示範孔板"
+    },
+    {
+     "x": 963,
+     "y": 318,
+     "w": 228,
+     "h": 142,
+     "label": "96 × 26 × 4 mm／Scale 1"
+    }
+   ],
+   "clicks": [],
+   "file": "05-03-03-board.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "42d749d6442e623bceddcdeae942cb4c02730ea4abee896318c378836e628399"
+  },
+  {
+   "seq": 4,
+   "step": "05-03",
+   "slug": "cutter-1",
+   "recordedAt": "2026-10-22T07:30:44.680Z",
+   "action": "Add > Mesh > Cube，設第 1 孔切割體 10.1 × 10.1 × 8 mm，中心 X -35、Y 2 mm（總間隙試驗點 0.1 mm）",
+   "observed": "第 1 個切割體：Cube Dimensions (10.1 mm, 10.1 mm, 8 mm)、Location (-35 mm, 2 mm, 0 mm)、Scale (5.05, 5.05, 4)；這只是切割幾何，最終孔壁另行量測。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 963,
+     "y": 133,
+     "w": 228,
+     "h": 59,
+     "label": "Location"
+    },
+    {
+     "x": 963,
+     "y": 383,
+     "w": 228,
+     "h": 77,
+     "label": "切割體 Dimensions"
+    }
+   ],
+   "clicks": [],
+   "file": "05-03-04-cutter-1.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "a3f91c05485ffeda73bf50b40067db2091cda96ca45f8b6fe2610cc0864e67ec"
+  },
+  {
+   "seq": 5,
+   "step": "05-03",
+   "slug": "cutter-2",
+   "recordedAt": "2026-10-22T07:30:53.030Z",
+   "action": "Add > Mesh > Cube，設第 2 孔切割體 10.2 × 10.2 × 8 mm，中心 X -21、Y 2 mm（總間隙試驗點 0.2 mm）",
+   "observed": "第 2 個切割體：Cube.001 Dimensions (10.2 mm, 10.2 mm, 8 mm)、Location (-21 mm, 2 mm, 0 mm)、Scale (5.1, 5.1, 4)；這只是切割幾何，最終孔壁另行量測。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 963,
+     "y": 133,
+     "w": 228,
+     "h": 59,
+     "label": "Location"
+    },
+    {
+     "x": 963,
+     "y": 383,
+     "w": 228,
+     "h": 77,
+     "label": "切割體 Dimensions"
+    }
+   ],
+   "clicks": [],
+   "file": "05-03-05-cutter-2.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "b8710f95a8ed81ce359c41ada1be5d1f721904d373ccec99ec7c1f4b0993284e"
+  },
+  {
+   "seq": 6,
+   "step": "05-03",
+   "slug": "cutter-3",
+   "recordedAt": "2026-10-22T07:31:01.381Z",
+   "action": "Add > Mesh > Cube，設第 3 孔切割體 10.3 × 10.3 × 8 mm，中心 X -7、Y 2 mm（總間隙試驗點 0.3 mm）",
+   "observed": "第 3 個切割體：Cube.002 Dimensions (10.3 mm, 10.3 mm, 8 mm)、Location (-7 mm, 2 mm, 0 mm)、Scale (5.15, 5.15, 4)；這只是切割幾何，最終孔壁另行量測。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 963,
+     "y": 133,
+     "w": 228,
+     "h": 59,
+     "label": "Location"
+    },
+    {
+     "x": 963,
+     "y": 383,
+     "w": 228,
+     "h": 77,
+     "label": "切割體 Dimensions"
+    }
+   ],
+   "clicks": [],
+   "file": "05-03-06-cutter-3.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "687671a796a6883b8ef8c16b039e55cde22aea4235b732261125e70d4b0ae63a"
+  },
+  {
+   "seq": 7,
+   "step": "05-03",
+   "slug": "cutter-4",
+   "recordedAt": "2026-10-22T07:31:09.731Z",
+   "action": "Add > Mesh > Cube，設第 4 孔切割體 10.4 × 10.4 × 8 mm，中心 X 7、Y 2 mm（總間隙試驗點 0.4 mm）",
+   "observed": "第 4 個切割體：Cube.003 Dimensions (10.4 mm, 10.4 mm, 8 mm)、Location (7 mm, 2 mm, 0 mm)、Scale (5.2, 5.2, 4)；這只是切割幾何，最終孔壁另行量測。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 963,
+     "y": 133,
+     "w": 228,
+     "h": 59,
+     "label": "Location"
+    },
+    {
+     "x": 963,
+     "y": 383,
+     "w": 228,
+     "h": 77,
+     "label": "切割體 Dimensions"
+    }
+   ],
+   "clicks": [],
+   "file": "05-03-07-cutter-4.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "73ef90c9a4153ff85a9fd1efc7eac37e0c5bc8f6b6dc7e934cb4a481514692e3"
+  },
+  {
+   "seq": 8,
+   "step": "05-03",
+   "slug": "cutter-5",
+   "recordedAt": "2026-10-22T07:31:18.081Z",
+   "action": "Add > Mesh > Cube，設第 5 孔切割體 10.5 × 10.5 × 8 mm，中心 X 21、Y 2 mm（總間隙試驗點 0.5 mm）",
+   "observed": "第 5 個切割體：Cube.004 Dimensions (10.5 mm, 10.5 mm, 8 mm)、Location (21 mm, 2 mm, 0 mm)、Scale (5.25, 5.25, 4)；這只是切割幾何，最終孔壁另行量測。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 963,
+     "y": 133,
+     "w": 228,
+     "h": 59,
+     "label": "Location"
+    },
+    {
+     "x": 963,
+     "y": 383,
+     "w": 228,
+     "h": 77,
+     "label": "切割體 Dimensions"
+    }
+   ],
+   "clicks": [],
+   "file": "05-03-08-cutter-5.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "1e0a1322b2241759527b5aa5adc306f90b55284cce3cd30c5401da8d4f44aee5"
+  },
+  {
+   "seq": 9,
+   "step": "05-03",
+   "slug": "cutter-6",
+   "recordedAt": "2026-10-22T07:31:26.432Z",
+   "action": "Add > Mesh > Cube，設第 6 孔切割體 10.6 × 10.6 × 8 mm，中心 X 35、Y 2 mm（總間隙試驗點 0.6 mm）",
+   "observed": "第 6 個切割體：Cube.005 Dimensions (10.6 mm, 10.6 mm, 8 mm)、Location (35 mm, 2 mm, 0 mm)、Scale (5.3, 5.3, 4)；這只是切割幾何，最終孔壁另行量測。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 963,
+     "y": 133,
+     "w": 228,
+     "h": 59,
+     "label": "Location"
+    },
+    {
+     "x": 963,
+     "y": 383,
+     "w": 228,
+     "h": 77,
+     "label": "切割體 Dimensions"
+    }
+   ],
+   "clicks": [],
+   "file": "05-03-09-cutter-6.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "11bd92615f3ffe1d521ea102aab809e4c55a52b7b8441d6a4810a4e97ca407ef"
+  },
+  {
+   "seq": 10,
+   "step": "05-03",
+   "slug": "marker-base",
+   "recordedAt": "2026-10-22T07:31:38.382Z",
+   "action": "F3 搜尋 Add Cylinder，設直徑 1.2 mm、高 2 mm，中心 Z 2.2 mm，作為 0.8 mm 深的盲凹點切割體",
+   "observed": "Cylinder Dimensions (1.2 mm, 1.2 mm, 2 mm)、Location (-35 mm, -8.5 mm, 2.2 mm)、Scale (0.0006, 0.0006, 0.001)；板頂面 Z 2 mm，凹點名義底 Z 1.2 mm。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 963,
+     "y": 133,
+     "w": 228,
+     "h": 59,
+     "label": "Location"
+    },
+    {
+     "x": 963,
+     "y": 383,
+     "w": 228,
+     "h": 77,
+     "label": "圓柱 Dimensions"
+    }
+   ],
+   "clicks": [],
+   "file": "05-03-10-marker-base.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "52f080793529e67f5a60886fbbd39e2c933a657a5facf4b840ddec00d9655a6d",
+   "note": "凹點尺寸與板厚是本示範的幾何安排，沒有宣稱已通過 0.4 mm 噴嘴的列印辨識驗證。"
+  },
+  {
+   "seq": 11,
+   "step": "05-03",
+   "slug": "markers-1",
+   "recordedAt": "2026-10-22T07:31:39.582Z",
+   "action": "用 Shift+D > X 複製圓柱，讓第 1 孔下方有 1 個凹點切割體",
+   "observed": "第 1 組完成；目前可見切割物件 7 個；末個物件 Cylinder Dimensions (1.2 mm, 1.2 mm, 2 mm)、Location (-35 mm, -8.5 mm, 2.2 mm)、Scale (0.0006, 0.0006, 0.001)。",
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "05-03-11-markers-1.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "52f080793529e67f5a60886fbbd39e2c933a657a5facf4b840ddec00d9655a6d",
+   "note": "此時仍是切割體；最終孔板盲凹點數會從差集後的網格讀回。"
+  },
+  {
+   "seq": 12,
+   "step": "05-03",
+   "slug": "markers-2",
+   "recordedAt": "2026-10-22T07:31:42.682Z",
+   "action": "用 Shift+D > X 複製圓柱，讓第 2 孔下方有 2 個凹點切割體",
+   "observed": "第 2 組完成；目前可見切割物件 9 個；末個物件 Cylinder.002 Dimensions (1.2 mm, 1.2 mm, 2 mm)、Location (-20.2 mm, -8.5 mm, 2.2 mm)、Scale (0.0006, 0.0006, 0.001)。",
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "05-03-12-markers-2.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "29569acafe436ee75f55ab9b561cd3503f39cab9c1769d46318a44db8fe3a9b9",
+   "note": "此時仍是切割體；最終孔板盲凹點數會從差集後的網格讀回。"
+  },
+  {
+   "seq": 13,
+   "step": "05-03",
+   "slug": "markers-3",
+   "recordedAt": "2026-10-22T07:31:46.732Z",
+   "action": "用 Shift+D > X 複製圓柱，讓第 3 孔下方有 3 個凹點切割體",
+   "observed": "第 3 組完成；目前可見切割物件 12 個；末個物件 Cylinder.005 Dimensions (1.2 mm, 1.2 mm, 2 mm)、Location (-5.4 mm, -8.5 mm, 2.2 mm)、Scale (0.0006, 0.0006, 0.001)。",
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "05-03-13-markers-3.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "4ca41d5baed9524e7dcfff4e0f0e435b01d39a0f39d3f0d608efec047048a04b",
+   "note": "此時仍是切割體；最終孔板盲凹點數會從差集後的網格讀回。"
+  },
+  {
+   "seq": 14,
+   "step": "05-03",
+   "slug": "markers-4",
+   "recordedAt": "2026-10-22T07:31:51.732Z",
+   "action": "用 Shift+D > X 複製圓柱，讓第 4 孔下方有 4 個凹點切割體",
+   "observed": "第 4 組完成；目前可見切割物件 16 個；末個物件 Cylinder.009 Dimensions (1.2 mm, 1.2 mm, 2 mm)、Location (9.4 mm, -8.5 mm, 2.2 mm)、Scale (0.0006, 0.0006, 0.001)。",
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "05-03-14-markers-4.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "bd862c6526db86ac99db6e7e5a3e6ef9d5cad43aeae365d079ab01a6839fe47a",
+   "note": "此時仍是切割體；最終孔板盲凹點數會從差集後的網格讀回。"
+  },
+  {
+   "seq": 15,
+   "step": "05-03",
+   "slug": "markers-5",
+   "recordedAt": "2026-10-22T07:31:57.683Z",
+   "action": "用 Shift+D > X 複製圓柱，讓第 5 孔下方有 5 個凹點切割體",
+   "observed": "第 5 組完成；目前可見切割物件 21 個；末個物件 Cylinder.014 Dimensions (1.2 mm, 1.2 mm, 2 mm)、Location (24.2 mm, -8.5 mm, 2.2 mm)、Scale (0.0006, 0.0006, 0.001)。",
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "05-03-15-markers-5.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "5c502d69ba60b6c214074319ff210a45e463b2255b260eb2ceb7c28d8a033737",
+   "note": "此時仍是切割體；最終孔板盲凹點數會從差集後的網格讀回。"
+  },
+  {
+   "seq": 16,
+   "step": "05-03",
+   "slug": "markers-6",
+   "recordedAt": "2026-10-22T07:32:04.583Z",
+   "action": "用 Shift+D > X 複製圓柱，讓第 6 孔下方有 6 個凹點切割體",
+   "observed": "第 6 組完成；目前可見切割物件 27 個；末個物件 Cylinder.020 Dimensions (1.2 mm, 1.2 mm, 2 mm)、Location (39 mm, -8.5 mm, 2.2 mm)、Scale (0.0006, 0.0006, 0.001)。",
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "05-03-16-markers-6.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "85076eaaa57cc61347279db3f920eb0ff3d89ba44a6dc302e23d1c4579aaf9cf",
+   "note": "此時仍是切割體；最終孔板盲凹點數會從差集後的網格讀回。"
+  },
+  {
+   "seq": 17,
+   "step": "05-03",
+   "slug": "cutters-joined",
+   "recordedAt": "2026-10-22T07:32:12.583Z",
+   "action": "A 選取可見的 27 個切割體，Ctrl+J 合併、Apply Scale，命名 Cutters；Plate 仍隱藏",
+   "observed": "Cutters Dimensions (80.35 mm, 16.4 mm, 8 mm)、Location (39 mm, -8.5 mm, 2.2 mm)、Scale (1, 1, 1)；場景網格物件：Plate、Cutters。",
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "05-03-17-cutters-joined.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "f6d74f882fd8915f6f1aa93b17f593560adc5d038800495c8ec3819a4393bef6"
+  },
+  {
+   "seq": 18,
+   "step": "05-03",
+   "slug": "boolean-empty",
+   "recordedAt": "2026-10-22T07:32:17.083Z",
+   "action": "選 Plate，F3 搜尋 Add Boolean Modifier，確認 Difference 與 Object 欄位",
+   "observed": "Operation DIFFERENCE、Solver EXACT、Operand 未指定。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 1409,
+     "y": 340,
+     "w": 66,
+     "h": 21,
+     "label": "Difference"
+    },
+    {
+     "x": 1351,
+     "y": 389,
+     "w": 104,
+     "h": 22,
+     "label": "Object／滴管"
+    }
+   ],
+   "clicks": [],
+   "file": "05-03-18-boolean-empty.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "ecbff875c5d4b9a0e430ca3d32e21c03b6af5f2d04fa5889117249b139feaf03"
+  },
+  {
+   "seq": 19,
+   "step": "05-03",
+   "slug": "boolean-assigned",
+   "recordedAt": "2026-10-22T07:32:19.483Z",
+   "action": "點 Object 滴管，再點 Outliner 的 Cutters，指定為 Difference 切割物件",
+   "observed": "Operation DIFFERENCE、Solver EXACT、Operand Cutters。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 1351,
+     "y": 389,
+     "w": 104,
+     "h": 22,
+     "label": "Cutters"
+    }
+   ],
+   "clicks": [],
+   "file": "05-03-19-boolean-assigned.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "d0bb24fc86da2b3d9b9675dcdf44b63f65086cf0189b2f75e53bf87c73824cdc"
+  },
+  {
+   "seq": 20,
+   "step": "05-03",
+   "slug": "holes-preview",
+   "recordedAt": "2026-10-22T07:32:25.783Z",
+   "action": "隱藏 Cutters，選 Plate，數字鍵盤 7 看俯視圖並 Frame Selected：六個方孔與凹點出現",
+   "observed": "Operation DIFFERENCE、Solver EXACT、Operand Cutters。Cutters 隱藏 True；Plate Dimensions (96 mm, 26 mm, 4 mm)、Location (0 mm, 0 mm, 0 mm)、Scale (1, 1, 1)。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 338,
+     "y": 394,
+     "w": 550,
+     "h": 160,
+     "label": "六孔與 1～6 點標記"
+    }
+   ],
+   "clicks": [],
+   "file": "05-03-20-holes-preview.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "c6292c819628b2a08ad86cd4baae8714ed8864e40f9a51d6a4dadf5a832eff09"
+  },
+  {
+   "seq": 21,
+   "step": "05-03",
+   "slug": "apply-boolean-menu",
+   "recordedAt": "2026-10-22T07:32:26.783Z",
+   "action": "Boolean 標題列下拉選單，找到 Apply",
+   "observed": "Operation DIFFERENCE、Solver EXACT、Operand Cutters。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 1287,
+     "y": 333,
+     "w": 145,
+     "h": 20,
+     "label": "Apply"
+    }
+   ],
+   "clicks": [],
+   "file": "05-03-21-apply-boolean-menu.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "b7ee68f89912455d2f146b72e7b444357ce3f62084b29da39da1c8b4de67b971"
+  },
+  {
+   "seq": 22,
+   "step": "05-03",
+   "slug": "applied",
+   "recordedAt": "2026-10-22T07:32:29.383Z",
+   "action": "點 Apply，把 Difference 結果寫進 Plate 網格；隱藏的 Cutters 保留作建構來源",
+   "observed": "Plate 修改器數 0、頂點 1417、邊 2165、面 738；Plate Dimensions (96 mm, 26 mm, 4 mm)、Location (0 mm, 0 mm, 0 mm)、Scale (1, 1, 1)。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 338,
+     "y": 394,
+     "w": 550,
+     "h": 160,
+     "label": "最終孔板"
+    }
+   ],
+   "clicks": [],
+   "file": "05-03-22-applied.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "251ebfa8e68ce120c62db2a196e8b503a9ffcb807081f9ec3eb7f772d8933a31"
+  },
+  {
+   "seq": 23,
+   "step": "05-03",
+   "slug": "non-manifold",
+   "recordedAt": "2026-10-22T07:32:34.283Z",
+   "action": "Tab > 邊選取 > Select None，再 F3 搜尋 Select Non Manifold",
+   "observed": "Edit Mode，邊選取；Non Manifold 0、選到的邊 0。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 49,
+     "y": 28,
+     "w": 96,
+     "h": 20,
+     "label": "Edit Mode"
+    }
+   ],
+   "clicks": [],
+   "file": "05-03-23-non-manifold.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "254f77b796216bc85a3a9461642282b32a4c247ba9a0b9d6c0c31fd4ba99a2b0"
+  },
+  {
+   "seq": 24,
+   "step": "05-03",
+   "slug": "save-dialog",
+   "recordedAt": "2026-10-22T07:32:38.883Z",
+   "action": "File > Save As…：指定本次 demo-files 與 u05_hole_plate_v001.blend",
+   "observed": "示範資料夾 D:\\others\\study\\Blender-Learning\\learning\\evidence\\05\\2026-10-22-lesson05-holes-demo-v002\\demo-files\\；檔名 u05_hole_plate_v001.blend。",
+   "window": "FILE_BROWSER",
+   "highlights": [
+    {
+     "x": 394,
+     "y": 8,
+     "w": 318,
+     "h": 25,
+     "label": "示範資料夾"
+    },
+    {
+     "x": 248,
+     "y": 566,
+     "w": 780,
+     "h": 25,
+     "label": "孔板 v001"
+    },
+    {
+     "x": 789,
+     "y": 566,
+     "w": 126,
+     "h": 25,
+     "label": "Save As"
+    }
+   ],
+   "clicks": [],
+   "file": "05-03-24-save-dialog.png",
+   "width": 1060,
+   "height": 600,
+   "sha256": "339315f99e83430b91391d35d88b0702c0163833da345a9fe42eca3880ee7f70"
+  },
+  {
+   "seq": 25,
+   "step": "05-03",
+   "slug": "saved",
+   "recordedAt": "2026-10-22T07:32:42.384Z",
+   "action": "按 Save As，讀回孔板檔案大小與雜湊",
+   "observed": "已存 u05_hole_plate_v001.blend，151951 bytes，SHA-256 10bfffd651d1583d8704164288aa0757fa617f67a30e21176d7fc892aef3e692。",
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "05-03-25-saved.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "fbca8f4f712b57feada96bff953b81de1146f9678c656383e519fe0e3b83fb8f"
+  },
+  {
+   "seq": 26,
+   "step": "05-03",
+   "slug": "mesh-measured",
+   "recordedAt": "2026-10-22T07:32:43.584Z",
+   "action": "從差集後的 Plate 網格量六孔內壁、射線確認通孔與凹點底面；不以切割體尺寸代替結果",
+   "observed": "最終孔寬 X／Y mm：[[10.1000061, 10.099999], [10.2000008, 10.1999989], [10.2999954, 10.2999992], [10.3999996, 10.3999987], [10.5000019, 10.4999995], [10.5999985, 10.5999999]]；六通孔 6；凹點 [1, 2, 3, 4, 5, 6]；Non Manifold 0。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 338,
+     "y": 394,
+     "w": 550,
+     "h": 160,
+     "label": "已量測的六孔板"
+    }
+   ],
+   "clicks": [],
+   "file": "05-03-26-mesh-measured.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "fbca8f4f712b57feada96bff953b81de1146f9678c656383e519fe0e3b83fb8f",
+   "note": "孔寬 10.1～10.6 mm 是 0.1～0.6 mm 總間隙的設計試驗點；尚未列印或試配，合格間隙仍為空。"
+  },
+  {
+   "seq": 27,
+   "step": "05-03",
+   "slug": "open-dialog",
+   "recordedAt": "2026-10-22T07:32:47.684Z",
+   "action": "File > Open…，選同一份孔板 v001 核對重開後幾何",
+   "observed": "資料夾 D:\\others\\study\\Blender-Learning\\learning\\evidence\\05\\2026-10-22-lesson05-holes-demo-v002\\demo-files\\；檔名 u05_hole_plate_v001.blend。",
+   "window": "FILE_BROWSER",
+   "highlights": [
+    {
+     "x": 248,
+     "y": 566,
+     "w": 780,
+     "h": 25,
+     "label": "同一孔板"
+    },
+    {
+     "x": 789,
+     "y": 566,
+     "w": 126,
+     "h": 25,
+     "label": "Open"
+    }
+   ],
+   "clicks": [],
+   "file": "05-03-27-open-dialog.png",
+   "width": 1060,
+   "height": 600,
+   "sha256": "4219c8d2e151e80af25cdf338ee8fcf3f0e35e54cced1943d9ad24c90216c9a6"
+  },
+  {
+   "seq": 28,
+   "step": "05-03",
+   "slug": "reopened-verified",
+   "recordedAt": "2026-10-22T07:32:51.584Z",
+   "action": "按 Open，再由最終網格重新量孔與凹點，核對雜湊並保存 verification.json",
+   "observed": "重開孔板；實際孔寬 [[10.1000061, 10.099999], [10.2000008, 10.1999989], [10.2999954, 10.2999992], [10.3999996, 10.3999987], [10.5000019, 10.4999995], [10.5999985, 10.5999999]]；通孔 6；各孔凹點 [1, 2, 3, 4, 5, 6]；檔案 SHA-256 一致。未列印、未試配。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 338,
+     "y": 394,
+     "w": 550,
+     "h": 160,
+     "label": "重開驗證的試驗孔板"
+    }
+   ],
+   "clicks": [],
+   "file": "05-03-28-reopened-verified.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "c095e81a5bd43caf63f7784f6a31dca1223ccad7892a7c82113009cd59d64479",
+   "note": "六個總間隙都是試驗點，沒有任何一個被標為已驗證的合格間隙。"
+  }
+ ]
+}

@@ -1,0 +1,273 @@
+{
+  "schema_version": 1,
+  "passed": true,
+  "kind": "independent_snapfit_stl_audit",
+  "audited_at": "2026-10-25T09:11:37.137411+00:00",
+  "run_dir": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\07\\2026-10-25-lesson07-snap-export-demo-v001",
+  "audit_script_sha256": "e41a6ecc3792fa4792c7e29d7b40f865d9f5076725c29b5bd4b953539bdbdbe5",
+  "verification_sha256": "0285f0098385f00c201f230f5e87946e2c7539c14031610225274001d19d40c8",
+  "method": "Strict low-level binary reader plus independent directed-edge topology/volume, source/STL/reimport oriented coordinate triangles and stored-normal decoding; no snapfit_stl_checks or semantic checker called.",
+  "source_scene_sha256": "360417f208287a94ca13501f4365b70b3396ca6aba579231e0f8d2a442ecf47d",
+  "source_orientation_record_sha256": "b515d433f7c6b8e65e3247337f135a07bf56b0f6f9817efbab446fbf5c708986",
+  "input_sha256": {
+    "source_body_mesh.json": "7f13c3f2fbd7ba1cfe166f7b14188722b01bc190da202be180399c1a0d95861a",
+    "reimport_body_mesh.json": "762a03437bc750c797eed3af7e3618f8cd79808c21f21fa441c65d6e707eed03",
+    "u07_snap_body_v001.stl": "6ee4b13556db93196189604a96a0dbf3074fcaf6dd3423b3fc86cc2421910ff8",
+    "source_lid_mesh.json": "0879031f9d2c243d061b7acf728e2e185c91058cf2659185aa48c2a8bb684cee",
+    "reimport_lid_mesh.json": "70ceb03feae2328376cbc235b2003d596ae52681f50936613f10a78658a37e7a",
+    "u07_snap_lid_v001.stl": "c80ea7d584a2f71cc0b2619ff903bdff57d8c97441d61111a0e8c7b839f55c21"
+  },
+  "parts": {
+    "body": {
+      "stl_sha256": "6ee4b13556db93196189604a96a0dbf3074fcaf6dd3423b3fc86cc2421910ff8",
+      "byte_size": 5884,
+      "triangle_count": 116,
+      "stl_vs_source": {
+        "passed": true,
+        "actual_topology": {
+          "vertices": 60,
+          "triangles": 116,
+          "edges": 174,
+          "non_manifold_edges": 0,
+          "connected_shells": 1,
+          "euler_characteristic": 2,
+          "genus": 0,
+          "volume_mm3": 15888.784523791977,
+          "bounds_mm": {
+            "min": [
+              -55.0,
+              -24.5,
+              0.0
+            ],
+            "max": [
+              -25.0,
+              20.0,
+              60.0
+            ]
+          }
+        },
+        "source_topology": {
+          "vertices": 60,
+          "triangles": 116,
+          "edges": 174,
+          "non_manifold_edges": 0,
+          "connected_shells": 1,
+          "euler_characteristic": 2,
+          "genus": 0,
+          "volume_mm3": 15888.784404193018,
+          "bounds_mm": {
+            "min": [
+              -55.0,
+              -24.5,
+              -6.556708171956416e-07
+            ],
+            "max": [
+              -24.999998092651367,
+              20.0,
+              60.0
+            ]
+          }
+        },
+        "exact_oriented_triangles_match_within_numeric_epsilon": true,
+        "max_nearest_source_vertex_distance_mm": 3.814697265625e-06,
+        "fallback_surface_samples": null,
+        "method": "Independent oriented triangle correspondence for native output, with bidirectional surface samples for retessellation"
+      },
+      "reimport_vs_stl": {
+        "passed": true,
+        "actual_topology": {
+          "vertices": 60,
+          "triangles": 116,
+          "edges": 174,
+          "non_manifold_edges": 0,
+          "connected_shells": 1,
+          "euler_characteristic": 2,
+          "genus": 0,
+          "volume_mm3": 15888.784523791977,
+          "bounds_mm": {
+            "min": [
+              -55.0,
+              -24.5,
+              0.0
+            ],
+            "max": [
+              -25.0,
+              20.0,
+              60.0
+            ]
+          }
+        },
+        "source_topology": {
+          "vertices": 60,
+          "triangles": 116,
+          "edges": 174,
+          "non_manifold_edges": 0,
+          "connected_shells": 1,
+          "euler_characteristic": 2,
+          "genus": 0,
+          "volume_mm3": 15888.784523791977,
+          "bounds_mm": {
+            "min": [
+              -55.0,
+              -24.5,
+              0.0
+            ],
+            "max": [
+              -25.0,
+              20.0,
+              60.0
+            ]
+          }
+        },
+        "exact_oriented_triangles_match_within_numeric_epsilon": true,
+        "max_nearest_source_vertex_distance_mm": 0.0,
+        "fallback_surface_samples": null,
+        "method": "Independent oriented triangle correspondence for native output, with bidirectional surface samples for retessellation"
+      },
+      "stored_normal_diagnostics": {
+        "all_normal_fields_finite": true,
+        "zero_length_normal_count": 0,
+        "normal_length_min_max": [
+          0.999999977439076,
+          1.0000000897508294
+        ],
+        "max_unit_length_deviation": 8.975082943507573e-08,
+        "max_stored_normal_vs_vertex_winding_angle_deg": 2.353689345697118e-06,
+        "opposite_hemisphere_count": 0,
+        "scope": "Stored-normal diagnostics only; small float32 miter angular differences are preserved, not converted to a geometric tolerance or print qualification. Vertex winding controls the independent closed-shell test."
+      }
+    },
+    "lid": {
+      "stl_sha256": "c80ea7d584a2f71cc0b2619ff903bdff57d8c97441d61111a0e8c7b839f55c21",
+      "byte_size": 2484,
+      "triangle_count": 48,
+      "stl_vs_source": {
+        "passed": true,
+        "actual_topology": {
+          "vertices": 26,
+          "triangles": 48,
+          "edges": 72,
+          "non_manifold_edges": 0,
+          "connected_shells": 1,
+          "euler_characteristic": 2,
+          "genus": 0,
+          "volume_mm3": 5602.19990320802,
+          "bounds_mm": {
+            "min": [
+              10.0,
+              -26.0,
+              -1.0728836059570312e-06
+            ],
+            "max": [
+              70.0,
+              20.0,
+              7.000003814697266
+            ]
+          }
+        },
+        "source_topology": {
+          "vertices": 26,
+          "triangles": 48,
+          "edges": 72,
+          "non_manifold_edges": 0,
+          "connected_shells": 1,
+          "euler_characteristic": 2,
+          "genus": 0,
+          "volume_mm3": 5602.19990320802,
+          "bounds_mm": {
+            "min": [
+              10.0,
+              -26.0,
+              -1.05704953057284e-06
+            ],
+            "max": [
+              70.0,
+              20.0,
+              7.000003814697266
+            ]
+          }
+        },
+        "exact_oriented_triangles_match_within_numeric_epsilon": true,
+        "max_nearest_source_vertex_distance_mm": 1.5834075384191237e-08,
+        "fallback_surface_samples": null,
+        "method": "Independent oriented triangle correspondence for native output, with bidirectional surface samples for retessellation"
+      },
+      "reimport_vs_stl": {
+        "passed": true,
+        "actual_topology": {
+          "vertices": 26,
+          "triangles": 48,
+          "edges": 72,
+          "non_manifold_edges": 0,
+          "connected_shells": 1,
+          "euler_characteristic": 2,
+          "genus": 0,
+          "volume_mm3": 5602.19990320802,
+          "bounds_mm": {
+            "min": [
+              10.0,
+              -26.0,
+              -1.0728836059570312e-06
+            ],
+            "max": [
+              70.0,
+              20.0,
+              7.000003814697266
+            ]
+          }
+        },
+        "source_topology": {
+          "vertices": 26,
+          "triangles": 48,
+          "edges": 72,
+          "non_manifold_edges": 0,
+          "connected_shells": 1,
+          "euler_characteristic": 2,
+          "genus": 0,
+          "volume_mm3": 5602.19990320802,
+          "bounds_mm": {
+            "min": [
+              10.0,
+              -26.0,
+              -1.0728836059570312e-06
+            ],
+            "max": [
+              70.0,
+              20.0,
+              7.000003814697266
+            ]
+          }
+        },
+        "exact_oriented_triangles_match_within_numeric_epsilon": true,
+        "max_nearest_source_vertex_distance_mm": 0.0,
+        "fallback_surface_samples": null,
+        "method": "Independent oriented triangle correspondence for native output, with bidirectional surface samples for retessellation"
+      },
+      "stored_normal_diagnostics": {
+        "all_normal_fields_finite": true,
+        "zero_length_normal_count": 0,
+        "normal_length_min_max": [
+          1.0,
+          1.0000000000000124
+        ],
+        "max_unit_length_deviation": 1.2434497875801753e-14,
+        "max_stored_normal_vs_vertex_winding_angle_deg": 3.5825767932004163e-13,
+        "opposite_hemisphere_count": 0,
+        "scope": "Stored-normal diagnostics only; small float32 miter angular differences are preserved, not converted to a geometric tolerance or print qualification. Vertex winding controls the independent closed-shell test."
+      }
+    }
+  },
+  "numeric_position_epsilon_mm": 0.0001,
+  "epsilon_role": "Floating point reconstruction only; not manufacturing, bridge, support or printed-fit acceptance",
+  "support_required": null,
+  "support_generation_performed": false,
+  "material_grade": null,
+  "epsilon_allow": null,
+  "forces": null,
+  "printed": false,
+  "fit_tested": false,
+  "physical_measurements": null,
+  "qualified_strength_N": null,
+  "qualified_clearance_mm": null,
+  "x_projection_gap_mm": 35.0
+}

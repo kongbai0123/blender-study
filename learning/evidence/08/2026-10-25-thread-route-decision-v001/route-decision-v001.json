@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "2026-10-25-thread-route-decision-v001",
+  "version": "v001",
+  "recordedAt": "2026-10-25T20:51:06.527271+08:00",
+  "lesson": "08",
+  "step": "08-01",
+  "kind": "learning_route_preference",
+  "performedBy": "tutor",
+  "userReply": {
+    "question": "後續螺紋建模想先走哪條路線？這不影響我現在完成 08-01 的原盒實測與參數紀錄；未選前會標為待定。",
+    "verbatim": "1.2.憶起",
+    "source": "本聊天的學員問答回覆"
+  },
+  "interpretation": {
+    "by": "tutor",
+    "text": "理解為「1、2 一起」：自訂列印螺紋，以及金屬螺絲／熱熔螺母，兩條路線都學。",
+    "selected": "both",
+    "routeIds": [
+      "custom_printed_thread",
+      "metal_screw_or_insert"
+    ],
+    "explicit_normalized_reconfirmation": false
+  },
+  "scope": "記錄後續學習路線；不代表已執行08-02或確認學員完成。",
+  "pending": {
+    "standard": null,
+    "dimensions": null,
+    "clearances": null,
+    "material": null,
+    "hardwarePart": null,
+    "allowableStrain": null,
+    "printOrientation": null,
+    "support": null,
+    "physicalPrintResult": null,
+    "physicalFitResult": null,
+    "qualifiedStrength": null,
+    "qualifiedFit": null
+  },
+  "historicalParameterRecord": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/parameter-record-v001.json",
+  "historicalRecordPolicy": "原08-01計畫、參數v001及操作紀錄中的路線待定為選擇前狀態，凍結保留；本筆路線選擇以新版本獨立記錄。",
+  "newModelingPerformed": false,
+  "learnerCompletionConfirmed": false
+}

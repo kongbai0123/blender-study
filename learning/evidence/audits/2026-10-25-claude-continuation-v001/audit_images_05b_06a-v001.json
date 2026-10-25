@@ -1,0 +1,2447 @@
+{
+  "schemaVersion": 1,
+  "auditId": "2026-10-25-claude-continuation-v001-images-05b-06a",
+  "reviewer": "Codex subagent /root/audit_images_06_08",
+  "checkedAt": "2026-10-25T15:28:06.458001+00:00",
+  "scope": {
+    "steps": [
+      "05-04",
+      "05-05",
+      "05-06",
+      "06-01"
+    ],
+    "catalogSha256AtAuditCompletion": "ab128fec13eeb4d1e64851f452892c4b9972ddd73bd08719f697b369d2d983fd",
+    "inventoryPath": "learning/evidence/audits/2026-10-25-claude-continuation-v001/image-inventory-v001.json",
+    "inventorySha256": "02cc0006ad9c3e8afa12d4aa2a9a2872cded749171aebc82786a450b6ca22c49",
+    "publishedOnly": true,
+    "includesProbe": false,
+    "pathCount": 68,
+    "uniquePixelHashesViewed": 66,
+    "duplicatePaths": 2,
+    "byStep": {
+      "05-04": {
+        "paths": 20,
+        "uniqueHashes": 19,
+        "includesPublishedSupplementaryDimensionsImages": 2
+      },
+      "05-05": {
+        "paths": 16,
+        "uniqueHashes": 16
+      },
+      "05-06": {
+        "paths": 12,
+        "uniqueHashes": 11
+      },
+      "06-01": {
+        "paths": 20,
+        "uniqueHashes": 20
+      }
+    }
+  },
+  "method": {
+    "actualInspection": "66張不同SHA均用tools.view_image逐張開原PNG；每批2–4個別圖，不拼貼、不改像素。2個完全同SHA路徑依已目視圖逐事件對照。",
+    "comparison": "核對catalog event action/observed/note與figures；逐圖分開可見內容與需raw/實檔佐證。05-04兩張補充圖只有figure引用，仍實際查看。",
+    "hashCheck": "68檔SHA-256獨立重算，全部與inventory一致。",
+    "notPerformed": [
+      "未啟動Blender",
+      "未獨立重算STL／網格",
+      "未判強度／列印／配合合格",
+      "未修改catalog/progress或舊evidence"
+    ]
+  },
+  "result": {
+    "visibleContradictions": 0,
+    "criticalFindings": 0,
+    "highFindings": 0,
+    "mediumFindings": 0,
+    "lowFindings": 2,
+    "informationalFindingGroups": 4,
+    "qualification": "畫面可觀察部分與紀錄相容，但06-01 #15無法展示指定的長柱；有兩項低程度教學呈現問題。圖外的精確數值不算截圖已證，須另行raw及獨立重算。"
+  },
+  "findings": [
+    {
+      "id": "GENERIC-ACTION-05-04-15",
+      "severity": "low",
+      "step": "05-04",
+      "seq": 15,
+      "issue": "插銷重匯入動作文字仍帶『孔板改斜視辨認六孔及凹點』的泛用尾句。",
+      "recommendation": "插銷這筆只敘插銷；孔板斜視留給#17。原圖不改。"
+    },
+    {
+      "id": "OCCLUDED-TENON-06-01-15",
+      "severity": "low",
+      "step": "06-01",
+      "seq": 15,
+      "issue": "上抬Lid與對應孔可見，但蓋板仍遮住整段定位柱，無法完成action『查看新定位柱』。Claude提到的遮擋可重現於原圖。",
+      "recommendation": "明示本圖只示暫抬及孔，柱請對照#3建構／#6合併後；若要同時看孔柱，另補新版本低角度或偏移的真實實拍，保留此歷史原圖。"
+    },
+    {
+      "id": "DIMENSIONS-SUPPLEMENT-05-04",
+      "severity": "informational",
+      "step": "05-04",
+      "seqs": [
+        15,
+        17
+      ],
+      "issue": "兩張主流程重匯入圖沒有開Item Dimensions，現有note已明示；已發布補充圖各直接顯示10×10×8與96×26×4 mm。",
+      "assessment": "現有補充及說明可追溯，不是偽稱圖上數字。",
+      "supplementPaths": [
+        "learning/evidence/05/2026-10-22-lesson05-export-view-v001/05-04-03-pin-dimensions.png",
+        "learning/evidence/05/2026-10-22-lesson05-export-view-v001/05-04-05-hole_plate-dimensions.png"
+      ]
+    },
+    {
+      "id": "LOCAL-WORLD-05-05",
+      "severity": "informational",
+      "step": "05-05",
+      "seqs": [
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "issue": "Edit Mode Local Median−1/−5需加Lid LocationZ16才是world15/11；現有note已說明，圖片吻合。",
+      "assessment": "不可將local直接當world，也不可說圖直接顯示face XY bbox。"
+    },
+    {
+      "id": "SEARCH-PENDING-06-01-10",
+      "severity": "informational",
+      "step": "06-01",
+      "seq": 10,
+      "issue": "Object搜尋清單仍展開，observed正確寫尚未指定；action的『選』是操作目標，完成指定證據在#11。",
+      "assessment": "不要將#10圖單獨稱已指定HoleTool。"
+    },
+    {
+      "id": "DUPLICATE-PIXELS-05B",
+      "severity": "informational",
+      "issue": "05-04 #18與#17同SHA；05-06 #12與#11同SHA。",
+      "assessment": "68路徑只算66個不同像素；verification寫檔及精確值來自raw，不是新增畫面。"
+    }
+  ],
+  "images": [
+    {
+      "step": "05-04",
+      "path": "learning/evidence/05/2026-10-22-lesson05-export-demo-v003/05-04-01-pin-open-dialog.png",
+      "references": [
+        "05-04.operationRun.events[0].figure.path"
+      ],
+      "sha256": "3a8a9e26c594ce31328d857191ad9a02f4598b44f72eadb42fdb54376862273b",
+      "actualSha256": "3a8a9e26c594ce31328d857191ad9a02f4598b44f72eadb42fdb54376862273b",
+      "hashMatches": true,
+      "eventComparisons": [
+        {
+          "seq": 1,
+          "action": "File > Open…，開啟來源 u05_fit_coupon_v001.blend 的同雜湊副本",
+          "observed": "資料夾 D:\\others\\study\\Blender-Learning\\learning\\evidence\\05\\2026-10-22-lesson05-export-demo-v003\\demo-files\\sources\\；檔名 u05_fit_coupon_v001.blend。",
+          "note": null
+        }
+      ],
+      "figureComparisons": [
+        {
+          "alt": "File > Open…，開啟來源 u05_fit_coupon_v001.blend 的同雜湊副本",
+          "caption": "2026-10-22 助教示範實拍：獨立 Blender 5.2.1 LTS（English (US)、出廠設定），不是你的畫面；橘框為網頁標示，原圖未修改。"
+        }
+      ],
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Open列出fit_coupon與hole_plate兩blend，底部fit_coupon檔名，sources路徑尾段。",
+      "requiresRawOrOtherEvidence": "完整路徑及同hash須實檔。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "05-04",
+      "path": "learning/evidence/05/2026-10-22-lesson05-export-demo-v003/05-04-02-pin-source-checked.png",
+      "references": [
+        "05-04.operationRun.events[1].figure.path"
+      ],
+      "sha256": "266df56ccb79bb1820838a6ce259a8f71fecd37fed1759cf8217f7dbac5e4587",
+      "actualSha256": "266df56ccb79bb1820838a6ce259a8f71fecd37fed1759cf8217f7dbac5e4587",
+      "hashMatches": true,
+      "eventComparisons": [
+        {
+          "seq": 2,
+          "action": "只選 FitPin，核對原來源與副本雜湊、尺寸及網格",
+          "observed": "FitPin；Dimensions [10.000000474974513, 10.000000474974513, 8.00000037997961] mm；Scale [1.0, 1.0, 1.0]；Non Manifold 0；來源及副本 SHA-256 相同。",
+          "note": null
+        }
+      ],
+      "figureComparisons": [
+        {
+          "alt": "只選 FitPin，核對原來源與副本雜湊、尺寸及網格",
+          "caption": "2026-10-22 助教示範實拍：獨立 Blender 5.2.1 LTS（English (US)、出廠設定），不是你的畫面；橘框為網頁標示，原圖未修改。"
+        }
+      ],
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "FitPin單選，Item10/10/8、Scale1、Location0/R0；Scene Metric/mm/0.001。",
+      "requiresRawOrOtherEvidence": "浮點精值、NM0、hash需raw；Camera/Light可見未選。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "05-04",
+      "path": "learning/evidence/05/2026-10-22-lesson05-export-demo-v003/05-04-03-pin-export-menu.png",
+      "references": [
+        "05-04.operationRun.events[2].figure.path"
+      ],
+      "sha256": "449f2cc07be4845ce96756aa76ac98265d5b7846e4ae30f7969a1fb9491bf2f1",
+      "actualSha256": "449f2cc07be4845ce96756aa76ac98265d5b7846e4ae30f7969a1fb9491bf2f1",
+      "hashMatches": true,
+      "eventComparisons": [
+        {
+          "seq": 3,
+          "action": "File > Export，指到 STL (.stl)",
+          "observed": "已選取：FitPin；作用中物件：FitPin",
+          "note": null
+        }
+      ],
+      "figureComparisons": [
+        {
+          "alt": "File > Export，指到 STL (.stl)",
+          "caption": "2026-10-22 助教示範實拍：獨立 Blender 5.2.1 LTS（English (US)、出廠設定），不是你的畫面；橘框為網頁標示，原圖未修改。"
+        }
+      ],
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "File > Export > STL反白，FitPin作用且單選。",
+      "requiresRawOrOtherEvidence": "尚未匯出。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "05-04",
+      "path": "learning/evidence/05/2026-10-22-lesson05-export-demo-v003/05-04-04-pin-export-before.png",
+      "references": [
+        "05-04.operationRun.events[3].figure.path"
+      ],
+      "sha256": "b973ec94c4f70b53afb63f4eac48eb25f006b8ee5cfab2471ea85ffe45e4020e",
+      "actualSha256": "b973ec94c4f70b53afb63f4eac48eb25f006b8ee5cfab2471ea85ffe45e4020e",
+      "hashMatches": true,
+      "eventComparisons": [
+        {
+          "seq": 4,
+          "action": "核對 STL 匯出路徑、檔名與目前選項",
+          "observed": "目標 D:\\others\\study\\Blender-Learning\\learning\\evidence\\05\\2026-10-22-lesson05-export-demo-v003\\demo-files\\exports\\ / u05_fit_coupon_v001.stl；選項 {'only_selected': False, 'global_scale': 1.0, 'use_scene_unit': False, 'apply_modifiers': True, 'forward_axis': 'Y', 'up_axis': 'Z', 'ascii_format': False, 'use_batch': False, 'evaluation_mode': 'DAG_EVAL_RENDER'}。",
+          "note": null
+        }
+      ],
+      "figureComparisons": [
+        {
+          "alt": "核對 STL 匯出路徑、檔名與目前選項",
+          "caption": "2026-10-22 助教示範實拍：獨立 Blender 5.2.1 LTS（English (US)、出廠設定），不是你的畫面；橘框為網頁標示，原圖未修改。"
+        }
+      ],
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "STL目標fit_coupon，Selection Only/ASCII/Batch/Scene Unit關，Scale1，Y/Z，Apply Modifiers開/Render。",
+      "requiresRawOrOtherEvidence": "完整目標／安全檢查需live記錄。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "05-04",
+      "path": "learning/evidence/05/2026-10-22-lesson05-export-demo-v003/05-04-05-pin-export-options.png",
+      "references": [
+        "05-04.operationRun.events[4].figure.path"
+      ],
+      "sha256": "316c22ebed0ae2b4865c65f15d66dce8570e445e9530efaa3af09ac23f18d5c9",
+      "actualSha256": "316c22ebed0ae2b4865c65f15d66dce8570e445e9530efaa3af09ac23f18d5c9",
+      "hashMatches": true,
+      "eventComparisons": [
+        {
+          "seq": 5,
+          "action": "核對並勾選 Selection Only，其餘保持 Scale 1、Scene Unit 不勾，再驗證安全目標",
+          "observed": "Selection Only 開；Scale 1；Scene Unit 關；Apply Modifiers 開；Y Forward / Z Up；Binary；只匯出 FitPin。",
+          "note": "這兩份場景的 Unit Scale 已是 0.001，匯出數字以毫米解讀。STL 本身沒有單位標記；這些設定由實際視窗讀回。"
+        }
+      ],
+      "figureComparisons": [
+        {
+          "alt": "核對並勾選 Selection Only，其餘保持 Scale 1、Scene Unit 不勾，再驗證安全目標",
+          "caption": "2026-10-22 助教示範實拍：獨立 Blender 5.2.1 LTS（English (US)、出廠設定），不是你的畫面；橘框為網頁標示，原圖未修改。"
+        }
+      ],
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Selection Only勾選，Scale1/Scene Unit關/YZ/ASCII關，fit_coupon檔名。",
+      "requiresRawOrOtherEvidence": "圖不證STL無單位或實檔值；需解析。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "05-04",
+      "path": "learning/evidence/05/2026-10-22-lesson05-export-demo-v003/05-04-06-pin-stl-checked.png",
+      "references": [
+        "05-04.operationRun.events[5].figure.path"
+      ],
+      "sha256": "ab6c2ae598a26036bb38974629197f93fe188a8a9a60609aa3b43bc9e7fd47e2",
+      "actualSha256": "ab6c2ae598a26036bb38974629197f93fe188a8a9a60609aa3b43bc9e7fd47e2",
+      "hashMatches": true,
+      "eventComparisons": [
+        {
+          "seq": 6,
+          "action": "按 Export STL，再直接解析磁碟 STL 的三角形、尺寸及拓樸，與來源網格比較",
+          "observed": "u05_fit_coupon_v001.stl：684 bytes、12 三角形、檔內外形 [10.0, 10.0, 8.0]（按 mm 解讀）；Non Manifold 0、單殼、genus 0；SHA-256 bc10342c54a94d87c15eccb050fb9b30a7ae00bf4079d4c7869ac53d199db784。",
+          "note": "這是數位檔案檢查；尚未匯入切片軟體、列印、實體量測或試配。"
+        }
+      ],
+      "figureComparisons": [
+        {
+          "alt": "按 Export STL，再直接解析磁碟 STL 的三角形、尺寸及拓樸，與來源網格比較",
+          "caption": "2026-10-22 助教示範實拍：獨立 Blender 5.2.1 LTS（English (US)、出廠設定），不是你的畫面；橘框為網頁標示，原圖未修改。"
+        }
+      ],
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "FitPin畫面及File exported successfully通知；Item10/10/8。",
+      "requiresRawOrOtherEvidence": "684 bytes/12tri/hash/NM0需檔案解析，圖仍來源場景。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "05-04",
+      "path": "learning/evidence/05/2026-10-22-lesson05-export-demo-v003/05-04-07-hole_plate-open-dialog.png",
+      "references": [
+        "05-04.operationRun.events[6].figure.path"
+      ],
+      "sha256": "8c73d1ad3532b083835c256a713e08586f40920d345b4f47363329b98c60b2cb",
+      "actualSha256": "8c73d1ad3532b083835c256a713e08586f40920d345b4f47363329b98c60b2cb",
+      "hashMatches": true,
+      "eventComparisons": [
+        {
+          "seq": 7,
+          "action": "File > Open…，開啟來源 u05_hole_plate_v001.blend 的同雜湊副本",
+          "observed": "資料夾 D:\\others\\study\\Blender-Learning\\learning\\evidence\\05\\2026-10-22-lesson05-export-demo-v003\\demo-files\\sources\\；檔名 u05_hole_plate_v001.blend。",
+          "note": null
+        }
+      ],
+      "figureComparisons": [
+        {
+          "alt": "File > Open…，開啟來源 u05_hole_plate_v001.blend 的同雜湊副本",
+          "caption": "2026-10-22 助教示範實拍：獨立 Blender 5.2.1 LTS（English (US)、出廠設定），不是你的畫面；橘框為網頁標示，原圖未修改。"
+        }
+      ],
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Open底部hole_plate檔名，sources尾段與兩個來源blend。",
+      "requiresRawOrOtherEvidence": "同hash需實檔。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "05-04",
+      "path": "learning/evidence/05/2026-10-22-lesson05-export-demo-v003/05-04-08-hole_plate-source-checked.png",
+      "references": [
+        "05-04.operationRun.events[7].figure.path"
+      ],
+      "sha256": "f914646b62bac8048144171719d106dd16e16357a82946a4dbee22fe3d5a2f15",
+      "actualSha256": "f914646b62bac8048144171719d106dd16e16357a82946a4dbee22fe3d5a2f15",
+      "hashMatches": true,
+      "eventComparisons": [
+        {
+          "seq": 8,
+          "action": "只選 Plate，核對原來源與副本雜湊、尺寸及網格",
+          "observed": "Plate；Dimensions [96.00000455975533, 26.000001234933734, 4.000000189989805] mm；Scale [1.0, 1.0, 1.0]；Non Manifold 0；來源及副本 SHA-256 相同。",
+          "note": null
+        }
+      ],
+      "figureComparisons": [
+        {
+          "alt": "只選 Plate，核對原來源與副本雜湊、尺寸及網格",
+          "caption": "2026-10-22 助教示範實拍：獨立 Blender 5.2.1 LTS（English (US)、出廠設定），不是你的畫面；橘框為網頁標示，原圖未修改。"
+        }
+      ],
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Plate頂視六方孔、Cutters隱藏；Item96/26/4、Scale1。",
+      "requiresRawOrOtherEvidence": "凹點在此視角不清楚，精值/NM0/hash需raw。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "05-04",
+      "path": "learning/evidence/05/2026-10-22-lesson05-export-demo-v003/05-04-09-hole_plate-export-menu.png",
+      "references": [
+        "05-04.operationRun.events[8].figure.path"
+      ],
+      "sha256": "ba2974caa1d85f469cdb2e1418e6e472b2ecbb576cf31b820613611db1a818df",
+      "actualSha256": "ba2974caa1d85f469cdb2e1418e6e472b2ecbb576cf31b820613611db1a818df",
+      "hashMatches": true,
+      "eventComparisons": [
+        {
+          "seq": 9,
+          "action": "File > Export，指到 STL (.stl)",
+          "observed": "已選取：Plate；作用中物件：Plate",
+          "note": null
+        }
+      ],
+      "figureComparisons": [
+        {
+          "alt": "File > Export，指到 STL (.stl)",
+          "caption": "2026-10-22 助教示範實拍：獨立 Blender 5.2.1 LTS（English (US)、出廠設定），不是你的畫面；橘框為網頁標示，原圖未修改。"
+        }
+      ],
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Plate單選，File Export STL反白。",
+      "requiresRawOrOtherEvidence": "不是輸出完成。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "05-04",
+      "path": "learning/evidence/05/2026-10-22-lesson05-export-demo-v003/05-04-10-hole_plate-export-before.png",
+      "references": [
+        "05-04.operationRun.events[9].figure.path"
+      ],
+      "sha256": "532217dd995cb982877d5459fe142657deec29a9a4d1f06376b5277907339ccd",
+      "actualSha256": "532217dd995cb982877d5459fe142657deec29a9a4d1f06376b5277907339ccd",
+      "hashMatches": true,
+      "eventComparisons": [
+        {
+          "seq": 10,
+          "action": "核對 STL 匯出路徑、檔名與目前選項",
+          "observed": "目標 D:\\others\\study\\Blender-Learning\\learning\\evidence\\05\\2026-10-22-lesson05-export-demo-v003\\demo-files\\exports\\ / u05_hole_plate_v001.stl；選項 {'only_selected': False, 'global_scale': 1.0, 'use_scene_unit': False, 'apply_modifiers': True, 'forward_axis': 'Y', 'up_axis': 'Z', 'ascii_format': False, 'use_batch': False, 'evaluation_mode': 'DAG_EVAL_RENDER'}。",
+          "note": null
+        }
+      ],
+      "figureComparisons": [
+        {
+          "alt": "核對 STL 匯出路徑、檔名與目前選項",
+          "caption": "2026-10-22 助教示範實拍：獨立 Blender 5.2.1 LTS（English (US)、出廠設定），不是你的畫面；橘框為網頁標示，原圖未修改。"
+        }
+      ],
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "hole_plate STL目標，列表已有fit_coupon684B；Scale1/YZ、ASCII/SceneUnit/SelectionOnly關。",
+      "requiresRawOrOtherEvidence": "完整路徑及其他精值需live。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "05-04",
+      "path": "learning/evidence/05/2026-10-22-lesson05-export-demo-v003/05-04-11-hole_plate-export-options.png",
+      "references": [
+        "05-04.operationRun.events[10].figure.path"
+      ],
+      "sha256": "6d259aaad42e4b4fb7eba90e0bcc2966a186e7e9922eaf511a68d453c106fef7",
+      "actualSha256": "6d259aaad42e4b4fb7eba90e0bcc2966a186e7e9922eaf511a68d453c106fef7",
+      "hashMatches": true,
+      "eventComparisons": [
+        {
+          "seq": 11,
+          "action": "核對並勾選 Selection Only，其餘保持 Scale 1、Scene Unit 不勾，再驗證安全目標",
+          "observed": "Selection Only 開；Scale 1；Scene Unit 關；Apply Modifiers 開；Y Forward / Z Up；Binary；只匯出 Plate。",
+          "note": "這兩份場景的 Unit Scale 已是 0.001，匯出數字以毫米解讀。STL 本身沒有單位標記；這些設定由實際視窗讀回。"
+        }
+      ],
+      "figureComparisons": [
+        {
+          "alt": "核對並勾選 Selection Only，其餘保持 Scale 1、Scene Unit 不勾，再驗證安全目標",
+          "caption": "2026-10-22 助教示範實拍：獨立 Blender 5.2.1 LTS（English (US)、出廠設定），不是你的畫面；橘框為網頁標示，原圖未修改。"
+        }
+      ],
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "SelectionOnly開，其餘Scale1/YZ、SceneUnit關、Apply Modifiers開。",
+      "requiresRawOrOtherEvidence": "STL拓撲及單位需檔案。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "05-04",
+      "path": "learning/evidence/05/2026-10-22-lesson05-export-demo-v003/05-04-12-hole_plate-stl-checked.png",
+      "references": [
+        "05-04.operationRun.events[11].figure.path"
+      ],
+      "sha256": "0f02d0924db0fe28e4230b27478820b768bb49874f7a35ba4f4c8bb00c3b9583",
+      "actualSha256": "0f02d0924db0fe28e4230b27478820b768bb49874f7a35ba4f4c8bb00c3b9583",
+      "hashMatches": true,
+      "eventComparisons": [
+        {
+          "seq": 12,
+          "action": "按 Export STL，再直接解析磁碟 STL 的三角形、尺寸及拓樸，與來源網格比較",
+          "observed": "u05_hole_plate_v001.stl：142784 bytes、2854 三角形、檔內外形 [96.0, 26.0, 4.0]（按 mm 解讀）；Non Manifold 0、單殼、genus 6；SHA-256 8105d1ebdc04ed12a2b7f98cc3b728db74063c453961c33d165ac50e694c7c8b。",
+          "note": "這是數位檔案檢查；尚未匯入切片軟體、列印、實體量測或試配。"
+        }
+      ],
+      "figureComparisons": [
+        {
+          "alt": "按 Export STL，再直接解析磁碟 STL 的三角形、尺寸及拓樸，與來源網格比較",
+          "caption": "2026-10-22 助教示範實拍：獨立 Blender 5.2.1 LTS（English (US)、出廠設定），不是你的畫面；橘框為網頁標示，原圖未修改。"
+        }
+      ],
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Plate原場景頂視六孔，Item96/26/4，File exported successfully通知。",
+      "requiresRawOrOtherEvidence": "142784B/2854tri/genus6/hash需STL；21凹點此圖不可辨。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "05-04",
+      "path": "learning/evidence/05/2026-10-22-lesson05-export-demo-v003/05-04-13-empty-mm-scene.png",
+      "references": [
+        "05-04.operationRun.events[12].figure.path"
+      ],
+      "sha256": "df2a5c2a188dd9ee9da153082857debb20fb38264747d612dd577c367cbc4056",
+      "actualSha256": "df2a5c2a188dd9ee9da153082857debb20fb38264747d612dd577c367cbc4056",
+      "hashMatches": true,
+      "eventComparisons": [
+        {
+          "seq": 13,
+          "action": "File > New > General，清空獨立場景，設毫米單位以重新匯入 STL 核對",
+          "observed": "本次新場景物件 0；Unit Scale 0.001；Length MILLIMETERS。",
+          "note": null
+        }
+      ],
+      "figureComparisons": [
+        {
+          "alt": "File > New > General，清空獨立場景，設毫米單位以重新匯入 STL 核對",
+          "caption": "2026-10-22 助教示範實拍：獨立 Blender 5.2.1 LTS（English (US)、出廠設定），不是你的畫面；橘框為網頁標示，原圖未修改。"
+        }
+      ],
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "空Collection，Scene Metric/0.001/mm。",
+      "requiresRawOrOtherEvidence": "精確物件0以raw計數；畫面支持空場景。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "05-04",
+      "path": "learning/evidence/05/2026-10-22-lesson05-export-demo-v003/05-04-14-pin-import-dialog.png",
+      "references": [
+        "05-04.operationRun.events[13].figure.path"
+      ],
+      "sha256": "474dad1b2a8c4388e65630003d49ad765ae3fc79c751cd3a8fa23809b5539003",
+      "actualSha256": "474dad1b2a8c4388e65630003d49ad765ae3fc79c751cd3a8fa23809b5539003",
+      "hashMatches": true,
+      "eventComparisons": [
+        {
+          "seq": 14,
+          "action": "F3 搜尋 Import STL，選剛產出的實際 STL，核對匯入 Scale 與方向",
+          "observed": "從本次 exports 讀取 u05_fit_coupon_v001.stl；Scale 1、Scene Unit 關、Y Forward / Z Up。",
+          "note": null
+        }
+      ],
+      "figureComparisons": [
+        {
+          "alt": "F3 搜尋 Import STL，選剛產出的實際 STL，核對匯入 Scale 與方向",
+          "caption": "2026-10-22 助教示範實拍：獨立 Blender 5.2.1 LTS（English (US)、出廠設定），不是你的畫面；橘框為網頁標示，原圖未修改。"
+        }
+      ],
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Import fit_coupon STL、Scale1/SceneUnit關/YZ、ValidateMesh開。",
+      "requiresRawOrOtherEvidence": "輸入雜湊與完整路徑需檔案/live。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "05-04",
+      "path": "learning/evidence/05/2026-10-22-lesson05-export-demo-v003/05-04-15-pin-reimported.png",
+      "references": [
+        "05-04.operationRun.events[14].figure.path"
+      ],
+      "sha256": "500102cce1362e4b7d1245888a1f7c268fe9952b2e34aadb614d13e2dab53cd7",
+      "actualSha256": "500102cce1362e4b7d1245888a1f7c268fe9952b2e34aadb614d13e2dab53cd7",
+      "hashMatches": true,
+      "eventComparisons": [
+        {
+          "seq": 15,
+          "action": "實際匯入 STL 後 Frame Selected，讀 Dimensions 與網格；孔板改斜視辨認六孔及凹點",
+          "observed": "從 STL 重新匯入 u05_fit_coupon_v001；Dimensions [10.000000474974513, 10.000000474974513, 8.00000037997961] mm；Non Manifold 0；與原來源及 STL 解析讀值一致。",
+          "note": "發布核對：本張主流程原圖沒有展開 Dimensions，數字是 Blender 實際讀回；原圖不改寫。請與下方同一 STL 的補充 Dimensions 實拍交叉核對。"
+        }
+      ],
+      "figureComparisons": [
+        {
+          "alt": "實際匯入 STL 後 Frame Selected，讀 Dimensions 與網格；孔板改斜視辨認六孔及凹點",
+          "caption": "2026-10-22 助教示範實拍：獨立 Blender 5.2.1 LTS（English (US)、出廠設定），不是你的畫面；橘框為網頁標示，原圖未修改。"
+        }
+      ],
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "單一重新匯入fit_coupon立方體；Scene mm；未開Item Dimensions，符合note。",
+      "requiresRawOrOtherEvidence": "尺寸/NM0來自raw及下方補充圖；action含『孔板改斜視』泛用文字不是本張pin動作。",
+      "result": "compatible_with_presentation_issue",
+      "severity": "low",
+      "findingId": "GENERIC-ACTION-05-04-15"
+    },
+    {
+      "step": "05-04",
+      "path": "learning/evidence/05/2026-10-22-lesson05-export-demo-v003/05-04-16-hole_plate-import-dialog.png",
+      "references": [
+        "05-04.operationRun.events[15].figure.path"
+      ],
+      "sha256": "36df2ac2afed4c447e8054698b966677f622ce1662e22e803140be2e559797b1",
+      "actualSha256": "36df2ac2afed4c447e8054698b966677f622ce1662e22e803140be2e559797b1",
+      "hashMatches": true,
+      "eventComparisons": [
+        {
+          "seq": 16,
+          "action": "F3 搜尋 Import STL，選剛產出的實際 STL，核對匯入 Scale 與方向",
+          "observed": "從本次 exports 讀取 u05_hole_plate_v001.stl；Scale 1、Scene Unit 關、Y Forward / Z Up。",
+          "note": null
+        }
+      ],
+      "figureComparisons": [
+        {
+          "alt": "F3 搜尋 Import STL，選剛產出的實際 STL，核對匯入 Scale 與方向",
+          "caption": "2026-10-22 助教示範實拍：獨立 Blender 5.2.1 LTS（English (US)、出廠設定），不是你的畫面；橘框為網頁標示，原圖未修改。"
+        }
+      ],
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Import hole_plate STL、Scale1/SceneUnit關/YZ、列表兩STL。",
+      "requiresRawOrOtherEvidence": "匯入成功待後圖；來源精確hash需檔案。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "05-04",
+      "path": "learning/evidence/05/2026-10-22-lesson05-export-demo-v003/05-04-17-hole_plate-reimported.png",
+      "references": [
+        "05-04.operationRun.events[16].figure.path"
+      ],
+      "sha256": "6e0a57531b4341284eaae57cee320aa6698313f10de4e8df094359607c20a7fc",
+      "actualSha256": "6e0a57531b4341284eaae57cee320aa6698313f10de4e8df094359607c20a7fc",
+      "hashMatches": true,
+      "eventComparisons": [
+        {
+          "seq": 17,
+          "action": "實際匯入 STL 後 Frame Selected，讀 Dimensions 與網格；孔板改斜視辨認六孔及凹點",
+          "observed": "從 STL 重新匯入 u05_hole_plate_v001；Dimensions [96.00000455975533, 26.000001234933734, 4.000000189989805] mm；Non Manifold 0；與原來源及 STL 解析讀值一致。",
+          "note": "發布核對：本張主流程原圖沒有展開 Dimensions，數字是 Blender 實際讀回；原圖不改寫。請與下方同一 STL 的補充 Dimensions 實拍交叉核對。"
+        }
+      ],
+      "figureComparisons": [
+        {
+          "alt": "實際匯入 STL 後 Frame Selected，讀 Dimensions 與網格；孔板改斜視辨認六孔及凹點",
+          "caption": "2026-10-22 助教示範實拍：獨立 Blender 5.2.1 LTS（English (US)、出廠設定），不是你的畫面；橘框為網頁標示，原圖未修改。"
+        }
+      ],
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "重匯入hole_plate斜視六方孔及1～6凹點列可辨，fit_coupon隱藏；無Item Dimensions，符合note。",
+      "requiresRawOrOtherEvidence": "精確孔寬／凹深及外形/NM0需raw與補充圖。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "05-04",
+      "path": "learning/evidence/05/2026-10-22-lesson05-export-demo-v003/05-04-18-exports-verified.png",
+      "references": [
+        "05-04.operationRun.events[17].figure.path"
+      ],
+      "sha256": "6e0a57531b4341284eaae57cee320aa6698313f10de4e8df094359607c20a7fc",
+      "actualSha256": "6e0a57531b4341284eaae57cee320aa6698313f10de4e8df094359607c20a7fc",
+      "hashMatches": true,
+      "eventComparisons": [
+        {
+          "seq": 18,
+          "action": "保存兩份 STL 與來源版本關聯、完整讀值及 verification.json",
+          "observed": "插銷 STL 10 × 10 × 8、孔板 STL 96 × 26 × 4（數值按 mm）；兩檔讀回及重新匯入通過。原 .blend 與副本雜湊不變；實際列印、量測、試配與合格間隙全部未填。",
+          "note": "本次完成的是 05-04 的 STL 匯出與數位尺寸核對部分；沒有完成列印／試配，也不更新學員完成進度。0.1～0.6 mm 全部保留為試驗點。"
+        }
+      ],
+      "figureComparisons": [
+        {
+          "alt": "保存兩份 STL 與來源版本關聯、完整讀值及 verification.json",
+          "caption": "2026-10-22 助教示範實拍：獨立 Blender 5.2.1 LTS（English (US)、出廠設定），不是你的畫面；橘框為網頁標示，原圖未修改。"
+        }
+      ],
+      "inspection": {
+        "method": "sha256_duplicate_already_viewed",
+        "actuallyOpenedThisPath": false,
+        "duplicateOf": "learning/evidence/05/2026-10-22-lesson05-export-demo-v003/05-04-17-hole_plate-reimported.png"
+      },
+      "observations": "與05-04 #17 SHA相同，沿用已目視斜視孔板。",
+      "requiresRawOrOtherEvidence": "版本／verification寫入不由圖證；重複不重開。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "05-04",
+      "path": "learning/evidence/05/2026-10-22-lesson05-export-view-v001/05-04-03-pin-dimensions.png",
+      "references": [
+        "05-04.figures[0].path"
+      ],
+      "sha256": "2b88890684129babf1720f083d62ad14c91e344d85441c89d7760b101f73aa65",
+      "actualSha256": "2b88890684129babf1720f083d62ad14c91e344d85441c89d7760b101f73aa65",
+      "hashMatches": true,
+      "eventComparisons": [],
+      "figureComparisons": [
+        {
+          "alt": "05-04 補充實拍：插銷 STL 重新匯入：Dimensions 10 × 10 × 8 mm",
+          "caption": "2026-10-22 獨立 Blender 實拍：插銷 STL 重新匯入：Dimensions 10 × 10 × 8 mm；讀取同一 v003 匯出 STL 的同雜湊副本，Scale 1，Non Manifold 0。STL 座標按毫米解讀，尚未列印或試配；原圖未修改。"
+        }
+      ],
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "補充圖匯入fit_coupon，Item10/10/8、Scale1、R0/Location0，補主流程沒開Dimensions。",
+      "requiresRawOrOtherEvidence": "同檔hash/NM0需raw；是補充run非原主流程幀。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "05-04",
+      "path": "learning/evidence/05/2026-10-22-lesson05-export-view-v001/05-04-05-hole_plate-dimensions.png",
+      "references": [
+        "05-04.figures[1].path"
+      ],
+      "sha256": "ce297dee772573e67f384219b48535ed532abfe925fabba959b292eeb920e49e",
+      "actualSha256": "ce297dee772573e67f384219b48535ed532abfe925fabba959b292eeb920e49e",
+      "hashMatches": true,
+      "eventComparisons": [],
+      "figureComparisons": [
+        {
+          "alt": "05-04 補充實拍：孔板 STL 重新匯入：Dimensions 96 × 26 × 4 mm",
+          "caption": "2026-10-22 獨立 Blender 實拍：孔板 STL 重新匯入：Dimensions 96 × 26 × 4 mm；讀取同一 v003 匯出 STL 的同雜湊副本，Scale 1，Non Manifold 0。STL 座標按毫米解讀，尚未列印或試配；原圖未修改。"
+        }
+      ],
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "補充圖孔板六孔和凹點列，Item96/26/4、Scale1/R0/Location0，補足主流程Dimensions。",
+      "requiresRawOrOtherEvidence": "凹深／每孔尺寸與同hash需raw。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "05-05",
+      "path": "learning/evidence/05/2026-10-22-lesson05-lid-demo-v001/05-05-01-source-open-dialog.png",
+      "references": [
+        "05-05.operationRun.events[0].figure.path"
+      ],
+      "sha256": "6412d82176b09f0f2b9b64c1fd32e01f2630d220af8c338bb0ae968974122164",
+      "actualSha256": "6412d82176b09f0f2b9b64c1fd32e01f2630d220af8c338bb0ae968974122164",
+      "hashMatches": true,
+      "eventComparisons": [
+        {
+          "seq": 1,
+          "action": "File > Open…，開啟既有盒體 v001 的同雜湊副本",
+          "observed": "資料夾 D:\\others\\study\\Blender-Learning\\learning\\evidence\\05\\2026-10-22-lesson05-lid-demo-v001\\demo-files\\sources\\；檔名 u04_box_v001.blend。",
+          "note": null
+        }
+      ],
+      "figureComparisons": [
+        {
+          "alt": "File > Open…，開啟既有盒體 v001 的同雜湊副本",
+          "caption": "2026-10-22 助教示範實拍：獨立 Blender 5.2.1 LTS（English (US)、出廠設定），不是你的畫面；橘框為網頁標示，原圖未修改。"
+        }
+      ],
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Open目標u04_box_v001.blend、96KiB、sources尾段。",
+      "requiresRawOrOtherEvidence": "同hash來源需實檔。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "05-05",
+      "path": "learning/evidence/05/2026-10-22-lesson05-lid-demo-v001/05-05-02-source-body-checked.png",
+      "references": [
+        "05-05.operationRun.events[1].figure.path"
+      ],
+      "sha256": "b04ade7f0a4f5ec5056fb76406b887b04e6f1e9527198d8281ffeb30e1d0e49d",
+      "actualSha256": "b04ade7f0a4f5ec5056fb76406b887b04e6f1e9527198d8281ffeb30e1d0e49d",
+      "hashMatches": true,
+      "eventComparisons": [
+        {
+          "seq": 2,
+          "action": "將工作副本的 Cube 命名 Body，從實際網格重驗原盒外形、內腔、底厚",
+          "observed": "Body 實際外形 [60.0, 40.0, 30.0] mm、內腔 [56.0, 36.0, 28.0] mm、底厚 2 mm；體積 15552 mm³；Non Manifold 0。",
+          "note": "2 mm 是沿用既有盒體的示範壁厚，沒有把它或 0.4 mm 噴嘴當成已驗證製造條件。"
+        }
+      ],
+      "figureComparisons": [
+        {
+          "alt": "將工作副本的 Cube 命名 Body，從實際網格重驗原盒外形、內腔、底厚",
+          "caption": "2026-10-22 助教示範實拍：獨立 Blender 5.2.1 LTS（English (US)、出廠設定），不是你的畫面；橘框為網頁標示，原圖未修改。"
+        }
+      ],
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Body原空心盒、Item60/40/30、R0/Scale1/Location0，新名Body。",
+      "requiresRawOrOtherEvidence": "內腔56/36/28、底厚2、vol15552/NM0需raw。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "05-05",
+      "path": "learning/evidence/05/2026-10-22-lesson05-lid-demo-v001/05-05-03-plate.png",
+      "references": [
+        "05-05.operationRun.events[2].figure.path"
+      ],
+      "sha256": "dd45e229322354b15550532c8419a7f227771dadf3648d0ab7cd0eb9977bbfe4",
+      "actualSha256": "dd45e229322354b15550532c8419a7f227771dadf3648d0ab7cd0eb9977bbfe4",
+      "hashMatches": true,
+      "eventComparisons": [
+        {
+          "seq": 3,
+          "action": "隱藏 Body，Add > Mesh > Cube；Dimensions 設 60 × 40 × 2 mm，G Z 16mm，Apply Scale，命名 Lid",
+          "observed": "Lid Dimensions (60 mm, 40 mm, 2 mm)、Location (0 mm, 0 mm, 16 mm)、Scale (1, 1, 1)；板底 Z 15、板頂 Z 17 mm，Body 暫時隱藏。",
+          "note": null
+        }
+      ],
+      "figureComparisons": [
+        {
+          "alt": "隱藏 Body，Add > Mesh > Cube；Dimensions 設 60 × 40 × 2 mm，G Z 16mm，Apply Scale，命名 Lid",
+          "caption": "2026-10-22 助教示範實拍：獨立 Blender 5.2.1 LTS（English (US)、出廠設定），不是你的畫面；橘框為網頁標示，原圖未修改。"
+        }
+      ],
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Lid板60/40/2，LocationZ16，Scale1，Body隱藏。",
+      "requiresRawOrOtherEvidence": "Z15/17可由位置+厚推得，建構操作歷程由run。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "05-05",
+      "path": "learning/evidence/05/2026-10-22-lesson05-lid-demo-v001/05-05-04-bottom-face.png",
+      "references": [
+        "05-05.operationRun.events[3].figure.path"
+      ],
+      "sha256": "55405abaab833828e5e92b3413ba295a794ab0017fe037014fd96aa9085917b9",
+      "actualSha256": "55405abaab833828e5e92b3413ba295a794ab0017fe037014fd96aa9085917b9",
+      "hashMatches": true,
+      "eventComparisons": [
+        {
+          "seq": 4,
+          "action": "Ctrl + 數字鍵盤 7 底視；Tab 進 Edit Mode，面選取、Select None，再點蓋板底面",
+          "observed": "單一中心面：XY (60, 40) mm、Z 15 mm、法線 Z -1。",
+          "note": "座標核對：圖中側欄採 Local，Median Z -1 mm；加上 Lid 物件 Location Z 16 mm，才是讀回的 world Z 15 mm。"
+        }
+      ],
+      "figureComparisons": [
+        {
+          "alt": "Ctrl + 數字鍵盤 7 底視；Tab 進 Edit Mode，面選取、Select None，再點蓋板底面",
+          "caption": "2026-10-22 助教示範實拍：獨立 Blender 5.2.1 LTS（English (US)、出廠設定），不是你的畫面；橘框為網頁標示，原圖未修改。"
+        }
+      ],
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Bottom Ortho面模式底面選取，Local Median Z−1，符合note之world加16=15。",
+      "requiresRawOrOtherEvidence": "60×40與法線−1需mesh；Local不能誤當world。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "05-05",
+      "path": "learning/evidence/05/2026-10-22-lesson05-lid-demo-v001/05-05-05-lip-footprint.png",
+      "references": [
+        "05-05.operationRun.events[4].figure.path"
+      ],
+      "sha256": "89dc9643323bd2c380bf99f4617c9578d1f3f46a6f567de1897b47efedfb3cf1",
+      "actualSha256": "89dc9643323bd2c380bf99f4617c9578d1f3f46a6f567de1897b47efedfb3cf1",
+      "hashMatches": true,
+      "eventComparisons": [
+        {
+          "seq": 5,
+          "action": "I 內插 2.2mm：由 60 × 40 mm 板底留下 55.6 × 35.6 mm 唇邊外形",
+          "observed": "單一中心面：XY (55.6, 35.6) mm、Z 15 mm、法線 Z -1。",
+          "note": "56 − 2 × 0.2 = 55.6；36 − 2 × 0.2 = 35.6 mm。總間隙 0.4、每側 0.2 是助教選用的幾何試驗值。 座標核對：圖中側欄採 Local，Median Z -1 mm；加上 Lid 物件 Location Z 16 mm，才是讀回的 world Z 15 mm。"
+        }
+      ],
+      "figureComparisons": [
+        {
+          "alt": "I 內插 2.2mm：由 60 × 40 mm 板底留下 55.6 × 35.6 mm 唇邊外形",
+          "caption": "2026-10-22 助教示範實拍：獨立 Blender 5.2.1 LTS（English (US)、出廠設定），不是你的畫面；橘框為網頁標示，原圖未修改。"
+        }
+      ],
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Inset Faces提示，新內框中心選面，Local Median Z−1。",
+      "requiresRawOrOtherEvidence": "2.2Inset與55.6/35.6需raw／operator；圖上沒有精確XY尺寸。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "05-05",
+      "path": "learning/evidence/05/2026-10-22-lesson05-lid-demo-v001/05-05-06-lip-depth.png",
+      "references": [
+        "05-05.operationRun.events[5].figure.path"
+      ],
+      "sha256": "b3dde299af17e7f358b1a32bc5dfb4f23e27692d4d64606751a61c1f63dccbb2",
+      "actualSha256": "b3dde299af17e7f358b1a32bc5dfb4f23e27692d4d64606751a61c1f63dccbb2",
+      "hashMatches": true,
+      "eventComparisons": [
+        {
+          "seq": 6,
+          "action": "E 4mm 沿底面向下延伸：唇邊深 4 mm，選面到 Z 11 mm",
+          "observed": "單一中心面：XY (55.6, 35.6) mm、Z 11 mm、法線 Z -1。",
+          "note": "座標核對：圖中側欄採 Local，Median Z -5 mm；加上 Lid 物件 Location Z 16 mm，才是讀回的 world Z 11 mm。"
+        }
+      ],
+      "figureComparisons": [
+        {
+          "alt": "E 4mm 沿底面向下延伸：唇邊深 4 mm，選面到 Z 11 mm",
+          "caption": "2026-10-22 助教示範實拍：獨立 Blender 5.2.1 LTS（English (US)、出廠設定），不是你的畫面；橘框為網頁標示，原圖未修改。"
+        }
+      ],
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Extrude Region and Move提示，Local Median Z−5，底視與之前外框相同，符合向下4後位置差。",
+      "requiresRawOrOtherEvidence": "正交底視隱藏深度形狀；worldZ11由Location16+local，精確XY靠raw。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "05-05",
+      "path": "learning/evidence/05/2026-10-22-lesson05-lid-demo-v001/05-05-07-lip-wall.png",
+      "references": [
+        "05-05.operationRun.events[6].figure.path"
+      ],
+      "sha256": "5cb9140762f03cb42d0bfbe6b2e63767c466108f3f228effa5c1f6e3939bf2f3",
+      "actualSha256": "5cb9140762f03cb42d0bfbe6b2e63767c466108f3f228effa5c1f6e3939bf2f3",
+      "hashMatches": true,
+      "eventComparisons": [
+        {
+          "seq": 7,
+          "action": "I 2mm：保留 2 mm 環壁，內側中心面為 51.6 × 31.6 mm",
+          "observed": "單一中心面：XY (51.6, 31.6) mm、Z 11 mm、法線 Z -1。",
+          "note": "座標核對：圖中側欄採 Local，Median Z -5 mm；加上 Lid 物件 Location Z 16 mm，才是讀回的 world Z 11 mm。"
+        }
+      ],
+      "figureComparisons": [
+        {
+          "alt": "I 2mm：保留 2 mm 環壁，內側中心面為 51.6 × 31.6 mm",
+          "caption": "2026-10-22 助教示範實拍：獨立 Blender 5.2.1 LTS（English (US)、出廠設定），不是你的畫面；橘框為網頁標示，原圖未修改。"
+        }
+      ],
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "第二道Inset內框，Local Median−5。",
+      "requiresRawOrOtherEvidence": "2mm及51.6/31.6不在圖內直接顯，需raw。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "05-05",
+      "path": "learning/evidence/05/2026-10-22-lesson05-lid-demo-v001/05-05-08-lip-recess.png",
+      "references": [
+        "05-05.operationRun.events[7].figure.path"
+      ],
+      "sha256": "56a321ea7661ab3448514ec5a1e105f425bc58fe53712e6b44dfb1de8844da17",
+      "actualSha256": "56a321ea7661ab3448514ec5a1e105f425bc58fe53712e6b44dfb1de8844da17",
+      "hashMatches": true,
+      "eventComparisons": [
+        {
+          "seq": 8,
+          "action": "E -4mm 把中心面推回 Z 15 mm，形成盲內凹與環形唇邊",
+          "observed": "單一中心面：XY (51.6, 31.6) mm、Z 15 mm、法線 Z -1。",
+          "note": "這是與蓋板一體的定位環，不是整塊實心塞。最終整個 Lid 高 6 mm，分別是板厚 2 與唇深 4 mm。 座標核對：圖中側欄採 Local，Median Z -1 mm；加上 Lid 物件 Location Z 16 mm，才是讀回的 world Z 15 mm。"
+        }
+      ],
+      "figureComparisons": [
+        {
+          "alt": "E -4mm 把中心面推回 Z 15 mm，形成盲內凹與環形唇邊",
+          "caption": "2026-10-22 助教示範實拍：獨立 Blender 5.2.1 LTS（English (US)、出廠設定），不是你的畫面；橘框為網頁標示，原圖未修改。"
+        }
+      ],
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Extrude提示、Local Median回−1，新中心與環框；符合note world15。",
+      "requiresRawOrOtherEvidence": "盲凹深4／閉合及完整環體須底斜視與mesh。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "05-05",
+      "path": "learning/evidence/05/2026-10-22-lesson05-lid-demo-v001/05-05-09-underside-checked.png",
+      "references": [
+        "05-05.figures[0].path",
+        "05-05.operationRun.events[8].figure.path"
+      ],
+      "sha256": "c97b0253251f190a6f1e4541d7ea809a0b2bcfc2acd7485bec602d3e7065afde",
+      "actualSha256": "c97b0253251f190a6f1e4541d7ea809a0b2bcfc2acd7485bec602d3e7065afde",
+      "hashMatches": true,
+      "eventComparisons": [
+        {
+          "seq": 9,
+          "action": "回 Object Mode，改底部斜視，從最終網格核對板厚、唇內外尺寸、環壁與深度",
+          "observed": "Lid 整體 [60.0, 40.0, 6.0] mm；板厚 2、唇外 [55.599998474121094, 35.599998474121094]、唇內 [51.599998474121094, 31.599998474121094]、環壁 2、唇深 4 mm；體積 6195.2 mm³、Non Manifold 0。",
+          "note": null
+        }
+      ],
+      "figureComparisons": [
+        {
+          "alt": "05-05 真實 Blender 實拍：Lid 底部斜視：環形唇邊、盲內凹與整高 6 mm",
+          "caption": "2026-10-22 獨立 Blender 原圖：Lid 底部斜視：環形唇邊、盲內凹與整高 6 mm。總間隙 0.4、每側 0.2 mm 為幾何試驗值，正式合格值留空；暫抬視圖會在存檔前移回名義位置。"
+        },
+        {
+          "alt": "回 Object Mode，改底部斜視，從最終網格核對板厚、唇內外尺寸、環壁與深度",
+          "caption": "2026-10-22 助教示範實拍：獨立 Blender 5.2.1 LTS（English (US)、出廠設定），不是你的畫面；橘框為網頁標示，原圖未修改。"
+        }
+      ],
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "底斜視環形唇邊與盲內凹可辨；Lid Item60/40/6、LocationZ16、Scale1。",
+      "requiresRawOrOtherEvidence": "唇內外/環壁/vol/NM0由raw；不能只從概觀像素量。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "05-05",
+      "path": "learning/evidence/05/2026-10-22-lesson05-lid-demo-v001/05-05-10-non-manifold.png",
+      "references": [
+        "05-05.operationRun.events[9].figure.path"
+      ],
+      "sha256": "0d53d105324470377605bcafff0eadd6f2eaa167449f42893b78bcf7d3dd13bb",
+      "actualSha256": "0d53d105324470377605bcafff0eadd6f2eaa167449f42893b78bcf7d3dd13bb",
+      "hashMatches": true,
+      "eventComparisons": [
+        {
+          "seq": 10,
+          "action": "邊選取、Select None，再 F3 搜尋 Select Non Manifold",
+          "observed": "Lid Edit Mode，Non Manifold 0、選到邊 0；網格非空。",
+          "note": null
+        }
+      ],
+      "figureComparisons": [
+        {
+          "alt": "邊選取、Select None，再 F3 搜尋 Select Non Manifold",
+          "caption": "2026-10-22 助教示範實拍：獨立 Blender 5.2.1 LTS（English (US)、出廠設定），不是你的畫面；橘框為網頁標示，原圖未修改。"
+        }
+      ],
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Edit Mode邊選取、Nothing selected、Select Non-Manifold提示，實際網格可見。",
+      "requiresRawOrOtherEvidence": "邊0／NM0需raw計數；不等同強度。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "05-05",
+      "path": "learning/evidence/05/2026-10-22-lesson05-lid-demo-v001/05-05-11-separated-view.png",
+      "references": [
+        "05-05.figures[1].path",
+        "05-05.operationRun.events[10].figure.path"
+      ],
+      "sha256": "bc12d5f81fd5424cef7dd64c295941c8a31de430a45818782e249f8b1d2fec64",
+      "actualSha256": "bc12d5f81fd5424cef7dd64c295941c8a31de430a45818782e249f8b1d2fec64",
+      "hashMatches": true,
+      "eventComparisons": [
+        {
+          "seq": 11,
+          "action": "暫將 Lid 上移 12 mm，與 Body 一起對焦，查看蓋板、定位環及盒口的關係",
+          "observed": "Lid Dimensions (60 mm, 40 mm, 6 mm)、Location (0 mm, 0 mm, 28 mm)、Scale (1, 1, 1)；這張暫時分離檢視，尚未存檔；下一步會移回名義位置。",
+          "note": "這是實際 Blender 視角與暫時位置，不是合成圖，也不是實體試配結果。 圖中作用中為 Body，側欄 Dimensions 60 × 40 × 30 屬盒體；Lid 整高請看第 9 張。"
+        }
+      ],
+      "figureComparisons": [
+        {
+          "alt": "05-05 真實 Blender 實拍：上蓋暫抬 12 mm：查看蓋板、唇邊與既有盒口",
+          "caption": "2026-10-22 獨立 Blender 原圖：上蓋暫抬 12 mm：查看蓋板、唇邊與既有盒口。總間隙 0.4、每側 0.2 mm 為幾何試驗值，正式合格值留空；暫抬視圖會在存檔前移回名義位置。"
+        },
+        {
+          "alt": "暫將 Lid 上移 12 mm，與 Body 一起對焦，查看蓋板、定位環及盒口的關係",
+          "caption": "2026-10-22 助教示範實拍：獨立 Blender 5.2.1 LTS（English (US)、出廠設定），不是你的畫面；橘框為網頁標示，原圖未修改。"
+        }
+      ],
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Lid上抬懸於盒口上，定位環外側可見；active Body的Item60/40/30，note已正確提醒。",
+      "requiresRawOrOtherEvidence": "Lid精確Z28/6高與抬12需raw；圖不能證間隙。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "05-05",
+      "path": "learning/evidence/05/2026-10-22-lesson05-lid-demo-v001/05-05-12-assembly-geometry.png",
+      "references": [
+        "05-05.operationRun.events[11].figure.path"
+      ],
+      "sha256": "4f78e74781b109429121a871f06bcfba472321716c018e1a28ffa125e172a1d8",
+      "actualSha256": "4f78e74781b109429121a871f06bcfba472321716c018e1a28ffa125e172a1d8",
+      "hashMatches": true,
+      "eventComparisons": [
+        {
+          "seq": 12,
+          "action": "Lid 下移 12 mm 回到板底 Z 15、唇底 Z 11；讀回四側試驗間隙與嵌入深度",
+          "observed": "已回名義位置；實際四側間隙 [0.20000076293945312, 0.20000076293945312, 0.20000076293945312, 0.20000076293945312] mm、XY 總間隙 [0.40000152587890625, 0.40000152587890625] mm、嵌入深度 4 mm；僅 CAD 幾何預覽。",
+          "note": "幾何位置符合本次試驗設計；尚未列印或實際試配，正式合格間隙仍為 null。 圖中作用中為 Body，側欄 Dimensions 60 × 40 × 30 屬盒體；Lid 整高請看第 9 張。"
+        }
+      ],
+      "figureComparisons": [
+        {
+          "alt": "Lid 下移 12 mm 回到板底 Z 15、唇底 Z 11；讀回四側試驗間隙與嵌入深度",
+          "caption": "2026-10-22 助教示範實拍：獨立 Blender 5.2.1 LTS（English (US)、出廠設定），不是你的畫面；橘框為網頁標示，原圖未修改。"
+        }
+      ],
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Lid回覆盒口，active Body外形60/40/30；符合note。",
+      "requiresRawOrOtherEvidence": "四側0.200000763、總0.400001526及嵌4由mesh，不在圖可讀。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "05-05",
+      "path": "learning/evidence/05/2026-10-22-lesson05-lid-demo-v001/05-05-13-save-dialog.png",
+      "references": [
+        "05-05.operationRun.events[12].figure.path"
+      ],
+      "sha256": "f910fe42fc57c7ead11f90a105c055fd6d8655c183744c84b6c69e77d4c7d509",
+      "actualSha256": "f910fe42fc57c7ead11f90a105c055fd6d8655c183744c84b6c69e77d4c7d509",
+      "hashMatches": true,
+      "eventComparisons": [
+        {
+          "seq": 13,
+          "action": "File > Save As…，另存 u05_lid_v001.blend；不覆寫原盒",
+          "observed": "目標 D:\\others\\study\\Blender-Learning\\learning\\evidence\\05\\2026-10-22-lesson05-lid-demo-v001\\demo-files\\；檔名 u05_lid_v001.blend。",
+          "note": null
+        }
+      ],
+      "figureComparisons": [
+        {
+          "alt": "File > Save As…，另存 u05_lid_v001.blend；不覆寫原盒",
+          "caption": "2026-10-22 助教示範實拍：獨立 Blender 5.2.1 LTS（English (US)、出廠設定），不是你的畫面；橘框為網頁標示，原圖未修改。"
+        }
+      ],
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Save As目標u05_lid_v001.blend、demo-files尾段。",
+      "requiresRawOrOtherEvidence": "原盒未覆寫／完整路徑需實檔。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "05-05",
+      "path": "learning/evidence/05/2026-10-22-lesson05-lid-demo-v001/05-05-14-saved.png",
+      "references": [
+        "05-05.operationRun.events[13].figure.path"
+      ],
+      "sha256": "89d0a195cd591adf034f0756b16805101ee4fec1dd3d55b0b1b4a12e41df607a",
+      "actualSha256": "89d0a195cd591adf034f0756b16805101ee4fec1dd3d55b0b1b4a12e41df607a",
+      "hashMatches": true,
+      "eventComparisons": [
+        {
+          "seq": 14,
+          "action": "按 Save As，核對新場景檔案與雜湊",
+          "observed": "已存 u05_lid_v001.blend，99064 bytes，SHA-256 ab08f331dcb26c5ffc6c6ca56c7c7f022df96791c4777e37c5f01a964fbed6ff；原盒與來源副本雜湊未變。",
+          "note": "圖中作用中為 Body，側欄 Dimensions 60 × 40 × 30 屬盒體；Lid 整高請看第 9 張。"
+        }
+      ],
+      "figureComparisons": [
+        {
+          "alt": "按 Save As，核對新場景檔案與雜湊",
+          "caption": "2026-10-22 助教示範實拍：獨立 Blender 5.2.1 LTS（English (US)、出廠設定），不是你的畫面；橘框為網頁標示，原圖未修改。"
+        }
+      ],
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Saved as u05_lid_v001.blend通知，組裝概觀、activeBody尺寸。",
+      "requiresRawOrOtherEvidence": "99064B/hash/來源不變需實檔。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "05-05",
+      "path": "learning/evidence/05/2026-10-22-lesson05-lid-demo-v001/05-05-15-open-saved.png",
+      "references": [
+        "05-05.operationRun.events[14].figure.path"
+      ],
+      "sha256": "4de364f2af466552066c5bae79e8e771645da57f0362a93d01768ae0eb1b74be",
+      "actualSha256": "4de364f2af466552066c5bae79e8e771645da57f0362a93d01768ae0eb1b74be",
+      "hashMatches": true,
+      "eventComparisons": [
+        {
+          "seq": 15,
+          "action": "File > Open…，重新開啟同一上蓋場景 v001",
+          "observed": "目標 D:\\others\\study\\Blender-Learning\\learning\\evidence\\05\\2026-10-22-lesson05-lid-demo-v001\\demo-files\\；檔名 u05_lid_v001.blend。",
+          "note": null
+        }
+      ],
+      "figureComparisons": [
+        {
+          "alt": "File > Open…，重新開啟同一上蓋場景 v001",
+          "caption": "2026-10-22 助教示範實拍：獨立 Blender 5.2.1 LTS（English (US)、出廠設定），不是你的畫面；橘框為網頁標示，原圖未修改。"
+        }
+      ],
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Open列表u05_lid_v001.blend97KiB，demo-files尾段。",
+      "requiresRawOrOtherEvidence": "KiB非精確bytes/hash。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "05-05",
+      "path": "learning/evidence/05/2026-10-22-lesson05-lid-demo-v001/05-05-16-reopened-verified.png",
+      "references": [
+        "05-05.operationRun.events[15].figure.path"
+      ],
+      "sha256": "5dd4f07399cc16e3f2487093f2db9c6e507c771b2c9f9c7910589b465bebed0f",
+      "actualSha256": "5dd4f07399cc16e3f2487093f2db9c6e507c771b2c9f9c7910589b465bebed0f",
+      "hashMatches": true,
+      "eventComparisons": [
+        {
+          "seq": 16,
+          "action": "按 Open，從實際最終網格重新驗上蓋、定位環與原盒，保存 verification.json",
+          "observed": "重開後原盒 60 × 40 × 30、板厚 2、唇深 4、唇外 55.6 × 35.6 mm；四側試驗間隙各約 0.2 mm、拓樸與雜湊一致。未列印、未試配、無合格值。",
+          "note": "本次是幾何示範；學員完成狀態維持共用 progress.json，不自動確認。 圖中作用中為 Body，側欄 Dimensions 60 × 40 × 30 屬盒體；Lid 整高請看第 9 張。"
+        }
+      ],
+      "figureComparisons": [
+        {
+          "alt": "按 Open，從實際最終網格重新驗上蓋、定位環與原盒，保存 verification.json",
+          "caption": "2026-10-22 助教示範實拍：獨立 Blender 5.2.1 LTS（English (US)、出廠設定），不是你的畫面；橘框為網頁標示，原圖未修改。"
+        }
+      ],
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "重開組裝概觀，Body/Lid存在，BodyItem60/40/30。",
+      "requiresRawOrOtherEvidence": "原盒/上蓋拓撲hash與精確間隙需raw；圖不能看被遮住環。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "05-06",
+      "path": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/05-06-01-source-open-dialog.png",
+      "references": [
+        "05-06.operationRun.events[0].figure.path"
+      ],
+      "sha256": "4dcdab53fd8067df340d0617778190df161f4ee433449ede255408e2e6e0b5ef",
+      "actualSha256": "4dcdab53fd8067df340d0617778190df161f4ee433449ede255408e2e6e0b5ef",
+      "hashMatches": true,
+      "eventComparisons": [
+        {
+          "seq": 1,
+          "action": "File > Open…，開啟 05-05 上蓋 v001 的同雜湊副本",
+          "observed": "資料夾 D:\\others\\study\\Blender-Learning\\learning\\evidence\\05\\2026-10-25-lesson05-lid-export-demo-v001\\demo-files\\sources\\；檔名 u05_lid_v001.blend。",
+          "note": null
+        }
+      ],
+      "figureComparisons": [
+        {
+          "alt": "File > Open…，開啟 05-05 上蓋 v001 的同雜湊副本",
+          "caption": "2026-10-25 助教示範實拍：獨立 Blender 5.2.1 LTS（English (US)、出廠設定），不是你的畫面；橘框為網頁標示，原圖未修改。"
+        }
+      ],
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Open來源u05_lid_v001.blend97KiB，sources尾段。",
+      "requiresRawOrOtherEvidence": "完整副本hash須實檔。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "05-06",
+      "path": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/05-06-02-lid-selected.png",
+      "references": [
+        "05-06.operationRun.events[1].figure.path"
+      ],
+      "sha256": "209c403efbec2304e93ec626b3ec0a9ff37f9a4ef080cfcaa78e11605bda2092",
+      "actualSha256": "209c403efbec2304e93ec626b3ec0a9ff37f9a4ef080cfcaa78e11605bda2092",
+      "hashMatches": true,
+      "eventComparisons": [
+        {
+          "seq": 2,
+          "action": "只選 Lid，底部斜視核對 Dimensions、板厚與環形唇邊，排除 Body",
+          "observed": "只選 Lid；整體 [60.0, 40.0, 6.0] mm、板厚 2、唇深 4、環壁 2 mm；來源與副本 SHA-256 一致。Body 暫隱藏但未改幾何。",
+          "note": "板厚 2 mm 加向下唇深 4 mm，整體高 6 mm。0.4 mm 總間隙／每側 0.2 mm 仍是幾何試驗值。"
+        }
+      ],
+      "figureComparisons": [
+        {
+          "alt": "只選 Lid，底部斜視核對 Dimensions、板厚與環形唇邊，排除 Body",
+          "caption": "2026-10-25 助教示範實拍：獨立 Blender 5.2.1 LTS（English (US)、出廠設定），不是你的畫面；橘框為網頁標示，原圖未修改。"
+        }
+      ],
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Lid底斜視環形唇邊，Item60/40/6、LocationZ16/Scale1，Body隱藏未選。",
+      "requiresRawOrOtherEvidence": "2板厚/4唇深/2環壁及hash/Body未改需raw。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "05-06",
+      "path": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/05-06-03-export-menu.png",
+      "references": [
+        "05-06.operationRun.events[2].figure.path"
+      ],
+      "sha256": "bbdd40b730bd3881bdcf1cc615bfddfb501b4b65c1e0b8d9e80ed36189218b01",
+      "actualSha256": "bbdd40b730bd3881bdcf1cc615bfddfb501b4b65c1e0b8d9e80ed36189218b01",
+      "hashMatches": true,
+      "eventComparisons": [
+        {
+          "seq": 3,
+          "action": "File > Export，指到 STL (.stl)",
+          "observed": "已選取：Lid；作用中物件：Lid",
+          "note": null
+        }
+      ],
+      "figureComparisons": [
+        {
+          "alt": "File > Export，指到 STL (.stl)",
+          "caption": "2026-10-25 助教示範實拍：獨立 Blender 5.2.1 LTS（English (US)、出廠設定），不是你的畫面；橘框為網頁標示，原圖未修改。"
+        }
+      ],
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "File Export STL反白，Lid作用單選，Body隱藏。",
+      "requiresRawOrOtherEvidence": "尚未輸出。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "05-06",
+      "path": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/05-06-04-export-before.png",
+      "references": [
+        "05-06.operationRun.events[3].figure.path"
+      ],
+      "sha256": "0d58621434de1798f1634faff6ef099811906db5123d9b226256e6a2e812864c",
+      "actualSha256": "0d58621434de1798f1634faff6ef099811906db5123d9b226256e6a2e812864c",
+      "hashMatches": true,
+      "eventComparisons": [
+        {
+          "seq": 4,
+          "action": "核對 STL 匯出檔名、路徑及目前選項",
+          "observed": "資料夾 D:\\others\\study\\Blender-Learning\\learning\\evidence\\05\\2026-10-25-lesson05-lid-export-demo-v001\\demo-files\\exports\\；檔名 u05_lid_v001.stl；選項 {'only_selected': False, 'global_scale': 1.0, 'use_scene_unit': False, 'apply_modifiers': True, 'forward_axis': 'Y', 'up_axis': 'Z', 'ascii_format': False, 'use_batch': False, 'evaluation_mode': 'DAG_EVAL_RENDER'}。",
+          "note": null
+        }
+      ],
+      "figureComparisons": [
+        {
+          "alt": "核對 STL 匯出檔名、路徑及目前選項",
+          "caption": "2026-10-25 助教示範實拍：獨立 Blender 5.2.1 LTS（English (US)、出廠設定），不是你的畫面；橘框為網頁標示，原圖未修改。"
+        }
+      ],
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "STL目標u05_lid_v001.stl，SelectionOnly/SceneUnit/ASCII/Batch關，Scale1/YZ，ApplyModifier開。",
+      "requiresRawOrOtherEvidence": "完整路徑／安全檢查需live。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "05-06",
+      "path": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/05-06-05-export-options.png",
+      "references": [
+        "05-06.operationRun.events[4].figure.path"
+      ],
+      "sha256": "2ba670fbc9592b460fb36d1ca2b9f66d41ff4468bfed130802b076b93ba63c8e",
+      "actualSha256": "2ba670fbc9592b460fb36d1ca2b9f66d41ff4468bfed130802b076b93ba63c8e",
+      "hashMatches": true,
+      "eventComparisons": [
+        {
+          "seq": 5,
+          "action": "勾選並核對 Selection Only，再核對 Scale 1、Scene Unit 不勾與本次新檔路徑",
+          "observed": "Selection Only 開、Scale 1、Scene Unit 關、Apply Modifiers 開、Binary、Batch 關、Y Forward / Z Up；只匯出 Lid。",
+          "note": "本場景 Unit Scale 0.001。STL 沒有長度單位標記，本次匯出數字按毫米解讀；尚未核對切片擺放。"
+        }
+      ],
+      "figureComparisons": [
+        {
+          "alt": "勾選並核對 Selection Only，再核對 Scale 1、Scene Unit 不勾與本次新檔路徑",
+          "caption": "2026-10-25 助教示範實拍：獨立 Blender 5.2.1 LTS（English (US)、出廠設定），不是你的畫面；橘框為網頁標示，原圖未修改。"
+        }
+      ],
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "SelectionOnly已勾，其餘Scale1/SceneUnit關/YZ/ASCII關。",
+      "requiresRawOrOtherEvidence": "圖不直接證STL毫米解讀或切片狀態。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "05-06",
+      "path": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/05-06-06-stl-checked.png",
+      "references": [
+        "05-06.operationRun.events[5].figure.path"
+      ],
+      "sha256": "6a1fc291fed85dc0c59e4efd82367235e20cd38f534d11d1359ff2f40cb64596",
+      "actualSha256": "6a1fc291fed85dc0c59e4efd82367235e20cd38f534d11d1359ff2f40cb64596",
+      "hashMatches": true,
+      "eventComparisons": [
+        {
+          "seq": 6,
+          "action": "按 Export STL，解析磁碟 STL 的尺寸、拓樸、唇內外平面與盲內凹，對照來源",
+          "observed": "u05_lid_v001.stl：2284 bytes、44 三角形；檔內外形 [60.0, 40.0, 6.0]（按 mm 解讀）、板厚 2／唇深 4、單殼、Non Manifold 0；SHA-256 0b226cf405bc70f42b5ce28fee9f46cb55eff67b84c6d786c091a2043f5f2408。",
+          "note": "STL 保留原場景 world Z 11～17 mm。這是數位檔案核對，尚未進行切片、落床方向、列印或試配。"
+        }
+      ],
+      "figureComparisons": [
+        {
+          "alt": "按 Export STL，解析磁碟 STL 的尺寸、拓樸、唇內外平面與盲內凹，對照來源",
+          "caption": "2026-10-25 助教示範實拍：獨立 Blender 5.2.1 LTS（English (US)、出廠設定），不是你的畫面；橘框為網頁標示，原圖未修改。"
+        }
+      ],
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Lid來源底視，File exported successfully通知、Item60/40/6。",
+      "requiresRawOrOtherEvidence": "2284B/44tri/hash/拓撲及Z11～17需檔案，圖非重匯入。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "05-06",
+      "path": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/05-06-07-empty-mm-scene.png",
+      "references": [
+        "05-06.operationRun.events[6].figure.path"
+      ],
+      "sha256": "4adc8aebf5e4a772bee8fce4eb6b599831c2910744002fc3fb9242704c87f51c",
+      "actualSha256": "4adc8aebf5e4a772bee8fce4eb6b599831c2910744002fc3fb9242704c87f51c",
+      "hashMatches": true,
+      "eventComparisons": [
+        {
+          "seq": 7,
+          "action": "File > New > General，清空獨立場景，設 Metric / Millimeters / Unit Scale 0.001",
+          "observed": "場景物件 0；Unit Scale 0.001；Length MILLIMETERS。",
+          "note": null
+        }
+      ],
+      "figureComparisons": [
+        {
+          "alt": "File > New > General，清空獨立場景，設 Metric / Millimeters / Unit Scale 0.001",
+          "caption": "2026-10-25 助教示範實拍：獨立 Blender 5.2.1 LTS（English (US)、出廠設定），不是你的畫面；橘框為網頁標示，原圖未修改。"
+        }
+      ],
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "空Collection，Scene Metric/UnitScale0.001/mm；側欄沒有Item。",
+      "requiresRawOrOtherEvidence": "精確物件0由raw支持。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "05-06",
+      "path": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/05-06-08-import-dialog.png",
+      "references": [
+        "05-06.operationRun.events[7].figure.path"
+      ],
+      "sha256": "449c2a87c98e26c5b91dcdddee7d558287a42bde44a4b6fdcb1ce77032d73c77",
+      "actualSha256": "449c2a87c98e26c5b91dcdddee7d558287a42bde44a4b6fdcb1ce77032d73c77",
+      "hashMatches": true,
+      "eventComparisons": [
+        {
+          "seq": 8,
+          "action": "F3 搜尋 Import STL，選本次剛匯出的上蓋 STL，讀回匯入選項",
+          "observed": "實際 STL：u05_lid_v001.stl；Scale 1、Scene Unit 關、Y Forward / Z Up。",
+          "note": null
+        }
+      ],
+      "figureComparisons": [
+        {
+          "alt": "F3 搜尋 Import STL，選本次剛匯出的上蓋 STL，讀回匯入選項",
+          "caption": "2026-10-25 助教示範實拍：獨立 Blender 5.2.1 LTS（English (US)、出廠設定），不是你的畫面；橘框為網頁標示，原圖未修改。"
+        }
+      ],
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Import u05_lid_v001.stl，2KiB；Scale1、SceneUnit關、Y/Z、ValidateMesh開。",
+      "requiresRawOrOtherEvidence": "2KiB顯示非2284精值，hash需檔案。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "05-06",
+      "path": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/05-06-09-reimport-dimensions.png",
+      "references": [
+        "05-06.operationRun.events[8].figure.path"
+      ],
+      "sha256": "ff7b6d72058f2e973be1cc6fa3d462e6f2fdbd3a64585f1116d13cb5c8ba8a84",
+      "actualSha256": "ff7b6d72058f2e973be1cc6fa3d462e6f2fdbd3a64585f1116d13cb5c8ba8a84",
+      "hashMatches": true,
+      "eventComparisons": [
+        {
+          "seq": 9,
+          "action": "實際匯入後才切 Item 分頁，Frame Selected，核對 Dimensions 60 × 40 × 6 mm",
+          "observed": "實際重新匯入 u05_lid_v001；Item Dimensions [60.0, 40.0, 6.0] mm，Scale 1、Non Manifold 0；板厚 2、唇深 4 mm，來源與 STL 幾何一致。",
+          "note": null
+        }
+      ],
+      "figureComparisons": [
+        {
+          "alt": "實際匯入後才切 Item 分頁，Frame Selected，核對 Dimensions 60 × 40 × 6 mm",
+          "caption": "2026-10-25 助教示範實拍：獨立 Blender 5.2.1 LTS（English (US)、出廠設定），不是你的畫面；橘框為網頁標示，原圖未修改。"
+        }
+      ],
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "重匯入u05_lid_v001單件，Item60/40/6、Scale1/Location0/R0，Scene毫米。",
+      "requiresRawOrOtherEvidence": "板厚2／唇深4/NM0需raw，圖只概觀外形。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "05-06",
+      "path": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/05-06-10-reimport-underside.png",
+      "references": [
+        "05-06.figures[0].path",
+        "05-06.operationRun.events[9].figure.path"
+      ],
+      "sha256": "c31773df47bd9714268cf1a9715c419d09c163e8f1a903091bb8251f953e48d8",
+      "actualSha256": "c31773df47bd9714268cf1a9715c419d09c163e8f1a903091bb8251f953e48d8",
+      "hashMatches": true,
+      "eventComparisons": [
+        {
+          "seq": 10,
+          "action": "底部斜視，從實際重新匯入的 STL 核對一體定位環與盲內凹",
+          "observed": "實際重新匯入 u05_lid_v001；Item Dimensions [60.0, 40.0, 6.0] mm，Scale 1、Non Manifold 0；板厚 2、唇深 4 mm，來源與 STL 幾何一致。",
+          "note": "0.4 mm 總間隙仍為幾何試驗值。STL 重新匯入成功不等於實際列印或試配合格。"
+        }
+      ],
+      "figureComparisons": [
+        {
+          "alt": "05-06 真實 Blender 實拍：重新匯入本次 Lid STL，底部斜視與 Item Dimensions 60 × 40 × 6 mm",
+          "caption": "2026-10-25 獨立 Blender 原始實拍：實際重新匯入的上蓋 STL；整高 6 = 板厚 2 + 唇深 4 mm。物件 Location Z 0，頂點仍是 world Z 11～17，尚未落床／切片。0.4 mm 總間隙／每側 0.2 mm 是試驗值；實體列印、量測、試配與正式合格值留空。"
+        },
+        {
+          "alt": "底部斜視，從實際重新匯入的 STL 核對一體定位環與盲內凹",
+          "caption": "2026-10-25 助教示範實拍：獨立 Blender 5.2.1 LTS（English (US)、出廠設定），不是你的畫面；橘框為網頁標示，原圖未修改。"
+        }
+      ],
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "實際重匯入Lid底斜視環及盲凹，Item60/40/6、Scale1/R0/Location0。",
+      "requiresRawOrOtherEvidence": "Z11～17為頂點world範圍不是Location0，需mesh；厚深/NM0需raw。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "05-06",
+      "path": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/05-06-11-non-manifold.png",
+      "references": [
+        "05-06.operationRun.events[10].figure.path"
+      ],
+      "sha256": "af4a7e9ad7339da7e7c301f32d80e21004f3162cd03bcff73a8807584ac1214d",
+      "actualSha256": "af4a7e9ad7339da7e7c301f32d80e21004f3162cd03bcff73a8807584ac1214d",
+      "hashMatches": true,
+      "eventComparisons": [
+        {
+          "seq": 11,
+          "action": "Tab > 邊選取 > Select None，再 F3 搜尋 Select Non Manifold",
+          "observed": "非空上蓋網格，Select Non Manifold 選到邊 0；程式讀回 Non Manifold 0。",
+          "note": null
+        }
+      ],
+      "figureComparisons": [
+        {
+          "alt": "Tab > 邊選取 > Select None，再 F3 搜尋 Select Non Manifold",
+          "caption": "2026-10-25 助教示範實拍：獨立 Blender 5.2.1 LTS（English (US)、出廠設定），不是你的畫面；橘框為網頁標示，原圖未修改。"
+        }
+      ],
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Edit Mode三角化上蓋，Nothing selected與Select Non-Manifold提示。",
+      "requiresRawOrOtherEvidence": "0邊/NM0計數需raw；不代表可列印。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "05-06",
+      "path": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/05-06-12-verified.png",
+      "references": [
+        "05-06.operationRun.events[11].figure.path"
+      ],
+      "sha256": "c31773df47bd9714268cf1a9715c419d09c163e8f1a903091bb8251f953e48d8",
+      "actualSha256": "c31773df47bd9714268cf1a9715c419d09c163e8f1a903091bb8251f953e48d8",
+      "hashMatches": true,
+      "eventComparisons": [
+        {
+          "seq": 12,
+          "action": "保存 STL 與來源版本關聯、數位讀值及 verification.json",
+          "observed": "上蓋 STL 匯出、實檔解析、實際重新匯入皆通過；外形 60 × 40 × 6、板厚 2、唇深 4 mm；來源 hash 不變。尚未列印／實測／試配，合格間隙空白。",
+          "note": "本次只完成 05-06 的匯出與數位核對部分；實體結果保持 null，不代學員確認完成。"
+        }
+      ],
+      "figureComparisons": [
+        {
+          "alt": "保存 STL 與來源版本關聯、數位讀值及 verification.json",
+          "caption": "2026-10-25 助教示範實拍：獨立 Blender 5.2.1 LTS（English (US)、出廠設定），不是你的畫面；橘框為網頁標示，原圖未修改。"
+        }
+      ],
+      "inspection": {
+        "method": "sha256_duplicate_already_viewed",
+        "actuallyOpenedThisPath": false,
+        "duplicateOf": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/05-06-11-non-manifold.png"
+      },
+      "observations": "與05-06 #11同SHA，沿用已目視Edit Mode圖。",
+      "requiresRawOrOtherEvidence": "verification/版本關聯寫檔非可見變化，需檔案。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "06-01",
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-01-source-open-dialog.png",
+      "references": [
+        "06-01.operationRun.events[0].figure.path"
+      ],
+      "sha256": "7d488437f09e61da0f3e7c9a3f5683c95ed5b2cd944341b82d55dcd78c41948d",
+      "actualSha256": "7d488437f09e61da0f3e7c9a3f5683c95ed5b2cd944341b82d55dcd78c41948d",
+      "hashMatches": true,
+      "eventComparisons": [
+        {
+          "seq": 1,
+          "action": "File > Open，開啟已驗證的 05-05 Body＋Lid 場景同雜湊副本",
+          "observed": "資料夾 D:\\others\\study\\Blender-Learning\\learning\\evidence\\06\\2026-10-25-lesson06-tenon-demo-v006\\demo-files\\sources\\；檔名 u05_lid_v001.blend。",
+          "note": null
+        }
+      ],
+      "figureComparisons": [
+        {
+          "alt": "File > Open，開啟已驗證的 05-05 Body＋Lid 場景同雜湊副本",
+          "caption": "2026-10-25 助教示範實拍：獨立 Blender 5.2.1 LTS（English (US)、出廠設定），不是你的畫面；橘框為網頁標示，原圖未修改。"
+        }
+      ],
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Open u05_lid_v001.blend97KiB、sources路徑尾段。",
+      "requiresRawOrOtherEvidence": "同hash需實檔。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "06-01",
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-02-source-geometry.png",
+      "references": [
+        "06-01.operationRun.events[1].figure.path"
+      ],
+      "sha256": "72c84c2c8c9169f69e2095eba51abe81efb608686ef02aac1d1a8be104ca42f0",
+      "actualSha256": "72c84c2c8c9169f69e2095eba51abe81efb608686ef02aac1d1a8be104ca42f0",
+      "hashMatches": true,
+      "eventComparisons": [
+        {
+          "seq": 2,
+          "action": "修改前重驗既有盒體與上蓋，這張作用中物件是 Body",
+          "observed": "修改前重驗：盒殼 60 × 40 × 30、內腔 56 × 36 × 28、壁／底 2；蓋板厚 2、環唇深 4、Lid 整高 6 mm；來源與副本 hash 一致。",
+          "note": null
+        }
+      ],
+      "figureComparisons": [
+        {
+          "alt": "修改前重驗既有盒體與上蓋，這張作用中物件是 Body",
+          "caption": "2026-10-25 助教示範實拍：獨立 Blender 5.2.1 LTS（English (US)、出廠設定），不是你的畫面；橘框為網頁標示，原圖未修改。"
+        }
+      ],
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "組裝原盒與上蓋，activeBody外形60/40/30、R0/Scale1。",
+      "requiresRawOrOtherEvidence": "內腔/唇被蓋遮住、內部尺寸與來源hash需raw；action已說activeBody。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "06-01",
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-03-pin-tool.png",
+      "references": [
+        "06-01.operationRun.events[2].figure.path"
+      ],
+      "sha256": "489aacf7e93ea671b4f96b71d4882f13ffb978a4eebdcba42c4d7fa62b827093",
+      "actualSha256": "489aacf7e93ea671b4f96b71d4882f13ffb978a4eebdcba42c4d7fa62b827093",
+      "hashMatches": true,
+      "eventComparisons": [
+        {
+          "seq": 3,
+          "action": "F3 Add Cylinder，輸入 4 × 4 × 30 mm，Apply Scale，移到 (23,13,1.5) 並命名 TenonTool",
+          "observed": "TenonTool Dimensions (4 mm, 4 mm, 30 mm)、Location (23 mm, 13 mm, 1.5 mm)、Scale (1, 1, 1)。實際 32 段；建構底 -13.5、頂 16.5 mm，與底板體積交入 0.5 mm，合併後內部底面會消失。",
+          "note": "這些是本次助教幾何示範尺寸。單一圓柱用於對位，配合既有矩形唇邊；不宣稱圓柱本身完全限制旋轉。"
+        }
+      ],
+      "figureComparisons": [
+        {
+          "alt": "F3 Add Cylinder，輸入 4 × 4 × 30 mm，Apply Scale，移到 (23,13,1.5) 並命名 TenonTool",
+          "caption": "2026-10-25 助教示範實拍：獨立 Blender 5.2.1 LTS（English (US)、出廠設定），不是你的畫面；橘框為網頁標示，原圖未修改。"
+        }
+      ],
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "TenonTool圓柱清楚；Item4/4/30、Location23/13/1.5、Scale1。",
+      "requiresRawOrOtherEvidence": "32段／底−13.5／頂16.5／交入0.5需raw，圖看不出段數。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "06-01",
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-04-union-operation.png",
+      "references": [
+        "06-01.operationRun.events[3].figure.path"
+      ],
+      "sha256": "337c93ddb306603ad421580bf60d990c1d789da30a9f2b8832b0c87f5b9239eb",
+      "actualSha256": "337c93ddb306603ad421580bf60d990c1d789da30a9f2b8832b0c87f5b9239eb",
+      "hashMatches": true,
+      "eventComparisons": [
+        {
+          "seq": 4,
+          "action": "選 Body，F3 Add Boolean Modifier，將 Operation 切為 Union",
+          "observed": "Body：Operation UNION、Solver EXACT、Operand 尚未指定。",
+          "note": null
+        }
+      ],
+      "figureComparisons": [
+        {
+          "alt": "選 Body，F3 Add Boolean Modifier，將 Operation 切為 Union",
+          "caption": "2026-10-25 助教示範實拍：獨立 Blender 5.2.1 LTS（English (US)、出廠設定），不是你的畫面；橘框為網頁標示，原圖未修改。"
+        }
+      ],
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Body Boolean Union/Exact、Object空，TenonTool仍單獨可見，ItemBody60/40/30。",
+      "requiresRawOrOtherEvidence": "未指定operand故未證union結果。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "06-01",
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-05-union-assigned.png",
+      "references": [
+        "06-01.operationRun.events[4].figure.path"
+      ],
+      "sha256": "aa5753fc9837565f32941f3ed5ba86d0c3eb3dbd2d71913805be63b699922b5b",
+      "actualSha256": "aa5753fc9837565f32941f3ed5ba86d0c3eb3dbd2d71913805be63b699922b5b",
+      "hashMatches": true,
+      "eventComparisons": [
+        {
+          "seq": 5,
+          "action": "Object 滴管指定 TenonTool，隱藏建構柱，預覽 Body 的 Union",
+          "observed": "Body：Operation UNION、Solver EXACT、Operand TenonTool。",
+          "note": null
+        }
+      ],
+      "figureComparisons": [
+        {
+          "alt": "Object 滴管指定 TenonTool，隱藏建構柱，預覽 Body 的 Union",
+          "caption": "2026-10-25 助教示範實拍：獨立 Blender 5.2.1 LTS（English (US)、出廠設定），不是你的畫面；橘框為網頁標示，原圖未修改。"
+        }
+      ],
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Union/Exact、Object TenonT…，TenonTool隱藏且柱以Body預覽顯示；Item高31.5。",
+      "requiresRawOrOtherEvidence": "完整operand名與一體拓撲需raw。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "06-01",
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-06-union-applied.png",
+      "references": [
+        "06-01.figures[0].path",
+        "06-01.operationRun.events[5].figure.path"
+      ],
+      "sha256": "cb3cf4356056079dc33059d598cd84463c6137093c25cec14ffa3ef8add298dc",
+      "actualSha256": "cb3cf4356056079dc33059d598cd84463c6137093c25cec14ffa3ef8add298dc",
+      "hashMatches": true,
+      "eventComparisons": [
+        {
+          "seq": 6,
+          "action": "修改器下拉 > Apply，從最終 Body 網格量底板、柱頂、連通性與體積",
+          "observed": "原盒殼 60 × 40 × 30、內腔基準 56 × 36 × 28、壁／底 2 mm；含定位柱的 Body 整體高 31.5 mm。柱與底板已 Union 成單一封閉殼，非流形邊 0；突出段 Z -13～16.5 mm。",
+          "note": null
+        }
+      ],
+      "figureComparisons": [
+        {
+          "alt": "06-01 真實 Blender：Body 定位柱與底板已 Union，含柱整高 31.5 mm",
+          "caption": "2026-10-25 獨立 Blender 原始實拍。06-01 定位榫：原盒殼 60 × 40 × 30；含柱 Body 高 31.5 mm。柱與底板已成一體，32 段、名義直徑 4 mm。 原圖未修改。"
+        },
+        {
+          "alt": "修改器下拉 > Apply，從最終 Body 網格量底板、柱頂、連通性與體積",
+          "caption": "2026-10-25 助教示範實拍：獨立 Blender 5.2.1 LTS（English (US)、出廠設定），不是你的畫面；橘框為網頁標示，原圖未修改。"
+        }
+      ],
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "modifier欄空，Body盒底長柱連接可見，Item60/40/31.5。",
+      "requiresRawOrOtherEvidence": "單殼/NM0/突出Z−13～16.5需mesh；圖支持Apply後概觀。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "06-01",
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-07-body-non-manifold.png",
+      "references": [
+        "06-01.operationRun.events[6].figure.path"
+      ],
+      "sha256": "43772664e87cf91bd047764c7a1738dc27ff9f4e1e4c82b5891589db2b358222",
+      "actualSha256": "43772664e87cf91bd047764c7a1738dc27ff9f4e1e4c82b5891589db2b358222",
+      "hashMatches": true,
+      "eventComparisons": [
+        {
+          "seq": 7,
+          "action": "選 Body，Tab > 邊選取 > Select None > Select Non Manifold",
+          "observed": "Body 非空網格；Select Non Manifold 選到邊 0，實際非流形邊 0。",
+          "note": null
+        }
+      ],
+      "figureComparisons": [
+        {
+          "alt": "選 Body，Tab > 邊選取 > Select None > Select Non Manifold",
+          "caption": "2026-10-25 助教示範實拍：獨立 Blender 5.2.1 LTS（English (US)、出廠設定），不是你的畫面；橘框為網頁標示，原圖未修改。"
+        }
+      ],
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Body Edit Mode邊模式、Nothing selected、Select Non-Manifold提示；長柱及盒網格可見。",
+      "requiresRawOrOtherEvidence": "選取0／非流形0需raw計數。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "06-01",
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-08-hole-tool.png",
+      "references": [
+        "06-01.operationRun.events[7].figure.path"
+      ],
+      "sha256": "6c3b1240f351df44b8c6545559405e4d3f9a5e7786c2bdf33b99113368b3f570",
+      "actualSha256": "6c3b1240f351df44b8c6545559405e4d3f9a5e7786c2bdf33b99113368b3f570",
+      "hashMatches": true,
+      "eventComparisons": [
+        {
+          "seq": 8,
+          "action": "Add Cylinder，設 4.4 × 4.4 × 10 mm、Apply Scale，中心 (23,13,16)，命名 HoleTool",
+          "observed": "HoleTool Dimensions (4.4 mm, 4.4 mm, 10 mm)、Location (23 mm, 13 mm, 16 mm)、Scale (1, 1, 1)。實際 32 段，Z 11～21，跨過蓋板 15～17；最終穿孔另從差集後網格驗證。",
+          "note": "4.4 − 4 = 0.4 mm 是外接直徑總差試驗值；不是已列印或已試配的合格值。"
+        }
+      ],
+      "figureComparisons": [
+        {
+          "alt": "Add Cylinder，設 4.4 × 4.4 × 10 mm、Apply Scale，中心 (23,13,16)，命名 HoleTool",
+          "caption": "2026-10-25 助教示範實拍：獨立 Blender 5.2.1 LTS（English (US)、出廠設定），不是你的畫面；橘框為網頁標示，原圖未修改。"
+        }
+      ],
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "HoleTool獨立圓柱；Item4.4/4.4/10、Location23/13/16、Scale1。",
+      "requiresRawOrOtherEvidence": "32段／Z11～21及對蓋穿越需raw；沒有其他件可直接比對。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "06-01",
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-09-hole-boolean-empty.png",
+      "references": [
+        "06-01.operationRun.events[8].figure.path"
+      ],
+      "sha256": "84bedd32c38b8fb73ab8a89fbd71c166010d64109a0beca5fe1496fccb1020a1",
+      "actualSha256": "84bedd32c38b8fb73ab8a89fbd71c166010d64109a0beca5fe1496fccb1020a1",
+      "hashMatches": true,
+      "eventComparisons": [
+        {
+          "seq": 9,
+          "action": "選 Lid 新增 Boolean，先查看實際選項與 Object 欄位位置",
+          "observed": "Lid：Operation DIFFERENCE、Solver EXACT、Operand 尚未指定。",
+          "note": null
+        }
+      ],
+      "figureComparisons": [
+        {
+          "alt": "選 Lid 新增 Boolean，先查看實際選項與 Object 欄位位置",
+          "caption": "2026-10-25 助教示範實拍：獨立 Blender 5.2.1 LTS（English (US)、出廠設定），不是你的畫面；橘框為網頁標示，原圖未修改。"
+        }
+      ],
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Lid Boolean Difference/Exact，Object空；HoleTool仍可見，尚未切孔。",
+      "requiresRawOrOtherEvidence": "需下一步確認operand。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "06-01",
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-10-hole-object-search.png",
+      "references": [
+        "06-01.operationRun.events[9].figure.path"
+      ],
+      "sha256": "00847585c0edf5864b6951154cbf07c237ec876f31bf38ee20d349c6a525d3f8",
+      "actualSha256": "00847585c0edf5864b6951154cbf07c237ec876f31bf38ee20d349c6a525d3f8",
+      "hashMatches": true,
+      "eventComparisons": [
+        {
+          "seq": 10,
+          "action": "點 Object 欄位，輸入 HoleTool，從實際搜尋清單選建構切割體",
+          "observed": "Lid：Operation DIFFERENCE、Solver EXACT、Operand 尚未指定。",
+          "note": "用物件名稱搜尋，避免滴管沒有指定到預期物件。"
+        }
+      ],
+      "figureComparisons": [
+        {
+          "alt": "點 Object 欄位，輸入 HoleTool，從實際搜尋清單選建構切割體",
+          "caption": "2026-10-25 助教示範實拍：獨立 Blender 5.2.1 LTS（English (US)、出廠設定），不是你的畫面；橘框為網頁標示，原圖未修改。"
+        }
+      ],
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Object搜尋文字HoleTool，候選清單HoleTool仍展開；Difference/Exact。",
+      "requiresRawOrOtherEvidence": "圖是待確認候選階段，observed亦明示尚未指定；action『選』可讀為整個動作目標，不能說此圖已完成指定。",
+      "result": "compatible_with_information_limit",
+      "severity": "informational",
+      "findingId": "SEARCH-PENDING-06-01-10"
+    },
+    {
+      "step": "06-01",
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-11-hole-difference.png",
+      "references": [
+        "06-01.operationRun.events[10].figure.path"
+      ],
+      "sha256": "9569d52467d2d3e4da729872f1e2603df0e2677e2f2d55a4ef0704fc7e70e582",
+      "actualSha256": "9569d52467d2d3e4da729872f1e2603df0e2677e2f2d55a4ef0704fc7e70e582",
+      "hashMatches": true,
+      "eventComparisons": [
+        {
+          "seq": 11,
+          "action": "確認 Lid 的 Boolean Difference 已指定 HoleTool，隱藏切割體查看孔",
+          "observed": "Lid：Operation DIFFERENCE、Solver EXACT、Operand HoleTool。",
+          "note": null
+        }
+      ],
+      "figureComparisons": [
+        {
+          "alt": "確認 Lid 的 Boolean Difference 已指定 HoleTool，隱藏切割體查看孔",
+          "caption": "2026-10-25 助教示範實拍：獨立 Blender 5.2.1 LTS（English (US)、出廠設定），不是你的畫面；橘框為網頁標示，原圖未修改。"
+        }
+      ],
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Top Orthographic Lid孔已見，Boolean Difference/Exact/ObjectHoleTool，工具隱藏，Item60/40/6。",
+      "requiresRawOrOtherEvidence": "32段與孔4.4精值由mesh，未Apply。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "06-01",
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-12-hole-applied.png",
+      "references": [
+        "06-01.figures[1].path",
+        "06-01.operationRun.events[11].figure.path"
+      ],
+      "sha256": "2183fd50002e03ffa24f26eee08389f970c3a0eabace8ac2f05cfede00c46c8b",
+      "actualSha256": "2183fd50002e03ffa24f26eee08389f970c3a0eabace8ac2f05cfede00c46c8b",
+      "hashMatches": true,
+      "eventComparisons": [
+        {
+          "seq": 12,
+          "action": "Apply Difference，從最終孔壁量 32 邊孔，射線確認貫穿蓋板",
+          "observed": "Lid 外形 60 × 40 × 6、板厚 2、環唇深 4／壁 2 mm；(23,13) 的實際 32 邊孔外接直徑 4.4 mm，Z 15～17 貫穿；單殼、非流形邊 0，新增穿孔後 genus 1。",
+          "note": "孔與既有環唇最近淨距約 0.6 mm，環壁未被切穿。閉合網格可以有真正穿孔，這裡 genus 由 0 變 1。"
+        }
+      ],
+      "figureComparisons": [
+        {
+          "alt": "06-01 真實 Blender：Lid 差集後的對應穿孔，外形 60 × 40 × 6 mm",
+          "caption": "2026-10-25 獨立 Blender 原始實拍。06-01 定位榫：Lid 的 4.4 mm 對應孔已貫穿，原環唇保留。名義直徑總差 0.4 mm；實際最小法向間隙約 0.199036 mm，仍是幾何試驗，實體列印／試配與合格值留空。 原圖未修改。"
+        },
+        {
+          "alt": "Apply Difference，從最終孔壁量 32 邊孔，射線確認貫穿蓋板",
+          "caption": "2026-10-25 助教示範實拍：獨立 Blender 5.2.1 LTS（English (US)、出廠設定），不是你的畫面；橘框為網頁標示，原圖未修改。"
+        }
+      ],
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Modifier清空，Lid頂視有一個孔，Item60/40/6。",
+      "requiresRawOrOtherEvidence": "32邊／射線貫穿/0.6環唇淨距/NM0/genus1需raw；圖不可數32邊。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "06-01",
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-13-lid-non-manifold.png",
+      "references": [
+        "06-01.operationRun.events[12].figure.path"
+      ],
+      "sha256": "d34c0880aa1f1ec9ca6e91c969e460a249f8ebe416d590b84c33aa320c084dc7",
+      "actualSha256": "d34c0880aa1f1ec9ca6e91c969e460a249f8ebe416d590b84c33aa320c084dc7",
+      "hashMatches": true,
+      "eventComparisons": [
+        {
+          "seq": 13,
+          "action": "選 Lid，Tab > 邊選取 > Select None > Select Non Manifold",
+          "observed": "Lid 非空網格；Select Non Manifold 選到邊 0，實際非流形邊 0。",
+          "note": null
+        }
+      ],
+      "figureComparisons": [
+        {
+          "alt": "選 Lid，Tab > 邊選取 > Select None > Select Non Manifold",
+          "caption": "2026-10-25 助教示範實拍：獨立 Blender 5.2.1 LTS（English (US)、出廠設定），不是你的畫面；橘框為網頁標示，原圖未修改。"
+        }
+      ],
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Lid Edit Mode、孔輪廓可見、Nothing selected、Select Non-Manifold提示。",
+      "requiresRawOrOtherEvidence": "NM0與選取0計數需raw；真正穿孔可仍封閉流形。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "06-01",
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-14-lid-underside.png",
+      "references": [
+        "06-01.operationRun.events[13].figure.path"
+      ],
+      "sha256": "2d1931fecd2342a85faa70cdaa12ac6ab5210f7bf5d23fad51eb2f6c8ee7bb09",
+      "actualSha256": "2d1931fecd2342a85faa70cdaa12ac6ab5210f7bf5d23fad51eb2f6c8ee7bb09",
+      "hashMatches": true,
+      "eventComparisons": [
+        {
+          "seq": 14,
+          "action": "底部斜視，核對實際穿孔、環形唇邊與 Item Dimensions",
+          "observed": "Lid 外形 60 × 40 × 6、板厚 2、環唇深 4／壁 2 mm；(23,13) 的實際 32 邊孔外接直徑 4.4 mm，Z 15～17 貫穿；單殼、非流形邊 0，新增穿孔後 genus 1。",
+          "note": null
+        }
+      ],
+      "figureComparisons": [
+        {
+          "alt": "底部斜視，核對實際穿孔、環形唇邊與 Item Dimensions",
+          "caption": "2026-10-25 助教示範實拍：獨立 Blender 5.2.1 LTS（English (US)、出廠設定），不是你的畫面；橘框為網頁標示，原圖未修改。"
+        }
+      ],
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "底斜視環唇與孔位置；Item60/40/6、LocationZ16/Scale1。",
+      "requiresRawOrOtherEvidence": "孔受視角／唇壁部分遮擋呈半月輪廓，完整孔可對頂視#12；孔精值/拓撲由raw。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "06-01",
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-15-separated-view.png",
+      "references": [
+        "06-01.operationRun.events[14].figure.path"
+      ],
+      "sha256": "05d8b109c613f6902c6a67d6a0be042448ee9516d71229b95647311fce5926b6",
+      "actualSha256": "05d8b109c613f6902c6a67d6a0be042448ee9516d71229b95647311fce5926b6",
+      "hashMatches": true,
+      "eventComparisons": [
+        {
+          "seq": 15,
+          "action": "暫把 Lid 上抬 12 mm，查看新定位柱與對應孔，再於存檔前移回",
+          "observed": "Lid Dimensions (60 mm, 40 mm, 6 mm)、Location (0 mm, 0 mm, 28 mm)、Scale (1, 1, 1)。這是獨立 Blender 的暫時分離檢視，不是實體試配。",
+          "note": "本圖作用中為 Body，Dimensions 60 × 40 × 31.5 屬含柱盒體；蓋子尺寸請看前一張。"
+        }
+      ],
+      "figureComparisons": [
+        {
+          "alt": "暫把 Lid 上抬 12 mm，查看新定位柱與對應孔，再於存檔前移回",
+          "caption": "2026-10-25 助教示範實拍：獨立 Blender 5.2.1 LTS（English (US)、出廠設定），不是你的畫面；橘框為網頁標示，原圖未修改。"
+        }
+      ],
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Lid上抬與Body分離，對應孔可見；activeBody Item60/40/31.5。",
+      "requiresRawOrOtherEvidence": "長定位柱被蓋板遮住，不能達成『查看定位柱』；LidZ28需raw（N面板是Body）。",
+      "result": "compatible_with_presentation_issue",
+      "severity": "low",
+      "findingId": "OCCLUDED-TENON-06-01-15"
+    },
+    {
+      "step": "06-01",
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-16-assembly-geometry.png",
+      "references": [
+        "06-01.operationRun.events[15].figure.path"
+      ],
+      "sha256": "a01cae28fb6a90012c0d64889f99e40e5cecd6a307033a2336da30bf65385fb4",
+      "actualSha256": "a01cae28fb6a90012c0d64889f99e40e5cecd6a307033a2336da30bf65385fb4",
+      "hashMatches": true,
+      "eventComparisons": [
+        {
+          "seq": 16,
+          "action": "將 Lid 移回名義位置，從實際 32 邊輪廓重算相位、孔柱間隙與嵌入量",
+          "observed": "柱孔名義外接直徑總差 0.4 mm、名義單邊 0.2 mm；實際最小法向間隙 0.199036214 mm、對邊總差 0.398074943 mm。柱伸入孔 1.5 mm，柱頂到蓋頂餘 0.5 mm；僅數位幾何試驗。",
+          "note": "柱孔同相位仍需實際網格核對。數位間隙不是製造公差；列印／實測／試配結果及正式合格間隙維持空白。"
+        }
+      ],
+      "figureComparisons": [
+        {
+          "alt": "將 Lid 移回名義位置，從實際 32 邊輪廓重算相位、孔柱間隙與嵌入量",
+          "caption": "2026-10-25 助教示範實拍：獨立 Blender 5.2.1 LTS（English (US)、出廠設定），不是你的畫面；橘框為網頁標示，原圖未修改。"
+        }
+      ],
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Lid回組裝，孔內可見柱頂近似圓面；activeBody高31.5。",
+      "requiresRawOrOtherEvidence": "32邊相位/0.199036214法向/0.398074943對邊差/嵌1.5/餘0.5均需mesh，無畫面標尺。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "06-01",
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-17-save-dialog.png",
+      "references": [
+        "06-01.operationRun.events[16].figure.path"
+      ],
+      "sha256": "d0e6c3b175be31596322aa305cabc7b44499d2bce8cce4feeee3a2c611a3998e",
+      "actualSha256": "d0e6c3b175be31596322aa305cabc7b44499d2bce8cce4feeee3a2c611a3998e",
+      "hashMatches": true,
+      "eventComparisons": [
+        {
+          "seq": 17,
+          "action": "File > Save As，另存新單元場景 u06_locating_tenon_v001.blend",
+          "observed": "資料夾 D:\\others\\study\\Blender-Learning\\learning\\evidence\\06\\2026-10-25-lesson06-tenon-demo-v006\\demo-files\\；檔名 u06_locating_tenon_v001.blend。",
+          "note": null
+        }
+      ],
+      "figureComparisons": [
+        {
+          "alt": "File > Save As，另存新單元場景 u06_locating_tenon_v001.blend",
+          "caption": "2026-10-25 助教示範實拍：獨立 Blender 5.2.1 LTS（English (US)、出廠設定），不是你的畫面；橘框為網頁標示，原圖未修改。"
+        }
+      ],
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "SaveAs目標u06_locating_tenon_v001.blend，demo-files尾段。",
+      "requiresRawOrOtherEvidence": "完整路徑／不覆寫原檔需實檔。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "06-01",
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-18-saved.png",
+      "references": [
+        "06-01.operationRun.events[17].figure.path"
+      ],
+      "sha256": "6da3ef485a2680a2b3fc97f3c28837f37b57568145455cb064ddff7198a752e3",
+      "actualSha256": "6da3ef485a2680a2b3fc97f3c28837f37b57568145455cb064ddff7198a752e3",
+      "hashMatches": true,
+      "eventComparisons": [
+        {
+          "seq": 18,
+          "action": "按 Save As，讀回新場景檔大小與 SHA-256",
+          "observed": "已另存 u06_locating_tenon_v001.blend，105466 bytes，SHA-256 f94dc6c5d342f04c41dddc37a4682805a5f7d87b5cf7a8b7bda37cd8ec51040f。原來源與副本未改。",
+          "note": null
+        }
+      ],
+      "figureComparisons": [
+        {
+          "alt": "按 Save As，讀回新場景檔大小與 SHA-256",
+          "caption": "2026-10-25 助教示範實拍：獨立 Blender 5.2.1 LTS（English (US)、出廠設定），不是你的畫面；橘框為網頁標示，原圖未修改。"
+        }
+      ],
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Saved as u06_locating_tenon_v001.blend通知，組裝概觀。",
+      "requiresRawOrOtherEvidence": "105466B/hash及原檔不變需檔案；Item屬Body。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "06-01",
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-19-open-saved.png",
+      "references": [
+        "06-01.operationRun.events[18].figure.path"
+      ],
+      "sha256": "f86c450cc8192dab3d0a6d317d9bbe2071cc81477076c9de8772b939075b64f9",
+      "actualSha256": "f86c450cc8192dab3d0a6d317d9bbe2071cc81477076c9de8772b939075b64f9",
+      "hashMatches": true,
+      "eventComparisons": [
+        {
+          "seq": 19,
+          "action": "File > Open，重新開啟本次已保存的定位榫場景 v001",
+          "observed": "資料夾 D:\\others\\study\\Blender-Learning\\learning\\evidence\\06\\2026-10-25-lesson06-tenon-demo-v006\\demo-files\\；檔名 u06_locating_tenon_v001.blend。",
+          "note": null
+        }
+      ],
+      "figureComparisons": [
+        {
+          "alt": "File > Open，重新開啟本次已保存的定位榫場景 v001",
+          "caption": "2026-10-25 助教示範實拍：獨立 Blender 5.2.1 LTS（English (US)、出廠設定），不是你的畫面；橘框為網頁標示，原圖未修改。"
+        }
+      ],
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "Open列表u06_locating_tenon_v001.blend、103KiB與demo-files尾段，底部同檔名。",
+      "requiresRawOrOtherEvidence": "bytes/hash與完整路徑需檔案；尚未Open。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    },
+    {
+      "step": "06-01",
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-20-reopened-verified.png",
+      "references": [
+        "06-01.operationRun.events[19].figure.path"
+      ],
+      "sha256": "81115ee7e905909ca2a8996baec3f0299b667aae9ee8bbdadb2ce736fec4f7f2",
+      "actualSha256": "81115ee7e905909ca2a8996baec3f0299b667aae9ee8bbdadb2ce736fec4f7f2",
+      "hashMatches": true,
+      "eventComparisons": [
+        {
+          "seq": 20,
+          "action": "按 Open，重讀最終 Body／Lid 網格與隱藏工具，核對版本並保存驗證",
+          "observed": "重新開啟後場景 hash 與幾何一致。柱孔名義外接直徑總差 0.4 mm、名義單邊 0.2 mm；實際最小法向間隙 0.199036214 mm、對邊總差 0.398074943 mm。柱伸入孔 1.5 mm，柱頂到蓋頂餘 0.5 mm；僅數位幾何試驗。未匯出 STL、未列印或試配；合格值留空。",
+          "note": "本次是 06-01 定位榫幾何示範，不代學員確認完成；不推定第五單元已有實體合格間隙。"
+        }
+      ],
+      "figureComparisons": [
+        {
+          "alt": "按 Open，重讀最終 Body／Lid 網格與隱藏工具，核對版本並保存驗證",
+          "caption": "2026-10-25 助教示範實拍：獨立 Blender 5.2.1 LTS（English (US)、出廠設定），不是你的畫面；橘框為網頁標示，原圖未修改。"
+        }
+      ],
+      "inspection": {
+        "method": "actual_view_image",
+        "actuallyOpenedThisPath": true,
+        "duplicateOf": null
+      },
+      "observations": "重開名義組裝，Body高31.5、Lid孔內柱頂面可見；工具在Outliner隱藏。",
+      "requiresRawOrOtherEvidence": "相位/間隙/嵌入量/hash等由raw，圖無量測欄；不證實體試配。",
+      "result": "compatible_visible_content",
+      "severity": "none",
+      "findingId": null
+    }
+  ]
+}

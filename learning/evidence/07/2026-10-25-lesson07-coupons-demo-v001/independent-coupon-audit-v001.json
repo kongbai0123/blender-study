@@ -1,0 +1,368 @@
+{
+  "schema_version": 1,
+  "passed": true,
+  "kind": "independent_coupon_length_audit",
+  "audited_at": "2026-10-25T09:32:37.022855+00:00",
+  "run_dir": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\07\\2026-10-25-lesson07-coupons-demo-v001",
+  "audit_script_sha256": "5983a333290bbfc8decd233bccb04735b27a746738e87183275889df4b561ea3",
+  "verification_sha256": "ecea0a82400931113ad34f9c1fe054d6711835558d268973680a029ea656950b",
+  "source_scene_sha256": "360417f208287a94ca13501f4365b70b3396ca6aba579231e0f8d2a442ecf47d",
+  "plan_sha256": "35905a851b846b757bbdbb9321708606b4497a0dc4d5d1cdea0f8735d303dd33",
+  "saved_scene_sha256": "22072532eed0f6fcc506bb435ed8d65fcaeaef583ea41d90c4e8c9665b82e9b8",
+  "method": "Independent all-42-point piecewise native UI edit, unchanged oriented polygon indices, all-point rigid pose, directed-edge topology/volume and actual loop-triangle bed areas; no coupon or semantic checker called.",
+  "source_topology": {
+    "vertices": 42,
+    "triangles": 80,
+    "edges": 120,
+    "non_manifold_edges": 0,
+    "connected_shells": 1,
+    "euler_characteristic": 2,
+    "genus": 0,
+    "volume_mm3": 339.4844908728352,
+    "bounds_mm": {
+      "min": [
+        -4.5,
+        -24.5,
+        -11.0
+      ],
+      "max": [
+        4.5,
+        -19.900001525878906,
+        13.0
+      ]
+    },
+    "dimensions_mm": [
+      9.0,
+      4.599998474121094,
+      24.0
+    ],
+    "native_polygon_count": 41
+  },
+  "source_upper_vertex_count": 14,
+  "source_unchanged_vertex_count": 28,
+  "input_sha256": {
+    "source_snap_tool_mesh.json": "cb01f749d093467ec90742d38f90243067cdec00eee545c6c81f3f7b20a6aee7",
+    "A_L19_source_frame_mesh.json": "6caa2b9bf8a92326651f78d0da75ec8e270c338171323567d524d6c51627ac55",
+    "A_L19_candidate_mesh.json": "5646200083769661833503b5177306fa0d80e0117597dad691b83f97b7b7530c",
+    "B_L17_source_frame_mesh.json": "52c114ca9969d77c97cf3d47637874c98b6b564699945e279e9129890d7ad366",
+    "B_L17_candidate_mesh.json": "dc7cb34b232c1853fad6ae67f5de3149a63f0da2bbf7eac595fa062ef4acbcc7",
+    "C_L21_source_frame_mesh.json": "c0df90f1a980fabdb9c23de0a3e9ce78aa5239670d1798f5ba9fbff13ba9f889",
+    "C_L21_candidate_mesh.json": "0a40675dd41b0c8d6eb96376295ca0aaa090696b3349360187b3f0e23bcfc8c2"
+  },
+  "variants": {
+    "A_L19": {
+      "source_frame_topology": {
+        "vertices": 42,
+        "triangles": 80,
+        "edges": 120,
+        "non_manifold_edges": 0,
+        "connected_shells": 1,
+        "euler_characteristic": 2,
+        "genus": 0,
+        "volume_mm3": 339.4844908728352,
+        "bounds_mm": {
+          "min": [
+            -4.5,
+            -24.5,
+            -11.0
+          ],
+          "max": [
+            4.5,
+            -19.900001525878906,
+            13.0
+          ]
+        },
+        "dimensions_mm": [
+          9.0,
+          4.599998474121094,
+          24.0
+        ],
+        "native_polygon_count": 41
+      },
+      "candidate_topology": {
+        "vertices": 42,
+        "triangles": 80,
+        "edges": 120,
+        "non_manifold_edges": 0,
+        "connected_shells": 1,
+        "euler_characteristic": 2,
+        "genus": 0,
+        "volume_mm3": 339.4847682164305,
+        "bounds_mm": {
+          "min": [
+            -1.500000238418579,
+            -14.300000190734863,
+            -6.556707887739321e-08
+          ],
+          "max": [
+            22.5,
+            -9.699999809265137,
+            9.0
+          ]
+        },
+        "dimensions_mm": [
+          24.00000023841858,
+          4.600000381469727,
+          9.000000065567079
+        ],
+        "native_polygon_count": 41
+      },
+      "geometric_L_mm": 19.0,
+      "actual_bearing_z_mm": 11.0,
+      "actual_root_plane_z_mm": -8.0,
+      "whole_coupon_height_mm": 24.0,
+      "max_source_frame_point_residual_mm": 0.0,
+      "max_candidate_point_residual_mm": 1.3486991523486091e-06,
+      "native_upper14_and_unchanged28_verified": true,
+      "source_polygon_topology_preserved": true,
+      "bed_contact_triangle_count": 2,
+      "bed_contact_area_mm2": 13.800001144409194,
+      "raised_feature_heights": {
+        "straight_beam": {
+          "world_z_range_mm": [
+            1.4999990463256836,
+            7.5
+          ],
+          "all_samples_above_bed": true
+        },
+        "root_fillet_and_miters": {
+          "world_z_range_mm": [
+            0.9000000357627869,
+            8.09999942779541
+          ],
+          "all_samples_above_bed": true
+        },
+        "upper_hook": {
+          "world_z_range_mm": [
+            1.4999990463256836,
+            7.499999046325684
+          ],
+          "all_samples_above_bed": true
+        }
+      },
+      "support_required": null
+    },
+    "B_L17": {
+      "source_frame_topology": {
+        "vertices": 42,
+        "triangles": 80,
+        "edges": 120,
+        "non_manifold_edges": 0,
+        "connected_shells": 1,
+        "euler_characteristic": 2,
+        "genus": 0,
+        "volume_mm3": 320.28450918338206,
+        "bounds_mm": {
+          "min": [
+            -4.5,
+            -24.5,
+            -11.0
+          ],
+          "max": [
+            4.5,
+            -19.900001525878906,
+            11.0
+          ]
+        },
+        "dimensions_mm": [
+          9.0,
+          4.599998474121094,
+          22.0
+        ],
+        "native_polygon_count": 41
+      },
+      "candidate_topology": {
+        "vertices": 42,
+        "triangles": 80,
+        "edges": 120,
+        "non_manifold_edges": 0,
+        "connected_shells": 1,
+        "euler_characteristic": 2,
+        "genus": 0,
+        "volume_mm3": 320.28472258068575,
+        "bounds_mm": {
+          "min": [
+            -1.500000238418579,
+            -2.299999952316284,
+            -6.556707887739321e-08
+          ],
+          "max": [
+            20.5,
+            2.299999952316284,
+            9.0
+          ]
+        },
+        "dimensions_mm": [
+          22.00000023841858,
+          4.599999904632568,
+          9.000000065567079
+        ],
+        "native_polygon_count": 41
+      },
+      "geometric_L_mm": 17.0,
+      "actual_bearing_z_mm": 9.0,
+      "actual_root_plane_z_mm": -8.0,
+      "whole_coupon_height_mm": 22.0,
+      "max_source_frame_point_residual_mm": 0.0,
+      "max_candidate_point_residual_mm": 1.2672121301573098e-06,
+      "native_upper14_and_unchanged28_verified": true,
+      "source_polygon_topology_preserved": true,
+      "bed_contact_triangle_count": 2,
+      "bed_contact_area_mm2": 13.79999971389772,
+      "raised_feature_heights": {
+        "straight_beam": {
+          "world_z_range_mm": [
+            1.4999991655349731,
+            7.5
+          ],
+          "all_samples_above_bed": true
+        },
+        "root_fillet_and_miters": {
+          "world_z_range_mm": [
+            0.9000000357627869,
+            8.09999942779541
+          ],
+          "all_samples_above_bed": true
+        },
+        "upper_hook": {
+          "world_z_range_mm": [
+            1.4999990463256836,
+            7.499999046325684
+          ],
+          "all_samples_above_bed": true
+        }
+      },
+      "support_required": null
+    },
+    "C_L21": {
+      "source_frame_topology": {
+        "vertices": 42,
+        "triangles": 80,
+        "edges": 120,
+        "non_manifold_edges": 0,
+        "connected_shells": 1,
+        "euler_characteristic": 2,
+        "genus": 0,
+        "volume_mm3": 358.6844725622883,
+        "bounds_mm": {
+          "min": [
+            -4.5,
+            -24.5,
+            -11.0
+          ],
+          "max": [
+            4.5,
+            -19.900001525878906,
+            15.0
+          ]
+        },
+        "dimensions_mm": [
+          9.0,
+          4.599998474121094,
+          26.0
+        ],
+        "native_polygon_count": 41
+      },
+      "candidate_topology": {
+        "vertices": 42,
+        "triangles": 80,
+        "edges": 120,
+        "non_manifold_edges": 0,
+        "connected_shells": 1,
+        "euler_characteristic": 2,
+        "genus": 0,
+        "volume_mm3": 358.6847732995147,
+        "bounds_mm": {
+          "min": [
+            -1.500000238418579,
+            9.699999809265137,
+            -6.556707887739321e-08
+          ],
+          "max": [
+            24.5,
+            14.300000190734863,
+            9.0
+          ]
+        },
+        "dimensions_mm": [
+          26.00000023841858,
+          4.600000381469727,
+          9.000000065567079
+        ],
+        "native_polygon_count": 41
+      },
+      "geometric_L_mm": 21.0,
+      "actual_bearing_z_mm": 13.0,
+      "actual_root_plane_z_mm": -8.0,
+      "whole_coupon_height_mm": 26.0,
+      "max_source_frame_point_residual_mm": 0.0,
+      "max_candidate_point_residual_mm": 1.4354699347963686e-06,
+      "native_upper14_and_unchanged28_verified": true,
+      "source_polygon_topology_preserved": true,
+      "bed_contact_triangle_count": 2,
+      "bed_contact_area_mm2": 13.800001144409194,
+      "raised_feature_heights": {
+        "straight_beam": {
+          "world_z_range_mm": [
+            1.4999990463256836,
+            7.5
+          ],
+          "all_samples_above_bed": true
+        },
+        "root_fillet_and_miters": {
+          "world_z_range_mm": [
+            0.9000000357627869,
+            8.09999942779541
+          ],
+          "all_samples_above_bed": true
+        },
+        "upper_hook": {
+          "world_z_range_mm": [
+            1.499998927116394,
+            7.499999046325684
+          ],
+          "all_samples_above_bed": true
+        }
+      },
+      "support_required": null
+    }
+  },
+  "snapshot_sha256": {
+    "source-snapshot/run_demo.py": "8a0afa081716cab276c99fc811f6a2453ac82f45b28d8a0b1c639eef67347058",
+    "source-snapshot/blender_demo.py": "96321d8180b1e05a9b77d47551adefbf43ddd04e6add2505eca3b30ceb831a6c",
+    "source-snapshot/common.py": "45044c48522bf5a2dee130382f902a07243e82027addaf6594cbae59b3369c3d",
+    "source-snapshot/lesson07_coupons.py": "69a54e555a00ebc99cfac5ed7e13abed37ff5519de44a97dd531ab25499210f5",
+    "source-snapshot/coupon_checks.py": "d29ac0840e61c4da9c39cce6bc8aeda58649ac13e2de79399e01b66ea6ceaa4c",
+    "source-snapshot/overhang_checks.py": "66023ffe41bb121f75c77b6db362fc559075c7ba56decd9c00d75832c57bb25a",
+    "source-snapshot/snapfit_checks.py": "0b37846f663d2607764158046cf130d81e15792c006eed9d9631f8ba28e7f4c3",
+    "source-snapshot/snapfit_stl_checks.py": "71b7dcb2c9ee427b08f9979728ce440a15553a599b2bdbf6ccbf98f5e18f3c42",
+    "source-snapshot/stl_checks.py": "36f09e213a7759a95ea07cee1f70fbaaaf2287551b9c97d9308778a658fe922c",
+    "source-snapshot/tenon_checks.py": "4defe55d142ac78be924cef8d82abc3bd24bd2db6f380332eb29cb5b0d89d13d",
+    "source-snapshot/lid_checks.py": "b2e2438126695cca24cb560dce046ca743c2de2c348116141ff6ed75c42e52c3",
+    "source-snapshot/coupon-plan-v001.json": "35905a851b846b757bbdbb9321708606b4497a0dc4d5d1cdea0f8735d303dd33",
+    "source-snapshot/source-orientation-verification.json": "ab84fcc47ee59d2303a1174a8b67c27c898255c5c556e3b0deaee616741b9dc7",
+    "source-snapshot/source-snap-tool-reference.json": "c60a6ed737f426277e0157ad1f7554a3070ba4395aec319693d6a2d9104c6140",
+    "source-snapshot/source-geometry-record-v001.json": "4f201124cbf51dc849c7978ee85f7ff5e58ca4273cdd9b006d3eba6c52521b7a",
+    "source-snapshot/source-export-record-v001.json": "b3b3745d714a628b5155b01fbfeca81cda50855aaeb95aa757f616ea58ee268a"
+  },
+  "numeric_position_epsilon_mm": 0.0001,
+  "epsilon_role": "Floating point reconstruction only; not manufacturing, support, strength or fit acceptance",
+  "material_grade": null,
+  "epsilon_allow": null,
+  "forces": null,
+  "printed": false,
+  "fit_tested": false,
+  "physical_measurements": null,
+  "qualified_strength_N": null,
+  "qualified_clearance_mm": null,
+  "improvement_validated": null,
+  "improvement_assessed": false,
+  "effective_mechanical_length_mm": null,
+  "anchor_clamping_or_fixture": null,
+  "full_box_boundary_equivalence": null,
+  "support_required": null,
+  "adjacent_y_projection_gaps_mm": [
+    7.3999998569488525,
+    7.3999998569488525
+  ]
+}

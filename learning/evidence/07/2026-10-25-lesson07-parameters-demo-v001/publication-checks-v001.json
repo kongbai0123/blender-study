@@ -1,0 +1,186 @@
+{
+  "recordedAt": "2026-10-25T07:14:10.227404+00:00",
+  "evidencePassed": true,
+  "publicationPending": false,
+  "browserProofPending": false,
+  "images": [
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/07-01-01-source-open-dialog.png",
+      "status": 200,
+      "sha256": "152936b79968f14cd0dfe945027ff1f7f83de5e79380e3f40a456c7685054a36",
+      "width": 1060,
+      "height": 600,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/07-01-02-source-checked.png",
+      "status": 200,
+      "sha256": "553d16ae73d6789e63151c705c2c9231cee91ba7a5712084489555ef213e1e64",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/07-01-03-reference-top.png",
+      "status": 200,
+      "sha256": "4da568b6e1c627bed94f9597e4352d866a5761a755f540b838f0e58660e3f8d2",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/07-01-04-rim-face.png",
+      "status": 200,
+      "sha256": "71f4e90f4ad1e2416be0df61bdb68eda91775f1eda878c732023f62cbaaf3cda",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/07-01-05-inner-floor.png",
+      "status": 200,
+      "sha256": "a78e713c12c3af31a8e6d3d717bea1a8ca99891e3524c6991459654c174d8e6d",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/07-01-06-outer-floor.png",
+      "status": 200,
+      "sha256": "6c583bd5aec0207b5c2c8c51ba50343bfa65b2ee6cea6c713ed21f5e5a983e52",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/07-01-07-non-manifold.png",
+      "status": 200,
+      "sha256": "cced4f7a89cbf44e9fe75a8cdfeefd24d06b7adff7c8407a09ed1132ea9b4962",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/07-01-08-reference-overview.png",
+      "status": 200,
+      "sha256": "76bd22f0091976802281b444aa8703b9cd939a107c4a70d4074a0d137816a576",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/07-01-09-save-dialog.png",
+      "status": 200,
+      "sha256": "77eea2adedd435def8c20c832f8bb194a6c2e53e20d0a7165ce1d418c9968069",
+      "width": 1060,
+      "height": 600,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/07-01-10-saved.png",
+      "status": 200,
+      "sha256": "5158e8e781a71aa2ad82690c178ce18b75e4a19494d851824073d5f4c6d3655f",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/07-01-11-open-saved.png",
+      "status": 200,
+      "sha256": "67e5701b0471e71e1424c035831cc4a9d0757e451474f3ca55a0f14533e940ae",
+      "width": 1060,
+      "height": 600,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/07-01-12-reopened-verified.png",
+      "status": 200,
+      "sha256": "05ccab2799c6d1965c1878130815b63d2bbff9cd4b87417c2d63458e52bc3472",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    }
+  ],
+  "files": [
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/parameter-record-v001.json",
+      "status": 200,
+      "sha256": "57d411f24486aad351056854b8eb427aae853b99f290372c9d0294d367ac6ead",
+      "bytes": 16999,
+      "contentDisposition": null
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/demo-files/u07_snap_reference_v001.blend",
+      "status": 200,
+      "sha256": "6a6b6c03295c8b6047b97c3efdea9884954b714da87b45b7aa36b4d2b612d3a9",
+      "bytes": 97962,
+      "contentDisposition": "attachment"
+    }
+  ],
+  "changedStepIds": [
+    "07-01"
+  ],
+  "progressSha256": "d92e4f2ee78a1cf41386816b8616bf635b89fb25f8bfd813ac00cd20ed20b4ef",
+  "progressUnchanged": true,
+  "independentAuditPassed": true,
+  "browserProof": {
+    "recordedAt": "2026-10-25T07:17:21.798011+00:00",
+    "url": "http://127.0.0.1:8766/",
+    "lesson": "07",
+    "step": "07-01",
+    "browser": "ChatGPT in-app browser",
+    "screenshots": [
+      {
+        "path": "learning/evidence/ui/2026-10-25-lesson07-parameters-demo-v001-overview.jpg",
+        "role": "overview",
+        "sha256": "da2dac8c15e93ecd76a5ef4e85760991dddef9023b8f25a031ded6e599435ecb",
+        "bytes": 37598,
+        "width": 304,
+        "height": 848,
+        "pixelEdits": false
+      },
+      {
+        "path": "learning/evidence/ui/2026-10-25-lesson07-parameters-demo-v001-parameters.jpg",
+        "role": "parameters",
+        "sha256": "19116e61d728099100e05341e6a30bddb96c0c224ee3486db8431a266d77bc78",
+        "bytes": 35367,
+        "width": 304,
+        "height": 848,
+        "pixelEdits": false
+      }
+    ],
+    "visibleChecks": [
+      "原盒實拍連回完整原圖",
+      "11項尺寸均待定",
+      "材料及允許應變待定",
+      "公式尚未代入，無強度判定",
+      "參考場景與參數JSON連結"
+    ],
+    "learnerCompletionConfirmed": false
+  },
+  "apiCatalogAndProgressMatchDisk": true,
+  "tests": {
+    "tutor": {
+      "run": 165,
+      "passed": 164,
+      "skipped": 1,
+      "skipReason": "Windows symlink privilege unavailable"
+    },
+    "server": {
+      "run": 17,
+      "passed": 17
+    },
+    "javascriptSyntax": "passed"
+  },
+  "passed": true,
+  "completedAt": "2026-10-25T07:18:58.457002+00:00",
+  "referenceManifest": {
+    "path": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/reference-scene-manifest-v001.json",
+    "sha256": "3f04f19e711632b8e921ad72d8b7f8cd7373c0690d748e7d7ac35229ed4253c7"
+  },
+  "journal": {
+    "path": "learning/journal/2026-10-25-lesson07-parameters-demo-v001.md",
+    "sha256": "0d1ade38884fdd46288c479fb063c64d7e6d67000a496b4969559239b7752d91"
+  },
+  "onlyExpectedStepChanged": true
+}

@@ -1,0 +1,430 @@
+{
+ "scenario": "D:\\others\\study\\Blender-Learning\\learning\\tutor\\scenarios\\lesson06_tenon.py",
+ "blender": "5.2.1 LTS",
+ "buildHash": "9e2066aef7ef",
+ "records": [
+  {
+   "seq": 1,
+   "step": "06-01",
+   "slug": "source-open-dialog",
+   "recordedAt": "2026-10-25T05:57:49.174Z",
+   "action": "File > Open，開啟已驗證的 05-05 Body＋Lid 場景同雜湊副本",
+   "observed": "資料夾 D:\\others\\study\\Blender-Learning\\learning\\evidence\\06\\2026-10-25-lesson06-tenon-demo-v006\\demo-files\\sources\\；檔名 u05_lid_v001.blend。",
+   "window": "FILE_BROWSER",
+   "highlights": [
+    {
+     "x": 248,
+     "y": 566,
+     "w": 780,
+     "h": 25,
+     "label": "05-05 來源 v001"
+    },
+    {
+     "x": 789,
+     "y": 566,
+     "w": 126,
+     "h": 25,
+     "label": "Open"
+    }
+   ],
+   "clicks": [],
+   "file": "06-01-01-source-open-dialog.png",
+   "width": 1060,
+   "height": 600,
+   "sha256": "7d488437f09e61da0f3e7c9a3f5683c95ed5b2cd944341b82d55dcd78c41948d"
+  },
+  {
+   "seq": 2,
+   "step": "06-01",
+   "slug": "source-geometry",
+   "recordedAt": "2026-10-25T05:57:56.974Z",
+   "action": "修改前重驗既有盒體與上蓋，這張作用中物件是 Body",
+   "observed": "修改前重驗：盒殼 60 × 40 × 30、內腔 56 × 36 × 28、壁／底 2；蓋板厚 2、環唇深 4、Lid 整高 6 mm；來源與副本 hash 一致。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 963,
+     "y": 383,
+     "w": 228,
+     "h": 77,
+     "label": "原盒 Body 60 × 40 × 30 mm"
+    }
+   ],
+   "clicks": [],
+   "file": "06-01-02-source-geometry.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "72c84c2c8c9169f69e2095eba51abe81efb608686ef02aac1d1a8be104ca42f0"
+  },
+  {
+   "seq": 3,
+   "step": "06-01",
+   "slug": "pin-tool",
+   "recordedAt": "2026-10-25T05:58:19.775Z",
+   "action": "F3 Add Cylinder，輸入 4 × 4 × 30 mm，Apply Scale，移到 (23,13,1.5) 並命名 TenonTool",
+   "observed": "TenonTool Dimensions (4 mm, 4 mm, 30 mm)、Location (23 mm, 13 mm, 1.5 mm)、Scale (1, 1, 1)。實際 32 段；建構底 -13.5、頂 16.5 mm，與底板體積交入 0.5 mm，合併後內部底面會消失。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 963,
+     "y": 133,
+     "w": 228,
+     "h": 59,
+     "label": "Location 23 / 13 / 1.5 mm"
+    },
+    {
+     "x": 963,
+     "y": 383,
+     "w": 228,
+     "h": 77,
+     "label": "定位柱 4 × 4 × 30 mm"
+    }
+   ],
+   "clicks": [],
+   "file": "06-01-03-pin-tool.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "489aacf7e93ea671b4f96b71d4882f13ffb978a4eebdcba42c4d7fa62b827093",
+   "note": "這些是本次助教幾何示範尺寸。單一圓柱用於對位，配合既有矩形唇邊；不宣稱圓柱本身完全限制旋轉。"
+  },
+  {
+   "seq": 4,
+   "step": "06-01",
+   "slug": "union-operation",
+   "recordedAt": "2026-10-25T05:58:23.975Z",
+   "action": "選 Body，F3 Add Boolean Modifier，將 Operation 切為 Union",
+   "observed": "Body：Operation UNION、Solver EXACT、Operand 尚未指定。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 1343,
+     "y": 341,
+     "w": 62,
+     "h": 20,
+     "label": "Union"
+    }
+   ],
+   "clicks": [],
+   "file": "06-01-04-union-operation.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "337c93ddb306603ad421580bf60d990c1d789da30a9f2b8832b0c87f5b9239eb"
+  },
+  {
+   "seq": 5,
+   "step": "06-01",
+   "slug": "union-assigned",
+   "recordedAt": "2026-10-25T05:58:31.475Z",
+   "action": "Object 滴管指定 TenonTool，隱藏建構柱，預覽 Body 的 Union",
+   "observed": "Body：Operation UNION、Solver EXACT、Operand TenonTool。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 1351,
+     "y": 389,
+     "w": 104,
+     "h": 22,
+     "label": "TenonTool"
+    }
+   ],
+   "clicks": [],
+   "file": "06-01-05-union-assigned.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "aa5753fc9837565f32941f3ed5ba86d0c3eb3dbd2d71913805be63b699922b5b"
+  },
+  {
+   "seq": 6,
+   "step": "06-01",
+   "slug": "union-applied",
+   "recordedAt": "2026-10-25T05:58:34.375Z",
+   "action": "修改器下拉 > Apply，從最終 Body 網格量底板、柱頂、連通性與體積",
+   "observed": "原盒殼 60 × 40 × 30、內腔基準 56 × 36 × 28、壁／底 2 mm；含定位柱的 Body 整體高 31.5 mm。柱與底板已 Union 成單一封閉殼，非流形邊 0；突出段 Z -13～16.5 mm。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 963,
+     "y": 383,
+     "w": 228,
+     "h": 77,
+     "label": "含柱整高 31.5；原盒殼高 30 mm"
+    }
+   ],
+   "clicks": [],
+   "file": "06-01-06-union-applied.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "cb3cf4356056079dc33059d598cd84463c6137093c25cec14ffa3ef8add298dc"
+  },
+  {
+   "seq": 7,
+   "step": "06-01",
+   "slug": "body-non-manifold",
+   "recordedAt": "2026-10-25T05:58:38.775Z",
+   "action": "選 Body，Tab > 邊選取 > Select None > Select Non Manifold",
+   "observed": "Body 非空網格；Select Non Manifold 選到邊 0，實際非流形邊 0。",
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "06-01-07-body-non-manifold.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "43772664e87cf91bd047764c7a1738dc27ff9f4e1e4c82b5891589db2b358222"
+  },
+  {
+   "seq": 8,
+   "step": "06-01",
+   "slug": "hole-tool",
+   "recordedAt": "2026-10-25T05:58:59.975Z",
+   "action": "Add Cylinder，設 4.4 × 4.4 × 10 mm、Apply Scale，中心 (23,13,16)，命名 HoleTool",
+   "observed": "HoleTool Dimensions (4.4 mm, 4.4 mm, 10 mm)、Location (23 mm, 13 mm, 16 mm)、Scale (1, 1, 1)。實際 32 段，Z 11～21，跨過蓋板 15～17；最終穿孔另從差集後網格驗證。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 963,
+     "y": 383,
+     "w": 228,
+     "h": 77,
+     "label": "孔切割體 4.4 × 4.4 × 10 mm"
+    }
+   ],
+   "clicks": [],
+   "file": "06-01-08-hole-tool.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "6c3b1240f351df44b8c6545559405e4d3f9a5e7786c2bdf33b99113368b3f570",
+   "note": "4.4 − 4 = 0.4 mm 是外接直徑總差試驗值；不是已列印或已試配的合格值。"
+  },
+  {
+   "seq": 9,
+   "step": "06-01",
+   "slug": "hole-boolean-empty",
+   "recordedAt": "2026-10-25T05:59:07.476Z",
+   "action": "選 Lid 新增 Boolean，先查看實際選項與 Object 欄位位置",
+   "observed": "Lid：Operation DIFFERENCE、Solver EXACT、Operand 尚未指定。",
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "06-01-09-hole-boolean-empty.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "84bedd32c38b8fb73ab8a89fbd71c166010d64109a0beca5fe1496fccb1020a1"
+  },
+  {
+   "seq": 10,
+   "step": "06-01",
+   "slug": "hole-object-search",
+   "recordedAt": "2026-10-25T05:59:09.276Z",
+   "action": "點 Object 欄位，輸入 HoleTool，從實際搜尋清單選建構切割體",
+   "observed": "Lid：Operation DIFFERENCE、Solver EXACT、Operand 尚未指定。",
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "06-01-10-hole-object-search.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "00847585c0edf5864b6951154cbf07c237ec876f31bf38ee20d349c6a525d3f8",
+   "note": "用物件名稱搜尋，避免滴管沒有指定到預期物件。"
+  },
+  {
+   "seq": 11,
+   "step": "06-01",
+   "slug": "hole-difference",
+   "recordedAt": "2026-10-25T05:59:15.776Z",
+   "action": "確認 Lid 的 Boolean Difference 已指定 HoleTool，隱藏切割體查看孔",
+   "observed": "Lid：Operation DIFFERENCE、Solver EXACT、Operand HoleTool。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 1408,
+     "y": 341,
+     "w": 67,
+     "h": 20,
+     "label": "Difference"
+    }
+   ],
+   "clicks": [],
+   "file": "06-01-11-hole-difference.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "9569d52467d2d3e4da729872f1e2603df0e2677e2f2d55a4ef0704fc7e70e582"
+  },
+  {
+   "seq": 12,
+   "step": "06-01",
+   "slug": "hole-applied",
+   "recordedAt": "2026-10-25T05:59:18.676Z",
+   "action": "Apply Difference，從最終孔壁量 32 邊孔，射線確認貫穿蓋板",
+   "observed": "Lid 外形 60 × 40 × 6、板厚 2、環唇深 4／壁 2 mm；(23,13) 的實際 32 邊孔外接直徑 4.4 mm，Z 15～17 貫穿；單殼、非流形邊 0，新增穿孔後 genus 1。",
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "06-01-12-hole-applied.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "2183fd50002e03ffa24f26eee08389f970c3a0eabace8ac2f05cfede00c46c8b",
+   "note": "孔與既有環唇最近淨距約 0.6 mm，環壁未被切穿。閉合網格可以有真正穿孔，這裡 genus 由 0 變 1。"
+  },
+  {
+   "seq": 13,
+   "step": "06-01",
+   "slug": "lid-non-manifold",
+   "recordedAt": "2026-10-25T05:59:23.076Z",
+   "action": "選 Lid，Tab > 邊選取 > Select None > Select Non Manifold",
+   "observed": "Lid 非空網格；Select Non Manifold 選到邊 0，實際非流形邊 0。",
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "06-01-13-lid-non-manifold.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "d34c0880aa1f1ec9ca6e91c969e460a249f8ebe416d590b84c33aa320c084dc7"
+  },
+  {
+   "seq": 14,
+   "step": "06-01",
+   "slug": "lid-underside",
+   "recordedAt": "2026-10-25T05:59:28.476Z",
+   "action": "底部斜視，核對實際穿孔、環形唇邊與 Item Dimensions",
+   "observed": "Lid 外形 60 × 40 × 6、板厚 2、環唇深 4／壁 2 mm；(23,13) 的實際 32 邊孔外接直徑 4.4 mm，Z 15～17 貫穿；單殼、非流形邊 0，新增穿孔後 genus 1。",
+   "window": "main",
+   "highlights": [
+    {
+     "x": 963,
+     "y": 383,
+     "w": 228,
+     "h": 77,
+     "label": "Lid 外形仍 60 × 40 × 6 mm"
+    }
+   ],
+   "clicks": [],
+   "file": "06-01-14-lid-underside.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "2d1931fecd2342a85faa70cdaa12ac6ab5210f7bf5d23fad51eb2f6c8ee7bb09"
+  },
+  {
+   "seq": 15,
+   "step": "06-01",
+   "slug": "separated-view",
+   "recordedAt": "2026-10-25T05:59:40.076Z",
+   "action": "暫把 Lid 上抬 12 mm，查看新定位柱與對應孔，再於存檔前移回",
+   "observed": "Lid Dimensions (60 mm, 40 mm, 6 mm)、Location (0 mm, 0 mm, 28 mm)、Scale (1, 1, 1)。這是獨立 Blender 的暫時分離檢視，不是實體試配。",
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "06-01-15-separated-view.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "05d8b109c613f6902c6a67d6a0be042448ee9516d71229b95647311fce5926b6",
+   "note": "本圖作用中為 Body，Dimensions 60 × 40 × 31.5 屬含柱盒體；蓋子尺寸請看前一張。"
+  },
+  {
+   "seq": 16,
+   "step": "06-01",
+   "slug": "assembly-geometry",
+   "recordedAt": "2026-10-25T05:59:45.976Z",
+   "action": "將 Lid 移回名義位置，從實際 32 邊輪廓重算相位、孔柱間隙與嵌入量",
+   "observed": "柱孔名義外接直徑總差 0.4 mm、名義單邊 0.2 mm；實際最小法向間隙 0.199036214 mm、對邊總差 0.398074943 mm。柱伸入孔 1.5 mm，柱頂到蓋頂餘 0.5 mm；僅數位幾何試驗。",
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "06-01-16-assembly-geometry.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "a01cae28fb6a90012c0d64889f99e40e5cecd6a307033a2336da30bf65385fb4",
+   "note": "柱孔同相位仍需實際網格核對。數位間隙不是製造公差；列印／實測／試配結果及正式合格間隙維持空白。"
+  },
+  {
+   "seq": 17,
+   "step": "06-01",
+   "slug": "save-dialog",
+   "recordedAt": "2026-10-25T05:59:50.876Z",
+   "action": "File > Save As，另存新單元場景 u06_locating_tenon_v001.blend",
+   "observed": "資料夾 D:\\others\\study\\Blender-Learning\\learning\\evidence\\06\\2026-10-25-lesson06-tenon-demo-v006\\demo-files\\；檔名 u06_locating_tenon_v001.blend。",
+   "window": "FILE_BROWSER",
+   "highlights": [
+    {
+     "x": 248,
+     "y": 566,
+     "w": 780,
+     "h": 25,
+     "label": "新場景 v001"
+    },
+    {
+     "x": 789,
+     "y": 566,
+     "w": 126,
+     "h": 25,
+     "label": "Save As"
+    }
+   ],
+   "clicks": [],
+   "file": "06-01-17-save-dialog.png",
+   "width": 1060,
+   "height": 600,
+   "sha256": "d0e6c3b175be31596322aa305cabc7b44499d2bce8cce4feeee3a2c611a3998e"
+  },
+  {
+   "seq": 18,
+   "step": "06-01",
+   "slug": "saved",
+   "recordedAt": "2026-10-25T05:59:54.176Z",
+   "action": "按 Save As，讀回新場景檔大小與 SHA-256",
+   "observed": "已另存 u06_locating_tenon_v001.blend，105466 bytes，SHA-256 f94dc6c5d342f04c41dddc37a4682805a5f7d87b5cf7a8b7bda37cd8ec51040f。原來源與副本未改。",
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "06-01-18-saved.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "6da3ef485a2680a2b3fc97f3c28837f37b57568145455cb064ddff7198a752e3"
+  },
+  {
+   "seq": 19,
+   "step": "06-01",
+   "slug": "open-saved",
+   "recordedAt": "2026-10-25T05:59:59.077Z",
+   "action": "File > Open，重新開啟本次已保存的定位榫場景 v001",
+   "observed": "資料夾 D:\\others\\study\\Blender-Learning\\learning\\evidence\\06\\2026-10-25-lesson06-tenon-demo-v006\\demo-files\\；檔名 u06_locating_tenon_v001.blend。",
+   "window": "FILE_BROWSER",
+   "highlights": [
+    {
+     "x": 248,
+     "y": 566,
+     "w": 780,
+     "h": 25,
+     "label": "同一定位榫 v001"
+    },
+    {
+     "x": 789,
+     "y": 566,
+     "w": 126,
+     "h": 25,
+     "label": "Open"
+    }
+   ],
+   "clicks": [],
+   "file": "06-01-19-open-saved.png",
+   "width": 1060,
+   "height": 600,
+   "sha256": "f86c450cc8192dab3d0a6d317d9bbe2071cc81477076c9de8772b939075b64f9"
+  },
+  {
+   "seq": 20,
+   "step": "06-01",
+   "slug": "reopened-verified",
+   "recordedAt": "2026-10-25T06:00:02.477Z",
+   "action": "按 Open，重讀最終 Body／Lid 網格與隱藏工具，核對版本並保存驗證",
+   "observed": "重新開啟後場景 hash 與幾何一致。柱孔名義外接直徑總差 0.4 mm、名義單邊 0.2 mm；實際最小法向間隙 0.199036214 mm、對邊總差 0.398074943 mm。柱伸入孔 1.5 mm，柱頂到蓋頂餘 0.5 mm；僅數位幾何試驗。未匯出 STL、未列印或試配；合格值留空。",
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "06-01-20-reopened-verified.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "81115ee7e905909ca2a8996baec3f0299b667aae9ee8bbdadb2ce736fec4f7f2",
+   "note": "本次是 06-01 定位榫幾何示範，不代學員確認完成；不推定第五單元已有實體合格間隙。"
+  }
+ ]
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "target": "Body",
+    "tool": "SnapTool",
+    "attempt": 0,
+    "operation": "UNION",
+    "operand": "SnapTool",
+    "solver": "EXACT"
+  },
+  {
+    "target": "Lid",
+    "tool": "FlangeTool",
+    "attempt": 0,
+    "operation": "UNION",
+    "operand": "FlangeTool",
+    "solver": "EXACT"
+  }
+]

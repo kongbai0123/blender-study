@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "Codex audit_images_07a",
+  "date": "2026-10-25",
+  "scope": "read-only peer code/data review of current recompute_blender.py/recompute_stl.py and their two result JSONs; independent scalar cross-checks using raw vertices/STL struct; no Blender rerun and no imports of existing checker or recompute code",
+  "inputSha256": {
+    "recompute_blender.py": "21bc73612f581c8ef96b260bc255146460fb63414d5333fbfbca529234e30d01",
+    "recompute_stl.py": "c56ed0e29e19eeb64a97270e915ba08d0a7ca64bb20df739205f513ae55399ed",
+    "blender-readback-v001.json": "1391d7a6f6b1f8a9808070647faf0a724cc9c42c78c074cab0ccdc000afc759f",
+    "stl-and-geometric-checks-v001.json": "20fe064a163930f7a6144e361fe90557bc8786fe832c0152de9ef7ba3cd03035"
+  },
+  "conclusion": "No blocking numerical error found within declared bounds/volume/edge-topology and selected geometry scope. Current data supports 448 mm² nominal two exposed rail ledges, approximately 0.4 mm narrow material between markers, and construction/exposed tenon heights 30/29.5 mm. It does not certify complete STL/source surface identity, printability, support-free manufacture, material strength, assembly feasibility, or qualified fit.",
+  "readOnly": {
+    "codeHasNoSaveOrGeometryEdit": true,
+    "openMainfileFlags": {
+      "load_ui": false,
+      "use_scripts": false
+    },
+    "readsObjectBaseMesh": true,
+    "currentSceneHashCount": 11,
+    "allCurrentSourceHashesEqualReadbackAfter": true,
+    "calcLoopTrianglesMeaning": "in-memory tessellation/cache only; source file not saved",
+    "limitations": "Audit did not inspect Blender launch command/process independently here; reported --background/--disable-autoexec method is code/output metadata. Existing result hashes and 11 disk scene hashes were read and checked."
+  },
+  "unitsAndTransforms": {
+    "sceneToMm": "matrix_world @ local vertex first, then scene.scale_length*1000",
+    "unitFactorAllScenes": 1.0000000474974513,
+    "stlUnits": "STL contains no unit field; parsed numeric coordinates are interpreted as millimeters by this project",
+    "itemVsWorld": "item_dimensions_mm is obj.dimensions; world_bounds comes from transformed vertices, so rotated objects are not compared by Item Dimensions",
+    "scopeCaution": "obj.data is unevaluated base mesh. No claim here that this generic code validates unapplied modifiers or rendered/evaluated surface; current finalized objects are prior published applied geometry."
+  },
+  "railIndependentCheck": {
+    "method": "Filter actual Body polygons at world Z≈10, signed XY shoelace negative for -Z orientation; independent of Blender triangle-area output",
+    "polygons": 2,
+    "vertexCounts": [
+      4,
+      4
+    ],
+    "eachXSpanMm": 56.00000265985727,
+    "eachYSpanMm": 4.000000189989805,
+    "eachAreaMm2": 224.00002127885864,
+    "totalAreaMm2": 448.0000425577173,
+    "triangleReadbackAreaMm2": 448.0000425577174,
+    "nominalCalculation": "2 × (56 mm exposed interior length) × (4 mm width) = 448 mm²",
+    "not480Reason": "Construction rails span60, but 2mm end walls on each side leave X−28..28 exposed beneath rails; external end-wall material is not unsupported ledge",
+    "interpretation": "Horizontal downward ledges in this original opening-up geometry; no determination of slicer support, bridge feasibility, final orientation, or actual print failure."
+  },
+  "markerIndependentCheck": {
+    "floorPolygons": 21,
+    "verticesPerFloor": [
+      32
+    ],
+    "floorCenterYRangeMm": [
+      -8.500000642146926,
+      -8.500000642146926
+    ],
+    "polygonRadiusRangeMm": [
+      0.5999973751528714,
+      0.6000049509781462
+    ],
+    "withinGroupAdjacentPairs": 15,
+    "centerPitchRangeMm": [
+      1.599992828070775,
+      1.6000023648143902
+    ],
+    "minimumDirectFacingXGapMm": 0.3999939154830656,
+    "rootCenterMinusRadiiGapMm": 0.3999939154830674,
+    "nominalCalculation": "1.6 mm center pitch − 1.2 mm faceted circumdiameter = 0.4 mm material",
+    "methodValidity": "Bounding-circle center-minus-X-radius formula is valid for these same-Y, aligned 32-gon floor profiles with opposing X extrema. It is not a general closest surface distance algorithm.",
+    "manufacturingCaution": "Nozzle0.4mm does not fix extrusion line width. A 0.4mm nominal web creates a fine-feature risk; this check does not demonstrate that it is exactly one extruded line or that marks merge in actual printing."
+  },
+  "tenonIndependentCheck": {
+    "nominalDiameterMm": 4,
+    "actualXandYBoundingDiametersMm": 4.000000189989805,
+    "constructionZMm": [
+      -13.500000641215593,
+      16.500000783707947
+    ],
+    "constructionHeightMm": 30.00000142492354,
+    "actualInnerFloorZMm": -13.000000617466867,
+    "exposedHeightUsingActualFloorMm": 29.500001401174814,
+    "rootExposedHeightUsingNominalMinus13Mm": 29.500000783707947,
+    "nominalSlenderness": 7.375,
+    "definitions": "30 mm construction tool includes nominal0.5mm into bottom;29.5mm is geometric exposed height from nominal inner floor−13 to top16.5. Neither is verified mechanical effective free length.",
+    "minorPrecisionNote": "root subtracts nominal−13 instead of actual float floor−13.000000617; difference6.17e−7mm is far below numerical epsilon and does not alter29.5mm nominal statement.",
+    "potentialRisk": "Existing lip and locating post may compete under actual manufacturing error; geometry alone does not prove actual overconstraint failure or successful fit."
+  },
+  "stlReview": {
+    "count": 10,
+    "checksPresent": [
+      "Binary byte size84+50n",
+      "Direct vertex bounds",
+      "Triangle signed volume",
+      "Quantized edge incidence count2",
+      "Opposite directed edge use",
+      "Vertex-edge connected components",
+      "Degenerate triangle area",
+      "Stored normal positive dot",
+      "Bounds and volume compared against new transformed source readback"
+    ],
+    "noCompleteSurfaceEqualityCheck": true,
+    "noSelfIntersectionOrVertexLinkCheck": true,
+    "quantizationGridMm": 0.00001,
+    "quantizationCaution": "round(x/1e−5) hashes coordinates to grid; this is not a Euclidean weld tolerance. It may merge close distinct points or separate close points across a bin boundary in arbitrary data.",
+    "storedNormalCheckLimitation": "root dot(cr,normal)>0 only checks same hemisphere, not angular/unit accuracy. Additional direct struct check on these10 actual STLs found finite values, minimum cosine≥0.9999999999999982, maximum angular deviation≈3.42e−6degrees and norm≈0.999999912..1.000000090.",
+    "topologyInterpretation": "nonmanifold_edges0/components1 means these chosen edge-incidence/vertex-graph tests pass under declared quantization. Bounds+volume+these topology indicators do not prove geometric equality or printability.",
+    "assertionScope": "dimensions_and_topology_consistent field is acceptable if described as the listed metrics; do not render as complete source/STL shape equivalence or certified watertight solid."
+  },
+  "findings": [
+    {
+      "id": "numeric-R01",
+      "severity": "scope_limit",
+      "title": "Do not promote scalar/topology comparisons to complete surface identity",
+      "requiredWording": "本次重算核對尺寸、體積與指定邊拓撲指標；完整面覆蓋／形狀相等是不同檢查，不能由這次指標推得。"
+    },
+    {
+      "id": "numeric-R02",
+      "severity": "minor_definition",
+      "title": "Use geometric exposed tenon height rather than verified mechanical free length",
+      "requiredWording": "柱工具高30mm，內底以上幾何露出高約29.5mm；力學有效長度與實體穩定性未驗證。"
+    },
+    {
+      "id": "numeric-R03",
+      "severity": "scope_limit",
+      "title": "0.4mm fine web and448mm² downward ledges are geometry risks, not observed print failure",
+      "requiredWording": "噴嘴不等於線寬；支撐/橋接/方向須切片與列印驗證。"
+    }
+  ],
+  "filesModified": [],
+  "newArtifactsOnly": [
+    "audit_numeric_review-v001.json",
+    "audit_numeric_review-v001.md"
+  ]
+}

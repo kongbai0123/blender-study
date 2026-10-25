@@ -1,0 +1,35 @@
+{
+  "recordedAt": "2026-10-25T07:17:21.798011+00:00",
+  "url": "http://127.0.0.1:8766/",
+  "lesson": "07",
+  "step": "07-01",
+  "browser": "ChatGPT in-app browser",
+  "screenshots": [
+    {
+      "path": "learning/evidence/ui/2026-10-25-lesson07-parameters-demo-v001-overview.jpg",
+      "role": "overview",
+      "sha256": "da2dac8c15e93ecd76a5ef4e85760991dddef9023b8f25a031ded6e599435ecb",
+      "bytes": 37598,
+      "width": 304,
+      "height": 848,
+      "pixelEdits": false
+    },
+    {
+      "path": "learning/evidence/ui/2026-10-25-lesson07-parameters-demo-v001-parameters.jpg",
+      "role": "parameters",
+      "sha256": "19116e61d728099100e05341e6a30bddb96c0c224ee3486db8431a266d77bc78",
+      "bytes": 35367,
+      "width": 304,
+      "height": 848,
+      "pixelEdits": false
+    }
+  ],
+  "visibleChecks": [
+    "原盒實拍連回完整原圖",
+    "11項尺寸均待定",
+    "材料及允許應變待定",
+    "公式尚未代入，無強度判定",
+    "參考場景與參數JSON連結"
+  ],
+  "learnerCompletionConfirmed": false
+}

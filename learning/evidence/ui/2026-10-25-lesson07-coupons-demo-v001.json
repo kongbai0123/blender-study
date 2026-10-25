@@ -1,0 +1,54 @@
+{
+  "recordedAt": "2026-10-25T09:38:05.555159+00:00",
+  "url": "http://127.0.0.1:8766/",
+  "browser": "ChatGPT in-app browser",
+  "lesson": "07",
+  "step": "07-05",
+  "captureMethod": "Browser getScreenshot original JPEG bytes; no pixel modifications",
+  "screenshots": [
+    {
+      "path": "learning/evidence/ui/2026-10-25-lesson07-coupons-demo-v001-final-overview.jpg",
+      "sha256": "08a0c2796f6f1b0fc9e6091cfbdb5d5ef053f415ceb5fdcaab2d1befd6afe0b1",
+      "bytes": 37924,
+      "width": 304,
+      "height": 848,
+      "pixelEdits": false,
+      "role": "overview"
+    },
+    {
+      "path": "learning/evidence/ui/2026-10-25-lesson07-coupons-demo-v001-final-comparison.jpg",
+      "sha256": "c6c0beb2306c58f9165788a6bb5c4ff38a9174ebeddde3f712efbd2bcc1b70a9",
+      "bytes": 36327,
+      "width": 304,
+      "height": 848,
+      "pixelEdits": false,
+      "role": "comparison"
+    },
+    {
+      "path": "learning/evidence/ui/2026-10-25-lesson07-coupons-demo-v001-final-conditions.jpg",
+      "sha256": "029961b72dbfa395113a93b3af85d034fd3972b6aebed65b82d3d305358ffff1",
+      "bytes": 45103,
+      "width": 304,
+      "height": 848,
+      "pixelEdits": false,
+      "role": "conditions"
+    }
+  ],
+  "sourceFiles": [
+    {
+      "path": "learning/catalog.json",
+      "sha256": "d4792f515eef5031fbd56fe0f15a46ebe9a0af82997d782238211c514646cd68"
+    },
+    {
+      "path": "learning/web/app.js",
+      "sha256": "977d2f2ef9fd0546c4b3763707741a7ddc0f00ca302d66ecfe404473debd7767"
+    },
+    {
+      "path": "learning/web/app.css",
+      "sha256": "8d216c16c21d24f12caf8255418a816c2f4cb93e00bbaab254018535544a4b57"
+    }
+  ],
+  "learnerCompletionConfirmed": false,
+  "progressRevision": 5,
+  "progressSha256": "d92e4f2ee78a1cf41386816b8616bf635b89fb25f8bfd813ac00cd20ed20b4ef"
+}

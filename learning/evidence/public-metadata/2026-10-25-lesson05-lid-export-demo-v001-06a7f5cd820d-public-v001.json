@@ -1,0 +1,2414 @@
+{
+  "schemaVersion": 1,
+  "kind": "redacted_public_derivative",
+  "redacted_public_derivative": true,
+  "preparedOn": "2026-10-26",
+  "originalPath": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001.json",
+  "originalSha256": "1b4b0da9295406b6a41f82d5c40d63100624983e9ed31c46a0e1c44b1c3102cd",
+  "originalBytes": 116324,
+  "originalAvailableInPublicPackage": false,
+  "redactedKeys": [
+    "/runnerStatus/recentCleanup"
+  ],
+  "redactionPolicy": "Recursively omit Windows Recent inventory keys recentCleanup, beforeLinks and afterLinks. Original stays unchanged locally. This derivative is not the original execution record.",
+  "content": {
+    "id": "2026-10-25-lesson05-lid-export-demo-v001",
+    "actor": "tutor",
+    "authorization": "依使用者要求延續工程教學，以獨立 Blender 逐步操作、實拍、讀值及保留版本；本次只完成 05-06 的蓋子 STL 匯出與 CAD 重新匯入讀回，切片、列印及試配尚未執行。",
+    "application": "Blender 5.2.1 LTS",
+    "buildHash": "9e2066aef7ef",
+    "captureMethod": "Blender bpy.ops.screen.screenshot；獨立實例 --factory-startup --enable-event-simulate，滑鼠／鍵盤以 Window.event_simulate 模擬；檔案瀏覽器的資料夾與檔名欄位由程式寫入",
+    "script": "learning/tutor/scenarios/lesson05_lid_export.py",
+    "pixelEdits": false,
+    "highlightsDrawnBy": "教學頁 CSS 疊框（原圖未修改）",
+    "learnerWorkspaceWrites": false,
+    "demoFiles": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/demo-files/",
+    "records": [
+      {
+        "seq": 1,
+        "step": "05-06",
+        "slug": "source-open-dialog",
+        "recordedAt": "2026-10-25T05:23:56.062Z",
+        "action": "File > Open…，開啟 05-05 上蓋 v001 的同雜湊副本",
+        "observed": "資料夾 D:\\others\\study\\Blender-Learning\\learning\\evidence\\05\\2026-10-25-lesson05-lid-export-demo-v001\\demo-files\\sources\\；檔名 u05_lid_v001.blend。",
+        "window": "FILE_BROWSER",
+        "highlights": [
+          {
+            "x": 248,
+            "y": 566,
+            "w": 780,
+            "h": 25,
+            "label": "上蓋來源 v001"
+          },
+          {
+            "x": 789,
+            "y": 566,
+            "w": 126,
+            "h": 25,
+            "label": "Open"
+          }
+        ],
+        "clicks": [],
+        "file": "05-06-01-source-open-dialog.png",
+        "width": 1060,
+        "height": 600,
+        "sha256": "4dcdab53fd8067df340d0617778190df161f4ee433449ede255408e2e6e0b5ef",
+        "path": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/05-06-01-source-open-dialog.png"
+      },
+      {
+        "seq": 2,
+        "step": "05-06",
+        "slug": "lid-selected",
+        "recordedAt": "2026-10-25T05:24:05.262Z",
+        "action": "只選 Lid，底部斜視核對 Dimensions、板厚與環形唇邊，排除 Body",
+        "observed": "只選 Lid；整體 [60.0, 40.0, 6.0] mm、板厚 2、唇深 4、環壁 2 mm；來源與副本 SHA-256 一致。Body 暫隱藏但未改幾何。",
+        "window": "main",
+        "highlights": [
+          {
+            "x": 1286,
+            "y": 134,
+            "w": 150,
+            "h": 20,
+            "label": "只選 Lid"
+          },
+          {
+            "x": 963,
+            "y": 383,
+            "w": 228,
+            "h": 77,
+            "label": "Lid 整體 60 × 40 × 6 mm"
+          }
+        ],
+        "clicks": [],
+        "file": "05-06-02-lid-selected.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "209c403efbec2304e93ec626b3ec0a9ff37f9a4ef080cfcaa78e11605bda2092",
+        "note": "板厚 2 mm 加向下唇深 4 mm，整體高 6 mm。0.4 mm 總間隙／每側 0.2 mm 仍是幾何試驗值。",
+        "path": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/05-06-02-lid-selected.png"
+      },
+      {
+        "seq": 3,
+        "step": "05-06",
+        "slug": "export-menu",
+        "recordedAt": "2026-10-25T05:24:07.162Z",
+        "action": "File > Export，指到 STL (.stl)",
+        "observed": "已選取：Lid；作用中物件：Lid",
+        "window": "main",
+        "highlights": [
+          {
+            "x": 28,
+            "y": 307,
+            "w": 202,
+            "h": 20,
+            "label": "Export"
+          },
+          {
+            "x": 236,
+            "y": 426,
+            "w": 244,
+            "h": 20,
+            "label": "STL (.stl)"
+          }
+        ],
+        "clicks": [],
+        "file": "05-06-03-export-menu.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "bbdd40b730bd3881bdcf1cc615bfddfb501b4b65c1e0b8d9e80ed36189218b01",
+        "path": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/05-06-03-export-menu.png"
+      },
+      {
+        "seq": 4,
+        "step": "05-06",
+        "slug": "export-before",
+        "recordedAt": "2026-10-25T05:24:11.162Z",
+        "action": "核對 STL 匯出檔名、路徑及目前選項",
+        "observed": "資料夾 D:\\others\\study\\Blender-Learning\\learning\\evidence\\05\\2026-10-25-lesson05-lid-export-demo-v001\\demo-files\\exports\\；檔名 u05_lid_v001.stl；選項 {'only_selected': False, 'global_scale': 1.0, 'use_scene_unit': False, 'apply_modifiers': True, 'forward_axis': 'Y', 'up_axis': 'Z', 'ascii_format': False, 'use_batch': False, 'evaluation_mode': 'DAG_EVAL_RENDER'}。",
+        "window": "FILE_BROWSER",
+        "highlights": [
+          {
+            "x": 248,
+            "y": 566,
+            "w": 780,
+            "h": 25,
+            "label": "u05_lid_v001.stl"
+          },
+          {
+            "x": 920,
+            "y": 148,
+            "w": 135,
+            "h": 22,
+            "label": "Selection Only"
+          },
+          {
+            "x": 920,
+            "y": 170,
+            "w": 135,
+            "h": 43,
+            "label": "Scale / Scene Unit"
+          }
+        ],
+        "clicks": [],
+        "file": "05-06-04-export-before.png",
+        "width": 1060,
+        "height": 600,
+        "sha256": "0d58621434de1798f1634faff6ef099811906db5123d9b226256e6a2e812864c",
+        "path": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/05-06-04-export-before.png"
+      },
+      {
+        "seq": 5,
+        "step": "05-06",
+        "slug": "export-options",
+        "recordedAt": "2026-10-25T05:24:12.963Z",
+        "action": "勾選並核對 Selection Only，再核對 Scale 1、Scene Unit 不勾與本次新檔路徑",
+        "observed": "Selection Only 開、Scale 1、Scene Unit 關、Apply Modifiers 開、Binary、Batch 關、Y Forward / Z Up；只匯出 Lid。",
+        "window": "FILE_BROWSER",
+        "highlights": [
+          {
+            "x": 920,
+            "y": 148,
+            "w": 135,
+            "h": 22,
+            "label": "Selection Only 開"
+          },
+          {
+            "x": 920,
+            "y": 170,
+            "w": 135,
+            "h": 43,
+            "label": "Scale 1 / Scene Unit 關"
+          },
+          {
+            "x": 789,
+            "y": 566,
+            "w": 126,
+            "h": 25,
+            "label": "Export STL"
+          }
+        ],
+        "clicks": [],
+        "file": "05-06-05-export-options.png",
+        "width": 1060,
+        "height": 600,
+        "sha256": "2ba670fbc9592b460fb36d1ca2b9f66d41ff4468bfed130802b076b93ba63c8e",
+        "note": "本場景 Unit Scale 0.001。STL 沒有長度單位標記，本次匯出數字按毫米解讀；尚未核對切片擺放。",
+        "path": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/05-06-05-export-options.png"
+      },
+      {
+        "seq": 6,
+        "step": "05-06",
+        "slug": "stl-checked",
+        "recordedAt": "2026-10-25T05:24:15.963Z",
+        "action": "按 Export STL，解析磁碟 STL 的尺寸、拓樸、唇內外平面與盲內凹，對照來源",
+        "observed": "u05_lid_v001.stl：2284 bytes、44 三角形；檔內外形 [60.0, 40.0, 6.0]（按 mm 解讀）、板厚 2／唇深 4、單殼、Non Manifold 0；SHA-256 0b226cf405bc70f42b5ce28fee9f46cb55eff67b84c6d786c091a2043f5f2408。",
+        "window": "main",
+        "highlights": [],
+        "clicks": [],
+        "file": "05-06-06-stl-checked.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "6a1fc291fed85dc0c59e4efd82367235e20cd38f534d11d1359ff2f40cb64596",
+        "note": "STL 保留原場景 world Z 11～17 mm。這是數位檔案核對，尚未進行切片、落床方向、列印或試配。",
+        "path": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/05-06-06-stl-checked.png"
+      },
+      {
+        "seq": 7,
+        "step": "05-06",
+        "slug": "empty-mm-scene",
+        "recordedAt": "2026-10-25T05:24:27.963Z",
+        "action": "File > New > General，清空獨立場景，設 Metric / Millimeters / Unit Scale 0.001",
+        "observed": "場景物件 0；Unit Scale 0.001；Length MILLIMETERS。",
+        "window": "main",
+        "highlights": [],
+        "clicks": [],
+        "file": "05-06-07-empty-mm-scene.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "4adc8aebf5e4a772bee8fce4eb6b599831c2910744002fc3fb9242704c87f51c",
+        "path": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/05-06-07-empty-mm-scene.png"
+      },
+      {
+        "seq": 8,
+        "step": "05-06",
+        "slug": "import-dialog",
+        "recordedAt": "2026-10-25T05:24:32.063Z",
+        "action": "F3 搜尋 Import STL，選本次剛匯出的上蓋 STL，讀回匯入選項",
+        "observed": "實際 STL：u05_lid_v001.stl；Scale 1、Scene Unit 關、Y Forward / Z Up。",
+        "window": "FILE_BROWSER",
+        "highlights": [
+          {
+            "x": 248,
+            "y": 566,
+            "w": 780,
+            "h": 25,
+            "label": "本次 STL v001"
+          },
+          {
+            "x": 789,
+            "y": 566,
+            "w": 126,
+            "h": 25,
+            "label": "Import STL"
+          }
+        ],
+        "clicks": [],
+        "file": "05-06-08-import-dialog.png",
+        "width": 1060,
+        "height": 600,
+        "sha256": "449c2a87c98e26c5b91dcdddee7d558287a42bde44a4b6fdcb1ce77032d73c77",
+        "path": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/05-06-08-import-dialog.png"
+      },
+      {
+        "seq": 9,
+        "step": "05-06",
+        "slug": "reimport-dimensions",
+        "recordedAt": "2026-10-25T05:24:38.063Z",
+        "action": "實際匯入後才切 Item 分頁，Frame Selected，核對 Dimensions 60 × 40 × 6 mm",
+        "observed": "實際重新匯入 u05_lid_v001；Item Dimensions [60.0, 40.0, 6.0] mm，Scale 1、Non Manifold 0；板厚 2、唇深 4 mm，來源與 STL 幾何一致。",
+        "window": "main",
+        "highlights": [
+          {
+            "x": 963,
+            "y": 383,
+            "w": 228,
+            "h": 77,
+            "label": "STL 重新匯入：60 × 40 × 6 mm"
+          }
+        ],
+        "clicks": [],
+        "file": "05-06-09-reimport-dimensions.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "ff7b6d72058f2e973be1cc6fa3d462e6f2fdbd3a64585f1116d13cb5c8ba8a84",
+        "path": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/05-06-09-reimport-dimensions.png"
+      },
+      {
+        "seq": 10,
+        "step": "05-06",
+        "slug": "reimport-underside",
+        "recordedAt": "2026-10-25T05:24:40.963Z",
+        "action": "底部斜視，從實際重新匯入的 STL 核對一體定位環與盲內凹",
+        "observed": "實際重新匯入 u05_lid_v001；Item Dimensions [60.0, 40.0, 6.0] mm，Scale 1、Non Manifold 0；板厚 2、唇深 4 mm，來源與 STL 幾何一致。",
+        "window": "main",
+        "highlights": [
+          {
+            "x": 963,
+            "y": 383,
+            "w": 228,
+            "h": 77,
+            "label": "整高 6 = 板厚 2 + 唇深 4 mm"
+          }
+        ],
+        "clicks": [],
+        "file": "05-06-10-reimport-underside.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "c31773df47bd9714268cf1a9715c419d09c163e8f1a903091bb8251f953e48d8",
+        "note": "0.4 mm 總間隙仍為幾何試驗值。STL 重新匯入成功不等於實際列印或試配合格。",
+        "path": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/05-06-10-reimport-underside.png"
+      },
+      {
+        "seq": 11,
+        "step": "05-06",
+        "slug": "non-manifold",
+        "recordedAt": "2026-10-25T05:24:45.163Z",
+        "action": "Tab > 邊選取 > Select None，再 F3 搜尋 Select Non Manifold",
+        "observed": "非空上蓋網格，Select Non Manifold 選到邊 0；程式讀回 Non Manifold 0。",
+        "window": "main",
+        "highlights": [],
+        "clicks": [],
+        "file": "05-06-11-non-manifold.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "af4a7e9ad7339da7e7c301f32d80e21004f3162cd03bcff73a8807584ac1214d",
+        "path": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/05-06-11-non-manifold.png"
+      },
+      {
+        "seq": 12,
+        "step": "05-06",
+        "slug": "verified",
+        "recordedAt": "2026-10-25T05:24:46.763Z",
+        "action": "保存 STL 與來源版本關聯、數位讀值及 verification.json",
+        "observed": "上蓋 STL 匯出、實檔解析、實際重新匯入皆通過；外形 60 × 40 × 6、板厚 2、唇深 4 mm；來源 hash 不變。尚未列印／實測／試配，合格間隙空白。",
+        "window": "main",
+        "highlights": [],
+        "clicks": [],
+        "file": "05-06-12-verified.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "c31773df47bd9714268cf1a9715c419d09c163e8f1a903091bb8251f953e48d8",
+        "note": "本次只完成 05-06 的匯出與數位核對部分；實體結果保持 null，不代學員確認完成。",
+        "path": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/05-06-12-verified.png"
+      }
+    ],
+    "verification": {
+      "passed": true,
+      "kind": "lid_stl_export",
+      "source_scene_path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\05\\2026-10-22-lesson05-lid-demo-v001\\demo-files\\u05_lid_v001.blend",
+      "source_scene_sha256": "ab08f331dcb26c5ffc6c6ca56c7c7f022df96791c4777e37c5f01a964fbed6ff",
+      "opened_scene_path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\05\\2026-10-25-lesson05-lid-export-demo-v001\\demo-files\\sources\\u05_lid_v001.blend",
+      "opened_scene_sha256": "ab08f331dcb26c5ffc6c6ca56c7c7f022df96791c4777e37c5f01a964fbed6ff",
+      "source_unchanged": true,
+      "opened_copy_unchanged": true,
+      "source_object": "Lid",
+      "source_lid": {
+        "bounds_mm": {
+          "min": [
+            -30.0,
+            -20.0,
+            11.0
+          ],
+          "max": [
+            30.0,
+            20.0,
+            17.0
+          ]
+        },
+        "dimensions_mm": [
+          60.0,
+          40.0,
+          6.0
+        ],
+        "volume_mm3": 6195.199951171875,
+        "non_manifold_edges": 0,
+        "non_manifold_vertex_links": 0,
+        "inconsistent_winding_edges": 0,
+        "connected_shells": 1,
+        "euler_characteristic": 2,
+        "genus": 0,
+        "mesh_counts": {
+          "vertices": 24,
+          "edges": 66,
+          "faces": 44,
+          "triangles": 44,
+          "representation": "evaluated loop-triangulated mesh"
+        },
+        "passed": true,
+        "printed": false,
+        "fit_tested": false,
+        "physical_interference": null,
+        "qualified_clearance_mm": null,
+        "numericComparison": {
+          "purpose": "Floating point reconstruction only; not manufacturing tolerance or fit acceptance",
+          "dimensionsAbsMm": 0.0001,
+          "volumeRelative": 1e-05
+        },
+        "kind": "lid",
+        "plate_dimensions_mm": [
+          60.0,
+          40.0,
+          2.0
+        ],
+        "plate_z_mm": [
+          15.0,
+          17.0
+        ],
+        "plate_thickness_mm": 2.0,
+        "ring_outer_bounds_mm": {
+          "min": [
+            -27.799999237060547,
+            -17.799999237060547,
+            11.0
+          ],
+          "max": [
+            27.799999237060547,
+            17.799999237060547,
+            15.0
+          ]
+        },
+        "ring_inner_bounds_mm": {
+          "min": [
+            -25.799999237060547,
+            -15.799999237060547,
+            11.0
+          ],
+          "max": [
+            25.799999237060547,
+            15.799999237060547,
+            15.0
+          ]
+        },
+        "ring_outer_mm": [
+          55.599998474121094,
+          35.599998474121094
+        ],
+        "ring_inner_mm": [
+          51.599998474121094,
+          31.599998474121094
+        ],
+        "ring_wall_thicknesses_mm": [
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "ring_z_mm": [
+          11.0,
+          15.0
+        ],
+        "ring_depth_mm": 4.0,
+        "engagement_mm": 4.0,
+        "ring_wall_mm": 2.0,
+        "expected_volume_mm3": 6195.2,
+        "actual_face_planes": {
+          "X": [
+            {
+              "coordinate_mm": -30.0,
+              "area_mm2": 80.0,
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  -20.0,
+                  15.0
+                ],
+                "max": [
+                  -30.0,
+                  20.0,
+                  17.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": -27.799999237060547,
+              "area_mm2": 142.39999389648438,
+              "bounds_mm": {
+                "min": [
+                  -27.799999237060547,
+                  -17.799999237060547,
+                  11.0
+                ],
+                "max": [
+                  -27.799999237060547,
+                  17.799999237060547,
+                  15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": -25.799999237060547,
+              "area_mm2": 126.39999389648438,
+              "bounds_mm": {
+                "min": [
+                  -25.799999237060547,
+                  -15.799999237060547,
+                  11.0
+                ],
+                "max": [
+                  -25.799999237060547,
+                  15.799999237060547,
+                  15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 25.799999237060547,
+              "area_mm2": 126.39999389648438,
+              "bounds_mm": {
+                "min": [
+                  25.799999237060547,
+                  -15.799999237060547,
+                  11.0
+                ],
+                "max": [
+                  25.799999237060547,
+                  15.799999237060547,
+                  15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 27.799999237060547,
+              "area_mm2": 142.39999389648438,
+              "bounds_mm": {
+                "min": [
+                  27.799999237060547,
+                  -17.799999237060547,
+                  11.0
+                ],
+                "max": [
+                  27.799999237060547,
+                  17.799999237060547,
+                  15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 30.0,
+              "area_mm2": 80.0,
+              "bounds_mm": {
+                "min": [
+                  30.0,
+                  -20.0,
+                  15.0
+                ],
+                "max": [
+                  30.0,
+                  20.0,
+                  17.0
+                ]
+              }
+            }
+          ],
+          "Y": [
+            {
+              "coordinate_mm": -20.0,
+              "area_mm2": 120.0,
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  -20.0,
+                  15.0
+                ],
+                "max": [
+                  30.0,
+                  -20.0,
+                  17.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": -17.799999237060547,
+              "area_mm2": 222.39999389648438,
+              "bounds_mm": {
+                "min": [
+                  -27.799999237060547,
+                  -17.799999237060547,
+                  11.0
+                ],
+                "max": [
+                  27.799999237060547,
+                  -17.799999237060547,
+                  15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": -15.799999237060547,
+              "area_mm2": 206.39999389648438,
+              "bounds_mm": {
+                "min": [
+                  -25.799999237060547,
+                  -15.799999237060547,
+                  11.0
+                ],
+                "max": [
+                  25.799999237060547,
+                  -15.799999237060547,
+                  15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 15.799999237060547,
+              "area_mm2": 206.39999389648438,
+              "bounds_mm": {
+                "min": [
+                  -25.799999237060547,
+                  15.799999237060547,
+                  11.0
+                ],
+                "max": [
+                  25.799999237060547,
+                  15.799999237060547,
+                  15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 17.799999237060547,
+              "area_mm2": 222.39999389648438,
+              "bounds_mm": {
+                "min": [
+                  -27.799999237060547,
+                  17.799999237060547,
+                  11.0
+                ],
+                "max": [
+                  27.799999237060547,
+                  17.799999237060547,
+                  15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 20.0,
+              "area_mm2": 120.0,
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  20.0,
+                  15.0
+                ],
+                "max": [
+                  30.0,
+                  20.0,
+                  17.0
+                ]
+              }
+            }
+          ],
+          "Z": [
+            {
+              "coordinate_mm": 11.0,
+              "area_mm2": 348.79998779296875,
+              "bounds_mm": {
+                "min": [
+                  -27.799999237060547,
+                  -17.799999237060547,
+                  11.0
+                ],
+                "max": [
+                  27.799999237060547,
+                  17.799999237060547,
+                  11.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 15.0,
+              "area_mm2": 2051.2000122070312,
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  -20.0,
+                  15.0
+                ],
+                "max": [
+                  30.0,
+                  20.0,
+                  15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 17.0,
+              "area_mm2": 2400.0,
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  -20.0,
+                  17.0
+                ],
+                "max": [
+                  30.0,
+                  20.0,
+                  17.0
+                ]
+              }
+            }
+          ]
+        },
+        "vertical_rays": [
+          {
+            "label": "covered hollow centre",
+            "xy_mm": [
+              0,
+              0
+            ],
+            "z_hits_mm": [
+              15.0,
+              17.0
+            ]
+          },
+          {
+            "label": "negative X lip",
+            "xy_mm": [
+              -26.8,
+              0
+            ],
+            "z_hits_mm": [
+              11.0,
+              17.0
+            ]
+          },
+          {
+            "label": "positive X lip",
+            "xy_mm": [
+              26.8,
+              0
+            ],
+            "z_hits_mm": [
+              11.0,
+              17.0
+            ]
+          },
+          {
+            "label": "negative Y lip",
+            "xy_mm": [
+              0,
+              -16.8
+            ],
+            "z_hits_mm": [
+              11.0,
+              17.0
+            ]
+          },
+          {
+            "label": "positive Y lip",
+            "xy_mm": [
+              0,
+              16.8
+            ],
+            "z_hits_mm": [
+              11.0,
+              17.0
+            ]
+          },
+          {
+            "label": "negative X outer ledge",
+            "xy_mm": [
+              -29,
+              0
+            ],
+            "z_hits_mm": [
+              15.0,
+              17.0
+            ]
+          },
+          {
+            "label": "positive X outer ledge",
+            "xy_mm": [
+              29,
+              0
+            ],
+            "z_hits_mm": [
+              15.0,
+              17.0
+            ]
+          },
+          {
+            "label": "negative Y outer ledge",
+            "xy_mm": [
+              0,
+              -19
+            ],
+            "z_hits_mm": [
+              15.0,
+              17.0
+            ]
+          },
+          {
+            "label": "positive Y outer ledge",
+            "xy_mm": [
+              0,
+              19
+            ],
+            "z_hits_mm": [
+              15.0,
+              17.0
+            ]
+          },
+          {
+            "label": "hollow interior corner",
+            "xy_mm": [
+              24,
+              14
+            ],
+            "z_hits_mm": [
+              15.0,
+              17.0
+            ]
+          }
+        ],
+        "trial_total_clearance_mm": 0.4,
+        "trial_per_side_clearance_mm": 0.2,
+        "trial_status": "experimental_geometry_only",
+        "measurement_scope": "nominal lid and ring geometry only; no qualified printed clearance",
+        "assembly": {
+          "scope": "nominal mesh placement only; physical fit remains untested",
+          "geometric_nonintersection": true,
+          "interior_volume_overlap_mm3": 0.0,
+          "per_side_order": [
+            "negative_x",
+            "positive_x",
+            "negative_y",
+            "positive_y"
+          ],
+          "per_side_clearances_mm": [
+            0.20000076293945312,
+            0.20000076293945312,
+            0.20000076293945312,
+            0.20000076293945312
+          ],
+          "total_clearances_mm": [
+            0.40000152587890625,
+            0.40000152587890625
+          ],
+          "trial_total_clearance_mm": 0.4,
+          "engagement_mm": 4.0,
+          "cavity_depth_mm": 28.0,
+          "floor_reserve_mm": 24.0,
+          "rim_contact_z_mm": 15.0,
+          "physical_interference": null,
+          "printed": false,
+          "fit_tested": false,
+          "qualified_clearance_mm": null
+        },
+        "object_name": "Lid",
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "unit_scale": 0.0010000000474974513,
+        "length_unit": "MILLIMETERS",
+        "measurement_source": "evaluated final mesh loop triangles in world-space millimetres"
+      },
+      "source_body": {
+        "bounds_mm": {
+          "min": [
+            -30.0,
+            -20.0,
+            -15.0
+          ],
+          "max": [
+            30.0,
+            20.0,
+            15.0
+          ]
+        },
+        "dimensions_mm": [
+          60.0,
+          40.0,
+          30.0
+        ],
+        "volume_mm3": 15552.0,
+        "non_manifold_edges": 0,
+        "non_manifold_vertex_links": 0,
+        "inconsistent_winding_edges": 0,
+        "connected_shells": 1,
+        "euler_characteristic": 2,
+        "genus": 0,
+        "mesh_counts": {
+          "vertices": 16,
+          "edges": 42,
+          "faces": 28,
+          "triangles": 28,
+          "representation": "evaluated loop-triangulated mesh"
+        },
+        "passed": true,
+        "printed": false,
+        "fit_tested": false,
+        "physical_interference": null,
+        "qualified_clearance_mm": null,
+        "numericComparison": {
+          "purpose": "Floating point reconstruction only; not manufacturing tolerance or fit acceptance",
+          "dimensionsAbsMm": 0.0001,
+          "volumeRelative": 1e-05
+        },
+        "kind": "box_body",
+        "outer_dimensions_mm": [
+          60.0,
+          40.0,
+          30.0
+        ],
+        "cavity_bounds_mm": {
+          "min": [
+            -28.0,
+            -18.0,
+            -13.0
+          ],
+          "max": [
+            28.0,
+            18.0,
+            15.0
+          ]
+        },
+        "cavity_dimensions_mm": [
+          56.0,
+          36.0,
+          28.0
+        ],
+        "wall_thicknesses_mm": [
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "floor_thickness_mm": 2.0,
+        "rim_z_mm": 15.0,
+        "actual_face_planes": {
+          "X": [
+            {
+              "coordinate_mm": -30.0,
+              "area_mm2": 1200.0,
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  -20.0,
+                  -15.0
+                ],
+                "max": [
+                  -30.0,
+                  20.0,
+                  15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": -28.0,
+              "area_mm2": 1008.0,
+              "bounds_mm": {
+                "min": [
+                  -28.0,
+                  -18.0,
+                  -13.0
+                ],
+                "max": [
+                  -28.0,
+                  18.0,
+                  15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 28.0,
+              "area_mm2": 1008.0,
+              "bounds_mm": {
+                "min": [
+                  28.0,
+                  -18.0,
+                  -13.0
+                ],
+                "max": [
+                  28.0,
+                  18.0,
+                  15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 30.0,
+              "area_mm2": 1200.0,
+              "bounds_mm": {
+                "min": [
+                  30.0,
+                  -20.0,
+                  -15.0
+                ],
+                "max": [
+                  30.0,
+                  20.0,
+                  15.0
+                ]
+              }
+            }
+          ],
+          "Y": [
+            {
+              "coordinate_mm": -20.0,
+              "area_mm2": 1800.0,
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  -20.0,
+                  -15.0
+                ],
+                "max": [
+                  30.0,
+                  -20.0,
+                  15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": -18.0,
+              "area_mm2": 1568.0,
+              "bounds_mm": {
+                "min": [
+                  -28.0,
+                  -18.0,
+                  -13.0
+                ],
+                "max": [
+                  28.0,
+                  -18.0,
+                  15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 18.0,
+              "area_mm2": 1568.0,
+              "bounds_mm": {
+                "min": [
+                  -28.0,
+                  18.0,
+                  -13.0
+                ],
+                "max": [
+                  28.0,
+                  18.0,
+                  15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 20.0,
+              "area_mm2": 1800.0,
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  20.0,
+                  -15.0
+                ],
+                "max": [
+                  30.0,
+                  20.0,
+                  15.0
+                ]
+              }
+            }
+          ],
+          "Z": [
+            {
+              "coordinate_mm": -15.0,
+              "area_mm2": 2400.0,
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  -20.0,
+                  -15.0
+                ],
+                "max": [
+                  30.0,
+                  20.0,
+                  -15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": -13.0,
+              "area_mm2": 2016.0,
+              "bounds_mm": {
+                "min": [
+                  -28.0,
+                  -18.0,
+                  -13.0
+                ],
+                "max": [
+                  28.0,
+                  18.0,
+                  -13.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 15.0,
+              "area_mm2": 384.0,
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  -20.0,
+                  15.0
+                ],
+                "max": [
+                  30.0,
+                  20.0,
+                  15.0
+                ]
+              }
+            }
+          ]
+        },
+        "vertical_rays": [
+          {
+            "label": "cavity centre",
+            "xy_mm": [
+              0,
+              0
+            ],
+            "z_hits_mm": [
+              -15.0,
+              -13.0
+            ]
+          },
+          {
+            "label": "negative X rim",
+            "xy_mm": [
+              -29,
+              0
+            ],
+            "z_hits_mm": [
+              -15.0,
+              15.0
+            ]
+          },
+          {
+            "label": "positive X rim",
+            "xy_mm": [
+              29,
+              0
+            ],
+            "z_hits_mm": [
+              -15.0,
+              15.0
+            ]
+          },
+          {
+            "label": "negative Y rim",
+            "xy_mm": [
+              0,
+              -19
+            ],
+            "z_hits_mm": [
+              -15.0,
+              15.0
+            ]
+          },
+          {
+            "label": "positive Y rim",
+            "xy_mm": [
+              0,
+              19
+            ],
+            "z_hits_mm": [
+              -15.0,
+              15.0
+            ]
+          },
+          {
+            "label": "near cavity corner",
+            "xy_mm": [
+              27,
+              17
+            ],
+            "z_hits_mm": [
+              -15.0,
+              -13.0
+            ]
+          }
+        ],
+        "measurement_scope": "actual source body mesh; no physical fit conclusion",
+        "object_name": "Body",
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "unit_scale": 0.0010000000474974513,
+        "length_unit": "MILLIMETERS",
+        "measurement_source": "evaluated final mesh loop triangles in world-space millimetres"
+      },
+      "stl_path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\05\\2026-10-25-lesson05-lid-export-demo-v001\\demo-files\\exports\\u05_lid_v001.stl",
+      "stl_sha256": "0b226cf405bc70f42b5ce28fee9f46cb55eff67b84c6d786c091a2043f5f2408",
+      "stl_bytes": 2284,
+      "stl_dimensions_mm": [
+        60.0,
+        40.0,
+        6.0
+      ],
+      "stl_triangles": 44,
+      "stl_non_manifold_edges": 0,
+      "stl_connected_shells": 1,
+      "stl_genus": 0,
+      "stl_volume_mm3": 6195.199951171875,
+      "stl_verification": {
+        "format": "binary_stl",
+        "stl_path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\05\\2026-10-25-lesson05-lid-export-demo-v001\\demo-files\\exports\\u05_lid_v001.stl",
+        "stl_sha256": "0b226cf405bc70f42b5ce28fee9f46cb55eff67b84c6d786c091a2043f5f2408",
+        "byte_size": 2284,
+        "triangle_count": 44,
+        "vertex_count": 24,
+        "edge_count": 66,
+        "bounds_mm": {
+          "min": [
+            -30.0,
+            -20.0,
+            11.0
+          ],
+          "max": [
+            30.0,
+            20.0,
+            17.0
+          ]
+        },
+        "dimensions_mm": [
+          60.0,
+          40.0,
+          6.0
+        ],
+        "non_manifold_edges": 0,
+        "inconsistent_winding_edges": 0,
+        "non_manifold_vertex_links": 0,
+        "connected_shells": 1,
+        "euler_characteristic": 2,
+        "genus": 0,
+        "signed_volume_mm3": 6195.199951171875,
+        "volume_mm3": 6195.199951171875,
+        "nonzero_attribute_fields": 0,
+        "unit_interpretation": "STL has no units; numeric coordinates are interpreted as millimetres for this export",
+        "passed": true,
+        "kind": "lid_stl",
+        "lid_geometry": {
+          "bounds_mm": {
+            "min": [
+              -30.0,
+              -20.0,
+              11.0
+            ],
+            "max": [
+              30.0,
+              20.0,
+              17.0
+            ]
+          },
+          "dimensions_mm": [
+            60.0,
+            40.0,
+            6.0
+          ],
+          "volume_mm3": 6195.199951171875,
+          "non_manifold_edges": 0,
+          "non_manifold_vertex_links": 0,
+          "inconsistent_winding_edges": 0,
+          "connected_shells": 1,
+          "euler_characteristic": 2,
+          "genus": 0,
+          "mesh_counts": {
+            "vertices": 24,
+            "edges": 66,
+            "faces": 44,
+            "triangles": 44,
+            "representation": "evaluated loop-triangulated mesh"
+          },
+          "passed": true,
+          "printed": false,
+          "fit_tested": false,
+          "physical_interference": null,
+          "qualified_clearance_mm": null,
+          "numericComparison": {
+            "purpose": "Floating point reconstruction only; not manufacturing tolerance or fit acceptance",
+            "dimensionsAbsMm": 0.0001,
+            "volumeRelative": 1e-05
+          },
+          "kind": "lid",
+          "plate_dimensions_mm": [
+            60.0,
+            40.0,
+            2.0
+          ],
+          "plate_z_mm": [
+            15.0,
+            17.0
+          ],
+          "plate_thickness_mm": 2.0,
+          "ring_outer_bounds_mm": {
+            "min": [
+              -27.799999237060547,
+              -17.799999237060547,
+              11.0
+            ],
+            "max": [
+              27.799999237060547,
+              17.799999237060547,
+              15.0
+            ]
+          },
+          "ring_inner_bounds_mm": {
+            "min": [
+              -25.799999237060547,
+              -15.799999237060547,
+              11.0
+            ],
+            "max": [
+              25.799999237060547,
+              15.799999237060547,
+              15.0
+            ]
+          },
+          "ring_outer_mm": [
+            55.599998474121094,
+            35.599998474121094
+          ],
+          "ring_inner_mm": [
+            51.599998474121094,
+            31.599998474121094
+          ],
+          "ring_wall_thicknesses_mm": [
+            2.0,
+            2.0,
+            2.0,
+            2.0
+          ],
+          "ring_z_mm": [
+            11.0,
+            15.0
+          ],
+          "ring_depth_mm": 4.0,
+          "engagement_mm": 4.0,
+          "ring_wall_mm": 2.0,
+          "expected_volume_mm3": 6195.2,
+          "actual_face_planes": {
+            "X": [
+              {
+                "coordinate_mm": -30.0,
+                "area_mm2": 80.0,
+                "bounds_mm": {
+                  "min": [
+                    -30.0,
+                    -20.0,
+                    15.0
+                  ],
+                  "max": [
+                    -30.0,
+                    20.0,
+                    17.0
+                  ]
+                }
+              },
+              {
+                "coordinate_mm": -27.799999237060547,
+                "area_mm2": 142.39999389648438,
+                "bounds_mm": {
+                  "min": [
+                    -27.799999237060547,
+                    -17.799999237060547,
+                    11.0
+                  ],
+                  "max": [
+                    -27.799999237060547,
+                    17.799999237060547,
+                    15.0
+                  ]
+                }
+              },
+              {
+                "coordinate_mm": -25.799999237060547,
+                "area_mm2": 126.39999389648438,
+                "bounds_mm": {
+                  "min": [
+                    -25.799999237060547,
+                    -15.799999237060547,
+                    11.0
+                  ],
+                  "max": [
+                    -25.799999237060547,
+                    15.799999237060547,
+                    15.0
+                  ]
+                }
+              },
+              {
+                "coordinate_mm": 25.799999237060547,
+                "area_mm2": 126.39999389648438,
+                "bounds_mm": {
+                  "min": [
+                    25.799999237060547,
+                    -15.799999237060547,
+                    11.0
+                  ],
+                  "max": [
+                    25.799999237060547,
+                    15.799999237060547,
+                    15.0
+                  ]
+                }
+              },
+              {
+                "coordinate_mm": 27.799999237060547,
+                "area_mm2": 142.39999389648438,
+                "bounds_mm": {
+                  "min": [
+                    27.799999237060547,
+                    -17.799999237060547,
+                    11.0
+                  ],
+                  "max": [
+                    27.799999237060547,
+                    17.799999237060547,
+                    15.0
+                  ]
+                }
+              },
+              {
+                "coordinate_mm": 30.0,
+                "area_mm2": 80.0,
+                "bounds_mm": {
+                  "min": [
+                    30.0,
+                    -20.0,
+                    15.0
+                  ],
+                  "max": [
+                    30.0,
+                    20.0,
+                    17.0
+                  ]
+                }
+              }
+            ],
+            "Y": [
+              {
+                "coordinate_mm": -20.0,
+                "area_mm2": 120.0,
+                "bounds_mm": {
+                  "min": [
+                    -30.0,
+                    -20.0,
+                    15.0
+                  ],
+                  "max": [
+                    30.0,
+                    -20.0,
+                    17.0
+                  ]
+                }
+              },
+              {
+                "coordinate_mm": -17.799999237060547,
+                "area_mm2": 222.39999389648438,
+                "bounds_mm": {
+                  "min": [
+                    -27.799999237060547,
+                    -17.799999237060547,
+                    11.0
+                  ],
+                  "max": [
+                    27.799999237060547,
+                    -17.799999237060547,
+                    15.0
+                  ]
+                }
+              },
+              {
+                "coordinate_mm": -15.799999237060547,
+                "area_mm2": 206.39999389648438,
+                "bounds_mm": {
+                  "min": [
+                    -25.799999237060547,
+                    -15.799999237060547,
+                    11.0
+                  ],
+                  "max": [
+                    25.799999237060547,
+                    -15.799999237060547,
+                    15.0
+                  ]
+                }
+              },
+              {
+                "coordinate_mm": 15.799999237060547,
+                "area_mm2": 206.39999389648438,
+                "bounds_mm": {
+                  "min": [
+                    -25.799999237060547,
+                    15.799999237060547,
+                    11.0
+                  ],
+                  "max": [
+                    25.799999237060547,
+                    15.799999237060547,
+                    15.0
+                  ]
+                }
+              },
+              {
+                "coordinate_mm": 17.799999237060547,
+                "area_mm2": 222.39999389648438,
+                "bounds_mm": {
+                  "min": [
+                    -27.799999237060547,
+                    17.799999237060547,
+                    11.0
+                  ],
+                  "max": [
+                    27.799999237060547,
+                    17.799999237060547,
+                    15.0
+                  ]
+                }
+              },
+              {
+                "coordinate_mm": 20.0,
+                "area_mm2": 120.0,
+                "bounds_mm": {
+                  "min": [
+                    -30.0,
+                    20.0,
+                    15.0
+                  ],
+                  "max": [
+                    30.0,
+                    20.0,
+                    17.0
+                  ]
+                }
+              }
+            ],
+            "Z": [
+              {
+                "coordinate_mm": 11.0,
+                "area_mm2": 348.79998779296875,
+                "bounds_mm": {
+                  "min": [
+                    -27.799999237060547,
+                    -17.799999237060547,
+                    11.0
+                  ],
+                  "max": [
+                    27.799999237060547,
+                    17.799999237060547,
+                    11.0
+                  ]
+                }
+              },
+              {
+                "coordinate_mm": 15.0,
+                "area_mm2": 2051.2000122070312,
+                "bounds_mm": {
+                  "min": [
+                    -30.0,
+                    -20.0,
+                    15.0
+                  ],
+                  "max": [
+                    30.0,
+                    20.0,
+                    15.0
+                  ]
+                }
+              },
+              {
+                "coordinate_mm": 17.0,
+                "area_mm2": 2400.0,
+                "bounds_mm": {
+                  "min": [
+                    -30.0,
+                    -20.0,
+                    17.0
+                  ],
+                  "max": [
+                    30.0,
+                    20.0,
+                    17.0
+                  ]
+                }
+              }
+            ]
+          },
+          "vertical_rays": [
+            {
+              "label": "covered hollow centre",
+              "xy_mm": [
+                0,
+                0
+              ],
+              "z_hits_mm": [
+                15.0,
+                17.0
+              ]
+            },
+            {
+              "label": "negative X lip",
+              "xy_mm": [
+                -26.8,
+                0
+              ],
+              "z_hits_mm": [
+                11.0,
+                17.0
+              ]
+            },
+            {
+              "label": "positive X lip",
+              "xy_mm": [
+                26.8,
+                0
+              ],
+              "z_hits_mm": [
+                11.0,
+                17.0
+              ]
+            },
+            {
+              "label": "negative Y lip",
+              "xy_mm": [
+                0,
+                -16.8
+              ],
+              "z_hits_mm": [
+                11.0,
+                17.0
+              ]
+            },
+            {
+              "label": "positive Y lip",
+              "xy_mm": [
+                0,
+                16.8
+              ],
+              "z_hits_mm": [
+                11.0,
+                17.0
+              ]
+            },
+            {
+              "label": "negative X outer ledge",
+              "xy_mm": [
+                -29,
+                0
+              ],
+              "z_hits_mm": [
+                15.0,
+                17.0
+              ]
+            },
+            {
+              "label": "positive X outer ledge",
+              "xy_mm": [
+                29,
+                0
+              ],
+              "z_hits_mm": [
+                15.0,
+                17.0
+              ]
+            },
+            {
+              "label": "negative Y outer ledge",
+              "xy_mm": [
+                0,
+                -19
+              ],
+              "z_hits_mm": [
+                15.0,
+                17.0
+              ]
+            },
+            {
+              "label": "positive Y outer ledge",
+              "xy_mm": [
+                0,
+                19
+              ],
+              "z_hits_mm": [
+                15.0,
+                17.0
+              ]
+            },
+            {
+              "label": "hollow interior corner",
+              "xy_mm": [
+                24,
+                14
+              ],
+              "z_hits_mm": [
+                15.0,
+                17.0
+              ]
+            }
+          ],
+          "trial_total_clearance_mm": 0.4,
+          "trial_per_side_clearance_mm": 0.2,
+          "trial_status": "experimental_geometry_only",
+          "measurement_scope": "nominal lid and ring geometry only; no qualified printed clearance",
+          "assembly": {
+            "scope": "nominal mesh placement only; physical fit remains untested",
+            "geometric_nonintersection": true,
+            "interior_volume_overlap_mm3": 0.0,
+            "per_side_order": [
+              "negative_x",
+              "positive_x",
+              "negative_y",
+              "positive_y"
+            ],
+            "per_side_clearances_mm": [
+              0.20000076293945312,
+              0.20000076293945312,
+              0.20000076293945312,
+              0.20000076293945312
+            ],
+            "total_clearances_mm": [
+              0.40000152587890625,
+              0.40000152587890625
+            ],
+            "trial_total_clearance_mm": 0.4,
+            "engagement_mm": 4.0,
+            "cavity_depth_mm": 28.0,
+            "floor_reserve_mm": 24.0,
+            "rim_contact_z_mm": 15.0,
+            "physical_interference": null,
+            "printed": false,
+            "fit_tested": false,
+            "qualified_clearance_mm": null
+          }
+        },
+        "source_metadata_compared": [
+          "lid.dimensions_mm",
+          "lid.plate_dimensions_mm",
+          "lid.plate_z_mm",
+          "lid.ring_outer_mm",
+          "lid.ring_inner_mm",
+          "lid.ring_z_mm",
+          "lid.ring_wall_thicknesses_mm",
+          "lid.plate_thickness_mm",
+          "lid.ring_depth_mm",
+          "lid.ring_wall_mm",
+          "lid.engagement_mm",
+          "lid.volume_mm3",
+          "lid.bounds_mm",
+          "lid.ring_outer_bounds_mm",
+          "lid.ring_inner_bounds_mm",
+          "lid.assembly.per_side_clearances_mm",
+          "lid.assembly.total_clearances_mm",
+          "lid.assembly.engagement_mm",
+          "lid.assembly.cavity_depth_mm",
+          "lid.assembly.floor_reserve_mm",
+          "lid.assembly.rim_contact_z_mm",
+          "body.cavity_bounds_mm"
+        ],
+        "printed": false,
+        "fit_tested": false,
+        "physical_measurements": null,
+        "fit_results": null,
+        "physical_interference": null,
+        "qualified_clearance_mm": null,
+        "trial_status": "experimental_geometry_only",
+        "trial_total_clearance_mm": 0.4,
+        "trial_per_side_clearance_mm": 0.2,
+        "numericComparison": {
+          "purpose": "Floating point reconstruction only; not manufacturing tolerance or fit acceptance",
+          "dimensionsAbsMm": 0.0001,
+          "coordinateWeldMm": 1e-05,
+          "volumeRelative": 1e-05
+        },
+        "source_scene_path": null,
+        "source_scene_sha256": null
+      },
+      "reimport_verified": true,
+      "reimport_lid": {
+        "bounds_mm": {
+          "min": [
+            -30.0,
+            -20.0,
+            11.0
+          ],
+          "max": [
+            30.0,
+            20.0,
+            17.0
+          ]
+        },
+        "dimensions_mm": [
+          60.0,
+          40.0,
+          6.0
+        ],
+        "volume_mm3": 6195.199951171875,
+        "non_manifold_edges": 0,
+        "non_manifold_vertex_links": 0,
+        "inconsistent_winding_edges": 0,
+        "connected_shells": 1,
+        "euler_characteristic": 2,
+        "genus": 0,
+        "mesh_counts": {
+          "vertices": 24,
+          "edges": 66,
+          "faces": 44,
+          "triangles": 44,
+          "representation": "evaluated loop-triangulated mesh"
+        },
+        "passed": true,
+        "printed": false,
+        "fit_tested": false,
+        "physical_interference": null,
+        "qualified_clearance_mm": null,
+        "numericComparison": {
+          "purpose": "Floating point reconstruction only; not manufacturing tolerance or fit acceptance",
+          "dimensionsAbsMm": 0.0001,
+          "volumeRelative": 1e-05
+        },
+        "kind": "lid",
+        "plate_dimensions_mm": [
+          60.0,
+          40.0,
+          2.0
+        ],
+        "plate_z_mm": [
+          15.0,
+          17.0
+        ],
+        "plate_thickness_mm": 2.0,
+        "ring_outer_bounds_mm": {
+          "min": [
+            -27.799999237060547,
+            -17.799999237060547,
+            11.0
+          ],
+          "max": [
+            27.799999237060547,
+            17.799999237060547,
+            15.0
+          ]
+        },
+        "ring_inner_bounds_mm": {
+          "min": [
+            -25.799999237060547,
+            -15.799999237060547,
+            11.0
+          ],
+          "max": [
+            25.799999237060547,
+            15.799999237060547,
+            15.0
+          ]
+        },
+        "ring_outer_mm": [
+          55.599998474121094,
+          35.599998474121094
+        ],
+        "ring_inner_mm": [
+          51.599998474121094,
+          31.599998474121094
+        ],
+        "ring_wall_thicknesses_mm": [
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "ring_z_mm": [
+          11.0,
+          15.0
+        ],
+        "ring_depth_mm": 4.0,
+        "engagement_mm": 4.0,
+        "ring_wall_mm": 2.0,
+        "expected_volume_mm3": 6195.2,
+        "actual_face_planes": {
+          "X": [
+            {
+              "coordinate_mm": -30.0,
+              "area_mm2": 80.0,
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  -20.0,
+                  15.0
+                ],
+                "max": [
+                  -30.0,
+                  20.0,
+                  17.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": -27.799999237060547,
+              "area_mm2": 142.39999389648438,
+              "bounds_mm": {
+                "min": [
+                  -27.799999237060547,
+                  -17.799999237060547,
+                  11.0
+                ],
+                "max": [
+                  -27.799999237060547,
+                  17.799999237060547,
+                  15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": -25.799999237060547,
+              "area_mm2": 126.39999389648438,
+              "bounds_mm": {
+                "min": [
+                  -25.799999237060547,
+                  -15.799999237060547,
+                  11.0
+                ],
+                "max": [
+                  -25.799999237060547,
+                  15.799999237060547,
+                  15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 25.799999237060547,
+              "area_mm2": 126.39999389648438,
+              "bounds_mm": {
+                "min": [
+                  25.799999237060547,
+                  -15.799999237060547,
+                  11.0
+                ],
+                "max": [
+                  25.799999237060547,
+                  15.799999237060547,
+                  15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 27.799999237060547,
+              "area_mm2": 142.39999389648438,
+              "bounds_mm": {
+                "min": [
+                  27.799999237060547,
+                  -17.799999237060547,
+                  11.0
+                ],
+                "max": [
+                  27.799999237060547,
+                  17.799999237060547,
+                  15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 30.0,
+              "area_mm2": 80.0,
+              "bounds_mm": {
+                "min": [
+                  30.0,
+                  -20.0,
+                  15.0
+                ],
+                "max": [
+                  30.0,
+                  20.0,
+                  17.0
+                ]
+              }
+            }
+          ],
+          "Y": [
+            {
+              "coordinate_mm": -20.0,
+              "area_mm2": 120.0,
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  -20.0,
+                  15.0
+                ],
+                "max": [
+                  30.0,
+                  -20.0,
+                  17.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": -17.799999237060547,
+              "area_mm2": 222.39999389648438,
+              "bounds_mm": {
+                "min": [
+                  -27.799999237060547,
+                  -17.799999237060547,
+                  11.0
+                ],
+                "max": [
+                  27.799999237060547,
+                  -17.799999237060547,
+                  15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": -15.799999237060547,
+              "area_mm2": 206.39999389648438,
+              "bounds_mm": {
+                "min": [
+                  -25.799999237060547,
+                  -15.799999237060547,
+                  11.0
+                ],
+                "max": [
+                  25.799999237060547,
+                  -15.799999237060547,
+                  15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 15.799999237060547,
+              "area_mm2": 206.39999389648438,
+              "bounds_mm": {
+                "min": [
+                  -25.799999237060547,
+                  15.799999237060547,
+                  11.0
+                ],
+                "max": [
+                  25.799999237060547,
+                  15.799999237060547,
+                  15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 17.799999237060547,
+              "area_mm2": 222.39999389648438,
+              "bounds_mm": {
+                "min": [
+                  -27.799999237060547,
+                  17.799999237060547,
+                  11.0
+                ],
+                "max": [
+                  27.799999237060547,
+                  17.799999237060547,
+                  15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 20.0,
+              "area_mm2": 120.0,
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  20.0,
+                  15.0
+                ],
+                "max": [
+                  30.0,
+                  20.0,
+                  17.0
+                ]
+              }
+            }
+          ],
+          "Z": [
+            {
+              "coordinate_mm": 11.0,
+              "area_mm2": 348.79998779296875,
+              "bounds_mm": {
+                "min": [
+                  -27.799999237060547,
+                  -17.799999237060547,
+                  11.0
+                ],
+                "max": [
+                  27.799999237060547,
+                  17.799999237060547,
+                  11.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 15.0,
+              "area_mm2": 2051.2000122070312,
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  -20.0,
+                  15.0
+                ],
+                "max": [
+                  30.0,
+                  20.0,
+                  15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 17.0,
+              "area_mm2": 2400.0,
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  -20.0,
+                  17.0
+                ],
+                "max": [
+                  30.0,
+                  20.0,
+                  17.0
+                ]
+              }
+            }
+          ]
+        },
+        "vertical_rays": [
+          {
+            "label": "covered hollow centre",
+            "xy_mm": [
+              0,
+              0
+            ],
+            "z_hits_mm": [
+              15.0,
+              17.0
+            ]
+          },
+          {
+            "label": "negative X lip",
+            "xy_mm": [
+              -26.8,
+              0
+            ],
+            "z_hits_mm": [
+              11.0,
+              17.0
+            ]
+          },
+          {
+            "label": "positive X lip",
+            "xy_mm": [
+              26.8,
+              0
+            ],
+            "z_hits_mm": [
+              11.0,
+              17.0
+            ]
+          },
+          {
+            "label": "negative Y lip",
+            "xy_mm": [
+              0,
+              -16.8
+            ],
+            "z_hits_mm": [
+              11.0,
+              17.0
+            ]
+          },
+          {
+            "label": "positive Y lip",
+            "xy_mm": [
+              0,
+              16.8
+            ],
+            "z_hits_mm": [
+              11.0,
+              17.0
+            ]
+          },
+          {
+            "label": "negative X outer ledge",
+            "xy_mm": [
+              -29,
+              0
+            ],
+            "z_hits_mm": [
+              15.0,
+              17.0
+            ]
+          },
+          {
+            "label": "positive X outer ledge",
+            "xy_mm": [
+              29,
+              0
+            ],
+            "z_hits_mm": [
+              15.0,
+              17.0
+            ]
+          },
+          {
+            "label": "negative Y outer ledge",
+            "xy_mm": [
+              0,
+              -19
+            ],
+            "z_hits_mm": [
+              15.0,
+              17.0
+            ]
+          },
+          {
+            "label": "positive Y outer ledge",
+            "xy_mm": [
+              0,
+              19
+            ],
+            "z_hits_mm": [
+              15.0,
+              17.0
+            ]
+          },
+          {
+            "label": "hollow interior corner",
+            "xy_mm": [
+              24,
+              14
+            ],
+            "z_hits_mm": [
+              15.0,
+              17.0
+            ]
+          }
+        ],
+        "trial_total_clearance_mm": 0.4,
+        "trial_per_side_clearance_mm": 0.2,
+        "trial_status": "experimental_geometry_only",
+        "measurement_scope": "nominal lid and ring geometry only; no qualified printed clearance",
+        "assembly": {
+          "scope": "nominal mesh placement only; physical fit remains untested",
+          "geometric_nonintersection": true,
+          "interior_volume_overlap_mm3": 0.0,
+          "per_side_order": [
+            "negative_x",
+            "positive_x",
+            "negative_y",
+            "positive_y"
+          ],
+          "per_side_clearances_mm": [
+            0.20000076293945312,
+            0.20000076293945312,
+            0.20000076293945312,
+            0.20000076293945312
+          ],
+          "total_clearances_mm": [
+            0.40000152587890625,
+            0.40000152587890625
+          ],
+          "trial_total_clearance_mm": 0.4,
+          "engagement_mm": 4.0,
+          "cavity_depth_mm": 28.0,
+          "floor_reserve_mm": 24.0,
+          "rim_contact_z_mm": 15.0,
+          "physical_interference": null,
+          "printed": false,
+          "fit_tested": false,
+          "qualified_clearance_mm": null
+        },
+        "object_name": "u05_lid_v001",
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "unit_scale": 0.0010000000474974513,
+        "length_unit": "MILLIMETERS",
+        "measurement_source": "evaluated final mesh loop triangles in world-space millimetres"
+      },
+      "import_options": {
+        "global_scale": 1.0,
+        "use_scene_unit": false,
+        "forward_axis": "Y",
+        "up_axis": "Z"
+      },
+      "trial_total_clearance_mm": 0.4,
+      "trial_per_side_clearance_mm": 0.2,
+      "trial_status": "experimental_geometry_only",
+      "printed": false,
+      "fit_tested": false,
+      "physical_measurements": null,
+      "fit_results": null,
+      "qualified_clearance_mm": null,
+      "slicer_checked": false,
+      "saved_new_scene": false,
+      "numericComparison": {
+        "purpose": "Floating point reconstruction only; not manufacturing tolerance or printed fit acceptance",
+        "dimensionsAbsMm": 0.0001,
+        "volumeRelative": 1e-05
+      },
+      "only_selected": true,
+      "global_scale": 1.0,
+      "use_scene_unit": false,
+      "apply_modifiers": true,
+      "forward_axis": "Y",
+      "up_axis": "Z",
+      "ascii_format": false,
+      "use_batch": false,
+      "evaluation_mode": "DAG_EVAL_RENDER"
+    },
+    "runnerStatus": {
+      "status": "completed",
+      "scenario": "lesson05_lid_export",
+      "outputDir": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\05\\2026-10-25-lesson05-lid-export-demo-v001",
+      "startedAt": "2026-10-25T05:23:44.603Z",
+      "endedAt": "2026-10-25T05:24:47.823Z",
+      "blenderExitCode": 0,
+      "timeoutSeconds": 600,
+      "workspacesUnchanged": true,
+      "runErrors": [],
+      "workspacesBefore": {
+        ".": {
+          "kind": "directory"
+        },
+        "01": {
+          "kind": "directory"
+        },
+        "02": {
+          "kind": "directory"
+        },
+        "03": {
+          "kind": "directory"
+        },
+        "04": {
+          "kind": "directory"
+        },
+        "05": {
+          "kind": "directory"
+        },
+        "06": {
+          "kind": "directory"
+        },
+        "07": {
+          "kind": "directory"
+        },
+        "08": {
+          "kind": "directory"
+        },
+        "09": {
+          "kind": "directory"
+        },
+        "04/exports": {
+          "kind": "directory"
+        }
+      },
+      "workspacesAfter": {
+        ".": {
+          "kind": "directory"
+        },
+        "01": {
+          "kind": "directory"
+        },
+        "02": {
+          "kind": "directory"
+        },
+        "03": {
+          "kind": "directory"
+        },
+        "04": {
+          "kind": "directory"
+        },
+        "05": {
+          "kind": "directory"
+        },
+        "06": {
+          "kind": "directory"
+        },
+        "07": {
+          "kind": "directory"
+        },
+        "08": {
+          "kind": "directory"
+        },
+        "09": {
+          "kind": "directory"
+        },
+        "04/exports": {
+          "kind": "directory"
+        }
+      },
+      "workspaceChanges": []
+    },
+    "verificationEvidence": {
+      "path": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/verification.json",
+      "sha256": "039eae34d3ad50fd11d32cc00cbfe177c62586b845089e8c29105098a64fd8c6"
+    },
+    "runnerEvidence": {
+      "path": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/runner-status.json",
+      "sha256": "2d58a71f9a45ddad1ce6269bacc99fb216b933a4b5f2df1daab7cc525a33f759"
+    },
+    "numericComparison": {
+      "meshReadbackAbsToleranceMm": 0.0001,
+      "declaredParametersAbsToleranceMm": 1e-06,
+      "volumeRelativeTolerance": 1e-05,
+      "volumeAbsToleranceMm3": 0.001,
+      "purpose": "僅處理 STL 與 CAD 網格的浮點重建及讀回誤差；不是製造公差、配合間隙或列印試配合格門檻。"
+    },
+    "completionScope": "05-06 蓋子 STL 匯出與 CAD 讀回；切片、列印、實測與試配尚未完成"
+  }
+}

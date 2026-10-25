@@ -1,0 +1,65 @@
+{
+  "scope": "Geometry demonstration only",
+  "selectedBy": "tutor",
+  "design": {
+    "status": "experimental_geometry_only",
+    "selected_by": "tutor",
+    "total_clearance_mm": 0.4,
+    "per_side_clearance_mm": 0.2,
+    "qualified_clearance_mm": null
+  },
+  "bodyCavityMm": [
+    56.0,
+    36.0,
+    28.0
+  ],
+  "lidPlateMm": [
+    60.0,
+    40.0,
+    2.0
+  ],
+  "lidRingOuterMm": [
+    55.599998474121094,
+    35.599998474121094
+  ],
+  "lidRingInnerMm": [
+    51.599998474121094,
+    31.599998474121094
+  ],
+  "digitalPlacement": {
+    "scope": "nominal mesh placement only; physical fit remains untested",
+    "geometric_nonintersection": true,
+    "interior_volume_overlap_mm3": 0.0,
+    "per_side_order": [
+      "negative_x",
+      "positive_x",
+      "negative_y",
+      "positive_y"
+    ],
+    "per_side_clearances_mm": [
+      0.20000076293945312,
+      0.20000076293945312,
+      0.20000076293945312,
+      0.20000076293945312
+    ],
+    "total_clearances_mm": [
+      0.40000152587890625,
+      0.40000152587890625
+    ],
+    "trial_total_clearance_mm": 0.4,
+    "engagement_mm": 4.0,
+    "cavity_depth_mm": 28.0,
+    "floor_reserve_mm": 24.0,
+    "rim_contact_z_mm": 15.0,
+    "physical_interference": null,
+    "printed": false,
+    "fit_tested": false,
+    "qualified_clearance_mm": null
+  },
+  "printConditions": null,
+  "physicalMeasurements": null,
+  "fitResults": null,
+  "qualifiedClearanceMm": null,
+  "printed": false,
+  "fitTested": false
+}

@@ -1,0 +1,2541 @@
+{
+  "passed": true,
+  "kind": "native_overhang_view_evidence",
+  "source_scene_path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\07\\2026-10-25-lesson07-overhang-demo-v001\\demo-files\\u07_print_orientation_v001.blend",
+  "source_scene_sha256": "360417f208287a94ca13501f4365b70b3396ca6aba579231e0f8d2a442ecf47d",
+  "opened_scene_path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\07\\2026-10-25-lesson07-overhang-focus-v002\\demo-files\\sources\\u07_print_orientation_v001.blend",
+  "opened_scene_sha256": "360417f208287a94ca13501f4365b70b3396ca6aba579231e0f8d2a442ecf47d",
+  "source_unchanged": true,
+  "opened_copy_unchanged": true,
+  "read_only_view": true,
+  "geometry_unchanged": true,
+  "pose_unchanged": true,
+  "saved_new_scene": false,
+  "analysis_settings": {
+    "type": "OVERHANG",
+    "axis": "NEG_Z",
+    "minimum_radians": 0.0,
+    "maximum_radians": 0.7853981852531433,
+    "minimum_deg": 0.0,
+    "maximum_deg": 45.00000125223908,
+    "show_statvis": true,
+    "show_overlays": true,
+    "shading": "SOLID",
+    "xray": false
+  },
+  "camera": {
+    "camera_direction_world": [
+      0.0,
+      -0.9986295700073242,
+      -0.05233606696128845
+    ],
+    "elevation_degrees": -3.0000063523996228,
+    "view_location": [
+      40.0,
+      17.899999618530273,
+      6.400003433227539
+    ],
+    "view_distance": 9.202548027038574,
+    "view_perspective": "ORTHO"
+  },
+  "isolated_orbit_preference": {
+    "property": "preferences.view.rotation_angle",
+    "subtype": "NONE",
+    "unit": "NONE",
+    "before": 15.0,
+    "after": 3.0,
+    "requested_degrees": 3.0,
+    "isolated_runner_only": true,
+    "saved_preferences": false,
+    "geometry_or_view_matrix_written": false
+  },
+  "target_face": {
+    "polygon_index": 18,
+    "vertices_mm": [
+      [
+        35.0,
+        18.5,
+        6.400003433227539
+      ],
+      [
+        45.0,
+        18.5,
+        6.400003433227539
+      ],
+      [
+        45.0,
+        17.299999237060547,
+        6.400003433227539
+      ],
+      [
+        35.0,
+        17.299999237060547,
+        6.400003433227539
+      ]
+    ],
+    "normal_world": [
+      0.0,
+      8.742277657347586e-08,
+      -1.0
+    ],
+    "centre_mm": [
+      40.0,
+      17.899999618530273,
+      6.400003433227539
+    ]
+  },
+  "correct_ui_selected_face": true,
+  "candidate_geometry_readback": {
+    "passed": true,
+    "kind": "snapfit_print_orientation",
+    "part_kind": "lid",
+    "pose": "candidate",
+    "rotation_matrix_world": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        0,
+        0,
+        -1
+      ]
+    ],
+    "world_translation_mm": [
+      40.0,
+      -6.0,
+      17.200001664926162
+    ],
+    "max_rigid_vertex_residual_mm": 2.062411454062385e-06,
+    "rigid_shape_preserved": true,
+    "rotation_applied_to_mesh": false,
+    "source_geometry_readback": {
+      "bounds_mm": {
+        "min": [
+          -30.0,
+          -26.0,
+          10.199999809265137
+        ],
+        "max": [
+          30.0,
+          20.0,
+          17.200000762939453
+        ]
+      },
+      "dimensions_mm": [
+        60.0,
+        46.0,
+        7.000000953674316
+      ],
+      "volume_mm3": 5602.200023460391,
+      "non_manifold_edges": 0,
+      "non_manifold_vertex_links": 0,
+      "inconsistent_winding_edges": 0,
+      "connected_shells": 1,
+      "euler_characteristic": 2,
+      "genus": 0,
+      "mesh_counts": {
+        "vertices": 26,
+        "edges": 72,
+        "faces": 48,
+        "triangles": 48,
+        "representation": "world-space triangulated mesh"
+      },
+      "passed": true,
+      "printed": false,
+      "fit_tested": false,
+      "physical_measurements": null,
+      "fit_results": null,
+      "physical_interference": null,
+      "qualified_clearance_mm": null,
+      "trial_status": "experimental_geometry_only",
+      "numericComparison": {
+        "purpose": "Floating point reconstruction only; not manufacturing tolerance or fit acceptance",
+        "dimensionsAbsMm": 0.0001,
+        "volumeRelative": 1e-05
+      },
+      "kind": "snapfit_lid",
+      "material_grade": null,
+      "epsilon_allow": null,
+      "root_flexibility_Q": null,
+      "required_deflection_mm": null,
+      "delta_allow_mm": null,
+      "insertion_force_N": null,
+      "retention_force_N": null,
+      "qualified_strength_N": null,
+      "strength_assessment": null,
+      "fit_assessment": null,
+      "strength_analysis_performed": false,
+      "deformation_analysis_performed": false,
+      "exported_stl": false,
+      "slicer_checked": false,
+      "actual_axis_planes": {
+        "X": [
+          {
+            "coordinate_mm": -30.0,
+            "area_mm2": 92.0,
+            "bounds_mm": {
+              "min": [
+                -30.0,
+                -26.0,
+                15.200000762939453
+              ],
+              "max": [
+                -30.0,
+                20.0,
+                17.200000762939453
+              ]
+            }
+          },
+          {
+            "coordinate_mm": -5.0,
+            "area_mm2": 8.22000234603911,
+            "bounds_mm": {
+              "min": [
+                -5.0,
+                -26.0,
+                10.199999809265137
+              ],
+              "max": [
+                -5.0,
+                -23.299999237060547,
+                15.200000762939453
+              ]
+            }
+          },
+          {
+            "coordinate_mm": 5.0,
+            "area_mm2": 8.22000234603911,
+            "bounds_mm": {
+              "min": [
+                5.0,
+                -26.0,
+                10.199999809265137
+              ],
+              "max": [
+                5.0,
+                -23.299999237060547,
+                15.200000762939453
+              ]
+            }
+          },
+          {
+            "coordinate_mm": 30.0,
+            "area_mm2": 92.0,
+            "bounds_mm": {
+              "min": [
+                30.0,
+                -26.0,
+                15.200000762939453
+              ],
+              "max": [
+                30.0,
+                20.0,
+                17.200000762939453
+              ]
+            }
+          }
+        ],
+        "Y": [
+          {
+            "coordinate_mm": -26.0,
+            "area_mm2": 170.00000953674316,
+            "bounds_mm": {
+              "min": [
+                -30.0,
+                -26.0,
+                10.199999809265137
+              ],
+              "max": [
+                30.0,
+                -26.0,
+                17.200000762939453
+              ]
+            }
+          },
+          {
+            "coordinate_mm": -24.5,
+            "area_mm2": 44.0000057220459,
+            "bounds_mm": {
+              "min": [
+                -5.0,
+                -24.5,
+                10.800000190734863
+              ],
+              "max": [
+                5.0,
+                -24.5,
+                15.200000762939453
+              ]
+            }
+          },
+          {
+            "coordinate_mm": -23.299999237060547,
+            "area_mm2": 6.000003814697266,
+            "bounds_mm": {
+              "min": [
+                -5.0,
+                -23.299999237060547,
+                10.199999809265137
+              ],
+              "max": [
+                5.0,
+                -23.299999237060547,
+                10.800000190734863
+              ]
+            }
+          },
+          {
+            "coordinate_mm": 20.0,
+            "area_mm2": 120.0,
+            "bounds_mm": {
+              "min": [
+                -30.0,
+                20.0,
+                15.200000762939453
+              ],
+              "max": [
+                30.0,
+                20.0,
+                17.200000762939453
+              ]
+            }
+          }
+        ],
+        "Z": [
+          {
+            "coordinate_mm": 10.199999809265137,
+            "area_mm2": 27.00000762939453,
+            "bounds_mm": {
+              "min": [
+                -5.0,
+                -26.0,
+                10.199999809265137
+              ],
+              "max": [
+                5.0,
+                -23.299999237060547,
+                10.199999809265137
+              ]
+            }
+          },
+          {
+            "coordinate_mm": 10.800000190734863,
+            "area_mm2": 12.000007629394531,
+            "bounds_mm": {
+              "min": [
+                -5.0,
+                -24.5,
+                10.800000190734863
+              ],
+              "max": [
+                5.0,
+                -23.299999237060547,
+                10.800000190734863
+              ]
+            }
+          },
+          {
+            "coordinate_mm": 15.200000762939453,
+            "area_mm2": 2745.0,
+            "bounds_mm": {
+              "min": [
+                -30.0,
+                -26.0,
+                15.200000762939453
+              ],
+              "max": [
+                30.0,
+                20.0,
+                15.200000762939453
+              ]
+            }
+          },
+          {
+            "coordinate_mm": 17.200000762939453,
+            "area_mm2": 2760.0,
+            "bounds_mm": {
+              "min": [
+                -30.0,
+                -26.0,
+                17.200000762939453
+              ],
+              "max": [
+                30.0,
+                20.0,
+                17.200000762939453
+              ]
+            }
+          }
+        ]
+      },
+      "mating_profile": {
+        "skirt_inner_y_mm": -24.5,
+        "ledge_inner_y_mm": -23.299999237060547,
+        "skirt_outer_y_mm": -26.0,
+        "ledge_bottom_z_mm": 10.199999809265137,
+        "ledge_top_z_mm": 10.800000190734863,
+        "ledge_thickness_mm": 0.6000003814697266,
+        "ledge_projection_mm": 1.2000007629394531,
+        "flange_width_mm": 10
+      },
+      "plate_z_mm": [
+        15.200000762939453,
+        17.200000762939453
+      ],
+      "plate_thickness_mm": 2.0,
+      "plate_dimensions_mm": [
+        60,
+        46,
+        2.0
+      ],
+      "profiles": {
+        "mating": {
+          "skirt_inner_y_mm": -24.5,
+          "ledge_inner_y_mm": -23.299999237060547,
+          "skirt_outer_y_mm": -26.0,
+          "ledge_bottom_z_mm": 10.199999809265137,
+          "ledge_top_z_mm": 10.800000190734863,
+          "ledge_thickness_mm": 0.6000003814697266,
+          "ledge_projection_mm": 1.2000007629394531,
+          "flange_width_mm": 10
+        }
+      },
+      "vertical_rays": [
+        {
+          "label": "plate centre",
+          "xy_mm": [
+            0,
+            0
+          ],
+          "z_hits_mm": [
+            15.200000762939455,
+            17.200000762939453
+          ]
+        },
+        {
+          "label": "integrated skirt",
+          "xy_mm": [
+            0,
+            -25
+          ],
+          "z_hits_mm": [
+            10.199999809265137,
+            17.200000762939453
+          ]
+        },
+        {
+          "label": "ledge under plate",
+          "xy_mm": [
+            0,
+            -24
+          ],
+          "z_hits_mm": [
+            10.199999809265137,
+            10.800000190734863,
+            15.200000762939453,
+            17.200000762939453
+          ]
+        },
+        {
+          "label": "plate beside narrow flange",
+          "xy_mm": [
+            10,
+            -25
+          ],
+          "z_hits_mm": [
+            15.200000762939453,
+            17.200000762939453
+          ]
+        }
+      ]
+    },
+    "inverse_geometry_readback": {
+      "bounds_mm": {
+        "min": [
+          -30.0,
+          -26.0,
+          10.199997850228897
+        ],
+        "max": [
+          30.0,
+          20.0,
+          17.200002721975693
+        ]
+      },
+      "dimensions_mm": [
+        60.0,
+        46.0,
+        7.000004871746796
+      ],
+      "volume_mm3": 5602.19990320802,
+      "non_manifold_edges": 0,
+      "non_manifold_vertex_links": 0,
+      "inconsistent_winding_edges": 0,
+      "connected_shells": 1,
+      "euler_characteristic": 2,
+      "genus": 0,
+      "mesh_counts": {
+        "vertices": 26,
+        "edges": 72,
+        "faces": 48,
+        "triangles": 48,
+        "representation": "world-space triangulated mesh"
+      },
+      "passed": true,
+      "printed": false,
+      "fit_tested": false,
+      "physical_measurements": null,
+      "fit_results": null,
+      "physical_interference": null,
+      "qualified_clearance_mm": null,
+      "trial_status": "experimental_geometry_only",
+      "numericComparison": {
+        "purpose": "Floating point reconstruction only; not manufacturing tolerance or fit acceptance",
+        "dimensionsAbsMm": 0.0001,
+        "volumeRelative": 1e-05
+      },
+      "kind": "snapfit_lid",
+      "material_grade": null,
+      "epsilon_allow": null,
+      "root_flexibility_Q": null,
+      "required_deflection_mm": null,
+      "delta_allow_mm": null,
+      "insertion_force_N": null,
+      "retention_force_N": null,
+      "qualified_strength_N": null,
+      "strength_assessment": null,
+      "fit_assessment": null,
+      "strength_analysis_performed": false,
+      "deformation_analysis_performed": false,
+      "exported_stl": false,
+      "slicer_checked": false,
+      "actual_axis_planes": {
+        "X": [
+          {
+            "coordinate_mm": -30.0,
+            "area_mm2": 91.99999725818634,
+            "bounds_mm": {
+              "min": [
+                -30.0,
+                -26.0,
+                15.199998803903213
+              ],
+              "max": [
+                -30.0,
+                20.0,
+                17.200002721975693
+              ]
+            }
+          },
+          {
+            "coordinate_mm": -5.0,
+            "area_mm2": 8.22000234603911,
+            "bounds_mm": {
+              "min": [
+                -5.0,
+                -26.0,
+                10.199997850228897
+              ],
+              "max": [
+                -5.0,
+                -23.299999237060547,
+                15.199998803903213
+              ]
+            }
+          },
+          {
+            "coordinate_mm": 5.0,
+            "area_mm2": 8.22000234603911,
+            "bounds_mm": {
+              "min": [
+                5.0,
+                -26.0,
+                10.199997850228897
+              ],
+              "max": [
+                5.0,
+                -23.299999237060547,
+                15.199998803903213
+              ]
+            }
+          },
+          {
+            "coordinate_mm": 30.0,
+            "area_mm2": 91.99999725818634,
+            "bounds_mm": {
+              "min": [
+                30.0,
+                -26.0,
+                15.199998803903213
+              ],
+              "max": [
+                30.0,
+                20.0,
+                17.200002721975693
+              ]
+            }
+          }
+        ],
+        "Y": [
+          {
+            "coordinate_mm": -26.0,
+            "area_mm2": 170.0000033342303,
+            "bounds_mm": {
+              "min": [
+                -30.0,
+                -26.0,
+                10.199997850228897
+              ],
+              "max": [
+                30.0,
+                -26.0,
+                17.199998700528
+              ]
+            }
+          },
+          {
+            "coordinate_mm": -24.5,
+            "area_mm2": 44.0000057220459,
+            "bounds_mm": {
+              "min": [
+                -5.0,
+                -24.5,
+                10.799998231698623
+              ],
+              "max": [
+                5.0,
+                -24.5,
+                15.199998803903213
+              ]
+            }
+          },
+          {
+            "coordinate_mm": -23.299999237060547,
+            "area_mm2": 6.000003814697266,
+            "bounds_mm": {
+              "min": [
+                -5.0,
+                -23.299999237060547,
+                10.199997850228897
+              ],
+              "max": [
+                5.0,
+                -23.299999237060547,
+                10.799998231698623
+              ]
+            }
+          },
+          {
+            "coordinate_mm": 20.0,
+            "area_mm2": 119.99999904995548,
+            "bounds_mm": {
+              "min": [
+                -30.0,
+                20.0,
+                15.200002737809768
+              ],
+              "max": [
+                30.0,
+                20.0,
+                17.200002721975693
+              ]
+            }
+          }
+        ],
+        "Z": [
+          {
+            "coordinate_mm": 10.199997850228897,
+            "area_mm2": 27.00000762939453,
+            "bounds_mm": {
+              "min": [
+                -5.0,
+                -26.0,
+                10.199997850228897
+              ],
+              "max": [
+                5.0,
+                -23.299999237060547,
+                10.199997850228897
+              ]
+            }
+          },
+          {
+            "coordinate_mm": 10.799998231698623,
+            "area_mm2": 12.000007629394531,
+            "bounds_mm": {
+              "min": [
+                -5.0,
+                -24.5,
+                10.799998231698623
+              ],
+              "max": [
+                5.0,
+                -23.299999237060547,
+                10.799998231698623
+              ]
+            }
+          },
+          {
+            "coordinate_mm": 15.199998803903213,
+            "area_mm2": 2745.000000000011,
+            "bounds_mm": {
+              "min": [
+                -30.0,
+                -26.0,
+                15.199998803903213
+              ],
+              "max": [
+                30.0,
+                20.0,
+                15.200002737809768
+              ]
+            }
+          },
+          {
+            "coordinate_mm": 17.200001381493127,
+            "area_mm2": 2760.0000000000105,
+            "bounds_mm": {
+              "min": [
+                -30.0,
+                -26.0,
+                17.199998700528
+              ],
+              "max": [
+                30.0,
+                20.0,
+                17.200002721975693
+              ]
+            }
+          }
+        ]
+      },
+      "mating_profile": {
+        "skirt_inner_y_mm": -24.5,
+        "ledge_inner_y_mm": -23.299999237060547,
+        "skirt_outer_y_mm": -26.0,
+        "ledge_bottom_z_mm": 10.199997850228897,
+        "ledge_top_z_mm": 10.799998231698623,
+        "ledge_thickness_mm": 0.6000003814697266,
+        "ledge_projection_mm": 1.2000007629394531,
+        "flange_width_mm": 10
+      },
+      "plate_z_mm": [
+        15.199998803903213,
+        17.200001381493127
+      ],
+      "plate_thickness_mm": 2.000002577589914,
+      "plate_dimensions_mm": [
+        60,
+        46,
+        2.000002577589914
+      ],
+      "profiles": {
+        "mating": {
+          "skirt_inner_y_mm": -24.5,
+          "ledge_inner_y_mm": -23.299999237060547,
+          "skirt_outer_y_mm": -26.0,
+          "ledge_bottom_z_mm": 10.199997850228897,
+          "ledge_top_z_mm": 10.799998231698623,
+          "ledge_thickness_mm": 0.6000003814697266,
+          "ledge_projection_mm": 1.2000007629394531,
+          "flange_width_mm": 10
+        }
+      },
+      "vertical_rays": [
+        {
+          "label": "plate centre",
+          "xy_mm": [
+            0,
+            0
+          ],
+          "z_hits_mm": [
+            15.200001027415617,
+            17.200000973520172
+          ]
+        },
+        {
+          "label": "integrated skirt",
+          "xy_mm": [
+            0,
+            -25
+          ],
+          "z_hits_mm": [
+            10.199997850228897,
+            17.199998787950776
+          ]
+        },
+        {
+          "label": "ledge under plate",
+          "xy_mm": [
+            0,
+            -24
+          ],
+          "z_hits_mm": [
+            10.199997850228897,
+            10.799998231698623,
+            15.19999884810441,
+            17.199998875373552
+          ]
+        },
+        {
+          "label": "plate beside narrow flange",
+          "xy_mm": [
+            10,
+            -25
+          ],
+          "z_hits_mm": [
+            15.199998889422922,
+            17.199998787950776
+          ]
+        }
+      ]
+    },
+    "source_bounds_mm": {
+      "min": [
+        -30.0,
+        -26.0,
+        10.199999809265137
+      ],
+      "max": [
+        30.0,
+        20.0,
+        17.200000762939453
+      ]
+    },
+    "bounds_mm": {
+      "min": [
+        10.0,
+        -26.0,
+        -1.05704953057284e-06
+      ],
+      "max": [
+        70.0,
+        20.0,
+        7.000003814697266
+      ]
+    },
+    "dimensions_mm": [
+      60.0,
+      46.0,
+      7.000004871746796
+    ],
+    "volume_mm3": 5602.19990320802,
+    "mesh_counts": {
+      "vertices": 26,
+      "edges": 72,
+      "faces": 48,
+      "triangles": 48,
+      "representation": "world-space triangulated mesh"
+    },
+    "non_manifold_edges": 0,
+    "connected_shells": 1,
+    "genus": 0,
+    "minimum_world_z_mm": -1.05704953057284e-06,
+    "bed_contact_area_mm2": 2760.0000000000105,
+    "derived_polygon_statistics": {
+      "summary": {
+        "all": {
+          "count": 20,
+          "area_mm2": 6084.44002638819,
+          "indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ]
+        },
+        "bed_contact": {
+          "count": 1,
+          "area_mm2": 2760.0000000000105,
+          "indices": [
+            6
+          ]
+        },
+        "downward_not_bed_contact": {
+          "count": 1,
+          "area_mm2": 12.000007629394531,
+          "indices": [
+            18
+          ]
+        },
+        "fully_elevated_downward": {
+          "count": 1,
+          "area_mm2": 12.000007629394531,
+          "indices": [
+            18
+          ]
+        },
+        "downward_touching_bed_edge": {
+          "count": 0,
+          "area_mm2": 0.0,
+          "indices": []
+        },
+        "derived_native_visible": {
+          "count": 2,
+          "area_mm2": 2772.000007629405,
+          "indices": [
+            6,
+            18
+          ]
+        },
+        "derived_native_visible_not_bed_contact": {
+          "count": 1,
+          "area_mm2": 12.000007629394531,
+          "indices": [
+            18
+          ]
+        },
+        "above_maximum_gray": {
+          "count": 18,
+          "area_mm2": 3312.440018758785,
+          "indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            19
+          ]
+        },
+        "angle_boundary_band": {
+          "count": 2,
+          "area_mm2": 2772.000007629405,
+          "indices": [
+            6,
+            18
+          ]
+        }
+      },
+      "records": [
+        {
+          "index": 0,
+          "area_mm2": 91.99999725818634,
+          "normal_world": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "angle_from_negative_z_deg": 90.0,
+          "derived_native_weight": -1.0,
+          "z_range_mm": [
+            -1.05704953057284e-06,
+            2.000002861022949
+          ],
+          "bed_contact": false,
+          "downward_not_bed_contact": false,
+          "fully_elevated_downward": false,
+          "angle_boundary_band": false,
+          "loop_triangle_indices": [
+            0,
+            1
+          ]
+        },
+        {
+          "index": 1,
+          "area_mm2": 119.99999904995548,
+          "normal_world": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "angle_from_negative_z_deg": 90.0,
+          "derived_native_weight": -1.0,
+          "z_range_mm": [
+            -1.05704953057284e-06,
+            1.999998927116394
+          ],
+          "bed_contact": false,
+          "downward_not_bed_contact": false,
+          "fully_elevated_downward": false,
+          "angle_boundary_band": false,
+          "loop_triangle_indices": [
+            2,
+            3
+          ]
+        },
+        {
+          "index": 2,
+          "area_mm2": 91.99999725818634,
+          "normal_world": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "angle_from_negative_z_deg": 90.0,
+          "derived_native_weight": -1.0,
+          "z_range_mm": [
+            -1.05704953057284e-06,
+            2.000002861022949
+          ],
+          "bed_contact": false,
+          "downward_not_bed_contact": false,
+          "fully_elevated_downward": false,
+          "angle_boundary_band": false,
+          "loop_triangle_indices": [
+            4,
+            5
+          ]
+        },
+        {
+          "index": 3,
+          "area_mm2": 118.00000166530026,
+          "normal_world": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "angle_from_negative_z_deg": 90.0,
+          "derived_native_weight": -1.0,
+          "z_range_mm": [
+            2.96439816338534e-06,
+            2.000002861022949
+          ],
+          "bed_contact": false,
+          "downward_not_bed_contact": false,
+          "fully_elevated_downward": false,
+          "angle_boundary_band": false,
+          "loop_triangle_indices": [
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "index": 4,
+          "area_mm2": 1.9999921321868896,
+          "normal_world": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "angle_from_negative_z_deg": 90.0,
+          "derived_native_weight": -1.0,
+          "z_range_mm": [
+            1.8000036478042603,
+            2.000002861022949
+          ],
+          "bed_contact": false,
+          "downward_not_bed_contact": false,
+          "fully_elevated_downward": false,
+          "angle_boundary_band": false,
+          "loop_triangle_indices": [
+            12,
+            13
+          ]
+        },
+        {
+          "index": 5,
+          "area_mm2": 2745.0000000000105,
+          "normal_world": [
+            0.0,
+            -8.598702852843206e-08,
+            0.9999999999999963
+          ],
+          "angle_from_negative_z_deg": 179.9999950954438,
+          "derived_native_weight": -1.0,
+          "z_range_mm": [
+            1.999998927116394,
+            2.000002861022949
+          ],
+          "bed_contact": false,
+          "downward_not_bed_contact": false,
+          "fully_elevated_downward": false,
+          "angle_boundary_band": false,
+          "loop_triangle_indices": [
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ]
+        },
+        {
+          "index": 6,
+          "area_mm2": 2760.0000000000105,
+          "normal_world": [
+            0.0,
+            8.742277595561228e-08,
+            -0.9999999999999962
+          ],
+          "angle_from_negative_z_deg": 4.9783130603797145e-06,
+          "derived_native_weight": 0.999999889370824,
+          "z_range_mm": [
+            -1.05704953057284e-06,
+            2.96439816338534e-06
+          ],
+          "bed_contact": true,
+          "downward_not_bed_contact": false,
+          "fully_elevated_downward": false,
+          "angle_boundary_band": true,
+          "loop_triangle_indices": [
+            20,
+            21
+          ]
+        },
+        {
+          "index": 7,
+          "area_mm2": 0.9000005722045898,
+          "normal_world": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "angle_from_negative_z_deg": 90.0,
+          "derived_native_weight": -1.0,
+          "z_range_mm": [
+            6.400003433227539,
+            7.000003814697266
+          ],
+          "bed_contact": false,
+          "downward_not_bed_contact": false,
+          "fully_elevated_downward": false,
+          "angle_boundary_band": false,
+          "loop_triangle_indices": [
+            22,
+            23
+          ]
+        },
+        {
+          "index": 8,
+          "area_mm2": 0.7200009155276348,
+          "normal_world": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "angle_from_negative_z_deg": 90.0,
+          "derived_native_weight": -1.0,
+          "z_range_mm": [
+            6.400003433227539,
+            7.000003814697266
+          ],
+          "bed_contact": false,
+          "downward_not_bed_contact": false,
+          "fully_elevated_downward": false,
+          "angle_boundary_band": false,
+          "loop_triangle_indices": [
+            24,
+            25
+          ]
+        },
+        {
+          "index": 9,
+          "area_mm2": 0.9000005722045898,
+          "normal_world": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "angle_from_negative_z_deg": 90.0,
+          "derived_native_weight": -1.0,
+          "z_range_mm": [
+            6.400003433227539,
+            7.000003814697266
+          ],
+          "bed_contact": false,
+          "downward_not_bed_contact": false,
+          "fully_elevated_downward": false,
+          "angle_boundary_band": false,
+          "loop_triangle_indices": [
+            26,
+            27
+          ]
+        },
+        {
+          "index": 10,
+          "area_mm2": 6.000003814697266,
+          "normal_world": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "angle_from_negative_z_deg": 90.0,
+          "derived_native_weight": -1.0,
+          "z_range_mm": [
+            6.400003433227539,
+            7.000003814697266
+          ],
+          "bed_contact": false,
+          "downward_not_bed_contact": false,
+          "fully_elevated_downward": false,
+          "angle_boundary_band": false,
+          "loop_triangle_indices": [
+            28,
+            29
+          ]
+        },
+        {
+          "index": 11,
+          "area_mm2": 15.0,
+          "normal_world": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "angle_from_negative_z_deg": 180.0,
+          "derived_native_weight": -1.0,
+          "z_range_mm": [
+            7.000003814697266,
+            7.000003814697266
+          ],
+          "bed_contact": false,
+          "downward_not_bed_contact": false,
+          "fully_elevated_downward": false,
+          "angle_boundary_band": false,
+          "loop_triangle_indices": [
+            30,
+            31
+          ]
+        },
+        {
+          "index": 12,
+          "area_mm2": 6.600000858306885,
+          "normal_world": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "angle_from_negative_z_deg": 90.0,
+          "derived_native_weight": -1.0,
+          "z_range_mm": [
+            2.000002861022949,
+            6.400003433227539
+          ],
+          "bed_contact": false,
+          "downward_not_bed_contact": false,
+          "fully_elevated_downward": false,
+          "angle_boundary_band": false,
+          "loop_triangle_indices": [
+            32,
+            33
+          ]
+        },
+        {
+          "index": 13,
+          "area_mm2": 44.0000057220459,
+          "normal_world": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "angle_from_negative_z_deg": 90.0,
+          "derived_native_weight": -1.0,
+          "z_range_mm": [
+            2.000002861022949,
+            6.400003433227539
+          ],
+          "bed_contact": false,
+          "downward_not_bed_contact": false,
+          "fully_elevated_downward": false,
+          "angle_boundary_band": false,
+          "loop_triangle_indices": [
+            34,
+            35
+          ]
+        },
+        {
+          "index": 14,
+          "area_mm2": 44.0000057220459,
+          "normal_world": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "angle_from_negative_z_deg": 90.0,
+          "derived_native_weight": -1.0,
+          "z_range_mm": [
+            2.000002861022949,
+            6.400003433227539
+          ],
+          "bed_contact": false,
+          "downward_not_bed_contact": false,
+          "fully_elevated_downward": false,
+          "angle_boundary_band": false,
+          "loop_triangle_indices": [
+            36,
+            37
+          ]
+        },
+        {
+          "index": 15,
+          "area_mm2": 6.600000858306885,
+          "normal_world": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "angle_from_negative_z_deg": 90.0,
+          "derived_native_weight": -1.0,
+          "z_range_mm": [
+            2.000002861022949,
+            6.400003433227539
+          ],
+          "bed_contact": false,
+          "downward_not_bed_contact": false,
+          "fully_elevated_downward": false,
+          "angle_boundary_band": false,
+          "loop_triangle_indices": [
+            38,
+            39
+          ]
+        },
+        {
+          "index": 16,
+          "area_mm2": 6.000003814697266,
+          "normal_world": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "angle_from_negative_z_deg": 90.0,
+          "derived_native_weight": -1.0,
+          "z_range_mm": [
+            6.400003433227539,
+            7.000003814697266
+          ],
+          "bed_contact": false,
+          "downward_not_bed_contact": false,
+          "fully_elevated_downward": false,
+          "angle_boundary_band": false,
+          "loop_triangle_indices": [
+            40,
+            41
+          ]
+        },
+        {
+          "index": 17,
+          "area_mm2": 12.000007629394531,
+          "normal_world": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "angle_from_negative_z_deg": 180.0,
+          "derived_native_weight": -1.0,
+          "z_range_mm": [
+            7.000003814697266,
+            7.000003814697266
+          ],
+          "bed_contact": false,
+          "downward_not_bed_contact": false,
+          "fully_elevated_downward": false,
+          "angle_boundary_band": false,
+          "loop_triangle_indices": [
+            42,
+            43
+          ]
+        },
+        {
+          "index": 18,
+          "area_mm2": 12.000007629394531,
+          "normal_world": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "angle_from_negative_z_deg": 0.0,
+          "derived_native_weight": 1.0,
+          "z_range_mm": [
+            6.400003433227539,
+            6.400003433227539
+          ],
+          "bed_contact": false,
+          "downward_not_bed_contact": true,
+          "fully_elevated_downward": true,
+          "angle_boundary_band": true,
+          "loop_triangle_indices": [
+            44,
+            45
+          ]
+        },
+        {
+          "index": 19,
+          "area_mm2": 0.7200009155276348,
+          "normal_world": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "angle_from_negative_z_deg": 90.0,
+          "derived_native_weight": -1.0,
+          "z_range_mm": [
+            6.400003433227539,
+            7.000003814697266
+          ],
+          "bed_contact": false,
+          "downward_not_bed_contact": false,
+          "fully_elevated_downward": false,
+          "angle_boundary_band": false,
+          "loop_triangle_indices": [
+            46,
+            47
+          ]
+        }
+      ]
+    },
+    "derived_loop_triangle_statistics": {
+      "summary": {
+        "all": {
+          "count": 48,
+          "area_mm2": 6084.440026388191,
+          "indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47
+          ]
+        },
+        "bed_contact": {
+          "count": 2,
+          "area_mm2": 2760.0000000000105,
+          "indices": [
+            20,
+            21
+          ]
+        },
+        "downward_not_bed_contact": {
+          "count": 2,
+          "area_mm2": 12.000007629394531,
+          "indices": [
+            44,
+            45
+          ]
+        },
+        "fully_elevated_downward": {
+          "count": 2,
+          "area_mm2": 12.000007629394531,
+          "indices": [
+            44,
+            45
+          ]
+        },
+        "downward_touching_bed_edge": {
+          "count": 0,
+          "area_mm2": 0.0,
+          "indices": []
+        },
+        "derived_native_visible": {
+          "count": 4,
+          "area_mm2": 2772.000007629405,
+          "indices": [
+            20,
+            21,
+            44,
+            45
+          ]
+        },
+        "derived_native_visible_not_bed_contact": {
+          "count": 2,
+          "area_mm2": 12.000007629394531,
+          "indices": [
+            44,
+            45
+          ]
+        },
+        "above_maximum_gray": {
+          "count": 44,
+          "area_mm2": 3312.4400187587853,
+          "indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            46,
+            47
+          ]
+        },
+        "angle_boundary_band": {
+          "count": 4,
+          "area_mm2": 2772.000007629405,
+          "indices": [
+            20,
+            21,
+            44,
+            45
+          ]
+        }
+      },
+      "records": [
+        {
+          "index": 0,
+          "area_mm2": 45.999997622370074,
+          "normal_world": [
+            -1.0,
+            0.0,
+            -0.0
+          ],
+          "angle_from_negative_z_deg": 90.0,
+          "derived_native_weight": -1.0,
+          "z_range_mm": [
+            -1.05704953057284e-06,
+            2.000002861022949
+          ],
+          "bed_contact": false,
+          "downward_not_bed_contact": false,
+          "fully_elevated_downward": false,
+          "angle_boundary_band": false
+        },
+        {
+          "index": 1,
+          "area_mm2": 45.999999635816266,
+          "normal_world": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "angle_from_negative_z_deg": 90.0,
+          "derived_native_weight": -1.0,
+          "z_range_mm": [
+            -1.05704953057284e-06,
+            2.000002861022949
+          ],
+          "bed_contact": false,
+          "downward_not_bed_contact": false,
+          "fully_elevated_downward": false,
+          "angle_boundary_band": false
+        },
+        {
+          "index": 2,
+          "area_mm2": 59.99999952497774,
+          "normal_world": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "angle_from_negative_z_deg": 90.0,
+          "derived_native_weight": -1.0,
+          "z_range_mm": [
+            -1.05704953057284e-06,
+            1.999998927116394
+          ],
+          "bed_contact": false,
+          "downward_not_bed_contact": false,
+          "fully_elevated_downward": false,
+          "angle_boundary_band": false
+        },
+        {
+          "index": 3,
+          "area_mm2": 59.99999952497774,
+          "normal_world": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "angle_from_negative_z_deg": 90.0,
+          "derived_native_weight": -1.0,
+          "z_range_mm": [
+            -1.05704953057284e-06,
+            1.999998927116394
+          ],
+          "bed_contact": false,
+          "downward_not_bed_contact": false,
+          "fully_elevated_downward": false,
+          "angle_boundary_band": false
+        },
+        {
+          "index": 4,
+          "area_mm2": 45.999999635816266,
+          "normal_world": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "angle_from_negative_z_deg": 90.0,
+          "derived_native_weight": -1.0,
+          "z_range_mm": [
+            -1.05704953057284e-06,
+            1.999998927116394
+          ],
+          "bed_contact": false,
+          "downward_not_bed_contact": false,
+          "fully_elevated_downward": false,
+          "angle_boundary_band": false
+        },
+        {
+          "index": 5,
+          "area_mm2": 45.999997622370074,
+          "normal_world": [
+            1.0,
+            -0.0,
+            0.0
+          ],
+          "angle_from_negative_z_deg": 90.0,
+          "derived_native_weight": -1.0,
+          "z_range_mm": [
+            2.96439816338534e-06,
+            2.000002861022949
+          ],
+          "bed_contact": false,
+          "downward_not_bed_contact": false,
+          "fully_elevated_downward": false,
+          "angle_boundary_band": false
+        },
+        {
+          "index": 6,
+          "area_mm2": 24.999998707809823,
+          "normal_world": [
+            -0.0,
+            1.0,
+            0.0
+          ],
+          "angle_from_negative_z_deg": 90.0,
+          "derived_native_weight": -1.0,
+          "z_range_mm": [
+            2.96439816338534e-06,
+            2.000002861022949
+          ],
+          "bed_contact": false,
+          "downward_not_bed_contact": false,
+          "fully_elevated_downward": false,
+          "angle_boundary_band": false
+        },
+        {
+          "index": 7,
+          "area_mm2": 59.999996898743575,
+          "normal_world": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "angle_from_negative_z_deg": 90.0,
+          "derived_native_weight": -1.0,
+          "z_range_mm": [
+            2.96439816338534e-06,
+            2.000002861022949
+          ],
+          "bed_contact": false,
+          "downward_not_bed_contact": false,
+          "fully_elevated_downward": false,
+          "angle_boundary_band": false
+        },
+        {
+          "index": 8,
+          "area_mm2": 2.499990165233612,
+          "normal_world": [
+            -0.0,
+            1.0,
+            0.0
+          ],
+          "angle_from_negative_z_deg": 90.0,
+          "derived_native_weight": -1.0,
+          "z_range_mm": [
+            1.8000036478042603,
+            2.000002861022949
+          ],
+          "bed_contact": false,
+          "downward_not_bed_contact": false,
+          "fully_elevated_downward": false,
+          "angle_boundary_band": false
+        },
+        {
+          "index": 9,
+          "area_mm2": 2.499990165233612,
+          "normal_world": [
+            -0.0,
+            1.0,
+            0.0
+          ],
+          "angle_from_negative_z_deg": 90.0,
+          "derived_native_weight": -1.0,
+          "z_range_mm": [
+            2.96439816338534e-06,
+            2.000002861022949
+          ],
+          "bed_contact": false,
+          "downward_not_bed_contact": false,
+          "fully_elevated_downward": false,
+          "angle_boundary_band": false
+        },
+        {
+          "index": 10,
+          "area_mm2": 19.000022311249154,
+          "normal_world": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "angle_from_negative_z_deg": 90.0,
+          "derived_native_weight": -1.0,
+          "z_range_mm": [
+            2.96439816338534e-06,
+            2.000002861022949
+          ],
+          "bed_contact": false,
+          "downward_not_bed_contact": false,
+          "fully_elevated_downward": false,
+          "angle_boundary_band": false
+        },
+        {
+          "index": 11,
+          "area_mm2": 9.000003417030484,
+          "normal_world": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "angle_from_negative_z_deg": 90.0,
+          "derived_native_weight": -1.0,
+          "z_range_mm": [
+            2.96439816338534e-06,
+            1.8000036478042603
+          ],
+          "bed_contact": false,
+          "downward_not_bed_contact": false,
+          "fully_elevated_downward": false,
+          "angle_boundary_band": false
+        },
+        {
+          "index": 12,
+          "area_mm2": 0.9999960660934448,
+          "normal_world": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "angle_from_negative_z_deg": 90.0,
+          "derived_native_weight": -1.0,
+          "z_range_mm": [
+            1.8000036478042603,
+            2.000002861022949
+          ],
+          "bed_contact": false,
+          "downward_not_bed_contact": false,
+          "fully_elevated_downward": false,
+          "angle_boundary_band": false
+        },
+        {
+          "index": 13,
+          "area_mm2": 0.9999960660934448,
+          "normal_world": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "angle_from_negative_z_deg": 90.0,
+          "derived_native_weight": -1.0,
+          "z_range_mm": [
+            1.8000036478042603,
+            2.000002861022949
+          ],
+          "bed_contact": false,
+          "downward_not_bed_contact": false,
+          "fully_elevated_downward": false,
+          "angle_boundary_band": false
+        },
+        {
+          "index": 14,
+          "area_mm2": 18.75,
+          "normal_world": [
+            0.0,
+            -0.0,
+            1.0
+          ],
+          "angle_from_negative_z_deg": 180.0,
+          "derived_native_weight": -1.0,
+          "z_range_mm": [
+            2.000002861022949,
+            2.000002861022949
+          ],
+          "bed_contact": false,
+          "downward_not_bed_contact": false,
+          "fully_elevated_downward": false,
+          "angle_boundary_band": false
+        },
+        {
+          "index": 15,
+          "area_mm2": 1380.000000000005,
+          "normal_world": [
+            0.0,
+            -8.551970772121233e-08,
+            0.9999999999999963
+          ],
+          "angle_from_negative_z_deg": 179.9999950954438,
+          "derived_native_weight": -1.0,
+          "z_range_mm": [
+            1.999998927116394,
+            2.000002861022949
+          ],
+          "bed_contact": false,
+          "downward_not_bed_contact": false,
+          "fully_elevated_downward": false,
+          "angle_boundary_band": false
+        },
+        {
+          "index": 16,
+          "area_mm2": 575.0000000000022,
+          "normal_world": [
+            0.0,
+            -8.551970772121231e-08,
+            0.9999999999999962
+          ],
+          "angle_from_negative_z_deg": 179.99999502168694,
+          "derived_native_weight": -1.0,
+          "z_range_mm": [
+            1.999998927116394,
+            2.000002861022949
+          ],
+          "bed_contact": false,
+          "downward_not_bed_contact": false,
+          "fully_elevated_downward": false,
+          "angle_boundary_band": false
+        },
+        {
+          "index": 17,
+          "area_mm2": 18.75000000000023,
+          "normal_world": [
+            1.5735626220702933e-07,
+            0.0,
+            0.9999999999999877
+          ],
+          "angle_from_negative_z_deg": 179.99999100493648,
+          "derived_native_weight": -1.0,
+          "z_range_mm": [
+            1.999998927116394,
+            2.000002861022949
+          ],
+          "bed_contact": false,
+          "downward_not_bed_contact": false,
+          "fully_elevated_downward": false,
+          "angle_boundary_band": false
+        },
+        {
+          "index": 18,
+          "area_mm2": 530.0000000000023,
+          "normal_world": [
+            -5.566848898833629e-09,
+            -9.278081498056048e-08,
+            0.9999999999999957
+          ],
+          "angle_from_negative_z_deg": 179.9999946681853,
+          "derived_native_weight": -1.0,
+          "z_range_mm": [
+            1.999998927116394,
+            2.000002861022949
+          ],
+          "bed_contact": false,
+          "downward_not_bed_contact": false,
+          "fully_elevated_downward": false,
+          "angle_boundary_band": false
+        },
+        {
+          "index": 19,
+          "area_mm2": 222.50000000000085,
+          "normal_world": [
+            0.0,
+            -8.840239449833182e-08,
+            0.9999999999999961
+          ],
+          "angle_from_negative_z_deg": 179.99999494900698,
+          "derived_native_weight": -1.0,
+          "z_range_mm": [
+            1.999998927116394,
+            2.000002861022949
+          ],
+          "bed_contact": false,
+          "downward_not_bed_contact": false,
+          "fully_elevated_downward": false,
+          "angle_boundary_band": false
+        },
+        {
+          "index": 20,
+          "area_mm2": 1380.0000000000052,
+          "normal_world": [
+            0.0,
+            8.742277595561228e-08,
+            -0.9999999999999962
+          ],
+          "angle_from_negative_z_deg": 4.9783130603797145e-06,
+          "derived_native_weight": 0.999999889370824,
+          "z_range_mm": [
+            -1.05704953057284e-06,
+            2.96439816338534e-06
+          ],
+          "bed_contact": true,
+          "downward_not_bed_contact": false,
+          "fully_elevated_downward": false,
+          "angle_boundary_band": true
+        },
+        {
+          "index": 21,
+          "area_mm2": 1380.0000000000052,
+          "normal_world": [
+            0.0,
+            8.742277595561228e-08,
+            -0.9999999999999962
+          ],
+          "angle_from_negative_z_deg": 4.9783130603797145e-06,
+          "derived_native_weight": 0.999999889370824,
+          "z_range_mm": [
+            -1.05704953057284e-06,
+            2.96439816338534e-06
+          ],
+          "bed_contact": true,
+          "downward_not_bed_contact": false,
+          "fully_elevated_downward": false,
+          "angle_boundary_band": true
+        },
+        {
+          "index": 22,
+          "area_mm2": 0.4500002861022949,
+          "normal_world": [
+            -1.0,
+            0.0,
+            -0.0
+          ],
+          "angle_from_negative_z_deg": 90.0,
+          "derived_native_weight": -1.0,
+          "z_range_mm": [
+            6.400003433227539,
+            7.000003814697266
+          ],
+          "bed_contact": false,
+          "downward_not_bed_contact": false,
+          "fully_elevated_downward": false,
+          "angle_boundary_band": false
+        },
+        {
+          "index": 23,
+          "area_mm2": 0.4500002861022949,
+          "normal_world": [
+            -1.0,
+            -0.0,
+            0.0
+          ],
+          "angle_from_negative_z_deg": 90.0,
+          "derived_native_weight": -1.0,
+          "z_range_mm": [
+            6.400003433227539,
+            7.000003814697266
+          ],
+          "bed_contact": false,
+          "downward_not_bed_contact": false,
+          "fully_elevated_downward": false,
+          "angle_boundary_band": false
+        },
+        {
+          "index": 24,
+          "area_mm2": 0.3600004577638174,
+          "normal_world": [
+            1.0,
+            0.0,
+            -0.0
+          ],
+          "angle_from_negative_z_deg": 90.0,
+          "derived_native_weight": -1.0,
+          "z_range_mm": [
+            6.400003433227539,
+            7.000003814697266
+          ],
+          "bed_contact": false,
+          "downward_not_bed_contact": false,
+          "fully_elevated_downward": false,
+          "angle_boundary_band": false
+        },
+        {
+          "index": 25,
+          "area_mm2": 0.3600004577638174,
+          "normal_world": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "angle_from_negative_z_deg": 90.0,
+          "derived_native_weight": -1.0,
+          "z_range_mm": [
+            6.400003433227539,
+            7.000003814697266
+          ],
+          "bed_contact": false,
+          "downward_not_bed_contact": false,
+          "fully_elevated_downward": false,
+          "angle_boundary_band": false
+        },
+        {
+          "index": 26,
+          "area_mm2": 0.4500002861022949,
+          "normal_world": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "angle_from_negative_z_deg": 90.0,
+          "derived_native_weight": -1.0,
+          "z_range_mm": [
+            6.400003433227539,
+            7.000003814697266
+          ],
+          "bed_contact": false,
+          "downward_not_bed_contact": false,
+          "fully_elevated_downward": false,
+          "angle_boundary_band": false
+        },
+        {
+          "index": 27,
+          "area_mm2": 0.4500002861022949,
+          "normal_world": [
+            1.0,
+            -0.0,
+            0.0
+          ],
+          "angle_from_negative_z_deg": 90.0,
+          "derived_native_weight": -1.0,
+          "z_range_mm": [
+            6.400003433227539,
+            7.000003814697266
+          ],
+          "bed_contact": false,
+          "downward_not_bed_contact": false,
+          "fully_elevated_downward": false,
+          "angle_boundary_band": false
+        },
+        {
+          "index": 28,
+          "area_mm2": 3.000001907348633,
+          "normal_world": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "angle_from_negative_z_deg": 90.0,
+          "derived_native_weight": -1.0,
+          "z_range_mm": [
+            6.400003433227539,
+            7.000003814697266
+          ],
+          "bed_contact": false,
+          "downward_not_bed_contact": false,
+          "fully_elevated_downward": false,
+          "angle_boundary_band": false
+        },
+        {
+          "index": 29,
+          "area_mm2": 3.000001907348633,
+          "normal_world": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "angle_from_negative_z_deg": 90.0,
+          "derived_native_weight": -1.0,
+          "z_range_mm": [
+            6.400003433227539,
+            7.000003814697266
+          ],
+          "bed_contact": false,
+          "downward_not_bed_contact": false,
+          "fully_elevated_downward": false,
+          "angle_boundary_band": false
+        },
+        {
+          "index": 30,
+          "area_mm2": 7.5,
+          "normal_world": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "angle_from_negative_z_deg": 180.0,
+          "derived_native_weight": -1.0,
+          "z_range_mm": [
+            7.000003814697266,
+            7.000003814697266
+          ],
+          "bed_contact": false,
+          "downward_not_bed_contact": false,
+          "fully_elevated_downward": false,
+          "angle_boundary_band": false
+        },
+        {
+          "index": 31,
+          "area_mm2": 7.5,
+          "normal_world": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "angle_from_negative_z_deg": 180.0,
+          "derived_native_weight": -1.0,
+          "z_range_mm": [
+            7.000003814697266,
+            7.000003814697266
+          ],
+          "bed_contact": false,
+          "downward_not_bed_contact": false,
+          "fully_elevated_downward": false,
+          "angle_boundary_band": false
+        },
+        {
+          "index": 32,
+          "area_mm2": 3.3000004291534424,
+          "normal_world": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "angle_from_negative_z_deg": 90.0,
+          "derived_native_weight": -1.0,
+          "z_range_mm": [
+            2.000002861022949,
+            6.400003433227539
+          ],
+          "bed_contact": false,
+          "downward_not_bed_contact": false,
+          "fully_elevated_downward": false,
+          "angle_boundary_band": false
+        },
+        {
+          "index": 33,
+          "area_mm2": 3.3000004291534424,
+          "normal_world": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "angle_from_negative_z_deg": 90.0,
+          "derived_native_weight": -1.0,
+          "z_range_mm": [
+            2.000002861022949,
+            6.400003433227539
+          ],
+          "bed_contact": false,
+          "downward_not_bed_contact": false,
+          "fully_elevated_downward": false,
+          "angle_boundary_band": false
+        },
+        {
+          "index": 34,
+          "area_mm2": 22.00000286102295,
+          "normal_world": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "angle_from_negative_z_deg": 90.0,
+          "derived_native_weight": -1.0,
+          "z_range_mm": [
+            2.000002861022949,
+            6.400003433227539
+          ],
+          "bed_contact": false,
+          "downward_not_bed_contact": false,
+          "fully_elevated_downward": false,
+          "angle_boundary_band": false
+        },
+        {
+          "index": 35,
+          "area_mm2": 22.00000286102295,
+          "normal_world": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "angle_from_negative_z_deg": 90.0,
+          "derived_native_weight": -1.0,
+          "z_range_mm": [
+            2.000002861022949,
+            6.400003433227539
+          ],
+          "bed_contact": false,
+          "downward_not_bed_contact": false,
+          "fully_elevated_downward": false,
+          "angle_boundary_band": false
+        },
+        {
+          "index": 36,
+          "area_mm2": 22.00000286102295,
+          "normal_world": [
+            -0.0,
+            -1.0,
+            0.0
+          ],
+          "angle_from_negative_z_deg": 90.0,
+          "derived_native_weight": -1.0,
+          "z_range_mm": [
+            2.000002861022949,
+            6.400003433227539
+          ],
+          "bed_contact": false,
+          "downward_not_bed_contact": false,
+          "fully_elevated_downward": false,
+          "angle_boundary_band": false
+        },
+        {
+          "index": 37,
+          "area_mm2": 22.00000286102295,
+          "normal_world": [
+            0.0,
+            -1.0,
+            -0.0
+          ],
+          "angle_from_negative_z_deg": 90.0,
+          "derived_native_weight": -1.0,
+          "z_range_mm": [
+            2.000002861022949,
+            6.400003433227539
+          ],
+          "bed_contact": false,
+          "downward_not_bed_contact": false,
+          "fully_elevated_downward": false,
+          "angle_boundary_band": false
+        },
+        {
+          "index": 38,
+          "area_mm2": 3.3000004291534424,
+          "normal_world": [
+            1.0,
+            0.0,
+            -0.0
+          ],
+          "angle_from_negative_z_deg": 90.0,
+          "derived_native_weight": -1.0,
+          "z_range_mm": [
+            2.000002861022949,
+            6.400003433227539
+          ],
+          "bed_contact": false,
+          "downward_not_bed_contact": false,
+          "fully_elevated_downward": false,
+          "angle_boundary_band": false
+        },
+        {
+          "index": 39,
+          "area_mm2": 3.3000004291534424,
+          "normal_world": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "angle_from_negative_z_deg": 90.0,
+          "derived_native_weight": -1.0,
+          "z_range_mm": [
+            2.000002861022949,
+            6.400003433227539
+          ],
+          "bed_contact": false,
+          "downward_not_bed_contact": false,
+          "fully_elevated_downward": false,
+          "angle_boundary_band": false
+        },
+        {
+          "index": 40,
+          "area_mm2": 3.000001907348633,
+          "normal_world": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "angle_from_negative_z_deg": 90.0,
+          "derived_native_weight": -1.0,
+          "z_range_mm": [
+            6.400003433227539,
+            7.000003814697266
+          ],
+          "bed_contact": false,
+          "downward_not_bed_contact": false,
+          "fully_elevated_downward": false,
+          "angle_boundary_band": false
+        },
+        {
+          "index": 41,
+          "area_mm2": 3.000001907348633,
+          "normal_world": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "angle_from_negative_z_deg": 90.0,
+          "derived_native_weight": -1.0,
+          "z_range_mm": [
+            6.400003433227539,
+            7.000003814697266
+          ],
+          "bed_contact": false,
+          "downward_not_bed_contact": false,
+          "fully_elevated_downward": false,
+          "angle_boundary_band": false
+        },
+        {
+          "index": 42,
+          "area_mm2": 6.000003814697266,
+          "normal_world": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "angle_from_negative_z_deg": 180.0,
+          "derived_native_weight": -1.0,
+          "z_range_mm": [
+            7.000003814697266,
+            7.000003814697266
+          ],
+          "bed_contact": false,
+          "downward_not_bed_contact": false,
+          "fully_elevated_downward": false,
+          "angle_boundary_band": false
+        },
+        {
+          "index": 43,
+          "area_mm2": 6.000003814697266,
+          "normal_world": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "angle_from_negative_z_deg": 180.0,
+          "derived_native_weight": -1.0,
+          "z_range_mm": [
+            7.000003814697266,
+            7.000003814697266
+          ],
+          "bed_contact": false,
+          "downward_not_bed_contact": false,
+          "fully_elevated_downward": false,
+          "angle_boundary_band": false
+        },
+        {
+          "index": 44,
+          "area_mm2": 6.000003814697266,
+          "normal_world": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "angle_from_negative_z_deg": 0.0,
+          "derived_native_weight": 1.0,
+          "z_range_mm": [
+            6.400003433227539,
+            6.400003433227539
+          ],
+          "bed_contact": false,
+          "downward_not_bed_contact": true,
+          "fully_elevated_downward": true,
+          "angle_boundary_band": true
+        },
+        {
+          "index": 45,
+          "area_mm2": 6.000003814697266,
+          "normal_world": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "angle_from_negative_z_deg": 0.0,
+          "derived_native_weight": 1.0,
+          "z_range_mm": [
+            6.400003433227539,
+            6.400003433227539
+          ],
+          "bed_contact": false,
+          "downward_not_bed_contact": true,
+          "fully_elevated_downward": true,
+          "angle_boundary_band": true
+        },
+        {
+          "index": 46,
+          "area_mm2": 0.3600004577638174,
+          "normal_world": [
+            -1.0,
+            0.0,
+            -0.0
+          ],
+          "angle_from_negative_z_deg": 90.0,
+          "derived_native_weight": -1.0,
+          "z_range_mm": [
+            6.400003433227539,
+            7.000003814697266
+          ],
+          "bed_contact": false,
+          "downward_not_bed_contact": false,
+          "fully_elevated_downward": false,
+          "angle_boundary_band": false
+        },
+        {
+          "index": 47,
+          "area_mm2": 0.3600004577638174,
+          "normal_world": [
+            -1.0,
+            -0.0,
+            0.0
+          ],
+          "angle_from_negative_z_deg": 90.0,
+          "derived_native_weight": -1.0,
+          "z_range_mm": [
+            6.400003433227539,
+            7.000003814697266
+          ],
+          "bed_contact": false,
+          "downward_not_bed_contact": false,
+          "fully_elevated_downward": false,
+          "angle_boundary_band": false
+        }
+      ]
+    },
+    "analysis_settings_readback": {
+      "type": "OVERHANG",
+      "axis": "NEG_Z",
+      "minimum_radians": 0.0,
+      "maximum_radians": 0.7853981852531433,
+      "minimum_deg": 0.0,
+      "maximum_deg": 45.00000125223908,
+      "show_statvis": true,
+      "show_overlays": true,
+      "shading": "SOLID",
+      "xray": false
+    },
+    "native_definition_source": "https://raw.githubusercontent.com/blender/blender/9e2066aef7ef/source/blender/draw/intern/mesh_extractors/extract_mesh_vbo_mesh_analysis.cc",
+    "native_definition_commit": "9e2066aef7ef",
+    "angle_definition": "angle between outward world polygon normal and world negative Z; 0 down, 90 vertical, 180 up",
+    "statistics_scope": "independently derived angles/areas and scalar remap; not GPU face-count or framebuffer readback",
+    "angle_boundary_band_deg": 0.0001,
+    "numeric_height_epsilon_mm": 0.0001,
+    "support_required": null,
+    "support_generation_performed": false,
+    "printability_qualified": null,
+    "material_grade": null,
+    "epsilon_allow": null,
+    "root_flexibility_Q": null,
+    "required_deflection_mm": null,
+    "delta_allow_mm": null,
+    "insertion_force_N": null,
+    "retention_force_N": null,
+    "strength_analysis_performed": false,
+    "slicer_checked": false,
+    "printed": false,
+    "fit_tested": false,
+    "physical_measurements": null,
+    "fit_results": null,
+    "physical_interference": null,
+    "qualified_strength_N": null,
+    "qualified_clearance_mm": null,
+    "trial_status": "orientation_geometry_only"
+  },
+  "source_main_run": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\07\\2026-10-25-lesson07-overhang-demo-v001",
+  "visual_clarity_requires_image_review": true,
+  "support_required": null,
+  "slicer_checked": false,
+  "printed": false,
+  "fit_tested": false,
+  "qualified_strength_N": null,
+  "qualified_clearance_mm": null
+}

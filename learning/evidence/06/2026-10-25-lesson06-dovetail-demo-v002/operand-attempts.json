@@ -1,0 +1,23 @@
+[
+  {
+    "target": "Body",
+    "tool": "GuideTool",
+    "attempt": 0,
+    "operation": "UNION",
+    "operand": "GuideTool"
+  },
+  {
+    "target": "Body",
+    "tool": "GrooveTool",
+    "attempt": 0,
+    "operation": "DIFFERENCE",
+    "operand": "GrooveTool"
+  },
+  {
+    "target": "SlidingLid",
+    "tool": "MaleTool",
+    "attempt": 0,
+    "operation": "UNION",
+    "operand": "MaleTool"
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "property": "preferences.view.rotation_angle",
+  "subtype": "NONE",
+  "unit": "NONE",
+  "before": 15.0,
+  "after": 3.0,
+  "requested_degrees": 3.0,
+  "isolated_runner_only": true,
+  "saved_preferences": false,
+  "geometry_or_view_matrix_written": false
+}

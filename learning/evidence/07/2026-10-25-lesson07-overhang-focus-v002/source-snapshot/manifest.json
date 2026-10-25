@@ -1,0 +1,64 @@
+{
+  "files": [
+    {
+      "source": "learning/tutor/run_demo.py",
+      "snapshot": "source-snapshot/run_demo.py",
+      "sha256": "8a0afa081716cab276c99fc811f6a2453ac82f45b28d8a0b1c639eef67347058"
+    },
+    {
+      "source": "learning/tutor/blender_demo.py",
+      "snapshot": "source-snapshot/blender_demo.py",
+      "sha256": "96321d8180b1e05a9b77d47551adefbf43ddd04e6add2505eca3b30ceb831a6c"
+    },
+    {
+      "source": "learning/tutor/scenarios/common.py",
+      "snapshot": "source-snapshot/common.py",
+      "sha256": "45044c48522bf5a2dee130382f902a07243e82027addaf6594cbae59b3369c3d"
+    },
+    {
+      "source": "learning/tutor/scenarios/lesson07_overhang_focus.py",
+      "snapshot": "source-snapshot/lesson07_overhang_focus.py",
+      "sha256": "5260787c8d751c7eed2dadc5ac8a7bf94502e106c1f048a5241a925c8d17cc38"
+    },
+    {
+      "source": "learning/tutor/scenarios/overhang_checks.py",
+      "snapshot": "source-snapshot/overhang_checks.py",
+      "sha256": "66023ffe41bb121f75c77b6db362fc559075c7ba56decd9c00d75832c57bb25a"
+    },
+    {
+      "source": "learning/tutor/scenarios/snapfit_checks.py",
+      "snapshot": "source-snapshot/snapfit_checks.py",
+      "sha256": "0b37846f663d2607764158046cf130d81e15792c006eed9d9631f8ba28e7f4c3"
+    },
+    {
+      "source": "learning/tutor/scenarios/tenon_checks.py",
+      "snapshot": "source-snapshot/tenon_checks.py",
+      "sha256": "4defe55d142ac78be924cef8d82abc3bd24bd2db6f380332eb29cb5b0d89d13d"
+    },
+    {
+      "source": "learning/tutor/scenarios/lid_checks.py",
+      "snapshot": "source-snapshot/lid_checks.py",
+      "sha256": "b2e2438126695cca24cb560dce046ca743c2de2c348116141ff6ed75c42e52c3"
+    }
+  ],
+  "dataBindings": [
+    {
+      "source": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/verification.json",
+      "snapshot": "source-snapshot/main-verification.json",
+      "sha256": "ab84fcc47ee59d2303a1174a8b67c27c898255c5c556e3b0deaee616741b9dc7"
+    },
+    {
+      "source": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/source_lid_mesh.json",
+      "snapshot": "source-snapshot/main-source_lid_mesh.json",
+      "sha256": "e689e8005cc1c19951953a041c96939c44a06029269399313103cb0cf75265a8"
+    },
+    {
+      "source": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/lid_candidate_mesh.json",
+      "snapshot": "source-snapshot/main-lid_candidate_mesh.json",
+      "sha256": "99e7b3aced9fb8892f37d5480c1d7326cb48a11c987ff7ceee8f809ce1d27573"
+    }
+  ],
+  "sourceScene": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\07\\2026-10-25-lesson07-overhang-demo-v001\\demo-files\\u07_print_orientation_v001.blend",
+  "sourceCopy": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\07\\2026-10-25-lesson07-overhang-focus-v002\\demo-files\\sources\\u07_print_orientation_v001.blend",
+  "sourceSha256": "360417f208287a94ca13501f4365b70b3396ca6aba579231e0f8d2a442ecf47d"
+}

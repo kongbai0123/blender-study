@@ -1,0 +1,277 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-10-25T23:36:17.417130+08:00",
+  "audit": "learning/evidence/audits/2026-10-25-claude-continuation-v001",
+  "files": [
+    {
+      "path": "learning/evidence/audits/2026-10-25-claude-continuation-v001/audit-report-v001.css",
+      "bytes": 1214,
+      "sha256": "bd9d67c4ea02490338a0b1b1cd2fdeb856122a6200bcafe9b0a5404c865aefc0"
+    },
+    {
+      "path": "learning/evidence/audits/2026-10-25-claude-continuation-v001/audit_images_05a-v001.json",
+      "bytes": 30641,
+      "sha256": "6069932d541109467b8dbedca15ffd7f957fc643f5194a4f11502cb4201e5548"
+    },
+    {
+      "path": "learning/evidence/audits/2026-10-25-claude-continuation-v001/audit_images_05a-v001.md",
+      "bytes": 1465,
+      "sha256": "4d50356fe475abb8f90bb8e3ed7f3dd5b26e1d0963a1262a4af4710359eac010"
+    },
+    {
+      "path": "learning/evidence/audits/2026-10-25-claude-continuation-v001/audit_images_05b_06a-findings-v001.md",
+      "bytes": 2305,
+      "sha256": "ef338e8197271bda1f9609c356668d444a7d47e919047d1e939876247310afc3"
+    },
+    {
+      "path": "learning/evidence/audits/2026-10-25-claude-continuation-v001/audit_images_05b_06a-v001.json",
+      "bytes": 116065,
+      "sha256": "1432f212d1def1a45e505506ab8dbf26b8b66ee2c850b1d05df3e3b350487139"
+    },
+    {
+      "path": "learning/evidence/audits/2026-10-25-claude-continuation-v001/audit_images_06_08-findings-v001.md",
+      "bytes": 3037,
+      "sha256": "634bd5f83af61a01956c3dedb353a2507ce6385f6ea145b17410d8cfd84027c2"
+    },
+    {
+      "path": "learning/evidence/audits/2026-10-25-claude-continuation-v001/audit_images_06_08-v001.json",
+      "bytes": 79629,
+      "sha256": "dea27dad3e81d532bbb8ffe190397df65007f0c8a7857e132b73aa5ab1bef4c6"
+    },
+    {
+      "path": "learning/evidence/audits/2026-10-25-claude-continuation-v001/audit_images_07a-v001.json",
+      "bytes": 43700,
+      "sha256": "771d6d70f1afa2316d805a19e90ba09f5a1ff02ca2954c2e1b39a276acb01abf"
+    },
+    {
+      "path": "learning/evidence/audits/2026-10-25-claude-continuation-v001/audit_images_07a-v001.md",
+      "bytes": 1783,
+      "sha256": "d0e5be701b9342975abe2356725fc7bf6979ebbb647b40520d964f40417367e0"
+    },
+    {
+      "path": "learning/evidence/audits/2026-10-25-claude-continuation-v001/audit_images_07b-v001.json",
+      "bytes": 101590,
+      "sha256": "bf042b8034ffda36c2f89b2bd7f02722d33412388e102bc1a80c6cf05c5855ff"
+    },
+    {
+      "path": "learning/evidence/audits/2026-10-25-claude-continuation-v001/audit_images_07b-v001.md",
+      "bytes": 1952,
+      "sha256": "0205a3c3e844f26ca4afde1937438198864cddf7317cc43523cc295bdeb44605"
+    },
+    {
+      "path": "learning/evidence/audits/2026-10-25-claude-continuation-v001/audit_numeric_review-v001.json",
+      "bytes": 8069,
+      "sha256": "db8b115f4114d8157743afa476b868b44e6a437c4d776a52a2ef9c1cc1373e4c"
+    },
+    {
+      "path": "learning/evidence/audits/2026-10-25-claude-continuation-v001/audit_numeric_review-v001.md",
+      "bytes": 3202,
+      "sha256": "c40c583f0c103d33ff23da99c507efb9030bcd40e795bcc01a19fef586dabf64"
+    },
+    {
+      "path": "learning/evidence/audits/2026-10-25-claude-continuation-v001/baseline-v001.json",
+      "bytes": 1253214,
+      "sha256": "e5e37135a9be45fcac2913216cba6a59c9036c062af5fb9e4e576f85cd2982b5"
+    },
+    {
+      "path": "learning/evidence/audits/2026-10-25-claude-continuation-v001/blender-readback-v001.json",
+      "bytes": 1675329,
+      "sha256": "1391d7a6f6b1f8a9808070647faf0a724cc9c42c78c074cab0ccdc000afc759f"
+    },
+    {
+      "path": "learning/evidence/audits/2026-10-25-claude-continuation-v001/blender-stderr-v001.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "learning/evidence/audits/2026-10-25-claude-continuation-v001/blender-stdout-v001.log",
+      "bytes": 2053,
+      "sha256": "8e079a35d923b47e261dfb4bb4085b0e9ef6e67202ccf64e0d3d4acb45a45610"
+    },
+    {
+      "path": "learning/evidence/audits/2026-10-25-claude-continuation-v001/catalog-publication-v001.json",
+      "bytes": 433,
+      "sha256": "0e92beaa0d2bbe44a2e1e3544a5d615acfbfa25ab95297ca4e58fff5caa5b039"
+    },
+    {
+      "path": "learning/evidence/audits/2026-10-25-claude-continuation-v001/image-inventory-v001.json",
+      "bytes": 113069,
+      "sha256": "02cc0006ad9c3e8afa12d4aa2a9a2872cded749171aebc82786a450b6ca22c49"
+    },
+    {
+      "path": "learning/evidence/audits/2026-10-25-claude-continuation-v001/publication-checks-v001.json",
+      "bytes": 76432,
+      "sha256": "4f3c54e0fe57043a01daded52f4ccab3a973e3b7691f7a1b2ca6f040984f8c2f"
+    },
+    {
+      "path": "learning/evidence/audits/2026-10-25-claude-continuation-v001/publish_review.py",
+      "bytes": 16751,
+      "sha256": "2a3500b4dc732cf946e316e836d1233accd05b13a23a342514c4c2c0d03d7e3a"
+    },
+    {
+      "path": "learning/evidence/audits/2026-10-25-claude-continuation-v001/recompute_blender.py",
+      "bytes": 5741,
+      "sha256": "21bc73612f581c8ef96b260bc255146460fb63414d5333fbfbca529234e30d01"
+    },
+    {
+      "path": "learning/evidence/audits/2026-10-25-claude-continuation-v001/recompute_stl.py",
+      "bytes": 7468,
+      "sha256": "c56ed0e29e19eeb64a97270e915ba08d0a7ca64bb20df739205f513ae55399ed"
+    },
+    {
+      "path": "learning/evidence/audits/2026-10-25-claude-continuation-v001/report-route-correction-v001.json",
+      "bytes": 644,
+      "sha256": "9161f5fd69b7c63be9f262216fdac0edee1a330b2db785ae55dbbcc238616f91"
+    },
+    {
+      "path": "learning/evidence/audits/2026-10-25-claude-continuation-v001/report-v001.html",
+      "bytes": 8897,
+      "sha256": "47470f6bdcc5e5c4a42d358b75e00a6c4c169acfdf234f54102b26e443fa11d2"
+    },
+    {
+      "path": "learning/evidence/audits/2026-10-25-claude-continuation-v001/report-v001.json",
+      "bytes": 113766,
+      "sha256": "6cbb01585c0f349b3fc3b48ecd0cc9b0b818149eb6c9100113492e7a80a65de4"
+    },
+    {
+      "path": "learning/evidence/audits/2026-10-25-claude-continuation-v001/server-tests-v001.log",
+      "bytes": 2590,
+      "sha256": "8156b6dbb09ddb33a91c2f641ef77e1f206c6e0a277ffc6efed0a1f65f44aa3e"
+    },
+    {
+      "path": "learning/evidence/audits/2026-10-25-claude-continuation-v001/server-tests-v002.log",
+      "bytes": 2874,
+      "sha256": "fb09795c8f5dad08f28ced7a0580851fa8940f230528863ec36318c1b77d6f41"
+    },
+    {
+      "path": "learning/evidence/audits/2026-10-25-claude-continuation-v001/source-cache/basf-page-09.png",
+      "bytes": 302642,
+      "sha256": "1fdf28300aae28569792c46851f2a93c1f9277512291b7f1f1aa3be610b2a644"
+    },
+    {
+      "path": "learning/evidence/audits/2026-10-25-claude-continuation-v001/source-cache/basf-page-09.txt",
+      "bytes": 2386,
+      "sha256": "2b4a3a723ad2e18870fd6072bdf0a6aa826d1075f55d162296bbd446596d034c"
+    },
+    {
+      "path": "learning/evidence/audits/2026-10-25-claude-continuation-v001/source-cache/basf-page-11.png",
+      "bytes": 187631,
+      "sha256": "164e4132448046a87e3568965aadcc413caf14fe9fb8f82ac8b2cfb52434a862"
+    },
+    {
+      "path": "learning/evidence/audits/2026-10-25-claude-continuation-v001/source-cache/basf-page-11.txt",
+      "bytes": 1606,
+      "sha256": "393eebed088b29a9be980e70d17119bd2518706a0a885a014de70b46b377e543"
+    },
+    {
+      "path": "learning/evidence/audits/2026-10-25-claude-continuation-v001/source-cache/basf-page-12.png",
+      "bytes": 139079,
+      "sha256": "5258e6874cd36af39c06dc3bb1d31a249995914be79e065d2a10986f8bc1612b"
+    },
+    {
+      "path": "learning/evidence/audits/2026-10-25-claude-continuation-v001/source-cache/basf-page-12.txt",
+      "bytes": 296,
+      "sha256": "ed610e5f636aed12f62df785dd3e52b84dfb8ecf46fa476f453fa5025b168a6a"
+    },
+    {
+      "path": "learning/evidence/audits/2026-10-25-claude-continuation-v001/source-cache/basf-page-14.png",
+      "bytes": 316469,
+      "sha256": "8bb69558e9332694bc5094ea8b186d8e63955f0e6c6aa9461ad64db0c82fb533"
+    },
+    {
+      "path": "learning/evidence/audits/2026-10-25-claude-continuation-v001/source-cache/basf-page-14.txt",
+      "bytes": 1483,
+      "sha256": "14ca1a624983a080683067feb115e76b94c21ef49c75fba1779e426d0a796c95"
+    },
+    {
+      "path": "learning/evidence/audits/2026-10-25-claude-continuation-v001/source-cache/basf.pdf",
+      "bytes": 1027565,
+      "sha256": "4b85dcb2b7eda8d2e4f997465886fa6874a8358126447a1063d8be149213c8f8"
+    },
+    {
+      "path": "learning/evidence/audits/2026-10-25-claude-continuation-v001/source-cache/covestro-page-09.png",
+      "bytes": 410411,
+      "sha256": "713dca95f286221ad03fbaf7efa33b4e23e6b6f4f5139725f93357ac34816c53"
+    },
+    {
+      "path": "learning/evidence/audits/2026-10-25-claude-continuation-v001/source-cache/covestro-page-09.txt",
+      "bytes": 1827,
+      "sha256": "ec31707740bad7a7d73310344c2466c0344c43a57a6f7671b0389387ceab5b92"
+    },
+    {
+      "path": "learning/evidence/audits/2026-10-25-claude-continuation-v001/source-cache/covestro-page-24.png",
+      "bytes": 240257,
+      "sha256": "5489fab498433f4c947d7dbfa8f03123afc63c2cb420ae3e1621b6ddcda6bab4"
+    },
+    {
+      "path": "learning/evidence/audits/2026-10-25-claude-continuation-v001/source-cache/covestro-page-24.txt",
+      "bytes": 1338,
+      "sha256": "5eaa8d53ff6994c0dc2c1f7bcb8d3e2efd83f445155d099f5f32a98a2ebd5e53"
+    },
+    {
+      "path": "learning/evidence/audits/2026-10-25-claude-continuation-v001/source-cache/covestro.pdf",
+      "bytes": 4382748,
+      "sha256": "eb2d446f03e615bcb138f2bc30fb5168d45716eb673d0dcf2e5b1fc30570f37f"
+    },
+    {
+      "path": "learning/evidence/audits/2026-10-25-claude-continuation-v001/source-cache/sources-v001.json",
+      "bytes": 883,
+      "sha256": "47de9d8da32b07ce6e0ad4568a294a129163abd91ef7a8954da64c99773d7a96"
+    },
+    {
+      "path": "learning/evidence/audits/2026-10-25-claude-continuation-v001/source-cache/sources-v002.json",
+      "bytes": 1523,
+      "sha256": "972cf63ad66010d3f5267f076a7442a50a5759fb4ed85f40f7b2d698e703f74c"
+    },
+    {
+      "path": "learning/evidence/audits/2026-10-25-claude-continuation-v001/source-definition-review-v001.json",
+      "bytes": 2832,
+      "sha256": "327a11cba6dfa6202dd387a03976cf02e18593870725567579bb5719ebb6b632"
+    },
+    {
+      "path": "learning/evidence/audits/2026-10-25-claude-continuation-v001/source-formulas-review-v001.json",
+      "bytes": 10406,
+      "sha256": "01b62018171c49151d1e5facb3e2a93ae8f1d9504c79ac963ded6958f17e8bed"
+    },
+    {
+      "path": "learning/evidence/audits/2026-10-25-claude-continuation-v001/source-formulas-review-v001.md",
+      "bytes": 2696,
+      "sha256": "688bfa287eabd033c31644ffef610493c27a3bfc14d38e6c2b38cc72c39422bc"
+    },
+    {
+      "path": "learning/evidence/audits/2026-10-25-claude-continuation-v001/stl-and-geometric-checks-v001.json",
+      "bytes": 21525,
+      "sha256": "20fe064a163930f7a6144e361fe90557bc8786fe832c0152de9ef7ba3cd03035"
+    },
+    {
+      "path": "learning/evidence/audits/2026-10-25-claude-continuation-v001/ui-dashboard-v001.jpg",
+      "bytes": 41433,
+      "sha256": "5f1ca736833d0ac43e8546a426041facc05b84a3eaeaac8b114d3d5324afbc69"
+    },
+    {
+      "path": "learning/evidence/audits/2026-10-25-claude-continuation-v001/ui-evidence-v001.json",
+      "bytes": 1003,
+      "sha256": "4849aed6136e3c71f382155f5df0de807da427884a79457a71d337a4438221c5"
+    },
+    {
+      "path": "learning/evidence/audits/2026-10-25-claude-continuation-v001/ui-report-overview-v001.jpg",
+      "bytes": 63199,
+      "sha256": "62e9d0dcfec924b4760d5e91da792bed3264e204ec0401a75bd7976f4951c215"
+    },
+    {
+      "path": "learning/evidence/audits/2026-10-25-claude-continuation-v001/ui-report-risks-v001.jpg",
+      "bytes": 78985,
+      "sha256": "71b2eeb81213be50b37004889fed259c740b8224dfa38eb35fa781a0fc8a7182"
+    }
+  ],
+  "journal": {
+    "path": "learning/journal/2026-10-25-claude-continuation-audit-v001.md",
+    "sha256": "f9ce92043ff9f149c5d37ee89439456bdda8cf91529aee3a0b29fedd8a2051b4"
+  },
+  "webReport": {
+    "path": "learning/web/reports/2026-10-25-claude-continuation-v001.html",
+    "sha256": "602015e137617d6e5ce7f59fc2f7e33753b1dea7b395d8214052eb67aa046dda"
+  },
+  "progressSha256": "26130175ef80a9fb83699f93a8c33de7b098b17ffa2c10aef794808390d19325",
+  "catalogSha256": "bccb40c653dd55883cc6ec04b46d22631681690122b258edfbfbb3e80c00e695"
+}

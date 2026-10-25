@@ -1,0 +1,205 @@
+{
+  "recordedAt": "2026-10-25T06:02:59.428489+00:00",
+  "evidencePassed": true,
+  "publicationPending": false,
+  "browserProofPending": false,
+  "scope": "06-01 locating-tenon digital geometry only",
+  "rawScreenshots": [
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-01-source-open-dialog.png",
+      "sha256": "7d488437f09e61da0f3e7c9a3f5683c95ed5b2cd944341b82d55dcd78c41948d",
+      "width": 1060,
+      "height": 600,
+      "httpBytesEqual": true
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-02-source-geometry.png",
+      "sha256": "72c84c2c8c9169f69e2095eba51abe81efb608686ef02aac1d1a8be104ca42f0",
+      "width": 1494,
+      "height": 1019,
+      "httpBytesEqual": true
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-03-pin-tool.png",
+      "sha256": "489aacf7e93ea671b4f96b71d4882f13ffb978a4eebdcba42c4d7fa62b827093",
+      "width": 1494,
+      "height": 1019,
+      "httpBytesEqual": true
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-04-union-operation.png",
+      "sha256": "337c93ddb306603ad421580bf60d990c1d789da30a9f2b8832b0c87f5b9239eb",
+      "width": 1494,
+      "height": 1019,
+      "httpBytesEqual": true
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-05-union-assigned.png",
+      "sha256": "aa5753fc9837565f32941f3ed5ba86d0c3eb3dbd2d71913805be63b699922b5b",
+      "width": 1494,
+      "height": 1019,
+      "httpBytesEqual": true
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-06-union-applied.png",
+      "sha256": "cb3cf4356056079dc33059d598cd84463c6137093c25cec14ffa3ef8add298dc",
+      "width": 1494,
+      "height": 1019,
+      "httpBytesEqual": true
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-07-body-non-manifold.png",
+      "sha256": "43772664e87cf91bd047764c7a1738dc27ff9f4e1e4c82b5891589db2b358222",
+      "width": 1494,
+      "height": 1019,
+      "httpBytesEqual": true
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-08-hole-tool.png",
+      "sha256": "6c3b1240f351df44b8c6545559405e4d3f9a5e7786c2bdf33b99113368b3f570",
+      "width": 1494,
+      "height": 1019,
+      "httpBytesEqual": true
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-09-hole-boolean-empty.png",
+      "sha256": "84bedd32c38b8fb73ab8a89fbd71c166010d64109a0beca5fe1496fccb1020a1",
+      "width": 1494,
+      "height": 1019,
+      "httpBytesEqual": true
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-10-hole-object-search.png",
+      "sha256": "00847585c0edf5864b6951154cbf07c237ec876f31bf38ee20d349c6a525d3f8",
+      "width": 1494,
+      "height": 1019,
+      "httpBytesEqual": true
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-11-hole-difference.png",
+      "sha256": "9569d52467d2d3e4da729872f1e2603df0e2677e2f2d55a4ef0704fc7e70e582",
+      "width": 1494,
+      "height": 1019,
+      "httpBytesEqual": true
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-12-hole-applied.png",
+      "sha256": "2183fd50002e03ffa24f26eee08389f970c3a0eabace8ac2f05cfede00c46c8b",
+      "width": 1494,
+      "height": 1019,
+      "httpBytesEqual": true
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-13-lid-non-manifold.png",
+      "sha256": "d34c0880aa1f1ec9ca6e91c969e460a249f8ebe416d590b84c33aa320c084dc7",
+      "width": 1494,
+      "height": 1019,
+      "httpBytesEqual": true
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-14-lid-underside.png",
+      "sha256": "2d1931fecd2342a85faa70cdaa12ac6ab5210f7bf5d23fad51eb2f6c8ee7bb09",
+      "width": 1494,
+      "height": 1019,
+      "httpBytesEqual": true
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-15-separated-view.png",
+      "sha256": "05d8b109c613f6902c6a67d6a0be042448ee9516d71229b95647311fce5926b6",
+      "width": 1494,
+      "height": 1019,
+      "httpBytesEqual": true
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-16-assembly-geometry.png",
+      "sha256": "a01cae28fb6a90012c0d64889f99e40e5cecd6a307033a2336da30bf65385fb4",
+      "width": 1494,
+      "height": 1019,
+      "httpBytesEqual": true
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-17-save-dialog.png",
+      "sha256": "d0e6c3b175be31596322aa305cabc7b44499d2bce8cce4feeee3a2c611a3998e",
+      "width": 1060,
+      "height": 600,
+      "httpBytesEqual": true
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-18-saved.png",
+      "sha256": "6da3ef485a2680a2b3fc97f3c28837f37b57568145455cb064ddff7198a752e3",
+      "width": 1494,
+      "height": 1019,
+      "httpBytesEqual": true
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-19-open-saved.png",
+      "sha256": "f86c450cc8192dab3d0a6d317d9bbe2071cc81477076c9de8772b939075b64f9",
+      "width": 1060,
+      "height": 600,
+      "httpBytesEqual": true
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-20-reopened-verified.png",
+      "sha256": "81115ee7e905909ca2a8996baec3f0299b667aae9ee8bbdadb2ce736fec4f7f2",
+      "width": 1494,
+      "height": 1019,
+      "httpBytesEqual": true
+    }
+  ],
+  "scriptSnapshotsChecked": 7,
+  "scene": {
+    "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/demo-files/u06_locating_tenon_v001.blend",
+    "bytes": 105466,
+    "sha256": "f94dc6c5d342f04c41dddc37a4682805a5f7d87b5cf7a8b7bda37cd8ec51040f",
+    "httpBytesEqual": true,
+    "httpAttachment": true
+  },
+  "sourceAndOpenedCopyUnchanged": true,
+  "sourceSceneSha256": "ab08f331dcb26c5ffc6c6ca56c7c7f022df96791c4777e37c5f01a964fbed6ff",
+  "progressSha256": "d92e4f2ee78a1cf41386816b8616bf635b89fb25f8bfd813ac00cd20ed20b4ef",
+  "progressRevision": 5,
+  "progressUnchanged": true,
+  "tests": {
+    "tutor": {
+      "run": 112,
+      "passed": 111,
+      "skipped": 1
+    },
+    "server": {
+      "run": 17,
+      "passed": 17
+    },
+    "appJsSyntax": true
+  },
+  "exported_stl": false,
+  "slicer_checked": false,
+  "printed": false,
+  "fit_tested": false,
+  "physical_measurements": null,
+  "fit_results": null,
+  "qualified_clearance_mm": null,
+  "trial_status": "experimental_geometry_only",
+  "passed": true,
+  "browser06_01Verified": true,
+  "browserProof": {
+    "recordedAt": "2026-10-25T06:05:21.478779+00:00",
+    "path": "learning/evidence/ui/2026-10-25-lesson06-tenon-demo-v006.jpg",
+    "sha256": "39ced7ea0ef17462c68893b26a27a88ad04ec1ec095819efe3f6e7bd5aa9109d",
+    "bytes": 37612,
+    "width": 304,
+    "height": 848,
+    "format": "JPEG",
+    "pixelEdits": false,
+    "captureMethod": "MCP cua_repl Tab.getScreenshot; original browser pixels",
+    "url": "http://127.0.0.1:8766/",
+    "step": "06-01",
+    "purpose": "Updated page with actual Body Union and matching lid hole screenshots, trial-clearance captions; no learner confirmation"
+  },
+  "catalogChangedSteps": [
+    "06-01"
+  ],
+  "lessonGoalClarified": "06",
+  "apiCatalogEqualsDisk": true,
+  "apiProgressEqualsDisk": true,
+  "physicalResultsBlank": true
+}

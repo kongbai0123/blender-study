@@ -1,0 +1,60 @@
+{
+  "recordedAt": "2026-10-25T07:44:37.380110+00:00",
+  "files": [
+    {
+      "source": "learning/tutor/run_demo.py",
+      "snapshot": "source-snapshot/run_demo.py",
+      "sha256": "8a0afa081716cab276c99fc811f6a2453ac82f45b28d8a0b1c639eef67347058"
+    },
+    {
+      "source": "learning/tutor/blender_demo.py",
+      "snapshot": "source-snapshot/blender_demo.py",
+      "sha256": "96321d8180b1e05a9b77d47551adefbf43ddd04e6add2505eca3b30ceb831a6c"
+    },
+    {
+      "source": "learning/tutor/scenarios/common.py",
+      "snapshot": "source-snapshot/common.py",
+      "sha256": "45044c48522bf5a2dee130382f902a07243e82027addaf6594cbae59b3369c3d"
+    },
+    {
+      "source": "learning/tutor/scenarios/lesson07_snap.py",
+      "snapshot": "source-snapshot/lesson07_snap.py",
+      "sha256": "47d634ae0b77a1f062a0cb8eaa6cc38f1d59faf61006f772e5cab5b1a3b205f6"
+    },
+    {
+      "source": "learning/tutor/scenarios/lid_checks.py",
+      "snapshot": "source-snapshot/lid_checks.py",
+      "sha256": "b2e2438126695cca24cb560dce046ca743c2de2c348116141ff6ed75c42e52c3"
+    },
+    {
+      "source": "learning/tutor/scenarios/tenon_checks.py",
+      "snapshot": "source-snapshot/tenon_checks.py",
+      "sha256": "4defe55d142ac78be924cef8d82abc3bd24bd2db6f380332eb29cb5b0d89d13d"
+    },
+    {
+      "source": "learning/tutor/scenarios/snapfit_checks.py",
+      "snapshot": "source-snapshot/snapfit_checks.py",
+      "sha256": "0b37846f663d2607764158046cf130d81e15792c006eed9d9631f8ba28e7f4c3"
+    }
+  ],
+  "dataBindings": [
+    {
+      "source": "learning/plans/07-02-cantilever-geometry-draft-v001.json",
+      "snapshot": "source-snapshot/geometry-plan-v001.json",
+      "sha256": "f4f0fab02a47eaade189c3b1c6cb8094753b435fe1a3ab570843af65fb2044be"
+    },
+    {
+      "source": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/parameter-record-v001.json",
+      "snapshot": "source-snapshot/parameter-source-v001.json",
+      "sha256": "57d411f24486aad351056854b8eb427aae853b99f290372c9d0294d367ac6ead"
+    },
+    {
+      "source": "sources/engineering/snapfit-source-facts-v001.json",
+      "snapshot": "source-snapshot/snapfit-source-facts-v001.json",
+      "sha256": "291d1704ea12834969e74e79b948cf2677524fda7a852fa8434c017a674169f8"
+    }
+  ],
+  "sourceScene": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\07\\2026-10-25-lesson07-parameters-demo-v001\\demo-files\\u07_snap_reference_v001.blend",
+  "sourceCopy": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\07\\2026-10-25-lesson07-snap-demo-v001\\demo-files\\sources\\u07_snap_reference_v001.blend",
+  "sourceSha256": "6a6b6c03295c8b6047b97c3efdea9884954b714da87b45b7aa36b4d2b612d3a9"
+}

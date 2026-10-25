@@ -1,0 +1,222 @@
+{
+  "kind": "snapfit_stl_export_ui_technical_review",
+  "reviewedAt": "2026-10-25T09:12:05.538149+00:00",
+  "passed": true,
+  "scope": "Native UI image review, artifact hashes, record/snapshot integrity and source/progress safeguards. Independent pure geometry audit is separate.",
+  "native_records": 25,
+  "original_photos": [
+    {
+      "path": "07-04-02-body-source-selected.png",
+      "sha256": "25aece8c5aafe6484d02d09998acc95bf1074a4aa3d77a006e460de43c2c79f9",
+      "width": 1494,
+      "height": 1019,
+      "original_native_pixels": true,
+      "visual_readback": "來源Item60/44.5/30與Ry90清楚；工具與另一件隱藏。"
+    },
+    {
+      "path": "07-04-06-body-export-options.png",
+      "sha256": "0dcb53baedfe2fb310a691c836bb7a9eda4ac9009613fb00106db98319d36a56",
+      "width": 1060,
+      "height": 600,
+      "original_native_pixels": true,
+      "visual_readback": "Body的Selection Only／Scale1／Scene Unit關／Binary／Y Forward／Z Up可見。"
+    },
+    {
+      "path": "07-04-13-lid-export-options.png",
+      "sha256": "529a3a39621373e6c3936ca84b0dd57df94c4979dc63b91c24f7805bcc4a3b6c",
+      "width": 1060,
+      "height": 600,
+      "original_native_pixels": true,
+      "visual_readback": "Lid獨立檔名及相同原生匯出選項可見。"
+    },
+    {
+      "path": "07-04-17-body-reimport-dimensions.png",
+      "sha256": "119395eb4abc4d935d65e166660c7cdb2bc738e62738a3eaf68d07da08fd49e3",
+      "width": 1494,
+      "height": 1019,
+      "original_native_pixels": true,
+      "visual_readback": "Body_STL Item30/44.5/60、Location0／Rotation0／Scale1與mm場景可見。"
+    },
+    {
+      "path": "07-04-21-lid-reimport-dimensions.png",
+      "sha256": "1870d4391e17be49e286759fcf23b5ff726966ba26ea2a4adb08caeee023dee8",
+      "width": 1494,
+      "height": 1019,
+      "original_native_pixels": true,
+      "visual_readback": "Lid_STL Item60/46/7、Location0／Rotation0／Scale1可見。"
+    },
+    {
+      "path": "07-04-24-reimport-layout.png",
+      "sha256": "1c60b2b28d47b635a123f4e595f0f207824d1ae1f72d6c5b076f15e86ac72cd3",
+      "width": 1494,
+      "height": 1019,
+      "original_native_pixels": true,
+      "visual_readback": "只含兩STL、獨立方向候選擺位；active Body_STL，Item尺寸屬Body。"
+    }
+  ],
+  "artifacts": [
+    {
+      "kind": "body",
+      "stl_path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\07\\2026-10-25-lesson07-snap-export-demo-v001\\demo-files\\exports\\u07_snap_body_v001.stl",
+      "stl_sha256": "6ee4b13556db93196189604a96a0dbf3074fcaf6dd3423b3fc86cc2421910ff8",
+      "stl_bytes": 5884,
+      "stl_triangles": 116,
+      "stl_dimensions_mm": [
+        30.0,
+        44.5,
+        60.0
+      ],
+      "stl_bounds_mm": {
+        "min": [
+          -55.0,
+          -24.5,
+          0.0
+        ],
+        "max": [
+          -25.0,
+          20.0,
+          60.0
+        ]
+      },
+      "stl_non_manifold_edges": 0,
+      "stl_connected_shells": 1,
+      "stl_genus": 0
+    },
+    {
+      "kind": "lid",
+      "stl_path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\07\\2026-10-25-lesson07-snap-export-demo-v001\\demo-files\\exports\\u07_snap_lid_v001.stl",
+      "stl_sha256": "c80ea7d584a2f71cc0b2619ff903bdff57d8c97441d61111a0e8c7b839f55c21",
+      "stl_bytes": 2484,
+      "stl_triangles": 48,
+      "stl_dimensions_mm": [
+        60.0,
+        46.0,
+        7.000004887580872
+      ],
+      "stl_bounds_mm": {
+        "min": [
+          10.0,
+          -26.0,
+          -1.0728836059570312e-06
+        ],
+        "max": [
+          70.0,
+          20.0,
+          7.000003814697266
+        ]
+      },
+      "stl_non_manifold_edges": 0,
+      "stl_connected_shells": 1,
+      "stl_genus": 0
+    }
+  ],
+  "verification_sha256": "0285f0098385f00c201f230f5e87946e2c7539c14031610225274001d19d40c8",
+  "export_record_sha256": "b3b3745d714a628b5155b01fbfeca81cda50855aaeb95aa757f616ea58ee268a",
+  "source_scene_sha256": "360417f208287a94ca13501f4365b70b3396ca6aba579231e0f8d2a442ecf47d",
+  "source_and_copy_unchanged": true,
+  "source_orientation_record_unchanged": true,
+  "snapshots": [
+    {
+      "snapshot": "source-snapshot/run_demo.py",
+      "sha256": "8a0afa081716cab276c99fc811f6a2453ac82f45b28d8a0b1c639eef67347058",
+      "matches_manifest": true
+    },
+    {
+      "snapshot": "source-snapshot/blender_demo.py",
+      "sha256": "96321d8180b1e05a9b77d47551adefbf43ddd04e6add2505eca3b30ceb831a6c",
+      "matches_manifest": true
+    },
+    {
+      "snapshot": "source-snapshot/common.py",
+      "sha256": "45044c48522bf5a2dee130382f902a07243e82027addaf6594cbae59b3369c3d",
+      "matches_manifest": true
+    },
+    {
+      "snapshot": "source-snapshot/lesson07_snap_export.py",
+      "sha256": "5b50f2b190aa1577639e33f289506143a344f78449242bd8f99c4fcf833af83d",
+      "matches_manifest": true
+    },
+    {
+      "snapshot": "source-snapshot/overhang_checks.py",
+      "sha256": "66023ffe41bb121f75c77b6db362fc559075c7ba56decd9c00d75832c57bb25a",
+      "matches_manifest": true
+    },
+    {
+      "snapshot": "source-snapshot/snapfit_checks.py",
+      "sha256": "0b37846f663d2607764158046cf130d81e15792c006eed9d9631f8ba28e7f4c3",
+      "matches_manifest": true
+    },
+    {
+      "snapshot": "source-snapshot/tenon_checks.py",
+      "sha256": "4defe55d142ac78be924cef8d82abc3bd24bd2db6f380332eb29cb5b0d89d13d",
+      "matches_manifest": true
+    },
+    {
+      "snapshot": "source-snapshot/lid_checks.py",
+      "sha256": "b2e2438126695cca24cb560dce046ca743c2de2c348116141ff6ed75c42e52c3",
+      "matches_manifest": true
+    },
+    {
+      "snapshot": "source-snapshot/stl_checks.py",
+      "sha256": "36f09e213a7759a95ea07cee1f70fbaaaf2287551b9c97d9308778a658fe922c",
+      "matches_manifest": true
+    },
+    {
+      "snapshot": "source-snapshot/snapfit_stl_checks.py",
+      "sha256": "71b7dcb2c9ee427b08f9979728ce440a15553a599b2bdbf6ccbf98f5e18f3c42",
+      "matches_manifest": true
+    },
+    {
+      "snapshot": "source-snapshot/source-orientation-record-v001.json",
+      "sha256": "b515d433f7c6b8e65e3247337f135a07bf56b0f6f9817efbab446fbf5c708986",
+      "matches_manifest": true
+    },
+    {
+      "snapshot": "source-snapshot/source-orientation-verification.json",
+      "sha256": "ab84fcc47ee59d2303a1174a8b67c27c898255c5c556e3b0deaee616741b9dc7",
+      "matches_manifest": true
+    },
+    {
+      "snapshot": "source-snapshot/source-body-candidate-mesh.json",
+      "sha256": "e87e0387385977798febd880956379e5e9694928cac1f20d43a94d92f03caec8",
+      "matches_manifest": true
+    },
+    {
+      "snapshot": "source-snapshot/source-lid-candidate-mesh.json",
+      "sha256": "99e7b3aced9fb8892f37d5480c1d7326cb48a11c987ff7ceee8f809ce1d27573",
+      "matches_manifest": true
+    }
+  ],
+  "world_x_projection_gap_mm": 35.0,
+  "source_item_dimension_definition": "Source object-axis dimensions before applying rotation; Body 60/44.5/30 with RY90.",
+  "stl_dimension_definition": "Baked world-coordinate mesh bounds; Body approximately30/44.5/60, Lid60/46/7. Imported objects Location0/Rotation0.",
+  "operator_evidence": "Live native File Browser active_operator/options and actual path captured before confirm; native-created STL and actual UI reimport prove execution. Neither export nor import registers in operator history.",
+  "source_geometry_modified": false,
+  "new_blend_saved": false,
+  "final_objects": [
+    "Body_STL",
+    "Lid_STL"
+  ],
+  "learner_workspaces_unchanged": true,
+  "progress_sha256": "d92e4f2ee78a1cf41386816b8616bf635b89fb25f8bfd813ac00cd20ed20b4ef",
+  "pending_values_remain_null": [
+    "material_grade",
+    "epsilon_allow",
+    "Q",
+    "required_deflection_mm",
+    "delta_allow_mm",
+    "forces",
+    "physical_measurements",
+    "fit_results",
+    "physical_interference",
+    "qualified_strength_N",
+    "qualified_clearance_mm",
+    "support_required",
+    "final_print_orientation_approved",
+    "slicer_support_settings",
+    "bridge_or_support_qualified"
+  ],
+  "slicer_checked": false,
+  "printed": false,
+  "fit_tested": false
+}

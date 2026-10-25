@@ -1,0 +1,9 @@
+{
+  "reason": "First browser check found existing /files rejects HTML/CSS. Preserved that restriction; authored static reports now use /reports with only flat html/css names under learning/web/reports.",
+  "reportUrl": "/reports/2026-10-25-claude-continuation-v001.html",
+  "htmlPath": "learning/web/reports/2026-10-25-claude-continuation-v001.html",
+  "htmlSha256": "602015e137617d6e5ce7f59fc2f7e33753b1dea7b395d8214052eb67aa046dda",
+  "cssPath": "learning/web/reports/2026-10-25-claude-continuation-v001.css",
+  "cssSha256": "bd9d67c4ea02490338a0b1b1cd2fdeb856122a6200bcafe9b0a5404c865aefc0",
+  "frozenEvidenceReportUnchanged": true
+}

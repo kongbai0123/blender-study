@@ -1,0 +1,87 @@
+{
+  "kind": "cantilever_coupons_ui_technical_review",
+  "passed": true,
+  "reviewedAt": "2026-10-25T09:33:26.530082+00:00",
+  "scope": "Original native UI image review, versions/snapshots/source safeguards. Independent pure geometry audit is separate.",
+  "photographs": [
+    {
+      "path": "07-05-05-inherited-analysis-off.png",
+      "sha256": "673be69151597020c44ea918a8b587d0ccd24d6800e0b617d6f54325852c86c8",
+      "width": 1494,
+      "height": 1019,
+      "original_native_pixels": true,
+      "visual_readback": "原生Edit Mesh Overlays的Mesh Analysis checkbox已關；本步沒有重做Overhang。"
+    },
+    {
+      "path": "07-05-11-B_L17-upper-selection.png",
+      "sha256": "2c3e23cf9c6e3dfbdbdea32a4731e4661a2f05d032db98fff97a65b21d8b7810",
+      "width": 1494,
+      "height": 1019,
+      "original_native_pixels": true,
+      "visual_readback": "Front Orthographic／Vertex／Xray，整組上端橘色、根部與anchor黑色；實際選14點。N Local Median不是幾何L或world Z。"
+    },
+    {
+      "path": "07-05-17-C_L21-source-frame.png",
+      "sha256": "c37bfa4b431b7f39b08a934dea38e1e0b4506400f970d22da2c297591bd4c1d0",
+      "width": 1494,
+      "height": 1019,
+      "original_native_pixels": true,
+      "visual_readback": "C_L21原向R0／Scale1、Item尺寸9×4.6×26；26是含anchor總高，不是幾何L21。"
+    },
+    {
+      "path": "07-05-24-reopened-verified.png",
+      "sha256": "c5a78a219bf0d1319239f32b4b8bd6c9f7157e3667e3e7598c1f0f7451433d4b",
+      "width": 1494,
+      "height": 1019,
+      "original_native_pixels": true,
+      "visual_readback": "重開後三件可見、四個原件hidden。畫面上C_L21、中B_L17、下A_L19；active為C，Item9×4.6×26是物件軸尺寸，world26×4.6×9另由頂點讀回。"
+    }
+  ],
+  "record_count": 24,
+  "raw_mesh_files": 7,
+  "python_snapshots": 11,
+  "data_bindings": 5,
+  "snapshot_hashes_match": true,
+  "source_geometry_modified": false,
+  "coupon_geometry_modified": true,
+  "per_variant_geometry_modified": {
+    "A_L19": false,
+    "B_L17": true,
+    "C_L21": true
+  },
+  "source_four_meshes_and_matrices_unchanged": true,
+  "source_four_hidden": true,
+  "three_independent_coupon_meshes": true,
+  "upper_vertex_count": 14,
+  "unchanged_vertex_count": 28,
+  "motion_coordinate_residual_mm": 0,
+  "mesh_analysis_display_enabled": false,
+  "scene": {
+    "path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\07\\2026-10-25-lesson07-coupons-demo-v001\\demo-files\\u07_cantilever_length_coupons_v001.blend",
+    "sha256": "22072532eed0f6fcc506bb435ed8d65fcaeaef583ea41d90c4e8c9665b82e9b8",
+    "bytes": 108728,
+    "reopened": true
+  },
+  "coupon_record_sha256": "1180c5194a5ec09af9186e2e3f69761e5460a4350f9019e9d1020a44e127c01d",
+  "verification_sha256": "ecea0a82400931113ad34f9c1fe054d6711835558d268973680a029ea656950b",
+  "numerical_bed_scope": "Anchor side only (~13.8 mm2); straight beam minimum Z ~1.5 mm and root/miter ~0.9 mm remain above Z0. No support/adhesion qualification.",
+  "bed_area_mm2": {
+    "A_L19": 13.800001144409194,
+    "B_L17": 13.79999971389772,
+    "C_L21": 13.800001144409194
+  },
+  "layout_minimum_y_gap_mm": 7.3999998569488525,
+  "full_box_modified": false,
+  "effective_mechanical_length_mm": null,
+  "full_box_boundary_equivalence": null,
+  "improvement_validated": null,
+  "exported_stl": false,
+  "slicer_checked": false,
+  "printed": false,
+  "fit_tested": false,
+  "support_required": null,
+  "qualified_strength_N": null,
+  "qualified_clearance_mm": null,
+  "learner_workspaces_unchanged": true,
+  "progress_sha256": "d92e4f2ee78a1cf41386816b8616bf635b89fb25f8bfd813ac00cd20ed20b4ef"
+}

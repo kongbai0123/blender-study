@@ -1,0 +1,146 @@
+{
+  "kind": "native_overhang_focus_image_review",
+  "reviewedAt": "2026-10-25T08:29:28.157355+00:00",
+  "run": "learning/evidence/07/2026-10-25-lesson07-overhang-focus-v002",
+  "publishable_images": [
+    {
+      "path": "07-03-06-elevated-ledge-closeup.png",
+      "sha256": "39933f912508246987d4bf47773313b1d4ae312a60980c66c3cdda58faec799a",
+      "width": 1494,
+      "height": 1019,
+      "untouched_native_pixels": true,
+      "visual_finding": "取消橘色選取後，高處凸緣下表面呈紅色窄帶；下方大面積紅色另屬Z0床接觸板面。淺角度造成窄帶，不能用畫面像素當面積或GPU計數。",
+      "target_polygon_index": 18,
+      "target_world_vertices_mm": [
+        [
+          35.0,
+          18.5,
+          6.400003433227539
+        ],
+        [
+          45.0,
+          18.5,
+          6.400003433227539
+        ],
+        [
+          45.0,
+          17.299999237060547,
+          6.400003433227539
+        ],
+        [
+          35.0,
+          17.299999237060547,
+          6.400003433227539
+        ]
+      ],
+      "native_analysis_settings": {
+        "type": "OVERHANG",
+        "axis": "NEG_Z",
+        "minimum_radians": 0.0,
+        "maximum_radians": 0.7853981852531433,
+        "minimum_deg": 0.0,
+        "maximum_deg": 45.00000125223908,
+        "show_statvis": true,
+        "show_overlays": true,
+        "shading": "SOLID",
+        "xray": false
+      },
+      "camera": {
+        "camera_direction_world": [
+          0.0,
+          -0.9986295700073242,
+          -0.05233606696128845
+        ],
+        "elevation_degrees": -3.0000063523996228,
+        "view_location": [
+          40.0,
+          17.899999618530273,
+          6.400003433227539
+        ],
+        "view_distance": 9.202548027038574,
+        "view_perspective": "ORTHO"
+      }
+    }
+  ],
+  "excluded_previous_probe": {
+    "run": "2026-10-25-lesson07-overhang-focus-v001",
+    "reason": "模擬MMB未實際轉動，視角為0度；沒有清楚的高處下表面，不能當附證。"
+  },
+  "source_scene": {
+    "path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\07\\2026-10-25-lesson07-overhang-demo-v001\\demo-files\\u07_print_orientation_v001.blend",
+    "sha256": "360417f208287a94ca13501f4365b70b3396ca6aba579231e0f8d2a442ecf47d",
+    "unchanged": true
+  },
+  "source_copy_unchanged": true,
+  "geometry_and_pose_exactly_match_main_candidate": true,
+  "correct_ui_selected_face": true,
+  "new_scene_saved": false,
+  "snapshot_integrity": [
+    {
+      "snapshot": "source-snapshot/run_demo.py",
+      "sha256": "8a0afa081716cab276c99fc811f6a2453ac82f45b28d8a0b1c639eef67347058",
+      "matches_manifest": true
+    },
+    {
+      "snapshot": "source-snapshot/blender_demo.py",
+      "sha256": "96321d8180b1e05a9b77d47551adefbf43ddd04e6add2505eca3b30ceb831a6c",
+      "matches_manifest": true
+    },
+    {
+      "snapshot": "source-snapshot/common.py",
+      "sha256": "45044c48522bf5a2dee130382f902a07243e82027addaf6594cbae59b3369c3d",
+      "matches_manifest": true
+    },
+    {
+      "snapshot": "source-snapshot/lesson07_overhang_focus.py",
+      "sha256": "5260787c8d751c7eed2dadc5ac8a7bf94502e106c1f048a5241a925c8d17cc38",
+      "matches_manifest": true
+    },
+    {
+      "snapshot": "source-snapshot/overhang_checks.py",
+      "sha256": "66023ffe41bb121f75c77b6db362fc559075c7ba56decd9c00d75832c57bb25a",
+      "matches_manifest": true
+    },
+    {
+      "snapshot": "source-snapshot/snapfit_checks.py",
+      "sha256": "0b37846f663d2607764158046cf130d81e15792c006eed9d9631f8ba28e7f4c3",
+      "matches_manifest": true
+    },
+    {
+      "snapshot": "source-snapshot/tenon_checks.py",
+      "sha256": "4defe55d142ac78be924cef8d82abc3bd24bd2db6f380332eb29cb5b0d89d13d",
+      "matches_manifest": true
+    },
+    {
+      "snapshot": "source-snapshot/lid_checks.py",
+      "sha256": "b2e2438126695cca24cb560dce046ca743c2de2c348116141ff6ed75c42e52c3",
+      "matches_manifest": true
+    },
+    {
+      "snapshot": "source-snapshot/main-verification.json",
+      "sha256": "ab84fcc47ee59d2303a1174a8b67c27c898255c5c556e3b0deaee616741b9dc7",
+      "matches_manifest": true
+    },
+    {
+      "snapshot": "source-snapshot/main-source_lid_mesh.json",
+      "sha256": "e689e8005cc1c19951953a041c96939c44a06029269399313103cb0cf75265a8",
+      "matches_manifest": true
+    },
+    {
+      "snapshot": "source-snapshot/main-lid_candidate_mesh.json",
+      "sha256": "99e7b3aced9fb8892f37d5480c1d7326cb48a11c987ff7ceee8f809ce1d27573",
+      "matches_manifest": true
+    }
+  ],
+  "run_record_count": 6,
+  "runner_completed": true,
+  "learner_workspaces_unchanged": true,
+  "progress_sha256": "d92e4f2ee78a1cf41386816b8616bf635b89fb25f8bfd813ac00cd20ed20b4ef",
+  "focus_verification_sha256": "17d9c10a8f59d26454f182d0119bd4eab1803bf5b0baf68e6199eac6c4138c6f",
+  "support_required": null,
+  "slicer_checked": false,
+  "printed": false,
+  "fit_tested": false,
+  "qualified_clearance_mm": null,
+  "qualified_strength_N": null
+}

@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-10-25T20:52:00.623805+08:00",
+  "result": "passed",
+  "catalogScope": [
+    "lesson08.goal",
+    "08-01.current_view_and_contentReview"
+  ],
+  "totalSteps": 52,
+  "parametersUnchanged": 24,
+  "historicalOperationRunUnchanged": true,
+  "protectedFilesUnchanged": 45,
+  "progressRevisionBefore": 5,
+  "progressRevisionAfter": 6,
+  "progressOnlyAddedTutorNoteAndEvent": true,
+  "learnerCompletionAndFileVersionsUnchanged": true,
+  "noNewModeling": true,
+  "apiMatchesDisk": true,
+  "httpExactBytes": [
+    {
+      "path": "learning/evidence/08/2026-10-25-thread-route-decision-v001/route-decision-v001.json",
+      "bytes": 1627,
+      "sha256": "844e097b2b300eec9b9c5475fa86041c3c940e320a07b01c70ff18e35b89e6eb",
+      "httpStatus": 200
+    },
+    {
+      "path": "learning/evidence/08/2026-10-25-thread-route-decision-v001/tutor-note-v001.txt",
+      "bytes": 672,
+      "sha256": "af748e2f3046b4edd4720ab20e0dd153d65b1b0cd4015abf033601457c3131f9",
+      "httpStatus": 200
+    },
+    {
+      "path": "learning/journal/2026-10-25-thread-route-decision-v001.md",
+      "bytes": 1988,
+      "sha256": "b6e424594301787c1cf18507dc0c3f234d6ed0be5ea408dae3a38154ddf1ede2",
+      "httpStatus": 200
+    },
+    {
+      "path": "learning/evidence/ui/2026-10-25-thread-route-decision-v001.jpg",
+      "bytes": 43253,
+      "sha256": "86d19b12ba95d74aa0a8bac0363c6a8d3436f07dff3dd094dfd2def4f59c0b26",
+      "httpStatus": 200
+    }
+  ],
+  "decisionSha256": "844e097b2b300eec9b9c5475fa86041c3c940e320a07b01c70ff18e35b89e6eb",
+  "catalogSha256": "ab128fec13eeb4d1e64851f452892c4b9972ddd73bd08719f697b369d2d983fd",
+  "progressSha256": "26130175ef80a9fb83699f93a8c33de7b098b17ffa2c10aef794808390d19325",
+  "browserMetadata": "learning/evidence/ui/2026-10-25-thread-route-decision-v001.json"
+}

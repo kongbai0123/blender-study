@@ -1,0 +1,17 @@
+[
+  {
+    "camera_direction_world": [
+      0.0,
+      -0.9986295700073242,
+      -0.05233606696128845
+    ],
+    "elevation_degrees": -3.0000063523996228,
+    "view_location": [
+      40.0,
+      -3.0,
+      3.5000014305114746
+    ],
+    "view_distance": 95.41203308105469,
+    "view_perspective": "ORTHO"
+  }
+]

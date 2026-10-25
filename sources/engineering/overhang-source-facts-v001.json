@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-10-25",
+  "title": "07-03 Blender 原生 Mesh Analysis / Overhang 的角度及顯示語義",
+  "installed_blender_version": "5.2.1 LTS",
+  "installed_build_hash": "9e2066aef7ef",
+  "version_basis": "07-02 正式 run.json 的實際 Blender version / buildHash；官方原始碼固定同 build commit。",
+  "source_code_downloaded_locally": false,
+  "pdf_downloaded_locally": false,
+  "local_pdf_path": null,
+  "local_pdf_sha256": null,
+  "sources": [
+    {
+      "source_id": "blender_exact_build_overhang",
+      "author": "Blender Authors",
+      "type": "official_primary_source_code",
+      "url": "https://raw.githubusercontent.com/blender/blender/9e2066aef7ef/source/blender/draw/intern/mesh_extractors/extract_mesh_vbo_mesh_analysis.cc",
+      "commit": "9e2066aef7ef",
+      "locators": ["axis_from_enum_v3, lines 27–36", "overhang_remap, lines 38–52", "statvis_calc_overhang, lines 53–93"],
+      "local_path": null,
+      "local_sha256": null
+    },
+    {
+      "source_id": "blender_exact_build_statvis_rna",
+      "author": "Blender Authors",
+      "type": "official_primary_source_code",
+      "url": "https://raw.githubusercontent.com/blender/blender/9e2066aef7ef/source/blender/makesrna/intern/rna_scene.cc",
+      "commit": "9e2066aef7ef",
+      "locators": ["rna_def_statvis, lines 4241–4282"],
+      "local_path": null,
+      "local_sha256": null
+    },
+    {
+      "source_id": "blender_exact_build_analysis_shader",
+      "author": "Blender Authors",
+      "type": "official_primary_source_code",
+      "url": "https://raw.githubusercontent.com/blender/blender/9e2066aef7ef/source/blender/draw/engines/overlay/shaders/overlay_edit_mesh_analysis_vert.glsl",
+      "commit": "9e2066aef7ef",
+      "locators": ["weight_to_rgb, lines 11–23"],
+      "local_path": null,
+      "local_sha256": null
+    },
+    {
+      "source_id": "installed_blender_analysis_ui",
+      "author": "Blender Authors",
+      "type": "installed_primary_ui_source",
+      "url": "https://raw.githubusercontent.com/blender/blender/9e2066aef7ef/scripts/startup/bl_ui/space_view3d.py",
+      "local_path": "C:/Program Files/Blender Foundation/Blender 5.2/5.2/scripts/startup/bl_ui/space_view3d.py",
+      "local_sha256": "7471c2728cd792b003e36b271a3daa4ada5f996002fa784affe56b1a38ec6c66",
+      "locators": ["Mesh Edit Mode overlay panel, lines 7379–7402"],
+      "inspection": "本機檔案已實際讀取並計算 SHA-256；不是線上 source 的下載雜湊。"
+    },
+    {
+      "source_id": "blender_official_manual_background",
+      "author": "Blender Foundation",
+      "type": "official_manual_historical_background",
+      "url": "https://docs.blender.org/manual/en/2.93/modeling/meshes/mesh_analysis.html",
+      "locators": ["Mesh Analysis; Overhang; Minimum/Maximum; Axis"],
+      "version_scope": "2.93 手冊僅作功能背景，不將其文字冒稱 5.2.1 精確實作；數值語義以本次 build 原始碼為準。"
+    }
+  ],
+  "facts": [
+    {
+      "fact_id": "world_directed_axis_angle",
+      "source_ids": ["blender_exact_build_overhang"],
+      "statement": "計算以 polygon / BMesh face 法線和所選有向軸的夾角進行。object_to_world 的轉置把世界方向轉回局部再正規化；對 Scale 1 的剛性旋轉，等效於世界法線與世界有向軸比較，不要求先 Apply Rotation。",
+      "project_axis": "NEG_Z",
+      "project_angle_definition": "面外法線與世界負 Z 軸夾角：水平朝下 0°、垂直面 90°、水平朝上 180°。",
+      "scope": "僅針對本課 Scale 1／無變形 modifier 的剛體情境；不擴張為任意非均勻縮放結論。"
+    },
+    {
+      "fact_id": "native_min_max_remap",
+      "source_ids": ["blender_exact_build_overhang", "blender_exact_build_analysis_shader", "blender_exact_build_statvis_rna"],
+      "statement": "RNA 角度存 radians，介面顯示角度。顯示 Min/Max 可在 0～180°範圍設定，本課選名義 0～45°；保留每次實際 float radians 及換算 degrees。",
+      "scalar_remap": {
+        "angle_below_minimum": 1,
+        "angle_between_minimum_and_maximum": "1 - (angle - minimum) / (maximum - minimum)",
+        "angle_above_maximum": -1,
+        "minimum_boundary": 1,
+        "maximum_boundary": 0
+      },
+      "color_scope": "負權重在 shader 中顯示灰色；範圍內從 weight texture 取色。出廠一般色帶的高權重端為紅、低端為藍，實際顏色以本次原生截圖為證。低於 Min 是高端飽和，不是灰色。",
+      "range_role": "顯示範圍，不是材料、機型、橋接或支撐的合格角度。",
+      "numeric_boundary_band_deg": 0.0001,
+      "numeric_boundary_note": "邊界帶只標示浮點敏感面；不擴張顯示門檻，不把 Python double 分類當 GPU 像素讀值。"
+    },
+    {
+      "fact_id": "native_faces_and_derived_facets",
+      "source_ids": ["blender_exact_build_overhang"],
+      "statement": "原生 shader 分類按 polygon / BMFace normal；loop triangle 數不等於原生面數。本專案保留 polygon rings、triangle-to-polygon indices 及實際世界法線，另算 polygon 與 loop-triangle 角度、面積及數量並分欄。",
+      "scope": "另算統計不是原生面板提供的面數，也不是 GPU framebuffer 的直接讀值；非共面多邊形不能默認與其三角面角度相同。"
+    },
+    {
+      "fact_id": "edit_overlay_context",
+      "source_ids": ["installed_blender_analysis_ui", "blender_official_manual_background"],
+      "statement": "Mesh Edit Mode overlay 提供 Mesh Analysis、OVERHANG、Minimum、Maximum 及有向 Axis；本課保留 Solid shading、關閉 X-Ray 並讀回 overlay 開關。"
+    },
+    {
+      "fact_id": "project_bed_and_support_distinction",
+      "source_ids": ["blender_exact_build_overhang"],
+      "statement": "原生角度計算本身沒有床面接觸、支撐生成、橋接跨度或前層承托判斷。本專案另以世界 Z=0 分開記錄床接觸面與非床接觸的朝下面；局部角度不能單獨決定需要支撐或可列印。",
+      "project_interpretation": true,
+      "bed_height_epsilon_mm": 0.0001,
+      "epsilon_role": "浮點重建／落床讀值核對；不是製造公差、附著品質或實體平台校正證據。"
+    }
+  ],
+  "limitations": {
+    "support_generation_performed": false,
+    "slicer_checked": false,
+    "material_grade": null,
+    "epsilon_allow": null,
+    "root_flexibility_Q": null,
+    "required_deflection_mm": null,
+    "delta_allow_mm": null,
+    "forces": null,
+    "printed": false,
+    "fit_tested": false,
+    "physical_measurements": null,
+    "fit_results": null,
+    "printability_qualified": null,
+    "qualified_strength_N": null,
+    "qualified_clearance_mm": null,
+    "layer_direction_scope": "臂長及名義彎曲方向平行層平面只屬幾何方向條件，不證明層間附著、允許應變、疲勞或強度。"
+  }
+}

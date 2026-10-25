@@ -1,0 +1,105 @@
+{
+  "recordedAt": "2026-10-25T09:54:06.340339+00:00",
+  "files": [
+    {
+      "source": "learning/tutor/run_demo.py",
+      "snapshot": "source-snapshot/run_demo.py",
+      "sha256": "8a0afa081716cab276c99fc811f6a2453ac82f45b28d8a0b1c639eef67347058"
+    },
+    {
+      "source": "learning/tutor/blender_demo.py",
+      "snapshot": "source-snapshot/blender_demo.py",
+      "sha256": "96321d8180b1e05a9b77d47551adefbf43ddd04e6add2505eca3b30ceb831a6c"
+    },
+    {
+      "source": "learning/tutor/scenarios/common.py",
+      "snapshot": "source-snapshot/common.py",
+      "sha256": "45044c48522bf5a2dee130382f902a07243e82027addaf6594cbae59b3369c3d"
+    },
+    {
+      "source": "learning/tutor/scenarios/lesson07_coupon_export.py",
+      "snapshot": "source-snapshot/lesson07_coupon_export.py",
+      "sha256": "77f2995c7adece8783977800d4a33947a36c21456f86965bc3d86d0e6a5e4e5d"
+    },
+    {
+      "source": "learning/tutor/scenarios/overhang_checks.py",
+      "snapshot": "source-snapshot/overhang_checks.py",
+      "sha256": "66023ffe41bb121f75c77b6db362fc559075c7ba56decd9c00d75832c57bb25a"
+    },
+    {
+      "source": "learning/tutor/scenarios/snapfit_checks.py",
+      "snapshot": "source-snapshot/snapfit_checks.py",
+      "sha256": "0b37846f663d2607764158046cf130d81e15792c006eed9d9631f8ba28e7f4c3"
+    },
+    {
+      "source": "learning/tutor/scenarios/tenon_checks.py",
+      "snapshot": "source-snapshot/tenon_checks.py",
+      "sha256": "4defe55d142ac78be924cef8d82abc3bd24bd2db6f380332eb29cb5b0d89d13d"
+    },
+    {
+      "source": "learning/tutor/scenarios/lid_checks.py",
+      "snapshot": "source-snapshot/lid_checks.py",
+      "sha256": "b2e2438126695cca24cb560dce046ca743c2de2c348116141ff6ed75c42e52c3"
+    },
+    {
+      "source": "learning/tutor/scenarios/stl_checks.py",
+      "snapshot": "source-snapshot/stl_checks.py",
+      "sha256": "36f09e213a7759a95ea07cee1f70fbaaaf2287551b9c97d9308778a658fe922c"
+    },
+    {
+      "source": "learning/tutor/scenarios/snapfit_stl_checks.py",
+      "snapshot": "source-snapshot/snapfit_stl_checks.py",
+      "sha256": "71b7dcb2c9ee427b08f9979728ce440a15553a599b2bdbf6ccbf98f5e18f3c42"
+    },
+    {
+      "source": "learning/tutor/scenarios/coupon_checks.py",
+      "snapshot": "source-snapshot/coupon_checks.py",
+      "sha256": "d29ac0840e61c4da9c39cce6bc8aeda58649ac13e2de79399e01b66ea6ceaa4c"
+    },
+    {
+      "source": "learning/tutor/scenarios/coupon_stl_checks.py",
+      "snapshot": "source-snapshot/coupon_stl_checks.py",
+      "sha256": "8514ad445f9bbca193551142d7107ad54f2887ed4e2f4bcfe8008237ce9b30c4"
+    }
+  ],
+  "dataBindings": [
+    {
+      "source": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/coupon-record-v001.json",
+      "snapshot": "source-snapshot/source-coupon-record-v001.json",
+      "sha256": "1180c5194a5ec09af9186e2e3f69761e5460a4350f9019e9d1020a44e127c01d"
+    },
+    {
+      "source": "learning/plans/07-05-coupon-length-draft-v001.json",
+      "snapshot": "source-snapshot/coupon-plan-v001.json",
+      "sha256": "35905a851b846b757bbdbb9321708606b4497a0dc4d5d1cdea0f8735d303dd33"
+    },
+    {
+      "source": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/verification.json",
+      "snapshot": "source-snapshot/source-coupon-verification.json",
+      "sha256": "ecea0a82400931113ad34f9c1fe054d6711835558d268973680a029ea656950b"
+    },
+    {
+      "source": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/source_snap_tool_mesh.json",
+      "snapshot": "source-snapshot/source-snap-tool-reference.json",
+      "sha256": "cb01f749d093467ec90742d38f90243067cdec00eee545c6c81f3f7b20a6aee7"
+    },
+    {
+      "source": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/A_L19_candidate_mesh.json",
+      "snapshot": "source-snapshot/source-A_L19-candidate-mesh.json",
+      "sha256": "5646200083769661833503b5177306fa0d80e0117597dad691b83f97b7b7530c"
+    },
+    {
+      "source": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/B_L17_candidate_mesh.json",
+      "snapshot": "source-snapshot/source-B_L17-candidate-mesh.json",
+      "sha256": "dc7cb34b232c1853fad6ae67f5de3149a63f0da2bbf7eac595fa062ef4acbcc7"
+    },
+    {
+      "source": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/C_L21_candidate_mesh.json",
+      "snapshot": "source-snapshot/source-C_L21-candidate-mesh.json",
+      "sha256": "0a40675dd41b0c8d6eb96376295ca0aaa090696b3349360187b3f0e23bcfc8c2"
+    }
+  ],
+  "sourceScene": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\07\\2026-10-25-lesson07-coupons-demo-v001\\demo-files\\u07_cantilever_length_coupons_v001.blend",
+  "sourceCopy": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\07\\2026-10-25-lesson07-coupon-export-demo-v001\\demo-files\\sources\\u07_cantilever_length_coupons_v001.blend",
+  "sourceSha256": "22072532eed0f6fcc506bb435ed8d65fcaeaef583ea41d90c4e8c9665b82e9b8"
+}

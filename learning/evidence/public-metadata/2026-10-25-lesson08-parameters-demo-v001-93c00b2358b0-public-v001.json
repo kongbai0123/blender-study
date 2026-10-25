@@ -1,0 +1,1392 @@
+{
+  "schemaVersion": 1,
+  "kind": "redacted_public_derivative",
+  "redacted_public_derivative": true,
+  "preparedOn": "2026-10-26",
+  "originalPath": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001.json",
+  "originalSha256": "f0c1caf0de39df466877b1f733328b354ed4581c15b869818c1f4fbd96c5c5dc",
+  "originalBytes": 93289,
+  "originalAvailableInPublicPackage": false,
+  "redactedKeys": [
+    "/runnerStatus/recentCleanup"
+  ],
+  "redactionPolicy": "Recursively omit Windows Recent inventory keys recentCleanup, beforeLinks and afterLinks. Original stays unchanged locally. This derivative is not the original execution record.",
+  "content": {
+    "id": "2026-10-25-lesson08-parameters-demo-v001",
+    "actor": "tutor",
+    "authorization": "依使用者要求延續獨立Blender真實操作、實拍與版本紀錄，先整理08-01螺紋規格與建模參數，僅核對乾淨原盒、另存重開參照。助教首候選不是學員選定路線；未授予任何螺紋尺寸或合格製造參數。",
+    "application": "Blender 5.2.1 LTS",
+    "buildHash": "9e2066aef7ef",
+    "captureMethod": "Blender bpy.ops.screen.screenshot；獨立實例 --factory-startup --enable-event-simulate，滑鼠／鍵盤以 Window.event_simulate 模擬；檔案瀏覽器的資料夾與檔名欄位由程式寫入",
+    "script": "learning/tutor/scenarios/lesson08_parameters.py",
+    "pixelEdits": false,
+    "highlightsDrawnBy": "教學頁 CSS 疊框（原圖未修改）",
+    "learnerWorkspaceWrites": false,
+    "demoFiles": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/demo-files/",
+    "records": [
+      {
+        "seq": 1,
+        "step": "08-01",
+        "slug": "source-open-dialog",
+        "recordedAt": "2026-10-25T12:29:02.390Z",
+        "action": "File > Open…：開啟原 04 盒體的同雜湊副本",
+        "observed": "資料夾 D:\\others\\study\\Blender-Learning\\learning\\evidence\\08\\2026-10-25-lesson08-parameters-demo-v001\\demo-files\\sources\\；檔名 u04_box_v001.blend。",
+        "window": "FILE_BROWSER",
+        "highlights": [
+          {
+            "x": 248,
+            "y": 566,
+            "w": 780,
+            "h": 25,
+            "label": "原盒 v001 副本"
+          },
+          {
+            "x": 789,
+            "y": 566,
+            "w": 126,
+            "h": 25,
+            "label": "Open"
+          }
+        ],
+        "clicks": [],
+        "file": "08-01-01-source-open-dialog.png",
+        "width": 1060,
+        "height": 600,
+        "sha256": "2fd6a3c66d9f900dbaa7ec652b0beed9eb732edbb2f3798cffe229bf298a1c52",
+        "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/08-01-01-source-open-dialog.png"
+      },
+      {
+        "seq": 2,
+        "step": "08-01",
+        "slug": "source-checked",
+        "recordedAt": "2026-10-25T12:29:06.390Z",
+        "action": "Object Mode：選 Cube，從實際網格重驗原盒基準",
+        "observed": "原盒外形 [60.0, 40.0, 30.0]、內腔 [56.0, 36.0, 28.0] mm；壁／底 2 mm、體積 15552 mm³、Non Manifold 0。",
+        "window": "main",
+        "highlights": [
+          {
+            "x": 963,
+            "y": 383,
+            "w": 228,
+            "h": 77,
+            "label": "原盒外形 60 × 40 × 30 mm"
+          }
+        ],
+        "clicks": [],
+        "file": "08-01-02-source-checked.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "553d16ae73d6789e63151c705c2c9231cee91ba7a5712084489555ef213e1e64",
+        "note": "本步只整理螺紋規格與建模參數；沒有牙、柱、導孔或配對件，也沒有材料或強度結果。",
+        "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/08-01-02-source-checked.png"
+      },
+      {
+        "seq": 3,
+        "step": "08-01",
+        "slug": "reference-top",
+        "recordedAt": "2026-10-25T12:29:16.340Z",
+        "action": "隱藏 Camera／Light；UI 改名 Body_Reference，數字鍵盤 7 頂視並 Frame Selected",
+        "observed": "Body_Reference Location (0 mm, 0 mm, 0 mm)、Dimensions (60 mm, 40 mm, 30 mm)、Scale (1, 1, 1)",
+        "window": "main",
+        "highlights": [],
+        "clicks": [],
+        "file": "08-01-03-reference-top.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "4da568b6e1c627bed94f9597e4352d866a5761a755f540b838f0e58660e3f8d2",
+        "note": "這是從原04盒另建的螺紋參照分支；完整盒形不變，沒有承接卡扣、燕尾或已核准螺紋間隙。",
+        "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/08-01-03-reference-top.png"
+      },
+      {
+        "seq": 4,
+        "step": "08-01",
+        "slug": "rim-face",
+        "recordedAt": "2026-10-25T12:29:18.941Z",
+        "action": "Edit Mode 面選取：點前側盒口環面，讀回 world Y 邊界",
+        "observed": "rim：實選 1 面／4 頂點，world min [-30.00000142492354, -20.000000949949026, 15.00000071246177]、max [30.00000142492354, -18.000000854954123, 15.00000071246177] mm；跨度 [60.00000284984708, 2.0000000949949026, 0.0] mm。",
+        "window": "main",
+        "highlights": [],
+        "clicks": [],
+        "file": "08-01-04-rim-face.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "71f4e90f4ad1e2416be0df61bdb68eda91775f1eda878c732023f62cbaaf3cda",
+        "note": "Y −20 至 −18 的平面跨度是原盒壁厚參考 2 mm；角落斜邊不是 2 mm。這不是螺紋柱肉厚或合格條件。",
+        "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/08-01-04-rim-face.png"
+      },
+      {
+        "seq": 5,
+        "step": "08-01",
+        "slug": "inner-floor",
+        "recordedAt": "2026-10-25T12:29:20.941Z",
+        "action": "頂視面選取：取消前一面，點內腔底面，記錄其 world Z",
+        "observed": "inner_floor：實選 1 面／4 頂點，world min [-28.000001329928637, -18.000000854954123, -13.000000617466867]、max [28.000001329928637, 18.000000854954123, -13.000000617466867] mm；跨度 [56.00000265985727, 36.00000170990825, 0.0] mm。",
+        "window": "main",
+        "highlights": [],
+        "clicks": [],
+        "file": "08-01-05-inner-floor.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "a78e713c12c3af31a8e6d3d717bea1a8ca99891e3524c6991459654c174d8e6d",
+        "note": "內底 world Z −13 mm；面跨度 56 × 36。螺紋路線、位置、對件及尺寸均待定，原盒內底保持。",
+        "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/08-01-05-inner-floor.png"
+      },
+      {
+        "seq": 6,
+        "step": "08-01",
+        "slug": "outer-floor",
+        "recordedAt": "2026-10-25T12:29:23.341Z",
+        "action": "Ctrl + 數字鍵盤 7 底視：點外底面，與內底 Z 分開記錄",
+        "observed": "outer_floor：實選 1 面／4 頂點，world min [-30.00000142492354, -20.000000949949026, -15.00000071246177]、max [30.00000142492354, 20.000000949949026, -15.00000071246177] mm；跨度 [60.00000284984708, 40.00000189989805, 0.0] mm。",
+        "window": "main",
+        "highlights": [],
+        "clicks": [],
+        "file": "08-01-06-outer-floor.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "6c583bd5aec0207b5c2c8c51ba50343bfa65b2ee6cea6c713ed21f5e5a983e52",
+        "note": "外底 Z −15 與內底 Z −13 相差 2 mm；只驗盒體基準，不推定螺紋尺寸、柱肉厚或允許扭矩。",
+        "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/08-01-06-outer-floor.png"
+      },
+      {
+        "seq": 7,
+        "step": "08-01",
+        "slug": "non-manifold",
+        "recordedAt": "2026-10-25T12:29:26.341Z",
+        "action": "邊選取、Alt+A，再 F3 > Select Non Manifold",
+        "observed": "實際 Select Non Manifold：選到 0 邊；實網格 Non Manifold 0。這不是強度或製程判定。",
+        "window": "main",
+        "highlights": [],
+        "clicks": [],
+        "file": "08-01-07-non-manifold.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "cced4f7a89cbf44e9fe75a8cdfeefd24d06b7adff7c8407a09ed1132ea9b4962",
+        "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/08-01-07-non-manifold.png"
+      },
+      {
+        "seq": 8,
+        "step": "08-01",
+        "slug": "reference-overview",
+        "recordedAt": "2026-10-25T12:29:29.253Z",
+        "action": "回 Object Mode，改斜視；讀回完整原盒網格未變",
+        "observed": "參考盒仍為60×40×30／內腔56×36×28、壁底2mm；24個螺紋草案參數待補、沒有實作。路線selected=null，自訂列印僅助教候選，沒有建立Screw修改器或進行計算。",
+        "window": "main",
+        "highlights": [],
+        "clicks": [],
+        "file": "08-01-08-reference-overview.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "76bd22f0091976802281b444aa8703b9cd939a107c4a70d4074a0d137816a576",
+        "note": "08-01只建立規格與建模參數紀錄；Blender映射只有文件關係，各數值未設定，沒有螺紋、柱、配對件或STL。",
+        "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/08-01-08-reference-overview.png"
+      },
+      {
+        "seq": 9,
+        "step": "08-01",
+        "slug": "save-dialog",
+        "recordedAt": "2026-10-25T12:29:34.153Z",
+        "action": "File > Save As…：另存原盒螺紋參照場景 u08_thread_reference_v001.blend",
+        "observed": "目標 D:\\others\\study\\Blender-Learning\\learning\\evidence\\08\\2026-10-25-lesson08-parameters-demo-v001\\demo-files\\；檔名 u08_thread_reference_v001.blend。",
+        "window": "FILE_BROWSER",
+        "highlights": [
+          {
+            "x": 248,
+            "y": 566,
+            "w": 780,
+            "h": 25,
+            "label": "只有原盒的參考版本 v001"
+          },
+          {
+            "x": 789,
+            "y": 566,
+            "w": 126,
+            "h": 25,
+            "label": "Save As"
+          }
+        ],
+        "clicks": [],
+        "file": "08-01-09-save-dialog.png",
+        "width": 1060,
+        "height": 600,
+        "sha256": "c11f36e2c4a9e910cac0798597435383e393947a4827e40f03250dc370ce40f5",
+        "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/08-01-09-save-dialog.png"
+      },
+      {
+        "seq": 10,
+        "step": "08-01",
+        "slug": "saved",
+        "recordedAt": "2026-10-25T12:29:37.453Z",
+        "action": "按 Save As，核對新檔路徑、bytes 與 SHA-256",
+        "observed": "已另存原盒參考場景，97955 bytes，SHA-256 9bda36c10fd916ef9cbe688f5ca56dcf8cfa0adb83d684300e60196225589d8f；原檔／讀取副本未變。",
+        "window": "main",
+        "highlights": [],
+        "clicks": [],
+        "file": "08-01-10-saved.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "c322d309456343e96f1e6803487fe07e2bdaa6b67069d90e3aee50cff2c566bb",
+        "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/08-01-10-saved.png"
+      },
+      {
+        "seq": 11,
+        "step": "08-01",
+        "slug": "open-saved",
+        "recordedAt": "2026-10-25T12:29:42.353Z",
+        "action": "File > Open…：重開剛才的原盒參考版本",
+        "observed": "目標 D:\\others\\study\\Blender-Learning\\learning\\evidence\\08\\2026-10-25-lesson08-parameters-demo-v001\\demo-files\\；檔名 u08_thread_reference_v001.blend。",
+        "window": "FILE_BROWSER",
+        "highlights": [
+          {
+            "x": 248,
+            "y": 566,
+            "w": 780,
+            "h": 25,
+            "label": "同一參考版本 v001"
+          },
+          {
+            "x": 789,
+            "y": 566,
+            "w": 126,
+            "h": 25,
+            "label": "Open"
+          }
+        ],
+        "clicks": [],
+        "file": "08-01-11-open-saved.png",
+        "width": 1060,
+        "height": 600,
+        "sha256": "ee21fc68888ccb7e56fb48702f26a368f7ea1262166902b802aae9008840d28c",
+        "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/08-01-11-open-saved.png"
+      },
+      {
+        "seq": 12,
+        "step": "08-01",
+        "slug": "reopened-verified",
+        "recordedAt": "2026-10-25T12:29:45.753Z",
+        "action": "按 Open：重驗未修改原盒，保存參數表、三個實選面座標及 verification.json",
+        "observed": "重開實測與來源一致：60 × 40 × 30、壁底 2 mm／NM 0；只有原盒。參數表 v001 已綁定場景 hash；24個參數／路線／修改器設定仍待定；沒有建牙或柱、計算、STL、列印或試配。",
+        "window": "main",
+        "highlights": [],
+        "clicks": [],
+        "file": "08-01-12-reopened-verified.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "05ccab2799c6d1965c1878130815b63d2bbff9cd4b87417c2d63458e52bc3472",
+        "note": "助教準備完成不等於學員已完成；不更新 progress、不做強度或配合合格判定。",
+        "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/08-01-12-reopened-verified.png"
+      }
+    ],
+    "verification": {
+      "passed": true,
+      "kind": "thread_parameter_reference",
+      "source_scene_path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\04\\2026-10-22-lesson04-demo-v001\\demo-files\\u04_box_v001.blend",
+      "source_scene_sha256": "b918ee87d26e289f4c8a2f6633beceb854c7d0511e3eddcc969a0696afcd2530",
+      "opened_scene_path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\08\\2026-10-25-lesson08-parameters-demo-v001\\demo-files\\sources\\u04_box_v001.blend",
+      "opened_scene_sha256": "b918ee87d26e289f4c8a2f6633beceb854c7d0511e3eddcc969a0696afcd2530",
+      "source_unchanged": true,
+      "opened_copy_unchanged": true,
+      "source_body_geometry_unchanged": true,
+      "source_body": {
+        "bounds_mm": {
+          "min": [
+            -30.0,
+            -20.0,
+            -15.0
+          ],
+          "max": [
+            30.0,
+            20.0,
+            15.0
+          ]
+        },
+        "dimensions_mm": [
+          60.0,
+          40.0,
+          30.0
+        ],
+        "volume_mm3": 15552.0,
+        "non_manifold_edges": 0,
+        "non_manifold_vertex_links": 0,
+        "inconsistent_winding_edges": 0,
+        "connected_shells": 1,
+        "euler_characteristic": 2,
+        "genus": 0,
+        "mesh_counts": {
+          "vertices": 16,
+          "edges": 42,
+          "faces": 28,
+          "triangles": 28,
+          "representation": "evaluated loop-triangulated mesh"
+        },
+        "passed": true,
+        "printed": false,
+        "fit_tested": false,
+        "physical_interference": null,
+        "qualified_clearance_mm": null,
+        "numericComparison": {
+          "purpose": "Floating point reconstruction only; not manufacturing tolerance or fit acceptance",
+          "dimensionsAbsMm": 0.0001,
+          "volumeRelative": 1e-05
+        },
+        "kind": "box_body",
+        "outer_dimensions_mm": [
+          60.0,
+          40.0,
+          30.0
+        ],
+        "cavity_bounds_mm": {
+          "min": [
+            -28.0,
+            -18.0,
+            -13.0
+          ],
+          "max": [
+            28.0,
+            18.0,
+            15.0
+          ]
+        },
+        "cavity_dimensions_mm": [
+          56.0,
+          36.0,
+          28.0
+        ],
+        "wall_thicknesses_mm": [
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "floor_thickness_mm": 2.0,
+        "rim_z_mm": 15.0,
+        "actual_face_planes": {
+          "X": [
+            {
+              "coordinate_mm": -30.0,
+              "area_mm2": 1200.0,
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  -20.0,
+                  -15.0
+                ],
+                "max": [
+                  -30.0,
+                  20.0,
+                  15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": -28.0,
+              "area_mm2": 1008.0,
+              "bounds_mm": {
+                "min": [
+                  -28.0,
+                  -18.0,
+                  -13.0
+                ],
+                "max": [
+                  -28.0,
+                  18.0,
+                  15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 28.0,
+              "area_mm2": 1008.0,
+              "bounds_mm": {
+                "min": [
+                  28.0,
+                  -18.0,
+                  -13.0
+                ],
+                "max": [
+                  28.0,
+                  18.0,
+                  15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 30.0,
+              "area_mm2": 1200.0,
+              "bounds_mm": {
+                "min": [
+                  30.0,
+                  -20.0,
+                  -15.0
+                ],
+                "max": [
+                  30.0,
+                  20.0,
+                  15.0
+                ]
+              }
+            }
+          ],
+          "Y": [
+            {
+              "coordinate_mm": -20.0,
+              "area_mm2": 1800.0,
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  -20.0,
+                  -15.0
+                ],
+                "max": [
+                  30.0,
+                  -20.0,
+                  15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": -18.0,
+              "area_mm2": 1568.0,
+              "bounds_mm": {
+                "min": [
+                  -28.0,
+                  -18.0,
+                  -13.0
+                ],
+                "max": [
+                  28.0,
+                  -18.0,
+                  15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 18.0,
+              "area_mm2": 1568.0,
+              "bounds_mm": {
+                "min": [
+                  -28.0,
+                  18.0,
+                  -13.0
+                ],
+                "max": [
+                  28.0,
+                  18.0,
+                  15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 20.0,
+              "area_mm2": 1800.0,
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  20.0,
+                  -15.0
+                ],
+                "max": [
+                  30.0,
+                  20.0,
+                  15.0
+                ]
+              }
+            }
+          ],
+          "Z": [
+            {
+              "coordinate_mm": -15.0,
+              "area_mm2": 2400.0,
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  -20.0,
+                  -15.0
+                ],
+                "max": [
+                  30.0,
+                  20.0,
+                  -15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": -13.0,
+              "area_mm2": 2016.0,
+              "bounds_mm": {
+                "min": [
+                  -28.0,
+                  -18.0,
+                  -13.0
+                ],
+                "max": [
+                  28.0,
+                  18.0,
+                  -13.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 15.0,
+              "area_mm2": 384.0,
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  -20.0,
+                  15.0
+                ],
+                "max": [
+                  30.0,
+                  20.0,
+                  15.0
+                ]
+              }
+            }
+          ]
+        },
+        "vertical_rays": [
+          {
+            "label": "cavity centre",
+            "xy_mm": [
+              0,
+              0
+            ],
+            "z_hits_mm": [
+              -15.0,
+              -13.0
+            ]
+          },
+          {
+            "label": "negative X rim",
+            "xy_mm": [
+              -29,
+              0
+            ],
+            "z_hits_mm": [
+              -15.0,
+              15.0
+            ]
+          },
+          {
+            "label": "positive X rim",
+            "xy_mm": [
+              29,
+              0
+            ],
+            "z_hits_mm": [
+              -15.0,
+              15.0
+            ]
+          },
+          {
+            "label": "negative Y rim",
+            "xy_mm": [
+              0,
+              -19
+            ],
+            "z_hits_mm": [
+              -15.0,
+              15.0
+            ]
+          },
+          {
+            "label": "positive Y rim",
+            "xy_mm": [
+              0,
+              19
+            ],
+            "z_hits_mm": [
+              -15.0,
+              15.0
+            ]
+          },
+          {
+            "label": "near cavity corner",
+            "xy_mm": [
+              27,
+              17
+            ],
+            "z_hits_mm": [
+              -15.0,
+              -13.0
+            ]
+          }
+        ],
+        "measurement_scope": "actual source body mesh; no physical fit conclusion"
+      },
+      "reference_body": {
+        "bounds_mm": {
+          "min": [
+            -30.0,
+            -20.0,
+            -15.0
+          ],
+          "max": [
+            30.0,
+            20.0,
+            15.0
+          ]
+        },
+        "dimensions_mm": [
+          60.0,
+          40.0,
+          30.0
+        ],
+        "volume_mm3": 15552.0,
+        "non_manifold_edges": 0,
+        "non_manifold_vertex_links": 0,
+        "inconsistent_winding_edges": 0,
+        "connected_shells": 1,
+        "euler_characteristic": 2,
+        "genus": 0,
+        "mesh_counts": {
+          "vertices": 16,
+          "edges": 42,
+          "faces": 28,
+          "triangles": 28,
+          "representation": "evaluated loop-triangulated mesh"
+        },
+        "passed": true,
+        "printed": false,
+        "fit_tested": false,
+        "physical_interference": null,
+        "qualified_clearance_mm": null,
+        "numericComparison": {
+          "purpose": "Floating point reconstruction only; not manufacturing tolerance or fit acceptance",
+          "dimensionsAbsMm": 0.0001,
+          "volumeRelative": 1e-05
+        },
+        "kind": "box_body",
+        "outer_dimensions_mm": [
+          60.0,
+          40.0,
+          30.0
+        ],
+        "cavity_bounds_mm": {
+          "min": [
+            -28.0,
+            -18.0,
+            -13.0
+          ],
+          "max": [
+            28.0,
+            18.0,
+            15.0
+          ]
+        },
+        "cavity_dimensions_mm": [
+          56.0,
+          36.0,
+          28.0
+        ],
+        "wall_thicknesses_mm": [
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "floor_thickness_mm": 2.0,
+        "rim_z_mm": 15.0,
+        "actual_face_planes": {
+          "X": [
+            {
+              "coordinate_mm": -30.0,
+              "area_mm2": 1200.0,
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  -20.0,
+                  -15.0
+                ],
+                "max": [
+                  -30.0,
+                  20.0,
+                  15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": -28.0,
+              "area_mm2": 1008.0,
+              "bounds_mm": {
+                "min": [
+                  -28.0,
+                  -18.0,
+                  -13.0
+                ],
+                "max": [
+                  -28.0,
+                  18.0,
+                  15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 28.0,
+              "area_mm2": 1008.0,
+              "bounds_mm": {
+                "min": [
+                  28.0,
+                  -18.0,
+                  -13.0
+                ],
+                "max": [
+                  28.0,
+                  18.0,
+                  15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 30.0,
+              "area_mm2": 1200.0,
+              "bounds_mm": {
+                "min": [
+                  30.0,
+                  -20.0,
+                  -15.0
+                ],
+                "max": [
+                  30.0,
+                  20.0,
+                  15.0
+                ]
+              }
+            }
+          ],
+          "Y": [
+            {
+              "coordinate_mm": -20.0,
+              "area_mm2": 1800.0,
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  -20.0,
+                  -15.0
+                ],
+                "max": [
+                  30.0,
+                  -20.0,
+                  15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": -18.0,
+              "area_mm2": 1568.0,
+              "bounds_mm": {
+                "min": [
+                  -28.0,
+                  -18.0,
+                  -13.0
+                ],
+                "max": [
+                  28.0,
+                  -18.0,
+                  15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 18.0,
+              "area_mm2": 1568.0,
+              "bounds_mm": {
+                "min": [
+                  -28.0,
+                  18.0,
+                  -13.0
+                ],
+                "max": [
+                  28.0,
+                  18.0,
+                  15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 20.0,
+              "area_mm2": 1800.0,
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  20.0,
+                  -15.0
+                ],
+                "max": [
+                  30.0,
+                  20.0,
+                  15.0
+                ]
+              }
+            }
+          ],
+          "Z": [
+            {
+              "coordinate_mm": -15.0,
+              "area_mm2": 2400.0,
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  -20.0,
+                  -15.0
+                ],
+                "max": [
+                  30.0,
+                  20.0,
+                  -15.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": -13.0,
+              "area_mm2": 2016.0,
+              "bounds_mm": {
+                "min": [
+                  -28.0,
+                  -18.0,
+                  -13.0
+                ],
+                "max": [
+                  28.0,
+                  18.0,
+                  -13.0
+                ]
+              }
+            },
+            {
+              "coordinate_mm": 15.0,
+              "area_mm2": 384.0,
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  -20.0,
+                  15.0
+                ],
+                "max": [
+                  30.0,
+                  20.0,
+                  15.0
+                ]
+              }
+            }
+          ]
+        },
+        "vertical_rays": [
+          {
+            "label": "cavity centre",
+            "xy_mm": [
+              0,
+              0
+            ],
+            "z_hits_mm": [
+              -15.0,
+              -13.0
+            ]
+          },
+          {
+            "label": "negative X rim",
+            "xy_mm": [
+              -29,
+              0
+            ],
+            "z_hits_mm": [
+              -15.0,
+              15.0
+            ]
+          },
+          {
+            "label": "positive X rim",
+            "xy_mm": [
+              29,
+              0
+            ],
+            "z_hits_mm": [
+              -15.0,
+              15.0
+            ]
+          },
+          {
+            "label": "negative Y rim",
+            "xy_mm": [
+              0,
+              -19
+            ],
+            "z_hits_mm": [
+              -15.0,
+              15.0
+            ]
+          },
+          {
+            "label": "positive Y rim",
+            "xy_mm": [
+              0,
+              19
+            ],
+            "z_hits_mm": [
+              -15.0,
+              15.0
+            ]
+          },
+          {
+            "label": "near cavity corner",
+            "xy_mm": [
+              27,
+              17
+            ],
+            "z_hits_mm": [
+              -15.0,
+              -13.0
+            ]
+          }
+        ],
+        "measurement_scope": "actual source body mesh; no physical fit conclusion"
+      },
+      "scene_path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\08\\2026-10-25-lesson08-parameters-demo-v001\\demo-files\\u08_thread_reference_v001.blend",
+      "scene_sha256": "9bda36c10fd916ef9cbe688f5ca56dcf8cfa0adb83d684300e60196225589d8f",
+      "scene_bytes": 97955,
+      "scene_role": "unmodified_box_thread_reference",
+      "reopened": true,
+      "thread_modeled": false,
+      "boss_modeled": false,
+      "pilot_hole_modeled": false,
+      "counterpart_modeled": false,
+      "modifier_created": false,
+      "screw_modifier_created": false,
+      "geometry_modified": false,
+      "face_measurements": {
+        "rim": {
+          "object_name": "Body_Reference",
+          "selected_face_count": 1,
+          "selected_vertex_count": 4,
+          "vertices_mm": [
+            [
+              -30.00000142492354,
+              -20.000000949949026,
+              15.00000071246177
+            ],
+            [
+              30.00000142492354,
+              -20.000000949949026,
+              15.00000071246177
+            ],
+            [
+              28.000001329928637,
+              -18.000000854954123,
+              15.00000071246177
+            ],
+            [
+              -28.000001329928637,
+              -18.000000854954123,
+              15.00000071246177
+            ]
+          ],
+          "bounds_mm": {
+            "min": [
+              -30.00000142492354,
+              -20.000000949949026,
+              15.00000071246177
+            ],
+            "max": [
+              30.00000142492354,
+              -18.000000854954123,
+              15.00000071246177
+            ]
+          },
+          "spans_mm": [
+            60.00000284984708,
+            2.0000000949949026,
+            0.0
+          ]
+        },
+        "inner_floor": {
+          "object_name": "Body_Reference",
+          "selected_face_count": 1,
+          "selected_vertex_count": 4,
+          "vertices_mm": [
+            [
+              -28.000001329928637,
+              18.000000854954123,
+              -13.000000617466867
+            ],
+            [
+              -28.000001329928637,
+              -18.000000854954123,
+              -13.000000617466867
+            ],
+            [
+              28.000001329928637,
+              -18.000000854954123,
+              -13.000000617466867
+            ],
+            [
+              28.000001329928637,
+              18.000000854954123,
+              -13.000000617466867
+            ]
+          ],
+          "bounds_mm": {
+            "min": [
+              -28.000001329928637,
+              -18.000000854954123,
+              -13.000000617466867
+            ],
+            "max": [
+              28.000001329928637,
+              18.000000854954123,
+              -13.000000617466867
+            ]
+          },
+          "spans_mm": [
+            56.00000265985727,
+            36.00000170990825,
+            0.0
+          ]
+        },
+        "outer_floor": {
+          "object_name": "Body_Reference",
+          "selected_face_count": 1,
+          "selected_vertex_count": 4,
+          "vertices_mm": [
+            [
+              -30.00000142492354,
+              20.000000949949026,
+              -15.00000071246177
+            ],
+            [
+              30.00000142492354,
+              20.000000949949026,
+              -15.00000071246177
+            ],
+            [
+              30.00000142492354,
+              -20.000000949949026,
+              -15.00000071246177
+            ],
+            [
+              -30.00000142492354,
+              -20.000000949949026,
+              -15.00000071246177
+            ]
+          ],
+          "bounds_mm": {
+            "min": [
+              -30.00000142492354,
+              -20.000000949949026,
+              -15.00000071246177
+            ],
+            "max": [
+              30.00000142492354,
+              20.000000949949026,
+              -15.00000071246177
+            ]
+          },
+          "spans_mm": [
+            60.00000284984708,
+            40.00000189989805,
+            0.0
+          ]
+        }
+      },
+      "parameter_template_path": "D:\\others\\study\\Blender-Learning\\learning\\plans\\08-01-thread-parameters-v001.json",
+      "parameter_template_sha256": "92c0bf94ede81a48a5c16179ae1558bb8c61c521f960c79cd4ad05830f0d79bb",
+      "source_facts_path": "D:\\others\\study\\Blender-Learning\\sources\\engineering\\thread-source-facts-v001.json",
+      "source_facts_sha256": "78a0b7b1092287e7956b9a11da17f4b1ef838c7da50473e989d05cc759b67834",
+      "route": {
+        "selected": null,
+        "selection_status": "pending_user_choice",
+        "tutor_first_candidate": "custom_printed_thread",
+        "candidate_is_not_a_user_decision": true,
+        "options": [
+          {
+            "id": "custom_printed_thread",
+            "label": "自訂列印螺紋",
+            "scope": "先學牙型與螺旋建模；不先標成ISO／M規格，也不把矩形小盒直接當旋蓋。"
+          },
+          {
+            "id": "metal_screw_or_insert",
+            "label": "金屬螺絲／熱熔螺母",
+            "scope": "先取得實際零件型號、圖面與廠商孔徑／安裝條件；不能只憑名義直徑決定孔。"
+          },
+          {
+            "id": "both",
+            "label": "兩條路線都學",
+            "scope": "每條路線分開保存規格、草案與試驗結果，不共用未驗證的合格值。"
+          }
+        ]
+      },
+      "thread_route_selected": null,
+      "thread_standard_selected": null,
+      "blender_mapping": {
+        "status": "documented_mapping_only_not_configured",
+        "modifier_created": false,
+        "angle_degrees": null,
+        "axis": null,
+        "axis_object": null,
+        "object_screw": null,
+        "screw_offset_mm": null,
+        "iterations": null,
+        "steps_viewport": null,
+        "steps_render": null,
+        "merge_distance_mm": null,
+        "evaluated_export_mode": null,
+        "relationships": [
+          "Angle=360°且Object Screw關閉時，每次Screw位移才可對應一完整轉的導程l；單線n=1時才可再寫成Screw=P。",
+          "Iterations重複同一掃掠操作，不是線數；總旋轉圈數=Iterations×|Angle|/360°，總軸向位移=Screw×Iterations。",
+          "Steps Viewport與Render控制每段掃掠的離散分段；Angle=360°時才對應每整圈分段，不是螺距、線數或合格品質。兩者與匯出評估模式都要實際核對。",
+          "牙型需核對物件原點／軸、剖面位置、Scale與封口；非零軸移下不能把Merge當成牙端自動封實。Smooth Shading也不會增加幾何精度。"
+        ]
+      },
+      "final_objects": {
+        "Body_Reference": {
+          "type": "MESH",
+          "hidden": false,
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "modifier_count": 0,
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        "Camera": {
+          "type": "CAMERA",
+          "hidden": true,
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "modifier_count": 0,
+          "matrix_world": [
+            [
+              0.6859206557273865,
+              -0.32401347160339355,
+              0.6515582203865051,
+              7.358891487121582
+            ],
+            [
+              0.7276763319969177,
+              0.305420845746994,
+              -0.6141703724861145,
+              -6.925790786743164
+            ],
+            [
+              0.0,
+              0.8953956365585327,
+              0.44527140259742737,
+              4.958309173583984
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        "Light": {
+          "type": "LIGHT",
+          "hidden": true,
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "modifier_count": 0,
+          "matrix_world": [
+            [
+              -0.29086464643478394,
+              -0.7711008191108704,
+              0.5663931965827942,
+              4.076245307922363
+            ],
+            [
+              0.9551711678504944,
+              -0.1998833566904068,
+              0.21839119493961334,
+              1.0054539442062378
+            ],
+            [
+              -0.05518905818462372,
+              0.6045247316360474,
+              0.7946722507476807,
+              5.903861999511719
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      },
+      "non_manifold_selected_edges": 0,
+      "parameter_record_path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\08\\2026-10-25-lesson08-parameters-demo-v001\\parameter-record-v001.json",
+      "parameter_record_sha256": "0f858377bb80e173f00f3b39303c8f7d20f78d0f929446ae985a50fa7699229a",
+      "calculations_performed": false,
+      "strength_analysis_performed": false,
+      "fit_qualification": false,
+      "printed": false,
+      "fit_tested": false,
+      "slicer_checked": false,
+      "exported": false,
+      "exported_stl": false,
+      "physical_measurements": null,
+      "fit_results": null,
+      "physical_interference": null,
+      "material_grade": null,
+      "qualified_strength_N": null,
+      "qualified_clearance_mm": null,
+      "qualified_torque_Nm": null,
+      "numericComparison": {
+        "dimensionsAbsMm": 0.0001,
+        "purpose": "Floating point reconstruction only; not manufacturing tolerance or strength/fit qualification"
+      }
+    },
+    "runnerStatus": {
+      "status": "completed",
+      "scenario": "lesson08_parameters",
+      "outputDir": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\08\\2026-10-25-lesson08-parameters-demo-v001",
+      "startedAt": "2026-10-25T12:28:52.474Z",
+      "endedAt": "2026-10-25T12:29:46.694Z",
+      "blenderExitCode": 0,
+      "timeoutSeconds": 600,
+      "workspacesUnchanged": true,
+      "runErrors": [],
+      "workspacesBefore": {
+        ".": {
+          "kind": "directory"
+        },
+        "01": {
+          "kind": "directory"
+        },
+        "02": {
+          "kind": "directory"
+        },
+        "03": {
+          "kind": "directory"
+        },
+        "04": {
+          "kind": "directory"
+        },
+        "05": {
+          "kind": "directory"
+        },
+        "06": {
+          "kind": "directory"
+        },
+        "07": {
+          "kind": "directory"
+        },
+        "08": {
+          "kind": "directory"
+        },
+        "09": {
+          "kind": "directory"
+        },
+        "04/exports": {
+          "kind": "directory"
+        }
+      },
+      "workspacesAfter": {
+        ".": {
+          "kind": "directory"
+        },
+        "01": {
+          "kind": "directory"
+        },
+        "02": {
+          "kind": "directory"
+        },
+        "03": {
+          "kind": "directory"
+        },
+        "04": {
+          "kind": "directory"
+        },
+        "05": {
+          "kind": "directory"
+        },
+        "06": {
+          "kind": "directory"
+        },
+        "07": {
+          "kind": "directory"
+        },
+        "08": {
+          "kind": "directory"
+        },
+        "09": {
+          "kind": "directory"
+        },
+        "04/exports": {
+          "kind": "directory"
+        }
+      },
+      "workspaceChanges": []
+    },
+    "verificationEvidence": {
+      "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/verification.json",
+      "sha256": "346ccc416ca3ab6f4354779c636c982a750a01e7ab25726dedaa773ac85ba8ae"
+    },
+    "runnerEvidence": {
+      "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/runner-status.json",
+      "sha256": "9f22fa75ed9e021cbfa1797171e8d5c823988f99e23632e77be2ad8598d8244c"
+    },
+    "numericComparison": {
+      "meshReadbackAbsToleranceMm": 0.0001,
+      "purpose": "僅作原盒世界座標與實選面的浮點重建，不是螺紋尺寸、公差等級、扭矩、強度或實體配合門檻。"
+    },
+    "completionScope": "08-01 原盒實測與另存重開、螺紋規格／建模映射的待定參數表；未選路線／尺寸／標準／五金，未建螺紋或柱、計算強度、匯出STL、切片、列印或試配",
+    "geometryEvidence": [
+      {
+        "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/source_body_mesh.json",
+        "sha256": "225d327508cea87536c14804331c828568cc7c2a425a0437a3554ed0d5d801af"
+      },
+      {
+        "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/reference_body_mesh.json",
+        "sha256": "6a2ff244162c253e6d0e32e1271e6f1711582749178cd2694c66b739c4cef887"
+      }
+    ],
+    "dataEvidence": [
+      {
+        "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/parameter-record-v001.json",
+        "sha256": "0f858377bb80e173f00f3b39303c8f7d20f78d0f929446ae985a50fa7699229a"
+      },
+      {
+        "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/face-measurements.json",
+        "sha256": "fd4b187c59c27d01224909d596e73a5c1bd156ca70bdc97a94312b41833a7b7d"
+      }
+    ],
+    "sourceSnapshotEvidence": {
+      "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/source-snapshot/manifest.json",
+      "sha256": "12fa240bd5e52c815fe3eb54f3494594c28479a0b3b809eaf24794f980df602d"
+    }
+  }
+}

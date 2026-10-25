@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 1,
+  "title": "SECourses 第一講：先前已讀來源的數值核對紀錄",
+  "sourceURL": "https://github.com/FurkanGozukara/Blender-Full-Tutorial-Lecture-2026-2027/tree/main/week01",
+  "sourceRef": "main；先前讀取的頁面，未固定 commit",
+  "reviewedOn": "2026-10-22",
+  "basis": "本聊天先前透過 Firecrawl 讀取的 week01 README，Check your scene 與 Chapters 區段；本次沒有重新下載或開啟 .blend。",
+  "units": {
+    "length": "meter",
+    "blenderUnitsPerMeter": 1
+  },
+  "objects": [
+    {
+      "name": "GEO_Ground",
+      "location": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": [
+        4,
+        4,
+        0
+      ]
+    },
+    {
+      "name": "GEO_Platform",
+      "location": [
+        0,
+        0,
+        0.1
+      ],
+      "dimensions": [
+        2.4,
+        2.4,
+        0.2
+      ]
+    },
+    {
+      "name": "GEO_BeaconBase",
+      "location": [
+        0,
+        0,
+        0.35
+      ],
+      "dimensions": [
+        0.7,
+        0.7,
+        0.3
+      ]
+    },
+    {
+      "name": "GEO_BeaconPost",
+      "location": [
+        0,
+        0,
+        1.1
+      ],
+      "dimensions": [
+        0.12,
+        0.12,
+        1.2
+      ]
+    },
+    {
+      "name": "GEO_SignalHead",
+      "location": [
+        0,
+        0,
+        1.95
+      ],
+      "dimensions": [
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "name": "GEO_RoofSlab",
+      "location": [
+        0,
+        0,
+        2.5
+      ],
+      "dimensions": [
+        1.2,
+        1.2,
+        0.08
+      ]
+    },
+    {
+      "name": "GEO_RoofPost_L",
+      "location": [
+        -0.5,
+        -0.5,
+        1.35
+      ],
+      "dimensions": [
+        0.1,
+        0.1,
+        2.3
+      ]
+    },
+    {
+      "name": "GEO_RoofPost_R",
+      "location": [
+        0.5,
+        -0.5,
+        1.35
+      ],
+      "dimensions": [
+        0.1,
+        0.1,
+        2.3
+      ]
+    },
+    {
+      "name": "GEO_CargoBox",
+      "location": [
+        -0.8,
+        0.6,
+        0.35
+      ],
+      "dimensions": [
+        0.3,
+        0.3,
+        0.3
+      ]
+    },
+    {
+      "name": "GEO_CourierBody",
+      "location": [
+        0.8,
+        0,
+        0.475
+      ],
+      "dimensions": [
+        0.55,
+        0.55,
+        0.55
+      ]
+    }
+  ],
+  "camera": {
+    "location": [
+      -3.244,
+      -9.442,
+      5.761
+    ],
+    "rotationDegrees": [
+      64.4,
+      0,
+      -20.1
+    ],
+    "focalLengthMm": 35,
+    "framingMayDiffer": true
+  },
+  "materialHex": {
+    "MAT_Platform": "3F6D8E",
+    "MAT_Signal": "FFB347",
+    "MAT_Courier": "83DAC2",
+    "World": "1B2432"
+  },
+  "scope": "這份資料只核對來源文字中的數值。不是已操作或已驗證本地模型的證據；毫米方塊與工程小盒屬本地補充，不能歸給原作者。"
+}

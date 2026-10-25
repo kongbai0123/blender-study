@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "scope": "source definition review, not full standards or FDM qualification",
+  "sources": [
+    {
+      "url": "https://docs.blender.org/manual/en/5.2/modeling/modifiers/generate/screw.html",
+      "title": "Screw Modifier - Blender 5.2 LTS Manual",
+      "statusCode": 200,
+      "cacheState": "hit",
+      "cachedAt": "2026-10-25T12:21:27.937Z",
+      "scrapeId": "01a173a7-8b5e-7281-8438-9c1fa4e7add1"
+    },
+    {
+      "url": "https://ulprospector.ul.com/1248/pe-snapfit-3/",
+      "title": "Improving Snapfit Design (Part 3) - Prospector Knowledge Center",
+      "statusCode": 200,
+      "cacheState": "miss",
+      "scrapeId": "01a173a7-8b0c-70ee-8de6-acec58ebf8b0"
+    },
+    {
+      "url": "https://www.iso.org/standard/85107.html",
+      "title": " ISO 68-1:2023 - ISO general purpose screw threads — Basic and design profiles — Part 1: Metric screw threads",
+      "statusCode": 200,
+      "cacheState": "miss",
+      "scrapeId": "01a173a7-8b27-76a2-b1af-892ba5c42b2c"
+    }
+  ],
+  "checks": [
+    {
+      "id": "screw",
+      "url": "https://docs.blender.org/manual/en/5.2/modeling/modifiers/generate/screw.html",
+      "installedBuildSource": "https://github.com/blender/blender/blob/9e2066aef7ef/source/blender/modifiers/intern/MOD_screw.cc",
+      "sourceLocations": "L190, L325-331, L360, L698-713",
+      "result": "consistent_with_existing_facts",
+      "paraphrase": "Object Screw關閉且固定軸時，Iterations同時倍乘Angle與軸向位移；Angle360°才有Screw=lead，單線時再等於pitch。Iterations不是線數。Merge不會自動封非零軸移螺旋的牙端。此處為原始碼核讀與代數關係，沒有建立螺紋或配置修改器。",
+      "newRuntimeScrewTest": false
+    },
+    {
+      "id": "iso68",
+      "url": "https://www.iso.org/standard/85107.html",
+      "result": "public_scope_only",
+      "paraphrase": "ISO68-1:2023公開摘要為一般公制螺紋基本／設計牙型；未取得全文、尺寸或公差表，不聲稱本件符合ISO。",
+      "fullStandardRead": false
+    },
+    {
+      "id": "iso5408",
+      "url": "https://www.iso.org/standard/44424.html",
+      "result": "public_scope_only",
+      "paraphrase": "ISO5408:2009公開頁為螺紋基本詞彙；未取得全文或藉此選定任何規格。",
+      "fullStandardRead": false
+    },
+    {
+      "id": "basf_article",
+      "url": "https://ulprospector.ul.com/1248/pe-snapfit-3/",
+      "result": "manufacturer_authored_third_party_publication",
+      "paraphrase": "頁面標示BASF供稿及Chul Lee署名，根部牆面柔度與L/t影響Q的描述吻合。不是BASF官方託管頁；不採射出材料允許應變為FDM值。"
+    }
+  ],
+  "formulaPageAudit": "source-formulas-review-v001.json",
+  "fullStandardsRead": false,
+  "sourceImagesAddedToCourse": false
+}

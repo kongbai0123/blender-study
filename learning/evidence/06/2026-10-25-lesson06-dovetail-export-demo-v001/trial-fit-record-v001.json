@@ -1,0 +1,815 @@
+{
+  "schema_version": 1,
+  "run": "2026-10-25-lesson06-dovetail-export-demo-v001",
+  "recorded_on": "2026-10-25",
+  "timezone": "Asia/Taipei",
+  "performed_by": "tutor",
+  "status": "experimental_geometry_only",
+  "source_scene": {
+    "path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\06\\2026-10-25-lesson06-dovetail-demo-v002\\demo-files\\u06_dovetail_slide_v001.blend",
+    "sha256": "b7da592c4b080163566cb6e1a90390832eae6db8421fbf7be23bfb9071ae0c3e",
+    "bytes": 106782,
+    "version": "v001",
+    "source_run": "2026-10-25-lesson06-dovetail-demo-v002",
+    "unchanged": true,
+    "prior_verification": {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/verification.json",
+      "sha256": "47ebb57ad00e006d989c65883bea6db7423aed777f216694047b5799a7dbf754",
+      "bytes": 58221
+    }
+  },
+  "opened_source_copy": {
+    "path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\06\\2026-10-25-lesson06-dovetail-export-demo-v001\\demo-files\\sources\\u06_dovetail_slide_v001.blend",
+    "sha256": "b7da592c4b080163566cb6e1a90390832eae6db8421fbf7be23bfb9071ae0c3e",
+    "bytes": 106782,
+    "unchanged": true,
+    "copy_of": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\06\\2026-10-25-lesson06-dovetail-demo-v002\\demo-files\\u06_dovetail_slide_v001.blend",
+    "is_new_checkpoint": false
+  },
+  "exports": [
+    {
+      "kind": "body",
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/demo-files/exports/u06_dovetail_body_v001.stl",
+      "sha256": "747e6186876f0e00c5c0617f0631de890a610696e42a930d5f7a0452f8ab4586",
+      "bytes": 6284,
+      "version": "v001",
+      "source_object": "Body",
+      "dimensions_mm": [
+        60.0,
+        40.0,
+        30.0
+      ],
+      "bounds_mm": {
+        "min": [
+          -30.0,
+          -20.0,
+          -15.0
+        ],
+        "max": [
+          30.0,
+          20.0,
+          15.0
+        ]
+      },
+      "triangle_count": 124
+    },
+    {
+      "kind": "lid",
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/demo-files/exports/u06_dovetail_lid_v001.stl",
+      "sha256": "436597611a951ead9878cb330bda8a4a306f014cb70183c894987666113ee713",
+      "bytes": 3484,
+      "version": "v001",
+      "source_object": "SlidingLid",
+      "dimensions_mm": [
+        60.0,
+        40.0,
+        5.200000762939453
+      ],
+      "bounds_mm": {
+        "min": [
+          -30.0,
+          -20.0,
+          12.0
+        ],
+        "max": [
+          30.0,
+          20.0,
+          17.200000762939453
+        ]
+      },
+      "triangle_count": 68
+    }
+  ],
+  "nominal_trial": {
+    "status": "experimental_geometry_only",
+    "selected_by": "tutor",
+    "horizontal_total_clearance_mm": 0.4,
+    "horizontal_side_clearance_mm": 0.2,
+    "qualified_clearance_mm": null,
+    "side_direction": "Horizontal Y clearance at a common Z; not radial or perpendicular to the sloped surface",
+    "design_side_slope_abs": 0.2,
+    "ideal_normal_reference_mm": 0.19611613513818402
+  },
+  "actual_cad_measurements": {
+    "measurement_scope": "Source mesh, native-export STL bytes and actual UI-reimport world meshes, not printed dimensions or fit results",
+    "assembly_readbacks": {
+      "source_assembly": {
+        "passed": true,
+        "kind": "dovetail_assembly",
+        "side_clearances": [
+          {
+            "centre_y_mm": -17.0,
+            "side": "negative_y",
+            "z_overlap_mm": [
+              12.0,
+              15.0
+            ],
+            "endpoints": [
+              {
+                "z_mm": 12.0,
+                "horizontal_gap_mm": 0.19999793767926022,
+                "normal_gap_mm": 0.19611411961015116
+              },
+              {
+                "z_mm": 15.0,
+                "horizontal_gap_mm": 0.19999954700444533,
+                "normal_gap_mm": 0.19611569768338286
+              }
+            ],
+            "horizontal_gap_mm": 0.19999793767926022,
+            "normal_gap_mm": 0.19611411961015116
+          },
+          {
+            "centre_y_mm": -17.0,
+            "side": "positive_y",
+            "z_overlap_mm": [
+              12.0,
+              15.0
+            ],
+            "endpoints": [
+              {
+                "z_mm": 12.0,
+                "horizontal_gap_mm": 0.19999793767925667,
+                "normal_gap_mm": 0.19611411961014766
+              },
+              {
+                "z_mm": 15.0,
+                "horizontal_gap_mm": 0.19999954700444356,
+                "normal_gap_mm": 0.1961156976833811
+              }
+            ],
+            "horizontal_gap_mm": 0.19999793767925667,
+            "normal_gap_mm": 0.19611411961014766
+          },
+          {
+            "centre_y_mm": 17.0,
+            "side": "negative_y",
+            "z_overlap_mm": [
+              12.0,
+              15.0
+            ],
+            "endpoints": [
+              {
+                "z_mm": 12.0,
+                "horizontal_gap_mm": 0.19999978542329977,
+                "normal_gap_mm": 0.1961159202324861
+              },
+              {
+                "z_mm": 15.0,
+                "horizontal_gap_mm": 0.20000139474821665,
+                "normal_gap_mm": 0.19611749830536435
+              }
+            ],
+            "horizontal_gap_mm": 0.19999978542329977,
+            "normal_gap_mm": 0.1961159202324861
+          },
+          {
+            "centre_y_mm": 17.0,
+            "side": "positive_y",
+            "z_overlap_mm": [
+              12.0,
+              15.0
+            ],
+            "endpoints": [
+              {
+                "z_mm": 12.0,
+                "horizontal_gap_mm": 0.19999984502789303,
+                "normal_gap_mm": 0.1961159899194266
+              },
+              {
+                "z_mm": 15.0,
+                "horizontal_gap_mm": 0.20000145435307815,
+                "normal_gap_mm": 0.1961175679926583
+              }
+            ],
+            "horizontal_gap_mm": 0.19999984502789303,
+            "normal_gap_mm": 0.1961159899194266
+          }
+        ],
+        "horizontal_side_gap_mm": 0.19999793767925667,
+        "normal_side_gap_mm": 0.19611411961014766,
+        "horizontal_side_gaps_mm": [
+          0.19999793767926022,
+          0.19999793767925667,
+          0.19999978542329977,
+          0.19999984502789303
+        ],
+        "normal_side_gaps_mm": [
+          0.19611411961015116,
+          0.19611411961014766,
+          0.1961159202324861,
+          0.1961159899194266
+        ],
+        "nominal_horizontal_side_trial_mm": 0.2,
+        "nominal_horizontal_total_trial_mm": 0.4,
+        "bottom_gaps_mm": [
+          0.19999980926513672,
+          0.19999980926513672
+        ],
+        "bottom_gap_mm": 0.19999980926513672,
+        "plate_rim_gap_mm": 0.20000076293945312,
+        "retained_vertical_overlap_mm": 3.0,
+        "geometric_nonintersection": true,
+        "entry_open_both_ends": true,
+        "profile_invariant_along_x": true,
+        "printed": false,
+        "fit_tested": false,
+        "physical_measurements": null,
+        "fit_results": null,
+        "physical_interference": null,
+        "qualified_clearance_mm": null,
+        "trial_status": "experimental_geometry_only",
+        "overhang_analysis_performed": false,
+        "numericComparison": {
+          "purpose": "Floating point reconstruction only; not manufacturing tolerance or fit acceptance",
+          "dimensionsAbsMm": 0.0001,
+          "volumeRelative": 1e-05
+        }
+      },
+      "stl_assembly": {
+        "passed": true,
+        "kind": "dovetail_assembly",
+        "side_clearances": [
+          {
+            "centre_y_mm": -17.0,
+            "side": "negative_y",
+            "z_overlap_mm": [
+              12.0,
+              15.0
+            ],
+            "endpoints": [
+              {
+                "z_mm": 12.0,
+                "horizontal_gap_mm": 0.19999793767926022,
+                "normal_gap_mm": 0.19611411961015116
+              },
+              {
+                "z_mm": 15.0,
+                "horizontal_gap_mm": 0.19999954700444533,
+                "normal_gap_mm": 0.19611569768338286
+              }
+            ],
+            "horizontal_gap_mm": 0.19999793767926022,
+            "normal_gap_mm": 0.19611411961015116
+          },
+          {
+            "centre_y_mm": -17.0,
+            "side": "positive_y",
+            "z_overlap_mm": [
+              12.0,
+              15.0
+            ],
+            "endpoints": [
+              {
+                "z_mm": 12.0,
+                "horizontal_gap_mm": 0.19999793767925667,
+                "normal_gap_mm": 0.19611411961014766
+              },
+              {
+                "z_mm": 15.0,
+                "horizontal_gap_mm": 0.19999954700444356,
+                "normal_gap_mm": 0.1961156976833811
+              }
+            ],
+            "horizontal_gap_mm": 0.19999793767925667,
+            "normal_gap_mm": 0.19611411961014766
+          },
+          {
+            "centre_y_mm": 17.0,
+            "side": "negative_y",
+            "z_overlap_mm": [
+              12.0,
+              15.0
+            ],
+            "endpoints": [
+              {
+                "z_mm": 12.0,
+                "horizontal_gap_mm": 0.19999978542329977,
+                "normal_gap_mm": 0.1961159202324861
+              },
+              {
+                "z_mm": 15.0,
+                "horizontal_gap_mm": 0.20000139474821665,
+                "normal_gap_mm": 0.19611749830536435
+              }
+            ],
+            "horizontal_gap_mm": 0.19999978542329977,
+            "normal_gap_mm": 0.1961159202324861
+          },
+          {
+            "centre_y_mm": 17.0,
+            "side": "positive_y",
+            "z_overlap_mm": [
+              12.0,
+              15.0
+            ],
+            "endpoints": [
+              {
+                "z_mm": 12.0,
+                "horizontal_gap_mm": 0.19999984502789303,
+                "normal_gap_mm": 0.1961159899194266
+              },
+              {
+                "z_mm": 15.0,
+                "horizontal_gap_mm": 0.20000145435307815,
+                "normal_gap_mm": 0.1961175679926583
+              }
+            ],
+            "horizontal_gap_mm": 0.19999984502789303,
+            "normal_gap_mm": 0.1961159899194266
+          }
+        ],
+        "horizontal_side_gap_mm": 0.19999793767925667,
+        "normal_side_gap_mm": 0.19611411961014766,
+        "horizontal_side_gaps_mm": [
+          0.19999793767926022,
+          0.19999793767925667,
+          0.19999978542329977,
+          0.19999984502789303
+        ],
+        "normal_side_gaps_mm": [
+          0.19611411961015116,
+          0.19611411961014766,
+          0.1961159202324861,
+          0.1961159899194266
+        ],
+        "nominal_horizontal_side_trial_mm": 0.2,
+        "nominal_horizontal_total_trial_mm": 0.4,
+        "bottom_gaps_mm": [
+          0.19999980926513672,
+          0.19999980926513672
+        ],
+        "bottom_gap_mm": 0.19999980926513672,
+        "plate_rim_gap_mm": 0.20000076293945312,
+        "retained_vertical_overlap_mm": 3.0,
+        "geometric_nonintersection": true,
+        "entry_open_both_ends": true,
+        "profile_invariant_along_x": true,
+        "printed": false,
+        "fit_tested": false,
+        "physical_measurements": null,
+        "fit_results": null,
+        "physical_interference": null,
+        "qualified_clearance_mm": null,
+        "trial_status": "experimental_geometry_only",
+        "overhang_analysis_performed": false,
+        "numericComparison": {
+          "purpose": "Floating point reconstruction only; not manufacturing tolerance or fit acceptance",
+          "dimensionsAbsMm": 0.0001,
+          "volumeRelative": 1e-05
+        }
+      },
+      "reimport_assembly": {
+        "passed": true,
+        "kind": "dovetail_assembly",
+        "side_clearances": [
+          {
+            "centre_y_mm": -17.0,
+            "side": "negative_y",
+            "z_overlap_mm": [
+              12.0,
+              15.0
+            ],
+            "endpoints": [
+              {
+                "z_mm": 12.0,
+                "horizontal_gap_mm": 0.19999793767926022,
+                "normal_gap_mm": 0.19611411961015116
+              },
+              {
+                "z_mm": 15.0,
+                "horizontal_gap_mm": 0.19999954700444533,
+                "normal_gap_mm": 0.19611569768338286
+              }
+            ],
+            "horizontal_gap_mm": 0.19999793767926022,
+            "normal_gap_mm": 0.19611411961015116
+          },
+          {
+            "centre_y_mm": -17.0,
+            "side": "positive_y",
+            "z_overlap_mm": [
+              12.0,
+              15.0
+            ],
+            "endpoints": [
+              {
+                "z_mm": 12.0,
+                "horizontal_gap_mm": 0.19999793767925667,
+                "normal_gap_mm": 0.19611411961014766
+              },
+              {
+                "z_mm": 15.0,
+                "horizontal_gap_mm": 0.19999954700444356,
+                "normal_gap_mm": 0.1961156976833811
+              }
+            ],
+            "horizontal_gap_mm": 0.19999793767925667,
+            "normal_gap_mm": 0.19611411961014766
+          },
+          {
+            "centre_y_mm": 17.0,
+            "side": "negative_y",
+            "z_overlap_mm": [
+              12.0,
+              15.0
+            ],
+            "endpoints": [
+              {
+                "z_mm": 12.0,
+                "horizontal_gap_mm": 0.19999978542329977,
+                "normal_gap_mm": 0.1961159202324861
+              },
+              {
+                "z_mm": 15.0,
+                "horizontal_gap_mm": 0.20000139474821665,
+                "normal_gap_mm": 0.19611749830536435
+              }
+            ],
+            "horizontal_gap_mm": 0.19999978542329977,
+            "normal_gap_mm": 0.1961159202324861
+          },
+          {
+            "centre_y_mm": 17.0,
+            "side": "positive_y",
+            "z_overlap_mm": [
+              12.0,
+              15.0
+            ],
+            "endpoints": [
+              {
+                "z_mm": 12.0,
+                "horizontal_gap_mm": 0.19999984502789303,
+                "normal_gap_mm": 0.1961159899194266
+              },
+              {
+                "z_mm": 15.0,
+                "horizontal_gap_mm": 0.20000145435307815,
+                "normal_gap_mm": 0.1961175679926583
+              }
+            ],
+            "horizontal_gap_mm": 0.19999984502789303,
+            "normal_gap_mm": 0.1961159899194266
+          }
+        ],
+        "horizontal_side_gap_mm": 0.19999793767925667,
+        "normal_side_gap_mm": 0.19611411961014766,
+        "horizontal_side_gaps_mm": [
+          0.19999793767926022,
+          0.19999793767925667,
+          0.19999978542329977,
+          0.19999984502789303
+        ],
+        "normal_side_gaps_mm": [
+          0.19611411961015116,
+          0.19611411961014766,
+          0.1961159202324861,
+          0.1961159899194266
+        ],
+        "nominal_horizontal_side_trial_mm": 0.2,
+        "nominal_horizontal_total_trial_mm": 0.4,
+        "bottom_gaps_mm": [
+          0.19999980926513672,
+          0.19999980926513672
+        ],
+        "bottom_gap_mm": 0.19999980926513672,
+        "plate_rim_gap_mm": 0.20000076293945312,
+        "retained_vertical_overlap_mm": 3.0,
+        "geometric_nonintersection": true,
+        "entry_open_both_ends": true,
+        "profile_invariant_along_x": true,
+        "printed": false,
+        "fit_tested": false,
+        "physical_measurements": null,
+        "fit_results": null,
+        "physical_interference": null,
+        "qualified_clearance_mm": null,
+        "trial_status": "experimental_geometry_only",
+        "overhang_analysis_performed": false,
+        "numericComparison": {
+          "purpose": "Floating point reconstruction only; not manufacturing tolerance or fit acceptance",
+          "dimensionsAbsMm": 0.0001,
+          "volumeRelative": 1e-05
+        }
+      }
+    },
+    "final_body_channels": [
+      {
+        "centre_y_mm": -17.0,
+        "x_mm": [
+          -30,
+          30
+        ],
+        "profile": {
+          "z_mm": [
+            11.800000190734863,
+            15.0
+          ],
+          "widths_mm": [
+            3.599998474121092,
+            2.319999694824217
+          ],
+          "side_slope_abs": 0.199999821186055,
+          "side_planes": [
+            {
+              "side": "negative_y",
+              "slope_z": -0.199999821186055,
+              "offset_mm": -21.159997165202935,
+              "equation": "y + slope_z*z = offset_mm",
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  -18.799999237060547,
+                  11.800000190734863
+                ],
+                "max": [
+                  30.0,
+                  -18.15999984741211,
+                  15.0
+                ]
+              },
+              "area_mm2": 195.8023309181232,
+              "triangle_count": 4
+            },
+            {
+              "side": "positive_y",
+              "slope_z": 0.199999821186055,
+              "offset_mm": -12.840002834797067,
+              "equation": "y + slope_z*z = offset_mm",
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  -15.84000015258789,
+                  11.800000190734863
+                ],
+                "max": [
+                  30.0,
+                  -15.200000762939453,
+                  15.0
+                ]
+              },
+              "area_mm2": 195.8023309181232,
+              "triangle_count": 4
+            }
+          ]
+        },
+        "open_ends": true
+      },
+      {
+        "centre_y_mm": 17.0,
+        "x_mm": [
+          -30,
+          30
+        ],
+        "profile": {
+          "z_mm": [
+            11.800000190734863,
+            15.0
+          ],
+          "widths_mm": [
+            3.59999942779541,
+            2.3199996948242188
+          ],
+          "side_slope_abs": 0.19999997019767585,
+          "side_planes": [
+            {
+              "side": "negative_y",
+              "slope_z": -0.20000011920929667,
+              "offset_mm": 12.83999836444844,
+              "equation": "y + slope_z*z = offset_mm",
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  15.199999809265137,
+                  11.800000190734863
+                ],
+                "max": [
+                  30.0,
+                  15.84000015258789,
+                  15.0
+                ]
+              },
+              "area_mm2": 195.80234213997684,
+              "triangle_count": 4
+            },
+            {
+              "side": "positive_y",
+              "slope_z": 0.199999821186055,
+              "offset_mm": 21.159997165202935,
+              "equation": "y + slope_z*z = offset_mm",
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  18.15999984741211,
+                  11.800000190734863
+                ],
+                "max": [
+                  30.0,
+                  18.799999237060547,
+                  15.0
+                ]
+              },
+              "area_mm2": 195.8023309181232,
+              "triangle_count": 4
+            }
+          ]
+        },
+        "open_ends": true
+      }
+    ],
+    "final_lid_plate_dimensions_mm": [
+      60,
+      40,
+      2.0
+    ],
+    "final_lid_plate_z_mm": [
+      15.200000762939453,
+      17.200000762939453
+    ],
+    "final_lid_exposed_male_depth_mm": 3.200000762939453,
+    "final_lid_male_ribs": [
+      {
+        "centre_y_mm": -17.0,
+        "x_mm": [
+          -30,
+          30
+        ],
+        "profile": {
+          "z_mm": [
+            12.0,
+            15.200000762939453
+          ],
+          "widths_mm": [
+            3.1200027465820312,
+            1.8400001525878906
+          ],
+          "side_slope_abs": 0.2000003576277834,
+          "side_planes": [
+            {
+              "side": "negative_y",
+              "slope_z": -0.2000003576277834,
+              "offset_mm": -20.960005664824415,
+              "equation": "y + slope_z*z = offset_mm",
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  -18.560001373291016,
+                  12.0
+                ],
+                "max": [
+                  30.0,
+                  -17.920000076293945,
+                  15.200000762939453
+                ]
+              },
+              "area_mm2": 195.80240947111875,
+              "triangle_count": 2
+            },
+            {
+              "side": "positive_y",
+              "slope_z": 0.2000003576277834,
+              "offset_mm": -13.039994335175583,
+              "equation": "y + slope_z*z = offset_mm",
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  -16.079999923706055,
+                  12.0
+                ],
+                "max": [
+                  30.0,
+                  -15.439998626708984,
+                  15.200000762939453
+                ]
+              },
+              "area_mm2": 195.80240947111875,
+              "triangle_count": 2
+            }
+          ]
+        }
+      },
+      {
+        "centre_y_mm": 17.0,
+        "x_mm": [
+          -30,
+          30
+        ],
+        "profile": {
+          "z_mm": [
+            12.0,
+            15.200000762939453
+          ],
+          "widths_mm": [
+            3.119999885559082,
+            1.839996337890625
+          ],
+          "side_slope_abs": 0.2000005066393598,
+          "side_planes": [
+            {
+              "side": "negative_y",
+              "slope_z": -0.2000006556509362,
+              "offset_mm": 13.039991712572066,
+              "equation": "y + slope_z*z = offset_mm",
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  15.4399995803833,
+                  12.0
+                ],
+                "max": [
+                  30.0,
+                  16.080001831054688,
+                  15.200000762939453
+                ]
+              },
+              "area_mm2": 195.80242069300135,
+              "triangle_count": 2
+            },
+            {
+              "side": "positive_y",
+              "slope_z": 0.2000003576277834,
+              "offset_mm": 20.960003757475782,
+              "equation": "y + slope_z*z = offset_mm",
+              "bounds_mm": {
+                "min": [
+                  -30.0,
+                  17.919998168945312,
+                  12.0
+                ],
+                "max": [
+                  30.0,
+                  18.559999465942383,
+                  15.200000762939453
+                ]
+              },
+              "area_mm2": 195.80240947111875,
+              "triangle_count": 2
+            }
+          ]
+        }
+      }
+    ],
+    "source_stl_reimport_clearance_summaries": {
+      "source_assembly": {
+        "horizontal_side_gap_mm": 0.19999793767925667,
+        "normal_side_gap_mm": 0.19611411961014766,
+        "bottom_gap_mm": 0.19999980926513672,
+        "plate_rim_gap_mm": 0.20000076293945312,
+        "retained_vertical_overlap_mm": 3.0,
+        "geometric_nonintersection": true
+      },
+      "stl_assembly": {
+        "horizontal_side_gap_mm": 0.19999793767925667,
+        "normal_side_gap_mm": 0.19611411961014766,
+        "bottom_gap_mm": 0.19999980926513672,
+        "plate_rim_gap_mm": 0.20000076293945312,
+        "retained_vertical_overlap_mm": 3.0,
+        "geometric_nonintersection": true
+      },
+      "reimport_assembly": {
+        "horizontal_side_gap_mm": 0.19999793767925667,
+        "normal_side_gap_mm": 0.19611411961014766,
+        "bottom_gap_mm": 0.19999980926513672,
+        "plate_rim_gap_mm": 0.20000076293945312,
+        "retained_vertical_overlap_mm": 3.0,
+        "geometric_nonintersection": true
+      }
+    }
+  },
+  "print_conditions": {
+    "evidence": {
+      "path": "learning/evidence/05/2026-10-22-print-conditions-v001.json",
+      "sha256": "61b631d2b7f815ea046b2afd5216dfa6b0f5dd8a0ef550b062fff6be6c4f6ca8",
+      "bytes": 676
+    },
+    "nozzle_diameter_mm": 0.4,
+    "printing_process": null,
+    "printer_model": null,
+    "material": null,
+    "extrusion_width_mm": null,
+    "layer_height_mm": null,
+    "print_orientation": null,
+    "slicer": null,
+    "note": "Only the learner-provided nozzle diameter is known; other print settings, overhang/support strategy and qualified clearance remain undetermined."
+  },
+  "numeric_comparison": {
+    "dimensionsAbsMm": 0.0001,
+    "volumeRelative": 1e-05,
+    "purpose": "Floating point reconstruction only; not manufacturing tolerance or physical fit acceptance"
+  },
+  "numeric_comparison_note": "Floating point reconstruction only; 1e-4 mm dimensions and volume-relative 1e-5 are not manufacturing tolerances or acceptance limits.",
+  "world_coordinate_note": "STL contains no unit declaration; numerical coordinates are interpreted as millimetres. Body Z=-15..15 and lid Z=12..17.200000762939453 are preserved. No bed translation or print orientation has been checked.",
+  "journal": "learning/journal/2026-10-25-lesson06-dovetail-export-demo-v001.md",
+  "export_manifest": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/export-manifest-v001.json",
+  "exported_stl": true,
+  "saved_new_scene": false,
+  "bed_arranged": false,
+  "mesh_analysis_overhang_checked": false,
+  "slicer_checked": false,
+  "printed": false,
+  "fit_tested": false,
+  "physical_measurements": null,
+  "fit_results": null,
+  "physical_interference": null,
+  "qualified_clearance_mm": null
+}

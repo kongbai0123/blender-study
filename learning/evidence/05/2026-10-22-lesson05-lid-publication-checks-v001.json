@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-22",
+  "run": "2026-10-22-lesson05-lid-demo-v001",
+  "pngCount": 16,
+  "allPngSizesHashesAndHttpBytesMatch": true,
+  "sourceAndOpenedCopyUnchanged": true,
+  "bodyGeometryUnchanged": true,
+  "sceneDownloadMatchesOriginalWithAttachmentHeader": true,
+  "sceneSha256": "ab08f331dcb26c5ffc6c6ca56c7c7f022df96791c4777e37c5f01a964fbed6ff",
+  "sceneBytes": 99064,
+  "reopened": true,
+  "scriptSnapshotsMatchManifest": true,
+  "physicalResultsEmpty": true,
+  "qualifiedClearanceMm": null,
+  "learnerProgressSha256": "d92e4f2ee78a1cf41386816b8616bf635b89fb25f8bfd813ac00cd20ed20b4ef",
+  "learnerProgressUnchanged": true,
+  "tests": {
+    "tutor": {
+      "run": 68,
+      "skipped": 1,
+      "failed": 0
+    },
+    "dashboard": {
+      "run": 17,
+      "failed": 0
+    },
+    "frontendSyntax": "node --check passed"
+  },
+  "browserProof": "learning/evidence/ui/2026-10-22-lesson05-lid-demo-v001.jpg"
+}

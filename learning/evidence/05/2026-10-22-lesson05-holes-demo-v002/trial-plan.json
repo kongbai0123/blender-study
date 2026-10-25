@@ -1,0 +1,89 @@
+{
+  "source": "User explicitly selected draft 0.1 to 0.6 mm total clearances as trial points",
+  "pin_nominal_mm": 10,
+  "board_dimensions_mm": [
+    96,
+    26,
+    4
+  ],
+  "trials": [
+    {
+      "index": 1,
+      "total_clearance_mm": 0.1,
+      "per_side_clearance_mm": 0.05,
+      "nominal_hole_width_mm": 10.1,
+      "marker_count": 1,
+      "center_mm": [
+        -35,
+        2,
+        0
+      ]
+    },
+    {
+      "index": 2,
+      "total_clearance_mm": 0.2,
+      "per_side_clearance_mm": 0.1,
+      "nominal_hole_width_mm": 10.2,
+      "marker_count": 2,
+      "center_mm": [
+        -21,
+        2,
+        0
+      ]
+    },
+    {
+      "index": 3,
+      "total_clearance_mm": 0.3,
+      "per_side_clearance_mm": 0.15,
+      "nominal_hole_width_mm": 10.3,
+      "marker_count": 3,
+      "center_mm": [
+        -7,
+        2,
+        0
+      ]
+    },
+    {
+      "index": 4,
+      "total_clearance_mm": 0.4,
+      "per_side_clearance_mm": 0.2,
+      "nominal_hole_width_mm": 10.4,
+      "marker_count": 4,
+      "center_mm": [
+        7,
+        2,
+        0
+      ]
+    },
+    {
+      "index": 5,
+      "total_clearance_mm": 0.5,
+      "per_side_clearance_mm": 0.25,
+      "nominal_hole_width_mm": 10.5,
+      "marker_count": 5,
+      "center_mm": [
+        21,
+        2,
+        0
+      ]
+    },
+    {
+      "index": 6,
+      "total_clearance_mm": 0.6,
+      "per_side_clearance_mm": 0.3,
+      "nominal_hole_width_mm": 10.6,
+      "marker_count": 6,
+      "center_mm": [
+        35,
+        2,
+        0
+      ]
+    }
+  ],
+  "nozzle_diameter_mm": 0.4,
+  "printed": false,
+  "fit_tested": false,
+  "qualified_clearance_mm": null,
+  "note": "Board and mark dimensions are demonstration geometry, not validated printing limits.",
+  "run_id": "2026-10-22-lesson05-holes-demo-v002"
+}

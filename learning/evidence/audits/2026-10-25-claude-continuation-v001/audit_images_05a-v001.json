@@ -1,0 +1,784 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "Codex audit_images_07a",
+  "date": "2026-10-25",
+  "scope": [
+    "05-02",
+    "05-03"
+  ],
+  "method": "本次重新逐張view_image原圖，獨立於Claude口述摘要；共42路徑全部實看，即使相同像素仍各自開啟對照。未拼貼、重畫或改原圖。",
+  "uniquePathsViewed": 42,
+  "distinctPixelFilesSha256": 40,
+  "counts": {
+    "05-02": 13,
+    "05-03": 29
+  },
+  "summary": "42路徑畫面與各事件可見狀態相符；未見捏造。確認05-03 #2新增Cube與#4隱藏Plate漏寫，#17數字是UI顯示精度差而非已證錯誤；凹點視角不足已有補充斜視。此份只做圖文審查，精確數值另由root獨立Blender重算。",
+  "findings": [
+    {
+      "id": "05a-F01",
+      "severity": "minor_instruction_omission",
+      "step": "05-03",
+      "eventSeq": 2,
+      "title": "空場景後新增Cube未列入action",
+      "evidence": "前張場景沒有物件，#2已出現Cube且Dimensions2/2/2；action僅寫Units/Sidebar，漏寫Add > Mesh > Cube。",
+      "recommendation": "新增註記說明先新增Cube，再設單位與下一步板尺寸；保留凍結run原文。"
+    },
+    {
+      "id": "05a-F02",
+      "severity": "minor_instruction_omission",
+      "step": "05-03",
+      "eventSeq": 4,
+      "title": "隱藏Plate未列入action",
+      "evidence": "#4 Plate在Outliner灰且閉眼、視窗只有第一切割方塊；action只寫Add Cube與切割體尺寸。",
+      "recommendation": "新增先隱藏Plate的註記，並說明沒有刪除。"
+    },
+    {
+      "id": "05a-F03",
+      "severity": "display_precision",
+      "step": "05-03",
+      "eventSeq": 17,
+      "title": "Cutters UI80.4mm與讀值80.35mm",
+      "evidence": "原圖清楚為X80.4mm、Y16.4、Z8；event列80.35。Blender側欄有限小數顯示會四捨五入，不能據此指控值錯。",
+      "recommendation": "由獨立Blender讀值確認並在本張註明UI顯示精度，原圖與raw均保留。"
+    },
+    {
+      "id": "05a-F04",
+      "severity": "evidence_limit_already_disclosed",
+      "step": "05-03",
+      "eventSeq": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        20,
+        22,
+        25,
+        26,
+        28
+      ],
+      "title": "小凹點／精確孔寬不能只憑主流程像素核對",
+      "evidence": "前期小Cylinder比例太小，頂視Solid下盲凹點幾乎不可見；補充oblique-verified原圖清楚可數1～6點，Edit Non-Manifold圖亦有輪廓；#26量測畫面沒有呈現精確數值面板。",
+      "recommendation": "維持圖與raw兩類證據，表述『讀回值』不寫成截圖直接讀數；薄肉與可辨識性待列印，.4噴嘴不能直接當線寬。"
+    }
+  ],
+  "images": [
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-demo-v002/05-02-01-factory-scene.png",
+      "steps": [
+        "05-02"
+      ],
+      "references": [
+        "05-02.operationRun.events[0].figure.path"
+      ],
+      "exists": true,
+      "sha256": "e13488de369a02a0437d128539be91c82e2941e5d93b43f48052bd063056d676",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 0,
+      "observed": "出廠Cube/Camera/Light，Object Mode，Properties Transform LocRot0及Scale1；N Dimensions未展開。",
+      "limitations": "初始2000mm尺寸為讀回，圖未顯。",
+      "result": "visible_state_consistent; presentation limits identified"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-demo-v002/05-02-02-units-before.png",
+      "steps": [
+        "05-02"
+      ],
+      "references": [
+        "05-02.operationRun.events[1].figure.path"
+      ],
+      "exists": true,
+      "sha256": "230eb6caa3632e991985c23e60cb85584db5ab014488813c9539cc3bfc73a632",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 1,
+      "observed": "Scene Units展開Metric、Unit Scale1、Length Meters。",
+      "limitations": "與事件相符。",
+      "result": "visible_state_consistent; presentation limits identified"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-demo-v002/05-02-03-units-mm.png",
+      "steps": [
+        "05-02"
+      ],
+      "references": [
+        "05-02.operationRun.events[2].figure.path"
+      ],
+      "exists": true,
+      "sha256": "b53971c651a093cfaf73fcd70f2fffd16222eceb499b3f01d15c0d5118d13ce8",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 2,
+      "observed": "Units Metric/0.001/Millimeters；N尺寸2/2/2、Scale1，Cube選中。",
+      "limitations": "與事件相符。",
+      "result": "visible_state_consistent; presentation limits identified"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-demo-v002/05-02-04-dimension-x.png",
+      "steps": [
+        "05-02"
+      ],
+      "references": [
+        "05-02.operationRun.events[3].figure.path"
+      ],
+      "exists": true,
+      "sha256": "00f97a6d3179d2e541b794c1838e6d16fccd7ebf33521c2ba41860ac504b8231",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 3,
+      "observed": "Cube尺寸10/2/2，Scale5/1/1；X向拉長。",
+      "limitations": "與事件相符。",
+      "result": "visible_state_consistent; presentation limits identified"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-demo-v002/05-02-05-dimension-y.png",
+      "steps": [
+        "05-02"
+      ],
+      "references": [
+        "05-02.operationRun.events[4].figure.path"
+      ],
+      "exists": true,
+      "sha256": "ab69a442fcb69b944af761959d263a8f208e82c865fec71934960c1acac6db42",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 4,
+      "observed": "Cube尺寸10/10/2，Scale5/5/1；平板形狀。",
+      "limitations": "與事件相符。",
+      "result": "visible_state_consistent; presentation limits identified"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-demo-v002/05-02-06-dimension-z.png",
+      "steps": [
+        "05-02"
+      ],
+      "references": [
+        "05-02.operationRun.events[5].figure.path"
+      ],
+      "exists": true,
+      "sha256": "b8999439c02ebed950df208d70fa7ab5db651affebb34c5d379142853eaf36f5",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 5,
+      "observed": "Cube尺寸10/10/8，Scale5/5/4；高塊。",
+      "limitations": "與事件相符。",
+      "result": "visible_state_consistent; presentation limits identified"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-demo-v002/05-02-07-apply-menu.png",
+      "steps": [
+        "05-02"
+      ],
+      "references": [
+        "05-02.operationRun.events[6].figure.path"
+      ],
+      "exists": true,
+      "sha256": "2fe96ab91daf2d5cca911dfa7db51dee49c22ee2a1a02d4b70bf3c50e820b75b",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 6,
+      "observed": "Object > Apply > Scale選單高亮，N仍10/10/8、Scale5/5/4。",
+      "limitations": "套用前選單，並未誤稱已套。",
+      "result": "visible_state_consistent; presentation limits identified"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-demo-v002/05-02-08-scale-applied.png",
+      "steps": [
+        "05-02"
+      ],
+      "references": [
+        "05-02.operationRun.events[7].figure.path"
+      ],
+      "exists": true,
+      "sha256": "7391bbaeaf56773a8205f658fdeebf06349242894cbaca0b12880d02b43cf164",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 7,
+      "observed": "Apply後尺寸10/10/8不變，Scale全1，左下Apply Object Transform。",
+      "limitations": "網格數值需raw。",
+      "result": "visible_state_consistent; presentation limits identified"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-demo-v002/05-02-09-pin-checked.png",
+      "steps": [
+        "05-02"
+      ],
+      "references": [
+        "05-02.operationRun.events[8].figure.path"
+      ],
+      "exists": true,
+      "sha256": "1bd5f0870b1e9f281e248e693b9eadfbdc93ee9fc93d3e897feca2cd51e6e2ca",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 8,
+      "observed": "FitPin已改名且對焦，尺寸10/10/8、Scale1；外觀為封閉塊。",
+      "limitations": "NM0/體積800須mesh，圖無計數。",
+      "result": "visible_state_consistent; presentation limits identified"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-demo-v002/05-02-10-save-dialog.png",
+      "steps": [
+        "05-02"
+      ],
+      "references": [
+        "05-02.operationRun.events[9].figure.path"
+      ],
+      "exists": true,
+      "sha256": "d93c44e6f3cf08a6bd8079275b723a801efede56987c262674aa3faa3a855009",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 9,
+      "observed": "Save As u05_fit_coupon_v001.blend，目錄末端demo-files、空清單。",
+      "limitations": "路徑省略及hash需run。",
+      "result": "visible_state_consistent; presentation limits identified"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-demo-v002/05-02-11-saved.png",
+      "steps": [
+        "05-02"
+      ],
+      "references": [
+        "05-02.operationRun.events[10].figure.path"
+      ],
+      "exists": true,
+      "sha256": "8253b0f090fcffbdca00dbc3184cddde5230f8bb3bc5913bbd09b4ebd7d22473",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 10,
+      "observed": "Saved as u05_fit_coupon_v001.blend提示；FitPin尺寸10/10/8、Scale1。",
+      "limitations": "98366bytes/hash需磁碟讀值。",
+      "result": "visible_state_consistent; presentation limits identified"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-demo-v002/05-02-12-reopen-dialog.png",
+      "steps": [
+        "05-02"
+      ],
+      "references": [
+        "05-02.operationRun.events[11].figure.path"
+      ],
+      "exists": true,
+      "sha256": "c9f6702dea5c70fa8137e7b4007c5a2aa2f10b4528343507f2facd21d5f57486",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 11,
+      "observed": "Open列出u05_fit_coupon_v001.blend96KiB，底部同名。",
+      "limitations": "真重開一致性需後續raw。",
+      "result": "visible_state_consistent; presentation limits identified"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-demo-v002/05-02-13-reopened-verified.png",
+      "steps": [
+        "05-02"
+      ],
+      "references": [
+        "05-02.operationRun.events[12].figure.path"
+      ],
+      "exists": true,
+      "sha256": "80a7a51e87961d9be3d03a796ca0017ef15b31d53f79a3af5367b2e96b292f44",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 12,
+      "observed": "重開FitPin尺寸10/10/8、Scale1、LocRot0，與存檔圖一致。",
+      "limitations": "體積/NM/hash不是圖上顯示。",
+      "result": "visible_state_consistent; presentation limits identified"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-holes-view-v001/05-03-04-supplement-oblique-verified.png",
+      "steps": [
+        "05-03"
+      ],
+      "references": [
+        "05-03.figures[0].path"
+      ],
+      "exists": true,
+      "sha256": "701acc87efbd4e39f2267d6dfa4a5f8345e91fb8078a213b0a8749f7aa56ab32",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 13,
+      "observed": "補充斜視Plate：六方孔透空、每孔下方1～6凹點皆可辨認，Cutters隱藏。",
+      "limitations": "孔寬與凹點深度不能像素精量。",
+      "result": "visible_state_consistent; presentation limits identified"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-01-new-scene.png",
+      "steps": [
+        "05-03"
+      ],
+      "references": [
+        "05-03.operationRun.events[0].figure.path"
+      ],
+      "exists": true,
+      "sha256": "bbc3fc0d8153d6b40a2755c4777b15b314e113bfe2848df371d97cc05dff7cef",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 14,
+      "observed": "空場景Outliner只有Collection；Deleted3objects提示，沒有Cube。",
+      "limitations": "刪除出廠三物件與描述相符。",
+      "result": "visible_state_consistent; presentation limits identified"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-02-units.png",
+      "steps": [
+        "05-03"
+      ],
+      "references": [
+        "05-03.operationRun.events[1].figure.path"
+      ],
+      "exists": true,
+      "sha256": "7019a1000e5c66d571e7eb8b44949d1bbe55c33446b61affc88e38e3f6afa81c",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 15,
+      "observed": "Units Metric0.001/Millimeters，已存在新Cube，尺寸2/2/2。",
+      "limitations": "event只述設定單位，漏寫空場景後Add Cube；可見狀態真實但重現指令不完整。",
+      "result": "visible_state_consistent; presentation limits identified"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-03-board.png",
+      "steps": [
+        "05-03"
+      ],
+      "references": [
+        "05-03.operationRun.events[2].figure.path"
+      ],
+      "exists": true,
+      "sha256": "42d749d6442e623bceddcdeae942cb4c02730ea4abee896318c378836e628399",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 16,
+      "observed": "Plate尺寸96/26/4、LocRot0、Scale1，單板對焦。",
+      "limitations": "與事件相符。",
+      "result": "visible_state_consistent; presentation limits identified"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-04-cutter-1.png",
+      "steps": [
+        "05-03"
+      ],
+      "references": [
+        "05-03.operationRun.events[3].figure.path"
+      ],
+      "exists": true,
+      "sha256": "a3f91c05485ffeda73bf50b40067db2091cda96ca45f8b6fe2610cc0864e67ec",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 17,
+      "observed": "Cube切割體尺寸10.1/10.1/8、Loc−35/2/0、Scale5.05/5.05/4；Plate在Outliner灰隱藏。",
+      "limitations": "event漏寫先隱藏Plate；孔板不見不是刪除。",
+      "result": "visible_state_consistent; presentation limits identified"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-05-cutter-2.png",
+      "steps": [
+        "05-03"
+      ],
+      "references": [
+        "05-03.operationRun.events[4].figure.path"
+      ],
+      "exists": true,
+      "sha256": "b8710f95a8ed81ce359c41ada1be5d1f721904d373ccec99ec7c1f4b0993284e",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 18,
+      "observed": "Cube.001尺寸10.2/10.2/8、Loc−21/2/0、Scale5.1/5.1/4。",
+      "limitations": "畫面小且視角重疊，數量不以肉眼完整證，N可核當件。",
+      "result": "visible_state_consistent; presentation limits identified"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-06-cutter-3.png",
+      "steps": [
+        "05-03"
+      ],
+      "references": [
+        "05-03.operationRun.events[5].figure.path"
+      ],
+      "exists": true,
+      "sha256": "687671a796a6883b8ef8c16b039e55cde22aea4235b732261125e70d4b0ae63a",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 19,
+      "observed": "Cube.002尺寸10.3/10.3/8、Loc−7/2/0、Scale5.15/5.15/4。",
+      "limitations": "同上，Plate仍隱藏。",
+      "result": "visible_state_consistent; presentation limits identified"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-07-cutter-4.png",
+      "steps": [
+        "05-03"
+      ],
+      "references": [
+        "05-03.operationRun.events[6].figure.path"
+      ],
+      "exists": true,
+      "sha256": "73ef90c9a4153ff85a9fd1efc7eac37e0c5bc8f6b6dc7e934cb4a481514692e3",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 20,
+      "observed": "Cube.003尺寸10.4/10.4/8、Loc7/2/0、Scale5.2/5.2/4。",
+      "limitations": "四切割塊可見，未形成孔。",
+      "result": "visible_state_consistent; presentation limits identified"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-08-cutter-5.png",
+      "steps": [
+        "05-03"
+      ],
+      "references": [
+        "05-03.operationRun.events[7].figure.path"
+      ],
+      "exists": true,
+      "sha256": "1e0a1322b2241759527b5aa5adc306f90b55284cce3cd30c5401da8d4f44aee5",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 21,
+      "observed": "Cube.004尺寸10.5/10.5/8、Loc21/2/0、Scale5.25/5.25/4。",
+      "limitations": "與事件相符。",
+      "result": "visible_state_consistent; presentation limits identified"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-09-cutter-6.png",
+      "steps": [
+        "05-03"
+      ],
+      "references": [
+        "05-03.operationRun.events[8].figure.path"
+      ],
+      "exists": true,
+      "sha256": "11bd92615f3ffe1d521ea102aab809e4c55a52b7b8441d6a4810a4e97ca407ef",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 22,
+      "observed": "Cube.005尺寸10.6/10.6/8、Loc35/2/0、Scale5.3/5.3/4；六塊排列。",
+      "limitations": "尺寸是建構工具，不能取代最終孔寬。",
+      "result": "visible_state_consistent; presentation limits identified"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-10-marker-base.png",
+      "steps": [
+        "05-03"
+      ],
+      "references": [
+        "05-03.operationRun.events[9].figure.path"
+      ],
+      "exists": true,
+      "sha256": "52f080793529e67f5a60886fbbd39e2c933a657a5facf4b840ddec00d9655a6d",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 23,
+      "observed": "Cylinder尺寸1.2/1.2/2，Loc−35/−8.5/2.2；左側一小橘圓柱。",
+      "limitations": "Scale顯.001為三位顯示，不足辨.0006；需raw。",
+      "result": "visible_state_consistent; presentation limits identified"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-11-markers-1.png",
+      "steps": [
+        "05-03"
+      ],
+      "references": [
+        "05-03.operationRun.events[10].figure.path"
+      ],
+      "exists": true,
+      "sha256": "52f080793529e67f5a60886fbbd39e2c933a657a5facf4b840ddec00d9655a6d",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 24,
+      "observed": "仍同Cylinder/同尺寸位置、第一組一圓柱；與前圖幾乎/實際相同。",
+      "limitations": "event說Shift+D但note已明示第一組沿用原柱，文字歷史保留。",
+      "result": "visible_state_consistent; presentation limits identified"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-12-markers-2.png",
+      "steps": [
+        "05-03"
+      ],
+      "references": [
+        "05-03.operationRun.events[11].figure.path"
+      ],
+      "exists": true,
+      "sha256": "29569acafe436ee75f55ab9b561cd3503f39cab9c1769d46318a44db8fe3a9b9",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 25,
+      "observed": "Cylinder.002當件尺寸1.2/1.2/2、Loc−20.2/−8.5/2.2；可見第二組小柱。",
+      "limitations": "柱數/間距細小，需raw核21點，非像素完整計數。",
+      "result": "visible_state_consistent; presentation limits identified"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-13-markers-3.png",
+      "steps": [
+        "05-03"
+      ],
+      "references": [
+        "05-03.operationRun.events[12].figure.path"
+      ],
+      "exists": true,
+      "sha256": "4ca41d5baed9524e7dcfff4e0f0e435b01d39a0f39d3f0d608efec047048a04b",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 26,
+      "observed": "Cylinder.005尺寸1.2/1.2/2、Loc−5.4/−8.5/2.2；第三組小柱。",
+      "limitations": "微小圖不能精數組內柱。",
+      "result": "visible_state_consistent; presentation limits identified"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-14-markers-4.png",
+      "steps": [
+        "05-03"
+      ],
+      "references": [
+        "05-03.operationRun.events[13].figure.path"
+      ],
+      "exists": true,
+      "sha256": "bd862c6526db86ac99db6e7e5a3e6ef9d5cad43aeae365d079ab01a6839fe47a",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 27,
+      "observed": "Cylinder.009尺寸1.2/1.2/2、Loc9.4/−8.5/2.2；第四組小柱。",
+      "limitations": "同上，raw核點數。",
+      "result": "visible_state_consistent; presentation limits identified"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-15-markers-5.png",
+      "steps": [
+        "05-03"
+      ],
+      "references": [
+        "05-03.operationRun.events[14].figure.path"
+      ],
+      "exists": true,
+      "sha256": "5c502d69ba60b6c214074319ff210a45e463b2255b260eb2ceb7c28d8a033737",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 28,
+      "observed": "Cylinder.014尺寸1.2/1.2/2、Loc24.2/−8.5/2.2；第五組小柱。",
+      "limitations": "同上。",
+      "result": "visible_state_consistent; presentation limits identified"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-16-markers-6.png",
+      "steps": [
+        "05-03"
+      ],
+      "references": [
+        "05-03.operationRun.events[15].figure.path"
+      ],
+      "exists": true,
+      "sha256": "85076eaaa57cc61347279db3f920eb0ff3d89ba44a6dc302e23d1c4579aaf9cf",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 29,
+      "observed": "Cylinder.020尺寸1.2/1.2/2、Loc39/−8.5/2.2；第六組排列可見。",
+      "limitations": "27切割件數須raw/場景表。",
+      "result": "visible_state_consistent; presentation limits identified"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-17-cutters-joined.png",
+      "steps": [
+        "05-03"
+      ],
+      "references": [
+        "05-03.operationRun.events[16].figure.path"
+      ],
+      "exists": true,
+      "sha256": "f6d74f882fd8915f6f1aa93b17f593560adc5d038800495c8ec3819a4393bef6",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 30,
+      "observed": "Cutters單一物件選中六塊及圓柱，Plate灰隱藏，N顯80.4/16.4/8、Scale1，Loc39/−8.5/2.2。",
+      "limitations": "event80.35與UI80.4是顯示精度差；本目視不自行重算，root獨立Blender將另核。",
+      "result": "visible_state_consistent; presentation limits identified"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-18-boolean-empty.png",
+      "steps": [
+        "05-03"
+      ],
+      "references": [
+        "05-03.operationRun.events[17].figure.path"
+      ],
+      "exists": true,
+      "sha256": "ecbff875c5d4b9a0e430ca3d32e21c03b6af5f2d04fa5889117249b139feaf03",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 31,
+      "observed": "Plate恢復可見、Boolean面板Difference/Exact，Object欄空；Cutters仍可見重疊。",
+      "limitations": "尚無差集指派，與事件相符。",
+      "result": "visible_state_consistent; presentation limits identified"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-19-boolean-assigned.png",
+      "steps": [
+        "05-03"
+      ],
+      "references": [
+        "05-03.operationRun.events[18].figure.path"
+      ],
+      "exists": true,
+      "sha256": "d0bb24fc86da2b3d9b9675dcdf44b63f65086cf0189b2f75e53bf87c73824cdc",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 32,
+      "observed": "Boolean面板Difference/Exact、Object Cutters已指派；工具可見且Plate已有孔邊預覽。",
+      "limitations": "尚未隱藏工具，不能以圖判孔透空。",
+      "result": "visible_state_consistent; presentation limits identified"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-20-holes-preview.png",
+      "steps": [
+        "05-03"
+      ],
+      "references": [
+        "05-03.operationRun.events[19].figure.path"
+      ],
+      "exists": true,
+      "sha256": "c6292c819628b2a08ad86cd4baae8714ed8864e40f9a51d6a4dadf5a832eff09",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 33,
+      "observed": "Top Orthographic Plate六透空方孔；Cutters隱藏；N96/26/4、Scale1；Boolean仍在。",
+      "limitations": "淺盲凹點在同色Solid頂視幾乎不可見，event已明示並連補充斜視。",
+      "result": "visible_state_consistent; presentation limits identified"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-21-apply-boolean-menu.png",
+      "steps": [
+        "05-03"
+      ],
+      "references": [
+        "05-03.operationRun.events[20].figure.path"
+      ],
+      "exists": true,
+      "sha256": "b7ee68f89912455d2f146b72e7b444357ce3f62084b29da39da1c8b4de67b971",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 34,
+      "observed": "Boolean下拉中Apply可讀；六孔頂視與96/26/4保持。",
+      "limitations": "這是Apply前選單。",
+      "result": "visible_state_consistent; presentation limits identified"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-22-applied.png",
+      "steps": [
+        "05-03"
+      ],
+      "references": [
+        "05-03.operationRun.events[21].figure.path"
+      ],
+      "exists": true,
+      "sha256": "251ebfa8e68ce120c62db2a196e8b503a9ffcb807081f9ec3eb7f772d8933a31",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 35,
+      "observed": "Boolean面板已空、六孔仍在；Cutters隱藏、Plate96/26/4、Scale1。",
+      "limitations": "1417v/2165e/738poly不在UI，需raw。",
+      "result": "visible_state_consistent; presentation limits identified"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-23-non-manifold.png",
+      "steps": [
+        "05-03"
+      ],
+      "references": [
+        "05-03.operationRun.events[22].figure.path"
+      ],
+      "exists": true,
+      "sha256": "254f77b796216bc85a3a9461642282b32a4c247ba9a0b9d6c0c31fd4ba99a2b0",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 36,
+      "observed": "Edit Mode邊選取，Nothing selected、左下Select Non-Manifold；六孔及21個凹點輪廓/連線可見。",
+      "limitations": "畫面支持無選邊，NM0完整拓撲需raw。",
+      "result": "visible_state_consistent; presentation limits identified"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-24-save-dialog.png",
+      "steps": [
+        "05-03"
+      ],
+      "references": [
+        "05-03.operationRun.events[23].figure.path"
+      ],
+      "exists": true,
+      "sha256": "339315f99e83430b91391d35d88b0702c0163833da345a9fe42eca3880ee7f70",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 37,
+      "observed": "Save As u05_hole_plate_v001.blend，目錄末端demo-files且空清單。",
+      "limitations": "151951bytes/hash尚未顯示，需實檔。",
+      "result": "visible_state_consistent; presentation limits identified"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-25-saved.png",
+      "steps": [
+        "05-03"
+      ],
+      "references": [
+        "05-03.operationRun.events[24].figure.path"
+      ],
+      "exists": true,
+      "sha256": "fbca8f4f712b57feada96bff953b81de1146f9678c656383e519fe0e3b83fb8f",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 38,
+      "observed": "Saved as u05_hole_plate_v001.blend提示；Plate頂視六孔尺寸96/26/4、Scale1。",
+      "limitations": "凹點仍光照看不清，精確孔寬/深度須raw。",
+      "result": "visible_state_consistent; presentation limits identified"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-26-mesh-measured.png",
+      "steps": [
+        "05-03"
+      ],
+      "references": [
+        "05-03.operationRun.events[25].figure.path"
+      ],
+      "exists": true,
+      "sha256": "fbca8f4f712b57feada96bff953b81de1146f9678c656383e519fe0e3b83fb8f",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 39,
+      "observed": "Plate六孔頂視，N96/26/4，沒有獨立的量測視窗；幾乎同存檔圖。",
+      "limitations": "事件正確稱從網格量測；六孔精度、射線、凹點數不由本截圖顯示，須measurement JSON。",
+      "result": "visible_state_consistent; presentation limits identified"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-27-open-dialog.png",
+      "steps": [
+        "05-03"
+      ],
+      "references": [
+        "05-03.operationRun.events[26].figure.path"
+      ],
+      "exists": true,
+      "sha256": "4219c8d2e151e80af25cdf338ee8fcf3f0e35e54cced1943d9ad24c90216c9a6",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 40,
+      "observed": "Open u05_hole_plate_v001.blend148KiB、底部同名與Open按鈕。",
+      "limitations": "完整路徑省略，檔案hash須讀值。",
+      "result": "visible_state_consistent; presentation limits identified"
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-28-reopened-verified.png",
+      "steps": [
+        "05-03"
+      ],
+      "references": [
+        "05-03.operationRun.events[27].figure.path"
+      ],
+      "exists": true,
+      "sha256": "c095e81a5bd43caf63f7784f6a31dca1223ccad7892a7c82113009cd59d64479",
+      "viewed": true,
+      "method": "view_image original file",
+      "index": 41,
+      "observed": "重開六孔Plate同外觀，96/26/4、Scale1、無modifier，Cutters隱藏。",
+      "limitations": "不能從本圖認定實體間隙合格；紀錄亦明留試驗點。",
+      "result": "visible_state_consistent; presentation limits identified"
+    }
+  ]
+}

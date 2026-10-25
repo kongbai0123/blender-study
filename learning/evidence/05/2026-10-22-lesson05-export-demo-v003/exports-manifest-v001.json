@@ -1,0 +1,140 @@
+{
+  "run": "2026-10-22-lesson05-export-demo-v003",
+  "sceneVersionsUnchanged": true,
+  "outputVersion": "v001",
+  "stlUnitInterpretation": "STL is unitless; exported coordinate values interpreted as millimetres",
+  "exports": [
+    {
+      "kind": "pin",
+      "source_scene_path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\05\\2026-10-22-lesson05-demo-v002\\demo-files\\u05_fit_coupon_v001.blend",
+      "source_scene_sha256": "c2f3edd915324ba66bbd3fb8c6ad1ea0214a539f74cbc732e37adc35f7325162",
+      "opened_scene_path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\05\\2026-10-22-lesson05-export-demo-v003\\demo-files\\sources\\u05_fit_coupon_v001.blend",
+      "opened_scene_sha256": "c2f3edd915324ba66bbd3fb8c6ad1ea0214a539f74cbc732e37adc35f7325162",
+      "opened_copy_unchanged": true,
+      "source_unchanged": true,
+      "source_object": "FitPin",
+      "source_dimensions_mm": [
+        10,
+        10,
+        8
+      ],
+      "stl_path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\05\\2026-10-22-lesson05-export-demo-v003\\demo-files\\exports\\u05_fit_coupon_v001.stl",
+      "stl_sha256": "bc10342c54a94d87c15eccb050fb9b30a7ae00bf4079d4c7869ac53d199db784",
+      "stl_bytes": 684,
+      "stl_dimensions_mm": [
+        10.0,
+        10.0,
+        8.0
+      ],
+      "stl_triangles": 12,
+      "stl_non_manifold_edges": 0,
+      "stl_connected_shells": 1,
+      "stl_genus": 0,
+      "stl_volume_mm3": 800.0,
+      "stl_verification_path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\05\\2026-10-22-lesson05-export-demo-v003\\pin-stl-verification.json",
+      "only_selected": true,
+      "global_scale": 1.0,
+      "use_scene_unit": false,
+      "apply_modifiers": true,
+      "forward_axis": "Y",
+      "up_axis": "Z",
+      "ascii_format": false,
+      "use_batch": false,
+      "evaluation_mode": "DAG_EVAL_RENDER",
+      "stl_reimport_verified": true,
+      "stl_reimport_dimensions_mm": [
+        10.000000474974513,
+        10.000000474974513,
+        8.00000037997961
+      ],
+      "stl_reimport_non_manifold_edges": 0,
+      "stl_reimport_object": "u05_fit_coupon_v001"
+    },
+    {
+      "kind": "hole_plate",
+      "source_scene_path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\05\\2026-10-22-lesson05-holes-demo-v002\\demo-files\\u05_hole_plate_v001.blend",
+      "source_scene_sha256": "10bfffd651d1583d8704164288aa0757fa617f67a30e21176d7fc892aef3e692",
+      "opened_scene_path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\05\\2026-10-22-lesson05-export-demo-v003\\demo-files\\sources\\u05_hole_plate_v001.blend",
+      "opened_scene_sha256": "10bfffd651d1583d8704164288aa0757fa617f67a30e21176d7fc892aef3e692",
+      "opened_copy_unchanged": true,
+      "source_unchanged": true,
+      "source_object": "Plate",
+      "source_dimensions_mm": [
+        96,
+        26,
+        4
+      ],
+      "stl_path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\05\\2026-10-22-lesson05-export-demo-v003\\demo-files\\exports\\u05_hole_plate_v001.stl",
+      "stl_sha256": "8105d1ebdc04ed12a2b7f98cc3b728db74063c453961c33d165ac50e694c7c8b",
+      "stl_bytes": 142784,
+      "stl_dimensions_mm": [
+        96.0,
+        26.0,
+        4.0
+      ],
+      "stl_triangles": 2854,
+      "stl_non_manifold_edges": 0,
+      "stl_connected_shells": 1,
+      "stl_genus": 6,
+      "stl_volume_mm3": 7393.4816018394295,
+      "stl_verification_path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\05\\2026-10-22-lesson05-export-demo-v003\\hole_plate-stl-verification.json",
+      "only_selected": true,
+      "global_scale": 1.0,
+      "use_scene_unit": false,
+      "apply_modifiers": true,
+      "forward_axis": "Y",
+      "up_axis": "Z",
+      "ascii_format": false,
+      "use_batch": false,
+      "evaluation_mode": "DAG_EVAL_RENDER",
+      "stl_hole_widths_mm": [
+        [
+          10.1000061,
+          10.099999
+        ],
+        [
+          10.2000008,
+          10.1999989
+        ],
+        [
+          10.2999954,
+          10.2999992
+        ],
+        [
+          10.3999996,
+          10.3999987
+        ],
+        [
+          10.5000019,
+          10.4999995
+        ],
+        [
+          10.5999985,
+          10.5999999
+        ]
+      ],
+      "stl_through_holes": 6,
+      "stl_marker_counts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "stl_reimport_verified": true,
+      "stl_reimport_dimensions_mm": [
+        96.00000455975533,
+        26.000001234933734,
+        4.000000189989805
+      ],
+      "stl_reimport_non_manifold_edges": 0,
+      "stl_reimport_object": "u05_hole_plate_v001"
+    }
+  ],
+  "printed": false,
+  "fit_tested": false,
+  "physical_measurements": null,
+  "fit_results": null,
+  "qualified_clearance_mm": null
+}

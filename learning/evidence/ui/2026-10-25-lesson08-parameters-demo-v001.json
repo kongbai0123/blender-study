@@ -1,0 +1,63 @@
+{
+  "recordedAt": "2026-10-25T12:34:51.104121+00:00",
+  "url": "http://127.0.0.1:8766/",
+  "browser": "ChatGPT in-app browser",
+  "lesson": "08",
+  "step": "08-01",
+  "captureMethod": "Browser getScreenshot original JPEG bytes; no pixel modifications",
+  "screenshots": [
+    {
+      "path": "learning/evidence/ui/2026-10-25-lesson08-parameters-demo-v001-final-overview.jpg",
+      "sha256": "66f1a755727b0ad9725a417df082cbd9aa3b98858280d891281bc7075bbd8e78",
+      "bytes": 38754,
+      "width": 304,
+      "height": 848,
+      "pixelEdits": false,
+      "role": "overview"
+    },
+    {
+      "path": "learning/evidence/ui/2026-10-25-lesson08-parameters-demo-v001-final-parameters.jpg",
+      "sha256": "45cc1ddcdb9b617f3313940b37e27cb9470a6472c0a43b0350a4e70617412021",
+      "bytes": 31192,
+      "width": 304,
+      "height": 848,
+      "pixelEdits": false,
+      "role": "parameters"
+    },
+    {
+      "path": "learning/evidence/ui/2026-10-25-lesson08-parameters-demo-v001-final-conditions.jpg",
+      "sha256": "4b27d1ec9bf6bfe3ab164fbac62e85950dab191c0a3af2d24eedef4789702d49",
+      "bytes": 43986,
+      "width": 304,
+      "height": 848,
+      "pixelEdits": false,
+      "role": "conditions"
+    },
+    {
+      "path": "learning/evidence/ui/2026-10-25-lesson08-parameters-demo-v001-final-mapping.jpg",
+      "sha256": "d1dfe1b93d22c05f4c206f73ae70165817c1cc1400b99c05a89bf62815717dfb",
+      "bytes": 44123,
+      "width": 304,
+      "height": 848,
+      "pixelEdits": false,
+      "role": "mapping"
+    }
+  ],
+  "sourceFiles": [
+    {
+      "path": "learning/catalog.json",
+      "sha256": "0a29b9dd84ebae47a2da5111bab573d74a1a5002cce4b2b800f0ecc93f7d2cbb"
+    },
+    {
+      "path": "learning/web/app.js",
+      "sha256": "93cba9047280d96bf63241431c6b147f2a7a5b976ba71a1201df89bd4d77b361"
+    },
+    {
+      "path": "learning/web/app.css",
+      "sha256": "554a7880717cdcc15f7f95510c9fd4e75c20f606b4236eecf2949288a1e34b00"
+    }
+  ],
+  "learnerCompletionConfirmed": false,
+  "progressRevision": 5,
+  "progressSha256": "d92e4f2ee78a1cf41386816b8616bf635b89fb25f8bfd813ac00cd20ed20b4ef"
+}

@@ -1,0 +1,781 @@
+{
+  "schema_version": 1,
+  "run": "2026-10-25-lesson06-dovetail-export-demo-v001",
+  "run_version": "v001",
+  "stl_version": "v001",
+  "recorded_on": "2026-10-25",
+  "timezone": "Asia/Taipei",
+  "performed_by": "tutor",
+  "completion_scope": "06-03 dovetail Body and SlidingLid STL native UI exports plus binary-file and actual UI reimport CAD checks only; no locating-tenon STL, Overhang UI analysis, bed arrangement, slicing, printing or physical fit",
+  "source_scene": {
+    "path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\06\\2026-10-25-lesson06-dovetail-demo-v002\\demo-files\\u06_dovetail_slide_v001.blend",
+    "sha256": "b7da592c4b080163566cb6e1a90390832eae6db8421fbf7be23bfb9071ae0c3e",
+    "bytes": 106782,
+    "version": "v001",
+    "source_run": "2026-10-25-lesson06-dovetail-demo-v002",
+    "unchanged": true,
+    "prior_verification": {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/verification.json",
+      "sha256": "47ebb57ad00e006d989c65883bea6db7423aed777f216694047b5799a7dbf754",
+      "bytes": 58221
+    }
+  },
+  "opened_source_copy": {
+    "path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\06\\2026-10-25-lesson06-dovetail-export-demo-v001\\demo-files\\sources\\u06_dovetail_slide_v001.blend",
+    "sha256": "b7da592c4b080163566cb6e1a90390832eae6db8421fbf7be23bfb9071ae0c3e",
+    "bytes": 106782,
+    "unchanged": true,
+    "copy_of": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\06\\2026-10-25-lesson06-dovetail-demo-v002\\demo-files\\u06_dovetail_slide_v001.blend",
+    "is_new_checkpoint": false
+  },
+  "saved_new_scene": false,
+  "new_scene_checkpoint": null,
+  "exports": [
+    {
+      "kind": "body",
+      "source_object": "Body",
+      "selected_names": [
+        "Body"
+      ],
+      "source_scene_path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\06\\2026-10-25-lesson06-dovetail-demo-v002\\demo-files\\u06_dovetail_slide_v001.blend",
+      "source_scene_sha256": "b7da592c4b080163566cb6e1a90390832eae6db8421fbf7be23bfb9071ae0c3e",
+      "opened_scene_path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\06\\2026-10-25-lesson06-dovetail-export-demo-v001\\demo-files\\sources\\u06_dovetail_slide_v001.blend",
+      "opened_scene_sha256": "b7da592c4b080163566cb6e1a90390832eae6db8421fbf7be23bfb9071ae0c3e",
+      "version": "v001",
+      "production_method": "Blender native File > Export > STL through independent-instance UI events",
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/demo-files/exports/u06_dovetail_body_v001.stl",
+      "sha256": "747e6186876f0e00c5c0617f0631de890a610696e42a930d5f7a0452f8ab4586",
+      "bytes": 6284,
+      "export_options": {
+        "only_selected": true,
+        "global_scale": 1.0,
+        "use_scene_unit": false,
+        "apply_modifiers": true,
+        "forward_axis": "Y",
+        "up_axis": "Z",
+        "ascii_format": false,
+        "use_batch": false,
+        "evaluation_mode": "DAG_EVAL_RENDER"
+      },
+      "import_options": {
+        "global_scale": 1.0,
+        "use_scene_unit": false,
+        "forward_axis": "Y",
+        "up_axis": "Z"
+      },
+      "reimport_object": "Body_STL",
+      "stl_unit_interpretation": "STL is unitless; exported coordinate values interpreted as millimetres; original world coordinates retained",
+      "stl_verification_exported_stl": true,
+      "triangle_count": 124,
+      "dimensions_mm": [
+        60.0,
+        40.0,
+        30.0
+      ],
+      "bounds_mm": {
+        "min": [
+          -30.0,
+          -20.0,
+          -15.0
+        ],
+        "max": [
+          30.0,
+          20.0,
+          15.0
+        ]
+      },
+      "volume_mm3": 16655.36032775877,
+      "non_manifold_edges": 0,
+      "connected_shells": 1,
+      "genus": 0,
+      "geometry_readback_summary": {
+        "channels": [
+          {
+            "centre_y_mm": -17.0,
+            "x_mm": [
+              -30,
+              30
+            ],
+            "profile": {
+              "z_mm": [
+                11.800000190734863,
+                15.0
+              ],
+              "widths_mm": [
+                3.599998474121092,
+                2.319999694824217
+              ],
+              "side_slope_abs": 0.199999821186055,
+              "side_planes": [
+                {
+                  "side": "negative_y",
+                  "slope_z": -0.199999821186055,
+                  "offset_mm": -21.159997165202935,
+                  "equation": "y + slope_z*z = offset_mm",
+                  "bounds_mm": {
+                    "min": [
+                      -30.0,
+                      -18.799999237060547,
+                      11.800000190734863
+                    ],
+                    "max": [
+                      30.0,
+                      -18.15999984741211,
+                      15.0
+                    ]
+                  },
+                  "area_mm2": 195.8023309181232,
+                  "triangle_count": 4
+                },
+                {
+                  "side": "positive_y",
+                  "slope_z": 0.199999821186055,
+                  "offset_mm": -12.840002834797067,
+                  "equation": "y + slope_z*z = offset_mm",
+                  "bounds_mm": {
+                    "min": [
+                      -30.0,
+                      -15.84000015258789,
+                      11.800000190734863
+                    ],
+                    "max": [
+                      30.0,
+                      -15.200000762939453,
+                      15.0
+                    ]
+                  },
+                  "area_mm2": 195.8023309181232,
+                  "triangle_count": 4
+                }
+              ]
+            },
+            "open_ends": true
+          },
+          {
+            "centre_y_mm": 17.0,
+            "x_mm": [
+              -30,
+              30
+            ],
+            "profile": {
+              "z_mm": [
+                11.800000190734863,
+                15.0
+              ],
+              "widths_mm": [
+                3.59999942779541,
+                2.3199996948242188
+              ],
+              "side_slope_abs": 0.19999997019767585,
+              "side_planes": [
+                {
+                  "side": "negative_y",
+                  "slope_z": -0.20000011920929667,
+                  "offset_mm": 12.83999836444844,
+                  "equation": "y + slope_z*z = offset_mm",
+                  "bounds_mm": {
+                    "min": [
+                      -30.0,
+                      15.199999809265137,
+                      11.800000190734863
+                    ],
+                    "max": [
+                      30.0,
+                      15.84000015258789,
+                      15.0
+                    ]
+                  },
+                  "area_mm2": 195.80234213997684,
+                  "triangle_count": 4
+                },
+                {
+                  "side": "positive_y",
+                  "slope_z": 0.199999821186055,
+                  "offset_mm": 21.159997165202935,
+                  "equation": "y + slope_z*z = offset_mm",
+                  "bounds_mm": {
+                    "min": [
+                      -30.0,
+                      18.15999984741211,
+                      11.800000190734863
+                    ],
+                    "max": [
+                      30.0,
+                      18.799999237060547,
+                      15.0
+                    ]
+                  },
+                  "area_mm2": 195.8023309181232,
+                  "triangle_count": 4
+                }
+              ]
+            },
+            "open_ends": true
+          }
+        ],
+        "local_cavity_width_mm": 28.0,
+        "min_guide_ligament_mm": 1.200000286102295,
+        "channel_floor_web_mm": 1.8000001907348633
+      },
+      "source_measurement_compared": [
+        "dimensions_mm",
+        "bounds_mm",
+        "volume_mm3",
+        "topology",
+        "channels",
+        "actual_axis_planes",
+        "vertical_rays",
+        "min_guide_ligament_mm",
+        "channel_floor_web_mm",
+        "local_cavity_width_mm",
+        "rim_z_mm",
+        "original_shell_dimensions_mm",
+        "original_lower_cavity_dimensions_mm",
+        "full_length_entry_proof",
+        "assembly_actual_clearances"
+      ],
+      "source_match_method": "actual profile/plane positions, areas, bounds, material rays and volume; independent of triangle indexing/triangulation",
+      "reimport_verified": true,
+      "reimport_dimensions_mm": [
+        60.0,
+        40.0,
+        30.0
+      ],
+      "reimport_bounds_mm": {
+        "min": [
+          -30.0,
+          -20.0,
+          -15.0
+        ],
+        "max": [
+          30.0,
+          20.0,
+          15.0
+        ]
+      },
+      "reimport_volume_mm3": 16655.36032775877,
+      "reimport_mesh_counts": {
+        "vertices": 64,
+        "edges": 186,
+        "faces": 124,
+        "triangles": 124,
+        "representation": "world-space triangulated mesh"
+      }
+    },
+    {
+      "kind": "lid",
+      "source_object": "SlidingLid",
+      "selected_names": [
+        "SlidingLid"
+      ],
+      "source_scene_path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\06\\2026-10-25-lesson06-dovetail-demo-v002\\demo-files\\u06_dovetail_slide_v001.blend",
+      "source_scene_sha256": "b7da592c4b080163566cb6e1a90390832eae6db8421fbf7be23bfb9071ae0c3e",
+      "opened_scene_path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\06\\2026-10-25-lesson06-dovetail-export-demo-v001\\demo-files\\sources\\u06_dovetail_slide_v001.blend",
+      "opened_scene_sha256": "b7da592c4b080163566cb6e1a90390832eae6db8421fbf7be23bfb9071ae0c3e",
+      "version": "v001",
+      "production_method": "Blender native File > Export > STL through independent-instance UI events",
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/demo-files/exports/u06_dovetail_lid_v001.stl",
+      "sha256": "436597611a951ead9878cb330bda8a4a306f014cb70183c894987666113ee713",
+      "bytes": 3484,
+      "export_options": {
+        "only_selected": true,
+        "global_scale": 1.0,
+        "use_scene_unit": false,
+        "apply_modifiers": true,
+        "forward_axis": "Y",
+        "up_axis": "Z",
+        "ascii_format": false,
+        "use_batch": false,
+        "evaluation_mode": "DAG_EVAL_RENDER"
+      },
+      "import_options": {
+        "global_scale": 1.0,
+        "use_scene_unit": false,
+        "forward_axis": "Y",
+        "up_axis": "Z"
+      },
+      "reimport_object": "SlidingLid_STL",
+      "stl_unit_interpretation": "STL is unitless; exported coordinate values interpreted as millimetres; original world coordinates retained",
+      "stl_verification_exported_stl": true,
+      "triangle_count": 68,
+      "dimensions_mm": [
+        60.0,
+        40.0,
+        5.200000762939453
+      ],
+      "bounds_mm": {
+        "min": [
+          -30.0,
+          -20.0,
+          12.0
+        ],
+        "max": [
+          30.0,
+          20.0,
+          17.200000762939453
+        ]
+      },
+      "volume_mm3": 5752.3201428222455,
+      "non_manifold_edges": 0,
+      "connected_shells": 1,
+      "genus": 0,
+      "geometry_readback_summary": {
+        "plate_dimensions_mm": [
+          60,
+          40,
+          2.0
+        ],
+        "plate_z_mm": [
+          15.200000762939453,
+          17.200000762939453
+        ],
+        "exposed_male_depth_mm": 3.200000762939453,
+        "male_ribs": [
+          {
+            "centre_y_mm": -17.0,
+            "x_mm": [
+              -30,
+              30
+            ],
+            "profile": {
+              "z_mm": [
+                12.0,
+                15.200000762939453
+              ],
+              "widths_mm": [
+                3.1200027465820312,
+                1.8400001525878906
+              ],
+              "side_slope_abs": 0.2000003576277834,
+              "side_planes": [
+                {
+                  "side": "negative_y",
+                  "slope_z": -0.2000003576277834,
+                  "offset_mm": -20.960005664824415,
+                  "equation": "y + slope_z*z = offset_mm",
+                  "bounds_mm": {
+                    "min": [
+                      -30.0,
+                      -18.560001373291016,
+                      12.0
+                    ],
+                    "max": [
+                      30.0,
+                      -17.920000076293945,
+                      15.200000762939453
+                    ]
+                  },
+                  "area_mm2": 195.80240947111875,
+                  "triangle_count": 2
+                },
+                {
+                  "side": "positive_y",
+                  "slope_z": 0.2000003576277834,
+                  "offset_mm": -13.039994335175583,
+                  "equation": "y + slope_z*z = offset_mm",
+                  "bounds_mm": {
+                    "min": [
+                      -30.0,
+                      -16.079999923706055,
+                      12.0
+                    ],
+                    "max": [
+                      30.0,
+                      -15.439998626708984,
+                      15.200000762939453
+                    ]
+                  },
+                  "area_mm2": 195.80240947111875,
+                  "triangle_count": 2
+                }
+              ]
+            }
+          },
+          {
+            "centre_y_mm": 17.0,
+            "x_mm": [
+              -30,
+              30
+            ],
+            "profile": {
+              "z_mm": [
+                12.0,
+                15.200000762939453
+              ],
+              "widths_mm": [
+                3.119999885559082,
+                1.839996337890625
+              ],
+              "side_slope_abs": 0.2000005066393598,
+              "side_planes": [
+                {
+                  "side": "negative_y",
+                  "slope_z": -0.2000006556509362,
+                  "offset_mm": 13.039991712572066,
+                  "equation": "y + slope_z*z = offset_mm",
+                  "bounds_mm": {
+                    "min": [
+                      -30.0,
+                      15.4399995803833,
+                      12.0
+                    ],
+                    "max": [
+                      30.0,
+                      16.080001831054688,
+                      15.200000762939453
+                    ]
+                  },
+                  "area_mm2": 195.80242069300135,
+                  "triangle_count": 2
+                },
+                {
+                  "side": "positive_y",
+                  "slope_z": 0.2000003576277834,
+                  "offset_mm": 20.960003757475782,
+                  "equation": "y + slope_z*z = offset_mm",
+                  "bounds_mm": {
+                    "min": [
+                      -30.0,
+                      17.919998168945312,
+                      12.0
+                    ],
+                    "max": [
+                      30.0,
+                      18.559999465942383,
+                      15.200000762939453
+                    ]
+                  },
+                  "area_mm2": 195.80240947111875,
+                  "triangle_count": 2
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "source_measurement_compared": [
+        "dimensions_mm",
+        "bounds_mm",
+        "volume_mm3",
+        "topology",
+        "male_ribs",
+        "actual_axis_planes",
+        "vertical_rays",
+        "plate_dimensions_mm",
+        "plate_z_mm",
+        "exposed_male_depth_mm",
+        "assembly_actual_clearances"
+      ],
+      "source_match_method": "actual profile/plane positions, areas, bounds, material rays and volume; independent of triangle indexing/triangulation",
+      "reimport_verified": true,
+      "reimport_dimensions_mm": [
+        60.0,
+        40.0,
+        5.200000762939453
+      ],
+      "reimport_bounds_mm": {
+        "min": [
+          -30.0,
+          -20.0,
+          12.0
+        ],
+        "max": [
+          30.0,
+          20.0,
+          17.200000762939453
+        ]
+      },
+      "reimport_volume_mm3": 5752.3201428222455,
+      "reimport_mesh_counts": {
+        "vertices": 36,
+        "edges": 102,
+        "faces": 68,
+        "triangles": 68,
+        "representation": "world-space triangulated mesh"
+      }
+    }
+  ],
+  "geometry_evidence": [
+    {
+      "role": "source_body",
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/source_body_mesh.json",
+      "sha256": "5784246ccc9ff4d1dcab5414fde1186a44855c5b5ed9635a3d38691fd3e812eb",
+      "bytes": 10227,
+      "coordinate_space": "world-space millimetres",
+      "vertices": 64,
+      "triangles": 124,
+      "cad_metadata": {
+        "object_name": "Body",
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "unit_scale": 0.0010000000474974513,
+        "length_unit": "MILLIMETERS",
+        "measurement_source": "evaluated final mesh loop triangles in world-space millimetres",
+        "modifier_count": 0,
+        "object_location_mm": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "role": "source_lid",
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/source_lid_mesh.json",
+      "sha256": "e8e796e8c63402966fbf51963544ebd1bc77027230b3b077390cecb8f59ade9b",
+      "bytes": 6311,
+      "coordinate_space": "world-space millimetres",
+      "vertices": 36,
+      "triangles": 68,
+      "cad_metadata": {
+        "object_name": "SlidingLid",
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "unit_scale": 0.0010000000474974513,
+        "length_unit": "MILLIMETERS",
+        "measurement_source": "evaluated final mesh loop triangles in world-space millimetres",
+        "modifier_count": 0,
+        "object_location_mm": [
+          0.0,
+          0.0,
+          16.200000762939453
+        ]
+      }
+    },
+    {
+      "role": "reimport_body",
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/reimport_body_mesh.json",
+      "sha256": "58a546be74e16177d5d5056d9909b15b56a8601e39ac2606b0d54b876f7b5f7b",
+      "bytes": 10224,
+      "coordinate_space": "world-space millimetres",
+      "vertices": 64,
+      "triangles": 124,
+      "cad_metadata": {
+        "object_name": "Body_STL",
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "unit_scale": 0.0010000000474974513,
+        "length_unit": "MILLIMETERS",
+        "measurement_source": "evaluated final mesh loop triangles in world-space millimetres",
+        "modifier_count": 0,
+        "object_location_mm": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "role": "reimport_lid",
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/reimport_lid_mesh.json",
+      "sha256": "e59cafe99f5cc5e6b01530544531d390edc2d6b99eb78b671fe5b646fbf9558a",
+      "bytes": 6291,
+      "coordinate_space": "world-space millimetres",
+      "vertices": 36,
+      "triangles": 68,
+      "cad_metadata": {
+        "object_name": "SlidingLid_STL",
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "unit_scale": 0.0010000000474974513,
+        "length_unit": "MILLIMETERS",
+        "measurement_source": "evaluated final mesh loop triangles in world-space millimetres",
+        "modifier_count": 0,
+        "object_location_mm": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    }
+  ],
+  "source_snapshot_manifest": {
+    "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/source-snapshot/manifest.json",
+    "sha256": "cb22638c6c16008d7cbef12ab769a5e6c776f0e843f9e144c66e070e5581e365",
+    "bytes": 2429
+  },
+  "script_snapshots": [
+    {
+      "source": "learning/tutor/run_demo.py",
+      "snapshot": "source-snapshot/run_demo.py",
+      "sha256": "8a0afa081716cab276c99fc811f6a2453ac82f45b28d8a0b1c639eef67347058",
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/source-snapshot/run_demo.py",
+      "bytes": 11779
+    },
+    {
+      "source": "learning/tutor/blender_demo.py",
+      "snapshot": "source-snapshot/blender_demo.py",
+      "sha256": "96321d8180b1e05a9b77d47551adefbf43ddd04e6add2505eca3b30ceb831a6c",
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/source-snapshot/blender_demo.py",
+      "bytes": 7140
+    },
+    {
+      "source": "learning/tutor/scenarios/common.py",
+      "snapshot": "source-snapshot/common.py",
+      "sha256": "45044c48522bf5a2dee130382f902a07243e82027addaf6594cbae59b3369c3d",
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/source-snapshot/common.py",
+      "bytes": 11133
+    },
+    {
+      "source": "learning/tutor/scenarios/lesson06_dovetail_export.py",
+      "snapshot": "source-snapshot/lesson06_dovetail_export.py",
+      "sha256": "11aa6b1e14a27e7f6784f451ecdbacb9e51342c827d9e8f95d732acf0ff7682f",
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/source-snapshot/lesson06_dovetail_export.py",
+      "bytes": 19644
+    },
+    {
+      "source": "learning/tutor/scenarios/lid_checks.py",
+      "snapshot": "source-snapshot/lid_checks.py",
+      "sha256": "b2e2438126695cca24cb560dce046ca743c2de2c348116141ff6ed75c42e52c3",
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/source-snapshot/lid_checks.py",
+      "bytes": 17073
+    },
+    {
+      "source": "learning/tutor/scenarios/tenon_checks.py",
+      "snapshot": "source-snapshot/tenon_checks.py",
+      "sha256": "4defe55d142ac78be924cef8d82abc3bd24bd2db6f380332eb29cb5b0d89d13d",
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/source-snapshot/tenon_checks.py",
+      "bytes": 24591
+    },
+    {
+      "source": "learning/tutor/scenarios/dovetail_checks.py",
+      "snapshot": "source-snapshot/dovetail_checks.py",
+      "sha256": "d3baee5fdae4682de29585daf0200932267643579bbc94fe41e129f8a56cdad2",
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/source-snapshot/dovetail_checks.py",
+      "bytes": 18172
+    },
+    {
+      "source": "learning/tutor/scenarios/stl_checks.py",
+      "snapshot": "source-snapshot/stl_checks.py",
+      "sha256": "36f09e213a7759a95ea07cee1f70fbaaaf2287551b9c97d9308778a658fe922c",
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/source-snapshot/stl_checks.py",
+      "bytes": 18473
+    },
+    {
+      "source": "learning/tutor/scenarios/dovetail_stl_checks.py",
+      "snapshot": "source-snapshot/dovetail_stl_checks.py",
+      "sha256": "d91865140e13b531d5988867bb10e0708fe2403be5060c8f6dcb1ea67f35d483",
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/source-snapshot/dovetail_stl_checks.py",
+      "bytes": 11155
+    }
+  ],
+  "operation_evidence": {
+    "run": {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/run.json",
+      "sha256": "5216bcbd1be8195611205d5c561f437e8d4700bdd31977bc27e7b0d346cd7a11",
+      "bytes": 19324
+    },
+    "verification": {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/verification.json",
+      "sha256": "3e2e525ddbd01ba2101c431f76bd490df84374afbaa518b880d87e1ed9f47330",
+      "bytes": 100114
+    },
+    "runner": {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/runner-status.json",
+      "sha256": "78309fc65956d1635adb494dc6fa16a31ef88f1c1741fb598389be60ff98c868",
+      "bytes": 54105
+    },
+    "source_geometry_verification": {
+      "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/source-geometry-verification.json",
+      "sha256": "7243cb5adf21af3afff4101a761e7a52b394896f36352da3aae5b077550844f6",
+      "bytes": 25212
+    },
+    "original_png_count": 25,
+    "original_png_hashes_and_dimensions_match_run": true,
+    "pixel_edits": false,
+    "reimport_scene": "New empty Metric / Millimeters / Unit Scale 0.001 scene; Body_STL and SlidingLid_STL together, not saved"
+  },
+  "assembly_readback_summaries": {
+    "source_assembly": {
+      "horizontal_side_gap_mm": 0.19999793767925667,
+      "normal_side_gap_mm": 0.19611411961014766,
+      "bottom_gap_mm": 0.19999980926513672,
+      "plate_rim_gap_mm": 0.20000076293945312,
+      "retained_vertical_overlap_mm": 3.0,
+      "geometric_nonintersection": true
+    },
+    "stl_assembly": {
+      "horizontal_side_gap_mm": 0.19999793767925667,
+      "normal_side_gap_mm": 0.19611411961014766,
+      "bottom_gap_mm": 0.19999980926513672,
+      "plate_rim_gap_mm": 0.20000076293945312,
+      "retained_vertical_overlap_mm": 3.0,
+      "geometric_nonintersection": true
+    },
+    "reimport_assembly": {
+      "horizontal_side_gap_mm": 0.19999793767925667,
+      "normal_side_gap_mm": 0.19611411961014766,
+      "bottom_gap_mm": 0.19999980926513672,
+      "plate_rim_gap_mm": 0.20000076293945312,
+      "retained_vertical_overlap_mm": 3.0,
+      "geometric_nonintersection": true
+    }
+  },
+  "nominal_trial": {
+    "status": "experimental_geometry_only",
+    "selected_by": "tutor",
+    "horizontal_total_clearance_mm": 0.4,
+    "horizontal_side_clearance_mm": 0.2,
+    "qualified_clearance_mm": null
+  },
+  "numeric_comparison": {
+    "dimensionsAbsMm": 0.0001,
+    "volumeRelative": 1e-05,
+    "purpose": "Floating point reconstruction only; not manufacturing tolerance or physical fit acceptance"
+  },
+  "numeric_comparison_note": "Floating point reconstruction only; 1e-4 mm dimensions and volume-relative 1e-5 are not manufacturing tolerances or acceptance limits.",
+  "world_coordinate_note": "STL contains no unit declaration; numerical coordinates are interpreted as millimetres. Body Z=-15..15 and lid Z=12..17.200000762939453 are preserved. No bed translation or print orientation has been checked.",
+  "workspace_check": {
+    "unchanged": true,
+    "snapshot_encoding": "SHA-256 of UTF-8 JSON, sorted keys, compact separators, ensure_ascii=false",
+    "snapshot_sha256_before": "4ad6905b1cef7594ff1bfed45b81e7794fdbf128011df09b4686bdb44d0a7d2f",
+    "snapshot_sha256_after": "4ad6905b1cef7594ff1bfed45b81e7794fdbf128011df09b4686bdb44d0a7d2f",
+    "directory_entries": 11,
+    "file_entries": 0,
+    "changes": []
+  },
+  "progress_baseline": {
+    "revision": 5,
+    "sha256": "d92e4f2ee78a1cf41386816b8616bf635b89fb25f8bfd813ac00cd20ed20b4ef",
+    "modified": false
+  },
+  "journal": "learning/journal/2026-10-25-lesson06-dovetail-export-demo-v001.md",
+  "validation_checks": {
+    "pure_actual_import_validation_passed": true,
+    "original_png_integrity_checked": 25,
+    "raw_mesh_count": 4,
+    "script_snapshot_count": 9,
+    "related_importer_tests_passed": 80,
+    "reported_final_tutor_tests": {
+      "run": 155,
+      "passed": 154,
+      "skipped": 1
+    },
+    "reported_server_tests_passed": 17,
+    "reported_frontend_syntax_check_passed": true,
+    "publication_scope_note": "Formal catalog import, HTTP download and browser checks are recorded separately by the publishing agent; no publication claim here."
+  },
+  "exported_stl": true,
+  "locating_tenon_stl_exported_in_this_run": false,
+  "bed_arranged": false,
+  "mesh_analysis_overhang_checked": false,
+  "slicer_checked": false,
+  "printed": false,
+  "fit_tested": false,
+  "physical_measurements": null,
+  "fit_results": null,
+  "physical_interference": null,
+  "qualified_clearance_mm": null
+}

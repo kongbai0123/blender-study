@@ -1,0 +1,733 @@
+{
+  "schema_version": 1,
+  "passed": true,
+  "kind": "independent_coupon_stl_export_audit",
+  "audited_at": "2026-10-25T09:57:27.950800+00:00",
+  "run_dir": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\07\\2026-10-25-lesson07-coupon-export-demo-v001",
+  "audit_script_sha256": "3bb121c3951f5906ac8255d2434d20d461a900512903ad8c0cf50cb4b28afbda",
+  "audit_primitive_dependency_sha256": {
+    "audit_overhang.py": "d7542331badfc0babcacf47b94d80b28b7013790ec26f668aae090a544a9fb05"
+  },
+  "verification_sha256": "ec7f678e47fe410c3f10482d2f64baf88abcf83b1dd5f9597d7866227d5f200d",
+  "source_scene_sha256": "22072532eed0f6fcc506bb435ed8d65fcaeaef583ea41d90c4e8c9665b82e9b8",
+  "method": "Independent stdlib binary decoder, exact repeated-float welding, directed-edge topology, bidirectional complete oriented facet coverage and inverse Ry90/native-corner/length readback. No semantic geometry checker called.",
+  "parts": {
+    "A_L19": {
+      "binary": {
+        "sha256": "bb40b5f669601e11bc97d41f48e8a65552bfe99bb21645d47d359098c62af168",
+        "byte_size": 4084,
+        "triangle_count": 80,
+        "topology": {
+          "vertices": 42,
+          "triangles": 80,
+          "edges": 120,
+          "non_manifold_edges": 0,
+          "connected_shells": 1,
+          "euler_characteristic": 2,
+          "genus": 0,
+          "volume_mm3": 339.48476649747744,
+          "bounds_mm": {
+            "min": [
+              -1.500000238418579,
+              -14.300000190734863,
+              0.0
+            ],
+            "max": [
+              22.5,
+              -9.699999809265137,
+              9.0
+            ]
+          }
+        },
+        "coordinate_welding": "Exact repeated binary float triples; no manufacturing epsilon applied",
+        "stored_normal_diagnostics": {
+          "all_fields_finite": true,
+          "zero_length_count": 0,
+          "length_min_max": [
+            0.9999999407390309,
+            1.0000000727906733
+          ],
+          "maximum_unit_length_deviation": 7.27906732667094e-08,
+          "maximum_winding_angle_deg": 3.2313444213790654e-06,
+          "opposite_hemisphere_count": 0,
+          "scope": "Stored-normal diagnostics only; does not qualify printing, supports or strength"
+        }
+      },
+      "world_dimensions_mm": [
+        24.00000023841858,
+        4.600000381469727,
+        9.0
+      ],
+      "stl_vs_source": {
+        "passed": true,
+        "actual_topology": {
+          "vertices": 42,
+          "triangles": 80,
+          "edges": 120,
+          "non_manifold_edges": 0,
+          "connected_shells": 1,
+          "euler_characteristic": 2,
+          "genus": 0,
+          "volume_mm3": 339.48476649747744,
+          "bounds_mm": {
+            "min": [
+              -1.500000238418579,
+              -14.300000190734863,
+              0.0
+            ],
+            "max": [
+              22.5,
+              -9.699999809265137,
+              9.0
+            ]
+          }
+        },
+        "source_topology": {
+          "vertices": 42,
+          "triangles": 80,
+          "edges": 120,
+          "non_manifold_edges": 0,
+          "connected_shells": 1,
+          "euler_characteristic": 2,
+          "genus": 0,
+          "volume_mm3": 339.4847682164305,
+          "bounds_mm": {
+            "min": [
+              -1.500000238418579,
+              -14.300000190734863,
+              -6.556707887739321e-08
+            ],
+            "max": [
+              22.5,
+              -9.699999809265137,
+              9.0
+            ]
+          }
+        },
+        "actual_on_source": {
+          "tested_facets": 80,
+          "coplanar_triangle_pairs": 410,
+          "max_projected_area_difference_mm2": 5.72203589399578e-07,
+          "max_plane_distance_mm": 1.9073493922937866e-06
+        },
+        "source_on_actual": {
+          "tested_facets": 80,
+          "coplanar_triangle_pairs": 410,
+          "max_projected_area_difference_mm2": 1.096725483762384e-06,
+          "max_plane_distance_mm": 1.90735408190015e-06
+        },
+        "method": "Independent bidirectional full oriented facet intersection-area coverage; indexing and legal subdivision may differ"
+      },
+      "reimport_vs_stl": {
+        "passed": true,
+        "actual_topology": {
+          "vertices": 42,
+          "triangles": 80,
+          "edges": 120,
+          "non_manifold_edges": 0,
+          "connected_shells": 1,
+          "euler_characteristic": 2,
+          "genus": 0,
+          "volume_mm3": 339.48476649747744,
+          "bounds_mm": {
+            "min": [
+              -1.500000238418579,
+              -14.300000190734863,
+              0.0
+            ],
+            "max": [
+              22.5,
+              -9.699999809265137,
+              9.0
+            ]
+          }
+        },
+        "source_topology": {
+          "vertices": 42,
+          "triangles": 80,
+          "edges": 120,
+          "non_manifold_edges": 0,
+          "connected_shells": 1,
+          "euler_characteristic": 2,
+          "genus": 0,
+          "volume_mm3": 339.48476649747744,
+          "bounds_mm": {
+            "min": [
+              -1.500000238418579,
+              -14.300000190734863,
+              0.0
+            ],
+            "max": [
+              22.5,
+              -9.699999809265137,
+              9.0
+            ]
+          }
+        },
+        "actual_on_source": {
+          "tested_facets": 80,
+          "coplanar_triangle_pairs": 410,
+          "max_projected_area_difference_mm2": 0.0,
+          "max_plane_distance_mm": 1.907354064530766e-06
+        },
+        "source_on_actual": {
+          "tested_facets": 80,
+          "coplanar_triangle_pairs": 410,
+          "max_projected_area_difference_mm2": 0.0,
+          "max_plane_distance_mm": 1.907354064530766e-06
+        },
+        "method": "Independent bidirectional full oriented facet intersection-area coverage; indexing and legal subdivision may differ"
+      },
+      "candidate_pose_and_bed": {
+        "passed": true,
+        "geometric_L_mm": 19.0,
+        "actual_source_frame_bearing_z_mm": 11.0,
+        "actual_source_frame_root_z_mm": -8.0,
+        "maximum_inverse_native_corner_residual_mm": 1.3486991523486091e-06,
+        "native_source_corner_count": 42,
+        "minimum_world_z_mm": 0.0,
+        "bed_contact_triangle_count": 2,
+        "bed_contact_area_mm2": 13.80000114440918,
+        "raised_feature_heights": {
+          "straight_beam": {
+            "world_z_range_mm": [
+              1.4999990463256836,
+              7.5
+            ],
+            "all_samples_above_bed": true
+          },
+          "root_transition": {
+            "world_z_range_mm": [
+              0.9000000953674316,
+              8.100000381469727
+            ],
+            "all_samples_above_bed": true
+          },
+          "upper_hook": {
+            "world_z_range_mm": [
+              1.4999990463256836,
+              7.499999046325684
+            ],
+            "all_samples_above_bed": true
+          }
+        },
+        "support_required": null,
+        "effective_mechanical_length_mm": null
+      },
+      "source_object_axis_dimensions_mm": [
+        9.0,
+        4.599999904632568,
+        24.0
+      ],
+      "reimport_object_axis_dimensions_mm": [
+        24.0,
+        4.600000381469727,
+        9.0
+      ],
+      "export_operator_provenance": {
+        "operator_history_available": false,
+        "capture": "live File Browser before native confirmation"
+      },
+      "import_operator_provenance": {
+        "operator_history_available": false,
+        "capture": "live File Browser before native confirmation"
+      }
+    },
+    "B_L17": {
+      "binary": {
+        "sha256": "ac0f9ca920197544f7c47465901beb98059b69b99d5aa9ad88ac9d73d16d017a",
+        "byte_size": 4084,
+        "triangle_count": 80,
+        "topology": {
+          "vertices": 42,
+          "triangles": 80,
+          "edges": 120,
+          "non_manifold_edges": 0,
+          "connected_shells": 1,
+          "euler_characteristic": 2,
+          "genus": 0,
+          "volume_mm3": 320.2847191896239,
+          "bounds_mm": {
+            "min": [
+              -1.500000238418579,
+              -2.299999952316284,
+              0.0
+            ],
+            "max": [
+              20.5,
+              2.299999952316284,
+              9.0
+            ]
+          }
+        },
+        "coordinate_welding": "Exact repeated binary float triples; no manufacturing epsilon applied",
+        "stored_normal_diagnostics": {
+          "all_fields_finite": true,
+          "zero_length_count": 0,
+          "length_min_max": [
+            0.9999999120268496,
+            1.0000000644822367
+          ],
+          "maximum_unit_length_deviation": 8.797315043107545e-08,
+          "maximum_winding_angle_deg": 2.34494213643175e-06,
+          "opposite_hemisphere_count": 0,
+          "scope": "Stored-normal diagnostics only; does not qualify printing, supports or strength"
+        }
+      },
+      "world_dimensions_mm": [
+        22.00000023841858,
+        4.599999904632568,
+        9.0
+      ],
+      "stl_vs_source": {
+        "passed": true,
+        "actual_topology": {
+          "vertices": 42,
+          "triangles": 80,
+          "edges": 120,
+          "non_manifold_edges": 0,
+          "connected_shells": 1,
+          "euler_characteristic": 2,
+          "genus": 0,
+          "volume_mm3": 320.2847191896239,
+          "bounds_mm": {
+            "min": [
+              -1.500000238418579,
+              -2.299999952316284,
+              0.0
+            ],
+            "max": [
+              20.5,
+              2.299999952316284,
+              9.0
+            ]
+          }
+        },
+        "source_topology": {
+          "vertices": 42,
+          "triangles": 80,
+          "edges": 120,
+          "non_manifold_edges": 0,
+          "connected_shells": 1,
+          "euler_characteristic": 2,
+          "genus": 0,
+          "volume_mm3": 320.28472258068575,
+          "bounds_mm": {
+            "min": [
+              -1.500000238418579,
+              -2.299999952316284,
+              -6.556707887739321e-08
+            ],
+            "max": [
+              20.5,
+              2.299999952316284,
+              9.0
+            ]
+          }
+        },
+        "actual_on_source": {
+          "tested_facets": 80,
+          "coplanar_triangle_pairs": 410,
+          "max_projected_area_difference_mm2": 5.722037030864158e-07,
+          "max_plane_distance_mm": 1.9073470238191913e-06
+        },
+        "source_on_actual": {
+          "tested_facets": 80,
+          "coplanar_triangle_pairs": 410,
+          "max_projected_area_difference_mm2": 1.955032374212351e-06,
+          "max_plane_distance_mm": 3.072948011871198e-06
+        },
+        "method": "Independent bidirectional full oriented facet intersection-area coverage; indexing and legal subdivision may differ"
+      },
+      "reimport_vs_stl": {
+        "passed": true,
+        "actual_topology": {
+          "vertices": 42,
+          "triangles": 80,
+          "edges": 120,
+          "non_manifold_edges": 0,
+          "connected_shells": 1,
+          "euler_characteristic": 2,
+          "genus": 0,
+          "volume_mm3": 320.2847191896239,
+          "bounds_mm": {
+            "min": [
+              -1.500000238418579,
+              -2.299999952316284,
+              0.0
+            ],
+            "max": [
+              20.5,
+              2.299999952316284,
+              9.0
+            ]
+          }
+        },
+        "source_topology": {
+          "vertices": 42,
+          "triangles": 80,
+          "edges": 120,
+          "non_manifold_edges": 0,
+          "connected_shells": 1,
+          "euler_characteristic": 2,
+          "genus": 0,
+          "volume_mm3": 320.2847191896239,
+          "bounds_mm": {
+            "min": [
+              -1.500000238418579,
+              -2.299999952316284,
+              0.0
+            ],
+            "max": [
+              20.5,
+              2.299999952316284,
+              9.0
+            ]
+          }
+        },
+        "actual_on_source": {
+          "tested_facets": 80,
+          "coplanar_triangle_pairs": 410,
+          "max_projected_area_difference_mm2": 0.0,
+          "max_plane_distance_mm": 2.95373872232042e-06
+        },
+        "source_on_actual": {
+          "tested_facets": 80,
+          "coplanar_triangle_pairs": 410,
+          "max_projected_area_difference_mm2": 0.0,
+          "max_plane_distance_mm": 2.95373872232042e-06
+        },
+        "method": "Independent bidirectional full oriented facet intersection-area coverage; indexing and legal subdivision may differ"
+      },
+      "candidate_pose_and_bed": {
+        "passed": true,
+        "geometric_L_mm": 17.0,
+        "actual_source_frame_bearing_z_mm": 9.0,
+        "actual_source_frame_root_z_mm": -8.0,
+        "maximum_inverse_native_corner_residual_mm": 1.2672121301573098e-06,
+        "native_source_corner_count": 42,
+        "minimum_world_z_mm": 0.0,
+        "bed_contact_triangle_count": 2,
+        "bed_contact_area_mm2": 13.799999713897705,
+        "raised_feature_heights": {
+          "straight_beam": {
+            "world_z_range_mm": [
+              1.4999992847442627,
+              7.5
+            ],
+            "all_samples_above_bed": true
+          },
+          "root_transition": {
+            "world_z_range_mm": [
+              0.9000000953674316,
+              8.100000381469727
+            ],
+            "all_samples_above_bed": true
+          },
+          "upper_hook": {
+            "world_z_range_mm": [
+              1.4999990463256836,
+              7.499999046325684
+            ],
+            "all_samples_above_bed": true
+          }
+        },
+        "support_required": null,
+        "effective_mechanical_length_mm": null
+      },
+      "source_object_axis_dimensions_mm": [
+        9.0,
+        4.599999904632568,
+        22.0
+      ],
+      "reimport_object_axis_dimensions_mm": [
+        22.0,
+        4.599999904632568,
+        9.0
+      ],
+      "export_operator_provenance": {
+        "operator_history_available": false,
+        "capture": "live File Browser before native confirmation"
+      },
+      "import_operator_provenance": {
+        "operator_history_available": false,
+        "capture": "live File Browser before native confirmation"
+      }
+    },
+    "C_L21": {
+      "binary": {
+        "sha256": "1e3bb7cb883fd5d00319ebd9f44b761843b3c1b8f4c644e3333ac7a463083788",
+        "byte_size": 4084,
+        "triangle_count": 80,
+        "topology": {
+          "vertices": 42,
+          "triangles": 80,
+          "edges": 120,
+          "non_manifold_edges": 0,
+          "connected_shells": 1,
+          "euler_characteristic": 2,
+          "genus": 0,
+          "volume_mm3": 358.6847710751142,
+          "bounds_mm": {
+            "min": [
+              -1.500000238418579,
+              9.699999809265137,
+              0.0
+            ],
+            "max": [
+              24.5,
+              14.300000190734863,
+              9.0
+            ]
+          }
+        },
+        "coordinate_welding": "Exact repeated binary float triples; no manufacturing epsilon applied",
+        "stored_normal_diagnostics": {
+          "all_fields_finite": true,
+          "zero_length_count": 0,
+          "length_min_max": [
+            0.9999999407390309,
+            1.0000000727906733
+          ],
+          "maximum_unit_length_deviation": 7.27906732667094e-08,
+          "maximum_winding_angle_deg": 3.2313444213790654e-06,
+          "opposite_hemisphere_count": 0,
+          "scope": "Stored-normal diagnostics only; does not qualify printing, supports or strength"
+        }
+      },
+      "world_dimensions_mm": [
+        26.00000023841858,
+        4.600000381469727,
+        9.0
+      ],
+      "stl_vs_source": {
+        "passed": true,
+        "actual_topology": {
+          "vertices": 42,
+          "triangles": 80,
+          "edges": 120,
+          "non_manifold_edges": 0,
+          "connected_shells": 1,
+          "euler_characteristic": 2,
+          "genus": 0,
+          "volume_mm3": 358.6847710751142,
+          "bounds_mm": {
+            "min": [
+              -1.500000238418579,
+              9.699999809265137,
+              0.0
+            ],
+            "max": [
+              24.5,
+              14.300000190734863,
+              9.0
+            ]
+          }
+        },
+        "source_topology": {
+          "vertices": 42,
+          "triangles": 80,
+          "edges": 120,
+          "non_manifold_edges": 0,
+          "connected_shells": 1,
+          "euler_characteristic": 2,
+          "genus": 0,
+          "volume_mm3": 358.6847732995147,
+          "bounds_mm": {
+            "min": [
+              -1.500000238418579,
+              9.699999809265137,
+              -6.556707887739321e-08
+            ],
+            "max": [
+              24.5,
+              14.300000190734863,
+              9.0
+            ]
+          }
+        },
+        "actual_on_source": {
+          "tested_facets": 80,
+          "coplanar_triangle_pairs": 410,
+          "max_projected_area_difference_mm2": 5.72203589399578e-07,
+          "max_plane_distance_mm": 1.9073493922937866e-06
+        },
+        "source_on_actual": {
+          "tested_facets": 80,
+          "coplanar_triangle_pairs": 410,
+          "max_projected_area_difference_mm2": 1.2159347733131654e-06,
+          "max_plane_distance_mm": 1.90735408190015e-06
+        },
+        "method": "Independent bidirectional full oriented facet intersection-area coverage; indexing and legal subdivision may differ"
+      },
+      "reimport_vs_stl": {
+        "passed": true,
+        "actual_topology": {
+          "vertices": 42,
+          "triangles": 80,
+          "edges": 120,
+          "non_manifold_edges": 0,
+          "connected_shells": 1,
+          "euler_characteristic": 2,
+          "genus": 0,
+          "volume_mm3": 358.6847710751142,
+          "bounds_mm": {
+            "min": [
+              -1.500000238418579,
+              9.699999809265137,
+              0.0
+            ],
+            "max": [
+              24.5,
+              14.300000190734863,
+              9.0
+            ]
+          }
+        },
+        "source_topology": {
+          "vertices": 42,
+          "triangles": 80,
+          "edges": 120,
+          "non_manifold_edges": 0,
+          "connected_shells": 1,
+          "euler_characteristic": 2,
+          "genus": 0,
+          "volume_mm3": 358.6847710751142,
+          "bounds_mm": {
+            "min": [
+              -1.500000238418579,
+              9.699999809265137,
+              0.0
+            ],
+            "max": [
+              24.5,
+              14.300000190734863,
+              9.0
+            ]
+          }
+        },
+        "actual_on_source": {
+          "tested_facets": 80,
+          "coplanar_triangle_pairs": 410,
+          "max_projected_area_difference_mm2": 0.0,
+          "max_plane_distance_mm": 1.907354064530766e-06
+        },
+        "source_on_actual": {
+          "tested_facets": 80,
+          "coplanar_triangle_pairs": 410,
+          "max_projected_area_difference_mm2": 0.0,
+          "max_plane_distance_mm": 1.907354064530766e-06
+        },
+        "method": "Independent bidirectional full oriented facet intersection-area coverage; indexing and legal subdivision may differ"
+      },
+      "candidate_pose_and_bed": {
+        "passed": true,
+        "geometric_L_mm": 21.0,
+        "actual_source_frame_bearing_z_mm": 13.0,
+        "actual_source_frame_root_z_mm": -8.0,
+        "maximum_inverse_native_corner_residual_mm": 1.3486991523486091e-06,
+        "native_source_corner_count": 42,
+        "minimum_world_z_mm": 0.0,
+        "bed_contact_triangle_count": 2,
+        "bed_contact_area_mm2": 13.80000114440918,
+        "raised_feature_heights": {
+          "straight_beam": {
+            "world_z_range_mm": [
+              1.4999990463256836,
+              7.5
+            ],
+            "all_samples_above_bed": true
+          },
+          "root_transition": {
+            "world_z_range_mm": [
+              0.9000000953674316,
+              8.100000381469727
+            ],
+            "all_samples_above_bed": true
+          },
+          "upper_hook": {
+            "world_z_range_mm": [
+              1.4999990463256836,
+              7.499999046325684
+            ],
+            "all_samples_above_bed": true
+          }
+        },
+        "support_required": null,
+        "effective_mechanical_length_mm": null
+      },
+      "source_object_axis_dimensions_mm": [
+        9.0,
+        4.599999904632568,
+        26.0
+      ],
+      "reimport_object_axis_dimensions_mm": [
+        26.0,
+        4.600000381469727,
+        9.0
+      ],
+      "export_operator_provenance": {
+        "operator_history_available": false,
+        "capture": "live File Browser before native confirmation"
+      },
+      "import_operator_provenance": {
+        "operator_history_available": false,
+        "capture": "live File Browser before native confirmation"
+      }
+    }
+  },
+  "input_sha256": {
+    "source_A_L19_mesh.json": "8839aeb5c69c9a888af424c2a8478db5b047465701c16714655d702818fdbb7e",
+    "reimport_A_L19_mesh.json": "06f2d72547779c80e09c36d725e91ab7af34fe9762d46076bc0979c143c8f0dc",
+    "u07_A_L19_v001.stl": "bb40b5f669601e11bc97d41f48e8a65552bfe99bb21645d47d359098c62af168",
+    "source_B_L17_mesh.json": "a36e9bb0bd15846f95e2c28b472fa2d6ae94583d2878c0fe1e9652f486bdddcd",
+    "reimport_B_L17_mesh.json": "57e41474442f7a2bcd4a84f0c1956c0a1a01b3d18f86b64b9f13ed2d48cc6ae1",
+    "u07_B_L17_v001.stl": "ac0f9ca920197544f7c47465901beb98059b69b99d5aa9ad88ac9d73d16d017a",
+    "source_C_L21_mesh.json": "5e9b74ffb402773dd4dad1673e95299b5390d9dca705d0081c962051df34f183",
+    "reimport_C_L21_mesh.json": "b9069a6dd48e0b9eaa7a970458c168a66eee799b95f92a4facbd2c7407163e57",
+    "u07_C_L21_v001.stl": "1e3bb7cb883fd5d00319ebd9f44b761843b3c1b8f4c644e3333ac7a463083788"
+  },
+  "snapshot_sha256": {
+    "source-snapshot/run_demo.py": "8a0afa081716cab276c99fc811f6a2453ac82f45b28d8a0b1c639eef67347058",
+    "source-snapshot/blender_demo.py": "96321d8180b1e05a9b77d47551adefbf43ddd04e6add2505eca3b30ceb831a6c",
+    "source-snapshot/common.py": "45044c48522bf5a2dee130382f902a07243e82027addaf6594cbae59b3369c3d",
+    "source-snapshot/lesson07_coupon_export.py": "77f2995c7adece8783977800d4a33947a36c21456f86965bc3d86d0e6a5e4e5d",
+    "source-snapshot/overhang_checks.py": "66023ffe41bb121f75c77b6db362fc559075c7ba56decd9c00d75832c57bb25a",
+    "source-snapshot/snapfit_checks.py": "0b37846f663d2607764158046cf130d81e15792c006eed9d9631f8ba28e7f4c3",
+    "source-snapshot/tenon_checks.py": "4defe55d142ac78be924cef8d82abc3bd24bd2db6f380332eb29cb5b0d89d13d",
+    "source-snapshot/lid_checks.py": "b2e2438126695cca24cb560dce046ca743c2de2c348116141ff6ed75c42e52c3",
+    "source-snapshot/stl_checks.py": "36f09e213a7759a95ea07cee1f70fbaaaf2287551b9c97d9308778a658fe922c",
+    "source-snapshot/snapfit_stl_checks.py": "71b7dcb2c9ee427b08f9979728ce440a15553a599b2bdbf6ccbf98f5e18f3c42",
+    "source-snapshot/coupon_checks.py": "d29ac0840e61c4da9c39cce6bc8aeda58649ac13e2de79399e01b66ea6ceaa4c",
+    "source-snapshot/coupon_stl_checks.py": "8514ad445f9bbca193551142d7107ad54f2887ed4e2f4bcfe8008237ce9b30c4",
+    "source-snapshot/source-coupon-record-v001.json": "1180c5194a5ec09af9186e2e3f69761e5460a4350f9019e9d1020a44e127c01d",
+    "source-snapshot/coupon-plan-v001.json": "35905a851b846b757bbdbb9321708606b4497a0dc4d5d1cdea0f8735d303dd33",
+    "source-snapshot/source-coupon-verification.json": "ecea0a82400931113ad34f9c1fe054d6711835558d268973680a029ea656950b",
+    "source-snapshot/source-snap-tool-reference.json": "cb01f749d093467ec90742d38f90243067cdec00eee545c6c81f3f7b20a6aee7",
+    "source-snapshot/source-A_L19-candidate-mesh.json": "5646200083769661833503b5177306fa0d80e0117597dad691b83f97b7b7530c",
+    "source-snapshot/source-B_L17-candidate-mesh.json": "dc7cb34b232c1853fad6ae67f5de3149a63f0da2bbf7eac595fa062ef4acbcc7",
+    "source-snapshot/source-C_L21-candidate-mesh.json": "0a40675dd41b0c8d6eb96376295ca0aaa090696b3349360187b3f0e23bcfc8c2"
+  },
+  "numeric_position_epsilon_mm": 0.0001,
+  "epsilon_role": "Numerical reconstruction only; not manufacturing, support, strength, improvement or fit acceptance",
+  "material_grade": null,
+  "epsilon_allow": null,
+  "forces": null,
+  "printed": false,
+  "fit_tested": false,
+  "slicer_checked": false,
+  "effective_mechanical_length_mm": null,
+  "anchor_clamping_or_fixture": null,
+  "full_box_boundary_equivalence": null,
+  "improvement_assessed": false,
+  "improvement_validated": null,
+  "physical_measurements": null,
+  "qualified_strength_N": null,
+  "qualified_clearance_mm": null,
+  "support_required": null,
+  "adjacent_y_projection_gaps_mm": [
+    7.3999998569488525,
+    7.3999998569488525
+  ],
+  "original_png_count": 36
+}

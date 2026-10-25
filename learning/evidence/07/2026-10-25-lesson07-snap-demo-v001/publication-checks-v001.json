@@ -1,0 +1,302 @@
+{
+  "recordedAt": "2026-10-25T07:48:34.426942+00:00",
+  "evidencePassed": true,
+  "publicationPending": false,
+  "browserProofPending": false,
+  "images": [
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-01-source-open-dialog.png",
+      "status": 200,
+      "sha256": "1f7f2ca254807157eb5c4c7d73240a8941f8175254beb9ca57540ac838563ee4",
+      "width": 1060,
+      "height": 600,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-02-source-geometry.png",
+      "status": 200,
+      "sha256": "eb1b309daf2eb94b631e60f65c6b55643e90d8bc0d01080c24416f90a9b242c9",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-03-anchor-top.png",
+      "status": 200,
+      "sha256": "f9a79c854125df1b976b4ec9795d38402463e0a6915ff42ce2c435b61e523c45",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-04-beam-inset.png",
+      "status": 200,
+      "sha256": "a5d7b5fedbdc7fba842bf9b1048159ecf781a02c1858d3cfd4549aab24e21323",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-05-beam-extruded.png",
+      "status": 200,
+      "sha256": "b5c5733263019f34bf999fd9b254d397986b82af251d7015bb065180fab78c6e",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-06-hook-extruded.png",
+      "status": 200,
+      "sha256": "da5c5212f2d879e6cff41e0dc5baa148b84101b7a8b95d0f9835407b46648202",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-07-hook-edge.png",
+      "status": 200,
+      "sha256": "4ac1c870113243b992898bd1f273e194d3ac39f8e1a4a72f6e1480a8ae02f5ec",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-08-hook-bevel.png",
+      "status": 200,
+      "sha256": "7b2a90308506aeb2af3818c6a086d868e4d2a88bccec590bf2eeff21f23e07a2",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-09-root-edges.png",
+      "status": 200,
+      "sha256": "e1f2fe071d2110f727fc930a108e4e48725099a2b88c76de05140a50996a2ccb",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-10-root-bevel.png",
+      "status": 200,
+      "sha256": "d865ea78ef61836a85a4763fb1f21565906123191d06a1776d7a20c7ead756f3",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-11-snap-tool.png",
+      "status": 200,
+      "sha256": "dc11e6bb2c2425a3a3a5f264a0a813898225cbd6e8f364144f9a1e00b1de7652",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-12-body-union.png",
+      "status": 200,
+      "sha256": "e309eca04f69348913340b6a4bf7c83ca7ee62e0aa9fa28a54d815c1eeb21dc8",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-13-body-applied.png",
+      "status": 200,
+      "sha256": "e91033de781ec3ff6daabe8232258e1c592ac1a38f299cbb1dc56271b66a8b08",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-14-body-non-manifold.png",
+      "status": 200,
+      "sha256": "c00e798a40ecd39c8d3d932804a85a844f4d2f8faa5b918d06009d9985c34e81",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-15-lid-plate.png",
+      "status": 200,
+      "sha256": "dc6530a5c98c913ccffdf5517443dbbff148d34a0258bcaaaeb36f46cfc015c8",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-16-flange-extruded.png",
+      "status": 200,
+      "sha256": "5ba23c17fa1cc9f405a8a16e5054ee1ce5b3f82ee67837b9604091467f11e67f",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-17-flange-tool.png",
+      "status": 200,
+      "sha256": "fb8ec958f4c9067afa5a94d69a4f2cc2ff961b14b8f66ba4424d567ab9fc8a23",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-18-lid-union.png",
+      "status": 200,
+      "sha256": "08d8a9e57b5d7867bd43421927d8651dcd42e5b9d4c176c6d4bdfb615ddfc491",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-19-lid-applied.png",
+      "status": 200,
+      "sha256": "6675dba6fd84226747e36d5fa56dba5719d35239ba6df889f04193e79f2dc0a6",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-20-lid-non-manifold.png",
+      "status": 200,
+      "sha256": "2142b5895b6d8c48d19ea867f949666a9fcfd74502a4baf83da059a37e43fc28",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-21-lid-raised.png",
+      "status": 200,
+      "sha256": "5da0a1365b79f87138ddc12bdf5c249f9dfa0407f2935893ccd3dedcc2a4f2d2",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-22-assembly-geometry.png",
+      "status": 200,
+      "sha256": "56a6d9581be8daf0ce670b28e959122f9c692d8797a5c90dbd5c689fead5942f",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-23-save-dialog.png",
+      "status": 200,
+      "sha256": "b37863ceecd919c0576a803e87af47b9d9bc8be5fb99aaf0e807e8b614c275e8",
+      "width": 1060,
+      "height": 600,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-24-saved.png",
+      "status": 200,
+      "sha256": "c4488d061d3658f6765962d2d271df490033f12e7c4619f1a8cb323d535013a2",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-25-open-saved.png",
+      "status": 200,
+      "sha256": "080ddab2dce15827a86684c03728a5a93e09523a0d8254d2ddf1dcba1ce6ac1b",
+      "width": 1060,
+      "height": 600,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-26-reopened-verified.png",
+      "status": 200,
+      "sha256": "2187dc09ca5146a8ebdeca93fa1a59e142bf6f973f7c4beaa55b05f3439d9244",
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    }
+  ],
+  "files": [
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/geometry-draft-record-v001.json",
+      "status": 200,
+      "sha256": "4f201124cbf51dc849c7978ee85f7ff5e58ca4273cdd9b006d3eba6c52521b7a",
+      "bytes": 58367,
+      "contentDisposition": null
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/demo-files/u07_cantilever_snap_v001.blend",
+      "status": 200,
+      "sha256": "5fec09b934f2935839d615376beaf598962d47f1b7ac2504f2666c7880a26305",
+      "bytes": 106700,
+      "contentDisposition": "attachment"
+    }
+  ],
+  "independentAuditPassed": true,
+  "progressSha256": "d92e4f2ee78a1cf41386816b8616bf635b89fb25f8bfd813ac00cd20ed20b4ef",
+  "progressUnchanged": true,
+  "tests": {
+    "tutor": {
+      "run": 186,
+      "passed": 185,
+      "skipped": 1,
+      "skipReason": "Windows symlink privilege unavailable"
+    },
+    "server": {
+      "run": 17,
+      "passed": 17
+    },
+    "javascriptSyntax": "passed"
+  },
+  "changedStepIds": [
+    "07-02"
+  ],
+  "onlyExpectedStepChanged": true,
+  "passed": true,
+  "browserProof": {
+    "recordedAt": "2026-10-25T07:54:08.569290+00:00",
+    "url": "http://127.0.0.1:8766/",
+    "lesson": "07",
+    "step": "07-02",
+    "browser": "ChatGPT in-app browser",
+    "screenshots": [
+      {
+        "path": "learning/evidence/ui/2026-10-25-lesson07-snap-demo-v001-overview.jpg",
+        "role": "overview",
+        "sha256": "f31c154a696aa27e6aab711c55ffcdbbc86a9a8df1505575b6e0c2bb2dc7532d",
+        "bytes": 37423,
+        "width": 304,
+        "height": 848,
+        "pixelEdits": false
+      },
+      {
+        "path": "learning/evidence/ui/2026-10-25-lesson07-snap-demo-v001-parameters.jpg",
+        "role": "parameters",
+        "sha256": "b61a9f7c34502a640df3fb495399b924068e419a82d90daf6ef653758affc04d",
+        "bytes": 34005,
+        "width": 304,
+        "height": 848,
+        "pixelEdits": false
+      }
+    ],
+    "visibleChecks": [
+      "原始Blender卡扣與上蓋實拍",
+      "13項草案參數及單位",
+      "材料與允許應變待定",
+      "未計算強度或力量、無實體配合合格結果",
+      "新場景及幾何草案JSON下載"
+    ],
+    "learnerCompletionConfirmed": false,
+    "frontendSource": {
+      "javascriptSha256": "22653a24b77215cc3690f092180fb3efa1c43c15fbc713ef17612a771c7b7e36",
+      "cssSha256": "b6c9f2794a07c7fb4d0f33b209be48486d27b1d32776229f98ffdce51b00e457"
+    }
+  },
+  "apiCatalogAndProgressMatchDisk": true,
+  "completedAt": "2026-10-25T07:54:08.613798+00:00",
+  "geometryManifest": {
+    "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/geometry-manifest-v001.json",
+    "sha256": "683a3f08499ae188c0b475c9b04907cc9eb49ce33fdf433c1e61bea0066bf88c"
+  },
+  "journal": {
+    "path": "learning/journal/2026-10-25-lesson07-snap-demo-v001.md",
+    "sha256": "507b3c575631c8fe5a8225ded7430291d3693b89b8e9b510ae7e4a64d2b32eab"
+  }
+}

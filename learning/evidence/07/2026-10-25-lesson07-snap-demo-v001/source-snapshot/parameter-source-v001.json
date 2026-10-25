@@ -1,0 +1,671 @@
+{
+  "schema_version": 1,
+  "lesson_step": "07-01",
+  "record_role": "cantilever_parameter_plan",
+  "stage": "parameter_planning_only",
+  "snap_arm_modeled": false,
+  "reference_box_summary": "沿用原 04 盒體：外形 60 × 40 × 30、內腔 56 × 36 × 28、壁與底 2 mm。另建只有原盒的卡扣參考場景，尚未建立卡扣臂；盒壁 2 mm 不是臂厚 h。",
+  "parameters": [
+    {
+      "id": "arm_length",
+      "symbol": "L",
+      "label": "有效臂長",
+      "definition": "從固定根部至實際負載／接觸點；先選定卡扣位置及彎曲方向。",
+      "value": null,
+      "unit": "mm"
+    },
+    {
+      "id": "arm_thickness",
+      "symbol": "h",
+      "label": "臂根厚度",
+      "definition": "彎曲方向的厚度；均勻矩形估算假設沿長度不變。不能直接採用原盒壁厚。",
+      "value": null,
+      "unit": "mm"
+    },
+    {
+      "id": "arm_width",
+      "symbol": "b",
+      "label": "臂寬",
+      "definition": "垂直於彎曲平面的寬度；仍會影響剛度及裝拆力。",
+      "value": null,
+      "unit": "mm"
+    },
+    {
+      "id": "root_radius",
+      "symbol": "R",
+      "label": "根部圓角",
+      "definition": "根部過渡半徑；需核對應力集中與可製造性。",
+      "value": null,
+      "unit": "mm"
+    },
+    {
+      "id": "undercut",
+      "symbol": "u",
+      "label": "倒扣深度",
+      "definition": "卡鉤與配合件的幾何倒扣量；不等同材料允許撓度。",
+      "value": null,
+      "unit": "mm"
+    },
+    {
+      "id": "required_deflection",
+      "symbol": "δ_req",
+      "label": "所需橫向撓度",
+      "definition": "依實際裝配路徑、接觸及兩件變形分配決定；不先假設等於 u。",
+      "value": null,
+      "unit": "mm"
+    },
+    {
+      "id": "entry_angle",
+      "symbol": "α",
+      "label": "導入角",
+      "definition": "相對裝入方向的角度；裝入軸及基準尚未選定。",
+      "value": null,
+      "unit": "°"
+    },
+    {
+      "id": "exit_angle",
+      "symbol": "β",
+      "label": "退出角",
+      "definition": "相對退出方向的角度；可拆卸需求及方向尚未選定。",
+      "value": null,
+      "unit": "°"
+    },
+    {
+      "id": "engagement",
+      "symbol": "e",
+      "label": "扣合重疊量",
+      "definition": "閉合後有效重疊範圍；需與倒扣深度及裝配行程分開。",
+      "value": null,
+      "unit": "mm"
+    },
+    {
+      "id": "clearance",
+      "symbol": "g",
+      "label": "試驗間隙",
+      "definition": "量測方向、基準、單邊或總量待定；不沿用燕尾的 0.4 mm。",
+      "value": null,
+      "unit": "mm"
+    },
+    {
+      "id": "free_space",
+      "symbol": "f",
+      "label": "讓位空間",
+      "definition": "臂彎曲時的淨空；需核對內部物件、壁面及裝配路徑。",
+      "value": null,
+      "unit": "mm"
+    }
+  ],
+  "material_parameters": [
+    {
+      "id": "material_grade",
+      "label": "材料與牌號",
+      "value": null,
+      "unit": ""
+    },
+    {
+      "id": "epsilon_allow",
+      "label": "允許應變 ε_allow（小數比例）",
+      "value": null,
+      "unit": ""
+    },
+    {
+      "id": "strain_source",
+      "label": "允許應變的來源及條件",
+      "value": null,
+      "unit": ""
+    },
+    {
+      "id": "secant_modulus",
+      "label": "對應條件的割線模數",
+      "value": null,
+      "unit": "MPa"
+    },
+    {
+      "id": "print_orientation",
+      "label": "列印方向／層向",
+      "value": null,
+      "unit": ""
+    }
+  ],
+  "print_conditions": {
+    "nozzle_diameter_mm": 0.4,
+    "source_record": "learning/evidence/05/2026-10-22-print-conditions-v001.json",
+    "process": null,
+    "printer": null,
+    "line_width_mm": null,
+    "layer_height_mm": null,
+    "slicer": null
+  },
+  "service_conditions": {
+    "assembly_cycles": null,
+    "temperature_C": null,
+    "humidity_RH": null,
+    "hold_time_hours": null,
+    "service_load_N": null,
+    "friction_coefficient": null
+  },
+  "formula": {
+    "expression": "δ_allow ≈ 0.67 × ε_allow × L² / h",
+    "coefficient": 0.67,
+    "notation_note": "ε_allow 用小數比例；百分比須除以 100。原冊簡化情境的 y 在此記為 δ_allow；u、δ_req 與 δ_allow 分開。0.67 是原冊近似係數，不等於精確的 2/3。",
+    "source_id": "covestro_snapfit_guide",
+    "source_url": "https://solutions.covestro.com/-/media/covestro/solution-center/brands/downloads/imported/1557218421.pdf",
+    "pdf_page": 9,
+    "locator": "Table 1，均勻矩形等截面 1A",
+    "applicability_confirmed": null,
+    "root_flexibility_Q": null,
+    "Q_source": null
+  },
+  "conditions": [
+    "這是均勻矩形、理想固定根部、端部橫向負載與古典小撓度樑估算；未證實未來卡扣符合這些條件。",
+    "卡扣位置、彎曲與裝入方向、固定根部、接觸路徑、讓位空間及配合件剛性均待定；兩件都柔性時要分配變形。",
+    "短臂及根部牆面柔度可能使古典模型不適用。BASF 的 Q 取決於根部配置與 L/h，不是安全係數，目前不選 Q。",
+    "材料牌號、層向、製程、溫濕度、載入時間、循環次數及應變資料來源待定；不借用射出樹脂表值作列印件合格值。",
+    "0.4 mm 噴嘴只是學員已提供條件，不能決定臂厚、線寬、材料或合格間隙。",
+    "本步不代入公式、不估裝拆力、不做強度或配合判定；實際列印、量測與試配結果留空。"
+  ],
+  "references": [
+    {
+      "label": "Covestro：Snap-Fit Joints for Plastics",
+      "url": "https://solutions.covestro.com/-/media/covestro/solution-center/brands/downloads/imported/1557218421.pdf",
+      "location": "PDF 第 9 頁 Table 1；第 24 頁 Both Mating Parts Elastic"
+    },
+    {
+      "label": "BASF：Snap-Fit Design Manual（第三方存放副本）",
+      "url": "https://productdesignonline.com/wp-content/uploads/2019/08/Snap-Fit-Design-Manual.pdf",
+      "location": "PDF 第 9、11、12、14 頁；原頁 III-2、IV-1、IV-2、IV-4"
+    }
+  ],
+  "estimates": {
+    "L_over_h": null,
+    "delta_allow_mm": null,
+    "root_strain_estimate": null,
+    "deflection_force_N": null,
+    "insertion_force_N": null,
+    "retention_force_N": null
+  },
+  "results": {
+    "strength_assessment": null,
+    "fit_assessment": null,
+    "qualified_strength_N": null,
+    "qualified_clearance_mm": null
+  },
+  "calculations_performed": false,
+  "strength_analysis_performed": false,
+  "printed": false,
+  "fit_tested": false,
+  "physical_measurements": null,
+  "fit_results": null,
+  "recordedAt": "2026-10-25T07:13:47.258885+00:00",
+  "source_scene": {
+    "path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\04\\2026-10-22-lesson04-demo-v001\\demo-files\\u04_box_v001.blend",
+    "sha256": "b918ee87d26e289f4c8a2f6633beceb854c7d0511e3eddcc969a0696afcd2530"
+  },
+  "reference_scene": {
+    "path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\07\\2026-10-25-lesson07-parameters-demo-v001\\demo-files\\u07_snap_reference_v001.blend",
+    "sha256": "6a6b6c03295c8b6047b97c3efdea9884954b714da87b45b7aa36b4d2b612d3a9",
+    "bytes": 97962,
+    "scene_role": "unmodified_box_reference"
+  },
+  "measured_box": {
+    "bounds_mm": {
+      "min": [
+        -30.0,
+        -20.0,
+        -15.0
+      ],
+      "max": [
+        30.0,
+        20.0,
+        15.0
+      ]
+    },
+    "dimensions_mm": [
+      60.0,
+      40.0,
+      30.0
+    ],
+    "volume_mm3": 15552.0,
+    "non_manifold_edges": 0,
+    "non_manifold_vertex_links": 0,
+    "inconsistent_winding_edges": 0,
+    "connected_shells": 1,
+    "euler_characteristic": 2,
+    "genus": 0,
+    "mesh_counts": {
+      "vertices": 16,
+      "edges": 42,
+      "faces": 28,
+      "triangles": 28,
+      "representation": "evaluated loop-triangulated mesh"
+    },
+    "passed": true,
+    "printed": false,
+    "fit_tested": false,
+    "physical_interference": null,
+    "qualified_clearance_mm": null,
+    "numericComparison": {
+      "purpose": "Floating point reconstruction only; not manufacturing tolerance or fit acceptance",
+      "dimensionsAbsMm": 0.0001,
+      "volumeRelative": 1e-05
+    },
+    "kind": "box_body",
+    "outer_dimensions_mm": [
+      60.0,
+      40.0,
+      30.0
+    ],
+    "cavity_bounds_mm": {
+      "min": [
+        -28.0,
+        -18.0,
+        -13.0
+      ],
+      "max": [
+        28.0,
+        18.0,
+        15.0
+      ]
+    },
+    "cavity_dimensions_mm": [
+      56.0,
+      36.0,
+      28.0
+    ],
+    "wall_thicknesses_mm": [
+      2.0,
+      2.0,
+      2.0,
+      2.0
+    ],
+    "floor_thickness_mm": 2.0,
+    "rim_z_mm": 15.0,
+    "actual_face_planes": {
+      "X": [
+        {
+          "coordinate_mm": -30.0,
+          "area_mm2": 1200.0,
+          "bounds_mm": {
+            "min": [
+              -30.0,
+              -20.0,
+              -15.0
+            ],
+            "max": [
+              -30.0,
+              20.0,
+              15.0
+            ]
+          }
+        },
+        {
+          "coordinate_mm": -28.0,
+          "area_mm2": 1008.0,
+          "bounds_mm": {
+            "min": [
+              -28.0,
+              -18.0,
+              -13.0
+            ],
+            "max": [
+              -28.0,
+              18.0,
+              15.0
+            ]
+          }
+        },
+        {
+          "coordinate_mm": 28.0,
+          "area_mm2": 1008.0,
+          "bounds_mm": {
+            "min": [
+              28.0,
+              -18.0,
+              -13.0
+            ],
+            "max": [
+              28.0,
+              18.0,
+              15.0
+            ]
+          }
+        },
+        {
+          "coordinate_mm": 30.0,
+          "area_mm2": 1200.0,
+          "bounds_mm": {
+            "min": [
+              30.0,
+              -20.0,
+              -15.0
+            ],
+            "max": [
+              30.0,
+              20.0,
+              15.0
+            ]
+          }
+        }
+      ],
+      "Y": [
+        {
+          "coordinate_mm": -20.0,
+          "area_mm2": 1800.0,
+          "bounds_mm": {
+            "min": [
+              -30.0,
+              -20.0,
+              -15.0
+            ],
+            "max": [
+              30.0,
+              -20.0,
+              15.0
+            ]
+          }
+        },
+        {
+          "coordinate_mm": -18.0,
+          "area_mm2": 1568.0,
+          "bounds_mm": {
+            "min": [
+              -28.0,
+              -18.0,
+              -13.0
+            ],
+            "max": [
+              28.0,
+              -18.0,
+              15.0
+            ]
+          }
+        },
+        {
+          "coordinate_mm": 18.0,
+          "area_mm2": 1568.0,
+          "bounds_mm": {
+            "min": [
+              -28.0,
+              18.0,
+              -13.0
+            ],
+            "max": [
+              28.0,
+              18.0,
+              15.0
+            ]
+          }
+        },
+        {
+          "coordinate_mm": 20.0,
+          "area_mm2": 1800.0,
+          "bounds_mm": {
+            "min": [
+              -30.0,
+              20.0,
+              -15.0
+            ],
+            "max": [
+              30.0,
+              20.0,
+              15.0
+            ]
+          }
+        }
+      ],
+      "Z": [
+        {
+          "coordinate_mm": -15.0,
+          "area_mm2": 2400.0,
+          "bounds_mm": {
+            "min": [
+              -30.0,
+              -20.0,
+              -15.0
+            ],
+            "max": [
+              30.0,
+              20.0,
+              -15.0
+            ]
+          }
+        },
+        {
+          "coordinate_mm": -13.0,
+          "area_mm2": 2016.0,
+          "bounds_mm": {
+            "min": [
+              -28.0,
+              -18.0,
+              -13.0
+            ],
+            "max": [
+              28.0,
+              18.0,
+              -13.0
+            ]
+          }
+        },
+        {
+          "coordinate_mm": 15.0,
+          "area_mm2": 384.0,
+          "bounds_mm": {
+            "min": [
+              -30.0,
+              -20.0,
+              15.0
+            ],
+            "max": [
+              30.0,
+              20.0,
+              15.0
+            ]
+          }
+        }
+      ]
+    },
+    "vertical_rays": [
+      {
+        "label": "cavity centre",
+        "xy_mm": [
+          0,
+          0
+        ],
+        "z_hits_mm": [
+          -15.0,
+          -13.0
+        ]
+      },
+      {
+        "label": "negative X rim",
+        "xy_mm": [
+          -29,
+          0
+        ],
+        "z_hits_mm": [
+          -15.0,
+          15.0
+        ]
+      },
+      {
+        "label": "positive X rim",
+        "xy_mm": [
+          29,
+          0
+        ],
+        "z_hits_mm": [
+          -15.0,
+          15.0
+        ]
+      },
+      {
+        "label": "negative Y rim",
+        "xy_mm": [
+          0,
+          -19
+        ],
+        "z_hits_mm": [
+          -15.0,
+          15.0
+        ]
+      },
+      {
+        "label": "positive Y rim",
+        "xy_mm": [
+          0,
+          19
+        ],
+        "z_hits_mm": [
+          -15.0,
+          15.0
+        ]
+      },
+      {
+        "label": "near cavity corner",
+        "xy_mm": [
+          27,
+          17
+        ],
+        "z_hits_mm": [
+          -15.0,
+          -13.0
+        ]
+      }
+    ],
+    "measurement_scope": "actual source body mesh; no physical fit conclusion"
+  },
+  "face_measurements": {
+    "rim": {
+      "object_name": "Body_Reference",
+      "selected_face_count": 1,
+      "selected_vertex_count": 4,
+      "vertices_mm": [
+        [
+          -30.00000142492354,
+          -20.000000949949026,
+          15.00000071246177
+        ],
+        [
+          30.00000142492354,
+          -20.000000949949026,
+          15.00000071246177
+        ],
+        [
+          28.000001329928637,
+          -18.000000854954123,
+          15.00000071246177
+        ],
+        [
+          -28.000001329928637,
+          -18.000000854954123,
+          15.00000071246177
+        ]
+      ],
+      "bounds_mm": {
+        "min": [
+          -30.00000142492354,
+          -20.000000949949026,
+          15.00000071246177
+        ],
+        "max": [
+          30.00000142492354,
+          -18.000000854954123,
+          15.00000071246177
+        ]
+      },
+      "spans_mm": [
+        60.00000284984708,
+        2.0000000949949026,
+        0.0
+      ]
+    },
+    "inner_floor": {
+      "object_name": "Body_Reference",
+      "selected_face_count": 1,
+      "selected_vertex_count": 4,
+      "vertices_mm": [
+        [
+          -28.000001329928637,
+          18.000000854954123,
+          -13.000000617466867
+        ],
+        [
+          -28.000001329928637,
+          -18.000000854954123,
+          -13.000000617466867
+        ],
+        [
+          28.000001329928637,
+          -18.000000854954123,
+          -13.000000617466867
+        ],
+        [
+          28.000001329928637,
+          18.000000854954123,
+          -13.000000617466867
+        ]
+      ],
+      "bounds_mm": {
+        "min": [
+          -28.000001329928637,
+          -18.000000854954123,
+          -13.000000617466867
+        ],
+        "max": [
+          28.000001329928637,
+          18.000000854954123,
+          -13.000000617466867
+        ]
+      },
+      "spans_mm": [
+        56.00000265985727,
+        36.00000170990825,
+        0.0
+      ]
+    },
+    "outer_floor": {
+      "object_name": "Body_Reference",
+      "selected_face_count": 1,
+      "selected_vertex_count": 4,
+      "vertices_mm": [
+        [
+          -30.00000142492354,
+          20.000000949949026,
+          -15.00000071246177
+        ],
+        [
+          30.00000142492354,
+          20.000000949949026,
+          -15.00000071246177
+        ],
+        [
+          30.00000142492354,
+          -20.000000949949026,
+          -15.00000071246177
+        ],
+        [
+          -30.00000142492354,
+          -20.000000949949026,
+          -15.00000071246177
+        ]
+      ],
+      "bounds_mm": {
+        "min": [
+          -30.00000142492354,
+          -20.000000949949026,
+          -15.00000071246177
+        ],
+        "max": [
+          30.00000142492354,
+          20.000000949949026,
+          -15.00000071246177
+        ]
+      },
+      "spans_mm": [
+        60.00000284984708,
+        40.00000189989805,
+        0.0
+      ]
+    }
+  }
+}

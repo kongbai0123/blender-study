@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "audited_at": "2026-10-25T07:14:34.662542+00:00",
+  "auditor": "independent_subagent_dovetail_ui_audit",
+  "passed": true,
+  "scope": "07-01 unchanged reference box, real face selection, version provenance and pending parameter semantics; not material/strength/fit qualification",
+  "checks": {
+    "source_and_opened_copy_unchanged": true,
+    "source_reference_and_prior_raw_triangle_coordinates_exactly_equal": true,
+    "independent_closed_oriented_single_shell_euler_2": true,
+    "saved_and_reopened_reference_version_hash": true,
+    "all_12_native_png_hashes_and_dimensions": true,
+    "all_6_code_and_2_data_binding_snapshot_hashes": true,
+    "three_actual_selected_faces_match_box_reference_dimensions": true,
+    "geometry_material_estimates_and_qualification_pending": true,
+    "runner_completed_and_learner_workspaces_unchanged": true,
+    "learner_progress_hash_unchanged": true
+  },
+  "independent_geometry": {
+    "vertex_count": 16,
+    "triangle_count": 28,
+    "edge_count": 42,
+    "euler_characteristic": 2,
+    "signed_volume_mm3": 15552.0
+  },
+  "scene": {
+    "path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\07\\2026-10-25-lesson07-parameters-demo-v001\\demo-files\\u07_snap_reference_v001.blend",
+    "bytes": 97962,
+    "sha256": "6a6b6c03295c8b6047b97c3efdea9884954b714da87b45b7aa36b4d2b612d3a9"
+  },
+  "progress_sha256": "d92e4f2ee78a1cf41386816b8616bf635b89fb25f8bfd813ac00cd20ed20b4ef",
+  "visual_review": {
+    "original_pngs": [
+      "07-01-04-rim-face.png",
+      "07-01-05-inner-floor.png",
+      "07-01-06-outer-floor.png",
+      "07-01-08-reference-overview.png",
+      "07-01-12-reopened-verified.png"
+    ],
+    "findings": "Real selected rim/inner-floor/outer-floor faces match readbacks; overview and reopened image show one plain box, no snap arm; Item 60/40/30 mm, Scale 1. Camera/Light hidden."
+  },
+  "limitations": [
+    "Only the planning reference was created; no cantilever geometry, dimensions, material, strain, estimate, printing or qualification is claimed.",
+    "Source facts PDF authorship/formula review belongs to the separately bound research record; this audit verifies data binding hashes without redoing external source research."
+  ]
+}

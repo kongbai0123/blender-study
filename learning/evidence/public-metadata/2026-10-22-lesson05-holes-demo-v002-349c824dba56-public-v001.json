@@ -1,0 +1,5412 @@
+{
+  "schemaVersion": 1,
+  "kind": "redacted_public_derivative",
+  "redacted_public_derivative": true,
+  "preparedOn": "2026-10-26",
+  "originalPath": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002.json",
+  "originalSha256": "21d645f8436b3426b449f53219587e56aec2f832f5d3c53331a890530a98b712",
+  "originalBytes": 188996,
+  "originalAvailableInPublicPackage": false,
+  "redactedKeys": [
+    "/runnerStatus/recentCleanup"
+  ],
+  "redactionPolicy": "Recursively omit Windows Recent inventory keys recentCleanup, beforeLinks and afterLinks. Original stays unchanged locally. This derivative is not the original execution record.",
+  "content": {
+    "id": "2026-10-22-lesson05-holes-demo-v002",
+    "actor": "tutor",
+    "authorization": "使用者要求：「請繼續做 05-03 孔板示範，先用草案的 0.1～0.6 mm 總間隙作為試驗點，沿用獨立 Blender 逐步操作、實拍與讀值，做好檔案版本紀錄並更新網頁，不要把試驗值當成已驗證的合格間隙。」",
+    "application": "Blender 5.2.1 LTS",
+    "buildHash": "9e2066aef7ef",
+    "captureMethod": "Blender bpy.ops.screen.screenshot；獨立實例 --factory-startup --enable-event-simulate，滑鼠／鍵盤以 Window.event_simulate 模擬；檔案瀏覽器的資料夾與檔名欄位由程式寫入",
+    "script": "learning/tutor/scenarios/lesson05_holes.py",
+    "pixelEdits": false,
+    "highlightsDrawnBy": "教學頁 CSS 疊框（原圖未修改）",
+    "learnerWorkspaceWrites": false,
+    "demoFiles": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/demo-files/",
+    "records": [
+      {
+        "seq": 1,
+        "step": "05-03",
+        "slug": "new-scene",
+        "recordedAt": "2026-10-22T07:30:09.229Z",
+        "action": "在獨立 Blender 選取出廠物件、X > Delete，準備孔板新場景",
+        "observed": "本次獨立場景物件數 0；原插銷檔不改寫。",
+        "window": "main",
+        "highlights": [],
+        "clicks": [],
+        "file": "05-03-01-new-scene.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "bbc3fc0d8153d6b40a2755c4777b15b314e113bfe2848df371d97cc05dff7cef",
+        "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-01-new-scene.png"
+      },
+      {
+        "seq": 2,
+        "step": "05-03",
+        "slug": "units",
+        "recordedAt": "2026-10-22T07:30:20.230Z",
+        "action": "Scene > Units：Length 選 Millimeters、Unit Scale 0.001，再開啟 Sidebar",
+        "observed": "Unit Scale 0.001；Length MILLIMETERS；Cube Dimensions (2 mm, 2 mm, 2 mm)、Location (0 mm, 0 mm, 0 mm)、Scale (1, 1, 1)。",
+        "window": "main",
+        "highlights": [
+          {
+            "x": 1266,
+            "y": 477,
+            "w": 216,
+            "h": 22,
+            "label": "0.001"
+          },
+          {
+            "x": 963,
+            "y": 383,
+            "w": 228,
+            "h": 77,
+            "label": "Dimensions"
+          }
+        ],
+        "clicks": [],
+        "file": "05-03-02-units.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "7019a1000e5c66d571e7eb8b44949d1bbe55c33446b61affc88e38e3f6afa81c",
+        "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-02-units.png"
+      },
+      {
+        "seq": 3,
+        "step": "05-03",
+        "slug": "board",
+        "recordedAt": "2026-10-22T07:30:35.830Z",
+        "action": "Dimensions 輸入 96、26、4 mm，Object > Apply > Scale，命名 Plate 並對焦",
+        "observed": "Plate Dimensions (96 mm, 26 mm, 4 mm)、Location (0 mm, 0 mm, 0 mm)、Scale (1, 1, 1)。",
+        "window": "main",
+        "highlights": [
+          {
+            "x": 483,
+            "y": 377,
+            "w": 318,
+            "h": 248,
+            "label": "示範孔板"
+          },
+          {
+            "x": 963,
+            "y": 318,
+            "w": 228,
+            "h": 142,
+            "label": "96 × 26 × 4 mm／Scale 1"
+          }
+        ],
+        "clicks": [],
+        "file": "05-03-03-board.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "42d749d6442e623bceddcdeae942cb4c02730ea4abee896318c378836e628399",
+        "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-03-board.png"
+      },
+      {
+        "seq": 4,
+        "step": "05-03",
+        "slug": "cutter-1",
+        "recordedAt": "2026-10-22T07:30:44.680Z",
+        "action": "Add > Mesh > Cube，設第 1 孔切割體 10.1 × 10.1 × 8 mm，中心 X -35、Y 2 mm（總間隙試驗點 0.1 mm）",
+        "observed": "第 1 個切割體：Cube Dimensions (10.1 mm, 10.1 mm, 8 mm)、Location (-35 mm, 2 mm, 0 mm)、Scale (5.05, 5.05, 4)；這只是切割幾何，最終孔壁另行量測。",
+        "window": "main",
+        "highlights": [
+          {
+            "x": 963,
+            "y": 133,
+            "w": 228,
+            "h": 59,
+            "label": "Location"
+          },
+          {
+            "x": 963,
+            "y": 383,
+            "w": 228,
+            "h": 77,
+            "label": "切割體 Dimensions"
+          }
+        ],
+        "clicks": [],
+        "file": "05-03-04-cutter-1.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "a3f91c05485ffeda73bf50b40067db2091cda96ca45f8b6fe2610cc0864e67ec",
+        "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-04-cutter-1.png"
+      },
+      {
+        "seq": 5,
+        "step": "05-03",
+        "slug": "cutter-2",
+        "recordedAt": "2026-10-22T07:30:53.030Z",
+        "action": "Add > Mesh > Cube，設第 2 孔切割體 10.2 × 10.2 × 8 mm，中心 X -21、Y 2 mm（總間隙試驗點 0.2 mm）",
+        "observed": "第 2 個切割體：Cube.001 Dimensions (10.2 mm, 10.2 mm, 8 mm)、Location (-21 mm, 2 mm, 0 mm)、Scale (5.1, 5.1, 4)；這只是切割幾何，最終孔壁另行量測。",
+        "window": "main",
+        "highlights": [
+          {
+            "x": 963,
+            "y": 133,
+            "w": 228,
+            "h": 59,
+            "label": "Location"
+          },
+          {
+            "x": 963,
+            "y": 383,
+            "w": 228,
+            "h": 77,
+            "label": "切割體 Dimensions"
+          }
+        ],
+        "clicks": [],
+        "file": "05-03-05-cutter-2.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "b8710f95a8ed81ce359c41ada1be5d1f721904d373ccec99ec7c1f4b0993284e",
+        "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-05-cutter-2.png"
+      },
+      {
+        "seq": 6,
+        "step": "05-03",
+        "slug": "cutter-3",
+        "recordedAt": "2026-10-22T07:31:01.381Z",
+        "action": "Add > Mesh > Cube，設第 3 孔切割體 10.3 × 10.3 × 8 mm，中心 X -7、Y 2 mm（總間隙試驗點 0.3 mm）",
+        "observed": "第 3 個切割體：Cube.002 Dimensions (10.3 mm, 10.3 mm, 8 mm)、Location (-7 mm, 2 mm, 0 mm)、Scale (5.15, 5.15, 4)；這只是切割幾何，最終孔壁另行量測。",
+        "window": "main",
+        "highlights": [
+          {
+            "x": 963,
+            "y": 133,
+            "w": 228,
+            "h": 59,
+            "label": "Location"
+          },
+          {
+            "x": 963,
+            "y": 383,
+            "w": 228,
+            "h": 77,
+            "label": "切割體 Dimensions"
+          }
+        ],
+        "clicks": [],
+        "file": "05-03-06-cutter-3.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "687671a796a6883b8ef8c16b039e55cde22aea4235b732261125e70d4b0ae63a",
+        "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-06-cutter-3.png"
+      },
+      {
+        "seq": 7,
+        "step": "05-03",
+        "slug": "cutter-4",
+        "recordedAt": "2026-10-22T07:31:09.731Z",
+        "action": "Add > Mesh > Cube，設第 4 孔切割體 10.4 × 10.4 × 8 mm，中心 X 7、Y 2 mm（總間隙試驗點 0.4 mm）",
+        "observed": "第 4 個切割體：Cube.003 Dimensions (10.4 mm, 10.4 mm, 8 mm)、Location (7 mm, 2 mm, 0 mm)、Scale (5.2, 5.2, 4)；這只是切割幾何，最終孔壁另行量測。",
+        "window": "main",
+        "highlights": [
+          {
+            "x": 963,
+            "y": 133,
+            "w": 228,
+            "h": 59,
+            "label": "Location"
+          },
+          {
+            "x": 963,
+            "y": 383,
+            "w": 228,
+            "h": 77,
+            "label": "切割體 Dimensions"
+          }
+        ],
+        "clicks": [],
+        "file": "05-03-07-cutter-4.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "73ef90c9a4153ff85a9fd1efc7eac37e0c5bc8f6b6dc7e934cb4a481514692e3",
+        "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-07-cutter-4.png"
+      },
+      {
+        "seq": 8,
+        "step": "05-03",
+        "slug": "cutter-5",
+        "recordedAt": "2026-10-22T07:31:18.081Z",
+        "action": "Add > Mesh > Cube，設第 5 孔切割體 10.5 × 10.5 × 8 mm，中心 X 21、Y 2 mm（總間隙試驗點 0.5 mm）",
+        "observed": "第 5 個切割體：Cube.004 Dimensions (10.5 mm, 10.5 mm, 8 mm)、Location (21 mm, 2 mm, 0 mm)、Scale (5.25, 5.25, 4)；這只是切割幾何，最終孔壁另行量測。",
+        "window": "main",
+        "highlights": [
+          {
+            "x": 963,
+            "y": 133,
+            "w": 228,
+            "h": 59,
+            "label": "Location"
+          },
+          {
+            "x": 963,
+            "y": 383,
+            "w": 228,
+            "h": 77,
+            "label": "切割體 Dimensions"
+          }
+        ],
+        "clicks": [],
+        "file": "05-03-08-cutter-5.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "1e0a1322b2241759527b5aa5adc306f90b55284cce3cd30c5401da8d4f44aee5",
+        "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-08-cutter-5.png"
+      },
+      {
+        "seq": 9,
+        "step": "05-03",
+        "slug": "cutter-6",
+        "recordedAt": "2026-10-22T07:31:26.432Z",
+        "action": "Add > Mesh > Cube，設第 6 孔切割體 10.6 × 10.6 × 8 mm，中心 X 35、Y 2 mm（總間隙試驗點 0.6 mm）",
+        "observed": "第 6 個切割體：Cube.005 Dimensions (10.6 mm, 10.6 mm, 8 mm)、Location (35 mm, 2 mm, 0 mm)、Scale (5.3, 5.3, 4)；這只是切割幾何，最終孔壁另行量測。",
+        "window": "main",
+        "highlights": [
+          {
+            "x": 963,
+            "y": 133,
+            "w": 228,
+            "h": 59,
+            "label": "Location"
+          },
+          {
+            "x": 963,
+            "y": 383,
+            "w": 228,
+            "h": 77,
+            "label": "切割體 Dimensions"
+          }
+        ],
+        "clicks": [],
+        "file": "05-03-09-cutter-6.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "11bd92615f3ffe1d521ea102aab809e4c55a52b7b8441d6a4810a4e97ca407ef",
+        "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-09-cutter-6.png"
+      },
+      {
+        "seq": 10,
+        "step": "05-03",
+        "slug": "marker-base",
+        "recordedAt": "2026-10-22T07:31:38.382Z",
+        "action": "F3 搜尋 Add Cylinder，設直徑 1.2 mm、高 2 mm，中心 Z 2.2 mm，作為 0.8 mm 深的盲凹點切割體",
+        "observed": "Cylinder Dimensions (1.2 mm, 1.2 mm, 2 mm)、Location (-35 mm, -8.5 mm, 2.2 mm)、Scale (0.0006, 0.0006, 0.001)；板頂面 Z 2 mm，凹點名義底 Z 1.2 mm。",
+        "window": "main",
+        "highlights": [
+          {
+            "x": 963,
+            "y": 133,
+            "w": 228,
+            "h": 59,
+            "label": "Location"
+          },
+          {
+            "x": 963,
+            "y": 383,
+            "w": 228,
+            "h": 77,
+            "label": "圓柱 Dimensions"
+          }
+        ],
+        "clicks": [],
+        "file": "05-03-10-marker-base.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "52f080793529e67f5a60886fbbd39e2c933a657a5facf4b840ddec00d9655a6d",
+        "note": "凹點尺寸與板厚是本示範的幾何安排，沒有宣稱已通過 0.4 mm 噴嘴的列印辨識驗證。",
+        "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-10-marker-base.png"
+      },
+      {
+        "seq": 11,
+        "step": "05-03",
+        "slug": "markers-1",
+        "recordedAt": "2026-10-22T07:31:39.582Z",
+        "action": "用 Shift+D > X 複製圓柱，讓第 1 孔下方有 1 個凹點切割體",
+        "observed": "第 1 組完成；目前可見切割物件 7 個；末個物件 Cylinder Dimensions (1.2 mm, 1.2 mm, 2 mm)、Location (-35 mm, -8.5 mm, 2.2 mm)、Scale (0.0006, 0.0006, 0.001)。",
+        "window": "main",
+        "highlights": [],
+        "clicks": [],
+        "file": "05-03-11-markers-1.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "52f080793529e67f5a60886fbbd39e2c933a657a5facf4b840ddec00d9655a6d",
+        "note": "此時仍是切割體；最終孔板盲凹點數會從差集後的網格讀回。",
+        "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-11-markers-1.png"
+      },
+      {
+        "seq": 12,
+        "step": "05-03",
+        "slug": "markers-2",
+        "recordedAt": "2026-10-22T07:31:42.682Z",
+        "action": "用 Shift+D > X 複製圓柱，讓第 2 孔下方有 2 個凹點切割體",
+        "observed": "第 2 組完成；目前可見切割物件 9 個；末個物件 Cylinder.002 Dimensions (1.2 mm, 1.2 mm, 2 mm)、Location (-20.2 mm, -8.5 mm, 2.2 mm)、Scale (0.0006, 0.0006, 0.001)。",
+        "window": "main",
+        "highlights": [],
+        "clicks": [],
+        "file": "05-03-12-markers-2.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "29569acafe436ee75f55ab9b561cd3503f39cab9c1769d46318a44db8fe3a9b9",
+        "note": "此時仍是切割體；最終孔板盲凹點數會從差集後的網格讀回。",
+        "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-12-markers-2.png"
+      },
+      {
+        "seq": 13,
+        "step": "05-03",
+        "slug": "markers-3",
+        "recordedAt": "2026-10-22T07:31:46.732Z",
+        "action": "用 Shift+D > X 複製圓柱，讓第 3 孔下方有 3 個凹點切割體",
+        "observed": "第 3 組完成；目前可見切割物件 12 個；末個物件 Cylinder.005 Dimensions (1.2 mm, 1.2 mm, 2 mm)、Location (-5.4 mm, -8.5 mm, 2.2 mm)、Scale (0.0006, 0.0006, 0.001)。",
+        "window": "main",
+        "highlights": [],
+        "clicks": [],
+        "file": "05-03-13-markers-3.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "4ca41d5baed9524e7dcfff4e0f0e435b01d39a0f39d3f0d608efec047048a04b",
+        "note": "此時仍是切割體；最終孔板盲凹點數會從差集後的網格讀回。",
+        "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-13-markers-3.png"
+      },
+      {
+        "seq": 14,
+        "step": "05-03",
+        "slug": "markers-4",
+        "recordedAt": "2026-10-22T07:31:51.732Z",
+        "action": "用 Shift+D > X 複製圓柱，讓第 4 孔下方有 4 個凹點切割體",
+        "observed": "第 4 組完成；目前可見切割物件 16 個；末個物件 Cylinder.009 Dimensions (1.2 mm, 1.2 mm, 2 mm)、Location (9.4 mm, -8.5 mm, 2.2 mm)、Scale (0.0006, 0.0006, 0.001)。",
+        "window": "main",
+        "highlights": [],
+        "clicks": [],
+        "file": "05-03-14-markers-4.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "bd862c6526db86ac99db6e7e5a3e6ef9d5cad43aeae365d079ab01a6839fe47a",
+        "note": "此時仍是切割體；最終孔板盲凹點數會從差集後的網格讀回。",
+        "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-14-markers-4.png"
+      },
+      {
+        "seq": 15,
+        "step": "05-03",
+        "slug": "markers-5",
+        "recordedAt": "2026-10-22T07:31:57.683Z",
+        "action": "用 Shift+D > X 複製圓柱，讓第 5 孔下方有 5 個凹點切割體",
+        "observed": "第 5 組完成；目前可見切割物件 21 個；末個物件 Cylinder.014 Dimensions (1.2 mm, 1.2 mm, 2 mm)、Location (24.2 mm, -8.5 mm, 2.2 mm)、Scale (0.0006, 0.0006, 0.001)。",
+        "window": "main",
+        "highlights": [],
+        "clicks": [],
+        "file": "05-03-15-markers-5.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "5c502d69ba60b6c214074319ff210a45e463b2255b260eb2ceb7c28d8a033737",
+        "note": "此時仍是切割體；最終孔板盲凹點數會從差集後的網格讀回。",
+        "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-15-markers-5.png"
+      },
+      {
+        "seq": 16,
+        "step": "05-03",
+        "slug": "markers-6",
+        "recordedAt": "2026-10-22T07:32:04.583Z",
+        "action": "用 Shift+D > X 複製圓柱，讓第 6 孔下方有 6 個凹點切割體",
+        "observed": "第 6 組完成；目前可見切割物件 27 個；末個物件 Cylinder.020 Dimensions (1.2 mm, 1.2 mm, 2 mm)、Location (39 mm, -8.5 mm, 2.2 mm)、Scale (0.0006, 0.0006, 0.001)。",
+        "window": "main",
+        "highlights": [],
+        "clicks": [],
+        "file": "05-03-16-markers-6.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "85076eaaa57cc61347279db3f920eb0ff3d89ba44a6dc302e23d1c4579aaf9cf",
+        "note": "此時仍是切割體；最終孔板盲凹點數會從差集後的網格讀回。",
+        "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-16-markers-6.png"
+      },
+      {
+        "seq": 17,
+        "step": "05-03",
+        "slug": "cutters-joined",
+        "recordedAt": "2026-10-22T07:32:12.583Z",
+        "action": "A 選取可見的 27 個切割體，Ctrl+J 合併、Apply Scale，命名 Cutters；Plate 仍隱藏",
+        "observed": "Cutters Dimensions (80.35 mm, 16.4 mm, 8 mm)、Location (39 mm, -8.5 mm, 2.2 mm)、Scale (1, 1, 1)；場景網格物件：Plate、Cutters。",
+        "window": "main",
+        "highlights": [],
+        "clicks": [],
+        "file": "05-03-17-cutters-joined.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "f6d74f882fd8915f6f1aa93b17f593560adc5d038800495c8ec3819a4393bef6",
+        "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-17-cutters-joined.png"
+      },
+      {
+        "seq": 18,
+        "step": "05-03",
+        "slug": "boolean-empty",
+        "recordedAt": "2026-10-22T07:32:17.083Z",
+        "action": "選 Plate，F3 搜尋 Add Boolean Modifier，確認 Difference 與 Object 欄位",
+        "observed": "Operation DIFFERENCE、Solver EXACT、Operand 未指定。",
+        "window": "main",
+        "highlights": [
+          {
+            "x": 1409,
+            "y": 340,
+            "w": 66,
+            "h": 21,
+            "label": "Difference"
+          },
+          {
+            "x": 1351,
+            "y": 389,
+            "w": 104,
+            "h": 22,
+            "label": "Object／滴管"
+          }
+        ],
+        "clicks": [],
+        "file": "05-03-18-boolean-empty.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "ecbff875c5d4b9a0e430ca3d32e21c03b6af5f2d04fa5889117249b139feaf03",
+        "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-18-boolean-empty.png"
+      },
+      {
+        "seq": 19,
+        "step": "05-03",
+        "slug": "boolean-assigned",
+        "recordedAt": "2026-10-22T07:32:19.483Z",
+        "action": "點 Object 滴管，再點 Outliner 的 Cutters，指定為 Difference 切割物件",
+        "observed": "Operation DIFFERENCE、Solver EXACT、Operand Cutters。",
+        "window": "main",
+        "highlights": [
+          {
+            "x": 1351,
+            "y": 389,
+            "w": 104,
+            "h": 22,
+            "label": "Cutters"
+          }
+        ],
+        "clicks": [],
+        "file": "05-03-19-boolean-assigned.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "d0bb24fc86da2b3d9b9675dcdf44b63f65086cf0189b2f75e53bf87c73824cdc",
+        "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-19-boolean-assigned.png"
+      },
+      {
+        "seq": 20,
+        "step": "05-03",
+        "slug": "holes-preview",
+        "recordedAt": "2026-10-22T07:32:25.783Z",
+        "action": "隱藏 Cutters，選 Plate，數字鍵盤 7 看俯視圖並 Frame Selected：六個方孔與凹點出現",
+        "observed": "Operation DIFFERENCE、Solver EXACT、Operand Cutters。Cutters 隱藏 True；Plate Dimensions (96 mm, 26 mm, 4 mm)、Location (0 mm, 0 mm, 0 mm)、Scale (1, 1, 1)。",
+        "window": "main",
+        "highlights": [
+          {
+            "x": 338,
+            "y": 394,
+            "w": 550,
+            "h": 160,
+            "label": "六孔與 1～6 點標記"
+          }
+        ],
+        "clicks": [],
+        "file": "05-03-20-holes-preview.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "c6292c819628b2a08ad86cd4baae8714ed8864e40f9a51d6a4dadf5a832eff09",
+        "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-20-holes-preview.png"
+      },
+      {
+        "seq": 21,
+        "step": "05-03",
+        "slug": "apply-boolean-menu",
+        "recordedAt": "2026-10-22T07:32:26.783Z",
+        "action": "Boolean 標題列下拉選單，找到 Apply",
+        "observed": "Operation DIFFERENCE、Solver EXACT、Operand Cutters。",
+        "window": "main",
+        "highlights": [
+          {
+            "x": 1287,
+            "y": 333,
+            "w": 145,
+            "h": 20,
+            "label": "Apply"
+          }
+        ],
+        "clicks": [],
+        "file": "05-03-21-apply-boolean-menu.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "b7ee68f89912455d2f146b72e7b444357ce3f62084b29da39da1c8b4de67b971",
+        "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-21-apply-boolean-menu.png"
+      },
+      {
+        "seq": 22,
+        "step": "05-03",
+        "slug": "applied",
+        "recordedAt": "2026-10-22T07:32:29.383Z",
+        "action": "點 Apply，把 Difference 結果寫進 Plate 網格；隱藏的 Cutters 保留作建構來源",
+        "observed": "Plate 修改器數 0、頂點 1417、邊 2165、面 738；Plate Dimensions (96 mm, 26 mm, 4 mm)、Location (0 mm, 0 mm, 0 mm)、Scale (1, 1, 1)。",
+        "window": "main",
+        "highlights": [
+          {
+            "x": 338,
+            "y": 394,
+            "w": 550,
+            "h": 160,
+            "label": "最終孔板"
+          }
+        ],
+        "clicks": [],
+        "file": "05-03-22-applied.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "251ebfa8e68ce120c62db2a196e8b503a9ffcb807081f9ec3eb7f772d8933a31",
+        "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-22-applied.png"
+      },
+      {
+        "seq": 23,
+        "step": "05-03",
+        "slug": "non-manifold",
+        "recordedAt": "2026-10-22T07:32:34.283Z",
+        "action": "Tab > 邊選取 > Select None，再 F3 搜尋 Select Non Manifold",
+        "observed": "Edit Mode，邊選取；Non Manifold 0、選到的邊 0。",
+        "window": "main",
+        "highlights": [
+          {
+            "x": 49,
+            "y": 28,
+            "w": 96,
+            "h": 20,
+            "label": "Edit Mode"
+          }
+        ],
+        "clicks": [],
+        "file": "05-03-23-non-manifold.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "254f77b796216bc85a3a9461642282b32a4c247ba9a0b9d6c0c31fd4ba99a2b0",
+        "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-23-non-manifold.png"
+      },
+      {
+        "seq": 24,
+        "step": "05-03",
+        "slug": "save-dialog",
+        "recordedAt": "2026-10-22T07:32:38.883Z",
+        "action": "File > Save As…：指定本次 demo-files 與 u05_hole_plate_v001.blend",
+        "observed": "示範資料夾 D:\\others\\study\\Blender-Learning\\learning\\evidence\\05\\2026-10-22-lesson05-holes-demo-v002\\demo-files\\；檔名 u05_hole_plate_v001.blend。",
+        "window": "FILE_BROWSER",
+        "highlights": [
+          {
+            "x": 394,
+            "y": 8,
+            "w": 318,
+            "h": 25,
+            "label": "示範資料夾"
+          },
+          {
+            "x": 248,
+            "y": 566,
+            "w": 780,
+            "h": 25,
+            "label": "孔板 v001"
+          },
+          {
+            "x": 789,
+            "y": 566,
+            "w": 126,
+            "h": 25,
+            "label": "Save As"
+          }
+        ],
+        "clicks": [],
+        "file": "05-03-24-save-dialog.png",
+        "width": 1060,
+        "height": 600,
+        "sha256": "339315f99e83430b91391d35d88b0702c0163833da345a9fe42eca3880ee7f70",
+        "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-24-save-dialog.png"
+      },
+      {
+        "seq": 25,
+        "step": "05-03",
+        "slug": "saved",
+        "recordedAt": "2026-10-22T07:32:42.384Z",
+        "action": "按 Save As，讀回孔板檔案大小與雜湊",
+        "observed": "已存 u05_hole_plate_v001.blend，151951 bytes，SHA-256 10bfffd651d1583d8704164288aa0757fa617f67a30e21176d7fc892aef3e692。",
+        "window": "main",
+        "highlights": [],
+        "clicks": [],
+        "file": "05-03-25-saved.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "fbca8f4f712b57feada96bff953b81de1146f9678c656383e519fe0e3b83fb8f",
+        "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-25-saved.png"
+      },
+      {
+        "seq": 26,
+        "step": "05-03",
+        "slug": "mesh-measured",
+        "recordedAt": "2026-10-22T07:32:43.584Z",
+        "action": "從差集後的 Plate 網格量六孔內壁、射線確認通孔與凹點底面；不以切割體尺寸代替結果",
+        "observed": "最終孔寬 X／Y mm：[[10.1000061, 10.099999], [10.2000008, 10.1999989], [10.2999954, 10.2999992], [10.3999996, 10.3999987], [10.5000019, 10.4999995], [10.5999985, 10.5999999]]；六通孔 6；凹點 [1, 2, 3, 4, 5, 6]；Non Manifold 0。",
+        "window": "main",
+        "highlights": [
+          {
+            "x": 338,
+            "y": 394,
+            "w": 550,
+            "h": 160,
+            "label": "已量測的六孔板"
+          }
+        ],
+        "clicks": [],
+        "file": "05-03-26-mesh-measured.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "fbca8f4f712b57feada96bff953b81de1146f9678c656383e519fe0e3b83fb8f",
+        "note": "孔寬 10.1～10.6 mm 是 0.1～0.6 mm 總間隙的設計試驗點；尚未列印或試配，合格間隙仍為空。",
+        "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-26-mesh-measured.png"
+      },
+      {
+        "seq": 27,
+        "step": "05-03",
+        "slug": "open-dialog",
+        "recordedAt": "2026-10-22T07:32:47.684Z",
+        "action": "File > Open…，選同一份孔板 v001 核對重開後幾何",
+        "observed": "資料夾 D:\\others\\study\\Blender-Learning\\learning\\evidence\\05\\2026-10-22-lesson05-holes-demo-v002\\demo-files\\；檔名 u05_hole_plate_v001.blend。",
+        "window": "FILE_BROWSER",
+        "highlights": [
+          {
+            "x": 248,
+            "y": 566,
+            "w": 780,
+            "h": 25,
+            "label": "同一孔板"
+          },
+          {
+            "x": 789,
+            "y": 566,
+            "w": 126,
+            "h": 25,
+            "label": "Open"
+          }
+        ],
+        "clicks": [],
+        "file": "05-03-27-open-dialog.png",
+        "width": 1060,
+        "height": 600,
+        "sha256": "4219c8d2e151e80af25cdf338ee8fcf3f0e35e54cced1943d9ad24c90216c9a6",
+        "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-27-open-dialog.png"
+      },
+      {
+        "seq": 28,
+        "step": "05-03",
+        "slug": "reopened-verified",
+        "recordedAt": "2026-10-22T07:32:51.584Z",
+        "action": "按 Open，再由最終網格重新量孔與凹點，核對雜湊並保存 verification.json",
+        "observed": "重開孔板；實際孔寬 [[10.1000061, 10.099999], [10.2000008, 10.1999989], [10.2999954, 10.2999992], [10.3999996, 10.3999987], [10.5000019, 10.4999995], [10.5999985, 10.5999999]]；通孔 6；各孔凹點 [1, 2, 3, 4, 5, 6]；檔案 SHA-256 一致。未列印、未試配。",
+        "window": "main",
+        "highlights": [
+          {
+            "x": 338,
+            "y": 394,
+            "w": 550,
+            "h": 160,
+            "label": "重開驗證的試驗孔板"
+          }
+        ],
+        "clicks": [],
+        "file": "05-03-28-reopened-verified.png",
+        "width": 1494,
+        "height": 1019,
+        "sha256": "c095e81a5bd43caf63f7784f6a31dca1223ccad7892a7c82113009cd59d64479",
+        "note": "六個總間隙都是試驗點，沒有任何一個被標為已驗證的合格間隙。",
+        "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-28-reopened-verified.png"
+      }
+    ],
+    "verification": {
+      "passed": true,
+      "measurement_source": "evaluated final plate mesh in world-space millimetres",
+      "object_name": "Plate",
+      "board_dimensions_mm": [
+        96.0,
+        26.0,
+        4.0
+      ],
+      "board_bounds_mm": {
+        "min": [
+          -48.0,
+          -13.0,
+          -2.0
+        ],
+        "max": [
+          48.0,
+          13.0,
+          2.0
+        ]
+      },
+      "pin_nominal_mm": 10.0,
+      "pin_dimensions_mm": [
+        10.0,
+        10.0,
+        8.0
+      ],
+      "trial_total_clearances_mm": [
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6
+      ],
+      "measured_hole_widths_mm": [
+        [
+          10.1000061,
+          10.099999
+        ],
+        [
+          10.2000008,
+          10.1999989
+        ],
+        [
+          10.2999954,
+          10.2999992
+        ],
+        [
+          10.3999996,
+          10.3999987
+        ],
+        [
+          10.5000019,
+          10.4999995
+        ],
+        [
+          10.5999985,
+          10.5999999
+        ]
+      ],
+      "measured_hole_x_mm": [
+        10.1000061,
+        10.2000008,
+        10.2999954,
+        10.3999996,
+        10.5000019,
+        10.5999985
+      ],
+      "measured_hole_y_mm": [
+        10.099999,
+        10.1999989,
+        10.2999992,
+        10.3999987,
+        10.4999995,
+        10.5999999
+      ],
+      "measured_hole_heights_mm": [
+        10.099999,
+        10.1999989,
+        10.2999992,
+        10.3999987,
+        10.4999995,
+        10.5999999
+      ],
+      "through_holes": 6,
+      "holes": [
+        {
+          "number": 1,
+          "centre_mm": [
+            -35.0,
+            2.0
+          ],
+          "nominal_width_mm": 10.1,
+          "width_mm": 10.1000061,
+          "height_mm": 10.099999,
+          "measured_total_clearance_x_mm": 0.1000061,
+          "measured_total_clearance_y_mm": 0.099999,
+          "through_at_centre": true,
+          "vertical_ray_from_above": null,
+          "vertical_ray_from_below": null,
+          "inner_walls": [
+            {
+              "axis": "X",
+              "coordinate_mm": -40.0499992,
+              "bounds_min_mm": [
+                -40.0499992,
+                -3.0500007,
+                -2.0
+              ],
+              "bounds_max_mm": [
+                -40.0499992,
+                7.0499983,
+                2.0
+              ],
+              "area_mm2": 40.3999939,
+              "face_count": 1
+            },
+            {
+              "axis": "X",
+              "coordinate_mm": -29.9499931,
+              "bounds_min_mm": [
+                -29.9499931,
+                -3.0500007,
+                -2.0
+              ],
+              "bounds_max_mm": [
+                -29.9499931,
+                7.0499983,
+                2.0
+              ],
+              "area_mm2": 40.3999939,
+              "face_count": 1
+            },
+            {
+              "axis": "Y",
+              "coordinate_mm": -3.0500007,
+              "bounds_min_mm": [
+                -40.0499992,
+                -3.0500007,
+                -2.0
+              ],
+              "bounds_max_mm": [
+                -29.9499931,
+                -3.0500007,
+                2.0
+              ],
+              "area_mm2": 40.4000244,
+              "face_count": 1
+            },
+            {
+              "axis": "Y",
+              "coordinate_mm": 7.0499983,
+              "bounds_min_mm": [
+                -40.0499992,
+                7.0499983,
+                -2.0
+              ],
+              "bounds_max_mm": [
+                -29.9499931,
+                7.0499983,
+                2.0
+              ],
+              "area_mm2": 40.4000244,
+              "face_count": 1
+            }
+          ],
+          "side_rays": [
+            {
+              "origin_mm": [
+                -35.0,
+                2.0,
+                -1.0
+              ],
+              "direction": [
+                -1,
+                0,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  -40.0499992,
+                  2.0,
+                  -1.0
+                ],
+                "normal": [
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                "face_index": 54,
+                "distance_mm": 5.0499992
+              }
+            },
+            {
+              "origin_mm": [
+                -35.0,
+                2.0,
+                -1.0
+              ],
+              "direction": [
+                1,
+                0,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  -29.9499931,
+                  2.0,
+                  -1.0
+                ],
+                "normal": [
+                  -1.0,
+                  0.0,
+                  -0.0
+                ],
+                "face_index": 56,
+                "distance_mm": 5.0500073
+              }
+            },
+            {
+              "origin_mm": [
+                -35.0,
+                2.0,
+                -1.0
+              ],
+              "direction": [
+                0,
+                -1,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  -35.0,
+                  -3.0500007,
+                  -1.0
+                ],
+                "normal": [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                "face_index": 57,
+                "distance_mm": 5.0500007
+              }
+            },
+            {
+              "origin_mm": [
+                -35.0,
+                2.0,
+                -1.0
+              ],
+              "direction": [
+                0,
+                1,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  -35.0,
+                  7.0499983,
+                  -1.0
+                ],
+                "normal": [
+                  -0.0,
+                  -1.0,
+                  0.0
+                ],
+                "face_index": 55,
+                "distance_mm": 5.0499983
+              }
+            },
+            {
+              "origin_mm": [
+                -35.0,
+                2.0,
+                0.0
+              ],
+              "direction": [
+                -1,
+                0,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  -40.0499992,
+                  2.0,
+                  0.0
+                ],
+                "normal": [
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                "face_index": 54,
+                "distance_mm": 5.0499997
+              }
+            },
+            {
+              "origin_mm": [
+                -35.0,
+                2.0,
+                0.0
+              ],
+              "direction": [
+                1,
+                0,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  -29.9499931,
+                  2.0,
+                  0.0
+                ],
+                "normal": [
+                  -1.0,
+                  0.0,
+                  -0.0
+                ],
+                "face_index": 56,
+                "distance_mm": 5.0500073
+              }
+            },
+            {
+              "origin_mm": [
+                -35.0,
+                2.0,
+                0.0
+              ],
+              "direction": [
+                0,
+                -1,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  -35.0,
+                  -3.0500007,
+                  0.0
+                ],
+                "normal": [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                "face_index": 57,
+                "distance_mm": 5.0500007
+              }
+            },
+            {
+              "origin_mm": [
+                -35.0,
+                2.0,
+                0.0
+              ],
+              "direction": [
+                0,
+                1,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  -35.0,
+                  7.0499983,
+                  0.0
+                ],
+                "normal": [
+                  -0.0,
+                  -1.0,
+                  0.0
+                ],
+                "face_index": 55,
+                "distance_mm": 5.0499983
+              }
+            },
+            {
+              "origin_mm": [
+                -35.0,
+                2.0,
+                1.0
+              ],
+              "direction": [
+                -1,
+                0,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  -40.0499992,
+                  2.0,
+                  1.0
+                ],
+                "normal": [
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                "face_index": 54,
+                "distance_mm": 5.0499992
+              }
+            },
+            {
+              "origin_mm": [
+                -35.0,
+                2.0,
+                1.0
+              ],
+              "direction": [
+                1,
+                0,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  -29.9499931,
+                  2.0,
+                  1.0
+                ],
+                "normal": [
+                  -1.0,
+                  0.0,
+                  -0.0
+                ],
+                "face_index": 56,
+                "distance_mm": 5.0500069
+              }
+            },
+            {
+              "origin_mm": [
+                -35.0,
+                2.0,
+                1.0
+              ],
+              "direction": [
+                0,
+                -1,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  -35.0,
+                  -3.0500011,
+                  1.0
+                ],
+                "normal": [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                "face_index": 57,
+                "distance_mm": 5.0500011
+              }
+            },
+            {
+              "origin_mm": [
+                -35.0,
+                2.0,
+                1.0
+              ],
+              "direction": [
+                0,
+                1,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  -35.0,
+                  7.0499983,
+                  1.0
+                ],
+                "normal": [
+                  -0.0,
+                  -1.0,
+                  0.0
+                ],
+                "face_index": 55,
+                "distance_mm": 5.0499983
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "centre_mm": [
+            -21.0,
+            2.0
+          ],
+          "nominal_width_mm": 10.2,
+          "width_mm": 10.2000008,
+          "height_mm": 10.1999989,
+          "measured_total_clearance_x_mm": 0.2000008,
+          "measured_total_clearance_y_mm": 0.1999989,
+          "through_at_centre": true,
+          "vertical_ray_from_above": null,
+          "vertical_ray_from_below": null,
+          "inner_walls": [
+            {
+              "axis": "X",
+              "coordinate_mm": -26.0999947,
+              "bounds_min_mm": [
+                -26.0999947,
+                -3.1000004,
+                -2.0
+              ],
+              "bounds_max_mm": [
+                -26.0999947,
+                7.0999985,
+                2.0
+              ],
+              "area_mm2": 40.7999954,
+              "face_count": 1
+            },
+            {
+              "axis": "X",
+              "coordinate_mm": -15.8999939,
+              "bounds_min_mm": [
+                -15.8999939,
+                -3.1000004,
+                -2.0
+              ],
+              "bounds_max_mm": [
+                -15.8999939,
+                7.0999985,
+                2.0
+              ],
+              "area_mm2": 40.7999954,
+              "face_count": 1
+            },
+            {
+              "axis": "Y",
+              "coordinate_mm": -3.1000004,
+              "bounds_min_mm": [
+                -26.0999947,
+                -3.1000004,
+                -2.0
+              ],
+              "bounds_max_mm": [
+                -15.8999939,
+                -3.1000004,
+                2.0
+              ],
+              "area_mm2": 40.8000031,
+              "face_count": 1
+            },
+            {
+              "axis": "Y",
+              "coordinate_mm": 7.0999985,
+              "bounds_min_mm": [
+                -26.0999947,
+                7.0999985,
+                -2.0
+              ],
+              "bounds_max_mm": [
+                -15.8999939,
+                7.0999985,
+                2.0
+              ],
+              "area_mm2": 40.8000031,
+              "face_count": 1
+            }
+          ],
+          "side_rays": [
+            {
+              "origin_mm": [
+                -21.0,
+                2.0,
+                -1.0
+              ],
+              "direction": [
+                -1,
+                0,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  -26.0999947,
+                  2.0,
+                  -1.0
+                ],
+                "normal": [
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                "face_index": 58,
+                "distance_mm": 5.0999947
+              }
+            },
+            {
+              "origin_mm": [
+                -21.0,
+                2.0,
+                -1.0
+              ],
+              "direction": [
+                1,
+                0,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  -15.8999939,
+                  2.0,
+                  -1.0
+                ],
+                "normal": [
+                  -1.0,
+                  0.0,
+                  -0.0
+                ],
+                "face_index": 60,
+                "distance_mm": 5.1000061
+              }
+            },
+            {
+              "origin_mm": [
+                -21.0,
+                2.0,
+                -1.0
+              ],
+              "direction": [
+                0,
+                -1,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  -21.0,
+                  -3.1000004,
+                  -1.0
+                ],
+                "normal": [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                "face_index": 61,
+                "distance_mm": 5.1000004
+              }
+            },
+            {
+              "origin_mm": [
+                -21.0,
+                2.0,
+                -1.0
+              ],
+              "direction": [
+                0,
+                1,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  -21.0,
+                  7.0999985,
+                  -1.0
+                ],
+                "normal": [
+                  -0.0,
+                  -1.0,
+                  0.0
+                ],
+                "face_index": 59,
+                "distance_mm": 5.0999985
+              }
+            },
+            {
+              "origin_mm": [
+                -21.0,
+                2.0,
+                0.0
+              ],
+              "direction": [
+                -1,
+                0,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  -26.0999947,
+                  2.0,
+                  0.0
+                ],
+                "normal": [
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                "face_index": 58,
+                "distance_mm": 5.0999947
+              }
+            },
+            {
+              "origin_mm": [
+                -21.0,
+                2.0,
+                0.0
+              ],
+              "direction": [
+                1,
+                0,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  -15.8999939,
+                  2.0,
+                  0.0
+                ],
+                "normal": [
+                  -1.0,
+                  0.0,
+                  -0.0
+                ],
+                "face_index": 60,
+                "distance_mm": 5.1000056
+              }
+            },
+            {
+              "origin_mm": [
+                -21.0,
+                2.0,
+                0.0
+              ],
+              "direction": [
+                0,
+                -1,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  -21.0,
+                  -3.1000004,
+                  0.0
+                ],
+                "normal": [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                "face_index": 61,
+                "distance_mm": 5.1000004
+              }
+            },
+            {
+              "origin_mm": [
+                -21.0,
+                2.0,
+                0.0
+              ],
+              "direction": [
+                0,
+                1,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  -21.0,
+                  7.0999985,
+                  0.0
+                ],
+                "normal": [
+                  -0.0,
+                  -1.0,
+                  0.0
+                ],
+                "face_index": 59,
+                "distance_mm": 5.0999985
+              }
+            },
+            {
+              "origin_mm": [
+                -21.0,
+                2.0,
+                1.0
+              ],
+              "direction": [
+                -1,
+                0,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  -26.0999947,
+                  2.0,
+                  1.0
+                ],
+                "normal": [
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                "face_index": 58,
+                "distance_mm": 5.0999947
+              }
+            },
+            {
+              "origin_mm": [
+                -21.0,
+                2.0,
+                1.0
+              ],
+              "direction": [
+                1,
+                0,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  -15.8999939,
+                  2.0,
+                  1.0
+                ],
+                "normal": [
+                  -1.0,
+                  0.0,
+                  -0.0
+                ],
+                "face_index": 60,
+                "distance_mm": 5.1000061
+              }
+            },
+            {
+              "origin_mm": [
+                -21.0,
+                2.0,
+                1.0
+              ],
+              "direction": [
+                0,
+                -1,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  -21.0,
+                  -3.0999999,
+                  1.0
+                ],
+                "normal": [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                "face_index": 61,
+                "distance_mm": 5.0999999
+              }
+            },
+            {
+              "origin_mm": [
+                -21.0,
+                2.0,
+                1.0
+              ],
+              "direction": [
+                0,
+                1,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  -21.0,
+                  7.0999985,
+                  1.0
+                ],
+                "normal": [
+                  -0.0,
+                  -1.0,
+                  0.0
+                ],
+                "face_index": 59,
+                "distance_mm": 5.0999985
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "centre_mm": [
+            -7.0,
+            2.0
+          ],
+          "nominal_width_mm": 10.3,
+          "width_mm": 10.2999954,
+          "height_mm": 10.2999992,
+          "measured_total_clearance_x_mm": 0.2999954,
+          "measured_total_clearance_y_mm": 0.2999992,
+          "through_at_centre": true,
+          "vertical_ray_from_above": null,
+          "vertical_ray_from_below": null,
+          "inner_walls": [
+            {
+              "axis": "X",
+              "coordinate_mm": -12.1499939,
+              "bounds_min_mm": [
+                -12.1499939,
+                -3.1500006,
+                -2.0
+              ],
+              "bounds_max_mm": [
+                -12.1499939,
+                7.1499987,
+                2.0
+              ],
+              "area_mm2": 41.1999969,
+              "face_count": 1
+            },
+            {
+              "axis": "X",
+              "coordinate_mm": -1.8499985,
+              "bounds_min_mm": [
+                -1.8499985,
+                -3.1500006,
+                -2.0
+              ],
+              "bounds_max_mm": [
+                -1.8499985,
+                7.1499987,
+                2.0
+              ],
+              "area_mm2": 41.1999969,
+              "face_count": 1
+            },
+            {
+              "axis": "Y",
+              "coordinate_mm": -3.1500006,
+              "bounds_min_mm": [
+                -12.1499939,
+                -3.1500006,
+                -2.0
+              ],
+              "bounds_max_mm": [
+                -1.8499985,
+                -3.1500006,
+                2.0
+              ],
+              "area_mm2": 41.1999817,
+              "face_count": 1
+            },
+            {
+              "axis": "Y",
+              "coordinate_mm": 7.1499987,
+              "bounds_min_mm": [
+                -12.1499939,
+                7.1499987,
+                -2.0
+              ],
+              "bounds_max_mm": [
+                -1.8499985,
+                7.1499987,
+                2.0
+              ],
+              "area_mm2": 41.1999817,
+              "face_count": 1
+            }
+          ],
+          "side_rays": [
+            {
+              "origin_mm": [
+                -7.0,
+                2.0,
+                -1.0
+              ],
+              "direction": [
+                -1,
+                0,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  -12.1499939,
+                  2.0,
+                  -1.0
+                ],
+                "normal": [
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                "face_index": 62,
+                "distance_mm": 5.1499939
+              }
+            },
+            {
+              "origin_mm": [
+                -7.0,
+                2.0,
+                -1.0
+              ],
+              "direction": [
+                1,
+                0,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  -1.8499985,
+                  2.0,
+                  -1.0
+                ],
+                "normal": [
+                  -1.0,
+                  0.0,
+                  -0.0
+                ],
+                "face_index": 64,
+                "distance_mm": 5.1500015
+              }
+            },
+            {
+              "origin_mm": [
+                -7.0,
+                2.0,
+                -1.0
+              ],
+              "direction": [
+                0,
+                -1,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  -7.0,
+                  -3.1500006,
+                  -1.0
+                ],
+                "normal": [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                "face_index": 65,
+                "distance_mm": 5.1500006
+              }
+            },
+            {
+              "origin_mm": [
+                -7.0,
+                2.0,
+                -1.0
+              ],
+              "direction": [
+                0,
+                1,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  -7.0,
+                  7.1499982,
+                  -1.0
+                ],
+                "normal": [
+                  -0.0,
+                  -1.0,
+                  0.0
+                ],
+                "face_index": 63,
+                "distance_mm": 5.1499982
+              }
+            },
+            {
+              "origin_mm": [
+                -7.0,
+                2.0,
+                0.0
+              ],
+              "direction": [
+                -1,
+                0,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  -12.1499939,
+                  2.0,
+                  0.0
+                ],
+                "normal": [
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                "face_index": 62,
+                "distance_mm": 5.1499939
+              }
+            },
+            {
+              "origin_mm": [
+                -7.0,
+                2.0,
+                0.0
+              ],
+              "direction": [
+                1,
+                0,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  -1.849999,
+                  2.0,
+                  0.0
+                ],
+                "normal": [
+                  -1.0,
+                  0.0,
+                  -0.0
+                ],
+                "face_index": 64,
+                "distance_mm": 5.150001
+              }
+            },
+            {
+              "origin_mm": [
+                -7.0,
+                2.0,
+                0.0
+              ],
+              "direction": [
+                0,
+                -1,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  -7.0,
+                  -3.1500006,
+                  0.0
+                ],
+                "normal": [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                "face_index": 65,
+                "distance_mm": 5.1500006
+              }
+            },
+            {
+              "origin_mm": [
+                -7.0,
+                2.0,
+                0.0
+              ],
+              "direction": [
+                0,
+                1,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  -7.0,
+                  7.1499982,
+                  0.0
+                ],
+                "normal": [
+                  -0.0,
+                  -1.0,
+                  0.0
+                ],
+                "face_index": 63,
+                "distance_mm": 5.1499982
+              }
+            },
+            {
+              "origin_mm": [
+                -7.0,
+                2.0,
+                1.0
+              ],
+              "direction": [
+                -1,
+                0,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  -12.1499939,
+                  2.0,
+                  1.0
+                ],
+                "normal": [
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                "face_index": 62,
+                "distance_mm": 5.1499939
+              }
+            },
+            {
+              "origin_mm": [
+                -7.0,
+                2.0,
+                1.0
+              ],
+              "direction": [
+                1,
+                0,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  -1.849999,
+                  2.0,
+                  1.0
+                ],
+                "normal": [
+                  -1.0,
+                  0.0,
+                  -0.0
+                ],
+                "face_index": 64,
+                "distance_mm": 5.150001
+              }
+            },
+            {
+              "origin_mm": [
+                -7.0,
+                2.0,
+                1.0
+              ],
+              "direction": [
+                0,
+                -1,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  -7.0,
+                  -3.1500006,
+                  1.0
+                ],
+                "normal": [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                "face_index": 65,
+                "distance_mm": 5.1500006
+              }
+            },
+            {
+              "origin_mm": [
+                -7.0,
+                2.0,
+                1.0
+              ],
+              "direction": [
+                0,
+                1,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  -7.0,
+                  7.1499982,
+                  1.0
+                ],
+                "normal": [
+                  -0.0,
+                  -1.0,
+                  0.0
+                ],
+                "face_index": 63,
+                "distance_mm": 5.1499982
+              }
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "centre_mm": [
+            7.0,
+            2.0
+          ],
+          "nominal_width_mm": 10.4,
+          "width_mm": 10.3999996,
+          "height_mm": 10.3999987,
+          "measured_total_clearance_x_mm": 0.3999996,
+          "measured_total_clearance_y_mm": 0.3999987,
+          "through_at_centre": true,
+          "vertical_ray_from_above": null,
+          "vertical_ray_from_below": null,
+          "inner_walls": [
+            {
+              "axis": "X",
+              "coordinate_mm": 1.8000031,
+              "bounds_min_mm": [
+                1.8000031,
+                -3.2000008,
+                -2.0
+              ],
+              "bounds_max_mm": [
+                1.8000031,
+                7.1999979,
+                2.0
+              ],
+              "area_mm2": 41.5999947,
+              "face_count": 1
+            },
+            {
+              "axis": "X",
+              "coordinate_mm": 12.2000027,
+              "bounds_min_mm": [
+                12.2000027,
+                -3.2000008,
+                -2.0
+              ],
+              "bounds_max_mm": [
+                12.2000027,
+                7.1999979,
+                2.0
+              ],
+              "area_mm2": 41.5999947,
+              "face_count": 1
+            },
+            {
+              "axis": "Y",
+              "coordinate_mm": -3.2000008,
+              "bounds_min_mm": [
+                1.8000031,
+                -3.2000008,
+                -2.0
+              ],
+              "bounds_max_mm": [
+                12.2000027,
+                -3.2000008,
+                2.0
+              ],
+              "area_mm2": 41.5999985,
+              "face_count": 1
+            },
+            {
+              "axis": "Y",
+              "coordinate_mm": 7.1999979,
+              "bounds_min_mm": [
+                1.8000031,
+                7.1999979,
+                -2.0
+              ],
+              "bounds_max_mm": [
+                12.2000027,
+                7.1999979,
+                2.0
+              ],
+              "area_mm2": 41.5999985,
+              "face_count": 1
+            }
+          ],
+          "side_rays": [
+            {
+              "origin_mm": [
+                7.0,
+                2.0,
+                -1.0
+              ],
+              "direction": [
+                -1,
+                0,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  1.8000031,
+                  2.0,
+                  -1.0
+                ],
+                "normal": [
+                  0.9999999,
+                  0.0,
+                  0.0
+                ],
+                "face_index": 66,
+                "distance_mm": 5.1999969
+              }
+            },
+            {
+              "origin_mm": [
+                7.0,
+                2.0,
+                -1.0
+              ],
+              "direction": [
+                1,
+                0,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  12.2000027,
+                  2.0,
+                  -1.0
+                ],
+                "normal": [
+                  -0.9999999,
+                  0.0,
+                  -0.0
+                ],
+                "face_index": 68,
+                "distance_mm": 5.2000027
+              }
+            },
+            {
+              "origin_mm": [
+                7.0,
+                2.0,
+                -1.0
+              ],
+              "direction": [
+                0,
+                -1,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  7.0,
+                  -3.2000008,
+                  -1.0
+                ],
+                "normal": [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                "face_index": 69,
+                "distance_mm": 5.2000008
+              }
+            },
+            {
+              "origin_mm": [
+                7.0,
+                2.0,
+                -1.0
+              ],
+              "direction": [
+                0,
+                1,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  7.0,
+                  7.1999979,
+                  -1.0
+                ],
+                "normal": [
+                  -0.0,
+                  -1.0,
+                  0.0
+                ],
+                "face_index": 67,
+                "distance_mm": 5.1999979
+              }
+            },
+            {
+              "origin_mm": [
+                7.0,
+                2.0,
+                0.0
+              ],
+              "direction": [
+                -1,
+                0,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  1.8000035,
+                  2.0,
+                  0.0
+                ],
+                "normal": [
+                  0.9999999,
+                  0.0,
+                  0.0
+                ],
+                "face_index": 66,
+                "distance_mm": 5.1999965
+              }
+            },
+            {
+              "origin_mm": [
+                7.0,
+                2.0,
+                0.0
+              ],
+              "direction": [
+                1,
+                0,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  12.2000027,
+                  2.0,
+                  0.0
+                ],
+                "normal": [
+                  -0.9999999,
+                  0.0,
+                  -0.0
+                ],
+                "face_index": 68,
+                "distance_mm": 5.2000022
+              }
+            },
+            {
+              "origin_mm": [
+                7.0,
+                2.0,
+                0.0
+              ],
+              "direction": [
+                0,
+                -1,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  7.0,
+                  -3.2000008,
+                  0.0
+                ],
+                "normal": [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                "face_index": 69,
+                "distance_mm": 5.2000008
+              }
+            },
+            {
+              "origin_mm": [
+                7.0,
+                2.0,
+                0.0
+              ],
+              "direction": [
+                0,
+                1,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  7.0,
+                  7.1999979,
+                  0.0
+                ],
+                "normal": [
+                  -0.0,
+                  -1.0,
+                  0.0
+                ],
+                "face_index": 67,
+                "distance_mm": 5.1999979
+              }
+            },
+            {
+              "origin_mm": [
+                7.0,
+                2.0,
+                1.0
+              ],
+              "direction": [
+                -1,
+                0,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  1.8000035,
+                  2.0,
+                  1.0
+                ],
+                "normal": [
+                  0.9999999,
+                  0.0,
+                  0.0
+                ],
+                "face_index": 66,
+                "distance_mm": 5.1999965
+              }
+            },
+            {
+              "origin_mm": [
+                7.0,
+                2.0,
+                1.0
+              ],
+              "direction": [
+                1,
+                0,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  12.2000027,
+                  2.0,
+                  1.0
+                ],
+                "normal": [
+                  -0.9999999,
+                  0.0,
+                  -0.0
+                ],
+                "face_index": 68,
+                "distance_mm": 5.2000027
+              }
+            },
+            {
+              "origin_mm": [
+                7.0,
+                2.0,
+                1.0
+              ],
+              "direction": [
+                0,
+                -1,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  7.0,
+                  -3.2000008,
+                  1.0
+                ],
+                "normal": [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                "face_index": 69,
+                "distance_mm": 5.2000008
+              }
+            },
+            {
+              "origin_mm": [
+                7.0,
+                2.0,
+                1.0
+              ],
+              "direction": [
+                0,
+                1,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  7.0,
+                  7.1999979,
+                  1.0
+                ],
+                "normal": [
+                  -0.0,
+                  -1.0,
+                  0.0
+                ],
+                "face_index": 67,
+                "distance_mm": 5.1999979
+              }
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "centre_mm": [
+            21.0,
+            2.0
+          ],
+          "nominal_width_mm": 10.5,
+          "width_mm": 10.5000019,
+          "height_mm": 10.4999995,
+          "measured_total_clearance_x_mm": 0.5000019,
+          "measured_total_clearance_y_mm": 0.4999995,
+          "through_at_centre": true,
+          "vertical_ray_from_above": null,
+          "vertical_ray_from_below": null,
+          "inner_walls": [
+            {
+              "axis": "X",
+              "coordinate_mm": 15.7500019,
+              "bounds_min_mm": [
+                15.7500019,
+                -3.2500005,
+                -2.0
+              ],
+              "bounds_max_mm": [
+                15.7500019,
+                7.249999,
+                2.0
+              ],
+              "area_mm2": 42.0,
+              "face_count": 1
+            },
+            {
+              "axis": "X",
+              "coordinate_mm": 26.2500038,
+              "bounds_min_mm": [
+                26.2500038,
+                -3.2500005,
+                -2.0
+              ],
+              "bounds_max_mm": [
+                26.2500038,
+                7.249999,
+                2.0
+              ],
+              "area_mm2": 42.0,
+              "face_count": 1
+            },
+            {
+              "axis": "Y",
+              "coordinate_mm": -3.2500005,
+              "bounds_min_mm": [
+                15.7500019,
+                -3.2500005,
+                -2.0
+              ],
+              "bounds_max_mm": [
+                26.2500038,
+                -3.2500005,
+                2.0
+              ],
+              "area_mm2": 42.0000076,
+              "face_count": 1
+            },
+            {
+              "axis": "Y",
+              "coordinate_mm": 7.249999,
+              "bounds_min_mm": [
+                15.7500019,
+                7.249999,
+                -2.0
+              ],
+              "bounds_max_mm": [
+                26.2500038,
+                7.249999,
+                2.0
+              ],
+              "area_mm2": 42.0000076,
+              "face_count": 1
+            }
+          ],
+          "side_rays": [
+            {
+              "origin_mm": [
+                21.0,
+                2.0,
+                -1.0
+              ],
+              "direction": [
+                -1,
+                0,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  15.7500019,
+                  2.0,
+                  -1.0
+                ],
+                "normal": [
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                "face_index": 70,
+                "distance_mm": 5.2499981
+              }
+            },
+            {
+              "origin_mm": [
+                21.0,
+                2.0,
+                -1.0
+              ],
+              "direction": [
+                1,
+                0,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  26.2500038,
+                  2.0,
+                  -1.0
+                ],
+                "normal": [
+                  -1.0,
+                  0.0,
+                  0.0
+                ],
+                "face_index": 72,
+                "distance_mm": 5.2500038
+              }
+            },
+            {
+              "origin_mm": [
+                21.0,
+                2.0,
+                -1.0
+              ],
+              "direction": [
+                0,
+                -1,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  21.0,
+                  -3.2500005,
+                  -1.0
+                ],
+                "normal": [
+                  0.0,
+                  0.9999999,
+                  -0.0
+                ],
+                "face_index": 73,
+                "distance_mm": 5.2500005
+              }
+            },
+            {
+              "origin_mm": [
+                21.0,
+                2.0,
+                -1.0
+              ],
+              "direction": [
+                0,
+                1,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  21.0,
+                  7.249999,
+                  -1.0
+                ],
+                "normal": [
+                  -0.0,
+                  -0.9999999,
+                  0.0
+                ],
+                "face_index": 71,
+                "distance_mm": 5.249999
+              }
+            },
+            {
+              "origin_mm": [
+                21.0,
+                2.0,
+                0.0
+              ],
+              "direction": [
+                -1,
+                0,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  15.7500019,
+                  2.0,
+                  0.0
+                ],
+                "normal": [
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                "face_index": 70,
+                "distance_mm": 5.2499981
+              }
+            },
+            {
+              "origin_mm": [
+                21.0,
+                2.0,
+                0.0
+              ],
+              "direction": [
+                1,
+                0,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  26.2500038,
+                  2.0,
+                  0.0
+                ],
+                "normal": [
+                  -1.0,
+                  0.0,
+                  0.0
+                ],
+                "face_index": 72,
+                "distance_mm": 5.2500038
+              }
+            },
+            {
+              "origin_mm": [
+                21.0,
+                2.0,
+                0.0
+              ],
+              "direction": [
+                0,
+                -1,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  21.0,
+                  -3.2500005,
+                  0.0
+                ],
+                "normal": [
+                  0.0,
+                  0.9999999,
+                  -0.0
+                ],
+                "face_index": 73,
+                "distance_mm": 5.2500005
+              }
+            },
+            {
+              "origin_mm": [
+                21.0,
+                2.0,
+                0.0
+              ],
+              "direction": [
+                0,
+                1,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  21.0,
+                  7.249999,
+                  0.0
+                ],
+                "normal": [
+                  -0.0,
+                  -0.9999999,
+                  0.0
+                ],
+                "face_index": 71,
+                "distance_mm": 5.249999
+              }
+            },
+            {
+              "origin_mm": [
+                21.0,
+                2.0,
+                1.0
+              ],
+              "direction": [
+                -1,
+                0,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  15.7500019,
+                  2.0,
+                  1.0
+                ],
+                "normal": [
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                "face_index": 70,
+                "distance_mm": 5.2499981
+              }
+            },
+            {
+              "origin_mm": [
+                21.0,
+                2.0,
+                1.0
+              ],
+              "direction": [
+                1,
+                0,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  26.2500038,
+                  2.0,
+                  1.0
+                ],
+                "normal": [
+                  -1.0,
+                  0.0,
+                  0.0
+                ],
+                "face_index": 72,
+                "distance_mm": 5.2500033
+              }
+            },
+            {
+              "origin_mm": [
+                21.0,
+                2.0,
+                1.0
+              ],
+              "direction": [
+                0,
+                -1,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  21.0,
+                  -3.2500005,
+                  1.0
+                ],
+                "normal": [
+                  0.0,
+                  0.9999999,
+                  -0.0
+                ],
+                "face_index": 73,
+                "distance_mm": 5.2500005
+              }
+            },
+            {
+              "origin_mm": [
+                21.0,
+                2.0,
+                1.0
+              ],
+              "direction": [
+                0,
+                1,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  21.0,
+                  7.249999,
+                  1.0
+                ],
+                "normal": [
+                  -0.0,
+                  -0.9999999,
+                  0.0
+                ],
+                "face_index": 71,
+                "distance_mm": 5.249999
+              }
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "centre_mm": [
+            35.0,
+            2.0
+          ],
+          "nominal_width_mm": 10.6,
+          "width_mm": 10.5999985,
+          "height_mm": 10.5999999,
+          "measured_total_clearance_x_mm": 0.5999985,
+          "measured_total_clearance_y_mm": 0.5999999,
+          "through_at_centre": true,
+          "vertical_ray_from_above": null,
+          "vertical_ray_from_below": null,
+          "inner_walls": [
+            {
+              "axis": "X",
+              "coordinate_mm": 29.7000046,
+              "bounds_min_mm": [
+                29.7000046,
+                -3.3000007,
+                -2.0
+              ],
+              "bounds_max_mm": [
+                29.7000046,
+                7.2999992,
+                2.0
+              ],
+              "area_mm2": 42.4000015,
+              "face_count": 1
+            },
+            {
+              "axis": "X",
+              "coordinate_mm": 40.3000031,
+              "bounds_min_mm": [
+                40.3000031,
+                -3.3000007,
+                -2.0
+              ],
+              "bounds_max_mm": [
+                40.3000031,
+                7.2999992,
+                2.0
+              ],
+              "area_mm2": 42.4000015,
+              "face_count": 1
+            },
+            {
+              "axis": "Y",
+              "coordinate_mm": -3.3000007,
+              "bounds_min_mm": [
+                29.7000046,
+                -3.3000007,
+                -2.0
+              ],
+              "bounds_max_mm": [
+                40.3000031,
+                -3.3000007,
+                2.0
+              ],
+              "area_mm2": 42.3999939,
+              "face_count": 1
+            },
+            {
+              "axis": "Y",
+              "coordinate_mm": 7.2999992,
+              "bounds_min_mm": [
+                29.7000046,
+                7.2999992,
+                -2.0
+              ],
+              "bounds_max_mm": [
+                40.3000031,
+                7.2999992,
+                2.0
+              ],
+              "area_mm2": 42.3999939,
+              "face_count": 1
+            }
+          ],
+          "side_rays": [
+            {
+              "origin_mm": [
+                35.0,
+                2.0,
+                -1.0
+              ],
+              "direction": [
+                -1,
+                0,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  29.7000046,
+                  2.0,
+                  -1.0
+                ],
+                "normal": [
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                "face_index": 74,
+                "distance_mm": 5.2999949
+              }
+            },
+            {
+              "origin_mm": [
+                35.0,
+                2.0,
+                -1.0
+              ],
+              "direction": [
+                1,
+                0,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  40.3000031,
+                  2.0,
+                  -1.0
+                ],
+                "normal": [
+                  -1.0,
+                  0.0,
+                  -0.0
+                ],
+                "face_index": 76,
+                "distance_mm": 5.3000031
+              }
+            },
+            {
+              "origin_mm": [
+                35.0,
+                2.0,
+                -1.0
+              ],
+              "direction": [
+                0,
+                -1,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  35.0,
+                  -3.3000011,
+                  -1.0
+                ],
+                "normal": [
+                  0.0,
+                  1.0,
+                  -0.0
+                ],
+                "face_index": 77,
+                "distance_mm": 5.3000011
+              }
+            },
+            {
+              "origin_mm": [
+                35.0,
+                2.0,
+                -1.0
+              ],
+              "direction": [
+                0,
+                1,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  35.0,
+                  7.2999997,
+                  -1.0
+                ],
+                "normal": [
+                  -0.0,
+                  -1.0,
+                  0.0
+                ],
+                "face_index": 75,
+                "distance_mm": 5.2999997
+              }
+            },
+            {
+              "origin_mm": [
+                35.0,
+                2.0,
+                0.0
+              ],
+              "direction": [
+                -1,
+                0,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  29.7000046,
+                  2.0,
+                  0.0
+                ],
+                "normal": [
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                "face_index": 74,
+                "distance_mm": 5.2999949
+              }
+            },
+            {
+              "origin_mm": [
+                35.0,
+                2.0,
+                0.0
+              ],
+              "direction": [
+                1,
+                0,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  40.3000031,
+                  2.0,
+                  0.0
+                ],
+                "normal": [
+                  -1.0,
+                  0.0,
+                  -0.0
+                ],
+                "face_index": 76,
+                "distance_mm": 5.3000031
+              }
+            },
+            {
+              "origin_mm": [
+                35.0,
+                2.0,
+                0.0
+              ],
+              "direction": [
+                0,
+                -1,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  35.0,
+                  -3.3000011,
+                  0.0
+                ],
+                "normal": [
+                  0.0,
+                  1.0,
+                  -0.0
+                ],
+                "face_index": 77,
+                "distance_mm": 5.3000011
+              }
+            },
+            {
+              "origin_mm": [
+                35.0,
+                2.0,
+                0.0
+              ],
+              "direction": [
+                0,
+                1,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  35.0,
+                  7.2999997,
+                  0.0
+                ],
+                "normal": [
+                  -0.0,
+                  -1.0,
+                  0.0
+                ],
+                "face_index": 75,
+                "distance_mm": 5.2999997
+              }
+            },
+            {
+              "origin_mm": [
+                35.0,
+                2.0,
+                1.0
+              ],
+              "direction": [
+                -1,
+                0,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  29.7000046,
+                  2.0,
+                  1.0
+                ],
+                "normal": [
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                "face_index": 74,
+                "distance_mm": 5.2999949
+              }
+            },
+            {
+              "origin_mm": [
+                35.0,
+                2.0,
+                1.0
+              ],
+              "direction": [
+                1,
+                0,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  40.3000031,
+                  2.0,
+                  1.0
+                ],
+                "normal": [
+                  -1.0,
+                  0.0,
+                  -0.0
+                ],
+                "face_index": 76,
+                "distance_mm": 5.3000026
+              }
+            },
+            {
+              "origin_mm": [
+                35.0,
+                2.0,
+                1.0
+              ],
+              "direction": [
+                0,
+                -1,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  35.0,
+                  -3.3000007,
+                  1.0
+                ],
+                "normal": [
+                  0.0,
+                  1.0,
+                  -0.0
+                ],
+                "face_index": 77,
+                "distance_mm": 5.3000007
+              }
+            },
+            {
+              "origin_mm": [
+                35.0,
+                2.0,
+                1.0
+              ],
+              "direction": [
+                0,
+                1,
+                0
+              ],
+              "hit": {
+                "location_mm": [
+                  35.0,
+                  7.2999997,
+                  1.0
+                ],
+                "normal": [
+                  -0.0,
+                  -1.0,
+                  0.0
+                ],
+                "face_index": 75,
+                "distance_mm": 5.2999997
+              }
+            }
+          ]
+        }
+      ],
+      "marker_counts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "marker_total": 21,
+      "markers": [
+        {
+          "hole_number": 1,
+          "count": 1,
+          "points": [
+            {
+              "number_in_row": 1,
+              "centre_mm": [
+                -35.0,
+                -8.5
+              ],
+              "floor_z_mm": 1.2000003,
+              "depth_mm": 0.7999997,
+              "remaining_bottom_thickness_mm": 3.2000003,
+              "floor_ray": {
+                "location_mm": [
+                  -35.0,
+                  -8.5,
+                  1.2000003
+                ],
+                "normal": [
+                  -1e-07,
+                  0.0,
+                  0.9999999
+                ],
+                "face_index": 110,
+                "distance_mm": 1.7999997
+              },
+              "bottom_ray": {
+                "location_mm": [
+                  -35.0,
+                  -8.5,
+                  -2.0
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ],
+                "face_index": 4,
+                "distance_mm": 1.0
+              },
+              "solid_top_controls": [
+                {
+                  "origin_mm": [
+                    -35.0,
+                    -9.4,
+                    3.0
+                  ],
+                  "hit": {
+                    "location_mm": [
+                      -35.0,
+                      -9.3999996,
+                      2.0
+                    ],
+                    "normal": [
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "face_index": 19,
+                    "distance_mm": 0.9999999
+                  }
+                },
+                {
+                  "origin_mm": [
+                    -35.0,
+                    -7.6,
+                    3.0
+                  ],
+                  "hit": {
+                    "location_mm": [
+                      -35.0,
+                      -7.5999999,
+                      2.0
+                    ],
+                    "normal": [
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "face_index": 10,
+                    "distance_mm": 1.0
+                  }
+                }
+              ],
+              "floor_patch": {
+                "bounds_min_mm": [
+                  -35.5999947,
+                  -9.1000004,
+                  1.2000003
+                ],
+                "bounds_max_mm": [
+                  -34.3999901,
+                  -7.9000001,
+                  1.2000003
+                ],
+                "area_mm2": 1.1237234,
+                "face_count": 1
+              }
+            }
+          ]
+        },
+        {
+          "hole_number": 2,
+          "count": 2,
+          "points": [
+            {
+              "number_in_row": 1,
+              "centre_mm": [
+                -21.8,
+                -8.5
+              ],
+              "floor_z_mm": 1.2000005,
+              "depth_mm": 0.7999995,
+              "remaining_bottom_thickness_mm": 3.2000005,
+              "floor_ray": {
+                "location_mm": [
+                  -21.7999992,
+                  -8.5,
+                  1.2000005
+                ],
+                "normal": [
+                  -1e-07,
+                  0.0,
+                  1.0
+                ],
+                "face_index": 143,
+                "distance_mm": 1.7999995
+              },
+              "bottom_ray": {
+                "location_mm": [
+                  -21.7999992,
+                  -8.5,
+                  -2.0
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ],
+                "face_index": 4,
+                "distance_mm": 1.0
+              },
+              "solid_top_controls": [
+                {
+                  "origin_mm": [
+                    -21.8,
+                    -9.4,
+                    3.0
+                  ],
+                  "hit": {
+                    "location_mm": [
+                      -21.7999992,
+                      -9.3999996,
+                      2.0
+                    ],
+                    "normal": [
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "face_index": 19,
+                    "distance_mm": 1.0
+                  }
+                },
+                {
+                  "origin_mm": [
+                    -21.8,
+                    -7.6,
+                    3.0
+                  ],
+                  "hit": {
+                    "location_mm": [
+                      -21.7999992,
+                      -7.5999999,
+                      2.0
+                    ],
+                    "normal": [
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "face_index": 19,
+                    "distance_mm": 1.0
+                  }
+                }
+              ],
+              "floor_patch": {
+                "bounds_min_mm": [
+                  -22.3999901,
+                  -9.1000004,
+                  1.2000003
+                ],
+                "bounds_max_mm": [
+                  -21.1999893,
+                  -7.9000001,
+                  1.2000003
+                ],
+                "area_mm2": 1.1237221,
+                "face_count": 1
+              }
+            },
+            {
+              "number_in_row": 2,
+              "centre_mm": [
+                -20.2,
+                -8.5
+              ],
+              "floor_z_mm": 1.2000004,
+              "depth_mm": 0.7999996,
+              "remaining_bottom_thickness_mm": 3.2000004,
+              "floor_ray": {
+                "location_mm": [
+                  -20.2000008,
+                  -8.5,
+                  1.2000004
+                ],
+                "normal": [
+                  -1e-07,
+                  0.0,
+                  1.0
+                ],
+                "face_index": 176,
+                "distance_mm": 1.7999996
+              },
+              "bottom_ray": {
+                "location_mm": [
+                  -20.2000008,
+                  -8.5,
+                  -2.0
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ],
+                "face_index": 4,
+                "distance_mm": 1.0
+              },
+              "solid_top_controls": [
+                {
+                  "origin_mm": [
+                    -20.2,
+                    -9.4,
+                    3.0
+                  ],
+                  "hit": {
+                    "location_mm": [
+                      -20.2000008,
+                      -9.3999996,
+                      2.0
+                    ],
+                    "normal": [
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "face_index": 19,
+                    "distance_mm": 1.0
+                  }
+                },
+                {
+                  "origin_mm": [
+                    -20.2,
+                    -7.6,
+                    3.0
+                  ],
+                  "hit": {
+                    "location_mm": [
+                      -20.2000008,
+                      -7.5999999,
+                      2.0
+                    ],
+                    "normal": [
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "face_index": 19,
+                    "distance_mm": 0.9999999
+                  }
+                }
+              ],
+              "floor_patch": {
+                "bounds_min_mm": [
+                  -20.7999954,
+                  -9.1000004,
+                  1.2000003
+                ],
+                "bounds_max_mm": [
+                  -19.5999985,
+                  -7.9000001,
+                  1.2000003
+                ],
+                "area_mm2": 1.1237233,
+                "face_count": 1
+              }
+            }
+          ]
+        },
+        {
+          "hole_number": 3,
+          "count": 3,
+          "points": [
+            {
+              "number_in_row": 1,
+              "centre_mm": [
+                -8.6,
+                -8.5
+              ],
+              "floor_z_mm": 1.2000003,
+              "depth_mm": 0.7999997,
+              "remaining_bottom_thickness_mm": 3.2000003,
+              "floor_ray": {
+                "location_mm": [
+                  -8.6000004,
+                  -8.5,
+                  1.2000003
+                ],
+                "normal": [
+                  -1e-07,
+                  0.0,
+                  1.0
+                ],
+                "face_index": 209,
+                "distance_mm": 1.7999997
+              },
+              "bottom_ray": {
+                "location_mm": [
+                  -8.6000004,
+                  -8.5,
+                  -2.0
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ],
+                "face_index": 4,
+                "distance_mm": 1.0
+              },
+              "solid_top_controls": [
+                {
+                  "origin_mm": [
+                    -8.6,
+                    -9.4,
+                    3.0
+                  ],
+                  "hit": {
+                    "location_mm": [
+                      -8.6000004,
+                      -9.3999996,
+                      2.0
+                    ],
+                    "normal": [
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "face_index": 19,
+                    "distance_mm": 1.0
+                  }
+                },
+                {
+                  "origin_mm": [
+                    -8.6,
+                    -7.6,
+                    3.0
+                  ],
+                  "hit": {
+                    "location_mm": [
+                      -8.6000004,
+                      -7.5999999,
+                      2.0
+                    ],
+                    "normal": [
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "face_index": 19,
+                    "distance_mm": 1.0
+                  }
+                }
+              ],
+              "floor_patch": {
+                "bounds_min_mm": [
+                  -9.1999931,
+                  -9.1000004,
+                  1.2000003
+                ],
+                "bounds_max_mm": [
+                  -7.9999924,
+                  -7.9000001,
+                  1.2000003
+                ],
+                "area_mm2": 1.1237211,
+                "face_count": 1
+              }
+            },
+            {
+              "number_in_row": 2,
+              "centre_mm": [
+                -7.0,
+                -8.5
+              ],
+              "floor_z_mm": 1.2000003,
+              "depth_mm": 0.7999997,
+              "remaining_bottom_thickness_mm": 3.2000003,
+              "floor_ray": {
+                "location_mm": [
+                  -7.0,
+                  -8.5,
+                  1.2000003
+                ],
+                "normal": [
+                  -1e-07,
+                  0.0,
+                  1.0
+                ],
+                "face_index": 242,
+                "distance_mm": 1.7999997
+              },
+              "bottom_ray": {
+                "location_mm": [
+                  -7.0,
+                  -8.5,
+                  -2.0
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ],
+                "face_index": 4,
+                "distance_mm": 1.0
+              },
+              "solid_top_controls": [
+                {
+                  "origin_mm": [
+                    -7.0,
+                    -9.4,
+                    3.0
+                  ],
+                  "hit": {
+                    "location_mm": [
+                      -7.0,
+                      -9.3999996,
+                      2.0
+                    ],
+                    "normal": [
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "face_index": 19,
+                    "distance_mm": 1.0
+                  }
+                },
+                {
+                  "origin_mm": [
+                    -7.0,
+                    -7.6,
+                    3.0
+                  ],
+                  "hit": {
+                    "location_mm": [
+                      -7.0,
+                      -7.5999999,
+                      2.0
+                    ],
+                    "normal": [
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "face_index": 19,
+                    "distance_mm": 1.0
+                  }
+                }
+              ],
+              "floor_patch": {
+                "bounds_min_mm": [
+                  -7.5999947,
+                  -9.1000004,
+                  1.2000003
+                ],
+                "bounds_max_mm": [
+                  -6.3999939,
+                  -7.9000001,
+                  1.2000003
+                ],
+                "area_mm2": 1.1237202,
+                "face_count": 1
+              }
+            },
+            {
+              "number_in_row": 3,
+              "centre_mm": [
+                -5.4,
+                -8.5
+              ],
+              "floor_z_mm": 1.2000003,
+              "depth_mm": 0.7999997,
+              "remaining_bottom_thickness_mm": 3.2000003,
+              "floor_ray": {
+                "location_mm": [
+                  -5.4000001,
+                  -8.5,
+                  1.2000003
+                ],
+                "normal": [
+                  -1e-07,
+                  0.0,
+                  1.0
+                ],
+                "face_index": 275,
+                "distance_mm": 1.7999997
+              },
+              "bottom_ray": {
+                "location_mm": [
+                  -5.4000001,
+                  -8.5,
+                  -2.0
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ],
+                "face_index": 4,
+                "distance_mm": 1.0
+              },
+              "solid_top_controls": [
+                {
+                  "origin_mm": [
+                    -5.4,
+                    -9.4,
+                    3.0
+                  ],
+                  "hit": {
+                    "location_mm": [
+                      -5.4000001,
+                      -9.3999996,
+                      2.0
+                    ],
+                    "normal": [
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "face_index": 19,
+                    "distance_mm": 1.0
+                  }
+                },
+                {
+                  "origin_mm": [
+                    -5.4,
+                    -7.6,
+                    3.0
+                  ],
+                  "hit": {
+                    "location_mm": [
+                      -5.4000001,
+                      -7.5999999,
+                      2.0
+                    ],
+                    "normal": [
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "face_index": 19,
+                    "distance_mm": 0.9999999
+                  }
+                }
+              ],
+              "floor_patch": {
+                "bounds_min_mm": [
+                  -5.9999924,
+                  -9.1000004,
+                  1.2000003
+                ],
+                "bounds_max_mm": [
+                  -4.7999916,
+                  -7.9000001,
+                  1.2000003
+                ],
+                "area_mm2": 1.1237202,
+                "face_count": 1
+              }
+            }
+          ]
+        },
+        {
+          "hole_number": 4,
+          "count": 4,
+          "points": [
+            {
+              "number_in_row": 1,
+              "centre_mm": [
+                4.6,
+                -8.5
+              ],
+              "floor_z_mm": 1.2000003,
+              "depth_mm": 0.7999997,
+              "remaining_bottom_thickness_mm": 3.2000003,
+              "floor_ray": {
+                "location_mm": [
+                  4.5999999,
+                  -8.5,
+                  1.2000003
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "face_index": 308,
+                "distance_mm": 1.7999997
+              },
+              "bottom_ray": {
+                "location_mm": [
+                  4.5999999,
+                  -8.5,
+                  -2.0
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ],
+                "face_index": 4,
+                "distance_mm": 1.0
+              },
+              "solid_top_controls": [
+                {
+                  "origin_mm": [
+                    4.6,
+                    -9.4,
+                    3.0
+                  ],
+                  "hit": {
+                    "location_mm": [
+                      4.5999999,
+                      -9.3999996,
+                      2.0
+                    ],
+                    "normal": [
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "face_index": 19,
+                    "distance_mm": 1.0
+                  }
+                },
+                {
+                  "origin_mm": [
+                    4.6,
+                    -7.6,
+                    3.0
+                  ],
+                  "hit": {
+                    "location_mm": [
+                      4.5999999,
+                      -7.5999999,
+                      2.0
+                    ],
+                    "normal": [
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "face_index": 15,
+                    "distance_mm": 1.0
+                  }
+                }
+              ],
+              "floor_patch": {
+                "bounds_min_mm": [
+                  4.0000076,
+                  -9.1000004,
+                  1.2000003
+                ],
+                "bounds_max_mm": [
+                  5.2000046,
+                  -7.9000001,
+                  1.2000003
+                ],
+                "area_mm2": 1.123719,
+                "face_count": 1
+              }
+            },
+            {
+              "number_in_row": 2,
+              "centre_mm": [
+                6.2,
+                -8.5
+              ],
+              "floor_z_mm": 1.2000002,
+              "depth_mm": 0.7999998,
+              "remaining_bottom_thickness_mm": 3.2000002,
+              "floor_ray": {
+                "location_mm": [
+                  6.1999998,
+                  -8.5,
+                  1.2000002
+                ],
+                "normal": [
+                  1e-07,
+                  0.0,
+                  1.0
+                ],
+                "face_index": 341,
+                "distance_mm": 1.7999998
+              },
+              "bottom_ray": {
+                "location_mm": [
+                  6.1999998,
+                  -8.5,
+                  -2.0
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ],
+                "face_index": 4,
+                "distance_mm": 1.0
+              },
+              "solid_top_controls": [
+                {
+                  "origin_mm": [
+                    6.2,
+                    -9.4,
+                    3.0
+                  ],
+                  "hit": {
+                    "location_mm": [
+                      6.1999998,
+                      -9.3999996,
+                      2.0
+                    ],
+                    "normal": [
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "face_index": 19,
+                    "distance_mm": 1.0
+                  }
+                },
+                {
+                  "origin_mm": [
+                    6.2,
+                    -7.6,
+                    3.0
+                  ],
+                  "hit": {
+                    "location_mm": [
+                      6.1999998,
+                      -7.5999999,
+                      2.0
+                    ],
+                    "normal": [
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "face_index": 15,
+                    "distance_mm": 1.0
+                  }
+                }
+              ],
+              "floor_patch": {
+                "bounds_min_mm": [
+                  5.6000061,
+                  -9.1000004,
+                  1.2000003
+                ],
+                "bounds_max_mm": [
+                  6.8000069,
+                  -7.9000001,
+                  1.2000003
+                ],
+                "area_mm2": 1.12372,
+                "face_count": 1
+              }
+            },
+            {
+              "number_in_row": 3,
+              "centre_mm": [
+                7.8,
+                -8.5
+              ],
+              "floor_z_mm": 1.2000003,
+              "depth_mm": 0.7999997,
+              "remaining_bottom_thickness_mm": 3.2000003,
+              "floor_ray": {
+                "location_mm": [
+                  7.8000002,
+                  -8.5,
+                  1.2000003
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "face_index": 374,
+                "distance_mm": 1.7999997
+              },
+              "bottom_ray": {
+                "location_mm": [
+                  7.8000002,
+                  -8.5,
+                  -2.0
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ],
+                "face_index": 4,
+                "distance_mm": 1.0
+              },
+              "solid_top_controls": [
+                {
+                  "origin_mm": [
+                    7.8,
+                    -9.4,
+                    3.0
+                  ],
+                  "hit": {
+                    "location_mm": [
+                      7.8000002,
+                      -9.3999996,
+                      2.0
+                    ],
+                    "normal": [
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "face_index": 19,
+                    "distance_mm": 1.0
+                  }
+                },
+                {
+                  "origin_mm": [
+                    7.8,
+                    -7.6,
+                    3.0
+                  ],
+                  "hit": {
+                    "location_mm": [
+                      7.8000002,
+                      -7.5999999,
+                      2.0
+                    ],
+                    "normal": [
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "face_index": 15,
+                    "distance_mm": 1.0
+                  }
+                }
+              ],
+              "floor_patch": {
+                "bounds_min_mm": [
+                  7.2000065,
+                  -9.1000004,
+                  1.2000003
+                ],
+                "bounds_max_mm": [
+                  8.4000053,
+                  -7.9000001,
+                  1.2000003
+                ],
+                "area_mm2": 1.1237199,
+                "face_count": 1
+              }
+            },
+            {
+              "number_in_row": 4,
+              "centre_mm": [
+                9.4,
+                -8.5
+              ],
+              "floor_z_mm": 1.2000003,
+              "depth_mm": 0.7999997,
+              "remaining_bottom_thickness_mm": 3.2000003,
+              "floor_ray": {
+                "location_mm": [
+                  9.3999996,
+                  -8.5,
+                  1.2000003
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "face_index": 407,
+                "distance_mm": 1.7999997
+              },
+              "bottom_ray": {
+                "location_mm": [
+                  9.3999996,
+                  -8.5,
+                  -2.0
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ],
+                "face_index": 4,
+                "distance_mm": 1.0
+              },
+              "solid_top_controls": [
+                {
+                  "origin_mm": [
+                    9.4,
+                    -9.4,
+                    3.0
+                  ],
+                  "hit": {
+                    "location_mm": [
+                      9.3999996,
+                      -9.3999996,
+                      2.0
+                    ],
+                    "normal": [
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "face_index": 19,
+                    "distance_mm": 0.9999999
+                  }
+                },
+                {
+                  "origin_mm": [
+                    9.4,
+                    -7.6,
+                    3.0
+                  ],
+                  "hit": {
+                    "location_mm": [
+                      9.3999996,
+                      -7.5999999,
+                      2.0
+                    ],
+                    "normal": [
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "face_index": 15,
+                    "distance_mm": 1.0
+                  }
+                }
+              ],
+              "floor_patch": {
+                "bounds_min_mm": [
+                  8.8000069,
+                  -9.1000004,
+                  1.2000003
+                ],
+                "bounds_max_mm": [
+                  10.0000076,
+                  -7.9000001,
+                  1.2000003
+                ],
+                "area_mm2": 1.1237209,
+                "face_count": 1
+              }
+            }
+          ]
+        },
+        {
+          "hole_number": 5,
+          "count": 5,
+          "points": [
+            {
+              "number_in_row": 1,
+              "centre_mm": [
+                17.8,
+                -8.5
+              ],
+              "floor_z_mm": 1.2000003,
+              "depth_mm": 0.7999997,
+              "remaining_bottom_thickness_mm": 3.2000003,
+              "floor_ray": {
+                "location_mm": [
+                  17.7999992,
+                  -8.5,
+                  1.2000003
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "face_index": 440,
+                "distance_mm": 1.7999997
+              },
+              "bottom_ray": {
+                "location_mm": [
+                  17.7999992,
+                  -8.5,
+                  -2.0
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ],
+                "face_index": 4,
+                "distance_mm": 1.0
+              },
+              "solid_top_controls": [
+                {
+                  "origin_mm": [
+                    17.8,
+                    -9.4,
+                    3.0
+                  ],
+                  "hit": {
+                    "location_mm": [
+                      17.7999992,
+                      -9.3999996,
+                      2.0
+                    ],
+                    "normal": [
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "face_index": 19,
+                    "distance_mm": 1.0
+                  }
+                },
+                {
+                  "origin_mm": [
+                    17.8,
+                    -7.6,
+                    3.0
+                  ],
+                  "hit": {
+                    "location_mm": [
+                      17.7999992,
+                      -7.5999999,
+                      2.0
+                    ],
+                    "normal": [
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "face_index": 19,
+                    "distance_mm": 1.0
+                  }
+                }
+              ],
+              "floor_patch": {
+                "bounds_min_mm": [
+                  17.2000065,
+                  -9.1000004,
+                  1.2000003
+                ],
+                "bounds_max_mm": [
+                  18.4000053,
+                  -7.9000001,
+                  1.2000003
+                ],
+                "area_mm2": 1.1237202,
+                "face_count": 1
+              }
+            },
+            {
+              "number_in_row": 2,
+              "centre_mm": [
+                19.4,
+                -8.5
+              ],
+              "floor_z_mm": 1.2,
+              "depth_mm": 0.8,
+              "remaining_bottom_thickness_mm": 3.2,
+              "floor_ray": {
+                "location_mm": [
+                  19.3999996,
+                  -8.5,
+                  1.2
+                ],
+                "normal": [
+                  -1e-07,
+                  0.0,
+                  1.0
+                ],
+                "face_index": 473,
+                "distance_mm": 1.8
+              },
+              "bottom_ray": {
+                "location_mm": [
+                  19.3999996,
+                  -8.5,
+                  -2.0
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ],
+                "face_index": 4,
+                "distance_mm": 1.0
+              },
+              "solid_top_controls": [
+                {
+                  "origin_mm": [
+                    19.4,
+                    -9.4,
+                    3.0
+                  ],
+                  "hit": {
+                    "location_mm": [
+                      19.3999996,
+                      -9.3999996,
+                      2.0
+                    ],
+                    "normal": [
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "face_index": 19,
+                    "distance_mm": 1.0
+                  }
+                },
+                {
+                  "origin_mm": [
+                    19.4,
+                    -7.6,
+                    3.0
+                  ],
+                  "hit": {
+                    "location_mm": [
+                      19.3999996,
+                      -7.5999999,
+                      2.0
+                    ],
+                    "normal": [
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "face_index": 16,
+                    "distance_mm": 1.0
+                  }
+                }
+              ],
+              "floor_patch": {
+                "bounds_min_mm": [
+                  18.8000069,
+                  -9.1000004,
+                  1.2000003
+                ],
+                "bounds_max_mm": [
+                  20.0000057,
+                  -7.9000001,
+                  1.2000003
+                ],
+                "area_mm2": 1.1237237,
+                "face_count": 1
+              }
+            },
+            {
+              "number_in_row": 3,
+              "centre_mm": [
+                21.0,
+                -8.5
+              ],
+              "floor_z_mm": 1.2000002,
+              "depth_mm": 0.7999998,
+              "remaining_bottom_thickness_mm": 3.2000002,
+              "floor_ray": {
+                "location_mm": [
+                  21.0,
+                  -8.5,
+                  1.2000002
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "face_index": 506,
+                "distance_mm": 1.7999998
+              },
+              "bottom_ray": {
+                "location_mm": [
+                  21.0,
+                  -8.5,
+                  -2.0
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ],
+                "face_index": 4,
+                "distance_mm": 1.0
+              },
+              "solid_top_controls": [
+                {
+                  "origin_mm": [
+                    21.0,
+                    -9.4,
+                    3.0
+                  ],
+                  "hit": {
+                    "location_mm": [
+                      21.0,
+                      -9.3999996,
+                      2.0
+                    ],
+                    "normal": [
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "face_index": 19,
+                    "distance_mm": 1.0
+                  }
+                },
+                {
+                  "origin_mm": [
+                    21.0,
+                    -7.6,
+                    3.0
+                  ],
+                  "hit": {
+                    "location_mm": [
+                      21.0,
+                      -7.5999999,
+                      2.0
+                    ],
+                    "normal": [
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "face_index": 16,
+                    "distance_mm": 1.0
+                  }
+                }
+              ],
+              "floor_patch": {
+                "bounds_min_mm": [
+                  20.4000053,
+                  -9.1000004,
+                  1.2000003
+                ],
+                "bounds_max_mm": [
+                  21.6000061,
+                  -7.9000001,
+                  1.2000003
+                ],
+                "area_mm2": 1.123724,
+                "face_count": 1
+              }
+            },
+            {
+              "number_in_row": 4,
+              "centre_mm": [
+                22.6,
+                -8.5
+              ],
+              "floor_z_mm": 1.2000002,
+              "depth_mm": 0.7999998,
+              "remaining_bottom_thickness_mm": 3.2000002,
+              "floor_ray": {
+                "location_mm": [
+                  22.6000004,
+                  -8.5,
+                  1.2000002
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "face_index": 539,
+                "distance_mm": 1.7999998
+              },
+              "bottom_ray": {
+                "location_mm": [
+                  22.6000004,
+                  -8.5,
+                  -2.0
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ],
+                "face_index": 4,
+                "distance_mm": 1.0
+              },
+              "solid_top_controls": [
+                {
+                  "origin_mm": [
+                    22.6,
+                    -9.4,
+                    3.0
+                  ],
+                  "hit": {
+                    "location_mm": [
+                      22.6000004,
+                      -9.3999996,
+                      2.0
+                    ],
+                    "normal": [
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "face_index": 19,
+                    "distance_mm": 1.0
+                  }
+                },
+                {
+                  "origin_mm": [
+                    22.6,
+                    -7.6,
+                    3.0
+                  ],
+                  "hit": {
+                    "location_mm": [
+                      22.6000004,
+                      -7.5999999,
+                      2.0
+                    ],
+                    "normal": [
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "face_index": 16,
+                    "distance_mm": 0.9999999
+                  }
+                }
+              ],
+              "floor_patch": {
+                "bounds_min_mm": [
+                  22.0000057,
+                  -9.1000004,
+                  1.2000003
+                ],
+                "bounds_max_mm": [
+                  23.2000065,
+                  -7.9000001,
+                  1.2000003
+                ],
+                "area_mm2": 1.1237202,
+                "face_count": 1
+              }
+            },
+            {
+              "number_in_row": 5,
+              "centre_mm": [
+                24.2,
+                -8.5
+              ],
+              "floor_z_mm": 1.2000002,
+              "depth_mm": 0.7999998,
+              "remaining_bottom_thickness_mm": 3.2000002,
+              "floor_ray": {
+                "location_mm": [
+                  24.2000008,
+                  -8.5,
+                  1.2000002
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "face_index": 572,
+                "distance_mm": 1.7999998
+              },
+              "bottom_ray": {
+                "location_mm": [
+                  24.2000008,
+                  -8.5,
+                  -2.0
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ],
+                "face_index": 4,
+                "distance_mm": 1.0
+              },
+              "solid_top_controls": [
+                {
+                  "origin_mm": [
+                    24.2,
+                    -9.4,
+                    3.0
+                  ],
+                  "hit": {
+                    "location_mm": [
+                      24.2000008,
+                      -9.3999996,
+                      2.0
+                    ],
+                    "normal": [
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "face_index": 19,
+                    "distance_mm": 1.0
+                  }
+                },
+                {
+                  "origin_mm": [
+                    24.2,
+                    -7.6,
+                    3.0
+                  ],
+                  "hit": {
+                    "location_mm": [
+                      24.2000008,
+                      -7.5999999,
+                      2.0
+                    ],
+                    "normal": [
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "face_index": 16,
+                    "distance_mm": 0.9999999
+                  }
+                }
+              ],
+              "floor_patch": {
+                "bounds_min_mm": [
+                  23.6000061,
+                  -9.1000004,
+                  1.2000003
+                ],
+                "bounds_max_mm": [
+                  24.8000069,
+                  -7.9000001,
+                  1.2000003
+                ],
+                "area_mm2": 1.1237202,
+                "face_count": 1
+              }
+            }
+          ]
+        },
+        {
+          "hole_number": 6,
+          "count": 6,
+          "points": [
+            {
+              "number_in_row": 1,
+              "centre_mm": [
+                31.0,
+                -8.5
+              ],
+              "floor_z_mm": 1.2000003,
+              "depth_mm": 0.7999997,
+              "remaining_bottom_thickness_mm": 3.2000003,
+              "floor_ray": {
+                "location_mm": [
+                  31.0,
+                  -8.5,
+                  1.2000003
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "face_index": 605,
+                "distance_mm": 1.7999997
+              },
+              "bottom_ray": {
+                "location_mm": [
+                  31.0,
+                  -8.5,
+                  -2.0
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ],
+                "face_index": 4,
+                "distance_mm": 1.0
+              },
+              "solid_top_controls": [
+                {
+                  "origin_mm": [
+                    31.0,
+                    -9.4,
+                    3.0
+                  ],
+                  "hit": {
+                    "location_mm": [
+                      31.0,
+                      -9.3999996,
+                      2.0
+                    ],
+                    "normal": [
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "face_index": 19,
+                    "distance_mm": 1.0
+                  }
+                },
+                {
+                  "origin_mm": [
+                    31.0,
+                    -7.6,
+                    3.0
+                  ],
+                  "hit": {
+                    "location_mm": [
+                      31.0,
+                      -7.5999999,
+                      2.0
+                    ],
+                    "normal": [
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "face_index": 19,
+                    "distance_mm": 1.0
+                  }
+                }
+              ],
+              "floor_patch": {
+                "bounds_min_mm": [
+                  30.4000072,
+                  -9.1000004,
+                  1.2000003
+                ],
+                "bounds_max_mm": [
+                  31.600008,
+                  -7.9000001,
+                  1.2000003
+                ],
+                "area_mm2": 1.1237209,
+                "face_count": 1
+              }
+            },
+            {
+              "number_in_row": 2,
+              "centre_mm": [
+                32.6,
+                -8.5
+              ],
+              "floor_z_mm": 1.2000003,
+              "depth_mm": 0.7999997,
+              "remaining_bottom_thickness_mm": 3.2000003,
+              "floor_ray": {
+                "location_mm": [
+                  32.5999985,
+                  -8.5,
+                  1.2000003
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "face_index": 638,
+                "distance_mm": 1.7999997
+              },
+              "bottom_ray": {
+                "location_mm": [
+                  32.5999985,
+                  -8.5,
+                  -2.0
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ],
+                "face_index": 4,
+                "distance_mm": 1.0
+              },
+              "solid_top_controls": [
+                {
+                  "origin_mm": [
+                    32.6,
+                    -9.4,
+                    3.0
+                  ],
+                  "hit": {
+                    "location_mm": [
+                      32.5999985,
+                      -9.3999996,
+                      2.0
+                    ],
+                    "normal": [
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "face_index": 19,
+                    "distance_mm": 1.0
+                  }
+                },
+                {
+                  "origin_mm": [
+                    32.6,
+                    -7.6,
+                    3.0
+                  ],
+                  "hit": {
+                    "location_mm": [
+                      32.5999985,
+                      -7.5999999,
+                      2.0
+                    ],
+                    "normal": [
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "face_index": 18,
+                    "distance_mm": 1.0
+                  }
+                }
+              ],
+              "floor_patch": {
+                "bounds_min_mm": [
+                  32.0000076,
+                  -9.1000004,
+                  1.2000003
+                ],
+                "bounds_max_mm": [
+                  33.2000046,
+                  -7.9000001,
+                  1.2000003
+                ],
+                "area_mm2": 1.123719,
+                "face_count": 1
+              }
+            },
+            {
+              "number_in_row": 3,
+              "centre_mm": [
+                34.2,
+                -8.5
+              ],
+              "floor_z_mm": 1.2000003,
+              "depth_mm": 0.7999997,
+              "remaining_bottom_thickness_mm": 3.2000003,
+              "floor_ray": {
+                "location_mm": [
+                  34.2000008,
+                  -8.5,
+                  1.2000003
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "face_index": 671,
+                "distance_mm": 1.7999997
+              },
+              "bottom_ray": {
+                "location_mm": [
+                  34.2000008,
+                  -8.5,
+                  -2.0
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ],
+                "face_index": 4,
+                "distance_mm": 1.0
+              },
+              "solid_top_controls": [
+                {
+                  "origin_mm": [
+                    34.2,
+                    -9.4,
+                    3.0
+                  ],
+                  "hit": {
+                    "location_mm": [
+                      34.2000008,
+                      -9.3999996,
+                      2.0
+                    ],
+                    "normal": [
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "face_index": 19,
+                    "distance_mm": 1.0
+                  }
+                },
+                {
+                  "origin_mm": [
+                    34.2,
+                    -7.6,
+                    3.0
+                  ],
+                  "hit": {
+                    "location_mm": [
+                      34.2000008,
+                      -7.5999999,
+                      2.0
+                    ],
+                    "normal": [
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "face_index": 18,
+                    "distance_mm": 1.0
+                  }
+                }
+              ],
+              "floor_patch": {
+                "bounds_min_mm": [
+                  33.6000061,
+                  -9.1000004,
+                  1.2000003
+                ],
+                "bounds_max_mm": [
+                  34.8000031,
+                  -7.9000001,
+                  1.2000003
+                ],
+                "area_mm2": 1.123719,
+                "face_count": 1
+              }
+            },
+            {
+              "number_in_row": 4,
+              "centre_mm": [
+                35.8,
+                -8.5
+              ],
+              "floor_z_mm": 1.2000003,
+              "depth_mm": 0.7999997,
+              "remaining_bottom_thickness_mm": 3.2000003,
+              "floor_ray": {
+                "location_mm": [
+                  35.7999992,
+                  -8.5,
+                  1.2000003
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "face_index": 704,
+                "distance_mm": 1.7999997
+              },
+              "bottom_ray": {
+                "location_mm": [
+                  35.7999992,
+                  -8.5,
+                  -2.0
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ],
+                "face_index": 4,
+                "distance_mm": 1.0
+              },
+              "solid_top_controls": [
+                {
+                  "origin_mm": [
+                    35.8,
+                    -9.4,
+                    3.0
+                  ],
+                  "hit": {
+                    "location_mm": [
+                      35.7999992,
+                      -9.3999996,
+                      2.0
+                    ],
+                    "normal": [
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "face_index": 19,
+                    "distance_mm": 1.0
+                  }
+                },
+                {
+                  "origin_mm": [
+                    35.8,
+                    -7.6,
+                    3.0
+                  ],
+                  "hit": {
+                    "location_mm": [
+                      35.7999992,
+                      -7.5999999,
+                      2.0
+                    ],
+                    "normal": [
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "face_index": 18,
+                    "distance_mm": 0.9999999
+                  }
+                }
+              ],
+              "floor_patch": {
+                "bounds_min_mm": [
+                  35.2000046,
+                  -9.1000004,
+                  1.2000003
+                ],
+                "bounds_max_mm": [
+                  36.4000053,
+                  -7.9000001,
+                  1.2000003
+                ],
+                "area_mm2": 1.1237209,
+                "face_count": 1
+              }
+            },
+            {
+              "number_in_row": 5,
+              "centre_mm": [
+                37.4,
+                -8.5
+              ],
+              "floor_z_mm": 1.2000003,
+              "depth_mm": 0.7999997,
+              "remaining_bottom_thickness_mm": 3.2000003,
+              "floor_ray": {
+                "location_mm": [
+                  37.4000015,
+                  -8.5,
+                  1.2000003
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "face_index": 737,
+                "distance_mm": 1.7999997
+              },
+              "bottom_ray": {
+                "location_mm": [
+                  37.4000015,
+                  -8.5,
+                  -2.0
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ],
+                "face_index": 4,
+                "distance_mm": 1.0
+              },
+              "solid_top_controls": [
+                {
+                  "origin_mm": [
+                    37.4,
+                    -9.4,
+                    3.0
+                  ],
+                  "hit": {
+                    "location_mm": [
+                      37.4000015,
+                      -9.3999996,
+                      2.0
+                    ],
+                    "normal": [
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "face_index": 19,
+                    "distance_mm": 1.0
+                  }
+                },
+                {
+                  "origin_mm": [
+                    37.4,
+                    -7.6,
+                    3.0
+                  ],
+                  "hit": {
+                    "location_mm": [
+                      37.4000015,
+                      -7.5999999,
+                      2.0
+                    ],
+                    "normal": [
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "face_index": 18,
+                    "distance_mm": 1.0
+                  }
+                }
+              ],
+              "floor_patch": {
+                "bounds_min_mm": [
+                  36.8000031,
+                  -9.1000004,
+                  1.2000003
+                ],
+                "bounds_max_mm": [
+                  38.0000038,
+                  -7.9000001,
+                  1.2000003
+                ],
+                "area_mm2": 1.1237209,
+                "face_count": 1
+              }
+            },
+            {
+              "number_in_row": 6,
+              "centre_mm": [
+                39.0,
+                -8.5
+              ],
+              "floor_z_mm": 1.2000004,
+              "depth_mm": 0.7999996,
+              "remaining_bottom_thickness_mm": 3.2000004,
+              "floor_ray": {
+                "location_mm": [
+                  39.0,
+                  -8.5,
+                  1.2000004
+                ],
+                "normal": [
+                  -1e-07,
+                  0.0,
+                  1.0
+                ],
+                "face_index": 53,
+                "distance_mm": 1.7999996
+              },
+              "bottom_ray": {
+                "location_mm": [
+                  39.0,
+                  -8.5,
+                  -2.0
+                ],
+                "normal": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ],
+                "face_index": 4,
+                "distance_mm": 1.0
+              },
+              "solid_top_controls": [
+                {
+                  "origin_mm": [
+                    39.0,
+                    -9.4,
+                    3.0
+                  ],
+                  "hit": {
+                    "location_mm": [
+                      39.0,
+                      -9.3999996,
+                      2.0
+                    ],
+                    "normal": [
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "face_index": 19,
+                    "distance_mm": 1.0
+                  }
+                },
+                {
+                  "origin_mm": [
+                    39.0,
+                    -7.6,
+                    3.0
+                  ],
+                  "hit": {
+                    "location_mm": [
+                      39.0,
+                      -7.5999999,
+                      2.0
+                    ],
+                    "normal": [
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "face_index": 18,
+                    "distance_mm": 1.0
+                  }
+                }
+              ],
+              "floor_patch": {
+                "bounds_min_mm": [
+                  38.4000015,
+                  -9.1000004,
+                  1.2000003
+                ],
+                "bounds_max_mm": [
+                  39.6000023,
+                  -7.9000001,
+                  1.2000003
+                ],
+                "area_mm2": 1.1237217,
+                "face_count": 1
+              }
+            }
+          ]
+        }
+      ],
+      "non_manifold_edges": 0,
+      "isolated_vertices": 0,
+      "connected_shells": 1,
+      "euler_characteristic": -10,
+      "genus": 6,
+      "closed_volume": true,
+      "volume_mm3": 7393.4816018,
+      "expected_volume_from_measured_mesh_mm3": 7393.481596,
+      "mesh_counts": {
+        "vertices": 1417,
+        "edges": 2165,
+        "faces": 738
+      },
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "unit_scale": 0.001,
+      "length_unit": "MILLIMETERS",
+      "solid_plate_control_rays": {
+        "top": {
+          "location_mm": [
+            -46.0,
+            0.0,
+            2.0
+          ],
+          "normal": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "face_index": 19,
+          "distance_mm": 1.0
+        },
+        "bottom": {
+          "location_mm": [
+            -46.0,
+            0.0,
+            -2.0
+          ],
+          "normal": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "face_index": 4,
+          "distance_mm": 1.0
+        }
+      },
+      "printed": false,
+      "fit_tested": false,
+      "qualified_clearance_mm": null,
+      "clearance_status": "experimental trial points; no qualified printed fit",
+      "numericComparison": {
+        "purpose": "Floating point reconstruction only; not manufacturing tolerance or fit acceptance",
+        "dimensionsAbsMm": 0.0001,
+        "normalAbs": 1e-06,
+        "volumeRelative": 1e-05
+      },
+      "kind": "hole_plate",
+      "scene_path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\05\\2026-10-22-lesson05-holes-demo-v002\\demo-files\\u05_hole_plate_v001.blend",
+      "scene_sha256": "10bfffd651d1583d8704164288aa0757fa617f67a30e21176d7fc892aef3e692",
+      "reopened": true,
+      "nominal_pin_source": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\05\\2026-10-22-lesson05-demo-v002\\demo-files\\u05_fit_coupon_v001.blend",
+      "nominal_pin_source_sha256": "c2f3edd915324ba66bbd3fb8c6ad1ea0214a539f74cbc732e37adc35f7325162"
+    },
+    "runnerStatus": {
+      "status": "completed",
+      "scenario": "lesson05_holes",
+      "outputDir": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\05\\2026-10-22-lesson05-holes-demo-v002",
+      "startedAt": "2026-10-22T07:30:01.273Z",
+      "endedAt": "2026-10-22T07:32:52.505Z",
+      "blenderExitCode": 0,
+      "timeoutSeconds": 600,
+      "workspacesUnchanged": true,
+      "runErrors": [],
+      "workspacesBefore": {
+        ".": {
+          "kind": "directory"
+        },
+        "01": {
+          "kind": "directory"
+        },
+        "02": {
+          "kind": "directory"
+        },
+        "03": {
+          "kind": "directory"
+        },
+        "04": {
+          "kind": "directory"
+        },
+        "05": {
+          "kind": "directory"
+        },
+        "06": {
+          "kind": "directory"
+        },
+        "07": {
+          "kind": "directory"
+        },
+        "08": {
+          "kind": "directory"
+        },
+        "09": {
+          "kind": "directory"
+        },
+        "04/exports": {
+          "kind": "directory"
+        }
+      },
+      "workspacesAfter": {
+        ".": {
+          "kind": "directory"
+        },
+        "01": {
+          "kind": "directory"
+        },
+        "02": {
+          "kind": "directory"
+        },
+        "03": {
+          "kind": "directory"
+        },
+        "04": {
+          "kind": "directory"
+        },
+        "05": {
+          "kind": "directory"
+        },
+        "06": {
+          "kind": "directory"
+        },
+        "07": {
+          "kind": "directory"
+        },
+        "08": {
+          "kind": "directory"
+        },
+        "09": {
+          "kind": "directory"
+        },
+        "04/exports": {
+          "kind": "directory"
+        }
+      },
+      "workspaceChanges": []
+    },
+    "verificationEvidence": {
+      "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/verification.json",
+      "sha256": "9aa2233513212af05431ecc2d79472b688b445e1d3c381cbe456e9b03bc1e609"
+    },
+    "runnerEvidence": {
+      "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/runner-status.json",
+      "sha256": "338a2ca7bace88f33c7028316f3c332d0ef292f411d65a172ecbdd0bcb5f1e5e"
+    },
+    "numericComparison": {
+      "meshReadbackAbsToleranceMm": 0.0001,
+      "declaredParametersAbsToleranceMm": 1e-06,
+      "purpose": "僅處理網格世界座標的單精度浮點讀回誤差；此數值比較門檻不是製造公差、不是配合間隙，也不是合格判定。"
+    }
+  }
+}

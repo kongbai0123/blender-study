@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+learning/progress.json
+learning/.progress.lock
+learning/.history/
+learning/workspaces/
+learning/evidence/
+learning/journal/
+learning/archive/
+learning/runtime.json
+learning/server.log
+learning/server-error.log
+learning/tests/.scratch/
+learning/.publication-private/

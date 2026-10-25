@@ -1,0 +1,1175 @@
+{
+  "id": "2026-10-22-lesson02-demo-v001",
+  "actor": "tutor",
+  "authorization": "使用者要求：「照第一單元的方式，繼續做第二、三單元的實作示範與截圖紀錄。」",
+  "application": "Blender 5.2.1 LTS",
+  "buildHash": "9e2066aef7ef",
+  "captureMethod": "Blender bpy.ops.screen.screenshot；獨立實例 --factory-startup --enable-event-simulate，滑鼠／鍵盤以 Window.event_simulate 模擬；檔案瀏覽器的資料夾與檔名欄位由程式寫入",
+  "script": "learning/tutor/scenarios/lesson02.py",
+  "pixelEdits": false,
+  "highlightsDrawnBy": "教學頁 CSS 疊框（原圖未修改）",
+  "learnerWorkspaceWrites": false,
+  "demoFiles": "learning/evidence/02/2026-10-22-lesson02-demo-v001/demo-files/",
+  "records": [
+    {
+      "seq": 1,
+      "step": "02-01",
+      "slug": "start",
+      "recordedAt": "2026-10-22T06:03:26.656Z",
+      "action": "從 General 預設場景開始，先核對畫面與物件",
+      "observed": "場景物件：Camera、Cube、Light；已選取：Cube；作用中物件：Cube；檔案：未存檔。",
+      "window": "main",
+      "highlights": [
+        {
+          "x": 1229,
+          "y": 26,
+          "w": 263,
+          "h": 178,
+          "label": "Outliner：Camera／Cube／Light"
+        },
+        {
+          "x": 547,
+          "y": 401,
+          "w": 141,
+          "h": 153,
+          "label": "預設 Cube（不需要）"
+        }
+      ],
+      "clicks": [],
+      "file": "02-01-01-start.png",
+      "width": 1494,
+      "height": 1019,
+      "sha256": "e13488de369a02a0437d128539be91c82e2941e5d93b43f48052bd063056d676",
+      "path": "learning/evidence/02/2026-10-22-lesson02-demo-v001/02-01-01-start.png"
+    },
+    {
+      "seq": 2,
+      "step": "02-01",
+      "slug": "object-delete",
+      "recordedAt": "2026-10-22T06:03:28.456Z",
+      "action": "在 Outliner 點 Cube，再開 3D Viewport 的 Object 選單，找到 Delete",
+      "observed": "已選取：Cube；作用中物件：Cube；Object 選單展開。",
+      "window": "main",
+      "highlights": [
+        {
+          "x": 1286,
+          "y": 114,
+          "w": 140,
+          "h": 20,
+          "label": "Outliner：Cube"
+        },
+        {
+          "x": 289,
+          "y": 28,
+          "w": 48,
+          "h": 20,
+          "label": "Object"
+        },
+        {
+          "x": 296,
+          "y": 701,
+          "w": 188,
+          "h": 20,
+          "label": "Delete"
+        }
+      ],
+      "clicks": [
+        {
+          "x": 1340,
+          "y": 124
+        },
+        {
+          "x": 313,
+          "y": 38
+        }
+      ],
+      "file": "02-01-02-object-delete.png",
+      "width": 1494,
+      "height": 1019,
+      "sha256": "806b3af007268cd66ab6425ed26227af0fb880d96c6e3e9ac6a767e63e699635",
+      "path": "learning/evidence/02/2026-10-22-lesson02-demo-v001/02-01-02-object-delete.png"
+    },
+    {
+      "seq": 3,
+      "step": "02-01",
+      "slug": "deleted",
+      "recordedAt": "2026-10-22T06:03:31.056Z",
+      "action": "點 Delete：只刪除預設 Cube，Camera 與 Light 留給第三單元",
+      "observed": "場景物件：Camera、Light。",
+      "window": "main",
+      "highlights": [
+        {
+          "x": 1229,
+          "y": 26,
+          "w": 263,
+          "h": 178,
+          "label": "Outliner：剩 Camera、Light"
+        }
+      ],
+      "clicks": [],
+      "file": "02-01-03-deleted.png",
+      "width": 1494,
+      "height": 1019,
+      "sha256": "147b3071d840a4ab4d838939256ea3d5c76164e365dc9f56ce5534def28757f1",
+      "path": "learning/evidence/02/2026-10-22-lesson02-demo-v001/02-01-03-deleted.png"
+    },
+    {
+      "seq": 4,
+      "step": "02-01",
+      "slug": "save-as-v001",
+      "recordedAt": "2026-10-22T06:03:35.156Z",
+      "action": "File > Save As…：資料夾換成自己的單元 02 練習資料夾，檔名 u02_station_v001.blend",
+      "observed": "資料夾欄位：D:\\others\\study\\Blender-Learning\\learning\\workspaces\\02\\；檔名欄位：u02_station_v001.blend；該資料夾目前內容：（空資料夾）。",
+      "window": "FILE_BROWSER",
+      "highlights": [
+        {
+          "x": 394,
+          "y": 8,
+          "w": 318,
+          "h": 25,
+          "label": "資料夾路徑"
+        },
+        {
+          "x": 248,
+          "y": 566,
+          "w": 780,
+          "h": 25,
+          "label": "檔名"
+        },
+        {
+          "x": 789,
+          "y": 566,
+          "w": 126,
+          "h": 25,
+          "label": "你要按 Save As"
+        }
+      ],
+      "clicks": [],
+      "file": "02-01-04-save-as-v001.png",
+      "width": 1060,
+      "height": 600,
+      "sha256": "d112cdc5d268ff267115941c106147bb95e134f3687699acce93e47b786b8a10",
+      "note": "這張是你要看到的畫面；路徑與檔名由助教以程式填入欄位，避免鍵盤誤觸檔案瀏覽器快捷鍵。助教示範到此按 Esc 取消，不寫入你的工作區，再把同名檔存到助教示範資料夾。",
+      "path": "learning/evidence/02/2026-10-22-lesson02-demo-v001/02-01-04-save-as-v001.png"
+    },
+    {
+      "seq": 5,
+      "step": "02-01",
+      "slug": "saved",
+      "recordedAt": "2026-10-22T06:03:42.956Z",
+      "action": "存檔後底部出現 Saved（示範檔在助教資料夾）",
+      "observed": "目前檔案：D:\\others\\study\\Blender-Learning\\learning\\evidence\\02\\2026-10-22-lesson02-demo-v001\\demo-files\\u02_station_v001.blend（95226 bytes）；你的單元 02 工作區：（空資料夾）。",
+      "window": "main",
+      "highlights": [
+        {
+          "x": 0,
+          "y": 997,
+          "w": 1494,
+          "h": 22,
+          "label": "狀態列：Saved"
+        }
+      ],
+      "clicks": [],
+      "file": "02-01-05-saved.png",
+      "width": 1494,
+      "height": 1019,
+      "sha256": "ef63a568e92f0773342f6f5c6d51f0cf0ca8a5520128cf961ba7055f6e280902",
+      "path": "learning/evidence/02/2026-10-22-lesson02-demo-v001/02-01-05-saved.png"
+    },
+    {
+      "seq": 6,
+      "step": "02-02",
+      "slug": "add-mesh-plane",
+      "recordedAt": "2026-10-22T06:03:45.356Z",
+      "action": "3D Viewport 的 Add > Mesh，指到 Plane",
+      "observed": "Add 選單與 Mesh 子選單展開。",
+      "window": "main",
+      "highlights": [
+        {
+          "x": 255,
+          "y": 28,
+          "w": 32,
+          "h": 20,
+          "label": "Add"
+        },
+        {
+          "x": 255,
+          "y": 51,
+          "w": 164,
+          "h": 20,
+          "label": "Mesh"
+        },
+        {
+          "x": 426,
+          "y": 50,
+          "w": 162,
+          "h": 20,
+          "label": "Plane"
+        }
+      ],
+      "clicks": [
+        {
+          "x": 270,
+          "y": 38
+        }
+      ],
+      "file": "02-02-01-add-mesh-plane.png",
+      "width": 1494,
+      "height": 1019,
+      "sha256": "9d5a76b54dcfee8dccdbeb14044b5fc656641bc2fd6276ffafb72f4627b9ba9f",
+      "path": "learning/evidence/02/2026-10-22-lesson02-demo-v001/02-02-01-add-mesh-plane.png"
+    },
+    {
+      "seq": 7,
+      "step": "02-02",
+      "slug": "plane-added",
+      "recordedAt": "2026-10-22T06:03:49.956Z",
+      "action": "點 Plane 新增地面，並用 View > Sidebar 打開側欄",
+      "observed": "Plane Location (0 m, 0 m, 0 m)、Dimensions (2 m, 2 m, 0 m)、Scale (1, 1, 1)。",
+      "window": "main",
+      "highlights": [
+        {
+          "x": 548,
+          "y": 441,
+          "w": 138,
+          "h": 70,
+          "label": "新增的 Plane"
+        },
+        {
+          "x": 955,
+          "y": 82,
+          "w": 242,
+          "h": 382,
+          "label": "Sidebar：Item"
+        }
+      ],
+      "clicks": [],
+      "file": "02-02-02-plane-added.png",
+      "width": 1494,
+      "height": 1019,
+      "sha256": "a48e09cbfa619b7eb278a6db4f540680dad25c12f2295c316dcabb6bd9db61b0",
+      "path": "learning/evidence/02/2026-10-22-lesson02-demo-v001/02-02-02-plane-added.png"
+    },
+    {
+      "seq": 8,
+      "step": "02-02",
+      "slug": "plane-x",
+      "recordedAt": "2026-10-22T06:03:53.256Z",
+      "action": "Dimensions X 輸入 4 後按 Enter",
+      "observed": "Plane Location (0 m, 0 m, 0 m)、Dimensions (4 m, 2 m, 0 m)、Scale (2, 1, 1)。",
+      "window": "main",
+      "highlights": [
+        {
+          "x": 963,
+          "y": 401,
+          "w": 228,
+          "h": 20,
+          "label": "Dimensions X = 4 m"
+        },
+        {
+          "x": 533,
+          "y": 425,
+          "w": 176,
+          "h": 109,
+          "label": "Plane"
+        }
+      ],
+      "clicks": [],
+      "file": "02-02-03-plane-x.png",
+      "width": 1494,
+      "height": 1019,
+      "sha256": "a617246fa3631ef63f41ec7cd5b30eaee111a5e4cb7ad21cb5185c9cab3a3db9",
+      "path": "learning/evidence/02/2026-10-22-lesson02-demo-v001/02-02-03-plane-x.png"
+    },
+    {
+      "seq": 9,
+      "step": "02-02",
+      "slug": "plane-y",
+      "recordedAt": "2026-10-22T06:03:56.556Z",
+      "action": "Dimensions Y 輸入 4 後按 Enter：地面 4 m × 4 m",
+      "observed": "Plane Location (0 m, 0 m, 0 m)、Dimensions (4 m, 4 m, 0 m)、Scale (2, 2, 1)。",
+      "window": "main",
+      "highlights": [
+        {
+          "x": 963,
+          "y": 420,
+          "w": 228,
+          "h": 20,
+          "label": "Dimensions Y = 4 m"
+        },
+        {
+          "x": 963,
+          "y": 172,
+          "w": 176,
+          "h": 20,
+          "label": "Location Z = 0 m"
+        },
+        {
+          "x": 492,
+          "y": 418,
+          "w": 260,
+          "h": 126,
+          "label": "地面 4 × 4 m"
+        }
+      ],
+      "clicks": [],
+      "file": "02-02-04-plane-y.png",
+      "width": 1494,
+      "height": 1019,
+      "sha256": "cdf26c6c1f755262db5691cd239a49daab1a0b7c6fc8d81819133e0f43050294",
+      "path": "learning/evidence/02/2026-10-22-lesson02-demo-v001/02-02-04-plane-y.png"
+    },
+    {
+      "seq": 10,
+      "step": "02-02",
+      "slug": "platform-added",
+      "recordedAt": "2026-10-22T06:04:00.556Z",
+      "action": "Add > Mesh > Cube 新增平台（先是 2 m 方塊）",
+      "observed": "Cube Location (0 m, 0 m, 0 m)、Dimensions (2 m, 2 m, 2 m)、Scale (1, 1, 1)。",
+      "window": "main",
+      "highlights": [
+        {
+          "x": 547,
+          "y": 401,
+          "w": 141,
+          "h": 153,
+          "label": "新增的 Cube"
+        },
+        {
+          "x": 963,
+          "y": 383,
+          "w": 228,
+          "h": 77,
+          "label": "Dimensions"
+        }
+      ],
+      "clicks": [],
+      "file": "02-02-05-platform-added.png",
+      "width": 1494,
+      "height": 1019,
+      "sha256": "6bf4b8574ec4887b5fb8fa75ae44689e397c5c4a3b2e483cbd809e369ca96cfb",
+      "path": "learning/evidence/02/2026-10-22-lesson02-demo-v001/02-02-05-platform-added.png"
+    },
+    {
+      "seq": 11,
+      "step": "02-02",
+      "slug": "platform-size",
+      "recordedAt": "2026-10-22T06:04:08.056Z",
+      "action": "Dimensions 依序輸入 X 2.4、Y 2.4、Z 0.2（一次一欄）",
+      "observed": "Cube Location (0 m, 0 m, 0 m)、Dimensions (2.4 m, 2.4 m, 0.2 m)、Scale (1.2, 1.2, 0.1)。",
+      "window": "main",
+      "highlights": [
+        {
+          "x": 963,
+          "y": 383,
+          "w": 228,
+          "h": 77,
+          "label": "Dimensions 2.4 × 2.4 × 0.2 m"
+        },
+        {
+          "x": 537,
+          "y": 432,
+          "w": 162,
+          "h": 89,
+          "label": "平台"
+        }
+      ],
+      "clicks": [],
+      "file": "02-02-06-platform-size.png",
+      "width": 1494,
+      "height": 1019,
+      "sha256": "02b8069d77acfe764a6d918b7153547a1fd7f9003881eee49b1413e84c33c350",
+      "path": "learning/evidence/02/2026-10-22-lesson02-demo-v001/02-02-06-platform-size.png"
+    },
+    {
+      "seq": 12,
+      "step": "02-02",
+      "slug": "platform-z",
+      "recordedAt": "2026-10-22T06:04:11.357Z",
+      "action": "Location Z 輸入 0.1：平台底面剛好在 Z = 0",
+      "observed": "Cube Location (0 m, 0 m, 0.1 m)、Dimensions (2.4 m, 2.4 m, 0.2 m)、Scale (1.2, 1.2, 0.1)；底面 Z 0 m、頂面 Z 0.2 m。",
+      "window": "main",
+      "highlights": [
+        {
+          "x": 963,
+          "y": 172,
+          "w": 176,
+          "h": 20,
+          "label": "Location Z = 0.1 m"
+        },
+        {
+          "x": 536,
+          "y": 428,
+          "w": 163,
+          "h": 89,
+          "label": "平台"
+        }
+      ],
+      "clicks": [],
+      "file": "02-02-07-platform-z.png",
+      "width": 1494,
+      "height": 1019,
+      "sha256": "5b1d50a694b344f7b0cb6f9007c47da5a7e0b47b3c9a4a5025ff72bbe610369d",
+      "path": "learning/evidence/02/2026-10-22-lesson02-demo-v001/02-02-07-platform-z.png"
+    },
+    {
+      "seq": 13,
+      "step": "02-03",
+      "slug": "base",
+      "recordedAt": "2026-10-22T06:04:23.757Z",
+      "action": "Add > Mesh > Cube 新增基座：Dimensions 0.7、0.7、0.3，Location Z 0.35",
+      "observed": "Cube.001 Location (0 m, 0 m, 0.35 m)、Dimensions (0.7 m, 0.7 m, 0.3 m)、Scale (0.35, 0.35, 0.15)；底面 Z 0.2 m、頂面 Z 0.5 m；平台頂面 Z 0.2 m。",
+      "window": "main",
+      "highlights": [
+        {
+          "x": 963,
+          "y": 383,
+          "w": 228,
+          "h": 77,
+          "label": "Dimensions"
+        },
+        {
+          "x": 963,
+          "y": 172,
+          "w": 176,
+          "h": 20,
+          "label": "Location Z"
+        },
+        {
+          "x": 586,
+          "y": 437,
+          "w": 59,
+          "h": 47,
+          "label": "基座"
+        }
+      ],
+      "clicks": [],
+      "file": "02-03-01-base.png",
+      "width": 1494,
+      "height": 1019,
+      "sha256": "b0dff50098c1e7872b318efa1356da8c6efc4e3dc8f18280587f7dd1dc32590c",
+      "note": "用 Dimensions 改尺寸時，Blender 實際改的是 Scale（此處變成 0.35、0.35、0.15），狀態列會提醒 non-uniform scale。這在訊號站練習沒有問題；之後做卡扣、螺紋與公差時，會先確認何時要 Apply Scale，避免尺寸與厚度計算出錯。",
+      "path": "learning/evidence/02/2026-10-22-lesson02-demo-v001/02-03-01-base.png"
+    },
+    {
+      "seq": 14,
+      "step": "02-03",
+      "slug": "post",
+      "recordedAt": "2026-10-22T06:04:36.157Z",
+      "action": "同樣步驟新增立柱：Dimensions 0.12、0.12、1.2，Location Z 1.1",
+      "observed": "Cube.002 Location (0 m, 0 m, 1.1 m)、Dimensions (0.12 m, 0.12 m, 1.2 m)、Scale (0.06, 0.06, 0.6)；底面 Z 0.5 m、頂面 Z 1.7 m；基座頂面 Z 0.5 m。",
+      "window": "main",
+      "highlights": [
+        {
+          "x": 963,
+          "y": 383,
+          "w": 228,
+          "h": 77,
+          "label": "Dimensions"
+        },
+        {
+          "x": 604,
+          "y": 392,
+          "w": 23,
+          "h": 71,
+          "label": "立柱"
+        }
+      ],
+      "clicks": [],
+      "file": "02-03-02-post.png",
+      "width": 1494,
+      "height": 1019,
+      "sha256": "a17872962700afd6ad7cf42b99472731281a547e6eb284852654cd4752749f9c",
+      "path": "learning/evidence/02/2026-10-22-lesson02-demo-v001/02-03-02-post.png"
+    },
+    {
+      "seq": 15,
+      "step": "02-03",
+      "slug": "signal",
+      "recordedAt": "2026-10-22T06:04:48.557Z",
+      "action": "Add > Mesh > UV Sphere 新增訊號球：直徑 0.5，Location Z 1.95",
+      "observed": "Sphere Location (0 m, 0 m, 1.95 m)、Dimensions (0.5 m, 0.5 m, 0.5 m)、Scale (0.25, 0.25, 0.25)；底面 Z 1.7 m、頂面 Z 2.2 m；立柱頂面 Z 1.7 m；場景物件：Camera、Cube、Cube.001、Cube.002、Light、Plane、Sphere。",
+      "window": "main",
+      "highlights": [
+        {
+          "x": 963,
+          "y": 383,
+          "w": 228,
+          "h": 77,
+          "label": "Dimensions 0.5 m"
+        },
+        {
+          "x": 592,
+          "y": 365,
+          "w": 48,
+          "h": 50,
+          "label": "訊號球"
+        }
+      ],
+      "clicks": [],
+      "file": "02-03-03-signal.png",
+      "width": 1494,
+      "height": 1019,
+      "sha256": "ff97adac4e842e40013102a164e49b21947f74d2853ecdd0448ff7f9775f5a91",
+      "path": "learning/evidence/02/2026-10-22-lesson02-demo-v001/02-03-03-signal.png"
+    },
+    {
+      "seq": 16,
+      "step": "02-04",
+      "slug": "outliner-taller",
+      "recordedAt": "2026-10-22T06:04:50.971Z",
+      "action": "往下拖曳 Outliner 與 Properties 之間的邊界，讓物件清單完整可見",
+      "observed": "Outliner 列出：Collection、Camera、Cube、Cube.001、Cube.002、Light、Plane、Sphere。",
+      "window": "main",
+      "highlights": [
+        {
+          "x": 1229,
+          "y": 26,
+          "w": 263,
+          "h": 352,
+          "label": "Outliner 變高"
+        }
+      ],
+      "clicks": [
+        {
+          "x": 1360,
+          "y": 206
+        }
+      ],
+      "file": "02-04-01-outliner-taller.png",
+      "width": 1494,
+      "height": 1019,
+      "sha256": "2a11a488cbc963232104c59a4fa73ac25f5d8eae7be2b56a92b10172fad8a210",
+      "path": "learning/evidence/02/2026-10-22-lesson02-demo-v001/02-04-01-outliner-taller.png"
+    },
+    {
+      "seq": 17,
+      "step": "02-04",
+      "slug": "rename-menu",
+      "recordedAt": "2026-10-22T06:04:53.171Z",
+      "action": "在 Outliner 點基座（Cube.001），開 Edit 選單找到 Rename Active Item",
+      "observed": "已選取：Cube.001；作用中物件：Cube.001；Edit 選單展開。",
+      "window": "main",
+      "highlights": [
+        {
+          "x": 1286,
+          "y": 134,
+          "w": 150,
+          "h": 20,
+          "label": "Cube.001"
+        },
+        {
+          "x": 65,
+          "y": 3,
+          "w": 22,
+          "h": 21,
+          "label": "Edit"
+        },
+        {
+          "x": 64,
+          "y": 187,
+          "w": 198,
+          "h": 20,
+          "label": "Rename Active Item"
+        }
+      ],
+      "clicks": [],
+      "file": "02-04-02-rename-menu.png",
+      "width": 1494,
+      "height": 1019,
+      "sha256": "bb945a2e6b0d47123c9c5c604a1f711b794f00f2c6c3992715bda88303947653",
+      "path": "learning/evidence/02/2026-10-22-lesson02-demo-v001/02-04-02-rename-menu.png"
+    },
+    {
+      "seq": 18,
+      "step": "02-04",
+      "slug": "rename-popup",
+      "recordedAt": "2026-10-22T06:04:55.871Z",
+      "action": "名稱欄位已在編輯狀態：輸入 BeaconBase",
+      "observed": "改名前：已選取：Cube.001；作用中物件：Cube.001。",
+      "window": "main",
+      "highlights": [
+        {
+          "x": 10,
+          "y": 155,
+          "w": 300,
+          "h": 60,
+          "label": "Object Name"
+        }
+      ],
+      "clicks": [],
+      "file": "02-04-03-rename-popup.png",
+      "width": 1494,
+      "height": 1019,
+      "sha256": "b6f776b6f5e732bc390797ac96cdfa63dc32f994f53b20d7498c0ea7a202d515",
+      "path": "learning/evidence/02/2026-10-22-lesson02-demo-v001/02-04-03-rename-popup.png"
+    },
+    {
+      "seq": 19,
+      "step": "02-04",
+      "slug": "renamed",
+      "recordedAt": "2026-10-22T06:04:57.871Z",
+      "action": "按 Enter：Outliner 與 3D Viewport 都是同一件基座",
+      "observed": "已選取：BeaconBase；作用中物件：BeaconBase。",
+      "window": "main",
+      "highlights": [
+        {
+          "x": 1286,
+          "y": 94,
+          "w": 150,
+          "h": 20,
+          "label": "BeaconBase"
+        },
+        {
+          "x": 586,
+          "y": 437,
+          "w": 59,
+          "h": 47,
+          "label": "基座"
+        }
+      ],
+      "clicks": [],
+      "file": "02-04-04-renamed.png",
+      "width": 1494,
+      "height": 1019,
+      "sha256": "b989b8d2be305d04c3f71a909c6c822862a5edd2086c7503926b848f70eadae2",
+      "path": "learning/evidence/02/2026-10-22-lesson02-demo-v001/02-04-04-renamed.png"
+    },
+    {
+      "seq": 20,
+      "step": "02-04",
+      "slug": "all-renamed",
+      "recordedAt": "2026-10-22T06:05:15.071Z",
+      "action": "同樣方法把其他部件改名：Platform、Ground、Post、Signal",
+      "observed": "Outliner 列出：Collection、BeaconBase、Camera、Ground、Light、Platform、Post、Signal。",
+      "window": "main",
+      "highlights": [
+        {
+          "x": 1229,
+          "y": 26,
+          "w": 263,
+          "h": 352,
+          "label": "名稱可辨認"
+        }
+      ],
+      "clicks": [],
+      "file": "02-04-05-all-renamed.png",
+      "width": 1494,
+      "height": 1019,
+      "sha256": "7f00081c15d3673448562c3b589d2c62535f02ad675921b07d24489b99d62784",
+      "path": "learning/evidence/02/2026-10-22-lesson02-demo-v001/02-04-05-all-renamed.png"
+    },
+    {
+      "seq": 21,
+      "step": "02-04",
+      "slug": "move-to-collection",
+      "recordedAt": "2026-10-22T06:05:19.471Z",
+      "action": "Outliner 點 Ground，再 Ctrl+點其餘部件；滑鼠在 3D Viewport 內按 M",
+      "observed": "已選取：Ground、Platform、BeaconBase、Post、Signal；作用中物件：Signal；Move to Collection 選單展開。",
+      "window": "main",
+      "highlights": [
+        {
+          "x": 1229,
+          "y": 26,
+          "w": 263,
+          "h": 352,
+          "label": "五個部件已選取"
+        },
+        {
+          "x": 556,
+          "y": 616,
+          "w": 176,
+          "h": 20,
+          "label": "New Collection"
+        }
+      ],
+      "clicks": [],
+      "file": "02-04-06-move-to-collection.png",
+      "width": 1494,
+      "height": 1019,
+      "sha256": "87543899f7f18c38b5cea2ca1d48aa7cfb76f336852e763cce4a69ff2db8eeec",
+      "path": "learning/evidence/02/2026-10-22-lesson02-demo-v001/02-04-06-move-to-collection.png"
+    },
+    {
+      "seq": 22,
+      "step": "02-04",
+      "slug": "new-collection-name",
+      "recordedAt": "2026-10-22T06:05:22.371Z",
+      "action": "點 New Collection：命名視窗的 Name 欄位已在編輯狀態，輸入 Station",
+      "observed": "已選取：Ground、Platform、BeaconBase、Post、Signal；作用中物件：Signal；命名視窗開啟。",
+      "window": "main",
+      "highlights": [
+        {
+          "x": 630,
+          "y": 624,
+          "w": 116,
+          "h": 22,
+          "label": "Name：Station"
+        },
+        {
+          "x": 546,
+          "y": 655,
+          "w": 96,
+          "h": 20,
+          "label": "Create"
+        }
+      ],
+      "clicks": [],
+      "file": "02-04-07-new-collection-name.png",
+      "width": 1494,
+      "height": 1019,
+      "sha256": "a10fefbe8c9067d28ad6f8e150a27c5270541cafcf4facfa8693c92718877ebd",
+      "path": "learning/evidence/02/2026-10-22-lesson02-demo-v001/02-04-07-new-collection-name.png"
+    },
+    {
+      "seq": 23,
+      "step": "02-04",
+      "slug": "station",
+      "recordedAt": "2026-10-22T06:05:25.171Z",
+      "action": "輸入 Station 並確認：五個部件移到 Station Collection",
+      "observed": "Collections：Collection：Light、Camera；Station：Ground、Platform、BeaconBase、Post、Signal。",
+      "window": "main",
+      "highlights": [
+        {
+          "x": 1229,
+          "y": 26,
+          "w": 263,
+          "h": 352,
+          "label": "Station Collection"
+        }
+      ],
+      "clicks": [],
+      "file": "02-04-08-station.png",
+      "width": 1494,
+      "height": 1019,
+      "sha256": "28f2591a5dd8aa288f7e4352259338a88e9b6d747919133a6424ac3adf178026",
+      "path": "learning/evidence/02/2026-10-22-lesson02-demo-v001/02-04-08-station.png"
+    },
+    {
+      "seq": 24,
+      "step": "02-04",
+      "slug": "save-as-v002",
+      "recordedAt": "2026-10-22T06:05:29.271Z",
+      "action": "File > Save As…：另存 u02_station_v002.blend（v001 保留不動）",
+      "observed": "資料夾欄位：D:\\others\\study\\Blender-Learning\\learning\\workspaces\\02\\；檔名欄位：u02_station_v002.blend；該資料夾目前內容：（空資料夾）。",
+      "window": "FILE_BROWSER",
+      "highlights": [
+        {
+          "x": 394,
+          "y": 8,
+          "w": 318,
+          "h": 25,
+          "label": "資料夾路徑"
+        },
+        {
+          "x": 248,
+          "y": 566,
+          "w": 780,
+          "h": 25,
+          "label": "檔名"
+        },
+        {
+          "x": 789,
+          "y": 566,
+          "w": 126,
+          "h": 25,
+          "label": "你要按 Save As"
+        }
+      ],
+      "clicks": [],
+      "file": "02-04-09-save-as-v002.png",
+      "width": 1060,
+      "height": 600,
+      "sha256": "687c39fd43f87ecb69e19db17376bcb502d4e460b880f6475fc026a60783e2d2",
+      "note": "這張是你要看到的畫面；路徑與檔名由助教以程式填入欄位，避免鍵盤誤觸檔案瀏覽器快捷鍵。助教示範到此按 Esc 取消，不寫入你的工作區，再把同名檔存到助教示範資料夾。",
+      "path": "learning/evidence/02/2026-10-22-lesson02-demo-v001/02-04-09-save-as-v002.png"
+    },
+    {
+      "seq": 25,
+      "step": "02-04",
+      "slug": "saved-v002",
+      "recordedAt": "2026-10-22T06:05:37.071Z",
+      "action": "存檔後底部出現 Saved（示範檔在助教資料夾）",
+      "observed": "目前檔案：D:\\others\\study\\Blender-Learning\\learning\\evidence\\02\\2026-10-22-lesson02-demo-v001\\demo-files\\u02_station_v002.blend（118126 bytes）。",
+      "window": "main",
+      "highlights": [
+        {
+          "x": 0,
+          "y": 997,
+          "w": 1494,
+          "h": 22,
+          "label": "狀態列：Saved"
+        }
+      ],
+      "clicks": [],
+      "file": "02-04-10-saved-v002.png",
+      "width": 1494,
+      "height": 1019,
+      "sha256": "3bd1f1da960cf97b8eac8499505662a80a6ce8cd577d710121da6539703843bd",
+      "path": "learning/evidence/02/2026-10-22-lesson02-demo-v001/02-04-10-saved-v002.png"
+    },
+    {
+      "seq": 26,
+      "step": "02-05",
+      "slug": "new-general",
+      "recordedAt": "2026-10-22T06:05:42.072Z",
+      "action": "File > New > General：開新的預設場景（訊號站已存檔）",
+      "observed": "場景物件：Camera、Cube、Light；檔案：未存檔。",
+      "window": "main",
+      "highlights": [
+        {
+          "x": 547,
+          "y": 401,
+          "w": 141,
+          "h": 153,
+          "label": "預設 Cube"
+        }
+      ],
+      "clicks": [],
+      "file": "02-05-01-new-general.png",
+      "width": 1494,
+      "height": 1019,
+      "sha256": "214496c6e05b11b6f0681e97a9ae4d81f771e7807a035becca4824d1474bf455",
+      "path": "learning/evidence/02/2026-10-22-lesson02-demo-v001/02-05-01-new-general.png"
+    },
+    {
+      "seq": 27,
+      "step": "02-05",
+      "slug": "save-as-mm",
+      "recordedAt": "2026-10-22T06:05:46.172Z",
+      "action": "File > Save As…：另存 u02_mm_block_v001.blend（和訊號站分開）",
+      "observed": "資料夾欄位：D:\\others\\study\\Blender-Learning\\learning\\workspaces\\02\\；檔名欄位：u02_mm_block_v001.blend；該資料夾目前內容：（空資料夾）。",
+      "window": "FILE_BROWSER",
+      "highlights": [
+        {
+          "x": 394,
+          "y": 8,
+          "w": 318,
+          "h": 25,
+          "label": "資料夾路徑"
+        },
+        {
+          "x": 248,
+          "y": 566,
+          "w": 780,
+          "h": 25,
+          "label": "檔名"
+        },
+        {
+          "x": 789,
+          "y": 566,
+          "w": 126,
+          "h": 25,
+          "label": "你要按 Save As"
+        }
+      ],
+      "clicks": [],
+      "file": "02-05-02-save-as-mm.png",
+      "width": 1060,
+      "height": 600,
+      "sha256": "7a2eb6f75d5807776e767f6345e70351c20f0a4bca83f0b9615c81c2eee9d25c",
+      "note": "這張是你要看到的畫面；路徑與檔名由助教以程式填入欄位，避免鍵盤誤觸檔案瀏覽器快捷鍵。助教示範到此按 Esc 取消，不寫入你的工作區，再把同名檔存到助教示範資料夾。",
+      "path": "learning/evidence/02/2026-10-22-lesson02-demo-v001/02-05-02-save-as-mm.png"
+    },
+    {
+      "seq": 28,
+      "step": "02-05",
+      "slug": "units",
+      "recordedAt": "2026-10-22T06:05:55.572Z",
+      "action": "Properties 的 Scene 分頁，展開 Units：Unit System Metric、Unit Scale 1.000000",
+      "observed": "Unit System METRIC、Unit Scale 1、Length METERS。",
+      "window": "main",
+      "highlights": [
+        {
+          "x": 1236,
+          "y": 364,
+          "w": 20,
+          "h": 20,
+          "label": "Scene 分頁"
+        },
+        {
+          "x": 1266,
+          "y": 452,
+          "w": 216,
+          "h": 47,
+          "label": "Unit System／Unit Scale"
+        },
+        {
+          "x": 1266,
+          "y": 547,
+          "w": 216,
+          "h": 20,
+          "label": "Length"
+        }
+      ],
+      "clicks": [
+        {
+          "x": 1245,
+          "y": 374
+        }
+      ],
+      "file": "02-05-03-units.png",
+      "width": 1494,
+      "height": 1019,
+      "sha256": "9f5143fef9b6c82c507d8f0931b3006dc19315ad494232bd7c5e914ea2a4e446",
+      "path": "learning/evidence/02/2026-10-22-lesson02-demo-v001/02-05-03-units.png"
+    },
+    {
+      "seq": 29,
+      "step": "02-05",
+      "slug": "length-list",
+      "recordedAt": "2026-10-22T06:05:56.972Z",
+      "action": "點 Length 下拉選單，找到 Millimeters",
+      "observed": "Length 清單展開。",
+      "window": "main",
+      "highlights": [
+        {
+          "x": 1361,
+          "y": 658,
+          "w": 112,
+          "h": 20,
+          "label": "Millimeters"
+        }
+      ],
+      "clicks": [
+        {
+          "x": 1418,
+          "y": 557
+        }
+      ],
+      "file": "02-05-04-length-list.png",
+      "width": 1494,
+      "height": 1019,
+      "sha256": "ea238de84132d14c0c6d96b2710fbd02c36454eb78566a560c673d60edf32509",
+      "path": "learning/evidence/02/2026-10-22-lesson02-demo-v001/02-05-04-length-list.png"
+    },
+    {
+      "seq": 30,
+      "step": "02-05",
+      "slug": "millimeters",
+      "recordedAt": "2026-10-22T06:06:01.572Z",
+      "action": "選 Millimeters 並打開 Sidebar：同一個 Cube 顯示為 2000 mm，物件沒有變小",
+      "observed": "Length MILLIMETERS、Unit Scale 1；Cube Location (0 mm, 0 mm, 0 mm)、Dimensions (2000 mm, 2000 mm, 2000 mm)、Scale (1, 1, 1)。",
+      "window": "main",
+      "highlights": [
+        {
+          "x": 1266,
+          "y": 547,
+          "w": 216,
+          "h": 20,
+          "label": "Length：Millimeters"
+        },
+        {
+          "x": 1266,
+          "y": 477,
+          "w": 216,
+          "h": 22,
+          "label": "Unit Scale 1"
+        },
+        {
+          "x": 963,
+          "y": 383,
+          "w": 228,
+          "h": 77,
+          "label": "Dimensions 2000 mm"
+        }
+      ],
+      "clicks": [],
+      "file": "02-05-05-millimeters.png",
+      "width": 1494,
+      "height": 1019,
+      "sha256": "84fdc99919ecf23ae59a9766fbf3ee7ff88bc297afdb4d747eeb8d9b5559a6f8",
+      "path": "learning/evidence/02/2026-10-22-lesson02-demo-v001/02-05-05-millimeters.png"
+    },
+    {
+      "seq": 31,
+      "step": "02-06",
+      "slug": "x-40",
+      "recordedAt": "2026-10-22T06:06:04.872Z",
+      "action": "Dimensions X 輸入 40mm 後按 Enter（只改 X）",
+      "observed": "Cube Location (0 mm, 0 mm, 0 mm)、Dimensions (40 mm, 2000 mm, 2000 mm)、Scale (0.02, 1, 1)。",
+      "window": "main",
+      "highlights": [
+        {
+          "x": 963,
+          "y": 401,
+          "w": 228,
+          "h": 20,
+          "label": "X = 40 mm"
+        }
+      ],
+      "clicks": [],
+      "file": "02-06-01-x-40.png",
+      "width": 1494,
+      "height": 1019,
+      "sha256": "fb25818060bcab86da4df6c87ce71caebf066a9d4ce26d476f287d73ce3df782",
+      "path": "learning/evidence/02/2026-10-22-lesson02-demo-v001/02-06-01-x-40.png"
+    },
+    {
+      "seq": 32,
+      "step": "02-06",
+      "slug": "yz",
+      "recordedAt": "2026-10-22T06:06:10.272Z",
+      "action": "再分兩次輸入 Y 30mm、Z 10mm",
+      "observed": "Cube Location (0 mm, 0 mm, 0 mm)、Dimensions (40 mm, 30 mm, 10 mm)、Scale (0.02, 0.015, 0.005)。",
+      "window": "main",
+      "highlights": [
+        {
+          "x": 963,
+          "y": 383,
+          "w": 228,
+          "h": 77,
+          "label": "40 × 30 × 10 mm"
+        },
+        {
+          "x": 963,
+          "y": 300,
+          "w": 228,
+          "h": 77,
+          "label": "Scale"
+        }
+      ],
+      "clicks": [],
+      "file": "02-06-02-yz.png",
+      "width": 1494,
+      "height": 1019,
+      "sha256": "de60a3e441aec46dde03c91ad9960eddef451261951a1ac1cacc59f24cce93a7",
+      "path": "learning/evidence/02/2026-10-22-lesson02-demo-v001/02-06-02-yz.png"
+    },
+    {
+      "seq": 33,
+      "step": "02-06",
+      "slug": "framed",
+      "recordedAt": "2026-10-22T06:06:14.972Z",
+      "action": "方塊很小：View > Frame Selected 拉近，再把滾輪往後滾 4 格看清整個方塊",
+      "observed": "Cube Location (0 mm, 0 mm, 0 mm)、Dimensions (40 mm, 30 mm, 10 mm)、Scale (0.02, 0.015, 0.005)；視角距離 0.1099 m。",
+      "window": "main",
+      "highlights": [
+        {
+          "x": 449,
+          "y": 366,
+          "w": 363,
+          "h": 260,
+          "label": "40 × 30 × 10 mm 方塊"
+        },
+        {
+          "x": 963,
+          "y": 383,
+          "w": 228,
+          "h": 77,
+          "label": "Dimensions"
+        }
+      ],
+      "clicks": [],
+      "file": "02-06-03-framed.png",
+      "width": 1494,
+      "height": 1019,
+      "sha256": "775465ea6179155996315530ff76092b657fd81ffe7c9ec4cde095df3662e199",
+      "path": "learning/evidence/02/2026-10-22-lesson02-demo-v001/02-06-03-framed.png"
+    },
+    {
+      "seq": 34,
+      "step": "02-07",
+      "slug": "mm-saved",
+      "recordedAt": "2026-10-22T06:06:18.672Z",
+      "action": "File > Save：保存毫米方塊",
+      "observed": "已存檔：u02_mm_block_v001.blend（96209 bytes）；Cube Location (0 mm, 0 mm, 0 mm)、Dimensions (40 mm, 30 mm, 10 mm)、Scale (0.02, 0.015, 0.005)。",
+      "window": "main",
+      "highlights": [
+        {
+          "x": 0,
+          "y": 997,
+          "w": 1494,
+          "h": 22,
+          "label": "狀態列：Saved"
+        }
+      ],
+      "clicks": [],
+      "file": "02-07-01-mm-saved.png",
+      "width": 1494,
+      "height": 1019,
+      "sha256": "805f26aa1732353f198f17c512b6291e73186414a8ea1254c4503180b2c1b581",
+      "path": "learning/evidence/02/2026-10-22-lesson02-demo-v001/02-07-01-mm-saved.png"
+    },
+    {
+      "seq": 35,
+      "step": "02-07",
+      "slug": "open-station",
+      "recordedAt": "2026-10-22T06:06:22.772Z",
+      "action": "File > Open…：選 u02_station_v002.blend",
+      "observed": "開啟視窗資料夾內容：u02_mm_block_v001.blend、u02_mm_block_v001.blend1、u02_station_v001.blend、u02_station_v002.blend。",
+      "window": "FILE_BROWSER",
+      "highlights": [
+        {
+          "x": 248,
+          "y": 566,
+          "w": 780,
+          "h": 25,
+          "label": "檔名"
+        },
+        {
+          "x": 789,
+          "y": 566,
+          "w": 126,
+          "h": 25,
+          "label": "按 Open"
+        }
+      ],
+      "clicks": [],
+      "file": "02-07-02-open-station.png",
+      "width": 1060,
+      "height": 600,
+      "sha256": "98b097bf12bf7dd5aa15d326990ef03d34d20d71c4c62b6a8daaa1305e50fd8f",
+      "note": "此為助教示範資料夾；你要開的是自己單元 02 練習資料夾中已登記的檔案。",
+      "path": "learning/evidence/02/2026-10-22-lesson02-demo-v001/02-07-02-open-station.png"
+    },
+    {
+      "seq": 36,
+      "step": "02-07",
+      "slug": "station-reopened",
+      "recordedAt": "2026-10-22T06:06:26.672Z",
+      "action": "重新開啟訊號站：部件、Collection 與尺寸都在",
+      "observed": "目前檔案：u02_station_v002.blend；Collections：Collection：Light、Camera；Station：Ground、Platform、BeaconBase、Post、Signal；平台 Platform Location (0 m, 0 m, 0.1 m)、Dimensions (2.4 m, 2.4 m, 0.2 m)、Scale (1.2, 1.2, 0.1)。",
+      "window": "main",
+      "highlights": [
+        {
+          "x": 1229,
+          "y": 26,
+          "w": 263,
+          "h": 352,
+          "label": "Station Collection"
+        }
+      ],
+      "clicks": [],
+      "file": "02-07-03-station-reopened.png",
+      "width": 1494,
+      "height": 1019,
+      "sha256": "02d2e8273660026ea0daa69d4bc95534a8957e6bd63ae8ce859a8803666e1721",
+      "path": "learning/evidence/02/2026-10-22-lesson02-demo-v001/02-07-03-station-reopened.png"
+    },
+    {
+      "seq": 37,
+      "step": "02-07",
+      "slug": "mm-reopened",
+      "recordedAt": "2026-10-22T06:06:34.272Z",
+      "action": "再用 File > Open… 開 u02_mm_block_v001.blend：尺寸仍是 40 × 30 × 10 mm",
+      "observed": "目前檔案：u02_mm_block_v001.blend；Length MILLIMETERS；Cube Location (0 mm, 0 mm, 0 mm)、Dimensions (40 mm, 30 mm, 10 mm)、Scale (0.02, 0.015, 0.005)。",
+      "window": "main",
+      "highlights": [
+        {
+          "x": 963,
+          "y": 383,
+          "w": 228,
+          "h": 77,
+          "label": "40 × 30 × 10 mm"
+        }
+      ],
+      "clicks": [],
+      "file": "02-07-04-mm-reopened.png",
+      "width": 1494,
+      "height": 1019,
+      "sha256": "e5990ccd4e574bf9b24922e4f85258bdfb68aad9b6b4d2e323dd9ffe841cec9a",
+      "path": "learning/evidence/02/2026-10-22-lesson02-demo-v001/02-07-04-mm-reopened.png"
+    }
+  ]
+}

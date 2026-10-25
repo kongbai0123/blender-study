@@ -1,0 +1,50 @@
+{
+  "A_L19": {
+    "source_object": "SnapTool",
+    "operation": "native Shift+D then Esc",
+    "mesh_data_name": "Cube.004",
+    "independent_from_source": true,
+    "location_mm": [
+      0.0,
+      -22.200000762939453,
+      -9.5
+    ],
+    "rotation_euler_radians": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "B_L17": {
+    "source_object": "SnapTool",
+    "operation": "native Shift+D then Esc",
+    "mesh_data_name": "Cube.005",
+    "independent_from_source": true,
+    "location_mm": [
+      0.0,
+      -22.200000762939453,
+      -9.5
+    ],
+    "rotation_euler_radians": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "C_L21": {
+    "source_object": "SnapTool",
+    "operation": "native Shift+D then Esc",
+    "mesh_data_name": "Cube.006",
+    "independent_from_source": true,
+    "location_mm": [
+      0.0,
+      -22.200000762939453,
+      -9.5
+    ],
+    "rotation_euler_radians": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "recordedAt": "2026-10-25T09:55:54.615873+00:00",
+  "passed": true,
+  "tutor": {
+    "command": "python -X utf8 -B -m unittest discover -s learning/tutor/tests -p test_*.py -v",
+    "testsRun": 260,
+    "passed": 259,
+    "skipped": 1,
+    "skipReason": "Windows account lacks symlink creation permission",
+    "scope": "Full suite before the final three metadata flag assertions"
+  },
+  "supplementary": {
+    "testsRun": 31,
+    "passed": 31,
+    "skipped": 0,
+    "scope": "After adding reimport_mesh_datablocks_created, new_specimen_design_created and geometry_scope assertions; new coupon export and existing related export/geometry branches covered. Includes rejection of an unrequested new specimen design."
+  },
+  "server": {
+    "command": "python -X utf8 -B -m unittest discover -s learning/tests -p test_server.py -v",
+    "testsRun": 17,
+    "passed": 17,
+    "skipped": 0
+  },
+  "javascriptSyntax": {
+    "command": "node --check learning/web/app.js",
+    "exitCode": 0
+  },
+  "publicationScriptSyntax": {
+    "command": "python -B -m py_compile learning/tutor/publish_coupon_export.py",
+    "exitCode": 0
+  },
+  "logs": [
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/tutor-tests-v001.log",
+      "sha256": "92dce73c91e09ceff6bd0de33618c3e269382ca92b92d99328e62e041869e9db"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/server-tests-v001.log",
+      "sha256": "a6601eab29e8b9870a18d03328f80e6c7d7fc480d8d3b31b1ae9fb346f000765"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/coupon-export-focused-tests-v001.log",
+      "sha256": "95685fa76f7dae6797cabf4074bf9fe98c692bc20ace7a561e3ff8a57f235224"
+    }
+  ],
+  "finalImporterSources": [
+    {
+      "path": "learning/tutor/import_run.py",
+      "sha256": "fdf1806ea11b77a1ea3c5c5129921b6163c8334cd635a1e829704e24e9ae3a00"
+    },
+    {
+      "path": "learning/tutor/tests/test_import_run.py",
+      "sha256": "36b0fd4e21be95bb6e3f591e512338bba9145a9bfa329320114324bf9b65e61d"
+    }
+  ],
+  "testCountsAreNotAddedAcrossOverlappingSuites": true
+}

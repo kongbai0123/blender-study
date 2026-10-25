@@ -1,0 +1,509 @@
+{
+  "recordedAt": "2026-10-25T10:01:37.732970+00:00",
+  "evidencePassed": true,
+  "publicationPending": false,
+  "browserProofPending": false,
+  "images": [
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-01-A_L19-source-dialog.png",
+      "status": 200,
+      "sha256": "14975f8bb41ae051fc7fd9f789d13eea67cd90e574933eb29d72ce10c78bfe29",
+      "bytes": 53521,
+      "exactBytes": true,
+      "width": 1060,
+      "height": 600,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-02-A_L19-source-selected.png",
+      "status": 200,
+      "sha256": "e1365ce02ec981c8b7bb29d5b248af3812f0bbbb9436c36510146df9c19602a6",
+      "bytes": 151189,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-03-A_L19-source-profile.png",
+      "status": 200,
+      "sha256": "3af56ba44c5ee8aa84a9ab8327d0f0bc0d43becf23077d01ccde593157bcb33a",
+      "bytes": 148206,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-04-A_L19-export-menu.png",
+      "status": 200,
+      "sha256": "41562116cecc5163ed6030f8fb5dc4df17e0acd4dd312264d391848ea4201bbf",
+      "bytes": 170803,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-05-A_L19-export-before.png",
+      "status": 200,
+      "sha256": "d2ac10f7bc9aae66620647a15e2110a1d68cfd4ea34f320412ae700700c71d0b",
+      "bytes": 66701,
+      "exactBytes": true,
+      "width": 1060,
+      "height": 600,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-06-A_L19-export-options.png",
+      "status": 200,
+      "sha256": "787fb50995b0e44804a9248170bd2d1e77cb9be6527929af45df330d68b3e796",
+      "bytes": 66999,
+      "exactBytes": true,
+      "width": 1060,
+      "height": 600,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-07-A_L19-stl-checked.png",
+      "status": 200,
+      "sha256": "d498056d1e14b4cc257d2270d325408f568d9f01cc84e3cc813a3d5d3a60a207",
+      "bytes": 151106,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-08-B_L17-source-dialog.png",
+      "status": 200,
+      "sha256": "88d88a6a80a030db091a7dffe61521d962c31de3a15c5a24585da53e8293792d",
+      "bytes": 56580,
+      "exactBytes": true,
+      "width": 1060,
+      "height": 600,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-09-B_L17-source-selected.png",
+      "status": 200,
+      "sha256": "5612dc335babe2f0c7746247e75696a421e7150906893c95209bd0915c38ccb9",
+      "bytes": 153147,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-10-B_L17-source-profile.png",
+      "status": 200,
+      "sha256": "0b334e28a3fd16511559b8f2a632e6c6728740e8a6c3dafdbec204caa80360d9",
+      "bytes": 145156,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-11-B_L17-export-menu.png",
+      "status": 200,
+      "sha256": "23c1a2d7c4c95830deb24d52f78915a2dd69eadd515803db8a2526f601088f5e",
+      "bytes": 168201,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-12-B_L17-export-before.png",
+      "status": 200,
+      "sha256": "aa18c178051e9fff72f728746406f2bb695a9a1869e0dc9d1e98b4c3e3bb6c7a",
+      "bytes": 70256,
+      "exactBytes": true,
+      "width": 1060,
+      "height": 600,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-13-B_L17-export-options.png",
+      "status": 200,
+      "sha256": "5b3a83b925809fbe66987d616e918c3269014c416da0ae5ceea5bad6881a29ad",
+      "bytes": 70607,
+      "exactBytes": true,
+      "width": 1060,
+      "height": 600,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-14-B_L17-stl-checked.png",
+      "status": 200,
+      "sha256": "91521b225ba9f96c7344f9fba9bce334d59a59af7a0d0d05587f8d08f815399f",
+      "bytes": 148077,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-15-C_L21-source-dialog.png",
+      "status": 200,
+      "sha256": "88d88a6a80a030db091a7dffe61521d962c31de3a15c5a24585da53e8293792d",
+      "bytes": 56580,
+      "exactBytes": true,
+      "width": 1060,
+      "height": 600,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-16-C_L21-source-selected.png",
+      "status": 200,
+      "sha256": "360c2b8266050f172745eec7b3470e85269c34f75ec84faceb2fe93f963d290e",
+      "bytes": 153442,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-17-C_L21-source-profile.png",
+      "status": 200,
+      "sha256": "2c9621c7078a66636d9232167c37d1e6232524e46a9131378a29ae2a78166785",
+      "bytes": 149037,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-18-C_L21-export-menu.png",
+      "status": 200,
+      "sha256": "0396b2b76def40e3df7e0360df445590f9cc55b9db62662661cde349948949ef",
+      "bytes": 172073,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-19-C_L21-export-before.png",
+      "status": 200,
+      "sha256": "e88a9fd05c815c98eccd14581031277bcc9f9bda866495d63107ce2d07852333",
+      "bytes": 73230,
+      "exactBytes": true,
+      "width": 1060,
+      "height": 600,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-20-C_L21-export-options.png",
+      "status": 200,
+      "sha256": "9ea4b96d526988f6c327ad563b26ffe2391d21f4fd5d980c866be13a2b40c113",
+      "bytes": 73575,
+      "exactBytes": true,
+      "width": 1060,
+      "height": 600,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-21-C_L21-stl-checked.png",
+      "status": 200,
+      "sha256": "9b88cfd2d30b32be86813e109bbe306ddb229a05159e37d24820ea70705fd4a7",
+      "bytes": 151937,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-22-empty-mm-scene.png",
+      "status": 200,
+      "sha256": "4adc8aebf5e4a772bee8fce4eb6b599831c2910744002fc3fb9242704c87f51c",
+      "bytes": 163109,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-23-A_L19-import-dialog.png",
+      "status": 200,
+      "sha256": "8a1817bf4a269f9421ab95a42ec2dc03fcfe70be8121323980a717f526b981ac",
+      "bytes": 71959,
+      "exactBytes": true,
+      "width": 1060,
+      "height": 600,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-24-A_L19-reimport-dimensions.png",
+      "status": 200,
+      "sha256": "5a3634959a94caac6d6a50ad0a4aed7b79dc5a0f0ddaf9e4abaf4c8f54120cb0",
+      "bytes": 178498,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-25-A_L19-reimport-profile.png",
+      "status": 200,
+      "sha256": "3cb3be0a5808fa8a4cc732e74ea054e62d306db47e96b0abfab5b86fcd3d8f07",
+      "bytes": 173955,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-26-A_L19-reimport-non-manifold.png",
+      "status": 200,
+      "sha256": "ae3cd5f6486259fd2649a686768838e75f2b548f7f0e79e882b5be05d4f9d65f",
+      "bytes": 183770,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-27-B_L17-import-dialog.png",
+      "status": 200,
+      "sha256": "9ad6b01fa9853efafa8da96c211dd38b5355a0dc4f1e92c7e7c0e90f4f361d0f",
+      "bytes": 71824,
+      "exactBytes": true,
+      "width": 1060,
+      "height": 600,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-28-B_L17-reimport-dimensions.png",
+      "status": 200,
+      "sha256": "902135e64eab461cb83502e97f9f63ebbf772214512077a0505c8782377c92a3",
+      "bytes": 181943,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-29-B_L17-reimport-profile.png",
+      "status": 200,
+      "sha256": "f5ef0a75f65314ccdc29a4e85a97638f10ae64a8cb41a3d3207b87befa29a951",
+      "bytes": 173108,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-30-B_L17-reimport-non-manifold.png",
+      "status": 200,
+      "sha256": "0487bd01ba7988982445ea40e0cf78b023d261fbb42c275b284f681cfafe90d5",
+      "bytes": 183429,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-31-C_L21-import-dialog.png",
+      "status": 200,
+      "sha256": "cdb857308cc71d91ba8910b32055291c9947e85578959514bd03ce3e6dc43059",
+      "bytes": 71940,
+      "exactBytes": true,
+      "width": 1060,
+      "height": 600,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-32-C_L21-reimport-dimensions.png",
+      "status": 200,
+      "sha256": "9b21f1f1224b36e130db26148fc57bc5b5f06bb8c21685a66fb743891903e6aa",
+      "bytes": 183977,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-33-C_L21-reimport-profile.png",
+      "status": 200,
+      "sha256": "afae458cd829be9adb40cb33f6227f7883827c9cbf661b566506792d3c4f6f87",
+      "bytes": 177928,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-34-C_L21-reimport-non-manifold.png",
+      "status": 200,
+      "sha256": "7b4c946dd9fe7410657b9155f6180c9b62519750d65a2735cb441ed61e0a42ca",
+      "bytes": 184186,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-35-reimport-layout.png",
+      "status": 200,
+      "sha256": "8897c764ca05fb2d93f3c08fd415c34c9d9de007b3f6120da051b403a557ba1d",
+      "bytes": 189813,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-36-coupon-exports-verified.png",
+      "status": 200,
+      "sha256": "8897c764ca05fb2d93f3c08fd415c34c9d9de007b3f6120da051b403a557ba1d",
+      "bytes": 189813,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    }
+  ],
+  "downloads": [
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/demo-files/exports/u07_A_L19_v001.stl",
+      "status": 200,
+      "sha256": "bb40b5f669601e11bc97d41f48e8a65552bfe99bb21645d47d359098c62af168",
+      "bytes": 4084,
+      "exactBytes": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/demo-files/exports/u07_B_L17_v001.stl",
+      "status": 200,
+      "sha256": "ac0f9ca920197544f7c47465901beb98059b69b99d5aa9ad88ac9d73d16d017a",
+      "bytes": 4084,
+      "exactBytes": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/demo-files/exports/u07_C_L21_v001.stl",
+      "status": 200,
+      "sha256": "1e3bb7cb883fd5d00319ebd9f44b761843b3c1b8f4c644e3333ac7a463083788",
+      "bytes": 4084,
+      "exactBytes": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/coupon-stl-export-record-v001.json",
+      "status": 200,
+      "sha256": "21b7b935add72f1bce455882222079b6abc13591bc4c6b7f2c23e02927772b80",
+      "bytes": 579059,
+      "exactBytes": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/export-manifest-v001.json",
+      "status": 200,
+      "sha256": "35f3276252f4ecb8937590c197e476c232552dcf5120f2c1ca49d19f498ec77a",
+      "bytes": 59675,
+      "exactBytes": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/trial-fit-record-v001.json",
+      "status": 200,
+      "sha256": "eaf5b874fb9f137461f7308e37449699d0155dc072d4d1cf91cf134c950201fc",
+      "bytes": 9755,
+      "exactBytes": true
+    },
+    {
+      "path": "learning/journal/2026-10-25-lesson07-coupon-export-demo-v001.md",
+      "status": 200,
+      "sha256": "fbf0f1b8e360bfc13c7e35b46c5d75caedcd4b5fdddecaf9b5ad376c1dcfb725",
+      "bytes": 11362,
+      "exactBytes": true
+    }
+  ],
+  "passed": true,
+  "changedSteps": [
+    "07-05"
+  ],
+  "stepFingerprintsCompared": 52,
+  "catalogSha256": "10b2472ad460c6291e0686c0cfe9dcd3c38d84ce868eeaa84b26fd5c78df1733",
+  "apiCatalogMatchesDisk": true,
+  "apiProgressMatchesDisk": true,
+  "progressSha256": "d92e4f2ee78a1cf41386816b8616bf635b89fb25f8bfd813ac00cd20ed20b4ef",
+  "progressRevision": 5,
+  "learnerCompletionConfirmed": false,
+  "previousGeometryRunPreserved": true,
+  "previousProtectedFilesUnchanged": [
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/demo-files/u07_cantilever_length_coupons_v001.blend",
+      "sha256": "22072532eed0f6fcc506bb435ed8d65fcaeaef583ea41d90c4e8c9665b82e9b8",
+      "bytes": 108728
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/coupon-record-v001.json",
+      "sha256": "1180c5194a5ec09af9186e2e3f69761e5460a4350f9019e9d1020a44e127c01d",
+      "bytes": 452168
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/verification.json",
+      "sha256": "ecea0a82400931113ad34f9c1fe054d6711835558d268973680a029ea656950b",
+      "bytes": 447931
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/geometry-manifest-v001.json",
+      "sha256": "d73880bb5e614cf587071e9437d6f47824bcad6d7860678dc0913735bf5177d7",
+      "bytes": 83080
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/trial-fit-record-v001.json",
+      "sha256": "66adde143a60fe0ef8a5ec61eb101dadc8a2a0e833b9aa4d74be19f2cdffd517",
+      "bytes": 6700
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/publication-checks-v001.json",
+      "sha256": "cee9ac30b9c2da06d8a9d6c551de9add9f46167e2adb8bc1d64a4d2091373b4c",
+      "bytes": 13004
+    }
+  ],
+  "automatedChecks": {
+    "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/automated-checks-v001.json",
+    "sha256": "5179d8ed2c784faaee9b9e3e2e444930b19e0ba80d216478e11dfe9cf9372300"
+  },
+  "browserProof": {
+    "path": "learning/evidence/ui/2026-10-25-lesson07-coupon-export-demo-v001.json",
+    "sha256": "cc9041d2b2451a3dfbaa9d41577ae57deb7bf7ff5e0abef46a9174558695da56",
+    "screenshots": [
+      {
+        "path": "learning/evidence/ui/2026-10-25-lesson07-coupon-export-demo-v001-final-overview.jpg",
+        "sha256": "e50803bc31432e86d18595ad62de3022317376d917f35baa7e6bd38b7f744a3d",
+        "bytes": 40674,
+        "width": 304,
+        "height": 848,
+        "pixelEdits": false,
+        "role": "overview"
+      },
+      {
+        "path": "learning/evidence/ui/2026-10-25-lesson07-coupon-export-demo-v001-final-comparison.jpg",
+        "sha256": "83a878ddcde576e151c9bd6f15ebb7322fcbcc054e066f1f4189c6987536f4ee",
+        "bytes": 35377,
+        "width": 304,
+        "height": 848,
+        "pixelEdits": false,
+        "role": "comparison"
+      },
+      {
+        "path": "learning/evidence/ui/2026-10-25-lesson07-coupon-export-demo-v001-final-conditions.jpg",
+        "sha256": "f04beee4c437a3db581d5d9d603602956e7a58b747ce8b05d67aadaf867c6578",
+        "bytes": 33490,
+        "width": 304,
+        "height": 848,
+        "pixelEdits": false,
+        "role": "conditions"
+      },
+      {
+        "path": "learning/evidence/ui/2026-10-25-lesson07-coupon-export-demo-v001-final-history.jpg",
+        "sha256": "1dbac636122186f1a93ed80d70a6b63de3f87d57aab6d46a4bd98bf06ce68c4d",
+        "bytes": 43494,
+        "width": 304,
+        "height": 848,
+        "pixelEdits": false,
+        "role": "history"
+      }
+    ]
+  }
+}

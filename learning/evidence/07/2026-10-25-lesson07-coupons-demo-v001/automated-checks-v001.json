@@ -1,0 +1,62 @@
+{
+  "recordedAt": "2026-10-25T09:34:54.712622+00:00",
+  "passed": true,
+  "tutor": {
+    "command": "python -X utf8 -B -m unittest discover -s learning/tutor/tests -p test_*.py -v",
+    "testsRun": 242,
+    "passed": 241,
+    "skipped": 1,
+    "skipReason": "Windows symlink unavailable",
+    "log": "tutor-tests-v002.log"
+  },
+  "server": {
+    "command": "python -X utf8 -B -m unittest discover -s learning/tests -p test_server.py -v",
+    "testsRun": 17,
+    "passed": 17,
+    "skipped": 0,
+    "log": "server-tests-v002.log"
+  },
+  "javascriptSyntax": {
+    "command": "node --check learning/web/app.js",
+    "exitCode": 0
+  },
+  "publicationScriptSyntax": {
+    "command": "python -B -m py_compile learning/tutor/publish_coupons.py",
+    "exitCode": 0
+  },
+  "logs": [
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/tutor-tests-v002.log",
+      "sha256": "5cf9031d9f4a588f59073465bcfa1396397452d4a281785075e48cbf71f1379c"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/server-tests-v002.log",
+      "sha256": "33eecf848e0aa0aa05f89210195d18b797cbaa7534f1cbbb159b1f8cf78d9a00"
+    }
+  ],
+  "additionalAudits": [
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/independent-coupon-audit-v001.json",
+      "sha256": "81ecd99f47ed9e7d569bb729d82cf10ecb626f6a8a8ed0f7e32c4b489ed99c35"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/ui-technical-review-v001.json",
+      "sha256": "152bde136d85a01d59ab7dc52a1a85ca189b36093a7a7af1e3c8d2af832453e6"
+    }
+  ],
+  "initialDiscoveryAttempts": {
+    "logs": [
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/tutor-tests-v001.log",
+        "sha256": "b0281afc5a8f851fedc2bba09c88d720f4dcc47a2a487e40928c779cb967ff8c"
+      },
+      {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/server-tests-v001.log",
+        "sha256": "b0281afc5a8f851fedc2bba09c88d720f4dcc47a2a487e40928c779cb967ff8c"
+      }
+    ],
+    "testsRun": 0,
+    "publishedAsPassing": false,
+    "note": "Initial discovery pointed to parent folders lacking recursive package discovery; corrected to actual tests directories in v002."
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "reviewedOn": "2026-10-25",
+  "purpose": "軟體回歸與證據完整性；不包含切片、支撐、列印、材料、強度或配合驗證。",
+  "checks": [
+    {
+      "command": "python -X utf8 -m unittest discover -s learning/tutor/tests",
+      "exitCode": 0,
+      "testsRun": 223,
+      "passed": 222,
+      "skipped": 1,
+      "skipReason": "Windows symlink privilege not available",
+      "elapsedSecondsReported": 13.222
+    },
+    {
+      "command": "python -X utf8 -m unittest discover -s learning/tests",
+      "exitCode": 0,
+      "testsRun": 17,
+      "passed": 17,
+      "elapsedSecondsReported": 16.151
+    },
+    {
+      "command": "node --check learning/web/app.js",
+      "exitCode": 0
+    },
+    {
+      "command": "manual isolated VM checks of renderStlReview",
+      "passed": true,
+      "scope": "stage guard, null versus zero, HTML escaping and evidence JSON link guard"
+    }
+  ],
+  "finalTUTORRegression": {
+    "command": "python -X utf8 -m unittest discover -s learning/tutor/tests",
+    "exitCode": 0,
+    "testsRun": 223,
+    "passed": 222,
+    "skipped": 1,
+    "logPath": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/tutor-regression-final-v001.log",
+    "logSha256": "6a469a9a7783ebf63ae27248df450bcb90865f5f4868b1bcc3d2c577e66c64a3",
+    "scope": "After native float-identity importer reference correction; no geometry epsilon change"
+  },
+  "independentSTLAudit": {
+    "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/independent-stl-audit-v001.json",
+    "sha256": "d2fe58d5620d6f08950ae98eea9e37b8228e2da14c03c13c217edf589be84f69",
+    "passed": true
+  }
+}

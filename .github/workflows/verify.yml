@@ -1,0 +1,40 @@
+name: Verify teaching package
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: windows-latest
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.10', '3.13']
+    env:
+      PYTHONUTF8: '1'
+      PYTHONDONTWRITEBYTECODE: '1'
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Verify public files and evidence hashes
+        run: python scripts/prepare_publication.py --verify
+      - name: Initialize a new learner without copying author state
+        run: python learning/bootstrap.py
+      - name: Check dashboard and bootstrap
+        run: python -m unittest discover -s learning/tests -v
+      - name: Check tutor validators and runner safeguards
+        run: python -m unittest discover -s learning/tutor/tests -v
+      - name: Check browser script syntax
+        run: node --check learning/web/app.js
+      - name: Confirm tests did not modify published files
+        run: git diff --exit-code

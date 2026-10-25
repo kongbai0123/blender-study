@@ -1,0 +1,2233 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "Codex subagent /root/audit_images_07b",
+  "reviewedAt": "2026-10-25",
+  "scope": "Published catalog 07-04, 07-05 current and previousOperationRuns; unique original image paths",
+  "method": "逐張使用view_image實際目視85份原始截圖，每批最多4張；每張比對catalog event action／observed／note及相同figure。未拼貼、未重畫、未用舊audit代替看圖。SHA-256另讀實檔重新計算。",
+  "scopeExclusions": [
+    "本分工未執行Blender或STL數值重算",
+    "未核對外部來源",
+    "未檢查實體列印或試配",
+    "consistent僅指可見UI與描述相容，並非event所有程式讀值由圖證明"
+  ],
+  "counts": {
+    "images": 85,
+    "step07_04": 25,
+    "step07_05": 60,
+    "couponExport": 36,
+    "couponGeometryPreviousRun": 24,
+    "snapExport": 25,
+    "hashMatches": 85,
+    "visibleUiContradictions": 0
+  },
+  "summary": "85張均為可讀的真實Blender畫面，未見可見UI數值、選取、匯出選項或Item/world姿態敘述互相矛盾。4項呈現／證據範圍改善建議列下。沒有強度、配合或可列印合格判定。",
+  "findings": [
+    {
+      "id": "07b-PRESENT-01",
+      "severity": "presentation",
+      "step": "07-05",
+      "run": "2026-10-25-lesson07-coupons-demo-v001",
+      "seq": 2,
+      "image": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-02-source-reference.png",
+      "issue": "讀取SnapTool的event配圖是Body/Lid總覽，active Body且SnapTool隱藏。R0／42頂點／80三角形等不是可由此圖目視的內容。",
+      "recommendation": "把動作／caption明列為「程式讀回來源，畫面顯示原候選Body/Lid」；若教學要逐點重做，可另補選SnapTool的原生實拍，不覆寫原圖。",
+      "contradiction": false
+    },
+    {
+      "id": "07b-PRESENT-02",
+      "severity": "terminology",
+      "step": "07-04",
+      "seqs": [
+        3,
+        18
+      ],
+      "images": [
+        "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-03-body-source-profile.png",
+        "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-18-body-reimport-profile.png"
+      ],
+      "issue": "action稱「剖面」，實際為Right Orthographic沿世界X的外輪廓，Body外側面遮住內腔，沒有剖切或Xray。",
+      "recommendation": "稱為側視／輪廓，完整內腔剖面、壁厚與卡扣剖面仍以raw/STL獨立量化，必要時補真實剖視畫面。",
+      "contradiction": false
+    },
+    {
+      "id": "07b-PRESENT-03",
+      "severity": "evidence_limit",
+      "steps": [
+        "07-04",
+        "07-05"
+      ],
+      "issue": "匯出成功、保存與最終總覽圖不是STL bytes／tri／hash／閉殼／精確離床／有效L／改善的畫面證明；部分總覽幾乎相同，僅支持可見狀態。",
+      "recommendation": "保持「實際畫面」與「程式讀回／實檔解析」分欄，勿把每圖consistent解讀為該event所有數值已由圖讀到。",
+      "contradiction": false
+    },
+    {
+      "id": "07b-PRESENT-04",
+      "severity": "minor_copy",
+      "step": "07-04",
+      "seq": 9,
+      "image": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-09-lid-source-selected.png",
+      "issue": "選Lid事件的note仍在解釋Body Item/Ry90；內容正確但容易錯認本圖active物件。",
+      "recommendation": "讓此note優先標Lid的Rx180與60×46×7，Body比較留在Body事件或共通提示。",
+      "contradiction": false
+    }
+  ],
+  "images": [
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-01-A_L19-source-dialog.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.operationRun.events[0].figure.path"
+      ],
+      "exists": true,
+      "sha256": "14975f8bb41ae051fc7fd9f789d13eea67cd90e574933eb29d72ce10c78bfe29",
+      "contexts": [
+        {
+          "seq": 1,
+          "action": "File > Open，開啟07-05三試片候選姿態同hash副本，準備分件匯出 A_L19",
+          "observed": "資料夾 D:\\others\\study\\Blender-Learning\\learning\\evidence\\07\\2026-10-25-lesson07-coupon-export-demo-v001\\demo-files\\sources\\；檔名 u07_cantilever_length_coupons_v001.blend。"
+        }
+      ],
+      "sha256_now": "14975f8bb41ae051fc7fd9f789d13eea67cd90e574933eb29d72ce10c78bfe29",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "真實Open檔案視窗，檔名u07_cantilever_length_coupons_v001.blend；路徑欄中段省略，完整路徑需run紀錄佐證。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-02-A_L19-source-selected.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.operationRun.events[1].figure.path"
+      ],
+      "exists": true,
+      "sha256": "e1365ce02ec981c8b7bb29d5b248af3812f0bbbb9436c36510146df9c19602a6",
+      "contexts": [
+        {
+          "seq": 2,
+          "action": "只選 A_L19，核對物件軸尺寸、世界外框與保留的旋轉",
+          "observed": "A_L19：來源Item物件軸Dimensions [9.0, 4.599999904632568, 24.0] mm；world外框[24.00000023841858, 4.600000381469727, 9.000000065567079] mm、Ry90保留。只選本件，另兩件與四原件hidden；七物件local mesh／matrix／data name均與幾何版一致。",
+          "note": "來源Item為9×4.6×24／22／26；Ry90後world為24／22／26×4.6×9。幾何L19／17／21另由根平面至承接面讀回。"
+        }
+      ],
+      "sha256_now": "e1365ce02ec981c8b7bb29d5b248af3812f0bbbb9436c36510146df9c19602a6",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "僅A_L19亮橘選取，Ry90／Scale1，Item9×4.6×24mm，Location0,−12,4.5；其他物件Outliner隱藏。world外框與七件hash不能由此圖單獨證明。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-03-A_L19-source-profile.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.operationRun.events[2].figure.path"
+      ],
+      "exists": true,
+      "sha256": "3af56ba44c5ee8aa84a9ab8327d0f0bc0d43becf23077d01ccde593157bcb33a",
+      "contexts": [
+        {
+          "seq": 3,
+          "action": "由世界−Y正視 A_L19 的實際候選臂長輪廓與外框",
+          "observed": "A_L19：來源Item物件軸Dimensions [9.0, 4.599999904632568, 24.0] mm；world外框[24.00000023841858, 4.600000381469727, 9.000000065567079] mm、Ry90保留。只選本件，另兩件與四原件hidden；七物件local mesh／matrix／data name均與幾何版一致。"
+        }
+      ],
+      "sha256_now": "3af56ba44c5ee8aa84a9ab8327d0f0bc0d43becf23077d01ccde593157bcb33a",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "Front Orthographic可見完整直臂與錨座根部曲面輪廓；Item仍9×4.6×24mm、Ry90。L19根平面至承接面的精確距離需raw。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-04-A_L19-export-menu.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.operationRun.events[3].figure.path"
+      ],
+      "exists": true,
+      "sha256": "41562116cecc5163ed6030f8fb5dc4df17e0acd4dd312264d391848ea4201bbf",
+      "contexts": [
+        {
+          "seq": 4,
+          "action": "File > Export > STL (.stl)，目前只選 A_L19",
+          "observed": "已選取：A_L19；作用中物件：A_L19"
+        }
+      ],
+      "sha256_now": "41562116cecc5163ed6030f8fb5dc4df17e0acd4dd312264d391848ea4201bbf",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "File>Export子選單STL (.stl)可見；A_L19仍唯一選取。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-05-A_L19-export-before.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.operationRun.events[4].figure.path"
+      ],
+      "exists": true,
+      "sha256": "d2ac10f7bc9aae66620647a15e2110a1d68cfd4ea34f320412ae700700c71d0b",
+      "contexts": [
+        {
+          "seq": 5,
+          "action": "核對 u07_A_L19_v001.stl 路徑／新版本與原生匯出欄位",
+          "observed": "資料夾 D:\\others\\study\\Blender-Learning\\learning\\evidence\\07\\2026-10-25-lesson07-coupon-export-demo-v001\\demo-files\\exports\\；檔名 u07_A_L19_v001.stl；原生選項 {'global_scale': 1.0, 'use_scene_unit': False, 'forward_axis': 'Y', 'up_axis': 'Z', 'only_selected': False, 'apply_modifiers': True, 'ascii_format': False, 'use_batch': False, 'evaluation_mode': 'DAG_EVAL_RENDER'}。"
+        }
+      ],
+      "sha256_now": "d2ac10f7bc9aae66620647a15e2110a1d68cfd4ea34f320412ae700700c71d0b",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "A匯出前File Browser，檔名u07_A_L19_v001.stl；Selection Only尚未勾、Scale1、SceneUnit關、ASCII關，符合before說明。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-06-A_L19-export-options.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.operationRun.events[5].figure.path"
+      ],
+      "exists": true,
+      "sha256": "787fb50995b0e44804a9248170bd2d1e77cb9be6527929af45df330d68b3e796",
+      "contexts": [
+        {
+          "seq": 6,
+          "action": "勾選並實讀 Selection Only／Scale1／Scene Unit關／Binary，核對新檔目標",
+          "observed": "只匯出A_L19；Selection Only開、Scale1、Scene Unit關、Binary、Batch關、Y Forward／Z Up。座標按mm解讀，保留原試片候選world位置。",
+          "note": "STL沒有單位標記；本次保留07-05三件候選的world擺位，未做切片或支撐資格判定。"
+        }
+      ],
+      "sha256_now": "787fb50995b0e44804a9248170bd2d1e77cb9be6527929af45df330d68b3e796",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "A匯出選項實拍：Selection Only勾選、Scale1.000、SceneUnit關、ASCII/Batch關、Y/Z軸，檔名符合。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-07-A_L19-stl-checked.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.operationRun.events[6].figure.path"
+      ],
+      "exists": true,
+      "sha256": "d498056d1e14b4cc257d2270d325408f568d9f01cc84e3cc813a3d5d3a60a207",
+      "contexts": [
+        {
+          "seq": 7,
+          "action": "按Export STL，解析原生匯出實檔並核對完整world幾何、尺寸與來源",
+          "observed": "u07_A_L19_v001.stl：實檔4084 bytes／80三角形，世界外框[24.00000023841858, 4.600000381469727, 9.0] mm、最小Z 0 mm；單殼／Non Manifold0，SHA-256 bb40b5f669601e11bc97d41f48e8a65552bfe99bb21645d47d359098c62af168。",
+          "note": "約1e-6 mm的負Z屬浮點重建；EPS1e-4 mm只作數值核對，不是製造公差。數位檔通過不代表可直接列印或試配合格。"
+        }
+      ],
+      "sha256_now": "d498056d1e14b4cc257d2270d325408f568d9f01cc84e3cc813a3d5d3a60a207",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "回到A來源Front圖，底部File exported successfully；畫面仍Item9×4.6×24/Ry90，檔案bytes/tri/hash/NM讀值需實檔佐證。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-08-B_L17-source-dialog.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.operationRun.events[7].figure.path"
+      ],
+      "exists": true,
+      "sha256": "88d88a6a80a030db091a7dffe61521d962c31de3a15c5a24585da53e8293792d",
+      "contexts": [
+        {
+          "seq": 8,
+          "action": "File > Open，開啟07-05三試片候選姿態同hash副本，準備分件匯出 B_L17",
+          "observed": "資料夾 D:\\others\\study\\Blender-Learning\\learning\\evidence\\07\\2026-10-25-lesson07-coupon-export-demo-v001\\demo-files\\sources\\；檔名 u07_cantilever_length_coupons_v001.blend。"
+        }
+      ],
+      "sha256_now": "88d88a6a80a030db091a7dffe61521d962c31de3a15c5a24585da53e8293792d",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "B匯出前Open同coupon來源檔；檔名清楚，完整省略路徑需run紀錄佐證。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-09-B_L17-source-selected.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.operationRun.events[8].figure.path"
+      ],
+      "exists": true,
+      "sha256": "5612dc335babe2f0c7746247e75696a421e7150906893c95209bd0915c38ccb9",
+      "contexts": [
+        {
+          "seq": 9,
+          "action": "只選 B_L17，核對物件軸尺寸、世界外框與保留的旋轉",
+          "observed": "B_L17：來源Item物件軸Dimensions [9.0, 4.599999904632568, 22.0] mm；world外框[22.00000023841858, 4.599999904632568, 9.000000065567079] mm、Ry90保留。只選本件，另兩件與四原件hidden；七物件local mesh／matrix／data name均與幾何版一致。",
+          "note": "來源Item為9×4.6×24／22／26；Ry90後world為24／22／26×4.6×9。幾何L19／17／21另由根平面至承接面讀回。"
+        }
+      ],
+      "sha256_now": "5612dc335babe2f0c7746247e75696a421e7150906893c95209bd0915c38ccb9",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "僅B_L17選取／可見，Item9×4.6×22、Ry90／Scale1，Location0,0,4.5；world與來源hash仍需raw。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-10-B_L17-source-profile.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.operationRun.events[9].figure.path"
+      ],
+      "exists": true,
+      "sha256": "0b334e28a3fd16511559b8f2a632e6c6728740e8a6c3dafdbec204caa80360d9",
+      "contexts": [
+        {
+          "seq": 10,
+          "action": "由世界−Y正視 B_L17 的實際候選臂長輪廓與外框",
+          "observed": "B_L17：來源Item物件軸Dimensions [9.0, 4.599999904632568, 22.0] mm；world外框[22.00000023841858, 4.599999904632568, 9.000000065567079] mm、Ry90保留。只選本件，另兩件與四原件hidden；七物件local mesh／matrix／data name均與幾何版一致。"
+        }
+      ],
+      "sha256_now": "0b334e28a3fd16511559b8f2a632e6c6728740e8a6c3dafdbec204caa80360d9",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "Front Orthographic顯示B較短臂的完整輪廓、根部曲面；Item9×4.6×22，精確L17需raw幾何讀值。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-11-B_L17-export-menu.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.operationRun.events[10].figure.path"
+      ],
+      "exists": true,
+      "sha256": "23c1a2d7c4c95830deb24d52f78915a2dd69eadd515803db8a2526f601088f5e",
+      "contexts": [
+        {
+          "seq": 11,
+          "action": "File > Export > STL (.stl)，目前只選 B_L17",
+          "observed": "已選取：B_L17；作用中物件：B_L17"
+        }
+      ],
+      "sha256_now": "23c1a2d7c4c95830deb24d52f78915a2dd69eadd515803db8a2526f601088f5e",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "File>Export>STL選單展開，B_L17保持選取，與動作一致。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-12-B_L17-export-before.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.operationRun.events[11].figure.path"
+      ],
+      "exists": true,
+      "sha256": "aa18c178051e9fff72f728746406f2bb695a9a1869e0dc9d1e98b4c3e3bb6c7a",
+      "contexts": [
+        {
+          "seq": 12,
+          "action": "核對 u07_B_L17_v001.stl 路徑／新版本與原生匯出欄位",
+          "observed": "資料夾 D:\\others\\study\\Blender-Learning\\learning\\evidence\\07\\2026-10-25-lesson07-coupon-export-demo-v001\\demo-files\\exports\\；檔名 u07_B_L17_v001.stl；原生選項 {'global_scale': 1.0, 'use_scene_unit': False, 'forward_axis': 'Y', 'up_axis': 'Z', 'only_selected': False, 'apply_modifiers': True, 'ascii_format': False, 'use_batch': False, 'evaluation_mode': 'DAG_EVAL_RENDER'}。"
+        }
+      ],
+      "sha256_now": "aa18c178051e9fff72f728746406f2bb695a9a1869e0dc9d1e98b4c3e3bb6c7a",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "B匯出before檔名u07_B_L17_v001.stl；列表已有A STL，Selection Only關、Scale1／SceneUnit關／Y/Z正確。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-13-B_L17-export-options.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.operationRun.events[12].figure.path"
+      ],
+      "exists": true,
+      "sha256": "5b3a83b925809fbe66987d616e918c3269014c416da0ae5ceea5bad6881a29ad",
+      "contexts": [
+        {
+          "seq": 13,
+          "action": "勾選並實讀 Selection Only／Scale1／Scene Unit關／Binary，核對新檔目標",
+          "observed": "只匯出B_L17；Selection Only開、Scale1、Scene Unit關、Binary、Batch關、Y Forward／Z Up。座標按mm解讀，保留原試片候選world位置。",
+          "note": "STL沒有單位標記；本次保留07-05三件候選的world擺位，未做切片或支撐資格判定。"
+        }
+      ],
+      "sha256_now": "5b3a83b925809fbe66987d616e918c3269014c416da0ae5ceea5bad6881a29ad",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "B匯出選項SelectionOnly勾、Scale1、SceneUnit關、ASCII/Batch關、Y/Z；檔名正確。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-14-B_L17-stl-checked.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.operationRun.events[13].figure.path"
+      ],
+      "exists": true,
+      "sha256": "91521b225ba9f96c7344f9fba9bce334d59a59af7a0d0d05587f8d08f815399f",
+      "contexts": [
+        {
+          "seq": 14,
+          "action": "按Export STL，解析原生匯出實檔並核對完整world幾何、尺寸與來源",
+          "observed": "u07_B_L17_v001.stl：實檔4084 bytes／80三角形，世界外框[22.00000023841858, 4.599999904632568, 9.0] mm、最小Z 0 mm；單殼／Non Manifold0，SHA-256 ac0f9ca920197544f7c47465901beb98059b69b99d5aa9ad88ac9d73d16d017a。",
+          "note": "約1e-6 mm的負Z屬浮點重建；EPS1e-4 mm只作數值核對，不是製造公差。數位檔通過不代表可直接列印或試配合格。"
+        }
+      ],
+      "sha256_now": "91521b225ba9f96c7344f9fba9bce334d59a59af7a0d0d05587f8d08f815399f",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "B來源圖底部File exported successfully；Item9×4.6×22/Ry90，80tri/NM/hash需實檔。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-15-C_L21-source-dialog.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.operationRun.events[14].figure.path"
+      ],
+      "exists": true,
+      "sha256": "88d88a6a80a030db091a7dffe61521d962c31de3a15c5a24585da53e8293792d",
+      "contexts": [
+        {
+          "seq": 15,
+          "action": "File > Open，開啟07-05三試片候選姿態同hash副本，準備分件匯出 C_L21",
+          "observed": "資料夾 D:\\others\\study\\Blender-Learning\\learning\\evidence\\07\\2026-10-25-lesson07-coupon-export-demo-v001\\demo-files\\sources\\；檔名 u07_cantilever_length_coupons_v001.blend。"
+        }
+      ],
+      "sha256_now": "88d88a6a80a030db091a7dffe61521d962c31de3a15c5a24585da53e8293792d",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "C前置Open視窗來源coupon檔名正確，路徑中段省略。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-16-C_L21-source-selected.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.operationRun.events[15].figure.path"
+      ],
+      "exists": true,
+      "sha256": "360c2b8266050f172745eec7b3470e85269c34f75ec84faceb2fe93f963d290e",
+      "contexts": [
+        {
+          "seq": 16,
+          "action": "只選 C_L21，核對物件軸尺寸、世界外框與保留的旋轉",
+          "observed": "C_L21：來源Item物件軸Dimensions [9.0, 4.599999904632568, 26.0] mm；world外框[26.00000023841858, 4.600000381469727, 9.000000065567079] mm、Ry90保留。只選本件，另兩件與四原件hidden；七物件local mesh／matrix／data name均與幾何版一致。",
+          "note": "來源Item為9×4.6×24／22／26；Ry90後world為24／22／26×4.6×9。幾何L19／17／21另由根平面至承接面讀回。"
+        }
+      ],
+      "sha256_now": "360c2b8266050f172745eec7b3470e85269c34f75ec84faceb2fe93f963d290e",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "僅C_L21選取／可見，Item9×4.6×26、Ry90/Scale1，Location0,12,4.5，和描述一致。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-17-C_L21-source-profile.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.operationRun.events[16].figure.path"
+      ],
+      "exists": true,
+      "sha256": "2c9621c7078a66636d9232167c37d1e6232524e46a9131378a29ae2a78166785",
+      "contexts": [
+        {
+          "seq": 17,
+          "action": "由世界−Y正視 C_L21 的實際候選臂長輪廓與外框",
+          "observed": "C_L21：來源Item物件軸Dimensions [9.0, 4.599999904632568, 26.0] mm；world外框[26.00000023841858, 4.600000381469727, 9.000000065567079] mm、Ry90保留。只選本件，另兩件與四原件hidden；七物件local mesh／matrix／data name均與幾何版一致。"
+        }
+      ],
+      "sha256_now": "2c9621c7078a66636d9232167c37d1e6232524e46a9131378a29ae2a78166785",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "C的Front正視根部曲面與完整長臂輪廓可見，Item9×4.6×26／Ry90；L21需raw。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-18-C_L21-export-menu.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.operationRun.events[17].figure.path"
+      ],
+      "exists": true,
+      "sha256": "0396b2b76def40e3df7e0360df445590f9cc55b9db62662661cde349948949ef",
+      "contexts": [
+        {
+          "seq": 18,
+          "action": "File > Export > STL (.stl)，目前只選 C_L21",
+          "observed": "已選取：C_L21；作用中物件：C_L21"
+        }
+      ],
+      "sha256_now": "0396b2b76def40e3df7e0360df445590f9cc55b9db62662661cde349948949ef",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "C選取時File>Export>STL選單開啟，與動作一致。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-19-C_L21-export-before.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.operationRun.events[18].figure.path"
+      ],
+      "exists": true,
+      "sha256": "e88a9fd05c815c98eccd14581031277bcc9f9bda866495d63107ce2d07852333",
+      "contexts": [
+        {
+          "seq": 19,
+          "action": "核對 u07_C_L21_v001.stl 路徑／新版本與原生匯出欄位",
+          "observed": "資料夾 D:\\others\\study\\Blender-Learning\\learning\\evidence\\07\\2026-10-25-lesson07-coupon-export-demo-v001\\demo-files\\exports\\；檔名 u07_C_L21_v001.stl；原生選項 {'global_scale': 1.0, 'use_scene_unit': False, 'forward_axis': 'Y', 'up_axis': 'Z', 'only_selected': False, 'apply_modifiers': True, 'ascii_format': False, 'use_batch': False, 'evaluation_mode': 'DAG_EVAL_RENDER'}。"
+        }
+      ],
+      "sha256_now": "e88a9fd05c815c98eccd14581031277bcc9f9bda866495d63107ce2d07852333",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "C匯出before顯示A、B既有STL；新檔名C正確，SelectionOnly尚關、Scale1／SceneUnit關。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-20-C_L21-export-options.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.operationRun.events[19].figure.path"
+      ],
+      "exists": true,
+      "sha256": "9ea4b96d526988f6c327ad563b26ffe2391d21f4fd5d980c866be13a2b40c113",
+      "contexts": [
+        {
+          "seq": 20,
+          "action": "勾選並實讀 Selection Only／Scale1／Scene Unit關／Binary，核對新檔目標",
+          "observed": "只匯出C_L21；Selection Only開、Scale1、Scene Unit關、Binary、Batch關、Y Forward／Z Up。座標按mm解讀，保留原試片候選world位置。",
+          "note": "STL沒有單位標記；本次保留07-05三件候選的world擺位，未做切片或支撐資格判定。"
+        }
+      ],
+      "sha256_now": "9ea4b96d526988f6c327ad563b26ffe2391d21f4fd5d980c866be13a2b40c113",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "C匯出後設定SelectionOnly勾、Scale1／SceneUnit關、ASCII/Batch關、Y/Z，檔名u07_C_L21_v001.stl。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-21-C_L21-stl-checked.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.operationRun.events[20].figure.path"
+      ],
+      "exists": true,
+      "sha256": "9b88cfd2d30b32be86813e109bbe306ddb229a05159e37d24820ea70705fd4a7",
+      "contexts": [
+        {
+          "seq": 21,
+          "action": "按Export STL，解析原生匯出實檔並核對完整world幾何、尺寸與來源",
+          "observed": "u07_C_L21_v001.stl：實檔4084 bytes／80三角形，世界外框[26.00000023841858, 4.600000381469727, 9.0] mm、最小Z 0 mm；單殼／Non Manifold0，SHA-256 1e3bb7cb883fd5d00319ebd9f44b761843b3c1b8f4c644e3333ac7a463083788。",
+          "note": "約1e-6 mm的負Z屬浮點重建；EPS1e-4 mm只作數值核對，不是製造公差。數位檔通過不代表可直接列印或試配合格。"
+        }
+      ],
+      "sha256_now": "9b88cfd2d30b32be86813e109bbe306ddb229a05159e37d24820ea70705fd4a7",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "C來源Front圖底部File exported successfully；Item9×4.6×26/Ry90；檔案4084/80tri/hash需實檔，不在截圖上。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-22-empty-mm-scene.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.operationRun.events[21].figure.path"
+      ],
+      "exists": true,
+      "sha256": "4adc8aebf5e4a772bee8fce4eb6b599831c2910744002fc3fb9242704c87f51c",
+      "contexts": [
+        {
+          "seq": 22,
+          "action": "File > New > General，清空並設mm，準備真實重匯入三份STL",
+          "observed": "獨立新場景物件0；Metric／Millimeters／Unit Scale0.001。空場景沒有Item，不先點分頁。"
+        }
+      ],
+      "sha256_now": "4adc8aebf5e4a772bee8fce4eb6b599831c2910744002fc3fb9242704c87f51c",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "新空場景Outliner空Collection；Scene Units Metric、0.001000、Millimeters可見，側欄無Item符合。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-23-A_L19-import-dialog.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.operationRun.events[22].figure.path"
+      ],
+      "exists": true,
+      "sha256": "8a1817bf4a269f9421ab95a42ec2dc03fcfe70be8121323980a717f526b981ac",
+      "contexts": [
+        {
+          "seq": 23,
+          "action": "F3 > Import STL，選剛匯出的 u07_A_L19_v001.stl 並讀回實際選項",
+          "observed": "實際檔名u07_A_L19_v001.stl；Scale1、Scene Unit關、Y Forward／Z Up；沒有自動移動或套用縮放。"
+        }
+      ],
+      "sha256_now": "8a1817bf4a269f9421ab95a42ec2dc03fcfe70be8121323980a717f526b981ac",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "A Import STL視窗檔名正確、Scale1.000、SceneUnit關、Y/Z，ValidateMesh勾；三件STL列表皆在。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-24-A_L19-reimport-dimensions.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.figures[0].path",
+        "07-05.operationRun.events[23].figure.path"
+      ],
+      "exists": true,
+      "sha256": "5a3634959a94caac6d6a50ad0a4aed7b79dc5a0f0ddaf9e4abaf4c8f54120cb0",
+      "contexts": [
+        {
+          "seq": 24,
+          "action": "實際重匯入後才切一次Item；核對 A_L19_STL 尺寸／世界外框",
+          "observed": "A_L19_STL實際重匯入：Item Dimensions [24.0, 4.600000381469727, 9.0] mm＝世界外框[24.00000023841858, 4.600000381469727, 9.0] mm；物件旋轉0／Scale1／修改器0。原world座標在頂點中，物件Location0不代表零件位於原點。"
+        }
+      ],
+      "sha256_now": "5a3634959a94caac6d6a50ad0a4aed7b79dc5a0f0ddaf9e4abaf4c8f54120cb0",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "A_L19_STL已匯入，Loc/R全0、Scale1，Item24×4.6×9mm；輪廓與來源相符，UI清楚佐證world vs物件軸差異。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-25-A_L19-reimport-profile.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.operationRun.events[24].figure.path"
+      ],
+      "exists": true,
+      "sha256": "3cb3be0a5808fa8a4cc732e74ea054e62d306db47e96b0abfab5b86fcd3d8f07",
+      "contexts": [
+        {
+          "seq": 25,
+          "action": "由世界−Y正視實際STL A_L19_STL 的臂長輪廓",
+          "observed": "A_L19_STL實際重匯入：Item Dimensions [24.0, 4.600000381469727, 9.0] mm＝世界外框[24.00000023841858, 4.600000381469727, 9.0] mm；物件旋轉0／Scale1／修改器0。原world座標在頂點中，物件Location0不代表零件位於原點。"
+        }
+      ],
+      "sha256_now": "3cb3be0a5808fa8a4cc732e74ea054e62d306db47e96b0abfab5b86fcd3d8f07",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "A_STL Front輪廓完整，Item24×4.6×9且R0；來源與匯入外觀一致。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-26-A_L19-reimport-non-manifold.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.operationRun.events[25].figure.path"
+      ],
+      "exists": true,
+      "sha256": "ae3cd5f6486259fd2649a686768838e75f2b548f7f0e79e882b5be05d4f9d65f",
+      "contexts": [
+        {
+          "seq": 26,
+          "action": "Tab > Edge Select > Select None > Select Non Manifold，核對 A_L19_STL",
+          "observed": "A_L19_STL：非空網格，原生Select Non Manifold選到0條邊，程式讀回非流形邊0。"
+        }
+      ],
+      "sha256_now": "ae3cd5f6486259fd2649a686768838e75f2b548f7f0e79e882b5be05d4f9d65f",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "A_STL Edit Edge模式有三角化線且無橘色邊，Nothing selected／Select Non-Manifold提示可見；精確NM0仍需讀回。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-27-B_L17-import-dialog.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.operationRun.events[26].figure.path"
+      ],
+      "exists": true,
+      "sha256": "9ad6b01fa9853efafa8da96c211dd38b5355a0dc4f1e92c7e7c0e90f4f361d0f",
+      "contexts": [
+        {
+          "seq": 27,
+          "action": "F3 > Import STL，選剛匯出的 u07_B_L17_v001.stl 並讀回實際選項",
+          "observed": "實際檔名u07_B_L17_v001.stl；Scale1、Scene Unit關、Y Forward／Z Up；沒有自動移動或套用縮放。"
+        }
+      ],
+      "sha256_now": "9ad6b01fa9853efafa8da96c211dd38b5355a0dc4f1e92c7e7c0e90f4f361d0f",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "B Import視窗檔名u07_B_L17_v001.stl、Scale1／SceneUnit關、Y/Z符合。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-28-B_L17-reimport-dimensions.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.figures[1].path",
+        "07-05.operationRun.events[27].figure.path"
+      ],
+      "exists": true,
+      "sha256": "902135e64eab461cb83502e97f9f63ebbf772214512077a0505c8782377c92a3",
+      "contexts": [
+        {
+          "seq": 28,
+          "action": "實際重匯入後核對 B_L17_STL 尺寸／世界外框",
+          "observed": "B_L17_STL實際重匯入：Item Dimensions [22.0, 4.599999904632568, 9.0] mm＝世界外框[22.00000023841858, 4.599999904632568, 9.0] mm；物件旋轉0／Scale1／修改器0。原world座標在頂點中，物件Location0不代表零件位於原點。"
+        }
+      ],
+      "sha256_now": "902135e64eab461cb83502e97f9f63ebbf772214512077a0505c8782377c92a3",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "B_L17_STL Item22×4.6×9mm、Loc/R0 Scale1；A在Outliner已隱藏，僅B可見。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-29-B_L17-reimport-profile.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.operationRun.events[28].figure.path"
+      ],
+      "exists": true,
+      "sha256": "f5ef0a75f65314ccdc29a4e85a97638f10ae64a8cb41a3d3207b87befa29a951",
+      "contexts": [
+        {
+          "seq": 29,
+          "action": "由世界−Y正視實際STL B_L17_STL 的臂長輪廓",
+          "observed": "B_L17_STL實際重匯入：Item Dimensions [22.0, 4.599999904632568, 9.0] mm＝世界外框[22.00000023841858, 4.599999904632568, 9.0] mm；物件旋轉0／Scale1／修改器0。原world座標在頂點中，物件Location0不代表零件位於原點。"
+        }
+      ],
+      "sha256_now": "f5ef0a75f65314ccdc29a4e85a97638f10ae64a8cb41a3d3207b87befa29a951",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "B_STL Front完整外形，Item22×4.6×9與R0，正視輪廓符合來源。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-30-B_L17-reimport-non-manifold.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.operationRun.events[29].figure.path"
+      ],
+      "exists": true,
+      "sha256": "0487bd01ba7988982445ea40e0cf78b023d261fbb42c275b284f681cfafe90d5",
+      "contexts": [
+        {
+          "seq": 30,
+          "action": "Tab > Edge Select > Select None > Select Non Manifold，核對 B_L17_STL",
+          "observed": "B_L17_STL：非空網格，原生Select Non Manifold選到0條邊，程式讀回非流形邊0。"
+        }
+      ],
+      "sha256_now": "0487bd01ba7988982445ea40e0cf78b023d261fbb42c275b284f681cfafe90d5",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "B_STL Edit Edge有真實三角線、Nothing selected，底部Select Non-Manifold；NM0精確值須raw佐證。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-31-C_L21-import-dialog.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.operationRun.events[30].figure.path"
+      ],
+      "exists": true,
+      "sha256": "cdb857308cc71d91ba8910b32055291c9947e85578959514bd03ce3e6dc43059",
+      "contexts": [
+        {
+          "seq": 31,
+          "action": "F3 > Import STL，選剛匯出的 u07_C_L21_v001.stl 並讀回實際選項",
+          "observed": "實際檔名u07_C_L21_v001.stl；Scale1、Scene Unit關、Y Forward／Z Up；沒有自動移動或套用縮放。"
+        }
+      ],
+      "sha256_now": "cdb857308cc71d91ba8910b32055291c9947e85578959514bd03ce3e6dc43059",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "C Import檔名u07_C_L21_v001.stl，Scale1／SceneUnit關、Y/Z；符合。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-32-C_L21-reimport-dimensions.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.figures[2].path",
+        "07-05.operationRun.events[31].figure.path"
+      ],
+      "exists": true,
+      "sha256": "9b21f1f1224b36e130db26148fc57bc5b5f06bb8c21685a66fb743891903e6aa",
+      "contexts": [
+        {
+          "seq": 32,
+          "action": "實際重匯入後核對 C_L21_STL 尺寸／世界外框",
+          "observed": "C_L21_STL實際重匯入：Item Dimensions [26.0, 4.600000381469727, 9.0] mm＝世界外框[26.00000023841858, 4.600000381469727, 9.0] mm；物件旋轉0／Scale1／修改器0。原world座標在頂點中，物件Location0不代表零件位於原點。"
+        }
+      ],
+      "sha256_now": "9b21f1f1224b36e130db26148fc57bc5b5f06bb8c21685a66fb743891903e6aa",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "C_L21_STL Loc/R0、Scale1，Item26×4.6×9；A/B在Outliner隱藏，與來源輪廓相符。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-33-C_L21-reimport-profile.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.operationRun.events[32].figure.path"
+      ],
+      "exists": true,
+      "sha256": "afae458cd829be9adb40cb33f6227f7883827c9cbf661b566506792d3c4f6f87",
+      "contexts": [
+        {
+          "seq": 33,
+          "action": "由世界−Y正視實際STL C_L21_STL 的臂長輪廓",
+          "observed": "C_L21_STL實際重匯入：Item Dimensions [26.0, 4.600000381469727, 9.0] mm＝世界外框[26.00000023841858, 4.600000381469727, 9.0] mm；物件旋轉0／Scale1／修改器0。原world座標在頂點中，物件Location0不代表零件位於原點。"
+        }
+      ],
+      "sha256_now": "afae458cd829be9adb40cb33f6227f7883827c9cbf661b566506792d3c4f6f87",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "C_STL Front輪廓，Item26×4.6×9／R0吻合。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-34-C_L21-reimport-non-manifold.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.operationRun.events[33].figure.path"
+      ],
+      "exists": true,
+      "sha256": "7b4c946dd9fe7410657b9155f6180c9b62519750d65a2735cb441ed61e0a42ca",
+      "contexts": [
+        {
+          "seq": 34,
+          "action": "Tab > Edge Select > Select None > Select Non Manifold，核對 C_L21_STL",
+          "observed": "C_L21_STL：非空網格，原生Select Non Manifold選到0條邊，程式讀回非流形邊0。"
+        }
+      ],
+      "sha256_now": "7b4c946dd9fe7410657b9155f6180c9b62519750d65a2735cb441ed61e0a42ca",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "C_STL Edit Edge三角線可見、Nothing selected／Select Non-Manifold；無橘色選邊，和NM0相容。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-35-reimport-layout.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.operationRun.events[34].figure.path"
+      ],
+      "exists": true,
+      "sha256": "8897c764ca05fb2d93f3c08fd415c34c9d9de007b3f6120da051b403a557ba1d",
+      "contexts": [
+        {
+          "seq": 35,
+          "action": "顯示三件真實重新匯入STL，核對世界位置／數值Z0與原幾何L對照",
+          "observed": "三個實際STL保留07-05獨立候選world位置與Y列距12mm／外框間距約7.4mm。接床僅anchor側面；beam與根部仍離床，支撐待定。只有A_L19_STL／B_L17_STL／C_L21_STL，無來源工具或完整盒體。",
+          "note": "active為C_L21_STL，Item尺寸26×4.6×9屬C的world外框；新場景三件R0，來源Ry90仍未Apply。未切片、列印或驗證改善。"
+        }
+      ],
+      "sha256_now": "8897c764ca05fb2d93f3c08fd415c34c9d9de007b3f6120da051b403a557ba1d",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "三實際STL同畫面，A/B/C可見且C active；Item26×4.6×9屬C。圖上不能精讀7.4間距或1.5離床，需raw。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-36-coupon-exports-verified.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.operationRun.events[35].figure.path"
+      ],
+      "exists": true,
+      "sha256": "8897c764ca05fb2d93f3c08fd415c34c9d9de007b3f6120da051b403a557ba1d",
+      "contexts": [
+        {
+          "seq": 36,
+          "action": "保存三份STL版本／來源關聯、六份raw與最終verification及coupon STL export record",
+          "observed": "三份coupon v001 STL實檔與真實UI重匯入皆核對；七原物件local mesh／matrix未改，來源／副本／plan／舊record hash維持。未重建或修改試片形狀；真重匯入建立三個新mesh資料，不另存blend。材料、支撐、有效力學L、改善、列印與試配仍未驗證。",
+          "note": "追加本步數位匯出，不覆寫原07-05幾何版或舊STL；A/B/C仍為助教草案，沒有實體合格或改善判定，不代學員confirm。"
+        }
+      ],
+      "sha256_now": "8897c764ca05fb2d93f3c08fd415c34c9d9de007b3f6120da051b403a557ba1d",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "三件STL總覽與前圖近同，無額外形變可見；保存manifest/hash/六raw等動作不能由此圖證明，只是最終狀態實拍。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-01-source-dialog.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.previousOperationRuns[0].events[0].figure.path"
+      ],
+      "exists": true,
+      "sha256": "ed8811f42229a160ef6e76d403bdfb89a5ff8ffc75de4e5cfbffac99822631af",
+      "contexts": [
+        {
+          "seq": 1,
+          "action": "File > Open，開啟07-03同hash副本；不動既有盒體與上蓋",
+          "observed": "資料夾 D:\\others\\study\\Blender-Learning\\learning\\evidence\\07\\2026-10-25-lesson07-coupons-demo-v001\\demo-files\\sources\\；檔名 u07_print_orientation_v001.blend。"
+        }
+      ],
+      "sha256_now": "ed8811f42229a160ef6e76d403bdfb89a5ff8ffc75de4e5cfbffac99822631af",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "Open視窗u07_print_orientation_v001.blend檔名正確，與來源07-03一致；完整hash需檔案。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-02-source-reference.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.previousOperationRuns[0].events[1].figure.path"
+      ],
+      "exists": true,
+      "sha256": "671959f98066449519611df236ddff019281ef8c0a09d95a6b336d06cc533762",
+      "contexts": [
+        {
+          "seq": 2,
+          "action": "先讀取原SnapTool與四個來源物件，固定比較基準",
+          "observed": "原SnapTool為42頂點／80三角面，R0／Scale1；原點(0,−22.2000007629,−9.5)。保存四件來源局部mesh指紋與matrix，之後只改可見性。"
+        }
+      ],
+      "sha256_now": "671959f98066449519611df236ddff019281ef8c0a09d95a6b336d06cc533762",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "畫面仍是Body/Lid候選總覽，active Body的Item60×44.5×30與Ry90。SnapTool隱藏，所述42v/80tri/R0不能由本圖看到；屬程式讀值而非可視步驟證明。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-03-outliner-room.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.previousOperationRuns[0].events[2].figure.path"
+      ],
+      "exists": true,
+      "sha256": "9cdbbe3b24f0f5a5957c7c0488f5bc8d5417f9ad0022cbd8f1b86268e061896e",
+      "contexts": [
+        {
+          "seq": 3,
+          "action": "加高Outliner，避免新增三試片後名稱被裁切",
+          "observed": "原生拖曳Outliner／Properties分隔線；Outliner高度301，可顯示保留來源與三件試片。"
+        }
+      ],
+      "sha256_now": "9cdbbe3b24f0f5a5957c7c0488f5bc8d5417f9ad0022cbd8f1b86268e061896e",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "Outliner比前圖明顯加高、Properties分隔線下移，符合整理版面。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-04-A_L19-duplicate.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.previousOperationRuns[0].events[3].figure.path"
+      ],
+      "exists": true,
+      "sha256": "b511ebd7b649bb8d3ee563e963649e69377874b981fa9c6eb33054db13d40f24",
+      "contexts": [
+        {
+          "seq": 4,
+          "action": "從原SnapTool另建獨立 A_L19；不複製前一個已修改試片",
+          "observed": "A_L19：Shift+D後Esc只取消移動，副本仍在；已讀回獨立mesh，原點／R0保持。"
+        }
+      ],
+      "sha256_now": "b511ebd7b649bb8d3ee563e963649e69377874b981fa9c6eb33054db13d40f24",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "A_L19新物件選取、原SnapTool另列Outliner；R0、Scale1、原點0/−22.2/−9.5，Item9×4.6×24。獨立mesh關係需raw。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-05-inherited-analysis-off.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.previousOperationRuns[0].events[4].figure.path"
+      ],
+      "exists": true,
+      "sha256": "673be69151597020c44ea918a8b587d0ccd24d6800e0b617d6f54325852c86c8",
+      "contexts": [
+        {
+          "seq": 5,
+          "action": "Edit Mesh Overlays，關閉07-03留下的Mesh Analysis顯示，避免誤認本步做了分析",
+          "observed": "實際Mesh Analysis checkbox已關，show_statvis=false；07-05只做幾何對照，沒有重做Overhang或支撐分析。"
+        }
+      ],
+      "sha256_now": "673be69151597020c44ea918a8b587d0ccd24d6800e0b617d6f54325852c86c8",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "Edit Mesh Overlays真實pop-over，Mesh Analysis未勾，符合關閉沿用分析；選取mesh可見。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-06-A_L19-upper-selection.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.previousOperationRuns[0].events[5].figure.path"
+      ],
+      "exists": true,
+      "sha256": "99118893f834c27aafc3147e89d6e2a2538590388e55cd0f16fe425819f0beff",
+      "contexts": [
+        {
+          "seq": 6,
+          "action": "Front Orthographic＋Vertex Select＋Xray，只B框選source Z≥11的完整上端",
+          "observed": "A_L19：原生B框選實際14頂點，world Z11／12.2／13，沒有選入根部、miter或anchor；讀回全點座標已保存。",
+          "note": "畫面N面板的Local Median是選取平均座標，並非幾何L或world Z；本步逐點座標由原物件matrix讀回，保留原點(0,−22.2000007629,−9.5)。"
+        }
+      ],
+      "sha256_now": "99118893f834c27aafc3147e89d6e2a2538590388e55cd0f16fe425819f0beff",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "A_L19 Edit Vertex+Xray，只有上端三層點橘選、根部黑未選；Local Median Z21.529mm與文字提醒一致，14點數需raw。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-07-A_L19-source-frame.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.previousOperationRuns[0].events[6].figure.path"
+      ],
+      "exists": true,
+      "sha256": "fcb003eabba278cc5036cf7d7faaa7f998b8c8a9f83f0b541249c9acc1df3923",
+      "contexts": [
+        {
+          "seq": 7,
+          "action": "讀回source-frame實際頂點移動、28個未動點與L幾何定義",
+          "observed": "A_L19：只將原14個上端頂點沿Z移0 mm；其他28點與polygons拓撲不變。根平面至承接面幾何L=19、全試片高24 mm，並非力學有效L。"
+        }
+      ],
+      "sha256_now": "fcb003eabba278cc5036cf7d7faaa7f998b8c8a9f83f0b541249c9acc1df3923",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "A回Object Mode、Item高度24mm，無A變形可見；L19與28點不動須raw，不是本圖直接數值。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-08-A_L19-candidate.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.previousOperationRuns[0].events[7].figure.path"
+      ],
+      "exists": true,
+      "sha256": "3fcdbdeb0ffeb8e27aa704c81fbd5bbdfb6596d982d0760af5fd63bfa0349b06",
+      "contexts": [
+        {
+          "seq": 8,
+          "action": "Object Mode Ry90後，以N面板Location作獨立候選擺位；不Apply Rotation",
+          "observed": "A_L19：Ry90保留、Scale1，物件Location[0.0, -12.0, 4.5]；world外框[24.0, 4.6, 9.0] mm、最低Z -6.55670789e-08 mm。接床僅anchor側面約13.8 mm²；直臂最低Z 1.5、根部／miter最低Z 0.9 mm。只是獨立anchor試片的幾何擺向，支撐／材料／有效L仍待定。",
+          "note": "來源物件軸尺寸與旋轉後world外框分開。臂長只為幾何對照，未驗證完整盒體邊界、夾持、材料、撓度或改善。"
+        }
+      ],
+      "sha256_now": "3fcdbdeb0ffeb8e27aa704c81fbd5bbdfb6596d982d0760af5fd63bfa0349b06",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "A候選側放，Ry90、Loc0/−12/4.5、Scale1、Item9×4.6×24；錨座側面及臂離地幾何可見，13.8/1.5/.9精確量需raw。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-09-A_L19-non-manifold.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.previousOperationRuns[0].events[8].figure.path"
+      ],
+      "exists": true,
+      "sha256": "a20da0993b6376f9d71d8079f4f045ccbfabf280ccbdd97ca80177e197679bac",
+      "contexts": [
+        {
+          "seq": 9,
+          "action": "Tab > Edge Select > Select None > Select Non Manifold，核對單一試片",
+          "observed": "A_L19：原生Select Non Manifold選到0邊，非空閉合網格。這不是強度或可列印合格判定。"
+        }
+      ],
+      "sha256_now": "a20da0993b6376f9d71d8079f4f045ccbfabf280ccbdd97ca80177e197679bac",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "A候選Edit Edge模式Nothing selected／Select Non-Manifold，非空mesh完整，和NM0相容；閉殼需raw。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-10-B_L17-duplicate.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.previousOperationRuns[0].events[9].figure.path"
+      ],
+      "exists": true,
+      "sha256": "e8509ce64723b158b027a36cce198c63e202e8bdd6f976e54b8cc05ad52731ea",
+      "contexts": [
+        {
+          "seq": 10,
+          "action": "從原SnapTool另建獨立 B_L17；不複製前一個已修改試片",
+          "observed": "B_L17：Shift+D後Esc只取消移動，副本仍在；已讀回獨立mesh，原點／R0保持。"
+        }
+      ],
+      "sha256_now": "e8509ce64723b158b027a36cce198c63e202e8bdd6f976e54b8cc05ad52731ea",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "B_L17副本剛建立時R0、原點0/−22.2/−9.5、Item9×4.6×24，尚未縮短，符合事件順序。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-11-B_L17-upper-selection.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.previousOperationRuns[0].events[10].figure.path"
+      ],
+      "exists": true,
+      "sha256": "2c3e23cf9c6e3dfbdbdea32a4731e4661a2f05d032db98fff97a65b21d8b7810",
+      "contexts": [
+        {
+          "seq": 11,
+          "action": "Front Orthographic＋Vertex Select＋Xray，只B框選source Z≥11的完整上端",
+          "observed": "B_L17：原生B框選實際14頂點，world Z11／12.2／13，沒有選入根部、miter或anchor；讀回全點座標已保存。",
+          "note": "畫面N面板的Local Median是選取平均座標，並非幾何L或world Z；本步逐點座標由原物件matrix讀回，保留原點(0,−22.2000007629,−9.5)。"
+        }
+      ],
+      "sha256_now": "2c3e23cf9c6e3dfbdbdea32a4731e4661a2f05d032db98fff97a65b21d8b7810",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "B上端三層點橘選、根部黑未選，LocalMedian21.529mm；14點與world Z需raw。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-12-B_L17-source-frame.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.previousOperationRuns[0].events[11].figure.path"
+      ],
+      "exists": true,
+      "sha256": "01c12db4152d03eb6cdfe6010c39e266d51229dd156b832429e1437b90eadc95",
+      "contexts": [
+        {
+          "seq": 12,
+          "action": "讀回source-frame實際頂點移動、28個未動點與L幾何定義",
+          "observed": "B_L17：只將原14個上端頂點沿Z移-2 mm；其他28點與polygons拓撲不變。根平面至承接面幾何L=17、全試片高22 mm，並非力學有效L。"
+        }
+      ],
+      "sha256_now": "01c12db4152d03eb6cdfe6010c39e266d51229dd156b832429e1437b90eadc95",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "B縮短後Object Mode Item9×4.6×22mm／R0，同一viewport比先前上端降低，符合Z−2；精確L17需raw。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-13-B_L17-candidate.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.previousOperationRuns[0].events[12].figure.path"
+      ],
+      "exists": true,
+      "sha256": "3fbbb49c7792886205c7efb6d6c9033fb75f360f7344c204580e20436990573e",
+      "contexts": [
+        {
+          "seq": 13,
+          "action": "Object Mode Ry90後，以N面板Location作獨立候選擺位；不Apply Rotation",
+          "observed": "B_L17：Ry90保留、Scale1，物件Location[0.0, 0.0, 4.5]；world外框[22.0, 4.6, 9.0] mm、最低Z -6.55670789e-08 mm。接床僅anchor側面約13.8 mm²；直臂最低Z 1.5、根部／miter最低Z 0.9 mm。只是獨立anchor試片的幾何擺向，支撐／材料／有效L仍待定。",
+          "note": "來源物件軸尺寸與旋轉後world外框分開。臂長只為幾何對照，未驗證完整盒體邊界、夾持、材料、撓度或改善。"
+        }
+      ],
+      "sha256_now": "3fbbb49c7792886205c7efb6d6c9033fb75f360f7344c204580e20436990573e",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "B候選側放Ry90／Scale1，Loc0/0/4.5，Item9×4.6×22；anchor支點和懸臂可見，接床/離床精確值需raw。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-14-B_L17-non-manifold.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.previousOperationRuns[0].events[13].figure.path"
+      ],
+      "exists": true,
+      "sha256": "3e82fb85761c328ce8555b5b688c9c8e744d39eb937d6694261f8f1306ff50e1",
+      "contexts": [
+        {
+          "seq": 14,
+          "action": "Tab > Edge Select > Select None > Select Non Manifold，核對單一試片",
+          "observed": "B_L17：原生Select Non Manifold選到0邊，非空閉合網格。這不是強度或可列印合格判定。"
+        }
+      ],
+      "sha256_now": "3e82fb85761c328ce8555b5b688c9c8e744d39eb937d6694261f8f1306ff50e1",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "B Edit Edge Nothing selected、Select Non-Manifold提示，和NM0相容，非空mesh清楚。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-15-C_L21-duplicate.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.previousOperationRuns[0].events[14].figure.path"
+      ],
+      "exists": true,
+      "sha256": "cb98a12bff20cf360d905f72a54115c329bf8043eb7daa09b027b74d8b87f8bc",
+      "contexts": [
+        {
+          "seq": 15,
+          "action": "從原SnapTool另建獨立 C_L21；不複製前一個已修改試片",
+          "observed": "C_L21：Shift+D後Esc只取消移動，副本仍在；已讀回獨立mesh，原點／R0保持。"
+        }
+      ],
+      "sha256_now": "cb98a12bff20cf360d905f72a54115c329bf8043eb7daa09b027b74d8b87f8bc",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "C新副本未延長，Item9×4.6×24/R0，原點同SnapTool；其餘試片hidden。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-16-C_L21-upper-selection.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.previousOperationRuns[0].events[15].figure.path"
+      ],
+      "exists": true,
+      "sha256": "6ae2e35e50afb9cac1937b0ab961721f9dd48312f303e8a35c01016d6d2adea7",
+      "contexts": [
+        {
+          "seq": 16,
+          "action": "Front Orthographic＋Vertex Select＋Xray，只B框選source Z≥11的完整上端",
+          "observed": "C_L21：原生B框選實際14頂點，world Z11／12.2／13，沒有選入根部、miter或anchor；讀回全點座標已保存。",
+          "note": "畫面N面板的Local Median是選取平均座標，並非幾何L或world Z；本步逐點座標由原物件matrix讀回，保留原點(0,−22.2000007629,−9.5)。"
+        }
+      ],
+      "sha256_now": "6ae2e35e50afb9cac1937b0ab961721f9dd48312f303e8a35c01016d6d2adea7",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "C上端三層橘選，根部/anchor黑未選、Xray開、LocalMedian21.529；14點與world坐標需raw。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-17-C_L21-source-frame.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.previousOperationRuns[0].events[16].figure.path"
+      ],
+      "exists": true,
+      "sha256": "c37bfa4b431b7f39b08a934dea38e1e0b4506400f970d22da2c297591bd4c1d0",
+      "contexts": [
+        {
+          "seq": 17,
+          "action": "讀回source-frame實際頂點移動、28個未動點與L幾何定義",
+          "observed": "C_L21：只將原14個上端頂點沿Z移2 mm；其他28點與polygons拓撲不變。根平面至承接面幾何L=21、全試片高26 mm，並非力學有效L。"
+        }
+      ],
+      "sha256_now": "c37bfa4b431b7f39b08a934dea38e1e0b4506400f970d22da2c297591bd4c1d0",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "C延長後Object Mode Item9×4.6×26/R0，比先前上端上移，與+2mm一致；L21需raw。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-18-C_L21-candidate.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.previousOperationRuns[0].events[17].figure.path"
+      ],
+      "exists": true,
+      "sha256": "d2f93a4f563bd2692acc705395d4be2a9ccb60a7ed015f125f923e3f1457ae4c",
+      "contexts": [
+        {
+          "seq": 18,
+          "action": "Object Mode Ry90後，以N面板Location作獨立候選擺位；不Apply Rotation",
+          "observed": "C_L21：Ry90保留、Scale1，物件Location[0.0, 12.0, 4.5]；world外框[26.0, 4.6, 9.0] mm、最低Z -6.55670789e-08 mm。接床僅anchor側面約13.8 mm²；直臂最低Z 1.5、根部／miter最低Z 0.9 mm。只是獨立anchor試片的幾何擺向，支撐／材料／有效L仍待定。",
+          "note": "來源物件軸尺寸與旋轉後world外框分開。臂長只為幾何對照，未驗證完整盒體邊界、夾持、材料、撓度或改善。"
+        }
+      ],
+      "sha256_now": "d2f93a4f563bd2692acc705395d4be2a9ccb60a7ed015f125f923e3f1457ae4c",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "C候選側放Ry90／Scale1、Loc0/12/4.5，Item9×4.6×26；world最低Z/床面面積需raw。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-19-C_L21-non-manifold.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.previousOperationRuns[0].events[18].figure.path"
+      ],
+      "exists": true,
+      "sha256": "5408d53147539f9965671909d23f9e1e5c42357895c5f2c05522025f2f2d8444",
+      "contexts": [
+        {
+          "seq": 19,
+          "action": "Tab > Edge Select > Select None > Select Non Manifold，核對單一試片",
+          "observed": "C_L21：原生Select Non Manifold選到0邊，非空閉合網格。這不是強度或可列印合格判定。"
+        }
+      ],
+      "sha256_now": "5408d53147539f9965671909d23f9e1e5c42357895c5f2c05522025f2f2d8444",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "C Edit Edge Nothing selected／Select Non-Manifold提示，與NM0相容，真實非空mesh。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-20-coupon-layout.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.previousOperationRuns[0].events[19].figure.path"
+      ],
+      "exists": true,
+      "sha256": "208f6d3a1b05e490f1933f17cf7eb43c126c7f153faafe7d79debf35dbe2d70c",
+      "contexts": [
+        {
+          "seq": 20,
+          "action": "顯示三件單參數幾何對照；來源四件隱藏，核對三者分離與world落床",
+          "observed": "A_L19／B_L17／C_L21三件獨立mesh均Ry90候選、各自world Z≈0，沿Y分列−12／0／12。原Body／Lid／SnapTool／FlangeTool全hidden且原形與matrix不變；無STL、無力學改善結論。"
+        }
+      ],
+      "sha256_now": "208f6d3a1b05e490f1933f17cf7eb43c126c7f153faafe7d79debf35dbe2d70c",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "三件幾何試片分開可見；C active Item9×4.6×26/Ry90，原四件Outliner隱藏。無配對完整盒／夾持；不應由總覽推改善。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-21-save-dialog.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.previousOperationRuns[0].events[20].figure.path"
+      ],
+      "exists": true,
+      "sha256": "1279d8e1b2a83ced9bc15dbcdb3e8dd1c41878807e511947895ab4c9d35b51a9",
+      "contexts": [
+        {
+          "seq": 21,
+          "action": "File > Save As，另存獨立長度對照草案新版本",
+          "observed": "資料夾 D:\\others\\study\\Blender-Learning\\learning\\evidence\\07\\2026-10-25-lesson07-coupons-demo-v001\\demo-files\\；檔名 u07_cantilever_length_coupons_v001.blend。"
+        }
+      ],
+      "sha256_now": "1279d8e1b2a83ced9bc15dbcdb3e8dd1c41878807e511947895ab4c9d35b51a9",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "Save As真實視窗，檔名u07_cantilever_length_coupons_v001.blend，demo-files含sources，符合另存新分支。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-22-saved.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.previousOperationRuns[0].events[21].figure.path"
+      ],
+      "exists": true,
+      "sha256": "0a81cd7473128c3280f3d09dcfd315b09cc6f963ff087a41125c406501eb0616",
+      "contexts": [
+        {
+          "seq": 22,
+          "action": "讀回新場景路徑／bytes／SHA-256，與所有舊版本分開保存",
+          "observed": "新coupon場景108728 bytes，SHA-256 22072532eed0f6fcc506bb435ed8d65fcaeaef583ea41d90c4e8c9665b82e9b8；07-03原scene／副本及先前匯出不覆寫。"
+        }
+      ],
+      "sha256_now": "0a81cd7473128c3280f3d09dcfd315b09cc6f963ff087a41125c406501eb0616",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "三試片總覽，底部Saved as coupon檔名清楚；108728bytes與hash不在圖中，需檔案佐證。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-23-open-saved.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.previousOperationRuns[0].events[22].figure.path"
+      ],
+      "exists": true,
+      "sha256": "653af27fb7b2f404fc666ee6df34764f0dee3f8fe161af6063499e66ecabd7c9",
+      "contexts": [
+        {
+          "seq": 23,
+          "action": "File > Open，重開同一coupon新版本",
+          "observed": "資料夾 D:\\others\\study\\Blender-Learning\\learning\\evidence\\07\\2026-10-25-lesson07-coupons-demo-v001\\demo-files\\；檔名 u07_cantilever_length_coupons_v001.blend。"
+        }
+      ],
+      "sha256_now": "653af27fb7b2f404fc666ee6df34764f0dee3f8fe161af6063499e66ecabd7c9",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "Open真實視窗列coupon.blend 106KiB，目標檔名正確。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-24-reopened-verified.png",
+      "steps": [
+        "07-05"
+      ],
+      "references": [
+        "07-05.previousOperationRuns[0].events[23].figure.path"
+      ],
+      "exists": true,
+      "sha256": "c5a78a219bf0d1319239f32b4b8bd6c9f7157e3667e3e7598c1f0f7451433d4b",
+      "contexts": [
+        {
+          "seq": 24,
+          "action": "Open後重驗三試片、七份raw、來源保護及新版本，保存coupon對照紀錄",
+          "observed": "重開新檔後三試片形狀／候選擺位及獨立mesh皆核對；source四件原形與matrix未動。只變B/C上端幾何L，A為原草案參照；有效力學L、改善、材料、支撐、列印與試配仍待定。"
+        }
+      ],
+      "sha256_now": "c5a78a219bf0d1319239f32b4b8bd6c9f7157e3667e3e7598c1f0f7451433d4b",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "重開後三件總覽與保存前一致，active C/Ry90/26mm，來源四件hidden；獨立mesh/未變hash需raw及檔案。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-01-body-source-dialog.png",
+      "steps": [
+        "07-04"
+      ],
+      "references": [
+        "07-04.operationRun.events[0].figure.path"
+      ],
+      "exists": true,
+      "sha256": "983a391a8141c6eaa1201672c3c30641c12878fc2003185eb56981d702e0f4c5",
+      "contexts": [
+        {
+          "seq": 1,
+          "action": "File > Open，開啟07-03候選姿態同hash副本，準備分件匯出 Body",
+          "observed": "資料夾 D:\\others\\study\\Blender-Learning\\learning\\evidence\\07\\2026-10-25-lesson07-snap-export-demo-v001\\demo-files\\sources\\；檔名 u07_print_orientation_v001.blend。"
+        }
+      ],
+      "sha256_now": "983a391a8141c6eaa1201672c3c30641c12878fc2003185eb56981d702e0f4c5",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "Body前置Open視窗檔名u07_print_orientation_v001.blend，sources路徑末段可見，完整hash需檔案。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-02-body-source-selected.png",
+      "steps": [
+        "07-04"
+      ],
+      "references": [
+        "07-04.operationRun.events[1].figure.path"
+      ],
+      "exists": true,
+      "sha256": "25aece8c5aafe6484d02d09998acc95bf1074a4aa3d77a006e460de43c2c79f9",
+      "contexts": [
+        {
+          "seq": 2,
+          "action": "只選 Body，核對物件軸尺寸、世界外框與保留的旋轉",
+          "observed": "Body：來源Item物件軸Dimensions [60.0, 44.5, 30.0] mm；頂點世界外框 [30.000001907348633, 44.5, 60.00000065567082] mm，bounds {'min': [-55.0, -24.5, -6.556708171956416e-07], 'max': [-24.999998092651367, 20.0, 60.0]}。旋轉保留、沒有Apply；兩Tools與另一件隱藏。",
+          "note": "Body來源Item仍約60×44.5×30；Ry90後世界外框約30×44.5×60。數值定義不同，沒有偷偷Apply Rotation。"
+        }
+      ],
+      "sha256_now": "25aece8c5aafe6484d02d09998acc95bf1074a4aa3d77a006e460de43c2c79f9",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "僅Body選取，Item60×44.5×30／Ry90/Scale1，Loc−40/0/30，盒體側放及外卡扣可見；其他件hidden。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-03-body-source-profile.png",
+      "steps": [
+        "07-04"
+      ],
+      "references": [
+        "07-04.operationRun.events[2].figure.path"
+      ],
+      "exists": true,
+      "sha256": "9ded1e6ae13eb76037f280eabc232b3a477c099c7a210c631d4afa8e635d0f07",
+      "contexts": [
+        {
+          "seq": 3,
+          "action": "沿世界X觀看 Body 的實際候選姿態剖面",
+          "observed": "Body：來源Item物件軸Dimensions [60.0, 44.5, 30.0] mm；頂點世界外框 [30.000001907348633, 44.5, 60.00000065567082] mm，bounds {'min': [-55.0, -24.5, -6.556708171956416e-07], 'max': [-24.999998092651367, 20.0, 60.0]}。旋轉保留、沒有Apply；兩Tools與另一件隱藏。"
+        }
+      ],
+      "sha256_now": "9ded1e6ae13eb76037f280eabc232b3a477c099c7a210c631d4afa8e635d0f07",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "Right Orthographic沿世界X正視，Body輪廓及卡扣突出可見；外側實心面遮住腔內，圖是外輪廓而非剖切，內部幾何需raw。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-04-body-export-menu.png",
+      "steps": [
+        "07-04"
+      ],
+      "references": [
+        "07-04.operationRun.events[3].figure.path"
+      ],
+      "exists": true,
+      "sha256": "1adcd141368a56cbcc688d4837d7be364a72d54f6254bdabb106abe610bdfd9a",
+      "contexts": [
+        {
+          "seq": 4,
+          "action": "File > Export > STL (.stl)，目前只選 Body",
+          "observed": "已選取：Body；作用中物件：Body"
+        }
+      ],
+      "sha256_now": "1adcd141368a56cbcc688d4837d7be364a72d54f6254bdabb106abe610bdfd9a",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "Body選取，File>Export>STL選單可見，動作相符。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-05-body-export-before.png",
+      "steps": [
+        "07-04"
+      ],
+      "references": [
+        "07-04.operationRun.events[4].figure.path"
+      ],
+      "exists": true,
+      "sha256": "b2b95106f63c04f37583a111a40c0f17c9f1804d8484f260db1a067175a06c66",
+      "contexts": [
+        {
+          "seq": 5,
+          "action": "核對 u07_snap_body_v001.stl 路徑／新版本與原生匯出欄位",
+          "observed": "資料夾 D:\\others\\study\\Blender-Learning\\learning\\evidence\\07\\2026-10-25-lesson07-snap-export-demo-v001\\demo-files\\exports\\；檔名 u07_snap_body_v001.stl；原生選項 {'global_scale': 1.0, 'use_scene_unit': False, 'forward_axis': 'Y', 'up_axis': 'Z', 'only_selected': False, 'apply_modifiers': True, 'ascii_format': False, 'use_batch': False, 'evaluation_mode': 'DAG_EVAL_RENDER'}。"
+        }
+      ],
+      "sha256_now": "b2b95106f63c04f37583a111a40c0f17c9f1804d8484f260db1a067175a06c66",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "Body匯出before新檔u07_snap_body_v001.stl，exports空；SelectionOnly關、Scale1、SceneUnit/ASCII/Batch關。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-06-body-export-options.png",
+      "steps": [
+        "07-04"
+      ],
+      "references": [
+        "07-04.figures[2].path",
+        "07-04.operationRun.events[5].figure.path"
+      ],
+      "exists": true,
+      "sha256": "0dcb53baedfe2fb310a691c836bb7a9eda4ac9009613fb00106db98319d36a56",
+      "contexts": [
+        {
+          "seq": 6,
+          "action": "勾選並實讀 Selection Only／Scale1／Scene Unit關／Binary，核對新檔目標",
+          "observed": "只匯出Body；Selection Only開、Scale1、Scene Unit關、Binary、Batch關、Y Forward／Z Up。座標按mm解讀，保留原候選world位置。",
+          "note": "STL沒有單位標記；本次保留07-03兩件候選的world擺位，未做切片或支撐資格判定。"
+        }
+      ],
+      "sha256_now": "0dcb53baedfe2fb310a691c836bb7a9eda4ac9009613fb00106db98319d36a56",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "Body選項SelectionOnly勾選、Scale1、SceneUnit/ASCII/Batch關、YForward/ZUp，與guide及caption一致。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-07-body-stl-checked.png",
+      "steps": [
+        "07-04"
+      ],
+      "references": [
+        "07-04.operationRun.events[6].figure.path"
+      ],
+      "exists": true,
+      "sha256": "9de8f23e51c7a527168defe1de33b5feac1cb31246b42c00f7b7daaa8f5e0c6d",
+      "contexts": [
+        {
+          "seq": 7,
+          "action": "按Export STL，解析原生匯出實檔並核對完整world幾何、尺寸與來源",
+          "observed": "u07_snap_body_v001.stl：實檔5884 bytes／116三角形，世界外框[30.0, 44.5, 60.0] mm、最小Z 0 mm；單殼／Non Manifold0，SHA-256 6ee4b13556db93196189604a96a0dbf3074fcaf6dd3423b3fc86cc2421910ff8。",
+          "note": "約1e-6 mm的負Z屬浮點重建；EPS1e-4 mm只作數值核對，不是製造公差。數位檔通過不代表可直接列印或試配合格。"
+        }
+      ],
+      "sha256_now": "9de8f23e51c7a527168defe1de33b5feac1cb31246b42c00f7b7daaa8f5e0c6d",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "匯出後Body Right正視圖底部File exported successfully；Item60×44.5×30/Ry90保留。STL30×44.5×60／116tri/hash需實檔。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-08-lid-source-dialog.png",
+      "steps": [
+        "07-04"
+      ],
+      "references": [
+        "07-04.operationRun.events[7].figure.path"
+      ],
+      "exists": true,
+      "sha256": "ddf776089a4b127f3994cfdb5462801f22a3b6bb67cf4a9f30c8e09a86123389",
+      "contexts": [
+        {
+          "seq": 8,
+          "action": "File > Open，開啟07-03候選姿態同hash副本，準備分件匯出 Lid",
+          "observed": "資料夾 D:\\others\\study\\Blender-Learning\\learning\\evidence\\07\\2026-10-25-lesson07-snap-export-demo-v001\\demo-files\\sources\\；檔名 u07_print_orientation_v001.blend。"
+        }
+      ],
+      "sha256_now": "ddf776089a4b127f3994cfdb5462801f22a3b6bb67cf4a9f30c8e09a86123389",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "Lid前置Open同u07_print_orientation_v001.blend；sources與檔名正確。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-09-lid-source-selected.png",
+      "steps": [
+        "07-04"
+      ],
+      "references": [
+        "07-04.operationRun.events[8].figure.path"
+      ],
+      "exists": true,
+      "sha256": "6e81d9a9bc0da28dcf24e9d8db8a6905721be173fe77543b0c58603432c095e3",
+      "contexts": [
+        {
+          "seq": 9,
+          "action": "只選 Lid，核對物件軸尺寸、世界外框與保留的旋轉",
+          "observed": "Lid：來源Item物件軸Dimensions [60.0, 46.0, 7.000000953674316] mm；頂點世界外框 [60.0, 46.0, 7.000004871746796] mm，bounds {'min': [10.0, -26.0, -1.05704953057284e-06], 'max': [70.0, 20.0, 7.000003814697266]}。旋轉保留、沒有Apply；兩Tools與另一件隱藏。",
+          "note": "Body來源Item仍約60×44.5×30；Ry90後世界外框約30×44.5×60。數值定義不同，沒有偷偷Apply Rotation。"
+        }
+      ],
+      "sha256_now": "6e81d9a9bc0da28dcf24e9d8db8a6905721be173fe77543b0c58603432c095e3",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "只選Lid、其餘hidden，Item60×46×7mm、Rx180 Scale1、Loc40/−3/1；板／凸緣候選可見。事件note談Body但只是補充非Lid讀值。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-10-lid-source-profile.png",
+      "steps": [
+        "07-04"
+      ],
+      "references": [
+        "07-04.operationRun.events[9].figure.path"
+      ],
+      "exists": true,
+      "sha256": "5887645d79efdda6f3429286e5467a503cf42d9cd67a1883166cdfd7da6e8c50",
+      "contexts": [
+        {
+          "seq": 10,
+          "action": "沿世界X觀看 Lid 的實際候選姿態剖面",
+          "observed": "Lid：來源Item物件軸Dimensions [60.0, 46.0, 7.000000953674316] mm；頂點世界外框 [60.0, 46.0, 7.000004871746796] mm，bounds {'min': [10.0, -26.0, -1.05704953057284e-06], 'max': [70.0, 20.0, 7.000003814697266]}。旋轉保留、沒有Apply；兩Tools與另一件隱藏。"
+        }
+      ],
+      "sha256_now": "5887645d79efdda6f3429286e5467a503cf42d9cd67a1883166cdfd7da6e8c50",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "Lid Right正視可見L形裙/凸緣小倒鉤側輪廓及板，Item60×46×7，Rx180，符合沿X外輪廓。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-11-lid-export-menu.png",
+      "steps": [
+        "07-04"
+      ],
+      "references": [
+        "07-04.operationRun.events[10].figure.path"
+      ],
+      "exists": true,
+      "sha256": "1602c71e0a85b868fd707699a0a94be6252fbb2a82c33fbcd2a476cf1dce0b24",
+      "contexts": [
+        {
+          "seq": 11,
+          "action": "File > Export > STL (.stl)，目前只選 Lid",
+          "observed": "已選取：Lid；作用中物件：Lid"
+        }
+      ],
+      "sha256_now": "1602c71e0a85b868fd707699a0a94be6252fbb2a82c33fbcd2a476cf1dce0b24",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "Lid選取保持，File>Export>STL選單展開。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-12-lid-export-before.png",
+      "steps": [
+        "07-04"
+      ],
+      "references": [
+        "07-04.operationRun.events[11].figure.path"
+      ],
+      "exists": true,
+      "sha256": "fbf22278fc7f16f007463b2ed2e9700432db0e139f2e8f5bccc0fd0782b79733",
+      "contexts": [
+        {
+          "seq": 12,
+          "action": "核對 u07_snap_lid_v001.stl 路徑／新版本與原生匯出欄位",
+          "observed": "資料夾 D:\\others\\study\\Blender-Learning\\learning\\evidence\\07\\2026-10-25-lesson07-snap-export-demo-v001\\demo-files\\exports\\；檔名 u07_snap_lid_v001.stl；原生選項 {'global_scale': 1.0, 'use_scene_unit': False, 'forward_axis': 'Y', 'up_axis': 'Z', 'only_selected': False, 'apply_modifiers': True, 'ascii_format': False, 'use_batch': False, 'evaluation_mode': 'DAG_EVAL_RENDER'}。"
+        }
+      ],
+      "sha256_now": "fbf22278fc7f16f007463b2ed2e9700432db0e139f2e8f5bccc0fd0782b79733",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "Lid before檔名u07_snap_lid_v001.stl，列表有BodySTL；SelectionOnly尚關、Scale1／SceneUnit關。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-13-lid-export-options.png",
+      "steps": [
+        "07-04"
+      ],
+      "references": [
+        "07-04.operationRun.events[12].figure.path"
+      ],
+      "exists": true,
+      "sha256": "529a3a39621373e6c3936ca84b0dd57df94c4979dc63b91c24f7805bcc4a3b6c",
+      "contexts": [
+        {
+          "seq": 13,
+          "action": "勾選並實讀 Selection Only／Scale1／Scene Unit關／Binary，核對新檔目標",
+          "observed": "只匯出Lid；Selection Only開、Scale1、Scene Unit關、Binary、Batch關、Y Forward／Z Up。座標按mm解讀，保留原候選world位置。",
+          "note": "STL沒有單位標記；本次保留07-03兩件候選的world擺位，未做切片或支撐資格判定。"
+        }
+      ],
+      "sha256_now": "529a3a39621373e6c3936ca84b0dd57df94c4979dc63b91c24f7805bcc4a3b6c",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "Lid選項SelectionOnly勾、Scale1、SceneUnit/ASCII/Batch關、Y/Z，正確檔名。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-14-lid-stl-checked.png",
+      "steps": [
+        "07-04"
+      ],
+      "references": [
+        "07-04.operationRun.events[13].figure.path"
+      ],
+      "exists": true,
+      "sha256": "de2465afcf4f52010e054dc123f3fc31574cd721305fb0c71e0f9534264a34eb",
+      "contexts": [
+        {
+          "seq": 14,
+          "action": "按Export STL，解析原生匯出實檔並核對完整world幾何、尺寸與來源",
+          "observed": "u07_snap_lid_v001.stl：實檔2484 bytes／48三角形，世界外框[60.0, 46.0, 7.000004887580872] mm、最小Z -1.07288361e-06 mm；單殼／Non Manifold0，SHA-256 c80ea7d584a2f71cc0b2619ff903bdff57d8c97441d61111a0e8c7b839f55c21。",
+          "note": "約1e-6 mm的負Z屬浮點重建；EPS1e-4 mm只作數值核對，不是製造公差。數位檔通過不代表可直接列印或試配合格。"
+        }
+      ],
+      "sha256_now": "de2465afcf4f52010e054dc123f3fc31574cd721305fb0c71e0f9534264a34eb",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "Lid匯出回Right視圖，底部File exported successfully；2484bytes/48tri/1e−6負Z/hash等不在圖，需raw／STL。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-15-empty-mm-scene.png",
+      "steps": [
+        "07-04"
+      ],
+      "references": [
+        "07-04.operationRun.events[14].figure.path"
+      ],
+      "exists": true,
+      "sha256": "4adc8aebf5e4a772bee8fce4eb6b599831c2910744002fc3fb9242704c87f51c",
+      "contexts": [
+        {
+          "seq": 15,
+          "action": "File > New > General，清空並設mm，準備真實重匯入兩份STL",
+          "observed": "獨立新場景物件0；Metric／Millimeters／Unit Scale0.001。空場景沒有Item，不先點分頁。"
+        }
+      ],
+      "sha256_now": "4adc8aebf5e4a772bee8fce4eb6b599831c2910744002fc3fb9242704c87f51c",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "新空場景Units Metric/0.001000/Millimeters與Outliner空，無Item分頁。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-16-body-import-dialog.png",
+      "steps": [
+        "07-04"
+      ],
+      "references": [
+        "07-04.operationRun.events[15].figure.path"
+      ],
+      "exists": true,
+      "sha256": "9d1ebf39c7724cc9b9949163e0632b01787da6ebbfe7a5bdc0baf9fd8c21a2c4",
+      "contexts": [
+        {
+          "seq": 16,
+          "action": "F3 > Import STL，選剛匯出的 u07_snap_body_v001.stl 並讀回實際選項",
+          "observed": "實際檔名u07_snap_body_v001.stl；Scale1、Scene Unit關、Y Forward／Z Up；沒有自動移動或套用縮放。"
+        }
+      ],
+      "sha256_now": "9d1ebf39c7724cc9b9949163e0632b01787da6ebbfe7a5bdc0baf9fd8c21a2c4",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "Body Import檔名u07_snap_body_v001.stl，Scale1、SceneUnit關、Y/Z；ValidateMesh開，符合。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-17-body-reimport-dimensions.png",
+      "steps": [
+        "07-04"
+      ],
+      "references": [
+        "07-04.figures[0].path",
+        "07-04.operationRun.events[16].figure.path"
+      ],
+      "exists": true,
+      "sha256": "119395eb4abc4d935d65e166660c7cdb2bc738e62738a3eaf68d07da08fd49e3",
+      "contexts": [
+        {
+          "seq": 17,
+          "action": "實際重匯入後才切一次Item；核對 Body_STL 尺寸／世界外框",
+          "observed": "Body_STL實際重匯入：Item Dimensions [30.0, 44.5, 60.0] mm＝世界外框[30.0, 44.5, 60.0] mm；物件旋轉0／Scale1／修改器0。原world座標在頂點中，物件Location0不代表零件位於原點。"
+        }
+      ],
+      "sha256_now": "119395eb4abc4d935d65e166660c7cdb2bc738e62738a3eaf68d07da08fd49e3",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "Body_STL重匯入Loc/R0 Scale1，Item30×44.5×60mm、mm場景清楚，和來源60×44.5×30/Ry90差別有正確說明。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-18-body-reimport-profile.png",
+      "steps": [
+        "07-04"
+      ],
+      "references": [
+        "07-04.operationRun.events[17].figure.path"
+      ],
+      "exists": true,
+      "sha256": "4206d415221f58505c95dc9bac35e25e1b8e544cc028a13c492b364039970b67",
+      "contexts": [
+        {
+          "seq": 18,
+          "action": "沿世界X觀看實際STL Body_STL 剖面",
+          "observed": "Body_STL實際重匯入：Item Dimensions [30.0, 44.5, 60.0] mm＝世界外框[30.0, 44.5, 60.0] mm；物件旋轉0／Scale1／修改器0。原world座標在頂點中，物件Location0不代表零件位於原點。"
+        }
+      ],
+      "sha256_now": "4206d415221f58505c95dc9bac35e25e1b8e544cc028a13c492b364039970b67",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "Body_STL Right正視外輪廓同來源，Item30×44.5×60／R0；外壁遮內腔，不是剖切圖。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-19-body-reimport-non-manifold.png",
+      "steps": [
+        "07-04"
+      ],
+      "references": [
+        "07-04.operationRun.events[18].figure.path"
+      ],
+      "exists": true,
+      "sha256": "da4090e7382db2237e98875efd85f9ee44c7d0bc6c3159266cf6c4fbed0092ff",
+      "contexts": [
+        {
+          "seq": 19,
+          "action": "Tab > Edge Select > Select None > Select Non Manifold，核對 Body_STL",
+          "observed": "Body_STL：非空網格，原生Select Non Manifold選到0條邊，程式讀回非流形邊0。"
+        }
+      ],
+      "sha256_now": "da4090e7382db2237e98875efd85f9ee44c7d0bc6c3159266cf6c4fbed0092ff",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "Body_STL Edit Edge模式，三角線清楚、Nothing selected／Select Non-Manifold，與NM0相容；須raw驗閉殼。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-20-lid-import-dialog.png",
+      "steps": [
+        "07-04"
+      ],
+      "references": [
+        "07-04.operationRun.events[19].figure.path"
+      ],
+      "exists": true,
+      "sha256": "e83e42d85aa2b998a3ff943aa55802fac1903458fe95623a46f60f13d6660517",
+      "contexts": [
+        {
+          "seq": 20,
+          "action": "F3 > Import STL，選剛匯出的 u07_snap_lid_v001.stl 並讀回實際選項",
+          "observed": "實際檔名u07_snap_lid_v001.stl；Scale1、Scene Unit關、Y Forward／Z Up；沒有自動移動或套用縮放。"
+        }
+      ],
+      "sha256_now": "e83e42d85aa2b998a3ff943aa55802fac1903458fe95623a46f60f13d6660517",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "Lid Import真實視窗檔名正確，Scale1／SceneUnit關、Y/Z，列表二STL，符合。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-21-lid-reimport-dimensions.png",
+      "steps": [
+        "07-04"
+      ],
+      "references": [
+        "07-04.figures[1].path",
+        "07-04.operationRun.events[20].figure.path"
+      ],
+      "exists": true,
+      "sha256": "1870d4391e17be49e286759fcf23b5ff726966ba26ea2a4adb08caeee023dee8",
+      "contexts": [
+        {
+          "seq": 21,
+          "action": "實際重匯入後核對 Lid_STL 尺寸／世界外框",
+          "observed": "Lid_STL實際重匯入：Item Dimensions [60.0, 46.0, 7.000004768371582] mm＝世界外框[60.0, 46.0, 7.000004887580872] mm；物件旋轉0／Scale1／修改器0。原world座標在頂點中，物件Location0不代表零件位於原點。"
+        }
+      ],
+      "sha256_now": "1870d4391e17be49e286759fcf23b5ff726966ba26ea2a4adb08caeee023dee8",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "Lid_STL Item60×46×7、Loc/R0 Scale1，候選翻面形狀與來源一致；尺寸浮點尾數僅raw精度。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-22-lid-reimport-profile.png",
+      "steps": [
+        "07-04"
+      ],
+      "references": [
+        "07-04.operationRun.events[21].figure.path"
+      ],
+      "exists": true,
+      "sha256": "a502dcc49b2fa1cb643295d04fae0e35023fddc739c3272c28eb8a9d37374332",
+      "contexts": [
+        {
+          "seq": 22,
+          "action": "沿世界X觀看實際STL Lid_STL 剖面",
+          "observed": "Lid_STL實際重匯入：Item Dimensions [60.0, 46.0, 7.000004768371582] mm＝世界外框[60.0, 46.0, 7.000004887580872] mm；物件旋轉0／Scale1／修改器0。原world座標在頂點中，物件Location0不代表零件位於原點。"
+        }
+      ],
+      "sha256_now": "a502dcc49b2fa1cb643295d04fae0e35023fddc739c3272c28eb8a9d37374332",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "Lid_STL Right正視小凸緣側輪廓，Item60×46×7/R0，吻合來源翻面輪廓。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-23-lid-reimport-non-manifold.png",
+      "steps": [
+        "07-04"
+      ],
+      "references": [
+        "07-04.operationRun.events[22].figure.path"
+      ],
+      "exists": true,
+      "sha256": "41a3b5b82865be5945ed1115af79c586473fe62baeae23c28ca0cb5fedace95d",
+      "contexts": [
+        {
+          "seq": 23,
+          "action": "Tab > Edge Select > Select None > Select Non Manifold，核對 Lid_STL",
+          "observed": "Lid_STL：非空網格，原生Select Non Manifold選到0條邊，程式讀回非流形邊0。"
+        }
+      ],
+      "sha256_now": "41a3b5b82865be5945ed1115af79c586473fe62baeae23c28ca0cb5fedace95d",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "Lid_STL Edit Edge三角線、Nothing selected／Select Non-Manifold，符合NM0狀態但閉殼仍需raw。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-24-reimport-layout.png",
+      "steps": [
+        "07-04"
+      ],
+      "references": [
+        "07-04.operationRun.events[23].figure.path"
+      ],
+      "exists": true,
+      "sha256": "1c60b2b28d47b635a123f4e595f0f207824d1ae1f72d6c5b076f15e86ac72cd3",
+      "contexts": [
+        {
+          "seq": 24,
+          "action": "顯示兩件真實重匯入STL，核對世界位置／落床數值與35mm分隔",
+          "observed": "兩件實際STL保持07-03分件候選擺位：X投影分隔 35 mm，各自最低Z≈0；沒有改成扣合裝配。只含Body_STL／Lid_STL，無Tools，不代表床幅或支撐已核對。",
+          "note": "目前active是Body_STL，側欄Dimensions約30×44.5×60屬盒體。此擺位沿用方向候選，非最終列印方向與支撐核准。"
+        }
+      ],
+      "sha256_now": "1c60b2b28d47b635a123f4e595f0f207824d1ae1f72d6c5b076f15e86ac72cd3",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "兩件STL分開、Body active Item30×44.5×60，兩件R0；Outliner僅兩成品。35mm與各Z≈0需raw，沒有當扣合組裝。"
+      }
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-25-exports-verified.png",
+      "steps": [
+        "07-04"
+      ],
+      "references": [
+        "07-04.operationRun.events[24].figure.path"
+      ],
+      "exists": true,
+      "sha256": "1c60b2b28d47b635a123f4e595f0f207824d1ae1f72d6c5b076f15e86ac72cd3",
+      "contexts": [
+        {
+          "seq": 25,
+          "action": "保存兩份STL版本、來源與方向記錄關聯、四份raw及最終verification／export record",
+          "observed": "Body／Lid兩份v001 STL實檔與實際重匯入核對通過；07-03原scene／副本／record hash未變。保留world候選、兩檔SHA與版本紀錄，不另存blend；切片、支撐、列印、實測、試配與合格值仍留空。",
+          "note": "本次完成助教數位匯出示範，不代學員確認完成；07-02間隙仍為試驗幾何，STL不是已驗證可直接列印或試配的合格件。"
+        }
+      ],
+      "sha256_now": "1c60b2b28d47b635a123f4e595f0f207824d1ae1f72d6c5b076f15e86ac72cd3",
+      "hash_matches_inventory": true,
+      "visual_review": {
+        "method": "view_image original",
+        "result": "consistent",
+        "observation": "兩件STL總覽與前圖相同姿態；只表示最終可見狀態，保存四raw/verification/hash不在畫面上，需資料檔佐證；無列印／試配結果畫面。"
+      }
+    }
+  ]
+}
+

@@ -1,0 +1,139 @@
+{
+  "schema_version": 1,
+  "run": "2026-10-25-lesson05-lid-export-demo-v001",
+  "recorded_on": "2026-10-25",
+  "timezone": "Asia/Taipei",
+  "performed_by": "tutor",
+  "completion_scope": "STL export and actual CAD reimport only; slicing, printing, physical measurement and fit testing remain undone",
+  "scene_versions_unchanged": true,
+  "saved_new_scene": false,
+  "output_version": "v001",
+  "stl_unit_interpretation": "STL has no length-unit metadata; exported coordinate values are interpreted as millimetres in this workflow",
+  "exports": [
+    {
+      "source_scene_path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\05\\2026-10-22-lesson05-lid-demo-v001\\demo-files\\u05_lid_v001.blend",
+      "source_scene_sha256": "ab08f331dcb26c5ffc6c6ca56c7c7f022df96791c4777e37c5f01a964fbed6ff",
+      "opened_scene_path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\05\\2026-10-25-lesson05-lid-export-demo-v001\\demo-files\\sources\\u05_lid_v001.blend",
+      "opened_scene_sha256": "ab08f331dcb26c5ffc6c6ca56c7c7f022df96791c4777e37c5f01a964fbed6ff",
+      "source_unchanged": true,
+      "opened_copy_unchanged": true,
+      "source_object": "Lid",
+      "stl_path": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\05\\2026-10-25-lesson05-lid-export-demo-v001\\demo-files\\exports\\u05_lid_v001.stl",
+      "stl_sha256": "0b226cf405bc70f42b5ce28fee9f46cb55eff67b84c6d786c091a2043f5f2408",
+      "stl_bytes": 2284,
+      "stl_dimensions_mm": [
+        60.0,
+        40.0,
+        6.0
+      ],
+      "stl_triangles": 44,
+      "stl_non_manifold_edges": 0,
+      "stl_connected_shells": 1,
+      "stl_genus": 0,
+      "stl_volume_mm3": 6195.199951171875,
+      "kind": "lid",
+      "source_scene_version": "v001",
+      "stl_version": "v001",
+      "source_scene_bytes": 99064,
+      "opened_scene_bytes": 99064,
+      "source_dimensions_mm": [
+        60.0,
+        40.0,
+        6.0
+      ],
+      "stl_bounds_mm": {
+        "min": [
+          -30.0,
+          -20.0,
+          11.0
+        ],
+        "max": [
+          30.0,
+          20.0,
+          17.0
+        ]
+      },
+      "stl_verification_path": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/stl-verification.json",
+      "export_options": {
+        "only_selected": true,
+        "global_scale": 1.0,
+        "use_scene_unit": false,
+        "apply_modifiers": true,
+        "forward_axis": "Y",
+        "up_axis": "Z",
+        "ascii_format": false,
+        "use_batch": false,
+        "evaluation_mode": "DAG_EVAL_RENDER"
+      },
+      "import_options": {
+        "global_scale": 1.0,
+        "use_scene_unit": false,
+        "forward_axis": "Y",
+        "up_axis": "Z"
+      },
+      "reimport_verified": true,
+      "reimport_object": "u05_lid_v001",
+      "reimport_dimensions_mm": [
+        60.0,
+        40.0,
+        6.0
+      ]
+    }
+  ],
+  "bed_placement": {
+    "checked": false,
+    "translated_to_bed": false,
+    "translation_mm": null,
+    "retained_world_z_mm": [
+      11,
+      17
+    ],
+    "note": "Assembly-space coordinates retained. Slicer placement and print orientation are still pending."
+  },
+  "evidence": {
+    "run": {
+      "path": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/run.json",
+      "sha256": "7dc2c93f41957150df80f8654572d050a11fead1b7a3bc5840d8f04bb5f07b16"
+    },
+    "verification": {
+      "path": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/verification.json",
+      "sha256": "039eae34d3ad50fd11d32cc00cbfe177c62586b845089e8c29105098a64fd8c6"
+    },
+    "runner": {
+      "path": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/runner-status.json",
+      "sha256": "2d58a71f9a45ddad1ce6269bacc99fb216b933a4b5f2df1daab7cc525a33f759"
+    },
+    "source_snapshot_manifest": {
+      "path": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/source-snapshot/manifest.json",
+      "sha256": "bf6391d992efe749213ed6cb2961be9b4bed909e99607f3f7cb23599bb401ae2"
+    },
+    "original_png_count": 12,
+    "snapshot_script_count": 7
+  },
+  "workspace_check": {
+    "unchanged": true,
+    "snapshot_encoding": "SHA-256 of UTF-8 JSON, sorted keys, compact separators, ensure_ascii=false",
+    "snapshot_sha256_before": "4ad6905b1cef7594ff1bfed45b81e7794fdbf128011df09b4686bdb44d0a7d2f",
+    "snapshot_sha256_after": "4ad6905b1cef7594ff1bfed45b81e7794fdbf128011df09b4686bdb44d0a7d2f",
+    "directory_entries": 11,
+    "file_entries": 0,
+    "changes": []
+  },
+  "progress_baseline": {
+    "revision": 5,
+    "sha256": "d92e4f2ee78a1cf41386816b8616bf635b89fb25f8bfd813ac00cd20ed20b4ef",
+    "modified": false
+  },
+  "slicer_checked": false,
+  "printed": false,
+  "fit_tested": false,
+  "physical_measurements": null,
+  "fit_results": null,
+  "qualified_clearance_mm": null,
+  "numeric_comparison": {
+    "purpose": "Floating point reconstruction only; not manufacturing tolerance or printed fit acceptance",
+    "dimensionsAbsMm": 0.0001,
+    "volumeRelative": 1e-05
+  },
+  "numeric_comparison_note": "Floating-point comparison thresholds only; not manufacturing tolerances or qualified printed-fit clearances."
+}

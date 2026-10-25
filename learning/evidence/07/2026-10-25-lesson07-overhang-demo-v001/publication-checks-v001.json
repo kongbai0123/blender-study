@@ -1,0 +1,271 @@
+{
+  "recordedAt": "2026-10-25T08:31:53.570313+00:00",
+  "evidencePassed": true,
+  "publicationPending": false,
+  "browserProofPending": false,
+  "changedSteps": [
+    "07-03"
+  ],
+  "progressSha256": "d92e4f2ee78a1cf41386816b8616bf635b89fb25f8bfd813ac00cd20ed20b4ef",
+  "learnerCompletionConfirmed": false,
+  "images": [
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-01-source-dialog.png",
+      "status": 200,
+      "sha256": "2f97c85df79d8650f4019128ff16a90a7fc48fd81cc1775f426f3adc0023eb88",
+      "bytes": 52653,
+      "exactBytes": true,
+      "width": 1060,
+      "height": 600,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-02-source-geometry.png",
+      "status": 200,
+      "sha256": "2187dc09ca5146a8ebdeca93fa1a59e142bf6f973f7c4beaa55b05f3439d9244",
+      "bytes": 157542,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-03-body_baseline-controls.png",
+      "status": 200,
+      "sha256": "eeed2a415d1a609be54f2c1fc30cfac7409850ed4426202ef2337a5a8730ebf3",
+      "bytes": 182536,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-04-body_baseline-analysis.png",
+      "status": 200,
+      "sha256": "f49f0a5f0c0ca9f72cb6208e0ad71fd781ce36a7ccfaae2287739d8bf6a5e577",
+      "bytes": 164139,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-05-body_candidate-controls.png",
+      "status": 200,
+      "sha256": "ae2b92aa3d09015b0eebb69320b3cec6eb6f2bef803ed252de71aaf5c904f6e1",
+      "bytes": 173091,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-06-body_candidate-analysis.png",
+      "status": 200,
+      "sha256": "c03a6f17d0432d03b9790801f6a68e473a5dc3eb095bca11259c50af6b6940e5",
+      "bytes": 162173,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-07-lid_baseline-controls.png",
+      "status": 200,
+      "sha256": "c2102bc64d6eb2118032c578409305f1fe3654587778e1edf950d93840de0c55",
+      "bytes": 182777,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-08-lid_baseline-analysis.png",
+      "status": 200,
+      "sha256": "a260dcf271361a95899755dc6b1f9b0adbdf2faa7557441add8c5fbf3e5f18da",
+      "bytes": 168495,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-09-lid_candidate-controls.png",
+      "status": 200,
+      "sha256": "d56f28ecfbc1d2625cac3b526468ab815851ef09101f81c1ed40a7950d9fe03c",
+      "bytes": 184774,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-10-lid_candidate-analysis.png",
+      "status": 200,
+      "sha256": "d7e18cd95f29cfbcb84e6ef8b51b19535f2e74b10eeaea264f4abfd92f3e8e3b",
+      "bytes": 165374,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-11-lid-candidate-profile.png",
+      "status": 200,
+      "sha256": "99f3ca7c6885b1c562b205ffd565b6630b3dd1d965c82ee1bee8a9e3b206cbef",
+      "bytes": 201585,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-12-candidate-layout.png",
+      "status": 200,
+      "sha256": "01508cf7b1b0b8978491626498a3e4d03ecee1479eff7e0b430e6e2b4be8ba22",
+      "bytes": 160549,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-13-save-dialog.png",
+      "status": 200,
+      "sha256": "9cd1bb428fee4143af37b260087008b912ad365265103a82028422707db61f76",
+      "bytes": 53088,
+      "exactBytes": true,
+      "width": 1060,
+      "height": 600,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-14-saved.png",
+      "status": 200,
+      "sha256": "f85fb794d6b4dd889f3dd20c3c1f5fff17ce5f632f0ecdf8eab1e69873451708",
+      "bytes": 164868,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-15-open-saved.png",
+      "status": 200,
+      "sha256": "8d22eec8caa88cebdc61502cde319c5bacb31272d98d4f916b35f734a4f3da98",
+      "bytes": 57784,
+      "exactBytes": true,
+      "width": 1060,
+      "height": 600,
+      "originalPixelsPreserved": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-16-reopened-verified.png",
+      "status": 200,
+      "sha256": "671959f98066449519611df236ddff019281ef8c0a09d95a6b336d06cc533762",
+      "bytes": 158070,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    }
+  ],
+  "downloads": [
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/demo-files/u07_print_orientation_v001.blend",
+      "status": 200,
+      "sha256": "360417f208287a94ca13501f4365b70b3396ca6aba579231e0f8d2a442ecf47d",
+      "bytes": 106462,
+      "exactBytes": true,
+      "contentDisposition": "attachment"
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/print-orientation-record-v001.json",
+      "status": 200,
+      "sha256": "b515d433f7c6b8e65e3247337f135a07bf56b0f6f9817efbab446fbf5c708986",
+      "bytes": 559144,
+      "exactBytes": true
+    },
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/print-orientation-manifest-v001.json",
+      "status": 200,
+      "sha256": "07657fd5670e1d834101ac177755c79c250c4f4e5be9579c7cca75e5bd7063e3",
+      "bytes": 89248,
+      "exactBytes": true
+    },
+    {
+      "path": "learning/journal/2026-10-25-lesson07-overhang-demo-v001.md",
+      "status": 200,
+      "sha256": "a9b2ab4e8f5ed1a2e89195a58986fda41f7ad3127de2ae106b32b8244297675c",
+      "bytes": 11471,
+      "exactBytes": true
+    }
+  ],
+  "supplementaryImages": [
+    {
+      "path": "learning/evidence/07/2026-10-25-lesson07-overhang-focus-v002/07-03-06-elevated-ledge-closeup.png",
+      "status": 200,
+      "sha256": "39933f912508246987d4bf47773313b1d4ae312a60980c66c3cdda58faec799a",
+      "bytes": 121570,
+      "exactBytes": true,
+      "width": 1494,
+      "height": 1019,
+      "originalPixelsPreserved": true
+    }
+  ],
+  "supplementaryReadback": {
+    "path": "learning/evidence/07/2026-10-25-lesson07-overhang-focus-v002/focus-image-review-v001.json",
+    "status": 200,
+    "sha256": "aa2558cf2f44286ba845b9031a8be7dbca3598ca4149c81970591ab6b87d60d3",
+    "bytes": 5117,
+    "exactBytes": true
+  },
+  "browserProof": {
+    "path": "learning/evidence/ui/2026-10-25-lesson07-overhang-demo-v001.json",
+    "sha256": "761085102c073938cdb8e1c82530087986e02e5d0528e14d48723d0aec7d8135",
+    "screenshots": [
+      {
+        "path": "learning/evidence/ui/2026-10-25-lesson07-overhang-demo-v001-final-overview.jpg",
+        "sha256": "426eceb8ff3c0d69342236701f38f46d79330c2351fd2db2ad94b0c41c1f8b51",
+        "bytes": 40323,
+        "width": 304,
+        "height": 848,
+        "pixelEdits": false,
+        "role": "overview",
+        "fileRecordedAt": "2026-10-25T08:30:59.169991+00:00"
+      },
+      {
+        "path": "learning/evidence/ui/2026-10-25-lesson07-overhang-demo-v001-final-comparison.jpg",
+        "sha256": "6ef5b2856263099898809aea52d77c3453108c40200d836e12b594bfbb760c6e",
+        "bytes": 33176,
+        "width": 304,
+        "height": 848,
+        "pixelEdits": false,
+        "role": "comparison",
+        "fileRecordedAt": "2026-10-25T08:30:54.832922+00:00"
+      },
+      {
+        "path": "learning/evidence/ui/2026-10-25-lesson07-overhang-demo-v001-final-conditions.jpg",
+        "sha256": "fb4a196dc9efddf0bba84a02e685dfd81b0125569e0c41983eb457ad964bfbc0",
+        "bytes": 39632,
+        "width": 304,
+        "height": 848,
+        "pixelEdits": false,
+        "role": "conditions",
+        "fileRecordedAt": "2026-10-25T08:30:50.463545+00:00"
+      }
+    ]
+  },
+  "automatedChecks": {
+    "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/automated-checks-v001.json",
+    "sha256": "ee5d447c5ba7ae14c1be6c743bb7902732f0c6685eab4f0f17fe5599ff69a3ae"
+  },
+  "passed": true,
+  "stepFingerprintsCompared": 52,
+  "catalogSha256": "75776f7e28cffbadfbaaa85d2ebaf9a7e02a591c48c17083de8962345f390230",
+  "apiCatalogMatchesDisk": true,
+  "apiProgressMatchesDisk": true,
+  "progressRevision": 5,
+  "sourceSceneUnchanged": true,
+  "newSceneReopened": true
+}

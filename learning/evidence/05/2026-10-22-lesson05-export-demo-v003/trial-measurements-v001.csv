@@ -1,0 +1,7 @@
+﻿trial_index,marker_count,design_pin_width_mm,design_total_clearance_mm,design_per_side_clearance_mm,design_hole_width_mm,stl_hole_x_mm,stl_hole_y_mm,pin_stl_sha256,plate_stl_sha256,nozzle_diameter_mm,printed_pin_x_mm,printed_pin_y_mm,printed_hole_x_mm,printed_hole_y_mm,fit_result,material,line_width_mm,layer_height_mm,print_orientation,slicer_profile,qualified_clearance_mm
+1,1,10,0.1,0.05,10.1,10.1000061,10.099999,bc10342c54a94d87c15eccb050fb9b30a7ae00bf4079d4c7869ac53d199db784,8105d1ebdc04ed12a2b7f98cc3b728db74063c453961c33d165ac50e694c7c8b,0.4,,,,,,,,,,,
+2,2,10,0.2,0.1,10.2,10.2000008,10.1999989,bc10342c54a94d87c15eccb050fb9b30a7ae00bf4079d4c7869ac53d199db784,8105d1ebdc04ed12a2b7f98cc3b728db74063c453961c33d165ac50e694c7c8b,0.4,,,,,,,,,,,
+3,3,10,0.3,0.15,10.3,10.2999954,10.2999992,bc10342c54a94d87c15eccb050fb9b30a7ae00bf4079d4c7869ac53d199db784,8105d1ebdc04ed12a2b7f98cc3b728db74063c453961c33d165ac50e694c7c8b,0.4,,,,,,,,,,,
+4,4,10,0.4,0.2,10.4,10.3999996,10.3999987,bc10342c54a94d87c15eccb050fb9b30a7ae00bf4079d4c7869ac53d199db784,8105d1ebdc04ed12a2b7f98cc3b728db74063c453961c33d165ac50e694c7c8b,0.4,,,,,,,,,,,
+5,5,10,0.5,0.25,10.5,10.5000019,10.4999995,bc10342c54a94d87c15eccb050fb9b30a7ae00bf4079d4c7869ac53d199db784,8105d1ebdc04ed12a2b7f98cc3b728db74063c453961c33d165ac50e694c7c8b,0.4,,,,,,,,,,,
+6,6,10,0.6,0.3,10.6,10.5999985,10.5999999,bc10342c54a94d87c15eccb050fb9b30a7ae00bf4079d4c7869ac53d199db784,8105d1ebdc04ed12a2b7f98cc3b728db74063c453961c33d165ac50e694c7c8b,0.4,,,,,,,,,,,

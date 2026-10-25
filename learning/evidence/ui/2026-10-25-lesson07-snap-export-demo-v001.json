@@ -1,0 +1,54 @@
+{
+  "recordedAt": "2026-10-25T09:16:52.698598+00:00",
+  "url": "http://127.0.0.1:8766/",
+  "browser": "ChatGPT in-app browser",
+  "lesson": "07",
+  "step": "07-04",
+  "captureMethod": "Browser getScreenshot original JPEG bytes; no pixel modifications",
+  "screenshots": [
+    {
+      "path": "learning/evidence/ui/2026-10-25-lesson07-snap-export-demo-v001-final-overview.jpg",
+      "sha256": "f041c0abd208d807b72aa759583b17aefadb55f4f99c11841d3a46bf4c953504",
+      "bytes": 40837,
+      "width": 304,
+      "height": 848,
+      "pixelEdits": false,
+      "role": "overview"
+    },
+    {
+      "path": "learning/evidence/ui/2026-10-25-lesson07-snap-export-demo-v001-final-comparison.jpg",
+      "sha256": "bb597f0a618a362d638d3d3550dce96ff70f5776ec29fc79415a7f922c52c7de",
+      "bytes": 29414,
+      "width": 304,
+      "height": 848,
+      "pixelEdits": false,
+      "role": "comparison"
+    },
+    {
+      "path": "learning/evidence/ui/2026-10-25-lesson07-snap-export-demo-v001-final-conditions.jpg",
+      "sha256": "e6bac09d89f4747b5b482b4af5bae1f1493a0841b07ccae8a089c52ec08239d9",
+      "bytes": 36456,
+      "width": 304,
+      "height": 848,
+      "pixelEdits": false,
+      "role": "conditions"
+    }
+  ],
+  "sourceFiles": [
+    {
+      "path": "learning/catalog.json",
+      "sha256": "c55f6752566dce71021e319333a73f7ad26f5fa91dc38fec99d181000d2b5b1c"
+    },
+    {
+      "path": "learning/web/app.js",
+      "sha256": "90d5d699006d791b5efb3ed3568a19bfa716740bf2d1b0adb87f9cf42fae6cc3"
+    },
+    {
+      "path": "learning/web/app.css",
+      "sha256": "fb9c74959bbfc62287cae7ef6bc600db05b07a98c3b9cfd1a1e97159e316516d"
+    }
+  ],
+  "learnerCompletionConfirmed": false,
+  "progressRevision": 5,
+  "progressSha256": "d92e4f2ee78a1cf41386816b8616bf635b89fb25f8bfd813ac00cd20ed20b4ef"
+}

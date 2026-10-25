@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "lesson_step": "07-05",
+  "plan_version": "v001",
+  "recorded_on": "2026-10-25",
+  "chosen_by": "tutor",
+  "stage": "parameter_comparison_geometry_draft",
+  "purpose": "只比較既有卡扣獨立錨座試片的幾何臂長；沒有已驗證改善、材料或實體合格結果。",
+  "source_scene": {
+    "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/demo-files/u07_print_orientation_v001.blend",
+    "sha256": "360417f208287a94ca13501f4365b70b3396ca6aba579231e0f8d2a442ecf47d",
+    "bytes": 106462,
+    "source_object": "SnapTool"
+  },
+  "source_tool_mesh": {
+    "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/snap_tool_mesh.json",
+    "sha256": "c60a6ed737f426277e0157ad1f7554a3070ba4395aec319693d6a2d9104c6140",
+    "bytes": 7191
+  },
+  "source_geometry_record": {
+    "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/geometry-draft-record-v001.json",
+    "sha256": "4f201124cbf51dc849c7978ee85f7ff5e58ca4273cdd9b006d3eba6c52521b7a"
+  },
+  "continuity_reference": {
+    "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/stl-export-record-v001.json",
+    "sha256": "b3b3745d714a628b5155b01fbfeca81cda50855aaeb95aa757f616ea58ee268a",
+    "role": "07-04數位輸出版本沿革；不覆寫該STL或空白試配紀錄。"
+  },
+  "controlled_parameter": {
+    "symbol": "L_geometry",
+    "unit": "mm",
+    "definition": "原source-frame根平面Z=-8至扣鉤承接面的高度差；不宣稱是力學有效長度。",
+    "reference_value_mm": 19,
+    "draft_values_mm": [17, 19, 21],
+    "source_root_plane_z_mm": -8,
+    "source_bearing_plane_z_mm": 11,
+    "source_upper_vertex_z_threshold_mm": 11,
+    "source_selected_vertex_count": 14,
+    "source_unchanged_vertex_count": 28,
+    "ui_operation": "每件從獨立mesh duplicate開始；只框選原source Z>=11的14個上端頂點，沿Z平移-2或+2mm。"
+  },
+  "held_geometry_nominal": {
+    "beam_width_mm": 6,
+    "beam_thickness_mm": 1.6,
+    "hook_projection_mm": 1.2,
+    "upper_end_height_mm": 2,
+    "anchor_dimensions_mm": [9, 4.6, 3],
+    "root_bevel_offset_mm": 0.6,
+    "root_bevel_segments": 3,
+    "hook_bevel_offset_mm": 0.8,
+    "hook_bevel_segments": 1,
+    "note": "以上為07-02助教草案；保留真實根部弦面及12個miter端面，不把offset直接當半徑。實際值另由網格讀取。"
+  },
+  "source_object_origin_mm": [0, -22.200000762939453, -9.5],
+  "coupon_objects": [
+    {
+      "name": "A_L19",
+      "role": "reference_geometry_only",
+      "L_geometry_mm": 19,
+      "upper_vertex_translation_z_mm": 0,
+      "bearing_plane_z_mm": 11,
+      "total_arm_height_mm": 21,
+      "whole_coupon_height_mm": 24,
+      "candidate_rotation_degrees": [0, 90, 0],
+      "candidate_object_location_mm": [0, -12, 4.5],
+      "candidate_world_dimensions_nominal_mm": [24, 4.6, 9]
+    },
+    {
+      "name": "B_L17",
+      "role": "length_adjustment_draft",
+      "L_geometry_mm": 17,
+      "upper_vertex_translation_z_mm": -2,
+      "bearing_plane_z_mm": 9,
+      "total_arm_height_mm": 19,
+      "whole_coupon_height_mm": 22,
+      "candidate_rotation_degrees": [0, 90, 0],
+      "candidate_object_location_mm": [0, 0, 4.5],
+      "candidate_world_dimensions_nominal_mm": [22, 4.6, 9]
+    },
+    {
+      "name": "C_L21",
+      "role": "length_adjustment_draft",
+      "L_geometry_mm": 21,
+      "upper_vertex_translation_z_mm": 2,
+      "bearing_plane_z_mm": 13,
+      "total_arm_height_mm": 23,
+      "whole_coupon_height_mm": 26,
+      "candidate_rotation_degrees": [0, 90, 0],
+      "candidate_object_location_mm": [0, 12, 4.5],
+      "candidate_world_dimensions_nominal_mm": [26, 4.6, 9]
+    }
+  ],
+  "inverse_geometry_reference": {
+    "unchanged_root_upper_z_mm": -7.4,
+    "baseline_bearing_z_mm": 11,
+    "mapping": "先逆回候選剛體姿態。z<=-7.4保持；-7.4至變體bearing連續線性映回-7.4至11；z>=變體bearing整組扣除delta。對原42點恰等同只移14個上端點，也容許合法面細分。"
+  },
+  "save_policy": {
+    "filename": "u07_cantilever_length_coupons_v001.blend",
+    "source_scene_overwrite": false,
+    "independent_coupon_meshes": true,
+    "keep_four_source_objects_hidden": true,
+    "source_meshes_and_matrices_unchanged": true,
+    "apply_rotation": false,
+    "reopen_and_verify": true,
+    "export_stl": false
+  },
+  "boundary_and_orientation": {
+    "specimen_scope": "standalone anchor + arm + hook geometry; not the full Body/Lid assembly",
+    "full_box_boundary_equivalence": null,
+    "anchor_clamping_or_fixture": null,
+    "candidate_orientation_only": true,
+    "bed_reference_z_mm": 0,
+    "printer_bed_dimensions_mm": null,
+    "support_strategy_status": "pending_slicer_review",
+    "final_print_orientation_approved": null,
+    "support_required": null,
+    "slicer_support_settings": null,
+    "bridge_or_support_qualified": null
+  },
+  "unverified_results": {
+    "material_grade": null,
+    "epsilon_allow": null,
+    "root_flexibility_Q": null,
+    "effective_mechanical_length_mm": null,
+    "required_deflection_mm": null,
+    "delta_allow_mm": null,
+    "forces": null,
+    "physical_measurements": null,
+    "fit_results": null,
+    "physical_interference": null,
+    "qualified_strength_N": null,
+    "qualified_clearance_mm": null,
+    "improvement_validated": null
+  },
+  "performed_flags": {
+    "improvement_assessed": false,
+    "strength_analysis_performed": false,
+    "deformation_analysis_performed": false,
+    "fit_qualification": false,
+    "support_generation_performed": false,
+    "slicer_checked": false,
+    "printed": false,
+    "fit_tested": false
+  },
+  "numeric_comparison": {
+    "position_epsilon_mm": 0.0001,
+    "volume_relative_epsilon": 0.00001,
+    "purpose": "浮點與幾何重建；不是製造公差、允許應變、支撐或列印／強度／配合合格門檻。"
+  }
+}
