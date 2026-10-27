@@ -1,0 +1,550 @@
+{
+  "schemaVersion": 1,
+  "kind": "native_edit_mesh_shortcut_verification",
+  "runId": "2026-10-27-shortcuts-mesh-demo-v001",
+  "recordedAt": "2026-10-27T00:29:08.337844+00:00",
+  "blender": "5.2.1 LTS",
+  "buildHash": "9e2066aef7ef",
+  "factoryStartup": true,
+  "eventSimulate": true,
+  "cases": [
+    {
+      "case": "numpad-zero-camera",
+      "events": [
+        "NUMPAD_0"
+      ],
+      "expected": "CAMERA",
+      "actual": {
+        "mode": "OBJECT",
+        "selectMode": [
+          true,
+          false,
+          false
+        ],
+        "active": "Cube",
+        "viewPerspective": "CAMERA"
+      },
+      "passed": true,
+      "screenshot": {
+        "path": "03-03-01-numpad-zero-camera.png",
+        "sha256": "1df278e8be1cd4f0c90637beb216b288b2f30a0d67c0013fdf88cac7aaf9d2b5",
+        "width": 1494,
+        "height": 1019,
+        "recordedAt": "2026-10-27T00:28:53.637Z"
+      }
+    },
+    {
+      "case": "main-three-face-select",
+      "events": [
+        "TAB",
+        "THREE"
+      ],
+      "expected": [
+        false,
+        false,
+        true
+      ],
+      "actual": {
+        "mode": "EDIT_MESH",
+        "selectMode": [
+          false,
+          false,
+          true
+        ],
+        "active": "Cube",
+        "viewPerspective": "ORTHO",
+        "vertices": 8,
+        "edges": 12,
+        "faces": 6,
+        "selectedVertices": 8,
+        "selectedEdges": 12,
+        "selectedFaces": 6,
+        "selectedFaceCenters": [
+          [
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ]
+        ],
+        "selectedFaceNormals": [
+          [
+            0.0,
+            -0.0,
+            1.0
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          [
+            -1.0,
+            -0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          [
+            1.0,
+            -0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ]
+        ],
+        "localBounds": [
+          [
+            -1.0,
+            1.0
+          ],
+          [
+            -1.0,
+            1.0
+          ],
+          [
+            -1.0,
+            1.0
+          ]
+        ]
+      },
+      "passed": true,
+      "screenshot": {
+        "path": "04-04-01-main-three-face-select.png",
+        "sha256": "f58cd072652656ef0f682c8989afe4951dc4eab6b2074805bd63af6a09fdb0e5",
+        "width": 1494,
+        "height": 1019,
+        "recordedAt": "2026-10-27T00:28:56.037Z"
+      }
+    },
+    {
+      "case": "edit-alt-a-deselect",
+      "events": [
+        "ALT_A"
+      ],
+      "expected": 0,
+      "actual": {
+        "mode": "EDIT_MESH",
+        "selectMode": [
+          false,
+          false,
+          true
+        ],
+        "active": "Cube",
+        "viewPerspective": "ORTHO",
+        "vertices": 8,
+        "edges": 12,
+        "faces": 6,
+        "selectedVertices": 0,
+        "selectedEdges": 0,
+        "selectedFaces": 0,
+        "selectedFaceCenters": [],
+        "selectedFaceNormals": [],
+        "localBounds": [
+          [
+            -1.0,
+            1.0
+          ],
+          [
+            -1.0,
+            1.0
+          ],
+          [
+            -1.0,
+            1.0
+          ]
+        ]
+      },
+      "passed": true,
+      "screenshot": {
+        "path": "04-04-02-edit-alt-a-deselect.png",
+        "sha256": "4b3f7fb4125af6e93a90a9018ae6ef3282c7655f80aca371be3f28ba3cad3e31",
+        "width": 1494,
+        "height": 1019,
+        "recordedAt": "2026-10-27T00:28:57.637Z"
+      }
+    },
+    {
+      "case": "select-front-face",
+      "events": [
+        "CLICK",
+        614,
+        478
+      ],
+      "expected": "one -Y face",
+      "actual": {
+        "mode": "EDIT_MESH",
+        "selectMode": [
+          false,
+          false,
+          true
+        ],
+        "active": "Cube",
+        "viewPerspective": "ORTHO",
+        "vertices": 8,
+        "edges": 12,
+        "faces": 6,
+        "selectedVertices": 4,
+        "selectedEdges": 4,
+        "selectedFaces": 1,
+        "selectedFaceCenters": [
+          [
+            0.0,
+            -1.0,
+            0.0
+          ]
+        ],
+        "selectedFaceNormals": [
+          [
+            0.0,
+            -1.0,
+            0.0
+          ]
+        ],
+        "localBounds": [
+          [
+            -1.0,
+            1.0
+          ],
+          [
+            -1.0,
+            1.0
+          ],
+          [
+            -1.0,
+            1.0
+          ]
+        ]
+      },
+      "passed": true,
+      "screenshot": {
+        "path": "04-04-03-select-front-face.png",
+        "sha256": "d8b65070c9f8883419064045b99ee9d08c22e6dc68a5485a7c3e983647143394",
+        "width": 1494,
+        "height": 1019,
+        "recordedAt": "2026-10-27T00:28:59.337Z"
+      }
+    },
+    {
+      "case": "inset-i",
+      "events": [
+        "I",
+        "0.2",
+        "RET"
+      ],
+      "expected": "10 faces and one inset face",
+      "actual": {
+        "mode": "EDIT_MESH",
+        "selectMode": [
+          false,
+          false,
+          true
+        ],
+        "active": "Cube",
+        "viewPerspective": "ORTHO",
+        "vertices": 12,
+        "edges": 20,
+        "faces": 10,
+        "selectedVertices": 4,
+        "selectedEdges": 4,
+        "selectedFaces": 1,
+        "selectedFaceCenters": [
+          [
+            0.0,
+            -1.0,
+            0.0
+          ]
+        ],
+        "selectedFaceNormals": [
+          [
+            0.0,
+            -1.0,
+            0.0
+          ]
+        ],
+        "localBounds": [
+          [
+            -1.0,
+            1.0
+          ],
+          [
+            -1.0,
+            1.0
+          ],
+          [
+            -1.0,
+            1.0
+          ]
+        ]
+      },
+      "passed": true,
+      "screenshot": {
+        "path": "05-05-01-inset-i.png",
+        "sha256": "6a60595f468dc36fcd330970b5ccf6423f623473eb30c3da8ce898acea5893a8",
+        "width": 1494,
+        "height": 1019,
+        "recordedAt": "2026-10-27T00:29:01.637Z"
+      }
+    },
+    {
+      "case": "extrude-e-normal",
+      "events": [
+        "E",
+        "0.4",
+        "RET"
+      ],
+      "expected": "14 faces, selected face center Y=-1.4",
+      "actual": {
+        "mode": "EDIT_MESH",
+        "selectMode": [
+          false,
+          false,
+          true
+        ],
+        "active": "Cube",
+        "viewPerspective": "ORTHO",
+        "vertices": 16,
+        "edges": 28,
+        "faces": 14,
+        "selectedVertices": 4,
+        "selectedEdges": 4,
+        "selectedFaces": 1,
+        "selectedFaceCenters": [
+          [
+            0.0,
+            -1.399999976158142,
+            0.0
+          ]
+        ],
+        "selectedFaceNormals": [
+          [
+            0.0,
+            -1.0,
+            0.0
+          ]
+        ],
+        "localBounds": [
+          [
+            -1.0,
+            1.0
+          ],
+          [
+            -1.399999976158142,
+            1.0
+          ],
+          [
+            -1.0,
+            1.0
+          ]
+        ]
+      },
+      "passed": true,
+      "screenshot": {
+        "path": "05-05-02-extrude-e-normal.png",
+        "sha256": "5feb53de8ee288dfd40362fb8bd7eedd3f00ffa709e6ad4ce2b446c3590c1c21",
+        "width": 1494,
+        "height": 1019,
+        "recordedAt": "2026-10-27T00:29:03.937Z"
+      }
+    },
+    {
+      "case": "main-two-edge-select",
+      "events": [
+        "TWO"
+      ],
+      "expected": "four selected edges",
+      "actual": {
+        "mode": "EDIT_MESH",
+        "selectMode": [
+          false,
+          true,
+          false
+        ],
+        "active": "Cube",
+        "viewPerspective": "ORTHO",
+        "vertices": 16,
+        "edges": 28,
+        "faces": 14,
+        "selectedVertices": 4,
+        "selectedEdges": 4,
+        "selectedFaces": 1,
+        "selectedFaceCenters": [
+          [
+            0.0,
+            -1.399999976158142,
+            0.0
+          ]
+        ],
+        "selectedFaceNormals": [
+          [
+            0.0,
+            -1.0,
+            0.0
+          ]
+        ],
+        "localBounds": [
+          [
+            -1.0,
+            1.0
+          ],
+          [
+            -1.399999976158142,
+            1.0
+          ],
+          [
+            -1.0,
+            1.0
+          ]
+        ]
+      },
+      "passed": true,
+      "screenshot": {
+        "path": "07-02-01-main-two-edge-select.png",
+        "sha256": "ac018b5487d7f2a25875af350d09139a617f60fe7523f190037d5885b2bebb2a",
+        "width": 1494,
+        "height": 1019,
+        "recordedAt": "2026-10-27T00:29:05.537Z"
+      }
+    },
+    {
+      "case": "bevel-ctrl-b",
+      "events": [
+        "CTRL_B",
+        "0.1",
+        "RET"
+      ],
+      "expected": "native mesh face count increases",
+      "actual": {
+        "mode": "EDIT_MESH",
+        "selectMode": [
+          false,
+          true,
+          false
+        ],
+        "active": "Cube",
+        "viewPerspective": "ORTHO",
+        "vertices": 20,
+        "edges": 36,
+        "faces": 18,
+        "selectedVertices": 8,
+        "selectedEdges": 12,
+        "selectedFaces": 5,
+        "selectedFaceCenters": [
+          [
+            -0.75,
+            -1.3499999046325684,
+            0.0
+          ],
+          [
+            0.75,
+            -1.3499999046325684,
+            0.0
+          ],
+          [
+            0.0,
+            -1.350000023841858,
+            0.75
+          ],
+          [
+            0.0,
+            -1.350000023841858,
+            -0.75
+          ],
+          [
+            0.0,
+            -1.399999976158142,
+            0.0
+          ]
+        ],
+        "selectedFaceNormals": [
+          [
+            -0.7071067690849304,
+            -0.7071067690849304,
+            0.0
+          ],
+          [
+            0.7071067690849304,
+            -0.7071067690849304,
+            0.0
+          ],
+          [
+            0.0,
+            -0.7071067690849304,
+            0.7071067690849304
+          ],
+          [
+            0.0,
+            -0.7071067690849304,
+            -0.7071067690849304
+          ],
+          [
+            0.0,
+            -0.9999999403953552,
+            0.0
+          ]
+        ],
+        "localBounds": [
+          [
+            -1.0,
+            1.0
+          ],
+          [
+            -1.399999976158142,
+            1.0
+          ],
+          [
+            -1.0,
+            1.0
+          ]
+        ]
+      },
+      "passed": true,
+      "screenshot": {
+        "path": "07-02-02-bevel-ctrl-b.png",
+        "sha256": "25e6e31d82bdbd997d1f22cbd3b6b17949d2a7920755bed048fceedbc8b985f9",
+        "width": 1494,
+        "height": 1019,
+        "recordedAt": "2026-10-27T00:29:07.937Z"
+      }
+    }
+  ],
+  "sourceSnapshot": "source-snapshot/manifest.json",
+  "sceneUnitSystem": "METRIC",
+  "sceneScaleLength": 1.0,
+  "sceneSaved": false,
+  "engineeringDimensionsVerified": false,
+  "learnerCompletionAssessed": false,
+  "physicalFitAssessed": false,
+  "workspaceWriteAttribution": null,
+  "workspaceContentsComparison": "See runner-status; not proof of no intervening writes"
+}

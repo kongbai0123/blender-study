@@ -1,76 +1,92 @@
 # Blender 引導式學習規範
 
-> 公開版接續規則（2026-10-26）：本檔下方English (US)、revision6與已執行示範均為作者當時的歷史脈絡，不是新讀者的即時畫面或完成狀態。新clone先執行 `python learning/bootstrap.py`；已有個人progress時只讀保留，不重設、不抄作者筆記。以該clone自己的progress／實際畫面為準。發布包內容及有意省略資料見 `docs/publication-manifest-2026-10-26.json`；Recent清單、private基線、第三方PDF快取不得為補引用而重新加入。原始證據位元組不正規化換行，保留 `.gitattributes` 的 `* -text`。
+以繁體中文教學。先做三單元基礎課（第二單元加入毫米尺寸方塊），再做通用小盒與螺紋、卡扣、卡榫、公差。以下規範生效；[原 AGENTS 完整位元組快照](learning/journal/2026-10-27-agents-history-v001.md)只保存歷史，內文「目前／最新／未做」及舊範圍不得取代本檔、最新 journal 或當前進度。[逐項搬移映射](learning/annotations/agents-requirements-map-v001.json)列原文、位置及保留方式。
 
+## 公開版接續
 
-以繁體中文帶學員實際操作。已採用三單元、第二單元毫米尺寸方塊；之後先做通用小盒，再學螺紋、卡扣、卡榫、公差與配合問題。
+- 新 clone 先執行 `python learning/bootstrap.py`；合法既有 progress 只讀保留，不重設、不抄作者筆記。English (US)、revision 6 與歷史示範不是新讀者的畫面、選擇或完成狀態，以該 clone 的 progress／實際畫面為準。
+- 本輪候選邊界見 [快速方法修正清單](docs/publication-manifest-2026-10-27-shortcuts-v002.json)；[快速方法 v001](docs/publication-manifest-2026-10-27-shortcuts-v001.json)、[語義修正清單](docs/publication-manifest-2026-10-27.json)及[2026-10-26 清單](docs/publication-manifest-2026-10-26.json)留作歷史基線。不得為補引用重新加入 Recent 清單、private 基線或第三方 PDF 快取。原始證據不正規化換行，保留 `.gitattributes` 的 `* -text`。
 
-## 接續與教學節奏
+## 目前授權與接續位置
 
-- 接續時讀 `README.md`、`learning/catalog.json`、`learning/progress.json` 與相關 `learning/journal/`，再執行 `python learning/manage.py status`。以最新進度和學員當前畫面為準。
-- 圖形介面從根目錄 `Start-Learning.cmd` 啟動（預設 8766，避開 KiCad 8765），停止用 `Stop-Learning.cmd`。網頁與聊天共用 `manage.py` 狀態機；不得另設完成度。學員已在網頁確認時，先讀最新狀態，不重複確認。
-- 每回合只有一個小目標、1–3 個操作與可見成功條件。學員回報後才往下；這是學習節奏，不是重新索取操作授權。
-- 初次先請學員開啟 Blender 並回報目前畫面。不假設已完成首次設定、已建立預設場景或已存檔。遇既有作品先保留，勿指示直接丟棄未存檔內容。
-- 操作前說明編輯區、模式、選取物件及輸入位置；卡關時縮小為一個操作，先核對模式、選取、視角與焦點。按鈕名稱依當前截圖，不猜翻譯。2026-10-22 已依學員要求實際執行所討論的語言切換：目前為 English (US)，已看到 Preferences saved 並核對主視窗；完整依據見 `learning/journal/2026-10-22-interface-language-execution-v001.md`。先前「尚無語言操作確認」的紀錄屬當時狀態，不代表目前仍未切換。
-- 不製作或引用示意圖。catalog 的 `figures` 只放 `learning/evidence/` 中真實存在的截圖（`type: screenshot`），保留拍攝日期等時間脈絡；沒有截圖的步驟只寫文字。步驟內容以專案內部紀錄（catalog、journal、progress、evidence、`sources/manifest.json`）為依據，未核對的介面名稱寫明以學員截圖為準，不預先猜測。頁面看得到截圖不代表學員已操作完成。
-- 學員要求具體呈現真實操作，並最新指定沿用 Claude 的獨立 Blender Python 事件劇本，避免搶用實體滑鼠。教材示範預設用 `learning/tutor/`；只有學員要求核對自己的視窗或排除個別卡關時，才考慮 Windows Computer Use。截圖保存原始像素、版本與來源 metadata；網頁局部放大或座標疊框都連回原圖，不重畫介面。
-- 釋出或更新教學前，交叉核對本聊天可讀訊息、相關專案文件與所有 journal、來源及實際畫面。catalog 的 `contentReview` 記錄核對範圍與依據；來源文字核對、實際畫面核對、學員完成分開表達。不把未實作內容寫成全部驗證完成，也不把助教建議寫成學員決定。
-- 由學員操作。未經要求，不代建模型、不外部改寫正開啟的 `.blend`，也不將助教準備的檔案當作學員成果。
-- 2026-10-22 學員另要求「一步步操作並記錄」：可在所討論的小步範圍內由助教實際展示介面操作，逐次保存操作後原始實拍、動作與結果；展示紀錄標示助教操作，仍需學員確認才更新完成進度。不能由這項授權推定已選英文、已完成課程或可覆寫學員檔案。
-- 學員隨後再次要求「你要實際完成操作，並且一步步執行和記錄」：目前採助教逐步實作模式，將所討論的一個操作目標執行到可核對的結果；不要每點一個按鈕就要求回覆「看到了」而中斷已授權的工作。每次動作後觀察、留原圖與實際結果，完成後更新網頁 `operationRun` 與 journal。操作執行狀態、介面設定觀察及學員完成確認分開記錄；不自動 confirm。
-- 教材示範實拍用 `learning/tutor/`：`python learning/tutor/run_demo.py <劇本> <新的 evidence 輸出資料夾>` 啟動獨立 Blender，以事件模擬操作並逐步截圖、讀回狀態；匯入器驗證證據後才寫入 catalog 的 `operationRun`。輸出限 evidence、拒絕非空資料夾；失敗資料保留，改用新執行版本，不覆寫舊圖。檔案瀏覽器欄位直接用程式寫入；實際存檔前驗證在本次 demo-files，禁止寫入 workspaces，不截個人預設資料夾。runner 執行前後遞迴比對工作區路徑與雜湊並保存 runner-status；若有變更先核對來源，也可能是學員同時儲存。Windows Recent 只清理本次新增且目標在本次 run 的捷徑，保留候選與清理結果，不掃除整個 evidence。第二單元起共用 `scenarios/common.py`。
-- 已接續到 05-02 插銷示範（`2026-10-22-lesson05-demo-v002`），尺寸 10 × 10 × 8 mm、Scale 1、Non Manifold 0，重開檔驗證通過；v001 因浮點體積比較過嚴中止，保留未匯入。浮點驗證門檻不是製造公差。學員已提供 0.4 mm 噴嘴，來源見 `learning/evidence/05/2026-10-22-print-conditions-v001.json`；線寬、材料與正式間隙不能由此推定。
-- 最新已依學員明確指定完成 05-03 孔板示範（`2026-10-22-lesson05-holes-demo-v002`）：96 × 26 × 4 mm 板、10.1～10.6 mm 六個方形通孔，對應 10 mm 名義插銷的 0.1～0.6 mm **總間隙試驗點**，各以 1～6 點盲凹記號辨識。最終網格實測、Non Manifold 0、另存及重開雜湊核對通過；28 張主流程原始實拍，紀錄見同名 journal。v001 因 Add Cylinder 預設尺寸假設錯誤使差集為空，保留未發布；v002 明確輸入尺寸並增加拒絕空模型檢查。尚未列印／試配，合格間隙為 null；0.1～0.6 不再是「等待選擇的範圍」，也不能寫成已合格。未更新學員完成狀態。
-- 最新已依要求完成 05-04 **STL 匯出與數位尺寸核對部分**：`2026-10-22-lesson05-export-demo-v003`，18 筆主流程，另有 `lesson05-export-view-v001` 六筆補充尺寸欄實拍。兩 STL 首次版本 v001，插銷 10 × 10 × 8（12 三角形），孔板 96 × 26 × 4（2854 三角形、六孔及 21 凹點），單殼、Non Manifold 0；STL 實檔解析與實際重新匯入皆通過。來源同雜湊副本放當次 sources，原 .blend 不改。網頁有助教 STL 下載及來源 hash 表格；不是學員檔案登記。STL 沒有單位標記，本次按 mm 解讀；切片、列印、實測、試配均未做，結果與合格間隙為 null。v001/v002 數位核對成功但實拍版面待改，保留未發布。空場景沒有 Item 分頁，必須在第一個物件匯入後才切一次 Item；重複點已啟用分頁會收合。主 run 未顯示 Dimensions 的圖已移除不正確疊框，與補充實拍交叉核對，不重畫或覆寫原圖。
-- 最新已完成 05-05 **上蓋與環形唇邊幾何示範**（`2026-10-22-lesson05-lid-demo-v001`）：重新開啟並重驗原04盒60 × 40 × 30、內腔56 × 36 × 28、壁／底2 mm；Body 幾何未變。助教選總間隙0.4／單邊0.2作本次試驗，蓋板60 × 40 × 2、唇外55.6 × 35.6、唇內51.6 × 31.6、環壁2、深4，整個Lid Dimensions60 × 40 × 6 mm。UI底面Inset／Extrude形成一體閉合網格，NM0／單殼／體積約6195.2，16張原始實拍；暫抬12mm展示後已回名義位置，另存u05_lid_v001.blend並重開驗證。Edit Mode圖中Local Median Z−1/−5對world15/11（物件LocationZ16）；組裝圖activeBody，側欄60/40/30屬Body，Lid尺寸見第9張。原盒hash b918ee87…afcd2530，原檔和讀取副本未覆寫。未匯出上蓋STL／列印／試配，正式合格間隙與實體結果均null，沒有confirm。範圍與版本見同名journal。
-- 最新已於 2026-10-25 完成 05-06 **上蓋 STL 匯出與數位核對部分**（`2026-10-25-lesson05-lid-export-demo-v001`）：原 05-05 場景與讀取副本 hash ab08f331…fbed6ff 均未改，只選 Lid／Selection Only 匯出 `u05_lid_v001.stl` v001，2284 bytes、44 三角形、hash 0b226cf4…f5f2408。STL 實檔與實際重新匯入皆為 60 × 40 × 6、板厚 2、環壁 2、唇深 4 mm，一體閉合、NM0／單殼；12 張原始實拍，含實際 Item Dimensions 與底斜視。Scale 1、Scene Unit 不勾、Y Forward／Z Up，STL 無單位標記，座標按 mm 解讀；保留 world Z 11～17，尚未切片或核對落床方向。版本及空白試配表見同名 journal；0.4 總量／每側 0.2 仍為幾何試驗，printed／fit_tested false，實體讀值及合格間隙 null。不改 progress、不登記為學員檔案、不把本次操作完成推成整個 05-06 或實體階段完成。05-05 的「未匯出」敘述是當時狀態。
-- 最新已完成 06-01 **定位榫幾何示範**（`2026-10-25-lesson06-tenon-demo-v006`）：從 05-05 來源同 hash 副本建立直徑 4／高 30 mm、32 段圓柱，中心 (23,13,1.5)，建構 Z −13.5～16.5，與底板交入 0.5 mm；Union 後 Body 一體單殼、NM0、genus0，原殼 60 × 40 × 30／內腔基準 56 × 36 × 28／壁底 2 保留，含柱整高 31.5。Lid 用同相位 32 段、直徑 4.4／高 10、中心 (23,13,16) 的工具 Difference，孔穿蓋板 Z15～17，原環唇保留，Lid 單殼 NM0／genus1。名義直徑總差0.4／單邊0.2為助教試驗，實際最小法向 gap0.199036213731、對邊總差0.398074942817、phase0、嵌入1.5／柱頂餘0.5 mm。新場景 `u06_locating_tenon_v001.blend` 105466 bytes、hash f94dc6c5…ec51040f，另存重開驗證；原來源／副本 hash ab08f331…fbed6ff 不變。20 張原始實拍，原柱／切割體與四份 world mesh、七份執行快照可追溯。v001～v005 中止資料保留未發布，原因見同名 journal；Object 搜尋已用獨立探測與實際指標讀回確認；Exact Boolean 孔底33 samples中有1共線分割點、仍32角，檢查保留1e-4原門檻，並驗每個原sample落在實際facet線段，不能接受任意點數或用凸包藏缺陷。未匯出STL／切片／列印／試配，實體結果、合格值 null；不改progress、不登記助教檔為學員成果。單圓柱本身不完全限制旋轉，與既有矩形唇邊配合定位。
-- 最新已完成06-02 **燕尾滑蓋幾何部分**（`2026-10-25-lesson06-dovetail-demo-v002`）：從原04盒hash b918ee87…afcd2530的同hash副本另建分支，06-01定位柱與舊環唇會阻擋滑入，未沿用它們或覆寫舊版。Body外形60 × 40 × 30；加厚工具兩條60 × 6 × 5、Y±17、Z10～15，局部盒口56 × 28，原頂部側壁確有切槽修改。槽工具長62、底寬3.6／頂寬2、Z11.8～15.8；最終槽只到盒頂Z15，深3.2／頂口2.32，兩端貫通；導軌最薄水平肉厚約1.2、底部web1.8。榫工具長60、底寬3.12／頂寬1.76、Z12～15.4，與蓋板交入0.2；最終蓋板Z15.2～17.2、外露榫到15.2深3.2，SlidingLid整體60 × 40 × 5.2。Body64v124tri、體積16655.36032775877；Lid36v68tri、5752.3201428222455，均NM0／一體閉合／genus0。水平總差0.4／每側0.2為試驗，斜率0.2距垂直約11.3099°；理想法向0.196116135，實網格最小法向0.19611411961014766／水平0.19999793767925667，須分欄，不把文字概算當原始讀值。X+30仍咬合30，+62完全脫離端距2；實際移動網格與連續截面驗證通過，已回X0保存重開。新場景 `u06_dovetail_slide_v001.blend` 106782 bytes、hash b7da592c…71ae0c3e；24原圖／8raw meshes／8scripts snapshots，同名journal可追溯。v001漏列原盒內端X±28各968mm²致驗證中止（7圖+1錯誤），修正檢查後才以v002重跑，不放寬EPS；另UI probe 6圖不發布。這版無端擋／止退；Overhang介面、STL／切片／列印／試配未做，實體及合格值null，不改progress。成對工具Item Dimensions為總外框，Location為第一條建構原點；組裝/行程圖activeBody，側欄尺寸屬Body。
-- 最新已完成06-03 **燕尾Body／SlidingLid STL匯出與數位核對部分**（`2026-10-25-lesson06-dovetail-export-demo-v001`）：來源06-02v002場景hash b7da592c…71ae0c3e與開啟副本均不變。每次重開副本後plain Outliner單選目標、隱藏另一件，三Tools保持hidden；Selection Only開、Scale1、Scene Unit關、Binary、Y Forward／Z Up，各匯出v001。Body `u06_dovetail_body_v001.stl` 6284 bytes／124tri／60 × 40 × 30，hash747e6186…f8ab4586；Lid `u06_dovetail_lid_v001.stl` 3484 bytes／68tri／60 × 40 × 5.20000076294，hash43659761…113ee713。實檔與source fullprofile/planes/volume/rays對照及空白mm場景實際重匯入皆通過；兩者一體閉合／NM0／genus0，完整有向三角面座標與來源一致。四份raw、九份腳本、25原圖可追溯。重匯入用UI命名Body_STL／SlidingLid_STL，Item只首件匯入後切一次；STL頂點保留world座標，兩匯入物件origin0，不要求Lid沿用原origin16.2。組合讀回水平min0.199997937679／normal0.196114119610、垂直約0.2 mm。只輸出STL，不另存blend；Body Z−15～15／Lid12～17.2保留，尚未落床、Overhang或切片。本次未匯出06-01定位榫，列印／試配／實測及合格值仍null，0.4水平總差／每側0.2是試驗。metadata/source hash、下載與試配空表見同名journal及export-manifest-v001.json；進度revision5不變。檢查器不以來源三角面數或signature硬綁三角化，允許合法重新索引/細分，但必核完整語義剖面與來源。checker暫存封裝fixture不是正式STL；正式件均由UI原生匯出。06-02的「未匯出」屬當時歷史狀態。
-- 最新已完成 07-01 **懸臂卡扣參數與估算條件整理**（`2026-10-25-lesson07-parameters-demo-v001`）：從原04盒 hash b918ee87…afcd2530 的同 hash 副本建立只有原盒的卡扣參考分支，沒有繼承燕尾導軌、定位柱或 0.4 mm 燕尾間隙，也尚未建立卡扣臂。12張原始實拍，實際UI選盒口環面、內底及外底，world Y −20～−18／內底Z−13／外底Z−15；原盒60 × 40 × 30、內腔56 × 36 × 28、壁底2、體積15552、NM0保持不變。新 `u07_snap_reference_v001.blend` 97962 bytes、hash6a6b6c03…b612d3a9，另存重開核對；參數紀錄v001綁定場景hash，六份腳本／兩份資料快照可追溯。L/h/b/R/u/δ_req/α/β/e/g/f、材料及允許應變全null，沒有代入或估裝拆力；盒壁2不當臂h、噴嘴0.4不推定線寬／間隙。Covestro PDF第9頁Table1的0.67係數及第24頁兩件變形假設、BASF根部柔度Q條件已核對，u／所需δ_req／允許δ_allow分開、ε用小數比例、Q待定非安全係數。來源facts與template版本見同名journal及source-snapshot；原廠資料不能直接認定列印件合格。列印／試配／強度與合格值留空，不confirm、不登記助教檔為學員成果；07-02建模尚未做。
-- 最新已完成07-02 **單支懸臂卡扣與局部上蓋凸緣的幾何草案**（`2026-10-25-lesson07-snap-demo-v001`）：從07-01參考版hash6a6b6c03…b612d3a9同hash副本另建，舊參數表hash57d411f2…7ac6ead未改。anchor9×4.6×3／頂Inset1.5形成直臂b6/h1.6，E19至承接Z11再E2至頂Z13；根平面Z−8至承接19、全臂21、含anchor工具24mm須分欄。外鉤向−Y突出1.2、鉤頂Bevel offset.8/1段得45°導入；臂腳兩X向凹邊Bevel offset.6/3段，真弦點擬合R約.600001500747。原生端口有12個miter三角與漸寬弦面（6→7.2），不可用理想等寬fixture冒稱實際面；工具42v80tri/vol339.484490873。Union後Body60×44.5×30、60v116tri/vol15888.784532，原盒核心60×40×30、內腔56×36×28／壁底2保留，但整件幾何確有修改。新Lid板60×46×2，蓋裙／凸緣Union後整體約60×46×7、26v48tri/vol5602.200023；兩件單殼／NM0。名義plate-rim.2、beam-ledge.3、hook-skirt.3、Y重疊.9、hook-ledge垂直.2、直臂內側空隙1.4、內根局部.8均是未變形幾何草案，不當δ_req或合格間隙。暫抬Lid12展示後已回位另存重開 `u07_cantilever_snap_v001.blend`，106700bytes/hash5fec09b9…80a26305；26原圖／5raw／7py＋3data snapshots可追溯，詳同名journal及geometry-manifest。Probev001錯Edit header/View位置、v002重按E法向軸解除約束、v003 Bevel輸入mm把OFFSET切DEPTH，保留未發布；v004與fullprobe成功未另存，正式僅mainv001發布。Edit Mode Frame選單x236非ObjectMode x184；E沿已核對面法向輸入正長度、不再重按同軸；Bevel只輸入數字並實讀offset_type。材料ε/Q/δ_req/δ_allow/力/實體/qualified全null，strength/fit/export/printflags false；不confirm、不登記助教檔為學員成果。
-- 2026-10-25 助教已完成07-03方向／Overhang比較，正式run `2026-10-25-lesson07-overhang-demo-v001`：16原圖、6raw、8py＋4data快照，從07-02同hash副本只R/G，無Apply Rotation或改形狀。Body原向落床及Ry90側放、Lid原向及Rx180翻面，四次Edit Mode專用Overlays的Mesh Analysis已實拍讀值：OVERHANG／NEG_Z／min0rad／max0.7853981852531433rad（約45.000001252°），Solid／X-Ray關。Body側放臂長及名義彎曲方向平行XY只是幾何，腔內頂壁／鉤下仍有朝下面；Lid翻面仍有約12mm²離床凸緣朝下面。床接觸面也可紅；本次0～45°為顯示範圍，不是免支撐、可列印、層間強度或配合判定。原生按polygon/BMFace法線；另算polygon與loop triangle分欄，非GPU面數，床接觸與離床朝下分開。1e-4mm／度僅數值及邊界帶，小miter原生法線與頂點重建角差另列，不當製造公差。N面板Body仍60×44.5×30，世界外框另由頂點算約30×44.5×60；兩者勿混。候選各自Z0，X投影距約35mm，未指定床幅。新 `u07_print_orientation_v001.blend` 106462bytes/hash360417f2…42ecf47d，Save As／Open重驗，原來源與工具未改；正式記錄見同名journal與print-orientation-manifest。材料ε/Q/δ/力／實體／qualified仍null，support／最終方向待定，strength/fit/STL/slicer/printflags false，不confirm、不登記助教檔。
-- 2026-10-25 助教已完成07-04既有卡扣草案兩件的STL匯出／數位核對，正式run `2026-10-25-lesson07-snap-export-demo-v001`：25原圖、4raw、10py＋4data快照。源07-03候選場景106462B/hash360417f2…42ecf47d與副本／方向record b515d433…c708986未改，不Apply Rotation、不另存blend。只選Body／Lid各匯出v001，Selection Only／Scale1／Scene Unit關／Binary／YForward／ZUp；Body5884B116tri/30×44.5×60/hash6ee4b135…1910ff8，Lid2484B48tri/約60×46×7/hashc80ea7d5…9f55c21。STL數字以mm解讀且無單位標記，保持候選world坐標（各自Z≈0、X間隔35），兩件NM0／單殼／genus0。來源Body N面板60×44.5×30且Ry90；fresh mm場景實際重匯入R0／Scale1後N面板30×44.5×60，頂點包含world位移，Location0非零件居中。core驗完整有向來源面覆蓋及逆回07-02卡扣profile，不固定tri數；純checker7項／合法細分通過，獨立STL audit另驗有向面、拓撲、source/reimport與stored normal。Probe-v001因WM STL未註冊operator history而停，保留未發布；v002全通，正式id/options/path是confirm前live File Browser讀回，再以實際新檔／重匯入mesh證執行，不能假稱有history。importer float identity參考修正防止JSON1.0被當int1誤拒，未改EPS或raw。材料ε/Q/δ/力／實體／qualified仍null，exported_stl true，其餘slicer/print/fit/strengthfalse；方向／支撐候選。07-04本次僅既有一種草案的數位準備，沒有2–3種參數試片或實體試扣；版本及trial-fit-record空表見同名journal/export-manifest，不confirm或登記助教檔為學員成果。07-03「未匯出」為當時狀態。
-- catalog 新增單元後，用 `add-lessons` 把它補進進度並建立工作區，不手改 progress.json；未補上前網頁會略過該單元的工作區。第 04～09 單元是學員核准的自編工程補充；「待定」項目要等學員提供列印條件或規格才能填，不用通用數值代替。工程單元使用 Unit Scale 0.001，匯出 STL 時 Scene Unit 不勾。
+- 本輪修正快速方法審查的兩項意見：04-06 取消選取範本、I／E／Ctrl+B 在 Object Mode 誤按的結果與復原；並盤點同範本項目。保留常規方法與既有 operationRun，既有 Blender 5.2.1 證據足夠就沿用，僅缺證據處用獨立 Blender 補驗／補拍，輸出到新 evidence 資料夾。不改原圖、舊 run／metadata、既有場景／STL、progress 或學員狀態，不寫 workspaces、不 confirm、不 stage／commit／push。每個快捷鍵列模式、焦點、單位與相對／絕對差別，未驗不寫成已驗；新註記／清單另存 v002，舊版本不回填。
+- **助教示範位置：** 已示範至 08-01 參數整理；08-02 尚未建模或實拍。原學員「1.2.憶起」被助教理解為兩路線並學，僅屬教材歷史，未定標準、尺寸、間隙、材料或硬體。見 [08-01](learning/journal/2026-10-25-lesson08-parameters-demo-v001.md)、[路線紀錄](learning/journal/2026-10-25-thread-route-decision-v001.md)。
+- **學員確認位置：** 本 clone 於 2026-10-27 開工 `manage.py status` 讀得 revision 6、單元 01／01-01、未確認任何步驟、未登記學員檔案；這只是一次讀值，不維護另一份進度，也不代表新 clone。每次接續重讀 progress/status；本次不改。
+- 最新交接：[2026-10-27 快速方法情境修正](learning/journal/2026-10-27-shortcuts-handoff-v002.md)；前輪：[快速方法補充](learning/journal/2026-10-27-shortcuts-handoff-v001.md)、[語義與分類修正](learning/journal/2026-10-27-evidence-semantics-handoff-v001.md)。Claude 轉交的快速方法審查通過及兩項修正意見記於新交接，不改歷史紀錄。
 
-- 2026-10-25 助教已完成07-05卡扣單參數臂長幾何對照，正式run `2026-10-25-lesson07-coupons-demo-v001`：24原圖／7raw／11py＋5data快照。由07-03固定scene的隱藏SnapTool各自Shift+D建立獨立A_L19／B_L17／C_L21；原上端14點移動0／−2／+2mm，其餘28點、錨座、b6/h1.6/u1.2與原生根部miter保留。實幾何L19／17／21、全臂21／19／23、含錨座整件24／22／26分欄；不是力學有效L。來源4件形狀與matrix保持、final hidden；新B/C確有幾何修改，A為原草案參照。Ry90未Apply、Location(0,−12/0/12,4.5)，world XYZ約24/22/26×4.6×9，N物件軸仍9×4.6×24/22/26；三件closed shell1/NM0/42v/41poly80tri，鄰Ygap7.39999986。只有anchor側面bed約13.8mm²，beam最低1.5/root部分0.9mm，不加底座、不判支撐或可印。Mesh Analysis原生checkbox已關，無新Overhang或STL。新scene `u07_cantilever_length_coupons_v001.blend` 108728B/hash22072532…b82e9b8另存重開；coupon-record1180c519…127c01d，原scene／07-04STL及舊空表未改。逆回原形held_geometry_readback含L19/bearing11/armTop13只是baseline，變體尺寸必讀頂層L_geometry_mm等。獨立anchor未重現整盒／夾持／配對件／相對定位，舊Lid不是B/C既定對件；所有材料ε/Q/有效L/δ/力/實體/改善/qualified保留null，slicer/print/fit/strength/improvement_assessed false，不confirm、不登記助教檔為學員成果。版本見同名journal／geometry-manifest／新trial-fit-record；探測probe-v001成功20圖但不發布、不另存。07-04「沒有多參數試片」為當時歷史狀態。
+## 協作規則
 
-- 2026-10-25 助教已追加07-05三試片STL數位匯出，正式run `2026-10-25-lesson07-coupon-export-demo-v001`：36原圖／6raw／12py＋7data。來源coupon場景108728B/hash22072532…b82e9b8、coupon-record1180c519…127c01d與plan35905a85…03dd33及讀取副本未改；每件重新Open副本，單選A_L19／B_L17／C_L21、隱藏其他兩件及原4件，保留Ry90／world姿態，Selection Only開、Scale1、Scene Unit關、Binary／YForwardZUp。三v001各4084B/80tri，A世界24×4.6×9/hashbb40b5f6…62af168，B22×4.6×9/hashac0f9ca9…16d017a，C26×4.6×9/hash1e3bb7cb…3083788；各closed shell1/NM0。STL無單位或rotation metadata，本次以mm解讀，helper引用來源Ry90只供逆姿態驗形；fresh mm場景原生Import後Loc0/R0/Scale1、N尺寸等world外框，不能當成來源Apply了Rotation。每件完整有向表面／逆L幾何與真重匯入均核對，允許合法細分/reindex；原生File Browser確認前live options加實檔證執行，不補造history。anchoronlybed13.8、beam最低1.5/root部分.9及Ygap約7.4保留，不判支撐或床幅。exported_stl true／saved_new_scene false／geometry_modified false；new_geometry_created false只指未新增試片設計，reimport_mesh_datablocks_created true、new_specimen_design_created false明列。未改原source7件shape/matrix/data，不另存blend；新trial-fit-record只綁此三STL，舊geometry run/record/blank及舊STL不覆寫。fixture/counterpart/datum/effectiveL/materialε/Q/δ/force/physical/improvement/qualified全null，slicer/print/fit/strength/improvement_assessed false。網頁同07-05追加，previousOperationRuns保存原24events，couponReview幾何值維持，只釐清「未STL」歷史時態並連新空表；總52步不增加、不改progress、不confirm或登記助教輸出為學員成果。完整probe-v001成功36圖但未發布，正式重跑不沿用probe檔；版本見新同名journal/export-manifest。07-05原幾何階段「未STL」是當時狀態。
+1. 開工先讀最新交接 journal、README、catalog、progress 及相關 journal，再執行 `python learning/manage.py status`，以最新狀態與學員畫面為準。
+2. 本次 Codex 負責實作、測試與單一發布窗口，Claude 負責審查；Codex/root 統整註記與 catalog，模式驗證負責人執行獨立 Blender，盤點負責人只寫新審查註記，測試負責人改套用工具／測試；各範圍與實際檔案寫入交接。
+3. catalog 只由 Codex/root 這一位負責者整合發布；本次發布僅限工作樹，未獲新指示不得 commit 或 push。
+4. 寫入前重讀最新檔案及所需 revision；遇衝突先停、核對，不盲目重試，不覆寫對方變更。
+5. 不同時執行會重建 catalog 或 metadata 的匯入／發布程式；先完成並核對版本化註記，再依序更新匯入器、catalog、前端及驗證。
+6. 收工寫交接 journal，列實際變更、驗證範圍、未完成、失敗版本與下一步；改到對方程式時另列修改理由。
+7. 截圖、程式讀回、幾何檢查、學員理解與實體合格分別列依據；未分類顯示「觀察紀錄」，固定文字顯示「文字描述，請對照原圖」，混合紀錄另標，不靠句型猜測。
 
-- 2026-10-25 助教已完成08-01螺紋規格／建模參數整理，正式run `2026-10-25-lesson08-parameters-demo-v001`：12原圖／2raw＋3實選面／6py2data。從原04盒b918ee87…afcd2530同hash副本建Body_Reference，Camera/Light保留hidden；原形60×40×30／內腔56×36×28／壁底2、16v28tri/shell1/vol15552/NM0、matrix/localmesh保持。盒口前rim為原生梯形面積116非bbox120，內底Z−13／外底−15；單面LocalMedian與world在此identity物件一致，不能普遍化到有transform者。新u08_thread_reference_v001.blend97955B/hash9bda36c1…5589d8f另存重開；parameter-record0f858377…699229a綁新scene、template原source_scene保留relative，另source_scene_readback填absolute/hash/bytes，不覆寫模板。plan92c0bf94…0d79bb／facts78a0b7b1…b67834已凍結，24draft_parameters全null/draft_pending，route.selectednull；自訂列印僅助教候選，沒有選定標準M規格／公差或硬體型號。Screw設定全null、無modifier/thread/boss/導孔/對件／數值計算／STL。官方精確build9e2066 MOD_screw.cc核ObjectScrew關下總角θI/位移SI、每轉lead2πS/θ（θ≠0），只有Angle360且單線才Screw=lead=pitch，Iterations不是starts；Viewport/Render分段和封口須後續實讀，Merge不自動封非零lead牙端，Smooth不加幾何。ISO僅讀摘要，不能宣稱已查完整標準或選規格。05只有幾何試驗點無合格間隙可轉用；08-02只修正這兩處定義和待實作文字，不冒稱已有建模／實拍。材料/路線/尺寸/間隙/硬體/扭矩/荷載/physical/qualified留null、建模/calcs/strength/fit/printflags false，不confirm或登記助教檔；版本見同名journal／parameter-manifest／新trial-fit-record，原probe成功12圖但不發布。發布基線只允許08-01及08-02概念補正，總52steps、progress revision5不改。
+## 教學與真實畫面
 
-## 進度與版本
+- 每回合一個小目標、1–3 個操作及可見成功條件；學員回報後才往下，這是學習節奏而非重新索權。初次請學員開 Blender 並回報畫面，不假設首次設定、預設場景或已存檔；保留既有作品與未存內容。
+- 操作前交代編輯區、模式、選取物件與輸入位置；卡關縮為一個操作，核對模式、選取、視角、焦點。按鈕名稱依當前截圖，不猜翻譯；未核對名稱明示以學員截圖為準。
+- 不製作或引用示意圖。`figures` 只用 evidence 內真實存在的 `type: screenshot` 原圖，保留日期、原始像素、版本、來源 metadata；無圖只寫文字。局部放大或座標框須連回原圖，不重畫介面；看到圖不代表已操作或理解。
+- 步驟依可讀聊天、catalog、journal、progress、evidence 及 sources/manifest.json 交叉核對；更新前讀相關文件與所有相關 journal、來源及實際畫面，`contentReview` 列範圍與依據。不將未實作寫成全驗證，或把助教建議寫成學員決定。
+- 原則由學員操作；未經要求不代建模型、不外部改寫正開啟的 .blend、不把助教檔當學員成果。已授權的助教逐步實作須把一個目標做到可核對結果，不每按鈕索取回覆；逐次保存動作、原圖、結果，完成後更新 `operationRun`／journal。示範操作、介面觀察、學員確認分開，不由示範授權推定語言選擇、學員完成或可覆寫檔案。
 
-- `learning/progress.json` 是唯一完成狀態；journal 記脈絡，catalog 記課程定義。不得在其他文件或對話摘要維護獨立完成度。
-- 初始建立後，進度一律透過 `manage.py` 的鎖定、revision 與原子寫入更新，不直接編輯 JSON。每次寫入前重新讀 revision；衝突先核對，不盲目重試。寫入鎖被占用時工具最多等 3 秒；仍忙碌就不寫入（網頁回 503），稍後重新 `status` 再操作。
-- 只有學員明確回報當前步驟完成，才用 `confirm`。建立資料夾、發現檔案或核對工具結果，都不能代替學員確認。
-- `confirm --evidence` 記學員的實際回報；只有實際取得截圖或檔案結果時才寫入那些證據。檔案驗證與學員理解分開記錄。
-- 練習保存在 `learning/workspaces/<單元>/`。重大檢查點用 `v001`、`v002` 等，先在 Blender 存檔，再用 `register-file` 登記 SHA-256。尚未登記的工作版本可繼續儲存；已登記檢查點以新版本另存，不覆寫。
-- `register-file` 只登記已存在的檔案，不寫入 `.blend`。圖像與列印輸出需關聯已登記的場景版本；場景變更時另存版本再產出，避免輸出對錯來源。
-- 重學、封存或搬移學員成果時，依其要求執行並保留可恢復資料；備份位置未決定前，不自行上傳到雲端。自動存檔及 `.blend1` 不代替正式備份。
+## 獨立 Blender 與證據
 
-常用命令（在專案根目錄；`<n>` 改為最新 revision）：
+- 示範預設走 `learning/tutor/`：`python learning/tutor/run_demo.py <劇本> <新 evidence 資料夾>`，獨立 Blender 事件模擬，不搶實體滑鼠；第二單元起共用 `scenarios/common.py`。僅學員要求核對自己的視窗或個別卡關時才考慮 Windows Computer Use。
+- 逐步原生截圖與讀回，匯入器驗證後才寫 `operationRun`。輸出限 evidence 且拒非空資料夾；失敗資料保留，新執行版不覆寫舊圖。檔案瀏覽器欄位直接設值，實際存檔前驗證在本次 demo-files；禁止示範寫 workspaces，不截個人預設資料夾。
+- runner 前後遞迴比對工作區路徑與雜湊並存 runner-status；變更先查來源，可能是學員同時儲存。`workspaceContentsUnchanged`／舊 `workspacesUnchanged` 只表示前後內容比較，不證明未曾寫入或辨認寫入者，不反推 `learnerWorkspaceWrites`。01～04 舊執行器僅比第一層檔名、未存前後雜湊，無證據欄位為 null；另留版本化更正、不回填原 run／metadata。
+- Windows Recent 僅清理本次新增且目標在本次 run 的捷徑，保留候選與清理結果，不掃整個 evidence。分類註記綁 run、step、原圖路徑／SHA-256、理由及來源程式位置；保留原證據與舊基線，新修改另驗證。
+- 延續對應幾何時必讀下列 journal 的原始讀值、限制與失敗原因：數值門檻不是製造公差；不可放寬 EPS、用凸包／任意點數隱藏缺陷。檢查實際 facet／原生 miter 與完整語義剖面，允許合法細分／重索引，不硬綁三角面數或用理想 fixture 冒充實體輸出；checker fixture 不等於正式 STL。
+- UI N 面板／物件軸、Local Median、world 外框、幾何長度／力學有效長度及理想值／實讀值須分欄；baseline 讀值不冒充變體。File Browser 確認前 live options 加實檔／真重匯入作證，不補造 operator history，不把重匯入 R0 當來源 Apply Rotation。
+
+## 唯一進度與版本
+
+- `learning/progress.json` 是唯一完成狀態；journal 記脈絡、catalog 記定義，其他文件／對話不維護獨立完成度。網頁與聊天共用 manage.py；`Start-Learning.cmd`／`Stop-Learning.cmd` 啟停，預設 8766（避開 KiCad 8765）。網頁已確認時讀最新狀態、不重複確認。
+- 初始建立後只用 manage.py 鎖、revision、原子寫入，不手編 progress。寫鎖最多等 3 秒，仍忙不寫（網頁 503），稍後 status。新增 catalog 單元用 `add-lessons` 同步進度與工作區，未補前網頁會略過工作區。
+- 只有學員明確回報當前步完成才 `confirm --evidence`；如實記回報，僅取得實際截圖／檔案時才記該證據。資料夾、檔案、示範或工具核對不能代替確認，檔案驗證與理解分開。
+- 練習放 `learning/workspaces/<單元>/`；重大檢查點先在 Blender 存 v001／v002，再 `register-file` 登記既有檔 SHA-256（命令不寫 .blend）。未登記工作版可續存，已登記版另存新版本；圖像／列印輸出關聯該場景版本，場景改版後重產。
+- 重學、封存／搬移依要求保留可恢復資料；備份位置未定不自行上雲。自動存檔／.blend1 非正式備份。`note` 預設 tutor，僅逐字記學員原話才 `--author learner`；網頁筆記為 learner，舊無 author 顯示「未標示作者」。01-02 confirm 依 setsLearner 記語言，`set-interface-language` 僅更正、不確認步驟；常用命令見下方，[原文快照](learning/journal/2026-10-27-agents-history-v001.md)另留歷史範例。
+
+常用命令如下（範例不是本輪執行授權）。`--revision <n>` 必須用剛從 `status` 讀得的 revision，讓寫入拒絕過期狀態；衝突先停下核對，不盲目重試。`--author tutor` 用於助教筆記，只有逐字記學員原話才改為 `learner`。
 
 ```text
 python learning/manage.py status
-python learning/manage.py confirm --lesson 01 --step 01-01 --revision <n> --evidence "學員的實際回報"
-python learning/manage.py note --lesson 01 --revision <n> --note-file <UTF8筆記檔>
+python learning/manage.py confirm --lesson 01 --step 01-01 --revision <n> --evidence "學員明確回報完成的原話"
+python learning/manage.py note --lesson 01 --revision <n> --author tutor --note-file <UTF8筆記檔>
 python learning/manage.py register-file --lesson 01 --revision <n> --path learning/workspaces/01/u01_basics_v001.blend --role source_scene
-python learning/manage.py set-interface-language --revision <n> --language en --evidence "學員回報或截圖所見"
 python learning/manage.py add-lessons --revision <n> --reason "加入單元的依據"
+python learning/tutor/run_demo.py <劇本名稱> <全新的learning/evidence輸出資料夾>
 ```
 
-`note` 預設記為助教（`author: tutor`）；只有逐字記錄學員原話時才加 `--author learner`。網頁筆記一律記為學員；先前沒有 author 的舊筆記，頁面顯示「未標示作者」。
+## 來源與工程判定
 
-01-02 確認時會依 catalog 的 `setsLearner` 自動記錄介面語言；`set-interface-language` 只用來更正（例如學員改回中文），不確認任何步驟。
+- SECourses 第一講只作基本操作、場景建模與渲染來源；毫米方塊、盒體及 04～09 是學員核准自編工程補充，不冒稱原講內容。原教材／個人練習分開，下載時更新 sources/manifest.json 的實際來源、commit、時間、雜湊、授權；未下載／開啟不稱已驗證。
+- 分清名義尺寸、允許偏差、配合間隙、實測尺寸；間隙標總量／單邊，水平／法向／直徑差不混。工程場景 Unit Scale 0.001，STL Scene Unit 不勾；STL 無單位標記，本教材按 mm 解讀，須核尺寸與來源。0.4 mm 噴嘴不推線寬、材料或合格間隙；0.1～0.6／0.4 mm 僅草案試驗點，不是待重選或已合格範圍。
+- 列印法、材料、方向、校正、規格與待定值等有依據再填，不代通用值。圖像、讀回、幾何、切片、列印、量測、試配、理解、改善與強度／配合合格各需證據；實體及合格欄位留空，方向／支撐仍候選，不由渲染、閉合網格或數位匯出推定可印／合格。
+- 卡扣 u／δ_req／δ_allow、幾何 L／有效 L 分開，ε 用小數比例，根部 Q 待定且非安全係數，盒壁厚不代臂厚；原廠條件不直接判列印件合格。獨立試片不等同完整夾持／對件，舊上蓋不自動成變體對件；調參非已證改善。
+- Screw 的總角／位移、lead／pitch／starts／Iterations 分清；只在 Angle 360° 且單線等對應條件下 Screw=lead=pitch，Merge 非自動封非零 lead 牙端、Smooth 不加幾何，分段／封口待實讀。ISO 僅核摘要，不稱完整標準或已選公差表。
+- 審查指出凹點薄肉、環唇加柱重複定位與燕尾朝下懸面風險；風險不等於已印失敗。舊「未做」按當時時點讀；新增 auditReview 不覆寫歷史 operationRun。作者報告只走 `/reports` 靜態路由，`/files` 仍拒 HTML／CSS，不擴大任意檔執行。
 
-## 教材與工程方向
+## 已執行示範索引（助教歷史，不是學員完成表）
 
-- SECourses 第一講是基本操作、場景建模與渲染來源；毫米尺寸方塊、通用小盒及工程結構是補充／後續內容，不能冒稱都出自第一講。
-- 原教材與個人練習分開。下載教材時更新 `sources/manifest.json`，記錄實際來源、commit、時間、檔案雜湊與授權狀態；未下載或未開啟的不寫成已驗證。
-- 工程練習需區分名義尺寸、允許偏差、配合間隙與實測尺寸。間隙標明單邊或總量；列印方法、材料、方向及校正條件在相關練習時再確認，不先填假資料或通用合格數值。
-- 圖像成功、檔案檢查、切片核對、實際列印及裝配試驗各有自己的證據；不得由渲染成功推論可列印或配合合格。
+以下每項只列摘要；尺寸、雜湊、版本、空表、失敗 run 與檢查限制保留於連結 journal／evidence 及原文快照，延續前須讀。
 
-- 2026-10-25 學員回覆螺紋路線原話「1.2.憶起」，助教理解為「1、2 一起」，即自訂列印螺紋與金屬螺絲／熱熔螺母兩條都學，選擇以learning/evidence/08/2026-10-25-thread-route-decision-v001/route-decision-v001.json另記。這只是後續學習路線，不代表選定標準、尺寸、間隙、材料或硬體；不代表已做08-02或學員完成。原08-01 plan/parameter/operationRun的route null是選擇前歷史狀態，凍結保留；網頁current routeSummary及manage.py助教筆記記本次理解。
-
-- 2026-10-25 已接續Claude審查，正式索引learning/evidence/audits/2026-10-25-claude-continuation-v001/report-v001.json、journal 2026-10-25-claude-continuation-audit-v001.md。05～08已發布311路徑/288不同SHA逐圖、11scene與10STL獨立讀核；保留原圖／run／來源／progress revision6。三項需延續說明：05-03凹點間約0.4mm薄肉不等於噴嘴線寬已知；06-01環唇加柱可能重複定位，30mm建構／29.5mm幾何露出非力學有效L；06-02/03朝上盒體導軌每側56×4、共448mm²朝下露出面，非60工具長×4×2。支撐／方向待定、不判可印／強度／配合合格。九處auditReview補充不覆寫歷史operationRun；報告HTML走作者靜態/reports路由，/files維持拒HTML/CSS，不為報告擴大任意檔案執行。
+- 01／02／03／04：基礎、毫米方塊、渲染及原盒；[01](learning/journal/2026-10-22-lesson01-demo-v001.md)、[02～03](learning/journal/2026-10-22-lesson02-03-demo-v001.md)、[04](learning/journal/2026-10-22-lesson04-demo-v001.md)。
+- 介面語言：原學員 2026-10-22 切 English (US)、Preferences saved；[實際操作](learning/journal/2026-10-22-interface-language-execution-v001.md)，不是新讀者設定。
+- 05-02：插銷幾何與重開驗證；[journal](learning/journal/2026-10-22-lesson05-demo-v002.md)。
+- 05-03：六孔總間隙試驗點與凹點，不含試配；[journal](learning/journal/2026-10-22-lesson05-holes-demo-v002.md)。
+- 05-04：插銷／孔板 STL 與補充尺寸實拍；[journal](learning/journal/2026-10-22-lesson05-export-demo-v003.md)。
+- 05-05：環唇上蓋幾何草案；[journal](learning/journal/2026-10-22-lesson05-lid-demo-v001.md)。
+- 05-06：上蓋 STL 數位核對，未落床切片；[journal](learning/journal/2026-10-25-lesson05-lid-export-demo-v001.md)。
+- 06-01：定位榫幾何與孔間距，非旋轉全約束；[journal](learning/journal/2026-10-25-lesson06-tenon-demo-v006.md)。
+- 06-02：燕尾滑蓋幾何與行程，無端擋／止退；[journal](learning/journal/2026-10-25-lesson06-dovetail-demo-v002.md)。
+- 06-03：燕尾兩件 STL 數位核對；[journal](learning/journal/2026-10-25-lesson06-dovetail-export-demo-v001.md)。
+- 07-01：懸臂卡扣參數與估算條件，材料／應變待定；[journal](learning/journal/2026-10-25-lesson07-parameters-demo-v001.md)。
+- 07-02：單臂／局部上蓋幾何草案與原生根部；[journal](learning/journal/2026-10-25-lesson07-snap-demo-v001.md)。
+- 07-03：方向與 Overhang 顯示比較，非免支撐判定；[journal](learning/journal/2026-10-25-lesson07-overhang-demo-v001.md)。
+- 07-04：既有卡扣兩件 STL 數位核對；[journal](learning/journal/2026-10-25-lesson07-snap-export-demo-v001.md)。
+- 07-05：三臂長試片幾何及 STL，非已證改善；[幾何](learning/journal/2026-10-25-lesson07-coupons-demo-v001.md)、[匯出](learning/journal/2026-10-25-lesson07-coupon-export-demo-v001.md)。
+- 08-01：原盒參照、參數與兩路線歷史，08-02 仍未做；[參數](learning/journal/2026-10-25-lesson08-parameters-demo-v001.md)、[路線](learning/journal/2026-10-25-thread-route-decision-v001.md)。
+- 05～08 審查：逐圖／場景／STL／來源核對與三項工程風險；[journal](learning/journal/2026-10-25-claude-continuation-audit-v001.md)、[正式索引](learning/evidence/audits/2026-10-25-claude-continuation-v001/report-v001.json)。

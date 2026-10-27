@@ -1,0 +1,335 @@
+{
+  "schemaVersion": 1,
+  "kind": "native_keyboard_emulation_verification",
+  "runId": "2026-10-27-shortcuts-keyboard-demo-v002",
+  "recordedAt": "2026-10-27T00:28:27.847612+00:00",
+  "blender": "5.2.1 LTS",
+  "buildHash": "9e2066aef7ef",
+  "factoryStartup": true,
+  "eventSimulate": true,
+  "cases": [
+    {
+      "case": "main-one-no-emulation",
+      "events": [
+        "ONE"
+      ],
+      "expected": "Initial user-perspective view unchanged",
+      "actual": {
+        "viewPerspective": "PERSP",
+        "viewRotation": [
+          0.7123758792877197,
+          0.4410620927810669,
+          0.28735825419425964,
+          0.4641229212284088
+        ],
+        "viewLocation": [
+          -0.020693248137831688,
+          -0.04602546989917755,
+          0.0006694307667203248
+        ],
+        "viewDistance": 18.38804817199707,
+        "emulateNumpad": false,
+        "selected": [
+          "Cube"
+        ]
+      },
+      "passed": true,
+      "screenshot": {
+        "path": "01-06-01-main-one-no-emulation.png",
+        "sha256": "e13488de369a02a0437d128539be91c82e2941e5d93b43f48052bd063056d676",
+        "width": 1494,
+        "height": 1019,
+        "recordedAt": "2026-10-27T00:28:13.046Z"
+      }
+    },
+    {
+      "case": "numpad-one-front",
+      "events": [
+        "NUMPAD_1"
+      ],
+      "expected": "Front orthographic",
+      "actual": {
+        "viewPerspective": "ORTHO",
+        "viewRotation": [
+          0.7071067690849304,
+          0.7071067690849304,
+          -0.0,
+          -0.0
+        ],
+        "viewLocation": [
+          -0.020693248137831688,
+          -0.04602546989917755,
+          0.0006694307667203248
+        ],
+        "viewDistance": 18.38804817199707,
+        "emulateNumpad": false,
+        "selected": [
+          "Cube"
+        ]
+      },
+      "passed": true,
+      "screenshot": {
+        "path": "01-06-02-numpad-one-front.png",
+        "sha256": "dc5f58b6c89337c9fc28c5f171a95d46d6a260e5110ed162e7fa372750b8529f",
+        "width": 1494,
+        "height": 1019,
+        "recordedAt": "2026-10-27T00:28:14.746Z"
+      }
+    },
+    {
+      "case": "numpad-three-right",
+      "events": [
+        "NUMPAD_3"
+      ],
+      "expected": "Right orthographic different from front",
+      "actual": {
+        "viewPerspective": "ORTHO",
+        "viewRotation": [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "viewLocation": [
+          -0.020693248137831688,
+          -0.04602546989917755,
+          0.0006694307667203248
+        ],
+        "viewDistance": 18.38804817199707,
+        "emulateNumpad": false,
+        "selected": [
+          "Cube"
+        ]
+      },
+      "passed": true,
+      "screenshot": {
+        "path": "01-06-03-numpad-three-right.png",
+        "sha256": "54ceae9599edf522d15b0858e1c9856f83bfa1506d2bfa14f7eeba299809956e",
+        "width": 1494,
+        "height": 1019,
+        "recordedAt": "2026-10-27T00:28:16.546Z"
+      }
+    },
+    {
+      "case": "emulate-checkbox-before",
+      "events": [
+        "F3",
+        "Preferences",
+        "RET"
+      ],
+      "expected": false,
+      "actual": {
+        "viewPerspective": "ORTHO",
+        "viewRotation": [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "viewLocation": [
+          -0.020693248137831688,
+          -0.04602546989917755,
+          0.0006694307667203248
+        ],
+        "viewDistance": 18.38804817199707,
+        "emulateNumpad": false,
+        "selected": [
+          "Cube"
+        ]
+      },
+      "passed": true,
+      "screenshot": {
+        "path": "01-06-04-emulate-checkbox-before.png",
+        "sha256": "69e216564052458e430d7a1d39fad6bd5cb4cc64ed53fa55eec3135256cd7b50",
+        "width": 840,
+        "height": 550,
+        "recordedAt": "2026-10-27T00:28:18.946Z"
+      }
+    },
+    {
+      "case": "emulate-checkbox-after",
+      "events": [
+        "CLICK",
+        466,
+        44
+      ],
+      "expected": true,
+      "actual": {
+        "viewPerspective": "ORTHO",
+        "viewRotation": [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "viewLocation": [
+          -0.020693248137831688,
+          -0.04602546989917755,
+          0.0006694307667203248
+        ],
+        "viewDistance": 18.38804817199707,
+        "emulateNumpad": true,
+        "selected": [
+          "Cube"
+        ]
+      },
+      "passed": true,
+      "screenshot": {
+        "path": "01-06-05-emulate-checkbox-after.png",
+        "sha256": "65bdd2277c262727618ab05fb38531c55516590581977a2a753c88f12edda240",
+        "width": 840,
+        "height": 550,
+        "recordedAt": "2026-10-27T00:28:20.047Z"
+      }
+    },
+    {
+      "case": "main-one-emulated-observation",
+      "events": [
+        "ONE"
+      ],
+      "expected": "Observe whether simulated ONE matches NUMPAD_1; the previous v001 assertion failed",
+      "actual": {
+        "viewPerspective": "ORTHO",
+        "viewRotation": [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "viewLocation": [
+          -0.020693248137831688,
+          -0.04602546989917755,
+          0.0006694307667203248
+        ],
+        "viewDistance": 18.38804817199707,
+        "emulateNumpad": true,
+        "selected": [
+          "Cube"
+        ]
+      },
+      "passed": null,
+      "screenshot": {
+        "path": "01-06-06-main-one-emulated-observation.png",
+        "sha256": "54ceae9599edf522d15b0858e1c9856f83bfa1506d2bfa14f7eeba299809956e",
+        "width": 1494,
+        "height": 1019,
+        "recordedAt": "2026-10-27T00:28:22.447Z"
+      }
+    },
+    {
+      "case": "main-one-unicode-observation",
+      "events": [
+        "ONE unicode=1"
+      ],
+      "expected": "Observe result; no promotion of setting-on to effective emulation",
+      "actual": {
+        "viewPerspective": "ORTHO",
+        "viewRotation": [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "viewLocation": [
+          -0.020693248137831688,
+          -0.04602546989917755,
+          0.0006694307667203248
+        ],
+        "viewDistance": 18.38804817199707,
+        "emulateNumpad": true,
+        "selected": [
+          "Cube"
+        ]
+      },
+      "passed": null,
+      "screenshot": {
+        "path": "01-06-07-main-one-unicode-observation.png",
+        "sha256": "54ceae9599edf522d15b0858e1c9856f83bfa1506d2bfa14f7eeba299809956e",
+        "width": 1494,
+        "height": 1019,
+        "recordedAt": "2026-10-27T00:28:24.347Z"
+      }
+    },
+    {
+      "case": "main-period-pivot",
+      "events": [
+        "PERIOD"
+      ],
+      "expected": "Inspect native Pivot Point popup",
+      "actual": {
+        "viewPerspective": "ORTHO",
+        "viewRotation": [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "viewLocation": [
+          -0.020693248137831688,
+          -0.04602546989917755,
+          0.0006694307667203248
+        ],
+        "viewDistance": 18.38804817199707,
+        "emulateNumpad": true,
+        "selected": [
+          "Cube"
+        ]
+      },
+      "passed": null,
+      "screenshot": {
+        "path": "01-06-08-main-period-pivot.png",
+        "sha256": "6d924407248acfb8052c9fa9dbff489a0d7c50dcb425bc149d92c8a7fd431c6b",
+        "width": 1494,
+        "height": 1019,
+        "recordedAt": "2026-10-27T00:28:25.247Z"
+      }
+    },
+    {
+      "case": "numpad-period-framed",
+      "events": [
+        "NUMPAD_PERIOD"
+      ],
+      "expected": "View distance changes to frame Cube",
+      "actual": {
+        "viewPerspective": "ORTHO",
+        "viewRotation": [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "viewLocation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "viewDistance": 2.650333881378174,
+        "emulateNumpad": true,
+        "selected": [
+          "Cube"
+        ]
+      },
+      "passed": true,
+      "screenshot": {
+        "path": "01-06-09-numpad-period-framed.png",
+        "sha256": "fd8934a3785d638bd98bc128beb3279b81390a775f373d891880dae2ccb32ead",
+        "width": 1494,
+        "height": 1019,
+        "recordedAt": "2026-10-27T00:28:27.447Z"
+      }
+    }
+  ],
+  "preferencesSaved": false,
+  "preferencesScope": "isolated temporary runner config only",
+  "sceneSaved": false,
+  "learnerCompletionAssessed": false,
+  "physicalFitAssessed": false,
+  "emulateEffectViaSimulatedOneVerified": false,
+  "limitation": "The v001 simulated-ONE front-view assertion failed after the checkbox was enabled. This v002 records both plain and unicode-bearing events without treating failure as success. Actual physical-keyboard emulation remains unverified if neither matches NUMPAD_1.",
+  "workspaceWriteAttribution": null,
+  "workspaceContentsComparison": "See runner-status; not proof of no intervening writes",
+  "auxiliaryNonEventSetup": [
+    "preferences.active_section = INPUT",
+    "wm.window_close for Preferences only"
+  ]
+}

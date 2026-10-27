@@ -11,6 +11,12 @@
 .note-author{display:inline-block;font-size:9px;font-weight:700;padding:1px 6px;border-radius:4px;margin-right:6px;background:#edf1f3;color:var(--muted)}.note-author[data-author="learner"]{background:var(--tint);color:var(--accent)}.note-author[data-author="tutor"]{background:#e6eef7;color:#2563a6}
 
 .operation-run{margin-top:24px;padding:18px;border:1px solid #ccdbe6;border-radius:10px;background:#f5f8fb}
+.guide-shortcut{margin-top:12px;padding:12px 14px;border-left:3px solid #a4bdca;border-radius:0 8px 8px 0;background:#f1f5f7;min-width:0}
+.guide-shortcut h4{font-size:12px;margin:0 0 6px;color:var(--navy)}
+.guide-shortcut .shortcut-keys{margin:0 0 7px}.shortcut-keys kbd{display:inline-block;padding:3px 7px;border:1px solid #cbd8df;border-radius:5px;background:white;font-family:Consolas,"Microsoft JhengHei",monospace;font-size:12px;white-space:pre-wrap;overflow-wrap:anywhere}
+.guide-shortcut .shortcut-effect{font-size:12px;white-space:pre-line;color:var(--ink);margin:0;line-height:1.8}
+.shortcut-notes{margin-top:8px;font-size:11px;color:var(--muted)}.shortcut-notes strong{font-size:10px;color:var(--navy)}.shortcut-notes ul,.shortcut-evidence ul{margin:3px 0 0;padding-left:19px}.shortcut-notes li{white-space:pre-line;margin:2px 0}
+.guide-shortcut .shortcut-evidence{margin-top:9px;padding-top:8px}.shortcut-evidence summary{font-size:10px}.shortcut-evidence li{font-size:10px;margin-top:7px;overflow-wrap:anywhere}.shortcut-evidence-method{display:block;color:var(--muted)}.shortcut-evidence code{display:block;font-size:9px;overflow-wrap:anywhere}
 .operation-run-heading{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:8px}
 .operation-run h4{font-size:14px;margin:0;color:var(--navy)}
 .operation-run-status{font-size:10px;color:#38627d;background:#e6eef7;border-radius:20px;padding:2px 8px}

@@ -1,0 +1,473 @@
+{
+  "schemaVersion": 1,
+  "id": "shortcut-existing-evidence-v001",
+  "reviewedOn": "2026-10-27",
+  "performedBy": "tutor",
+  "scope": "人工逐張查看既有 Blender 5.2.1 原始實拍的選單快捷鍵標示；不等同本次送出按鍵、執行該功能或學員完成。",
+  "method": "每個 evidence 的原圖均以 view_image 實際開啟核讀；未裁剪、修改像素或由來源程式推定標示。SHA-256 另由原圖位元組計算。",
+  "environment": "獨立 Blender 5.2.1 LTS、English (US)、出廠設定；原圖右下狀態列可見 5.2.1。",
+  "sourceHistoryLimitation": "01～04 現行劇本不視為當時凍結執行程式；本檔僅取原圖中可見選單項目與快捷鍵文字作證。",
+  "entries": [
+    {
+      "id": "file-new",
+      "keys": "Ctrl+N",
+      "context": "Blender 主視窗；先保護既有未儲存作品。",
+      "effect": "開啟 New 選單，再選 General；不是直接跳過未存檔確認。",
+      "evidence": {
+        "path": "learning/evidence/01/2026-10-22-lesson01-demo-v001/01-04-01-file-menu.png",
+        "runId": "2026-10-22-lesson01-demo-v001",
+        "step": "01-04",
+        "seq": 1,
+        "menuItem": "File > New",
+        "keyLabel": "Ctrl N",
+        "verificationMethod": "menu_label_visual",
+        "sha256": "34fb7b908b2195873b9568a38b8aa54bdef0fd7ce29eb0e74570486259fd6768"
+      },
+      "limitations": "只核對選單標示，不聲稱本次已按 Ctrl+N。",
+      "applicableGuideItems": [
+        "01-03:1",
+        "02-05:1",
+        "04-02:1"
+      ]
+    },
+    {
+      "id": "file-open",
+      "keys": "Ctrl+O",
+      "context": "Blender 主視窗；先核對需保留的當前變更。",
+      "effect": "開啟 Open 檔案視窗，仍須選擇正確來源版本並處理未存檔提示。",
+      "evidence": {
+        "path": "learning/evidence/01/2026-10-22-lesson01-demo-v001/01-04-01-file-menu.png",
+        "runId": "2026-10-22-lesson01-demo-v001",
+        "step": "01-04",
+        "seq": 1,
+        "menuItem": "File > Open...",
+        "keyLabel": "Ctrl O",
+        "verificationMethod": "menu_label_visual",
+        "sha256": "34fb7b908b2195873b9568a38b8aa54bdef0fd7ce29eb0e74570486259fd6768"
+      },
+      "limitations": "不是重新開啟任意檔案或覆寫已登記場景的授權。",
+      "applicableGuideItems": [
+        "01-09:3",
+        "02-07:3",
+        "03-01:1",
+        "03-06:1",
+        "05-03:3",
+        "05-05:3",
+        "06-01:3",
+        "06-02:4",
+        "07-03:3",
+        "08-01:3"
+      ]
+    },
+    {
+      "id": "file-save",
+      "keys": "Ctrl+S",
+      "context": "Blender 主視窗；目前必須是可續存的工作版。",
+      "effect": "保存目前工作檔；尚無路徑時仍需另存對話框。",
+      "evidence": {
+        "path": "learning/evidence/01/2026-10-22-lesson01-demo-v001/01-04-01-file-menu.png",
+        "runId": "2026-10-22-lesson01-demo-v001",
+        "step": "01-04",
+        "seq": 1,
+        "menuItem": "File > Save",
+        "keyLabel": "Ctrl S",
+        "verificationMethod": "menu_label_visual",
+        "sha256": "34fb7b908b2195873b9568a38b8aa54bdef0fd7ce29eb0e74570486259fd6768"
+      },
+      "limitations": "已登記檢查點不可用這個鍵直接覆寫；有修改先 Save As 新版本。快捷鍵不執行教學頁的 register-file。",
+      "applicableGuideItems": [
+        "01-09:1",
+        "02-07:1",
+        "02-07:2",
+        "03-05:1",
+        "04-07:1"
+      ]
+    },
+    {
+      "id": "file-save-as",
+      "keys": "Shift+Ctrl+S",
+      "context": "Blender 主視窗；不是渲染圖 Image 選單的 Save As。",
+      "effect": "開啟 .blend 的 Save As 視窗，手動核對資料夾與新的版本檔名。",
+      "evidence": {
+        "path": "learning/evidence/01/2026-10-22-lesson01-demo-v001/01-04-01-file-menu.png",
+        "runId": "2026-10-22-lesson01-demo-v001",
+        "step": "01-04",
+        "seq": 1,
+        "menuItem": "File > Save As...",
+        "keyLabel": "Shift Ctrl S",
+        "verificationMethod": "menu_label_visual",
+        "sha256": "34fb7b908b2195873b9568a38b8aa54bdef0fd7ce29eb0e74570486259fd6768"
+      },
+      "limitations": "不取代路徑、檔名、覆寫確認與檔案登記；不拿此圖證明 PNG 的 Image > Save As 快捷鍵。",
+      "applicableGuideItems": [
+        "01-04:1",
+        "01-07:1",
+        "02-01:3",
+        "02-04:3",
+        "02-05:1",
+        "03-01:2",
+        "04-02:3",
+        "05-02:1",
+        "05-03:3",
+        "05-05:3",
+        "06-01:3",
+        "06-02:4",
+        "07-02:3",
+        "07-03:3",
+        "08-01:3"
+      ]
+    },
+    {
+      "id": "viewport-sidebar",
+      "keys": "N",
+      "context": "滑鼠位於 3D Viewport，且不在文字或數值欄位編輯中。",
+      "effect": "切換 3D Viewport 的 Sidebar 顯示；已開啟再按會關閉。",
+      "evidence": {
+        "path": "learning/evidence/01/2026-10-22-lesson01-demo-v001/01-07-02-view-sidebar.png",
+        "runId": "2026-10-22-lesson01-demo-v001",
+        "step": "01-07",
+        "seq": 2,
+        "menuItem": "View > Sidebar",
+        "keyLabel": "N",
+        "verificationMethod": "menu_label_visual",
+        "sha256": "7c2aa6418bc22092bd1ec89d617e99692402f9a8c5a5f669055b65c550b34bb9"
+      },
+      "limitations": "快捷鍵開側欄不代表已在 Item 分頁或已更改 Transform；依實際畫面核對。",
+      "applicableGuideItems": [
+        "01-07:2",
+        "01-08:1",
+        "02-02:1",
+        "02-06:1",
+        "04-02:2",
+        "04-03:1",
+        "05-02:2",
+        "05-03:1",
+        "05-05:1",
+        "05-06:1",
+        "05-06:3",
+        "06-03:2",
+        "07-01:1",
+        "07-04:3",
+        "07-05:3",
+        "08-01:1"
+      ]
+    },
+    {
+      "id": "viewport-frame-selected",
+      "keys": "Numpad .",
+      "context": "先選取目標，再把滑鼠移至 3D Viewport。",
+      "effect": "View > Frame Selected：以選取物件對焦視角，不移動物件。",
+      "evidence": {
+        "path": "learning/evidence/01/2026-10-22-lesson01-demo-v001/01-06-04-view-frame-selected.png",
+        "runId": "2026-10-22-lesson01-demo-v001",
+        "step": "01-06",
+        "seq": 4,
+        "menuItem": "View > Frame Selected",
+        "keyLabel": "Numpad .",
+        "verificationMethod": "menu_label_visual",
+        "sha256": "fd46511c619b367af5f564d080e489ff5ee811950f0db230764455a2164b05f8"
+      },
+      "limitations": "是數字鍵盤的小數點，不是主鍵盤句點；此圖不能證明 Emulate Numpad 設定或無數字鍵盤替代鍵。",
+      "applicableGuideItems": [
+        "01-06:3",
+        "02-06:3",
+        "04-04:1",
+        "05-04:2",
+        "05-06:3",
+        "06-03:2",
+        "07-04:3",
+        "07-05:3"
+      ]
+    },
+    {
+      "id": "viewport-perspective-orthographic",
+      "keys": "Numpad 5",
+      "context": "滑鼠位於 3D Viewport。",
+      "effect": "切換 Perspective / Orthographic 視角投影。",
+      "evidence": {
+        "path": "learning/evidence/01/2026-10-22-lesson01-demo-v001/01-06-04-view-frame-selected.png",
+        "runId": "2026-10-22-lesson01-demo-v001",
+        "step": "01-06",
+        "seq": 4,
+        "menuItem": "View > Perspective/Orthographic",
+        "keyLabel": "Numpad 5",
+        "verificationMethod": "menu_label_visual",
+        "sha256": "fd46511c619b367af5f564d080e489ff5ee811950f0db230764455a2164b05f8"
+      },
+      "limitations": "不是旋轉物件或切頂／前／側視；現有 guide 不強制加入額外視角動作。",
+      "applicableGuideItems": []
+    },
+    {
+      "id": "viewport-frame-all",
+      "keys": "Home",
+      "context": "滑鼠位於 3D Viewport。",
+      "effect": "View > Frame All，對焦場景可見內容。",
+      "evidence": {
+        "path": "learning/evidence/01/2026-10-22-lesson01-demo-v001/01-06-04-view-frame-selected.png",
+        "runId": "2026-10-22-lesson01-demo-v001",
+        "step": "01-06",
+        "seq": 4,
+        "menuItem": "View > Frame All",
+        "keyLabel": "Home",
+        "verificationMethod": "menu_label_visual",
+        "sha256": "fd46511c619b367af5f564d080e489ff5ee811950f0db230764455a2164b05f8"
+      },
+      "limitations": "與 Frame Selected 不同，不視為該操作的同等替代；現有 guide 不需加入額外動作。",
+      "applicableGuideItems": []
+    },
+    {
+      "id": "edit-undo",
+      "keys": "Ctrl+Z",
+      "context": "Blender 主視窗；先核對要撤回的最近動作。",
+      "effect": "Edit > Undo，撤回最近可復原的操作，再讀回 Transform。",
+      "evidence": {
+        "path": "learning/evidence/01/2026-10-22-lesson01-demo-v001/01-07-05-edit-undo-menu.png",
+        "runId": "2026-10-22-lesson01-demo-v001",
+        "step": "01-07",
+        "seq": 5,
+        "menuItem": "Edit > Undo",
+        "keyLabel": "Ctrl Z",
+        "verificationMethod": "menu_label_visual",
+        "sha256": "a322cbd6bb3ce61bc9a0151c0d21ca198704301322fd4faf31897e0f9b2f48ae"
+      },
+      "limitations": "不是回到任意版本或替代正式檔案備份。",
+      "applicableGuideItems": [
+        "01-07:3"
+      ]
+    },
+    {
+      "id": "edit-rename-active-item",
+      "keys": "F2",
+      "context": "先核對作用中項目；物件命名時選取正確物件，避免焦點在資料欄位。",
+      "effect": "Edit > Rename Active Item，開啟目前作用中項目的改名輸入。",
+      "evidence": {
+        "path": "learning/evidence/02/2026-10-22-lesson02-demo-v001/02-04-02-rename-menu.png",
+        "runId": "2026-10-22-lesson02-demo-v001",
+        "step": "02-04",
+        "seq": 2,
+        "menuItem": "Edit > Rename Active Item...",
+        "keyLabel": "F2",
+        "verificationMethod": "menu_label_visual",
+        "sha256": "bb945a2e6b0d47123c9c5c604a1f711b794f00f2c6c3992715bda88303947653"
+      },
+      "limitations": "物件名稱與資料網格／材質資料塊名稱不同，不將它當成材質名稱欄的等效操作。",
+      "applicableGuideItems": [
+        "02-04:1",
+        "05-02:2",
+        "08-01:1"
+      ]
+    },
+    {
+      "id": "edit-menu-search",
+      "keys": "F3",
+      "context": "滑鼠位於要執行動作的編輯區，模式及選取已核對。",
+      "effect": "Edit > Menu Search，搜尋可用指令後仍須核對並選定正確項目。",
+      "evidence": {
+        "path": "learning/evidence/01/2026-10-22-lesson01-demo-v001/01-07-05-edit-undo-menu.png",
+        "runId": "2026-10-22-lesson01-demo-v001",
+        "step": "01-07",
+        "seq": 5,
+        "menuItem": "Edit > Menu Search...",
+        "keyLabel": "F3",
+        "verificationMethod": "menu_label_visual",
+        "sha256": "a322cbd6bb3ce61bc9a0151c0d21ca198704301322fd4faf31897e0f9b2f48ae"
+      },
+      "limitations": "本圖只證明搜尋的鍵標，不證明任意搜尋結果或 Non Manifold 的具體快捷鍵；依實際模式核對。",
+      "applicableGuideItems": [
+        "05-03:3",
+        "06-01:1",
+        "06-01:2",
+        "06-02:3",
+        "06-03:2",
+        "07-04:3",
+        "07-05:3",
+        "08-01:2",
+        "08-03:2"
+      ]
+    },
+    {
+      "id": "edit-preferences",
+      "keys": "Ctrl+,",
+      "context": "Blender 主視窗；不同語言以實際畫面為準。",
+      "effect": "Edit > Preferences，開啟偏好設定視窗。",
+      "evidence": {
+        "path": "learning/evidence/01/2026-10-22-lesson01-demo-v001/01-07-05-edit-undo-menu.png",
+        "runId": "2026-10-22-lesson01-demo-v001",
+        "step": "01-07",
+        "seq": 5,
+        "menuItem": "Edit > Preferences...",
+        "keyLabel": "Ctrl ,",
+        "verificationMethod": "menu_label_visual",
+        "sha256": "a322cbd6bb3ce61bc9a0151c0d21ca198704301322fd4faf31897e0f9b2f48ae"
+      },
+      "limitations": "鍵是主鍵盤逗點；本圖不證明 Language／Emulate Numpad 的位置或設定已變更。",
+      "applicableGuideItems": [
+        "01-02:1"
+      ]
+    },
+    {
+      "id": "object-apply-menu",
+      "keys": "Ctrl+A",
+      "context": "Object Mode、正確物件已選取，滑鼠位於 3D Viewport。",
+      "effect": "開啟 Object > Apply 選單；套用縮放仍須再選 Scale。",
+      "evidence": {
+        "path": "learning/evidence/04/2026-10-22-lesson04-demo-v001/04-03-02-apply-menu.png",
+        "runId": "2026-10-22-lesson04-demo-v001",
+        "step": "04-03",
+        "seq": 2,
+        "menuItem": "Object > Apply > Scale",
+        "keyLabel": "Ctrl A（Apply 父選單）",
+        "verificationMethod": "menu_label_visual",
+        "sha256": "534165b57a361df62655ab91e707b378382f53ad9ad1b3c794ded18519306a18"
+      },
+      "limitations": "Ctrl+A 不是直接 Apply Scale，也不是修改器標題列的 Apply；不可拿這鍵去替代 Boolean／Solidify Apply。套用後仍需核對 Scale／Dimensions。",
+      "applicableGuideItems": [
+        "04-03:2",
+        "05-02:2",
+        "05-03:1",
+        "05-05:1",
+        "06-01:1"
+      ]
+    },
+    {
+      "id": "object-delete",
+      "keys": "X",
+      "context": "Object Mode，僅選已確認可刪除的物件，滑鼠位於 3D Viewport。",
+      "effect": "Object > Delete；按鍵後依實際確認提示決定是否刪除。",
+      "evidence": {
+        "path": "learning/evidence/02/2026-10-22-lesson02-demo-v001/02-01-02-object-delete.png",
+        "runId": "2026-10-22-lesson02-demo-v001",
+        "step": "02-01",
+        "seq": 2,
+        "menuItem": "Object > Delete",
+        "keyLabel": "X",
+        "verificationMethod": "menu_label_visual",
+        "sha256": "806b3af007268cd66ab6425ed26227af0fb880d96c6e3e9ac6a767e63e699635"
+      },
+      "limitations": "不能因此刪除先前單元的未存作品；Edit Mode 的 X 用於不同的網格刪除選項。",
+      "applicableGuideItems": [
+        "02-01:2"
+      ]
+    },
+    {
+      "id": "mesh-delete-menu",
+      "keys": "X",
+      "context": "Edit Mode、面選取，只有要刪除的頂面反白，滑鼠位於 3D Viewport。",
+      "effect": "開啟 Mesh > Delete 選單，再選 Faces。",
+      "evidence": {
+        "path": "learning/evidence/04/2026-10-22-lesson04-demo-v001/04-04-03-delete-menu.png",
+        "runId": "2026-10-22-lesson04-demo-v001",
+        "step": "04-04",
+        "seq": 3,
+        "menuItem": "Mesh > Delete > Faces",
+        "keyLabel": "X（Delete 父選單）",
+        "verificationMethod": "menu_label_visual",
+        "sha256": "f95ff212f0ff72fcac2d83808c70ec518f0ded0dd7130dc6c0fa5e2ee81a0435"
+      },
+      "limitations": "X 不直接代表刪除面；必須選正確 Faces，與 Object Mode 刪整件不同。",
+      "applicableGuideItems": [
+        "04-04:3"
+      ]
+    },
+    {
+      "id": "object-duplicate",
+      "keys": "Shift+D",
+      "context": "Object Mode、已核對選取與 3D Viewport 焦點。",
+      "effect": "Object > Duplicate Objects，複製後進入移動。",
+      "evidence": {
+        "path": "learning/evidence/02/2026-10-22-lesson02-demo-v001/02-01-02-object-delete.png",
+        "runId": "2026-10-22-lesson02-demo-v001",
+        "step": "02-01",
+        "seq": 2,
+        "menuItem": "Object > Duplicate Objects",
+        "keyLabel": "Shift D",
+        "verificationMethod": "menu_label_visual",
+        "sha256": "806b3af007268cd66ab6425ed26227af0fb880d96c6e3e9ac6a767e63e699635"
+      },
+      "limitations": "此圖只證 Object Mode 的標示；不把 Edit Mode 複製選取網格的行為視為同一項已實測。",
+      "applicableGuideItems": [
+        "05-03:2"
+      ]
+    },
+    {
+      "id": "object-join",
+      "keys": "Ctrl+J",
+      "context": "Object Mode、核對已選取全部切割體及作用中物件，滑鼠位於 3D Viewport。",
+      "effect": "Object > Join，合併物件資料。",
+      "evidence": {
+        "path": "learning/evidence/02/2026-10-22-lesson02-demo-v001/02-01-02-object-delete.png",
+        "runId": "2026-10-22-lesson02-demo-v001",
+        "step": "02-01",
+        "seq": 2,
+        "menuItem": "Object > Join",
+        "keyLabel": "Ctrl J",
+        "verificationMethod": "menu_label_visual",
+        "sha256": "806b3af007268cd66ab6425ed26227af0fb880d96c6e3e9ac6a767e63e699635"
+      },
+      "limitations": "Join 並非 Boolean Union，不由合併推定網格封閉或單殼。",
+      "applicableGuideItems": [
+        "05-03:2"
+      ]
+    },
+    {
+      "id": "render-image",
+      "keys": "F12",
+      "context": "Blender 主視窗；先存檔並核對目前場景、相機、引擎與解析度。",
+      "effect": "Render > Render Image，產生目前場景的渲染。",
+      "evidence": {
+        "path": "learning/evidence/03/2026-10-22-lesson03-demo-v001/03-05-04-render-menu.png",
+        "runId": "2026-10-22-lesson03-demo-v001",
+        "step": "03-05",
+        "seq": 4,
+        "menuItem": "Render > Render Image",
+        "keyLabel": "F12",
+        "verificationMethod": "menu_label_visual",
+        "sha256": "ed0ee355a415423f58a746500201feeb48604fdd1100f5ac99225b65bf992ac9"
+      },
+      "limitations": "F12 不替代 Image > Save As 輸出 PNG 或教學頁檔案登記。",
+      "applicableGuideItems": [
+        "03-05:2",
+        "03-06:3"
+      ]
+    }
+  ],
+  "unverified": [
+    {
+      "keys": "Tab",
+      "viewedPath": "learning/evidence/01/2026-10-22-lesson01-demo-v001/01-05-01-mode-menu.png",
+      "reason": "原圖只列模式項目，未顯示 Tab 標示。需另有凍結按鍵與實讀證據，不憑記憶加入。"
+    },
+    {
+      "keys": "Shift+A",
+      "viewedPath": "learning/evidence/02/2026-10-22-lesson02-demo-v001/02-02-01-add-mesh-plane.png",
+      "reason": "Add > Mesh 選單圖沒有 Shift+A 標示；只能驗 Plane 選單位置。"
+    },
+    {
+      "keys": "M",
+      "reason": "目前查看的圖沒有 Object > Collection > Move to Collection 的快捷鍵標示；彈窗本身不足證明按鍵。"
+    },
+    {
+      "keys": "A / Alt+A",
+      "reason": "本次既有圖盤點未找到清楚 Select > All／None 的按鍵標示；需新證據。"
+    },
+    {
+      "keys": "G / R / S 與軸向、數值、Esc／右鍵取消",
+      "reason": "目前查看的選單圖不含操作中數值語義；需獨立 Blender 實際送鍵、前後讀值及原圖。尤其未指定軸向的 G 數值不得由慣例推測。"
+    },
+    {
+      "keys": "Emulate Numpad",
+      "reason": "本次既有選單圖不能證明偏好設定位置、啟用狀態或它對主鍵盤數字／小數點的影響；需新證據並分開數字鍵盤與上排數字。"
+    }
+  ],
+  "guideCoverage": {
+    "01": "File／Preferences／Sidebar／Frame Selected／Undo 的既有選單標示足夠；G/R/S 等動作語義交由新實測。辨認畫面、語言內容、物件選取及讀值本身不強塞無對應捷徑。",
+    "02": "重用 File、Sidebar、Rename、Delete；新增／選取／Collection 需補足按鍵證據。Dimension 欄位的絕對尺寸不直接換成相對縮放。",
+    "03": "重用 File 與 Render Image F12；相機、燈光、材質欄位保留常規操作。PNG Save As 不套用 .blend Save As 的證據。",
+    "04": "重用 File、Sidebar、Apply 子選單、Mesh Delete 子選單；Tab／選取與 Non Manifold 需各別證據。修改器 Apply 不等同 Ctrl+A。",
+    "05": "重用 File、Sidebar、Apply Scale、Duplicate Objects／Join；I／E 與具體孔板或唇邊幾何不憑通用快捷鍵回填原 run。",
+    "06": "可重用 File、Sidebar、Apply Scale／Menu Search；G/R/S 輸入須依起點與單位說明。Boolean Apply 不是 Ctrl+A。",
+    "07": "可重用 File、Sidebar／Frame Selected；原導引 I/E/Ctrl+B、姿態 R/G 若無凍結按鍵證據則等待新查核。無須把 STL 選項與試配表硬加快捷鍵。",
+    "08": "08-01 可重用 File、Sidebar、Rename／Menu Search。08-02～08-05 多為未實作規格、幾何計畫與實體階段，不能因補快捷鍵冒稱已建模或已實拍。",
+    "09": "資料彙整、補償值與總組裝沒有這批 Blender 選單捷徑的同等操作，不新增無關快捷鍵。"
+  }
+}

@@ -1,0 +1,2131 @@
+{
+ "scenario": "D:\\others\\study\\Blender-Learning\\learning\\tutor\\scenarios\\shortcut_probe.py",
+ "blender": "5.2.1 LTS",
+ "buildHash": "9e2066aef7ef",
+ "records": [
+  {
+   "seq": 1,
+   "step": "01-07",
+   "slug": "baseline",
+   "recordedAt": "2026-10-27T00:24:23.942Z",
+   "action": "核對隔離出廠場景及 Cube 的初始位置。",
+   "observed": {
+    "active": "Cube",
+    "selected": [
+     "Cube"
+    ],
+    "mode": "OBJECT",
+    "objects": [
+     "Camera",
+     "Cube",
+     "Light"
+    ],
+    "location": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "rotationDegrees": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "scale": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "dimensions": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "collections": [
+     "Collection"
+    ],
+    "sidebarVisible": false,
+    "viewDistance": 18.38804817199707,
+    "viewLocation": [
+     -0.020693248137831688,
+     -0.04602546989917755,
+     0.0006694307667203248
+    ],
+    "viewPerspective": "PERSP",
+    "emulateNumpad": false,
+    "sceneUnitSystem": "METRIC",
+    "sceneScaleLength": 1.0
+   },
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "01-07-01-baseline.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "e13488de369a02a0437d128539be91c82e2941e5d93b43f48052bd063056d676"
+  },
+  {
+   "seq": 2,
+   "step": "01-07",
+   "slug": "sidebar-n",
+   "recordedAt": "2026-10-27T00:24:25.392Z",
+   "action": "滑鼠在 3D Viewport，按 N 開啟 Sidebar。",
+   "observed": {
+    "active": "Cube",
+    "selected": [
+     "Cube"
+    ],
+    "mode": "OBJECT",
+    "objects": [
+     "Camera",
+     "Cube",
+     "Light"
+    ],
+    "location": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "rotationDegrees": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "scale": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "dimensions": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "collections": [
+     "Collection"
+    ],
+    "sidebarVisible": true,
+    "viewDistance": 18.38804817199707,
+    "viewLocation": [
+     -0.020693248137831688,
+     -0.04602546989917755,
+     0.0006694307667203248
+    ],
+    "viewPerspective": "PERSP",
+    "emulateNumpad": false,
+    "sceneUnitSystem": "METRIC",
+    "sceneScaleLength": 1.0
+   },
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "01-07-02-sidebar-n.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "9270d0cd22c665e339709ad5a01578f3e1dead709afe32d861a7f152b2f3e55e"
+  },
+  {
+   "seq": 3,
+   "step": "01-07",
+   "slug": "translate-x-from-zero",
+   "recordedAt": "2026-10-27T00:24:27.592Z",
+   "action": "從 X=0 按 G → X → 0.5 → Enter。",
+   "observed": {
+    "active": "Cube",
+    "selected": [
+     "Cube"
+    ],
+    "mode": "OBJECT",
+    "objects": [
+     "Camera",
+     "Cube",
+     "Light"
+    ],
+    "location": [
+     0.5,
+     0.0,
+     0.0
+    ],
+    "rotationDegrees": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "scale": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "dimensions": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "collections": [
+     "Collection"
+    ],
+    "sidebarVisible": true,
+    "viewDistance": 18.38804817199707,
+    "viewLocation": [
+     -0.020693248137831688,
+     -0.04602546989917755,
+     0.0006694307667203248
+    ],
+    "viewPerspective": "PERSP",
+    "emulateNumpad": false,
+    "sceneUnitSystem": "METRIC",
+    "sceneScaleLength": 1.0
+   },
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "01-07-03-translate-x-from-zero.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "e50fc34ea7578b53e759b58985c08a14e30406a812104c35432fa410326dadc5"
+  },
+  {
+   "seq": 4,
+   "step": "01-07",
+   "slug": "translate-x-start-one",
+   "recordedAt": "2026-10-27T00:24:29.792Z",
+   "action": "再按 G → X → 0.5，準備 X=1 的對照起點。",
+   "observed": {
+    "active": "Cube",
+    "selected": [
+     "Cube"
+    ],
+    "mode": "OBJECT",
+    "objects": [
+     "Camera",
+     "Cube",
+     "Light"
+    ],
+    "location": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "rotationDegrees": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "scale": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "dimensions": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "collections": [
+     "Collection"
+    ],
+    "sidebarVisible": true,
+    "viewDistance": 18.38804817199707,
+    "viewLocation": [
+     -0.020693248137831688,
+     -0.04602546989917755,
+     0.0006694307667203248
+    ],
+    "viewPerspective": "PERSP",
+    "emulateNumpad": false,
+    "sceneUnitSystem": "METRIC",
+    "sceneScaleLength": 1.0
+   },
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "01-07-04-translate-x-start-one.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "0a7443ec932dcf9bbd37b5ee357a4c468ed3a6fe4b349e8ad825102621801290"
+  },
+  {
+   "seq": 5,
+   "step": "01-07",
+   "slug": "translate-x-from-one",
+   "recordedAt": "2026-10-27T00:24:31.992Z",
+   "action": "從 X=1 按 G → X → 0.5 → Enter，驗相對移動。",
+   "observed": {
+    "active": "Cube",
+    "selected": [
+     "Cube"
+    ],
+    "mode": "OBJECT",
+    "objects": [
+     "Camera",
+     "Cube",
+     "Light"
+    ],
+    "location": [
+     1.5,
+     0.0,
+     0.0
+    ],
+    "rotationDegrees": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "scale": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "dimensions": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "collections": [
+     "Collection"
+    ],
+    "sidebarVisible": true,
+    "viewDistance": 18.38804817199707,
+    "viewLocation": [
+     -0.020693248137831688,
+     -0.04602546989917755,
+     0.0006694307667203248
+    ],
+    "viewPerspective": "PERSP",
+    "emulateNumpad": false,
+    "sceneUnitSystem": "METRIC",
+    "sceneScaleLength": 1.0
+   },
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "01-07-05-translate-x-from-one.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "4b2597d510ca80aeb4b986b660482a44dec5441d9bfd464ea8aa7bd052e04f02"
+  },
+  {
+   "seq": 6,
+   "step": "01-07",
+   "slug": "translate-x-negative",
+   "recordedAt": "2026-10-27T00:24:34.192Z",
+   "action": "按 G → X → -0.5 → Enter，往負 X 移動。",
+   "observed": {
+    "active": "Cube",
+    "selected": [
+     "Cube"
+    ],
+    "mode": "OBJECT",
+    "objects": [
+     "Camera",
+     "Cube",
+     "Light"
+    ],
+    "location": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "rotationDegrees": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "scale": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "dimensions": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "collections": [
+     "Collection"
+    ],
+    "sidebarVisible": true,
+    "viewDistance": 18.38804817199707,
+    "viewLocation": [
+     -0.020693248137831688,
+     -0.04602546989917755,
+     0.0006694307667203248
+    ],
+    "viewPerspective": "PERSP",
+    "emulateNumpad": false,
+    "sceneUnitSystem": "METRIC",
+    "sceneScaleLength": 1.0
+   },
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "01-07-06-translate-x-negative.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "0a7443ec932dcf9bbd37b5ee357a4c468ed3a6fe4b349e8ad825102621801290"
+  },
+  {
+   "seq": 7,
+   "step": "01-07",
+   "slug": "translate-no-axis",
+   "recordedAt": "2026-10-27T00:24:36.242Z",
+   "action": "在出廠透視視角按 G → 0.5 → Enter，不加軸向；讀回三軸。",
+   "observed": {
+    "active": "Cube",
+    "selected": [
+     "Cube"
+    ],
+    "mode": "OBJECT",
+    "objects": [
+     "Camera",
+     "Cube",
+     "Light"
+    ],
+    "location": [
+     1.5,
+     0.0,
+     0.0
+    ],
+    "rotationDegrees": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "scale": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "dimensions": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "collections": [
+     "Collection"
+    ],
+    "sidebarVisible": true,
+    "viewDistance": 18.38804817199707,
+    "viewLocation": [
+     -0.020693248137831688,
+     -0.04602546989917755,
+     0.0006694307667203248
+    ],
+    "viewPerspective": "PERSP",
+    "emulateNumpad": false,
+    "sceneUnitSystem": "METRIC",
+    "sceneScaleLength": 1.0
+   },
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "01-07-07-translate-no-axis.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "4b2597d510ca80aeb4b986b660482a44dec5441d9bfd464ea8aa7bd052e04f02"
+  },
+  {
+   "seq": 8,
+   "step": "01-07",
+   "slug": "translate-cancel-esc",
+   "recordedAt": "2026-10-27T00:24:38.542Z",
+   "action": "G → X → 3 後按 Esc 取消。",
+   "observed": {
+    "active": "Cube",
+    "selected": [
+     "Cube"
+    ],
+    "mode": "OBJECT",
+    "objects": [
+     "Camera",
+     "Cube",
+     "Light"
+    ],
+    "location": [
+     1.5,
+     0.0,
+     0.0
+    ],
+    "rotationDegrees": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "scale": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "dimensions": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "collections": [
+     "Collection"
+    ],
+    "sidebarVisible": true,
+    "viewDistance": 18.38804817199707,
+    "viewLocation": [
+     -0.020693248137831688,
+     -0.04602546989917755,
+     0.0006694307667203248
+    ],
+    "viewPerspective": "PERSP",
+    "emulateNumpad": false,
+    "sceneUnitSystem": "METRIC",
+    "sceneScaleLength": 1.0
+   },
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "01-07-08-translate-cancel-esc.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "4b2597d510ca80aeb4b986b660482a44dec5441d9bfd464ea8aa7bd052e04f02"
+  },
+  {
+   "seq": 9,
+   "step": "01-07",
+   "slug": "translate-cancel-rightmouse",
+   "recordedAt": "2026-10-27T00:24:41.043Z",
+   "action": "G → X → 3 後按滑鼠右鍵取消。",
+   "observed": {
+    "active": "Cube",
+    "selected": [
+     "Cube"
+    ],
+    "mode": "OBJECT",
+    "objects": [
+     "Camera",
+     "Cube",
+     "Light"
+    ],
+    "location": [
+     1.5,
+     0.0,
+     0.0
+    ],
+    "rotationDegrees": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "scale": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "dimensions": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "collections": [
+     "Collection"
+    ],
+    "sidebarVisible": true,
+    "viewDistance": 18.38804817199707,
+    "viewLocation": [
+     -0.020693248137831688,
+     -0.04602546989917755,
+     0.0006694307667203248
+    ],
+    "viewPerspective": "PERSP",
+    "emulateNumpad": false,
+    "sceneUnitSystem": "METRIC",
+    "sceneScaleLength": 1.0
+   },
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "01-07-09-translate-cancel-rightmouse.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "4b2597d510ca80aeb4b986b660482a44dec5441d9bfd464ea8aa7bd052e04f02"
+  },
+  {
+   "seq": 10,
+   "step": "01-07",
+   "slug": "location-field-absolute",
+   "recordedAt": "2026-10-27T00:24:44.343Z",
+   "action": "在 Item 的 Location X 欄輸入 0.5，讀回絕對 X 值。",
+   "observed": {
+    "active": "Cube",
+    "selected": [
+     "Cube"
+    ],
+    "mode": "OBJECT",
+    "objects": [
+     "Camera",
+     "Cube",
+     "Light"
+    ],
+    "location": [
+     0.5,
+     0.0,
+     0.0
+    ],
+    "rotationDegrees": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "scale": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "dimensions": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "collections": [
+     "Collection"
+    ],
+    "sidebarVisible": true,
+    "viewDistance": 18.38804817199707,
+    "viewLocation": [
+     -0.020693248137831688,
+     -0.04602546989917755,
+     0.0006694307667203248
+    ],
+    "viewPerspective": "PERSP",
+    "emulateNumpad": false,
+    "sceneUnitSystem": "METRIC",
+    "sceneScaleLength": 1.0
+   },
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "01-07-10-location-field-absolute.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "4cad60be42895a8fe53f9dd856844984625956c09a43516ec5af38a7c624e6f8"
+  },
+  {
+   "seq": 11,
+   "step": "01-07",
+   "slug": "translate-y",
+   "recordedAt": "2026-10-27T00:24:46.643Z",
+   "action": "按 G → Y → 0.25 → Enter。",
+   "observed": {
+    "active": "Cube",
+    "selected": [
+     "Cube"
+    ],
+    "mode": "OBJECT",
+    "objects": [
+     "Camera",
+     "Cube",
+     "Light"
+    ],
+    "location": [
+     0.5,
+     0.25,
+     0.0
+    ],
+    "rotationDegrees": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "scale": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "dimensions": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "collections": [
+     "Collection"
+    ],
+    "sidebarVisible": true,
+    "viewDistance": 18.38804817199707,
+    "viewLocation": [
+     -0.020693248137831688,
+     -0.04602546989917755,
+     0.0006694307667203248
+    ],
+    "viewPerspective": "PERSP",
+    "emulateNumpad": false,
+    "sceneUnitSystem": "METRIC",
+    "sceneScaleLength": 1.0
+   },
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "01-07-11-translate-y.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "f4186a3bfc5d062ba3b97f63b32bed5c695aab528c9e17e24abe0805cf7e1b0f"
+  },
+  {
+   "seq": 12,
+   "step": "01-07",
+   "slug": "translate-z",
+   "recordedAt": "2026-10-27T00:24:48.943Z",
+   "action": "按 G → Z → 0.25 → Enter。",
+   "observed": {
+    "active": "Cube",
+    "selected": [
+     "Cube"
+    ],
+    "mode": "OBJECT",
+    "objects": [
+     "Camera",
+     "Cube",
+     "Light"
+    ],
+    "location": [
+     0.5,
+     0.25,
+     0.25
+    ],
+    "rotationDegrees": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "scale": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "dimensions": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "collections": [
+     "Collection"
+    ],
+    "sidebarVisible": true,
+    "viewDistance": 18.38804817199707,
+    "viewLocation": [
+     -0.020693248137831688,
+     -0.04602546989917755,
+     0.0006694307667203248
+    ],
+    "viewPerspective": "PERSP",
+    "emulateNumpad": false,
+    "sceneUnitSystem": "METRIC",
+    "sceneScaleLength": 1.0
+   },
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "01-07-12-translate-z.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "9864bb86b74a4178e918f1bc8021f5094b31488f078b75bdaf63cb858a6ab4bd"
+  },
+  {
+   "seq": 13,
+   "step": "01-08",
+   "slug": "rotate-x",
+   "recordedAt": "2026-10-27T00:24:51.143Z",
+   "action": "按 R → X → 30 → Enter（角度為度）。",
+   "observed": {
+    "active": "Cube",
+    "selected": [
+     "Cube"
+    ],
+    "mode": "OBJECT",
+    "objects": [
+     "Camera",
+     "Cube",
+     "Light"
+    ],
+    "location": [
+     0.5,
+     0.25,
+     0.25
+    ],
+    "rotationDegrees": [
+     30.000000834826057,
+     -0.0,
+     0.0
+    ],
+    "scale": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "dimensions": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "collections": [
+     "Collection"
+    ],
+    "sidebarVisible": true,
+    "viewDistance": 18.38804817199707,
+    "viewLocation": [
+     -0.020693248137831688,
+     -0.04602546989917755,
+     0.0006694307667203248
+    ],
+    "viewPerspective": "PERSP",
+    "emulateNumpad": false,
+    "sceneUnitSystem": "METRIC",
+    "sceneScaleLength": 1.0
+   },
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "01-08-01-rotate-x.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "508c63472236e3d42947ea4b058892900438a9c2a356fc5842de39c466730503"
+  },
+  {
+   "seq": 14,
+   "step": "01-08",
+   "slug": "rotate-x-restore",
+   "recordedAt": "2026-10-27T00:24:53.343Z",
+   "action": "沿同軸旋回 -30°，供下一軸隔離對照。",
+   "observed": {
+    "active": "Cube",
+    "selected": [
+     "Cube"
+    ],
+    "mode": "OBJECT",
+    "objects": [
+     "Camera",
+     "Cube",
+     "Light"
+    ],
+    "location": [
+     0.5,
+     0.25,
+     0.25
+    ],
+    "rotationDegrees": [
+     0.0,
+     -0.0,
+     0.0
+    ],
+    "scale": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "dimensions": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "collections": [
+     "Collection"
+    ],
+    "sidebarVisible": true,
+    "viewDistance": 18.38804817199707,
+    "viewLocation": [
+     -0.020693248137831688,
+     -0.04602546989917755,
+     0.0006694307667203248
+    ],
+    "viewPerspective": "PERSP",
+    "emulateNumpad": false,
+    "sceneUnitSystem": "METRIC",
+    "sceneScaleLength": 1.0
+   },
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "01-08-02-rotate-x-restore.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "8d909237d33f33d3d4c97ee8eb1c4c01d1b12e4f18bc08ab8654b7a7356c19f3"
+  },
+  {
+   "seq": 15,
+   "step": "01-08",
+   "slug": "rotate-y",
+   "recordedAt": "2026-10-27T00:24:55.543Z",
+   "action": "按 R → Y → 30 → Enter（角度為度）。",
+   "observed": {
+    "active": "Cube",
+    "selected": [
+     "Cube"
+    ],
+    "mode": "OBJECT",
+    "objects": [
+     "Camera",
+     "Cube",
+     "Light"
+    ],
+    "location": [
+     0.5,
+     0.25,
+     0.25
+    ],
+    "rotationDegrees": [
+     0.0,
+     30.000000834826057,
+     0.0
+    ],
+    "scale": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "dimensions": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "collections": [
+     "Collection"
+    ],
+    "sidebarVisible": true,
+    "viewDistance": 18.38804817199707,
+    "viewLocation": [
+     -0.020693248137831688,
+     -0.04602546989917755,
+     0.0006694307667203248
+    ],
+    "viewPerspective": "PERSP",
+    "emulateNumpad": false,
+    "sceneUnitSystem": "METRIC",
+    "sceneScaleLength": 1.0
+   },
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "01-08-03-rotate-y.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "84a3069e2f53318ea1f839623516f706bb7c98f9c062a307fffc8b9424108b09"
+  },
+  {
+   "seq": 16,
+   "step": "01-08",
+   "slug": "rotate-y-restore",
+   "recordedAt": "2026-10-27T00:24:57.743Z",
+   "action": "沿同軸旋回 -30°，供下一軸隔離對照。",
+   "observed": {
+    "active": "Cube",
+    "selected": [
+     "Cube"
+    ],
+    "mode": "OBJECT",
+    "objects": [
+     "Camera",
+     "Cube",
+     "Light"
+    ],
+    "location": [
+     0.5,
+     0.25,
+     0.25
+    ],
+    "rotationDegrees": [
+     0.0,
+     -0.0,
+     0.0
+    ],
+    "scale": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "dimensions": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "collections": [
+     "Collection"
+    ],
+    "sidebarVisible": true,
+    "viewDistance": 18.38804817199707,
+    "viewLocation": [
+     -0.020693248137831688,
+     -0.04602546989917755,
+     0.0006694307667203248
+    ],
+    "viewPerspective": "PERSP",
+    "emulateNumpad": false,
+    "sceneUnitSystem": "METRIC",
+    "sceneScaleLength": 1.0
+   },
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "01-08-04-rotate-y-restore.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "8d909237d33f33d3d4c97ee8eb1c4c01d1b12e4f18bc08ab8654b7a7356c19f3"
+  },
+  {
+   "seq": 17,
+   "step": "01-08",
+   "slug": "rotate-z",
+   "recordedAt": "2026-10-27T00:24:59.943Z",
+   "action": "按 R → Z → 30 → Enter（角度為度）。",
+   "observed": {
+    "active": "Cube",
+    "selected": [
+     "Cube"
+    ],
+    "mode": "OBJECT",
+    "objects": [
+     "Camera",
+     "Cube",
+     "Light"
+    ],
+    "location": [
+     0.5,
+     0.25,
+     0.25
+    ],
+    "rotationDegrees": [
+     0.0,
+     -0.0,
+     30.000000834826057
+    ],
+    "scale": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "dimensions": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "collections": [
+     "Collection"
+    ],
+    "sidebarVisible": true,
+    "viewDistance": 18.38804817199707,
+    "viewLocation": [
+     -0.020693248137831688,
+     -0.04602546989917755,
+     0.0006694307667203248
+    ],
+    "viewPerspective": "PERSP",
+    "emulateNumpad": false,
+    "sceneUnitSystem": "METRIC",
+    "sceneScaleLength": 1.0
+   },
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "01-08-05-rotate-z.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "eb06b0aa008a779f3bb0732bd97959fde3657a9d47592d411b729e28118f6669"
+  },
+  {
+   "seq": 18,
+   "step": "01-08",
+   "slug": "rotate-z-restore",
+   "recordedAt": "2026-10-27T00:25:02.143Z",
+   "action": "沿同軸旋回 -30°，供下一軸隔離對照。",
+   "observed": {
+    "active": "Cube",
+    "selected": [
+     "Cube"
+    ],
+    "mode": "OBJECT",
+    "objects": [
+     "Camera",
+     "Cube",
+     "Light"
+    ],
+    "location": [
+     0.5,
+     0.25,
+     0.25
+    ],
+    "rotationDegrees": [
+     0.0,
+     -0.0,
+     0.0
+    ],
+    "scale": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "dimensions": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "collections": [
+     "Collection"
+    ],
+    "sidebarVisible": true,
+    "viewDistance": 18.38804817199707,
+    "viewLocation": [
+     -0.020693248137831688,
+     -0.04602546989917755,
+     0.0006694307667203248
+    ],
+    "viewPerspective": "PERSP",
+    "emulateNumpad": false,
+    "sceneUnitSystem": "METRIC",
+    "sceneScaleLength": 1.0
+   },
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "01-08-06-rotate-z-restore.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "8d909237d33f33d3d4c97ee8eb1c4c01d1b12e4f18bc08ab8654b7a7356c19f3"
+  },
+  {
+   "seq": 19,
+   "step": "01-08",
+   "slug": "scale-x",
+   "recordedAt": "2026-10-27T00:25:04.343Z",
+   "action": "按 S → X → 1.5 → Enter（倍率，非絕對尺寸）。",
+   "observed": {
+    "active": "Cube",
+    "selected": [
+     "Cube"
+    ],
+    "mode": "OBJECT",
+    "objects": [
+     "Camera",
+     "Cube",
+     "Light"
+    ],
+    "location": [
+     0.5,
+     0.25,
+     0.25
+    ],
+    "rotationDegrees": [
+     0.0,
+     -0.0,
+     0.0
+    ],
+    "scale": [
+     1.5,
+     1.0,
+     1.0
+    ],
+    "dimensions": [
+     3.0,
+     2.0,
+     2.0
+    ],
+    "collections": [
+     "Collection"
+    ],
+    "sidebarVisible": true,
+    "viewDistance": 18.38804817199707,
+    "viewLocation": [
+     -0.020693248137831688,
+     -0.04602546989917755,
+     0.0006694307667203248
+    ],
+    "viewPerspective": "PERSP",
+    "emulateNumpad": false,
+    "sceneUnitSystem": "METRIC",
+    "sceneScaleLength": 1.0
+   },
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "01-08-07-scale-x.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "0de90de19178b4e84a02c68a8ce57e19165602f7c69e31ae912f302283b34c03"
+  },
+  {
+   "seq": 20,
+   "step": "01-08",
+   "slug": "scale-x-restore",
+   "recordedAt": "2026-10-27T00:25:06.543Z",
+   "action": "同軸乘 2/3，恢復 Scale=1，供下一軸隔離對照。",
+   "observed": {
+    "active": "Cube",
+    "selected": [
+     "Cube"
+    ],
+    "mode": "OBJECT",
+    "objects": [
+     "Camera",
+     "Cube",
+     "Light"
+    ],
+    "location": [
+     0.5,
+     0.25,
+     0.25
+    ],
+    "rotationDegrees": [
+     0.0,
+     -0.0,
+     0.0
+    ],
+    "scale": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "dimensions": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "collections": [
+     "Collection"
+    ],
+    "sidebarVisible": true,
+    "viewDistance": 18.38804817199707,
+    "viewLocation": [
+     -0.020693248137831688,
+     -0.04602546989917755,
+     0.0006694307667203248
+    ],
+    "viewPerspective": "PERSP",
+    "emulateNumpad": false,
+    "sceneUnitSystem": "METRIC",
+    "sceneScaleLength": 1.0
+   },
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "01-08-08-scale-x-restore.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "7a09d993069f686bbe3a7bbae46f07f6c9a17a9e1675272fbd98114020d33593"
+  },
+  {
+   "seq": 21,
+   "step": "01-08",
+   "slug": "scale-y",
+   "recordedAt": "2026-10-27T00:25:08.743Z",
+   "action": "按 S → Y → 1.5 → Enter（倍率，非絕對尺寸）。",
+   "observed": {
+    "active": "Cube",
+    "selected": [
+     "Cube"
+    ],
+    "mode": "OBJECT",
+    "objects": [
+     "Camera",
+     "Cube",
+     "Light"
+    ],
+    "location": [
+     0.5,
+     0.25,
+     0.25
+    ],
+    "rotationDegrees": [
+     0.0,
+     -0.0,
+     0.0
+    ],
+    "scale": [
+     1.0,
+     1.5,
+     1.0
+    ],
+    "dimensions": [
+     2.0,
+     3.0,
+     2.0
+    ],
+    "collections": [
+     "Collection"
+    ],
+    "sidebarVisible": true,
+    "viewDistance": 18.38804817199707,
+    "viewLocation": [
+     -0.020693248137831688,
+     -0.04602546989917755,
+     0.0006694307667203248
+    ],
+    "viewPerspective": "PERSP",
+    "emulateNumpad": false,
+    "sceneUnitSystem": "METRIC",
+    "sceneScaleLength": 1.0
+   },
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "01-08-09-scale-y.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "e32c600378c198e6d62da6403b4f5479e1e0a4cd1a6e93d36783fc5dd680cc02"
+  },
+  {
+   "seq": 22,
+   "step": "01-08",
+   "slug": "scale-y-restore",
+   "recordedAt": "2026-10-27T00:25:10.943Z",
+   "action": "同軸乘 2/3，恢復 Scale=1，供下一軸隔離對照。",
+   "observed": {
+    "active": "Cube",
+    "selected": [
+     "Cube"
+    ],
+    "mode": "OBJECT",
+    "objects": [
+     "Camera",
+     "Cube",
+     "Light"
+    ],
+    "location": [
+     0.5,
+     0.25,
+     0.25
+    ],
+    "rotationDegrees": [
+     0.0,
+     -0.0,
+     0.0
+    ],
+    "scale": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "dimensions": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "collections": [
+     "Collection"
+    ],
+    "sidebarVisible": true,
+    "viewDistance": 18.38804817199707,
+    "viewLocation": [
+     -0.020693248137831688,
+     -0.04602546989917755,
+     0.0006694307667203248
+    ],
+    "viewPerspective": "PERSP",
+    "emulateNumpad": false,
+    "sceneUnitSystem": "METRIC",
+    "sceneScaleLength": 1.0
+   },
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "01-08-10-scale-y-restore.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "7a09d993069f686bbe3a7bbae46f07f6c9a17a9e1675272fbd98114020d33593"
+  },
+  {
+   "seq": 23,
+   "step": "01-08",
+   "slug": "scale-z",
+   "recordedAt": "2026-10-27T00:25:13.143Z",
+   "action": "按 S → Z → 1.5 → Enter（倍率，非絕對尺寸）。",
+   "observed": {
+    "active": "Cube",
+    "selected": [
+     "Cube"
+    ],
+    "mode": "OBJECT",
+    "objects": [
+     "Camera",
+     "Cube",
+     "Light"
+    ],
+    "location": [
+     0.5,
+     0.25,
+     0.25
+    ],
+    "rotationDegrees": [
+     0.0,
+     -0.0,
+     0.0
+    ],
+    "scale": [
+     1.0,
+     1.0,
+     1.5
+    ],
+    "dimensions": [
+     2.0,
+     2.0,
+     3.0
+    ],
+    "collections": [
+     "Collection"
+    ],
+    "sidebarVisible": true,
+    "viewDistance": 18.38804817199707,
+    "viewLocation": [
+     -0.020693248137831688,
+     -0.04602546989917755,
+     0.0006694307667203248
+    ],
+    "viewPerspective": "PERSP",
+    "emulateNumpad": false,
+    "sceneUnitSystem": "METRIC",
+    "sceneScaleLength": 1.0
+   },
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "01-08-11-scale-z.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "dbac895c788fe8a5f18a28bbf86940bc2b81e1bb1de70bcbcb56c285628d5b9d"
+  },
+  {
+   "seq": 24,
+   "step": "01-08",
+   "slug": "scale-z-restore",
+   "recordedAt": "2026-10-27T00:25:15.343Z",
+   "action": "同軸乘 2/3，恢復 Scale=1，供下一軸隔離對照。",
+   "observed": {
+    "active": "Cube",
+    "selected": [
+     "Cube"
+    ],
+    "mode": "OBJECT",
+    "objects": [
+     "Camera",
+     "Cube",
+     "Light"
+    ],
+    "location": [
+     0.5,
+     0.25,
+     0.25
+    ],
+    "rotationDegrees": [
+     0.0,
+     -0.0,
+     0.0
+    ],
+    "scale": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "dimensions": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "collections": [
+     "Collection"
+    ],
+    "sidebarVisible": true,
+    "viewDistance": 18.38804817199707,
+    "viewLocation": [
+     -0.020693248137831688,
+     -0.04602546989917755,
+     0.0006694307667203248
+    ],
+    "viewPerspective": "PERSP",
+    "emulateNumpad": false,
+    "sceneUnitSystem": "METRIC",
+    "sceneScaleLength": 1.0
+   },
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "01-08-12-scale-z-restore.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "7a09d993069f686bbe3a7bbae46f07f6c9a17a9e1675272fbd98114020d33593"
+  },
+  {
+   "seq": 25,
+   "step": "01-05",
+   "slug": "tab-edit",
+   "recordedAt": "2026-10-27T00:25:16.793Z",
+   "action": "Cube 已選取，在 3D Viewport 按 Tab 進入 Edit Mode。",
+   "observed": {
+    "active": "Cube",
+    "selected": [
+     "Cube"
+    ],
+    "mode": "EDIT_MESH",
+    "objects": [
+     "Camera",
+     "Cube",
+     "Light"
+    ],
+    "location": [
+     0.5,
+     0.25,
+     0.25
+    ],
+    "rotationDegrees": [
+     0.0,
+     -0.0,
+     0.0
+    ],
+    "scale": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "dimensions": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "collections": [
+     "Collection"
+    ],
+    "sidebarVisible": true,
+    "viewDistance": 18.38804817199707,
+    "viewLocation": [
+     -0.020693248137831688,
+     -0.04602546989917755,
+     0.0006694307667203248
+    ],
+    "viewPerspective": "PERSP",
+    "emulateNumpad": false,
+    "sceneUnitSystem": "METRIC",
+    "sceneScaleLength": 1.0
+   },
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "01-05-01-tab-edit.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "ef3c94f920b0aa08cc349b691074ef4b0b112b02ad528b91d11e7414a0ebb7e6"
+  },
+  {
+   "seq": 26,
+   "step": "01-05",
+   "slug": "tab-object",
+   "recordedAt": "2026-10-27T00:25:18.243Z",
+   "action": "再按 Tab 回 Object Mode。",
+   "observed": {
+    "active": "Cube",
+    "selected": [
+     "Cube"
+    ],
+    "mode": "OBJECT",
+    "objects": [
+     "Camera",
+     "Cube",
+     "Light"
+    ],
+    "location": [
+     0.5,
+     0.25,
+     0.25
+    ],
+    "rotationDegrees": [
+     0.0,
+     -0.0,
+     0.0
+    ],
+    "scale": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "dimensions": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "collections": [
+     "Collection"
+    ],
+    "sidebarVisible": true,
+    "viewDistance": 18.38804817199707,
+    "viewLocation": [
+     -0.020693248137831688,
+     -0.04602546989917755,
+     0.0006694307667203248
+    ],
+    "viewPerspective": "PERSP",
+    "emulateNumpad": false,
+    "sceneUnitSystem": "METRIC",
+    "sceneScaleLength": 1.0
+   },
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "01-05-02-tab-object.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "44cb09a22b591b3f141f02631bcd29d7842171430f57b7b336d8421852ccb314"
+  },
+  {
+   "seq": 27,
+   "step": "01-05",
+   "slug": "select-all",
+   "recordedAt": "2026-10-27T00:25:19.693Z",
+   "action": "Object Mode 按 A，全選三個場景物件。",
+   "observed": {
+    "active": "Cube",
+    "selected": [
+     "Camera",
+     "Cube",
+     "Light"
+    ],
+    "mode": "OBJECT",
+    "objects": [
+     "Camera",
+     "Cube",
+     "Light"
+    ],
+    "location": [
+     0.5,
+     0.25,
+     0.25
+    ],
+    "rotationDegrees": [
+     0.0,
+     -0.0,
+     0.0
+    ],
+    "scale": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "dimensions": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "collections": [
+     "Collection"
+    ],
+    "sidebarVisible": true,
+    "viewDistance": 18.38804817199707,
+    "viewLocation": [
+     -0.020693248137831688,
+     -0.04602546989917755,
+     0.0006694307667203248
+    ],
+    "viewPerspective": "PERSP",
+    "emulateNumpad": false,
+    "sceneUnitSystem": "METRIC",
+    "sceneScaleLength": 1.0
+   },
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "01-05-03-select-all.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "2b0a73725df87934c93f1fbf098bf420fd7c4e8b04b04a57a2cfb8be83d4d91a"
+  },
+  {
+   "seq": 28,
+   "step": "01-05",
+   "slug": "deselect-all",
+   "recordedAt": "2026-10-27T00:25:21.143Z",
+   "action": "Object Mode 按 Alt+A，取消全部選取。",
+   "observed": {
+    "active": "Cube",
+    "selected": [],
+    "mode": "OBJECT",
+    "objects": [
+     "Camera",
+     "Cube",
+     "Light"
+    ],
+    "location": [
+     0.5,
+     0.25,
+     0.25
+    ],
+    "rotationDegrees": [
+     0.0,
+     -0.0,
+     0.0
+    ],
+    "scale": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "dimensions": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "collections": [
+     "Collection"
+    ],
+    "sidebarVisible": true,
+    "viewDistance": 18.38804817199707,
+    "viewLocation": [
+     -0.020693248137831688,
+     -0.04602546989917755,
+     0.0006694307667203248
+    ],
+    "viewPerspective": "PERSP",
+    "emulateNumpad": false,
+    "sceneUnitSystem": "METRIC",
+    "sceneScaleLength": 1.0
+   },
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "01-05-04-deselect-all.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "cfc5e1ef02f779385c54e1f555ac55f985efed968ee81c1af1116287e3192afb"
+  },
+  {
+   "seq": 29,
+   "step": "01-06",
+   "slug": "frame-selected",
+   "recordedAt": "2026-10-27T00:25:23.303Z",
+   "action": "在 3D Viewport 按數字鍵盤小數點，對焦選取的 Cube。",
+   "observed": {
+    "active": "Cube",
+    "selected": [
+     "Cube"
+    ],
+    "mode": "OBJECT",
+    "objects": [
+     "Camera",
+     "Cube",
+     "Light"
+    ],
+    "location": [
+     0.5,
+     0.25,
+     0.25
+    ],
+    "rotationDegrees": [
+     0.0,
+     -0.0,
+     0.0
+    ],
+    "scale": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "dimensions": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "collections": [
+     "Collection"
+    ],
+    "sidebarVisible": true,
+    "viewDistance": 2.650333881378174,
+    "viewLocation": [
+     0.5,
+     0.25,
+     0.25
+    ],
+    "viewPerspective": "PERSP",
+    "emulateNumpad": false,
+    "sceneUnitSystem": "METRIC",
+    "sceneScaleLength": 1.0
+   },
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "01-06-01-frame-selected.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "fa731813db5e29290e40820777c2065d8251c6be01639017f9857593e4257600"
+  },
+  {
+   "seq": 30,
+   "step": "02-02",
+   "slug": "shift-a-menu",
+   "recordedAt": "2026-10-27T00:25:23.953Z",
+   "action": "按 Shift+A，核對原生 Add 選單。",
+   "observed": {
+    "active": "Cube",
+    "selected": [
+     "Cube"
+    ],
+    "mode": "OBJECT",
+    "objects": [
+     "Camera",
+     "Cube",
+     "Light"
+    ],
+    "location": [
+     0.5,
+     0.25,
+     0.25
+    ],
+    "rotationDegrees": [
+     0.0,
+     -0.0,
+     0.0
+    ],
+    "scale": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "dimensions": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "collections": [
+     "Collection"
+    ],
+    "sidebarVisible": true,
+    "viewDistance": 2.650333881378174,
+    "viewLocation": [
+     0.5,
+     0.25,
+     0.25
+    ],
+    "viewPerspective": "PERSP",
+    "emulateNumpad": false,
+    "sceneUnitSystem": "METRIC",
+    "sceneScaleLength": 1.0
+   },
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "02-02-01-shift-a-menu.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "5068b34e8b86697a6b903474596f71d54b9a9c28fa4c7bce9856e7a2542591d6",
+   "note": "選單是否展開請以原圖核對；旁列數值只是同時讀回的場景狀態，不把固定描述當成程式讀值。"
+  },
+  {
+   "seq": 31,
+   "step": "01-05",
+   "slug": "x-delete-menu",
+   "recordedAt": "2026-10-27T00:25:24.953Z",
+   "action": "按 X，核對刪除確認；本次按 Esc 保留 Cube。",
+   "observed": {
+    "active": "Cube",
+    "selected": [
+     "Cube"
+    ],
+    "mode": "OBJECT",
+    "objects": [
+     "Camera",
+     "Cube",
+     "Light"
+    ],
+    "location": [
+     0.5,
+     0.25,
+     0.25
+    ],
+    "rotationDegrees": [
+     0.0,
+     -0.0,
+     0.0
+    ],
+    "scale": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "dimensions": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "collections": [
+     "Collection"
+    ],
+    "sidebarVisible": true,
+    "viewDistance": 2.650333881378174,
+    "viewLocation": [
+     0.5,
+     0.25,
+     0.25
+    ],
+    "viewPerspective": "PERSP",
+    "emulateNumpad": false,
+    "sceneUnitSystem": "METRIC",
+    "sceneScaleLength": 1.0
+   },
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "01-05-05-x-delete-menu.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "d34c28902cdcdc0de0a33922ce5b7c086227aa72eb15f88bf6c4d63e1e10efcd",
+   "note": "選單是否展開請以原圖核對；旁列數值只是同時讀回的場景狀態，不把固定描述當成程式讀值。"
+  },
+  {
+   "seq": 32,
+   "step": "02-03",
+   "slug": "f2-rename-dialog",
+   "recordedAt": "2026-10-27T00:25:25.953Z",
+   "action": "按 F2，核對 Rename Active Item 名稱輸入框。",
+   "observed": {
+    "active": "Cube",
+    "selected": [
+     "Cube"
+    ],
+    "mode": "OBJECT",
+    "objects": [
+     "Camera",
+     "Cube",
+     "Light"
+    ],
+    "location": [
+     0.5,
+     0.25,
+     0.25
+    ],
+    "rotationDegrees": [
+     0.0,
+     -0.0,
+     0.0
+    ],
+    "scale": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "dimensions": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "collections": [
+     "Collection"
+    ],
+    "sidebarVisible": true,
+    "viewDistance": 2.650333881378174,
+    "viewLocation": [
+     0.5,
+     0.25,
+     0.25
+    ],
+    "viewPerspective": "PERSP",
+    "emulateNumpad": false,
+    "sceneUnitSystem": "METRIC",
+    "sceneScaleLength": 1.0
+   },
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "02-03-01-f2-rename-dialog.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "f346ab49f9c3f470ad2cc95be64a70d74ffd7b1013ec5d2edea3127c9ae14db4",
+   "note": "選單是否展開請以原圖核對；旁列數值只是同時讀回的場景狀態，不把固定描述當成程式讀值。"
+  },
+  {
+   "seq": 33,
+   "step": "02-03",
+   "slug": "f2-renamed",
+   "recordedAt": "2026-10-27T00:25:28.003Z",
+   "action": "在 F2 名稱欄輸入 ShortcutCube 並 Enter。",
+   "observed": {
+    "active": "ShortcutCube",
+    "selected": [
+     "ShortcutCube"
+    ],
+    "mode": "OBJECT",
+    "objects": [
+     "Camera",
+     "Light",
+     "ShortcutCube"
+    ],
+    "location": [
+     0.5,
+     0.25,
+     0.25
+    ],
+    "rotationDegrees": [
+     0.0,
+     -0.0,
+     0.0
+    ],
+    "scale": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "dimensions": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "collections": [
+     "Collection"
+    ],
+    "sidebarVisible": true,
+    "viewDistance": 2.650333881378174,
+    "viewLocation": [
+     0.5,
+     0.25,
+     0.25
+    ],
+    "viewPerspective": "PERSP",
+    "emulateNumpad": false,
+    "sceneUnitSystem": "METRIC",
+    "sceneScaleLength": 1.0
+   },
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "02-03-02-f2-renamed.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "324e3fbbe8998a350887e8a7bf9df509e6157e5d5015e57d2ee60a4497d4e914"
+  },
+  {
+   "seq": 34,
+   "step": "02-03",
+   "slug": "m-collection-menu",
+   "recordedAt": "2026-10-27T00:25:28.653Z",
+   "action": "按 M，核對 Move to Collection 選單；此圖尚未移入新集合。",
+   "observed": {
+    "active": "ShortcutCube",
+    "selected": [
+     "ShortcutCube"
+    ],
+    "mode": "OBJECT",
+    "objects": [
+     "Camera",
+     "Light",
+     "ShortcutCube"
+    ],
+    "location": [
+     0.5,
+     0.25,
+     0.25
+    ],
+    "rotationDegrees": [
+     0.0,
+     -0.0,
+     0.0
+    ],
+    "scale": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "dimensions": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "collections": [
+     "Collection"
+    ],
+    "sidebarVisible": true,
+    "viewDistance": 2.650333881378174,
+    "viewLocation": [
+     0.5,
+     0.25,
+     0.25
+    ],
+    "viewPerspective": "PERSP",
+    "emulateNumpad": false,
+    "sceneUnitSystem": "METRIC",
+    "sceneScaleLength": 1.0
+   },
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "02-03-03-m-collection-menu.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "e9426fdd706de16750ee3300ce9d9a3855532b3ffbe4289908070886c2733467",
+   "note": "選單是否展開請以原圖核對；旁列數值只是同時讀回的場景狀態，不把固定描述當成程式讀值。"
+  },
+  {
+   "seq": 35,
+   "step": "02-07",
+   "slug": "ctrl-a-apply-menu",
+   "recordedAt": "2026-10-27T00:25:29.653Z",
+   "action": "按 Ctrl+A，核對 Apply 選單；此圖尚未套用變換。",
+   "observed": {
+    "active": "ShortcutCube",
+    "selected": [
+     "ShortcutCube"
+    ],
+    "mode": "OBJECT",
+    "objects": [
+     "Camera",
+     "Light",
+     "ShortcutCube"
+    ],
+    "location": [
+     0.5,
+     0.25,
+     0.25
+    ],
+    "rotationDegrees": [
+     0.0,
+     -0.0,
+     0.0
+    ],
+    "scale": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "dimensions": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "collections": [
+     "Collection"
+    ],
+    "sidebarVisible": true,
+    "viewDistance": 2.650333881378174,
+    "viewLocation": [
+     0.5,
+     0.25,
+     0.25
+    ],
+    "viewPerspective": "PERSP",
+    "emulateNumpad": false,
+    "sceneUnitSystem": "METRIC",
+    "sceneScaleLength": 1.0
+   },
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "02-07-01-ctrl-a-apply-menu.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "5d3eb178b16e46c9aa32af11a6868f9fcb2d23e187f75f7578f5fdb63146b04b",
+   "note": "選單是否展開請以原圖核對；旁列數值只是同時讀回的場景狀態，不把固定描述當成程式讀值。"
+  },
+  {
+   "seq": 36,
+   "step": "01-06",
+   "slug": "preferences-emulate-numpad",
+   "recordedAt": "2026-10-27T00:25:32.153Z",
+   "action": "開啟隔離 Blender 的 Preferences，顯示 Input 中的 Emulate Numpad 欄位；未儲存偏好設定。",
+   "observed": {
+    "activeSection": "INPUT",
+    "emulateNumpad": false,
+    "changedActiveSectionBy": "Python UI-section property only; no input setting changed"
+   },
+   "window": "PREFERENCES",
+   "highlights": [],
+   "clicks": [],
+   "file": "01-06-02-preferences-emulate-numpad.png",
+   "width": 840,
+   "height": 550,
+   "sha256": "69e216564052458e430d7a1d39fad6bd5cb4cc64ed53fa55eec3135256cd7b50"
+  }
+ ]
+}

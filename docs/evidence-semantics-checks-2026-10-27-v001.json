@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "id": "evidence-semantics-checks-2026-10-27-v001",
+  "checkedOn": "2026-10-27",
+  "stage": "local_worktree_candidate_for_Claude_review",
+  "baseCommit": "4b613f47c91f8eca51cf357097670718d8d31a77",
+  "gitCommitCreated": false,
+  "gitPushPerformed": false,
+  "blenderReplayed": false,
+  "progressWritten": false,
+  "confirmPerformed": false,
+  "runtime": {"python": "3.12.14", "os": "Windows"},
+  "tests": {
+    "serverAndBootstrap": {"run": 30, "passed": 28, "skipped": 2, "seconds": 24.613},
+    "tutorFullSuiteAfterChanges": {"run": 283, "passed": 282, "skipped": 1, "seconds": 27.684},
+    "frontendRenderer": {"run": 6, "passed": 6, "skipped": 0},
+    "totalRun": 319,
+    "totalPassed": 316,
+    "totalSkipped": 3,
+    "skipReason": "Existing Windows symlink creation privilege restrictions; no new skips and no relaxed geometry thresholds.",
+    "javascriptSyntax": "passed",
+    "diffWhitespaceWithCrAtEol": "passed"
+  },
+  "catalogValidation": {
+    "runIds": 20,
+    "operationSegmentsIncludingHistory": 42,
+    "events": 425,
+    "classified": 212,
+    "scripted_description": 83,
+    "mixed": 129,
+    "readbackExplicitlyClassified": 0,
+    "unclassified": 213,
+    "historicalManualFiguresWithoutDeclaredHash": 11,
+    "genericContentReviewSummariesCorrected": 27,
+    "annotationBindingsVerified": ["runId", "step", "imagePath", "imageSha256", "observedSha256", "sourcePath", "sourceSha256", "sourceLine"],
+    "deepComparisonToBase": "Only new semantic fields/contentPolicy and the 27 generic review summaries differ; original event text, figures, outputs and all other catalog data are equal.",
+    "readOnlySemanticVerify": "passed"
+  },
+  "workspaceSemantics": {
+    "runnerBoundRuns": 15,
+    "legacyRunsRemainUnknown": 4,
+    "manualLanguageRunRemainsUnknown": 1,
+    "learnerWorkspaceWrites": null,
+    "limit": "Snapshot equality cannot establish absence or authorship of writes between snapshots. Legacy missing hashes are never backfilled."
+  },
+  "preservation": {
+    "protectedOriginalFilesCompared": 1982,
+    "allOriginalSha256Unchanged": true,
+    "authorProgressSha256": "26130175ef80a9fb83699f93a8c33de7b098b17ffa2c10aef794808390d19325",
+    "headUnchanged": true,
+    "indexUnchanged": true,
+    "oldPublicationManifestRetained": "docs/publication-manifest-2026-10-26.json",
+    "oldPublicationPathspecRetained": "docs/publication-paths-2026-10-26.txt"
+  },
+  "agentsEditing": {
+    "beforeBytes": 30620,
+    "afterBytes": 13540,
+    "reductionPercent": 55.78,
+    "originalBytesSha256": "746e9b231de6aeb86aec12663b943b8f4cd2bd54c00bea03a3b58bfe4c9a9cbe",
+    "mappedPassages": 46,
+    "coveredOriginalBullets": 41,
+    "coveredNonEmptyNonHeadingLines": 54,
+    "cooperationRules": 7,
+    "limits": "Mapping preserves exact original passages and new destinations; coverage is not a formal proof of semantic equivalence."
+  },
+  "candidateManifest": {
+    "path": "docs/publication-manifest-2026-10-27.json",
+    "pathspec": "docs/publication-paths-2026-10-27.txt",
+    "verification": "passed",
+    "candidateFiles": 1134,
+    "hashedFiles": 1132,
+    "isolatedPublicCopy": "passed: both manifest and semantic verification succeed with no author progress or raw runner-status files",
+    "privateRawEvidenceRequired": false,
+    "oldDerivativesNeverRewrittenForDateOnlyChange": true,
+    "changedDerivativeInputsReceiveNewVersion": true
+  },
+  "reviewLimits": [
+    "Claude review is pending; this report is not reviewer approval or authorization to commit or push.",
+    "The new GitHub workflow was edited and its commands tested locally; no hosted CI was triggered for this worktree.",
+    "No new Blender operation, screenshot, geometry, printing, fit, improvement or strength qualification is claimed.",
+    "Current source references for legacy runs are classification context, not frozen runtime provenance.",
+    "UTF-8 annotation repair and manual-figure missing-hash handling were verified before handoff; failure drafts are described in the journal."
+  ]
+}

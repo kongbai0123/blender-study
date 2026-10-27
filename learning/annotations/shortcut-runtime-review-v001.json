@@ -1,0 +1,656 @@
+{
+  "schemaVersion": 1,
+  "kind": "supplemental_shortcut_evidence_review",
+  "date": "2026-10-27",
+  "reviewer": "Codex/shortcut_runtime",
+  "scope": "53 original successful-run PNGs individually viewed; native state/mesh readbacks and hashes checked",
+  "blender": "5.2.1 LTS",
+  "buildHash": "9e2066aef7ef",
+  "runs": [
+    {
+      "runId": "2026-10-27-shortcuts-demo-v001",
+      "run": {
+        "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/run.json",
+        "sha256": "d901e26ec2d5789d044054b6a7a2c536c0e15bbae26373fcf4eceabfd7aafd3c"
+      },
+      "verification": {
+        "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/shortcut-verification-v001.json",
+        "sha256": "68e9d38fcb0f357554a137b1a0efed4c7b9b75954fa978405a6641012f72f5b0"
+      },
+      "sourceSnapshot": {
+        "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/source-snapshot/manifest.json",
+        "sha256": "d925406e61ed342ac21e9fb29a72dd8ee2ddcc564020caba7c526c274dfc702d"
+      },
+      "screenshots": [
+        {
+          "case": "baseline",
+          "screenshot": {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/01-07-01-baseline.png",
+            "sha256": "e13488de369a02a0437d128539be91c82e2941e5d93b43f48052bd063056d676"
+          },
+          "visualReview": "view_image_original_png",
+          "reviewPassed": true,
+          "observedKind": "structured_readback_with_native_screenshot"
+        },
+        {
+          "case": "sidebar-n",
+          "screenshot": {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/01-07-02-sidebar-n.png",
+            "sha256": "9270d0cd22c665e339709ad5a01578f3e1dead709afe32d861a7f152b2f3e55e"
+          },
+          "visualReview": "view_image_original_png",
+          "reviewPassed": true,
+          "observedKind": "structured_readback_with_native_screenshot"
+        },
+        {
+          "case": "translate-x-from-zero",
+          "screenshot": {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/01-07-03-translate-x-from-zero.png",
+            "sha256": "e50fc34ea7578b53e759b58985c08a14e30406a812104c35432fa410326dadc5"
+          },
+          "visualReview": "view_image_original_png",
+          "reviewPassed": true,
+          "observedKind": "structured_readback_with_native_screenshot"
+        },
+        {
+          "case": "translate-x-start-one",
+          "screenshot": {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/01-07-04-translate-x-start-one.png",
+            "sha256": "0a7443ec932dcf9bbd37b5ee357a4c468ed3a6fe4b349e8ad825102621801290"
+          },
+          "visualReview": "view_image_original_png",
+          "reviewPassed": true,
+          "observedKind": "structured_readback_with_native_screenshot"
+        },
+        {
+          "case": "translate-x-from-one",
+          "screenshot": {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/01-07-05-translate-x-from-one.png",
+            "sha256": "4b2597d510ca80aeb4b986b660482a44dec5441d9bfd464ea8aa7bd052e04f02"
+          },
+          "visualReview": "view_image_original_png",
+          "reviewPassed": true,
+          "observedKind": "structured_readback_with_native_screenshot"
+        },
+        {
+          "case": "translate-x-negative",
+          "screenshot": {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/01-07-06-translate-x-negative.png",
+            "sha256": "0a7443ec932dcf9bbd37b5ee357a4c468ed3a6fe4b349e8ad825102621801290"
+          },
+          "visualReview": "view_image_original_png",
+          "reviewPassed": true,
+          "observedKind": "structured_readback_with_native_screenshot"
+        },
+        {
+          "case": "translate-no-axis",
+          "screenshot": {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/01-07-07-translate-no-axis.png",
+            "sha256": "4b2597d510ca80aeb4b986b660482a44dec5441d9bfd464ea8aa7bd052e04f02"
+          },
+          "visualReview": "view_image_original_png",
+          "reviewPassed": true,
+          "observedKind": "structured_readback_with_native_screenshot"
+        },
+        {
+          "case": "translate-cancel-esc",
+          "screenshot": {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/01-07-08-translate-cancel-esc.png",
+            "sha256": "4b2597d510ca80aeb4b986b660482a44dec5441d9bfd464ea8aa7bd052e04f02"
+          },
+          "visualReview": "view_image_original_png",
+          "reviewPassed": true,
+          "observedKind": "structured_readback_with_native_screenshot"
+        },
+        {
+          "case": "translate-cancel-rightmouse",
+          "screenshot": {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/01-07-09-translate-cancel-rightmouse.png",
+            "sha256": "4b2597d510ca80aeb4b986b660482a44dec5441d9bfd464ea8aa7bd052e04f02"
+          },
+          "visualReview": "view_image_original_png",
+          "reviewPassed": true,
+          "observedKind": "structured_readback_with_native_screenshot"
+        },
+        {
+          "case": "location-field-absolute",
+          "screenshot": {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/01-07-10-location-field-absolute.png",
+            "sha256": "4cad60be42895a8fe53f9dd856844984625956c09a43516ec5af38a7c624e6f8"
+          },
+          "visualReview": "view_image_original_png",
+          "reviewPassed": true,
+          "observedKind": "structured_readback_with_native_screenshot"
+        },
+        {
+          "case": "translate-y",
+          "screenshot": {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/01-07-11-translate-y.png",
+            "sha256": "f4186a3bfc5d062ba3b97f63b32bed5c695aab528c9e17e24abe0805cf7e1b0f"
+          },
+          "visualReview": "view_image_original_png",
+          "reviewPassed": true,
+          "observedKind": "structured_readback_with_native_screenshot"
+        },
+        {
+          "case": "translate-z",
+          "screenshot": {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/01-07-12-translate-z.png",
+            "sha256": "9864bb86b74a4178e918f1bc8021f5094b31488f078b75bdaf63cb858a6ab4bd"
+          },
+          "visualReview": "view_image_original_png",
+          "reviewPassed": true,
+          "observedKind": "structured_readback_with_native_screenshot"
+        },
+        {
+          "case": "rotate-x",
+          "screenshot": {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/01-08-01-rotate-x.png",
+            "sha256": "508c63472236e3d42947ea4b058892900438a9c2a356fc5842de39c466730503"
+          },
+          "visualReview": "view_image_original_png",
+          "reviewPassed": true,
+          "observedKind": "structured_readback_with_native_screenshot"
+        },
+        {
+          "case": "rotate-x-restore",
+          "screenshot": {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/01-08-02-rotate-x-restore.png",
+            "sha256": "8d909237d33f33d3d4c97ee8eb1c4c01d1b12e4f18bc08ab8654b7a7356c19f3"
+          },
+          "visualReview": "view_image_original_png",
+          "reviewPassed": true,
+          "observedKind": "structured_readback_with_native_screenshot"
+        },
+        {
+          "case": "rotate-y",
+          "screenshot": {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/01-08-03-rotate-y.png",
+            "sha256": "84a3069e2f53318ea1f839623516f706bb7c98f9c062a307fffc8b9424108b09"
+          },
+          "visualReview": "view_image_original_png",
+          "reviewPassed": true,
+          "observedKind": "structured_readback_with_native_screenshot"
+        },
+        {
+          "case": "rotate-y-restore",
+          "screenshot": {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/01-08-04-rotate-y-restore.png",
+            "sha256": "8d909237d33f33d3d4c97ee8eb1c4c01d1b12e4f18bc08ab8654b7a7356c19f3"
+          },
+          "visualReview": "view_image_original_png",
+          "reviewPassed": true,
+          "observedKind": "structured_readback_with_native_screenshot"
+        },
+        {
+          "case": "rotate-z",
+          "screenshot": {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/01-08-05-rotate-z.png",
+            "sha256": "eb06b0aa008a779f3bb0732bd97959fde3657a9d47592d411b729e28118f6669"
+          },
+          "visualReview": "view_image_original_png",
+          "reviewPassed": true,
+          "observedKind": "structured_readback_with_native_screenshot"
+        },
+        {
+          "case": "rotate-z-restore",
+          "screenshot": {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/01-08-06-rotate-z-restore.png",
+            "sha256": "8d909237d33f33d3d4c97ee8eb1c4c01d1b12e4f18bc08ab8654b7a7356c19f3"
+          },
+          "visualReview": "view_image_original_png",
+          "reviewPassed": true,
+          "observedKind": "structured_readback_with_native_screenshot"
+        },
+        {
+          "case": "scale-x",
+          "screenshot": {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/01-08-07-scale-x.png",
+            "sha256": "0de90de19178b4e84a02c68a8ce57e19165602f7c69e31ae912f302283b34c03"
+          },
+          "visualReview": "view_image_original_png",
+          "reviewPassed": true,
+          "observedKind": "structured_readback_with_native_screenshot"
+        },
+        {
+          "case": "scale-x-restore",
+          "screenshot": {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/01-08-08-scale-x-restore.png",
+            "sha256": "7a09d993069f686bbe3a7bbae46f07f6c9a17a9e1675272fbd98114020d33593"
+          },
+          "visualReview": "view_image_original_png",
+          "reviewPassed": true,
+          "observedKind": "structured_readback_with_native_screenshot"
+        },
+        {
+          "case": "scale-y",
+          "screenshot": {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/01-08-09-scale-y.png",
+            "sha256": "e32c600378c198e6d62da6403b4f5479e1e0a4cd1a6e93d36783fc5dd680cc02"
+          },
+          "visualReview": "view_image_original_png",
+          "reviewPassed": true,
+          "observedKind": "structured_readback_with_native_screenshot"
+        },
+        {
+          "case": "scale-y-restore",
+          "screenshot": {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/01-08-10-scale-y-restore.png",
+            "sha256": "7a09d993069f686bbe3a7bbae46f07f6c9a17a9e1675272fbd98114020d33593"
+          },
+          "visualReview": "view_image_original_png",
+          "reviewPassed": true,
+          "observedKind": "structured_readback_with_native_screenshot"
+        },
+        {
+          "case": "scale-z",
+          "screenshot": {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/01-08-11-scale-z.png",
+            "sha256": "dbac895c788fe8a5f18a28bbf86940bc2b81e1bb1de70bcbcb56c285628d5b9d"
+          },
+          "visualReview": "view_image_original_png",
+          "reviewPassed": true,
+          "observedKind": "structured_readback_with_native_screenshot"
+        },
+        {
+          "case": "scale-z-restore",
+          "screenshot": {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/01-08-12-scale-z-restore.png",
+            "sha256": "7a09d993069f686bbe3a7bbae46f07f6c9a17a9e1675272fbd98114020d33593"
+          },
+          "visualReview": "view_image_original_png",
+          "reviewPassed": true,
+          "observedKind": "structured_readback_with_native_screenshot"
+        },
+        {
+          "case": "tab-edit",
+          "screenshot": {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/01-05-01-tab-edit.png",
+            "sha256": "ef3c94f920b0aa08cc349b691074ef4b0b112b02ad528b91d11e7414a0ebb7e6"
+          },
+          "visualReview": "view_image_original_png",
+          "reviewPassed": true,
+          "observedKind": "structured_readback_with_native_screenshot"
+        },
+        {
+          "case": "tab-object",
+          "screenshot": {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/01-05-02-tab-object.png",
+            "sha256": "44cb09a22b591b3f141f02631bcd29d7842171430f57b7b336d8421852ccb314"
+          },
+          "visualReview": "view_image_original_png",
+          "reviewPassed": true,
+          "observedKind": "structured_readback_with_native_screenshot"
+        },
+        {
+          "case": "select-all",
+          "screenshot": {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/01-05-03-select-all.png",
+            "sha256": "2b0a73725df87934c93f1fbf098bf420fd7c4e8b04b04a57a2cfb8be83d4d91a"
+          },
+          "visualReview": "view_image_original_png",
+          "reviewPassed": true,
+          "observedKind": "structured_readback_with_native_screenshot"
+        },
+        {
+          "case": "deselect-all",
+          "screenshot": {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/01-05-04-deselect-all.png",
+            "sha256": "cfc5e1ef02f779385c54e1f555ac55f985efed968ee81c1af1116287e3192afb"
+          },
+          "visualReview": "view_image_original_png",
+          "reviewPassed": true,
+          "observedKind": "structured_readback_with_native_screenshot"
+        },
+        {
+          "case": "frame-selected",
+          "screenshot": {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/01-06-01-frame-selected.png",
+            "sha256": "fa731813db5e29290e40820777c2065d8251c6be01639017f9857593e4257600"
+          },
+          "visualReview": "view_image_original_png",
+          "reviewPassed": true,
+          "observedKind": "structured_readback_with_native_screenshot"
+        },
+        {
+          "case": "shift-a-menu",
+          "screenshot": {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/02-02-01-shift-a-menu.png",
+            "sha256": "5068b34e8b86697a6b903474596f71d54b9a9c28fa4c7bce9856e7a2542591d6"
+          },
+          "visualReview": "view_image_original_png",
+          "reviewPassed": true,
+          "observedKind": "structured_readback_with_native_screenshot"
+        },
+        {
+          "case": "x-delete-menu",
+          "screenshot": {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/01-05-05-x-delete-menu.png",
+            "sha256": "d34c28902cdcdc0de0a33922ce5b7c086227aa72eb15f88bf6c4d63e1e10efcd"
+          },
+          "visualReview": "view_image_original_png",
+          "reviewPassed": true,
+          "observedKind": "structured_readback_with_native_screenshot"
+        },
+        {
+          "case": "f2-rename-dialog",
+          "screenshot": {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/02-03-01-f2-rename-dialog.png",
+            "sha256": "f346ab49f9c3f470ad2cc95be64a70d74ffd7b1013ec5d2edea3127c9ae14db4"
+          },
+          "visualReview": "view_image_original_png",
+          "reviewPassed": true,
+          "observedKind": "structured_readback_with_native_screenshot"
+        },
+        {
+          "case": "f2-renamed",
+          "screenshot": {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/02-03-02-f2-renamed.png",
+            "sha256": "324e3fbbe8998a350887e8a7bf9df509e6157e5d5015e57d2ee60a4497d4e914"
+          },
+          "visualReview": "view_image_original_png",
+          "reviewPassed": true,
+          "observedKind": "structured_readback_with_native_screenshot"
+        },
+        {
+          "case": "m-collection-menu",
+          "screenshot": {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/02-03-03-m-collection-menu.png",
+            "sha256": "e9426fdd706de16750ee3300ce9d9a3855532b3ffbe4289908070886c2733467"
+          },
+          "visualReview": "view_image_original_png",
+          "reviewPassed": true,
+          "observedKind": "structured_readback_with_native_screenshot"
+        },
+        {
+          "case": "ctrl-a-apply-menu",
+          "screenshot": {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/02-07-01-ctrl-a-apply-menu.png",
+            "sha256": "5d3eb178b16e46c9aa32af11a6868f9fcb2d23e187f75f7578f5fdb63146b04b"
+          },
+          "visualReview": "view_image_original_png",
+          "reviewPassed": true,
+          "observedKind": "structured_readback_with_native_screenshot"
+        },
+        {
+          "case": "preferences-emulate-numpad",
+          "screenshot": {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/01-06-02-preferences-emulate-numpad.png",
+            "sha256": "69e216564052458e430d7a1d39fad6bd5cb4cc64ed53fa55eec3135256cd7b50"
+          },
+          "visualReview": "view_image_original_png",
+          "reviewPassed": true,
+          "observedKind": "structured_readback_with_native_screenshot"
+        }
+      ],
+      "screenshotCount": 36,
+      "nativeAssertionPassCount": 29,
+      "observationOnlyCases": [
+        "translate-no-axis",
+        "shift-a-menu",
+        "x-delete-menu",
+        "f2-rename-dialog",
+        "m-collection-menu",
+        "ctrl-a-apply-menu"
+      ],
+      "workspaceContentsUnchanged": true,
+      "learnerWorkspaceWrites": null,
+      "workspaceEvidenceNote": "Runner遞迴前後路徑與雜湊一致；不證明期間未寫入，也不辨認寫入者。"
+    },
+    {
+      "runId": "2026-10-27-shortcuts-keyboard-demo-v002",
+      "run": {
+        "path": "learning/evidence/01/2026-10-27-shortcuts-keyboard-demo-v002/run.json",
+        "sha256": "575fe3a42ac89044518598bd31ef60c1aa13f8398dbeaf1cf99d2b798f44e186"
+      },
+      "verification": {
+        "path": "learning/evidence/01/2026-10-27-shortcuts-keyboard-demo-v002/keyboard-verification-v001.json",
+        "sha256": "40a8178bd6b7f67c8a0416bf6da23c2d34ee072769044580048c998584e95f55"
+      },
+      "sourceSnapshot": {
+        "path": "learning/evidence/01/2026-10-27-shortcuts-keyboard-demo-v002/source-snapshot/manifest.json",
+        "sha256": "8cb551d779ca52ce0203ae91d04760134f596a7d8a5726ae16219707392ed8f5"
+      },
+      "screenshots": [
+        {
+          "case": "main-one-no-emulation",
+          "screenshot": {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-keyboard-demo-v002/01-06-01-main-one-no-emulation.png",
+            "sha256": "e13488de369a02a0437d128539be91c82e2941e5d93b43f48052bd063056d676"
+          },
+          "visualReview": "view_image_original_png",
+          "reviewPassed": true,
+          "observedKind": "structured_readback_with_native_screenshot"
+        },
+        {
+          "case": "numpad-one-front",
+          "screenshot": {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-keyboard-demo-v002/01-06-02-numpad-one-front.png",
+            "sha256": "dc5f58b6c89337c9fc28c5f171a95d46d6a260e5110ed162e7fa372750b8529f"
+          },
+          "visualReview": "view_image_original_png",
+          "reviewPassed": true,
+          "observedKind": "structured_readback_with_native_screenshot"
+        },
+        {
+          "case": "numpad-three-right",
+          "screenshot": {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-keyboard-demo-v002/01-06-03-numpad-three-right.png",
+            "sha256": "54ceae9599edf522d15b0858e1c9856f83bfa1506d2bfa14f7eeba299809956e"
+          },
+          "visualReview": "view_image_original_png",
+          "reviewPassed": true,
+          "observedKind": "structured_readback_with_native_screenshot"
+        },
+        {
+          "case": "emulate-checkbox-before",
+          "screenshot": {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-keyboard-demo-v002/01-06-04-emulate-checkbox-before.png",
+            "sha256": "69e216564052458e430d7a1d39fad6bd5cb4cc64ed53fa55eec3135256cd7b50"
+          },
+          "visualReview": "view_image_original_png",
+          "reviewPassed": true,
+          "observedKind": "structured_readback_with_native_screenshot"
+        },
+        {
+          "case": "emulate-checkbox-after",
+          "screenshot": {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-keyboard-demo-v002/01-06-05-emulate-checkbox-after.png",
+            "sha256": "65bdd2277c262727618ab05fb38531c55516590581977a2a753c88f12edda240"
+          },
+          "visualReview": "view_image_original_png",
+          "reviewPassed": true,
+          "observedKind": "structured_readback_with_native_screenshot"
+        },
+        {
+          "case": "main-one-emulated-observation",
+          "screenshot": {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-keyboard-demo-v002/01-06-06-main-one-emulated-observation.png",
+            "sha256": "54ceae9599edf522d15b0858e1c9856f83bfa1506d2bfa14f7eeba299809956e"
+          },
+          "visualReview": "view_image_original_png",
+          "reviewPassed": true,
+          "observedKind": "structured_readback_with_native_screenshot"
+        },
+        {
+          "case": "main-one-unicode-observation",
+          "screenshot": {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-keyboard-demo-v002/01-06-07-main-one-unicode-observation.png",
+            "sha256": "54ceae9599edf522d15b0858e1c9856f83bfa1506d2bfa14f7eeba299809956e"
+          },
+          "visualReview": "view_image_original_png",
+          "reviewPassed": true,
+          "observedKind": "structured_readback_with_native_screenshot"
+        },
+        {
+          "case": "main-period-pivot",
+          "screenshot": {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-keyboard-demo-v002/01-06-08-main-period-pivot.png",
+            "sha256": "6d924407248acfb8052c9fa9dbff489a0d7c50dcb425bc149d92c8a7fd431c6b"
+          },
+          "visualReview": "view_image_original_png",
+          "reviewPassed": true,
+          "observedKind": "structured_readback_with_native_screenshot"
+        },
+        {
+          "case": "numpad-period-framed",
+          "screenshot": {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-keyboard-demo-v002/01-06-09-numpad-period-framed.png",
+            "sha256": "fd8934a3785d638bd98bc128beb3279b81390a775f373d891880dae2ccb32ead"
+          },
+          "visualReview": "view_image_original_png",
+          "reviewPassed": true,
+          "observedKind": "structured_readback_with_native_screenshot"
+        }
+      ],
+      "screenshotCount": 9,
+      "nativeAssertionPassCount": 6,
+      "observationOnlyCases": [
+        "main-one-emulated-observation",
+        "main-one-unicode-observation",
+        "main-period-pivot"
+      ],
+      "workspaceContentsUnchanged": true,
+      "learnerWorkspaceWrites": null,
+      "workspaceEvidenceNote": "Runner遞迴前後路徑與雜湊一致；不證明期間未寫入，也不辨認寫入者。"
+    },
+    {
+      "runId": "2026-10-27-shortcuts-mesh-demo-v001",
+      "run": {
+        "path": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/run.json",
+        "sha256": "3fee6233991c4d59740a5c295080e4c30ffa751e6725827bdc9d8d8025489eaa"
+      },
+      "verification": {
+        "path": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/mesh-shortcut-verification-v001.json",
+        "sha256": "15d96952bebc3f66a6abff3b578f1bf2698bf9062dd76652b329c55fa147c3da"
+      },
+      "sourceSnapshot": {
+        "path": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/source-snapshot/manifest.json",
+        "sha256": "0308a8ca682208c27ba148dcfb2db0d65d4b9c21df213dc990590f98380e8180"
+      },
+      "screenshots": [
+        {
+          "case": "numpad-zero-camera",
+          "screenshot": {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/03-03-01-numpad-zero-camera.png",
+            "sha256": "1df278e8be1cd4f0c90637beb216b288b2f30a0d67c0013fdf88cac7aaf9d2b5"
+          },
+          "visualReview": "view_image_original_png",
+          "reviewPassed": true,
+          "observedKind": "structured_readback_with_native_screenshot"
+        },
+        {
+          "case": "main-three-face-select",
+          "screenshot": {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/04-04-01-main-three-face-select.png",
+            "sha256": "f58cd072652656ef0f682c8989afe4951dc4eab6b2074805bd63af6a09fdb0e5"
+          },
+          "visualReview": "view_image_original_png",
+          "reviewPassed": true,
+          "observedKind": "structured_readback_with_native_screenshot"
+        },
+        {
+          "case": "edit-alt-a-deselect",
+          "screenshot": {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/04-04-02-edit-alt-a-deselect.png",
+            "sha256": "4b3f7fb4125af6e93a90a9018ae6ef3282c7655f80aca371be3f28ba3cad3e31"
+          },
+          "visualReview": "view_image_original_png",
+          "reviewPassed": true,
+          "observedKind": "structured_readback_with_native_screenshot"
+        },
+        {
+          "case": "select-front-face",
+          "screenshot": {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/04-04-03-select-front-face.png",
+            "sha256": "d8b65070c9f8883419064045b99ee9d08c22e6dc68a5485a7c3e983647143394"
+          },
+          "visualReview": "view_image_original_png",
+          "reviewPassed": true,
+          "observedKind": "structured_readback_with_native_screenshot"
+        },
+        {
+          "case": "inset-i",
+          "screenshot": {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/05-05-01-inset-i.png",
+            "sha256": "6a60595f468dc36fcd330970b5ccf6423f623473eb30c3da8ce898acea5893a8"
+          },
+          "visualReview": "view_image_original_png",
+          "reviewPassed": true,
+          "observedKind": "structured_readback_with_native_screenshot"
+        },
+        {
+          "case": "extrude-e-normal",
+          "screenshot": {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/05-05-02-extrude-e-normal.png",
+            "sha256": "5feb53de8ee288dfd40362fb8bd7eedd3f00ffa709e6ad4ce2b446c3590c1c21"
+          },
+          "visualReview": "view_image_original_png",
+          "reviewPassed": true,
+          "observedKind": "structured_readback_with_native_screenshot"
+        },
+        {
+          "case": "main-two-edge-select",
+          "screenshot": {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/07-02-01-main-two-edge-select.png",
+            "sha256": "ac018b5487d7f2a25875af350d09139a617f60fe7523f190037d5885b2bebb2a"
+          },
+          "visualReview": "view_image_original_png",
+          "reviewPassed": true,
+          "observedKind": "structured_readback_with_native_screenshot"
+        },
+        {
+          "case": "bevel-ctrl-b",
+          "screenshot": {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/07-02-02-bevel-ctrl-b.png",
+            "sha256": "25e6e31d82bdbd997d1f22cbd3b6b17949d2a7920755bed048fceedbc8b985f9"
+          },
+          "visualReview": "view_image_original_png",
+          "reviewPassed": true,
+          "observedKind": "structured_readback_with_native_screenshot"
+        }
+      ],
+      "screenshotCount": 8,
+      "nativeAssertionPassCount": 8,
+      "observationOnlyCases": [],
+      "workspaceContentsUnchanged": true,
+      "learnerWorkspaceWrites": null,
+      "workspaceEvidenceNote": "Runner遞迴前後路徑與雜湊一致；不證明期間未寫入，也不辨認寫入者。"
+    }
+  ],
+  "nativeAssertionPassCount": 43,
+  "successfulRunCount": 3,
+  "successfulScreenshotCount": 53,
+  "failedRuns": [
+    {
+      "runId": "2026-10-27-shortcuts-keyboard-demo-v001",
+      "run": {
+        "path": "learning/evidence/01/2026-10-27-shortcuts-keyboard-demo-v001/run.json",
+        "sha256": "fabb55bcd62daef51ecbef467f26f35fac8daf179ee58359e214e70e1ee054e5"
+      },
+      "reason": "Emulate Numpad已勾選，但模擬主ONE沒有匹配NUMPAD_1；嚴格斷言中止。未刪圖、未回填或改寫；v002加plain/unicode對照並保留未證實狀態。",
+      "learnerWorkspaceWrites": null,
+      "workspaceContentsUnchanged": true,
+      "publishedAsShortcutSuccess": false
+    }
+  ],
+  "preciseConclusions": [
+    "Object Mode/Global/factory perspective: G X .5 from X0→.5 and X1→1.5; G X -.5 from1.5→1; field Location X=.5 sets absolute .5.",
+    "G .5 with no X from[1,0,0] returned[1.5,0,0] in this tested context; advise explicit X/Y/Z rather than generalizing to other modes or orientations.",
+    "G X3 followed by Esc or right mouse returned to exactly the previous location within1e-5 numerical readback comparison; not manufacturing tolerance.",
+    "R X/Y/Z30 changed the matching degree component; S X/Y/Z1.5 changed the matching scale component. Scale is multiplicative, not Dimensions absolute length.",
+    "N opened Sidebar; Tab toggled Edit/Object; A selected all3 objects and AltA deselected; NumpadDecimal framed selected object without changing its location.",
+    "ShiftA opened Add, X opened Delete confirmation (canceled), F2 renamed Cube→ShortcutCube, M opened Move to Collection, CtrlA opened Apply (no apply option executed).",
+    "Main row1 with emulation off preserved User Perspective; NUMPAD1=Front Orthographic and NUMPAD3=Right Orthographic.",
+    "Preferences/Input/Keyboard/Emulate Numpad checkbox and tooltip read from original UI; the tooltip describes main1–0 as numpad equivalents, but plain and unicode simulatedONE did not change Right view after checkbox click. Physical keyboard remapping remains unverified by this runner.",
+    "Main PERIOD opened Pivot Point even with Emulate Numpad checked; NUMPAD_PERIOD framed selection. Main row digits/period must not be conflated with numeric keypad keys.",
+    "Numpad0 switched viewPerspective to CAMERA; main3 in Edit Mode enabled face selection; AltA deselected edit components; I .2 inset6→10 faces; E .4 normal extrusion10→14 with selected faceY=-1.4; main2 edge selection; CtrlB .1 bevel14→18 faces. These disposable factory-unit values are not engineering dimensions or qualifications."
+  ],
+  "limitations": [
+    "Only native simulated events and original UI screenshots, no physical-keyboard experiment.",
+    "For Emulate Numpad, actual checkbox/tooltip is verified; effective main-keyboard remapping is not. A completed v002 runner is not evidence this behavior passed.",
+    "Mesh front view does not expose extrusion depth visually; selected-face coordinate readback supplies that separate evidence.",
+    "No source scene or STL saved, no learner completion/fit/strength assessment, no progress or catalog write by this probe agent.",
+    "Raw runner-status contains private Recent inventory and is not part of this public review; only content-comparison outcome is quoted."
+  ]
+}

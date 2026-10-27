@@ -30,11 +30,17 @@ jobs:
         run: python scripts/prepare_publication.py --verify
       - name: Initialize a new learner without copying author state
         run: python learning/bootstrap.py
+      - name: Verify versioned observation and workspace annotations without replay
+        run: python scripts/apply_evidence_semantics.py
+      - name: Verify guide shortcuts and their evidence without replay
+        run: python scripts/apply_guide_shortcuts.py
       - name: Check dashboard and bootstrap
         run: python -m unittest discover -s learning/tests -v
       - name: Check tutor validators and runner safeguards
         run: python -m unittest discover -s learning/tutor/tests -v
       - name: Check browser script syntax
         run: node --check learning/web/app.js
+      - name: Check observation labels and safe fallbacks
+        run: node --test learning/web/tests/observation_labels.test.js learning/web/tests/shortcuts.test.js
       - name: Confirm tests did not modify published files
         run: git diff --exit-code

@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "id": "shortcuts-checks-2026-10-27-v001",
+  "date": "2026-10-27",
+  "scope": "本輪快速方法候選；不構成 Claude 本輪審查通過或學員完成。",
+  "environment": {
+    "python": "3.12.14",
+    "blender": "5.2.1 LTS",
+    "buildHash": "9e2066aef7ef"
+  },
+  "coverage": {
+    "guidesReviewed": 142,
+    "shortcutsAdded": 75,
+    "omitted": 67,
+    "stepsWithShortcuts": 38
+  },
+  "tests": {
+    "serverBootstrap": {
+      "total": 30,
+      "passed": 28,
+      "skipped": 2,
+      "failed": 0,
+      "skipReason": "目前 Windows 沒有建立檔案／目錄 symlink 的權限；junction 檢查另有通過"
+    },
+    "tutor": {
+      "total": 296,
+      "passed": 295,
+      "skipped": 1,
+      "failed": 0,
+      "skipReason": "目前 Windows 沒有建立檔案 symlink 的權限"
+    },
+    "frontend": {
+      "total": 14,
+      "passed": 14,
+      "skipped": 0,
+      "failed": 0
+    },
+    "nodeSyntax": "passed",
+    "shortcutDataVerifier": "passed",
+    "existingSemanticsVerifier": "passed",
+    "actualCatalogOfflineRendering": {
+      "shortcutsRendered": 75,
+      "evidenceLinksRendered": 158,
+      "networkUsed": false,
+      "progressWritten": false
+    },
+    "gitWhitespace": {
+      "unadjustedDiffCheck": "reported preserved CRLF as trailing whitespace",
+      "command": "git -c core.whitespace=cr-at-eol diff --check",
+      "result": "passed",
+      "gitConfigWritten": false,
+      "lineEndingsNormalized": false
+    }
+  },
+  "nativeEvidence": {
+    "successRunScreenshots": 53,
+    "assertionsPassed": 43,
+    "observationOnlyCases": 9,
+    "retainedFailedRuns": 1,
+    "review": "learning/annotations/shortcut-runtime-review-v001.json",
+    "emulateNumpadPhysicalKeyboardEffectVerified": false
+  },
+  "immutableChecks": {
+    "existingFilesCompared": 1988,
+    "oldEvidenceFilesCompared": 1981,
+    "mismatches": [],
+    "allCatalogFieldsExceptShortcutsUnchanged": true,
+    "head": "4b613f47c91f8eca51cf357097670718d8d31a77",
+    "indexEmpty": true,
+    "progressSha256": "26130175ef80a9fb83699f93a8c33de7b098b17ffa2c10aef794808390d19325"
+  },
+  "browserVisualReview": {
+    "performed": false,
+    "reason": "Browser Use 的 origin 權限檢查未核准讀取 http://127.0.0.1:8766/；不重試或繞過；前端驗證限離線 renderer／測試。"
+  },
+  "publication": {
+    "manifest": "docs/publication-manifest-2026-10-27-shortcuts-v001.json",
+    "pathspec": "docs/publication-paths-2026-10-27-shortcuts-v001.txt",
+    "scope": "工作樹候選，不 stage／commit／push；本輪產生新清單，上輪兩份清單不覆寫。",
+    "allowlistedPaths": 1225,
+    "hashedFiles": 1223,
+    "workingTreeVerification": "passed",
+    "publicOnlyCopyVerification": "passed",
+    "publicOnlyCopyShortcutsVerifier": "passed",
+    "publicOnlyCopySemanticsVerifier": "passed",
+    "copyContainsProgress": false,
+    "copyContainsRawRunnerStatus": false
+  },
+  "notPerformed": [
+    "學員 confirm、progress 編修、工作區場景寫入",
+    "重建／匯入舊 operationRun 或舊 metadata",
+    "任何既有場景／STL／原圖變更",
+    "08-02 建模、實體列印、配合或強度判定",
+    "本輪瀏覽器畫面／console 抽查",
+    "stage、commit、push 或外部訊息"
+  ]
+}

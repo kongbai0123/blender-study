@@ -1,0 +1,1276 @@
+{
+  "schemaVersion": 1,
+  "id": "shortcut-template-audit-v002",
+  "reviewedOn": "2026-10-27",
+  "scope": "本輪修正前 guide-shortcuts-v001 75 個快捷欄位的文字情境盤點；常規 guide 的 where／do／see 為對照。這是範本對應檢查，不是 Blender 執行或新原圖審查，不判定學員理解或工程合格。",
+  "sourceDocuments": [
+    {
+      "path": "learning/annotations/guide-shortcuts-v001.json",
+      "sha256": "c48c1da9ad65b196f66057199d578fa63e2fbf9a93d564d575bc98f8ffeb18ee"
+    },
+    {
+      "path": "learning/journal/2026-10-27-shortcuts-handoff-v001.md",
+      "sha256": "c46b584c2f2abb337a320933bbbedde740d423e7256bdfbf35076a76bedf6c97"
+    }
+  ],
+  "summary": {
+    "reviewedShortcutItems": 75,
+    "contextConsistent": 71,
+    "contextCorrectionRequired": 1,
+    "requestedModeCautionProbes": 3,
+    "additionalTemplateMismatchFound": 0,
+    "evidenceReferencesHashChecked": 158,
+    "blenderExecutedByThisReviewer": false,
+    "catalogWrittenByThisReviewer": false
+  },
+  "focusedFindings": [
+    {
+      "group": "Alt+A 共用頂面句",
+      "items": [
+        "04-04.2",
+        "04-06.2"
+      ],
+      "conclusion": "只有這兩處使用同一頂面 effect；04-04.2 正確，04-06.2 需改。"
+    },
+    {
+      "group": "Ctrl+A Apply Scale",
+      "items": [
+        "04-03.2",
+        "05-02.2"
+      ],
+      "conclusion": "兩處均為 Object Mode 套用 Scale，明確寫選單後選 Scale，且排除 Boolean／Solidify 修改器 Apply。"
+    },
+    {
+      "group": "F3 Non-Manifold 範本",
+      "items": [
+        "04-06.3",
+        "05-03.3",
+        "05-06.3",
+        "06-03.2",
+        "07-04.3",
+        "07-05.3",
+        "08-01.2"
+      ],
+      "conclusion": "均對應該步 Non-Manifold 檢查，並列 Edit Mode／邊選取／清除選取條件；08-01.2 為原常規面座標讀值之後的檢查，並未把邊選取當面座標讀值。"
+    },
+    {
+      "group": "Save As／Open",
+      "conclusion": "通用摘要有時提及其他未屬本步的匯出或 PNG，但仍明確限制快捷鍵只開 .blend 檔案視窗，未代替原本參數／登記／重匯入，未見目的錯置。此輪不擴大重寫已過審內容。"
+    },
+    {
+      "group": "I／E 與 Ctrl+B",
+      "items": [
+        "05-05.2",
+        "07-02.1",
+        "07-02.2"
+      ],
+      "conclusion": "要求與常規幾何操作相符；Object Mode 誤按後果、取消與 Ctrl+Z 復原需新增實測佐證。本檔不預判結果。"
+    }
+  ],
+  "items": [
+    {
+      "step": "01-02",
+      "guideIndex": 0,
+      "displayItem": 1,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/0",
+        "guideSha256": "c2f9a44648ce0f6952af6b651eceb4091b6a2c3d8206cfc423db908193360230",
+        "shortcutCanonicalSha256": "7fa83fa085a69f6f66864213196c5058a66b445527c0a3e13e588ea67933def1",
+        "catalogGuidePointer": "/lessons/0/steps/1/guide/0"
+      },
+      "reviewedKeys": "Ctrl+,",
+      "reviewedEffect": "開啟 Edit > Preferences；語言選擇與 Save Preferences 仍照常規方法。"
+    },
+    {
+      "step": "01-03",
+      "guideIndex": 0,
+      "displayItem": 1,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/1",
+        "guideSha256": "c3ed38e01b4bbe7203e2e6063a552be5cdf3e6b5c88a0f4ca512488fb5c839b4",
+        "shortcutCanonicalSha256": "dc201f3f9ae11df83821c021942de8d89197755f969b084892cc6d1365f1e209",
+        "catalogGuidePointer": "/lessons/0/steps/2/guide/0"
+      },
+      "reviewedKeys": "Ctrl+N → General",
+      "reviewedEffect": "開啟 New 選單後選 General。"
+    },
+    {
+      "step": "01-04",
+      "guideIndex": 0,
+      "displayItem": 1,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/2",
+        "guideSha256": "230431f81bb10c59433dff85177af566d8414543c80d21f5cc58960df695d50f",
+        "shortcutCanonicalSha256": "9bc89a85db44d9597d9d2b25d9ca9af89b8f55fccc2765aac510085819b40b75",
+        "catalogGuidePointer": "/lessons/0/steps/3/guide/0"
+      },
+      "reviewedKeys": "Shift+Ctrl+S",
+      "reviewedEffect": "開啟 .blend 的 Save As，再依常規方法核對資料夾與本步版本檔名。"
+    },
+    {
+      "step": "01-05",
+      "guideIndex": 0,
+      "displayItem": 1,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/3",
+        "guideSha256": "11df7704e8617e0e05bdc3aa00a842e27d9940778006c987ece0613871e1f31f",
+        "shortcutCanonicalSha256": "0167158d0ae5bef34ccb9f49ab45cd9ddbf4f5b77f86c34fdf08eaa6edf22ee5",
+        "catalogGuidePointer": "/lessons/0/steps/4/guide/0"
+      },
+      "reviewedKeys": "Tab",
+      "reviewedEffect": "在作用中網格的 Object Mode／Edit Mode 之間切換；本步目標是 Object Mode。"
+    },
+    {
+      "step": "01-06",
+      "guideIndex": 2,
+      "displayItem": 3,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/4",
+        "guideSha256": "d11e945df9929c912ca93c21af627b7b854649beb30704459d3a73edc18a8346",
+        "shortcutCanonicalSha256": "42e6720117cdf1bc888892c86b4d7269571e07f3ba76c9c4cdaa6680ef52f904",
+        "catalogGuidePointer": "/lessons/0/steps/5/guide/2"
+      },
+      "reviewedKeys": "Numpad .",
+      "reviewedEffect": "選取 Cube 後按數字鍵盤小數點，等同 View > Frame Selected；只對焦視角，不移動 Cube。"
+    },
+    {
+      "step": "01-07",
+      "guideIndex": 0,
+      "displayItem": 1,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/5",
+        "guideSha256": "a1a6354176df4fd7c70ef9af82eee119cb069207b94cac528318b46bcb060ad3",
+        "shortcutCanonicalSha256": "9bc89a85db44d9597d9d2b25d9ca9af89b8f55fccc2765aac510085819b40b75",
+        "catalogGuidePointer": "/lessons/0/steps/6/guide/0"
+      },
+      "reviewedKeys": "Shift+Ctrl+S",
+      "reviewedEffect": "開啟 .blend 的 Save As，再依常規方法核對資料夾與本步版本檔名。"
+    },
+    {
+      "step": "01-07",
+      "guideIndex": 1,
+      "displayItem": 2,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/6",
+        "guideSha256": "ae02ebfb317bfdc0544938b59086cec2000d8197bec6d128e26565d9314e31e3",
+        "shortcutCanonicalSha256": "2cb667afba300d6644e0b0061469464d3ca98af8d587389212f1ee443516b577",
+        "catalogGuidePointer": "/lessons/0/steps/6/guide/1"
+      },
+      "reviewedKeys": "G → X → 0.5 → Enter；取消：Esc／滑鼠右鍵；側欄：N",
+      "reviewedEffect": "選取 Cube，從 X＝0 開始沿 X 再移 0.5 m；相對移動結果是 X＝0.5 m。Location X 欄位直接輸入 0.5 m 則是設定絕對位置。"
+    },
+    {
+      "step": "01-07",
+      "guideIndex": 2,
+      "displayItem": 3,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/7",
+        "guideSha256": "25b029b657067b30b8aa5de1f095adfe8aaf293bbb9a049e0cdfdd6ab5a8893c",
+        "shortcutCanonicalSha256": "f1d4c4cf2ace563cb90bdfcb58de895fba4a81d71b1ef716565f9d5f9a7f6cf1",
+        "catalogGuidePointer": "/lessons/0/steps/6/guide/2"
+      },
+      "reviewedKeys": "Ctrl+Z",
+      "reviewedEffect": "撤回剛才這一次可復原的移動，再核對 Location X 回到改前狀態。"
+    },
+    {
+      "step": "01-08",
+      "guideIndex": 0,
+      "displayItem": 1,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/8",
+        "guideSha256": "c02df49b1f660e1230f2cf4ec02b14ee1c0737ccbeff050671c7cf8dda8112bf",
+        "shortcutCanonicalSha256": "e871d018e078fe27992697d4340146b6cb78a66de1cf8b31588ef2c6599d519a",
+        "catalogGuidePointer": "/lessons/0/steps/7/guide/0"
+      },
+      "reviewedKeys": "N",
+      "reviewedEffect": "切換 Sidebar；若尚未顯示才按 N，再選 Item 讀取或輸入本步指定欄位。"
+    },
+    {
+      "step": "01-08",
+      "guideIndex": 1,
+      "displayItem": 2,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/9",
+        "guideSha256": "1f4b1c8382f4af9b9ba35dc4e5f1fe6a03d67d763527f3fd7cc130c8c373b1d6",
+        "shortcutCanonicalSha256": "3a3887852efe4c290fcb082e0158f588291825a953f43ae791e11dbd860e8aab",
+        "catalogGuidePointer": "/lessons/0/steps/7/guide/1"
+      },
+      "reviewedKeys": "S → X → 1.5 → Enter",
+      "reviewedEffect": "只有從未旋轉的 2 m Cube 開始，沿 X 乘以 1.5 得 Dimensions X＝3 m；Scale X 從 1 變 1.5。"
+    },
+    {
+      "step": "01-09",
+      "guideIndex": 0,
+      "displayItem": 1,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/10",
+        "guideSha256": "1aaa32764923f21a7f25bd9799c12d265e785acb8260d19caefe2ef40b7ea793",
+        "shortcutCanonicalSha256": "37d4f7f5568bf82b4dddaeda2684149241874ba3891dc50d552b6768a7b7101c",
+        "catalogGuidePointer": "/lessons/0/steps/8/guide/0"
+      },
+      "reviewedKeys": "Ctrl+S",
+      "reviewedEffect": "保存目前可續存的工作版；其餘參數核對與檔案登記照原步驟進行。"
+    },
+    {
+      "step": "01-09",
+      "guideIndex": 2,
+      "displayItem": 3,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/11",
+        "guideSha256": "1180f06f617207b80907f2c03c058f28441c97a70688ba1d4b91db0a019bcd9b",
+        "shortcutCanonicalSha256": "7947d33508c3ba2a0c9c29d267ba4f70dea1c1c6be55fc741e228523a753f525",
+        "catalogGuidePointer": "/lessons/0/steps/8/guide/2"
+      },
+      "reviewedKeys": "Ctrl+O",
+      "reviewedEffect": "開啟 Open 檔案視窗，再選本步指定來源；其餘匯出、重匯入或量測仍依常規方法。"
+    },
+    {
+      "step": "02-01",
+      "guideIndex": 1,
+      "displayItem": 2,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/12",
+        "guideSha256": "592efcfb41b52b768eb0b5dacad7f375a30e10a553c1e68732c72bd4ca89a49c",
+        "shortcutCanonicalSha256": "ee3f66d87ec96350abde314319badf7803dddbbf9e6326a4c5f2eadba8bcb0a5",
+        "catalogGuidePointer": "/lessons/1/steps/0/guide/1"
+      },
+      "reviewedKeys": "X → 核對 Delete 確認",
+      "reviewedEffect": "Object Mode 僅選可移除的 Cube，按 X 並依確認提示刪除；Camera／Light 保留。"
+    },
+    {
+      "step": "02-01",
+      "guideIndex": 2,
+      "displayItem": 3,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/13",
+        "guideSha256": "29a5b83c5536a2879c32633aacca3ebafcf0331084b493cab99a44bc197d79aa",
+        "shortcutCanonicalSha256": "9bc89a85db44d9597d9d2b25d9ca9af89b8f55fccc2765aac510085819b40b75",
+        "catalogGuidePointer": "/lessons/1/steps/0/guide/2"
+      },
+      "reviewedKeys": "Shift+Ctrl+S",
+      "reviewedEffect": "開啟 .blend 的 Save As，再依常規方法核對資料夾與本步版本檔名。"
+    },
+    {
+      "step": "02-02",
+      "guideIndex": 0,
+      "displayItem": 1,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/14",
+        "guideSha256": "0c82c73e9417035cc6c96cd9909a6a57d880a19eb0d9f1d42cf0e1eb2d48bfc7",
+        "shortcutCanonicalSha256": "083c0d51e8b801c7b71e98ea79e1a47973880b2ac8a9efe1bad04c3f0423d78e",
+        "catalogGuidePointer": "/lessons/1/steps/1/guide/0"
+      },
+      "reviewedKeys": "Shift+A → Mesh → Plane",
+      "reviewedEffect": "開啟 Add 選單，再依常規方法選 Plane；尺寸與位置仍逐欄設定。"
+    },
+    {
+      "step": "02-02",
+      "guideIndex": 1,
+      "displayItem": 2,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/15",
+        "guideSha256": "0d8aeaecd704af9ded826e9947bda159472ee1c961faabf94c2f8d61e171d8f1",
+        "shortcutCanonicalSha256": "908539f0cdbbe6580ec6d60bd14ccdd43db3d80d0f41ecc9b25989aa294a2857",
+        "catalogGuidePointer": "/lessons/1/steps/1/guide/1"
+      },
+      "reviewedKeys": "Shift+A → Mesh → Cube",
+      "reviewedEffect": "開啟 Add 選單，再依常規方法選 Cube；尺寸與位置仍逐欄設定。"
+    },
+    {
+      "step": "02-03",
+      "guideIndex": 0,
+      "displayItem": 1,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/16",
+        "guideSha256": "5b65b0bba18cff6a29528506813abcf0c039b606cee592cd702c1c0dca73b1f8",
+        "shortcutCanonicalSha256": "908539f0cdbbe6580ec6d60bd14ccdd43db3d80d0f41ecc9b25989aa294a2857",
+        "catalogGuidePointer": "/lessons/1/steps/2/guide/0"
+      },
+      "reviewedKeys": "Shift+A → Mesh → Cube",
+      "reviewedEffect": "開啟 Add 選單，再依常規方法選 Cube；尺寸與位置仍逐欄設定。"
+    },
+    {
+      "step": "02-04",
+      "guideIndex": 0,
+      "displayItem": 1,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/17",
+        "guideSha256": "c801a3aac5a343e8fcb64bfecba73a33ef3a7faabf1d4af2397bf1321d41a0cd",
+        "shortcutCanonicalSha256": "eee96c91579b1c985322570f9f624cbfffe3b52d6e249df9b91afad0e434b7d7",
+        "catalogGuidePointer": "/lessons/1/steps/3/guide/0"
+      },
+      "reviewedKeys": "F2 → BeaconBase → Enter",
+      "reviewedEffect": "只選基座、滑鼠在 3D Viewport，按 F2 改作用中物件名稱，再核對 Outliner。"
+    },
+    {
+      "step": "02-04",
+      "guideIndex": 1,
+      "displayItem": 2,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/18",
+        "guideSha256": "b060377b772238e506b340574c51a3173074380e50d32521130eada2ca70fc4c",
+        "shortcutCanonicalSha256": "305d2770842c5701b8351d8c1863eb62df7922d2f9f908e395fe0f5826bdd284",
+        "catalogGuidePointer": "/lessons/1/steps/3/guide/1"
+      },
+      "reviewedKeys": "M → New Collection",
+      "reviewedEffect": "依常規方法先選對部件，按 M 開 Move to Collection，再選 New Collection 並命名 Station。"
+    },
+    {
+      "step": "02-04",
+      "guideIndex": 2,
+      "displayItem": 3,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/19",
+        "guideSha256": "59ee5a9d5f2aafb5e45c26286103def3b98a1605f41a93c0290a78107fb2d798",
+        "shortcutCanonicalSha256": "9bc89a85db44d9597d9d2b25d9ca9af89b8f55fccc2765aac510085819b40b75",
+        "catalogGuidePointer": "/lessons/1/steps/3/guide/2"
+      },
+      "reviewedKeys": "Shift+Ctrl+S",
+      "reviewedEffect": "開啟 .blend 的 Save As，再依常規方法核對資料夾與本步版本檔名。"
+    },
+    {
+      "step": "02-05",
+      "guideIndex": 0,
+      "displayItem": 1,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/20",
+        "guideSha256": "a109b0da9ed1eaf78e96b1035aa6d327c730e7948cc6a8dabff932b248dd6899",
+        "shortcutCanonicalSha256": "0bfa1dd075773e1bab324f00d5a93a47b35c02c76afec2263352a06335721443",
+        "catalogGuidePointer": "/lessons/1/steps/4/guide/0"
+      },
+      "reviewedKeys": "Ctrl+N → General；Shift+Ctrl+S",
+      "reviewedEffect": "開啟 New 選單後選 General，再開另存視窗核對本步版本。"
+    },
+    {
+      "step": "02-06",
+      "guideIndex": 0,
+      "displayItem": 1,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/21",
+        "guideSha256": "8d130c4d257a742251de2aabfe83befc771b5a8866ee2ec09e76cd4a766849cf",
+        "shortcutCanonicalSha256": "e871d018e078fe27992697d4340146b6cb78a66de1cf8b31588ef2c6599d519a",
+        "catalogGuidePointer": "/lessons/1/steps/5/guide/0"
+      },
+      "reviewedKeys": "N",
+      "reviewedEffect": "切換 Sidebar；若尚未顯示才按 N，再選 Item 讀取或輸入本步指定欄位。"
+    },
+    {
+      "step": "02-07",
+      "guideIndex": 0,
+      "displayItem": 1,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/22",
+        "guideSha256": "25eb30f3ccf0d00bbfb54ead62907157d52452df58653611da0f96754b72fe9a",
+        "shortcutCanonicalSha256": "37d4f7f5568bf82b4dddaeda2684149241874ba3891dc50d552b6768a7b7101c",
+        "catalogGuidePointer": "/lessons/1/steps/6/guide/0"
+      },
+      "reviewedKeys": "Ctrl+S",
+      "reviewedEffect": "保存目前可續存的工作版；其餘參數核對與檔案登記照原步驟進行。"
+    },
+    {
+      "step": "02-07",
+      "guideIndex": 1,
+      "displayItem": 2,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/23",
+        "guideSha256": "c7ba8b9e5b1eb355bfcff657d4c737aff460eed2584cf5d08335a12f44ff6471",
+        "shortcutCanonicalSha256": "37d4f7f5568bf82b4dddaeda2684149241874ba3891dc50d552b6768a7b7101c",
+        "catalogGuidePointer": "/lessons/1/steps/6/guide/1"
+      },
+      "reviewedKeys": "Ctrl+S",
+      "reviewedEffect": "保存目前可續存的工作版；其餘參數核對與檔案登記照原步驟進行。"
+    },
+    {
+      "step": "02-07",
+      "guideIndex": 2,
+      "displayItem": 3,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/24",
+        "guideSha256": "f923858018b7d11939df47d33434e6102022d83dadd1cdae1a51e250a12a0c8d",
+        "shortcutCanonicalSha256": "7947d33508c3ba2a0c9c29d267ba4f70dea1c1c6be55fc741e228523a753f525",
+        "catalogGuidePointer": "/lessons/1/steps/6/guide/2"
+      },
+      "reviewedKeys": "Ctrl+O",
+      "reviewedEffect": "開啟 Open 檔案視窗，再選本步指定來源；其餘匯出、重匯入或量測仍依常規方法。"
+    },
+    {
+      "step": "03-01",
+      "guideIndex": 0,
+      "displayItem": 1,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/25",
+        "guideSha256": "e487775aa3813c613b65685da1cc26f5dba662ad43dfd475c1c574082a6b8fed",
+        "shortcutCanonicalSha256": "7947d33508c3ba2a0c9c29d267ba4f70dea1c1c6be55fc741e228523a753f525",
+        "catalogGuidePointer": "/lessons/2/steps/0/guide/0"
+      },
+      "reviewedKeys": "Ctrl+O",
+      "reviewedEffect": "開啟 Open 檔案視窗，再選本步指定來源；其餘匯出、重匯入或量測仍依常規方法。"
+    },
+    {
+      "step": "03-01",
+      "guideIndex": 1,
+      "displayItem": 2,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/26",
+        "guideSha256": "7ce1a4a274309e4e4d65bffffe6c8d44538c29191707768e62ebd85c548ccf48",
+        "shortcutCanonicalSha256": "9bc89a85db44d9597d9d2b25d9ca9af89b8f55fccc2765aac510085819b40b75",
+        "catalogGuidePointer": "/lessons/2/steps/0/guide/1"
+      },
+      "reviewedKeys": "Shift+Ctrl+S",
+      "reviewedEffect": "開啟 .blend 的 Save As，再依常規方法核對資料夾與本步版本檔名。"
+    },
+    {
+      "step": "03-02",
+      "guideIndex": 1,
+      "displayItem": 2,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/27",
+        "guideSha256": "7382930a510e1e2252c0c6dc7a20c96e65d32ab710d4f93a282efa1e608c26ee",
+        "shortcutCanonicalSha256": "ea2a8c0dc415f0290b17a93e91f8d57927f43a960a115da91f18fac632a50171",
+        "catalogGuidePointer": "/lessons/2/steps/1/guide/1"
+      },
+      "reviewedKeys": "Numpad 0",
+      "reviewedEffect": "切換到作用中相機取景；先核對場景已有正確的作用中相機。"
+    },
+    {
+      "step": "03-02",
+      "guideIndex": 2,
+      "displayItem": 3,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/28",
+        "guideSha256": "0c1b012b174596da73fc05474badf8d4dd8e4cd1ee64c5ba570d10e157553946",
+        "shortcutCanonicalSha256": "5baf9e4727110fd6e99e119aecd05888221680446d8bbec0af712004a84d5968",
+        "catalogGuidePointer": "/lessons/2/steps/1/guide/2"
+      },
+      "reviewedKeys": "G → X／Y／Z → 位移量 → Enter；R → X／Y／Z → 角度 → Enter",
+      "reviewedEffect": "在 Object Mode 調整 Camera 的單一 Global 軸位移或旋轉，再用常規方法回相機取景核對。"
+    },
+    {
+      "step": "03-05",
+      "guideIndex": 0,
+      "displayItem": 1,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/29",
+        "guideSha256": "99d8e2bc4f3b96afafd7558431ff100ee399c1640f18fdce79630736a4bb5852",
+        "shortcutCanonicalSha256": "37d4f7f5568bf82b4dddaeda2684149241874ba3891dc50d552b6768a7b7101c",
+        "catalogGuidePointer": "/lessons/2/steps/4/guide/0"
+      },
+      "reviewedKeys": "Ctrl+S",
+      "reviewedEffect": "保存目前可續存的工作版；其餘參數核對與檔案登記照原步驟進行。"
+    },
+    {
+      "step": "03-05",
+      "guideIndex": 1,
+      "displayItem": 2,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/30",
+        "guideSha256": "a213f5fd468bc785f931b7e11cf00b8dc0f8d998e8a096aac4ae6d2f24ba40c2",
+        "shortcutCanonicalSha256": "f46df5ebd8607321734ff8930b913f27a649847f084c3719085f46929b9295f3",
+        "catalogGuidePointer": "/lessons/2/steps/4/guide/1"
+      },
+      "reviewedKeys": "F12",
+      "reviewedEffect": "執行 Render > Render Image；先核對本次場景、相機與輸出設定，再等渲染完成。"
+    },
+    {
+      "step": "03-06",
+      "guideIndex": 0,
+      "displayItem": 1,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/31",
+        "guideSha256": "e63a4b6149d17d233bf60168dbfc4f9fa57476be78c6135d320d5dfbf79a5a24",
+        "shortcutCanonicalSha256": "7947d33508c3ba2a0c9c29d267ba4f70dea1c1c6be55fc741e228523a753f525",
+        "catalogGuidePointer": "/lessons/2/steps/5/guide/0"
+      },
+      "reviewedKeys": "Ctrl+O",
+      "reviewedEffect": "開啟 Open 檔案視窗，再選本步指定來源；其餘匯出、重匯入或量測仍依常規方法。"
+    },
+    {
+      "step": "03-06",
+      "guideIndex": 2,
+      "displayItem": 3,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/32",
+        "guideSha256": "9dd47c9f29fa96e6e7043f5fd89069374e4e56b17ee90250f57b3daac571a22a",
+        "shortcutCanonicalSha256": "f46df5ebd8607321734ff8930b913f27a649847f084c3719085f46929b9295f3",
+        "catalogGuidePointer": "/lessons/2/steps/5/guide/2"
+      },
+      "reviewedKeys": "F12",
+      "reviewedEffect": "執行 Render > Render Image；先核對本次場景、相機與輸出設定，再等渲染完成。"
+    },
+    {
+      "step": "04-02",
+      "guideIndex": 0,
+      "displayItem": 1,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/33",
+        "guideSha256": "b8d020c90e4e4b96a36eba13933886fa596fa9bd331f5d5af625efd6999496b3",
+        "shortcutCanonicalSha256": "dc201f3f9ae11df83821c021942de8d89197755f969b084892cc6d1365f1e209",
+        "catalogGuidePointer": "/lessons/3/steps/1/guide/0"
+      },
+      "reviewedKeys": "Ctrl+N → General",
+      "reviewedEffect": "開啟 New 選單後選 General。"
+    },
+    {
+      "step": "04-02",
+      "guideIndex": 2,
+      "displayItem": 3,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/34",
+        "guideSha256": "0de3d676f2e32274af763ca50f502c2b664bd42d4fb75d96d91eeb13ce2c783b",
+        "shortcutCanonicalSha256": "9bc89a85db44d9597d9d2b25d9ca9af89b8f55fccc2765aac510085819b40b75",
+        "catalogGuidePointer": "/lessons/3/steps/1/guide/2"
+      },
+      "reviewedKeys": "Shift+Ctrl+S",
+      "reviewedEffect": "開啟 .blend 的 Save As，再依常規方法核對資料夾與本步版本檔名。"
+    },
+    {
+      "step": "04-03",
+      "guideIndex": 0,
+      "displayItem": 1,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/35",
+        "guideSha256": "160bed5ff747854dffe3c94f42e103d4d82e4318bdeb85b07729b7f0289e0bad",
+        "shortcutCanonicalSha256": "e871d018e078fe27992697d4340146b6cb78a66de1cf8b31588ef2c6599d519a",
+        "catalogGuidePointer": "/lessons/3/steps/2/guide/0"
+      },
+      "reviewedKeys": "N",
+      "reviewedEffect": "切換 Sidebar；若尚未顯示才按 N，再選 Item 讀取或輸入本步指定欄位。"
+    },
+    {
+      "step": "04-03",
+      "guideIndex": 1,
+      "displayItem": 2,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/36",
+        "guideSha256": "0f60de8decd25abbaff1dfe4fe0e13906eeba40830467ce6eff2cdb1d47dc0a4",
+        "shortcutCanonicalSha256": "d5091c0b63c6cc901e6c98003ac37ca6091280a9b867ecb9c3630b5b7c67abb7",
+        "catalogGuidePointer": "/lessons/3/steps/2/guide/1"
+      },
+      "reviewedKeys": "Ctrl+A → Scale",
+      "reviewedEffect": "開啟 Object > Apply，再選 Scale；完成後核對 Scale 為 1 且 Dimensions 不變。"
+    },
+    {
+      "step": "04-04",
+      "guideIndex": 0,
+      "displayItem": 1,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/37",
+        "guideSha256": "8ce925cd713f9ca0f09c100cf7bac8a18a6473c70a2773498e0caa34abcf9b14",
+        "shortcutCanonicalSha256": "bfc5d4d057a62881d378d4692dc320f9ce1806803ef1c487af644ee06693a554",
+        "catalogGuidePointer": "/lessons/3/steps/3/guide/0"
+      },
+      "reviewedKeys": "Tab → 主鍵盤上排 3",
+      "reviewedEffect": "從 Object Mode 的網格按 Tab 進 Edit Mode，再按主鍵盤上排 3 進面選取。"
+    },
+    {
+      "step": "04-04",
+      "guideIndex": 1,
+      "displayItem": 2,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/38",
+        "guideSha256": "52412e82d028c8e96dd5a86f9ee8aca5650374a1ed05a1a839efdafcdddc26e9",
+        "shortcutCanonicalSha256": "1e6b9b7101534649fbec54be9af2adc628e41a0f48a9903632673399762e9093",
+        "catalogGuidePointer": "/lessons/3/steps/3/guide/1"
+      },
+      "reviewedKeys": "Alt+A",
+      "reviewedEffect": "在 Edit Mode 取消目前網格選取；本步若要點頂面，接著依常規方法只選頂面。"
+    },
+    {
+      "step": "04-04",
+      "guideIndex": 2,
+      "displayItem": 3,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/39",
+        "guideSha256": "1d4b9e2cc0b821254db3b370b441525b70e945f45593320ea83d00bac5f49ed7",
+        "shortcutCanonicalSha256": "360826fc698cd9adc5f7858e0a594c148c8f8552093aadaf890e81658cd00477",
+        "catalogGuidePointer": "/lessons/3/steps/3/guide/2"
+      },
+      "reviewedKeys": "X → Faces",
+      "reviewedEffect": "Edit Mode 只選頂面，按 X 開 Delete 選單後選 Faces。"
+    },
+    {
+      "step": "04-05",
+      "guideIndex": 0,
+      "displayItem": 1,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/40",
+        "guideSha256": "19b2580e60243792efd99fc402a6d42861099f35eed9d909c0c31d494c3b6253",
+        "shortcutCanonicalSha256": "0167158d0ae5bef34ccb9f49ab45cd9ddbf4f5b77f86c34fdf08eaa6edf22ee5",
+        "catalogGuidePointer": "/lessons/3/steps/4/guide/0"
+      },
+      "reviewedKeys": "Tab",
+      "reviewedEffect": "在作用中網格的 Object Mode／Edit Mode 之間切換；本步目標是 Object Mode。"
+    },
+    {
+      "step": "04-06",
+      "guideIndex": 1,
+      "displayItem": 2,
+      "status": "context_correction_required",
+      "reason": "目前 effect 引用頂面選取，實際常規方法為 Edit Mode 邊選取後清除選取，準備 Select Non Manifold；相同頂面句在 04-04 第 2 項符合該步。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/41",
+        "guideSha256": "08212fc0b6a06d9c080a3d4e28d62b8517953e23de48cc0c8db22eb3b0d810da",
+        "shortcutCanonicalSha256": "1e6b9b7101534649fbec54be9af2adc628e41a0f48a9903632673399762e9093",
+        "catalogGuidePointer": "/lessons/3/steps/5/guide/1"
+      },
+      "reviewedKeys": "Alt+A",
+      "reviewedEffect": "在 Edit Mode 取消目前網格選取；本步若要點頂面，接著依常規方法只選頂面。"
+    },
+    {
+      "step": "04-06",
+      "guideIndex": 2,
+      "displayItem": 3,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/42",
+        "guideSha256": "02774152f029366381e56207ec70bb4fab108a53ddaa692db2aa03fc8aa86f3b",
+        "shortcutCanonicalSha256": "698dfd01ccb74e9856d1b15a38a0a19d17bcefa66c961895af876843a2f3674f",
+        "catalogGuidePointer": "/lessons/3/steps/5/guide/2"
+      },
+      "reviewedKeys": "主鍵盤上排 2 → Alt+A → F3 → 搜尋 Select Non Manifold",
+      "reviewedEffect": "開啟 Menu Search，再輸入並核對 Select Non Manifold；依常規方法執行檢查。"
+    },
+    {
+      "step": "05-02",
+      "guideIndex": 0,
+      "displayItem": 1,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/43",
+        "guideSha256": "56c56fd14fae9dd058a6cce488b1abdc079c69ecfb812a0dc11a37aaae562492",
+        "shortcutCanonicalSha256": "9bc89a85db44d9597d9d2b25d9ca9af89b8f55fccc2765aac510085819b40b75",
+        "catalogGuidePointer": "/lessons/4/steps/1/guide/0"
+      },
+      "reviewedKeys": "Shift+Ctrl+S",
+      "reviewedEffect": "開啟 .blend 的 Save As，再依常規方法核對資料夾與本步版本檔名。"
+    },
+    {
+      "step": "05-02",
+      "guideIndex": 1,
+      "displayItem": 2,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/44",
+        "guideSha256": "30ac5f95fd754a18813c3ece20ed603e232811eb137422a577018afbceb805f6",
+        "shortcutCanonicalSha256": "d5091c0b63c6cc901e6c98003ac37ca6091280a9b867ecb9c3630b5b7c67abb7",
+        "catalogGuidePointer": "/lessons/4/steps/1/guide/1"
+      },
+      "reviewedKeys": "Ctrl+A → Scale",
+      "reviewedEffect": "開啟 Object > Apply，再選 Scale；完成後核對 Scale 為 1 且 Dimensions 不變。"
+    },
+    {
+      "step": "05-03",
+      "guideIndex": 0,
+      "displayItem": 1,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/45",
+        "guideSha256": "d97a1b75959d662ab79b3c3d4fe3ffcf92acaf9e6dfd15f401da34cf1283469b",
+        "shortcutCanonicalSha256": "908539f0cdbbe6580ec6d60bd14ccdd43db3d80d0f41ecc9b25989aa294a2857",
+        "catalogGuidePointer": "/lessons/4/steps/2/guide/0"
+      },
+      "reviewedKeys": "Shift+A → Mesh → Cube",
+      "reviewedEffect": "開啟 Add 選單，再依常規方法選 Cube；尺寸與位置仍逐欄設定。"
+    },
+    {
+      "step": "05-03",
+      "guideIndex": 1,
+      "displayItem": 2,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/46",
+        "guideSha256": "c4e1c0466fcb782bf726604fd8a26cfd55795cc25b3c30e009150824f5f94402",
+        "shortcutCanonicalSha256": "0c5e4b93d26011f5b796e08d47a7999833eb29875dc6a27e9ee938e7c7a56377",
+        "catalogGuidePointer": "/lessons/4/steps/2/guide/1"
+      },
+      "reviewedKeys": "Shift+D；Ctrl+J",
+      "reviewedEffect": "Object Mode 用 Shift+D 複製選取的凹點切割體並移到下一位置；全部切割體核對後 Ctrl+J 合併為 Cutters。"
+    },
+    {
+      "step": "05-03",
+      "guideIndex": 2,
+      "displayItem": 3,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/47",
+        "guideSha256": "148adde861571e6cf03d8151bc314284c15dd1f02e0fc2d6bfed30d6c1f823ce",
+        "shortcutCanonicalSha256": "698dfd01ccb74e9856d1b15a38a0a19d17bcefa66c961895af876843a2f3674f",
+        "catalogGuidePointer": "/lessons/4/steps/2/guide/2"
+      },
+      "reviewedKeys": "主鍵盤上排 2 → Alt+A → F3 → 搜尋 Select Non Manifold",
+      "reviewedEffect": "開啟 Menu Search，再輸入並核對 Select Non Manifold；依常規方法執行檢查。"
+    },
+    {
+      "step": "05-04",
+      "guideIndex": 0,
+      "displayItem": 1,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/48",
+        "guideSha256": "29c652ad3f3799413f3a9ae62ff586b3eb199da7660a77b69e03ba77e39ae3bf",
+        "shortcutCanonicalSha256": "7947d33508c3ba2a0c9c29d267ba4f70dea1c1c6be55fc741e228523a753f525",
+        "catalogGuidePointer": "/lessons/4/steps/3/guide/0"
+      },
+      "reviewedKeys": "Ctrl+O",
+      "reviewedEffect": "開啟 Open 檔案視窗，再選本步指定來源；其餘匯出、重匯入或量測仍依常規方法。"
+    },
+    {
+      "step": "05-04",
+      "guideIndex": 1,
+      "displayItem": 2,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/49",
+        "guideSha256": "027f25f3a15f642c2626e17c5230a94144ac865cfbee4b8af425979927147dea",
+        "shortcutCanonicalSha256": "9ef85efbc7b279bcf668f4d141a53efa39c5c67197e09cdc3d06d216bef93a8a",
+        "catalogGuidePointer": "/lessons/4/steps/3/guide/1"
+      },
+      "reviewedKeys": "Numpad .；N",
+      "reviewedEffect": "重新匯入後先選正確物件，用數字鍵盤小數點對焦，必要時 N 開 Item 側欄核對尺寸。"
+    },
+    {
+      "step": "05-05",
+      "guideIndex": 0,
+      "displayItem": 1,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/50",
+        "guideSha256": "9702ec46f0026a32541b8f1ba237a827f89b0cee49c33bcaf66cb9e656813e52",
+        "shortcutCanonicalSha256": "908539f0cdbbe6580ec6d60bd14ccdd43db3d80d0f41ecc9b25989aa294a2857",
+        "catalogGuidePointer": "/lessons/4/steps/4/guide/0"
+      },
+      "reviewedKeys": "Shift+A → Mesh → Cube",
+      "reviewedEffect": "開啟 Add 選單，再依常規方法選 Cube；尺寸與位置仍逐欄設定。"
+    },
+    {
+      "step": "05-05",
+      "guideIndex": 1,
+      "displayItem": 2,
+      "status": "requested_mode_caution_probe",
+      "reason": "I／E 與單一底面內插／擠出對應；Edit Mode 條件已正確。依本輪要求補 Object Mode 誤按結果及復原提醒，實測由另一負責人執行。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/51",
+        "guideSha256": "1a018d6e4179ad2806443bd4368d940f41c887ea310c79a9803b5d5370558682",
+        "shortcutCanonicalSha256": "2804a27adc317ea1b1c1b145c75487ba898babe7dc34d25e006c28426e917131",
+        "catalogGuidePointer": "/lessons/4/steps/4/guide/1"
+      },
+      "reviewedKeys": "I → 厚度 → Enter；E → 沿面法向位移 → Enter",
+      "reviewedEffect": "對本步正確的單一面，I 內插、E 沿面法向擠出；每次只做一個動作，數值依原常規方法逐次輸入並讀回。"
+    },
+    {
+      "step": "05-05",
+      "guideIndex": 2,
+      "displayItem": 3,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/52",
+        "guideSha256": "0699fe18e39f46ed0d9eb78f849e9241c9fafeb9c1e7badfdf77414fc2b5f22b",
+        "shortcutCanonicalSha256": "9bc89a85db44d9597d9d2b25d9ca9af89b8f55fccc2765aac510085819b40b75",
+        "catalogGuidePointer": "/lessons/4/steps/4/guide/2"
+      },
+      "reviewedKeys": "Shift+Ctrl+S",
+      "reviewedEffect": "開啟 .blend 的 Save As，再依常規方法核對資料夾與本步版本檔名。"
+    },
+    {
+      "step": "05-06",
+      "guideIndex": 0,
+      "displayItem": 1,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/53",
+        "guideSha256": "effd8e9397d6b814ba7e1ace66a74026bb4dc99e3f2f35625496f5cabe4c47fd",
+        "shortcutCanonicalSha256": "7947d33508c3ba2a0c9c29d267ba4f70dea1c1c6be55fc741e228523a753f525",
+        "catalogGuidePointer": "/lessons/4/steps/5/guide/0"
+      },
+      "reviewedKeys": "Ctrl+O",
+      "reviewedEffect": "開啟 Open 檔案視窗，再選本步指定來源；其餘匯出、重匯入或量測仍依常規方法。"
+    },
+    {
+      "step": "05-06",
+      "guideIndex": 2,
+      "displayItem": 3,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/54",
+        "guideSha256": "ed4c48dbe2a027fd04c35f42c93629190884f118ccabfe7ac5078d989bf6c793",
+        "shortcutCanonicalSha256": "698dfd01ccb74e9856d1b15a38a0a19d17bcefa66c961895af876843a2f3674f",
+        "catalogGuidePointer": "/lessons/4/steps/5/guide/2"
+      },
+      "reviewedKeys": "主鍵盤上排 2 → Alt+A → F3 → 搜尋 Select Non Manifold",
+      "reviewedEffect": "開啟 Menu Search，再輸入並核對 Select Non Manifold；依常規方法執行檢查。"
+    },
+    {
+      "step": "06-01",
+      "guideIndex": 0,
+      "displayItem": 1,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/55",
+        "guideSha256": "3b156125c55285c3aadbbb81054ef892f5b6f224d1447da4fe0f2fc5019a73ed",
+        "shortcutCanonicalSha256": "5d0472675369753f0f357fbd322e965e220e3655d9b655787d157520761feb18",
+        "catalogGuidePointer": "/lessons/5/steps/0/guide/0"
+      },
+      "reviewedKeys": "Shift+A → Mesh → Cylinder",
+      "reviewedEffect": "開啟 Add 選單，再依常規方法選 Cylinder；尺寸與位置仍逐欄設定。"
+    },
+    {
+      "step": "06-01",
+      "guideIndex": 1,
+      "displayItem": 2,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/56",
+        "guideSha256": "1bebc3f6b76f057fe8805fc440142ebf505320522ffc861b0a008c59fe01bf1c",
+        "shortcutCanonicalSha256": "5d0472675369753f0f357fbd322e965e220e3655d9b655787d157520761feb18",
+        "catalogGuidePointer": "/lessons/5/steps/0/guide/1"
+      },
+      "reviewedKeys": "Shift+A → Mesh → Cylinder",
+      "reviewedEffect": "開啟 Add 選單，再依常規方法選 Cylinder；尺寸與位置仍逐欄設定。"
+    },
+    {
+      "step": "06-01",
+      "guideIndex": 2,
+      "displayItem": 3,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/57",
+        "guideSha256": "fc85cdc6e2dcd3ee4d75e716a75afab28762bec9cf1c926e9ab17f2b794ae4d8",
+        "shortcutCanonicalSha256": "9bc89a85db44d9597d9d2b25d9ca9af89b8f55fccc2765aac510085819b40b75",
+        "catalogGuidePointer": "/lessons/5/steps/0/guide/2"
+      },
+      "reviewedKeys": "Shift+Ctrl+S",
+      "reviewedEffect": "開啟 .blend 的 Save As，再依常規方法核對資料夾與本步版本檔名。"
+    },
+    {
+      "step": "06-02",
+      "guideIndex": 3,
+      "displayItem": 4,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/58",
+        "guideSha256": "1ace791e701f252137c91da1b73c173cbec428e05cea2aa5fed5904ba665fdd9",
+        "shortcutCanonicalSha256": "943286b6ca1605bfbe773854655f78add658fd213998edb920ffd4adc42a5797",
+        "catalogGuidePointer": "/lessons/5/steps/1/guide/3"
+      },
+      "reviewedKeys": "G → X → 位移差（本場景 mm）→ Enter",
+      "reviewedEffect": "SlidingLid 的 X＝0 mm 時，再移 +30 mm 到 X＝30 mm；要接著到 X＝62 mm，下次只移 +32 mm；最後移 −62 mm 回到 0 mm。"
+    },
+    {
+      "step": "06-03",
+      "guideIndex": 0,
+      "displayItem": 1,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/59",
+        "guideSha256": "f774ab95a3e55f02ac658bf8415b1d1c3205bdc0220502dc35e76771bbaae124",
+        "shortcutCanonicalSha256": "7947d33508c3ba2a0c9c29d267ba4f70dea1c1c6be55fc741e228523a753f525",
+        "catalogGuidePointer": "/lessons/5/steps/2/guide/0"
+      },
+      "reviewedKeys": "Ctrl+O",
+      "reviewedEffect": "開啟 Open 檔案視窗，再選本步指定來源；其餘匯出、重匯入或量測仍依常規方法。"
+    },
+    {
+      "step": "06-03",
+      "guideIndex": 1,
+      "displayItem": 2,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/60",
+        "guideSha256": "2acf5a4be16ce67b34470976a413c743919d549f8902d67cff4b91ad80211eac",
+        "shortcutCanonicalSha256": "698dfd01ccb74e9856d1b15a38a0a19d17bcefa66c961895af876843a2f3674f",
+        "catalogGuidePointer": "/lessons/5/steps/2/guide/1"
+      },
+      "reviewedKeys": "主鍵盤上排 2 → Alt+A → F3 → 搜尋 Select Non Manifold",
+      "reviewedEffect": "開啟 Menu Search，再輸入並核對 Select Non Manifold；依常規方法執行檢查。"
+    },
+    {
+      "step": "07-01",
+      "guideIndex": 0,
+      "displayItem": 1,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/61",
+        "guideSha256": "eaf8c1a41b9bcd3ddd0a26533e4ad0879c65797892f2ce3860e2c145402fa58e",
+        "shortcutCanonicalSha256": "e871d018e078fe27992697d4340146b6cb78a66de1cf8b31588ef2c6599d519a",
+        "catalogGuidePointer": "/lessons/6/steps/0/guide/0"
+      },
+      "reviewedKeys": "N",
+      "reviewedEffect": "切換 Sidebar；若尚未顯示才按 N，再選 Item 讀取或輸入本步指定欄位。"
+    },
+    {
+      "step": "07-02",
+      "guideIndex": 0,
+      "displayItem": 1,
+      "status": "requested_mode_caution_probe",
+      "reason": "I／E 與 anchor 單面內插／擠出對應；Edit Mode 條件已正確。依本輪要求補 Object Mode 誤按結果及復原提醒，實測由另一負責人執行。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/62",
+        "guideSha256": "5fb76f05018075fa8c9c8023617212ad13537adea87d1a5d6c8660c368c3b6ec",
+        "shortcutCanonicalSha256": "2804a27adc317ea1b1c1b145c75487ba898babe7dc34d25e006c28426e917131",
+        "catalogGuidePointer": "/lessons/6/steps/1/guide/0"
+      },
+      "reviewedKeys": "I → 厚度 → Enter；E → 沿面法向位移 → Enter",
+      "reviewedEffect": "對本步正確的單一面，I 內插、E 沿面法向擠出；每次只做一個動作，數值依原常規方法逐次輸入並讀回。"
+    },
+    {
+      "step": "07-02",
+      "guideIndex": 1,
+      "displayItem": 2,
+      "status": "requested_mode_caution_probe",
+      "reason": "Ctrl+B 與指定臂根邊的 Bevel 對應，非修改器；Edit Mode／邊選取條件已正確。依本輪要求補 Object Mode 誤按結果及取消／復原提醒，實測由另一負責人執行。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/63",
+        "guideSha256": "b1dccc1a7fec4c4f7be91f7b703040aca2c9cd97057f0b66a521663d4b02d64f",
+        "shortcutCanonicalSha256": "967c66cf03552d033d6796690f5f8e96dc3e79cc6271c03bea18c789a7912e7f",
+        "catalogGuidePointer": "/lessons/6/steps/1/guide/1"
+      },
+      "reviewedKeys": "主鍵盤上排 2；Ctrl+B → 0.6 → Enter",
+      "reviewedEffect": "依常規方法先切邊選取、只選兩條指定臂腳邊，再 Ctrl+B 輸入本草案倒角量；Segments 3 與 OFFSET 仍依原欄位核對。"
+    },
+    {
+      "step": "07-02",
+      "guideIndex": 2,
+      "displayItem": 3,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/64",
+        "guideSha256": "265077e44d79645ef2f6242d2685e62f666334d8315fd956d9107c3a07d67633",
+        "shortcutCanonicalSha256": "9bc89a85db44d9597d9d2b25d9ca9af89b8f55fccc2765aac510085819b40b75",
+        "catalogGuidePointer": "/lessons/6/steps/1/guide/2"
+      },
+      "reviewedKeys": "Shift+Ctrl+S",
+      "reviewedEffect": "開啟 .blend 的 Save As，再依常規方法核對資料夾與本步版本檔名。"
+    },
+    {
+      "step": "07-03",
+      "guideIndex": 0,
+      "displayItem": 1,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/65",
+        "guideSha256": "b2a86a1c150273e02f14f34923a2174b9545ed0ec19e5fb18f750d6128b19a4f",
+        "shortcutCanonicalSha256": "cbd8ae10fe8f2e841e71549b37cb7bd916917bf8505dc29505b5663cccc55844",
+        "catalogGuidePointer": "/lessons/6/steps/2/guide/0"
+      },
+      "reviewedKeys": "R → Y → 90 → Enter；R → X → 180 → Enter",
+      "reviewedEffect": "依原步選對候選副本，Body 繞 Global Y 再轉 90°，Lid 繞 Global X 再轉 180°；各自核對當前起始姿態。"
+    },
+    {
+      "step": "07-03",
+      "guideIndex": 1,
+      "displayItem": 2,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/66",
+        "guideSha256": "0fe7abcd9fe4756ba8c62165d89ce5f42ef10266d71af91920b8ac44062b9621",
+        "shortcutCanonicalSha256": "ebab5354fa031d4852fb41145ea0121529ca1d04d86e1cd0d57f5d9ca4b626fb",
+        "catalogGuidePointer": "/lessons/6/steps/2/guide/1"
+      },
+      "reviewedKeys": "Tab",
+      "reviewedEffect": "在作用中網格的 Object Mode／Edit Mode 之間切換；本步目標是 Edit Mode。"
+    },
+    {
+      "step": "07-03",
+      "guideIndex": 2,
+      "displayItem": 3,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/67",
+        "guideSha256": "f8260c7e8c3ad8fb3a4a78b472a095a1c0701ab1d98f9bb175627d2d5a39b37e",
+        "shortcutCanonicalSha256": "9bc89a85db44d9597d9d2b25d9ca9af89b8f55fccc2765aac510085819b40b75",
+        "catalogGuidePointer": "/lessons/6/steps/2/guide/2"
+      },
+      "reviewedKeys": "Shift+Ctrl+S",
+      "reviewedEffect": "開啟 .blend 的 Save As，再依常規方法核對資料夾與本步版本檔名。"
+    },
+    {
+      "step": "07-04",
+      "guideIndex": 0,
+      "displayItem": 1,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/68",
+        "guideSha256": "9caf5df7a8e59a2f0a0b52a3f15d0cac69af5af1641cd01ce59f1b1b0436e6ab",
+        "shortcutCanonicalSha256": "7947d33508c3ba2a0c9c29d267ba4f70dea1c1c6be55fc741e228523a753f525",
+        "catalogGuidePointer": "/lessons/6/steps/3/guide/0"
+      },
+      "reviewedKeys": "Ctrl+O",
+      "reviewedEffect": "開啟 Open 檔案視窗，再選本步指定來源；其餘匯出、重匯入或量測仍依常規方法。"
+    },
+    {
+      "step": "07-04",
+      "guideIndex": 2,
+      "displayItem": 3,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/69",
+        "guideSha256": "c06c21432cf7a5d007f140b817b232ab77270250883bbb3210d28ff863f991f8",
+        "shortcutCanonicalSha256": "698dfd01ccb74e9856d1b15a38a0a19d17bcefa66c961895af876843a2f3674f",
+        "catalogGuidePointer": "/lessons/6/steps/3/guide/2"
+      },
+      "reviewedKeys": "主鍵盤上排 2 → Alt+A → F3 → 搜尋 Select Non Manifold",
+      "reviewedEffect": "開啟 Menu Search，再輸入並核對 Select Non Manifold；依常規方法執行檢查。"
+    },
+    {
+      "step": "07-05",
+      "guideIndex": 0,
+      "displayItem": 1,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/70",
+        "guideSha256": "d30229a168ffcf07b4e7f50dbe69b2181a0bb1c227e0979d29d4c1bbe9146c9b",
+        "shortcutCanonicalSha256": "7947d33508c3ba2a0c9c29d267ba4f70dea1c1c6be55fc741e228523a753f525",
+        "catalogGuidePointer": "/lessons/6/steps/4/guide/0"
+      },
+      "reviewedKeys": "Ctrl+O",
+      "reviewedEffect": "開啟 Open 檔案視窗，再選本步指定來源；其餘匯出、重匯入或量測仍依常規方法。"
+    },
+    {
+      "step": "07-05",
+      "guideIndex": 2,
+      "displayItem": 3,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/71",
+        "guideSha256": "3223cb24604b8c9655e18afb5b1d681c353456285bc255a59ca4c3f8dfd2f773",
+        "shortcutCanonicalSha256": "698dfd01ccb74e9856d1b15a38a0a19d17bcefa66c961895af876843a2f3674f",
+        "catalogGuidePointer": "/lessons/6/steps/4/guide/2"
+      },
+      "reviewedKeys": "主鍵盤上排 2 → Alt+A → F3 → 搜尋 Select Non Manifold",
+      "reviewedEffect": "開啟 Menu Search，再輸入並核對 Select Non Manifold；依常規方法執行檢查。"
+    },
+    {
+      "step": "08-01",
+      "guideIndex": 0,
+      "displayItem": 1,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/72",
+        "guideSha256": "491672b6bd78ab4f708089ca784e6ff205c8f1dbbbfb33f521d26cb701723522",
+        "shortcutCanonicalSha256": "cceac7c004326dde8696cc7a3b4900fd4351e5bb3a093aff218c28fa6da72439",
+        "catalogGuidePointer": "/lessons/7/steps/0/guide/0"
+      },
+      "reviewedKeys": "F2 → Body_Reference → Enter；N",
+      "reviewedEffect": "只選原盒，用 F2 改物件名，必要時用 N 開 Item 核對尺寸與 Scale。"
+    },
+    {
+      "step": "08-01",
+      "guideIndex": 1,
+      "displayItem": 2,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/73",
+        "guideSha256": "f956e2e0f1b1cd6ed1891c8bdaf280ffd357a7b5bef32e5d0920b9837b53554e",
+        "shortcutCanonicalSha256": "698dfd01ccb74e9856d1b15a38a0a19d17bcefa66c961895af876843a2f3674f",
+        "catalogGuidePointer": "/lessons/7/steps/0/guide/1"
+      },
+      "reviewedKeys": "主鍵盤上排 2 → Alt+A → F3 → 搜尋 Select Non Manifold",
+      "reviewedEffect": "開啟 Menu Search，再輸入並核對 Select Non Manifold；依常規方法執行檢查。"
+    },
+    {
+      "step": "08-01",
+      "guideIndex": 2,
+      "displayItem": 3,
+      "status": "context_consistent",
+      "reason": "已逐項對照 where／do／see 與快捷效果、requirements、cautions；未見另一處實質範本錯置。",
+      "sourceBinding": {
+        "annotationPath": "learning/annotations/guide-shortcuts-v001.json",
+        "annotationPointer": "/entries/74",
+        "guideSha256": "f6dc231055bc03870cb6c20f65e6ebfb3b7288c816212554db9cdfdcaf0fe202",
+        "shortcutCanonicalSha256": "9bc89a85db44d9597d9d2b25d9ca9af89b8f55fccc2765aac510085819b40b75",
+        "catalogGuidePointer": "/lessons/7/steps/0/guide/2"
+      },
+      "reviewedKeys": "Shift+Ctrl+S",
+      "reviewedEffect": "開啟 .blend 的 Save As，再依常規方法核對資料夾與本步版本檔名。"
+    }
+  ],
+  "limitations": [
+    "固定原始 v001 註記為本次文字盤點基線；本輪後續 v002 註記／catalog 修正須由整合者另行驗證，本檔不回填已修正狀態。",
+    "未重跑 Blender、未改 catalog／既有註記／progress／operationRun／原圖／run／metadata／場景／STL，未 stage／commit／push。"
+  ]
+}

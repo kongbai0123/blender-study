@@ -1,0 +1,3838 @@
+{
+  "schemaVersion": 1,
+  "id": "guide-shortcuts-v002",
+  "reviewedOn": "2026-10-27",
+  "scope": "沿用已核對75個快速方法與142個guide覆蓋；本輪只修04-06第2項情境及05-05第2項、07-02第1/2項誤按模式的提醒／新證據。原常規方法、舊operationRun、學員狀態與歷史v001註記不變。",
+  "sourceDocuments": [
+    {
+      "path": "learning/annotations/shortcut-existing-evidence-v001.json",
+      "sha256": "0cf38659c3a343f89fb5ae228f925996ec4e83d24fa744715bcbaa391b1c5dd1"
+    },
+    {
+      "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/shortcut-verification-v001.json",
+      "sha256": "68e9d38fcb0f357554a137b1a0efed4c7b9b75954fa978405a6641012f72f5b0"
+    },
+    {
+      "path": "learning/evidence/01/2026-10-27-shortcuts-keyboard-demo-v002/keyboard-verification-v001.json",
+      "sha256": "40a8178bd6b7f67c8a0416bf6da23c2d34ee072769044580048c998584e95f55"
+    },
+    {
+      "path": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/mesh-shortcut-verification-v001.json",
+      "sha256": "15d96952bebc3f66a6abff3b578f1bf2698bf9062dd76652b329c55fa147c3da"
+    },
+    {
+      "path": "learning/annotations/shortcut-runtime-review-v001.json",
+      "sha256": "9770f96ba3f1a11c1b6d28f63cb3d99687de06f92b0b7788c8016e9c5b962a49"
+    },
+    {
+      "path": "learning/annotations/guide-shortcuts-v001.json",
+      "sha256": "c48c1da9ad65b196f66057199d578fa63e2fbf9a93d564d575bc98f8ffeb18ee"
+    },
+    {
+      "path": "learning/annotations/shortcut-template-audit-v002.json",
+      "sha256": "f4945066e7b83a892fb186d9a111a2b42200f2e58865a0756a20c48713a93b89"
+    },
+    {
+      "path": "learning/annotations/shortcut-mode-errors-runtime-review-v001.json",
+      "sha256": "198effce015fb072689d9c15cfb73e638aec98b1cd954e2f33da6a8bf80b45f2"
+    },
+    {
+      "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v001/shortcut-mode-errors-verification-v001.json",
+      "sha256": "ca54a8359e00c744a8e148d2776d6a75f26c1b62bf0fb6ff04fc1ba1e0f0b323"
+    },
+    {
+      "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v002/shortcut-mode-errors-verification-v001.json",
+      "sha256": "c8e0725651e1a55b6bdbf5743fb3f291035b08a9c9e1ec2aee691fec5009a7b7"
+    },
+    {
+      "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v001/factory-keymap-mode-errors-v001.json",
+      "sha256": "86f966a8f047765656ee6dee31ddde77ea11b53d94715c5a811d2a9df5b95a71"
+    },
+    {
+      "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v002/factory-keymap-mode-errors-v001.json",
+      "sha256": "86f966a8f047765656ee6dee31ddde77ea11b53d94715c5a811d2a9df5b95a71"
+    }
+  ],
+  "entries": [
+    {
+      "step": "01-02",
+      "guideIndex": 0,
+      "guideSha256": "c2f9a44648ce0f6952af6b651eceb4091b6a2c3d8206cfc423db908193360230",
+      "shortcut": {
+        "keys": "Ctrl+,",
+        "effect": "開啟 Edit > Preferences；語言選擇與 Save Preferences 仍照常規方法。",
+        "requirements": [
+          "Blender 主視窗；先核對目前檔名、版本與未儲存變更。"
+        ],
+        "cautions": [
+          "使用主鍵盤逗點；開啟設定不表示已選語言或儲存。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/01/2026-10-22-lesson01-demo-v001/01-07-05-edit-undo-menu.png",
+            "sha256": "a322cbd6bb3ce61bc9a0151c0d21ca198704301322fd4faf31897e0f9b2f48ae",
+            "method": "menu_label_visual",
+            "label": "Edit > Preferences...：Ctrl ,（既有原圖鍵標）"
+          }
+        ]
+      }
+    },
+    {
+      "step": "01-03",
+      "guideIndex": 0,
+      "guideSha256": "c3ed38e01b4bbe7203e2e6063a552be5cdf3e6b5c88a0f4ca512488fb5c839b4",
+      "shortcut": {
+        "keys": "Ctrl+N → General",
+        "effect": "開啟 New 選單後選 General。",
+        "requirements": [
+          "Blender 主視窗；先核對目前檔名、版本與未儲存變更。"
+        ],
+        "cautions": [
+          "僅在確認可另開新場景時使用；未存作品先保存，不略過提示。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/01/2026-10-22-lesson01-demo-v001/01-04-01-file-menu.png",
+            "sha256": "34fb7b908b2195873b9568a38b8aa54bdef0fd7ce29eb0e74570486259fd6768",
+            "method": "menu_label_visual",
+            "label": "File > New：Ctrl N（既有原圖鍵標）"
+          }
+        ]
+      }
+    },
+    {
+      "step": "01-04",
+      "guideIndex": 0,
+      "guideSha256": "230431f81bb10c59433dff85177af566d8414543c80d21f5cc58960df695d50f",
+      "shortcut": {
+        "keys": "Shift+Ctrl+S",
+        "effect": "開啟 .blend 的 Save As，再依常規方法核對資料夾與本步版本檔名。",
+        "requirements": [
+          "Blender 主視窗；先核對目前檔名、版本與未儲存變更。"
+        ],
+        "cautions": [
+          "已登記的檢查點保留；需要修改先另存新版本。快捷鍵不執行檔案登記或學員確認。",
+          "此處證據只涵蓋 .blend 的 File > Save As；PNG 仍照 Image > Save As 常規方法，未核其快捷鍵。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/01/2026-10-22-lesson01-demo-v001/01-04-01-file-menu.png",
+            "sha256": "34fb7b908b2195873b9568a38b8aa54bdef0fd7ce29eb0e74570486259fd6768",
+            "method": "menu_label_visual",
+            "label": "File > Save As...：Shift Ctrl S（既有原圖鍵標）"
+          }
+        ]
+      }
+    },
+    {
+      "step": "01-05",
+      "guideIndex": 0,
+      "guideSha256": "11df7704e8617e0e05bdc3aa00a842e27d9940778006c987ece0613871e1f31f",
+      "shortcut": {
+        "keys": "Tab",
+        "effect": "在作用中網格的 Object Mode／Edit Mode 之間切換；本步目標是 Object Mode。",
+        "requirements": [
+          "滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。",
+          "作用中物件必須是網格，先讀左上模式。"
+        ],
+        "cautions": [
+          "Tab 是切換，不是固定設成某模式；到達目標模式就停。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/01-05-01-tab-edit.png",
+            "sha256": "ef3c94f920b0aa08cc349b691074ef4b0b112b02ad528b91d11e7414a0ebb7e6",
+            "method": "native_events_and_readback",
+            "label": "tab-edit（獨立 Blender 原圖）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/01-05-02-tab-object.png",
+            "sha256": "44cb09a22b591b3f141f02631bcd29d7842171430f57b7b336d8421852ccb314",
+            "method": "native_events_and_readback",
+            "label": "tab-object（獨立 Blender 原圖）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/shortcut-verification-v001.json",
+            "sha256": "68e9d38fcb0f357554a137b1a0efed4c7b9b75954fa978405a6641012f72f5b0",
+            "method": "native_events_and_readback",
+            "label": "事件、預期與實際讀值；未判學員完成"
+          }
+        ]
+      }
+    },
+    {
+      "step": "01-06",
+      "guideIndex": 2,
+      "guideSha256": "d11e945df9929c912ca93c21af627b7b854649beb30704459d3a73edc18a8346",
+      "shortcut": {
+        "keys": "Numpad .",
+        "effect": "選取 Cube 後按數字鍵盤小數點，等同 View > Frame Selected；只對焦視角，不移動 Cube。",
+        "requirements": [
+          "滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。",
+          "先在 Outliner 選取 Cube。"
+        ],
+        "cautions": [
+          "Numpad . 是數字鍵盤小數點，與主鍵盤句點不同；本次實測主句點開 Pivot Point，數字鍵盤小數點才對焦選取。",
+          "沒有數字鍵盤的筆電可到 Edit > Preferences > Input > Keyboard 開啟 Emulate Numpad；Blender 5.2.1 介面提示說主鍵盤 1～0 可作數字鍵盤數字。這不表示主句點也變成 Numpad .。",
+          "本次隔離環境已實拍設定位置與提示，但模擬 ONE 在勾選後未切到前視圖；實體鍵盤重映射效果尚未驗證。未確定時用 View > Frame Selected，設定由學員依需要決定。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/01/2026-10-22-lesson01-demo-v001/01-06-04-view-frame-selected.png",
+            "sha256": "fd46511c619b367af5f564d080e489ff5ee811950f0db230764455a2164b05f8",
+            "method": "menu_label_visual",
+            "label": "View > Frame Selected：Numpad .（既有原圖鍵標）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/01-06-01-frame-selected.png",
+            "sha256": "fa731813db5e29290e40820777c2065d8251c6be01639017f9857593e4257600",
+            "method": "native_events_and_readback",
+            "label": "frame-selected（獨立 Blender 原圖）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/shortcut-verification-v001.json",
+            "sha256": "68e9d38fcb0f357554a137b1a0efed4c7b9b75954fa978405a6641012f72f5b0",
+            "method": "native_events_and_readback",
+            "label": "事件、預期與實際讀值；未判學員完成"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-keyboard-demo-v002/01-06-05-emulate-checkbox-after.png",
+            "sha256": "65bdd2277c262727618ab05fb38531c55516590581977a2a753c88f12edda240",
+            "method": "native_events_and_readback",
+            "label": "emulate-checkbox-after（新原生事件／實拍）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-keyboard-demo-v002/01-06-08-main-period-pivot.png",
+            "sha256": "6d924407248acfb8052c9fa9dbff489a0d7c50dcb425bc149d92c8a7fd431c6b",
+            "method": "native_events_and_readback",
+            "label": "main-period-pivot（新原生事件／實拍）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-keyboard-demo-v002/01-06-09-numpad-period-framed.png",
+            "sha256": "fd8934a3785d638bd98bc128beb3279b81390a775f373d891880dae2ccb32ead",
+            "method": "native_events_and_readback",
+            "label": "numpad-period-framed（新原生事件／實拍）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-keyboard-demo-v002/keyboard-verification-v001.json",
+            "sha256": "40a8178bd6b7f67c8a0416bf6da23c2d34ee072769044580048c998584e95f55",
+            "method": "native_events_and_readback",
+            "label": "事件、預期與實際讀值；未判學員完成"
+          }
+        ]
+      }
+    },
+    {
+      "step": "01-07",
+      "guideIndex": 0,
+      "guideSha256": "a1a6354176df4fd7c70ef9af82eee119cb069207b94cac528318b46bcb060ad3",
+      "shortcut": {
+        "keys": "Shift+Ctrl+S",
+        "effect": "開啟 .blend 的 Save As，再依常規方法核對資料夾與本步版本檔名。",
+        "requirements": [
+          "Blender 主視窗；先核對目前檔名、版本與未儲存變更。"
+        ],
+        "cautions": [
+          "已登記的檢查點保留；需要修改先另存新版本。快捷鍵不執行檔案登記或學員確認。",
+          "此處證據只涵蓋 .blend 的 File > Save As；PNG 仍照 Image > Save As 常規方法，未核其快捷鍵。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/01/2026-10-22-lesson01-demo-v001/01-04-01-file-menu.png",
+            "sha256": "34fb7b908b2195873b9568a38b8aa54bdef0fd7ce29eb0e74570486259fd6768",
+            "method": "menu_label_visual",
+            "label": "File > Save As...：Shift Ctrl S（既有原圖鍵標）"
+          }
+        ]
+      }
+    },
+    {
+      "step": "01-07",
+      "guideIndex": 1,
+      "guideSha256": "ae02ebfb317bfdc0544938b59086cec2000d8197bec6d128e26565d9314e31e3",
+      "shortcut": {
+        "keys": "G → X → 0.5 → Enter；取消：Esc／滑鼠右鍵；側欄：N",
+        "effect": "選取 Cube，從 X＝0 開始沿 X 再移 0.5 m；相對移動結果是 X＝0.5 m。Location X 欄位直接輸入 0.5 m 則是設定絕對位置。",
+        "requirements": [
+          "滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。",
+          "Object Mode，僅選本步目標物件；Transform Orientation 為 Global。",
+          "本例 Metric／Unit Scale 1，長度以 m 顯示；先讀回 X 的起點，不直接把此數字搬到毫米工程場景。"
+        ],
+        "cautions": [
+          "G 是相對移動：X＝1 時 G X 0.5 會到 1.5；欄位設 0.5 則直接到 0.5。起點為 0 時兩者才相同。",
+          "G X -0.5 向 X 負方向再移 0.5；正數可直接輸入 0.5。",
+          "這次 Blender 5.2.1 出廠鍵位／Global 實測，不加 X 的 G 0.5 也使 X 從 1 到 1.5；教學明寫 X，其他模式、約束或鍵位設定不據此推定。",
+          "Enter 確認前可按 Esc 或滑鼠右鍵取消本次移動；已確認的移動要用下一項 Undo。N 是側欄開關，已開啟就不再按。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/01-07-03-translate-x-from-zero.png",
+            "sha256": "e50fc34ea7578b53e759b58985c08a14e30406a812104c35432fa410326dadc5",
+            "method": "native_events_and_readback",
+            "label": "translate-x-from-zero（獨立 Blender 原圖）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/01-07-05-translate-x-from-one.png",
+            "sha256": "4b2597d510ca80aeb4b986b660482a44dec5441d9bfd464ea8aa7bd052e04f02",
+            "method": "native_events_and_readback",
+            "label": "translate-x-from-one（獨立 Blender 原圖）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/01-07-10-location-field-absolute.png",
+            "sha256": "4cad60be42895a8fe53f9dd856844984625956c09a43516ec5af38a7c624e6f8",
+            "method": "native_events_and_readback",
+            "label": "location-field-absolute（獨立 Blender 原圖）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/01-07-07-translate-no-axis.png",
+            "sha256": "4b2597d510ca80aeb4b986b660482a44dec5441d9bfd464ea8aa7bd052e04f02",
+            "method": "native_events_and_readback",
+            "label": "translate-no-axis（獨立 Blender 原圖）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/01-07-06-translate-x-negative.png",
+            "sha256": "0a7443ec932dcf9bbd37b5ee357a4c468ed3a6fe4b349e8ad825102621801290",
+            "method": "native_events_and_readback",
+            "label": "translate-x-negative（獨立 Blender 原圖）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/01-07-08-translate-cancel-esc.png",
+            "sha256": "4b2597d510ca80aeb4b986b660482a44dec5441d9bfd464ea8aa7bd052e04f02",
+            "method": "native_events_and_readback",
+            "label": "translate-cancel-esc（獨立 Blender 原圖）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/01-07-09-translate-cancel-rightmouse.png",
+            "sha256": "4b2597d510ca80aeb4b986b660482a44dec5441d9bfd464ea8aa7bd052e04f02",
+            "method": "native_events_and_readback",
+            "label": "translate-cancel-rightmouse（獨立 Blender 原圖）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-22-lesson01-demo-v001/01-07-02-view-sidebar.png",
+            "sha256": "7c2aa6418bc22092bd1ec89d617e99692402f9a8c5a5f669055b65c550b34bb9",
+            "method": "menu_label_visual",
+            "label": "View > Sidebar：N（既有原圖鍵標）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/shortcut-verification-v001.json",
+            "sha256": "68e9d38fcb0f357554a137b1a0efed4c7b9b75954fa978405a6641012f72f5b0",
+            "method": "native_events_and_readback",
+            "label": "事件、預期與實際讀值；未判學員完成"
+          }
+        ]
+      }
+    },
+    {
+      "step": "01-07",
+      "guideIndex": 2,
+      "guideSha256": "25b029b657067b30b8aa5de1f095adfe8aaf293bbb9a049e0cdfdd6ab5a8893c",
+      "shortcut": {
+        "keys": "Ctrl+Z",
+        "effect": "撤回剛才這一次可復原的移動，再核對 Location X 回到改前狀態。",
+        "requirements": [
+          "滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。"
+        ],
+        "cautions": [
+          "先確認最近的動作確實是本次移動；Undo 不是檔案版本回復。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/01/2026-10-22-lesson01-demo-v001/01-07-05-edit-undo-menu.png",
+            "sha256": "a322cbd6bb3ce61bc9a0151c0d21ca198704301322fd4faf31897e0f9b2f48ae",
+            "method": "menu_label_visual",
+            "label": "Edit > Undo：Ctrl Z（既有原圖鍵標）"
+          }
+        ]
+      }
+    },
+    {
+      "step": "01-08",
+      "guideIndex": 0,
+      "guideSha256": "c02df49b1f660e1230f2cf4ec02b14ee1c0737ccbeff050671c7cf8dda8112bf",
+      "shortcut": {
+        "keys": "N",
+        "effect": "切換 Sidebar；若尚未顯示才按 N，再選 Item 讀取或輸入本步指定欄位。",
+        "requirements": [
+          "滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。"
+        ],
+        "cautions": [
+          "已開啟時再按 N 會關閉；開啟側欄不代表已設定 Dimensions、Location 或單位。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/01/2026-10-22-lesson01-demo-v001/01-07-02-view-sidebar.png",
+            "sha256": "7c2aa6418bc22092bd1ec89d617e99692402f9a8c5a5f669055b65c550b34bb9",
+            "method": "menu_label_visual",
+            "label": "View > Sidebar：N（既有原圖鍵標）"
+          }
+        ]
+      }
+    },
+    {
+      "step": "01-08",
+      "guideIndex": 1,
+      "guideSha256": "1f4b1c8382f4af9b9ba35dc4e5f1fe6a03d67d763527f3fd7cc130c8c373b1d6",
+      "shortcut": {
+        "keys": "S → X → 1.5 → Enter",
+        "effect": "只有從未旋轉的 2 m Cube 開始，沿 X 乘以 1.5 得 Dimensions X＝3 m；Scale X 從 1 變 1.5。",
+        "requirements": [
+          "滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。",
+          "Object Mode，僅選本步目標物件；Transform Orientation 為 Global。",
+          "本例 Rotation＝0、Scale＝1、Dimensions X＝2 m；起點不同先保留欄位方法並與助教確認。"
+        ],
+        "cautions": [
+          "S 的數值是倍率，不是絕對尺寸；輸入 3 會變成原長度三倍。Dimensions 欄位才是直接設定本步的 3 m。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/01-08-07-scale-x.png",
+            "sha256": "0de90de19178b4e84a02c68a8ce57e19165602f7c69e31ae912f302283b34c03",
+            "method": "native_events_and_readback",
+            "label": "scale-x（獨立 Blender 原圖）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/shortcut-verification-v001.json",
+            "sha256": "68e9d38fcb0f357554a137b1a0efed4c7b9b75954fa978405a6641012f72f5b0",
+            "method": "native_events_and_readback",
+            "label": "事件、預期與實際讀值；未判學員完成"
+          }
+        ]
+      }
+    },
+    {
+      "step": "01-09",
+      "guideIndex": 0,
+      "guideSha256": "1aaa32764923f21a7f25bd9799c12d265e785acb8260d19caefe2ef40b7ea793",
+      "shortcut": {
+        "keys": "Ctrl+S",
+        "effect": "保存目前可續存的工作版；其餘參數核對與檔案登記照原步驟進行。",
+        "requirements": [
+          "Blender 主視窗；先核對目前檔名、版本與未儲存變更。"
+        ],
+        "cautions": [
+          "已登記的檢查點保留；需要修改先另存新版本。快捷鍵不執行檔案登記或學員確認。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/01/2026-10-22-lesson01-demo-v001/01-04-01-file-menu.png",
+            "sha256": "34fb7b908b2195873b9568a38b8aa54bdef0fd7ce29eb0e74570486259fd6768",
+            "method": "menu_label_visual",
+            "label": "File > Save：Ctrl S（既有原圖鍵標）"
+          }
+        ]
+      }
+    },
+    {
+      "step": "01-09",
+      "guideIndex": 2,
+      "guideSha256": "1180f06f617207b80907f2c03c058f28441c97a70688ba1d4b91db0a019bcd9b",
+      "shortcut": {
+        "keys": "Ctrl+O",
+        "effect": "開啟 Open 檔案視窗，再選本步指定來源；其餘匯出、重匯入或量測仍依常規方法。",
+        "requirements": [
+          "Blender 主視窗；先核對目前檔名、版本與未儲存變更。"
+        ],
+        "cautions": [
+          "先保留未存內容；已登記版本沒有再修改時，重開提示不要用 Save 覆寫；不確定就 Cancel。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/01/2026-10-22-lesson01-demo-v001/01-04-01-file-menu.png",
+            "sha256": "34fb7b908b2195873b9568a38b8aa54bdef0fd7ce29eb0e74570486259fd6768",
+            "method": "menu_label_visual",
+            "label": "File > Open...：Ctrl O（既有原圖鍵標）"
+          }
+        ]
+      }
+    },
+    {
+      "step": "02-01",
+      "guideIndex": 1,
+      "guideSha256": "592efcfb41b52b768eb0b5dacad7f375a30e10a553c1e68732c72bd4ca89a49c",
+      "shortcut": {
+        "keys": "X → 核對 Delete 確認",
+        "effect": "Object Mode 僅選可移除的 Cube，按 X 並依確認提示刪除；Camera／Light 保留。",
+        "requirements": [
+          "滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。",
+          "先核對 Object Mode、選取名稱與不需保留的物件。"
+        ],
+        "cautions": [
+          "Edit Mode 的 X 會開不同的網格刪除選單；不要刪除前一單元的未存作品。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/02/2026-10-22-lesson02-demo-v001/02-01-02-object-delete.png",
+            "sha256": "806b3af007268cd66ab6425ed26227af0fb880d96c6e3e9ac6a767e63e699635",
+            "method": "menu_label_visual",
+            "label": "Object > Delete：X（既有原圖鍵標）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/01-05-05-x-delete-menu.png",
+            "sha256": "d34c28902cdcdc0de0a33922ce5b7c086227aa72eb15f88bf6c4d63e1e10efcd",
+            "method": "native_events_and_readback",
+            "label": "x-delete-menu（獨立 Blender 原圖）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/shortcut-verification-v001.json",
+            "sha256": "68e9d38fcb0f357554a137b1a0efed4c7b9b75954fa978405a6641012f72f5b0",
+            "method": "native_events_and_readback",
+            "label": "事件、預期與實際讀值；未判學員完成"
+          }
+        ]
+      }
+    },
+    {
+      "step": "02-01",
+      "guideIndex": 2,
+      "guideSha256": "29a5b83c5536a2879c32633aacca3ebafcf0331084b493cab99a44bc197d79aa",
+      "shortcut": {
+        "keys": "Shift+Ctrl+S",
+        "effect": "開啟 .blend 的 Save As，再依常規方法核對資料夾與本步版本檔名。",
+        "requirements": [
+          "Blender 主視窗；先核對目前檔名、版本與未儲存變更。"
+        ],
+        "cautions": [
+          "已登記的檢查點保留；需要修改先另存新版本。快捷鍵不執行檔案登記或學員確認。",
+          "此處證據只涵蓋 .blend 的 File > Save As；PNG 仍照 Image > Save As 常規方法，未核其快捷鍵。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/01/2026-10-22-lesson01-demo-v001/01-04-01-file-menu.png",
+            "sha256": "34fb7b908b2195873b9568a38b8aa54bdef0fd7ce29eb0e74570486259fd6768",
+            "method": "menu_label_visual",
+            "label": "File > Save As...：Shift Ctrl S（既有原圖鍵標）"
+          }
+        ]
+      }
+    },
+    {
+      "step": "02-02",
+      "guideIndex": 0,
+      "guideSha256": "0c82c73e9417035cc6c96cd9909a6a57d880a19eb0d9f1d42cf0e1eb2d48bfc7",
+      "shortcut": {
+        "keys": "Shift+A → Mesh → Plane",
+        "effect": "開啟 Add 選單，再依常規方法選 Plane；尺寸與位置仍逐欄設定。",
+        "requirements": [
+          "滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。",
+          "Object Mode；先核對 3D Cursor，新物件會在該處建立。"
+        ],
+        "cautions": [
+          "本次原生送鍵驗證到 Add 選單展開；仍須自己選正確 Mesh 項目並核對新物件。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/02-02-01-shift-a-menu.png",
+            "sha256": "5068b34e8b86697a6b903474596f71d54b9a9c28fa4c7bce9856e7a2542591d6",
+            "method": "native_events_and_readback",
+            "label": "shift-a-menu（獨立 Blender 原圖）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/shortcut-verification-v001.json",
+            "sha256": "68e9d38fcb0f357554a137b1a0efed4c7b9b75954fa978405a6641012f72f5b0",
+            "method": "native_events_and_readback",
+            "label": "事件、預期與實際讀值；未判學員完成"
+          }
+        ]
+      }
+    },
+    {
+      "step": "02-02",
+      "guideIndex": 1,
+      "guideSha256": "0d8aeaecd704af9ded826e9947bda159472ee1c961faabf94c2f8d61e171d8f1",
+      "shortcut": {
+        "keys": "Shift+A → Mesh → Cube",
+        "effect": "開啟 Add 選單，再依常規方法選 Cube；尺寸與位置仍逐欄設定。",
+        "requirements": [
+          "滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。",
+          "Object Mode；先核對 3D Cursor，新物件會在該處建立。"
+        ],
+        "cautions": [
+          "本次原生送鍵驗證到 Add 選單展開；仍須自己選正確 Mesh 項目並核對新物件。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/02-02-01-shift-a-menu.png",
+            "sha256": "5068b34e8b86697a6b903474596f71d54b9a9c28fa4c7bce9856e7a2542591d6",
+            "method": "native_events_and_readback",
+            "label": "shift-a-menu（獨立 Blender 原圖）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/shortcut-verification-v001.json",
+            "sha256": "68e9d38fcb0f357554a137b1a0efed4c7b9b75954fa978405a6641012f72f5b0",
+            "method": "native_events_and_readback",
+            "label": "事件、預期與實際讀值；未判學員完成"
+          }
+        ]
+      }
+    },
+    {
+      "step": "02-03",
+      "guideIndex": 0,
+      "guideSha256": "5b65b0bba18cff6a29528506813abcf0c039b606cee592cd702c1c0dca73b1f8",
+      "shortcut": {
+        "keys": "Shift+A → Mesh → Cube",
+        "effect": "開啟 Add 選單，再依常規方法選 Cube；尺寸與位置仍逐欄設定。",
+        "requirements": [
+          "滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。",
+          "Object Mode；先核對 3D Cursor，新物件會在該處建立。"
+        ],
+        "cautions": [
+          "本次原生送鍵驗證到 Add 選單展開；仍須自己選正確 Mesh 項目並核對新物件。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/02-02-01-shift-a-menu.png",
+            "sha256": "5068b34e8b86697a6b903474596f71d54b9a9c28fa4c7bce9856e7a2542591d6",
+            "method": "native_events_and_readback",
+            "label": "shift-a-menu（獨立 Blender 原圖）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/shortcut-verification-v001.json",
+            "sha256": "68e9d38fcb0f357554a137b1a0efed4c7b9b75954fa978405a6641012f72f5b0",
+            "method": "native_events_and_readback",
+            "label": "事件、預期與實際讀值；未判學員完成"
+          }
+        ]
+      }
+    },
+    {
+      "step": "02-04",
+      "guideIndex": 0,
+      "guideSha256": "c801a3aac5a343e8fcb64bfecba73a33ef3a7faabf1d4af2397bf1321d41a0cd",
+      "shortcut": {
+        "keys": "F2 → BeaconBase → Enter",
+        "effect": "只選基座、滑鼠在 3D Viewport，按 F2 改作用中物件名稱，再核對 Outliner。",
+        "requirements": [
+          "滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。",
+          "Object Mode，基座為作用中物件。"
+        ],
+        "cautions": [
+          "本次實測將 Cube 改為 ShortcutCube 以驗證功能；練習請輸入本步的 BeaconBase。物件名不同於網格或材質資料塊名。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/02/2026-10-22-lesson02-demo-v001/02-04-02-rename-menu.png",
+            "sha256": "bb945a2e6b0d47123c9c5c604a1f711b794f00f2c6c3992715bda88303947653",
+            "method": "menu_label_visual",
+            "label": "Edit > Rename Active Item...：F2（既有原圖鍵標）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/02-03-02-f2-renamed.png",
+            "sha256": "324e3fbbe8998a350887e8a7bf9df509e6157e5d5015e57d2ee60a4497d4e914",
+            "method": "native_events_and_readback",
+            "label": "f2-renamed（獨立 Blender 原圖）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/shortcut-verification-v001.json",
+            "sha256": "68e9d38fcb0f357554a137b1a0efed4c7b9b75954fa978405a6641012f72f5b0",
+            "method": "native_events_and_readback",
+            "label": "事件、預期與實際讀值；未判學員完成"
+          }
+        ]
+      }
+    },
+    {
+      "step": "02-04",
+      "guideIndex": 1,
+      "guideSha256": "b060377b772238e506b340574c51a3173074380e50d32521130eada2ca70fc4c",
+      "shortcut": {
+        "keys": "M → New Collection",
+        "effect": "依常規方法先選對部件，按 M 開 Move to Collection，再選 New Collection 並命名 Station。",
+        "requirements": [
+          "滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。",
+          "Object Mode，所有要移動的部件已選取。"
+        ],
+        "cautions": [
+          "本次原生事件驗證到選單展開，沒有替你建立 Station；建立後仍須展開 Outliner 核對。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/02-03-03-m-collection-menu.png",
+            "sha256": "e9426fdd706de16750ee3300ce9d9a3855532b3ffbe4289908070886c2733467",
+            "method": "native_events_and_readback",
+            "label": "m-collection-menu（獨立 Blender 原圖）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/shortcut-verification-v001.json",
+            "sha256": "68e9d38fcb0f357554a137b1a0efed4c7b9b75954fa978405a6641012f72f5b0",
+            "method": "native_events_and_readback",
+            "label": "事件、預期與實際讀值；未判學員完成"
+          }
+        ]
+      }
+    },
+    {
+      "step": "02-04",
+      "guideIndex": 2,
+      "guideSha256": "59ee5a9d5f2aafb5e45c26286103def3b98a1605f41a93c0290a78107fb2d798",
+      "shortcut": {
+        "keys": "Shift+Ctrl+S",
+        "effect": "開啟 .blend 的 Save As，再依常規方法核對資料夾與本步版本檔名。",
+        "requirements": [
+          "Blender 主視窗；先核對目前檔名、版本與未儲存變更。"
+        ],
+        "cautions": [
+          "已登記的檢查點保留；需要修改先另存新版本。快捷鍵不執行檔案登記或學員確認。",
+          "此處證據只涵蓋 .blend 的 File > Save As；PNG 仍照 Image > Save As 常規方法，未核其快捷鍵。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/01/2026-10-22-lesson01-demo-v001/01-04-01-file-menu.png",
+            "sha256": "34fb7b908b2195873b9568a38b8aa54bdef0fd7ce29eb0e74570486259fd6768",
+            "method": "menu_label_visual",
+            "label": "File > Save As...：Shift Ctrl S（既有原圖鍵標）"
+          }
+        ]
+      }
+    },
+    {
+      "step": "02-05",
+      "guideIndex": 0,
+      "guideSha256": "a109b0da9ed1eaf78e96b1035aa6d327c730e7948cc6a8dabff932b248dd6899",
+      "shortcut": {
+        "keys": "Ctrl+N → General；Shift+Ctrl+S",
+        "effect": "開啟 New 選單後選 General，再開另存視窗核對本步版本。",
+        "requirements": [
+          "Blender 主視窗；先核對目前檔名、版本與未儲存變更。"
+        ],
+        "cautions": [
+          "僅在確認可另開新場景時使用；未存作品先保存，不略過提示。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/01/2026-10-22-lesson01-demo-v001/01-04-01-file-menu.png",
+            "sha256": "34fb7b908b2195873b9568a38b8aa54bdef0fd7ce29eb0e74570486259fd6768",
+            "method": "menu_label_visual",
+            "label": "File > New：Ctrl N（既有原圖鍵標）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-22-lesson01-demo-v001/01-04-01-file-menu.png",
+            "sha256": "34fb7b908b2195873b9568a38b8aa54bdef0fd7ce29eb0e74570486259fd6768",
+            "method": "menu_label_visual",
+            "label": "File > Save As...：Shift Ctrl S（既有原圖鍵標）"
+          }
+        ]
+      }
+    },
+    {
+      "step": "02-06",
+      "guideIndex": 0,
+      "guideSha256": "8d130c4d257a742251de2aabfe83befc771b5a8866ee2ec09e76cd4a766849cf",
+      "shortcut": {
+        "keys": "N",
+        "effect": "切換 Sidebar；若尚未顯示才按 N，再選 Item 讀取或輸入本步指定欄位。",
+        "requirements": [
+          "滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。"
+        ],
+        "cautions": [
+          "已開啟時再按 N 會關閉；開啟側欄不代表已設定 Dimensions、Location 或單位。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/01/2026-10-22-lesson01-demo-v001/01-07-02-view-sidebar.png",
+            "sha256": "7c2aa6418bc22092bd1ec89d617e99692402f9a8c5a5f669055b65c550b34bb9",
+            "method": "menu_label_visual",
+            "label": "View > Sidebar：N（既有原圖鍵標）"
+          }
+        ]
+      }
+    },
+    {
+      "step": "02-07",
+      "guideIndex": 0,
+      "guideSha256": "25eb30f3ccf0d00bbfb54ead62907157d52452df58653611da0f96754b72fe9a",
+      "shortcut": {
+        "keys": "Ctrl+S",
+        "effect": "保存目前可續存的工作版；其餘參數核對與檔案登記照原步驟進行。",
+        "requirements": [
+          "Blender 主視窗；先核對目前檔名、版本與未儲存變更。"
+        ],
+        "cautions": [
+          "已登記的檢查點保留；需要修改先另存新版本。快捷鍵不執行檔案登記或學員確認。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/01/2026-10-22-lesson01-demo-v001/01-04-01-file-menu.png",
+            "sha256": "34fb7b908b2195873b9568a38b8aa54bdef0fd7ce29eb0e74570486259fd6768",
+            "method": "menu_label_visual",
+            "label": "File > Save：Ctrl S（既有原圖鍵標）"
+          }
+        ]
+      }
+    },
+    {
+      "step": "02-07",
+      "guideIndex": 1,
+      "guideSha256": "c7ba8b9e5b1eb355bfcff657d4c737aff460eed2584cf5d08335a12f44ff6471",
+      "shortcut": {
+        "keys": "Ctrl+S",
+        "effect": "保存目前可續存的工作版；其餘參數核對與檔案登記照原步驟進行。",
+        "requirements": [
+          "Blender 主視窗；先核對目前檔名、版本與未儲存變更。"
+        ],
+        "cautions": [
+          "已登記的檢查點保留；需要修改先另存新版本。快捷鍵不執行檔案登記或學員確認。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/01/2026-10-22-lesson01-demo-v001/01-04-01-file-menu.png",
+            "sha256": "34fb7b908b2195873b9568a38b8aa54bdef0fd7ce29eb0e74570486259fd6768",
+            "method": "menu_label_visual",
+            "label": "File > Save：Ctrl S（既有原圖鍵標）"
+          }
+        ]
+      }
+    },
+    {
+      "step": "02-07",
+      "guideIndex": 2,
+      "guideSha256": "f923858018b7d11939df47d33434e6102022d83dadd1cdae1a51e250a12a0c8d",
+      "shortcut": {
+        "keys": "Ctrl+O",
+        "effect": "開啟 Open 檔案視窗，再選本步指定來源；其餘匯出、重匯入或量測仍依常規方法。",
+        "requirements": [
+          "Blender 主視窗；先核對目前檔名、版本與未儲存變更。"
+        ],
+        "cautions": [
+          "先保留未存內容；已登記版本沒有再修改時，重開提示不要用 Save 覆寫；不確定就 Cancel。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/01/2026-10-22-lesson01-demo-v001/01-04-01-file-menu.png",
+            "sha256": "34fb7b908b2195873b9568a38b8aa54bdef0fd7ce29eb0e74570486259fd6768",
+            "method": "menu_label_visual",
+            "label": "File > Open...：Ctrl O（既有原圖鍵標）"
+          }
+        ]
+      }
+    },
+    {
+      "step": "03-01",
+      "guideIndex": 0,
+      "guideSha256": "e487775aa3813c613b65685da1cc26f5dba662ad43dfd475c1c574082a6b8fed",
+      "shortcut": {
+        "keys": "Ctrl+O",
+        "effect": "開啟 Open 檔案視窗，再選本步指定來源；其餘匯出、重匯入或量測仍依常規方法。",
+        "requirements": [
+          "Blender 主視窗；先核對目前檔名、版本與未儲存變更。"
+        ],
+        "cautions": [
+          "先保留未存內容；已登記版本沒有再修改時，重開提示不要用 Save 覆寫；不確定就 Cancel。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/01/2026-10-22-lesson01-demo-v001/01-04-01-file-menu.png",
+            "sha256": "34fb7b908b2195873b9568a38b8aa54bdef0fd7ce29eb0e74570486259fd6768",
+            "method": "menu_label_visual",
+            "label": "File > Open...：Ctrl O（既有原圖鍵標）"
+          }
+        ]
+      }
+    },
+    {
+      "step": "03-01",
+      "guideIndex": 1,
+      "guideSha256": "7ce1a4a274309e4e4d65bffffe6c8d44538c29191707768e62ebd85c548ccf48",
+      "shortcut": {
+        "keys": "Shift+Ctrl+S",
+        "effect": "開啟 .blend 的 Save As，再依常規方法核對資料夾與本步版本檔名。",
+        "requirements": [
+          "Blender 主視窗；先核對目前檔名、版本與未儲存變更。"
+        ],
+        "cautions": [
+          "已登記的檢查點保留；需要修改先另存新版本。快捷鍵不執行檔案登記或學員確認。",
+          "此處證據只涵蓋 .blend 的 File > Save As；PNG 仍照 Image > Save As 常規方法，未核其快捷鍵。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/01/2026-10-22-lesson01-demo-v001/01-04-01-file-menu.png",
+            "sha256": "34fb7b908b2195873b9568a38b8aa54bdef0fd7ce29eb0e74570486259fd6768",
+            "method": "menu_label_visual",
+            "label": "File > Save As...：Shift Ctrl S（既有原圖鍵標）"
+          }
+        ]
+      }
+    },
+    {
+      "step": "03-02",
+      "guideIndex": 1,
+      "guideSha256": "7382930a510e1e2252c0c6dc7a20c96e65d32ab710d4f93a282efa1e608c26ee",
+      "shortcut": {
+        "keys": "Numpad 0",
+        "effect": "切換到作用中相機取景；先核對場景已有正確的作用中相機。",
+        "requirements": [
+          "滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。"
+        ],
+        "cautions": [
+          "是數字鍵盤 0，與主鍵盤上排 0 分開；未驗證筆電實體鍵盤模擬效果時，保留 View > Cameras > Active Camera。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/03-03-01-numpad-zero-camera.png",
+            "sha256": "1df278e8be1cd4f0c90637beb216b288b2f30a0d67c0013fdf88cac7aaf9d2b5",
+            "method": "native_events_and_readback",
+            "label": "numpad-zero-camera（新原生事件／實拍）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/mesh-shortcut-verification-v001.json",
+            "sha256": "15d96952bebc3f66a6abff3b578f1bf2698bf9062dd76652b329c55fa147c3da",
+            "method": "native_events_and_readback",
+            "label": "事件、預期與實際讀值；未判學員完成"
+          }
+        ]
+      }
+    },
+    {
+      "step": "03-02",
+      "guideIndex": 2,
+      "guideSha256": "0c1b012b174596da73fc05474badf8d4dd8e4cd1ee64c5ba570d10e157553946",
+      "shortcut": {
+        "keys": "G → X／Y／Z → 位移量 → Enter；R → X／Y／Z → 角度 → Enter",
+        "effect": "在 Object Mode 調整 Camera 的單一 Global 軸位移或旋轉，再用常規方法回相機取景核對。",
+        "requirements": [
+          "滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。",
+          "Camera 為作用中物件，先讀原姿態；本次通用變換鍵的實測物件是 Cube。",
+          "Transform Orientation 明確為 Global；父子關係及旋轉模式先與當前畫面核對。"
+        ],
+        "cautions": [
+          "G 是相對位移；R 是相對旋轉，不等於直接設定 Location／Euler 欄位的絕對值。實際角度與單位依相機當前場景，不預填一組會覆寫取景的數字。",
+          "本次驗證為出廠鍵位、Global；父子關係或不同旋轉模式需先依實際畫面核對。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/01-07-11-translate-y.png",
+            "sha256": "f4186a3bfc5d062ba3b97f63b32bed5c695aab528c9e17e24abe0805cf7e1b0f",
+            "method": "native_events_and_readback",
+            "label": "translate-y（獨立 Blender 原圖）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/01-07-12-translate-z.png",
+            "sha256": "9864bb86b74a4178e918f1bc8021f5094b31488f078b75bdaf63cb858a6ab4bd",
+            "method": "native_events_and_readback",
+            "label": "translate-z（獨立 Blender 原圖）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/01-08-01-rotate-x.png",
+            "sha256": "508c63472236e3d42947ea4b058892900438a9c2a356fc5842de39c466730503",
+            "method": "native_events_and_readback",
+            "label": "rotate-x（獨立 Blender 原圖）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/01-08-03-rotate-y.png",
+            "sha256": "84a3069e2f53318ea1f839623516f706bb7c98f9c062a307fffc8b9424108b09",
+            "method": "native_events_and_readback",
+            "label": "rotate-y（獨立 Blender 原圖）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/01-08-05-rotate-z.png",
+            "sha256": "eb06b0aa008a779f3bb0732bd97959fde3657a9d47592d411b729e28118f6669",
+            "method": "native_events_and_readback",
+            "label": "rotate-z（獨立 Blender 原圖）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/shortcut-verification-v001.json",
+            "sha256": "68e9d38fcb0f357554a137b1a0efed4c7b9b75954fa978405a6641012f72f5b0",
+            "method": "native_events_and_readback",
+            "label": "事件、預期與實際讀值；未判學員完成"
+          }
+        ]
+      }
+    },
+    {
+      "step": "03-05",
+      "guideIndex": 0,
+      "guideSha256": "99d8e2bc4f3b96afafd7558431ff100ee399c1640f18fdce79630736a4bb5852",
+      "shortcut": {
+        "keys": "Ctrl+S",
+        "effect": "保存目前可續存的工作版；其餘參數核對與檔案登記照原步驟進行。",
+        "requirements": [
+          "Blender 主視窗；先核對目前檔名、版本與未儲存變更。"
+        ],
+        "cautions": [
+          "已登記的檢查點保留；需要修改先另存新版本。快捷鍵不執行檔案登記或學員確認。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/01/2026-10-22-lesson01-demo-v001/01-04-01-file-menu.png",
+            "sha256": "34fb7b908b2195873b9568a38b8aa54bdef0fd7ce29eb0e74570486259fd6768",
+            "method": "menu_label_visual",
+            "label": "File > Save：Ctrl S（既有原圖鍵標）"
+          }
+        ]
+      }
+    },
+    {
+      "step": "03-05",
+      "guideIndex": 1,
+      "guideSha256": "a213f5fd468bc785f931b7e11cf00b8dc0f8d998e8a096aac4ae6d2f24ba40c2",
+      "shortcut": {
+        "keys": "F12",
+        "effect": "執行 Render > Render Image；先核對本次場景、相機與輸出設定，再等渲染完成。",
+        "requirements": [
+          "Blender 主視窗；先核對目前檔名、版本與未儲存變更。"
+        ],
+        "cautions": [
+          "F12 不會把結果另存 PNG；Image > Save As 與輸出關聯仍照常規方法。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/03/2026-10-22-lesson03-demo-v001/03-05-04-render-menu.png",
+            "sha256": "ed0ee355a415423f58a746500201feeb48604fdd1100f5ac99225b65bf992ac9",
+            "method": "menu_label_visual",
+            "label": "Render > Render Image：F12（既有原圖鍵標）"
+          }
+        ]
+      }
+    },
+    {
+      "step": "03-06",
+      "guideIndex": 0,
+      "guideSha256": "e63a4b6149d17d233bf60168dbfc4f9fa57476be78c6135d320d5dfbf79a5a24",
+      "shortcut": {
+        "keys": "Ctrl+O",
+        "effect": "開啟 Open 檔案視窗，再選本步指定來源；其餘匯出、重匯入或量測仍依常規方法。",
+        "requirements": [
+          "Blender 主視窗；先核對目前檔名、版本與未儲存變更。"
+        ],
+        "cautions": [
+          "先保留未存內容；已登記版本沒有再修改時，重開提示不要用 Save 覆寫；不確定就 Cancel。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/01/2026-10-22-lesson01-demo-v001/01-04-01-file-menu.png",
+            "sha256": "34fb7b908b2195873b9568a38b8aa54bdef0fd7ce29eb0e74570486259fd6768",
+            "method": "menu_label_visual",
+            "label": "File > Open...：Ctrl O（既有原圖鍵標）"
+          }
+        ]
+      }
+    },
+    {
+      "step": "03-06",
+      "guideIndex": 2,
+      "guideSha256": "9dd47c9f29fa96e6e7043f5fd89069374e4e56b17ee90250f57b3daac571a22a",
+      "shortcut": {
+        "keys": "F12",
+        "effect": "執行 Render > Render Image；先核對本次場景、相機與輸出設定，再等渲染完成。",
+        "requirements": [
+          "Blender 主視窗；先核對目前檔名、版本與未儲存變更。"
+        ],
+        "cautions": [
+          "F12 不會把結果另存 PNG；Image > Save As 與輸出關聯仍照常規方法。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/03/2026-10-22-lesson03-demo-v001/03-05-04-render-menu.png",
+            "sha256": "ed0ee355a415423f58a746500201feeb48604fdd1100f5ac99225b65bf992ac9",
+            "method": "menu_label_visual",
+            "label": "Render > Render Image：F12（既有原圖鍵標）"
+          }
+        ]
+      }
+    },
+    {
+      "step": "04-02",
+      "guideIndex": 0,
+      "guideSha256": "b8d020c90e4e4b96a36eba13933886fa596fa9bd331f5d5af625efd6999496b3",
+      "shortcut": {
+        "keys": "Ctrl+N → General",
+        "effect": "開啟 New 選單後選 General。",
+        "requirements": [
+          "Blender 主視窗；先核對目前檔名、版本與未儲存變更。"
+        ],
+        "cautions": [
+          "僅在確認可另開新場景時使用；未存作品先保存，不略過提示。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/01/2026-10-22-lesson01-demo-v001/01-04-01-file-menu.png",
+            "sha256": "34fb7b908b2195873b9568a38b8aa54bdef0fd7ce29eb0e74570486259fd6768",
+            "method": "menu_label_visual",
+            "label": "File > New：Ctrl N（既有原圖鍵標）"
+          }
+        ]
+      }
+    },
+    {
+      "step": "04-02",
+      "guideIndex": 2,
+      "guideSha256": "0de3d676f2e32274af763ca50f502c2b664bd42d4fb75d96d91eeb13ce2c783b",
+      "shortcut": {
+        "keys": "Shift+Ctrl+S",
+        "effect": "開啟 .blend 的 Save As，再依常規方法核對資料夾與本步版本檔名。",
+        "requirements": [
+          "Blender 主視窗；先核對目前檔名、版本與未儲存變更。"
+        ],
+        "cautions": [
+          "已登記的檢查點保留；需要修改先另存新版本。快捷鍵不執行檔案登記或學員確認。",
+          "此處證據只涵蓋 .blend 的 File > Save As；PNG 仍照 Image > Save As 常規方法，未核其快捷鍵。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/01/2026-10-22-lesson01-demo-v001/01-04-01-file-menu.png",
+            "sha256": "34fb7b908b2195873b9568a38b8aa54bdef0fd7ce29eb0e74570486259fd6768",
+            "method": "menu_label_visual",
+            "label": "File > Save As...：Shift Ctrl S（既有原圖鍵標）"
+          }
+        ]
+      }
+    },
+    {
+      "step": "04-03",
+      "guideIndex": 0,
+      "guideSha256": "160bed5ff747854dffe3c94f42e103d4d82e4318bdeb85b07729b7f0289e0bad",
+      "shortcut": {
+        "keys": "N",
+        "effect": "切換 Sidebar；若尚未顯示才按 N，再選 Item 讀取或輸入本步指定欄位。",
+        "requirements": [
+          "滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。"
+        ],
+        "cautions": [
+          "已開啟時再按 N 會關閉；開啟側欄不代表已設定 Dimensions、Location 或單位。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/01/2026-10-22-lesson01-demo-v001/01-07-02-view-sidebar.png",
+            "sha256": "7c2aa6418bc22092bd1ec89d617e99692402f9a8c5a5f669055b65c550b34bb9",
+            "method": "menu_label_visual",
+            "label": "View > Sidebar：N（既有原圖鍵標）"
+          }
+        ]
+      }
+    },
+    {
+      "step": "04-03",
+      "guideIndex": 1,
+      "guideSha256": "0f60de8decd25abbaff1dfe4fe0e13906eeba40830467ce6eff2cdb1d47dc0a4",
+      "shortcut": {
+        "keys": "Ctrl+A → Scale",
+        "effect": "開啟 Object > Apply，再選 Scale；完成後核對 Scale 為 1 且 Dimensions 不變。",
+        "requirements": [
+          "滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。",
+          "Object Mode，只選本步要套用縮放的物件。"
+        ],
+        "cautions": [
+          "Ctrl+A 只開選單，不直接套用 Scale；不能用它替代 Boolean／Solidify 修改器的 Apply。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/04/2026-10-22-lesson04-demo-v001/04-03-02-apply-menu.png",
+            "sha256": "534165b57a361df62655ab91e707b378382f53ad9ad1b3c794ded18519306a18",
+            "method": "menu_label_visual",
+            "label": "Object > Apply > Scale：Ctrl A（Apply 父選單）（既有原圖鍵標）"
+          }
+        ]
+      }
+    },
+    {
+      "step": "04-04",
+      "guideIndex": 0,
+      "guideSha256": "8ce925cd713f9ca0f09c100cf7bac8a18a6473c70a2773498e0caa34abcf9b14",
+      "shortcut": {
+        "keys": "Tab → 主鍵盤上排 3",
+        "effect": "從 Object Mode 的網格按 Tab 進 Edit Mode，再按主鍵盤上排 3 進面選取。",
+        "requirements": [
+          "滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。",
+          "作用中物件必須是網格，先讀左上模式。"
+        ],
+        "cautions": [
+          "Tab 是切換，不是固定設成某模式；到達目標模式就停。",
+          "主鍵盤 3 是本次 Emulate Numpad 關閉時的面選取；Numpad 3 是右視圖。若已改鍵位或開 Emulate Numpad，改用面選取按鈕確認。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/01-05-01-tab-edit.png",
+            "sha256": "ef3c94f920b0aa08cc349b691074ef4b0b112b02ad528b91d11e7414a0ebb7e6",
+            "method": "native_events_and_readback",
+            "label": "tab-edit（獨立 Blender 原圖）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/01-05-02-tab-object.png",
+            "sha256": "44cb09a22b591b3f141f02631bcd29d7842171430f57b7b336d8421852ccb314",
+            "method": "native_events_and_readback",
+            "label": "tab-object（獨立 Blender 原圖）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/shortcut-verification-v001.json",
+            "sha256": "68e9d38fcb0f357554a137b1a0efed4c7b9b75954fa978405a6641012f72f5b0",
+            "method": "native_events_and_readback",
+            "label": "事件、預期與實際讀值；未判學員完成"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/04-04-01-main-three-face-select.png",
+            "sha256": "f58cd072652656ef0f682c8989afe4951dc4eab6b2074805bd63af6a09fdb0e5",
+            "method": "native_events_and_readback",
+            "label": "main-three-face-select（新原生事件／實拍）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/mesh-shortcut-verification-v001.json",
+            "sha256": "15d96952bebc3f66a6abff3b578f1bf2698bf9062dd76652b329c55fa147c3da",
+            "method": "native_events_and_readback",
+            "label": "事件、預期與實際讀值；未判學員完成"
+          }
+        ]
+      }
+    },
+    {
+      "step": "04-04",
+      "guideIndex": 1,
+      "guideSha256": "52412e82d028c8e96dd5a86f9ee8aca5650374a1ed05a1a839efdafcdddc26e9",
+      "shortcut": {
+        "keys": "Alt+A",
+        "effect": "在 Edit Mode 取消目前網格選取；本步若要點頂面，接著依常規方法只選頂面。",
+        "requirements": [
+          "滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。",
+          "Edit Mode；先確認是本步指定的網格。"
+        ],
+        "cautions": [
+          "Object Mode 的 Alt+A 是取消物件選取；不能把兩種模式的選取狀態混用。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/04-04-02-edit-alt-a-deselect.png",
+            "sha256": "4b3f7fb4125af6e93a90a9018ae6ef3282c7655f80aca371be3f28ba3cad3e31",
+            "method": "native_events_and_readback",
+            "label": "edit-alt-a-deselect（新原生事件／實拍）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/mesh-shortcut-verification-v001.json",
+            "sha256": "15d96952bebc3f66a6abff3b578f1bf2698bf9062dd76652b329c55fa147c3da",
+            "method": "native_events_and_readback",
+            "label": "事件、預期與實際讀值；未判學員完成"
+          }
+        ]
+      }
+    },
+    {
+      "step": "04-04",
+      "guideIndex": 2,
+      "guideSha256": "1d4b9e2cc0b821254db3b370b441525b70e945f45593320ea83d00bac5f49ed7",
+      "shortcut": {
+        "keys": "X → Faces",
+        "effect": "Edit Mode 只選頂面，按 X 開 Delete 選單後選 Faces。",
+        "requirements": [
+          "滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。",
+          "先確認只有要刪的頂面反白，且是面選取。"
+        ],
+        "cautions": [
+          "X 不是直接刪 Faces；Object Mode 的 X 會刪整件。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/04/2026-10-22-lesson04-demo-v001/04-04-03-delete-menu.png",
+            "sha256": "f95ff212f0ff72fcac2d83808c70ec518f0ded0dd7130dc6c0fa5e2ee81a0435",
+            "method": "menu_label_visual",
+            "label": "Mesh > Delete > Faces：X（Delete 父選單）（既有原圖鍵標）"
+          }
+        ]
+      }
+    },
+    {
+      "step": "04-05",
+      "guideIndex": 0,
+      "guideSha256": "19b2580e60243792efd99fc402a6d42861099f35eed9d909c0c31d494c3b6253",
+      "shortcut": {
+        "keys": "Tab",
+        "effect": "在作用中網格的 Object Mode／Edit Mode 之間切換；本步目標是 Object Mode。",
+        "requirements": [
+          "滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。",
+          "作用中物件必須是網格，先讀左上模式。"
+        ],
+        "cautions": [
+          "Tab 是切換，不是固定設成某模式；到達目標模式就停。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/01-05-01-tab-edit.png",
+            "sha256": "ef3c94f920b0aa08cc349b691074ef4b0b112b02ad528b91d11e7414a0ebb7e6",
+            "method": "native_events_and_readback",
+            "label": "tab-edit（獨立 Blender 原圖）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/01-05-02-tab-object.png",
+            "sha256": "44cb09a22b591b3f141f02631bcd29d7842171430f57b7b336d8421852ccb314",
+            "method": "native_events_and_readback",
+            "label": "tab-object（獨立 Blender 原圖）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/shortcut-verification-v001.json",
+            "sha256": "68e9d38fcb0f357554a137b1a0efed4c7b9b75954fa978405a6641012f72f5b0",
+            "method": "native_events_and_readback",
+            "label": "事件、預期與實際讀值；未判學員完成"
+          }
+        ]
+      }
+    },
+    {
+      "step": "04-06",
+      "guideIndex": 1,
+      "guideSha256": "08212fc0b6a06d9c080a3d4e28d62b8517953e23de48cc0c8db22eb3b0d810da",
+      "shortcut": {
+        "keys": "Alt+A",
+        "effect": "在 Edit Mode、邊選取模式按 Alt+A，取消全部網格選取；確認沒有反白，再接下一項 Select Non Manifold 檢查。",
+        "requirements": [
+          "滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。",
+          "Edit Mode、邊選取（主鍵盤上排 2；Emulate Numpad 關閉）；先確認是本步指定的網格。"
+        ],
+        "cautions": [
+          "Object Mode 的 Alt+A 是取消物件選取；不能把兩種模式的選取狀態混用。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/04-04-02-edit-alt-a-deselect.png",
+            "sha256": "4b3f7fb4125af6e93a90a9018ae6ef3282c7655f80aca371be3f28ba3cad3e31",
+            "method": "native_events_and_readback",
+            "label": "edit-alt-a-deselect（新原生事件／實拍）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/mesh-shortcut-verification-v001.json",
+            "sha256": "15d96952bebc3f66a6abff3b578f1bf2698bf9062dd76652b329c55fa147c3da",
+            "method": "native_events_and_readback",
+            "label": "事件、預期與實際讀值；未判學員完成"
+          }
+        ]
+      }
+    },
+    {
+      "step": "04-06",
+      "guideIndex": 2,
+      "guideSha256": "02774152f029366381e56207ec70bb4fab108a53ddaa692db2aa03fc8aa86f3b",
+      "shortcut": {
+        "keys": "主鍵盤上排 2 → Alt+A → F3 → 搜尋 Select Non Manifold",
+        "effect": "開啟 Menu Search，再輸入並核對 Select Non Manifold；依常規方法執行檢查。",
+        "requirements": [
+          "滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。",
+          "先進入本步所需 Edit Mode，取消既有選取並核對選取模式。",
+          "Edit Mode 先切邊選取，確認 Emulate Numpad 關閉；若鍵位有改就按邊選取圖示。"
+        ],
+        "cautions": [
+          "既有原圖證明 F3 的搜尋鍵標，並未驗證該檢查有獨立直接快捷鍵。搜尋及閉合檢查不代表可列印或配合合格。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/01/2026-10-22-lesson01-demo-v001/01-07-05-edit-undo-menu.png",
+            "sha256": "a322cbd6bb3ce61bc9a0151c0d21ca198704301322fd4faf31897e0f9b2f48ae",
+            "method": "menu_label_visual",
+            "label": "Edit > Menu Search...：F3（既有原圖鍵標）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/07-02-01-main-two-edge-select.png",
+            "sha256": "ac018b5487d7f2a25875af350d09139a617f60fe7523f190037d5885b2bebb2a",
+            "method": "native_events_and_readback",
+            "label": "main-two-edge-select（新原生事件／實拍）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/04-04-02-edit-alt-a-deselect.png",
+            "sha256": "4b3f7fb4125af6e93a90a9018ae6ef3282c7655f80aca371be3f28ba3cad3e31",
+            "method": "native_events_and_readback",
+            "label": "edit-alt-a-deselect（新原生事件／實拍）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/mesh-shortcut-verification-v001.json",
+            "sha256": "15d96952bebc3f66a6abff3b578f1bf2698bf9062dd76652b329c55fa147c3da",
+            "method": "native_events_and_readback",
+            "label": "事件、預期與實際讀值；未判學員完成"
+          }
+        ]
+      }
+    },
+    {
+      "step": "05-02",
+      "guideIndex": 0,
+      "guideSha256": "56c56fd14fae9dd058a6cce488b1abdc079c69ecfb812a0dc11a37aaae562492",
+      "shortcut": {
+        "keys": "Shift+Ctrl+S",
+        "effect": "開啟 .blend 的 Save As，再依常規方法核對資料夾與本步版本檔名。",
+        "requirements": [
+          "Blender 主視窗；先核對目前檔名、版本與未儲存變更。"
+        ],
+        "cautions": [
+          "已登記的檢查點保留；需要修改先另存新版本。快捷鍵不執行檔案登記或學員確認。",
+          "此處證據只涵蓋 .blend 的 File > Save As；PNG 仍照 Image > Save As 常規方法，未核其快捷鍵。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/01/2026-10-22-lesson01-demo-v001/01-04-01-file-menu.png",
+            "sha256": "34fb7b908b2195873b9568a38b8aa54bdef0fd7ce29eb0e74570486259fd6768",
+            "method": "menu_label_visual",
+            "label": "File > Save As...：Shift Ctrl S（既有原圖鍵標）"
+          }
+        ]
+      }
+    },
+    {
+      "step": "05-02",
+      "guideIndex": 1,
+      "guideSha256": "30ac5f95fd754a18813c3ece20ed603e232811eb137422a577018afbceb805f6",
+      "shortcut": {
+        "keys": "Ctrl+A → Scale",
+        "effect": "開啟 Object > Apply，再選 Scale；完成後核對 Scale 為 1 且 Dimensions 不變。",
+        "requirements": [
+          "滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。",
+          "Object Mode，只選本步要套用縮放的物件。"
+        ],
+        "cautions": [
+          "Ctrl+A 只開選單，不直接套用 Scale；不能用它替代 Boolean／Solidify 修改器的 Apply。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/04/2026-10-22-lesson04-demo-v001/04-03-02-apply-menu.png",
+            "sha256": "534165b57a361df62655ab91e707b378382f53ad9ad1b3c794ded18519306a18",
+            "method": "menu_label_visual",
+            "label": "Object > Apply > Scale：Ctrl A（Apply 父選單）（既有原圖鍵標）"
+          }
+        ]
+      }
+    },
+    {
+      "step": "05-03",
+      "guideIndex": 0,
+      "guideSha256": "d97a1b75959d662ab79b3c3d4fe3ffcf92acaf9e6dfd15f401da34cf1283469b",
+      "shortcut": {
+        "keys": "Shift+A → Mesh → Cube",
+        "effect": "開啟 Add 選單，再依常規方法選 Cube；尺寸與位置仍逐欄設定。",
+        "requirements": [
+          "滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。",
+          "Object Mode；先核對 3D Cursor，新物件會在該處建立。"
+        ],
+        "cautions": [
+          "本次原生送鍵驗證到 Add 選單展開；仍須自己選正確 Mesh 項目並核對新物件。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/02-02-01-shift-a-menu.png",
+            "sha256": "5068b34e8b86697a6b903474596f71d54b9a9c28fa4c7bce9856e7a2542591d6",
+            "method": "native_events_and_readback",
+            "label": "shift-a-menu（獨立 Blender 原圖）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/shortcut-verification-v001.json",
+            "sha256": "68e9d38fcb0f357554a137b1a0efed4c7b9b75954fa978405a6641012f72f5b0",
+            "method": "native_events_and_readback",
+            "label": "事件、預期與實際讀值；未判學員完成"
+          }
+        ]
+      }
+    },
+    {
+      "step": "05-03",
+      "guideIndex": 1,
+      "guideSha256": "c4e1c0466fcb782bf726604fd8a26cfd55795cc25b3c30e009150824f5f94402",
+      "shortcut": {
+        "keys": "Shift+D；Ctrl+J",
+        "effect": "Object Mode 用 Shift+D 複製選取的凹點切割體並移到下一位置；全部切割體核對後 Ctrl+J 合併為 Cutters。",
+        "requirements": [
+          "滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。",
+          "選對切割體；合併前核對所有選取及作用中物件，勿把 Plate 合入。"
+        ],
+        "cautions": [
+          "複製後仍要依原方法定位及逐件核對尺寸；Ctrl+J 是 Join，不是 Boolean Union。Boolean Difference／修改器 Apply 照原方法，不能用 Ctrl+A 替代。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/02/2026-10-22-lesson02-demo-v001/02-01-02-object-delete.png",
+            "sha256": "806b3af007268cd66ab6425ed26227af0fb880d96c6e3e9ac6a767e63e699635",
+            "method": "menu_label_visual",
+            "label": "Object > Duplicate Objects：Shift D（既有原圖鍵標）"
+          },
+          {
+            "path": "learning/evidence/02/2026-10-22-lesson02-demo-v001/02-01-02-object-delete.png",
+            "sha256": "806b3af007268cd66ab6425ed26227af0fb880d96c6e3e9ac6a767e63e699635",
+            "method": "menu_label_visual",
+            "label": "Object > Join：Ctrl J（既有原圖鍵標）"
+          }
+        ]
+      }
+    },
+    {
+      "step": "05-03",
+      "guideIndex": 2,
+      "guideSha256": "148adde861571e6cf03d8151bc314284c15dd1f02e0fc2d6bfed30d6c1f823ce",
+      "shortcut": {
+        "keys": "主鍵盤上排 2 → Alt+A → F3 → 搜尋 Select Non Manifold",
+        "effect": "開啟 Menu Search，再輸入並核對 Select Non Manifold；依常規方法執行檢查。",
+        "requirements": [
+          "滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。",
+          "先進入本步所需 Edit Mode，取消既有選取並核對選取模式。",
+          "Edit Mode 先切邊選取，確認 Emulate Numpad 關閉；若鍵位有改就按邊選取圖示。"
+        ],
+        "cautions": [
+          "既有原圖證明 F3 的搜尋鍵標，並未驗證該檢查有獨立直接快捷鍵。搜尋及閉合檢查不代表可列印或配合合格。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/01/2026-10-22-lesson01-demo-v001/01-07-05-edit-undo-menu.png",
+            "sha256": "a322cbd6bb3ce61bc9a0151c0d21ca198704301322fd4faf31897e0f9b2f48ae",
+            "method": "menu_label_visual",
+            "label": "Edit > Menu Search...：F3（既有原圖鍵標）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/07-02-01-main-two-edge-select.png",
+            "sha256": "ac018b5487d7f2a25875af350d09139a617f60fe7523f190037d5885b2bebb2a",
+            "method": "native_events_and_readback",
+            "label": "main-two-edge-select（新原生事件／實拍）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/04-04-02-edit-alt-a-deselect.png",
+            "sha256": "4b3f7fb4125af6e93a90a9018ae6ef3282c7655f80aca371be3f28ba3cad3e31",
+            "method": "native_events_and_readback",
+            "label": "edit-alt-a-deselect（新原生事件／實拍）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/mesh-shortcut-verification-v001.json",
+            "sha256": "15d96952bebc3f66a6abff3b578f1bf2698bf9062dd76652b329c55fa147c3da",
+            "method": "native_events_and_readback",
+            "label": "事件、預期與實際讀值；未判學員完成"
+          }
+        ]
+      }
+    },
+    {
+      "step": "05-04",
+      "guideIndex": 0,
+      "guideSha256": "29c652ad3f3799413f3a9ae62ff586b3eb199da7660a77b69e03ba77e39ae3bf",
+      "shortcut": {
+        "keys": "Ctrl+O",
+        "effect": "開啟 Open 檔案視窗，再選本步指定來源；其餘匯出、重匯入或量測仍依常規方法。",
+        "requirements": [
+          "Blender 主視窗；先核對目前檔名、版本與未儲存變更。"
+        ],
+        "cautions": [
+          "先保留未存內容；已登記版本沒有再修改時，重開提示不要用 Save 覆寫；不確定就 Cancel。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/01/2026-10-22-lesson01-demo-v001/01-04-01-file-menu.png",
+            "sha256": "34fb7b908b2195873b9568a38b8aa54bdef0fd7ce29eb0e74570486259fd6768",
+            "method": "menu_label_visual",
+            "label": "File > Open...：Ctrl O（既有原圖鍵標）"
+          }
+        ]
+      }
+    },
+    {
+      "step": "05-04",
+      "guideIndex": 1,
+      "guideSha256": "027f25f3a15f642c2626e17c5230a94144ac865cfbee4b8af425979927147dea",
+      "shortcut": {
+        "keys": "Numpad .；N",
+        "effect": "重新匯入後先選正確物件，用數字鍵盤小數點對焦，必要時 N 開 Item 側欄核對尺寸。",
+        "requirements": [
+          "滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。"
+        ],
+        "cautions": [
+          "只加速對焦與開欄；不能代替 STL 尺寸解析、重匯入、單位或非流形檢查。主鍵盤句點不等於 Numpad .。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/01/2026-10-22-lesson01-demo-v001/01-06-04-view-frame-selected.png",
+            "sha256": "fd46511c619b367af5f564d080e489ff5ee811950f0db230764455a2164b05f8",
+            "method": "menu_label_visual",
+            "label": "View > Frame Selected：Numpad .（既有原圖鍵標）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-22-lesson01-demo-v001/01-07-02-view-sidebar.png",
+            "sha256": "7c2aa6418bc22092bd1ec89d617e99692402f9a8c5a5f669055b65c550b34bb9",
+            "method": "menu_label_visual",
+            "label": "View > Sidebar：N（既有原圖鍵標）"
+          }
+        ]
+      }
+    },
+    {
+      "step": "05-05",
+      "guideIndex": 0,
+      "guideSha256": "9702ec46f0026a32541b8f1ba237a827f89b0cee49c33bcaf66cb9e656813e52",
+      "shortcut": {
+        "keys": "Shift+A → Mesh → Cube",
+        "effect": "開啟 Add 選單，再依常規方法選 Cube；尺寸與位置仍逐欄設定。",
+        "requirements": [
+          "滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。",
+          "Object Mode；先核對 3D Cursor，新物件會在該處建立。"
+        ],
+        "cautions": [
+          "本次原生送鍵驗證到 Add 選單展開；仍須自己選正確 Mesh 項目並核對新物件。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/02-02-01-shift-a-menu.png",
+            "sha256": "5068b34e8b86697a6b903474596f71d54b9a9c28fa4c7bce9856e7a2542591d6",
+            "method": "native_events_and_readback",
+            "label": "shift-a-menu（獨立 Blender 原圖）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/shortcut-verification-v001.json",
+            "sha256": "68e9d38fcb0f357554a137b1a0efed4c7b9b75954fa978405a6641012f72f5b0",
+            "method": "native_events_and_readback",
+            "label": "事件、預期與實際讀值；未判學員完成"
+          }
+        ]
+      }
+    },
+    {
+      "step": "05-05",
+      "guideIndex": 1,
+      "guideSha256": "1a018d6e4179ad2806443bd4368d940f41c887ea310c79a9803b5d5370558682",
+      "shortcut": {
+        "keys": "I → 厚度 → Enter；E → 沿面法向位移 → Enter",
+        "effect": "對本步正確的單一面，I 內插、E 沿面法向擠出；每次只做一個動作，數值依原常規方法逐次輸入並讀回。",
+        "requirements": [
+          "滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。",
+          "Edit Mode、面選取，只選原步指定面；依毫米場景與該面法向核對正負。"
+        ],
+        "cautions": [
+          "新 probe 在獨立 Cube 用 I 0.2 m／E 0.4 m 驗鍵與拓樸讀回，不是重新製作上蓋或卡扣；原工程毫米尺寸仍以既有示範為依據。",
+          "E 的正方向沿所選面法向，不能把所有面都當世界 +Z。Inset 厚度與擠出位移不同，並非物件絕對 Dimensions。",
+          "先確認左上是 Edit Mode。若仍在 Object Mode 按 I，本次出廠 Cube 實測會插入關鍵影格：Transform 欄變黃、時間軸出現菱形，並非 Inset。若剛誤按且尚未做其他操作，立即 Ctrl+Z，再核對欄位與時間軸回到誤按前；本次原本無動畫的 Cube 已實測復原。原本有動畫時需保留既有影格，不要整份刪除動畫。",
+          "本次出廠鍵位、3D Viewport、Object Mode 的 Cube 按 E，未找到對應啟用鍵位，實測網格、Transform、動畫及渲染範圍均未改變，也沒有擠出。沒反應時先核對模式再操作；沒有發生變更時不盲按 Undo。自訂鍵位或其他編輯區以實況為準。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/05-05-01-inset-i.png",
+            "sha256": "6a60595f468dc36fcd330970b5ccf6423f623473eb30c3da8ce898acea5893a8",
+            "method": "native_events_and_readback",
+            "label": "inset-i（新原生事件／實拍）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/05-05-02-extrude-e-normal.png",
+            "sha256": "5feb53de8ee288dfd40362fb8bd7eedd3f00ffa709e6ad4ce2b446c3590c1c21",
+            "method": "native_events_and_readback",
+            "label": "extrude-e-normal（新原生事件／實拍）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/mesh-shortcut-verification-v001.json",
+            "sha256": "15d96952bebc3f66a6abff3b578f1bf2698bf9062dd76652b329c55fa147c3da",
+            "method": "native_events_and_readback",
+            "label": "事件、預期與實際讀值；未判學員完成"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v001/shortcut-mode-02-object-i-keyframe.png",
+            "sha256": "56af01b10b0fda46dbb23b2409728ccebf00c1e223d95cfd8ca315da77113411",
+            "method": "native_events_and_readback",
+            "label": "object-i-keyframe（Object Mode誤按實拍／讀值）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v001/shortcut-mode-03-object-i-undo.png",
+            "sha256": "8f5a6f8c0dc03d6630a1e98b275abf84230a602a1c835cfe5a96f1fef03d19af",
+            "method": "native_events_and_readback",
+            "label": "object-i-undo（Object Mode誤按實拍／讀值）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v001/shortcut-mode-04-object-e.png",
+            "sha256": "01bf238d99bcd2469a79916d7f8e3677f23c3d444a09ed8136b5d87a9d9f710d",
+            "method": "native_events_and_readback",
+            "label": "object-e（Object Mode誤按實拍／讀值）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v001/shortcut-mode-errors-verification-v001.json",
+            "sha256": "ca54a8359e00c744a8e148d2776d6a75f26c1b62bf0fb6ff04fc1ba1e0f0b323",
+            "method": "native_events_and_readback",
+            "label": "誤按與復原：原生事件、前後狀態及原圖SHA（v001）"
+          }
+        ]
+      }
+    },
+    {
+      "step": "05-05",
+      "guideIndex": 2,
+      "guideSha256": "0699fe18e39f46ed0d9eb78f849e9241c9fafeb9c1e7badfdf77414fc2b5f22b",
+      "shortcut": {
+        "keys": "Shift+Ctrl+S",
+        "effect": "開啟 .blend 的 Save As，再依常規方法核對資料夾與本步版本檔名。",
+        "requirements": [
+          "Blender 主視窗；先核對目前檔名、版本與未儲存變更。"
+        ],
+        "cautions": [
+          "已登記的檢查點保留；需要修改先另存新版本。快捷鍵不執行檔案登記或學員確認。",
+          "此處證據只涵蓋 .blend 的 File > Save As；PNG 仍照 Image > Save As 常規方法，未核其快捷鍵。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/01/2026-10-22-lesson01-demo-v001/01-04-01-file-menu.png",
+            "sha256": "34fb7b908b2195873b9568a38b8aa54bdef0fd7ce29eb0e74570486259fd6768",
+            "method": "menu_label_visual",
+            "label": "File > Save As...：Shift Ctrl S（既有原圖鍵標）"
+          }
+        ]
+      }
+    },
+    {
+      "step": "05-06",
+      "guideIndex": 0,
+      "guideSha256": "effd8e9397d6b814ba7e1ace66a74026bb4dc99e3f2f35625496f5cabe4c47fd",
+      "shortcut": {
+        "keys": "Ctrl+O",
+        "effect": "開啟 Open 檔案視窗，再選本步指定來源；其餘匯出、重匯入或量測仍依常規方法。",
+        "requirements": [
+          "Blender 主視窗；先核對目前檔名、版本與未儲存變更。"
+        ],
+        "cautions": [
+          "先保留未存內容；已登記版本沒有再修改時，重開提示不要用 Save 覆寫；不確定就 Cancel。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/01/2026-10-22-lesson01-demo-v001/01-04-01-file-menu.png",
+            "sha256": "34fb7b908b2195873b9568a38b8aa54bdef0fd7ce29eb0e74570486259fd6768",
+            "method": "menu_label_visual",
+            "label": "File > Open...：Ctrl O（既有原圖鍵標）"
+          }
+        ]
+      }
+    },
+    {
+      "step": "05-06",
+      "guideIndex": 2,
+      "guideSha256": "ed4c48dbe2a027fd04c35f42c93629190884f118ccabfe7ac5078d989bf6c793",
+      "shortcut": {
+        "keys": "主鍵盤上排 2 → Alt+A → F3 → 搜尋 Select Non Manifold",
+        "effect": "開啟 Menu Search，再輸入並核對 Select Non Manifold；依常規方法執行檢查。",
+        "requirements": [
+          "滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。",
+          "先進入本步所需 Edit Mode，取消既有選取並核對選取模式。",
+          "Edit Mode 先切邊選取，確認 Emulate Numpad 關閉；若鍵位有改就按邊選取圖示。"
+        ],
+        "cautions": [
+          "既有原圖證明 F3 的搜尋鍵標，並未驗證該檢查有獨立直接快捷鍵。搜尋及閉合檢查不代表可列印或配合合格。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/01/2026-10-22-lesson01-demo-v001/01-07-05-edit-undo-menu.png",
+            "sha256": "a322cbd6bb3ce61bc9a0151c0d21ca198704301322fd4faf31897e0f9b2f48ae",
+            "method": "menu_label_visual",
+            "label": "Edit > Menu Search...：F3（既有原圖鍵標）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/07-02-01-main-two-edge-select.png",
+            "sha256": "ac018b5487d7f2a25875af350d09139a617f60fe7523f190037d5885b2bebb2a",
+            "method": "native_events_and_readback",
+            "label": "main-two-edge-select（新原生事件／實拍）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/04-04-02-edit-alt-a-deselect.png",
+            "sha256": "4b3f7fb4125af6e93a90a9018ae6ef3282c7655f80aca371be3f28ba3cad3e31",
+            "method": "native_events_and_readback",
+            "label": "edit-alt-a-deselect（新原生事件／實拍）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/mesh-shortcut-verification-v001.json",
+            "sha256": "15d96952bebc3f66a6abff3b578f1bf2698bf9062dd76652b329c55fa147c3da",
+            "method": "native_events_and_readback",
+            "label": "事件、預期與實際讀值；未判學員完成"
+          }
+        ]
+      }
+    },
+    {
+      "step": "06-01",
+      "guideIndex": 0,
+      "guideSha256": "3b156125c55285c3aadbbb81054ef892f5b6f224d1447da4fe0f2fc5019a73ed",
+      "shortcut": {
+        "keys": "Shift+A → Mesh → Cylinder",
+        "effect": "開啟 Add 選單，再依常規方法選 Cylinder；尺寸與位置仍逐欄設定。",
+        "requirements": [
+          "滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。",
+          "Object Mode；先核對 3D Cursor，新物件會在該處建立。"
+        ],
+        "cautions": [
+          "本次原生送鍵驗證到 Add 選單展開；仍須自己選正確 Mesh 項目並核對新物件。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/02-02-01-shift-a-menu.png",
+            "sha256": "5068b34e8b86697a6b903474596f71d54b9a9c28fa4c7bce9856e7a2542591d6",
+            "method": "native_events_and_readback",
+            "label": "shift-a-menu（獨立 Blender 原圖）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/shortcut-verification-v001.json",
+            "sha256": "68e9d38fcb0f357554a137b1a0efed4c7b9b75954fa978405a6641012f72f5b0",
+            "method": "native_events_and_readback",
+            "label": "事件、預期與實際讀值；未判學員完成"
+          }
+        ]
+      }
+    },
+    {
+      "step": "06-01",
+      "guideIndex": 1,
+      "guideSha256": "1bebc3f6b76f057fe8805fc440142ebf505320522ffc861b0a008c59fe01bf1c",
+      "shortcut": {
+        "keys": "Shift+A → Mesh → Cylinder",
+        "effect": "開啟 Add 選單，再依常規方法選 Cylinder；尺寸與位置仍逐欄設定。",
+        "requirements": [
+          "滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。",
+          "Object Mode；先核對 3D Cursor，新物件會在該處建立。"
+        ],
+        "cautions": [
+          "本次原生送鍵驗證到 Add 選單展開；仍須自己選正確 Mesh 項目並核對新物件。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/02-02-01-shift-a-menu.png",
+            "sha256": "5068b34e8b86697a6b903474596f71d54b9a9c28fa4c7bce9856e7a2542591d6",
+            "method": "native_events_and_readback",
+            "label": "shift-a-menu（獨立 Blender 原圖）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/shortcut-verification-v001.json",
+            "sha256": "68e9d38fcb0f357554a137b1a0efed4c7b9b75954fa978405a6641012f72f5b0",
+            "method": "native_events_and_readback",
+            "label": "事件、預期與實際讀值；未判學員完成"
+          }
+        ]
+      }
+    },
+    {
+      "step": "06-01",
+      "guideIndex": 2,
+      "guideSha256": "fc85cdc6e2dcd3ee4d75e716a75afab28762bec9cf1c926e9ab17f2b794ae4d8",
+      "shortcut": {
+        "keys": "Shift+Ctrl+S",
+        "effect": "開啟 .blend 的 Save As，再依常規方法核對資料夾與本步版本檔名。",
+        "requirements": [
+          "Blender 主視窗；先核對目前檔名、版本與未儲存變更。"
+        ],
+        "cautions": [
+          "已登記的檢查點保留；需要修改先另存新版本。快捷鍵不執行檔案登記或學員確認。",
+          "此處證據只涵蓋 .blend 的 File > Save As；PNG 仍照 Image > Save As 常規方法，未核其快捷鍵。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/01/2026-10-22-lesson01-demo-v001/01-04-01-file-menu.png",
+            "sha256": "34fb7b908b2195873b9568a38b8aa54bdef0fd7ce29eb0e74570486259fd6768",
+            "method": "menu_label_visual",
+            "label": "File > Save As...：Shift Ctrl S（既有原圖鍵標）"
+          }
+        ]
+      }
+    },
+    {
+      "step": "06-02",
+      "guideIndex": 3,
+      "guideSha256": "1ace791e701f252137c91da1b73c173cbec428e05cea2aa5fed5904ba665fdd9",
+      "shortcut": {
+        "keys": "G → X → 位移差（本場景 mm）→ Enter",
+        "effect": "SlidingLid 的 X＝0 mm 時，再移 +30 mm 到 X＝30 mm；要接著到 X＝62 mm，下次只移 +32 mm；最後移 −62 mm 回到 0 mm。",
+        "requirements": [
+          "滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。",
+          "Object Mode，僅選本步目標物件；Transform Orientation 為 Global。",
+          "本工程場景 Unit Scale 0.001、Millimeters，先核對目前 X 並依場景長度單位輸入。"
+        ],
+        "cautions": [
+          "G 輸入相對位移，不是目標絕對 X；連按 +30、+62 會到 +92，不能替代原步要求的 X＝30／62。",
+          "這次新證據測通用 G 相對語義，不聲稱重新檢查燕尾幾何或碰撞；原實讀仍看既有 operationRun。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/01-07-03-translate-x-from-zero.png",
+            "sha256": "e50fc34ea7578b53e759b58985c08a14e30406a812104c35432fa410326dadc5",
+            "method": "native_events_and_readback",
+            "label": "translate-x-from-zero（獨立 Blender 原圖）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/01-07-05-translate-x-from-one.png",
+            "sha256": "4b2597d510ca80aeb4b986b660482a44dec5441d9bfd464ea8aa7bd052e04f02",
+            "method": "native_events_and_readback",
+            "label": "translate-x-from-one（獨立 Blender 原圖）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/01-07-06-translate-x-negative.png",
+            "sha256": "0a7443ec932dcf9bbd37b5ee357a4c468ed3a6fe4b349e8ad825102621801290",
+            "method": "native_events_and_readback",
+            "label": "translate-x-negative（獨立 Blender 原圖）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/shortcut-verification-v001.json",
+            "sha256": "68e9d38fcb0f357554a137b1a0efed4c7b9b75954fa978405a6641012f72f5b0",
+            "method": "native_events_and_readback",
+            "label": "事件、預期與實際讀值；未判學員完成"
+          }
+        ]
+      }
+    },
+    {
+      "step": "06-03",
+      "guideIndex": 0,
+      "guideSha256": "f774ab95a3e55f02ac658bf8415b1d1c3205bdc0220502dc35e76771bbaae124",
+      "shortcut": {
+        "keys": "Ctrl+O",
+        "effect": "開啟 Open 檔案視窗，再選本步指定來源；其餘匯出、重匯入或量測仍依常規方法。",
+        "requirements": [
+          "Blender 主視窗；先核對目前檔名、版本與未儲存變更。"
+        ],
+        "cautions": [
+          "先保留未存內容；已登記版本沒有再修改時，重開提示不要用 Save 覆寫；不確定就 Cancel。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/01/2026-10-22-lesson01-demo-v001/01-04-01-file-menu.png",
+            "sha256": "34fb7b908b2195873b9568a38b8aa54bdef0fd7ce29eb0e74570486259fd6768",
+            "method": "menu_label_visual",
+            "label": "File > Open...：Ctrl O（既有原圖鍵標）"
+          }
+        ]
+      }
+    },
+    {
+      "step": "06-03",
+      "guideIndex": 1,
+      "guideSha256": "2acf5a4be16ce67b34470976a413c743919d549f8902d67cff4b91ad80211eac",
+      "shortcut": {
+        "keys": "主鍵盤上排 2 → Alt+A → F3 → 搜尋 Select Non Manifold",
+        "effect": "開啟 Menu Search，再輸入並核對 Select Non Manifold；依常規方法執行檢查。",
+        "requirements": [
+          "滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。",
+          "先進入本步所需 Edit Mode，取消既有選取並核對選取模式。",
+          "Edit Mode 先切邊選取，確認 Emulate Numpad 關閉；若鍵位有改就按邊選取圖示。"
+        ],
+        "cautions": [
+          "既有原圖證明 F3 的搜尋鍵標，並未驗證該檢查有獨立直接快捷鍵。搜尋及閉合檢查不代表可列印或配合合格。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/01/2026-10-22-lesson01-demo-v001/01-07-05-edit-undo-menu.png",
+            "sha256": "a322cbd6bb3ce61bc9a0151c0d21ca198704301322fd4faf31897e0f9b2f48ae",
+            "method": "menu_label_visual",
+            "label": "Edit > Menu Search...：F3（既有原圖鍵標）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/07-02-01-main-two-edge-select.png",
+            "sha256": "ac018b5487d7f2a25875af350d09139a617f60fe7523f190037d5885b2bebb2a",
+            "method": "native_events_and_readback",
+            "label": "main-two-edge-select（新原生事件／實拍）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/04-04-02-edit-alt-a-deselect.png",
+            "sha256": "4b3f7fb4125af6e93a90a9018ae6ef3282c7655f80aca371be3f28ba3cad3e31",
+            "method": "native_events_and_readback",
+            "label": "edit-alt-a-deselect（新原生事件／實拍）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/mesh-shortcut-verification-v001.json",
+            "sha256": "15d96952bebc3f66a6abff3b578f1bf2698bf9062dd76652b329c55fa147c3da",
+            "method": "native_events_and_readback",
+            "label": "事件、預期與實際讀值；未判學員完成"
+          }
+        ]
+      }
+    },
+    {
+      "step": "07-01",
+      "guideIndex": 0,
+      "guideSha256": "eaf8c1a41b9bcd3ddd0a26533e4ad0879c65797892f2ce3860e2c145402fa58e",
+      "shortcut": {
+        "keys": "N",
+        "effect": "切換 Sidebar；若尚未顯示才按 N，再選 Item 讀取或輸入本步指定欄位。",
+        "requirements": [
+          "滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。"
+        ],
+        "cautions": [
+          "已開啟時再按 N 會關閉；開啟側欄不代表已設定 Dimensions、Location 或單位。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/01/2026-10-22-lesson01-demo-v001/01-07-02-view-sidebar.png",
+            "sha256": "7c2aa6418bc22092bd1ec89d617e99692402f9a8c5a5f669055b65c550b34bb9",
+            "method": "menu_label_visual",
+            "label": "View > Sidebar：N（既有原圖鍵標）"
+          }
+        ]
+      }
+    },
+    {
+      "step": "07-02",
+      "guideIndex": 0,
+      "guideSha256": "5fb76f05018075fa8c9c8023617212ad13537adea87d1a5d6c8660c368c3b6ec",
+      "shortcut": {
+        "keys": "I → 厚度 → Enter；E → 沿面法向位移 → Enter",
+        "effect": "對本步正確的單一面，I 內插、E 沿面法向擠出；每次只做一個動作，數值依原常規方法逐次輸入並讀回。",
+        "requirements": [
+          "滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。",
+          "Edit Mode、面選取，只選原步指定面；依毫米場景與該面法向核對正負。"
+        ],
+        "cautions": [
+          "新 probe 在獨立 Cube 用 I 0.2 m／E 0.4 m 驗鍵與拓樸讀回，不是重新製作上蓋或卡扣；原工程毫米尺寸仍以既有示範為依據。",
+          "E 的正方向沿所選面法向，不能把所有面都當世界 +Z。Inset 厚度與擠出位移不同，並非物件絕對 Dimensions。",
+          "先確認左上是 Edit Mode。若仍在 Object Mode 按 I，本次出廠 Cube 實測會插入關鍵影格：Transform 欄變黃、時間軸出現菱形，並非 Inset。若剛誤按且尚未做其他操作，立即 Ctrl+Z，再核對欄位與時間軸回到誤按前；本次原本無動畫的 Cube 已實測復原。原本有動畫時需保留既有影格，不要整份刪除動畫。",
+          "本次出廠鍵位、3D Viewport、Object Mode 的 Cube 按 E，未找到對應啟用鍵位，實測網格、Transform、動畫及渲染範圍均未改變，也沒有擠出。沒反應時先核對模式再操作；沒有發生變更時不盲按 Undo。自訂鍵位或其他編輯區以實況為準。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/05-05-01-inset-i.png",
+            "sha256": "6a60595f468dc36fcd330970b5ccf6423f623473eb30c3da8ce898acea5893a8",
+            "method": "native_events_and_readback",
+            "label": "inset-i（新原生事件／實拍）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/05-05-02-extrude-e-normal.png",
+            "sha256": "5feb53de8ee288dfd40362fb8bd7eedd3f00ffa709e6ad4ce2b446c3590c1c21",
+            "method": "native_events_and_readback",
+            "label": "extrude-e-normal（新原生事件／實拍）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/mesh-shortcut-verification-v001.json",
+            "sha256": "15d96952bebc3f66a6abff3b578f1bf2698bf9062dd76652b329c55fa147c3da",
+            "method": "native_events_and_readback",
+            "label": "事件、預期與實際讀值；未判學員完成"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v001/shortcut-mode-02-object-i-keyframe.png",
+            "sha256": "56af01b10b0fda46dbb23b2409728ccebf00c1e223d95cfd8ca315da77113411",
+            "method": "native_events_and_readback",
+            "label": "object-i-keyframe（Object Mode誤按實拍／讀值）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v001/shortcut-mode-03-object-i-undo.png",
+            "sha256": "8f5a6f8c0dc03d6630a1e98b275abf84230a602a1c835cfe5a96f1fef03d19af",
+            "method": "native_events_and_readback",
+            "label": "object-i-undo（Object Mode誤按實拍／讀值）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v001/shortcut-mode-04-object-e.png",
+            "sha256": "01bf238d99bcd2469a79916d7f8e3677f23c3d444a09ed8136b5d87a9d9f710d",
+            "method": "native_events_and_readback",
+            "label": "object-e（Object Mode誤按實拍／讀值）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v001/shortcut-mode-errors-verification-v001.json",
+            "sha256": "ca54a8359e00c744a8e148d2776d6a75f26c1b62bf0fb6ff04fc1ba1e0f0b323",
+            "method": "native_events_and_readback",
+            "label": "誤按與復原：原生事件、前後狀態及原圖SHA（v001）"
+          }
+        ]
+      }
+    },
+    {
+      "step": "07-02",
+      "guideIndex": 1,
+      "guideSha256": "b1dccc1a7fec4c4f7be91f7b703040aca2c9cd97057f0b66a521663d4b02d64f",
+      "shortcut": {
+        "keys": "主鍵盤上排 2；Ctrl+B → 0.6 → Enter",
+        "effect": "依常規方法先切邊選取、只選兩條指定臂腳邊，再 Ctrl+B 輸入本草案倒角量；Segments 3 與 OFFSET 仍依原欄位核對。",
+        "requirements": [
+          "滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。",
+          "Edit Mode；本工程場景 Unit Scale 0.001、Millimeters；只選正確的兩條邊。",
+          "主鍵盤 2 的本次驗證是在 Emulate Numpad 關閉時；鍵位不同就用邊選取按鈕。"
+        ],
+        "cautions": [
+          "在 Edit Mode，Ctrl+B 做網格邊 Bevel，不等於新增 Bevel 修改器。這次新 Cube probe 用 0.1 m、預設段數驗鍵，沒有重新核卡扣 0.6 mm／3 段的工程結果；看原 operationRun。",
+          "倒角量是草案，不能由 Bevel 成功推定強度改善或合格。",
+          "若仍在 Object Mode 按 Ctrl+B，會進入 Render Region（渲染範圍）框選，出現十字虛線，而非邊倒角。尚在框選時按 Esc 或滑鼠右鍵取消；本次一般透視與相機視圖均已實測，取消後保留原邊框設定。",
+          "若已完成框選，本次一般透視下 Ctrl+Z 未還原視圖渲染範圍；相機視圖下立即 Ctrl+Z 則恢復原場景邊框。兩種視圖都已實測可按 Ctrl+Alt+B 清除 Render Region，停用範圍並將邊界重設為 0～1。清除也會移除原有範圍，若本來有設定，需依誤按前紀錄核對還原，不能當作保留原設定的取消。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/07-02-01-main-two-edge-select.png",
+            "sha256": "ac018b5487d7f2a25875af350d09139a617f60fe7523f190037d5885b2bebb2a",
+            "method": "native_events_and_readback",
+            "label": "main-two-edge-select（新原生事件／實拍）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/07-02-02-bevel-ctrl-b.png",
+            "sha256": "25e6e31d82bdbd997d1f22cbd3b6b17949d2a7920755bed048fceedbc8b985f9",
+            "method": "native_events_and_readback",
+            "label": "bevel-ctrl-b（新原生事件／實拍）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/mesh-shortcut-verification-v001.json",
+            "sha256": "15d96952bebc3f66a6abff3b578f1bf2698bf9062dd76652b329c55fa147c3da",
+            "method": "native_events_and_readback",
+            "label": "事件、預期與實際讀值；未判學員完成"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v001/shortcut-mode-05-perspective-border-invoke-esc.png",
+            "sha256": "c131fd1733a798b46137884d65c683921450fc9183800d2449d5bb626f5f61d8",
+            "method": "native_events_and_readback",
+            "label": "perspective-border-invoke-esc（Object Mode誤按實拍／讀值）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v001/shortcut-mode-06-perspective-border-esc.png",
+            "sha256": "01bf238d99bcd2469a79916d7f8e3677f23c3d444a09ed8136b5d87a9d9f710d",
+            "method": "native_events_and_readback",
+            "label": "perspective-border-esc（Object Mode誤按實拍／讀值）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v001/shortcut-mode-08-perspective-border-rmb.png",
+            "sha256": "7406ddda3b00caf341f3e268e5ab3bcd9f20263490fceae88e638a221bb9cbcc",
+            "method": "native_events_and_readback",
+            "label": "perspective-border-rmb（Object Mode誤按實拍／讀值）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v001/shortcut-mode-12-camera-border-esc.png",
+            "sha256": "6ea85b59baa4836af544c055ed2d554a9a1d4f646d29926a910c141debd81cd0",
+            "method": "native_events_and_readback",
+            "label": "camera-border-esc（Object Mode誤按實拍／讀值）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v001/shortcut-mode-13-camera-border-rmb.png",
+            "sha256": "fc29071557c1cd9c3efd44a8764fe63850ddc364aacc205d7bf1740bb450122d",
+            "method": "native_events_and_readback",
+            "label": "camera-border-rmb（Object Mode誤按實拍／讀值）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v001/shortcut-mode-errors-verification-v001.json",
+            "sha256": "ca54a8359e00c744a8e148d2776d6a75f26c1b62bf0fb6ff04fc1ba1e0f0b323",
+            "method": "native_events_and_readback",
+            "label": "誤按與復原：原生事件、前後狀態及原圖SHA（v001）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v002/shortcut-mode-09-perspective-border-complete.png",
+            "sha256": "4bf553f1431b3ed214e9545634a3b03e158b2708d18c690aef60ed9424d46c1d",
+            "method": "native_events_and_readback",
+            "label": "perspective-border-complete（Object Mode誤按實拍／讀值）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v002/shortcut-mode-10-perspective-border-undo.png",
+            "sha256": "4bf553f1431b3ed214e9545634a3b03e158b2708d18c690aef60ed9424d46c1d",
+            "method": "native_events_and_readback",
+            "label": "perspective-border-undo（Object Mode誤按實拍／讀值）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v002/shortcut-mode-12-perspective-border-clear.png",
+            "sha256": "17a75ff6ef862742616d7e3a0a490c7f8ce733b7e69ed3cfe358e05c3b1b70d7",
+            "method": "native_events_and_readback",
+            "label": "perspective-border-clear（Object Mode誤按實拍／讀值）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v002/shortcut-mode-17-camera-border-complete.png",
+            "sha256": "a5f042dd00a05f7405a62a4d13b98a39e9b1ba158b41d8c8e2eb673d598a3d84",
+            "method": "native_events_and_readback",
+            "label": "camera-border-complete（Object Mode誤按實拍／讀值）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v002/shortcut-mode-18-camera-border-undo.png",
+            "sha256": "fc29071557c1cd9c3efd44a8764fe63850ddc364aacc205d7bf1740bb450122d",
+            "method": "native_events_and_readback",
+            "label": "camera-border-undo（Object Mode誤按實拍／讀值）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v002/shortcut-mode-19-camera-border-before-clear.png",
+            "sha256": "a5f042dd00a05f7405a62a4d13b98a39e9b1ba158b41d8c8e2eb673d598a3d84",
+            "method": "native_events_and_readback",
+            "label": "camera-border-before-clear（Object Mode誤按實拍／讀值）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v002/shortcut-mode-20-camera-border-clear.png",
+            "sha256": "23d2b89ca24fbd59bb4929fbcdbc1aec6acff81a13dd656b7a4d2933607343cd",
+            "method": "native_events_and_readback",
+            "label": "camera-border-clear（Object Mode誤按實拍／讀值）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v002/shortcut-mode-errors-verification-v001.json",
+            "sha256": "c8e0725651e1a55b6bdbf5743fb3f291035b08a9c9e1ec2aee691fec5009a7b7",
+            "method": "native_events_and_readback",
+            "label": "誤按與復原：原生事件、前後狀態及原圖SHA（v002）"
+          }
+        ]
+      }
+    },
+    {
+      "step": "07-02",
+      "guideIndex": 2,
+      "guideSha256": "265077e44d79645ef2f6242d2685e62f666334d8315fd956d9107c3a07d67633",
+      "shortcut": {
+        "keys": "Shift+Ctrl+S",
+        "effect": "開啟 .blend 的 Save As，再依常規方法核對資料夾與本步版本檔名。",
+        "requirements": [
+          "Blender 主視窗；先核對目前檔名、版本與未儲存變更。"
+        ],
+        "cautions": [
+          "已登記的檢查點保留；需要修改先另存新版本。快捷鍵不執行檔案登記或學員確認。",
+          "此處證據只涵蓋 .blend 的 File > Save As；PNG 仍照 Image > Save As 常規方法，未核其快捷鍵。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/01/2026-10-22-lesson01-demo-v001/01-04-01-file-menu.png",
+            "sha256": "34fb7b908b2195873b9568a38b8aa54bdef0fd7ce29eb0e74570486259fd6768",
+            "method": "menu_label_visual",
+            "label": "File > Save As...：Shift Ctrl S（既有原圖鍵標）"
+          }
+        ]
+      }
+    },
+    {
+      "step": "07-03",
+      "guideIndex": 0,
+      "guideSha256": "b2a86a1c150273e02f14f34923a2174b9545ed0ec19e5fb18f750d6128b19a4f",
+      "shortcut": {
+        "keys": "R → Y → 90 → Enter；R → X → 180 → Enter",
+        "effect": "依原步選對候選副本，Body 繞 Global Y 再轉 90°，Lid 繞 Global X 再轉 180°；各自核對當前起始姿態。",
+        "requirements": [
+          "滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。",
+          "Object Mode，僅選本步目標物件；Transform Orientation 為 Global。",
+          "只對原向的候選副本使用相應一組；已轉過的候選不可再盲按一次。"
+        ],
+        "cautions": [
+          "R 是從當前姿態再旋轉，不等於直接設 Euler 角為 90／180。新證據用 Cube 各軸 30°及反向還原查鍵；候選工程角度仍以原 operationRun 實讀為依據。",
+          "這些仍是方向／支撐候選，不由轉向推定可列印或合格；不要用 Ctrl+A 套用旋轉。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/01-08-03-rotate-y.png",
+            "sha256": "84a3069e2f53318ea1f839623516f706bb7c98f9c062a307fffc8b9424108b09",
+            "method": "native_events_and_readback",
+            "label": "rotate-y（獨立 Blender 原圖）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/01-08-01-rotate-x.png",
+            "sha256": "508c63472236e3d42947ea4b058892900438a9c2a356fc5842de39c466730503",
+            "method": "native_events_and_readback",
+            "label": "rotate-x（獨立 Blender 原圖）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/shortcut-verification-v001.json",
+            "sha256": "68e9d38fcb0f357554a137b1a0efed4c7b9b75954fa978405a6641012f72f5b0",
+            "method": "native_events_and_readback",
+            "label": "事件、預期與實際讀值；未判學員完成"
+          }
+        ]
+      }
+    },
+    {
+      "step": "07-03",
+      "guideIndex": 1,
+      "guideSha256": "0fe7abcd9fe4756ba8c62165d89ce5f42ef10266d71af91920b8ac44062b9621",
+      "shortcut": {
+        "keys": "Tab",
+        "effect": "在作用中網格的 Object Mode／Edit Mode 之間切換；本步目標是 Edit Mode。",
+        "requirements": [
+          "滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。",
+          "作用中物件必須是網格，先讀左上模式。"
+        ],
+        "cautions": [
+          "Tab 是切換，不是固定設成某模式；到達目標模式就停。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/01-05-01-tab-edit.png",
+            "sha256": "ef3c94f920b0aa08cc349b691074ef4b0b112b02ad528b91d11e7414a0ebb7e6",
+            "method": "native_events_and_readback",
+            "label": "tab-edit（獨立 Blender 原圖）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/01-05-02-tab-object.png",
+            "sha256": "44cb09a22b591b3f141f02631bcd29d7842171430f57b7b336d8421852ccb314",
+            "method": "native_events_and_readback",
+            "label": "tab-object（獨立 Blender 原圖）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/shortcut-verification-v001.json",
+            "sha256": "68e9d38fcb0f357554a137b1a0efed4c7b9b75954fa978405a6641012f72f5b0",
+            "method": "native_events_and_readback",
+            "label": "事件、預期與實際讀值；未判學員完成"
+          }
+        ]
+      }
+    },
+    {
+      "step": "07-03",
+      "guideIndex": 2,
+      "guideSha256": "f8260c7e8c3ad8fb3a4a78b472a095a1c0701ab1d98f9bb175627d2d5a39b37e",
+      "shortcut": {
+        "keys": "Shift+Ctrl+S",
+        "effect": "開啟 .blend 的 Save As，再依常規方法核對資料夾與本步版本檔名。",
+        "requirements": [
+          "Blender 主視窗；先核對目前檔名、版本與未儲存變更。"
+        ],
+        "cautions": [
+          "已登記的檢查點保留；需要修改先另存新版本。快捷鍵不執行檔案登記或學員確認。",
+          "此處證據只涵蓋 .blend 的 File > Save As；PNG 仍照 Image > Save As 常規方法，未核其快捷鍵。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/01/2026-10-22-lesson01-demo-v001/01-04-01-file-menu.png",
+            "sha256": "34fb7b908b2195873b9568a38b8aa54bdef0fd7ce29eb0e74570486259fd6768",
+            "method": "menu_label_visual",
+            "label": "File > Save As...：Shift Ctrl S（既有原圖鍵標）"
+          }
+        ]
+      }
+    },
+    {
+      "step": "07-04",
+      "guideIndex": 0,
+      "guideSha256": "9caf5df7a8e59a2f0a0b52a3f15d0cac69af5af1641cd01ce59f1b1b0436e6ab",
+      "shortcut": {
+        "keys": "Ctrl+O",
+        "effect": "開啟 Open 檔案視窗，再選本步指定來源；其餘匯出、重匯入或量測仍依常規方法。",
+        "requirements": [
+          "Blender 主視窗；先核對目前檔名、版本與未儲存變更。"
+        ],
+        "cautions": [
+          "先保留未存內容；已登記版本沒有再修改時，重開提示不要用 Save 覆寫；不確定就 Cancel。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/01/2026-10-22-lesson01-demo-v001/01-04-01-file-menu.png",
+            "sha256": "34fb7b908b2195873b9568a38b8aa54bdef0fd7ce29eb0e74570486259fd6768",
+            "method": "menu_label_visual",
+            "label": "File > Open...：Ctrl O（既有原圖鍵標）"
+          }
+        ]
+      }
+    },
+    {
+      "step": "07-04",
+      "guideIndex": 2,
+      "guideSha256": "c06c21432cf7a5d007f140b817b232ab77270250883bbb3210d28ff863f991f8",
+      "shortcut": {
+        "keys": "主鍵盤上排 2 → Alt+A → F3 → 搜尋 Select Non Manifold",
+        "effect": "開啟 Menu Search，再輸入並核對 Select Non Manifold；依常規方法執行檢查。",
+        "requirements": [
+          "滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。",
+          "先進入本步所需 Edit Mode，取消既有選取並核對選取模式。",
+          "Edit Mode 先切邊選取，確認 Emulate Numpad 關閉；若鍵位有改就按邊選取圖示。"
+        ],
+        "cautions": [
+          "既有原圖證明 F3 的搜尋鍵標，並未驗證該檢查有獨立直接快捷鍵。搜尋及閉合檢查不代表可列印或配合合格。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/01/2026-10-22-lesson01-demo-v001/01-07-05-edit-undo-menu.png",
+            "sha256": "a322cbd6bb3ce61bc9a0151c0d21ca198704301322fd4faf31897e0f9b2f48ae",
+            "method": "menu_label_visual",
+            "label": "Edit > Menu Search...：F3（既有原圖鍵標）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/07-02-01-main-two-edge-select.png",
+            "sha256": "ac018b5487d7f2a25875af350d09139a617f60fe7523f190037d5885b2bebb2a",
+            "method": "native_events_and_readback",
+            "label": "main-two-edge-select（新原生事件／實拍）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/04-04-02-edit-alt-a-deselect.png",
+            "sha256": "4b3f7fb4125af6e93a90a9018ae6ef3282c7655f80aca371be3f28ba3cad3e31",
+            "method": "native_events_and_readback",
+            "label": "edit-alt-a-deselect（新原生事件／實拍）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/mesh-shortcut-verification-v001.json",
+            "sha256": "15d96952bebc3f66a6abff3b578f1bf2698bf9062dd76652b329c55fa147c3da",
+            "method": "native_events_and_readback",
+            "label": "事件、預期與實際讀值；未判學員完成"
+          }
+        ]
+      }
+    },
+    {
+      "step": "07-05",
+      "guideIndex": 0,
+      "guideSha256": "d30229a168ffcf07b4e7f50dbe69b2181a0bb1c227e0979d29d4c1bbe9146c9b",
+      "shortcut": {
+        "keys": "Ctrl+O",
+        "effect": "開啟 Open 檔案視窗，再選本步指定來源；其餘匯出、重匯入或量測仍依常規方法。",
+        "requirements": [
+          "Blender 主視窗；先核對目前檔名、版本與未儲存變更。"
+        ],
+        "cautions": [
+          "先保留未存內容；已登記版本沒有再修改時，重開提示不要用 Save 覆寫；不確定就 Cancel。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/01/2026-10-22-lesson01-demo-v001/01-04-01-file-menu.png",
+            "sha256": "34fb7b908b2195873b9568a38b8aa54bdef0fd7ce29eb0e74570486259fd6768",
+            "method": "menu_label_visual",
+            "label": "File > Open...：Ctrl O（既有原圖鍵標）"
+          }
+        ]
+      }
+    },
+    {
+      "step": "07-05",
+      "guideIndex": 2,
+      "guideSha256": "3223cb24604b8c9655e18afb5b1d681c353456285bc255a59ca4c3f8dfd2f773",
+      "shortcut": {
+        "keys": "主鍵盤上排 2 → Alt+A → F3 → 搜尋 Select Non Manifold",
+        "effect": "開啟 Menu Search，再輸入並核對 Select Non Manifold；依常規方法執行檢查。",
+        "requirements": [
+          "滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。",
+          "先進入本步所需 Edit Mode，取消既有選取並核對選取模式。",
+          "Edit Mode 先切邊選取，確認 Emulate Numpad 關閉；若鍵位有改就按邊選取圖示。"
+        ],
+        "cautions": [
+          "既有原圖證明 F3 的搜尋鍵標，並未驗證該檢查有獨立直接快捷鍵。搜尋及閉合檢查不代表可列印或配合合格。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/01/2026-10-22-lesson01-demo-v001/01-07-05-edit-undo-menu.png",
+            "sha256": "a322cbd6bb3ce61bc9a0151c0d21ca198704301322fd4faf31897e0f9b2f48ae",
+            "method": "menu_label_visual",
+            "label": "Edit > Menu Search...：F3（既有原圖鍵標）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/07-02-01-main-two-edge-select.png",
+            "sha256": "ac018b5487d7f2a25875af350d09139a617f60fe7523f190037d5885b2bebb2a",
+            "method": "native_events_and_readback",
+            "label": "main-two-edge-select（新原生事件／實拍）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/04-04-02-edit-alt-a-deselect.png",
+            "sha256": "4b3f7fb4125af6e93a90a9018ae6ef3282c7655f80aca371be3f28ba3cad3e31",
+            "method": "native_events_and_readback",
+            "label": "edit-alt-a-deselect（新原生事件／實拍）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/mesh-shortcut-verification-v001.json",
+            "sha256": "15d96952bebc3f66a6abff3b578f1bf2698bf9062dd76652b329c55fa147c3da",
+            "method": "native_events_and_readback",
+            "label": "事件、預期與實際讀值；未判學員完成"
+          }
+        ]
+      }
+    },
+    {
+      "step": "08-01",
+      "guideIndex": 0,
+      "guideSha256": "491672b6bd78ab4f708089ca784e6ff205c8f1dbbbfb33f521d26cb701723522",
+      "shortcut": {
+        "keys": "F2 → Body_Reference → Enter；N",
+        "effect": "只選原盒，用 F2 改物件名，必要時用 N 開 Item 核對尺寸與 Scale。",
+        "requirements": [
+          "滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。",
+          "Object Mode，選取原盒作參照。"
+        ],
+        "cautions": [
+          "F2 不改模型尺寸；新證據改名目標為 ShortcutCube，本步仍須輸入 Body_Reference。不代表已有螺紋。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/02/2026-10-22-lesson02-demo-v001/02-04-02-rename-menu.png",
+            "sha256": "bb945a2e6b0d47123c9c5c604a1f711b794f00f2c6c3992715bda88303947653",
+            "method": "menu_label_visual",
+            "label": "Edit > Rename Active Item...：F2（既有原圖鍵標）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/02-03-02-f2-renamed.png",
+            "sha256": "324e3fbbe8998a350887e8a7bf9df509e6157e5d5015e57d2ee60a4497d4e914",
+            "method": "native_events_and_readback",
+            "label": "f2-renamed（獨立 Blender 原圖）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-22-lesson01-demo-v001/01-07-02-view-sidebar.png",
+            "sha256": "7c2aa6418bc22092bd1ec89d617e99692402f9a8c5a5f669055b65c550b34bb9",
+            "method": "menu_label_visual",
+            "label": "View > Sidebar：N（既有原圖鍵標）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/shortcut-verification-v001.json",
+            "sha256": "68e9d38fcb0f357554a137b1a0efed4c7b9b75954fa978405a6641012f72f5b0",
+            "method": "native_events_and_readback",
+            "label": "事件、預期與實際讀值；未判學員完成"
+          }
+        ]
+      }
+    },
+    {
+      "step": "08-01",
+      "guideIndex": 1,
+      "guideSha256": "f956e2e0f1b1cd6ed1891c8bdaf280ffd357a7b5bef32e5d0920b9837b53554e",
+      "shortcut": {
+        "keys": "主鍵盤上排 2 → Alt+A → F3 → 搜尋 Select Non Manifold",
+        "effect": "開啟 Menu Search，再輸入並核對 Select Non Manifold；依常規方法執行檢查。",
+        "requirements": [
+          "滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。",
+          "先進入本步所需 Edit Mode，取消既有選取並核對選取模式。",
+          "Edit Mode 先切邊選取，確認 Emulate Numpad 關閉；若鍵位有改就按邊選取圖示。"
+        ],
+        "cautions": [
+          "既有原圖證明 F3 的搜尋鍵標，並未驗證該檢查有獨立直接快捷鍵。搜尋及閉合檢查不代表可列印或配合合格。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/01/2026-10-22-lesson01-demo-v001/01-07-05-edit-undo-menu.png",
+            "sha256": "a322cbd6bb3ce61bc9a0151c0d21ca198704301322fd4faf31897e0f9b2f48ae",
+            "method": "menu_label_visual",
+            "label": "Edit > Menu Search...：F3（既有原圖鍵標）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/07-02-01-main-two-edge-select.png",
+            "sha256": "ac018b5487d7f2a25875af350d09139a617f60fe7523f190037d5885b2bebb2a",
+            "method": "native_events_and_readback",
+            "label": "main-two-edge-select（新原生事件／實拍）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/04-04-02-edit-alt-a-deselect.png",
+            "sha256": "4b3f7fb4125af6e93a90a9018ae6ef3282c7655f80aca371be3f28ba3cad3e31",
+            "method": "native_events_and_readback",
+            "label": "edit-alt-a-deselect（新原生事件／實拍）"
+          },
+          {
+            "path": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/mesh-shortcut-verification-v001.json",
+            "sha256": "15d96952bebc3f66a6abff3b578f1bf2698bf9062dd76652b329c55fa147c3da",
+            "method": "native_events_and_readback",
+            "label": "事件、預期與實際讀值；未判學員完成"
+          }
+        ]
+      }
+    },
+    {
+      "step": "08-01",
+      "guideIndex": 2,
+      "guideSha256": "f6dc231055bc03870cb6c20f65e6ebfb3b7288c816212554db9cdfdcaf0fe202",
+      "shortcut": {
+        "keys": "Shift+Ctrl+S",
+        "effect": "開啟 .blend 的 Save As，再依常規方法核對資料夾與本步版本檔名。",
+        "requirements": [
+          "Blender 主視窗；先核對目前檔名、版本與未儲存變更。"
+        ],
+        "cautions": [
+          "已登記的檢查點保留；需要修改先另存新版本。快捷鍵不執行檔案登記或學員確認。",
+          "此處證據只涵蓋 .blend 的 File > Save As；PNG 仍照 Image > Save As 常規方法，未核其快捷鍵。"
+        ],
+        "evidence": [
+          {
+            "path": "learning/evidence/01/2026-10-22-lesson01-demo-v001/01-04-01-file-menu.png",
+            "sha256": "34fb7b908b2195873b9568a38b8aa54bdef0fd7ce29eb0e74570486259fd6768",
+            "method": "menu_label_visual",
+            "label": "File > Save As...：Shift Ctrl S（既有原圖鍵標）"
+          }
+        ]
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "step": "01-01",
+      "guideIndex": 0,
+      "guideSha256": "f7203df0bad92a0092af62bfe8dc6d7c1405094d53358d193f64f53bb1f91695",
+      "status": "omitted",
+      "reason": "辨認實際畫面，沒有同等快捷鍵；不能用新建指令替代觀察。"
+    },
+    {
+      "step": "01-02",
+      "guideIndex": 0,
+      "guideSha256": "c2f9a44648ce0f6952af6b651eceb4091b6a2c3d8206cfc423db908193360230",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "01-02",
+      "guideIndex": 1,
+      "guideSha256": "dc3d044f07ab3c020ab1ba7a3455a0d58d3ddc09228717f89b64d7ebb12585b7",
+      "status": "omitted",
+      "reason": "語言清單及偏好儲存需按實際欄位；Ctrl+, 只加在開設定項。"
+    },
+    {
+      "step": "01-02",
+      "guideIndex": 2,
+      "guideSha256": "1b18e3469485633728027a79110efaba061cfc89e6dc16deb5033256b5519f05",
+      "status": "omitted",
+      "reason": "語言清單及偏好儲存需按實際欄位；Ctrl+, 只加在開設定項。"
+    },
+    {
+      "step": "01-03",
+      "guideIndex": 0,
+      "guideSha256": "c3ed38e01b4bbe7203e2e6063a552be5cdf3e6b5c88a0f4ca512488fb5c839b4",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "01-03",
+      "guideIndex": 1,
+      "guideSha256": "b284ee1258bfa24b22f72fe295acc27a024d33bb27f789e259fa71a3c31e6c38",
+      "status": "omitted",
+      "reason": "辨認編輯區與物件，不以額外按鍵代替。"
+    },
+    {
+      "step": "01-03",
+      "guideIndex": 2,
+      "guideSha256": "68e2ba0697d9bf7ad4f87f68b57429d5aaff8eef56703700abe03658bd2b34da",
+      "status": "omitted",
+      "reason": "辨認編輯區與物件，不以額外按鍵代替。"
+    },
+    {
+      "step": "01-04",
+      "guideIndex": 0,
+      "guideSha256": "230431f81bb10c59433dff85177af566d8414543c80d21f5cc58960df695d50f",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "01-04",
+      "guideIndex": 1,
+      "guideSha256": "ba2418c4137b1f4d1ae072e11db9b3fd4216a91d9da4acc5d0bbd2d79ebb7058",
+      "status": "omitted",
+      "reason": "核對路徑、檔名與登記沒有同等 Blender 快捷鍵。"
+    },
+    {
+      "step": "01-04",
+      "guideIndex": 2,
+      "guideSha256": "6f252a08c52d0736597ac113fac62504ffa68e503973143b4d0ce187c99967d4",
+      "status": "omitted",
+      "reason": "核對路徑、檔名與登記沒有同等 Blender 快捷鍵。"
+    },
+    {
+      "step": "01-05",
+      "guideIndex": 0,
+      "guideSha256": "11df7704e8617e0e05bdc3aa00a842e27d9940778006c987ece0613871e1f31f",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "01-05",
+      "guideIndex": 1,
+      "guideSha256": "3bbc37128586a082be699ff15dada18dccd1a0d54aa86cf459cf2e2f6cc0b70d",
+      "status": "omitted",
+      "reason": "選特定 Cube 與核對名稱仍點選；A 全選不是只選 Cube。"
+    },
+    {
+      "step": "01-05",
+      "guideIndex": 2,
+      "guideSha256": "798771437f44c4c6802c77855563b7fe9ec6f112d3317babbaa9b4f5c92b8d2f",
+      "status": "omitted",
+      "reason": "選特定 Cube 與核對名稱仍點選；A 全選不是只選 Cube。"
+    },
+    {
+      "step": "01-06",
+      "guideIndex": 0,
+      "guideSha256": "f5fb12073cb5108b76c53c3bf89419364b5977580e44c8c5fb5ce184f1a6c74f",
+      "status": "omitted",
+      "reason": "導覽軸拖曳與 Transform 核對保留；Frame Selected 只加在找回物件項。"
+    },
+    {
+      "step": "01-06",
+      "guideIndex": 1,
+      "guideSha256": "641a355aca57c139e70d3ee34960907979e2e465882064b5f18fdd488db7ea21",
+      "status": "omitted",
+      "reason": "導覽軸拖曳與 Transform 核對保留；Frame Selected 只加在找回物件項。"
+    },
+    {
+      "step": "01-06",
+      "guideIndex": 2,
+      "guideSha256": "d11e945df9929c912ca93c21af627b7b854649beb30704459d3a73edc18a8346",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "01-07",
+      "guideIndex": 0,
+      "guideSha256": "a1a6354176df4fd7c70ef9af82eee119cb069207b94cac528318b46bcb060ad3",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "01-07",
+      "guideIndex": 1,
+      "guideSha256": "ae02ebfb317bfdc0544938b59086cec2000d8197bec6d128e26565d9314e31e3",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "01-07",
+      "guideIndex": 2,
+      "guideSha256": "25b029b657067b30b8aa5de1f095adfe8aaf293bbb9a049e0cdfdd6ab5a8893c",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "01-08",
+      "guideIndex": 0,
+      "guideSha256": "c02df49b1f660e1230f2cf4ec02b14ee1c0737ccbeff050671c7cf8dda8112bf",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "01-08",
+      "guideIndex": 1,
+      "guideSha256": "1f4b1c8382f4af9b9ba35dc4e5f1fe6a03d67d763527f3fd7cc130c8c373b1d6",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "01-08",
+      "guideIndex": 2,
+      "guideSha256": "51e8ef30b420f17d3e47b068ec5422d753dac10238bf7c4c3073768ce2ecebad",
+      "status": "omitted",
+      "reason": "Scale 讀值是觀察，不另加會改變比例的操作。"
+    },
+    {
+      "step": "01-09",
+      "guideIndex": 0,
+      "guideSha256": "1aaa32764923f21a7f25bd9799c12d265e785acb8260d19caefe2ef40b7ea793",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "01-09",
+      "guideIndex": 1,
+      "guideSha256": "50932c610d7b835634316462beb0178413df1d4afef6330cdb819f57c349ce03",
+      "status": "omitted",
+      "reason": "register-file 為教學資料登記，Ctrl+S 不能替代。"
+    },
+    {
+      "step": "01-09",
+      "guideIndex": 2,
+      "guideSha256": "1180f06f617207b80907f2c03c058f28441c97a70688ba1d4b91db0a019bcd9b",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "02-01",
+      "guideIndex": 0,
+      "guideSha256": "0e4078b72019d3e5c85f3016a315fe927454b3f2c9a96b736e07c87eb0bc4359",
+      "status": "omitted",
+      "reason": "核對來源與練習區不需要 Blender 鍵。"
+    },
+    {
+      "step": "02-01",
+      "guideIndex": 1,
+      "guideSha256": "592efcfb41b52b768eb0b5dacad7f375a30e10a553c1e68732c72bd4ca89a49c",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "02-01",
+      "guideIndex": 2,
+      "guideSha256": "29a5b83c5536a2879c32633aacca3ebafcf0331084b493cab99a44bc197d79aa",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "02-02",
+      "guideIndex": 0,
+      "guideSha256": "0c82c73e9417035cc6c96cd9909a6a57d880a19eb0d9f1d42cf0e1eb2d48bfc7",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "02-02",
+      "guideIndex": 1,
+      "guideSha256": "0d8aeaecd704af9ded826e9947bda159472ee1c961faabf94c2f8d61e171d8f1",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "02-02",
+      "guideIndex": 2,
+      "guideSha256": "0ceba405d6f2a45a39db1e74fe528ec5ac1966367630aea31d72ffcb48e3d6fa",
+      "status": "omitted",
+      "reason": "Location 的絕對值逐欄核對；不假定起點為零改成 G。"
+    },
+    {
+      "step": "02-03",
+      "guideIndex": 0,
+      "guideSha256": "5b65b0bba18cff6a29528506813abcf0c039b606cee592cd702c1c0dca73b1f8",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "02-03",
+      "guideIndex": 1,
+      "guideSha256": "6040858fed637d66c001127f8756932aac9f9e9de5a14eae679f695226d61c20",
+      "status": "omitted",
+      "reason": "Dimensions 與 Location 的絕對數值保留欄位，S 是倍率不能直接替代。"
+    },
+    {
+      "step": "02-03",
+      "guideIndex": 2,
+      "guideSha256": "ed72403b0f7524c16268d372cccc0de6c27c706d5e956aadd6cbfa0fdae176b9",
+      "status": "omitted",
+      "reason": "Dimensions 與 Location 的絕對數值保留欄位，S 是倍率不能直接替代。"
+    },
+    {
+      "step": "02-04",
+      "guideIndex": 0,
+      "guideSha256": "c801a3aac5a343e8fcb64bfecba73a33ef3a7faabf1d4af2397bf1321d41a0cd",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "02-04",
+      "guideIndex": 1,
+      "guideSha256": "b060377b772238e506b340574c51a3173074380e50d32521130eada2ca70fc4c",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "02-04",
+      "guideIndex": 2,
+      "guideSha256": "59ee5a9d5f2aafb5e45c26286103def3b98a1605f41a93c0290a78107fb2d798",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "02-05",
+      "guideIndex": 0,
+      "guideSha256": "a109b0da9ed1eaf78e96b1035aa6d327c730e7948cc6a8dabff932b248dd6899",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "02-05",
+      "guideIndex": 1,
+      "guideSha256": "832b1abf8215d1feaa5a5d0203bab7301056fb37988ed09687c5642ccd966c1d",
+      "status": "omitted",
+      "reason": "單位、Unit Scale 是場景欄位，不以變換鍵代替。"
+    },
+    {
+      "step": "02-05",
+      "guideIndex": 2,
+      "guideSha256": "9a45667a9fdde94278066b3342643a37fb2d0e859b0b1d8b90056adfa50b276a",
+      "status": "omitted",
+      "reason": "單位、Unit Scale 是場景欄位，不以變換鍵代替。"
+    },
+    {
+      "step": "02-06",
+      "guideIndex": 0,
+      "guideSha256": "8d130c4d257a742251de2aabfe83befc771b5a8866ee2ec09e76cd4a766849cf",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "02-06",
+      "guideIndex": 1,
+      "guideSha256": "dc2e7c5ba4842fd25465c9e87be69e97170194642ceb121858156ae1e2d20993",
+      "status": "omitted",
+      "reason": "絕對毫米尺寸及 Scale 核對仍逐欄；N 開欄已在第一項提供。"
+    },
+    {
+      "step": "02-06",
+      "guideIndex": 2,
+      "guideSha256": "5be821bb0933cfb000fae483d6a566c0649f0263568bb0794791d4e757c42d73",
+      "status": "omitted",
+      "reason": "絕對毫米尺寸及 Scale 核對仍逐欄；N 開欄已在第一項提供。"
+    },
+    {
+      "step": "02-07",
+      "guideIndex": 0,
+      "guideSha256": "25eb30f3ccf0d00bbfb54ead62907157d52452df58653611da0f96754b72fe9a",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "02-07",
+      "guideIndex": 1,
+      "guideSha256": "c7ba8b9e5b1eb355bfcff657d4c737aff460eed2584cf5d08335a12f44ff6471",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "02-07",
+      "guideIndex": 2,
+      "guideSha256": "f923858018b7d11939df47d33434e6102022d83dadd1cdae1a51e250a12a0c8d",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "03-01",
+      "guideIndex": 0,
+      "guideSha256": "e487775aa3813c613b65685da1cc26f5dba662ad43dfd475c1c574082a6b8fed",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "03-01",
+      "guideIndex": 1,
+      "guideSha256": "7ce1a4a274309e4e4d65bffffe6c8d44538c29191707768e62ebd85c548ccf48",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "03-01",
+      "guideIndex": 2,
+      "guideSha256": "35e19a07851770e05d519a783682d7a9c43098aa48fc02fab911fe50d114add0",
+      "status": "omitted",
+      "reason": "來源版本及雜湊筆記不是 Blender 快捷操作。"
+    },
+    {
+      "step": "03-02",
+      "guideIndex": 0,
+      "guideSha256": "135d36675c267ae2713e9fd59def6b133089ab4b61f4974865110ca75f8f0682",
+      "status": "omitted",
+      "reason": "作用中相機與取景依實際畫面；沒有已凍結證據的鍵不加入。"
+    },
+    {
+      "step": "03-02",
+      "guideIndex": 1,
+      "guideSha256": "7382930a510e1e2252c0c6dc7a20c96e65d32ab710d4f93a282efa1e608c26ee",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "03-02",
+      "guideIndex": 2,
+      "guideSha256": "0c1b012b174596da73fc05474badf8d4dd8e4cd1ee64c5ba570d10e157553946",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "03-03",
+      "guideIndex": 0,
+      "guideSha256": "ce2de44069fd782e90c81a2186c2b045b76b24cd5c2449a4e430e22d423f1906",
+      "status": "omitted",
+      "reason": "燈光選擇、Power、Rendered 保留按鈕；此輪沒有該著色模式的鍵證據。"
+    },
+    {
+      "step": "03-03",
+      "guideIndex": 1,
+      "guideSha256": "a412c7b1f23c49540296db2167e70008ff3c9e1aa18daae839be0e8f2bb49c0c",
+      "status": "omitted",
+      "reason": "燈光選擇、Power、Rendered 保留按鈕；此輪沒有該著色模式的鍵證據。"
+    },
+    {
+      "step": "03-03",
+      "guideIndex": 2,
+      "guideSha256": "29f8d9774024a4871a1462147850099cee54e01864b33b720df0483afc501b36",
+      "status": "omitted",
+      "reason": "燈光選擇、Power、Rendered 保留按鈕；此輪沒有該著色模式的鍵證據。"
+    },
+    {
+      "step": "03-04",
+      "guideIndex": 0,
+      "guideSha256": "bdc180f6ccc38cca21de280fd9701bbf8bceb6c1c010d5e41bc04d9f38b93e07",
+      "status": "omitted",
+      "reason": "特定物件選取、材質資料塊命名與色彩欄位沒有此批已驗證的同等快捷鍵；F2 不能當材質命名。"
+    },
+    {
+      "step": "03-04",
+      "guideIndex": 1,
+      "guideSha256": "5737c6c3d421bd2956f3be03bad0160d58961106d47a74a4ca99e058a787fe66",
+      "status": "omitted",
+      "reason": "特定物件選取、材質資料塊命名與色彩欄位沒有此批已驗證的同等快捷鍵；F2 不能當材質命名。"
+    },
+    {
+      "step": "03-04",
+      "guideIndex": 2,
+      "guideSha256": "19317f3d24ff3d7c72586f0fbe0c6c099f8a27524bbd2a11dec567856b24f4e0",
+      "status": "omitted",
+      "reason": "特定物件選取、材質資料塊命名與色彩欄位沒有此批已驗證的同等快捷鍵；F2 不能當材質命名。"
+    },
+    {
+      "step": "03-05",
+      "guideIndex": 0,
+      "guideSha256": "99d8e2bc4f3b96afafd7558431ff100ee399c1640f18fdce79630736a4bb5852",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "03-05",
+      "guideIndex": 1,
+      "guideSha256": "a213f5fd468bc785f931b7e11cf00b8dc0f8d998e8a096aac4ae6d2f24ba40c2",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "03-05",
+      "guideIndex": 2,
+      "guideSha256": "4dc765726aadd4d075514a33827926b881284cdc4eb81f164ee53b9da7cb82b0",
+      "status": "omitted",
+      "reason": "PNG 輸出未核對快捷鍵，不套用 .blend 的 Shift+Ctrl+S。"
+    },
+    {
+      "step": "03-06",
+      "guideIndex": 0,
+      "guideSha256": "e63a4b6149d17d233bf60168dbfc4f9fa57476be78c6135d320d5dfbf79a5a24",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "03-06",
+      "guideIndex": 1,
+      "guideSha256": "d4ea25b3c2f936f272dc0c78bb9bbf44dac5cd886ac9b85e4b73b3054f094686",
+      "status": "omitted",
+      "reason": "引擎、相機、材質等重現條件要逐項核對。"
+    },
+    {
+      "step": "03-06",
+      "guideIndex": 2,
+      "guideSha256": "9dd47c9f29fa96e6e7043f5fd89069374e4e56b17ee90250f57b3daac571a22a",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "04-01",
+      "guideIndex": 0,
+      "guideSha256": "6d6878e3bf744de153bf70410f5751b403a80a906a08ef4d7ef1c416d42e1009",
+      "status": "omitted",
+      "reason": "列印條件與量測工具為資料／實體確認，無 Blender 等效快捷鍵。"
+    },
+    {
+      "step": "04-01",
+      "guideIndex": 1,
+      "guideSha256": "095e9ffb92caee99a65e0f67dc84f7584297fdbf3b75adb13c245ee058c25647",
+      "status": "omitted",
+      "reason": "列印條件與量測工具為資料／實體確認，無 Blender 等效快捷鍵。"
+    },
+    {
+      "step": "04-02",
+      "guideIndex": 0,
+      "guideSha256": "b8d020c90e4e4b96a36eba13933886fa596fa9bd331f5d5af625efd6999496b3",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "04-02",
+      "guideIndex": 1,
+      "guideSha256": "47335a7b27da86f5eea65dbdec732be4ba451d0279341f8d4d46d469a09a7c55",
+      "status": "omitted",
+      "reason": "Units 與 Unit Scale 仍依 Properties 欄位核對。"
+    },
+    {
+      "step": "04-02",
+      "guideIndex": 2,
+      "guideSha256": "0de3d676f2e32274af763ca50f502c2b664bd42d4fb75d96d91eeb13ce2c783b",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "04-03",
+      "guideIndex": 0,
+      "guideSha256": "160bed5ff747854dffe3c94f42e103d4d82e4318bdeb85b07729b7f0289e0bad",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "04-03",
+      "guideIndex": 1,
+      "guideSha256": "0f60de8decd25abbaff1dfe4fe0e13906eeba40830467ce6eff2cdb1d47dc0a4",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "04-04",
+      "guideIndex": 0,
+      "guideSha256": "8ce925cd713f9ca0f09c100cf7bac8a18a6473c70a2773498e0caa34abcf9b14",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "04-04",
+      "guideIndex": 1,
+      "guideSha256": "52412e82d028c8e96dd5a86f9ee8aca5650374a1ed05a1a839efdafcdddc26e9",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "04-04",
+      "guideIndex": 2,
+      "guideSha256": "1d4b9e2cc0b821254db3b370b441525b70e945f45593320ea83d00bac5f49ed7",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "04-05",
+      "guideIndex": 0,
+      "guideSha256": "19b2580e60243792efd99fc402a6d42861099f35eed9d909c0c31d494c3b6253",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "04-05",
+      "guideIndex": 1,
+      "guideSha256": "dae0543101319fff63a9cc7070852bd5091238c777279eaa74cdec3de327eb4e",
+      "status": "omitted",
+      "reason": "Solidify 新增、厚度設定是修改器欄位；Ctrl+A 並非修改器 Apply。"
+    },
+    {
+      "step": "04-05",
+      "guideIndex": 2,
+      "guideSha256": "733f3d9fdedead650a6c1b620cc7fe5cbbc581ee57fc877f24e6c1670e318343",
+      "status": "omitted",
+      "reason": "Solidify 新增、厚度設定是修改器欄位；Ctrl+A 並非修改器 Apply。"
+    },
+    {
+      "step": "04-06",
+      "guideIndex": 0,
+      "guideSha256": "98527a7bae86411b310c1f3d00947c1f23474e4d98c91032d4354d6e74a38697",
+      "status": "omitted",
+      "reason": "修改器 Apply 與檢查前取消選取需依模式；未證鍵不硬加。"
+    },
+    {
+      "step": "04-06",
+      "guideIndex": 1,
+      "guideSha256": "08212fc0b6a06d9c080a3d4e28d62b8517953e23de48cc0c8db22eb3b0d810da",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "04-06",
+      "guideIndex": 2,
+      "guideSha256": "02774152f029366381e56207ec70bb4fab108a53ddaa692db2aa03fc8aa86f3b",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "04-07",
+      "guideIndex": 0,
+      "guideSha256": "369721cd101e9c9f17b050140cbbdeb2cc89842fa7bd7040a832a53c1561d1f1",
+      "status": "omitted",
+      "reason": "STL 匯出選項及來源登記需逐欄核對；本批沒有直接 STL 匯出快捷鍵證據。"
+    },
+    {
+      "step": "04-07",
+      "guideIndex": 1,
+      "guideSha256": "7ecf6915c9cc776eaa877f5696d3e08019b94665daab030c09095676b898c9b2",
+      "status": "omitted",
+      "reason": "STL 匯出選項及來源登記需逐欄核對；本批沒有直接 STL 匯出快捷鍵證據。"
+    },
+    {
+      "step": "04-07",
+      "guideIndex": 2,
+      "guideSha256": "e89abc22aa90818f9f0afd8610a86b52131f5eb42ab153076b85833bbc6c6375",
+      "status": "omitted",
+      "reason": "STL 匯出選項及來源登記需逐欄核對；本批沒有直接 STL 匯出快捷鍵證據。"
+    },
+    {
+      "step": "04-08",
+      "guideIndex": 0,
+      "guideSha256": "aaa79e1ca11612123f51716e17d744e06d81b2f09f4de866dfb10ca2d695981c",
+      "status": "omitted",
+      "reason": "列印、游標卡尺量測及紀錄沒有 Blender 等效鍵。"
+    },
+    {
+      "step": "04-08",
+      "guideIndex": 1,
+      "guideSha256": "4831c7d298c43259b34229592d6a1785964dcbd504a0e88e09a74ed0c36aae88",
+      "status": "omitted",
+      "reason": "列印、游標卡尺量測及紀錄沒有 Blender 等效鍵。"
+    },
+    {
+      "step": "04-08",
+      "guideIndex": 2,
+      "guideSha256": "465294b164459d38b70ba9f7410f6053ea5bf23d6c3b52af2c1747afaca10328",
+      "status": "omitted",
+      "reason": "列印、游標卡尺量測及紀錄沒有 Blender 等效鍵。"
+    },
+    {
+      "step": "05-01",
+      "guideIndex": 0,
+      "guideSha256": "cfce9267bb787ece28071266bd36d4b0e8903eb792bff5ff296d32bbf1d8e2fb",
+      "status": "omitted",
+      "reason": "名詞與空白量測表不是建模快捷操作。"
+    },
+    {
+      "step": "05-01",
+      "guideIndex": 1,
+      "guideSha256": "574c85eee0750ecae3d296ba80c43a7ad61bbafc148e397fe5319a17554a7346",
+      "status": "omitted",
+      "reason": "名詞與空白量測表不是建模快捷操作。"
+    },
+    {
+      "step": "05-02",
+      "guideIndex": 0,
+      "guideSha256": "56c56fd14fae9dd058a6cce488b1abdc079c69ecfb812a0dc11a37aaae562492",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "05-02",
+      "guideIndex": 1,
+      "guideSha256": "30ac5f95fd754a18813c3ece20ed603e232811eb137422a577018afbceb805f6",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "05-03",
+      "guideIndex": 0,
+      "guideSha256": "d97a1b75959d662ab79b3c3d4fe3ffcf92acaf9e6dfd15f401da34cf1283469b",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "05-03",
+      "guideIndex": 1,
+      "guideSha256": "c4e1c0466fcb782bf726604fd8a26cfd55795cc25b3c30e009150824f5f94402",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "05-03",
+      "guideIndex": 2,
+      "guideSha256": "148adde861571e6cf03d8151bc314284c15dd1f02e0fc2d6bfed30d6c1f823ce",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "05-04",
+      "guideIndex": 0,
+      "guideSha256": "29c652ad3f3799413f3a9ae62ff586b3eb199da7660a77b69e03ba77e39ae3bf",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "05-04",
+      "guideIndex": 1,
+      "guideSha256": "027f25f3a15f642c2626e17c5230a94144ac865cfbee4b8af425979927147dea",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "05-04",
+      "guideIndex": 2,
+      "guideSha256": "f99a514690cbdd37d0859de5c636285932b39c4eb4776ab479e894a15ba8c089",
+      "status": "omitted",
+      "reason": "列印、量測、試插維持未做；不能用數位按鍵替代。"
+    },
+    {
+      "step": "05-05",
+      "guideIndex": 0,
+      "guideSha256": "9702ec46f0026a32541b8f1ba237a827f89b0cee49c33bcaf66cb9e656813e52",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "05-05",
+      "guideIndex": 1,
+      "guideSha256": "1a018d6e4179ad2806443bd4368d940f41c887ea310c79a9803b5d5370558682",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "05-05",
+      "guideIndex": 2,
+      "guideSha256": "0699fe18e39f46ed0d9eb78f849e9241c9fafeb9c1e7badfdf77414fc2b5f22b",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "05-06",
+      "guideIndex": 0,
+      "guideSha256": "effd8e9397d6b814ba7e1ace66a74026bb4dc99e3f2f35625496f5cabe4c47fd",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "05-06",
+      "guideIndex": 1,
+      "guideSha256": "e80dd249fa65c1f8e906399a48317b493e891c5b80c17e2af30d46db671fe45a",
+      "status": "omitted",
+      "reason": "STL 匯出選項沒有這批已驗證直接鍵。"
+    },
+    {
+      "step": "05-06",
+      "guideIndex": 2,
+      "guideSha256": "ed4c48dbe2a027fd04c35f42c93629190884f118ccabfe7ac5078d989bf6c793",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "06-01",
+      "guideIndex": 0,
+      "guideSha256": "3b156125c55285c3aadbbb81054ef892f5b6f224d1447da4fe0f2fc5019a73ed",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "06-01",
+      "guideIndex": 1,
+      "guideSha256": "1bebc3f6b76f057fe8805fc440142ebf505320522ffc861b0a008c59fe01bf1c",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "06-01",
+      "guideIndex": 2,
+      "guideSha256": "fc85cdc6e2dcd3ee4d75e716a75afab28762bec9cf1c926e9ab17f2b794ae4d8",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "06-02",
+      "guideIndex": 0,
+      "guideSha256": "36c89b3481643fad741f30a6facd4a0ca3485d213f609b2ed316cd6fdbb35ca5",
+      "status": "omitted",
+      "reason": "既有 Edit Mode 複製、剖面縮放與 Boolean 需該模式證據；不把 Object Mode Shift+D 自動當成相同。"
+    },
+    {
+      "step": "06-02",
+      "guideIndex": 1,
+      "guideSha256": "29d0491a761a6d49ad701d35bba345ed513e9c266255338604cb3f277b2b8755",
+      "status": "omitted",
+      "reason": "既有 Edit Mode 複製、剖面縮放與 Boolean 需該模式證據；不把 Object Mode Shift+D 自動當成相同。"
+    },
+    {
+      "step": "06-02",
+      "guideIndex": 2,
+      "guideSha256": "f10d207cccbc3f91959337fa64d178fd186d9df8909e006c1bfe33625a8c9a29",
+      "status": "omitted",
+      "reason": "既有 Edit Mode 複製、剖面縮放與 Boolean 需該模式證據；不把 Object Mode Shift+D 自動當成相同。"
+    },
+    {
+      "step": "06-02",
+      "guideIndex": 3,
+      "guideSha256": "1ace791e701f252137c91da1b73c173cbec428e05cea2aa5fed5904ba665fdd9",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "06-03",
+      "guideIndex": 0,
+      "guideSha256": "f774ab95a3e55f02ac658bf8415b1d1c3205bdc0220502dc35e76771bbaae124",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "06-03",
+      "guideIndex": 1,
+      "guideSha256": "2acf5a4be16ce67b34470976a413c743919d549f8902d67cff4b91ad80211eac",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "06-03",
+      "guideIndex": 2,
+      "guideSha256": "86e6ed87e8c0be33cb9706912c76b54690d2dc41d7beb284d1465f61574a6720",
+      "status": "omitted",
+      "reason": "列印、實測及合格表維持空白，不加建模鍵。"
+    },
+    {
+      "step": "07-01",
+      "guideIndex": 0,
+      "guideSha256": "eaf8c1a41b9bcd3ddd0a26533e4ad0879c65797892f2ce3860e2c145402fa58e",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "07-01",
+      "guideIndex": 1,
+      "guideSha256": "6ec7f3e47e37749fee92840235cd237e9d0c2d426043465d98efa60b3f2ded1a",
+      "status": "omitted",
+      "reason": "材料／應變／參數定義沒有同等快捷鍵，保留待定。"
+    },
+    {
+      "step": "07-01",
+      "guideIndex": 2,
+      "guideSha256": "b710218c94bfa9967d92429620eca34060f30792d08b295812eb991e25bef277",
+      "status": "omitted",
+      "reason": "材料／應變／參數定義沒有同等快捷鍵，保留待定。"
+    },
+    {
+      "step": "07-02",
+      "guideIndex": 0,
+      "guideSha256": "5fb76f05018075fa8c9c8023617212ad13537adea87d1a5d6c8660c368c3b6ec",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "07-02",
+      "guideIndex": 1,
+      "guideSha256": "b1dccc1a7fec4c4f7be91f7b703040aca2c9cd97057f0b66a521663d4b02d64f",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "07-02",
+      "guideIndex": 2,
+      "guideSha256": "265077e44d79645ef2f6242d2685e62f666334d8315fd956d9107c3a07d67633",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "07-03",
+      "guideIndex": 0,
+      "guideSha256": "b2a86a1c150273e02f14f34923a2174b9545ed0ec19e5fb18f750d6128b19a4f",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "07-03",
+      "guideIndex": 1,
+      "guideSha256": "0fe7abcd9fe4756ba8c62165d89ce5f42ef10266d71af91920b8ac44062b9621",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "07-03",
+      "guideIndex": 2,
+      "guideSha256": "f8260c7e8c3ad8fb3a4a78b472a095a1c0701ab1d98f9bb175627d2d5a39b37e",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "07-04",
+      "guideIndex": 0,
+      "guideSha256": "9caf5df7a8e59a2f0a0b52a3f15d0cac69af5af1641cd01ce59f1b1b0436e6ab",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "07-04",
+      "guideIndex": 1,
+      "guideSha256": "7bbe62573dbc63148bef24b1061f3247acd7837f6e95d31b087d63b7ef5850c9",
+      "status": "omitted",
+      "reason": "STL Selection Only 等選項仍逐欄核對；不以鍵替代。"
+    },
+    {
+      "step": "07-04",
+      "guideIndex": 2,
+      "guideSha256": "c06c21432cf7a5d007f140b817b232ab77270250883bbb3210d28ff863f991f8",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "07-05",
+      "guideIndex": 0,
+      "guideSha256": "d30229a168ffcf07b4e7f50dbe69b2181a0bb1c227e0979d29d4c1bbe9146c9b",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "07-05",
+      "guideIndex": 1,
+      "guideSha256": "42cd81c72310e8be6265960057da205c9f384bc85b5451c11afe0e66246a35ae",
+      "status": "omitted",
+      "reason": "STL 選項及三件來源逐件核對，無已驗證的匯出直接鍵。"
+    },
+    {
+      "step": "07-05",
+      "guideIndex": 2,
+      "guideSha256": "3223cb24604b8c9655e18afb5b1d681c353456285bc255a59ca4c3f8dfd2f773",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "08-01",
+      "guideIndex": 0,
+      "guideSha256": "491672b6bd78ab4f708089ca784e6ff205c8f1dbbbfb33f521d26cb701723522",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "08-01",
+      "guideIndex": 1,
+      "guideSha256": "f956e2e0f1b1cd6ed1891c8bdaf280ffd357a7b5bef32e5d0920b9837b53554e",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "08-01",
+      "guideIndex": 2,
+      "guideSha256": "f6dc231055bc03870cb6c20f65e6ebfb3b7288c816212554db9cdfdcaf0fe202",
+      "status": "added",
+      "reason": "常規方法保留，下方提供具有原圖／讀值依據的選用快速方法。"
+    },
+    {
+      "step": "08-02",
+      "guideIndex": 0,
+      "guideSha256": "da3cf782d5ec77bc79502664f5dadd9c0cfb3786b1545885f2a4851014425147",
+      "status": "omitted",
+      "reason": "08-02 尚未建模或實拍；參數與規格待定，本次不補成完成教學。"
+    },
+    {
+      "step": "08-02",
+      "guideIndex": 1,
+      "guideSha256": "e1cb22c31cdff58d94f4917c92bef7cde02ab6a8826de86f294f0d56adcc8006",
+      "status": "omitted",
+      "reason": "08-02 尚未建模或實拍；參數與規格待定，本次不補成完成教學。"
+    },
+    {
+      "step": "08-03",
+      "guideIndex": 0,
+      "guideSha256": "d36898d37199bbee07db4d8d9f501263759800430374a70818639415c579d015",
+      "status": "omitted",
+      "reason": "未實作的螺紋後續保留原計畫，不借快捷補成已實測。"
+    },
+    {
+      "step": "08-03",
+      "guideIndex": 1,
+      "guideSha256": "5b90839de432c8bcd5b946deb6ddbbf1566f442b5c95219f05970dd02e2613e5",
+      "status": "omitted",
+      "reason": "未實作的螺紋後續保留原計畫，不借快捷補成已實測。"
+    },
+    {
+      "step": "08-04",
+      "guideIndex": 0,
+      "guideSha256": "d3eac2316b42b398f4f905bbac25c101c210c50071a7a70cbc0d249925e9007d",
+      "status": "omitted",
+      "reason": "硬體型號與孔徑須來源，尚未有螺絲柱實作，不加入假定建模流程。"
+    },
+    {
+      "step": "08-04",
+      "guideIndex": 1,
+      "guideSha256": "715daac7176479ea14b31e73d05857f43c19c7b9aed20c4de7b226573b12b3f0",
+      "status": "omitted",
+      "reason": "硬體型號與孔徑須來源，尚未有螺絲柱實作，不加入假定建模流程。"
+    },
+    {
+      "step": "08-05",
+      "guideIndex": 0,
+      "guideSha256": "d9b444161553d066685cc6a513b8400f622ac8f8873b060daef57f97dd6b6c7d",
+      "status": "omitted",
+      "reason": "列印試鎖未做，無 Blender 鍵可替代。"
+    },
+    {
+      "step": "08-05",
+      "guideIndex": 1,
+      "guideSha256": "c392d6b673344fb748b9525ec9d8600320014b9e1a2fb67e07807494988e9a23",
+      "status": "omitted",
+      "reason": "列印試鎖未做，無 Blender 鍵可替代。"
+    },
+    {
+      "step": "09-01",
+      "guideIndex": 0,
+      "guideSha256": "e035fbfad2c4e3b646520e6f2bd36596f019ec139dad61fe9cca3dd2faa7553a",
+      "status": "omitted",
+      "reason": "實測資料彙整沒有 Blender 等效快捷鍵。"
+    },
+    {
+      "step": "09-02",
+      "guideIndex": 0,
+      "guideSha256": "7525502495057b08b26879cfacf0c9a5dfc06112f371a1b28fb5cc5a5d78a572",
+      "status": "omitted",
+      "reason": "補償依據須實測，不由快捷鍵建立數值。"
+    },
+    {
+      "step": "09-03",
+      "guideIndex": 0,
+      "guideSha256": "668494d93b1f0ac75e08488af4dd9c33fcb6577915c522f4ee2f47d6a95264e2",
+      "status": "omitted",
+      "reason": "實體總組裝與來源檔關聯沒有 Blender 等效快捷鍵。"
+    },
+    {
+      "step": "09-03",
+      "guideIndex": 1,
+      "guideSha256": "f5525c5c57194b37790d45cfcda9dca62b9aa3d22ddc6802ad9187ac885c123f",
+      "status": "omitted",
+      "reason": "實體總組裝與來源檔關聯沒有 Blender 等效快捷鍵。"
+    }
+  ],
+  "supersedes": {
+    "path": "learning/annotations/guide-shortcuts-v001.json",
+    "sha256": "c48c1da9ad65b196f66057199d578fa63e2fbf9a93d564d575bc98f8ffeb18ee"
+  },
+  "contentReview": {
+    "scope": [
+      "全部75個shortcut範本與常規方法情境比對",
+      "04-06第2項取消選取文字修正",
+      "Object Mode的I／E／Ctrl+B事件、動畫／網格／邊框讀回及復原"
+    ],
+    "templateAudit": "learning/annotations/shortcut-template-audit-v002.json",
+    "nativeReview": "learning/annotations/shortcut-mode-errors-runtime-review-v001.json",
+    "learnerCompletionAssessed": false,
+    "physicalQualificationAssessed": false
+  },
+  "changeSet": [
+    {
+      "step": "04-06",
+      "guideIndex": 1,
+      "fields": {
+        "effect": {
+          "before": "在 Edit Mode 取消目前網格選取；本步若要點頂面，接著依常規方法只選頂面。",
+          "after": "在 Edit Mode、邊選取模式按 Alt+A，取消全部網格選取；確認沒有反白，再接下一項 Select Non Manifold 檢查。"
+        },
+        "requirements": {
+          "before": [
+            "滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。",
+            "Edit Mode；先確認是本步指定的網格。"
+          ],
+          "after": [
+            "滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。",
+            "Edit Mode、邊選取（主鍵盤上排 2；Emulate Numpad 關閉）；先確認是本步指定的網格。"
+          ]
+        }
+      }
+    },
+    {
+      "step": "05-05",
+      "guideIndex": 1,
+      "fields": {
+        "cautions": {
+          "before": [
+            "新 probe 在獨立 Cube 用 I 0.2 m／E 0.4 m 驗鍵與拓樸讀回，不是重新製作上蓋或卡扣；原工程毫米尺寸仍以既有示範為依據。",
+            "E 的正方向沿所選面法向，不能把所有面都當世界 +Z。Inset 厚度與擠出位移不同，並非物件絕對 Dimensions。"
+          ],
+          "after": [
+            "新 probe 在獨立 Cube 用 I 0.2 m／E 0.4 m 驗鍵與拓樸讀回，不是重新製作上蓋或卡扣；原工程毫米尺寸仍以既有示範為依據。",
+            "E 的正方向沿所選面法向，不能把所有面都當世界 +Z。Inset 厚度與擠出位移不同，並非物件絕對 Dimensions。",
+            "先確認左上是 Edit Mode。若仍在 Object Mode 按 I，本次出廠 Cube 實測會插入關鍵影格：Transform 欄變黃、時間軸出現菱形，並非 Inset。若剛誤按且尚未做其他操作，立即 Ctrl+Z，再核對欄位與時間軸回到誤按前；本次原本無動畫的 Cube 已實測復原。原本有動畫時需保留既有影格，不要整份刪除動畫。",
+            "本次出廠鍵位、3D Viewport、Object Mode 的 Cube 按 E，未找到對應啟用鍵位，實測網格、Transform、動畫及渲染範圍均未改變，也沒有擠出。沒反應時先核對模式再操作；沒有發生變更時不盲按 Undo。自訂鍵位或其他編輯區以實況為準。"
+          ]
+        },
+        "evidence": {
+          "before": [
+            {
+              "path": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/05-05-01-inset-i.png",
+              "sha256": "6a60595f468dc36fcd330970b5ccf6423f623473eb30c3da8ce898acea5893a8",
+              "method": "native_events_and_readback",
+              "label": "inset-i（新原生事件／實拍）"
+            },
+            {
+              "path": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/05-05-02-extrude-e-normal.png",
+              "sha256": "5feb53de8ee288dfd40362fb8bd7eedd3f00ffa709e6ad4ce2b446c3590c1c21",
+              "method": "native_events_and_readback",
+              "label": "extrude-e-normal（新原生事件／實拍）"
+            },
+            {
+              "path": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/mesh-shortcut-verification-v001.json",
+              "sha256": "15d96952bebc3f66a6abff3b578f1bf2698bf9062dd76652b329c55fa147c3da",
+              "method": "native_events_and_readback",
+              "label": "事件、預期與實際讀值；未判學員完成"
+            }
+          ],
+          "after": [
+            {
+              "path": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/05-05-01-inset-i.png",
+              "sha256": "6a60595f468dc36fcd330970b5ccf6423f623473eb30c3da8ce898acea5893a8",
+              "method": "native_events_and_readback",
+              "label": "inset-i（新原生事件／實拍）"
+            },
+            {
+              "path": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/05-05-02-extrude-e-normal.png",
+              "sha256": "5feb53de8ee288dfd40362fb8bd7eedd3f00ffa709e6ad4ce2b446c3590c1c21",
+              "method": "native_events_and_readback",
+              "label": "extrude-e-normal（新原生事件／實拍）"
+            },
+            {
+              "path": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/mesh-shortcut-verification-v001.json",
+              "sha256": "15d96952bebc3f66a6abff3b578f1bf2698bf9062dd76652b329c55fa147c3da",
+              "method": "native_events_and_readback",
+              "label": "事件、預期與實際讀值；未判學員完成"
+            },
+            {
+              "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v001/shortcut-mode-02-object-i-keyframe.png",
+              "sha256": "56af01b10b0fda46dbb23b2409728ccebf00c1e223d95cfd8ca315da77113411",
+              "method": "native_events_and_readback",
+              "label": "object-i-keyframe（Object Mode誤按實拍／讀值）"
+            },
+            {
+              "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v001/shortcut-mode-03-object-i-undo.png",
+              "sha256": "8f5a6f8c0dc03d6630a1e98b275abf84230a602a1c835cfe5a96f1fef03d19af",
+              "method": "native_events_and_readback",
+              "label": "object-i-undo（Object Mode誤按實拍／讀值）"
+            },
+            {
+              "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v001/shortcut-mode-04-object-e.png",
+              "sha256": "01bf238d99bcd2469a79916d7f8e3677f23c3d444a09ed8136b5d87a9d9f710d",
+              "method": "native_events_and_readback",
+              "label": "object-e（Object Mode誤按實拍／讀值）"
+            },
+            {
+              "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v001/shortcut-mode-errors-verification-v001.json",
+              "sha256": "ca54a8359e00c744a8e148d2776d6a75f26c1b62bf0fb6ff04fc1ba1e0f0b323",
+              "method": "native_events_and_readback",
+              "label": "誤按與復原：原生事件、前後狀態及原圖SHA（v001）"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "step": "07-02",
+      "guideIndex": 0,
+      "fields": {
+        "cautions": {
+          "before": [
+            "新 probe 在獨立 Cube 用 I 0.2 m／E 0.4 m 驗鍵與拓樸讀回，不是重新製作上蓋或卡扣；原工程毫米尺寸仍以既有示範為依據。",
+            "E 的正方向沿所選面法向，不能把所有面都當世界 +Z。Inset 厚度與擠出位移不同，並非物件絕對 Dimensions。"
+          ],
+          "after": [
+            "新 probe 在獨立 Cube 用 I 0.2 m／E 0.4 m 驗鍵與拓樸讀回，不是重新製作上蓋或卡扣；原工程毫米尺寸仍以既有示範為依據。",
+            "E 的正方向沿所選面法向，不能把所有面都當世界 +Z。Inset 厚度與擠出位移不同，並非物件絕對 Dimensions。",
+            "先確認左上是 Edit Mode。若仍在 Object Mode 按 I，本次出廠 Cube 實測會插入關鍵影格：Transform 欄變黃、時間軸出現菱形，並非 Inset。若剛誤按且尚未做其他操作，立即 Ctrl+Z，再核對欄位與時間軸回到誤按前；本次原本無動畫的 Cube 已實測復原。原本有動畫時需保留既有影格，不要整份刪除動畫。",
+            "本次出廠鍵位、3D Viewport、Object Mode 的 Cube 按 E，未找到對應啟用鍵位，實測網格、Transform、動畫及渲染範圍均未改變，也沒有擠出。沒反應時先核對模式再操作；沒有發生變更時不盲按 Undo。自訂鍵位或其他編輯區以實況為準。"
+          ]
+        },
+        "evidence": {
+          "before": [
+            {
+              "path": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/05-05-01-inset-i.png",
+              "sha256": "6a60595f468dc36fcd330970b5ccf6423f623473eb30c3da8ce898acea5893a8",
+              "method": "native_events_and_readback",
+              "label": "inset-i（新原生事件／實拍）"
+            },
+            {
+              "path": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/05-05-02-extrude-e-normal.png",
+              "sha256": "5feb53de8ee288dfd40362fb8bd7eedd3f00ffa709e6ad4ce2b446c3590c1c21",
+              "method": "native_events_and_readback",
+              "label": "extrude-e-normal（新原生事件／實拍）"
+            },
+            {
+              "path": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/mesh-shortcut-verification-v001.json",
+              "sha256": "15d96952bebc3f66a6abff3b578f1bf2698bf9062dd76652b329c55fa147c3da",
+              "method": "native_events_and_readback",
+              "label": "事件、預期與實際讀值；未判學員完成"
+            }
+          ],
+          "after": [
+            {
+              "path": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/05-05-01-inset-i.png",
+              "sha256": "6a60595f468dc36fcd330970b5ccf6423f623473eb30c3da8ce898acea5893a8",
+              "method": "native_events_and_readback",
+              "label": "inset-i（新原生事件／實拍）"
+            },
+            {
+              "path": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/05-05-02-extrude-e-normal.png",
+              "sha256": "5feb53de8ee288dfd40362fb8bd7eedd3f00ffa709e6ad4ce2b446c3590c1c21",
+              "method": "native_events_and_readback",
+              "label": "extrude-e-normal（新原生事件／實拍）"
+            },
+            {
+              "path": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/mesh-shortcut-verification-v001.json",
+              "sha256": "15d96952bebc3f66a6abff3b578f1bf2698bf9062dd76652b329c55fa147c3da",
+              "method": "native_events_and_readback",
+              "label": "事件、預期與實際讀值；未判學員完成"
+            },
+            {
+              "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v001/shortcut-mode-02-object-i-keyframe.png",
+              "sha256": "56af01b10b0fda46dbb23b2409728ccebf00c1e223d95cfd8ca315da77113411",
+              "method": "native_events_and_readback",
+              "label": "object-i-keyframe（Object Mode誤按實拍／讀值）"
+            },
+            {
+              "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v001/shortcut-mode-03-object-i-undo.png",
+              "sha256": "8f5a6f8c0dc03d6630a1e98b275abf84230a602a1c835cfe5a96f1fef03d19af",
+              "method": "native_events_and_readback",
+              "label": "object-i-undo（Object Mode誤按實拍／讀值）"
+            },
+            {
+              "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v001/shortcut-mode-04-object-e.png",
+              "sha256": "01bf238d99bcd2469a79916d7f8e3677f23c3d444a09ed8136b5d87a9d9f710d",
+              "method": "native_events_and_readback",
+              "label": "object-e（Object Mode誤按實拍／讀值）"
+            },
+            {
+              "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v001/shortcut-mode-errors-verification-v001.json",
+              "sha256": "ca54a8359e00c744a8e148d2776d6a75f26c1b62bf0fb6ff04fc1ba1e0f0b323",
+              "method": "native_events_and_readback",
+              "label": "誤按與復原：原生事件、前後狀態及原圖SHA（v001）"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "step": "07-02",
+      "guideIndex": 1,
+      "fields": {
+        "cautions": {
+          "before": [
+            "Ctrl+B 只做網格邊 Bevel，不等於新增 Bevel 修改器。這次新 Cube probe 用 0.1 m、預設段數驗鍵，沒有重新核卡扣 0.6 mm／3 段的工程結果；看原 operationRun。",
+            "倒角量是草案，不能由 Bevel 成功推定強度改善或合格。"
+          ],
+          "after": [
+            "在 Edit Mode，Ctrl+B 做網格邊 Bevel，不等於新增 Bevel 修改器。這次新 Cube probe 用 0.1 m、預設段數驗鍵，沒有重新核卡扣 0.6 mm／3 段的工程結果；看原 operationRun。",
+            "倒角量是草案，不能由 Bevel 成功推定強度改善或合格。",
+            "若仍在 Object Mode 按 Ctrl+B，會進入 Render Region（渲染範圍）框選，出現十字虛線，而非邊倒角。尚在框選時按 Esc 或滑鼠右鍵取消；本次一般透視與相機視圖均已實測，取消後保留原邊框設定。",
+            "若已完成框選，本次一般透視下 Ctrl+Z 未還原視圖渲染範圍；相機視圖下立即 Ctrl+Z 則恢復原場景邊框。兩種視圖都已實測可按 Ctrl+Alt+B 清除 Render Region，停用範圍並將邊界重設為 0～1。清除也會移除原有範圍，若本來有設定，需依誤按前紀錄核對還原，不能當作保留原設定的取消。"
+          ]
+        },
+        "evidence": {
+          "before": [
+            {
+              "path": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/07-02-01-main-two-edge-select.png",
+              "sha256": "ac018b5487d7f2a25875af350d09139a617f60fe7523f190037d5885b2bebb2a",
+              "method": "native_events_and_readback",
+              "label": "main-two-edge-select（新原生事件／實拍）"
+            },
+            {
+              "path": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/07-02-02-bevel-ctrl-b.png",
+              "sha256": "25e6e31d82bdbd997d1f22cbd3b6b17949d2a7920755bed048fceedbc8b985f9",
+              "method": "native_events_and_readback",
+              "label": "bevel-ctrl-b（新原生事件／實拍）"
+            },
+            {
+              "path": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/mesh-shortcut-verification-v001.json",
+              "sha256": "15d96952bebc3f66a6abff3b578f1bf2698bf9062dd76652b329c55fa147c3da",
+              "method": "native_events_and_readback",
+              "label": "事件、預期與實際讀值；未判學員完成"
+            }
+          ],
+          "after": [
+            {
+              "path": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/07-02-01-main-two-edge-select.png",
+              "sha256": "ac018b5487d7f2a25875af350d09139a617f60fe7523f190037d5885b2bebb2a",
+              "method": "native_events_and_readback",
+              "label": "main-two-edge-select（新原生事件／實拍）"
+            },
+            {
+              "path": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/07-02-02-bevel-ctrl-b.png",
+              "sha256": "25e6e31d82bdbd997d1f22cbd3b6b17949d2a7920755bed048fceedbc8b985f9",
+              "method": "native_events_and_readback",
+              "label": "bevel-ctrl-b（新原生事件／實拍）"
+            },
+            {
+              "path": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/mesh-shortcut-verification-v001.json",
+              "sha256": "15d96952bebc3f66a6abff3b578f1bf2698bf9062dd76652b329c55fa147c3da",
+              "method": "native_events_and_readback",
+              "label": "事件、預期與實際讀值；未判學員完成"
+            },
+            {
+              "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v001/shortcut-mode-05-perspective-border-invoke-esc.png",
+              "sha256": "c131fd1733a798b46137884d65c683921450fc9183800d2449d5bb626f5f61d8",
+              "method": "native_events_and_readback",
+              "label": "perspective-border-invoke-esc（Object Mode誤按實拍／讀值）"
+            },
+            {
+              "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v001/shortcut-mode-06-perspective-border-esc.png",
+              "sha256": "01bf238d99bcd2469a79916d7f8e3677f23c3d444a09ed8136b5d87a9d9f710d",
+              "method": "native_events_and_readback",
+              "label": "perspective-border-esc（Object Mode誤按實拍／讀值）"
+            },
+            {
+              "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v001/shortcut-mode-08-perspective-border-rmb.png",
+              "sha256": "7406ddda3b00caf341f3e268e5ab3bcd9f20263490fceae88e638a221bb9cbcc",
+              "method": "native_events_and_readback",
+              "label": "perspective-border-rmb（Object Mode誤按實拍／讀值）"
+            },
+            {
+              "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v001/shortcut-mode-12-camera-border-esc.png",
+              "sha256": "6ea85b59baa4836af544c055ed2d554a9a1d4f646d29926a910c141debd81cd0",
+              "method": "native_events_and_readback",
+              "label": "camera-border-esc（Object Mode誤按實拍／讀值）"
+            },
+            {
+              "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v001/shortcut-mode-13-camera-border-rmb.png",
+              "sha256": "fc29071557c1cd9c3efd44a8764fe63850ddc364aacc205d7bf1740bb450122d",
+              "method": "native_events_and_readback",
+              "label": "camera-border-rmb（Object Mode誤按實拍／讀值）"
+            },
+            {
+              "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v001/shortcut-mode-errors-verification-v001.json",
+              "sha256": "ca54a8359e00c744a8e148d2776d6a75f26c1b62bf0fb6ff04fc1ba1e0f0b323",
+              "method": "native_events_and_readback",
+              "label": "誤按與復原：原生事件、前後狀態及原圖SHA（v001）"
+            },
+            {
+              "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v002/shortcut-mode-09-perspective-border-complete.png",
+              "sha256": "4bf553f1431b3ed214e9545634a3b03e158b2708d18c690aef60ed9424d46c1d",
+              "method": "native_events_and_readback",
+              "label": "perspective-border-complete（Object Mode誤按實拍／讀值）"
+            },
+            {
+              "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v002/shortcut-mode-10-perspective-border-undo.png",
+              "sha256": "4bf553f1431b3ed214e9545634a3b03e158b2708d18c690aef60ed9424d46c1d",
+              "method": "native_events_and_readback",
+              "label": "perspective-border-undo（Object Mode誤按實拍／讀值）"
+            },
+            {
+              "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v002/shortcut-mode-12-perspective-border-clear.png",
+              "sha256": "17a75ff6ef862742616d7e3a0a490c7f8ce733b7e69ed3cfe358e05c3b1b70d7",
+              "method": "native_events_and_readback",
+              "label": "perspective-border-clear（Object Mode誤按實拍／讀值）"
+            },
+            {
+              "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v002/shortcut-mode-17-camera-border-complete.png",
+              "sha256": "a5f042dd00a05f7405a62a4d13b98a39e9b1ba158b41d8c8e2eb673d598a3d84",
+              "method": "native_events_and_readback",
+              "label": "camera-border-complete（Object Mode誤按實拍／讀值）"
+            },
+            {
+              "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v002/shortcut-mode-18-camera-border-undo.png",
+              "sha256": "fc29071557c1cd9c3efd44a8764fe63850ddc364aacc205d7bf1740bb450122d",
+              "method": "native_events_and_readback",
+              "label": "camera-border-undo（Object Mode誤按實拍／讀值）"
+            },
+            {
+              "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v002/shortcut-mode-19-camera-border-before-clear.png",
+              "sha256": "a5f042dd00a05f7405a62a4d13b98a39e9b1ba158b41d8c8e2eb673d598a3d84",
+              "method": "native_events_and_readback",
+              "label": "camera-border-before-clear（Object Mode誤按實拍／讀值）"
+            },
+            {
+              "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v002/shortcut-mode-20-camera-border-clear.png",
+              "sha256": "23d2b89ca24fbd59bb4929fbcdbc1aec6acff81a13dd656b7a4d2933607343cd",
+              "method": "native_events_and_readback",
+              "label": "camera-border-clear（Object Mode誤按實拍／讀值）"
+            },
+            {
+              "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v002/shortcut-mode-errors-verification-v001.json",
+              "sha256": "c8e0725651e1a55b6bdbf5743fb3f291035b08a9c9e1ec2aee691fec5009a7b7",
+              "method": "native_events_and_readback",
+              "label": "誤按與復原：原生事件、前後狀態及原圖SHA（v002）"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

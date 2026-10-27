@@ -12,10 +12,12 @@ import json
 import re
 from pathlib import Path
 
-DATE = "2026-10-26"
+# Each revision prepares a new manifest; reviewed prior manifests stay historical.
+DATE = "2026-10-27"
+RELEASE = "2026-10-27-shortcuts-v002"
 ROOT = Path(__file__).resolve().parents[1]
-MANIFEST = f"docs/publication-manifest-{DATE}.json"
-PATHSPEC = f"docs/publication-paths-{DATE}.txt"
+MANIFEST = f"docs/publication-manifest-{RELEASE}.json"
+PATHSPEC = f"docs/publication-paths-{RELEASE}.txt"
 DERIVATIVES = "learning/evidence/public-metadata"
 AUDIT = "learning/evidence/audits/2026-10-25-claude-continuation-v001"
 RECENT_KEYS = {"recentCleanup", "beforeLinks", "afterLinks"}
@@ -102,14 +104,14 @@ class Publication:
                 self.json_cache[rel] = None
         return self.json_cache[rel]
 
-    def local_only(self, rel: str) -> str | None:
+    def local_only(self, rel: str, inspect_json=True) -> str | None:
         p = Path(rel)
         parts = p.parts
         if any(part in {".git", "__pycache__", "node_modules", ".scratch"} for part in parts):
             return "local tooling/cache"
         if rel in {MANIFEST, PATHSPEC}:
             return None
-        if rel.startswith(("learning/.history/", "learning/workspaces/", "learning/archive/")):
+        if rel.startswith(("learning/.history/", "learning/workspaces/", "learning/archive/", "learning/.publication-private/")):
             return "private learner history/workspace or retired local archive"
         if rel in {"learning/progress.json", "learning/.progress.lock", "learning/runtime.json"}:
             return "private learner state or runtime"
@@ -123,7 +125,7 @@ class Publication:
         if (name.startswith("baseline-v") or "publication-baseline" in name
                 or name.startswith("progress-baseline-v") or name.startswith("recent-cleanup")):
             return "private publication/state baseline or Recent recovery inventory"
-        if p.suffix.lower() == ".json" and not rel.startswith(DERIVATIVES + "/"):
+        if inspect_json and p.suffix.lower() == ".json" and not rel.startswith(DERIVATIVES + "/"):
             value = self.json(rel)
             if value is not None:
                 if has_progress_state(value):
@@ -147,8 +149,8 @@ class Publication:
         # The path is stable across refreshes; original hashes prove which raw
         # input produced this clearly distinguished public derivative.
         identifier = hashlib.sha256(rel.encode("utf-8")).hexdigest()[:12]
-        target = f"{DERIVATIVES}/{Path(rel).stem}-{identifier}-public-v001.json"
-        stable_json(self.root / target, {
+        prefix = f"{DERIVATIVES}/{Path(rel).stem}-{identifier}-public-v"
+        candidate = {
             "schemaVersion": 1,
             "kind": "redacted_public_derivative",
             "redacted_public_derivative": True,
@@ -160,7 +162,21 @@ class Publication:
             "redactedKeys": sorted(removed),
             "redactionPolicy": "Recursively omit Windows Recent inventory keys recentCleanup, beforeLinks and afterLinks. Original stays unchanged locally. This derivative is not the original execution record.",
             "content": sanitized,
-        })
+        }
+        # Preserve the prior release's metadata bytes. A changed raw input or
+        # redaction policy needs a new version, not a replacement of public-v001.
+        version = 1
+        while True:
+            target = prefix + f"{version:03d}.json"
+            path = self.root / target
+            if not path.exists():
+                stable_json(path, candidate)
+                break
+            previous = read_json(path)
+            if ({k: v for k, v in previous.items() if k != "preparedOn"}
+                    == {k: v for k, v in candidate.items() if k != "preparedOn"}):
+                break
+            version += 1
         self.replacements[rel] = target
         return target
 
@@ -199,7 +215,10 @@ class Publication:
 
     def references(self, rel: str):
         path = self.root / rel
-        if path.suffix.lower() not in TEXT_EXTENSIONS or rel in {MANIFEST, PATHSPEC}:
+        # Historical manifests contain explicit omitted/private inventories. They
+        # are archived records, never dependency roots for the next candidate.
+        historical_inventory = rel.startswith(("docs/publication-manifest-", "docs/publication-paths-"))
+        if path.suffix.lower() not in TEXT_EXTENSIONS or rel in {MANIFEST, PATHSPEC} or historical_inventory:
             return set()
         text = path.read_text(encoding="utf-8-sig")
         results = set()
@@ -233,7 +252,7 @@ class Publication:
         for path in self.root.iterdir():
             if path.is_file():
                 self.add(path.name, "project root application/documentation")
-        for directory in ("scripts", "docs", "sources", ".github", "learning/tutor", "learning/tests", "learning/plans", "learning/drafts", "learning/web"):
+        for directory in ("scripts", "docs", "sources", ".github", "learning/tutor", "learning/tests", "learning/plans", "learning/drafts", "learning/web", "learning/annotations"):
             folder = self.root / directory
             if folder.exists():
                 for path in sorted(folder.rglob("*")):
@@ -268,6 +287,17 @@ class Publication:
                 seen.add(source)
                 for target in sorted(self.references(source)):
                     path = self.root / target
+                    # A historical reference to excluded scratch/private storage
+                    # need not be accessible. Apply path policy before stat/read.
+                    structural_reason = self.local_only(target, inspect_json=False)
+                    if structural_reason:
+                        self.omissions[target] = structural_reason
+                        self.unavailable[(source, target)] = structural_reason
+                        if target.endswith(".json") and self.published_record(target) and path.is_file():
+                            replacement = self.derivative(target)
+                            if replacement:
+                                self.add(replacement, "public derivative for referenced private metadata")
+                        continue
                     if path.is_dir():
                         continue
                     if not path.is_file():
@@ -310,14 +340,14 @@ class Publication:
                     "kind": "redacted_public_derivative" if rel.startswith(DERIVATIVES + "/") else "original_project_file",
                     "includedBecause": sorted(self.reasons.get(rel, []))} for rel in sorted(self.selected)]
         manifest = {
-            "schemaVersion": 1, "id": "curated-publication-" + DATE,
+            "schemaVersion": 1, "id": "curated-publication-" + RELEASE,
             "preparedOn": DATE, "timezone": "Asia/Taipei",
             "packageScope": "Curated teaching code, real screenshots, generated geometry and public audit evidence; deliberately not an exact mirror of private local execution history.",
             "localOriginalsPreserved": True,
             "progressPolicy": "Never publish learner progress/history/workspaces; fresh clones initialize their own state.",
             "sourceRightsPolicy": "Exclude third-party PDF/page/text audit caches; citations and access do not establish redistribution permission. No umbrella license grant is inferred.",
-            "localOnlyRules": ["learning/progress.json, learning/.history/**, learning/workspaces/**, learning/archive/** and runtime/lock data", "Any JSON containing recentCleanup/beforeLinks/afterLinks or an embedded progress state", "All raw runner-status.json; separately labelled privacy derivatives may be published", "baseline-v*.json, *publication-baseline*.json, progress-baseline-v*.json and Recent recovery inventories", "**/source-cache/**, third-party PDFs and their rendered pages/full-text extracts", "Unreferenced probe/failed runs, logs, backups, caches, environment and credential files"],
-            "historicalPathPolicy": "Original project paths and timestamps are historical capture provenance, not portable installation paths. Original image pixels and operationRun remain unchanged.",
+            "localOnlyRules": ["learning/progress.json, learning/.history/**, learning/workspaces/**, learning/archive/**, learning/.publication-private/** and runtime/lock data", "Any JSON containing recentCleanup/beforeLinks/afterLinks or an embedded progress state", "All raw runner-status.json; separately labelled privacy derivatives may be published", "baseline-v*.json, *publication-baseline*.json, progress-baseline-v*.json and Recent recovery inventories", "**/source-cache/**, third-party PDFs and their rendered pages/full-text extracts", "Unreferenced probe/failed runs, logs, backups, caches, environment and credential files"],
+            "historicalPathPolicy": "Original project paths and timestamps are historical capture provenance, not portable installation paths. Original image pixels and event action/observed/figure are retained; current catalog adds versioned semantic annotations without rewriting frozen runs or metadata.",
             "hashBoundary": {"hashedFiles": len(entries), "notSelfHashed": [MANIFEST, PATHSPEC], "reason": "Avoid circular manifest/pathspec hashes. Both generated metadata files are nevertheless listed in the Git pathspec."},
             "publishedRunDirectories": sorted(self.published_dirs),
             "files": entries,
@@ -325,7 +355,7 @@ class Publication:
             "localOnlyFiles": [{"path": key, "reason": value} for key, value in sorted(self.omissions.items())],
             "intentionalUnavailableReferences": [{"from": source, "target": target, "reason": reason, "publicDerivative": self.replacements.get(target)} for (source, target), reason in sorted(self.unavailable.items())],
             "historicalOrUnresolvedReferences": [{"from": source, "target": target} for source, target in sorted(self.missing)],
-            "validationLimits": ["No new full visual privacy review is claimed; see release-content review for two sampled images.", "Historical internal checks may cite local-only omitted files and hashes; their absence is intentional, not proof they were republished.", "This preparer does not stage, commit, push, delete, or change private original records."],
+            "validationLimits": ["This local review candidate does not constitute publication, reviewer approval or physical qualification.", "No new full visual privacy review is claimed; see release-content review for two sampled images.", "Historical internal checks may cite local-only omitted files and hashes; their absence is intentional, not proof they were republished.", "This preparer does not stage, commit, push, delete, or change private original records."],
         }
         stable_json(self.root / MANIFEST, manifest)
         paths = sorted(self.selected | {MANIFEST, PATHSPEC})

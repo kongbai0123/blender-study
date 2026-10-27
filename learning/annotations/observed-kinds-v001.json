@@ -1,0 +1,2974 @@
+{
+  "schemaVersion": 1,
+  "id": "observed-kinds-v001",
+  "entries": [
+    {
+      "runId": "2026-10-22-lesson02-demo-v001",
+      "step": "02-02",
+      "imagePath": "learning/evidence/02/2026-10-22-lesson02-demo-v001/02-02-01-add-mesh-plane.png",
+      "sha256": "9d5a76b54dcfee8dccdbeb14044b5fc656641bc2fd6276ffafb72f4627b9ba9f",
+      "observedSha256": "2cb64eb17d51ef4457fc4192bdb632ec44df36f5d4b4d35553a9b829031a7d25",
+      "observedKind": "scripted_description",
+      "reason": "觀察回呼的 return 為固定全文，沒有把前置檢查所取得的實際欄位值插入 observed。 來源為現行劇本；該舊run未保存scenario快照，無法由此證明執行當時程式碼一致，也不據此補造舊執行證據。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/tutor/scenarios/lesson02.py",
+        "sha256": "d7f92d68e4267c2510c84ed2f4a96c40833fabd9603052b77c6c53564dcf3c1c",
+        "line": 57
+      }
+    },
+    {
+      "runId": "2026-10-22-lesson02-demo-v001",
+      "step": "02-05",
+      "imagePath": "learning/evidence/02/2026-10-22-lesson02-demo-v001/02-05-04-length-list.png",
+      "sha256": "ea238de84132d14c0c6d96b2710fbd02c36454eb78566a560c673d60edf32509",
+      "observedSha256": "ae11929b659ddf1014049eecd51e085fec7a738eab4978ac6d8c5d3ca003b9ea",
+      "observedKind": "scripted_description",
+      "reason": "觀察回呼的 return 為固定全文，沒有把前置檢查所取得的實際欄位值插入 observed。 來源為現行劇本；該舊run未保存scenario快照，無法由此證明執行當時程式碼一致，也不據此補造舊執行證據。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/tutor/scenarios/lesson02.py",
+        "sha256": "d7f92d68e4267c2510c84ed2f4a96c40833fabd9603052b77c6c53564dcf3c1c",
+        "line": 183
+      }
+    },
+    {
+      "runId": "2026-10-22-lesson03-demo-v001",
+      "step": "03-05",
+      "imagePath": "learning/evidence/03/2026-10-22-lesson03-demo-v001/03-05-04-render-menu.png",
+      "sha256": "ed0ee355a415423f58a746500201feeb48604fdd1100f5ac99225b65bf992ac9",
+      "observedSha256": "9e80b019d0f69f9b2facf5e0221426a4a26134c1dd4967be992669bbc6cd05ba",
+      "observedKind": "scripted_description",
+      "reason": "觀察回呼的 return 為固定全文，沒有把前置檢查所取得的實際欄位值插入 observed。 來源為現行劇本；該舊run未保存scenario快照，無法由此證明執行當時程式碼一致，也不據此補造舊執行證據。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/tutor/scenarios/lesson03.py",
+        "sha256": "f480c0f779f17e26a8d43dd46b7343116260d0cbc54f5a9fe1cca6f0048f51ab",
+        "line": 238
+      }
+    },
+    {
+      "runId": "2026-10-22-lesson04-demo-v001",
+      "step": "04-04",
+      "imagePath": "learning/evidence/04/2026-10-22-lesson04-demo-v001/04-04-03-delete-menu.png",
+      "sha256": "f95ff212f0ff72fcac2d83808c70ec518f0ded0dd7130dc6c0fa5e2ee81a0435",
+      "observedSha256": "d1474a69cef27871a839ab8a8e2602bed5e6410016d26f6765ce234a40b032fa",
+      "observedKind": "scripted_description",
+      "reason": "觀察回呼的 return 為固定全文，沒有把前置檢查所取得的實際欄位值插入 observed。 來源為現行劇本；該舊run未保存scenario快照，無法由此證明執行當時程式碼一致，也不據此補造舊執行證據。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/tutor/scenarios/lesson04.py",
+        "sha256": "aaa6062fca2b8607dfbdf09471efa72ea9374f58cd62a7cf8aee7a4e716a5213",
+        "line": 149
+      }
+    },
+    {
+      "runId": "2026-10-22-lesson05-demo-v002",
+      "step": "05-02",
+      "imagePath": "learning/evidence/05/2026-10-22-lesson05-demo-v002/05-02-07-apply-menu.png",
+      "sha256": "2fe96ab91daf2d5cca911dfa7db51dee49c22ee2a1a02d4b70bf3c50e820b75b",
+      "observedSha256": "bd0a34e29e98b4d2b82268e3f0d7e9efeca247f9ca87b456d1f9f6f215438e9a",
+      "observedKind": "mixed",
+      "reason": "固定的「選單已展開」和 size() 的實際尺寸／Scale 串接；此 lambda 沒有讀取選單展開狀態。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/05/2026-10-22-lesson05-demo-v002/source-snapshot/lesson05.py",
+        "sha256": "ceaacdfee9b7b16ee3a64b82bdf2a88cd75c3af73ab9995070466b9da1f8e574",
+        "line": 100
+      }
+    },
+    {
+      "runId": "2026-10-22-lesson05-demo-v002",
+      "step": "05-02",
+      "imagePath": "learning/evidence/05/2026-10-22-lesson05-demo-v002/05-02-13-reopened-verified.png",
+      "sha256": "80a7a51e87961d9be3d03a796ca0017ef15b31d53f79a3af5367b2e96b292f44",
+      "observedSha256": "a1be02a06cfbcef1172f1bcd1556183241ab4d22fde17e54ba0b19c9149e1599",
+      "observedKind": "mixed",
+      "reason": "尺寸、非流形邊數及體積由變數插入，雜湊相同則以固定判語附加。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/05/2026-10-22-lesson05-demo-v002/source-snapshot/lesson05.py",
+        "sha256": "ceaacdfee9b7b16ee3a64b82bdf2a88cd75c3af73ab9995070466b9da1f8e574",
+        "line": 171
+      }
+    },
+    {
+      "runId": "2026-10-22-lesson05-holes-demo-v002",
+      "step": "05-03",
+      "imagePath": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-01-new-scene.png",
+      "sha256": "bbc3fc0d8153d6b40a2755c4777b15b314e113bfe2848df371d97cc05dff7cef",
+      "observedSha256": "2e1f6e74327f0ca0973edff323c077436e060b301a14cb5b09d794966571f131",
+      "observedKind": "scripted_description",
+      "reason": "觀察回呼的 return 為固定全文，沒有把前置檢查所取得的實際欄位值插入 observed。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/source-snapshot/lesson05_holes.py",
+        "sha256": "833af861ae00a6e1ea3aeb66877999a8b33ca4a37c3b89898ed1ebf7705566de",
+        "line": 79
+      }
+    },
+    {
+      "runId": "2026-10-22-lesson05-holes-demo-v002",
+      "step": "05-03",
+      "imagePath": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-04-cutter-1.png",
+      "sha256": "a3f91c05485ffeda73bf50b40067db2091cda96ca45f8b6fe2610cc0864e67ec",
+      "observedSha256": "436e6f172fdb6ce76d78ad7f4cc251c54830214081d8a8ce08b4aa0b06ab911b",
+      "observedKind": "mixed",
+      "reason": "measured() 尺寸讀值與固定的「只是切割幾何，最終孔壁另行量測」解說並列。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/source-snapshot/lesson05_holes.py",
+        "sha256": "833af861ae00a6e1ea3aeb66877999a8b33ca4a37c3b89898ed1ebf7705566de",
+        "line": 123
+      }
+    },
+    {
+      "runId": "2026-10-22-lesson05-holes-demo-v002",
+      "step": "05-03",
+      "imagePath": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-05-cutter-2.png",
+      "sha256": "b8710f95a8ed81ce359c41ada1be5d1f721904d373ccec99ec7c1f4b0993284e",
+      "observedSha256": "feba234d2602d39a95e8712c19f2ae486ce9e8a6df9f619bfc5ce7421fc5c663",
+      "observedKind": "mixed",
+      "reason": "measured() 尺寸讀值與固定的「只是切割幾何，最終孔壁另行量測」解說並列。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/source-snapshot/lesson05_holes.py",
+        "sha256": "833af861ae00a6e1ea3aeb66877999a8b33ca4a37c3b89898ed1ebf7705566de",
+        "line": 123
+      }
+    },
+    {
+      "runId": "2026-10-22-lesson05-holes-demo-v002",
+      "step": "05-03",
+      "imagePath": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-06-cutter-3.png",
+      "sha256": "687671a796a6883b8ef8c16b039e55cde22aea4235b732261125e70d4b0ae63a",
+      "observedSha256": "98ae0d3c45ace26834a1ade3be1e9835bd1a58deebc4576a6679a681e662115e",
+      "observedKind": "mixed",
+      "reason": "measured() 尺寸讀值與固定的「只是切割幾何，最終孔壁另行量測」解說並列。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/source-snapshot/lesson05_holes.py",
+        "sha256": "833af861ae00a6e1ea3aeb66877999a8b33ca4a37c3b89898ed1ebf7705566de",
+        "line": 123
+      }
+    },
+    {
+      "runId": "2026-10-22-lesson05-holes-demo-v002",
+      "step": "05-03",
+      "imagePath": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-07-cutter-4.png",
+      "sha256": "73ef90c9a4153ff85a9fd1efc7eac37e0c5bc8f6b6dc7e934cb4a481514692e3",
+      "observedSha256": "fe7b719db3e47624aa2099ce013658b9e2c2f45fd171943b11130e8d33dc396c",
+      "observedKind": "mixed",
+      "reason": "measured() 尺寸讀值與固定的「只是切割幾何，最終孔壁另行量測」解說並列。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/source-snapshot/lesson05_holes.py",
+        "sha256": "833af861ae00a6e1ea3aeb66877999a8b33ca4a37c3b89898ed1ebf7705566de",
+        "line": 123
+      }
+    },
+    {
+      "runId": "2026-10-22-lesson05-holes-demo-v002",
+      "step": "05-03",
+      "imagePath": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-08-cutter-5.png",
+      "sha256": "1e0a1322b2241759527b5aa5adc306f90b55284cce3cd30c5401da8d4f44aee5",
+      "observedSha256": "e9932bc1ca86310d0d301c49a436e68fe5a3665d4ba4a3b91922248fefc76e0a",
+      "observedKind": "mixed",
+      "reason": "measured() 尺寸讀值與固定的「只是切割幾何，最終孔壁另行量測」解說並列。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/source-snapshot/lesson05_holes.py",
+        "sha256": "833af861ae00a6e1ea3aeb66877999a8b33ca4a37c3b89898ed1ebf7705566de",
+        "line": 123
+      }
+    },
+    {
+      "runId": "2026-10-22-lesson05-holes-demo-v002",
+      "step": "05-03",
+      "imagePath": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-09-cutter-6.png",
+      "sha256": "11bd92615f3ffe1d521ea102aab809e4c55a52b7b8441d6a4810a4e97ca407ef",
+      "observedSha256": "4c797ac42b5f0f660f54fc58b3c1c7dcdc86b1bae02d21a1a763e866228272a3",
+      "observedKind": "mixed",
+      "reason": "measured() 尺寸讀值與固定的「只是切割幾何，最終孔壁另行量測」解說並列。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/source-snapshot/lesson05_holes.py",
+        "sha256": "833af861ae00a6e1ea3aeb66877999a8b33ca4a37c3b89898ed1ebf7705566de",
+        "line": 123
+      }
+    },
+    {
+      "runId": "2026-10-22-lesson05-holes-demo-v002",
+      "step": "05-03",
+      "imagePath": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-10-marker-base.png",
+      "sha256": "52f080793529e67f5a60886fbbd39e2c933a657a5facf4b840ddec00d9655a6d",
+      "observedSha256": "a12c1c2dbe91e58672c12d6ff4f1923f9c11506a8c00120af0a814a17c563339",
+      "observedKind": "mixed",
+      "reason": "measured()為實讀，板頂Z2／凹點名義底Z1.2為固定名義值文字。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/source-snapshot/lesson05_holes.py",
+        "sha256": "833af861ae00a6e1ea3aeb66877999a8b33ca4a37c3b89898ed1ebf7705566de",
+        "line": 146
+      }
+    },
+    {
+      "runId": "2026-10-22-lesson05-holes-demo-v002",
+      "step": "05-03",
+      "imagePath": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-11-markers-1.png",
+      "sha256": "52f080793529e67f5a60886fbbd39e2c933a657a5facf4b840ddec00d9655a6d",
+      "observedSha256": "58a9c68c4fdcec8b0d54ad6ff13c5a97aa9337e2ab6ac2fd625fb428b0ac028a",
+      "observedKind": "mixed",
+      "reason": "目前可見mesh數量及measured()為實讀；組別編號來自流程索引，「完成」為固定文字，此處沒有逐點驗每組凹點。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/source-snapshot/lesson05_holes.py",
+        "sha256": "833af861ae00a6e1ea3aeb66877999a8b33ca4a37c3b89898ed1ebf7705566de",
+        "line": 158
+      }
+    },
+    {
+      "runId": "2026-10-22-lesson05-holes-demo-v002",
+      "step": "05-03",
+      "imagePath": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-12-markers-2.png",
+      "sha256": "29569acafe436ee75f55ab9b561cd3503f39cab9c1769d46318a44db8fe3a9b9",
+      "observedSha256": "481e745b6a8236469af43d6d734dc77591af43b8eb5d640386edfadabf9442b0",
+      "observedKind": "mixed",
+      "reason": "目前可見mesh數量及measured()為實讀；組別編號來自流程索引，「完成」為固定文字，此處沒有逐點驗每組凹點。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/source-snapshot/lesson05_holes.py",
+        "sha256": "833af861ae00a6e1ea3aeb66877999a8b33ca4a37c3b89898ed1ebf7705566de",
+        "line": 158
+      }
+    },
+    {
+      "runId": "2026-10-22-lesson05-holes-demo-v002",
+      "step": "05-03",
+      "imagePath": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-13-markers-3.png",
+      "sha256": "4ca41d5baed9524e7dcfff4e0f0e435b01d39a0f39d3f0d608efec047048a04b",
+      "observedSha256": "6d8918d7a3b5911534e7c7199b3293d09c02b390c056444e087c77e00fdb2e08",
+      "observedKind": "mixed",
+      "reason": "目前可見mesh數量及measured()為實讀；組別編號來自流程索引，「完成」為固定文字，此處沒有逐點驗每組凹點。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/source-snapshot/lesson05_holes.py",
+        "sha256": "833af861ae00a6e1ea3aeb66877999a8b33ca4a37c3b89898ed1ebf7705566de",
+        "line": 158
+      }
+    },
+    {
+      "runId": "2026-10-22-lesson05-holes-demo-v002",
+      "step": "05-03",
+      "imagePath": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-14-markers-4.png",
+      "sha256": "bd862c6526db86ac99db6e7e5a3e6ef9d5cad43aeae365d079ab01a6839fe47a",
+      "observedSha256": "d8430da4127801015e18bb156d0d40570c0e77fd79a65e741102ae51c1d4d0da",
+      "observedKind": "mixed",
+      "reason": "目前可見mesh數量及measured()為實讀；組別編號來自流程索引，「完成」為固定文字，此處沒有逐點驗每組凹點。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/source-snapshot/lesson05_holes.py",
+        "sha256": "833af861ae00a6e1ea3aeb66877999a8b33ca4a37c3b89898ed1ebf7705566de",
+        "line": 158
+      }
+    },
+    {
+      "runId": "2026-10-22-lesson05-holes-demo-v002",
+      "step": "05-03",
+      "imagePath": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-15-markers-5.png",
+      "sha256": "5c502d69ba60b6c214074319ff210a45e463b2255b260eb2ceb7c28d8a033737",
+      "observedSha256": "e2a141b1bed1daa48c9868c38786dddc7202f291a647c9300ba5fdfe9e08189e",
+      "observedKind": "mixed",
+      "reason": "目前可見mesh數量及measured()為實讀；組別編號來自流程索引，「完成」為固定文字，此處沒有逐點驗每組凹點。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/source-snapshot/lesson05_holes.py",
+        "sha256": "833af861ae00a6e1ea3aeb66877999a8b33ca4a37c3b89898ed1ebf7705566de",
+        "line": 158
+      }
+    },
+    {
+      "runId": "2026-10-22-lesson05-holes-demo-v002",
+      "step": "05-03",
+      "imagePath": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-16-markers-6.png",
+      "sha256": "85076eaaa57cc61347279db3f920eb0ff3d89ba44a6dc302e23d1c4579aaf9cf",
+      "observedSha256": "9a7aa5550df9f85e78f487f549f9d637e2b5ce838c5d02347ed41b62999d132e",
+      "observedKind": "mixed",
+      "reason": "目前可見mesh數量及measured()為實讀；組別編號來自流程索引，「完成」為固定文字，此處沒有逐點驗每組凹點。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/source-snapshot/lesson05_holes.py",
+        "sha256": "833af861ae00a6e1ea3aeb66877999a8b33ca4a37c3b89898ed1ebf7705566de",
+        "line": 158
+      }
+    },
+    {
+      "runId": "2026-10-22-lesson05-holes-demo-v002",
+      "step": "05-03",
+      "imagePath": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-23-non-manifold.png",
+      "sha256": "254f77b796216bc85a3a9461642282b32a4c247ba9a0b9d6c0c31fd4ba99a2b0",
+      "observedSha256": "73b1eca8caa82c63d7ee0c37ea4a3553a7bffd434d1f5d04b49e7aa035de30b3",
+      "observedKind": "mixed",
+      "reason": "非流形邊數／所選邊數由變數插入，Edit Mode／邊選取為固定敘述。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/source-snapshot/lesson05_holes.py",
+        "sha256": "833af861ae00a6e1ea3aeb66877999a8b33ca4a37c3b89898ed1ebf7705566de",
+        "line": 240
+      }
+    },
+    {
+      "runId": "2026-10-22-lesson05-holes-demo-v002",
+      "step": "05-03",
+      "imagePath": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-28-reopened-verified.png",
+      "sha256": "c095e81a5bd43caf63f7784f6a31dca1223ccad7892a7c82113009cd59d64479",
+      "observedSha256": "aa0cc042bd6361c8eb0741c7238d652380ce076b8376457242f6e2954807b704",
+      "observedKind": "mixed",
+      "reason": "孔寬、通孔及凹點數由結果插值，hash一致與未列印／未試配為固定附加敘述。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/source-snapshot/lesson05_holes.py",
+        "sha256": "833af861ae00a6e1ea3aeb66877999a8b33ca4a37c3b89898ed1ebf7705566de",
+        "line": 297
+      }
+    },
+    {
+      "runId": "2026-10-22-lesson05-export-demo-v003",
+      "step": "05-04",
+      "imagePath": "learning/evidence/05/2026-10-22-lesson05-export-demo-v003/05-04-02-pin-source-checked.png",
+      "sha256": "266df56ccb79bb1820838a6ce259a8f71fecd37fed1759cf8217f7dbac5e4587",
+      "observedSha256": "67fbffe18ae159c8dd423ef297bd7c0ffb3e6b1e95d4277f4755cfffddf3e590",
+      "observedKind": "mixed",
+      "reason": "物件名稱、Dimensions及Scale動態插值，Non Manifold 0與來源／副本相同為固定文字。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/05/2026-10-22-lesson05-export-demo-v003/source-snapshot/lesson05_export.py",
+        "sha256": "0aadefaf66d234ea3f4827f529fce40b1cd7d6a7279f093ffaa47c72eeeb89a3",
+        "line": 145
+      }
+    },
+    {
+      "runId": "2026-10-22-lesson05-export-demo-v003",
+      "step": "05-04",
+      "imagePath": "learning/evidence/05/2026-10-22-lesson05-export-demo-v003/05-04-05-pin-export-options.png",
+      "sha256": "316c22ebed0ae2b4865c65f15d66dce8570e445e9530efaa3af09ac23f18d5c9",
+      "observedSha256": "b5fb20e5f0bdb7dc0a5d520162ba39e1f5f326315d19f3b0e58240914af116de",
+      "observedKind": "scripted_description",
+      "reason": "只插入計畫件名或計畫檔名，其餘為固定選項文字；不是將實際選項逐欄讀回後組成的字串。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/05/2026-10-22-lesson05-export-demo-v003/source-snapshot/lesson05_export.py",
+        "sha256": "0aadefaf66d234ea3f4827f529fce40b1cd7d6a7279f093ffaa47c72eeeb89a3",
+        "line": 179
+      }
+    },
+    {
+      "runId": "2026-10-22-lesson05-export-demo-v003",
+      "step": "05-04",
+      "imagePath": "learning/evidence/05/2026-10-22-lesson05-export-demo-v003/05-04-06-pin-stl-checked.png",
+      "sha256": "ab6c2ae598a26036bb38974629197f93fe188a8a9a60609aa3b43bc9e7fd47e2",
+      "observedSha256": "d4f0213ac0fbeb30588612cbfd41b816aa3dacb4dca7e46c5e0af6ce4e89735b",
+      "observedKind": "mixed",
+      "reason": "STL大小、面數、外框、genus與hash動態插值，Non Manifold 0與單殼為固定文字。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/05/2026-10-22-lesson05-export-demo-v003/source-snapshot/lesson05_export.py",
+        "sha256": "0aadefaf66d234ea3f4827f529fce40b1cd7d6a7279f093ffaa47c72eeeb89a3",
+        "line": 203
+      }
+    },
+    {
+      "runId": "2026-10-22-lesson05-export-demo-v003",
+      "step": "05-04",
+      "imagePath": "learning/evidence/05/2026-10-22-lesson05-export-demo-v003/05-04-08-hole_plate-source-checked.png",
+      "sha256": "f914646b62bac8048144171719d106dd16e16357a82946a4dbee22fe3d5a2f15",
+      "observedSha256": "1f84fe365fcab1ff84eacb9cd69ffa26c6c9c3eaf8d36bfe43c20f6e5a517ff4",
+      "observedKind": "mixed",
+      "reason": "物件名稱、Dimensions及Scale動態插值，Non Manifold 0與來源／副本相同為固定文字。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/05/2026-10-22-lesson05-export-demo-v003/source-snapshot/lesson05_export.py",
+        "sha256": "0aadefaf66d234ea3f4827f529fce40b1cd7d6a7279f093ffaa47c72eeeb89a3",
+        "line": 145
+      }
+    },
+    {
+      "runId": "2026-10-22-lesson05-export-demo-v003",
+      "step": "05-04",
+      "imagePath": "learning/evidence/05/2026-10-22-lesson05-export-demo-v003/05-04-11-hole_plate-export-options.png",
+      "sha256": "6d259aaad42e4b4fb7eba90e0bcc2966a186e7e9922eaf511a68d453c106fef7",
+      "observedSha256": "122a34b0712a6ee6b7f749683516c3383b0a6582ad7e3b03af8650be03bf7a15",
+      "observedKind": "scripted_description",
+      "reason": "只插入計畫件名或計畫檔名，其餘為固定選項文字；不是將實際選項逐欄讀回後組成的字串。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/05/2026-10-22-lesson05-export-demo-v003/source-snapshot/lesson05_export.py",
+        "sha256": "0aadefaf66d234ea3f4827f529fce40b1cd7d6a7279f093ffaa47c72eeeb89a3",
+        "line": 179
+      }
+    },
+    {
+      "runId": "2026-10-22-lesson05-export-demo-v003",
+      "step": "05-04",
+      "imagePath": "learning/evidence/05/2026-10-22-lesson05-export-demo-v003/05-04-12-hole_plate-stl-checked.png",
+      "sha256": "0f02d0924db0fe28e4230b27478820b768bb49874f7a35ba4f4c8bb00c3b9583",
+      "observedSha256": "efb9ff52e240ac2a329f0a02b06c96644af00ee63e4ea0c44f7f6af06bbc1323",
+      "observedKind": "mixed",
+      "reason": "STL大小、面數、外框、genus與hash動態插值，Non Manifold 0與單殼為固定文字。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/05/2026-10-22-lesson05-export-demo-v003/source-snapshot/lesson05_export.py",
+        "sha256": "0aadefaf66d234ea3f4827f529fce40b1cd7d6a7279f093ffaa47c72eeeb89a3",
+        "line": 203
+      }
+    },
+    {
+      "runId": "2026-10-22-lesson05-export-demo-v003",
+      "step": "05-04",
+      "imagePath": "learning/evidence/05/2026-10-22-lesson05-export-demo-v003/05-04-14-pin-import-dialog.png",
+      "sha256": "474dad1b2a8c4388e65630003d49ad765ae3fc79c751cd3a8fa23809b5539003",
+      "observedSha256": "00aa69a7d45fc57c787f5c764d6f8aec89968438ccc53be6713e98eecada4465",
+      "observedKind": "mixed",
+      "reason": "瀏覽器檔名為實讀，Scale／Scene Unit／軸向為固定選項文字。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/05/2026-10-22-lesson05-export-demo-v003/source-snapshot/lesson05_export.py",
+        "sha256": "0aadefaf66d234ea3f4827f529fce40b1cd7d6a7279f093ffaa47c72eeeb89a3",
+        "line": 234
+      }
+    },
+    {
+      "runId": "2026-10-22-lesson05-export-demo-v003",
+      "step": "05-04",
+      "imagePath": "learning/evidence/05/2026-10-22-lesson05-export-demo-v003/05-04-15-pin-reimported.png",
+      "sha256": "500102cce1362e4b7d1245888a1f7c268fe9952b2e34aadb614d13e2dab53cd7",
+      "observedSha256": "a2c6b5b48375367b841b6fb416d2f23893f3c1b0890869a4b7d756fa3aac238a",
+      "observedKind": "mixed",
+      "reason": "重新匯入物件名稱與Dimensions動態插值，非流形零及來源一致為固定判語。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/05/2026-10-22-lesson05-export-demo-v003/source-snapshot/lesson05_export.py",
+        "sha256": "0aadefaf66d234ea3f4827f529fce40b1cd7d6a7279f093ffaa47c72eeeb89a3",
+        "line": 261
+      }
+    },
+    {
+      "runId": "2026-10-22-lesson05-export-demo-v003",
+      "step": "05-04",
+      "imagePath": "learning/evidence/05/2026-10-22-lesson05-export-demo-v003/05-04-16-hole_plate-import-dialog.png",
+      "sha256": "36df2ac2afed4c447e8054698b966677f622ce1662e22e803140be2e559797b1",
+      "observedSha256": "0b11a8343829969c0dff69b8789a6503b44d07823a88cb3b9bc0369470ed9e0e",
+      "observedKind": "mixed",
+      "reason": "瀏覽器檔名為實讀，Scale／Scene Unit／軸向為固定選項文字。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/05/2026-10-22-lesson05-export-demo-v003/source-snapshot/lesson05_export.py",
+        "sha256": "0aadefaf66d234ea3f4827f529fce40b1cd7d6a7279f093ffaa47c72eeeb89a3",
+        "line": 234
+      }
+    },
+    {
+      "runId": "2026-10-22-lesson05-export-demo-v003",
+      "step": "05-04",
+      "imagePath": "learning/evidence/05/2026-10-22-lesson05-export-demo-v003/05-04-17-hole_plate-reimported.png",
+      "sha256": "6e0a57531b4341284eaae57cee320aa6698313f10de4e8df094359607c20a7fc",
+      "observedSha256": "ad431bed0fedadb34289f25219e0d0bf3da883cd9f2d942495afeaf1680ba88f",
+      "observedKind": "mixed",
+      "reason": "重新匯入物件名稱與Dimensions動態插值，非流形零及來源一致為固定判語。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/05/2026-10-22-lesson05-export-demo-v003/source-snapshot/lesson05_export.py",
+        "sha256": "0aadefaf66d234ea3f4827f529fce40b1cd7d6a7279f093ffaa47c72eeeb89a3",
+        "line": 261
+      }
+    },
+    {
+      "runId": "2026-10-22-lesson05-export-demo-v003",
+      "step": "05-04",
+      "imagePath": "learning/evidence/05/2026-10-22-lesson05-export-demo-v003/05-04-18-exports-verified.png",
+      "sha256": "6e0a57531b4341284eaae57cee320aa6698313f10de4e8df094359607c20a7fc",
+      "observedSha256": "a63ebb07611f362ef2919d357cc7307395493663a4ddf3fc5160036377667e26",
+      "observedKind": "scripted_description",
+      "reason": "觀察回呼的 return 為固定全文，沒有把前置檢查所取得的實際欄位值插入 observed。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/05/2026-10-22-lesson05-export-demo-v003/source-snapshot/lesson05_export.py",
+        "sha256": "0aadefaf66d234ea3f4827f529fce40b1cd7d6a7279f093ffaa47c72eeeb89a3",
+        "line": 278
+      }
+    },
+    {
+      "runId": "2026-10-22-lesson05-lid-demo-v001",
+      "step": "05-05",
+      "imagePath": "learning/evidence/05/2026-10-22-lesson05-lid-demo-v001/05-05-03-plate.png",
+      "sha256": "dd45e229322354b15550532c8419a7f227771dadf3648d0ab7cd0eb9977bbfe4",
+      "observedSha256": "37ebc82118a5a8da1c304999ca68e9b4f7c52e94974a2332a2a710ab6467ea8c",
+      "observedKind": "mixed",
+      "reason": "Lid尺寸實讀與固定板底Z15／板頂Z17及Body暫隱藏敘述並列。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/05/2026-10-22-lesson05-lid-demo-v001/source-snapshot/lesson05_lid.py",
+        "sha256": "47234540a81a4dda7f53c7aa210e9ccc59a1d36ee34981bd84e491b44e4ef799",
+        "line": 166
+      }
+    },
+    {
+      "runId": "2026-10-22-lesson05-lid-demo-v001",
+      "step": "05-05",
+      "imagePath": "learning/evidence/05/2026-10-22-lesson05-lid-demo-v001/05-05-10-non-manifold.png",
+      "sha256": "0d53d105324470377605bcafff0eadd6f2eaa167449f42893b78bcf7d3dd13bb",
+      "observedSha256": "8f0c6c78748aceea22670c9c463e08b866008f4e71a1ea5e7057cc231d504a75",
+      "observedKind": "scripted_description",
+      "reason": "觀察回呼的 return 為固定全文，沒有把前置檢查所取得的實際欄位值插入 observed。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/05/2026-10-22-lesson05-lid-demo-v001/source-snapshot/lesson05_lid.py",
+        "sha256": "47234540a81a4dda7f53c7aa210e9ccc59a1d36ee34981bd84e491b44e4ef799",
+        "line": 219
+      }
+    },
+    {
+      "runId": "2026-10-22-lesson05-lid-demo-v001",
+      "step": "05-05",
+      "imagePath": "learning/evidence/05/2026-10-22-lesson05-lid-demo-v001/05-05-11-separated-view.png",
+      "sha256": "bc12d5f81fd5424cef7dd64c295941c8a31de430a45818782e249f8b1d2fec64",
+      "observedSha256": "2526c1be7f6f11a72a692fd74690121642dd4e27c17f329162e22bb2286eead0",
+      "observedKind": "mixed",
+      "reason": "尺寸為實讀，暫時分離／不是實體試配或下一步移回為固定解說。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/05/2026-10-22-lesson05-lid-demo-v001/source-snapshot/lesson05_lid.py",
+        "sha256": "47234540a81a4dda7f53c7aa210e9ccc59a1d36ee34981bd84e491b44e4ef799",
+        "line": 232
+      }
+    },
+    {
+      "runId": "2026-10-22-lesson05-lid-demo-v001",
+      "step": "05-05",
+      "imagePath": "learning/evidence/05/2026-10-22-lesson05-lid-demo-v001/05-05-12-assembly-geometry.png",
+      "sha256": "4f78e74781b109429121a871f06bcfba472321716c018e1a28ffa125e172a1d8",
+      "observedSha256": "a2e5bd764e700ee509eb2148d276f3896363e862dc9f966234b52b429d2cd269",
+      "observedKind": "mixed",
+      "reason": "四側／總間隙及嵌入深度由結果插值，已回名義位置／僅CAD預覽為固定敘述。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/05/2026-10-22-lesson05-lid-demo-v001/source-snapshot/lesson05_lid.py",
+        "sha256": "47234540a81a4dda7f53c7aa210e9ccc59a1d36ee34981bd84e491b44e4ef799",
+        "line": 243
+      }
+    },
+    {
+      "runId": "2026-10-22-lesson05-lid-demo-v001",
+      "step": "05-05",
+      "imagePath": "learning/evidence/05/2026-10-22-lesson05-lid-demo-v001/05-05-14-saved.png",
+      "sha256": "89d0a195cd591adf034f0756b16805101ee4fec1dd3d55b0b1b4a12e41df607a",
+      "observedSha256": "10d085300c498fedaf5b9c1f96b2449f5d629629b22db2356014f5038df2ffc2",
+      "observedKind": "mixed",
+      "reason": "檔名、大小或hash為動態結果，來源／副本／舊版本未改為固定附加敘述。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/05/2026-10-22-lesson05-lid-demo-v001/source-snapshot/lesson05_lid.py",
+        "sha256": "47234540a81a4dda7f53c7aa210e9ccc59a1d36ee34981bd84e491b44e4ef799",
+        "line": 267
+      }
+    },
+    {
+      "runId": "2026-10-22-lesson05-lid-demo-v001",
+      "step": "05-05",
+      "imagePath": "learning/evidence/05/2026-10-22-lesson05-lid-demo-v001/05-05-16-reopened-verified.png",
+      "sha256": "5dd4f07399cc16e3f2487093f2db9c6e507c771b2c9f9c7910589b465bebed0f",
+      "observedSha256": "00d8abcaf747bb206d00fde6d20928fd29db642bfd2604ebfd56897393fb39bc",
+      "observedKind": "scripted_description",
+      "reason": "觀察回呼的 return 為固定全文，沒有把前置檢查所取得的實際欄位值插入 observed。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/05/2026-10-22-lesson05-lid-demo-v001/source-snapshot/lesson05_lid.py",
+        "sha256": "47234540a81a4dda7f53c7aa210e9ccc59a1d36ee34981bd84e491b44e4ef799",
+        "line": 289
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson05-lid-export-demo-v001",
+      "step": "05-06",
+      "imagePath": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/05-06-02-lid-selected.png",
+      "sha256": "209c403efbec2304e93ec626b3ec0a9ff37f9a4ef080cfcaa78e11605bda2092",
+      "observedSha256": "77365a4058a595d803031369b4dfb80e7f358ad1b00ad240320e7cc6a2460d36",
+      "observedKind": "mixed",
+      "reason": "Lid幾何讀值與固定來源hash一致／Body隱藏但未改幾何文字並列。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/source-snapshot/lesson05_lid_export.py",
+        "sha256": "abd9673547f617b25cc836389fbd770156beded019746c32d25b77843a8aed39",
+        "line": 109
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson05-lid-export-demo-v001",
+      "step": "05-06",
+      "imagePath": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/05-06-05-export-options.png",
+      "sha256": "2ba670fbc9592b460fb36d1ca2b9f66d41ff4468bfed130802b076b93ba63c8e",
+      "observedSha256": "8c842a3f2707519194a3956e1aa4855d2d55fa9fb0814ee43e17f28db2aaf64f",
+      "observedKind": "scripted_description",
+      "reason": "觀察回呼的 return 為固定全文，沒有把前置檢查所取得的實際欄位值插入 observed。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/source-snapshot/lesson05_lid_export.py",
+        "sha256": "abd9673547f617b25cc836389fbd770156beded019746c32d25b77843a8aed39",
+        "line": 144
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson05-lid-export-demo-v001",
+      "step": "05-06",
+      "imagePath": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/05-06-06-stl-checked.png",
+      "sha256": "6a1fc291fed85dc0c59e4efd82367235e20cd38f534d11d1359ff2f40cb64596",
+      "observedSha256": "5a036735b847f8ac9a28baf59e6165f7254a4d7ed9dfaf07813e543afde23385",
+      "observedKind": "mixed",
+      "reason": "STL檔案資訊及外框動態插值，板厚2／唇深4／單殼／非流形零為固定文字。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/source-snapshot/lesson05_lid_export.py",
+        "sha256": "abd9673547f617b25cc836389fbd770156beded019746c32d25b77843a8aed39",
+        "line": 159
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson05-lid-export-demo-v001",
+      "step": "05-06",
+      "imagePath": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/05-06-08-import-dialog.png",
+      "sha256": "449c2a87c98e26c5b91dcdddee7d558287a42bde44a4b6fdcb1ce77032d73c77",
+      "observedSha256": "57b4e05abadc0c400304b81797cb27c33f12bb5d79764acaf58b282407c215bd",
+      "observedKind": "mixed",
+      "reason": "瀏覽器檔名為實讀，Scale／Scene Unit／軸向為固定選項文字。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/source-snapshot/lesson05_lid_export.py",
+        "sha256": "abd9673547f617b25cc836389fbd770156beded019746c32d25b77843a8aed39",
+        "line": 190
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson05-lid-export-demo-v001",
+      "step": "05-06",
+      "imagePath": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/05-06-09-reimport-dimensions.png",
+      "sha256": "ff7b6d72058f2e973be1cc6fa3d462e6f2fdbd3a64585f1116d13cb5c8ba8a84",
+      "observedSha256": "88b9a7180de3dc362a63734e4d8f0c17c52cd621ff27f62230a8b4b2d8430f24",
+      "observedKind": "mixed",
+      "reason": "匯入名稱、Dimensions與厚度讀值，搭配固定Scale1／非流形零／來源一致敘述。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/source-snapshot/lesson05_lid_export.py",
+        "sha256": "abd9673547f617b25cc836389fbd770156beded019746c32d25b77843a8aed39",
+        "line": 210
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson05-lid-export-demo-v001",
+      "step": "05-06",
+      "imagePath": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/05-06-10-reimport-underside.png",
+      "sha256": "c31773df47bd9714268cf1a9715c419d09c163e8f1a903091bb8251f953e48d8",
+      "observedSha256": "88b9a7180de3dc362a63734e4d8f0c17c52cd621ff27f62230a8b4b2d8430f24",
+      "observedKind": "mixed",
+      "reason": "匯入名稱、Dimensions與厚度讀值，搭配固定Scale1／非流形零／來源一致敘述。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/source-snapshot/lesson05_lid_export.py",
+        "sha256": "abd9673547f617b25cc836389fbd770156beded019746c32d25b77843a8aed39",
+        "line": 210
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson05-lid-export-demo-v001",
+      "step": "05-06",
+      "imagePath": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/05-06-11-non-manifold.png",
+      "sha256": "af4a7e9ad7339da7e7c301f32d80e21004f3162cd03bcff73a8807584ac1214d",
+      "observedSha256": "822c772f6e5049edbabb768c1afcece47377fb96b111c5dd0fc3f2b026156948",
+      "observedKind": "scripted_description",
+      "reason": "觀察回呼的 return 為固定全文，沒有把前置檢查所取得的實際欄位值插入 observed。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/source-snapshot/lesson05_lid_export.py",
+        "sha256": "abd9673547f617b25cc836389fbd770156beded019746c32d25b77843a8aed39",
+        "line": 231
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson05-lid-export-demo-v001",
+      "step": "05-06",
+      "imagePath": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/05-06-12-verified.png",
+      "sha256": "c31773df47bd9714268cf1a9715c419d09c163e8f1a903091bb8251f953e48d8",
+      "observedSha256": "9560f76c1ded906716e5562b80c56cbd2627c0f1e3cc35085ed1f30afda3bde9",
+      "observedKind": "scripted_description",
+      "reason": "觀察回呼的 return 為固定全文，沒有把前置檢查所取得的實際欄位值插入 observed。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/source-snapshot/lesson05_lid_export.py",
+        "sha256": "abd9673547f617b25cc836389fbd770156beded019746c32d25b77843a8aed39",
+        "line": 255
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson06-tenon-demo-v006",
+      "step": "06-01",
+      "imagePath": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-02-source-geometry.png",
+      "sha256": "72c84c2c8c9169f69e2095eba51abe81efb608686ef02aac1d1a8be104ca42f0",
+      "observedSha256": "a95167bd715a3947f3a76159a484007fce8b46723f75d6cd0f7925033901a1fe",
+      "observedKind": "scripted_description",
+      "reason": "觀察回呼的 return 為固定全文，沒有把前置檢查所取得的實際欄位值插入 observed。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/source-snapshot/lesson06_tenon.py",
+        "sha256": "dff30f0f29b77cba69059edc642a19aeb10545991c6c49e01c957450c213c290",
+        "line": 221
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson06-tenon-demo-v006",
+      "step": "06-01",
+      "imagePath": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-03-pin-tool.png",
+      "sha256": "489aacf7e93ea671b4f96b71d4882f13ffb978a4eebdcba42c4d7fa62b827093",
+      "observedSha256": "ce2c7a9894e9e8708ebdf421981a65f0b0ec5a44eb44c8497bb611ff3300a114",
+      "observedKind": "mixed",
+      "reason": "TenonTool尺寸實讀與固定32段、建構底頂／交入量及合併解說並列。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/source-snapshot/lesson06_tenon.py",
+        "sha256": "dff30f0f29b77cba69059edc642a19aeb10545991c6c49e01c957450c213c290",
+        "line": 239
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson06-tenon-demo-v006",
+      "step": "06-01",
+      "imagePath": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-06-union-applied.png",
+      "sha256": "cb3cf4356056079dc33059d598cd84463c6137093c25cec14ffa3ef8add298dc",
+      "observedSha256": "ff6d9a621f6f4baff0a4fef0c2f999a24efd8a592f00a751c1a899aa79c41869",
+      "observedKind": "scripted_description",
+      "reason": "觀察回呼的 return 為固定全文，沒有把前置檢查所取得的實際欄位值插入 observed。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/source-snapshot/lesson06_tenon.py",
+        "sha256": "dff30f0f29b77cba69059edc642a19aeb10545991c6c49e01c957450c213c290",
+        "line": 173
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson06-tenon-demo-v006",
+      "step": "06-01",
+      "imagePath": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-07-body-non-manifold.png",
+      "sha256": "43772664e87cf91bd047764c7a1738dc27ff9f4e1e4c82b5891589db2b358222",
+      "observedSha256": "9cfee3c0b8f6d09809466b811a554edef54815832ff262d990a693ba5697e4fd",
+      "observedKind": "scripted_description",
+      "reason": "只插入角色名稱，Non Manifold 0／所選0邊等為固定敘述；前面的檢查結果沒有直接序列化到此字串。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/source-snapshot/lesson06_tenon.py",
+        "sha256": "dff30f0f29b77cba69059edc642a19aeb10545991c6c49e01c957450c213c290",
+        "line": 164
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson06-tenon-demo-v006",
+      "step": "06-01",
+      "imagePath": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-08-hole-tool.png",
+      "sha256": "6c3b1240f351df44b8c6545559405e4d3f9a5e7786c2bdf33b99113368b3f570",
+      "observedSha256": "d66cd643b0b121e59c17ef16dcfe867fd74a803c5a7421d2cad720ca11b36356",
+      "observedKind": "mixed",
+      "reason": "HoleTool尺寸實讀與固定32段／Z範圍及最終穿孔另驗解說並列。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/source-snapshot/lesson06_tenon.py",
+        "sha256": "dff30f0f29b77cba69059edc642a19aeb10545991c6c49e01c957450c213c290",
+        "line": 275
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson06-tenon-demo-v006",
+      "step": "06-01",
+      "imagePath": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-12-hole-applied.png",
+      "sha256": "2183fd50002e03ffa24f26eee08389f970c3a0eabace8ac2f05cfede00c46c8b",
+      "observedSha256": "3ac840acae7d1b221f44b17f129c327cf18b8acd82cc26811ecc28639b390058",
+      "observedKind": "scripted_description",
+      "reason": "觀察回呼的 return 為固定全文，沒有把前置檢查所取得的實際欄位值插入 observed。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/source-snapshot/lesson06_tenon.py",
+        "sha256": "dff30f0f29b77cba69059edc642a19aeb10545991c6c49e01c957450c213c290",
+        "line": 180
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson06-tenon-demo-v006",
+      "step": "06-01",
+      "imagePath": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-13-lid-non-manifold.png",
+      "sha256": "d34c0880aa1f1ec9ca6e91c969e460a249f8ebe416d590b84c33aa320c084dc7",
+      "observedSha256": "5177eb15a5b3adc01fd8bdeaf2dc1abe30a7f16621f6e9d4fe6c9483bc7107ac",
+      "observedKind": "scripted_description",
+      "reason": "只插入角色名稱，Non Manifold 0／所選0邊等為固定敘述；前面的檢查結果沒有直接序列化到此字串。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/source-snapshot/lesson06_tenon.py",
+        "sha256": "dff30f0f29b77cba69059edc642a19aeb10545991c6c49e01c957450c213c290",
+        "line": 164
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson06-tenon-demo-v006",
+      "step": "06-01",
+      "imagePath": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-14-lid-underside.png",
+      "sha256": "2d1931fecd2342a85faa70cdaa12ac6ab5210f7bf5d23fad51eb2f6c8ee7bb09",
+      "observedSha256": "3ac840acae7d1b221f44b17f129c327cf18b8acd82cc26811ecc28639b390058",
+      "observedKind": "scripted_description",
+      "reason": "觀察回呼的 return 為固定全文，沒有把前置檢查所取得的實際欄位值插入 observed。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/source-snapshot/lesson06_tenon.py",
+        "sha256": "dff30f0f29b77cba69059edc642a19aeb10545991c6c49e01c957450c213c290",
+        "line": 180
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson06-tenon-demo-v006",
+      "step": "06-01",
+      "imagePath": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-15-separated-view.png",
+      "sha256": "05d8b109c613f6902c6a67d6a0be042448ee9516d71229b95647311fce5926b6",
+      "observedSha256": "8305dcdb2da9dba41f13fe0c8b49e9d8a91755ff609bf9587274475f094fa338",
+      "observedKind": "mixed",
+      "reason": "尺寸為實讀，暫時分離／不是實體試配或下一步移回為固定解說。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/source-snapshot/lesson06_tenon.py",
+        "sha256": "dff30f0f29b77cba69059edc642a19aeb10545991c6c49e01c957450c213c290",
+        "line": 330
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson06-tenon-demo-v006",
+      "step": "06-01",
+      "imagePath": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-16-assembly-geometry.png",
+      "sha256": "a01cae28fb6a90012c0d64889f99e40e5cecd6a307033a2336da30bf65385fb4",
+      "observedSha256": "0398e134df4eb465647bf408aa5184f9709bef6fe87e956d25886134ffb6a9db",
+      "observedKind": "mixed",
+      "reason": "最小法向／對邊間隙由實測結果插值，名義間隙、嵌入量及僅數位試驗為固定文字。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/source-snapshot/lesson06_tenon.py",
+        "sha256": "dff30f0f29b77cba69059edc642a19aeb10545991c6c49e01c957450c213c290",
+        "line": 187
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson06-tenon-demo-v006",
+      "step": "06-01",
+      "imagePath": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-18-saved.png",
+      "sha256": "6da3ef485a2680a2b3fc97f3c28837f37b57568145455cb064ddff7198a752e3",
+      "observedSha256": "856f64ff13fa8c0c5d15723706f3a6b38c2b424a839390d010abb178eb6c0d6a",
+      "observedKind": "mixed",
+      "reason": "檔名、大小或hash為動態結果，來源／副本／舊版本未改為固定附加敘述。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/source-snapshot/lesson06_tenon.py",
+        "sha256": "dff30f0f29b77cba69059edc642a19aeb10545991c6c49e01c957450c213c290",
+        "line": 358
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson06-tenon-demo-v006",
+      "step": "06-01",
+      "imagePath": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/06-01-20-reopened-verified.png",
+      "sha256": "81115ee7e905909ca2a8996baec3f0299b667aae9ee8bbdadb2ce736fec4f7f2",
+      "observedSha256": "791eec6053f6de219740a8d2842d69bfd44f5846a3778f43d36a8c1c7f120956",
+      "observedKind": "mixed",
+      "reason": "all_read()內動態間隙與固定重開核對成功、未匯出／列印／試配敘述合併。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/source-snapshot/lesson06_tenon.py",
+        "sha256": "dff30f0f29b77cba69059edc642a19aeb10545991c6c49e01c957450c213c290",
+        "line": 386
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson06-dovetail-demo-v002",
+      "step": "06-02",
+      "imagePath": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-02-source-geometry.png",
+      "sha256": "269975dc4137eabae1d2685ddd01dd787ed724aaaf8e63af50b4cae8ba2a4d3c",
+      "observedSha256": "d390319830f221f292fe0b75021f820e6b2106ff107391d66ce25793262935c4",
+      "observedKind": "scripted_description",
+      "reason": "觀察回呼的 return 為固定全文，沒有把前置檢查所取得的實際欄位值插入 observed。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/source-snapshot/lesson06_dovetail.py",
+        "sha256": "46171d7529f3f02b4e523c93b99b794c1d8f999691c4f5140e9504611590c276",
+        "line": 265
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson06-dovetail-demo-v002",
+      "step": "06-02",
+      "imagePath": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-03-guide-blocks.png",
+      "sha256": "0a2fe628ad11e6b0ebd89a88a399dc7563eb2ed2cc102e4ed85ee0673dc5d3c0",
+      "observedSha256": "af76b4f8fffcac07a690155ba626da8c48a207bc32e349b7063ae6804b8c725c",
+      "observedKind": "mixed",
+      "reason": "工具尺寸實讀，附加固定成對工具外框／原點／截面與world mesh核對敘述。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/source-snapshot/lesson06_dovetail.py",
+        "sha256": "46171d7529f3f02b4e523c93b99b794c1d8f999691c4f5140e9504611590c276",
+        "line": 209
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson06-dovetail-demo-v002",
+      "step": "06-02",
+      "imagePath": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-04-guide-union.png",
+      "sha256": "b1bcc1c5a15a82effaa45275052a670b6d095e8e50abf2b29ea6350257438965",
+      "observedSha256": "32b986d2cd99bc3113e1a68031f53fca46af1adee572e0eb0cc554de78dd894f",
+      "observedKind": "mixed",
+      "reason": "修改器operation、solver、目標物件實讀，附加固定的Apply前預覽解說。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/source-snapshot/lesson06_dovetail.py",
+        "sha256": "46171d7529f3f02b4e523c93b99b794c1d8f999691c4f5140e9504611590c276",
+        "line": 193
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson06-dovetail-demo-v002",
+      "step": "06-02",
+      "imagePath": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-05-guides-applied.png",
+      "sha256": "026367974362bd7bca5bc6c69f4273ef5dfa0ae8e632a9c66d39085e5d567e79",
+      "observedSha256": "0b6932b97a318cdc54ed3eb1fbbb42097cd64c9c8b7233ec101bbcfef92b97b5",
+      "observedKind": "mixed",
+      "reason": "Body尺寸為實讀，加厚Y/Z範圍與外形未增加為固定敘述。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/source-snapshot/lesson06_dovetail.py",
+        "sha256": "46171d7529f3f02b4e523c93b99b794c1d8f999691c4f5140e9504611590c276",
+        "line": 282
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson06-dovetail-demo-v002",
+      "step": "06-02",
+      "imagePath": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-06-groove-tools.png",
+      "sha256": "1116896ca9d646839c8dbee7279f08d42e353ffcbdb17e4d26922cee6434c3a8",
+      "observedSha256": "a65aca6712395dd17c83ff3c25d96faae6a939366d23ce27106de0ca51f78022",
+      "observedKind": "mixed",
+      "reason": "工具尺寸實讀，附加固定成對工具外框／原點／截面與world mesh核對敘述。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/source-snapshot/lesson06_dovetail.py",
+        "sha256": "46171d7529f3f02b4e523c93b99b794c1d8f999691c4f5140e9504611590c276",
+        "line": 209
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson06-dovetail-demo-v002",
+      "step": "06-02",
+      "imagePath": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-07-groove-difference.png",
+      "sha256": "e832535badf710d8120deacd39047c3466c39e1c96327add42c0f7a88aeb8d69",
+      "observedSha256": "a4e9d6f5f849dfd958d58fdeeec259cad3ecce16a58dd61e15640c4baf3f5b1e",
+      "observedKind": "mixed",
+      "reason": "修改器operation、solver、目標物件實讀，附加固定的Apply前預覽解說。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/source-snapshot/lesson06_dovetail.py",
+        "sha256": "46171d7529f3f02b4e523c93b99b794c1d8f999691c4f5140e9504611590c276",
+        "line": 193
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson06-dovetail-demo-v002",
+      "step": "06-02",
+      "imagePath": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-08-body-grooves.png",
+      "sha256": "a7f9a013a829ccfb55037488e188dc7fca264a855fde2ed258f15f8efbc48b37",
+      "observedSha256": "5f962da8f8c94cb0b47ceb327f31122fb408d08931b591443e73804a4b4ad796",
+      "observedKind": "scripted_description",
+      "reason": "觀察回呼的 return 為固定全文，沒有把前置檢查所取得的實際欄位值插入 observed。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/source-snapshot/lesson06_dovetail.py",
+        "sha256": "46171d7529f3f02b4e523c93b99b794c1d8f999691c4f5140e9504611590c276",
+        "line": 214
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson06-dovetail-demo-v002",
+      "step": "06-02",
+      "imagePath": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-09-body-end-profile.png",
+      "sha256": "75f83513063b274cbc10fbea3761154118f574a7c75823ef87089e47863b2afd",
+      "observedSha256": "5f962da8f8c94cb0b47ceb327f31122fb408d08931b591443e73804a4b4ad796",
+      "observedKind": "scripted_description",
+      "reason": "觀察回呼的 return 為固定全文，沒有把前置檢查所取得的實際欄位值插入 observed。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/source-snapshot/lesson06_dovetail.py",
+        "sha256": "46171d7529f3f02b4e523c93b99b794c1d8f999691c4f5140e9504611590c276",
+        "line": 214
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson06-dovetail-demo-v002",
+      "step": "06-02",
+      "imagePath": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-10-body-non-manifold.png",
+      "sha256": "72bc86d2fcd77b1d03ab734e7d2c143566174d7d6557641852b85a9cfaea152e",
+      "observedSha256": "7f64f202ffa5647c2b73fcc91806cbb254696f4b4ae74c887e04d5c96cf1c545",
+      "observedKind": "scripted_description",
+      "reason": "只插入角色名稱，Non Manifold 0／所選0邊等為固定敘述；前面的檢查結果沒有直接序列化到此字串。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/source-snapshot/lesson06_dovetail.py",
+        "sha256": "46171d7529f3f02b4e523c93b99b794c1d8f999691c4f5140e9504611590c276",
+        "line": 237
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson06-dovetail-demo-v002",
+      "step": "06-02",
+      "imagePath": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-12-male-ribs.png",
+      "sha256": "68f9b3508492b2a9e82840c80e1fb5565f2118db11f25abf5d30e69465629401",
+      "observedSha256": "4403489193ab3ed97ab886336c54e189f5b661b196f42f76fe4c2281fc156ae0",
+      "observedKind": "mixed",
+      "reason": "工具尺寸實讀，附加固定成對工具外框／原點／截面與world mesh核對敘述。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/source-snapshot/lesson06_dovetail.py",
+        "sha256": "46171d7529f3f02b4e523c93b99b794c1d8f999691c4f5140e9504611590c276",
+        "line": 209
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson06-dovetail-demo-v002",
+      "step": "06-02",
+      "imagePath": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-13-lid-union.png",
+      "sha256": "b3f4c8bec99c35b4609c64922bcdcc4f7f525f8fd454bdf4542ece1fac1768a5",
+      "observedSha256": "50bf99cd062eaa400e5b820ba46ddbe4f3a371d5145585a90f905b67732bd3fe",
+      "observedKind": "mixed",
+      "reason": "修改器operation、solver、目標物件實讀，附加固定的Apply前預覽解說。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/source-snapshot/lesson06_dovetail.py",
+        "sha256": "46171d7529f3f02b4e523c93b99b794c1d8f999691c4f5140e9504611590c276",
+        "line": 193
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson06-dovetail-demo-v002",
+      "step": "06-02",
+      "imagePath": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-14-lid-underside.png",
+      "sha256": "a524c1369371e2c3134cd56ba7e3ff1caa66c04904c243b7924c0c4d3f304b4b",
+      "observedSha256": "7a7b3cd1af1ced46929bd3e2260cb30d65764b3cf089b3e68d7a7d461f900707",
+      "observedKind": "scripted_description",
+      "reason": "觀察回呼的 return 為固定全文，沒有把前置檢查所取得的實際欄位值插入 observed。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/source-snapshot/lesson06_dovetail.py",
+        "sha256": "46171d7529f3f02b4e523c93b99b794c1d8f999691c4f5140e9504611590c276",
+        "line": 219
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson06-dovetail-demo-v002",
+      "step": "06-02",
+      "imagePath": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-15-lid-end-profile.png",
+      "sha256": "7d6f39f90b987a1b6d2dc1444ce9d5d7bee1c13fd286aeba973f00e148867d63",
+      "observedSha256": "7a7b3cd1af1ced46929bd3e2260cb30d65764b3cf089b3e68d7a7d461f900707",
+      "observedKind": "scripted_description",
+      "reason": "觀察回呼的 return 為固定全文，沒有把前置檢查所取得的實際欄位值插入 observed。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/source-snapshot/lesson06_dovetail.py",
+        "sha256": "46171d7529f3f02b4e523c93b99b794c1d8f999691c4f5140e9504611590c276",
+        "line": 219
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson06-dovetail-demo-v002",
+      "step": "06-02",
+      "imagePath": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-16-lid-non-manifold.png",
+      "sha256": "357690116eb54d80516c45782d0a0c77466cf13809529fe053572b614bc7c3e3",
+      "observedSha256": "945e311673fa7f1b29c1648cb00b86cf150c077d7d8bf06a652e0a8d3f4f19b0",
+      "observedKind": "scripted_description",
+      "reason": "只插入角色名稱，Non Manifold 0／所選0邊等為固定敘述；前面的檢查結果沒有直接序列化到此字串。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/source-snapshot/lesson06_dovetail.py",
+        "sha256": "46171d7529f3f02b4e523c93b99b794c1d8f999691c4f5140e9504611590c276",
+        "line": 237
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson06-dovetail-demo-v002",
+      "step": "06-02",
+      "imagePath": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-17-assembly-geometry.png",
+      "sha256": "e149c3589f991976fb26335cf0c638446d22f5cc9ee202eb9636ed5fc83218cd",
+      "observedSha256": "07209ff44a8715993cd3b407a39c2ae4f647f6a429bbd1115708a1ee15f560b1",
+      "observedKind": "scripted_description",
+      "reason": "觀察回呼的 return 為固定全文，沒有把前置檢查所取得的實際欄位值插入 observed。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/source-snapshot/lesson06_dovetail.py",
+        "sha256": "46171d7529f3f02b4e523c93b99b794c1d8f999691c4f5140e9504611590c276",
+        "line": 226
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson06-dovetail-demo-v002",
+      "step": "06-02",
+      "imagePath": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-18-slide-x30.png",
+      "sha256": "bdb153cb11647b779e878b08a0439c8053e6b5ac50e9a53ad9ee98e0951bd028",
+      "observedSha256": "955a1aca0f47ec4582cff5dfda58af50ce29504154507407395d71ddf96fd338",
+      "observedKind": "mixed",
+      "reason": "SlidingLid.location.x實讀，附加固定已保存world mesh／非實體試配敘述。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/source-snapshot/lesson06_dovetail.py",
+        "sha256": "46171d7529f3f02b4e523c93b99b794c1d8f999691c4f5140e9504611590c276",
+        "line": 337
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson06-dovetail-demo-v002",
+      "step": "06-02",
+      "imagePath": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-19-slide-x62.png",
+      "sha256": "769aee9d85db7ed5078039ce857648149a5f362c9387f5c35d3453587093a934",
+      "observedSha256": "e5fd890b3f532ac76994ba374e80d239dcfe196aafd2da92840096ffcd439eff",
+      "observedKind": "mixed",
+      "reason": "SlidingLid.location.x實讀，附加固定已保存world mesh／非實體試配敘述。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/source-snapshot/lesson06_dovetail.py",
+        "sha256": "46171d7529f3f02b4e523c93b99b794c1d8f999691c4f5140e9504611590c276",
+        "line": 337
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson06-dovetail-demo-v002",
+      "step": "06-02",
+      "imagePath": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-20-slide-return.png",
+      "sha256": "269741e536fef83555f23de0623cd2eee6db6962f3edebb45ef58ae197119f8d",
+      "observedSha256": "7b979b02ed9383dbb09beace12aeabf640e303b7888cc40c19bf21de3ac1934a",
+      "observedKind": "scripted_description",
+      "reason": "觀察回呼的 return 為固定全文，沒有把前置檢查所取得的實際欄位值插入 observed。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/source-snapshot/lesson06_dovetail.py",
+        "sha256": "46171d7529f3f02b4e523c93b99b794c1d8f999691c4f5140e9504611590c276",
+        "line": 347
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson06-dovetail-demo-v002",
+      "step": "06-02",
+      "imagePath": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-24-reopened-verified.png",
+      "sha256": "fa52e7159268dc72d0a481026c2cb6f2831558e3356e2cb2ef1d71524f22a9aa",
+      "observedSha256": "dd45fb5ae7b9deb61031a987b93d363c953f2b098e3b763de520b16dd8b9a757",
+      "observedKind": "scripted_description",
+      "reason": "觀察回呼的 return 為固定全文，沒有把前置檢查所取得的實際欄位值插入 observed。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/source-snapshot/lesson06_dovetail.py",
+        "sha256": "46171d7529f3f02b4e523c93b99b794c1d8f999691c4f5140e9504611590c276",
+        "line": 390
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson06-dovetail-export-demo-v001",
+      "step": "06-03",
+      "imagePath": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-02-body-source-selected.png",
+      "sha256": "184531942aaeab3053aa699b601c47b76022acb12d64a4a76d65a5d6a4b47b11",
+      "observedSha256": "77a37c8569bfa8d3f9357620ca4a362392d9c9788cab3809e4d4260a4348f8a4",
+      "observedKind": "mixed",
+      "reason": "來源尺寸與幾何細節動態插值，附加固定hidden／hash相同／單殼／非流形零敘述。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/source-snapshot/lesson06_dovetail_export.py",
+        "sha256": "11aa6b1e14a27e7f6784f451ecdbacb9e51342c827d9e8f95d732acf0ff7682f",
+        "line": 118
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson06-dovetail-export-demo-v001",
+      "step": "06-03",
+      "imagePath": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-03-body-source-end-profile.png",
+      "sha256": "cfc66623c49b3ff4cb9d8e64fc197e4c915d5802a034c8cb0aa1a4554853b41f",
+      "observedSha256": "77a37c8569bfa8d3f9357620ca4a362392d9c9788cab3809e4d4260a4348f8a4",
+      "observedKind": "mixed",
+      "reason": "來源尺寸與幾何細節動態插值，附加固定hidden／hash相同／單殼／非流形零敘述。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/source-snapshot/lesson06_dovetail_export.py",
+        "sha256": "11aa6b1e14a27e7f6784f451ecdbacb9e51342c827d9e8f95d732acf0ff7682f",
+        "line": 118
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson06-dovetail-export-demo-v001",
+      "step": "06-03",
+      "imagePath": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-06-body-export-options.png",
+      "sha256": "6a2a89f809465e8117320d19b53ef0720de5a10516cd39306a892d79ff6019e0",
+      "observedSha256": "c8df7179fca86d744c8a48bc0d71b83837858c0f179a8cf0586d8d7b802eea79",
+      "observedKind": "scripted_description",
+      "reason": "只插入計畫件名或計畫檔名，其餘為固定選項文字；不是將實際選項逐欄讀回後組成的字串。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/source-snapshot/lesson06_dovetail_export.py",
+        "sha256": "11aa6b1e14a27e7f6784f451ecdbacb9e51342c827d9e8f95d732acf0ff7682f",
+        "line": 164
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson06-dovetail-export-demo-v001",
+      "step": "06-03",
+      "imagePath": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-07-body-stl-checked.png",
+      "sha256": "d92cb4111712d18dac776f64071263e22bd68517518bec08617ed92075d7a691",
+      "observedSha256": "164f9575039d7646925feff028a04b6c19caa697cea69ed0448475ca4c2c0791",
+      "observedKind": "mixed",
+      "reason": "STL大小／面數／外框／最低Z／hash為動態結果，單殼／Non Manifold 0為固定敘述。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/source-snapshot/lesson06_dovetail_export.py",
+        "sha256": "11aa6b1e14a27e7f6784f451ecdbacb9e51342c827d9e8f95d732acf0ff7682f",
+        "line": 181
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson06-dovetail-export-demo-v001",
+      "step": "06-03",
+      "imagePath": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-09-lid-source-selected.png",
+      "sha256": "a524c1369371e2c3134cd56ba7e3ff1caa66c04904c243b7924c0c4d3f304b4b",
+      "observedSha256": "bd610ea8e6f603b3f2005bbc48a488981451e636b5eaa6ad726770510d981835",
+      "observedKind": "mixed",
+      "reason": "來源尺寸與幾何細節動態插值，附加固定hidden／hash相同／單殼／非流形零敘述。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/source-snapshot/lesson06_dovetail_export.py",
+        "sha256": "11aa6b1e14a27e7f6784f451ecdbacb9e51342c827d9e8f95d732acf0ff7682f",
+        "line": 118
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson06-dovetail-export-demo-v001",
+      "step": "06-03",
+      "imagePath": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-10-lid-source-end-profile.png",
+      "sha256": "7d6f39f90b987a1b6d2dc1444ce9d5d7bee1c13fd286aeba973f00e148867d63",
+      "observedSha256": "bd610ea8e6f603b3f2005bbc48a488981451e636b5eaa6ad726770510d981835",
+      "observedKind": "mixed",
+      "reason": "來源尺寸與幾何細節動態插值，附加固定hidden／hash相同／單殼／非流形零敘述。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/source-snapshot/lesson06_dovetail_export.py",
+        "sha256": "11aa6b1e14a27e7f6784f451ecdbacb9e51342c827d9e8f95d732acf0ff7682f",
+        "line": 118
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson06-dovetail-export-demo-v001",
+      "step": "06-03",
+      "imagePath": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-13-lid-export-options.png",
+      "sha256": "6cfd473cb51411f616ef230f4e3d7ed8690b4f988f130172d36fd50c900d7012",
+      "observedSha256": "86dc0be5661d0f8f9bdd0026e607add247985d2e82c23f859f8ab143e170c7e5",
+      "observedKind": "scripted_description",
+      "reason": "只插入計畫件名或計畫檔名，其餘為固定選項文字；不是將實際選項逐欄讀回後組成的字串。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/source-snapshot/lesson06_dovetail_export.py",
+        "sha256": "11aa6b1e14a27e7f6784f451ecdbacb9e51342c827d9e8f95d732acf0ff7682f",
+        "line": 164
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson06-dovetail-export-demo-v001",
+      "step": "06-03",
+      "imagePath": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-14-lid-stl-checked.png",
+      "sha256": "1669aa6cfef8ac374b17192a33f29fc4d90ffa4f0025da9928d20a2eda307082",
+      "observedSha256": "f984bae3cecb9f3a495d9ccb8a50ae32db8b670fb9af1b137d0398bb6d4a0d49",
+      "observedKind": "mixed",
+      "reason": "STL大小／面數／外框／最低Z／hash為動態結果，單殼／Non Manifold 0為固定敘述。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/source-snapshot/lesson06_dovetail_export.py",
+        "sha256": "11aa6b1e14a27e7f6784f451ecdbacb9e51342c827d9e8f95d732acf0ff7682f",
+        "line": 181
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson06-dovetail-export-demo-v001",
+      "step": "06-03",
+      "imagePath": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-15-empty-mm-scene.png",
+      "sha256": "4adc8aebf5e4a772bee8fce4eb6b599831c2910744002fc3fb9242704c87f51c",
+      "observedSha256": "15988a9e956584503ccc02a79fa781dd7ce8a69e5d40002b7b1a90d95ba39410",
+      "observedKind": "scripted_description",
+      "reason": "觀察回呼的 return 為固定全文，沒有把前置檢查所取得的實際欄位值插入 observed。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/source-snapshot/lesson06_dovetail_export.py",
+        "sha256": "11aa6b1e14a27e7f6784f451ecdbacb9e51342c827d9e8f95d732acf0ff7682f",
+        "line": 203
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson06-dovetail-export-demo-v001",
+      "step": "06-03",
+      "imagePath": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-16-body-import-dialog.png",
+      "sha256": "790a2cf010ff9a9dacde6654094a4a63e631bd4ee20d6b6927fff4182c7de801",
+      "observedSha256": "1d96c793fca268762c954283f64a9a221055789df1f9f44e2ed6b3d2f53718b6",
+      "observedKind": "mixed",
+      "reason": "瀏覽器檔名為實讀，Scale／Scene Unit／軸向為固定選項文字。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/source-snapshot/lesson06_dovetail_export.py",
+        "sha256": "11aa6b1e14a27e7f6784f451ecdbacb9e51342c827d9e8f95d732acf0ff7682f",
+        "line": 242
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson06-dovetail-export-demo-v001",
+      "step": "06-03",
+      "imagePath": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-17-body-reimport-dimensions.png",
+      "sha256": "594e402e24bc477199fb729a2ae876e6699a4ac7aad224df23e7d55f9b51f301",
+      "observedSha256": "ec8fc90782750de666f179e038d861e3cf5a7f911b93d3356129a291ff5a98da",
+      "observedKind": "mixed",
+      "reason": "匯入名稱及Dimensions實讀，附加固定Scale1／修改器0與來源幾何一致判語。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/source-snapshot/lesson06_dovetail_export.py",
+        "sha256": "11aa6b1e14a27e7f6784f451ecdbacb9e51342c827d9e8f95d732acf0ff7682f",
+        "line": 218
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson06-dovetail-export-demo-v001",
+      "step": "06-03",
+      "imagePath": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-18-body-reimport-end-profile.png",
+      "sha256": "034425a0b365e02228ff8cc4426646d993df2de47878956761499c07891fc32e",
+      "observedSha256": "ec8fc90782750de666f179e038d861e3cf5a7f911b93d3356129a291ff5a98da",
+      "observedKind": "mixed",
+      "reason": "匯入名稱及Dimensions實讀，附加固定Scale1／修改器0與來源幾何一致判語。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/source-snapshot/lesson06_dovetail_export.py",
+        "sha256": "11aa6b1e14a27e7f6784f451ecdbacb9e51342c827d9e8f95d732acf0ff7682f",
+        "line": 218
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson06-dovetail-export-demo-v001",
+      "step": "06-03",
+      "imagePath": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-19-body-reimport-non-manifold.png",
+      "sha256": "c9d06521f4e159aa0ce1b1baff330e086f86f8c1e60d577ffc724bd7ae8c5fc6",
+      "observedSha256": "1dc2f2584c537c35d02225abe67388a87c56463709e062f91424f5a10c752d03",
+      "observedKind": "scripted_description",
+      "reason": "只插入角色名稱，Non Manifold 0／所選0邊等為固定敘述；前面的檢查結果沒有直接序列化到此字串。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/source-snapshot/lesson06_dovetail_export.py",
+        "sha256": "11aa6b1e14a27e7f6784f451ecdbacb9e51342c827d9e8f95d732acf0ff7682f",
+        "line": 229
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson06-dovetail-export-demo-v001",
+      "step": "06-03",
+      "imagePath": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-20-lid-import-dialog.png",
+      "sha256": "69d20151d91ba189cc6c66c403049755480dba5451fb6e83fd7e9b76d9608572",
+      "observedSha256": "87b9893b9882ae1bf8469fd75813e14efd24d99b716bda60fd8d7c65deefb8bc",
+      "observedKind": "mixed",
+      "reason": "瀏覽器檔名為實讀，Scale／Scene Unit／軸向為固定選項文字。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/source-snapshot/lesson06_dovetail_export.py",
+        "sha256": "11aa6b1e14a27e7f6784f451ecdbacb9e51342c827d9e8f95d732acf0ff7682f",
+        "line": 242
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson06-dovetail-export-demo-v001",
+      "step": "06-03",
+      "imagePath": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-21-lid-reimport-dimensions.png",
+      "sha256": "2f347072775f85671a78161395323f414fb658609ae9ad6c068c9c2916a1ba00",
+      "observedSha256": "f5de3b1f4aa9d3ca7e03a8c2cbba01dfb028fbeb1ba44e1c6ef125fdfd2ba895",
+      "observedKind": "mixed",
+      "reason": "匯入名稱及Dimensions實讀，附加固定Scale1／修改器0與來源幾何一致判語。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/source-snapshot/lesson06_dovetail_export.py",
+        "sha256": "11aa6b1e14a27e7f6784f451ecdbacb9e51342c827d9e8f95d732acf0ff7682f",
+        "line": 218
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson06-dovetail-export-demo-v001",
+      "step": "06-03",
+      "imagePath": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-22-lid-reimport-end-profile.png",
+      "sha256": "8ddcb494177d83488c78dae42bd9de3259d2d553aeecbc5e0869184a3ae24aec",
+      "observedSha256": "f5de3b1f4aa9d3ca7e03a8c2cbba01dfb028fbeb1ba44e1c6ef125fdfd2ba895",
+      "observedKind": "mixed",
+      "reason": "匯入名稱及Dimensions實讀，附加固定Scale1／修改器0與來源幾何一致判語。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/source-snapshot/lesson06_dovetail_export.py",
+        "sha256": "11aa6b1e14a27e7f6784f451ecdbacb9e51342c827d9e8f95d732acf0ff7682f",
+        "line": 218
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson06-dovetail-export-demo-v001",
+      "step": "06-03",
+      "imagePath": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-23-lid-reimport-non-manifold.png",
+      "sha256": "95fdeb182b7b31ba35e33e2b674c1f9315258d3afa37a483208e98d0bb224bb9",
+      "observedSha256": "e14898839c54d9fd77fd162933d32d1b5d1d6ab8e6fac1202cd811e39e50fdb7",
+      "observedKind": "scripted_description",
+      "reason": "只插入角色名稱，Non Manifold 0／所選0邊等為固定敘述；前面的檢查結果沒有直接序列化到此字串。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/source-snapshot/lesson06_dovetail_export.py",
+        "sha256": "11aa6b1e14a27e7f6784f451ecdbacb9e51342c827d9e8f95d732acf0ff7682f",
+        "line": 229
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson06-dovetail-export-demo-v001",
+      "step": "06-03",
+      "imagePath": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-24-reimport-assembly.png",
+      "sha256": "2bfb82486554b39de0d602488af7840f14e5dadbb3e3237e0fd86c30a2a4577c",
+      "observedSha256": "7d3b87a65807b130fd61410e8b486df5f56ad05bda04fefe8d7474d5b5e863e9",
+      "observedKind": "mixed",
+      "reason": "實際間隙讀值與固定0.4名義試驗、未列印／試配敘述並列。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/source-snapshot/lesson06_dovetail_export.py",
+        "sha256": "11aa6b1e14a27e7f6784f451ecdbacb9e51342c827d9e8f95d732acf0ff7682f",
+        "line": 276
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson06-dovetail-export-demo-v001",
+      "step": "06-03",
+      "imagePath": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/06-03-25-exports-verified.png",
+      "sha256": "2bfb82486554b39de0d602488af7840f14e5dadbb3e3237e0fd86c30a2a4577c",
+      "observedSha256": "9038dec59e1449e26b3e17d84b75ca20d5bf6426a83eef42abdf89d9ddc2bbae",
+      "observedKind": "scripted_description",
+      "reason": "觀察回呼的 return 為固定全文，沒有把前置檢查所取得的實際欄位值插入 observed。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/source-snapshot/lesson06_dovetail_export.py",
+        "sha256": "11aa6b1e14a27e7f6784f451ecdbacb9e51342c827d9e8f95d732acf0ff7682f",
+        "line": 296
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-parameters-demo-v001",
+      "step": "07-01",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/07-01-02-source-checked.png",
+      "sha256": "553d16ae73d6789e63151c705c2c9231cee91ba7a5712084489555ef213e1e64",
+      "observedSha256": "2b70c121fdce402cba4ad29f818fda5d65d3d6423e498014e3d63bca284554b1",
+      "observedKind": "mixed",
+      "reason": "外形、內腔、體積與非流形數為讀值，壁／底2mm為固定文字。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/source-snapshot/lesson07_parameters.py",
+        "sha256": "f975c965ac535a4d165a52979df236f60308eb012dd693ea287b1fd8dc86d9df",
+        "line": 114
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-parameters-demo-v001",
+      "step": "07-01",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/07-01-04-rim-face.png",
+      "sha256": "71f4e90f4ad1e2416be0df61bdb68eda91775f1eda878c732023f62cbaaf3cda",
+      "observedSha256": "dd9e6b8054da6e37f0f03d5d4ea2cd3960bfd670355d251e18038969fff5d42f",
+      "observedKind": "mixed",
+      "reason": "world min/max/span為讀值，選取1面／4頂點為固定敘述。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/source-snapshot/lesson07_parameters.py",
+        "sha256": "f975c965ac535a4d165a52979df236f60308eb012dd693ea287b1fd8dc86d9df",
+        "line": 99
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-parameters-demo-v001",
+      "step": "07-01",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/07-01-05-inner-floor.png",
+      "sha256": "a78e713c12c3af31a8e6d3d717bea1a8ca99891e3524c6991459654c174d8e6d",
+      "observedSha256": "5139f19b5c415004aeb1859a63dc8658da6e8a9c44870ab4a990d9d41840cacf",
+      "observedKind": "mixed",
+      "reason": "world min/max/span為讀值，選取1面／4頂點為固定敘述。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/source-snapshot/lesson07_parameters.py",
+        "sha256": "f975c965ac535a4d165a52979df236f60308eb012dd693ea287b1fd8dc86d9df",
+        "line": 99
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-parameters-demo-v001",
+      "step": "07-01",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/07-01-06-outer-floor.png",
+      "sha256": "6c583bd5aec0207b5c2c8c51ba50343bfa65b2ee6cea6c713ed21f5e5a983e52",
+      "observedSha256": "e3be0441d8894fd43c043e2450dbe6b49b40895a7dc7d2fc9422a907e3d6705f",
+      "observedKind": "mixed",
+      "reason": "world min/max/span為讀值，選取1面／4頂點為固定敘述。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/source-snapshot/lesson07_parameters.py",
+        "sha256": "f975c965ac535a4d165a52979df236f60308eb012dd693ea287b1fd8dc86d9df",
+        "line": 99
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-parameters-demo-v001",
+      "step": "07-01",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/07-01-07-non-manifold.png",
+      "sha256": "cced4f7a89cbf44e9fe75a8cdfeefd24d06b7adff7c8407a09ed1132ea9b4962",
+      "observedSha256": "a5fc696f8c34b9086634fd4797adcf1d9b8db4aa1585b2ac47a5e245bf4c9d06",
+      "observedKind": "scripted_description",
+      "reason": "觀察回呼的 return 為固定全文，沒有把前置檢查所取得的實際欄位值插入 observed。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/source-snapshot/lesson07_parameters.py",
+        "sha256": "f975c965ac535a4d165a52979df236f60308eb012dd693ea287b1fd8dc86d9df",
+        "line": 157
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-parameters-demo-v001",
+      "step": "07-01",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/07-01-08-reference-overview.png",
+      "sha256": "76bd22f0091976802281b444aa8703b9cd939a107c4a70d4074a0d137816a576",
+      "observedSha256": "c3aa1366464388858891a942ff0199134cf9025575370df7f7a9916e9a970e33",
+      "observedKind": "scripted_description",
+      "reason": "觀察回呼的 return 為固定全文，沒有把前置檢查所取得的實際欄位值插入 observed。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/source-snapshot/lesson07_parameters.py",
+        "sha256": "f975c965ac535a4d165a52979df236f60308eb012dd693ea287b1fd8dc86d9df",
+        "line": 171
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-parameters-demo-v001",
+      "step": "07-01",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/07-01-10-saved.png",
+      "sha256": "5158e8e781a71aa2ad82690c178ce18b75e4a19494d851824073d5f4c6d3655f",
+      "observedSha256": "6dbdf089167d8cc21262a494a3839c1cd091afb458c98bb7c47027cbea62e30e",
+      "observedKind": "mixed",
+      "reason": "檔名、大小或hash為動態結果，來源／副本／舊版本未改為固定附加敘述。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/source-snapshot/lesson07_parameters.py",
+        "sha256": "f975c965ac535a4d165a52979df236f60308eb012dd693ea287b1fd8dc86d9df",
+        "line": 195
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-parameters-demo-v001",
+      "step": "07-01",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/07-01-12-reopened-verified.png",
+      "sha256": "05ccab2799c6d1965c1878130815b63d2bbff9cd4b87417c2d63458e52bc3472",
+      "observedSha256": "1825313b89fb295b8707c056dae501dc766583293f19f52d62e0c013bc9c6a7b",
+      "observedKind": "scripted_description",
+      "reason": "觀察回呼的 return 為固定全文，沒有把前置檢查所取得的實際欄位值插入 observed。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/source-snapshot/lesson07_parameters.py",
+        "sha256": "f975c965ac535a4d165a52979df236f60308eb012dd693ea287b1fd8dc86d9df",
+        "line": 228
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-snap-demo-v001",
+      "step": "07-02",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-02-source-geometry.png",
+      "sha256": "eb1b309daf2eb94b631e60f65c6b55643e90d8bc0d01080c24416f90a9b242c9",
+      "observedSha256": "f5ead33cc15bf1d2b53bf863b34fe5f06cc46912be57a558a2ceca278c5d6cb2",
+      "observedKind": "scripted_description",
+      "reason": "觀察回呼的 return 為固定全文，沒有把前置檢查所取得的實際欄位值插入 observed。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/source-snapshot/lesson07_snap.py",
+        "sha256": "47d634ae0b77a1f062a0cb8eaa6cc38f1d59faf61006f772e5cab5b1a3b205f6",
+        "line": 321
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-snap-demo-v001",
+      "step": "07-02",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-03-anchor-top.png",
+      "sha256": "f9a79c854125df1b976b4ec9795d38402463e0a6915ff42ce2c435b61e523c45",
+      "observedSha256": "4d4f9a30581652f9e52486a61abb632950fbdc2e3ab80366f0a5f29088c1f1f1",
+      "observedKind": "mixed",
+      "reason": "world min/max為讀值，實選1面為固定敘述。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/source-snapshot/lesson07_snap.py",
+        "sha256": "47d634ae0b77a1f062a0cb8eaa6cc38f1d59faf61006f772e5cab5b1a3b205f6",
+        "line": 188
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-snap-demo-v001",
+      "step": "07-02",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-04-beam-inset.png",
+      "sha256": "a5d7b5fedbdc7fba842bf9b1048159ecf781a02c1858d3cfd4549aab24e21323",
+      "observedSha256": "639e1d2cf93629053a3f5bdeb24928ba9f36a40a76288dd2a41f56cd1ea66c29",
+      "observedKind": "mixed",
+      "reason": "world min/max為讀值，實選1面為固定敘述。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/source-snapshot/lesson07_snap.py",
+        "sha256": "47d634ae0b77a1f062a0cb8eaa6cc38f1d59faf61006f772e5cab5b1a3b205f6",
+        "line": 188
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-snap-demo-v001",
+      "step": "07-02",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-05-beam-extruded.png",
+      "sha256": "b5c5733263019f34bf999fd9b254d397986b82af251d7015bb065180fab78c6e",
+      "observedSha256": "c03a971f685ed76a0ce589a62b043ab30ee8e85aaacfbe9213c7eb81e239b173",
+      "observedKind": "mixed",
+      "reason": "world min/max為讀值，實選1面為固定敘述。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/source-snapshot/lesson07_snap.py",
+        "sha256": "47d634ae0b77a1f062a0cb8eaa6cc38f1d59faf61006f772e5cab5b1a3b205f6",
+        "line": 188
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-snap-demo-v001",
+      "step": "07-02",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-06-hook-extruded.png",
+      "sha256": "da5c5212f2d879e6cff41e0dc5baa148b84101b7a8b95d0f9835407b46648202",
+      "observedSha256": "14c3ce12d3e0a16edf62e3e4c258af647d2bab05d4cc58940e0be7b5b3376c72",
+      "observedKind": "mixed",
+      "reason": "world min/max為讀值，實選1面為固定敘述。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/source-snapshot/lesson07_snap.py",
+        "sha256": "47d634ae0b77a1f062a0cb8eaa6cc38f1d59faf61006f772e5cab5b1a3b205f6",
+        "line": 188
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-snap-demo-v001",
+      "step": "07-02",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-07-hook-edge.png",
+      "sha256": "4ac1c870113243b992898bd1f273e194d3ac39f8e1a4a72f6e1480a8ae02f5ec",
+      "observedSha256": "f9b392ac9fda577818c5371537815e9d78a102e99531b94d070647fb841987ee",
+      "observedKind": "mixed",
+      "reason": "選取邊數與端點座標為讀值，非整盒外緣為固定解說。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/source-snapshot/lesson07_snap.py",
+        "sha256": "47d634ae0b77a1f062a0cb8eaa6cc38f1d59faf61006f772e5cab5b1a3b205f6",
+        "line": 196
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-snap-demo-v001",
+      "step": "07-02",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-08-hook-bevel.png",
+      "sha256": "7b2a90308506aeb2af3818c6a086d868e4d2a88bccec590bf2eeff21f23e07a2",
+      "observedSha256": "c0917a57d9fdd75f2694d64e1056b65d5f4bd4fc76f45b3a4767ffd8c6fab894",
+      "observedKind": "mixed",
+      "reason": "Bevel operator detail為實讀，offset與實際輪廓分開記錄為固定解說。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/source-snapshot/lesson07_snap.py",
+        "sha256": "47d634ae0b77a1f062a0cb8eaa6cc38f1d59faf61006f772e5cab5b1a3b205f6",
+        "line": 232
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-snap-demo-v001",
+      "step": "07-02",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-09-root-edges.png",
+      "sha256": "e1f2fe071d2110f727fc930a108e4e48725099a2b88c76de05140a50996a2ccb",
+      "observedSha256": "81e0619633ce5138af3154f1b1cbdda11f1f00d0c424b9f1416dcb27f133f338",
+      "observedKind": "mixed",
+      "reason": "選取邊數與端點座標為讀值，非整盒外緣為固定解說。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/source-snapshot/lesson07_snap.py",
+        "sha256": "47d634ae0b77a1f062a0cb8eaa6cc38f1d59faf61006f772e5cab5b1a3b205f6",
+        "line": 196
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-snap-demo-v001",
+      "step": "07-02",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-10-root-bevel.png",
+      "sha256": "d865ea78ef61836a85a4763fb1f21565906123191d06a1776d7a20c7ead756f3",
+      "observedSha256": "59c92e82f61665b4e171840f845ec8910fc7f47aa5b23d97f224b60544df6271",
+      "observedKind": "mixed",
+      "reason": "Bevel operator detail為實讀，offset與實際輪廓分開記錄為固定解說。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/source-snapshot/lesson07_snap.py",
+        "sha256": "47d634ae0b77a1f062a0cb8eaa6cc38f1d59faf61006f772e5cab5b1a3b205f6",
+        "line": 232
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-snap-demo-v001",
+      "step": "07-02",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-11-snap-tool.png",
+      "sha256": "dc11e6bb2c2425a3a3a5f264a0a813898225cbd6e8f364144f9a1e00b1de7652",
+      "observedSha256": "d3f2cad6e10e2055a5e8f312e5bb53851d91894e3658584343d7bed07ff4678e",
+      "observedKind": "mixed",
+      "reason": "正式run非probe分支讀取外框、體積、非流形與profile，並加入固定單殼／根部3段等描述。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/source-snapshot/lesson07_snap.py",
+        "sha256": "47d634ae0b77a1f062a0cb8eaa6cc38f1d59faf61006f772e5cab5b1a3b205f6",
+        "line": 288
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-snap-demo-v001",
+      "step": "07-02",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-13-body-applied.png",
+      "sha256": "e91033de781ec3ff6daabe8232258e1c592ac1a38f299cbb1dc56271b66a8b08",
+      "observedSha256": "8d5d5b7bb412f1b01453810335ec314b5e90b9163ec7866f60c2328b4fc2b4e0",
+      "observedKind": "mixed",
+      "reason": "正式run非probe分支讀取外框、體積、非流形與profile，並加入固定單殼／根部3段等描述。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/source-snapshot/lesson07_snap.py",
+        "sha256": "47d634ae0b77a1f062a0cb8eaa6cc38f1d59faf61006f772e5cab5b1a3b205f6",
+        "line": 288
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-snap-demo-v001",
+      "step": "07-02",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-14-body-non-manifold.png",
+      "sha256": "c00e798a40ecd39c8d3d932804a85a844f4d2f8faa5b918d06009d9985c34e81",
+      "observedSha256": "ac8c953f1928c164ba7ea54cbf9e1e54db52f8fa9e2a51e16ef157fb2e6ec5ea",
+      "observedKind": "scripted_description",
+      "reason": "只插入角色名稱，Non Manifold 0／所選0邊等為固定敘述；前面的檢查結果沒有直接序列化到此字串。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/source-snapshot/lesson07_snap.py",
+        "sha256": "47d634ae0b77a1f062a0cb8eaa6cc38f1d59faf61006f772e5cab5b1a3b205f6",
+        "line": 307
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-snap-demo-v001",
+      "step": "07-02",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-16-flange-extruded.png",
+      "sha256": "5ba23c17fa1cc9f405a8a16e5054ee1ce5b3f82ee67837b9604091467f11e67f",
+      "observedSha256": "dd7b10a553c66106257c13dece55a46a7f6ec0d56c2c6fdf14f756e7172820a4",
+      "observedKind": "mixed",
+      "reason": "world min/max為讀值，實選1面為固定敘述。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/source-snapshot/lesson07_snap.py",
+        "sha256": "47d634ae0b77a1f062a0cb8eaa6cc38f1d59faf61006f772e5cab5b1a3b205f6",
+        "line": 188
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-snap-demo-v001",
+      "step": "07-02",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-17-flange-tool.png",
+      "sha256": "fb8ec958f4c9067afa5a94d69a4f2cc2ff961b14b8f66ba4424d567ab9fc8a23",
+      "observedSha256": "b5b38df695ce743da46854885d3f8d9877c19c16aab02db52c523fcaff11751c",
+      "observedKind": "mixed",
+      "reason": "正式run非probe分支讀取外框、體積、非流形與profile，並加入固定單殼／根部3段等描述。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/source-snapshot/lesson07_snap.py",
+        "sha256": "47d634ae0b77a1f062a0cb8eaa6cc38f1d59faf61006f772e5cab5b1a3b205f6",
+        "line": 288
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-snap-demo-v001",
+      "step": "07-02",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-19-lid-applied.png",
+      "sha256": "6675dba6fd84226747e36d5fa56dba5719d35239ba6df889f04193e79f2dc0a6",
+      "observedSha256": "c38c5f910e185bfd24122e4390647a034bad702297abede2802c7ec8b6b1c53d",
+      "observedKind": "mixed",
+      "reason": "正式run非probe分支讀取外框、體積、非流形與profile，並加入固定單殼／根部3段等描述。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/source-snapshot/lesson07_snap.py",
+        "sha256": "47d634ae0b77a1f062a0cb8eaa6cc38f1d59faf61006f772e5cab5b1a3b205f6",
+        "line": 288
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-snap-demo-v001",
+      "step": "07-02",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-20-lid-non-manifold.png",
+      "sha256": "2142b5895b6d8c48d19ea867f949666a9fcfd74502a4baf83da059a37e43fc28",
+      "observedSha256": "e19ae3766c82fc98e66d3d5c1132c1f5d25f87971ff91c40755bd217b156e729",
+      "observedKind": "scripted_description",
+      "reason": "只插入角色名稱，Non Manifold 0／所選0邊等為固定敘述；前面的檢查結果沒有直接序列化到此字串。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/source-snapshot/lesson07_snap.py",
+        "sha256": "47d634ae0b77a1f062a0cb8eaa6cc38f1d59faf61006f772e5cab5b1a3b205f6",
+        "line": 307
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-snap-demo-v001",
+      "step": "07-02",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-21-lid-raised.png",
+      "sha256": "5da0a1365b79f87138ddc12bdf5c249f9dfa0407f2935893ccd3dedcc2a4f2d2",
+      "observedSha256": "95d44101fbb5db0777e4b5984b34af179aa65e729391e348f819465bdc960952",
+      "observedKind": "mixed",
+      "reason": "Lid.location為實讀，展示位置／非裝配路徑證明為固定解說。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/source-snapshot/lesson07_snap.py",
+        "sha256": "47d634ae0b77a1f062a0cb8eaa6cc38f1d59faf61006f772e5cab5b1a3b205f6",
+        "line": 415
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-snap-demo-v001",
+      "step": "07-02",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-22-assembly-geometry.png",
+      "sha256": "56a6d9581be8daf0ce670b28e959122f9c692d8797a5c90dbd5c689fead5942f",
+      "observedSha256": "3d65a781fec6b0ea2f298c595b2518ce9ac3aa736937a0db97d1cf5ed70bff33",
+      "observedKind": "mixed",
+      "reason": "靜態間距為實讀，δ_req／材料／允許應變待定為固定敘述。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/source-snapshot/lesson07_snap.py",
+        "sha256": "47d634ae0b77a1f062a0cb8eaa6cc38f1d59faf61006f772e5cab5b1a3b205f6",
+        "line": 428
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-snap-demo-v001",
+      "step": "07-02",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-26-reopened-verified.png",
+      "sha256": "2187dc09ca5146a8ebdeca93fa1a59e142bf6f973f7c4beaa55b05f3439d9244",
+      "observedSha256": "58a13d119ff9caec6ca9b802c792b78ad0a0ee9b1d80db1c217833d4420938cf",
+      "observedKind": "scripted_description",
+      "reason": "觀察回呼的 return 為固定全文，沒有把前置檢查所取得的實際欄位值插入 observed。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/source-snapshot/lesson07_snap.py",
+        "sha256": "47d634ae0b77a1f062a0cb8eaa6cc38f1d59faf61006f772e5cab5b1a3b205f6",
+        "line": 479
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-overhang-demo-v001",
+      "step": "07-03",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-02-source-geometry.png",
+      "sha256": "2187dc09ca5146a8ebdeca93fa1a59e142bf6f973f7c4beaa55b05f3439d9244",
+      "observedSha256": "7abf45dc88e7b3d6a2cb5ea509decb3aaf7a6661bc3e7cad322076c305426db9",
+      "observedKind": "scripted_description",
+      "reason": "觀察回呼的 return 為固定全文，沒有把前置檢查所取得的實際欄位值插入 observed。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/source-snapshot/lesson07_overhang.py",
+        "sha256": "b1f329cf514b648020baf783b56ceae641f6a63503aa3fea450765b5ba5642c6",
+        "line": 213
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-overhang-demo-v001",
+      "step": "07-03",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-03-body_baseline-controls.png",
+      "sha256": "eeed2a415d1a609be54f2c1fc30cfac7409850ed4426202ef2337a5a8730ebf3",
+      "observedSha256": "950857ad240ddb0bb4c0b241b46ef60901d866428fff7ff1054b881a10f82e18",
+      "observedKind": "mixed",
+      "reason": "原生Min/Max角度為實讀，開啟／Overhang／世界−Z／Solid／Xray文字為固定敘述。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/source-snapshot/lesson07_overhang.py",
+        "sha256": "b1f329cf514b648020baf783b56ceae641f6a63503aa3fea450765b5ba5642c6",
+        "line": 175
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-overhang-demo-v001",
+      "step": "07-03",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-04-body_baseline-analysis.png",
+      "sha256": "f49f0a5f0c0ca9f72cb6208e0ad71fd781ce36a7ccfaae2287739d8bf6a5e577",
+      "observedSha256": "5508231322fa126b47deb45a3cf473d3567ccbaac906d230bf816fbe15cf17ed",
+      "observedKind": "mixed",
+      "reason": "外框、床接觸／離床面統計為讀值，非GPU面數／非切片結論為固定解說。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/source-snapshot/lesson07_overhang.py",
+        "sha256": "b1f329cf514b648020baf783b56ceae641f6a63503aa3fea450765b5ba5642c6",
+        "line": 188
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-overhang-demo-v001",
+      "step": "07-03",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-05-body_candidate-controls.png",
+      "sha256": "ae2b92aa3d09015b0eebb69320b3cec6eb6f2bef803ed252de71aaf5c904f6e1",
+      "observedSha256": "adee76636cb2dc0c61a8647fc5f2e2183b5abf588516e963ba4d1fb6e6d60cf7",
+      "observedKind": "mixed",
+      "reason": "原生Min/Max角度為實讀，開啟／Overhang／世界−Z／Solid／Xray文字為固定敘述。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/source-snapshot/lesson07_overhang.py",
+        "sha256": "b1f329cf514b648020baf783b56ceae641f6a63503aa3fea450765b5ba5642c6",
+        "line": 175
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-overhang-demo-v001",
+      "step": "07-03",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-06-body_candidate-analysis.png",
+      "sha256": "c03a6f17d0432d03b9790801f6a68e473a5dc3eb095bca11259c50af6b6940e5",
+      "observedSha256": "bc49479a50109a0181a4b013542d4a7efe85e4506bd9432325ddc083feb0813b",
+      "observedKind": "mixed",
+      "reason": "外框、床接觸／離床面統計為讀值，非GPU面數／非切片結論為固定解說。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/source-snapshot/lesson07_overhang.py",
+        "sha256": "b1f329cf514b648020baf783b56ceae641f6a63503aa3fea450765b5ba5642c6",
+        "line": 188
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-overhang-demo-v001",
+      "step": "07-03",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-07-lid_baseline-controls.png",
+      "sha256": "c2102bc64d6eb2118032c578409305f1fe3654587778e1edf950d93840de0c55",
+      "observedSha256": "7eb054b6372725ffd124bda84abd51839f7b448d4a1d1ea7cab7828fa6976bf0",
+      "observedKind": "mixed",
+      "reason": "原生Min/Max角度為實讀，開啟／Overhang／世界−Z／Solid／Xray文字為固定敘述。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/source-snapshot/lesson07_overhang.py",
+        "sha256": "b1f329cf514b648020baf783b56ceae641f6a63503aa3fea450765b5ba5642c6",
+        "line": 175
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-overhang-demo-v001",
+      "step": "07-03",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-08-lid_baseline-analysis.png",
+      "sha256": "a260dcf271361a95899755dc6b1f9b0adbdf2faa7557441add8c5fbf3e5f18da",
+      "observedSha256": "0959fb60421aaeb3d5a970b1de351218c034355b22d8641a2a9da29c3951389d",
+      "observedKind": "mixed",
+      "reason": "外框、床接觸／離床面統計為讀值，非GPU面數／非切片結論為固定解說。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/source-snapshot/lesson07_overhang.py",
+        "sha256": "b1f329cf514b648020baf783b56ceae641f6a63503aa3fea450765b5ba5642c6",
+        "line": 188
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-overhang-demo-v001",
+      "step": "07-03",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-09-lid_candidate-controls.png",
+      "sha256": "d56f28ecfbc1d2625cac3b526468ab815851ef09101f81c1ed40a7950d9fe03c",
+      "observedSha256": "919a4733f0f8847e0825eea1508ba851a01b7ed2a1cc42ab17a40b1d8ff42187",
+      "observedKind": "mixed",
+      "reason": "原生Min/Max角度為實讀，開啟／Overhang／世界−Z／Solid／Xray文字為固定敘述。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/source-snapshot/lesson07_overhang.py",
+        "sha256": "b1f329cf514b648020baf783b56ceae641f6a63503aa3fea450765b5ba5642c6",
+        "line": 175
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-overhang-demo-v001",
+      "step": "07-03",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-10-lid_candidate-analysis.png",
+      "sha256": "d7e18cd95f29cfbcb84e6ef8b51b19535f2e74b10eeaea264f4abfd92f3e8e3b",
+      "observedSha256": "7b9e6641752b2a8015b337b0813a2c72e3e6f5e0236cec85cd0b1a97b430bb35",
+      "observedKind": "mixed",
+      "reason": "外框、床接觸／離床面統計為讀值，非GPU面數／非切片結論為固定解說。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/source-snapshot/lesson07_overhang.py",
+        "sha256": "b1f329cf514b648020baf783b56ceae641f6a63503aa3fea450765b5ba5642c6",
+        "line": 188
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-overhang-demo-v001",
+      "step": "07-03",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-11-lid-candidate-profile.png",
+      "sha256": "99f3ca7c6885b1c562b205ffd565b6630b3dd1d965c82ee1bee8a9e3b206cbef",
+      "observedSha256": "7b9e6641752b2a8015b337b0813a2c72e3e6f5e0236cec85cd0b1a97b430bb35",
+      "observedKind": "mixed",
+      "reason": "外框、床接觸／離床面統計為讀值，非GPU面數／非切片結論為固定解說。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/source-snapshot/lesson07_overhang.py",
+        "sha256": "b1f329cf514b648020baf783b56ceae641f6a63503aa3fea450765b5ba5642c6",
+        "line": 188
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-overhang-demo-v001",
+      "step": "07-03",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-12-candidate-layout.png",
+      "sha256": "01508cf7b1b0b8978491626498a3e4d03ecee1479eff7e0b430e6e2b4be8ba22",
+      "observedSha256": "848dda9ebef4e448ce2cd3ea3818bbbfa1465a5a8d878226b93ef44142623222",
+      "observedKind": "mixed",
+      "reason": "X投影間距為讀值，world Z0／工具未動／未核准配置為固定敘述。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/source-snapshot/lesson07_overhang.py",
+        "sha256": "b1f329cf514b648020baf783b56ceae641f6a63503aa3fea450765b5ba5642c6",
+        "line": 255
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-overhang-demo-v001",
+      "step": "07-03",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-14-saved.png",
+      "sha256": "f85fb794d6b4dd889f3dd20c3c1f5fff17ce5f632f0ecdf8eab1e69873451708",
+      "observedSha256": "0e4c8c9f8bc114caff3644533b17980c4e8d8ad1b5177fa92c5cfa8d3e54ed9d",
+      "observedKind": "mixed",
+      "reason": "檔名、大小或hash為動態結果，來源／副本／舊版本未改為固定附加敘述。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/source-snapshot/lesson07_overhang.py",
+        "sha256": "b1f329cf514b648020baf783b56ceae641f6a63503aa3fea450765b5ba5642c6",
+        "line": 272
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-overhang-demo-v001",
+      "step": "07-03",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/07-03-16-reopened-verified.png",
+      "sha256": "671959f98066449519611df236ddff019281ef8c0a09d95a6b336d06cc533762",
+      "observedSha256": "a0b81daf2e253e8a8722a478acb9acf49f6525bc7e5ba7efde849d167fa7873a",
+      "observedKind": "scripted_description",
+      "reason": "觀察回呼的 return 為固定全文，沒有把前置檢查所取得的實際欄位值插入 observed。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/source-snapshot/lesson07_overhang.py",
+        "sha256": "b1f329cf514b648020baf783b56ceae641f6a63503aa3fea450765b5ba5642c6",
+        "line": 305
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-snap-export-demo-v001",
+      "step": "07-04",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-02-body-source-selected.png",
+      "sha256": "25aece8c5aafe6484d02d09998acc95bf1074a4aa3d77a006e460de43c2c79f9",
+      "observedSha256": "4863f1837db2ac9f004c942cff9fb8cedd450f64dfeae0e3fbbb616fd20616d9",
+      "observedKind": "mixed",
+      "reason": "物件軸Dimensions、世界外框與bounds為讀值，旋轉保留／未Apply／隱藏為固定敘述。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/source-snapshot/lesson07_snap_export.py",
+        "sha256": "5b50f2b190aa1577639e33f289506143a344f78449242bd8f99c4fcf833af83d",
+        "line": 201
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-snap-export-demo-v001",
+      "step": "07-04",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-03-body-source-profile.png",
+      "sha256": "9ded1e6ae13eb76037f280eabc232b3a477c099c7a210c631d4afa8e635d0f07",
+      "observedSha256": "4863f1837db2ac9f004c942cff9fb8cedd450f64dfeae0e3fbbb616fd20616d9",
+      "observedKind": "mixed",
+      "reason": "物件軸Dimensions、世界外框與bounds為讀值，旋轉保留／未Apply／隱藏為固定敘述。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/source-snapshot/lesson07_snap_export.py",
+        "sha256": "5b50f2b190aa1577639e33f289506143a344f78449242bd8f99c4fcf833af83d",
+        "line": 201
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-snap-export-demo-v001",
+      "step": "07-04",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-06-body-export-options.png",
+      "sha256": "0dcb53baedfe2fb310a691c836bb7a9eda4ac9009613fb00106db98319d36a56",
+      "observedSha256": "152b50d4587c6b3a0a2622b2cd6f230c0c944aaf2b97802291d6dca1916c0b4a",
+      "observedKind": "scripted_description",
+      "reason": "只插入計畫件名或計畫檔名，其餘為固定選項文字；不是將實際選項逐欄讀回後組成的字串。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/source-snapshot/lesson07_snap_export.py",
+        "sha256": "5b50f2b190aa1577639e33f289506143a344f78449242bd8f99c4fcf833af83d",
+        "line": 232
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-snap-export-demo-v001",
+      "step": "07-04",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-07-body-stl-checked.png",
+      "sha256": "9de8f23e51c7a527168defe1de33b5feac1cb31246b42c00f7b7daaa8f5e0c6d",
+      "observedSha256": "cf16cf8c6eceb25f16f3e3bfb7f0c06ff52c9a6119e6688b382882966637582d",
+      "observedKind": "mixed",
+      "reason": "STL大小／面數／外框／最低Z／hash為動態結果，單殼／Non Manifold 0為固定敘述。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/source-snapshot/lesson07_snap_export.py",
+        "sha256": "5b50f2b190aa1577639e33f289506143a344f78449242bd8f99c4fcf833af83d",
+        "line": 247
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-snap-export-demo-v001",
+      "step": "07-04",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-09-lid-source-selected.png",
+      "sha256": "6e81d9a9bc0da28dcf24e9d8db8a6905721be173fe77543b0c58603432c095e3",
+      "observedSha256": "734c76ed00fe386ed2914cb8712657bc5a4f51fd19b2ed0a2d399634e5f4fecb",
+      "observedKind": "mixed",
+      "reason": "物件軸Dimensions、世界外框與bounds為讀值，旋轉保留／未Apply／隱藏為固定敘述。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/source-snapshot/lesson07_snap_export.py",
+        "sha256": "5b50f2b190aa1577639e33f289506143a344f78449242bd8f99c4fcf833af83d",
+        "line": 201
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-snap-export-demo-v001",
+      "step": "07-04",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-10-lid-source-profile.png",
+      "sha256": "5887645d79efdda6f3429286e5467a503cf42d9cd67a1883166cdfd7da6e8c50",
+      "observedSha256": "734c76ed00fe386ed2914cb8712657bc5a4f51fd19b2ed0a2d399634e5f4fecb",
+      "observedKind": "mixed",
+      "reason": "物件軸Dimensions、世界外框與bounds為讀值，旋轉保留／未Apply／隱藏為固定敘述。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/source-snapshot/lesson07_snap_export.py",
+        "sha256": "5b50f2b190aa1577639e33f289506143a344f78449242bd8f99c4fcf833af83d",
+        "line": 201
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-snap-export-demo-v001",
+      "step": "07-04",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-13-lid-export-options.png",
+      "sha256": "529a3a39621373e6c3936ca84b0dd57df94c4979dc63b91c24f7805bcc4a3b6c",
+      "observedSha256": "2a6a7e794485827c9c4dde175e1784ac75ad9e13e6f11f1b1a46bded6c7b6264",
+      "observedKind": "scripted_description",
+      "reason": "只插入計畫件名或計畫檔名，其餘為固定選項文字；不是將實際選項逐欄讀回後組成的字串。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/source-snapshot/lesson07_snap_export.py",
+        "sha256": "5b50f2b190aa1577639e33f289506143a344f78449242bd8f99c4fcf833af83d",
+        "line": 232
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-snap-export-demo-v001",
+      "step": "07-04",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-14-lid-stl-checked.png",
+      "sha256": "de2465afcf4f52010e054dc123f3fc31574cd721305fb0c71e0f9534264a34eb",
+      "observedSha256": "9486c571b6c3dd666867e2d85c369b59f0337192583208cb9175bb07c540c666",
+      "observedKind": "mixed",
+      "reason": "STL大小／面數／外框／最低Z／hash為動態結果，單殼／Non Manifold 0為固定敘述。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/source-snapshot/lesson07_snap_export.py",
+        "sha256": "5b50f2b190aa1577639e33f289506143a344f78449242bd8f99c4fcf833af83d",
+        "line": 247
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-snap-export-demo-v001",
+      "step": "07-04",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-15-empty-mm-scene.png",
+      "sha256": "4adc8aebf5e4a772bee8fce4eb6b599831c2910744002fc3fb9242704c87f51c",
+      "observedSha256": "6a52cc4e1a9d02f9b91ebd753941576e16f895f9ad9bc7e36ca504ac09c1526d",
+      "observedKind": "scripted_description",
+      "reason": "觀察回呼的 return 為固定全文，沒有把前置檢查所取得的實際欄位值插入 observed。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/source-snapshot/lesson07_snap_export.py",
+        "sha256": "5b50f2b190aa1577639e33f289506143a344f78449242bd8f99c4fcf833af83d",
+        "line": 258
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-snap-export-demo-v001",
+      "step": "07-04",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-16-body-import-dialog.png",
+      "sha256": "9d1ebf39c7724cc9b9949163e0632b01787da6ebbfe7a5bdc0baf9fd8c21a2c4",
+      "observedSha256": "c7f17801147d0e0665f18cc37937d6842e08e682174d7e7788bc4e26ef14d916",
+      "observedKind": "scripted_description",
+      "reason": "只插入計畫件名或計畫檔名，其餘為固定選項文字；不是將實際選項逐欄讀回後組成的字串。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/source-snapshot/lesson07_snap_export.py",
+        "sha256": "5b50f2b190aa1577639e33f289506143a344f78449242bd8f99c4fcf833af83d",
+        "line": 294
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-snap-export-demo-v001",
+      "step": "07-04",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-17-body-reimport-dimensions.png",
+      "sha256": "119395eb4abc4d935d65e166660c7cdb2bc738e62738a3eaf68d07da08fd49e3",
+      "observedSha256": "5ce2413603b96e52363910ed7fac6ef7d720cf13b8f1091b864b029cd1580dc6",
+      "observedKind": "mixed",
+      "reason": "重新匯入Dimensions與世界外框為讀值，旋轉0／Scale1／修改器0及原點解說為固定文字。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/source-snapshot/lesson07_snap_export.py",
+        "sha256": "5b50f2b190aa1577639e33f289506143a344f78449242bd8f99c4fcf833af83d",
+        "line": 274
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-snap-export-demo-v001",
+      "step": "07-04",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-18-body-reimport-profile.png",
+      "sha256": "4206d415221f58505c95dc9bac35e25e1b8e544cc028a13c492b364039970b67",
+      "observedSha256": "5ce2413603b96e52363910ed7fac6ef7d720cf13b8f1091b864b029cd1580dc6",
+      "observedKind": "mixed",
+      "reason": "重新匯入Dimensions與世界外框為讀值，旋轉0／Scale1／修改器0及原點解說為固定文字。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/source-snapshot/lesson07_snap_export.py",
+        "sha256": "5b50f2b190aa1577639e33f289506143a344f78449242bd8f99c4fcf833af83d",
+        "line": 274
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-snap-export-demo-v001",
+      "step": "07-04",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-19-body-reimport-non-manifold.png",
+      "sha256": "da4090e7382db2237e98875efd85f9ee44c7d0bc6c3159266cf6c4fbed0092ff",
+      "observedSha256": "75ee602353efa7033500dd139010f3c9aebb2f107b589b9dddcbcc7427403251",
+      "observedKind": "scripted_description",
+      "reason": "只插入角色名稱，Non Manifold 0／所選0邊等為固定敘述；前面的檢查結果沒有直接序列化到此字串。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/source-snapshot/lesson07_snap_export.py",
+        "sha256": "5b50f2b190aa1577639e33f289506143a344f78449242bd8f99c4fcf833af83d",
+        "line": 282
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-snap-export-demo-v001",
+      "step": "07-04",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-20-lid-import-dialog.png",
+      "sha256": "e83e42d85aa2b998a3ff943aa55802fac1903458fe95623a46f60f13d6660517",
+      "observedSha256": "8fabf3a7ea2b6c079a95501874e06b2453c1e51808997315c1228235547b2d27",
+      "observedKind": "scripted_description",
+      "reason": "只插入計畫件名或計畫檔名，其餘為固定選項文字；不是將實際選項逐欄讀回後組成的字串。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/source-snapshot/lesson07_snap_export.py",
+        "sha256": "5b50f2b190aa1577639e33f289506143a344f78449242bd8f99c4fcf833af83d",
+        "line": 294
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-snap-export-demo-v001",
+      "step": "07-04",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-21-lid-reimport-dimensions.png",
+      "sha256": "1870d4391e17be49e286759fcf23b5ff726966ba26ea2a4adb08caeee023dee8",
+      "observedSha256": "0df7c73792c1edf9a8cc2f377d3c2bc90d93918c97b8cff1f97e59930022d748",
+      "observedKind": "mixed",
+      "reason": "重新匯入Dimensions與世界外框為讀值，旋轉0／Scale1／修改器0及原點解說為固定文字。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/source-snapshot/lesson07_snap_export.py",
+        "sha256": "5b50f2b190aa1577639e33f289506143a344f78449242bd8f99c4fcf833af83d",
+        "line": 274
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-snap-export-demo-v001",
+      "step": "07-04",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-22-lid-reimport-profile.png",
+      "sha256": "a502dcc49b2fa1cb643295d04fae0e35023fddc739c3272c28eb8a9d37374332",
+      "observedSha256": "0df7c73792c1edf9a8cc2f377d3c2bc90d93918c97b8cff1f97e59930022d748",
+      "observedKind": "mixed",
+      "reason": "重新匯入Dimensions與世界外框為讀值，旋轉0／Scale1／修改器0及原點解說為固定文字。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/source-snapshot/lesson07_snap_export.py",
+        "sha256": "5b50f2b190aa1577639e33f289506143a344f78449242bd8f99c4fcf833af83d",
+        "line": 274
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-snap-export-demo-v001",
+      "step": "07-04",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-23-lid-reimport-non-manifold.png",
+      "sha256": "41a3b5b82865be5945ed1115af79c586473fe62baeae23c28ca0cb5fedace95d",
+      "observedSha256": "a07a25b24b61fb9e49fc3ec7fd38289402ed4576edaefbe7e99873e99ab352f1",
+      "observedKind": "scripted_description",
+      "reason": "只插入角色名稱，Non Manifold 0／所選0邊等為固定敘述；前面的檢查結果沒有直接序列化到此字串。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/source-snapshot/lesson07_snap_export.py",
+        "sha256": "5b50f2b190aa1577639e33f289506143a344f78449242bd8f99c4fcf833af83d",
+        "line": 282
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-snap-export-demo-v001",
+      "step": "07-04",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-24-reimport-layout.png",
+      "sha256": "1c60b2b28d47b635a123f4e595f0f207824d1ae1f72d6c5b076f15e86ac72cd3",
+      "observedSha256": "0ec134d0034ea875bf9d2f656fbd1467a9846784fe7501bf0fabde1cb61441e4",
+      "observedKind": "mixed",
+      "reason": "X投影間距為實讀，候選擺位／最低Z約0／未核對床幅與支撐為固定敘述。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/source-snapshot/lesson07_snap_export.py",
+        "sha256": "5b50f2b190aa1577639e33f289506143a344f78449242bd8f99c4fcf833af83d",
+        "line": 319
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-snap-export-demo-v001",
+      "step": "07-04",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/07-04-25-exports-verified.png",
+      "sha256": "1c60b2b28d47b635a123f4e595f0f207824d1ae1f72d6c5b076f15e86ac72cd3",
+      "observedSha256": "3b0aa08a5e1bc70c380dec0ceb1d8c1e17781e473ac559fac8c4f171792fe8b4",
+      "observedKind": "scripted_description",
+      "reason": "觀察回呼的 return 為固定全文，沒有把前置檢查所取得的實際欄位值插入 observed。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/source-snapshot/lesson07_snap_export.py",
+        "sha256": "5b50f2b190aa1577639e33f289506143a344f78449242bd8f99c4fcf833af83d",
+        "line": 353
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-coupon-export-demo-v001",
+      "step": "07-05",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-02-A_L19-source-selected.png",
+      "sha256": "e1365ce02ec981c8b7bb29d5b248af3812f0bbbb9436c36510146df9c19602a6",
+      "observedSha256": "9f249f1ad34f749b0734de247365fcd494f5480dbebcab3686ab148b5f567a3c",
+      "observedKind": "mixed",
+      "reason": "物件軸Dimensions與world外框為讀值，Ry90／hidden／七物件未改為固定敘述。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/source-snapshot/lesson07_coupon_export.py",
+        "sha256": "77f2995c7adece8783977800d4a33947a36c21456f86965bc3d86d0e6a5e4e5d",
+        "line": 196
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-coupon-export-demo-v001",
+      "step": "07-05",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-03-A_L19-source-profile.png",
+      "sha256": "3af56ba44c5ee8aa84a9ab8327d0f0bc0d43becf23077d01ccde593157bcb33a",
+      "observedSha256": "9f249f1ad34f749b0734de247365fcd494f5480dbebcab3686ab148b5f567a3c",
+      "observedKind": "mixed",
+      "reason": "物件軸Dimensions與world外框為讀值，Ry90／hidden／七物件未改為固定敘述。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/source-snapshot/lesson07_coupon_export.py",
+        "sha256": "77f2995c7adece8783977800d4a33947a36c21456f86965bc3d86d0e6a5e4e5d",
+        "line": 196
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-coupon-export-demo-v001",
+      "step": "07-05",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-06-A_L19-export-options.png",
+      "sha256": "787fb50995b0e44804a9248170bd2d1e77cb9be6527929af45df330d68b3e796",
+      "observedSha256": "7eda754c60dfaa6ea319de3253c969c5fddbbf655d2fdc02d2b6c959761bf063",
+      "observedKind": "scripted_description",
+      "reason": "只插入計畫件名或計畫檔名，其餘為固定選項文字；不是將實際選項逐欄讀回後組成的字串。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/source-snapshot/lesson07_coupon_export.py",
+        "sha256": "77f2995c7adece8783977800d4a33947a36c21456f86965bc3d86d0e6a5e4e5d",
+        "line": 235
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-coupon-export-demo-v001",
+      "step": "07-05",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-07-A_L19-stl-checked.png",
+      "sha256": "d498056d1e14b4cc257d2270d325408f568d9f01cc84e3cc813a3d5d3a60a207",
+      "observedSha256": "918d716cb4c948af922b3047ebb00c16aa7cea43082531085a39ead5e5e76fe2",
+      "observedKind": "mixed",
+      "reason": "STL大小／面數／外框／最低Z／hash為動態結果，單殼／Non Manifold 0為固定敘述。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/source-snapshot/lesson07_coupon_export.py",
+        "sha256": "77f2995c7adece8783977800d4a33947a36c21456f86965bc3d86d0e6a5e4e5d",
+        "line": 250
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-coupon-export-demo-v001",
+      "step": "07-05",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-09-B_L17-source-selected.png",
+      "sha256": "5612dc335babe2f0c7746247e75696a421e7150906893c95209bd0915c38ccb9",
+      "observedSha256": "c181e9acb8d2fc757673a630e2461df5c088ea0cef58d58cdaccc36d7bc3ce52",
+      "observedKind": "mixed",
+      "reason": "物件軸Dimensions與world外框為讀值，Ry90／hidden／七物件未改為固定敘述。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/source-snapshot/lesson07_coupon_export.py",
+        "sha256": "77f2995c7adece8783977800d4a33947a36c21456f86965bc3d86d0e6a5e4e5d",
+        "line": 196
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-coupon-export-demo-v001",
+      "step": "07-05",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-10-B_L17-source-profile.png",
+      "sha256": "0b334e28a3fd16511559b8f2a632e6c6728740e8a6c3dafdbec204caa80360d9",
+      "observedSha256": "c181e9acb8d2fc757673a630e2461df5c088ea0cef58d58cdaccc36d7bc3ce52",
+      "observedKind": "mixed",
+      "reason": "物件軸Dimensions與world外框為讀值，Ry90／hidden／七物件未改為固定敘述。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/source-snapshot/lesson07_coupon_export.py",
+        "sha256": "77f2995c7adece8783977800d4a33947a36c21456f86965bc3d86d0e6a5e4e5d",
+        "line": 196
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-coupon-export-demo-v001",
+      "step": "07-05",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-13-B_L17-export-options.png",
+      "sha256": "5b3a83b925809fbe66987d616e918c3269014c416da0ae5ceea5bad6881a29ad",
+      "observedSha256": "f633194ff66e9f85eb378acb0e80db0871e791596963192bc812ea3e775d4269",
+      "observedKind": "scripted_description",
+      "reason": "只插入計畫件名或計畫檔名，其餘為固定選項文字；不是將實際選項逐欄讀回後組成的字串。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/source-snapshot/lesson07_coupon_export.py",
+        "sha256": "77f2995c7adece8783977800d4a33947a36c21456f86965bc3d86d0e6a5e4e5d",
+        "line": 235
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-coupon-export-demo-v001",
+      "step": "07-05",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-14-B_L17-stl-checked.png",
+      "sha256": "91521b225ba9f96c7344f9fba9bce334d59a59af7a0d0d05587f8d08f815399f",
+      "observedSha256": "dd20c8009e061d62405290301039caf472c213fa707e3c1a29bbc807c0284b94",
+      "observedKind": "mixed",
+      "reason": "STL大小／面數／外框／最低Z／hash為動態結果，單殼／Non Manifold 0為固定敘述。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/source-snapshot/lesson07_coupon_export.py",
+        "sha256": "77f2995c7adece8783977800d4a33947a36c21456f86965bc3d86d0e6a5e4e5d",
+        "line": 250
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-coupon-export-demo-v001",
+      "step": "07-05",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-16-C_L21-source-selected.png",
+      "sha256": "360c2b8266050f172745eec7b3470e85269c34f75ec84faceb2fe93f963d290e",
+      "observedSha256": "35005dd458a57eddf4d05cb3569b22b213cfca001c8c898273c81ecf990f6ce8",
+      "observedKind": "mixed",
+      "reason": "物件軸Dimensions與world外框為讀值，Ry90／hidden／七物件未改為固定敘述。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/source-snapshot/lesson07_coupon_export.py",
+        "sha256": "77f2995c7adece8783977800d4a33947a36c21456f86965bc3d86d0e6a5e4e5d",
+        "line": 196
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-coupon-export-demo-v001",
+      "step": "07-05",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-17-C_L21-source-profile.png",
+      "sha256": "2c9621c7078a66636d9232167c37d1e6232524e46a9131378a29ae2a78166785",
+      "observedSha256": "35005dd458a57eddf4d05cb3569b22b213cfca001c8c898273c81ecf990f6ce8",
+      "observedKind": "mixed",
+      "reason": "物件軸Dimensions與world外框為讀值，Ry90／hidden／七物件未改為固定敘述。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/source-snapshot/lesson07_coupon_export.py",
+        "sha256": "77f2995c7adece8783977800d4a33947a36c21456f86965bc3d86d0e6a5e4e5d",
+        "line": 196
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-coupon-export-demo-v001",
+      "step": "07-05",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-20-C_L21-export-options.png",
+      "sha256": "9ea4b96d526988f6c327ad563b26ffe2391d21f4fd5d980c866be13a2b40c113",
+      "observedSha256": "22a74110c15f2ead439234ddd6d1cee104145ad4eb7a8e3a16845f67ce91b094",
+      "observedKind": "scripted_description",
+      "reason": "只插入計畫件名或計畫檔名，其餘為固定選項文字；不是將實際選項逐欄讀回後組成的字串。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/source-snapshot/lesson07_coupon_export.py",
+        "sha256": "77f2995c7adece8783977800d4a33947a36c21456f86965bc3d86d0e6a5e4e5d",
+        "line": 235
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-coupon-export-demo-v001",
+      "step": "07-05",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-21-C_L21-stl-checked.png",
+      "sha256": "9b88cfd2d30b32be86813e109bbe306ddb229a05159e37d24820ea70705fd4a7",
+      "observedSha256": "f8d50d322dedfe9f69f751391fc89b49f39392db1bc001f8d32b15b63d06d182",
+      "observedKind": "mixed",
+      "reason": "STL大小／面數／外框／最低Z／hash為動態結果，單殼／Non Manifold 0為固定敘述。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/source-snapshot/lesson07_coupon_export.py",
+        "sha256": "77f2995c7adece8783977800d4a33947a36c21456f86965bc3d86d0e6a5e4e5d",
+        "line": 250
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-coupon-export-demo-v001",
+      "step": "07-05",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-22-empty-mm-scene.png",
+      "sha256": "4adc8aebf5e4a772bee8fce4eb6b599831c2910744002fc3fb9242704c87f51c",
+      "observedSha256": "6a52cc4e1a9d02f9b91ebd753941576e16f895f9ad9bc7e36ca504ac09c1526d",
+      "observedKind": "scripted_description",
+      "reason": "觀察回呼的 return 為固定全文，沒有把前置檢查所取得的實際欄位值插入 observed。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/source-snapshot/lesson07_coupon_export.py",
+        "sha256": "77f2995c7adece8783977800d4a33947a36c21456f86965bc3d86d0e6a5e4e5d",
+        "line": 261
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-coupon-export-demo-v001",
+      "step": "07-05",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-23-A_L19-import-dialog.png",
+      "sha256": "8a1817bf4a269f9421ab95a42ec2dc03fcfe70be8121323980a717f526b981ac",
+      "observedSha256": "6324af3ab34e9d68ae1196a50a92cf678c66a791475e2beb18008f4f19a8615d",
+      "observedKind": "scripted_description",
+      "reason": "只插入計畫件名或計畫檔名，其餘為固定選項文字；不是將實際選項逐欄讀回後組成的字串。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/source-snapshot/lesson07_coupon_export.py",
+        "sha256": "77f2995c7adece8783977800d4a33947a36c21456f86965bc3d86d0e6a5e4e5d",
+        "line": 297
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-coupon-export-demo-v001",
+      "step": "07-05",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-24-A_L19-reimport-dimensions.png",
+      "sha256": "5a3634959a94caac6d6a50ad0a4aed7b79dc5a0f0ddaf9e4abaf4c8f54120cb0",
+      "observedSha256": "edbd0a0fb205f79a574f2270f6bfc1e19f55e2f29bcbdec2e3448467595fdfc7",
+      "observedKind": "mixed",
+      "reason": "重新匯入尺寸為讀值，旋轉0／Scale1／修改器0及原點解說為固定文字。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/source-snapshot/lesson07_coupon_export.py",
+        "sha256": "77f2995c7adece8783977800d4a33947a36c21456f86965bc3d86d0e6a5e4e5d",
+        "line": 277
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-coupon-export-demo-v001",
+      "step": "07-05",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-25-A_L19-reimport-profile.png",
+      "sha256": "3cb3be0a5808fa8a4cc732e74ea054e62d306db47e96b0abfab5b86fcd3d8f07",
+      "observedSha256": "edbd0a0fb205f79a574f2270f6bfc1e19f55e2f29bcbdec2e3448467595fdfc7",
+      "observedKind": "mixed",
+      "reason": "重新匯入尺寸為讀值，旋轉0／Scale1／修改器0及原點解說為固定文字。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/source-snapshot/lesson07_coupon_export.py",
+        "sha256": "77f2995c7adece8783977800d4a33947a36c21456f86965bc3d86d0e6a5e4e5d",
+        "line": 277
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-coupon-export-demo-v001",
+      "step": "07-05",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-26-A_L19-reimport-non-manifold.png",
+      "sha256": "ae3cd5f6486259fd2649a686768838e75f2b548f7f0e79e882b5be05d4f9d65f",
+      "observedSha256": "490ff0a09861cda04a6a933d4fe3fab1f8befd6ddf3f597ed9bb82ef509a4c88",
+      "observedKind": "scripted_description",
+      "reason": "只插入角色名稱，Non Manifold 0／所選0邊等為固定敘述；前面的檢查結果沒有直接序列化到此字串。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/source-snapshot/lesson07_coupon_export.py",
+        "sha256": "77f2995c7adece8783977800d4a33947a36c21456f86965bc3d86d0e6a5e4e5d",
+        "line": 285
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-coupon-export-demo-v001",
+      "step": "07-05",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-27-B_L17-import-dialog.png",
+      "sha256": "9ad6b01fa9853efafa8da96c211dd38b5355a0dc4f1e92c7e7c0e90f4f361d0f",
+      "observedSha256": "b2f0a8d0898b8e0dbc1a4e2d2c64c731349d94a0f1efe12e775f136dd1509e2c",
+      "observedKind": "scripted_description",
+      "reason": "只插入計畫件名或計畫檔名，其餘為固定選項文字；不是將實際選項逐欄讀回後組成的字串。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/source-snapshot/lesson07_coupon_export.py",
+        "sha256": "77f2995c7adece8783977800d4a33947a36c21456f86965bc3d86d0e6a5e4e5d",
+        "line": 297
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-coupon-export-demo-v001",
+      "step": "07-05",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-28-B_L17-reimport-dimensions.png",
+      "sha256": "902135e64eab461cb83502e97f9f63ebbf772214512077a0505c8782377c92a3",
+      "observedSha256": "9ffbcffd1dd74fd560ca92861bc123d8d42d761502baa893c7efe0972e58e2f0",
+      "observedKind": "mixed",
+      "reason": "重新匯入尺寸為讀值，旋轉0／Scale1／修改器0及原點解說為固定文字。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/source-snapshot/lesson07_coupon_export.py",
+        "sha256": "77f2995c7adece8783977800d4a33947a36c21456f86965bc3d86d0e6a5e4e5d",
+        "line": 277
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-coupon-export-demo-v001",
+      "step": "07-05",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-29-B_L17-reimport-profile.png",
+      "sha256": "f5ef0a75f65314ccdc29a4e85a97638f10ae64a8cb41a3d3207b87befa29a951",
+      "observedSha256": "9ffbcffd1dd74fd560ca92861bc123d8d42d761502baa893c7efe0972e58e2f0",
+      "observedKind": "mixed",
+      "reason": "重新匯入尺寸為讀值，旋轉0／Scale1／修改器0及原點解說為固定文字。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/source-snapshot/lesson07_coupon_export.py",
+        "sha256": "77f2995c7adece8783977800d4a33947a36c21456f86965bc3d86d0e6a5e4e5d",
+        "line": 277
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-coupon-export-demo-v001",
+      "step": "07-05",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-30-B_L17-reimport-non-manifold.png",
+      "sha256": "0487bd01ba7988982445ea40e0cf78b023d261fbb42c275b284f681cfafe90d5",
+      "observedSha256": "76187da758e82b005dece3ad0db4a9c4e44deb41699a63400f654a36d79e6a1c",
+      "observedKind": "scripted_description",
+      "reason": "只插入角色名稱，Non Manifold 0／所選0邊等為固定敘述；前面的檢查結果沒有直接序列化到此字串。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/source-snapshot/lesson07_coupon_export.py",
+        "sha256": "77f2995c7adece8783977800d4a33947a36c21456f86965bc3d86d0e6a5e4e5d",
+        "line": 285
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-coupon-export-demo-v001",
+      "step": "07-05",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-31-C_L21-import-dialog.png",
+      "sha256": "cdb857308cc71d91ba8910b32055291c9947e85578959514bd03ce3e6dc43059",
+      "observedSha256": "7b210d1381909afa605f9f2c627149bcc66056705d23e5f5f160fe32e0db95d0",
+      "observedKind": "scripted_description",
+      "reason": "只插入計畫件名或計畫檔名，其餘為固定選項文字；不是將實際選項逐欄讀回後組成的字串。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/source-snapshot/lesson07_coupon_export.py",
+        "sha256": "77f2995c7adece8783977800d4a33947a36c21456f86965bc3d86d0e6a5e4e5d",
+        "line": 297
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-coupon-export-demo-v001",
+      "step": "07-05",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-32-C_L21-reimport-dimensions.png",
+      "sha256": "9b21f1f1224b36e130db26148fc57bc5b5f06bb8c21685a66fb743891903e6aa",
+      "observedSha256": "2cb3d32b3a895e840a1b19268a2c01d850b8d95643e472eb7f6f6e28da103f7d",
+      "observedKind": "mixed",
+      "reason": "重新匯入尺寸為讀值，旋轉0／Scale1／修改器0及原點解說為固定文字。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/source-snapshot/lesson07_coupon_export.py",
+        "sha256": "77f2995c7adece8783977800d4a33947a36c21456f86965bc3d86d0e6a5e4e5d",
+        "line": 277
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-coupon-export-demo-v001",
+      "step": "07-05",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-33-C_L21-reimport-profile.png",
+      "sha256": "afae458cd829be9adb40cb33f6227f7883827c9cbf661b566506792d3c4f6f87",
+      "observedSha256": "2cb3d32b3a895e840a1b19268a2c01d850b8d95643e472eb7f6f6e28da103f7d",
+      "observedKind": "mixed",
+      "reason": "重新匯入尺寸為讀值，旋轉0／Scale1／修改器0及原點解說為固定文字。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/source-snapshot/lesson07_coupon_export.py",
+        "sha256": "77f2995c7adece8783977800d4a33947a36c21456f86965bc3d86d0e6a5e4e5d",
+        "line": 277
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-coupon-export-demo-v001",
+      "step": "07-05",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-34-C_L21-reimport-non-manifold.png",
+      "sha256": "7b4c946dd9fe7410657b9155f6180c9b62519750d65a2735cb441ed61e0a42ca",
+      "observedSha256": "be4ca32470b67e944c64f38074fc5beaddb9565e4bfea89d41b7452f2da28180",
+      "observedKind": "scripted_description",
+      "reason": "只插入角色名稱，Non Manifold 0／所選0邊等為固定敘述；前面的檢查結果沒有直接序列化到此字串。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/source-snapshot/lesson07_coupon_export.py",
+        "sha256": "77f2995c7adece8783977800d4a33947a36c21456f86965bc3d86d0e6a5e4e5d",
+        "line": 285
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-coupon-export-demo-v001",
+      "step": "07-05",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-35-reimport-layout.png",
+      "sha256": "8897c764ca05fb2d93f3c08fd415c34c9d9de007b3f6120da051b403a557ba1d",
+      "observedSha256": "a5fdd9b65c32265d03fa9a2a64449e5576d50c6f7c3a703cf05feb58144e2006",
+      "observedKind": "scripted_description",
+      "reason": "觀察回呼的 return 為固定全文，沒有把前置檢查所取得的實際欄位值插入 observed。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/source-snapshot/lesson07_coupon_export.py",
+        "sha256": "77f2995c7adece8783977800d4a33947a36c21456f86965bc3d86d0e6a5e4e5d",
+        "line": 324
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-coupon-export-demo-v001",
+      "step": "07-05",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/07-05-36-coupon-exports-verified.png",
+      "sha256": "8897c764ca05fb2d93f3c08fd415c34c9d9de007b3f6120da051b403a557ba1d",
+      "observedSha256": "c1b6056550fa64eba0446fef5e656dcbe25ea22a70dbd50e992be78b5ae6481d",
+      "observedKind": "scripted_description",
+      "reason": "觀察回呼的 return 為固定全文，沒有把前置檢查所取得的實際欄位值插入 observed。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/source-snapshot/lesson07_coupon_export.py",
+        "sha256": "77f2995c7adece8783977800d4a33947a36c21456f86965bc3d86d0e6a5e4e5d",
+        "line": 361
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-coupons-demo-v001",
+      "step": "07-05",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-02-source-reference.png",
+      "sha256": "671959f98066449519611df236ddff019281ef8c0a09d95a6b336d06cc533762",
+      "observedSha256": "b6165f9ee6de3224a70f5a1e763198e8525f57a29a99252104b56ffd8cf07b43",
+      "observedKind": "scripted_description",
+      "reason": "觀察回呼的 return 為固定全文，沒有把前置檢查所取得的實際欄位值插入 observed。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/source-snapshot/lesson07_coupons.py",
+        "sha256": "69a54e555a00ebc99cfac5ed7e13abed37ff5519de44a97dd531ab25499210f5",
+        "line": 235
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-coupons-demo-v001",
+      "step": "07-05",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-03-outliner-room.png",
+      "sha256": "9cdbbe3b24f0f5a5957c7c0488f5bc8d5417f9ad0022cbd8f1b86268e061896e",
+      "observedSha256": "60d5845969bf02a04e7e2e5a86934c3a038e984996fde6655f0c5e6e6aa1ee94",
+      "observedKind": "mixed",
+      "reason": "Outliner高度為實讀，拖曳動作與可顯示來源／試片為固定說明。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/source-snapshot/lesson07_coupons.py",
+        "sha256": "69a54e555a00ebc99cfac5ed7e13abed37ff5519de44a97dd531ab25499210f5",
+        "line": 241
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-coupons-demo-v001",
+      "step": "07-05",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-04-A_L19-duplicate.png",
+      "sha256": "b511ebd7b649bb8d3ee563e963649e69377874b981fa9c6eb33054db13d40f24",
+      "observedSha256": "87d176954529d261a9bafe60f7f98b40754514bdea8a0669065478793fe922b3",
+      "observedKind": "scripted_description",
+      "reason": "只插入計畫件名，Shift+D／Esc、獨立mesh與原點姿態為固定回傳敘述。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/source-snapshot/lesson07_coupons.py",
+        "sha256": "69a54e555a00ebc99cfac5ed7e13abed37ff5519de44a97dd531ab25499210f5",
+        "line": 256
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-coupons-demo-v001",
+      "step": "07-05",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-05-inherited-analysis-off.png",
+      "sha256": "673be69151597020c44ea918a8b587d0ccd24d6800e0b617d6f54325852c86c8",
+      "observedSha256": "685c219827f5ba056ef5257c24b9348be5f34c33dd03cba5c1b92a8cffef2e80",
+      "observedKind": "scripted_description",
+      "reason": "觀察回呼的 return 為固定全文，沒有把前置檢查所取得的實際欄位值插入 observed。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/source-snapshot/lesson07_coupons.py",
+        "sha256": "69a54e555a00ebc99cfac5ed7e13abed37ff5519de44a97dd531ab25499210f5",
+        "line": 271
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-coupons-demo-v001",
+      "step": "07-05",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-06-A_L19-upper-selection.png",
+      "sha256": "99118893f834c27aafc3147e89d6e2a2538590388e55cd0f16fe425819f0beff",
+      "observedSha256": "913aa4b3f4685dca0556dae161a66a015c264358ad658fa3ce3f9dbad14124ca",
+      "observedKind": "scripted_description",
+      "reason": "只插入計畫件名；14頂點／world Z層次與選取範圍為固定敘述，前置實選點驗證另存。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/source-snapshot/lesson07_coupons.py",
+        "sha256": "69a54e555a00ebc99cfac5ed7e13abed37ff5519de44a97dd531ab25499210f5",
+        "line": 165
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-coupons-demo-v001",
+      "step": "07-05",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-07-A_L19-source-frame.png",
+      "sha256": "fcb003eabba278cc5036cf7d7faaa7f998b8c8a9f83f0b541249c9acc1df3923",
+      "observedSha256": "d111076c5db411a38bf6e653dd3d2964c8e52f505750e2f068f1d5b36881ddd7",
+      "observedKind": "scripted_description",
+      "reason": "插入的是plan的delta／L／高度，另含固定14／28頂點及拓樸描述；前面雖有逐點驗證，此回傳字串沒有輸出實測殘差或實選數量。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/source-snapshot/lesson07_coupons.py",
+        "sha256": "69a54e555a00ebc99cfac5ed7e13abed37ff5519de44a97dd531ab25499210f5",
+        "line": 190
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-coupons-demo-v001",
+      "step": "07-05",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-08-A_L19-candidate.png",
+      "sha256": "3fcdbdeb0ffeb8e27aa704c81fbd5bbdfb6596d982d0760af5fd63bfa0349b06",
+      "observedSha256": "eadc363496c5f02e59114a2eba3fd857b7198ca4781bc7db618225636b68dd82",
+      "observedKind": "mixed",
+      "reason": "Location、world外框、床接觸與離床高度為讀值，Ry90／Scale1／支撐待定為固定敘述。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/source-snapshot/lesson07_coupons.py",
+        "sha256": "69a54e555a00ebc99cfac5ed7e13abed37ff5519de44a97dd531ab25499210f5",
+        "line": 207
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-coupons-demo-v001",
+      "step": "07-05",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-09-A_L19-non-manifold.png",
+      "sha256": "a20da0993b6376f9d71d8079f4f045ccbfabf280ccbdd97ca80177e197679bac",
+      "observedSha256": "5cb0220c83608e7fe9d902d54d29e908149d5f6ad6310e35e91c3f58d8c84eab",
+      "observedKind": "scripted_description",
+      "reason": "只插入角色名稱，Non Manifold 0／所選0邊等為固定敘述；前面的檢查結果沒有直接序列化到此字串。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/source-snapshot/lesson07_coupons.py",
+        "sha256": "69a54e555a00ebc99cfac5ed7e13abed37ff5519de44a97dd531ab25499210f5",
+        "line": 218
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-coupons-demo-v001",
+      "step": "07-05",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-10-B_L17-duplicate.png",
+      "sha256": "e8509ce64723b158b027a36cce198c63e202e8bdd6f976e54b8cc05ad52731ea",
+      "observedSha256": "a122d6d514b86fcd248046c372cd24188bd8c204b91ae568da9b67968ddd7a8f",
+      "observedKind": "scripted_description",
+      "reason": "只插入計畫件名，Shift+D／Esc、獨立mesh與原點姿態為固定回傳敘述。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/source-snapshot/lesson07_coupons.py",
+        "sha256": "69a54e555a00ebc99cfac5ed7e13abed37ff5519de44a97dd531ab25499210f5",
+        "line": 256
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-coupons-demo-v001",
+      "step": "07-05",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-11-B_L17-upper-selection.png",
+      "sha256": "2c3e23cf9c6e3dfbdbdea32a4731e4661a2f05d032db98fff97a65b21d8b7810",
+      "observedSha256": "e6f993487d6874715d953958f0b42c93142f25e34ce41ed2710dcbb8c0988bc2",
+      "observedKind": "scripted_description",
+      "reason": "只插入計畫件名；14頂點／world Z層次與選取範圍為固定敘述，前置實選點驗證另存。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/source-snapshot/lesson07_coupons.py",
+        "sha256": "69a54e555a00ebc99cfac5ed7e13abed37ff5519de44a97dd531ab25499210f5",
+        "line": 165
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-coupons-demo-v001",
+      "step": "07-05",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-12-B_L17-source-frame.png",
+      "sha256": "01c12db4152d03eb6cdfe6010c39e266d51229dd156b832429e1437b90eadc95",
+      "observedSha256": "ea69f3b973d3ef4825beabdfb05b0085031a4a0d9a64832f91d2e7e7378d7bdc",
+      "observedKind": "scripted_description",
+      "reason": "插入的是plan的delta／L／高度，另含固定14／28頂點及拓樸描述；前面雖有逐點驗證，此回傳字串沒有輸出實測殘差或實選數量。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/source-snapshot/lesson07_coupons.py",
+        "sha256": "69a54e555a00ebc99cfac5ed7e13abed37ff5519de44a97dd531ab25499210f5",
+        "line": 190
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-coupons-demo-v001",
+      "step": "07-05",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-13-B_L17-candidate.png",
+      "sha256": "3fbbb49c7792886205c7efb6d6c9033fb75f360f7344c204580e20436990573e",
+      "observedSha256": "8434963aab476edbca89ab3da29a8feb519c43dee485c929a77cb6847da332c5",
+      "observedKind": "mixed",
+      "reason": "Location、world外框、床接觸與離床高度為讀值，Ry90／Scale1／支撐待定為固定敘述。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/source-snapshot/lesson07_coupons.py",
+        "sha256": "69a54e555a00ebc99cfac5ed7e13abed37ff5519de44a97dd531ab25499210f5",
+        "line": 207
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-coupons-demo-v001",
+      "step": "07-05",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-14-B_L17-non-manifold.png",
+      "sha256": "3e82fb85761c328ce8555b5b688c9c8e744d39eb937d6694261f8f1306ff50e1",
+      "observedSha256": "5e5ec92a1cb2e95e6adca0a6fdf6183aaaea03ac2af110bfbe3a321cd6cb1413",
+      "observedKind": "scripted_description",
+      "reason": "只插入角色名稱，Non Manifold 0／所選0邊等為固定敘述；前面的檢查結果沒有直接序列化到此字串。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/source-snapshot/lesson07_coupons.py",
+        "sha256": "69a54e555a00ebc99cfac5ed7e13abed37ff5519de44a97dd531ab25499210f5",
+        "line": 218
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-coupons-demo-v001",
+      "step": "07-05",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-15-C_L21-duplicate.png",
+      "sha256": "cb98a12bff20cf360d905f72a54115c329bf8043eb7daa09b027b74d8b87f8bc",
+      "observedSha256": "18057731dc51ddb96b9c3e6806a0e7cd5c0729c533ed917874ac77fc62f9987b",
+      "observedKind": "scripted_description",
+      "reason": "只插入計畫件名，Shift+D／Esc、獨立mesh與原點姿態為固定回傳敘述。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/source-snapshot/lesson07_coupons.py",
+        "sha256": "69a54e555a00ebc99cfac5ed7e13abed37ff5519de44a97dd531ab25499210f5",
+        "line": 256
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-coupons-demo-v001",
+      "step": "07-05",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-16-C_L21-upper-selection.png",
+      "sha256": "6ae2e35e50afb9cac1937b0ab961721f9dd48312f303e8a35c01016d6d2adea7",
+      "observedSha256": "6479dda7b1596c709eeb2f50983b9fc2ddb6b2faeeff6b2d72a9dcc98ad72585",
+      "observedKind": "scripted_description",
+      "reason": "只插入計畫件名；14頂點／world Z層次與選取範圍為固定敘述，前置實選點驗證另存。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/source-snapshot/lesson07_coupons.py",
+        "sha256": "69a54e555a00ebc99cfac5ed7e13abed37ff5519de44a97dd531ab25499210f5",
+        "line": 165
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-coupons-demo-v001",
+      "step": "07-05",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-17-C_L21-source-frame.png",
+      "sha256": "c37bfa4b431b7f39b08a934dea38e1e0b4506400f970d22da2c297591bd4c1d0",
+      "observedSha256": "ecb2e60f52d2c0c9c878476f4530551f25ea3c04a901efaa87cf256253727248",
+      "observedKind": "scripted_description",
+      "reason": "插入的是plan的delta／L／高度，另含固定14／28頂點及拓樸描述；前面雖有逐點驗證，此回傳字串沒有輸出實測殘差或實選數量。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/source-snapshot/lesson07_coupons.py",
+        "sha256": "69a54e555a00ebc99cfac5ed7e13abed37ff5519de44a97dd531ab25499210f5",
+        "line": 190
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-coupons-demo-v001",
+      "step": "07-05",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-18-C_L21-candidate.png",
+      "sha256": "d2f93a4f563bd2692acc705395d4be2a9ccb60a7ed015f125f923e3f1457ae4c",
+      "observedSha256": "062d99589b7211604961dd0c035a556be1454ea9111087139934aa174f45982f",
+      "observedKind": "mixed",
+      "reason": "Location、world外框、床接觸與離床高度為讀值，Ry90／Scale1／支撐待定為固定敘述。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/source-snapshot/lesson07_coupons.py",
+        "sha256": "69a54e555a00ebc99cfac5ed7e13abed37ff5519de44a97dd531ab25499210f5",
+        "line": 207
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-coupons-demo-v001",
+      "step": "07-05",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-19-C_L21-non-manifold.png",
+      "sha256": "5408d53147539f9965671909d23f9e1e5c42357895c5f2c05522025f2f2d8444",
+      "observedSha256": "d14da322cbf44e834c8b4099f0941c41db2c75c4152ddfcb9eb3e75de76b4a4a",
+      "observedKind": "scripted_description",
+      "reason": "只插入角色名稱，Non Manifold 0／所選0邊等為固定敘述；前面的檢查結果沒有直接序列化到此字串。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/source-snapshot/lesson07_coupons.py",
+        "sha256": "69a54e555a00ebc99cfac5ed7e13abed37ff5519de44a97dd531ab25499210f5",
+        "line": 218
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-coupons-demo-v001",
+      "step": "07-05",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-20-coupon-layout.png",
+      "sha256": "208f6d3a1b05e490f1933f17cf7eb43c126c7f153faafe7d79debf35dbe2d70c",
+      "observedSha256": "2957903b4d8344a2d86d443575e6aff2de6a4824933d28c89be687b1c5b4a196",
+      "observedKind": "scripted_description",
+      "reason": "觀察回呼的 return 為固定全文，沒有把前置檢查所取得的實際欄位值插入 observed。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/source-snapshot/lesson07_coupons.py",
+        "sha256": "69a54e555a00ebc99cfac5ed7e13abed37ff5519de44a97dd531ab25499210f5",
+        "line": 304
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-coupons-demo-v001",
+      "step": "07-05",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-22-saved.png",
+      "sha256": "0a81cd7473128c3280f3d09dcfd315b09cc6f963ff087a41125c406501eb0616",
+      "observedSha256": "ccd84326877c1d307fcd78b8c21a6963ad37f82acd86f57ae944c27c32336f38",
+      "observedKind": "mixed",
+      "reason": "檔名、大小或hash為動態結果，來源／副本／舊版本未改為固定附加敘述。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/source-snapshot/lesson07_coupons.py",
+        "sha256": "69a54e555a00ebc99cfac5ed7e13abed37ff5519de44a97dd531ab25499210f5",
+        "line": 318
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-coupons-demo-v001",
+      "step": "07-05",
+      "imagePath": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/07-05-24-reopened-verified.png",
+      "sha256": "c5a78a219bf0d1319239f32b4b8bd6c9f7157e3667e3e7598c1f0f7451433d4b",
+      "observedSha256": "c01ff6b3540d88b8e97ba7f71df2c7855203765be569450172082d367532af1f",
+      "observedKind": "scripted_description",
+      "reason": "觀察回呼的 return 為固定全文，沒有把前置檢查所取得的實際欄位值插入 observed。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/source-snapshot/lesson07_coupons.py",
+        "sha256": "69a54e555a00ebc99cfac5ed7e13abed37ff5519de44a97dd531ab25499210f5",
+        "line": 351
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson08-parameters-demo-v001",
+      "step": "08-01",
+      "imagePath": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/08-01-02-source-checked.png",
+      "sha256": "553d16ae73d6789e63151c705c2c9231cee91ba7a5712084489555ef213e1e64",
+      "observedSha256": "2b70c121fdce402cba4ad29f818fda5d65d3d6423e498014e3d63bca284554b1",
+      "observedKind": "mixed",
+      "reason": "外形、內腔、體積與非流形數為讀值，壁／底2mm為固定文字。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/source-snapshot/lesson08_parameters.py",
+        "sha256": "0ffd7d76215bfd32cd4441bb339153756759b68b6dc720209d256aa983e6a909",
+        "line": 143
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson08-parameters-demo-v001",
+      "step": "08-01",
+      "imagePath": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/08-01-04-rim-face.png",
+      "sha256": "71f4e90f4ad1e2416be0df61bdb68eda91775f1eda878c732023f62cbaaf3cda",
+      "observedSha256": "dd9e6b8054da6e37f0f03d5d4ea2cd3960bfd670355d251e18038969fff5d42f",
+      "observedKind": "mixed",
+      "reason": "world min/max/span為讀值，實選1面／4頂點為固定敘述。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/source-snapshot/lesson08_parameters.py",
+        "sha256": "0ffd7d76215bfd32cd4441bb339153756759b68b6dc720209d256aa983e6a909",
+        "line": 128
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson08-parameters-demo-v001",
+      "step": "08-01",
+      "imagePath": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/08-01-05-inner-floor.png",
+      "sha256": "a78e713c12c3af31a8e6d3d717bea1a8ca99891e3524c6991459654c174d8e6d",
+      "observedSha256": "5139f19b5c415004aeb1859a63dc8658da6e8a9c44870ab4a990d9d41840cacf",
+      "observedKind": "mixed",
+      "reason": "world min/max/span為讀值，實選1面／4頂點為固定敘述。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/source-snapshot/lesson08_parameters.py",
+        "sha256": "0ffd7d76215bfd32cd4441bb339153756759b68b6dc720209d256aa983e6a909",
+        "line": 128
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson08-parameters-demo-v001",
+      "step": "08-01",
+      "imagePath": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/08-01-06-outer-floor.png",
+      "sha256": "6c583bd5aec0207b5c2c8c51ba50343bfa65b2ee6cea6c713ed21f5e5a983e52",
+      "observedSha256": "e3be0441d8894fd43c043e2450dbe6b49b40895a7dc7d2fc9422a907e3d6705f",
+      "observedKind": "mixed",
+      "reason": "world min/max/span為讀值，實選1面／4頂點為固定敘述。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/source-snapshot/lesson08_parameters.py",
+        "sha256": "0ffd7d76215bfd32cd4441bb339153756759b68b6dc720209d256aa983e6a909",
+        "line": 128
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson08-parameters-demo-v001",
+      "step": "08-01",
+      "imagePath": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/08-01-07-non-manifold.png",
+      "sha256": "cced4f7a89cbf44e9fe75a8cdfeefd24d06b7adff7c8407a09ed1132ea9b4962",
+      "observedSha256": "a5fc696f8c34b9086634fd4797adcf1d9b8db4aa1585b2ac47a5e245bf4c9d06",
+      "observedKind": "scripted_description",
+      "reason": "觀察回呼的 return 為固定全文，沒有把前置檢查所取得的實際欄位值插入 observed。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/source-snapshot/lesson08_parameters.py",
+        "sha256": "0ffd7d76215bfd32cd4441bb339153756759b68b6dc720209d256aa983e6a909",
+        "line": 186
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson08-parameters-demo-v001",
+      "step": "08-01",
+      "imagePath": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/08-01-08-reference-overview.png",
+      "sha256": "76bd22f0091976802281b444aa8703b9cd939a107c4a70d4074a0d137816a576",
+      "observedSha256": "8febc547aaf66c253734e34e1c89bb96a5e948c39f40a185e4d69eb8aa96dd26",
+      "observedKind": "scripted_description",
+      "reason": "觀察回呼的 return 為固定全文，沒有把前置檢查所取得的實際欄位值插入 observed。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/source-snapshot/lesson08_parameters.py",
+        "sha256": "0ffd7d76215bfd32cd4441bb339153756759b68b6dc720209d256aa983e6a909",
+        "line": 200
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson08-parameters-demo-v001",
+      "step": "08-01",
+      "imagePath": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/08-01-10-saved.png",
+      "sha256": "c322d309456343e96f1e6803487fe07e2bdaa6b67069d90e3aee50cff2c566bb",
+      "observedSha256": "9787863e18df5ba310f3d19746838ead0664424412c82d88c88be04935171e57",
+      "observedKind": "mixed",
+      "reason": "檔名、大小或hash為動態結果，來源／副本／舊版本未改為固定附加敘述。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/source-snapshot/lesson08_parameters.py",
+        "sha256": "0ffd7d76215bfd32cd4441bb339153756759b68b6dc720209d256aa983e6a909",
+        "line": 224
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson08-parameters-demo-v001",
+      "step": "08-01",
+      "imagePath": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/08-01-12-reopened-verified.png",
+      "sha256": "05ccab2799c6d1965c1878130815b63d2bbff9cd4b87417c2d63458e52bc3472",
+      "observedSha256": "aa1bb283c8001f3d9ba5b0de3e856b333d1ee9ab7b79e593b456ef54ebeaba30",
+      "observedKind": "scripted_description",
+      "reason": "觀察回呼的 return 為固定全文，沒有把前置檢查所取得的實際欄位值插入 observed。 依該run凍結source-snapshot查核；前置assert／幾何／選項檢查仍有其原始依據，這個分類只說明文字生成方式，不否定那些檢查。 不據此推定畫面全部正確、學員理解或列印／試配／強度合格。",
+      "source": {
+        "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/source-snapshot/lesson08_parameters.py",
+        "sha256": "0ffd7d76215bfd32cd4441bb339153756759b68b6dc720209d256aa983e6a909",
+        "line": 261
+      }
+    }
+  ]
+}

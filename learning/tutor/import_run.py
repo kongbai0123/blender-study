@@ -535,6 +535,76 @@ def _digest(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+OBSERVED_ANNOTATIONS = "learning/annotations/observed-kinds-v001.json"
+LEGACY_RUNS = {"2026-10-22-lesson%s-demo-v001" % number for number in ("01", "02", "03", "04")}
+LEGACY_WORKSPACE_NOTE = "舊版執行器只比對第一層檔名，未保存前後雜湊；內容是否一致與期間是否寫入均未知，不回填。"
+WORKSPACE_NOTE = "僅記錄 runner 回報的前後工作區內容比較；一致不證明期間未曾寫入，也不能判定寫入者。"
+
+
+def workspace_semantics(run_id, runner=None):
+    """內容快照與寫入行為分欄；不從快照相等反推寫入者／未曾寫入。"""
+    value = runner.get("workspacesUnchanged") if isinstance(runner, dict) else None
+    if run_id in LEGACY_RUNS:
+        value, note = None, LEGACY_WORKSPACE_NOTE
+    else:
+        value = value if type(value) is bool else None
+        note = WORKSPACE_NOTE if isinstance(runner, dict) else "沒有工作區前後內容證據；不推定未寫入或寫入者。"
+    return {"workspaceContentsUnchanged": value, "learnerWorkspaceWrites": None,
+            "workspaceEvidenceNote": note}
+
+
+def observation_annotations(project, run_id):
+    """只接受版本化、逐事件註記；沒有註記時保守回退，不分析 observed 句型。"""
+    project = Path(project).resolve()
+    path = project / OBSERVED_ANNOTATIONS
+    if not path.exists():
+        return {}, None
+    path = _contained_file(path, project, "觀察分類註記")
+    data = _read_json(path)
+    if not isinstance(data, dict) or data.get("schemaVersion") != 1 or not isinstance(data.get("entries"), list):
+        raise ImportValidationError("觀察分類註記格式錯誤")
+    index = {}
+    for item in data["entries"]:
+        if not isinstance(item, dict):
+            raise ImportValidationError("觀察分類項目必須是物件")
+        if item.get("runId") != run_id:
+            continue
+        for key in ("step", "imagePath", "sha256", "observedSha256", "reason"):
+            if not isinstance(item.get(key), str) or not item[key]:
+                raise ImportValidationError("觀察分類缺少 %s" % key)
+        if item.get("observedKind") not in {"scripted_description", "readback", "mixed"}:
+            raise ImportValidationError("未知的明示觀察分類")
+        image = item["imagePath"]
+        source = item.get("source")
+        if (not image.startswith("learning/evidence/") or Path(image).is_absolute()
+                or not isinstance(source, dict) or not isinstance(source.get("path"), str)
+                or not source["path"].startswith(("learning/tutor/", "learning/evidence/"))
+                or Path(source["path"]).suffix != ".py"
+                or type(source.get("line")) is not int or source["line"] < 1):
+            raise ImportValidationError("觀察分類圖片／來源位置不合法")
+        source_file = _contained_file(project / source["path"], project, "分類來源程式")
+        if _digest(source_file) != source.get("sha256"):
+            raise ImportValidationError("觀察分類來源程式 SHA-256 不符")
+        if source["line"] > len(source_file.read_text(encoding="utf-8").splitlines()):
+            raise ImportValidationError("分類來源行號超出程式範圍")
+        key = (item["step"], image)
+        if key in index:
+            raise ImportValidationError("觀察分類身份重複")
+        index[key] = item
+    return index, {"path": OBSERVED_ANNOTATIONS, "sha256": _digest(path)}
+
+
+def event_observation_semantics(step_id, figure, observed, index, binding):
+    item = index.get((step_id, figure["path"]))
+    if item is None:
+        return {"observedKind": "unclassified"}
+    if (item["sha256"] != figure["sha256"]
+            or item["observedSha256"] != hashlib.sha256(observed.encode("utf-8")).hexdigest()):
+        raise ImportValidationError("觀察分類與截圖或原 observed 文字的 SHA-256 不符")
+    return {"observedKind": item["observedKind"], "observedReason": item["reason"],
+            "observedSource": copy.deepcopy(item["source"]), "observedAnnotation": copy.deepcopy(binding)}
+
+
 def _validate_records(run, run_dir, spec, lesson_steps):
     records = run.get("records")
     if not isinstance(records, list) or not records:
@@ -2898,6 +2968,9 @@ def import_run(run_id, project=PROJECT):
     project = Path(project).resolve()
     spec = RUNS[run_id]
     run_dir = project / "learning" / "evidence" / spec["lesson"] / run_id
+    metadata_path = run_dir.parent / (run_id + ".json")
+    if metadata_path.exists() and "workspaceContentsUnchanged" not in _read_json(metadata_path):
+        raise ImportValidationError("既有歷史 metadata 保留原件；請以版本化語義註記更正，不重新匯入覆寫")
     catalog_path = project / "learning" / "catalog.json"
     original_catalog = catalog_path.read_bytes()
     catalog = json.loads(original_catalog.decode("utf-8"))
@@ -2944,6 +3017,8 @@ def import_run(run_id, project=PROJECT):
     elif run_id == "2026-10-25-lesson07-coupon-export-demo-v001":
         checked = _validate_lesson07_coupon_export(run, run_dir, spec)
     relative = run_dir.relative_to(project).as_posix()
+    observed_index, observed_binding = observation_annotations(project, run_id)
+    workspace = workspace_semantics(run_id, checked[1] if checked else None)
     events = {}
     for record in run["records"]:
         caption = "%s 助教示範實拍：獨立 Blender %s（English (US)、出廠設定），不是你的畫面；橘框為網頁標示，原圖未修改。" % (
@@ -2953,6 +3028,7 @@ def import_run(run_id, project=PROJECT):
                   "sha256": record["sha256"], "highlights": record.get("highlights", [])}
         event = {"seq": len(events.get(record["step"], [])) + 1, "at": record["recordedAt"],
                  "action": record["action"], "observed": record["observed"], "figure": figure}
+        event.update(event_observation_semantics(record["step"], figure, record["observed"], observed_index, observed_binding))
         if record.get("note"):
             event["note"] = record["note"]
         events.setdefault(record["step"], []).append(event)
@@ -2964,6 +3040,7 @@ def import_run(run_id, project=PROJECT):
             "environment": "獨立 Blender %s（build %s）、English (US)、出廠設定與獨立設定資料夾；不使用學員的 Blender 視窗與偏好設定" % (
                 run["blender"], run["buildHash"]),
             "summary": spec["summaries"][step_id], "journal": spec["journal"], "events": step_events}
+        step["operationRun"].update(copy.deepcopy(workspace))
         if spec.get("completion_scope"):
             step["operationRun"]["completionScope"] = spec["completion_scope"]
         # 舊的繁中介面截圖已過時（介面已切換為英文）；本步改由上方實拍呈現。
@@ -2973,7 +3050,7 @@ def import_run(run_id, project=PROJECT):
             references.extend(["%s/verification.json" % relative, "%s/runner-status.json" % relative])
         step["contentReview"] = {
             "status": "actual_operation_verified",
-            "summary": spec.get("content_review_summary", "助教已在獨立 Blender 逐一實際操作並截圖，結果數值由 Blender 讀回；這是示範，不代表你已完成。"),
+            "summary": spec.get("content_review_summary", "助教已在獨立 Blender 操作並保留原圖；事件分別標示文字描述、狀態讀回或混合紀錄，未分類稱觀察紀錄。數位幾何核對另以 verification 為據；不代表學員理解或實體合格。"),
             "references": references}
     for step_id, index, key, old, new in spec["guide_edits"]:
         text = lesson_steps[step_id]["guide"][index][key]
@@ -2988,8 +3065,11 @@ def import_run(run_id, project=PROJECT):
                          "滑鼠／鍵盤以 Window.event_simulate 模擬；檔案瀏覽器的資料夾與檔名欄位由程式寫入",
         "script": "learning/tutor/scenarios/%s" % run["scenario"].replace("\\", "/").split("/")[-1],
         "pixelEdits": False, "highlightsDrawnBy": "教學頁 CSS 疊框（原圖未修改）",
-        "learnerWorkspaceWrites": False, "demoFiles": "%s/demo-files/" % relative,
+        **workspace, "demoFiles": "%s/demo-files/" % relative,
         "records": [dict(r, path="%s/%s" % (relative, Path(r["file"]).as_posix())) for r in run["records"]]}
+    for record in metadata["records"]:
+        record.update(event_observation_semantics(record["step"], {"path": record["path"], "sha256": record["sha256"]},
+                                                   record["observed"], observed_index, observed_binding))
     if checked:
         metadata["verification"] = checked[0]
         metadata["runnerStatus"] = checked[1]

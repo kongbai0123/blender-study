@@ -1,0 +1,353 @@
+{
+  "schemaVersion": 1,
+  "kind": "native_shortcut_mode_error_runtime_review",
+  "reviewedOn": "2026-10-27",
+  "blender": "5.2.1 LTS",
+  "buildHash": "9e2066aef7ef",
+  "reviewer": "Codex mode_error_runtime",
+  "runs": [
+    {
+      "runId": "2026-10-27-shortcut-mode-errors-demo-v001",
+      "verification": {
+        "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v001/shortcut-mode-errors-verification-v001.json",
+        "sha256": "ca54a8359e00c744a8e148d2776d6a75f26c1b62bf0fb6ff04fc1ba1e0f0b323"
+      },
+      "run": {
+        "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v001/run.json",
+        "sha256": "5d615c186e907b4af289baff8a85d38dc3b75fbe2c74a5f36751c3f827fae5b7"
+      },
+      "pngCount": 16,
+      "nativeAssertionsPassed": 9,
+      "observationCases": 7,
+      "nativeAssertionsFailed": 0,
+      "localRunnerStatus": "completed",
+      "localWorkspaceContentsUnchanged": true,
+      "workspaceComparisonLimit": "前後內容一致；不能證明期間未曾寫入或辨認寫入者。",
+      "reviewedScreenshots": [
+        {
+          "case": "baseline",
+          "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v001/shortcut-mode-01-baseline.png",
+          "sha256": "7fefffe3d6e72145c228a60b7ed5bce3e42e9525182a5ac42463cc5c00e3a3f4",
+          "viewedWith": "view_image, original native PNG",
+          "visualFinding": "Object Mode、Cube 原始 Transform 為灰色，時間軸沒有新增的關鍵影格菱形。",
+          "readbackMatchesRun": true
+        },
+        {
+          "case": "object-i-keyframe",
+          "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v001/shortcut-mode-02-object-i-keyframe.png",
+          "sha256": "56af01b10b0fda46dbb23b2409728ccebf00c1e223d95cfd8ca315da77113411",
+          "viewedWith": "view_image, original native PNG",
+          "visualFinding": "Object Mode；Transform 欄位變黃並有實心菱形，時間軸第1格可見黃色關鍵影格標記。通道及點數由原生讀值核對，不由圖估計。",
+          "readbackMatchesRun": true
+        },
+        {
+          "case": "object-i-undo",
+          "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v001/shortcut-mode-03-object-i-undo.png",
+          "sha256": "8f5a6f8c0dc03d6630a1e98b275abf84230a602a1c835cfe5a96f1fef03d19af",
+          "viewedWith": "view_image, original native PNG",
+          "visualFinding": "Transform 回灰色，關鍵影格菱形及時間軸黃色標記消失，物件外形／位置不變。",
+          "readbackMatchesRun": true
+        },
+        {
+          "case": "object-e",
+          "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v001/shortcut-mode-04-object-e.png",
+          "sha256": "01bf238d99bcd2469a79916d7f8e3677f23c3d444a09ed8136b5d87a9d9f710d",
+          "viewedWith": "view_image, original native PNG",
+          "visualFinding": "畫面仍為 Object Mode，Cube 外形、選取與灰色 Transform 無可見變化；未出現操作模態。",
+          "readbackMatchesRun": true
+        },
+        {
+          "case": "perspective-border-invoke-esc",
+          "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v001/shortcut-mode-05-perspective-border-invoke-esc.png",
+          "sha256": "c131fd1733a798b46137884d65c683921450fc9183800d2449d5bb626f5f61d8",
+          "viewedWith": "view_image, original native PNG",
+          "visualFinding": "一般透視有橫直白色虛線十字，底部狀態列顯示 Esc Cancel；Object Mode。",
+          "readbackMatchesRun": true
+        },
+        {
+          "case": "perspective-border-esc",
+          "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v001/shortcut-mode-06-perspective-border-esc.png",
+          "sha256": "01bf238d99bcd2469a79916d7f8e3677f23c3d444a09ed8136b5d87a9d9f710d",
+          "viewedWith": "view_image, original native PNG",
+          "visualFinding": "白色虛線十字消失，未出現紅色區域框。",
+          "readbackMatchesRun": true
+        },
+        {
+          "case": "perspective-border-invoke-rmb",
+          "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v001/shortcut-mode-07-perspective-border-invoke-rmb.png",
+          "sha256": "c131fd1733a798b46137884d65c683921450fc9183800d2449d5bb626f5f61d8",
+          "viewedWith": "view_image, original native PNG",
+          "visualFinding": "一般透視再次出現橫直白色虛線十字。",
+          "readbackMatchesRun": true
+        },
+        {
+          "case": "perspective-border-rmb",
+          "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v001/shortcut-mode-08-perspective-border-rmb.png",
+          "sha256": "7406ddda3b00caf341f3e268e5ab3bcd9f20263490fceae88e638a221bb9cbcc",
+          "viewedWith": "view_image, original native PNG",
+          "visualFinding": "右鍵後白色虛線十字消失，未出現紅色區域框。",
+          "readbackMatchesRun": true
+        },
+        {
+          "case": "perspective-border-complete",
+          "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v001/shortcut-mode-09-perspective-border-complete.png",
+          "sha256": "4bf553f1431b3ed214e9545634a3b03e158b2708d18c690aef60ed9424d46c1d",
+          "viewedWith": "view_image, original native PNG",
+          "visualFinding": "一般透視中出現紅色虛線矩形區域；Cube 沒有倒角或拓樸可見改變。",
+          "readbackMatchesRun": true
+        },
+        {
+          "case": "camera-baseline",
+          "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v001/shortcut-mode-10-camera-baseline.png",
+          "sha256": "6ea85b59baa4836af544c055ed2d554a9a1d4f646d29926a910c141debd81cd0",
+          "viewedWith": "view_image, original native PNG",
+          "visualFinding": "Camera Perspective；黑色相機取景框存在，尚無相機紅色 render region。",
+          "readbackMatchesRun": true
+        },
+        {
+          "case": "camera-border-invoke",
+          "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v001/shortcut-mode-11-camera-border-invoke.png",
+          "sha256": "2d97e640d54120964792d0537b349dec7921cebf51620434eb33ee474db0f9d0",
+          "viewedWith": "view_image, original native PNG",
+          "visualFinding": "相機視圖內橫直白色虛線十字出現，底部顯示 Esc Cancel。",
+          "readbackMatchesRun": true
+        },
+        {
+          "case": "camera-border-esc",
+          "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v001/shortcut-mode-12-camera-border-esc.png",
+          "sha256": "6ea85b59baa4836af544c055ed2d554a9a1d4f646d29926a910c141debd81cd0",
+          "viewedWith": "view_image, original native PNG",
+          "visualFinding": "白色虛線十字消失，尚無相機紅色 render region。",
+          "readbackMatchesRun": true
+        },
+        {
+          "case": "camera-border-rmb",
+          "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v001/shortcut-mode-13-camera-border-rmb.png",
+          "sha256": "fc29071557c1cd9c3efd44a8764fe63850ddc364aacc205d7bf1740bb450122d",
+          "viewedWith": "view_image, original native PNG",
+          "visualFinding": "右鍵後沒有白色虛線十字或相機紅色 render region。",
+          "readbackMatchesRun": true
+        },
+        {
+          "case": "camera-border-complete",
+          "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v001/shortcut-mode-14-camera-border-complete.png",
+          "sha256": "a5f042dd00a05f7405a62a4d13b98a39e9b1ba158b41d8c8e2eb673d598a3d84",
+          "viewedWith": "view_image, original native PNG",
+          "visualFinding": "黑色相機取景框內出現紅色虛線 render region。",
+          "readbackMatchesRun": true
+        },
+        {
+          "case": "camera-border-undo",
+          "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v001/shortcut-mode-15-camera-border-undo.png",
+          "sha256": "fc29071557c1cd9c3efd44a8764fe63850ddc364aacc205d7bf1740bb450122d",
+          "viewedWith": "view_image, original native PNG",
+          "visualFinding": "Ctrl+Z 後相機紅色虛線框消失，黑色取景框保留。",
+          "readbackMatchesRun": true
+        },
+        {
+          "case": "camera-border-clear",
+          "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v001/shortcut-mode-16-camera-border-clear.png",
+          "sha256": "23d2b89ca24fbd59bb4929fbcdbc1aec6acff81a13dd656b7a4d2933607343cd",
+          "viewedWith": "view_image, original native PNG",
+          "visualFinding": "畫面沒有相機紅色 region；v001此事件在已Undo後執行，不能證清除變化；v002在重新建立後由true變false才證明清除有效。",
+          "readbackMatchesRun": true
+        }
+      ]
+    },
+    {
+      "runId": "2026-10-27-shortcut-mode-errors-demo-v002",
+      "verification": {
+        "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v002/shortcut-mode-errors-verification-v001.json",
+        "sha256": "c8e0725651e1a55b6bdbf5743fb3f291035b08a9c9e1ec2aee691fec5009a7b7"
+      },
+      "run": {
+        "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v002/run.json",
+        "sha256": "d79743438f7252e91acac3c4265ca28383dde5b7ac793fb0975ff1b4885c4b0f"
+      },
+      "pngCount": 20,
+      "nativeAssertionsPassed": 12,
+      "observationCases": 8,
+      "nativeAssertionsFailed": 0,
+      "localRunnerStatus": "completed",
+      "localWorkspaceContentsUnchanged": true,
+      "workspaceComparisonLimit": "前後內容一致；不能證明期間未曾寫入或辨認寫入者。",
+      "reviewedScreenshots": [
+        {
+          "case": "baseline",
+          "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v002/shortcut-mode-01-baseline.png",
+          "sha256": "7fefffe3d6e72145c228a60b7ed5bce3e42e9525182a5ac42463cc5c00e3a3f4",
+          "viewedWith": "view_image, original native PNG",
+          "visualFinding": "Object Mode、Cube 原始 Transform 為灰色，時間軸沒有新增的關鍵影格菱形。",
+          "readbackMatchesRun": true
+        },
+        {
+          "case": "object-i-keyframe",
+          "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v002/shortcut-mode-02-object-i-keyframe.png",
+          "sha256": "56af01b10b0fda46dbb23b2409728ccebf00c1e223d95cfd8ca315da77113411",
+          "viewedWith": "view_image, original native PNG",
+          "visualFinding": "Object Mode；Transform 欄位變黃並有實心菱形，時間軸第1格可見黃色關鍵影格標記。通道及點數由原生讀值核對，不由圖估計。",
+          "readbackMatchesRun": true
+        },
+        {
+          "case": "object-i-undo",
+          "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v002/shortcut-mode-03-object-i-undo.png",
+          "sha256": "8f5a6f8c0dc03d6630a1e98b275abf84230a602a1c835cfe5a96f1fef03d19af",
+          "viewedWith": "view_image, original native PNG",
+          "visualFinding": "Transform 回灰色，關鍵影格菱形及時間軸黃色標記消失，物件外形／位置不變。",
+          "readbackMatchesRun": true
+        },
+        {
+          "case": "object-e",
+          "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v002/shortcut-mode-04-object-e.png",
+          "sha256": "01bf238d99bcd2469a79916d7f8e3677f23c3d444a09ed8136b5d87a9d9f710d",
+          "viewedWith": "view_image, original native PNG",
+          "visualFinding": "畫面仍為 Object Mode，Cube 外形、選取與灰色 Transform 無可見變化；未出現操作模態。",
+          "readbackMatchesRun": true
+        },
+        {
+          "case": "perspective-border-invoke-esc",
+          "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v002/shortcut-mode-05-perspective-border-invoke-esc.png",
+          "sha256": "c131fd1733a798b46137884d65c683921450fc9183800d2449d5bb626f5f61d8",
+          "viewedWith": "view_image, original native PNG",
+          "visualFinding": "一般透視有橫直白色虛線十字，底部狀態列顯示 Esc Cancel；Object Mode。",
+          "readbackMatchesRun": true
+        },
+        {
+          "case": "perspective-border-esc",
+          "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v002/shortcut-mode-06-perspective-border-esc.png",
+          "sha256": "01bf238d99bcd2469a79916d7f8e3677f23c3d444a09ed8136b5d87a9d9f710d",
+          "viewedWith": "view_image, original native PNG",
+          "visualFinding": "白色虛線十字消失，未出現紅色區域框。",
+          "readbackMatchesRun": true
+        },
+        {
+          "case": "perspective-border-invoke-rmb",
+          "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v002/shortcut-mode-07-perspective-border-invoke-rmb.png",
+          "sha256": "c131fd1733a798b46137884d65c683921450fc9183800d2449d5bb626f5f61d8",
+          "viewedWith": "view_image, original native PNG",
+          "visualFinding": "一般透視再次出現橫直白色虛線十字。",
+          "readbackMatchesRun": true
+        },
+        {
+          "case": "perspective-border-rmb",
+          "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v002/shortcut-mode-08-perspective-border-rmb.png",
+          "sha256": "7406ddda3b00caf341f3e268e5ab3bcd9f20263490fceae88e638a221bb9cbcc",
+          "viewedWith": "view_image, original native PNG",
+          "visualFinding": "右鍵後白色虛線十字消失，未出現紅色區域框。",
+          "readbackMatchesRun": true
+        },
+        {
+          "case": "perspective-border-complete",
+          "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v002/shortcut-mode-09-perspective-border-complete.png",
+          "sha256": "4bf553f1431b3ed214e9545634a3b03e158b2708d18c690aef60ed9424d46c1d",
+          "viewedWith": "view_image, original native PNG",
+          "visualFinding": "一般透視中出現紅色虛線矩形區域；Cube 沒有倒角或拓樸可見改變。",
+          "readbackMatchesRun": true
+        },
+        {
+          "case": "perspective-border-undo",
+          "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v002/shortcut-mode-10-perspective-border-undo.png",
+          "sha256": "4bf553f1431b3ed214e9545634a3b03e158b2708d18c690aef60ed9424d46c1d",
+          "viewedWith": "view_image, original native PNG",
+          "visualFinding": "Ctrl+Z 後紅色虛線矩形仍存在；讀值亦顯示 view border 未恢復。",
+          "readbackMatchesRun": true
+        },
+        {
+          "case": "perspective-border-before-clear",
+          "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v002/shortcut-mode-11-perspective-border-before-clear.png",
+          "sha256": "4bf553f1431b3ed214e9545634a3b03e158b2708d18c690aef60ed9424d46c1d",
+          "viewedWith": "view_image, original native PNG",
+          "visualFinding": "清除前紅色虛線矩形確實存在。",
+          "readbackMatchesRun": true
+        },
+        {
+          "case": "perspective-border-clear",
+          "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v002/shortcut-mode-12-perspective-border-clear.png",
+          "sha256": "17a75ff6ef862742616d7e3a0a490c7f8ce733b7e69ed3cfe358e05c3b1b70d7",
+          "viewedWith": "view_image, original native PNG",
+          "visualFinding": "Ctrl+Alt+B 後紅色虛線矩形消失；view border enabled=False、範圍回0..1。",
+          "readbackMatchesRun": true
+        },
+        {
+          "case": "camera-baseline",
+          "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v002/shortcut-mode-13-camera-baseline.png",
+          "sha256": "6ea85b59baa4836af544c055ed2d554a9a1d4f646d29926a910c141debd81cd0",
+          "viewedWith": "view_image, original native PNG",
+          "visualFinding": "Camera Perspective；黑色相機取景框存在，尚無相機紅色 render region。",
+          "readbackMatchesRun": true
+        },
+        {
+          "case": "camera-border-invoke",
+          "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v002/shortcut-mode-14-camera-border-invoke.png",
+          "sha256": "2d97e640d54120964792d0537b349dec7921cebf51620434eb33ee474db0f9d0",
+          "viewedWith": "view_image, original native PNG",
+          "visualFinding": "相機視圖內橫直白色虛線十字出現，底部顯示 Esc Cancel。",
+          "readbackMatchesRun": true
+        },
+        {
+          "case": "camera-border-esc",
+          "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v002/shortcut-mode-15-camera-border-esc.png",
+          "sha256": "6ea85b59baa4836af544c055ed2d554a9a1d4f646d29926a910c141debd81cd0",
+          "viewedWith": "view_image, original native PNG",
+          "visualFinding": "白色虛線十字消失，尚無相機紅色 render region。",
+          "readbackMatchesRun": true
+        },
+        {
+          "case": "camera-border-rmb",
+          "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v002/shortcut-mode-16-camera-border-rmb.png",
+          "sha256": "fc29071557c1cd9c3efd44a8764fe63850ddc364aacc205d7bf1740bb450122d",
+          "viewedWith": "view_image, original native PNG",
+          "visualFinding": "右鍵後沒有白色虛線十字或相機紅色 render region。",
+          "readbackMatchesRun": true
+        },
+        {
+          "case": "camera-border-complete",
+          "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v002/shortcut-mode-17-camera-border-complete.png",
+          "sha256": "a5f042dd00a05f7405a62a4d13b98a39e9b1ba158b41d8c8e2eb673d598a3d84",
+          "viewedWith": "view_image, original native PNG",
+          "visualFinding": "黑色相機取景框內出現紅色虛線 render region。",
+          "readbackMatchesRun": true
+        },
+        {
+          "case": "camera-border-undo",
+          "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v002/shortcut-mode-18-camera-border-undo.png",
+          "sha256": "fc29071557c1cd9c3efd44a8764fe63850ddc364aacc205d7bf1740bb450122d",
+          "viewedWith": "view_image, original native PNG",
+          "visualFinding": "Ctrl+Z 後相機紅色虛線框消失，黑色取景框保留。",
+          "readbackMatchesRun": true
+        },
+        {
+          "case": "camera-border-before-clear",
+          "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v002/shortcut-mode-19-camera-border-before-clear.png",
+          "sha256": "a5f042dd00a05f7405a62a4d13b98a39e9b1ba158b41d8c8e2eb673d598a3d84",
+          "viewedWith": "view_image, original native PNG",
+          "visualFinding": "重新建立後相機紅色虛線矩形確實存在。",
+          "readbackMatchesRun": true
+        },
+        {
+          "case": "camera-border-clear",
+          "path": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v002/shortcut-mode-20-camera-border-clear.png",
+          "sha256": "23d2b89ca24fbd59bb4929fbcdbc1aec6acff81a13dd656b7a4d2933607343cd",
+          "viewedWith": "view_image, original native PNG",
+          "visualFinding": "畫面沒有相機紅色 region；v001此事件在已Undo後執行，不能證清除變化；v002在重新建立後由true變false才證明清除有效。",
+          "readbackMatchesRun": true
+        }
+      ]
+    }
+  ],
+  "conclusions": [
+    "I在本出廠Object Mode／Cube／3D Viewport插入frame1的9個Transform關鍵影格，建立CubeAction；Ctrl+Z立即復原後animation_data=False、action=None、視覺關鍵影格消失。",
+    "E在此出廠Object Mode的原生送鍵沒有新增幾何、動畫或模態；Object Mode／3D View出廠鍵位未列未修飾E。不能推及其他模式、編輯器或自訂鍵位。",
+    "Ctrl+B在Object Mode啟動VIEW3D_OT_render_border，不是倒角；一般透視及相機皆可在完成框選前用Esc或右鍵取消，modal Operators變空且原border狀態不變。",
+    "一般透視完成框選會設view border；立即Ctrl+Z在本次未移除該border，不能泛稱Undo能取消所有已完成Render Region。",
+    "相機完成框選會設scene render border；本次立即Ctrl+Z恢復相機border先前值；既有幾何、動畫不變。",
+    "查出廠view3d.clear_render_border對應Ctrl+Alt+B，v002透視／相機均在border enabled=True前提送鍵，分別回False及0..1；此為清除，不是保留先前自訂範圍。",
+    "v001最後clear發生在Undo已關閉scene border之後，保留但不作清除前後效果證據。v002因開始早於root縮小補驗範圍指示，重複I/E；如實保留兩run，沒有把v001稱失敗。"
+  ],
+  "limitations": [
+    "只實測出廠鍵位／Object Mode／Cube／3D Viewport、Solid一般透視及相機視圖。",
+    "每張圖片目視核對；9 channels與9 keys依讀回JSON，不宣稱圖片能分辨全部通道。",
+    "沒有存blend／STL、沒有儲存Preferences，沒有寫學員工作區、進度或operationRun。",
+    "原始runner-status含本機執行資訊，公開邊界由root單一發布者處理；本檔未複製Recent內容。"
+  ]
+}

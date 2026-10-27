@@ -1,0 +1,1569 @@
+{
+ "scenario": "D:\\others\\study\\Blender-Learning\\learning\\tutor\\scenarios\\shortcut_mode_errors_probe.py",
+ "blender": "5.2.1 LTS",
+ "buildHash": "9e2066aef7ef",
+ "records": [
+  {
+   "seq": 1,
+   "step": "shortcut-mode",
+   "slug": "baseline",
+   "recordedAt": "2026-10-27T00:43:08.028Z",
+   "action": "核對 Object Mode、Cube 與尚無動畫的出廠場景。",
+   "observed": {
+    "version": "5.2.1 LTS",
+    "buildHash": "9e2066aef7ef",
+    "active": "Cube",
+    "mode": "OBJECT",
+    "selected": [
+     "Cube"
+    ],
+    "location": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "rotation": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "scale": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "mesh": {
+     "vertices": 8,
+     "edges": 12,
+     "polygons": 6
+    },
+    "animation": {
+     "animationData": false,
+     "action": null,
+     "actionSlot": null,
+     "channels": [],
+     "layers": [],
+     "legacyFcurvesAvailable": false
+    },
+    "allActions": [],
+    "frame": 1,
+    "viewPerspective": "PERSP",
+    "viewShading": "SOLID",
+    "viewRenderBorder": {
+     "enabled": false,
+     "xmin": 0.0,
+     "xmax": 1.0,
+     "ymin": 0.0,
+     "ymax": 1.0
+    },
+    "sceneRenderBorder": {
+     "enabled": false,
+     "xmin": 0.0,
+     "xmax": 1.0,
+     "ymin": 0.0,
+     "ymax": 1.0
+    },
+    "recentOperators": [],
+    "modalOperators": [],
+    "timelineEditors": [
+     {
+      "type": "DOPESHEET_EDITOR",
+      "uiType": "TIMELINE",
+      "width": 1224,
+      "height": 69
+     }
+    ]
+   },
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "shortcut-mode-01-baseline.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "7fefffe3d6e72145c228a60b7ed5bce3e42e9525182a5ac42463cc5c00e3a3f4"
+  },
+  {
+   "seq": 2,
+   "step": "shortcut-mode",
+   "slug": "object-i-keyframe",
+   "recordedAt": "2026-10-27T00:43:09.128Z",
+   "action": "滑鼠在 3D Viewport、Object Mode 選取 Cube，按 I，讀回動畫與時間軸。",
+   "observed": {
+    "version": "5.2.1 LTS",
+    "buildHash": "9e2066aef7ef",
+    "active": "Cube",
+    "mode": "OBJECT",
+    "selected": [
+     "Cube"
+    ],
+    "location": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "rotation": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "scale": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "mesh": {
+     "vertices": 8,
+     "edges": 12,
+     "polygons": 6
+    },
+    "animation": {
+     "animationData": true,
+     "action": "CubeAction",
+     "actionSlot": "OBCube",
+     "channels": [
+      {
+       "dataPath": "location",
+       "arrayIndex": 0,
+       "points": [
+        {
+         "co": [
+          1.0,
+          0.0
+         ],
+         "interpolation": "BEZIER",
+         "selected": true
+        }
+       ]
+      },
+      {
+       "dataPath": "location",
+       "arrayIndex": 1,
+       "points": [
+        {
+         "co": [
+          1.0,
+          0.0
+         ],
+         "interpolation": "BEZIER",
+         "selected": true
+        }
+       ]
+      },
+      {
+       "dataPath": "location",
+       "arrayIndex": 2,
+       "points": [
+        {
+         "co": [
+          1.0,
+          0.0
+         ],
+         "interpolation": "BEZIER",
+         "selected": true
+        }
+       ]
+      },
+      {
+       "dataPath": "rotation_euler",
+       "arrayIndex": 0,
+       "points": [
+        {
+         "co": [
+          1.0,
+          0.0
+         ],
+         "interpolation": "BEZIER",
+         "selected": true
+        }
+       ]
+      },
+      {
+       "dataPath": "rotation_euler",
+       "arrayIndex": 1,
+       "points": [
+        {
+         "co": [
+          1.0,
+          0.0
+         ],
+         "interpolation": "BEZIER",
+         "selected": true
+        }
+       ]
+      },
+      {
+       "dataPath": "rotation_euler",
+       "arrayIndex": 2,
+       "points": [
+        {
+         "co": [
+          1.0,
+          0.0
+         ],
+         "interpolation": "BEZIER",
+         "selected": true
+        }
+       ]
+      },
+      {
+       "dataPath": "scale",
+       "arrayIndex": 0,
+       "points": [
+        {
+         "co": [
+          1.0,
+          1.0
+         ],
+         "interpolation": "BEZIER",
+         "selected": true
+        }
+       ]
+      },
+      {
+       "dataPath": "scale",
+       "arrayIndex": 1,
+       "points": [
+        {
+         "co": [
+          1.0,
+          1.0
+         ],
+         "interpolation": "BEZIER",
+         "selected": true
+        }
+       ]
+      },
+      {
+       "dataPath": "scale",
+       "arrayIndex": 2,
+       "points": [
+        {
+         "co": [
+          1.0,
+          1.0
+         ],
+         "interpolation": "BEZIER",
+         "selected": true
+        }
+       ]
+      }
+     ],
+     "layers": [
+      {
+       "name": "Layer",
+       "strips": [
+        {
+         "type": "KEYFRAME",
+         "channelbags": [
+          {
+           "slotHandle": 929201142,
+           "channels": [
+            {
+             "dataPath": "location",
+             "arrayIndex": 0,
+             "points": [
+              {
+               "co": [
+                1.0,
+                0.0
+               ],
+               "interpolation": "BEZIER",
+               "selected": true
+              }
+             ]
+            },
+            {
+             "dataPath": "location",
+             "arrayIndex": 1,
+             "points": [
+              {
+               "co": [
+                1.0,
+                0.0
+               ],
+               "interpolation": "BEZIER",
+               "selected": true
+              }
+             ]
+            },
+            {
+             "dataPath": "location",
+             "arrayIndex": 2,
+             "points": [
+              {
+               "co": [
+                1.0,
+                0.0
+               ],
+               "interpolation": "BEZIER",
+               "selected": true
+              }
+             ]
+            },
+            {
+             "dataPath": "rotation_euler",
+             "arrayIndex": 0,
+             "points": [
+              {
+               "co": [
+                1.0,
+                0.0
+               ],
+               "interpolation": "BEZIER",
+               "selected": true
+              }
+             ]
+            },
+            {
+             "dataPath": "rotation_euler",
+             "arrayIndex": 1,
+             "points": [
+              {
+               "co": [
+                1.0,
+                0.0
+               ],
+               "interpolation": "BEZIER",
+               "selected": true
+              }
+             ]
+            },
+            {
+             "dataPath": "rotation_euler",
+             "arrayIndex": 2,
+             "points": [
+              {
+               "co": [
+                1.0,
+                0.0
+               ],
+               "interpolation": "BEZIER",
+               "selected": true
+              }
+             ]
+            },
+            {
+             "dataPath": "scale",
+             "arrayIndex": 0,
+             "points": [
+              {
+               "co": [
+                1.0,
+                1.0
+               ],
+               "interpolation": "BEZIER",
+               "selected": true
+              }
+             ]
+            },
+            {
+             "dataPath": "scale",
+             "arrayIndex": 1,
+             "points": [
+              {
+               "co": [
+                1.0,
+                1.0
+               ],
+               "interpolation": "BEZIER",
+               "selected": true
+              }
+             ]
+            },
+            {
+             "dataPath": "scale",
+             "arrayIndex": 2,
+             "points": [
+              {
+               "co": [
+                1.0,
+                1.0
+               ],
+               "interpolation": "BEZIER",
+               "selected": true
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "legacyFcurvesAvailable": false,
+     "pointCount": 9,
+     "keyedFrames": [
+      1.0
+     ]
+    },
+    "allActions": [
+     "CubeAction"
+    ],
+    "frame": 1,
+    "viewPerspective": "PERSP",
+    "viewShading": "SOLID",
+    "viewRenderBorder": {
+     "enabled": false,
+     "xmin": 0.0,
+     "xmax": 1.0,
+     "ymin": 0.0,
+     "ymax": 1.0
+    },
+    "sceneRenderBorder": {
+     "enabled": false,
+     "xmin": 0.0,
+     "xmax": 1.0,
+     "ymin": 0.0,
+     "ymax": 1.0
+    },
+    "recentOperators": [
+     "ANIM_OT_keyframe_insert"
+    ],
+    "modalOperators": [],
+    "timelineEditors": [
+     {
+      "type": "DOPESHEET_EDITOR",
+      "uiType": "TIMELINE",
+      "width": 1224,
+      "height": 69
+     }
+    ]
+   },
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "shortcut-mode-02-object-i-keyframe.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "56af01b10b0fda46dbb23b2409728ccebf00c1e223d95cfd8ca315da77113411"
+  },
+  {
+   "seq": 3,
+   "step": "shortcut-mode",
+   "slug": "object-i-undo",
+   "recordedAt": "2026-10-27T00:43:10.428Z",
+   "action": "I 插入鍵後立刻 Ctrl+Z，核對動畫是否回到操作前。",
+   "observed": {
+    "version": "5.2.1 LTS",
+    "buildHash": "9e2066aef7ef",
+    "active": "Cube",
+    "mode": "OBJECT",
+    "selected": [
+     "Cube"
+    ],
+    "location": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "rotation": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "scale": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "mesh": {
+     "vertices": 8,
+     "edges": 12,
+     "polygons": 6
+    },
+    "animation": {
+     "animationData": false,
+     "action": null,
+     "actionSlot": null,
+     "channels": [],
+     "layers": [],
+     "legacyFcurvesAvailable": false
+    },
+    "allActions": [],
+    "frame": 1,
+    "viewPerspective": "PERSP",
+    "viewShading": "SOLID",
+    "viewRenderBorder": {
+     "enabled": false,
+     "xmin": 0.0,
+     "xmax": 1.0,
+     "ymin": 0.0,
+     "ymax": 1.0
+    },
+    "sceneRenderBorder": {
+     "enabled": false,
+     "xmin": 0.0,
+     "xmax": 1.0,
+     "ymin": 0.0,
+     "ymax": 1.0
+    },
+    "recentOperators": [],
+    "modalOperators": [],
+    "timelineEditors": [
+     {
+      "type": "DOPESHEET_EDITOR",
+      "uiType": "TIMELINE",
+      "width": 1224,
+      "height": 69
+     }
+    ]
+   },
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "shortcut-mode-03-object-i-undo.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "8f5a6f8c0dc03d6630a1e98b275abf84230a602a1c835cfe5a96f1fef03d19af"
+  },
+  {
+   "seq": 4,
+   "step": "shortcut-mode",
+   "slug": "object-e",
+   "recordedAt": "2026-10-27T00:43:11.528Z",
+   "action": "Object Mode、Cube 已選取、游標在 3D Viewport 按 E，核對實際反應。",
+   "observed": {
+    "version": "5.2.1 LTS",
+    "buildHash": "9e2066aef7ef",
+    "active": "Cube",
+    "mode": "OBJECT",
+    "selected": [
+     "Cube"
+    ],
+    "location": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "rotation": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "scale": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "mesh": {
+     "vertices": 8,
+     "edges": 12,
+     "polygons": 6
+    },
+    "animation": {
+     "animationData": false,
+     "action": null,
+     "actionSlot": null,
+     "channels": [],
+     "layers": [],
+     "legacyFcurvesAvailable": false
+    },
+    "allActions": [],
+    "frame": 1,
+    "viewPerspective": "PERSP",
+    "viewShading": "SOLID",
+    "viewRenderBorder": {
+     "enabled": false,
+     "xmin": 0.0,
+     "xmax": 1.0,
+     "ymin": 0.0,
+     "ymax": 1.0
+    },
+    "sceneRenderBorder": {
+     "enabled": false,
+     "xmin": 0.0,
+     "xmax": 1.0,
+     "ymin": 0.0,
+     "ymax": 1.0
+    },
+    "recentOperators": [],
+    "modalOperators": [],
+    "timelineEditors": [
+     {
+      "type": "DOPESHEET_EDITOR",
+      "uiType": "TIMELINE",
+      "width": 1224,
+      "height": 69
+     }
+    ]
+   },
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "shortcut-mode-04-object-e.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "01bf238d99bcd2469a79916d7f8e3677f23c3d444a09ed8136b5d87a9d9f710d"
+  },
+  {
+   "seq": 5,
+   "step": "shortcut-mode",
+   "slug": "perspective-border-invoke-esc",
+   "recordedAt": "2026-10-27T00:43:12.628Z",
+   "action": "一般透視 Object Mode 按 Ctrl+B，保留游標與原生框選指示。",
+   "observed": {
+    "version": "5.2.1 LTS",
+    "buildHash": "9e2066aef7ef",
+    "active": "Cube",
+    "mode": "OBJECT",
+    "selected": [
+     "Cube"
+    ],
+    "location": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "rotation": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "scale": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "mesh": {
+     "vertices": 8,
+     "edges": 12,
+     "polygons": 6
+    },
+    "animation": {
+     "animationData": false,
+     "action": null,
+     "actionSlot": null,
+     "channels": [],
+     "layers": [],
+     "legacyFcurvesAvailable": false
+    },
+    "allActions": [],
+    "frame": 1,
+    "viewPerspective": "PERSP",
+    "viewShading": "SOLID",
+    "viewRenderBorder": {
+     "enabled": false,
+     "xmin": 0.0,
+     "xmax": 1.0,
+     "ymin": 0.0,
+     "ymax": 1.0
+    },
+    "sceneRenderBorder": {
+     "enabled": false,
+     "xmin": 0.0,
+     "xmax": 1.0,
+     "ymin": 0.0,
+     "ymax": 1.0
+    },
+    "recentOperators": [],
+    "modalOperators": [
+     "VIEW3D_OT_render_border"
+    ],
+    "timelineEditors": [
+     {
+      "type": "DOPESHEET_EDITOR",
+      "uiType": "TIMELINE",
+      "width": 1224,
+      "height": 69
+     }
+    ]
+   },
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "shortcut-mode-05-perspective-border-invoke-esc.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "c131fd1733a798b46137884d65c683921450fc9183800d2449d5bb626f5f61d8"
+  },
+  {
+   "seq": 6,
+   "step": "shortcut-mode",
+   "slug": "perspective-border-esc",
+   "recordedAt": "2026-10-27T00:43:13.728Z",
+   "action": "按 Esc 取消一般透視的 Ctrl+B 指令，讀回資料。",
+   "observed": {
+    "version": "5.2.1 LTS",
+    "buildHash": "9e2066aef7ef",
+    "active": "Cube",
+    "mode": "OBJECT",
+    "selected": [
+     "Cube"
+    ],
+    "location": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "rotation": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "scale": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "mesh": {
+     "vertices": 8,
+     "edges": 12,
+     "polygons": 6
+    },
+    "animation": {
+     "animationData": false,
+     "action": null,
+     "actionSlot": null,
+     "channels": [],
+     "layers": [],
+     "legacyFcurvesAvailable": false
+    },
+    "allActions": [],
+    "frame": 1,
+    "viewPerspective": "PERSP",
+    "viewShading": "SOLID",
+    "viewRenderBorder": {
+     "enabled": false,
+     "xmin": 0.0,
+     "xmax": 1.0,
+     "ymin": 0.0,
+     "ymax": 1.0
+    },
+    "sceneRenderBorder": {
+     "enabled": false,
+     "xmin": 0.0,
+     "xmax": 1.0,
+     "ymin": 0.0,
+     "ymax": 1.0
+    },
+    "recentOperators": [],
+    "modalOperators": [],
+    "timelineEditors": [
+     {
+      "type": "DOPESHEET_EDITOR",
+      "uiType": "TIMELINE",
+      "width": 1224,
+      "height": 69
+     }
+    ]
+   },
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "shortcut-mode-06-perspective-border-esc.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "01bf238d99bcd2469a79916d7f8e3677f23c3d444a09ed8136b5d87a9d9f710d"
+  },
+  {
+   "seq": 7,
+   "step": "shortcut-mode",
+   "slug": "perspective-border-invoke-rmb",
+   "recordedAt": "2026-10-27T00:43:14.828Z",
+   "action": "一般透視再按 Ctrl+B，準備右鍵取消對照。",
+   "observed": {
+    "version": "5.2.1 LTS",
+    "buildHash": "9e2066aef7ef",
+    "active": "Cube",
+    "mode": "OBJECT",
+    "selected": [
+     "Cube"
+    ],
+    "location": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "rotation": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "scale": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "mesh": {
+     "vertices": 8,
+     "edges": 12,
+     "polygons": 6
+    },
+    "animation": {
+     "animationData": false,
+     "action": null,
+     "actionSlot": null,
+     "channels": [],
+     "layers": [],
+     "legacyFcurvesAvailable": false
+    },
+    "allActions": [],
+    "frame": 1,
+    "viewPerspective": "PERSP",
+    "viewShading": "SOLID",
+    "viewRenderBorder": {
+     "enabled": false,
+     "xmin": 0.0,
+     "xmax": 1.0,
+     "ymin": 0.0,
+     "ymax": 1.0
+    },
+    "sceneRenderBorder": {
+     "enabled": false,
+     "xmin": 0.0,
+     "xmax": 1.0,
+     "ymin": 0.0,
+     "ymax": 1.0
+    },
+    "recentOperators": [],
+    "modalOperators": [
+     "VIEW3D_OT_render_border"
+    ],
+    "timelineEditors": [
+     {
+      "type": "DOPESHEET_EDITOR",
+      "uiType": "TIMELINE",
+      "width": 1224,
+      "height": 69
+     }
+    ]
+   },
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "shortcut-mode-07-perspective-border-invoke-rmb.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "c131fd1733a798b46137884d65c683921450fc9183800d2449d5bb626f5f61d8"
+  },
+  {
+   "seq": 8,
+   "step": "shortcut-mode",
+   "slug": "perspective-border-rmb",
+   "recordedAt": "2026-10-27T00:43:15.928Z",
+   "action": "滑鼠右鍵取消 Ctrl+B，讀回資料。",
+   "observed": {
+    "version": "5.2.1 LTS",
+    "buildHash": "9e2066aef7ef",
+    "active": "Cube",
+    "mode": "OBJECT",
+    "selected": [
+     "Cube"
+    ],
+    "location": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "rotation": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "scale": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "mesh": {
+     "vertices": 8,
+     "edges": 12,
+     "polygons": 6
+    },
+    "animation": {
+     "animationData": false,
+     "action": null,
+     "actionSlot": null,
+     "channels": [],
+     "layers": [],
+     "legacyFcurvesAvailable": false
+    },
+    "allActions": [],
+    "frame": 1,
+    "viewPerspective": "PERSP",
+    "viewShading": "SOLID",
+    "viewRenderBorder": {
+     "enabled": false,
+     "xmin": 0.0,
+     "xmax": 1.0,
+     "ymin": 0.0,
+     "ymax": 1.0
+    },
+    "sceneRenderBorder": {
+     "enabled": false,
+     "xmin": 0.0,
+     "xmax": 1.0,
+     "ymin": 0.0,
+     "ymax": 1.0
+    },
+    "recentOperators": [],
+    "modalOperators": [],
+    "timelineEditors": [
+     {
+      "type": "DOPESHEET_EDITOR",
+      "uiType": "TIMELINE",
+      "width": 1224,
+      "height": 69
+     }
+    ]
+   },
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "shortcut-mode-08-perspective-border-rmb.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "7406ddda3b00caf341f3e268e5ab3bcd9f20263490fceae88e638a221bb9cbcc"
+  },
+  {
+   "seq": 9,
+   "step": "shortcut-mode",
+   "slug": "perspective-border-complete",
+   "recordedAt": "2026-10-27T00:43:18.328Z",
+   "action": "一般透視 Ctrl+B 後左鍵拖曳矩形並放開，讀回是否產生 render border。",
+   "observed": {
+    "version": "5.2.1 LTS",
+    "buildHash": "9e2066aef7ef",
+    "active": "Cube",
+    "mode": "OBJECT",
+    "selected": [
+     "Cube"
+    ],
+    "location": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "rotation": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "scale": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "mesh": {
+     "vertices": 8,
+     "edges": 12,
+     "polygons": 6
+    },
+    "animation": {
+     "animationData": false,
+     "action": null,
+     "actionSlot": null,
+     "channels": [],
+     "layers": [],
+     "legacyFcurvesAvailable": false
+    },
+    "allActions": [],
+    "frame": 1,
+    "viewPerspective": "PERSP",
+    "viewShading": "SOLID",
+    "viewRenderBorder": {
+     "enabled": true,
+     "xmin": 0.34967321157455444,
+     "xmax": 0.6519607901573181,
+     "ymin": 0.38307350873947144,
+     "ymax": 0.6726058125495911
+    },
+    "sceneRenderBorder": {
+     "enabled": false,
+     "xmin": 0.0,
+     "xmax": 1.0,
+     "ymin": 0.0,
+     "ymax": 1.0
+    },
+    "recentOperators": [
+     "VIEW3D_OT_render_border"
+    ],
+    "modalOperators": [],
+    "timelineEditors": [
+     {
+      "type": "DOPESHEET_EDITOR",
+      "uiType": "TIMELINE",
+      "width": 1224,
+      "height": 69
+     }
+    ]
+   },
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "shortcut-mode-09-perspective-border-complete.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "4bf553f1431b3ed214e9545634a3b03e158b2708d18c690aef60ed9424d46c1d"
+  },
+  {
+   "seq": 10,
+   "step": "shortcut-mode",
+   "slug": "camera-baseline",
+   "recordedAt": "2026-10-27T00:43:19.428Z",
+   "action": "按數字鍵盤 0 切相機視圖，準備 Object Mode 的 render-border 對照。",
+   "observed": {
+    "version": "5.2.1 LTS",
+    "buildHash": "9e2066aef7ef",
+    "active": "Cube",
+    "mode": "OBJECT",
+    "selected": [
+     "Cube"
+    ],
+    "location": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "rotation": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "scale": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "mesh": {
+     "vertices": 8,
+     "edges": 12,
+     "polygons": 6
+    },
+    "animation": {
+     "animationData": false,
+     "action": null,
+     "actionSlot": null,
+     "channels": [],
+     "layers": [],
+     "legacyFcurvesAvailable": false
+    },
+    "allActions": [],
+    "frame": 1,
+    "viewPerspective": "CAMERA",
+    "viewShading": "SOLID",
+    "viewRenderBorder": {
+     "enabled": true,
+     "xmin": 0.34967321157455444,
+     "xmax": 0.6519607901573181,
+     "ymin": 0.38307350873947144,
+     "ymax": 0.6726058125495911
+    },
+    "sceneRenderBorder": {
+     "enabled": false,
+     "xmin": 0.0,
+     "xmax": 1.0,
+     "ymin": 0.0,
+     "ymax": 1.0
+    },
+    "recentOperators": [
+     "VIEW3D_OT_render_border"
+    ],
+    "modalOperators": [],
+    "timelineEditors": [
+     {
+      "type": "DOPESHEET_EDITOR",
+      "uiType": "TIMELINE",
+      "width": 1224,
+      "height": 69
+     }
+    ]
+   },
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "shortcut-mode-10-camera-baseline.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "6ea85b59baa4836af544c055ed2d554a9a1d4f646d29926a910c141debd81cd0"
+  },
+  {
+   "seq": 11,
+   "step": "shortcut-mode",
+   "slug": "camera-border-invoke",
+   "recordedAt": "2026-10-27T00:43:20.528Z",
+   "action": "相機視圖、Object Mode 按 Ctrl+B，記錄原生十字游標與 modal。",
+   "observed": {
+    "version": "5.2.1 LTS",
+    "buildHash": "9e2066aef7ef",
+    "active": "Cube",
+    "mode": "OBJECT",
+    "selected": [
+     "Cube"
+    ],
+    "location": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "rotation": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "scale": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "mesh": {
+     "vertices": 8,
+     "edges": 12,
+     "polygons": 6
+    },
+    "animation": {
+     "animationData": false,
+     "action": null,
+     "actionSlot": null,
+     "channels": [],
+     "layers": [],
+     "legacyFcurvesAvailable": false
+    },
+    "allActions": [],
+    "frame": 1,
+    "viewPerspective": "CAMERA",
+    "viewShading": "SOLID",
+    "viewRenderBorder": {
+     "enabled": true,
+     "xmin": 0.34967321157455444,
+     "xmax": 0.6519607901573181,
+     "ymin": 0.38307350873947144,
+     "ymax": 0.6726058125495911
+    },
+    "sceneRenderBorder": {
+     "enabled": false,
+     "xmin": 0.0,
+     "xmax": 1.0,
+     "ymin": 0.0,
+     "ymax": 1.0
+    },
+    "recentOperators": [
+     "VIEW3D_OT_render_border"
+    ],
+    "modalOperators": [
+     "VIEW3D_OT_render_border"
+    ],
+    "timelineEditors": [
+     {
+      "type": "DOPESHEET_EDITOR",
+      "uiType": "TIMELINE",
+      "width": 1224,
+      "height": 69
+     }
+    ]
+   },
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "shortcut-mode-11-camera-border-invoke.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "2d97e640d54120964792d0537b349dec7921cebf51620434eb33ee474db0f9d0"
+  },
+  {
+   "seq": 12,
+   "step": "shortcut-mode",
+   "slug": "camera-border-esc",
+   "recordedAt": "2026-10-27T00:43:21.628Z",
+   "action": "相機視圖 Ctrl+B 後按 Esc 取消。",
+   "observed": {
+    "version": "5.2.1 LTS",
+    "buildHash": "9e2066aef7ef",
+    "active": "Cube",
+    "mode": "OBJECT",
+    "selected": [
+     "Cube"
+    ],
+    "location": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "rotation": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "scale": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "mesh": {
+     "vertices": 8,
+     "edges": 12,
+     "polygons": 6
+    },
+    "animation": {
+     "animationData": false,
+     "action": null,
+     "actionSlot": null,
+     "channels": [],
+     "layers": [],
+     "legacyFcurvesAvailable": false
+    },
+    "allActions": [],
+    "frame": 1,
+    "viewPerspective": "CAMERA",
+    "viewShading": "SOLID",
+    "viewRenderBorder": {
+     "enabled": true,
+     "xmin": 0.34967321157455444,
+     "xmax": 0.6519607901573181,
+     "ymin": 0.38307350873947144,
+     "ymax": 0.6726058125495911
+    },
+    "sceneRenderBorder": {
+     "enabled": false,
+     "xmin": 0.0,
+     "xmax": 1.0,
+     "ymin": 0.0,
+     "ymax": 1.0
+    },
+    "recentOperators": [
+     "VIEW3D_OT_render_border"
+    ],
+    "modalOperators": [],
+    "timelineEditors": [
+     {
+      "type": "DOPESHEET_EDITOR",
+      "uiType": "TIMELINE",
+      "width": 1224,
+      "height": 69
+     }
+    ]
+   },
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "shortcut-mode-12-camera-border-esc.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "6ea85b59baa4836af544c055ed2d554a9a1d4f646d29926a910c141debd81cd0"
+  },
+  {
+   "seq": 13,
+   "step": "shortcut-mode",
+   "slug": "camera-border-rmb",
+   "recordedAt": "2026-10-27T00:43:23.428Z",
+   "action": "相機視圖再按 Ctrl+B，右鍵取消。",
+   "observed": {
+    "version": "5.2.1 LTS",
+    "buildHash": "9e2066aef7ef",
+    "active": "Cube",
+    "mode": "OBJECT",
+    "selected": [
+     "Cube"
+    ],
+    "location": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "rotation": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "scale": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "mesh": {
+     "vertices": 8,
+     "edges": 12,
+     "polygons": 6
+    },
+    "animation": {
+     "animationData": false,
+     "action": null,
+     "actionSlot": null,
+     "channels": [],
+     "layers": [],
+     "legacyFcurvesAvailable": false
+    },
+    "allActions": [],
+    "frame": 1,
+    "viewPerspective": "CAMERA",
+    "viewShading": "SOLID",
+    "viewRenderBorder": {
+     "enabled": true,
+     "xmin": 0.34967321157455444,
+     "xmax": 0.6519607901573181,
+     "ymin": 0.38307350873947144,
+     "ymax": 0.6726058125495911
+    },
+    "sceneRenderBorder": {
+     "enabled": false,
+     "xmin": 0.0,
+     "xmax": 1.0,
+     "ymin": 0.0,
+     "ymax": 1.0
+    },
+    "recentOperators": [
+     "VIEW3D_OT_render_border"
+    ],
+    "modalOperators": [],
+    "timelineEditors": [
+     {
+      "type": "DOPESHEET_EDITOR",
+      "uiType": "TIMELINE",
+      "width": 1224,
+      "height": 69
+     }
+    ]
+   },
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "shortcut-mode-13-camera-border-rmb.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "fc29071557c1cd9c3efd44a8764fe63850ddc364aacc205d7bf1740bb450122d"
+  },
+  {
+   "seq": 14,
+   "step": "shortcut-mode",
+   "slug": "camera-border-complete",
+   "recordedAt": "2026-10-27T00:43:25.828Z",
+   "action": "相機視圖 Ctrl+B 後拖出矩形並放開，讀回 scene render border。",
+   "observed": {
+    "version": "5.2.1 LTS",
+    "buildHash": "9e2066aef7ef",
+    "active": "Cube",
+    "mode": "OBJECT",
+    "selected": [
+     "Cube"
+    ],
+    "location": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "rotation": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "scale": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "mesh": {
+     "vertices": 8,
+     "edges": 12,
+     "polygons": 6
+    },
+    "animation": {
+     "animationData": false,
+     "action": null,
+     "actionSlot": null,
+     "channels": [],
+     "layers": [],
+     "legacyFcurvesAvailable": false
+    },
+    "allActions": [],
+    "frame": 1,
+    "viewPerspective": "CAMERA",
+    "viewShading": "SOLID",
+    "viewRenderBorder": {
+     "enabled": true,
+     "xmin": 0.34967321157455444,
+     "xmax": 0.6519607901573181,
+     "ymin": 0.38307350873947144,
+     "ymax": 0.6726058125495911
+    },
+    "sceneRenderBorder": {
+     "enabled": true,
+     "xmin": 0.1993463933467865,
+     "xmax": 0.8039216995239258,
+     "ymin": 0.19498907029628754,
+     "ymax": 0.9502543210983276
+    },
+    "recentOperators": [
+     "VIEW3D_OT_render_border",
+     "VIEW3D_OT_render_border"
+    ],
+    "modalOperators": [],
+    "timelineEditors": [
+     {
+      "type": "DOPESHEET_EDITOR",
+      "uiType": "TIMELINE",
+      "width": 1224,
+      "height": 69
+     }
+    ]
+   },
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "shortcut-mode-14-camera-border-complete.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "a5f042dd00a05f7405a62a4d13b98a39e9b1ba158b41d8c8e2eb673d598a3d84"
+  },
+  {
+   "seq": 15,
+   "step": "shortcut-mode",
+   "slug": "camera-border-undo",
+   "recordedAt": "2026-10-27T00:43:27.128Z",
+   "action": "已建立相機 render border 後立刻 Ctrl+Z，讀回是否回到原設定。",
+   "observed": {
+    "version": "5.2.1 LTS",
+    "buildHash": "9e2066aef7ef",
+    "active": "Cube",
+    "mode": "OBJECT",
+    "selected": [
+     "Cube"
+    ],
+    "location": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "rotation": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "scale": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "mesh": {
+     "vertices": 8,
+     "edges": 12,
+     "polygons": 6
+    },
+    "animation": {
+     "animationData": false,
+     "action": null,
+     "actionSlot": null,
+     "channels": [],
+     "layers": [],
+     "legacyFcurvesAvailable": false
+    },
+    "allActions": [],
+    "frame": 1,
+    "viewPerspective": "CAMERA",
+    "viewShading": "SOLID",
+    "viewRenderBorder": {
+     "enabled": true,
+     "xmin": 0.34967321157455444,
+     "xmax": 0.6519607901573181,
+     "ymin": 0.38307350873947144,
+     "ymax": 0.6726058125495911
+    },
+    "sceneRenderBorder": {
+     "enabled": false,
+     "xmin": 0.0,
+     "xmax": 1.0,
+     "ymin": 0.0,
+     "ymax": 1.0
+    },
+    "recentOperators": [],
+    "modalOperators": [],
+    "timelineEditors": [
+     {
+      "type": "DOPESHEET_EDITOR",
+      "uiType": "TIMELINE",
+      "width": 1224,
+      "height": 69
+     }
+    ]
+   },
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "shortcut-mode-15-camera-border-undo.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "fc29071557c1cd9c3efd44a8764fe63850ddc364aacc205d7bf1740bb450122d"
+  },
+  {
+   "seq": 16,
+   "step": "shortcut-mode",
+   "slug": "camera-border-clear",
+   "recordedAt": "2026-10-27T00:43:28.428Z",
+   "action": "讀出出廠 Clear Render Region 鍵位並原生送出，讀回取消框選範圍。",
+   "observed": {
+    "version": "5.2.1 LTS",
+    "buildHash": "9e2066aef7ef",
+    "active": "Cube",
+    "mode": "OBJECT",
+    "selected": [
+     "Cube"
+    ],
+    "location": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "rotation": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "scale": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "mesh": {
+     "vertices": 8,
+     "edges": 12,
+     "polygons": 6
+    },
+    "animation": {
+     "animationData": false,
+     "action": null,
+     "actionSlot": null,
+     "channels": [],
+     "layers": [],
+     "legacyFcurvesAvailable": false
+    },
+    "allActions": [],
+    "frame": 1,
+    "viewPerspective": "CAMERA",
+    "viewShading": "SOLID",
+    "viewRenderBorder": {
+     "enabled": true,
+     "xmin": 0.34967321157455444,
+     "xmax": 0.6519607901573181,
+     "ymin": 0.38307350873947144,
+     "ymax": 0.6726058125495911
+    },
+    "sceneRenderBorder": {
+     "enabled": false,
+     "xmin": 0.0,
+     "xmax": 1.0,
+     "ymin": 0.0,
+     "ymax": 1.0
+    },
+    "recentOperators": [
+     "VIEW3D_OT_clear_render_border"
+    ],
+    "modalOperators": [],
+    "timelineEditors": [
+     {
+      "type": "DOPESHEET_EDITOR",
+      "uiType": "TIMELINE",
+      "width": 1224,
+      "height": 69
+     }
+    ]
+   },
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "shortcut-mode-16-camera-border-clear.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "23d2b89ca24fbd59bb4929fbcdbc1aec6acff81a13dd656b7a4d2933607343cd"
+  }
+ ]
+}

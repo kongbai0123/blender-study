@@ -1,0 +1,2346 @@
+{
+  "schemaVersion": 1,
+  "kind": "native_shortcut_verification",
+  "runId": "2026-10-27-shortcuts-demo-v001",
+  "recordedAt": "2026-10-27T00:25:32.554399+00:00",
+  "blender": "5.2.1 LTS",
+  "buildHash": "9e2066aef7ef",
+  "factoryStartup": true,
+  "eventSimulate": true,
+  "sceneUnitSystem": "METRIC",
+  "sceneScaleLength": 1.0,
+  "sourceSnapshot": "source-snapshot/manifest.json",
+  "cases": [
+    {
+      "case": "baseline",
+      "events": [],
+      "expected": {
+        "version": "5.2.1 LTS",
+        "location": [
+          0,
+          0,
+          0
+        ]
+      },
+      "actual": {
+        "active": "Cube",
+        "selected": [
+          "Cube"
+        ],
+        "mode": "OBJECT",
+        "objects": [
+          "Camera",
+          "Cube",
+          "Light"
+        ],
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotationDegrees": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "dimensions": [
+          2.0,
+          2.0,
+          2.0
+        ],
+        "collections": [
+          "Collection"
+        ],
+        "sidebarVisible": false,
+        "viewDistance": 18.38804817199707,
+        "viewLocation": [
+          -0.020693248137831688,
+          -0.04602546989917755,
+          0.0006694307667203248
+        ],
+        "viewPerspective": "PERSP",
+        "emulateNumpad": false,
+        "sceneUnitSystem": "METRIC",
+        "sceneScaleLength": 1.0
+      },
+      "passed": true,
+      "verification": "native_events_and_readback",
+      "screenshot": {
+        "path": "01-07-01-baseline.png",
+        "sha256": "e13488de369a02a0437d128539be91c82e2941e5d93b43f48052bd063056d676",
+        "width": 1494,
+        "height": 1019,
+        "recordedAt": "2026-10-27T00:24:23.942Z"
+      }
+    },
+    {
+      "case": "sidebar-n",
+      "events": [
+        "N"
+      ],
+      "expected": true,
+      "actual": {
+        "active": "Cube",
+        "selected": [
+          "Cube"
+        ],
+        "mode": "OBJECT",
+        "objects": [
+          "Camera",
+          "Cube",
+          "Light"
+        ],
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotationDegrees": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "dimensions": [
+          2.0,
+          2.0,
+          2.0
+        ],
+        "collections": [
+          "Collection"
+        ],
+        "sidebarVisible": true,
+        "viewDistance": 18.38804817199707,
+        "viewLocation": [
+          -0.020693248137831688,
+          -0.04602546989917755,
+          0.0006694307667203248
+        ],
+        "viewPerspective": "PERSP",
+        "emulateNumpad": false,
+        "sceneUnitSystem": "METRIC",
+        "sceneScaleLength": 1.0
+      },
+      "passed": true,
+      "verification": "native_events_and_readback",
+      "screenshot": {
+        "path": "01-07-02-sidebar-n.png",
+        "sha256": "9270d0cd22c665e339709ad5a01578f3e1dead709afe32d861a7f152b2f3e55e",
+        "width": 1494,
+        "height": 1019,
+        "recordedAt": "2026-10-27T00:24:25.392Z"
+      }
+    },
+    {
+      "case": "translate-x-from-zero",
+      "events": [
+        "G",
+        "X",
+        "0.5",
+        "RET"
+      ],
+      "expected": [
+        0.5,
+        0,
+        0
+      ],
+      "actual": {
+        "active": "Cube",
+        "selected": [
+          "Cube"
+        ],
+        "mode": "OBJECT",
+        "objects": [
+          "Camera",
+          "Cube",
+          "Light"
+        ],
+        "location": [
+          0.5,
+          0.0,
+          0.0
+        ],
+        "rotationDegrees": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "dimensions": [
+          2.0,
+          2.0,
+          2.0
+        ],
+        "collections": [
+          "Collection"
+        ],
+        "sidebarVisible": true,
+        "viewDistance": 18.38804817199707,
+        "viewLocation": [
+          -0.020693248137831688,
+          -0.04602546989917755,
+          0.0006694307667203248
+        ],
+        "viewPerspective": "PERSP",
+        "emulateNumpad": false,
+        "sceneUnitSystem": "METRIC",
+        "sceneScaleLength": 1.0
+      },
+      "passed": true,
+      "verification": "native_events_and_readback",
+      "screenshot": {
+        "path": "01-07-03-translate-x-from-zero.png",
+        "sha256": "e50fc34ea7578b53e759b58985c08a14e30406a812104c35432fa410326dadc5",
+        "width": 1494,
+        "height": 1019,
+        "recordedAt": "2026-10-27T00:24:27.592Z"
+      }
+    },
+    {
+      "case": "translate-x-start-one",
+      "events": [
+        "G",
+        "X",
+        "0.5",
+        "RET"
+      ],
+      "expected": [
+        1,
+        0,
+        0
+      ],
+      "actual": {
+        "active": "Cube",
+        "selected": [
+          "Cube"
+        ],
+        "mode": "OBJECT",
+        "objects": [
+          "Camera",
+          "Cube",
+          "Light"
+        ],
+        "location": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "rotationDegrees": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "dimensions": [
+          2.0,
+          2.0,
+          2.0
+        ],
+        "collections": [
+          "Collection"
+        ],
+        "sidebarVisible": true,
+        "viewDistance": 18.38804817199707,
+        "viewLocation": [
+          -0.020693248137831688,
+          -0.04602546989917755,
+          0.0006694307667203248
+        ],
+        "viewPerspective": "PERSP",
+        "emulateNumpad": false,
+        "sceneUnitSystem": "METRIC",
+        "sceneScaleLength": 1.0
+      },
+      "passed": true,
+      "verification": "native_events_and_readback",
+      "screenshot": {
+        "path": "01-07-04-translate-x-start-one.png",
+        "sha256": "0a7443ec932dcf9bbd37b5ee357a4c468ed3a6fe4b349e8ad825102621801290",
+        "width": 1494,
+        "height": 1019,
+        "recordedAt": "2026-10-27T00:24:29.792Z"
+      }
+    },
+    {
+      "case": "translate-x-from-one",
+      "events": [
+        "G",
+        "X",
+        "0.5",
+        "RET"
+      ],
+      "expected": [
+        1.5,
+        0,
+        0
+      ],
+      "actual": {
+        "active": "Cube",
+        "selected": [
+          "Cube"
+        ],
+        "mode": "OBJECT",
+        "objects": [
+          "Camera",
+          "Cube",
+          "Light"
+        ],
+        "location": [
+          1.5,
+          0.0,
+          0.0
+        ],
+        "rotationDegrees": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "dimensions": [
+          2.0,
+          2.0,
+          2.0
+        ],
+        "collections": [
+          "Collection"
+        ],
+        "sidebarVisible": true,
+        "viewDistance": 18.38804817199707,
+        "viewLocation": [
+          -0.020693248137831688,
+          -0.04602546989917755,
+          0.0006694307667203248
+        ],
+        "viewPerspective": "PERSP",
+        "emulateNumpad": false,
+        "sceneUnitSystem": "METRIC",
+        "sceneScaleLength": 1.0
+      },
+      "passed": true,
+      "verification": "native_events_and_readback",
+      "screenshot": {
+        "path": "01-07-05-translate-x-from-one.png",
+        "sha256": "4b2597d510ca80aeb4b986b660482a44dec5441d9bfd464ea8aa7bd052e04f02",
+        "width": 1494,
+        "height": 1019,
+        "recordedAt": "2026-10-27T00:24:31.992Z"
+      }
+    },
+    {
+      "case": "translate-x-negative",
+      "events": [
+        "G",
+        "X",
+        "-0.5",
+        "RET"
+      ],
+      "expected": [
+        1,
+        0,
+        0
+      ],
+      "actual": {
+        "active": "Cube",
+        "selected": [
+          "Cube"
+        ],
+        "mode": "OBJECT",
+        "objects": [
+          "Camera",
+          "Cube",
+          "Light"
+        ],
+        "location": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "rotationDegrees": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "dimensions": [
+          2.0,
+          2.0,
+          2.0
+        ],
+        "collections": [
+          "Collection"
+        ],
+        "sidebarVisible": true,
+        "viewDistance": 18.38804817199707,
+        "viewLocation": [
+          -0.020693248137831688,
+          -0.04602546989917755,
+          0.0006694307667203248
+        ],
+        "viewPerspective": "PERSP",
+        "emulateNumpad": false,
+        "sceneUnitSystem": "METRIC",
+        "sceneScaleLength": 1.0
+      },
+      "passed": true,
+      "verification": "native_events_and_readback",
+      "screenshot": {
+        "path": "01-07-06-translate-x-negative.png",
+        "sha256": "0a7443ec932dcf9bbd37b5ee357a4c468ed3a6fe4b349e8ad825102621801290",
+        "width": 1494,
+        "height": 1019,
+        "recordedAt": "2026-10-27T00:24:34.192Z"
+      }
+    },
+    {
+      "case": "translate-no-axis",
+      "events": [
+        "G",
+        "0.5",
+        "RET"
+      ],
+      "expected": "Observe actual unconstrained numeric translation; no assumed axis",
+      "actual": {
+        "active": "Cube",
+        "selected": [
+          "Cube"
+        ],
+        "mode": "OBJECT",
+        "objects": [
+          "Camera",
+          "Cube",
+          "Light"
+        ],
+        "location": [
+          1.5,
+          0.0,
+          0.0
+        ],
+        "rotationDegrees": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "dimensions": [
+          2.0,
+          2.0,
+          2.0
+        ],
+        "collections": [
+          "Collection"
+        ],
+        "sidebarVisible": true,
+        "viewDistance": 18.38804817199707,
+        "viewLocation": [
+          -0.020693248137831688,
+          -0.04602546989917755,
+          0.0006694307667203248
+        ],
+        "viewPerspective": "PERSP",
+        "emulateNumpad": false,
+        "sceneUnitSystem": "METRIC",
+        "sceneScaleLength": 1.0
+      },
+      "passed": null,
+      "verification": "native_events_and_readback",
+      "screenshot": {
+        "path": "01-07-07-translate-no-axis.png",
+        "sha256": "4b2597d510ca80aeb4b986b660482a44dec5441d9bfd464ea8aa7bd052e04f02",
+        "width": 1494,
+        "height": 1019,
+        "recordedAt": "2026-10-27T00:24:36.242Z"
+      }
+    },
+    {
+      "case": "translate-cancel-esc",
+      "events": [
+        "G",
+        "X",
+        "3",
+        "ESC"
+      ],
+      "expected": "Location equals preceding result",
+      "actual": {
+        "active": "Cube",
+        "selected": [
+          "Cube"
+        ],
+        "mode": "OBJECT",
+        "objects": [
+          "Camera",
+          "Cube",
+          "Light"
+        ],
+        "location": [
+          1.5,
+          0.0,
+          0.0
+        ],
+        "rotationDegrees": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "dimensions": [
+          2.0,
+          2.0,
+          2.0
+        ],
+        "collections": [
+          "Collection"
+        ],
+        "sidebarVisible": true,
+        "viewDistance": 18.38804817199707,
+        "viewLocation": [
+          -0.020693248137831688,
+          -0.04602546989917755,
+          0.0006694307667203248
+        ],
+        "viewPerspective": "PERSP",
+        "emulateNumpad": false,
+        "sceneUnitSystem": "METRIC",
+        "sceneScaleLength": 1.0
+      },
+      "passed": true,
+      "verification": "native_events_and_readback",
+      "screenshot": {
+        "path": "01-07-08-translate-cancel-esc.png",
+        "sha256": "4b2597d510ca80aeb4b986b660482a44dec5441d9bfd464ea8aa7bd052e04f02",
+        "width": 1494,
+        "height": 1019,
+        "recordedAt": "2026-10-27T00:24:38.542Z"
+      }
+    },
+    {
+      "case": "translate-cancel-rightmouse",
+      "events": [
+        "G",
+        "X",
+        "3",
+        "RIGHTMOUSE"
+      ],
+      "expected": "Location equals preceding result",
+      "actual": {
+        "active": "Cube",
+        "selected": [
+          "Cube"
+        ],
+        "mode": "OBJECT",
+        "objects": [
+          "Camera",
+          "Cube",
+          "Light"
+        ],
+        "location": [
+          1.5,
+          0.0,
+          0.0
+        ],
+        "rotationDegrees": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "dimensions": [
+          2.0,
+          2.0,
+          2.0
+        ],
+        "collections": [
+          "Collection"
+        ],
+        "sidebarVisible": true,
+        "viewDistance": 18.38804817199707,
+        "viewLocation": [
+          -0.020693248137831688,
+          -0.04602546989917755,
+          0.0006694307667203248
+        ],
+        "viewPerspective": "PERSP",
+        "emulateNumpad": false,
+        "sceneUnitSystem": "METRIC",
+        "sceneScaleLength": 1.0
+      },
+      "passed": true,
+      "verification": "native_events_and_readback",
+      "screenshot": {
+        "path": "01-07-09-translate-cancel-rightmouse.png",
+        "sha256": "4b2597d510ca80aeb4b986b660482a44dec5441d9bfd464ea8aa7bd052e04f02",
+        "width": 1494,
+        "height": 1019,
+        "recordedAt": "2026-10-27T00:24:41.043Z"
+      }
+    },
+    {
+      "case": "location-field-absolute",
+      "events": [
+        "CLICK_LOCATION_X",
+        "CTRL_A",
+        "0.5",
+        "RET"
+      ],
+      "expected": 0.5,
+      "actual": {
+        "active": "Cube",
+        "selected": [
+          "Cube"
+        ],
+        "mode": "OBJECT",
+        "objects": [
+          "Camera",
+          "Cube",
+          "Light"
+        ],
+        "location": [
+          0.5,
+          0.0,
+          0.0
+        ],
+        "rotationDegrees": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "dimensions": [
+          2.0,
+          2.0,
+          2.0
+        ],
+        "collections": [
+          "Collection"
+        ],
+        "sidebarVisible": true,
+        "viewDistance": 18.38804817199707,
+        "viewLocation": [
+          -0.020693248137831688,
+          -0.04602546989917755,
+          0.0006694307667203248
+        ],
+        "viewPerspective": "PERSP",
+        "emulateNumpad": false,
+        "sceneUnitSystem": "METRIC",
+        "sceneScaleLength": 1.0
+      },
+      "passed": true,
+      "verification": "native_events_and_readback",
+      "screenshot": {
+        "path": "01-07-10-location-field-absolute.png",
+        "sha256": "4cad60be42895a8fe53f9dd856844984625956c09a43516ec5af38a7c624e6f8",
+        "width": 1494,
+        "height": 1019,
+        "recordedAt": "2026-10-27T00:24:44.343Z"
+      }
+    },
+    {
+      "case": "translate-y",
+      "events": [
+        "G",
+        "Y",
+        "0.25",
+        "RET"
+      ],
+      "expected": "Only selected global axis increases by .25",
+      "actual": {
+        "active": "Cube",
+        "selected": [
+          "Cube"
+        ],
+        "mode": "OBJECT",
+        "objects": [
+          "Camera",
+          "Cube",
+          "Light"
+        ],
+        "location": [
+          0.5,
+          0.25,
+          0.0
+        ],
+        "rotationDegrees": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "dimensions": [
+          2.0,
+          2.0,
+          2.0
+        ],
+        "collections": [
+          "Collection"
+        ],
+        "sidebarVisible": true,
+        "viewDistance": 18.38804817199707,
+        "viewLocation": [
+          -0.020693248137831688,
+          -0.04602546989917755,
+          0.0006694307667203248
+        ],
+        "viewPerspective": "PERSP",
+        "emulateNumpad": false,
+        "sceneUnitSystem": "METRIC",
+        "sceneScaleLength": 1.0
+      },
+      "passed": true,
+      "verification": "native_events_and_readback",
+      "screenshot": {
+        "path": "01-07-11-translate-y.png",
+        "sha256": "f4186a3bfc5d062ba3b97f63b32bed5c695aab528c9e17e24abe0805cf7e1b0f",
+        "width": 1494,
+        "height": 1019,
+        "recordedAt": "2026-10-27T00:24:46.643Z"
+      }
+    },
+    {
+      "case": "translate-z",
+      "events": [
+        "G",
+        "Z",
+        "0.25",
+        "RET"
+      ],
+      "expected": "Only selected global axis increases by .25",
+      "actual": {
+        "active": "Cube",
+        "selected": [
+          "Cube"
+        ],
+        "mode": "OBJECT",
+        "objects": [
+          "Camera",
+          "Cube",
+          "Light"
+        ],
+        "location": [
+          0.5,
+          0.25,
+          0.25
+        ],
+        "rotationDegrees": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "dimensions": [
+          2.0,
+          2.0,
+          2.0
+        ],
+        "collections": [
+          "Collection"
+        ],
+        "sidebarVisible": true,
+        "viewDistance": 18.38804817199707,
+        "viewLocation": [
+          -0.020693248137831688,
+          -0.04602546989917755,
+          0.0006694307667203248
+        ],
+        "viewPerspective": "PERSP",
+        "emulateNumpad": false,
+        "sceneUnitSystem": "METRIC",
+        "sceneScaleLength": 1.0
+      },
+      "passed": true,
+      "verification": "native_events_and_readback",
+      "screenshot": {
+        "path": "01-07-12-translate-z.png",
+        "sha256": "9864bb86b74a4178e918f1bc8021f5094b31488f078b75bdaf63cb858a6ab4bd",
+        "width": 1494,
+        "height": 1019,
+        "recordedAt": "2026-10-27T00:24:48.943Z"
+      }
+    },
+    {
+      "case": "rotate-x",
+      "events": [
+        "R",
+        "X",
+        "30",
+        "RET"
+      ],
+      "expected": [
+        30,
+        0,
+        0
+      ],
+      "actual": {
+        "active": "Cube",
+        "selected": [
+          "Cube"
+        ],
+        "mode": "OBJECT",
+        "objects": [
+          "Camera",
+          "Cube",
+          "Light"
+        ],
+        "location": [
+          0.5,
+          0.25,
+          0.25
+        ],
+        "rotationDegrees": [
+          30.000000834826057,
+          -0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "dimensions": [
+          2.0,
+          2.0,
+          2.0
+        ],
+        "collections": [
+          "Collection"
+        ],
+        "sidebarVisible": true,
+        "viewDistance": 18.38804817199707,
+        "viewLocation": [
+          -0.020693248137831688,
+          -0.04602546989917755,
+          0.0006694307667203248
+        ],
+        "viewPerspective": "PERSP",
+        "emulateNumpad": false,
+        "sceneUnitSystem": "METRIC",
+        "sceneScaleLength": 1.0
+      },
+      "passed": true,
+      "verification": "native_events_and_readback",
+      "screenshot": {
+        "path": "01-08-01-rotate-x.png",
+        "sha256": "508c63472236e3d42947ea4b058892900438a9c2a356fc5842de39c466730503",
+        "width": 1494,
+        "height": 1019,
+        "recordedAt": "2026-10-27T00:24:51.143Z"
+      }
+    },
+    {
+      "case": "rotate-x-restore",
+      "events": [
+        "R",
+        "X",
+        "-30",
+        "RET"
+      ],
+      "expected": [
+        0,
+        0,
+        0
+      ],
+      "actual": {
+        "active": "Cube",
+        "selected": [
+          "Cube"
+        ],
+        "mode": "OBJECT",
+        "objects": [
+          "Camera",
+          "Cube",
+          "Light"
+        ],
+        "location": [
+          0.5,
+          0.25,
+          0.25
+        ],
+        "rotationDegrees": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "dimensions": [
+          2.0,
+          2.0,
+          2.0
+        ],
+        "collections": [
+          "Collection"
+        ],
+        "sidebarVisible": true,
+        "viewDistance": 18.38804817199707,
+        "viewLocation": [
+          -0.020693248137831688,
+          -0.04602546989917755,
+          0.0006694307667203248
+        ],
+        "viewPerspective": "PERSP",
+        "emulateNumpad": false,
+        "sceneUnitSystem": "METRIC",
+        "sceneScaleLength": 1.0
+      },
+      "passed": true,
+      "verification": "native_events_and_readback",
+      "screenshot": {
+        "path": "01-08-02-rotate-x-restore.png",
+        "sha256": "8d909237d33f33d3d4c97ee8eb1c4c01d1b12e4f18bc08ab8654b7a7356c19f3",
+        "width": 1494,
+        "height": 1019,
+        "recordedAt": "2026-10-27T00:24:53.343Z"
+      }
+    },
+    {
+      "case": "rotate-y",
+      "events": [
+        "R",
+        "Y",
+        "30",
+        "RET"
+      ],
+      "expected": [
+        0,
+        30,
+        0
+      ],
+      "actual": {
+        "active": "Cube",
+        "selected": [
+          "Cube"
+        ],
+        "mode": "OBJECT",
+        "objects": [
+          "Camera",
+          "Cube",
+          "Light"
+        ],
+        "location": [
+          0.5,
+          0.25,
+          0.25
+        ],
+        "rotationDegrees": [
+          0.0,
+          30.000000834826057,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "dimensions": [
+          2.0,
+          2.0,
+          2.0
+        ],
+        "collections": [
+          "Collection"
+        ],
+        "sidebarVisible": true,
+        "viewDistance": 18.38804817199707,
+        "viewLocation": [
+          -0.020693248137831688,
+          -0.04602546989917755,
+          0.0006694307667203248
+        ],
+        "viewPerspective": "PERSP",
+        "emulateNumpad": false,
+        "sceneUnitSystem": "METRIC",
+        "sceneScaleLength": 1.0
+      },
+      "passed": true,
+      "verification": "native_events_and_readback",
+      "screenshot": {
+        "path": "01-08-03-rotate-y.png",
+        "sha256": "84a3069e2f53318ea1f839623516f706bb7c98f9c062a307fffc8b9424108b09",
+        "width": 1494,
+        "height": 1019,
+        "recordedAt": "2026-10-27T00:24:55.543Z"
+      }
+    },
+    {
+      "case": "rotate-y-restore",
+      "events": [
+        "R",
+        "Y",
+        "-30",
+        "RET"
+      ],
+      "expected": [
+        0,
+        0,
+        0
+      ],
+      "actual": {
+        "active": "Cube",
+        "selected": [
+          "Cube"
+        ],
+        "mode": "OBJECT",
+        "objects": [
+          "Camera",
+          "Cube",
+          "Light"
+        ],
+        "location": [
+          0.5,
+          0.25,
+          0.25
+        ],
+        "rotationDegrees": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "dimensions": [
+          2.0,
+          2.0,
+          2.0
+        ],
+        "collections": [
+          "Collection"
+        ],
+        "sidebarVisible": true,
+        "viewDistance": 18.38804817199707,
+        "viewLocation": [
+          -0.020693248137831688,
+          -0.04602546989917755,
+          0.0006694307667203248
+        ],
+        "viewPerspective": "PERSP",
+        "emulateNumpad": false,
+        "sceneUnitSystem": "METRIC",
+        "sceneScaleLength": 1.0
+      },
+      "passed": true,
+      "verification": "native_events_and_readback",
+      "screenshot": {
+        "path": "01-08-04-rotate-y-restore.png",
+        "sha256": "8d909237d33f33d3d4c97ee8eb1c4c01d1b12e4f18bc08ab8654b7a7356c19f3",
+        "width": 1494,
+        "height": 1019,
+        "recordedAt": "2026-10-27T00:24:57.743Z"
+      }
+    },
+    {
+      "case": "rotate-z",
+      "events": [
+        "R",
+        "Z",
+        "30",
+        "RET"
+      ],
+      "expected": [
+        0,
+        0,
+        30
+      ],
+      "actual": {
+        "active": "Cube",
+        "selected": [
+          "Cube"
+        ],
+        "mode": "OBJECT",
+        "objects": [
+          "Camera",
+          "Cube",
+          "Light"
+        ],
+        "location": [
+          0.5,
+          0.25,
+          0.25
+        ],
+        "rotationDegrees": [
+          0.0,
+          -0.0,
+          30.000000834826057
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "dimensions": [
+          2.0,
+          2.0,
+          2.0
+        ],
+        "collections": [
+          "Collection"
+        ],
+        "sidebarVisible": true,
+        "viewDistance": 18.38804817199707,
+        "viewLocation": [
+          -0.020693248137831688,
+          -0.04602546989917755,
+          0.0006694307667203248
+        ],
+        "viewPerspective": "PERSP",
+        "emulateNumpad": false,
+        "sceneUnitSystem": "METRIC",
+        "sceneScaleLength": 1.0
+      },
+      "passed": true,
+      "verification": "native_events_and_readback",
+      "screenshot": {
+        "path": "01-08-05-rotate-z.png",
+        "sha256": "eb06b0aa008a779f3bb0732bd97959fde3657a9d47592d411b729e28118f6669",
+        "width": 1494,
+        "height": 1019,
+        "recordedAt": "2026-10-27T00:24:59.943Z"
+      }
+    },
+    {
+      "case": "rotate-z-restore",
+      "events": [
+        "R",
+        "Z",
+        "-30",
+        "RET"
+      ],
+      "expected": [
+        0,
+        0,
+        0
+      ],
+      "actual": {
+        "active": "Cube",
+        "selected": [
+          "Cube"
+        ],
+        "mode": "OBJECT",
+        "objects": [
+          "Camera",
+          "Cube",
+          "Light"
+        ],
+        "location": [
+          0.5,
+          0.25,
+          0.25
+        ],
+        "rotationDegrees": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "dimensions": [
+          2.0,
+          2.0,
+          2.0
+        ],
+        "collections": [
+          "Collection"
+        ],
+        "sidebarVisible": true,
+        "viewDistance": 18.38804817199707,
+        "viewLocation": [
+          -0.020693248137831688,
+          -0.04602546989917755,
+          0.0006694307667203248
+        ],
+        "viewPerspective": "PERSP",
+        "emulateNumpad": false,
+        "sceneUnitSystem": "METRIC",
+        "sceneScaleLength": 1.0
+      },
+      "passed": true,
+      "verification": "native_events_and_readback",
+      "screenshot": {
+        "path": "01-08-06-rotate-z-restore.png",
+        "sha256": "8d909237d33f33d3d4c97ee8eb1c4c01d1b12e4f18bc08ab8654b7a7356c19f3",
+        "width": 1494,
+        "height": 1019,
+        "recordedAt": "2026-10-27T00:25:02.143Z"
+      }
+    },
+    {
+      "case": "scale-x",
+      "events": [
+        "S",
+        "X",
+        "1.5",
+        "RET"
+      ],
+      "expected": [
+        1.5,
+        1,
+        1
+      ],
+      "actual": {
+        "active": "Cube",
+        "selected": [
+          "Cube"
+        ],
+        "mode": "OBJECT",
+        "objects": [
+          "Camera",
+          "Cube",
+          "Light"
+        ],
+        "location": [
+          0.5,
+          0.25,
+          0.25
+        ],
+        "rotationDegrees": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "scale": [
+          1.5,
+          1.0,
+          1.0
+        ],
+        "dimensions": [
+          3.0,
+          2.0,
+          2.0
+        ],
+        "collections": [
+          "Collection"
+        ],
+        "sidebarVisible": true,
+        "viewDistance": 18.38804817199707,
+        "viewLocation": [
+          -0.020693248137831688,
+          -0.04602546989917755,
+          0.0006694307667203248
+        ],
+        "viewPerspective": "PERSP",
+        "emulateNumpad": false,
+        "sceneUnitSystem": "METRIC",
+        "sceneScaleLength": 1.0
+      },
+      "passed": true,
+      "verification": "native_events_and_readback",
+      "screenshot": {
+        "path": "01-08-07-scale-x.png",
+        "sha256": "0de90de19178b4e84a02c68a8ce57e19165602f7c69e31ae912f302283b34c03",
+        "width": 1494,
+        "height": 1019,
+        "recordedAt": "2026-10-27T00:25:04.343Z"
+      }
+    },
+    {
+      "case": "scale-x-restore",
+      "events": [
+        "S",
+        "X",
+        "0.6666666667",
+        "RET"
+      ],
+      "expected": [
+        1,
+        1,
+        1
+      ],
+      "actual": {
+        "active": "Cube",
+        "selected": [
+          "Cube"
+        ],
+        "mode": "OBJECT",
+        "objects": [
+          "Camera",
+          "Cube",
+          "Light"
+        ],
+        "location": [
+          0.5,
+          0.25,
+          0.25
+        ],
+        "rotationDegrees": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "dimensions": [
+          2.0,
+          2.0,
+          2.0
+        ],
+        "collections": [
+          "Collection"
+        ],
+        "sidebarVisible": true,
+        "viewDistance": 18.38804817199707,
+        "viewLocation": [
+          -0.020693248137831688,
+          -0.04602546989917755,
+          0.0006694307667203248
+        ],
+        "viewPerspective": "PERSP",
+        "emulateNumpad": false,
+        "sceneUnitSystem": "METRIC",
+        "sceneScaleLength": 1.0
+      },
+      "passed": true,
+      "verification": "native_events_and_readback",
+      "screenshot": {
+        "path": "01-08-08-scale-x-restore.png",
+        "sha256": "7a09d993069f686bbe3a7bbae46f07f6c9a17a9e1675272fbd98114020d33593",
+        "width": 1494,
+        "height": 1019,
+        "recordedAt": "2026-10-27T00:25:06.543Z"
+      }
+    },
+    {
+      "case": "scale-y",
+      "events": [
+        "S",
+        "Y",
+        "1.5",
+        "RET"
+      ],
+      "expected": [
+        1,
+        1.5,
+        1
+      ],
+      "actual": {
+        "active": "Cube",
+        "selected": [
+          "Cube"
+        ],
+        "mode": "OBJECT",
+        "objects": [
+          "Camera",
+          "Cube",
+          "Light"
+        ],
+        "location": [
+          0.5,
+          0.25,
+          0.25
+        ],
+        "rotationDegrees": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.5,
+          1.0
+        ],
+        "dimensions": [
+          2.0,
+          3.0,
+          2.0
+        ],
+        "collections": [
+          "Collection"
+        ],
+        "sidebarVisible": true,
+        "viewDistance": 18.38804817199707,
+        "viewLocation": [
+          -0.020693248137831688,
+          -0.04602546989917755,
+          0.0006694307667203248
+        ],
+        "viewPerspective": "PERSP",
+        "emulateNumpad": false,
+        "sceneUnitSystem": "METRIC",
+        "sceneScaleLength": 1.0
+      },
+      "passed": true,
+      "verification": "native_events_and_readback",
+      "screenshot": {
+        "path": "01-08-09-scale-y.png",
+        "sha256": "e32c600378c198e6d62da6403b4f5479e1e0a4cd1a6e93d36783fc5dd680cc02",
+        "width": 1494,
+        "height": 1019,
+        "recordedAt": "2026-10-27T00:25:08.743Z"
+      }
+    },
+    {
+      "case": "scale-y-restore",
+      "events": [
+        "S",
+        "Y",
+        "0.6666666667",
+        "RET"
+      ],
+      "expected": [
+        1,
+        1,
+        1
+      ],
+      "actual": {
+        "active": "Cube",
+        "selected": [
+          "Cube"
+        ],
+        "mode": "OBJECT",
+        "objects": [
+          "Camera",
+          "Cube",
+          "Light"
+        ],
+        "location": [
+          0.5,
+          0.25,
+          0.25
+        ],
+        "rotationDegrees": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "dimensions": [
+          2.0,
+          2.0,
+          2.0
+        ],
+        "collections": [
+          "Collection"
+        ],
+        "sidebarVisible": true,
+        "viewDistance": 18.38804817199707,
+        "viewLocation": [
+          -0.020693248137831688,
+          -0.04602546989917755,
+          0.0006694307667203248
+        ],
+        "viewPerspective": "PERSP",
+        "emulateNumpad": false,
+        "sceneUnitSystem": "METRIC",
+        "sceneScaleLength": 1.0
+      },
+      "passed": true,
+      "verification": "native_events_and_readback",
+      "screenshot": {
+        "path": "01-08-10-scale-y-restore.png",
+        "sha256": "7a09d993069f686bbe3a7bbae46f07f6c9a17a9e1675272fbd98114020d33593",
+        "width": 1494,
+        "height": 1019,
+        "recordedAt": "2026-10-27T00:25:10.943Z"
+      }
+    },
+    {
+      "case": "scale-z",
+      "events": [
+        "S",
+        "Z",
+        "1.5",
+        "RET"
+      ],
+      "expected": [
+        1,
+        1,
+        1.5
+      ],
+      "actual": {
+        "active": "Cube",
+        "selected": [
+          "Cube"
+        ],
+        "mode": "OBJECT",
+        "objects": [
+          "Camera",
+          "Cube",
+          "Light"
+        ],
+        "location": [
+          0.5,
+          0.25,
+          0.25
+        ],
+        "rotationDegrees": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.5
+        ],
+        "dimensions": [
+          2.0,
+          2.0,
+          3.0
+        ],
+        "collections": [
+          "Collection"
+        ],
+        "sidebarVisible": true,
+        "viewDistance": 18.38804817199707,
+        "viewLocation": [
+          -0.020693248137831688,
+          -0.04602546989917755,
+          0.0006694307667203248
+        ],
+        "viewPerspective": "PERSP",
+        "emulateNumpad": false,
+        "sceneUnitSystem": "METRIC",
+        "sceneScaleLength": 1.0
+      },
+      "passed": true,
+      "verification": "native_events_and_readback",
+      "screenshot": {
+        "path": "01-08-11-scale-z.png",
+        "sha256": "dbac895c788fe8a5f18a28bbf86940bc2b81e1bb1de70bcbcb56c285628d5b9d",
+        "width": 1494,
+        "height": 1019,
+        "recordedAt": "2026-10-27T00:25:13.143Z"
+      }
+    },
+    {
+      "case": "scale-z-restore",
+      "events": [
+        "S",
+        "Z",
+        "0.6666666667",
+        "RET"
+      ],
+      "expected": [
+        1,
+        1,
+        1
+      ],
+      "actual": {
+        "active": "Cube",
+        "selected": [
+          "Cube"
+        ],
+        "mode": "OBJECT",
+        "objects": [
+          "Camera",
+          "Cube",
+          "Light"
+        ],
+        "location": [
+          0.5,
+          0.25,
+          0.25
+        ],
+        "rotationDegrees": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "dimensions": [
+          2.0,
+          2.0,
+          2.0
+        ],
+        "collections": [
+          "Collection"
+        ],
+        "sidebarVisible": true,
+        "viewDistance": 18.38804817199707,
+        "viewLocation": [
+          -0.020693248137831688,
+          -0.04602546989917755,
+          0.0006694307667203248
+        ],
+        "viewPerspective": "PERSP",
+        "emulateNumpad": false,
+        "sceneUnitSystem": "METRIC",
+        "sceneScaleLength": 1.0
+      },
+      "passed": true,
+      "verification": "native_events_and_readback",
+      "screenshot": {
+        "path": "01-08-12-scale-z-restore.png",
+        "sha256": "7a09d993069f686bbe3a7bbae46f07f6c9a17a9e1675272fbd98114020d33593",
+        "width": 1494,
+        "height": 1019,
+        "recordedAt": "2026-10-27T00:25:15.343Z"
+      }
+    },
+    {
+      "case": "tab-edit",
+      "events": [
+        "TAB"
+      ],
+      "expected": "EDIT_MESH",
+      "actual": {
+        "active": "Cube",
+        "selected": [
+          "Cube"
+        ],
+        "mode": "EDIT_MESH",
+        "objects": [
+          "Camera",
+          "Cube",
+          "Light"
+        ],
+        "location": [
+          0.5,
+          0.25,
+          0.25
+        ],
+        "rotationDegrees": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "dimensions": [
+          2.0,
+          2.0,
+          2.0
+        ],
+        "collections": [
+          "Collection"
+        ],
+        "sidebarVisible": true,
+        "viewDistance": 18.38804817199707,
+        "viewLocation": [
+          -0.020693248137831688,
+          -0.04602546989917755,
+          0.0006694307667203248
+        ],
+        "viewPerspective": "PERSP",
+        "emulateNumpad": false,
+        "sceneUnitSystem": "METRIC",
+        "sceneScaleLength": 1.0
+      },
+      "passed": true,
+      "verification": "native_events_and_readback",
+      "screenshot": {
+        "path": "01-05-01-tab-edit.png",
+        "sha256": "ef3c94f920b0aa08cc349b691074ef4b0b112b02ad528b91d11e7414a0ebb7e6",
+        "width": 1494,
+        "height": 1019,
+        "recordedAt": "2026-10-27T00:25:16.793Z"
+      }
+    },
+    {
+      "case": "tab-object",
+      "events": [
+        "TAB"
+      ],
+      "expected": "OBJECT",
+      "actual": {
+        "active": "Cube",
+        "selected": [
+          "Cube"
+        ],
+        "mode": "OBJECT",
+        "objects": [
+          "Camera",
+          "Cube",
+          "Light"
+        ],
+        "location": [
+          0.5,
+          0.25,
+          0.25
+        ],
+        "rotationDegrees": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "dimensions": [
+          2.0,
+          2.0,
+          2.0
+        ],
+        "collections": [
+          "Collection"
+        ],
+        "sidebarVisible": true,
+        "viewDistance": 18.38804817199707,
+        "viewLocation": [
+          -0.020693248137831688,
+          -0.04602546989917755,
+          0.0006694307667203248
+        ],
+        "viewPerspective": "PERSP",
+        "emulateNumpad": false,
+        "sceneUnitSystem": "METRIC",
+        "sceneScaleLength": 1.0
+      },
+      "passed": true,
+      "verification": "native_events_and_readback",
+      "screenshot": {
+        "path": "01-05-02-tab-object.png",
+        "sha256": "44cb09a22b591b3f141f02631bcd29d7842171430f57b7b336d8421852ccb314",
+        "width": 1494,
+        "height": 1019,
+        "recordedAt": "2026-10-27T00:25:18.243Z"
+      }
+    },
+    {
+      "case": "select-all",
+      "events": [
+        "A"
+      ],
+      "expected": [
+        "Camera",
+        "Cube",
+        "Light"
+      ],
+      "actual": {
+        "active": "Cube",
+        "selected": [
+          "Camera",
+          "Cube",
+          "Light"
+        ],
+        "mode": "OBJECT",
+        "objects": [
+          "Camera",
+          "Cube",
+          "Light"
+        ],
+        "location": [
+          0.5,
+          0.25,
+          0.25
+        ],
+        "rotationDegrees": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "dimensions": [
+          2.0,
+          2.0,
+          2.0
+        ],
+        "collections": [
+          "Collection"
+        ],
+        "sidebarVisible": true,
+        "viewDistance": 18.38804817199707,
+        "viewLocation": [
+          -0.020693248137831688,
+          -0.04602546989917755,
+          0.0006694307667203248
+        ],
+        "viewPerspective": "PERSP",
+        "emulateNumpad": false,
+        "sceneUnitSystem": "METRIC",
+        "sceneScaleLength": 1.0
+      },
+      "passed": true,
+      "verification": "native_events_and_readback",
+      "screenshot": {
+        "path": "01-05-03-select-all.png",
+        "sha256": "2b0a73725df87934c93f1fbf098bf420fd7c4e8b04b04a57a2cfb8be83d4d91a",
+        "width": 1494,
+        "height": 1019,
+        "recordedAt": "2026-10-27T00:25:19.693Z"
+      }
+    },
+    {
+      "case": "deselect-all",
+      "events": [
+        "ALT_A"
+      ],
+      "expected": [],
+      "actual": {
+        "active": "Cube",
+        "selected": [],
+        "mode": "OBJECT",
+        "objects": [
+          "Camera",
+          "Cube",
+          "Light"
+        ],
+        "location": [
+          0.5,
+          0.25,
+          0.25
+        ],
+        "rotationDegrees": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "dimensions": [
+          2.0,
+          2.0,
+          2.0
+        ],
+        "collections": [
+          "Collection"
+        ],
+        "sidebarVisible": true,
+        "viewDistance": 18.38804817199707,
+        "viewLocation": [
+          -0.020693248137831688,
+          -0.04602546989917755,
+          0.0006694307667203248
+        ],
+        "viewPerspective": "PERSP",
+        "emulateNumpad": false,
+        "sceneUnitSystem": "METRIC",
+        "sceneScaleLength": 1.0
+      },
+      "passed": true,
+      "verification": "native_events_and_readback",
+      "screenshot": {
+        "path": "01-05-04-deselect-all.png",
+        "sha256": "cfc5e1ef02f779385c54e1f555ac55f985efed968ee81c1af1116287e3192afb",
+        "width": 1494,
+        "height": 1019,
+        "recordedAt": "2026-10-27T00:25:21.143Z"
+      }
+    },
+    {
+      "case": "frame-selected",
+      "events": [
+        "NUMPAD_PERIOD"
+      ],
+      "expected": "View centers on Cube, object location unchanged",
+      "actual": {
+        "active": "Cube",
+        "selected": [
+          "Cube"
+        ],
+        "mode": "OBJECT",
+        "objects": [
+          "Camera",
+          "Cube",
+          "Light"
+        ],
+        "location": [
+          0.5,
+          0.25,
+          0.25
+        ],
+        "rotationDegrees": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "dimensions": [
+          2.0,
+          2.0,
+          2.0
+        ],
+        "collections": [
+          "Collection"
+        ],
+        "sidebarVisible": true,
+        "viewDistance": 2.650333881378174,
+        "viewLocation": [
+          0.5,
+          0.25,
+          0.25
+        ],
+        "viewPerspective": "PERSP",
+        "emulateNumpad": false,
+        "sceneUnitSystem": "METRIC",
+        "sceneScaleLength": 1.0
+      },
+      "passed": true,
+      "verification": "native_events_and_readback",
+      "screenshot": {
+        "path": "01-06-01-frame-selected.png",
+        "sha256": "fa731813db5e29290e40820777c2065d8251c6be01639017f9857593e4257600",
+        "width": 1494,
+        "height": 1019,
+        "recordedAt": "2026-10-27T00:25:23.303Z"
+      }
+    },
+    {
+      "case": "shift-a-menu",
+      "events": [
+        "SHIFT_A"
+      ],
+      "expected": "Inspect native popup in original screenshot",
+      "actual": {
+        "active": "Cube",
+        "selected": [
+          "Cube"
+        ],
+        "mode": "OBJECT",
+        "objects": [
+          "Camera",
+          "Cube",
+          "Light"
+        ],
+        "location": [
+          0.5,
+          0.25,
+          0.25
+        ],
+        "rotationDegrees": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "dimensions": [
+          2.0,
+          2.0,
+          2.0
+        ],
+        "collections": [
+          "Collection"
+        ],
+        "sidebarVisible": true,
+        "viewDistance": 2.650333881378174,
+        "viewLocation": [
+          0.5,
+          0.25,
+          0.25
+        ],
+        "viewPerspective": "PERSP",
+        "emulateNumpad": false,
+        "sceneUnitSystem": "METRIC",
+        "sceneScaleLength": 1.0
+      },
+      "passed": null,
+      "verification": "native_event_screenshot",
+      "screenshot": {
+        "path": "02-02-01-shift-a-menu.png",
+        "sha256": "5068b34e8b86697a6b903474596f71d54b9a9c28fa4c7bce9856e7a2542591d6",
+        "width": 1494,
+        "height": 1019,
+        "recordedAt": "2026-10-27T00:25:23.953Z"
+      }
+    },
+    {
+      "case": "x-delete-menu",
+      "events": [
+        "X"
+      ],
+      "expected": "Inspect native popup in original screenshot",
+      "actual": {
+        "active": "Cube",
+        "selected": [
+          "Cube"
+        ],
+        "mode": "OBJECT",
+        "objects": [
+          "Camera",
+          "Cube",
+          "Light"
+        ],
+        "location": [
+          0.5,
+          0.25,
+          0.25
+        ],
+        "rotationDegrees": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "dimensions": [
+          2.0,
+          2.0,
+          2.0
+        ],
+        "collections": [
+          "Collection"
+        ],
+        "sidebarVisible": true,
+        "viewDistance": 2.650333881378174,
+        "viewLocation": [
+          0.5,
+          0.25,
+          0.25
+        ],
+        "viewPerspective": "PERSP",
+        "emulateNumpad": false,
+        "sceneUnitSystem": "METRIC",
+        "sceneScaleLength": 1.0
+      },
+      "passed": null,
+      "verification": "native_event_screenshot",
+      "screenshot": {
+        "path": "01-05-05-x-delete-menu.png",
+        "sha256": "d34c28902cdcdc0de0a33922ce5b7c086227aa72eb15f88bf6c4d63e1e10efcd",
+        "width": 1494,
+        "height": 1019,
+        "recordedAt": "2026-10-27T00:25:24.953Z"
+      }
+    },
+    {
+      "case": "f2-rename-dialog",
+      "events": [
+        "F2"
+      ],
+      "expected": "Inspect native popup in original screenshot",
+      "actual": {
+        "active": "Cube",
+        "selected": [
+          "Cube"
+        ],
+        "mode": "OBJECT",
+        "objects": [
+          "Camera",
+          "Cube",
+          "Light"
+        ],
+        "location": [
+          0.5,
+          0.25,
+          0.25
+        ],
+        "rotationDegrees": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "dimensions": [
+          2.0,
+          2.0,
+          2.0
+        ],
+        "collections": [
+          "Collection"
+        ],
+        "sidebarVisible": true,
+        "viewDistance": 2.650333881378174,
+        "viewLocation": [
+          0.5,
+          0.25,
+          0.25
+        ],
+        "viewPerspective": "PERSP",
+        "emulateNumpad": false,
+        "sceneUnitSystem": "METRIC",
+        "sceneScaleLength": 1.0
+      },
+      "passed": null,
+      "verification": "native_event_screenshot",
+      "screenshot": {
+        "path": "02-03-01-f2-rename-dialog.png",
+        "sha256": "f346ab49f9c3f470ad2cc95be64a70d74ffd7b1013ec5d2edea3127c9ae14db4",
+        "width": 1494,
+        "height": 1019,
+        "recordedAt": "2026-10-27T00:25:25.953Z"
+      }
+    },
+    {
+      "case": "f2-renamed",
+      "events": [
+        "F2",
+        "CTRL_A",
+        "ShortcutCube",
+        "RET"
+      ],
+      "expected": "ShortcutCube",
+      "actual": {
+        "active": "ShortcutCube",
+        "selected": [
+          "ShortcutCube"
+        ],
+        "mode": "OBJECT",
+        "objects": [
+          "Camera",
+          "Light",
+          "ShortcutCube"
+        ],
+        "location": [
+          0.5,
+          0.25,
+          0.25
+        ],
+        "rotationDegrees": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "dimensions": [
+          2.0,
+          2.0,
+          2.0
+        ],
+        "collections": [
+          "Collection"
+        ],
+        "sidebarVisible": true,
+        "viewDistance": 2.650333881378174,
+        "viewLocation": [
+          0.5,
+          0.25,
+          0.25
+        ],
+        "viewPerspective": "PERSP",
+        "emulateNumpad": false,
+        "sceneUnitSystem": "METRIC",
+        "sceneScaleLength": 1.0
+      },
+      "passed": true,
+      "verification": "native_events_and_readback",
+      "screenshot": {
+        "path": "02-03-02-f2-renamed.png",
+        "sha256": "324e3fbbe8998a350887e8a7bf9df509e6157e5d5015e57d2ee60a4497d4e914",
+        "width": 1494,
+        "height": 1019,
+        "recordedAt": "2026-10-27T00:25:28.003Z"
+      }
+    },
+    {
+      "case": "m-collection-menu",
+      "events": [
+        "M"
+      ],
+      "expected": "Inspect native popup in original screenshot",
+      "actual": {
+        "active": "ShortcutCube",
+        "selected": [
+          "ShortcutCube"
+        ],
+        "mode": "OBJECT",
+        "objects": [
+          "Camera",
+          "Light",
+          "ShortcutCube"
+        ],
+        "location": [
+          0.5,
+          0.25,
+          0.25
+        ],
+        "rotationDegrees": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "dimensions": [
+          2.0,
+          2.0,
+          2.0
+        ],
+        "collections": [
+          "Collection"
+        ],
+        "sidebarVisible": true,
+        "viewDistance": 2.650333881378174,
+        "viewLocation": [
+          0.5,
+          0.25,
+          0.25
+        ],
+        "viewPerspective": "PERSP",
+        "emulateNumpad": false,
+        "sceneUnitSystem": "METRIC",
+        "sceneScaleLength": 1.0
+      },
+      "passed": null,
+      "verification": "native_event_screenshot",
+      "screenshot": {
+        "path": "02-03-03-m-collection-menu.png",
+        "sha256": "e9426fdd706de16750ee3300ce9d9a3855532b3ffbe4289908070886c2733467",
+        "width": 1494,
+        "height": 1019,
+        "recordedAt": "2026-10-27T00:25:28.653Z"
+      }
+    },
+    {
+      "case": "ctrl-a-apply-menu",
+      "events": [
+        "CTRL_A"
+      ],
+      "expected": "Inspect native popup in original screenshot",
+      "actual": {
+        "active": "ShortcutCube",
+        "selected": [
+          "ShortcutCube"
+        ],
+        "mode": "OBJECT",
+        "objects": [
+          "Camera",
+          "Light",
+          "ShortcutCube"
+        ],
+        "location": [
+          0.5,
+          0.25,
+          0.25
+        ],
+        "rotationDegrees": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "dimensions": [
+          2.0,
+          2.0,
+          2.0
+        ],
+        "collections": [
+          "Collection"
+        ],
+        "sidebarVisible": true,
+        "viewDistance": 2.650333881378174,
+        "viewLocation": [
+          0.5,
+          0.25,
+          0.25
+        ],
+        "viewPerspective": "PERSP",
+        "emulateNumpad": false,
+        "sceneUnitSystem": "METRIC",
+        "sceneScaleLength": 1.0
+      },
+      "passed": null,
+      "verification": "native_event_screenshot",
+      "screenshot": {
+        "path": "02-07-01-ctrl-a-apply-menu.png",
+        "sha256": "5d3eb178b16e46c9aa32af11a6868f9fcb2d23e187f75f7578f5fdb63146b04b",
+        "width": 1494,
+        "height": 1019,
+        "recordedAt": "2026-10-27T00:25:29.653Z"
+      }
+    }
+  ],
+  "unqualifiedCases": [
+    "translate-no-axis",
+    "shift-a-menu",
+    "x-delete-menu",
+    "f2-rename-dialog",
+    "m-collection-menu",
+    "ctrl-a-apply-menu"
+  ],
+  "learnerCompletionAssessed": false,
+  "physicalFitAssessed": false,
+  "sceneSaved": false,
+  "workspaceWritesPerformed": false,
+  "workspaceContentsComparison": "See runner-status after process exit; does not identify writes or writers",
+  "preferencesScreenshot": {
+    "path": "01-06-02-preferences-emulate-numpad.png",
+    "sha256": "69e216564052458e430d7a1d39fad6bd5cb4cc64ed53fa55eec3135256cd7b50",
+    "width": 840,
+    "height": 550,
+    "recordedAt": "2026-10-27T00:25:32.153Z"
+  }
+}

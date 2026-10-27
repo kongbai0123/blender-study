@@ -1,0 +1,223 @@
+{
+  "schemaVersion": 1,
+  "id": "workspace-semantics-v001",
+  "preparedOn": "2026-10-27",
+  "scope": "版本化語義更正；凍結 metadata 的 learnerWorkspaceWrites:false 不再當作未寫入證據。原件不改。",
+  "limits": "快照比較不觀察期間所有寫入，也不識別寫入者。language 人工操作沒有 runner，亦保持未知。",
+  "runs": [
+    {
+      "runId": "2026-10-22-interface-language-v001",
+      "workspaceContentsUnchanged": null,
+      "learnerWorkspaceWrites": null,
+      "workspaceEvidenceNote": "沒有工作區前後內容證據；不推定未寫入或寫入者。"
+    },
+    {
+      "runId": "2026-10-22-lesson01-demo-v001",
+      "workspaceContentsUnchanged": null,
+      "learnerWorkspaceWrites": null,
+      "workspaceEvidenceNote": "舊版執行器只比對第一層檔名，未保存前後雜湊；內容是否一致與期間是否寫入均未知，不回填。",
+      "basis": "本次交接明示舊執行器只比第一層檔名；現存 run 沒有 runner-status 的前後雜湊，不從目前目錄狀態回填。"
+    },
+    {
+      "runId": "2026-10-22-lesson02-demo-v001",
+      "workspaceContentsUnchanged": null,
+      "learnerWorkspaceWrites": null,
+      "workspaceEvidenceNote": "舊版執行器只比對第一層檔名，未保存前後雜湊；內容是否一致與期間是否寫入均未知，不回填。",
+      "basis": "本次交接明示舊執行器只比第一層檔名；現存 run 沒有 runner-status 的前後雜湊，不從目前目錄狀態回填。"
+    },
+    {
+      "runId": "2026-10-22-lesson03-demo-v001",
+      "workspaceContentsUnchanged": null,
+      "learnerWorkspaceWrites": null,
+      "workspaceEvidenceNote": "舊版執行器只比對第一層檔名，未保存前後雜湊；內容是否一致與期間是否寫入均未知，不回填。",
+      "basis": "本次交接明示舊執行器只比第一層檔名；現存 run 沒有 runner-status 的前後雜湊，不從目前目錄狀態回填。"
+    },
+    {
+      "runId": "2026-10-22-lesson04-demo-v001",
+      "workspaceContentsUnchanged": null,
+      "learnerWorkspaceWrites": null,
+      "workspaceEvidenceNote": "舊版執行器只比對第一層檔名，未保存前後雜湊；內容是否一致與期間是否寫入均未知，不回填。",
+      "basis": "本次交接明示舊執行器只比第一層檔名；現存 run 沒有 runner-status 的前後雜湊，不從目前目錄狀態回填。"
+    },
+    {
+      "runId": "2026-10-22-lesson05-demo-v002",
+      "workspaceContentsUnchanged": true,
+      "learnerWorkspaceWrites": null,
+      "workspaceEvidenceNote": "僅記錄 runner 回報的前後工作區內容比較；一致不證明期間未曾寫入，也不能判定寫入者。",
+      "runnerEvidence": {
+        "path": "learning/evidence/public-metadata/runner-status-2bf0dd61d6ba-public-v001.json",
+        "sha256": "8c4679c3ed075e8117c3ff63791119e2432b26ebb07e88240f415059e65751f5",
+        "originalPath": "learning/evidence/05/2026-10-22-lesson05-demo-v002/runner-status.json",
+        "originalSha256": "bcb706c9bcfa8c5ef45a19e205be6885a79f6cc49b0c3578b718561a4c9f2f61"
+      }
+    },
+    {
+      "runId": "2026-10-22-lesson05-holes-demo-v002",
+      "workspaceContentsUnchanged": true,
+      "learnerWorkspaceWrites": null,
+      "workspaceEvidenceNote": "僅記錄 runner 回報的前後工作區內容比較；一致不證明期間未曾寫入，也不能判定寫入者。",
+      "runnerEvidence": {
+        "path": "learning/evidence/public-metadata/runner-status-3efe651393e3-public-v001.json",
+        "sha256": "4c2b514b0b5c89f01c81c7ab45ee24f45dcc4ec34818add9c7303adbb370da21",
+        "originalPath": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/runner-status.json",
+        "originalSha256": "338a2ca7bace88f33c7028316f3c332d0ef292f411d65a172ecbdd0bcb5f1e5e"
+      }
+    },
+    {
+      "runId": "2026-10-22-lesson05-export-demo-v003",
+      "workspaceContentsUnchanged": true,
+      "learnerWorkspaceWrites": null,
+      "workspaceEvidenceNote": "僅記錄 runner 回報的前後工作區內容比較；一致不證明期間未曾寫入，也不能判定寫入者。",
+      "runnerEvidence": {
+        "path": "learning/evidence/public-metadata/runner-status-ed5b37ee410c-public-v001.json",
+        "sha256": "246488d720f054895376b2f50d37644538c290d3b401f81d9e09cc8b1d8426c9",
+        "originalPath": "learning/evidence/05/2026-10-22-lesson05-export-demo-v003/runner-status.json",
+        "originalSha256": "5025acc0f94edccfb24be4fe8c234392ec60d79466e85233545670d6d235bcdc"
+      }
+    },
+    {
+      "runId": "2026-10-22-lesson05-lid-demo-v001",
+      "workspaceContentsUnchanged": true,
+      "learnerWorkspaceWrites": null,
+      "workspaceEvidenceNote": "僅記錄 runner 回報的前後工作區內容比較；一致不證明期間未曾寫入，也不能判定寫入者。",
+      "runnerEvidence": {
+        "path": "learning/evidence/public-metadata/runner-status-ad9f951cc4bb-public-v001.json",
+        "sha256": "34e8a16d3dc0eab8a90f42246a70f8571af82c2d6e9f6a1cf8e0bac719606a9a",
+        "originalPath": "learning/evidence/05/2026-10-22-lesson05-lid-demo-v001/runner-status.json",
+        "originalSha256": "1e532a44ffa935bbdfe27372ce5f498ed689d48662402bdcb8a8525dc2ad60b1"
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson05-lid-export-demo-v001",
+      "workspaceContentsUnchanged": true,
+      "learnerWorkspaceWrites": null,
+      "workspaceEvidenceNote": "僅記錄 runner 回報的前後工作區內容比較；一致不證明期間未曾寫入，也不能判定寫入者。",
+      "runnerEvidence": {
+        "path": "learning/evidence/public-metadata/runner-status-d0a46d8b7814-public-v001.json",
+        "sha256": "466866024777657c4cb220170af9bfe74a8b2c46372e2b652ba68d0f228e89d9",
+        "originalPath": "learning/evidence/05/2026-10-25-lesson05-lid-export-demo-v001/runner-status.json",
+        "originalSha256": "2d58a71f9a45ddad1ce6269bacc99fb216b933a4b5f2df1daab7cc525a33f759"
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson06-tenon-demo-v006",
+      "workspaceContentsUnchanged": true,
+      "learnerWorkspaceWrites": null,
+      "workspaceEvidenceNote": "僅記錄 runner 回報的前後工作區內容比較；一致不證明期間未曾寫入，也不能判定寫入者。",
+      "runnerEvidence": {
+        "path": "learning/evidence/public-metadata/runner-status-8cdf730253fb-public-v001.json",
+        "sha256": "44afb2057d6091248a2e565945752a5c991b602347eb5b7c59eb7b3446a6bf3e",
+        "originalPath": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/runner-status.json",
+        "originalSha256": "44f3515f0814d23ce5ee6d398cf94cbe0aabd95f09ee9c4d4a23b0a638e6505a"
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson06-dovetail-demo-v002",
+      "workspaceContentsUnchanged": true,
+      "learnerWorkspaceWrites": null,
+      "workspaceEvidenceNote": "僅記錄 runner 回報的前後工作區內容比較；一致不證明期間未曾寫入，也不能判定寫入者。",
+      "runnerEvidence": {
+        "path": "learning/evidence/public-metadata/runner-status-ab66a1580115-public-v001.json",
+        "sha256": "c65815ae2367d4ff2361210943d0e6dd01aa5006cd23bf0a71995ff6a365974f",
+        "originalPath": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/runner-status.json",
+        "originalSha256": "299a4875a765924109e684a5d3e5f4ace64c0323d7726327fc8cc0b662e8eb9d"
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson06-dovetail-export-demo-v001",
+      "workspaceContentsUnchanged": true,
+      "learnerWorkspaceWrites": null,
+      "workspaceEvidenceNote": "僅記錄 runner 回報的前後工作區內容比較；一致不證明期間未曾寫入，也不能判定寫入者。",
+      "runnerEvidence": {
+        "path": "learning/evidence/public-metadata/runner-status-1b7c71168d75-public-v001.json",
+        "sha256": "31f1044d240070e954cccb859fb143b6d3fbf75cc3b63849707049ed8ad05f20",
+        "originalPath": "learning/evidence/06/2026-10-25-lesson06-dovetail-export-demo-v001/runner-status.json",
+        "originalSha256": "78309fc65956d1635adb494dc6fa16a31ef88f1c1741fb598389be60ff98c868"
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-parameters-demo-v001",
+      "workspaceContentsUnchanged": true,
+      "learnerWorkspaceWrites": null,
+      "workspaceEvidenceNote": "僅記錄 runner 回報的前後工作區內容比較；一致不證明期間未曾寫入，也不能判定寫入者。",
+      "runnerEvidence": {
+        "path": "learning/evidence/public-metadata/runner-status-9c51b6f4d11a-public-v001.json",
+        "sha256": "23a0f1e6feec2bed362375940a13b09d1443888efea25a95c6565abf499bdb4f",
+        "originalPath": "learning/evidence/07/2026-10-25-lesson07-parameters-demo-v001/runner-status.json",
+        "originalSha256": "4df88e97843804f34274bf01051a1c53909daf76f7da46e7ec9386c5c8ce2285"
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-snap-demo-v001",
+      "workspaceContentsUnchanged": true,
+      "learnerWorkspaceWrites": null,
+      "workspaceEvidenceNote": "僅記錄 runner 回報的前後工作區內容比較；一致不證明期間未曾寫入，也不能判定寫入者。",
+      "runnerEvidence": {
+        "path": "learning/evidence/public-metadata/runner-status-e8581ca93a1b-public-v001.json",
+        "sha256": "898f4b37d9995793d2ea25460cef26bec1e00c625e867cf8d6c47567888d652a",
+        "originalPath": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/runner-status.json",
+        "originalSha256": "0658620c8bcfc139b29e01e5613fd14fbe4e85875f4884cc58d63f072777882a"
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-overhang-demo-v001",
+      "workspaceContentsUnchanged": true,
+      "learnerWorkspaceWrites": null,
+      "workspaceEvidenceNote": "僅記錄 runner 回報的前後工作區內容比較；一致不證明期間未曾寫入，也不能判定寫入者。",
+      "runnerEvidence": {
+        "path": "learning/evidence/public-metadata/runner-status-9df7eb44cbb8-public-v001.json",
+        "sha256": "22da2c1d0743f93fa95b8247a550ecdd11d5538c87b57261f98d0de457e2b0d2",
+        "originalPath": "learning/evidence/07/2026-10-25-lesson07-overhang-demo-v001/runner-status.json",
+        "originalSha256": "3c83c14d7c6da739861aba7f2ca75aab302b0bc595e2a17a588fb9b77cfc1b30"
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-snap-export-demo-v001",
+      "workspaceContentsUnchanged": true,
+      "learnerWorkspaceWrites": null,
+      "workspaceEvidenceNote": "僅記錄 runner 回報的前後工作區內容比較；一致不證明期間未曾寫入，也不能判定寫入者。",
+      "runnerEvidence": {
+        "path": "learning/evidence/public-metadata/runner-status-b23b15bfcaf4-public-v001.json",
+        "sha256": "057a6f32d0f3314ec3d91f2c3ce0b09fa065c5da62a1031f4c016104f39464c7",
+        "originalPath": "learning/evidence/07/2026-10-25-lesson07-snap-export-demo-v001/runner-status.json",
+        "originalSha256": "81624ce45dbec0fe037bcae3cb8a6e15620d97f408616b458dd552e1047bd5e8"
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-coupon-export-demo-v001",
+      "workspaceContentsUnchanged": true,
+      "learnerWorkspaceWrites": null,
+      "workspaceEvidenceNote": "僅記錄 runner 回報的前後工作區內容比較；一致不證明期間未曾寫入，也不能判定寫入者。",
+      "runnerEvidence": {
+        "path": "learning/evidence/public-metadata/runner-status-13b2e4e8688a-public-v001.json",
+        "sha256": "010cccc68122176c5010e29646a8e745d1c0d604c65d5a9eb1f3e59badd83403",
+        "originalPath": "learning/evidence/07/2026-10-25-lesson07-coupon-export-demo-v001/runner-status.json",
+        "originalSha256": "9c475af2ded61c942b5f8a2f2adb12d893f32cff28c0fb92aa2da7da93ac3316"
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson07-coupons-demo-v001",
+      "workspaceContentsUnchanged": true,
+      "learnerWorkspaceWrites": null,
+      "workspaceEvidenceNote": "僅記錄 runner 回報的前後工作區內容比較；一致不證明期間未曾寫入，也不能判定寫入者。",
+      "runnerEvidence": {
+        "path": "learning/evidence/public-metadata/runner-status-b64b817b6405-public-v001.json",
+        "sha256": "237cd013c437783fb606b9f493769afa733c4fda2db83dfc3e6b9157896f4205",
+        "originalPath": "learning/evidence/07/2026-10-25-lesson07-coupons-demo-v001/runner-status.json",
+        "originalSha256": "6ddbb2d6e5391cf28bfa03a42d00e0f5a2615c4093e459142f17691f15b33b1c"
+      }
+    },
+    {
+      "runId": "2026-10-25-lesson08-parameters-demo-v001",
+      "workspaceContentsUnchanged": true,
+      "learnerWorkspaceWrites": null,
+      "workspaceEvidenceNote": "僅記錄 runner 回報的前後工作區內容比較；一致不證明期間未曾寫入，也不能判定寫入者。",
+      "runnerEvidence": {
+        "path": "learning/evidence/public-metadata/runner-status-8fe8a6500d99-public-v001.json",
+        "sha256": "03d03cf9230f86aa8af9e87f364a74baa50fff8343d49cb8c968d10d29e1b185",
+        "originalPath": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/runner-status.json",
+        "originalSha256": "9f22fa75ed9e021cbfa1797171e8d5c823988f99e23632e77be2ad8598d8244c"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1620 @@
+{
+  "schemaVersion": 1,
+  "kind": "native_shortcut_mode_error_verification",
+  "runId": "2026-10-27-shortcut-mode-errors-demo-v001",
+  "recordedAt": "2026-10-27T00:43:28.828476+00:00",
+  "blender": "5.2.1 LTS",
+  "buildHash": "9e2066aef7ef",
+  "factoryStartup": true,
+  "eventSimulate": true,
+  "sourceSnapshot": "source-snapshot/manifest.json",
+  "keymap": "factory-keymap-mode-errors-v001.json",
+  "sceneSaved": false,
+  "preferencesSaved": false,
+  "learnerCompletionAssessed": false,
+  "workspaceContentsComparison": "See runner-status; snapshots do not prove no intervening write or writer",
+  "clearRenderBorderKey": {
+    "type": "B",
+    "ctrl": 1,
+    "alt": 1,
+    "shift": 0,
+    "oskey": 0
+  },
+  "cases": [
+    {
+      "case": "baseline",
+      "events": [],
+      "expected": "Blender 5.2.1, Object Mode, Cube, no animation",
+      "actual": {
+        "version": "5.2.1 LTS",
+        "buildHash": "9e2066aef7ef",
+        "active": "Cube",
+        "mode": "OBJECT",
+        "selected": [
+          "Cube"
+        ],
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "mesh": {
+          "vertices": 8,
+          "edges": 12,
+          "polygons": 6
+        },
+        "animation": {
+          "animationData": false,
+          "action": null,
+          "actionSlot": null,
+          "channels": [],
+          "layers": [],
+          "legacyFcurvesAvailable": false
+        },
+        "allActions": [],
+        "frame": 1,
+        "viewPerspective": "PERSP",
+        "viewShading": "SOLID",
+        "viewRenderBorder": {
+          "enabled": false,
+          "xmin": 0.0,
+          "xmax": 1.0,
+          "ymin": 0.0,
+          "ymax": 1.0
+        },
+        "sceneRenderBorder": {
+          "enabled": false,
+          "xmin": 0.0,
+          "xmax": 1.0,
+          "ymin": 0.0,
+          "ymax": 1.0
+        },
+        "recentOperators": [],
+        "modalOperators": [],
+        "timelineEditors": [
+          {
+            "type": "DOPESHEET_EDITOR",
+            "uiType": "TIMELINE",
+            "width": 1224,
+            "height": 69
+          }
+        ]
+      },
+      "passed": true,
+      "method": "native_events_and_readback",
+      "screenshot": {
+        "path": "shortcut-mode-01-baseline.png",
+        "sha256": "7fefffe3d6e72145c228a60b7ed5bce3e42e9525182a5ac42463cc5c00e3a3f4",
+        "width": 1494,
+        "height": 1019,
+        "recordedAt": "2026-10-27T00:43:08.028Z"
+      }
+    },
+    {
+      "case": "object-i-keyframe",
+      "events": [
+        "I"
+      ],
+      "expected": "Observe actual animation action, channels and keyframe points; no assumption from keymap",
+      "actual": {
+        "version": "5.2.1 LTS",
+        "buildHash": "9e2066aef7ef",
+        "active": "Cube",
+        "mode": "OBJECT",
+        "selected": [
+          "Cube"
+        ],
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "mesh": {
+          "vertices": 8,
+          "edges": 12,
+          "polygons": 6
+        },
+        "animation": {
+          "animationData": true,
+          "action": "CubeAction",
+          "actionSlot": "OBCube",
+          "channels": [
+            {
+              "dataPath": "location",
+              "arrayIndex": 0,
+              "points": [
+                {
+                  "co": [
+                    1.0,
+                    0.0
+                  ],
+                  "interpolation": "BEZIER",
+                  "selected": true
+                }
+              ]
+            },
+            {
+              "dataPath": "location",
+              "arrayIndex": 1,
+              "points": [
+                {
+                  "co": [
+                    1.0,
+                    0.0
+                  ],
+                  "interpolation": "BEZIER",
+                  "selected": true
+                }
+              ]
+            },
+            {
+              "dataPath": "location",
+              "arrayIndex": 2,
+              "points": [
+                {
+                  "co": [
+                    1.0,
+                    0.0
+                  ],
+                  "interpolation": "BEZIER",
+                  "selected": true
+                }
+              ]
+            },
+            {
+              "dataPath": "rotation_euler",
+              "arrayIndex": 0,
+              "points": [
+                {
+                  "co": [
+                    1.0,
+                    0.0
+                  ],
+                  "interpolation": "BEZIER",
+                  "selected": true
+                }
+              ]
+            },
+            {
+              "dataPath": "rotation_euler",
+              "arrayIndex": 1,
+              "points": [
+                {
+                  "co": [
+                    1.0,
+                    0.0
+                  ],
+                  "interpolation": "BEZIER",
+                  "selected": true
+                }
+              ]
+            },
+            {
+              "dataPath": "rotation_euler",
+              "arrayIndex": 2,
+              "points": [
+                {
+                  "co": [
+                    1.0,
+                    0.0
+                  ],
+                  "interpolation": "BEZIER",
+                  "selected": true
+                }
+              ]
+            },
+            {
+              "dataPath": "scale",
+              "arrayIndex": 0,
+              "points": [
+                {
+                  "co": [
+                    1.0,
+                    1.0
+                  ],
+                  "interpolation": "BEZIER",
+                  "selected": true
+                }
+              ]
+            },
+            {
+              "dataPath": "scale",
+              "arrayIndex": 1,
+              "points": [
+                {
+                  "co": [
+                    1.0,
+                    1.0
+                  ],
+                  "interpolation": "BEZIER",
+                  "selected": true
+                }
+              ]
+            },
+            {
+              "dataPath": "scale",
+              "arrayIndex": 2,
+              "points": [
+                {
+                  "co": [
+                    1.0,
+                    1.0
+                  ],
+                  "interpolation": "BEZIER",
+                  "selected": true
+                }
+              ]
+            }
+          ],
+          "layers": [
+            {
+              "name": "Layer",
+              "strips": [
+                {
+                  "type": "KEYFRAME",
+                  "channelbags": [
+                    {
+                      "slotHandle": 929201142,
+                      "channels": [
+                        {
+                          "dataPath": "location",
+                          "arrayIndex": 0,
+                          "points": [
+                            {
+                              "co": [
+                                1.0,
+                                0.0
+                              ],
+                              "interpolation": "BEZIER",
+                              "selected": true
+                            }
+                          ]
+                        },
+                        {
+                          "dataPath": "location",
+                          "arrayIndex": 1,
+                          "points": [
+                            {
+                              "co": [
+                                1.0,
+                                0.0
+                              ],
+                              "interpolation": "BEZIER",
+                              "selected": true
+                            }
+                          ]
+                        },
+                        {
+                          "dataPath": "location",
+                          "arrayIndex": 2,
+                          "points": [
+                            {
+                              "co": [
+                                1.0,
+                                0.0
+                              ],
+                              "interpolation": "BEZIER",
+                              "selected": true
+                            }
+                          ]
+                        },
+                        {
+                          "dataPath": "rotation_euler",
+                          "arrayIndex": 0,
+                          "points": [
+                            {
+                              "co": [
+                                1.0,
+                                0.0
+                              ],
+                              "interpolation": "BEZIER",
+                              "selected": true
+                            }
+                          ]
+                        },
+                        {
+                          "dataPath": "rotation_euler",
+                          "arrayIndex": 1,
+                          "points": [
+                            {
+                              "co": [
+                                1.0,
+                                0.0
+                              ],
+                              "interpolation": "BEZIER",
+                              "selected": true
+                            }
+                          ]
+                        },
+                        {
+                          "dataPath": "rotation_euler",
+                          "arrayIndex": 2,
+                          "points": [
+                            {
+                              "co": [
+                                1.0,
+                                0.0
+                              ],
+                              "interpolation": "BEZIER",
+                              "selected": true
+                            }
+                          ]
+                        },
+                        {
+                          "dataPath": "scale",
+                          "arrayIndex": 0,
+                          "points": [
+                            {
+                              "co": [
+                                1.0,
+                                1.0
+                              ],
+                              "interpolation": "BEZIER",
+                              "selected": true
+                            }
+                          ]
+                        },
+                        {
+                          "dataPath": "scale",
+                          "arrayIndex": 1,
+                          "points": [
+                            {
+                              "co": [
+                                1.0,
+                                1.0
+                              ],
+                              "interpolation": "BEZIER",
+                              "selected": true
+                            }
+                          ]
+                        },
+                        {
+                          "dataPath": "scale",
+                          "arrayIndex": 2,
+                          "points": [
+                            {
+                              "co": [
+                                1.0,
+                                1.0
+                              ],
+                              "interpolation": "BEZIER",
+                              "selected": true
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "legacyFcurvesAvailable": false,
+          "pointCount": 9,
+          "keyedFrames": [
+            1.0
+          ]
+        },
+        "allActions": [
+          "CubeAction"
+        ],
+        "frame": 1,
+        "viewPerspective": "PERSP",
+        "viewShading": "SOLID",
+        "viewRenderBorder": {
+          "enabled": false,
+          "xmin": 0.0,
+          "xmax": 1.0,
+          "ymin": 0.0,
+          "ymax": 1.0
+        },
+        "sceneRenderBorder": {
+          "enabled": false,
+          "xmin": 0.0,
+          "xmax": 1.0,
+          "ymin": 0.0,
+          "ymax": 1.0
+        },
+        "recentOperators": [
+          "ANIM_OT_keyframe_insert"
+        ],
+        "modalOperators": [],
+        "timelineEditors": [
+          {
+            "type": "DOPESHEET_EDITOR",
+            "uiType": "TIMELINE",
+            "width": 1224,
+            "height": 69
+          }
+        ]
+      },
+      "passed": null,
+      "method": "native_events_and_readback",
+      "screenshot": {
+        "path": "shortcut-mode-02-object-i-keyframe.png",
+        "sha256": "56af01b10b0fda46dbb23b2409728ccebf00c1e223d95cfd8ca315da77113411",
+        "width": 1494,
+        "height": 1019,
+        "recordedAt": "2026-10-27T00:43:09.128Z"
+      }
+    },
+    {
+      "case": "object-i-undo",
+      "events": [
+        "CTRL_Z"
+      ],
+      "expected": "Cube animationData is false and transforms/mesh match baseline",
+      "actual": {
+        "version": "5.2.1 LTS",
+        "buildHash": "9e2066aef7ef",
+        "active": "Cube",
+        "mode": "OBJECT",
+        "selected": [
+          "Cube"
+        ],
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "mesh": {
+          "vertices": 8,
+          "edges": 12,
+          "polygons": 6
+        },
+        "animation": {
+          "animationData": false,
+          "action": null,
+          "actionSlot": null,
+          "channels": [],
+          "layers": [],
+          "legacyFcurvesAvailable": false
+        },
+        "allActions": [],
+        "frame": 1,
+        "viewPerspective": "PERSP",
+        "viewShading": "SOLID",
+        "viewRenderBorder": {
+          "enabled": false,
+          "xmin": 0.0,
+          "xmax": 1.0,
+          "ymin": 0.0,
+          "ymax": 1.0
+        },
+        "sceneRenderBorder": {
+          "enabled": false,
+          "xmin": 0.0,
+          "xmax": 1.0,
+          "ymin": 0.0,
+          "ymax": 1.0
+        },
+        "recentOperators": [],
+        "modalOperators": [],
+        "timelineEditors": [
+          {
+            "type": "DOPESHEET_EDITOR",
+            "uiType": "TIMELINE",
+            "width": 1224,
+            "height": 69
+          }
+        ]
+      },
+      "passed": true,
+      "method": "native_events_and_readback",
+      "screenshot": {
+        "path": "shortcut-mode-03-object-i-undo.png",
+        "sha256": "8f5a6f8c0dc03d6630a1e98b275abf84230a602a1c835cfe5a96f1fef03d19af",
+        "width": 1494,
+        "height": 1019,
+        "recordedAt": "2026-10-27T00:43:10.428Z"
+      }
+    },
+    {
+      "case": "object-e",
+      "events": [
+        "E"
+      ],
+      "expected": "Observe this factory Object Mode context only; do not infer other editors/keymaps",
+      "actual": {
+        "version": "5.2.1 LTS",
+        "buildHash": "9e2066aef7ef",
+        "active": "Cube",
+        "mode": "OBJECT",
+        "selected": [
+          "Cube"
+        ],
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "mesh": {
+          "vertices": 8,
+          "edges": 12,
+          "polygons": 6
+        },
+        "animation": {
+          "animationData": false,
+          "action": null,
+          "actionSlot": null,
+          "channels": [],
+          "layers": [],
+          "legacyFcurvesAvailable": false
+        },
+        "allActions": [],
+        "frame": 1,
+        "viewPerspective": "PERSP",
+        "viewShading": "SOLID",
+        "viewRenderBorder": {
+          "enabled": false,
+          "xmin": 0.0,
+          "xmax": 1.0,
+          "ymin": 0.0,
+          "ymax": 1.0
+        },
+        "sceneRenderBorder": {
+          "enabled": false,
+          "xmin": 0.0,
+          "xmax": 1.0,
+          "ymin": 0.0,
+          "ymax": 1.0
+        },
+        "recentOperators": [],
+        "modalOperators": [],
+        "timelineEditors": [
+          {
+            "type": "DOPESHEET_EDITOR",
+            "uiType": "TIMELINE",
+            "width": 1224,
+            "height": 69
+          }
+        ]
+      },
+      "passed": true,
+      "method": "native_events_and_readback",
+      "screenshot": {
+        "path": "shortcut-mode-04-object-e.png",
+        "sha256": "01bf238d99bcd2469a79916d7f8e3677f23c3d444a09ed8136b5d87a9d9f710d",
+        "width": 1494,
+        "height": 1019,
+        "recordedAt": "2026-10-27T00:43:11.528Z"
+      }
+    },
+    {
+      "case": "perspective-border-invoke-esc",
+      "events": [
+        "CTRL_B"
+      ],
+      "expected": "Inspect original screenshot and native modal operator",
+      "actual": {
+        "version": "5.2.1 LTS",
+        "buildHash": "9e2066aef7ef",
+        "active": "Cube",
+        "mode": "OBJECT",
+        "selected": [
+          "Cube"
+        ],
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "mesh": {
+          "vertices": 8,
+          "edges": 12,
+          "polygons": 6
+        },
+        "animation": {
+          "animationData": false,
+          "action": null,
+          "actionSlot": null,
+          "channels": [],
+          "layers": [],
+          "legacyFcurvesAvailable": false
+        },
+        "allActions": [],
+        "frame": 1,
+        "viewPerspective": "PERSP",
+        "viewShading": "SOLID",
+        "viewRenderBorder": {
+          "enabled": false,
+          "xmin": 0.0,
+          "xmax": 1.0,
+          "ymin": 0.0,
+          "ymax": 1.0
+        },
+        "sceneRenderBorder": {
+          "enabled": false,
+          "xmin": 0.0,
+          "xmax": 1.0,
+          "ymin": 0.0,
+          "ymax": 1.0
+        },
+        "recentOperators": [],
+        "modalOperators": [
+          "VIEW3D_OT_render_border"
+        ],
+        "timelineEditors": [
+          {
+            "type": "DOPESHEET_EDITOR",
+            "uiType": "TIMELINE",
+            "width": 1224,
+            "height": 69
+          }
+        ]
+      },
+      "passed": null,
+      "method": "native_events_and_readback",
+      "screenshot": {
+        "path": "shortcut-mode-05-perspective-border-invoke-esc.png",
+        "sha256": "c131fd1733a798b46137884d65c683921450fc9183800d2449d5bb626f5f61d8",
+        "width": 1494,
+        "height": 1019,
+        "recordedAt": "2026-10-27T00:43:12.628Z"
+      }
+    },
+    {
+      "case": "perspective-border-esc",
+      "events": [
+        "ESC"
+      ],
+      "expected": "State equals state before Ctrl+B",
+      "actual": {
+        "version": "5.2.1 LTS",
+        "buildHash": "9e2066aef7ef",
+        "active": "Cube",
+        "mode": "OBJECT",
+        "selected": [
+          "Cube"
+        ],
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "mesh": {
+          "vertices": 8,
+          "edges": 12,
+          "polygons": 6
+        },
+        "animation": {
+          "animationData": false,
+          "action": null,
+          "actionSlot": null,
+          "channels": [],
+          "layers": [],
+          "legacyFcurvesAvailable": false
+        },
+        "allActions": [],
+        "frame": 1,
+        "viewPerspective": "PERSP",
+        "viewShading": "SOLID",
+        "viewRenderBorder": {
+          "enabled": false,
+          "xmin": 0.0,
+          "xmax": 1.0,
+          "ymin": 0.0,
+          "ymax": 1.0
+        },
+        "sceneRenderBorder": {
+          "enabled": false,
+          "xmin": 0.0,
+          "xmax": 1.0,
+          "ymin": 0.0,
+          "ymax": 1.0
+        },
+        "recentOperators": [],
+        "modalOperators": [],
+        "timelineEditors": [
+          {
+            "type": "DOPESHEET_EDITOR",
+            "uiType": "TIMELINE",
+            "width": 1224,
+            "height": 69
+          }
+        ]
+      },
+      "passed": true,
+      "method": "native_events_and_readback",
+      "screenshot": {
+        "path": "shortcut-mode-06-perspective-border-esc.png",
+        "sha256": "01bf238d99bcd2469a79916d7f8e3677f23c3d444a09ed8136b5d87a9d9f710d",
+        "width": 1494,
+        "height": 1019,
+        "recordedAt": "2026-10-27T00:43:13.728Z"
+      }
+    },
+    {
+      "case": "perspective-border-invoke-rmb",
+      "events": [
+        "CTRL_B"
+      ],
+      "expected": null,
+      "actual": {
+        "version": "5.2.1 LTS",
+        "buildHash": "9e2066aef7ef",
+        "active": "Cube",
+        "mode": "OBJECT",
+        "selected": [
+          "Cube"
+        ],
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "mesh": {
+          "vertices": 8,
+          "edges": 12,
+          "polygons": 6
+        },
+        "animation": {
+          "animationData": false,
+          "action": null,
+          "actionSlot": null,
+          "channels": [],
+          "layers": [],
+          "legacyFcurvesAvailable": false
+        },
+        "allActions": [],
+        "frame": 1,
+        "viewPerspective": "PERSP",
+        "viewShading": "SOLID",
+        "viewRenderBorder": {
+          "enabled": false,
+          "xmin": 0.0,
+          "xmax": 1.0,
+          "ymin": 0.0,
+          "ymax": 1.0
+        },
+        "sceneRenderBorder": {
+          "enabled": false,
+          "xmin": 0.0,
+          "xmax": 1.0,
+          "ymin": 0.0,
+          "ymax": 1.0
+        },
+        "recentOperators": [],
+        "modalOperators": [
+          "VIEW3D_OT_render_border"
+        ],
+        "timelineEditors": [
+          {
+            "type": "DOPESHEET_EDITOR",
+            "uiType": "TIMELINE",
+            "width": 1224,
+            "height": 69
+          }
+        ]
+      },
+      "passed": null,
+      "method": "native_events_and_readback",
+      "screenshot": {
+        "path": "shortcut-mode-07-perspective-border-invoke-rmb.png",
+        "sha256": "c131fd1733a798b46137884d65c683921450fc9183800d2449d5bb626f5f61d8",
+        "width": 1494,
+        "height": 1019,
+        "recordedAt": "2026-10-27T00:43:14.828Z"
+      }
+    },
+    {
+      "case": "perspective-border-rmb",
+      "events": [
+        "RIGHTMOUSE"
+      ],
+      "expected": "State equals state before Ctrl+B",
+      "actual": {
+        "version": "5.2.1 LTS",
+        "buildHash": "9e2066aef7ef",
+        "active": "Cube",
+        "mode": "OBJECT",
+        "selected": [
+          "Cube"
+        ],
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "mesh": {
+          "vertices": 8,
+          "edges": 12,
+          "polygons": 6
+        },
+        "animation": {
+          "animationData": false,
+          "action": null,
+          "actionSlot": null,
+          "channels": [],
+          "layers": [],
+          "legacyFcurvesAvailable": false
+        },
+        "allActions": [],
+        "frame": 1,
+        "viewPerspective": "PERSP",
+        "viewShading": "SOLID",
+        "viewRenderBorder": {
+          "enabled": false,
+          "xmin": 0.0,
+          "xmax": 1.0,
+          "ymin": 0.0,
+          "ymax": 1.0
+        },
+        "sceneRenderBorder": {
+          "enabled": false,
+          "xmin": 0.0,
+          "xmax": 1.0,
+          "ymin": 0.0,
+          "ymax": 1.0
+        },
+        "recentOperators": [],
+        "modalOperators": [],
+        "timelineEditors": [
+          {
+            "type": "DOPESHEET_EDITOR",
+            "uiType": "TIMELINE",
+            "width": 1224,
+            "height": 69
+          }
+        ]
+      },
+      "passed": true,
+      "method": "native_events_and_readback",
+      "screenshot": {
+        "path": "shortcut-mode-08-perspective-border-rmb.png",
+        "sha256": "7406ddda3b00caf341f3e268e5ab3bcd9f20263490fceae88e638a221bb9cbcc",
+        "width": 1494,
+        "height": 1019,
+        "recordedAt": "2026-10-27T00:43:15.928Z"
+      }
+    },
+    {
+      "case": "perspective-border-complete",
+      "events": [
+        "CTRL_B",
+        "LEFTMOUSE_DRAG_430_320_TO_800_580"
+      ],
+      "expected": "Observe real result in Solid perspective",
+      "actual": {
+        "version": "5.2.1 LTS",
+        "buildHash": "9e2066aef7ef",
+        "active": "Cube",
+        "mode": "OBJECT",
+        "selected": [
+          "Cube"
+        ],
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "mesh": {
+          "vertices": 8,
+          "edges": 12,
+          "polygons": 6
+        },
+        "animation": {
+          "animationData": false,
+          "action": null,
+          "actionSlot": null,
+          "channels": [],
+          "layers": [],
+          "legacyFcurvesAvailable": false
+        },
+        "allActions": [],
+        "frame": 1,
+        "viewPerspective": "PERSP",
+        "viewShading": "SOLID",
+        "viewRenderBorder": {
+          "enabled": true,
+          "xmin": 0.34967321157455444,
+          "xmax": 0.6519607901573181,
+          "ymin": 0.38307350873947144,
+          "ymax": 0.6726058125495911
+        },
+        "sceneRenderBorder": {
+          "enabled": false,
+          "xmin": 0.0,
+          "xmax": 1.0,
+          "ymin": 0.0,
+          "ymax": 1.0
+        },
+        "recentOperators": [
+          "VIEW3D_OT_render_border"
+        ],
+        "modalOperators": [],
+        "timelineEditors": [
+          {
+            "type": "DOPESHEET_EDITOR",
+            "uiType": "TIMELINE",
+            "width": 1224,
+            "height": 69
+          }
+        ]
+      },
+      "passed": null,
+      "method": "native_events_and_readback",
+      "screenshot": {
+        "path": "shortcut-mode-09-perspective-border-complete.png",
+        "sha256": "4bf553f1431b3ed214e9545634a3b03e158b2708d18c690aef60ed9424d46c1d",
+        "width": 1494,
+        "height": 1019,
+        "recordedAt": "2026-10-27T00:43:18.328Z"
+      }
+    },
+    {
+      "case": "camera-baseline",
+      "events": [
+        "NUMPAD_0"
+      ],
+      "expected": "CAMERA",
+      "actual": {
+        "version": "5.2.1 LTS",
+        "buildHash": "9e2066aef7ef",
+        "active": "Cube",
+        "mode": "OBJECT",
+        "selected": [
+          "Cube"
+        ],
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "mesh": {
+          "vertices": 8,
+          "edges": 12,
+          "polygons": 6
+        },
+        "animation": {
+          "animationData": false,
+          "action": null,
+          "actionSlot": null,
+          "channels": [],
+          "layers": [],
+          "legacyFcurvesAvailable": false
+        },
+        "allActions": [],
+        "frame": 1,
+        "viewPerspective": "CAMERA",
+        "viewShading": "SOLID",
+        "viewRenderBorder": {
+          "enabled": true,
+          "xmin": 0.34967321157455444,
+          "xmax": 0.6519607901573181,
+          "ymin": 0.38307350873947144,
+          "ymax": 0.6726058125495911
+        },
+        "sceneRenderBorder": {
+          "enabled": false,
+          "xmin": 0.0,
+          "xmax": 1.0,
+          "ymin": 0.0,
+          "ymax": 1.0
+        },
+        "recentOperators": [
+          "VIEW3D_OT_render_border"
+        ],
+        "modalOperators": [],
+        "timelineEditors": [
+          {
+            "type": "DOPESHEET_EDITOR",
+            "uiType": "TIMELINE",
+            "width": 1224,
+            "height": 69
+          }
+        ]
+      },
+      "passed": true,
+      "method": "native_events_and_readback",
+      "screenshot": {
+        "path": "shortcut-mode-10-camera-baseline.png",
+        "sha256": "6ea85b59baa4836af544c055ed2d554a9a1d4f646d29926a910c141debd81cd0",
+        "width": 1494,
+        "height": 1019,
+        "recordedAt": "2026-10-27T00:43:19.428Z"
+      }
+    },
+    {
+      "case": "camera-border-invoke",
+      "events": [
+        "CTRL_B"
+      ],
+      "expected": null,
+      "actual": {
+        "version": "5.2.1 LTS",
+        "buildHash": "9e2066aef7ef",
+        "active": "Cube",
+        "mode": "OBJECT",
+        "selected": [
+          "Cube"
+        ],
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "mesh": {
+          "vertices": 8,
+          "edges": 12,
+          "polygons": 6
+        },
+        "animation": {
+          "animationData": false,
+          "action": null,
+          "actionSlot": null,
+          "channels": [],
+          "layers": [],
+          "legacyFcurvesAvailable": false
+        },
+        "allActions": [],
+        "frame": 1,
+        "viewPerspective": "CAMERA",
+        "viewShading": "SOLID",
+        "viewRenderBorder": {
+          "enabled": true,
+          "xmin": 0.34967321157455444,
+          "xmax": 0.6519607901573181,
+          "ymin": 0.38307350873947144,
+          "ymax": 0.6726058125495911
+        },
+        "sceneRenderBorder": {
+          "enabled": false,
+          "xmin": 0.0,
+          "xmax": 1.0,
+          "ymin": 0.0,
+          "ymax": 1.0
+        },
+        "recentOperators": [
+          "VIEW3D_OT_render_border"
+        ],
+        "modalOperators": [
+          "VIEW3D_OT_render_border"
+        ],
+        "timelineEditors": [
+          {
+            "type": "DOPESHEET_EDITOR",
+            "uiType": "TIMELINE",
+            "width": 1224,
+            "height": 69
+          }
+        ]
+      },
+      "passed": null,
+      "method": "native_events_and_readback",
+      "screenshot": {
+        "path": "shortcut-mode-11-camera-border-invoke.png",
+        "sha256": "2d97e640d54120964792d0537b349dec7921cebf51620434eb33ee474db0f9d0",
+        "width": 1494,
+        "height": 1019,
+        "recordedAt": "2026-10-27T00:43:20.528Z"
+      }
+    },
+    {
+      "case": "camera-border-esc",
+      "events": [
+        "ESC"
+      ],
+      "expected": "Render settings unchanged",
+      "actual": {
+        "version": "5.2.1 LTS",
+        "buildHash": "9e2066aef7ef",
+        "active": "Cube",
+        "mode": "OBJECT",
+        "selected": [
+          "Cube"
+        ],
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "mesh": {
+          "vertices": 8,
+          "edges": 12,
+          "polygons": 6
+        },
+        "animation": {
+          "animationData": false,
+          "action": null,
+          "actionSlot": null,
+          "channels": [],
+          "layers": [],
+          "legacyFcurvesAvailable": false
+        },
+        "allActions": [],
+        "frame": 1,
+        "viewPerspective": "CAMERA",
+        "viewShading": "SOLID",
+        "viewRenderBorder": {
+          "enabled": true,
+          "xmin": 0.34967321157455444,
+          "xmax": 0.6519607901573181,
+          "ymin": 0.38307350873947144,
+          "ymax": 0.6726058125495911
+        },
+        "sceneRenderBorder": {
+          "enabled": false,
+          "xmin": 0.0,
+          "xmax": 1.0,
+          "ymin": 0.0,
+          "ymax": 1.0
+        },
+        "recentOperators": [
+          "VIEW3D_OT_render_border"
+        ],
+        "modalOperators": [],
+        "timelineEditors": [
+          {
+            "type": "DOPESHEET_EDITOR",
+            "uiType": "TIMELINE",
+            "width": 1224,
+            "height": 69
+          }
+        ]
+      },
+      "passed": true,
+      "method": "native_events_and_readback",
+      "screenshot": {
+        "path": "shortcut-mode-12-camera-border-esc.png",
+        "sha256": "6ea85b59baa4836af544c055ed2d554a9a1d4f646d29926a910c141debd81cd0",
+        "width": 1494,
+        "height": 1019,
+        "recordedAt": "2026-10-27T00:43:21.628Z"
+      }
+    },
+    {
+      "case": "camera-border-rmb",
+      "events": [
+        "CTRL_B",
+        "RIGHTMOUSE"
+      ],
+      "expected": "Render settings unchanged",
+      "actual": {
+        "version": "5.2.1 LTS",
+        "buildHash": "9e2066aef7ef",
+        "active": "Cube",
+        "mode": "OBJECT",
+        "selected": [
+          "Cube"
+        ],
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "mesh": {
+          "vertices": 8,
+          "edges": 12,
+          "polygons": 6
+        },
+        "animation": {
+          "animationData": false,
+          "action": null,
+          "actionSlot": null,
+          "channels": [],
+          "layers": [],
+          "legacyFcurvesAvailable": false
+        },
+        "allActions": [],
+        "frame": 1,
+        "viewPerspective": "CAMERA",
+        "viewShading": "SOLID",
+        "viewRenderBorder": {
+          "enabled": true,
+          "xmin": 0.34967321157455444,
+          "xmax": 0.6519607901573181,
+          "ymin": 0.38307350873947144,
+          "ymax": 0.6726058125495911
+        },
+        "sceneRenderBorder": {
+          "enabled": false,
+          "xmin": 0.0,
+          "xmax": 1.0,
+          "ymin": 0.0,
+          "ymax": 1.0
+        },
+        "recentOperators": [
+          "VIEW3D_OT_render_border"
+        ],
+        "modalOperators": [],
+        "timelineEditors": [
+          {
+            "type": "DOPESHEET_EDITOR",
+            "uiType": "TIMELINE",
+            "width": 1224,
+            "height": 69
+          }
+        ]
+      },
+      "passed": true,
+      "method": "native_events_and_readback",
+      "screenshot": {
+        "path": "shortcut-mode-13-camera-border-rmb.png",
+        "sha256": "fc29071557c1cd9c3efd44a8764fe63850ddc364aacc205d7bf1740bb450122d",
+        "width": 1494,
+        "height": 1019,
+        "recordedAt": "2026-10-27T00:43:23.428Z"
+      }
+    },
+    {
+      "case": "camera-border-complete",
+      "events": [
+        "CTRL_B",
+        "LEFTMOUSE_DRAG_430_320_TO_800_580"
+      ],
+      "expected": "Observe scene border actual values",
+      "actual": {
+        "version": "5.2.1 LTS",
+        "buildHash": "9e2066aef7ef",
+        "active": "Cube",
+        "mode": "OBJECT",
+        "selected": [
+          "Cube"
+        ],
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "mesh": {
+          "vertices": 8,
+          "edges": 12,
+          "polygons": 6
+        },
+        "animation": {
+          "animationData": false,
+          "action": null,
+          "actionSlot": null,
+          "channels": [],
+          "layers": [],
+          "legacyFcurvesAvailable": false
+        },
+        "allActions": [],
+        "frame": 1,
+        "viewPerspective": "CAMERA",
+        "viewShading": "SOLID",
+        "viewRenderBorder": {
+          "enabled": true,
+          "xmin": 0.34967321157455444,
+          "xmax": 0.6519607901573181,
+          "ymin": 0.38307350873947144,
+          "ymax": 0.6726058125495911
+        },
+        "sceneRenderBorder": {
+          "enabled": true,
+          "xmin": 0.1993463933467865,
+          "xmax": 0.8039216995239258,
+          "ymin": 0.19498907029628754,
+          "ymax": 0.9502543210983276
+        },
+        "recentOperators": [
+          "VIEW3D_OT_render_border",
+          "VIEW3D_OT_render_border"
+        ],
+        "modalOperators": [],
+        "timelineEditors": [
+          {
+            "type": "DOPESHEET_EDITOR",
+            "uiType": "TIMELINE",
+            "width": 1224,
+            "height": 69
+          }
+        ]
+      },
+      "passed": null,
+      "method": "native_events_and_readback",
+      "screenshot": {
+        "path": "shortcut-mode-14-camera-border-complete.png",
+        "sha256": "a5f042dd00a05f7405a62a4d13b98a39e9b1ba158b41d8c8e2eb673d598a3d84",
+        "width": 1494,
+        "height": 1019,
+        "recordedAt": "2026-10-27T00:43:25.828Z"
+      }
+    },
+    {
+      "case": "camera-border-undo",
+      "events": [
+        "CTRL_Z"
+      ],
+      "expected": "Observe Undo, do not assume render-border undoability",
+      "actual": {
+        "version": "5.2.1 LTS",
+        "buildHash": "9e2066aef7ef",
+        "active": "Cube",
+        "mode": "OBJECT",
+        "selected": [
+          "Cube"
+        ],
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "mesh": {
+          "vertices": 8,
+          "edges": 12,
+          "polygons": 6
+        },
+        "animation": {
+          "animationData": false,
+          "action": null,
+          "actionSlot": null,
+          "channels": [],
+          "layers": [],
+          "legacyFcurvesAvailable": false
+        },
+        "allActions": [],
+        "frame": 1,
+        "viewPerspective": "CAMERA",
+        "viewShading": "SOLID",
+        "viewRenderBorder": {
+          "enabled": true,
+          "xmin": 0.34967321157455444,
+          "xmax": 0.6519607901573181,
+          "ymin": 0.38307350873947144,
+          "ymax": 0.6726058125495911
+        },
+        "sceneRenderBorder": {
+          "enabled": false,
+          "xmin": 0.0,
+          "xmax": 1.0,
+          "ymin": 0.0,
+          "ymax": 1.0
+        },
+        "recentOperators": [],
+        "modalOperators": [],
+        "timelineEditors": [
+          {
+            "type": "DOPESHEET_EDITOR",
+            "uiType": "TIMELINE",
+            "width": 1224,
+            "height": 69
+          }
+        ]
+      },
+      "passed": null,
+      "method": "native_events_and_readback",
+      "screenshot": {
+        "path": "shortcut-mode-15-camera-border-undo.png",
+        "sha256": "fc29071557c1cd9c3efd44a8764fe63850ddc364aacc205d7bf1740bb450122d",
+        "width": 1494,
+        "height": 1019,
+        "recordedAt": "2026-10-27T00:43:27.128Z"
+      }
+    },
+    {
+      "case": "camera-border-clear",
+      "events": [
+        "DEFAULT_KEYMAP_view3d.clear_render_border"
+      ],
+      "expected": "Render use_border disabled",
+      "actual": {
+        "version": "5.2.1 LTS",
+        "buildHash": "9e2066aef7ef",
+        "active": "Cube",
+        "mode": "OBJECT",
+        "selected": [
+          "Cube"
+        ],
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "mesh": {
+          "vertices": 8,
+          "edges": 12,
+          "polygons": 6
+        },
+        "animation": {
+          "animationData": false,
+          "action": null,
+          "actionSlot": null,
+          "channels": [],
+          "layers": [],
+          "legacyFcurvesAvailable": false
+        },
+        "allActions": [],
+        "frame": 1,
+        "viewPerspective": "CAMERA",
+        "viewShading": "SOLID",
+        "viewRenderBorder": {
+          "enabled": true,
+          "xmin": 0.34967321157455444,
+          "xmax": 0.6519607901573181,
+          "ymin": 0.38307350873947144,
+          "ymax": 0.6726058125495911
+        },
+        "sceneRenderBorder": {
+          "enabled": false,
+          "xmin": 0.0,
+          "xmax": 1.0,
+          "ymin": 0.0,
+          "ymax": 1.0
+        },
+        "recentOperators": [
+          "VIEW3D_OT_clear_render_border"
+        ],
+        "modalOperators": [],
+        "timelineEditors": [
+          {
+            "type": "DOPESHEET_EDITOR",
+            "uiType": "TIMELINE",
+            "width": 1224,
+            "height": 69
+          }
+        ]
+      },
+      "passed": true,
+      "method": "native_events_and_readback",
+      "screenshot": {
+        "path": "shortcut-mode-16-camera-border-clear.png",
+        "sha256": "23d2b89ca24fbd59bb4929fbcdbc1aec6acff81a13dd656b7a4d2933607343cd",
+        "width": 1494,
+        "height": 1019,
+        "recordedAt": "2026-10-27T00:43:28.428Z"
+      }
+    }
+  ]
+}

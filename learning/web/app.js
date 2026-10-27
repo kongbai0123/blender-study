@@ -115,6 +115,23 @@
     });
   }
 
+  function observationLabel(kind) {
+    switch (kind) {
+      case 'scripted_description': return '文字描述，請對照原圖';
+      case 'readback': return '狀態讀回值';
+      case 'mixed': return '混合紀錄：文字描述與讀回值';
+      default: return '觀察紀錄';
+    }
+  }
+
+  function renderWorkspaceEvidence(run) {
+    if (!Object.prototype.hasOwnProperty.call(run, 'workspaceContentsUnchanged') && !run.workspaceEvidenceNote) return '';
+    const note = typeof run.workspaceEvidenceNote === 'string' ? run.workspaceEvidenceNote.trim() : '';
+    const result = run.workspaceContentsUnchanged === true ? '一致' : run.workspaceContentsUnchanged === false ? '不同' : '未知';
+    const comparison = run.workspaceContentsUnchanged === true ? '前後快照內容一致；此比對不能證明期間未曾寫入，也不能判定寫入者。' : run.workspaceContentsUnchanged === false ? '前後快照內容不同；此比對不能判定寫入者。' : '無法由既有證據判定前後內容是否一致。';
+    return `<p class="operation-run-context"><strong>工作區內容核對</strong> ${note ? `${e(result)}。${e(note)}` : e(comparison)}</p>`;
+  }
+
   function renderOperationRun(run) {
     if (!run || run.performedBy !== 'tutor' || !Array.isArray(run.events) || !run.events.length) return '';
     const events = run.events.map((event, index) => {
@@ -122,13 +139,13 @@
       const screenshot = figure?.type === 'screenshot' && String(figure.path || '').startsWith('learning/evidence/') && /\.(png|jpe?g|webp)$/i.test(String(figure.path || ''));
       const alt = figure?.alt || 'Blender 助教操作後的實際截圖';
       const evidence = screenshot ? `<details class="operation-evidence" open><summary>本次操作後的實拍</summary><figure class="figure"><a class="figure-image-link" href="${fileUrl(figure.path)}" target="_blank" rel="noopener" aria-label="${e('查看完整原始截圖：' + alt)}"><img src="${fileUrl(figure.path)}" alt="${e(alt)}" loading="lazy">${highlightMarks(figure)}</a><figcaption><span class="figure-kind">實際截圖</span>${e(figure.caption || '')}<span class="figure-open">點圖查看完整原圖（不含標示框）</span></figcaption></figure></details>` : '';
-      return `<li class="operation-event"><div class="operation-event-meta"><span class="operation-sequence">操作 ${e(event.seq || index + 1)}</span>${event.at ? `<time datetime="${e(event.at)}">${e(date(event.at))}</time>` : ''}</div><p class="operation-action">${e(event.action || '')}</p>${event.observed ? `<p class="operation-observed"><strong>實際結果</strong> ${e(event.observed)}</p>` : ''}${event.note ? `<p class="operation-note">${e(event.note)}</p>` : ''}${evidence}</li>`;
+      return `<li class="operation-event"><div class="operation-event-meta"><span class="operation-sequence">操作 ${e(event.seq || index + 1)}</span>${event.at ? `<time datetime="${e(event.at)}">${e(date(event.at))}</time>` : ''}</div><p class="operation-action">${e(event.action || '')}</p>${event.observed ? `<p class="operation-observed"><strong>${e(observationLabel(event.observedKind))}</strong> ${e(event.observed)}</p>` : ''}${event.note ? `<p class="operation-note">${e(event.note)}</p>` : ''}${evidence}</li>`;
     }).join('');
     const journal = String(run.journal || '').startsWith('learning/journal/') && /\.md$/i.test(String(run.journal || '')) ? `<a href="${fileUrl(run.journal)}" target="_blank" rel="noopener">開啟完整操作紀錄</a>` : '';
     const outputs = (Array.isArray(run.outputFiles) ? run.outputFiles : []).filter((item) => String(item.path || '').startsWith('learning/evidence/') && /\.(stl|blend)$/i.test(String(item.path || '')));
     const outputCaption = outputs.every((item) => /\.stl$/i.test(item.path)) ? '本次助教匯出檔案 · STL 座標按毫米解讀' : '本次助教場景檔案與來源版本';
     const outputTable = outputs.length ? `<div class="version-table-wrap"><table class="version-table"><caption>${e(outputCaption)}</caption><thead><tr><th scope="col">檔案與數位尺寸</th><th scope="col">來源版本與內容指紋</th></tr></thead><tbody>${outputs.map((item) => `<tr><td><a href="${fileUrl(item.path)}" download>${e(item.path.split('/').pop())}</a><small>${e(item.dimensionsLabel || (Array.isArray(item.dimensionsMm) ? item.dimensionsMm.join(' × ') + ' mm' : ''))} · ${e(bytes(item.bytes))}</small><code title="${e(item.sha256)}">${e(String(item.sha256 || '').slice(0,16))}</code></td><td>${e(String(item.sourcePath || '').split('/').pop())}<small>來源 SHA-256</small><code title="${e(item.sourceSha256)}">${e(String(item.sourceSha256 || '').slice(0,16))}</code></td></tr>`).join('')}</tbody></table><p class="caption">這是助教示範輸出；尚未切片、列印或試配，沒有合格間隙判定。</p></div>` : '';
-    return `<section class="operation-run" aria-label="助教實際操作紀錄"><div class="operation-run-heading"><h4>助教實際操作紀錄</h4><span class="operation-run-status">${run.status === 'completed' ? '本次操作已執行完成' : '依序執行中'}</span></div><p class="operation-run-context">這裡記錄助教直接操作 Blender 的動作與結果；學員完成度仍以你的確認為準。</p>${run.summary ? `<p class="operation-run-summary">${e(run.summary)}</p>` : ''}${outputTable}<ol class="operation-events">${events}</ol>${journal ? `<p class="operation-run-journal">${journal}</p>` : ''}</section>`;
+    return `<section class="operation-run" aria-label="助教實際操作紀錄"><div class="operation-run-heading"><h4>助教實際操作紀錄</h4><span class="operation-run-status">${run.status === 'completed' ? '本次操作已執行完成' : '依序執行中'}</span></div><p class="operation-run-context">這裡分別標示助教的文字描述、狀態讀回值或混合紀錄；未分類時只標示觀察紀錄。原始截圖與紀錄供核對，不能代替學員確認、幾何檢查或實體合格證據。</p>${run.summary ? `<p class="operation-run-summary">${e(run.summary)}</p>` : ''}${renderWorkspaceEvidence(run)}${outputTable}<ol class="operation-events">${events}</ol>${journal ? `<p class="operation-run-journal">${journal}</p>` : ''}</section>`;
   }
 
   function renderPreviousOperationRuns(runs) {
@@ -206,9 +223,28 @@
     return `<section class="parameter-plan audit-review" aria-label="獨立審查補充"><h4>審查補充 · ${e(review.reviewedOn)}</h4><p>${e(review.summary)}</p>${findings ? `<ul>${findings}</ul>` : ''}<p class="caption">${report} · ${link(review.recordPath, '查核範圍與證據（JSON）')}</p></section>`;
   }
 
+  function shortcutEvidencePath(value) {
+    if (typeof value !== 'string' || !value.startsWith('learning/evidence/') || /[\\%?#\u0000-\u0020]/.test(value)) return false;
+    const parts = value.split('/');
+    return parts.every((part) => part && !part.startsWith('.') && /^[A-Za-z0-9_.-]+$/.test(part)) && /\.(png|jpe?g|webp|json)$/i.test(value);
+  }
+
+  function renderShortcut(shortcut) {
+    if (!shortcut || typeof shortcut !== 'object' || Array.isArray(shortcut) || typeof shortcut.keys !== 'string' || !shortcut.keys.trim() || typeof shortcut.effect !== 'string' || !shortcut.effect.trim()) return '';
+    const evidence = (Array.isArray(shortcut.evidence) ? shortcut.evidence : []).filter((item) => item && shortcutEvidencePath(item.path) && /^[a-f0-9]{64}$/i.test(item.sha256 || '') && typeof item.method === 'string' && item.method.trim());
+    // 沒有可連回的驗證依據時，不把候選按鍵顯示成已核對的快速方法。
+    if (!evidence.length) return '';
+    const notes = (values, label) => {
+      const items = (Array.isArray(values) ? values : []).filter((value) => typeof value === 'string' && value.trim());
+      return items.length ? `<div class="shortcut-notes"><strong>${e(label)}</strong><ul>${items.map((value) => `<li>${e(value)}</li>`).join('')}</ul></div>` : '';
+    };
+    const references = evidence.map((item) => `<li><a href="${fileUrl(item.path)}" target="_blank" rel="noopener">${e(typeof item.label === 'string' && item.label.trim() ? item.label : item.path.split('/').pop())}</a><span class="shortcut-evidence-method">${e(item.method)}</span><code>SHA-256 ${e(item.sha256)}</code></li>`).join('');
+    return `<aside class="guide-shortcut" aria-label="快速方法"><h4>快速方法</h4><p class="shortcut-keys"><kbd>${e(shortcut.keys)}</kbd></p><p class="shortcut-effect">${e(shortcut.effect)}</p>${notes(shortcut.requirements, '操作前')}${notes(shortcut.cautions, '注意')}<details class="shortcut-evidence"><summary>驗證依據</summary><ul>${references}</ul></details></aside>`;
+  }
+
   function renderStep(lesson, step) {
     const index = stepIndex(lesson, step);
-    const guide = Array.isArray(step.guide) && step.guide.length ? `<ol class="guide-list">${step.guide.map((item, i) => `<li class="guide-item"><span class="guide-number" aria-hidden="true">${e(item.mark || i + 1)}</span><div class="guide-copy">${item.where ? `<div class="guide-where">${e(item.where)}</div>` : ''}<p class="guide-action">${e(item.do || item.action || '')}</p>${item.see ? `<p class="guide-see"><strong>你會看到</strong> ${e(item.see)}</p>` : ''}</div></li>`).join('')}</ol>` : `<div class="guide-item"><span class="guide-number" aria-hidden="true">1</span><p class="guide-action">${e(text(step.action))}</p></div>`;
+    const guide = Array.isArray(step.guide) && step.guide.length ? `<ol class="guide-list">${step.guide.map((item, i) => `<li class="guide-item"><span class="guide-number" aria-hidden="true">${e(item.mark || i + 1)}</span><div class="guide-copy">${item.where ? `<div class="guide-where">${e(item.where)}</div>` : ''}<p class="guide-action">${e(item.do || item.action || '')}</p>${item.see ? `<p class="guide-see"><strong>你會看到</strong> ${e(item.see)}</p>` : ''}${renderShortcut(item.shortcut)}</div></li>`).join('')}</ol>` : `<div class="guide-item"><span class="guide-number" aria-hidden="true">1</span><p class="guide-action">${e(text(step.action))}</p></div>`;
     // 只顯示專案 evidence 中的實際截圖；不使用示意圖。
     const review = (step.contentReview?.summary ? `<p class="caption content-review">內容核對：${e(step.contentReview.summary)}</p>` : '') + renderAuditReview(step.auditReview);
     const figures = (step.figures || []).filter((figure) => figure.type === 'screenshot' && String(figure.path || '').startsWith('learning/evidence/') && /\.(png|jpe?g|webp)$/i.test(String(figure.path || ''))).map((figure) => {

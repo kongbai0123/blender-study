@@ -1,0 +1,305 @@
+{
+ "scenario": "D:\\others\\study\\Blender-Learning\\learning\\tutor\\scenarios\\shortcut_keyboard_probe.py",
+ "blender": "5.2.1 LTS",
+ "buildHash": "9e2066aef7ef",
+ "records": [
+  {
+   "seq": 1,
+   "step": "01-06",
+   "slug": "main-one-no-emulation",
+   "recordedAt": "2026-10-27T00:28:13.046Z",
+   "action": "Emulate Numpad 關閉時按主鍵盤上排 1，核對視角不會切成 Front。",
+   "observed": {
+    "viewPerspective": "PERSP",
+    "viewRotation": [
+     0.7123758792877197,
+     0.4410620927810669,
+     0.28735825419425964,
+     0.4641229212284088
+    ],
+    "viewLocation": [
+     -0.020693248137831688,
+     -0.04602546989917755,
+     0.0006694307667203248
+    ],
+    "viewDistance": 18.38804817199707,
+    "emulateNumpad": false,
+    "selected": [
+     "Cube"
+    ]
+   },
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "01-06-01-main-one-no-emulation.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "e13488de369a02a0437d128539be91c82e2941e5d93b43f48052bd063056d676"
+  },
+  {
+   "seq": 2,
+   "step": "01-06",
+   "slug": "numpad-one-front",
+   "recordedAt": "2026-10-27T00:28:14.746Z",
+   "action": "同樣設定下按數字鍵盤 1，切到 Front Orthographic。",
+   "observed": {
+    "viewPerspective": "ORTHO",
+    "viewRotation": [
+     0.7071067690849304,
+     0.7071067690849304,
+     -0.0,
+     -0.0
+    ],
+    "viewLocation": [
+     -0.020693248137831688,
+     -0.04602546989917755,
+     0.0006694307667203248
+    ],
+    "viewDistance": 18.38804817199707,
+    "emulateNumpad": false,
+    "selected": [
+     "Cube"
+    ]
+   },
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "01-06-02-numpad-one-front.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "dc5f58b6c89337c9fc28c5f171a95d46d6a260e5110ed162e7fa372750b8529f"
+  },
+  {
+   "seq": 3,
+   "step": "01-06",
+   "slug": "numpad-three-right",
+   "recordedAt": "2026-10-27T00:28:16.546Z",
+   "action": "數字鍵盤 3 切到 Right Orthographic，供模擬設定對照。",
+   "observed": {
+    "viewPerspective": "ORTHO",
+    "viewRotation": [
+     0.5,
+     0.5,
+     0.5,
+     0.5
+    ],
+    "viewLocation": [
+     -0.020693248137831688,
+     -0.04602546989917755,
+     0.0006694307667203248
+    ],
+    "viewDistance": 18.38804817199707,
+    "emulateNumpad": false,
+    "selected": [
+     "Cube"
+    ]
+   },
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "01-06-03-numpad-three-right.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "54ceae9599edf522d15b0858e1c9856f83bfa1506d2bfa14f7eeba299809956e"
+  },
+  {
+   "seq": 4,
+   "step": "01-06",
+   "slug": "emulate-checkbox-before",
+   "recordedAt": "2026-10-27T00:28:18.946Z",
+   "action": "隔離 Preferences 的 Input 頁中，Emulate Numpad 尚未勾選。",
+   "observed": {
+    "viewPerspective": "ORTHO",
+    "viewRotation": [
+     0.5,
+     0.5,
+     0.5,
+     0.5
+    ],
+    "viewLocation": [
+     -0.020693248137831688,
+     -0.04602546989917755,
+     0.0006694307667203248
+    ],
+    "viewDistance": 18.38804817199707,
+    "emulateNumpad": false,
+    "selected": [
+     "Cube"
+    ]
+   },
+   "window": "PREFERENCES",
+   "highlights": [],
+   "clicks": [],
+   "file": "01-06-04-emulate-checkbox-before.png",
+   "width": 840,
+   "height": 550,
+   "sha256": "69e216564052458e430d7a1d39fad6bd5cb4cc64ed53fa55eec3135256cd7b50",
+   "note": "只有 Preferences 的 active_section 由 Python 設為 INPUT 以顯示頁面；輸入設定仍由下一步真實點擊改變。"
+  },
+  {
+   "seq": 5,
+   "step": "01-06",
+   "slug": "emulate-checkbox-after",
+   "recordedAt": "2026-10-27T00:28:20.047Z",
+   "action": "點 Keyboard 下的 Emulate Numpad 方框；只作用於隔離示範，不按 Save Preferences。",
+   "observed": {
+    "viewPerspective": "ORTHO",
+    "viewRotation": [
+     0.5,
+     0.5,
+     0.5,
+     0.5
+    ],
+    "viewLocation": [
+     -0.020693248137831688,
+     -0.04602546989917755,
+     0.0006694307667203248
+    ],
+    "viewDistance": 18.38804817199707,
+    "emulateNumpad": true,
+    "selected": [
+     "Cube"
+    ]
+   },
+   "window": "PREFERENCES",
+   "highlights": [],
+   "clicks": [],
+   "file": "01-06-05-emulate-checkbox-after.png",
+   "width": 840,
+   "height": 550,
+   "sha256": "65bdd2277c262727618ab05fb38531c55516590581977a2a753c88f12edda240"
+  },
+  {
+   "seq": 6,
+   "step": "01-06",
+   "slug": "main-one-emulated-observation",
+   "recordedAt": "2026-10-27T00:28:22.447Z",
+   "action": "開啟 Emulate Numpad 後送主鍵盤上排 1 事件；核對實際視角，不預設模擬事件有經過實體鍵盤的重映射。",
+   "observed": {
+    "viewPerspective": "ORTHO",
+    "viewRotation": [
+     0.5,
+     0.5,
+     0.5,
+     0.5
+    ],
+    "viewLocation": [
+     -0.020693248137831688,
+     -0.04602546989917755,
+     0.0006694307667203248
+    ],
+    "viewDistance": 18.38804817199707,
+    "emulateNumpad": true,
+    "selected": [
+     "Cube"
+    ]
+   },
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "01-06-06-main-one-emulated-observation.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "54ceae9599edf522d15b0858e1c9856f83bfa1506d2bfa14f7eeba299809956e"
+  },
+  {
+   "seq": 7,
+   "step": "01-06",
+   "slug": "main-one-unicode-observation",
+   "recordedAt": "2026-10-27T00:28:24.347Z",
+   "action": "同設定再送含 unicode=1 的主 ONE 事件作對照，仍只記實際結果。",
+   "observed": {
+    "viewPerspective": "ORTHO",
+    "viewRotation": [
+     0.5,
+     0.5,
+     0.5,
+     0.5
+    ],
+    "viewLocation": [
+     -0.020693248137831688,
+     -0.04602546989917755,
+     0.0006694307667203248
+    ],
+    "viewDistance": 18.38804817199707,
+    "emulateNumpad": true,
+    "selected": [
+     "Cube"
+    ]
+   },
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "01-06-07-main-one-unicode-observation.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "54ceae9599edf522d15b0858e1c9856f83bfa1506d2bfa14f7eeba299809956e"
+  },
+  {
+   "seq": 8,
+   "step": "01-06",
+   "slug": "main-period-pivot",
+   "recordedAt": "2026-10-27T00:28:25.247Z",
+   "action": "主鍵盤句點鍵是 Pivot Point 選單；Emulate Numpad 不把它變成 Numpad Decimal。",
+   "observed": {
+    "viewPerspective": "ORTHO",
+    "viewRotation": [
+     0.5,
+     0.5,
+     0.5,
+     0.5
+    ],
+    "viewLocation": [
+     -0.020693248137831688,
+     -0.04602546989917755,
+     0.0006694307667203248
+    ],
+    "viewDistance": 18.38804817199707,
+    "emulateNumpad": true,
+    "selected": [
+     "Cube"
+    ]
+   },
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "01-06-08-main-period-pivot.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "6d924407248acfb8052c9fa9dbff489a0d7c50dcb425bc149d92c8a7fd431c6b"
+  },
+  {
+   "seq": 9,
+   "step": "01-06",
+   "slug": "numpad-period-framed",
+   "recordedAt": "2026-10-27T00:28:27.447Z",
+   "action": "數字鍵盤小數點仍是 Frame Selected，核對視角距離。",
+   "observed": {
+    "viewPerspective": "ORTHO",
+    "viewRotation": [
+     0.5,
+     0.5,
+     0.5,
+     0.5
+    ],
+    "viewLocation": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "viewDistance": 2.650333881378174,
+    "emulateNumpad": true,
+    "selected": [
+     "Cube"
+    ]
+   },
+   "window": "main",
+   "highlights": [],
+   "clicks": [],
+   "file": "01-06-09-numpad-period-framed.png",
+   "width": 1494,
+   "height": 1019,
+   "sha256": "fd8934a3785d638bd98bc128beb3279b81390a775f373d891880dae2ccb32ead"
+  }
+ ]
+}
