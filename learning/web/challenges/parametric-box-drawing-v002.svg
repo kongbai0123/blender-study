@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1440" role="img" aria-labelledby="title desc">
+<title id="title">第 08 章｜固定基準盒體與上蓋</title><desc id="desc">依固定 80×50 版本已驗證的 Body、Body.001 切割體及 Cube 上蓋頂點界限製作的名義尺寸圖。</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#244c6b"/></marker>
+<pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line y2="8" stroke="#82909a" stroke-width="1"/></pattern></defs>
+<style>text{font-family:Microsoft JhengHei,Noto Sans TC,sans-serif;fill:#173247} .edge{fill:none;stroke:#142c3a;stroke-width:2.4} .dim{fill:none;stroke:#244c6b;stroke-width:1.2} .center{fill:none;stroke:#57778d;stroke-width:1.1;stroke-dasharray:12 5 3 5} .num{fill:#244c6b;font-size:20px} .small{font-size:19px} .minor{font-size:17px} .head{font-size:25px;font-weight:700}</style>
+<rect width="1800" height="1440" fill="white"/><rect x="22" y="22" width="1756" height="1396" fill="none" stroke="#173247" stroke-width="3"/>
+<text x="50" y="60" font-size="29" font-weight="700">第 08 章｜固定基準盒體與上蓋</text>
+<text x="50" y="90" class="small">教學草案 · 標示值為名義尺寸 · 單位 mm · 不作正式製造／驗收圖</text>
+<text class="head" x="170" y="130">Body 盒體俯視</text>
+<text class="head" x="1010" y="130">Cube 上蓋底視（環唇）</text>
+<rect class="edge" x="170.000" y="215.000" width="560.000" height="350.000"/>
+<rect class="edge" x="184.000" y="229.000" width="532.000" height="322.000"/>
+<path class="dim" d="M170.000 215.000 V159.000 M730.000 215.000 V159.000"/><line class="dim" x1="170.000" y1="159.000" x2="730.000" y2="159.000" marker-start="url(#arrow)" marker-end="url(#arrow)"/><text class="num" x="450.000" y="152.000" text-anchor="middle">80</text>
+<path class="dim" d="M184.000 229.000 V188.000 M716.000 229.000 V188.000"/><line class="dim" x1="184.000" y1="188.000" x2="716.000" y2="188.000" marker-start="url(#arrow)" marker-end="url(#arrow)"/><text class="num" x="450.000" y="181.000" text-anchor="middle">76</text>
+<path class="dim" d="M170.000 215.000 H113.000 M170.000 565.000 H113.000"/><line class="dim" x1="113.000" y1="215.000" x2="113.000" y2="565.000" marker-start="url(#arrow)" marker-end="url(#arrow)"/><text class="num" x="105.000" y="390.000" text-anchor="middle" transform="rotate(-90 105.000 390.000)">50</text>
+<path class="dim" d="M184.000 229.000 H141.000 M184.000 551.000 H141.000"/><line class="dim" x1="141.000" y1="229.000" x2="141.000" y2="551.000" marker-start="url(#arrow)" marker-end="url(#arrow)"/><text class="num" x="133.000" y="390.000" text-anchor="middle" transform="rotate(-90 133.000 390.000)">46</text>
+<rect class="edge" x="1010.004" y="215.002" width="559.993" height="349.996"/>
+<rect class="edge" x="1025.403" y="230.402" width="529.193" height="319.196"/>
+<rect class="edge" x="1039.403" y="244.402" width="501.193" height="291.196"/>
+<path class="dim" d="M1010.000 215.000 V159.000 M1570.000 215.000 V159.000"/><line class="dim" x1="1010.000" y1="159.000" x2="1570.000" y2="159.000" marker-start="url(#arrow)" marker-end="url(#arrow)"/><text class="num" x="1290.000" y="152.000" text-anchor="middle">80（名義）</text>
+<path class="dim" d="M1025.403 230.402 V188.000 M1554.597 230.402 V188.000"/><line class="dim" x1="1025.403" y1="188.000" x2="1554.597" y2="188.000" marker-start="url(#arrow)" marker-end="url(#arrow)"/><text class="num" x="1290.000" y="181.000" text-anchor="middle">75.6（名義）</text>
+<path class="dim" d="M1010.000 215.000 H955.000 M1010.000 565.000 H955.000"/><line class="dim" x1="955.000" y1="215.000" x2="955.000" y2="565.000" marker-start="url(#arrow)" marker-end="url(#arrow)"/><text class="num" x="947.000" y="390.000" text-anchor="middle" transform="rotate(-90 947.000 390.000)">50（名義）</text>
+<path class="dim" d="M1025.403 230.402 H982.000 M1025.403 549.598 H982.000"/><line class="dim" x1="982.000" y1="230.402" x2="982.000" y2="549.598" marker-start="url(#arrow)" marker-end="url(#arrow)"/><text class="num" x="974.000" y="390.000" text-anchor="middle" transform="rotate(-90 974.000 390.000)">45.6（名義）</text>
+<line class="center" x1="87" y1="390" x2="790" y2="390"/><line class="dim" x1="90" y1="410" x2="90" y2="370" marker-end="url(#arrow)"/><line class="dim" x1="790" y1="410" x2="790" y2="370" marker-end="url(#arrow)"/><text class="num" x="70" y="367">A</text><text class="num" x="798" y="367">A</text>
+<text class="head" x="170" y="680">A–A 中央剖面（Y = 25 mm，沿 +Y 觀看）</text>
+<path d="M200 810 H220 V1090 H980 V810 H1000 V1110 H200 Z" fill="url(#hatch)" stroke="#142c3a" stroke-width="2"/>
+<path d="M200.005 790 H999.995 V810 H977.9949999999999 V850 H957.9949999999999 V810 H242.005 V850 H222.005 V810 H200.005 Z" fill="url(#hatch)" stroke="#496e86" stroke-width="2"/>
+<path class="dim" d="M200.000 1110.000 V1155.000 M1000.000 1110.000 V1155.000"/><line class="dim" x1="200.000" y1="1155.000" x2="1000.000" y2="1155.000" marker-start="url(#arrow)" marker-end="url(#arrow)"/><text class="num" x="600.000" y="1148.000" text-anchor="middle">80</text>
+<path class="dim" d="M1000.000 810.000 H1065.000 M1000.000 1110.000 H1065.000"/><line class="dim" x1="1065.000" y1="810.000" x2="1065.000" y2="1110.000" marker-start="url(#arrow)" marker-end="url(#arrow)"/><text class="num" x="1057.000" y="960.000" text-anchor="middle" transform="rotate(-90 1057.000 960.000)">30</text>
+<path class="dim" d="M980.000 810.000 H1035.000 M980.000 1090.000 H1035.000"/><line class="dim" x1="1035.000" y1="810.000" x2="1035.000" y2="1090.000" marker-start="url(#arrow)" marker-end="url(#arrow)"/><text class="num" x="1027.000" y="950.000" text-anchor="middle" transform="rotate(-90 1027.000 950.000)">28</text>
+<text class="small" x="1075" y="808">上蓋板厚名義 2；環唇向下 4，唇壁名義厚 2。</text>
+<text class="small" x="1075" y="844">盒壁及底厚名義 2；內腔 76 × 46 × 28。</text>
+<text class="small" x="1075" y="880">盒口內寬 76；唇外名義寬 75.6。</text>
+<text class="small" x="1075" y="916">名義總間隙 0.4；置中每側約 0.2，僅為試驗值。</text>
+<text class="small" x="1075" y="952">真實頂點有約 0.0005 mm 建模殘差；標註為名義值。</text>
+<text class="small" x="1075" y="988">此為固定基準幾何，不代表本圖已建立自動連動。</text>
+<text class="small" x="1075" y="1024">原生欄位可繞過受控面板；更新／幾何需另行核對。</text>
+<text class="small" x="1075" y="1060">未做完整干涉、實體列印、量測及試配。</text>
+<line x1="22" y1="1200" x2="1778" y2="1200" stroke="#173247" stroke-width="2"/>
+<text class="minor" x="50" y="1233">Body 盒體、Body.001 切割體與 Cube 上蓋頂點讀值：fixed-lid-mesh-verification-v001.json　SHA 3c4829f5b1ac0101…</text>
+<text class="minor" x="50" y="1260">來源 Blender 固定版本 manual_box_lid_fixed_80x50_v001.blend　SHA c870ffe0366bee23…；兩件非學員作品。</text>
+<text class="minor" x="50" y="1287">實體公差、材料、製程、強度與配合：待定。標註按 mm，畫面比例隨縮放，不可量螢幕。</text>
+<line x1="22" y1="1320" x2="1778" y2="1320" stroke="#173247" stroke-width="1.5"/>
+<text class="minor" x="50" y="1353">圖號 PARAM-BOX-EDU-001　　版次 v002　　單位 mm　　比例：隨螢幕縮放　　製造核准：待定</text>
+<text class="minor" x="50" y="1383">此圖僅用於理解固定基準與名義尺寸；參數連動的各狀態須另依示範讀值核對。</text></svg>

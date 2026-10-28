@@ -24,6 +24,26 @@ FILE_EXTENSIONS = {".svg", ".png", ".jpg", ".jpeg", ".webp", ".gif", ".blend", "
                    ".stl", ".obj", ".mtl", ".3mf", ".ply", ".pdf", ".txt", ".md", ".json"}
 
 
+
+CHALLENGE_PAGES = ("/challenges/index.html", "/challenges/app.js", "/challenges/app.css",
+                   "/pilot/box-lesson.html", "/pilot/box-lesson.css")
+
+
+def challenge_assets():
+    """目前題目資料（manage.CHALLENGES）引用的工程圖與動畫網址。"""
+    try:
+        data = manage.read_json(manage.CHALLENGES)
+    except (OSError, ValueError):
+        return set()
+    paths = set()
+    for item in data.get("chapters", []) if isinstance(data, dict) else []:
+        for key in ("drawing", "animation"):
+            value = item.get(key) if isinstance(item, dict) else None
+            path = value.get("path") if isinstance(value, dict) else None
+            if isinstance(path, str) and re.fullmatch(r"/(?:challenges|pilot)/[a-z0-9-]+\.(?:svg|gif)", path):
+                paths.add(path)
+    return paths
+
 class RequestError(ValueError):
     def __init__(self, message, status=400):
         super().__init__(message)
@@ -67,18 +87,35 @@ def workspace_for(catalog, progress, lesson_id):
     return path
 
 
+def engineering_workspace_for(workspace_id):
+    if workspace_id not in manage.ENGINEERING_WORKSPACES:
+        raise ValueError("不支援的工程工作區。")
+    path = (manage.PROJECT / manage.ENGINEERING_WORKSPACES[workspace_id]).resolve()
+    path.relative_to((manage.LEARNING / "workspaces").resolve())
+    if not path.is_dir():
+        raise ValueError("工程工作區尚未建立；請先執行 python learning/manage.py engineering-workspace。")
+    return path
+
+
 def learning_files(catalog, progress):
     files = []
     registered = {manage.path_key(item["path"]): item for item in progress["fileVersions"]}
+    workspaces = []
     for lesson in catalog["lessons"]:
         # catalog 剛加入、尚未用 add-lessons 補進進度的單元沒有工作區；略過而不讓整頁讀取失敗。
         if lesson["id"] not in progress["lessons"]:
             continue
         try:
-            workspace = workspace_for(catalog, progress, lesson["id"])
+            workspaces.append(workspace_for(catalog, progress, lesson["id"]))
         except ValueError:
             # 工作區資料夾被刪除或設定不正確時，只略過該單元的檔案清單，不讓整頁讀取失敗。
             continue
+    for workspace_id in manage.ENGINEERING_WORKSPACES:
+        try:
+            workspaces.append(engineering_workspace_for(workspace_id))
+        except ValueError:
+            continue
+    for workspace in workspaces:
         for folder, directories, names in os.walk(workspace, followlinks=False):
             directories[:] = sorted(name for name in directories
                                      if not (Path(folder) / name).is_symlink())
@@ -137,8 +174,13 @@ def blender_executable():
 
 def open_target(payload):
     catalog, progress = manage.load_state()
-    workspace = workspace_for(catalog, progress, payload.get("lessonId"))
     target = payload.get("target")
+    if payload.get("workspaceId") is not None:
+        if target != "workspace":
+            raise ValueError("工程工作區只能開啟資料夾。")
+        workspace = engineering_workspace_for(payload.get("workspaceId"))
+    else:
+        workspace = workspace_for(catalog, progress, payload.get("lessonId"))
     if target not in ("workspace", "blender"):
         raise ValueError("target 必須是 workspace 或 blender。")
     if os.name != "nt":
@@ -204,12 +246,32 @@ class Handler(BaseHTTPRequestHandler):
                 catalog, progress = manage.load_state()
                 return self.send_json({"projectRoot": str(manage.PROJECT), "catalog": catalog,
                                        "progress": progress, "files": learning_files(catalog, progress),
-                                       "journal": learning_journal()})
+                                       "journal": learning_journal(),
+                                       "engineeringWorkspaces": manage.ENGINEERING_WORKSPACES,
+                                       "legacyEngineeringNotes": manage.legacy_engineering_records(progress)})
             if route == "/api/export":
                 _, progress = manage.load_state()
                 return self.send_json(progress, extra={"Content-Disposition": 'attachment; filename="Blender-learning-progress.json"'})
-            if route in ("/", "/index.html", "/app.js", "/app.css"):
+            if route in ("/", "/index.html", "/app.js", "/app.css", "/engineering-path.js"):
                 return self.file(WEB / ("index.html" if route in ("/", "/index.html") else route[1:]))
+            # 工程教材以固定網址提供目前版本；版本只在 manage.py 指定，歷史版本不經網頁提供。
+            if route == "/engineering-path.json":
+                return self.file(manage.ENGINEERING_PATH)
+            if route == "/engineering-curriculum.json":
+                return self.file(manage.ENGINEERING_CURRICULUM)
+            if route == "/challenges/manifest.json":
+                return self.file(manage.CHALLENGES)
+            # 練習題頁只提供固定的頁面檔，以及目前題目資料引用的工程圖與動畫；歷史版本不經網頁提供。
+            if route in CHALLENGE_PAGES or route in challenge_assets():
+                folder = route.split("/")[1]
+                root = (WEB / folder).resolve()
+                asset = (root / route.rsplit("/", 1)[1]).resolve()
+                try:
+                    root.relative_to(WEB.resolve())
+                    asset.relative_to(root)
+                except ValueError:
+                    raise RequestError("題目資源超出允許範圍。", 403) from None
+                return self.file(asset)
             if route.startswith("/reports/"):
                 name = route[len("/reports/"):]
                 if not re.fullmatch(r"[a-z0-9][a-z0-9-]*\.(?:html|css)", name):
@@ -285,12 +347,32 @@ class Handler(BaseHTTPRequestHandler):
                     progress = manage.mutate(action, lesson, revision, step=payload.get("stepId"),
                                              note=payload.get("note"), note_kind=payload.get("noteKind", "note"),
                                              author="learner")
+                elif action == "engineering_confirm":
+                    progress = manage.mutate(action, None, revision, chapter=payload.get("chapterId"),
+                                             step=payload.get("stepId"), evidence=payload.get("evidence"))
+                elif action == "engineering_note":
+                    progress = manage.mutate(action, None, revision, chapter=payload.get("chapterId"),
+                                             step=payload.get("stepId"), note=payload.get("note"),
+                                             note_kind=payload.get("noteKind", "note"), author="learner")
+                elif action == "pilot_confirm":
+                    progress = manage.mutate(action, None, revision, challenge=payload.get("challengeId"),
+                                             evidence=payload.get("evidence"), source_path=payload.get("sourcePath"))
+                elif action == "pilot_note":
+                    progress = manage.mutate(action, None, revision, challenge=payload.get("challengeId"),
+                                             note=payload.get("note"), author="learner")
+                elif action == "challenge_confirm":
+                    progress = manage.mutate(action, None, revision, challenge=payload.get("challengeId"),
+                                             evidence=payload.get("evidence"), source_path=payload.get("sourcePath"))
+                elif action == "challenge_note":
+                    progress = manage.mutate(action, None, revision, challenge=payload.get("challengeId"),
+                                             note=payload.get("note"), author="learner")
                 else:
                     raise RequestError("不支援的進度操作。")
                 return self.send_json({"progress": progress})
             if route == "/api/register-file":
                 progress = manage.mutate("register_file", lesson, revision, path=payload.get("path"),
-                                         role=payload.get("role"), source=payload.get("source"))
+                                         role=payload.get("role"), source=payload.get("source"),
+                                         workspace=payload.get("workspaceId"))
                 return self.send_json({"progress": progress})
             raise RequestError("找不到這個操作。", 404)
         except RequestError as error:

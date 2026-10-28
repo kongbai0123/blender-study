@@ -134,6 +134,12 @@ class Publication:
                     return "Windows Recent inventory embedded in raw metadata"
         if name == "runner-status.json":
             return "raw runner-status kept local by publication policy"
+        # 2026-10-28 的動畫採樣與 Blender 探測：原始影格、讀值與執行紀錄含本機路徑；公開 GIF、前後原圖與去識別摘要即可。
+        if "/2026-10-28-pilot-box-move-record-v001/" in rel:
+            return "failed animation sampling run kept local"
+        if re.search(r"/2026-10-28-(?:pilot-box-move-record|boss-box-join-trial|closed-external-thread-probe)-v\d{3}/", rel) and (
+                name.startswith(("frame-", "gif-")) or name in {"frames.json", "run.json"}):
+            return "raw sampling frames or run record with local paths; the GIF, before/after screenshots and public summaries are published instead"
         return None
 
     def derivative(self, rel: str) -> str | None:

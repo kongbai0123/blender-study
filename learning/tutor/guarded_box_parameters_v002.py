@@ -1,0 +1,455 @@
+"""數位尺寸預檢與可選的 Blender 受控輸入面板（v004 試作專用）。
+
+在 Blender 的 Scripting 工作區以 Text Editor 開啟本檔並 Run Script，然後
+3D Viewport 側欄的「盒尺寸預檢」面板可一次修改一個參數。
+此工具不會攔截 CAD Sketcher 或 Scene 原生欄位的直接修改，也不會存檔。
+檢查為數位模型的必要條件，不是完整干涉、切片、強度或實體配合驗證。
+"""
+import json
+import math
+import os
+import stat
+import struct
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[2]
+WORKSPACE = ROOT / 'learning' / 'workspaces' / 'engineering-parametric'
+PROGRESS = ROOT / 'learning' / 'progress.json'
+
+# 唯一適用對象是 2026-10-27 parametric-box-v004 所衍生且保留這兩個約束 ID 的個人副本。
+FIELDS = {
+    'L': ('長度 L', 'slvs:c:b596b36138076155'),
+    'W': ('寬度 W', 'slvs:c:854e8777cfe2608d'),
+    'H': ('盒高 H', 'box_height_mm'),
+    'T': ('側壁 T', 'box_wall_mm'),
+    'B': ('底厚 B', 'box_bottom_mm'),
+    'P': ('蓋板厚 P', 'lid_plate_mm'),
+    'D': ('唇深 D', 'lid_depth_mm'),
+    'C': ('水平總間隙 C', 'gap_total_mm'),
+    'S': ('唇壁厚 S', 'lid_lip_wall_mm'),
+}
+
+# 工具可處理的保守數值範圍，不代表製程或產品允許尺寸。
+MAX_MM = 1000.0
+MESH_ABS_TOL_MM = 0.0003  # 比較浮點模型座標，並非製造公差。
+
+
+def validate(values):
+    """Return (errors, observations). Units are mm; no manufacturing criteria.
+
+    All checks are necessary for this specific rectangular model's nominal
+    algebra. They are not sufficient to prove a correct model or printable fit.
+    """
+    errors, warnings = [], []
+    if not isinstance(values, dict) or set(values) != set(FIELDS):
+        return ['必須提供 L、W、H、T、B、P、D、C、S 九個數值。'], warnings
+    for key, (label, _) in FIELDS.items():
+        value = values[key]
+        try:
+            finite = not isinstance(value, bool) and isinstance(value, (int, float)) and math.isfinite(value)
+        except OverflowError:
+            finite = False
+        if not finite:
+            errors.append(f'{label} 必須為有限數值（mm）。')
+        elif value > MAX_MM:
+            errors.append(f'{label} 超出本工具上限 {MAX_MM:g} mm；此上限不是製造能力。')
+        elif key == 'C' and value < 0:
+            errors.append('水平總間隙 C 不能為負數。')
+        elif key != 'C' and value <= 0:
+            errors.append(f'{label} 必須大於 0 mm。')
+    if errors:
+        return errors, warnings
+    L, W, H, T, B, P, D, C, S = (values[k] for k in FIELDS)
+    # Rectangle inner opening and lip's inner opening both need positive size.
+    if L <= 2 * T or W <= 2 * T:
+        errors.append('盒口內長及內寬必須大於 0：L、W 均須大於 2×T。')
+    if L <= 2 * T + C + 2 * S or W <= 2 * T + C + 2 * S:
+        errors.append('唇邊內長及內寬必須大於 0：L、W 均須大於 2×T+C+2×S。')
+    if H <= B:
+        errors.append('盒高 H 必須大於底厚 B，才有正的內腔高度。')
+    if H - D < B:
+        errors.append('唇邊底面低於盒內底：須 H−D ≥ B，避免 Z 方向重疊。')
+    if not errors:
+        error = float32_geometry_error(values)
+        if error:
+            errors.append(error)
+    if not errors:
+        if H - D == B:
+            warnings.append('H−D=B：唇邊與盒內底在名義位置接觸；未留軸向間隙。')
+        if C == 0:
+            warnings.append('C=0：名義水平間隙為零；尚無實體配合結論。')
+        warnings.append('僅通過必要的數位尺寸條件；未驗證完整碰撞、切片、列印或配合。')
+    return errors, warnings
+
+
+def _link_in_path(root, target):
+    """Reject every symlink or Windows reparse point under the project root."""
+    base = Path(os.path.abspath(root))
+    path = Path(os.path.abspath(target))
+    parts = path.relative_to(base).parts
+    current = base
+    for part in parts:
+        current = current / part
+        st = current.lstat()
+        if stat.S_ISLNK(st.st_mode) or getattr(st, 'st_file_attributes', 0) & 0x400:
+            return True
+    return False
+
+
+def workspace_error(filepath, root=ROOT, workspace=WORKSPACE, progress=PROGRESS, link_check=_link_in_path):
+    """Fail closed outside workspace or if path is a registered checkpoint."""
+    if not filepath:
+        return '請先將個人副本另存至 engineering-parametric 工作區。'
+    try:
+        project_root = Path(root).resolve()
+        raw_workspace = Path(os.path.abspath(workspace))
+        raw_progress = Path(os.path.abspath(progress))
+        raw_path = Path(os.path.abspath(filepath))
+        if raw_workspace != project_root / 'learning' / 'workspaces' / 'engineering-parametric' or raw_progress != project_root / 'learning' / 'progress.json':
+            return '工作區或進度檔路徑不符合預期。'
+        for target in (raw_workspace, raw_progress, raw_path):
+            if link_check(project_root, target):
+                return '工作區、檔案或進度路徑包含連結／重新剖析點；拒絕修改。'
+        path = raw_path.resolve()
+        workspaces_root = (project_root / 'learning' / 'workspaces').resolve()
+        workspaces_root.relative_to(project_root)
+        Path(workspace).resolve().relative_to(workspaces_root)
+        evidence = (project_root / 'learning' / 'evidence').resolve()
+        for candidate in (workspaces_root, Path(workspace).resolve(), path, raw_progress.resolve()):
+            if candidate == evidence or evidence in candidate.parents:
+                return '路徑指向 evidence 證據區；拒絕修改。'
+    except (OSError, RuntimeError, ValueError):
+        return '無法核對共用版本清單或工作區路徑；拒絕修改。'
+    if path.suffix.lower() != '.blend' or not path.is_file():
+        return '請先另存為工作區中已存在的 .blend 個人副本。'
+    try:
+        path.relative_to(Path(workspace).resolve())
+    except ValueError:
+        return '只允許 engineering-parametric 工作區中的個人副本。'
+    try:
+        data = json.loads(Path(progress).read_text(encoding='utf-8-sig'))
+        registered = data['fileVersions']
+        if not isinstance(registered, list):
+            raise ValueError('fileVersions')
+        for entry in registered:
+            if not isinstance(entry, dict) or not isinstance(entry.get('path'), str):
+                raise ValueError('invalid fileVersions record')
+            if (Path(root) / entry['path']).resolve() == path:
+                return '此檔案已登記為版本；請先以新檔名另存。'
+    except (OSError, ValueError, KeyError, TypeError, json.JSONDecodeError):
+        return '無法核對共用版本清單，拒絕修改；請先修復進度檔。'
+    return None
+
+
+class GuardError(ValueError):
+    pass
+
+
+def float32_geometry_error(values):
+    """Require nonzero modeled boundaries to remain distinct in float32.
+
+    No arbitrary epsilon: this is a representation check, not tolerance advice.
+    """
+    L, W, H, T, B, P, D, C, S = (values[k] for k in FIELDS)
+    def f(x):
+        return struct.unpack('f', struct.pack('f', x))[0]
+    try:
+        for size in (L, W):
+            outer = (0, T, size-T, size)
+            lip = (T+C/2, T+C/2+S, size-T-C/2-S, size-T-C/2)
+            for limits in (outer, lip):
+                converted = [f(x) for x in limits]
+                if not all(math.isfinite(x) for x in converted) or not all(a < b for a, b in zip(converted, converted[1:])):
+                    return '必要壁或內腔邊界在 float32 中無法區分；拒絕修改。'
+            # Nonzero specified clearance must not round to contact.
+            if C > 0 and not (f(T) < f(T+C/2) and f(size-T-C/2) < f(size-T)):
+                return '非零名義間隙在 float32 中無法區分；拒絕修改。'
+        z0, bottom, lip_bottom, top, cover = (f(v) for v in (0, B, H-D, H, H+P))
+        if not all(math.isfinite(x) for x in (z0, bottom, lip_bottom, top, cover)) or not (z0 < bottom <= lip_bottom < top < cover):
+            return '必要高度邊界在 float32 中無法區分；拒絕修改。'
+        if H-D > B and lip_bottom <= bottom:
+            return '非零軸向間距在 float32 中無法區分；拒絕修改。'
+    except (OverflowError, struct.error):
+        return '參數超過 float32 可表示範圍；拒絕修改。'
+    return None
+
+
+def unit_error(system, scale):
+    """This particular file uses one Blender unit = one millimetre."""
+    try:
+        valid = system == 'METRIC' and math.isfinite(scale) and math.isclose(scale, 0.001, rel_tol=1e-6, abs_tol=1e-9)
+    except (TypeError, ValueError):
+        valid = False
+    return None if valid else '需要 Metric 且 Unit Scale = 0.001；拒絕修改。'
+
+
+def expected_vertices(values):
+    """World-space vertex positions for the original v004 topology only."""
+    L, W, H, T, B, P, D, C, S = (values[k] for k in FIELDS)
+    def ring(x0, x1, y0, y1, z):
+        return [(x0,y0,z), (x1,y0,z), (x1,y1,z), (x0,y1,z)]
+    x0, x1, y0, y1 = T+C/2, L-T-C/2, T+C/2, W-T-C/2
+    xi0, xi1, yi0, yi1 = x0+S, x1-S, y0+S, y1-S
+    body = (ring(0,L,0,W,0) + ring(0,L,0,W,H) +
+            ring(T,L-T,T,W-T,H) + ring(T,L-T,T,W-T,B))
+    lid = (ring(0,L,0,W,H+P) + ring(0,L,0,W,H) +
+           ring(x0,x1,y0,y1,H) + ring(x0,x1,y0,y1,H-D) +
+           ring(xi0,xi1,yi0,yi1,H-D) + ring(xi0,xi1,yi0,yi1,H))
+    return body, lid
+
+
+def geometry_error(values, body, lid, nonmanifold):
+    """Compare evaluated world-space v004 vertices and manifold edge counts.
+
+    This checks specified geometry only; not general collision or physical fit.
+    """
+    expected = expected_vertices(values)
+    if nonmanifold != (0, 0):
+        return '盒體或上蓋有非流形邊，拒絕修改。'
+    for name, actual, target in zip(('盒體', '上蓋'), (body, lid), expected):
+        if len(actual) != len(target):
+            return f'{name}求值網格頂點數不符 v004。'
+        for xyz, wanted in zip(actual, target):
+            if len(xyz) != 3 or any(not math.isfinite(x) for x in xyz):
+                return f'{name}求值頂點不是有限座標。'
+            if any(not math.isclose(a, b, rel_tol=0, abs_tol=MESH_ABS_TOL_MM) for a, b in zip(xyz, wanted)):
+                return f'{name}求值頂點與參數不符；驅動、變換或拓樸可能已改變。'
+    return None
+
+
+def _evaluated_geometry(context, values):
+    import bmesh
+    import bpy
+    dg = context.evaluated_depsgraph_get()
+    points, counts = [], []
+    for name in ('Parametric Box', 'Parametric Lid'):
+        obj = bpy.data.objects[name].evaluated_get(dg)
+        mesh = obj.to_mesh()
+        if mesh is None:
+            raise GuardError(f'{name} 無法取得求值網格。')
+        try:
+            expected_counts = (16, 28, 14) if name == 'Parametric Box' else (24, 44, 22)
+            if (len(mesh.vertices), len(mesh.edges), len(mesh.polygons)) != expected_counts:
+                raise GuardError(f'{name} 求值網格拓樸數量不符 v004。')
+            points.append([tuple(obj.matrix_world @ vertex.co) for vertex in mesh.vertices])
+            bm = bmesh.new()
+            try:
+                bm.from_mesh(mesh)
+                counts.append(sum(not edge.is_manifold for edge in bm.edges))
+            finally:
+                bm.free()
+        finally:
+            obj.to_mesh_clear()
+    return geometry_error(values, points[0], points[1], tuple(counts)), points
+
+
+def driver_change_error(old_values, new_values, before, after):
+    """Every coordinate expected to change in float32 must actually change."""
+    expected_before, expected_after = expected_vertices(old_values), expected_vertices(new_values)
+    def f(x):
+        return struct.unpack('f', struct.pack('f', x))[0]
+    for first, second, actual_before, actual_after in zip(expected_before, expected_after, before, after):
+        for a, b, c, d in zip(first, second, actual_before, actual_after):
+            for x, y, observed_x, observed_y in zip(a, b, c, d):
+                if f(x) != f(y) and f(observed_x) == f(observed_y):
+                    return '應變動的頂點未更新；可能存在失效驅動。'
+    return None
+
+
+def guarded_change(current, field, value, write, read, postcheck):
+    """Validate a one-field proposal before invoking writer; roll back on failure.
+
+    Callbacks permit independent tests without importing Blender. `postcheck`
+    must check the solver after a constraint change. No file is written here.
+    """
+    if field not in FIELDS:
+        raise GuardError('未知參數。')
+    old = dict(current)
+    before_errors, _ = validate(old)
+    if before_errors:
+        raise GuardError('目前尺寸已不符合預檢條件；先回復有效版本。')
+    candidate = dict(old)
+    candidate[field] = value
+    errors, warnings = validate(candidate)
+    if errors:
+        raise GuardError('；'.join(errors))
+    try:
+        write(field, value)
+        actual = read(field)
+        if not isinstance(actual, (int, float)) or not math.isfinite(actual) or not math.isclose(actual, value, rel_tol=1e-8, abs_tol=1e-6):
+            raise RuntimeError('修改後讀回值不一致。')
+        if not postcheck(candidate):
+            raise RuntimeError('草圖或求值網格核對失敗。')
+    except Exception as exc:
+        try:
+            write(field, old[field])
+            restored = read(field)
+            if not math.isclose(restored, old[field], rel_tol=1e-8, abs_tol=1e-6) or not postcheck(old):
+                raise RuntimeError('回復後核對失敗')
+        except Exception as rollback_exc:
+            raise GuardError(f'修改失敗（{exc}）；自動回復未確認（{rollback_exc}）。請勿存檔，重新開啟原副本。') from exc
+        raise GuardError(f'修改失敗（{exc}）；已回復原數值。') from exc
+    return candidate, warnings
+
+
+def _blender_state(context):
+    """Get the active v004-compatible sketch and parameters without writes."""
+    import importlib
+    import bpy
+
+    problem = workspace_error(bpy.data.filepath)
+    if problem:
+        raise GuardError(problem)
+    if 'bl_ext.user_default.CAD_Sketcher' not in context.preferences.addons:
+        raise GuardError('CAD Sketcher 未啟用；請勿修改。')
+    globals_module = importlib.import_module('bl_ext.user_default.CAD_Sketcher.global_data')
+    if globals_module.needs_solve:
+        raise GuardError('草圖求解尚待執行；請等待畫面更新後再操作。')
+    for name in ('Parametric Box', 'Parametric Lid'):
+        if name not in bpy.data.objects or bpy.data.objects[name].type != 'MESH':
+            raise GuardError('找不到 v004 的盒體或上蓋；此工具不適用目前場景。')
+        obj = bpy.data.objects[name]
+        if context.scene.objects.get(name) != obj:
+            raise GuardError('盒體或上蓋不屬於目前場景；拒絕修改。')
+        if obj.library or obj.override_library or obj.data.library or obj.data.override_library:
+            raise GuardError('物件或網格是外部連結／覆寫；請先建立本地個人副本。')
+    sketch_ref = importlib.import_module('bl_ext.user_default.CAD_Sketcher.model.sketch_ref')
+    sketch = sketch_ref.get_active_sketch(context)
+    if not sketch or sketch.solver_state != 'OKAY' or sketch.dof != 0:
+        raise GuardError('請進入 v004 的 Body Sketch，確認求解正常且 Fully defined。')
+    constraints = {}
+    for field in ('L', 'W'):
+        uid = FIELDS[field][1].removeprefix('slvs:c:')
+        found = [c for c in sketch.constraints.all if c.type == 'DISTANCE' and c.constraint_uid == uid and not c.is_reference]
+        if len(found) != 1:
+            raise GuardError('找不到原始長寬驅動約束；請勿使用此工具。')
+        constraints[field] = found[0]
+    scene = context.scene
+    problem = unit_error(scene.unit_settings.system, scene.unit_settings.scale_length)
+    if problem:
+        raise GuardError(problem)
+    if scene.library or scene.override_library:
+        raise GuardError('場景是外部連結／覆寫；請先建立本地個人副本。')
+    target = getattr(sketch, 'target_object', None)
+    if target and (target.library or target.override_library or target.data.library or target.data.override_library):
+        raise GuardError('草圖目標是外部連結／覆寫；拒絕修改。')
+    for _, key in FIELDS.values():
+        if key not in scene:
+            raise GuardError('缺少 v004 尺寸主控；請勿使用此工具。')
+    values = {name: (float(constraints[name].value) if name in constraints else float(scene[key]))
+              for name, (_, key) in FIELDS.items()}
+    # A direct Scene-ID-property change can desynchronise displayed constraints.
+    for name in ('L', 'W'):
+        if not math.isclose(values[name], float(scene[FIELDS[name][1]]), rel_tol=1e-8, abs_tol=1e-6):
+            raise GuardError('約束與尺寸主控不一致；請重新開啟已核對的副本。')
+    return sketch, constraints, scene, values
+
+
+try:
+    import bpy
+    from bpy.props import BoolProperty, EnumProperty, FloatProperty
+    from bpy.types import Operator, Panel
+except ModuleNotFoundError:
+    bpy = None
+
+if bpy is not None:
+    class BOX_OT_guarded_change(Operator):
+        bl_idname = 'learning_box.guarded_change_v002'
+        bl_label = '預檢後修改一項尺寸'
+        bl_description = '先檢查所有數位尺寸，再修改一項；不保證實體配合'
+        bl_options = {'REGISTER', 'UNDO'}
+        field: EnumProperty(name='參數', items=[(k, v[0], '') for k, v in FIELDS.items()])
+        value: FloatProperty(name='新數值 (mm)', default=0, precision=4)
+        acknowledged: BoolProperty(name='我已核對參數與新數值', default=False)
+
+        def invoke(self, context, event):
+            try:
+                _, _, _, values = _blender_state(context)
+                self.value = values.get(self.field, values['L'])
+                self.acknowledged = False
+            except Exception as exc:
+                self.report({'ERROR'}, str(exc))
+                return {'CANCELLED'}
+            return context.window_manager.invoke_props_dialog(self, width=420)
+
+        def draw(self, context):
+            self.layout.prop(self, 'field')
+            self.layout.prop(self, 'value')
+            try:
+                _, _, _, values = _blender_state(context)
+                self.layout.label(text=f'目前 {FIELDS[self.field][0]}：{values[self.field]:g} mm')
+            except Exception:
+                self.layout.label(text='目前值無法讀取；操作將被拒絕。', icon='ERROR')
+            self.layout.prop(self, 'acknowledged')
+            self.layout.label(text='一次一項；不攔截原生欄位直接輸入。', icon='INFO')
+            self.layout.label(text='預檢非完整干涉或實體配合判定。', icon='ERROR')
+
+        def execute(self, context):
+            try:
+                if not self.acknowledged:
+                    raise GuardError('請先核對參數與新數值並勾選確認。')
+                sketch, constraints, scene, current = _blender_state(context)
+                before_errors, _ = validate(current)
+                if before_errors:
+                    raise GuardError('目前尺寸不符預檢；先回復有效版本。')
+                problem, before = _evaluated_geometry(context, current)
+                if problem:
+                    raise GuardError('套用前：' + problem)
+
+                def write(field, value):
+                    if field in constraints:
+                        constraints[field].value = value
+                    else:
+                        scene[FIELDS[field][1]] = value
+                    scene.update_tag()
+                    context.view_layer.update()
+
+                def read(field):
+                    return float(constraints[field].value) if field in constraints else float(scene[FIELDS[field][1]])
+
+                def postcheck(values):
+                    # The add-on defers solving through depsgraph callbacks;
+                    # do not report success while a solve is still pending.
+                    import importlib
+                    state = importlib.import_module('bl_ext.user_default.CAD_Sketcher.global_data')
+                    if state.needs_solve or sketch.solver_state != 'OKAY' or sketch.dof != 0:
+                        return False
+                    for name, (_, key) in FIELDS.items():
+                        if not math.isclose(float(scene[key]), values[name], rel_tol=1e-8, abs_tol=1e-6):
+                            return False
+                    problem, after = _evaluated_geometry(context, values)
+                    if problem:
+                        return False
+                    return driver_change_error(current, values, before, after) is None
+
+                _, warnings = guarded_change(current, self.field, self.value, write, read, postcheck)
+                self.report({'INFO'}, '已修改；' + ' '.join(warnings))
+                return {'FINISHED'}
+            except Exception as exc:
+                self.report({'ERROR'}, str(exc))
+                return {'CANCELLED'}
+
+    class BOX_PT_guarded_parameters(Panel):
+        bl_label = '盒尺寸預檢 v002'
+        bl_idname = 'BOX_PT_guarded_parameters_v002'
+        bl_space_type = 'VIEW_3D'
+        bl_region_type = 'UI'
+        bl_category = '盒尺寸預檢'
+
+        def draw(self, context):
+            self.layout.label(text='v004 盒蓋個人副本專用', icon='INFO')
+            self.layout.label(text='先進入 Body Sketch；原生欄位不受攔截。')
+            self.layout.operator('learning_box.guarded_change_v002', icon='CHECKMARK')
+
+    CLASSES = (BOX_OT_guarded_change, BOX_PT_guarded_parameters)
+
+    def register():
+        for cls in CLASSES:
+            bpy.utils.register_class(cls)
+
+    def unregister():
+        for cls in reversed(CLASSES):
+            bpy.utils.unregister_class(cls)
+
+    if __name__ == '__main__':
+        register()

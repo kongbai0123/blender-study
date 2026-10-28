@@ -7,6 +7,7 @@
   <meta name="theme-color" content="#ed7a35">
   <title>Blender 邊做邊學</title>
   <link rel="stylesheet" href="/app.css">
+  <script src="/engineering-path.js" defer></script>
   <script src="/app.js" defer></script>
 </head>
 <body>
@@ -18,14 +19,13 @@
   </header>
   <div id="notice" class="notice" role="status" aria-live="polite" hidden></div>
   <div class="app-shell">
-    <aside class="course-sidebar" aria-label="單元課程導覽">
-      <div class="sidebar-heading"><div class="eyebrow">我的學習路線</div><h2><span id="completed-count">0</span><span class="muted"> / <span id="lesson-count">0</span> 單元</span></h2><progress id="overall-progress" max="22" value="0" aria-label="已確認的操作步驟"></progress><p id="overall-caption">只有你確認後，才會前進一步。</p></div>
-      <nav id="lesson-list" aria-label="單元與步驟"></nav>
-      <div class="roadmap"><span class="eyebrow">接下來的工程練習</span><strong>通用小盒</strong><p>內腔與壁厚 → 上蓋配合<br>卡榫、卡扣、螺紋與公差</p><span class="planned">尚未開始</span></div>
+    <aside class="course-sidebar" aria-label="課程章節導覽">
+      <div class="sidebar-heading chapter-sidebar-heading"><div class="eyebrow">主要教學章節</div><h2>工程學習 <span class="muted"><span id="engineering-chapter-count">—</span> 章</span></h2><p id="engineering-sidebar-progress">新版進度讀取中…</p></div>
+      <nav id="engineering-list" aria-label="新版工程章節"></nav>
       <div class="sidebar-bottom"><span id="revision-label">共用進度讀取中…</span><p>網頁與聊天讀取同一份<br><code>learning/progress.json</code></p></div>
     </aside>
     <main class="main-content" id="main-content" tabindex="-1">
-      <nav class="view-tabs" aria-label="學習頁面"><button type="button" data-view="lesson" aria-current="page">本次操作</button><button type="button" data-view="overview">單元總覽</button><button type="button" data-view="journal">學習紀錄</button><button type="button" data-view="versions">檔案版本</button></nav>
+      <nav class="view-tabs" aria-label="學習頁面"><button type="button" data-view="engineering" aria-current="page">新版教學章節</button><button type="button" data-view="journal">學習紀錄</button><button type="button" data-view="versions">檔案版本</button></nav>
       <div id="view-content" aria-busy="true"><section class="empty-state"><span class="loading-dot" aria-hidden="true"></span><h2>正在讀取你的學習進度</h2><p>準備課程、操作步驟與專案中的檔案紀錄。</p></section></div>
     </main>
   </div>

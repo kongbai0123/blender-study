@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1030" role="img" aria-labelledby="title desc">
+<title id="title">第 07 章｜XY 矩形草圖尺寸題圖</title><desc id="desc">CAD Sketcher 兩個不同版本的草圖尺寸，先 60×40 再改成 80×40 mm。</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#244c6b"/></marker>
+<pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line y2="8" stroke="#82909a" stroke-width="1"/></pattern></defs>
+<style>text{font-family:Microsoft JhengHei,Noto Sans TC,sans-serif;fill:#173247} .edge{fill:none;stroke:#142c3a;stroke-width:2.4} .dim{fill:none;stroke:#244c6b;stroke-width:1.2} .center{fill:none;stroke:#57778d;stroke-width:1.1;stroke-dasharray:12 5 3 5} .num{fill:#244c6b;font-size:20px} .small{font-size:19px} .minor{font-size:17px} .head{font-size:25px;font-weight:700}</style>
+<rect width="1600" height="1030" fill="white"/><rect x="22" y="22" width="1556" height="986" fill="none" stroke="#173247" stroke-width="3"/>
+<text x="50" y="60" font-size="29" font-weight="700">第 07 章｜XY 矩形草圖尺寸題圖</text>
+<text x="50" y="90" class="small">教學草案 · 標示值為名義尺寸 · 單位 mm · 不作正式製造／驗收圖</text>
+<text class="head" x="170" y="145">步驟 A · 原始草圖（俯視 XY）</text>
+<text class="head" x="880" y="145">步驟 B · X 修改後（俯視 XY）</text>
+<rect class="edge" x="170.000" y="220.000" width="420.000" height="280.000"/>
+<path class="dim" d="M170.000 220.000 V185.000 M590.000 220.000 V185.000"/><line class="dim" x1="170.000" y1="185.000" x2="590.000" y2="185.000" marker-start="url(#arrow)" marker-end="url(#arrow)"/><text class="num" x="380.000" y="178.000" text-anchor="middle">60</text>
+<path class="dim" d="M170.000 220.000 H130.000 M170.000 500.000 H130.000"/><line class="dim" x1="130.000" y1="220.000" x2="130.000" y2="500.000" marker-start="url(#arrow)" marker-end="url(#arrow)"/><text class="num" x="122.000" y="360.000" text-anchor="middle" transform="rotate(-90 122.000 360.000)">40</text>
+<circle cx="170" cy="500.0" r="4" fill="#a44b20"/><text class="small" x="180" y="528.0">原點 (0, 0)</text>
+<path class="dim" d="M170 548.0 h80 M170 548.0 v-70"/><text class="small" x="255" y="554.0">+X</text><text class="small" x="165" y="472.0">+Y</text>
+<rect class="edge" x="880.000" y="220.000" width="560.000" height="280.000"/>
+<path class="dim" d="M880.000 220.000 V185.000 M1440.000 220.000 V185.000"/><line class="dim" x1="880.000" y1="185.000" x2="1440.000" y2="185.000" marker-start="url(#arrow)" marker-end="url(#arrow)"/><text class="num" x="1160.000" y="178.000" text-anchor="middle">80</text>
+<path class="dim" d="M880.000 220.000 H840.000 M880.000 500.000 H840.000"/><line class="dim" x1="840.000" y1="220.000" x2="840.000" y2="500.000" marker-start="url(#arrow)" marker-end="url(#arrow)"/><text class="num" x="832.000" y="360.000" text-anchor="middle" transform="rotate(-90 832.000 360.000)">40</text>
+<circle cx="880" cy="500.0" r="4" fill="#a44b20"/><text class="small" x="890" y="528.0">原點 (0, 0)</text>
+<path class="dim" d="M880 548.0 h80 M880 548.0 v-70"/><text class="small" x="965" y="554.0">+X</text><text class="small" x="875" y="472.0">+Y</text>
+<text class="small" x="50" y="640">A 與 B 是同一草圖在不同保存階段的名義尺寸，不是兩個零件。</text>
+<text class="small" x="50" y="675">60×40 → 80×40：本次讀值記錄 solver OKAY、DoF 0；只表示此示範草圖的狀態。</text>
+<text class="small" x="50" y="710">平面草圖不含盒底、內腔或上蓋；拉伸與後續布林結果需另行核對。</text>
+<line x1="22" y1="770" x2="1578" y2="770" stroke="#173247" stroke-width="2"/>
+<text class="minor" x="50" y="804">來源：獨立 Blender／CAD Sketcher 草圖驗證 rectangle-60 與 rectangle-80，圖面由已讀回的草圖座標重建。</text>
+<text class="minor" x="50" y="833">60×40 摘要 SHA-256 f025c42f3bcbfe67…　｜　80×40 摘要 SHA-256 235dc960ae116a1e…</text>
+<text class="minor" x="50" y="862">草圖座標基準：(0,0)；視圖縮放不供量尺。材料、製程、公差、實體結果：待定。</text>
+<line x1="22" y1="900" x2="1578" y2="900" stroke="#173247" stroke-width="1.5"/>
+<text class="minor" x="50" y="935">圖號 SKETCH-EDU-001　　版次 v001　　單位 mm　　比例：隨螢幕縮放</text>
+<text class="minor" x="50" y="966">教學用途：依草圖實際讀值辨識尺寸與約束；未確認學員完成。</text></svg>

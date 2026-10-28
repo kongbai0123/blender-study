@@ -1,0 +1,178 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1900 1370" role="img" aria-labelledby="title desc">
+<title id="title">燕尾滑蓋組合截面工程題圖</title><desc id="desc">示範盒體及滑蓋 STL 在 X=0 的真實交線，搭配俯視外框及一側導槽放大圖；0.4 毫米為未經實配的水平總間隙試驗值。</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#244f6e"/></marker><clipPath id="detail"><rect x="150" y="755" width="480" height="496"/></clipPath></defs>
+<style>text{font-family:Microsoft JhengHei,Noto Sans TC,sans-serif;fill:#18384b}.body{stroke:#17364a;stroke-width:3;fill:none}.lid{stroke:#a65a20;stroke-width:3;fill:none}.dim{stroke:#244f6e;stroke-width:1.4;fill:none}.center{stroke:#527993;stroke-width:1.3;stroke-dasharray:12 5 3 5;fill:none}.big{font-size:26px;font-weight:700}.small{font-size:19px}.label{font-size:20px;fill:#244f6e}</style>
+<rect width="1900" height="1370" fill="white"/><rect x="20" y="20" width="1860" height="1330" fill="none" stroke="#17384c" stroke-width="3"/>
+<text x="55" y="65" class="big">燕尾滑蓋｜組合截面工程題圖</text><text x="55" y="98" class="small">單位 mm（STL 無單位標記，依教材按 mm 解讀） · 數位幾何草案 · 實體試配尚未執行</text>
+<text x="150" y="145" class="big">頂部外框（由 +Z 朝 −Z）</text><rect x="150" y="195" width="600" height="400" fill="none" stroke="#a65a20" stroke-width="3"/>
+<path class="center" d="M450 175V615"/><path class="dim" d="M465 190H435" marker-end="url(#arrow)"/><path class="dim" d="M465 600H435" marker-end="url(#arrow)"/><text x="415" y="170" class="label">A</text><text x="415" y="640" class="label">A</text>
+<g class="dim"><path d="M150 195V165 M750 195V165 M150 195H95 M150 595H95"/><path d="M150 168H750" marker-start="url(#arrow)" marker-end="url(#arrow)"/><path d="M98 195V595" marker-start="url(#arrow)" marker-end="url(#arrow)"/></g>
+<text x="450" y="160" class="label" text-anchor="middle">60</text><text x="88" y="395" class="label" text-anchor="middle" transform="rotate(-90 88 395)">40</text>
+<text x="830" y="145" class="big">A–A 組合截面（X = 0，由 +X 朝 −X）</text>
+<line class="body" x1="880.000" y1="650.000" x2="880.000" y2="450.000"/>
+<line class="body" x1="880.000" y1="650.000" x2="1200.000" y2="650.000"/>
+<line class="body" x1="880.000" y1="450.000" x2="880.000" y2="250.000"/>
+<line class="body" x1="880.000" y1="250.000" x2="880.000" y2="210.000"/>
+<line class="body" x1="880.000" y1="210.000" x2="880.000" y2="170.000"/>
+<line class="body" x1="880.000" y1="170.000" x2="895.186" y2="170.000"/>
+<line class="body" x1="895.186" y1="170.000" x2="909.440" y2="170.000"/>
+<line class="body" x1="899.200" y1="221.200" x2="904.320" y2="195.600"/>
+<line class="body" x1="899.200" y1="221.200" x2="928.000" y2="221.200"/>
+<line class="body" x1="904.320" y1="195.600" x2="904.482" y2="194.790"/>
+<line class="body" x1="904.482" y1="194.790" x2="909.440" y2="170.000"/>
+<line class="body" x1="912.000" y1="618.000" x2="912.000" y2="434.000"/>
+<line class="body" x1="912.000" y1="618.000" x2="1200.000" y2="618.000"/>
+<line class="body" x1="912.000" y1="434.000" x2="912.000" y2="250.000"/>
+<line class="body" x1="912.000" y1="250.000" x2="944.000" y2="250.000"/>
+<line class="body" x1="928.000" y1="221.200" x2="956.800" y2="221.200"/>
+<line class="body" x1="944.000" y1="250.000" x2="976.000" y2="250.000"/>
+<line class="body" x1="946.560" y1="170.000" x2="951.504" y2="194.717"/>
+<line class="body" x1="946.560" y1="170.000" x2="961.280" y2="170.000"/>
+<line class="body" x1="951.504" y1="194.717" x2="951.680" y2="195.600"/>
+<line class="body" x1="951.680" y1="195.600" x2="956.800" y2="221.200"/>
+<line class="body" x1="961.280" y1="170.000" x2="976.000" y2="170.000"/>
+<line class="body" x1="976.000" y1="250.000" x2="976.000" y2="210.000"/>
+<line class="body" x1="976.000" y1="210.000" x2="976.000" y2="170.000"/>
+<line class="body" x1="1200.000" y1="650.000" x2="1520.000" y2="650.000"/>
+<line class="body" x1="1200.000" y1="618.000" x2="1488.000" y2="618.000"/>
+<line class="body" x1="1424.000" y1="250.000" x2="1424.000" y2="210.000"/>
+<line class="body" x1="1424.000" y1="250.000" x2="1456.000" y2="250.000"/>
+<line class="body" x1="1424.000" y1="210.000" x2="1424.000" y2="170.000"/>
+<line class="body" x1="1424.000" y1="170.000" x2="1438.720" y2="170.000"/>
+<line class="body" x1="1438.720" y1="170.000" x2="1453.440" y2="170.000"/>
+<line class="body" x1="1443.200" y1="221.200" x2="1448.320" y2="195.600"/>
+<line class="body" x1="1443.200" y1="221.200" x2="1472.000" y2="221.200"/>
+<line class="body" x1="1448.320" y1="195.600" x2="1448.496" y2="194.717"/>
+<line class="body" x1="1448.496" y1="194.717" x2="1453.440" y2="170.000"/>
+<line class="body" x1="1456.000" y1="250.000" x2="1488.000" y2="250.000"/>
+<line class="body" x1="1472.000" y1="221.200" x2="1500.800" y2="221.200"/>
+<line class="body" x1="1488.000" y1="618.000" x2="1488.000" y2="434.000"/>
+<line class="body" x1="1488.000" y1="434.000" x2="1488.000" y2="250.000"/>
+<line class="body" x1="1490.560" y1="170.000" x2="1495.518" y2="194.790"/>
+<line class="body" x1="1490.560" y1="170.000" x2="1504.814" y2="170.000"/>
+<line class="body" x1="1495.518" y1="194.790" x2="1495.680" y2="195.600"/>
+<line class="body" x1="1495.680" y1="195.600" x2="1500.800" y2="221.200"/>
+<line class="body" x1="1504.814" y1="170.000" x2="1520.000" y2="170.000"/>
+<line class="body" x1="1520.000" y1="650.000" x2="1520.000" y2="450.000"/>
+<line class="body" x1="1520.000" y1="450.000" x2="1520.000" y2="250.000"/>
+<line class="body" x1="1520.000" y1="250.000" x2="1520.000" y2="210.000"/>
+<line class="body" x1="1520.000" y1="210.000" x2="1520.000" y2="170.000"/>
+<line class="lid" x1="880.000" y1="166.800" x2="880.000" y2="150.800"/>
+<line class="lid" x1="880.000" y1="166.800" x2="896.640" y2="166.800"/>
+<line class="lid" x1="880.000" y1="150.800" x2="880.000" y2="134.800"/>
+<line class="lid" x1="880.000" y1="134.800" x2="1200.000" y2="134.800"/>
+<line class="lid" x1="896.640" y1="166.800" x2="913.280" y2="166.800"/>
+<line class="lid" x1="903.040" y1="218.000" x2="908.160" y2="192.400"/>
+<line class="lid" x1="903.040" y1="218.000" x2="928.000" y2="218.000"/>
+<line class="lid" x1="908.160" y1="192.400" x2="913.280" y2="166.800"/>
+<line class="lid" x1="928.000" y1="218.000" x2="952.960" y2="218.000"/>
+<line class="lid" x1="942.720" y1="166.800" x2="947.840" y2="192.400"/>
+<line class="lid" x1="942.720" y1="166.800" x2="1200.000" y2="166.800"/>
+<line class="lid" x1="947.840" y1="192.400" x2="952.960" y2="218.000"/>
+<line class="lid" x1="1200.000" y1="166.800" x2="1457.280" y2="166.800"/>
+<line class="lid" x1="1200.000" y1="134.800" x2="1520.000" y2="134.800"/>
+<line class="lid" x1="1447.040" y1="218.000" x2="1452.160" y2="192.400"/>
+<line class="lid" x1="1447.040" y1="218.000" x2="1472.000" y2="218.000"/>
+<line class="lid" x1="1452.160" y1="192.400" x2="1457.280" y2="166.800"/>
+<line class="lid" x1="1472.000" y1="218.000" x2="1496.960" y2="218.000"/>
+<line class="lid" x1="1486.720" y1="166.800" x2="1491.840" y2="192.400"/>
+<line class="lid" x1="1486.720" y1="166.800" x2="1503.360" y2="166.800"/>
+<line class="lid" x1="1491.840" y1="192.400" x2="1496.960" y2="218.000"/>
+<line class="lid" x1="1503.360" y1="166.800" x2="1520.000" y2="166.800"/>
+<line class="lid" x1="1520.000" y1="166.800" x2="1520.000" y2="150.800"/>
+<line class="lid" x1="1520.000" y1="150.800" x2="1520.000" y2="134.800"/>
+<g class="dim"><path d="M880 650V685 M1520 650V685 M1520 650H1580 M1520 170H1580"/><path d="M880 680H1520" marker-start="url(#arrow)" marker-end="url(#arrow)"/><path d="M1576 170V650" marker-start="url(#arrow)" marker-end="url(#arrow)"/></g>
+<text x="1200" y="710" class="label" text-anchor="middle">盒體 40</text><text x="1600" y="410" class="label" transform="rotate(-90 1600 410)" text-anchor="middle">盒體 30</text>
+<text x="150" y="720" class="big">右側燕尾局部放大（與 A–A 相同交線）</text>
+<rect x="150" y="755" width="480" height="496" fill="#f7fafc" stroke="#aac0cd" stroke-width="1"/><g clip-path="url(#detail)">
+<line class="body" x1="-2570.000" y1="3347.000" x2="-2570.000" y2="2347.000"/>
+<line class="body" x1="-2570.000" y1="3347.000" x2="-970.000" y2="3347.000"/>
+<line class="body" x1="-2570.000" y1="2347.000" x2="-2570.000" y2="1347.000"/>
+<line class="body" x1="-2570.000" y1="1347.000" x2="-2570.000" y2="1147.000"/>
+<line class="body" x1="-2570.000" y1="1147.000" x2="-2570.000" y2="947.000"/>
+<line class="body" x1="-2570.000" y1="947.000" x2="-2494.072" y2="947.000"/>
+<line class="body" x1="-2494.072" y1="947.000" x2="-2422.800" y2="947.000"/>
+<line class="body" x1="-2474.000" y1="1203.000" x2="-2448.400" y2="1075.000"/>
+<line class="body" x1="-2474.000" y1="1203.000" x2="-2330.000" y2="1203.000"/>
+<line class="body" x1="-2448.400" y1="1075.000" x2="-2447.592" y2="1070.952"/>
+<line class="body" x1="-2447.592" y1="1070.952" x2="-2422.800" y2="947.000"/>
+<line class="body" x1="-2410.000" y1="3187.000" x2="-2410.000" y2="2267.000"/>
+<line class="body" x1="-2410.000" y1="3187.000" x2="-970.000" y2="3187.000"/>
+<line class="body" x1="-2410.000" y1="2267.000" x2="-2410.000" y2="1347.000"/>
+<line class="body" x1="-2410.000" y1="1347.000" x2="-2250.000" y2="1347.000"/>
+<line class="body" x1="-2330.000" y1="1203.000" x2="-2186.000" y2="1203.000"/>
+<line class="body" x1="-2250.000" y1="1347.000" x2="-2090.000" y2="1347.000"/>
+<line class="body" x1="-2237.200" y1="947.000" x2="-2212.480" y2="1070.584"/>
+<line class="body" x1="-2237.200" y1="947.000" x2="-2163.600" y2="947.000"/>
+<line class="body" x1="-2212.480" y1="1070.584" x2="-2211.600" y2="1075.000"/>
+<line class="body" x1="-2211.600" y1="1075.000" x2="-2186.000" y2="1203.000"/>
+<line class="body" x1="-2163.600" y1="947.000" x2="-2090.000" y2="947.000"/>
+<line class="body" x1="-2090.000" y1="1347.000" x2="-2090.000" y2="1147.000"/>
+<line class="body" x1="-2090.000" y1="1147.000" x2="-2090.000" y2="947.000"/>
+<line class="body" x1="-970.000" y1="3347.000" x2="630.000" y2="3347.000"/>
+<line class="body" x1="-970.000" y1="3187.000" x2="470.000" y2="3187.000"/>
+<line class="body" x1="150.000" y1="1347.000" x2="150.000" y2="1147.000"/>
+<line class="body" x1="150.000" y1="1347.000" x2="310.000" y2="1347.000"/>
+<line class="body" x1="150.000" y1="1147.000" x2="150.000" y2="947.000"/>
+<line class="body" x1="150.000" y1="947.000" x2="223.600" y2="947.000"/>
+<line class="body" x1="223.600" y1="947.000" x2="297.200" y2="947.000"/>
+<line class="body" x1="246.000" y1="1203.000" x2="271.600" y2="1075.000"/>
+<line class="body" x1="246.000" y1="1203.000" x2="390.000" y2="1203.000"/>
+<line class="body" x1="271.600" y1="1075.000" x2="272.480" y2="1070.584"/>
+<line class="body" x1="272.480" y1="1070.584" x2="297.200" y2="947.000"/>
+<line class="body" x1="310.000" y1="1347.000" x2="470.000" y2="1347.000"/>
+<line class="body" x1="390.000" y1="1203.000" x2="534.000" y2="1203.000"/>
+<line class="body" x1="470.000" y1="3187.000" x2="470.000" y2="2267.000"/>
+<line class="body" x1="470.000" y1="2267.000" x2="470.000" y2="1347.000"/>
+<line class="body" x1="482.800" y1="947.000" x2="507.592" y2="1070.952"/>
+<line class="body" x1="482.800" y1="947.000" x2="554.072" y2="947.000"/>
+<line class="body" x1="507.592" y1="1070.952" x2="508.400" y2="1075.000"/>
+<line class="body" x1="508.400" y1="1075.000" x2="534.000" y2="1203.000"/>
+<line class="body" x1="554.072" y1="947.000" x2="630.000" y2="947.000"/>
+<line class="body" x1="630.000" y1="3347.000" x2="630.000" y2="2347.000"/>
+<line class="body" x1="630.000" y1="2347.000" x2="630.000" y2="1347.000"/>
+<line class="body" x1="630.000" y1="1347.000" x2="630.000" y2="1147.000"/>
+<line class="body" x1="630.000" y1="1147.000" x2="630.000" y2="947.000"/>
+<line class="lid" x1="-2570.000" y1="931.000" x2="-2570.000" y2="851.000"/>
+<line class="lid" x1="-2570.000" y1="931.000" x2="-2486.800" y2="931.000"/>
+<line class="lid" x1="-2570.000" y1="851.000" x2="-2570.000" y2="771.000"/>
+<line class="lid" x1="-2570.000" y1="771.000" x2="-970.000" y2="771.000"/>
+<line class="lid" x1="-2486.800" y1="931.000" x2="-2403.600" y2="931.000"/>
+<line class="lid" x1="-2454.800" y1="1187.000" x2="-2429.200" y2="1059.000"/>
+<line class="lid" x1="-2454.800" y1="1187.000" x2="-2330.000" y2="1187.000"/>
+<line class="lid" x1="-2429.200" y1="1059.000" x2="-2403.600" y2="931.000"/>
+<line class="lid" x1="-2330.000" y1="1187.000" x2="-2205.200" y2="1187.000"/>
+<line class="lid" x1="-2256.400" y1="931.000" x2="-2230.800" y2="1059.000"/>
+<line class="lid" x1="-2256.400" y1="931.000" x2="-970.000" y2="931.000"/>
+<line class="lid" x1="-2230.800" y1="1059.000" x2="-2205.200" y2="1187.000"/>
+<line class="lid" x1="-970.000" y1="931.000" x2="316.400" y2="931.000"/>
+<line class="lid" x1="-970.000" y1="771.000" x2="630.000" y2="771.000"/>
+<line class="lid" x1="265.200" y1="1187.000" x2="290.800" y2="1059.000"/>
+<line class="lid" x1="265.200" y1="1187.000" x2="390.000" y2="1187.000"/>
+<line class="lid" x1="290.800" y1="1059.000" x2="316.400" y2="931.000"/>
+<line class="lid" x1="390.000" y1="1187.000" x2="514.800" y2="1187.000"/>
+<line class="lid" x1="463.600" y1="931.000" x2="489.200" y2="1059.000"/>
+<line class="lid" x1="463.600" y1="931.000" x2="546.800" y2="931.000"/>
+<line class="lid" x1="489.200" y1="1059.000" x2="514.800" y2="1187.000"/>
+<line class="lid" x1="546.800" y1="931.000" x2="630.000" y2="931.000"/>
+<line class="lid" x1="630.000" y1="931.000" x2="630.000" y2="851.000"/>
+<line class="lid" x1="630.000" y1="851.000" x2="630.000" y2="771.000"/>
+</g>
+<text x="710" y="780" class="big">名義幾何條件（mm）</text>
+<text x="710" y="822" class="small">盒體外形 60 × 40 × 30；蓋板 60 × 40 × 2。</text>
+<text x="710" y="856" class="small">上蓋含燕尾榫外框總厚約 5.2；不等於蓋板厚度。</text>
+<text x="710" y="890" class="small">槽：底寬約 3.6、盒頂槽口寬約 2.32、深約 3.2。</text>
+<text x="710" y="924" class="small">榫：底寬約 3.12、與蓋板接合處寬約 1.84、外露深約 3.2。</text>
+<text x="710" y="958" class="small">同高度水平總間隙 0.4（每側名義 0.2）：僅為試驗值。</text>
+<text x="710" y="992" class="small">水平間隙與斜面法向間隙不同；圖像放大後請勿量螢幕。</text>
+<text x="710" y="1026" class="small">盒內導軌底部有朝下水平懸空面；切片、支撐與方向待驗。</text>
+<line class="body" x1="710" y1="1065" x2="765" y2="1065"/><text x="780" y="1072" class="small">盒體截面交線</text>
+<line class="lid" x1="1030" y1="1065" x2="1085" y2="1065"/><text x="1100" y="1072" class="small">上蓋截面交線</text>
+<text x="710" y="1110" class="small">公差、材料、製程、表面、檢驗及製造核准：待定。</text>
+<text x="710" y="1144" class="small">尚未列印、量測或試配；此圖不得作配合合格或強度判定。</text>
+<text x="710" y="1178" class="small">來源：u06_dovetail_body_v001.stl / u06_dovetail_lid_v001.stl。</text>
+<text x="710" y="1212" class="small">剖面為 STL 三角網格與 X=0 的實際交線；頂視為上蓋外框。</text>
+<line x1="20" y1="1270" x2="1880" y2="1270" stroke="#17384c" stroke-width="2"/><line x1="1250" y1="1270" x2="1250" y2="1350" stroke="#17384c" stroke-width="2"/>
+<text x="55" y="1303" class="small">來源 SHA-256：盒體 747e6186876f0e00…；上蓋 436597611a951ead…</text>
+<text x="55" y="1335" class="small">教學草案：保留本機原始資料及讀值；來源 STL 不含單位。</text>
+<text x="1280" y="1303" class="small">圖號：DOVETAIL-EDU-001　版次：v001</text><text x="1280" y="1335" class="small">單位：mm　比例：隨畫面縮放</text></svg>

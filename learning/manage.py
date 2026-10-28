@@ -5,6 +5,7 @@ import argparse
 import hashlib
 import json
 import os
+import re
 import sys
 import tempfile
 import time
@@ -18,6 +19,18 @@ LEARNING = Path(__file__).resolve().parent
 PROJECT = LEARNING.parent
 PROGRESS = LEARNING / "progress.json"
 CATALOG = LEARNING / "catalog.json"
+# 新版工程教材只在這裡指定目前版本；伺服器以固定網址提供，網頁不寫版本號。
+ENGINEERING_CURRICULUM = LEARNING / "web" / "engineering-curriculum-v032.json"
+ENGINEERING_PATH = LEARNING / "web" / "engineering-path-v003.json"
+CHALLENGES = LEARNING / "web" / "challenges" / "challenges-v005.json"
+# 工程章節共用的個人工作區；不屬於原 01～09 單元，登記檔案時以 --workspace 指定。
+ENGINEERING_WORKSPACES = {"engineering-parametric": "learning/workspaces/engineering-parametric"}
+# 受控尺寸面板只接受這個示範手工盒的副本（面板固定其草圖約束 UID 與上蓋拓撲簽章）。
+MANUAL_BOX_BASE = ("learning/evidence/parametric/2026-10-27-manual-lid-driver-y-v001/demo-files/manual_lid_shape_xy_driver_v001.blend",
+                   "ddae8a3d3745146501d25527354352e6b71431b837c78c8269a43dc5e6a3dec6")
+# 2026-10-27 工程路徑第一題的回答在專用事件出現前記在原教材 01-01：學員原話一則，緊接一則
+# 第一行為 engineering:<activity>:answered 的助教標記。兩則都屬工程路徑，不當成原教材步驟的筆記。
+LEGACY_ENGINEERING_MARKER = re.compile(r"engineering:(path-[a-z0-9-]+):answered")
 TAIPEI = timezone(timedelta(hours=8))
 # catalog 步驟的 setsLearner 與 CLI 只能寫入這些學員設定與值。
 LEARNER_CHOICES = {"interfaceLanguage": ("en", "zh-Hant")}
@@ -134,10 +147,39 @@ def lesson_state(catalog, progress, lesson_id):
     return lesson, state
 
 
+def engineering_overview(progress):
+    """新版主線（不含選修、待製作與附錄）的確認數與下一小步；教材讀不到時回傳 None。"""
+    try:
+        curriculum = read_json(ENGINEERING_CURRICULUM)
+    except (OSError, ValueError):
+        return None
+    confirmed = {(event.get("chapterId"), event.get("stepId")) for event in progress["events"]
+                 if isinstance(event, dict) and event.get("type") == "engineering_step_confirmed"
+                 and event.get("curriculumId") == curriculum.get("id")}
+    total, done, upcoming = 0, 0, None
+    for chapter in curriculum.get("chapters", []):
+        sections = {section.get("id"): section for section in chapter.get("sections", []) if isinstance(section, dict)}
+        for step in chapter.get("steps", []):
+            if not isinstance(step, dict) or step.get("track"):
+                continue
+            total += 1
+            if (chapter.get("id"), step.get("id")) in confirmed:
+                done += 1
+            elif upcoming is None:
+                upcoming = (chapter, sections.get(step.get("section")), step)
+    return {"total": total, "done": done, "next": upcoming}
+
+
 def status(catalog, progress, args):
+    if not args.lesson:
+        overview = engineering_overview(progress)
+        if overview is not None:
+            engineering_status_summary(progress, overview)
+            return
+        print("讀不到新版教材（%s）；以下暫以原教材目前單元顯示。" % ENGINEERING_CURRICULUM.name)
     lesson_id = args.lesson or progress["activeLesson"]
     lesson, state = lesson_state(catalog, progress, lesson_id)
-    print("進度 revision %d｜更新：%s" % (progress["revision"], progress["updatedAt"]))
+    print("原教材（只供查閱）· 進度 revision %d｜更新：%s" % (progress["revision"], progress["updatedAt"]))
     print("單元 %s：%s｜%s" % (lesson_id, lesson["title"], state["status"]))
     print("工作區：" + state["workspace"])
     print("Blender 介面語言：" + (learner_state(progress).get("interfaceLanguage") or "尚未記錄"))
@@ -153,12 +195,70 @@ def status(catalog, progress, args):
     print("已確認：%d / %d 步｜已登錄檔案：%d" % (
         len(state["completedSteps"]), len(lesson["steps"]),
         sum(item.get("lesson") == lesson_id for item in progress["fileVersions"])))
-    if state["notes"]:
-        latest = state["notes"][-1]
+    legacy = legacy_engineering_notes(progress)
+    notes = [note for index, note in enumerate(state["notes"]) if (lesson_id, index) not in legacy]
+    if notes:
+        latest = notes[-1]
         if not isinstance(latest, dict):
             latest = {"text": str(latest)}
         author = {"learner": "學員", "tutor": "助教"}.get(latest.get("author"), "未標示作者")
         print("最近筆記（%s）：%s" % (author, latest.get("text", "")))
+    if any(key[0] == lesson_id for key in legacy):
+        print("另有工程路徑的舊格式回答記在本單元；以 engineering-status 查看，不算本單元筆記。")
+
+
+def engineering_status_summary(progress, overview):
+    """預設的 status：學習進度以新版小步為主，原教材只供查閱。"""
+    print("進度 revision %d｜更新：%s" % (progress["revision"], progress["updatedAt"]))
+    print("新版主線：%d / %d 小步已確認（選修與附錄不計入）" % (overview["done"], overview["total"]))
+    pilot_status_summary(progress)
+    if overview["next"] is None:
+        print("主線小步都已確認。")
+    else:
+        chapter, section, step = overview["next"]
+        where = "第 %s 章 %s" % (chapter.get("number") or chapter["id"][2:], chapter.get("title", ""))
+        if section:
+            where += " › %s %s" % (section.get("id"), section.get("title", ""))
+        print("下一小步 %s：%s › %s" % (step["id"], where, step.get("title", "")))
+        if step.get("goal"):
+            print("小目標：" + step["goal"])
+        for number, action in enumerate(step.get("actions", []), 1):
+            print("操作 %d：%s" % (number, action))
+        if step.get("success"):
+            print("成功畫面：" + step["success"])
+        for record in legacy_engineering_records(progress):
+            if record["role"] == "answer" and record["activity"] == step.get("legacyActivity"):
+                note = progress["lessons"][record["lessonId"]]["notes"][record["noteIndex"]]
+                print("學員先前在聊天的回答（尚未確認本步）：" + note["text"])
+    print("Blender 介面語言：" + (learner_state(progress).get("interfaceLanguage") or "尚未記錄"))
+    print("原教材只供查閱；以 status --lesson <單元> 查看原單元內容與舊紀錄。")
+
+
+def legacy_engineering_notes(progress):
+    """回傳 {(單元, 筆記索引): {"activity", "role"}}；只認標記及其前一則同時間、同步驟的學員原話。"""
+    found = {}
+    for lesson_id, state in progress["lessons"].items():
+        notes = state.get("notes") if isinstance(state, dict) else None
+        if not isinstance(notes, list):
+            continue
+        for index, note in enumerate(notes):
+            if not isinstance(note, dict) or note.get("author") != "tutor" or not isinstance(note.get("text"), str):
+                continue
+            match = LEGACY_ENGINEERING_MARKER.fullmatch(note["text"].split("\n", 1)[0].strip())
+            if not match:
+                continue
+            found[(lesson_id, index)] = {"activity": match.group(1), "role": "marker"}
+            previous = notes[index - 1] if index else None
+            if (isinstance(previous, dict) and previous.get("author") == "learner"
+                    and previous.get("at") == note.get("at") and previous.get("step") == note.get("step")):
+                found[(lesson_id, index - 1)] = {"activity": match.group(1), "role": "answer"}
+    return found
+
+
+def legacy_engineering_records(progress):
+    """供網頁使用的清單形式：哪一則原教材筆記其實是工程路徑的回答或標記。"""
+    return [dict(info, lessonId=lesson_id, noteIndex=index)
+            for (lesson_id, index), info in sorted(legacy_engineering_notes(progress).items())]
 
 
 def learner_state(progress):
@@ -265,16 +365,29 @@ def path_key(value):
     return os.path.normcase(os.path.normpath(value.replace("\\", "/")))
 
 
+def file_owner(catalog, progress, args):
+    """登記對象是原教材單元或工程工作區，二擇一；回傳紀錄欄位與工作區相對路徑。"""
+    workspace_id = getattr(args, "workspace", None)
+    if workspace_id is None:
+        _, state = lesson_state(catalog, progress, args.lesson)
+        return {"lesson": args.lesson}, state["workspace"]
+    if args.lesson is not None:
+        raise ValueError("單元與工程工作區只能擇一。")
+    if workspace_id not in ENGINEERING_WORKSPACES:
+        raise ValueError("不支援的工程工作區：%s" % workspace_id)
+    return {"workspace": workspace_id}, ENGINEERING_WORKSPACES[workspace_id]
+
+
 def register_file(catalog, progress, args):
     if args.role not in ("source_scene", "render", "export"):
         raise ValueError("role 必須是 source_scene、render 或 export。")
-    _, state = lesson_state(catalog, progress, args.lesson)
+    owner, workspace_path = file_owner(catalog, progress, args)
     path, relative = workspace_file(args.path)
-    workspace = (PROJECT / state["workspace"]).resolve()
+    workspace = (PROJECT / workspace_path).resolve()
     try:
         path.relative_to(workspace)
     except ValueError:
-        raise ValueError("檔案必須屬於指定單元的工作區：" + state["workspace"]) from None
+        raise ValueError("檔案必須屬於指定的工作區：" + workspace_path) from None
     source = None
     if args.role == "source_scene":
         if path.suffix.lower() != ".blend":
@@ -288,9 +401,9 @@ def register_file(catalog, progress, args):
         registered = next((item for item in progress["fileVersions"]
                            if path_key(item["path"]) == path_key(source_relative)
                            and item["role"] == "source_scene"
-                           and item["lesson"] == args.lesson), None)
+                           and all(item.get(key) == value for key, value in owner.items())), None)
         if registered is None or source_path.suffix.lower() != ".blend":
-            raise ValueError("來源 .blend 必須先登錄為同單元的 source_scene。")
+            raise ValueError("來源 .blend 必須先登錄為同一工作區的 source_scene。")
         source_hash = fingerprint(source_path)["sha256"]
         if source_hash != registered["sha256"]:
             raise ValueError("來源 .blend 內容已改變；請另存新版、登錄後再關聯成果。")
@@ -310,12 +423,12 @@ def register_file(catalog, progress, args):
             raise ValueError("此路徑已登錄不同用途或來源；請使用新的版本檔名，不能更改既有版本關聯。")
         print("相同路徑與 SHA256 已登錄；未變更進度。")
         return None
-    record = dict(details, path=relative, role=args.role, lesson=args.lesson,
+    record = dict(details, path=relative, role=args.role, **owner,
                   registeredAt=now(), revision=progress["revision"] + 1)
     if source:
         record["source"] = source
     progress["fileVersions"].append(record)
-    return {"type": "file_registered", "lesson": args.lesson,
+    return {"type": "file_registered", **owner,
             "path": relative, "sha256": details["sha256"], "role": args.role}
 
 
@@ -342,6 +455,222 @@ def add_note(catalog, progress, args):
         event["step"] = step_id
     state["notes"].append(note)
     return event
+
+
+def engineering_step(chapter_id, step_id):
+    """Validate both IDs against the current versioned engineering curriculum."""
+    if not isinstance(chapter_id, str) or not isinstance(step_id, str):
+        raise ValueError("chapterId 與 stepId 必須是字串。")
+    curriculum = read_json(ENGINEERING_CURRICULUM)
+    if curriculum.get("schemaVersion") != 1 or not isinstance(curriculum.get("chapters"), list):
+        raise ValueError("工程教材格式錯誤。")
+    curriculum_id = curriculum.get("id")
+    if not isinstance(curriculum_id, str) or not curriculum_id:
+        raise ValueError("工程教材缺少版本 ID。")
+    matches = [c for c in curriculum["chapters"] if isinstance(c, dict) and c.get("id") == chapter_id]
+    if len(matches) != 1 or not isinstance(matches[0].get("steps"), list):
+        raise ValueError("找不到工程章節。")
+    steps = [s for s in matches[0]["steps"] if isinstance(s, dict) and s.get("id") == step_id]
+    if len(steps) != 1:
+        raise ValueError("找不到此工程章節中的步驟。")
+    return curriculum_id, matches[0], steps[0]
+
+
+def engineering_event(progress, args, *, confirmed):
+    curriculum_id, _, step = engineering_step(getattr(args, "chapter", None), getattr(args, "step", None))
+    event = {"type": "engineering_step_confirmed" if confirmed else "engineering_step_note",
+             "curriculumId": curriculum_id, "chapterId": args.chapter, "stepId": args.step}
+    if confirmed and step.get("track") == "appendix":
+        raise ValueError("附錄是開發與驗證紀錄，不需要也不能確認完成。")
+    if confirmed and step.get("track") == "pending":
+        raise ValueError("這一小步標為待製作：所需的模型或示範還沒完成，不能確認完成。")
+    if confirmed:
+        evidence = getattr(args, "evidence", None)
+        if not isinstance(evidence, str) or not evidence.strip() or len(evidence) > 12000:
+            raise ValueError("evidence 必須是 1–12000 字的學員確認文字。")
+        if any(isinstance(previous, dict) and previous.get("type") == event["type"]
+               and previous.get("curriculumId") == curriculum_id
+               and previous.get("chapterId") == args.chapter and previous.get("stepId") == args.step
+               for previous in progress["events"]):
+            raise ValueError("此工程步驟已確認，未重複記錄。")
+        event.update(author="learner", evidence=evidence)
+    else:
+        note = getattr(args, "note", None)
+        if not isinstance(note, str) or not note.strip() or len(note) > 12000:
+            raise ValueError("note 必須是 1–12000 字的筆記。")
+        note_kind = getattr(args, "note_kind", "note")
+        author = getattr(args, "author", "tutor")
+        if note_kind not in ("note", "stuck"):
+            raise ValueError("noteKind 必須是 note 或 stuck。")
+        if author not in NOTE_AUTHORS:
+            raise ValueError("author 必須是 learner 或 tutor。")
+        # Keep whitespace and line breaks exactly as supplied by the learner.
+        event.update(author=author, noteKind=note_kind, text=note)
+    return event
+
+
+PILOT_CHALLENGE_ID = "box-opening-v001"
+
+
+def pilot_events(progress):
+    return [event for event in progress["events"] if isinstance(event, dict)
+            and event.get("challengeId") == PILOT_CHALLENGE_ID
+            and event.get("type") in ("pilot_challenge_confirmed", "pilot_challenge_note")]
+
+
+def pilot_status_summary(progress):
+    events = pilot_events(progress)
+    confirmed = any(event.get("type") == "pilot_challenge_confirmed" for event in events)
+    print("小盒試教題：%s（與主線小步分開；pilot-status 查看紀錄）" % ("學員已確認" if confirmed else "尚未由學員確認"))
+
+
+def pilot_event(progress, args, *, confirmed):
+    if getattr(args, "challenge", None) != PILOT_CHALLENGE_ID:
+        raise ValueError("找不到此試教題。")
+    event = {"challengeId": PILOT_CHALLENGE_ID}
+    if confirmed:
+        evidence = getattr(args, "evidence", None)
+        if not isinstance(evidence, str) or not evidence.strip() or len(evidence) > 12000:
+            raise ValueError("evidence 必須是 1–12000 字的學員確認文字。")
+        if any(item.get("type") == "pilot_challenge_confirmed" for item in pilot_events(progress)):
+            raise ValueError("此試教題已確認，未重複記錄。")
+        event.update(type="pilot_challenge_confirmed", author="learner", evidence=evidence)
+        source = getattr(args, "source_path", None)
+        if source is not None:
+            if not isinstance(source, str) or not source.strip():
+                raise ValueError("sourcePath 必須是已登記的 .blend 路徑或留空。")
+            source_path, source_relative = workspace_file(source)
+            registered = next((item for item in progress["fileVersions"]
+                               if item.get("lesson") == "04" and item.get("role") == "source_scene"
+                               and path_key(item.get("path", "")) == path_key(source_relative)), None)
+            if registered is None or source_path.suffix.lower() != ".blend":
+                raise ValueError("請選擇已在原盒工作區登記的 .blend。")
+            actual = fingerprint(source_path)["sha256"]
+            if actual != registered.get("sha256"):
+                raise ValueError("已登記的 .blend 內容已改變；請另存新版並重新登記。")
+            event.update(sourcePath=source_relative, sourceSha256=actual)
+    else:
+        note = getattr(args, "note", None)
+        author = getattr(args, "author", "tutor")
+        if not isinstance(note, str) or not note.strip() or len(note) > 12000:
+            raise ValueError("note 必須是 1–12000 字的筆記。")
+        if author not in NOTE_AUTHORS:
+            raise ValueError("author 必須是 learner 或 tutor。")
+        event.update(type="pilot_challenge_note", author=author, noteKind="stuck", text=note)
+    return event
+
+
+def challenge_definition(challenge_id):
+    """唯讀版本化題目資料；03 保留原小盒 pilot，不建立第二份確認。"""
+    if not isinstance(challenge_id, str) or not re.fullmatch(r"[a-z0-9][a-z0-9-]{0,100}", challenge_id):
+        raise ValueError("challengeId 格式不正確。")
+    data = read_json(CHALLENGES)
+    if not isinstance(data, dict) or data.get("schemaVersion") != 1 or not isinstance(data.get("chapters"), list):
+        raise ValueError("題目資料格式不正確。")
+    matches = [item for item in data["chapters"] if isinstance(item, dict)
+               and item.get("challengeId") == challenge_id]
+    if len(matches) != 1:
+        raise ValueError("找不到唯一的挑戰題。")
+    item = matches[0]
+    if item.get("chapterId") == "ch03" or challenge_id == PILOT_CHALLENGE_ID:
+        raise ValueError("第 03 章小盒題使用原有 pilot 進度。")
+    if not isinstance(item.get("chapterId"), str) or not re.fullmatch(r"ch(?:0[1-9]|1[0-2])", item["chapterId"]):
+        raise ValueError("題目章節代號不正確。")
+    owner = item.get("workspaceLesson")
+    if owner is not None and (not isinstance(owner, str) or not re.fullmatch(r"0[1-9]", owner)):
+        raise ValueError("題目工作區設定不正確。")
+    workspace_id = item.get("workspaceId")
+    if workspace_id is not None and (not isinstance(workspace_id, str) or workspace_id not in ENGINEERING_WORKSPACES):
+        raise ValueError("題目工程工作區設定不正確。")
+    if owner is not None and workspace_id is not None:
+        raise ValueError("題目不能同時指定單元與工程工作區。")
+    return item
+
+
+def challenge_events(progress, challenge_id=None):
+    return [event for event in progress["events"] if isinstance(event, dict)
+            and event.get("type") in ("challenge_confirmed", "challenge_note")
+            and (challenge_id is None or event.get("challengeId") == challenge_id)]
+
+
+def challenge_event(progress, args, *, confirmed):
+    challenge = challenge_definition(getattr(args, "challenge", None))
+    challenge_id, owner = challenge["challengeId"], challenge.get("workspaceLesson")
+    workspace_id = challenge.get("workspaceId")
+    event = {"challengeId": challenge_id, "chapterId": challenge["chapterId"]}
+    if confirmed:
+        evidence = getattr(args, "evidence", None)
+        if not isinstance(evidence, str) or not evidence.strip() or len(evidence) > 12000:
+            raise ValueError("evidence 必須是 1–12000 字的學員確認文字。")
+        if any(item.get("type") == "challenge_confirmed" for item in challenge_events(progress, challenge_id)):
+            raise ValueError("此挑戰題已確認，未重複記錄。")
+        event.update(type="challenge_confirmed", author="learner", evidence=evidence)
+        source = getattr(args, "source_path", None)
+        if source is not None:
+            if not owner and not workspace_id:
+                raise ValueError("此題沒有指定檔案工作區，無法關聯版本。")
+            if not isinstance(source, str) or not source.strip():
+                raise ValueError("sourcePath 必須是已登記的 .blend 路徑或留空。")
+            path, relative = workspace_file(source)
+            expected_workspace = (PROJECT / (ENGINEERING_WORKSPACES[workspace_id] if workspace_id
+                                  else progress["lessons"][owner]["workspace"])).resolve()
+            try:
+                expected_workspace.relative_to((LEARNING / "workspaces").resolve())
+                path.relative_to(expected_workspace)
+            except ValueError:
+                raise ValueError("所選檔案不在此題的工作區。") from None
+            registered = next((item for item in progress["fileVersions"]
+                               if (item.get("workspace") == workspace_id if workspace_id
+                                   else item.get("lesson") == owner)
+                               and item.get("role") == "source_scene"
+                               and path_key(item.get("path", "")) == path_key(relative)), None)
+            if registered is None or path.suffix.lower() != ".blend":
+                raise ValueError("請選擇此題工作區已登記的 .blend。")
+            actual = fingerprint(path)["sha256"]
+            if actual != registered.get("sha256"):
+                raise ValueError("已登記的 .blend 內容已改變；請另存新版並重新登記。")
+            event.update(sourcePath=relative, sourceSha256=actual)
+    else:
+        note, author = getattr(args, "note", None), getattr(args, "author", "tutor")
+        if not isinstance(note, str) or not note.strip() or len(note) > 12000:
+            raise ValueError("note 必須是 1–12000 字的筆記。")
+        if author not in NOTE_AUTHORS:
+            raise ValueError("author 必須是 learner 或 tutor。")
+        event.update(type="challenge_note", author=author, noteKind="stuck", text=note)
+    return event
+
+
+def _is_link(path):
+    info = os.lstat(path)
+    return os.path.islink(path) or bool(getattr(info, "st_file_attributes", 0) & 0x400)
+
+
+def engineering_workspace(copy_name=None):
+    """建立工程工作區，可選擇以雜湊核對後複製示範手工盒；不寫入進度、不覆寫既有檔案。"""
+    folder = PROJECT / ENGINEERING_WORKSPACES["engineering-parametric"]
+    if os.path.lexists(folder) and (_is_link(folder) or not folder.is_dir()):
+        raise ValueError("工程工作區必須是一般資料夾，不可是連結或檔案：" + str(folder))
+    folder.mkdir(parents=True, exist_ok=True)
+    try:
+        folder.resolve().relative_to((LEARNING / "workspaces").resolve())
+    except ValueError:
+        raise ValueError("工程工作區解析後不在 learning/workspaces 內。") from None
+    print("工程工作區：" + str(folder.resolve()))
+    if copy_name is None:
+        return None
+    if not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9_.-]{0,80}\.blend", copy_name) or ".." in copy_name:
+        raise ValueError("副本檔名只能使用英數、底線、連字號與點，並以 .blend 結尾。")
+    data = (PROJECT / MANUAL_BOX_BASE[0]).read_bytes()
+    if hashlib.sha256(data).hexdigest() != MANUAL_BOX_BASE[1]:
+        raise ValueError("示範手工盒內容與紀錄不符；未複製。")
+    target = folder / copy_name
+    try:
+        with target.open("xb") as handle:
+            handle.write(data)
+    except FileExistsError:
+        raise ValueError("目標檔已存在；請換新檔名，不覆寫既有檔案。") from None
+    print("個人副本：%s\nSHA-256：%s（與示範基準相同，尚未修改）" % (target.resolve(), MANUAL_BOX_BASE[1]))
+    return target
 
 
 def add_lessons(catalog, progress, args):
@@ -378,7 +707,9 @@ def mutate(action, lesson, revision, **values):
     """唯一寫入入口：CLI 與 HTTP 都在同一 OS 鎖下檢查 revision。"""
     if type(revision) is not int or revision < 1:
         raise ValueError("expectedRevision 必須是正整數。")
-    if action not in ("set_interface_language", "add_lessons") and not isinstance(lesson, str):
+    lesson_optional = action in ("set_interface_language", "add_lessons", "engineering_confirm", "engineering_note", "pilot_confirm", "pilot_note", "challenge_confirm", "challenge_note") or (
+        action == "register_file" and values.get("workspace") is not None)
+    if not lesson_optional and not isinstance(lesson, str):
         raise ValueError("lessonId 必須是字串。")
     args = SimpleNamespace(lesson=lesson, **values)
     with progress_lock():
@@ -396,11 +727,20 @@ def mutate(action, lesson, revision, **values):
             args.source = getattr(args, "source", None)
             if args.source is not None and not isinstance(args.source, str):
                 raise ValueError("source 必須是字串。")
+            args.workspace = getattr(args, "workspace", None)
+            if args.workspace is not None and not isinstance(args.workspace, str):
+                raise ValueError("workspace 必須是字串。")
             event = register_file(catalog, progress, args)
         elif action == "add_note":
             if not isinstance(getattr(args, "note", None), str):
                 raise ValueError("note 必須是字串。")
             event = add_note(catalog, progress, args)
+        elif action in ("engineering_confirm", "engineering_note"):
+            event = engineering_event(progress, args, confirmed=action == "engineering_confirm")
+        elif action in ("pilot_confirm", "pilot_note"):
+            event = pilot_event(progress, args, confirmed=action == "pilot_confirm")
+        elif action in ("challenge_confirm", "challenge_note"):
+            event = challenge_event(progress, args, confirmed=action == "challenge_confirm")
         elif action == "set_interface_language":
             if not isinstance(getattr(args, "evidence", None), str) or len(args.evidence) > 12000:
                 raise ValueError("evidence 必須是 1–12000 字的確認文字。")
@@ -425,7 +765,12 @@ def build_parser():
                             ("confirm", "依學習者提供的證據確認目前步驟"),
                             ("register-file", "盤點已存在的工作檔，不確認完成")):
         command = commands.add_parser(name, help=help_text)
-        command.add_argument("--lesson", required=True)
+        if name == "register-file":
+            owner = command.add_mutually_exclusive_group(required=True)
+            owner.add_argument("--lesson")
+            owner.add_argument("--workspace", choices=sorted(ENGINEERING_WORKSPACES), help="工程章節的個人工作區")
+        else:
+            command.add_argument("--lesson", required=True)
         command.add_argument("--revision", required=True, type=int, help="status 顯示的目前 revision")
         if name == "note":
             command.add_argument("--note-file", required=True, help="UTF-8 筆記檔路徑")
@@ -447,6 +792,45 @@ def build_parser():
     lessons = commands.add_parser("add-lessons", help="catalog 新增單元後補進進度與工作區，不確認步驟")
     lessons.add_argument("--revision", required=True, type=int, help="status 顯示的目前 revision")
     lessons.add_argument("--reason", required=True, help="加入單元的依據，例如學員核准的草案")
+    eng_status = commands.add_parser("engineering-status", help="只讀工程教材確認及筆記事件")
+    eng_status.add_argument("--chapter", help="篩選工程章節 ID，例如 ch01")
+    eng_workspace = commands.add_parser("engineering-workspace", help="建立工程工作區；可複製受控面板用的示範手工盒，不寫入進度")
+    eng_workspace.add_argument("--copy-manual-box", metavar="檔名.blend", help="在工作區建立示範手工盒的新副本；同名檔存在時拒絕")
+    commands.add_parser("pilot-status", help="只讀小盒試教題的確認與筆記")
+    pilot_confirm = commands.add_parser("pilot-confirm", help="記錄學員對小盒試教題的明確完成回報")
+    pilot_confirm.add_argument("--revision", required=True, type=int)
+    pilot_confirm.add_argument("--evidence", required=True, help="學員明確確認的原話")
+    pilot_confirm.add_argument("--source-path", help="選填已登記的原盒 .blend 路徑")
+    pilot_note = commands.add_parser("pilot-note", help="記錄小盒試教題卡關筆記")
+    pilot_note.add_argument("--revision", required=True, type=int)
+    pilot_note.add_argument("--note-file", required=True, help="保留原始內容的 UTF-8 筆記檔")
+    pilot_note.add_argument("--author", default="tutor", choices=NOTE_AUTHORS,
+                            help="只有逐字記學員原話時才用 learner")
+    challenge_status = commands.add_parser("challenge-status", help="只讀挑戰題確認與筆記")
+    challenge_status.add_argument("--challenge", help="只顯示指定題目 ID")
+    challenge_confirm = commands.add_parser("challenge-confirm", help="記錄學員對挑戰題的明確完成回報")
+    challenge_confirm.add_argument("--challenge", required=True)
+    challenge_confirm.add_argument("--revision", required=True, type=int)
+    challenge_confirm.add_argument("--evidence", required=True, help="學員明確確認的原話")
+    challenge_confirm.add_argument("--source-path", help="選填已登記的對應工作區 .blend")
+    challenge_note = commands.add_parser("challenge-note", help="記錄挑戰題卡關筆記")
+    challenge_note.add_argument("--challenge", required=True)
+    challenge_note.add_argument("--revision", required=True, type=int)
+    challenge_note.add_argument("--note-file", required=True, help="保留原始內容的 UTF-8 筆記檔")
+    challenge_note.add_argument("--author", default="tutor", choices=NOTE_AUTHORS,
+                                help="只有逐字記學員原話時才用 learner")
+    for name in ("engineering-confirm", "engineering-note"):
+        command = commands.add_parser(name, help="記錄工程步驟確認" if name.endswith("confirm") else "記錄工程步驟筆記")
+        command.add_argument("--revision", required=True, type=int)
+        command.add_argument("--chapter", required=True)
+        command.add_argument("--step", required=True)
+        if name.endswith("confirm"):
+            command.add_argument("--evidence", required=True, help="學員明確確認的原話")
+        else:
+            command.add_argument("--note-file", required=True, help="保留原始內容的 UTF-8 筆記檔")
+            command.add_argument("--note-kind", default="note", choices=("note", "stuck"))
+            command.add_argument("--author", default="tutor", choices=NOTE_AUTHORS,
+                                 help="僅學員主動提供原話時選 learner")
     return parser
 
 
@@ -461,17 +845,65 @@ def main():
             catalog, progress = load_state()
             status(catalog, progress, args)
             return
+        if args.command == "engineering-status":
+            _, progress = load_state()
+            print("進度 revision %d" % progress["revision"])
+            for event in progress["events"]:
+                if isinstance(event, dict) and event.get("type") in ("engineering_step_confirmed", "engineering_step_note") and (not args.chapter or event.get("chapterId") == args.chapter):
+                    print(json.dumps(event, ensure_ascii=False))
+            for record in legacy_engineering_records(progress):
+                if record["role"] == "answer" and not args.chapter:
+                    note = progress["lessons"][record["lessonId"]]["notes"][record["noteIndex"]]
+                    print("舊格式工程路徑回答 %s（記在原教材 %s）：%s" % (record["activity"], note.get("step"), note["text"]))
+            return
+        if args.command == "engineering-workspace":
+            engineering_workspace(args.copy_manual_box)
+            return
+        if args.command == "pilot-status":
+            _, progress = load_state()
+            print("進度 revision %d" % progress["revision"])
+            pilot_status_summary(progress)
+            for event in pilot_events(progress):
+                print(json.dumps(event, ensure_ascii=False))
+            return
+        if args.command == "challenge-status":
+            _, progress = load_state()
+            if args.challenge:
+                challenge_definition(args.challenge)
+            print("進度 revision %d" % progress["revision"])
+            for event in challenge_events(progress, args.challenge):
+                print(json.dumps(event, ensure_ascii=False))
+            return
         if args.command == "confirm":
             mutate("confirm_step", args.lesson, args.revision,
                    step=args.step, evidence=args.evidence)
         elif args.command == "register-file":
             mutate("register_file", args.lesson, args.revision,
-                   path=args.path, role=args.role, source=args.source)
+                   path=args.path, role=args.role, source=args.source, workspace=args.workspace)
         elif args.command == "set-interface-language":
             mutate("set_interface_language", None, args.revision,
                    language=args.language, evidence=args.evidence)
         elif args.command == "add-lessons":
             mutate("add_lessons", None, args.revision, reason=args.reason)
+        elif args.command == "engineering-confirm":
+            mutate("engineering_confirm", None, args.revision,
+                   chapter=args.chapter, step=args.step, evidence=args.evidence)
+        elif args.command == "engineering-note":
+            mutate("engineering_note", None, args.revision, chapter=args.chapter, step=args.step,
+                   note=Path(args.note_file).read_bytes().decode("utf-8-sig"),
+                   note_kind=args.note_kind, author=args.author)
+        elif args.command == "pilot-confirm":
+            mutate("pilot_confirm", None, args.revision, challenge=PILOT_CHALLENGE_ID,
+                   evidence=args.evidence, source_path=args.source_path)
+        elif args.command == "pilot-note":
+            mutate("pilot_note", None, args.revision, challenge=PILOT_CHALLENGE_ID,
+                   note=Path(args.note_file).read_bytes().decode("utf-8-sig"), author=args.author)
+        elif args.command == "challenge-confirm":
+            mutate("challenge_confirm", None, args.revision, challenge=args.challenge,
+                   evidence=args.evidence, source_path=args.source_path)
+        elif args.command == "challenge-note":
+            mutate("challenge_note", None, args.revision, challenge=args.challenge,
+                   note=Path(args.note_file).read_bytes().decode("utf-8-sig"), author=args.author)
         else:
             mutate("add_note", args.lesson, args.revision,
                    note=Path(args.note_file).read_text(encoding="utf-8-sig"),

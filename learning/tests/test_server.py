@@ -21,6 +21,14 @@ LEARNING = Path(__file__).resolve().parents[1]
 SCRATCH = (LEARNING / "tests" / ".scratch").resolve()
 
 
+def current_pointer():
+    """目前工程教材版本只在 manage.py 指定；測試讀同一個指標，不另寫版本號。"""
+    spec = importlib.util.spec_from_file_location("isolated_manage_pointer", LEARNING / "manage.py")
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
+
+
 class DashboardTests(unittest.TestCase):
     def setUp(self):
         self.original_hash = hashlib.sha256((LEARNING / "progress.json").read_bytes()).hexdigest()
@@ -89,6 +97,28 @@ class DashboardTests(unittest.TestCase):
         self.assertEqual(status, 200)
         return data
 
+    def test_pilot_static_assets_are_narrowly_allowlisted(self):
+        pilot = self.learning / "web" / "pilot"
+        pilot.mkdir()
+        challenges = self.learning / "web" / "challenges"
+        challenges.mkdir()
+        # 試教頁已併入練習題頁：只留轉址頁與共用樣式，圖與動畫要由目前題目資料引用才提供。
+        (challenges / "challenges-v005.json").write_text(json.dumps({"schemaVersion": 1, "chapters": [
+            {"chapterId": "ch03", "drawing": {"path": "/pilot/box-drawing-v002.svg"}, "animation": {"path": "/pilot/box-demo.gif"}}]}), encoding="utf-8")
+        for name, content, status in (("box-lesson.html", "<title>pilot</title>", 200),
+                                      ("box-lesson.css", "body {}", 200),
+                                      ("box-lesson.js", "'use strict';", 404),
+                                      ("box-demo.gif", "GIF89a", 200),
+                                      ("box-drawing.svg", '<svg xmlns="http://www.w3.org/2000/svg"/>', 404),
+                                      ("box-drawing-v002.svg", '<svg xmlns="http://www.w3.org/2000/svg"/>', 200)):
+            (pilot / name).write_text(content, encoding="utf-8")
+            self.assertEqual(self.request("GET", "/pilot/" + name)[0], status, name)
+        (pilot / "hidden.txt").write_text("not public", encoding="utf-8")
+        self.assertEqual(self.request("GET", "/pilot/hidden.txt")[0], 404)
+        self.assertEqual(self.request("GET", "/pilot/%2e%2e/server.py")[0], 404)
+        # /files/ 不因試教頁而允許讀取網頁或擴大執行範圍。
+        self.assertEqual(self.request("GET", "/files/learning/web/pilot/box-lesson.html")[0], 403)
+
     def post(self, payload, route="/api/progress"):
         return self.request("POST", route, payload)
 
@@ -102,7 +132,12 @@ class DashboardTests(unittest.TestCase):
     def test_bootstrap_and_export_are_read_only(self):
         original = (self.learning / "progress.json").read_bytes()
         data = self.bootstrap()
-        self.assertEqual(set(data), {"projectRoot", "catalog", "progress", "files", "journal"})
+        self.assertEqual(set(data), {"projectRoot", "catalog", "progress", "files", "journal",
+                                     "engineeringWorkspaces", "legacyEngineeringNotes"})
+        self.assertEqual(data["engineeringWorkspaces"], {"engineering-parametric": "learning/workspaces/engineering-parametric"})
+        for record in data["legacyEngineeringNotes"]:
+            note = data["progress"]["lessons"][record["lessonId"]]["notes"][record["noteIndex"]]
+            self.assertEqual(note["author"], "learner" if record["role"] == "answer" else "tutor")
         self.assertEqual(data["projectRoot"], str(self.root))
         self.assertEqual(data["journal"], [{"path": "learning/journal/test.md", "title": "Test journal"}])
         status, health, _ = self.request("GET", "/api/health")
@@ -124,6 +159,74 @@ class DashboardTests(unittest.TestCase):
                     self.assertTrue(figure["path"].startswith("learning/evidence/"), step["id"])
                     self.assertTrue((LEARNING.parent / figure["path"]).is_file(), figure["path"])
                     self.assertIn(Path(figure["path"]).suffix.lower(), {".png", ".jpg", ".jpeg", ".webp"})
+
+    def test_engineering_path_assets_are_named_and_read_only(self):
+        original = (self.learning / "progress.json").read_bytes()
+        pointer = current_pointer()
+        # 目前版本只由 manage.py 指定；網頁只用固定網址，歷史版本與其他 JSON 都不經網頁提供。
+        for route, name, body in (("/engineering-path.js", "engineering-path.js", "'use strict';"),
+                                  ("/engineering-path.json", pointer.ENGINEERING_PATH.name, '{"schemaVersion":1,"kind":"path"}'),
+                                  ("/engineering-curriculum.json", pointer.ENGINEERING_CURRICULUM.name, '{"schemaVersion":1,"kind":"curriculum"}')):
+            (self.learning / "web" / name).write_text(body, encoding="utf-8")
+            status, content, headers = self.request("GET", route)
+            self.assertEqual(status, 200)
+            self.assertIn("script-src 'self'", headers["Content-Security-Policy"])
+            self.assertEqual(content, json.loads(body) if name.endswith(".json") else body.encode())
+        (self.learning / "web/private.json").write_text('{"private":true}', encoding="utf-8")
+        (self.learning / "web/engineering-curriculum-v027.json").write_text('{"schemaVersion":1}', encoding="utf-8")
+        for route in ("/private.json", "/engineering-path-v001.json", "/engineering-curriculum-v027.json",
+                      "/" + pointer.ENGINEERING_CURRICULUM.name, "/web/private.json"):
+            self.assertEqual(self.request("GET", route)[0], 404, route)
+        self.assertEqual(self.request("GET", "/files/learning/web/engineering-path.js")[0], 403)
+        self.assertEqual(original, (self.learning / "progress.json").read_bytes())
+
+    def test_engineering_path_references_and_original_pixels(self):
+        pointer = current_pointer()
+        document = json.loads(pointer.ENGINEERING_PATH.read_text(encoding="utf-8"))
+        curriculum = json.loads(pointer.ENGINEERING_CURRICULUM.read_text(encoding="utf-8"))
+        catalog = json.loads((LEARNING / "catalog.json").read_text(encoding="utf-8"))
+        references = {(lesson["id"], step["id"]) for lesson in catalog["lessons"] for step in lesson["steps"]}
+        chapter_ids = [chapter["id"] for chapter in document["chapters"]]
+        self.assertEqual(len(chapter_ids), len(set(chapter_ids)))
+        for chapter in document["chapters"]:
+            for reference in chapter["references"]:
+                self.assertIn((reference["lessonId"], reference["stepId"]), references)
+        original_figures = {event["figure"]["path"]: event["figure"] for lesson in catalog["lessons"]
+                            for step in lesson["steps"] for event in step.get("operationRun", {}).get("events", [])}
+        # 第 01 章章末的兩題觀察沿用 05-05 示範原圖，必須與原 run 的像素指紋一致。
+        observation = [step for step in curriculum["chapters"][0]["steps"] if step["id"] in ("ch01-observe-lip", "ch01-fit-surfaces")]
+        self.assertEqual(len(observation), 2)
+        for figure in [figure for step in observation for figure in step["figures"]]:
+            original = original_figures[figure["path"]]
+            self.assertEqual(figure["type"], "screenshot")
+            self.assertEqual(figure["sha256"], original["sha256"])
+            self.assertEqual(hashlib.sha256((LEARNING.parent / figure["path"]).read_bytes()).hexdigest(), figure["sha256"])
+        source = document["baseline"]["sourceScene"]
+        self.assertEqual(hashlib.sha256((LEARNING.parent / source["path"]).read_bytes()).hexdigest(), source["sha256"])
+
+    def test_engineering_curriculum_steps_and_evidence(self):
+        pointer = current_pointer()
+        document = json.loads(pointer.ENGINEERING_CURRICULUM.read_text(encoding="utf-8"))
+        outline = json.loads(pointer.ENGINEERING_PATH.read_text(encoding="utf-8"))
+        catalog = json.loads((LEARNING / "catalog.json").read_text(encoding="utf-8"))
+        references = {(lesson["id"], step["id"]) for lesson in catalog["lessons"] for step in lesson["steps"]}
+        self.assertEqual([x["id"] for x in document["chapters"]], [x["id"] for x in outline["chapters"]])
+        step_ids = set()
+        for chapter in document["chapters"]:
+            self.assertTrue(chapter["steps"], chapter["id"])
+            for step in chapter["steps"]:
+                self.assertNotIn(step["id"], step_ids)
+                step_ids.add(step["id"])
+                self.assertTrue(step["title"] and step["goal"] and step["success"], step["id"])
+                self.assertTrue(step["actions"], step["id"])
+                for ref in step.get("sourceSteps", []):
+                    self.assertIn((ref["lessonId"], ref["stepId"]), references)
+                for figure in step.get("figures", []):
+                    self.assertEqual(figure["type"], "screenshot")
+                    self.assertTrue(figure["path"].startswith("learning/evidence/"))
+                    path = LEARNING.parent / figure["path"]
+                    self.assertTrue(path.is_file(), figure["path"])
+                    self.assertEqual(hashlib.sha256(path.read_bytes()).hexdigest(), figure["sha256"], figure["path"])
 
     def test_operation_run_screenshots_match_files_and_highlights_fit(self):
         # 助教示範實拍：檔案存在、雜湊與尺寸和紀錄一致，標示框落在圖內（標示由網頁疊上，不改原圖）。
