@@ -1,0 +1,49 @@
+{
+  "sourceScene": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/demo-files/u08_thread_reference_v001.blend",
+  "sourceSha256": "9bda36c10fd916ef9cbe688f5ca56dcf8cfa0adb83d684300e60196225589d8f",
+  "scene": "learning/evidence/08/2026-10-28-external-thread-profile-start-v001/u08_external_thread_profile_start_v001.blend",
+  "sceneSha256": "a9083cb26d87ff9d6d8d18ea81309f932812127cd468fb58659baf504609271c",
+  "blenderVersion": "5.2.1 LTS",
+  "construction": "程式由來源場景建立三頂點、三邊、無面輪廓；未由使用者 GUI 手繪",
+  "object": "Thread_Triangle_Profile",
+  "verticesLocalMm": [
+    [
+      4.800000190734863,
+      0.0,
+      0.0
+    ],
+    [
+      6.0,
+      0.0,
+      0.30000001192092896
+    ],
+    [
+      4.800000190734863,
+      0.0,
+      0.6000000238418579
+    ]
+  ],
+  "edges": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      0
+    ]
+  ],
+  "polygons": 0,
+  "sourceBodyHidden": true,
+  "profileSelected": true,
+  "unitScaleLength": 0.0010000000474974513,
+  "limitations": [
+    "這是輪廓起始副本，不是完成的螺紋或盒體",
+    "後續 Boolean 示範仍有候選交疊及極薄面待修",
+    "列印、量測、試配與合格判定未執行"
+  ]
+}

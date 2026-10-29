@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "title": "實體量測與試配空白紀錄",
+  "status": "template_no_measurements",
+  "instruction": "只有實際量測或試配後填寫；來源檔、條件、日期、方向、單位與量具不明時保留空白。0.4 mm 噴嘴不代表線寬或合格間隙。",
+  "records": [
+    {
+      "partRole": null,
+      "designBranch": null,
+      "sourceBlendPath": null,
+      "sourceBlendSha256": null,
+      "exportPath": null,
+      "exportSha256": null,
+      "nominalValueMm": null,
+      "featureAndDirection": null,
+      "designedClearanceType": null,
+      "designedClearanceMm": null,
+      "measuredValueMm": null,
+      "measuredMinusNominalMm": null,
+      "measurementDate": null,
+      "measurementInstrumentAndResolution": null,
+      "printer": null,
+      "material": null,
+      "nozzleDiameterMm": null,
+      "lineWidthMm": null,
+      "layerHeightMm": null,
+      "printOrientation": null,
+      "slicerAndProfile": null,
+      "fitObserved": null,
+      "qualifiedClearanceMm": null
+    }
+  ],
+  "limitations": ["此空白檔不是實體試驗結果。", "單側、總量、直徑差及法向間隙需區別，不能互換。"]
+}

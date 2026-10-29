@@ -67,5 +67,25 @@
       "fullStandardsObtained": false,
       "note": "08-01定義與待定參數；沒有選定M規格、建牙、列印或實體合格值。"
     }
+  ],
+  "softwareDependencies": [
+    {
+      "name": "CAD Sketcher",
+      "version": "0.32.1",
+      "kind": "third_party_blender_extension",
+      "release": "https://github.com/hlorus/CAD_Sketcher/releases/tag/v0.32.1",
+      "commit": "e7db7e6f94ad9dcaf2be03e849e1d3a2ac82e7a4",
+      "asset": "CAD_Sketcher-0.32.1-windows_x64.zip",
+      "assetBytes": 1283581,
+      "assetSha256": "b456070e9d1cec7fea85494b7afbbae0a543e9c2381cc40349a763d2de038a59",
+      "bundledWheelSha256": "86159bc0c5e749eb04d94cbf28b6d38ace795e802b8131be36870502e336f4fa",
+      "license": "GPL-3.0-or-later",
+      "minimumBlender": "5.0.0",
+      "downloadedOn": "2026-10-27",
+      "redistributed": false,
+      "localCopy": "learning/.publication-private/cad-sketcher-0.32.1-v001/（不公開）",
+      "record": "learning/journal/2026-10-27-cad-sketcher-environment-trial-v001.md",
+      "note": "第04～05章草圖與參數盒示範使用；安裝包不收錄於教材，學員依第04章自行下載並核對雜湊。ZIP 大小與 SHA-256 於 2026-10-27 再次本機核對相符。"
+    }
   ]
 }

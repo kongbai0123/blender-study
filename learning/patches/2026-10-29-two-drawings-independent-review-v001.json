@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-29",
+  "title": "定位柱與卡扣整盒工程題圖獨立覆核",
+  "commonMethod": {
+    "visualReview": "以 sharp/libvips 將原 SVG 渲染至系統暫存 PNG，查看圖框、三視、剖切、尺寸與警示文字；未修改 SVG。",
+    "sceneReview": "使用 Blender 5.2.1 LTS --background --factory-startup 實際重開來源場景，讀取 Body 與 Lid evaluated world-space loop triangles；每三角三頂點座標四捨五入至五位小數，不依拓撲索引與頂點順序，逐三角比較歷史 raw。五位小數為數位比對精度，不是製造公差。",
+    "limits": "此為現有數位資料與圖面核對，未重新操作建模，未做實體列印、量測或試配；不代表完整可見線、製造公差、耐久、強度或配合合格。"
+  },
+  "drawings": [
+    {
+      "id": "tenon",
+      "record": {
+        "path": "learning/journal/2026-10-29-tenon-box-lid-drawing-record-v001.json",
+        "sha256": "25b0e8087e904bc1bd2a450c4c8074c3afdc9a47a441d31352e051b912aeef7e"
+      },
+      "svg": {
+        "path": "learning/web/challenges/tenon-box-lid-drawing-v001.svg",
+        "sha256": "640367de51cdf7b0bd7abb7b3713af6f5181e6749747835665147c15745af6a8"
+      },
+      "sourceBlend": {
+        "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/demo-files/u06_locating_tenon_v001.blend",
+        "sha256": "f94dc6c5d342f04c41dddc37a4682805a5f7d87b5cf7a8b7bda37cd8ec51040f"
+      },
+      "bodyRaw": {
+        "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/body_mesh.json",
+        "sha256": "930fcafdf6e09ba60bf7ea20e3e448f3cbdac9056d7a44e98e4369ca75ffde08"
+      },
+      "lidRaw": {
+        "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/lid_mesh.json",
+        "sha256": "4ae28e1981fa44e9be4d504a2d62b5fcecda16ec9634c84127aaa8191e797d9a"
+      },
+      "sourceReadback": {
+        "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/trial-fit-record-v001.json",
+        "sha256": "4991be96553a02c34c37f871fa4c29417eee2190438204d3b4742dcf4b25b867"
+      },
+      "blenderReadback": {
+        "bodyTriangles": 156,
+        "lidTriangles": 178,
+        "bodyTriangleSetsMatchRaw": true,
+        "lidTriangleSetsMatchRaw": true,
+        "bodyBoundsMm": [
+          [
+            -30,
+            30
+          ],
+          [
+            -20,
+            20
+          ],
+          [
+            -15,
+            16.5
+          ]
+        ],
+        "lidBoundsMm": [
+          [
+            -30,
+            30
+          ],
+          [
+            -20,
+            20
+          ],
+          [
+            11,
+            17
+          ]
+        ]
+      },
+      "projectionCheck": {
+        "method": "SVG 三視可見稜線逆映射至世界單位，獨立檢查每一線段兩端均位於同一 raw 三角投影邊上；端點偏差容許 0.0002 mm。",
+        "topBody": {
+          "checked": 320,
+          "unmatched": 0
+        },
+        "topLid": {
+          "checked": 360,
+          "unmatched": 0
+        },
+        "frontBody": {
+          "checked": 40,
+          "unmatched": 0
+        },
+        "frontLid": {
+          "checked": 40,
+          "unmatched": 0
+        },
+        "rightBody": {
+          "checked": 40,
+          "unmatched": 0
+        },
+        "rightLid": {
+          "checked": 40,
+          "unmatched": 0
+        },
+        "section": "Y=13 原三角面交線經小數六位與圖面小數三位比對，Body 34/34，Lid 42/42。",
+        "limitation": "前述檢查確認已繪片段屬於實際投影，不證明抽樣可見性完整或沒有漏線。"
+      },
+      "reviewOfClaims": [
+        "柱外露側壁 29.5 為 Z−13 至16.5；工具高度 30；非已驗證力學有效長。",
+        "柱 Ø4／孔 Ø4.4 標為 32 邊形名義外接尺寸，直徑差0.4／徑向0.2為試驗值，約0.1990為網格法向讀值。",
+        "已記單柱不能完全限制旋轉及與環唇可能重複定位；材料、公差、實體列印與試配待定。"
+      ]
+    },
+    {
+      "id": "snapfit",
+      "record": {
+        "path": "learning/web/challenges/snapfit-box-lid-drawing-v001.json",
+        "sha256": "9068b4788b449050024dc2509112158e357eb83c0282482817cce8a4b650a31e"
+      },
+      "svg": {
+        "path": "learning/web/challenges/snapfit-box-lid-drawing-v001.svg",
+        "sha256": "03487ffba97d93abe83cce10c283cc0687d9ecbc2574434af88ad890374b5e59"
+      },
+      "sourceBlend": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/demo-files/u07_cantilever_snap_v001.blend",
+        "sha256": "5fec09b934f2935839d615376beaf598962d47f1b7ac2504f2666c7880a26305"
+      },
+      "bodyRaw": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/body_mesh.json",
+        "sha256": "f40578c09793b6418afaf6b3f5508016a7186022f46bf37695f0c9d25e6df86f"
+      },
+      "lidRaw": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/lid_mesh.json",
+        "sha256": "54bcbdce1ca5ab3ee8b1118d6f5135c44ff2519fa2c5821b0ce30ed746c08dd8"
+      },
+      "sourceReadback": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/geometry-draft-record-v001.json",
+        "sha256": "4f201124cbf51dc849c7978ee85f7ff5e58ca4273cdd9b006d3eba6c52521b7a"
+      },
+      "blenderReadback": {
+        "bodyTriangles": 116,
+        "lidTriangles": 48,
+        "bodyTriangleSetsMatchRaw": true,
+        "lidTriangleSetsMatchRaw": true,
+        "bodyBoundsMm": [
+          [
+            -30,
+            30
+          ],
+          [
+            -24.5,
+            20
+          ],
+          [
+            -15,
+            15
+          ]
+        ],
+        "lidBoundsMm": [
+          [
+            -30,
+            30
+          ],
+          [
+            -26,
+            20
+          ],
+          [
+            10.199999809265137,
+            17.200000762939453
+          ]
+        ]
+      },
+      "projectionCheck": {
+        "method": "獨立將原 raw 所有三角邊投影 XY、XZ、YZ，按 SVG 座標映射，投影座標小數三位去重後對比 SVG body/lid 線。",
+        "bodyExpectedUniqueSegments": 257,
+        "bodyMatchingSegments": 257,
+        "lidExpectedUniqueSegments": 72,
+        "lidMatchingSegments": 72,
+        "section": "X=0 原三角面交線經小數五位與圖面小數三位比對，Body 56/56，Lid 26/26；同類額外各一線為圖例。",
+        "limitation": "包含遮蔽邊與三角化線，非隱線消除。"
+      },
+      "reviewOfClaims": [
+        "幾何 L=19 是 Z−8 至11，明示非已驗證力學有效長。",
+        "u 與 Y 投影重疊不等於所需撓度；0.2、0.3 等是靜態名義間距。",
+        "材料、允許應變、製程、公差、實際列印及試配均待定。"
+      ]
+    }
+  ],
+  "physicalPrint": null,
+  "physicalMeasurement": null,
+  "physicalFit": null,
+  "qualifiedClearance": null,
+  "qualifiedStrength": null
+}

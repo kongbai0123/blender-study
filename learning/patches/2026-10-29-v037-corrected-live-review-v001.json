@@ -1,0 +1,449 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-29",
+  "curriculum": "learning/web/engineering-curriculum-v037.json",
+  "curriculumSha256": "79522345aef709d92f5eb28b47176c54e3a45dbc728beacf9c1420dd21d1248a",
+  "browser": "Chrome 實際載入 http://127.0.0.1:8769/ 之 v037，節及步以 CUA 操作",
+  "scope": "61 個 correctedStepIds 每步實際點選，讀取詳細步驟 DOM；不聲稱六分頁或全部原圖逐一目視。第 07 條斜邊輸入字詞在末次載入後另行重新開頁核對；其餘 60 條於前一版檢查，與最終版 DOM 字串逐項指紋比對一致。",
+  "method": "去除空白後，以 DOM 可見 detail 文字與最終 curriculum 的 context、detail.steps、success、why 組合比對 SHA-256 前 16 hex；非獨立證明指令本身可用或圖片的全部語義。",
+  "expectedStepCount": 61,
+  "observedStepCount": 61,
+  "matchedStepCount": 61,
+  "details": [
+    {
+      "id": "ch03-02-02-03",
+      "section": "03-02",
+      "domDetailSha256Prefix": "522a4304b37f2633",
+      "expectedSha256Prefix": "522a4304b37f2633",
+      "match": true
+    },
+    {
+      "id": "ch03-02-04-03",
+      "section": "03-04",
+      "domDetailSha256Prefix": "b490781431f84ce4",
+      "expectedSha256Prefix": "b490781431f84ce4",
+      "match": true
+    },
+    {
+      "id": "ch03-02-07-03",
+      "section": "03-07",
+      "domDetailSha256Prefix": "358f7294e7ac10f6",
+      "expectedSha256Prefix": "358f7294e7ac10f6",
+      "match": true
+    },
+    {
+      "id": "ch03-edit-01",
+      "section": "03-08",
+      "domDetailSha256Prefix": "c26a7e7e905352ed",
+      "expectedSha256Prefix": "c26a7e7e905352ed",
+      "match": true
+    },
+    {
+      "id": "ch03-04-06-03",
+      "section": "03-13",
+      "domDetailSha256Prefix": "eab69605cc025b4e",
+      "expectedSha256Prefix": "eab69605cc025b4e",
+      "match": true
+    },
+    {
+      "id": "ch03-05-05-01",
+      "section": "03-14",
+      "domDetailSha256Prefix": "283f35df3df8adc1",
+      "expectedSha256Prefix": "283f35df3df8adc1",
+      "match": true
+    },
+    {
+      "id": "ch03-05-05-07",
+      "section": "03-14",
+      "domDetailSha256Prefix": "5fbb75cf86e8e9cd",
+      "expectedSha256Prefix": "5fbb75cf86e8e9cd",
+      "match": true
+    },
+    {
+      "id": "ch04-03-01-01",
+      "section": "04-01",
+      "domDetailSha256Prefix": "c2a18c8b5503885e",
+      "expectedSha256Prefix": "c2a18c8b5503885e",
+      "match": true
+    },
+    {
+      "id": "ch04-03-04-03",
+      "section": "04-04",
+      "domDetailSha256Prefix": "88a01602f3bed3ab",
+      "expectedSha256Prefix": "88a01602f3bed3ab",
+      "match": true
+    },
+    {
+      "id": "ch04-03-05-01",
+      "section": "04-05",
+      "domDetailSha256Prefix": "3e28ecb523274624",
+      "expectedSha256Prefix": "3e28ecb523274624",
+      "match": true
+    },
+    {
+      "id": "ch04-03-06-01",
+      "section": "04-06",
+      "domDetailSha256Prefix": "d08e851939ffb627",
+      "expectedSha256Prefix": "d08e851939ffb627",
+      "match": true
+    },
+    {
+      "id": "ch05-05-02-03",
+      "section": "05-01",
+      "domDetailSha256Prefix": "a7e5c9a9ec23258a",
+      "expectedSha256Prefix": "a7e5c9a9ec23258a",
+      "match": true
+    },
+    {
+      "id": "ch05-05-03-04",
+      "section": "05-02",
+      "domDetailSha256Prefix": "acc925d45024d93d",
+      "expectedSha256Prefix": "acc925d45024d93d",
+      "match": true
+    },
+    {
+      "id": "ch05-05-03-05",
+      "section": "05-02",
+      "domDetailSha256Prefix": "d35bf75859923816",
+      "expectedSha256Prefix": "d35bf75859923816",
+      "match": true
+    },
+    {
+      "id": "ch05-05-03-06",
+      "section": "05-02",
+      "domDetailSha256Prefix": "1de9f95cbcca2e2b",
+      "expectedSha256Prefix": "1de9f95cbcca2e2b",
+      "match": true
+    },
+    {
+      "id": "ch05-05-03-11",
+      "section": "05-02",
+      "domDetailSha256Prefix": "4af1b673e2f25dfb",
+      "expectedSha256Prefix": "4af1b673e2f25dfb",
+      "match": true
+    },
+    {
+      "id": "ch05-05-03-12",
+      "section": "05-02",
+      "domDetailSha256Prefix": "5a45990b0c547854",
+      "expectedSha256Prefix": "5a45990b0c547854",
+      "match": true
+    },
+    {
+      "id": "ch06-05-04-02",
+      "section": "06-02",
+      "domDetailSha256Prefix": "57929dded12389cc",
+      "expectedSha256Prefix": "57929dded12389cc",
+      "match": true
+    },
+    {
+      "id": "ch06-05-06-03",
+      "section": "06-05",
+      "domDetailSha256Prefix": "51ee3c4c5ce22ddf",
+      "expectedSha256Prefix": "51ee3c4c5ce22ddf",
+      "match": true
+    },
+    {
+      "id": "ch07-sketch-01",
+      "section": "07-02",
+      "domDetailSha256Prefix": "f1f4a9c7d8d9ec91",
+      "expectedSha256Prefix": "f1f4a9c7d8d9ec91",
+      "match": true
+    },
+    {
+      "id": "ch07-sketch-02",
+      "section": "07-02",
+      "domDetailSha256Prefix": "711609d4e43b6629",
+      "expectedSha256Prefix": "711609d4e43b6629",
+      "match": true
+    },
+    {
+      "id": "ch07-sketch-03",
+      "section": "07-02",
+      "domDetailSha256Prefix": "6a65dfddbd5f5491",
+      "expectedSha256Prefix": "6a65dfddbd5f5491",
+      "match": true
+    },
+    {
+      "id": "ch07-sketch-04",
+      "section": "07-02",
+      "domDetailSha256Prefix": "7e35d028c63629e3",
+      "expectedSha256Prefix": "7e35d028c63629e3",
+      "match": true
+    },
+    {
+      "id": "ch07-solid-01",
+      "section": "07-03",
+      "domDetailSha256Prefix": "45865398c79c04ef",
+      "expectedSha256Prefix": "45865398c79c04ef",
+      "match": true
+    },
+    {
+      "id": "ch08-link-counterexample-01",
+      "section": "08-02",
+      "domDetailSha256Prefix": "be5097e8f3b93121",
+      "expectedSha256Prefix": "be5097e8f3b93121",
+      "match": true
+    },
+    {
+      "id": "ch08-driver-partial-01",
+      "section": "08-03",
+      "domDetailSha256Prefix": "725dc7cd389a1e50",
+      "expectedSha256Prefix": "725dc7cd389a1e50",
+      "match": true
+    },
+    {
+      "id": "ch08-xy-safety-01",
+      "section": "08-04",
+      "domDetailSha256Prefix": "c61ade1419b37357",
+      "expectedSha256Prefix": "c61ade1419b37357",
+      "match": true
+    },
+    {
+      "id": "ch08-xy-safety-02",
+      "section": "08-04",
+      "domDetailSha256Prefix": "be2cd1e677ec434f",
+      "expectedSha256Prefix": "be2cd1e677ec434f",
+      "match": true
+    },
+    {
+      "id": "ch08-manual-lid-link-01",
+      "section": "08-06",
+      "domDetailSha256Prefix": "059224214923733f",
+      "expectedSha256Prefix": "059224214923733f",
+      "match": true
+    },
+    {
+      "id": "ch08-manual-lid-link-02",
+      "section": "08-06",
+      "domDetailSha256Prefix": "9622bb980e10cd19",
+      "expectedSha256Prefix": "9622bb980e10cd19",
+      "match": true
+    },
+    {
+      "id": "ch08-manual-lid-cases-01",
+      "section": "08-07",
+      "domDetailSha256Prefix": "6bd36ea5b82338c0",
+      "expectedSha256Prefix": "6bd36ea5b82338c0",
+      "match": true
+    },
+    {
+      "id": "ch08-manual-lid-clamp-01",
+      "section": "08-07",
+      "domDetailSha256Prefix": "e5e3aadaf4de3de9",
+      "expectedSha256Prefix": "e5e3aadaf4de3de9",
+      "match": true
+    },
+    {
+      "id": "ch08-manual-guard-restart-01",
+      "section": "08-08",
+      "domDetailSha256Prefix": "52b351c4fdab916f",
+      "expectedSha256Prefix": "52b351c4fdab916f",
+      "match": true
+    },
+    {
+      "id": "ch08-manual-guard-01",
+      "section": "08-08",
+      "domDetailSha256Prefix": "010dec4eda1abc52",
+      "expectedSha256Prefix": "010dec4eda1abc52",
+      "match": true
+    },
+    {
+      "id": "ch08-manual-guard-02",
+      "section": "08-08",
+      "domDetailSha256Prefix": "cb46f11c1ac7165d",
+      "expectedSha256Prefix": "cb46f11c1ac7165d",
+      "match": true
+    },
+    {
+      "id": "ch08-manual-guard-03",
+      "section": "08-08",
+      "domDetailSha256Prefix": "60d5d60fa641d931",
+      "expectedSha256Prefix": "60d5d60fa641d931",
+      "match": true
+    },
+    {
+      "id": "ch08-manual-guard-04",
+      "section": "08-08",
+      "domDetailSha256Prefix": "4a1fdc6f4f242f4f",
+      "expectedSha256Prefix": "4a1fdc6f4f242f4f",
+      "match": true
+    },
+    {
+      "id": "ch08-manual-guard-xy-01",
+      "section": "08-08",
+      "domDetailSha256Prefix": "353f710fdda75b5a",
+      "expectedSha256Prefix": "353f710fdda75b5a",
+      "match": true
+    },
+    {
+      "id": "ch08-manual-guard-xy-02",
+      "section": "08-08",
+      "domDetailSha256Prefix": "c289b5278dbf91ba",
+      "expectedSha256Prefix": "c289b5278dbf91ba",
+      "match": true
+    },
+    {
+      "id": "ch08-manual-guard-y-reject-01",
+      "section": "08-08",
+      "domDetailSha256Prefix": "f104e432d694e778",
+      "expectedSha256Prefix": "f104e432d694e778",
+      "match": true
+    },
+    {
+      "id": "ch08-manual-guard-restart-02",
+      "section": "08-08",
+      "domDetailSha256Prefix": "cd1626353b777008",
+      "expectedSha256Prefix": "cd1626353b777008",
+      "match": true
+    },
+    {
+      "id": "ch11-08-02-02",
+      "section": "11-04",
+      "domDetailSha256Prefix": "35a91f8870859ca8",
+      "expectedSha256Prefix": "35a91f8870859ca8",
+      "match": true
+    },
+    {
+      "id": "ch11-11-inner-02",
+      "section": "11-09",
+      "domDetailSha256Prefix": "75275cd0d0c95597",
+      "expectedSha256Prefix": "75275cd0d0c95597",
+      "match": true
+    },
+    {
+      "id": "ch11-11-boss-opt-02",
+      "section": "11-10",
+      "domDetailSha256Prefix": "0ba6e1d6c5ca4504",
+      "expectedSha256Prefix": "0ba6e1d6c5ca4504",
+      "match": true
+    },
+    {
+      "id": "ch11-11-mount-v002-01",
+      "section": "11-12",
+      "domDetailSha256Prefix": "ce7e4be26acd8cf4",
+      "expectedSha256Prefix": "ce7e4be26acd8cf4",
+      "match": true
+    },
+    {
+      "id": "ch11-11-hand-profile-01",
+      "section": "11-13",
+      "domDetailSha256Prefix": "ef34f54dbdb95d03",
+      "expectedSha256Prefix": "ef34f54dbdb95d03",
+      "match": true
+    },
+    {
+      "id": "ch11-11-four-inserts-15",
+      "section": "11-16",
+      "domDetailSha256Prefix": "92d821cb6fefce90",
+      "expectedSha256Prefix": "92d821cb6fefce90",
+      "match": true
+    },
+    {
+      "id": "ch11-11-stl-hand-thread-04",
+      "section": "11-17",
+      "domDetailSha256Prefix": "224a203c5f4f5705",
+      "expectedSha256Prefix": "224a203c5f4f5705",
+      "match": true
+    },
+    {
+      "id": "ch11-11-stl-side-box-body-repaired-04",
+      "section": "11-17",
+      "domDetailSha256Prefix": "224a203c5f4f5705",
+      "expectedSha256Prefix": "224a203c5f4f5705",
+      "match": true
+    },
+    {
+      "id": "ch11-11-stl-side-box-lid-04",
+      "section": "11-17",
+      "domDetailSha256Prefix": "224a203c5f4f5705",
+      "expectedSha256Prefix": "224a203c5f4f5705",
+      "match": true
+    },
+    {
+      "id": "ch11-11-stl-side-cap-repaired-04",
+      "section": "11-17",
+      "domDetailSha256Prefix": "224a203c5f4f5705",
+      "expectedSha256Prefix": "224a203c5f4f5705",
+      "match": true
+    },
+    {
+      "id": "ch11-11-stl-four-boss-body-04",
+      "section": "11-17",
+      "domDetailSha256Prefix": "224a203c5f4f5705",
+      "expectedSha256Prefix": "224a203c5f4f5705",
+      "match": true
+    },
+    {
+      "id": "ch11-11-stl-four-boss-lid-04",
+      "section": "11-17",
+      "domDetailSha256Prefix": "224a203c5f4f5705",
+      "expectedSha256Prefix": "224a203c5f4f5705",
+      "match": true
+    },
+    {
+      "id": "ch11-11-cad-thread-01",
+      "section": "11-18",
+      "domDetailSha256Prefix": "26a31ea7ecf20e09",
+      "expectedSha256Prefix": "26a31ea7ecf20e09",
+      "match": true
+    },
+    {
+      "id": "ch11-11-cad-thread-05",
+      "section": "11-18",
+      "domDetailSha256Prefix": "04cd1a6f6d05249a",
+      "expectedSha256Prefix": "04cd1a6f6d05249a",
+      "match": true
+    },
+    {
+      "id": "ch11-11-cad-thread-06",
+      "section": "11-18",
+      "domDetailSha256Prefix": "b91d15347ed006b2",
+      "expectedSha256Prefix": "b91d15347ed006b2",
+      "match": true
+    },
+    {
+      "id": "ch11-11-cad-thread-07",
+      "section": "11-18",
+      "domDetailSha256Prefix": "f3660673d7ae9318",
+      "expectedSha256Prefix": "f3660673d7ae9318",
+      "match": true
+    },
+    {
+      "id": "ch11-11-cad-thread-11",
+      "section": "11-18",
+      "domDetailSha256Prefix": "80f3c830cfe8fba8",
+      "expectedSha256Prefix": "80f3c830cfe8fba8",
+      "match": true
+    },
+    {
+      "id": "ch11-11-cad-thread-12",
+      "section": "11-18",
+      "domDetailSha256Prefix": "ad5929e414876ec8",
+      "expectedSha256Prefix": "ad5929e414876ec8",
+      "match": true
+    },
+    {
+      "id": "ch11-11-cad-thread-15",
+      "section": "11-18",
+      "domDetailSha256Prefix": "3c349202ca6ea188",
+      "expectedSha256Prefix": "3c349202ca6ea188",
+      "match": true
+    },
+    {
+      "id": "ch11-11-cad-screw-01",
+      "section": "11-19",
+      "domDetailSha256Prefix": "e4a3e33153f44a9a",
+      "expectedSha256Prefix": "e4a3e33153f44a9a",
+      "match": true
+    }
+  ],
+  "specialChecks": [
+    "新70×40寬80拒絕的8個實拍圖說有區分新舊場次；另行目視新拒絕圖可見30～70界限錯誤。",
+    "11-12 起始副本顯示在示範紀錄；HTTP 200，131345 bytes，SHA-256 8cba18300231e4e923b07c0890258c8bf7ba943d4d72077519fc40e9d3826b73。",
+    "11-04 明示 Convert Mesh 前讀修改器；11-10 F9 屬跟做補充，示範值由程式讀回。",
+    "11-18 07 最終新載入頁面已更正為輸入 1.2369316 mm（此為近似值）。"
+  ],
+  "progress": "只瀏覽；未確認步驟或填寫／提交筆記。",
+  "issues": []
+}

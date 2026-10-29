@@ -1,0 +1,74 @@
+{
+  "label": "left-sketch",
+  "mode": "OBJECT",
+  "active": "Body",
+  "activeSketch": null,
+  "objects": [
+    {
+      "name": "Body Sketch",
+      "type": "CURVES",
+      "hidden": false,
+      "selected": false,
+      "modifiers": [],
+      "evaluationError": "Error: Object does not have geometry data\n"
+    },
+    {
+      "name": "Body",
+      "type": "MESH",
+      "hidden": false,
+      "selected": true,
+      "modifiers": [
+        {
+          "name": "CAD Sketcher Convert",
+          "type": "NODES"
+        }
+      ],
+      "evaluated": {
+        "vertices": 4,
+        "faces": 1,
+        "bounds": [
+          [
+            0.0,
+            60.0
+          ],
+          [
+            0.0,
+            40.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "name": "Body Workplane",
+      "type": "EMPTY",
+      "hidden": true,
+      "selected": false,
+      "modifiers": []
+    },
+    {
+      "name": "WP_XY",
+      "type": "EMPTY",
+      "hidden": true,
+      "selected": false,
+      "modifiers": []
+    },
+    {
+      "name": "WP_XZ",
+      "type": "EMPTY",
+      "hidden": true,
+      "selected": false,
+      "modifiers": []
+    },
+    {
+      "name": "WP_YZ",
+      "type": "EMPTY",
+      "hidden": true,
+      "selected": false,
+      "modifiers": []
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "sceneSha256": "1bfb2d15269fbb1debe325e18904cec6ee654a91a611ee177dbb1c89b7b713c6",
+  "blenderVersion": "5.2.1 LTS",
+  "object": "Thread_Hand_Profile",
+  "worldVerticesMm": [
+    [
+      4.800000190734863,
+      0.0,
+      0.0
+    ],
+    [
+      4.800000190734863,
+      0.0,
+      0.6000000238418579
+    ],
+    [
+      6.0,
+      0.0,
+      0.30000001192092896
+    ]
+  ],
+  "edgeVertexIndices": [
+    [
+      1,
+      0
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      0,
+      2
+    ]
+  ],
+  "vertexDegrees": [
+    2,
+    2,
+    2
+  ],
+  "faceCount": 0,
+  "maxCoordinateDeviationMm": 1.9073486345888568e-07,
+  "connectedTriangle": true,
+  "physicalPrint": null,
+  "physicalFit": null,
+  "qualifiedClearance": null,
+  "qualifiedStrength": null
+}

@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "kind": "isolated-synthetic-project",
+  "status": "completed",
+  "limitations": [
+    "全為隔離假專案及合成進度，非學員工作區、學員成果或配合驗證。",
+    "假專案 runner 與原始命令輸出可能含本機路徑，不公開。",
+    "STL 是無網格的合成 fixture，僅驗證記錄關聯，不是 Blender 匯出、可列印模型或實體結果。"
+  ],
+  "checks": {
+    "workspaceCreated": true,
+    "copySha256": "ddae8a3d3745146501d25527354352e6b71431b837c78c8269a43dc5e6a3dec6",
+    "progressUnchangedByWorkspaceAndCopy": true,
+    "duplicateNameRefused": true,
+    "registerReturnCode": 0,
+    "syntheticRevisionBefore": 1,
+    "syntheticRevisionAfter": 3,
+    "registeredPath": "learning/workspaces/engineering-parametric/my_manual_box_v001.blend",
+    "registeredSha256": "ddae8a3d3745146501d25527354352e6b71431b837c78c8269a43dc5e6a3dec6",
+    "registeredRole": "source_scene",
+    "guardRefusedRegistered": true,
+    "syntheticExportPath": "learning/workspaces/engineering-parametric/synthetic_fixture_not_printable.stl",
+    "syntheticExportSha256": "6a52706d743e867a62747e9ee22c855c2d7b576586fdf084c15b771791d154c4",
+    "exportSourcePath": "learning/workspaces/engineering-parametric/my_manual_box_v001.blend",
+    "exportSourceSha256": "ddae8a3d3745146501d25527354352e6b71431b837c78c8269a43dc5e6a3dec6"
+  },
+  "source": {
+    "path": "learning/evidence/parametric/2026-10-27-manual-lid-driver-y-v001/demo-files/manual_lid_shape_xy_driver_v001.blend",
+    "sha256": "ddae8a3d3745146501d25527354352e6b71431b837c78c8269a43dc5e6a3dec6"
+  },
+  "commands": [
+    "engineering-workspace",
+    "engineering-workspace --copy-manual-box my_manual_box_v001.blend",
+    "register-file --workspace engineering-parametric --revision 1 --path learning/workspaces/engineering-parametric/my_manual_box_v001.blend --role source_scene",
+    "register-file --workspace engineering-parametric --revision 2 --path learning/workspaces/engineering-parametric/synthetic_fixture_not_printable.stl --role export --source learning/workspaces/engineering-parametric/my_manual_box_v001.blend"
+  ]
+}

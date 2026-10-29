@@ -1,0 +1,772 @@
+{
+  "schemaVersion": 1,
+  "title": "CAD 牙型副本轉 XZ mesh 與 Screw 開口牙示範",
+  "method": "從真約束 CAD 草圖生成 Body 的 GUI 副本，GUI Convert Mesh、Only Faces、R X 90、Apply Rotation、添加 Screw、存檔重開；第二次獨立 GUI 只改視角。開檔／存檔對話路徑由程式填入；複本不再由 CAD 草圖驅動。",
+  "sourceScene": "learning/evidence/parametric/2026-10-28-cad-thread-triangle-restore-v001/demo-files/cad_thread_triangle_060_restored_v003.blend",
+  "sourceSha256": "f45cb87cb9084bb9ca92612d6dc8726c28f7abfd099954e14ea4964975dd8508",
+  "model": "learning/evidence/parametric/2026-10-28-cad-thread-detached-screw-trial-v001/demo-files/cad_triangle_detached_screw_v001.blend",
+  "modelSha256": "b1e5edf32e231e3c0910702a140431383eae9b8d7ccd35808c1cdee35deae495",
+  "audit": {
+    "path": "learning/evidence/parametric/2026-10-28-cad-thread-detached-screw-trial-v001/independent-audit-v001.json",
+    "sha256": "fb23e748d1a5ea9dec4bad234bcc75d163d1107075c8e10197904b97902fa78c",
+    "readback": {
+      "sceneSha256": "b1e5edf32e231e3c0910702a140431383eae9b8d7ccd35808c1cdee35deae495",
+      "sourceCadSketchPresent": true,
+      "sourceCadSketchName": "Body Sketch",
+      "sourceSketchDoF": 0,
+      "sourceSketchSolver": "OKAY",
+      "sourceSketchConstraints": [
+        {
+          "type": "EQUAL",
+          "value": null
+        },
+        {
+          "type": "DISTANCE",
+          "value": 0.6000000238418579
+        },
+        {
+          "type": "DISTANCE",
+          "value": 1.236931562423706
+        },
+        {
+          "type": "VERTICAL",
+          "value": null
+        }
+      ],
+      "detachedObject": "Body.001",
+      "detachedProfileWorldCoordsMm": [
+        [
+          4.800000190734863,
+          1.0554552473755103e-17,
+          -2.4146001864622235e-10
+        ],
+        [
+          6.0,
+          -1.311341701892843e-08,
+          0.30000001192092896
+        ],
+        [
+          4.800000190734863,
+          -2.622683403785686e-08,
+          0.6000000238418579
+        ]
+      ],
+      "detachedInput": {
+        "vertices": 3,
+        "edges": 3,
+        "faces": 0
+      },
+      "screw": {
+        "axis": "Z",
+        "angleRadians": 6.2831854820251465,
+        "screwOffsetMm": 1.0,
+        "iterations": 4,
+        "steps": 32
+      },
+      "evaluated": {
+        "vertices": 387,
+        "faces": 384,
+        "boundaryEdges": 6,
+        "nonManifoldEdges": 6,
+        "boundsMm": [
+          [
+            -6.0,
+            6.0
+          ],
+          [
+            -6.0,
+            6.0
+          ],
+          [
+            -2.4146001864622235e-10,
+            4.599999904632568
+          ]
+        ]
+      },
+      "limitations": [
+        "Body.001 is detached mesh copy, not driven by the CAD sketch.",
+        "Six boundary/nonmanifold edges mean open ends; not printable solid or verified ISO.",
+        "Single-start / 360 degrees / 1mm offset gives nominal 1mm pitch in this draft; no physical print, measurement or fit."
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "sequence": 1,
+      "slug": "source",
+      "image": "learning/evidence/parametric/2026-10-28-cad-thread-detached-screw-trial-v001/C2M-01-source.png",
+      "sha256": "7c5c13b458f17d71b03d819c167c1516c25cb3c6ca3789ac7260b8559dac479d",
+      "observed": {
+        "active": null,
+        "mode": "OBJECT",
+        "type": null,
+        "objects": [
+          [
+            "Body Sketch",
+            "CURVES"
+          ],
+          [
+            "Body",
+            "MESH"
+          ],
+          [
+            "Body Workplane",
+            "EMPTY"
+          ],
+          [
+            "WP_XY",
+            "EMPTY"
+          ],
+          [
+            "WP_XZ",
+            "EMPTY"
+          ],
+          [
+            "WP_YZ",
+            "EMPTY"
+          ]
+        ],
+        "mods": []
+      }
+    },
+    {
+      "sequence": 2,
+      "slug": "leave-sketch",
+      "image": "learning/evidence/parametric/2026-10-28-cad-thread-detached-screw-trial-v001/C2M-02-leave-sketch.png",
+      "sha256": "1befd148b38b65dca256f2015fa2f47b8a3cc66024f9fc97198fb63ec3247e43",
+      "observed": {
+        "active": "Body",
+        "mode": "OBJECT",
+        "type": "MESH",
+        "objects": [
+          [
+            "Body Sketch",
+            "CURVES"
+          ],
+          [
+            "Body",
+            "MESH"
+          ],
+          [
+            "Body Workplane",
+            "EMPTY"
+          ],
+          [
+            "WP_XY",
+            "EMPTY"
+          ],
+          [
+            "WP_XZ",
+            "EMPTY"
+          ],
+          [
+            "WP_YZ",
+            "EMPTY"
+          ]
+        ],
+        "mods": [
+          [
+            "CAD Sketcher Convert",
+            "NODES"
+          ]
+        ],
+        "mesh": {
+          "vertices": 0,
+          "edges": 0,
+          "faces": 0,
+          "worldCoords": []
+        },
+        "eval": {
+          "vertices": 3,
+          "edges": 3,
+          "faces": 1
+        }
+      }
+    },
+    {
+      "sequence": 3,
+      "slug": "select-body",
+      "image": "learning/evidence/parametric/2026-10-28-cad-thread-detached-screw-trial-v001/C2M-03-select-body.png",
+      "sha256": "fbe889866d8bdaf60bef92b500eca78b5ca9cad2b4899d73164e982675d3076c",
+      "observed": {
+        "active": "Body",
+        "mode": "OBJECT",
+        "type": "MESH",
+        "objects": [
+          [
+            "Body Sketch",
+            "CURVES"
+          ],
+          [
+            "Body",
+            "MESH"
+          ],
+          [
+            "Body Workplane",
+            "EMPTY"
+          ],
+          [
+            "WP_XY",
+            "EMPTY"
+          ],
+          [
+            "WP_XZ",
+            "EMPTY"
+          ],
+          [
+            "WP_YZ",
+            "EMPTY"
+          ]
+        ],
+        "mods": [
+          [
+            "CAD Sketcher Convert",
+            "NODES"
+          ]
+        ],
+        "mesh": {
+          "vertices": 0,
+          "edges": 0,
+          "faces": 0,
+          "worldCoords": []
+        },
+        "eval": {
+          "vertices": 3,
+          "edges": 3,
+          "faces": 1
+        }
+      }
+    },
+    {
+      "sequence": 4,
+      "slug": "duplicate",
+      "image": "learning/evidence/parametric/2026-10-28-cad-thread-detached-screw-trial-v001/C2M-04-duplicate.png",
+      "sha256": "342f0d2587dbf3ad2d1933522e86ca8008e5b895b5f9a76e3c85ce98c9243560",
+      "observed": {
+        "active": "Body.001",
+        "mode": "OBJECT",
+        "type": "MESH",
+        "objects": [
+          [
+            "Body Sketch",
+            "CURVES"
+          ],
+          [
+            "Body",
+            "MESH"
+          ],
+          [
+            "Body Workplane",
+            "EMPTY"
+          ],
+          [
+            "Body.001",
+            "MESH"
+          ],
+          [
+            "WP_XY",
+            "EMPTY"
+          ],
+          [
+            "WP_XZ",
+            "EMPTY"
+          ],
+          [
+            "WP_YZ",
+            "EMPTY"
+          ]
+        ],
+        "mods": [
+          [
+            "CAD Sketcher Convert",
+            "NODES"
+          ]
+        ],
+        "mesh": {
+          "vertices": 0,
+          "edges": 0,
+          "faces": 0,
+          "worldCoords": []
+        },
+        "eval": {
+          "vertices": 3,
+          "edges": 3,
+          "faces": 1
+        }
+      }
+    },
+    {
+      "sequence": 5,
+      "slug": "converted",
+      "image": "learning/evidence/parametric/2026-10-28-cad-thread-detached-screw-trial-v001/C2M-05-converted.png",
+      "sha256": "cd1f9d0f4507fd81d99e3d82430f738cfa3180da3cf62846ff92267b2b48634c",
+      "observed": {
+        "active": "Body.001",
+        "mode": "OBJECT",
+        "type": "MESH",
+        "objects": [
+          [
+            "Body Sketch",
+            "CURVES"
+          ],
+          [
+            "Body",
+            "MESH"
+          ],
+          [
+            "Body Workplane",
+            "EMPTY"
+          ],
+          [
+            "Body.001",
+            "MESH"
+          ],
+          [
+            "WP_XY",
+            "EMPTY"
+          ],
+          [
+            "WP_XZ",
+            "EMPTY"
+          ],
+          [
+            "WP_YZ",
+            "EMPTY"
+          ]
+        ],
+        "mods": [],
+        "mesh": {
+          "vertices": 3,
+          "edges": 3,
+          "faces": 1,
+          "worldCoords": [
+            [
+              4.800000190734863,
+              -2.4146001864622235e-10,
+              0.0
+            ],
+            [
+              6.0,
+              0.30000001192092896,
+              0.0
+            ],
+            [
+              4.800000190734863,
+              0.6000000238418579,
+              0.0
+            ]
+          ]
+        },
+        "eval": {
+          "vertices": 3,
+          "edges": 3,
+          "faces": 1
+        }
+      }
+    },
+    {
+      "sequence": 6,
+      "slug": "delete-face",
+      "image": "learning/evidence/parametric/2026-10-28-cad-thread-detached-screw-trial-v001/C2M-06-delete-face.png",
+      "sha256": "40101ab9f1bcd51a4eed063be8d6c7fd0330ea3696801d7b1f73f550ee34a2da",
+      "observed": {
+        "active": "Body.001",
+        "mode": "EDIT_MESH",
+        "type": "MESH",
+        "objects": [
+          [
+            "Body Sketch",
+            "CURVES"
+          ],
+          [
+            "Body",
+            "MESH"
+          ],
+          [
+            "Body Workplane",
+            "EMPTY"
+          ],
+          [
+            "Body.001",
+            "MESH"
+          ],
+          [
+            "WP_XY",
+            "EMPTY"
+          ],
+          [
+            "WP_XZ",
+            "EMPTY"
+          ],
+          [
+            "WP_YZ",
+            "EMPTY"
+          ]
+        ],
+        "mods": [],
+        "mesh": {
+          "vertices": 3,
+          "edges": 3,
+          "faces": 0,
+          "worldCoords": [
+            [
+              4.800000190734863,
+              -2.4146001864622235e-10,
+              0.0
+            ],
+            [
+              6.0,
+              0.30000001192092896,
+              0.0
+            ],
+            [
+              4.800000190734863,
+              0.6000000238418579,
+              0.0
+            ]
+          ]
+        },
+        "eval": {
+          "vertices": 3,
+          "edges": 3,
+          "faces": 0
+        }
+      }
+    },
+    {
+      "sequence": 7,
+      "slug": "rotated",
+      "image": "learning/evidence/parametric/2026-10-28-cad-thread-detached-screw-trial-v001/C2M-07-rotated.png",
+      "sha256": "a2fbd2471ae0c602c551f8e7731bad50a1e9408226ae31c8cc1964f2c5cc2b6d",
+      "observed": {
+        "active": "Body.001",
+        "mode": "OBJECT",
+        "type": "MESH",
+        "objects": [
+          [
+            "Body Sketch",
+            "CURVES"
+          ],
+          [
+            "Body",
+            "MESH"
+          ],
+          [
+            "Body Workplane",
+            "EMPTY"
+          ],
+          [
+            "Body.001",
+            "MESH"
+          ],
+          [
+            "WP_XY",
+            "EMPTY"
+          ],
+          [
+            "WP_XZ",
+            "EMPTY"
+          ],
+          [
+            "WP_YZ",
+            "EMPTY"
+          ]
+        ],
+        "mods": [],
+        "mesh": {
+          "vertices": 3,
+          "edges": 3,
+          "faces": 0,
+          "worldCoords": [
+            [
+              4.800000190734863,
+              1.0554552473755103e-17,
+              -2.4146001864622235e-10
+            ],
+            [
+              6.0,
+              -1.311341701892843e-08,
+              0.30000001192092896
+            ],
+            [
+              4.800000190734863,
+              -2.622683403785686e-08,
+              0.6000000238418579
+            ]
+          ]
+        },
+        "eval": {
+          "vertices": 3,
+          "edges": 3,
+          "faces": 0
+        }
+      }
+    },
+    {
+      "sequence": 8,
+      "slug": "apply-rotation",
+      "image": "learning/evidence/parametric/2026-10-28-cad-thread-detached-screw-trial-v001/C2M-08-apply-rotation.png",
+      "sha256": "8d75fae8d2d17bc9032f1a0cae7d1ac72cf7e86fedd0800c2593a6753bf3b695",
+      "observed": {
+        "active": "Body.001",
+        "mode": "OBJECT",
+        "type": "MESH",
+        "objects": [
+          [
+            "Body Sketch",
+            "CURVES"
+          ],
+          [
+            "Body",
+            "MESH"
+          ],
+          [
+            "Body Workplane",
+            "EMPTY"
+          ],
+          [
+            "Body.001",
+            "MESH"
+          ],
+          [
+            "WP_XY",
+            "EMPTY"
+          ],
+          [
+            "WP_XZ",
+            "EMPTY"
+          ],
+          [
+            "WP_YZ",
+            "EMPTY"
+          ]
+        ],
+        "mods": [],
+        "mesh": {
+          "vertices": 3,
+          "edges": 3,
+          "faces": 0,
+          "worldCoords": [
+            [
+              4.800000190734863,
+              1.0554552473755103e-17,
+              -2.4146001864622235e-10
+            ],
+            [
+              6.0,
+              -1.311341701892843e-08,
+              0.30000001192092896
+            ],
+            [
+              4.800000190734863,
+              -2.622683403785686e-08,
+              0.6000000238418579
+            ]
+          ]
+        },
+        "eval": {
+          "vertices": 3,
+          "edges": 3,
+          "faces": 0
+        }
+      }
+    },
+    {
+      "sequence": 9,
+      "slug": "screw",
+      "image": "learning/evidence/parametric/2026-10-28-cad-thread-detached-screw-trial-v001/C2M-09-screw.png",
+      "sha256": "6d68f9217691e287ff60549071fc89d277f01daee5248cdfa39b05cd13625a7a",
+      "observed": {
+        "stage": "screw",
+        "object": "Body.001",
+        "sourceMesh": {
+          "vertices": 3,
+          "edges": 3,
+          "faces": 0
+        },
+        "modifier": {
+          "axis": "Z",
+          "angle": 6.2831854820251465,
+          "screwOffset": 1.0,
+          "iterations": 4,
+          "steps": 32
+        },
+        "evaluated": {
+          "vertices": 387,
+          "faces": 384,
+          "nonManifoldEdges": 6,
+          "boundsMm": [
+            [
+              -6.0,
+              6.0
+            ],
+            [
+              -6.0,
+              6.0
+            ],
+            [
+              -2.4146001864622235e-10,
+              4.599999904632568
+            ]
+          ]
+        },
+        "material": null,
+        "physicalPrint": null,
+        "physicalMeasurement": null,
+        "physicalFit": null,
+        "qualifiedStrength": null,
+        "qualifiedClearance": null,
+        "checks": {
+          "axis": true,
+          "angle": true,
+          "screwOffset": true,
+          "iterations": true,
+          "steps": true,
+          "closedProfileInput": true,
+          "endStillOpen": true
+        }
+      }
+    },
+    {
+      "sequence": 10,
+      "slug": "saved",
+      "image": "learning/evidence/parametric/2026-10-28-cad-thread-detached-screw-trial-v001/C2M-10-saved.png",
+      "sha256": "33e2b0c194d6811c2f7f2500d70b9bf67dc54d2aaf872db61747cac57daaaf52",
+      "observed": {
+        "stage": "saved",
+        "object": "Body.001",
+        "sourceMesh": {
+          "vertices": 3,
+          "edges": 3,
+          "faces": 0
+        },
+        "modifier": {
+          "axis": "Z",
+          "angle": 6.2831854820251465,
+          "screwOffset": 1.0,
+          "iterations": 4,
+          "steps": 32
+        },
+        "evaluated": {
+          "vertices": 387,
+          "faces": 384,
+          "nonManifoldEdges": 6,
+          "boundsMm": [
+            [
+              -6.0,
+              6.0
+            ],
+            [
+              -6.0,
+              6.0
+            ],
+            [
+              -2.4146001864622235e-10,
+              4.599999904632568
+            ]
+          ]
+        },
+        "material": null,
+        "physicalPrint": null,
+        "physicalMeasurement": null,
+        "physicalFit": null,
+        "qualifiedStrength": null,
+        "qualifiedClearance": null,
+        "checks": {
+          "axis": true,
+          "angle": true,
+          "screwOffset": true,
+          "iterations": true,
+          "steps": true,
+          "closedProfileInput": true,
+          "endStillOpen": true
+        }
+      }
+    },
+    {
+      "sequence": 11,
+      "slug": "reopened",
+      "image": "learning/evidence/parametric/2026-10-28-cad-thread-detached-screw-trial-v001/C2M-11-reopened.png",
+      "sha256": "827347899239297816ab47209d097c4b2720a7e1af3501f9e0e1665d80c36a20",
+      "observed": {
+        "stage": "reopened",
+        "object": "Body.001",
+        "sourceMesh": {
+          "vertices": 3,
+          "edges": 3,
+          "faces": 0
+        },
+        "modifier": {
+          "axis": "Z",
+          "angle": 6.2831854820251465,
+          "screwOffset": 1.0,
+          "iterations": 4,
+          "steps": 32
+        },
+        "evaluated": {
+          "vertices": 387,
+          "faces": 384,
+          "nonManifoldEdges": 6,
+          "boundsMm": [
+            [
+              -6.0,
+              6.0
+            ],
+            [
+              -6.0,
+              6.0
+            ],
+            [
+              -2.4146001864622235e-10,
+              4.599999904632568
+            ]
+          ]
+        },
+        "material": null,
+        "physicalPrint": null,
+        "physicalMeasurement": null,
+        "physicalFit": null,
+        "qualifiedStrength": null,
+        "qualifiedClearance": null,
+        "checks": {
+          "axis": true,
+          "angle": true,
+          "screwOffset": true,
+          "iterations": true,
+          "steps": true,
+          "closedProfileInput": true,
+          "endStillOpen": true
+        }
+      }
+    },
+    {
+      "sequence": 12,
+      "slug": "full-view",
+      "image": "learning/evidence/parametric/2026-10-28-cad-thread-detached-screw-inspect-v001/C2MV-01-full-view.png",
+      "sha256": "eb71fb65de93eda5a0dee6655f48164313db8c8babf7f3a656077aa89f5ccd46",
+      "observed": {
+        "object": "Body.001",
+        "screwOffset": 1.0,
+        "iterations": 4,
+        "steps": 32,
+        "axis": "Z",
+        "inputEdges": 3,
+        "inputFaces": 0,
+        "note": "GUI 只改視角，牙端仍開口且非實體合格"
+      }
+    }
+  ],
+  "limitations": [
+    "Screw 幾何僅為開口外牙條，6 條邊界／非流形邊，未封端，不是可列印實體。",
+    "CAD 原草圖仍保留，但 GUI Convert Mesh 產物不再跟 CAD 參數連動；不是 CAD 特徵歷史。",
+    "XY→XZ 的旋轉發生在獨立副本；程式只啟用環境／讀值／對話欄，所列建模由 GUI 事件完成。",
+    "本例單頭、Angle 360°、Offset 1 mm，因此設計 lead/pitch 1 mm；0.6 mm 截面基邊不是螺距。",
+    "非 ISO 螺紋；材料、製程、實體列印、量測、試配、強度與配合合格未確認。",
+    "本機 blend、擴充套件及 raw runner 尚未完成公開隱私審查。"
+  ],
+  "physicalPrint": null,
+  "physicalMeasurement": null,
+  "physicalFit": null,
+  "qualifiedClearance": null,
+  "qualifiedStrength": null
+}

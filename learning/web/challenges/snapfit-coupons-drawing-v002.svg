@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1900 1510" role="img" aria-labelledby="title desc">
+<title id="title">懸臂卡扣 A／B／C 試片工程題圖</title><desc id="desc">三件獨立卡扣試片在 Z=4.5 的實際 STL 截面比較；幾何臂長 19、17、21 mm，材料和允許應變待定，無強度合格判定。</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#244f6e"/></marker></defs>
+<style>text{font-family:Microsoft JhengHei,Noto Sans TC,sans-serif;fill:#18384b}.edge{stroke:#17364a;stroke-width:2.7;fill:none}.dim{stroke:#244f6e;stroke-width:1.5;fill:none}.center{stroke:#6b899b;stroke-width:1.2;stroke-dasharray:10 4 3 4;fill:none}.big{font-size:25px;font-weight:700}.small{font-size:19px}.label{font-size:20px;fill:#244f6e}</style>
+<rect width="1900" height="1510" fill="white"/><rect x="20" y="20" width="1860" height="1470" fill="none" stroke="#17384c" stroke-width="3"/>
+<text x="55" y="65" class="big">懸臂卡扣比較試片｜工程題尺寸圖</text><text x="55" y="100" class="small">單位：mm（STL 無單位，依教材按 mm 解讀） · 幾何草案 · 非製造或強度合格圖</text>
+<text x="55" y="145" class="small">A／B／C：Z=4.5 mm 平面之真實 STL 交線；圖面將 Y 中心各自對齊比較，非三件組裝。</text>
+<text x="55" y="435" class="big">A_L19</text>
+<line class="edge" x1="200.000" y1="396.600" x2="200.000" y2="300.000"/>
+<line class="edge" x1="200.000" y1="396.600" x2="263.000" y2="396.600"/>
+<line class="edge" x1="200.000" y1="300.000" x2="200.000" y2="203.400"/>
+<line class="edge" x1="200.000" y1="203.400" x2="263.000" y2="203.400"/>
+<line class="edge" x1="263.000" y1="396.600" x2="326.000" y2="396.600"/>
+<line class="edge" x1="263.000" y1="203.400" x2="326.000" y2="203.400"/>
+<line class="edge" x1="326.000" y1="396.600" x2="326.000" y2="375.600"/>
+<line class="edge" x1="326.000" y1="375.600" x2="326.000" y2="358.800"/>
+<line class="edge" x1="326.000" y1="358.800" x2="327.760" y2="352.227"/>
+<line class="edge" x1="326.000" y1="241.200" x2="326.000" y2="224.400"/>
+<line class="edge" x1="326.000" y1="241.200" x2="327.760" y2="247.773"/>
+<line class="edge" x1="326.000" y1="224.400" x2="326.000" y2="203.400"/>
+<line class="edge" x1="327.760" y1="352.227" x2="329.377" y2="346.200"/>
+<line class="edge" x1="327.760" y1="247.773" x2="329.377" y2="253.800"/>
+<line class="edge" x1="329.377" y1="346.200" x2="334.148" y2="341.429"/>
+<line class="edge" x1="329.377" y1="253.800" x2="334.148" y2="258.571"/>
+<line class="edge" x1="334.148" y1="341.429" x2="338.600" y2="336.977"/>
+<line class="edge" x1="334.148" y1="258.571" x2="338.600" y2="263.023"/>
+<line class="edge" x1="338.600" y1="336.977" x2="344.984" y2="335.267"/>
+<line class="edge" x1="338.600" y1="263.023" x2="344.984" y2="264.733"/>
+<line class="edge" x1="344.984" y1="335.267" x2="351.200" y2="333.600"/>
+<line class="edge" x1="344.984" y1="264.733" x2="351.200" y2="266.400"/>
+<line class="edge" x1="351.200" y1="333.600" x2="737.600" y2="333.600"/>
+<line class="edge" x1="351.200" y1="266.400" x2="737.600" y2="266.400"/>
+<line class="edge" x1="737.600" y1="333.600" x2="1124.000" y2="333.600"/>
+<line class="edge" x1="737.600" y1="266.400" x2="1124.000" y2="266.400"/>
+<line class="edge" x1="1124.000" y1="384.000" x2="1124.000" y2="358.800"/>
+<line class="edge" x1="1124.000" y1="384.000" x2="1149.200" y2="384.000"/>
+<line class="edge" x1="1124.000" y1="358.800" x2="1124.000" y2="333.600"/>
+<line class="edge" x1="1124.000" y1="266.400" x2="1166.000" y2="266.400"/>
+<line class="edge" x1="1149.200" y1="384.000" x2="1174.400" y2="384.000"/>
+<line class="edge" x1="1166.000" y1="266.400" x2="1208.000" y2="266.400"/>
+<line class="edge" x1="1174.400" y1="384.000" x2="1191.200" y2="367.200"/>
+<line class="edge" x1="1191.200" y1="367.200" x2="1208.000" y2="350.400"/>
+<line class="edge" x1="1208.000" y1="350.400" x2="1208.000" y2="342.000"/>
+<line class="edge" x1="1208.000" y1="342.000" x2="1208.000" y2="333.600"/>
+<line class="edge" x1="1208.000" y1="333.600" x2="1208.000" y2="300.000"/>
+<line class="edge" x1="1208.000" y1="300.000" x2="1208.000" y2="266.400"/>
+<path class="center" d="M326.0 195V410 M1124.0 195V410"/>
+<path class="dim" d="M326.0 192H1124.0" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+<text x="725.0" y="182" class="label" text-anchor="middle">幾何 L 19</text>
+<text x="704.0" y="436" class="small" text-anchor="middle">此件世界 X 外框 24 mm；根面至承接面 L=19 mm</text>
+<text x="55" y="695" class="big">B_L17</text>
+<line class="edge" x1="200.000" y1="656.600" x2="200.000" y2="560.000"/>
+<line class="edge" x1="200.000" y1="656.600" x2="263.000" y2="656.600"/>
+<line class="edge" x1="200.000" y1="560.000" x2="200.000" y2="463.400"/>
+<line class="edge" x1="200.000" y1="463.400" x2="263.000" y2="463.400"/>
+<line class="edge" x1="263.000" y1="656.600" x2="326.000" y2="656.600"/>
+<line class="edge" x1="263.000" y1="463.400" x2="326.000" y2="463.400"/>
+<line class="edge" x1="326.000" y1="656.600" x2="326.000" y2="635.600"/>
+<line class="edge" x1="326.000" y1="635.600" x2="326.000" y2="618.800"/>
+<line class="edge" x1="326.000" y1="618.800" x2="327.760" y2="612.227"/>
+<line class="edge" x1="326.000" y1="501.200" x2="326.000" y2="484.400"/>
+<line class="edge" x1="326.000" y1="501.200" x2="327.760" y2="507.773"/>
+<line class="edge" x1="326.000" y1="484.400" x2="326.000" y2="463.400"/>
+<line class="edge" x1="327.760" y1="612.227" x2="329.377" y2="606.200"/>
+<line class="edge" x1="327.760" y1="507.773" x2="329.377" y2="513.800"/>
+<line class="edge" x1="329.377" y1="606.200" x2="334.148" y2="601.429"/>
+<line class="edge" x1="329.377" y1="513.800" x2="334.148" y2="518.571"/>
+<line class="edge" x1="334.148" y1="601.429" x2="338.600" y2="596.977"/>
+<line class="edge" x1="334.148" y1="518.571" x2="338.600" y2="523.023"/>
+<line class="edge" x1="338.600" y1="596.977" x2="344.984" y2="595.267"/>
+<line class="edge" x1="338.600" y1="523.023" x2="344.984" y2="524.733"/>
+<line class="edge" x1="344.984" y1="595.267" x2="351.200" y2="593.600"/>
+<line class="edge" x1="344.984" y1="524.733" x2="351.200" y2="526.400"/>
+<line class="edge" x1="351.200" y1="593.600" x2="695.600" y2="593.600"/>
+<line class="edge" x1="351.200" y1="526.400" x2="695.600" y2="526.400"/>
+<line class="edge" x1="695.600" y1="593.600" x2="1040.000" y2="593.600"/>
+<line class="edge" x1="695.600" y1="526.400" x2="1040.000" y2="526.400"/>
+<line class="edge" x1="1040.000" y1="644.000" x2="1040.000" y2="618.800"/>
+<line class="edge" x1="1040.000" y1="644.000" x2="1065.200" y2="644.000"/>
+<line class="edge" x1="1040.000" y1="618.800" x2="1040.000" y2="593.600"/>
+<line class="edge" x1="1040.000" y1="526.400" x2="1082.000" y2="526.400"/>
+<line class="edge" x1="1065.200" y1="644.000" x2="1090.400" y2="644.000"/>
+<line class="edge" x1="1082.000" y1="526.400" x2="1124.000" y2="526.400"/>
+<line class="edge" x1="1090.400" y1="644.000" x2="1107.200" y2="627.200"/>
+<line class="edge" x1="1107.200" y1="627.200" x2="1124.000" y2="610.400"/>
+<line class="edge" x1="1124.000" y1="610.400" x2="1124.000" y2="602.000"/>
+<line class="edge" x1="1124.000" y1="602.000" x2="1124.000" y2="593.600"/>
+<line class="edge" x1="1124.000" y1="593.600" x2="1124.000" y2="560.000"/>
+<line class="edge" x1="1124.000" y1="560.000" x2="1124.000" y2="526.400"/>
+<path class="center" d="M326.0 455V670 M1040.0 455V670"/>
+<path class="dim" d="M326.0 452H1040.0" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+<text x="683.0" y="442" class="label" text-anchor="middle">幾何 L 17</text>
+<text x="662.0" y="696" class="small" text-anchor="middle">此件世界 X 外框 22 mm；根面至承接面 L=17 mm</text>
+<text x="55" y="955" class="big">C_L21</text>
+<line class="edge" x1="200.000" y1="916.600" x2="200.000" y2="820.000"/>
+<line class="edge" x1="200.000" y1="916.600" x2="263.000" y2="916.600"/>
+<line class="edge" x1="200.000" y1="820.000" x2="200.000" y2="723.400"/>
+<line class="edge" x1="200.000" y1="723.400" x2="263.000" y2="723.400"/>
+<line class="edge" x1="263.000" y1="916.600" x2="326.000" y2="916.600"/>
+<line class="edge" x1="263.000" y1="723.400" x2="326.000" y2="723.400"/>
+<line class="edge" x1="326.000" y1="916.600" x2="326.000" y2="895.600"/>
+<line class="edge" x1="326.000" y1="895.600" x2="326.000" y2="878.800"/>
+<line class="edge" x1="326.000" y1="878.800" x2="327.760" y2="872.227"/>
+<line class="edge" x1="326.000" y1="761.200" x2="326.000" y2="744.400"/>
+<line class="edge" x1="326.000" y1="761.200" x2="327.760" y2="767.773"/>
+<line class="edge" x1="326.000" y1="744.400" x2="326.000" y2="723.400"/>
+<line class="edge" x1="327.760" y1="872.227" x2="329.377" y2="866.200"/>
+<line class="edge" x1="327.760" y1="767.773" x2="329.377" y2="773.800"/>
+<line class="edge" x1="329.377" y1="866.200" x2="334.148" y2="861.429"/>
+<line class="edge" x1="329.377" y1="773.800" x2="334.148" y2="778.571"/>
+<line class="edge" x1="334.148" y1="861.429" x2="338.600" y2="856.977"/>
+<line class="edge" x1="334.148" y1="778.571" x2="338.600" y2="783.023"/>
+<line class="edge" x1="338.600" y1="856.977" x2="344.984" y2="855.267"/>
+<line class="edge" x1="338.600" y1="783.023" x2="344.984" y2="784.733"/>
+<line class="edge" x1="344.984" y1="855.267" x2="351.200" y2="853.600"/>
+<line class="edge" x1="344.984" y1="784.733" x2="351.200" y2="786.400"/>
+<line class="edge" x1="351.200" y1="853.600" x2="779.600" y2="853.600"/>
+<line class="edge" x1="351.200" y1="786.400" x2="779.600" y2="786.400"/>
+<line class="edge" x1="779.600" y1="853.600" x2="1208.000" y2="853.600"/>
+<line class="edge" x1="779.600" y1="786.400" x2="1208.000" y2="786.400"/>
+<line class="edge" x1="1208.000" y1="904.000" x2="1208.000" y2="878.800"/>
+<line class="edge" x1="1208.000" y1="904.000" x2="1233.200" y2="904.000"/>
+<line class="edge" x1="1208.000" y1="878.800" x2="1208.000" y2="853.600"/>
+<line class="edge" x1="1208.000" y1="786.400" x2="1250.000" y2="786.400"/>
+<line class="edge" x1="1233.200" y1="904.000" x2="1258.400" y2="904.000"/>
+<line class="edge" x1="1250.000" y1="786.400" x2="1292.000" y2="786.400"/>
+<line class="edge" x1="1258.400" y1="904.000" x2="1275.200" y2="887.200"/>
+<line class="edge" x1="1275.200" y1="887.200" x2="1292.000" y2="870.400"/>
+<line class="edge" x1="1292.000" y1="870.400" x2="1292.000" y2="862.000"/>
+<line class="edge" x1="1292.000" y1="862.000" x2="1292.000" y2="853.600"/>
+<line class="edge" x1="1292.000" y1="853.600" x2="1292.000" y2="820.000"/>
+<line class="edge" x1="1292.000" y1="820.000" x2="1292.000" y2="786.400"/>
+<path class="center" d="M326.0 715V930 M1208.0 715V930"/>
+<path class="dim" d="M326.0 712H1208.0" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+<text x="767.0" y="702" class="label" text-anchor="middle">幾何 L 21</text>
+<text x="746.0" y="956" class="small" text-anchor="middle">此件世界 X 外框 26 mm；根面至承接面 L=21 mm</text>
+<text x="1390" y="205" class="big">A 試片端視外框</text>
+<text x="1390" y="236" class="small">沿 X 看 anchor 外形</text>
+<rect x="1450" y="280" width="184" height="360" class="edge"/>
+<g class="dim"><path d="M1450 280V250 M1634 280V250 M1634 280H1690 M1634 640H1690"/><path d="M1450 253H1634" marker-start="url(#arrow)" marker-end="url(#arrow)"/><path d="M1686 280V640" marker-start="url(#arrow)" marker-end="url(#arrow)"/></g>
+<text x="1542" y="245" text-anchor="middle" class="label">4.6</text><text x="1710" y="460" text-anchor="middle" class="label" transform="rotate(-90 1710 460)">9</text>
+<text x="1390" y="680" class="small">端視投影輪廓；內部細節參考截面</text>
+<text x="1390" y="715" class="small">外框數值按候選 world XYZ</text>
+<text x="1390" y="750" class="small">三件的夾具及對件均待定</text>
+<line x1="20" y1="1020" x2="1880" y2="1020" stroke="#17384c" stroke-width="2"/>
+<text x="55" y="1060" class="big">比較與驗證範圍</text>
+<text x="55" y="1095" class="small">L 是幾何根平面至扣鉤承接面的距離，不是已測定的力學有效長度；端部與臂頂另有 2 mm。</text>
+<text x="55" y="1129" class="small">A／B／C 為獨立 anchor + 臂 + 鉤；不等同原盒、上蓋或已指定的試扣對件。</text>
+<text x="55" y="1163" class="small">材料、允許應變、根部柔度、夾持與試驗載入條件：待定；未評估強度、改善或合格。</text>
+<text x="55" y="1197" class="small">列印方向及支撐僅候選；尚未切片、列印、量測或試配。原 STL 坐標已保留候選旋轉與分列位置。</text>
+<text x="55" y="1231" class="small">各截面僅為圖面 Y 對齊以利比較，未改 STL；請以名義標註為準，勿量螢幕或影像。</text>
+<line x1="20" y1="1260" x2="1880" y2="1260" stroke="#17384c" stroke-width="2"/><line x1="1200" y1="1260" x2="1200" y2="1490" stroke="#17384c" stroke-width="2"/>
+<text x="55" y="1300" class="small">來源：u07_A_L19_v001.stl／u07_B_L17_v001.stl／u07_C_L21_v001.stl。</text>
+<text x="55" y="1334" class="small">來源 SHA-256 依序 bb40b5f669601e11…／ac0f9ca920197544…／1e3bb7cb883fd5d0…</text>
+<text x="55" y="1368" class="small">A/B/C 世界外框依序約 24／22／26 × 4.6 × 9 mm；STL 無單位標記。</text>
+<text x="55" y="1402" class="small">定位、夾持及有效機械長待定；圖面僅供教學，不作正式製造、驗收或強度認定。</text>
+<text x="1230" y="1300" class="small">圖名：懸臂卡扣試片對照</text><text x="1230" y="1334" class="small">圖號：SNAP-EDU-001　版次：v002</text>
+<text x="1230" y="1368" class="small">單位：mm　比例：隨畫面縮放</text><text x="1230" y="1402" class="small">材料／公差／製程：待定</text>
+</svg>

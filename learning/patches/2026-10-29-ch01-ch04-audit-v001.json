@@ -1,0 +1,2145 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-29",
+  "title": "第01至04章主線小步瀏覽與教材審查",
+  "sourceCurriculum": {
+    "path": "learning/web/engineering-curriculum-v036.json",
+    "sha256": "fceaf4cc951316bfa5e827cd2a4d2bebb713318ecb7f909ad646ba216975db09"
+  },
+  "browser": {
+    "url": "http://127.0.0.1:8767/",
+    "browser": "Chrome 新建驗證分頁",
+    "scope": "ch01 27步、ch02 5步、ch03 前41步共73步逐一開啟六分頁；ch03 後12步及ch04 18步共30步逐一開啟主操作及詳細步驟；未逐張目視原圖。",
+    "noConfirmationsOrNotesSubmitted": true,
+    "limitations": "iab 在子任務不可用，Chrome 分頁未保證隱藏。僅核對可見資料、來源欄及例示紀錄；不代表逐張原圖審查或所有步驟在 Blender 重做。"
+  },
+  "checkedStepCount": 103,
+  "items": [
+    {
+      "id": "ch01-01-01-01",
+      "chapter": "ch01",
+      "section": "01-01",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "01",
+            "stepId": "01-01",
+            "sourceExists": true,
+            "operationRunId": null,
+            "eventCount": 0
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch01-01-02-01",
+      "chapter": "ch01",
+      "section": "01-02",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "01",
+            "stepId": "01-02",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-interface-language-v001",
+            "eventCount": 11
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch01-01-02-02",
+      "chapter": "ch01",
+      "section": "01-02",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "01",
+            "stepId": "01-02",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-interface-language-v001",
+            "eventCount": 11
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch01-01-02-03",
+      "chapter": "ch01",
+      "section": "01-02",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "01",
+            "stepId": "01-02",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-interface-language-v001",
+            "eventCount": 11
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch01-01-03-01",
+      "chapter": "ch01",
+      "section": "01-03",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "01",
+            "stepId": "01-03",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson01-demo-v001",
+            "eventCount": 2
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch01-01-03-02",
+      "chapter": "ch01",
+      "section": "01-03",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "01",
+            "stepId": "01-03",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson01-demo-v001",
+            "eventCount": 2
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch01-01-03-03",
+      "chapter": "ch01",
+      "section": "01-03",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "01",
+            "stepId": "01-03",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson01-demo-v001",
+            "eventCount": 2
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch01-01-04-01",
+      "chapter": "ch01",
+      "section": "01-04",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "01",
+            "stepId": "01-04",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson01-demo-v001",
+            "eventCount": 3
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch01-01-04-02",
+      "chapter": "ch01",
+      "section": "01-04",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "01",
+            "stepId": "01-04",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson01-demo-v001",
+            "eventCount": 3
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch01-01-04-03",
+      "chapter": "ch01",
+      "section": "01-04",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "01",
+            "stepId": "01-04",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson01-demo-v001",
+            "eventCount": 3
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch01-01-05-01",
+      "chapter": "ch01",
+      "section": "01-05",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "01",
+            "stepId": "01-05",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson01-demo-v001",
+            "eventCount": 3
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch01-01-05-02",
+      "chapter": "ch01",
+      "section": "01-05",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "01",
+            "stepId": "01-05",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson01-demo-v001",
+            "eventCount": 3
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch01-01-05-03",
+      "chapter": "ch01",
+      "section": "01-05",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "01",
+            "stepId": "01-05",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson01-demo-v001",
+            "eventCount": 3
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch01-01-06-01",
+      "chapter": "ch01",
+      "section": "01-06",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "01",
+            "stepId": "01-06",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson01-demo-v001",
+            "eventCount": 6
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch01-01-06-02",
+      "chapter": "ch01",
+      "section": "01-06",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "01",
+            "stepId": "01-06",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson01-demo-v001",
+            "eventCount": 6
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch01-01-06-03",
+      "chapter": "ch01",
+      "section": "01-06",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "01",
+            "stepId": "01-06",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson01-demo-v001",
+            "eventCount": 6
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch01-01-07-01",
+      "chapter": "ch01",
+      "section": "01-07",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "01",
+            "stepId": "01-07",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson01-demo-v001",
+            "eventCount": 6
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch01-01-07-02",
+      "chapter": "ch01",
+      "section": "01-07",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "01",
+            "stepId": "01-07",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson01-demo-v001",
+            "eventCount": 6
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch01-01-07-03",
+      "chapter": "ch01",
+      "section": "01-07",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "01",
+            "stepId": "01-07",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson01-demo-v001",
+            "eventCount": 6
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch01-01-08-01",
+      "chapter": "ch01",
+      "section": "01-08",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "01",
+            "stepId": "01-08",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson01-demo-v001",
+            "eventCount": 2
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch01-01-08-02",
+      "chapter": "ch01",
+      "section": "01-08",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "01",
+            "stepId": "01-08",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson01-demo-v001",
+            "eventCount": 2
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch01-01-08-03",
+      "chapter": "ch01",
+      "section": "01-08",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "01",
+            "stepId": "01-08",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson01-demo-v001",
+            "eventCount": 2
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch01-01-09-01",
+      "chapter": "ch01",
+      "section": "01-09",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "01",
+            "stepId": "01-09",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson01-demo-v001",
+            "eventCount": 4
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch01-01-09-02",
+      "chapter": "ch01",
+      "section": "01-09",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "01",
+            "stepId": "01-09",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson01-demo-v001",
+            "eventCount": 4
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch01-01-09-03",
+      "chapter": "ch01",
+      "section": "01-09",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "01",
+            "stepId": "01-09",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson01-demo-v001",
+            "eventCount": 4
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch01-observe-lip",
+      "chapter": "ch01",
+      "section": "01-10",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "05",
+            "stepId": "05-05",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson05-lid-demo-v001",
+            "eventCount": 16
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch01-fit-surfaces",
+      "chapter": "ch01",
+      "section": "01-10",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "05",
+            "stepId": "05-05",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson05-lid-demo-v001",
+            "eventCount": 16
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch02-gap-terms",
+      "chapter": "ch02",
+      "section": "02-01",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": []
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch02-04-01-01",
+      "chapter": "ch02",
+      "section": "02-02",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "04",
+            "stepId": "04-01",
+            "sourceExists": true,
+            "operationRunId": null,
+            "eventCount": 0
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch02-04-01-02",
+      "chapter": "ch02",
+      "section": "02-02",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "04",
+            "stepId": "04-01",
+            "sourceExists": true,
+            "operationRunId": null,
+            "eventCount": 0
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch02-05-01-01",
+      "chapter": "ch02",
+      "section": "02-03",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "05",
+            "stepId": "05-01",
+            "sourceExists": true,
+            "operationRunId": null,
+            "eventCount": 0
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch02-05-01-02",
+      "chapter": "ch02",
+      "section": "02-03",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "05",
+            "stepId": "05-01",
+            "sourceExists": true,
+            "operationRunId": null,
+            "eventCount": 0
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch03-02-01-01",
+      "chapter": "ch03",
+      "section": "03-01",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "02",
+            "stepId": "02-01",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson02-demo-v001",
+            "eventCount": 5
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch03-02-01-02",
+      "chapter": "ch03",
+      "section": "03-01",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "02",
+            "stepId": "02-01",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson02-demo-v001",
+            "eventCount": 5
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch03-02-01-03",
+      "chapter": "ch03",
+      "section": "03-01",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "02",
+            "stepId": "02-01",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson02-demo-v001",
+            "eventCount": 5
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch03-02-02-01",
+      "chapter": "ch03",
+      "section": "03-02",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "02",
+            "stepId": "02-02",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson02-demo-v001",
+            "eventCount": 7
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch03-02-02-02",
+      "chapter": "ch03",
+      "section": "03-02",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "02",
+            "stepId": "02-02",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson02-demo-v001",
+            "eventCount": 7
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch03-02-02-03",
+      "chapter": "ch03",
+      "section": "03-02",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "02",
+            "stepId": "02-02",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson02-demo-v001",
+            "eventCount": 7
+          }
+        ]
+      },
+      "findings": [
+        "主操作原文僅要求核對平台 Z=0.1，前一小步未輸入 Z；詳細步驟與原 run 包含設定。"
+      ],
+      "proposedCorrection": true
+    },
+    {
+      "id": "ch03-02-03-01",
+      "chapter": "ch03",
+      "section": "03-03",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "02",
+            "stepId": "02-03",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson02-demo-v001",
+            "eventCount": 3
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch03-02-03-02",
+      "chapter": "ch03",
+      "section": "03-03",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "02",
+            "stepId": "02-03",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson02-demo-v001",
+            "eventCount": 3
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch03-02-03-03",
+      "chapter": "ch03",
+      "section": "03-03",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "02",
+            "stepId": "02-03",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson02-demo-v001",
+            "eventCount": 3
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch03-02-03-04",
+      "chapter": "ch03",
+      "section": "03-03",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "02",
+            "stepId": "02-03",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson02-demo-v001",
+            "eventCount": 3
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch03-02-03-05",
+      "chapter": "ch03",
+      "section": "03-03",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "02",
+            "stepId": "02-03",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson02-demo-v001",
+            "eventCount": 3
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch03-02-04-01",
+      "chapter": "ch03",
+      "section": "03-04",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "02",
+            "stepId": "02-04",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson02-demo-v001",
+            "eventCount": 10
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch03-02-04-02",
+      "chapter": "ch03",
+      "section": "03-04",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "02",
+            "stepId": "02-04",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson02-demo-v001",
+            "eventCount": 10
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch03-02-04-03",
+      "chapter": "ch03",
+      "section": "03-04",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "02",
+            "stepId": "02-04",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson02-demo-v001",
+            "eventCount": 10
+          }
+        ]
+      },
+      "findings": [
+        "原 GUI run 示範另存，未拍網頁登記。"
+      ],
+      "proposedCorrection": true
+    },
+    {
+      "id": "ch03-02-05-01",
+      "chapter": "ch03",
+      "section": "03-05",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "02",
+            "stepId": "02-05",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson02-demo-v001",
+            "eventCount": 5
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch03-02-05-02",
+      "chapter": "ch03",
+      "section": "03-05",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "02",
+            "stepId": "02-05",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson02-demo-v001",
+            "eventCount": 5
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch03-02-05-03",
+      "chapter": "ch03",
+      "section": "03-05",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "02",
+            "stepId": "02-05",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson02-demo-v001",
+            "eventCount": 5
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch03-02-06-01",
+      "chapter": "ch03",
+      "section": "03-06",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "02",
+            "stepId": "02-06",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson02-demo-v001",
+            "eventCount": 3
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch03-02-06-02",
+      "chapter": "ch03",
+      "section": "03-06",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "02",
+            "stepId": "02-06",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson02-demo-v001",
+            "eventCount": 3
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch03-02-06-03",
+      "chapter": "ch03",
+      "section": "03-06",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "02",
+            "stepId": "02-06",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson02-demo-v001",
+            "eventCount": 3
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch03-02-07-01",
+      "chapter": "ch03",
+      "section": "03-07",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "02",
+            "stepId": "02-07",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson02-demo-v001",
+            "eventCount": 4
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch03-02-07-02",
+      "chapter": "ch03",
+      "section": "03-07",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "02",
+            "stepId": "02-07",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson02-demo-v001",
+            "eventCount": 4
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch03-02-07-03",
+      "chapter": "ch03",
+      "section": "03-07",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "02",
+            "stepId": "02-07",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson02-demo-v001",
+            "eventCount": 4
+          }
+        ]
+      },
+      "findings": [
+        "原 GUI run 示範重開，未拍網頁登記。"
+      ],
+      "proposedCorrection": true
+    },
+    {
+      "id": "ch03-edit-01",
+      "chapter": "ch03",
+      "section": "03-08",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": []
+      },
+      "findings": [
+        "前一節正在毫米方塊場景，缺少保護上版與為新編輯練習建立起始場景的明確指引；演示從隔離出廠預設開始。"
+      ],
+      "proposedCorrection": true
+    },
+    {
+      "id": "ch03-edit-02",
+      "chapter": "ch03",
+      "section": "03-08",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": []
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch03-edit-03",
+      "chapter": "ch03",
+      "section": "03-08",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": []
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch03-edit-04",
+      "chapter": "ch03",
+      "section": "03-08",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": []
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch03-edit-05",
+      "chapter": "ch03",
+      "section": "03-08",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": []
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch03-edit-06",
+      "chapter": "ch03",
+      "section": "03-08",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": []
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch03-edit-07",
+      "chapter": "ch03",
+      "section": "03-08",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": []
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch03-04-02-01",
+      "chapter": "ch03",
+      "section": "03-09",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "04",
+            "stepId": "04-02",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson04-demo-v001",
+            "eventCount": 3
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch03-04-02-02",
+      "chapter": "ch03",
+      "section": "03-09",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "04",
+            "stepId": "04-02",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson04-demo-v001",
+            "eventCount": 3
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch03-04-02-03",
+      "chapter": "ch03",
+      "section": "03-09",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "04",
+            "stepId": "04-02",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson04-demo-v001",
+            "eventCount": 3
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch03-04-03-01",
+      "chapter": "ch03",
+      "section": "03-10",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "04",
+            "stepId": "04-03",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson04-demo-v001",
+            "eventCount": 3
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch03-04-03-02",
+      "chapter": "ch03",
+      "section": "03-10",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "04",
+            "stepId": "04-03",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson04-demo-v001",
+            "eventCount": 3
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch03-04-04-01",
+      "chapter": "ch03",
+      "section": "03-11",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "04",
+            "stepId": "04-04",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson04-demo-v001",
+            "eventCount": 4
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch03-04-04-02",
+      "chapter": "ch03",
+      "section": "03-11",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "04",
+            "stepId": "04-04",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson04-demo-v001",
+            "eventCount": 4
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch03-04-04-03",
+      "chapter": "ch03",
+      "section": "03-11",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "04",
+            "stepId": "04-04",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson04-demo-v001",
+            "eventCount": 4
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch03-04-05-01",
+      "chapter": "ch03",
+      "section": "03-12",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "04",
+            "stepId": "04-05",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson04-demo-v001",
+            "eventCount": 3
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch03-04-05-02",
+      "chapter": "ch03",
+      "section": "03-12",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "04",
+            "stepId": "04-05",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson04-demo-v001",
+            "eventCount": 3
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch03-04-05-03",
+      "chapter": "ch03",
+      "section": "03-12",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟並切換原圖、快捷鍵、示範紀錄、注意、找不到按鈕分頁",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "04",
+            "stepId": "04-05",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson04-demo-v001",
+            "eventCount": 3
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch03-04-06-01",
+      "chapter": "ch03",
+      "section": "03-13",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟；其他五個分頁本輪未逐步操作",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "04",
+            "stepId": "04-06",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson04-demo-v001",
+            "eventCount": 4
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch03-04-06-02",
+      "chapter": "ch03",
+      "section": "03-13",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟；其他五個分頁本輪未逐步操作",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "04",
+            "stepId": "04-06",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson04-demo-v001",
+            "eventCount": 4
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch03-04-06-03",
+      "chapter": "ch03",
+      "section": "03-13",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟；其他五個分頁本輪未逐步操作",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "04",
+            "stepId": "04-06",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson04-demo-v001",
+            "eventCount": 4
+          }
+        ]
+      },
+      "findings": [
+        "非流形邊未選中不單獨證明無自交或製造合格。"
+      ],
+      "proposedCorrection": true
+    },
+    {
+      "id": "ch03-04-06-04",
+      "chapter": "ch03",
+      "section": "03-13",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟；其他五個分頁本輪未逐步操作",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "04",
+            "stepId": "04-06",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson04-demo-v001",
+            "eventCount": 4
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch03-05-05-01",
+      "chapter": "ch03",
+      "section": "03-14",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟；其他五個分頁本輪未逐步操作",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "05",
+            "stepId": "05-05",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson05-lid-demo-v001",
+            "eventCount": 16
+          }
+        ]
+      },
+      "findings": [
+        "成功條件依賴標題列；應可用另存通知或重開時核對。"
+      ],
+      "proposedCorrection": true
+    },
+    {
+      "id": "ch03-05-05-02",
+      "chapter": "ch03",
+      "section": "03-14",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟；其他五個分頁本輪未逐步操作",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "05",
+            "stepId": "05-05",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson05-lid-demo-v001",
+            "eventCount": 16
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch03-05-05-03",
+      "chapter": "ch03",
+      "section": "03-14",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟；其他五個分頁本輪未逐步操作",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "05",
+            "stepId": "05-05",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson05-lid-demo-v001",
+            "eventCount": 16
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch03-05-05-04",
+      "chapter": "ch03",
+      "section": "03-14",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟；其他五個分頁本輪未逐步操作",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "05",
+            "stepId": "05-05",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson05-lid-demo-v001",
+            "eventCount": 16
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch03-05-05-05",
+      "chapter": "ch03",
+      "section": "03-14",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟；其他五個分頁本輪未逐步操作",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "05",
+            "stepId": "05-05",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson05-lid-demo-v001",
+            "eventCount": 16
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch03-05-05-06",
+      "chapter": "ch03",
+      "section": "03-14",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟；其他五個分頁本輪未逐步操作",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "05",
+            "stepId": "05-05",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson05-lid-demo-v001",
+            "eventCount": 16
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch03-05-05-07",
+      "chapter": "ch03",
+      "section": "03-14",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟；其他五個分頁本輪未逐步操作",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "05",
+            "stepId": "05-05",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson05-lid-demo-v001",
+            "eventCount": 16
+          }
+        ]
+      },
+      "findings": [
+        "主操作顯示 Body 後未明寫重新選 Lid 才讀尺寸。"
+      ],
+      "proposedCorrection": true
+    },
+    {
+      "id": "ch03-05-05-08",
+      "chapter": "ch03",
+      "section": "03-14",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟；其他五個分頁本輪未逐步操作",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "05",
+            "stepId": "05-05",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson05-lid-demo-v001",
+            "eventCount": 16
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch04-03-01-01",
+      "chapter": "ch04",
+      "section": "04-01",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟；其他五個分頁本輪未逐步操作",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "03",
+            "stepId": "03-01",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson03-demo-v001",
+            "eventCount": 4
+          }
+        ]
+      },
+      "findings": [
+        "教材一律要求標題列確認檔名；Blender 不同視窗配置可能不顯示標題列。"
+      ],
+      "proposedCorrection": true
+    },
+    {
+      "id": "ch04-03-01-02",
+      "chapter": "ch04",
+      "section": "04-01",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟；其他五個分頁本輪未逐步操作",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "03",
+            "stepId": "03-01",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson03-demo-v001",
+            "eventCount": 4
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch04-03-01-03",
+      "chapter": "ch04",
+      "section": "04-01",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟；其他五個分頁本輪未逐步操作",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "03",
+            "stepId": "03-01",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson03-demo-v001",
+            "eventCount": 4
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch04-03-02-01",
+      "chapter": "ch04",
+      "section": "04-02",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟；其他五個分頁本輪未逐步操作",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "03",
+            "stepId": "03-02",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson03-demo-v001",
+            "eventCount": 3
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch04-03-02-02",
+      "chapter": "ch04",
+      "section": "04-02",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟；其他五個分頁本輪未逐步操作",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "03",
+            "stepId": "03-02",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson03-demo-v001",
+            "eventCount": 3
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch04-03-02-03",
+      "chapter": "ch04",
+      "section": "04-02",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟；其他五個分頁本輪未逐步操作",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "03",
+            "stepId": "03-02",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson03-demo-v001",
+            "eventCount": 3
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch04-03-03-01",
+      "chapter": "ch04",
+      "section": "04-03",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟；其他五個分頁本輪未逐步操作",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "03",
+            "stepId": "03-03",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson03-demo-v001",
+            "eventCount": 2
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch04-03-03-02",
+      "chapter": "ch04",
+      "section": "04-03",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟；其他五個分頁本輪未逐步操作",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "03",
+            "stepId": "03-03",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson03-demo-v001",
+            "eventCount": 2
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch04-03-03-03",
+      "chapter": "ch04",
+      "section": "04-03",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟；其他五個分頁本輪未逐步操作",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "03",
+            "stepId": "03-03",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson03-demo-v001",
+            "eventCount": 2
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch04-03-04-01",
+      "chapter": "ch04",
+      "section": "04-04",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟；其他五個分頁本輪未逐步操作",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "03",
+            "stepId": "03-04",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson03-demo-v001",
+            "eventCount": 4
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch04-03-04-02",
+      "chapter": "ch04",
+      "section": "04-04",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟；其他五個分頁本輪未逐步操作",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "03",
+            "stepId": "03-04",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson03-demo-v001",
+            "eventCount": 4
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch04-03-04-03",
+      "chapter": "ch04",
+      "section": "04-04",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟；其他五個分頁本輪未逐步操作",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "03",
+            "stepId": "03-04",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson03-demo-v001",
+            "eventCount": 4
+          }
+        ]
+      },
+      "findings": [
+        "寫「其他部件下回合再處理」但後續直接渲染，應改為可選擴充。"
+      ],
+      "proposedCorrection": true
+    },
+    {
+      "id": "ch04-03-05-01",
+      "chapter": "ch04",
+      "section": "04-05",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟；其他五個分頁本輪未逐步操作",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "03",
+            "stepId": "03-05",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson03-demo-v001",
+            "eventCount": 7
+          }
+        ]
+      },
+      "findings": [
+        "原 GUI run 示範設定與保存，未拍網頁登記。"
+      ],
+      "proposedCorrection": true
+    },
+    {
+      "id": "ch04-03-05-02",
+      "chapter": "ch04",
+      "section": "04-05",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟；其他五個分頁本輪未逐步操作",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "03",
+            "stepId": "03-05",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson03-demo-v001",
+            "eventCount": 7
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch04-03-05-03",
+      "chapter": "ch04",
+      "section": "04-05",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟；其他五個分頁本輪未逐步操作",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "03",
+            "stepId": "03-05",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson03-demo-v001",
+            "eventCount": 7
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch04-03-06-01",
+      "chapter": "ch04",
+      "section": "04-06",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟；其他五個分頁本輪未逐步操作",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "03",
+            "stepId": "03-06",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson03-demo-v001",
+            "eventCount": 4
+          }
+        ]
+      },
+      "findings": [
+        "詳細步驟省略主操作的「確定沒有需保留的新變更」條件，不應無條件指示 Don’t Save。"
+      ],
+      "proposedCorrection": true
+    },
+    {
+      "id": "ch04-03-06-02",
+      "chapter": "ch04",
+      "section": "04-06",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟；其他五個分頁本輪未逐步操作",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "03",
+            "stepId": "03-06",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson03-demo-v001",
+            "eventCount": 4
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    },
+    {
+      "id": "ch04-03-06-03",
+      "chapter": "ch04",
+      "section": "04-06",
+      "checkedScope": {
+        "browser": "實際選取本小步，讀取主操作與詳細步驟；其他五個分頁本輪未逐步操作",
+        "content": "比對主操作、前置、成功條件、詳細步驟與資料檔來源欄；並非逐條實際在 Blender 重做",
+        "originalImagePixelReview": "本輪未逐張目視原圖",
+        "sourceStepReferences": [
+          {
+            "lessonId": "03",
+            "stepId": "03-06",
+            "sourceExists": true,
+            "operationRunId": "2026-10-22-lesson03-demo-v001",
+            "eventCount": 4
+          }
+        ]
+      },
+      "findings": [],
+      "proposedCorrection": false
+    }
+  ],
+  "correctionDraft": {
+    "path": "learning/patches/2026-10-29-ch01-ch04-corrections-v001.json",
+    "sha256": "6737fbf2946232453ca1ba322ade1d1a73735fad16bc442ebd10052c5a86b0e5"
+  },
+  "learnerProgressChanged": false
+}

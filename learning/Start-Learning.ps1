@@ -4,11 +4,22 @@ $taskProjectRoot = (Resolve-Path -LiteralPath (Split-Path -Parent $PSScriptRoot)
 $taskServerScript = Join-Path $PSScriptRoot 'server.py'
 $taskRuntimePath = Join-Path $PSScriptRoot 'runtime.json'
 $taskPort = $null
-
-foreach ($candidatePort in 8766..8775) {
+. (Join-Path $PSScriptRoot 'Test-LearningDefinitions.ps1')
+$taskCandidatePorts = @(8766..8775)
+if (Test-Path -LiteralPath $taskRuntimePath) {
     try {
-        $health = Invoke-RestMethod -Uri "http://127.0.0.1:$candidatePort/api/health" -TimeoutSec 1
-        if ($health.application -eq 'blender-guided-learning' -and $health.project -eq $taskProjectRoot) {
+        $taskPreviousRuntime = Get-Content -LiteralPath $taskRuntimePath -Raw -Encoding UTF8 | ConvertFrom-Json
+        $taskPreviousPort = [int]$taskPreviousRuntime.port
+        if ($taskPreviousRuntime.project -eq $taskProjectRoot -and $taskPreviousPort -ge 8766 -and $taskPreviousPort -le 8775) {
+            $taskCandidatePorts = @($taskPreviousPort) + @($taskCandidatePorts | Where-Object { $_ -ne $taskPreviousPort })
+        }
+    } catch { }
+}
+
+foreach ($candidatePort in $taskCandidatePorts) {
+    try {
+        $health = Get-LearningJson -TaskUri "http://127.0.0.1:$candidatePort/api/health" -TaskTimeoutSec 1
+        if ($health.application -eq 'blender-guided-learning' -and $health.project -eq $taskProjectRoot -and (Test-LearningDefinitions -TaskLearningRoot $PSScriptRoot -TaskPort $candidatePort)) {
             $entryUrl = "http://127.0.0.1:$candidatePort/"
             if (-not $NoBrowser) { Start-Process $entryUrl }
             Write-Output $entryUrl
@@ -51,7 +62,7 @@ $ready = $false
 foreach ($attempt in 1..24) {
     Start-Sleep -Milliseconds 250
     try {
-        $health = Invoke-RestMethod -Uri ($entryUrl + 'api/health') -TimeoutSec 1
+        $health = Get-LearningJson -TaskUri ($entryUrl + 'api/health') -TaskTimeoutSec 1
         if ($health.application -eq 'blender-guided-learning' -and $health.project -eq $taskProjectRoot) { $ready = $true; break }
     } catch { }
     if ($taskServerProcess.HasExited) { break }

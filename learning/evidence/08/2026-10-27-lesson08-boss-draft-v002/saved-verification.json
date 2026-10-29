@@ -1,0 +1,56 @@
+{
+  "label": "saved",
+  "outerBounds": [
+    [
+      -4.0,
+      4.0
+    ],
+    [
+      -4.0,
+      4.0
+    ],
+    [
+      0.0,
+      8.0
+    ]
+  ],
+  "holeBounds": [
+    [
+      -2.0,
+      2.0
+    ],
+    [
+      -2.0,
+      2.0
+    ],
+    [
+      1.0,
+      8.0
+    ]
+  ],
+  "vertices": 128,
+  "faces": 98,
+  "nonManifoldEdges": 0,
+  "signedVolumeMm3": 312.14450376668685,
+  "segments": 32,
+  "outerVertexDiameterMm": 8,
+  "holeVertexDiameterMm": 4,
+  "outerFlatToFlatMm": 7.961477813377575,
+  "holeFlatToFlatMm": 3.9807389066887877,
+  "bottomMm": 1,
+  "holeDepthMm": 7,
+  "mechanicalHardware": null,
+  "physicalFit": null,
+  "qualifiedHoleDiameter": null,
+  "sourceSceneSha256": "9bda36c10fd916ef9cbe688f5ca56dcf8cfa0adb83d684300e60196225589d8f",
+  "standaloneNotJoinedToBox": true,
+  "checks": {
+    "outerBounds": true,
+    "holeBounds": true,
+    "closed": true,
+    "positiveVolume": true,
+    "polygonVolume": true,
+    "sourceReferenceExists": true,
+    "separateNotJoined": true
+  }
+}

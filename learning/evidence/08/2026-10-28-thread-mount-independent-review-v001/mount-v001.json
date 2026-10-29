@@ -1,0 +1,83 @@
+{
+  "sceneSha256": "b97a021c1422ced95b17a80893195df1907a725eb2e53789e0992a23793320ce",
+  "object": "Body",
+  "blenderVersion": "5.2.1 LTS",
+  "meshCounts": {
+    "vertices": 712,
+    "edges": 1130,
+    "faces": 420,
+    "loopTriangles": 1420
+  },
+  "worldBoundsMm": [
+    [
+      -30.0,
+      34.29999542236328
+    ],
+    [
+      -20.0,
+      20.0
+    ],
+    [
+      -15.0,
+      15.0
+    ]
+  ],
+  "boundaryEdges": 0,
+  "nonManifoldEdges": 0,
+  "components": 1,
+  "minimumTri": {
+    "areaMm2": 5.434115984205692e-05,
+    "vertexIndices": [
+      711,
+      705,
+      703
+    ],
+    "coordinatesMm": [
+      [
+        30.0,
+        3.3195314407348633,
+        -4.968029499053955
+      ],
+      [
+        30.0,
+        3.3374485969543457,
+        -4.956826686859131
+      ],
+      [
+        30.0,
+        3.5152764320373535,
+        -4.839572906494141
+      ]
+    ],
+    "longestEdgeMm": 0.23413072810800828,
+    "shortestSideMm": 0.021131196920453718,
+    "altitudeToLongestMm": 0.00046419502712167257
+  },
+  "trianglesBelowMm2": {
+    "1e-05": 0,
+    "0.0001": 1,
+    "0.001": 2,
+    "0.01": 16
+  },
+  "minimumOriginalMeshEdge": {
+    "lengthMm": 0.014692306394749116,
+    "vertexIndices": [
+      621,
+      675
+    ],
+    "coordinatesMm": [
+      [
+        30.014692306518555,
+        3.86504864692688,
+        3.1719629764556885
+      ],
+      [
+        30.0,
+        3.86504864692688,
+        3.1719629764556885
+      ]
+    ]
+  },
+  "bvhNonSharedVertexCandidateCount": 0,
+  "limitation": "Mesh loop triangle method; BVH excludes pairs sharing vertex indices. Zero candidates and threshold counts are not evidence that all self-intersections, thin features, manufacturing, tolerance or fit problems are absent."
+}

@@ -1,0 +1,167 @@
+{
+  "kind": "controlled-manual-box-restart-rerun-script-gui-trial",
+  "method": "獨立新 Blender 5.2.1 程序，隔離假專案與假 progress；以程式啟用 CAD Sketcher、複製檔案、填對話框路徑與讀幾何。GUI 切換 Text Editor，已連結文字顯示後主動按 Alt+P，回 3D 面板提交長度80。",
+  "sourceScene": {
+    "path": "learning/evidence/parametric/2026-10-27-manual-box-guard-gui-trial-v004/demo-files/manual_guard_trial_70x40_v003.blend",
+    "sha256": "9942f712fe5f7bf88daa9b144de0b29fbae5a9dd8217acdb96a3df0f3aacad3f"
+  },
+  "programs": [
+    {
+      "path": "learning/tutor/guarded_manual_box_v001.py",
+      "sha256": "9dd50ba87227fc6ea77df4f6344b602ba245becfe4efe28d5343600a1282f067"
+    },
+    {
+      "path": "learning/tutor/manual_box_auto_update_v002.py",
+      "sha256": "cc39a2376c8abc41f61cb5beb796a83e22b63dc33b6b6aed5df9f135e83fc457"
+    },
+    {
+      "path": "learning/tutor/manual_box_reference_v001.json",
+      "sha256": "78f39a6ec422bb02b64fff64f70896c927a6ab449bcd84be9a03b6657bedae5c"
+    }
+  ],
+  "before": {
+    "outerMm": [
+      70,
+      40
+    ],
+    "bounds": {
+      "Body": [
+        [
+          0.0,
+          70.0
+        ],
+        [
+          0.0,
+          40.0
+        ],
+        [
+          0.0,
+          30.0
+        ]
+      ],
+      "Body.001": [
+        [
+          2.0,
+          68.0
+        ],
+        [
+          2.0,
+          38.0
+        ],
+        [
+          2.0,
+          30.0
+        ]
+      ],
+      "Cube": [
+        [
+          0.000518798828125,
+          69.99948120117188
+        ],
+        [
+          0.000324249267578125,
+          39.99967575073242
+        ],
+        [
+          26.00001335144043,
+          31.99998664855957
+        ]
+      ]
+    }
+  },
+  "after": {
+    "outerMm": [
+      80,
+      40
+    ],
+    "bounds": {
+      "Body": [
+        [
+          0.0,
+          80.0
+        ],
+        [
+          0.0,
+          40.0
+        ],
+        [
+          0.0,
+          30.0
+        ]
+      ],
+      "Body.001": [
+        [
+          2.0,
+          78.0
+        ],
+        [
+          2.0,
+          38.0
+        ],
+        [
+          2.0,
+          30.0
+        ]
+      ],
+      "Cube": [
+        [
+          0.000518798828125,
+          79.99948120117188
+        ],
+        [
+          0.000324249267578125,
+          39.99967575073242
+        ],
+        [
+          26.00001335144043,
+          31.99998664855957
+        ]
+      ]
+    }
+  },
+  "images": [
+    {
+      "file": "GUARD-01-opened.png",
+      "sha256": "ca569d4aa52830aedb04b865b0dbaa043eee1514143bbaf160ae8ac5e64592d9"
+    },
+    {
+      "file": "GUARD-02-outer-sketch.png",
+      "sha256": "ca569d4aa52830aedb04b865b0dbaa043eee1514143bbaf160ae8ac5e64592d9"
+    },
+    {
+      "file": "GUARD-03-text-after-restart.png",
+      "sha256": "1704529b7f960185625f01cd24b595f5cf60dfafe78f32ac8798b6ed91e16545"
+    },
+    {
+      "file": "GUARD-04-script-open.png",
+      "sha256": "1704529b7f960185625f01cd24b595f5cf60dfafe78f32ac8798b6ed91e16545"
+    },
+    {
+      "file": "GUARD-05-script-run.png",
+      "sha256": "d602ad10ec39a407af33917a1e979ab2ec1470834b990b9dc7e166c0988fd411"
+    },
+    {
+      "file": "GUARD-06-viewport.png",
+      "sha256": "cec035a78e59b03e93e80ba0cea89e8c0599cf276bae04924fd2116bb2eb5242"
+    },
+    {
+      "file": "GUARD-07-restart-proposal.png",
+      "sha256": "ed05d84e1724e6782ee85bec8e9a4001238aff6585df383fd8bb0aa33b4b4467"
+    },
+    {
+      "file": "GUARD-08-restart-result.png",
+      "sha256": "f33be70f371fb7319634e70eee98e541ff7f081673bd3e33ed97d7997de1597b"
+    }
+  ],
+  "limitations": [
+    "本次新 Blender 程序在文字編輯器主動執行 Alt+P 來註冊面板；未核驗執行之前面板狀態，也未證實程式自動常駐啟用。",
+    "本次假專案中 `.blend` 已含相對連結的文字檔；複本路徑與三項程式檔由程式準備。真實個人工作區未被示範修改。",
+    "開啟與返回視圖原圖有 sketcher.slvs_select 找不到的提示，原因未知；即使受控改值成功也不代表所有工具正常。",
+    "v001/v003 是既有文字檔點按及側欄切換等操作失敗，保留原證據，不以失敗前述為模型或正式結果。",
+    "只限指定範本與受控面板，原生欄位可繞過防護和受控更新；不攔截原生儲存或匯出。",
+    "圖片只顯示外框與介面，內腔和蓋尺寸是 Python 讀值；未測全面碰撞、列印、量測與實體試配。"
+  ],
+  "physicalMeasurements": null,
+  "fitResults": null,
+  "qualifiedClearanceMm": null
+}

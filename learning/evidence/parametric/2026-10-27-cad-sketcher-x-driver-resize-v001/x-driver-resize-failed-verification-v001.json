@@ -1,0 +1,65 @@
+{
+  "kind": "failed-to-enter-outer-sketch",
+  "learnerWorkspacesUnchanged": true,
+  "runnerStatus": "failed",
+  "method": "隔離 Blender 複製既有 X driver 場景；按先前 outer-edit-v004 在視窗右鍵及選單點選，程式僅啟用插件、填檔案視窗及讀值。",
+  "finding": "載入副本後活動物件為 Body.001；右鍵選單 Edit Sketch 顯示灰色停用，後續未進入 Body Sketch，preedit 檢查主動停止。原因未經證實。",
+  "activeObject": "Body.001",
+  "activeSketch": null,
+  "drivers": [
+    {
+      "dataPath": "[\"slvs:c:d111c9dc741ee189\"]",
+      "expression": "slvs_c_b596b36138076155-4",
+      "isValid": true
+    }
+  ],
+  "bounds": {
+    "Body": [
+      [
+        0.0,
+        60.0
+      ],
+      [
+        0.0,
+        40.0
+      ],
+      [
+        0.0,
+        30.0
+      ]
+    ],
+    "Body.001": [
+      [
+        2.0,
+        58.0
+      ],
+      [
+        2.0,
+        38.0
+      ],
+      [
+        2.0,
+        30.0
+      ]
+    ]
+  },
+  "images": [
+    {
+      "file": "EDIT-01-opened.png",
+      "sha256": "c593a3ba8681e8d7471667c0e61c4e03656eba588f1d120851283cdfced154f3"
+    },
+    {
+      "file": "EDIT-02-context-menu.png",
+      "sha256": "2886d03599476788deb7d712dba949cfdb3ecdf1b721ae88d0c62904fd605745"
+    },
+    {
+      "file": "EDIT-03-body-sketch.png",
+      "sha256": "c593a3ba8681e8d7471667c0e61c4e03656eba588f1d120851283cdfced154f3"
+    }
+  ],
+  "limitations": [
+    "未實際修改 X70、未驗證位置或壁厚的驅動連動、未另存新修改版本。",
+    "run.json 的 body-sketch 動作是預定描述，不是成功證明；應使用此摘要。",
+    "Y 驅動、上蓋、實體列印及試配未完成。"
+  ]
+}

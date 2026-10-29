@@ -1,0 +1,69 @@
+{
+  "label": "saved",
+  "settings": {
+    "name": "Screw",
+    "type": "SCREW",
+    "angle": 6.2831854820251465,
+    "screwOffset": 1.0,
+    "iterations": 4,
+    "steps": 32,
+    "renderSteps": 32,
+    "axis": "Z",
+    "useObjectScrewOffset": false,
+    "useMergeVertices": false
+  },
+  "evaluated": {
+    "vertices": 387,
+    "edges": 642,
+    "faces": 256,
+    "radiusMinMaxMm": [
+      4.999999722699926,
+      6.000000318206362
+    ],
+    "zMinMaxMm": [
+      0.0,
+      4.599999904632568
+    ],
+    "positiveXOuterPhaseZMm": [
+      0.30000001192092896,
+      1.2999999523162842,
+      2.299999952316284,
+      3.299999952316284,
+      4.300000190734863
+    ],
+    "boundaryEdges": 260,
+    "nonManifoldEdges": 260
+  },
+  "semantic": {
+    "demonstrationOnly": true,
+    "claimsISO": false,
+    "starts": 1,
+    "singleProfile": true,
+    "angleDegrees": 360,
+    "screwDisplacementPerRotationMm": 1,
+    "leadMm": 1,
+    "pitchMm": 1,
+    "iterationsIsStarts": false,
+    "revolutionTravelMm": 4,
+    "profileHeightMm": 0.6,
+    "overallZSpanMm": 4.6,
+    "effectiveEngagementMm": null,
+    "isWatertight": false,
+    "printed": false,
+    "fitTested": false,
+    "qualifiedClearanceMm": null
+  },
+  "sourceSceneSha256": "9bda36c10fd916ef9cbe688f5ca56dcf8cfa0adb83d684300e60196225589d8f",
+  "checks": {
+    "angle360": true,
+    "offset1": true,
+    "iterations4": true,
+    "axisZ": true,
+    "objectScrewOff": true,
+    "resolution32": true,
+    "radii5to6": true,
+    "zSpan": true,
+    "fourTurnsPhase": true,
+    "isOpen": true
+  }
+}

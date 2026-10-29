@@ -1,0 +1,58 @@
+{
+  "sceneSha256": "fca5955405bcb9c6cb84db308aad3cc11bd10ffea989129e109a1981bf279f5e",
+  "sourceSha256": "df2108d06250807a9fa593ce966ae09e42d0fc3b2bfad97c98d0c40f77378c54",
+  "kind": "thread",
+  "model": "Side_Cap_Blank",
+  "tool": "Cap_Cutter_020",
+  "activeSelected": true,
+  "modelModifiers": 0,
+  "toolVisible": true,
+  "capVertices": 128,
+  "capFaces": 66,
+  "toolVertices": 707,
+  "boundsCapMm": [
+    [
+      30.299999237060547,
+      35.79999923706055
+    ],
+    [
+      -7.690725326538086,
+      7.690725326538086
+    ],
+    [
+      -7.690725326538086,
+      7.690725326538086
+    ]
+  ],
+  "boundsToolMm": [
+    [
+      29.500003814697266,
+      34.30000305175781
+    ],
+    [
+      -6.1999993324279785,
+      6.1999993324279785
+    ],
+    [
+      -6.1999993324279785,
+      6.199999809265137
+    ]
+  ],
+  "sourceGeometryUnchanged": {
+    "Body": true,
+    "Lid": true,
+    "Thread_Core": true
+  },
+  "detail": {
+    "radialDeltaRangeMm": [
+      0.1999989945447611,
+      0.20000035734743715
+    ],
+    "axialDeltaMaxAbsMm": 3.814697265625e-06
+  },
+  "method": "Independently reopened generated starting scene; checked geometry, active object and source hashes. Both tool/blank are prepared by script, not manually drawn in GUI.",
+  "limitations": [
+    "Starting files are local teaching assets only; privacy/publication safety has not been reviewed.",
+    "Models and nominal clearances are drafts; no physical measurement, print or fit has been performed."
+  ]
+}

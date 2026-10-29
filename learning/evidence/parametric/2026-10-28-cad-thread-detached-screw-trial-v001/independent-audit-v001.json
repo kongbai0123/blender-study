@@ -1,0 +1,80 @@
+{
+  "sceneSha256": "b1e5edf32e231e3c0910702a140431383eae9b8d7ccd35808c1cdee35deae495",
+  "sourceCadSketchPresent": true,
+  "sourceCadSketchName": "Body Sketch",
+  "sourceSketchDoF": 0,
+  "sourceSketchSolver": "OKAY",
+  "sourceSketchConstraints": [
+    {
+      "type": "EQUAL",
+      "value": null
+    },
+    {
+      "type": "DISTANCE",
+      "value": 0.6000000238418579
+    },
+    {
+      "type": "DISTANCE",
+      "value": 1.236931562423706
+    },
+    {
+      "type": "VERTICAL",
+      "value": null
+    }
+  ],
+  "detachedObject": "Body.001",
+  "detachedProfileWorldCoordsMm": [
+    [
+      4.800000190734863,
+      1.0554552473755103e-17,
+      -2.4146001864622235e-10
+    ],
+    [
+      6.0,
+      -1.311341701892843e-08,
+      0.30000001192092896
+    ],
+    [
+      4.800000190734863,
+      -2.622683403785686e-08,
+      0.6000000238418579
+    ]
+  ],
+  "detachedInput": {
+    "vertices": 3,
+    "edges": 3,
+    "faces": 0
+  },
+  "screw": {
+    "axis": "Z",
+    "angleRadians": 6.2831854820251465,
+    "screwOffsetMm": 1.0,
+    "iterations": 4,
+    "steps": 32
+  },
+  "evaluated": {
+    "vertices": 387,
+    "faces": 384,
+    "boundaryEdges": 6,
+    "nonManifoldEdges": 6,
+    "boundsMm": [
+      [
+        -6.0,
+        6.0
+      ],
+      [
+        -6.0,
+        6.0
+      ],
+      [
+        -2.4146001864622235e-10,
+        4.599999904632568
+      ]
+    ]
+  },
+  "limitations": [
+    "Body.001 is detached mesh copy, not driven by the CAD sketch.",
+    "Six boundary/nonmanifold edges mean open ends; not printable solid or verified ISO.",
+    "Single-start / 360 degrees / 1mm offset gives nominal 1mm pitch in this draft; no physical print, measurement or fit."
+  ]
+}

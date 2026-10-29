@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "id": "engineering-box-render-v004",
+  "createdAt": "2026-10-27T13:30:02.717642+08:00",
+  "description": "Independent Blender Eevee render of existing box and lid, exploded for teaching; no physical fit conclusion.",
+  "method": {
+    "setup": "programmatic camera, materials, lights, ground and lid translation; not manual UI teaching",
+    "render": "Render > Render Image invoked through native simulated events",
+    "pngSave": "programmatic Render Result save_render, not GUI Save As",
+    "geometryCheck": "independent Blender process compared source and render scene mesh/transform and saved output path; no save"
+  },
+  "sourceScene": {
+    "path": "learning/evidence/05/2026-10-22-lesson05-lid-demo-v001/demo-files/u05_lid_v001.blend",
+    "bytes": 99064,
+    "sha256": "ab08f331dcb26c5ffc6c6ca56c7c7f022df96791c4777e37c5f01a964fbed6ff"
+  },
+  "outputScene": {
+    "path": "learning/evidence/12/2026-10-27-engineering-box-render-v004/demo-files/engineering_box_render_v001.blend",
+    "bytes": 100938,
+    "sha256": "db03247077da659ff4c4a0a5ac411e7662ab326fb6302e58496e1636f69246de"
+  },
+  "renderArtifact": {
+    "type": "render-output-png",
+    "path": "learning/evidence/12/2026-10-27-engineering-box-render-v004/demo-files/box_lid_render_v001.png",
+    "bytes": 311599,
+    "sha256": "71f81543cc96a7b4187521b990c7e22b572ab6b27c6025a50671c32d74b1bba1",
+    "width": 640,
+    "height": 480
+  },
+  "screenshots": [
+    {
+      "type": "screenshot",
+      "path": "learning/evidence/12/2026-10-27-engineering-box-render-v004/12-01-01-prepared.png",
+      "bytes": 188297,
+      "sha256": "2d41fb41da7934191bcbad6f4a89ca2202bc8bae89d366646cca563d2e66dc6e"
+    },
+    {
+      "type": "screenshot",
+      "path": "learning/evidence/12/2026-10-27-engineering-box-render-v004/12-01-02-saved.png",
+      "bytes": 192111,
+      "sha256": "f86103e7fd553bf9ee9612b91f1fa50419d47a51615e35d8363963ddf60a37da"
+    },
+    {
+      "type": "screenshot",
+      "path": "learning/evidence/12/2026-10-27-engineering-box-render-v004/12-01-03-render-result.png",
+      "bytes": 300051,
+      "sha256": "f89eed44b64ccc6d363f5388137a473172fe8a2d6ae9494e60c9475d5b89fda4"
+    },
+    {
+      "type": "screenshot",
+      "path": "learning/evidence/12/2026-10-27-engineering-box-render-v004/12-01-04-png-saved.png",
+      "bytes": 300051,
+      "sha256": "f89eed44b64ccc6d363f5388137a473172fe8a2d6ae9494e60c9475d5b89fda4"
+    }
+  ],
+  "independentGeometryAndOutputPathCheck": {
+    "path": "learning/evidence/12/2026-10-27-engineering-box-render-v004/independent-geometry-check-v002.json",
+    "bytes": 1929,
+    "sha256": "a2fc9100059846a6959909c9febd4c9cb5484a98db8326c3379dbdd161accc8a"
+  },
+  "geometryAndOutputPathChecks": {
+    "bodyMeshUnchanged": true,
+    "lidMeshUnchanged": true,
+    "bodyPositionUnchanged": true,
+    "lidRaised18": true,
+    "lidOtherTransformsSame": true,
+    "relativeOutputSaved": true,
+    "outputRelativeToBlend": true
+  },
+  "outputPathReadback": {
+    "saved": "//render_output\\box_lid",
+    "resolvedForEvidenceScene": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\12\\2026-10-27-engineering-box-render-v004\\demo-files\\render_output\\box_lid",
+    "resolutionSemantics": "// resolves relative to current .blend file location",
+    "safety": "Copy or Save As the scene into a personal workspace before rendering to files; opening evidence directly can output inside evidence."
+  },
+  "sceneReadback": {
+    "sourceHash": "ab08f331dcb26c5ffc6c6ca56c7c7f022df96791c4777e37c5f01a964fbed6ff",
+    "engine": "BLENDER_EEVEE",
+    "resolution": [
+      640,
+      480
+    ],
+    "camera": "RenderDemoCamera",
+    "bodyDimensionsMm": [
+      60.0,
+      40.0,
+      30.0
+    ],
+    "lidDimensionsMm": [
+      60.0,
+      40.0,
+      6.0
+    ],
+    "lidLocationZMm": 34.0,
+    "lidRaisedForDisplayMm": 18,
+    "setupMethod": "programmatic materials, lighting, camera, ground and display placement",
+    "notPhysicalFit": true,
+    "renderCompleteEvents": 1,
+    "pngSha256": "71f81543cc96a7b4187521b990c7e22b572ab6b27c6025a50671c32d74b1bba1",
+    "pngBytes": 311599,
+    "saveMethod": "programmatic bpy.data.images[Render Result].save_render, not GUI Save As"
+  },
+  "runner": {
+    "status": "completed",
+    "exitCode": 0,
+    "runErrors": [],
+    "workspaceContentsUnchanged": true,
+    "comparisonScope": "workspace endpoint snapshots only"
+  },
+  "limitations": [
+    "Relative render output path is not by itself evidence protection; copy or Save As to personal workspace first.",
+    "Lid was raised 18 mm for illustration: not an assembled/fit position.",
+    "Material colors and lighting are visual presentation, not a specified material or physical test.",
+    "Scene setup is programmatic; GUI rendering is real but the full scene was not set up manually in GUI.",
+    "v001 engine enum failed; v002 completed but lid was clipped; v003 hard-coded an evidence output path; retained all.",
+    "First independent v004 path comparison falsely failed because Windows normalized path separators; preserved, rechecked with normalized separators.",
+    "No slice, print, physical measurements, fitting or strength/clearance qualification."
+  ],
+  "physicalMeasurements": null,
+  "fitResults": null,
+  "qualifiedClearanceMm": null
+}

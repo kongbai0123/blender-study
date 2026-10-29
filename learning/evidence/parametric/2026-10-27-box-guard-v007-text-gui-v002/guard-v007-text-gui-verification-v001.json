@@ -1,0 +1,192 @@
+{
+  "version": "guard-v007-text-gui-verification-v001",
+  "runnerCompleted": true,
+  "realLearnerWorkspacesUnchanged": true,
+  "method": "系統暫存區程式建立假專案和假 progress；Blender Text Editor GUI Open、Alt+P，檔案瀏覽器路徑由程式填入。CAD Sketcher 由程式啟用；表單採 GUI 模擬事件。",
+  "textReadback": {
+    "isDirty": false,
+    "sameAsDisk": true
+  },
+  "checks": {
+    "W50BothObjects": true,
+    "D29RejectedAndUnchanged": true,
+    "L70BothObjects": true,
+    "saveAndReopen70x50": true,
+    "registeredFixtureUnchanged": true,
+    "registeredErrorVisuallyConfirmedImage": "GUARD-22-registered-attempt.png",
+    "registeredErrorNotMachineParsed": true
+  },
+  "readings": {
+    "width-assertion": {
+      "L": 80.0,
+      "W": 50.0,
+      "D": 4.0
+    },
+    "invalid-assertion": {
+      "L": 80.0,
+      "W": 50.0,
+      "D": 4.0
+    },
+    "length-assertion": {
+      "L": 70.0,
+      "W": 50.0,
+      "D": 4.0
+    },
+    "reopened-assertion": {
+      "L": 70.0,
+      "W": 50.0,
+      "D": 4.0
+    },
+    "registered-assertion": {
+      "L": 70.0,
+      "W": 50.0,
+      "D": 4.0
+    }
+  },
+  "fakeScene": {
+    "file": "demo-files/fake_guard_trial_v002.blend",
+    "sha256": "cab6d3d950fa87b94a0e40aa42c6a244e6f5270174a0e28803d47950f286543f",
+    "classification": "隔離測試副本，不是學員作品"
+  },
+  "images": [
+    {
+      "seq": 1,
+      "file": "GUARD-01-fixture-opened.png",
+      "sha256": "53d7b4073d8bf4659496bd8fc213184fb335a94c277d05f3e7d566ce4c548fcc",
+      "action": "系統暫存區假專案開啟假個人副本"
+    },
+    {
+      "seq": 2,
+      "file": "GUARD-02-script-opened.png",
+      "sha256": "c3f79ceedb876f5216ce005410f46f3d3955f182ab1d3a5f2eee08d816b8680f",
+      "action": "在 Text Editor 開啟 v007；路徑由程式填入"
+    },
+    {
+      "seq": 3,
+      "file": "GUARD-03-script-run.png",
+      "sha256": "c3f79ceedb876f5216ce005410f46f3d3955f182ab1d3a5f2eee08d816b8680f",
+      "action": "Alt+P 執行受控面板腳本"
+    },
+    {
+      "seq": 4,
+      "file": "GUARD-04-panel-click.png",
+      "sha256": "009bff5386c44e9e1a9742b6bd319281a6084073763ca5af3ee9b51de89c2a9c",
+      "action": "以原生事件點擊側欄分頁並觀察面板位置"
+    },
+    {
+      "seq": 5,
+      "file": "GUARD-05-dialog-open.png",
+      "sha256": "98dd889543c0c043a7e0e2672d9b721c371d51b54380f537cf065771cebac425",
+      "action": "以原生事件開啟尺寸預檢對話框"
+    },
+    {
+      "seq": 6,
+      "file": "GUARD-06-empty-attempt.png",
+      "sha256": "089f6be44387bb09d519f0bb98ad39922014908fa34be92bb4959c05c4ffdf6b",
+      "action": "未選參數／未填值而提交，應遭拒絕"
+    },
+    {
+      "seq": 7,
+      "file": "GUARD-07-switch-before.png",
+      "sha256": "46341e51a19158eefb2ec5836ad39d4f16cef33c713ea3247247949b1507a535",
+      "action": "選 W 並輸入 70、勾選，切換前記錄"
+    },
+    {
+      "seq": 8,
+      "file": "GUARD-08-switch-after.png",
+      "sha256": "b10ce87ddbed4b62c5b3f932cf7583798cb24e8a691748c797f1ca2a4d0ff39d",
+      "action": "改選 L 後觀察值與勾選是否清空"
+    },
+    {
+      "seq": 9,
+      "file": "GUARD-09-switch-attempt.png",
+      "sha256": "ceb5d3f3134bb5de21b85eae11e11de81f368e7890608b5265639ce75a83a5dc",
+      "action": "切換後未重新輸入及確認而提交，預期被拒"
+    },
+    {
+      "seq": 10,
+      "file": "GUARD-10-value-before.png",
+      "sha256": "d7e2c7ab87f76188b3f68851b9cc5476eb0418c595984282b1f4b6904c3245f8",
+      "action": "輸入 W=70 並勾選後，記錄切換前狀態"
+    },
+    {
+      "seq": 11,
+      "file": "GUARD-11-value-after.png",
+      "sha256": "90960e7668af1eac2594dee828e8c65f1b470b67e0d61a4968165ecc7f47ebc6",
+      "action": "將 W 新值改為 90；檢查確認是否自動取消"
+    },
+    {
+      "seq": 12,
+      "file": "GUARD-12-unack-attempt.png",
+      "sha256": "ceb5d3f3134bb5de21b85eae11e11de81f368e7890608b5265639ce75a83a5dc",
+      "action": "更改數值後未重新勾選而提交，預期拒絕"
+    },
+    {
+      "seq": 13,
+      "file": "GUARD-13-width-proposal.png",
+      "sha256": "21858f0158f39279a88d3132896a8e8cecee31fc9751801c18e6739e50bcd808",
+      "action": "選 W，輸入50並勾選確認"
+    },
+    {
+      "seq": 14,
+      "file": "GUARD-14-width-changed.png",
+      "sha256": "2043c7f42c75ea926e21ae3fbf801efed83c1bf7b8466b649e700995a735941b",
+      "action": "提交 W=50，讀回草圖及盒蓋幾何"
+    },
+    {
+      "seq": 15,
+      "file": "GUARD-15-invalid-proposal.png",
+      "sha256": "bd5166d37364133da79967a920d88106ee9389d73fb6cd734449a7a64f63e486",
+      "action": "選 D=29，H−D 小於底厚，預期被拒絕"
+    },
+    {
+      "seq": 16,
+      "file": "GUARD-16-invalid-attempt.png",
+      "sha256": "887b88100b99500b1c9b9b71c7e521d9c1352638994aae0d31e2c730cf411247",
+      "action": "提交 D=29，觀察錯誤提示及讀回值"
+    },
+    {
+      "seq": 17,
+      "file": "GUARD-17-length-proposal.png",
+      "sha256": "ba58f1d5aefa794d51f817f26deac0653243e6617063f70a492f62a67a83a5af",
+      "action": "選 L=70 並勾選確認"
+    },
+    {
+      "seq": 18,
+      "file": "GUARD-18-length-changed.png",
+      "sha256": "1c43656da893acf012ceb89cbf5b482c00dae54a7c2eb0fc9740a0c9b68ff352",
+      "action": "提交 L=70，讀回草圖與盒蓋"
+    },
+    {
+      "seq": 19,
+      "file": "GUARD-19-saved.png",
+      "sha256": "8fcc6f8719cf0d3b73c3ea28253b5dba8d65df8a4c668b79075f6840fbc06d13",
+      "action": "在隔離測試專案另存 v002"
+    },
+    {
+      "seq": 20,
+      "file": "GUARD-20-reopened.png",
+      "sha256": "dd7c35da00092ad23e4959526e4d958af41de173e77b3216ddaf47b55358918b",
+      "action": "重開隔離測試副本，檢查尺寸及兩件幾何"
+    },
+    {
+      "seq": 21,
+      "file": "GUARD-21-registered-fixture.png",
+      "sha256": "7c5a80bfdebb60226a72d1c73883a7f3ef1383ccd1a2d62a30401f80212bf1df",
+      "action": "程式在隔離測試 progress 登記同一版本；未更動真實進度"
+    },
+    {
+      "seq": 22,
+      "file": "GUARD-22-registered-attempt.png",
+      "sha256": "284fcc61182ed7a2737da07f52e8603ebb86a5d616b51c9d29c43e13c02e9c10",
+      "action": "對已登記的隔離測試版本嘗試開啟面板，確認拒絕"
+    }
+  ],
+  "limitations": [
+    "重開畫面 GUARD-20 出現 Tool sketcher.slvs_select not found for space VIEW_3D；原因未確認，不能推定其他草圖工具可用。",
+    "僅適用指定 v004 兩個原始約束 ID 的個人副本；原生直接修改不受面板攔截。",
+    "僅數位必要條件，非完整碰撞、切片、強度或實體配合驗證；0.4 mm 總間隙為試驗值。",
+    "已登記版本拒絕為人工目視截圖確認；程式僅驗證測試 fixture 與模型數值不變。",
+    "實際列印與試配未進行。"
+  ]
+}

@@ -1,0 +1,1207 @@
+{
+  "schemaVersion": 1,
+  "title": "61 個共用原教材來源之證據鏈核對索引",
+  "baseCurriculum": "learning/web/engineering-curriculum-v035.json",
+  "baseSha256": "d40ffc3102585947f1a19d2e50d072f343cf25685df9d7e8555dfd702bc4fa91",
+  "catalog": "learning/catalog.json",
+  "catalogSha256": "17ca75ebd865e36e75d069ab074cae121b96178d2a5ae95d68cc8ec369e4bfd6",
+  "scope": "逐項對照 curriculum actions 與原 operationRun 事件描述；指定項目額外看程式來源；僅 04-07 對話框單張原圖已目視。不是 61 張原圖逐張視覺審核，不由此推論學員完成或實體合格。",
+  "items": [
+    {
+      "id": "ch01-01-02-02",
+      "sourceSteps": [
+        {
+          "lessonId": "01",
+          "stepId": "01-02",
+          "operationRunId": "2026-10-22-interface-language-v001",
+          "operationRunJournal": "learning/journal/2026-10-22-interface-language-execution-v001.md",
+          "eventNumbers": [
+            5,
+            6,
+            7,
+            8
+          ]
+        }
+      ],
+      "reviewTypes": [
+        "catalog_operationRun_event_text"
+      ],
+      "finding": "來源事件文字涵蓋該動作或讀值；未逐張目視其原圖。"
+    },
+    {
+      "id": "ch01-01-02-03",
+      "sourceSteps": [
+        {
+          "lessonId": "01",
+          "stepId": "01-02",
+          "operationRunId": "2026-10-22-interface-language-v001",
+          "operationRunJournal": "learning/journal/2026-10-22-interface-language-execution-v001.md",
+          "eventNumbers": [
+            9,
+            10,
+            11
+          ]
+        }
+      ],
+      "reviewTypes": [
+        "catalog_operationRun_event_text"
+      ],
+      "finding": "來源事件文字涵蓋該動作或讀值；未逐張目視其原圖。"
+    },
+    {
+      "id": "ch01-01-03-02",
+      "sourceSteps": [
+        {
+          "lessonId": "01",
+          "stepId": "01-03",
+          "operationRunId": "2026-10-22-lesson01-demo-v001",
+          "operationRunJournal": "learning/journal/2026-10-22-lesson01-demo-v001.md",
+          "eventNumbers": [
+            1
+          ]
+        }
+      ],
+      "reviewTypes": [
+        "catalog_operationRun_event_text"
+      ],
+      "finding": "來源事件文字涵蓋該動作或讀值；未逐張目視其原圖。"
+    },
+    {
+      "id": "ch01-01-03-03",
+      "sourceSteps": [
+        {
+          "lessonId": "01",
+          "stepId": "01-03",
+          "operationRunId": "2026-10-22-lesson01-demo-v001",
+          "operationRunJournal": "learning/journal/2026-10-22-lesson01-demo-v001.md",
+          "eventNumbers": [
+            1
+          ]
+        }
+      ],
+      "reviewTypes": [
+        "catalog_operationRun_event_text"
+      ],
+      "finding": "來源事件文字涵蓋該動作或讀值；未逐張目視其原圖。"
+    },
+    {
+      "id": "ch01-01-04-02",
+      "sourceSteps": [
+        {
+          "lessonId": "01",
+          "stepId": "01-04",
+          "operationRunId": "2026-10-22-lesson01-demo-v001",
+          "operationRunJournal": "learning/journal/2026-10-22-lesson01-demo-v001.md",
+          "eventNumbers": [
+            1,
+            2,
+            3
+          ]
+        }
+      ],
+      "reviewTypes": [
+        "catalog_operationRun_event_text"
+      ],
+      "finding": "來源事件文字涵蓋該動作或讀值；未逐張目視其原圖。"
+    },
+    {
+      "id": "ch01-01-04-03",
+      "sourceSteps": [
+        {
+          "lessonId": "01",
+          "stepId": "01-04",
+          "operationRunId": "2026-10-22-lesson01-demo-v001",
+          "operationRunJournal": "learning/journal/2026-10-22-lesson01-demo-v001.md",
+          "eventNumbers": [
+            2,
+            3
+          ]
+        }
+      ],
+      "reviewTypes": [
+        "catalog_operationRun_event_text"
+      ],
+      "finding": "原 run 未拍網頁登記；另一隔離 CLI 僅示範來源關聯。"
+    },
+    {
+      "id": "ch01-01-05-02",
+      "sourceSteps": [
+        {
+          "lessonId": "01",
+          "stepId": "01-05",
+          "operationRunId": "2026-10-22-lesson01-demo-v001",
+          "operationRunJournal": "learning/journal/2026-10-22-lesson01-demo-v001.md",
+          "eventNumbers": [
+            2,
+            3
+          ]
+        }
+      ],
+      "reviewTypes": [
+        "catalog_operationRun_event_text"
+      ],
+      "finding": "來源事件文字涵蓋該動作或讀值；未逐張目視其原圖。"
+    },
+    {
+      "id": "ch01-01-05-03",
+      "sourceSteps": [
+        {
+          "lessonId": "01",
+          "stepId": "01-05",
+          "operationRunId": "2026-10-22-lesson01-demo-v001",
+          "operationRunJournal": "learning/journal/2026-10-22-lesson01-demo-v001.md",
+          "eventNumbers": [
+            3
+          ]
+        }
+      ],
+      "reviewTypes": [
+        "catalog_operationRun_event_text"
+      ],
+      "finding": "來源事件文字涵蓋該動作或讀值；未逐張目視其原圖。"
+    },
+    {
+      "id": "ch01-01-06-01",
+      "sourceSteps": [
+        {
+          "lessonId": "01",
+          "stepId": "01-06",
+          "operationRunId": "2026-10-22-lesson01-demo-v001",
+          "operationRunJournal": "learning/journal/2026-10-22-lesson01-demo-v001.md",
+          "eventNumbers": [
+            1,
+            2
+          ]
+        }
+      ],
+      "reviewTypes": [
+        "catalog_operationRun_event_text"
+      ],
+      "finding": "來源事件文字涵蓋該動作或讀值；未逐張目視其原圖。"
+    },
+    {
+      "id": "ch01-01-06-02",
+      "sourceSteps": [
+        {
+          "lessonId": "01",
+          "stepId": "01-06",
+          "operationRunId": "2026-10-22-lesson01-demo-v001",
+          "operationRunJournal": "learning/journal/2026-10-22-lesson01-demo-v001.md",
+          "eventNumbers": [
+            1,
+            2
+          ]
+        }
+      ],
+      "reviewTypes": [
+        "catalog_operationRun_event_text"
+      ],
+      "finding": "原 run 在 Properties 檢查 Transform；N > Item 為替代方法。"
+    },
+    {
+      "id": "ch01-01-08-03",
+      "sourceSteps": [
+        {
+          "lessonId": "01",
+          "stepId": "01-08",
+          "operationRunId": "2026-10-22-lesson01-demo-v001",
+          "operationRunJournal": "learning/journal/2026-10-22-lesson01-demo-v001.md",
+          "eventNumbers": [
+            1,
+            2
+          ]
+        }
+      ],
+      "reviewTypes": [
+        "catalog_operationRun_event_text"
+      ],
+      "finding": "來源事件文字涵蓋該動作或讀值；未逐張目視其原圖。"
+    },
+    {
+      "id": "ch01-01-09-02",
+      "sourceSteps": [
+        {
+          "lessonId": "01",
+          "stepId": "01-09",
+          "operationRunId": "2026-10-22-lesson01-demo-v001",
+          "operationRunJournal": "learning/journal/2026-10-22-lesson01-demo-v001.md",
+          "eventNumbers": [
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      ],
+      "reviewTypes": [
+        "catalog_operationRun_event_text"
+      ],
+      "finding": "原 run 未拍網頁登記。"
+    },
+    {
+      "id": "ch03-02-01-01",
+      "sourceSteps": [
+        {
+          "lessonId": "02",
+          "stepId": "02-01",
+          "operationRunId": "2026-10-22-lesson02-demo-v001",
+          "operationRunJournal": "learning/journal/2026-10-22-lesson02-03-demo-v001.md",
+          "eventNumbers": [
+            1,
+            4,
+            5
+          ]
+        }
+      ],
+      "reviewTypes": [
+        "catalog_operationRun_event_text"
+      ],
+      "finding": "來源事件文字涵蓋該動作或讀值；未逐張目視其原圖。"
+    },
+    {
+      "id": "ch03-02-02-03",
+      "sourceSteps": [
+        {
+          "lessonId": "02",
+          "stepId": "02-02",
+          "operationRunId": "2026-10-22-lesson02-demo-v001",
+          "operationRunJournal": "learning/journal/2026-10-22-lesson02-03-demo-v001.md",
+          "eventNumbers": [
+            6,
+            7
+          ]
+        }
+      ],
+      "reviewTypes": [
+        "catalog_operationRun_event_text"
+      ],
+      "finding": "來源事件文字涵蓋該動作或讀值；未逐張目視其原圖。"
+    },
+    {
+      "id": "ch03-02-03-02",
+      "sourceSteps": [
+        {
+          "lessonId": "02",
+          "stepId": "02-03",
+          "operationRunId": "2026-10-22-lesson02-demo-v001",
+          "operationRunJournal": "learning/journal/2026-10-22-lesson02-03-demo-v001.md",
+          "eventNumbers": [
+            1
+          ]
+        }
+      ],
+      "reviewTypes": [
+        "catalog_operationRun_event_text"
+      ],
+      "finding": "來源事件文字涵蓋該動作或讀值；未逐張目視其原圖。"
+    },
+    {
+      "id": "ch03-02-03-03",
+      "sourceSteps": [
+        {
+          "lessonId": "02",
+          "stepId": "02-03",
+          "operationRunId": "2026-10-22-lesson02-demo-v001",
+          "operationRunJournal": "learning/journal/2026-10-22-lesson02-03-demo-v001.md",
+          "eventNumbers": [
+            1
+          ]
+        }
+      ],
+      "reviewTypes": [
+        "catalog_operationRun_event_text"
+      ],
+      "finding": "來源事件文字涵蓋該動作或讀值；未逐張目視其原圖。"
+    },
+    {
+      "id": "ch03-02-05-02",
+      "sourceSteps": [
+        {
+          "lessonId": "02",
+          "stepId": "02-05",
+          "operationRunId": "2026-10-22-lesson02-demo-v001",
+          "operationRunJournal": "learning/journal/2026-10-22-lesson02-03-demo-v001.md",
+          "eventNumbers": [
+            3,
+            4,
+            5
+          ]
+        }
+      ],
+      "reviewTypes": [
+        "catalog_operationRun_event_text"
+      ],
+      "finding": "來源事件文字涵蓋該動作或讀值；未逐張目視其原圖。"
+    },
+    {
+      "id": "ch03-02-05-03",
+      "sourceSteps": [
+        {
+          "lessonId": "02",
+          "stepId": "02-05",
+          "operationRunId": "2026-10-22-lesson02-demo-v001",
+          "operationRunJournal": "learning/journal/2026-10-22-lesson02-03-demo-v001.md",
+          "eventNumbers": [
+            3,
+            5
+          ]
+        }
+      ],
+      "reviewTypes": [
+        "catalog_operationRun_event_text"
+      ],
+      "finding": "來源事件文字涵蓋該動作或讀值；未逐張目視其原圖。"
+    },
+    {
+      "id": "ch03-02-06-02",
+      "sourceSteps": [
+        {
+          "lessonId": "02",
+          "stepId": "02-06",
+          "operationRunId": "2026-10-22-lesson02-demo-v001",
+          "operationRunJournal": "learning/journal/2026-10-22-lesson02-03-demo-v001.md",
+          "eventNumbers": [
+            2,
+            3
+          ]
+        }
+      ],
+      "reviewTypes": [
+        "catalog_operationRun_event_text"
+      ],
+      "finding": "來源事件文字涵蓋該動作或讀值；未逐張目視其原圖。"
+    },
+    {
+      "id": "ch03-02-06-03",
+      "sourceSteps": [
+        {
+          "lessonId": "02",
+          "stepId": "02-06",
+          "operationRunId": "2026-10-22-lesson02-demo-v001",
+          "operationRunJournal": "learning/journal/2026-10-22-lesson02-03-demo-v001.md",
+          "eventNumbers": [
+            2,
+            3
+          ]
+        }
+      ],
+      "reviewTypes": [
+        "catalog_operationRun_event_text"
+      ],
+      "finding": "來源事件文字涵蓋該動作或讀值；未逐張目視其原圖。"
+    },
+    {
+      "id": "ch03-04-02-02",
+      "sourceSteps": [
+        {
+          "lessonId": "04",
+          "stepId": "04-02",
+          "operationRunId": "2026-10-22-lesson04-demo-v001",
+          "operationRunJournal": "learning/journal/2026-10-22-lesson04-demo-v001.md",
+          "eventNumbers": [
+            1,
+            2
+          ]
+        }
+      ],
+      "reviewTypes": [
+        "catalog_operationRun_event_text"
+      ],
+      "finding": "來源事件文字涵蓋該動作或讀值；未逐張目視其原圖。"
+    },
+    {
+      "id": "ch03-04-05-02",
+      "sourceSteps": [
+        {
+          "lessonId": "04",
+          "stepId": "04-05",
+          "operationRunId": "2026-10-22-lesson04-demo-v001",
+          "operationRunJournal": "learning/journal/2026-10-22-lesson04-demo-v001.md",
+          "eventNumbers": [
+            1,
+            2
+          ]
+        }
+      ],
+      "reviewTypes": [
+        "catalog_operationRun_event_text"
+      ],
+      "finding": "來源事件文字涵蓋該動作或讀值；未逐張目視其原圖。"
+    },
+    {
+      "id": "ch03-04-05-03",
+      "sourceSteps": [
+        {
+          "lessonId": "04",
+          "stepId": "04-05",
+          "operationRunId": "2026-10-22-lesson04-demo-v001",
+          "operationRunJournal": "learning/journal/2026-10-22-lesson04-demo-v001.md",
+          "eventNumbers": [
+            3
+          ]
+        }
+      ],
+      "reviewTypes": [
+        "catalog_operationRun_event_text"
+      ],
+      "finding": "來源事件文字涵蓋該動作或讀值；未逐張目視其原圖。"
+    },
+    {
+      "id": "ch03-04-06-01",
+      "sourceSteps": [
+        {
+          "lessonId": "04",
+          "stepId": "04-06",
+          "operationRunId": "2026-10-22-lesson04-demo-v001",
+          "operationRunJournal": "learning/journal/2026-10-22-lesson04-demo-v001.md",
+          "eventNumbers": [
+            1,
+            2
+          ]
+        }
+      ],
+      "reviewTypes": [
+        "catalog_operationRun_event_text"
+      ],
+      "finding": "來源事件文字涵蓋該動作或讀值；未逐張目視其原圖。"
+    },
+    {
+      "id": "ch03-05-05-02",
+      "sourceSteps": [
+        {
+          "lessonId": "05",
+          "stepId": "05-05",
+          "operationRunId": "2026-10-22-lesson05-lid-demo-v001",
+          "operationRunJournal": "learning/journal/2026-10-22-lesson05-lid-demo-v001.md",
+          "eventNumbers": [
+            3
+          ]
+        }
+      ],
+      "reviewTypes": [
+        "catalog_operationRun_event_text"
+      ],
+      "finding": "來源事件文字涵蓋該動作或讀值；未逐張目視其原圖。"
+    },
+    {
+      "id": "ch03-05-05-03",
+      "sourceSteps": [
+        {
+          "lessonId": "05",
+          "stepId": "05-05",
+          "operationRunId": "2026-10-22-lesson05-lid-demo-v001",
+          "operationRunJournal": "learning/journal/2026-10-22-lesson05-lid-demo-v001.md",
+          "eventNumbers": [
+            3
+          ]
+        }
+      ],
+      "reviewTypes": [
+        "catalog_operationRun_event_text"
+      ],
+      "finding": "來源事件文字涵蓋該動作或讀值；未逐張目視其原圖。"
+    },
+    {
+      "id": "ch03-05-05-04",
+      "sourceSteps": [
+        {
+          "lessonId": "05",
+          "stepId": "05-05",
+          "operationRunId": "2026-10-22-lesson05-lid-demo-v001",
+          "operationRunJournal": "learning/journal/2026-10-22-lesson05-lid-demo-v001.md",
+          "eventNumbers": [
+            4
+          ]
+        }
+      ],
+      "reviewTypes": [
+        "catalog_operationRun_event_text"
+      ],
+      "finding": "來源事件文字涵蓋該動作或讀值；未逐張目視其原圖。"
+    },
+    {
+      "id": "ch03-05-05-07",
+      "sourceSteps": [
+        {
+          "lessonId": "05",
+          "stepId": "05-05",
+          "operationRunId": "2026-10-22-lesson05-lid-demo-v001",
+          "operationRunJournal": "learning/journal/2026-10-22-lesson05-lid-demo-v001.md",
+          "eventNumbers": [
+            9,
+            10,
+            11,
+            12
+          ]
+        }
+      ],
+      "reviewTypes": [
+        "catalog_operationRun_event_text"
+      ],
+      "finding": "來源事件文字涵蓋該動作或讀值；未逐張目視其原圖。"
+    },
+    {
+      "id": "ch03-05-05-08",
+      "sourceSteps": [
+        {
+          "lessonId": "05",
+          "stepId": "05-05",
+          "operationRunId": "2026-10-22-lesson05-lid-demo-v001",
+          "operationRunJournal": "learning/journal/2026-10-22-lesson05-lid-demo-v001.md",
+          "eventNumbers": [
+            13,
+            14,
+            15,
+            16
+          ]
+        }
+      ],
+      "reviewTypes": [
+        "catalog_operationRun_event_text"
+      ],
+      "finding": "原 run 拍另存與重開，未拍網頁登記。"
+    },
+    {
+      "id": "ch04-03-01-03",
+      "sourceSteps": [
+        {
+          "lessonId": "03",
+          "stepId": "03-01",
+          "operationRunId": "2026-10-22-lesson03-demo-v001",
+          "operationRunJournal": "learning/journal/2026-10-22-lesson02-03-demo-v001.md",
+          "eventNumbers": [
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      ],
+      "reviewTypes": [
+        "catalog_operationRun_event_text"
+      ],
+      "finding": "來源事件文字涵蓋該動作或讀值；未逐張目視其原圖。"
+    },
+    {
+      "id": "ch04-03-02-01",
+      "sourceSteps": [
+        {
+          "lessonId": "03",
+          "stepId": "03-02",
+          "operationRunId": "2026-10-22-lesson03-demo-v001",
+          "operationRunJournal": "learning/journal/2026-10-22-lesson02-03-demo-v001.md",
+          "eventNumbers": [
+            1
+          ]
+        }
+      ],
+      "reviewTypes": [
+        "catalog_operationRun_event_text"
+      ],
+      "finding": "來源事件文字涵蓋該動作或讀值；未逐張目視其原圖。"
+    },
+    {
+      "id": "ch04-03-03-01",
+      "sourceSteps": [
+        {
+          "lessonId": "03",
+          "stepId": "03-03",
+          "operationRunId": "2026-10-22-lesson03-demo-v001",
+          "operationRunJournal": "learning/journal/2026-10-22-lesson02-03-demo-v001.md",
+          "eventNumbers": [
+            1
+          ]
+        }
+      ],
+      "reviewTypes": [
+        "catalog_operationRun_event_text"
+      ],
+      "finding": "來源事件文字涵蓋該動作或讀值；未逐張目視其原圖。"
+    },
+    {
+      "id": "ch04-03-03-02",
+      "sourceSteps": [
+        {
+          "lessonId": "03",
+          "stepId": "03-03",
+          "operationRunId": "2026-10-22-lesson03-demo-v001",
+          "operationRunJournal": "learning/journal/2026-10-22-lesson02-03-demo-v001.md",
+          "eventNumbers": [
+            1,
+            2
+          ]
+        }
+      ],
+      "reviewTypes": [
+        "catalog_operationRun_event_text"
+      ],
+      "finding": "來源事件文字涵蓋該動作或讀值；未逐張目視其原圖。"
+    },
+    {
+      "id": "ch04-03-03-03",
+      "sourceSteps": [
+        {
+          "lessonId": "03",
+          "stepId": "03-03",
+          "operationRunId": "2026-10-22-lesson03-demo-v001",
+          "operationRunJournal": "learning/journal/2026-10-22-lesson02-03-demo-v001.md",
+          "eventNumbers": [
+            1,
+            2
+          ]
+        }
+      ],
+      "reviewTypes": [
+        "catalog_operationRun_event_text"
+      ],
+      "finding": "來源事件文字涵蓋該動作或讀值；未逐張目視其原圖。"
+    },
+    {
+      "id": "ch04-03-04-01",
+      "sourceSteps": [
+        {
+          "lessonId": "03",
+          "stepId": "03-04",
+          "operationRunId": "2026-10-22-lesson03-demo-v001",
+          "operationRunJournal": "learning/journal/2026-10-22-lesson02-03-demo-v001.md",
+          "eventNumbers": [
+            1
+          ]
+        }
+      ],
+      "reviewTypes": [
+        "catalog_operationRun_event_text"
+      ],
+      "finding": "來源事件文字涵蓋該動作或讀值；未逐張目視其原圖。"
+    },
+    {
+      "id": "ch04-03-04-02",
+      "sourceSteps": [
+        {
+          "lessonId": "03",
+          "stepId": "03-04",
+          "operationRunId": "2026-10-22-lesson03-demo-v001",
+          "operationRunJournal": "learning/journal/2026-10-22-lesson02-03-demo-v001.md",
+          "eventNumbers": [
+            2
+          ]
+        }
+      ],
+      "reviewTypes": [
+        "catalog_operationRun_event_text"
+      ],
+      "finding": "來源事件文字涵蓋該動作或讀值；未逐張目視其原圖。"
+    },
+    {
+      "id": "ch04-03-04-03",
+      "sourceSteps": [
+        {
+          "lessonId": "03",
+          "stepId": "03-04",
+          "operationRunId": "2026-10-22-lesson03-demo-v001",
+          "operationRunJournal": "learning/journal/2026-10-22-lesson02-03-demo-v001.md",
+          "eventNumbers": [
+            3,
+            4
+          ]
+        }
+      ],
+      "reviewTypes": [
+        "catalog_operationRun_event_text"
+      ],
+      "finding": "來源事件文字涵蓋該動作或讀值；未逐張目視其原圖。"
+    },
+    {
+      "id": "ch04-03-05-03",
+      "sourceSteps": [
+        {
+          "lessonId": "03",
+          "stepId": "03-05",
+          "operationRunId": "2026-10-22-lesson03-demo-v001",
+          "operationRunJournal": "learning/journal/2026-10-22-lesson02-03-demo-v001.md",
+          "eventNumbers": [
+            6,
+            7
+          ]
+        }
+      ],
+      "reviewTypes": [
+        "catalog_operationRun_event_text"
+      ],
+      "finding": "原 run 拍 PNG 另存與核對，未拍網頁登記。"
+    },
+    {
+      "id": "ch04-03-06-02",
+      "sourceSteps": [
+        {
+          "lessonId": "03",
+          "stepId": "03-06",
+          "operationRunId": "2026-10-22-lesson03-demo-v001",
+          "operationRunJournal": "learning/journal/2026-10-22-lesson02-03-demo-v001.md",
+          "eventNumbers": [
+            2,
+            3,
+            4
+          ]
+        }
+      ],
+      "reviewTypes": [
+        "catalog_operationRun_event_text"
+      ],
+      "finding": "來源事件文字涵蓋該動作或讀值；未逐張目視其原圖。"
+    },
+    {
+      "id": "ch05-05-02-03",
+      "sourceSteps": [
+        {
+          "lessonId": "05",
+          "stepId": "05-02",
+          "operationRunId": "2026-10-22-lesson05-demo-v002",
+          "operationRunJournal": "learning/journal/2026-10-22-lesson05-demo-v002.md",
+          "eventNumbers": [
+            10,
+            11,
+            12,
+            13
+          ]
+        }
+      ],
+      "reviewTypes": [
+        "catalog_operationRun_event_text"
+      ],
+      "finding": "原 run 保存並重開隔離 demo-files/u05_fit_coupon_v001.blend；學員可用同名自己工作區副本；原 run 未拍網頁登記。"
+    },
+    {
+      "id": "ch05-05-03-01",
+      "sourceSteps": [
+        {
+          "lessonId": "05",
+          "stepId": "05-03",
+          "operationRunId": "2026-10-22-lesson05-holes-demo-v002",
+          "operationRunJournal": "learning/journal/2026-10-22-lesson05-holes-demo-v002.md",
+          "eventNumbers": [
+            1,
+            2,
+            24,
+            25
+          ]
+        }
+      ],
+      "reviewTypes": [
+        "catalog_operationRun_event_text"
+      ],
+      "finding": "示範從隔離出廠場景刪物件，先新增 Cube 再設定單位；後續另存。"
+    },
+    {
+      "id": "ch05-05-03-02",
+      "sourceSteps": [
+        {
+          "lessonId": "05",
+          "stepId": "05-03",
+          "operationRunId": "2026-10-22-lesson05-holes-demo-v002",
+          "operationRunJournal": "learning/journal/2026-10-22-lesson05-holes-demo-v002.md",
+          "eventNumbers": [
+            3,
+            4,
+            17
+          ]
+        }
+      ],
+      "reviewTypes": [
+        "catalog_operationRun_event_text"
+      ],
+      "finding": "來源事件文字涵蓋該動作或讀值；未逐張目視其原圖。"
+    },
+    {
+      "id": "ch05-05-03-03",
+      "sourceSteps": [
+        {
+          "lessonId": "05",
+          "stepId": "05-03",
+          "operationRunId": "2026-10-22-lesson05-holes-demo-v002",
+          "operationRunJournal": "learning/journal/2026-10-22-lesson05-holes-demo-v002.md",
+          "eventNumbers": [
+            4
+          ]
+        }
+      ],
+      "reviewTypes": [
+        "catalog_operationRun_event_text",
+        "source_snapshot_code"
+      ],
+      "finding": "示範逐件新增 Cube，S／G 變換，非 N 面板輸入。"
+    },
+    {
+      "id": "ch05-05-03-04",
+      "sourceSteps": [
+        {
+          "lessonId": "05",
+          "stepId": "05-03",
+          "operationRunId": "2026-10-22-lesson05-holes-demo-v002",
+          "operationRunJournal": "learning/journal/2026-10-22-lesson05-holes-demo-v002.md",
+          "eventNumbers": [
+            5,
+            6
+          ]
+        }
+      ],
+      "reviewTypes": [
+        "catalog_operationRun_event_text",
+        "source_snapshot_code"
+      ],
+      "finding": "示範逐個新增 Cube 與 S／G，不是 Shift+D 複製。"
+    },
+    {
+      "id": "ch05-05-03-05",
+      "sourceSteps": [
+        {
+          "lessonId": "05",
+          "stepId": "05-03",
+          "operationRunId": "2026-10-22-lesson05-holes-demo-v002",
+          "operationRunJournal": "learning/journal/2026-10-22-lesson05-holes-demo-v002.md",
+          "eventNumbers": [
+            7,
+            8,
+            9
+          ]
+        }
+      ],
+      "reviewTypes": [
+        "catalog_operationRun_event_text",
+        "source_snapshot_code"
+      ],
+      "finding": "示範逐個新增 Cube 與 S／G，不是 Shift+D 複製。"
+    },
+    {
+      "id": "ch05-05-03-06",
+      "sourceSteps": [
+        {
+          "lessonId": "05",
+          "stepId": "05-03",
+          "operationRunId": "2026-10-22-lesson05-holes-demo-v002",
+          "operationRunJournal": "learning/journal/2026-10-22-lesson05-holes-demo-v002.md",
+          "eventNumbers": [
+            10,
+            11
+          ]
+        }
+      ],
+      "reviewTypes": [
+        "catalog_operationRun_event_text"
+      ],
+      "finding": "來源事件文字涵蓋該動作或讀值；未逐張目視其原圖。"
+    },
+    {
+      "id": "ch05-05-03-07",
+      "sourceSteps": [
+        {
+          "lessonId": "05",
+          "stepId": "05-03",
+          "operationRunId": "2026-10-22-lesson05-holes-demo-v002",
+          "operationRunJournal": "learning/journal/2026-10-22-lesson05-holes-demo-v002.md",
+          "eventNumbers": [
+            12,
+            13
+          ]
+        }
+      ],
+      "reviewTypes": [
+        "catalog_operationRun_event_text",
+        "source_snapshot_code"
+      ],
+      "finding": "確有 Shift+D，但使用 X 相對位移，非右鍵後改絕對位置。"
+    },
+    {
+      "id": "ch05-05-03-08",
+      "sourceSteps": [
+        {
+          "lessonId": "05",
+          "stepId": "05-03",
+          "operationRunId": "2026-10-22-lesson05-holes-demo-v002",
+          "operationRunJournal": "learning/journal/2026-10-22-lesson05-holes-demo-v002.md",
+          "eventNumbers": [
+            14,
+            15,
+            16
+          ]
+        }
+      ],
+      "reviewTypes": [
+        "catalog_operationRun_event_text",
+        "source_snapshot_code"
+      ],
+      "finding": "確有 Shift+D，但使用 X 相對位移。"
+    },
+    {
+      "id": "ch05-05-03-09",
+      "sourceSteps": [
+        {
+          "lessonId": "05",
+          "stepId": "05-03",
+          "operationRunId": "2026-10-22-lesson05-holes-demo-v002",
+          "operationRunJournal": "learning/journal/2026-10-22-lesson05-holes-demo-v002.md",
+          "eventNumbers": [
+            17
+          ]
+        }
+      ],
+      "reviewTypes": [
+        "catalog_operationRun_event_text"
+      ],
+      "finding": "來源事件文字涵蓋該動作或讀值；未逐張目視其原圖。"
+    },
+    {
+      "id": "ch05-05-03-10",
+      "sourceSteps": [
+        {
+          "lessonId": "05",
+          "stepId": "05-03",
+          "operationRunId": "2026-10-22-lesson05-holes-demo-v002",
+          "operationRunJournal": "learning/journal/2026-10-22-lesson05-holes-demo-v002.md",
+          "eventNumbers": [
+            18,
+            19,
+            20
+          ]
+        }
+      ],
+      "reviewTypes": [
+        "catalog_operationRun_event_text"
+      ],
+      "finding": "來源事件文字涵蓋該動作或讀值；未逐張目視其原圖。"
+    },
+    {
+      "id": "ch06-04-07-01",
+      "sourceSteps": [
+        {
+          "lessonId": "04",
+          "stepId": "04-07",
+          "operationRunId": "2026-10-22-lesson04-demo-v001",
+          "operationRunJournal": "learning/journal/2026-10-22-lesson04-demo-v001.md",
+          "eventNumbers": [
+            1,
+            2
+          ]
+        }
+      ],
+      "reviewTypes": [
+        "catalog_operationRun_event_text"
+      ],
+      "finding": "來源事件文字涵蓋該動作或讀值；未逐張目視其原圖。"
+    },
+    {
+      "id": "ch06-04-07-02",
+      "sourceSteps": [
+        {
+          "lessonId": "04",
+          "stepId": "04-07",
+          "operationRunId": "2026-10-22-lesson04-demo-v001",
+          "operationRunJournal": "learning/journal/2026-10-22-lesson04-demo-v001.md",
+          "eventNumbers": [
+            2,
+            3
+          ]
+        }
+      ],
+      "reviewTypes": [
+        "catalog_operationRun_event_text",
+        "single_original_screenshot_visual_inspection"
+      ],
+      "finding": "原截圖 Selection Only 未勾，原 run 非證明勾選；補充引用第11章另一檔案的勾選原圖。"
+    },
+    {
+      "id": "ch06-05-04-04",
+      "sourceSteps": [
+        {
+          "lessonId": "05",
+          "stepId": "05-04",
+          "operationRunId": "2026-10-22-lesson05-export-demo-v003",
+          "operationRunJournal": "learning/journal/2026-10-22-lesson05-export-demo-v003.md",
+          "eventNumbers": [
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        }
+      ],
+      "reviewTypes": [
+        "catalog_operationRun_event_text"
+      ],
+      "finding": "來源事件文字涵蓋該動作或讀值；未逐張目視其原圖。"
+    },
+    {
+      "id": "ch06-05-06-02",
+      "sourceSteps": [
+        {
+          "lessonId": "05",
+          "stepId": "05-06",
+          "operationRunId": "2026-10-25-lesson05-lid-export-demo-v001",
+          "operationRunJournal": "learning/journal/2026-10-25-lesson05-lid-export-demo-v001.md",
+          "eventNumbers": [
+            3,
+            4,
+            5,
+            6
+          ]
+        }
+      ],
+      "reviewTypes": [
+        "catalog_operationRun_event_text"
+      ],
+      "finding": "來源事件文字涵蓋該動作或讀值；未逐張目視其原圖。"
+    },
+    {
+      "id": "ch09-06-02-02",
+      "sourceSteps": [
+        {
+          "lessonId": "06",
+          "stepId": "06-02",
+          "operationRunId": "2026-10-25-lesson06-dovetail-demo-v002",
+          "operationRunJournal": "learning/journal/2026-10-25-lesson06-dovetail-demo-v002.md",
+          "eventNumbers": [
+            6,
+            7,
+            8,
+            9
+          ]
+        }
+      ],
+      "reviewTypes": [
+        "catalog_operationRun_event_text"
+      ],
+      "finding": "來源事件文字涵蓋該動作或讀值；未逐張目視其原圖。"
+    },
+    {
+      "id": "ch09-06-02-03",
+      "sourceSteps": [
+        {
+          "lessonId": "06",
+          "stepId": "06-02",
+          "operationRunId": "2026-10-25-lesson06-dovetail-demo-v002",
+          "operationRunJournal": "learning/journal/2026-10-25-lesson06-dovetail-demo-v002.md",
+          "eventNumbers": [
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ]
+        }
+      ],
+      "reviewTypes": [
+        "catalog_operationRun_event_text"
+      ],
+      "finding": "來源事件文字涵蓋該動作或讀值；未逐張目視其原圖。"
+    },
+    {
+      "id": "ch09-06-03-03",
+      "sourceSteps": [
+        {
+          "lessonId": "06",
+          "stepId": "06-03",
+          "operationRunId": "2026-10-25-lesson06-dovetail-export-demo-v001",
+          "operationRunJournal": "learning/journal/2026-10-25-lesson06-dovetail-export-demo-v001.md",
+          "eventNumbers": [
+            7,
+            14,
+            24,
+            25
+          ]
+        }
+      ],
+      "reviewTypes": [
+        "catalog_operationRun_event_text"
+      ],
+      "finding": "原 run 核驗 STL 與數位記錄，無實體試配表操作；屬現場方法。"
+    },
+    {
+      "id": "ch10-07-01-02",
+      "sourceSteps": [
+        {
+          "lessonId": "07",
+          "stepId": "07-01",
+          "operationRunId": "2026-10-25-lesson07-parameters-demo-v001",
+          "operationRunJournal": "learning/journal/2026-10-25-lesson07-parameters-demo-v001.md",
+          "eventNumbers": [
+            12
+          ]
+        }
+      ],
+      "reviewTypes": [
+        "catalog_operationRun_event_text"
+      ],
+      "finding": "參數表有文件紀錄，原 GUI 主要示範盒體測量，不是公式逐項畫面。"
+    },
+    {
+      "id": "ch10-07-01-03",
+      "sourceSteps": [
+        {
+          "lessonId": "07",
+          "stepId": "07-01",
+          "operationRunId": "2026-10-25-lesson07-parameters-demo-v001",
+          "operationRunJournal": "learning/journal/2026-10-25-lesson07-parameters-demo-v001.md",
+          "eventNumbers": [
+            12
+          ]
+        }
+      ],
+      "reviewTypes": [
+        "catalog_operationRun_event_text"
+      ],
+      "finding": "公式有文件紀錄，原 GUI 主要示範盒體測量，不是公式逐項畫面。"
+    },
+    {
+      "id": "ch10-07-04-02",
+      "sourceSteps": [
+        {
+          "lessonId": "07",
+          "stepId": "07-04",
+          "operationRunId": "2026-10-25-lesson07-snap-export-demo-v001",
+          "operationRunJournal": "learning/journal/2026-10-25-lesson07-snap-export-demo-v001.md",
+          "eventNumbers": [
+            5,
+            6,
+            7,
+            12,
+            13,
+            14
+          ]
+        }
+      ],
+      "reviewTypes": [
+        "catalog_operationRun_event_text"
+      ],
+      "finding": "來源事件文字涵蓋該動作或讀值；未逐張目視其原圖。"
+    },
+    {
+      "id": "ch10-07-05-02",
+      "sourceSteps": [
+        {
+          "lessonId": "07",
+          "stepId": "07-05",
+          "operationRunId": "2026-10-25-lesson07-coupon-export-demo-v001",
+          "operationRunJournal": "learning/journal/2026-10-25-lesson07-coupon-export-demo-v001.md",
+          "eventNumbers": [
+            5,
+            6,
+            7,
+            12,
+            13,
+            14,
+            19,
+            20,
+            21
+          ]
+        }
+      ],
+      "reviewTypes": [
+        "catalog_operationRun_event_text"
+      ],
+      "finding": "來源事件文字涵蓋該動作或讀值；未逐張目視其原圖。"
+    }
+  ]
+}

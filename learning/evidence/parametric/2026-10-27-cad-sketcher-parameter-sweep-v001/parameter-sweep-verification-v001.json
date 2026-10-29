@@ -1,0 +1,642 @@
+{
+  "method": "independent in-memory Python changes on one saved scene; not GUI and no save",
+  "sourceSaved": false,
+  "cases": [
+    {
+      "label": "sketch-Y",
+      "property": "slvs:c:854e8777cfe2608d",
+      "testValue": 50.0,
+      "checks": {
+        "box": true,
+        "lid": true,
+        "cavity": true,
+        "lipOuter": true,
+        "lipInner": true,
+        "floor": true,
+        "closed": true
+      },
+      "actual": {
+        "box": [
+          [
+            0.0,
+            80.0
+          ],
+          [
+            0.0,
+            50.0
+          ],
+          [
+            0.0,
+            30.0
+          ]
+        ],
+        "lid": [
+          [
+            0.0,
+            80.0
+          ],
+          [
+            0.0,
+            50.0
+          ],
+          [
+            26.0,
+            32.0
+          ]
+        ],
+        "cavityXY": [
+          [
+            2.0,
+            78.0
+          ],
+          [
+            2.0,
+            48.0
+          ]
+        ],
+        "lipOuterXY": [
+          [
+            2.200000047683716,
+            77.80000305175781
+          ],
+          [
+            2.200000047683716,
+            47.79999923706055
+          ]
+        ],
+        "lipInnerXY": [
+          [
+            4.199999809265137,
+            75.80000305175781
+          ],
+          [
+            4.199999809265137,
+            45.79999923706055
+          ]
+        ],
+        "floorZ": 2.0,
+        "nonManifoldEdges": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "label": "height",
+      "property": "box_height_mm",
+      "testValue": 35.0,
+      "checks": {
+        "box": true,
+        "lid": true,
+        "cavity": true,
+        "lipOuter": true,
+        "lipInner": true,
+        "floor": true,
+        "closed": true
+      },
+      "actual": {
+        "box": [
+          [
+            0.0,
+            80.0
+          ],
+          [
+            0.0,
+            40.0
+          ],
+          [
+            0.0,
+            35.0
+          ]
+        ],
+        "lid": [
+          [
+            0.0,
+            80.0
+          ],
+          [
+            0.0,
+            40.0
+          ],
+          [
+            31.0,
+            37.0
+          ]
+        ],
+        "cavityXY": [
+          [
+            2.0,
+            78.0
+          ],
+          [
+            2.0,
+            38.0
+          ]
+        ],
+        "lipOuterXY": [
+          [
+            2.200000047683716,
+            77.80000305175781
+          ],
+          [
+            2.200000047683716,
+            37.79999923706055
+          ]
+        ],
+        "lipInnerXY": [
+          [
+            4.199999809265137,
+            75.80000305175781
+          ],
+          [
+            4.199999809265137,
+            35.79999923706055
+          ]
+        ],
+        "floorZ": 2.0,
+        "nonManifoldEdges": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "label": "wall",
+      "property": "box_wall_mm",
+      "testValue": 3.0,
+      "checks": {
+        "box": true,
+        "lid": true,
+        "cavity": true,
+        "lipOuter": true,
+        "lipInner": true,
+        "floor": true,
+        "closed": true
+      },
+      "actual": {
+        "box": [
+          [
+            0.0,
+            80.0
+          ],
+          [
+            0.0,
+            40.0
+          ],
+          [
+            0.0,
+            30.0
+          ]
+        ],
+        "lid": [
+          [
+            0.0,
+            80.0
+          ],
+          [
+            0.0,
+            40.0
+          ],
+          [
+            26.0,
+            32.0
+          ]
+        ],
+        "cavityXY": [
+          [
+            3.0,
+            77.0
+          ],
+          [
+            3.0,
+            37.0
+          ]
+        ],
+        "lipOuterXY": [
+          [
+            3.200000047683716,
+            76.80000305175781
+          ],
+          [
+            3.200000047683716,
+            36.79999923706055
+          ]
+        ],
+        "lipInnerXY": [
+          [
+            5.199999809265137,
+            74.80000305175781
+          ],
+          [
+            5.199999809265137,
+            34.79999923706055
+          ]
+        ],
+        "floorZ": 2.0,
+        "nonManifoldEdges": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "label": "bottom",
+      "property": "box_bottom_mm",
+      "testValue": 3.0,
+      "checks": {
+        "box": true,
+        "lid": true,
+        "cavity": true,
+        "lipOuter": true,
+        "lipInner": true,
+        "floor": true,
+        "closed": true
+      },
+      "actual": {
+        "box": [
+          [
+            0.0,
+            80.0
+          ],
+          [
+            0.0,
+            40.0
+          ],
+          [
+            0.0,
+            30.0
+          ]
+        ],
+        "lid": [
+          [
+            0.0,
+            80.0
+          ],
+          [
+            0.0,
+            40.0
+          ],
+          [
+            26.0,
+            32.0
+          ]
+        ],
+        "cavityXY": [
+          [
+            2.0,
+            78.0
+          ],
+          [
+            2.0,
+            38.0
+          ]
+        ],
+        "lipOuterXY": [
+          [
+            2.200000047683716,
+            77.80000305175781
+          ],
+          [
+            2.200000047683716,
+            37.79999923706055
+          ]
+        ],
+        "lipInnerXY": [
+          [
+            4.199999809265137,
+            75.80000305175781
+          ],
+          [
+            4.199999809265137,
+            35.79999923706055
+          ]
+        ],
+        "floorZ": 3.0,
+        "nonManifoldEdges": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "label": "plate",
+      "property": "lid_plate_mm",
+      "testValue": 3.0,
+      "checks": {
+        "box": true,
+        "lid": true,
+        "cavity": true,
+        "lipOuter": true,
+        "lipInner": true,
+        "floor": true,
+        "closed": true
+      },
+      "actual": {
+        "box": [
+          [
+            0.0,
+            80.0
+          ],
+          [
+            0.0,
+            40.0
+          ],
+          [
+            0.0,
+            30.0
+          ]
+        ],
+        "lid": [
+          [
+            0.0,
+            80.0
+          ],
+          [
+            0.0,
+            40.0
+          ],
+          [
+            26.0,
+            33.0
+          ]
+        ],
+        "cavityXY": [
+          [
+            2.0,
+            78.0
+          ],
+          [
+            2.0,
+            38.0
+          ]
+        ],
+        "lipOuterXY": [
+          [
+            2.200000047683716,
+            77.80000305175781
+          ],
+          [
+            2.200000047683716,
+            37.79999923706055
+          ]
+        ],
+        "lipInnerXY": [
+          [
+            4.199999809265137,
+            75.80000305175781
+          ],
+          [
+            4.199999809265137,
+            35.79999923706055
+          ]
+        ],
+        "floorZ": 2.0,
+        "nonManifoldEdges": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "label": "lip-depth",
+      "property": "lid_depth_mm",
+      "testValue": 5.0,
+      "checks": {
+        "box": true,
+        "lid": true,
+        "cavity": true,
+        "lipOuter": true,
+        "lipInner": true,
+        "floor": true,
+        "closed": true
+      },
+      "actual": {
+        "box": [
+          [
+            0.0,
+            80.0
+          ],
+          [
+            0.0,
+            40.0
+          ],
+          [
+            0.0,
+            30.0
+          ]
+        ],
+        "lid": [
+          [
+            0.0,
+            80.0
+          ],
+          [
+            0.0,
+            40.0
+          ],
+          [
+            25.0,
+            32.0
+          ]
+        ],
+        "cavityXY": [
+          [
+            2.0,
+            78.0
+          ],
+          [
+            2.0,
+            38.0
+          ]
+        ],
+        "lipOuterXY": [
+          [
+            2.200000047683716,
+            77.80000305175781
+          ],
+          [
+            2.200000047683716,
+            37.79999923706055
+          ]
+        ],
+        "lipInnerXY": [
+          [
+            4.199999809265137,
+            75.80000305175781
+          ],
+          [
+            4.199999809265137,
+            35.79999923706055
+          ]
+        ],
+        "floorZ": 2.0,
+        "nonManifoldEdges": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "label": "clearance",
+      "property": "gap_total_mm",
+      "testValue": 0.6,
+      "checks": {
+        "box": true,
+        "lid": true,
+        "cavity": true,
+        "lipOuter": true,
+        "lipInner": true,
+        "floor": true,
+        "closed": true
+      },
+      "actual": {
+        "box": [
+          [
+            0.0,
+            80.0
+          ],
+          [
+            0.0,
+            40.0
+          ],
+          [
+            0.0,
+            30.0
+          ]
+        ],
+        "lid": [
+          [
+            0.0,
+            80.0
+          ],
+          [
+            0.0,
+            40.0
+          ],
+          [
+            26.0,
+            32.0
+          ]
+        ],
+        "cavityXY": [
+          [
+            2.0,
+            78.0
+          ],
+          [
+            2.0,
+            38.0
+          ]
+        ],
+        "lipOuterXY": [
+          [
+            2.299999952316284,
+            77.69999694824219
+          ],
+          [
+            2.299999952316284,
+            37.70000076293945
+          ]
+        ],
+        "lipInnerXY": [
+          [
+            4.300000190734863,
+            75.69999694824219
+          ],
+          [
+            4.300000190734863,
+            35.70000076293945
+          ]
+        ],
+        "floorZ": 2.0,
+        "nonManifoldEdges": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "label": "lip-wall",
+      "property": "lid_lip_wall_mm",
+      "testValue": 3.0,
+      "checks": {
+        "box": true,
+        "lid": true,
+        "cavity": true,
+        "lipOuter": true,
+        "lipInner": true,
+        "floor": true,
+        "closed": true
+      },
+      "actual": {
+        "box": [
+          [
+            0.0,
+            80.0
+          ],
+          [
+            0.0,
+            40.0
+          ],
+          [
+            0.0,
+            30.0
+          ]
+        ],
+        "lid": [
+          [
+            0.0,
+            80.0
+          ],
+          [
+            0.0,
+            40.0
+          ],
+          [
+            26.0,
+            32.0
+          ]
+        ],
+        "cavityXY": [
+          [
+            2.0,
+            78.0
+          ],
+          [
+            2.0,
+            38.0
+          ]
+        ],
+        "lipOuterXY": [
+          [
+            2.200000047683716,
+            77.80000305175781
+          ],
+          [
+            2.200000047683716,
+            37.79999923706055
+          ]
+        ],
+        "lipInnerXY": [
+          [
+            5.199999809265137,
+            74.80000305175781
+          ],
+          [
+            5.199999809265137,
+            34.79999923706055
+          ]
+        ],
+        "floorZ": 2.0,
+        "nonManifoldEdges": [
+          0,
+          0
+        ]
+      }
+    }
+  ],
+  "allPassed": true,
+  "physicalMeasurements": null,
+  "fitResults": null,
+  "qualifiedClearanceMm": null
+}

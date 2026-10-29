@@ -1,0 +1,112 @@
+{
+  "kind": "x-driver-requires-manual-sketch-solve",
+  "method": "獨立 Blender 5.2.1、CAD Sketcher 0.32.1；程式啟用插件及填檔案對話框，GUI 在盒體可見面點選 Body、右鍵進 Body Sketch，改 X60→70，另存重開；進內腔草圖手動按更新。幾何與狀態由程式讀回。",
+  "initial": {
+    "outerX": [
+      0,
+      60
+    ],
+    "cutterX": [
+      2,
+      58
+    ]
+  },
+  "saved_x70_before_solve": {
+    "outerX": [
+      0,
+      70
+    ],
+    "cutterX": [
+      2,
+      58
+    ],
+    "wallBoundaryDifferences": [
+      2,
+      12
+    ],
+    "driverValid": true
+  },
+  "after_manual_sketch_update": {
+    "outerX": [
+      0,
+      70
+    ],
+    "cutterX": [
+      2,
+      68
+    ],
+    "wallBoundaryDifferences": [
+      2,
+      2
+    ],
+    "constraintX": 66
+  },
+  "scene": {
+    "file": "2026-10-27-manual-box-select-body-v002/demo-files/x_driver_resize_probe_v001.blend",
+    "sha256": "79636096f7345933779061412e5deeb82f2e5a3a9d0c50dd3d97cc663f494019",
+    "note": "X70 已存重開、但未手動重算，切割體仍舊，非完成品；後續 solve run 未存結果。"
+  },
+  "images": [
+    {
+      "file": "2026-10-27-manual-box-select-body-v002/EDIT-01-opened.png",
+      "sha256": "c593a3ba8681e8d7471667c0e61c4e03656eba588f1d120851283cdfced154f3"
+    },
+    {
+      "file": "2026-10-27-manual-box-select-body-v002/EDIT-02-select-body.png",
+      "sha256": "8583533e1641cff63e8cbf9427838a36e64da846d2b0112a28e77968334ff6f5"
+    },
+    {
+      "file": "2026-10-27-manual-box-select-body-v002/EDIT-03-context-menu.png",
+      "sha256": "6a14c45322b78d5879e4c3c91701e2f8450a68edc1ddd7755eb43cf22273a85a"
+    },
+    {
+      "file": "2026-10-27-manual-box-select-body-v002/EDIT-04-body-sketch.png",
+      "sha256": "742e50637ad833b68cf32ea8bd561c58f8f8910bd91e2db84a1ce9fce2a171af"
+    },
+    {
+      "file": "2026-10-27-manual-box-select-body-v002/EDIT-05-sidebar.png",
+      "sha256": "742e50637ad833b68cf32ea8bd561c58f8f8910bd91e2db84a1ce9fce2a171af"
+    },
+    {
+      "file": "2026-10-27-manual-box-select-body-v002/EDIT-06-x70.png",
+      "sha256": "e20641700abf6cda62ef8c60b058a75c22dbda35fb8833f60135646034250761"
+    },
+    {
+      "file": "2026-10-27-manual-box-select-body-v002/EDIT-07-saved.png",
+      "sha256": "e5d30bbc6ac1b601891e859497091964fbeb7705e60069e25d39508436102750"
+    },
+    {
+      "file": "2026-10-27-manual-box-select-body-v002/EDIT-08-reopened.png",
+      "sha256": "5ae61f6b86d3a7c09257e96be01a326610f449e08804099e77922dc45ab7e09e"
+    },
+    {
+      "file": "2026-10-27-manual-box-x-driver-solve-v001/UPDATE-01-opened.png",
+      "sha256": "3cc2abe67e23b72cfa721255e255832eeb4e4ba7f11c4884e396670507fec1f9"
+    },
+    {
+      "file": "2026-10-27-manual-box-x-driver-solve-v001/UPDATE-02-leave-outer.png",
+      "sha256": "89ee0c8e4441e399343ff5598975827432af1c87def9b7bf24f6a083a63323c8"
+    },
+    {
+      "file": "2026-10-27-manual-box-x-driver-solve-v001/UPDATE-03-context-menu.png",
+      "sha256": "d75e8310edd9bcfca193aa2a3797733ae48cd2396a4d9bad6018a14d56a4170c"
+    },
+    {
+      "file": "2026-10-27-manual-box-x-driver-solve-v001/UPDATE-04-enter-inner.png",
+      "sha256": "d3e9fab4e4bd33568ed001f39b9283fa09029aaaa9478e5453fdde519906eac7"
+    },
+    {
+      "file": "2026-10-27-manual-box-x-driver-solve-v001/UPDATE-05-solve-inner.png",
+      "sha256": "dce2606e3a779a39eb62482ecaad596bfc007da29edf2d91e8295e22da0b30e2"
+    },
+    {
+      "file": "2026-10-27-manual-box-x-driver-solve-v001/UPDATE-06-leave-inner.png",
+      "sha256": "c52d5f3922b563ba0cfa8e10eceda0a947bcdda22b91d86ecb57f26d6369ef83"
+    }
+  ],
+  "limitations": [
+    "不是全自動連動：driver 欄更新後必須進內腔草圖手動按更新，此次才使切割體幾何跟隨。",
+    "尚未完成 Y driver、上蓋、布林後封閉性及實體列印和試配。",
+    "2 mm 為外框與切割體界限差，未測布林後實際壁厚。"
+  ]
+}

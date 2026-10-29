@@ -1,0 +1,13 @@
+{
+  "method": "separate background process with launcher argument order; no UI",
+  "passed": true,
+  "readback": {
+    "addon": true,
+    "objects": [
+      "Parametric Box",
+      "Parametric Lid"
+    ],
+    "width": 80.0,
+    "filepath": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\parametric\\2026-10-27-cad-sketcher-parametric-box-v004\\demo-files\\parametric_box_80x40_v003.blend"
+  }
+}

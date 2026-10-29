@@ -78,5 +78,65 @@ class PublicationSemanticsTests(unittest.TestCase):
             self.assertIn(inaccessible, publication.omissions)
 
 
+
+    def test_runner_workspace_snapshots_are_not_public_derivatives(self):
+        with tempfile.TemporaryDirectory(prefix="publication-snapshots-") as directory:
+            root = Path(directory).resolve()
+            relative = "learning/evidence/05/sample/runner-status.json"
+            raw = root / relative
+            raw.parent.mkdir(parents=True)
+            raw.write_text(json.dumps({"workspacesBefore": {"private-fixture.blend": {"sha256": "fixture"}},
+                                       "recentCleanup": {"beforeLinks": []}}), encoding="utf-8")
+            before = raw.read_bytes()
+            publication = PUBLICATION.Publication(root)
+            publication.add(relative, "fixture")
+            self.assertIsNone(publication.derivative(relative))
+            self.assertNotIn(relative, publication.selected)
+            self.assertEqual(raw.read_bytes(), before)
+
+    def test_current_engineering_references_do_not_bulk_publish_new_runs(self):
+        with tempfile.TemporaryDirectory(prefix="publication-current-") as directory:
+            root = Path(directory).resolve()
+            (root / "learning/web").mkdir(parents=True)
+            (root / "learning/evidence/parametric/demo").mkdir(parents=True)
+            (root / "learning/catalog.json").write_text('{"lessons":[]}', encoding="utf-8")
+            (root / "learning/manage.py").write_text(
+                'ENGINEERING_CURRICULUM = LEARNING / "web" / "c.json"\n'
+                'ENGINEERING_PATH = LEARNING / "web" / "p.json"\n'
+                'CHALLENGES = LEARNING / "web" / "q.json"\n', encoding="utf-8")
+            used = "learning/evidence/parametric/demo/used.png"
+            unused = "learning/evidence/parametric/demo/unpublished.png"
+            (root / used).write_bytes(b"policy-fixture")
+            (root / unused).write_bytes(b"unpublished-fixture")
+            for name, value in [("c", {"path": used}), ("p", {}), ("q", {})]:
+                (root / ("learning/web/" + name + ".json")).write_text(json.dumps(value), encoding="utf-8")
+            publication = PUBLICATION.Publication(root)
+            with contextlib.redirect_stdout(io.StringIO()):
+                publication.build()
+            self.assertIn(used, publication.selected)
+            self.assertNotIn(unused, publication.selected)
+
+    def test_summary_paths_can_be_relative_to_evidence_parent(self):
+        with tempfile.TemporaryDirectory(prefix="publication-relative-") as directory:
+            root = Path(directory).resolve()
+            base = root / "learning/evidence/parametric"
+            (base / "run-a").mkdir(parents=True)
+            (base / "run-b").mkdir()
+            (base / "run-b/image.png").write_bytes(b"policy-fixture")
+            summary = base / "run-a/summary.json"
+            summary.write_text('{"images":[{"file":"run-b/image.png"}]}', encoding="utf-8")
+            publication = PUBLICATION.Publication(root)
+            self.assertIn("learning/evidence/parametric/run-b/image.png",
+                          publication.references(summary.relative_to(root).as_posix()))
+
+    def test_only_empty_generated_course_directories_are_public_scaffolding(self):
+        self.assertFalse(PUBLICATION.has_workspace_snapshot({"workspacesBefore": {
+            ".": {"kind": "directory"}, "01": {"kind": "directory"}}}))
+        self.assertTrue(PUBLICATION.has_workspace_snapshot({"workspacesBefore": {
+            "01/own.blend": {"kind": "file", "sha256": "fixture"}}}))
+        self.assertTrue(PUBLICATION.has_workspace_snapshot({"workspacesBefore": {
+            "private-custom-directory": {"kind": "directory"}}}))
+
+
 if __name__ == "__main__":
     unittest.main()

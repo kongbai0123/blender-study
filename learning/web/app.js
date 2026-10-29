@@ -1,6 +1,6 @@
 (() => {
   'use strict';
-  const state = { data: null, lesson: null, view: 'lesson', browsed: new Map(), drafts: new Map(), busy: false, loading: false, signature: '', notice: null };
+  const state = { data: null, lesson: null, view: 'engineering', browsed: new Map(), drafts: new Map(), busy: false, loading: false, signature: '', notice: null, engineering: { data: null, loading: false, attempted: false, error: '', chapter: 'ch01', section: null, step: null, tab: 'detail', curriculum: { data: null, loading: false, attempted: false, error: '' } } };
   const $ = (id) => document.getElementById(id);
   const e = (value) => String(value ?? '').replace(/[&<>"']/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char]));
   const text = (value) => Array.isArray(value) ? value.map(text).join('\n') : value && typeof value === 'object' ? Object.values(value).map(text).join('\n') : String(value ?? '');
@@ -9,16 +9,15 @@
   const lp = (id) => state.data?.progress.lessons[id] || { completedSteps: [], notes: [] };
   const completed = (id) => lp(id).completedSteps || [];
   const currentLesson = () => lessonById(state.lesson);
-  const activeLesson = () => lessonById(state.data?.progress.activeLesson);
-  const activeStep = () => (activeLesson()?.steps || []).find((step) => step.id === lp(activeLesson()?.id).currentStep);
   const selectedStep = (lesson = currentLesson()) => (lesson?.steps || []).find((step) => step.id === state.browsed.get(lesson.id)) || (lesson?.steps || []).find((step) => step.id === lp(lesson.id).currentStep) || lesson?.steps?.[0];
-  const canConfirm = (lesson, step) => !state.busy && lesson?.id === state.data?.progress.activeLesson && step?.id === lp(lesson.id).currentStep && !completed(lesson.id).includes(step.id);
   const fileUrl = (path, read = false) => `${read ? '/read/' : '/files/'}${String(path || '').replace(/\\/g, '/').split('/').filter(Boolean).map(encodeURIComponent).join('/')}`;
   const externalUrl = (value) => /^https:\/\//i.test(String(value || '')) ? e(value) : '#';
   const field = (key, fallback = '') => state.drafts.has(key) ? state.drafts.get(key) : fallback;
   const keyFor = (name, lesson = state.lesson, step = selectedStep()?.id || '') => `${lesson}:${name}${['evidence', 'checked', 'screen'].includes(name) ? ':' + step : ''}`;
   const valueAttr = (key, fallback = '') => e(field(key, fallback));
   const roleName = (role) => ({ source_scene: '場景 .blend', render: '渲染圖', export: '列印／其他輸出' }[role] || role || '檔案');
+  // 第 07～08 章的工程工作區不屬於原單元；登記時送 workspaceId，不送 lessonId。
+  const ENGINEERING_WORKSPACE = 'engineering-parametric';
   const statusName = (status) => ({ in_progress: '學習中', not_started: '尚未開始', completed: '已完成' }[status] || '尚未開始');
   const badge = (status) => `<span class="badge ${status === 'completed' ? 'done' : status === 'in_progress' ? 'active' : ''}">${e(statusName(status))}</span>`;
   const date = (value) => { if (!value) return '尚未記錄'; const d = new Date(value); return Number.isNaN(d.valueOf()) ? String(value) : new Intl.DateTimeFormat('zh-TW', { timeZone: 'Asia/Taipei', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', hour12: false }).format(d); };
@@ -26,6 +25,10 @@
   const workspaceAbsolute = (lesson = currentLesson()) => `${String(state.data?.projectRoot || '').replace(/[\\/]$/, '')}\\${String(lp(lesson.id).workspace || `learning/workspaces/${lesson.id}`).replace(/\//g, '\\')}`;
   const stepIndex = (lesson, step) => lesson.steps.findIndex((item) => item.id === step?.id);
   const authorName = (author) => ({ learner: '學員', tutor: '助教' }[author] || '未標示作者');
+  // 伺服器標出記在原教材筆記裡的工程路徑回答／標記；它們不算該單元的筆記。
+  const legacyNotes = (lessonId) => new Map((state.data?.legacyEngineeringNotes || []).filter((item) => item?.lessonId === lessonId)
+    .map((item) => [lp(lessonId).notes?.[item.noteIndex], item.role]).filter(([note]) => note && typeof note === 'object'));
+  const lessonNotes = (lessonId) => { const legacy = legacyNotes(lessonId); return (lp(lessonId).notes || []).filter((note) => !legacy.has(note)); };
   const interfaceName = (value) => ({ en: 'English', 'zh-Hant': '繁體中文' }[value] || '尚未記錄');
   const stepOrder = (id) => lessons().flatMap((lesson) => lesson.steps.map((item) => item.id)).indexOf(id);
   const languageStep = () => lessons().flatMap((lesson) => lesson.steps).find((item) => item.setsLearner?.interfaceLanguage === 'en');
@@ -55,13 +58,16 @@
 
   function render() {
     if (!state.data) return;
+    document.body?.classList.toggle('engineering-view', state.view === 'engineering');
     preserveDrafts();
+    const openCurriculumSteps = new Set([...document.querySelectorAll('details.engineering-curriculum-step[open]')].map((element) => element.dataset.curriculumStep));
     const focused = document.activeElement;
     const focusKey = focused?.dataset.draft;
     const selection = focusKey && typeof focused.selectionStart === 'number' ? [focused.selectionStart, focused.selectionEnd] : null;
     renderSidebar();
     document.querySelectorAll('[data-view]').forEach((button) => { if (button.dataset.view === state.view) button.setAttribute('aria-current', 'page'); else button.removeAttribute('aria-current'); });
-    $('view-content').innerHTML = state.view === 'overview' ? renderOverview() : state.view === 'journal' ? renderJournal() : state.view === 'versions' ? renderVersions() : renderLesson();
+    $('view-content').innerHTML = state.view === 'engineering' ? renderEngineering() : state.view === 'journal' ? renderJournal() : state.view === 'versions' ? renderVersions() : renderLesson();
+    document.querySelectorAll('details.engineering-curriculum-step').forEach((element) => { if (openCurriculumSteps.has(element.dataset.curriculumStep)) element.open = true; });
     placeHighlights();
     $('view-content').setAttribute('aria-busy', 'false');
     $('revision-label').textContent = `revision ${state.data.progress.revision} · ${date(state.data.progress.updatedAt)}`;
@@ -73,26 +79,135 @@
     }
   }
 
+  function renderEngineering() {
+    const module = globalThis.BlenderEngineeringPath;
+    if (!module) return '<section class="empty-state"><h2>工程學習路徑模組尚未載入</h2><p>請重新整理頁面；共用進度沒有變動。</p></section>';
+    if (!state.engineering.data) return module.renderError(state.engineering.error, state.engineering.loading || !state.engineering.attempted);
+    const route = state.engineering;
+    try { return module.render(route.data, state.data, route.chapter, route.curriculum, { drafts: state.drafts, busy: state.busy, section: route.section, step: route.step, tab: route.tab, sourceRecord: renderSourceRecord }); }
+    catch (error) { return module.renderError(error.message); }
+  }
+
+  async function loadEngineering({ retry = false } = {}) {
+    const route = state.engineering;
+    if (route.loading || (route.attempted && !retry)) return;
+    route.attempted = true; route.loading = true; route.error = '';
+    if (state.data && state.view === 'engineering') render();
+    try {
+      if (!globalThis.BlenderEngineeringPath) throw new Error('工程學習路徑模組尚未載入，請重新整理頁面。');
+      const data = await request('/engineering-path.json');
+      route.data = globalThis.BlenderEngineeringPath.validate(data);
+    } catch (error) { route.error = error.message; route.data = null; }
+    finally { route.loading = false; if (state.data) render(); }
+    if (route.data) await loadCurriculum();
+  }
+
+  async function loadCurriculum({ retry = false } = {}) {
+    const curriculum = state.engineering.curriculum;
+    if (curriculum.loading || (curriculum.attempted && !retry)) return;
+    curriculum.attempted = true; curriculum.loading = true; curriculum.error = '';
+    if (state.data && state.view === 'engineering') render();
+    try {
+      const data = await request('/engineering-curriculum.json');
+      curriculum.data = globalThis.BlenderEngineeringPath.validateCurriculum(data);
+      // A bare entry URL resumes at the first chapter with an unconfirmed new step.
+      // Explicit chapter links and all historical confirmations remain untouched.
+      if (state.view === 'engineering' && !window.location?.hash) {
+        const events = state.data?.progress?.events || [];
+        const done = new Set(events.filter((event) => event?.type === 'engineering_step_confirmed' && event.author === 'learner' && event.curriculumId === data.id).map((event) => `${event.chapterId}:${event.stepId}`));
+        const next = data.chapters.find((chapter) => globalThis.BlenderEngineeringPath.learnerSteps(chapter).some((step) => !done.has(`${chapter.id}:${step.id}`)));
+        if (next && state.engineering.data?.chapters.some((chapter) => chapter.id === next.id)) state.engineering.chapter = next.id;
+      }
+    } catch (error) { curriculum.error = error.message; curriculum.data = null; }
+    finally { curriculum.loading = false; if (state.data) render(); }
+  }
+
+  function setViewHash() {
+    if (!window.location || !window.history?.replaceState) return;
+    const route = state.engineering;
+    const hash = state.view === 'engineering' ? `#engineering/${route.chapter}${route.section ? '/' + route.section : ''}` : `#${state.view}`;
+    window.history.replaceState(null, '', window.location.pathname + window.location.search + hash);
+  }
+
+  // 網址：#engineering/ch03 是章節頁，#engineering/ch03/03-08 是小節頁。
+  function applyViewHash({ initial = false } = {}) {
+    const hash = window.location?.hash || '';
+    const engineering = /^#engineering(?:\/(ch\d{2})(?:\/(\d{2}-\d{2}))?)?$/.exec(hash);
+    const ordinary = /^#(lesson|journal|versions)$/.exec(hash);
+    if (!engineering && !ordinary) return;
+    if (!initial) preserveDrafts();
+    state.view = engineering ? 'engineering' : ordinary[1];
+    if (engineering) Object.assign(state.engineering, { chapter: engineering[1] || 'ch01', section: engineering[2] || null, step: null });
+    if (!initial && state.data) {
+      render();
+      if (engineering && !state.engineering.attempted) void loadEngineering();
+    }
+  }
+
+  // 換頁（章節頁或小節頁）都回到頁首。
+  function showEngineeringPage(changes, focusId) {
+    preserveDrafts(); Object.assign(state.engineering, changes); state.view = 'engineering'; setViewHash(); render();
+    window.scrollTo?.(0, 0);
+    $(focusId)?.focus({ preventScroll: true });
+  }
+
+  function selectEngineeringChapter(id) {
+    if (!state.engineering.data?.chapters.some((chapter) => chapter.id === id)) return;
+    showEngineeringPage({ chapter: id, section: null, step: null }, 'engineering-chapter-title');
+  }
+
+  function openSection(chapterId, sectionId, stepId = null) {
+    if (!state.engineering.data?.chapters.some((chapter) => chapter.id === chapterId)) return;
+    showEngineeringPage({ chapter: chapterId, section: sectionId, step: stepId }, 'engineering-section-title');
+  }
+
+  // 小步屬於某一節就開那一節並選取它；附錄等沒有節的項目開章節頁。
+  function gotoCurriculumStep(chapterId, stepId) {
+    const step = state.engineering.curriculum.data?.chapters.find((chapter) => chapter.id === chapterId)?.steps.find((item) => item.id === stepId);
+    if (step?.section) openSection(chapterId, step.section, stepId);
+    else selectEngineeringChapter(chapterId);
+  }
+
+  function selectCurriculumStep(stepId) {
+    if (state.view !== 'engineering' || !state.engineering.section) return;
+    preserveDrafts(); state.engineering.step = stepId; render();
+  }
+
+  function selectDetailTab(tab) {
+    preserveDrafts(); state.engineering.tab = tab; render();
+  }
+
+  function openEngineeringReference(lessonId, stepId) {
+    if (state.busy || !globalThis.BlenderEngineeringPath?.findReference(state.data, lessonId, stepId)) return;
+    preserveDrafts(); state.lesson = lessonId; state.browsed.set(lessonId, stepId); state.view = 'lesson'; setViewHash(); render();
+    $('step-title')?.focus({ preventScroll: true });
+  }
+
   function renderSidebar() {
-    const count = lessons().filter((lesson) => lp(lesson.id).status === 'completed').length;
-    const totalSteps = lessons().reduce((sum, lesson) => sum + lesson.steps.length, 0);
-    const doneSteps = lessons().reduce((sum, lesson) => sum + completed(lesson.id).length, 0);
-    $('completed-count').textContent = count; $('lesson-count').textContent = lessons().length;
-    $('overall-progress').max = totalSteps; $('overall-progress').value = doneSteps;
-    $('overall-caption').textContent = `${doneSteps} / ${totalSteps} 個小步驟已確認`;
-    $('lesson-list').innerHTML = lessons().map((lesson) => {
-      const selected = lesson.id === state.lesson;
-      const step = selectedStep(lesson);
-      return `<section class="lesson-nav ${selected ? 'selected' : ''}"><button class="lesson-nav-button" type="button" data-lesson="${e(lesson.id)}"${selected ? ' aria-current="true"' : ''}><span class="lesson-number">${e(lesson.id)}</span><span><span class="lesson-title">${e(lesson.title)}</span><span class="lesson-status">${e(statusName(lp(lesson.id).status))} · ${completed(lesson.id).length}/${lesson.steps.length} 步</span></span></button>${selected ? `<div class="step-nav">${lesson.steps.map((item) => `<button type="button" data-step="${e(item.id)}" class="${item.id === step?.id ? 'current' : ''} ${completed(lesson.id).includes(item.id) ? 'done' : ''}"${item.id === step?.id ? ' aria-current="step"' : ''}><span class="step-dot" aria-hidden="true">${completed(lesson.id).includes(item.id) ? '✓' : item.id === lp(lesson.id).currentStep && state.data.progress.activeLesson === lesson.id ? '●' : '○'}</span><span>${e(item.title)}</span></button>`).join('')}</div>` : ''}</section>`;
-    }).join('');
+    const chapters = state.engineering.data?.chapters || [];
+    const curriculum = state.engineering.curriculum.data;
+    const events = state.data?.progress?.events || [];
+    const confirmedIds = new Set(events.filter((event) => event?.type === 'engineering_step_confirmed' && event.author === 'learner' && event.curriculumId === curriculum?.id).map((event) => `${event.chapterId}:${event.stepId}`));
+    let newTotal = 0, newDone = 0;
+    $('engineering-chapter-count').textContent = chapters.length || '—';
+    $('engineering-list').innerHTML = chapters.length ? chapters.map((chapter) => {
+      const teaching = curriculum?.chapters.find((item) => item.id === chapter.id);
+      const steps = teaching && globalThis.BlenderEngineeringPath ? globalThis.BlenderEngineeringPath.learnerSteps(teaching) : [];
+      const done = steps.filter((step) => confirmedIds.has(`${chapter.id}:${step.id}`)).length;
+      newTotal += steps.length; newDone += done;
+      const selected = state.view === 'engineering' && chapter.id === state.engineering.chapter;
+      // 目前這章展開到「節」：主章節 → 次章節，點節直接捲到該節。
+      const sections = selected && Array.isArray(teaching?.sections) ? teaching.sections : [];
+      const sectionList = sections.length ? `<div class="section-nav">${sections.map((section) => { const own = (teaching.steps || []).filter((step) => step.section === section.id && !step.track?.match(/^(appendix|pending|reference)$/)); const sectionDone = own.filter((step) => confirmedIds.has(`${chapter.id}:${step.id}`)).length; const current = section.id === state.engineering.section; return `<button type="button" class="${current ? 'current' : ''}" data-section-chapter="${e(chapter.id)}" data-open-section="${e(section.id)}"${current ? ' aria-current="page"' : ''}><span>${e(section.id)}</span><span>${e(section.title)}${globalThis.BlenderEngineeringPath?.TRACK_LABELS?.[section.track] ? `（${e(section.pendingLabel || globalThis.BlenderEngineeringPath.TRACK_LABELS[section.track])}）` : ''}</span><small>${own.length ? `${sectionDone}/${own.length}` : '—'}</small></button>`; }).join('')}</div>` : '';
+      return `<button class="primary-chapter-button${selected ? ' selected' : ''}" type="button" data-engineering-chapter="${e(chapter.id)}"${selected ? ' aria-current="page"' : ''}><span class="chapter-number">${e(chapter.number || chapter.id.slice(2))}</span><span><strong>${e(chapter.title)}</strong><small>${teaching ? (steps.length ? `${done} / ${steps.length} 小步已確認` : e(chapter.availabilityLabel || '不計入主線進度')) : '章節內容讀取中'}</small></span></button>${sectionList}`;
+    }).join('') : `<p class="sidebar-loading">${state.engineering.error ? '新版章節暫時無法讀取；請在主頁重新讀取。' : '正在載入新版章節…'}</p>`;
+    $('engineering-sidebar-progress').textContent = curriculum ? `${newDone} / ${newTotal} 小步已確認` : '新版完成數讀取中…';
   }
 
   function renderLesson() {
     const lesson = currentLesson(); const step = selectedStep(lesson);
     if (!lesson || !step) return '<section class="empty-state"><h2>找不到課程步驟</h2><button type="button" class="button" data-action="refresh">重新讀取</button></section>';
-    const done = completed(lesson.id).includes(step.id); const isActive = lesson.id === state.data.progress.activeLesson && step.id === lp(lesson.id).currentStep && !done;
-    const active = activeStep();
-    return `<nav class="mobile-jump" aria-label="本步快速操作"><button type="button" data-jump="step-title">操作步驟</button><button type="button" data-jump="confirm-panel">完成確認</button><button type="button" data-jump="note-panel">卡關筆記</button></nav><header class="lesson-heading"><div class="heading-meta"><span class="eyebrow">單元 ${e(lesson.id)} / ${lessons().length}</span>${badge(lp(lesson.id).status)}<span class="badge">${completed(lesson.id).length} / ${lesson.steps.length} 步</span><span class="badge">Blender 介面：${e(interfaceName(state.data.progress.learner?.interfaceLanguage))}</span></div><h2>${e(lesson.title)}</h2><p>${e(lesson.goal)}</p></header>${!isActive ? `<div class="session-banner"><div><strong>${done ? '你正在回看已確認的步驟' : '你正在預覽這個步驟'}</strong><p>${active ? `目前待確認：${e(active.id)} ${e(active.title)}` : '所有單元已完成，可回顧操作與成果。'}</p></div>${active ? '<button type="button" class="button small" data-action="resume">回到目前步驟</button>' : ''}</div>` : ''}<div class="content-grid"><div class="primary-column">${renderStep(lesson, step)}${renderSource(lesson)}</div><aside class="secondary-column" aria-label="確認、筆記與版本"><section class="panel goal-panel"><h3>這一步的小目標</h3><p>${e(step.title)}</p><p class="form-hint">每回合只做畫面中的 1–3 個操作。畫面不同時，先留下卡關筆記。</p></section>${renderConfirm(lesson, step)}${renderNote(lesson)}${renderWorkspace(lesson)}${renderVersionPanel(lesson)}<section class="panel resume-panel"><h3>回到聊天接續</h3><p>複製目前步驟與 revision，貼到這個聊天。助教依專案中的共用進度接續。</p><button type="button" class="button" data-action="copy-resume">複製接續聊天訊息</button></section></aside></div>`;
+    return `<nav class="mobile-jump" aria-label="本步快速操作"><button type="button" data-jump="step-title">操作步驟</button><button type="button" data-jump="confirm-panel">新版小步</button><button type="button" data-jump="note-panel">筆記</button></nav><header class="lesson-heading"><div class="heading-meta"><span class="eyebrow">原教材 · 單元 ${e(lesson.id)} / ${lessons().length}</span><span class="badge">只供查閱</span><span class="badge">Blender 介面：${e(interfaceName(state.data.progress.learner?.interfaceLanguage))}</span></div><h2>${e(lesson.title)}</h2><p>${e(lesson.goal)}</p></header><div class="session-banner"><div><strong>原教材只供查閱</strong><p>這裡保留原步驟的圖文與助教示範紀錄；學習進度以新版小步為準。</p></div><button type="button" class="button small" data-view="engineering">回到新版教學</button></div><div class="content-grid"><div class="primary-column">${renderStep(lesson, step)}${renderSource(lesson)}</div><aside class="secondary-column" aria-label="新版小步、筆記與版本"><section class="panel goal-panel"><h3>這一步的內容</h3><p>${e(step.title)}</p><p class="form-hint">每回合只做畫面中的 1–3 個操作。畫面不同時，到新版小步留下卡關筆記。</p></section>${renderNewPathPointer(step)}${renderNote(lesson)}${renderWorkspace(lesson)}${renderVersionPanel(lesson)}<section class="panel resume-panel"><h3>回到聊天接續</h3><p>複製新版下一小步與 revision，貼到這個聊天。助教依專案中的共用進度接續。</p><button type="button" class="button" data-action="copy-resume">複製接續聊天訊息</button></section></aside></div>`;
   }
 
   // 標示框座標以原圖像素存在 catalog；網頁只疊框與文字，不修改原圖。CSP 不允許 style 屬性，位置在 placeHighlights() 設定。
@@ -245,9 +360,22 @@
   function renderStep(lesson, step) {
     const index = stepIndex(lesson, step);
     const guide = Array.isArray(step.guide) && step.guide.length ? `<ol class="guide-list">${step.guide.map((item, i) => `<li class="guide-item"><span class="guide-number" aria-hidden="true">${e(item.mark || i + 1)}</span><div class="guide-copy">${item.where ? `<div class="guide-where">${e(item.where)}</div>` : ''}<p class="guide-action">${e(item.do || item.action || '')}</p>${item.see ? `<p class="guide-see"><strong>你會看到</strong> ${e(item.see)}</p>` : ''}${renderShortcut(item.shortcut)}</div></li>`).join('')}</ol>` : `<div class="guide-item"><span class="guide-number" aria-hidden="true">1</span><p class="guide-action">${e(text(step.action))}</p></div>`;
-    // 只顯示專案 evidence 中的實際截圖；不使用示意圖。
     const review = (step.contentReview?.summary ? `<p class="caption content-review">內容核對：${e(step.contentReview.summary)}</p>` : '') + renderAuditReview(step.auditReview);
-    const figures = (step.figures || []).filter((figure) => figure.type === 'screenshot' && String(figure.path || '').startsWith('learning/evidence/') && /\.(png|jpe?g|webp)$/i.test(String(figure.path || ''))).map((figure) => {
+    const figures = renderLessonFigures(step);
+    const hasPlan = step.parameterPlan || step.geometryDraft || step.orientationReview || step.stlReview || step.couponReview || step.threadPlan;
+    return `<article class="panel step-panel"><header class="step-header"><div class="step-kicker"><span class="eyebrow">STEP ${e(step.id)}</span><span>第 ${index + 1} / ${lesson.steps.length} 步</span></div><h3 id="step-title" tabindex="-1">${e(step.title)}</h3></header><div class="step-body"><div class="small-label">現在只做這一小步</div>${needsEnglishHint(step) ? `<p class="language-hint">本步以英文名稱作對照；介面語言還沒核對時，先依實際畫面確認按鈕文字，保留繁中也不照英文名稱猜位置。</p>` : ''}${review}${guide}${hasPlan ? figures : ''}${renderReviewBlocks(step)}${renderOperationRun(step.operationRun)}${renderPreviousOperationRuns(step.previousOperationRuns)}${hasPlan ? '' : figures}<div class="success-box"><strong>成功時應看到</strong><p>${e(text(step.success))}</p></div>${step.help ? `<details><summary>畫面不同，或找不到按鈕？</summary><div class="help-text">${e(text(step.help))}</div></details>` : ''}</div><nav class="step-navigation" aria-label="瀏覽操作步驟"><button type="button" class="button small" data-step="${e(lesson.steps[index - 1]?.id || '')}"${index === 0 ? ' disabled' : ''}>← 上一步</button><button type="button" class="button small" data-step="${e(lesson.steps[index + 1]?.id || '')}"${index === lesson.steps.length - 1 ? ' disabled' : ''}>預覽下一步 →</button></nav></article>`;
+  }
+
+  const renderReviewBlocks = (step) => `${renderParameterPlan(step.parameterPlan)}${renderGeometryDraft(step.geometryDraft)}${renderOrientationReview(step.orientationReview)}${renderStlReview(step.stlReview)}${renderCouponReview(step.couponReview)}${renderThreadPlan(step.threadPlan)}`;
+
+  // 新版小步右欄「示範紀錄」：與原教材頁相同的完整紀錄（含標示框、參數表、幾何與審查），不含操作說明與排解。
+  function renderSourceRecord(step) {
+    return `${renderAuditReview(step.auditReview)}${renderReviewBlocks(step)}${renderOperationRun(step.operationRun)}${renderPreviousOperationRuns(step.previousOperationRuns)}${renderLessonFigures(step)}`;
+  }
+
+  // 只顯示專案 evidence 中的實際截圖；不使用示意圖。
+  function renderLessonFigures(step) {
+    return (step.figures || []).filter((figure) => figure.type === 'screenshot' && String(figure.path || '').startsWith('learning/evidence/') && /\.(png|jpe?g|webp)$/i.test(String(figure.path || ''))).map((figure) => {
       // 局部視圖僅使用核對過的固定白名單；只以 CSS 放大原圖。
       const focus = figure.view === 'outliner-focus'
         ? { className: 'figure-outliner-focus', caption: 'Blender實際畫面局部放大：Camera／Cube／Light' }
@@ -258,24 +386,36 @@
       const alt = figure.alt || caption || 'Blender 實際截圖';
       return `<figure class="figure"><a class="figure-image-link${focus ? ' ' + focus.className : ''}" href="${fileUrl(figure.path)}" target="_blank" rel="noopener" aria-label="${e('查看完整原始截圖：' + alt)}"><img src="${fileUrl(figure.path)}" alt="${e(alt)}" loading="lazy"></a><figcaption><span class="figure-kind">實際截圖</span>${e(caption)}<span class="figure-open">點圖查看完整原圖</span></figcaption></figure>`;
     }).join('');
-    return `<article class="panel step-panel"><header class="step-header"><div class="step-kicker"><span class="eyebrow">STEP ${e(step.id)}</span><span>第 ${index + 1} / ${lesson.steps.length} 步${completed(lesson.id).includes(step.id) ? ' · 已確認' : ''}</span></div><h3 id="step-title" tabindex="-1">${e(step.title)}</h3></header><div class="step-body"><div class="small-label">現在只做這一小步</div>${needsEnglishHint(step) ? `<p class="language-hint">本步以英文名稱作對照；介面語言還沒核對時，先依實際畫面確認按鈕文字，保留繁中也不照英文名稱猜位置。</p>` : ''}${review}${guide}${step.parameterPlan || step.geometryDraft || step.orientationReview || step.stlReview || step.couponReview || step.threadPlan ? figures : ''}${renderParameterPlan(step.parameterPlan)}${renderGeometryDraft(step.geometryDraft)}${renderOrientationReview(step.orientationReview)}${renderStlReview(step.stlReview)}${renderCouponReview(step.couponReview)}${renderThreadPlan(step.threadPlan)}${renderOperationRun(step.operationRun)}${renderPreviousOperationRuns(step.previousOperationRuns)}${step.parameterPlan || step.geometryDraft || step.orientationReview || step.stlReview || step.couponReview || step.threadPlan ? '' : figures}<div class="success-box"><strong>成功時應看到</strong><p>${e(text(step.success))}</p></div>${step.help ? `<details><summary>畫面不同，或找不到按鈕？</summary><div class="help-text">${e(text(step.help))}</div></details>` : ''}</div><nav class="step-navigation" aria-label="瀏覽操作步驟"><button type="button" class="button small" data-step="${e(lesson.steps[index - 1]?.id || '')}"${index === 0 ? ' disabled' : ''}>← 上一步</button><button type="button" class="button small" data-step="${e(lesson.steps[index + 1]?.id || '')}"${index === lesson.steps.length - 1 ? ' disabled' : ''}>預覽下一步 →</button></nav></article>`;
   }
 
-  function renderConfirm(lesson, step) {
-    const allowed = canConfirm(lesson, step); const done = completed(lesson.id).includes(step.id);
-    const eligible = lesson.id === state.data.progress.activeLesson && step.id === lp(lesson.id).currentStep && !done;
-    const screenKey = keyFor('screen'); const evidenceKey = keyFor('evidence'); const checkedKey = keyFor('checked');
-    return `<section class="panel confirm-panel" id="confirm-panel" tabindex="-1"><h3>${done ? '✓ 這一步已確認' : '完成後，由你確認'}</h3>${eligible ? `<p class="caption">對照左側的成功畫面，再留下你的實際觀察。</p><form data-form="confirm">${step.id === '01-01' ? `<label class="field-label" for="screen-kind">你目前看到哪一種畫面？</label><select id="screen-kind" data-draft="${e(screenKey)}" required><option value="">請選擇你的實際畫面</option>${['首次設定', '啟動畫面', '預設場景', '既有作品'].map((item) => `<option value="${e(item)}"${field(screenKey) === item ? ' selected' : ''}>${e(item)}</option>`).join('')}</select>` : ''}<label class="field-label" for="confirm-evidence">${step.id === '01-01' ? '補充說明（可留空）' : '簡短回報你看到的結果'}</label><textarea id="confirm-evidence" rows="3" data-draft="${e(evidenceKey)}" placeholder="${step.id === '01-01' ? '例如：看得到中央方塊，沒有首次設定視窗。' : '例如：目前選取 Cube，左上角顯示 Object Mode。'}"${step.id === '01-01' ? '' : ' required'}>${valueAttr(evidenceKey)}</textarea><label class="check-label"><input type="checkbox" data-draft="${e(checkedKey)}"${field(checkedKey, false) ? ' checked' : ''} required><span>我已實際操作，並對照這一步的成功畫面。</span></label><button type="submit" class="button primary" data-confirm-button>確認完成，接下一小步</button><p class="form-hint">送出的是你的回報。網頁不會自動查看 Blender 螢幕。</p></form>` : `<p class="caption">${done ? '實際回報保存在共用學習紀錄。你可以回看操作與當時的確認內容。' : '可先看操作說明；完成目前步驟後，再依序確認。'}</p><button type="button" class="button" data-action="resume">回到目前步驟</button>`}</section>`;
+  // 原教材只供查閱：確認與筆記改在新版小步記錄，這裡列出由本步拆出的新版小步。
+  function renderNewPathPointer(step) {
+    const curriculum = state.engineering.curriculum.data;
+    const module = globalThis.BlenderEngineeringPath;
+    const targets = [];
+    for (const chapter of curriculum?.chapters || []) {
+      for (const item of chapter.steps || []) {
+        if (item.track === 'appendix' || !(item.sourceSteps || []).some((ref) => ref?.stepId === step.id)) continue;
+        const done = module?.curriculumEvents(state.data, curriculum.id, chapter.id, item.id).some((event) => event.type === 'engineering_step_confirmed');
+        targets.push(`<li><button type="button" class="button small" data-goto-chapter="${e(chapter.id)}" data-goto-step="${e(item.id)}">第 ${e(chapter.number || chapter.id.slice(2))} 章 ${e(item.section ? item.section + ' ' : '')}${e(item.title)}${done ? ' · 已確認' : ''}</button></li>`);
+      }
+    }
+    return `<section class="panel confirm-panel" id="confirm-panel" tabindex="-1"><h3>在新版小步確認</h3><p class="caption">原教材只供查閱圖文與示範紀錄。完成確認與卡關筆記請到新版對應的小步記錄。</p>${targets.length ? `<ul class="new-path-targets">${targets.join('')}</ul>` : `<p class="form-hint">${curriculum ? '這一步沒有對應的新版小步。' : '新版教材讀取中…'}</p>`}</section>`;
   }
 
-  function noteList(notes, max = Infinity) {
-    return [...notes].slice(-max).reverse().map((note) => `<article class="note-record"><span class="note-author" data-author="${e(note.author || 'unknown')}">${e(authorName(note.author))}</span><time datetime="${e(note.at || '')}">${e(date(note.at))} · ${note.kind === 'stuck' || note.noteKind === 'stuck' ? '卡關筆記' : '一般筆記'}</time><p>${e(typeof note === 'object' ? note.text || note.note || '' : note)}</p></article>`).join('');
+  function noteList(notes, max = Infinity, legacy = new Map()) {
+    return [...notes].slice(-max).reverse().map((note) => {
+      const role = legacy.get(note); const body = typeof note === 'object' ? note.text || note.note || '' : note;
+      // 助教標記的第一行是程式用標籤，只顯示後面的說明。
+      const shown = role === 'marker' ? String(body).split('\n').slice(1).join('\n') : body;
+      const kind = role ? (role === 'answer' ? '新版工程路徑的回答（不算本單元筆記）' : '新版工程路徑的助教標記（不算本單元筆記）') : note.kind === 'stuck' || note.noteKind === 'stuck' ? '卡關筆記' : '一般筆記';
+      return `<article class="note-record"><span class="note-author" data-author="${e(note.author || 'unknown')}">${e(authorName(note.author))}</span><time datetime="${e(note.at || '')}">${e(date(note.at))} · ${e(kind)}</time><p>${e(shown)}</p></article>`;
+    }).join('');
   }
 
   function renderNote(lesson) {
-    const notes = lp(lesson.id).notes || []; const noteKey = keyFor('note'); const kindKey = keyFor('noteKind');
-    const latest = notes[notes.length - 1];
-    return `<section class="panel note-panel" id="note-panel" tabindex="-1"><h3>卡關與觀察筆記</h3><form data-form="note"><fieldset class="note-kind"><legend class="small-label">這次要記什麼？</legend><label><input type="radio" name="note-kind" value="stuck" data-draft="${e(kindKey)}"${field(kindKey, 'stuck') === 'stuck' ? ' checked' : ''}>我卡住了</label><label><input type="radio" name="note-kind" value="note" data-draft="${e(kindKey)}"${field(kindKey, 'stuck') === 'note' ? ' checked' : ''}>一般筆記</label></fieldset><label class="field-label" for="note-text">看到什麼、做了什麼、卡在哪裡</label><textarea id="note-text" data-draft="${e(noteKey)}" rows="4" placeholder="例如：我看到啟動畫面，但不確定要按哪裡。" required>${valueAttr(noteKey)}</textarea><div class="note-actions"><span>保存筆記不會確認完成。</span><button type="submit" class="button small" data-note-button>保存筆記</button></div></form>${notes.length ? `<details class="notes-preview"${lesson.id === '01' && selectedStep(lesson)?.id === '01-01' ? ' open' : ''}><summary>已保存 ${notes.length} 則筆記</summary>${latest ? noteList([latest]) : ''}${notes.length > 1 ? '<button type="button" class="button quiet small" data-view="journal">查看所有紀錄</button>' : ''}</details>` : ''}</section>`;
+    const notes = lessonNotes(lesson.id); const latest = notes[notes.length - 1];
+    return `<section class="panel note-panel" id="note-panel" tabindex="-1"><h3>原教材筆記（只供查閱）</h3>${notes.length ? `<details class="notes-preview"><summary>已保存 ${notes.length} 則筆記</summary>${latest ? noteList([latest]) : ''}${notes.length > 1 ? '<button type="button" class="button quiet small" data-view="journal">查看所有紀錄</button>' : ''}</details>` : '<p class="caption">這個單元沒有筆記。</p>'}<p class="form-hint">新的卡關筆記請在新版小步保存。</p></section>`;
   }
 
   function renderWorkspace(lesson) {
@@ -296,39 +436,48 @@
     return `<section class="panel version-panel"><div class="version-summary"><h3>檔案版本紀錄</h3><span class="badge">${versions.length} 個</span></div>${versions.length ? `<ul class="compact-versions">${versions.slice(-3).reverse().map((item) => `<li><span class="role-badge">${e(roleName(item.role))}</span><strong>${e(item.path.split('/').pop())}</strong><small>SHA-256 ${e(String(item.sha256 || '').slice(0, 12))} · ${e(bytes(item.bytes))}</small>${item.source ? `<small>來源：${e(item.source.path.split('/').pop())}</small>` : ''}<a href="${fileUrl(item.path)}" download>下載檢查點</a></li>`).join('')}</ul><button type="button" class="button quiet small margin-top" data-view="versions">查看完整版本表</button>` : '<p class="caption">尚無已登記版本。檔案存在與實際學會，會分別記錄。</p>'}${renderVersionForm(lesson)}</section>`;
   }
 
+  function renderEngineeringVersionPanel() {
+    const folder = String(state.data.engineeringWorkspaces?.[ENGINEERING_WORKSPACE] || '').replace(/\\/g, '/').replace(/\/$/, '');
+    if (!folder) return '';
+    const files = (state.data.files || []).filter((item) => String(item.path).replace(/\\/g, '/').startsWith(folder + '/'));
+    const sources = (state.data.progress.fileVersions || []).filter((item) => item.workspace === ENGINEERING_WORKSPACE && item.role === 'source_scene');
+    const pathKey = `${ENGINEERING_WORKSPACE}:file`, roleKey = `${ENGINEERING_WORKSPACE}:role`, sourceKey = `${ENGINEERING_WORKSPACE}:source`;
+    const role = field(roleKey, 'source_scene');
+    return `<section class="panel version-panel"><h3>工程參數盒工作區 · 登記檔案</h3><p class="caption">第 07～08 章的個人副本存在 <code>${e(folder)}/</code>。資料夾尚未建立時，先在專案根目錄執行 <code>python learning/manage.py engineering-workspace</code>。已登記的檢查點不能再用受控面板修改，請另存新檔名繼續。</p><form class="version-form" data-form="engineering-version">${files.length ? `<div><label class="field-label" for="engineering-version-path">工程工作區檔案</label><select id="engineering-version-path" data-draft="${e(pathKey)}" required><option value="">請選擇已儲存的檔案</option>${files.map((item) => `<option value="${e(item.path)}"${field(pathKey) === item.path ? ' selected' : ''}>${e(item.path.slice(folder.length + 1))}${item.registered ? '（已登記）' : ''} · ${e(bytes(item.bytes))}</option>`).join('')}</select></div>` : '<p class="form-hint">工程工作區目前沒有檔案（或資料夾尚未建立）。</p>'}<div><label class="field-label" for="engineering-version-role">檔案用途</label><select id="engineering-version-role" data-draft="${e(roleKey)}">${['source_scene', 'render', 'export'].map((item) => `<option value="${item}"${role === item ? ' selected' : ''}>${e(roleName(item))}</option>`).join('')}</select></div><div${role === 'source_scene' ? ' hidden' : ''}><label class="field-label" for="engineering-version-source">來源場景版本</label><select id="engineering-version-source" data-draft="${e(sourceKey)}"${role === 'source_scene' ? ' disabled' : ' required'}><option value="">選擇已登記的 .blend</option>${sources.map((item) => `<option value="${e(item.path)}"${field(sourceKey) === item.path ? ' selected' : ''}>${e(item.path.split('/').pop())} · ${e(String(item.sha256).slice(0, 10))}</option>`).join('')}</select></div><button type="submit" class="button small" data-engineering-version-button${!files.length ? ' disabled' : ''}>登記這個檔案版本</button></form><div class="button-row"><button type="button" class="button quiet small" data-action="open-engineering-workspace">開啟工程工作區</button></div></section>`;
+  }
+
   function renderSource(lesson) {
     const media = state.data.catalog.sourceMedia || {};
     return `<details class="panel source-panel"><summary>教材來源與本單元範圍</summary><p>${e(lesson.sourceRange || '')}</p><p>${e(state.data.catalog.sourceNote || '')}</p><div class="button-row">${media.lessonReadme ? `<a class="button quiet small" href="${externalUrl(media.lessonReadme)}" target="_blank" rel="noopener">SECourses 第一講</a>` : ''}${media.video ? `<a class="button quiet small" href="${externalUrl(media.video)}" target="_blank" rel="noopener">原作者影片</a>` : ''}</div></details>`;
   }
 
-  function renderOverview() {
-    const done = lessons().reduce((sum, lesson) => sum + completed(lesson.id).length, 0); const total = lessons().reduce((sum, lesson) => sum + lesson.steps.length, 0);
-    return `<header class="page-heading"><div class="eyebrow">一次一小步，做出自己的作品</div><h2>${lessons().length} 個單元的學習路線</h2><p>先把場景操作與可靠存檔練熟，再把尺寸與渲染連起來。</p></header><div class="overview-summary"><div><strong>${done} <span class="total-count">/ ${total}</span></strong><p>個操作步驟已確認</p></div><div><p>目前：${e(activeStep()?.id || '所有單元已完成')}</p><p>網頁與聊天共用 revision ${state.data.progress.revision}</p></div></div><div class="overview-list">${lessons().map((lesson) => `<article class="overview-card"><div class="heading-meta"><span class="eyebrow">單元 ${e(lesson.id)}</span>${badge(lp(lesson.id).status)}</div><h3>${e(lesson.title)}</h3><p>${e(lesson.goal)}</p><progress max="${lesson.steps.length}" value="${completed(lesson.id).length}" aria-label="單元 ${e(lesson.id)} 已確認步驟"></progress><small>${completed(lesson.id).length} / ${lesson.steps.length} 步 · ${e(lesson.sourceRange || '')}</small><button type="button" class="button" data-lesson="${e(lesson.id)}">${lesson.id === state.data.progress.activeLesson ? '接續這個單元' : '查看課程內容'}</button></article>`).join('')}</div><section class="panel roadmap-panel"><h3>之後：通用小盒與工程結構</h3><p>${e((state.data.catalog.futureRoadmap?.focus || ['內腔與壁厚', '上蓋配合', '卡榫', '卡扣', '螺紋', '公差與實測']).join(' → '))}</p><p class="form-hint">這些是後續練習。會分別記錄名義尺寸、配合間隙與實測結果。</p></section>${renderSource(activeLesson() || lessons()[0])}`;
-  }
-
   function renderJournal() {
     const entries = state.data.journal || []; const events = [...(state.data.progress.events || [])].reverse();
-    return `<header class="page-heading"><div class="eyebrow">留下過程，才能接著學</div><h2>學習紀錄</h2><p>學員確認、卡關筆記與檔案登記均來自專案內的共用紀錄。</p></header><div class="journal-grid"><div class="journal-list">${lessons().map((lesson) => `<section class="journal-card"><div class="heading-meta"><span class="eyebrow">單元 ${e(lesson.id)}</span>${badge(lp(lesson.id).status)}</div><h3>${e(lesson.title)}</h3>${(lp(lesson.id).notes || []).length ? noteList(lp(lesson.id).notes) : '<p>尚未新增筆記。</p>'}</section>`).join('')}${entries.length ? `<section class="journal-card"><h3>專案中的完整紀錄</h3>${entries.map((item) => `<p><a href="${fileUrl(item.path, true)}" target="_blank" rel="noopener">${e(item.title || item.path)}</a></p>`).join('')}</section>` : ''}</div><aside class="panel"><h3>共用進度事件</h3><ul class="event-list">${events.slice(0, 50).map((event) => `<li><time datetime="${e(event.at || '')}">${e(date(event.at))}${event.revision ? ` · r${e(event.revision)}` : ''}</time><strong>${e(({ learner_confirmed: '學員確認完成', note_added: '新增筆記', file_registered: '登記檔案', course_started: '開始學習', learner_updated: '更正介面語言' })[event.type] || event.type)}</strong>${event.step ? `<span> · ${e(event.step)}</span>` : ''}${event.type === 'note_added' ? `<span> · ${e(authorName(event.author))}</span>` : ''}<p>${e(event.evidence || event.note || event.path || (event.type === 'note_added' ? '筆記全文顯示於左側所屬單元。' : ''))}</p></li>`).join('')}</ul></aside></div>`;
+    return `<header class="page-heading"><div class="eyebrow">留下過程，才能接著學</div><h2>學習紀錄</h2><p>學員確認、卡關筆記與檔案登記均來自專案內的共用紀錄。</p></header><div class="journal-grid"><div class="journal-list">${lessons().map((lesson) => `<section class="journal-card"><div class="heading-meta"><span class="eyebrow">單元 ${e(lesson.id)}</span>${badge(lp(lesson.id).status)}</div><h3>${e(lesson.title)}</h3>${(lp(lesson.id).notes || []).length ? noteList(lp(lesson.id).notes, Infinity, legacyNotes(lesson.id)) : '<p>尚未新增筆記。</p>'}</section>`).join('')}${entries.length ? `<section class="journal-card"><h3>專案中的完整紀錄</h3>${entries.map((item) => `<p><a href="${fileUrl(item.path, true)}" target="_blank" rel="noopener">${e(item.title || item.path)}</a></p>`).join('')}</section>` : ''}</div><aside class="panel"><h3>共用進度事件</h3><ul class="event-list">${events.slice(0, 50).map((event) => `<li><time datetime="${e(event.at || '')}">${e(date(event.at))}${event.revision ? ` · r${e(event.revision)}` : ''}</time><strong>${e(({ learner_confirmed: '學員確認完成', note_added: '新增筆記', file_registered: '登記檔案', course_started: '開始學習', learner_updated: '更正介面語言' })[event.type] || event.type)}</strong>${event.step ? `<span> · ${e(event.step)}</span>` : ''}${event.type === 'note_added' ? `<span> · ${e(authorName(event.author))}</span>` : ''}<p>${e(event.evidence || event.note || event.path || (event.type === 'note_added' ? '筆記全文顯示於左側所屬單元。' : ''))}</p></li>`).join('')}</ul></aside></div>`;
   }
 
   function renderVersions() {
     const versions = [...(state.data.progress.fileVersions || [])].reverse(); const lesson = currentLesson();
-    return `<header class="page-heading"><div class="eyebrow">資料管理 · 來源與成果連得起來</div><h2>檔案版本紀錄</h2><p>先存檔，再登記。SHA-256 用於核對內容；渲染與列印輸出必須連結同單元的場景版本。</p><a class="button quiet small margin-top" href="/api/export" download>匯出共用進度紀錄</a></header><div class="content-grid"><div class="primary-column"><section class="panel">${versions.length ? `<div class="version-table-wrap"><table class="version-table"><caption class="small-label">全部單元已登記的 ${versions.length} 個檢查點</caption><thead><tr><th scope="col">檔案與用途</th><th scope="col">內容指紋與來源</th><th scope="col">登記</th></tr></thead><tbody>${versions.map((item) => `<tr><td><span class="role-badge">單元 ${e(item.lesson)} · ${e(roleName(item.role))}</span><br><a href="${fileUrl(item.path)}" download>${e(item.path.split('/').pop())}</a><small>${e(item.path)}</small><small>${e(bytes(item.bytes))}</small></td><td><code title="${e(item.sha256)}">${e(String(item.sha256 || '').slice(0, 16))}</code>${item.source ? `<small>來源：${e(item.source.path)}<br>SHA ${e(String(item.source.sha256 || '').slice(0, 12))}</small>` : '<small>原始場景檢查點</small>'}</td><td>${e(date(item.registeredAt))}<small>r${e(item.revision || '—')}</small></td></tr>`).join('')}</tbody></table></div>` : '<div class="empty-state"><h2>第一個檢查點，從存檔開始</h2><p>目前尚無已登記的檔案。第一單元的「第一次另存檔 v001」會帶你儲存自己的第一個檢查點。</p><button type="button" class="button" data-action="resume">回到目前步驟</button></div>'}</section></div><aside class="secondary-column"><section class="panel version-panel"><h3>單元 ${e(lesson.id)} · 登記檔案</h3><p class="caption">在左側選擇單元，可切換其工作區。</p>${renderVersionForm(lesson)}</section>${renderWorkspace(lesson)}</aside></div>`;
+    return `<header class="page-heading"><div class="eyebrow">資料管理 · 來源與成果連得起來</div><h2>檔案版本紀錄</h2><p>先存檔，再登記。SHA-256 用於核對內容；渲染與列印輸出必須連結同單元的場景版本。</p><a class="button quiet small margin-top" href="/api/export" download>匯出共用進度紀錄</a></header><div class="content-grid"><div class="primary-column"><section class="panel">${versions.length ? `<div class="version-table-wrap"><table class="version-table"><caption class="small-label">全部單元已登記的 ${versions.length} 個檢查點</caption><thead><tr><th scope="col">檔案與用途</th><th scope="col">內容指紋與來源</th><th scope="col">登記</th></tr></thead><tbody>${versions.map((item) => `<tr><td><span class="role-badge">${item.lesson ? `單元 ${e(item.lesson)}` : '工程工作區'} · ${e(roleName(item.role))}</span><br><a href="${fileUrl(item.path)}" download>${e(item.path.split('/').pop())}</a><small>${e(item.path)}</small><small>${e(bytes(item.bytes))}</small></td><td><code title="${e(item.sha256)}">${e(String(item.sha256 || '').slice(0, 16))}</code>${item.source ? `<small>來源：${e(item.source.path)}<br>SHA ${e(String(item.source.sha256 || '').slice(0, 12))}</small>` : '<small>原始場景檢查點</small>'}</td><td>${e(date(item.registeredAt))}<small>r${e(item.revision || '—')}</small></td></tr>`).join('')}</tbody></table></div>` : '<div class="empty-state"><h2>第一個檢查點，從存檔開始</h2><p>目前尚無已登記的檔案。第一單元的「第一次另存檔 v001」會帶你儲存自己的第一個檢查點。</p><button type="button" class="button" data-action="resume">回到新版下一小步</button></div>'}</section></div><aside class="secondary-column"><section class="panel version-panel"><h3>單元 ${e(lesson.id)} · 登記檔案</h3><p class="caption">第 01～06 章的練習檔存在原單元工作區；先選工作區再登記。</p><div class="workspace-picker" role="group" aria-label="選擇單元工作區">${lessons().map((item) => `<button type="button" class="button quiet small${item.id === lesson.id ? ' selected' : ''}" data-version-lesson="${e(item.id)}"${item.id === lesson.id ? ' aria-pressed="true"' : ' aria-pressed="false"'}>${e(item.id)}</button>`).join('')}</div>${renderVersionForm(lesson)}</section>${renderWorkspace(lesson)}${renderEngineeringVersionPanel()}</aside></div>`;
   }
 
   function updateFormAvailability() {
-    const confirmButton = document.querySelector('[data-confirm-button]');
-    if (confirmButton) {
-      const step = selectedStep(); const evidence = String(field(keyFor('evidence'))).trim(); const screen = field(keyFor('screen'));
-      confirmButton.disabled = !canConfirm(currentLesson(), step) || !field(keyFor('checked'), false) || (step.id === '01-01' ? !screen : !evidence);
-    }
-    const noteButton = document.querySelector('[data-note-button]'); if (noteButton) noteButton.disabled = state.busy || !String(field(keyFor('note'))).trim();
     const versionButton = document.querySelector('[data-version-button]');
     if (versionButton) {
       const role = field(keyFor('role'), 'source_scene');
       versionButton.disabled = state.busy || !document.querySelector('#version-path')?.value || (role !== 'source_scene' && !document.querySelector('#version-source')?.value);
     }
-    document.querySelectorAll('[data-action="open-workspace"],[data-action="open-blender"]').forEach((button) => { button.disabled = state.busy; });
+    const engineeringVersionButton = document.querySelector('[data-engineering-version-button]');
+    if (engineeringVersionButton) {
+      const role = field(`${ENGINEERING_WORKSPACE}:role`, 'source_scene');
+      engineeringVersionButton.disabled = state.busy || !document.querySelector('#engineering-version-path')?.value || (role !== 'source_scene' && !document.querySelector('#engineering-version-source')?.value);
+    }
+    document.querySelectorAll('[data-action="open-workspace"],[data-action="open-blender"],[data-action="open-engineering-workspace"]').forEach((button) => { button.disabled = state.busy; });
+    document.querySelectorAll('[data-engineering-submit]').forEach((button) => {
+      const input = button.closest('form')?.querySelector('textarea[data-draft]');
+      button.disabled = state.busy || !String(input?.value || '').trim();
+      if (input) input.readOnly = state.busy;
+    });
   }
 
   async function bootstrap({ quiet = false, force = false } = {}) {
@@ -344,6 +493,7 @@
       if (!state.lesson || !lessonById(state.lesson)) state.lesson = data.progress.activeLesson || data.catalog.lessons[0]?.id;
       if (!state.browsed.has(state.lesson)) state.browsed.set(state.lesson, lp(state.lesson).currentStep || currentLesson()?.steps[0]?.id);
       if (changed || force) render();
+      if (!state.engineering.attempted) void loadEngineering();
       $('connection-status').textContent = '本機共用進度 · 每 5 秒同步';
       if (!quiet) notify('已讀取專案中的最新進度。未送出的文字與瀏覽位置已保留。');
     } catch (error) {
@@ -363,54 +513,58 @@
     } else notify(error.message || '操作尚未完成，請重新檢查後再試。', 'error');
   }
 
-  async function saveProgress(action, extra) {
-    if (state.busy || !state.data) return;
-    preserveDrafts(); const lessonId = state.lesson;
-    const previousStepId = selectedStep()?.id; const revision = state.data.progress.revision;
+  async function saveEngineeringRecord(kind, chapterId, stepId, content) {
+    const module = globalThis.BlenderEngineeringPath;
+    const curriculum = state.engineering.curriculum.data;
+    if (state.busy || state.view !== 'engineering' || !state.data || !module || !['confirm', 'note'].includes(kind) || curriculum?.id !== 'engineering-curriculum-v002' || chapterId !== state.engineering.chapter || typeof content !== 'string' || !content.trim() || content.length > 10000) return;
+    const chapter = curriculum.chapters.find((item) => item.id === chapterId);
+    if (!chapter?.steps.some((step) => step.id === stepId)) return;
+    if (kind === 'confirm' && module.curriculumEvents(state.data, curriculum.id, chapterId, stepId).some((event) => event.type === 'engineering_step_confirmed')) return;
+    preserveDrafts();
+    const revision = state.data.progress.revision;
+    const key = module.draftKey(kind, chapterId, stepId);
+    const payload = { action: kind === 'confirm' ? 'engineering_confirm' : 'engineering_note', chapterId, stepId, expectedRevision: revision, ...(kind === 'confirm' ? { evidence: content } : { note: content, noteKind: 'stuck' }) };
     state.busy = true; updateFormAvailability();
     try {
-      const result = await request('/api/progress', { method: 'POST', body: JSON.stringify({ action, lessonId, expectedRevision: revision, ...extra }) });
+      const result = await request('/api/progress', { method: 'POST', body: JSON.stringify(payload) });
       if (!result.progress) throw new Error('本機服務尚未回傳保存後的進度，請重新讀取確認。');
       state.data.progress = result.progress;
-      if (action === 'confirm_step') {
-        state.drafts.delete(keyFor('evidence', lessonId, previousStepId)); state.drafts.delete(keyFor('checked', lessonId, previousStepId)); state.drafts.delete(keyFor('screen', lessonId, previousStepId));
-        state.lesson = result.progress.activeLesson; state.browsed.set(state.lesson, lp(state.lesson).currentStep);
-      } else state.drafts.set(keyFor('note', lessonId), '');
-      // Remove old controls before rendering so their previous values cannot replace saved drafts.
-      document.querySelectorAll(action === 'confirm_step' ? '[data-form="confirm"] [data-draft]' : '[data-form="note"] textarea[data-draft]').forEach((input) => input.removeAttribute('data-draft'));
-      state.signature = ''; render();
-      notify(action === 'confirm_step' ? '已保存你的實際回報，現在接下一小步。' : '筆記已保存到共用進度，目前步驟保持原狀。');
-      if (action === 'confirm_step') $('step-title')?.focus({ preventScroll: true });
+      document.querySelectorAll('[data-draft]').forEach((input) => { if (input.dataset.draft === key) input.removeAttribute('data-draft'); });
+      state.drafts.delete(key); state.signature = ''; render();
+      notify(kind === 'confirm' ? '已記錄你對新版小步的實際確認；原教材步驟保持原狀。' : '卡關筆記已保存到新版小步的共用進度。');
     } catch (error) { await handleError(error); }
     finally { state.busy = false; updateFormAvailability(); }
   }
 
-  async function registerFile() {
+  async function registerFile(engineering = false) {
     if (state.busy) return;
-    preserveDrafts(); const lessonId = state.lesson; const path = document.querySelector('#version-path')?.value; const role = field(keyFor('role'), 'source_scene'); const source = document.querySelector('#version-source')?.value;
+    preserveDrafts(); const lessonId = state.lesson; const prefix = engineering ? '#engineering-version' : '#version';
+    const path = document.querySelector(`${prefix}-path`)?.value; const role = engineering ? field(`${ENGINEERING_WORKSPACE}:role`, 'source_scene') : field(keyFor('role'), 'source_scene'); const source = document.querySelector(`${prefix}-source`)?.value;
     if (!path || (role !== 'source_scene' && !source)) return;
     state.busy = true; updateFormAvailability();
     try {
-      const result = await request('/api/register-file', { method: 'POST', body: JSON.stringify({ lessonId, path, role, ...(role !== 'source_scene' ? { source } : {}), expectedRevision: state.data.progress.revision }) });
+      const owner = engineering ? { workspaceId: ENGINEERING_WORKSPACE } : { lessonId };
+      const result = await request('/api/register-file', { method: 'POST', body: JSON.stringify({ ...owner, path, role, ...(role !== 'source_scene' ? { source } : {}), expectedRevision: state.data.progress.revision }) });
       if (!result.progress) throw new Error('本機服務尚未回傳檔案登記結果，請重新讀取確認。');
-      state.data.progress = result.progress; state.drafts.set(keyFor('file', lessonId), '');
-      document.querySelector('#version-path')?.removeAttribute('data-draft'); state.signature = ''; render();
+      state.data.progress = result.progress; state.drafts.set(engineering ? `${ENGINEERING_WORKSPACE}:file` : keyFor('file', lessonId), '');
+      document.querySelector(`${prefix}-path`)?.removeAttribute('data-draft'); state.signature = ''; render();
       notify('檔案版本已登記；場景內容與學習完成度分別保存。');
     } catch (error) { await handleError(error); }
     finally { state.busy = false; updateFormAvailability(); }
   }
 
-  async function openTarget(target) {
+  async function openTarget(target, owner = { lessonId: state.lesson }) {
     if (state.busy) return;
     state.busy = true; updateFormAvailability();
-    try { await request('/api/open', { method: 'POST', body: JSON.stringify({ lessonId: state.lesson, target }) }); notify(target === 'workspace' ? '已送出開啟練習資料夾的要求，請查看檔案總管。' : '已送出開啟 Blender 的要求，請查看 Blender 視窗。'); }
+    try { await request('/api/open', { method: 'POST', body: JSON.stringify({ ...owner, target }) }); notify(target === 'workspace' ? '已送出開啟練習資料夾的要求，請查看檔案總管。' : '已送出開啟 Blender 的要求，請查看 Blender 視窗。'); }
     catch (error) { await handleError(error); }
     finally { state.busy = false; updateFormAvailability(); }
   }
 
   function resumeMessage() {
-    const lesson = activeLesson(); const step = activeStep();
-    return ['請接續 Blender 引導式學習，一次教我一小步。', `專案：${state.data.projectRoot}`, `網頁讀取的共用進度：revision ${state.data.progress.revision}；目前單元 ${lesson?.id || '已完成'} ${lesson?.title || ''}。`, step ? `目前待確認步驟：${step.id} ${step.title}。` : '所有單元已確認完成，請先回顧成果。', '請先讀 AGENTS.md、learning/catalog.json、learning/progress.json 和相關 journal，執行 manage.py status，以專案最新進度為準。', '每回合只有一個小目標、1–3 個具體操作與可見成功條件。依我實際畫面教學；只有我明確回報完成，才更新進度。', '練習檔保留編號版本；場景與渲染／列印輸出需關聯，記錄來源與雜湊。', String(field(keyFor('note'))).trim() ? `我尚未送出的補充：${String(field(keyFor('note'))).trim()}` : ''].filter(Boolean).join('\n\n');
+    const next = globalThis.BlenderEngineeringPath?.nextStep(state.data, state.engineering.curriculum);
+    const where = next ? `新版下一小步：第 ${next.chapter.number || next.chapter.id.slice(2)} 章 ${next.section ? next.section.id + ' ' + next.section.title + ' · ' : ''}${next.step.title}（${next.step.id}）。` : '新版主線小步都已確認，請先回顧成果。';
+    return ['請接續 Blender 引導式學習，一次教我一小步。', `專案：${state.data.projectRoot}`, `網頁讀取的共用進度：revision ${state.data.progress.revision}。`, where, '請先讀 AGENTS.md、最新交接 journal 與 learning/progress.json，執行 manage.py status，以專案最新進度為準。', '每回合只有一個小目標、1–3 個具體操作與可見成功條件。依我實際畫面教學；只有我明確回報完成，才更新進度。', '練習檔保留編號版本；場景與渲染／列印輸出需關聯，記錄來源與雜湊。'].join('\n\n');
   }
 
   async function copy(value, label) {
@@ -420,13 +574,15 @@
 
   function selectLesson(id) {
     if (state.busy || !lessonById(id)) return;
-    preserveDrafts(); state.lesson = id; if (!state.browsed.has(id)) state.browsed.set(id, lp(id).currentStep || lessonById(id).steps[0]?.id); state.view = state.view === 'versions' ? 'versions' : 'lesson'; render();
+    preserveDrafts(); state.lesson = id; if (!state.browsed.has(id)) state.browsed.set(id, lp(id).currentStep || lessonById(id).steps[0]?.id); state.view = state.view === 'versions' ? 'versions' : 'lesson'; setViewHash(); render();
     $('main-content').focus({ preventScroll: true });
   }
 
   function resume() {
-    if (state.busy || !activeLesson()) return;
-    preserveDrafts(); state.lesson = activeLesson().id; state.browsed.set(state.lesson, activeStep()?.id); state.view = 'lesson'; render(); $('step-title')?.focus({ preventScroll: true });
+    if (state.busy) return;
+    const next = globalThis.BlenderEngineeringPath?.nextStep(state.data, state.engineering.curriculum);
+    if (next) gotoCurriculumStep(next.chapter.id, next.step.id);
+    else showEngineeringPage({}, 'engineering-chapter-title');
   }
 
   document.addEventListener('input', (event) => {
@@ -439,23 +595,33 @@
     const input = event.target;
     if (!input.matches('[data-draft]')) return;
     if (input.type !== 'radio' || input.checked) state.drafts.set(input.dataset.draft, input.type === 'checkbox' ? input.checked : input.value);
-    if (input.id === 'version-role') {
-      const source = document.querySelector('#version-source');
+    if (input.id === 'version-role' || input.id === 'engineering-version-role') {
+      const source = document.querySelector(input.id === 'version-role' ? '#version-source' : '#engineering-version-source');
       if (source) { const needed = input.value !== 'source_scene'; source.closest('div').hidden = !needed; source.disabled = !needed; source.required = needed; }
     }
     updateFormAvailability();
   });
   document.addEventListener('click', (event) => {
     const button = event.target.closest('button'); if (!button || button.disabled) return;
+    if (button.dataset.engineeringChapter) { selectEngineeringChapter(button.dataset.engineeringChapter); return; }
+    if (button.dataset.referenceLesson) { openEngineeringReference(button.dataset.referenceLesson, button.dataset.referenceStep); return; }
+    if (button.dataset.gotoChapter) { gotoCurriculumStep(button.dataset.gotoChapter, button.dataset.gotoStep); return; }
+    if (button.dataset.openSection) { openSection(button.dataset.sectionChapter || state.engineering.chapter, button.dataset.openSection); return; }
+    if (button.dataset.selectStep) { selectCurriculumStep(button.dataset.selectStep); return; }
+    if (button.dataset.detailTab) { selectDetailTab(button.dataset.detailTab); return; }
     if (button.dataset.jump) { const target = document.getElementById(button.dataset.jump); if (target) { target.scrollIntoView({ block: 'start', behavior: 'auto' }); target.focus({ preventScroll: true }); } return; }
+    if (button.dataset.versionLesson) { if (!state.busy && lessonById(button.dataset.versionLesson)) { preserveDrafts(); state.lesson = button.dataset.versionLesson; render(); } return; }
     if (button.dataset.lesson) { selectLesson(button.dataset.lesson); return; }
-    if (button.dataset.step) { preserveDrafts(); state.browsed.set(state.lesson, button.dataset.step); state.view = 'lesson'; render(); $('step-title')?.focus({ preventScroll: true }); return; }
-    if (button.dataset.view) { preserveDrafts(); state.view = button.dataset.view; render(); return; }
+    if (button.dataset.step) { preserveDrafts(); state.browsed.set(state.lesson, button.dataset.step); state.view = 'lesson'; setViewHash(); render(); $('step-title')?.focus({ preventScroll: true }); return; }
+    if (button.dataset.view) { preserveDrafts(); state.view = button.dataset.view; setViewHash(); render(); if (state.view === 'engineering' && !state.engineering.attempted) void loadEngineering(); return; }
     switch (button.dataset.action) {
       case 'refresh': void bootstrap({ force: true }); break;
+      case 'retry-engineering': void loadEngineering({ retry: true }); break;
+      case 'retry-curriculum': void loadCurriculum({ retry: true }); break;
       case 'resume': resume(); break;
       case 'open-workspace': void openTarget('workspace'); break;
       case 'open-blender': void openTarget('blender'); break;
+      case 'open-engineering-workspace': void openTarget('workspace', { workspaceId: ENGINEERING_WORKSPACE }); break;
       case 'copy-path': void copy(workspaceAbsolute(), '存檔資料夾路徑'); break;
       case 'copy-resume': preserveDrafts(); void copy(resumeMessage(), '接續聊天訊息'); break;
       default: break;
@@ -464,17 +630,17 @@
   document.addEventListener('submit', (event) => {
     const form = event.target; if (!form.matches('[data-form]')) return;
     event.preventDefault(); preserveDrafts();
-    if (form.dataset.form === 'note') {
-      const note = String(field(keyFor('note'))).trim(); if (note) void saveProgress('add_note', { note, noteKind: field(keyFor('noteKind'), 'stuck'), stepId: selectedStep()?.id });
+    if (form.dataset.form === 'engineering-confirm' || form.dataset.form === 'engineering-note') {
+      const kind = form.dataset.form === 'engineering-confirm' ? 'confirm' : 'note';
+      const chapterId = form.dataset.engineeringChapter, stepId = form.dataset.engineeringStep;
+      const key = globalThis.BlenderEngineeringPath?.draftKey(kind, chapterId, stepId);
+      if (key) void saveEngineeringRecord(kind, chapterId, stepId, String(field(key)));
     } else if (form.dataset.form === 'version') void registerFile();
-    else if (form.dataset.form === 'confirm' && canConfirm(currentLesson(), selectedStep()) && field(keyFor('checked'), false)) {
-      const step = selectedStep(); const remark = String(field(keyFor('evidence'))).trim(); const screen = field(keyFor('screen'));
-      if (step.id === '01-01' && !screen || step.id !== '01-01' && !remark) return;
-      const evidence = step.id === '01-01' ? `學員在教學頁自行確認已看到 Blender 視窗，目前畫面為「${screen}」。${remark ? '補充：' + remark : ''}本次為學員文字回報，未附截圖。` : remark;
-      void saveProgress('confirm_step', { stepId: step.id, evidence });
-    }
+    else if (form.dataset.form === 'engineering-version') void registerFile(true);
   });
-  window.addEventListener('beforeunload', (event) => { preserveDrafts(); if ([...state.drafts].some(([key, value]) => /:(note|evidence)(:|$)/.test(key) && String(value).trim())) { event.preventDefault(); event.returnValue = ''; } });
+  window.addEventListener('hashchange', () => { applyViewHash(); });
+  applyViewHash({ initial: true });
+  window.addEventListener('beforeunload', (event) => { preserveDrafts(); if ([...state.drafts].some(([key, value]) => /:(note|evidence|confirm)(:|$)/.test(key) && String(value).trim())) { event.preventDefault(); event.returnValue = ''; } });
   window.setInterval(() => { if (!document.hidden && !state.busy && !state.loading) void bootstrap({ quiet: true }); }, 5000);
   void bootstrap({ quiet: true });
 })();

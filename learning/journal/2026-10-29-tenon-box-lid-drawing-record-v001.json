@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "title": "06-01 定位柱／蓋孔網格工程題圖",
+  "drawing": {
+    "path": "learning/web/challenges/tenon-box-lid-drawing-v001.svg",
+    "sha256": "640367de51cdf7b0bd7abb7b3713af6f5181e6749747835665147c15745af6a8"
+  },
+  "sourceScene": {
+    "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/demo-files/u06_locating_tenon_v001.blend",
+    "sha256": "f94dc6c5d342f04c41dddc37a4682805a5f7d87b5cf7a8b7bda37cd8ec51040f"
+  },
+  "meshes": [
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/body_mesh.json",
+      "sha256": "930fcafdf6e09ba60bf7ea20e3e448f3cbdac9056d7a44e98e4369ca75ffde08",
+      "boundsMm": [
+        [
+          -30.0,
+          30.0
+        ],
+        [
+          -20.0,
+          20.0
+        ],
+        [
+          -15.0,
+          16.5
+        ]
+      ]
+    },
+    {
+      "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/lid_mesh.json",
+      "sha256": "4ae28e1981fa44e9be4d504a2d62b5fcecda16ec9634c84127aaa8191e797d9a",
+      "boundsMm": [
+        [
+          -30.0,
+          30.0
+        ],
+        [
+          -20.0,
+          20.0
+        ],
+        [
+          11.0,
+          17.0
+        ]
+      ]
+    }
+  ],
+  "sourceVerification": {
+    "path": "learning/evidence/06/2026-10-25-lesson06-tenon-demo-v006/trial-fit-record-v001.json",
+    "sha256": "4991be96553a02c34c37f871fa4c29417eee2190438204d3b4742dcf4b25b867"
+  },
+  "readback": {
+    "bodyBoundsMm": [
+      [
+        -30.0,
+        30.0
+      ],
+      [
+        -20.0,
+        20.0
+      ],
+      [
+        -15.0,
+        16.5
+      ]
+    ],
+    "lidBoundsMm": [
+      [
+        -30.0,
+        30.0
+      ],
+      [
+        -20.0,
+        20.0
+      ],
+      [
+        11.0,
+        17.0
+      ]
+    ],
+    "sectionPlaneYmm": 13,
+    "sectionSegmentCounts": [
+      34,
+      42
+    ],
+    "pinNominalCircumdiameterMm": 4,
+    "holeNominalCircumdiameterMm": 4.4,
+    "nominalDiametralTrialMm": 0.4,
+    "nominalRadialTrialMm": 0.2,
+    "sampledMinimumNormalClearanceMm": 0.1990362137307402,
+    "exposedSidewallMm": 29.5,
+    "pinEngagementMm": 1.5,
+    "pinToLidTopMm": 0.5
+  },
+  "limitations": [
+    "三視圖採網格鄰面稜線與抽樣可見性，非完整標準隱線。",
+    "剖切採示範場景Y=13的三角面交線；無剖面填色。",
+    "外露側壁高度不等於力學有效長度，單柱不完全限制旋轉；環唇及定位柱可能重複定位。",
+    "0.4／0.2為名義試驗值；最小法向值為此網格計算，非實測合格。",
+    "未完成材料選擇、製造公差、實際列印、量測或試配，不作強度或配合合格判定。"
+  ],
+  "physicalPrint": null,
+  "physicalMeasurement": null,
+  "physicalFit": null,
+  "qualifiedClearance": null
+}

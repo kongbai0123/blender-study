@@ -1,0 +1,202 @@
+{
+  "kind": "manual-gui-fixed-lid-on-manual-box",
+  "method": "獨立 Blender GUI 建立方塊板、底面 I 2.2、E 4、I 2、E -4 形成環唇；程式僅啟用插件、填檔案瀏覽器及讀值。",
+  "bodyAndLidEvaluation": {
+    "Body": {
+      "vertices": 16,
+      "faces": 12,
+      "nonManifoldEdges": 0,
+      "volume": 22112.006668090813,
+      "levels": {
+        "0.0": {
+          "x": [
+            0.0,
+            80.0
+          ],
+          "y": [
+            0.0,
+            50.0
+          ],
+          "count": 4
+        },
+        "30.0": {
+          "x": [
+            0.0,
+            2.0,
+            78.0,
+            80.0
+          ],
+          "y": [
+            0.0,
+            2.0,
+            48.0,
+            50.0
+          ],
+          "count": 8
+        },
+        "2.0": {
+          "x": [
+            2.0,
+            78.0
+          ],
+          "y": [
+            2.0,
+            48.0
+          ],
+          "count": 4
+        }
+      }
+    },
+    "Body.001": {
+      "vertices": 8,
+      "faces": 6,
+      "nonManifoldEdges": 0,
+      "volume": 97887.99333190918,
+      "levels": {
+        "30.0": {
+          "x": [
+            2.0,
+            78.0
+          ],
+          "y": [
+            2.0,
+            48.0
+          ],
+          "count": 4
+        },
+        "2.0": {
+          "x": [
+            2.0,
+            78.0
+          ],
+          "y": [
+            2.0,
+            48.0
+          ],
+          "count": 4
+        }
+      }
+    },
+    "Cube": {
+      "vertices": 24,
+      "faces": 22,
+      "nonManifoldEdges": 0,
+      "volume": 9874.862189940997,
+      "levels": {
+        "30.0": {
+          "x": [
+            0.0005,
+            2.2005,
+            4.2005,
+            75.7995,
+            77.7995,
+            79.9995
+          ],
+          "y": [
+            0.0003,
+            2.2003,
+            4.2003,
+            45.7997,
+            47.7997,
+            49.9997
+          ],
+          "count": 12
+        },
+        "32.0": {
+          "x": [
+            0.0005,
+            79.9995
+          ],
+          "y": [
+            0.0003,
+            49.9997
+          ],
+          "count": 4
+        },
+        "26.0": {
+          "x": [
+            2.2005,
+            4.2005,
+            75.7995,
+            77.7995
+          ],
+          "y": [
+            2.2003,
+            4.2003,
+            45.7997,
+            47.7997
+          ],
+          "count": 8
+        }
+      }
+    }
+  },
+  "scene": {
+    "file": "2026-10-27-manual-box-lid-geometry-v002/demo-files/manual_box_lid_fixed_80x50_v001.blend",
+    "sha256": "c870ffe0366bee23e44f1a13d12259460f100a723f7753de0f28f8e84c43f508"
+  },
+  "images": [
+    {
+      "file": "2026-10-27-manual-box-lid-geometry-v002/LID-01-opened.png",
+      "sha256": "1e9cf9b5cfe1bcbfec52d5e0cc110031ad1d8745100154b6053a090cf97cf5a4"
+    },
+    {
+      "file": "2026-10-27-manual-box-lid-geometry-v002/LID-02-body-selected.png",
+      "sha256": "d59d15608dae79716dc9e0cffa49c992027070182103b91a5ade6c98e05c684f"
+    },
+    {
+      "file": "2026-10-27-manual-box-lid-geometry-v002/LID-03-cube.png",
+      "sha256": "e61e1e6f4c69d2d5e26557d8bb92866e63170492438e966ad8520d86b1f98630"
+    },
+    {
+      "file": "2026-10-27-manual-box-lid-geometry-v002/LID-04-plate.png",
+      "sha256": "4e02787f9f7ee72adfdb38950d74f2db6e13e49b15a5714f01571307b194bc25"
+    },
+    {
+      "file": "2026-10-27-manual-box-lid-geometry-v002/LID-05-bottom-face.png",
+      "sha256": "bb699be8014a77bc61e603807bf76c3096409ce32e63bec9e2174bf47e492fb5"
+    },
+    {
+      "file": "2026-10-27-manual-box-lid-geometry-v002/LID-06-inset-outer.png",
+      "sha256": "496f11074111129ec839e1340a5d5ae051b99349dc657683db37bcdcd111666c"
+    },
+    {
+      "file": "2026-10-27-manual-box-lid-geometry-v002/LID-07-lip-extrude.png",
+      "sha256": "83980518070dc3b94d877ef9091fb26f0d0b8341f69e42407112ecf0b5595cbc"
+    },
+    {
+      "file": "2026-10-27-manual-box-lid-geometry-v002/LID-08-inset-inner.png",
+      "sha256": "8a79ea03a626a47b80d532ac3afd968a9b7bb0b5c82a2e042cbbc482d7821373"
+    },
+    {
+      "file": "2026-10-27-manual-box-lid-geometry-v002/LID-09-lip-recess.png",
+      "sha256": "cd5b7ef66d7141cc3858e9253ba851a07e82a314a07eb4b201328fd7e71f79a9"
+    },
+    {
+      "file": "2026-10-27-manual-box-lid-geometry-v002/LID-10-assembly.png",
+      "sha256": "73c456d2717a72dcfc42a49d3fe0a1c6e64d085dae20cadd79b2eefe767ca781"
+    },
+    {
+      "file": "2026-10-27-manual-box-lid-geometry-v002/LID-11-saved.png",
+      "sha256": "b94567bc718665978b4dfcec3e5b7e93d5375ccb1cbd7c22361988ef7e073007"
+    },
+    {
+      "file": "2026-10-27-manual-box-lid-geometry-v002/LID-12-reopened.png",
+      "sha256": "75ca1e8b0d975a4e8e2e64d584462bc692a2238d29cbb471e68022ad6a2f4671"
+    },
+    {
+      "file": "2026-10-27-manual-box-lid-inspect-v001/INSPECT-01-opened.png",
+      "sha256": "75ca1e8b0d975a4e8e2e64d584462bc692a2238d29cbb471e68022ad6a2f4671"
+    },
+    {
+      "file": "2026-10-27-manual-box-lid-inspect-v001/INSPECT-02-mesh-readback.png",
+      "sha256": "75ca1e8b0d975a4e8e2e64d584462bc692a2238d29cbb471e68022ad6a2f4671"
+    }
+  ],
+  "limitations": [
+    "此上蓋為固定80×50尺寸，尚未建立盒蓋參數連動。",
+    "坐標偏差約0.0005 mm來自本次 GUI 縮放的實際網格；各側約0.2 mm為幾何試驗值，不是已驗證的合格值。",
+    "non-manifold 0 不等於已驗證強度或實體配合；尚未列印或試配。",
+    "本回第一輪 v001 板尺寸錯誤、前置檢查停止，留在另一 evidence 目錄。"
+  ]
+}

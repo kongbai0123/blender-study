@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 1,
+  "base": "learning/web/engineering-curriculum-v036.json",
+  "baseSha256": "fceaf4cc951316bfa5e827cd2a4d2bebb713318ecb7f909ad646ba216975db09",
+  "scope": "審查補正草案，不更新教材、進度或來源實拍；CLI 為新增學員方法，不稱原始 Blender GUI 示範。",
+  "chapterPatches": {
+    "ch09": {
+      "continuityNote": "第 08 章參數模型可作概念參照；本章定位榫、燕尾與 STL 的歷史示範從原盒／既有蓋的獨立固定尺寸分支出發，未證明與第 08 章參數盒自動連動。"
+    }
+  },
+  "patches": {
+    "ch11-11-cad-thread-01": {
+      "context": "從新的空白 General 場景開始；示範的 CAD Sketcher 啟用、Metric／Unit Scale 0.001／Millimeters 與視角由程式準備。請先保護自己的既有作品。",
+      "actions": [
+        "以自己的新場景先啟用 CAD Sketcher 並設定 Metric、Unit Scale 0.001、Millimeters；清除該新場景的預設物件後，Ctrl+Shift+A 啟動 Add Sketch，按 Z 選 XY。"
+      ],
+      "artifacts": [
+        {
+          "path": "learning/evidence/parametric/2026-10-28-cad-thread-triangle-trial-v001/safe-summary-v001.json",
+          "sha256": "76b221c5630464b472bbfe0ffcea3f9de0b60dff21719ff90e5c2c0793b20e88",
+          "label": "本節逐步實拍、來源與讀值安全摘要"
+        },
+        {
+          "path": "learning/evidence/parametric/2026-10-28-cad-thread-triangle-trial-v001/demo-files/cad_thread_triangle_060_v001.blend",
+          "sha256": "15959bcb28fbe025e2d9b18292abe2aca44e95b38f4ba0a1ce764aed8d9e6731",
+          "label": "第 12 步儲存的 0.6 mm 草圖結果（非第 1 步起始場景）"
+        }
+      ],
+      "detail": {
+        "steps": [
+          "以自己的新空白場景先啟用 CAD Sketcher，設定 Metric／Unit Scale 0.001／Millimeters，並保護既有作品。",
+          "在新場景清除預設物件；Ctrl+Shift+A 啟動 Add Sketch，按 Z 選 XY。示範的啟用、單位與視角由程式預備。",
+          "0.6 mm 草圖是第 12 步的中間保存結果，不是本步起始檔。",
+          "示範空草圖讀回 solver OKAY、DoF0；不可用空草圖自由度判斷尚未建立的牙型。"
+        ],
+        "why": "以本步原圖及讀值交叉核對；數位示範與實體量測及合格判定分開。"
+      }
+    },
+    "ch11-11-cad-thread-06": {
+      "actions": [
+        "按 D，在直立邊中點點選，移動並點選標註位置，按 Esc 結束。",
+        "若自己的滑鼠落點造成尺寸不同，可在建立標註後的 Constraints 中選對應 Distance 並輸入 0.600 mm；此為跟做補充，原圖只證明示範時的數值。"
+      ],
+      "success": "畫面顯示 Distance 標註；示範圖為約 0.600 mm、自由度 4。學員的值依實際落點與後續輸入而定。",
+      "detail": {
+        "steps": [
+          "按 D，在直立邊中點點選，移動並點選標註位置，按 Esc 結束。",
+          "若自己的滑鼠落點造成尺寸不同，可在建立標註後的 Constraints 中選對應 Distance 並輸入 0.600 mm；此為跟做補充，原圖只證明示範時的數值。",
+          "示範程式讀值：{\"solver\": \"OKAY\", \"dof\": 4, \"constraints\": [{\"type\": \"DISTANCE\", \"name\": \"Distance\", \"value\": 0.6000000238418579, \"uid\": \"9f59a0b3ccf4b996\"}, {\"type\": \"VERTICAL\", \"name\": \"Vertical\", \"value\": null, \"uid\": \"95817b0205a37a7b\"}], \"fixedFlags\": [true, true, false, false, false, false, false, false]}"
+        ],
+        "why": "以本步原圖及讀值交叉核對；數位示範與實體量測及合格判定分開。"
+      }
+    },
+    "ch11-11-cad-thread-07": {
+      "actions": [
+        "按 D，點選下方斜邊，移動並點選標註位置，按 Esc。",
+        "若自己的滑鼠落點造成尺寸不同，可在建立標註後的 Constraints 中選對應 Distance 並輸入 約 1.2369316 mm；此為跟做補充，原圖只證明示範時的數值。"
+      ],
+      "success": "畫面顯示兩個 Distance、Vertical 與自由度 3；示範的 solver OKAY 屬程式讀回。學員的數值依落點與輸入而定。",
+      "detail": {
+        "steps": [
+          "按 D，點選下方斜邊，移動並點選標註位置，按 Esc。",
+          "若自己的滑鼠落點造成尺寸不同，可在建立標註後的 Constraints 中選對應 Distance 並輸入 約 1.2369316 mm；此為跟做補充，原圖只證明示範時的數值。",
+          "示範程式讀值：{\"solver\": \"OKAY\", \"dof\": 3, \"constraints\": [{\"type\": \"DISTANCE\", \"name\": \"Distance\", \"value\": 0.6000000238418579, \"uid\": \"9f59a0b3ccf4b996\"}, {\"type\": \"DISTANCE\", \"name\": \"Distance\", \"value\": 1.236931562423706, \"uid\": \"733e0136a4433c1e\"}, {\"type\": \"VERTICAL\", \"name\": \"Vertical\", \"value\": null, \"uid\": \"95817b0205a37a7b\"}], \"fixedFlags\": [true, true, false, false, false, false, false, false]}"
+        ],
+        "why": "以本步原圖及讀值交叉核對；數位示範與實體量測及合格判定分開。"
+      }
+    },
+    "ch11-11-cad-thread-05": {
+      "success": "畫面可見輪廓閉合；示範由程式讀回求解器 OKAY、自由度 5，原圖沒有直接顯示這兩項。"
+    },
+    "ch11-11-cad-thread-11": {
+      "success": "畫面顯示 Fixed 勾選與 Fully defined；示範由程式讀回求解器 OKAY、DoF0。"
+    },
+    "ch11-11-cad-thread-12": {
+      "success": "畫面顯示已保存的草圖；基邊約 0.600、尖點 X≈6.000 與兩斜邊等長屬示範讀值。"
+    },
+    "ch11-11-cad-thread-15": {
+      "success": "畫面顯示基邊 0.600 mm；尖點 X、solver OKAY 與 DoF0 是示範程式讀回。"
+    },
+    "ch11-11-cad-screw-01": {
+      "context": "原檔保留；程式設定隔離環境並填入檔案路徑。 起始副本：learning/evidence/parametric/2026-10-28-cad-thread-triangle-restore-v001/demo-files/cad_thread_triangle_060_restored_v003.blend；SHA-256 f45cb87cb9084bb9ca92612d6dc8726c28f7abfd099954e14ea4964975dd8508。 重開原圖底部顯示工具警告；先參照 11-20 的限定恢復操作，該探測不保證所有工具正常。",
+      "limitations": [
+        "Screw 幾何僅為開口外牙條，6 條邊界／非流形邊，未封端，不是可列印實體。",
+        "CAD 原草圖仍保留，但 GUI Convert Mesh 產物不再跟 CAD 參數連動；不是 CAD 特徵歷史。",
+        "XY→XZ 的旋轉發生在獨立副本；程式只啟用環境／讀值／對話欄，所列建模由 GUI 事件完成。",
+        "本例單頭、Angle 360°、Offset 1 mm，因此設計 lead/pitch 1 mm；0.6 mm 截面基邊不是螺距。",
+        "非 ISO 螺紋；材料、製程、實體列印、量測、試配、強度與配合合格未確認。",
+        "本機 blend、擴充套件及 raw runner 尚未完成公開隱私審查。",
+        "起始原圖顯示 Tool 'sketcher.slvs_select' not found for space 'VIEW_3D'；Fully defined 與讀回不保證工具可用。"
+      ]
+    },
+    "ch11-11-stl-hand-thread-04": {
+      "actions": [
+        "在專案根目錄的終端機以唯讀檢查工具解析自己剛匯出的二進位 STL；將範例路徑替換成自己的實際檔名：",
+        "python learning/tutor/inspect_stl_v001.py --file \"learning/workspaces/08/自己的檔案.stl\" --units mm",
+        "把輸出的數字外框、三角形數及 SHA 與所選來源和匯出設定分開核對；必要時加 --expected-dimensions X Y Z 比對指定外框。"
+      ],
+      "success": "終端機列出 STL 數字外框、SHA、三角形數、精確重複座標三角數與零面積面；示範數字僅供對照，不能當作學員結果。",
+      "detail": {
+        "steps": [
+          "先確認自己剛匯出的是本分支及本版本的二進位 STL。",
+          "在專案根目錄執行：python learning/tutor/inspect_stl_v001.py --file \"learning/workspaces/08/自己的檔案.stl\" --units mm",
+          "把「自己的檔案.stl」替換為實際路徑；選擇性加 --expected-dimensions X Y Z。單位 mm 是本教材對無單位 STL 的解讀。",
+          "工具只讀檔；顯示 SHA、三角形、精確重複座標三角數、零面積面及數字外框。不能據此判非流形、全自交、可印或配合合格。",
+          "示範程式讀值：STL 1410 個三角形、精確重複 0；SHA-256 2279efed9fa58fa8c4352e9deb304a367c038fae345d94ca908f6f4577561e59。"
+        ],
+        "why": "將助教示範的程式讀檔，與學員另行執行的終端機核對及 Blender GUI 畫面分開。"
+      }
+    },
+    "ch11-11-stl-side-box-body-repaired-04": {
+      "actions": [
+        "在專案根目錄的終端機以唯讀檢查工具解析自己剛匯出的二進位 STL；將範例路徑替換成自己的實際檔名：",
+        "python learning/tutor/inspect_stl_v001.py --file \"learning/workspaces/08/自己的檔案.stl\" --units mm",
+        "把輸出的數字外框、三角形數及 SHA 與所選來源和匯出設定分開核對；必要時加 --expected-dimensions X Y Z 比對指定外框。"
+      ],
+      "success": "終端機列出 STL 數字外框、SHA、三角形數、精確重複座標三角數與零面積面；示範數字僅供對照，不能當作學員結果。",
+      "detail": {
+        "steps": [
+          "先確認自己剛匯出的是本分支及本版本的二進位 STL。",
+          "在專案根目錄執行：python learning/tutor/inspect_stl_v001.py --file \"learning/workspaces/08/自己的檔案.stl\" --units mm",
+          "把「自己的檔案.stl」替換為實際路徑；選擇性加 --expected-dimensions X Y Z。單位 mm 是本教材對無單位 STL 的解讀。",
+          "工具只讀檔；顯示 SHA、三角形、精確重複座標三角數、零面積面及數字外框。不能據此判非流形、全自交、可印或配合合格。",
+          "示範程式讀值：STL 1420 個三角形、精確重複 0；SHA-256 f93e5ef13d319081c31fef8b5cf30674dd66a5513d486a86731c0b2f76cdec93。"
+        ],
+        "why": "將助教示範的程式讀檔，與學員另行執行的終端機核對及 Blender GUI 畫面分開。"
+      }
+    },
+    "ch11-11-stl-side-box-lid-04": {
+      "actions": [
+        "在專案根目錄的終端機以唯讀檢查工具解析自己剛匯出的二進位 STL；將範例路徑替換成自己的實際檔名：",
+        "python learning/tutor/inspect_stl_v001.py --file \"learning/workspaces/08/自己的檔案.stl\" --units mm",
+        "把輸出的數字外框、三角形數及 SHA 與所選來源和匯出設定分開核對；必要時加 --expected-dimensions X Y Z 比對指定外框。"
+      ],
+      "success": "終端機列出 STL 數字外框、SHA、三角形數、精確重複座標三角數與零面積面；示範數字僅供對照，不能當作學員結果。",
+      "detail": {
+        "steps": [
+          "先確認自己剛匯出的是本分支及本版本的二進位 STL。",
+          "在專案根目錄執行：python learning/tutor/inspect_stl_v001.py --file \"learning/workspaces/08/自己的檔案.stl\" --units mm",
+          "把「自己的檔案.stl」替換為實際路徑；選擇性加 --expected-dimensions X Y Z。單位 mm 是本教材對無單位 STL 的解讀。",
+          "工具只讀檔；顯示 SHA、三角形、精確重複座標三角數、零面積面及數字外框。不能據此判非流形、全自交、可印或配合合格。",
+          "示範程式讀值：STL 44 個三角形、精確重複 0；SHA-256 0b226cf405bc70f42b5ce28fee9f46cb55eff67b84c6d786c091a2043f5f2408。"
+        ],
+        "why": "將助教示範的程式讀檔，與學員另行執行的終端機核對及 Blender GUI 畫面分開。"
+      }
+    },
+    "ch11-11-stl-side-cap-repaired-04": {
+      "actions": [
+        "在專案根目錄的終端機以唯讀檢查工具解析自己剛匯出的二進位 STL；將範例路徑替換成自己的實際檔名：",
+        "python learning/tutor/inspect_stl_v001.py --file \"learning/workspaces/08/自己的檔案.stl\" --units mm",
+        "把輸出的數字外框、三角形數及 SHA 與所選來源和匯出設定分開核對；必要時加 --expected-dimensions X Y Z 比對指定外框。"
+      ],
+      "success": "終端機列出 STL 數字外框、SHA、三角形數、精確重複座標三角數與零面積面；示範數字僅供對照，不能當作學員結果。",
+      "detail": {
+        "steps": [
+          "先確認自己剛匯出的是本分支及本版本的二進位 STL。",
+          "在專案根目錄執行：python learning/tutor/inspect_stl_v001.py --file \"learning/workspaces/08/自己的檔案.stl\" --units mm",
+          "把「自己的檔案.stl」替換為實際路徑；選擇性加 --expected-dimensions X Y Z。單位 mm 是本教材對無單位 STL 的解讀。",
+          "工具只讀檔；顯示 SHA、三角形、精確重複座標三角數、零面積面及數字外框。不能據此判非流形、全自交、可印或配合合格。",
+          "示範程式讀值：STL 1870 個三角形、精確重複 0；SHA-256 960e2105a61cccf2b86be3b18fc1336a36fa1d6495f670c2214372a0003d8683。"
+        ],
+        "why": "將助教示範的程式讀檔，與學員另行執行的終端機核對及 Blender GUI 畫面分開。"
+      }
+    },
+    "ch11-11-stl-four-boss-body-04": {
+      "actions": [
+        "在專案根目錄的終端機以唯讀檢查工具解析自己剛匯出的二進位 STL；將範例路徑替換成自己的實際檔名：",
+        "python learning/tutor/inspect_stl_v001.py --file \"learning/workspaces/08/自己的檔案.stl\" --units mm",
+        "把輸出的數字外框、三角形數及 SHA 與所選來源和匯出設定分開核對；必要時加 --expected-dimensions X Y Z 比對指定外框。"
+      ],
+      "success": "終端機列出 STL 數字外框、SHA、三角形數、精確重複座標三角數與零面積面；示範數字僅供對照，不能當作學員結果。",
+      "detail": {
+        "steps": [
+          "先確認自己剛匯出的是本分支及本版本的二進位 STL。",
+          "在專案根目錄執行：python learning/tutor/inspect_stl_v001.py --file \"learning/workspaces/08/自己的檔案.stl\" --units mm",
+          "把「自己的檔案.stl」替換為實際路徑；選擇性加 --expected-dimensions X Y Z。單位 mm 是本教材對無單位 STL 的解讀。",
+          "工具只讀檔；顯示 SHA、三角形、精確重複座標三角數、零面積面及數字外框。不能據此判非流形、全自交、可印或配合合格。",
+          "示範程式讀值：STL 1180 個三角形、精確重複 0；SHA-256 7ee3fcea65e837940efd42a9b2ad6427b43e92f1027867e5bae8073d6a697afc。"
+        ],
+        "why": "將助教示範的程式讀檔，與學員另行執行的終端機核對及 Blender GUI 畫面分開。"
+      }
+    },
+    "ch11-11-stl-four-boss-lid-04": {
+      "actions": [
+        "在專案根目錄的終端機以唯讀檢查工具解析自己剛匯出的二進位 STL；將範例路徑替換成自己的實際檔名：",
+        "python learning/tutor/inspect_stl_v001.py --file \"learning/workspaces/08/自己的檔案.stl\" --units mm",
+        "把輸出的數字外框、三角形數及 SHA 與所選來源和匯出設定分開核對；必要時加 --expected-dimensions X Y Z 比對指定外框。"
+      ],
+      "success": "終端機列出 STL 數字外框、SHA、三角形數、精確重複座標三角數與零面積面；示範數字僅供對照，不能當作學員結果。",
+      "detail": {
+        "steps": [
+          "先確認自己剛匯出的是本分支及本版本的二進位 STL。",
+          "在專案根目錄執行：python learning/tutor/inspect_stl_v001.py --file \"learning/workspaces/08/自己的檔案.stl\" --units mm",
+          "把「自己的檔案.stl」替換為實際路徑；選擇性加 --expected-dimensions X Y Z。單位 mm 是本教材對無單位 STL 的解讀。",
+          "工具只讀檔；顯示 SHA、三角形、精確重複座標三角數、零面積面及數字外框。不能據此判非流形、全自交、可印或配合合格。",
+          "示範程式讀值：STL 572 個三角形、精確重複 0；SHA-256 6476bb18490bb1c7f07bd12570ba8e85b09045ccf5ef69b389b75d8ff51c01eb。"
+        ],
+        "why": "將助教示範的程式讀檔，與學員另行執行的終端機核對及 Blender GUI 畫面分開。"
+      }
+    }
+  }
+}

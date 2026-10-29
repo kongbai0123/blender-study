@@ -1,0 +1,234 @@
+{
+  "label": "height",
+  "mode": "OBJECT",
+  "active": "Body",
+  "activeSketch": "Body.001 Sketch",
+  "objects": [
+    {
+      "name": "WP_XY",
+      "type": "EMPTY",
+      "hidden": true,
+      "selected": false,
+      "modifiers": []
+    },
+    {
+      "name": "WP_XZ",
+      "type": "EMPTY",
+      "hidden": true,
+      "selected": false,
+      "modifiers": []
+    },
+    {
+      "name": "WP_YZ",
+      "type": "EMPTY",
+      "hidden": true,
+      "selected": false,
+      "modifiers": []
+    },
+    {
+      "name": "Body Sketch",
+      "type": "CURVES",
+      "hidden": false,
+      "selected": false,
+      "modifiers": [],
+      "evaluationError": "Error: Object does not have geometry data\n"
+    },
+    {
+      "name": "Body XY",
+      "type": "EMPTY",
+      "hidden": true,
+      "selected": false,
+      "modifiers": []
+    },
+    {
+      "name": "Body",
+      "type": "MESH",
+      "hidden": false,
+      "selected": true,
+      "modifiers": [
+        {
+          "name": "CAD Sketcher Convert",
+          "type": "NODES"
+        },
+        {
+          "name": "CAD_Sketcher Extrude",
+          "type": "NODES"
+        }
+      ],
+      "evaluated": {
+        "vertices": 8,
+        "faces": 6,
+        "bounds": [
+          [
+            0.0,
+            60.0
+          ],
+          [
+            0.0,
+            40.0
+          ],
+          [
+            0.0,
+            30.0
+          ]
+        ]
+      }
+    },
+    {
+      "name": "Body XZ",
+      "type": "EMPTY",
+      "hidden": true,
+      "selected": false,
+      "modifiers": []
+    },
+    {
+      "name": "Body YZ",
+      "type": "EMPTY",
+      "hidden": true,
+      "selected": false,
+      "modifiers": []
+    },
+    {
+      "name": "Body.001 Workplane",
+      "type": "EMPTY",
+      "hidden": true,
+      "selected": false,
+      "modifiers": []
+    },
+    {
+      "name": "Body.001 Sketch",
+      "type": "CURVES",
+      "hidden": false,
+      "selected": false,
+      "modifiers": [],
+      "evaluationError": "Error: Object does not have geometry data\n"
+    },
+    {
+      "name": "Body.001",
+      "type": "MESH",
+      "hidden": false,
+      "selected": false,
+      "modifiers": [
+        {
+          "name": "CAD Sketcher Convert",
+          "type": "NODES"
+        }
+      ],
+      "evaluated": {
+        "vertices": 4,
+        "faces": 1,
+        "bounds": [
+          [
+            1.8611259460449219,
+            57.86112594604492
+          ],
+          [
+            2.138874053955078,
+            38.13887405395508
+          ],
+          [
+            30.0,
+            30.0
+          ]
+        ]
+      }
+    }
+  ],
+  "sketch": {
+    "solver": "OKAY",
+    "dof": 2,
+    "positions": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        -28.138874053955078,
+        -17.861125946044922,
+        0.0
+      ],
+      [
+        27.861125946044922,
+        18.138874053955078,
+        0.0
+      ],
+      [
+        27.861125946044922,
+        -17.861125946044922,
+        0.0
+      ],
+      [
+        -28.138874053955078,
+        18.138874053955078,
+        0.0
+      ],
+      [
+        -28.138874053955078,
+        -17.861125946044922,
+        0.0
+      ],
+      [
+        27.861125946044922,
+        -17.861125946044922,
+        0.0
+      ],
+      [
+        27.861125946044922,
+        -17.861125946044922,
+        0.0
+      ],
+      [
+        27.861125946044922,
+        18.138874053955078,
+        0.0
+      ],
+      [
+        27.861125946044922,
+        18.138874053955078,
+        0.0
+      ],
+      [
+        -28.138874053955078,
+        18.138874053955078,
+        0.0
+      ],
+      [
+        -28.138874053955078,
+        18.138874053955078,
+        0.0
+      ],
+      [
+        -28.138874053955078,
+        -17.861125946044922,
+        0.0
+      ]
+    ],
+    "constraints": [
+      {
+        "type": "DISTANCE",
+        "value": 56.0
+      },
+      {
+        "type": "DISTANCE",
+        "value": 36.0
+      },
+      {
+        "type": "HORIZONTAL",
+        "value": null
+      },
+      {
+        "type": "HORIZONTAL",
+        "value": null
+      },
+      {
+        "type": "VERTICAL",
+        "value": null
+      },
+      {
+        "type": "VERTICAL",
+        "value": null
+      }
+    ]
+  }
+}

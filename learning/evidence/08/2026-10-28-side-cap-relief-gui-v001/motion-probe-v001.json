@@ -1,0 +1,188 @@
+{
+  "sceneSha256": "d4cb9e6467eebff735443daa405c958c459dbe2f04fce8a8e98df5a4b70ee332",
+  "method": "22 discrete Boolean Exact intersections of rigid cap and box. Rotation about +X, accompanied by 1 mm axial outward movement per turn, both angular directions. This does not test continuous motion, contact forces, actual clearance, material deformation or printing.",
+  "samples": [
+    {
+      "direction": 1,
+      "rotationDeg": 0,
+      "axialDisplacementMm": 0.0,
+      "intersectionVertices": 0,
+      "intersectionFaces": 0,
+      "absoluteSignedVolumeMm3": 0
+    },
+    {
+      "direction": 1,
+      "rotationDeg": 45,
+      "axialDisplacementMm": 0.125,
+      "intersectionVertices": 0,
+      "intersectionFaces": 0,
+      "absoluteSignedVolumeMm3": 0
+    },
+    {
+      "direction": 1,
+      "rotationDeg": 90,
+      "axialDisplacementMm": 0.25,
+      "intersectionVertices": 0,
+      "intersectionFaces": 0,
+      "absoluteSignedVolumeMm3": 0
+    },
+    {
+      "direction": 1,
+      "rotationDeg": 135,
+      "axialDisplacementMm": 0.375,
+      "intersectionVertices": 0,
+      "intersectionFaces": 0,
+      "absoluteSignedVolumeMm3": 0
+    },
+    {
+      "direction": 1,
+      "rotationDeg": 180,
+      "axialDisplacementMm": 0.5,
+      "intersectionVertices": 0,
+      "intersectionFaces": 0,
+      "absoluteSignedVolumeMm3": 0
+    },
+    {
+      "direction": 1,
+      "rotationDeg": 225,
+      "axialDisplacementMm": 0.625,
+      "intersectionVertices": 0,
+      "intersectionFaces": 0,
+      "absoluteSignedVolumeMm3": 0
+    },
+    {
+      "direction": 1,
+      "rotationDeg": 270,
+      "axialDisplacementMm": 0.75,
+      "intersectionVertices": 0,
+      "intersectionFaces": 0,
+      "absoluteSignedVolumeMm3": 0
+    },
+    {
+      "direction": 1,
+      "rotationDeg": 315,
+      "axialDisplacementMm": 0.875,
+      "intersectionVertices": 0,
+      "intersectionFaces": 0,
+      "absoluteSignedVolumeMm3": 0
+    },
+    {
+      "direction": 1,
+      "rotationDeg": 360,
+      "axialDisplacementMm": 1.0,
+      "intersectionVertices": 0,
+      "intersectionFaces": 0,
+      "absoluteSignedVolumeMm3": 0
+    },
+    {
+      "direction": 1,
+      "rotationDeg": 450,
+      "axialDisplacementMm": 1.25,
+      "intersectionVertices": 0,
+      "intersectionFaces": 0,
+      "absoluteSignedVolumeMm3": 0
+    },
+    {
+      "direction": 1,
+      "rotationDeg": 540,
+      "axialDisplacementMm": 1.5,
+      "intersectionVertices": 0,
+      "intersectionFaces": 0,
+      "absoluteSignedVolumeMm3": 0
+    },
+    {
+      "direction": -1,
+      "rotationDeg": 0,
+      "axialDisplacementMm": 0.0,
+      "intersectionVertices": 0,
+      "intersectionFaces": 0,
+      "absoluteSignedVolumeMm3": 0
+    },
+    {
+      "direction": -1,
+      "rotationDeg": -45,
+      "axialDisplacementMm": 0.125,
+      "intersectionVertices": 919,
+      "intersectionFaces": 453,
+      "absoluteSignedVolumeMm3": 14.392116497884393
+    },
+    {
+      "direction": -1,
+      "rotationDeg": -90,
+      "axialDisplacementMm": 0.25,
+      "intersectionVertices": 579,
+      "intersectionFaces": 338,
+      "absoluteSignedVolumeMm3": 18.348998020201666
+    },
+    {
+      "direction": -1,
+      "rotationDeg": -135,
+      "axialDisplacementMm": 0.375,
+      "intersectionVertices": 869,
+      "intersectionFaces": 430,
+      "absoluteSignedVolumeMm3": 13.483371906854721
+    },
+    {
+      "direction": -1,
+      "rotationDeg": -180,
+      "axialDisplacementMm": 0.5,
+      "intersectionVertices": 0,
+      "intersectionFaces": 0,
+      "absoluteSignedVolumeMm3": 0
+    },
+    {
+      "direction": -1,
+      "rotationDeg": -225,
+      "axialDisplacementMm": 0.625,
+      "intersectionVertices": 803,
+      "intersectionFaces": 393,
+      "absoluteSignedVolumeMm3": 12.157851275221532
+    },
+    {
+      "direction": -1,
+      "rotationDeg": -270,
+      "axialDisplacementMm": 0.75,
+      "intersectionVertices": 499,
+      "intersectionFaces": 290,
+      "absoluteSignedVolumeMm3": 15.605646429172918
+    },
+    {
+      "direction": -1,
+      "rotationDeg": -315,
+      "axialDisplacementMm": 0.875,
+      "intersectionVertices": 744,
+      "intersectionFaces": 367,
+      "absoluteSignedVolumeMm3": 11.414751452412293
+    },
+    {
+      "direction": -1,
+      "rotationDeg": -360,
+      "axialDisplacementMm": 1.0,
+      "intersectionVertices": 0,
+      "intersectionFaces": 0,
+      "absoluteSignedVolumeMm3": 0
+    },
+    {
+      "direction": -1,
+      "rotationDeg": -450,
+      "axialDisplacementMm": 1.25,
+      "intersectionVertices": 419,
+      "intersectionFaces": 242,
+      "absoluteSignedVolumeMm3": 12.867581393255776
+    },
+    {
+      "direction": -1,
+      "rotationDeg": -540,
+      "axialDisplacementMm": 1.5,
+      "intersectionVertices": 0,
+      "intersectionFaces": 0,
+      "absoluteSignedVolumeMm3": 0
+    }
+  ],
+  "limits": [
+    "Finite samples only; empty intersections cannot prove continuous collision-free motion.",
+    "Tiny intersections may be numerical; nonzero results require inspection, not automatic physical collision conclusion.",
+    "Axial relief has 0.2 mm nominal clearance at the center; only discrete samples are checked and actual fit is unverified.",
+    "Not a physical fit or manufacturing acceptance test."
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "base": {
+    "path": "learning/web/engineering-curriculum-v036.json",
+    "sha256": "fceaf4cc951316bfa5e827cd2a4d2bebb713318ecb7f909ad646ba216975db09"
+  },
+  "purpose": "第01–04章瀏覽審查發現之內容補正草案；原教材、原圖與學員進度不修改。",
+  "patches": {
+    "ch03-02-02-03": {
+      "actions": [
+        "在 N 側欄 Item 的 Location，將 X、Y 設為 0 m，將 Z 輸入 0.1 m。",
+        "確認 Dimensions Z 為 0.2 m，平台底面貼近 Z=0 的地面。"
+      ],
+      "detail": {
+        "steps": [
+          "確認選中平台並打開 N 側欄 Item；在 Location X、Y 依序輸入 0m，Z 輸入 0.1m。",
+          "核對 Dimensions Z 為 0.2m；平台中心 0.1m 是厚度的一半，底面位於 Z=0。"
+        ],
+        "why": "物件位置是中心點，貼地要往上移半個厚度。"
+      }
+    },
+    "ch03-edit-01": {
+      "actions": [
+        "先保存前一個練習成果；File > New > General 新建隔離的方塊練習場景。",
+        "在 Scene Properties > Units 設 Unit System=Metric、Length=Millimeters、Unit Scale=0.001。",
+        "另存自己的練習副本 u04_edit_practice_v001.blend；示範實際名為 u03_edit_practice_v001.blend。"
+      ],
+      "detail": {
+        "steps": [
+          "確認前一場景已保存；在 File > New > General 新開預設場景。",
+          "在 Scene Properties > Units 設 Unit System=Metric、Length=Millimeters、Unit Scale=0.001。",
+          "以 File > Save As 另存自己的 04 工作區 u04_edit_practice_v001.blend。",
+          "隔離示範由出廠預設場景開始、實際檔名為 u03_edit_practice_v001.blend；檔案欄位由程式填入。"
+        ],
+        "why": "Unit Scale 0.001 時 1 個 Blender 單位就是 1 mm，輸入數字最直覺。"
+      },
+      "limitations": [
+        "檔案欄位由程式填寫，其餘列出的建模操作為獨立 Blender GUI；存檔僅到隔離示範資料夾。",
+        "演示從隔離出廠預設場景開始；為自己的練習而先保存舊檔並用 File > New > General 開新場景，是學員操作指引，非此 run 所拍到的選單操作。"
+      ]
+    },
+    "ch03-02-04-03": {
+      "limitations": [
+        "既有示範的觀察、數位讀值與學員實作分開；不表示實體結果或學員完成。",
+        "原次 Blender 示範涵蓋場景保存或重開，未拍攝學員在教學網頁登記版本的操作；登記需自行完成。"
+      ]
+    },
+    "ch03-02-07-03": {
+      "limitations": [
+        "既有示範的觀察、數位讀值與學員實作分開；不表示實體結果或學員完成。",
+        "原次 Blender 示範涵蓋場景保存或重開，未拍攝學員在教學網頁登記版本的操作；登記需自行完成。"
+      ]
+    },
+    "ch04-03-05-01": {
+      "limitations": [
+        "既有示範的觀察、數位讀值與學員實作分開；不表示實體結果或學員完成。",
+        "原次 Blender 示範涵蓋場景保存或重開，未拍攝學員在教學網頁登記版本的操作；登記需自行完成。"
+      ]
+    },
+    "ch04-03-01-01": {
+      "actions": [
+        "File > Open（Ctrl+O）開啟第 03 章保存的訊號站檢查點；在檔案視窗核對路徑及檔名。",
+        "開啟後核對 Outliner 的 Station 部件；若視窗有標題列可再比對檔名。"
+      ],
+      "detail": {
+        "steps": [
+          "點 File > Open（Ctrl+O）。",
+          "在 learning/workspaces/02/ 核對自己的 u02_station_v002.blend 路徑與檔名後開啟；如使用另一版本，依自己的紀錄選擇。",
+          "開啟後核對 Outliner 的 Station 部件；若視窗提供標題列，可再比對檔名。"
+        ],
+        "why": "渲染要用你自己完成的訊號站。"
+      }
+    },
+    "ch04-03-06-01": {
+      "detail": {
+        "steps": [
+          "關閉渲染視窗，準備 File > Open 重開 u03_render_v001.blend。",
+          "若詢問是否保存變更，先確認當前狀態；只有確定沒有需要保留的新變更時才按 Don't Save。",
+          "若有新變更或無法確認，按 Cancel，先檢查並視需要另存為未使用的新版本；已登記檢查點不要覆寫。"
+        ],
+        "why": "從保存的檔重開，確認設定真的有存下來。"
+      }
+    },
+    "ch03-05-05-01": {
+      "success": "確認另存成功通知所顯示的檔名，或重新開啟時核對 u05_lid_v001.blend；之後在這份副本操作。"
+    },
+    "ch03-05-05-07": {
+      "actions": [
+        "按 Tab 回 Object Mode，按 Alt+H 顯示 Body；在 Outliner 重新選取 Lid，再以 N 側欄核對 Lid Dimensions 為 60 × 40 × 6 mm。",
+        "保持 Lid 選取，用 03-13 的方法做一次 Non Manifold 檢查。"
+      ]
+    },
+    "ch03-04-06-03": {
+      "detail": {
+        "steps": [
+          "先確認選中非空盒體網格、在 Edit Mode 的邊選取且已取消全選。",
+          "點 Select > Select All by Trait > Non Manifold。",
+          "若沒有任何邊反白，表示本次選取工具沒有選到非流形邊；有邊被選到時記錄位置。",
+          "這項檢查不能單獨證明沒有自交、幾何問題或列印合格。"
+        ],
+        "why": "排查網格的邊界與非流形邊；是否能製造仍需其他檢查及實體驗證。"
+      }
+    },
+    "ch04-03-04-03": {
+      "success": "Platform 與指定材質對應；目前只調整平台，其他部件可在之後自行擴充。"
+    }
+  },
+  "physicalPrint": null,
+  "physicalMeasurement": null,
+  "physicalFit": null
+}

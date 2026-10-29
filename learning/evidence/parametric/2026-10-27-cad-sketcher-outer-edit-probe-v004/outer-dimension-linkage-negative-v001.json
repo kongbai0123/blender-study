@@ -1,0 +1,235 @@
+{
+  "kind": "fixed-box-saved-and-linkage-negative-test",
+  "learnerWorkspacesUnchanged": true,
+  "method": "固定內腔來自原生 GUI 建立草圖、輸入約束和布林；程式啟用插件及填檔案對話框路徑。另存與重開後，右鍵選 Body Sketch，GUI 將 X60→70、Y40→50；程式讀評估後的盒體與切割體。",
+  "phases": [
+    {
+      "phase": "opened",
+      "boxBounds": [
+        [
+          0.0,
+          60.0
+        ],
+        [
+          0.0,
+          40.0
+        ],
+        [
+          0.0,
+          30.0
+        ]
+      ],
+      "cutterBounds": [
+        [
+          2.0,
+          58.0
+        ],
+        [
+          2.0,
+          38.0
+        ],
+        [
+          2.0,
+          30.0
+        ]
+      ],
+      "wallWidthsXY": [
+        [
+          2.0,
+          2.0
+        ],
+        [
+          2.0,
+          2.0
+        ]
+      ]
+    },
+    {
+      "phase": "x70",
+      "boxBounds": [
+        [
+          0.0,
+          70.0
+        ],
+        [
+          0.0,
+          40.0
+        ],
+        [
+          0.0,
+          30.0
+        ]
+      ],
+      "cutterBounds": [
+        [
+          2.0,
+          58.0
+        ],
+        [
+          2.0,
+          38.0
+        ],
+        [
+          2.0,
+          30.0
+        ]
+      ],
+      "wallWidthsXY": [
+        [
+          2.0,
+          12.0
+        ],
+        [
+          2.0,
+          2.0
+        ]
+      ]
+    },
+    {
+      "phase": "x70y50",
+      "boxBounds": [
+        [
+          0.0,
+          70.0
+        ],
+        [
+          0.0,
+          50.0
+        ],
+        [
+          0.0,
+          30.0
+        ]
+      ],
+      "cutterBounds": [
+        [
+          2.0,
+          58.0
+        ],
+        [
+          2.0,
+          38.0
+        ],
+        [
+          2.0,
+          30.0
+        ]
+      ],
+      "wallWidthsXY": [
+        [
+          2.0,
+          12.0
+        ],
+        [
+          2.0,
+          12.0
+        ]
+      ]
+    },
+    {
+      "phase": "reopened",
+      "boxBounds": [
+        [
+          0.0,
+          70.0
+        ],
+        [
+          0.0,
+          50.0
+        ],
+        [
+          0.0,
+          30.0
+        ]
+      ],
+      "cutterBounds": [
+        [
+          2.0,
+          58.0
+        ],
+        [
+          2.0,
+          38.0
+        ],
+        [
+          2.0,
+          30.0
+        ]
+      ],
+      "wallWidthsXY": [
+        [
+          2.0,
+          12.0
+        ],
+        [
+          2.0,
+          12.0
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "seq": 1,
+      "file": "EDIT-01-opened.png",
+      "sha256": "29d494f64e6b5cd4d977be94580e9c65753f51a3367b6bf2c8bfe2c00cca1b5f",
+      "action": "開啟固定尺寸盒體的獨立副本，確認原始幾何"
+    },
+    {
+      "seq": 2,
+      "file": "EDIT-02-context-menu.png",
+      "sha256": "530857d37c33c58c529edf05aad4be2785f9fe2344a040e13f447d249f28f433",
+      "action": "右鍵查看盒體的草圖清單"
+    },
+    {
+      "seq": 3,
+      "file": "EDIT-03-body-sketch.png",
+      "sha256": "b76fcf743b4b819375965c72134738cfd88d4306964b6953b2fcca602a25d4dc",
+      "action": "選取 Body Sketch 進入外框草圖"
+    },
+    {
+      "seq": 4,
+      "file": "EDIT-04-sidebar.png",
+      "sha256": "b29d9ed27db7cdcd709efdafb64de009264b4e27a74322f6a0283775e5287432",
+      "action": "觀察外框尺寸約束欄位位置"
+    },
+    {
+      "seq": 5,
+      "file": "EDIT-05-x70.png",
+      "sha256": "36435c057d0d05e3194139f53a4ec86fe282aaa6ec5beea98fb1458be8058669",
+      "action": "將外框長度改為 70 mm；量測內腔是否隨動"
+    },
+    {
+      "seq": 6,
+      "file": "EDIT-06-x70y50.png",
+      "sha256": "816042142fb0f65b36e0d0e50b84f596feccd83028e61859aa77390bcf88d986",
+      "action": "將外框寬度改為 50 mm；量測內腔是否隨動"
+    },
+    {
+      "seq": 7,
+      "file": "EDIT-07-saved.png",
+      "sha256": "37fab175f1c812591731349cc32dea8e9ef05c776618a530fe9815aa1094b45f",
+      "action": "將改動結果另存獨立試驗副本"
+    },
+    {
+      "seq": 8,
+      "file": "EDIT-08-reopened.png",
+      "sha256": "c4263e447033abda8ac15e6c5b0e785739eddbfbe66716598333c2e1f26399e3",
+      "action": "重開試驗副本，讀回外框與內腔"
+    }
+  ],
+  "fixedScene": {
+    "path": "2026-10-27-cad-sketcher-cavity-saved-probe-v001/demo-files/manual_fixed_box_60x40x30_v001.blend",
+    "sha256": "087589e91d1f2cffc52e8b2fa6893be1b4a9b4332d165f97a9510b4729ca8918"
+  },
+  "trialScene": {
+    "path": "2026-10-27-cad-sketcher-outer-edit-probe-v004/demo-files/outer_dimension_trial_70x50_v001.blend",
+    "sha256": "479a7e29e3dc65c0da8e3e51608e7f86cd15b4954eda9f1f3e35523b56326cc7",
+    "classification": "未連動、四壁不均的試驗反例，不作完成品"
+  },
+  "limitations": [
+    "X/Y 外形確實更改，內腔尺寸和位置未跟隨；70×50 時四壁左右及前後各為 2/12 mm，未達維持 2 mm。",
+    "此 run 未建立 GUI 驅動器或驗證連動，不代表 GUI 無法做到。",
+    "未製作上蓋、未驗證幾何封閉性、未進行列印及實體試配。"
+  ]
+}

@@ -1,0 +1,8 @@
+record_kind,sample,role,design_x_mm,design_y_mm,design_z_mm,hole_center_x_mm,design_total_gap_mm,design_centered_side_gap_mm,measured_x_mm,measured_y_mm,measured_z_mm,repeat_index,fit_observed,source_blend_sha256,stl_sha256,conditions_reference,date
+nominal_design_only,pin,pin,10,10,8,,,,,,,,,,,,
+nominal_design_only,hole-1,square_hole,10.1,10.1,,-35,0.1,0.05,,,,,,,,,
+nominal_design_only,hole-2,square_hole,10.2,10.2,,-21,0.2,0.1,,,,,,,,,
+nominal_design_only,hole-3,square_hole,10.3,10.3,,-7,0.3,0.15,,,,,,,,,
+nominal_design_only,hole-4,square_hole,10.4,10.4,,7,0.4,0.2,,,,,,,,,
+nominal_design_only,hole-5,square_hole,10.5,10.5,,21,0.5,0.25,,,,,,,,,
+nominal_design_only,hole-6,square_hole,10.6,10.6,,35,0.6,0.3,,,,,,,,,

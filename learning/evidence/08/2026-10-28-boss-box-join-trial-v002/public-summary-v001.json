@@ -1,0 +1,301 @@
+{
+  "schemaVersion": 1,
+  "id": "boss-box-join-public-summary-v001",
+  "description": "獨立 Blender 原盒中央盲孔柱接合；數位幾何示範草案。",
+  "blenderVersion": "5.2.1 LTS",
+  "buildHash": "9e2066aef7ef",
+  "sourceScene": {
+    "path": "learning/evidence/08/2026-10-27-lesson08-boss-draft-v002/demo-files/u08_blind_boss_draft_v001.blend",
+    "sha256": "4df306ac6b7e3f57108cb0221fad62480ca47c80f77d5ccd3e91632a6d5c7320"
+  },
+  "scene": {
+    "path": "learning/evidence/08/2026-10-28-boss-box-join-trial-v002/demo-files/u08_box_boss_trial_v001.blend",
+    "bytes": 103473,
+    "sha256": "66f1f79fbf509573426b055f6ad5cee25ee7d21e6b23eced613e0e77f00ad4b4"
+  },
+  "screenshots": [
+    {
+      "seq": 1,
+      "slug": "before",
+      "action": "開啟盲孔柱與原盒場景的同雜湊副本，保留原本的兩個物件",
+      "observed": "來源為既有獨立盲孔柱與原盒，原始場景未修改。柱頂點對頂點外徑 8 mm、孔 4 mm；僅為草案。",
+      "image": {
+        "path": "learning/evidence/08/2026-10-28-boss-box-join-trial-v002/08-boss-01-before.png",
+        "bytes": 160721,
+        "sha256": "98a98a08f6e3f0e72ca315d7ef7701182ae3203038eeafa27870c3c3dac82c66"
+      },
+      "width": 1494,
+      "height": 1019
+    },
+    {
+      "seq": 2,
+      "slug": "positioned",
+      "action": "顯示原盒，選柱並以 G Z −13.5 mm 與盒底重疊",
+      "observed": "柱由 Z 0～8 移到 Z −13.5～−5.5 mm；內底 Z −13 mm，名義重疊 0.5 mm。位置與尺寸僅為草案。",
+      "image": {
+        "path": "learning/evidence/08/2026-10-28-boss-box-join-trial-v002/08-boss-02-positioned.png",
+        "bytes": 175824,
+        "sha256": "ad2f9315b9aa20a53e86c0b131e9e47526e6e49e2c22ee664eb6e9f5fc3d5e94"
+      },
+      "width": 1494,
+      "height": 1019
+    },
+    {
+      "seq": 3,
+      "slug": "operand-probe",
+      "action": "初次指定 Boolean 選取欄後，記錄實際介面與欄位",
+      "observed": "欄位讀回：{\"operation\": \"UNION\", \"operand\": null, \"solver\": \"EXACT\"}",
+      "image": {
+        "path": "learning/evidence/08/2026-10-28-boss-box-join-trial-v002/08-boss-03-operand-probe.png",
+        "bytes": 183163,
+        "sha256": "52db9b45d6c351540f890fc3eba5c1adcb5492548191a2968537e7ea447f4485"
+      },
+      "width": 1494,
+      "height": 1019
+    },
+    {
+      "seq": 4,
+      "slug": "boolean-preview",
+      "action": "使用 Modifier UI 指定 Boolean Union 與既有盲孔柱",
+      "observed": "Boolean UNION / EXACT，對象為既有盲孔柱；此時為預覽，尚未套用。",
+      "image": {
+        "path": "learning/evidence/08/2026-10-28-boss-box-join-trial-v002/08-boss-04-boolean-preview.png",
+        "bytes": 183032,
+        "sha256": "494b4da79e66eb321f76ccf2ddf0741eee9c610f53ae7cdbb59818c4067ea28c"
+      },
+      "width": 1494,
+      "height": 1019
+    },
+    {
+      "seq": 5,
+      "slug": "union",
+      "action": "套用 Boolean Union，讀回接合網格",
+      "observed": "盒體與柱 Union：單一連通殼、非流形邊 0，孔底／柱頂／盒底射線與體積核對通過；非實體合格判定。",
+      "image": {
+        "path": "learning/evidence/08/2026-10-28-boss-box-join-trial-v002/08-boss-05-union.png",
+        "bytes": 169079,
+        "sha256": "6fa1df954cd35a390a35d5ee6fb4a350e85ebd3360a88885079059873d6852a9"
+      },
+      "width": 1494,
+      "height": 1019
+    },
+    {
+      "seq": 6,
+      "slug": "saved",
+      "action": "以新檔名另存示範場景，驗證幾何",
+      "observed": "盒體與柱 Union：單一連通殼、非流形邊 0，孔底／柱頂／盒底射線與體積核對通過；非實體合格判定。",
+      "image": {
+        "path": "learning/evidence/08/2026-10-28-boss-box-join-trial-v002/08-boss-06-saved.png",
+        "bytes": 173700,
+        "sha256": "fe8a60759fb9f7c11cec8f34c4fd877179cb9c7f4fc72f1789f1bc4d4b50d3d7"
+      },
+      "width": 1494,
+      "height": 1019
+    },
+    {
+      "seq": 7,
+      "slug": "reopened",
+      "action": "重新開啟新示範檔並再次核對接合網格",
+      "observed": "盒體與柱 Union：單一連通殼、非流形邊 0，孔底／柱頂／盒底射線與體積核對通過；非實體合格判定。",
+      "image": {
+        "path": "learning/evidence/08/2026-10-28-boss-box-join-trial-v002/08-boss-07-reopened.png",
+        "bytes": 169318,
+        "sha256": "e16ab17615e5115f09931019d127d451cd37bdc5f8e1f0f701333a84a9212e45"
+      },
+      "width": 1494,
+      "height": 1019
+    }
+  ],
+  "operandAttempts": [
+    {
+      "attempt": 0,
+      "operation": "UNION",
+      "operand": null,
+      "solver": "EXACT"
+    },
+    {
+      "attempt": 1,
+      "operation": "UNION",
+      "operand": "Boss_Blind_Polygon32",
+      "solver": "EXACT"
+    }
+  ],
+  "sourceMethod": "柱本身由前次程式建立；本次顯示、平移、Boolean 及另存重開為 Blender 視窗模擬事件。",
+  "failedAttempt": "v001 operand 未選入而中止、未存成果；v002 首次亦為空值，GUI 重選一次後成功。",
+  "geometry": [
+    {
+      "label": "union",
+      "boundsMm": [
+        [
+          -30.0,
+          30.0
+        ],
+        [
+          -20.0,
+          20.0
+        ],
+        [
+          -15.0,
+          15.0
+        ]
+      ],
+      "vertices": 144,
+      "faces": 112,
+      "connectedComponents": 1,
+      "nonManifoldEdges": 0,
+      "signedVolumeMm3": 15839.172943465364,
+      "expectedVolumeMm3": 15839.172954007741,
+      "verticalRays": {
+        "holeFloor": {
+          "x": 0.0,
+          "z": -12.5,
+          "expectedZ": -12.5
+        },
+        "bossTop": {
+          "x": 3.0,
+          "z": -5.5,
+          "expectedZ": -5.5
+        },
+        "boxFloor": {
+          "x": 5.0,
+          "z": -13.0,
+          "expectedZ": -13.0
+        }
+      },
+      "checks": {
+        "nonempty": true,
+        "closed": true,
+        "singleShell": true,
+        "bounds": true,
+        "positiveVolume": true,
+        "volume": true,
+        "rays": true
+      },
+      "sourceSha256": "4df306ac6b7e3f57108cb0221fad62480ca47c80f77d5ccd3e91632a6d5c7320",
+      "dimensionsStatus": "demonstration draft",
+      "hardware": null,
+      "material": null,
+      "physicalFit": null,
+      "qualifiedHoleDiameter": null,
+      "qualifiedStrength": null
+    },
+    {
+      "label": "saved",
+      "boundsMm": [
+        [
+          -30.0,
+          30.0
+        ],
+        [
+          -20.0,
+          20.0
+        ],
+        [
+          -15.0,
+          15.0
+        ]
+      ],
+      "vertices": 144,
+      "faces": 112,
+      "connectedComponents": 1,
+      "nonManifoldEdges": 0,
+      "signedVolumeMm3": 15839.172943465364,
+      "expectedVolumeMm3": 15839.172954007741,
+      "verticalRays": {
+        "holeFloor": {
+          "x": 0.0,
+          "z": -12.5,
+          "expectedZ": -12.5
+        },
+        "bossTop": {
+          "x": 3.0,
+          "z": -5.5,
+          "expectedZ": -5.5
+        },
+        "boxFloor": {
+          "x": 5.0,
+          "z": -13.0,
+          "expectedZ": -13.0
+        }
+      },
+      "checks": {
+        "nonempty": true,
+        "closed": true,
+        "singleShell": true,
+        "bounds": true,
+        "positiveVolume": true,
+        "volume": true,
+        "rays": true
+      },
+      "sourceSha256": "4df306ac6b7e3f57108cb0221fad62480ca47c80f77d5ccd3e91632a6d5c7320",
+      "dimensionsStatus": "demonstration draft",
+      "hardware": null,
+      "material": null,
+      "physicalFit": null,
+      "qualifiedHoleDiameter": null,
+      "qualifiedStrength": null
+    },
+    {
+      "label": "reopened",
+      "boundsMm": [
+        [
+          -30.0,
+          30.0
+        ],
+        [
+          -20.0,
+          20.0
+        ],
+        [
+          -15.0,
+          15.0
+        ]
+      ],
+      "vertices": 144,
+      "faces": 112,
+      "connectedComponents": 1,
+      "nonManifoldEdges": 0,
+      "signedVolumeMm3": 15839.172943465364,
+      "expectedVolumeMm3": 15839.172954007741,
+      "verticalRays": {
+        "holeFloor": {
+          "x": 0.0,
+          "z": -12.5,
+          "expectedZ": -12.5
+        },
+        "bossTop": {
+          "x": 3.0,
+          "z": -5.5,
+          "expectedZ": -5.5
+        },
+        "boxFloor": {
+          "x": 5.0,
+          "z": -13.0,
+          "expectedZ": -13.0
+        }
+      },
+      "checks": {
+        "nonempty": true,
+        "closed": true,
+        "singleShell": true,
+        "bounds": true,
+        "positiveVolume": true,
+        "volume": true,
+        "rays": true
+      },
+      "sourceSha256": "4df306ac6b7e3f57108cb0221fad62480ca47c80f77d5ccd3e91632a6d5c7320",
+      "dimensionsStatus": "demonstration draft",
+      "hardware": null,
+      "material": null,
+      "physicalFit": null,
+      "qualifiedHoleDiameter": null,
+      "qualifiedStrength": null
+    }
+  ],
+  "limitations": [
+    "中央柱僅為幾何草案；沒有對應蓋孔與裝配驗證。",
+    "32 邊形 8／4 mm 為頂點對頂點，非正式螺絲或嵌件孔徑。",
+    "材料、五金、列印、量測、配合及強度均待定；射線與單殼不是完整幾何或實體合格檢查。"
+  ],
+  "publicationStatus": "去除絕對路徑與 Recent 清單的衍生摘要；發布前仍需審查來源、隱私及授權。"
+}

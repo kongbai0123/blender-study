@@ -1,0 +1,272 @@
+{
+  "schemaVersion": 1,
+  "title": "第 11 章選修：四熱熔螺母柱與蓋孔幾何草案",
+  "scope": "原盒與蓋副本上的數位示範；不更新學員進度，實體列印、量測與試配待定。",
+  "status": "數位幾何草案，尚未實體驗證",
+  "sourceScene": "learning/evidence/08/2026-10-28-four-insert-boss-start-gui-v001/demo-files/u11_four_insert_boss_start_v001.blend",
+  "sourceSha256": "415cbf110088be7821c445e8f9bd6946880d69fa54b114d4adf780e58c92582a",
+  "startingScene": {
+    "path": "learning/evidence/08/2026-10-28-four-insert-boss-start-gui-v001/demo-files/u11_four_insert_boss_start_v001.blend",
+    "sha256": "415cbf110088be7821c445e8f9bd6946880d69fa54b114d4adf780e58c92582a",
+    "verification": "learning/evidence/08/2026-10-28-four-insert-boss-start-gui-v001/independent-audit-v001.json",
+    "construction": "程式預備五組工具；原始 Body/Lid 尚未做布林，已另存與重開核對。"
+  },
+  "upstreamReference": {
+    "path": "learning/evidence/05/2026-10-22-lesson05-lid-demo-v001/demo-files/u05_lid_v001.blend",
+    "sha256": "ab08f331dcb26c5ffc6c6ca56c7c7f022df96791c4777e37c5f01a964fbed6ff"
+  },
+  "demonstrationScene": "learning/evidence/08/2026-10-28-four-insert-boss-gui-v001/demo-files/u11_four_insert_boss_box_v001.blend",
+  "demonstrationSceneSha256": "70f6687edc450438d21ada9b61b9295cf24079c64884947b9c4081de88e23462",
+  "hardware": {
+    "insert": "Ruthex RX-M3x5.7",
+    "insertLengthMm": 5.7,
+    "insertOuterDiameterMm": 4.6,
+    "insertTipDiameterMm": 3.9,
+    "manufacturerPilotDiameterMm": 4.0,
+    "manufacturerMinimumPilotDepthMm": 6.7,
+    "manufacturerMinimumWallMm": 1.6,
+    "screw": "ETTINGER 001.16.342 ISO4762 M3x10 A2/AISI304",
+    "screwLengthMm": 10,
+    "headDiameterMm": 5.5,
+    "headHeightMm": 3,
+    "hexMm": 2.5
+  },
+  "nominalDraft": {
+    "centresMm": [
+      [
+        -21,
+        -11
+      ],
+      [
+        -21,
+        11
+      ],
+      [
+        21,
+        -11
+      ],
+      [
+        21,
+        11
+      ]
+    ],
+    "pillarOuterDiameterMm": 8,
+    "pillarBottomZMm": -13.5,
+    "pillarTopZMm": 15,
+    "pillarHeightMm": 28.5,
+    "floorOverlapMm": 0.5,
+    "pilotDiameterMm": 4,
+    "pilotDepthMm": 9,
+    "pilotBottomZMm": 6,
+    "lidHoleDiameterExperimentalMm": 3.4,
+    "ribThicknessMm": 2,
+    "ribTopZMm": 10,
+    "lidLowestZMm": 11,
+    "nominalRibVerticalBoundingGapMm": 1,
+    "insertTopZMm": 14.8,
+    "insertBottomZMm": 9.1,
+    "screwBottomZMm": 7,
+    "nominalScrewBottomToBlindHoleBottomMm": 1,
+    "headEnvelopeDiameterMm": 5.5,
+    "headEnvelopeBottomZMm": 17,
+    "headEnvelopeTopZMm": 20
+  },
+  "limitations": [
+    "柱、肋與切割工具由 Python 預建；後續 Boolean、新檔及重開為隔離 Blender GUI。",
+    "起始檔是另一次重演，五個工具的世界面頂點指紋與成品中的刀具一致；不得說成同一場次。",
+    "四個蓋孔 3.4 mm 是我方試驗名義值，未經列印或試配，並非 ISO 已選公差或合格間隙。",
+    "無螺絲與嵌件實體網格，螺絲頭為尺寸包絡，未模擬螺紋、安裝、干涉或扭矩。",
+    "柱、肋和原盒的材料、製程、列印方向、熱熔與結構強度未驗證；非流形和 BVH 指標不保證無自交。",
+    "32 方向壁厚與孔徑射線為特定高度的數位局部抽樣；肋與蓋間距僅靜態外框距離。",
+    "末幾張畫面主要為盒底視角，孔與肋需參考第 9、12 步及讀值。"
+  ],
+  "material": null,
+  "torque": null,
+  "physicalPrint": null,
+  "physicalMeasurement": null,
+  "physicalFit": null,
+  "qualifiedClearance": null,
+  "qualifiedStrength": null,
+  "steps": [
+    {
+      "id": "11-four-inserts-01",
+      "goal": "開啟可跟做副本",
+      "operation": "開啟另存的起始檔，確認 Body 可見、Lid 與五組工具隱藏。",
+      "context": "柱、肋及刀具由 Python 預建，不是本單元 GUI 從零建模；起始副本尚未做布林。",
+      "visibleConfirmation": "看到開口盒體；工具因隱藏而不可見。",
+      "programReadback": "獨立驗證 Body 和 Lid 的面頂點指紋與原檔一致；五個工具各含 4 個分離構件。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-four-insert-boss-gui-v001/BOS-01-source.png",
+        "sha256": "b9bd689951bfcb7c4ee166d30ca81376079864736f5f7fe2224bdefc81b16d91"
+      }
+    },
+    {
+      "id": "11-four-inserts-02",
+      "goal": "預覽四柱聯集",
+      "operation": "選 Body，F3 搜尋 Add Boolean Modifier，選 Union、Exact，Object 選 zz_Boss_Pillars。",
+      "context": "以起始檔中預建的四柱工具操作；中心為 X±21、Y±11 mm。",
+      "visibleConfirmation": "修改器顯示 Union／Exact；物件欄名稱可能因欄寬截斷。",
+      "programReadback": "程式讀回 UNION、EXACT 與 zz_Boss_Pillars。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-four-insert-boss-gui-v001/BOS-02-pillars-preview.png",
+        "sha256": "a73886bc958a68c7bb83e85671582c8f839eaa467f0d6b9e49612b4f1aa39f34"
+      }
+    },
+    {
+      "id": "11-four-inserts-03",
+      "goal": "套用四柱聯集",
+      "operation": "在 Boolean 修改器選單按 Apply。",
+      "context": "確認正確工具後套用；預建柱底 Z=-13.5、頂 Z=15 mm。",
+      "visibleConfirmation": "可見盒內四柱，但部分柱體下部被盒壁遮住。",
+      "programReadback": "Body 讀回 272 點、148 面、1 連通體、非流形邊 0。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-four-insert-boss-gui-v001/BOS-03-pillars-applied.png",
+        "sha256": "db593918a470b513303b68b1c68e54eb2cd4271c21af6e0af737eaed3a27c979"
+      }
+    },
+    {
+      "id": "11-four-inserts-04",
+      "goal": "預覽 X 向連壁肋",
+      "operation": "選 Body，新增加 Boolean，選 Union／Exact，Object 選 zz_Boss_Ribs_X。",
+      "context": "每個柱體的 X 向肋為預建工具，頂部 Z=10 mm。",
+      "visibleConfirmation": "修改器顯示聯集設定；肋的局部可能受盒壁遮擋。",
+      "programReadback": "程式讀回 UNION、EXACT 與 zz_Boss_Ribs_X。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-four-insert-boss-gui-v001/BOS-04-ribs-x-preview.png",
+        "sha256": "a58adb1b7e8c0481f4687ec58f5b882d1ebab64bcab89310cb281593dadd2ef7"
+      }
+    },
+    {
+      "id": "11-four-inserts-05",
+      "goal": "套用 X 向肋",
+      "operation": "確認後在修改器選單按 Apply。",
+      "context": "肋與柱、盒壁有名義重疊；仍未做強度判定。",
+      "visibleConfirmation": "盒內仍可見柱體；此角度未能顯出每條肋。",
+      "programReadback": "Body 讀回 304 點、164 面、1 連通體、非流形邊 0。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-four-insert-boss-gui-v001/BOS-05-ribs-x-applied.png",
+        "sha256": "0cf534cf730c8aa20fdbf67e8addd3ee35fbf48ede166526d59e9f80c2a28b41"
+      }
+    },
+    {
+      "id": "11-four-inserts-06",
+      "goal": "預覽 Y 向連壁肋",
+      "operation": "選 Body，新增加 Boolean，選 Union／Exact，Object 選 zz_Boss_Ribs_Y。",
+      "context": "預建工具為四條 Y 向肋，與柱及側壁相交。",
+      "visibleConfirmation": "修改器顯示聯集設定；工具名稱可能截斷。",
+      "programReadback": "程式讀回 UNION、EXACT 與 zz_Boss_Ribs_Y。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-four-insert-boss-gui-v001/BOS-06-ribs-y-preview.png",
+        "sha256": "a58adb1b7e8c0481f4687ec58f5b882d1ebab64bcab89310cb281593dadd2ef7"
+      }
+    },
+    {
+      "id": "11-four-inserts-07",
+      "goal": "套用 Y 向肋",
+      "operation": "確認後在修改器選單按 Apply。",
+      "context": "肋厚為名義 2 mm、頂面 Z=10 mm。",
+      "visibleConfirmation": "盒內可見四柱，部分肋體被遮擋。",
+      "programReadback": "Body 讀回 336 點、180 面、1 連通體、非流形邊 0。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-four-insert-boss-gui-v001/BOS-07-ribs-y-applied.png",
+        "sha256": "0cf534cf730c8aa20fdbf67e8addd3ee35fbf48ede166526d59e9f80c2a28b41"
+      }
+    },
+    {
+      "id": "11-four-inserts-08",
+      "goal": "預覽柱孔切割",
+      "operation": "選 Body，新增加 Boolean，選 Difference／Exact，Object 選 zz_Boss_Pilot_Tools。",
+      "context": "四個預建切割工具名義 Ø4 mm，底 Z=6、頂延伸至 15.5 mm 以穿過柱頂。",
+      "visibleConfirmation": "修改器顯示 Difference／Exact；可能不能由預覽辨認孔深。",
+      "programReadback": "程式讀回 DIFFERENCE、EXACT 與 zz_Boss_Pilot_Tools。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-four-insert-boss-gui-v001/BOS-08-pilots-preview.png",
+        "sha256": "916a9a1aa5ea2cdaa7db6ab234371555f7a7ce8075ce68131ba4ba22b7a7d4e8"
+      }
+    },
+    {
+      "id": "11-four-inserts-09",
+      "goal": "套用四個柱盲孔",
+      "operation": "確認後在修改器選單按 Apply。",
+      "context": "柱頂 Z=15、孔底 Z=6，名義孔深 9 mm。",
+      "visibleConfirmation": "畫面可看到柱頂孔；前側部分受盒壁遮擋。",
+      "programReadback": "Body 讀回 592 點、316 面、1 連通體、非流形邊 0；獨立抽樣四孔底 Z≈6 mm。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-four-insert-boss-gui-v001/BOS-09-pilots-applied.png",
+        "sha256": "ddfb5f57c677eabaab44fdad23d7209078c128007864a010e4bb0e98bebf9bae"
+      }
+    },
+    {
+      "id": "11-four-inserts-10",
+      "goal": "顯示既有上蓋",
+      "operation": "在 Outliner 找到 Lid，點眼睛顯示原上蓋。",
+      "context": "上蓋位於原本名義關閉位置；不要移動它。",
+      "visibleConfirmation": "畫面顯示上蓋並遮住盒內柱體。",
+      "programReadback": "劇本以 hide_get() 確認上蓋顯示；尚未打蓋孔。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-four-insert-boss-gui-v001/BOS-10-lid-visible.png",
+        "sha256": "bb5dfaeb486eae67d5c337d1296f7450e55b95c463c522ceca4be6683e27102d"
+      }
+    },
+    {
+      "id": "11-four-inserts-11",
+      "goal": "預覽蓋穿孔",
+      "operation": "選 Lid，新增加 Boolean，選 Difference／Exact，Object 選 zz_Boss_Lid_Tools。",
+      "context": "名義 Ø3.4 mm 為本案試驗值，不是已驗證公差。",
+      "visibleConfirmation": "可見上蓋及布林預覽；名稱可能因欄寬截斷。",
+      "programReadback": "程式讀回 DIFFERENCE、EXACT 與 zz_Boss_Lid_Tools。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-four-insert-boss-gui-v001/BOS-11-lid-holes-preview.png",
+        "sha256": "47e4c120b616164ad1cd8497bfa801e75fd8e7e166fef6bbe0746f0127940ea2"
+      }
+    },
+    {
+      "id": "11-four-inserts-12",
+      "goal": "套用蓋穿孔",
+      "operation": "確認後在修改器選單按 Apply。",
+      "context": "刀具穿過蓋板上下表面；未建真實螺絲或熱熔螺母。",
+      "visibleConfirmation": "上蓋畫面可看到四個孔。",
+      "programReadback": "Lid 讀回 280 點、154 面、1 連通體、非流形邊 0；四孔軸向射線無命中。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-four-insert-boss-gui-v001/BOS-12-lid-holes-applied.png",
+        "sha256": "26d4edc0fd500ebc83a75a49b3d879c88b80c6d6f12cb9bddf542947d9157663"
+      }
+    },
+    {
+      "id": "11-four-inserts-13",
+      "goal": "聚焦觀察盒體",
+      "operation": "選 Body，F3 搜尋 Frame Selected 並調整視角。",
+      "context": "圖像可能從盒底方向觀看，需配合之前上蓋及柱孔圖片。",
+      "visibleConfirmation": "此實拍主要顯示盒體外底，無法看見所有內部孔肋。",
+      "programReadback": "Body 外框約 60 × 40 × 30 mm；此圖不證明內部尺寸。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-four-insert-boss-gui-v001/BOS-13-framed.png",
+        "sha256": "631277d562510d29a6cc2e3d77d042bc2e427db6252e70c45b3dda6b201ff461"
+      }
+    },
+    {
+      "id": "11-four-inserts-14",
+      "goal": "另存新版本",
+      "operation": "File > Save As，另存新場景，保留原始盒與起始檔。",
+      "context": "示範檔案視窗路徑及檔名由程式填入。",
+      "visibleConfirmation": "另存後保留盒體畫面，這不是檔案對話框截圖。",
+      "programReadback": "示範檔 SHA-256 見 demonstrationSceneSha256；實體結果未填。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-four-insert-boss-gui-v001/BOS-14-saved.png",
+        "sha256": "e972cc1cbbd627bf0c910b8079937e5c625667d0a67668dac661421df739e757"
+      }
+    },
+    {
+      "id": "11-four-inserts-15",
+      "goal": "重開並獨立核對",
+      "operation": "重開另存的新檔，以另一個 Blender 讀回網格與局部射線。",
+      "context": "檔案欄位由程式填入；重新開啟不等於學員完成。",
+      "visibleConfirmation": "重開畫面從盒底視角觀看，四孔及肋並非都可見。",
+      "programReadback": "Body/Lid 均 1 連通體、非流形邊 0、BVH 候選 0；四孔在各自主軸和四個徑向抽樣，並不保證所有方向或實體尺寸。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-four-insert-boss-gui-v001/BOS-15-reopened.png",
+        "sha256": "d96771e9d18c520680c7e462648de7a09993025009e5d582cb2f925496c06a90"
+      }
+    }
+  ]
+}

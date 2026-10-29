@@ -1,0 +1,123 @@
+{
+  "kind": "controlled-manual-box-one-x-gui-trial",
+  "method": "獨立 Blender 5.2.1 與 CAD Sketcher；假專案與假 progress。插件由程式啟用，檔案視窗路徑由程式填寫；GUI Text Editor 載入與 Alt+P、面板輸入及確認由事件操作。",
+  "programs": [
+    {
+      "path": "learning/tutor/guarded_manual_box_v001.py",
+      "sha256": "9dd50ba87227fc6ea77df4f6344b602ba245becfe4efe28d5343600a1282f067"
+    },
+    {
+      "path": "learning/tutor/manual_box_auto_update_v002.py",
+      "sha256": "cc39a2376c8abc41f61cb5beb796a83e22b63dc33b6b6aed5df9f135e83fc457"
+    },
+    {
+      "path": "learning/tutor/manual_box_reference_v001.json",
+      "sha256": "78f39a6ec422bb02b64fff64f70896c927a6ab449bcd84be9a03b6657bedae5c"
+    }
+  ],
+  "rejected": {
+    "proposedL": 110,
+    "observedErrorInOriginalImage": true,
+    "outerMm": [
+      80,
+      50
+    ],
+    "cutterX": [
+      2,
+      78
+    ],
+    "cutterY": [
+      2,
+      48
+    ]
+  },
+  "accepted": {
+    "proposedL": 90,
+    "outerMm": [
+      90,
+      50
+    ],
+    "cutterX": [
+      2,
+      88
+    ],
+    "cutterY": [
+      2,
+      48
+    ],
+    "lidBoundsMm": [
+      [
+        0.000518798828125,
+        89.99948120117188
+      ],
+      [
+        0.000324249267578125,
+        49.99967575073242
+      ],
+      [
+        26.00001335144043,
+        31.99998664855957
+      ]
+    ]
+  },
+  "images": [
+    {
+      "file": "GUARD-01-opened.png",
+      "sha256": "ef1ad4605384ee621ef5e3f501c68611a3cee86a5bb6f91f80595b56203d54f8"
+    },
+    {
+      "file": "GUARD-02-outer-sketch.png",
+      "sha256": "1de32f144a69380cc467c2048ce5dedd73946b89bae43304601cb47565844cc8"
+    },
+    {
+      "file": "GUARD-03-script-open.png",
+      "sha256": "298e218b1b77b93b54ebd69ab46d5f833f1fa4ab1634650023d0123b92cc3428"
+    },
+    {
+      "file": "GUARD-04-script-run.png",
+      "sha256": "298e218b1b77b93b54ebd69ab46d5f833f1fa4ab1634650023d0123b92cc3428"
+    },
+    {
+      "file": "GUARD-05-viewport.png",
+      "sha256": "5920f6fd06405232d45c4df0b0a708c2734ae2aaea3b85c63d712cac767c0ef9"
+    },
+    {
+      "file": "GUARD-06-panel.png",
+      "sha256": "58f9607dd0014fbdcba970dc83fabbfefb32fd823f54e6ad667e2376f5667ed3"
+    },
+    {
+      "file": "GUARD-07-dialog.png",
+      "sha256": "7e9e2f875b6162bb047481e098d027d14b182c242125c5d58a6d6dba8df507a2"
+    },
+    {
+      "file": "GUARD-08-parameter-menu.png",
+      "sha256": "671a582bde4a5f446e9e71e0471afab68d43bcbc230511604929a77f6e6c9c1a"
+    },
+    {
+      "file": "GUARD-09-invalid-proposal.png",
+      "sha256": "496b0278604159057d487ffe27b76a6a2603ea43ece64629932875313c047cde"
+    },
+    {
+      "file": "GUARD-10-invalid-result.png",
+      "sha256": "8318d576b440a57c58266f4d54acfcd1dd56c7beb90f4f46ee9b0dc1f5c87a66"
+    },
+    {
+      "file": "GUARD-11-valid-proposal.png",
+      "sha256": "b1cd55bb0d52928f0b4a23f43ae38d3cf499d8da0bcd0485e9d29f3138d19da8"
+    },
+    {
+      "file": "GUARD-12-valid-result.png",
+      "sha256": "33a6ba3350fea8197a37fa8a87f95be9fe5df6fe59d6f057c69e209ce7d25332"
+    }
+  ],
+  "limitations": [
+    "此輪僅假專案 GUI 測一組長度拒絕和一組接受；介面錯誤訊息由原圖目視、尺寸邊界由 Python 讀值。",
+    "透過受控面板提交時求解內腔並核對；直接修改 Blender 或 CAD Sketcher 原生欄位可繞過防護及受控自動更新，面板不攔截原生存檔/匯出。",
+    "候選範圍僅防形狀鍵夾限，不代表全面安全或製程及配合合格。",
+    "未測 Y、其他尺寸、面板未載入、失敗回滾、另存重開、全面幾何碰撞、列印、量測或試配。",
+    "初始 Body 以GUI進 Body Sketch，檔案對話框路徑由程式填入，圖片不得推論沒有其他風險。"
+  ],
+  "physicalMeasurements": null,
+  "fitResults": null,
+  "qualifiedClearanceMm": null
+}

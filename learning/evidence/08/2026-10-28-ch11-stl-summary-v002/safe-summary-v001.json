@@ -1,0 +1,663 @@
+{
+  "schemaVersion": 1,
+  "title": "第 11 章：六件 STL 匯出、修訂與重新匯入（清潔場次）",
+  "scope": "重新以獨立 Blender GUI 實際選取、匯出及匯入六件；檔案瀏覽器側欄隱藏且使用公共暫存位置，不更新學員進度。",
+  "status": "已完成數位匯出與有限檢查，實體未驗證",
+  "items": [
+    {
+      "id": "hand-thread",
+      "title": "手工輪廓外牙",
+      "sourceScene": "learning/evidence/08/2026-10-28-external-thread-from-hand-profile-gui-v001/demo-files/u11_hand_thread_draft_v001.blend",
+      "sourceSha256": "2d73ed99fe56cfbd676447cc3035c0cb8245b3eebf5b1ac72dc3b3c418afce50",
+      "sourceObject": "Thread_Core",
+      "stl": "learning/evidence/08/2026-10-28-ch11-stl-public-hand-v001/demo-files/exports/u11_hand_thread_public_v001.stl",
+      "stlSha256": "2279efed9fa58fa8c4352e9deb304a367c038fae345d94ca908f6f4577561e59",
+      "stlBytes": 70584,
+      "binaryTriangles": 1410,
+      "binaryExactDuplicateTriangles": 0,
+      "boundsMm": [
+        [
+          -6.0,
+          6.0
+        ],
+        [
+          -6.0,
+          6.0
+        ],
+        [
+          -0.09999775886535645,
+          4.699997901916504
+        ]
+      ],
+      "dimensionsMm": [
+        12.0,
+        12.0,
+        4.79999566078186
+      ],
+      "guiReimport": {
+        "object": "u11_hand_thread_public_v001",
+        "vertices": 707,
+        "faces": 1410,
+        "triangles": 1410,
+        "boundsMm": [
+          [
+            -6.0,
+            6.0
+          ],
+          [
+            -6.0,
+            6.0
+          ],
+          [
+            -0.09999775886535645,
+            4.699997901916504
+          ]
+        ],
+        "signedVolumeMm3": 407.94219233524825,
+        "minimumTriangleAreaMm2": 0.02867393217346469,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0
+      },
+      "independentAudit": "learning/evidence/08/2026-10-28-ch11-stl-public-hand-v001/hand-thread-independent-audit-v001.json",
+      "independentReimport": {
+        "vertices": 707,
+        "faces": 1410,
+        "triangles": 1410,
+        "boundsMm": [
+          [
+            -6.0,
+            6.0
+          ],
+          [
+            -6.0,
+            6.0
+          ],
+          [
+            -0.09999775886535645,
+            4.699997901916504
+          ]
+        ],
+        "signedVolumeMm3": 407.94219233524825,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "components": 1,
+        "nonAdjacentBvhCandidates": 0,
+        "minimumTriangleAreaMm2": 0.02867393217346469
+      },
+      "exportOptions": {
+        "operator": "WM_OT_stl_export",
+        "globalScale": 1.0,
+        "sceneUnit": false,
+        "forwardAxis": "Y",
+        "upAxis": "Z",
+        "selectionOnly": true,
+        "applyModifiers": true,
+        "binary": true,
+        "batch": false
+      },
+      "importOptions": {
+        "operator": "WM_OT_stl_import",
+        "globalScale": 1.0,
+        "sceneUnit": false,
+        "forwardAxis": "Y",
+        "upAxis": "Z"
+      }
+    },
+    {
+      "id": "side-box-body-repaired",
+      "title": "盒側外牙盒體（三角化修訂）",
+      "sourceScene": "learning/evidence/08/2026-10-28-ch11-triangulate-sidebox-v001/demo-files/u11_side_box_triangulated_v001.blend",
+      "sourceSha256": "dd5c074510f1bd6f99e8fda244340cac59f11ddde9ff7ba869d6a1437fbd60ea",
+      "sourceObject": "Body",
+      "stl": "learning/evidence/08/2026-10-28-ch11-stl-public-sidebox-v001/demo-files/exports/u11_side_box_body_triangulated_public_v001.stl",
+      "stlSha256": "f93e5ef13d319081c31fef8b5cf30674dd66a5513d486a86731c0b2f76cdec93",
+      "stlBytes": 71084,
+      "binaryTriangles": 1420,
+      "binaryExactDuplicateTriangles": 0,
+      "boundsMm": [
+        [
+          -30.0,
+          34.29999542236328
+        ],
+        [
+          -20.0,
+          20.0
+        ],
+        [
+          -15.0,
+          15.0
+        ]
+      ],
+      "dimensionsMm": [
+        64.29999542236328,
+        40.0,
+        30.0
+      ],
+      "guiReimport": {
+        "object": "u11_side_box_body_triangulated_public_v001",
+        "vertices": 712,
+        "faces": 1420,
+        "triangles": 1420,
+        "boundsMm": [
+          [
+            -30.0,
+            34.29999542236328
+          ],
+          [
+            -20.0,
+            20.0
+          ],
+          [
+            -15.0,
+            15.0
+          ]
+        ],
+        "signedVolumeMm3": 15920.013963481457,
+        "minimumTriangleAreaMm2": 0.0019618411243882156,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0
+      },
+      "independentAudit": "learning/evidence/08/2026-10-28-ch11-stl-public-sidebox-v001/side-box-body-repaired-independent-audit-v001.json",
+      "independentReimport": {
+        "vertices": 712,
+        "faces": 1420,
+        "triangles": 1420,
+        "boundsMm": [
+          [
+            -30.0,
+            34.29999542236328
+          ],
+          [
+            -20.0,
+            20.0
+          ],
+          [
+            -15.0,
+            15.0
+          ]
+        ],
+        "signedVolumeMm3": 15920.013963481457,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "components": 1,
+        "nonAdjacentBvhCandidates": 0,
+        "minimumTriangleAreaMm2": 0.0019618411243882156
+      },
+      "exportOptions": {
+        "operator": "WM_OT_stl_export",
+        "globalScale": 1.0,
+        "sceneUnit": false,
+        "forwardAxis": "Y",
+        "upAxis": "Z",
+        "selectionOnly": true,
+        "applyModifiers": true,
+        "binary": true,
+        "batch": false
+      },
+      "importOptions": {
+        "operator": "WM_OT_stl_import",
+        "globalScale": 1.0,
+        "sceneUnit": false,
+        "forwardAxis": "Y",
+        "upAxis": "Z"
+      }
+    },
+    {
+      "id": "side-box-lid",
+      "title": "盒側外牙原平面蓋",
+      "sourceScene": "learning/evidence/08/2026-10-28-external-thread-mount-gui-v002/demo-files/u11_box_external_thread_draft_v002.blend",
+      "sourceSha256": "df2108d06250807a9fa593ce966ae09e42d0fc3b2bfad97c98d0c40f77378c54",
+      "sourceObject": "Lid",
+      "stl": "learning/evidence/08/2026-10-28-ch11-stl-public-sidelid-v001/demo-files/exports/u11_side_box_lid_public_v001.stl",
+      "stlSha256": "0b226cf405bc70f42b5ce28fee9f46cb55eff67b84c6d786c091a2043f5f2408",
+      "stlBytes": 2284,
+      "binaryTriangles": 44,
+      "binaryExactDuplicateTriangles": 0,
+      "boundsMm": [
+        [
+          -30.0,
+          30.0
+        ],
+        [
+          -20.0,
+          20.0
+        ],
+        [
+          11.0,
+          17.0
+        ]
+      ],
+      "dimensionsMm": [
+        60.0,
+        40.0,
+        6.0
+      ],
+      "guiReimport": {
+        "object": "u11_side_box_lid_public_v001",
+        "vertices": 24,
+        "faces": 44,
+        "triangles": 44,
+        "boundsMm": [
+          [
+            -30.0,
+            30.0
+          ],
+          [
+            -20.0,
+            20.0
+          ],
+          [
+            11.0,
+            17.0
+          ]
+        ],
+        "signedVolumeMm3": 6195.199951171875,
+        "minimumTriangleAreaMm2": 31.599998029877806,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0
+      },
+      "independentAudit": "learning/evidence/08/2026-10-28-ch11-stl-public-sidelid-v001/side-box-lid-independent-audit-v001.json",
+      "independentReimport": {
+        "vertices": 24,
+        "faces": 44,
+        "triangles": 44,
+        "boundsMm": [
+          [
+            -30.0,
+            30.0
+          ],
+          [
+            -20.0,
+            20.0
+          ],
+          [
+            11.0,
+            17.0
+          ]
+        ],
+        "signedVolumeMm3": 6195.199951171875,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "components": 1,
+        "nonAdjacentBvhCandidates": 0,
+        "minimumTriangleAreaMm2": 31.599998029877806
+      },
+      "exportOptions": {
+        "operator": "WM_OT_stl_export",
+        "globalScale": 1.0,
+        "sceneUnit": false,
+        "forwardAxis": "Y",
+        "upAxis": "Z",
+        "selectionOnly": true,
+        "applyModifiers": true,
+        "binary": true,
+        "batch": false
+      },
+      "importOptions": {
+        "operator": "WM_OT_stl_import",
+        "globalScale": 1.0,
+        "sceneUnit": false,
+        "forwardAxis": "Y",
+        "upAxis": "Z"
+      }
+    },
+    {
+      "id": "side-cap-repaired",
+      "title": "盒側保護帽（三角化修訂）",
+      "sourceScene": "learning/evidence/08/2026-10-28-ch11-triangulate-cap-v001/demo-files/u11_side_cap_triangulated_v001.blend",
+      "sourceSha256": "f2e6646b9ad27f0f4912c8c14cb4cc664f44700bb6a376fe0df46fad63844efc",
+      "sourceObject": "Side_Cap_Blank",
+      "stl": "learning/evidence/08/2026-10-28-ch11-stl-public-cap-v001/demo-files/exports/u11_side_cap_triangulated_public_v001.stl",
+      "stlSha256": "960e2105a61cccf2b86be3b18fc1336a36fa1d6495f670c2214372a0003d8683",
+      "stlBytes": 93584,
+      "binaryTriangles": 1870,
+      "binaryExactDuplicateTriangles": 0,
+      "boundsMm": [
+        [
+          30.299999237060547,
+          35.79999923706055
+        ],
+        [
+          -7.690725326538086,
+          7.690725326538086
+        ],
+        [
+          -7.690725326538086,
+          7.690725326538086
+        ]
+      ],
+      "dimensionsMm": [
+        5.5,
+        15.381450653076172,
+        15.381450653076172
+      ],
+      "guiReimport": {
+        "object": "u11_side_cap_triangulated_public_v001",
+        "vertices": 937,
+        "faces": 1870,
+        "triangles": 1870,
+        "boundsMm": [
+          [
+            30.299999237060547,
+            35.79999923706055
+          ],
+          [
+            -7.690725326538086,
+            7.690725326538086
+          ],
+          [
+            -7.690725326538086,
+            7.690725326538086
+          ]
+        ],
+        "signedVolumeMm3": 635.8133751102725,
+        "minimumTriangleAreaMm2": 6.793898476591481e-05,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0
+      },
+      "independentAudit": "learning/evidence/08/2026-10-28-ch11-stl-public-cap-v001/side-cap-repaired-independent-audit-v001.json",
+      "independentReimport": {
+        "vertices": 937,
+        "faces": 1870,
+        "triangles": 1870,
+        "boundsMm": [
+          [
+            30.299999237060547,
+            35.79999923706055
+          ],
+          [
+            -7.690725326538086,
+            7.690725326538086
+          ],
+          [
+            -7.690725326538086,
+            7.690725326538086
+          ]
+        ],
+        "signedVolumeMm3": 635.8133751102725,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "components": 1,
+        "nonAdjacentBvhCandidates": 0,
+        "minimumTriangleAreaMm2": 6.793898476591481e-05
+      },
+      "exportOptions": {
+        "operator": "WM_OT_stl_export",
+        "globalScale": 1.0,
+        "sceneUnit": false,
+        "forwardAxis": "Y",
+        "upAxis": "Z",
+        "selectionOnly": true,
+        "applyModifiers": true,
+        "binary": true,
+        "batch": false
+      },
+      "importOptions": {
+        "operator": "WM_OT_stl_import",
+        "globalScale": 1.0,
+        "sceneUnit": false,
+        "forwardAxis": "Y",
+        "upAxis": "Z"
+      }
+    },
+    {
+      "id": "four-boss-body",
+      "title": "四嵌件柱盒體",
+      "sourceScene": "learning/evidence/08/2026-10-28-four-insert-boss-gui-v001/demo-files/u11_four_insert_boss_box_v001.blend",
+      "sourceSha256": "70f6687edc450438d21ada9b61b9295cf24079c64884947b9c4081de88e23462",
+      "sourceObject": "Body",
+      "stl": "learning/evidence/08/2026-10-28-ch11-stl-public-fourboss-v001/demo-files/exports/u11_four_boss_body_public_v001.stl",
+      "stlSha256": "7ee3fcea65e837940efd42a9b2ad6427b43e92f1027867e5bae8073d6a697afc",
+      "stlBytes": 59084,
+      "binaryTriangles": 1180,
+      "binaryExactDuplicateTriangles": 0,
+      "boundsMm": [
+        [
+          -30.0,
+          30.0
+        ],
+        [
+          -20.0,
+          20.0
+        ],
+        [
+          -15.0,
+          15.0
+        ]
+      ],
+      "dimensionsMm": [
+        60.0,
+        40.0,
+        30.0
+      ],
+      "guiReimport": {
+        "object": "u11_four_boss_body_public_v001",
+        "vertices": 592,
+        "faces": 1180,
+        "triangles": 1180,
+        "boundsMm": [
+          [
+            -30.0,
+            30.0
+          ],
+          [
+            -20.0,
+            20.0
+          ],
+          [
+            -15.0,
+            15.0
+          ]
+        ],
+        "signedVolumeMm3": 21820.082164356987,
+        "minimumTriangleAreaMm2": 0.014994438553368664,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0
+      },
+      "independentAudit": "learning/evidence/08/2026-10-28-ch11-stl-public-fourboss-v001/four-boss-body-independent-audit-v001.json",
+      "independentReimport": {
+        "vertices": 592,
+        "faces": 1180,
+        "triangles": 1180,
+        "boundsMm": [
+          [
+            -30.0,
+            30.0
+          ],
+          [
+            -20.0,
+            20.0
+          ],
+          [
+            -15.0,
+            15.0
+          ]
+        ],
+        "signedVolumeMm3": 21820.082164356987,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "components": 1,
+        "nonAdjacentBvhCandidates": 0,
+        "minimumTriangleAreaMm2": 0.014994438553368664
+      },
+      "exportOptions": {
+        "operator": "WM_OT_stl_export",
+        "globalScale": 1.0,
+        "sceneUnit": false,
+        "forwardAxis": "Y",
+        "upAxis": "Z",
+        "selectionOnly": true,
+        "applyModifiers": true,
+        "binary": true,
+        "batch": false
+      },
+      "importOptions": {
+        "operator": "WM_OT_stl_import",
+        "globalScale": 1.0,
+        "sceneUnit": false,
+        "forwardAxis": "Y",
+        "upAxis": "Z"
+      }
+    },
+    {
+      "id": "four-boss-lid",
+      "title": "四嵌件柱穿孔蓋",
+      "sourceScene": "learning/evidence/08/2026-10-28-four-insert-boss-gui-v001/demo-files/u11_four_insert_boss_box_v001.blend",
+      "sourceSha256": "70f6687edc450438d21ada9b61b9295cf24079c64884947b9c4081de88e23462",
+      "sourceObject": "Lid",
+      "stl": "learning/evidence/08/2026-10-28-ch11-stl-public-fourboss-v001/demo-files/exports/u11_four_boss_lid_public_v001.stl",
+      "stlSha256": "6476bb18490bb1c7f07bd12570ba8e85b09045ccf5ef69b389b75d8ff51c01eb",
+      "stlBytes": 28684,
+      "binaryTriangles": 572,
+      "binaryExactDuplicateTriangles": 0,
+      "boundsMm": [
+        [
+          -30.0,
+          30.0
+        ],
+        [
+          -20.0,
+          20.0
+        ],
+        [
+          11.0,
+          17.0
+        ]
+      ],
+      "dimensionsMm": [
+        60.0,
+        40.0,
+        6.0
+      ],
+      "guiReimport": {
+        "object": "u11_four_boss_lid_public_v001",
+        "vertices": 280,
+        "faces": 572,
+        "triangles": 572,
+        "boundsMm": [
+          [
+            -30.0,
+            30.0
+          ],
+          [
+            -20.0,
+            20.0
+          ],
+          [
+            11.0,
+            17.0
+          ]
+        ],
+        "signedVolumeMm3": 6123.032143425295,
+        "minimumTriangleAreaMm2": 0.04643917129764151,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0
+      },
+      "independentAudit": "learning/evidence/08/2026-10-28-ch11-stl-public-fourboss-v001/four-boss-lid-independent-audit-v001.json",
+      "independentReimport": {
+        "vertices": 280,
+        "faces": 572,
+        "triangles": 572,
+        "boundsMm": [
+          [
+            -30.0,
+            30.0
+          ],
+          [
+            -20.0,
+            20.0
+          ],
+          [
+            11.0,
+            17.0
+          ]
+        ],
+        "signedVolumeMm3": 6123.032143425295,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "components": 1,
+        "nonAdjacentBvhCandidates": 0,
+        "minimumTriangleAreaMm2": 0.04643917129764151
+      },
+      "exportOptions": {
+        "operator": "WM_OT_stl_export",
+        "globalScale": 1.0,
+        "sceneUnit": false,
+        "forwardAxis": "Y",
+        "upAxis": "Z",
+        "selectionOnly": true,
+        "applyModifiers": true,
+        "binary": true,
+        "batch": false
+      },
+      "importOptions": {
+        "operator": "WM_OT_stl_import",
+        "globalScale": 1.0,
+        "sceneUnit": false,
+        "forwardAxis": "Y",
+        "upAxis": "Z"
+      }
+    }
+  ],
+  "repairRecords": {
+    "sidebox": {
+      "source": "learning/evidence/08/2026-10-28-external-thread-mount-gui-v002/demo-files/u11_box_external_thread_draft_v002.blend",
+      "sourceSha256": "df2108d06250807a9fa593ce966ae09e42d0fc3b2bfad97c98d0c40f77378c54",
+      "revised": "learning/evidence/08/2026-10-28-ch11-triangulate-sidebox-v001/demo-files/u11_side_box_triangulated_v001.blend",
+      "revisedSha256": "dd5c074510f1bd6f99e8fda244340cac59f11ddde9ff7ba869d6a1437fbd60ea",
+      "comparison": "learning/evidence/08/2026-10-28-ch11-triangulate-sidebox-v001/independent-comparison-v001.json",
+      "originalDuplicateGroups": 4,
+      "revisedDuplicateGroups": 0,
+      "sourceVolumeMm3": 15920.101637442687,
+      "revisedVolumeMm3": 15920.013963481457,
+      "bidirectionalSampleMaxMm": [
+        0.0068793222308158875,
+        0.0068793222308158875
+      ]
+    },
+    "cap": {
+      "source": "learning/evidence/08/2026-10-28-side-cap-relief-gui-v001/demo-files/u11_side_thread_cap_draft_v002.blend",
+      "sourceSha256": "d4cb9e6467eebff735443daa405c958c459dbe2f04fce8a8e98df5a4b70ee332",
+      "revised": "learning/evidence/08/2026-10-28-ch11-triangulate-cap-v001/demo-files/u11_side_cap_triangulated_v001.blend",
+      "revisedSha256": "f2e6646b9ad27f0f4912c8c14cb4cc664f44700bb6a376fe0df46fad63844efc",
+      "comparison": "learning/evidence/08/2026-10-28-ch11-triangulate-cap-v001/independent-comparison-v001.json",
+      "originalDuplicateGroups": 2,
+      "revisedDuplicateGroups": 0,
+      "sourceVolumeMm3": 635.9751089861402,
+      "revisedVolumeMm3": 635.8132877215129,
+      "bidirectionalSampleMaxMm": [
+        0.0019502900540828705,
+        0.0016181599348783493
+      ]
+    }
+  },
+  "failureHistory": [
+    {
+      "kind": "side-box-body",
+      "file": "learning/evidence/08/2026-10-28-ch11-stl-sidebox-v002/demo-files/exports/u11_side_box_body_v002.stl",
+      "exactOppositeWindingDuplicateTriangles": 4,
+      "nativeReimportNonManifoldEdges": 12
+    },
+    {
+      "kind": "side-cap",
+      "file": "learning/evidence/08/2026-10-28-ch11-stl-cap-v002/demo-files/exports/u11_side_cap_v002.stl",
+      "exactOppositeWindingDuplicateTriangles": 2,
+      "nativeReimportNonManifoldEdges": 6
+    }
+  ],
+  "limitations": [
+    "原始盒側 Body 與側帽各有反向重複三角形；新 STL 來自明確三角化的新 .blend，原版和失敗記錄保留。",
+    "重三角化改變部分非平面 n-gon 的表面；頂點與三角形重心的雙向取樣不是完整形狀或旋合等同性證明。",
+    "本次 STL 保留場景世界擺位且 STL 無內嵌長度單位；切片時需自行核對單位、位置與方向。",
+    "精確重複 0、非流形 0、有限 BVH 結果與檔案尺寸皆非列印或配合合格保證。",
+    "帽的徑向 0.2 mm／名義直徑差 0.4 mm、軸向 0.2 mm 均為草案試驗值；四柱蓋孔 Ø3.4 mm 亦未實體試配。",
+    "原始 v002 verification 的固定英文 interpretation 無論計數為何都寫 retains duplicates，是程式通用說明錯誤；以原檔精確數量與獨立稽核為準。",
+    "原始 runner-status 含使用者 Windows Recent 路徑，不可原樣公開。",
+    "這是與 v001 分開的真實 GUI 重演；程式收起系統快捷側欄並填公共臨時路徑，未修改原圖像素。STL 經 SHA 驗證為相同 bytes，之後清除本次暫存。"
+  ],
+  "physicalPrint": null,
+  "physicalMeasurement": null,
+  "physicalFit": null,
+  "qualifiedClearance": null,
+  "qualifiedStrength": null
+}

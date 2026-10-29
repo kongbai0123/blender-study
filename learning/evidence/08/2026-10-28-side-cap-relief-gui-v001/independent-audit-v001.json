@@ -1,0 +1,2053 @@
+{
+  "axialRays": [
+    {
+      "y": 0,
+      "z": 0,
+      "bottomX": 34.5,
+      "endGapFromExternalTipMm": 0.20000000000000284
+    },
+    {
+      "y": 2,
+      "z": 0,
+      "bottomX": 34.5,
+      "endGapFromExternalTipMm": 0.20000000000000284
+    },
+    {
+      "y": -2,
+      "z": 0,
+      "bottomX": 34.5,
+      "endGapFromExternalTipMm": 0.20000000000000284
+    },
+    {
+      "y": 0,
+      "z": 2,
+      "bottomX": 34.5,
+      "endGapFromExternalTipMm": 0.20000000000000284
+    },
+    {
+      "y": 0,
+      "z": -2,
+      "bottomX": 34.5,
+      "endGapFromExternalTipMm": 0.20000000000000284
+    },
+    {
+      "y": 4,
+      "z": 0,
+      "bottomX": 34.5,
+      "endGapFromExternalTipMm": 0.20000000000000284
+    },
+    {
+      "y": -4,
+      "z": 0,
+      "bottomX": 34.5,
+      "endGapFromExternalTipMm": 0.20000000000000284
+    },
+    {
+      "y": 0,
+      "z": 4,
+      "bottomX": 34.5,
+      "endGapFromExternalTipMm": 0.20000000000000284
+    },
+    {
+      "y": 0,
+      "z": -4,
+      "bottomX": 34.5,
+      "endGapFromExternalTipMm": 0.20000000000000284
+    }
+  ],
+  "sceneSha256": "d4cb9e6467eebff735443daa405c958c459dbe2f04fce8a8e98df5a4b70ee332",
+  "sourceSha256": "df2108d06250807a9fa593ce966ae09e42d0fc3b2bfad97c98d0c40f77378c54",
+  "object": "Side_Cap_Blank",
+  "construction": "Tool from source mounted outer-thread mesh vertex-wise radial +0.2 mm in YZ; X unchanged; retained mesh and phase. Blank nominal radius 7.7 mm, 64 vertices, phase 2.8125 degrees, X=30.3..35.8 mm; GUI applied second Difference using program-prepared cylindrical relief at X=34.15..34.5, saved and reopened.",
+  "sourceMeshUnchanged": {
+    "Body": true,
+    "Lid": true,
+    "Thread_Core": true
+  },
+  "vertexCount": 937,
+  "faceCount": 515,
+  "boundsMm": [
+    [
+      30.299999237060547,
+      35.79999923706055
+    ],
+    [
+      -7.690725326538086,
+      7.690725326538086
+    ],
+    [
+      -7.690725326538086,
+      7.690725326538086
+    ]
+  ],
+  "nonManifoldEdges": 0,
+  "components": 1,
+  "signedVolumeMm3": 635.9751089861402,
+  "minimumTriangleAreaMm2": 1.3864715747350899e-05,
+  "triangleCountBelow1eMinus5Mm2": 0,
+  "shortestOriginalMeshEdgeMm": 0.01422554523641193,
+  "bvhNonSharedVertexCandidates": 0,
+  "vertexRadialDeltaMinMm": 0.1999989945447611,
+  "vertexRadialDeltaMaxMm": 0.20000035734743715,
+  "vertexAxialDeltaMaxAbsMm": 3.814697265625e-06,
+  "samples": [
+    {
+      "xMm": 30.4,
+      "angleDeg": 0,
+      "bodyRadiusMm": 4.975918769836426,
+      "toolRadiusMm": 5.1759185791015625,
+      "capInnerRadiusMm": 5.1759185791015625,
+      "bodyToCapRadialMm": 0.19999980926513672,
+      "capToToolRadiusDeltaMm": 0.0
+    },
+    {
+      "xMm": 30.4,
+      "angleDeg": 15,
+      "bodyRadiusMm": 5.022244524753017,
+      "toolRadiusMm": 5.220794335324909,
+      "capInnerRadiusMm": 5.220794335324909,
+      "bodyToCapRadialMm": 0.19854981057189214,
+      "capToToolRadiusDeltaMm": 0.0
+    },
+    {
+      "xMm": 30.4,
+      "angleDeg": 30,
+      "bodyRadiusMm": 5.190281878153273,
+      "toolRadiusMm": 5.386330553355115,
+      "capInnerRadiusMm": 5.386330553355115,
+      "bodyToCapRadialMm": 0.19604867520184133,
+      "capToToolRadiusDeltaMm": 0.0
+    },
+    {
+      "xMm": 30.4,
+      "angleDeg": 45,
+      "bodyRadiusMm": 5.374998043012747,
+      "toolRadiusMm": 5.575009790131257,
+      "capInnerRadiusMm": 5.575009115781681,
+      "bodyToCapRadialMm": 0.20001107276893393,
+      "capToToolRadiusDeltaMm": -6.743495761796225e-07
+    },
+    {
+      "xMm": 30.4,
+      "angleDeg": 60,
+      "bodyRadiusMm": 5.52312266537952,
+      "toolRadiusMm": 5.72225693302426,
+      "capInnerRadiusMm": 5.720726793770111,
+      "bodyToCapRadialMm": 0.19760412839059072,
+      "capToToolRadiusDeltaMm": -0.0015301392541493541
+    },
+    {
+      "xMm": 30.4,
+      "angleDeg": 75,
+      "bodyRadiusMm": 5.685835133003117,
+      "toolRadiusMm": 5.884924497314361,
+      "capInnerRadiusMm": 5.87902724728946,
+      "bodyToCapRadialMm": 0.19319211428634286,
+      "capToToolRadiusDeltaMm": -0.005897250024901268
+    },
+    {
+      "xMm": 30.4,
+      "angleDeg": 90,
+      "bodyRadiusMm": 5.875,
+      "toolRadiusMm": 6.075007915496826,
+      "capInnerRadiusMm": 6.075007438659668,
+      "bodyToCapRadialMm": 0.20000743865966797,
+      "capToToolRadiusDeltaMm": -4.76837158203125e-07
+    },
+    {
+      "xMm": 30.4,
+      "angleDeg": 105,
+      "bodyRadiusMm": 5.933045810251805,
+      "toolRadiusMm": 6.132172217906897,
+      "capInnerRadiusMm": 6.131328546890305,
+      "bodyToCapRadialMm": 0.19828273663850027,
+      "capToToolRadiusDeltaMm": -0.0008436710165913297
+    },
+    {
+      "xMm": 30.4,
+      "angleDeg": 120,
+      "bodyRadiusMm": 5.769762989732843,
+      "toolRadiusMm": 5.968809131164219,
+      "capInnerRadiusMm": 5.964653784426186,
+      "bodyToCapRadialMm": 0.19489079469334314,
+      "capToToolRadiusDeltaMm": -0.004155346738032861
+    },
+    {
+      "xMm": 30.4,
+      "angleDeg": 135,
+      "bodyRadiusMm": 5.624998312688694,
+      "toolRadiusMm": 5.824991178019072,
+      "capInnerRadiusMm": 5.824990503669496,
+      "bodyToCapRadialMm": 0.1999921909808018,
+      "capToToolRadiusDeltaMm": -6.743495761796225e-07
+    },
+    {
+      "xMm": 30.4,
+      "angleDeg": 150,
+      "bodyRadiusMm": 5.438624217679126,
+      "toolRadiusMm": 5.637641081620648,
+      "capInnerRadiusMm": 5.632060814922119,
+      "bodyToCapRadialMm": 0.193436597242993,
+      "capToToolRadiusDeltaMm": -0.005580266698529179
+    },
+    {
+      "xMm": 30.4,
+      "angleDeg": 165,
+      "bodyRadiusMm": 5.273358566355017,
+      "toolRadiusMm": 5.473076867532352,
+      "capInnerRadiusMm": 5.4634214161644925,
+      "bodyToCapRadialMm": 0.1900628498094754,
+      "capToToolRadiusDeltaMm": -0.009655451367859058
+    },
+    {
+      "xMm": 30.4,
+      "angleDeg": 180,
+      "bodyRadiusMm": 5.124998092651367,
+      "toolRadiusMm": 5.324989318847656,
+      "capInnerRadiusMm": 5.3249897956848145,
+      "bodyToCapRadialMm": 0.19999170303344727,
+      "capToToolRadiusDeltaMm": 4.76837158203125e-07
+    },
+    {
+      "xMm": 30.4,
+      "angleDeg": 195,
+      "bodyRadiusMm": 4.986594043231118,
+      "toolRadiusMm": 5.186354271328269,
+      "capInnerRadiusMm": 5.186058078845667,
+      "bodyToCapRadialMm": 0.1994640356145485,
+      "capToToolRadiusDeltaMm": -0.0002961924826019313
+    },
+    {
+      "xMm": 30.4,
+      "angleDeg": 210,
+      "bodyRadiusMm": 4.986594691090251,
+      "toolRadiusMm": 5.186381918620057,
+      "capInnerRadiusMm": 5.186381918620057,
+      "bodyToCapRadialMm": 0.19978722752980627,
+      "capToToolRadiusDeltaMm": 0.0
+    },
+    {
+      "xMm": 30.4,
+      "angleDeg": 225,
+      "bodyRadiusMm": 4.975918638182369,
+      "toolRadiusMm": 5.175741567419551,
+      "capInnerRadiusMm": 5.174955275813732,
+      "bodyToCapRadialMm": 0.19903663763136237,
+      "capToToolRadiusDeltaMm": -0.0007862916058192226
+    },
+    {
+      "xMm": 30.4,
+      "angleDeg": 240,
+      "bodyRadiusMm": 4.986595223252633,
+      "toolRadiusMm": 5.186114998377351,
+      "capInnerRadiusMm": 5.186381386457675,
+      "bodyToCapRadialMm": 0.19978616320504194,
+      "capToToolRadiusDeltaMm": 0.00026638808032330985
+    },
+    {
+      "xMm": 30.4,
+      "angleDeg": 255,
+      "bodyRadiusMm": 4.9865945346740785,
+      "toolRadiusMm": 5.186381424105637,
+      "capInnerRadiusMm": 5.186059061731588,
+      "bodyToCapRadialMm": 0.1994645270575095,
+      "capToToolRadiusDeltaMm": -0.0003223623740487014
+    },
+    {
+      "xMm": 30.4,
+      "angleDeg": 270,
+      "bodyRadiusMm": 4.975919246673584,
+      "toolRadiusMm": 5.175540924072266,
+      "capInnerRadiusMm": 5.174955368041992,
+      "bodyToCapRadialMm": 0.1990361213684082,
+      "capToToolRadiusDeltaMm": -0.0005855560302734375
+    },
+    {
+      "xMm": 30.4,
+      "angleDeg": 285,
+      "bodyRadiusMm": 4.9865945346740785,
+      "toolRadiusMm": 5.186380932662676,
+      "capInnerRadiusMm": 5.186058570288628,
+      "bodyToCapRadialMm": 0.1994640356145494,
+      "capToToolRadiusDeltaMm": -0.0003223623740478132
+    },
+    {
+      "xMm": 30.4,
+      "angleDeg": 300,
+      "bodyRadiusMm": 4.986594691090251,
+      "toolRadiusMm": 5.186381918620057,
+      "capInnerRadiusMm": 5.186199161035458,
+      "bodyToCapRadialMm": 0.19960446994520709,
+      "capToToolRadiusDeltaMm": -0.00018275758459918023
+    },
+    {
+      "xMm": 30.4,
+      "angleDeg": 315,
+      "bodyRadiusMm": 4.975918638182369,
+      "toolRadiusMm": 5.1759179098337205,
+      "capInnerRadiusMm": 5.17495561298852,
+      "bodyToCapRadialMm": 0.1990369748061509,
+      "capToToolRadiusDeltaMm": -0.0009622968452003278
+    },
+    {
+      "xMm": 30.4,
+      "angleDeg": 330,
+      "bodyRadiusMm": 4.986594691090251,
+      "toolRadiusMm": 5.186381918620057,
+      "capInnerRadiusMm": 5.186059342628132,
+      "bodyToCapRadialMm": 0.1994646515378813,
+      "capToToolRadiusDeltaMm": -0.0003225759919249782
+    },
+    {
+      "xMm": 30.4,
+      "angleDeg": 345,
+      "bodyRadiusMm": 4.986595026117039,
+      "toolRadiusMm": 5.186381424105637,
+      "capInnerRadiusMm": 5.186381915548597,
+      "bodyToCapRadialMm": 0.1997868894315582,
+      "capToToolRadiusDeltaMm": 4.914429601043935e-07
+    },
+    {
+      "xMm": 30.7,
+      "angleDeg": 0,
+      "bodyRadiusMm": 4.975918769836426,
+      "toolRadiusMm": 5.175918102264404,
+      "capInnerRadiusMm": 5.1759185791015625,
+      "bodyToCapRadialMm": 0.19999980926513672,
+      "capToToolRadiusDeltaMm": 4.76837158203125e-07
+    },
+    {
+      "xMm": 30.7,
+      "angleDeg": 15,
+      "bodyRadiusMm": 4.9865945346740785,
+      "toolRadiusMm": 5.186380932662676,
+      "capInnerRadiusMm": 5.186380932662676,
+      "bodyToCapRadialMm": 0.1997863979885972,
+      "capToToolRadiusDeltaMm": 0.0
+    },
+    {
+      "xMm": 30.7,
+      "angleDeg": 30,
+      "bodyRadiusMm": 4.986595755415015,
+      "toolRadiusMm": 5.186382037829349,
+      "capInnerRadiusMm": 5.186382037829349,
+      "bodyToCapRadialMm": 0.19978628241433327,
+      "capToToolRadiusDeltaMm": 0.0
+    },
+    {
+      "xMm": 30.7,
+      "angleDeg": 45,
+      "bodyRadiusMm": 4.975918301007582,
+      "toolRadiusMm": 5.175918584183297,
+      "capInnerRadiusMm": 5.1759179098337205,
+      "bodyToCapRadialMm": 0.19999960882613887,
+      "capToToolRadiusDeltaMm": -6.743495761796225e-07
+    },
+    {
+      "xMm": 30.7,
+      "angleDeg": 60,
+      "bodyRadiusMm": 4.986594691090251,
+      "toolRadiusMm": 5.186381386457675,
+      "capInnerRadiusMm": 5.186382037829349,
+      "bodyToCapRadialMm": 0.1997873467390976,
+      "capToToolRadiusDeltaMm": 6.51371673932033e-07
+    },
+    {
+      "xMm": 30.7,
+      "angleDeg": 75,
+      "bodyRadiusMm": 4.98659551756,
+      "toolRadiusMm": 5.186381915548597,
+      "capInnerRadiusMm": 5.186381915548597,
+      "bodyToCapRadialMm": 0.1997863979885972,
+      "capToToolRadiusDeltaMm": 0.0
+    },
+    {
+      "xMm": 30.7,
+      "angleDeg": 90,
+      "bodyRadiusMm": 4.975919723510742,
+      "toolRadiusMm": 5.175918102264404,
+      "capInnerRadiusMm": 5.1759185791015625,
+      "bodyToCapRadialMm": 0.1999988555908203,
+      "capToToolRadiusDeltaMm": 4.76837158203125e-07
+    },
+    {
+      "xMm": 30.7,
+      "angleDeg": 105,
+      "bodyRadiusMm": 4.986595026117039,
+      "toolRadiusMm": 5.186381424105637,
+      "capInnerRadiusMm": 5.186381424105637,
+      "bodyToCapRadialMm": 0.1997863979885981,
+      "capToToolRadiusDeltaMm": 0.0
+    },
+    {
+      "xMm": 30.7,
+      "angleDeg": 120,
+      "bodyRadiusMm": 4.988913351337739,
+      "toolRadiusMm": 5.188698982380399,
+      "capInnerRadiusMm": 5.18866308052338,
+      "bodyToCapRadialMm": 0.19974972918564138,
+      "capToToolRadiusDeltaMm": -3.5901857018849626e-05
+    },
+    {
+      "xMm": 30.7,
+      "angleDeg": 135,
+      "bodyRadiusMm": 5.174993039389998,
+      "toolRadiusMm": 5.375006472382449,
+      "capInnerRadiusMm": 5.375006135207661,
+      "bodyToCapRadialMm": 0.20001309581766336,
+      "capToToolRadiusDeltaMm": -3.3717478764572206e-07
+    },
+    {
+      "xMm": 30.7,
+      "angleDeg": 150,
+      "bodyRadiusMm": 5.323376129168169,
+      "toolRadiusMm": 5.523027914798994,
+      "capInnerRadiusMm": 5.513560818092285,
+      "bodyToCapRadialMm": 0.19018468892411544,
+      "capToToolRadiusDeltaMm": -0.0094670967067092
+    },
+    {
+      "xMm": 30.7,
+      "angleDeg": 165,
+      "bodyRadiusMm": 5.488061357225877,
+      "toolRadiusMm": 5.687104340777025,
+      "capInnerRadiusMm": 5.680733176609233,
+      "bodyToCapRadialMm": 0.19267181938335565,
+      "capToToolRadiusDeltaMm": -0.006371164167791932
+    },
+    {
+      "xMm": 30.7,
+      "angleDeg": 180,
+      "bodyRadiusMm": 5.674994468688965,
+      "toolRadiusMm": 5.875001430511475,
+      "capInnerRadiusMm": 5.875001430511475,
+      "bodyToCapRadialMm": 0.20000696182250977,
+      "capToToolRadiusDeltaMm": 0.0
+    },
+    {
+      "xMm": 30.7,
+      "angleDeg": 195,
+      "bodyRadiusMm": 5.818863158615858,
+      "toolRadiusMm": 6.017944628986098,
+      "capInnerRadiusMm": 6.014788703174824,
+      "bodyToCapRadialMm": 0.1959255445589667,
+      "capToToolRadiusDeltaMm": -0.003155925811273441
+    },
+    {
+      "xMm": 30.7,
+      "angleDeg": 210,
+      "bodyRadiusMm": 5.966186052329863,
+      "toolRadiusMm": 6.165152407611476,
+      "capInnerRadiusMm": 6.1651534719362395,
+      "bodyToCapRadialMm": 0.19896741960637687,
+      "capToToolRadiusDeltaMm": 1.064324763433433e-06
+    },
+    {
+      "xMm": 30.7,
+      "angleDeg": 225,
+      "bodyRadiusMm": 5.825003316311443,
+      "toolRadiusMm": 6.024995844467033,
+      "capInnerRadiusMm": 6.024996518816609,
+      "bodyToCapRadialMm": 0.1999932025051656,
+      "capToToolRadiusDeltaMm": 6.743495761796225e-07
+    },
+    {
+      "xMm": 30.7,
+      "angleDeg": 240,
+      "bodyRadiusMm": 5.636397322757604,
+      "toolRadiusMm": 5.828553194955774,
+      "capInnerRadiusMm": 5.828553194955774,
+      "bodyToCapRadialMm": 0.19215587219816932,
+      "capToToolRadiusDeltaMm": 0.0
+    },
+    {
+      "xMm": 30.7,
+      "angleDeg": 255,
+      "bodyRadiusMm": 5.473192358843267,
+      "toolRadiusMm": 5.6639231237808865,
+      "capInnerRadiusMm": 5.663924106666808,
+      "bodyToCapRadialMm": 0.1907317478235404,
+      "capToToolRadiusDeltaMm": 9.828859210969654e-07
+    },
+    {
+      "xMm": 30.7,
+      "angleDeg": 270,
+      "bodyRadiusMm": 5.325003147125244,
+      "toolRadiusMm": 5.524994373321533,
+      "capInnerRadiusMm": 5.524994373321533,
+      "bodyToCapRadialMm": 0.19999122619628906,
+      "capToToolRadiusDeltaMm": 0.0
+    },
+    {
+      "xMm": 30.7,
+      "angleDeg": 285,
+      "bodyRadiusMm": 5.139942538771769,
+      "toolRadiusMm": 5.3392486030053545,
+      "capInnerRadiusMm": 5.336903236410508,
+      "bodyToCapRadialMm": 0.19696069763873858,
+      "capToToolRadiusDeltaMm": -0.002345366594846965
+    },
+    {
+      "xMm": 30.7,
+      "angleDeg": 300,
+      "bodyRadiusMm": 4.986594691090251,
+      "toolRadiusMm": 5.186381386457675,
+      "capInnerRadiusMm": 5.186382037829349,
+      "bodyToCapRadialMm": 0.1997873467390976,
+      "capToToolRadiusDeltaMm": 6.51371673932033e-07
+    },
+    {
+      "xMm": 30.7,
+      "angleDeg": 315,
+      "bodyRadiusMm": 4.975918638182369,
+      "toolRadiusMm": 5.1759179098337205,
+      "capInnerRadiusMm": 5.175740555895187,
+      "bodyToCapRadialMm": 0.19982191771281776,
+      "capToToolRadiusDeltaMm": -0.00017735393853346437
+    },
+    {
+      "xMm": 30.7,
+      "angleDeg": 330,
+      "bodyRadiusMm": 4.986594691090251,
+      "toolRadiusMm": 5.186381918620057,
+      "capInnerRadiusMm": 5.186059342628132,
+      "bodyToCapRadialMm": 0.1994646515378813,
+      "capToToolRadiusDeltaMm": -0.0003225759919249782
+    },
+    {
+      "xMm": 30.7,
+      "angleDeg": 345,
+      "bodyRadiusMm": 4.986595026117039,
+      "toolRadiusMm": 5.186381915548597,
+      "capInnerRadiusMm": 5.186381915548597,
+      "bodyToCapRadialMm": 0.1997868894315582,
+      "capToToolRadiusDeltaMm": 0.0
+    },
+    {
+      "xMm": 31,
+      "angleDeg": 0,
+      "bodyRadiusMm": 5.52500057220459,
+      "toolRadiusMm": 5.724992275238037,
+      "capInnerRadiusMm": 5.724992275238037,
+      "bodyToCapRadialMm": 0.19999170303344727,
+      "capToToolRadiusDeltaMm": 0.0
+    },
+    {
+      "xMm": 31,
+      "angleDeg": 15,
+      "bodyRadiusMm": 5.339741284541648,
+      "toolRadiusMm": 5.534078699053383,
+      "capInnerRadiusMm": 5.534078207610422,
+      "bodyToCapRadialMm": 0.19433692306877415,
+      "capToToolRadiusDeltaMm": -4.914429609925719e-07
+    },
+    {
+      "xMm": 31,
+      "angleDeg": 30,
+      "bodyRadiusMm": 5.172914258013404,
+      "toolRadiusMm": 5.366189448051143,
+      "capInnerRadiusMm": 5.366189980213525,
+      "bodyToCapRadialMm": 0.1932757222001209,
+      "capToToolRadiusDeltaMm": 5.321623817167165e-07
+    },
+    {
+      "xMm": 31,
+      "angleDeg": 45,
+      "bodyRadiusMm": 5.024998474685911,
+      "toolRadiusMm": 5.224990665666713,
+      "capInnerRadiusMm": 5.224990665666713,
+      "bodyToCapRadialMm": 0.1999921909808018,
+      "capToToolRadiusDeltaMm": 0.0
+    },
+    {
+      "xMm": 31,
+      "angleDeg": 60,
+      "bodyRadiusMm": 4.986594691090251,
+      "toolRadiusMm": 5.186381386457675,
+      "capInnerRadiusMm": 5.186381918620057,
+      "bodyToCapRadialMm": 0.19978722752980627,
+      "capToToolRadiusDeltaMm": 5.321623826048949e-07
+    },
+    {
+      "xMm": 31,
+      "angleDeg": 75,
+      "bodyRadiusMm": 4.986595026117039,
+      "toolRadiusMm": 5.186381424105637,
+      "capInnerRadiusMm": 5.186381915548597,
+      "bodyToCapRadialMm": 0.1997868894315582,
+      "capToToolRadiusDeltaMm": 4.914429601043935e-07
+    },
+    {
+      "xMm": 31,
+      "angleDeg": 90,
+      "bodyRadiusMm": 4.975918769836426,
+      "toolRadiusMm": 5.1759185791015625,
+      "capInnerRadiusMm": 5.175919055938721,
+      "bodyToCapRadialMm": 0.20000028610229492,
+      "capToToolRadiusDeltaMm": 4.76837158203125e-07
+    },
+    {
+      "xMm": 31,
+      "angleDeg": 105,
+      "bodyRadiusMm": 4.9865945346740785,
+      "toolRadiusMm": 5.186381424105637,
+      "capInnerRadiusMm": 5.186381424105637,
+      "bodyToCapRadialMm": 0.1997868894315582,
+      "capToToolRadiusDeltaMm": 0.0
+    },
+    {
+      "xMm": 31,
+      "angleDeg": 120,
+      "bodyRadiusMm": 4.986594691090251,
+      "toolRadiusMm": 5.186381918620057,
+      "capInnerRadiusMm": 5.186381386457675,
+      "bodyToCapRadialMm": 0.19978669536742366,
+      "capToToolRadiusDeltaMm": -5.321623826048949e-07
+    },
+    {
+      "xMm": 31,
+      "angleDeg": 135,
+      "bodyRadiusMm": 4.975918301007582,
+      "toolRadiusMm": 5.175917572658933,
+      "capInnerRadiusMm": 5.1759179098337205,
+      "bodyToCapRadialMm": 0.19999960882613887,
+      "capToToolRadiusDeltaMm": 3.3717478764572206e-07
+    },
+    {
+      "xMm": 31,
+      "angleDeg": 150,
+      "bodyRadiusMm": 4.986595223252633,
+      "toolRadiusMm": 5.186381918620057,
+      "capInnerRadiusMm": 5.186381386457675,
+      "bodyToCapRadialMm": 0.19978616320504194,
+      "capToToolRadiusDeltaMm": -5.321623826048949e-07
+    },
+    {
+      "xMm": 31,
+      "angleDeg": 165,
+      "bodyRadiusMm": 4.986595026117039,
+      "toolRadiusMm": 5.186381424105637,
+      "capInnerRadiusMm": 5.186382406991558,
+      "bodyToCapRadialMm": 0.1997873808745192,
+      "capToToolRadiusDeltaMm": 9.828859210969654e-07
+    },
+    {
+      "xMm": 31,
+      "angleDeg": 180,
+      "bodyRadiusMm": 4.975918292999268,
+      "toolRadiusMm": 5.175918102264404,
+      "capInnerRadiusMm": 5.1759185791015625,
+      "bodyToCapRadialMm": 0.20000028610229492,
+      "capToToolRadiusDeltaMm": 4.76837158203125e-07
+    },
+    {
+      "xMm": 31,
+      "angleDeg": 195,
+      "bodyRadiusMm": 4.9865945346740785,
+      "toolRadiusMm": 5.186380932662676,
+      "capInnerRadiusMm": 5.186380932662676,
+      "bodyToCapRadialMm": 0.1997863979885972,
+      "capToToolRadiusDeltaMm": 0.0
+    },
+    {
+      "xMm": 31,
+      "angleDeg": 210,
+      "bodyRadiusMm": 4.986594691090251,
+      "toolRadiusMm": 5.186381918620057,
+      "capInnerRadiusMm": 5.186381918620057,
+      "bodyToCapRadialMm": 0.19978722752980627,
+      "capToToolRadiusDeltaMm": 0.0
+    },
+    {
+      "xMm": 31,
+      "angleDeg": 225,
+      "bodyRadiusMm": 4.975918638182369,
+      "toolRadiusMm": 5.1759179098337205,
+      "capInnerRadiusMm": 5.1759179098337205,
+      "bodyToCapRadialMm": 0.19999927165135123,
+      "capToToolRadiusDeltaMm": 0.0
+    },
+    {
+      "xMm": 31,
+      "angleDeg": 240,
+      "bodyRadiusMm": 5.122687591868736,
+      "toolRadiusMm": 5.322454946297051,
+      "capInnerRadiusMm": 5.317731866656823,
+      "bodyToCapRadialMm": 0.19504427478808672,
+      "capToToolRadiusDeltaMm": -0.004723079640228001
+    },
+    {
+      "xMm": 31,
+      "angleDeg": 255,
+      "bodyRadiusMm": 5.290295997686236,
+      "toolRadiusMm": 5.489294043952533,
+      "capInnerRadiusMm": 5.485159635270119,
+      "bodyToCapRadialMm": 0.19486363758388237,
+      "capToToolRadiusDeltaMm": -0.004134408682414659
+    },
+    {
+      "xMm": 31,
+      "angleDeg": 270,
+      "bodyRadiusMm": 5.474996566772461,
+      "toolRadiusMm": 5.675003528594971,
+      "capInnerRadiusMm": 5.675003528594971,
+      "bodyToCapRadialMm": 0.20000696182250977,
+      "capToToolRadiusDeltaMm": 0.0
+    },
+    {
+      "xMm": 31,
+      "angleDeg": 285,
+      "bodyRadiusMm": 5.6224499086574715,
+      "toolRadiusMm": 5.821442518197569,
+      "capInnerRadiusMm": 5.814297315860601,
+      "bodyToCapRadialMm": 0.1918474072031291,
+      "capToToolRadiusDeltaMm": -0.007145202336968026
+    },
+    {
+      "xMm": 31,
+      "angleDeg": 300,
+      "bodyRadiusMm": 5.784716905300901,
+      "toolRadiusMm": 5.983825739801749,
+      "capInnerRadiusMm": 5.979951745574804,
+      "bodyToCapRadialMm": 0.19523484027390303,
+      "capToToolRadiusDeltaMm": -0.003873994226944788
+    },
+    {
+      "xMm": 31,
+      "angleDeg": 315,
+      "bodyRadiusMm": 5.974997543840741,
+      "toolRadiusMm": 6.175004233337431,
+      "capInnerRadiusMm": 6.175004233337431,
+      "bodyToCapRadialMm": 0.2000066894966892,
+      "capToToolRadiusDeltaMm": 0.0
+    },
+    {
+      "xMm": 31,
+      "angleDeg": 330,
+      "bodyRadiusMm": 5.834162739144157,
+      "toolRadiusMm": 6.033267316345951,
+      "capInnerRadiusMm": 6.030402511994196,
+      "bodyToCapRadialMm": 0.19623977285003935,
+      "capToToolRadiusDeltaMm": -0.002864804351754735
+    },
+    {
+      "xMm": 31,
+      "angleDeg": 345,
+      "bodyRadiusMm": 5.671556062370908,
+      "toolRadiusMm": 5.8644095658118705,
+      "capInnerRadiusMm": 5.8644095658118705,
+      "bodyToCapRadialMm": 0.1928535034409622,
+      "capToToolRadiusDeltaMm": 0.0
+    },
+    {
+      "xMm": 31.5,
+      "angleDeg": 0,
+      "bodyRadiusMm": 4.975918769836426,
+      "toolRadiusMm": 5.175918102264404,
+      "capInnerRadiusMm": 5.1759185791015625,
+      "bodyToCapRadialMm": 0.19999980926513672,
+      "capToToolRadiusDeltaMm": 4.76837158203125e-07
+    },
+    {
+      "xMm": 31.5,
+      "angleDeg": 15,
+      "bodyRadiusMm": 4.986594043231118,
+      "toolRadiusMm": 5.186380932662676,
+      "capInnerRadiusMm": 5.186380932662676,
+      "bodyToCapRadialMm": 0.1997868894315573,
+      "capToToolRadiusDeltaMm": 0.0
+    },
+    {
+      "xMm": 31.5,
+      "angleDeg": 30,
+      "bodyRadiusMm": 4.986595223252633,
+      "toolRadiusMm": 5.186381918620057,
+      "capInnerRadiusMm": 5.186381918620057,
+      "bodyToCapRadialMm": 0.19978669536742455,
+      "capToToolRadiusDeltaMm": 0.0
+    },
+    {
+      "xMm": 31.5,
+      "angleDeg": 45,
+      "bodyRadiusMm": 4.975918301007582,
+      "toolRadiusMm": 5.175917572658933,
+      "capInnerRadiusMm": 5.1759179098337205,
+      "bodyToCapRadialMm": 0.19999960882613887,
+      "capToToolRadiusDeltaMm": 3.3717478764572206e-07
+    },
+    {
+      "xMm": 31.5,
+      "angleDeg": 60,
+      "bodyRadiusMm": 5.1226886561935,
+      "toolRadiusMm": 5.322456129831106,
+      "capInnerRadiusMm": 5.317735711002786,
+      "bodyToCapRadialMm": 0.19504705480928664,
+      "capToToolRadiusDeltaMm": -0.004720418828319417
+    },
+    {
+      "xMm": 31.5,
+      "angleDeg": 75,
+      "bodyRadiusMm": 5.290296489129197,
+      "toolRadiusMm": 5.489295026838454,
+      "capInnerRadiusMm": 5.4851591438271585,
+      "bodyToCapRadialMm": 0.19486265469796127,
+      "capToToolRadiusDeltaMm": -0.00413588301129586
+    },
+    {
+      "xMm": 31.5,
+      "angleDeg": 90,
+      "bodyRadiusMm": 5.474996566772461,
+      "toolRadiusMm": 5.675003528594971,
+      "capInnerRadiusMm": 5.6750030517578125,
+      "bodyToCapRadialMm": 0.20000648498535156,
+      "capToToolRadiusDeltaMm": -4.76837158203125e-07
+    },
+    {
+      "xMm": 31.5,
+      "angleDeg": 105,
+      "bodyRadiusMm": 5.622447942885629,
+      "toolRadiusMm": 5.821445006266005,
+      "capInnerRadiusMm": 5.814300264518364,
+      "bodyToCapRadialMm": 0.19185232163273458,
+      "capToToolRadiusDeltaMm": -0.007144741747641348
+    },
+    {
+      "xMm": 31.5,
+      "angleDeg": 120,
+      "bodyRadiusMm": 5.7847185017880465,
+      "toolRadiusMm": 5.983826923335804,
+      "capInnerRadiusMm": 5.979952809899568,
+      "bodyToCapRadialMm": 0.19523430811152132,
+      "capToToolRadiusDeltaMm": -0.003874113436236115
+    },
+    {
+      "xMm": 31.5,
+      "angleDeg": 135,
+      "bodyRadiusMm": 5.974996869491165,
+      "toolRadiusMm": 6.175004907687007,
+      "capInnerRadiusMm": 6.175004233337431,
+      "bodyToCapRadialMm": 0.20000736384626538,
+      "capToToolRadiusDeltaMm": -6.743495761796225e-07
+    },
+    {
+      "xMm": 31.5,
+      "angleDeg": 150,
+      "bodyRadiusMm": 5.834162206981775,
+      "toolRadiusMm": 6.033267316345951,
+      "capInnerRadiusMm": 6.030402511994196,
+      "bodyToCapRadialMm": 0.19624030501242107,
+      "capToToolRadiusDeltaMm": -0.002864804351754735
+    },
+    {
+      "xMm": 31.5,
+      "angleDeg": 165,
+      "bodyRadiusMm": 5.671556553813869,
+      "toolRadiusMm": 5.864410057254831,
+      "capInnerRadiusMm": 5.8644105486977915,
+      "bodyToCapRadialMm": 0.1928539948839223,
+      "capToToolRadiusDeltaMm": 4.914429601043935e-07
+    },
+    {
+      "xMm": 31.5,
+      "angleDeg": 180,
+      "bodyRadiusMm": 5.524999618530273,
+      "toolRadiusMm": 5.724992275238037,
+      "capInnerRadiusMm": 5.724991798400879,
+      "bodyToCapRadialMm": 0.19999217987060547,
+      "capToToolRadiusDeltaMm": -4.76837158203125e-07
+    },
+    {
+      "xMm": 31.5,
+      "angleDeg": 195,
+      "bodyRadiusMm": 5.339741775984608,
+      "toolRadiusMm": 5.534078207610422,
+      "capInnerRadiusMm": 5.534078699053383,
+      "bodyToCapRadialMm": 0.19433692306877504,
+      "capToToolRadiusDeltaMm": 4.914429609925719e-07
+    },
+    {
+      "xMm": 31.5,
+      "angleDeg": 210,
+      "bodyRadiusMm": 5.172914258013404,
+      "toolRadiusMm": 5.366189448051143,
+      "capInnerRadiusMm": 5.3661905123759075,
+      "bodyToCapRadialMm": 0.1932762543625035,
+      "capToToolRadiusDeltaMm": 1.0643247643216114e-06
+    },
+    {
+      "xMm": 31.5,
+      "angleDeg": 225,
+      "bodyRadiusMm": 5.024999149035487,
+      "toolRadiusMm": 5.224989654142349,
+      "capInnerRadiusMm": 5.224990665666713,
+      "bodyToCapRadialMm": 0.1999915166312256,
+      "capToToolRadiusDeltaMm": 1.0115243638253446e-06
+    },
+    {
+      "xMm": 31.5,
+      "angleDeg": 240,
+      "bodyRadiusMm": 4.986595223252633,
+      "toolRadiusMm": 5.186381918620057,
+      "capInnerRadiusMm": 5.186381918620057,
+      "bodyToCapRadialMm": 0.19978669536742455,
+      "capToToolRadiusDeltaMm": 0.0
+    },
+    {
+      "xMm": 31.5,
+      "angleDeg": 255,
+      "bodyRadiusMm": 4.9865945346740785,
+      "toolRadiusMm": 5.186381915548597,
+      "capInnerRadiusMm": 5.186381424105637,
+      "bodyToCapRadialMm": 0.1997868894315582,
+      "capToToolRadiusDeltaMm": -4.914429601043935e-07
+    },
+    {
+      "xMm": 31.5,
+      "angleDeg": 270,
+      "bodyRadiusMm": 4.975918292999268,
+      "toolRadiusMm": 5.175919055938721,
+      "capInnerRadiusMm": 5.175919055938721,
+      "bodyToCapRadialMm": 0.20000076293945312,
+      "capToToolRadiusDeltaMm": 0.0
+    },
+    {
+      "xMm": 31.5,
+      "angleDeg": 285,
+      "bodyRadiusMm": 4.986594043231118,
+      "toolRadiusMm": 5.186381915548597,
+      "capInnerRadiusMm": 5.186380441219716,
+      "bodyToCapRadialMm": 0.1997863979885972,
+      "capToToolRadiusDeltaMm": -1.4743288812013589e-06
+    },
+    {
+      "xMm": 31.5,
+      "angleDeg": 300,
+      "bodyRadiusMm": 4.986595223252633,
+      "toolRadiusMm": 5.186381386457675,
+      "capInnerRadiusMm": 5.186382037829349,
+      "bodyToCapRadialMm": 0.19978681457671588,
+      "capToToolRadiusDeltaMm": 6.51371673932033e-07
+    },
+    {
+      "xMm": 31.5,
+      "angleDeg": 315,
+      "bodyRadiusMm": 4.975918638182369,
+      "toolRadiusMm": 5.175917572658933,
+      "capInnerRadiusMm": 5.1759179098337205,
+      "bodyToCapRadialMm": 0.19999927165135123,
+      "capToToolRadiusDeltaMm": 3.3717478764572206e-07
+    },
+    {
+      "xMm": 31.5,
+      "angleDeg": 330,
+      "bodyRadiusMm": 4.986595223252633,
+      "toolRadiusMm": 5.186381918620057,
+      "capInnerRadiusMm": 5.186381386457675,
+      "bodyToCapRadialMm": 0.19978616320504194,
+      "capToToolRadiusDeltaMm": -5.321623826048949e-07
+    },
+    {
+      "xMm": 31.5,
+      "angleDeg": 345,
+      "bodyRadiusMm": 4.98659551756,
+      "toolRadiusMm": 5.186381915548597,
+      "capInnerRadiusMm": 5.186380932662676,
+      "bodyToCapRadialMm": 0.1997854151026761,
+      "capToToolRadiusDeltaMm": -9.828859210969654e-07
+    },
+    {
+      "xMm": 32,
+      "angleDeg": 0,
+      "bodyRadiusMm": 5.524996757507324,
+      "toolRadiusMm": 5.72499942779541,
+      "capInnerRadiusMm": 5.724991798400879,
+      "bodyToCapRadialMm": 0.1999950408935547,
+      "capToToolRadiusDeltaMm": -7.62939453125e-06
+    },
+    {
+      "xMm": 32,
+      "angleDeg": 15,
+      "bodyRadiusMm": 5.3397383050302505,
+      "toolRadiusMm": 5.534072740030588,
+      "capInnerRadiusMm": 5.534078207610422,
+      "bodyToCapRadialMm": 0.19433990258017175,
+      "capToToolRadiusDeltaMm": 5.4675798342174176e-06
+    },
+    {
+      "xMm": 32,
+      "angleDeg": 30,
+      "bodyRadiusMm": 5.172913074479348,
+      "toolRadiusMm": 5.366187200192326,
+      "capInnerRadiusMm": 5.366189980213525,
+      "bodyToCapRadialMm": 0.19327690573417655,
+      "capToToolRadiusDeltaMm": 2.780021199022542e-06
+    },
+    {
+      "xMm": 32,
+      "angleDeg": 45,
+      "bodyRadiusMm": 5.0249981375111235,
+      "toolRadiusMm": 5.224989654142349,
+      "capInnerRadiusMm": 5.224989654142349,
+      "bodyToCapRadialMm": 0.1999915166312256,
+      "capToToolRadiusDeltaMm": 0.0
+    },
+    {
+      "xMm": 32,
+      "angleDeg": 60,
+      "bodyRadiusMm": 4.986595223252633,
+      "toolRadiusMm": 5.186381918620057,
+      "capInnerRadiusMm": 5.186381918620057,
+      "bodyToCapRadialMm": 0.19978669536742455,
+      "capToToolRadiusDeltaMm": 0.0
+    },
+    {
+      "xMm": 32,
+      "angleDeg": 75,
+      "bodyRadiusMm": 4.986595026117039,
+      "toolRadiusMm": 5.186381915548597,
+      "capInnerRadiusMm": 5.186381424105637,
+      "bodyToCapRadialMm": 0.1997863979885981,
+      "capToToolRadiusDeltaMm": -4.914429601043935e-07
+    },
+    {
+      "xMm": 32,
+      "angleDeg": 90,
+      "bodyRadiusMm": 4.975918292999268,
+      "toolRadiusMm": 5.1759185791015625,
+      "capInnerRadiusMm": 5.1759185791015625,
+      "bodyToCapRadialMm": 0.20000028610229492,
+      "capToToolRadiusDeltaMm": 0.0
+    },
+    {
+      "xMm": 32,
+      "angleDeg": 105,
+      "bodyRadiusMm": 4.986594043231118,
+      "toolRadiusMm": 5.186380932662676,
+      "capInnerRadiusMm": 5.186380441219716,
+      "bodyToCapRadialMm": 0.1997863979885972,
+      "capToToolRadiusDeltaMm": -4.914429601043935e-07
+    },
+    {
+      "xMm": 32,
+      "angleDeg": 120,
+      "bodyRadiusMm": 4.986594691090251,
+      "toolRadiusMm": 5.186382037829349,
+      "capInnerRadiusMm": 5.186381918620057,
+      "bodyToCapRadialMm": 0.19978722752980627,
+      "capToToolRadiusDeltaMm": -1.192092913271381e-07
+    },
+    {
+      "xMm": 32,
+      "angleDeg": 135,
+      "bodyRadiusMm": 4.975917626658005,
+      "toolRadiusMm": 5.175918584183297,
+      "capInnerRadiusMm": 5.1759179098337205,
+      "bodyToCapRadialMm": 0.20000028317571505,
+      "capToToolRadiusDeltaMm": -6.743495761796225e-07
+    },
+    {
+      "xMm": 32,
+      "angleDeg": 150,
+      "bodyRadiusMm": 4.986595223252633,
+      "toolRadiusMm": 5.186381386457675,
+      "capInnerRadiusMm": 5.186382037829349,
+      "bodyToCapRadialMm": 0.19978681457671588,
+      "capToToolRadiusDeltaMm": 6.51371673932033e-07
+    },
+    {
+      "xMm": 32,
+      "angleDeg": 165,
+      "bodyRadiusMm": 4.98659551756,
+      "toolRadiusMm": 5.186380932662676,
+      "capInnerRadiusMm": 5.186381424105637,
+      "bodyToCapRadialMm": 0.1997859065456371,
+      "capToToolRadiusDeltaMm": 4.914429609925719e-07
+    },
+    {
+      "xMm": 32,
+      "angleDeg": 180,
+      "bodyRadiusMm": 4.975919246673584,
+      "toolRadiusMm": 5.175919055938721,
+      "capInnerRadiusMm": 5.1759185791015625,
+      "bodyToCapRadialMm": 0.19999933242797852,
+      "capToToolRadiusDeltaMm": -4.76837158203125e-07
+    },
+    {
+      "xMm": 32,
+      "angleDeg": 195,
+      "bodyRadiusMm": 4.9865945346740785,
+      "toolRadiusMm": 5.186380932662676,
+      "capInnerRadiusMm": 5.186380932662676,
+      "bodyToCapRadialMm": 0.1997863979885972,
+      "capToToolRadiusDeltaMm": 0.0
+    },
+    {
+      "xMm": 32,
+      "angleDeg": 210,
+      "bodyRadiusMm": 4.986595223252633,
+      "toolRadiusMm": 5.186381918620057,
+      "capInnerRadiusMm": 5.186382037829349,
+      "bodyToCapRadialMm": 0.19978681457671588,
+      "capToToolRadiusDeltaMm": 1.192092913271381e-07
+    },
+    {
+      "xMm": 32,
+      "angleDeg": 225,
+      "bodyRadiusMm": 4.975918638182369,
+      "toolRadiusMm": 5.1759179098337205,
+      "capInnerRadiusMm": 5.1759179098337205,
+      "bodyToCapRadialMm": 0.19999927165135123,
+      "capToToolRadiusDeltaMm": 0.0
+    },
+    {
+      "xMm": 32,
+      "angleDeg": 240,
+      "bodyRadiusMm": 5.122694748398282,
+      "toolRadiusMm": 5.322454414134668,
+      "capInnerRadiusMm": 5.317744583228769,
+      "bodyToCapRadialMm": 0.19504983483048655,
+      "capToToolRadiusDeltaMm": -0.0047098309058997145
+    },
+    {
+      "xMm": 32,
+      "angleDeg": 255,
+      "bodyRadiusMm": 5.290300912115841,
+      "toolRadiusMm": 5.489294043952533,
+      "capInnerRadiusMm": 5.485169986425925,
+      "bodyToCapRadialMm": 0.19486907431008405,
+      "capToToolRadiusDeltaMm": -0.004124057526608382
+    },
+    {
+      "xMm": 32,
+      "angleDeg": 270,
+      "bodyRadiusMm": 5.474999904632568,
+      "toolRadiusMm": 5.6750030517578125,
+      "capInnerRadiusMm": 5.675011157989502,
+      "bodyToCapRadialMm": 0.2000112533569336,
+      "capToToolRadiusDeltaMm": 8.106231689453125e-06
+    },
+    {
+      "xMm": 32,
+      "angleDeg": 285,
+      "bodyRadiusMm": 5.6224504001004325,
+      "toolRadiusMm": 5.821443040494164,
+      "capInnerRadiusMm": 5.8143032440297615,
+      "bodyToCapRadialMm": 0.191852843929329,
+      "capToToolRadiusDeltaMm": -0.007139796464402437
+    },
+    {
+      "xMm": 32,
+      "angleDeg": 300,
+      "bodyRadiusMm": 5.784719033950428,
+      "toolRadiusMm": 5.983826391173422,
+      "capInnerRadiusMm": 5.979953993433623,
+      "bodyToCapRadialMm": 0.19523495948319525,
+      "capToToolRadiusDeltaMm": -0.0038723977397987497
+    },
+    {
+      "xMm": 32,
+      "angleDeg": 315,
+      "bodyRadiusMm": 5.974998218190318,
+      "toolRadiusMm": 6.175005582036583,
+      "capInnerRadiusMm": 6.175005582036583,
+      "bodyToCapRadialMm": 0.20000736384626538,
+      "capToToolRadiusDeltaMm": 0.0
+    },
+    {
+      "xMm": 32,
+      "angleDeg": 330,
+      "bodyRadiusMm": 5.834156766148666,
+      "toolRadiusMm": 6.03328109724266,
+      "capInnerRadiusMm": 6.030404108481342,
+      "bodyToCapRadialMm": 0.1962473423326756,
+      "capToToolRadiusDeltaMm": -0.0028769887613178113
+    },
+    {
+      "xMm": 32,
+      "angleDeg": 345,
+      "bodyRadiusMm": 5.671550625644708,
+      "toolRadiusMm": 5.864420408410637,
+      "capInnerRadiusMm": 5.8644095658118705,
+      "bodyToCapRadialMm": 0.1928589401671621,
+      "capToToolRadiusDeltaMm": -1.0842598766380718e-05
+    },
+    {
+      "xMm": 32.5,
+      "angleDeg": 0,
+      "bodyRadiusMm": 4.975919246673584,
+      "toolRadiusMm": 5.175919055938721,
+      "capInnerRadiusMm": 5.175919055938721,
+      "bodyToCapRadialMm": 0.19999980926513672,
+      "capToToolRadiusDeltaMm": 0.0
+    },
+    {
+      "xMm": 32.5,
+      "angleDeg": 15,
+      "bodyRadiusMm": 4.9865945346740785,
+      "toolRadiusMm": 5.186380932662676,
+      "capInnerRadiusMm": 5.186380932662676,
+      "bodyToCapRadialMm": 0.1997863979885972,
+      "capToToolRadiusDeltaMm": 0.0
+    },
+    {
+      "xMm": 32.5,
+      "angleDeg": 30,
+      "bodyRadiusMm": 4.986594691090251,
+      "toolRadiusMm": 5.186381918620057,
+      "capInnerRadiusMm": 5.186382037829349,
+      "bodyToCapRadialMm": 0.1997873467390976,
+      "capToToolRadiusDeltaMm": 1.192092913271381e-07
+    },
+    {
+      "xMm": 32.5,
+      "angleDeg": 45,
+      "bodyRadiusMm": 4.975918638182369,
+      "toolRadiusMm": 5.1759179098337205,
+      "capInnerRadiusMm": 5.175916898309357,
+      "bodyToCapRadialMm": 0.1999982601269874,
+      "capToToolRadiusDeltaMm": -1.0115243638253446e-06
+    },
+    {
+      "xMm": 32.5,
+      "angleDeg": 60,
+      "bodyRadiusMm": 5.122696344885426,
+      "toolRadiusMm": 5.322469910727816,
+      "capInnerRadiusMm": 5.317731866656823,
+      "bodyToCapRadialMm": 0.1950355217713966,
+      "capToToolRadiusDeltaMm": -0.004738044070992764
+    },
+    {
+      "xMm": 32.5,
+      "angleDeg": 75,
+      "bodyRadiusMm": 5.290303369330644,
+      "toolRadiusMm": 5.489308848948618,
+      "capInnerRadiusMm": 5.4851591438271585,
+      "bodyToCapRadialMm": 0.19485577449651448,
+      "capToToolRadiusDeltaMm": -0.004149705121459846
+    },
+    {
+      "xMm": 32.5,
+      "angleDeg": 90,
+      "bodyRadiusMm": 5.475003719329834,
+      "toolRadiusMm": 5.675018310546875,
+      "capInnerRadiusMm": 5.675003528594971,
+      "bodyToCapRadialMm": 0.19999980926513672,
+      "capToToolRadiusDeltaMm": -1.4781951904296875e-05
+    },
+    {
+      "xMm": 32.5,
+      "angleDeg": 105,
+      "bodyRadiusMm": 5.622454853940711,
+      "toolRadiusMm": 5.821457845490248,
+      "capInnerRadiusMm": 5.814297315860601,
+      "bodyToCapRadialMm": 0.1918424619198893,
+      "capToToolRadiusDeltaMm": -0.007160529629647527
+    },
+    {
+      "xMm": 32.5,
+      "angleDeg": 120,
+      "bodyRadiusMm": 5.78472512615521,
+      "toolRadiusMm": 5.9838417685572765,
+      "capInnerRadiusMm": 5.979951213412423,
+      "bodyToCapRadialMm": 0.1952260872572129,
+      "capToToolRadiusDeltaMm": -0.0038905551448538134
+    },
+    {
+      "xMm": 32.5,
+      "angleDeg": 135,
+      "bodyRadiusMm": 5.975005636035656,
+      "toolRadiusMm": 6.175019069028107,
+      "capInnerRadiusMm": 6.175004233337431,
+      "bodyToCapRadialMm": 0.19999859730177505,
+      "capToToolRadiusDeltaMm": -1.4835690675951696e-05
+    },
+    {
+      "xMm": 32.5,
+      "angleDeg": 150,
+      "bodyRadiusMm": 5.834158362635812,
+      "toolRadiusMm": 6.033255664098769,
+      "capInnerRadiusMm": 6.030405292015397,
+      "bodyToCapRadialMm": 0.1962469293795852,
+      "capToToolRadiusDeltaMm": -0.0028503720833725765
+    },
+    {
+      "xMm": 32.5,
+      "angleDeg": 165,
+      "bodyRadiusMm": 5.671552622270185,
+      "toolRadiusMm": 5.870547197582123,
+      "capInnerRadiusMm": 5.864413988798515,
+      "bodyToCapRadialMm": 0.19286136652833008,
+      "capToToolRadiusDeltaMm": -0.006133208783608346
+    },
+    {
+      "xMm": 32.5,
+      "angleDeg": 180,
+      "bodyRadiusMm": 5.524999618530273,
+      "toolRadiusMm": 5.7249836921691895,
+      "capInnerRadiusMm": 5.724991798400879,
+      "bodyToCapRadialMm": 0.19999217987060547,
+      "capToToolRadiusDeltaMm": 8.106231689453125e-06
+    },
+    {
+      "xMm": 32.5,
+      "angleDeg": 195,
+      "bodyRadiusMm": 5.33974325031349,
+      "toolRadiusMm": 5.534093012606507,
+      "capInnerRadiusMm": 5.534078699053383,
+      "bodyToCapRadialMm": 0.19433544873989295,
+      "capToToolRadiusDeltaMm": -1.4313553124090106e-05
+    },
+    {
+      "xMm": 32.5,
+      "angleDeg": 210,
+      "bodyRadiusMm": 5.172919698846512,
+      "toolRadiusMm": 5.36620494464429,
+      "capInnerRadiusMm": 5.366189448051143,
+      "bodyToCapRadialMm": 0.19326974920463158,
+      "capToToolRadiusDeltaMm": -1.549659314648011e-05
+    },
+    {
+      "xMm": 32.5,
+      "angleDeg": 225,
+      "bodyRadiusMm": 5.025006229706038,
+      "toolRadiusMm": 5.225005501357389,
+      "capInnerRadiusMm": 5.224991340016289,
+      "bodyToCapRadialMm": 0.19998511031025146,
+      "capToToolRadiusDeltaMm": -1.4161341099772073e-05
+    },
+    {
+      "xMm": 32.5,
+      "angleDeg": 240,
+      "bodyRadiusMm": 4.986595223252633,
+      "toolRadiusMm": 5.186381386457675,
+      "capInnerRadiusMm": 5.186382037829349,
+      "bodyToCapRadialMm": 0.19978681457671588,
+      "capToToolRadiusDeltaMm": 6.51371673932033e-07
+    },
+    {
+      "xMm": 32.5,
+      "angleDeg": 255,
+      "bodyRadiusMm": 4.98659551756,
+      "toolRadiusMm": 5.186381424105637,
+      "capInnerRadiusMm": 5.186381915548597,
+      "bodyToCapRadialMm": 0.1997863979885972,
+      "capToToolRadiusDeltaMm": 4.914429601043935e-07
+    },
+    {
+      "xMm": 32.5,
+      "angleDeg": 270,
+      "bodyRadiusMm": 4.975918769836426,
+      "toolRadiusMm": 5.1759185791015625,
+      "capInnerRadiusMm": 5.175918102264404,
+      "bodyToCapRadialMm": 0.19999933242797852,
+      "capToToolRadiusDeltaMm": -4.76837158203125e-07
+    },
+    {
+      "xMm": 32.5,
+      "angleDeg": 285,
+      "bodyRadiusMm": 4.986594043231118,
+      "toolRadiusMm": 5.186381915548597,
+      "capInnerRadiusMm": 5.186381915548597,
+      "bodyToCapRadialMm": 0.1997878723174784,
+      "capToToolRadiusDeltaMm": 0.0
+    },
+    {
+      "xMm": 32.5,
+      "angleDeg": 300,
+      "bodyRadiusMm": 4.986594691090251,
+      "toolRadiusMm": 5.186382037829349,
+      "capInnerRadiusMm": 5.186381918620057,
+      "bodyToCapRadialMm": 0.19978722752980627,
+      "capToToolRadiusDeltaMm": -1.192092913271381e-07
+    },
+    {
+      "xMm": 32.5,
+      "angleDeg": 315,
+      "bodyRadiusMm": 4.975918301007582,
+      "toolRadiusMm": 5.1759179098337205,
+      "capInnerRadiusMm": 5.1759179098337205,
+      "bodyToCapRadialMm": 0.19999960882613887,
+      "capToToolRadiusDeltaMm": 0.0
+    },
+    {
+      "xMm": 32.5,
+      "angleDeg": 330,
+      "bodyRadiusMm": 4.986595223252633,
+      "toolRadiusMm": 5.186381918620057,
+      "capInnerRadiusMm": 5.186382037829349,
+      "bodyToCapRadialMm": 0.19978681457671588,
+      "capToToolRadiusDeltaMm": 1.192092913271381e-07
+    },
+    {
+      "xMm": 32.5,
+      "angleDeg": 345,
+      "bodyRadiusMm": 4.986595026117039,
+      "toolRadiusMm": 5.186381424105637,
+      "capInnerRadiusMm": 5.186381424105637,
+      "bodyToCapRadialMm": 0.1997863979885981,
+      "capToToolRadiusDeltaMm": 0.0
+    },
+    {
+      "xMm": 33,
+      "angleDeg": 0,
+      "bodyRadiusMm": 5.524999141693115,
+      "toolRadiusMm": 5.7250075340271,
+      "capInnerRadiusMm": 5.724991798400879,
+      "bodyToCapRadialMm": 0.19999265670776367,
+      "capToToolRadiusDeltaMm": -1.5735626220703125e-05
+    },
+    {
+      "xMm": 33,
+      "angleDeg": 15,
+      "bodyRadiusMm": 5.33974325031349,
+      "toolRadiusMm": 5.534073262327182,
+      "capInnerRadiusMm": 5.534078207610422,
+      "bodyToCapRadialMm": 0.19433495729693195,
+      "capToToolRadiusDeltaMm": 4.9452832397989255e-06
+    },
+    {
+      "xMm": 33,
+      "angleDeg": 30,
+      "bodyRadiusMm": 5.172919698846512,
+      "toolRadiusMm": 5.3661861358675615,
+      "capInnerRadiusMm": 5.366201632460707,
+      "bodyToCapRadialMm": 0.19328193361419554,
+      "capToToolRadiusDeltaMm": 1.549659314559193e-05
+    },
+    {
+      "xMm": 33,
+      "angleDeg": 45,
+      "bodyRadiusMm": 5.025005218181673,
+      "toolRadiusMm": 5.2249893169675605,
+      "capInnerRadiusMm": 5.2250051641826,
+      "bodyToCapRadialMm": 0.1999999460009274,
+      "capToToolRadiusDeltaMm": 1.584721503977704e-05
+    },
+    {
+      "xMm": 33,
+      "angleDeg": 60,
+      "bodyRadiusMm": 4.986595223252633,
+      "toolRadiusMm": 5.186381918620057,
+      "capInnerRadiusMm": 5.186381918620057,
+      "bodyToCapRadialMm": 0.19978669536742455,
+      "capToToolRadiusDeltaMm": 0.0
+    },
+    {
+      "xMm": 33,
+      "angleDeg": 75,
+      "bodyRadiusMm": 4.98659551756,
+      "toolRadiusMm": 5.186382406991558,
+      "capInnerRadiusMm": 5.186381424105637,
+      "bodyToCapRadialMm": 0.1997859065456371,
+      "capToToolRadiusDeltaMm": -9.828859210969654e-07
+    },
+    {
+      "xMm": 33,
+      "angleDeg": 90,
+      "bodyRadiusMm": 4.975918769836426,
+      "toolRadiusMm": 5.1759185791015625,
+      "capInnerRadiusMm": 5.1759185791015625,
+      "bodyToCapRadialMm": 0.19999980926513672,
+      "capToToolRadiusDeltaMm": 0.0
+    },
+    {
+      "xMm": 33,
+      "angleDeg": 105,
+      "bodyRadiusMm": 4.986595026117039,
+      "toolRadiusMm": 5.186380932662676,
+      "capInnerRadiusMm": 5.186380932662676,
+      "bodyToCapRadialMm": 0.1997859065456371,
+      "capToToolRadiusDeltaMm": 0.0
+    },
+    {
+      "xMm": 33,
+      "angleDeg": 120,
+      "bodyRadiusMm": 4.986595223252633,
+      "toolRadiusMm": 5.186381918620057,
+      "capInnerRadiusMm": 5.186382037829349,
+      "bodyToCapRadialMm": 0.19978681457671588,
+      "capToToolRadiusDeltaMm": 1.192092913271381e-07
+    },
+    {
+      "xMm": 33,
+      "angleDeg": 135,
+      "bodyRadiusMm": 4.975918301007582,
+      "toolRadiusMm": 5.175917572658933,
+      "capInnerRadiusMm": 5.175917572658933,
+      "bodyToCapRadialMm": 0.19999927165135123,
+      "capToToolRadiusDeltaMm": 0.0
+    },
+    {
+      "xMm": 33,
+      "angleDeg": 150,
+      "bodyRadiusMm": 4.986595223252633,
+      "toolRadiusMm": 5.186382037829349,
+      "capInnerRadiusMm": 5.186382037829349,
+      "bodyToCapRadialMm": 0.19978681457671588,
+      "capToToolRadiusDeltaMm": 0.0
+    },
+    {
+      "xMm": 33,
+      "angleDeg": 165,
+      "bodyRadiusMm": 4.98659551756,
+      "toolRadiusMm": 5.186381915548597,
+      "capInnerRadiusMm": 5.186381915548597,
+      "bodyToCapRadialMm": 0.1997863979885972,
+      "capToToolRadiusDeltaMm": 0.0
+    },
+    {
+      "xMm": 33,
+      "angleDeg": 180,
+      "bodyRadiusMm": 4.975918769836426,
+      "toolRadiusMm": 5.1759185791015625,
+      "capInnerRadiusMm": 5.1759185791015625,
+      "bodyToCapRadialMm": 0.19999980926513672,
+      "capToToolRadiusDeltaMm": 0.0
+    },
+    {
+      "xMm": 33,
+      "angleDeg": 195,
+      "bodyRadiusMm": 4.986594043231118,
+      "toolRadiusMm": 5.186380441219716,
+      "capInnerRadiusMm": 5.186380932662676,
+      "bodyToCapRadialMm": 0.1997868894315573,
+      "capToToolRadiusDeltaMm": 4.914429601043935e-07
+    },
+    {
+      "xMm": 33,
+      "angleDeg": 210,
+      "bodyRadiusMm": 4.986595223252633,
+      "toolRadiusMm": 5.186381918620057,
+      "capInnerRadiusMm": 5.186381386457675,
+      "bodyToCapRadialMm": 0.19978616320504194,
+      "capToToolRadiusDeltaMm": -5.321623826048949e-07
+    },
+    {
+      "xMm": 33,
+      "angleDeg": 225,
+      "bodyRadiusMm": 4.975917626658005,
+      "toolRadiusMm": 5.1759179098337205,
+      "capInnerRadiusMm": 5.1759179098337205,
+      "bodyToCapRadialMm": 0.20000028317571505,
+      "capToToolRadiusDeltaMm": 0.0
+    },
+    {
+      "xMm": 33,
+      "angleDeg": 240,
+      "bodyRadiusMm": 5.122696344885426,
+      "toolRadiusMm": 5.322452285485142,
+      "capInnerRadiusMm": 5.31774511539115,
+      "bodyToCapRadialMm": 0.195048770505724,
+      "capToToolRadiusDeltaMm": -0.004707170093992019
+    },
+    {
+      "xMm": 33,
+      "angleDeg": 255,
+      "bodyRadiusMm": 5.290303860773605,
+      "toolRadiusMm": 5.489289067815659,
+      "capInnerRadiusMm": 5.485169986425925,
+      "bodyToCapRadialMm": 0.19486612565231987,
+      "capToToolRadiusDeltaMm": -0.004119081389734269
+    },
+    {
+      "xMm": 33,
+      "angleDeg": 270,
+      "bodyRadiusMm": 5.475002765655518,
+      "toolRadiusMm": 5.674994468688965,
+      "capInnerRadiusMm": 5.675009250640869,
+      "bodyToCapRadialMm": 0.20000648498535156,
+      "capToToolRadiusDeltaMm": 1.4781951904296875e-05
+    },
+    {
+      "xMm": 33,
+      "angleDeg": 285,
+      "bodyRadiusMm": 5.622455345383671,
+      "toolRadiusMm": 5.8214331499276835,
+      "capInnerRadiusMm": 5.814303735472722,
+      "bodyToCapRadialMm": 0.1918483900890502,
+      "capToToolRadiusDeltaMm": -0.0071294144549618466
+    },
+    {
+      "xMm": 33,
+      "angleDeg": 300,
+      "bodyRadiusMm": 5.784724061830446,
+      "toolRadiusMm": 5.983813142439095,
+      "capInnerRadiusMm": 5.979952809899568,
+      "bodyToCapRadialMm": 0.1952287480691215,
+      "capToToolRadiusDeltaMm": -0.0038603325395270005
+    },
+    {
+      "xMm": 33,
+      "angleDeg": 315,
+      "bodyRadiusMm": 5.975006310385232,
+      "toolRadiusMm": 6.174990746345907,
+      "capInnerRadiusMm": 6.175005582036583,
+      "bodyToCapRadialMm": 0.19999927165135123,
+      "capToToolRadiusDeltaMm": 1.4835690675951696e-05
+    },
+    {
+      "xMm": 33,
+      "angleDeg": 330,
+      "bodyRadiusMm": 5.834158362635812,
+      "toolRadiusMm": 6.033283225892187,
+      "capInnerRadiusMm": 6.030403044156578,
+      "bodyToCapRadialMm": 0.19624468152076613,
+      "capToToolRadiusDeltaMm": -0.002880181735609
+    },
+    {
+      "xMm": 33,
+      "angleDeg": 345,
+      "bodyRadiusMm": 5.671552622270185,
+      "toolRadiusMm": 5.870573336619936,
+      "capInnerRadiusMm": 5.864410057254831,
+      "bodyToCapRadialMm": 0.19285743498464658,
+      "capToToolRadiusDeltaMm": -0.006163279365104302
+    },
+    {
+      "xMm": 33.5,
+      "angleDeg": 0,
+      "bodyRadiusMm": 4.975918769836426,
+      "toolRadiusMm": 5.1756591796875,
+      "capInnerRadiusMm": 5.175609588623047,
+      "bodyToCapRadialMm": 0.1996908187866211,
+      "capToToolRadiusDeltaMm": -4.9591064453125e-05
+    },
+    {
+      "xMm": 33.5,
+      "angleDeg": 15,
+      "bodyRadiusMm": 4.986594043231118,
+      "toolRadiusMm": 5.1861854573485395,
+      "capInnerRadiusMm": 5.186380932662676,
+      "bodyToCapRadialMm": 0.1997868894315573,
+      "capToToolRadiusDeltaMm": 0.00019547531413621755
+    },
+    {
+      "xMm": 33.5,
+      "angleDeg": 30,
+      "bodyRadiusMm": 4.986594691090251,
+      "toolRadiusMm": 5.186381918620057,
+      "capInnerRadiusMm": 5.186382037829349,
+      "bodyToCapRadialMm": 0.1997873467390976,
+      "capToToolRadiusDeltaMm": 1.192092913271381e-07
+    },
+    {
+      "xMm": 33.5,
+      "angleDeg": 45,
+      "bodyRadiusMm": 4.975918301007582,
+      "toolRadiusMm": 5.175917572658933,
+      "capInnerRadiusMm": 5.1759179098337205,
+      "bodyToCapRadialMm": 0.19999960882613887,
+      "capToToolRadiusDeltaMm": 3.3717478764572206e-07
+    },
+    {
+      "xMm": 33.5,
+      "angleDeg": 60,
+      "bodyRadiusMm": 5.122695812723045,
+      "toolRadiusMm": 5.322469259356142,
+      "capInnerRadiusMm": 5.317731866656823,
+      "bodyToCapRadialMm": 0.19503605393377832,
+      "capToToolRadiusDeltaMm": -0.004737392699318832
+    },
+    {
+      "xMm": 33.5,
+      "angleDeg": 75,
+      "bodyRadiusMm": 5.290303860773605,
+      "toolRadiusMm": 5.4893093403915785,
+      "capInnerRadiusMm": 5.485159635270119,
+      "bodyToCapRadialMm": 0.1948557744965136,
+      "capToToolRadiusDeltaMm": -0.004149705121459846
+    },
+    {
+      "xMm": 33.5,
+      "angleDeg": 90,
+      "bodyRadiusMm": 5.475003719329834,
+      "toolRadiusMm": 5.675018310546875,
+      "capInnerRadiusMm": 5.675003528594971,
+      "bodyToCapRadialMm": 0.19999980926513672,
+      "capToToolRadiusDeltaMm": -1.4781951904296875e-05
+    },
+    {
+      "xMm": 33.5,
+      "angleDeg": 105,
+      "bodyRadiusMm": 5.622455345383671,
+      "toolRadiusMm": 5.821458336933209,
+      "capInnerRadiusMm": 5.814297807303561,
+      "bodyToCapRadialMm": 0.1918424619198893,
+      "capToToolRadiusDeltaMm": -0.0071605296296484156
+    },
+    {
+      "xMm": 33.5,
+      "angleDeg": 120,
+      "bodyRadiusMm": 5.78472512615521,
+      "toolRadiusMm": 5.983840704232513,
+      "capInnerRadiusMm": 5.97995014908766,
+      "bodyToCapRadialMm": 0.19522502293245036,
+      "capToToolRadiusDeltaMm": -0.003890555144852925
+    },
+    {
+      "xMm": 33.5,
+      "angleDeg": 135,
+      "bodyRadiusMm": 5.975004287336503,
+      "toolRadiusMm": 6.17501839467853,
+      "capInnerRadiusMm": 6.175004233337431,
+      "bodyToCapRadialMm": 0.1999999460009274,
+      "capToToolRadiusDeltaMm": -1.4161341099772073e-05
+    },
+    {
+      "xMm": 33.5,
+      "angleDeg": 150,
+      "bodyRadiusMm": 5.834157298311048,
+      "toolRadiusMm": 6.033255131936388,
+      "capInnerRadiusMm": 6.030404759853015,
+      "bodyToCapRadialMm": 0.19624746154196693,
+      "capToToolRadiusDeltaMm": -0.0028503720833725765
+    },
+    {
+      "xMm": 33.5,
+      "angleDeg": 165,
+      "bodyRadiusMm": 5.671552622270185,
+      "toolRadiusMm": 5.870547689025084,
+      "capInnerRadiusMm": 5.864410057254831,
+      "bodyToCapRadialMm": 0.19285743498464658,
+      "capToToolRadiusDeltaMm": -0.006137631770252838
+    },
+    {
+      "xMm": 33.5,
+      "angleDeg": 180,
+      "bodyRadiusMm": 5.525000095367432,
+      "toolRadiusMm": 5.724984169006348,
+      "capInnerRadiusMm": 5.724991798400879,
+      "bodyToCapRadialMm": 0.19999170303344727,
+      "capToToolRadiusDeltaMm": 7.62939453125e-06
+    },
+    {
+      "xMm": 33.5,
+      "angleDeg": 195,
+      "bodyRadiusMm": 5.33974325031349,
+      "toolRadiusMm": 5.5340880673232675,
+      "capInnerRadiusMm": 5.534077224724502,
+      "bodyToCapRadialMm": 0.19433397441101175,
+      "capToToolRadiusDeltaMm": -1.084259876549254e-05
+    },
+    {
+      "xMm": 33.5,
+      "angleDeg": 210,
+      "bodyRadiusMm": 5.172919698846512,
+      "toolRadiusMm": 5.366201632460707,
+      "capInnerRadiusMm": 5.366186668029943,
+      "bodyToCapRadialMm": 0.19326696918343167,
+      "capToToolRadiusDeltaMm": -1.4964430763875214e-05
+    },
+    {
+      "xMm": 33.5,
+      "angleDeg": 225,
+      "bodyRadiusMm": 5.025005218181673,
+      "toolRadiusMm": 5.2250051641826,
+      "capInnerRadiusMm": 5.224989654142349,
+      "bodyToCapRadialMm": 0.19998443596067617,
+      "capToToolRadiusDeltaMm": -1.551004025124314e-05
+    },
+    {
+      "xMm": 33.5,
+      "angleDeg": 240,
+      "bodyRadiusMm": 4.986595223252633,
+      "toolRadiusMm": 5.186382037829349,
+      "capInnerRadiusMm": 5.186381386457675,
+      "bodyToCapRadialMm": 0.19978616320504194,
+      "capToToolRadiusDeltaMm": -6.51371673932033e-07
+    },
+    {
+      "xMm": 33.5,
+      "angleDeg": 255,
+      "bodyRadiusMm": 4.986595026117039,
+      "toolRadiusMm": 5.186381915548597,
+      "capInnerRadiusMm": 5.186381424105637,
+      "bodyToCapRadialMm": 0.1997863979885981,
+      "capToToolRadiusDeltaMm": -4.914429601043935e-07
+    },
+    {
+      "xMm": 33.5,
+      "angleDeg": 270,
+      "bodyRadiusMm": 4.975918769836426,
+      "toolRadiusMm": 5.1759185791015625,
+      "capInnerRadiusMm": 5.1759185791015625,
+      "bodyToCapRadialMm": 0.19999980926513672,
+      "capToToolRadiusDeltaMm": 0.0
+    },
+    {
+      "xMm": 33.5,
+      "angleDeg": 285,
+      "bodyRadiusMm": 4.986594043231118,
+      "toolRadiusMm": 5.186380932662676,
+      "capInnerRadiusMm": 5.186381424105637,
+      "bodyToCapRadialMm": 0.1997873808745183,
+      "capToToolRadiusDeltaMm": 4.914429609925719e-07
+    },
+    {
+      "xMm": 33.5,
+      "angleDeg": 300,
+      "bodyRadiusMm": 4.986595223252633,
+      "toolRadiusMm": 5.186058810465751,
+      "capInnerRadiusMm": 5.186381918620057,
+      "bodyToCapRadialMm": 0.19978669536742455,
+      "capToToolRadiusDeltaMm": 0.00032310815430669493
+    },
+    {
+      "xMm": 33.5,
+      "angleDeg": 315,
+      "bodyRadiusMm": 4.975918638182369,
+      "toolRadiusMm": 5.175448225353915,
+      "capInnerRadiusMm": 5.1756505302267675,
+      "bodyToCapRadialMm": 0.19973189204439823,
+      "capToToolRadiusDeltaMm": 0.0002023048728521104
+    },
+    {
+      "xMm": 33.5,
+      "angleDeg": 330,
+      "bodyRadiusMm": 4.986595223252633,
+      "toolRadiusMm": 5.186058810465751,
+      "capInnerRadiusMm": 5.186058810465751,
+      "bodyToCapRadialMm": 0.19946358721311785,
+      "capToToolRadiusDeltaMm": 0.0
+    },
+    {
+      "xMm": 33.5,
+      "angleDeg": 345,
+      "bodyRadiusMm": 4.986595026117039,
+      "toolRadiusMm": 5.186380932662676,
+      "capInnerRadiusMm": 5.186381915548597,
+      "bodyToCapRadialMm": 0.1997868894315582,
+      "capToToolRadiusDeltaMm": 9.828859210969654e-07
+    },
+    {
+      "xMm": 34,
+      "angleDeg": 0,
+      "bodyRadiusMm": 4.975918769836426,
+      "toolRadiusMm": 5.17495584487915,
+      "capInnerRadiusMm": 5.174955368041992,
+      "bodyToCapRadialMm": 0.1990365982055664,
+      "capToToolRadiusDeltaMm": -4.76837158203125e-07
+    },
+    {
+      "xMm": 34,
+      "angleDeg": 15,
+      "bodyRadiusMm": 4.986594043231118,
+      "toolRadiusMm": 5.186058078845667,
+      "capInnerRadiusMm": 5.186252602127517,
+      "bodyToCapRadialMm": 0.19965855889639883,
+      "capToToolRadiusDeltaMm": 0.00019452328185032286
+    },
+    {
+      "xMm": 34,
+      "angleDeg": 30,
+      "bodyRadiusMm": 4.986594691090251,
+      "toolRadiusMm": 5.186382037829349,
+      "capInnerRadiusMm": 5.186162314062968,
+      "bodyToCapRadialMm": 0.19956762297271702,
+      "capToToolRadiusDeltaMm": -0.00021972376638057511
+    },
+    {
+      "xMm": 34,
+      "angleDeg": 45,
+      "bodyRadiusMm": 4.975918301007582,
+      "toolRadiusMm": 5.174954601464155,
+      "capInnerRadiusMm": 5.174955275813732,
+      "bodyToCapRadialMm": 0.19903697480615,
+      "capToToolRadiusDeltaMm": 6.743495761796225e-07
+    },
+    {
+      "xMm": 34,
+      "angleDeg": 60,
+      "bodyRadiusMm": 4.986595223252633,
+      "toolRadiusMm": 5.18605827830337,
+      "capInnerRadiusMm": 5.18605827830337,
+      "bodyToCapRadialMm": 0.19946305505073703,
+      "capToToolRadiusDeltaMm": 0.0
+    },
+    {
+      "xMm": 34,
+      "angleDeg": 75,
+      "bodyRadiusMm": 4.986595026117039,
+      "toolRadiusMm": 5.186381915548597,
+      "capInnerRadiusMm": 5.186257025114162,
+      "bodyToCapRadialMm": 0.1996619989971231,
+      "capToToolRadiusDeltaMm": -0.00012489043443508763
+    },
+    {
+      "xMm": 34,
+      "angleDeg": 90,
+      "bodyRadiusMm": 4.975918769836426,
+      "toolRadiusMm": 5.174954891204834,
+      "capInnerRadiusMm": 5.175230503082275,
+      "bodyToCapRadialMm": 0.1993117332458496,
+      "capToToolRadiusDeltaMm": 0.00027561187744140625
+    },
+    {
+      "xMm": 34,
+      "angleDeg": 105,
+      "bodyRadiusMm": 4.9865945346740785,
+      "toolRadiusMm": 5.186057587402707,
+      "capInnerRadiusMm": 5.1863508312275455,
+      "bodyToCapRadialMm": 0.19975629655346694,
+      "capToToolRadiusDeltaMm": 0.0002932438248386404
+    },
+    {
+      "xMm": 34,
+      "angleDeg": 120,
+      "bodyRadiusMm": 4.986594691090251,
+      "toolRadiusMm": 5.186381386457675,
+      "capInnerRadiusMm": 5.186381918620057,
+      "bodyToCapRadialMm": 0.19978722752980627,
+      "capToToolRadiusDeltaMm": 5.321623826048949e-07
+    },
+    {
+      "xMm": 34,
+      "angleDeg": 135,
+      "bodyRadiusMm": 4.975918638182369,
+      "toolRadiusMm": 5.175048673230032,
+      "capInnerRadiusMm": 5.17495561298852,
+      "bodyToCapRadialMm": 0.1990369748061509,
+      "capToToolRadiusDeltaMm": -9.306024151189973e-05
+    },
+    {
+      "xMm": 34,
+      "angleDeg": 150,
+      "bodyRadiusMm": 4.986595755415015,
+      "toolRadiusMm": 5.186382037829349,
+      "capInnerRadiusMm": 5.186381386457675,
+      "bodyToCapRadialMm": 0.19978563104265934,
+      "capToToolRadiusDeltaMm": -6.51371673932033e-07
+    },
+    {
+      "xMm": 34,
+      "angleDeg": 165,
+      "bodyRadiusMm": 4.98659551756,
+      "toolRadiusMm": 5.186059061731588,
+      "capInnerRadiusMm": 5.186381424105637,
+      "bodyToCapRadialMm": 0.1997859065456371,
+      "capToToolRadiusDeltaMm": 0.0003223623740487014
+    },
+    {
+      "xMm": 34,
+      "angleDeg": 180,
+      "bodyRadiusMm": 4.975919246673584,
+      "toolRadiusMm": 5.175313472747803,
+      "capInnerRadiusMm": 5.175479412078857,
+      "bodyToCapRadialMm": 0.19956016540527344,
+      "capToToolRadiusDeltaMm": 0.0001659393310546875
+    },
+    {
+      "xMm": 34,
+      "angleDeg": 195,
+      "bodyRadiusMm": 4.986594043231118,
+      "toolRadiusMm": 5.186380932662676,
+      "capInnerRadiusMm": 5.186380932662676,
+      "bodyToCapRadialMm": 0.1997868894315573,
+      "capToToolRadiusDeltaMm": 0.0
+    },
+    {
+      "xMm": 34,
+      "angleDeg": 210,
+      "bodyRadiusMm": 4.986595223252633,
+      "toolRadiusMm": 5.186068747016497,
+      "capInnerRadiusMm": 5.186381918620057,
+      "bodyToCapRadialMm": 0.19978669536742455,
+      "capToToolRadiusDeltaMm": 0.00031317160356003626
+    },
+    {
+      "xMm": 34,
+      "angleDeg": 225,
+      "bodyRadiusMm": 4.975918301007582,
+      "toolRadiusMm": 5.175916898309357,
+      "capInnerRadiusMm": 5.175915549610204,
+      "bodyToCapRadialMm": 0.1999972486026227,
+      "capToToolRadiusDeltaMm": -1.348699152359245e-06
+    },
+    {
+      "xMm": 34,
+      "angleDeg": 240,
+      "bodyRadiusMm": 5.122696344885426,
+      "toolRadiusMm": 5.322454946297051,
+      "capInnerRadiusMm": 5.3177467118782955,
+      "bodyToCapRadialMm": 0.19505036699286915,
+      "capToToolRadiusDeltaMm": -0.0047082344187554526
+    },
+    {
+      "xMm": 34,
+      "angleDeg": 255,
+      "bodyRadiusMm": 5.290302877887683,
+      "toolRadiusMm": 5.489294043952533,
+      "capInnerRadiusMm": 5.485173948823243,
+      "bodyToCapRadialMm": 0.19487107093555966,
+      "capToToolRadiusDeltaMm": -0.0041200951292905685
+    },
+    {
+      "xMm": 34,
+      "angleDeg": 270,
+      "bodyRadiusMm": 5.47500467300415,
+      "toolRadiusMm": 5.675004005432129,
+      "capInnerRadiusMm": 5.675018787384033,
+      "bodyToCapRadialMm": 0.2000141143798828,
+      "capToToolRadiusDeltaMm": 1.4781951904296875e-05
+    },
+    {
+      "xMm": 34,
+      "angleDeg": 285,
+      "bodyRadiusMm": 4.9865945346740785,
+      "toolRadiusMm": 5.186382406991558,
+      "capInnerRadiusMm": 5.186380932662676,
+      "bodyToCapRadialMm": 0.1997863979885972,
+      "capToToolRadiusDeltaMm": -1.4743288820895373e-06
+    },
+    {
+      "xMm": 34,
+      "angleDeg": 300,
+      "bodyRadiusMm": 4.986595223252633,
+      "toolRadiusMm": 5.186059342628132,
+      "capInnerRadiusMm": 5.186214006256931,
+      "bodyToCapRadialMm": 0.19961878300429792,
+      "capToToolRadiusDeltaMm": 0.00015466362879834605
+    },
+    {
+      "xMm": 34,
+      "angleDeg": 315,
+      "bodyRadiusMm": 4.975918301007582,
+      "toolRadiusMm": 5.17495561298852,
+      "capInnerRadiusMm": 5.1751157710128615,
+      "bodyToCapRadialMm": 0.19919747000527988,
+      "capToToolRadiusDeltaMm": 0.0001601580243413281
+    },
+    {
+      "xMm": 34,
+      "angleDeg": 330,
+      "bodyRadiusMm": 4.986594691090251,
+      "toolRadiusMm": 5.186058810465751,
+      "capInnerRadiusMm": 5.18605827830337,
+      "bodyToCapRadialMm": 0.19946358721311874,
+      "capToToolRadiusDeltaMm": -5.321623808285381e-07
+    },
+    {
+      "xMm": 34,
+      "angleDeg": 345,
+      "bodyRadiusMm": 4.986595026117039,
+      "toolRadiusMm": 5.186341432104027,
+      "capInnerRadiusMm": 5.1860961050754355,
+      "bodyToCapRadialMm": 0.19950107895839686,
+      "capToToolRadiusDeltaMm": -0.0002453270285913689
+    }
+  ],
+  "sampleBodyToCapMinMm": 0.1900628498094754,
+  "sampleBodyToCapMaxMm": 0.2000141143798828,
+  "sampleCapToToolMaxAbsMm": 0.009655451367859058,
+  "booleanIntersection": {
+    "vertices": 0,
+    "faces": 0,
+    "volumeMm3": 0
+  },
+  "limitations": [
+    "Nonzero δ is nominal vertex radial increase, not proven uniform normal clearance or physical fit.",
+    "9 axial slices × 24 angles and one static exact Boolean intersection cannot rule out all geometric interference, rotation path collision, or manufacturing issues.",
+    "1e-5 mm² is diagnostic only; a minimum above it does not imply no slender facets.",
+    "Material, standard, manufacturing, printing, measurement, clearance approval and fit remain undetermined."
+  ]
+}

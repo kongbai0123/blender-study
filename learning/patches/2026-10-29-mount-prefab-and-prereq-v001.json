@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "base": {
+    "path": "learning/web/engineering-curriculum-v037.json",
+    "sha256": "65b126ac3bfd88e12ce78697d2d1188036cc55d6e56ef72b7b654ed86eaab6a4"
+  },
+  "purpose": "補上 11-12 可跟做的程式預備起始副本及修正 11-13 起點／11-04 轉換後核對。",
+  "patches": {
+    "ch11-11-hand-profile-01": {
+      "actions": [
+        "先保留現有作品；開啟參考場景副本，在 Outliner 隱藏 Body_Reference。",
+        "確認 3D Cursor 在世界原點；如不在，於 3D Viewport 用 Shift+S > Cursor to World Origin。",
+        "Object Mode 使用 F3 搜尋 Add Plane，再以 F2 命名 Thread_Hand_Profile；核對平面 Location 與 Rotation 都是 0、Scale 是 1。"
+      ],
+      "context": "單位為毫米；原示範由程式隱藏參考盒體、保持原點後透過 GUI 新增平面。學員自行核對這些前置。原始場景：learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/demo-files/u08_thread_reference_v001.blend；請先以未用過的名稱另存副本。",
+      "detail": {
+        "steps": [
+          "先保留目前檔案並另存參考場景副本；在 Outliner 選 Body_Reference，按 H 或點眼睛暫時隱藏。",
+          "在 3D Viewport 確認 3D Cursor 為世界原點；不在時按 Shift+S 並選 Cursor to World Origin。",
+          "確認 Object Mode，F3 搜尋 Add Plane，F2 命名 Thread_Hand_Profile。",
+          "在 N 側欄核對平面 Location=(0,0,0)、Rotation=(0,0,0)、Scale=(1,1,1)；若不相符先修正，後續 G X 4.8mm 才是由原點開始的相對移動。"
+        ],
+        "why": "後續三點以原點為起點並輸入相對位移；先核對場景，才能對照名義座標。"
+      },
+      "limitations": [
+        "此為無幾何約束的 Blender mesh 邊輪廓，不是 CAD Sketcher 約束草圖；數值依名義設計輸入。",
+        "這 13 張畫面來自 GUI v005 重複試作；後續完整外牙實際使用另次 GUI v004 輪廓，兩次獨立讀值的頂點座標一致，不是同一場次。",
+        "本輪廓是三角草案，不宣稱 ISO 螺紋；全程建點與邊為 GUI，場景隱藏、讀值與檔案欄位由程式處理。",
+        "只有三條邊不代表已封閉的實體；Screw、封端和與芯柱聯集需另行完成與檢查。",
+        "材料、列印、量測、配合、合格間隙及強度均待定。",
+        "參考盒體隱藏及起點由示範程式準備；學員自行操作游標選單是教學補充，不冒稱此場次已逐步拍攝。"
+      ]
+    },
+    "ch11-08-02-02": {
+      "actions": [
+        "轉換為網格前，在 Screw 修改器或自己保存的當時紀錄核對 Z 軸、360°、每圈 1 mm、4 圈及 32 段；也可查閱 11-14 第 2 步的示範紀錄。",
+        "轉換後另存並重開，核對自己的外牙外框與限制；示範名義外框約 12 × 12 × 4.8 mm。"
+      ],
+      "context": "先依 11-13／11-14 保留輪廓與版本；Convert Mesh 之後修改器不再存在，不能在最終檔直接讀取它。",
+      "detail": {
+        "steps": [
+          "在 Convert Mesh 前核對 Screw 參數並記下數值；若已轉換，查自己先前紀錄、保留的轉換前版本，或 11-14 第 2 步示範紀錄，不能憑最終 mesh 推定全部設定。",
+          "重開另存的最終外牙草案，記下實際外框，並區分示範約 12 × 12 × 4.8 mm 與學員實際值。"
+        ],
+        "why": "修改器數值與轉換後網格是不同階段的證據，需分開追溯。"
+      },
+      "limitations": [
+        "本路線為無 CAD 尺寸約束的原生 mesh；非 ISO 牙型。零候選或局部表面取樣不能證明所有自交或製造合格。",
+        "11-14 轉成 mesh 後 Screw 修改器消失；最終檔不能單獨證明原修改器設定。"
+      ]
+    },
+    "ch11-11-mount-v002-01": {
+      "actions": [
+        "先保存目前作品；在「示範紀錄」下載程式預備的三物件起始 .blend，開啟後立即 Save As 到自己的工作區新版本。",
+        "在 Outliner 確認 Body、Lid、Thread_Core，選 Thread_Core；核對 Location 約 (0, 0, 2.3) mm、Rotation (0, 0, 0)、Scale (1, 1, 1)。"
+      ],
+      "context": "起始檔由程式從已驗證來源載入既有 Thread_Core 並另存；沒有重建幾何、對盒側旋轉／移動或布林。獨立 Blender GUI 重開過；這不是 GUI Append 教學。起始檔請從示範紀錄下載並另存個人副本，不修改 evidence 原檔。",
+      "detail": {
+        "steps": [
+          "先保存目前正在使用的 Blender 檔案。",
+          "在本小步「示範紀錄」找到並下載 u11_mount_prefab_v001.blend；用 File > Open 開啟，隨即用 File > Save As 存到自己的工作區，改用未使用的檔名。",
+          "在 Outliner 核對 Body、Lid、Thread_Core，並選中 Thread_Core；N 側欄核對 Location (0,0,2.3) mm、Rotation 0°、Scale 1、Dimensions 約 12×12×4.8 mm。",
+          "牙條初始位於盒內且可能被遮住；別因此推定物件缺失。確認後才進入下一步旋轉。"
+        ],
+        "why": "同一個可重開起點使後續旋轉、相位與移動有可核對的參照；下載不代表學員完成或配合合格。"
+      },
+      "success": "個人工作副本中有 Body、Lid、Thread_Core，且牙條位置與變換符合起始讀值；沒有執行盒側布林。",
+      "figures": [
+        {
+          "type": "screenshot",
+          "path": "learning/evidence/08/2026-10-29-external-thread-mount-prefab-v001/PREFAB-01-gui-open.png",
+          "sha256": "892889c550b761fae0206aa8acfa9fd4717d6084b7aff8fe67c24105dfefb6f8",
+          "caption": "本次獨立 Blender GUI 重開程式預備場景；牙條被盒體遮住，N 欄與 Outliner 是核對起點。"
+        }
+      ],
+      "artifacts": [
+        {
+          "type": "scene-blend",
+          "path": "learning/evidence/08/2026-10-29-external-thread-mount-prefab-v001/demo-files/u11_mount_prefab_v001.blend",
+          "sha256": "8cba18300231e4e923b07c0890258c8bf7ba943d4d72077519fc40e9d3826b73",
+          "label": "三物件起始檔（先下載再另存個人副本）"
+        },
+        {
+          "type": "verification-json",
+          "path": "learning/evidence/08/2026-10-29-external-thread-mount-prefab-v001/safe-summary-v001.json",
+          "sha256": "297f6e7e6574006257309ab10425fd65a50632de08587c09830da335466864b6",
+          "label": "來源、GUI 重開與獨立核對摘要"
+        }
+      ],
+      "limitations": [
+        "牙形是示範草案，非 ISO 螺紋，既有內牙試塊不是匹配對件。",
+        "初始截面與把牙條載入盒場景是程式處理；旋轉、移動、布林、另存及重開為 GUI 操作，檔案欄位由程式填寫。",
+        "修正版改變多邊形相位與芯柱高度，須保留 v005 原始問題與修訂紀錄。",
+        "零 BVH 候選與零非流形邊不能證明無自交；五條射線只是局部抽樣，蓋子間距僅為靜態外框距離。",
+        "材料、允許間隙、切片、實體列印、量測、試配與強度均待定。",
+        "保留名義嵌入 0.5 mm，牙條繞自身 X 軸轉 11.25°；比舊版更改接合相位，但仍有細長面。",
+        "三角形最小高度不是材料壁厚；數值對照與 BVH 不能證明更容易列印、配合或強度合格。",
+        "後續實際 STL 檢查發現原場景 n-gon 三角化有反向重複三角形；匯出請接 11-17 的新三角化副本，原檔保留。修訂表面有微小改變，不能宣稱完全等同或已改善實體配合。",
+        "11-17 的側盒與側帽另經三角化修訂；題目頁原有工程圖對應修訂前網格。局部曲面有改變，不能把舊圖當新版STL完全等同證明。",
+        "三物件起始檔由程式載入並另存，不是 GUI 手工 Append；本次以 GUI 重新開啟，對話框欄位由程式填入。",
+        "牙條來源已有 Z=2.3 mm 的物件位置；「未移動」指未執行本接合場次的盒側移動，不是說所有位置都等於零。"
+      ]
+    }
+  },
+  "physicalPrint": null,
+  "physicalMeasurement": null,
+  "physicalFit": null,
+  "qualifiedClearance": null
+}

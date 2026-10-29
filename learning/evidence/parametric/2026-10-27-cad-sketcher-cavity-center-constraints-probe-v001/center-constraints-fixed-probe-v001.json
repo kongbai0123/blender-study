@@ -1,0 +1,107 @@
+{
+  "kind": "fixed-geometry-probe-not-parametric-box",
+  "method": "獨立 Blender 5.2.1、CAD Sketcher 0.32.1；先前 GUI 草圖拉伸副本；GUI 先畫近似矩形、D 約束邊長56/36，Alt+H/V 約束角點至頂面草圖中心28/18，GUI Extrude -28 Auto Boolean。程式僅載入、啟用插件、找滑鼠座標和讀值。",
+  "learnerWorkspacesUnchanged": true,
+  "sketch": {
+    "solver": "OKAY",
+    "degreesOfFreedom": 0,
+    "distanceConstraintsMm": [
+      56,
+      36,
+      28,
+      18
+    ]
+  },
+  "cutterBoundsMm": [
+    [
+      2.0,
+      58.0
+    ],
+    [
+      2.0,
+      38.0
+    ],
+    [
+      2.0,
+      30.0
+    ]
+  ],
+  "cutterDimensionsMm": [
+    56,
+    36,
+    28
+  ],
+  "images": [
+    {
+      "seq": 1,
+      "file": "LINEDIM-01-opened-solid.png",
+      "sha256": "5406efc2b7771d4e0fa0f47c30ed09b9b7d8a4fcf689d26c7bc8f570f96ce161",
+      "action": "開啟原生草圖與 Extrude 建出的 60×40×30 實心體副本"
+    },
+    {
+      "seq": 2,
+      "file": "LINEDIM-02-pick-workplane.png",
+      "sha256": "ac251d8329661225e284e7b8b3a32b194e9a7f03c956c334af1a49cc242588ba",
+      "action": "Ctrl+Shift+A 開始選擇草圖工作平面"
+    },
+    {
+      "seq": 3,
+      "file": "LINEDIM-03-picked-top-face.png",
+      "sha256": "dda9b4d3505070a0aadebbb9d0b42182a0ef08155494b96c637dc983f0099a84",
+      "action": "在頂面點選工作平面（探測）"
+    },
+    {
+      "seq": 4,
+      "file": "LINEDIM-04-rectangle.png",
+      "sha256": "25e1fc86a9c56d363aed6ae06089bb4131af580e1a18b5f732e5be0d65e8b8f5",
+      "action": "以兩點畫出近似內矩形，尺寸與位置尚未驗證"
+    },
+    {
+      "seq": 5,
+      "file": "LINEDIM-05-width.png",
+      "sha256": "0a2265047c41858002083ce34eb07c4819006f7fb7c1f33e24c33ae84c0be45b",
+      "action": "選內矩形水平邊，嘗試加 56 mm 長度約束"
+    },
+    {
+      "seq": 6,
+      "file": "LINEDIM-06-height.png",
+      "sha256": "d88ff500de8747178aa41f9af1916094a5fc42f99fb8e350aabefcd5f277c1bb",
+      "action": "選內矩形垂直邊，嘗試加 36 mm 長度約束"
+    },
+    {
+      "seq": 7,
+      "file": "CENTER-01-horizontal.png",
+      "sha256": "066160fddcd720b9cd70611c7a09f4a403c578768446265f88ce343780b165fa",
+      "action": "嘗試以矩形角點與頂面草圖原點建立 28 mm 水平定位"
+    },
+    {
+      "seq": 8,
+      "file": "CENTER-02-vertical.png",
+      "sha256": "482f37a2ee471bb27bfce1225efbaf257c90dc21987e94839bba7faef69e3ab2",
+      "action": "嘗試以矩形角點與頂面草圖原點建立 18 mm 垂直定位"
+    },
+    {
+      "seq": 9,
+      "file": "LINEDIM-07-left-inner-sketch.png",
+      "sha256": "e89d94e614a08a6e03dcc0865336bf440b7aae5248c91ce09949a9882c697d07",
+      "action": "離開內部草圖並讀回實際狀態"
+    },
+    {
+      "seq": 10,
+      "file": "LINEDIM-08-extrude-tool.png",
+      "sha256": "79bda88daf039199a0c43bc24251e8edba8de9b482c818ec5105e0b4f9a9d2cc",
+      "action": "呼叫 Extrude 並觀察 Auto Boolean 狀態"
+    },
+    {
+      "seq": 11,
+      "file": "LINEDIM-09-after-cut.png",
+      "sha256": "db669724e3735b81cee3a670d6beff861ef10d55c45a73754c8e8090b1d49e0a",
+      "action": "嘗試向下 28 形成內腔；結果須依讀值判定"
+    }
+  ],
+  "limitations": [
+    "僅 60×40×30 固定外形下形成名義 2 mm 四壁與 2 mm 底。內腔尺寸 56/36、定位28/18 為固定值。",
+    "未更改外草圖測量連動、未建立上蓋、未另存此場景；不代表已完成參數式盒蓋模型。",
+    "未量測封閉性、實體列印或試配。"
+  ]
+}

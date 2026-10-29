@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "base": {
+    "path": "learning/web/engineering-curriculum-v037.json",
+    "sha256": "65b126ac3bfd88e12ce78697d2d1188036cc55d6e56ef72b7b654ed86eaab6a4"
+  },
+  "purpose": "補充圓柱分段確認、區分學員重開與示範射線，以及明確試塊尺寸。",
+  "patches": {
+    "ch11-11-boss-opt-02": {
+      "context": "確定 Object Mode 且 Body_Reference 已選取；本示範 Unit Scale 0.001、Blender 5.2.1 LTS。F9 檢查頂點數為跟做補充，原 GUI 示範沒有拍攝 F9 操作。",
+      "actions": [
+        "滑鼠移至 3D View，按 H 隱藏已選盒體。",
+        "按 F3 搜尋 Add Cylinder，按 Enter；仍在剛新增圓柱的情境，按 F9 開啟調整上一步操作，確認 Vertices 為 32；若不是則設為 32。",
+        "檢查側欄 Dimensions，須約 2000 × 2000 × 2000 mm，才能沿用下一步的縮放係數。"
+      ],
+      "success": "自行檢查最後操作面板 Vertices 為 32；側欄尺寸約 2000 × 2000 × 2000 mm，原盒只是隱藏。原示範的32邊及尺寸為程式讀回，並未實拍 F9 面板。",
+      "detail": {
+        "steps": [
+          "在 Object Mode 選取 Body_Reference，H 隱藏；F3 搜尋 Add Cylinder，Enter 新增。",
+          "新增後、進行其他變換之前，於3D View按 F9 開啟調整上一步操作，核對 Add Cylinder 的 Vertices=32；不同則設32。此為跟做補充，不是原示範已有 F9 截圖。",
+          "N 側欄核對初始尺寸約2000 mm；若尺寸不同先停下，不能直接套下一步的0.004比例。"
+        ],
+        "why": "32邊是本示範孔口幾何的前提，初始尺寸與頂點數都應由學員自行核對。"
+      }
+    },
+    "ch11-11-four-inserts-15": {
+      "context": "先完成另存；示範檔案視窗欄位由程式填入，獨立 Blender 的局部射線與網格讀值為助教示範，非本步要求學員自行執行。",
+      "actions": [
+        "重新開啟自己另存的新檔，選 Body 與 Lid，以可用視角檢查四柱、蓋孔和可見外框；若遮擋可暫時隱藏另一物件，勿覆寫來源。",
+        "展開「示範紀錄」核對助教獨立 Blender 的網格及局部射線結果；這些數字不代表自己檔案已通過相同檢查。"
+      ],
+      "success": "自己的新檔能重開，並依實際視角記錄可見的柱、肋與蓋孔；示範重開原圖從盒底視角觀看，四孔及肋並非都可見。",
+      "detail": {
+        "steps": [
+          "重開自己的另存版本，確認 Body／Lid 存在；調整視角，必要時暫時隱藏另一物件以查看柱與蓋孔。",
+          "開啟本頁「示範紀錄」查看助教的 Blender 網格及局部射線讀值，區分示範資料與自己的檢查結果。",
+          "若學員要自行做同樣的數位射線分析，需另備方法與工具；此步不假定已完成該分析。"
+        ],
+        "why": "重開畫面、示範程式讀值及學員獨立幾何檢驗屬不同證據。"
+      }
+    },
+    "ch11-11-inner-02": {
+      "success": "本例試塊名義 Dimensions 為 16 × 16 × 3 mm、中心 Z 約 2 mm、套用縮放後 Scale 1；試塊可包住刀具，實際數值需在個人場景核對。原示範尺寸及 Z 界限為程式讀值。",
+      "detail": {
+        "steps": [
+          "在 Unit Scale 0.001 的指定來源副本，F3 搜尋 Add Cube；先核對新方塊初始 Dimensions 約 2000 mm。",
+          "依序 S X 0.008、S Y 0.008、S Z 0.0015、G Z 2，最後 F3 搜尋 Apply Scale；各次操作以 Enter 確認。",
+          "在 Item 側欄核對 Dimensions 約16×16×3 mm、Location Z約2 mm、Scale 1；不同先停止比對單位與初始尺寸。"
+        ],
+        "why": "示範按此場景輸入數值取得試塊；它是獨立試塊，不是盒蓋或已驗證配合。"
+      }
+    }
+  },
+  "evidenceNotes": [
+    "32邊圓柱的 F9 操作為新增加的跟做建議，原 GUI 未拍攝 F9。",
+    "16×16×3 和 Z=0.5～3.5 的示範幾何來自 safe-summary.steps[1].observed；Z中心由上下界平均約2 mm。",
+    "獨立射線檢查屬既有示範資料，沒有宣稱學員完成。",
+    "以隔離 Blender 5.2.1 背景只讀重開來源場景，實讀 Metric、scale_length 0.0010000000474974513、Millimeters；僅證此檔單位。"
+  ],
+  "independentUnitAudit": {
+    "path": "learning/journal/2026-10-29-inner-source-unit-independent-v001.json",
+    "sha256": "793dd0b06c73f5ded2362a03b494061154512b820cba630f092552428fcfec4f"
+  }
+}

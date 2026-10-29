@@ -13,16 +13,16 @@ import re
 from pathlib import Path
 
 # Each revision prepares a new manifest; reviewed prior manifests stay historical.
-DATE = "2026-10-27"
-RELEASE = "2026-10-27-shortcuts-v002"
+DATE = "2026-10-29"
+RELEASE = "2026-10-29-engineering-v038"
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = f"docs/publication-manifest-{RELEASE}.json"
 PATHSPEC = f"docs/publication-paths-{RELEASE}.txt"
 DERIVATIVES = "learning/evidence/public-metadata"
 AUDIT = "learning/evidence/audits/2026-10-25-claude-continuation-v001"
 RECENT_KEYS = {"recentCleanup", "beforeLinks", "afterLinks"}
-TEXT_EXTENSIONS = {".json", ".md", ".txt", ".html", ".css", ".js", ".py", ".cmd", ".ps1", ".yml", ".yaml"}
-PUBLIC_EXTENSIONS = TEXT_EXTENSIONS | {".png", ".jpg", ".jpeg", ".blend", ".stl", ".csv"}
+TEXT_EXTENSIONS = {".json", ".md", ".txt", ".html", ".css", ".js", ".cjs", ".py", ".cmd", ".ps1", ".yml", ".yaml"}
+PUBLIC_EXTENSIONS = TEXT_EXTENSIONS | {".png", ".jpg", ".jpeg", ".webp", ".svg", ".gif", ".blend", ".stl", ".csv"}
 REFERENCE_PATTERN = re.compile(r"(?:learning|sources|docs|scripts|\.github)/[^\s\"'<>`\[\]{}(),;]+")
 SECRET_PATTERN = re.compile(r"ghp_[A-Za-z0-9]{20,}|github_pat_[A-Za-z0-9_]{20,}|sk-[A-Za-z0-9]{20,}|-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----")
 
@@ -67,6 +67,26 @@ def has_progress_state(value) -> bool:
     return False
 
 
+def has_workspace_snapshot(value) -> bool:
+    # Old immutable public summaries contain only empty, bootstrap-created
+    # course directories. Those reveal no learner files or custom names.
+    # File records, arbitrary names and other snapshot shapes remain private.
+    scaffold = {".", "engineering-parametric"} | {f"{n:02d}" for n in range(1, 10)} | {
+        f"{n:02d}/exports" for n in range(1, 10)}
+    for _, item in nodes(value):
+        if not isinstance(item, dict):
+            continue
+        for key in ("workspacesBefore", "workspacesAfter"):
+            if key not in item or item[key] is None:
+                continue
+            state = item[key]
+            if isinstance(state, dict) and all(name in scaffold and entry == {"kind": "directory"}
+                                               for name, entry in state.items()):
+                continue
+            return True
+    return False
+
+
 def strip_recent(value, pointer="", removed=None):
     if removed is None:
         removed = []
@@ -107,6 +127,18 @@ class Publication:
     def local_only(self, rel: str, inspect_json=True) -> str | None:
         p = Path(rel)
         parts = p.parts
+        # These belong to the next integration batch, not the reviewed v038
+        # release. Keep the original worktree and all partial evidence intact.
+        pending_tokens = ("four_boss_manual", "four_insert_boss_manual", "side_cap_manual", "radial_cutter",
+                          "cad_tool_load", "cad-sketcher-load-tools-isolated", "encode_blender_sampled_motion",
+                          "encode_sampled_motion_gif", "build_visual_review_inventory", "replay_operations_batch",
+                          "audit_side_cap_sources", "side_cap_cylinder_f9_probe")
+        if any(token in p.name for token in pending_tokens) or "/_candidates/" in rel:
+            return "next-batch integration or private intermediate candidate; excluded from v038 release"
+        if rel.startswith("learning/patches/2026-10-29-") and any(token in p.name for token in ("image-review", "image-caption", "visual-", "replay-plan")):
+            return "in-progress next-batch review; excluded from v038 release"
+        if rel == "learning/evidence/parametric/2026-10-29-manual-guard-70x40-reject-v004/02-text-prepared.png":
+            return "local screenshot contains a personal temporary path; not used by published lessons"
         if any(part in {".git", "__pycache__", "node_modules", ".scratch"} for part in parts):
             return "local tooling/cache"
         if rel in {MANIFEST, PATHSPEC}:
@@ -130,10 +162,18 @@ class Publication:
             if value is not None:
                 if has_progress_state(value):
                     return "embedded private learner progress snapshot"
+                if has_workspace_snapshot(value):
+                    return "embedded private learner workspace inventory"
                 if has_recent(value):
                     return "Windows Recent inventory embedded in raw metadata"
         if name == "runner-status.json":
             return "raw runner-status kept local by publication policy"
+        # 2026-10-28 的動畫採樣與 Blender 探測：原始影格、讀值與執行紀錄含本機路徑；公開 GIF、前後原圖與去識別摘要即可。
+        if "/2026-10-28-pilot-box-move-record-v001/" in rel:
+            return "failed animation sampling run kept local"
+        if re.search(r"/2026-10-28-(?:pilot-box-move-record|boss-box-join-trial|closed-external-thread-probe)-v\d{3}/", rel) and (
+                name.startswith(("frame-", "gif-")) or name in {"frames.json", "run.json"}):
+            return "raw sampling frames or run record with local paths; the GIF, before/after screenshots and public summaries are published instead"
         return None
 
     def derivative(self, rel: str) -> str | None:
@@ -141,6 +181,10 @@ class Publication:
             return self.replacements[rel]
         value = self.json(rel)
         if value is None or has_progress_state(value):
+            return None
+        if has_workspace_snapshot(value):
+            # Current runner metadata also contains learner workspace snapshots;
+            # stripping Recent alone does not make those records public.
             return None
         if not has_recent(value) and Path(rel).name != "runner-status.json":
             return None
@@ -234,9 +278,16 @@ class Publication:
                     if normalized.startswith(("learning/", "sources/", "docs/", "scripts/", ".github/")) and len(normalized) < 500 and "\n" not in normalized:
                         results.add(normalized.rstrip("/"))
                     elif len(normalized) < 200 and not re.search(r"\s|://", normalized):
-                        candidate = path.parent / normalized
-                        if candidate.is_file() and candidate.resolve().is_relative_to(self.root):
-                            results.add(candidate.relative_to(self.root).as_posix())
+                        # Some frozen geometry summaries store files relative to
+                        # evidence/parametric rather than the summary's run dir.
+                        # Resolve only actual in-root files, never invent a path.
+                        for parent in path.parents:
+                            if not parent.is_relative_to(self.root):
+                                break
+                            candidate = parent / normalized
+                            if candidate.is_file() and candidate.resolve().is_relative_to(self.root):
+                                results.add(candidate.relative_to(self.root).as_posix())
+                                break
         for match in REFERENCE_PATTERN.finditer(text):
             candidate = match.group(0).rstrip(".。：；／。")
             # Ignore parameterized paths and prose tails, but retain exact
@@ -259,7 +310,7 @@ class Publication:
                     if path.is_file():
                         self.add(path.relative_to(self.root).as_posix(), "portable code/documentation/source facts")
         for path in sorted((self.root / "learning").iterdir()):
-            if path.is_file() and path.suffix.lower() in {".py", ".ps1", ".cmd"}:
+            if path.is_file() and path.suffix.lower() in {".py", ".ps1", ".cmd", ".cjs"}:
                 self.add(path.relative_to(self.root).as_posix(), "application code/launcher")
         self.add("learning/catalog.json", "current teaching catalog")
         # Only catalog-rooted evidence directories get a bulk per-file review.
@@ -278,6 +329,36 @@ class Publication:
                         self.add(path.relative_to(self.root).as_posix(), "published run/audit dependency")
         for ref in sorted(catalog_refs):
             self.add(ref, "catalog reference")
+        # Current engineering content is a dependency root in its own right.
+        # Only exact referenced files are selected; do not bulk-publish new runs.
+        manage_file = self.root / "learning/manage.py"
+        manage_source = manage_file.read_text(encoding="utf-8-sig") if manage_file.is_file() else None
+        current_definitions = []
+        for variable in ("ENGINEERING_CURRICULUM", "ENGINEERING_PATH", "CHALLENGES"):
+            if manage_source is None:
+                break  # Minimal policy-test fixture, not a runnable app package.
+            match = re.search(r"^" + variable + r"\s*=\s*LEARNING\s*/\s*(.+)$", manage_source, re.MULTILINE)
+            if not match:
+                raise RuntimeError("Missing current definition pointer: " + variable)
+            segments = re.findall(r'"([^"\r\n]+)"', match.group(1))
+            current_definitions.append("learning/" + "/".join(segments))
+        for definition in current_definitions:
+            self.add(definition, "current engineering definition")
+            for ref in self.references(definition):
+                parts = Path(ref).parts
+                if len(parts) > 4 and parts[:2] == ("learning", "evidence"):
+                    self.published_dirs.add("/".join(parts[:4]))
+        # Frozen builders/tests consume these exact JSON readbacks through
+        # computed BASE/name expressions, which are not literal clickable URLs.
+        proof_files = [
+            "learning/evidence/parametric/2026-10-27-cad-sketcher-cavity-center-constraints-probe-v001/height-state.json",
+            "learning/evidence/parametric/2026-10-27-cad-sketcher-cavity-center-constraints-probe-v001/center-horizontal-state.json",
+            "learning/evidence/parametric/2026-10-27-cad-sketcher-cavity-center-constraints-probe-v001/center-vertical-state.json",
+            "learning/evidence/parametric/2026-10-27-cad-sketcher-cavity-center-constraints-probe-v001/after-cut-state.json",
+            "learning/evidence/parametric/2026-10-27-manual-lid-xy-link-verify-v001/reopened-state.json",
+        ]
+        for proof in proof_files:
+            self.add(proof, "explicit frozen-builder readback dependency")
         seen = set()
         while True:
             pending = sorted(self.selected - seen)
@@ -355,7 +436,7 @@ class Publication:
             "localOnlyFiles": [{"path": key, "reason": value} for key, value in sorted(self.omissions.items())],
             "intentionalUnavailableReferences": [{"from": source, "target": target, "reason": reason, "publicDerivative": self.replacements.get(target)} for (source, target), reason in sorted(self.unavailable.items())],
             "historicalOrUnresolvedReferences": [{"from": source, "target": target} for source, target in sorted(self.missing)],
-            "validationLimits": ["This local review candidate does not constitute publication, reviewer approval or physical qualification.", "No new full visual privacy review is claimed; see release-content review for two sampled images.", "Historical internal checks may cite local-only omitted files and hashes; their absence is intentional, not proof they were republished.", "This preparer does not stage, commit, push, delete, or change private original records."],
+            "validationLimits": ["Preparing this manifest is not publication or physical qualification.", "v038 adds reference cards to reviewed v037; unfinished manual/CAD repair/motion integration is excluded. No complete per-image privacy review is claimed.", "Historical internal checks may cite local-only omitted files and hashes; their absence is intentional, not proof they were republished.", "This preparer does not stage, commit, push, delete, or change private original records."],
         }
         stable_json(self.root / MANIFEST, manifest)
         paths = sorted(self.selected | {MANIFEST, PATHSPEC})
@@ -408,7 +489,7 @@ def verify_publication(root: Path):
             errors.append({"path": rel, "error": "credential marker; contents suppressed"})
         if path.suffix.lower() == ".json":
             value = inspector.json(rel)
-            if has_recent(value) or has_progress_state(value):
+            if has_recent(value) or has_progress_state(value) or has_workspace_snapshot(value):
                 errors.append({"path": rel, "error": "private inventory or progress keys bundled"})
             if rel.startswith(DERIVATIVES + "/"):
                 if not isinstance(value, dict) or value.get("kind") != "redacted_public_derivative" or not value.get("redacted_public_derivative") or value.get("originalAvailableInPublicPackage") is not False:

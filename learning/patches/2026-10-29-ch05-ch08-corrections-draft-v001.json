@@ -1,0 +1,448 @@
+{
+  "schemaVersion": 1,
+  "base": {
+    "path": "learning/web/engineering-curriculum-v036.json",
+    "sha256": "fceaf4cc951316bfa5e827cd2a4d2bebb713318ecb7f909ad646ba216975db09"
+  },
+  "purpose": "第05、07、08章可跟做性和跨場次銜接補正草案；不修改原教材與學員進度。",
+  "status": "ready_for_parent_review",
+  "patches": {
+    "ch07-solid-01": {
+      "detail": {
+        "steps": [
+          "07-02 保存過80×40版本後，重新開啟自己保留的60×40草圖版本；若沒有，回到草圖將寬度改回60，再以未使用的新檔名另存，勿覆寫80×40版本。",
+          "確認 Body Sketch 作用中，Distance 為60／40 mm且 Fully defined，先以新檔名保留來源。",
+          "在3D Viewport 按 Ctrl+Shift+A 離開草圖，核對 Body 已選取。"
+        ],
+        "why": "拉伸示範從60×40副本開始；照片來自獨立示範。"
+      }
+    },
+    "ch08-link-counterexample-01": {
+      "detail": {
+        "steps": [
+          "完成自己的固定盒後，以未使用的新檔名另存60×40×30基準，保留供後續重新開啟。",
+          "對照助教獨立場次的固定版另存與重開紀錄；寫下自己來源版本。"
+        ],
+        "why": "固定版是反例與 Driver 實作各自的起點；原圖不代表學員已存檔。"
+      }
+    },
+    "ch08-driver-partial-01": {
+      "detail": {
+        "steps": [
+          "先保留70×50反例，重新開啟自己另存的60×40固定盒副本，以另一個新檔名繼續。",
+          "選 Body，右鍵 Edit Sketch > Body Sketch，核對第一個 Distance 為本例外框 X60 mm。",
+          "右鍵 X 欄位，選 Copy as New Driver。"
+        ],
+        "why": "示範從60×40的另一份固定盒副本開始，不從70×50反例直接接續。"
+      }
+    },
+    "ch08-manual-lid-cases-01": {
+      "detail": {
+        "steps": [
+          "先保留上一節90×60成果，重新開啟先前另存的80×50雙 Driver與形狀鍵基準副本；若尚未保存，先返回基準並以新檔名保留。",
+          "選 Body 進 Body Sketch，將 X 改為90、Y保持50。",
+          "進 Body.001 Sketch 手動更新，再核對外框、內腔與蓋的示範摘要。"
+        ],
+        "why": "本例從另一份80×50基準開始；內腔需要手動更新。"
+      }
+    },
+    "ch08-manual-lid-link-01": {
+      "detail": {
+        "steps": [
+          "選固定80×50上蓋 Cube，Object Data Properties > Shape Keys 點 + 兩次建立 Basis 與 Key 1；確認 Key 1 為活動鍵。",
+          "游標在3D視圖按 Tab 進 Edit Mode、1 選頂點模式、Alt+A 取消選取；以 Alt+Z 開啟穿透，對照正側方向與原圖按 B 框選 X 正側頂點。",
+          "獨立示範程式檢查選中12個正側頂點；若不能確認選取範圍，不要移動。確認後按 G、X、輸入 10mm、Enter；Tab 返回 Object Mode，另存新版本。"
+        ],
+        "why": "穿透框選包括被遮擋頂點；12點是本範本的示範讀值，不是任意蓋板通用點數。"
+      }
+    },
+    "ch08-manual-lid-link-02": {
+      "detail": {
+        "steps": [
+          "先選 Key 1，設範圍 −2～2 並將值設 0；在 Shape Keys 按 + 新增並選取 Key 2。",
+          "游標在3D視圖按 Tab、1 進頂點編輯，Alt+A 取消選取；確認穿透模式及 Y 正側方向，按 B 框選。",
+          "對照原圖與本示範選中12個正側點的程式讀值；確認後按 G、Y、輸入 10mm、Enter，再 Tab 返回 Object Mode。",
+          "把 Key 2 範圍設 −2～2、值設0；確認 Key 1 也為0，另存新檔。"
+        ],
+        "why": "先歸零 X 鍵再建立 Y 鍵，減少把兩種變形混在一起。"
+      }
+    },
+    "ch08-manual-guard-restart-01": {
+      "detail": {
+        "steps": [
+          "確認上一小步建立的未登記個人副本位於工程參數盒工作區，並核對原始 SHA。",
+          "在 Blender File > Open 選該個人副本；確認標題列檔名，保留 evidence 示範檔與已登記版本。",
+          "核對 Body、上蓋及 CAD Sketcher 是否可用；如畫面出現工具警告，記錄並依11-20限定恢復探測或停止回報。"
+        ],
+        "why": "畫面是另一獨立假專案70×40副本；首次複製的個人基準為80×50，不可把照片尺寸當作自己讀值。"
+      },
+      "success": "個人檔案標題列與工作區路徑吻合；模型顯示待核對。原圖另為假專案70×40副本，不是個人成果。"
+    },
+    "ch08-manual-guard-01": {
+      "detail": {
+        "steps": [
+          "在 Object Mode 選 Body，右鍵 Edit Sketch > Body Sketch；核對此指定範本來源。",
+          "將一個編輯區切成 Text Editor，開啟同專案 learning/tutor/guarded_manual_box_v001.py；同目錄另須 manual_box_auto_update_v002.py 與 manual_box_reference_v001.json。",
+          "游標放文字編輯器按 Alt+P；返回 3D Viewport，按 N 查看「手工盒預檢」分頁與面板。若面板未出現，先檢查錯誤及腳本來源再回報。"
+        ],
+        "why": "示範由程式填入檔案路徑；Alt+P 執行事件須結合後續面板出現判讀，非由同圖推論。"
+      }
+    },
+    "ch08-manual-guard-02": {
+      "detail": {
+        "steps": [
+          "在 3D Viewport 按 N，選「手工盒預檢」，按「預檢並更新一項尺寸」。",
+          "展開「參數」選單，觀察長度 L 與寬度 W 選項；此步僅辨認對話框，下一步才輸入並提交。"
+        ],
+        "why": "面板每次須選參數、輸入數值並勾選核對；不要將對話框尚未提交視作已更新。"
+      },
+      "actions": [
+        "開啟 3D Viewport 側欄的「手工盒預檢」，按「預檢並更新一項尺寸」。",
+        "展開參數選單，辨認長度 L／寬度 W；此步不提交。"
+      ]
+    },
+    "ch08-manual-guard-03": {
+      "detail": {
+        "steps": [
+          "確認當前為本例80×50；打開預檢，選長度 L、輸入110 mm，確認參數與數值後勾選核對。",
+          "提交，觀察超界錯誤；核對自己提交前後外框。原示範是80×50，切割體界限為程式讀值，不能單靠圖片量出。"
+        ],
+        "why": "故意提出超界值驗證拒絕，不證明所有尺寸或錯誤均安全。"
+      }
+    },
+    "ch08-manual-guard-04": {
+      "detail": {
+        "steps": [
+          "重新開啟預檢，選長度 L、輸入90 mm，確認後勾選核對並提交。",
+          "核對視圖外框90／50；示範切割體 X2～88、Y2～48 與蓋約90×50 為程式讀值。"
+        ],
+        "why": "受控提交才會執行此模板的內腔更新；此步尚未另存重開。"
+      }
+    },
+    "ch08-manual-guard-xy-01": {
+      "detail": {
+        "steps": [
+          "從本例90×50開啟預檢，選寬度 W、輸入60，確認後勾選核對並提交。",
+          "核對外框90／60；切割體與上蓋外框見示範程式讀值。"
+        ],
+        "why": "此示範以 GUI 改變寬度；照片不能量出切割體界限。"
+      }
+    },
+    "ch08-manual-guard-xy-02": {
+      "detail": {
+        "steps": [
+          "從90×60開啟預檢，選 L、輸入70，勾選核對並提交，核對結果。",
+          "重新開啟預檢，選 W、輸入40，重新勾選核對並提交；核對70×40。",
+          "示範內腔與蓋界限來自程式讀值，尺寸標籤可能重疊。"
+        ],
+        "why": "每次改參數都重新選擇和核對；照片不能直接量得內腔界限。"
+      }
+    },
+    "ch08-manual-guard-y-reject-01": {
+      "detail": {
+        "steps": [
+          "確認目前自己未登記副本為70×40，按「預檢並更新一項尺寸」。",
+          "選寬度 W、輸入80，核對目前 W40 及新值，勾選「我已核對參數與新數值」，提交。",
+          "查看拒絕訊息，核對提交前後自己的外框；示範的切割體與蓋讀值見新摘要，不能由圖片量出。",
+          "較早原圖為80×50起始的另一場次；本次新圖是70×40副本另開 Blender 的獨立示範，不是同一次操作的連續原圖。"
+        ],
+        "why": "寬度80超出此範本形狀鍵計算範圍；本次拒絕僅證明該場景這次提交，並非製造或配合合格範圍。"
+      },
+      "success": "本次獨立原圖顯示目前 W40、提案 W80 及超出30～70計算界限的拒絕訊息；程式前後讀回盒體70×40、切割體66×36、蓋約70×40。個人副本需自己核對，不能以示範代替。",
+      "context": "沿用上一小步70×40未登記個人副本與手工盒預檢；獨立新示範由另一70×40副本重開。",
+      "actions": [
+        "先核對個人副本目前是70×40；開啟受控面板，選寬度 W，輸入80 mm，勾選核對後提交。",
+        "觀察拒絕訊息，核對自己操作前後的模型；對照另一獨立示範的程式讀值。"
+      ],
+      "figures": [
+        {
+          "type": "screenshot",
+          "path": "learning/evidence/parametric/2026-10-29-manual-guard-70x40-reject-v004/G7040-01-opened.png",
+          "sha256": "ca569d4aa52830aedb04b865b0dbaa043eee1514143bbaf160ae8ac5e64592d9",
+          "caption": "另開70×40隔離副本；尺寸標籤與工具警告依原畫面。"
+        },
+        {
+          "type": "screenshot",
+          "path": "learning/evidence/parametric/2026-10-29-manual-guard-70x40-reject-v004/G7040-03-panel-ready.png",
+          "sha256": "cec035a78e59b03e93e80ba0cea89e8c0599cf276bae04924fd2116bb2eb5242",
+          "caption": "程式載入外部腳本後，GUI Alt+P 執行；此圖不是 GUI 開啟腳本示範。"
+        },
+        {
+          "type": "screenshot",
+          "path": "learning/evidence/parametric/2026-10-29-manual-guard-70x40-reject-v004/G7040-04-y80-proposal.png",
+          "sha256": "88da49d6e9982e8b1020dbc5cc7101f1e6bcc3a1256b544b4c74176496c12442",
+          "caption": "70×40場次：寬度 W 提案80，當前40，已勾選核對。"
+        },
+        {
+          "type": "screenshot",
+          "path": "learning/evidence/parametric/2026-10-29-manual-guard-70x40-reject-v004/G7040-05-y80-refused.png",
+          "sha256": "596f7394d053858d7f021854c5668e5000321b6294c0f0b53151dad124480a1c",
+          "caption": "70×40場次：顯示寬度超出30～70計算界限的拒絕訊息。"
+        },
+        {
+          "type": "screenshot",
+          "path": "learning/evidence/parametric/2026-10-29-manual-guard-70x40-reject-v004/G7040-06-after-refusal.png",
+          "sha256": "c1a5a7778f560c6de8f58b04c9843aae25dadd2a80def9c50a40775c2bdef7f5",
+          "caption": "拒絕後畫面；內腔及蓋的前後界限依程式讀值。"
+        },
+        {
+          "type": "screenshot",
+          "path": "learning/evidence/parametric/2026-10-27-manual-box-guard-y-reject-v001/GUARD-08-parameter-menu.png",
+          "sha256": "671a582bde4a5f446e9e71e0471afab68d43bcbc230511604929a77f6e6c9c1a",
+          "caption": "歷史80×50起始、另一場次：原圖：參數選單中的寬度 W。"
+        },
+        {
+          "type": "screenshot",
+          "path": "learning/evidence/parametric/2026-10-27-manual-box-guard-y-reject-v001/GUARD-09-y-invalid-proposal.png",
+          "sha256": "db8245bb2beedb3b298a8d2f4d0b508c51c3996871adaf367dfce1841a975d48",
+          "caption": "歷史80×50起始、另一場次：原圖：選 W、輸入80並勾選核對。"
+        },
+        {
+          "type": "screenshot",
+          "path": "learning/evidence/parametric/2026-10-27-manual-box-guard-y-reject-v001/GUARD-10-y-invalid-result.png",
+          "sha256": "1bec761c33d7d08b5a15a8d89746551a9f2d16f2dcff4bfc669f611446985917",
+          "caption": "歷史80×50起始、另一場次：原圖：面板顯示寬度超界拒絕。"
+        }
+      ],
+      "artifacts": [
+        {
+          "path": "learning/evidence/parametric/2026-10-27-manual-box-guard-y-reject-v001/guard-gui-y-out-of-range-verification-v001.json",
+          "sha256": "6644842b1e15b63346b8dddeb123ceeca983e35b2fef38ffa2f1a152083e747c",
+          "label": "假專案寬度超界拒絕驗證摘要",
+          "type": "verification-json"
+        },
+        {
+          "path": "learning/evidence/parametric/2026-10-29-manual-guard-70x40-reject-v004/safe-summary-v001.json",
+          "sha256": "ee193d07c25a74e662ef1596764f91a3bddd243158c8fa0431ae36c83088eb84",
+          "label": "70×40 副本寬度80拒絕與前後讀值摘要",
+          "type": "verification-json"
+        }
+      ],
+      "limitations": [
+        "此為獨立 Blender 5.2.1 / CAD Sketcher 0.32.1 假專案與假 progress；插件啟用及檔案路徑由程式處理，面板輸入與提交為 GUI 事件。",
+        "寬度拒絕的文字由人工查看原圖，程式未自動解析 UI 文字；前後參數與三件評估外框由 Python 讀回，不等於全部資料或完整拓撲未變。",
+        "只限指定手工範本及受控面板；直接修改 Blender／CAD Sketcher 原生欄位可繞過防護及自動更新，面板也不攔截原生 Save／Export。",
+        "30～70 mm 是該範本形狀鍵未夾限的理論候選範圍，不是全區安全、製造能力或配合合格的證據。",
+        "沒有全面碰撞、實體列印、量測或試配，0.4 mm 總間隙仍為試驗值。",
+        "副本、外部腳本文字及外掛啟用由程式準備，Alt+P、W80提案與提交為GUI事件。",
+        "70×40場景沿用原側欄，未重新示範切換分頁；原標註部分重疊，尺寸依實際讀值核對。",
+        "使用隔離假專案空白版本表，不寫學員工作區與進度；W30～70是範本形狀鍵計算範圍，非製造合格範圍。",
+        "前3次失敗保留：缺擴充根、重複Text名稱及evidence區保護均未繞過。"
+      ]
+    },
+    "ch08-manual-guard-restart-02": {
+      "detail": {
+        "steps": [
+          "前一步登記 v002 後，先另存未登記的新檔如 v003；關閉並重新開啟 Blender，開 v003，而非已登記的 v002。",
+          "確認 Body Sketch 和 CAD Sketcher 可用；Text Editor 開啟同專案 guarded_manual_box_v001.py，核對來源並按 Alt+P。",
+          "回 3D Viewport，N 側欄開手工盒預檢，選 L=80、勾選核對後提交；對照自己的當前數值與示範。",
+          "此步更新後尚未自動保存，完成核對後以新的檔名另存。"
+        ],
+        "why": "原圖為新 Blender 程序、假專案70×40副本；是否自動載入未驗證，需自行執行。"
+      }
+    },
+    "ch05-05-03-06": {
+      "detail": {
+        "steps": [
+          "Add > Mesh > Cylinder；N 側欄 Dimensions 設 1.2、1.2、2 mm。",
+          "Location 設 X −35、Y −8.5、Z 2.2 mm，核對後繼續。"
+        ],
+        "why": "板上表面 Z2 mm，圓柱底 Z1.2、頂 Z3.2 mm；切入板面0.8 mm，並非圓柱恰有一半露出。"
+      }
+    },
+    "ch05-05-03-11": {
+      "detail": {
+        "steps": [
+          "選 Cutters 按 H 隱藏，再選 Plate；Boolean 標題列下拉選 Apply。",
+          "Tab 進 Edit Mode，2 切邊選取，Select > None；Select > Select All by Trait > Non Manifold。",
+          "未選到邊僅說明此項非流形邊檢查未選中邊；再以斜視核對六孔及凹點。"
+        ],
+        "why": "非流形邊為一項數位檢查，不能證明已切片、可列印或配合合格。"
+      }
+    },
+    "ch05-05-03-12": {
+      "detail": {
+        "steps": [
+          "Tab 回 Object Mode；若孔板尚未命名保存，File > Save As 選 learning/workspaces/05/，輸入 u05_hole_plate_v001.blend 並確認儲存；已有同名檔則使用新的版本名稱。",
+          "確認標題或檔案為剛保存的孔板，然後到教學頁「檔案版本」選單元05、對應 .blend 與用途登記。",
+          "File > Open 重開，核對尺寸與孔。"
+        ],
+        "why": "新場景首次保存要先指定路徑及檔名；登記本身不會保存 Blender 場景。"
+      },
+      "actions": [
+        "若尚未保存，File > Save As 至單元05工作區的新檔名，例如 u05_hole_plate_v001.blend；確認儲存完成。",
+        "到教學頁以單元05登記實際保存的孔板檔，再重新開啟核對。"
+      ],
+      "shortcuts": [
+        {
+          "keys": "Shift+Ctrl+S",
+          "effect": "開啟 .blend 的 Save As，再依常規方法核對資料夾與本步版本檔名。",
+          "requirements": [
+            "Blender 主視窗；先核對目前檔名、版本與未儲存變更。"
+          ],
+          "cautions": [
+            "已登記的檢查點保留；需要修改先另存新版本。快捷鍵不執行檔案登記或學員確認。",
+            "此處證據只涵蓋 .blend 的 File > Save As；PNG 仍照 Image > Save As 常規方法，未核其快捷鍵。"
+          ],
+          "evidence": [
+            {
+              "path": "learning/evidence/01/2026-10-22-lesson01-demo-v001/01-04-01-file-menu.png",
+              "sha256": "34fb7b908b2195873b9568a38b8aa54bdef0fd7ce29eb0e74570486259fd6768",
+              "method": "menu_label_visual",
+              "label": "File > Save As...：Shift Ctrl S（既有原圖鍵標）"
+            }
+          ]
+        }
+      ],
+      "figures": [
+        {
+          "type": "screenshot",
+          "path": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/05-03-28-reopened-verified.png",
+          "sha256": "c095e81a5bd43caf63f7784f6a31dca1223ccad7892a7c82113009cd59d64479",
+          "caption": "獨立 Blender 重開孔板原圖；檔案路徑由程式填入，圖中不能直接量出孔寬。"
+        }
+      ]
+    },
+    "ch08-xy-safety-01": {
+      "goal": "回看剛貼上Y Driver的中間風險",
+      "context": "回看同一示範較早的外框Y40、內腔尚未設定減4公式階段；不改動目前已保存的80×50成果。",
+      "actions": [
+        "對照本節第1～2步的原圖及讀值，辨認剛貼上來源時的紫色 Y 欄與暫時狀態。",
+        "比較公式設為來源變數減4前後的示範摘要，不需要在目前成果中重新貼上。"
+      ],
+      "success": "回看示範程式讀值：剛貼上時切割體 Y2～42、超出盒體 Y0～40；修正後 Y2～38。這不是目前場景的量測。",
+      "detail": {
+        "steps": [
+          "保留目前已更新並保存的80×50結果。",
+          "回看先前Y40時貼上Driver的原圖及摘要，區分公式修正前後。"
+        ],
+        "why": "本小步是回看較早時間點，避免破壞目前已完成的公式。"
+      }
+    },
+    "ch08-xy-safety-02": {
+      "goal": "回看 Fully defined 與未更新幾何",
+      "context": "回看本節第4～5步更新前的80×50場次；目前已更新成果不需倒退修改。",
+      "actions": [
+        "對照更新前的 Fully defined／紫色欄位與程式讀值。",
+        "再對照更新後的摘要與自己已保存模型；若自行重演，先另存新副本。"
+      ],
+      "success": "示範更新前切割體仍為 X2～68／Y2～38，更新後為 X2～78／Y2～48；界限來自程式讀值。",
+      "detail": {
+        "steps": [
+          "對照本節先前改為80×50、尚未按更新的原圖及摘要。",
+          "比較按更新後的程式讀值；不要將欄位顯示 Fully defined 當作幾何已更新。"
+        ],
+        "why": "本小步回看更新前後的不同時間點。"
+      }
+    },
+    "ch08-manual-lid-clamp-01": {
+      "detail": {
+        "steps": [
+          "先保留前一小步的70×40成果，重新開啟已另存的80×50雙 Driver／形狀鍵基準，並以新檔名另存一份反例副本。",
+          "選 Body 進 Body Sketch，將 X 改為110、Y保持50。",
+          "觀察 Driver／形狀鍵數值；內腔尚未手動更新，勿當作完成品。"
+        ],
+        "why": "超界反例從另一份80×50基準開始，與前一步70×40不是同一連續檔案。"
+      }
+    },
+    "ch07-sketch-02": {
+      "actions": [
+        "確認 XY 草圖作用中，在 3D Viewport 按 R 啟動矩形工具。",
+        "依畫面點草圖原點作第一角，移動游標，輸入 60、按 Tab、輸入 40，按 Enter 確認，再按 Esc 結束工具。"
+      ],
+      "detail": {
+        "steps": [
+          "確認 XY 草圖作用中，按 R。",
+          "點草圖原點作第一角，移動游標後輸入 60、Tab、40；按 Enter 確認，再按 Esc 結束矩形工具。",
+          "核對本例矩形60×40 mm；尚需後續添加長寬約束。"
+        ],
+        "why": "此操作次序依本次隔離 CAD Sketcher GUI 事件，數值輸入不等於尺寸約束。"
+      }
+    },
+    "ch07-sketch-03": {
+      "detail": {
+        "steps": [
+          "在草圖內按 D，點水平邊，移動游標放置標註，輸入60、Enter，按 Esc 結束本次工具。",
+          "再按 D 點垂直邊，移動游標放置標註，輸入40、Enter，再按 Esc 結束。",
+          "核對側欄兩項尺寸與 Fully defined；選錯邊先停止核對。"
+        ],
+        "why": "依本次 GUI 事件分別標註並結束兩次工具；約束自由度需另外確認。"
+      }
+    },
+    "ch07-sketch-04": {
+      "actions": [
+        "先將60×40草圖以尚未使用的新檔名另存，保留供下一節使用。",
+        "將寬度約束由60改為80 mm，另存另一個新檔名後重新開啟。"
+      ],
+      "detail": {
+        "steps": [
+          "先另存60×40基準草圖，勿覆寫。",
+          "在草圖側欄將寬度由60改成80 mm，以另一個新檔名另存並重開。",
+          "核對80×40與自由度；下一節重新開啟60×40基準副本。"
+        ],
+        "why": "保留兩個草圖狀態，使後續60×40拉伸示範有明確起點。"
+      }
+    },
+    "ch06-05-04-02": {
+      "actions": [
+        "保留既有作品，File > New > General；Scene Units 設 Millimeters 與 Unit Scale 0.001。File > Import > STL，依序匯入兩份 STL（Scale 1）。",
+        "分別選取插銷與孔板，在 N 側欄核對尺寸；逐一在 Edit Mode 切邊選取、取消選取，再執行 Select > Select All by Trait > Non Manifold。"
+      ],
+      "success": "插銷10×10×8、孔板96×26×4 mm；各自執行非流形邊檢查，結果依自己實際畫面記錄。不以尺寸或此項檢查認定可列印。",
+      "detail": {
+        "steps": [
+          "在新毫米場景匯入插銷及孔板 STL，分別選取核對外框。",
+          "逐件 Tab 進 Edit Mode、2 切邊選取、Select > None，再 Select > Select All by Trait > Non Manifold；記錄有無選中邊後返回 Object Mode。"
+        ],
+        "why": "外框與非流形邊是不同的數位檢查，都不能代替切片、實印或配合試驗。"
+      }
+    },
+    "ch06-05-06-03": {
+      "success": "上蓋外框60×40×6 mm，非流形邊檢查結果依實際畫面記錄；這不證明能列印或配合合格。0.4 mm 仍是試驗值，實體尺寸與試配未執行。",
+      "detail": {
+        "steps": [
+          "File > New > General，Units 設 mm、Unit Scale 0.001，File > Import > STL 匯入。",
+          "核對 60 × 40 × 6 mm，Tab、2、Select None 後做 Non Manifold 檢查。"
+        ],
+        "why": "本步只核對數位檔；第08章手工蓋示範仍使用固定0.4 mm試驗總間隙，將試配結果用於上蓋需另行設計與驗證。"
+      }
+    },
+    "ch07-sketch-01": {
+      "detail": {
+        "steps": [
+          "確認使用已保存的全新練習副本，且不含需保留的個人作品；要重現空白示範時，只在此副本選取並刪除預設場景物件。若有不確定的作品，先保留，勿全選刪除。",
+          "確認 CAD Sketcher 已啟用且單位為毫米，滑鼠在3D Viewport按 Ctrl+Shift+A；選平面時按 Z，核對XY草圖。"
+        ],
+        "why": "原示範先刪除預設物件再進草圖；保留物件的個人場景可能與原圖不同。"
+      }
+    },
+    "ch05-05-02-03": {
+      "actions": [
+        "在 Blender 保存第2步對 FitPin 的改動：File > Save 或 Ctrl+S；若檔案已登記，先另存尚未使用的新版本。",
+        "重開剛保存的檔案，確認 FitPin 10×10×8 mm，再到教學頁「檔案版本」選單元05、實際保存的檔案與「場景 .blend」登記。",
+        "登記後核對路徑與 SHA-256；後續修改先另存新版本。"
+      ],
+      "success": "重開檔案可見 FitPin 10×10×8 mm；版本表出現該保存檔及 SHA-256。",
+      "detail": {
+        "steps": [
+          "第1步建立檔案後第2步才修改模型；先用 File > Save 或 Ctrl+S 把變更寫入未登記版本。",
+          "重新開啟確認 FitPin 尺寸，再在教學頁登記對應檔案。",
+          "核對版本表路徑與 SHA；已登記檔後續修改需另存新版本。"
+        ],
+        "why": "登記只讀取已存檔內容，不會替 Blender 保存尚未寫入的變更。"
+      }
+    },
+    "ch05-05-03-04": {
+      "title": "新增第 2、3 孔切割體",
+      "shortcuts": []
+    },
+    "ch05-05-03-05": {
+      "title": "新增第 4～6 孔切割體"
+    }
+  },
+  "scopeNotes": [
+    "96個非附錄小步的詳細步驟已在8767逐步DOM檢視；30個小步另切換六分頁。",
+    "新70×40寬度拒絕為另一獨立Blender場次，模型／腳本／外掛由程式準備，GUI操作受控面板；內腔與蓋為程式讀值。",
+    "未逐張目視所有歷史原圖，未進行實體試驗，未更動學員進度。"
+  ]
+}

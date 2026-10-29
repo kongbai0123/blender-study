@@ -1,0 +1,767 @@
+{
+  "schemaVersion": 1,
+  "title": "CAD Sketcher 重開警告後的限定 GUI 恢復探測",
+  "sourceScene": "learning/evidence/parametric/2026-10-28-cad-thread-triangle-restore-v001/demo-files/cad_thread_triangle_060_restored_v003.blend",
+  "sourceSha256": "f45cb87cb9084bb9ca92612d6dc8726c28f7abfd099954e14ea4964975dd8508",
+  "model": "learning/evidence/parametric/2026-10-28-cad-thread-tool-recovery-probe-v002/demo-files/cad_thread_triangle_recovery_v001.blend",
+  "modelSha256": "3104b2e01e10150a451d236039044efaa60c45e612afa424121847c8858bcc76",
+  "audit": {
+    "path": "learning/evidence/parametric/2026-10-28-cad-thread-tool-recovery-probe-v002/independent-audit-v001.json",
+    "sha256": "031dfa6dacd5029cb9fb2ce7ea9b3114af9cc8b10de54e7a12f9c6a1aff42029"
+  },
+  "method": "隔離 Blender 5.2.1 + CAD Sketcher 0.32.1；GUI 重開有工具警告的副本、離開草圖、清單圖示重新進入、L 啟動 Line、點選 CAD Select 工具並選斜邊；視角以程式調整到可見，並非 GUI 平移示範。GUI 改 0.6→0.8→0.6、另存重開；路徑欄由程式填入。",
+  "readback": {
+    "warning": "Tool 'sketcher.slvs_select' not found for space 'VIEW_3D'",
+    "selectedExistingSlopedEdge": true,
+    "selectionBasis": "選取集合長度 1，原圖顯示斜邊橘色；未在程式單獨分類選取 ID 的曲線型別。",
+    "chosenToolId": "sketcher.slvs_select",
+    "dimensionBeforeMm": 0.6,
+    "dimensionChangedMm": 0.8,
+    "dimensionRestoredMm": 0.6,
+    "apexXBeforeMm": 6.0,
+    "apexXChangedMm": 5.970469951629639,
+    "apexXRestoredMm": 6.0,
+    "solver": "OKAY",
+    "dof": 0
+  },
+  "evidence": [
+    {
+      "sequence": 1,
+      "slug": "reopened-warning",
+      "image": "learning/evidence/parametric/2026-10-28-cad-thread-tool-recovery-probe-v002/CADREC-01-reopened-warning.png",
+      "sha256": "7c5c13b458f17d71b03d819c167c1516c25cb3c6ca3789ac7260b8559dac479d",
+      "observed": {
+        "activeSketch": "Body Sketch",
+        "dof": 0,
+        "solver": "OKAY",
+        "tool": "sketcher.slvs_select",
+        "selectedSketchCurveIds": [],
+        "constraints": [
+          {
+            "type": "EQUAL",
+            "value": null
+          },
+          {
+            "type": "DISTANCE",
+            "value": 0.6000000238418579
+          },
+          {
+            "type": "DISTANCE",
+            "value": 1.236931562423706
+          },
+          {
+            "type": "VERTICAL",
+            "value": null
+          }
+        ],
+        "positions": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            -2.4146001864622235e-10,
+            0.0
+          ],
+          [
+            6.0,
+            0.30000001192092896,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            -2.4146001864622235e-10,
+            0.0
+          ],
+          [
+            6.0,
+            0.30000001192092896,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            0.6000000238418579,
+            0.0
+          ],
+          [
+            6.0,
+            0.30000001192092896,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            0.6000000238418579,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            0.6000000238418579,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            -2.4146001864622235e-10,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "sequence": 2,
+      "slug": "leave",
+      "image": "learning/evidence/parametric/2026-10-28-cad-thread-tool-recovery-probe-v002/CADREC-02-leave.png",
+      "sha256": "1befd148b38b65dca256f2015fa2f47b8a3cc66024f9fc97198fb63ec3247e43",
+      "observed": {
+        "activeSketch": null,
+        "dof": null,
+        "solver": null,
+        "tool": "builtin.select_box",
+        "selectedSketchCurveIds": []
+      }
+    },
+    {
+      "sequence": 3,
+      "slug": "reenter",
+      "image": "learning/evidence/parametric/2026-10-28-cad-thread-tool-recovery-probe-v002/CADREC-03-reenter.png",
+      "sha256": "af6d5545761e1d545152898f476c2ad91f7901f57edb5dbe7c351dab09d767fd",
+      "observed": {
+        "activeSketch": "Body Sketch",
+        "dof": 0,
+        "solver": "OKAY",
+        "tool": "sketcher.slvs_select",
+        "selectedSketchCurveIds": [],
+        "constraints": [
+          {
+            "type": "EQUAL",
+            "value": null
+          },
+          {
+            "type": "DISTANCE",
+            "value": 0.6000000238418579
+          },
+          {
+            "type": "DISTANCE",
+            "value": 1.236931562423706
+          },
+          {
+            "type": "VERTICAL",
+            "value": null
+          }
+        ],
+        "positions": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            -2.4146001864622235e-10,
+            0.0
+          ],
+          [
+            6.0,
+            0.30000001192092896,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            -2.4146001864622235e-10,
+            0.0
+          ],
+          [
+            6.0,
+            0.30000001192092896,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            0.6000000238418579,
+            0.0
+          ],
+          [
+            6.0,
+            0.30000001192092896,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            0.6000000238418579,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            0.6000000238418579,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            -2.4146001864622235e-10,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "sequence": 4,
+      "slug": "select-tool",
+      "image": "learning/evidence/parametric/2026-10-28-cad-thread-tool-recovery-probe-v002/CADREC-04-select-tool.png",
+      "sha256": "26359b404c4c964fc053e01ea328123239aebe9cb39c57c1f60f68b999ed98d9",
+      "observed": {
+        "activeSketch": "Body Sketch",
+        "dof": 0,
+        "solver": "OKAY",
+        "tool": "sketcher.slvs_select",
+        "selectedSketchCurveIds": [],
+        "constraints": [
+          {
+            "type": "EQUAL",
+            "value": null
+          },
+          {
+            "type": "DISTANCE",
+            "value": 0.6000000238418579
+          },
+          {
+            "type": "DISTANCE",
+            "value": 1.236931562423706
+          },
+          {
+            "type": "VERTICAL",
+            "value": null
+          }
+        ],
+        "positions": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            -2.4146001864622235e-10,
+            0.0
+          ],
+          [
+            6.0,
+            0.30000001192092896,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            -2.4146001864622235e-10,
+            0.0
+          ],
+          [
+            6.0,
+            0.30000001192092896,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            0.6000000238418579,
+            0.0
+          ],
+          [
+            6.0,
+            0.30000001192092896,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            0.6000000238418579,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            0.6000000238418579,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            -2.4146001864622235e-10,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "sequence": 5,
+      "slug": "selected-line",
+      "image": "learning/evidence/parametric/2026-10-28-cad-thread-tool-recovery-probe-v002/CADREC-05-selected-line.png",
+      "sha256": "aae830fffbf6cea5a519894e2edd0efaf26cd50a9bbbe98e43d600bd2d0eda8e",
+      "observed": {
+        "activeSketch": "Body Sketch",
+        "dof": 0,
+        "solver": "OKAY",
+        "tool": "sketcher.slvs_select",
+        "selectedSketchCurveIds": [
+          "f562054a176401418850dda26f9a3c87"
+        ],
+        "constraints": [
+          {
+            "type": "EQUAL",
+            "value": null
+          },
+          {
+            "type": "DISTANCE",
+            "value": 0.6000000238418579
+          },
+          {
+            "type": "DISTANCE",
+            "value": 1.236931562423706
+          },
+          {
+            "type": "VERTICAL",
+            "value": null
+          }
+        ],
+        "positions": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            -2.4146001864622235e-10,
+            0.0
+          ],
+          [
+            6.0,
+            0.30000001192092896,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            -2.4146001864622235e-10,
+            0.0
+          ],
+          [
+            6.0,
+            0.30000001192092896,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            0.6000000238418579,
+            0.0
+          ],
+          [
+            6.0,
+            0.30000001192092896,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            0.6000000238418579,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            0.6000000238418579,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            -2.4146001864622235e-10,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "sequence": 6,
+      "slug": "changed-080",
+      "image": "learning/evidence/parametric/2026-10-28-cad-thread-tool-recovery-probe-v002/CADREC-06-changed-080.png",
+      "sha256": "7ac9900eac6ad630bc8cdde146e20a08ba2c5882062a25e15fb85a82c031ebdb",
+      "observed": {
+        "activeSketch": "Body Sketch",
+        "dof": 0,
+        "solver": "OKAY",
+        "tool": "sketcher.slvs_select",
+        "selectedSketchCurveIds": [
+          "f562054a176401418850dda26f9a3c87"
+        ],
+        "constraints": [
+          {
+            "type": "EQUAL",
+            "value": null
+          },
+          {
+            "type": "DISTANCE",
+            "value": 0.800000011920929
+          },
+          {
+            "type": "DISTANCE",
+            "value": 1.236931562423706
+          },
+          {
+            "type": "VERTICAL",
+            "value": null
+          }
+        ],
+        "positions": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            -2.4146001864622235e-10,
+            0.0
+          ],
+          [
+            5.970469951629639,
+            0.4000000059604645,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            -2.4146001864622235e-10,
+            0.0
+          ],
+          [
+            5.970469951629639,
+            0.4000000059604645,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            0.800000011920929,
+            0.0
+          ],
+          [
+            5.970469951629639,
+            0.4000000059604645,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            0.800000011920929,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            0.800000011920929,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            -2.4146001864622235e-10,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "sequence": 7,
+      "slug": "restored-060",
+      "image": "learning/evidence/parametric/2026-10-28-cad-thread-tool-recovery-probe-v002/CADREC-07-restored-060.png",
+      "sha256": "b9e9862e33e6b5e814452c2944db89b894466fb7c27be8d552954f674276567e",
+      "observed": {
+        "activeSketch": "Body Sketch",
+        "dof": 0,
+        "solver": "OKAY",
+        "tool": "sketcher.slvs_select",
+        "selectedSketchCurveIds": [
+          "f562054a176401418850dda26f9a3c87"
+        ],
+        "constraints": [
+          {
+            "type": "EQUAL",
+            "value": null
+          },
+          {
+            "type": "DISTANCE",
+            "value": 0.6000000238418579
+          },
+          {
+            "type": "DISTANCE",
+            "value": 1.236931562423706
+          },
+          {
+            "type": "VERTICAL",
+            "value": null
+          }
+        ],
+        "positions": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            -2.4146001864622235e-10,
+            0.0
+          ],
+          [
+            6.0,
+            0.30000001192092896,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            -2.4146001864622235e-10,
+            0.0
+          ],
+          [
+            6.0,
+            0.30000001192092896,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            0.6000000238418579,
+            0.0
+          ],
+          [
+            6.0,
+            0.30000001192092896,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            0.6000000238418579,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            0.6000000238418579,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            -2.4146001864622235e-10,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "sequence": 8,
+      "slug": "saved",
+      "image": "learning/evidence/parametric/2026-10-28-cad-thread-tool-recovery-probe-v002/CADREC-08-saved.png",
+      "sha256": "6d1770b7262080c7d589e2dba895e2e98cd9114c74f7eb50801c83407c01277c",
+      "observed": {
+        "activeSketch": "Body Sketch",
+        "dof": 0,
+        "solver": "OKAY",
+        "tool": "sketcher.slvs_select",
+        "selectedSketchCurveIds": [
+          "f562054a176401418850dda26f9a3c87"
+        ],
+        "constraints": [
+          {
+            "type": "EQUAL",
+            "value": null
+          },
+          {
+            "type": "DISTANCE",
+            "value": 0.6000000238418579
+          },
+          {
+            "type": "DISTANCE",
+            "value": 1.236931562423706
+          },
+          {
+            "type": "VERTICAL",
+            "value": null
+          }
+        ],
+        "positions": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            -2.4146001864622235e-10,
+            0.0
+          ],
+          [
+            6.0,
+            0.30000001192092896,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            -2.4146001864622235e-10,
+            0.0
+          ],
+          [
+            6.0,
+            0.30000001192092896,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            0.6000000238418579,
+            0.0
+          ],
+          [
+            6.0,
+            0.30000001192092896,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            0.6000000238418579,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            0.6000000238418579,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            -2.4146001864622235e-10,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "sequence": 9,
+      "slug": "reopened-result",
+      "image": "learning/evidence/parametric/2026-10-28-cad-thread-tool-recovery-probe-v002/CADREC-09-reopened-result.png",
+      "sha256": "fb76be5b45c5e814226b7cccf01eb986c32fe747a338d1881b1a8b1db975643a",
+      "observed": {
+        "activeSketch": "Body Sketch",
+        "dof": 0,
+        "solver": "OKAY",
+        "tool": "sketcher.slvs_select",
+        "selectedSketchCurveIds": [],
+        "constraints": [
+          {
+            "type": "EQUAL",
+            "value": null
+          },
+          {
+            "type": "DISTANCE",
+            "value": 0.6000000238418579
+          },
+          {
+            "type": "DISTANCE",
+            "value": 1.236931562423706
+          },
+          {
+            "type": "VERTICAL",
+            "value": null
+          }
+        ],
+        "positions": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            -2.4146001864622235e-10,
+            0.0
+          ],
+          [
+            6.0,
+            0.30000001192092896,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            -2.4146001864622235e-10,
+            0.0
+          ],
+          [
+            6.0,
+            0.30000001192092896,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            0.6000000238418579,
+            0.0
+          ],
+          [
+            6.0,
+            0.30000001192092896,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            0.6000000238418579,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            0.6000000238418579,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            -2.4146001864622235e-10,
+            0.0
+          ]
+        ]
+      }
+    }
+  ],
+  "limitations": [
+    "僅此檔案、此版 Blender／插件，測試重新進入、選單一現有線、兩次改值、存檔／重開；不是警告成因修復或所有工具可用證明。",
+    "第一輪 probe 因重新進入後視角回到原點、L 後 Esc 停在 Line 而沒選到線；失敗證據原樣保留。",
+    "再次重開是否重現短暫警告未以自動日誌確認；無警告截圖不等於根因已消除。",
+    "實拍中的視角由程式調整，不得說整個對焦是 GUI 執行。",
+    "原 .blend、raw runner 和外掛未經公開隱私審查。",
+    "沒有實體列印、量測、配合或強度判定。"
+  ],
+  "physicalPrint": null,
+  "physicalMeasurement": null,
+  "physicalFit": null,
+  "qualifiedClearance": null,
+  "qualifiedStrength": null
+}

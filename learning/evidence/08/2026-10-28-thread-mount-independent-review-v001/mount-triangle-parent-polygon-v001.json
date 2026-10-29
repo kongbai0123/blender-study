@@ -1,0 +1,65 @@
+{
+  "sourceSha256": "b97a021c1422ced95b17a80893195df1907a725eb2e53789e0992a23793320ce",
+  "minimumTriangleAreaMm2": 5.434115984205692e-05,
+  "triangleVertices": [
+    711,
+    705,
+    703
+  ],
+  "triangleEdgeIsActualMeshEdge": [
+    true,
+    true,
+    false
+  ],
+  "polygonIndex": 293,
+  "polygonVertexCount": 7,
+  "polygonAreaMm2": 1.103899359703064,
+  "polygonNormal": [
+    0.9694080352783203,
+    0.1329684853553772,
+    -0.20631854236125946
+  ],
+  "polygonVertices": [
+    [
+      30.28101921081543,
+      3.518505811691284,
+      -3.518505811691284
+    ],
+    [
+      30.254056930541992,
+      3.1719629764556885,
+      -3.86504864692688
+    ],
+    [
+      30.24976921081543,
+      2.764472246170044,
+      -4.137325286865234
+    ],
+    [
+      30.0,
+      3.3195314407348633,
+      -4.968029499053955
+    ],
+    [
+      30.0,
+      3.3374485969543457,
+      -4.956826686859131
+    ],
+    [
+      30.0,
+      3.5152764320373535,
+      -4.839572906494141
+    ],
+    [
+      30.024999618530273,
+      4.242640495300293,
+      -4.242640495300293
+    ]
+  ],
+  "maxPolygonPlaneDeviationMm": 0.0028827637434005737,
+  "shortestRealEdgeVertices": [
+    621,
+    675
+  ],
+  "explanation": "Triangle is an internal triangulation of its polygon; its area and altitude describe the tessellation, not wall thickness. Real mesh edge and polygon geometry still require independent validity checks."
+}

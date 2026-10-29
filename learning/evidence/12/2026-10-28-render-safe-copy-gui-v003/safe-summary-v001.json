@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "kind": "isolated_blender_gui_demonstration",
+  "description": "渲染場景以 GUI 另存到隔離假工作區並檢查相對輸出；檔案欄位由程式填寫，未渲染。",
+  "blenderVersion": "5.2.1 LTS",
+  "records": [
+    {
+      "action": "開啟隔離複本；相對輸出依場景位置解析",
+      "image": "learning/evidence/12/2026-10-28-render-safe-copy-gui-v003/12-COPY-01-source.png",
+      "sha256": "eb9d906a31ecc78cf39f8fa376bd8ad290b948c359d25f4530f7b200e17710c3",
+      "observed": {
+        "blendInFakeWorkspace": false,
+        "relativeOutputSetting": "//render_output\\box_lid",
+        "outputInFakeWorkspace": false,
+        "outputRelativeToWorkspace": null,
+        "propertiesContext": "MODIFIER",
+        "interpretation": "demonstration only; no learner file or physical test"
+      }
+    },
+    {
+      "action": "GUI 另存到隔離假工作區的新檔名",
+      "image": "learning/evidence/12/2026-10-28-render-safe-copy-gui-v003/12-COPY-02-saved.png",
+      "sha256": "633b0445de2d4bcbb52b341a374474529d0b36efe255fe82171f090dfdf536c4",
+      "observed": {
+        "blendInFakeWorkspace": true,
+        "relativeOutputSetting": "//render_output\\box_lid",
+        "outputInFakeWorkspace": true,
+        "outputRelativeToWorkspace": "render_output/box_lid",
+        "propertiesContext": "MODIFIER",
+        "interpretation": "demonstration only; no learner file or physical test"
+      }
+    },
+    {
+      "action": "GUI 選擇 Output Properties 並核對相對目的地",
+      "image": "learning/evidence/12/2026-10-28-render-safe-copy-gui-v003/12-COPY-03-output.png",
+      "sha256": "9084b9b4ad27381fbdac4da40a5282a70f8f808fb1f0282b9ae26a2687b5283a",
+      "observed": {
+        "blendInFakeWorkspace": true,
+        "relativeOutputSetting": "//render_output\\box_lid",
+        "outputInFakeWorkspace": true,
+        "outputRelativeToWorkspace": "render_output/box_lid",
+        "propertiesContext": "OUTPUT",
+        "interpretation": "demonstration only; no learner file or physical test"
+      }
+    },
+    {
+      "action": "重開副本並重新解析輸出",
+      "image": "learning/evidence/12/2026-10-28-render-safe-copy-gui-v003/12-COPY-04-reopened.png",
+      "sha256": "eb9d906a31ecc78cf39f8fa376bd8ad290b948c359d25f4530f7b200e17710c3",
+      "observed": {
+        "blendInFakeWorkspace": true,
+        "relativeOutputSetting": "//render_output\\box_lid",
+        "outputInFakeWorkspace": true,
+        "outputRelativeToWorkspace": "render_output/box_lid",
+        "propertiesContext": "MODIFIER",
+        "interpretation": "demonstration only; no learner file or physical test"
+      }
+    }
+  ],
+  "limitations": [
+    "實際視窗示範，不代表學員完成；不代表實體製造或配合合格。",
+    "原始 runner-status 可能包含本機路徑或 Recent 清單，不公開。",
+    "只在本次假工作區檢查，未寫學員工作區或實際輸出圖片；相對路徑依場景位置解析。"
+  ],
+  "source": {
+    "path": "learning/evidence/12/2026-10-27-engineering-box-render-v004/demo-files/engineering_box_render_v001.blend",
+    "sha256": "db03247077da659ff4c4a0a5ac411e7662ab326fb6302e58496e1636f69246de"
+  },
+  "savedScene": {
+    "path": "learning/evidence/12/2026-10-28-render-safe-copy-gui-v003/demo-files/fake-workspace/render_safe_copy_v001.blend",
+    "sha256": "a83d13d12af9ed2680b7e5032716addc7b72a511c461ce59600710a47eb41f02"
+  }
+}

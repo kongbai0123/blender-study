@@ -1,0 +1,319 @@
+{
+  "schemaVersion": 1,
+  "id": "cad-sketcher-environment-trial-v001",
+  "recordedOn": "2026-10-27",
+  "status": "minimum_rectangle_trial_passed",
+  "summary": "Blender 5.2.1 LTS 的獨立環境已載入 CAD Sketcher 0.32.1；原生操作建立60×40 mm約束草圖，改為80×40 mm並重新開啟後仍維持DoF0與生成平面網格尺寸。",
+  "scope": "隔離環境與最小矩形可行性試驗，尚未完成參數小盒、盒蓋連動或第04章正式教材。",
+  "environment": {
+    "blender": "5.2.1 LTS",
+    "buildHash": "9e2066aef7ef",
+    "python": "3.13.13 (main, May  8 2026, 12:37:03) [MSC v.1944 64 bit (AMD64)]",
+    "module": "bl_ext.user_default.CAD_Sketcher",
+    "version": "0.32.1",
+    "slvsModule": "__init__.py",
+    "unitScale": 0.0010000000474974513,
+    "setupMethod": "programmatic isolated extension enable and scene units; not UI teaching actions",
+    "learnerPreferencesSaved": false
+  },
+  "provenance": {
+    "url": "https://github.com/hlorus/CAD_Sketcher/releases/download/v0.32.1/CAD_Sketcher-0.32.1-windows_x64.zip",
+    "downloadedAt": "2026-10-27T03:51:36.130443+00:00",
+    "bytes": 1283581,
+    "sha256": "b456070e9d1cec7fea85494b7afbbae0a543e9c2381cc40349a763d2de038a59",
+    "release": "v0.32.1",
+    "purpose": "isolated local compatibility validation; not a learner installation",
+    "tagObject": {
+      "sha": "6a5a34001efcdec05381b6f419cc4d0394a24ab5",
+      "type": "tag",
+      "url": "https://api.github.com/repos/hlorus/CAD_Sketcher/git/tags/6a5a34001efcdec05381b6f419cc4d0394a24ab5"
+    },
+    "releaseURL": "https://github.com/hlorus/CAD_Sketcher/releases/tag/v0.32.1",
+    "publishedAt": "2026-09-28T11:11:24Z",
+    "prerelease": false,
+    "assetDigest": "sha256:b456070e9d1cec7fea85494b7afbbae0a543e9c2381cc40349a763d2de038a59",
+    "license": "GPL-3.0-or-later",
+    "minimumBlender": "5.0.0",
+    "bundledWindowsSolverWheels": [
+      {
+        "name": "slvs-3.2-cp311-cp311-win_amd64.whl",
+        "bytes": 286886,
+        "sha256": "a1f61065ddadd51dcc35e35e2941876c88f81e0d52536cc0c5e9a693a466e28b"
+      },
+      {
+        "name": "slvs-3.2-cp313-cp313-win_amd64.whl",
+        "bytes": 285833,
+        "sha256": "86159bc0c5e749eb04d94cbf28b6d38ace795e802b8131be36870502e336f4fa"
+      }
+    ],
+    "commit": {
+      "sha": "e7db7e6f94ad9dcaf2be03e849e1d3a2ac82e7a4",
+      "type": "commit",
+      "url": "https://api.github.com/repos/hlorus/CAD_Sketcher/git/commits/e7db7e6f94ad9dcaf2be03e849e1d3a2ac82e7a4"
+    }
+  },
+  "cases": [
+    {
+      "id": "rectangle-60",
+      "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-rectangle-v002/rectangle-60-verification.json",
+      "sha256": "f025c42f3bcbfe67df4ebf0e48077542c4e10167e67f33f40ef9809e8caac766",
+      "passed": true,
+      "solverState": "OKAY",
+      "dof": 0,
+      "drivingDimensions": [
+        60.0,
+        40.0
+      ],
+      "evaluatedMeshDimensionsMm": [
+        60.0,
+        40.0,
+        0.0
+      ],
+      "checks": {
+        "solverOkay": true,
+        "fullyDefined": true,
+        "dimensions": true,
+        "twoDrivingDimensions": true
+      }
+    },
+    {
+      "id": "rectangle-80",
+      "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-rectangle-v002/rectangle-80-verification.json",
+      "sha256": "235dc960ae116a1e9b871d7df3c79c865e1e3d4d0fc0c2bdb3839bbef201a9bb",
+      "passed": true,
+      "solverState": "OKAY",
+      "dof": 0,
+      "drivingDimensions": [
+        80.0,
+        40.0
+      ],
+      "evaluatedMeshDimensionsMm": [
+        80.0,
+        40.0,
+        0.0
+      ],
+      "checks": {
+        "solverOkay": true,
+        "fullyDefined": true,
+        "dimensions": true,
+        "twoDrivingDimensions": true
+      }
+    },
+    {
+      "id": "reopened-80",
+      "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-rectangle-v002/reopened-80-verification.json",
+      "sha256": "e97470bbb2a0c753a30d59171df34f1a591f50daf7b012890e831d5004565f3a",
+      "passed": true,
+      "solverState": "OKAY",
+      "dof": 0,
+      "drivingDimensions": [
+        80.0,
+        40.0
+      ],
+      "evaluatedMeshDimensionsMm": [
+        80.0,
+        40.0,
+        0.0
+      ],
+      "checks": {
+        "solverOkay": true,
+        "fullyDefined": true,
+        "dimensions": true,
+        "twoDrivingDimensions": true
+      }
+    }
+  ],
+  "sceneFiles": [
+    {
+      "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-rectangle-v002/demo-files/cad_rectangle_60x40_v001.blend",
+      "sha256": "a7ad848278d2a09ce1006139d98e401e0cfde6b77cc83d14d50a6b65c76a7cd4",
+      "bytes": 114382
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-rectangle-v002/demo-files/cad_rectangle_80x40_v002.blend",
+      "sha256": "cc9346a6e505fb261d7134b72646ba2717689fe806d7d3c015e79273e65cb5bb",
+      "bytes": 114351
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-rectangle-v002/CAD-ENV-01-enabled.png",
+      "sha256": "7a4fb6b1c6210e0deade75eaba034b3a0851126db5dfc90a737ba133df9d514d",
+      "width": 1494,
+      "height": 1019,
+      "recordedAt": "2026-10-27T03:57:31.433Z",
+      "action": "環境啟用：獨立 CAD Sketcher 0.32.1 與毫米設定（程式設定）",
+      "method": "programmatic_environment_setup_and_readback",
+      "visualReview": "已逐張檢視原生畫面；空草圖或繪圖模態的Fully defined文字不能當成最終矩形已完全約束。"
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-rectangle-v002/CAD-ENV-02-sketch-plane-picker.png",
+      "sha256": "be35bad20433e15ea17d8d0266786661b664b2932fe933558bf352f29332adff",
+      "width": 1494,
+      "height": 1019,
+      "recordedAt": "2026-10-27T03:57:33.833Z",
+      "action": "Ctrl+Shift+A 啟動 Add Sketch，觀察工作平面選擇",
+      "method": "native_ui_events_and_readback",
+      "visualReview": "已逐張檢視原生畫面；空草圖或繪圖模態的Fully defined文字不能當成最終矩形已完全約束。"
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-rectangle-v002/CAD-ENV-03-origin-sketch.png",
+      "sha256": "4ec33da3eeda90ba738c770b73ebfdbbcf7505ab8a6d4c50acb3c29582248bd4",
+      "width": 1494,
+      "height": 1019,
+      "recordedAt": "2026-10-27T03:57:34.733Z",
+      "action": "Add Sketch 工具內按 Z 選 XY 草圖平面",
+      "method": "native_ui_events_and_readback",
+      "visualReview": "已逐張檢視原生畫面；空草圖或繪圖模態的Fully defined文字不能當成最終矩形已完全約束。"
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-rectangle-v002/CAD-ENV-04-sidebar.png",
+      "sha256": "dfd804acf047a0c25eda3d42c6fe293b9b78e5e1b15f5ea88a5f2886945bce98",
+      "width": 1494,
+      "height": 1019,
+      "recordedAt": "2026-10-27T03:57:36.333Z",
+      "action": "開啟 Sidebar，觀察擴充套件面板",
+      "method": "native_ui_events_and_readback",
+      "visualReview": "已逐張檢視原生畫面；空草圖或繪圖模態的Fully defined文字不能當成最終矩形已完全約束。"
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-rectangle-v002/CAD-ENV-05-rectangle-numeric.png",
+      "sha256": "9975e94ed33e5449ccb9a16f9488cbfe130918e33398894944f284c344991e2e",
+      "width": 1494,
+      "height": 1019,
+      "recordedAt": "2026-10-27T03:57:40.633Z",
+      "action": "Corner Rectangle 第一點取原點，輸入 60、Tab、40",
+      "method": "native_ui_events_and_readback",
+      "visualReview": "已逐張檢視原生畫面；空草圖或繪圖模態的Fully defined文字不能當成最終矩形已完全約束。"
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-rectangle-v002/CAD-ENV-06-rectangle.png",
+      "sha256": "f4cff5646bb13155931c8ea88d1fab9659e0c01ed0b4a3af60eca8e521e0f1c3",
+      "width": 1494,
+      "height": 1019,
+      "recordedAt": "2026-10-27T03:57:42.033Z",
+      "action": "確認矩形，讀回草圖點座標與約束狀態",
+      "method": "native_ui_events_and_readback",
+      "visualReview": "已逐張檢視原生畫面；空草圖或繪圖模態的Fully defined文字不能當成最終矩形已完全約束。"
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-rectangle-v002/CAD-ENV-07-width-dimension.png",
+      "sha256": "7b16090a76449583267fe4781c88655f40971901fcc9a63d8b72722fa8249d5d",
+      "width": 1494,
+      "height": 1019,
+      "recordedAt": "2026-10-27T03:57:47.973Z",
+      "action": "Dimension 選底邊並輸入 60 mm，新增驅動尺寸",
+      "method": "native_ui_events_and_readback",
+      "visualReview": "已逐張檢視原生畫面；第07～12張的幾何尺寸標註延伸線超出視區，尺寸與自由度以右側Constraints及Sketcher面板核對。"
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-rectangle-v002/CAD-ENV-08-height-dimension.png",
+      "sha256": "87164ea22af1d7cac054f96f513dd16ddfbcc39ef06098083524cfd659e34f9d",
+      "width": 1494,
+      "height": 1019,
+      "recordedAt": "2026-10-27T03:57:51.273Z",
+      "action": "Dimension 選右邊並輸入 40 mm，讀回自由度",
+      "method": "native_ui_events_and_readback",
+      "visualReview": "已逐張檢視原生畫面；第07～12張的幾何尺寸標註延伸線超出視區，尺寸與自由度以右側Constraints及Sketcher面板核對。"
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-rectangle-v002/CAD-ENV-09-saved-60.png",
+      "sha256": "64cc02ef072a0802cb5b4eaf4f8243975c6f2a459bc30114dbfffe53f418ce07",
+      "width": 1494,
+      "height": 1019,
+      "recordedAt": "2026-10-27T03:57:57.273Z",
+      "action": "Save As 保存 60×40 mm 草圖檢查點",
+      "method": "native_ui_events_and_readback",
+      "visualReview": "已逐張檢視原生畫面；第07～12張的幾何尺寸標註延伸線超出視區，尺寸與自由度以右側Constraints及Sketcher面板核對。"
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-rectangle-v002/CAD-ENV-10-changed-80.png",
+      "sha256": "296e09864323ea509c58f7f2252ad0f5e53a950fa9390ff6e797e5d0fd8622fc",
+      "width": 1494,
+      "height": 1019,
+      "recordedAt": "2026-10-27T03:57:59.673Z",
+      "action": "Constraints 第一個驅動尺寸改為 80 mm，保留另一尺寸40 mm",
+      "method": "native_ui_events_and_readback",
+      "visualReview": "已逐張檢視原生畫面；第07～12張的幾何尺寸標註延伸線超出視區，尺寸與自由度以右側Constraints及Sketcher面板核對。"
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-rectangle-v002/CAD-ENV-11-saved-80.png",
+      "sha256": "d9ce778ed2c69299a653797bc4b90be70632801342feb9b6b3590c8b4c48720d",
+      "width": 1494,
+      "height": 1019,
+      "recordedAt": "2026-10-27T03:58:05.673Z",
+      "action": "Save As 另存 80×40 mm v002",
+      "method": "native_ui_events_and_readback",
+      "visualReview": "已逐張檢視原生畫面；第07～12張的幾何尺寸標註延伸線超出視區，尺寸與自由度以右側Constraints及Sketcher面板核對。"
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-rectangle-v002/CAD-ENV-12-reopened-80.png",
+      "sha256": "cee4e6454edd9c8357ff76a086fbebee82e0006a273d5b8e17d20e3b7108ce43",
+      "width": 1494,
+      "height": 1019,
+      "recordedAt": "2026-10-27T03:58:10.974Z",
+      "action": "重新開啟 v002，讀回草圖、約束與生成網格",
+      "method": "native_ui_events_and_readback",
+      "visualReview": "已逐張檢視原生畫面；第07～12張的幾何尺寸標註延伸線超出視區，尺寸與自由度以右側Constraints及Sketcher面板核對。"
+    }
+  ],
+  "runner": {
+    "status": "completed",
+    "blenderExitCode": 0,
+    "runErrors": [],
+    "workspaceContentsUnchanged": true,
+    "workspaceComparisonMeaning": "僅執行前後內容比較，不證明期間未曾寫入或辨認寫入者。"
+  },
+  "protectedBaselineComparison": [
+    {
+      "path": "learning/progress.json",
+      "baselineSha256": "26130175ef80a9fb83699f93a8c33de7b098b17ffa2c10aef794808390d19325",
+      "actualSha256": "26130175ef80a9fb83699f93a8c33de7b098b17ffa2c10aef794808390d19325",
+      "matches": true
+    },
+    {
+      "path": "learning/evidence/04/2026-10-22-lesson04-demo-v001/demo-files/u04_box_v001.blend",
+      "baselineSha256": "b918ee87d26e289f4c8a2f6633beceb854c7d0511e3eddcc969a0696afcd2530",
+      "actualSha256": "b918ee87d26e289f4c8a2f6633beceb854c7d0511e3eddcc969a0696afcd2530",
+      "matches": true
+    },
+    {
+      "path": "learning/evidence/05/2026-10-22-lesson05-lid-demo-v001/demo-files/u05_lid_v001.blend",
+      "baselineSha256": "ab08f331dcb26c5ffc6c6ca56c7c7f022df96791c4777e37c5f01a964fbed6ff",
+      "actualSha256": "ab08f331dcb26c5ffc6c6ca56c7c7f022df96791c4777e37c5f01a964fbed6ff",
+      "matches": true
+    }
+  ],
+  "limitations": [
+    "場景單位與擴充套件啟用為明確分類的程式環境設定，幾何與尺寸編輯為原生模擬事件。",
+    "本次生成的是平面矩形網格，不是已完成的小盒或上蓋。",
+    "尺寸標籤排版仍待正式教學整理；保留原圖，未重畫或修改像素。",
+    "試片、列印、材料、允許應變與合格配合皆未驗證。"
+  ],
+  "physicalMeasurements": null,
+  "fitResults": null,
+  "qualifiedClearanceMm": null,
+  "learnerConfirmed": false,
+  "retainedAttempts": [
+    {
+      "run": "2026-10-27-cad-sketcher-probe-v001",
+      "finding": "F3找不到僅工具限定的Add Sketch on Origin Plane；不能用runner completed推斷操作成功。"
+    },
+    {
+      "run": "2026-10-27-cad-sketcher-probe-v002",
+      "finding": "確認Ctrl+Shift+A→Z建立空XY草圖。"
+    },
+    {
+      "run": "2026-10-27-cad-sketcher-probe-v003",
+      "finding": "60×40矩形的直接座標輸入未留下兩個尺寸約束，DoF2。"
+    },
+    {
+      "run": "2026-10-27-cad-sketcher-probe-v004",
+      "finding": "加入寬度約束成功，右邊界接近Sidebar造成高度點選未完成，DoF1。"
+    },
+    {
+      "run": "2026-10-27-cad-sketcher-rectangle-v001",
+      "finding": "60與80尺寸及DoF0驗證成功並存兩檔，但File選單位置錯誤，重開未完成；runner failed。"
+    }
+  ]
+}

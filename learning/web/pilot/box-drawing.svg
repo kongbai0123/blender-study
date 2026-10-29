@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 620" role="img" aria-labelledby="title desc">
+<title id="title">開口盒：題目用工程圖</title><desc id="desc">小盒俯視圖與 A-A 中央剖面，單位毫米。外形 60 × 40 × 30，內腔 56 × 36 × 28，壁底厚 2。由既有小盒 STL 網格推導，試教草案，並非已驗證製造圖。</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#316397"/></marker><pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="8" stroke="#7895ab" stroke-width="1"/></pattern></defs>
+<rect width="1120" height="620" rx="12" fill="#fff"/>
+<g font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" fill="#17324b"><text x="40" y="48" font-size="27" font-weight="700">開口盒｜試教題目工程圖</text><text x="40" y="78" font-size="16">單位：mm　｜　名義尺寸草案　｜　非正式製造圖</text>
+<text x="180" y="145" font-size="20" font-weight="700">俯視圖</text><text x="712" y="145" font-size="20" font-weight="700">A–A 中央剖面</text></g>
+<g stroke="#9cb3c3" stroke-width="1" stroke-dasharray="6 5"><line x1="100" y1="305" x2="495" y2="305"/></g>
+<g fill="#385b75" font-family="sans-serif" font-size="15"><text x="66" y="293">A</text><text x="495" y="295">A</text></g>
+<style>.edge{stroke:#19374e;stroke-width:2;fill:none;stroke-linecap:square}.dim{stroke:#316397;stroke-width:1.3;fill:none}.label{fill:#255078;font:16px sans-serif}</style>
+<path d="M690 195H701V349H1009V195H1020V360H690Z" fill="url(#hatch)"/>
+<line class="edge" x1="130" y1="415" x2="460" y2="415"/>
+<line class="edge" x1="141" y1="404" x2="449" y2="404"/>
+<line class="edge" x1="460" y1="415" x2="460" y2="195"/>
+<line class="edge" x1="449" y1="404" x2="449" y2="206"/>
+<line class="edge" x1="130" y1="415" x2="130" y2="195"/>
+<line class="edge" x1="141" y1="404" x2="141" y2="206"/>
+<line class="edge" x1="130" y1="195" x2="460" y2="195"/>
+<line class="edge" x1="141" y1="206" x2="449" y2="206"/>
+<line class="edge" x1="690" y1="360" x2="690" y2="195"/>
+<line class="edge" x1="690" y1="360" x2="1020" y2="360"/>
+<line class="edge" x1="1020" y1="360" x2="1020" y2="195"/>
+<line class="edge" x1="701" y1="349" x2="701" y2="195"/>
+<line class="edge" x1="701" y1="349" x2="1009" y2="349"/>
+<line class="edge" x1="1009" y1="349" x2="1009" y2="195"/>
+<line class="edge" x1="690" y1="195" x2="701" y2="195"/>
+<line class="edge" x1="1009" y1="195" x2="1020" y2="195"/>
+<g class="dim">
+<path d="M130 195V165 M460 195V165 M141 195V182 M449 195V182"/>
+<path d="M130 170H460" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+<path d="M141 185H449" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+<path d="M130 195H92 M130 415H92 M141 206H115 M141 404H115"/>
+<path d="M98 195V415" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+<path d="M116 206V404" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+<path d="M690 360V398 M1020 360V398 M690 393H1020" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+<path d="M1020 195H1065 M1020 360H1065 M1060 195V360" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+<path d="M1009 195H1043 M1009 349H1043 M1038 195V349" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+<path d="M702 349 L652 374 M702 206 L652 225"/>
+</g>
+<g class="label" text-anchor="middle"><text x="295" y="163">60</text><text x="295" y="181">56</text><text x="91" y="305" transform="rotate(-90 91 305)">40</text><text x="109" y="305" transform="rotate(-90 109 305)">36</text><text x="855" y="416">60</text><text x="1075" y="280" transform="rotate(-90 1075 280)">30</text><text x="1052" y="280" transform="rotate(-90 1052 280)">28</text></g>
+<g class="label"><text x="618" y="225">壁厚 2</text><text x="618" y="385">底厚 2</text></g>
+<g font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" fill="#40596b" font-size="16"><text x="40" y="492">原盒名義尺寸：外形 60 × 40 × 30；內腔 56 × 36 × 28；壁厚與底厚 2。</text><text x="40" y="521">依既有 STL 網格取得投影與中央剖面，尺寸依原示範模型核對；非實體量測值。</text><text x="40" y="550">原模型：u04_box_v001.stl　｜　SHA-256：0e8fc0863ea9f392…</text><text x="40" y="579">用途：題目尺寸說明；材料、製程、公差與實體配合尚未驗證。</text></g></svg>

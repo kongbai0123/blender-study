@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "id": "cad-sketcher-y-warning-v001",
+  "existingSummary": "learning/evidence/parametric/2026-10-27-cad-sketcher-y-dimension-v001/y-dimension-verification-v001.json",
+  "warning": {
+    "screenshot": "learning/evidence/parametric/2026-10-27-cad-sketcher-y-dimension-v001/CAD-Y-04-reopened-80x50.png",
+    "sha256": "ab5d2a09d5b580e8e612263fc5e8aa7d73f3cc9048fb3acfbc40cceddd6e13b4",
+    "observedText": "Tool 'sketcher.slvs_select' not found for space 'VIEW_3D'",
+    "timing": "visible in Blender status bar immediately after Ctrl+O reopening 80x50 scene",
+    "cause": "unknown; no diagnosis inferred",
+    "observedFollowUp": "the following native GUI edit to 45 mm and 12 numerical checks succeeded; this does not prove other sketch tools or drawing workflows work after reopen",
+    "userAction": "if shown, stop and check the actual tool and extension state; report the screenshot; do not assume it is harmless"
+  },
+  "scope": "supplemental correction; original screenshot, runner and prior summary are unchanged"
+}

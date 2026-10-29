@@ -1,0 +1,612 @@
+{
+  "schemaVersion": 1,
+  "title": "CAD Sketcher 重開警告後的限定 GUI 恢復探測",
+  "scope": "限定版本及檔案的補充測試，不更新學員進度；不是已修復擴充套件錯誤。",
+  "startingScene": {
+    "path": "learning/evidence/parametric/2026-10-28-cad-thread-triangle-restore-v001/demo-files/cad_thread_triangle_060_restored_v003.blend",
+    "sha256": "f45cb87cb9084bb9ca92612d6dc8726c28f7abfd099954e14ea4964975dd8508"
+  },
+  "demonstrationScene": {
+    "path": "learning/evidence/parametric/2026-10-28-cad-thread-tool-recovery-probe-v002/demo-files/cad_thread_triangle_recovery_v001.blend",
+    "sha256": "3104b2e01e10150a451d236039044efaa60c45e612afa424121847c8858bcc76"
+  },
+  "sourceSummary": "learning/evidence/parametric/2026-10-28-cad-thread-tool-recovery-probe-v002/safe-summary-v001.json",
+  "sourceSummarySha256": "bbc76870784912a72994db73f35b780e0da018232a0853e8cbf20cbd6abc4ac1",
+  "limitations": [
+    "僅此檔案、此版 Blender／插件，測試重新進入、選單一現有線、兩次改值、存檔／重開；不是警告成因修復或所有工具可用證明。",
+    "第一輪 probe 因重新進入後視角回到原點、L 後 Esc 停在 Line 而沒選到線；失敗證據原樣保留。",
+    "再次重開是否重現短暫警告未以自動日誌確認；無警告截圖不等於根因已消除。",
+    "實拍中的視角由程式調整，不得說整個對焦是 GUI 執行。",
+    "原 .blend、raw runner 和外掛未經公開隱私審查。",
+    "沒有實體列印、量測、配合或強度判定。"
+  ],
+  "physicalPrint": null,
+  "physicalMeasurement": null,
+  "physicalFit": null,
+  "qualifiedClearance": null,
+  "qualifiedStrength": null,
+  "steps": [
+    {
+      "id": "11-cad-recovery-01",
+      "goal": "辨認重開警告",
+      "operation": "開啟已保存的 0.6 mm CAD 草圖副本，查看畫面底部是否顯示 slvs_select 工具警告。",
+      "context": "使用隔離 Blender 和 CAD Sketcher；不直接修改原檔。",
+      "visibleConfirmation": "原圖可見工具警告；此時讀回求解器 OKAY、DoF0，不能推定所有工具正常。",
+      "programReadback": {
+        "activeSketch": "Body Sketch",
+        "dof": 0,
+        "solver": "OKAY",
+        "tool": "sketcher.slvs_select",
+        "selectedSketchCurveIds": [],
+        "constraints": [
+          {
+            "type": "EQUAL",
+            "value": null
+          },
+          {
+            "type": "DISTANCE",
+            "value": 0.6000000238418579
+          },
+          {
+            "type": "DISTANCE",
+            "value": 1.236931562423706
+          },
+          {
+            "type": "VERTICAL",
+            "value": null
+          }
+        ],
+        "positions": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            -2.4146001864622235e-10,
+            0.0
+          ],
+          [
+            6.0,
+            0.30000001192092896,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            -2.4146001864622235e-10,
+            0.0
+          ],
+          [
+            6.0,
+            0.30000001192092896,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            0.6000000238418579,
+            0.0
+          ],
+          [
+            6.0,
+            0.30000001192092896,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            0.6000000238418579,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            0.6000000238418579,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            -2.4146001864622235e-10,
+            0.0
+          ]
+        ]
+      },
+      "screenshot": {
+        "path": "learning/evidence/parametric/2026-10-28-cad-thread-tool-recovery-probe-v002/CADREC-01-reopened-warning.png",
+        "sha256": "7c5c13b458f17d71b03d819c167c1516c25cb3c6ca3789ac7260b8559dac479d"
+      }
+    },
+    {
+      "id": "11-cad-recovery-02",
+      "goal": "離開草圖",
+      "operation": "點選右上 Leave Sketch。",
+      "context": "離開不會刪除原草圖。",
+      "visibleConfirmation": "畫面返回物件模式，活動草圖暫時為空。",
+      "programReadback": {
+        "activeSketch": null,
+        "dof": null,
+        "solver": null,
+        "tool": "builtin.select_box",
+        "selectedSketchCurveIds": []
+      },
+      "screenshot": {
+        "path": "learning/evidence/parametric/2026-10-28-cad-thread-tool-recovery-probe-v002/CADREC-02-leave.png",
+        "sha256": "1befd148b38b65dca256f2015fa2f47b8a3cc66024f9fc97198fb63ec3247e43"
+      }
+    },
+    {
+      "id": "11-cad-recovery-03",
+      "goal": "重新進入草圖",
+      "operation": "在 Sketcher 清單 Body 行點選進入草圖圖示。",
+      "context": "重進後示範視野回到原點，草圖可能不在可見範圍；請依畫面調整視野。",
+      "visibleConfirmation": "側欄重新顯示 Body Sketch 與 Fully defined。",
+      "programReadback": {
+        "activeSketch": "Body Sketch",
+        "dof": 0,
+        "solver": "OKAY",
+        "tool": "sketcher.slvs_select",
+        "selectedSketchCurveIds": [],
+        "constraints": [
+          {
+            "type": "EQUAL",
+            "value": null
+          },
+          {
+            "type": "DISTANCE",
+            "value": 0.6000000238418579
+          },
+          {
+            "type": "DISTANCE",
+            "value": 1.236931562423706
+          },
+          {
+            "type": "VERTICAL",
+            "value": null
+          }
+        ],
+        "positions": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            -2.4146001864622235e-10,
+            0.0
+          ],
+          [
+            6.0,
+            0.30000001192092896,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            -2.4146001864622235e-10,
+            0.0
+          ],
+          [
+            6.0,
+            0.30000001192092896,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            0.6000000238418579,
+            0.0
+          ],
+          [
+            6.0,
+            0.30000001192092896,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            0.6000000238418579,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            0.6000000238418579,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            -2.4146001864622235e-10,
+            0.0
+          ]
+        ]
+      },
+      "screenshot": {
+        "path": "learning/evidence/parametric/2026-10-28-cad-thread-tool-recovery-probe-v002/CADREC-03-reenter.png",
+        "sha256": "af6d5545761e1d545152898f476c2ad91f7901f57edb5dbe7c351dab09d767fd"
+      }
+    },
+    {
+      "id": "11-cad-recovery-04",
+      "goal": "選回草圖選取工具",
+      "operation": "按 L 啟動 Line，按 Esc，再點左側 CAD Sketcher 的 Select 圖示。",
+      "context": "示範為看清牙型由程式重設視角；圖中並非 GUI 對焦操作。",
+      "visibleConfirmation": "程式讀回工具 ID 為 sketcher.slvs_select。",
+      "programReadback": {
+        "activeSketch": "Body Sketch",
+        "dof": 0,
+        "solver": "OKAY",
+        "tool": "sketcher.slvs_select",
+        "selectedSketchCurveIds": [],
+        "constraints": [
+          {
+            "type": "EQUAL",
+            "value": null
+          },
+          {
+            "type": "DISTANCE",
+            "value": 0.6000000238418579
+          },
+          {
+            "type": "DISTANCE",
+            "value": 1.236931562423706
+          },
+          {
+            "type": "VERTICAL",
+            "value": null
+          }
+        ],
+        "positions": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            -2.4146001864622235e-10,
+            0.0
+          ],
+          [
+            6.0,
+            0.30000001192092896,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            -2.4146001864622235e-10,
+            0.0
+          ],
+          [
+            6.0,
+            0.30000001192092896,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            0.6000000238418579,
+            0.0
+          ],
+          [
+            6.0,
+            0.30000001192092896,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            0.6000000238418579,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            0.6000000238418579,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            -2.4146001864622235e-10,
+            0.0
+          ]
+        ]
+      },
+      "screenshot": {
+        "path": "learning/evidence/parametric/2026-10-28-cad-thread-tool-recovery-probe-v002/CADREC-04-select-tool.png",
+        "sha256": "26359b404c4c964fc053e01ea328123239aebe9cb39c57c1f60f68b999ed98d9"
+      }
+    },
+    {
+      "id": "11-cad-recovery-05",
+      "goal": "選一條既有斜邊",
+      "operation": "以 Select 點選既有斜邊。",
+      "context": "本次僅測一條線，若未變色或無選取請停止核對。",
+      "visibleConfirmation": "原圖中下方斜邊呈橘色；程式讀回選取集合有一個 ID。",
+      "programReadback": {
+        "activeSketch": "Body Sketch",
+        "dof": 0,
+        "solver": "OKAY",
+        "tool": "sketcher.slvs_select",
+        "selectedSketchCurveIds": [
+          "f562054a176401418850dda26f9a3c87"
+        ],
+        "constraints": [
+          {
+            "type": "EQUAL",
+            "value": null
+          },
+          {
+            "type": "DISTANCE",
+            "value": 0.6000000238418579
+          },
+          {
+            "type": "DISTANCE",
+            "value": 1.236931562423706
+          },
+          {
+            "type": "VERTICAL",
+            "value": null
+          }
+        ],
+        "positions": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            -2.4146001864622235e-10,
+            0.0
+          ],
+          [
+            6.0,
+            0.30000001192092896,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            -2.4146001864622235e-10,
+            0.0
+          ],
+          [
+            6.0,
+            0.30000001192092896,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            0.6000000238418579,
+            0.0
+          ],
+          [
+            6.0,
+            0.30000001192092896,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            0.6000000238418579,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            0.6000000238418579,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            -2.4146001864622235e-10,
+            0.0
+          ]
+        ]
+      },
+      "screenshot": {
+        "path": "learning/evidence/parametric/2026-10-28-cad-thread-tool-recovery-probe-v002/CADREC-05-selected-line.png",
+        "sha256": "aae830fffbf6cea5a519894e2edd0efaf26cd50a9bbbe98e43d600bd2d0eda8e"
+      }
+    },
+    {
+      "id": "11-cad-recovery-06",
+      "goal": "測試驅動尺寸",
+      "operation": "在 Constraints 的第一個 Distance 輸入 0.8 mm。",
+      "context": "0.8 是草圖截面高度，不是螺距；側欄另一尺寸可能因窄欄截字。",
+      "visibleConfirmation": "畫面顯示基邊 0.800 mm 與 Fully defined。",
+      "programReadback": {
+        "activeSketch": "Body Sketch",
+        "dof": 0,
+        "solver": "OKAY",
+        "tool": "sketcher.slvs_select",
+        "selectedSketchCurveIds": [
+          "f562054a176401418850dda26f9a3c87"
+        ],
+        "constraints": [
+          {
+            "type": "EQUAL",
+            "value": null
+          },
+          {
+            "type": "DISTANCE",
+            "value": 0.800000011920929
+          },
+          {
+            "type": "DISTANCE",
+            "value": 1.236931562423706
+          },
+          {
+            "type": "VERTICAL",
+            "value": null
+          }
+        ],
+        "positions": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            -2.4146001864622235e-10,
+            0.0
+          ],
+          [
+            5.970469951629639,
+            0.4000000059604645,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            -2.4146001864622235e-10,
+            0.0
+          ],
+          [
+            5.970469951629639,
+            0.4000000059604645,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            0.800000011920929,
+            0.0
+          ],
+          [
+            5.970469951629639,
+            0.4000000059604645,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            0.800000011920929,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            0.800000011920929,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            -2.4146001864622235e-10,
+            0.0
+          ]
+        ],
+        "interpretation": "程式讀回求解器 OKAY、DoF0；尖點 X 由約 6.000 變為 5.97047 mm。"
+      },
+      "screenshot": {
+        "path": "learning/evidence/parametric/2026-10-28-cad-thread-tool-recovery-probe-v002/CADREC-06-changed-080.png",
+        "sha256": "7ac9900eac6ad630bc8cdde146e20a08ba2c5882062a25e15fb85a82c031ebdb"
+      }
+    },
+    {
+      "id": "11-cad-recovery-07",
+      "goal": "還原並另存",
+      "operation": "同一欄輸入 0.6 mm，另存恢復測試新版本，再重開。",
+      "context": "檔案對話路徑由程式填入；原始版本保留。",
+      "visibleConfirmation": "重開畫面顯示基邊 0.600 mm 與 Fully defined。",
+      "programReadback": {
+        "activeSketch": "Body Sketch",
+        "dof": 0,
+        "solver": "OKAY",
+        "tool": "sketcher.slvs_select",
+        "selectedSketchCurveIds": [],
+        "constraints": [
+          {
+            "type": "EQUAL",
+            "value": null
+          },
+          {
+            "type": "DISTANCE",
+            "value": 0.6000000238418579
+          },
+          {
+            "type": "DISTANCE",
+            "value": 1.236931562423706
+          },
+          {
+            "type": "VERTICAL",
+            "value": null
+          }
+        ],
+        "positions": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            -2.4146001864622235e-10,
+            0.0
+          ],
+          [
+            6.0,
+            0.30000001192092896,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            -2.4146001864622235e-10,
+            0.0
+          ],
+          [
+            6.0,
+            0.30000001192092896,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            0.6000000238418579,
+            0.0
+          ],
+          [
+            6.0,
+            0.30000001192092896,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            0.6000000238418579,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            0.6000000238418579,
+            0.0
+          ],
+          [
+            4.800000190734863,
+            -2.4146001864622235e-10,
+            0.0
+          ]
+        ],
+        "interpretation": "程式讀回基邊約 0.6 mm、尖點 X 約 6.000 mm、求解器 OKAY、DoF0。"
+      },
+      "screenshot": {
+        "path": "learning/evidence/parametric/2026-10-28-cad-thread-tool-recovery-probe-v002/CADREC-09-reopened-result.png",
+        "sha256": "fb76be5b45c5e814226b7cccf01eb986c32fe747a338d1881b1a8b1db975643a"
+      }
+    }
+  ]
+}

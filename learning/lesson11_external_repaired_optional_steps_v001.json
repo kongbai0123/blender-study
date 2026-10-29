@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "title": "第 11 章選修：修訂外牙的 GUI 幾何示範",
+  "status": "草案待修，不可列印或宣稱合格",
+  "source": {
+    "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/demo-files/u08_thread_reference_v001.blend",
+    "sha256": "9bda36c10fd916ef9cbe688f5ca56dcf8cfa0adb83d684300e60196225589d8f"
+  },
+  "demonstrationScene": "learning/evidence/08/2026-10-28-external-thread-gui-trial-v010/demo-files/u08_external_gui_draft_v003.blend",
+  "limitations": [
+    "三角截面為程式預建，並非 GUI 手繪；之後在獨立 Blender 以 GUI 事件建立與另存。",
+    "修正版柱芯旋轉 5.625° 並延長至約 4.8 mm，改變多邊形局部輪廓及整體高度；請與保留的 v005 風險案例比較。",
+    "獨立 BVH 候選為 0、診斷門檻以下薄面為 0，不證明完全沒有自交或可製造；10⁻⁵ mm² 為診斷門檻而非合格標準。",
+    "此為獨立示範，不是 ISO 標準牙形；材料、配合、實際列印與量測均未驗證。",
+    "畫面部分視角較小，須配合讀值；檔案對話框路徑及檔名由程式填入。"
+  ],
+  "physicalPrint": null,
+  "physicalMeasurement": null,
+  "physicalFit": null,
+  "qualifiedClearance": null,
+  "qualifiedStrength": null,
+  "steps": [
+    {
+      "id": "11-external-repaired-01",
+      "goal": "準備來源輪廓",
+      "operation": "開啟既有參考場景的保護副本，示範以程式準備 Thread_Triangle_Profile 三點三邊輪廓。",
+      "context": "程式在載入副本後建立輪廓、隱藏盒體；此步不是 GUI 手繪。",
+      "visibleConfirmation": "畫面顯示 Thread_Triangle_Profile 輪廓及場景。",
+      "programReadback": "程式讀回 3 點、3 邊、0 面；三點為 (4.8,0,0)、(6,0,0.3)、(4.8,0,0.6) mm。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-external-thread-gui-trial-v010/XTH-01-profile.png",
+        "sha256": "4ee883f9bbba5b122514137aa122dbeca32bafe702b43401dc9eed112aed76f3"
+      }
+    },
+    {
+      "id": "11-external-repaired-02",
+      "goal": "加入 Screw 修改器",
+      "operation": "選取 Thread_Triangle_Profile，在物件模式 F3 搜尋 Add Screw Modifier；設定角度 360°、每圈位移 1 mm、4 次迭代、每圈 32 段。",
+      "context": "輪廓已由程式建立；這裡是單頭三角牙草案，非 ISO。",
+      "visibleConfirmation": "修改器面板顯示 Screw，視窗出現螺旋牙條。",
+      "programReadback": "程式讀回 1 mm、4 次、32 段，評估後 387 頂點、384 面、6 條邊界；角度需結合畫面與劇本。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-external-thread-gui-trial-v010/XTH-02-screw.png",
+        "sha256": "7078e4472c07d462f27b7c943a48dcd10db63e58d2efd727959005342e68d0e0"
+      }
+    },
+    {
+      "id": "11-external-repaired-03",
+      "goal": "將 Screw 轉為網格",
+      "operation": "物件模式下選取輪廓物件，F3 搜尋 Convert Mesh，確認已轉換。",
+      "context": "轉換前確認修改器數值；保留來源副本。",
+      "visibleConfirmation": "修改器消失，牙條仍顯示於視窗。",
+      "programReadback": "讀回修改器為空，仍有 6 條開口邊。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-external-thread-gui-trial-v010/XTH-03-converted.png",
+        "sha256": "4433e726870ab457f4059e732778651e7228564024a6346b9b776e35492d6e40"
+      }
+    },
+    {
+      "id": "11-external-repaired-04",
+      "goal": "選取非流形邊",
+      "operation": "選取牙條，Tab 進入編輯模式，按 2 切邊選取、Alt+A 取消選取；F3 搜尋 Select Non Manifold。",
+      "context": "這是找出未封端邊的教學步驟，畫面可能需放大觀察。",
+      "visibleConfirmation": "牙條兩端邊界被選取。",
+      "programReadback": "程式讀回 6 條邊界及 6 條非流形邊。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-external-thread-gui-trial-v010/XTH-04-selected-boundary.png",
+        "sha256": "7695128a816a887bb85539e1a9b628062f7668c8690faf850e6857452a48980a"
+      }
+    },
+    {
+      "id": "11-external-repaired-05",
+      "goal": "封閉牙條兩端",
+      "operation": "維持邊界選取後按 F 封端，旋轉視角檢查端面。",
+      "context": "確認選中的是預期的兩端開口，封端結果仍需後續驗證。",
+      "visibleConfirmation": "畫面中牙條兩端增加面。",
+      "programReadback": "程式讀回 386 面、邊界 0、非流形邊 0；不能以此宣稱無自交或可製造。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-external-thread-gui-trial-v010/XTH-05-filled.png",
+        "sha256": "5594cc95f225ba98676f8c14d98f7f550585b9c2dec713848811926573928a56"
+      }
+    },
+    {
+      "id": "11-external-repaired-06",
+      "goal": "重新計算法線",
+      "operation": "在編輯模式 A 全選，再按 Shift+N 重新計算法線。",
+      "context": "牙條已封端；此操作不會自動排除交疊或極薄面。",
+      "visibleConfirmation": "編輯模式中牙條全選。",
+      "programReadback": "程式讀回邊界 0、非流形邊 0；未單憑此宣稱法線或幾何完全正確。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-external-thread-gui-trial-v010/XTH-06-normals.png",
+        "sha256": "a8621ac5e53cbd4daa5c9346c2d334f8421da0f4e3eb97a5b75be4625d0e8fd1"
+      }
+    },
+    {
+      "id": "11-external-repaired-07",
+      "goal": "新增圓柱核心",
+      "operation": "Tab 回物件模式；F3 搜尋 Add Cylinder。依序 S 0.005、S Z 0.48、G Z 2.3 mm、R Z 5.625°；F3 執行 Apply Scale 與 Apply Rotation，F2 命名 Thread_Core。",
+      "context": "此係數僅用於本場景預設圓柱；芯柱上下端各伸出牙條約 0.1 mm，旋轉改變多邊形輪廓。",
+      "visibleConfirmation": "選中 Thread_Core，畫面尺寸欄約 9.95 × 9.95 × 4.8 mm。",
+      "programReadback": "程式依實際頂點讀回旋轉後世界 X/Y 範圍約 ±4.9759 mm，Z 約 -0.1～4.7 mm；套用後旋轉欄為 0、Scale 為 1。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-external-thread-gui-trial-v010/XTH-07-core.png",
+        "sha256": "bc260b3bfac89e3565e5e59b6f71fb9b8bcdf121e2303854eae022f65f6adb0a"
+      }
+    },
+    {
+      "id": "11-external-repaired-08",
+      "goal": "觀察首次指定工具未成功",
+      "operation": "選 Thread_Core、新增 Boolean，選 Union、Exact；嘗試輸入 Thread_Triangle_Profile 時檢查 Object 欄是否真正選入。",
+      "context": "此畫面保留示範首次失敗；輸入文字或按 Enter 不一定已選定對象。",
+      "visibleConfirmation": "畫面為首次嘗試指定物件的狀態。",
+      "programReadback": "程式讀回 Union、Exact，但 operand 為空；此時不可宣稱指定完成。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-external-thread-gui-trial-v010/XTH-08-boolean-probe.png",
+        "sha256": "973b88f5e39b96f983b4f64750b7dc2aa985bdbc4eb2aadca4ade0922b4e4324"
+      }
+    },
+    {
+      "id": "11-external-repaired-09",
+      "goal": "正確指定 Boolean 工具",
+      "operation": "在 Boolean 的 Object 欄重新選擇清單中的 Thread_Triangle_Profile，確認名稱顯示。",
+      "context": "選中核心，先核對 Union、Exact 與對象，尚未套用。",
+      "visibleConfirmation": "修改器 Object 欄顯示 Thread_Triangle_Profile。",
+      "programReadback": "程式讀回 operation UNION、solver EXACT、operand Thread_Triangle_Profile。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-external-thread-gui-trial-v010/XTH-09-boolean-preview.png",
+        "sha256": "06645b86f40b4bdbc81543f8c276d50d48887e84f77be79839c3bbc847d476fd"
+      }
+    },
+    {
+      "id": "11-external-repaired-10",
+      "goal": "隱藏牙條工具以檢視預覽",
+      "operation": "在 Outliner 對 Thread_Triangle_Profile 點眼睛隱藏；保留牙條物件以備回溯。",
+      "context": "隱藏的是工具，不是刪除；若版面不同以物件名稱與眼睛圖示為準。",
+      "visibleConfirmation": "牙條工具隱藏，核心顯示布林預覽。",
+      "programReadback": "此張安全摘要未另外提供讀值。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-external-thread-gui-trial-v010/XTH-10-operand-hidden.png",
+        "sha256": "a11acc81b8835410960a34a41458978bc8cab29446fb4244419b3d29a4bce393"
+      }
+    },
+    {
+      "id": "11-external-repaired-11",
+      "goal": "套用 Boolean Union",
+      "operation": "重新選取 Thread_Core，在 Boolean 修改器選單點 Apply；觀察牙條合併後的核心。",
+      "context": "確認 Union、Exact 與正確工具後套用；接著還需另行獨立稽核。",
+      "visibleConfirmation": "畫面出現外牙形狀。",
+      "programReadback": "程式讀回 707 點、419 面、單連通體、非流形邊 0、外框約 12 × 12 × 4.8 mm；這些讀值不證明無自交。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-external-thread-gui-trial-v010/XTH-11-union.png",
+        "sha256": "bfd16480f65d21a672be0cf439d01ad6a7ad69130939c137581156526f6ee9d6"
+      }
+    },
+    {
+      "id": "11-external-repaired-12",
+      "goal": "調整視角觀察",
+      "operation": "選取 Thread_Core，F3 搜尋 Frame Selected，旋轉視角觀察。",
+      "context": "視圖調整不會修復幾何，單張視圖不能排除交疊。",
+      "visibleConfirmation": "螺旋外形聚焦於畫面。",
+      "programReadback": "外框讀值維持約 12 × 12 × 4.8 mm；畫面不足以判定所有細節。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-external-thread-gui-trial-v010/XTH-12-framed.png",
+        "sha256": "6994e361406481b018d70fecb81244d1b4901efee418063d16d93e836cc77e7b"
+      }
+    },
+    {
+      "id": "11-external-repaired-13",
+      "goal": "另存獨立草案",
+      "operation": "使用 File > Save As 另存新檔，保留參考場景和既有小盒原檔。",
+      "context": "示範的檔案視窗路徑及檔名由程式填入。",
+      "visibleConfirmation": "另存完成後畫面顯示外牙草案。",
+      "programReadback": "另存場景 SHA-256 為 5a0aea1af13f46e9bff1b14327aa199b6b34f421936fd5a516226fc13072ec04；自行建立的檔案雜湊會不同。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-external-thread-gui-trial-v010/XTH-13-saved.png",
+        "sha256": "f27f5610843bff35aae38f9bc33bb72964acb28bf258048d7acceed9aa2530c0"
+      }
+    },
+    {
+      "id": "11-external-repaired-14",
+      "goal": "重開新檔並核對",
+      "operation": "重開另存草案並檢查尺寸，再以獨立 Blender 腳本檢查拓樸、三角面積及 BVH。",
+      "context": "示範檔案視窗欄位由程式填入；避免覆寫來源。",
+      "visibleConfirmation": "重開後仍可見 Thread_Core 與外牙草案。",
+      "programReadback": "獨立讀回非流形邊 0、BVH 候選 0，低於 10⁻⁵ mm² 面 0，最小三角面約 0.028674 mm²；不證明完全無自交或列印合格。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-external-thread-gui-trial-v010/XTH-14-reopened.png",
+        "sha256": "3dba72a7e21239c07cb523e85e380bd301b61e85718d0d9760a4d3839fca6a0d"
+      }
+    }
+  ],
+  "startingScene": {
+    "path": "learning/evidence/08/2026-10-28-external-thread-profile-start-v001/u08_external_thread_profile_start_v001.blend",
+    "sha256": "a9083cb26d87ff9d6d8d18ea81309f932812127cd468fb58659baf504609271c",
+    "verification": "learning/evidence/08/2026-10-28-external-thread-profile-start-v001/independent-audit-v001.json",
+    "construction": "依 v005 原腳本由程式預建輪廓並另存；獨立重開驗證。"
+  },
+  "scope": "修正試作；僅有數位幾何檢查，不更新學員進度，未驗證製造或配合。",
+  "demonstrationSceneSha256": "5a0aea1af13f46e9bff1b14327aa199b6b34f421936fd5a516226fc13072ec04"
+}

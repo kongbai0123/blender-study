@@ -1,0 +1,342 @@
+{
+  "schemaVersion": 1,
+  "base": {
+    "path": "learning/web/engineering-curriculum-v035.json",
+    "sha256": "d40ffc3102585947f1a19d2e50d072f343cf25685df9d7e8555dfd702bc4fa91"
+  },
+  "scope": "依原 catalog 的 operationRun、必要時 source-snapshot 與一張對話框原圖校正；各步共用原教材來源，不聲稱全部圖片均逐張目視。",
+  "patches": {
+    "ch01-01-04-03": {
+      "evidenceStatus": "documented_lesson",
+      "actions": [
+        "先核對已保存的 u01_basics_v001.blend，到教學頁「檔案版本」選單元 01、該檔案與「場景 .blend」並登記。",
+        "登記後核對路徑與 SHA-256；後續修改先另存未使用的新版本。"
+      ],
+      "detail": {
+        "steps": [
+          "先核對已保存的 u01_basics_v001.blend，到教學頁「檔案版本」選單元 01、該檔案與「場景 .blend」並登記。",
+          "登記後核對路徑與 SHA-256；後續修改先另存未使用的新版本。"
+        ],
+        "why": "登記會記下檔案指紋；之後就能確認檢查點沒有被改動。"
+      },
+      "limitations": [
+        "既有示範的觀察、數位讀值與學員實作分開；不表示實體結果或學員完成。",
+        "原 Blender 場次只示範存檔／檔案核對，沒有拍攝本步教學網頁登記；附的是另一假專案 CLI 登記示範，不代表學員已登記。"
+      ],
+      "artifacts": [
+        {
+          "path": "learning/evidence/parametric/2026-10-28-workspace-isolated-cli-v002/safe-summary-v001.json",
+          "sha256": "898040178c3ba48f4931de049f17e603bfbc150d2f7755f191f41ab552ae3521",
+          "label": "隔離假專案的 CLI 版本登記與來源關聯示範；不是原次網頁登記",
+          "type": "verification-json"
+        }
+      ]
+    },
+    "ch01-01-09-02": {
+      "evidenceStatus": "documented_lesson",
+      "actions": [
+        "先核對已保存的 u01_basics_v002.blend，到教學頁「檔案版本」選單元 01、該檔案與「場景 .blend」並登記。",
+        "登記後核對路徑與 SHA-256；後續修改先另存未使用的新版本。"
+      ],
+      "detail": {
+        "steps": [
+          "先核對已保存的 u01_basics_v002.blend，到教學頁「檔案版本」選單元 01、該檔案與「場景 .blend」並登記。",
+          "登記後核對路徑與 SHA-256；後續修改先另存未使用的新版本。"
+        ],
+        "why": "每個重要階段都留一個不可覆寫的版本。"
+      },
+      "limitations": [
+        "既有示範的觀察、數位讀值與學員實作分開；不表示實體結果或學員完成。",
+        "原 Blender 場次只示範存檔／檔案核對，沒有拍攝本步教學網頁登記；附的是另一假專案 CLI 登記示範，不代表學員已登記。"
+      ],
+      "artifacts": [
+        {
+          "path": "learning/evidence/parametric/2026-10-28-workspace-isolated-cli-v002/safe-summary-v001.json",
+          "sha256": "898040178c3ba48f4931de049f17e603bfbc150d2f7755f191f41ab552ae3521",
+          "label": "隔離假專案的 CLI 版本登記與來源關聯示範；不是原次網頁登記",
+          "type": "verification-json"
+        }
+      ]
+    },
+    "ch05-05-02-03": {
+      "evidenceStatus": "documented_lesson",
+      "actions": [
+        "先核對已保存的 u05_fit_coupon_v001.blend，到教學頁「檔案版本」選單元 05、該檔案與「場景 .blend」並登記。",
+        "登記後核對路徑與 SHA-256；後續修改先另存未使用的新版本。"
+      ],
+      "detail": {
+        "steps": [
+          "先核對已保存的 u05_fit_coupon_v001.blend，到教學頁「檔案版本」選單元 05、該檔案與「場景 .blend」並登記。",
+          "登記後核對路徑與 SHA-256；後續修改先另存未使用的新版本。"
+        ],
+        "why": "第 06 章匯出插銷時用這份。"
+      },
+      "limitations": [
+        "原 Blender 場次只示範存檔／檔案核對，沒有拍攝本步教學網頁登記；附的是另一假專案 CLI 登記示範，不代表學員已登記。"
+      ],
+      "artifacts": [
+        {
+          "path": "learning/evidence/parametric/2026-10-28-workspace-isolated-cli-v002/safe-summary-v001.json",
+          "sha256": "898040178c3ba48f4931de049f17e603bfbc150d2f7755f191f41ab552ae3521",
+          "label": "隔離假專案的 CLI 版本登記與來源關聯示範；不是原次網頁登記",
+          "type": "verification-json"
+        }
+      ]
+    },
+    "ch03-05-05-08": {
+      "evidenceStatus": "source_step_demo",
+      "actions": [
+        "保存 u05_lid_v001.blend；File > Open 重開，核對 Body 與 Lid 的尺寸。",
+        "到教學頁「檔案版本」以單元 05 登記上蓋場景，並核對路徑與 SHA-256。"
+      ],
+      "detail": {
+        "steps": [
+          "保存 u05_lid_v001.blend；File > Open 重開，核對 Body 與 Lid 的尺寸。",
+          "到教學頁「檔案版本」以單元 05 登記上蓋場景，並核對路徑與 SHA-256。"
+        ],
+        "why": "第 06 章匯出上蓋會用這個檢查點。"
+      },
+      "limitations": [
+        "原 Blender 場次只示範存檔／檔案核對，沒有拍攝本步教學網頁登記；附的是另一假專案 CLI 登記示範，不代表學員已登記。"
+      ],
+      "artifacts": [
+        {
+          "path": "learning/evidence/parametric/2026-10-28-workspace-isolated-cli-v002/safe-summary-v001.json",
+          "sha256": "898040178c3ba48f4931de049f17e603bfbc150d2f7755f191f41ab552ae3521",
+          "label": "隔離假專案的 CLI 版本登記與來源關聯示範；不是原次網頁登記",
+          "type": "verification-json"
+        }
+      ]
+    },
+    "ch04-03-05-03": {
+      "evidenceStatus": "source_step_demo",
+      "actions": [
+        "在渲染視窗 Image > Save As... 保存 PNG，核對檔案與來源場景。",
+        "到教學頁登記該圖（用途「渲染圖」，來源選 u03_render_v001.blend）。"
+      ],
+      "detail": {
+        "steps": [
+          "在渲染視窗 Image > Save As... 保存 PNG，核對檔案與來源場景。",
+          "到教學頁登記該圖（用途「渲染圖」，來源選 u03_render_v001.blend）。"
+        ],
+        "why": "渲染圖要能追回是哪個場景版本產生的。"
+      },
+      "limitations": [
+        "既有示範的觀察、數位讀值與學員實作分開；不表示實體結果或學員完成。",
+        "原 Blender 場次只示範存檔／檔案核對，沒有拍攝本步教學網頁登記；附的是另一假專案 CLI 登記示範，不代表學員已登記。"
+      ],
+      "artifacts": [
+        {
+          "path": "learning/evidence/parametric/2026-10-28-workspace-isolated-cli-v002/safe-summary-v001.json",
+          "sha256": "898040178c3ba48f4931de049f17e603bfbc150d2f7755f191f41ab552ae3521",
+          "label": "隔離假專案的 CLI 版本登記與來源關聯示範；不是原次網頁登記",
+          "type": "verification-json"
+        }
+      ]
+    },
+    "ch09-06-03-03": {
+      "evidenceStatus": "field_protocol_ready",
+      "actions": [
+        "在試配紀錄標示 0.4 mm 水平總差、置中時每側 0.2 mm 是名義試驗值。",
+        "方向、切片、實體尺寸、滑入狀態及合格值目前留空；取得實體結果後才記錄。"
+      ],
+      "detail": {
+        "steps": [
+          "在試配紀錄標示 0.4 mm 水平總差、置中時每側 0.2 mm 是名義試驗值。",
+          "方向、切片、實體尺寸、滑入狀態及合格值目前留空；取得實體結果後才記錄。"
+        ],
+        "why": "名義數值和數位檢查不等於已驗證的實體配合。"
+      },
+      "limitations": [
+        "既有示範的觀察、數位讀值與學員實作分開；不表示實體結果或學員完成。",
+        "原場次完成的是數位 STL 核對及驗證紀錄；未示範填寫現場試配表，沒有實體試配結果。"
+      ]
+    },
+    "ch10-07-01-02": {
+      "evidenceStatus": "documented_lesson",
+      "actions": [
+        "辨認 L、h、b、R、u、δ_req、α、β、e、g、f 的定義；未選定的數值保留待定。"
+      ],
+      "detail": {
+        "steps": [
+          "查看卡扣參數表，分開辨認 L、h、b、R、u、δ_req、α、β、e、g、f。",
+          "把材料、允許應變及未選定數值標為待定，分開倒扣量與裝配所需、允許撓度。"
+        ],
+        "why": "各參數描述不同幾何或使用條件，不能直接沿用燕尾的試驗間隙。"
+      },
+      "limitations": [
+        "既有示範的觀察、數位讀值與學員實作分開；不表示實體結果或學員完成。",
+        "參數與公式來自原參數文件；原 Blender GUI 場次展示原盒測量，未逐項在 GUI 演示公式。"
+      ]
+    },
+    "ch10-07-01-03": {
+      "evidenceStatus": "documented_lesson",
+      "actions": [
+        "閱讀均勻矩形懸臂近似式及來源；ε_allow 用小數比例。先核對根部、接觸路徑與材料條件，材料及允許應變保留待定。"
+      ],
+      "detail": {
+        "steps": [
+          "閱讀參數表中的均勻矩形懸臂估算式與來源，確認 ε_allow 使用小數比例。",
+          "核對根部、接觸路徑及材料適用條件；Q、材料與允許應變仍保留待定。"
+        ],
+        "why": "這是有前提的近似估算，不能在未知條件下判斷強度。"
+      },
+      "limitations": [
+        "既有示範的觀察、數位讀值與學員實作分開；不表示實體結果或學員完成。",
+        "參數與公式來自原參數文件；原 Blender GUI 場次展示原盒測量，未逐項在 GUI 演示公式。"
+      ]
+    },
+    "ch05-05-03-01": {
+      "evidenceStatus": "source_step_demo",
+      "actions": [
+        "保留現有作品後，從獨立新場景開始；示範選取出廠物件並 X > Delete，再 Add > Mesh > Cube。",
+        "Scene > Units 設 Unit System Metric、Length Millimeters、Unit Scale 0.001；保存孔板檔的動作在後續完成。"
+      ],
+      "detail": {
+        "steps": [
+          "保留現有作品後，從獨立新場景開始；示範選取出廠物件並 X > Delete，再 Add > Mesh > Cube。",
+          "Scene > Units 設 Unit System Metric、Length Millimeters、Unit Scale 0.001；保存孔板檔的動作在後續完成。"
+        ],
+        "why": "孔板與插銷分開存檔，各自匯出。"
+      },
+      "limitations": [
+        "原場次從隔離出廠場景刪除物件並新增方塊，沒有拍 File > New > General；若學員自行新建，先保存原作品。"
+      ],
+      "success": "場景為毫米設定，新增方塊可供製作孔板；本示範後續另存孔板，不以此步宣稱已存檔。"
+    },
+    "ch05-05-03-03": {
+      "evidenceStatus": "source_step_demo",
+      "actions": [
+        "Add > Mesh > Cube 新增方塊；原示範以 S X 5.05、S Y 5.05、S Z 4 將 2 mm 預設方塊縮成 10.1 × 10.1 × 8 mm。",
+        "用 G X -35mm、G Y 2mm 移至中心 (−35, 2, 0) mm，從 N 側欄核對。"
+      ],
+      "detail": {
+        "steps": [
+          "Add > Mesh > Cube 新增方塊；原示範以 S X 5.05、S Y 5.05、S Z 4 將 2 mm 預設方塊縮成 10.1 × 10.1 × 8 mm。",
+          "用 G X -35mm、G Y 2mm 移至中心 (−35, 2, 0) mm，從 N 側欄核對。"
+        ],
+        "why": "切割體比插銷寬 0.1 mm，就是第 1 孔的總間隙。"
+      },
+      "limitations": [
+        "步驟沿用 05-03 原步實拍；示範以 S／G 變換而非直接在 N 側欄輸入。"
+      ]
+    },
+    "ch05-05-03-04": {
+      "evidenceStatus": "source_step_demo",
+      "actions": [
+        "逐一 Add > Mesh > Cube 新增第 2、3 個方塊；示範將 2 mm 預設方塊以 S X、S Y 分別設 5.1 或 5.15，S Z 4。",
+        "以 G X 分別移至 −21、−7 mm、G Y 2mm，核對寬 10.2／10.3 mm。"
+      ],
+      "detail": {
+        "steps": [
+          "逐一 Add > Mesh > Cube 新增第 2、3 個方塊；示範將 2 mm 預設方塊以 S X、S Y 分別設 5.1 或 5.15，S Z 4。",
+          "以 G X 分別移至 −21、−7 mm、G Y 2mm，核對寬 10.2／10.3 mm。"
+        ],
+        "why": "每孔寬度多 0.1 mm，孔距 14 mm。"
+      },
+      "limitations": [
+        "原場次逐個新增 Cube，用 S／G 變換；未以 Shift+D 複製這些方孔工具。"
+      ]
+    },
+    "ch05-05-03-05": {
+      "evidenceStatus": "source_step_demo",
+      "actions": [
+        "逐一新增第 4～6 個 Cube，以 S X、S Y 分別設 5.2、5.25、5.3，S Z 4。",
+        "以 G X 分別移至 7、21、35 mm，G Y 2mm；核對寬 10.4、10.5、10.6 mm。"
+      ],
+      "detail": {
+        "steps": [
+          "逐一新增第 4～6 個 Cube，以 S X、S Y 分別設 5.2、5.25、5.3，S Z 4。",
+          "以 G X 分別移至 7、21、35 mm，G Y 2mm；核對寬 10.4、10.5、10.6 mm。"
+        ],
+        "why": "六個試驗點從 0.1 到 0.6 mm。"
+      },
+      "limitations": [
+        "原場次逐個新增 Cube，用 S／G 變換；未以 Shift+D 複製這些方孔工具。"
+      ]
+    },
+    "ch05-05-03-07": {
+      "evidenceStatus": "source_step_demo",
+      "actions": [
+        "沿用第 1 組原圓柱，按 Shift+D、X，依下一目標 X 與目前 X 的差值輸入相對位移，按 Enter。",
+        "第 2 組目標 X 為 −21.8、−20.2 mm；第 3 組為 −8.6、−7、−5.4 mm，Y、Z 不變。"
+      ],
+      "detail": {
+        "steps": [
+          "沿用第 1 組原圓柱，按 Shift+D、X，依下一目標 X 與目前 X 的差值輸入相對位移，按 Enter。",
+          "第 2 組目標 X 為 −21.8、−20.2 mm；第 3 組為 −8.6、−7、−5.4 mm，Y、Z 不變。"
+        ],
+        "why": "凹點數等於孔號，同組間距 1.6 mm。"
+      },
+      "limitations": [
+        "原示範以 Shift+D 後沿 X 輸入相對位移；側欄 X 值是各圓柱最終位置，不是逐次位移值。"
+      ]
+    },
+    "ch05-05-03-08": {
+      "evidenceStatus": "source_step_demo",
+      "actions": [
+        "繼續 Shift+D > X，用目標 X 減前一圓柱的 X 算相對位移；第 4 組為 4.6、6.2、7.8、9.4 mm。",
+        "第 5 組為 17.8、19.4、21、22.6、24.2；第 6 組為 31、32.6、34.2、35.8、37.4、39 mm；Y、Z 不變。"
+      ],
+      "detail": {
+        "steps": [
+          "繼續 Shift+D > X，用目標 X 減前一圓柱的 X 算相對位移；第 4 組為 4.6、6.2、7.8、9.4 mm。",
+          "第 5 組為 17.8、19.4、21、22.6、24.2；第 6 組為 31、32.6、34.2、35.8、37.4、39 mm；Y、Z 不變。"
+        ],
+        "why": "完成 1～6 點的辨識記號，共 21 個圓柱。"
+      },
+      "limitations": [
+        "來源圖共用原 05-03 整步；X 數值是目標位置，Shift+D 位移應逐次計算。"
+      ]
+    },
+    "ch01-01-06-02": {
+      "evidenceStatus": "source_step_demo",
+      "actions": [
+        "保持 Cube 選取，在 Properties 的物件 Transform 查看 Location 與 Rotation。",
+        "旋轉視角前後比對數值，確認這是視角改變；N > Item 是可自行使用的替代入口。"
+      ],
+      "detail": {
+        "steps": [
+          "保持 Cube 選取，在 Properties 的物件 Transform 查看 Location 與 Rotation。",
+          "旋轉視角前後比對數值，確認這是視角改變；N > Item 是可自行使用的替代入口。"
+        ],
+        "why": "分清「我看的角度變了」和「物件真的移動了」。"
+      },
+      "limitations": [
+        "既有示範的觀察、數位讀值與學員實作分開；不表示實體結果或學員完成。",
+        "原 01-06 場次核對 Properties，不是以 N > Item 作核對。"
+      ]
+    },
+    "ch06-04-07-02": {
+      "evidenceStatus": "source_step_demo",
+      "actions": [
+        "在 STL 匯出視窗勾 Selection Only、Scale 1、Scene Unit 不勾、Apply Modifiers 勾、ASCII 不勾、Forward Y、Up Z。",
+        "確認選取 Body，存至自己的單元 04 exports 資料夾，檔名 u04_box_v001.stl，按 Export STL。"
+      ],
+      "detail": {
+        "steps": [
+          "在 STL 匯出視窗勾 Selection Only、Scale 1、Scene Unit 不勾、Apply Modifiers 勾、ASCII 不勾、Forward Y、Up Z。",
+          "確認選取 Body，存至自己的單元 04 exports 資料夾，檔名 u04_box_v001.stl，按 Export STL。"
+        ],
+        "why": "Scene Unit 不勾、Scale 1，STL 裡的數字就是 mm。"
+      },
+      "limitations": [
+        "既有示範的觀察、數位讀值與學員實作分開；不表示實體結果或學員完成。",
+        "04-07 原對話框圖中的 Selection Only 未勾；這裡另附 第 11 章外牙示範圖，說明應如何勾選，不能當成原盒匯出選項已勾的證據。",
+        "檔案對話框路徑與檔名由程式填入；學員自行核對資料夾與檔名。"
+      ],
+      "figures": [
+        {
+          "type": "screenshot",
+          "path": "learning/evidence/08/2026-10-28-ch11-stl-public-hand-v001/STL-03-hand-thread-options.png",
+          "sha256": "47a568fb8bdedb77628a63e5eabc99b8ebb68b698b09dd950992c3eababa4d3a",
+          "caption": "第 11 章外牙 STL 的 Selection Only 已勾選原圖，供參考同一匯出選項；檔案不是此步盒體。"
+        }
+      ]
+    }
+  },
+  "learnerProgressChanged": false,
+  "physicalPrint": null,
+  "physicalMeasurement": null,
+  "physicalFit": null
+}

@@ -40,7 +40,11 @@ jobs:
         run: python -m unittest discover -s learning/tutor/tests -v
       - name: Check browser script syntax
         run: node --check learning/web/app.js
-      - name: Check observation labels and safe fallbacks
-        run: node --test learning/web/tests/observation_labels.test.js learning/web/tests/shortcuts.test.js
+      - name: Check engineering path script syntax
+        run: node --check learning/web/engineering-path.js
+      - name: Check challenge page script syntax
+        run: node --check learning/web/challenges/app.js
+      - name: Check observation labels, engineering path, challenges and safe fallbacks
+        run: node --test learning/web/tests/observation_labels.test.js learning/web/tests/shortcuts.test.js learning/web/tests/engineering_path.test.js learning/web/tests/challenges_ui.test.js
       - name: Confirm tests did not modify published files
         run: git diff --exit-code

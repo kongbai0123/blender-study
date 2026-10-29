@@ -1,0 +1,53 @@
+{
+  "vertices": 507,
+  "faces": 278,
+  "boundaryEdges": 0,
+  "nonManifoldEdges": 0,
+  "components": 1,
+  "boundsMm": [
+    [
+      -30.0,
+      31.999998092651367
+    ],
+    [
+      -20.0,
+      20.0
+    ],
+    [
+      -15.0,
+      15.0
+    ]
+  ],
+  "bvhNonAdjacentCandidatePairs": 0,
+  "minimumTriangleAreaMm2": 5.959745918860134e-05,
+  "triangleAreasBelow1eMinus5Mm2": 0,
+  "shortestMeshEdgeMm": 0.014692306394749116,
+  "interiorWallRayHitsMm": [
+    [
+      27.20000457763672,
+      0.0,
+      0.0
+    ],
+    [
+      27.200000762939453,
+      2.0,
+      2.0
+    ],
+    [
+      27.200000762939453,
+      -2.0,
+      -2.0
+    ],
+    [
+      27.999998092651367,
+      8.0,
+      4.0
+    ],
+    [
+      27.999998092651367,
+      -8.0,
+      -4.0
+    ]
+  ],
+  "limits": "diagnostic only; zero BVH is not proof of no self-intersection"
+}
