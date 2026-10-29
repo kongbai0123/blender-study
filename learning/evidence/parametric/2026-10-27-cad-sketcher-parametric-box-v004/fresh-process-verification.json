@@ -1,0 +1,38 @@
+{
+  "checks": {
+    "loadedBox": true,
+    "loadedLid": true,
+    "editedBox": true,
+    "editedLid": true
+  },
+  "before": {
+    "label": "loaded",
+    "width": 80.0,
+    "box": [
+      80.0,
+      40.0,
+      30.0
+    ],
+    "lid": [
+      80.0,
+      40.0,
+      6.0
+    ]
+  },
+  "after": {
+    "label": "in-memory-edit-only",
+    "width": 70.0,
+    "box": [
+      70.0,
+      40.0,
+      30.0
+    ],
+    "lid": [
+      70.0,
+      40.0,
+      6.0
+    ]
+  },
+  "method": "programmatic read and in-memory edit; no GUI, no save",
+  "sourceSaved": false
+}

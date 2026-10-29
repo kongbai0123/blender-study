@@ -1,0 +1,888 @@
+{
+  "schemaVersion": 1,
+  "blender": "5.2.1 LTS",
+  "construction": "geometry and save/open via isolated Blender GUI; file-browser fields set programmatically",
+  "records": [
+    {
+      "slug": "default",
+      "action": "觀察隔離 Blender General 預設畫面；此圖不代表學員畫面。",
+      "observed": {
+        "mode": "OBJECT",
+        "dimensions": [
+          2.0,
+          2.0,
+          2.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "vertices": 8,
+        "faces": 6,
+        "selectionMode": [
+          true,
+          false,
+          false
+        ],
+        "selectedVertices": null,
+        "selectedEdges": null,
+        "selectedFaces": null,
+        "selectedMedian": null,
+        "worldBounds": [
+          [
+            -1.0,
+            1.0
+          ],
+          [
+            -1.0,
+            1.0
+          ],
+          [
+            -1.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "units": "METERS",
+        "unitScale": 1.0
+      },
+      "path": "learning/evidence/03/2026-10-28-edit-practice-gui-v001/EDIT-01-default.png",
+      "sha256": "7fefffe3d6e72145c228a60b7ed5bce3e42e9525182a5ac42463cc5c00e3a3f4"
+    },
+    {
+      "slug": "units",
+      "action": "GUI 設定毫米顯示與 Unit Scale 0.001。",
+      "observed": {
+        "mode": "OBJECT",
+        "dimensions": [
+          2.0,
+          2.0,
+          2.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "vertices": 8,
+        "faces": 6,
+        "selectionMode": [
+          true,
+          false,
+          false
+        ],
+        "selectedVertices": null,
+        "selectedEdges": null,
+        "selectedFaces": null,
+        "selectedMedian": null,
+        "worldBounds": [
+          [
+            -1.0,
+            1.0
+          ],
+          [
+            -1.0,
+            1.0
+          ],
+          [
+            -1.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "units": "MILLIMETERS",
+        "unitScale": 0.0010000000474974513
+      },
+      "path": "learning/evidence/03/2026-10-28-edit-practice-gui-v001/EDIT-02-units.png",
+      "sha256": "249151cac127f355174cceffd805e87ab6d86c8d09f214f192ff806372ca27f4"
+    },
+    {
+      "slug": "saved-start",
+      "action": "GUI 另存編輯練習副本；檔案欄位由程式填入。",
+      "observed": {
+        "mode": "OBJECT",
+        "dimensions": [
+          2.0,
+          2.0,
+          2.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "vertices": 8,
+        "faces": 6,
+        "selectionMode": [
+          true,
+          false,
+          false
+        ],
+        "selectedVertices": null,
+        "selectedEdges": null,
+        "selectedFaces": null,
+        "selectedMedian": null,
+        "worldBounds": [
+          [
+            -1.0,
+            1.0
+          ],
+          [
+            -1.0,
+            1.0
+          ],
+          [
+            -1.0,
+            1.0
+          ]
+        ],
+        "hidden": false,
+        "units": "MILLIMETERS",
+        "unitScale": 0.0010000000474974513
+      },
+      "path": "learning/evidence/03/2026-10-28-edit-practice-gui-v001/EDIT-03-saved-start.png",
+      "sha256": "93bf1fef5b41bc2556df40748890fef5d8e6165e30d25065869d2e77d85396d0"
+    },
+    {
+      "slug": "cube20",
+      "action": "GUI 尺寸欄輸入 20 mm 並套用 Scale。",
+      "observed": {
+        "mode": "OBJECT",
+        "dimensions": [
+          20.0,
+          20.0,
+          20.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "vertices": 8,
+        "faces": 6,
+        "selectionMode": [
+          true,
+          false,
+          false
+        ],
+        "selectedVertices": null,
+        "selectedEdges": null,
+        "selectedFaces": null,
+        "selectedMedian": null,
+        "worldBounds": [
+          [
+            -10.0,
+            10.0
+          ],
+          [
+            -10.0,
+            10.0
+          ],
+          [
+            -10.0,
+            10.0
+          ]
+        ],
+        "hidden": false,
+        "units": "MILLIMETERS",
+        "unitScale": 0.0010000000474974513
+      },
+      "path": "learning/evidence/03/2026-10-28-edit-practice-gui-v001/EDIT-04-cube20.png",
+      "sha256": "23e7bd0894cb894c01b2f2f9fc93445b4478065ef02f5813d1611d01b54f8fe6"
+    },
+    {
+      "slug": "vertex",
+      "action": "GUI 進 Edit Mode、頂點模式，點一個可見頂點。",
+      "observed": {
+        "mode": "EDIT",
+        "dimensions": [
+          20.0,
+          20.0,
+          20.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "vertices": 8,
+        "faces": 6,
+        "selectionMode": [
+          true,
+          false,
+          false
+        ],
+        "selectedVertices": 1,
+        "selectedEdges": 0,
+        "selectedFaces": 0,
+        "selectedMedian": [
+          10.0,
+          -10.0,
+          10.0
+        ],
+        "worldBounds": [
+          [
+            -10.0,
+            10.0
+          ],
+          [
+            -10.0,
+            10.0
+          ],
+          [
+            -10.0,
+            10.0
+          ]
+        ],
+        "hidden": false,
+        "units": "MILLIMETERS",
+        "unitScale": 0.0010000000474974513
+      },
+      "path": "learning/evidence/03/2026-10-28-edit-practice-gui-v001/EDIT-05-vertex.png",
+      "sha256": "11cfb679a6e8ad854b21f03583e134f8dcf56ff8c6f4cf062c642fda0be47278"
+    },
+    {
+      "slug": "edge",
+      "action": "GUI 切邊模式並點上方邊線。",
+      "observed": {
+        "mode": "EDIT",
+        "dimensions": [
+          20.0,
+          20.0,
+          20.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "vertices": 8,
+        "faces": 6,
+        "selectionMode": [
+          false,
+          true,
+          false
+        ],
+        "selectedVertices": 2,
+        "selectedEdges": 1,
+        "selectedFaces": 0,
+        "selectedMedian": [
+          0.0,
+          -10.0,
+          10.0
+        ],
+        "worldBounds": [
+          [
+            -10.0,
+            10.0
+          ],
+          [
+            -10.0,
+            10.0
+          ],
+          [
+            -10.0,
+            10.0
+          ]
+        ],
+        "hidden": false,
+        "units": "MILLIMETERS",
+        "unitScale": 0.0010000000474974513
+      },
+      "path": "learning/evidence/03/2026-10-28-edit-practice-gui-v001/EDIT-06-edge.png",
+      "sha256": "3db95ffd00a537bde39141ff773d8b1bb49be3029a561506758db2c0095165e8"
+    },
+    {
+      "slug": "face",
+      "action": "GUI 切面模式並選中頂面。",
+      "observed": {
+        "mode": "EDIT",
+        "dimensions": [
+          20.0,
+          20.0,
+          20.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "vertices": 8,
+        "faces": 6,
+        "selectionMode": [
+          false,
+          false,
+          true
+        ],
+        "selectedVertices": 4,
+        "selectedEdges": 4,
+        "selectedFaces": 1,
+        "selectedMedian": [
+          0.0,
+          0.0,
+          10.0
+        ],
+        "worldBounds": [
+          [
+            -10.0,
+            10.0
+          ],
+          [
+            -10.0,
+            10.0
+          ],
+          [
+            -10.0,
+            10.0
+          ]
+        ],
+        "hidden": false,
+        "units": "MILLIMETERS",
+        "unitScale": 0.0010000000474974513
+      },
+      "path": "learning/evidence/03/2026-10-28-edit-practice-gui-v001/EDIT-07-face.png",
+      "sha256": "20ca5eb1024caefb70b94142985824c68a53c6333192a70c2c7f36dbad631f32"
+    },
+    {
+      "slug": "move-top",
+      "action": "GUI G Z 5mm；所選頂面的 Median Z 由10到15。",
+      "observed": {
+        "mode": "EDIT",
+        "dimensions": [
+          20.0,
+          20.0,
+          25.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "vertices": 8,
+        "faces": 6,
+        "selectionMode": [
+          false,
+          false,
+          true
+        ],
+        "selectedVertices": 4,
+        "selectedEdges": 4,
+        "selectedFaces": 1,
+        "selectedMedian": [
+          0.0,
+          0.0,
+          15.0
+        ],
+        "worldBounds": [
+          [
+            -10.0,
+            10.0
+          ],
+          [
+            -10.0,
+            10.0
+          ],
+          [
+            -10.0,
+            15.0
+          ]
+        ],
+        "hidden": false,
+        "units": "MILLIMETERS",
+        "unitScale": 0.0010000000474974513
+      },
+      "path": "learning/evidence/03/2026-10-28-edit-practice-gui-v001/EDIT-08-move-top.png",
+      "sha256": "f6f0bebda894dca6732e8fccc29b625e35b41b89975cad52e94dd79962906d56"
+    },
+    {
+      "slug": "undo-move",
+      "action": "GUI Ctrl+Z 撤回頂面移動。",
+      "observed": {
+        "mode": "EDIT",
+        "dimensions": [
+          20.0,
+          20.0,
+          20.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "vertices": 8,
+        "faces": 6,
+        "selectionMode": [
+          false,
+          false,
+          true
+        ],
+        "selectedVertices": 4,
+        "selectedEdges": 4,
+        "selectedFaces": 1,
+        "selectedMedian": [
+          0.0,
+          0.0,
+          10.0
+        ],
+        "worldBounds": [
+          [
+            -10.0,
+            10.0
+          ],
+          [
+            -10.0,
+            10.0
+          ],
+          [
+            -10.0,
+            10.0
+          ]
+        ],
+        "hidden": false,
+        "units": "MILLIMETERS",
+        "unitScale": 0.0010000000474974513
+      },
+      "path": "learning/evidence/03/2026-10-28-edit-practice-gui-v001/EDIT-09-undo-move.png",
+      "sha256": "9c9d08425a7784aff780d49610396de48db7e3ad0db6adbe6940fbf60b7bca97"
+    },
+    {
+      "slug": "inset",
+      "action": "GUI I 3mm，頂面內插；選中內面 XY 跨距應各14mm。",
+      "observed": {
+        "mode": "EDIT",
+        "dimensions": [
+          20.0,
+          20.0,
+          20.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "vertices": 12,
+        "faces": 10,
+        "selectionMode": [
+          false,
+          false,
+          true
+        ],
+        "selectedVertices": 4,
+        "selectedEdges": 4,
+        "selectedFaces": 1,
+        "selectedMedian": [
+          0.0,
+          0.0,
+          10.0
+        ],
+        "worldBounds": [
+          [
+            -10.0,
+            10.0
+          ],
+          [
+            -10.0,
+            10.0
+          ],
+          [
+            -10.0,
+            10.0
+          ]
+        ],
+        "hidden": false,
+        "units": "MILLIMETERS",
+        "unitScale": 0.0010000000474974513
+      },
+      "path": "learning/evidence/03/2026-10-28-edit-practice-gui-v001/EDIT-10-inset.png",
+      "sha256": "06d1e1781172dbb7d7c3eaacc4b5739afd4413698c1909220b7e88032445b1d0"
+    },
+    {
+      "slug": "extrude",
+      "action": "GUI E 5mm，內面沿法向擠出。",
+      "observed": {
+        "mode": "EDIT",
+        "dimensions": [
+          20.0,
+          20.0,
+          25.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "vertices": 16,
+        "faces": 14,
+        "selectionMode": [
+          false,
+          false,
+          true
+        ],
+        "selectedVertices": 4,
+        "selectedEdges": 4,
+        "selectedFaces": 1,
+        "selectedMedian": [
+          0.0,
+          0.0,
+          15.0
+        ],
+        "worldBounds": [
+          [
+            -10.0,
+            10.0
+          ],
+          [
+            -10.0,
+            10.0
+          ],
+          [
+            -10.0,
+            15.0
+          ]
+        ],
+        "hidden": false,
+        "units": "MILLIMETERS",
+        "unitScale": 0.0010000000474974513
+      },
+      "path": "learning/evidence/03/2026-10-28-edit-practice-gui-v001/EDIT-11-extrude.png",
+      "sha256": "31067761ec394371fe1e28d0cea32cab020634b89e6559d7197c7a50dd2d96a0"
+    },
+    {
+      "slug": "undo-twice",
+      "action": "GUI 兩次 Ctrl+Z，恢復原本方塊。",
+      "observed": {
+        "mode": "EDIT",
+        "dimensions": [
+          20.0,
+          20.0,
+          20.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "vertices": 8,
+        "faces": 6,
+        "selectionMode": [
+          false,
+          false,
+          true
+        ],
+        "selectedVertices": 4,
+        "selectedEdges": 4,
+        "selectedFaces": 1,
+        "selectedMedian": [
+          0.0,
+          0.0,
+          10.0
+        ],
+        "worldBounds": [
+          [
+            -10.0,
+            10.0
+          ],
+          [
+            -10.0,
+            10.0
+          ],
+          [
+            -10.0,
+            10.0
+          ]
+        ],
+        "hidden": false,
+        "units": "MILLIMETERS",
+        "unitScale": 0.0010000000474974513
+      },
+      "path": "learning/evidence/03/2026-10-28-edit-practice-gui-v001/EDIT-12-undo-twice.png",
+      "sha256": "758cfef07c4d771be94e6e905647dc4606e26826639caf9b8fa59ebabf2bcfdb"
+    },
+    {
+      "slug": "hidden",
+      "action": "GUI H 隱藏物件。",
+      "observed": {
+        "mode": "OBJECT",
+        "dimensions": [
+          20.0,
+          20.0,
+          20.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "vertices": 8,
+        "faces": 6,
+        "selectionMode": [
+          false,
+          false,
+          true
+        ],
+        "selectedVertices": null,
+        "selectedEdges": null,
+        "selectedFaces": null,
+        "selectedMedian": null,
+        "worldBounds": [
+          [
+            -10.0,
+            10.0
+          ],
+          [
+            -10.0,
+            10.0
+          ],
+          [
+            -10.0,
+            10.0
+          ]
+        ],
+        "hidden": true,
+        "units": "MILLIMETERS",
+        "unitScale": 0.0010000000474974513
+      },
+      "path": "learning/evidence/03/2026-10-28-edit-practice-gui-v001/EDIT-13-hidden.png",
+      "sha256": "f1a07be0d61ec1422201268c76a52d6744b92be425737299af06bc6b0157545f"
+    },
+    {
+      "slug": "shown",
+      "action": "GUI Alt+H 顯示物件。",
+      "observed": {
+        "mode": "OBJECT",
+        "dimensions": [
+          20.0,
+          20.0,
+          20.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "vertices": 8,
+        "faces": 6,
+        "selectionMode": [
+          false,
+          false,
+          true
+        ],
+        "selectedVertices": null,
+        "selectedEdges": null,
+        "selectedFaces": null,
+        "selectedMedian": null,
+        "worldBounds": [
+          [
+            -10.0,
+            10.0
+          ],
+          [
+            -10.0,
+            10.0
+          ],
+          [
+            -10.0,
+            10.0
+          ]
+        ],
+        "hidden": false,
+        "units": "MILLIMETERS",
+        "unitScale": 0.0010000000474974513
+      },
+      "path": "learning/evidence/03/2026-10-28-edit-practice-gui-v001/EDIT-14-shown.png",
+      "sha256": "50eb09c5536ff26b34f240b0959c7b76c199626dbd4d2f032b14fe58988e9079"
+    },
+    {
+      "slug": "bottom",
+      "action": "GUI Ctrl+Numpad7 切底視；只改視角。",
+      "observed": {
+        "mode": "OBJECT",
+        "dimensions": [
+          20.0,
+          20.0,
+          20.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "vertices": 8,
+        "faces": 6,
+        "selectionMode": [
+          false,
+          false,
+          true
+        ],
+        "selectedVertices": null,
+        "selectedEdges": null,
+        "selectedFaces": null,
+        "selectedMedian": null,
+        "worldBounds": [
+          [
+            -10.0,
+            10.0
+          ],
+          [
+            -10.0,
+            10.0
+          ],
+          [
+            -10.0,
+            10.0
+          ]
+        ],
+        "hidden": false,
+        "units": "MILLIMETERS",
+        "unitScale": 0.0010000000474974513
+      },
+      "path": "learning/evidence/03/2026-10-28-edit-practice-gui-v001/EDIT-15-bottom.png",
+      "sha256": "c0a53bf7265f8a1fecb0050d84f7444171d8088b7c937a286f8719144494df7c"
+    },
+    {
+      "slug": "orbit",
+      "action": "GUI 數字鍵盤轉回傾斜視角。",
+      "observed": {
+        "mode": "OBJECT",
+        "dimensions": [
+          20.0,
+          20.0,
+          20.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "vertices": 8,
+        "faces": 6,
+        "selectionMode": [
+          false,
+          false,
+          true
+        ],
+        "selectedVertices": null,
+        "selectedEdges": null,
+        "selectedFaces": null,
+        "selectedMedian": null,
+        "worldBounds": [
+          [
+            -10.0,
+            10.0
+          ],
+          [
+            -10.0,
+            10.0
+          ],
+          [
+            -10.0,
+            10.0
+          ]
+        ],
+        "hidden": false,
+        "units": "MILLIMETERS",
+        "unitScale": 0.0010000000474974513
+      },
+      "path": "learning/evidence/03/2026-10-28-edit-practice-gui-v001/EDIT-16-orbit.png",
+      "sha256": "a83e50e3d13d4075d31471f385fb37cf727ee6b561f509ef4c110442f5850adc"
+    },
+    {
+      "slug": "saved-end",
+      "action": "GUI 另存第二版，不覆蓋第一版。",
+      "observed": {
+        "mode": "OBJECT",
+        "dimensions": [
+          20.0,
+          20.0,
+          20.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "vertices": 8,
+        "faces": 6,
+        "selectionMode": [
+          false,
+          false,
+          true
+        ],
+        "selectedVertices": null,
+        "selectedEdges": null,
+        "selectedFaces": null,
+        "selectedMedian": null,
+        "worldBounds": [
+          [
+            -10.0,
+            10.0
+          ],
+          [
+            -10.0,
+            10.0
+          ],
+          [
+            -10.0,
+            10.0
+          ]
+        ],
+        "hidden": false,
+        "units": "MILLIMETERS",
+        "unitScale": 0.0010000000474974513
+      },
+      "path": "learning/evidence/03/2026-10-28-edit-practice-gui-v001/EDIT-17-saved-end.png",
+      "sha256": "7a361cd862af5f5d50a5c74fa4de990e190df9e9200c585625178f95c6b6826e"
+    },
+    {
+      "slug": "reopened",
+      "action": "GUI 重開第二版並核對尺寸、縮放與幾何。",
+      "observed": {
+        "mode": "OBJECT",
+        "dimensions": [
+          20.0,
+          20.0,
+          20.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "vertices": 8,
+        "faces": 6,
+        "selectionMode": [
+          false,
+          false,
+          true
+        ],
+        "selectedVertices": null,
+        "selectedEdges": null,
+        "selectedFaces": null,
+        "selectedMedian": null,
+        "worldBounds": [
+          [
+            -10.0,
+            10.0
+          ],
+          [
+            -10.0,
+            10.0
+          ],
+          [
+            -10.0,
+            10.0
+          ]
+        ],
+        "hidden": false,
+        "units": "MILLIMETERS",
+        "unitScale": 0.0010000000474974513
+      },
+      "path": "learning/evidence/03/2026-10-28-edit-practice-gui-v001/EDIT-18-reopened.png",
+      "sha256": "1c85c227d052468b5e6b24e45487b0de6b79157c1eef93876f3d7bc9808ef05d"
+    }
+  ],
+  "physicalPrint": null,
+  "physicalMeasurement": null,
+  "physicalFit": null
+}

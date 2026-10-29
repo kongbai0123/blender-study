@@ -1,0 +1,382 @@
+{
+  "schemaVersion": 1,
+  "base": {
+    "path": "learning/web/engineering-curriculum-v035.json",
+    "sha256": "d40ffc3102585947f1a19d2e50d072f343cf25685df9d7e8555dfd702bc4fa91"
+  },
+  "purpose": "補齊第 07、08、12 章教學與證據；無學員進度變更",
+  "patches": {
+    "ch07-setup-01": {
+      "actions": [
+        "從 CAD Sketcher 0.32.1 官方 release 下載 Windows x64 ZIP，保留原檔。",
+        "在 PowerShell 對該 ZIP 執行 Get-FileHash <檔案完整路徑> -Algorithm SHA256，並核對檔案大小。"
+      ],
+      "success": "ZIP 為 1,283,581 bytes 且 SHA-256 為 b456070e9d1cec7fea85494b7afbbae0a543e9c2381cc40349a763d2de038a59；不符先停止，不安裝。",
+      "evidenceStatus": "documented_lesson",
+      "artifacts": [
+        {
+          "path": "learning/evidence/parametric/2026-10-28-cad-install-gui-trial-v002/safe-summary-v001.json",
+          "sha256": "632c4fc67a7a10158abb60066ca89f5fce5fe8fad97cad08af9d3be461105e63",
+          "label": "隔離安裝使用的 ZIP 來源與讀值",
+          "type": "verification-json"
+        }
+      ],
+      "limitations": [
+        "2026-10-27 的來源摘要及本次隔離 GUI 使用相同 SHA 的 ZIP；沒有記錄學員下載或下載過程截圖。",
+        "第三方 ZIP 不隨教材發布；Windows x64 與 Blender 5.2.1 以外的安裝包需各自核對。"
+      ],
+      "detail": {
+        "steps": [
+          "到官方 0.32.1 release 頁下載 Windows x64 ZIP，保留原 ZIP。",
+          "對實際下載的檔案查大小及 SHA-256；任一不符先停止。"
+        ],
+        "why": "來源與位元組吻合是安裝前置條件，不代表擴充套件已可運作。"
+      }
+    },
+    "ch07-setup-02": {
+      "actions": [
+        "Edit > Preferences > Get Extensions，展開右上選單並選 Install from Disk...，選上一步核對過的 ZIP。",
+        "到 Add-ons 確認 CAD Sketcher 已啟用；回 3D Viewport 按 N，查看 Sketcher 分頁。"
+      ],
+      "success": "Add-ons 中 CAD Sketcher 勾選；3D Viewport 的 N 側欄出現 Sketcher。失敗時停下並記錄錯誤。",
+      "evidenceStatus": "existing_demo",
+      "figures": [
+        {
+          "type": "screenshot",
+          "path": "learning/evidence/parametric/2026-10-28-cad-install-gui-trial-v002/CAD-INSTALL-01-menu.png",
+          "sha256": "c5f7b5a9ae7006a46b1d96f7eb2acd75b5e3daa96e34e0dff251a64a88e9e9ee",
+          "caption": "獨立 Blender 的 Install from Disk 選單；示範使用隔離擴充套件目錄。"
+        },
+        {
+          "type": "screenshot",
+          "path": "learning/evidence/parametric/2026-10-28-cad-install-gui-trial-v002/CAD-INSTALL-03-addons.png",
+          "sha256": "e93c4600306dfef79b09260f790ad3163967fc8eee1c0eee517108acf64e7ec6",
+          "caption": "獨立 Blender Add-ons 頁的 CAD Sketcher 啟用畫面。"
+        },
+        {
+          "type": "screenshot",
+          "path": "learning/evidence/parametric/2026-10-28-cad-install-gui-trial-v002/CAD-INSTALL-04-sidebar.png",
+          "sha256": "8b7fa61b0c51b4344b9a946103113f954d00fd8f0ba4da84d63571f31e9e37c7",
+          "caption": "獨立 Blender 3D Viewport 的 N 側欄顯示 Sketcher 分頁。"
+        }
+      ],
+      "artifacts": [
+        {
+          "path": "learning/evidence/parametric/2026-10-28-cad-install-gui-trial-v002/safe-summary-v001.json",
+          "sha256": "632c4fc67a7a10158abb60066ca89f5fce5fe8fad97cad08af9d3be461105e63",
+          "label": "隔離 GUI 安裝、版本和啟用讀回",
+          "type": "verification-json"
+        }
+      ],
+      "limitations": [
+        "ZIP 路徑和檔名由程式填入檔案對話框；選單與頁面切換透過獨立 Blender GUI 事件。",
+        "示範僅證明隔離環境，非學員電腦已安裝；示範的 extension profile 與個人設定分開。"
+      ],
+      "detail": {
+        "steps": [
+          "確認所選檔案為已核對的 ZIP，再以 Install from Disk... 執行安裝。",
+          "確認 Add-ons 勾選 CAD Sketcher，回 3D Viewport 用 N 查看 Sketcher 分頁。"
+        ],
+        "why": "安裝檔存在不等於外掛已成功啟用。"
+      }
+    },
+    "ch07-setup-03": {
+      "evidenceStatus": "existing_demo",
+      "artifacts": [
+        {
+          "path": "learning/evidence/parametric/2026-10-28-workspace-isolated-cli-v002/safe-summary-v001.json",
+          "sha256": "898040178c3ba48f4931de049f17e603bfbc150d2f7755f191f41ab552ae3521",
+          "label": "假專案工作區建立與檔案登記 CLI 實證",
+          "type": "verification-json"
+        }
+      ],
+      "limitations": [
+        "命令已在隔離假專案執行；其 synthetic progress 與資料夾不是學員成果。",
+        "毫米場景另參照原教材 04-02；既有不同場景或不同建立順序下新增物件尺寸可能不同，應核對實際畫面。",
+        "命令建立工作區不寫進度；使用者若已有同名練習檔，另存未使用的新版本。"
+      ],
+      "detail": {
+        "steps": [
+          "從專案根目錄執行 python learning/manage.py engineering-workspace，確認工作區路徑。",
+          "保留現有作品，依第 03 章設定 Millimeters 與 Unit Scale 0.001。",
+          "在自己的工作區另存新的 .blend；同名存在時改用未使用的新檔名。"
+        ],
+        "why": "工作區及個人場景分開管理；示範假專案不代替學員存檔。"
+      }
+    },
+    "ch08-param-plan": {
+      "evidenceStatus": "documented_lesson",
+      "actions": [
+        "列出盒長、盒寬、側壁、底厚、蓋板厚、唇深及同一方向的總間隙。",
+        "寫出內腔＝外寬−2×側壁、唇外＝內腔−總間隙；未完成個人試配時 0.4 mm 僅是試驗值。"
+      ],
+      "success": "能寫出各尺寸來源及關係，區分總間隙、單側間隙與尚未取得的實測值。",
+      "limitations": [
+        "參數表是設計關係；不代表模型已連動或實體試配合格。",
+        "例：60 mm 外寬、2 mm 側壁、0.4 mm 總間隙得到 56 mm 內寬、55.6 mm 唇外；均為名義示範而非實測。"
+      ],
+      "detail": {
+        "steps": [
+          "以相同方向分欄記外形、壁厚與總間隙。",
+          "先計內腔，再計唇外；只有置中時單側間隙才等於總間隙的一半。",
+          "寫明 0.4 mm 為尚未實體核准的試驗值。"
+        ],
+        "why": "先建立可追溯關係，再處理草圖和 Driver；紙上公式不代表自動更新。"
+      }
+    },
+    "ch08-guard-prepare-01": {
+      "evidenceStatus": "existing_demo",
+      "artifacts": [
+        {
+          "path": "learning/evidence/parametric/2026-10-28-workspace-isolated-cli-v002/safe-summary-v001.json",
+          "sha256": "898040178c3ba48f4931de049f17e603bfbc150d2f7755f191f41ab552ae3521",
+          "label": "隔離假專案的建工作區、複製與重名拒絕紀錄",
+          "type": "verification-json"
+        }
+      ],
+      "limitations": [
+        "本次只在假專案執行；副本及 synthetic progress 都不是學員的檔案與完成紀錄。",
+        "受控面板僅接受指定示範手工盒副本；與自己另建的盒子不可互相冒充。"
+      ],
+      "detail": {
+        "steps": [
+          "執行複製指令並核對目的地與來源 SHA。",
+          "如同名存在，換新檔名；不要覆寫。"
+        ],
+        "why": "已核對的來源副本才適用特定受控面板。"
+      }
+    },
+    "ch08-guard-checkpoint-01": {
+      "evidenceStatus": "existing_demo",
+      "figures": [
+        {
+          "type": "screenshot",
+          "path": "learning/evidence/parametric/2026-10-27-manual-box-guard-gui-trial-v004/GUARD-27-registered-attempt.png",
+          "sha256": "f5f84bccc6fb55368b95ced8c2ac98e7c67419c4ec9113b43596541530d9829a",
+          "caption": "舊獨立 Blender 假專案：面板對已登記版本拒絕；非學員畫面。"
+        }
+      ],
+      "artifacts": [
+        {
+          "path": "learning/evidence/parametric/2026-10-28-workspace-isolated-cli-v002/safe-summary-v001.json",
+          "sha256": "898040178c3ba48f4931de049f17e603bfbc150d2f7755f191f41ab552ae3521",
+          "label": "假專案 CLI 登記與面板拒絕邏輯核對",
+          "type": "verification-json"
+        }
+      ],
+      "limitations": [
+        "另存、登記與受控面板圖分別來自示範和隔離假專案；不代表學員已登記。",
+        "原生 Save／Export 與原生尺寸欄位不受受控面板攔截；登記不證明幾何或配合合格。"
+      ],
+      "detail": {
+        "steps": [
+          "在 Blender 以新檔名另存，保留上個已登記版本。",
+          "讀取當前 revision，再以網頁或 register-file 登記此場景。",
+          "若要繼續改，先另存另一個未登記的檔案。"
+        ],
+        "why": "可回溯的檢查點與下一版修改檔必須分開。"
+      }
+    },
+    "ch12-dimension-chain": {
+      "evidenceStatus": "documented_lesson",
+      "actions": [
+        "分欄寫出外寬、側壁、盒口內寬、唇外寬與同方向總間隙。",
+        "計算內寬＝外寬−2×側壁；唇外＝內寬−總間隙。"
+      ],
+      "success": "能指出名義關係、數位讀值、實測與總／單側間隙各自來源；沒有實測就留空。",
+      "limitations": [
+        "名義尺寸關係不是實際列印量測或合格判定。",
+        "例：外寬60、側壁2、總間隙0.4 mm 得內寬56、唇外55.6 mm；全部是名義例子。"
+      ],
+      "detail": {
+        "steps": [
+          "先確認每個量所沿的軸向與來源版本。",
+          "依公式計算名義尺寸；如置中，單側名義間隙為總間隙的一半。",
+          "分開保留尚未取得的實測與試配結果。"
+        ],
+        "why": "每個尺寸變更可沿鏈回溯；一筆實測也不代表批量能力。"
+      }
+    },
+    "ch12-09-01-01": {
+      "evidenceStatus": "field_protocol_ready",
+      "actions": [
+        "複製空白量測與試配範本到自己的工作區。",
+        "分欄記來源版本、名義尺寸及條件；只有實際量測或試配後才填結果與日期。"
+      ],
+      "success": "能說明每欄的來源與單位；尚未量測、列印或試配的欄位保持空白。",
+      "artifacts": [
+        {
+          "path": "learning/journal/templates/engineering-measurement-fit-v001.json",
+          "sha256": "464c838c18c0a576f57b8d38e9db2fd28e5668aa343db0af9937528580cea5bf",
+          "label": "實體量測與試配空白紀錄範本",
+          "type": "verification-json"
+        }
+      ],
+      "limitations": [
+        "空白範本與方法不代表已量測、已試配或學員已完成。",
+        "總間隙、單側間隙、直徑差及法向間隙不可混填。"
+      ],
+      "detail": {
+        "steps": [
+          "先依零件及版本分欄，記錄列印與量具條件。",
+          "實物尚不存在時保留實測、差值與試配欄空白。"
+        ],
+        "why": "可追溯來源、條件和日期才能比較結果。"
+      }
+    },
+    "ch12-09-02-01": {
+      "evidenceStatus": "field_protocol_ready",
+      "actions": [
+        "複製補償空白範本到工作區，記下對應實測來源與製程條件。",
+        "有實測後依實測−名義記錄差值，再記補償草案；切片器和模型補償避免重複。"
+      ],
+      "success": "有實測時能追溯計算及後續重印驗證；無實測時補償與合格欄保持空白。",
+      "artifacts": [
+        {
+          "path": "learning/journal/templates/engineering-compensation-v001.json",
+          "sha256": "bb038c0947f0a1d4393853217ce1ae5f277d74ebd1cadd9ee7fbebdc5d22dcaa",
+          "label": "製程補償空白紀錄範本",
+          "type": "verification-json"
+        },
+        {
+          "path": "learning/journal/templates/engineering-measurement-fit-v001.json",
+          "sha256": "464c838c18c0a576f57b8d38e9db2fd28e5668aa343db0af9937528580cea5bf",
+          "label": "實體量測與試配空白紀錄範本",
+          "type": "verification-json"
+        }
+      ],
+      "limitations": [
+        "沒有實際量測，不預填補償或宣稱已改善；線性初估需重印驗證。",
+        "單個試片不代表所有方向、材料或批量能力。"
+      ],
+      "detail": {
+        "steps": [
+          "分別記名義與實測；觀察差值定義為實測減名義。",
+          "將候選調整、切片器既有補償及其方向分開；僅有實際數據時填入。",
+          "對應機器、材料、方向與重印結果；未驗證不標合格。"
+        ],
+        "why": "補償不是從 0.4 mm 噴嘴或試驗間隙直接推定。"
+      }
+    },
+    "ch12-09-03-01": {
+      "evidenceStatus": "field_protocol_ready",
+      "actions": [
+        "複製組裝與版本關聯範本，先選定同一分支及對應零件。",
+        "取得相容實物後依選定設計試組，記日期與觀察；若尚未印製則留空。"
+      ],
+      "success": "能分辨同分支對件；只有實際試組後才填開合、鎖附或損傷結果。",
+      "artifacts": [
+        {
+          "path": "learning/journal/templates/engineering-assembly-trace-v001.json",
+          "sha256": "91552650952e7ca3f15c6b5389d0defad7df4041121241e1eccd59ad5b1ff3f4",
+          "label": "零件版本與組裝空白紀錄範本",
+          "type": "verification-json"
+        }
+      ],
+      "limitations": [
+        "側向螺帽、平面蓋四柱、燕尾與卡扣為不同分支，不能自動視為相容。",
+        "目前沒有實際列印、組裝或強度／配合合格證據。"
+      ],
+      "detail": {
+        "steps": [
+          "核對來源、版本與對件，先不要把不同分支混裝。",
+          "實物到手後才試組並記錄；目前欄位保留空白。"
+        ],
+        "why": "數位幾何與有限碰撞抽樣不能代替實物試組。"
+      }
+    },
+    "ch12-09-03-02": {
+      "evidenceStatus": "existing_demo",
+      "actions": [
+        "在空白版本關聯表記場景及各匯出檔案路徑與 SHA-256。",
+        "在版本紀錄核對每個 export 或 render 的來源 .blend，內容變更後另存並重新輸出。"
+      ],
+      "success": "每個實際匯出均對應正確場景版本；尚無的檔案留空。",
+      "artifacts": [
+        {
+          "path": "learning/journal/templates/engineering-assembly-trace-v001.json",
+          "sha256": "91552650952e7ca3f15c6b5389d0defad7df4041121241e1eccd59ad5b1ff3f4",
+          "label": "零件與版本關聯空白紀錄範本",
+          "type": "verification-json"
+        },
+        {
+          "path": "learning/evidence/parametric/2026-10-28-workspace-isolated-cli-v002/safe-summary-v001.json",
+          "sha256": "898040178c3ba48f4931de049f17e603bfbc150d2f7755f191f41ab552ae3521",
+          "label": "隔離假專案的場景與合成 fixture 關聯紀錄",
+          "type": "verification-json"
+        }
+      ],
+      "limitations": [
+        "假專案中 STL 是無網格的合成 fixture，只示範版本記錄連結，不是 Blender 匯出或可列印檔。",
+        "檔案雜湊與來源關聯不證明幾何或實體配合合格。"
+      ],
+      "detail": {
+        "steps": [
+          "先查現有 .blend 和匯出檔案、SHA 與所屬分支。",
+          "逐一核對 export 或 render 的來源；未匯出者保留空白。"
+        ],
+        "why": "追溯場景和輸出檔可避免誤用過時模型。"
+      }
+    },
+    "ch12-box-render-safe-copy": {
+      "evidenceStatus": "existing_demo",
+      "figures": [
+        {
+          "type": "screenshot",
+          "path": "learning/evidence/12/2026-10-28-render-safe-copy-gui-v003/12-COPY-02-saved.png",
+          "sha256": "633b0445de2d4bcbb52b341a374474529d0b36efe255fe82171f090dfdf536c4",
+          "caption": "獨立 Blender 已將場景另存至隔離假工作區；非學員檔案。"
+        },
+        {
+          "type": "screenshot",
+          "path": "learning/evidence/12/2026-10-28-render-safe-copy-gui-v003/12-COPY-03-output.png",
+          "sha256": "9084b9b4ad27381fbdac4da40a5282a70f8f808fb1f0282b9ae26a2687b5283a",
+          "caption": "GUI 選 Output Properties；顯示相對路徑 //render_output\\box_lid。"
+        }
+      ],
+      "artifacts": [
+        {
+          "path": "learning/evidence/12/2026-10-27-engineering-box-render-v004/demo-files/engineering_box_render_v001.blend",
+          "sha256": "db03247077da659ff4c4a0a5ac411e7662ab326fb6302e58496e1636f69246de",
+          "label": "小盒分離展示的渲染場景 v001",
+          "type": "scene-blend"
+        },
+        {
+          "path": "learning/evidence/12/2026-10-27-engineering-box-render-v004/demo-files/box_lid_render_v001.png",
+          "sha256": "71f81543cc96a7b4187521b990c7e22b572ab6b27c6025a50671c32d74b1bba1",
+          "label": "640×480 渲染輸出 PNG（不是介面截圖）",
+          "type": "render-output-png"
+        },
+        {
+          "path": "learning/evidence/12/2026-10-27-engineering-box-render-v004/box-render-verification-v004.json",
+          "sha256": "652a6369f040354d25340e22667388e0d717318f3bb64724e855b623a07afbaf",
+          "label": "小盒渲染操作、幾何與輸出路徑讀值摘要",
+          "type": "verification-json"
+        },
+        {
+          "path": "learning/evidence/12/2026-10-28-render-safe-copy-gui-v003/safe-summary-v001.json",
+          "sha256": "a911f7e6f8d5b1232269a04b3d649f1bc02a275007bde25c6e4750420acb01cb",
+          "label": "隔離另存、重開與輸出目的地讀回",
+          "type": "verification-json"
+        }
+      ],
+      "limitations": [
+        "材質、燈光、相機、地板及上蓋上移18 mm由程式設定；Render Image 是原生 GUI 事件，並非完整手工佈景教學。",
+        "上蓋抬高是分離展示，不是名義裝配位置；外觀、色彩或渲染不能證明尺寸配合、材料或實體強度。",
+        "Render Result 以程式 save_render 存為640×480 PNG；輸出PNG是渲染成果，不是 Blender 介面截圖。",
+        "原盒與原蓋網格與來源場景相同；實體列印、量測、試配與合格間隙仍無結果，示範不代表學員完成。",
+        "場景輸出 //render_output/box_lid 相對於目前 .blend 位置；先複製或另存到個人工作區，再核對 Output Properties 輸出路徑，直接開證據原檔仍可能寫入 evidence。",
+        "新示範在隔離假工作區執行另存與路徑核對，檔案對話框欄位由程式填入；並未操作學員 Blender 或替學員確認。",
+        "這次只核對路徑，未渲染或向該路徑寫入影像。"
+      ],
+      "detail": {
+        "steps": [
+          "File > Save As 到自己的工作區及未使用的新檔名，保留原示範場景。",
+          "Output Properties 查看輸出欄；// 相對於目前 .blend 所在資料夾，絕對路徑則核對位於個人工作區。",
+          "確認後可重開場景再檢查；有疑慮時先改為自己工作區內的輸出位置。"
+        ],
+        "why": "先另存再解析相對輸出位置，可避免誤寫示範 evidence。"
+      }
+    }
+  }
+}

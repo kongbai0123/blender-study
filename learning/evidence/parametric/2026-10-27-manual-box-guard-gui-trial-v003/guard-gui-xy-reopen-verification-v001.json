@@ -1,0 +1,342 @@
+{
+  "kind": "controlled-manual-box-xy-and-reopen-gui-trial",
+  "method": "獨立 Blender 5.2.1 / CAD Sketcher 0.32.1 的假專案與假 progress；程式啟用插件、填檔案視窗路徑、讀值；GUI 事件執行 Text Editor Alt+P、面板提交、另存與同一執行期重開。",
+  "programs": [
+    {
+      "path": "learning/tutor/guarded_manual_box_v001.py",
+      "sha256": "9dd50ba87227fc6ea77df4f6344b602ba245becfe4efe28d5343600a1282f067"
+    },
+    {
+      "path": "learning/tutor/manual_box_auto_update_v002.py",
+      "sha256": "cc39a2376c8abc41f61cb5beb796a83e22b63dc33b6b6aed5df9f135e83fc457"
+    },
+    {
+      "path": "learning/tutor/manual_box_reference_v001.json",
+      "sha256": "78f39a6ec422bb02b64fff64f70896c927a6ab449bcd84be9a03b6657bedae5c"
+    }
+  ],
+  "phases": {
+    "invalid-assertion": {
+      "outerMm": [
+        80,
+        50
+      ],
+      "cutterX": [
+        2.0,
+        78.0
+      ],
+      "cutterY": [
+        2.0,
+        48.0
+      ],
+      "lidBoundsMm": [
+        [
+          0.000518798828125,
+          79.99948120117188
+        ],
+        [
+          0.000324249267578125,
+          49.99967575073242
+        ],
+        [
+          26.00001335144043,
+          31.99998664855957
+        ]
+      ]
+    },
+    "valid-assertion": {
+      "outerMm": [
+        90,
+        50
+      ],
+      "cutterX": [
+        2.0,
+        88.0
+      ],
+      "cutterY": [
+        2.0,
+        48.0
+      ],
+      "lidBoundsMm": [
+        [
+          0.000518798828125,
+          89.99948120117188
+        ],
+        [
+          0.000324249267578125,
+          49.99967575073242
+        ],
+        [
+          26.00001335144043,
+          31.99998664855957
+        ]
+      ]
+    },
+    "width-assertion-alt": {
+      "outerMm": [
+        90,
+        60
+      ],
+      "cutterX": [
+        2.0,
+        88.0
+      ],
+      "cutterY": [
+        2.0,
+        58.0
+      ],
+      "lidBoundsMm": [
+        [
+          0.000518798828125,
+          89.99948120117188
+        ],
+        [
+          0.000324249267578125,
+          59.99967575073242
+        ],
+        [
+          26.00001335144043,
+          31.99998664855957
+        ]
+      ]
+    },
+    "shrink-x-assertion": {
+      "outerMm": [
+        70,
+        60
+      ],
+      "cutterX": [
+        2.0,
+        68.0
+      ],
+      "cutterY": [
+        2.0,
+        58.0
+      ],
+      "lidBoundsMm": [
+        [
+          0.000518798828125,
+          69.99948120117188
+        ],
+        [
+          0.000324249267578125,
+          59.99967575073242
+        ],
+        [
+          26.00001335144043,
+          31.99998664855957
+        ]
+      ]
+    },
+    "shrink-y-assertion": {
+      "outerMm": [
+        70,
+        40
+      ],
+      "cutterX": [
+        2.0,
+        68.0
+      ],
+      "cutterY": [
+        2.0,
+        38.0
+      ],
+      "lidBoundsMm": [
+        [
+          0.000518798828125,
+          69.99948120117188
+        ],
+        [
+          0.000324249267578125,
+          39.99967575073242
+        ],
+        [
+          26.00001335144043,
+          31.99998664855957
+        ]
+      ]
+    },
+    "reopened-assertion": {
+      "outerMm": [
+        70,
+        40
+      ],
+      "cutterX": [
+        2.0,
+        68.0
+      ],
+      "cutterY": [
+        2.0,
+        38.0
+      ],
+      "lidBoundsMm": [
+        [
+          0.000518798828125,
+          69.99948120117188
+        ],
+        [
+          0.000324249267578125,
+          39.99967575073242
+        ],
+        [
+          26.00001335144043,
+          31.99998664855957
+        ]
+      ]
+    },
+    "registered-assertion": {
+      "outerMm": [
+        70,
+        40
+      ],
+      "cutterX": [
+        2.0,
+        68.0
+      ],
+      "cutterY": [
+        2.0,
+        38.0
+      ],
+      "lidBoundsMm": [
+        [
+          0.000518798828125,
+          69.99948120117188
+        ],
+        [
+          0.000324249267578125,
+          39.99967575073242
+        ],
+        [
+          26.00001335144043,
+          31.99998664855957
+        ]
+      ]
+    }
+  },
+  "scene": {
+    "file": "demo-files/manual_guard_trial_70x40_v003.blend",
+    "sha256": "4d5c383a67f855f81707604d6b1f871ae74054611ce878b63b01a73451d9e201",
+    "classification": "假專案助教測試副本；不是學員檔案"
+  },
+  "images": [
+    {
+      "file": "GUARD-01-opened.png",
+      "sha256": "ef1ad4605384ee621ef5e3f501c68611a3cee86a5bb6f91f80595b56203d54f8"
+    },
+    {
+      "file": "GUARD-02-outer-sketch.png",
+      "sha256": "1de32f144a69380cc467c2048ce5dedd73946b89bae43304601cb47565844cc8"
+    },
+    {
+      "file": "GUARD-03-script-open.png",
+      "sha256": "298e218b1b77b93b54ebd69ab46d5f833f1fa4ab1634650023d0123b92cc3428"
+    },
+    {
+      "file": "GUARD-04-script-run.png",
+      "sha256": "298e218b1b77b93b54ebd69ab46d5f833f1fa4ab1634650023d0123b92cc3428"
+    },
+    {
+      "file": "GUARD-05-viewport.png",
+      "sha256": "5920f6fd06405232d45c4df0b0a708c2734ae2aaea3b85c63d712cac767c0ef9"
+    },
+    {
+      "file": "GUARD-06-panel.png",
+      "sha256": "58f9607dd0014fbdcba970dc83fabbfefb32fd823f54e6ad667e2376f5667ed3"
+    },
+    {
+      "file": "GUARD-07-dialog.png",
+      "sha256": "7e9e2f875b6162bb047481e098d027d14b182c242125c5d58a6d6dba8df507a2"
+    },
+    {
+      "file": "GUARD-08-parameter-menu.png",
+      "sha256": "671a582bde4a5f446e9e71e0471afab68d43bcbc230511604929a77f6e6c9c1a"
+    },
+    {
+      "file": "GUARD-09-invalid-proposal.png",
+      "sha256": "496b0278604159057d487ffe27b76a6a2603ea43ece64629932875313c047cde"
+    },
+    {
+      "file": "GUARD-10-invalid-result.png",
+      "sha256": "8318d576b440a57c58266f4d54acfcd1dd56c7beb90f4f46ee9b0dc1f5c87a66"
+    },
+    {
+      "file": "GUARD-11-valid-proposal.png",
+      "sha256": "b1cd55bb0d52928f0b4a23f43ae38d3cf499d8da0bcd0485e9d29f3138d19da8"
+    },
+    {
+      "file": "GUARD-12-valid-result.png",
+      "sha256": "33a6ba3350fea8197a37fa8a87f95be9fe5df6fe59d6f057c69e209ce7d25332"
+    },
+    {
+      "file": "GUARD-13-width-dialog-open.png",
+      "sha256": "08afb34a04eaa23e6adc870b135ac94f95061a12c0131f3f0b79a18d9ed1eddd"
+    },
+    {
+      "file": "GUARD-14-width-menu-open.png",
+      "sha256": "44b405ae874a75661be0e4104de299c6e4a4196cf24a73632986630aa63ffea5"
+    },
+    {
+      "file": "GUARD-15-width-selected.png",
+      "sha256": "30cb9c47b86e98fed13066020dc14c22469f6b155041fb8646119a396044b307"
+    },
+    {
+      "file": "GUARD-16-width-typing-alt.png",
+      "sha256": "bd99f4f8dff171a7f62dd5b728fd8b1adb182c134722370b04f3752efeb04b67"
+    },
+    {
+      "file": "GUARD-17-width-entered-alt.png",
+      "sha256": "e71afe3771600eb4f2e27da31b3dc34c2f35e532b312b0c4881cf29388b5a863"
+    },
+    {
+      "file": "GUARD-18-width-checked-alt.png",
+      "sha256": "ae17119e0d742bd1d8d791d464e5a92cf393ccc2f7ee63dd266a817e8981d8f4"
+    },
+    {
+      "file": "GUARD-19-width-result-alt.png",
+      "sha256": "308efda952c3998bf03c71fe4554f14394b8b823c902b79de612b70f9150e470"
+    },
+    {
+      "file": "GUARD-20-shrink-x-proposal.png",
+      "sha256": "1d5e5de0d3b5644832944789b334685ddc143ee79671e5784f1996b431193c58"
+    },
+    {
+      "file": "GUARD-21-shrink-x-result.png",
+      "sha256": "c06a202aa6af93547e416d964035bbbf410c45532610d1ce74e552810ec3c07e"
+    },
+    {
+      "file": "GUARD-22-shrink-y-proposal.png",
+      "sha256": "36d991ce99f3ac2dd880035896945f0c4917ece1afcafbcf8cd998a7e74446be"
+    },
+    {
+      "file": "GUARD-23-shrink-y-result.png",
+      "sha256": "8190980612e145637fd769b444ea69a9821ff3b3a7dc9f0c338f6d4290d90c1c"
+    },
+    {
+      "file": "GUARD-24-saved.png",
+      "sha256": "966f512cd3b6d7866adf34d4795aa810ccf7f8bb1ebae101e2ee54f75cba335f"
+    },
+    {
+      "file": "GUARD-25-reopened.png",
+      "sha256": "acc501d6ad1ad37ef4a81fe3ec3fdcb75a95ebfadd322ba60f1eb21266d50df1"
+    },
+    {
+      "file": "GUARD-26-registered-fixture.png",
+      "sha256": "acc501d6ad1ad37ef4a81fe3ec3fdcb75a95ebfadd322ba60f1eb21266d50df1"
+    },
+    {
+      "file": "GUARD-27-registered-attempt.png",
+      "sha256": "dbe1bc23a9b7c5d2554d1305a63d701d7fc6f8dfebcc4da9d9f2e418b585418b"
+    }
+  ],
+  "limitations": [
+    "假專案透過面板依序測 X110拒絕、80×50→90×50→90×60→70×60→70×40；內腔自動更新只指本受控面板提交。",
+    "v002 的 Y 焦點輸入失敗不屬模型連動失敗；v003 同一 Blender 執行期間完成另存重開，未驗 Blender 程式結束重啟後面板是否保留。",
+    "GUARD-27 點側欄後面板消失，不代表已登記版本拒絕；程式僅確認假 progress 登記與幾何未變。",
+    "圖中只可見對話欄位/外框，內腔與上蓋邊界以 Python 讀值；未驗完整碰撞、列印量測及試配，間隙仍是草案。",
+    "原生欄位可繞過防護及受控更新，原生儲存/匯出不受本面板攔截；候選界限不是製造或配合合格。",
+    "已登記檔案拒絕與求解錯誤回滾尚未在此 GUI 實證。"
+  ],
+  "physicalMeasurements": null,
+  "fitResults": null,
+  "qualifiedClearanceMm": null
+}

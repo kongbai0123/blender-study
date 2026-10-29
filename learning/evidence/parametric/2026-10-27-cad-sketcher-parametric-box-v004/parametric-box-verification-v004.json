@@ -1,0 +1,512 @@
+{
+  "schemaVersion": 1,
+  "id": "parametric-box-verification-v004",
+  "createdAt": "2026-10-27T13:16:29.018097+08:00",
+  "summary": "Programmatically generated meshes and vertex drivers, controlled by CAD Sketcher constraints; native GUI event edits the sketch, with saved/reopened versions and measured digital geometry.",
+  "methods": {
+    "sketch": "native GUI in previous recorded run; original 60x40 fully defined sketch copied",
+    "geometryAndDrivers": "programmatic (not GUI instruction)",
+    "dimensionEdits": "native simulated GUI events on Blender Sketcher side panel",
+    "fileDialog": "paths populated programmatically, confirm sent as native event",
+    "freshProcess": "separate Blender background process; in-memory Python change, no save",
+    "launcherTest": "separate background process checks same add-on bootstrap and file argument ordering, not a real user UI test"
+  },
+  "blenderVersion": "5.2.1 LTS",
+  "cadSketcherVersion": "0.32.1",
+  "runner": {
+    "status": "completed",
+    "exitCode": 0,
+    "runErrors": [],
+    "workspaceContentsUnchanged": true,
+    "comparisonScope": "workspace endpoint snapshots only"
+  },
+  "cases": [
+    {
+      "label": "parametric-60",
+      "allChecksPassed": true,
+      "checkCount": 14,
+      "sketch": {
+        "solver": "OKAY",
+        "dof": 0,
+        "constraints": {
+          "b596b36138076155": 60.0,
+          "854e8777cfe2608d": 40.0
+        },
+        "generatedMesh": "Body Sketch"
+      },
+      "boxBounds": [
+        [
+          0.0,
+          60.0
+        ],
+        [
+          0.0,
+          40.0
+        ],
+        [
+          0.0,
+          30.0
+        ]
+      ],
+      "lidBounds": [
+        [
+          0.0,
+          60.0
+        ],
+        [
+          0.0,
+          40.0
+        ],
+        [
+          26.0,
+          32.0
+        ]
+      ],
+      "cavityBoundsXY": [
+        [
+          2.0,
+          58.0
+        ],
+        [
+          2.0,
+          38.0
+        ]
+      ],
+      "lipOuterBoundsXY": [
+        [
+          2.200000047683716,
+          57.79999923706055
+        ],
+        [
+          2.200000047683716,
+          37.79999923706055
+        ]
+      ],
+      "sideGapsXY": [
+        [
+          0.20000004768371582,
+          0.20000076293945312
+        ],
+        [
+          0.20000004768371582,
+          0.20000076293945312
+        ]
+      ],
+      "boxNonManifoldEdges": 0,
+      "lidNonManifoldEdges": 0,
+      "verificationFile": {
+        "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-parametric-box-v004/parametric-60-verification.json",
+        "sha256": "8be93adde60d29ba1381d9d458bcb2b1351f2d746417c227c6ce5b7523a95260",
+        "bytes": 4623
+      }
+    },
+    {
+      "label": "parametric-80",
+      "allChecksPassed": true,
+      "checkCount": 14,
+      "sketch": {
+        "solver": "OKAY",
+        "dof": 0,
+        "constraints": {
+          "b596b36138076155": 80.0,
+          "854e8777cfe2608d": 40.0
+        },
+        "generatedMesh": "Body Sketch"
+      },
+      "boxBounds": [
+        [
+          0.0,
+          80.0
+        ],
+        [
+          0.0,
+          40.0
+        ],
+        [
+          0.0,
+          30.0
+        ]
+      ],
+      "lidBounds": [
+        [
+          0.0,
+          80.0
+        ],
+        [
+          0.0,
+          40.0
+        ],
+        [
+          26.0,
+          32.0
+        ]
+      ],
+      "cavityBoundsXY": [
+        [
+          2.0,
+          78.0
+        ],
+        [
+          2.0,
+          38.0
+        ]
+      ],
+      "lipOuterBoundsXY": [
+        [
+          2.200000047683716,
+          77.80000305175781
+        ],
+        [
+          2.200000047683716,
+          37.79999923706055
+        ]
+      ],
+      "sideGapsXY": [
+        [
+          0.20000004768371582,
+          0.1999969482421875
+        ],
+        [
+          0.20000004768371582,
+          0.20000076293945312
+        ]
+      ],
+      "boxNonManifoldEdges": 0,
+      "lidNonManifoldEdges": 0,
+      "verificationFile": {
+        "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-parametric-box-v004/parametric-80-verification.json",
+        "sha256": "a83331d4f43fa9d3aa228750d5f6072975cf6880e01728b2865c5c90c2c73971",
+        "bytes": 4622
+      }
+    },
+    {
+      "label": "reopened-80",
+      "allChecksPassed": true,
+      "checkCount": 14,
+      "sketch": {
+        "solver": "OKAY",
+        "dof": 0,
+        "constraints": {
+          "b596b36138076155": 80.0,
+          "854e8777cfe2608d": 40.0
+        },
+        "generatedMesh": "Body Sketch"
+      },
+      "boxBounds": [
+        [
+          0.0,
+          80.0
+        ],
+        [
+          0.0,
+          40.0
+        ],
+        [
+          0.0,
+          30.0
+        ]
+      ],
+      "lidBounds": [
+        [
+          0.0,
+          80.0
+        ],
+        [
+          0.0,
+          40.0
+        ],
+        [
+          26.0,
+          32.0
+        ]
+      ],
+      "cavityBoundsXY": [
+        [
+          2.0,
+          78.0
+        ],
+        [
+          2.0,
+          38.0
+        ]
+      ],
+      "lipOuterBoundsXY": [
+        [
+          2.200000047683716,
+          77.80000305175781
+        ],
+        [
+          2.200000047683716,
+          37.79999923706055
+        ]
+      ],
+      "sideGapsXY": [
+        [
+          0.20000004768371582,
+          0.1999969482421875
+        ],
+        [
+          0.20000004768371582,
+          0.20000076293945312
+        ]
+      ],
+      "boxNonManifoldEdges": 0,
+      "lidNonManifoldEdges": 0,
+      "verificationFile": {
+        "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-parametric-box-v004/reopened-80-verification.json",
+        "sha256": "dd92a825c33791af249f1efbc33f7f3bae0aaff784317506f19b6fc034dcc50d",
+        "bytes": 4620
+      }
+    },
+    {
+      "label": "reopened-edit-70",
+      "allChecksPassed": true,
+      "checkCount": 14,
+      "sketch": {
+        "solver": "OKAY",
+        "dof": 0,
+        "constraints": {
+          "b596b36138076155": 70.0,
+          "854e8777cfe2608d": 40.0
+        },
+        "generatedMesh": "Body Sketch"
+      },
+      "boxBounds": [
+        [
+          0.0,
+          70.0
+        ],
+        [
+          0.0,
+          40.0
+        ],
+        [
+          0.0,
+          30.0
+        ]
+      ],
+      "lidBounds": [
+        [
+          0.0,
+          70.0
+        ],
+        [
+          0.0,
+          40.0
+        ],
+        [
+          26.0,
+          32.0
+        ]
+      ],
+      "cavityBoundsXY": [
+        [
+          2.0,
+          68.0
+        ],
+        [
+          2.0,
+          38.0
+        ]
+      ],
+      "lipOuterBoundsXY": [
+        [
+          2.200000047683716,
+          67.80000305175781
+        ],
+        [
+          2.200000047683716,
+          37.79999923706055
+        ]
+      ],
+      "sideGapsXY": [
+        [
+          0.20000004768371582,
+          0.1999969482421875
+        ],
+        [
+          0.20000004768371582,
+          0.20000076293945312
+        ]
+      ],
+      "boxNonManifoldEdges": 0,
+      "lidNonManifoldEdges": 0,
+      "verificationFile": {
+        "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-parametric-box-v004/reopened-edit-70-verification.json",
+        "sha256": "415f30e48cb22e5da90f4558eea3fe43303635f39f45a3eeaa9db66a31e2133a",
+        "bytes": 4614
+      }
+    },
+    {
+      "label": "reopened-restored-80",
+      "allChecksPassed": true,
+      "checkCount": 14,
+      "sketch": {
+        "solver": "OKAY",
+        "dof": 0,
+        "constraints": {
+          "b596b36138076155": 80.0,
+          "854e8777cfe2608d": 40.0
+        },
+        "generatedMesh": "Body Sketch"
+      },
+      "boxBounds": [
+        [
+          0.0,
+          80.0
+        ],
+        [
+          0.0,
+          40.0
+        ],
+        [
+          0.0,
+          30.0
+        ]
+      ],
+      "lidBounds": [
+        [
+          0.0,
+          80.0
+        ],
+        [
+          0.0,
+          40.0
+        ],
+        [
+          26.0,
+          32.0
+        ]
+      ],
+      "cavityBoundsXY": [
+        [
+          2.0,
+          78.0
+        ],
+        [
+          2.0,
+          38.0
+        ]
+      ],
+      "lipOuterBoundsXY": [
+        [
+          2.200000047683716,
+          77.80000305175781
+        ],
+        [
+          2.200000047683716,
+          37.79999923706055
+        ]
+      ],
+      "sideGapsXY": [
+        [
+          0.20000004768371582,
+          0.1999969482421875
+        ],
+        [
+          0.20000004768371582,
+          0.20000076293945312
+        ]
+      ],
+      "boxNonManifoldEdges": 0,
+      "lidNonManifoldEdges": 0,
+      "verificationFile": {
+        "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-parametric-box-v004/reopened-restored-80-verification.json",
+        "sha256": "d2f3792fc958d4ec85bcd27ca0eeb5e26351c36ce61a63aca44bdad30e5d2d8b",
+        "bytes": 4629
+      }
+    }
+  ],
+  "scenes": [
+    {
+      "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-parametric-box-v004/demo-files/parametric_box_60x40_v001.blend",
+      "sha256": "4c938ccfb74c5a88a6dc6d2fc73ebb670a132d54400ebe63e78b82b9182468be",
+      "bytes": 118951
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-parametric-box-v004/demo-files/parametric_box_80x40_v002.blend",
+      "sha256": "97c0236091da77a279d87dbb6a3198087d668fc3247bb8c9abafa7bdfa409e4f",
+      "bytes": 118979
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-parametric-box-v004/demo-files/parametric_box_80x40_v003.blend",
+      "sha256": "a86cef672d274522c4461433e96c45e26c9da37efe116ecb53472dc3dca143c2",
+      "bytes": 118967
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-parametric-box-v004/CAD-BOX-01-sketch-source.png",
+      "sha256": "4d1898ecc22882b8921795558f6dadbec38585b2f3cd595af5e69e144eef6f85",
+      "bytes": 179267
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-parametric-box-v004/CAD-BOX-02-drivers-created.png",
+      "sha256": "381cd9801f0fc0ca75743cd4682bc16a24fd6dc06eba98d5763c54d0cec31159",
+      "bytes": 175099
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-parametric-box-v004/CAD-BOX-03-saved-60.png",
+      "sha256": "04f5d48a0ba4a4c1f0883d5d5908d325157b8019137c127687b8778c3884bcbe",
+      "bytes": 179791
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-parametric-box-v004/CAD-BOX-04-changed-80.png",
+      "sha256": "29537f86d3385d37c7398beb233403e5c66c481c98c807951ae66d91103f860a",
+      "bytes": 178612
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-parametric-box-v004/CAD-BOX-05-saved-80.png",
+      "sha256": "9dfd696a90ae62def9f89033da4b5ae6e5835eb5d3cf8690288a031fd68a6267",
+      "bytes": 178830
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-parametric-box-v004/CAD-BOX-06-reopened-80.png",
+      "sha256": "53d7b4073d8bf4659496bd8fc213184fb335a94c277d05f3e7d566ce4c548fcc",
+      "bytes": 180693
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-parametric-box-v004/CAD-BOX-07-reopened-edit-70.png",
+      "sha256": "aefd3e693d14afd5b7d5060f682be85f2b0b776972a888c408deaf38492beb9b",
+      "bytes": 173873
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-parametric-box-v004/CAD-BOX-08-saved-80-after-reopen.png",
+      "sha256": "91f035fc5659d954da691fa60a53ca53a973aa336f659680de4f56dce0dbae05",
+      "bytes": 178859
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-parametric-box-v004/CAD-BOX-09-model-80.png",
+      "sha256": "229488b76819ae55b86bf62d51e6a51d18471591894d916e892dc7ddf6f30862",
+      "bytes": 176666
+    }
+  ],
+  "freshProcessVerification": {
+    "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-parametric-box-v004/fresh-process-verification.json",
+    "sha256": "3eea1fe17041654bed0f856e1ba336ebdab6dfbcd30e789d456f5d50d15643e2",
+    "bytes": 594
+  },
+  "launcherBootstrapVerification": {
+    "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-parametric-box-v004/launcher-bootstrap-verification.json",
+    "sha256": "f384c940d40542e91cd6bbfb3c2761dfbd829b13177dd0143646c286b0e0aa65",
+    "bytes": 419
+  },
+  "launcher": {
+    "path": "learning/tutor/open_parametric_box.py",
+    "requires": "Blender 5.2.1 and local isolated official CAD Sketcher 0.32.1 profile; profile not packaged",
+    "noSimulatedEvents": true,
+    "protectsEvidenceSource": true,
+    "copyExample": "python learning/tutor/open_parametric_box.py --copy-to learning/workspaces/engineering-parametric/my_box_v001.blend",
+    "reopenExample": "python learning/tutor/open_parametric_box.py --open-existing learning/workspaces/engineering-parametric/my_box_v001.blend"
+  },
+  "constraints": [
+    "Only X length changed in GUI; Y and other independent scene parameters not yet individually tested.",
+    "The model uses vertex drivers reading CAD Sketcher constraint ID properties; it is not a native CAD feature tree.",
+    "No automatic invalid-parameter guards; keep L,W > 2*(wall + gap/2 + lip wall), H > bottom >= 0, H >= lip depth > 0.",
+    "Changing constraint IDs, deleting sketch or editing mesh directly can break links.",
+    "No sliced, printed or physical fit evaluation; .4 mm total clearance is a draft trial."
+  ],
+  "physicalMeasurements": null,
+  "fitResults": null,
+  "qualifiedClearanceMm": null
+}

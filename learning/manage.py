@@ -20,9 +20,9 @@ PROJECT = LEARNING.parent
 PROGRESS = LEARNING / "progress.json"
 CATALOG = LEARNING / "catalog.json"
 # 新版工程教材只在這裡指定目前版本；伺服器以固定網址提供，網頁不寫版本號。
-ENGINEERING_CURRICULUM = LEARNING / "web" / "engineering-curriculum-v032.json"
-ENGINEERING_PATH = LEARNING / "web" / "engineering-path-v003.json"
-CHALLENGES = LEARNING / "web" / "challenges" / "challenges-v005.json"
+ENGINEERING_CURRICULUM = LEARNING / "web" / "engineering-curriculum-v038.json"
+ENGINEERING_PATH = LEARNING / "web" / "engineering-path-v007.json"
+CHALLENGES = LEARNING / "web" / "challenges" / "challenges-v010.json"
 # 工程章節共用的個人工作區；不屬於原 01～09 單元，登記檔案時以 --workspace 指定。
 ENGINEERING_WORKSPACES = {"engineering-parametric": "learning/workspaces/engineering-parametric"}
 # 受控尺寸面板只接受這個示範手工盒的副本（面板固定其草圖約束 UID 與上蓋拓撲簽章）。
@@ -148,7 +148,7 @@ def lesson_state(catalog, progress, lesson_id):
 
 
 def engineering_overview(progress):
-    """新版主線（不含選修、待製作與附錄）的確認數與下一小步；教材讀不到時回傳 None。"""
+    """新版主線（不含選修、待製作、速查與附錄）的確認數與下一小步；教材讀不到時回傳 None。"""
     try:
         curriculum = read_json(ENGINEERING_CURRICULUM)
     except (OSError, ValueError):
@@ -210,7 +210,7 @@ def status(catalog, progress, args):
 def engineering_status_summary(progress, overview):
     """預設的 status：學習進度以新版小步為主，原教材只供查閱。"""
     print("進度 revision %d｜更新：%s" % (progress["revision"], progress["updatedAt"]))
-    print("新版主線：%d / %d 小步已確認（選修與附錄不計入）" % (overview["done"], overview["total"]))
+    print("新版主線：%d / %d 小步已確認（選修、待製作、第 00 章速查與附錄不計入）" % (overview["done"], overview["total"]))
     pilot_status_summary(progress)
     if overview["next"] is None:
         print("主線小步都已確認。")
@@ -484,6 +484,8 @@ def engineering_event(progress, args, *, confirmed):
         raise ValueError("附錄是開發與驗證紀錄，不需要也不能確認完成。")
     if confirmed and step.get("track") == "pending":
         raise ValueError("這一小步標為待製作：所需的模型或示範還沒完成，不能確認完成。")
+    if confirmed and step.get("track") == "reference":
+        raise ValueError("這是第 00 章的速查卡，只供閱讀與查找，不需要也不能確認；正式練習在卡片列出的小步。")
     if confirmed:
         evidence = getattr(args, "evidence", None)
         if not isinstance(evidence, str) or not evidence.strip() or len(evidence) > 12000:

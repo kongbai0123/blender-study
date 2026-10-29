@@ -1,0 +1,178 @@
+{
+  "sceneSha256": "415cbf110088be7821c445e8f9bd6946880d69fa54b114d4adf780e58c92582a",
+  "blenderVersion": "5.2.1 LTS",
+  "objects": {
+    "Body": {
+      "worldFaceVertexSetSha256": "14aadcea96872f701a71b38280cf1a6788a13a3b45574e083930e46e3541e58b",
+      "worldBoundsMm": [
+        [
+          -30.0,
+          30.0
+        ],
+        [
+          -20.0,
+          20.0
+        ],
+        [
+          -15.0,
+          15.0
+        ]
+      ],
+      "vertices": 16,
+      "faces": 14,
+      "components": 1,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "hidden": false,
+      "modifiers": []
+    },
+    "Lid": {
+      "worldFaceVertexSetSha256": "95fe03fdbe5e99141156cbb018cca4407c275b06359930d43776ccec69241c00",
+      "worldBoundsMm": [
+        [
+          -30.0,
+          30.0
+        ],
+        [
+          -20.0,
+          20.0
+        ],
+        [
+          11.0,
+          17.0
+        ]
+      ],
+      "vertices": 24,
+      "faces": 22,
+      "components": 1,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "hidden": true,
+      "modifiers": []
+    },
+    "zz_Boss_Pillars": {
+      "worldFaceVertexSetSha256": "03f08b71a27b207af1a5aeeeaa1a0a5f5902298b3f5920d2fba0b0d71d0ba541",
+      "worldBoundsMm": [
+        [
+          -25.0,
+          25.0
+        ],
+        [
+          -15.0,
+          15.0
+        ],
+        [
+          -13.5,
+          15.0
+        ]
+      ],
+      "vertices": 256,
+      "faces": 136,
+      "components": 4,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "hidden": true,
+      "modifiers": []
+    },
+    "zz_Boss_Ribs_X": {
+      "worldFaceVertexSetSha256": "61addc9660ed0bee4579e506ab4802fadd3232197c3d8a9f70920f00d281c2e0",
+      "worldBoundsMm": [
+        [
+          -28.5,
+          28.5
+        ],
+        [
+          -12.0,
+          12.0
+        ],
+        [
+          -13.5,
+          10.0
+        ]
+      ],
+      "vertices": 32,
+      "faces": 24,
+      "components": 4,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "hidden": true,
+      "modifiers": []
+    },
+    "zz_Boss_Ribs_Y": {
+      "worldFaceVertexSetSha256": "2d39f005555fdd208c87ca5422df2a788e65cbbe3ab1da28b3122c990b59ae7e",
+      "worldBoundsMm": [
+        [
+          -22.0,
+          22.0
+        ],
+        [
+          -18.5,
+          18.5
+        ],
+        [
+          -13.5,
+          10.0
+        ]
+      ],
+      "vertices": 32,
+      "faces": 24,
+      "components": 4,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "hidden": true,
+      "modifiers": []
+    },
+    "zz_Boss_Pilot_Tools": {
+      "worldFaceVertexSetSha256": "f0647fe4561e8b64dc5fa233369b60d3da822b1eb391d82d97b627f707cb19de",
+      "worldBoundsMm": [
+        [
+          -23.0,
+          23.0
+        ],
+        [
+          -13.0,
+          13.0
+        ],
+        [
+          6.0,
+          15.5
+        ]
+      ],
+      "vertices": 256,
+      "faces": 136,
+      "components": 4,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "hidden": true,
+      "modifiers": []
+    },
+    "zz_Boss_Lid_Tools": {
+      "worldFaceVertexSetSha256": "9c44aaff6c51517d6f1260e248e2176154aeacad4ab36fa2f1a519afe07327d5",
+      "worldBoundsMm": [
+        [
+          -22.700000762939453,
+          22.700000762939453
+        ],
+        [
+          -12.699999809265137,
+          12.700000762939453
+        ],
+        [
+          10.5,
+          17.5
+        ]
+      ],
+      "vertices": 256,
+      "faces": 136,
+      "components": 4,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "hidden": true,
+      "modifiers": []
+    }
+  },
+  "limitations": [
+    "Tools were program-prepared; source body and lid are geometrically unmodified.",
+    "Disconnected tools are intentional before Boolean; actual print and fit are not tested."
+  ]
+}

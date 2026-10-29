@@ -1,0 +1,63 @@
+{
+  "stlSha256": "f93e5ef13d319081c31fef8b5cf30674dd66a5513d486a86731c0b2f76cdec93",
+  "binaryTriangles": 1420,
+  "binaryBoundsMm": [
+    [
+      -30.0,
+      34.29999542236328
+    ],
+    [
+      -20.0,
+      20.0
+    ],
+    [
+      -15.0,
+      15.0
+    ]
+  ],
+  "binaryExactDuplicateTriangles": 0,
+  "binaryExactDuplicateDetails": [],
+  "blenderVersion": "5.2.1 LTS",
+  "importOptions": {
+    "globalScale": 1,
+    "useSceneUnit": false,
+    "forwardAxis": "Y",
+    "upAxis": "Z",
+    "meshValidate": true
+  },
+  "reimport": {
+    "vertices": 712,
+    "faces": 1420,
+    "triangles": 1420,
+    "boundsMm": [
+      [
+        -30.0,
+        34.29999542236328
+      ],
+      [
+        -20.0,
+        20.0
+      ],
+      [
+        -15.0,
+        15.0
+      ]
+    ],
+    "signedVolumeMm3": 15920.013963481457,
+    "boundaryEdges": 0,
+    "nonManifoldEdges": 0,
+    "components": 1,
+    "nonAdjacentBvhCandidates": 0,
+    "minimumTriangleAreaMm2": 0.0019618411243882156
+  },
+  "limitations": [
+    "Independent software audit; STL has no embedded length unit, coordinates interpreted in mm.",
+    "Native validated import may remove duplicate triangles; exact duplicates remain in the original STL file.",
+    "Zero BVH candidates does not prove no self-intersection; geometry is not verified for manufacture or fit."
+  ],
+  "physicalPrint": null,
+  "physicalMeasurement": null,
+  "physicalFit": null,
+  "qualifiedClearance": null,
+  "qualifiedStrength": null
+}

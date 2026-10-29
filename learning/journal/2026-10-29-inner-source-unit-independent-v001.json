@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "path": "learning/evidence/08/2026-10-28-closed-external-thread-probe-v001/demo-files/u08_closed_external_thread_probe_v001.blend",
+    "sha256": "dadb268dce5836f46d877d90a7ca0113de5280790f6d9611ce9a551422c4c700"
+  },
+  "method": "Blender 5.2.1 LTS background, factory startup, auto execution disabled, isolated user config and scripts; read-only scene unit settings",
+  "readback": {
+    "system": "METRIC",
+    "scaleLength": 0.0010000000474974513,
+    "lengthUnit": "MILLIMETERS"
+  },
+  "limits": [
+    "Unit Scale readback only; does not establish fit, printability or physical measurement.",
+    "Newly added Cube 2000 mm and final dimensions are separately attributed to the GUI trial safe summary."
+  ],
+  "physicalPrint": null,
+  "physicalMeasurement": null,
+  "physicalFit": null
+}

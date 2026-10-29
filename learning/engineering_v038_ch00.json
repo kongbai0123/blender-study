@@ -1,0 +1,1407 @@
+{
+  "schemaVersion": 1,
+  "id": "engineering-v038-ch00-reference",
+  "description": "第 00 章常用功能與快捷操作的來源內容；由 build_engineering_curriculum_v038.py 展開路徑、補上原圖與讀值雜湊後併入教材。只整理既有實測，沒有新示範。",
+  "aliases": {
+    "SV": "learning/evidence/01/2026-10-27-shortcuts-demo-v001/",
+    "KV": "learning/evidence/01/2026-10-27-shortcuts-keyboard-demo-v002/",
+    "MV": "learning/evidence/01/2026-10-27-shortcuts-mesh-demo-v001/",
+    "EV1": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v001/",
+    "EV2": "learning/evidence/01/2026-10-27-shortcut-mode-errors-demo-v002/",
+    "ES": "learning/evidence/03/2026-10-28-edit-practice-gui-v001/",
+    "L01": "learning/evidence/01/2026-10-22-lesson01-demo-v001/",
+    "L02": "learning/evidence/02/2026-10-22-lesson02-demo-v001/",
+    "L03": "learning/evidence/03/2026-10-22-lesson03-demo-v001/",
+    "L04": "learning/evidence/04/2026-10-22-lesson04-demo-v001/"
+  },
+  "readingSources": {
+    "SV": {"path": "SV:shortcut-verification-v001.json", "scope": "讀值取自 2026-10-27 獨立 Blender 5.2.1 的快捷鍵實測（出廠鍵位、單位 m、未存檔、不寫學員工作區）；只說明按鍵效果，不是學員結果，也不是為本章另做的示範。"},
+    "KV": {"path": "KV:keyboard-verification-v001.json", "scope": "讀值取自 2026-10-27 獨立 Blender 5.2.1 的數字鍵盤實測（出廠鍵位、偏好設定只在隔離暫存設定中、未保存）；只說明按鍵效果，不是學員結果。"},
+    "MV": {"path": "MV:mesh-shortcut-verification-v001.json", "scope": "讀值取自 2026-10-27 獨立 Blender 5.2.1 的 Edit Mode 快捷鍵實測（出廠鍵位、單位 m、未存檔）；只說明按鍵效果，沒有核對工程尺寸，不是學員結果。"},
+    "EV1": {"path": "EV1:shortcut-mode-errors-verification-v001.json", "scope": "讀值取自 2026-10-27 獨立 Blender 5.2.1 的誤按模式實測（出廠鍵位、原本沒有動畫的 Cube、未存檔）；只說明誤按的結果與復原，不是學員結果。"},
+    "EV2": {"path": "EV2:shortcut-mode-errors-verification-v001.json", "scope": "讀值取自 2026-10-27 獨立 Blender 5.2.1 的誤按模式實測第二版（出廠鍵位、未存檔）；只說明誤按的結果與清除方法，不是學員結果。"},
+    "ES": {"path": "ES:safe-summary-v001.json", "scope": "讀值取自 2026-10-28 第 03 章編輯模式的 GUI 實拍（毫米場景；檔案欄位由程式填入，存檔只到隔離示範資料夾）；不是學員結果。"}
+  },
+  "chapter": {
+    "id": "ch00",
+    "number": "00",
+    "title": "常用功能與快捷操作",
+    "goal": "把之後各章反覆用到的功能與快捷鍵集中在一處：每一項說明用途、在哪裡按、按錯怎麼復原，以及在哪一步正式練習。",
+    "deliverable": "這一章只供查閱，不需要做出檔案，也不需要確認完成；忘記按鍵時回來查。",
+    "limitations": [
+      "內容整理自 Blender 5.2.1 出廠鍵位的獨立實測與既有原圖；自訂鍵位、筆電鍵盤或其他版本可能不同，以自己的畫面與選單鍵標為準。",
+      "速查不計入主線進度，也不能代替各章小步的確認；正式練習在每張卡片列出的小步。"
+    ],
+    "detailNote": "本章是速查：卡片取自 2026-10-27 的快捷鍵實測與 2026-10-28 的編輯模式實拍，沒有為本章另做新示範。畫面和卡片不同時以自己的 Blender 為準，可以在卡片下方留卡關筆記。"
+  },
+  "pathChapter": {
+    "id": "ch00",
+    "number": "00",
+    "kind": "reference",
+    "title": "常用功能與快捷操作",
+    "goal": "集中查閱各章反覆使用的功能與快捷鍵：用途、在哪裡按、按錯怎麼復原，以及正式練習在哪一步。",
+    "practice": [
+      "先讀 00-01：按快捷鍵前要核對滑鼠位置、模式與欄位，以及取消、撤回、搜尋。",
+      "需要某個功能時，從本章速查表找到卡片，看原圖、注意事項與找不到按鈕時的選單位置。",
+      "要動手練習時，按卡片的「正式練習」連到該章的小步。"
+    ],
+    "functions": [
+      "Esc／右鍵取消、Ctrl+Z 撤回、F3 搜尋",
+      "存檔與另存新版本",
+      "視角、相機視角與側欄讀值",
+      "選取、新增、刪除、改名與隱藏",
+      "G／R／S 數值變換與套用縮放",
+      "Edit Mode 的點邊面、內插、擠出、倒角與網格檢查"
+    ],
+    "shortcuts": [
+      {"keys": "Esc／滑鼠右鍵", "effect": "操作還沒按 Enter 前取消。", "context": "3D Viewport", "status": "既有快捷鍵實測；詳見 00-01"},
+      {"keys": "Ctrl+Z", "effect": "撤回上一個已確認的動作。", "context": "3D Viewport", "status": "既有原圖鍵標與 GUI 實拍；詳見 00-01"},
+      {"keys": "F3", "effect": "Menu Search：輸入功能的英文名稱來執行。", "context": "3D Viewport", "status": "既有原圖鍵標；詳見 00-01"},
+      {"keys": "Shift+Ctrl+S", "effect": "另存新版本，不覆蓋已登記的檢查點。", "context": "Blender 主視窗", "status": "既有原圖鍵標；詳見 00-02"}
+    ],
+    "references": [
+      {"lessonId": "01", "stepId": "01-04", "label": "File 選單鍵標原圖"},
+      {"lessonId": "01", "stepId": "01-07", "label": "Edit 選單與側欄鍵標原圖"},
+      {"lessonId": "02", "stepId": "02-01", "label": "Object 選單鍵標原圖"},
+      {"lessonId": "03", "stepId": "03-05", "label": "Render 選單鍵標原圖"},
+      {"lessonId": "04", "stepId": "04-03", "label": "Apply 選單鍵標原圖"},
+      {"lessonId": "04", "stepId": "04-04", "label": "Mesh Delete 選單鍵標原圖"}
+    ],
+    "deliverable": "不需要做出檔案；需要時回來查按鍵、選單位置與按錯後的復原方法。",
+    "deliverableLabel": "怎麼用",
+    "availability": "reference_ready",
+    "availabilityLabel": "速查：不需確認，不計入進度",
+    "notes": [
+      "卡片取自 2026-10-27 的快捷鍵實測與 2026-10-28 的編輯模式實拍，沒有為本章另做新示範。",
+      "00-06 編輯模式與 00-07 按錯模式的內容，第 03 章 03-08 起才正式練習；第 01～02 章還不需要。",
+      "Shift+D、Ctrl+J、X → Faces、F12 等只有選單鍵標原圖，卡片會註明沒有逐步實拍。"
+    ]
+  },
+  "sections": [
+    {"id": "00-01", "title": "先看這裡：按鍵規則、取消與搜尋"},
+    {"id": "00-02", "title": "檔案與渲染"},
+    {"id": "00-03", "title": "看模型：視角與側欄"},
+    {"id": "00-04", "title": "選取、新增與整理物件"},
+    {"id": "00-05", "title": "移動、旋轉、縮放"},
+    {"id": "00-06", "title": "編輯模式（第 03 章起使用）"},
+    {"id": "00-07", "title": "按錯模式時怎麼辦"}
+  ],
+  "cards": [
+    {
+      "id": "ch00-01-01", "section": "00-01",
+      "title": "快捷鍵要在哪裡按",
+      "goal": "知道按快捷鍵前要核對的三件事：滑鼠位置、目前模式、有沒有欄位正在輸入。",
+      "context": "Blender 主視窗；出廠鍵位",
+      "actions": [
+        "按快捷鍵前，先把滑鼠移到中間有格線的 3D Viewport。",
+        "看 3D Viewport 左上角的模式選單，確認是 Object Mode 還是 Edit Mode。",
+        "數值或文字欄位正在輸入時，先按 Enter 確認或 Esc 取消，再按快捷鍵。"
+      ],
+      "success": "能在畫面上指出 3D Viewport、左上角的模式選單、右上的 Outliner 和右下的 Properties。",
+      "detail": {
+        "steps": [
+          "本課程寫的快捷鍵，都要先把滑鼠停在 3D Viewport 內再按。",
+          "左上角的模式決定按鍵的意思：例如 I 在 Edit Mode 是內插，在 Object Mode 會插入關鍵影格（00-07）。",
+          "欄位正在輸入時，按下的字會變成輸入內容；先按 Enter 或 Esc 離開欄位。",
+          "右上的 Outliner 列出場景物件（出廠場景是 Camera、Cube、Light）；右下的 Properties 顯示選取物件的 Transform。",
+          "本章的按鍵都依 Blender 5.2.1 出廠鍵位核對；改過鍵位或用其他版本時，以選單旁的鍵標為準。"
+        ],
+        "why": "按了沒反應或結果不同，多半是滑鼠位置、模式或欄位焦點不對；先核對這三項再重按，不要連續亂按。"
+      },
+      "help": [
+        "按了沒反應：把滑鼠移回 3D Viewport、看左上模式、確認沒有欄位在輸入，再按一次。",
+        "想不起按鍵：用 3D Viewport 上方的 View、Select、Add、Object 選單，或按 F3 搜尋（00-01 第 3 張卡片）。"
+      ],
+      "practice": ["ch01-01-01-01", "ch01-01-05-01"],
+      "shortcuts": [],
+      "figures": [
+        {"path": "SV:01-07-01-baseline.png", "caption": "出廠畫面（獨立示範）：左上是 Object Mode 模式選單，中間是 3D Viewport，右上 Outliner 列出 Camera、Cube、Light，右下 Properties 是 Cube 的 Transform。"}
+      ],
+      "readings": {"source": "SV", "items": [
+        {"case": "baseline", "fields": ["mode", "objects", "selected", "sidebarVisible"], "label": "出廠場景讀回：模式、物件、選取與側欄"}
+      ]}
+    },
+    {
+      "id": "ch00-01-02", "section": "00-01",
+      "title": "取消與撤回：Esc、右鍵、Ctrl+Z",
+      "goal": "分清楚「還沒確認時取消」和「確認後撤回」兩種復原方法。",
+      "context": "3D Viewport；Object Mode 或 Edit Mode",
+      "actions": [
+        "操作進行中、還沒按 Enter：按 Esc 或滑鼠右鍵取消。",
+        "已經按 Enter 確認：按 Ctrl+Z 撤回上一個動作。",
+        "撤回後讀側欄或 Properties 的數值，確認回到操作前。"
+      ],
+      "success": "物件回到操作前的位置或形狀，數值和操作前相同。",
+      "detail": {
+        "steps": [
+          "示範：Cube 在 X＝1.5 m 時按 G、X、3，再按 Esc，讀回 X 仍是 1.5 m；改按滑鼠右鍵取消，結果相同。",
+          "已確認的動作用 Ctrl+Z（Edit > Undo）撤回；Edit 選單 Undo 旁的鍵標就是 Ctrl Z。",
+          "Ctrl+Z 一次撤回一個動作：第 03 章示範在內插、擠出之後按兩次 Ctrl+Z，方塊回到 6 個面。",
+          "每按一次就讀回一次數值，避免撤回到已經做好的步驟。",
+          "撤回過頭時，Edit 選單有 Redo（鍵標 Shift Ctrl Z）；本課程沒有另外示範 Redo。"
+        ],
+        "why": "取消只對還沒確認的操作有效，確認後要用撤回；方法用對才不會多退或少退。"
+      },
+      "help": [
+        "找不到 Undo：Edit > Undo（原圖鍵標 Ctrl Z）。",
+        "按 Esc 沒有效果：表示操作已經確認，改用 Ctrl+Z。"
+      ],
+      "practice": ["ch01-01-07-03", "ch03-edit-06"],
+      "shortcuts": [
+        {"keys": "Esc／滑鼠右鍵", "effect": "移動、旋轉、縮放等操作還沒按 Enter 前取消，物件留在操作前的位置。",
+         "requirements": ["操作進行中、數值還沒按 Enter；滑鼠在 3D Viewport 內。"],
+         "cautions": ["已按 Enter 的結果不能用 Esc 取消，改用 Ctrl+Z。"],
+         "evidence": [
+           {"path": "SV:01-07-08-translate-cancel-esc.png", "method": "native_events_and_readback", "label": "translate-cancel-esc：G X 3 後按 Esc（獨立 Blender 原圖）"},
+           {"path": "SV:01-07-09-translate-cancel-rightmouse.png", "method": "native_events_and_readback", "label": "translate-cancel-rightmouse：G X 3 後按右鍵（獨立 Blender 原圖）"},
+           {"path": "SV:shortcut-verification-v001.json", "method": "native_events_and_readback", "label": "事件、預期與實際讀值；未判學員完成"}
+         ]},
+        {"keys": "Ctrl+Z", "effect": "撤回上一個已確認的動作；每按一次撤回一步。",
+         "requirements": ["滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。"],
+         "cautions": ["連按會繼續往前撤回已完成的步驟；每按一次就核對數值。"],
+         "evidence": [
+           {"path": "L01:01-07-05-edit-undo-menu.png", "method": "menu_label_visual", "label": "Edit > Undo：Ctrl Z（既有原圖鍵標）"},
+           {"path": "ES:EDIT-09-undo-move.png", "method": "native_events_and_readback", "label": "第 03 章 GUI：Ctrl+Z 撤回頂面移動"},
+           {"path": "ES:EDIT-12-undo-twice.png", "method": "native_events_and_readback", "label": "第 03 章 GUI：兩次 Ctrl+Z 回到原方塊"},
+           {"path": "ES:safe-summary-v001.json", "method": "native_events_and_readback", "label": "第 03 章編輯練習的動作與讀值摘要"}
+         ]}
+      ],
+      "figures": [
+        {"path": "SV:01-07-08-translate-cancel-esc.png", "caption": "G → X → 3 → Esc 之後：Location X 仍是取消前的 1.5 m，這次移動沒有發生。"},
+        {"path": "L01:01-07-05-edit-undo-menu.png", "caption": "Edit 選單原圖：Undo 鍵標 Ctrl Z、Redo 鍵標 Shift Ctrl Z、Menu Search 鍵標 F3。"}
+      ],
+      "readings": {"source": "SV", "items": [
+        {"case": "translate-no-axis", "fields": ["location"], "label": "取消前（上一個動作之後）"},
+        {"case": "translate-cancel-esc", "fields": ["location"], "label": "G X 3 後按 Esc"},
+        {"case": "translate-cancel-rightmouse", "fields": ["location"], "label": "G X 3 後按滑鼠右鍵"}
+      ]}
+    },
+    {
+      "id": "ch00-01-03", "section": "00-01",
+      "title": "忘記功能在哪：F3 搜尋",
+      "goal": "想不起快捷鍵或選單位置時，按 F3 輸入功能的英文名稱找出來。",
+      "context": "3D Viewport；Object Mode 或 Edit Mode",
+      "actions": [
+        "滑鼠停在 3D Viewport，按 F3。",
+        "輸入功能的英文名稱，例如 Frame Selected、Apply Scale 或 Select Non Manifold。",
+        "在清單核對名稱後按 Enter 執行。"
+      ],
+      "success": "搜尋清單出現要找的功能，執行後畫面出現該功能的結果。",
+      "detail": {
+        "steps": [
+          "F3 就是 Edit > Menu Search；Edit 選單 Menu Search 旁的鍵標是 F3。",
+          "搜尋用介面上的英文名稱；本課程把介面設為 English (US)（第 01 章 01-02）。",
+          "示範中用 F3 搜尋開過 Preferences、Apply Scale、Frame Selected；第 03 章用它找 Select Non Manifold，第 11 章用它加 Screw 修改器。",
+          "搜尋只是幫你找到功能，不會替你核對選取和模式；執行前一樣先看選取對象。"
+        ],
+        "why": "選單很深或忘了按鍵時，搜尋比亂按快捷鍵安全。"
+      },
+      "help": [
+        "F3 沒反應：確認滑鼠在 3D Viewport 內、沒有欄位在輸入；也可以從 Edit > Menu Search 開啟。",
+        "有些筆電的 F 鍵要同時按 Fn 才會送出 F3，請以自己的鍵盤為準。"
+      ],
+      "practice": ["ch03-04-06-03", "ch11-screw-surface-add-screw"],
+      "shortcuts": [
+        {"keys": "F3 → 英文名稱 → Enter", "effect": "開啟 Menu Search，輸入功能名稱後從清單執行。",
+         "requirements": ["滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。"],
+         "cautions": ["搜尋到不代表條件已符合；執行前仍要核對模式與選取。", "原圖證明 F3 的搜尋鍵標；各功能本身有沒有獨立快捷鍵，依各卡片的證據。"],
+         "evidence": [
+           {"path": "L01:01-07-05-edit-undo-menu.png", "method": "menu_label_visual", "label": "Edit > Menu Search...：F3（既有原圖鍵標）"},
+           {"path": "KV:01-06-04-emulate-checkbox-before.png", "method": "native_events_and_readback", "label": "F3 搜尋 Preferences 後開出的偏好設定（新原生事件／實拍）"},
+           {"path": "KV:keyboard-verification-v001.json", "method": "native_events_and_readback", "label": "事件、預期與實際讀值；未判學員完成"}
+         ]}
+      ],
+      "figures": [
+        {"path": "L01:01-07-05-edit-undo-menu.png", "caption": "Edit 選單原圖：Menu Search… 的鍵標是 F3。"},
+        {"path": "KV:01-06-04-emulate-checkbox-before.png", "caption": "按 F3、輸入 Preferences、按 Enter 後開出的偏好設定視窗；畫面停在 Input 分頁是程式切換的，不是搜尋結果。"}
+      ]
+    },
+    {
+      "id": "ch00-01-04", "section": "00-01",
+      "title": "沒有數字鍵盤時",
+      "goal": "分清楚數字鍵盤（Numpad）與主鍵盤上排數字；沒有數字鍵盤時改用選單。",
+      "context": "3D Viewport；Object Mode",
+      "actions": [
+        "卡片寫 Numpad 1、Numpad . 指右側數字鍵盤；寫「主鍵盤上排 1」才是字母上方那排。",
+        "沒有數字鍵盤：用 View 選單的 Viewpoint 換視角、Frame Selected 對焦，或拖曳右上導覽軸。",
+        "需要時按 Ctrl+, 開 Preferences，Input 分頁有 Emulate Numpad；本課程沒有驗證勾選後的效果。"
+      ],
+      "success": "知道自己的鍵盤有沒有數字鍵盤，並在 View 選單找到 Frame Selected。",
+      "detail": {
+        "steps": [
+          "示範（Emulate Numpad 關閉）：按主鍵盤上排 1，視角沒有改變；按數字鍵盤 1，切到 Front Orthographic。",
+          "Preferences > Input 的 Emulate Numpad，提示文字是 Main 1 to 0 keys act as the numpad ones (useful for laptops)。",
+          "示範勾選後再模擬按主鍵盤 1，視角沒有切到正視；本課程不保證這個設定的效果，請以自己的畫面為準。",
+          "主鍵盤的句點不是對焦，會打開 Pivot Point 選單（00-07）。",
+          "Preferences 左下角有 Save Preferences；要保存設定時照第 01 章 01-02 的方法，示範沒有保存。"
+        ],
+        "why": "數字鍵盤和主鍵盤數字在 Blender 是不同的鍵；分清楚才不會以為快捷鍵壞了。"
+      },
+      "help": [
+        "找不到 Preferences：Edit > Preferences…（原圖鍵標 Ctrl ,）。",
+        "沒有數字鍵盤又想換視角：拖曳 3D Viewport 右上的導覽軸（第 01 章 01-06）。"
+      ],
+      "practice": ["ch01-01-02-01", "ch01-01-06-01"],
+      "shortcuts": [
+        {"keys": "Ctrl+,", "effect": "開啟 Edit > Preferences。",
+         "requirements": ["Blender 主視窗；先核對目前檔名、版本與未儲存變更。"],
+         "cautions": ["使用主鍵盤逗點；開啟設定不表示已選語言或儲存。"],
+         "evidence": [
+           {"path": "L01:01-07-05-edit-undo-menu.png", "method": "menu_label_visual", "label": "Edit > Preferences...：Ctrl ,（既有原圖鍵標）"}
+         ]},
+        {"keys": "Numpad 1／Numpad 3", "effect": "切到正視（Front Orthographic）／右視（Right Orthographic）。",
+         "requirements": ["滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。"],
+         "cautions": ["是右側數字鍵盤；示範中主鍵盤上排 1 沒有改變視角。", "勾選 Emulate Numpad 後主鍵盤數字的效果，本課程的模擬測試沒有驗證成功。"],
+         "evidence": [
+           {"path": "KV:01-06-01-main-one-no-emulation.png", "method": "native_events_and_readback", "label": "main-one-no-emulation（新原生事件／實拍）"},
+           {"path": "KV:01-06-02-numpad-one-front.png", "method": "native_events_and_readback", "label": "numpad-one-front（新原生事件／實拍）"},
+           {"path": "KV:01-06-03-numpad-three-right.png", "method": "native_events_and_readback", "label": "numpad-three-right（新原生事件／實拍）"},
+           {"path": "KV:01-06-05-emulate-checkbox-after.png", "method": "native_events_and_readback", "label": "emulate-checkbox-after（新原生事件／實拍）"},
+           {"path": "KV:01-06-06-main-one-emulated-observation.png", "method": "native_events_and_readback", "label": "main-one-emulated-observation（觀察，未判定成功）"},
+           {"path": "KV:keyboard-verification-v001.json", "method": "native_events_and_readback", "label": "事件、預期與實際讀值；未判學員完成"}
+         ]}
+      ],
+      "figures": [
+        {"path": "KV:01-06-01-main-one-no-emulation.png", "caption": "Emulate Numpad 關閉時按主鍵盤上排 1：左上仍是 User Perspective，視角沒變。"},
+        {"path": "KV:01-06-02-numpad-one-front.png", "caption": "按數字鍵盤 1：左上顯示 Front Orthographic，Cube 的正面成為方形。"},
+        {"path": "KV:01-06-05-emulate-checkbox-after.png", "caption": "Preferences > Input：勾選 Emulate Numpad 後的畫面與提示文字；左下角是 Save Preferences（示範沒有保存）。"}
+      ],
+      "readings": {"source": "KV", "items": [
+        {"case": "main-one-no-emulation", "fields": ["viewPerspective", "emulateNumpad"], "label": "Emulate 關閉、按主鍵盤上排 1 之後"},
+        {"case": "numpad-one-front", "fields": ["viewPerspective", "viewRotation"], "label": "按數字鍵盤 1 之後（正視）"},
+        {"case": "numpad-three-right", "fields": ["viewPerspective", "viewRotation"], "label": "按數字鍵盤 3 之後（右視）"},
+        {"case": "emulate-checkbox-after", "fields": ["emulateNumpad"], "label": "勾選 Emulate Numpad 之後"},
+        {"case": "main-one-emulated-observation", "fields": ["viewPerspective", "viewRotation"], "label": "勾選後模擬按主鍵盤 1（視角仍是右視，沒有切到正視）"}
+      ]}
+    },
+    {
+      "id": "ch00-02-01", "section": "00-02",
+      "title": "開新場景與開啟檔案：Ctrl+N、Ctrl+O",
+      "goal": "用 Ctrl+N 開新場景、Ctrl+O 開啟既有的 .blend；開之前先保存目前的作品。",
+      "context": "Blender 主視窗；先看目前檔名與有沒有未存的變更",
+      "actions": [
+        "開新場景：按 Ctrl+N，在 New 清單選 General。",
+        "開啟檔案：按 Ctrl+O，在檔案視窗選檔案後開啟。",
+        "跳出是否保存的提示時，看清楚選項再按，不要直接略過。"
+      ],
+      "success": "新場景是出廠的 Cube、Camera、Light；或開啟的檔名出現在主視窗標題列。",
+      "detail": {
+        "steps": [
+          "File 選單原圖：New 鍵標 Ctrl N、Open… 鍵標 Ctrl O、Open Recent 鍵標 Shift Ctrl O。",
+          "Ctrl+N 只打開 New 清單，選 General 才會開新場景。",
+          "目前作品有未存變更時，先存檔或另存，再開新檔；第 01 章 01-03 有依畫面決定開新檔或保留的步驟。",
+          "Ctrl+O 開的若是已登記的檢查點，不要直接修改後覆蓋，先另存新版本（00-02 第 2 張卡片）。"
+        ],
+        "why": "開新檔或開舊檔都會換掉目前畫面；先保存，才不會丟掉沒存的作品。"
+      },
+      "help": [
+        "找不到：File > New > General、File > Open…。",
+        "開錯檔：再按 Ctrl+O 開正確的檔案；不要在錯的檔案上存檔。"
+      ],
+      "practice": ["ch01-01-03-01", "ch01-01-09-03"],
+      "shortcuts": [
+        {"keys": "Ctrl+N → General", "effect": "開啟 New 選單後選 General。",
+         "requirements": ["Blender 主視窗；先核對目前檔名、版本與未儲存變更。"],
+         "cautions": ["僅在確認可另開新場景時使用；未存作品先保存，不略過提示。"],
+         "evidence": [
+           {"path": "L01:01-04-01-file-menu.png", "method": "menu_label_visual", "label": "File > New：Ctrl N（既有原圖鍵標）"}
+         ]},
+        {"keys": "Ctrl+O", "effect": "開啟 Open 檔案視窗，選擇要開的 .blend。",
+         "requirements": ["Blender 主視窗；先核對目前檔名、版本與未儲存變更。"],
+         "cautions": ["已登記的檢查點保留；需要修改先另存新版本。"],
+         "evidence": [
+           {"path": "L01:01-04-01-file-menu.png", "method": "menu_label_visual", "label": "File > Open...：Ctrl O（既有原圖鍵標）"}
+         ]}
+      ],
+      "figures": [
+        {"path": "L01:01-04-01-file-menu.png", "caption": "File 選單原圖：New（Ctrl N）、Open…（Ctrl O）、Save（Ctrl S）、Save As…（Shift Ctrl S）。"}
+      ]
+    },
+    {
+      "id": "ch00-02-02", "section": "00-02",
+      "title": "存檔與另存新版本：Ctrl+S、Shift+Ctrl+S",
+      "goal": "Ctrl+S 存回目前的檔案；Shift+Ctrl+S 另存成新檔名，保留舊版本。",
+      "context": "Blender 主視窗；先核對標題列的檔名",
+      "actions": [
+        "繼續編輯同一個工作版：按 Ctrl+S。",
+        "要留下新版本（例如 v001 → v002）：按 Shift+Ctrl+S，改檔名後按 Save As。",
+        "存完看主視窗標題列的檔名，確認是要的版本。"
+      ],
+      "success": "標題列出現正確的檔名，底部狀態列短暫顯示 Saved。",
+      "detail": {
+        "steps": [
+          "File 選單原圖：Save 鍵標 Ctrl S、Save As… 鍵標 Shift Ctrl S。",
+          "Save As 的檔案視窗：上方是資料夾路徑，下方是檔名欄，右下角是 Save As 按鈕（第 01 章 01-04）。",
+          "本課程的檔名都帶版本號；已登記的檢查點不再覆蓋，修改前先另存新版本。",
+          "存檔只寫入 .blend，不會登記檔案或確認小步；登記照各章的步驟做。"
+        ],
+        "why": "版本檔名讓你隨時回到舊檢查點；只用 Ctrl+S 會一直覆蓋同一個檔。"
+      },
+      "help": [
+        "找不到：File > Save、File > Save As…。",
+        "不小心用 Ctrl+S 覆蓋了已登記的檔：先停下來回報助教，不要再存。"
+      ],
+      "practice": ["ch01-01-04-01", "ch01-01-09-01"],
+      "shortcuts": [
+        {"keys": "Ctrl+S", "effect": "保存目前可續存的工作版。",
+         "requirements": ["Blender 主視窗；先核對目前檔名、版本與未儲存變更。"],
+         "cautions": ["已登記的檢查點不要用 Ctrl+S 覆蓋，改用另存。", "快捷鍵不執行檔案登記或學員確認。"],
+         "evidence": [
+           {"path": "L01:01-04-01-file-menu.png", "method": "menu_label_visual", "label": "File > Save：Ctrl S（既有原圖鍵標）"}
+         ]},
+        {"keys": "Shift+Ctrl+S", "effect": "開啟 .blend 的 Save As，核對資料夾與版本檔名後另存。",
+         "requirements": ["Blender 主視窗；先核對目前檔名、版本與未儲存變更。"],
+         "cautions": ["已登記的檢查點保留；需要修改先另存新版本。快捷鍵不執行檔案登記或學員確認。", "此證據只涵蓋 .blend 的 File > Save As；渲染圖照 Image > Save As 的常規方法。"],
+         "evidence": [
+           {"path": "L01:01-04-01-file-menu.png", "method": "menu_label_visual", "label": "File > Save As...：Shift Ctrl S（既有原圖鍵標）"}
+         ]}
+      ],
+      "figures": [
+        {"path": "L01:01-04-01-file-menu.png", "caption": "File 選單原圖：Save 鍵標 Ctrl S、Save As… 鍵標 Shift Ctrl S。"}
+      ]
+    },
+    {
+      "id": "ch00-02-03", "section": "00-02",
+      "title": "渲染一張圖：F12",
+      "goal": "F12 執行 Render > Render Image；結果要另外保存才會變成圖檔。",
+      "context": "Blender 主視窗；場景要有作用中相機",
+      "actions": [
+        "先按 Numpad 0 確認相機取景（00-03）。",
+        "按 F12，等渲染視窗把畫面算完。",
+        "要保存圖片時，照第 04 章的方法在渲染視窗另存。"
+      ],
+      "success": "跳出渲染視窗，算完後的取景和相機視角一致。",
+      "detail": {
+        "steps": [
+          "Render 選單原圖：Render Image 鍵標 F12、Render Animation 鍵標 Ctrl F12。",
+          "F12 不會自動另存 PNG；保存與檔名照第 04 章 04-05 的步驟。",
+          "渲染前先存好 .blend；渲染圖要對應產生它的場景版本。"
+        ],
+        "why": "先確認相機再渲染，才不會算出空白或錯誤的取景。"
+      },
+      "help": [
+        "找不到：Render > Render Image。",
+        "取景不對：先按 Numpad 0 看相機視角，再渲染。"
+      ],
+      "practice": ["ch04-03-05-02", "ch04-03-05-03"],
+      "shortcuts": [
+        {"keys": "F12", "effect": "執行 Render > Render Image。",
+         "requirements": ["Blender 主視窗；先核對目前檔名、版本與未儲存變更。", "場景有作用中相機；先核對相機取景與輸出設定。"],
+         "cautions": ["F12 不會把結果另存 PNG；Image > Save As 與輸出關聯仍照常規方法。"],
+         "evidence": [
+           {"path": "L03:03-05-04-render-menu.png", "method": "menu_label_visual", "label": "Render > Render Image：F12（既有原圖鍵標）"}
+         ]}
+      ],
+      "figures": [
+        {"path": "L03:03-05-04-render-menu.png", "caption": "Render 選單原圖（訊號站示範）：Render Image 的鍵標是 F12。"}
+      ],
+      "limitations": ["本卡只有選單鍵標原圖，沒有逐步實拍 F12 後的畫面；渲染結果照第 04 章核對。"]
+    },
+    {
+      "id": "ch00-03-01", "section": "00-03",
+      "title": "對焦選取的物件：Numpad .",
+      "goal": "物件跑出畫面或太小時，選取它後按數字鍵盤的「.」把視角對準它。",
+      "context": "3D Viewport；先選取物件",
+      "actions": [
+        "在 Outliner 或 3D Viewport 點選物件。",
+        "滑鼠移到 3D Viewport，按數字鍵盤的「.」。",
+        "確認物件出現在畫面中央，Location 數值沒有變。"
+      ],
+      "success": "選取的物件在畫面中央放大顯示，側欄 Location 和按鍵前相同。",
+      "detail": {
+        "steps": [
+          "數字鍵盤「.」等於 View > Frame Selected；View 選單 Frame Selected 旁的鍵標是 Numpad .。",
+          "示範：按下後視距從約 18.39 變成約 2.65，Cube 的 Location 不變；只移動視角，不移動物件。",
+          "沒有數字鍵盤：點 View > Frame Selected，或用 F3 搜尋 Frame Selected。",
+          "太近時把滑鼠放在 3D Viewport 內，滾輪往後滾縮小（第 01 章 01-06）。",
+          "主鍵盤的句點會打開 Pivot Point 選單，不是對焦（00-07）。"
+        ],
+        "why": "迷路時先選取再對焦，一定找得回物件。"
+      },
+      "help": [
+        "找不到：View > Frame Selected。",
+        "按了沒反應：確認有選取物件，而且滑鼠在 3D Viewport 內。"
+      ],
+      "practice": ["ch01-01-06-03"],
+      "shortcuts": [
+        {"keys": "Numpad .", "effect": "等同 View > Frame Selected；只把視角對準選取的物件，不移動物件。",
+         "requirements": ["滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。", "先選取要找回的物件。"],
+         "cautions": ["是數字鍵盤的小數點；主鍵盤句點會開 Pivot Point 選單。"],
+         "evidence": [
+           {"path": "L01:01-06-04-view-frame-selected.png", "method": "menu_label_visual", "label": "View > Frame Selected：Numpad .（既有原圖鍵標）"},
+           {"path": "SV:01-06-01-frame-selected.png", "method": "native_events_and_readback", "label": "frame-selected（獨立 Blender 原圖）"},
+           {"path": "KV:01-06-09-numpad-period-framed.png", "method": "native_events_and_readback", "label": "numpad-period-framed（新原生事件／實拍）"},
+           {"path": "SV:shortcut-verification-v001.json", "method": "native_events_and_readback", "label": "事件、預期與實際讀值；未判學員完成"}
+         ]}
+      ],
+      "figures": [
+        {"path": "L01:01-06-04-view-frame-selected.png", "caption": "View 選單原圖：Frame Selected 的鍵標是 Numpad .。"},
+        {"path": "SV:01-06-01-frame-selected.png", "caption": "按數字鍵盤「.」之後：視角拉近對準選取的 Cube，物件位置不變。"}
+      ],
+      "readings": {"source": "SV", "items": [
+        {"case": "deselect-all", "fields": ["location", "viewDistance"], "label": "按鍵前（前一筆紀錄）的位置與視距"},
+        {"case": "frame-selected", "fields": ["selected", "location", "viewDistance"], "label": "選取 Cube、按數字鍵盤「.」之後"}
+      ]}
+    },
+    {
+      "id": "ch00-03-02", "section": "00-03",
+      "title": "正視、側視、底視：Numpad 1、3、Ctrl+Numpad 7",
+      "goal": "用數字鍵盤切到正交視圖，從正面、側面或底部核對形狀。",
+      "context": "3D Viewport；Object Mode 或 Edit Mode",
+      "actions": [
+        "數字鍵盤 1：正視；數字鍵盤 3：右視。",
+        "Ctrl+數字鍵盤 7：底視。",
+        "要回到斜視：按數字鍵盤 2，或拖曳右上導覽軸。"
+      ],
+      "success": "左上角顯示 Front Orthographic、Right Orthographic 或 Bottom Orthographic。",
+      "detail": {
+        "steps": [
+          "切視角只改看的方向，不改物件：第 03 章示範切到底視後，側欄 Dimensions 仍是 20 × 20 × 20 mm。",
+          "示範讀回：數字鍵盤 1、3 之後都是 ORTHO（正交視圖），方向不同。",
+          "第 03 章示範切底視後按兩次數字鍵盤 2 轉回斜視；沒有示範滑鼠中鍵旋轉。",
+          "沒有數字鍵盤：View > Viewpoint 選 Front、Right、Bottom 等（第 03 章 03-08）。"
+        ],
+        "why": "正交視圖沒有透視變形，適合核對對齊、底面和邊緣。"
+      },
+      "help": [
+        "找不到：View > Viewpoint。",
+        "按數字鍵沒反應：確認是右側數字鍵盤（00-01 第 4 張卡片）。"
+      ],
+      "practice": ["ch03-edit-07", "ch01-01-06-01"],
+      "shortcuts": [
+        {"keys": "Numpad 1／Numpad 3", "effect": "正視（Front Orthographic）／右視（Right Orthographic）。",
+         "requirements": ["滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。"],
+         "cautions": ["是右側數字鍵盤，不是主鍵盤上排。"],
+         "evidence": [
+           {"path": "KV:01-06-02-numpad-one-front.png", "method": "native_events_and_readback", "label": "numpad-one-front（新原生事件／實拍）"},
+           {"path": "KV:01-06-03-numpad-three-right.png", "method": "native_events_and_readback", "label": "numpad-three-right（新原生事件／實拍）"},
+           {"path": "KV:keyboard-verification-v001.json", "method": "native_events_and_readback", "label": "事件、預期與實際讀值；未判學員完成"}
+         ]},
+        {"keys": "Ctrl+Numpad 7；Numpad 2", "effect": "Ctrl+數字鍵盤 7 切到底視；數字鍵盤 2 轉動視角離開正交視圖。",
+         "requirements": ["滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。"],
+         "cautions": ["示範在毫米練習場景用 GUI 事件操作，只改視角。", "示範按兩次數字鍵盤 2 轉回斜視；每次轉多少角度沒有另外讀回。"],
+         "evidence": [
+           {"path": "ES:EDIT-15-bottom.png", "method": "native_events_and_readback", "label": "第 03 章 GUI：Ctrl+Numpad 7 切底視"},
+           {"path": "ES:EDIT-16-orbit.png", "method": "native_events_and_readback", "label": "第 03 章 GUI：數字鍵盤 2 轉回斜視"},
+           {"path": "ES:safe-summary-v001.json", "method": "native_events_and_readback", "label": "第 03 章編輯練習的動作與讀值摘要"}
+         ]}
+      ],
+      "figures": [
+        {"path": "KV:01-06-02-numpad-one-front.png", "caption": "數字鍵盤 1：左上顯示 Front Orthographic。"},
+        {"path": "KV:01-06-03-numpad-three-right.png", "caption": "數字鍵盤 3：左上顯示 Right Orthographic。"},
+        {"path": "ES:EDIT-15-bottom.png", "caption": "Ctrl+數字鍵盤 7：左上顯示 Bottom Orthographic，側欄 Dimensions 仍是 20 mm（毫米練習場景）。"}
+      ],
+      "readings": {"source": "KV", "items": [
+        {"case": "numpad-one-front", "fields": ["viewPerspective", "viewRotation"], "label": "數字鍵盤 1 之後"},
+        {"case": "numpad-three-right", "fields": ["viewPerspective", "viewRotation"], "label": "數字鍵盤 3 之後"}
+      ]}
+    },
+    {
+      "id": "ch00-03-03", "section": "00-03",
+      "title": "從相機看：Numpad 0",
+      "goal": "切到作用中相機的取景，看相機會拍到的範圍。",
+      "context": "3D Viewport；場景有作用中相機",
+      "actions": [
+        "滑鼠在 3D Viewport，按數字鍵盤 0。",
+        "確認左上顯示 Camera Perspective，看到相機的虛線框。"
+      ],
+      "success": "左上顯示 Camera Perspective，相機框外的區域變暗。",
+      "detail": {
+        "steps": [
+          "示範讀回：按數字鍵盤 0 之後視圖是 CAMERA。",
+          "虛線框內是相機拍到的範圍，框外變暗。",
+          "是數字鍵盤 0，不是主鍵盤上排 0；沒有數字鍵盤時用 View > Cameras > Active Camera。",
+          "第 04 章調整相機後，再按數字鍵盤 0 核對取景。"
+        ],
+        "why": "渲染前先從相機看，才知道畫面會拍到什麼。"
+      },
+      "help": [
+        "找不到：View > Cameras > Active Camera。",
+        "畫面沒變：確認場景有相機，而且它是作用中相機（Properties 的 Scene 分頁 Camera 欄）。"
+      ],
+      "practice": ["ch04-03-02-02"],
+      "shortcuts": [
+        {"keys": "Numpad 0", "effect": "切換到作用中相機取景。",
+         "requirements": ["滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。", "場景已有作用中相機。"],
+         "cautions": ["是數字鍵盤 0，與主鍵盤上排 0 分開；未驗證筆電實體鍵盤模擬效果時，用 View > Cameras > Active Camera。"],
+         "evidence": [
+           {"path": "MV:03-03-01-numpad-zero-camera.png", "method": "native_events_and_readback", "label": "numpad-zero-camera（新原生事件／實拍）"},
+           {"path": "MV:mesh-shortcut-verification-v001.json", "method": "native_events_and_readback", "label": "事件、預期與實際讀值；未判學員完成"}
+         ]}
+      ],
+      "figures": [
+        {"path": "MV:03-03-01-numpad-zero-camera.png", "caption": "數字鍵盤 0 之後：左上顯示 Camera Perspective，虛線相機框外的區域變暗。"}
+      ],
+      "readings": {"source": "MV", "items": [
+        {"case": "numpad-zero-camera", "fields": ["mode", "viewPerspective"], "label": "按數字鍵盤 0 之後"}
+      ]}
+    },
+    {
+      "id": "ch00-03-04", "section": "00-03",
+      "title": "側欄 N：讀位置與尺寸",
+      "goal": "按 N 開關 3D Viewport 右側的側欄，在 Item 分頁讀 Location、Rotation、Scale 與 Dimensions。",
+      "context": "3D Viewport；Object Mode 或 Edit Mode",
+      "actions": [
+        "滑鼠在 3D Viewport 按 N；側欄已經開著就不要再按。",
+        "點側欄右緣的 Item 分頁。",
+        "讀 Location 與 Dimensions；Dimensions 是物件的外框尺寸。"
+      ],
+      "success": "3D Viewport 右側出現 Transform 側欄，看得到 Dimensions。",
+      "detail": {
+        "steps": [
+          "N 是開關：按一次開、再按一次關。示範讀回 sidebarVisible 由 false 變 true。",
+          "側欄右緣有 Item、Tool、View 等直排分頁；本課程讀數值都在 Item。",
+          "右下 Properties 的 Transform 有 Location、Rotation、Scale，但沒有 Dimensions；讀尺寸用側欄。",
+          "Edit Mode 選取點、邊、面時，Item 顯示所選元素的 Median；切到 Global 才是世界座標（第 11 章 11-01）。",
+          "選單位置：View > Sidebar（原圖鍵標 N）。"
+        ],
+        "why": "工程尺寸都要讀數值核對，不靠目測；側欄是最常用的讀值位置。"
+      },
+      "help": [
+        "找不到：View > Sidebar。",
+        "側欄不見了：可能多按了一次 N 把它關掉，再按一次 N。"
+      ],
+      "practice": ["ch01-01-08-01", "ch03-edit-04"],
+      "shortcuts": [
+        {"keys": "N", "effect": "開關 3D Viewport 的側欄；在 Item 分頁讀寫 Transform 與 Dimensions。",
+         "requirements": ["滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。"],
+         "cautions": ["N 是開關；側欄已開就不要再按。"],
+         "evidence": [
+           {"path": "L01:01-07-02-view-sidebar.png", "method": "menu_label_visual", "label": "View > Sidebar：N（既有原圖鍵標）"},
+           {"path": "SV:01-07-02-sidebar-n.png", "method": "native_events_and_readback", "label": "sidebar-n（獨立 Blender 原圖）"},
+           {"path": "SV:shortcut-verification-v001.json", "method": "native_events_and_readback", "label": "事件、預期與實際讀值；未判學員完成"}
+         ]}
+      ],
+      "figures": [
+        {"path": "SV:01-07-02-sidebar-n.png", "caption": "按 N 之後：3D Viewport 右側出現側欄，Item 分頁有 Location、Rotation、Scale、Dimensions（2 m 的出廠 Cube）。"}
+      ],
+      "readings": {"source": "SV", "items": [
+        {"case": "baseline", "fields": ["sidebarVisible"], "label": "按 N 之前"},
+        {"case": "sidebar-n", "fields": ["sidebarVisible", "dimensions"], "label": "按 N 之後"}
+      ]}
+    },
+    {
+      "id": "ch00-04-01", "section": "00-04",
+      "title": "全選與取消選取：A、Alt+A",
+      "goal": "Object Mode 一次選取全部物件或全部取消，再點選要的那一個。",
+      "context": "3D Viewport；Object Mode",
+      "actions": [
+        "按 A 選取場景中全部物件。",
+        "按 Alt+A 取消全部選取。",
+        "用滑鼠左鍵點一下要的物件，只選它。"
+      ],
+      "success": "只有要的物件外框變亮，左上顯示它的名稱。",
+      "detail": {
+        "steps": [
+          "示範讀回：按 A 之後選取 Camera、Cube、Light 三個物件；按 Alt+A 之後選取清單是空的。",
+          "選取的物件外框會變亮；3D Viewport 左上的「(1) Collection | Cube」顯示作用中物件的名稱。",
+          "點到空白處也會取消選取（第 01 章 01-05）。",
+          "大部分操作只作用在選取的物件上；全選之後先按 Alt+A，再點要的物件。",
+          "Edit Mode 的 Alt+A 取消的是點、邊、面（00-06）。"
+        ],
+        "why": "先確定選對物件，之後的移動、刪除才不會改到別的物件。"
+      },
+      "help": [
+        "也可以在 Outliner 點物件名稱來選取（第 01 章 01-05）。",
+        "不確定選了哪些：看 Outliner 反白的列與 3D Viewport 的亮色外框。"
+      ],
+      "practice": ["ch01-01-05-02", "ch01-01-05-03"],
+      "shortcuts": [
+        {"keys": "A", "effect": "Object Mode 選取全部物件。",
+         "requirements": ["滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。", "Object Mode。"],
+         "cautions": ["全選之後的操作會作用在全部選取的物件；不需要時先取消。"],
+         "evidence": [
+           {"path": "SV:01-05-03-select-all.png", "method": "native_events_and_readback", "label": "select-all（獨立 Blender 原圖）"},
+           {"path": "SV:shortcut-verification-v001.json", "method": "native_events_and_readback", "label": "事件、預期與實際讀值；未判學員完成"}
+         ]},
+        {"keys": "Alt+A", "effect": "Object Mode 取消全部選取。",
+         "requirements": ["滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。"],
+         "cautions": ["Edit Mode 的 Alt+A 取消的是網格選取（點、邊、面）。"],
+         "evidence": [
+           {"path": "SV:01-05-04-deselect-all.png", "method": "native_events_and_readback", "label": "deselect-all（獨立 Blender 原圖）"},
+           {"path": "SV:shortcut-verification-v001.json", "method": "native_events_and_readback", "label": "事件、預期與實際讀值；未判學員完成"}
+         ]}
+      ],
+      "figures": [
+        {"path": "SV:01-05-03-select-all.png", "caption": "按 A 之後：場景中三個物件都被選取（讀回 Camera、Cube、Light）。"},
+        {"path": "SV:01-05-04-deselect-all.png", "caption": "按 Alt+A 之後：沒有物件被選取（讀回選取清單為空）。"}
+      ],
+      "readings": {"source": "SV", "items": [
+        {"case": "select-all", "fields": ["selected", "active"], "label": "按 A 之後"},
+        {"case": "deselect-all", "fields": ["selected"], "label": "按 Alt+A 之後"}
+      ]}
+    },
+    {
+      "id": "ch00-04-02", "section": "00-04",
+      "title": "新增物件：Shift+A",
+      "goal": "打開 Add 選單，新增 Cube、Plane、Cylinder 等網格。",
+      "context": "3D Viewport；Object Mode",
+      "actions": [
+        "滑鼠在 3D Viewport，按 Shift+A。",
+        "選 Mesh，再選要的形狀（例如 Cube）。",
+        "新增之後，用側欄輸入本步要求的尺寸與位置。"
+      ],
+      "success": "Outliner 多一個新物件，側欄顯示它的 Location 與 Dimensions。",
+      "detail": {
+        "steps": [
+          "Shift+A 打開的就是 3D Viewport 上方的 Add 選單；原圖中 Mesh 子選單有 Plane、Cube、Circle、UV Sphere、Ico Sphere、Cylinder、Cone、Torus、Grid、Monkey。",
+          "Shift+A 只打開選單，點選形狀才會新增。",
+          "新增時的尺寸與位置不一定是要的值；本課程每次都用側欄逐欄輸入，不靠目測。"
+        ],
+        "why": "建模大多從基本形狀開始；新增後立刻輸入數值，尺寸才可靠。"
+      },
+      "help": [
+        "找不到：3D Viewport 上方的 Add 選單。",
+        "選單沒出現：確認滑鼠在 3D Viewport 內，左上是 Object Mode。"
+      ],
+      "practice": ["ch03-02-02-02", "ch09-06-01-01"],
+      "shortcuts": [
+        {"keys": "Shift+A → Mesh → 形狀", "effect": "開啟 Add 選單，再選要新增的網格形狀；尺寸與位置仍逐欄設定。",
+         "requirements": ["滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。", "Object Mode。"],
+         "cautions": ["新增後先核對尺寸、位置與名稱，再進行下一步。"],
+         "evidence": [
+           {"path": "SV:02-02-01-shift-a-menu.png", "method": "native_event_screenshot", "label": "shift-a-menu（獨立 Blender 原圖；只拍選單）"},
+           {"path": "SV:shortcut-verification-v001.json", "method": "native_events_and_readback", "label": "事件、預期與實際讀值；未判學員完成"}
+         ]}
+      ],
+      "figures": [
+        {"path": "SV:02-02-01-shift-a-menu.png", "caption": "按 Shift+A：Add 選單展開到 Mesh，列出 Plane、Cube、Cylinder 等形狀。"}
+      ]
+    },
+    {
+      "id": "ch00-04-03", "section": "00-04",
+      "title": "刪除物件：X",
+      "goal": "Object Mode 按 X，在確認框按 Delete 刪除選取的物件。",
+      "context": "3D Viewport；Object Mode",
+      "actions": [
+        "確認左上是 Object Mode，而且只選了要刪的物件。",
+        "按 X，畫面跳出 Delete selected objects?。",
+        "要刪就按 Delete；不刪就按 Cancel。"
+      ],
+      "success": "只有要刪的物件從 Outliner 消失，前一單元的作品沒有被刪。",
+      "detail": {
+        "steps": [
+          "Object 選單原圖：Delete 鍵標 X（Delete Global 鍵標 Shift X）。",
+          "示範按 X 之後跳出確認框 Delete selected objects?，下方是 Delete 與 Cancel。",
+          "Edit Mode 的 X 是另一個網格刪除選單（00-06）。",
+          "刪錯了先按 Ctrl+Z，並在 Outliner 核對物件是否回來。"
+        ],
+        "why": "刪除前確認模式與選取，才不會刪掉其他物件或前一單元的作品。"
+      },
+      "help": [
+        "找不到：Object > Delete。",
+        "跳出的是網格的刪除選單：你在 Edit Mode；不要點選項，先確認模式再操作。"
+      ],
+      "practice": ["ch03-02-01-02"],
+      "shortcuts": [
+        {"keys": "X → Delete", "effect": "Object Mode 刪除選取的物件；會先跳出確認框。",
+         "requirements": ["滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。", "先核對 Object Mode、選取名稱與不需保留的物件。"],
+         "cautions": ["Edit Mode 的 X 會開不同的網格刪除選單；不要刪除前一單元的未存作品。"],
+         "evidence": [
+           {"path": "L02:02-01-02-object-delete.png", "method": "menu_label_visual", "label": "Object > Delete：X（既有原圖鍵標）"},
+           {"path": "SV:01-05-05-x-delete-menu.png", "method": "native_event_screenshot", "label": "x-delete-menu（獨立 Blender 原圖；只拍確認框）"},
+           {"path": "SV:shortcut-verification-v001.json", "method": "native_events_and_readback", "label": "事件、預期與實際讀值；未判學員完成"}
+         ]}
+      ],
+      "figures": [
+        {"path": "SV:01-05-05-x-delete-menu.png", "caption": "Object Mode 按 X：跳出 Delete selected objects? 確認框，下方是 Delete 與 Cancel。"}
+      ]
+    },
+    {
+      "id": "ch00-04-04", "section": "00-04",
+      "title": "複製與合併：Shift+D、Ctrl+J",
+      "goal": "Shift+D 複製選取的物件；Ctrl+J 把多個選取的物件合併成一個。",
+      "context": "3D Viewport；Object Mode",
+      "actions": [
+        "選取要複製的物件，按 Shift+D（Object > Duplicate Objects）。",
+        "複製後用側欄核對新物件的位置與尺寸。",
+        "要合併時選取全部要合併的物件，核對作用中物件後按 Ctrl+J（Object > Join）。"
+      ],
+      "success": "Outliner 多出副本；或合併後只剩一個物件。",
+      "detail": {
+        "steps": [
+          "Object 選單原圖：Duplicate Objects 鍵標 Shift D、Join 鍵標 Ctrl J。",
+          "第 05 章 05-02 的指示是 Shift+D 之後接 X 與相對位移，再按 Enter 定位副本。",
+          "Ctrl+J 是 Join（合併成同一個物件），不是 Boolean Union，兩者結果不同。",
+          "合併前核對選取清單與作用中物件，不要把不該合併的物件（例如 Plate）選進來。"
+        ],
+        "why": "重複的形狀用複製比重做快；第 05 章把切割體合併後，才能一次做 Boolean。"
+      },
+      "help": [
+        "找不到：Object > Duplicate Objects、Object > Join。",
+        "合併錯了：立刻 Ctrl+Z，再重新核對選取。"
+      ],
+      "practice": ["ch05-05-03-07", "ch05-05-03-09"],
+      "shortcuts": [
+        {"keys": "Shift+D；Ctrl+J", "effect": "Shift+D 複製選取的物件；Ctrl+J 把選取的物件合併為作用中物件。",
+         "requirements": ["滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。", "選對物件；合併前核對所有選取及作用中物件。"],
+         "cautions": ["複製後仍要定位並逐件核對尺寸；Ctrl+J 是 Join，不是 Boolean Union。Boolean Difference／修改器 Apply 照原方法，不能用 Ctrl+A 替代。"],
+         "evidence": [
+           {"path": "L02:02-01-02-object-delete.png", "method": "menu_label_visual", "label": "Object > Duplicate Objects：Shift D（既有原圖鍵標）"},
+           {"path": "L02:02-01-02-object-delete.png", "method": "menu_label_visual", "label": "Object > Join：Ctrl J（既有原圖鍵標）"}
+         ]}
+      ],
+      "figures": [
+        {"path": "L02:02-01-02-object-delete.png", "caption": "Object 選單原圖：Duplicate Objects 鍵標 Shift D、Join 鍵標 Ctrl J、Delete 鍵標 X。"}
+      ],
+      "limitations": ["本課程對 Shift+D、Ctrl+J 只有選單鍵標原圖，沒有逐步實拍按鍵後的畫面；做完一定讀回位置與物件數。"]
+    },
+    {
+      "id": "ch00-04-05", "section": "00-04",
+      "title": "改名與整理集合：F2、M",
+      "goal": "F2 改作用中物件的名稱；M 把選取的物件移到指定或新的 Collection。",
+      "context": "3D Viewport；Object Mode",
+      "actions": [
+        "只選一個物件，滑鼠在 3D Viewport 按 F2，輸入新名稱後按 Enter。",
+        "選取要整理的物件按 M，選既有的 Collection 或 New Collection。",
+        "在 Outliner 核對名稱與所屬的 Collection。"
+      ],
+      "success": "Outliner 顯示新名稱，物件在指定的 Collection 底下。",
+      "detail": {
+        "steps": [
+          "F2 是 Edit > Rename Active Item（Edit 選單鍵標 F2）。",
+          "示範：按 F2 跳出 Object Name 改名框，先按 Ctrl+A 全選框內文字，輸入 ShortcutCube 後按 Enter，讀回名稱是 ShortcutCube。",
+          "M 打開 Move to Collection：原圖中有 New Collection、Scene Collection、Collection。",
+          "F2 只改作用中物件；要改多個就逐一選取再按（第 03 章 03-04）。"
+        ],
+        "why": "名稱和分組清楚，之後選材質、找物件、匯出都比較快。"
+      },
+      "help": [
+        "找不到改名：Edit > Rename Active Item；也可以先在 Outliner 點那一列選取，再按 F2（第 03 章 03-04）。",
+        "名稱沒變：確認按了 Enter，並看 Outliner 那一列。"
+      ],
+      "practice": ["ch03-02-04-01", "ch03-02-04-02"],
+      "shortcuts": [
+        {"keys": "F2 → Ctrl+A → 新名稱 → Enter", "effect": "改作用中物件的名稱。",
+         "requirements": ["滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。", "只選要改名的物件。"],
+         "cautions": ["改名後到 Outliner 核對；F2 只改作用中物件。"],
+         "evidence": [
+           {"path": "SV:02-03-01-f2-rename-dialog.png", "method": "native_event_screenshot", "label": "f2-rename-dialog（獨立 Blender 原圖；只拍改名框）"},
+           {"path": "SV:02-03-02-f2-renamed.png", "method": "native_events_and_readback", "label": "f2-renamed（獨立 Blender 原圖）"},
+           {"path": "L01:01-07-05-edit-undo-menu.png", "method": "menu_label_visual", "label": "Edit > Rename Active Item...：F2（既有原圖鍵標）"},
+           {"path": "SV:shortcut-verification-v001.json", "method": "native_events_and_readback", "label": "事件、預期與實際讀值；未判學員完成"}
+         ]},
+        {"keys": "M → New Collection", "effect": "開啟 Move to Collection，把選取的物件移到既有或新的 Collection。",
+         "requirements": ["滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。", "先選對要移動的物件。"],
+         "cautions": ["移動前核對選取；新的 Collection 要命名，並在 Outliner 核對。"],
+         "evidence": [
+           {"path": "SV:02-03-03-m-collection-menu.png", "method": "native_event_screenshot", "label": "m-collection-menu（獨立 Blender 原圖；只拍選單）"},
+           {"path": "SV:shortcut-verification-v001.json", "method": "native_events_and_readback", "label": "事件、預期與實際讀值；未判學員完成"}
+         ]}
+      ],
+      "figures": [
+        {"path": "SV:02-03-01-f2-rename-dialog.png", "caption": "按 F2：跳出 Object Name 改名框，原名 Cube 在框內。"},
+        {"path": "SV:02-03-03-m-collection-menu.png", "caption": "按 M：Move to Collection 選單，有 New Collection、Scene Collection、Collection。"}
+      ],
+      "readings": {"source": "SV", "items": [
+        {"case": "f2-rename-dialog", "fields": ["active"], "label": "改名前"},
+        {"case": "f2-renamed", "fields": ["active", "selected"], "label": "F2 → Ctrl+A → ShortcutCube → Enter 之後"}
+      ]}
+    },
+    {
+      "id": "ch00-04-06", "section": "00-04",
+      "title": "隱藏與顯示：H、Alt+H",
+      "goal": "H 暫時隱藏選取的物件，Alt+H 把隱藏的物件顯示回來。",
+      "context": "3D Viewport；Object Mode",
+      "actions": [
+        "選取要隱藏的物件，按 H。",
+        "要顯示回來時按 Alt+H。",
+        "在畫面與 Outliner 確認物件回來了。"
+      ],
+      "success": "物件重新出現在 3D Viewport，Outliner 的眼睛圖示恢復原狀。",
+      "detail": {
+        "steps": [
+          "選單位置：Object > Show/Hide > Hide Selected（H）與 Show Hidden Objects（Alt+H）。",
+          "隱藏只影響顯示，不刪除物件：示範讀回 hidden 由 true 變回 false，Dimensions 仍是 20 mm。",
+          "隱藏時 Outliner 那一列變暗、眼睛圖示改變，底部狀態列顯示 1 object(s) hidden。",
+          "之後各章會用 H 暫時藏起擋住視線的物件。"
+        ],
+        "why": "物件擋住視線時，隱藏比移動或刪除安全，位置和形狀都不變。"
+      },
+      "help": [
+        "找不到：Object > Show/Hide。",
+        "物件不見了但沒有刪：先按 Alt+H 看是不是被隱藏了。"
+      ],
+      "practice": ["ch03-edit-06"],
+      "shortcuts": [
+        {"keys": "H；Alt+H", "effect": "H 隱藏選取的物件；Alt+H 顯示被隱藏的物件。",
+         "requirements": ["滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。", "Object Mode。"],
+         "cautions": ["隱藏不是刪除；物件不見時先按 Alt+H 檢查。", "示範只有一個物件被隱藏；有多個隱藏物件時，顯示後逐一核對。"],
+         "evidence": [
+           {"path": "ES:EDIT-13-hidden.png", "method": "native_events_and_readback", "label": "第 03 章 GUI：H 隱藏物件"},
+           {"path": "ES:EDIT-14-shown.png", "method": "native_events_and_readback", "label": "第 03 章 GUI：Alt+H 顯示物件"},
+           {"path": "ES:safe-summary-v001.json", "method": "native_events_and_readback", "label": "第 03 章編輯練習的動作與讀值摘要"}
+         ]}
+      ],
+      "figures": [
+        {"path": "ES:EDIT-13-hidden.png", "caption": "按 H 之後：Cube 從畫面消失，Outliner 的 Cube 列變暗，狀態列顯示 1 object(s) hidden。"},
+        {"path": "ES:EDIT-14-shown.png", "caption": "按 Alt+H 之後：Cube 回到畫面。"}
+      ],
+      "readings": {"source": "ES", "items": [
+        {"case": "hidden", "fields": ["mode", "hidden", "dimensions"], "label": "按 H 之後"},
+        {"case": "shown", "fields": ["hidden", "dimensions"], "label": "按 Alt+H 之後"}
+      ]}
+    },
+    {
+      "id": "ch00-05-01", "section": "00-05",
+      "title": "移動：G＋軸＋數值",
+      "goal": "用 G、軸向鍵和數值做精確移動；分清楚 G 的「再移多少」和欄位輸入的「移到哪裡」。",
+      "context": "3D Viewport；Object Mode（Edit Mode 則移動選取的點、邊、面）",
+      "actions": [
+        "選取物件，按 G，再按 X（或 Y、Z）鎖定軸向。",
+        "輸入數值（例如 0.5），按 Enter。",
+        "在側欄 Item 讀 Location，核對結果。"
+      ],
+      "success": "Location 只在指定的軸上改變了輸入的距離。",
+      "detail": {
+        "steps": [
+          "G 是「再移多少」：示範 X＝0 時 G X 0.5 → X＝0.5 m；X＝1 時同樣輸入 → X＝1.5 m。",
+          "要「移到哪裡」，直接在側欄 Location X 欄位輸入；示範輸入 0.5 後 X＝0.5 m。",
+          "負數往反方向：示範從 1.5 m 按 G X -0.5 回到 1 m。",
+          "G Y、G Z 只改那一軸：示範各移 0.25 m 後，Location 是 (0.5, 0.25, 0.25) m。",
+          "毫米場景可以帶單位輸入，例如第 03 章 G Z 5mm。",
+          "做完後左下角出現收合的 Move 面板，是這次操作的設定（Edit > Adjust Last Operation，鍵標 F9）；本課程沒有示範展開修改。"
+        ],
+        "why": "工程尺寸要輸入數值，不靠拖曳；分清相對與絕對，才不會移錯位置。"
+      },
+      "help": [
+        "不想用快捷鍵：直接在側欄 Item 的 Location 欄位輸入目標值（絕對位置）。",
+        "移錯了：還沒按 Enter 就按 Esc；已確認就按 Ctrl+Z（00-01）。"
+      ],
+      "practice": ["ch01-01-07-02", "ch03-edit-04"],
+      "shortcuts": [
+        {"keys": "G → X／Y／Z → 數值 → Enter", "effect": "沿指定軸相對移動輸入的距離；Enter 前可按 Esc 或右鍵取消。",
+         "requirements": ["滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。", "Object Mode 選取物件（Edit Mode 則移動選取的點邊面）；Header 的座標方向是 Global。", "先讀回起點，再決定要輸入的相對距離。"],
+         "cautions": ["G 是相對移動：X＝1 時 G X 0.5 會到 1.5；欄位設 0.5 則直接到 0.5。起點為 0 時兩者才相同。", "這次 Blender 5.2.1 出廠鍵位／Global 實測，不加 X 的 G 0.5 也使 X 從 1 到 1.5；教學明寫 X，其他模式、約束或鍵位設定不據此推定。", "示範場景是 Metric／Unit Scale 1，長度以 m 顯示；不要把這些數字直接搬到毫米工程場景。"],
+         "evidence": [
+           {"path": "SV:01-07-03-translate-x-from-zero.png", "method": "native_events_and_readback", "label": "translate-x-from-zero（獨立 Blender 原圖）"},
+           {"path": "SV:01-07-05-translate-x-from-one.png", "method": "native_events_and_readback", "label": "translate-x-from-one（獨立 Blender 原圖）"},
+           {"path": "SV:01-07-06-translate-x-negative.png", "method": "native_events_and_readback", "label": "translate-x-negative（獨立 Blender 原圖）"},
+           {"path": "SV:01-07-10-location-field-absolute.png", "method": "native_events_and_readback", "label": "location-field-absolute（獨立 Blender 原圖）"},
+           {"path": "SV:01-07-11-translate-y.png", "method": "native_events_and_readback", "label": "translate-y（獨立 Blender 原圖）"},
+           {"path": "SV:01-07-12-translate-z.png", "method": "native_events_and_readback", "label": "translate-z（獨立 Blender 原圖）"},
+           {"path": "ES:EDIT-08-move-top.png", "method": "native_events_and_readback", "label": "第 03 章 GUI：Edit Mode 頂面 G Z 5mm"},
+           {"path": "SV:shortcut-verification-v001.json", "method": "native_events_and_readback", "label": "事件、預期與實際讀值；未判學員完成"}
+         ]}
+      ],
+      "figures": [
+        {"path": "SV:01-07-03-translate-x-from-zero.png", "caption": "G → X → 0.5 → Enter（起點 X＝0）：側欄與 Properties 的 Location X 都是 0.5 m，左下角出現 Move 面板。"},
+        {"path": "ES:EDIT-08-move-top.png", "caption": "第 03 章 Edit Mode：選頂面後 G → Z → 5mm → Enter，所選面的 Median Z 由 10 mm 到 15 mm。"}
+      ],
+      "readings": {"source": "SV", "items": [
+        {"case": "translate-x-from-zero", "fields": ["location"], "label": "起點 X＝0，G X 0.5 Enter 之後"},
+        {"case": "translate-x-start-one", "fields": ["location"], "label": "再一次 G X 0.5 Enter 之後"},
+        {"case": "translate-x-from-one", "fields": ["location"], "label": "起點 X＝1，G X 0.5 Enter 之後"},
+        {"case": "translate-x-negative", "fields": ["location"], "label": "G X -0.5 Enter 之後"},
+        {"case": "location-field-absolute", "fields": ["location"], "label": "Location X 欄位直接輸入 0.5 之後"},
+        {"case": "translate-z", "fields": ["location"], "label": "再 G Y 0.25、G Z 0.25 之後"}
+      ]}
+    },
+    {
+      "id": "ch00-05-02", "section": "00-05",
+      "title": "旋轉：R＋軸＋角度",
+      "goal": "用 R、軸向鍵和角度精確旋轉；要轉回去就輸入相反的角度或按 Ctrl+Z。",
+      "context": "3D Viewport；Object Mode",
+      "actions": [
+        "選取物件，按 R，再按 X、Y 或 Z。",
+        "輸入角度（例如 30），按 Enter。",
+        "在側欄或 Properties 讀 Rotation 核對。"
+      ],
+      "success": "Rotation 只在指定的軸上改變了輸入的角度。",
+      "detail": {
+        "steps": [
+          "示範：R X 30 → Rotation X＝30°；再 R X -30 → 回到 0°。Y、Z 軸做法相同。",
+          "R 是在目前角度上再轉；要轉回去就輸入相反的角度，或按 Ctrl+Z。",
+          "示範是在 Header 座標方向為 Global 時操作。",
+          "第 04 章用 G、R 調整相機；第 10 章用 R Y 90、R X 180 擺放列印方向。"
+        ],
+        "why": "角度要用數值輸入，之後的對齊與列印方向才準。"
+      },
+      "help": [
+        "不想用快捷鍵：在側欄 Item 的 Rotation 欄位直接輸入角度。",
+        "轉錯了：還沒按 Enter 就按 Esc；已確認就按 Ctrl+Z。"
+      ],
+      "practice": ["ch04-03-02-03", "ch10-07-03-01"],
+      "shortcuts": [
+        {"keys": "R → X／Y／Z → 角度 → Enter", "effect": "繞指定的 Global 軸再轉輸入的角度。",
+         "requirements": ["滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。", "Object Mode；Header 的座標方向是 Global。"],
+         "cautions": ["旋轉後讀回 Rotation；起始姿態不是 0° 時，結果是在原角度上再轉。"],
+         "evidence": [
+           {"path": "SV:01-08-01-rotate-x.png", "method": "native_events_and_readback", "label": "rotate-x（獨立 Blender 原圖）"},
+           {"path": "SV:01-08-02-rotate-x-restore.png", "method": "native_events_and_readback", "label": "rotate-x-restore（獨立 Blender 原圖）"},
+           {"path": "SV:01-08-03-rotate-y.png", "method": "native_events_and_readback", "label": "rotate-y（獨立 Blender 原圖）"},
+           {"path": "SV:01-08-05-rotate-z.png", "method": "native_events_and_readback", "label": "rotate-z（獨立 Blender 原圖）"},
+           {"path": "SV:shortcut-verification-v001.json", "method": "native_events_and_readback", "label": "事件、預期與實際讀值；未判學員完成"}
+         ]}
+      ],
+      "figures": [
+        {"path": "SV:01-08-01-rotate-x.png", "caption": "R → X → 30 → Enter 之後的畫面：讀回 Rotation X 30°。"}
+      ],
+      "readings": {"source": "SV", "items": [
+        {"case": "rotate-x", "fields": ["rotationDegrees"], "label": "R X 30 Enter 之後"},
+        {"case": "rotate-x-restore", "fields": ["rotationDegrees"], "label": "再 R X -30 Enter 之後"},
+        {"case": "rotate-y", "fields": ["rotationDegrees"], "label": "R Y 30 Enter 之後"},
+        {"case": "rotate-z", "fields": ["rotationDegrees"], "label": "R Z 30 Enter 之後"}
+      ]}
+    },
+    {
+      "id": "ch00-05-03", "section": "00-05",
+      "title": "縮放：S＋軸＋倍率",
+      "goal": "用 S、軸向鍵和倍率縮放，並分清楚 Scale 和 Dimensions。",
+      "context": "3D Viewport；Object Mode",
+      "actions": [
+        "選取物件，按 S，再按 X、Y 或 Z。",
+        "輸入倍率（例如 1.5），按 Enter。",
+        "讀側欄的 Scale 與 Dimensions。"
+      ],
+      "success": "指定軸的 Scale 變成輸入的倍率，Dimensions 跟著改變。",
+      "detail": {
+        "steps": [
+          "S 輸入的是倍率，不是尺寸：示範 2 m 的 Cube 按 S X 1.5 → Scale X＝1.5、Dimensions X＝3 m。",
+          "要指定尺寸，直接在側欄 Dimensions 欄位輸入（例如 60 mm），再做 Ctrl+A → Scale（下一張卡片）。",
+          "示範用 S X 0.6666666667 轉回 Scale 1；實作時用 Ctrl+Z 撤回比較準。",
+          "只有從未旋轉、Scale 為 1 的物件，倍率才直接等於尺寸比例。"
+        ],
+        "why": "工程尺寸通常直接輸入 Dimensions；了解 Scale，才看得懂為什麼要套用縮放。"
+      },
+      "help": [
+        "不想用快捷鍵：在側欄 Dimensions 欄位直接輸入尺寸。",
+        "縮錯了：還沒按 Enter 就按 Esc；已確認就按 Ctrl+Z。"
+      ],
+      "practice": ["ch01-01-08-02", "ch01-01-08-03"],
+      "shortcuts": [
+        {"keys": "S → X／Y／Z → 倍率 → Enter", "effect": "沿指定軸乘上輸入的倍率；Scale 與 Dimensions 一起改變。",
+         "requirements": ["滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。", "Object Mode；先讀回目前的 Scale 與 Dimensions。"],
+         "cautions": ["只有從未旋轉、Scale 為 1 的物件，倍率才直接等於尺寸比例。", "縮放後要繼續建模時，先做 Ctrl+A → Scale。"],
+         "evidence": [
+           {"path": "SV:01-08-07-scale-x.png", "method": "native_events_and_readback", "label": "scale-x（獨立 Blender 原圖）"},
+           {"path": "SV:01-08-08-scale-x-restore.png", "method": "native_events_and_readback", "label": "scale-x-restore（獨立 Blender 原圖）"},
+           {"path": "SV:shortcut-verification-v001.json", "method": "native_events_and_readback", "label": "事件、預期與實際讀值；未判學員完成"}
+         ]}
+      ],
+      "figures": [
+        {"path": "SV:01-08-07-scale-x.png", "caption": "S → X → 1.5 → Enter 之後的畫面：讀回 Scale X 1.5、Dimensions X 3 m。"}
+      ],
+      "readings": {"source": "SV", "items": [
+        {"case": "scale-x", "fields": ["scale", "dimensions"], "label": "S X 1.5 Enter 之後"},
+        {"case": "scale-x-restore", "fields": ["scale", "dimensions"], "label": "S X 0.6666666667 Enter 之後"}
+      ]}
+    },
+    {
+      "id": "ch00-05-04", "section": "00-05",
+      "title": "套用縮放：Ctrl+A → Scale",
+      "goal": "輸入尺寸後用 Ctrl+A → Scale 讓 Scale 回到 1，Dimensions 保持不變。",
+      "context": "3D Viewport；Object Mode",
+      "actions": [
+        "Object Mode 只選要套用的物件。",
+        "按 Ctrl+A，在 Apply 選單選 Scale。",
+        "核對 Scale 是 1.000，Dimensions 沒有改變。"
+      ],
+      "success": "側欄 Scale 三軸都是 1.000，Dimensions 和套用前相同。",
+      "detail": {
+        "steps": [
+          "Ctrl+A 只打開 Apply 選單（Object > Apply），還要選 Scale 才會套用。",
+          "第 03 章示範：Dimensions 輸入 20 mm 後套用 Scale，讀回 Dimensions 20 × 20 × 20 mm、Scale 1。",
+          "原盒也是輸入 60 × 40 × 30 mm 後立刻套用（第 03 章 03-10）。",
+          "Ctrl+A 的 Apply Scale 和修改器（Boolean、Solidify）的 Apply 是不同功能，不能互相替代。"
+        ],
+        "why": "套用後，之後的編輯數值才不會被放大。"
+      },
+      "help": [
+        "找不到：Object > Apply > Scale；或按 F3 搜尋 Apply Scale。"
+      ],
+      "practice": ["ch03-edit-02", "ch03-04-03-02"],
+      "shortcuts": [
+        {"keys": "Ctrl+A → Scale", "effect": "開啟 Object > Apply，再選 Scale；Scale 回到 1，Dimensions 不變。",
+         "requirements": ["滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。", "Object Mode，只選要套用縮放的物件。"],
+         "cautions": ["Ctrl+A 只開選單，不直接套用 Scale；不能用它替代 Boolean／Solidify 修改器的 Apply。"],
+         "evidence": [
+           {"path": "L04:04-03-02-apply-menu.png", "method": "menu_label_visual", "label": "Object > Apply > Scale：Ctrl A（Apply 父選單）（既有原圖鍵標）"},
+           {"path": "SV:02-07-01-ctrl-a-apply-menu.png", "method": "native_event_screenshot", "label": "ctrl-a-apply-menu（獨立 Blender 原圖；只拍選單）"},
+           {"path": "ES:EDIT-04-cube20.png", "method": "native_events_and_readback", "label": "第 03 章 GUI：20 mm 並套用 Scale"},
+           {"path": "ES:safe-summary-v001.json", "method": "native_events_and_readback", "label": "第 03 章編輯練習的動作與讀值摘要"}
+         ]}
+      ],
+      "figures": [
+        {"path": "SV:02-07-01-ctrl-a-apply-menu.png", "caption": "按 Ctrl+A 之後跳出的 Apply 選單原圖。"},
+        {"path": "ES:EDIT-04-cube20.png", "caption": "第 03 章：Dimensions 輸入 20 mm 並套用 Scale 之後，側欄 Dimensions 20 mm、Scale 1.000。"}
+      ],
+      "readings": {"source": "ES", "items": [
+        {"case": "cube20", "fields": ["units", "dimensions", "scale"], "label": "輸入 20 mm 並套用 Scale 之後"}
+      ]}
+    },
+    {
+      "id": "ch00-06-01", "section": "00-06",
+      "title": "進出 Edit Mode，切換點、邊、面：Tab、1、2、3",
+      "goal": "Tab 在 Object Mode 與 Edit Mode 之間切換；Edit Mode 用主鍵盤上排 1、2、3 選點、邊、面。",
+      "context": "3D Viewport；選取一個網格物件；第 03 章 03-08 起使用",
+      "actions": [
+        "選取網格物件，按 Tab 進 Edit Mode。",
+        "按主鍵盤上排 1、2、3 切換點、邊、面選取，再點要的元素。",
+        "做完按 Tab 回 Object Mode。"
+      ],
+      "success": "左上顯示 Edit Mode，Header 的點、邊、面按鈕跟著切換。",
+      "detail": {
+        "steps": [
+          "示範讀回：按 Tab 之後模式是 EDIT_MESH，再按一次回到 OBJECT。",
+          "是主鍵盤字母上方那排的 1、2、3，不是數字鍵盤；示範時 Emulate Numpad 關閉。",
+          "第 03 章示範：點模式選 1 個頂點、邊模式選 1 條邊、面模式選頂面時讀回 1 個面。",
+          "Edit Mode 改的是網格的點、邊、面；改名、刪除整個物件、套用縮放要回 Object Mode。"
+        ],
+        "why": "先分清兩種模式，同一個鍵才不會做出意外的結果。"
+      },
+      "help": [
+        "找不到：左上的模式選單可切換 Object Mode／Edit Mode；Edit Mode 的 Header 有點、邊、面三個選取按鈕。",
+        "按 1、2、3 沒有切換：確認是主鍵盤上排，而且已經在 Edit Mode。"
+      ],
+      "practice": ["ch03-edit-03"],
+      "shortcuts": [
+        {"keys": "Tab", "effect": "作用中網格在 Object Mode 與 Edit Mode 之間切換。",
+         "requirements": ["滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。", "選取網格物件。"],
+         "cautions": ["切換前看左上模式，確認目前在哪一個模式。"],
+         "evidence": [
+           {"path": "SV:01-05-01-tab-edit.png", "method": "native_events_and_readback", "label": "tab-edit（獨立 Blender 原圖）"},
+           {"path": "SV:01-05-02-tab-object.png", "method": "native_events_and_readback", "label": "tab-object（獨立 Blender 原圖）"},
+           {"path": "SV:shortcut-verification-v001.json", "method": "native_events_and_readback", "label": "事件、預期與實際讀值；未判學員完成"}
+         ]},
+        {"keys": "主鍵盤上排 1／2／3", "effect": "Edit Mode 的點／邊／面選取模式。",
+         "requirements": ["Edit Mode；Emulate Numpad 關閉。"],
+         "cautions": ["主鍵盤數字的本次驗證是在 Emulate Numpad 關閉時；鍵位不同就用 Header 的點、邊、面按鈕。"],
+         "evidence": [
+           {"path": "MV:04-04-01-main-three-face-select.png", "method": "native_events_and_readback", "label": "main-three-face-select（新原生事件／實拍）"},
+           {"path": "MV:07-02-01-main-two-edge-select.png", "method": "native_events_and_readback", "label": "main-two-edge-select（新原生事件／實拍）"},
+           {"path": "ES:EDIT-05-vertex.png", "method": "native_events_and_readback", "label": "第 03 章 GUI：點模式選 1 個頂點"},
+           {"path": "ES:EDIT-06-edge.png", "method": "native_events_and_readback", "label": "第 03 章 GUI：邊模式選 1 條邊"},
+           {"path": "ES:EDIT-07-face.png", "method": "native_events_and_readback", "label": "第 03 章 GUI：面模式選頂面"},
+           {"path": "MV:mesh-shortcut-verification-v001.json", "method": "native_events_and_readback", "label": "事件、預期與實際讀值；未判學員完成"}
+         ]}
+      ],
+      "figures": [
+        {"path": "ES:EDIT-05-vertex.png", "caption": "第 03 章：Tab 進 Edit Mode、主鍵盤 1 點模式，選中 1 個頂點。"},
+        {"path": "ES:EDIT-07-face.png", "caption": "主鍵盤 3 面模式，選中方塊頂面。"}
+      ],
+      "readings": {"source": "ES", "items": [
+        {"case": "vertex", "fields": ["mode", "selectionMode", "selectedVertices"], "label": "主鍵盤 1、點選一個頂點之後"},
+        {"case": "edge", "fields": ["selectionMode", "selectedEdges"], "label": "主鍵盤 2、點選一條邊之後"},
+        {"case": "face", "fields": ["selectionMode", "selectedFaces", "selectedMedian"], "label": "主鍵盤 3、點選頂面之後"}
+      ]}
+    },
+    {
+      "id": "ch00-06-02", "section": "00-06",
+      "title": "內插與擠出：I、E",
+      "goal": "對選取的面用 I 往內縮一圈、用 E 沿面的法向擠出。",
+      "context": "3D Viewport；Edit Mode、面選取；第 03 章 03-08 起使用",
+      "actions": [
+        "面模式點選一個面。",
+        "按 I，輸入寬度（例如 3mm），按 Enter。",
+        "按 E，輸入距離（例如 5mm），按 Enter。"
+      ],
+      "success": "內插後面內多一圈邊；擠出後所選面沿法向移出。",
+      "detail": {
+        "steps": [
+          "示範（20 mm 方塊、毫米場景）：I 3mm 之後頂面內側多一圈 3 mm 寬的邊，面數 6 → 10。",
+          "接著 E 5mm：中間的面往外擠出，面數 10 → 14，所選面中心 Z 從 10 mm 到 15 mm。",
+          "E 的方向沿所選面的法向，不一定是世界 +Z；另一個示範從正面擠出，面就往 -Y 移。",
+          "每次只做一個動作並讀回；不對就 Ctrl+Z（示範按兩次撤回擠出與內插，回到 6 個面）。"
+        ],
+        "why": "盒子的牆、唇邊都靠內插加擠出；一次一個動作、每次讀回，才知道哪一步錯。"
+      },
+      "help": [
+        "按 I 之後欄位變黃、時間軸出現菱形：你在 Object Mode，立刻 Ctrl+Z（00-07）。",
+        "按 E 沒反應：確認在 Edit Mode，而且選了面。"
+      ],
+      "practice": ["ch03-edit-05"],
+      "shortcuts": [
+        {"keys": "I → 寬度 → Enter；E → 距離 → Enter", "effect": "I 內插選取的面；E 沿面法向擠出。每次只做一個動作並讀回。",
+         "requirements": ["滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。", "Edit Mode、面選取，只選要處理的面；依毫米場景與該面法向核對正負。"],
+         "cautions": ["E 的正方向沿所選面法向，不能把所有面都當世界 +Z。Inset 厚度與擠出位移不同，並非物件絕對 Dimensions。", "先確認左上是 Edit Mode；Object Mode 的 I、E 結果見 00-07。"],
+         "evidence": [
+           {"path": "ES:EDIT-10-inset.png", "method": "native_events_and_readback", "label": "第 03 章 GUI：I 3mm 內插頂面"},
+           {"path": "ES:EDIT-11-extrude.png", "method": "native_events_and_readback", "label": "第 03 章 GUI：E 5mm 擠出"},
+           {"path": "MV:05-05-01-inset-i.png", "method": "native_events_and_readback", "label": "inset-i（新原生事件／實拍）"},
+           {"path": "MV:05-05-02-extrude-e-normal.png", "method": "native_events_and_readback", "label": "extrude-e-normal（新原生事件／實拍）"},
+           {"path": "ES:safe-summary-v001.json", "method": "native_events_and_readback", "label": "第 03 章編輯練習的動作與讀值摘要"},
+           {"path": "MV:mesh-shortcut-verification-v001.json", "method": "native_events_and_readback", "label": "事件、預期與實際讀值；未判學員完成"}
+         ]}
+      ],
+      "figures": [
+        {"path": "ES:EDIT-10-inset.png", "caption": "I → 3mm → Enter：頂面內插一圈（面數 6 → 10）。"},
+        {"path": "ES:EDIT-11-extrude.png", "caption": "E → 5mm → Enter：內面沿法向擠出（面數 10 → 14）。"}
+      ],
+      "readings": {"source": "ES", "items": [
+        {"case": "face", "fields": ["faces", "selectedMedian"], "label": "內插前（選中頂面）"},
+        {"case": "inset", "fields": ["vertices", "faces"], "label": "I 3mm Enter 之後"},
+        {"case": "extrude", "fields": ["faces", "selectedMedian"], "label": "E 5mm Enter 之後"},
+        {"case": "undo-twice", "fields": ["vertices", "faces"], "label": "兩次 Ctrl+Z 之後"}
+      ]}
+    },
+    {
+      "id": "ch00-06-03", "section": "00-06",
+      "title": "倒角：Ctrl+B",
+      "goal": "Edit Mode 選取邊後用 Ctrl+B 把稜角切成斜面或圓角。",
+      "context": "3D Viewport；Edit Mode、邊選取；第 10 章使用",
+      "actions": [
+        "Edit Mode 按主鍵盤上排 2，只選要倒角的邊。",
+        "按 Ctrl+B，輸入倒角量，按 Enter。",
+        "依該章的指示核對段數（Segments）與寬度類型。"
+      ],
+      "success": "所選的邊變成斜面，網格的面數增加。",
+      "detail": {
+        "steps": [
+          "示範（單位 m 的練習 Cube）：主鍵盤 2 選 4 條邊，Ctrl+B 0.1 Enter 之後面數 14 → 18。",
+          "做完後左下角出現收合的 Bevel 面板，是這次倒角的設定。",
+          "Edit Mode 的 Ctrl+B 直接改網格，不是新增 Bevel 修改器。",
+          "第 10 章卡扣的倒角量與段數是草案值，照該章步驟輸入並核對。",
+          "在 Object Mode 按 Ctrl+B 會變成框選渲染範圍（00-07）。"
+        ],
+        "why": "倒角讓稜角有過渡；先選對邊，才不會倒到不該倒的地方。"
+      },
+      "help": [
+        "出現十字虛線：你在 Object Mode，按 Esc 或右鍵取消（00-07）。",
+        "倒錯了：Ctrl+Z 撤回後重選邊。"
+      ],
+      "practice": ["ch10-07-02-02"],
+      "shortcuts": [
+        {"keys": "主鍵盤上排 2；Ctrl+B → 數值 → Enter", "effect": "Edit Mode 對選取的邊做網格倒角。",
+         "requirements": ["滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。", "Edit Mode、邊選取；只選要倒角的邊。", "主鍵盤 2 的本次驗證是在 Emulate Numpad 關閉時；鍵位不同就用邊選取按鈕。"],
+         "cautions": ["在 Edit Mode，Ctrl+B 做網格邊 Bevel，不等於新增 Bevel 修改器。示範用 0.1 m、預設段數驗鍵，沒有核對卡扣 0.6 mm／3 段的工程結果。", "倒角量是草案，不能由 Bevel 成功推定強度改善或合格。"],
+         "evidence": [
+           {"path": "MV:07-02-01-main-two-edge-select.png", "method": "native_events_and_readback", "label": "main-two-edge-select（新原生事件／實拍）"},
+           {"path": "MV:07-02-02-bevel-ctrl-b.png", "method": "native_events_and_readback", "label": "bevel-ctrl-b（新原生事件／實拍）"},
+           {"path": "MV:mesh-shortcut-verification-v001.json", "method": "native_events_and_readback", "label": "事件、預期與實際讀值；未判學員完成"}
+         ]}
+      ],
+      "figures": [
+        {"path": "MV:07-02-02-bevel-ctrl-b.png", "caption": "Edit Mode 邊選取，Ctrl+B → 0.1 → Enter 之後：正面四邊倒角，左下角出現 Bevel 面板（Front Orthographic）。"}
+      ],
+      "readings": {"source": "MV", "items": [
+        {"case": "main-two-edge-select", "fields": ["selectMode", "selectedEdges", "faces"], "label": "主鍵盤 2 之後（倒角前）"},
+        {"case": "bevel-ctrl-b", "fields": ["faces", "selectedFaces"], "label": "Ctrl+B 0.1 Enter 之後"}
+      ]}
+    },
+    {
+      "id": "ch00-06-04", "section": "00-06",
+      "title": "刪除面：X → Faces",
+      "goal": "Edit Mode 只選要刪的面，按 X 在 Delete 選單選 Faces。",
+      "context": "3D Viewport；Edit Mode、面選取；第 03 章 03-11 使用",
+      "actions": [
+        "面模式只選要刪的面（例如盒子頂面）。",
+        "按 X，在 Delete 選單選 Faces。",
+        "確認只有那個面不見了。"
+      ],
+      "success": "所選的面消失，其他面還在。",
+      "detail": {
+        "steps": [
+          "Mesh 選單原圖：Delete 子選單有 Faces，Delete 的鍵標是 X。",
+          "Edit Mode 的 X 不會直接刪除，要在選單選 Faces。",
+          "Object Mode 的 X 會刪整個物件（00-04）；按之前先看左上模式。",
+          "第 03 章用這個方法打開原盒的頂面，再加壁厚。"
+        ],
+        "why": "刪錯元素會破壞網格；先確認只選到要刪的面。"
+      },
+      "help": [
+        "找不到：Mesh > Delete > Faces。",
+        "刪錯了：立刻 Ctrl+Z。"
+      ],
+      "practice": ["ch03-04-04-03"],
+      "shortcuts": [
+        {"keys": "X → Faces", "effect": "Edit Mode 刪除選取的面。",
+         "requirements": ["滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。", "Edit Mode、面選取；確認只有要刪的面反白。"],
+         "cautions": ["X 不是直接刪 Faces；Object Mode 的 X 會刪整件。"],
+         "evidence": [
+           {"path": "L04:04-04-03-delete-menu.png", "method": "menu_label_visual", "label": "Mesh > Delete > Faces：X（Delete 父選單）（既有原圖鍵標）"}
+         ]}
+      ],
+      "figures": [
+        {"path": "L04:04-04-03-delete-menu.png", "caption": "Mesh 選單原圖：Delete 子選單的 Faces（Delete 鍵標 X）。"}
+      ],
+      "limitations": ["本卡只有選單鍵標原圖，沒有逐步實拍 X → Faces 之後的畫面；結果照第 03 章 03-11 核對。"]
+    },
+    {
+      "id": "ch00-06-05", "section": "00-06",
+      "title": "檢查開口邊：Select Non Manifold",
+      "goal": "匯出前在 Edit Mode 用 Select Non Manifold 找出開口或不封閉的邊。",
+      "context": "3D Viewport；Edit Mode、邊選取；第 03 章 03-13 起使用",
+      "actions": [
+        "Edit Mode 按主鍵盤上排 2 切到邊選取，再按 Alt+A 取消全部選取。",
+        "按 F3 輸入 Select Non Manifold 後按 Enter（或 Select > Select All by Trait > Non Manifold）。",
+        "看有沒有邊被選起來。"
+      ],
+      "success": "沒有任何邊反白，表示這次檢查沒有選到非流形邊；有邊被選到就記下位置。",
+      "detail": {
+        "steps": [
+          "Edit Mode 的 Alt+A 取消的是網格選取：示範讀回所選點、邊、面都變成 0。",
+          "一定要先取消全選，否則原本選取的邊會混在檢查結果裡。",
+          "這項檢查不能單獨證明沒有自交、壁厚問題或列印合格。"
+        ],
+        "why": "開口的邊會讓 STL 不封閉；匯出前先排查。"
+      },
+      "help": [
+        "找不到：Select > Select All by Trait > Non Manifold。",
+        "選到了邊：記下位置與數量，再依該章步驟處理。"
+      ],
+      "practice": ["ch03-04-06-03"],
+      "shortcuts": [
+        {"keys": "主鍵盤上排 2 → Alt+A → F3 → Select Non Manifold", "effect": "切邊選取、取消全選，再用 Menu Search 執行 Select Non Manifold。",
+         "requirements": ["滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。", "Edit Mode；先取消既有選取並核對邊選取模式。", "Emulate Numpad 關閉；鍵位不同就按邊選取按鈕。"],
+         "cautions": ["既有原圖證明 F3 的搜尋鍵標，並未驗證該檢查有獨立直接快捷鍵。搜尋及閉合檢查不代表可列印或配合合格。"],
+         "evidence": [
+           {"path": "MV:07-02-01-main-two-edge-select.png", "method": "native_events_and_readback", "label": "main-two-edge-select（新原生事件／實拍）"},
+           {"path": "MV:04-04-02-edit-alt-a-deselect.png", "method": "native_events_and_readback", "label": "edit-alt-a-deselect（新原生事件／實拍）"},
+           {"path": "L01:01-07-05-edit-undo-menu.png", "method": "menu_label_visual", "label": "Edit > Menu Search...：F3（既有原圖鍵標）"},
+           {"path": "MV:mesh-shortcut-verification-v001.json", "method": "native_events_and_readback", "label": "事件、預期與實際讀值；未判學員完成"}
+         ]}
+      ],
+      "figures": [
+        {"path": "MV:04-04-02-edit-alt-a-deselect.png", "caption": "Edit Mode 按 Alt+A：網格沒有任何選取（讀回點、邊、面都是 0）。"}
+      ],
+      "readings": {"source": "MV", "items": [
+        {"case": "main-three-face-select", "fields": ["selectedVertices", "selectedEdges", "selectedFaces"], "label": "Alt+A 之前（面模式、全部選取）"},
+        {"case": "edit-alt-a-deselect", "fields": ["selectedVertices", "selectedEdges", "selectedFaces"], "label": "Edit Mode 按 Alt+A 之後"}
+      ]}
+    },
+    {
+      "id": "ch00-07-01", "section": "00-07",
+      "title": "Object Mode 按了 I 或 E",
+      "goal": "認得在 Object Mode 誤按 I、E 的結果，知道怎麼復原。",
+      "context": "3D Viewport；左上顯示 Object Mode",
+      "actions": [
+        "誤按 I：Transform 欄位變黃、右側變成菱形，表示插入了關鍵影格。",
+        "剛誤按、還沒做別的事：立刻 Ctrl+Z，確認欄位不再是黃色。",
+        "按 E 沒有反應：先核對模式，不要盲按 Ctrl+Z。"
+      ],
+      "success": "欄位恢復原本的顏色，右側不再是菱形。",
+      "detail": {
+        "steps": [
+          "示範（出廠 Cube、原本沒有動畫）：按 I 之後讀回有動畫資料（CubeAction）；Ctrl+Z 之後動畫資料消失，位置與網格和原本相同。",
+          "同一個 Cube 在 Object Mode 按 E：網格、Transform、動畫都沒有改變，也沒有擠出。",
+          "物件原本就有動畫時，不要整份刪除動畫；誤按後只撤回這一次。",
+          "要內插或擠出：先按 Tab 進 Edit Mode 並選面（00-06）。"
+        ],
+        "why": "按錯模式的結果不一定看得出來；先認得症狀，才能用對的方法復原。"
+      },
+      "help": [
+        "不確定有沒有誤插關鍵影格：看 Properties 的 Location、Rotation、Scale 欄是不是黃色，右側的小點是不是變成菱形。"
+      ],
+      "practice": ["ch03-edit-05"],
+      "shortcuts": [
+        {"keys": "Object Mode：I／E", "effect": "I 插入關鍵影格（不是內插）；E 在出廠鍵位的 Object Mode 沒有作用。",
+         "requirements": ["3D Viewport、Object Mode、出廠鍵位。"],
+         "cautions": ["先確認左上是 Edit Mode。若仍在 Object Mode 按 I，本次出廠 Cube 實測會插入關鍵影格：Transform 欄變黃、時間軸出現菱形，並非 Inset。若剛誤按且尚未做其他操作，立即 Ctrl+Z，再核對欄位與時間軸回到誤按前；本次原本無動畫的 Cube 已實測復原。原本有動畫時需保留既有影格，不要整份刪除動畫。", "本次出廠鍵位、3D Viewport、Object Mode 的 Cube 按 E，未找到對應啟用鍵位，實測網格、Transform、動畫及渲染範圍均未改變，也沒有擠出。沒反應時先核對模式再操作；沒有發生變更時不盲按 Undo。自訂鍵位或其他編輯區以實況為準。"],
+         "evidence": [
+           {"path": "EV1:shortcut-mode-02-object-i-keyframe.png", "method": "native_events_and_readback", "label": "object-i-keyframe（Object Mode誤按實拍／讀值）"},
+           {"path": "EV1:shortcut-mode-03-object-i-undo.png", "method": "native_events_and_readback", "label": "object-i-undo（Object Mode誤按實拍／讀值）"},
+           {"path": "EV1:shortcut-mode-04-object-e.png", "method": "native_events_and_readback", "label": "object-e（Object Mode誤按實拍／讀值）"},
+           {"path": "EV1:shortcut-mode-errors-verification-v001.json", "method": "native_events_and_readback", "label": "誤按與復原：原生事件、前後狀態及原圖SHA（v001）"}
+         ]}
+      ],
+      "figures": [
+        {"path": "EV1:shortcut-mode-02-object-i-keyframe.png", "caption": "Object Mode 按 I：Properties 的 Location、Rotation、Scale 欄變黃，右側小點變成菱形。"},
+        {"path": "EV1:shortcut-mode-03-object-i-undo.png", "caption": "立刻 Ctrl+Z 之後：欄位恢復原本的顏色。"}
+      ],
+      "readings": {"source": "EV1", "items": [
+        {"case": "baseline", "fields": ["mode", "animation.animationData"], "label": "誤按前"},
+        {"case": "object-i-keyframe", "fields": ["animation.animationData", "animation.action"], "label": "Object Mode 按 I 之後"},
+        {"case": "object-i-undo", "fields": ["animation.animationData", "location", "mesh"], "label": "立刻 Ctrl+Z 之後"},
+        {"case": "object-e", "fields": ["animation.animationData", "location", "mesh"], "label": "Object Mode 按 E 之後"}
+      ]}
+    },
+    {
+      "id": "ch00-07-02", "section": "00-07",
+      "title": "Object Mode 按了 Ctrl+B",
+      "goal": "認得 Object Mode 誤按 Ctrl+B 會進入渲染範圍（Render Region）框選，並知道取消與清除的方法。",
+      "context": "3D Viewport；Object Mode",
+      "actions": [
+        "出現十字虛線、還沒拖曳：按 Esc 或滑鼠右鍵取消。",
+        "已經拖出紅白虛線框：按 Ctrl+Alt+B 清除。",
+        "確認虛線框消失。"
+      ],
+      "success": "3D Viewport 沒有紅白虛線框。",
+      "detail": {
+        "steps": [
+          "Edit Mode 的 Ctrl+B 是倒角；Object Mode 的 Ctrl+B 是框選渲染範圍，兩者完全不同。",
+          "示範讀回：一般透視視圖框選完成後，Ctrl+Z 沒有還原；相機視圖下立即 Ctrl+Z 則有恢復。",
+          "兩種視圖都可以按 Ctrl+Alt+B 清除，範圍重設為 0～1。",
+          "清除也會移除原本就有的範圍；原本有設定時，要依誤按前的紀錄重設。"
+        ],
+        "why": "誤按後畫面多一個虛線框，容易以為模型或視圖出了問題；認得症狀就能直接清除。"
+      },
+      "help": [
+        "Ctrl+Alt+B 沒反應：確認滑鼠在 3D Viewport 內、左上是 Object Mode。"
+      ],
+      "practice": ["ch10-07-02-02"],
+      "shortcuts": [
+        {"keys": "Object Mode：Ctrl+B；清除 Ctrl+Alt+B", "effect": "Object Mode 的 Ctrl+B 進入 Render Region 框選；Ctrl+Alt+B 清除範圍。",
+         "requirements": ["3D Viewport、Object Mode、出廠鍵位。"],
+         "cautions": ["若仍在 Object Mode 按 Ctrl+B，會進入 Render Region（渲染範圍）框選，出現十字虛線，而非邊倒角。尚在框選時按 Esc 或滑鼠右鍵取消；本次一般透視與相機視圖均已實測，取消後保留原邊框設定。", "若已完成框選，本次一般透視下 Ctrl+Z 未還原視圖渲染範圍；相機視圖下立即 Ctrl+Z 則恢復原場景邊框。兩種視圖都已實測可按 Ctrl+Alt+B 清除 Render Region，停用範圍並將邊界重設為 0～1。清除也會移除原有範圍，若本來有設定，需依誤按前紀錄核對還原，不能當作保留原設定的取消。"],
+         "evidence": [
+           {"path": "EV1:shortcut-mode-05-perspective-border-invoke-esc.png", "method": "native_events_and_readback", "label": "perspective-border-invoke-esc（Object Mode誤按實拍／讀值）"},
+           {"path": "EV1:shortcut-mode-06-perspective-border-esc.png", "method": "native_events_and_readback", "label": "perspective-border-esc（Object Mode誤按實拍／讀值）"},
+           {"path": "EV1:shortcut-mode-08-perspective-border-rmb.png", "method": "native_events_and_readback", "label": "perspective-border-rmb（Object Mode誤按實拍／讀值）"},
+           {"path": "EV2:shortcut-mode-09-perspective-border-complete.png", "method": "native_events_and_readback", "label": "perspective-border-complete（Object Mode誤按實拍／讀值）"},
+           {"path": "EV2:shortcut-mode-10-perspective-border-undo.png", "method": "native_events_and_readback", "label": "perspective-border-undo（Object Mode誤按實拍／讀值）"},
+           {"path": "EV2:shortcut-mode-12-perspective-border-clear.png", "method": "native_events_and_readback", "label": "perspective-border-clear（Object Mode誤按實拍／讀值）"},
+           {"path": "EV2:shortcut-mode-18-camera-border-undo.png", "method": "native_events_and_readback", "label": "camera-border-undo（Object Mode誤按實拍／讀值）"},
+           {"path": "EV2:shortcut-mode-20-camera-border-clear.png", "method": "native_events_and_readback", "label": "camera-border-clear（Object Mode誤按實拍／讀值）"},
+           {"path": "EV2:shortcut-mode-errors-verification-v001.json", "method": "native_events_and_readback", "label": "誤按與復原：原生事件、前後狀態及原圖SHA（v002）"}
+         ]}
+      ],
+      "figures": [
+        {"path": "EV2:shortcut-mode-09-perspective-border-complete.png", "caption": "Object Mode 按 Ctrl+B 並拖曳之後：3D Viewport 出現紅白虛線框（渲染範圍）。"},
+        {"path": "EV2:shortcut-mode-12-perspective-border-clear.png", "caption": "Ctrl+Alt+B 之後：讀回渲染範圍已停用。"}
+      ],
+      "readings": {"source": "EV2", "items": [
+        {"case": "perspective-border-esc", "fields": ["viewRenderBorder"], "label": "一般透視：Ctrl+B 後按 Esc"},
+        {"case": "perspective-border-complete", "fields": ["viewRenderBorder"], "label": "一般透視：Ctrl+B 並拖曳之後"},
+        {"case": "perspective-border-undo", "fields": ["viewRenderBorder"], "label": "一般透視：接著按 Ctrl+Z"},
+        {"case": "perspective-border-clear", "fields": ["viewRenderBorder"], "label": "一般透視：Ctrl+Alt+B 之後"},
+        {"case": "camera-border-undo", "fields": ["sceneRenderBorder"], "label": "相機視圖：框選後立即 Ctrl+Z"},
+        {"case": "camera-border-clear", "fields": ["sceneRenderBorder"], "label": "相機視圖：清除之後"}
+      ]}
+    },
+    {
+      "id": "ch00-07-03", "section": "00-07",
+      "title": "主鍵盤句點跳出 Pivot Point",
+      "goal": "分清楚主鍵盤句點（Pivot Point 圓盤選單）與數字鍵盤句點（對焦）。",
+      "context": "3D Viewport；Object Mode",
+      "actions": [
+        "按句點跳出 Pivot Point 圓盤選單：不要點任何選項，按 Esc 離開。",
+        "要對焦改按數字鍵盤的「.」，或用 View > Frame Selected。",
+        "誤點了選項：再按一次主鍵盤句點，選回原本反白的選項（示範是 Median Point）。"
+      ],
+      "success": "Pivot Point 沒有被改到，視角也沒有變。",
+      "detail": {
+        "steps": [
+          "示範：在 Emulate Numpad 已勾選的狀態按主鍵盤句點，仍跳出 Pivot Point 圓盤選單（Median Point、Individual Origins、3D Cursor、Bounding Box Center、Active Element、Only Locations），視距沒有改變。",
+          "原本的設定在選單中反白（示範是 Median Point）。",
+          "數字鍵盤「.」才是對焦：示範的視距從約 18.39 變成約 2.65。",
+          "Pivot Point 決定旋轉、縮放繞哪一點；沒有要改就保持原設定。",
+          "本課程沒有拍按 Esc 離開選單的畫面；離開後看選單是否消失。"
+        ],
+        "why": "兩個句點長得一樣、作用不同；誤改 Pivot Point 會讓之後的旋轉與縮放結果不同。"
+      },
+      "help": [
+        "不確定有沒有改到：再按一次主鍵盤句點，看反白的是不是原本的 Median Point，再按 Esc 離開。"
+      ],
+      "practice": ["ch01-01-06-03"],
+      "shortcuts": [
+        {"keys": "主鍵盤句點（.）", "effect": "開啟 Pivot Point 圓盤選單；不是對焦。",
+         "requirements": ["滑鼠停在 3D Viewport 內，沒有文字／數值欄位正在編輯；先核對模式及選取。"],
+         "cautions": ["要對焦用數字鍵盤的「.」或 View > Frame Selected。", "示範中勾選 Emulate Numpad 後，主鍵盤句點仍開出 Pivot Point 選單。"],
+         "evidence": [
+           {"path": "KV:01-06-08-main-period-pivot.png", "method": "native_events_and_readback", "label": "main-period-pivot（新原生事件／實拍）"},
+           {"path": "KV:01-06-09-numpad-period-framed.png", "method": "native_events_and_readback", "label": "numpad-period-framed（新原生事件／實拍）"},
+           {"path": "KV:keyboard-verification-v001.json", "method": "native_events_and_readback", "label": "事件、預期與實際讀值；未判學員完成"}
+         ]}
+      ],
+      "figures": [
+        {"path": "KV:01-06-08-main-period-pivot.png", "caption": "主鍵盤句點：跳出 Pivot Point 圓盤選單，目前的 Median Point 反白（Right Orthographic 視圖）。"},
+        {"path": "KV:01-06-09-numpad-period-framed.png", "caption": "改按數字鍵盤「.」：視角拉近對準 Cube。"}
+      ],
+      "readings": {"source": "KV", "items": [
+        {"case": "main-period-pivot", "fields": ["viewDistance", "emulateNumpad"], "label": "主鍵盤句點之後"},
+        {"case": "numpad-period-framed", "fields": ["viewDistance"], "label": "數字鍵盤「.」之後"}
+      ]}
+    }
+  ]
+}

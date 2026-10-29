@@ -25,7 +25,8 @@ class ChallengesV005Tests(unittest.TestCase):
         spec = importlib.util.spec_from_file_location('manage_challenges_v005', ROOT / 'learning/manage.py')
         manage = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(manage)
-        self.assertEqual(manage.CHALLENGES, NEW)
+        # v005 remains frozen as a historical manifest when the active pointer advances.
+        self.assertEqual(sha(NEW), '6e73f7990434fb84631c98f4b6941967d01ce49d9513ff099b8cf79017fa34f2')
         self.assertEqual(sha(OLD), 'c17a274a4e70ccd82463bd83f76a58f7a9821bafaa09fad402cc5766aa8a1af0')
         old, new = read(OLD), read(NEW)
         self.assertEqual(new['previousVersion'], {'path': 'learning/web/challenges/challenges-v004.json', 'sha256': sha(OLD)})

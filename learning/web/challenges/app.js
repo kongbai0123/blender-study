@@ -6,10 +6,11 @@
   const el = (tag, text) => { const node=document.createElement(tag); node.textContent=text; return node; };
   const message = (text) => { $('record-message').textContent=text; $('record-message').hidden=!text; };
   const safeSection = (chapter, section) => /^ch\d{2}$/.test(chapter||'') && /^\d{2}-\d{2}$/.test(section||'') ? `/#engineering/${chapter}/${section}` : null;
-  const fileUrl = (path) => /^learning\/evidence\/[A-Za-z0-9_./-]+\.(?:png|jpg|jpeg|webp)$/i.test(path||'') && !path.split('/').includes('..') ? '/files/'+path.split('/').map(encodeURIComponent).join('/') : null;
+  const fileUrl = (path) => /^\/challenges\/[a-z0-9-]+\.png$/.test(path||'') ? path : /^learning\/evidence\/[A-Za-z0-9_./-]+\.(?:png|jpg|jpeg|webp)$/i.test(path||'') && !path.split('/').includes('..') ? '/files/'+path.split('/').map(encodeURIComponent).join('/') : null;
   const summaryUrl = (path) => /^learning\/evidence\/[A-Za-z0-9_./-]+\.json$/i.test(path||'') && !path.split('/').includes('..') ? '/files/'+path.split('/').map(encodeURIComponent).join('/') : null;
   const drawingUrl = (path) => /^\/(?:pilot|challenges)\/[a-z0-9-]+\.svg$/.test(path||'') ? path : null;
   const animationUrl = (path) => /^\/pilot\/[a-z0-9-]+\.gif$/.test(path||'') ? path : null;
+  const sceneUrl = (path) => /^learning\/evidence\/[A-Za-z0-9_./-]+\.blend$/i.test(path||'') && !path.split('/').includes('..') ? '/files/'+path.split('/').map(encodeURIComponent).join('/') : null;
   // 第 03 章沿用原試教題的 pilot 事件，既有紀錄不必搬移；其餘各章用 challenge 事件。
   const kind = (item) => item.progressKind==='pilot' ? {confirm:'pilot_confirm',note:'pilot_note',confirmed:'pilot_challenge_confirmed',noted:'pilot_challenge_note'} : {confirm:'challenge_confirm',note:'challenge_note',confirmed:'challenge_confirmed',noted:'challenge_note'};
   const list = (id, values) => $(id).replaceChildren(...(Array.isArray(values)?values:[]).map((value)=>el('li',String(value))));
@@ -18,12 +19,21 @@
     $('loading').hidden=true; $('challenge').hidden=false;
     $('chapter-label').textContent='第 '+item.chapterId.slice(2)+' 章 · 練習題'; $('title').textContent=item.title; $('goal').textContent=item.goal;
     $('deliverable').textContent=item.deliverable; $('evidence-status').textContent=item.evidenceStatus;
+    if($('hardware-information')){
+      const h=item.hardwareInformation; $('hardware-information').hidden=!h;
+      if(h){$('hardware-title').textContent=h.title||'已選五金';$('hardware-description').textContent=h.description||'';
+        $('hardware-rows').replaceChildren(...(Array.isArray(h.items)?h.items:[]).map(row=>{const tr=document.createElement('tr');tr.append(el('th',row.label||''),el('td',row.value||'待定'));return tr;}));
+        $('hardware-limits').textContent=h.limitations||'';
+        $('hardware-sources').replaceChildren(...(Array.isArray(h.sources)?h.sources:[]).map(source=>{const url=source.url||'';return /^https:\/\/www\.(?:ruthex|ettinger)\.de\/[A-Za-z0-9_./%?=&-]+$/.test(url)?link(source.title||'原廠來源',url):el('span','來源網址待核對');}));
+      }
+    }
     list('requirements',item.requirements); list('checks',item.checks); list('limitations',item.limitations);
     $('chapter-nav').replaceChildren(...chapters.map((ch)=>{const url='/challenges/index.html?chapter='+encodeURIComponent(ch.chapterId);const a=link(ch.chapterId.slice(2)+'　'+ch.title,url); if(ch.chapterId===item.chapterId)a.setAttribute('aria-current','page');return a;}));
     const drawing=item.drawing && drawingUrl(item.drawing.path);
     $('drawing-status').textContent=drawing?(item.drawingStatus||'名義題圖，非實體或製造合格證據。')+' 請以標註數值為準；窄視窗可在圖內左右捲動，或點圖放大。':'本題尚無經核對的專屬工程圖；請以題目條件及原教材為準，不以其他零件的圖替代。';
     $('drawing-view').hidden=!drawing;
     if(drawing){$('drawing-link').href=drawing;$('drawing-image').src=drawing;$('drawing-image').alt=item.drawing.title||'本題工程圖';}
+    if($('supplemental-drawings')) $('supplemental-drawings').replaceChildren(...(Array.isArray(item.supplementalDrawings)?item.supplementalDrawings:[]).map((d)=>{const section=document.createElement('section');section.append(el('h3',d.title||'其他題圖'),el('p',d.description||''));const url=drawingUrl(d.path);if(url){const viewport=document.createElement('div');viewport.className='drawing-viewport';viewport.setAttribute('tabindex','0');viewport.setAttribute('aria-label','可左右捲動的工程圖');const a=link('開啟工程圖',url);a.target='_blank';a.rel='noopener';const img=document.createElement('img');img.src=url;img.alt=d.title||'其他工程圖';a.replaceChildren(img);viewport.append(a);section.append(viewport);}return section;}));
     $('hints').replaceChildren(...(item.hints||[]).map((hint,index)=>{const detail=document.createElement('details');detail.append(el('summary',hint.title||'提示 '+String(index+1).padStart(2,'0')),el('p',hint.text||''));const url=safeSection(item.chapterId,hint.section);if(url) detail.append(link('查看對應正式小節 →',url));return detail;}));
     const screenshot=item.screenshot && fileUrl(item.screenshot.path);
     $('screenshot-view').hidden=!screenshot; $('screenshot-missing').hidden=!!screenshot;
@@ -32,6 +42,23 @@
     const animationBlock=[];
     if(animation){const section=document.createElement('section');section.append(el('h3',item.animation.title||'短動畫'),el('p',item.animation.description||''));const a=link('開啟動畫',animation);a.target='_blank';a.rel='noopener';const img=document.createElement('img');img.className='demo';img.src=animation;img.alt=item.animation.title||'獨立 Blender 操作動畫';a.replaceChildren(img);section.append(a,el('p',item.animation.caption||''));for(const record of Array.isArray(item.animation.records)?item.animation.records:[]){const url=fileUrl(record.path);if(url){const r=link((record.label||'原圖')+' →',url);r.target='_blank';r.rel='noopener';section.append(r,el('span',' '));}}animationBlock.push(section);}
     $('extra-demos').replaceChildren(...animationBlock,...(Array.isArray(item.extraDemos)?item.extraDemos:[]).map((demo)=>{const section=document.createElement('section');section.append(el('h3',demo.title||'額外示範'),el('p',demo.description||''));const url=fileUrl(demo.screenshot?.path);if(url){const a=link('開啟 Blender 原圖',url);a.target='_blank';a.rel='noopener';const img=document.createElement('img');img.className='demo';img.src=url;img.alt=demo.screenshot.caption||'獨立 Blender 示範原圖';a.replaceChildren(img);section.append(a,el('p',demo.screenshot.caption||''),el('small','原圖 SHA-256 '+(demo.screenshot.sha256||'未提供')));}const summary=summaryUrl(demo.summaryPath);if(summary){const a=link('查看已去識別的示範摘要 →',summary);a.target='_blank';a.rel='noopener';section.append(el('p',''),a);}return section;}));
+    if($('walkthroughs')) $('walkthroughs').replaceChildren(...(Array.isArray(item.demonstrations)?item.demonstrations:[]).map((demo)=>{
+      const section=document.createElement(demo.historical?'details':'section');
+      section.append(el(demo.historical?'summary':'h3',demo.title||'逐步示範'),el('p',demo.description||''));
+      const start=demo.startingScene, startUrl=sceneUrl(start?.path);
+      if(startUrl){const a=link('開啟起始 Blender 檔案',startUrl);section.append(el('p','起始檔：'+start.path),el('p','SHA-256 '+(start.sha256||'未提供')),a,el('p','此本機證據檔需隨教材另行提供；公開版若未收錄，連結不會提供檔案。請先複製後操作。'));}
+      if(Array.isArray(demo.sourceVersions)&&demo.sourceVersions.length){
+        section.append(el('h4','來源與新檔版本'),el('p','以下為本機證據索引，公開版未必包含原始場景。'));
+        for(const version of demo.sourceVersions) section.append(el('p',(version.label||'檔案')+'：'+(version.path||'')+' · SHA-256 '+(version.sha256||'未提供')));
+      }
+      for(const [index,step] of (Array.isArray(demo.steps)?demo.steps:[]).entries()){
+        const detail=document.createElement('details');detail.className='walkthrough-step';detail.append(el('summary',String(index+1).padStart(2,'0')+' · '+(step.goal||'')),el('p','操作前：'+(step.context||'')));
+        const ol=document.createElement('ol');ol.replaceChildren(...(Array.isArray(step.operation)?step.operation:[]).map((text)=>el('li',text)));detail.append(ol,el('p','成功條件：'+(step.success||'')));
+        const url=fileUrl(step.screenshot?.path);if(url){const a=link('開啟 Blender 原圖',url);a.target='_blank';a.rel='noopener';const img=document.createElement('img');img.className='demo';img.src=url;img.alt='Blender 實際操作：'+(step.goal||'');a.replaceChildren(img);detail.append(a,el('small','原圖 SHA-256 '+(step.screenshot.sha256||'未提供')));}
+        for(const r of Array.isArray(step.readings)?step.readings:[])detail.append(el('p','讀值：'+r));for(const r of Array.isArray(step.limits)?step.limits:[])detail.append(el('p','限制：'+r));section.append(detail);
+      }
+      return section;
+    }));
     $('source-links').replaceChildren(...(item.sourceSteps||[]).map((step)=>{const url=safeSection(step.chapterId,step.sectionId);return url?link((step.label||step.sectionId)+' →',url):el('span','參照尚待核對');}));
     const workspace=item.workspaceId==='engineering-parametric'?'engineering-parametric':item.workspaceLesson;
     $('version-block').hidden=!workspace;

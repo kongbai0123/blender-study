@@ -1,0 +1,693 @@
+{
+  "schemaVersion": 1,
+  "title": "CAD Sketcher 二維牙型：真約束、尺寸改動與還原",
+  "scope": "隔離 CAD Sketcher GUI 示範；不更新學員進度。",
+  "startingScene": {
+    "role": "base",
+    "path": "learning/evidence/parametric/2026-10-28-cad-thread-triangle-trial-v001/demo-files/cad_thread_triangle_060_v001.blend",
+    "sha256": "15959bcb28fbe025e2d9b18292abe2aca44e95b38f4ba0a1ce764aed8d9e6731"
+  },
+  "sourceSummary": "learning/evidence/parametric/2026-10-28-cad-thread-triangle-trial-v001/safe-summary-v001.json",
+  "sourceSummarySha256": "76b221c5630464b472bbfe0ffcea3f9de0b60dff21719ff90e5c2c0793b20e88",
+  "limitations": [
+    "底邊 0.6→0.8 僅為二維截面尺寸的約束示範；0.6 和 0.8 不是 Screw 螺距。",
+    "頂點固定為草圖屬性，兩個 Distance、Equal、Vertical 為真正草圖約束；DoF0 不代表可製造。",
+    "目前是 XY 草圖，未證 XZ、未證 Screw 螺旋、未建立實體、未證 CAD 特徵樹。",
+    "來源 CAD 版本及測試 .blend 尚未完成公開審查；raw runner 含個人 Recent，不可公開。",
+    "非 ISO、未指定材料，未進行列印、量測、試配或強度判定。",
+    "還原版重開實拍顯示 Tool 'sketcher.slvs_select' not found for space 'VIEW_3D'；雖然讀回 solver OKAY、DoF0，其他草圖工具是否正常仍待確認。",
+    "部分截圖側欄斜邊尺寸欄太窄，文字看似「1.24 m」；視窗內標註顯示 1.237 mm，獨立數值約 1.23693156 mm，應展寬欄位或查看完整數值，不可據截字推斷單位。"
+  ],
+  "physicalPrint": null,
+  "physicalMeasurement": null,
+  "physicalFit": null,
+  "qualifiedStrength": null,
+  "qualifiedClearance": null,
+  "steps": [
+    {
+      "id": "11-cad-thread-01",
+      "goal": "建立 XY 草圖",
+      "operation": "在 Blender 啟用 CAD Sketcher，清空示範場景；Ctrl+Shift+A 啟動 Add Sketch，按 Z 選 XY。",
+      "context": "環境啟用、mm 單位和視角由程式準備；以下幾何和約束是 GUI 事件。",
+      "visibleConfirmation": "畫面顯示 Body Sketch 與 Leave Sketch；空草圖的 DoF0 不代表已約束牙型。",
+      "programReadback": {
+        "solver": "OKAY",
+        "dof": 0,
+        "constraints": [],
+        "fixedFlags": [
+          true,
+          true
+        ]
+      },
+      "screenshot": {
+        "path": "learning/evidence/parametric/2026-10-28-cad-thread-triangle-trial-v001/CADTRI-01-blank.png",
+        "sha256": "05a7f3df3c68f96b68cd57a25fddf2be8055b59856976b806a0503c4cc640d94"
+      }
+    },
+    {
+      "id": "11-cad-thread-02",
+      "goal": "畫第一點",
+      "operation": "按 L 啟動 Line，在視窗點選接近 X=4.8、Y=0 的位置。",
+      "context": "起點先以畫面放置，稍後再用點座標編輯為 4.8。",
+      "visibleConfirmation": "程式讀回起點約 X=4.7988 mm。",
+      "programReadback": {
+        "solver": "OKAY",
+        "dof": 0,
+        "constraints": [],
+        "fixedFlags": [
+          true,
+          true,
+          false
+        ]
+      },
+      "screenshot": {
+        "path": "learning/evidence/parametric/2026-10-28-cad-thread-triangle-trial-v001/CADTRI-02-first-point.png",
+        "sha256": "af026044d17475eda39dabb90ae68b912ca67c0543e2475d3a18a93b474ab198"
+      }
+    },
+    {
+      "id": "11-cad-thread-03",
+      "goal": "畫第一邊",
+      "operation": "繼續點選接近 X=6、Y=0.3 的點。",
+      "context": "這是二維草圖座標，尚未成為螺紋。",
+      "visibleConfirmation": "第一條斜邊出現。",
+      "programReadback": {
+        "solver": "OKAY",
+        "dof": 0,
+        "constraints": [],
+        "fixedFlags": [
+          true,
+          true,
+          false,
+          false,
+          false
+        ]
+      },
+      "screenshot": {
+        "path": "learning/evidence/parametric/2026-10-28-cad-thread-triangle-trial-v001/CADTRI-03-second-point.png",
+        "sha256": "17b3af52f12b3565c68084ac6bdef32f5e0cc2a94a20cf01655c4764ba7a5a3b"
+      }
+    },
+    {
+      "id": "11-cad-thread-04",
+      "goal": "畫第二邊",
+      "operation": "繼續點選接近 X=4.8、Y=0.6 的點。",
+      "context": "實際落點以畫面和後續約束為準。",
+      "visibleConfirmation": "第二條斜邊出現。",
+      "programReadback": {
+        "solver": "OKAY",
+        "dof": 0,
+        "constraints": [],
+        "fixedFlags": [
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "screenshot": {
+        "path": "learning/evidence/parametric/2026-10-28-cad-thread-triangle-trial-v001/CADTRI-04-third-point.png",
+        "sha256": "8e184ef6cbe7d71839b45cd9c7b1af78ba228f433822980d123170a98eac3a9a"
+      }
+    },
+    {
+      "id": "11-cad-thread-05",
+      "goal": "閉合三角輪廓",
+      "operation": "點回第一點，按 Esc 結束 Line。",
+      "context": "點回已有頂點形成連續邊，直立邊自動產生 Vertical。",
+      "visibleConfirmation": "輪廓閉合，求解器 OKAY、自由度 5。",
+      "programReadback": {
+        "solver": "OKAY",
+        "dof": 5,
+        "constraints": [
+          {
+            "type": "VERTICAL",
+            "name": "Vertical",
+            "value": null,
+            "uid": "95817b0205a37a7b"
+          }
+        ],
+        "fixedFlags": [
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "screenshot": {
+        "path": "learning/evidence/parametric/2026-10-28-cad-thread-triangle-trial-v001/CADTRI-05-triangle.png",
+        "sha256": "3aaa3b6e1ec4ebb08413fdc86f658a4953ae7e7e845f175da59ea758c3c3e229"
+      }
+    },
+    {
+      "id": "11-cad-thread-06",
+      "goal": "放置基邊尺寸",
+      "operation": "按 D，在直立邊中點點選，移動並點選標註位置，按 Esc 結束。",
+      "context": "此版本 Dimension 先按當前幾何建立驅動值；不要在放置階段盲打數字。",
+      "visibleConfirmation": "顯示約 0.600 mm 的 Distance，自由度 4。",
+      "programReadback": {
+        "solver": "OKAY",
+        "dof": 4,
+        "constraints": [
+          {
+            "type": "DISTANCE",
+            "name": "Distance",
+            "value": 0.6000000238418579,
+            "uid": "9f59a0b3ccf4b996"
+          },
+          {
+            "type": "VERTICAL",
+            "name": "Vertical",
+            "value": null,
+            "uid": "95817b0205a37a7b"
+          }
+        ],
+        "fixedFlags": [
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "screenshot": {
+        "path": "learning/evidence/parametric/2026-10-28-cad-thread-triangle-trial-v001/CADTRI-07-base-dimension.png",
+        "sha256": "dc111731ad6e41cd115b00d7e47bb452eb1ca73e2650c45858022d4e4d20c764"
+      }
+    },
+    {
+      "id": "11-cad-thread-07",
+      "goal": "放置斜邊尺寸",
+      "operation": "按 D，點選下方斜邊，移動並點選標註位置，按 Esc。",
+      "context": "斜邊真實長度約 1.2369316 mm，畫面顯示經四捨五入。 側欄輸入框過窄可能截斷單位，畫面尺寸標註為 1.237 mm，讀回約 1.23693156 mm。",
+      "visibleConfirmation": "兩個 Distance、自動 Vertical，求解器 OKAY、自由度 3。",
+      "programReadback": {
+        "solver": "OKAY",
+        "dof": 3,
+        "constraints": [
+          {
+            "type": "DISTANCE",
+            "name": "Distance",
+            "value": 0.6000000238418579,
+            "uid": "9f59a0b3ccf4b996"
+          },
+          {
+            "type": "DISTANCE",
+            "name": "Distance",
+            "value": 1.236931562423706,
+            "uid": "733e0136a4433c1e"
+          },
+          {
+            "type": "VERTICAL",
+            "name": "Vertical",
+            "value": null,
+            "uid": "95817b0205a37a7b"
+          }
+        ],
+        "fixedFlags": [
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "screenshot": {
+        "path": "learning/evidence/parametric/2026-10-28-cad-thread-triangle-trial-v001/CADTRI-08-slope-dimension.png",
+        "sha256": "bceb182640aea5126c988e02dc5d0b75c808a4f13e7ca118eb831a2a1b93449c"
+      }
+    },
+    {
+      "id": "11-cad-thread-08",
+      "goal": "讓兩斜邊相等",
+      "operation": "按 Shift+E，依序點上下兩斜邊，再按 Esc。",
+      "context": "Equal 是幾何約束，與尺寸標註不同。",
+      "visibleConfirmation": "畫面出現等長符號，讀回 Equal，自由度 2。",
+      "programReadback": {
+        "solver": "OKAY",
+        "dof": 2,
+        "constraints": [
+          {
+            "type": "EQUAL",
+            "name": "Equal",
+            "value": null,
+            "uid": "f7fc2478b7cbe132"
+          },
+          {
+            "type": "DISTANCE",
+            "name": "Distance",
+            "value": 0.6000000238418579,
+            "uid": "9f59a0b3ccf4b996"
+          },
+          {
+            "type": "DISTANCE",
+            "name": "Distance",
+            "value": 1.236931562423706,
+            "uid": "733e0136a4433c1e"
+          },
+          {
+            "type": "VERTICAL",
+            "name": "Vertical",
+            "value": null,
+            "uid": "95817b0205a37a7b"
+          }
+        ],
+        "fixedFlags": [
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "screenshot": {
+        "path": "learning/evidence/parametric/2026-10-28-cad-thread-triangle-trial-v001/CADTRI-09-equal-sides.png",
+        "sha256": "21b07998ba3cc168fb87ced0de4e6284d8e8ce624d7b7ef0ec1521bff8e4aa7d"
+      }
+    },
+    {
+      "id": "11-cad-thread-09",
+      "goal": "選取定位頂點",
+      "operation": "點選左下角頂點，再按滑鼠右鍵開啟點的內容選單。",
+      "context": "不同視窗大小須依實際頂點位置操作。",
+      "visibleConfirmation": "可看到點座標和 Fixed 選項。",
+      "programReadback": {
+        "solver": "OKAY",
+        "dof": 2,
+        "constraints": [
+          {
+            "type": "EQUAL",
+            "name": "Equal",
+            "value": null,
+            "uid": "f7fc2478b7cbe132"
+          },
+          {
+            "type": "DISTANCE",
+            "name": "Distance",
+            "value": 0.6000000238418579,
+            "uid": "9f59a0b3ccf4b996"
+          },
+          {
+            "type": "DISTANCE",
+            "name": "Distance",
+            "value": 1.236931562423706,
+            "uid": "733e0136a4433c1e"
+          },
+          {
+            "type": "VERTICAL",
+            "name": "Vertical",
+            "value": null,
+            "uid": "95817b0205a37a7b"
+          }
+        ],
+        "fixedFlags": [
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "screenshot": {
+        "path": "learning/evidence/parametric/2026-10-28-cad-thread-triangle-trial-v001/CADTRI-11-anchor-menu.png",
+        "sha256": "ebace5a458f940400d178bc970770431856bc642e9287e79cb6836d91ebf67a1"
+      }
+    },
+    {
+      "id": "11-cad-thread-10",
+      "goal": "設定定位點位置",
+      "operation": "在點選單的 X 欄輸入 4.8 並確認。",
+      "context": "Y 接近 0；此為定位點座標，不是直接輸入螺紋公差。",
+      "visibleConfirmation": "點的 X 讀回約 4.8 mm。",
+      "programReadback": {
+        "solver": "OKAY",
+        "dof": 2,
+        "constraints": [
+          {
+            "type": "EQUAL",
+            "name": "Equal",
+            "value": null,
+            "uid": "f7fc2478b7cbe132"
+          },
+          {
+            "type": "DISTANCE",
+            "name": "Distance",
+            "value": 0.6000000238418579,
+            "uid": "9f59a0b3ccf4b996"
+          },
+          {
+            "type": "DISTANCE",
+            "name": "Distance",
+            "value": 1.236931562423706,
+            "uid": "733e0136a4433c1e"
+          },
+          {
+            "type": "VERTICAL",
+            "name": "Vertical",
+            "value": null,
+            "uid": "95817b0205a37a7b"
+          }
+        ],
+        "fixedFlags": [
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "screenshot": {
+        "path": "learning/evidence/parametric/2026-10-28-cad-thread-triangle-trial-v001/CADTRI-12-anchor-coordinate.png",
+        "sha256": "4aff01fd49479501d84e1ff5542282fa236868b36c859290207ae540c8b7bbf0"
+      }
+    },
+    {
+      "id": "11-cad-thread-11",
+      "goal": "固定定位點",
+      "operation": "再開該點選單，點選 Fixed；稍候或重新開選單讓求解狀態更新。",
+      "context": "Fixed 是點屬性；它固定平移自由度，不是尺寸約束。",
+      "visibleConfirmation": "顯示 Fixed 勾選、Fully defined；求解器 OKAY、DoF0。",
+      "programReadback": {
+        "solver": "OKAY",
+        "dof": 0,
+        "constraints": [
+          {
+            "type": "EQUAL",
+            "name": "Equal",
+            "value": null,
+            "uid": "f7fc2478b7cbe132"
+          },
+          {
+            "type": "DISTANCE",
+            "name": "Distance",
+            "value": 0.6000000238418579,
+            "uid": "9f59a0b3ccf4b996"
+          },
+          {
+            "type": "DISTANCE",
+            "name": "Distance",
+            "value": 1.236931562423706,
+            "uid": "733e0136a4433c1e"
+          },
+          {
+            "type": "VERTICAL",
+            "name": "Vertical",
+            "value": null,
+            "uid": "95817b0205a37a7b"
+          }
+        ],
+        "fixedFlags": [
+          true,
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "screenshot": {
+        "path": "learning/evidence/parametric/2026-10-28-cad-thread-triangle-trial-v001/CADTRI-15-fixed-reopened.png",
+        "sha256": "61a54c9ab679d7aa5ecb153ff37262788233bdd2b614e8c4eb8fde55d54a65f8"
+      }
+    },
+    {
+      "id": "11-cad-thread-12",
+      "goal": "另存 0.6 mm 版本",
+      "operation": "以 Save As 另存草圖版本。",
+      "context": "示範的檔案對話路徑和檔名由程式填寫；保留原檔。",
+      "visibleConfirmation": "基邊約 0.600、尖點 X≈6.000，兩個斜邊等長。",
+      "programReadback": {
+        "solver": "OKAY",
+        "dof": 0,
+        "constraints": [
+          {
+            "type": "EQUAL",
+            "name": "Equal",
+            "value": null,
+            "uid": "f7fc2478b7cbe132"
+          },
+          {
+            "type": "DISTANCE",
+            "name": "Distance",
+            "value": 0.6000000238418579,
+            "uid": "9f59a0b3ccf4b996"
+          },
+          {
+            "type": "DISTANCE",
+            "name": "Distance",
+            "value": 1.236931562423706,
+            "uid": "733e0136a4433c1e"
+          },
+          {
+            "type": "VERTICAL",
+            "name": "Vertical",
+            "value": null,
+            "uid": "95817b0205a37a7b"
+          }
+        ],
+        "fixedFlags": [
+          true,
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "screenshot": {
+        "path": "learning/evidence/parametric/2026-10-28-cad-thread-triangle-trial-v001/CADTRI-16-saved-060.png",
+        "sha256": "ca9f07460a7ed7d5390b16e381f915277165dcaec9d450858f07027d9add08ca"
+      }
+    },
+    {
+      "id": "11-cad-thread-13",
+      "goal": "改變基邊驅動尺寸",
+      "operation": "在 Sketcher 側欄 Constraints 的第一個 Distance 欄輸入 0.8 mm 並確認。",
+      "context": "保持斜邊長及 Equal；0.6／0.8 是截面基邊，不是螺距。",
+      "visibleConfirmation": "基邊變 0.8，尖點 X 約由 6.000 變為 5.97047，DoF0。",
+      "programReadback": {
+        "solver": "OKAY",
+        "dof": 0,
+        "constraints": [
+          {
+            "type": "EQUAL",
+            "name": "Equal",
+            "value": null,
+            "uid": "f7fc2478b7cbe132"
+          },
+          {
+            "type": "DISTANCE",
+            "name": "Distance",
+            "value": 0.800000011920929,
+            "uid": "9f59a0b3ccf4b996"
+          },
+          {
+            "type": "DISTANCE",
+            "name": "Distance",
+            "value": 1.236931562423706,
+            "uid": "733e0136a4433c1e"
+          },
+          {
+            "type": "VERTICAL",
+            "name": "Vertical",
+            "value": null,
+            "uid": "95817b0205a37a7b"
+          }
+        ],
+        "fixedFlags": [
+          true,
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "screenshot": {
+        "path": "learning/evidence/parametric/2026-10-28-cad-thread-triangle-trial-v001/CADTRI-17-changed-080.png",
+        "sha256": "86646a25cb5cc53417c6bc1075b6a344eb40d3292a3f7b8193ed3a1217591474"
+      }
+    },
+    {
+      "id": "11-cad-thread-14",
+      "goal": "另存並重開 0.8 mm 版本",
+      "operation": "Save As 另存，重新開啟此版本。",
+      "context": "這是不同檔案版本，不覆蓋原始 0.6。",
+      "visibleConfirmation": "重開後讀回 0.8、Equal、Vertical、兩個 Distance、DoF0。",
+      "programReadback": {
+        "solver": "OKAY",
+        "dof": 0,
+        "constraints": [
+          {
+            "type": "EQUAL",
+            "name": "Equal",
+            "value": null,
+            "uid": "f7fc2478b7cbe132"
+          },
+          {
+            "type": "DISTANCE",
+            "name": "Distance",
+            "value": 0.800000011920929,
+            "uid": "9f59a0b3ccf4b996"
+          },
+          {
+            "type": "DISTANCE",
+            "name": "Distance",
+            "value": 1.236931562423706,
+            "uid": "733e0136a4433c1e"
+          },
+          {
+            "type": "VERTICAL",
+            "name": "Vertical",
+            "value": null,
+            "uid": "95817b0205a37a7b"
+          }
+        ],
+        "fixedFlags": [
+          true,
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "screenshot": {
+        "path": "learning/evidence/parametric/2026-10-28-cad-thread-triangle-trial-v001/CADTRI-19-reopened-080.png",
+        "sha256": "e63e05ecc21097c86d56e93572ecf21c89b1ad1ca5a4e9e52bf7665db9745739"
+      }
+    },
+    {
+      "id": "11-cad-thread-15",
+      "goal": "還原基邊尺寸",
+      "operation": "在另一個獨立視窗開啟 0.8 版本副本，把第一個 Distance 改回 0.6 mm。",
+      "context": "示範只改驅動尺寸，保留固定點和等長。",
+      "visibleConfirmation": "尖點 X 恢復約 6.000、基邊 0.6，求解器 OKAY、DoF0。",
+      "programReadback": {
+        "solver": "OKAY",
+        "dof": 0,
+        "constraints": [
+          {
+            "type": "EQUAL",
+            "name": "Equal",
+            "value": null,
+            "uid": "f7fc2478b7cbe132"
+          },
+          {
+            "type": "DISTANCE",
+            "name": "Distance",
+            "value": 0.6000000238418579,
+            "uid": "9f59a0b3ccf4b996"
+          },
+          {
+            "type": "DISTANCE",
+            "name": "Distance",
+            "value": 1.236931562423706,
+            "uid": "733e0136a4433c1e"
+          },
+          {
+            "type": "VERTICAL",
+            "name": "Vertical",
+            "value": null,
+            "uid": "95817b0205a37a7b"
+          }
+        ],
+        "fixedFlags": [
+          true,
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "screenshot": {
+        "path": "learning/evidence/parametric/2026-10-28-cad-thread-triangle-restore-v001/CADREST-02-restored-060.png",
+        "sha256": "04a289d2cd797a8448a82c7ae2550f8dfa87c730cce1a491d02ba868ebb983bf"
+      }
+    },
+    {
+      "id": "11-cad-thread-16",
+      "goal": "另存並重開還原版",
+      "operation": "Save As 儲存還原版，再重新開啟。",
+      "context": "版本檔未經公開隱私審查，僅可本機跟做。 該張重開畫面底部出現 Tool 'sketcher.slvs_select' not found for space 'VIEW_3D'；求解值正常不代表繪圖工具正常，遇到時先核對工具。",
+      "visibleConfirmation": "獨立重開再次讀回 Equal、Vertical、兩個 Distance 與 DoF0。",
+      "programReadback": {
+        "solver": "OKAY",
+        "dof": 0,
+        "constraints": [
+          {
+            "type": "EQUAL",
+            "name": "Equal",
+            "value": null,
+            "uid": "f7fc2478b7cbe132"
+          },
+          {
+            "type": "DISTANCE",
+            "name": "Distance",
+            "value": 0.6000000238418579,
+            "uid": "9f59a0b3ccf4b996"
+          },
+          {
+            "type": "DISTANCE",
+            "name": "Distance",
+            "value": 1.236931562423706,
+            "uid": "733e0136a4433c1e"
+          },
+          {
+            "type": "VERTICAL",
+            "name": "Vertical",
+            "value": null,
+            "uid": "95817b0205a37a7b"
+          }
+        ],
+        "fixedFlags": [
+          true,
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "screenshot": {
+        "path": "learning/evidence/parametric/2026-10-28-cad-thread-triangle-restore-v001/CADREST-04-reopened.png",
+        "sha256": "7c5c13b458f17d71b03d819c167c1516c25cb3c6ca3789ac7260b8559dac479d"
+      }
+    }
+  ]
+}

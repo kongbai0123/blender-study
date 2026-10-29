@@ -1,0 +1,71 @@
+{
+  "kind": "gui-driver-intermediate-and-stale-geometry-review",
+  "paste": {
+    "outerY": [
+      0,
+      40
+    ],
+    "cutterY": [
+      2,
+      42
+    ],
+    "constraintY": 40,
+    "description": "貼上時切割體超出外框，暫時無效"
+  },
+  "formula": {
+    "outerY": [
+      0,
+      40
+    ],
+    "cutterY": [
+      2,
+      38
+    ],
+    "constraintY": 36
+  },
+  "beforeUpdate": {
+    "outerX": [
+      0,
+      80
+    ],
+    "outerY": [
+      0,
+      50
+    ],
+    "cutterX": [
+      2,
+      68
+    ],
+    "cutterY": [
+      2,
+      38
+    ],
+    "driverValues": [
+      76,
+      46
+    ],
+    "solver": "OKAY",
+    "dof": 0
+  },
+  "images": [
+    {
+      "path": "learning/evidence/parametric/2026-10-27-manual-box-y-driver-v002/Y-07-pasted.png",
+      "sha256": "6ab19c3477d9eb53846d8a5155329a0b4887793e8dc3030cc3d3c230c612a00e"
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-manual-box-y-driver-v002/Y-12-formula.png",
+      "sha256": "6c81a492e2a4ed6f3829dd70a58d633c1b8d5edee4415d8ef3c3d0757d7d987d"
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-manual-box-xy-verify-v001/VERIFY-07-inner-before-solve.png",
+      "sha256": "950ef1a4047ebea00e493f41f3d63d03509ece8de427ddf1d7935bcd6247ea4f"
+    }
+  ],
+  "limitations": [
+    "以上為程式讀回界限，並非實體壁厚或配合。",
+    "Fully defined 不保證外部 Driver 修改後幾何已更新。",
+    "此階段暫勿當完成品匯出或列印；公式及手動更新完成後核對並另存。",
+    "字樣重疊，圖像不能直接量尺寸。",
+    "尚無實際列印和試配合格值。"
+  ]
+}

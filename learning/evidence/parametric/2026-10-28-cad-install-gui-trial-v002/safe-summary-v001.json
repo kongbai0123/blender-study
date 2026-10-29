@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "kind": "isolated_blender_gui_demonstration",
+  "description": "已核對的官方 ZIP 經獨立 Blender GUI 安裝至隔離擴充套件目錄；檔案欄位由程式填寫。",
+  "blenderVersion": "5.2.1 LTS",
+  "records": [
+    {
+      "action": "確認 Install from Disk 選單",
+      "image": "learning/evidence/parametric/2026-10-28-cad-install-gui-trial-v002/CAD-INSTALL-01-menu.png",
+      "sha256": "c5f7b5a9ae7006a46b1d96f7eb2acd75b5e3daa96e34e0dff251a64a88e9e9ee",
+      "observed": {
+        "activeSection": "EXTENSIONS",
+        "addons": [],
+        "addonCheck": null,
+        "zipSha256": "b456070e9d1cec7fea85494b7afbbae0a543e9c2381cc40349a763d2de038a59",
+        "isolatedExtensions": true,
+        "sidebarOpen": false
+      }
+    },
+    {
+      "action": "確認安裝後隔離 Preferences 狀態",
+      "image": "learning/evidence/parametric/2026-10-28-cad-install-gui-trial-v002/CAD-INSTALL-02-after-install.png",
+      "sha256": "786332f525d0113580ea7167a43cbed2e8ac395ddb2a2ac7ca90e0f5f1ce7afb",
+      "observed": {
+        "activeSection": "EXTENSIONS",
+        "addons": [
+          "bl_ext.user_default.CAD_Sketcher"
+        ],
+        "addonCheck": [
+          true,
+          true
+        ],
+        "zipSha256": "b456070e9d1cec7fea85494b7afbbae0a543e9c2381cc40349a763d2de038a59",
+        "isolatedExtensions": true,
+        "sidebarOpen": false
+      }
+    },
+    {
+      "action": "確認 Add-ons 中 CAD Sketcher 已啟用",
+      "image": "learning/evidence/parametric/2026-10-28-cad-install-gui-trial-v002/CAD-INSTALL-03-addons.png",
+      "sha256": "e93c4600306dfef79b09260f790ad3163967fc8eee1c0eee517108acf64e7ec6",
+      "observed": {
+        "activeSection": "ADDONS",
+        "addons": [
+          "bl_ext.user_default.CAD_Sketcher"
+        ],
+        "addonCheck": [
+          true,
+          true
+        ],
+        "zipSha256": "b456070e9d1cec7fea85494b7afbbae0a543e9c2381cc40349a763d2de038a59",
+        "isolatedExtensions": true,
+        "sidebarOpen": false
+      }
+    },
+    {
+      "action": "開啟 3D View 側欄供核對 Sketcher 分頁",
+      "image": "learning/evidence/parametric/2026-10-28-cad-install-gui-trial-v002/CAD-INSTALL-04-sidebar.png",
+      "sha256": "8b7fa61b0c51b4344b9a946103113f954d00fd8f0ba4da84d63571f31e9e37c7",
+      "observed": {
+        "activeSection": "ADDONS",
+        "addons": [
+          "bl_ext.user_default.CAD_Sketcher"
+        ],
+        "addonCheck": [
+          true,
+          true
+        ],
+        "zipSha256": "b456070e9d1cec7fea85494b7afbbae0a543e9c2381cc40349a763d2de038a59",
+        "isolatedExtensions": true,
+        "sidebarOpen": true
+      }
+    }
+  ],
+  "limitations": [
+    "實際視窗示範，不代表學員完成；不代表實體製造或配合合格。",
+    "原始 runner-status 可能包含本機路徑或 Recent 清單，不公開。",
+    "隔離安裝不表示學員自己的 Blender 已安裝；擴充套件 ZIP 不隨教材發布。"
+  ],
+  "source": {
+    "release": "https://github.com/hlorus/CAD_Sketcher/releases/tag/v0.32.1",
+    "filename": "CAD_Sketcher-0.32.1-windows_x64.zip",
+    "bytes": 1283581,
+    "sha256": "b456070e9d1cec7fea85494b7afbbae0a543e9c2381cc40349a763d2de038a59"
+  }
+}

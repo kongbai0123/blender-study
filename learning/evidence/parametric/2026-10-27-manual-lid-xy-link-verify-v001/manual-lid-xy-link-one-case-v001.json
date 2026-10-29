@@ -1,0 +1,1137 @@
+{
+  "kind": "gui-manual-box-lid-shape-driver-one-case",
+  "method": "獨立 Blender 5.2.1 / CAD Sketcher 0.32.1。GUI 選固定上蓋的形狀鍵正側各12頂點分別移10mm，設定相對鍵值範圍−2..2，GUI 複製外框尺寸 driver 給上蓋 Key1/Key2；輸入 X/10−8、Y/10−5。原生 GUI 改外框80×50→90×60，進內腔草圖按更新，另存重開；檔案瀏覽器路徑程式填入，程式讀數值。",
+  "phases": {
+    "opened": {
+      "shapeKeys": [
+        {
+          "name": "Basis",
+          "value": 1.0,
+          "min": 0.0,
+          "max": 1.0
+        },
+        {
+          "name": "Key 1",
+          "value": 0.0,
+          "min": -2.0,
+          "max": 2.0
+        },
+        {
+          "name": "Key 2",
+          "value": 0.0,
+          "min": -2.0,
+          "max": 2.0
+        }
+      ],
+      "shapeDrivers": [
+        {
+          "path": "key_blocks[\"Key 1\"].value",
+          "expression": "slvs_c_b596b36138076155/10-8",
+          "valid": true,
+          "variables": [
+            {
+              "name": "slvs_c_b596b36138076155",
+              "targets": [
+                {
+                  "id": "Scene",
+                  "path": "[\"slvs:c:b596b36138076155\"]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "path": "key_blocks[\"Key 2\"].value",
+          "expression": "slvs_c_854e8777cfe2608d/10-5",
+          "valid": true,
+          "variables": [
+            {
+              "name": "slvs_c_854e8777cfe2608d",
+              "targets": [
+                {
+                  "id": "Scene",
+                  "path": "[\"slvs:c:854e8777cfe2608d\"]"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "meshReadback": {
+        "Body": {
+          "vertices": 16,
+          "faces": 12,
+          "nonManifold": 0,
+          "levels": {
+            "0.0": {
+              "x": [
+                0.0,
+                80.0
+              ],
+              "y": [
+                0.0,
+                50.0
+              ]
+            },
+            "30.0": {
+              "x": [
+                0.0,
+                2.0,
+                78.0,
+                80.0
+              ],
+              "y": [
+                0.0,
+                2.0,
+                48.0,
+                50.0
+              ]
+            },
+            "2.0": {
+              "x": [
+                2.0,
+                78.0
+              ],
+              "y": [
+                2.0,
+                48.0
+              ]
+            }
+          }
+        },
+        "Body.001": {
+          "vertices": 8,
+          "faces": 6,
+          "nonManifold": 0,
+          "levels": {
+            "30.0": {
+              "x": [
+                2.0,
+                78.0
+              ],
+              "y": [
+                2.0,
+                48.0
+              ]
+            },
+            "2.0": {
+              "x": [
+                2.0,
+                78.0
+              ],
+              "y": [
+                2.0,
+                48.0
+              ]
+            }
+          }
+        },
+        "Cube": {
+          "vertices": 24,
+          "faces": 22,
+          "nonManifold": 0,
+          "levels": {
+            "30.0": {
+              "x": [
+                0.0005,
+                2.2005,
+                4.2005,
+                75.7995,
+                77.7995,
+                79.9995
+              ],
+              "y": [
+                0.0003,
+                2.2003,
+                4.2003,
+                45.7997,
+                47.7997,
+                49.9997
+              ]
+            },
+            "32.0": {
+              "x": [
+                0.0005,
+                79.9995
+              ],
+              "y": [
+                0.0003,
+                49.9997
+              ]
+            },
+            "26.0": {
+              "x": [
+                2.2005,
+                4.2005,
+                75.7995,
+                77.7995
+              ],
+              "y": [
+                2.2003,
+                4.2003,
+                45.7997,
+                47.7997
+              ]
+            }
+          }
+        }
+      }
+    },
+    "outer-90x60": {
+      "shapeKeys": [
+        {
+          "name": "Basis",
+          "value": 1.0,
+          "min": 0.0,
+          "max": 1.0
+        },
+        {
+          "name": "Key 1",
+          "value": 1.0,
+          "min": -2.0,
+          "max": 2.0
+        },
+        {
+          "name": "Key 2",
+          "value": 1.0,
+          "min": -2.0,
+          "max": 2.0
+        }
+      ],
+      "shapeDrivers": [
+        {
+          "path": "key_blocks[\"Key 1\"].value",
+          "expression": "slvs_c_b596b36138076155/10-8",
+          "valid": true,
+          "variables": [
+            {
+              "name": "slvs_c_b596b36138076155",
+              "targets": [
+                {
+                  "id": "Scene",
+                  "path": "[\"slvs:c:b596b36138076155\"]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "path": "key_blocks[\"Key 2\"].value",
+          "expression": "slvs_c_854e8777cfe2608d/10-5",
+          "valid": true,
+          "variables": [
+            {
+              "name": "slvs_c_854e8777cfe2608d",
+              "targets": [
+                {
+                  "id": "Scene",
+                  "path": "[\"slvs:c:854e8777cfe2608d\"]"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "meshReadback": {
+        "Body": {
+          "vertices": 16,
+          "faces": 12,
+          "nonManifold": 0,
+          "levels": {
+            "0.0": {
+              "x": [
+                0.0,
+                90.0
+              ],
+              "y": [
+                0.0,
+                60.0
+              ]
+            },
+            "30.0": {
+              "x": [
+                0.0,
+                2.0,
+                78.0,
+                90.0
+              ],
+              "y": [
+                0.0,
+                2.0,
+                48.0,
+                60.0
+              ]
+            },
+            "2.0": {
+              "x": [
+                2.0,
+                78.0
+              ],
+              "y": [
+                2.0,
+                48.0
+              ]
+            }
+          }
+        },
+        "Body.001": {
+          "vertices": 8,
+          "faces": 6,
+          "nonManifold": 0,
+          "levels": {
+            "30.0": {
+              "x": [
+                2.0,
+                78.0
+              ],
+              "y": [
+                2.0,
+                48.0
+              ]
+            },
+            "2.0": {
+              "x": [
+                2.0,
+                78.0
+              ],
+              "y": [
+                2.0,
+                48.0
+              ]
+            }
+          }
+        },
+        "Cube": {
+          "vertices": 24,
+          "faces": 22,
+          "nonManifold": 0,
+          "levels": {
+            "30.0": {
+              "x": [
+                0.0005,
+                2.2005,
+                4.2005,
+                85.7995,
+                87.7995,
+                89.9995
+              ],
+              "y": [
+                0.0003,
+                2.2003,
+                4.2003,
+                55.7997,
+                57.7997,
+                59.9997
+              ]
+            },
+            "32.0": {
+              "x": [
+                0.0005,
+                89.9995
+              ],
+              "y": [
+                0.0003,
+                59.9997
+              ]
+            },
+            "26.0": {
+              "x": [
+                2.2005,
+                4.2005,
+                85.7995,
+                87.7995
+              ],
+              "y": [
+                2.2003,
+                4.2003,
+                55.7997,
+                57.7997
+              ]
+            }
+          }
+        }
+      }
+    },
+    "inner-before-solve": {
+      "shapeKeys": [
+        {
+          "name": "Basis",
+          "value": 1.0,
+          "min": 0.0,
+          "max": 1.0
+        },
+        {
+          "name": "Key 1",
+          "value": 1.0,
+          "min": -2.0,
+          "max": 2.0
+        },
+        {
+          "name": "Key 2",
+          "value": 1.0,
+          "min": -2.0,
+          "max": 2.0
+        }
+      ],
+      "shapeDrivers": [
+        {
+          "path": "key_blocks[\"Key 1\"].value",
+          "expression": "slvs_c_b596b36138076155/10-8",
+          "valid": true,
+          "variables": [
+            {
+              "name": "slvs_c_b596b36138076155",
+              "targets": [
+                {
+                  "id": "Scene",
+                  "path": "[\"slvs:c:b596b36138076155\"]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "path": "key_blocks[\"Key 2\"].value",
+          "expression": "slvs_c_854e8777cfe2608d/10-5",
+          "valid": true,
+          "variables": [
+            {
+              "name": "slvs_c_854e8777cfe2608d",
+              "targets": [
+                {
+                  "id": "Scene",
+                  "path": "[\"slvs:c:854e8777cfe2608d\"]"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "meshReadback": {
+        "Body": {
+          "vertices": 16,
+          "faces": 12,
+          "nonManifold": 0,
+          "levels": {
+            "0.0": {
+              "x": [
+                0.0,
+                90.0
+              ],
+              "y": [
+                0.0,
+                60.0
+              ]
+            },
+            "30.0": {
+              "x": [
+                0.0,
+                2.0,
+                78.0,
+                90.0
+              ],
+              "y": [
+                0.0,
+                2.0,
+                48.0,
+                60.0
+              ]
+            },
+            "2.0": {
+              "x": [
+                2.0,
+                78.0
+              ],
+              "y": [
+                2.0,
+                48.0
+              ]
+            }
+          }
+        },
+        "Body.001": {
+          "vertices": 8,
+          "faces": 6,
+          "nonManifold": 0,
+          "levels": {
+            "30.0": {
+              "x": [
+                2.0,
+                78.0
+              ],
+              "y": [
+                2.0,
+                48.0
+              ]
+            },
+            "2.0": {
+              "x": [
+                2.0,
+                78.0
+              ],
+              "y": [
+                2.0,
+                48.0
+              ]
+            }
+          }
+        },
+        "Cube": {
+          "vertices": 24,
+          "faces": 22,
+          "nonManifold": 0,
+          "levels": {
+            "30.0": {
+              "x": [
+                0.0005,
+                2.2005,
+                4.2005,
+                85.7995,
+                87.7995,
+                89.9995
+              ],
+              "y": [
+                0.0003,
+                2.2003,
+                4.2003,
+                55.7997,
+                57.7997,
+                59.9997
+              ]
+            },
+            "32.0": {
+              "x": [
+                0.0005,
+                89.9995
+              ],
+              "y": [
+                0.0003,
+                59.9997
+              ]
+            },
+            "26.0": {
+              "x": [
+                2.2005,
+                4.2005,
+                85.7995,
+                87.7995
+              ],
+              "y": [
+                2.2003,
+                4.2003,
+                55.7997,
+                57.7997
+              ]
+            }
+          }
+        }
+      }
+    },
+    "inner-after-solve": {
+      "shapeKeys": [
+        {
+          "name": "Basis",
+          "value": 1.0,
+          "min": 0.0,
+          "max": 1.0
+        },
+        {
+          "name": "Key 1",
+          "value": 1.0,
+          "min": -2.0,
+          "max": 2.0
+        },
+        {
+          "name": "Key 2",
+          "value": 1.0,
+          "min": -2.0,
+          "max": 2.0
+        }
+      ],
+      "shapeDrivers": [
+        {
+          "path": "key_blocks[\"Key 1\"].value",
+          "expression": "slvs_c_b596b36138076155/10-8",
+          "valid": true,
+          "variables": [
+            {
+              "name": "slvs_c_b596b36138076155",
+              "targets": [
+                {
+                  "id": "Scene",
+                  "path": "[\"slvs:c:b596b36138076155\"]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "path": "key_blocks[\"Key 2\"].value",
+          "expression": "slvs_c_854e8777cfe2608d/10-5",
+          "valid": true,
+          "variables": [
+            {
+              "name": "slvs_c_854e8777cfe2608d",
+              "targets": [
+                {
+                  "id": "Scene",
+                  "path": "[\"slvs:c:854e8777cfe2608d\"]"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "meshReadback": {
+        "Body": {
+          "vertices": 16,
+          "faces": 12,
+          "nonManifold": 0,
+          "levels": {
+            "0.0": {
+              "x": [
+                0.0,
+                90.0
+              ],
+              "y": [
+                0.0,
+                60.0
+              ]
+            },
+            "30.0": {
+              "x": [
+                0.0,
+                2.0,
+                88.0,
+                90.0
+              ],
+              "y": [
+                0.0,
+                2.0,
+                58.0,
+                60.0
+              ]
+            },
+            "2.0": {
+              "x": [
+                2.0,
+                88.0
+              ],
+              "y": [
+                2.0,
+                58.0
+              ]
+            }
+          }
+        },
+        "Body.001": {
+          "vertices": 8,
+          "faces": 6,
+          "nonManifold": 0,
+          "levels": {
+            "30.0": {
+              "x": [
+                2.0,
+                88.0
+              ],
+              "y": [
+                2.0,
+                58.0
+              ]
+            },
+            "2.0": {
+              "x": [
+                2.0,
+                88.0
+              ],
+              "y": [
+                2.0,
+                58.0
+              ]
+            }
+          }
+        },
+        "Cube": {
+          "vertices": 24,
+          "faces": 22,
+          "nonManifold": 0,
+          "levels": {
+            "30.0": {
+              "x": [
+                0.0005,
+                2.2005,
+                4.2005,
+                85.7995,
+                87.7995,
+                89.9995
+              ],
+              "y": [
+                0.0003,
+                2.2003,
+                4.2003,
+                55.7997,
+                57.7997,
+                59.9997
+              ]
+            },
+            "32.0": {
+              "x": [
+                0.0005,
+                89.9995
+              ],
+              "y": [
+                0.0003,
+                59.9997
+              ]
+            },
+            "26.0": {
+              "x": [
+                2.2005,
+                4.2005,
+                85.7995,
+                87.7995
+              ],
+              "y": [
+                2.2003,
+                4.2003,
+                55.7997,
+                57.7997
+              ]
+            }
+          }
+        }
+      }
+    },
+    "reopened": {
+      "shapeKeys": [
+        {
+          "name": "Basis",
+          "value": 1.0,
+          "min": 0.0,
+          "max": 1.0
+        },
+        {
+          "name": "Key 1",
+          "value": 1.0,
+          "min": -2.0,
+          "max": 2.0
+        },
+        {
+          "name": "Key 2",
+          "value": 1.0,
+          "min": -2.0,
+          "max": 2.0
+        }
+      ],
+      "shapeDrivers": [
+        {
+          "path": "key_blocks[\"Key 1\"].value",
+          "expression": "slvs_c_b596b36138076155/10-8",
+          "valid": true,
+          "variables": [
+            {
+              "name": "slvs_c_b596b36138076155",
+              "targets": [
+                {
+                  "id": "Scene",
+                  "path": "[\"slvs:c:b596b36138076155\"]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "path": "key_blocks[\"Key 2\"].value",
+          "expression": "slvs_c_854e8777cfe2608d/10-5",
+          "valid": true,
+          "variables": [
+            {
+              "name": "slvs_c_854e8777cfe2608d",
+              "targets": [
+                {
+                  "id": "Scene",
+                  "path": "[\"slvs:c:854e8777cfe2608d\"]"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "meshReadback": {
+        "Body": {
+          "vertices": 16,
+          "faces": 12,
+          "nonManifold": 0,
+          "levels": {
+            "0.0": {
+              "x": [
+                0.0,
+                90.0
+              ],
+              "y": [
+                0.0,
+                60.0
+              ]
+            },
+            "30.0": {
+              "x": [
+                0.0,
+                2.0,
+                88.0,
+                90.0
+              ],
+              "y": [
+                0.0,
+                2.0,
+                58.0,
+                60.0
+              ]
+            },
+            "2.0": {
+              "x": [
+                2.0,
+                88.0
+              ],
+              "y": [
+                2.0,
+                58.0
+              ]
+            }
+          }
+        },
+        "Body.001": {
+          "vertices": 8,
+          "faces": 6,
+          "nonManifold": 0,
+          "levels": {
+            "30.0": {
+              "x": [
+                2.0,
+                88.0
+              ],
+              "y": [
+                2.0,
+                58.0
+              ]
+            },
+            "2.0": {
+              "x": [
+                2.0,
+                88.0
+              ],
+              "y": [
+                2.0,
+                58.0
+              ]
+            }
+          }
+        },
+        "Cube": {
+          "vertices": 24,
+          "faces": 22,
+          "nonManifold": 0,
+          "levels": {
+            "30.0": {
+              "x": [
+                0.0005,
+                2.2005,
+                4.2005,
+                85.7995,
+                87.7995,
+                89.9995
+              ],
+              "y": [
+                0.0003,
+                2.2003,
+                4.2003,
+                55.7997,
+                57.7997,
+                59.9997
+              ]
+            },
+            "32.0": {
+              "x": [
+                0.0005,
+                89.9995
+              ],
+              "y": [
+                0.0003,
+                59.9997
+              ]
+            },
+            "26.0": {
+              "x": [
+                2.2005,
+                4.2005,
+                85.7995,
+                87.7995
+              ],
+              "y": [
+                2.2003,
+                4.2003,
+                55.7997,
+                57.7997
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "scenes": [
+    {
+      "file": "2026-10-27-manual-lid-shapekey-x-v001/demo-files/manual_lid_shape_x_v001.blend",
+      "sha256": "583eb00b7c4a1b04fb42181a84cd02bf97818a97014cadb2dd89ccf592d831dd"
+    },
+    {
+      "file": "2026-10-27-manual-lid-shapekey-y-v001/demo-files/manual_lid_shape_xy_v001.blend",
+      "sha256": "467ee2ed91b49a14a2f610f291381249512c96653f5ae8cfb8621f87a62eb499"
+    },
+    {
+      "file": "2026-10-27-manual-lid-driver-x-v006/demo-files/manual_lid_shape_x_driver_v001.blend",
+      "sha256": "52cea78d8448eb0f2e132ec16f4d99041009af8f1a8c9ab8091142205c9c9152"
+    },
+    {
+      "file": "2026-10-27-manual-lid-driver-y-v001/demo-files/manual_lid_shape_xy_driver_v001.blend",
+      "sha256": "ddae8a3d3745146501d25527354352e6b71431b837c78c8269a43dc5e6a3dec6"
+    },
+    {
+      "file": "2026-10-27-manual-lid-xy-link-verify-v001/demo-files/manual_box_lid_90x60_v001.blend",
+      "sha256": "346260b15fdb87daf3481946adad029aedb9e9c5aeea94ad828117577e2703d6"
+    }
+  ],
+  "images": [
+    {
+      "file": "2026-10-27-manual-lid-shapekey-x-v001/KEY-01-opened.png",
+      "sha256": "75ca1e8b0d975a4e8e2e64d584462bc692a2238d29cbb471e68022ad6a2f4671"
+    },
+    {
+      "file": "2026-10-27-manual-lid-shapekey-x-v001/KEY-02-panel.png",
+      "sha256": "8bc9e35abd61f451aec25f53289e9d5f98c402c02f2e53056772e73727bfadfa"
+    },
+    {
+      "file": "2026-10-27-manual-lid-shapekey-x-v001/KEY-03-basis.png",
+      "sha256": "26f0f0f51e525a0a35eda233983686330b6cf7285b78f5800f0e18facbde3230"
+    },
+    {
+      "file": "2026-10-27-manual-lid-shapekey-x-v001/KEY-04-key-one.png",
+      "sha256": "963fa9727a16c09e7e744fad660161d1c10401f994838075fd94e19c96b2ad99"
+    },
+    {
+      "file": "2026-10-27-manual-lid-shapekey-x-v001/KEY-05-edit-vertices.png",
+      "sha256": "57fa7468e806ac1ee5c4a6145c026f20d92144c6549f93425859069146ba63fe"
+    },
+    {
+      "file": "2026-10-27-manual-lid-shapekey-x-v001/KEY-06-select-right.png",
+      "sha256": "b12929603eed857e23f9e03ddbac3b9344172068ba166bf5b63033c6b3d52bb3"
+    },
+    {
+      "file": "2026-10-27-manual-lid-shapekey-x-v001/KEY-07-x-shape.png",
+      "sha256": "7727b91b356b791b77315e63bc8a68b3d409fb024dcae56ae4f703ad697e8811"
+    },
+    {
+      "file": "2026-10-27-manual-lid-shapekey-x-v001/KEY-08-x-object.png",
+      "sha256": "82dc5588987c99c66512dfc0df159b5f57ac7cb05cfd6fe77dfbc867cd8aabba"
+    },
+    {
+      "file": "2026-10-27-manual-lid-shapekey-x-v001/KEY-09-saved.png",
+      "sha256": "7b8405d475a8def26ff250017c150cef4c0d8a93172c0f843411c1864452c974"
+    },
+    {
+      "file": "2026-10-27-manual-lid-shapekey-y-v001/KEY-01-opened.png",
+      "sha256": "6b967942f36a19f77ebea400a699164df9bfd268063b3c5a3bf77833bc497b19"
+    },
+    {
+      "file": "2026-10-27-manual-lid-shapekey-y-v001/KEY-02-x-zero.png",
+      "sha256": "edbaee44dc040b15332f9c4c316e9f7c433d61639b0adeae5a06d88aa2d57f6f"
+    },
+    {
+      "file": "2026-10-27-manual-lid-shapekey-y-v001/KEY-03-y-created.png",
+      "sha256": "60ea5549225aeb0a8e269d00303826b99f83e5e7b4ee5e3ea5a70c0b29f6b618"
+    },
+    {
+      "file": "2026-10-27-manual-lid-shapekey-y-v001/KEY-04-edit-vertices.png",
+      "sha256": "1043544bfb7a419438f878f8a8af396768ff290ef8390eb96be75fba1d2d2a7e"
+    },
+    {
+      "file": "2026-10-27-manual-lid-shapekey-y-v001/KEY-05-select-y.png",
+      "sha256": "26491df410b97d29b651417e0dbdb658445f70f82d52ac12772f7eaba20b5dfe"
+    },
+    {
+      "file": "2026-10-27-manual-lid-shapekey-y-v001/KEY-06-y-shaped.png",
+      "sha256": "cd54b988bfb0642bffcb24ff09bba5fe07ee0f16d9b340f0d4eb1817643614e0"
+    },
+    {
+      "file": "2026-10-27-manual-lid-shapekey-y-v001/KEY-07-both-zero.png",
+      "sha256": "175ffd8d6199913653f2bd2e58b4f954ae6a7a20c540bc6b8699efe669fcfe8e"
+    },
+    {
+      "file": "2026-10-27-manual-lid-shapekey-y-v001/KEY-08-saved.png",
+      "sha256": "cb7504e7913e9ad6d2d52c155f4ab205da39c11130f0feb6b72163a924b13b9f"
+    },
+    {
+      "file": "2026-10-27-manual-lid-driver-x-v006/LINK-01-opened.png",
+      "sha256": "daa82b49bd2141e3be6c53a3adfb421fb130d6f0fa3d533d79687df29ddc3a2a"
+    },
+    {
+      "file": "2026-10-27-manual-lid-driver-x-v006/LINK-02-body-selected.png",
+      "sha256": "9d85b5500668b539dfbf7d0d9ef2412d4ff361fa4c2f83a3ca9a7d7b60b01678"
+    },
+    {
+      "file": "2026-10-27-manual-lid-driver-x-v006/LINK-03-body-menu.png",
+      "sha256": "8bb91f5233b9d076a8e23af9dfe328dc833a4d1f30fa893cec32b6f6c6fa7193"
+    },
+    {
+      "file": "2026-10-27-manual-lid-driver-x-v006/LINK-04-outer-sketch.png",
+      "sha256": "90354d1459249527b38912fd67ff12f040e394c5f96dcad8c201d70d0d641773"
+    },
+    {
+      "file": "2026-10-27-manual-lid-driver-x-v006/LINK-05-source-menu.png",
+      "sha256": "3a32395edd9086cc4513eebd0edfd47cbbbf7f482838a8863d57de5d8c9868a6"
+    },
+    {
+      "file": "2026-10-27-manual-lid-driver-x-v006/LINK-06-lid-selected.png",
+      "sha256": "bccfbba96bcb780874e38924a333aa06391f7653cd3cf642284fb576a9931834"
+    },
+    {
+      "file": "2026-10-27-manual-lid-driver-x-v006/LINK-07-x-key-selected.png",
+      "sha256": "f0f5a8e55b53c1a0e7a13ba614a8e7ac25a0339cbdc4b1716c3559b95c9f4061"
+    },
+    {
+      "file": "2026-10-27-manual-lid-driver-x-v006/LINK-08-target-menu.png",
+      "sha256": "4a3836f3d25b18f8b14dcb0518056a9b6d8ed4bbc77b002b9b624dfd131e7490"
+    },
+    {
+      "file": "2026-10-27-manual-lid-driver-x-v006/LINK-09-x-pasted.png",
+      "sha256": "009e7e4b8cd7e0591c37c6e403cb990c24253da32a20c871cadb0c1385ad23cc"
+    },
+    {
+      "file": "2026-10-27-manual-lid-driver-x-v006/LINK-10-x-edit-menu.png",
+      "sha256": "4b0aee60e54ec1486309034fafac23f770c56d20f4192cf7eff5b454028d8d18"
+    },
+    {
+      "file": "2026-10-27-manual-lid-driver-x-v006/LINK-11-x-popup.png",
+      "sha256": "a326da63d32bd2db3882cd6b80985f31bda1884a5d402e9ad5fa0e2f2c1c6a67"
+    },
+    {
+      "file": "2026-10-27-manual-lid-driver-x-v006/LINK-12-x-type-menu.png",
+      "sha256": "c5ffbd5b91dcb522fdc4f0a8a7eaa17138ce1b70c4fe8a8444123b80976d6b12"
+    },
+    {
+      "file": "2026-10-27-manual-lid-driver-x-v006/LINK-13-x-script.png",
+      "sha256": "3921ff0a0b83e8d457703b8b9ee4f403a83a92583b9debdb415d3b5d25351203"
+    },
+    {
+      "file": "2026-10-27-manual-lid-driver-x-v006/LINK-14-x-formula.png",
+      "sha256": "6d3a6020cfb117c534623227991fcab58409eb142a849b5e89a218c3ceb7e1dd"
+    },
+    {
+      "file": "2026-10-27-manual-lid-driver-x-v006/LINK-15-x-saved.png",
+      "sha256": "b4876353d8d0cdf41bb985db3d4f8cc1d9d467f865d47514dbe2d1be43fd35ae"
+    },
+    {
+      "file": "2026-10-27-manual-lid-driver-y-v001/LINK-01-opened.png",
+      "sha256": "58cbb7b2b3d6d43d4323b617506650266d15500aeb2a9e0b8a65844ee69e42f0"
+    },
+    {
+      "file": "2026-10-27-manual-lid-driver-y-v001/LINK-02-body-selected.png",
+      "sha256": "5c0a1cf4a6075a6148be770c486740e8e1212fc4ebed6ee532d5271ed3d3bd70"
+    },
+    {
+      "file": "2026-10-27-manual-lid-driver-y-v001/LINK-03-body-menu.png",
+      "sha256": "23b63c204199665993ccd64b7463423c9aee692af1085d211c58ad12afc54cdf"
+    },
+    {
+      "file": "2026-10-27-manual-lid-driver-y-v001/LINK-04-outer-sketch.png",
+      "sha256": "96a95ff0be95478d9a91b96affdbcfb5c1ca57b67e5af1a1c8f962e0b6dd8c7a"
+    },
+    {
+      "file": "2026-10-27-manual-lid-driver-y-v001/LINK-05-source-menu.png",
+      "sha256": "5b1e9daf2179ee32d9a10d8fc81ab35e9d3270ef0252894635b47d57eb765f11"
+    },
+    {
+      "file": "2026-10-27-manual-lid-driver-y-v001/LINK-06-lid-selected.png",
+      "sha256": "ad37eb19762ac012aeade37cf0dd572c4c616461f14b9740fb36f43c9b94ffdd"
+    },
+    {
+      "file": "2026-10-27-manual-lid-driver-y-v001/LINK-07-x-key-selected.png",
+      "sha256": "1f7e8c453f55db7c682e9e96546fcf17fbdd70e053a9ac8f828472b4ef559b61"
+    },
+    {
+      "file": "2026-10-27-manual-lid-driver-y-v001/LINK-08-target-menu.png",
+      "sha256": "eb247ebf67b1befcd065f901db5786bb6b51be002c3082fa2a51fdb7dd15ad07"
+    },
+    {
+      "file": "2026-10-27-manual-lid-driver-y-v001/LINK-09-x-pasted.png",
+      "sha256": "f3f7da1e6e896c689f05d7056f301f1b292e067b59446c1ddd705f19065400a4"
+    },
+    {
+      "file": "2026-10-27-manual-lid-driver-y-v001/LINK-10-x-edit-menu.png",
+      "sha256": "dcefe76606148fa3ea66a4126be3abf5dd97fdfac0edf0c0835a84e637236e35"
+    },
+    {
+      "file": "2026-10-27-manual-lid-driver-y-v001/LINK-11-x-popup.png",
+      "sha256": "e57e929a15f968e38f4af07c432c17f5711fc0b348e338e969223f067f99edda"
+    },
+    {
+      "file": "2026-10-27-manual-lid-driver-y-v001/LINK-12-x-type-menu.png",
+      "sha256": "bd3cd3835aac8a0bd4f2e83b3662d94e588c7ae5c2295f20e354efe6d918e0e0"
+    },
+    {
+      "file": "2026-10-27-manual-lid-driver-y-v001/LINK-13-x-script.png",
+      "sha256": "5d4429522485a2a9f8b1460887657aa3be857a44008f62b996f4a0a8a83320d1"
+    },
+    {
+      "file": "2026-10-27-manual-lid-driver-y-v001/LINK-14-x-formula.png",
+      "sha256": "1d15ad1f6c34bbf91979a8723cb5292e2035c04db6119258050e8dd62eb645b3"
+    },
+    {
+      "file": "2026-10-27-manual-lid-driver-y-v001/LINK-15-x-saved.png",
+      "sha256": "e26395682baa4e1ded89beaebf0fda151f7f27b3f4ce89fd75980138f023f2ad"
+    },
+    {
+      "file": "2026-10-27-manual-lid-xy-link-verify-v001/LINK-01-opened.png",
+      "sha256": "ef1ad4605384ee621ef5e3f501c68611a3cee86a5bb6f91f80595b56203d54f8"
+    },
+    {
+      "file": "2026-10-27-manual-lid-xy-link-verify-v001/LINK-02-body-selected.png",
+      "sha256": "4352d7ef63f01bea0564783e44e2745d1c5575ad669b9aa68dcd5ae92fd61016"
+    },
+    {
+      "file": "2026-10-27-manual-lid-xy-link-verify-v001/LINK-03-outer-sketch.png",
+      "sha256": "1de32f144a69380cc467c2048ce5dedd73946b89bae43304601cb47565844cc8"
+    },
+    {
+      "file": "2026-10-27-manual-lid-xy-link-verify-v001/LINK-04-outer-90x60.png",
+      "sha256": "5034b694bc7c0117c2b29ef7073e8a635cf5dca1e53eb54289a3b9423cf09db3"
+    },
+    {
+      "file": "2026-10-27-manual-lid-xy-link-verify-v001/LINK-05-inner-before-solve.png",
+      "sha256": "5743c50d58047b013b5158e298c3f974796f53fd40ffec21d52ac179ccdba702"
+    },
+    {
+      "file": "2026-10-27-manual-lid-xy-link-verify-v001/LINK-06-inner-after-solve.png",
+      "sha256": "279c20a8b4a9d6af8543ca298d4a5ee9ab90057784a08d70395fc0b8907814de"
+    },
+    {
+      "file": "2026-10-27-manual-lid-xy-link-verify-v001/LINK-07-assembly.png",
+      "sha256": "bfd27b4b85ef85f23e1cce57bbb536c1ac32e24ad0fd11405f8a87712a2314ea"
+    },
+    {
+      "file": "2026-10-27-manual-lid-xy-link-verify-v001/LINK-08-saved.png",
+      "sha256": "7013bf4a4c18c95cd2e4bc12c83ef40da84d4bb73d45055e022171a13d78d649"
+    },
+    {
+      "file": "2026-10-27-manual-lid-xy-link-verify-v001/LINK-09-reopened.png",
+      "sha256": "eae32281d0d86e3cb78f2c7e5bbf496cb4c1907f1ad4ea5e8f25e0f7654356ff"
+    }
+  ],
+  "limitations": [
+    "首例僅80×50→90×60；其餘尺寸與範圍仍待驗證。",
+    "形狀鍵值限制−2..2；本次鍵值為0→1，不能推任意尺寸。",
+    "上蓋跟隨外框更新，而內腔須進草圖手動更新；更新前盒蓋幾何可能互相干涉。",
+    "四側間隙以同高度環唇頂點及盒口頂點界限推算，約0.2mm／側，未做完整碰撞交集判定。",
+    "Non-manifold 0 不代表已驗強度、切片或實體配合；列印及試配尚未做。",
+    "GUI 貼 driver 之中間狀態鍵值被夾為2，上蓋尺寸暫超預期；公式輸入後才回基準。"
+  ]
+}

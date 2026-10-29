@@ -38,8 +38,8 @@ class CurriculumV032Tests(unittest.TestCase):
         cls.steps = {step['id']: (chapter, step) for chapter in cls.data['chapters'] for step in chapter['steps']}
 
     def test_pointer_and_history(self):
-        manage = load_manage()
-        self.assertEqual(manage.ENGINEERING_CURRICULUM, NEW)
+        # Historical output remains immutable when the active pointer advances.
+        self.assertEqual(sha(NEW), '7e123574e4687f2e6aca8b262dac7dcdadfe94cd080e854ca0f7703a3e24075b')
         self.assertEqual(sha(OLD), '96a3304fee401b61cc59b6764eaa31b6a22e31e9865b873534299f8eb42c5b92')
         self.assertEqual(self.data['id'], self.old['id'])
         self.assertEqual(self.data['sourceVersions'][-1], {'path': 'learning/web/engineering-curriculum-v031.json', 'sha256': sha(OLD)})
@@ -83,10 +83,12 @@ class CurriculumV032Tests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as folder:
             progress = {'events': []}
             args = SimpleNamespace(chapter='ch11', step='ch11-08-03-01', evidence='完成')
-            with self.assertRaisesRegex(ValueError, '待製作'):
-                manage.engineering_event(progress, args, confirmed=True)
-            overview = manage.engineering_overview({'events': []})
-            self.assertEqual(overview['total'], 239)
+            # Test v032's historical pending behavior with that frozen document.
+            with mock.patch.object(manage, 'ENGINEERING_CURRICULUM', NEW):
+                with self.assertRaisesRegex(ValueError, '待製作'):
+                    manage.engineering_event(progress, args, confirmed=True)
+                overview = manage.engineering_overview({'events': []})
+                self.assertEqual(overview['total'], 239)
 
     def test_builder_refuses_to_overwrite(self):
         before = NEW.read_bytes()

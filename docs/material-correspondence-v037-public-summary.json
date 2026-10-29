@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "kind": "public_summary_not_original_execution_record",
+  "sourceLocalReport": {
+    "path": "learning/journal/2026-10-29-material-correspondence-report-v001.json",
+    "sha256": "ea2529acd67f89bfbdc63089d88cd7e0023c3e47db952547f7579c2ee6e4ec9f",
+    "availableInPublicPackage": false
+  },
+  "scope": "v037 authoring audit of 12 formal chapters; v038 reference cards are a separate addition. No learner state or notes included.",
+  "counts": {
+    "chapters": 12,
+    "sections": 85,
+    "steps": 447,
+    "correctedSteps": 61,
+    "explicitHistoricalDemonstrations": 191,
+    "newGuardDemonstration": 1,
+    "newBranchDrawings": 2,
+    "renderedTabs": 2682,
+    "httpResourceChecks": 1181
+  },
+  "curriculumSources": [
+    {
+      "path": "learning/web/engineering-curriculum-v037.json",
+      "sha256": "79522345aef709d92f5eb28b47176c54e3a45dbc728beacf9c1420dd21d1248a"
+    },
+    {
+      "path": "learning/web/engineering-path-v006.json",
+      "sha256": "c5deb3aa4ecede22bfd8b283f632000114202d2b32b198a3ea2887a102c33c99"
+    },
+    {
+      "path": "learning/web/challenges/challenges-v010.json",
+      "sha256": "45bc3007a61efdbab5327e1b21dec4901ed1c92f36d6058d1389e13d2d3e90fa"
+    }
+  ],
+  "limitations": [
+    "六分頁全量檢查使用實際 renderer；不能稱為每一小步六分頁均由瀏覽器點開目視。",
+    "已更正61個小步實頁回歸；其餘內容的人工審查來源版本與範圍見各分工報告。",
+    "工程圖由實際網格擷取；可見性抽樣或三角邊投影不等於完整標準隱線製造圖。",
+    "70×40拒絕案例僅證明指定草案面板與這一候選輸入的拒絕，未涵蓋所有原生欄位繞過方式。",
+    "教材仍有程式預備場景或幾何的步驟，逐一明示範圍；沒有冒充每個起點均手工建立。",
+    "CAD工具重開警告根因、曲面開口及細小幾何等既有工程限制沒有由這次教材修補消除。",
+    "尚未做新一輪完整公開差異與私人資料發布審查，未commit或push。"
+  ],
+  "allHistoricalPixelsVisuallyReviewedThisAudit": false,
+  "allBlenderActionsReexecutedThisAudit": false,
+  "physicalResults": {
+    "print": null,
+    "measurement": null,
+    "fit": null,
+    "qualifiedClearance": null,
+    "qualifiedStrength": null
+  }
+}

@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1450" role="img" aria-labelledby="title desc">
+<title id="title">訊號站渲染題：實際 mesh 三視圖</title><desc id="desc">由五個 Blender 零件世界頂點投影得到的前視、俯視與右視輪廓及尺寸，單位 m；地面為零厚度平面，非列印件。</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#29465a"/></marker></defs>
+<style>text{font-family:'Microsoft JhengHei','Noto Sans CJK TC',sans-serif;fill:#172f40} .title{font-size:33px;font-weight:700} .head{font-size:24px;font-weight:700} .label{font-size:21px} .table{font-size:21px} .note{font-size:18px} .small{font-size:16px} .outline{stroke:#143244;stroke-width:2;stroke-linejoin:round} .ground{fill:#f6f8fa} .body{fill:#fff} .dim{stroke:#29465a;stroke-width:1.5;fill:none} .ext{stroke:#7d97a8;stroke-width:1.1;fill:none} .frame{fill:none;stroke:#173548;stroke-width:2} .rule{stroke:#173548;stroke-width:1.4}</style>
+<rect width="1600" height="1450" fill="white"/><rect class="frame" x="20" y="20" width="1560" height="1410"/>
+<text x="48.00" y="68.00" class="title" text-anchor="start">訊號站渲染題｜mesh 三視圖與部件尺寸</text>
+<text x="49.00" y="100.00" class="note" text-anchor="start">資料來源：u02_station_v002；與 u03_render_v001 的五件世界幾何指紋一致</text>
+<text x="65.00" y="155.00" class="head" text-anchor="start">前視 X–Z（Y 方向投影）</text><polyline class="outline ground" points="110.000,505.000 690.000,505.000"/>
+<polygon class="outline body" points="226.000,505.000 574.000,505.000 574.000,476.000 226.000,476.000"/>
+<polygon class="outline body" points="349.250,476.000 450.750,476.000 450.750,432.500 349.250,432.500"/>
+<polygon class="outline body" points="391.300,432.500 408.700,432.500 408.700,258.500 391.300,258.500"/>
+<polygon class="outline body" points="363.750,222.250 364.447,229.322 366.509,236.122 369.859,242.389 374.367,247.883 379.861,252.391 386.128,255.741 392.928,257.803 400.000,258.500 407.072,257.803 413.872,255.741 420.139,252.391 425.633,247.883 430.141,242.389 433.491,236.122 435.553,229.322 436.250,222.250 435.553,215.178 433.491,208.378 430.141,202.111 425.633,196.617 420.139,192.109 413.872,188.759 407.072,186.697 400.000,186.000 392.928,186.697 386.128,188.759 379.861,192.109 374.367,196.617 369.859,202.111 366.509,208.378 364.447,215.178"/>
+<line class="ext" x1="110.00" y1="505.00" x2="110.00" y2="558.00"/>
+<line class="ext" x1="690.00" y1="505.00" x2="690.00" y2="558.00"/>
+<line class="dim" x1="110.00" y1="550.00" x2="690.00" y2="550.00" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+<text x="400.00" y="541.00" class="label" text-anchor="middle">4.00 m　Ground 外框</text>
+<line class="ext" x1="226.00" y1="505.00" x2="226.00" y2="603.00"/>
+<line class="ext" x1="574.00" y1="505.00" x2="574.00" y2="603.00"/>
+<line class="dim" x1="226.00" y1="595.00" x2="574.00" y2="595.00" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+<text x="400.00" y="586.00" class="label" text-anchor="middle">2.40 m　Platform 外框</text>
+<line class="ext" x1="690.00" y1="186.00" x2="743.00" y2="186.00"/>
+<line class="ext" x1="690.00" y1="505.00" x2="743.00" y2="505.00"/>
+<line class="dim" x1="735.00" y1="186.00" x2="735.00" y2="505.00" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+<text x="725.00" y="345.50" class="label" text-anchor="middle" transform="rotate(-90 725.00 345.50)">2.20 m　最高至地面</text>
+<text x="855.00" y="155.00" class="head" text-anchor="start">俯視 X–Y（Z 方向投影）</text><polygon class="outline ground" points="905.000,770.000 1485.000,770.000 1485.000,190.000 905.000,190.000"/>
+<polygon class="outline body" points="1021.000,654.000 1369.000,654.000 1369.000,306.000 1021.000,306.000"/>
+<polygon class="outline body" points="1144.250,530.750 1245.750,530.750 1245.750,429.250 1144.250,429.250"/>
+<polygon class="outline body" points="1186.300,488.700 1203.700,488.700 1203.700,471.300 1186.300,471.300"/>
+<polygon class="outline body" points="1158.750,480.000 1159.447,487.072 1161.509,493.872 1164.859,500.139 1169.367,505.633 1174.861,510.141 1181.128,513.491 1187.928,515.553 1195.000,516.250 1202.072,515.553 1208.872,513.491 1215.139,510.141 1220.633,505.633 1225.141,500.139 1228.491,493.872 1230.553,487.072 1231.250,480.000 1230.553,472.928 1228.491,466.128 1225.141,459.861 1220.633,454.367 1215.139,449.859 1208.872,446.509 1202.072,444.447 1195.000,443.750 1187.928,444.447 1181.128,446.509 1174.861,449.859 1169.367,454.367 1164.859,459.861 1161.509,466.128 1159.447,472.928"/>
+<line class="ext" x1="905.00" y1="770.00" x2="905.00" y2="813.00"/>
+<line class="ext" x1="1485.00" y1="770.00" x2="1485.00" y2="813.00"/>
+<line class="dim" x1="905.00" y1="805.00" x2="1485.00" y2="805.00" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+<text x="1195.00" y="796.00" class="label" text-anchor="middle">4.00 m　Ground 外框</text>
+<text x="65.00" y="735.00" class="head" text-anchor="start">右視 Y–Z（X 方向投影）</text><polyline class="outline ground" points="110.000,1090.000 690.000,1090.000"/>
+<polygon class="outline body" points="226.000,1090.000 574.000,1090.000 574.000,1061.000 226.000,1061.000"/>
+<polygon class="outline body" points="349.250,1061.000 450.750,1061.000 450.750,1017.500 349.250,1017.500"/>
+<polygon class="outline body" points="391.300,1017.500 408.700,1017.500 408.700,843.500 391.300,843.500"/>
+<polygon class="outline body" points="363.750,807.250 364.447,814.322 366.509,821.122 369.859,827.389 374.367,832.883 379.861,837.391 386.128,840.741 392.928,842.803 400.000,843.500 407.072,842.803 413.872,840.741 420.139,837.391 425.633,832.883 430.141,827.389 433.491,821.122 435.553,814.322 436.250,807.250 435.553,800.178 433.491,793.378 430.141,787.111 425.633,781.617 420.139,777.109 413.872,773.759 407.072,771.697 400.000,771.000 392.928,771.697 386.128,773.759 379.861,777.109 374.367,781.617 369.859,787.111 366.509,793.378 364.447,800.178"/>
+<line class="ext" x1="110.00" y1="1090.00" x2="110.00" y2="1143.00"/>
+<line class="ext" x1="690.00" y1="1090.00" x2="690.00" y2="1143.00"/>
+<line class="dim" x1="110.00" y1="1135.00" x2="690.00" y2="1135.00" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+<text x="400.00" y="1126.00" class="label" text-anchor="middle">4.00 m　Ground 外框</text>
+<line class="ext" x1="690.00" y1="771.00" x2="743.00" y2="771.00"/>
+<line class="ext" x1="690.00" y1="1090.00" x2="743.00" y2="1090.00"/>
+<line class="dim" x1="735.00" y1="771.00" x2="735.00" y2="1090.00" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+<text x="725.00" y="930.50" class="label" text-anchor="middle" transform="rotate(-90 725.00 930.50)">2.20 m　最高至地面</text>
+<text x="855.00" y="850.00" class="head" text-anchor="start">部件世界外框（X × Y × Z，m）</text>
+<line class="rule" x1="855" y1="870" x2="1530" y2="870"/><text x="865.00" y="912.00" class="table" text-anchor="start">地面（平面）</text><text x="1090.00" y="912.00" class="table" text-anchor="start">4.00 × 4.00 × 0.00</text><text x="865.00" y="955.00" class="table" text-anchor="start">平台</text><text x="1090.00" y="955.00" class="table" text-anchor="start">2.40 × 2.40 × 0.20</text><text x="865.00" y="998.00" class="table" text-anchor="start">訊號底座</text><text x="1090.00" y="998.00" class="table" text-anchor="start">0.70 × 0.70 × 0.30</text><text x="865.00" y="1041.00" class="table" text-anchor="start">立柱</text><text x="1090.00" y="1041.00" class="table" text-anchor="start">0.12 × 0.12 × 1.20</text><text x="865.00" y="1084.00" class="table" text-anchor="start">訊號球</text><text x="1090.00" y="1084.00" class="table" text-anchor="start">0.50 × 0.50 × 0.50</text>
+<text x="855.00" y="1150.00" class="small" text-anchor="start">Signal 為 mesh 頂點外框；非光源瓦數或材質參數。</text>
+<line class="rule" x1="20" y1="1190" x2="1580" y2="1190"/><line class="rule" x1="1050" y1="1190" x2="1050" y2="1430"/><line class="rule" x1="1330" y1="1190" x2="1330" y2="1430"/>
+<text x="45.00" y="1227.00" class="note" text-anchor="start">輪廓取自實際 Blender 頂點的正交投影凸包；不包含完整標準隱線。</text>
+<text x="45.00" y="1262.00" class="note" text-anchor="start">Ground 是 4 × 4 m、厚度 0 的平面；本題用於材質、燈光、相機與渲染。</text>
+<text x="45.00" y="1297.00" class="note" text-anchor="start">尺寸是數位場景值；非 3D 列印模型、製造規格或公差。</text>
+<text x="45.00" y="1332.00" class="note" text-anchor="start">各視圖標示坐標軸；未聲稱符合特定工程投影法及標準。</text>
+<text x="45.00" y="1367.00" class="small" text-anchor="start">來源 SHA-256：740a47841e4cccd86f08…</text>
+<text x="1070.00" y="1227.00" class="note" text-anchor="start">圖名：訊號站</text><text x="1070.00" y="1262.00" class="note" text-anchor="start">用途：渲染教學</text><text x="1070.00" y="1297.00" class="note" text-anchor="start">版次：v001</text>
+<text x="1350.00" y="1227.00" class="note" text-anchor="start">單位：m</text><text x="1350.00" y="1262.00" class="note" text-anchor="start">尺度：隨畫面</text><text x="1350.00" y="1297.00" class="note" text-anchor="start">公差：待定</text>
+</svg>

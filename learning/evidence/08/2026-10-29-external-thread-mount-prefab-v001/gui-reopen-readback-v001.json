@@ -1,0 +1,195 @@
+{
+  "file": "u11_mount_prefab_v001.blend",
+  "sha256": "8cba18300231e4e923b07c0890258c8bf7ba943d4d72077519fc40e9d3826b73",
+  "objects": {
+    "Body": {
+      "vertices": 16,
+      "faces": 14,
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "worldBounds": [
+        [
+          -30.0,
+          30.0
+        ],
+        [
+          -20.0,
+          20.0
+        ],
+        [
+          -15.0,
+          15.0
+        ]
+      ],
+      "modifierCount": 0
+    },
+    "Lid": {
+      "vertices": 24,
+      "faces": 22,
+      "location": [
+        0.0,
+        0.0,
+        16.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          16.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "worldBounds": [
+        [
+          -30.0,
+          30.0
+        ],
+        [
+          -20.0,
+          20.0
+        ],
+        [
+          11.0,
+          17.0
+        ]
+      ],
+      "modifierCount": 0
+    },
+    "Thread_Core": {
+      "vertices": 707,
+      "faces": 419,
+      "location": [
+        0.0,
+        0.0,
+        2.299999952316284
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          2.299999952316284
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "worldBounds": [
+        [
+          -6.0,
+          6.0
+        ],
+        [
+          -6.0,
+          6.0
+        ],
+        [
+          -0.09999775886535645,
+          4.699997901916504
+        ]
+      ],
+      "modifierCount": 0
+    }
+  },
+  "oldMountStep1BoundsAndLocationMatch": true,
+  "sourceBoxSha256": "ab08f331dcb26c5ffc6c6ca56c7c7f022df96791c4777e37c5f01a964fbed6ff",
+  "sourceThreadSha256": "5a0aea1af13f46e9bff1b14327aa199b6b34f421936fd5a516226fc13072ec04",
+  "preparation": "程式 Append 與另存；未程式重建幾何、移動、旋轉或布林。",
+  "physicalPrint": null,
+  "physicalMeasurement": null,
+  "physicalFit": null,
+  "qualifiedClearance": null,
+  "qualifiedStrength": null
+}

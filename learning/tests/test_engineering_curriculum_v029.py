@@ -43,7 +43,7 @@ class CurriculumV029Tests(unittest.TestCase):
         manage = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(manage)
         # v030 起指標改指向新版；這裡只確認 v029 與 path v003 不再變動。
-        self.assertEqual(manage.ENGINEERING_PATH, PATH_NEW)
+        self.assertEqual(sha(PATH_NEW), '9cb08486d3de4c3225aebb9de1ff8471b5902026c84320f4b97a42a5d64962b0')
         self.assertEqual(sha(NEW), 'c042a30f169541b3087e1a9919320b689745cb170813a4f8ab0bf569b9a6edc1')
         self.assertEqual(sha(OLD), 'f7ff40301a86d9eea544f02f6a7f006f31345f84f1781ad81052de220294a188')
         self.assertEqual(sha(PATH_OLD), '28cfa6959794d6e6423459cd7ab5e7b376e4c487adc23432078c8be4bfdadf95')

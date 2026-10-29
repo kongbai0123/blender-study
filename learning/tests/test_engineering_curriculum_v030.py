@@ -33,7 +33,7 @@ class CurriculumV030Tests(unittest.TestCase):
         spec.loader.exec_module(manage)
         # v030 is a frozen historical source after the current curriculum advances.
         self.assertEqual(sha(NEW), '55d0cc4c731a550fbe2c17635426dd14efca2894cf99455b322d0ed9f8d8515b')
-        self.assertEqual(manage.ENGINEERING_PATH, PATH)
+        self.assertEqual(sha(PATH), '9cb08486d3de4c3225aebb9de1ff8471b5902026c84320f4b97a42a5d64962b0')
         self.assertEqual(sha(OLD), 'c042a30f169541b3087e1a9919320b689745cb170813a4f8ab0bf569b9a6edc1')
         self.assertEqual(self.data['id'], self.old['id'])
         self.assertEqual(self.data['sourceVersions'][-2], {'path': 'learning/web/engineering-curriculum-v029.json', 'sha256': sha(OLD)})

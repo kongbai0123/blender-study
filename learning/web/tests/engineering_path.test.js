@@ -625,3 +625,119 @@ test('every chapter page links to the shared challenge page, chapter 03 included
   assert.match(html, /href="\/challenges\/index.html\?chapter=ch03"/);
   assert.doesNotMatch(html, /pilot\/box-lesson|data-action="resume"|查閱原教材/);
 });
+
+test('field methods show their scope and allow safe STL and blank CSV downloads', () => {
+  const h = harness(); h.curriculum = curriculumData();
+  const step = h.curriculum.chapters[0].steps[0];
+  step.evidenceStatus = 'field_protocol_ready';
+  step.artifacts = [
+    { path: 'learning/journal/templates/blank.csv', label: '<空白表>', sha256: 'b'.repeat(64) },
+    { path: 'learning/evidence/demo/part.stl', label: 'STL', sha256: 'c'.repeat(64) },
+    { path: 'learning/journal/../progress.csv', label: '越界', sha256: 'd'.repeat(64) },
+    { path: 'javascript:alert(1)', label: '執行', sha256: 'e'.repeat(64) }
+  ];
+  const notes = section(h, 'ch01', '01-01', { tab: 'notes' });
+  assert.match(notes, /現場操作方法與空白紀錄已備妥；實體結果待進行/);
+  const record = section(h, 'ch01', '01-01', { tab: 'record' });
+  assert.match(record, /href="\/files\/learning\/journal\/templates\/blank.csv"/);
+  assert.match(record, /&lt;空白表&gt;/);
+  assert.match(record, /href="\/files\/learning\/evidence\/demo\/part.stl"/);
+  assert.doesNotMatch(record, /href="[^"]*(?:progress.csv|javascript:)/);
+  assert.equal(h.requests.filter(r => r.method === 'POST').length, 0);
+});
+
+test('pending physical work uses its own reason and stays unconfirmable', () => {
+  const h = harness(); h.curriculum = curriculumData();
+  const step = h.curriculum.chapters[0].steps[0];
+  Object.assign(step, { track: 'pending', pendingLabel: '實體待執行', pendingReason: '<實體>尚未取得', evidenceStatus: 'field_protocol_ready' });
+  const html = section(h, 'ch01', '01-01', { step: step.id, tab: 'notes' });
+  assert.match(html, /<strong>實體待執行：<\/strong>&lt;實體&gt;尚未取得/);
+  assert.doesNotMatch(html, /需要的模型或示範還沒完成|data-form="engineering-confirm"/);
+});
+
+test('a step with its own evidence shows the exact reading and original photo without a legacy source', () => {
+  const h = harness(); h.curriculum = curriculumData();
+  const step = h.curriculum.chapters[0].steps[0];
+  step.sourceSteps = [];
+  step.demonstration = { scope: 'GUI 與程式讀值分開',
+    figures: step.figures,
+    source: { path: 'learning/lesson11_cad_thread_optional_steps_v001.json', sha256: 'b'.repeat(64) },
+    readings: [{ kind: 'readback', label: '<實讀>', value: { solver: 'OKAY', dof: 0, physicalFit: null, text: '<script>x</script>' } }] };
+  const html = section(h, 'ch01', '01-01', { tab: 'record' });
+  assert.match(html, /本小步的助教示範/);
+  assert.match(html, /GUI 與程式讀值分開/);
+  assert.match(html, /&lt;實讀&gt;（完整原始數值）/);
+  assert.match(html, /&quot;dof&quot;: 0/);
+  assert.match(html, /&quot;physicalFit&quot;: null/);
+  assert.match(html, /&lt;script&gt;x&lt;\/script&gt;/);
+  assert.match(html, /\/files\/learning\/evidence\/05\/demo-v001\/lid.png/);
+  assert.doesNotMatch(html, /沒有原教材的助教示範紀錄|<script>/);
+});
+
+test('reference images do not imply an own demonstration or numerical reading', () => {
+  const h = harness(); h.curriculum = curriculumData();
+  const step = h.curriculum.chapters[0].steps[0]; step.sourceSteps = [];
+  step.figures.push({ type: 'screenshot', path: 'learning/evidence/../secret.png', sha256: 'f'.repeat(64) });
+  const html = section(h, 'ch01', '01-01', { tab: 'record' });
+  assert.match(html, /本步參考圖請看「原圖」/);
+  assert.doesNotMatch(html, /本小步的助教示範|secret.png|程式讀回：/);
+  assert.equal(h.requests.filter(request => request.method === 'POST').length, 0);
+});
+
+// 第 00 章速查：kind reference 的路徑章、track reference 的卡片。
+const referencePathChapter = () => ({ ...pathData().chapters[0], id: 'ch00', number: '00', kind: 'reference', title: '常用功能與快捷操作', deliverable: '只供查閱', deliverableLabel: '怎麼用', availabilityLabel: '速查：不需確認，不計入進度' });
+const referenceCurriculumChapter = () => ({ id: 'ch00', number: '00', title: '常用功能與快捷操作', sections: [{ id: '00-01', title: '按鍵規則', track: 'reference' }], steps: [{
+  id: 'ch00-01-01', title: '移動：G', section: '00-01', track: 'reference', context: '3D Viewport', goal: '精確移動', actions: ['按 G、X、數值、Enter'], success: 'Location 改變', evidenceStatus: 'existing_demo', figures: [], sourceSteps: [],
+  shortcuts: [{ keys: 'G → X → 數值 → Enter', effect: '相對移動' }], help: ['找不到：直接在 Location 欄位輸入。'],
+  practice: [{ chapterId: 'ch01', stepId: 'ec01-01', sectionId: '01-01', label: '第 01 章 01-01 觀察' }],
+  demonstration: { scope: '既有實測', source: { path: 'learning/evidence/01/demo/verification.json', sha256: 'b'.repeat(64) }, readings: [{ label: 'G X 0.5 之後', kind: 'readback', value: '{"location": [0.5, 0, 0]}' }] },
+  detail: { steps: ['按 G'], why: '精確' } }] });
+const referenceData = () => { const data = pathData(); data.chapters.unshift(referencePathChapter()); const curriculum = curriculumData(); curriculum.chapters.unshift(referenceCurriculumChapter()); return { data, curriculum }; };
+
+test('reference chapter 00 lists every card in a quick table and is neither progress nor a prerequisite', () => {
+  const h = harness();
+  const { data, curriculum } = referenceData();
+  let html = h.renderer.render(data, h.app.state.data, 'ch00', { data: curriculum });
+  assert.match(html, /<span class="badge">速查：不需確認，不計入進度<\/span><\/div>/);
+  assert.match(html, /<dt>怎麼用<\/dt><dd>只供查閱<\/dd>/);
+  assert.match(html, /<td class="engineering-quick-keys"><kbd>G → X → 數值 → Enter<\/kbd><\/td><td><button type="button" class="link-button" data-goto-chapter="ch00" data-goto-step="ch00-01-01">移動：G<\/button><\/td><td>3D Viewport<\/td><td><span class="engineering-practice"><button type="button" class="button quiet small" data-goto-chapter="ch01" data-goto-step="ec01-01" title="第 01 章 01-01 觀察">01-01<\/button><\/span><\/td>/);
+  assert.match(html, /data-section-chapter="ch00" data-open-section="00-01">00-01 按鍵規則<\/button>/);
+  assert.doesNotMatch(html, /challenges\/index.html\?chapter=ch00|小步已確認<\/span>|小節目錄/);
+  html = h.renderer.render(data, h.app.state.data, 'ch01', { data: curriculum });
+  assert.doesNotMatch(html, /<dt>接續<\/dt>/);
+  assert.match(html, /前往下一小步：01-01 看盒口 · 觀察/);
+  assert.match(html, /href="\/challenges\/index.html\?chapter=ch01"/);
+  html = h.renderer.render(data, h.app.state.data, 'ch02', { data: curriculum });
+  assert.match(html, /<dt>接續<\/dt><dd>第 01 章 小盒與量測 ch01 的成果<\/dd>/);
+  assert.equal(h.renderer.nextStep(h.app.state.data, { data: curriculum }).chapter.id, 'ch01');
+});
+
+test('reference cards keep practice links and notes but never offer confirmation', () => {
+  const h = harness();
+  const { data, curriculum } = referenceData();
+  const page = (tab) => h.renderer.render(data, h.app.state.data, 'ch00', { data: curriculum }, { section: '00-01', tab });
+  let html = page();
+  assert.match(html, /<span class="badge">速查<\/span><\/div>/);
+  assert.match(html, /<strong>速查：<\/strong>速查卡只供閱讀與查找，不需要確認，也不計入進度/);
+  assert.match(html, /<div class="engineering-practice"><strong>正式練習：<\/strong><button type="button" class="button quiet small" data-goto-chapter="ch01" data-goto-step="ec01-01">第 01 章 01-01 觀察<\/button><\/div>/);
+  assert.match(html, /data-form="engineering-note" data-engineering-chapter="ch00" data-engineering-step="ch00-01-01"/);
+  assert.doesNotMatch(html, /data-form="engineering-confirm"|本節 0 \/ 0|<em>速查<\/em>/);
+  assert.match(page('help'), /<h5>選單位置與排解<\/h5><ul><li>找不到：直接在 Location 欄位輸入。<\/li><\/ul>/);
+  assert.match(page('notes'), /<strong>速查：<\/strong>/);
+  assert.match(page('record'), /<h5>本小步的助教示範<\/h5><p>既有實測<\/p><p><strong>G X 0.5 之後：<\/strong>\{&quot;location&quot;: \[0.5, 0, 0\]\}<\/p>/);
+  assert.match(page('shortcuts'), /<kbd>G → X → 數值 → Enter<\/kbd><p>相對移動<\/p>/);
+});
+
+test('sidebar labels the reference chapter instead of counting it and practice links open the practice step', async () => {
+  const { data, curriculum } = referenceData();
+  const h = harness({ hash: '#engineering/ch00/00-01', fetchImpl: async (url) => ({ ok: true, json: async () => url === '/api/bootstrap' ? bootstrapData() : url === '/engineering-curriculum.json' ? curriculum : data }) });
+  await h.app.loadEngineering();
+  h.app.render();
+  const sidebar = h.elements.get('engineering-list').innerHTML;
+  assert.match(sidebar, /<span class="chapter-number">00<\/span><span><strong>常用功能與快捷操作<\/strong><small>速查：不需確認，不計入進度<\/small><\/span>/);
+  assert.match(sidebar, /<span>00-01<\/span><span>按鍵規則（速查）<\/span><small>—<\/small>/);
+  assert.equal(h.elements.get('engineering-sidebar-progress').textContent, '0 / 2 小步已確認');
+  h.listeners.click({ target: { closest: () => ({ disabled: false, dataset: { gotoChapter: 'ch01', gotoStep: 'ec01-01' } }) } });
+  assert.deepEqual([h.app.state.engineering.chapter, h.app.state.engineering.section, h.app.state.engineering.step], ['ch01', '01-01', 'ec01-01']);
+  assert.ok(h.requests.every((request) => request.method === 'GET'));
+});

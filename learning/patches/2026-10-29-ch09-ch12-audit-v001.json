@@ -1,0 +1,454 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-29",
+  "base": "learning/web/engineering-curriculum-v036.json",
+  "baseSha256": "fceaf4cc951316bfa5e827cd2a4d2bebb713318ecb7f909ad646ba216975db09",
+  "browser": "Chrome agent-created tab; http://127.0.0.1:8767/",
+  "method": "透過實際 CUA 頁面逐步按分頁並讀 DOM；六分頁完整範圍及三分頁範圍依 sections 記載。圖片 URL 出現在 DOM 不等於像素逐張目視；第 09 章首圖重查可載入，CADTRI-05、07、08、15 與 CADREST-02 為另行目視抽查。",
+  "sections": [
+    {
+      "section": "09-01",
+      "stepIds": [
+        "ch09-06-01-01",
+        "ch09-06-01-02",
+        "ch09-06-01-03"
+      ],
+      "stepCount": 3,
+      "mode": "six_tabs_each_step"
+    },
+    {
+      "section": "09-02",
+      "stepIds": [
+        "ch09-06-02-01",
+        "ch09-06-02-02",
+        "ch09-06-02-03",
+        "ch09-06-02-04"
+      ],
+      "stepCount": 4,
+      "mode": "six_tabs_each_step"
+    },
+    {
+      "section": "09-03",
+      "stepIds": [
+        "ch09-06-03-01",
+        "ch09-06-03-02",
+        "ch09-06-03-03"
+      ],
+      "stepCount": 3,
+      "mode": "six_tabs_each_step"
+    },
+    {
+      "section": "10-01",
+      "stepIds": [
+        "ch10-07-01-01",
+        "ch10-07-01-02",
+        "ch10-07-01-03"
+      ],
+      "stepCount": 3,
+      "mode": "six_tabs_each_step"
+    },
+    {
+      "section": "10-02",
+      "stepIds": [
+        "ch10-07-02-01",
+        "ch10-07-02-02",
+        "ch10-07-02-03"
+      ],
+      "stepCount": 3,
+      "mode": "six_tabs_each_step"
+    },
+    {
+      "section": "10-03",
+      "stepIds": [
+        "ch10-07-03-01",
+        "ch10-07-03-02",
+        "ch10-07-03-03"
+      ],
+      "stepCount": 3,
+      "mode": "six_tabs_each_step"
+    },
+    {
+      "section": "10-04",
+      "stepIds": [
+        "ch10-07-04-01",
+        "ch10-07-04-02",
+        "ch10-07-04-03"
+      ],
+      "stepCount": 3,
+      "mode": "six_tabs_each_step"
+    },
+    {
+      "section": "10-05",
+      "stepIds": [
+        "ch10-07-05-01",
+        "ch10-07-05-02",
+        "ch10-07-05-03"
+      ],
+      "stepCount": 3,
+      "mode": "six_tabs_each_step"
+    },
+    {
+      "section": "11-01",
+      "stepIds": [
+        "ch11-08-01-01",
+        "ch11-08-01-02",
+        "ch11-08-01-03"
+      ],
+      "stepCount": 3,
+      "mode": "detail_figures_record_each_step"
+    },
+    {
+      "section": "11-02",
+      "stepIds": [
+        "ch11-screw-surface-profile",
+        "ch11-screw-surface-add-screw",
+        "ch11-screw-surface-lead",
+        "ch11-screw-surface-iterations",
+        "ch11-screw-surface-resolution",
+        "ch11-screw-surface-inspect",
+        "ch11-screw-surface-save",
+        "ch11-screw-surface-reopen"
+      ],
+      "stepCount": 8,
+      "mode": "detail_figures_record_each_step"
+    },
+    {
+      "section": "11-03",
+      "stepIds": [
+        "ch11-boss-draft-observe",
+        "ch11-boss-draft-diameter",
+        "ch11-boss-draft-depth",
+        "ch11-boss-draft-save"
+      ],
+      "stepCount": 4,
+      "mode": "detail_figures_record_each_step"
+    },
+    {
+      "section": "11-04",
+      "stepIds": [],
+      "stepCount": 2,
+      "mode": "not_reviewed"
+    },
+    {
+      "section": "11-18",
+      "stepIds": [
+        "ch11-11-cad-thread-01",
+        "ch11-11-cad-thread-02",
+        "ch11-11-cad-thread-03",
+        "ch11-11-cad-thread-04",
+        "ch11-11-cad-thread-05",
+        "ch11-11-cad-thread-06",
+        "ch11-11-cad-thread-07",
+        "ch11-11-cad-thread-08",
+        "ch11-11-cad-thread-09",
+        "ch11-11-cad-thread-10",
+        "ch11-11-cad-thread-11",
+        "ch11-11-cad-thread-12",
+        "ch11-11-cad-thread-13",
+        "ch11-11-cad-thread-14",
+        "ch11-11-cad-thread-15",
+        "ch11-11-cad-thread-16"
+      ],
+      "stepCount": 16,
+      "mode": "detail_figures_record_each_step"
+    },
+    {
+      "section": "11-20",
+      "stepIds": [
+        "ch11-11-cad-recovery-01",
+        "ch11-11-cad-recovery-02",
+        "ch11-11-cad-recovery-03",
+        "ch11-11-cad-recovery-04",
+        "ch11-11-cad-recovery-05",
+        "ch11-11-cad-recovery-06",
+        "ch11-11-cad-recovery-07"
+      ],
+      "stepCount": 7,
+      "mode": "six_tabs_each_step"
+    },
+    {
+      "section": "11-19",
+      "stepIds": [
+        "ch11-11-cad-screw-01",
+        "ch11-11-cad-screw-02",
+        "ch11-11-cad-screw-03",
+        "ch11-11-cad-screw-04",
+        "ch11-11-cad-screw-05",
+        "ch11-11-cad-screw-06",
+        "ch11-11-cad-screw-07",
+        "ch11-11-cad-screw-08",
+        "ch11-11-cad-screw-09",
+        "ch11-11-cad-screw-10",
+        "ch11-11-cad-screw-11",
+        "ch11-11-cad-screw-12"
+      ],
+      "stepCount": 12,
+      "mode": "detail_figures_record_each_step"
+    },
+    {
+      "section": "11-13",
+      "stepIds": [],
+      "stepCount": 13,
+      "mode": "not_reviewed"
+    },
+    {
+      "section": "11-14",
+      "stepIds": [],
+      "stepCount": 14,
+      "mode": "not_reviewed"
+    },
+    {
+      "section": "11-11",
+      "stepIds": [],
+      "stepCount": 14,
+      "mode": "not_reviewed"
+    },
+    {
+      "section": "11-12",
+      "stepIds": [],
+      "stepCount": 11,
+      "mode": "not_reviewed"
+    },
+    {
+      "section": "11-05",
+      "stepIds": [],
+      "stepCount": 2,
+      "mode": "not_reviewed"
+    },
+    {
+      "section": "11-15",
+      "stepIds": [],
+      "stepCount": 17,
+      "mode": "not_reviewed"
+    },
+    {
+      "section": "11-06",
+      "stepIds": [],
+      "stepCount": 2,
+      "mode": "not_reviewed"
+    },
+    {
+      "section": "11-10",
+      "stepIds": [],
+      "stepCount": 8,
+      "mode": "not_reviewed"
+    },
+    {
+      "section": "11-16",
+      "stepIds": [],
+      "stepCount": 15,
+      "mode": "not_reviewed"
+    },
+    {
+      "section": "11-17",
+      "stepIds": [
+        "ch11-11-stl-hand-thread-01",
+        "ch11-11-stl-hand-thread-02",
+        "ch11-11-stl-hand-thread-03",
+        "ch11-11-stl-hand-thread-04",
+        "ch11-11-stl-hand-thread-05",
+        "ch11-11-stl-hand-thread-06",
+        "ch11-11-stl-sidebox-repair-01",
+        "ch11-11-stl-sidebox-repair-02",
+        "ch11-11-stl-sidebox-repair-03",
+        "ch11-11-stl-sidebox-repair-04",
+        "ch11-11-stl-side-box-body-repaired-01",
+        "ch11-11-stl-side-box-body-repaired-02",
+        "ch11-11-stl-side-box-body-repaired-03",
+        "ch11-11-stl-side-box-body-repaired-04",
+        "ch11-11-stl-side-box-body-repaired-05",
+        "ch11-11-stl-side-box-body-repaired-06",
+        "ch11-11-stl-side-box-lid-01",
+        "ch11-11-stl-side-box-lid-02",
+        "ch11-11-stl-side-box-lid-03",
+        "ch11-11-stl-side-box-lid-04",
+        "ch11-11-stl-side-box-lid-05",
+        "ch11-11-stl-side-box-lid-06",
+        "ch11-11-stl-cap-repair-01",
+        "ch11-11-stl-cap-repair-02",
+        "ch11-11-stl-cap-repair-03",
+        "ch11-11-stl-cap-repair-04",
+        "ch11-11-stl-side-cap-repaired-01",
+        "ch11-11-stl-side-cap-repaired-02",
+        "ch11-11-stl-side-cap-repaired-03",
+        "ch11-11-stl-side-cap-repaired-04",
+        "ch11-11-stl-side-cap-repaired-05",
+        "ch11-11-stl-side-cap-repaired-06",
+        "ch11-11-stl-four-boss-body-01",
+        "ch11-11-stl-four-boss-body-02",
+        "ch11-11-stl-four-boss-body-03",
+        "ch11-11-stl-four-boss-body-04",
+        "ch11-11-stl-four-boss-body-05",
+        "ch11-11-stl-four-boss-body-06",
+        "ch11-11-stl-four-boss-lid-01",
+        "ch11-11-stl-four-boss-lid-02",
+        "ch11-11-stl-four-boss-lid-03",
+        "ch11-11-stl-four-boss-lid-04",
+        "ch11-11-stl-four-boss-lid-05",
+        "ch11-11-stl-four-boss-lid-06"
+      ],
+      "stepCount": 44,
+      "mode": "detail_figures_record_each_step"
+    },
+    {
+      "section": "11-07",
+      "stepIds": [],
+      "stepCount": 2,
+      "mode": "not_reviewed"
+    },
+    {
+      "section": "11-08",
+      "stepIds": [],
+      "stepCount": 14,
+      "mode": "not_reviewed"
+    },
+    {
+      "section": "11-09",
+      "stepIds": [],
+      "stepCount": 6,
+      "mode": "not_reviewed"
+    },
+    {
+      "section": "12-01",
+      "stepIds": [
+        "ch12-dimension-chain"
+      ],
+      "stepCount": 1,
+      "mode": "six_tabs_each_step"
+    },
+    {
+      "section": "12-02",
+      "stepIds": [
+        "ch12-09-01-01"
+      ],
+      "stepCount": 1,
+      "mode": "six_tabs_each_step"
+    },
+    {
+      "section": "12-03",
+      "stepIds": [
+        "ch12-09-02-01"
+      ],
+      "stepCount": 1,
+      "mode": "six_tabs_each_step"
+    },
+    {
+      "section": "12-04",
+      "stepIds": [
+        "ch12-09-03-01",
+        "ch12-09-03-02"
+      ],
+      "stepCount": 2,
+      "mode": "six_tabs_each_step"
+    },
+    {
+      "section": "12-05",
+      "stepIds": [
+        "ch12-box-render-safe-copy",
+        "ch12-box-render-prepare",
+        "ch12-box-render-image",
+        "ch12-box-render-output"
+      ],
+      "stepCount": 4,
+      "mode": "six_tabs_each_step"
+    }
+  ],
+  "challengePagesVisited": [
+    "ch09 overview and existing drawing; hint details not individually expanded",
+    "ch10 overview and existing drawing; hint details not individually expanded",
+    "ch11 overview and source index; expandable items not individually opened",
+    "ch12 overview and existing drawing; hint details not individually expanded"
+  ],
+  "safety": "未按完成、未寫筆記或修改學員進度；未改課程、原始圖或 Blender 檔；本審查不是所有歷史原圖逐圖目視，也不將空白實物欄當作實測。",
+  "findings": [
+    {
+      "id": "F01",
+      "scope": "ch09 chapter summary",
+      "severity": "medium",
+      "issue": "首頁接續第 08 章參數盒字樣與本章歷史固定尺寸獨立副本的來源分支不同，未證直接連動。",
+      "correction": "keyed corrections chapterPatches.ch09"
+    },
+    {
+      "id": "F02",
+      "scope": "ch11-11-cad-thread-01",
+      "severity": "high",
+      "issue": "0.6 mm 第 12 步保存的中間成果錯標為第 1 步起始副本；scenario 實際從空 General 場景開始。",
+      "evidence": [
+        "learning/tutor/scenarios/cad_thread_triangle_trial_v001.py",
+        "learning/lesson11_cad_thread_optional_steps_v001.json"
+      ],
+      "correction": "keyed corrections patches.ch11-11-cad-thread-01"
+    },
+    {
+      "id": "F03",
+      "scope": "ch11-11-cad-thread-06,07",
+      "severity": "medium",
+      "issue": "滑鼠近似點選不保證示範 Distance 實際值；補充建立後可調整指定值，明示不是原圖展示的新事件。",
+      "correction": "keyed corrections patches.ch11-11-cad-thread-06,07"
+    },
+    {
+      "id": "F04",
+      "scope": "ch11-11-cad-thread-05,07,11,12,15",
+      "severity": "medium",
+      "issue": "部分成功畫面將程式 solver／座標讀回與畫面可見內容混寫；05 原圖沒有顯示 solver 或自由度。",
+      "correction": "keyed corrections patches 對應 ID"
+    },
+    {
+      "id": "F05",
+      "scope": "ch11-11-cad-screw-01",
+      "severity": "medium",
+      "issue": "起始圖底部有 CAD Sketcher 工具警告，成功顯示 Fully defined 並不能證工具可用。",
+      "evidence": [
+        "learning/evidence/parametric/2026-10-28-cad-thread-detached-screw-trial-v001/C2M-01-source.png",
+        "learning/journal/2026-10-28-cad-thread-tool-recovery-v001.md"
+      ],
+      "correction": "keyed corrections patches.ch11-11-cad-screw-01"
+    },
+    {
+      "id": "F06",
+      "scope": "11-17 六組 STL 讀取步",
+      "severity": "medium",
+      "issue": "示範為程式解析二進位 STL，原步沒有給學員可執行的方法。現補充 root 新增的唯讀 CLI，不能將新增終端機方法稱為 Blender GUI 實拍。",
+      "evidence": [
+        "learning/tutor/inspect_stl_v001.py"
+      ],
+      "correction": "keyed corrections 六個 *-04 ID"
+    },
+    {
+      "id": "F07",
+      "scope": "11-17 題圖與三角化修訂 STL",
+      "severity": "medium",
+      "issue": "題目列兩張修訂前來源網格圖，與三角化後 STL 的來源不同。重三角化局部表面有改變；有限抽樣不能證等同性。需在題圖旁就地註明此關係。",
+      "status": "需題目整合者處理"
+    },
+    {
+      "id": "F08",
+      "scope": "11-17,11-18,11-19,11-20 有原圖及程式讀值的步驟",
+      "severity": "medium",
+      "issue": "部分示範紀錄分頁顯示沒有原教材助教紀錄，而實際有本步獨立示範圖和讀值；需建立本步示範映射，區分歷史 sourceSteps。",
+      "status": "root 前端與資料映射處理"
+    },
+    {
+      "id": "F09",
+      "scope": "challenge ch09",
+      "severity": "medium",
+      "issue": "題目要求定位柱及燕尾兩分支，工程題圖僅燕尾；頁面誠實標示不是定位柱圖，定位柱／蓋孔來源網格圖仍待補。",
+      "status": "已通知整合者；不得用燕尾圖代替"
+    },
+    {
+      "id": "F10",
+      "scope": "challenge ch10",
+      "severity": "medium",
+      "issue": "題目要求盒體卡扣與三支試片比較，現工程圖僅試片；盒體卡扣／蓋裙來源網格圖仍待補。",
+      "status": "已通知整合者；不得將獨立試片當盒體卡扣"
+    }
+  ],
+  "correctionDraft": "learning/patches/2026-10-29-ch09-ch12-keyed-corrections-v001.json",
+  "localHashCheck": {
+    "scope": "v036 ch09–ch12 steps figures/artifacts with path and sha256",
+    "referenceCount": 272,
+    "missing": 0,
+    "hashMismatch": 0,
+    "meaning": "本機讀檔雜湊核對；不代表全部已在瀏覽器載入或逐圖目視，也不檢驗數值語義。"
+  }
+}

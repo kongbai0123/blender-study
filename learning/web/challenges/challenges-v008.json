@@ -1,0 +1,4131 @@
+{
+  "schemaVersion": 1,
+  "version": "v008",
+  "title": "小盒工程學習路徑：章節練習題",
+  "description": "12 章各一題試用草案；維持原課程進度，不等同實體驗證。",
+  "source": {
+    "path": "learning/web/engineering-curriculum-v035.json",
+    "sha256": "d40ffc3102585947f1a19d2e50d072f343cf25685df9d7e8555dfd702bc4fa91"
+  },
+  "chapters": [
+    {
+      "chapterId": "ch01",
+      "challengeId": "ch01-scene-v001",
+      "title": "辨認畫面並保存練習場景",
+      "workspaceLesson": "01",
+      "goal": "辨認自己的 Blender 畫面，保存可重新開啟的個人練習檔，並辨認小盒與唇邊。",
+      "requirements": [
+        "保留目前既有作品及未儲存內容；依實際畫面決定後續操作。",
+        "在自己的工作區另存 v001 與 v002；回報操作前的模式與選取物件。",
+        "觀察示範中蓋板、唇邊與配合表面。"
+      ],
+      "deliverable": "個人 .blend 檢查點及觀察紀錄。",
+      "hints": [
+        {
+          "text": "先觀察完整視窗，確認是設定、啟動卡片、預設場景或既有作品。",
+          "section": "01-01"
+        },
+        {
+          "text": "先另存自己的 v001，再練習選取、視角與精確移動。",
+          "section": "01-04"
+        },
+        {
+          "text": "另存 v002 並重新開啟；再看盒蓋與唇邊的原圖。",
+          "section": "01-09"
+        }
+      ],
+      "checks": [
+        "能說明目前模式及選取物件；檔案在自己的工作區並可重開。",
+        "指出蓋板及下方唇邊；看圖不等於量到間隙。"
+      ],
+      "limitations": [
+        "既有示範和學員完成分開。看到示範圖不代表已理解或完成。"
+      ],
+      "chapterTitle": "基本操作與小盒用途",
+      "sourceSteps": [
+        {
+          "chapterId": "ch01",
+          "sectionId": "01-01",
+          "label": "開啟 Blender 並確認畫面"
+        },
+        {
+          "chapterId": "ch01",
+          "sectionId": "01-04",
+          "label": "第一次另存 v001"
+        },
+        {
+          "chapterId": "ch01",
+          "sectionId": "01-09",
+          "label": "保存 v002 並重新開啟"
+        },
+        {
+          "chapterId": "ch01",
+          "sectionId": "01-10",
+          "label": "認識要做的小盒"
+        }
+      ],
+      "screenshot": {
+        "path": "learning/evidence/05/2026-10-22-lesson05-lid-demo-v001/05-05-11-separated-view.png",
+        "sha256": "bc12d5f81fd5424cef7dd64c295941c8a31de430a45818782e249f8b1d2fec64",
+        "caption": "相關教學操作參照，並非本題完整示範：2026-10-22 獨立 Blender 原圖：盒體與暫抬上蓋分開，可見板下的唇邊。抬高只為觀察；右側作用中物件與60×40×30讀值屬Body。這張圖不能直接量出配合間隙。"
+      },
+      "drawing": null,
+      "drawingStatus": "本題專屬工程圖尚待製作；不得以其他零件圖冒充。",
+      "evidenceStatus": "題目草案；圖片為既有獨立 Blender 示範參照，並非此題逐步驗證或學員完成。"
+    },
+    {
+      "chapterId": "ch02",
+      "challengeId": "ch02-clearance-v001",
+      "title": "算出總間隙並準備量測紀錄",
+      "workspaceLesson": null,
+      "goal": "分清名義尺寸、總間隙、單側間隙與實測。",
+      "requirements": [
+        "使用教材名義盒口內寬 56 mm 與唇邊外寬 55.6 mm，計算總間隙。",
+        "在唇邊置中條件下計算每側間隙；列出印表機、材料、噴嘴、切片條件及量具，不知道寫待定。"
+      ],
+      "deliverable": "分欄記錄名義值、總／單側間隙、列印條件及未來實測值。",
+      "hints": [
+        {
+          "text": "同方向名義尺寸相減；寫明這個差是兩側合計。",
+          "section": "02-01"
+        },
+        {
+          "text": "只有置中假設成立時，才能用總間隙除以二。",
+          "section": "02-01"
+        },
+        {
+          "text": "先列測量及列印條件，不以噴嘴直徑推定線寬或合格間隙。",
+          "section": "02-02"
+        }
+      ],
+      "checks": [
+        "56 − 55.6 = 0.4 mm 總間隙；置中假設下每側 0.2 mm。",
+        "實測和配合結果沒有資料時維持空白。"
+      ],
+      "limitations": [
+        "0.4 mm 是名義試驗值，不是實測或合格配合。"
+      ],
+      "chapterTitle": "公差、間隙與量測觀念",
+      "sourceSteps": [
+        {
+          "chapterId": "ch02",
+          "sectionId": "02-01",
+          "label": "總間隙與單側間隙"
+        },
+        {
+          "chapterId": "ch02",
+          "sectionId": "02-02",
+          "label": "列印條件與量具"
+        },
+        {
+          "chapterId": "ch02",
+          "sectionId": "02-03",
+          "label": "配合名詞與紀錄表"
+        }
+      ],
+      "screenshot": {
+        "path": "learning/evidence/05/2026-10-22-lesson05-lid-demo-v001/05-05-11-separated-view.png",
+        "sha256": "bc12d5f81fd5424cef7dd64c295941c8a31de430a45818782e249f8b1d2fec64",
+        "caption": "相關教學操作參照，並非本題完整示範：獨立 Blender 分離原圖用以辨認盒口與唇邊；尺寸依幾何讀值，不能從圖量得。"
+      },
+      "drawing": {
+        "path": "/challenges/lip-clearance-drawing-v001.svg",
+        "sha256": "b82736f3ac2380219dd37f6b77be2704df82183810bf0204339a7079957a117f",
+        "title": "小盒與環唇中央剖面；0.4 mm 為名義總間隙試驗值"
+      },
+      "drawingStatus": "名義總間隙 0.4 mm 為試驗值，置中時理論單邊 0.2 mm；未經實體試配或合格判定。",
+      "evidenceStatus": "題目草案；圖片為既有獨立 Blender 示範參照，並非此題逐步驗證或學員完成。"
+    },
+    {
+      "chapterId": "ch03",
+      "challengeId": "box-opening-v001",
+      "title": "依工程圖建立毫米開口盒",
+      "workspaceLesson": "04",
+      "goal": "依原盒工程圖建立頂部開口的小盒，辨認壁厚與內腔。",
+      "requirements": [
+        "外框名義尺寸 60 × 40 × 30 mm。",
+        "內腔 56 × 36 × 28 mm；四周壁厚及底厚各 2 mm。",
+        "建立自己的工作檔並依教學登記版本。"
+      ],
+      "deliverable": "可重開的個人 .blend 開口盒。",
+      "hints": [
+        {
+          "text": "設定毫米並檢查外框尺寸；先確認縮放。",
+          "section": "03-09"
+        },
+        {
+          "text": "在 Edit Mode 確認選取頂面再刪除。",
+          "section": "03-11"
+        },
+        {
+          "text": "使用 Solidify 核對方向與 2 mm 厚度。",
+          "section": "03-12"
+        }
+      ],
+      "checks": [
+        "對照名義外框、內腔及開口，並檢查網格與檔案版本。",
+        "確認前由學員回報，不以登記或示範作完成證據。"
+      ],
+      "limitations": [
+        "工程圖為名義草案，公差、材料與製程待定；本題不自動判題。"
+      ],
+      "drawing": {
+        "path": "/pilot/box-drawing-v002.svg",
+        "title": "原盒工程圖 v002（名義草案）"
+      },
+      "chapterTitle": "毫米建模與必要編輯",
+      "sourceSteps": [
+        {
+          "chapterId": "ch03",
+          "sectionId": "03-09",
+          "label": "建立毫米工作檔"
+        },
+        {
+          "chapterId": "ch03",
+          "sectionId": "03-10",
+          "label": "外形尺寸與 Apply Scale"
+        },
+        {
+          "chapterId": "ch03",
+          "sectionId": "03-11",
+          "label": "打開頂面"
+        },
+        {
+          "chapterId": "ch03",
+          "sectionId": "03-12",
+          "label": "加上 2 mm 壁厚"
+        },
+        {
+          "chapterId": "ch03",
+          "sectionId": "03-13",
+          "label": "檢查網格並保存原盒"
+        }
+      ],
+      "screenshot": {
+        "path": "learning/evidence/04/2026-10-22-lesson04-demo-v001/04-05-03-solidify-wall.png",
+        "sha256": "4478d502422e66e765358cc806d94d278573050c3071ca40c4fd30b8c58b3f38",
+        "caption": "相關教學操作參照，並非本題完整示範：Thickness 輸入 2mm（示範值）並勾 Even Thickness：外形不變，厚度往內長"
+      },
+      "drawingStatus": "題目工程圖為名義草案，非實體或製造合格證據。",
+      "evidenceStatus": "題目草案；圖片為既有獨立 Blender 示範參照，並非此題逐步驗證或學員完成。",
+      "progressKind": "pilot",
+      "animation": {
+        "path": "/pilot/box-demo.gif",
+        "sha256": "18f6811b12998d27ef49775a80405afe9799cb6909800f824d681264d147e875",
+        "title": "短動畫：沿 X 軸移動原盒",
+        "description": "在獨立 Blender 選取原盒後，於 3D Viewport 依序按 G、X、5、Enter，將原盒沿 X 正向移動 5 mm。這是移動練習，並非完整建模流程。",
+        "caption": "GIF 由實際操作時定時採樣的原生截圖製作，經減色並合併相同影格；不是連續錄影。助教示範不代表學員已完成。",
+        "records": [
+          {
+            "label": "動作前原圖",
+            "path": "learning/evidence/04/2026-10-28-pilot-box-move-record-v002/pilot-01-before.png"
+          },
+          {
+            "label": "動作後原圖",
+            "path": "learning/evidence/04/2026-10-28-pilot-box-move-record-v002/pilot-02-after.png"
+          }
+        ]
+      }
+    },
+    {
+      "chapterId": "ch04",
+      "challengeId": "ch04-render-v001",
+      "title": "為訊號站製作並重現一張渲染",
+      "workspaceLesson": "03",
+      "goal": "使用自己的訊號站練習相機、燈光、材質與可重現渲染。",
+      "requirements": [
+        "從第 03 章的個人場景另存渲染工作檔。",
+        "安排相機、燈光及材質，輸出一張圖；重開場景再渲染。"
+      ],
+      "deliverable": "場景檢查點與其關聯的兩次渲染輸出。",
+      "hints": [
+        {
+          "text": "先另存場景，再切換到相機視角檢查取景。",
+          "section": "04-01"
+        },
+        {
+          "text": "逐項調整燈光與材質，再執行 Render Image。",
+          "section": "04-03"
+        },
+        {
+          "text": "保存輸出並重開場景；再次渲染以核對來源。",
+          "section": "04-05"
+        }
+      ],
+      "checks": [
+        "渲染輸出可辨識訊號站且記錄來源場景版本。",
+        "重新開啟後可渲染；兩次結果差異如有發現應記錄。"
+      ],
+      "limitations": [
+        "渲染是外觀展示，不能證明尺寸、可列印性或配合。"
+      ],
+      "chapterTitle": "訊號站材質、燈光與渲染",
+      "sourceSteps": [
+        {
+          "chapterId": "ch04",
+          "sectionId": "04-01",
+          "label": "準備渲染工作檔"
+        },
+        {
+          "chapterId": "ch04",
+          "sectionId": "04-02",
+          "label": "安排相機"
+        },
+        {
+          "chapterId": "ch04",
+          "sectionId": "04-03",
+          "label": "安排燈光"
+        },
+        {
+          "chapterId": "ch04",
+          "sectionId": "04-04",
+          "label": "指定材質"
+        },
+        {
+          "chapterId": "ch04",
+          "sectionId": "04-05",
+          "label": "保存場景並輸出第一張圖"
+        },
+        {
+          "chapterId": "ch04",
+          "sectionId": "04-06",
+          "label": "重新開檔再渲染"
+        }
+      ],
+      "screenshot": {
+        "path": "learning/evidence/03/2026-10-22-lesson03-demo-v001/03-05-04-render-menu.png",
+        "sha256": "ed0ee355a415423f58a746500201feeb48604fdd1100f5ac99225b65bf992ac9",
+        "caption": "相關教學操作參照，並非本題完整示範：快捷操作原圖參照，圖中操作以原始註記為準：Render > Render Image：F12（既有原圖鍵標）"
+      },
+      "drawing": null,
+      "drawingStatus": "本題專屬工程圖尚待製作；不得以其他零件圖冒充。",
+      "evidenceStatus": "題目草案；圖片為既有獨立 Blender 示範參照，並非此題逐步驗證或學員完成。"
+    },
+    {
+      "chapterId": "ch05",
+      "challengeId": "ch05-fit-coupon-v001",
+      "title": "建立插銷與六孔配合試片",
+      "workspaceLesson": "05",
+      "goal": "建立可用於比較配合的試片，區分名義總間隙與實測。",
+      "requirements": [
+        "依既有示範建立名義 10 × 10 × 8 mm 的方形插銷。",
+        "參照既有孔板示範建立六個試驗點：0.1～0.6 mm 總間隙。",
+        "保留試片版本與每個孔的識別方式。"
+      ],
+      "deliverable": "插銷及六孔孔板的草案 .blend 與孔位、試驗點紀錄。",
+      "hints": [
+        {
+          "text": "先建立並核對插銷。",
+          "section": "05-01"
+        },
+        {
+          "text": "依孔板步驟依序建立切割體與名義孔尺寸。",
+          "section": "05-02"
+        },
+        {
+          "text": "逐一核對孔位及凹點識別，另存版本。",
+          "section": "05-02"
+        }
+      ],
+      "checks": [
+        "記錄六個總間隙各自的名義值，辨認孔對應的數字。",
+        "檢查薄肉、孔位與模型；實體能否辨識待切片及列印。"
+      ],
+      "limitations": [
+        "0.1～0.6 mm 是試驗點，不是已驗證可用範圍。",
+        "凹點間薄肉約 0.4 mm；是否保留需切片與實印確認。"
+      ],
+      "drawing": {
+        "path": "/challenges/fit-trial-drawing-v003.svg",
+        "title": "插銷與孔板工程題圖（名義草案；不代表已匯出或實印）"
+      },
+      "chapterTitle": "配合試片與試驗設計",
+      "sourceSteps": [
+        {
+          "chapterId": "ch05",
+          "sectionId": "05-01",
+          "label": "方形插銷"
+        },
+        {
+          "chapterId": "ch05",
+          "sectionId": "05-02",
+          "label": "六孔試驗孔板"
+        }
+      ],
+      "screenshot": {
+        "path": "learning/evidence/05/2026-10-22-lesson05-holes-view-v001/05-03-04-supplement-oblique-verified.png",
+        "sha256": "701acc87efbd4e39f2267d6dfa4a5f8345e91fb8078a213b0a8749f7aa56ab32",
+        "caption": "相關教學操作參照，並非本題完整示範：原步驟實拍參照（請對照本圖原說明，未必顯示此小步的全部操作）：2026-10-22 實拍：獨立 Blender 開啟同一孔板 v001，僅旋轉與放大視角；六孔、板厚與 1～6 點凹記號可辨，SHA-256 不變。0.1～0.6 mm 為總間隙試驗點，尚未列印或試配，沒有合格值。"
+      },
+      "drawingStatus": "題目工程圖為名義草案，非實體或製造合格證據。",
+      "evidenceStatus": "題目草案；圖片為既有獨立 Blender 示範參照，並非此題逐步驗證或學員完成。"
+    },
+    {
+      "chapterId": "ch06",
+      "challengeId": "ch06-export-measure-v001",
+      "title": "匯出試片並規劃量測試配",
+      "workspaceLesson": "05",
+      "goal": "將插銷與孔板匯出，核對數位尺寸並規劃可追溯的實體試配。",
+      "requirements": [
+        "分別匯出插銷與孔板 STL，記錄對應場景版本。",
+        "重新匯入或在切片器核對尺寸、方向及落床。",
+        "實際列印後逐孔記錄量測、試插及條件；尚未執行時留空。"
+      ],
+      "deliverable": "模型與 STL 版本關聯、數位尺寸核對及待實測表。",
+      "hints": [
+        {
+          "text": "先確認匯出選取物件與 STL 選項，再分別輸出。",
+          "section": "06-02"
+        },
+        {
+          "text": "STL 本身不標示單位，本教材按 mm 檢查。",
+          "section": "06-02"
+        },
+        {
+          "text": "實印後記錄材料、條件、量具及各孔試配。",
+          "section": "06-03"
+        }
+      ],
+      "checks": [
+        "數位外框、來源場景與匯出檔可追溯。",
+        "尚無實體資料時不得填寫通過或選定合格間隙。"
+      ],
+      "limitations": [
+        "目前不預設材料、機型、線寬、方向或支撐；實測與合格狀態待實際證據。"
+      ],
+      "drawing": {
+        "path": "/challenges/fit-trial-drawing-v003.svg",
+        "title": "插銷與孔板工程題圖（名義草案；不代表已匯出或實印）"
+      },
+      "chapterTitle": "匯出、列印、量測與試配",
+      "sourceSteps": [
+        {
+          "chapterId": "ch06",
+          "sectionId": "06-01",
+          "label": "匯出原盒並在切片軟體核對"
+        },
+        {
+          "chapterId": "ch06",
+          "sectionId": "06-02",
+          "label": "匯出試片並重新匯入核對"
+        },
+        {
+          "chapterId": "ch06",
+          "sectionId": "06-03",
+          "label": "列印試片並逐孔試配"
+        },
+        {
+          "chapterId": "ch06",
+          "sectionId": "06-04",
+          "label": "列印原盒並量測"
+        },
+        {
+          "chapterId": "ch06",
+          "sectionId": "06-05",
+          "label": "匯出上蓋並核對"
+        }
+      ],
+      "screenshot": {
+        "path": "learning/evidence/05/2026-10-22-lesson05-export-view-v001/05-04-03-pin-dimensions.png",
+        "sha256": "2b88890684129babf1720f083d62ad14c91e344d85441c89d7760b101f73aa65",
+        "caption": "相關教學操作參照，並非本題完整示範：原步驟實拍參照（請對照本圖原說明，未必顯示此小步的全部操作）：2026-10-22 獨立 Blender 實拍：插銷 STL 重新匯入：Dimensions 10 × 10 × 8 mm；讀取同一 v003 匯出 STL 的同雜湊副本，Scale 1，Non Manifold 0。STL 座標按毫米解讀，尚未列印或試配；原圖未修改。"
+      },
+      "drawingStatus": "題目工程圖為名義草案，非實體或製造合格證據。",
+      "evidenceStatus": "題目草案；圖片為既有獨立 Blender 示範參照，並非此題逐步驗證或學員完成。"
+    },
+    {
+      "chapterId": "ch07",
+      "challengeId": "ch07-sketch-v001",
+      "title": "畫矩形草圖並標尺寸",
+      "workspaceLesson": null,
+      "workspaceId": "engineering-parametric",
+      "goal": "用草圖、尺寸約束及拉伸，理解外框與內腔如何建立。",
+      "requirements": [
+        "確認 CAD Sketcher 擴充套件與環境；在工程練習副本中畫矩形並標長寬。",
+        "依教材建立實心體，再建立內腔草圖及切割。",
+        "以自己的檔案另存並核對約束狀態。"
+      ],
+      "deliverable": "可重開的個人草圖與盒體草案。",
+      "hints": [
+        {
+          "text": "先確認 CAD Sketcher 與獨立工作區。",
+          "section": "07-01"
+        },
+        {
+          "text": "建立 XY 草圖、畫矩形並標註 X／Y。",
+          "section": "07-02"
+        },
+        {
+          "text": "先拉伸成實心體，再建立並定位內腔。",
+          "section": "07-03"
+        }
+      ],
+      "checks": [
+        "標註與選取的是正確草圖和方向；另存後能重開核對。",
+        "內腔位置與尺寸需實際檢查，不能只看外框。"
+      ],
+      "limitations": [
+        "CAD Sketcher 需額外安裝；本章詳細文字與操作仍須逐步改寫及實測。",
+        "示範原圖不代表學員已完成。"
+      ],
+      "chapterTitle": "草圖、標尺寸與約束",
+      "sourceSteps": [
+        {
+          "chapterId": "ch07",
+          "sectionId": "07-01",
+          "label": "安裝 CAD Sketcher 與工程工作區"
+        },
+        {
+          "chapterId": "ch07",
+          "sectionId": "07-02",
+          "label": "草圖與尺寸約束"
+        },
+        {
+          "chapterId": "ch07",
+          "sectionId": "07-03",
+          "label": "拉伸成實心體"
+        },
+        {
+          "chapterId": "ch07",
+          "sectionId": "07-04",
+          "label": "內腔草圖與切割"
+        }
+      ],
+      "screenshot": {
+        "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-rectangle-v002/CAD-ENV-08-height-dimension.png",
+        "sha256": "87164ea22af1d7cac054f96f513dd16ddfbcc39ef06098083524cfd659e34f9d",
+        "caption": "相關教學操作參照，並非本題完整示範：獨立 Blender 原圖：側欄 60／40 與 Fully defined。"
+      },
+      "drawing": {
+        "path": "/challenges/sketch-constraint-drawing-v002.svg",
+        "sha256": "53741eccd9b255b36503f131b26c06ef38dd4e0e5c6a6cdebfb9d7c4505adcfe",
+        "title": "XY 草圖尺寸題圖：60×40、80×40 為不同保存階段，不是同時存在的兩件零件"
+      },
+      "drawingStatus": "同一草圖兩個不同保存階段；此圖不代表內腔、上蓋或拉伸結果已完成。",
+      "evidenceStatus": "題目草案；圖片為既有獨立 Blender 示範參照，並非此題逐步驗證或學員完成。"
+    },
+    {
+      "chapterId": "ch08",
+      "challengeId": "ch08-linked-box-v001",
+      "title": "讓盒體、內腔與上蓋連動",
+      "workspaceLesson": null,
+      "workspaceId": "engineering-parametric",
+      "goal": "理解外框、內腔及蓋板的參數來源並試驗變更。",
+      "requirements": [
+        "從固定內腔反例辨認尺寸變動後的失配。",
+        "在適用範本及操作流程中連接 X／Y，檢查內腔與上蓋。",
+        "挑多組尺寸記錄讀值；超界和不支援操作需如實標記。"
+      ],
+      "deliverable": "參數來源紀錄、連動草案與多尺寸數位核對結果。",
+      "hints": [
+        {
+          "text": "先把固定內腔的結果另存，觀察外框改變後的差別。",
+          "section": "08-02"
+        },
+        {
+          "text": "先確認內腔 X，再處理 Y 和所需更新／求解。",
+          "section": "08-03"
+        },
+        {
+          "text": "建立上蓋連動後，逐組核對尺寸；受控面板為選修。",
+          "section": "08-06"
+        }
+      ],
+      "checks": [
+        "記錄各組外框、內腔與上蓋讀值及其對應檔案版本。",
+        "有錯誤或無法確認回復時停止並保留原副本。"
+      ],
+      "limitations": [
+        "手工面板僅支援指定示範模板副本；原生欄位、存檔與匯出可繞過防護。",
+        "理論未夾限範圍不是製造或配合合格範圍；無完整干涉或實體試配證據。"
+      ],
+      "chapterTitle": "盒體與上蓋參數連動",
+      "sourceSteps": [
+        {
+          "chapterId": "ch08",
+          "sectionId": "08-02",
+          "label": "為什麼需要連動：固定內腔的反例"
+        },
+        {
+          "chapterId": "ch08",
+          "sectionId": "08-03",
+          "label": "內腔 X 方向的 Driver"
+        },
+        {
+          "chapterId": "ch08",
+          "sectionId": "08-04",
+          "label": "內腔 Y 方向與安全檢查"
+        },
+        {
+          "chapterId": "ch08",
+          "sectionId": "08-06",
+          "label": "上蓋形狀鍵與 Driver"
+        },
+        {
+          "chapterId": "ch08",
+          "sectionId": "08-07",
+          "label": "多組尺寸與超界反例"
+        },
+        {
+          "chapterId": "ch08",
+          "sectionId": "08-08",
+          "label": "選修：受控尺寸面板"
+        }
+      ],
+      "screenshot": {
+        "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-outer-edit-probe-v004/EDIT-06-x70y50.png",
+        "sha256": "816042142fb0f65b36e0d0e50b84f596feccd83028e61859aa77390bcf88d986",
+        "caption": "相關教學操作參照，並非本題完整示範：原圖：側欄顯示 X70／Y50；切割體界限與邊界差需看程式讀值。"
+      },
+      "drawing": {
+        "path": "/challenges/parametric-box-drawing-v003.svg",
+        "sha256": "9ec89fec47a4ac5fd7e7a97569d720398ffb30011bbc3fd15218580dd952616d",
+        "title": "80×50 固定基準盒與上蓋：名義幾何，不是自動連動或實體配合驗證"
+      },
+      "drawingStatus": "固定基準幾何圖，不代表圖中已建立自動連動；0.4 mm 為試驗總間隙，完整干涉和實體試配待驗。",
+      "evidenceStatus": "題目草案；圖片為既有獨立 Blender 示範參照，並非此題逐步驗證或學員完成。"
+    },
+    {
+      "chapterId": "ch09",
+      "challengeId": "ch09-join-v001",
+      "title": "比較定位榫與燕尾滑蓋",
+      "workspaceLesson": "06",
+      "goal": "以既有盒體觀察兩種定位與滑動機構，並分別核對版本。",
+      "requirements": [
+        "依定位榫示範建立獨立草案；辨認環唇與定位柱可能互相牽制。",
+        "依燕尾示範建立獨立草案，記錄水平總間隙與候選方向。",
+        "匯出示範分支並重新匯入核對尺寸。"
+      ],
+      "deliverable": "定位榫與燕尾的分支模型、來源及數位核對紀錄。",
+      "hints": [
+        {
+          "text": "先查看定位柱、柱孔與環唇之間的關係。",
+          "section": "09-01"
+        },
+        {
+          "text": "在另一個分支觀察導軌及上蓋的移動。",
+          "section": "09-02"
+        },
+        {
+          "text": "分別匯出盒體與滑蓋，再核對 STL 外框。",
+          "section": "09-03"
+        }
+      ],
+      "checks": [
+        "清楚記錄兩分支來源、方向與名義間隙。",
+        "辨識燕尾導軌下方水平懸空面；支撐及方向待評估。"
+      ],
+      "limitations": [
+        "0.4 mm 水平總間隙是試驗值，非合格值。",
+        "定位柱與環唇重複定位及燕尾懸空是待驗風險，不表示已實印失敗。"
+      ],
+      "chapterTitle": "定位榫與燕尾滑蓋",
+      "sourceSteps": [
+        {
+          "chapterId": "ch09",
+          "sectionId": "09-01",
+          "label": "定位榫"
+        },
+        {
+          "chapterId": "ch09",
+          "sectionId": "09-02",
+          "label": "燕尾滑蓋"
+        },
+        {
+          "chapterId": "ch09",
+          "sectionId": "09-03",
+          "label": "匯出與數位核對"
+        }
+      ],
+      "screenshot": {
+        "path": "learning/evidence/06/2026-10-25-lesson06-dovetail-demo-v002/06-02-18-slide-x30.png",
+        "sha256": "bdb153cb11647b779e878b08a0439c8053e6b5ac50e9a53ad9ee98e0951bd028",
+        "caption": "相關教學操作參照，並非本題完整示範：原步驟實拍參照（請對照本圖原說明，未必顯示此小步的全部操作）：2026-10-25 獨立Blender原始實拍：滑蓋X+30，仍咬合30 mm。作用中為Body，右側60 × 40 × 30屬盒體；滑蓋位移另存實際網格核對。仍是幾何試驗。 原圖未修改。"
+      },
+      "drawing": {
+        "path": "/challenges/dovetail-trial-drawing-v002.svg",
+        "sha256": "8eda077de7b4944fba3cd975102047483ede2a9d2547f45a5fabb30ffc6fc421",
+        "title": "燕尾滑蓋草案截面圖；獨立滑蓋分支，非定位柱或實體配合驗證"
+      },
+      "drawingStatus": "獨立燕尾滑蓋分支的截面圖；不代表定位柱圖、實體列印、試配或配合合格。",
+      "evidenceStatus": "題目草案；圖片為既有獨立 Blender 示範參照，並非此題逐步驗證或學員完成。"
+    },
+    {
+      "chapterId": "ch10",
+      "challengeId": "ch10-snap-fit-v001",
+      "title": "分析卡扣與臂長對照試片",
+      "workspaceLesson": "07",
+      "goal": "辨識懸臂卡扣參數、候選列印方向與對照試片的用途。",
+      "requirements": [
+        "區分臂長 L、臂厚 h、倒扣 u、所需及允許撓度；未確定的材料與允許應變留待定。",
+        "依示範比較卡扣草案及 A_L19、B_L17、C_L21 對照試片。",
+        "列出方向、支撐、試配及量測紀錄欄位。"
+      ],
+      "deliverable": "草案參數、候選方向與試片版本比較表。",
+      "hints": [
+        {
+          "text": "先核對原盒尺寸；不要把盒壁厚直接當臂厚。",
+          "section": "10-01"
+        },
+        {
+          "text": "觀察卡扣及上蓋的幾何關係，再看朝下表面。",
+          "section": "10-02"
+        },
+        {
+          "text": "比較三種臂長並記錄 STL 來源，實印結果留空。",
+          "section": "10-05"
+        }
+      ],
+      "checks": [
+        "L、h、u、δ_req 與 δ_allow 定義不混淆。",
+        "記錄候選方向與需要實測的條件，未測試項目留空。"
+      ],
+      "limitations": [
+        "材料、允許應變與根部條件待定；方向與支撐為候選。",
+        "三個臂長僅為幾何對照，不代表已改善、配合或強度合格。"
+      ],
+      "chapterTitle": "懸臂卡扣與對照試片",
+      "sourceSteps": [
+        {
+          "chapterId": "ch10",
+          "sectionId": "10-01",
+          "label": "參數與估算條件"
+        },
+        {
+          "chapterId": "ch10",
+          "sectionId": "10-02",
+          "label": "卡扣建模"
+        },
+        {
+          "chapterId": "ch10",
+          "sectionId": "10-03",
+          "label": "列印方向與 Overhang"
+        },
+        {
+          "chapterId": "ch10",
+          "sectionId": "10-04",
+          "label": "卡扣 STL 匯出與核對"
+        },
+        {
+          "chapterId": "ch10",
+          "sectionId": "10-05",
+          "label": "對照試片"
+        }
+      ],
+      "screenshot": {
+        "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/07-02-21-lid-raised.png",
+        "sha256": "5da0a1365b79f87138ddc12bdf5c249f9dfa0407f2935893ccd3dedcc2a4f2d2",
+        "caption": "相關教學操作參照，並非本題完整示範：原步驟實拍參照（請對照本圖原說明，未必顯示此小步的全部操作）：2026-10-25 · 助教獨立Blender實拍：Lid僅暫抬12mm展示單支外掛卡扣與蓋裙，隨後已移回名義位置保存。右側active Body外框60×44.5×30mm；此圖不是變形或接觸模擬。"
+      },
+      "drawing": {
+        "path": "/challenges/snapfit-coupons-drawing-v003.svg",
+        "sha256": "0f6c6a0bfe6ed2aad58f54f3b2061684bb8df361a5fb6bddc3da0f305905b129",
+        "title": "三件卡扣對照試片名義幾何圖；臂長非已驗證力學有效長，未證調整改善"
+      },
+      "drawingStatus": "三件僅為卡扣幾何試片；標註臂長不等於已驗證力學有效長，未證調整改善或強度合格。",
+      "evidenceStatus": "題目草案；圖片為既有獨立 Blender 示範參照，並非此題逐步驗證或學員完成。"
+    },
+    {
+      "chapterId": "ch11",
+      "challengeId": "ch11-thread-v001",
+      "title": "比較列印螺紋與金屬緊固件",
+      "workspaceLesson": "08",
+      "goal": "辨認兩條螺紋／固定路線與建模前仍缺少的規格。",
+      "requirements": [
+        "分別列出自訂列印螺紋，以及螺絲／熱熔螺母與螺絲柱的規格需求。",
+        "依序觀察手工牙型、續作外牙、盒側保護蓋與已選金屬五金的平面蓋分支。",
+        "明列選型、原廠建議與自訂試驗值；塑膠材料、列印及實體試配維持待定。"
+      ],
+      "deliverable": "兩條路線的參數表、示範限制與後續試驗計畫。",
+      "hints": [
+        {
+          "text": "先把螺距、導程、頭數和迭代次數分開。",
+          "section": "11-01"
+        },
+        {
+          "text": "觀察 Screw 設定與未封閉的曲面。",
+          "section": "11-02"
+        },
+        {
+          "text": "盲孔柱草案未接盒體；查看其對邊／對頂與孔深定義。",
+          "section": "11-03"
+        }
+      ],
+      "checks": [
+        "Angle 360° 且 Object Screw 關閉時 Screw 對應導程；單線時導程才等於螺距。",
+        "比較 v005 候選交疊與修正版的有限數位檢查；記錄牙形、對件、材料及實體試配仍待驗。"
+      ],
+      "limitations": [
+        "Screw 開放曲面不等於可列印封閉螺紋；原盲孔柱示範與後續盒體接合草案為不同版本，兩者均未完成五金或實體驗證。",
+        "不推定完整 ISO 標準、公差表、配合或強度合格。",
+        "內牙試塊並非盒蓋；工具由程式建立、牙端截斷且無間隙補償，未宣稱 ISO 牙型或配合合格。",
+        "v010 柱芯旋轉 5.625°、高約 4.8 mm，改變幾何；數位診斷不等於無自交、ISO 符合、可列印或配合合格。",
+        "盒側接口不是螺旋上蓋；內牙試塊不是已核准對件，靜態外框與局部射線不構成完整動態干涉檢查；另有細長三角形待評估。"
+      ],
+      "chapterTitle": "螺紋與螺絲固定",
+      "sourceSteps": [
+        {
+          "chapterId": "ch11",
+          "sectionId": "11-01",
+          "label": "螺紋規格與參數"
+        },
+        {
+          "chapterId": "ch11",
+          "sectionId": "11-02",
+          "label": "Screw 開放曲面（觀察示範）"
+        },
+        {
+          "chapterId": "ch11",
+          "sectionId": "11-03",
+          "label": "盲孔柱草案（觀察示範）"
+        },
+        {
+          "chapterId": "ch11",
+          "sectionId": "11-04",
+          "label": "外螺紋"
+        },
+        {
+          "chapterId": "ch11",
+          "sectionId": "11-05",
+          "label": "內螺紋"
+        },
+        {
+          "chapterId": "ch11",
+          "sectionId": "11-06",
+          "label": "螺絲柱"
+        },
+        {
+          "chapterId": "ch11",
+          "sectionId": "11-07",
+          "label": "列印與試鎖"
+        },
+        {
+          "chapterId": "ch11",
+          "sectionId": "11-10",
+          "label": "獨立盲孔柱"
+        },
+        {
+          "chapterId": "ch11",
+          "sectionId": "11-08",
+          "label": "外牙待修研究草案"
+        },
+        {
+          "chapterId": "ch11",
+          "sectionId": "11-09",
+          "label": "內牙試塊"
+        },
+        {
+          "chapterId": "ch11",
+          "sectionId": "11-11",
+          "label": "修訂外牙"
+        },
+        {
+          "chapterId": "ch11",
+          "sectionId": "11-12",
+          "label": "盒側外牙接口"
+        },
+        {
+          "chapterId": "ch11",
+          "sectionId": "11-13",
+          "label": "手工三點輪廓"
+        },
+        {
+          "chapterId": "ch11",
+          "sectionId": "11-14",
+          "label": "手工輪廓續作外牙"
+        },
+        {
+          "chapterId": "ch11",
+          "sectionId": "11-15",
+          "label": "盒側保護蓋"
+        },
+        {
+          "chapterId": "ch11",
+          "sectionId": "11-16",
+          "label": "已選五金與平面蓋"
+        }
+      ],
+      "screenshot": {
+        "path": "/challenges/side-cap-v002-17.png",
+        "sha256": "032da2ea8dd60433c1e6a9f1e92d4832d7e1b442c0cf7f95228ca61fd7726edf",
+        "caption": "獨立 Blender 的保護蓋內部視角；局部影像不能證明完整牙形或實體旋合。"
+      },
+      "drawing": {
+        "path": "/challenges/side-thread-cap-drawing-v002.svg",
+        "title": "側向保護蓋 v002 工程題圖",
+        "sha256": "a4f44ea14b7f4a9cbaf42dc112c35864683d2dbc872f64211aed2c187a0d1880"
+      },
+      "drawingStatus": "側向保護蓋 v002 的三視圖與實際網格剖切；不是既有平面上蓋或完整標準隱線圖，徑向和軸向間隙均為試驗值。",
+      "evidenceStatus": "獨立 Blender 示範與局部數位檢查，不代表學員完成或實體合格；工程題圖與操作原圖分開標示。",
+      "extraDemos": [
+        {
+          "title": "外螺紋封閉網格草案：程式建立、GUI 檢視",
+          "description": "輪廓與封閉網格由程式建立；獨立 Blender GUI 示範觀察、非流形檢查、另存與重開，不是 GUI 手工建模。兩端牙形不完整；材料、配合、切片、實印與強度未驗。",
+          "screenshot": {
+            "path": "learning/evidence/08/2026-10-28-closed-external-thread-probe-v001/08-CLOSED-02-framed.png",
+            "sha256": "7369128ddf8ef7e784b15fe4ca357676b3948811a95bde4c438048aa9029253a",
+            "caption": "獨立 Blender GUI 使用 Frame Selected 與視角鍵觀察程式建立的草案；封閉性與尺寸另依摘要讀值。"
+          },
+          "summaryPath": "learning/evidence/08/2026-10-28-closed-external-thread-probe-v001/safe-summary-v001.json",
+          "summarySha256": "b9b8f812696d78200bc9692cd002ca1b6cb899e24f9bb07db9ec0184b21d1a6b"
+        },
+        {
+          "title": "盲孔柱與盒體接合：GUI Boolean Union 草案",
+          "description": "盲孔柱由程式建立；獨立 Blender GUI 示範移位、Boolean Union、檢查、另存及重開。尚無蓋孔、指定五金或實體強度、配合及試配結果。",
+          "screenshot": {
+            "path": "learning/evidence/08/2026-10-28-boss-box-join-trial-v002/08-boss-07-reopened.png",
+            "sha256": "e16ab17615e5115f09931019d127d451cd37bdc5f8e1f0f701333a84a9212e45",
+            "caption": "獨立 Blender 重開合併後的盒體及柱；網格數值與限制另依摘要，不代表實體合格。"
+          },
+          "summaryPath": "learning/evidence/08/2026-10-28-boss-box-join-trial-v002/public-summary-v001.json",
+          "summarySha256": "abb0284919bbfac43492cdd61889ea161ef4113316f30c9b1e56e355691eea83"
+        }
+      ],
+      "supplementalDrawings": [
+        {
+          "path": "/challenges/m3-four-boss-layout-drawing-v001.svg",
+          "title": "四柱與平面上蓋孔工程題圖",
+          "description": "已選金屬零件僅列原廠名義資料，未建金屬實體；蓋孔 Ø3.4 為試驗值，實體安裝及合格待驗。",
+          "sha256": "1c64559e52a5d59d616aa629c482b2e7bcfba9d5289c91af90272891601337e5"
+        },
+        {
+          "path": "/challenges/box-external-thread-drawing-v003.svg",
+          "title": "盒側外牙接合草案的網格工程圖",
+          "sha256": "a18d1db95af220e0fda6dcc63d67f0d23c80fd8134525a68f057bd31a151f63f",
+          "description": "以新版盒側接合網格製作的工程題圖；三視圖及剖切為數位草案，可見邊取樣並非完整標準隱線；不含上蓋，不代表完整干涉、製造或配合合格。"
+        },
+        {
+          "path": "/challenges/manual-thread-profile-drawing-v001.svg",
+          "title": "手工牙型輪廓工程題圖",
+          "description": "源自 GUI v004 實際網格的無約束三點輪廓，與 13 步 v005 為不同場次。",
+          "sha256": "989e11e99b8d6ba10c4658aa7b5ce40c02b856d66fc05d955d73a3c39d557c7e"
+        },
+        {
+          "path": "/challenges/manual-boss-drawing-v002.svg",
+          "title": "獨立盲孔柱的實際網格題圖（草案）",
+          "sha256": "04bcaff5010e9fa84699690d3457836001f7cff2b3e31a0aabe39d5d4716a1c3",
+          "description": "獨立盲孔柱的網格投影與剖面，不是盒側螺紋接合或指定五金的正式柱。"
+        },
+        {
+          "path": "/challenges/inner-thread-block-drawing-v002.svg",
+          "title": "內牙試塊的實際網格題圖（草案）",
+          "description": "16 × 16 × 3 mm 試塊，不是盒蓋；程式預建切割工具的牙端截斷、無間隙補償，非 ISO 牙型，未完成實體驗證。",
+          "sha256": "7850f62e1f28bb2bfc2793af86f0fdf6561c2541ece6911ba3fe7a4eb9399125"
+        }
+      ],
+      "demonstrations": [
+        {
+          "title": "手工三點輪廓（13 步）",
+          "section": "11-13",
+          "description": "獨立 Blender GUI 逐點建立無約束 mesh 邊輪廓，非 CAD 約束草圖。圖片是 v005 另次實作；後續外牙與工程圖使用 v004，數值一致但非同一次執行。",
+          "startingScene": {
+            "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/demo-files/u08_thread_reference_v001.blend",
+            "sha256": "9bda36c10fd916ef9cbe688f5ca56dcf8cfa0adb83d684300e60196225589d8f"
+          },
+          "sourceVersions": [
+            {
+              "label": "v005 實拍輪廓",
+              "path": "learning/evidence/08/2026-10-28-external-thread-hand-profile-gui-v005/demo-files/u11_hand_profile_v001.blend",
+              "sha256": "ea8f0364bba62b138e0ee9aed8478c3239afebe5a5cb1dfec7c7a91f1488bf9a"
+            },
+            {
+              "label": "v004 續作輪廓",
+              "path": "learning/evidence/08/2026-10-28-external-thread-hand-profile-gui-v004/demo-files/u11_hand_profile_v001.blend",
+              "sha256": "1bfb2d15269fbb1debe325e18904cec6ee654a91a611ee177dbb1c89b7b713c6"
+            }
+          ],
+          "steps": [
+            {
+              "id": "11-hand-profile-01",
+              "goal": "新增平面",
+              "context": "單位為毫米；程式隱藏參考盒體，未建立網格。",
+              "operation": [
+                "開啟參考場景複本；F3 搜尋 Add Plane，再以 F2 命名 Thread_Hand_Profile。"
+              ],
+              "success": "平面因預設尺寸太大而超出畫面；N 側欄顯示約 2000 × 2000 mm。",
+              "readings": [
+                "程式讀回 4 點、4 邊、1 面；此平面接下來會合併成單點。"
+              ],
+              "limits": [
+                "此為無幾何約束的 Blender mesh 邊輪廓，不是 CAD Sketcher 約束草圖；數值依名義設計輸入。",
+                "這 13 張畫面來自 GUI v005 重複試作；後續完整外牙實際使用另次 GUI v004 輪廓，兩次獨立讀值的頂點座標一致，不是同一場次。",
+                "本輪廓是三角草案，不宣稱 ISO 螺紋；全程建點與邊為 GUI，場景隱藏、讀值與檔案欄位由程式處理。",
+                "只有三條邊不代表已封閉的實體；Screw、封端和與芯柱聯集需另行完成與檢查。",
+                "材料、列印、量測、配合、合格間隙及強度均待定。"
+              ],
+              "screenshot": {
+                "path": "/challenges/hand-profile-v005-01.png",
+                "sha256": "fadf9f70843a3eb34d76c422923302572243f04d7fd2ac57ce2670d8de18b6d2"
+              }
+            },
+            {
+              "id": "11-hand-profile-02",
+              "goal": "將平面合併為一點",
+              "context": "須在頂點選取模式，否則合併後可能沒有選中點。",
+              "operation": [
+                "Tab 進入 Edit Mode，按 1 切換頂點、A 全選，F3 搜尋 Merge at Center，再按 A 確認選到單點；數字鍵盤 1 看前視圖。"
+              ],
+              "success": "前視圖中平面變成單個點，尺度較遠。",
+              "readings": [
+                "程式讀回單點 (0,0,0)，0 邊、0 面；選取數為 1。"
+              ],
+              "limits": [
+                "此為無幾何約束的 Blender mesh 邊輪廓，不是 CAD Sketcher 約束草圖；數值依名義設計輸入。",
+                "這 13 張畫面來自 GUI v005 重複試作；後續完整外牙實際使用另次 GUI v004 輪廓，兩次獨立讀值的頂點座標一致，不是同一場次。",
+                "本輪廓是三角草案，不宣稱 ISO 螺紋；全程建點與邊為 GUI，場景隱藏、讀值與檔案欄位由程式處理。",
+                "只有三條邊不代表已封閉的實體；Screw、封端和與芯柱聯集需另行完成與檢查。",
+                "材料、列印、量測、配合、合格間隙及強度均待定。"
+              ],
+              "screenshot": {
+                "path": "/challenges/hand-profile-v005-02.png",
+                "sha256": "24e11c42865fad0efb20f941beb6d2f928ba53789cbf4315c05c9c5b80994e1d"
+              }
+            },
+            {
+              "id": "11-hand-profile-03",
+              "goal": "定位第一點",
+              "context": "先確認只有該點被選取。",
+              "operation": [
+                "按 G、X、輸入 4.8mm、Enter，將單點移至 X=4.8 mm。"
+              ],
+              "success": "N 側欄顯示 X 4.8、Y 0、Z 0 mm；單點在原圖中較小。",
+              "readings": [
+                "程式讀回約 (4.80000019,0,0) mm。"
+              ],
+              "limits": [
+                "此為無幾何約束的 Blender mesh 邊輪廓，不是 CAD Sketcher 約束草圖；數值依名義設計輸入。",
+                "這 13 張畫面來自 GUI v005 重複試作；後續完整外牙實際使用另次 GUI v004 輪廓，兩次獨立讀值的頂點座標一致，不是同一場次。",
+                "本輪廓是三角草案，不宣稱 ISO 螺紋；全程建點與邊為 GUI，場景隱藏、讀值與檔案欄位由程式處理。",
+                "只有三條邊不代表已封閉的實體；Screw、封端和與芯柱聯集需另行完成與檢查。",
+                "材料、列印、量測、配合、合格間隙及強度均待定。"
+              ],
+              "screenshot": {
+                "path": "/challenges/hand-profile-v005-03.png",
+                "sha256": "53f268ba5216a0cea42dacfaa4c62f9d0cc0af7137bceb14cff3b2c1b9810855"
+              }
+            },
+            {
+              "id": "11-hand-profile-04",
+              "goal": "擠出第二點",
+              "context": "第一點保持選取；輸入的是相對位移。",
+              "operation": [
+                "按 E、X、輸入 1.2mm、Enter，再按 G、Z、輸入 0.3mm、Enter。"
+              ],
+              "success": "N 側欄顯示選中點 X 6、Y 0、Z 0.3 mm；畫面中的線段較小。",
+              "readings": [
+                "程式讀回兩點、一邊、0 面；第二點約 (6,0,0.30000001) mm。"
+              ],
+              "limits": [
+                "此為無幾何約束的 Blender mesh 邊輪廓，不是 CAD Sketcher 約束草圖；數值依名義設計輸入。",
+                "這 13 張畫面來自 GUI v005 重複試作；後續完整外牙實際使用另次 GUI v004 輪廓，兩次獨立讀值的頂點座標一致，不是同一場次。",
+                "本輪廓是三角草案，不宣稱 ISO 螺紋；全程建點與邊為 GUI，場景隱藏、讀值與檔案欄位由程式處理。",
+                "只有三條邊不代表已封閉的實體；Screw、封端和與芯柱聯集需另行完成與檢查。",
+                "材料、列印、量測、配合、合格間隙及強度均待定。"
+              ],
+              "screenshot": {
+                "path": "/challenges/hand-profile-v005-04.png",
+                "sha256": "fd0767f16eb2035bd95954eff5558be582a8573f9ac92fde1dfb239214f12c1f"
+              }
+            },
+            {
+              "id": "11-hand-profile-05",
+              "goal": "擠出第三點",
+              "context": "確認僅第二點被選取；第三點位移也是相對值。",
+              "operation": [
+                "按 E、X、輸入 -1.2mm、Enter，再按 G、Z、輸入 0.3mm、Enter。"
+              ],
+              "success": "N 側欄顯示選中點 X 4.8、Y 0、Z 0.6 mm；線段較小。",
+              "readings": [
+                "程式讀回三點、兩邊、0 面；第三點約 (4.80000019,0,0.60000002) mm。"
+              ],
+              "limits": [
+                "此為無幾何約束的 Blender mesh 邊輪廓，不是 CAD Sketcher 約束草圖；數值依名義設計輸入。",
+                "這 13 張畫面來自 GUI v005 重複試作；後續完整外牙實際使用另次 GUI v004 輪廓，兩次獨立讀值的頂點座標一致，不是同一場次。",
+                "本輪廓是三角草案，不宣稱 ISO 螺紋；全程建點與邊為 GUI，場景隱藏、讀值與檔案欄位由程式處理。",
+                "只有三條邊不代表已封閉的實體；Screw、封端和與芯柱聯集需另行完成與檢查。",
+                "材料、列印、量測、配合、合格間隙及強度均待定。"
+              ],
+              "screenshot": {
+                "path": "/challenges/hand-profile-v005-05.png",
+                "sha256": "c64d712b0c463052d5b479e20b73bc959af69f03bf627fa1db3ac480b54aad60"
+              }
+            },
+            {
+              "id": "11-hand-profile-06",
+              "goal": "全選並放大",
+              "context": "仍在 Edit Mode 頂點模式。",
+              "operation": [
+                "按 A 選取全部，F3 搜尋 Frame Selected，調整視圖。"
+              ],
+              "success": "可看到放大的 V 形兩條邊；N 欄是多點中位數，不是單點座標。",
+              "readings": [
+                "讀回 3 點、2 邊、0 面；此時尚未閉合第三邊。"
+              ],
+              "limits": [
+                "此為無幾何約束的 Blender mesh 邊輪廓，不是 CAD Sketcher 約束草圖；數值依名義設計輸入。",
+                "這 13 張畫面來自 GUI v005 重複試作；後續完整外牙實際使用另次 GUI v004 輪廓，兩次獨立讀值的頂點座標一致，不是同一場次。",
+                "本輪廓是三角草案，不宣稱 ISO 螺紋；全程建點與邊為 GUI，場景隱藏、讀值與檔案欄位由程式處理。",
+                "只有三條邊不代表已封閉的實體；Screw、封端和與芯柱聯集需另行完成與檢查。",
+                "材料、列印、量測、配合、合格間隙及強度均待定。"
+              ],
+              "screenshot": {
+                "path": "/challenges/hand-profile-v005-06.png",
+                "sha256": "ea6206305c0f0e84847105be9eafdb813a4cbac5ade0dc4e3076ec1db1f5a2d4"
+              }
+            },
+            {
+              "id": "11-hand-profile-07",
+              "goal": "補上閉合邊",
+              "context": "三點均已選中。",
+              "operation": [
+                "保持三點全選，按 F 暫時建立三角面。"
+              ],
+              "success": "前視圖中三角區域被填滿。",
+              "readings": [
+                "讀回 3 點、3 邊、1 面；此面只是建立閉合邊的中間步驟。"
+              ],
+              "limits": [
+                "此為無幾何約束的 Blender mesh 邊輪廓，不是 CAD Sketcher 約束草圖；數值依名義設計輸入。",
+                "這 13 張畫面來自 GUI v005 重複試作；後續完整外牙實際使用另次 GUI v004 輪廓，兩次獨立讀值的頂點座標一致，不是同一場次。",
+                "本輪廓是三角草案，不宣稱 ISO 螺紋；全程建點與邊為 GUI，場景隱藏、讀值與檔案欄位由程式處理。",
+                "只有三條邊不代表已封閉的實體；Screw、封端和與芯柱聯集需另行完成與檢查。",
+                "材料、列印、量測、配合、合格間隙及強度均待定。"
+              ],
+              "screenshot": {
+                "path": "/challenges/hand-profile-v005-07.png",
+                "sha256": "0afd738f7ce75a8db87f33e0a2159c3c8b2ce766d2b96f776fbda1516164230a"
+              }
+            },
+            {
+              "id": "11-hand-profile-08",
+              "goal": "刪除面保留輪廓",
+              "context": "操作於剛建立的三角面；若看不到 Only Faces，先確認 Edit Mode。",
+              "operation": [
+                "F3 搜尋 Only Faces；只刪除面，保留三條邊。"
+              ],
+              "success": "放大後可見三角閉合邊線；未選取時邊線為深色。",
+              "readings": [
+                "讀回 3 點、3 邊、0 面；這是邊輪廓，不是已封閉的實體。"
+              ],
+              "limits": [
+                "此為無幾何約束的 Blender mesh 邊輪廓，不是 CAD Sketcher 約束草圖；數值依名義設計輸入。",
+                "這 13 張畫面來自 GUI v005 重複試作；後續完整外牙實際使用另次 GUI v004 輪廓，兩次獨立讀值的頂點座標一致，不是同一場次。",
+                "本輪廓是三角草案，不宣稱 ISO 螺紋；全程建點與邊為 GUI，場景隱藏、讀值與檔案欄位由程式處理。",
+                "只有三條邊不代表已封閉的實體；Screw、封端和與芯柱聯集需另行完成與檢查。",
+                "材料、列印、量測、配合、合格間隙及強度均待定。"
+              ],
+              "screenshot": {
+                "path": "/challenges/hand-profile-v005-08.png",
+                "sha256": "ff20a3d9d794b3c423979a13ece0e9d5f101af95cb11ebf15050c35ea25b1b6e"
+              }
+            },
+            {
+              "id": "11-hand-profile-09",
+              "goal": "近景核對第一點",
+              "context": "保持頂點選取模式；依自己畫面選點，不套用示範座標。",
+              "operation": [
+                "Alt+A 取消選取，在放大輪廓左下角單選第一點。"
+              ],
+              "success": "輪廓放大，N 側欄可見 X 4.8、Y 0、Z 0 mm。",
+              "readings": [
+                "程式確認恰好選中第一點 (4.80000019,0,0) mm。"
+              ],
+              "limits": [
+                "此為無幾何約束的 Blender mesh 邊輪廓，不是 CAD Sketcher 約束草圖；數值依名義設計輸入。",
+                "這 13 張畫面來自 GUI v005 重複試作；後續完整外牙實際使用另次 GUI v004 輪廓，兩次獨立讀值的頂點座標一致，不是同一場次。",
+                "本輪廓是三角草案，不宣稱 ISO 螺紋；全程建點與邊為 GUI，場景隱藏、讀值與檔案欄位由程式處理。",
+                "只有三條邊不代表已封閉的實體；Screw、封端和與芯柱聯集需另行完成與檢查。",
+                "材料、列印、量測、配合、合格間隙及強度均待定。"
+              ],
+              "screenshot": {
+                "path": "/challenges/hand-profile-v005-09.png",
+                "sha256": "49860fb57123b7a75633ce3d217c95bd147a7be29094e8967d2399c0f1c96cff"
+              }
+            },
+            {
+              "id": "11-hand-profile-10",
+              "goal": "近景核對第二點",
+              "context": "保持頂點選取模式。",
+              "operation": [
+                "Alt+A 取消選取，單選輪廓右側牙頂。"
+              ],
+              "success": "輪廓放大，N 側欄可見 X 6、Y 0、Z 0.3 mm。",
+              "readings": [
+                "程式確認恰好選中第二點 (6,0,0.30000001) mm。"
+              ],
+              "limits": [
+                "此為無幾何約束的 Blender mesh 邊輪廓，不是 CAD Sketcher 約束草圖；數值依名義設計輸入。",
+                "這 13 張畫面來自 GUI v005 重複試作；後續完整外牙實際使用另次 GUI v004 輪廓，兩次獨立讀值的頂點座標一致，不是同一場次。",
+                "本輪廓是三角草案，不宣稱 ISO 螺紋；全程建點與邊為 GUI，場景隱藏、讀值與檔案欄位由程式處理。",
+                "只有三條邊不代表已封閉的實體；Screw、封端和與芯柱聯集需另行完成與檢查。",
+                "材料、列印、量測、配合、合格間隙及強度均待定。"
+              ],
+              "screenshot": {
+                "path": "/challenges/hand-profile-v005-10.png",
+                "sha256": "ab8688420f311d4bed1e189f87a4aaa19c0eaa407896fe6cc4c6d6894c5ac186"
+              }
+            },
+            {
+              "id": "11-hand-profile-11",
+              "goal": "近景核對第三點",
+              "context": "保持頂點選取模式。",
+              "operation": [
+                "Alt+A 取消選取，單選輪廓左上角。"
+              ],
+              "success": "輪廓放大，N 側欄可見 X 4.8、Y 0、Z 0.6 mm。",
+              "readings": [
+                "程式確認恰好選中第三點 (4.80000019,0,0.60000002) mm。"
+              ],
+              "limits": [
+                "此為無幾何約束的 Blender mesh 邊輪廓，不是 CAD Sketcher 約束草圖；數值依名義設計輸入。",
+                "這 13 張畫面來自 GUI v005 重複試作；後續完整外牙實際使用另次 GUI v004 輪廓，兩次獨立讀值的頂點座標一致，不是同一場次。",
+                "本輪廓是三角草案，不宣稱 ISO 螺紋；全程建點與邊為 GUI，場景隱藏、讀值與檔案欄位由程式處理。",
+                "只有三條邊不代表已封閉的實體；Screw、封端和與芯柱聯集需另行完成與檢查。",
+                "材料、列印、量測、配合、合格間隙及強度均待定。"
+              ],
+              "screenshot": {
+                "path": "/challenges/hand-profile-v005-11.png",
+                "sha256": "7fd2fc4db0a7fb42f39a827f565face3ac6afce56458ecdaccc25a8e7b8915d5"
+              }
+            },
+            {
+              "id": "11-hand-profile-12",
+              "goal": "另存輪廓",
+              "context": "本示範的路徑與檔名由程式填入檔案對話框；保留參考原檔。",
+              "operation": [
+                "Tab 回物件模式，使用 Save As 另存 u11_hand_profile_v001.blend。"
+              ],
+              "success": "另存後仍可看見輪廓物件；此圖不是檔案對話框截圖。",
+              "readings": [
+                "另存後讀回 3 點、3 邊、0 面；示範檔 SHA-256 列於 demonstrationSceneSha256。"
+              ],
+              "limits": [
+                "此為無幾何約束的 Blender mesh 邊輪廓，不是 CAD Sketcher 約束草圖；數值依名義設計輸入。",
+                "這 13 張畫面來自 GUI v005 重複試作；後續完整外牙實際使用另次 GUI v004 輪廓，兩次獨立讀值的頂點座標一致，不是同一場次。",
+                "本輪廓是三角草案，不宣稱 ISO 螺紋；全程建點與邊為 GUI，場景隱藏、讀值與檔案欄位由程式處理。",
+                "只有三條邊不代表已封閉的實體；Screw、封端和與芯柱聯集需另行完成與檢查。",
+                "材料、列印、量測、配合、合格間隙及強度均待定。"
+              ],
+              "screenshot": {
+                "path": "/challenges/hand-profile-v005-12.png",
+                "sha256": "dd4fc458f6289fad71a783c56fba8795b6796202a65f46de0b48ada67fa6dcca"
+              }
+            },
+            {
+              "id": "11-hand-profile-13",
+              "goal": "重開並獨立核對",
+              "context": "重開對話框路徑與檔名由程式填入；未更新學員進度。",
+              "operation": [
+                "重新開啟另存檔；另以背景 Blender 讀回頂點與邊連接。"
+              ],
+              "success": "重新開啟後可見輪廓物件。",
+              "readings": [
+                "獨立重讀：3 點、3 邊、0 面，每點度數 2；相對名義座標最大差約 1.91×10⁻⁷ mm。"
+              ],
+              "limits": [
+                "此為無幾何約束的 Blender mesh 邊輪廓，不是 CAD Sketcher 約束草圖；數值依名義設計輸入。",
+                "這 13 張畫面來自 GUI v005 重複試作；後續完整外牙實際使用另次 GUI v004 輪廓，兩次獨立讀值的頂點座標一致，不是同一場次。",
+                "本輪廓是三角草案，不宣稱 ISO 螺紋；全程建點與邊為 GUI，場景隱藏、讀值與檔案欄位由程式處理。",
+                "只有三條邊不代表已封閉的實體；Screw、封端和與芯柱聯集需另行完成與檢查。",
+                "材料、列印、量測、配合、合格間隙及強度均待定。"
+              ],
+              "screenshot": {
+                "path": "/challenges/hand-profile-v005-13.png",
+                "sha256": "0100fb4cf890c58fe477c21a1e5061e56630624e36b449f165a2ccc79a121434"
+              }
+            }
+          ]
+        },
+        {
+          "title": "由手工輪廓續作外牙（14 步）",
+          "section": "11-14",
+          "description": "以 v004 GUI 手工輪廓續作 Screw、端面與芯柱；尺寸及局部網格檢查不是 ISO 或實體配合合格證明。",
+          "startingScene": {
+            "path": "learning/evidence/08/2026-10-28-external-thread-hand-profile-gui-v004/demo-files/u11_hand_profile_v001.blend",
+            "sha256": "1bfb2d15269fbb1debe325e18904cec6ee654a91a611ee177dbb1c89b7b713c6",
+            "verification": "learning/evidence/08/2026-10-28-external-thread-hand-profile-gui-v004/independent-audit-v001.json",
+            "construction": "以獨立 Blender GUI 從平面建立輪廓，另存並獨立重讀。"
+          },
+          "sourceVersions": [
+            {
+              "label": "GUI 輪廓",
+              "path": "learning/evidence/08/2026-10-28-external-thread-hand-profile-gui-v004/demo-files/u11_hand_profile_v001.blend",
+              "sha256": "1bfb2d15269fbb1debe325e18904cec6ee654a91a611ee177dbb1c89b7b713c6"
+            },
+            {
+              "label": "手工續作外牙",
+              "path": "learning/evidence/08/2026-10-28-external-thread-from-hand-profile-gui-v001/demo-files/u11_hand_thread_draft_v001.blend",
+              "sha256": "2d73ed99fe56cfbd676447cc3035c0cb8245b3eebf5b1ac72dc3b3c418afce50"
+            }
+          ],
+          "steps": [
+            {
+              "id": "11-hand-thread-01",
+              "goal": "開啟 GUI 手繪輪廓",
+              "context": "此輪廓原先以平面合併單點、E/G 逐點建立、F 與 Only Faces 關閉輪廓；本次沒有使用 Python 建立輪廓。",
+              "operation": [
+                "開啟已另存的 GUI v004 手繪輪廓副本，F2 將 Thread_Hand_Profile 改名為 Thread_Triangle_Profile。"
+              ],
+              "success": "畫面顯示放大的閉合輪廓，Outliner 顯示重新命名的物件。",
+              "readings": [
+                "載入的副本為 3 點、3 邊、0 面；來源 SHA-256 見 sourceSha256。"
+              ],
+              "limits": [
+                "來源輪廓在獨立 Blender 以 GUI 建立，屬無 CAD 約束的 mesh；本次只以程式填檔案欄位與讀取數值。",
+                "Screw 圖像因沿用放大草圖視角而局部超出畫面，不能由這張圖判斷完整牙形；後續有聚焦及重開畫面。",
+                "與 v010 的雙向比較採網格頂點和三角形重心抽樣，最大表面距離約 7.15×10⁻⁷ mm，不能證明完整表面完全相同。",
+                "草案不是 ISO 螺紋，零非流形邊和零 BVH 候選不能證明無自交、可列印或配合合格。",
+                "材料、列印、實體量測、試配、合格間隙及強度均待定。"
+              ],
+              "screenshot": {
+                "path": "/challenges/hand-thread-v001-01.png",
+                "sha256": "05af4f051e2a58a71e5a33ab7bffab24f7a025b3c0de3174a63037253bb50b48"
+              }
+            },
+            {
+              "id": "11-hand-thread-02",
+              "goal": "加入 Screw 修改器",
+              "context": "輪廓由 GUI 手工逐點建立；這裡是單頭三角牙草案，非 ISO。",
+              "operation": [
+                "選取 Thread_Triangle_Profile，在物件模式 F3 搜尋 Add Screw Modifier；設定角度 360°、每圈位移 1 mm、4 次迭代、每圈 32 段。"
+              ],
+              "success": "Screw 面板可見 360°、1 mm、4 次、Z 軸和 32 段；放大視角使牙條局部超出畫面。",
+              "readings": [
+                "程式讀回 1 mm、4 次、32 段，評估後 387 頂點、384 面、6 條邊界；角度需結合畫面與劇本。"
+              ],
+              "limits": [
+                "來源輪廓在獨立 Blender 以 GUI 建立，屬無 CAD 約束的 mesh；本次只以程式填檔案欄位與讀取數值。",
+                "Screw 圖像因沿用放大草圖視角而局部超出畫面，不能由這張圖判斷完整牙形；後續有聚焦及重開畫面。",
+                "與 v010 的雙向比較採網格頂點和三角形重心抽樣，最大表面距離約 7.15×10⁻⁷ mm，不能證明完整表面完全相同。",
+                "草案不是 ISO 螺紋，零非流形邊和零 BVH 候選不能證明無自交、可列印或配合合格。",
+                "材料、列印、實體量測、試配、合格間隙及強度均待定。"
+              ],
+              "screenshot": {
+                "path": "/challenges/hand-thread-v001-02.png",
+                "sha256": "0981ef77576338511b856a6451c73853826e6848bbe2d3fb1cb8d07bbe04ebab"
+              }
+            },
+            {
+              "id": "11-hand-thread-03",
+              "goal": "將 Screw 轉為網格",
+              "context": "轉換前確認修改器數值；保留來源副本。",
+              "operation": [
+                "物件模式下選取輪廓物件，F3 搜尋 Convert Mesh，確認已轉換。"
+              ],
+              "success": "修改器消失，牙條局部可見，其餘超出畫面。",
+              "readings": [
+                "讀回修改器為空，仍有 6 條開口邊。"
+              ],
+              "limits": [
+                "來源輪廓在獨立 Blender 以 GUI 建立，屬無 CAD 約束的 mesh；本次只以程式填檔案欄位與讀取數值。",
+                "Screw 圖像因沿用放大草圖視角而局部超出畫面，不能由這張圖判斷完整牙形；後續有聚焦及重開畫面。",
+                "與 v010 的雙向比較採網格頂點和三角形重心抽樣，最大表面距離約 7.15×10⁻⁷ mm，不能證明完整表面完全相同。",
+                "草案不是 ISO 螺紋，零非流形邊和零 BVH 候選不能證明無自交、可列印或配合合格。",
+                "材料、列印、實體量測、試配、合格間隙及強度均待定。"
+              ],
+              "screenshot": {
+                "path": "/challenges/hand-thread-v001-03.png",
+                "sha256": "10eecc1eb9c6c3922e0e0d44a22bf440ea681e3ffb385dafbf326d6b86dd62db"
+              }
+            },
+            {
+              "id": "11-hand-thread-04",
+              "goal": "選取非流形邊",
+              "context": "這是找出未封端邊的教學步驟，畫面可能需放大觀察。",
+              "operation": [
+                "選取牙條，Tab 進入編輯模式，按 2 切邊選取、Alt+A 取消選取；F3 搜尋 Select Non Manifold。"
+              ],
+              "success": "畫面為邊選取模式，牙條部分超出畫面；無法單憑照片辨認所有選中邊。",
+              "readings": [
+                "程式讀回 6 條邊界及 6 條非流形邊。"
+              ],
+              "limits": [
+                "來源輪廓在獨立 Blender 以 GUI 建立，屬無 CAD 約束的 mesh；本次只以程式填檔案欄位與讀取數值。",
+                "Screw 圖像因沿用放大草圖視角而局部超出畫面，不能由這張圖判斷完整牙形；後續有聚焦及重開畫面。",
+                "與 v010 的雙向比較採網格頂點和三角形重心抽樣，最大表面距離約 7.15×10⁻⁷ mm，不能證明完整表面完全相同。",
+                "草案不是 ISO 螺紋，零非流形邊和零 BVH 候選不能證明無自交、可列印或配合合格。",
+                "材料、列印、實體量測、試配、合格間隙及強度均待定。"
+              ],
+              "screenshot": {
+                "path": "/challenges/hand-thread-v001-04.png",
+                "sha256": "397f457005a58fae561270c30462579de56e882a06f9f3c737805cc32bddd4c9"
+              }
+            },
+            {
+              "id": "11-hand-thread-05",
+              "goal": "封閉牙條兩端",
+              "context": "確認選中的是預期的兩端開口，封端結果仍需後續驗證。",
+              "operation": [
+                "維持邊界選取後按 F 封端，以讀值檢查結果。"
+              ],
+              "success": "畫面可見局部牙條網格，無法由此圖完整辨識兩端。",
+              "readings": [
+                "程式讀回 386 面、邊界 0、非流形邊 0；不能以此宣稱無自交或可製造。"
+              ],
+              "limits": [
+                "來源輪廓在獨立 Blender 以 GUI 建立，屬無 CAD 約束的 mesh；本次只以程式填檔案欄位與讀取數值。",
+                "Screw 圖像因沿用放大草圖視角而局部超出畫面，不能由這張圖判斷完整牙形；後續有聚焦及重開畫面。",
+                "與 v010 的雙向比較採網格頂點和三角形重心抽樣，最大表面距離約 7.15×10⁻⁷ mm，不能證明完整表面完全相同。",
+                "草案不是 ISO 螺紋，零非流形邊和零 BVH 候選不能證明無自交、可列印或配合合格。",
+                "材料、列印、實體量測、試配、合格間隙及強度均待定。"
+              ],
+              "screenshot": {
+                "path": "/challenges/hand-thread-v001-05.png",
+                "sha256": "9fbef65670d3a992236018401e0918c8efd4df2391b64cabed369cf35edc8a82"
+              }
+            },
+            {
+              "id": "11-hand-thread-06",
+              "goal": "重新計算法線",
+              "context": "牙條已封端；此操作不會自動排除交疊或極薄面。",
+              "operation": [
+                "在編輯模式 A 全選，再按 Shift+N 重新計算法線。"
+              ],
+              "success": "編輯模式中牙條全選。",
+              "readings": [
+                "程式讀回邊界 0、非流形邊 0；未單憑此宣稱法線或幾何完全正確。"
+              ],
+              "limits": [
+                "來源輪廓在獨立 Blender 以 GUI 建立，屬無 CAD 約束的 mesh；本次只以程式填檔案欄位與讀取數值。",
+                "Screw 圖像因沿用放大草圖視角而局部超出畫面，不能由這張圖判斷完整牙形；後續有聚焦及重開畫面。",
+                "與 v010 的雙向比較採網格頂點和三角形重心抽樣，最大表面距離約 7.15×10⁻⁷ mm，不能證明完整表面完全相同。",
+                "草案不是 ISO 螺紋，零非流形邊和零 BVH 候選不能證明無自交、可列印或配合合格。",
+                "材料、列印、實體量測、試配、合格間隙及強度均待定。"
+              ],
+              "screenshot": {
+                "path": "/challenges/hand-thread-v001-06.png",
+                "sha256": "6a79c11132ce51a2c878c5821b61c244febbc035c7972abb2af06796581be169"
+              }
+            },
+            {
+              "id": "11-hand-thread-07",
+              "goal": "新增圓柱核心",
+              "context": "此係數僅用於本場景預設圓柱；芯柱上下端各伸出牙條約 0.1 mm，旋轉改變多邊形輪廓。",
+              "operation": [
+                "Tab 回物件模式；F3 搜尋 Add Cylinder。依序 S 0.005、S Z 0.48、G Z 2.3 mm、R Z 5.625°；F3 執行 Apply Scale 與 Apply Rotation，F2 命名 Thread_Core。"
+              ],
+              "success": "選中 Thread_Core，畫面尺寸欄約 9.95 × 9.95 × 4.8 mm。",
+              "readings": [
+                "程式依實際頂點讀回旋轉後世界 X/Y 範圍約 ±4.9759 mm，Z 約 -0.1～4.7 mm；套用後旋轉欄為 0、Scale 為 1。"
+              ],
+              "limits": [
+                "來源輪廓在獨立 Blender 以 GUI 建立，屬無 CAD 約束的 mesh；本次只以程式填檔案欄位與讀取數值。",
+                "Screw 圖像因沿用放大草圖視角而局部超出畫面，不能由這張圖判斷完整牙形；後續有聚焦及重開畫面。",
+                "與 v010 的雙向比較採網格頂點和三角形重心抽樣，最大表面距離約 7.15×10⁻⁷ mm，不能證明完整表面完全相同。",
+                "草案不是 ISO 螺紋，零非流形邊和零 BVH 候選不能證明無自交、可列印或配合合格。",
+                "材料、列印、實體量測、試配、合格間隙及強度均待定。"
+              ],
+              "screenshot": {
+                "path": "/challenges/hand-thread-v001-07.png",
+                "sha256": "9a49dcb03416705671336f15c2724b759edcd7e09c59e249170b743b9d468de3"
+              }
+            },
+            {
+              "id": "11-hand-thread-08",
+              "goal": "觀察首次指定工具未成功",
+              "context": "此畫面保留示範首次失敗；輸入文字或按 Enter 不一定已選定對象。",
+              "operation": [
+                "選 Thread_Core、新增 Boolean，選 Union、Exact；嘗試輸入 Thread_Triangle_Profile 時檢查 Object 欄是否真正選入。"
+              ],
+              "success": "畫面為首次嘗試指定物件的狀態。",
+              "readings": [
+                "程式讀回 Union、Exact，但 operand 為空；此時不可宣稱指定完成。"
+              ],
+              "limits": [
+                "來源輪廓在獨立 Blender 以 GUI 建立，屬無 CAD 約束的 mesh；本次只以程式填檔案欄位與讀取數值。",
+                "Screw 圖像因沿用放大草圖視角而局部超出畫面，不能由這張圖判斷完整牙形；後續有聚焦及重開畫面。",
+                "與 v010 的雙向比較採網格頂點和三角形重心抽樣，最大表面距離約 7.15×10⁻⁷ mm，不能證明完整表面完全相同。",
+                "草案不是 ISO 螺紋，零非流形邊和零 BVH 候選不能證明無自交、可列印或配合合格。",
+                "材料、列印、實體量測、試配、合格間隙及強度均待定。"
+              ],
+              "screenshot": {
+                "path": "/challenges/hand-thread-v001-08.png",
+                "sha256": "36ee8394575c6a31ca830fa3ef891a03601e5b0f81360db30aca5ea0e45aef66"
+              }
+            },
+            {
+              "id": "11-hand-thread-09",
+              "goal": "正確指定 Boolean 工具",
+              "context": "選中核心，先核對 Union、Exact 與對象，尚未套用。",
+              "operation": [
+                "在 Boolean 的 Object 欄重新選擇清單中的 Thread_Triangle_Profile，確認名稱顯示。"
+              ],
+              "success": "修改器 Object 欄已顯示工具名稱，欄寬使名稱可能截斷。",
+              "readings": [
+                "程式讀回 operation UNION、solver EXACT、operand Thread_Triangle_Profile。"
+              ],
+              "limits": [
+                "來源輪廓在獨立 Blender 以 GUI 建立，屬無 CAD 約束的 mesh；本次只以程式填檔案欄位與讀取數值。",
+                "Screw 圖像因沿用放大草圖視角而局部超出畫面，不能由這張圖判斷完整牙形；後續有聚焦及重開畫面。",
+                "與 v010 的雙向比較採網格頂點和三角形重心抽樣，最大表面距離約 7.15×10⁻⁷ mm，不能證明完整表面完全相同。",
+                "草案不是 ISO 螺紋，零非流形邊和零 BVH 候選不能證明無自交、可列印或配合合格。",
+                "材料、列印、實體量測、試配、合格間隙及強度均待定。"
+              ],
+              "screenshot": {
+                "path": "/challenges/hand-thread-v001-09.png",
+                "sha256": "b84cdcccba2fc83bc9eafadeb06815f7b540b1ef631e09f1442331db489ee4e8"
+              }
+            },
+            {
+              "id": "11-hand-thread-10",
+              "goal": "隱藏牙條工具以檢視預覽",
+              "context": "隱藏的是工具，不是刪除；若版面不同以物件名稱與眼睛圖示為準。",
+              "operation": [
+                "在 Outliner 對 Thread_Triangle_Profile 點眼睛隱藏；保留牙條物件以備回溯。"
+              ],
+              "success": "牙條工具隱藏，核心顯示布林預覽。",
+              "readings": [
+                "程式以 hide_get() 確認工具已隱藏；不是刪除物件。"
+              ],
+              "limits": [
+                "來源輪廓在獨立 Blender 以 GUI 建立，屬無 CAD 約束的 mesh；本次只以程式填檔案欄位與讀取數值。",
+                "Screw 圖像因沿用放大草圖視角而局部超出畫面，不能由這張圖判斷完整牙形；後續有聚焦及重開畫面。",
+                "與 v010 的雙向比較採網格頂點和三角形重心抽樣，最大表面距離約 7.15×10⁻⁷ mm，不能證明完整表面完全相同。",
+                "草案不是 ISO 螺紋，零非流形邊和零 BVH 候選不能證明無自交、可列印或配合合格。",
+                "材料、列印、實體量測、試配、合格間隙及強度均待定。"
+              ],
+              "screenshot": {
+                "path": "/challenges/hand-thread-v001-10.png",
+                "sha256": "823dcbcc9310364912064461ce1db7f6c5d2c386f9f8fce5868db39e91fbf6c9"
+              }
+            },
+            {
+              "id": "11-hand-thread-11",
+              "goal": "套用 Boolean Union",
+              "context": "確認 Union、Exact 與正確工具後套用；接著還需另行獨立稽核。",
+              "operation": [
+                "重新選取 Thread_Core，在 Boolean 修改器選單點 Apply；觀察牙條合併後的核心。"
+              ],
+              "success": "畫面出現外牙形狀。",
+              "readings": [
+                "程式讀回 707 點、419 面、單連通體、非流形邊 0、外框約 12 × 12 × 4.8 mm；這些讀值不證明無自交。"
+              ],
+              "limits": [
+                "來源輪廓在獨立 Blender 以 GUI 建立，屬無 CAD 約束的 mesh；本次只以程式填檔案欄位與讀取數值。",
+                "Screw 圖像因沿用放大草圖視角而局部超出畫面，不能由這張圖判斷完整牙形；後續有聚焦及重開畫面。",
+                "與 v010 的雙向比較採網格頂點和三角形重心抽樣，最大表面距離約 7.15×10⁻⁷ mm，不能證明完整表面完全相同。",
+                "草案不是 ISO 螺紋，零非流形邊和零 BVH 候選不能證明無自交、可列印或配合合格。",
+                "材料、列印、實體量測、試配、合格間隙及強度均待定。"
+              ],
+              "screenshot": {
+                "path": "/challenges/hand-thread-v001-11.png",
+                "sha256": "0638c1b85a96b58181c05ca45f9065719099fb8a6c2a447fe67ff7b070705c54"
+              }
+            },
+            {
+              "id": "11-hand-thread-12",
+              "goal": "調整視角觀察",
+              "context": "視圖調整不會修復幾何，單張視圖不能排除交疊。",
+              "operation": [
+                "選取 Thread_Core，F3 搜尋 Frame Selected，旋轉視角觀察。"
+              ],
+              "success": "螺旋外形聚焦於畫面。",
+              "readings": [
+                "外框讀值維持約 12 × 12 × 4.8 mm；畫面不足以判定所有細節。"
+              ],
+              "limits": [
+                "來源輪廓在獨立 Blender 以 GUI 建立，屬無 CAD 約束的 mesh；本次只以程式填檔案欄位與讀取數值。",
+                "Screw 圖像因沿用放大草圖視角而局部超出畫面，不能由這張圖判斷完整牙形；後續有聚焦及重開畫面。",
+                "與 v010 的雙向比較採網格頂點和三角形重心抽樣，最大表面距離約 7.15×10⁻⁷ mm，不能證明完整表面完全相同。",
+                "草案不是 ISO 螺紋，零非流形邊和零 BVH 候選不能證明無自交、可列印或配合合格。",
+                "材料、列印、實體量測、試配、合格間隙及強度均待定。"
+              ],
+              "screenshot": {
+                "path": "/challenges/hand-thread-v001-12.png",
+                "sha256": "15fa6affe717a2371a0ec40d11545eb2a81d7d7403f6d1afee86e09b4255bb3e"
+              }
+            },
+            {
+              "id": "11-hand-thread-13",
+              "goal": "另存獨立草案",
+              "context": "示範的檔案視窗路徑及檔名由程式填入。",
+              "operation": [
+                "使用 File > Save As 另存新檔，保留參考場景和既有小盒原檔。"
+              ],
+              "success": "另存完成後畫面顯示外牙草案。",
+              "readings": [
+                "另存示範 SHA-256 2d73ed99fe56cfbd676447cc3035c0cb8245b3eebf5b1ac72dc3b3c418afce50；自行建模的檔案雜湊會不同。"
+              ],
+              "limits": [
+                "來源輪廓在獨立 Blender 以 GUI 建立，屬無 CAD 約束的 mesh；本次只以程式填檔案欄位與讀取數值。",
+                "Screw 圖像因沿用放大草圖視角而局部超出畫面，不能由這張圖判斷完整牙形；後續有聚焦及重開畫面。",
+                "與 v010 的雙向比較採網格頂點和三角形重心抽樣，最大表面距離約 7.15×10⁻⁷ mm，不能證明完整表面完全相同。",
+                "草案不是 ISO 螺紋，零非流形邊和零 BVH 候選不能證明無自交、可列印或配合合格。",
+                "材料、列印、實體量測、試配、合格間隙及強度均待定。"
+              ],
+              "screenshot": {
+                "path": "/challenges/hand-thread-v001-13.png",
+                "sha256": "c0d8dbe38e6e9ace19c6ee78326b560c3bb72466c8ccc9b0d9e4298a86b959f7"
+              }
+            },
+            {
+              "id": "11-hand-thread-14",
+              "goal": "重開新檔並核對",
+              "context": "示範檔案視窗欄位由程式填入；避免覆寫來源。",
+              "operation": [
+                "重開另存草案並檢查尺寸，再以獨立 Blender 腳本檢查拓樸、三角面積及 BVH。"
+              ],
+              "success": "重開後仍可見 Thread_Core 與外牙草案。",
+              "readings": [
+                "重開後獨立讀回 707 點、419 面、1 連通體、非流形 0、BVH 候選 0；與 v010 雙向各 2117 點抽樣最大距約 7.15×10⁻⁷ mm，不是完整幾何等同性或製造合格證明。"
+              ],
+              "limits": [
+                "來源輪廓在獨立 Blender 以 GUI 建立，屬無 CAD 約束的 mesh；本次只以程式填檔案欄位與讀取數值。",
+                "Screw 圖像因沿用放大草圖視角而局部超出畫面，不能由這張圖判斷完整牙形；後續有聚焦及重開畫面。",
+                "與 v010 的雙向比較採網格頂點和三角形重心抽樣，最大表面距離約 7.15×10⁻⁷ mm，不能證明完整表面完全相同。",
+                "草案不是 ISO 螺紋，零非流形邊和零 BVH 候選不能證明無自交、可列印或配合合格。",
+                "材料、列印、實體量測、試配、合格間隙及強度均待定。"
+              ],
+              "screenshot": {
+                "path": "/challenges/hand-thread-v001-14.png",
+                "sha256": "88b1d0be726242abea6cc8cfc144ef95d4fc20c6879a225b40cb6aa72303a147"
+              }
+            }
+          ]
+        },
+        {
+          "title": "盒側保護蓋與試驗間隙（17 步）",
+          "section": "11-15",
+          "description": "兩階段使用程式預建刀具及毛坯，再以獨立 Blender GUI 差集、另存與重開；保留原平面上蓋。徑向 0.2、直徑差 0.4 及中心軸向端隙 0.2 mm 均為試驗值。端牙局部改變，有限射線與離散旋轉不等於實體旋合。",
+          "startingScene": {
+            "kind": "thread",
+            "path": "learning/evidence/08/2026-10-28-side-cap-start-scenes-v001/side-cap-thread-start-v001.blend",
+            "sha256": "fca5955405bcb9c6cb84db308aad3cc11bd10ffea989129e109a1981bf279f5e",
+            "audit": "learning/evidence/08/2026-10-28-side-cap-start-scenes-v001/thread-start-audit-v001.json",
+            "auditSha256": "85a81d538f60ad0404d70b2eaeca8d0dca834ff87c51843bb1856eb85f7f8ee9",
+            "privacy": "本機跟做起始檔，尚未完成公開資料審查"
+          },
+          "sourceVersions": [
+            {
+              "label": "內牙刀具起始場景",
+              "path": "learning/evidence/08/2026-10-28-side-cap-start-scenes-v001/side-cap-thread-start-v001.blend",
+              "sha256": "fca5955405bcb9c6cb84db308aad3cc11bd10ffea989129e109a1981bf279f5e"
+            },
+            {
+              "label": "端隙刀具起始場景",
+              "path": "learning/evidence/08/2026-10-28-side-cap-start-scenes-v001/side-cap-relief-start-v001.blend",
+              "sha256": "54ded1f3f61b3868f85655724b2145ab40ee064867aead75c45c9effeb9126bb"
+            },
+            {
+              "label": "端隙側帽 v002",
+              "path": "learning/evidence/08/2026-10-28-side-cap-relief-gui-v001/demo-files/u11_side_thread_cap_draft_v002.blend",
+              "sha256": "d4cb9e6467eebff735443daa405c958c459dbe2f04fce8a8e98df5a4b70ee332"
+            }
+          ],
+          "steps": [
+            {
+              "id": "11-side-cap-01",
+              "goal": "準備原牙與試驗刀具",
+              "context": "此起始場景的刀具與毛坯由程式準備，不是 GUI 手工繪製；保留原始盒體與上蓋。",
+              "operation": [
+                "以 Blender 開啟本機 thread 起始場景的複本；確認選中 Side_Cap_Blank，Cap_Cutter_020 可見。"
+              ],
+              "success": "盒側可見帽體草案，Outliner 可見物件。",
+              "readings": [
+                "原牙工具相應頂點徑向差約 0.199999–0.2000004 mm，X 最大差約 0.00000382 mm；非全域法向公差。"
+              ],
+              "limits": [
+                "這是盒側保護蓋，既有平面上蓋保留，非螺旋頂蓋。",
+                "軸向端隙 0.2 mm、徑向加 0.2 / 名義直徑差 0.4 mm 都是試驗值，非正式合格公差。",
+                "端面九個軸向射線顯示 X=34.5，這些只覆蓋有限位置；端面直徑內其他局部、實際變形與試配尚未核對。",
+                "relief 僅在 X=34.15–34.5 做差集，會局部修削末端牙；與 v001 的 216 個內壁對應射線比較，41 個差超過 0.0001 mm，最大約 0.00852 mm，可能涉及重三角化，不能宣稱中段網格完全不變。",
+                "正向向外離散 11 姿態布林交集為空，不代表連續旋轉、真實旋合或無自交；反向向外部分姿態有交集。",
+                "最小三角面積約 1.386e-5 mm²；1e-5 的篩選門檻並非合格標準，不能稱無細長面。",
+                "非 ISO 牙型、端牙截斷，材料、製程、列印、量測、試配與強度待定。"
+              ],
+              "screenshot": {
+                "path": "/challenges/side-cap-v002-01.png",
+                "sha256": "29005e6df7e3b1479f32569ac4ef0f3fd8869af5799b7190505152dc629f150e"
+              }
+            },
+            {
+              "id": "11-side-cap-02",
+              "goal": "加入差集並確認對象",
+              "context": "欄位若只輸入文字而未選清單項目，可能仍是空白。",
+              "operation": [
+                "選中 Side_Cap_Blank，在物件模式 F3 搜尋 Add Boolean Modifier；Object 欄嘗試指定 Cap_Cutter_020。"
+              ],
+              "success": "修改器顯示 Difference 與 Exact。",
+              "readings": [
+                "本畫面以該步實際記錄判定，不假定初次輸入已成功。"
+              ],
+              "limits": [
+                "這是盒側保護蓋，既有平面上蓋保留，非螺旋頂蓋。",
+                "軸向端隙 0.2 mm、徑向加 0.2 / 名義直徑差 0.4 mm 都是試驗值，非正式合格公差。",
+                "端面九個軸向射線顯示 X=34.5，這些只覆蓋有限位置；端面直徑內其他局部、實際變形與試配尚未核對。",
+                "relief 僅在 X=34.15–34.5 做差集，會局部修削末端牙；與 v001 的 216 個內壁對應射線比較，41 個差超過 0.0001 mm，最大約 0.00852 mm，可能涉及重三角化，不能宣稱中段網格完全不變。",
+                "正向向外離散 11 姿態布林交集為空，不代表連續旋轉、真實旋合或無自交；反向向外部分姿態有交集。",
+                "最小三角面積約 1.386e-5 mm²；1e-5 的篩選門檻並非合格標準，不能稱無細長面。",
+                "非 ISO 牙型、端牙截斷，材料、製程、列印、量測、試配與強度待定。"
+              ],
+              "screenshot": {
+                "path": "/challenges/side-cap-v002-02.png",
+                "sha256": "1d1ef5ac003cdd83faa5bf1fec933919a8ad74192d11c7ab0d3a64f75da49258"
+              }
+            },
+            {
+              "id": "11-side-cap-03",
+              "goal": "確認修改器設定",
+              "context": "切割工具預建且保留相位；材料和實際配合未定。",
+              "operation": [
+                "確認 Difference、Exact 及 Object 為 Cap_Cutter_020，尚不要套用。"
+              ],
+              "success": "修改器 Object 指向刀具。",
+              "readings": [
+                "程式讀回 DIFFERENCE、EXACT 及 Cap_Cutter_020。"
+              ],
+              "limits": [
+                "這是盒側保護蓋，既有平面上蓋保留，非螺旋頂蓋。",
+                "軸向端隙 0.2 mm、徑向加 0.2 / 名義直徑差 0.4 mm 都是試驗值，非正式合格公差。",
+                "端面九個軸向射線顯示 X=34.5，這些只覆蓋有限位置；端面直徑內其他局部、實際變形與試配尚未核對。",
+                "relief 僅在 X=34.15–34.5 做差集，會局部修削末端牙；與 v001 的 216 個內壁對應射線比較，41 個差超過 0.0001 mm，最大約 0.00852 mm，可能涉及重三角化，不能宣稱中段網格完全不變。",
+                "正向向外離散 11 姿態布林交集為空，不代表連續旋轉、真實旋合或無自交；反向向外部分姿態有交集。",
+                "最小三角面積約 1.386e-5 mm²；1e-5 的篩選門檻並非合格標準，不能稱無細長面。",
+                "非 ISO 牙型、端牙截斷，材料、製程、列印、量測、試配與強度待定。"
+              ],
+              "screenshot": {
+                "path": "/challenges/side-cap-v002-03.png",
+                "sha256": "1d1ef5ac003cdd83faa5bf1fec933919a8ad74192d11c7ab0d3a64f75da49258"
+              }
+            },
+            {
+              "id": "11-side-cap-04",
+              "goal": "隱藏切割工具",
+              "context": "僅隱藏、不刪除。",
+              "operation": [
+                "在 Outliner 隱藏 Cap_Cutter_020，保留物件以便追溯。"
+              ],
+              "success": "切割工具眼睛變成隱藏狀態。",
+              "readings": [
+                "腳本確認工具隱藏。"
+              ],
+              "limits": [
+                "這是盒側保護蓋，既有平面上蓋保留，非螺旋頂蓋。",
+                "軸向端隙 0.2 mm、徑向加 0.2 / 名義直徑差 0.4 mm 都是試驗值，非正式合格公差。",
+                "端面九個軸向射線顯示 X=34.5，這些只覆蓋有限位置；端面直徑內其他局部、實際變形與試配尚未核對。",
+                "relief 僅在 X=34.15–34.5 做差集，會局部修削末端牙；與 v001 的 216 個內壁對應射線比較，41 個差超過 0.0001 mm，最大約 0.00852 mm，可能涉及重三角化，不能宣稱中段網格完全不變。",
+                "正向向外離散 11 姿態布林交集為空，不代表連續旋轉、真實旋合或無自交；反向向外部分姿態有交集。",
+                "最小三角面積約 1.386e-5 mm²；1e-5 的篩選門檻並非合格標準，不能稱無細長面。",
+                "非 ISO 牙型、端牙截斷，材料、製程、列印、量測、試配與強度待定。"
+              ],
+              "screenshot": {
+                "path": "/challenges/side-cap-v002-04.png",
+                "sha256": "48636f07a7dfc963ba9ec58ad4f9a7697964268c80d5de8ef1173ef51a8a558e"
+              }
+            },
+            {
+              "id": "11-side-cap-05",
+              "goal": "套用內牙差集",
+              "context": "先確認 Object 與 Difference，再套用；這只是幾何草案。",
+              "operation": [
+                "保持選中帽毛坯，在 Boolean 修改器選單選 Apply。"
+              ],
+              "success": "修改器移除，帽體保留。",
+              "readings": [
+                "程式讀回 806 頂點、448 面、非流形邊 0；不代表無自交。"
+              ],
+              "limits": [
+                "這是盒側保護蓋，既有平面上蓋保留，非螺旋頂蓋。",
+                "軸向端隙 0.2 mm、徑向加 0.2 / 名義直徑差 0.4 mm 都是試驗值，非正式合格公差。",
+                "端面九個軸向射線顯示 X=34.5，這些只覆蓋有限位置；端面直徑內其他局部、實際變形與試配尚未核對。",
+                "relief 僅在 X=34.15–34.5 做差集，會局部修削末端牙；與 v001 的 216 個內壁對應射線比較，41 個差超過 0.0001 mm，最大約 0.00852 mm，可能涉及重三角化，不能宣稱中段網格完全不變。",
+                "正向向外離散 11 姿態布林交集為空，不代表連續旋轉、真實旋合或無自交；反向向外部分姿態有交集。",
+                "最小三角面積約 1.386e-5 mm²；1e-5 的篩選門檻並非合格標準，不能稱無細長面。",
+                "非 ISO 牙型、端牙截斷，材料、製程、列印、量測、試配與強度待定。"
+              ],
+              "screenshot": {
+                "path": "/challenges/side-cap-v002-05.png",
+                "sha256": "6a8e263fedef20aa14b7df7d355651f809d68b6b473ade43076d93267eb47b3c"
+              }
+            },
+            {
+              "id": "11-side-cap-06",
+              "goal": "放大觀察帽體",
+              "context": "此畫面從外側看，內部牙型不可由此畫面判定。",
+              "operation": [
+                "選中帽體，F3 搜尋 Frame Selected。"
+              ],
+              "success": "帽體被放大。",
+              "readings": [
+                "仍需從開口查看及執行數位抽樣。"
+              ],
+              "limits": [
+                "這是盒側保護蓋，既有平面上蓋保留，非螺旋頂蓋。",
+                "軸向端隙 0.2 mm、徑向加 0.2 / 名義直徑差 0.4 mm 都是試驗值，非正式合格公差。",
+                "端面九個軸向射線顯示 X=34.5，這些只覆蓋有限位置；端面直徑內其他局部、實際變形與試配尚未核對。",
+                "relief 僅在 X=34.15–34.5 做差集，會局部修削末端牙；與 v001 的 216 個內壁對應射線比較，41 個差超過 0.0001 mm，最大約 0.00852 mm，可能涉及重三角化，不能宣稱中段網格完全不變。",
+                "正向向外離散 11 姿態布林交集為空，不代表連續旋轉、真實旋合或無自交；反向向外部分姿態有交集。",
+                "最小三角面積約 1.386e-5 mm²；1e-5 的篩選門檻並非合格標準，不能稱無細長面。",
+                "非 ISO 牙型、端牙截斷，材料、製程、列印、量測、試配與強度待定。"
+              ],
+              "screenshot": {
+                "path": "/challenges/side-cap-v002-06.png",
+                "sha256": "5bcbb6db1e44cf3189699039791199e8e5fffc0fc86a58b5d0283c1ec83a7f9a"
+              }
+            },
+            {
+              "id": "11-side-cap-07",
+              "goal": "另存零端隙對照版本",
+              "context": "示範由程式填寫路徑及檔名。",
+              "operation": [
+                "File > Save As 另存新版本，保留原盒。"
+              ],
+              "success": "畫面可見帽體場景。",
+              "readings": [
+                "這是 v001 零端面間隙對照版本，不是最終端隙版本。"
+              ],
+              "limits": [
+                "這是盒側保護蓋，既有平面上蓋保留，非螺旋頂蓋。",
+                "軸向端隙 0.2 mm、徑向加 0.2 / 名義直徑差 0.4 mm 都是試驗值，非正式合格公差。",
+                "端面九個軸向射線顯示 X=34.5，這些只覆蓋有限位置；端面直徑內其他局部、實際變形與試配尚未核對。",
+                "relief 僅在 X=34.15–34.5 做差集，會局部修削末端牙；與 v001 的 216 個內壁對應射線比較，41 個差超過 0.0001 mm，最大約 0.00852 mm，可能涉及重三角化，不能宣稱中段網格完全不變。",
+                "正向向外離散 11 姿態布林交集為空，不代表連續旋轉、真實旋合或無自交；反向向外部分姿態有交集。",
+                "最小三角面積約 1.386e-5 mm²；1e-5 的篩選門檻並非合格標準，不能稱無細長面。",
+                "非 ISO 牙型、端牙截斷，材料、製程、列印、量測、試配與強度待定。"
+              ],
+              "screenshot": {
+                "path": "/challenges/side-cap-v002-07.png",
+                "sha256": "c8ec0c63b6107f4d8e2ee040b2e46c1985269eb1a815c089882d62cbbe7122f2"
+              }
+            },
+            {
+              "id": "11-side-cap-08",
+              "goal": "重開零端隙對照版本",
+              "context": "保留 v001 作對照，牙端與帽內底均約 X=34.3。",
+              "operation": [
+                "重新開啟剛存的 v001 場景。"
+              ],
+              "success": "重開後帽體仍在。",
+              "readings": [
+                "此版本沒有另外設計軸向端面間隙。"
+              ],
+              "limits": [
+                "這是盒側保護蓋，既有平面上蓋保留，非螺旋頂蓋。",
+                "軸向端隙 0.2 mm、徑向加 0.2 / 名義直徑差 0.4 mm 都是試驗值，非正式合格公差。",
+                "端面九個軸向射線顯示 X=34.5，這些只覆蓋有限位置；端面直徑內其他局部、實際變形與試配尚未核對。",
+                "relief 僅在 X=34.15–34.5 做差集，會局部修削末端牙；與 v001 的 216 個內壁對應射線比較，41 個差超過 0.0001 mm，最大約 0.00852 mm，可能涉及重三角化，不能宣稱中段網格完全不變。",
+                "正向向外離散 11 姿態布林交集為空，不代表連續旋轉、真實旋合或無自交；反向向外部分姿態有交集。",
+                "最小三角面積約 1.386e-5 mm²；1e-5 的篩選門檻並非合格標準，不能稱無細長面。",
+                "非 ISO 牙型、端牙截斷，材料、製程、列印、量測、試配與強度待定。"
+              ],
+              "screenshot": {
+                "path": "/challenges/side-cap-v002-08.png",
+                "sha256": "4c5d993124a29c2f35c41173da3b3f666eff6c84cee16cded6cb88c648da49d1"
+              }
+            },
+            {
+              "id": "11-side-cap-09",
+              "goal": "準備端隙刀具",
+              "context": "此起始場景基於 v001 已完成內牙，由程式新增端隙圓柱；本機檔尚未完成公開資料審查。",
+              "operation": [
+                "以 Blender 開啟本機 relief 起始場景的複本；確認選中 Side_Cap_Blank，A_Relief_Cutter 可見。"
+              ],
+              "success": "場景中保留原帽及 A_Relief_Cutter。",
+              "readings": [
+                "工具只在末端區間切削；會修削局部牙。"
+              ],
+              "limits": [
+                "這是盒側保護蓋，既有平面上蓋保留，非螺旋頂蓋。",
+                "軸向端隙 0.2 mm、徑向加 0.2 / 名義直徑差 0.4 mm 都是試驗值，非正式合格公差。",
+                "端面九個軸向射線顯示 X=34.5，這些只覆蓋有限位置；端面直徑內其他局部、實際變形與試配尚未核對。",
+                "relief 僅在 X=34.15–34.5 做差集，會局部修削末端牙；與 v001 的 216 個內壁對應射線比較，41 個差超過 0.0001 mm，最大約 0.00852 mm，可能涉及重三角化，不能宣稱中段網格完全不變。",
+                "正向向外離散 11 姿態布林交集為空，不代表連續旋轉、真實旋合或無自交；反向向外部分姿態有交集。",
+                "最小三角面積約 1.386e-5 mm²；1e-5 的篩選門檻並非合格標準，不能稱無細長面。",
+                "非 ISO 牙型、端牙截斷，材料、製程、列印、量測、試配與強度待定。"
+              ],
+              "screenshot": {
+                "path": "/challenges/side-cap-v002-09.png",
+                "sha256": "2bf26681194cbf075e227534722f733805a5c9d0fa9e1a5c8e4e14b554f55ee4"
+              }
+            },
+            {
+              "id": "11-side-cap-10",
+              "goal": "加入端隙差集",
+              "context": "選清單項後仍須核對實際 Object。",
+              "operation": [
+                "選中 Side_Cap_Blank，F3 搜尋 Add Boolean Modifier，嘗試 Object 欄指定 A_Relief_Cutter。"
+              ],
+              "success": "修改器顯示 Difference 與 Exact。",
+              "readings": [
+                "若首次讀回物件為空，需重新選擇。"
+              ],
+              "limits": [
+                "這是盒側保護蓋，既有平面上蓋保留，非螺旋頂蓋。",
+                "軸向端隙 0.2 mm、徑向加 0.2 / 名義直徑差 0.4 mm 都是試驗值，非正式合格公差。",
+                "端面九個軸向射線顯示 X=34.5，這些只覆蓋有限位置；端面直徑內其他局部、實際變形與試配尚未核對。",
+                "relief 僅在 X=34.15–34.5 做差集，會局部修削末端牙；與 v001 的 216 個內壁對應射線比較，41 個差超過 0.0001 mm，最大約 0.00852 mm，可能涉及重三角化，不能宣稱中段網格完全不變。",
+                "正向向外離散 11 姿態布林交集為空，不代表連續旋轉、真實旋合或無自交；反向向外部分姿態有交集。",
+                "最小三角面積約 1.386e-5 mm²；1e-5 的篩選門檻並非合格標準，不能稱無細長面。",
+                "非 ISO 牙型、端牙截斷，材料、製程、列印、量測、試配與強度待定。"
+              ],
+              "screenshot": {
+                "path": "/challenges/side-cap-v002-10.png",
+                "sha256": "22711c041f2de6731450dc71058f7f225efc4eeba0d3249a015275d3428a05c6"
+              }
+            },
+            {
+              "id": "11-side-cap-11",
+              "goal": "確認端隙修改器",
+              "context": "此時仍為預覽。",
+              "operation": [
+                "確認 Difference、Exact，Object 是 A_Relief_Cutter。"
+              ],
+              "success": "修改器可見目標刀具。",
+              "readings": [
+                "程式讀回 DIFFERENCE、EXACT 及 A_Relief_Cutter。"
+              ],
+              "limits": [
+                "這是盒側保護蓋，既有平面上蓋保留，非螺旋頂蓋。",
+                "軸向端隙 0.2 mm、徑向加 0.2 / 名義直徑差 0.4 mm 都是試驗值，非正式合格公差。",
+                "端面九個軸向射線顯示 X=34.5，這些只覆蓋有限位置；端面直徑內其他局部、實際變形與試配尚未核對。",
+                "relief 僅在 X=34.15–34.5 做差集，會局部修削末端牙；與 v001 的 216 個內壁對應射線比較，41 個差超過 0.0001 mm，最大約 0.00852 mm，可能涉及重三角化，不能宣稱中段網格完全不變。",
+                "正向向外離散 11 姿態布林交集為空，不代表連續旋轉、真實旋合或無自交；反向向外部分姿態有交集。",
+                "最小三角面積約 1.386e-5 mm²；1e-5 的篩選門檻並非合格標準，不能稱無細長面。",
+                "非 ISO 牙型、端牙截斷，材料、製程、列印、量測、試配與強度待定。"
+              ],
+              "screenshot": {
+                "path": "/challenges/side-cap-v002-11.png",
+                "sha256": "22711c041f2de6731450dc71058f7f225efc4eeba0d3249a015275d3428a05c6"
+              }
+            },
+            {
+              "id": "11-side-cap-12",
+              "goal": "隱藏端隙刀具",
+              "context": "不刪除刀具。",
+              "operation": [
+                "在 Outliner 隱藏 A_Relief_Cutter，保留資料。"
+              ],
+              "success": "刀具顯示隱藏。",
+              "readings": [
+                "腳本確認隱藏。"
+              ],
+              "limits": [
+                "這是盒側保護蓋，既有平面上蓋保留，非螺旋頂蓋。",
+                "軸向端隙 0.2 mm、徑向加 0.2 / 名義直徑差 0.4 mm 都是試驗值，非正式合格公差。",
+                "端面九個軸向射線顯示 X=34.5，這些只覆蓋有限位置；端面直徑內其他局部、實際變形與試配尚未核對。",
+                "relief 僅在 X=34.15–34.5 做差集，會局部修削末端牙；與 v001 的 216 個內壁對應射線比較，41 個差超過 0.0001 mm，最大約 0.00852 mm，可能涉及重三角化，不能宣稱中段網格完全不變。",
+                "正向向外離散 11 姿態布林交集為空，不代表連續旋轉、真實旋合或無自交；反向向外部分姿態有交集。",
+                "最小三角面積約 1.386e-5 mm²；1e-5 的篩選門檻並非合格標準，不能稱無細長面。",
+                "非 ISO 牙型、端牙截斷，材料、製程、列印、量測、試配與強度待定。"
+              ],
+              "screenshot": {
+                "path": "/challenges/side-cap-v002-12.png",
+                "sha256": "cd7c1398a78dff084b62c6b09da13e1d43735ea979258f0b47f2d38e77f74f53"
+              }
+            },
+            {
+              "id": "11-side-cap-13",
+              "goal": "套用端隙",
+              "context": "圓柱從末端局部去牙；不能說整個有效牙長縮短恰好 0.2 mm。",
+              "operation": [
+                "在帽體 Boolean 修改器選單選 Apply。"
+              ],
+              "success": "修改器移除，帽體保留。",
+              "readings": [
+                "中心軸射線至內底 X=34.5；端面九點均讀到該位置。"
+              ],
+              "limits": [
+                "這是盒側保護蓋，既有平面上蓋保留，非螺旋頂蓋。",
+                "軸向端隙 0.2 mm、徑向加 0.2 / 名義直徑差 0.4 mm 都是試驗值，非正式合格公差。",
+                "端面九個軸向射線顯示 X=34.5，這些只覆蓋有限位置；端面直徑內其他局部、實際變形與試配尚未核對。",
+                "relief 僅在 X=34.15–34.5 做差集，會局部修削末端牙；與 v001 的 216 個內壁對應射線比較，41 個差超過 0.0001 mm，最大約 0.00852 mm，可能涉及重三角化，不能宣稱中段網格完全不變。",
+                "正向向外離散 11 姿態布林交集為空，不代表連續旋轉、真實旋合或無自交；反向向外部分姿態有交集。",
+                "最小三角面積約 1.386e-5 mm²；1e-5 的篩選門檻並非合格標準，不能稱無細長面。",
+                "非 ISO 牙型、端牙截斷，材料、製程、列印、量測、試配與強度待定。"
+              ],
+              "screenshot": {
+                "path": "/challenges/side-cap-v002-13.png",
+                "sha256": "5c428da67a9560f22f397cf75f9db4a8c4f8017866a56cdd4e65f27208033637"
+              }
+            },
+            {
+              "id": "11-side-cap-14",
+              "goal": "另存端隙版本",
+              "context": "示範由程式填寫檔案視窗路徑與檔名。",
+              "operation": [
+                "另存 v002 為新檔，保留 v001。"
+              ],
+              "success": "另存完成可見帽體。",
+              "readings": [
+                "v002 場景 SHA 見本紀錄。"
+              ],
+              "limits": [
+                "這是盒側保護蓋，既有平面上蓋保留，非螺旋頂蓋。",
+                "軸向端隙 0.2 mm、徑向加 0.2 / 名義直徑差 0.4 mm 都是試驗值，非正式合格公差。",
+                "端面九個軸向射線顯示 X=34.5，這些只覆蓋有限位置；端面直徑內其他局部、實際變形與試配尚未核對。",
+                "relief 僅在 X=34.15–34.5 做差集，會局部修削末端牙；與 v001 的 216 個內壁對應射線比較，41 個差超過 0.0001 mm，最大約 0.00852 mm，可能涉及重三角化，不能宣稱中段網格完全不變。",
+                "正向向外離散 11 姿態布林交集為空，不代表連續旋轉、真實旋合或無自交；反向向外部分姿態有交集。",
+                "最小三角面積約 1.386e-5 mm²；1e-5 的篩選門檻並非合格標準，不能稱無細長面。",
+                "非 ISO 牙型、端牙截斷，材料、製程、列印、量測、試配與強度待定。"
+              ],
+              "screenshot": {
+                "path": "/challenges/side-cap-v002-14.png",
+                "sha256": "04e1cf9ed1b51e244b9b1d9bef51562870720cfa2ca3ed243573aec47044727d"
+              }
+            },
+            {
+              "id": "11-side-cap-15",
+              "goal": "重開端隙版本",
+              "context": "原盒體及平面上蓋維持來源。",
+              "operation": [
+                "重開 v002，確認帽體與內底讀值。"
+              ],
+              "success": "重開後帽體仍在。",
+              "readings": [
+                "獨立讀回非流形 0、BVH 候選 0；不能代表無細面或可製造。"
+              ],
+              "limits": [
+                "這是盒側保護蓋，既有平面上蓋保留，非螺旋頂蓋。",
+                "軸向端隙 0.2 mm、徑向加 0.2 / 名義直徑差 0.4 mm 都是試驗值，非正式合格公差。",
+                "端面九個軸向射線顯示 X=34.5，這些只覆蓋有限位置；端面直徑內其他局部、實際變形與試配尚未核對。",
+                "relief 僅在 X=34.15–34.5 做差集，會局部修削末端牙；與 v001 的 216 個內壁對應射線比較，41 個差超過 0.0001 mm，最大約 0.00852 mm，可能涉及重三角化，不能宣稱中段網格完全不變。",
+                "正向向外離散 11 姿態布林交集為空，不代表連續旋轉、真實旋合或無自交；反向向外部分姿態有交集。",
+                "最小三角面積約 1.386e-5 mm²；1e-5 的篩選門檻並非合格標準，不能稱無細長面。",
+                "非 ISO 牙型、端牙截斷，材料、製程、列印、量測、試配與強度待定。"
+              ],
+              "screenshot": {
+                "path": "/challenges/side-cap-v002-15.png",
+                "sha256": "8db5e797a50ebf5482c3bede9366bd5c062d692289dec1701d6991a31d8ace14"
+              }
+            },
+            {
+              "id": "11-side-cap-16",
+              "goal": "查看開口",
+              "context": "隱藏僅限暫時檢視；此獨立檢視未另存。",
+              "operation": [
+                "在獨立視窗暫時隱藏 Body 和 Lid，選帽體並以 Ctrl+數字鍵盤 3 看 −X 方向。"
+              ],
+              "success": "可看見朝盒側的帽開口。",
+              "readings": [
+                "開口視圖本身不能驗證間隙或全部內牙。"
+              ],
+              "limits": [
+                "這是盒側保護蓋，既有平面上蓋保留，非螺旋頂蓋。",
+                "軸向端隙 0.2 mm、徑向加 0.2 / 名義直徑差 0.4 mm 都是試驗值，非正式合格公差。",
+                "端面九個軸向射線顯示 X=34.5，這些只覆蓋有限位置；端面直徑內其他局部、實際變形與試配尚未核對。",
+                "relief 僅在 X=34.15–34.5 做差集，會局部修削末端牙；與 v001 的 216 個內壁對應射線比較，41 個差超過 0.0001 mm，最大約 0.00852 mm，可能涉及重三角化，不能宣稱中段網格完全不變。",
+                "正向向外離散 11 姿態布林交集為空，不代表連續旋轉、真實旋合或無自交；反向向外部分姿態有交集。",
+                "最小三角面積約 1.386e-5 mm²；1e-5 的篩選門檻並非合格標準，不能稱無細長面。",
+                "非 ISO 牙型、端牙截斷，材料、製程、列印、量測、試配與強度待定。"
+              ],
+              "screenshot": {
+                "path": "/challenges/side-cap-v002-16.png",
+                "sha256": "d13699bbb3283df9d9cac70aae3613347a855b8e8380a942b7982a8b3d833d08"
+              }
+            },
+            {
+              "id": "11-side-cap-17",
+              "goal": "轉動觀察內牙",
+              "context": "局部畫面不能證明整條牙形或可旋合。",
+              "operation": [
+                "使用數字鍵盤 2、4 旋轉視角，觀察內部局部牙紋。"
+              ],
+              "success": "可看見部分內牙。",
+              "readings": [
+                "徑向與軸向試驗值、射線及離散運動檢查均非實印合格。"
+              ],
+              "limits": [
+                "這是盒側保護蓋，既有平面上蓋保留，非螺旋頂蓋。",
+                "軸向端隙 0.2 mm、徑向加 0.2 / 名義直徑差 0.4 mm 都是試驗值，非正式合格公差。",
+                "端面九個軸向射線顯示 X=34.5，這些只覆蓋有限位置；端面直徑內其他局部、實際變形與試配尚未核對。",
+                "relief 僅在 X=34.15–34.5 做差集，會局部修削末端牙；與 v001 的 216 個內壁對應射線比較，41 個差超過 0.0001 mm，最大約 0.00852 mm，可能涉及重三角化，不能宣稱中段網格完全不變。",
+                "正向向外離散 11 姿態布林交集為空，不代表連續旋轉、真實旋合或無自交；反向向外部分姿態有交集。",
+                "最小三角面積約 1.386e-5 mm²；1e-5 的篩選門檻並非合格標準，不能稱無細長面。",
+                "非 ISO 牙型、端牙截斷，材料、製程、列印、量測、試配與強度待定。"
+              ],
+              "screenshot": {
+                "path": "/challenges/side-cap-v002-17.png",
+                "sha256": "032da2ea8dd60433c1e6a9f1e92d4832d7e1b442c0cf7f95228ca61fd7726edf"
+              }
+            }
+          ]
+        },
+        {
+          "title": "第 11 章選修：四熱熔螺母柱與蓋孔幾何草案",
+          "section": "11-16",
+          "description": "原盒與蓋副本上的數位示範；不更新學員進度，實體列印、量測與試配待定。 柱、肋及孔刀具由程式預建；布林、另存與重開是 GUI 操作。",
+          "startingScene": {
+            "path": "learning/evidence/08/2026-10-28-four-insert-boss-start-gui-v001/demo-files/u11_four_insert_boss_start_v001.blend",
+            "sha256": "415cbf110088be7821c445e8f9bd6946880d69fa54b114d4adf780e58c92582a",
+            "verification": "learning/evidence/08/2026-10-28-four-insert-boss-start-gui-v001/independent-audit-v001.json",
+            "construction": "程式預備五組工具；原始 Body/Lid 尚未做布林，已另存與重開核對。"
+          },
+          "sourceVersions": [
+            {
+              "label": "原盒及上蓋",
+              "path": "learning/evidence/05/2026-10-22-lesson05-lid-demo-v001/demo-files/u05_lid_v001.blend",
+              "sha256": "ab08f331dcb26c5ffc6c6ca56c7c7f022df96791c4777e37c5f01a964fbed6ff"
+            },
+            {
+              "label": "GUI 跟做起始副本",
+              "path": "learning/evidence/08/2026-10-28-four-insert-boss-start-gui-v001/demo-files/u11_four_insert_boss_start_v001.blend",
+              "sha256": "415cbf110088be7821c445e8f9bd6946880d69fa54b114d4adf780e58c92582a"
+            },
+            {
+              "label": "四柱蓋孔結果",
+              "path": "learning/evidence/08/2026-10-28-four-insert-boss-gui-v001/demo-files/u11_four_insert_boss_box_v001.blend",
+              "sha256": "70f6687edc450438d21ada9b61b9295cf24079c64884947b9c4081de88e23462"
+            }
+          ],
+          "steps": [
+            {
+              "id": "11-four-inserts-01",
+              "goal": "開啟可跟做副本",
+              "context": "柱、肋及刀具由 Python 預建，不是本單元 GUI 從零建模；起始副本尚未做布林。",
+              "operation": [
+                "開啟另存的起始檔，確認 Body 可見、Lid 與五組工具隱藏。"
+              ],
+              "success": "看到開口盒體；工具因隱藏而不可見。",
+              "readings": [
+                "獨立驗證 Body 和 Lid 的面頂點指紋與原檔一致；五個工具各含 4 個分離構件。"
+              ],
+              "limits": [
+                "柱、肋與切割工具由 Python 預建；後續 Boolean、新檔及重開為隔離 Blender GUI。",
+                "起始檔是另一次重演，五個工具的世界面頂點指紋與成品中的刀具一致；不得說成同一場次。",
+                "四個蓋孔 3.4 mm 是我方試驗名義值，未經列印或試配，並非 ISO 已選公差或合格間隙。",
+                "無螺絲與嵌件實體網格，螺絲頭為尺寸包絡，未模擬螺紋、安裝、干涉或扭矩。",
+                "柱、肋和原盒的材料、製程、列印方向、熱熔與結構強度未驗證；非流形和 BVH 指標不保證無自交。",
+                "32 方向壁厚與孔徑射線為特定高度的數位局部抽樣；肋與蓋間距僅靜態外框距離。",
+                "末幾張畫面主要為盒底視角，孔與肋需參考第 9、12 步及讀值。"
+              ],
+              "screenshot": {
+                "path": "/challenges/metal-box-v001-01.png",
+                "sha256": "b9bd689951bfcb7c4ee166d30ca81376079864736f5f7fe2224bdefc81b16d91"
+              }
+            },
+            {
+              "id": "11-four-inserts-02",
+              "goal": "預覽四柱聯集",
+              "context": "以起始檔中預建的四柱工具操作；中心為 X±21、Y±11 mm。",
+              "operation": [
+                "選 Body，F3 搜尋 Add Boolean Modifier，選 Union、Exact，Object 選 zz_Boss_Pillars。"
+              ],
+              "success": "修改器顯示 Union／Exact；物件欄名稱可能因欄寬截斷。",
+              "readings": [
+                "程式讀回 UNION、EXACT 與 zz_Boss_Pillars。"
+              ],
+              "limits": [
+                "柱、肋與切割工具由 Python 預建；後續 Boolean、新檔及重開為隔離 Blender GUI。",
+                "起始檔是另一次重演，五個工具的世界面頂點指紋與成品中的刀具一致；不得說成同一場次。",
+                "四個蓋孔 3.4 mm 是我方試驗名義值，未經列印或試配，並非 ISO 已選公差或合格間隙。",
+                "無螺絲與嵌件實體網格，螺絲頭為尺寸包絡，未模擬螺紋、安裝、干涉或扭矩。",
+                "柱、肋和原盒的材料、製程、列印方向、熱熔與結構強度未驗證；非流形和 BVH 指標不保證無自交。",
+                "32 方向壁厚與孔徑射線為特定高度的數位局部抽樣；肋與蓋間距僅靜態外框距離。",
+                "末幾張畫面主要為盒底視角，孔與肋需參考第 9、12 步及讀值。"
+              ],
+              "screenshot": {
+                "path": "/challenges/metal-box-v001-02.png",
+                "sha256": "a73886bc958a68c7bb83e85671582c8f839eaa467f0d6b9e49612b4f1aa39f34"
+              }
+            },
+            {
+              "id": "11-four-inserts-03",
+              "goal": "套用四柱聯集",
+              "context": "確認正確工具後套用；預建柱底 Z=-13.5、頂 Z=15 mm。",
+              "operation": [
+                "在 Boolean 修改器選單按 Apply。"
+              ],
+              "success": "可見盒內四柱，但部分柱體下部被盒壁遮住。",
+              "readings": [
+                "Body 讀回 272 點、148 面、1 連通體、非流形邊 0。"
+              ],
+              "limits": [
+                "柱、肋與切割工具由 Python 預建；後續 Boolean、新檔及重開為隔離 Blender GUI。",
+                "起始檔是另一次重演，五個工具的世界面頂點指紋與成品中的刀具一致；不得說成同一場次。",
+                "四個蓋孔 3.4 mm 是我方試驗名義值，未經列印或試配，並非 ISO 已選公差或合格間隙。",
+                "無螺絲與嵌件實體網格，螺絲頭為尺寸包絡，未模擬螺紋、安裝、干涉或扭矩。",
+                "柱、肋和原盒的材料、製程、列印方向、熱熔與結構強度未驗證；非流形和 BVH 指標不保證無自交。",
+                "32 方向壁厚與孔徑射線為特定高度的數位局部抽樣；肋與蓋間距僅靜態外框距離。",
+                "末幾張畫面主要為盒底視角，孔與肋需參考第 9、12 步及讀值。"
+              ],
+              "screenshot": {
+                "path": "/challenges/metal-box-v001-03.png",
+                "sha256": "db593918a470b513303b68b1c68e54eb2cd4271c21af6e0af737eaed3a27c979"
+              }
+            },
+            {
+              "id": "11-four-inserts-04",
+              "goal": "預覽 X 向連壁肋",
+              "context": "每個柱體的 X 向肋為預建工具，頂部 Z=10 mm。",
+              "operation": [
+                "選 Body，新增加 Boolean，選 Union／Exact，Object 選 zz_Boss_Ribs_X。"
+              ],
+              "success": "修改器顯示聯集設定；肋的局部可能受盒壁遮擋。",
+              "readings": [
+                "程式讀回 UNION、EXACT 與 zz_Boss_Ribs_X。"
+              ],
+              "limits": [
+                "柱、肋與切割工具由 Python 預建；後續 Boolean、新檔及重開為隔離 Blender GUI。",
+                "起始檔是另一次重演，五個工具的世界面頂點指紋與成品中的刀具一致；不得說成同一場次。",
+                "四個蓋孔 3.4 mm 是我方試驗名義值，未經列印或試配，並非 ISO 已選公差或合格間隙。",
+                "無螺絲與嵌件實體網格，螺絲頭為尺寸包絡，未模擬螺紋、安裝、干涉或扭矩。",
+                "柱、肋和原盒的材料、製程、列印方向、熱熔與結構強度未驗證；非流形和 BVH 指標不保證無自交。",
+                "32 方向壁厚與孔徑射線為特定高度的數位局部抽樣；肋與蓋間距僅靜態外框距離。",
+                "末幾張畫面主要為盒底視角，孔與肋需參考第 9、12 步及讀值。"
+              ],
+              "screenshot": {
+                "path": "/challenges/metal-box-v001-04.png",
+                "sha256": "a58adb1b7e8c0481f4687ec58f5b882d1ebab64bcab89310cb281593dadd2ef7"
+              }
+            },
+            {
+              "id": "11-four-inserts-05",
+              "goal": "套用 X 向肋",
+              "context": "肋與柱、盒壁有名義重疊；仍未做強度判定。",
+              "operation": [
+                "確認後在修改器選單按 Apply。"
+              ],
+              "success": "盒內仍可見柱體；此角度未能顯出每條肋。",
+              "readings": [
+                "Body 讀回 304 點、164 面、1 連通體、非流形邊 0。"
+              ],
+              "limits": [
+                "柱、肋與切割工具由 Python 預建；後續 Boolean、新檔及重開為隔離 Blender GUI。",
+                "起始檔是另一次重演，五個工具的世界面頂點指紋與成品中的刀具一致；不得說成同一場次。",
+                "四個蓋孔 3.4 mm 是我方試驗名義值，未經列印或試配，並非 ISO 已選公差或合格間隙。",
+                "無螺絲與嵌件實體網格，螺絲頭為尺寸包絡，未模擬螺紋、安裝、干涉或扭矩。",
+                "柱、肋和原盒的材料、製程、列印方向、熱熔與結構強度未驗證；非流形和 BVH 指標不保證無自交。",
+                "32 方向壁厚與孔徑射線為特定高度的數位局部抽樣；肋與蓋間距僅靜態外框距離。",
+                "末幾張畫面主要為盒底視角，孔與肋需參考第 9、12 步及讀值。"
+              ],
+              "screenshot": {
+                "path": "/challenges/metal-box-v001-05.png",
+                "sha256": "0cf534cf730c8aa20fdbf67e8addd3ee35fbf48ede166526d59e9f80c2a28b41"
+              }
+            },
+            {
+              "id": "11-four-inserts-06",
+              "goal": "預覽 Y 向連壁肋",
+              "context": "預建工具為四條 Y 向肋，與柱及側壁相交。",
+              "operation": [
+                "選 Body，新增加 Boolean，選 Union／Exact，Object 選 zz_Boss_Ribs_Y。"
+              ],
+              "success": "修改器顯示聯集設定；工具名稱可能截斷。",
+              "readings": [
+                "程式讀回 UNION、EXACT 與 zz_Boss_Ribs_Y。"
+              ],
+              "limits": [
+                "柱、肋與切割工具由 Python 預建；後續 Boolean、新檔及重開為隔離 Blender GUI。",
+                "起始檔是另一次重演，五個工具的世界面頂點指紋與成品中的刀具一致；不得說成同一場次。",
+                "四個蓋孔 3.4 mm 是我方試驗名義值，未經列印或試配，並非 ISO 已選公差或合格間隙。",
+                "無螺絲與嵌件實體網格，螺絲頭為尺寸包絡，未模擬螺紋、安裝、干涉或扭矩。",
+                "柱、肋和原盒的材料、製程、列印方向、熱熔與結構強度未驗證；非流形和 BVH 指標不保證無自交。",
+                "32 方向壁厚與孔徑射線為特定高度的數位局部抽樣；肋與蓋間距僅靜態外框距離。",
+                "末幾張畫面主要為盒底視角，孔與肋需參考第 9、12 步及讀值。"
+              ],
+              "screenshot": {
+                "path": "/challenges/metal-box-v001-06.png",
+                "sha256": "a58adb1b7e8c0481f4687ec58f5b882d1ebab64bcab89310cb281593dadd2ef7"
+              }
+            },
+            {
+              "id": "11-four-inserts-07",
+              "goal": "套用 Y 向肋",
+              "context": "肋厚為名義 2 mm、頂面 Z=10 mm。",
+              "operation": [
+                "確認後在修改器選單按 Apply。"
+              ],
+              "success": "盒內可見四柱，部分肋體被遮擋。",
+              "readings": [
+                "Body 讀回 336 點、180 面、1 連通體、非流形邊 0。"
+              ],
+              "limits": [
+                "柱、肋與切割工具由 Python 預建；後續 Boolean、新檔及重開為隔離 Blender GUI。",
+                "起始檔是另一次重演，五個工具的世界面頂點指紋與成品中的刀具一致；不得說成同一場次。",
+                "四個蓋孔 3.4 mm 是我方試驗名義值，未經列印或試配，並非 ISO 已選公差或合格間隙。",
+                "無螺絲與嵌件實體網格，螺絲頭為尺寸包絡，未模擬螺紋、安裝、干涉或扭矩。",
+                "柱、肋和原盒的材料、製程、列印方向、熱熔與結構強度未驗證；非流形和 BVH 指標不保證無自交。",
+                "32 方向壁厚與孔徑射線為特定高度的數位局部抽樣；肋與蓋間距僅靜態外框距離。",
+                "末幾張畫面主要為盒底視角，孔與肋需參考第 9、12 步及讀值。"
+              ],
+              "screenshot": {
+                "path": "/challenges/metal-box-v001-07.png",
+                "sha256": "0cf534cf730c8aa20fdbf67e8addd3ee35fbf48ede166526d59e9f80c2a28b41"
+              }
+            },
+            {
+              "id": "11-four-inserts-08",
+              "goal": "預覽柱孔切割",
+              "context": "四個預建切割工具名義 Ø4 mm，底 Z=6、頂延伸至 15.5 mm 以穿過柱頂。",
+              "operation": [
+                "選 Body，新增加 Boolean，選 Difference／Exact，Object 選 zz_Boss_Pilot_Tools。"
+              ],
+              "success": "修改器顯示 Difference／Exact；可能不能由預覽辨認孔深。",
+              "readings": [
+                "程式讀回 DIFFERENCE、EXACT 與 zz_Boss_Pilot_Tools。"
+              ],
+              "limits": [
+                "柱、肋與切割工具由 Python 預建；後續 Boolean、新檔及重開為隔離 Blender GUI。",
+                "起始檔是另一次重演，五個工具的世界面頂點指紋與成品中的刀具一致；不得說成同一場次。",
+                "四個蓋孔 3.4 mm 是我方試驗名義值，未經列印或試配，並非 ISO 已選公差或合格間隙。",
+                "無螺絲與嵌件實體網格，螺絲頭為尺寸包絡，未模擬螺紋、安裝、干涉或扭矩。",
+                "柱、肋和原盒的材料、製程、列印方向、熱熔與結構強度未驗證；非流形和 BVH 指標不保證無自交。",
+                "32 方向壁厚與孔徑射線為特定高度的數位局部抽樣；肋與蓋間距僅靜態外框距離。",
+                "末幾張畫面主要為盒底視角，孔與肋需參考第 9、12 步及讀值。"
+              ],
+              "screenshot": {
+                "path": "/challenges/metal-box-v001-08.png",
+                "sha256": "916a9a1aa5ea2cdaa7db6ab234371555f7a7ce8075ce68131ba4ba22b7a7d4e8"
+              }
+            },
+            {
+              "id": "11-four-inserts-09",
+              "goal": "套用四個柱盲孔",
+              "context": "柱頂 Z=15、孔底 Z=6，名義孔深 9 mm。",
+              "operation": [
+                "確認後在修改器選單按 Apply。"
+              ],
+              "success": "畫面可看到柱頂孔；前側部分受盒壁遮擋。",
+              "readings": [
+                "Body 讀回 592 點、316 面、1 連通體、非流形邊 0；獨立抽樣四孔底 Z≈6 mm。"
+              ],
+              "limits": [
+                "柱、肋與切割工具由 Python 預建；後續 Boolean、新檔及重開為隔離 Blender GUI。",
+                "起始檔是另一次重演，五個工具的世界面頂點指紋與成品中的刀具一致；不得說成同一場次。",
+                "四個蓋孔 3.4 mm 是我方試驗名義值，未經列印或試配，並非 ISO 已選公差或合格間隙。",
+                "無螺絲與嵌件實體網格，螺絲頭為尺寸包絡，未模擬螺紋、安裝、干涉或扭矩。",
+                "柱、肋和原盒的材料、製程、列印方向、熱熔與結構強度未驗證；非流形和 BVH 指標不保證無自交。",
+                "32 方向壁厚與孔徑射線為特定高度的數位局部抽樣；肋與蓋間距僅靜態外框距離。",
+                "末幾張畫面主要為盒底視角，孔與肋需參考第 9、12 步及讀值。"
+              ],
+              "screenshot": {
+                "path": "/challenges/metal-box-v001-09.png",
+                "sha256": "ddfb5f57c677eabaab44fdad23d7209078c128007864a010e4bb0e98bebf9bae"
+              }
+            },
+            {
+              "id": "11-four-inserts-10",
+              "goal": "顯示既有上蓋",
+              "context": "上蓋位於原本名義關閉位置；不要移動它。",
+              "operation": [
+                "在 Outliner 找到 Lid，點眼睛顯示原上蓋。"
+              ],
+              "success": "畫面顯示上蓋並遮住盒內柱體。",
+              "readings": [
+                "劇本以 hide_get() 確認上蓋顯示；尚未打蓋孔。"
+              ],
+              "limits": [
+                "柱、肋與切割工具由 Python 預建；後續 Boolean、新檔及重開為隔離 Blender GUI。",
+                "起始檔是另一次重演，五個工具的世界面頂點指紋與成品中的刀具一致；不得說成同一場次。",
+                "四個蓋孔 3.4 mm 是我方試驗名義值，未經列印或試配，並非 ISO 已選公差或合格間隙。",
+                "無螺絲與嵌件實體網格，螺絲頭為尺寸包絡，未模擬螺紋、安裝、干涉或扭矩。",
+                "柱、肋和原盒的材料、製程、列印方向、熱熔與結構強度未驗證；非流形和 BVH 指標不保證無自交。",
+                "32 方向壁厚與孔徑射線為特定高度的數位局部抽樣；肋與蓋間距僅靜態外框距離。",
+                "末幾張畫面主要為盒底視角，孔與肋需參考第 9、12 步及讀值。"
+              ],
+              "screenshot": {
+                "path": "/challenges/metal-box-v001-10.png",
+                "sha256": "bb5dfaeb486eae67d5c337d1296f7450e55b95c463c522ceca4be6683e27102d"
+              }
+            },
+            {
+              "id": "11-four-inserts-11",
+              "goal": "預覽蓋穿孔",
+              "context": "名義 Ø3.4 mm 為本案試驗值，不是已驗證公差。",
+              "operation": [
+                "選 Lid，新增加 Boolean，選 Difference／Exact，Object 選 zz_Boss_Lid_Tools。"
+              ],
+              "success": "可見上蓋及布林預覽；名稱可能因欄寬截斷。",
+              "readings": [
+                "程式讀回 DIFFERENCE、EXACT 與 zz_Boss_Lid_Tools。"
+              ],
+              "limits": [
+                "柱、肋與切割工具由 Python 預建；後續 Boolean、新檔及重開為隔離 Blender GUI。",
+                "起始檔是另一次重演，五個工具的世界面頂點指紋與成品中的刀具一致；不得說成同一場次。",
+                "四個蓋孔 3.4 mm 是我方試驗名義值，未經列印或試配，並非 ISO 已選公差或合格間隙。",
+                "無螺絲與嵌件實體網格，螺絲頭為尺寸包絡，未模擬螺紋、安裝、干涉或扭矩。",
+                "柱、肋和原盒的材料、製程、列印方向、熱熔與結構強度未驗證；非流形和 BVH 指標不保證無自交。",
+                "32 方向壁厚與孔徑射線為特定高度的數位局部抽樣；肋與蓋間距僅靜態外框距離。",
+                "末幾張畫面主要為盒底視角，孔與肋需參考第 9、12 步及讀值。"
+              ],
+              "screenshot": {
+                "path": "/challenges/metal-box-v001-11.png",
+                "sha256": "47e4c120b616164ad1cd8497bfa801e75fd8e7e166fef6bbe0746f0127940ea2"
+              }
+            },
+            {
+              "id": "11-four-inserts-12",
+              "goal": "套用蓋穿孔",
+              "context": "刀具穿過蓋板上下表面；未建真實螺絲或熱熔螺母。",
+              "operation": [
+                "確認後在修改器選單按 Apply。"
+              ],
+              "success": "上蓋畫面可看到四個孔。",
+              "readings": [
+                "Lid 讀回 280 點、154 面、1 連通體、非流形邊 0；四孔軸向射線無命中。"
+              ],
+              "limits": [
+                "柱、肋與切割工具由 Python 預建；後續 Boolean、新檔及重開為隔離 Blender GUI。",
+                "起始檔是另一次重演，五個工具的世界面頂點指紋與成品中的刀具一致；不得說成同一場次。",
+                "四個蓋孔 3.4 mm 是我方試驗名義值，未經列印或試配，並非 ISO 已選公差或合格間隙。",
+                "無螺絲與嵌件實體網格，螺絲頭為尺寸包絡，未模擬螺紋、安裝、干涉或扭矩。",
+                "柱、肋和原盒的材料、製程、列印方向、熱熔與結構強度未驗證；非流形和 BVH 指標不保證無自交。",
+                "32 方向壁厚與孔徑射線為特定高度的數位局部抽樣；肋與蓋間距僅靜態外框距離。",
+                "末幾張畫面主要為盒底視角，孔與肋需參考第 9、12 步及讀值。"
+              ],
+              "screenshot": {
+                "path": "/challenges/metal-box-v001-12.png",
+                "sha256": "26d4edc0fd500ebc83a75a49b3d879c88b80c6d6f12cb9bddf542947d9157663"
+              }
+            },
+            {
+              "id": "11-four-inserts-13",
+              "goal": "聚焦觀察盒體",
+              "context": "圖像可能從盒底方向觀看，需配合之前上蓋及柱孔圖片。",
+              "operation": [
+                "選 Body，F3 搜尋 Frame Selected 並調整視角。"
+              ],
+              "success": "此實拍主要顯示盒體外底，無法看見所有內部孔肋。",
+              "readings": [
+                "Body 外框約 60 × 40 × 30 mm；此圖不證明內部尺寸。"
+              ],
+              "limits": [
+                "柱、肋與切割工具由 Python 預建；後續 Boolean、新檔及重開為隔離 Blender GUI。",
+                "起始檔是另一次重演，五個工具的世界面頂點指紋與成品中的刀具一致；不得說成同一場次。",
+                "四個蓋孔 3.4 mm 是我方試驗名義值，未經列印或試配，並非 ISO 已選公差或合格間隙。",
+                "無螺絲與嵌件實體網格，螺絲頭為尺寸包絡，未模擬螺紋、安裝、干涉或扭矩。",
+                "柱、肋和原盒的材料、製程、列印方向、熱熔與結構強度未驗證；非流形和 BVH 指標不保證無自交。",
+                "32 方向壁厚與孔徑射線為特定高度的數位局部抽樣；肋與蓋間距僅靜態外框距離。",
+                "末幾張畫面主要為盒底視角，孔與肋需參考第 9、12 步及讀值。"
+              ],
+              "screenshot": {
+                "path": "/challenges/metal-box-v001-13.png",
+                "sha256": "631277d562510d29a6cc2e3d77d042bc2e427db6252e70c45b3dda6b201ff461"
+              }
+            },
+            {
+              "id": "11-four-inserts-14",
+              "goal": "另存新版本",
+              "context": "示範檔案視窗路徑及檔名由程式填入。",
+              "operation": [
+                "File > Save As，另存新場景，保留原始盒與起始檔。"
+              ],
+              "success": "另存後保留盒體畫面，這不是檔案對話框截圖。",
+              "readings": [
+                "示範檔 SHA-256 見 demonstrationSceneSha256；實體結果未填。"
+              ],
+              "limits": [
+                "柱、肋與切割工具由 Python 預建；後續 Boolean、新檔及重開為隔離 Blender GUI。",
+                "起始檔是另一次重演，五個工具的世界面頂點指紋與成品中的刀具一致；不得說成同一場次。",
+                "四個蓋孔 3.4 mm 是我方試驗名義值，未經列印或試配，並非 ISO 已選公差或合格間隙。",
+                "無螺絲與嵌件實體網格，螺絲頭為尺寸包絡，未模擬螺紋、安裝、干涉或扭矩。",
+                "柱、肋和原盒的材料、製程、列印方向、熱熔與結構強度未驗證；非流形和 BVH 指標不保證無自交。",
+                "32 方向壁厚與孔徑射線為特定高度的數位局部抽樣；肋與蓋間距僅靜態外框距離。",
+                "末幾張畫面主要為盒底視角，孔與肋需參考第 9、12 步及讀值。"
+              ],
+              "screenshot": {
+                "path": "/challenges/metal-box-v001-14.png",
+                "sha256": "e972cc1cbbd627bf0c910b8079937e5c625667d0a67668dac661421df739e757"
+              }
+            },
+            {
+              "id": "11-four-inserts-15",
+              "goal": "重開並獨立核對",
+              "context": "檔案欄位由程式填入；重新開啟不等於學員完成。",
+              "operation": [
+                "重開另存的新檔，以另一個 Blender 讀回網格與局部射線。"
+              ],
+              "success": "重開畫面從盒底視角觀看，四孔及肋並非都可見。",
+              "readings": [
+                "Body/Lid 均 1 連通體、非流形邊 0、BVH 候選 0；四孔在各自主軸和四個徑向抽樣，並不保證所有方向或實體尺寸。"
+              ],
+              "limits": [
+                "柱、肋與切割工具由 Python 預建；後續 Boolean、新檔及重開為隔離 Blender GUI。",
+                "起始檔是另一次重演，五個工具的世界面頂點指紋與成品中的刀具一致；不得說成同一場次。",
+                "四個蓋孔 3.4 mm 是我方試驗名義值，未經列印或試配，並非 ISO 已選公差或合格間隙。",
+                "無螺絲與嵌件實體網格，螺絲頭為尺寸包絡，未模擬螺紋、安裝、干涉或扭矩。",
+                "柱、肋和原盒的材料、製程、列印方向、熱熔與結構強度未驗證；非流形和 BVH 指標不保證無自交。",
+                "32 方向壁厚與孔徑射線為特定高度的數位局部抽樣；肋與蓋間距僅靜態外框距離。",
+                "末幾張畫面主要為盒底視角，孔與肋需參考第 9、12 步及讀值。"
+              ],
+              "screenshot": {
+                "path": "/challenges/metal-box-v001-15.png",
+                "sha256": "d96771e9d18c520680c7e462648de7a09993025009e5d582cb2f925496c06a90"
+              }
+            }
+          ]
+        },
+        {
+          "title": "歷史參照：程式預建輪廓的修訂外牙（14 步）",
+          "section": "11-11",
+          "description": "三角輪廓由程式預建，其餘為獨立 Blender GUI 示範；柱芯旋轉 5.625°、高度約 4.8 mm。BVH 候選及診斷門檻下薄面數為零並不能證明無自交或可製造；非 ISO，尚未實印或試配。",
+          "startingScene": {
+            "path": "learning/evidence/08/2026-10-28-external-thread-profile-start-v001/u08_external_thread_profile_start_v001.blend",
+            "sha256": "a9083cb26d87ff9d6d8d18ea81309f932812127cd468fb58659baf504609271c",
+            "verification": "learning/evidence/08/2026-10-28-external-thread-profile-start-v001/independent-audit-v001.json",
+            "construction": "依 v005 原腳本由程式預建輪廓並另存；獨立重開驗證。"
+          },
+          "sourceVersions": [
+            {
+              "label": "原盒參考",
+              "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/demo-files/u08_thread_reference_v001.blend",
+              "sha256": "9bda36c10fd916ef9cbe688f5ca56dcf8cfa0adb83d684300e60196225589d8f"
+            },
+            {
+              "label": "修訂外牙新版本",
+              "path": "learning/evidence/08/2026-10-28-external-thread-gui-trial-v010/demo-files/u08_external_gui_draft_v003.blend",
+              "sha256": "5a0aea1af13f46e9bff1b14327aa199b6b34f421936fd5a516226fc13072ec04"
+            }
+          ],
+          "steps": [
+            {
+              "id": "11-external-repaired-01",
+              "goal": "準備來源輪廓",
+              "context": "程式在載入副本後建立輪廓、隱藏盒體；此步不是 GUI 手繪。",
+              "operation": [
+                "開啟既有參考場景的保護副本，示範以程式準備 Thread_Triangle_Profile 三點三邊輪廓。"
+              ],
+              "success": "畫面顯示 Thread_Triangle_Profile 輪廓及場景。",
+              "readings": [
+                "程式讀回 3 點、3 邊、0 面；三點為 (4.8,0,0)、(6,0,0.3)、(4.8,0,0.6) mm。"
+              ],
+              "limits": [
+                "三角截面為程式預建，並非 GUI 手繪；之後在獨立 Blender 以 GUI 事件建立與另存。",
+                "修正版柱芯旋轉 5.625° 並延長至約 4.8 mm，改變多邊形局部輪廓及整體高度；請與保留的 v005 風險案例比較。",
+                "獨立 BVH 候選為 0、診斷門檻以下薄面為 0，不證明完全沒有自交或可製造；10⁻⁵ mm² 為診斷門檻而非合格標準。",
+                "此為獨立示範，不是 ISO 標準牙形；材料、配合、實際列印與量測均未驗證。",
+                "畫面部分視角較小，須配合讀值；檔案對話框路徑及檔名由程式填入。"
+              ],
+              "screenshot": {
+                "path": "/challenges/external-gui-v010-01.png",
+                "sha256": "4ee883f9bbba5b122514137aa122dbeca32bafe702b43401dc9eed112aed76f3"
+              }
+            },
+            {
+              "id": "11-external-repaired-02",
+              "goal": "加入 Screw 修改器",
+              "context": "輪廓已由程式建立；這裡是單頭三角牙草案，非 ISO。",
+              "operation": [
+                "選取 Thread_Triangle_Profile，在物件模式 F3 搜尋 Add Screw Modifier；設定角度 360°、每圈位移 1 mm、4 次迭代、每圈 32 段。"
+              ],
+              "success": "修改器面板顯示 Screw，視窗出現螺旋牙條。",
+              "readings": [
+                "程式讀回 1 mm、4 次、32 段，評估後 387 頂點、384 面、6 條邊界；角度需結合畫面與劇本。"
+              ],
+              "limits": [
+                "三角截面為程式預建，並非 GUI 手繪；之後在獨立 Blender 以 GUI 事件建立與另存。",
+                "修正版柱芯旋轉 5.625° 並延長至約 4.8 mm，改變多邊形局部輪廓及整體高度；請與保留的 v005 風險案例比較。",
+                "獨立 BVH 候選為 0、診斷門檻以下薄面為 0，不證明完全沒有自交或可製造；10⁻⁵ mm² 為診斷門檻而非合格標準。",
+                "此為獨立示範，不是 ISO 標準牙形；材料、配合、實際列印與量測均未驗證。",
+                "畫面部分視角較小，須配合讀值；檔案對話框路徑及檔名由程式填入。"
+              ],
+              "screenshot": {
+                "path": "/challenges/external-gui-v010-02.png",
+                "sha256": "7078e4472c07d462f27b7c943a48dcd10db63e58d2efd727959005342e68d0e0"
+              }
+            },
+            {
+              "id": "11-external-repaired-03",
+              "goal": "將 Screw 轉為網格",
+              "context": "轉換前確認修改器數值；保留來源副本。",
+              "operation": [
+                "物件模式下選取輪廓物件，F3 搜尋 Convert Mesh，確認已轉換。"
+              ],
+              "success": "修改器消失，牙條仍顯示於視窗。",
+              "readings": [
+                "讀回修改器為空，仍有 6 條開口邊。"
+              ],
+              "limits": [
+                "三角截面為程式預建，並非 GUI 手繪；之後在獨立 Blender 以 GUI 事件建立與另存。",
+                "修正版柱芯旋轉 5.625° 並延長至約 4.8 mm，改變多邊形局部輪廓及整體高度；請與保留的 v005 風險案例比較。",
+                "獨立 BVH 候選為 0、診斷門檻以下薄面為 0，不證明完全沒有自交或可製造；10⁻⁵ mm² 為診斷門檻而非合格標準。",
+                "此為獨立示範，不是 ISO 標準牙形；材料、配合、實際列印與量測均未驗證。",
+                "畫面部分視角較小，須配合讀值；檔案對話框路徑及檔名由程式填入。"
+              ],
+              "screenshot": {
+                "path": "/challenges/external-gui-v010-03.png",
+                "sha256": "4433e726870ab457f4059e732778651e7228564024a6346b9b776e35492d6e40"
+              }
+            },
+            {
+              "id": "11-external-repaired-04",
+              "goal": "選取非流形邊",
+              "context": "這是找出未封端邊的教學步驟，畫面可能需放大觀察。",
+              "operation": [
+                "選取牙條，Tab 進入編輯模式，按 2 切邊選取、Alt+A 取消選取；F3 搜尋 Select Non Manifold。"
+              ],
+              "success": "牙條兩端邊界被選取。",
+              "readings": [
+                "程式讀回 6 條邊界及 6 條非流形邊。"
+              ],
+              "limits": [
+                "三角截面為程式預建，並非 GUI 手繪；之後在獨立 Blender 以 GUI 事件建立與另存。",
+                "修正版柱芯旋轉 5.625° 並延長至約 4.8 mm，改變多邊形局部輪廓及整體高度；請與保留的 v005 風險案例比較。",
+                "獨立 BVH 候選為 0、診斷門檻以下薄面為 0，不證明完全沒有自交或可製造；10⁻⁵ mm² 為診斷門檻而非合格標準。",
+                "此為獨立示範，不是 ISO 標準牙形；材料、配合、實際列印與量測均未驗證。",
+                "畫面部分視角較小，須配合讀值；檔案對話框路徑及檔名由程式填入。"
+              ],
+              "screenshot": {
+                "path": "/challenges/external-gui-v010-04.png",
+                "sha256": "7695128a816a887bb85539e1a9b628062f7668c8690faf850e6857452a48980a"
+              }
+            },
+            {
+              "id": "11-external-repaired-05",
+              "goal": "封閉牙條兩端",
+              "context": "確認選中的是預期的兩端開口，封端結果仍需後續驗證。",
+              "operation": [
+                "維持邊界選取後按 F 封端，旋轉視角檢查端面。"
+              ],
+              "success": "畫面中牙條兩端增加面。",
+              "readings": [
+                "程式讀回 386 面、邊界 0、非流形邊 0；不能以此宣稱無自交或可製造。"
+              ],
+              "limits": [
+                "三角截面為程式預建，並非 GUI 手繪；之後在獨立 Blender 以 GUI 事件建立與另存。",
+                "修正版柱芯旋轉 5.625° 並延長至約 4.8 mm，改變多邊形局部輪廓及整體高度；請與保留的 v005 風險案例比較。",
+                "獨立 BVH 候選為 0、診斷門檻以下薄面為 0，不證明完全沒有自交或可製造；10⁻⁵ mm² 為診斷門檻而非合格標準。",
+                "此為獨立示範，不是 ISO 標準牙形；材料、配合、實際列印與量測均未驗證。",
+                "畫面部分視角較小，須配合讀值；檔案對話框路徑及檔名由程式填入。"
+              ],
+              "screenshot": {
+                "path": "/challenges/external-gui-v010-05.png",
+                "sha256": "5594cc95f225ba98676f8c14d98f7f550585b9c2dec713848811926573928a56"
+              }
+            },
+            {
+              "id": "11-external-repaired-06",
+              "goal": "重新計算法線",
+              "context": "牙條已封端；此操作不會自動排除交疊或極薄面。",
+              "operation": [
+                "在編輯模式 A 全選，再按 Shift+N 重新計算法線。"
+              ],
+              "success": "編輯模式中牙條全選。",
+              "readings": [
+                "程式讀回邊界 0、非流形邊 0；未單憑此宣稱法線或幾何完全正確。"
+              ],
+              "limits": [
+                "三角截面為程式預建，並非 GUI 手繪；之後在獨立 Blender 以 GUI 事件建立與另存。",
+                "修正版柱芯旋轉 5.625° 並延長至約 4.8 mm，改變多邊形局部輪廓及整體高度；請與保留的 v005 風險案例比較。",
+                "獨立 BVH 候選為 0、診斷門檻以下薄面為 0，不證明完全沒有自交或可製造；10⁻⁵ mm² 為診斷門檻而非合格標準。",
+                "此為獨立示範，不是 ISO 標準牙形；材料、配合、實際列印與量測均未驗證。",
+                "畫面部分視角較小，須配合讀值；檔案對話框路徑及檔名由程式填入。"
+              ],
+              "screenshot": {
+                "path": "/challenges/external-gui-v010-06.png",
+                "sha256": "a8621ac5e53cbd4daa5c9346c2d334f8421da0f4e3eb97a5b75be4625d0e8fd1"
+              }
+            },
+            {
+              "id": "11-external-repaired-07",
+              "goal": "新增圓柱核心",
+              "context": "此係數僅用於本場景預設圓柱；芯柱上下端各伸出牙條約 0.1 mm，旋轉改變多邊形輪廓。",
+              "operation": [
+                "Tab 回物件模式；F3 搜尋 Add Cylinder。依序 S 0.005、S Z 0.48、G Z 2.3 mm、R Z 5.625°；F3 執行 Apply Scale 與 Apply Rotation，F2 命名 Thread_Core。"
+              ],
+              "success": "選中 Thread_Core，畫面尺寸欄約 9.95 × 9.95 × 4.8 mm。",
+              "readings": [
+                "程式依實際頂點讀回旋轉後世界 X/Y 範圍約 ±4.9759 mm，Z 約 -0.1～4.7 mm；套用後旋轉欄為 0、Scale 為 1。"
+              ],
+              "limits": [
+                "三角截面為程式預建，並非 GUI 手繪；之後在獨立 Blender 以 GUI 事件建立與另存。",
+                "修正版柱芯旋轉 5.625° 並延長至約 4.8 mm，改變多邊形局部輪廓及整體高度；請與保留的 v005 風險案例比較。",
+                "獨立 BVH 候選為 0、診斷門檻以下薄面為 0，不證明完全沒有自交或可製造；10⁻⁵ mm² 為診斷門檻而非合格標準。",
+                "此為獨立示範，不是 ISO 標準牙形；材料、配合、實際列印與量測均未驗證。",
+                "畫面部分視角較小，須配合讀值；檔案對話框路徑及檔名由程式填入。"
+              ],
+              "screenshot": {
+                "path": "/challenges/external-gui-v010-07.png",
+                "sha256": "bc260b3bfac89e3565e5e59b6f71fb9b8bcdf121e2303854eae022f65f6adb0a"
+              }
+            },
+            {
+              "id": "11-external-repaired-08",
+              "goal": "觀察首次指定工具未成功",
+              "context": "此畫面保留示範首次失敗；輸入文字或按 Enter 不一定已選定對象。",
+              "operation": [
+                "選 Thread_Core、新增 Boolean，選 Union、Exact；嘗試輸入 Thread_Triangle_Profile 時檢查 Object 欄是否真正選入。"
+              ],
+              "success": "畫面為首次嘗試指定物件的狀態。",
+              "readings": [
+                "程式讀回 Union、Exact，但 operand 為空；此時不可宣稱指定完成。"
+              ],
+              "limits": [
+                "三角截面為程式預建，並非 GUI 手繪；之後在獨立 Blender 以 GUI 事件建立與另存。",
+                "修正版柱芯旋轉 5.625° 並延長至約 4.8 mm，改變多邊形局部輪廓及整體高度；請與保留的 v005 風險案例比較。",
+                "獨立 BVH 候選為 0、診斷門檻以下薄面為 0，不證明完全沒有自交或可製造；10⁻⁵ mm² 為診斷門檻而非合格標準。",
+                "此為獨立示範，不是 ISO 標準牙形；材料、配合、實際列印與量測均未驗證。",
+                "畫面部分視角較小，須配合讀值；檔案對話框路徑及檔名由程式填入。"
+              ],
+              "screenshot": {
+                "path": "/challenges/external-gui-v010-08.png",
+                "sha256": "973b88f5e39b96f983b4f64750b7dc2aa985bdbc4eb2aadca4ade0922b4e4324"
+              }
+            },
+            {
+              "id": "11-external-repaired-09",
+              "goal": "正確指定 Boolean 工具",
+              "context": "選中核心，先核對 Union、Exact 與對象，尚未套用。",
+              "operation": [
+                "在 Boolean 的 Object 欄重新選擇清單中的 Thread_Triangle_Profile，確認名稱顯示。"
+              ],
+              "success": "修改器 Object 欄顯示 Thread_Triangle_Profile。",
+              "readings": [
+                "程式讀回 operation UNION、solver EXACT、operand Thread_Triangle_Profile。"
+              ],
+              "limits": [
+                "三角截面為程式預建，並非 GUI 手繪；之後在獨立 Blender 以 GUI 事件建立與另存。",
+                "修正版柱芯旋轉 5.625° 並延長至約 4.8 mm，改變多邊形局部輪廓及整體高度；請與保留的 v005 風險案例比較。",
+                "獨立 BVH 候選為 0、診斷門檻以下薄面為 0，不證明完全沒有自交或可製造；10⁻⁵ mm² 為診斷門檻而非合格標準。",
+                "此為獨立示範，不是 ISO 標準牙形；材料、配合、實際列印與量測均未驗證。",
+                "畫面部分視角較小，須配合讀值；檔案對話框路徑及檔名由程式填入。"
+              ],
+              "screenshot": {
+                "path": "/challenges/external-gui-v010-09.png",
+                "sha256": "06645b86f40b4bdbc81543f8c276d50d48887e84f77be79839c3bbc847d476fd"
+              }
+            },
+            {
+              "id": "11-external-repaired-10",
+              "goal": "隱藏牙條工具以檢視預覽",
+              "context": "隱藏的是工具，不是刪除；若版面不同以物件名稱與眼睛圖示為準。",
+              "operation": [
+                "在 Outliner 對 Thread_Triangle_Profile 點眼睛隱藏；保留牙條物件以備回溯。"
+              ],
+              "success": "牙條工具隱藏，核心顯示布林預覽。",
+              "readings": [
+                "此張安全摘要未另外提供讀值。"
+              ],
+              "limits": [
+                "三角截面為程式預建，並非 GUI 手繪；之後在獨立 Blender 以 GUI 事件建立與另存。",
+                "修正版柱芯旋轉 5.625° 並延長至約 4.8 mm，改變多邊形局部輪廓及整體高度；請與保留的 v005 風險案例比較。",
+                "獨立 BVH 候選為 0、診斷門檻以下薄面為 0，不證明完全沒有自交或可製造；10⁻⁵ mm² 為診斷門檻而非合格標準。",
+                "此為獨立示範，不是 ISO 標準牙形；材料、配合、實際列印與量測均未驗證。",
+                "畫面部分視角較小，須配合讀值；檔案對話框路徑及檔名由程式填入。"
+              ],
+              "screenshot": {
+                "path": "/challenges/external-gui-v010-10.png",
+                "sha256": "a11acc81b8835410960a34a41458978bc8cab29446fb4244419b3d29a4bce393"
+              }
+            },
+            {
+              "id": "11-external-repaired-11",
+              "goal": "套用 Boolean Union",
+              "context": "確認 Union、Exact 與正確工具後套用；接著還需另行獨立稽核。",
+              "operation": [
+                "重新選取 Thread_Core，在 Boolean 修改器選單點 Apply；觀察牙條合併後的核心。"
+              ],
+              "success": "畫面出現外牙形狀。",
+              "readings": [
+                "程式讀回 707 點、419 面、單連通體、非流形邊 0、外框約 12 × 12 × 4.8 mm；這些讀值不證明無自交。"
+              ],
+              "limits": [
+                "三角截面為程式預建，並非 GUI 手繪；之後在獨立 Blender 以 GUI 事件建立與另存。",
+                "修正版柱芯旋轉 5.625° 並延長至約 4.8 mm，改變多邊形局部輪廓及整體高度；請與保留的 v005 風險案例比較。",
+                "獨立 BVH 候選為 0、診斷門檻以下薄面為 0，不證明完全沒有自交或可製造；10⁻⁵ mm² 為診斷門檻而非合格標準。",
+                "此為獨立示範，不是 ISO 標準牙形；材料、配合、實際列印與量測均未驗證。",
+                "畫面部分視角較小，須配合讀值；檔案對話框路徑及檔名由程式填入。"
+              ],
+              "screenshot": {
+                "path": "/challenges/external-gui-v010-11.png",
+                "sha256": "bfd16480f65d21a672be0cf439d01ad6a7ad69130939c137581156526f6ee9d6"
+              }
+            },
+            {
+              "id": "11-external-repaired-12",
+              "goal": "調整視角觀察",
+              "context": "視圖調整不會修復幾何，單張視圖不能排除交疊。",
+              "operation": [
+                "選取 Thread_Core，F3 搜尋 Frame Selected，旋轉視角觀察。"
+              ],
+              "success": "螺旋外形聚焦於畫面。",
+              "readings": [
+                "外框讀值維持約 12 × 12 × 4.8 mm；畫面不足以判定所有細節。"
+              ],
+              "limits": [
+                "三角截面為程式預建，並非 GUI 手繪；之後在獨立 Blender 以 GUI 事件建立與另存。",
+                "修正版柱芯旋轉 5.625° 並延長至約 4.8 mm，改變多邊形局部輪廓及整體高度；請與保留的 v005 風險案例比較。",
+                "獨立 BVH 候選為 0、診斷門檻以下薄面為 0，不證明完全沒有自交或可製造；10⁻⁵ mm² 為診斷門檻而非合格標準。",
+                "此為獨立示範，不是 ISO 標準牙形；材料、配合、實際列印與量測均未驗證。",
+                "畫面部分視角較小，須配合讀值；檔案對話框路徑及檔名由程式填入。"
+              ],
+              "screenshot": {
+                "path": "/challenges/external-gui-v010-12.png",
+                "sha256": "6994e361406481b018d70fecb81244d1b4901efee418063d16d93e836cc77e7b"
+              }
+            },
+            {
+              "id": "11-external-repaired-13",
+              "goal": "另存獨立草案",
+              "context": "示範的檔案視窗路徑及檔名由程式填入。",
+              "operation": [
+                "使用 File > Save As 另存新檔，保留參考場景和既有小盒原檔。"
+              ],
+              "success": "另存完成後畫面顯示外牙草案。",
+              "readings": [
+                "另存場景 SHA-256 為 5a0aea1af13f46e9bff1b14327aa199b6b34f421936fd5a516226fc13072ec04；自行建立的檔案雜湊會不同。"
+              ],
+              "limits": [
+                "三角截面為程式預建，並非 GUI 手繪；之後在獨立 Blender 以 GUI 事件建立與另存。",
+                "修正版柱芯旋轉 5.625° 並延長至約 4.8 mm，改變多邊形局部輪廓及整體高度；請與保留的 v005 風險案例比較。",
+                "獨立 BVH 候選為 0、診斷門檻以下薄面為 0，不證明完全沒有自交或可製造；10⁻⁵ mm² 為診斷門檻而非合格標準。",
+                "此為獨立示範，不是 ISO 標準牙形；材料、配合、實際列印與量測均未驗證。",
+                "畫面部分視角較小，須配合讀值；檔案對話框路徑及檔名由程式填入。"
+              ],
+              "screenshot": {
+                "path": "/challenges/external-gui-v010-13.png",
+                "sha256": "f27f5610843bff35aae38f9bc33bb72964acb28bf258048d7acceed9aa2530c0"
+              }
+            },
+            {
+              "id": "11-external-repaired-14",
+              "goal": "重開新檔並核對",
+              "context": "示範檔案視窗欄位由程式填入；避免覆寫來源。",
+              "operation": [
+                "重開另存草案並檢查尺寸，再以獨立 Blender 腳本檢查拓樸、三角面積及 BVH。"
+              ],
+              "success": "重開後仍可見 Thread_Core 與外牙草案。",
+              "readings": [
+                "獨立讀回非流形邊 0、BVH 候選 0，低於 10⁻⁵ mm² 面 0，最小三角面約 0.028674 mm²；不證明完全無自交或列印合格。"
+              ],
+              "limits": [
+                "三角截面為程式預建，並非 GUI 手繪；之後在獨立 Blender 以 GUI 事件建立與另存。",
+                "修正版柱芯旋轉 5.625° 並延長至約 4.8 mm，改變多邊形局部輪廓及整體高度；請與保留的 v005 風險案例比較。",
+                "獨立 BVH 候選為 0、診斷門檻以下薄面為 0，不證明完全沒有自交或可製造；10⁻⁵ mm² 為診斷門檻而非合格標準。",
+                "此為獨立示範，不是 ISO 標準牙形；材料、配合、實際列印與量測均未驗證。",
+                "畫面部分視角較小，須配合讀值；檔案對話框路徑及檔名由程式填入。"
+              ],
+              "screenshot": {
+                "path": "/challenges/external-gui-v010-14.png",
+                "sha256": "3dba72a7e21239c07cb523e85e380bd301b61e85718d0d9760a4d3839fca6a0d"
+              }
+            }
+          ],
+          "historical": true
+        },
+        {
+          "title": "盒側外牙接口 GUI 示範 v002（11 步）",
+          "section": "11-12",
+          "description": "由程式將修訂牙條載入原盒與唇邊上蓋副本，再以獨立 Blender GUI 旋轉、移動、布林、另存及重開。保留 0.5 mm 名義嵌入並沿牙條自身 X 軸旋轉 11.25°；仍有細長三角面，最小三角高約 0.001126 mm，三角高不是物理壁厚。原內牙試塊不是已匹配對件；局部射線與上蓋靜態外框距離不是完整干涉或實體試配。",
+          "sourceVersions": [
+            {
+              "label": "原盒及上蓋",
+              "path": "learning/evidence/05/2026-10-22-lesson05-lid-demo-v001/demo-files/u05_lid_v001.blend",
+              "sha256": "ab08f331dcb26c5ffc6c6ca56c7c7f022df96791c4777e37c5f01a964fbed6ff"
+            },
+            {
+              "label": "修訂牙條",
+              "path": "learning/evidence/08/2026-10-28-external-thread-gui-trial-v010/demo-files/u08_external_gui_draft_v003.blend",
+              "sha256": "5a0aea1af13f46e9bff1b14327aa199b6b34f421936fd5a516226fc13072ec04"
+            },
+            {
+              "label": "v002 接合新版本",
+              "path": "learning/evidence/08/2026-10-28-external-thread-mount-gui-v002/demo-files/u11_box_external_thread_draft_v002.blend",
+              "sha256": "df2108d06250807a9fa593ce966ae09e42d0fc3b2bfad97c98d0c40f77378c54"
+            },
+            {
+              "label": "v002 獨立網格覆核",
+              "path": "learning/evidence/08/2026-10-28-external-thread-mount-gui-v002/independent-audit-v001.json",
+              "sha256": "910d06dd2f4a6f430b6e94c7246f7c1b560364b90eb2217998ebd65e596e97b5"
+            }
+          ],
+          "steps": [
+            {
+              "id": "11-mount-v002-01",
+              "goal": "載入已檢查牙條",
+              "context": "程式只載入既有物件、不重新生成牙條；不是 GUI Append 教學。",
+              "operation": [
+                "開啟小盒和上蓋原檔的複本；示範以程式載入已完成的 Thread_Core 物件，顯示盒體與上蓋，選取牙條。"
+              ],
+              "success": "Outliner 顯示 Body、Lid 與 Thread_Core；牙條此時位於盒內，可能被盒體遮住。",
+              "readings": [
+                "程式讀回牙條 Z 約 -0.1～4.7 mm；盒體外框 60 × 40 × 30 mm，蓋子 Z 11～17 mm。"
+              ],
+              "limits": [
+                "牙形是示範草案，非 ISO 螺紋，既有內牙試塊不是匹配對件。",
+                "初始截面與把牙條載入盒場景是程式處理；旋轉、移動、布林、另存及重開為 GUI 操作，檔案欄位由程式填寫。",
+                "修正版改變多邊形相位與芯柱高度，須保留 v005 原始問題與修訂紀錄。",
+                "零 BVH 候選與零非流形邊不能證明無自交；五條射線只是局部抽樣，蓋子間距僅為靜態外框距離。",
+                "材料、允許間隙、切片、實體列印、量測、試配與強度均待定。",
+                "保留名義嵌入 0.5 mm，牙條繞自身 X 軸轉 11.25°；比舊版更改接合相位，但仍有細長面。",
+                "三角形最小高度不是材料壁厚；數值對照與 BVH 不能證明更容易列印、配合或強度合格。"
+              ],
+              "screenshot": {
+                "path": "/challenges/mount-gui-v002-01.png",
+                "sha256": "892889c550b761fae0206aa8acfa9fd4717d6084b7aff8fe67c24105dfefb6f8"
+              }
+            },
+            {
+              "id": "11-mount-v002-02",
+              "goal": "轉向盒側",
+              "context": "先確認 Thread_Core 被選中；旋轉是繞物件原點。",
+              "operation": [
+                "在 3D 視窗對牙條按 R、Y、90、Enter，將原本 Z 軸牙條轉至 X 軸。"
+              ],
+              "success": "畫面以盒體為主，牙條可能被遮擋，不能僅憑畫面確認完整旋轉。",
+              "readings": [
+                "程式讀回牙條 X 約 -2.4～2.4 mm，原點 Z 仍約 2.3 mm。"
+              ],
+              "limits": [
+                "牙形是示範草案，非 ISO 螺紋，既有內牙試塊不是匹配對件。",
+                "初始截面與把牙條載入盒場景是程式處理；旋轉、移動、布林、另存及重開為 GUI 操作，檔案欄位由程式填寫。",
+                "修正版改變多邊形相位與芯柱高度，須保留 v005 原始問題與修訂紀錄。",
+                "零 BVH 候選與零非流形邊不能證明無自交；五條射線只是局部抽樣，蓋子間距僅為靜態外框距離。",
+                "材料、允許間隙、切片、實體列印、量測、試配與強度均待定。",
+                "保留名義嵌入 0.5 mm，牙條繞自身 X 軸轉 11.25°；比舊版更改接合相位，但仍有細長面。",
+                "三角形最小高度不是材料壁厚；數值對照與 BVH 不能證明更容易列印、配合或強度合格。"
+              ],
+              "screenshot": {
+                "path": "/challenges/mount-gui-v002-02.png",
+                "sha256": "a7b21f9fb910e156905b4a2206657ef0676aeb48dd7e558e36b014424e1b187f"
+              }
+            },
+            {
+              "id": "11-mount-v002-03",
+              "goal": "調整牙條繞軸相位",
+              "context": "先完成繞 Y 旋轉 90°；X 軸是此時牙條的軸向。這會改變牙條與盒壁的相對角位置。",
+              "operation": [
+                "在轉向後的牙條上按 R、X、11.25、Enter，繞世界 X 軸調整牙條相位。"
+              ],
+              "success": "牙條仍可能被盒體遮住，無法僅憑此圖準確量角。",
+              "readings": [
+                "重開後獨立讀回物件旋轉矩陣，與 X 11.25°、Y 90° 的預期矩陣最大差約 1.14×10⁻⁷。"
+              ],
+              "limits": [
+                "牙形是示範草案，非 ISO 螺紋，既有內牙試塊不是匹配對件。",
+                "初始截面與把牙條載入盒場景是程式處理；旋轉、移動、布林、另存及重開為 GUI 操作，檔案欄位由程式填寫。",
+                "修正版改變多邊形相位與芯柱高度，須保留 v005 原始問題與修訂紀錄。",
+                "零 BVH 候選與零非流形邊不能證明無自交；五條射線只是局部抽樣，蓋子間距僅為靜態外框距離。",
+                "材料、允許間隙、切片、實體列印、量測、試配與強度均待定。",
+                "保留名義嵌入 0.5 mm，牙條繞自身 X 軸轉 11.25°；比舊版更改接合相位，但仍有細長面。",
+                "三角形最小高度不是材料壁厚；數值對照與 BVH 不能證明更容易列印、配合或強度合格。"
+              ],
+              "screenshot": {
+                "path": "/challenges/mount-gui-v002-03.png",
+                "sha256": "b32c5e8be0b5c8df90da8cfa997d238ad7342696b2eed977f8287b924945aa3b"
+              }
+            },
+            {
+              "id": "11-mount-v002-04",
+              "goal": "移動到右側外壁",
+              "context": "沿用前一步旋轉的原點；名義根部需與盒壁重疊，而不是只相切。",
+              "operation": [
+                "對牙條依序輸入 G X 31.9 mm、G Z -2.3 mm。"
+              ],
+              "success": "右側外壁可見牙條；畫面無法精確判斷嵌入深度。",
+              "readings": [
+                "世界座標讀回牙條 X 約 29.5～34.3 mm、Y/Z 均約 ±6 mm；與外壁 X=30 有約 0.5 mm 重疊。"
+              ],
+              "limits": [
+                "牙形是示範草案，非 ISO 螺紋，既有內牙試塊不是匹配對件。",
+                "初始截面與把牙條載入盒場景是程式處理；旋轉、移動、布林、另存及重開為 GUI 操作，檔案欄位由程式填寫。",
+                "修正版改變多邊形相位與芯柱高度，須保留 v005 原始問題與修訂紀錄。",
+                "零 BVH 候選與零非流形邊不能證明無自交；五條射線只是局部抽樣，蓋子間距僅為靜態外框距離。",
+                "材料、允許間隙、切片、實體列印、量測、試配與強度均待定。",
+                "保留名義嵌入 0.5 mm，牙條繞自身 X 軸轉 11.25°；比舊版更改接合相位，但仍有細長面。",
+                "三角形最小高度不是材料壁厚；數值對照與 BVH 不能證明更容易列印、配合或強度合格。"
+              ],
+              "screenshot": {
+                "path": "/challenges/mount-gui-v002-04.png",
+                "sha256": "cfb4189d665e2cb7204fe42a3535a750cfa73deca85a1ab6b400133601b21021"
+              }
+            },
+            {
+              "id": "11-mount-v002-05",
+              "goal": "檢查布林工具欄",
+              "context": "Outliner 必須選盒體 Body，不是選上蓋或牙條。",
+              "operation": [
+                "選中 Body，F3 搜尋 Add Boolean Modifier，選 Union、Exact，嘗試指定 Thread_Core。"
+              ],
+              "success": "修改器 Object 欄仍空白，為保留的第一次失敗畫面。",
+              "readings": [
+                "程式讀回 UNION、EXACT，但 operand 為空；不可在此時套用。"
+              ],
+              "limits": [
+                "牙形是示範草案，非 ISO 螺紋，既有內牙試塊不是匹配對件。",
+                "初始截面與把牙條載入盒場景是程式處理；旋轉、移動、布林、另存及重開為 GUI 操作，檔案欄位由程式填寫。",
+                "修正版改變多邊形相位與芯柱高度，須保留 v005 原始問題與修訂紀錄。",
+                "零 BVH 候選與零非流形邊不能證明無自交；五條射線只是局部抽樣，蓋子間距僅為靜態外框距離。",
+                "材料、允許間隙、切片、實體列印、量測、試配與強度均待定。",
+                "保留名義嵌入 0.5 mm，牙條繞自身 X 軸轉 11.25°；比舊版更改接合相位，但仍有細長面。",
+                "三角形最小高度不是材料壁厚；數值對照與 BVH 不能證明更容易列印、配合或強度合格。"
+              ],
+              "screenshot": {
+                "path": "/challenges/mount-gui-v002-05.png",
+                "sha256": "ff815a3befc572ef9c74dfce79483fb04d834f6ccf7cac0604ef805d478fb1dd"
+              }
+            },
+            {
+              "id": "11-mount-v002-06",
+              "goal": "選擇牙條工具",
+              "context": "接續上一步；輸入文字後必須確認選取生效。",
+              "operation": [
+                "在 Object 欄位搜尋 Thread_Core，從候選清單點選。"
+              ],
+              "success": "修改器 Object 欄顯示工具名稱，視欄寬可能截斷。",
+              "readings": [
+                "程式讀回 operation UNION、solver EXACT、operand Thread_Core。"
+              ],
+              "limits": [
+                "牙形是示範草案，非 ISO 螺紋，既有內牙試塊不是匹配對件。",
+                "初始截面與把牙條載入盒場景是程式處理；旋轉、移動、布林、另存及重開為 GUI 操作，檔案欄位由程式填寫。",
+                "修正版改變多邊形相位與芯柱高度，須保留 v005 原始問題與修訂紀錄。",
+                "零 BVH 候選與零非流形邊不能證明無自交；五條射線只是局部抽樣，蓋子間距僅為靜態外框距離。",
+                "材料、允許間隙、切片、實體列印、量測、試配與強度均待定。",
+                "保留名義嵌入 0.5 mm，牙條繞自身 X 軸轉 11.25°；比舊版更改接合相位，但仍有細長面。",
+                "三角形最小高度不是材料壁厚；數值對照與 BVH 不能證明更容易列印、配合或強度合格。"
+              ],
+              "screenshot": {
+                "path": "/challenges/mount-gui-v002-06.png",
+                "sha256": "bd090f4b7a134d343ef6163fd4e38383c578b543115491a7cef7c944ba373d06"
+              }
+            },
+            {
+              "id": "11-mount-v002-07",
+              "goal": "隱藏工具",
+              "context": "先確認修改器物件欄正確；座標以自己的 Blender 版面為準。",
+              "operation": [
+                "在 Outliner 的 Thread_Core 旁點眼睛，保留工具資料並觀察布林預覽。"
+              ],
+              "success": "工具顯示為隱藏，盒體上的牙條預覽仍可見。",
+              "readings": [
+                "劇本以 hide_get() 確認工具被隱藏；不代表工具被刪除。"
+              ],
+              "limits": [
+                "牙形是示範草案，非 ISO 螺紋，既有內牙試塊不是匹配對件。",
+                "初始截面與把牙條載入盒場景是程式處理；旋轉、移動、布林、另存及重開為 GUI 操作，檔案欄位由程式填寫。",
+                "修正版改變多邊形相位與芯柱高度，須保留 v005 原始問題與修訂紀錄。",
+                "零 BVH 候選與零非流形邊不能證明無自交；五條射線只是局部抽樣，蓋子間距僅為靜態外框距離。",
+                "材料、允許間隙、切片、實體列印、量測、試配與強度均待定。",
+                "保留名義嵌入 0.5 mm，牙條繞自身 X 軸轉 11.25°；比舊版更改接合相位，但仍有細長面。",
+                "三角形最小高度不是材料壁厚；數值對照與 BVH 不能證明更容易列印、配合或強度合格。"
+              ],
+              "screenshot": {
+                "path": "/challenges/mount-gui-v002-07.png",
+                "sha256": "1be8129e42baa0710aab3215c9bcd65946907ca9f4c8d9d1d30e468bb97d2af5"
+              }
+            },
+            {
+              "id": "11-mount-v002-08",
+              "goal": "套用布林",
+              "context": "再次確認 Union、Exact 與工具對象；操作於示範副本。",
+              "operation": [
+                "在 Body 的 Boolean 修改器選單選 Apply，將外牙與盒體合併。"
+              ],
+              "success": "盒側顯示外牙；單張畫面不能證明所有牙面品質。",
+              "readings": [
+                "程式讀回 712 點、420 面、1 連通體、非流形邊 0；五條盒內壁射線命中 X≈28 mm。"
+              ],
+              "limits": [
+                "牙形是示範草案，非 ISO 螺紋，既有內牙試塊不是匹配對件。",
+                "初始截面與把牙條載入盒場景是程式處理；旋轉、移動、布林、另存及重開為 GUI 操作，檔案欄位由程式填寫。",
+                "修正版改變多邊形相位與芯柱高度，須保留 v005 原始問題與修訂紀錄。",
+                "零 BVH 候選與零非流形邊不能證明無自交；五條射線只是局部抽樣，蓋子間距僅為靜態外框距離。",
+                "材料、允許間隙、切片、實體列印、量測、試配與強度均待定。",
+                "保留名義嵌入 0.5 mm，牙條繞自身 X 軸轉 11.25°；比舊版更改接合相位，但仍有細長面。",
+                "三角形最小高度不是材料壁厚；數值對照與 BVH 不能證明更容易列印、配合或強度合格。"
+              ],
+              "screenshot": {
+                "path": "/challenges/mount-gui-v002-08.png",
+                "sha256": "fbd23ffadd17f71339f169db2dc4e490e61521763ed8af80d6c448fb2b84d66a"
+              }
+            },
+            {
+              "id": "11-mount-v002-09",
+              "goal": "聚焦檢視",
+              "context": "選中已合併的 Body；牙條為盒側接口，並非螺旋上蓋。",
+              "operation": [
+                "按 F3 搜尋 Frame Selected，檢視盒側接口與上蓋。"
+              ],
+              "success": "畫面可見外側牙條及名義關閉位置的上蓋。",
+              "readings": [
+                "盒體外框 X 約 -30～34.3 mm，Y ±20 mm、Z ±15 mm。"
+              ],
+              "limits": [
+                "牙形是示範草案，非 ISO 螺紋，既有內牙試塊不是匹配對件。",
+                "初始截面與把牙條載入盒場景是程式處理；旋轉、移動、布林、另存及重開為 GUI 操作，檔案欄位由程式填寫。",
+                "修正版改變多邊形相位與芯柱高度，須保留 v005 原始問題與修訂紀錄。",
+                "零 BVH 候選與零非流形邊不能證明無自交；五條射線只是局部抽樣，蓋子間距僅為靜態外框距離。",
+                "材料、允許間隙、切片、實體列印、量測、試配與強度均待定。",
+                "保留名義嵌入 0.5 mm，牙條繞自身 X 軸轉 11.25°；比舊版更改接合相位，但仍有細長面。",
+                "三角形最小高度不是材料壁厚；數值對照與 BVH 不能證明更容易列印、配合或強度合格。"
+              ],
+              "screenshot": {
+                "path": "/challenges/mount-gui-v002-09.png",
+                "sha256": "1c2a16c75eb0f3ae758574d8c11e8200b368f0272c5eac980220a2aac37b1b64"
+              }
+            },
+            {
+              "id": "11-mount-v002-10",
+              "goal": "另存草案",
+              "context": "保存原始小盒及牙條源檔；新草案仍需實際驗證。",
+              "operation": [
+                "使用 Save As，另存新版本；示範的檔案路徑與名稱由程式填入。"
+              ],
+              "success": "另存後畫面為盒側接口，這不是檔案對話框截圖。",
+              "readings": [
+                "另存場景 SHA-256 見 demonstrationSceneSha256；未執行實體列印或試配。"
+              ],
+              "limits": [
+                "牙形是示範草案，非 ISO 螺紋，既有內牙試塊不是匹配對件。",
+                "初始截面與把牙條載入盒場景是程式處理；旋轉、移動、布林、另存及重開為 GUI 操作，檔案欄位由程式填寫。",
+                "修正版改變多邊形相位與芯柱高度，須保留 v005 原始問題與修訂紀錄。",
+                "零 BVH 候選與零非流形邊不能證明無自交；五條射線只是局部抽樣，蓋子間距僅為靜態外框距離。",
+                "材料、允許間隙、切片、實體列印、量測、試配與強度均待定。",
+                "保留名義嵌入 0.5 mm，牙條繞自身 X 軸轉 11.25°；比舊版更改接合相位，但仍有細長面。",
+                "三角形最小高度不是材料壁厚；數值對照與 BVH 不能證明更容易列印、配合或強度合格。"
+              ],
+              "screenshot": {
+                "path": "/challenges/mount-gui-v002-10.png",
+                "sha256": "60998d87428c2a29df186f588a6418ad940a71e155eef79ae4de0da79771757a"
+              }
+            },
+            {
+              "id": "11-mount-v002-11",
+              "goal": "重開並獨立檢查",
+              "context": "檔案欄位由程式填入，重開後才進行獨立讀值；不更新學員進度。",
+              "operation": [
+                "重開新場景；另以獨立 Blender 讀取網格、檢查邊界、連通、三角面和 BVH。"
+              ],
+              "success": "重開後畫面仍有盒體、上蓋與盒側外牙。",
+              "readings": [
+                "獨立讀回單連通體、非流形邊 0、BVH 候選 0；最小三角高 0.00112596 mm、最短 mesh 邊 0.0146923 mm。細長面仍存在；三角形高不是壁厚，亦非製造或配合合格證明。"
+              ],
+              "limits": [
+                "牙形是示範草案，非 ISO 螺紋，既有內牙試塊不是匹配對件。",
+                "初始截面與把牙條載入盒場景是程式處理；旋轉、移動、布林、另存及重開為 GUI 操作，檔案欄位由程式填寫。",
+                "修正版改變多邊形相位與芯柱高度，須保留 v005 原始問題與修訂紀錄。",
+                "零 BVH 候選與零非流形邊不能證明無自交；五條射線只是局部抽樣，蓋子間距僅為靜態外框距離。",
+                "材料、允許間隙、切片、實體列印、量測、試配與強度均待定。",
+                "保留名義嵌入 0.5 mm，牙條繞自身 X 軸轉 11.25°；比舊版更改接合相位，但仍有細長面。",
+                "三角形最小高度不是材料壁厚；數值對照與 BVH 不能證明更容易列印、配合或強度合格。"
+              ],
+              "screenshot": {
+                "path": "/challenges/mount-gui-v002-11.png",
+                "sha256": "caf098369ad2f61910605428352e039d6327ed90d75e556c16a05f3018052a68"
+              }
+            }
+          ]
+        },
+        {
+          "title": "獨立盲孔柱 GUI 操作（8 步）",
+          "description": "獨立 Blender 實拍。保護副本並逐步形成盲孔，獨立柱不等於指定五金的正式柱；示範的檔案瀏覽器路徑與名稱由程式填入。",
+          "steps": [
+            {
+              "id": "11-BOSS-OPT-01",
+              "goal": "以副本開啟既有小盒參照",
+              "context": "請先保留原檔，將來源 blend 複製到自己的練習資料夾；在 Blender 3D 視窗以 Ctrl+O 開啟該副本。示範以獨立 Blender 及隔離資料夾執行。",
+              "operation": [
+                "在檔案管理器複製來源 blend，不要覆蓋原檔。",
+                "切換至 Blender，按 Ctrl+O，選擇副本並開啟。"
+              ],
+              "success": "場景顯示小盒參照，Outliner 活動物件為 Body_Reference；尺寸讀回約 X 60、Y 40、Z 30 mm。",
+              "readings": [
+                "Blender Object Properties 或 3D View 側欄 Item 的 Dimensions；數值另由 Blender 程式讀回：60 × 40 × 30 mm"
+              ],
+              "limits": [
+                "若來源不存在，需先取得專案中的來源檔；不可默認用不同場景。",
+                "此時尚未建構螺絲柱。"
+              ],
+              "screenshot": {
+                "path": "/challenges/boss-gui-v003-01.png",
+                "sha256": "ec7e64b88ad4485f4f1da654fa8af8b8cb9649dce473d9af0741b18b5423a6f7"
+              }
+            },
+            {
+              "id": "11-BOSS-OPT-02",
+              "goal": "隱藏盒體並新增 32 邊圓柱",
+              "context": "確定 Object Mode 且 Body_Reference 已選取；本示範 Unit Scale 為 0.001，Blender 版本為 5.2.1 LTS。",
+              "operation": [
+                "滑鼠移至 3D View，按 H 隱藏已選盒體。",
+                "按 F3，搜尋 Add Cylinder，按 Enter。"
+              ],
+              "success": "Outliner 的活動物件變成 Cylinder；數位尺寸約 2000 × 2000 × 2000 mm，原盒只是隱藏。",
+              "readings": [
+                "Blender 3D View 側欄 Item → Dimensions；數值由 Blender 程式讀回：1999.999878 × 1999.999878 × 1999.999878 mm"
+              ],
+              "limits": [
+                "若預設圓柱尺寸、邊數、單位或場景設定不同，停止並先確認，不可直接套用下一步的縮放倍率。"
+              ],
+              "screenshot": {
+                "path": "/challenges/boss-gui-v003-02.png",
+                "sha256": "4c02696e52d95101011263292ac24e310f1004654d3dec1e1eeb87be5a1e79ee"
+              }
+            },
+            {
+              "id": "11-BOSS-OPT-03",
+              "goal": "將圓柱設為 8 mm 外形",
+              "context": "仍在 Object Mode，Cylinder 已選取，且上一個 2000 mm 的前提已確認。",
+              "operation": [
+                "在 3D View 依序按 S、輸入 0.004、Enter。",
+                "按 F3，搜尋 Apply Scale，按 Enter。",
+                "依序按 G、Z，輸入 4mm，按 Enter。"
+              ],
+              "success": "側欄 Dimensions 約 8 × 8 × 8 mm，Scale 為 1、1、1，Location Z 為 4 mm。",
+              "readings": [
+                "3D View 側欄 Item → Transform；數值由 Blender 程式讀回：Dimensions 約 8.000015 × 8.000015 × 8.000015 mm；Scale 1、1、1；Location Z 4 mm"
+              ],
+              "limits": [
+                "畫面常將小數四捨五入為 8 mm；此為數位草案尺寸。"
+              ],
+              "screenshot": {
+                "path": "/challenges/boss-gui-v003-03.png",
+                "sha256": "a6489d0d1191db186f9038975b278b2419b958adda8cf42038eeff4da78aba0b"
+              }
+            },
+            {
+              "id": "11-BOSS-OPT-04",
+              "goal": "選取圓柱頂面",
+              "context": "保持 Cylinder 已選取，滑鼠在 3D View；數字鍵盤 7 使用頂視，面選取使用主鍵盤 3。",
+              "operation": [
+                "按 F3 搜尋 Frame Selected 並確認；按數字鍵盤 7 切頂視。",
+                "按 Tab 進入 Edit Mode，按主鍵盤 3 切面選取。",
+                "按 Alt+A 取消所有選取，再點擊圓柱頂面。"
+              ],
+              "success": "只有柱頂單一面被選取；Blender 腳本讀回選取面數 1，該面中心 Z 約 8 mm。",
+              "readings": [
+                "示範截圖可看選取；面數與世界座標是 Blender 程式讀回，不是畫面直接顯示：selectedFaces = 1；faceCenterZ = 8.000007629 mm"
+              ],
+              "limits": [
+                "若選到側面或多個面，先取消選取並重新確認，勿繼續內插。"
+              ],
+              "screenshot": {
+                "path": "/challenges/boss-gui-v003-04.png",
+                "sha256": "6224252740dbdab9adddfce0fad140f408cb2a8c1b9d5414faec29d22bbe5a2f"
+              }
+            },
+            {
+              "id": "11-BOSS-OPT-05",
+              "goal": "內插建立孔口輪廓",
+              "context": "在 Edit Mode 且僅有柱頂面被選取。",
+              "operation": [
+                "按 I，輸入 2mm，按 Enter。"
+              ],
+              "success": "頂面產生內側輪廓並保留單一內側面；擷取網格的孔口對頂點距離約 3.980661 mm。",
+              "readings": [
+                "畫面可見頂面內插輪廓；對頂距離由 Blender 網格頂點程式讀回：3.980661392 mm（32 邊形對頂點）"
+              ],
+              "limits": [
+                "內插 2 mm 不等於孔口精確 4 mm。此值不是已確認的五金孔徑或公差。"
+              ],
+              "screenshot": {
+                "path": "/challenges/boss-gui-v003-05.png",
+                "sha256": "9e3d83d21ef5a4bb9cb45a9d9e27c473721b0f9bdbd9828296b85e1872e7a1c7"
+              }
+            },
+            {
+              "id": "11-BOSS-OPT-06",
+              "goal": "向下擠出形成盲孔",
+              "context": "Edit Mode 下保留內插出的內側面為選取狀態。",
+              "operation": [
+                "按 E，輸入 -7mm，按 Enter。",
+                "按 Tab 回 Object Mode；可旋轉到斜視，確認看見孔口。"
+              ],
+              "success": "畫面可見盲孔外觀，側欄 Dimensions 約 8 mm；程式射線讀回孔底 Z 約 1 mm、頂面 Z 約 8 mm。",
+              "readings": [
+                "側欄 Item → Dimensions 顯示圓柱外框；孔底及頂面由 Blender 腳本射線讀回：外框各約 8.000015 mm；孔底 Z 1.000007629 mm；頂面 Z 8.000007629 mm",
+                "Blender 程式網格檢查：128 頂點、98 面、非流形邊 0"
+              ],
+              "limits": [
+                "畫面不能單獨證明孔底深度；射線及非流形邊檢查也不能證明無自相交或可製造。",
+                "這是獨立柱，未與盒體接合。"
+              ],
+              "screenshot": {
+                "path": "/challenges/boss-gui-v003-06.png",
+                "sha256": "3396a66b7cb7f66d93f6c148e3caab6ecfa9254729faa428be0c91a4f526b8cc"
+              }
+            },
+            {
+              "id": "11-BOSS-OPT-07",
+              "goal": "以新名稱另存草案",
+              "context": "盲孔柱已完成數位草案；選擇自己的練習資料夾，不覆蓋原參照。",
+              "operation": [
+                "在 Blender 選 File → Save As，選練習資料夾並輸入新的 .blend 名稱。",
+                "按 Save As Blender File；若有另存確認，核對新檔名後確認。"
+              ],
+              "success": "新檔存在且柱仍保留；示範另存後的外框、孔底射線和非流形邊檢查均有讀回。",
+              "readings": [
+                "示範另存後 Blender 程式檢查；檔案名稱及雜湊見 outputScene：8.000015 mm 外框；孔底 Z 1.000007629 mm；非流形邊 0"
+              ],
+              "limits": [
+                "示範的路徑與檔名由自動化程式填入；手動操作請自行選擇。",
+                "勿覆蓋既有檔案；你的檔案雜湊不必與示範相同。"
+              ],
+              "screenshot": {
+                "path": "/challenges/boss-gui-v003-07.png",
+                "sha256": "ff6544b2f96bd966e2e63330cb4570a0d6195b8cfb22b365a6dd4b2204646e1d"
+              }
+            },
+            {
+              "id": "11-BOSS-OPT-08",
+              "goal": "重開新版本並確認",
+              "context": "已另存自己的新檔。",
+              "operation": [
+                "按 Ctrl+O，選擇剛另存的檔案並開啟。",
+                "確認場景仍有柱，側欄顯示外框尺寸；保留你的檔案版本紀錄。"
+              ],
+              "success": "柱與孔口仍可見、側欄尺寸約 8 mm；示範重開後由程式再次核對幾何與孔底。",
+              "readings": [
+                "側欄 Item → Dimensions；其餘為重開後 Blender 程式讀回：外框各 8.000015 mm；孔底 Z 1.000007629 mm；非流形邊 0"
+              ],
+              "limits": [
+                "重開示範讀值只證明該示範檔，學員需自行確認自己的檔案。",
+                "實體列印、量測、試配、材料、五金、公差與強度均未確認。"
+              ],
+              "screenshot": {
+                "path": "/challenges/boss-gui-v003-08.png",
+                "sha256": "23328f895e59d937f33a1f0e9f5c351564b6d8d47c1b4ec9b1c0f1d2c79be748"
+              }
+            }
+          ],
+          "section": "11-10"
+        },
+        {
+          "title": "程式預建工具與 GUI 內牙試塊（6 步）",
+          "description": "程式先建外牙工具，再在獨立 Blender 透過 GUI 操作差集；這是試塊，不是盒蓋。材料、製程、間隙與實際列印試配待定。",
+          "steps": [
+            {
+              "id": "11-inner-01",
+              "goal": "開啟程式預建外牙工具的保護副本",
+              "context": "Blender 5.2.1 LTS；來源外牙是既有程式生成，不是本輪 GUI 建牙。",
+              "operation": [
+                "先複製來源 .blend；在 Blender 開啟副本，於 Outliner 確認 External_Thread_Draft。後續另存新檔，保留原檔。"
+              ],
+              "success": "可見外牙草案及物件名稱。",
+              "readings": [
+                "程式讀回工具外框 X/Y ±6 mm、Z 0–4 mm；端牙不完整。"
+              ],
+              "limits": [
+                "16×16×3 mm 試塊並非盒蓋",
+                "來源外牙由程式生成、端部不完整，未設配合間隙",
+                "非流形0和局部射線不能證明無自交或可列印",
+                "材料、標準、切片、實印、量測、試配與強度待定"
+              ],
+              "screenshot": {
+                "path": "/challenges/inner-gui-v003-01.png",
+                "sha256": "2c53e91d6b8f03b0c97e4a8bdc23b7a05b73a8e82d932328469892723a443985"
+              }
+            },
+            {
+              "id": "11-inner-02",
+              "goal": "新增並設定試塊",
+              "context": "此來源場景 Unit Scale 0.001，新增方塊初始尺寸 2000 mm；縮放數值只適用此場景，操作前應核對實際尺寸。",
+              "operation": [
+                "在 3D 視窗以 F3 搜尋 Add Cube；依序 S X 0.008、S Y 0.008、S Z 0.0015、G Z 2，最後 F3 搜尋 Apply Scale。"
+              ],
+              "success": "畫面中試塊包住切割工具，尺寸面板可核對。",
+              "readings": [
+                "Cube 名義尺寸 16 × 16 × 3 mm，套用縮放後 Scale 為 1；這只是試塊，不是盒蓋。"
+              ],
+              "limits": [
+                "16×16×3 mm 試塊並非盒蓋",
+                "來源外牙由程式生成、端部不完整，未設配合間隙",
+                "非流形0和局部射線不能證明無自交或可列印",
+                "材料、標準、切片、實印、量測、試配與強度待定"
+              ],
+              "screenshot": {
+                "path": "/challenges/inner-gui-v003-02.png",
+                "sha256": "27be2b3803c8fb9fa0a53599b45b6373abcc848cb51427c75bdb797e0e52ca72"
+              }
+            },
+            {
+              "id": "11-inner-03",
+              "goal": "指定 Difference 修改器與切割工具",
+              "context": "需在物件模式選中 Cube；先確認 Object 欄位，Difference 為預覽時尚未套用。",
+              "operation": [
+                "選取 Cube，在修改器中新增 Boolean，選 Difference、Exact，Object 選 External_Thread_Draft。確認名稱後可在 Outliner 隱藏工具以查看預覽。"
+              ],
+              "success": "修改器顯示 Difference、Exact 與 External_Thread_Draft；可旋轉視角觀察切割預覽。",
+              "readings": [
+                "程式讀回 operation DIFFERENCE、solver EXACT、operand External_Thread_Draft；截圖可能不能顯出所有孔內細節。"
+              ],
+              "limits": [
+                "16×16×3 mm 試塊並非盒蓋",
+                "來源外牙由程式生成、端部不完整，未設配合間隙",
+                "非流形0和局部射線不能證明無自交或可列印",
+                "材料、標準、切片、實印、量測、試配與強度待定"
+              ],
+              "screenshot": {
+                "path": "/challenges/inner-gui-v003-03.png",
+                "sha256": "8a64770716e6de25f982bb3c6946eeb612d7506ad9cfa4e58b082a229e797365"
+              }
+            },
+            {
+              "id": "11-inner-04",
+              "goal": "套用差集並檢查結果",
+              "context": "套用前確認工具與差集設定正確；原始工具與原檔應保留。",
+              "operation": [
+                "工具隱藏後重新選 Cube，在 Boolean 修改器選單選 Apply；轉動視角查看孔內。"
+              ],
+              "success": "畫面出現孔內網格；單張畫面不能證明整段牙型或完全閉合。",
+              "readings": [
+                "程式讀回 2039 頂點、2042 面、單一連通殼、非流形邊 0；外框約 16 × 16 × 3 mm，只有局部射線抽樣。"
+              ],
+              "limits": [
+                "16×16×3 mm 試塊並非盒蓋",
+                "來源外牙由程式生成、端部不完整，未設配合間隙",
+                "非流形0和局部射線不能證明無自交或可列印",
+                "材料、標準、切片、實印、量測、試配與強度待定"
+              ],
+              "screenshot": {
+                "path": "/challenges/inner-gui-v003-04.png",
+                "sha256": "2487151b13e7bc702d735b0135d2cd986607d7a8ad69586ea5216aed4cfca016"
+              }
+            },
+            {
+              "id": "11-inner-05",
+              "goal": "另存試塊新版本",
+              "context": "示範中檔案對話框的路徑與檔名由程式填入；其他圖形操作使用 Blender 事件。",
+              "operation": [
+                "使用 File > Save As，選擇新檔名另存 .blend，保留來源外牙及既有小盒原檔。"
+              ],
+              "success": "另存後可看到試塊場景。",
+              "readings": [
+                "示範另存的場景 SHA-256 為 a312d1942c8198bff9ef97a18adc7a89d2f0eb882a890710dc11c8782cc74a80；自行操作的檔案雜湊會不同。"
+              ],
+              "limits": [
+                "16×16×3 mm 試塊並非盒蓋",
+                "來源外牙由程式生成、端部不完整，未設配合間隙",
+                "非流形0和局部射線不能證明無自交或可列印",
+                "材料、標準、切片、實印、量測、試配與強度待定"
+              ],
+              "screenshot": {
+                "path": "/challenges/inner-gui-v003-05.png",
+                "sha256": "cb71996dd5a09df96caaf0cb5ed97044f07f7510d6c6a352d2ed240bab48f392"
+              }
+            },
+            {
+              "id": "11-inner-06",
+              "goal": "重開新版本核對",
+              "context": "示範以 GUI 重開，檔案欄位由程式填入；不要覆寫來源。",
+              "operation": [
+                "關閉或離開前先確認另存完成，再重新開啟剛存的試塊版本，確認孔、物件及外框。"
+              ],
+              "success": "重開後畫面仍有試塊及內孔。",
+              "readings": [
+                "重開後程式讀回外框約 16 × 16 × 3 mm、非流形邊 0；未執行實體列印、量測或試配。"
+              ],
+              "limits": [
+                "16×16×3 mm 試塊並非盒蓋",
+                "來源外牙由程式生成、端部不完整，未設配合間隙",
+                "非流形0和局部射線不能證明無自交或可列印",
+                "材料、標準、切片、實印、量測、試配與強度待定"
+              ],
+              "screenshot": {
+                "path": "/challenges/inner-gui-v003-06.png",
+                "sha256": "d59af582a16ea32770e24a244732cbafab7f5122629d7cb278b712ada40952b9"
+              }
+            }
+          ],
+          "section": "11-09"
+        },
+        {
+          "title": "歷史問題案例：外牙 v005（14 步）",
+          "description": "輪廓由程式預建，GUI 操作修改器與接合。三組候選交疊及極薄三角形尚待排查，未連盒體；不可視為可列印、ISO 牙型或合格配合。",
+          "startingScene": {
+            "path": "learning/evidence/08/2026-10-28-external-thread-profile-start-v001/u08_external_thread_profile_start_v001.blend",
+            "sha256": "a9083cb26d87ff9d6d8d18ea81309f932812127cd468fb58659baf504609271c",
+            "verification": "learning/evidence/08/2026-10-28-external-thread-profile-start-v001/independent-audit-v001.json",
+            "construction": "依 v005 原腳本由程式預建輪廓並另存；獨立重開驗證。"
+          },
+          "steps": [
+            {
+              "id": "11-external-01",
+              "goal": "準備來源輪廓",
+              "context": "起始副本由既有參考場景另存；Blender 5.2.1 LTS，既有盒體隱藏，尚無螺紋，且未接到盒體。",
+              "operation": [
+                "下載或複製已附的外牙輪廓起始副本，使用 Blender 開啟副本；確認 Thread_Triangle_Profile。此輪廓由 Python 預建，並非 GUI 畫草圖。"
+              ],
+              "success": "畫面顯示 Thread_Triangle_Profile 輪廓及場景。",
+              "readings": [
+                "起始副本獨立重開讀回 3 頂點、3 邊、0 面；三點為 (4.8,0,0)、(6,0,0.3)、(4.8,0,0.6) mm。"
+              ],
+              "limits": [
+                "輪廓由 Python 預建，非手繪完整教學；此草案未接到盒體",
+                "檔案視窗欄位由程式填入，GUI 操作為獨立 Blender 模擬事件",
+                "三組候選交疊及極薄三角形待排查；尚不能區分實際穿越與數值接觸",
+                "非流形邊 0 不證明無自交或可列印；非 ISO 牙型",
+                "材料、正式公差、強度、列印、量測及試配均未確認"
+              ],
+              "screenshot": {
+                "path": "/challenges/external-gui-v005-01.png",
+                "sha256": "4ee883f9bbba5b122514137aa122dbeca32bafe702b43401dc9eed112aed76f3"
+              }
+            },
+            {
+              "id": "11-external-02",
+              "goal": "加入 Screw 修改器",
+              "context": "輪廓已由程式建立；這裡是單頭三角牙草案，非 ISO。",
+              "operation": [
+                "選取 Thread_Triangle_Profile，在物件模式 F3 搜尋 Add Screw Modifier；設定角度 360°、每圈位移 1 mm、4 次迭代、每圈 32 段。"
+              ],
+              "success": "修改器面板顯示 Screw，視窗出現螺旋牙條。",
+              "readings": [
+                "程式讀回 1 mm、4 次、32 段，評估後 387 頂點、384 面、6 條邊界；角度需結合畫面與劇本。"
+              ],
+              "limits": [
+                "輪廓由 Python 預建，非手繪完整教學；此草案未接到盒體",
+                "檔案視窗欄位由程式填入，GUI 操作為獨立 Blender 模擬事件",
+                "三組候選交疊及極薄三角形待排查；尚不能區分實際穿越與數值接觸",
+                "非流形邊 0 不證明無自交或可列印；非 ISO 牙型",
+                "材料、正式公差、強度、列印、量測及試配均未確認"
+              ],
+              "screenshot": {
+                "path": "/challenges/external-gui-v005-02.png",
+                "sha256": "7078e4472c07d462f27b7c943a48dcd10db63e58d2efd727959005342e68d0e0"
+              }
+            },
+            {
+              "id": "11-external-03",
+              "goal": "將 Screw 轉為網格",
+              "context": "轉換前確認修改器數值；保留來源副本。",
+              "operation": [
+                "物件模式下選取輪廓物件，F3 搜尋 Convert Mesh，確認已轉換。"
+              ],
+              "success": "修改器消失，牙條仍顯示於視窗。",
+              "readings": [
+                "讀回修改器為空，仍有 6 條開口邊。"
+              ],
+              "limits": [
+                "輪廓由 Python 預建，非手繪完整教學；此草案未接到盒體",
+                "檔案視窗欄位由程式填入，GUI 操作為獨立 Blender 模擬事件",
+                "三組候選交疊及極薄三角形待排查；尚不能區分實際穿越與數值接觸",
+                "非流形邊 0 不證明無自交或可列印；非 ISO 牙型",
+                "材料、正式公差、強度、列印、量測及試配均未確認"
+              ],
+              "screenshot": {
+                "path": "/challenges/external-gui-v005-03.png",
+                "sha256": "4433e726870ab457f4059e732778651e7228564024a6346b9b776e35492d6e40"
+              }
+            },
+            {
+              "id": "11-external-04",
+              "goal": "選取非流形邊",
+              "context": "這是找出未封端邊的教學步驟，畫面可能需放大觀察。",
+              "operation": [
+                "選取牙條，Tab 進入編輯模式，按 2 切邊選取、Alt+A 取消選取；F3 搜尋 Select Non Manifold。"
+              ],
+              "success": "牙條兩端邊界被選取。",
+              "readings": [
+                "程式讀回 6 條邊界及 6 條非流形邊。"
+              ],
+              "limits": [
+                "輪廓由 Python 預建，非手繪完整教學；此草案未接到盒體",
+                "檔案視窗欄位由程式填入，GUI 操作為獨立 Blender 模擬事件",
+                "三組候選交疊及極薄三角形待排查；尚不能區分實際穿越與數值接觸",
+                "非流形邊 0 不證明無自交或可列印；非 ISO 牙型",
+                "材料、正式公差、強度、列印、量測及試配均未確認"
+              ],
+              "screenshot": {
+                "path": "/challenges/external-gui-v005-04.png",
+                "sha256": "7695128a816a887bb85539e1a9b628062f7668c8690faf850e6857452a48980a"
+              }
+            },
+            {
+              "id": "11-external-05",
+              "goal": "封閉牙條兩端",
+              "context": "確認選中的是預期的兩端開口，封端結果仍需後續驗證。",
+              "operation": [
+                "維持邊界選取後按 F 封端，旋轉視角檢查端面。"
+              ],
+              "success": "畫面中牙條兩端增加面。",
+              "readings": [
+                "程式讀回 386 面、邊界 0、非流形邊 0；不能以此宣稱無自交或可製造。"
+              ],
+              "limits": [
+                "輪廓由 Python 預建，非手繪完整教學；此草案未接到盒體",
+                "檔案視窗欄位由程式填入，GUI 操作為獨立 Blender 模擬事件",
+                "三組候選交疊及極薄三角形待排查；尚不能區分實際穿越與數值接觸",
+                "非流形邊 0 不證明無自交或可列印；非 ISO 牙型",
+                "材料、正式公差、強度、列印、量測及試配均未確認"
+              ],
+              "screenshot": {
+                "path": "/challenges/external-gui-v005-05.png",
+                "sha256": "5594cc95f225ba98676f8c14d98f7f550585b9c2dec713848811926573928a56"
+              }
+            },
+            {
+              "id": "11-external-06",
+              "goal": "重新計算法線",
+              "context": "牙條已封端；此操作不會自動排除交疊或極薄面。",
+              "operation": [
+                "在編輯模式 A 全選，再按 Shift+N 重新計算法線。"
+              ],
+              "success": "編輯模式中牙條全選。",
+              "readings": [
+                "程式讀回邊界 0、非流形邊 0；未單憑此宣稱法線或幾何完全正確。"
+              ],
+              "limits": [
+                "輪廓由 Python 預建，非手繪完整教學；此草案未接到盒體",
+                "檔案視窗欄位由程式填入，GUI 操作為獨立 Blender 模擬事件",
+                "三組候選交疊及極薄三角形待排查；尚不能區分實際穿越與數值接觸",
+                "非流形邊 0 不證明無自交或可列印；非 ISO 牙型",
+                "材料、正式公差、強度、列印、量測及試配均未確認"
+              ],
+              "screenshot": {
+                "path": "/challenges/external-gui-v005-06.png",
+                "sha256": "a8621ac5e53cbd4daa5c9346c2d334f8421da0f4e3eb97a5b75be4625d0e8fd1"
+              }
+            },
+            {
+              "id": "11-external-07",
+              "goal": "新增圓柱核心",
+              "context": "本場景 Unit Scale 0.001，這些縮放係數僅適用此場景初始圓柱，務必核對尺寸。",
+              "operation": [
+                "Tab 回物件模式，F3 搜尋 Add Cylinder；依序 S 0.005、S Z 0.46、G Z 2.3，F3 搜尋 Apply Scale，按 F2 命名 Thread_Core。"
+              ],
+              "success": "畫面顯示選中的圓柱核心及物件名稱。",
+              "readings": [
+                "程式讀回核心名義直徑 10 mm、高 4.6 mm、Z 位置 2.3 mm、Scale 1。"
+              ],
+              "limits": [
+                "輪廓由 Python 預建，非手繪完整教學；此草案未接到盒體",
+                "檔案視窗欄位由程式填入，GUI 操作為獨立 Blender 模擬事件",
+                "三組候選交疊及極薄三角形待排查；尚不能區分實際穿越與數值接觸",
+                "非流形邊 0 不證明無自交或可列印；非 ISO 牙型",
+                "材料、正式公差、強度、列印、量測及試配均未確認"
+              ],
+              "screenshot": {
+                "path": "/challenges/external-gui-v005-07.png",
+                "sha256": "fc17c4a59b9fb09107efe1b36279ae7950ac31a127735a713858504a6255becb"
+              }
+            },
+            {
+              "id": "11-external-08",
+              "goal": "觀察首次指定工具未成功",
+              "context": "此畫面保留示範首次失敗；輸入文字或按 Enter 不一定已選定對象。",
+              "operation": [
+                "選 Thread_Core、新增 Boolean，選 Union、Exact；嘗試輸入 Thread_Triangle_Profile 時檢查 Object 欄是否真正選入。"
+              ],
+              "success": "畫面為首次嘗試指定物件的狀態。",
+              "readings": [
+                "程式讀回 Union、Exact，但 operand 為空；此時不可宣稱指定完成。"
+              ],
+              "limits": [
+                "輪廓由 Python 預建，非手繪完整教學；此草案未接到盒體",
+                "檔案視窗欄位由程式填入，GUI 操作為獨立 Blender 模擬事件",
+                "三組候選交疊及極薄三角形待排查；尚不能區分實際穿越與數值接觸",
+                "非流形邊 0 不證明無自交或可列印；非 ISO 牙型",
+                "材料、正式公差、強度、列印、量測及試配均未確認"
+              ],
+              "screenshot": {
+                "path": "/challenges/external-gui-v005-08.png",
+                "sha256": "d54a4f8f97160e720e505ffac6d3d90a4ab4ca4ed88b6f6f69e48ca0c0b4eb02"
+              }
+            },
+            {
+              "id": "11-external-09",
+              "goal": "正確指定 Boolean 工具",
+              "context": "選中核心，先核對 Union、Exact 與對象，尚未套用。",
+              "operation": [
+                "在 Boolean 的 Object 欄重新選擇清單中的 Thread_Triangle_Profile，確認名稱顯示。"
+              ],
+              "success": "修改器 Object 欄顯示 Thread_Triangle_Profile。",
+              "readings": [
+                "程式讀回 operation UNION、solver EXACT、operand Thread_Triangle_Profile。"
+              ],
+              "limits": [
+                "輪廓由 Python 預建，非手繪完整教學；此草案未接到盒體",
+                "檔案視窗欄位由程式填入，GUI 操作為獨立 Blender 模擬事件",
+                "三組候選交疊及極薄三角形待排查；尚不能區分實際穿越與數值接觸",
+                "非流形邊 0 不證明無自交或可列印；非 ISO 牙型",
+                "材料、正式公差、強度、列印、量測及試配均未確認"
+              ],
+              "screenshot": {
+                "path": "/challenges/external-gui-v005-09.png",
+                "sha256": "b168421f0540bc416e0f9f8a3758bda73ce7b22119ac164a3020a40a85ea2ea4"
+              }
+            },
+            {
+              "id": "11-external-10",
+              "goal": "隱藏牙條工具以檢視預覽",
+              "context": "隱藏的是工具，不是刪除；若版面不同以物件名稱與眼睛圖示為準。",
+              "operation": [
+                "在 Outliner 對 Thread_Triangle_Profile 點眼睛隱藏；保留牙條物件以備回溯。"
+              ],
+              "success": "牙條工具隱藏，核心顯示布林預覽。",
+              "readings": [
+                "此張安全摘要未另外提供讀值。"
+              ],
+              "limits": [
+                "輪廓由 Python 預建，非手繪完整教學；此草案未接到盒體",
+                "檔案視窗欄位由程式填入，GUI 操作為獨立 Blender 模擬事件",
+                "三組候選交疊及極薄三角形待排查；尚不能區分實際穿越與數值接觸",
+                "非流形邊 0 不證明無自交或可列印；非 ISO 牙型",
+                "材料、正式公差、強度、列印、量測及試配均未確認"
+              ],
+              "screenshot": {
+                "path": "/challenges/external-gui-v005-10.png",
+                "sha256": "0651c67cf0429e95048af4aa7ad0abd1a4453501ff9378f3bad0d42525bce590"
+              }
+            },
+            {
+              "id": "11-external-11",
+              "goal": "套用 Boolean Union",
+              "context": "確認對象、設定及工具狀態後才套用；結果為待修幾何。",
+              "operation": [
+                "重新選取 Thread_Core，在 Boolean 修改器選單點 Apply；觀察牙條合併後的核心。"
+              ],
+              "success": "畫面出現外牙形狀。",
+              "readings": [
+                "程式讀回外框約 12 × 12 × 4.6 mm、711 頂點、428 面、非流形邊 0；獨立稽核發現 3 組疑似交疊及極薄三角形。"
+              ],
+              "limits": [
+                "輪廓由 Python 預建，非手繪完整教學；此草案未接到盒體",
+                "檔案視窗欄位由程式填入，GUI 操作為獨立 Blender 模擬事件",
+                "三組候選交疊及極薄三角形待排查；尚不能區分實際穿越與數值接觸",
+                "非流形邊 0 不證明無自交或可列印；非 ISO 牙型",
+                "材料、正式公差、強度、列印、量測及試配均未確認"
+              ],
+              "screenshot": {
+                "path": "/challenges/external-gui-v005-11.png",
+                "sha256": "0d84f835c4f7c50e5992d21eed5b6a4c53887ad8738a88cca1d713658f9cc5f0"
+              }
+            },
+            {
+              "id": "11-external-12",
+              "goal": "調整視角觀察",
+              "context": "視圖調整不會修復幾何，單張視圖不能排除交疊。",
+              "operation": [
+                "選取 Thread_Core，F3 搜尋 Frame Selected，旋轉視角觀察。"
+              ],
+              "success": "螺旋外形聚焦於畫面。",
+              "readings": [
+                "外框讀值未改；仍有疑似交疊及極薄面待修。"
+              ],
+              "limits": [
+                "輪廓由 Python 預建，非手繪完整教學；此草案未接到盒體",
+                "檔案視窗欄位由程式填入，GUI 操作為獨立 Blender 模擬事件",
+                "三組候選交疊及極薄三角形待排查；尚不能區分實際穿越與數值接觸",
+                "非流形邊 0 不證明無自交或可列印；非 ISO 牙型",
+                "材料、正式公差、強度、列印、量測及試配均未確認"
+              ],
+              "screenshot": {
+                "path": "/challenges/external-gui-v005-12.png",
+                "sha256": "e59f35fd96974873ee031534718f2bab48bc8ab0010d2c4de17335e8a40ae4fd"
+              }
+            },
+            {
+              "id": "11-external-13",
+              "goal": "另存獨立草案",
+              "context": "示範的檔案視窗路徑及檔名由程式填入。",
+              "operation": [
+                "使用 File > Save As 另存新檔，保留參考場景和既有小盒原檔。"
+              ],
+              "success": "另存完成後畫面顯示外牙草案。",
+              "readings": [
+                "示範場景 SHA-256：afdefc6f01947e0a6ecb11cd77ffbb1f1e36dc4c12f06ef9132c4b087fd99baf；自行建立的檔案雜湊會不同。"
+              ],
+              "limits": [
+                "輪廓由 Python 預建，非手繪完整教學；此草案未接到盒體",
+                "檔案視窗欄位由程式填入，GUI 操作為獨立 Blender 模擬事件",
+                "三組候選交疊及極薄三角形待排查；尚不能區分實際穿越與數值接觸",
+                "非流形邊 0 不證明無自交或可列印；非 ISO 牙型",
+                "材料、正式公差、強度、列印、量測及試配均未確認"
+              ],
+              "screenshot": {
+                "path": "/challenges/external-gui-v005-13.png",
+                "sha256": "c3c25c622cbfeb5552d96eecd530f7eecb79452824c5ef13342eb33e4f79ba09"
+              }
+            },
+            {
+              "id": "11-external-14",
+              "goal": "重開新檔並核對",
+              "context": "示範檔案視窗欄位由程式填入；避免覆寫來源。",
+              "operation": [
+                "重新開啟剛另存的草案，確認物件與外框；之後應另建版本修復問題。"
+              ],
+              "success": "重開後仍可見 Thread_Core 與外牙草案。",
+              "readings": [
+                "讀回尺寸約 12 × 12 × 4.6 mm；獨立稽核的交疊候選尚未排除，不能作列印或合格判定。"
+              ],
+              "limits": [
+                "輪廓由 Python 預建，非手繪完整教學；此草案未接到盒體",
+                "檔案視窗欄位由程式填入，GUI 操作為獨立 Blender 模擬事件",
+                "三組候選交疊及極薄三角形待排查；尚不能區分實際穿越與數值接觸",
+                "非流形邊 0 不證明無自交或可列印；非 ISO 牙型",
+                "材料、正式公差、強度、列印、量測及試配均未確認"
+              ],
+              "screenshot": {
+                "path": "/challenges/external-gui-v005-14.png",
+                "sha256": "45b64d186b9c8602cd15bcc013f1316162ee091daa6cae5163f1dd470b2381da"
+              }
+            }
+          ],
+          "section": "11-08",
+          "historical": true
+        },
+        {
+          "title": "歷史問題案例：盒側接合 v001（10 步）",
+          "section": "11-12",
+          "historical": true,
+          "description": "獨立覆核發現三角化結果中高約 0.0004642 mm 的細長三角形，此高度不是物理壁厚；一部分源於七邊面三角化，影響待評估。v002 調整接合相位，不代表已驗證改善或合格。",
+          "sourceVersions": [
+            {
+              "label": "v001 接合版本",
+              "path": "learning/evidence/08/2026-10-28-external-thread-mount-gui-v001/demo-files/u11_box_external_thread_draft_v001.blend",
+              "sha256": "b97a021c1422ced95b17a80893195df1907a725eb2e53789e0992a23793320ce"
+            },
+            {
+              "label": "獨立細長三角覆核",
+              "path": "learning/evidence/08/2026-10-28-thread-mount-independent-review-v001/mount-v001.json",
+              "sha256": "02eb87948192701591918278f1560ebfb4004349ed624056505d8a1b164c0980"
+            },
+            {
+              "label": "來源七邊面覆核",
+              "path": "learning/evidence/08/2026-10-28-thread-mount-independent-review-v001/mount-triangle-parent-polygon-v001.json",
+              "sha256": "adf0ed47b47110d2911d3951c2116a3f65d491dd4ee86c0fb6c02b9bf5f5af7c"
+            }
+          ],
+          "steps": [
+            {
+              "id": "11-mount-01",
+              "goal": "載入已檢查牙條",
+              "context": "程式只載入既有物件、不重新生成牙條；不是 GUI Append 教學。",
+              "operation": [
+                "開啟小盒和上蓋原檔的複本；示範以程式載入已完成的 Thread_Core 物件，顯示盒體與上蓋，選取牙條。"
+              ],
+              "success": "Outliner 顯示 Body、Lid 與 Thread_Core；牙條此時位於盒內，可能被盒體遮住。",
+              "readings": [
+                "程式讀回牙條 Z 約 -0.1～4.7 mm；盒體外框 60 × 40 × 30 mm，蓋子 Z 11～17 mm。"
+              ],
+              "limits": [
+                "牙形是示範草案，非 ISO 螺紋，既有內牙試塊不是匹配對件。",
+                "初始截面與把牙條載入盒場景是程式處理；旋轉、移動、布林、另存及重開為 GUI 操作，檔案欄位由程式填寫。",
+                "修正版改變多邊形相位與芯柱高度，須保留 v005 原始問題與修訂紀錄。",
+                "零 BVH 候選與零非流形邊不能證明無自交；五條射線只是局部抽樣，蓋子間距僅為靜態外框距離。",
+                "材料、允許間隙、切片、實體列印、量測、試配與強度均待定。"
+              ],
+              "screenshot": {
+                "path": "/challenges/mount-gui-v001-01.png",
+                "sha256": "892889c550b761fae0206aa8acfa9fd4717d6084b7aff8fe67c24105dfefb6f8"
+              }
+            },
+            {
+              "id": "11-mount-02",
+              "goal": "轉向盒側",
+              "context": "先確認 Thread_Core 被選中；旋轉是繞物件原點。",
+              "operation": [
+                "在 3D 視窗對牙條按 R、Y、90、Enter，將原本 Z 軸牙條轉至 X 軸。"
+              ],
+              "success": "畫面以盒體為主，牙條可能被遮擋，不能僅憑畫面確認完整旋轉。",
+              "readings": [
+                "程式讀回牙條 X 約 -2.4～2.4 mm，原點 Z 仍約 2.3 mm。"
+              ],
+              "limits": [
+                "牙形是示範草案，非 ISO 螺紋，既有內牙試塊不是匹配對件。",
+                "初始截面與把牙條載入盒場景是程式處理；旋轉、移動、布林、另存及重開為 GUI 操作，檔案欄位由程式填寫。",
+                "修正版改變多邊形相位與芯柱高度，須保留 v005 原始問題與修訂紀錄。",
+                "零 BVH 候選與零非流形邊不能證明無自交；五條射線只是局部抽樣，蓋子間距僅為靜態外框距離。",
+                "材料、允許間隙、切片、實體列印、量測、試配與強度均待定。"
+              ],
+              "screenshot": {
+                "path": "/challenges/mount-gui-v001-02.png",
+                "sha256": "a7b21f9fb910e156905b4a2206657ef0676aeb48dd7e558e36b014424e1b187f"
+              }
+            },
+            {
+              "id": "11-mount-03",
+              "goal": "移動到右側外壁",
+              "context": "沿用前一步旋轉的原點；名義根部需與盒壁重疊，而不是只相切。",
+              "operation": [
+                "對牙條依序輸入 G X 31.9 mm、G Z -2.3 mm。"
+              ],
+              "success": "右側外壁可見牙條；畫面無法精確判斷嵌入深度。",
+              "readings": [
+                "世界座標讀回牙條 X 約 29.5～34.3 mm、Y/Z 均約 ±6 mm；與外壁 X=30 有約 0.5 mm 重疊。"
+              ],
+              "limits": [
+                "牙形是示範草案，非 ISO 螺紋，既有內牙試塊不是匹配對件。",
+                "初始截面與把牙條載入盒場景是程式處理；旋轉、移動、布林、另存及重開為 GUI 操作，檔案欄位由程式填寫。",
+                "修正版改變多邊形相位與芯柱高度，須保留 v005 原始問題與修訂紀錄。",
+                "零 BVH 候選與零非流形邊不能證明無自交；五條射線只是局部抽樣，蓋子間距僅為靜態外框距離。",
+                "材料、允許間隙、切片、實體列印、量測、試配與強度均待定。"
+              ],
+              "screenshot": {
+                "path": "/challenges/mount-gui-v001-03.png",
+                "sha256": "7c811c1e2ff3c6ac41bad941f05da1e0bd3bf0b222c10f38fdfe6cd5b1b8875d"
+              }
+            },
+            {
+              "id": "11-mount-04",
+              "goal": "檢查布林工具欄",
+              "context": "Outliner 必須選盒體 Body，不是選上蓋或牙條。",
+              "operation": [
+                "選中 Body，F3 搜尋 Add Boolean Modifier，選 Union、Exact，嘗試指定 Thread_Core。"
+              ],
+              "success": "修改器 Object 欄仍空白，為保留的第一次失敗畫面。",
+              "readings": [
+                "程式讀回 UNION、EXACT，但 operand 為空；不可在此時套用。"
+              ],
+              "limits": [
+                "牙形是示範草案，非 ISO 螺紋，既有內牙試塊不是匹配對件。",
+                "初始截面與把牙條載入盒場景是程式處理；旋轉、移動、布林、另存及重開為 GUI 操作，檔案欄位由程式填寫。",
+                "修正版改變多邊形相位與芯柱高度，須保留 v005 原始問題與修訂紀錄。",
+                "零 BVH 候選與零非流形邊不能證明無自交；五條射線只是局部抽樣，蓋子間距僅為靜態外框距離。",
+                "材料、允許間隙、切片、實體列印、量測、試配與強度均待定。"
+              ],
+              "screenshot": {
+                "path": "/challenges/mount-gui-v001-04.png",
+                "sha256": "ec31bbcc83ac4e1848fdead43843a9173d4a945ef9a32a3d3a19de51bc836382"
+              }
+            },
+            {
+              "id": "11-mount-05",
+              "goal": "選擇牙條工具",
+              "context": "接續上一步；輸入文字後必須確認選取生效。",
+              "operation": [
+                "在 Object 欄位搜尋 Thread_Core，從候選清單點選。"
+              ],
+              "success": "修改器 Object 欄顯示工具名稱，視欄寬可能截斷。",
+              "readings": [
+                "程式讀回 operation UNION、solver EXACT、operand Thread_Core。"
+              ],
+              "limits": [
+                "牙形是示範草案，非 ISO 螺紋，既有內牙試塊不是匹配對件。",
+                "初始截面與把牙條載入盒場景是程式處理；旋轉、移動、布林、另存及重開為 GUI 操作，檔案欄位由程式填寫。",
+                "修正版改變多邊形相位與芯柱高度，須保留 v005 原始問題與修訂紀錄。",
+                "零 BVH 候選與零非流形邊不能證明無自交；五條射線只是局部抽樣，蓋子間距僅為靜態外框距離。",
+                "材料、允許間隙、切片、實體列印、量測、試配與強度均待定。"
+              ],
+              "screenshot": {
+                "path": "/challenges/mount-gui-v001-05.png",
+                "sha256": "441c4bdf57a18aef8c1616060f650277f69cbe2446ef39e798c707ee4880715d"
+              }
+            },
+            {
+              "id": "11-mount-06",
+              "goal": "隱藏工具",
+              "context": "先確認修改器物件欄正確；座標以自己的 Blender 版面為準。",
+              "operation": [
+                "在 Outliner 的 Thread_Core 旁點眼睛，保留工具資料並觀察布林預覽。"
+              ],
+              "success": "工具顯示為隱藏，盒體上的牙條預覽仍可見。",
+              "readings": [
+                "劇本以 hide_get() 確認工具被隱藏；不代表工具被刪除。"
+              ],
+              "limits": [
+                "牙形是示範草案，非 ISO 螺紋，既有內牙試塊不是匹配對件。",
+                "初始截面與把牙條載入盒場景是程式處理；旋轉、移動、布林、另存及重開為 GUI 操作，檔案欄位由程式填寫。",
+                "修正版改變多邊形相位與芯柱高度，須保留 v005 原始問題與修訂紀錄。",
+                "零 BVH 候選與零非流形邊不能證明無自交；五條射線只是局部抽樣，蓋子間距僅為靜態外框距離。",
+                "材料、允許間隙、切片、實體列印、量測、試配與強度均待定。"
+              ],
+              "screenshot": {
+                "path": "/challenges/mount-gui-v001-06.png",
+                "sha256": "16001cfba82ea6a4a615cccb3f92d487e7ca9b6e7cba56c50aeb1c81037aba82"
+              }
+            },
+            {
+              "id": "11-mount-07",
+              "goal": "套用布林",
+              "context": "再次確認 Union、Exact 與工具對象；操作於示範副本。",
+              "operation": [
+                "在 Body 的 Boolean 修改器選單選 Apply，將外牙與盒體合併。"
+              ],
+              "success": "盒側顯示外牙；單張畫面不能證明所有牙面品質。",
+              "readings": [
+                "程式讀回 712 點、420 面、1 連通體、非流形邊 0；五條盒內壁射線命中 X≈28 mm。"
+              ],
+              "limits": [
+                "牙形是示範草案，非 ISO 螺紋，既有內牙試塊不是匹配對件。",
+                "初始截面與把牙條載入盒場景是程式處理；旋轉、移動、布林、另存及重開為 GUI 操作，檔案欄位由程式填寫。",
+                "修正版改變多邊形相位與芯柱高度，須保留 v005 原始問題與修訂紀錄。",
+                "零 BVH 候選與零非流形邊不能證明無自交；五條射線只是局部抽樣，蓋子間距僅為靜態外框距離。",
+                "材料、允許間隙、切片、實體列印、量測、試配與強度均待定。"
+              ],
+              "screenshot": {
+                "path": "/challenges/mount-gui-v001-07.png",
+                "sha256": "b923e1520e0f770c2fb42b8b1aa4cfc0ba08ffc816a354000ce082feff1bd0e9"
+              }
+            },
+            {
+              "id": "11-mount-08",
+              "goal": "聚焦檢視",
+              "context": "選中已合併的 Body；牙條為盒側接口，並非螺旋上蓋。",
+              "operation": [
+                "按 F3 搜尋 Frame Selected，檢視盒側接口與上蓋。"
+              ],
+              "success": "畫面可見外側牙條及名義關閉位置的上蓋。",
+              "readings": [
+                "盒體外框 X 約 -30～34.3 mm，Y ±20 mm、Z ±15 mm。"
+              ],
+              "limits": [
+                "牙形是示範草案，非 ISO 螺紋，既有內牙試塊不是匹配對件。",
+                "初始截面與把牙條載入盒場景是程式處理；旋轉、移動、布林、另存及重開為 GUI 操作，檔案欄位由程式填寫。",
+                "修正版改變多邊形相位與芯柱高度，須保留 v005 原始問題與修訂紀錄。",
+                "零 BVH 候選與零非流形邊不能證明無自交；五條射線只是局部抽樣，蓋子間距僅為靜態外框距離。",
+                "材料、允許間隙、切片、實體列印、量測、試配與強度均待定。"
+              ],
+              "screenshot": {
+                "path": "/challenges/mount-gui-v001-08.png",
+                "sha256": "20b81a93bc46c454cb225dad668c688d8e3caf6672f97d131fd624f193dd9ad9"
+              }
+            },
+            {
+              "id": "11-mount-09",
+              "goal": "另存草案",
+              "context": "保存原始小盒及牙條源檔；新草案仍需實際驗證。",
+              "operation": [
+                "使用 Save As，另存新版本；示範的檔案路徑與名稱由程式填入。"
+              ],
+              "success": "另存後畫面為盒側接口，這不是檔案對話框截圖。",
+              "readings": [
+                "另存場景 SHA-256 見 demonstrationSceneSha256；未執行實體列印或試配。"
+              ],
+              "limits": [
+                "牙形是示範草案，非 ISO 螺紋，既有內牙試塊不是匹配對件。",
+                "初始截面與把牙條載入盒場景是程式處理；旋轉、移動、布林、另存及重開為 GUI 操作，檔案欄位由程式填寫。",
+                "修正版改變多邊形相位與芯柱高度，須保留 v005 原始問題與修訂紀錄。",
+                "零 BVH 候選與零非流形邊不能證明無自交；五條射線只是局部抽樣，蓋子間距僅為靜態外框距離。",
+                "材料、允許間隙、切片、實體列印、量測、試配與強度均待定。"
+              ],
+              "screenshot": {
+                "path": "/challenges/mount-gui-v001-09.png",
+                "sha256": "4c407bf5f5aaee6fed70bce2a11ccd3c21598bced342022b40057136ceff6845"
+              }
+            },
+            {
+              "id": "11-mount-10",
+              "goal": "重開並獨立檢查",
+              "context": "檔案欄位由程式填入，重開後才進行獨立讀值；不更新學員進度。",
+              "operation": [
+                "重開新場景；另以獨立 Blender 讀取網格、檢查邊界、連通、三角面和 BVH。"
+              ],
+              "success": "重開後畫面仍有盒體、上蓋與盒側外牙。",
+              "readings": [
+                "獨立檢查 BVH 候選 0、面積 < 10⁻⁵ mm² 為 0、最小三角面 5.434×10⁻⁵ mm²、最短邊 0.01469 mm；僅是檢查結果，不保證無自交或可製造。"
+              ],
+              "limits": [
+                "牙形是示範草案，非 ISO 螺紋，既有內牙試塊不是匹配對件。",
+                "初始截面與把牙條載入盒場景是程式處理；旋轉、移動、布林、另存及重開為 GUI 操作，檔案欄位由程式填寫。",
+                "修正版改變多邊形相位與芯柱高度，須保留 v005 原始問題與修訂紀錄。",
+                "零 BVH 候選與零非流形邊不能證明無自交；五條射線只是局部抽樣，蓋子間距僅為靜態外框距離。",
+                "材料、允許間隙、切片、實體列印、量測、試配與強度均待定。"
+              ],
+              "screenshot": {
+                "path": "/challenges/mount-gui-v001-10.png",
+                "sha256": "e4e982e2ffe8e670919711a083bd8828200a40484db5b65ac7bdeb35d24d6a81"
+              }
+            }
+          ]
+        }
+      ],
+      "physicalResults": {
+        "material": null,
+        "print": null,
+        "measurement": null,
+        "fit": null,
+        "qualifiedClearance": null,
+        "qualifiedStrength": null
+      },
+      "hardwareInformation": {
+        "title": "已選五金與試驗尺寸",
+        "description": "以下是已選型與原廠數據，不代表已購買、已實印或強度／配合合格。平面上蓋固定與盒側自訂牙帽是不同分支。",
+        "items": [
+          {
+            "label": "熱熔螺母（已選）",
+            "value": "ruthex RX-M3x5.7，M3，長 5.7 mm，最大外徑 4.6 mm，尖端 3.9 mm"
+          },
+          {
+            "label": "螺母孔（原廠建議）",
+            "value": "孔徑 4.0 mm；最低深度 6.7 mm（L + 1）；最小周壁 W 1.6 mm"
+          },
+          {
+            "label": "螺絲（已選）",
+            "value": "ETTINGER 001.16.342，ISO 4762 M3×10，不鏽鋼 AISI 304 / A2；頭徑 5.5、頭高 3、內六角 2.5 mm"
+          },
+          {
+            "label": "小盒平面蓋（本案試驗值）",
+            "value": "蓋板穿孔名義 3.4 mm；4 處。孔徑與列印配合未驗證。"
+          },
+          {
+            "label": "待定及未驗證",
+            "value": "塑膠材料、安裝溫度、扭矩、實際量測、列印、安裝、試配及強度均待定。"
+          }
+        ],
+        "limitations": "原廠孔徑／深度／周壁為起始依據，不是 FDM 列印或配合合格證明；自訂穿孔與側帽間隙均為試驗值。",
+        "sources": [
+          {
+            "title": "ruthex 原廠產品及尺寸",
+            "url": "https://www.ruthex.de/en/products/ruthex-gewindeeinsatz-m3-100-stuck-rx-m3x5-7-messing-gewindebuchsen"
+          },
+          {
+            "title": "ETTINGER 原廠螺絲資料",
+            "url": "https://www.ettinger.de/en/product-datasheet/53f5b0ccb6bc15a136c57179f752fbfb/create"
+          }
+        ],
+        "recordPath": "learning/hardware-selection-v001.json",
+        "recordSha256": "f6b3f32cff1a6e7a0396353960a81087055859e4b399751e4991362b13f4c6dc"
+      }
+    },
+    {
+      "chapterId": "ch12",
+      "challengeId": "ch12-delivery-v001",
+      "title": "整理尺寸鏈、交付與成品渲染",
+      "workspaceLesson": null,
+      "goal": "把小盒名義尺寸、設計變更及後續實測連到來源版本。",
+      "requirements": [
+        "寫出盒口內寬＝外寬−2×側壁；唇邊外寬＝盒口內寬−總間隙。",
+        "分欄記錄名義值、允許偏差、數位讀值、實測、試配及列印條件。",
+        "整理場景、輸出、版本及渲染圖的關聯；未實測欄位留空。"
+      ],
+      "deliverable": "可追溯的尺寸鏈與交付清單，附個人場景及渲染輸出。",
+      "hints": [
+        {
+          "text": "先辨認設計式中的尺寸方向及總間隙。",
+          "section": "12-01"
+        },
+        {
+          "text": "先整理既有實測；若尚未列印就保留空白。",
+          "section": "12-02"
+        },
+        {
+          "text": "重開來源場景、保存並關聯輸出。",
+          "section": "12-05"
+        }
+      ],
+      "checks": [
+        "每次設計變更都能找到來源檔及其尺寸條件。",
+        "不由單一試片或數位外框推定批量能力或實體合格。"
+      ],
+      "limitations": [
+        "實測、補償、總裝及驗收均需實際結果；圖像僅展示外觀。",
+        "本圖僅涵蓋原盒口與唇邊名義尺寸；不能代替完整交付圖或實體量測。"
+      ],
+      "chapterTitle": "尺寸鏈、交付與成品渲染",
+      "sourceSteps": [
+        {
+          "chapterId": "ch12",
+          "sectionId": "12-01",
+          "label": "尺寸鏈"
+        },
+        {
+          "chapterId": "ch12",
+          "sectionId": "12-02",
+          "label": "彙整實測"
+        },
+        {
+          "chapterId": "ch12",
+          "sectionId": "12-03",
+          "label": "設計補償值"
+        },
+        {
+          "chapterId": "ch12",
+          "sectionId": "12-04",
+          "label": "總組裝"
+        },
+        {
+          "chapterId": "ch12",
+          "sectionId": "12-05",
+          "label": "小盒成品渲染"
+        }
+      ],
+      "screenshot": {
+        "path": "learning/evidence/12/2026-10-27-engineering-box-render-v004/12-01-03-render-result.png",
+        "sha256": "f89eed44b64ccc6d363f5388137a473172fe8a2d6ae9494e60c9475d5b89fda4",
+        "caption": "相關教學操作參照，並非本題完整示範：獨立 Blender 原始截圖：原生 Render Image 後的 Render Result 視窗；不是輸出的640×480 PNG。"
+      },
+      "drawing": {
+        "path": "/challenges/lip-clearance-drawing-v001.svg",
+        "title": "原盒唇邊名義尺寸鏈參照圖"
+      },
+      "drawingStatus": "此圖只作原盒與唇邊尺寸鏈參照：56 − 55.6 = 0.4 mm 名義總間隙，置中時理論單側 0.2 mm；不代表完整交付圖、量測或合格。",
+      "evidenceStatus": "題目草案；圖片為既有獨立 Blender 示範參照，並非此題逐步驗證或學員完成。"
+    }
+  ],
+  "previousVersion": {
+    "path": "learning/web/challenges/challenges-v007.json",
+    "sha256": "dca05a09cbca482c426bba3aaa606a1142105f78f68eacda1fc1ac57bdfa6721"
+  }
+}

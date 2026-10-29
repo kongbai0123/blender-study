@@ -1,0 +1,209 @@
+{
+  "schemaVersion": 1,
+  "title": "盒側外牙保護蓋：軸向端隙試驗草案",
+  "sourceScene": "learning/evidence/08/2026-10-28-side-thread-cap-gui-v001/demo-files/u11_side_thread_cap_draft_v001.blend",
+  "sourceSha256": "453f6c4b9682098aaefea5cfb9501a74c70a562f14c5a0215709101b5b71871d",
+  "model": "learning/evidence/08/2026-10-28-side-cap-relief-gui-v001/demo-files/u11_side_thread_cap_draft_v002.blend",
+  "modelSha256": "d4cb9e6467eebff735443daa405c958c459dbe2f04fce8a8e98df5a4b70ee332",
+  "object": "Side_Cap_Blank",
+  "cutter": "A_Relief_Cutter",
+  "unitScaleLength": 0.001,
+  "axis": "X; center Y=Z=0",
+  "method": "Python 預建半徑 5.3 mm、X=34.15–34.5 mm 的 64 邊同軸圓柱；獨立 Blender GUI 指定 Difference/Exact、隱藏刀具、套用並另存重開；檔案欄位由程式填入。此刀具修削末端局部內牙，名義中段螺距仍 1 mm，並非完全無改變。",
+  "nominalParameters": {
+    "radialExpansionMm": 0.2,
+    "nominalDiameterDifferenceMm": 0.4,
+    "nominalPitchMm": 1,
+    "reliefToolRadiusMm": 5.3,
+    "reliefStartXmm": 34.15,
+    "reliefEndXmm": 34.5,
+    "externalThreadEndXmm": 34.3,
+    "capEndXmm": 35.8,
+    "nominalCentralAxialGapMm": 0.2,
+    "nominalCenterEndWallMm": 1.3
+  },
+  "auditPath": "learning/evidence/08/2026-10-28-side-cap-relief-gui-v001/independent-audit-v001.json",
+  "auditSha256": "cd914c21217552aa48915f495b09e95e1958169c6104ac2341b9d4df53e4ff2b",
+  "readback": {
+    "axialRays": [
+      {
+        "y": 0,
+        "z": 0,
+        "bottomX": 34.5,
+        "endGapFromExternalTipMm": 0.20000000000000284
+      },
+      {
+        "y": 2,
+        "z": 0,
+        "bottomX": 34.5,
+        "endGapFromExternalTipMm": 0.20000000000000284
+      },
+      {
+        "y": -2,
+        "z": 0,
+        "bottomX": 34.5,
+        "endGapFromExternalTipMm": 0.20000000000000284
+      },
+      {
+        "y": 0,
+        "z": 2,
+        "bottomX": 34.5,
+        "endGapFromExternalTipMm": 0.20000000000000284
+      },
+      {
+        "y": 0,
+        "z": -2,
+        "bottomX": 34.5,
+        "endGapFromExternalTipMm": 0.20000000000000284
+      },
+      {
+        "y": 4,
+        "z": 0,
+        "bottomX": 34.5,
+        "endGapFromExternalTipMm": 0.20000000000000284
+      },
+      {
+        "y": -4,
+        "z": 0,
+        "bottomX": 34.5,
+        "endGapFromExternalTipMm": 0.20000000000000284
+      },
+      {
+        "y": 0,
+        "z": 4,
+        "bottomX": 34.5,
+        "endGapFromExternalTipMm": 0.20000000000000284
+      },
+      {
+        "y": 0,
+        "z": -4,
+        "bottomX": 34.5,
+        "endGapFromExternalTipMm": 0.20000000000000284
+      }
+    ],
+    "sceneSha256": "d4cb9e6467eebff735443daa405c958c459dbe2f04fce8a8e98df5a4b70ee332",
+    "sourceSha256": "df2108d06250807a9fa593ce966ae09e42d0fc3b2bfad97c98d0c40f77378c54",
+    "object": "Side_Cap_Blank",
+    "construction": "Tool from source mounted outer-thread mesh vertex-wise radial +0.2 mm in YZ; X unchanged; retained mesh and phase. Blank nominal radius 7.7 mm, 64 vertices, phase 2.8125 degrees, X=30.3..35.8 mm; GUI applied second Difference using program-prepared cylindrical relief at X=34.15..34.5, saved and reopened.",
+    "sourceMeshUnchanged": {
+      "Body": true,
+      "Lid": true,
+      "Thread_Core": true
+    },
+    "vertexCount": 937,
+    "faceCount": 515,
+    "boundsMm": [
+      [
+        30.299999237060547,
+        35.79999923706055
+      ],
+      [
+        -7.690725326538086,
+        7.690725326538086
+      ],
+      [
+        -7.690725326538086,
+        7.690725326538086
+      ]
+    ],
+    "nonManifoldEdges": 0,
+    "components": 1,
+    "signedVolumeMm3": 635.9751089861402,
+    "minimumTriangleAreaMm2": 1.3864715747350899e-05,
+    "triangleCountBelow1eMinus5Mm2": 0,
+    "shortestOriginalMeshEdgeMm": 0.01422554523641193,
+    "bvhNonSharedVertexCandidates": 0,
+    "vertexRadialDeltaMinMm": 0.1999989945447611,
+    "vertexRadialDeltaMaxMm": 0.20000035734743715,
+    "vertexAxialDeltaMaxAbsMm": 3.814697265625e-06,
+    "sampleBodyToCapMinMm": 0.1900628498094754,
+    "sampleBodyToCapMaxMm": 0.2000141143798828,
+    "sampleCapToToolMaxAbsMm": 0.009655451367859058,
+    "booleanIntersection": {
+      "vertices": 0,
+      "faces": 0,
+      "volumeMm3": 0
+    },
+    "limitations": [
+      "Nonzero δ is nominal vertex radial increase, not proven uniform normal clearance or physical fit.",
+      "9 axial slices × 24 angles and one static exact Boolean intersection cannot rule out all geometric interference, rotation path collision, or manufacturing issues.",
+      "1e-5 mm² is diagnostic only; a minimum above it does not imply no slender facets.",
+      "Material, standard, manufacturing, printing, measurement, clearance approval and fit remain undetermined."
+    ]
+  },
+  "motionPath": "learning/evidence/08/2026-10-28-side-cap-relief-gui-v001/motion-probe-v001.json",
+  "motionSha256": "bb4d34b38770d61426245b12b4c71d65160096a1775baa090c4a3f38a0976fa5",
+  "midsectionComparisonPath": "learning/evidence/08/2026-10-28-side-cap-relief-gui-v001/midsection-compare-v001.json",
+  "midsectionComparisonSha256": "50be0fb0be6e47c47e1d819d48a58df4e8f90bdea1e06b209e90b9c7225e6a4d",
+  "evidence": [
+    {
+      "sequence": 1,
+      "action": "程式在 v001 帽內預建端面 relief 圓柱刀具",
+      "image": "learning/evidence/08/2026-10-28-side-cap-relief-gui-v001/REL-01-prepared.png",
+      "sha256": "2bf26681194cbf075e227534722f733805a5c9d0fa9e1a5c8e4e14b554f55ee4"
+    },
+    {
+      "sequence": 2,
+      "action": "GUI 嘗試指定 Boolean 刀具、先讀回",
+      "image": "learning/evidence/08/2026-10-28-side-cap-relief-gui-v001/REL-02-operand-probe.png",
+      "sha256": "22711c041f2de6731450dc71058f7f225efc4eeba0d3249a015275d3428a05c6"
+    },
+    {
+      "sequence": 3,
+      "action": "GUI 確認 Difference / Exact 和端隙刀具",
+      "image": "learning/evidence/08/2026-10-28-side-cap-relief-gui-v001/REL-03-difference-preview.png",
+      "sha256": "22711c041f2de6731450dc71058f7f225efc4eeba0d3249a015275d3428a05c6"
+    },
+    {
+      "sequence": 4,
+      "action": "GUI 隱藏刀具",
+      "image": "learning/evidence/08/2026-10-28-side-cap-relief-gui-v001/REL-04-cutter-hidden.png",
+      "sha256": "cd7c1398a78dff084b62c6b09da13e1d43735ea979258f0b47f2d38e77f74f53"
+    },
+    {
+      "sequence": 5,
+      "action": "GUI 套用差集，讀回中心內底",
+      "image": "learning/evidence/08/2026-10-28-side-cap-relief-gui-v001/REL-05-difference.png",
+      "sha256": "5c428da67a9560f22f397cf75f9db4a8c4f8017866a56cdd4e65f27208033637"
+    },
+    {
+      "sequence": 6,
+      "action": "GUI 另存新檔；路徑與檔名由程式填寫",
+      "image": "learning/evidence/08/2026-10-28-side-cap-relief-gui-v001/REL-06-saved.png",
+      "sha256": "04e1cf9ed1b51e244b9b1d9bef51562870720cfa2ca3ed243573aec47044727d"
+    },
+    {
+      "sequence": 7,
+      "action": "GUI 重開並再次讀回",
+      "image": "learning/evidence/08/2026-10-28-side-cap-relief-gui-v001/REL-07-reopened.png",
+      "sha256": "8db5e797a50ebf5482c3bede9366bd5c062d692289dec1701d6991a31d8ace14"
+    },
+    {
+      "sequence": 8,
+      "action": "GUI 暫時隱藏盒體和上蓋，從 −X 查看開口",
+      "image": "learning/evidence/08/2026-10-28-side-cap-relief-inspect-v001/RELV-01-opening.png",
+      "sha256": "d13699bbb3283df9d9cac70aae3613347a855b8e8380a942b7982a8b3d833d08"
+    },
+    {
+      "sequence": 9,
+      "action": "GUI 旋轉角度看局部內牙",
+      "image": "learning/evidence/08/2026-10-28-side-cap-relief-inspect-v001/RELV-02-interior.png",
+      "sha256": "032da2ea8dd60433c1e6a9f1e92d4832d7e1b442c0cf7f95228ca61fd7726edf"
+    }
+  ],
+  "limitations": [
+    "這是盒側保護蓋，既有平面上蓋保留，非螺旋頂蓋。",
+    "軸向端隙 0.2 mm、徑向加 0.2 / 名義直徑差 0.4 mm 都是試驗值，非正式合格公差。",
+    "端面九個軸向射線顯示 X=34.5，這些只覆蓋有限位置；端面直徑內其他局部、實際變形與試配尚未核對。",
+    "relief 僅在 X=34.15–34.5 做差集，會局部修削末端牙；與 v001 的 216 個內壁對應射線比較，41 個差超過 0.0001 mm，最大約 0.00852 mm，可能涉及重三角化，不能宣稱中段網格完全不變。",
+    "正向向外離散 11 姿態布林交集為空，不代表連續旋轉、真實旋合或無自交；反向向外部分姿態有交集。",
+    "最小三角面積約 1.386e-5 mm²；1e-5 的篩選門檻並非合格標準，不能稱無細長面。",
+    "非 ISO 牙型、端牙截斷，材料、製程、列印、量測、試配與強度待定。"
+  ],
+  "material": null,
+  "physicalPrint": null,
+  "physicalMeasurement": null,
+  "physicalFit": null,
+  "qualifiedClearance": null,
+  "qualifiedStrength": null
+}

@@ -1,0 +1,70 @@
+{
+  "newSceneSha256": "f2e6646b9ad27f0f4912c8c14cb4cc664f44700bb6a376fe0df46fad63844efc",
+  "sourceSceneSha256": "d4cb9e6467eebff735443daa405c958c459dbe2f04fce8a8e98df5a4b70ee332",
+  "object": "Side_Cap_Blank",
+  "source": {
+    "vertices": 937,
+    "faces": 515,
+    "triangles": 1870,
+    "exactDuplicateTrianglesByIndices": 2,
+    "components": 1,
+    "boundaryEdges": 0,
+    "nonManifoldEdges": 0,
+    "nonAdjacentBvhCandidates": 0,
+    "worldBoundsMm": [
+      [
+        30.299999237060547,
+        35.79999923706055
+      ],
+      [
+        -7.690725326538086,
+        7.690725326538086
+      ],
+      [
+        -7.690725326538086,
+        7.690725326538086
+      ]
+    ],
+    "signedVolumeMm3": 635.9751089861402
+  },
+  "triangulated": {
+    "vertices": 937,
+    "faces": 1870,
+    "triangles": 1870,
+    "exactDuplicateTrianglesByIndices": 0,
+    "components": 1,
+    "boundaryEdges": 0,
+    "nonManifoldEdges": 0,
+    "nonAdjacentBvhCandidates": 0,
+    "worldBoundsMm": [
+      [
+        30.299999237060547,
+        35.79999923706055
+      ],
+      [
+        -7.690725326538086,
+        7.690725326538086
+      ],
+      [
+        -7.690725326538086,
+        7.690725326538086
+      ]
+    ],
+    "signedVolumeMm3": 635.8132877215129
+  },
+  "newToSource": {
+    "sampleCount": 2807,
+    "maxMm": 0.0019502900540828705,
+    "meanMm": 0.00019215399668864769
+  },
+  "sourceToNew": {
+    "sampleCount": 2807,
+    "maxMm": 0.0016181599348783493,
+    "meanMm": 0.00020223556498891927
+  },
+  "limitations": [
+    "Non-planar polygons can change shape with triangulation; source not overwritten.",
+    "Sampled maximum is not a global surface deviation bound or proof of fit; zero BVH candidates is not proof of no intersection.",
+    "No print, dimensional measurement, fit or strength qualification."
+  ]
+}

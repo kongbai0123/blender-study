@@ -1,0 +1,92 @@
+{
+  "checks": {
+    "bodyMeshUnchanged": true,
+    "lidMeshUnchanged": true,
+    "bodyPositionUnchanged": true,
+    "lidRaised18": true,
+    "lidOtherTransformsSame": true,
+    "relativeOutputSaved": true,
+    "outputRelativeToBlend": true
+  },
+  "source": {
+    "Body": {
+      "mesh": "9c0e6c69a2d1a5fd54cf8158e7c25938b5c60f490502b0ab5bc07ffe13638066",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "Lid": {
+      "mesh": "9a4d40e779b5f0c93eee204537bfc9ba3d2028a7625b60db29d7b6df4e12d887",
+      "location": [
+        0.0,
+        0.0,
+        16.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "outputPath": "/tmp\\",
+    "resolvedOutput": "/tmp\\"
+  },
+  "renderScene": {
+    "Body": {
+      "mesh": "9c0e6c69a2d1a5fd54cf8158e7c25938b5c60f490502b0ab5bc07ffe13638066",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "Lid": {
+      "mesh": "9a4d40e779b5f0c93eee204537bfc9ba3d2028a7625b60db29d7b6df4e12d887",
+      "location": [
+        0.0,
+        0.0,
+        34.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "outputPath": "//render_output\\box_lid",
+    "resolvedOutput": "D:\\others\\study\\Blender-Learning\\learning\\evidence\\12\\2026-10-27-engineering-box-render-v004\\demo-files\\render_output\\box_lid"
+  },
+  "method": "independent Blender mesh, transform and output path readback, no save"
+}

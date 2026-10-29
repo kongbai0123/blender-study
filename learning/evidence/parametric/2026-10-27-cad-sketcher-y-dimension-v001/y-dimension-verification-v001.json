@@ -1,0 +1,518 @@
+{
+  "schemaVersion": 1,
+  "id": "cad-sketcher-y-dimension-verification-v001",
+  "method": {
+    "startingScene": "prior v004 program-generated meshes and vertex drivers; not manual construction",
+    "sketchEdits": "native simulated Blender GUI on second Distance field",
+    "addonAndFileDialog": "extension bootstrap and file-dialog path populated programmatically, confirmation by native event",
+    "physicalFit": "not performed"
+  },
+  "blenderVersion": "5.2.1 LTS",
+  "cadSketcherVersion": "0.32.1",
+  "runner": {
+    "status": "completed",
+    "exitCode": 0,
+    "workspaceEndpointComparisonUnchanged": true
+  },
+  "source": {
+    "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-parametric-box-v004/demo-files/parametric_box_80x40_v003.blend",
+    "sha256": "a86cef672d274522c4461433e96c45e26c9da37efe116ecb53472dc3dca143c2"
+  },
+  "cases": [
+    {
+      "label": "changed-80x50",
+      "constraints": {
+        "b596b36138076155": 80.0,
+        "854e8777cfe2608d": 50.0
+      },
+      "solver": "OKAY",
+      "dof": 0,
+      "boxBounds": [
+        [
+          0.0,
+          80.0
+        ],
+        [
+          0.0,
+          50.0
+        ],
+        [
+          0.0,
+          30.0
+        ]
+      ],
+      "lidBounds": [
+        [
+          0.0,
+          80.0
+        ],
+        [
+          0.0,
+          50.0
+        ],
+        [
+          26.0,
+          32.0
+        ]
+      ],
+      "cavityBoundsXY": [
+        [
+          2.0,
+          78.0
+        ],
+        [
+          2.0,
+          48.0
+        ]
+      ],
+      "lipOuterBoundsXY": [
+        [
+          2.200000047683716,
+          77.80000305175781
+        ],
+        [
+          2.200000047683716,
+          47.79999923706055
+        ]
+      ],
+      "sideGapsXY": [
+        [
+          0.20000004768371582,
+          0.1999969482421875
+        ],
+        [
+          0.20000004768371582,
+          0.20000076293945312
+        ]
+      ],
+      "checksPassed": 12,
+      "verificationPath": "learning/evidence/parametric/2026-10-27-cad-sketcher-y-dimension-v001/changed-80x50-verification.json"
+    },
+    {
+      "label": "opened-80x40",
+      "constraints": {
+        "b596b36138076155": 80.0,
+        "854e8777cfe2608d": 40.0
+      },
+      "solver": "OKAY",
+      "dof": 0,
+      "boxBounds": [
+        [
+          0.0,
+          80.0
+        ],
+        [
+          0.0,
+          40.0
+        ],
+        [
+          0.0,
+          30.0
+        ]
+      ],
+      "lidBounds": [
+        [
+          0.0,
+          80.0
+        ],
+        [
+          0.0,
+          40.0
+        ],
+        [
+          26.0,
+          32.0
+        ]
+      ],
+      "cavityBoundsXY": [
+        [
+          2.0,
+          78.0
+        ],
+        [
+          2.0,
+          38.0
+        ]
+      ],
+      "lipOuterBoundsXY": [
+        [
+          2.200000047683716,
+          77.80000305175781
+        ],
+        [
+          2.200000047683716,
+          37.79999923706055
+        ]
+      ],
+      "sideGapsXY": [
+        [
+          0.20000004768371582,
+          0.1999969482421875
+        ],
+        [
+          0.20000004768371582,
+          0.20000076293945312
+        ]
+      ],
+      "checksPassed": 12,
+      "verificationPath": "learning/evidence/parametric/2026-10-27-cad-sketcher-y-dimension-v001/opened-80x40-verification.json"
+    },
+    {
+      "label": "reopened-80x50",
+      "constraints": {
+        "b596b36138076155": 80.0,
+        "854e8777cfe2608d": 50.0
+      },
+      "solver": "OKAY",
+      "dof": 0,
+      "boxBounds": [
+        [
+          0.0,
+          80.0
+        ],
+        [
+          0.0,
+          50.0
+        ],
+        [
+          0.0,
+          30.0
+        ]
+      ],
+      "lidBounds": [
+        [
+          0.0,
+          80.0
+        ],
+        [
+          0.0,
+          50.0
+        ],
+        [
+          26.0,
+          32.0
+        ]
+      ],
+      "cavityBoundsXY": [
+        [
+          2.0,
+          78.0
+        ],
+        [
+          2.0,
+          48.0
+        ]
+      ],
+      "lipOuterBoundsXY": [
+        [
+          2.200000047683716,
+          77.80000305175781
+        ],
+        [
+          2.200000047683716,
+          47.79999923706055
+        ]
+      ],
+      "sideGapsXY": [
+        [
+          0.20000004768371582,
+          0.1999969482421875
+        ],
+        [
+          0.20000004768371582,
+          0.20000076293945312
+        ]
+      ],
+      "checksPassed": 12,
+      "verificationPath": "learning/evidence/parametric/2026-10-27-cad-sketcher-y-dimension-v001/reopened-80x50-verification.json"
+    },
+    {
+      "label": "reopened-changed-80x45",
+      "constraints": {
+        "b596b36138076155": 80.0,
+        "854e8777cfe2608d": 45.0
+      },
+      "solver": "OKAY",
+      "dof": 0,
+      "boxBounds": [
+        [
+          0.0,
+          80.0
+        ],
+        [
+          0.0,
+          45.0
+        ],
+        [
+          0.0,
+          30.0
+        ]
+      ],
+      "lidBounds": [
+        [
+          0.0,
+          80.0
+        ],
+        [
+          0.0,
+          45.0
+        ],
+        [
+          26.0,
+          32.0
+        ]
+      ],
+      "cavityBoundsXY": [
+        [
+          2.0,
+          78.0
+        ],
+        [
+          2.0,
+          43.0
+        ]
+      ],
+      "lipOuterBoundsXY": [
+        [
+          2.200000047683716,
+          77.80000305175781
+        ],
+        [
+          2.200000047683716,
+          42.79999923706055
+        ]
+      ],
+      "sideGapsXY": [
+        [
+          0.20000004768371582,
+          0.1999969482421875
+        ],
+        [
+          0.20000004768371582,
+          0.20000076293945312
+        ]
+      ],
+      "checksPassed": 12,
+      "verificationPath": "learning/evidence/parametric/2026-10-27-cad-sketcher-y-dimension-v001/reopened-changed-80x45-verification.json"
+    },
+    {
+      "label": "saved-80x45",
+      "constraints": {
+        "b596b36138076155": 80.0,
+        "854e8777cfe2608d": 45.0
+      },
+      "solver": "OKAY",
+      "dof": 0,
+      "boxBounds": [
+        [
+          0.0,
+          80.0
+        ],
+        [
+          0.0,
+          45.0
+        ],
+        [
+          0.0,
+          30.0
+        ]
+      ],
+      "lidBounds": [
+        [
+          0.0,
+          80.0
+        ],
+        [
+          0.0,
+          45.0
+        ],
+        [
+          26.0,
+          32.0
+        ]
+      ],
+      "cavityBoundsXY": [
+        [
+          2.0,
+          78.0
+        ],
+        [
+          2.0,
+          43.0
+        ]
+      ],
+      "lipOuterBoundsXY": [
+        [
+          2.200000047683716,
+          77.80000305175781
+        ],
+        [
+          2.200000047683716,
+          42.79999923706055
+        ]
+      ],
+      "sideGapsXY": [
+        [
+          0.20000004768371582,
+          0.1999969482421875
+        ],
+        [
+          0.20000004768371582,
+          0.20000076293945312
+        ]
+      ],
+      "checksPassed": 12,
+      "verificationPath": "learning/evidence/parametric/2026-10-27-cad-sketcher-y-dimension-v001/saved-80x45-verification.json"
+    },
+    {
+      "label": "saved-80x50",
+      "constraints": {
+        "b596b36138076155": 80.0,
+        "854e8777cfe2608d": 50.0
+      },
+      "solver": "OKAY",
+      "dof": 0,
+      "boxBounds": [
+        [
+          0.0,
+          80.0
+        ],
+        [
+          0.0,
+          50.0
+        ],
+        [
+          0.0,
+          30.0
+        ]
+      ],
+      "lidBounds": [
+        [
+          0.0,
+          80.0
+        ],
+        [
+          0.0,
+          50.0
+        ],
+        [
+          26.0,
+          32.0
+        ]
+      ],
+      "cavityBoundsXY": [
+        [
+          2.0,
+          78.0
+        ],
+        [
+          2.0,
+          48.0
+        ]
+      ],
+      "lipOuterBoundsXY": [
+        [
+          2.200000047683716,
+          77.80000305175781
+        ],
+        [
+          2.200000047683716,
+          47.79999923706055
+        ]
+      ],
+      "sideGapsXY": [
+        [
+          0.20000004768371582,
+          0.1999969482421875
+        ],
+        [
+          0.20000004768371582,
+          0.20000076293945312
+        ]
+      ],
+      "checksPassed": 12,
+      "verificationPath": "learning/evidence/parametric/2026-10-27-cad-sketcher-y-dimension-v001/saved-80x50-verification.json"
+    }
+  ],
+  "files": [
+    {
+      "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-y-dimension-v001/CAD-Y-01-opened-80x40.png",
+      "sha256": "53d7b4073d8bf4659496bd8fc213184fb335a94c277d05f3e7d566ce4c548fcc",
+      "bytes": 180693
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-y-dimension-v001/CAD-Y-02-changed-80x50.png",
+      "sha256": "e07bbfe8640a2a56f0d903d8861cff1254e67044e69af95b3d0e50d032fd7913",
+      "bytes": 174037
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-y-dimension-v001/CAD-Y-03-saved-80x50.png",
+      "sha256": "746eebbaf3cd7b63563c80c5e25836133b9f179aa6b03c65be1bcbf2ebc227ce",
+      "bytes": 179045
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-y-dimension-v001/CAD-Y-04-reopened-80x50.png",
+      "sha256": "ab5d2a09d5b580e8e612263fc5e8aa7d73f3cc9048fb3acfbc40cceddd6e13b4",
+      "bytes": 180755
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-y-dimension-v001/CAD-Y-05-reopened-changed-80x45.png",
+      "sha256": "c4b6fd33111449e44f061c9a6c836756301db294782376b1f051175c0f3851c2",
+      "bytes": 174059
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-y-dimension-v001/CAD-Y-06-saved-80x45.png",
+      "sha256": "4119b508504f89b1b13894777f54c411906597b9f94d90d6bf4f4fca497fa71e",
+      "bytes": 179274
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-y-dimension-v001/changed-80x50-verification.json",
+      "sha256": "fb204f30aa03aea9c464e1e0ee4610d97fc143bef4c4ba5f62140a28e526aeb7",
+      "bytes": 4786
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-y-dimension-v001/opened-80x40-verification.json",
+      "sha256": "b753428d9aede2bd033145245e6a98375b68bc0d5cbcbc65c43e4972ef174cc6",
+      "bytes": 4786
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-y-dimension-v001/reopened-80x50-verification.json",
+      "sha256": "56be28fc6bbf7e7cd370d64b6022579bb82fdd4232b2c45e79f2e28640b6a302",
+      "bytes": 4787
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-y-dimension-v001/reopened-changed-80x45-verification.json",
+      "sha256": "d8015b5c72c4dfc63938518faeef77979e9423d4c91bf4d6ed9b95c8b012345e",
+      "bytes": 4796
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-y-dimension-v001/saved-80x45-verification.json",
+      "sha256": "fb016f693ffe44ef032cbfa4e429de6532cc4d9f6e8054fb4078b5a83f1fe53e",
+      "bytes": 4785
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-y-dimension-v001/saved-80x50-verification.json",
+      "sha256": "c14c4b4899ec7d26845103ef5e067f73820c6807df0a9c910f453b9deb5e574f",
+      "bytes": 4784
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-y-dimension-v001/demo-files/parametric_box_80x45_y_v002.blend",
+      "sha256": "7c7474156869de6b169be6eea8764be000c626b43021e51399889b1b0b591477",
+      "bytes": 118747
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-y-dimension-v001/demo-files/parametric_box_80x50_y_v001.blend",
+      "sha256": "ddccdbec04f61cb9017c40d3df0c6cdfe6b474c5e851f5c6759a6f8bece773d4",
+      "bytes": 118704
+    }
+  ],
+  "limitations": [
+    "The previous box geometry and drivers were built by program, not manually created in this Y trial.",
+    "Only these specified Y changes were GUI tested; no general arbitrary-dimensions guarantee.",
+    "Digital length comparison is 1e-4 mm, not manufacturing tolerance.",
+    "The modeled 0.4 mm total gap is experimental, physical print and fit not tested."
+  ],
+  "physicalMeasurements": null,
+  "fitResults": null,
+  "qualifiedClearanceMm": null
+}

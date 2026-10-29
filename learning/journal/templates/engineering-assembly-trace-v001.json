@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "title": "零件與版本關聯空白紀錄",
+  "status": "template_no_assembly_performed",
+  "instruction": "按同一設計分支記來源場景、匯出檔及其 SHA-256；取得相容實物後才記裝配結果。盒側外牙帽、四柱平面蓋、燕尾與卡扣是不同分支，不可直接混搭。",
+  "parts": [
+    {"partRole": null, "designBranch": null, "sourceBlendPath": null, "sourceBlendSha256": null, "sourceObject": null, "exportPath": null, "exportSha256": null, "exportFormatAndUnitAssumption": null, "versionRegistered": null}
+  ],
+  "assembly": {"compatiblePartsVerified": null, "physicalAssemblyDate": null, "observedOperation": null, "measurementAndFitNotes": null, "result": null},
+  "limitations": ["這是空白表，沒有宣稱已列印、已試組或配合合格。", "STL 不含單位標記；匯出及重新匯入須另行核對。"]
+}

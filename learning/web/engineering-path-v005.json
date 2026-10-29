@@ -1,0 +1,821 @@
+{
+  "schemaVersion": 1,
+  "id": "engineering-path-v003",
+  "title": "小盒工程學習路徑",
+  "version": "v005 · 2026-10-28",
+  "intro": "先學基本操作與毫米建模，做出原盒與上蓋並渲染第一張圖；接著印試片、量測並選定自己的配合間隙，再進入草圖與參數連動。每章分節，節底下是一次做一小步的操作。原9單元52步保留可回查；閱讀不等於完成。",
+  "baseline": {
+    "summary": "沿用原盒與05-05環形唇邊上蓋，另建參數式版本。以下是既有數位幾何參照，實體結果尚無資料。",
+    "dimensions": [
+      {
+        "label": "盒體外形",
+        "value": "60 × 40 × 30 mm"
+      },
+      {
+        "label": "內腔",
+        "value": "56 × 36 × 28 mm"
+      },
+      {
+        "label": "側壁／底厚",
+        "value": "各 2 mm，參數式版本分開定義"
+      },
+      {
+        "label": "蓋板",
+        "value": "60 × 40 × 2 mm"
+      },
+      {
+        "label": "唇邊",
+        "value": "外形 55.6 × 35.6 mm；環壁 2 mm、深 4 mm"
+      },
+      {
+        "label": "XY 名義總間隙",
+        "value": "0.4 mm；置中時每側 0.2 mm，僅供試驗"
+      }
+    ],
+    "limitations": [
+      "0.1～0.6 mm 與 0.4 mm 都是試驗間隙，沒有合格值。",
+      "已知噴嘴 0.4 mm；材料、實際線寬、列印與試配結果維持待定。",
+      "數位讀值、學員理解及實體合格分開記錄。"
+    ],
+    "sourceScene": {
+      "path": "learning/evidence/05/2026-10-22-lesson05-lid-demo-v001/demo-files/u05_lid_v001.blend",
+      "sha256": "ab08f331dcb26c5ffc6c6ca56c7c7f022df96791c4777e37c5f01a964fbed6ff"
+    }
+  },
+  "learningPolicy": [
+    "每回合一個小目標、約1～3個操作；先交代模式、選取及輸入位置。",
+    "首次功能說明用途與結果，重複使用採快捷流程；常規路徑保留查閱。",
+    "原教材完成、筆記與檔案登記仍使用同一份 progress.json；閱讀本路徑不自動確認任何步驟。",
+    "新版小步的確認與筆記用本頁表單或 manage.py engineering-confirm／engineering-note 記錄；不能代替原教材步驟完成。",
+    "只使用實際 Blender 截圖；新示範使用獨立環境與新版本資料夾。"
+  ],
+  "chapters": [
+    {
+      "id": "ch01",
+      "number": "01",
+      "title": "基本操作與小盒用途",
+      "goal": "先學會開啟、檢視、選取、精確變換與可靠存檔，最後看懂要做的小盒由哪些部分組成。",
+      "practice": [
+        "開啟 Blender、確認畫面並切換英文介面。",
+        "練習選取、視角、精確移動與 Dimensions，另存 v001／v002 並重開。",
+        "最後看示範原圖，辨認蓋板、唇邊與配合的兩個表面。"
+      ],
+      "functions": [
+        "Outliner選取與作用中物件",
+        "視角對焦、側欄讀值",
+        "接觸面與基準的辨認"
+      ],
+      "shortcuts": [
+        {
+          "keys": "Numpad .",
+          "context": "3D Viewport，已選正確物件",
+          "effect": "對焦選取物件，不移動幾何。",
+          "status": "沿用既有快捷註記；詳細證據見參考步驟"
+        },
+        {
+          "keys": "N；F2",
+          "context": "Object Mode、3D Viewport；沒有編輯中的文字欄位",
+          "effect": "按需顯示側欄；F2命名作用中物件。",
+          "status": "沿用既有快捷註記；詳細證據見參考步驟"
+        }
+      ],
+      "references": [
+        {
+          "lessonId": "01",
+          "stepId": "01-04",
+          "label": "第一次另存"
+        },
+        {
+          "lessonId": "01",
+          "stepId": "01-05",
+          "label": "選取與模式"
+        },
+        {
+          "lessonId": "01",
+          "stepId": "01-06",
+          "label": "視角與找回物件"
+        },
+        {
+          "lessonId": "01",
+          "stepId": "01-07",
+          "label": "精確變換"
+        },
+        {
+          "lessonId": "01",
+          "stepId": "01-08",
+          "label": "側欄與尺寸"
+        },
+        {
+          "lessonId": "05",
+          "stepId": "05-05",
+          "label": "既有盒體與唇邊原圖"
+        }
+      ],
+      "deliverable": "已登記的 u01_basics_v001／v002 練習檔，以及蓋板、唇邊與配合表面的辨認紀錄。",
+      "availability": "digital_lessons_and_field_protocols_ready",
+      "notes": [
+        "先學操作，再看要做的小盒；兩題觀察放在章末。",
+        "建模原點與零件的功能基準需要另外對應，不能自動視為相同。"
+      ],
+      "availabilityLabel": "操作教材與目標零件題圖已備妥"
+    },
+    {
+      "id": "ch02",
+      "number": "02",
+      "title": "公差、間隙與量測觀念",
+      "goal": "區分名義尺寸、允許偏差、設計間隙與實測尺寸。",
+      "practice": [
+        "比較56 mm內腔與55.6 mm唇邊：名義總間隙0.4 mm，置中每側0.2 mm。",
+        "從簡單的最小內尺寸減最大外尺寸理解最小間隙；允許尺寸上下限尚未指定。",
+        "安排卡尺歸零、量測位置、同件重複量測及不同件比較；沒有實物時留空。"
+      ],
+      "functions": [
+        "Dimensions與幾何讀值",
+        "量測工具、單位與顯示精度",
+        "量具解析度、量測方法與量測紀錄"
+      ],
+      "shortcuts": [
+        {
+          "keys": "N",
+          "context": "Object Mode，作用中物件已核對",
+          "effect": "讀Dimensions與Scale；不把物件外框當所有局部尺寸。",
+          "status": "沿用既有快捷註記；詳細證據見參考步驟"
+        }
+      ],
+      "references": [
+        {
+          "lessonId": "01",
+          "stepId": "01-08",
+          "label": "Dimensions與Scale"
+        },
+        {
+          "lessonId": "02",
+          "stepId": "02-06",
+          "label": "毫米尺寸"
+        },
+        {
+          "lessonId": "05",
+          "stepId": "05-01",
+          "label": "配合名詞"
+        },
+        {
+          "lessonId": "05",
+          "stepId": "05-05",
+          "label": "唇邊尺寸"
+        }
+      ],
+      "deliverable": "設計值／允許偏差／數位讀值／實測值分欄的量測計畫。",
+      "availability": "digital_lessons_and_field_protocols_ready",
+      "notes": [
+        "畫面小數位數、浮點誤差門檻、量具解析度與製造公差是不同概念。",
+        "先教可觀察的差異，完整尺寸鏈留第 12 章。"
+      ],
+      "availabilityLabel": "公差觀念與空白量測紀錄已備妥"
+    },
+    {
+      "id": "ch03",
+      "number": "03",
+      "title": "毫米建模與必要編輯",
+      "goal": "先用訊號站與毫米方塊熟悉新增、命名與尺寸，再學 Edit Mode 的選取、移動、內插與擠出，最後做出原盒與固定尺寸上蓋。",
+      "practice": [
+        "訊號站：新增物件、尺寸、位置與命名。",
+        "毫米方塊與 Edit Mode 基礎：點／邊／面選取、G、I、E、H 與底部視角。",
+        "原盒 60 × 40 × 30 mm，以及固定尺寸上蓋與環形唇邊。"
+      ],
+      "functions": [
+        "毫米單位設定",
+        "點／邊／面選取",
+        "Transform、Inset、Extrude、Solidify 與 Apply Scale"
+      ],
+      "shortcuts": [
+        {
+          "keys": "Tab；上排1／2／3",
+          "context": "作用中網格；Emulate Numpad關閉",
+          "effect": "切換Object/Edit Mode；Edit Mode選點、邊、面。",
+          "status": "沿用既有快捷註記；詳細證據見參考步驟"
+        },
+        {
+          "keys": "G／R／S → 軸向 → 數值",
+          "context": "3D Viewport、先核對座標系及起始狀態",
+          "effect": "移動、旋轉或縮放；G是相對位移，S是比例。",
+          "status": "沿用既有快捷註記；詳細證據見參考步驟"
+        },
+        {
+          "keys": "I；E",
+          "context": "網格Edit Mode，只選指定面",
+          "effect": "內插與沿面法向擠出；毫米數值與正負另核。",
+          "status": "沿用既有快捷註記；詳細證據見參考步驟"
+        },
+        {
+          "keys": "Ctrl+A → Scale",
+          "context": "Object Mode，已選練習物件",
+          "effect": "Apply Scale後確認Scale為1、Dimensions不變。",
+          "status": "沿用既有快捷註記；詳細證據見參考步驟"
+        }
+      ],
+      "references": [
+        {
+          "lessonId": "02",
+          "stepId": "02-05",
+          "label": "毫米工作檔"
+        },
+        {
+          "lessonId": "04",
+          "stepId": "04-03",
+          "label": "Apply Scale"
+        },
+        {
+          "lessonId": "04",
+          "stepId": "04-05",
+          "label": "壁厚"
+        },
+        {
+          "lessonId": "05",
+          "stepId": "05-05",
+          "label": "內插與擠出"
+        },
+        {
+          "lessonId": "02",
+          "stepId": "02-04",
+          "label": "F2命名與整理"
+        }
+      ],
+      "deliverable": "已登記的訊號站、毫米方塊、原盒 u04_box_v001 與上蓋 u05_lid_v001 檢查點。",
+      "availability": "digital_lessons_and_field_protocols_ready",
+      "notes": [
+        "Object Mode 的 I 會插入關鍵影格，不能當 Inset；內插要先進 Edit Mode。",
+        "Edit Mode 基礎一節沒有示範原圖，依介面名稱操作，畫面不同先回報。"
+      ],
+      "availabilityLabel": "毫米盒蓋與編輯模式已有實拍"
+    },
+    {
+      "id": "ch04",
+      "number": "04",
+      "title": "訊號站材質、燈光與渲染",
+      "goal": "用第 03 章做好的訊號站學相機、燈光、材質與第一次渲染，並能重開場景重現同一張圖。",
+      "practice": [
+        "用第 03 章的訊號站安排相機、燈光與材質。",
+        "輸出第一張圖，重開場景再渲染一次。"
+      ],
+      "functions": [
+        "材質、燈光、相機",
+        "組裝與分離呈現",
+        "Render Image與輸出版本"
+      ],
+      "shortcuts": [
+        {
+          "keys": "Numpad 0",
+          "context": "3D Viewport，已有正確作用中相機",
+          "effect": "切換相機取景。",
+          "status": "沿用既有快捷註記；詳細證據見參考步驟"
+        },
+        {
+          "keys": "G／R；F12",
+          "context": "Object Mode調整相機；渲染前核對場景與輸出",
+          "effect": "調整取景並渲染當前影格。",
+          "status": "沿用既有快捷註記；詳細證據見參考步驟"
+        }
+      ],
+      "references": [
+        {
+          "lessonId": "03",
+          "stepId": "03-02",
+          "label": "相機"
+        },
+        {
+          "lessonId": "03",
+          "stepId": "03-03",
+          "label": "燈光"
+        },
+        {
+          "lessonId": "03",
+          "stepId": "03-04",
+          "label": "材質"
+        },
+        {
+          "lessonId": "03",
+          "stepId": "03-05",
+          "label": "第一次渲染"
+        },
+        {
+          "lessonId": "03",
+          "stepId": "03-06",
+          "label": "重開重現"
+        }
+      ],
+      "deliverable": "已登記的 u03_render_v001.blend、第一張渲染圖與重做圖。",
+      "availability": "digital_lessons_and_field_protocols_ready",
+      "notes": [
+        "原課程第三單元；放在建模之後，及早看到完整成果。",
+        "小盒成品渲染在第 12 章。"
+      ],
+      "availabilityLabel": "材質、渲染示範與實際場景題圖已備妥"
+    },
+    {
+      "id": "ch05",
+      "number": "05",
+      "title": "配合試片與試驗設計",
+      "goal": "做出方形插銷與六孔試驗孔板，用 0.1～0.6 mm 六個總間隙試驗點找出適合自己印表機的配合。",
+      "practice": [
+        "延用插銷與孔板0.1～0.6 mm總間隙試驗點；建立識別、固定條件與重複件計畫。",
+        "比較單一插銷、孔板與完整環形唇邊的接觸範圍，記錄推論限制。",
+        "新試片版另處理舊凹點薄肉的辨識風險，保留原版。"
+      ],
+      "functions": [
+        "複製、Array、Boolean",
+        "參數變體與版本識別",
+        "試驗條件與量測表"
+      ],
+      "shortcuts": [
+        {
+          "keys": "Shift+D；F2",
+          "context": "Object Mode，已選指定試片或切割體",
+          "effect": "複製並命名，位移與獨立變體另核。",
+          "status": "沿用既有快捷註記；詳細證據見參考步驟"
+        },
+        {
+          "keys": "Array／參數變體",
+          "context": "修改器或參數控制區",
+          "effect": "重複規律幾何優先評估陣列；不同間隙需明確分別指定。",
+          "status": "新版陣列流程待實作"
+        }
+      ],
+      "references": [
+        {
+          "lessonId": "05",
+          "stepId": "05-02",
+          "label": "插銷"
+        },
+        {
+          "lessonId": "05",
+          "stepId": "05-03",
+          "label": "孔板及試驗點"
+        },
+        {
+          "lessonId": "05",
+          "stepId": "05-04",
+          "label": "試片匯出"
+        },
+        {
+          "lessonId": "02",
+          "stepId": "02-04",
+          "label": "F2命名與整理"
+        }
+      ],
+      "deliverable": "已登記的插銷與孔板 .blend；孔板有 1～6 點凹點辨識。",
+      "availability": "digital_lessons_and_field_protocols_ready",
+      "notes": [
+        "0.1～0.6 mm不是已驗證的合格範圍。",
+        "舊凹點間薄肉約0.4 mm，需另核切片與辨識，不能等同已印失敗。"
+      ],
+      "availabilityLabel": "六孔試片已有幾何與讀值；實體結果空白"
+    },
+    {
+      "id": "ch06",
+      "number": "06",
+      "title": "匯出、列印、量測與試配",
+      "goal": "把原盒與試片匯出、列印並量測，逐孔試配後選定自己的總間隙，作為第 08 章上蓋設計的依據。",
+      "practice": [
+        "匯出原盒、插銷、孔板與上蓋 STL，重新匯入核對尺寸。",
+        "列印試片、量測、逐孔試配並選定自己的總間隙。",
+        "列印原盒並量測；上蓋等第 08 章用選定間隙更新後再印。"
+      ],
+      "functions": [
+        "STL選項與重匯入",
+        "Non Manifold等數位檢查",
+        "切片預覽、實測與配合紀錄"
+      ],
+      "shortcuts": [
+        {
+          "keys": "上排2 → Alt+A → F3 → Select Non Manifold",
+          "context": "網格Edit Mode、邊選取；Emulate Numpad關閉",
+          "effect": "先取消選取再執行非流形選取；結果不能證明全部可列印性。",
+          "status": "沿用既有快捷註記；詳細證據見參考步驟"
+        },
+        {
+          "keys": "Numpad .；N",
+          "context": "Object Mode，選對重匯入物件",
+          "effect": "對焦並核對外框尺寸與Scale。",
+          "status": "沿用既有快捷註記；詳細證據見參考步驟"
+        }
+      ],
+      "references": [
+        {
+          "lessonId": "04",
+          "stepId": "04-06",
+          "label": "網格檢查"
+        },
+        {
+          "lessonId": "04",
+          "stepId": "04-07",
+          "label": "匯出與切片"
+        },
+        {
+          "lessonId": "04",
+          "stepId": "04-08",
+          "label": "列印量測"
+        },
+        {
+          "lessonId": "05",
+          "stepId": "05-04",
+          "label": "插銷／孔板STL"
+        },
+        {
+          "lessonId": "05",
+          "stepId": "05-06",
+          "label": "上蓋STL"
+        }
+      ],
+      "deliverable": "登記的 STL、填好的紀錄表（列印條件、實測值、試配手感與選定間隙）。",
+      "availability": "digital_lessons_and_field_protocols_ready",
+      "notes": [
+        "STL 沒有單位標記，本專案按毫米解讀並核尺寸。",
+        "選定間隙只適用你的設備、材料與設定；換條件要重新試配。"
+      ],
+      "availabilityLabel": "匯出示範與現場方法已備妥；實體結果空白"
+    },
+    {
+      "id": "ch07",
+      "number": "07",
+      "title": "草圖、標尺寸與約束",
+      "goal": "用草圖尺寸決定形狀，理解自由度、欠約束與過度約束。",
+      "practice": [
+        "安裝 CAD Sketcher 0.32.1，建立工程工作區。",
+        "畫 60 × 40 mm 矩形並標尺寸、改成 80 mm，拉伸成實心體，再畫內腔草圖切割。"
+      ],
+      "functions": [
+        "CAD Sketcher草圖與工作平面",
+        "尺寸約束、幾何約束、參考尺寸",
+        "求解狀態與自由度"
+      ],
+      "shortcuts": [
+        {
+          "keys": "擴充套件具名工具／尺寸欄位",
+          "context": "依固定版本的草圖編輯環境",
+          "effect": "先核對可用操作與鍵位；不套用網格I／E等快捷鍵。",
+          "status": "手工草圖、內腔與盒蓋已有隔離 Blender 示範；原生欄位直接修改時仍須手動更新內腔。"
+        }
+      ],
+      "references": [
+        {
+          "lessonId": "02",
+          "stepId": "02-06",
+          "label": "毫米與數值輸入前置"
+        }
+      ],
+      "deliverable": "可改尺寸、可重開的受約束矩形草圖。",
+      "availability": "digital_lessons_and_field_protocols_ready",
+      "notes": [
+        "求解成功不等於完全約束；要核對自由度。",
+        "讓內腔跟著外框變的 Driver 在第 08 章。",
+        "本章沿用 v028 的示範紀錄文字，學到本章前會逐步改寫並實測。"
+      ],
+      "availabilityLabel": "隔離安裝與約束草圖已有實拍"
+    },
+    {
+      "id": "ch08",
+      "number": "08",
+      "title": "盒體與上蓋參數連動",
+      "goal": "建立單一尺寸來源，使盒體、內腔與上蓋隨設計修改一起更新。",
+      "practice": [
+        "先看固定內腔不會跟著外框變的反例，再用 Driver 讓內腔跟著變。",
+        "用形狀鍵與 Driver 讓上蓋跟著盒體尺寸變；總間隙用第 06 章選定的值。",
+        "選修：受控尺寸面板（只接受指定示範盒的副本）。"
+      ],
+      "functions": [
+        "草圖生成幾何與修改器",
+        "共用參數與必要驅動關係",
+        "幾何檢查、輸出與版本快照"
+      ],
+      "shortcuts": [
+        {
+          "keys": "參數欄位；Ctrl+Shift+S",
+          "context": "設計來源參數／Blender檔案操作",
+          "effect": "改一次來源，核對衍生結果；另存新版本。",
+          "status": "手工盒蓋及受控面板已有隔離 Blender 示範；原生欄位可繞過預檢，另存快捷沿用既有證據。"
+        }
+      ],
+      "references": [
+        {
+          "lessonId": "04",
+          "stepId": "04-03",
+          "label": "原盒外形"
+        },
+        {
+          "lessonId": "04",
+          "stepId": "04-05",
+          "label": "原盒壁厚"
+        },
+        {
+          "lessonId": "05",
+          "stepId": "05-05",
+          "label": "上蓋幾何基線"
+        }
+      ],
+      "deliverable": "原檔之外的新參數式盒體＋上蓋場景與改尺寸驗證紀錄。",
+      "availability": "digital_lessons_and_field_protocols_ready",
+      "notes": [
+        "受控面板是選修，不計入主線進度，也不擋住後面章節。",
+        "原生欄位可繞過面板；面板不攔截存檔與匯出。",
+        "本章沿用 v028 的示範紀錄文字，學到本章前會逐步改寫並實測。"
+      ],
+      "availabilityLabel": "尺寸連動、防護與版本方法已有示範"
+    },
+    {
+      "id": "ch09",
+      "number": "09",
+      "title": "定位榫與燕尾滑蓋",
+      "goal": "理解定位自由度、裝配路徑及不必要的重複定位。",
+      "practice": [
+        "比較環唇與定位柱如何限制移動，檢查兩者並用時的尺寸牽制。",
+        "查看燕尾滑蓋行程、止擋需求，以及導軌底面的水平懸空。"
+      ],
+      "functions": [
+        "截面草圖、擠出與Boolean",
+        "對稱／陣列",
+        "裝配行程、接觸及懸空檢查"
+      ],
+      "shortcuts": [
+        {
+          "keys": "G → X → 位移量",
+          "context": "Object Mode、Global軸向，起始位置已知",
+          "effect": "用相對位移檢視滑動行程，再回原位核對。",
+          "status": "沿用既有快捷註記；詳細證據見參考步驟"
+        }
+      ],
+      "references": [
+        {
+          "lessonId": "06",
+          "stepId": "06-01",
+          "label": "定位榫"
+        },
+        {
+          "lessonId": "06",
+          "stepId": "06-02",
+          "label": "燕尾滑蓋"
+        },
+        {
+          "lessonId": "06",
+          "stepId": "06-03",
+          "label": "燕尾STL"
+        }
+      ],
+      "deliverable": "定位與滑動方案比較，含接觸、行程及待驗項目。",
+      "availability": "digital_lessons_and_field_protocols_ready",
+      "notes": [
+        "原燕尾未設端擋／止退；新增方案需要另建版本。",
+        "既有導軌水平朝下露出面合計約448 mm²，支撐或改版仍待選定與驗證。"
+      ],
+      "availabilityLabel": "定位榫與燕尾已有示範；實體結果空白"
+    },
+    {
+      "id": "ch10",
+      "number": "10",
+      "title": "懸臂卡扣與對照試片",
+      "goal": "連結幾何尺寸、所需變形及材料條件，理解試片能支持的結論。",
+      "practice": [
+        "比較臂長、臂厚、根部與扣入量，延用A_L19、B_L17、C_L21試片。",
+        "記錄列印方向與支撐候選，分開幾何長度、有效長度及材料待定條件。"
+      ],
+      "functions": [
+        "參數變體、根部圓角／Bevel",
+        "Overhang檢查",
+        "列印方向比較"
+      ],
+      "shortcuts": [
+        {
+          "keys": "Ctrl+B",
+          "context": "網格Edit Mode、邊選取，只選指定根部邊",
+          "effect": "邊倒角；不等同新增Bevel修改器，也不證明強度改善。",
+          "status": "沿用既有快捷註記；詳細證據見參考步驟"
+        },
+        {
+          "keys": "R → 軸向 → 角度",
+          "context": "Object Mode、已選候選副本",
+          "effect": "調整候選方向，另記起始姿態與結果。",
+          "status": "沿用既有快捷註記；詳細證據見參考步驟"
+        }
+      ],
+      "references": [
+        {
+          "lessonId": "07",
+          "stepId": "07-01",
+          "label": "參數與估算條件"
+        },
+        {
+          "lessonId": "07",
+          "stepId": "07-02",
+          "label": "卡扣幾何"
+        },
+        {
+          "lessonId": "07",
+          "stepId": "07-03",
+          "label": "方向與懸空"
+        },
+        {
+          "lessonId": "07",
+          "stepId": "07-04",
+          "label": "卡扣STL"
+        },
+        {
+          "lessonId": "07",
+          "stepId": "07-05",
+          "label": "三臂長對照"
+        }
+      ],
+      "deliverable": "卡扣幾何變體及條件表；材料與允許應變未定時不判強度。",
+      "availability": "digital_lessons_and_field_protocols_ready",
+      "notes": [
+        "調參不是已驗證改善，獨立試片不能直接代表完整裝配。"
+      ],
+      "availabilityLabel": "卡扣與對照試片已有示範；強度與試配未驗證"
+    },
+    {
+      "id": "ch11",
+      "number": "11",
+      "title": "螺紋與螺絲固定",
+      "goal": "分清自訂列印螺紋與金屬緊固件的規格、建模及試驗條件。",
+      "practice": [
+        "分別練習原生 mesh 三點輪廓與 CAD 真尺寸約束；CAD 轉 mesh 的副本不再連動。",
+        "沿用盒側外牙與匹配側帽、已選 M3 螺絲與嵌件的四柱分支。",
+        "實際匯出六件 STL、核對尺寸與重匯入；側盒和側帽先保存三角化修訂副本。"
+      ],
+      "functions": [
+        "輪廓草圖、Screw、Boolean",
+        "孔位與螺絲柱陣列",
+        "pitch／lead／starts與單位"
+      ],
+      "shortcuts": [
+        {
+          "keys": "具名修改器與參數欄位",
+          "context": "依實際選定的螺紋建模版本",
+          "effect": "沿用已學變換與搜尋；Screw參數需逐項讀值。",
+          "status": "11-17 為六件 STL；11-18 為真約束；11-19 為開口 Screw 銜接。原始 CAD 重開有工具警告，限制逐步標明；數位檢查不代實體合格。"
+        }
+      ],
+      "references": [
+        {
+          "lessonId": "08",
+          "stepId": "08-01",
+          "label": "規格與參數"
+        },
+        {
+          "lessonId": "08",
+          "stepId": "08-02",
+          "label": "原單元外牙規劃（新版操作見小節）"
+        },
+        {
+          "lessonId": "08",
+          "stepId": "08-03",
+          "label": "原單元內牙規劃（新版為匹配盒側帽）"
+        },
+        {
+          "lessonId": "08",
+          "stepId": "08-04",
+          "label": "原單元五金規劃（已選 M3，見新版）"
+        },
+        {
+          "lessonId": "08",
+          "stepId": "08-05",
+          "label": "待進行：試鎖"
+        }
+      ],
+      "deliverable": "兩條路線各自的規格、草案與試驗紀錄。",
+      "availability": "digital_lessons_and_field_protocols_ready",
+      "notes": [
+        "原生 mesh 與 CAD 約束為兩條路線；Convert Mesh 後的副本不再與原 CAD 尺寸連動。",
+        "側盒／側帽修訂三角化改變局部表面，保留原檔；STL 尺寸及零非流形不證明可印或可旋合。",
+        "0.4 mm 名義直徑差與 0.2 mm 端隙只作試驗；材料、實體量測、試配與強度均待驗證。"
+      ],
+      "availabilityLabel": "CAD 約束、幾何與六件 STL 已補齊；實體試驗待進行"
+    },
+    {
+      "id": "ch12",
+      "number": "12",
+      "title": "尺寸鏈、交付與成品渲染",
+      "goal": "把實測偏差連回小盒的裝配功能，完成補償、總組裝與交付，最後渲染成品。",
+      "practice": [
+        "分析內腔、唇邊及位置偏差的最不利組合，區分尺寸間隙與形狀／位置問題。",
+        "彙整實測證據、補償理由、適用條件與版本，完成總組裝。",
+        "用第 04 章學到的相機、燈光與材質渲染小盒成品。"
+      ],
+      "functions": [
+        "尺寸鏈與參數比較",
+        "量測紀錄與版本關聯",
+        "重新開檔與輸出重現"
+      ],
+      "shortcuts": [
+        {
+          "keys": "Ctrl+Shift+S；Ctrl+O",
+          "context": "Blender檔案操作，目標路徑與版本先核對",
+          "effect": "另存新版本，再重開指定場景核對。",
+          "status": "沿用既有快捷註記；詳細證據見參考步驟"
+        },
+        {
+          "keys": "Numpad 0",
+          "context": "3D Viewport，已有正確作用中相機",
+          "effect": "切換相機取景。",
+          "status": "沿用既有快捷註記；詳細證據見參考步驟"
+        },
+        {
+          "keys": "G／R；F12",
+          "context": "Object Mode調整相機；渲染前核對場景與輸出",
+          "effect": "調整取景並渲染當前影格。",
+          "status": "沿用既有快捷註記；詳細證據見參考步驟"
+        }
+      ],
+      "references": [
+        {
+          "lessonId": "09",
+          "stepId": "09-01",
+          "label": "量測彙整方法（現場結果空白）"
+        },
+        {
+          "lessonId": "09",
+          "stepId": "09-02",
+          "label": "補償方法（實測支持後才套用）"
+        },
+        {
+          "lessonId": "09",
+          "stepId": "09-03",
+          "label": "組裝與版本追溯方法（實體組裝空白）"
+        }
+      ],
+      "deliverable": "可追溯的變更與交付紀錄，以及小盒成品渲染圖與對應場景版本。",
+      "availability": "digital_lessons_and_field_protocols_ready",
+      "notes": [
+        "不由單次成功試配推定整批或不同材料都適用。",
+        "幾何公差與製程能力進階內容依具體功能和量測資料展開。"
+      ],
+      "availabilityLabel": "尺寸鏈、交付方法與安全渲染副本已備妥"
+    }
+  ],
+  "sources": [
+    {
+      "label": "既有05-05小盒與唇邊紀錄",
+      "url": "/read/learning/journal/2026-10-22-lesson05-lid-demo-v001.md"
+    },
+    {
+      "label": "Blender 5.2官方快捷鍵",
+      "url": "https://docs.blender.org/manual/en/5.2/interface/keymap/blender_default.html"
+    },
+    {
+      "label": "CAD Sketcher尺寸與幾何約束",
+      "url": "https://hlorus.github.io/CAD_Sketcher/constraints/"
+    },
+    {
+      "label": "CAD Sketcher草圖到模型的連動",
+      "url": "https://hlorus.github.io/CAD_Sketcher/integration/"
+    }
+  ],
+  "environment": {
+    "status": "manual_box_and_guard_demonstrated",
+    "summary": "隔離 Blender 5.2.1＋CAD Sketcher 0.32.1 已有安裝實拍、草圖約束、盒蓋 Driver 與防護面板示範；檔案欄位和起始條件的程式準備均分列。CAD 約束還原版重開出現工具警告，需依步驟限制核對；不是學員的安裝或完成紀錄。",
+    "recordPath": "learning/evidence/parametric/2026-10-27-cad-sketcher-rectangle-v002/environment-verification-v001.json",
+    "recordSha256": "b82bb34e18dd13c218211c75ca862274765752b840cf174cefa19435e1828bb6"
+  },
+  "physicalResults": {
+    "material": null,
+    "printedMeasurements": null,
+    "fitResults": null,
+    "qualifiedClearanceMm": null
+  },
+  "contentReview": {
+    "reviewedOn": "2026-10-28",
+    "scope": "本輪使用者採用之12章討論稿、現有catalog、progress、05-05原圖及尺寸、快捷註記、審查風險與官方CAD Sketcher說明；沒有宣稱所有新章均已實作。",
+    "sourcePaths": [
+      "learning/catalog.json",
+      "learning/annotations/guide-shortcuts-v002.json",
+      "learning/journal/2026-10-22-lesson05-lid-demo-v001.md",
+      "learning/journal/2026-10-25-claude-continuation-audit-v001.md"
+    ],
+    "preservesOriginalCatalog": true,
+    "learnerCompletionChanged": false,
+    "revisionV002": {
+      "scope": "把網頁程式中依版本號替換的章節狀態、備註、快捷狀態、環境摘要與接續觀察題移入資料；依 v028 更新章節參照。",
+      "curriculum": {
+        "path": "learning/web/engineering-curriculum-v028.json"
+      },
+      "learnerCompletionChanged": false
+    },
+    "revisionV003": {
+      "scope": "依方案 B 重排章節並更新各章目標、實作、備註；接續觀察題併入教材第 01 章章末，路徑不再另列觀察面板。",
+      "curriculum": {
+        "path": "learning/web/engineering-curriculum-v029.json"
+      },
+      "learnerCompletionChanged": false
+    },
+    "revisionV005": {
+      "scope": "對應教材 v036 的數位補課與現場空白方法，不聲稱所有歷史圖片重新目視、不確認學員進度。",
+      "learnerCompletionChanged": false,
+      "physicalPrint": null,
+      "physicalMeasurement": null,
+      "physicalFit": null
+    }
+  },
+  "courseLabel": "工程教學章節",
+  "previousVersion": {
+    "path": "learning/web/engineering-path-v004.json",
+    "sha256": "956aaf67f86cc90a5aa864fe559221985244f66d3f5850adf52d6fb6528e12ed"
+  }
+}

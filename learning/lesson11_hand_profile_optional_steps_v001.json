@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "title": "第 11 章選修：手工繪製三角牙型邊輪廓",
+  "scope": "以獨立 Blender 實際 GUI 逐點建模；未更新學員進度。",
+  "sourceScene": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/demo-files/u08_thread_reference_v001.blend",
+  "sourceSha256": "9bda36c10fd916ef9cbe688f5ca56dcf8cfa0adb83d684300e60196225589d8f",
+  "demonstrationScene": "learning/evidence/08/2026-10-28-external-thread-hand-profile-gui-v005/demo-files/u11_hand_profile_v001.blend",
+  "demonstrationSceneSha256": "ea8f0364bba62b138e0ee9aed8478c3239afebe5a5cb1dfec7c7a91f1488bf9a",
+  "followOnActualProfileScene": "learning/evidence/08/2026-10-28-external-thread-hand-profile-gui-v004/demo-files/u11_hand_profile_v001.blend",
+  "followOnActualProfileSceneSha256": "1bfb2d15269fbb1debe325e18904cec6ee654a91a611ee177dbb1c89b7b713c6",
+  "followOnThreadScene": "learning/evidence/08/2026-10-28-external-thread-from-hand-profile-gui-v001/demo-files/u11_hand_thread_draft_v001.blend",
+  "followOnThreadSceneSha256": "2d73ed99fe56cfbd676447cc3035c0cb8245b3eebf5b1ac72dc3b3c418afce50",
+  "limitations": [
+    "此為無幾何約束的 Blender mesh 邊輪廓，不是 CAD Sketcher 約束草圖；數值依名義設計輸入。",
+    "這 13 張畫面來自 GUI v005 重複試作；後續完整外牙實際使用另次 GUI v004 輪廓，兩次獨立讀值的頂點座標一致，不是同一場次。",
+    "本輪廓是三角草案，不宣稱 ISO 螺紋；全程建點與邊為 GUI，場景隱藏、讀值與檔案欄位由程式處理。",
+    "只有三條邊不代表已封閉的實體；Screw、封端和與芯柱聯集需另行完成與檢查。",
+    "材料、列印、量測、配合、合格間隙及強度均待定。"
+  ],
+  "physicalPrint": null,
+  "physicalMeasurement": null,
+  "physicalFit": null,
+  "qualifiedClearance": null,
+  "qualifiedStrength": null,
+  "steps": [
+    {
+      "id": "11-hand-profile-01",
+      "goal": "新增平面",
+      "operation": "開啟參考場景複本；F3 搜尋 Add Plane，再以 F2 命名 Thread_Hand_Profile。",
+      "context": "單位為毫米；程式隱藏參考盒體，未建立網格。",
+      "visibleConfirmation": "平面因預設尺寸太大而超出畫面；N 側欄顯示約 2000 × 2000 mm。",
+      "programReadback": "程式讀回 4 點、4 邊、1 面；此平面接下來會合併成單點。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-external-thread-hand-profile-gui-v005/HP-01-plane.png",
+        "sha256": "fadf9f70843a3eb34d76c422923302572243f04d7fd2ac57ce2670d8de18b6d2"
+      }
+    },
+    {
+      "id": "11-hand-profile-02",
+      "goal": "將平面合併為一點",
+      "operation": "Tab 進入 Edit Mode，按 1 切換頂點、A 全選，F3 搜尋 Merge at Center，再按 A 確認選到單點；數字鍵盤 1 看前視圖。",
+      "context": "須在頂點選取模式，否則合併後可能沒有選中點。",
+      "visibleConfirmation": "前視圖中平面變成單個點，尺度較遠。",
+      "programReadback": "程式讀回單點 (0,0,0)，0 邊、0 面；選取數為 1。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-external-thread-hand-profile-gui-v005/HP-02-merged.png",
+        "sha256": "24e11c42865fad0efb20f941beb6d2f928ba53789cbf4315c05c9c5b80994e1d"
+      }
+    },
+    {
+      "id": "11-hand-profile-03",
+      "goal": "定位第一點",
+      "operation": "按 G、X、輸入 4.8mm、Enter，將單點移至 X=4.8 mm。",
+      "context": "先確認只有該點被選取。",
+      "visibleConfirmation": "N 側欄顯示 X 4.8、Y 0、Z 0 mm；單點在原圖中較小。",
+      "programReadback": "程式讀回約 (4.80000019,0,0) mm。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-external-thread-hand-profile-gui-v005/HP-03-point-1.png",
+        "sha256": "53f268ba5216a0cea42dacfaa4c62f9d0cc0af7137bceb14cff3b2c1b9810855"
+      }
+    },
+    {
+      "id": "11-hand-profile-04",
+      "goal": "擠出第二點",
+      "operation": "按 E、X、輸入 1.2mm、Enter，再按 G、Z、輸入 0.3mm、Enter。",
+      "context": "第一點保持選取；輸入的是相對位移。",
+      "visibleConfirmation": "N 側欄顯示選中點 X 6、Y 0、Z 0.3 mm；畫面中的線段較小。",
+      "programReadback": "程式讀回兩點、一邊、0 面；第二點約 (6,0,0.30000001) mm。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-external-thread-hand-profile-gui-v005/HP-04-point-2.png",
+        "sha256": "fd0767f16eb2035bd95954eff5558be582a8573f9ac92fde1dfb239214f12c1f"
+      }
+    },
+    {
+      "id": "11-hand-profile-05",
+      "goal": "擠出第三點",
+      "operation": "按 E、X、輸入 -1.2mm、Enter，再按 G、Z、輸入 0.3mm、Enter。",
+      "context": "確認僅第二點被選取；第三點位移也是相對值。",
+      "visibleConfirmation": "N 側欄顯示選中點 X 4.8、Y 0、Z 0.6 mm；線段較小。",
+      "programReadback": "程式讀回三點、兩邊、0 面；第三點約 (4.80000019,0,0.60000002) mm。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-external-thread-hand-profile-gui-v005/HP-05-point-3-selected.png",
+        "sha256": "c64d712b0c463052d5b479e20b73bc959af69f03bf627fa1db3ac480b54aad60"
+      }
+    },
+    {
+      "id": "11-hand-profile-06",
+      "goal": "全選並放大",
+      "operation": "按 A 選取全部，F3 搜尋 Frame Selected，調整視圖。",
+      "context": "仍在 Edit Mode 頂點模式。",
+      "visibleConfirmation": "可看到放大的 V 形兩條邊；N 欄是多點中位數，不是單點座標。",
+      "programReadback": "讀回 3 點、2 邊、0 面；此時尚未閉合第三邊。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-external-thread-hand-profile-gui-v005/HP-06-point-3.png",
+        "sha256": "ea6206305c0f0e84847105be9eafdb813a4cbac5ade0dc4e3076ec1db1f5a2d4"
+      }
+    },
+    {
+      "id": "11-hand-profile-07",
+      "goal": "補上閉合邊",
+      "operation": "保持三點全選，按 F 暫時建立三角面。",
+      "context": "三點均已選中。",
+      "visibleConfirmation": "前視圖中三角區域被填滿。",
+      "programReadback": "讀回 3 點、3 邊、1 面；此面只是建立閉合邊的中間步驟。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-external-thread-hand-profile-gui-v005/HP-07-filled.png",
+        "sha256": "0afd738f7ce75a8db87f33e0a2159c3c8b2ce766d2b96f776fbda1516164230a"
+      }
+    },
+    {
+      "id": "11-hand-profile-08",
+      "goal": "刪除面保留輪廓",
+      "operation": "F3 搜尋 Only Faces；只刪除面，保留三條邊。",
+      "context": "操作於剛建立的三角面；若看不到 Only Faces，先確認 Edit Mode。",
+      "visibleConfirmation": "放大後可見三角閉合邊線；未選取時邊線為深色。",
+      "programReadback": "讀回 3 點、3 邊、0 面；這是邊輪廓，不是已封閉的實體。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-external-thread-hand-profile-gui-v005/HP-08-closed-profile.png",
+        "sha256": "ff20a3d9d794b3c423979a13ece0e9d5f101af95cb11ebf15050c35ea25b1b6e"
+      }
+    },
+    {
+      "id": "11-hand-profile-09",
+      "goal": "近景核對第一點",
+      "operation": "Alt+A 取消選取，在放大輪廓左下角單選第一點。",
+      "context": "保持頂點選取模式；依自己畫面選點，不套用示範座標。",
+      "visibleConfirmation": "輪廓放大，N 側欄可見 X 4.8、Y 0、Z 0 mm。",
+      "programReadback": "程式確認恰好選中第一點 (4.80000019,0,0) mm。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-external-thread-hand-profile-gui-v005/HP-09-inspect-p1.png",
+        "sha256": "49860fb57123b7a75633ce3d217c95bd147a7be29094e8967d2399c0f1c96cff"
+      }
+    },
+    {
+      "id": "11-hand-profile-10",
+      "goal": "近景核對第二點",
+      "operation": "Alt+A 取消選取，單選輪廓右側牙頂。",
+      "context": "保持頂點選取模式。",
+      "visibleConfirmation": "輪廓放大，N 側欄可見 X 6、Y 0、Z 0.3 mm。",
+      "programReadback": "程式確認恰好選中第二點 (6,0,0.30000001) mm。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-external-thread-hand-profile-gui-v005/HP-10-inspect-p2.png",
+        "sha256": "ab8688420f311d4bed1e189f87a4aaa19c0eaa407896fe6cc4c6d6894c5ac186"
+      }
+    },
+    {
+      "id": "11-hand-profile-11",
+      "goal": "近景核對第三點",
+      "operation": "Alt+A 取消選取，單選輪廓左上角。",
+      "context": "保持頂點選取模式。",
+      "visibleConfirmation": "輪廓放大，N 側欄可見 X 4.8、Y 0、Z 0.6 mm。",
+      "programReadback": "程式確認恰好選中第三點 (4.80000019,0,0.60000002) mm。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-external-thread-hand-profile-gui-v005/HP-11-inspect-p3.png",
+        "sha256": "7fd2fc4db0a7fb42f39a827f565face3ac6afce56458ecdaccc25a8e7b8915d5"
+      }
+    },
+    {
+      "id": "11-hand-profile-12",
+      "goal": "另存輪廓",
+      "operation": "Tab 回物件模式，使用 Save As 另存 u11_hand_profile_v001.blend。",
+      "context": "本示範的路徑與檔名由程式填入檔案對話框；保留參考原檔。",
+      "visibleConfirmation": "另存後仍可看見輪廓物件；此圖不是檔案對話框截圖。",
+      "programReadback": "另存後讀回 3 點、3 邊、0 面；示範檔 SHA-256 列於 demonstrationSceneSha256。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-external-thread-hand-profile-gui-v005/HP-12-saved.png",
+        "sha256": "dd4fc458f6289fad71a783c56fba8795b6796202a65f46de0b48ada67fa6dcca"
+      }
+    },
+    {
+      "id": "11-hand-profile-13",
+      "goal": "重開並獨立核對",
+      "operation": "重新開啟另存檔；另以背景 Blender 讀回頂點與邊連接。",
+      "context": "重開對話框路徑與檔名由程式填入；未更新學員進度。",
+      "visibleConfirmation": "重新開啟後可見輪廓物件。",
+      "programReadback": "獨立重讀：3 點、3 邊、0 面，每點度數 2；相對名義座標最大差約 1.91×10⁻⁷ mm。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-external-thread-hand-profile-gui-v005/HP-13-reopened.png",
+        "sha256": "0100fb4cf890c58fe477c21a1e5061e56630624e36b449f165a2ccc79a121434"
+      }
+    }
+  ]
+}

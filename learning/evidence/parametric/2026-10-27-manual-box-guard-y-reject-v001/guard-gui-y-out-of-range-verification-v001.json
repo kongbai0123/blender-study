@@ -1,0 +1,119 @@
+{
+  "kind": "controlled-manual-box-width-out-of-range-rejected",
+  "method": "獨立 Blender 5.2.1 / CAD Sketcher 0.32.1 假專案與假 progress；插件及路徑由程式處理，GUI面板選寬度80提交、人工目視拒絕，幾何由Python讀回。",
+  "programs": [
+    {
+      "path": "learning/tutor/guarded_manual_box_v001.py",
+      "sha256": "9dd50ba87227fc6ea77df4f6344b602ba245becfe4efe28d5343600a1282f067"
+    },
+    {
+      "path": "learning/tutor/manual_box_auto_update_v002.py",
+      "sha256": "cc39a2376c8abc41f61cb5beb796a83e22b63dc33b6b6aed5df9f135e83fc457"
+    },
+    {
+      "path": "learning/tutor/manual_box_reference_v001.json",
+      "sha256": "78f39a6ec422bb02b64fff64f70896c927a6ab449bcd84be9a03b6657bedae5c"
+    }
+  ],
+  "proposedWidth": 80,
+  "prePostOuterMm": [
+    80,
+    50
+  ],
+  "prePostBoundsMm": {
+    "Body": [
+      [
+        0.0,
+        80.0
+      ],
+      [
+        0.0,
+        50.0
+      ],
+      [
+        0.0,
+        30.0
+      ]
+    ],
+    "Body.001": [
+      [
+        2.0,
+        78.0
+      ],
+      [
+        2.0,
+        48.0
+      ],
+      [
+        2.000001907348633,
+        30.0
+      ]
+    ],
+    "Cube": [
+      [
+        0.000518798828125,
+        79.99948120117188
+      ],
+      [
+        0.000324249267578125,
+        49.99967575073242
+      ],
+      [
+        26.00001335144043,
+        31.99998664855957
+      ]
+    ]
+  },
+  "screenMessageReviewedByHuman": true,
+  "images": [
+    {
+      "file": "GUARD-01-opened.png",
+      "sha256": "ef1ad4605384ee621ef5e3f501c68611a3cee86a5bb6f91f80595b56203d54f8"
+    },
+    {
+      "file": "GUARD-02-outer-sketch.png",
+      "sha256": "1de32f144a69380cc467c2048ce5dedd73946b89bae43304601cb47565844cc8"
+    },
+    {
+      "file": "GUARD-03-script-open.png",
+      "sha256": "298e218b1b77b93b54ebd69ab46d5f833f1fa4ab1634650023d0123b92cc3428"
+    },
+    {
+      "file": "GUARD-04-script-run.png",
+      "sha256": "298e218b1b77b93b54ebd69ab46d5f833f1fa4ab1634650023d0123b92cc3428"
+    },
+    {
+      "file": "GUARD-05-viewport.png",
+      "sha256": "5920f6fd06405232d45c4df0b0a708c2734ae2aaea3b85c63d712cac767c0ef9"
+    },
+    {
+      "file": "GUARD-06-panel.png",
+      "sha256": "58f9607dd0014fbdcba970dc83fabbfefb32fd823f54e6ad667e2376f5667ed3"
+    },
+    {
+      "file": "GUARD-07-dialog.png",
+      "sha256": "7e9e2f875b6162bb047481e098d027d14b182c242125c5d58a6d6dba8df507a2"
+    },
+    {
+      "file": "GUARD-08-parameter-menu.png",
+      "sha256": "671a582bde4a5f446e9e71e0471afab68d43bcbc230511604929a77f6e6c9c1a"
+    },
+    {
+      "file": "GUARD-09-y-invalid-proposal.png",
+      "sha256": "db8245bb2beedb3b298a8d2f4d0b508c51c3996871adaf367dfce1841a975d48"
+    },
+    {
+      "file": "GUARD-10-y-invalid-result.png",
+      "sha256": "1bec761c33d7d08b5a15a8d89746551a9f2d16f2dcff4bfc669f611446985917"
+    }
+  ],
+  "limitations": [
+    "寬度80的拒絕訊息由人工目視；程式未解析 UI 文字，只對照前後三件評估外框。",
+    "僅指定手工範本受控面板，原生欄位可繞過防護及自動更新，面板不攔截原生儲存／匯出。",
+    "30～70 mm是依形狀鍵的理論未夾限候選，並非全區安全、製造能力或配合合格。",
+    "未做全面碰撞、實體列印、量測及試配。"
+  ],
+  "physicalMeasurements": null,
+  "fitResults": null,
+  "qualifiedClearanceMm": null
+}

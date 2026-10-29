@@ -1,0 +1,59 @@
+{
+  "sceneSha256": "54ded1f3f61b3868f85655724b2145ab40ee064867aead75c45c9effeb9126bb",
+  "sourceSha256": "453f6c4b9682098aaefea5cfb9501a74c70a562f14c5a0215709101b5b71871d",
+  "kind": "relief",
+  "model": "Side_Cap_Blank",
+  "tool": "A_Relief_Cutter",
+  "activeSelected": true,
+  "modelModifiers": 0,
+  "toolVisible": true,
+  "capVertices": 806,
+  "capFaces": 448,
+  "toolVertices": 128,
+  "boundsCapMm": [
+    [
+      30.299999237060547,
+      35.79999923706055
+    ],
+    [
+      -7.690725326538086,
+      7.690725326538086
+    ],
+    [
+      -7.690725326538086,
+      7.690725326538086
+    ]
+  ],
+  "boundsToolMm": [
+    [
+      34.150001525878906,
+      34.5
+    ],
+    [
+      -5.300000190734863,
+      5.300000190734863
+    ],
+    [
+      -5.300000190734863,
+      5.300000190734863
+    ]
+  ],
+  "sourceGeometryUnchanged": {
+    "Body": true,
+    "Lid": true,
+    "Thread_Core": true,
+    "Side_Cap_Blank": true
+  },
+  "detail": {
+    "toolRadiusNominalMm": 5.3,
+    "toolAxialBoundsMm": [
+      34.150001525878906,
+      34.5
+    ]
+  },
+  "method": "Independently reopened generated starting scene; checked geometry, active object and source hashes. Both tool/blank are prepared by script, not manually drawn in GUI.",
+  "limitations": [
+    "Starting files are local teaching assets only; privacy/publication safety has not been reviewed.",
+    "Models and nominal clearances are drafts; no physical measurement, print or fit has been performed."
+  ]
+}

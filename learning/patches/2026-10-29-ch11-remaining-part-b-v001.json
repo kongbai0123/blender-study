@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "source": "http://127.0.0.1:8768/",
+  "curriculum": "learning/web/engineering-curriculum-v037.json",
+  "curriculumSha256": "65b126ac3bfd88e12ce78697d2d1188036cc55d6e56ef72b7b654ed86eaab6a4",
+  "method": "Cua Chrome 實頁逐一選取，每步讀取主欄及詳細步驟 DOM；不提交確認或筆記。",
+  "status": "complete",
+  "sections": {
+    "11-15": {
+      "count": 17,
+      "selectedStepIds": [
+        "ch11-11-side-cap-01",
+        "ch11-11-side-cap-02",
+        "ch11-11-side-cap-03",
+        "ch11-11-side-cap-04",
+        "ch11-11-side-cap-05",
+        "ch11-11-side-cap-06",
+        "ch11-11-side-cap-07",
+        "ch11-11-side-cap-08",
+        "ch11-11-side-cap-09",
+        "ch11-11-side-cap-10",
+        "ch11-11-side-cap-11",
+        "ch11-11-side-cap-12",
+        "ch11-11-side-cap-13",
+        "ch11-11-side-cap-14",
+        "ch11-11-side-cap-15",
+        "ch11-11-side-cap-16",
+        "ch11-11-side-cap-17"
+      ],
+      "findings": [
+        "兩份起始場景明示程式預建；第9步使用預建的另一個 relief 起始副本，並非由學員剛完成的場景自行生成刀具。",
+        "外牙、帽內空間與軸向端隙均為數位試驗；未做實體判定。"
+      ]
+    },
+    "11-06": {
+      "count": 2,
+      "selectedStepIds": [
+        "ch11-08-04-01",
+        "ch11-08-04-02"
+      ],
+      "findings": [
+        "原廠選型、名義值與實體待驗欄分列；不推定強度等級。"
+      ]
+    },
+    "11-10": {
+      "count": 8,
+      "selectedStepIds": [
+        "ch11-11-boss-opt-01",
+        "ch11-11-boss-opt-02",
+        "ch11-11-boss-opt-03",
+        "ch11-11-boss-opt-04",
+        "ch11-11-boss-opt-05",
+        "ch11-11-boss-opt-06",
+        "ch11-11-boss-opt-07",
+        "ch11-11-boss-opt-08"
+      ],
+      "findings": [
+        "第2步標題要求32邊，操作未教確認或設定圓柱頂點數，已回報；圖中數位孔口讀值適用本次32邊示範。"
+      ]
+    },
+    "11-16": {
+      "count": 15,
+      "selectedStepIds": [
+        "ch11-11-four-inserts-01",
+        "ch11-11-four-inserts-02",
+        "ch11-11-four-inserts-03",
+        "ch11-11-four-inserts-04",
+        "ch11-11-four-inserts-05",
+        "ch11-11-four-inserts-06",
+        "ch11-11-four-inserts-07",
+        "ch11-11-four-inserts-08",
+        "ch11-11-four-inserts-09",
+        "ch11-11-four-inserts-10",
+        "ch11-11-four-inserts-11",
+        "ch11-11-four-inserts-12",
+        "ch11-11-four-inserts-13",
+        "ch11-11-four-inserts-14",
+        "ch11-11-four-inserts-15"
+      ],
+      "findings": [
+        "模型柱／肋／刀具為預建，布林為GUI，頁面有區分。",
+        "第15步要求另一個 Blender 射線讀值，但未說明學員如何操作，應區分可見核對與助教程式摘要，已回報。"
+      ]
+    },
+    "11-07": {
+      "count": 2,
+      "selectedStepIds": [
+        "ch11-08-05-01",
+        "ch11-08-05-02"
+      ],
+      "findings": [
+        "兩步均明示實體待執行，未實印與試鎖不得確認。"
+      ]
+    },
+    "11-08": {
+      "count": 14,
+      "selectedStepIds": [
+        "ch11-11-external-01",
+        "ch11-11-external-02",
+        "ch11-11-external-03",
+        "ch11-11-external-04",
+        "ch11-11-external-05",
+        "ch11-11-external-06",
+        "ch11-11-external-07",
+        "ch11-11-external-08",
+        "ch11-11-external-09",
+        "ch11-11-external-10",
+        "ch11-11-external-11",
+        "ch11-11-external-12",
+        "ch11-11-external-13",
+        "ch11-11-external-14"
+      ],
+      "findings": [
+        "此節為歷史待修案例，輪廓由程式預建；保留首次 Boolean 物件指定失敗，並未宣稱實體合格。"
+      ]
+    },
+    "11-09": {
+      "count": 6,
+      "selectedStepIds": [
+        "ch11-11-inner-01",
+        "ch11-11-inner-02",
+        "ch11-11-inner-03",
+        "ch11-11-inner-04",
+        "ch11-11-inner-05",
+        "ch11-11-inner-06"
+      ],
+      "findings": [
+        "外牙工具程式預建及不同場景／非實體驗證的界線有寫明。",
+        "第2步只寫尺寸面板可核對，未列16×16×3及中心Z2數字，已回報。"
+      ]
+    }
+  },
+  "limits": [
+    "此輪未逐張目視全部歷史原圖；重點抽查示範紀錄與實際顯示。",
+    "64步主操作及詳細步驟在頁面逐步選取；示範紀錄僅抽查4步，非逐筆檢視或逐張圖片目視。"
+  ],
+  "sectionCount": 7,
+  "selectedStepCount": 64,
+  "demonstrationRecordSamples": [
+    {
+      "section": "11-09",
+      "step": "ch11-11-inner-06",
+      "observed": "顯示16×16×3程式讀值、原圖與來源版本；不等於實體合格。"
+    },
+    {
+      "section": "11-15",
+      "step": "ch11-11-side-cap-01",
+      "observed": "顯示工具頂點徑向差讀值，並提醒非全域法向公差。"
+    },
+    {
+      "section": "11-10",
+      "step": "ch11-11-boss-opt-01",
+      "observed": "顯示60×40×30尺寸、讀值位置與程式讀值範圍。"
+    },
+    {
+      "section": "11-16",
+      "step": "ch11-11-four-inserts-01",
+      "observed": "顯示物件指紋及預建工具讀值，區分示範與學員操作。"
+    }
+  ],
+  "learnerProgressSubmitted": false
+}

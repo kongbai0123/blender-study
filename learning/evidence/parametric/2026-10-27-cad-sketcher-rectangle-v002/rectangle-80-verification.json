@@ -1,0 +1,295 @@
+{
+  "label": "rectangle-80",
+  "expectedDimensionsMm": [
+    80,
+    40,
+    0
+  ],
+  "actual": {
+    "mode": "OBJECT",
+    "objects": [
+      {
+        "name": "Body Sketch",
+        "type": "CURVES"
+      },
+      {
+        "name": "Body",
+        "type": "MESH"
+      },
+      {
+        "name": "Body Workplane",
+        "type": "EMPTY"
+      },
+      {
+        "name": "WP_XY",
+        "type": "EMPTY"
+      },
+      {
+        "name": "WP_XZ",
+        "type": "EMPTY"
+      },
+      {
+        "name": "WP_YZ",
+        "type": "EMPTY"
+      }
+    ],
+    "sketch": {
+      "name": "Body Sketch",
+      "dof": 0,
+      "solverState": "OKAY",
+      "geometrySolved": true,
+      "positions": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          80.0,
+          40.0,
+          0.0
+        ],
+        [
+          80.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          40.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          80.0,
+          0.0,
+          0.0
+        ],
+        [
+          80.0,
+          0.0,
+          0.0
+        ],
+        [
+          80.0,
+          40.0,
+          0.0
+        ],
+        [
+          80.0,
+          40.0,
+          0.0
+        ],
+        [
+          0.0,
+          40.0,
+          0.0
+        ],
+        [
+          0.0,
+          40.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "attributes": [
+        {
+          "name": "position",
+          "domain": "POINT",
+          "type": "FLOAT_VECTOR"
+        },
+        {
+          "name": "cyclic",
+          "domain": "CURVE",
+          "type": "BOOLEAN"
+        },
+        {
+          "name": "sketch_type",
+          "domain": "CURVE",
+          "type": "INT8"
+        },
+        {
+          "name": "handle_type_left",
+          "domain": "POINT",
+          "type": "INT8"
+        },
+        {
+          "name": "handle_type_right",
+          "domain": "POINT",
+          "type": "INT8"
+        },
+        {
+          "name": "handle_left",
+          "domain": "POINT",
+          "type": "FLOAT_VECTOR"
+        },
+        {
+          "name": "handle_right",
+          "domain": "POINT",
+          "type": "FLOAT_VECTOR"
+        },
+        {
+          "name": "resolution",
+          "domain": "CURVE",
+          "type": "INT"
+        },
+        {
+          "name": "construction",
+          "domain": "CURVE",
+          "type": "BOOLEAN"
+        },
+        {
+          "name": "fixed",
+          "domain": "CURVE",
+          "type": "BOOLEAN"
+        },
+        {
+          "name": "visible",
+          "domain": "CURVE",
+          "type": "BOOLEAN"
+        },
+        {
+          "name": "is_origin",
+          "domain": "CURVE",
+          "type": "BOOLEAN"
+        },
+        {
+          "name": "merge_id",
+          "domain": "POINT",
+          "type": "INT"
+        },
+        {
+          "name": ".cad_sketcher_source_curve_id",
+          "domain": "CURVE",
+          "type": "INT"
+        },
+        {
+          "name": ".cad_sketcher_source_endpoint_id",
+          "domain": "POINT",
+          "type": "INT"
+        },
+        {
+          "name": ".curve_id_lo",
+          "domain": "CURVE",
+          "type": "INT32_2D"
+        },
+        {
+          "name": ".curve_id_hi",
+          "domain": "CURVE",
+          "type": "INT32_2D"
+        },
+        {
+          "name": ".start_point_id_lo",
+          "domain": "CURVE",
+          "type": "INT32_2D"
+        },
+        {
+          "name": ".start_point_id_hi",
+          "domain": "CURVE",
+          "type": "INT32_2D"
+        },
+        {
+          "name": ".end_point_id_lo",
+          "domain": "CURVE",
+          "type": "INT32_2D"
+        },
+        {
+          "name": ".end_point_id_hi",
+          "domain": "CURVE",
+          "type": "INT32_2D"
+        },
+        {
+          "name": ".center_point_id_lo",
+          "domain": "CURVE",
+          "type": "INT32_2D"
+        },
+        {
+          "name": ".center_point_id_hi",
+          "domain": "CURVE",
+          "type": "INT32_2D"
+        },
+        {
+          "name": "name_ordinal",
+          "domain": "CURVE",
+          "type": "INT"
+        },
+        {
+          "name": "curve_type",
+          "domain": "CURVE",
+          "type": "INT8"
+        }
+      ],
+      "constraints": [
+        {
+          "type": "DISTANCE",
+          "name": "Distance",
+          "value": 80.0,
+          "uid": "b596b36138076155"
+        },
+        {
+          "type": "DISTANCE",
+          "name": "Distance",
+          "value": 40.0,
+          "uid": "854e8777cfe2608d"
+        },
+        {
+          "type": "HORIZONTAL",
+          "name": "Horizontal",
+          "value": null,
+          "uid": "34d951e91ebc1842"
+        },
+        {
+          "type": "HORIZONTAL",
+          "name": "Horizontal",
+          "value": null,
+          "uid": "3796ba59443e9787"
+        },
+        {
+          "type": "VERTICAL",
+          "name": "Vertical",
+          "value": null,
+          "uid": "9e2682385835e430"
+        },
+        {
+          "type": "VERTICAL",
+          "name": "Vertical",
+          "value": null,
+          "uid": "9ed30bf4486ad938"
+        }
+      ]
+    },
+    "sceneProperties": {
+      "slvs:c:b596b36138076155": 80.0,
+      "slvs:c:854e8777cfe2608d": 40.0
+    },
+    "bodyMesh": {
+      "vertices": 4,
+      "faces": 1,
+      "worldDimensions": [
+        80.0,
+        40.0,
+        0.0
+      ]
+    }
+  },
+  "checks": {
+    "solverOkay": true,
+    "fullyDefined": true,
+    "dimensions": true,
+    "twoDrivingDimensions": true
+  },
+  "passed": true
+}

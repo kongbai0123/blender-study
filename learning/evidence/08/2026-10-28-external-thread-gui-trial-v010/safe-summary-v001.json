@@ -1,0 +1,546 @@
+{
+  "blenderVersion": "5.2.1 LTS",
+  "scenario": "learning/tutor/scenarios/external_thread_gui_trial_v010.py",
+  "scene": "learning/evidence/08/2026-10-28-external-thread-gui-trial-v010/demo-files/u08_external_gui_draft_v003.blend",
+  "sceneSha256": "5a0aea1af13f46e9bff1b14327aa199b6b34f421936fd5a516226fc13072ec04",
+  "status": "completed",
+  "workspacesSnapshotUnchanged": true,
+  "independentAudit": {
+    "blenderVersion": "5.2.1 LTS",
+    "sceneSha256": "5a0aea1af13f46e9bff1b14327aa199b6b34f421936fd5a516226fc13072ec04",
+    "object": "Thread_Core",
+    "vertices": 707,
+    "edges": 1124,
+    "faces": 419,
+    "triangles": 1410,
+    "minimumTriangleAreaMm2": 0.02867393217346469,
+    "triangleAreasBelow1eMinus5Mm2": 0,
+    "shortestMeshEdgeMm": 0.17093992002297914,
+    "thinTriangleThresholdExplanation": "1e-5 mm² is a diagnostic reporting threshold, not a repair tolerance or pass/fail standard.",
+    "boundaryEdges": 0,
+    "nonManifoldEdges": 0,
+    "connectedComponents": 1,
+    "signedVolumeObjectUnitsCubed": 407.9421752095479,
+    "worldBoundsMm": [
+      [
+        -6.0,
+        6.0
+      ],
+      [
+        -6.0,
+        6.0
+      ],
+      [
+        -0.09999775886535645,
+        4.699997901916504
+      ]
+    ],
+    "samePhaseCrestZMm": [
+      0.3,
+      1.3,
+      2.3,
+      3.3,
+      4.3
+    ],
+    "nonAdjacentTriangleOverlapPairs": 0,
+    "candidatePairs": [],
+    "overlapTestLimitation": "BVH candidate intersections exclude triangles sharing vertices; this is not a proof of freedom from all geometric defects.",
+    "unitScaleLength": 0.0010000000474974513,
+    "meshScale": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "independentAuditPath": "learning/evidence/08/2026-10-28-external-thread-gui-trial-v010/independent-audit-v001.json",
+  "records": [
+    {
+      "seq": 1,
+      "slug": "profile",
+      "image": "learning/evidence/08/2026-10-28-external-thread-gui-trial-v010/XTH-01-profile.png",
+      "sha256": "4ee883f9bbba5b122514137aa122dbeca32bafe702b43401dc9eed112aed76f3",
+      "observed": {
+        "object": "Thread_Triangle_Profile",
+        "mode": "OBJECT",
+        "vertices": 3,
+        "edges": 3,
+        "polygons": 0,
+        "boundary": 0,
+        "nonManifold": 3,
+        "modifier": [],
+        "boundaryCenters": []
+      }
+    },
+    {
+      "seq": 2,
+      "slug": "screw",
+      "image": "learning/evidence/08/2026-10-28-external-thread-gui-trial-v010/XTH-02-screw.png",
+      "sha256": "7078e4472c07d462f27b7c943a48dcd10db63e58d2efd727959005342e68d0e0",
+      "observed": {
+        "object": "Thread_Triangle_Profile",
+        "mode": "OBJECT",
+        "vertices": 387,
+        "edges": 771,
+        "polygons": 384,
+        "boundary": 6,
+        "nonManifold": 6,
+        "modifier": [
+          {
+            "type": "SCREW",
+            "screw": 1.0,
+            "iterations": 4,
+            "steps": 32
+          }
+        ],
+        "boundaryCenters": [
+          [
+            5.4,
+            0.0,
+            0.15
+          ],
+          [
+            5.4,
+            0.0,
+            0.45
+          ],
+          [
+            4.8,
+            0.0,
+            0.3
+          ],
+          [
+            5.4,
+            0.0,
+            4.15
+          ],
+          [
+            5.4,
+            0.0,
+            4.45
+          ],
+          [
+            4.8,
+            0.0,
+            4.3
+          ]
+        ]
+      }
+    },
+    {
+      "seq": 3,
+      "slug": "converted",
+      "image": "learning/evidence/08/2026-10-28-external-thread-gui-trial-v010/XTH-03-converted.png",
+      "sha256": "4433e726870ab457f4059e732778651e7228564024a6346b9b776e35492d6e40",
+      "observed": {
+        "object": "Thread_Triangle_Profile",
+        "mode": "OBJECT",
+        "vertices": 387,
+        "edges": 771,
+        "polygons": 384,
+        "boundary": 6,
+        "nonManifold": 6,
+        "modifier": [],
+        "boundaryCenters": [
+          [
+            5.4,
+            0.0,
+            0.15
+          ],
+          [
+            5.4,
+            0.0,
+            0.45
+          ],
+          [
+            4.8,
+            0.0,
+            0.3
+          ],
+          [
+            5.4,
+            0.0,
+            4.15
+          ],
+          [
+            5.4,
+            0.0,
+            4.45
+          ],
+          [
+            4.8,
+            0.0,
+            4.3
+          ]
+        ]
+      }
+    },
+    {
+      "seq": 4,
+      "slug": "selected-boundary",
+      "image": "learning/evidence/08/2026-10-28-external-thread-gui-trial-v010/XTH-04-selected-boundary.png",
+      "sha256": "7695128a816a887bb85539e1a9b628062f7668c8690faf850e6857452a48980a",
+      "observed": {
+        "object": "Thread_Triangle_Profile",
+        "mode": "EDIT",
+        "vertices": 387,
+        "edges": 771,
+        "polygons": 384,
+        "boundary": 6,
+        "nonManifold": 6,
+        "modifier": [],
+        "boundaryCenters": [
+          [
+            5.4,
+            0.0,
+            0.15
+          ],
+          [
+            5.4,
+            0.0,
+            0.45
+          ],
+          [
+            4.8,
+            0.0,
+            0.3
+          ],
+          [
+            5.4,
+            0.0,
+            4.15
+          ],
+          [
+            5.4,
+            0.0,
+            4.45
+          ],
+          [
+            4.8,
+            0.0,
+            4.3
+          ]
+        ]
+      }
+    },
+    {
+      "seq": 5,
+      "slug": "filled",
+      "image": "learning/evidence/08/2026-10-28-external-thread-gui-trial-v010/XTH-05-filled.png",
+      "sha256": "5594cc95f225ba98676f8c14d98f7f550585b9c2dec713848811926573928a56",
+      "observed": {
+        "object": "Thread_Triangle_Profile",
+        "mode": "EDIT",
+        "vertices": 387,
+        "edges": 771,
+        "polygons": 386,
+        "boundary": 0,
+        "nonManifold": 0,
+        "modifier": [],
+        "boundaryCenters": []
+      }
+    },
+    {
+      "seq": 6,
+      "slug": "normals",
+      "image": "learning/evidence/08/2026-10-28-external-thread-gui-trial-v010/XTH-06-normals.png",
+      "sha256": "a8621ac5e53cbd4daa5c9346c2d334f8421da0f4e3eb97a5b75be4625d0e8fd1",
+      "observed": {
+        "object": "Thread_Triangle_Profile",
+        "mode": "EDIT",
+        "vertices": 387,
+        "edges": 771,
+        "polygons": 386,
+        "boundary": 0,
+        "nonManifold": 0,
+        "modifier": [],
+        "boundaryCenters": []
+      }
+    },
+    {
+      "seq": 7,
+      "slug": "core",
+      "image": "learning/evidence/08/2026-10-28-external-thread-gui-trial-v010/XTH-07-core.png",
+      "sha256": "bc260b3bfac89e3565e5e59b6f71fb9b8bcdf121e2303854eae022f65f6adb0a",
+      "observed": {
+        "active": "Thread_Core",
+        "location": [
+          0.0,
+          0.0,
+          2.299999952316284
+        ],
+        "dimensions": [
+          9.951837539672852,
+          9.951837539672852,
+          4.799995422363281
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "rotationRadians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "worldBounds": [
+          [
+            -4.975918769836426,
+            4.975918769836426
+          ],
+          [
+            -4.975918769836426,
+            4.975918769836426
+          ],
+          [
+            -0.09999775886535645,
+            4.699997901916504
+          ]
+        ],
+        "selected": [
+          "Thread_Core"
+        ]
+      }
+    },
+    {
+      "seq": 8,
+      "slug": "boolean-probe",
+      "image": "learning/evidence/08/2026-10-28-external-thread-gui-trial-v010/XTH-08-boolean-probe.png",
+      "sha256": "973b88f5e39b96f983b4f64750b7dc2aa985bdbc4eb2aadca4ade0922b4e4324",
+      "observed": {
+        "operation": "UNION",
+        "operand": null,
+        "solver": "EXACT"
+      }
+    },
+    {
+      "seq": 9,
+      "slug": "boolean-preview",
+      "image": "learning/evidence/08/2026-10-28-external-thread-gui-trial-v010/XTH-09-boolean-preview.png",
+      "sha256": "06645b86f40b4bdbc81543f8c276d50d48887e84f77be79839c3bbc847d476fd",
+      "observed": {
+        "operation": "UNION",
+        "operand": "Thread_Triangle_Profile",
+        "solver": "EXACT"
+      }
+    },
+    {
+      "seq": 10,
+      "slug": "operand-hidden",
+      "image": "learning/evidence/08/2026-10-28-external-thread-gui-trial-v010/XTH-10-operand-hidden.png",
+      "sha256": "a11acc81b8835410960a34a41458978bc8cab29446fb4244419b3d29a4bce393",
+      "observed": null
+    },
+    {
+      "seq": 11,
+      "slug": "union",
+      "image": "learning/evidence/08/2026-10-28-external-thread-gui-trial-v010/XTH-11-union.png",
+      "sha256": "bfd16480f65d21a672be0cf439d01ad6a7ad69130939c137581156526f6ee9d6",
+      "observed": {
+        "stage": "union",
+        "vertices": 707,
+        "faces": 419,
+        "boundary": 0,
+        "nonManifold": 0,
+        "components": 1,
+        "volume": 407.9421752095479,
+        "bounds": [
+          [
+            -6.0,
+            6.0
+          ],
+          [
+            -6.0,
+            6.0
+          ],
+          [
+            -0.09999775886535645,
+            4.699997901916504
+          ]
+        ],
+        "outerPhaseZMm": [
+          0.3,
+          1.3,
+          2.3,
+          3.3,
+          4.3
+        ],
+        "sourceSha256": "9bda36c10fd916ef9cbe688f5ca56dcf8cfa0adb83d684300e60196225589d8f",
+        "angleDegrees": 360,
+        "leadMm": 1,
+        "starts": 1,
+        "iterations": 4,
+        "profileRadiusMm": [
+          4.8,
+          6
+        ],
+        "threadForm": "triangle draft, not ISO",
+        "physicalPrint": null,
+        "physicalFit": null,
+        "qualifiedClearance": null,
+        "qualifiedStrength": null
+      }
+    },
+    {
+      "seq": 12,
+      "slug": "framed",
+      "image": "learning/evidence/08/2026-10-28-external-thread-gui-trial-v010/XTH-12-framed.png",
+      "sha256": "6994e361406481b018d70fecb81244d1b4901efee418063d16d93e836cc77e7b",
+      "observed": {
+        "stage": "framed",
+        "vertices": 707,
+        "faces": 419,
+        "boundary": 0,
+        "nonManifold": 0,
+        "components": 1,
+        "volume": 407.9421752095479,
+        "bounds": [
+          [
+            -6.0,
+            6.0
+          ],
+          [
+            -6.0,
+            6.0
+          ],
+          [
+            -0.09999775886535645,
+            4.699997901916504
+          ]
+        ],
+        "outerPhaseZMm": [
+          0.3,
+          1.3,
+          2.3,
+          3.3,
+          4.3
+        ],
+        "sourceSha256": "9bda36c10fd916ef9cbe688f5ca56dcf8cfa0adb83d684300e60196225589d8f",
+        "angleDegrees": 360,
+        "leadMm": 1,
+        "starts": 1,
+        "iterations": 4,
+        "profileRadiusMm": [
+          4.8,
+          6
+        ],
+        "threadForm": "triangle draft, not ISO",
+        "physicalPrint": null,
+        "physicalFit": null,
+        "qualifiedClearance": null,
+        "qualifiedStrength": null
+      }
+    },
+    {
+      "seq": 13,
+      "slug": "saved",
+      "image": "learning/evidence/08/2026-10-28-external-thread-gui-trial-v010/XTH-13-saved.png",
+      "sha256": "f27f5610843bff35aae38f9bc33bb72964acb28bf258048d7acceed9aa2530c0",
+      "observed": {
+        "stage": "saved",
+        "vertices": 707,
+        "faces": 419,
+        "boundary": 0,
+        "nonManifold": 0,
+        "components": 1,
+        "volume": 407.9421752095479,
+        "bounds": [
+          [
+            -6.0,
+            6.0
+          ],
+          [
+            -6.0,
+            6.0
+          ],
+          [
+            -0.09999775886535645,
+            4.699997901916504
+          ]
+        ],
+        "outerPhaseZMm": [
+          0.3,
+          1.3,
+          2.3,
+          3.3,
+          4.3
+        ],
+        "sourceSha256": "9bda36c10fd916ef9cbe688f5ca56dcf8cfa0adb83d684300e60196225589d8f",
+        "angleDegrees": 360,
+        "leadMm": 1,
+        "starts": 1,
+        "iterations": 4,
+        "profileRadiusMm": [
+          4.8,
+          6
+        ],
+        "threadForm": "triangle draft, not ISO",
+        "physicalPrint": null,
+        "physicalFit": null,
+        "qualifiedClearance": null,
+        "qualifiedStrength": null
+      }
+    },
+    {
+      "seq": 14,
+      "slug": "reopened",
+      "image": "learning/evidence/08/2026-10-28-external-thread-gui-trial-v010/XTH-14-reopened.png",
+      "sha256": "3dba72a7e21239c07cb523e85e380bd301b61e85718d0d9760a4d3839fca6a0d",
+      "observed": {
+        "stage": "reopened",
+        "vertices": 707,
+        "faces": 419,
+        "boundary": 0,
+        "nonManifold": 0,
+        "components": 1,
+        "volume": 407.9421752095479,
+        "bounds": [
+          [
+            -6.0,
+            6.0
+          ],
+          [
+            -6.0,
+            6.0
+          ],
+          [
+            -0.09999775886535645,
+            4.699997901916504
+          ]
+        ],
+        "outerPhaseZMm": [
+          0.3,
+          1.3,
+          2.3,
+          3.3,
+          4.3
+        ],
+        "sourceSha256": "9bda36c10fd916ef9cbe688f5ca56dcf8cfa0adb83d684300e60196225589d8f",
+        "angleDegrees": 360,
+        "leadMm": 1,
+        "starts": 1,
+        "iterations": 4,
+        "profileRadiusMm": [
+          4.8,
+          6
+        ],
+        "threadForm": "triangle draft, not ISO",
+        "physicalPrint": null,
+        "physicalFit": null,
+        "qualifiedClearance": null,
+        "qualifiedStrength": null
+      }
+    }
+  ],
+  "physicalPrint": null,
+  "physicalMeasurement": null,
+  "physicalFit": null,
+  "qualifiedClearance": null,
+  "qualifiedStrength": null,
+  "warnings": [
+    "僅為幾何草案；不是 ISO 螺紋、列印或配合合格證明。",
+    "零非流形邊與零 BVH 候選不能證明沒有自交；面積門檻是診斷用而非合格標準。",
+    "raw runner-status 含機器私有 Recent 路徑，不得公開；本摘要未包含。",
+    "部分原始 action 欄位因編碼損壞，人工重新整理文字，原始證據未覆寫。"
+  ]
+}

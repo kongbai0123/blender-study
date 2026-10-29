@@ -1,0 +1,569 @@
+{
+  "schemaVersion": 1,
+  "id": "guard-v005-gui-verification-v001",
+  "blender": "5.2.1 LTS",
+  "cadSketcher": "0.32.1",
+  "methods": {
+    "fixture": "programmatic copied demonstration into scratch project fully inside run demo-files; fixture progress is not learner progress",
+    "registration": "programmatic runpy registration; not a demonstrated Text Editor loading procedure",
+    "controls": "native simulated GUI events for menus, fields, checkboxes and confirmations",
+    "save": "GUI File > Save As and Open; file-browser paths filled programmatically",
+    "readback": "Python inspection; viewport screenshots and numerical results are separate"
+  },
+  "guardScript": {
+    "path": "learning/tutor/guarded_box_parameters_v005.py",
+    "sha256": "e084d0e5a041528863c1b82e5674ebc5a2b218e105632709f0cd442572d25b24"
+  },
+  "runner": {
+    "status": "completed",
+    "exitCode": 0,
+    "workspaceEndpointComparisonUnchanged": true
+  },
+  "cases": [
+    {
+      "stage": "empty-assertion",
+      "sketch": {
+        "solver": "OKAY",
+        "dof": 0,
+        "constraints": {
+          "b596b36138076155": 80.0,
+          "854e8777cfe2608d": 40.0
+        }
+      },
+      "values": {
+        "L": 80.0,
+        "W": 40.0,
+        "H": 30.0,
+        "T": 2.0,
+        "B": 2.0,
+        "P": 2.0,
+        "D": 4.0,
+        "C": 0.4,
+        "S": 2.0
+      },
+      "guardError": null,
+      "bodyBounds": [
+        [
+          0.0,
+          80.0
+        ],
+        [
+          0.0,
+          40.0
+        ],
+        [
+          0.0,
+          30.0
+        ]
+      ],
+      "lidBounds": [
+        [
+          0.0,
+          80.0
+        ],
+        [
+          0.0,
+          40.0
+        ],
+        [
+          26.0,
+          32.0
+        ]
+      ],
+      "path": "learning/evidence/parametric/2026-10-27-box-guard-v005-gui-trial-v001/empty-assertion-state.json",
+      "sha256": "235140073fa7201b5b83464bcb1090115636ce27d71985e92d2988183001f24b"
+    },
+    {
+      "stage": "switch-assertion",
+      "sketch": {
+        "solver": "OKAY",
+        "dof": 0,
+        "constraints": {
+          "b596b36138076155": 80.0,
+          "854e8777cfe2608d": 40.0
+        }
+      },
+      "values": {
+        "L": 80.0,
+        "W": 40.0,
+        "H": 30.0,
+        "T": 2.0,
+        "B": 2.0,
+        "P": 2.0,
+        "D": 4.0,
+        "C": 0.4,
+        "S": 2.0
+      },
+      "guardError": null,
+      "bodyBounds": [
+        [
+          0.0,
+          80.0
+        ],
+        [
+          0.0,
+          40.0
+        ],
+        [
+          0.0,
+          30.0
+        ]
+      ],
+      "lidBounds": [
+        [
+          0.0,
+          80.0
+        ],
+        [
+          0.0,
+          40.0
+        ],
+        [
+          26.0,
+          32.0
+        ]
+      ],
+      "path": "learning/evidence/parametric/2026-10-27-box-guard-v005-gui-trial-v001/switch-assertion-state.json",
+      "sha256": "12b33efa66d127e673310c71b81b8514d0aa20558d2fff94e19c8e3f77c46c1b"
+    },
+    {
+      "stage": "unack-assertion",
+      "sketch": {
+        "solver": "OKAY",
+        "dof": 0,
+        "constraints": {
+          "b596b36138076155": 80.0,
+          "854e8777cfe2608d": 40.0
+        }
+      },
+      "values": {
+        "L": 80.0,
+        "W": 40.0,
+        "H": 30.0,
+        "T": 2.0,
+        "B": 2.0,
+        "P": 2.0,
+        "D": 4.0,
+        "C": 0.4,
+        "S": 2.0
+      },
+      "guardError": null,
+      "bodyBounds": [
+        [
+          0.0,
+          80.0
+        ],
+        [
+          0.0,
+          40.0
+        ],
+        [
+          0.0,
+          30.0
+        ]
+      ],
+      "lidBounds": [
+        [
+          0.0,
+          80.0
+        ],
+        [
+          0.0,
+          40.0
+        ],
+        [
+          26.0,
+          32.0
+        ]
+      ],
+      "path": "learning/evidence/parametric/2026-10-27-box-guard-v005-gui-trial-v001/unack-assertion-state.json",
+      "sha256": "302e18659b441081208a4ffebcbbc13bea13225615195b0568c39e2753dbeb0d"
+    },
+    {
+      "stage": "width-assertion",
+      "sketch": {
+        "solver": "OKAY",
+        "dof": 0,
+        "constraints": {
+          "b596b36138076155": 80.0,
+          "854e8777cfe2608d": 50.0
+        }
+      },
+      "values": {
+        "L": 80.0,
+        "W": 50.0,
+        "H": 30.0,
+        "T": 2.0,
+        "B": 2.0,
+        "P": 2.0,
+        "D": 4.0,
+        "C": 0.4,
+        "S": 2.0
+      },
+      "guardError": null,
+      "bodyBounds": [
+        [
+          0.0,
+          80.0
+        ],
+        [
+          0.0,
+          50.0
+        ],
+        [
+          0.0,
+          30.0
+        ]
+      ],
+      "lidBounds": [
+        [
+          0.0,
+          80.0
+        ],
+        [
+          0.0,
+          50.0
+        ],
+        [
+          26.0,
+          32.0
+        ]
+      ],
+      "path": "learning/evidence/parametric/2026-10-27-box-guard-v005-gui-trial-v001/width-assertion-state.json",
+      "sha256": "cbd12248b9675f8d1f1025646d90814b3624fbbedcaa281a1d17536ee9e0703e"
+    },
+    {
+      "stage": "invalid-assertion",
+      "sketch": {
+        "solver": "OKAY",
+        "dof": 0,
+        "constraints": {
+          "b596b36138076155": 80.0,
+          "854e8777cfe2608d": 50.0
+        }
+      },
+      "values": {
+        "L": 80.0,
+        "W": 50.0,
+        "H": 30.0,
+        "T": 2.0,
+        "B": 2.0,
+        "P": 2.0,
+        "D": 4.0,
+        "C": 0.4,
+        "S": 2.0
+      },
+      "guardError": null,
+      "bodyBounds": [
+        [
+          0.0,
+          80.0
+        ],
+        [
+          0.0,
+          50.0
+        ],
+        [
+          0.0,
+          30.0
+        ]
+      ],
+      "lidBounds": [
+        [
+          0.0,
+          80.0
+        ],
+        [
+          0.0,
+          50.0
+        ],
+        [
+          26.0,
+          32.0
+        ]
+      ],
+      "path": "learning/evidence/parametric/2026-10-27-box-guard-v005-gui-trial-v001/invalid-assertion-state.json",
+      "sha256": "556d4600ff6ff05c0cadfd7ce2b544d071fce1e19da0fd934a5a2c9ec1706a3f"
+    },
+    {
+      "stage": "length-assertion",
+      "sketch": {
+        "solver": "OKAY",
+        "dof": 0,
+        "constraints": {
+          "b596b36138076155": 70.0,
+          "854e8777cfe2608d": 50.0
+        }
+      },
+      "values": {
+        "L": 70.0,
+        "W": 50.0,
+        "H": 30.0,
+        "T": 2.0,
+        "B": 2.0,
+        "P": 2.0,
+        "D": 4.0,
+        "C": 0.4,
+        "S": 2.0
+      },
+      "guardError": null,
+      "bodyBounds": [
+        [
+          0.0,
+          70.0
+        ],
+        [
+          0.0,
+          50.0
+        ],
+        [
+          0.0,
+          30.0
+        ]
+      ],
+      "lidBounds": [
+        [
+          0.0,
+          70.0
+        ],
+        [
+          0.0,
+          50.0
+        ],
+        [
+          26.0,
+          32.0
+        ]
+      ],
+      "path": "learning/evidence/parametric/2026-10-27-box-guard-v005-gui-trial-v001/length-assertion-state.json",
+      "sha256": "1171c4be2cb2f1afd4a7ecbd4ef1f18f2a942b2ae5230bd34d8626c710b264ff"
+    },
+    {
+      "stage": "reopened-assertion",
+      "sketch": {
+        "solver": "OKAY",
+        "dof": 0,
+        "constraints": {
+          "b596b36138076155": 70.0,
+          "854e8777cfe2608d": 50.0
+        }
+      },
+      "values": {
+        "L": 70.0,
+        "W": 50.0,
+        "H": 30.0,
+        "T": 2.0,
+        "B": 2.0,
+        "P": 2.0,
+        "D": 4.0,
+        "C": 0.4,
+        "S": 2.0
+      },
+      "guardError": null,
+      "bodyBounds": [
+        [
+          0.0,
+          70.0
+        ],
+        [
+          0.0,
+          50.0
+        ],
+        [
+          0.0,
+          30.0
+        ]
+      ],
+      "lidBounds": [
+        [
+          0.0,
+          70.0
+        ],
+        [
+          0.0,
+          50.0
+        ],
+        [
+          26.0,
+          32.0
+        ]
+      ],
+      "path": "learning/evidence/parametric/2026-10-27-box-guard-v005-gui-trial-v001/reopened-assertion-state.json",
+      "sha256": "6ba7fcddb130d8db818a42044c7685b8a137d82ca269e596c2f8c8c1604566c0"
+    },
+    {
+      "stage": "registered-assertion",
+      "sketch": {
+        "solver": "OKAY",
+        "dof": 0,
+        "constraints": {
+          "b596b36138076155": 70.0,
+          "854e8777cfe2608d": 50.0
+        }
+      },
+      "values": null,
+      "guardError": "此檔案已登記為版本；請先以新檔名另存。",
+      "bodyBounds": [
+        [
+          0.0,
+          70.0
+        ],
+        [
+          0.0,
+          50.0
+        ],
+        [
+          0.0,
+          30.0
+        ]
+      ],
+      "lidBounds": [
+        [
+          0.0,
+          70.0
+        ],
+        [
+          0.0,
+          50.0
+        ],
+        [
+          26.0,
+          32.0
+        ]
+      ],
+      "path": "learning/evidence/parametric/2026-10-27-box-guard-v005-gui-trial-v001/registered-assertion-state.json",
+      "sha256": "3f83a2ecbffaff71db3824a4b6696879d7f04b7c6143d2dbf23b711e21eaa72f"
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "learning/evidence/parametric/2026-10-27-box-guard-v005-gui-trial-v001/GUARD-01-fixture-opened.png",
+      "sha256": "3218fbf01ce40dbd34f6eb1c5a6a4d4e921b107b2de814dbbd7ce0b519ee2a89",
+      "bytes": 176688
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-box-guard-v005-gui-trial-v001/GUARD-02-panel-click.png",
+      "sha256": "197f902483b234afe9d52480bd298ced438473b21e333e620c90d2d27ca65c2b",
+      "bytes": 147019
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-box-guard-v005-gui-trial-v001/GUARD-03-dialog-open.png",
+      "sha256": "524398eb992a316770d04775df5a35d218d4868a5b95f7326ca7babe37467239",
+      "bytes": 145806
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-box-guard-v005-gui-trial-v001/GUARD-04-empty-attempt.png",
+      "sha256": "4f4289fe4ad603ed454e8956b2e78934f954a530828a5ebbaf039f8044cc8b71",
+      "bytes": 156394
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-box-guard-v005-gui-trial-v001/GUARD-05-switch-before.png",
+      "sha256": "44e1c41638083e375ed7058057a90865f592c7164e1d2b4f31f51276a263cc58",
+      "bytes": 151167
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-box-guard-v005-gui-trial-v001/GUARD-06-switch-after.png",
+      "sha256": "52a0c17cce8ee5ca522f8c4c3e86d1d6d1a294048384b87fb85360d26c0b5386",
+      "bytes": 144858
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-box-guard-v005-gui-trial-v001/GUARD-07-switch-attempt.png",
+      "sha256": "a6512d2096d4cb5ceed0f10283c22c9075259e97f51d85dfe2d6dcb2a2f476f0",
+      "bytes": 157373
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-box-guard-v005-gui-trial-v001/GUARD-08-value-before.png",
+      "sha256": "bfea035867c0e16470ddbf939e4e214cd5b2b581a1325fc092c6597e2cd3eb4a",
+      "bytes": 151891
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-box-guard-v005-gui-trial-v001/GUARD-09-value-after.png",
+      "sha256": "fcc56fbc6da30c56483627541bd670c94d3d310993e84b084fc376280f8ac379",
+      "bytes": 145368
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-box-guard-v005-gui-trial-v001/GUARD-10-unack-attempt.png",
+      "sha256": "a6512d2096d4cb5ceed0f10283c22c9075259e97f51d85dfe2d6dcb2a2f476f0",
+      "bytes": 157373
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-box-guard-v005-gui-trial-v001/GUARD-11-width-proposal.png",
+      "sha256": "4aae518ebda894a48c13d43bd574cb5cbaae1dfcda4ea560f57431db2f50132b",
+      "bytes": 151939
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-box-guard-v005-gui-trial-v001/GUARD-12-width-changed.png",
+      "sha256": "a25587c6520198879ff958b581a43f5b0e050b05f15b88d33a6bdc0a6fa5e557",
+      "bytes": 159702
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-box-guard-v005-gui-trial-v001/GUARD-13-invalid-proposal.png",
+      "sha256": "75613299cb61c69fc7350ff299b0c775099dd049a20656dc305515a94e12c143",
+      "bytes": 148162
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-box-guard-v005-gui-trial-v001/GUARD-14-invalid-attempt.png",
+      "sha256": "8565064386770a9e1ff0227164e3ccde4465af1b208e8ef34ee966028679fbd7",
+      "bytes": 161876
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-box-guard-v005-gui-trial-v001/GUARD-15-length-proposal.png",
+      "sha256": "6a50a41b655043ced5ac33a7139220ffa3bfb864315215ce7af1f1d1424451e2",
+      "bytes": 155480
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-box-guard-v005-gui-trial-v001/GUARD-16-length-changed.png",
+      "sha256": "36f6c3b8ec0cfb2a5d7954317d5475f392aa40bdfb5cbb2bad274de99177799b",
+      "bytes": 159554
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-box-guard-v005-gui-trial-v001/GUARD-17-saved.png",
+      "sha256": "3226c9712be8e677664da3c297f2e2431783b29d1751c73b20daea8fc3f4e2f4",
+      "bytes": 153624
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-box-guard-v005-gui-trial-v001/GUARD-18-reopened.png",
+      "sha256": "59e7f33721c103f1ffcb0f2a392b84b9746a00493eff3e2a3b6505dc25a8cebf",
+      "bytes": 152346
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-box-guard-v005-gui-trial-v001/GUARD-19-registered-fixture.png",
+      "sha256": "5aacc7062c567fbbbb202ef476bfd59d41eb2a074754b5632b9e602c95847fae",
+      "bytes": 146991
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-box-guard-v005-gui-trial-v001/GUARD-20-registered-attempt.png",
+      "sha256": "0d3b83d8c9ab274cd4bacf3432295757dbca509436cdcce17604cfa0e3e7ab59",
+      "bytes": 151647
+    }
+  ],
+  "fixtureScene": {
+    "path": "learning/evidence/parametric/2026-10-27-box-guard-v005-gui-trial-v001/demo-files/scratch-project/learning/workspaces/engineering-parametric/guard_trial_v002.blend",
+    "sha256": "cb0652ae0a45183345039d291ffc8f1c3ef303819104413c34d5489ea2dac415",
+    "role": "isolated test fixture; not a user file"
+  },
+  "observedGui": [
+    "blank/unselected submit rejected",
+    "changing parameter cleared value and acknowledgement",
+    "editing value after acknowledgement cleared acknowledgement and unacknowledged submit rejected",
+    "GUI W 40 to 50 updated both parts",
+    "GUI D=29 rejected, prior D=4 remained",
+    "GUI L 80 to 70 updated both parts",
+    "save/reopen preserved L=70 W=50",
+    "registered scratch checkpoint GUI refused editing"
+  ],
+  "warning": {
+    "screenshot": "learning/evidence/parametric/2026-10-27-box-guard-v005-gui-trial-v001/GUARD-18-reopened.png",
+    "text": "Tool 'sketcher.slvs_select' not found for space 'VIEW_3D'",
+    "cause": "unknown; other drawing tools not proven functional"
+  },
+  "limitations": [
+    "Only this exact v004-derived model and isolated setup tested.",
+    "This panel validates necessary conditions and sampled evaluated geometry, not full interference or manufacturing; native Blender/CAD Sketcher fields can bypass it.",
+    "The panel was programmatically loaded; Text Editor loading and real-user interaction are not demonstrated.",
+    "No physical print, measurement, fit, manufacturing quality, or permissible clearance was established."
+  ],
+  "physicalMeasurements": null,
+  "fitResults": null,
+  "qualifiedClearanceMm": null
+}

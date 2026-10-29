@@ -28,7 +28,7 @@ class ChallengeProgressTests(unittest.TestCase):
         self.learning.mkdir()
         self.progress = self.learning / "progress.json"
         self.catalog = self.learning / "catalog.json"
-        self.manifest = self.learning / "web/challenges/challenges-v005.json"
+        self.manifest = self.learning / "web/challenges" / manage.CHALLENGES.name
         self.manifest.parent.mkdir(parents=True)
         self.progress.write_text(json.dumps({"schemaVersion": 1, "revision": 1, "updatedAt": "test",
             "activeLesson": "04", "lessons": {

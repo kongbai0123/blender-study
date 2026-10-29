@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "title": "第 11 章選修：程式預建工具與 GUI 內牙試塊",
+  "scope": "示範草案；並未將課程或學員進度標記為完成",
+  "sourceScene": "learning/evidence/08/2026-10-28-closed-external-thread-probe-v001/demo-files/u08_closed_external_thread_probe_v001.blend",
+  "sourceSha256": "dadb268dce5836f46d877d90a7ca0113de5280790f6d9611ce9a551422c4c700",
+  "demonstrationScene": "learning/evidence/08/2026-10-28-inner-boolean-trial-v003/demo-files/u08_inner_boolean_trial_v003.blend",
+  "demonstrationSceneSha256": "a312d1942c8198bff9ef97a18adc7a89d2f0eb882a890710dc11c8782cc74a80",
+  "limitations": [
+    "16×16×3 mm 試塊並非盒蓋",
+    "來源外牙由程式生成、端部不完整，未設配合間隙",
+    "非流形0和局部射線不能證明無自交或可列印",
+    "材料、標準、切片、實印、量測、試配與強度待定"
+  ],
+  "physicalPrint": null,
+  "physicalMeasurement": null,
+  "physicalFit": null,
+  "qualifiedClearance": null,
+  "qualifiedStrength": null,
+  "steps": [
+    {
+      "id": "11-inner-01",
+      "goal": "開啟程式預建外牙工具的保護副本",
+      "operation": "先複製來源 .blend；在 Blender 開啟副本，於 Outliner 確認 External_Thread_Draft。後續另存新檔，保留原檔。",
+      "context": "Blender 5.2.1 LTS；來源外牙是既有程式生成，不是本輪 GUI 建牙。",
+      "visibleConfirmation": "可見外牙草案及物件名稱。",
+      "programReadback": "程式讀回工具外框 X/Y ±6 mm、Z 0–4 mm；端牙不完整。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-inner-boolean-trial-v003/08-inner-01-source.png",
+        "sha256": "2c53e91d6b8f03b0c97e4a8bdc23b7a05b73a8e82d932328469892723a443985"
+      }
+    },
+    {
+      "id": "11-inner-02",
+      "goal": "新增並設定試塊",
+      "operation": "在 3D 視窗以 F3 搜尋 Add Cube；依序 S X 0.008、S Y 0.008、S Z 0.0015、G Z 2，最後 F3 搜尋 Apply Scale。",
+      "context": "此來源場景 Unit Scale 0.001，新增方塊初始尺寸 2000 mm；縮放數值只適用此場景，操作前應核對實際尺寸。",
+      "visibleConfirmation": "畫面中試塊包住切割工具，尺寸面板可核對。",
+      "programReadback": "Cube 名義尺寸 16 × 16 × 3 mm，套用縮放後 Scale 為 1；這只是試塊，不是盒蓋。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-inner-boolean-trial-v003/08-inner-02-blank.png",
+        "sha256": "27be2b3803c8fb9fa0a53599b45b6373abcc848cb51427c75bdb797e0e52ca72"
+      }
+    },
+    {
+      "id": "11-inner-03",
+      "goal": "指定 Difference 修改器與切割工具",
+      "operation": "選取 Cube，在修改器中新增 Boolean，選 Difference、Exact，Object 選 External_Thread_Draft。確認名稱後可在 Outliner 隱藏工具以查看預覽。",
+      "context": "需在物件模式選中 Cube；先確認 Object 欄位，Difference 為預覽時尚未套用。",
+      "visibleConfirmation": "修改器顯示 Difference、Exact 與 External_Thread_Draft；可旋轉視角觀察切割預覽。",
+      "programReadback": "程式讀回 operation DIFFERENCE、solver EXACT、operand External_Thread_Draft；截圖可能不能顯出所有孔內細節。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-inner-boolean-trial-v003/08-inner-04-preview.png",
+        "sha256": "8a64770716e6de25f982bb3c6946eeb612d7506ad9cfa4e58b082a229e797365"
+      }
+    },
+    {
+      "id": "11-inner-04",
+      "goal": "套用差集並檢查結果",
+      "operation": "工具隱藏後重新選 Cube，在 Boolean 修改器選單選 Apply；轉動視角查看孔內。",
+      "context": "套用前確認工具與差集設定正確；原始工具與原檔應保留。",
+      "visibleConfirmation": "畫面出現孔內網格；單張畫面不能證明整段牙型或完全閉合。",
+      "programReadback": "程式讀回 2039 頂點、2042 面、單一連通殼、非流形邊 0；外框約 16 × 16 × 3 mm，只有局部射線抽樣。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-inner-boolean-trial-v003/08-inner-05-applied.png",
+        "sha256": "2487151b13e7bc702d735b0135d2cd986607d7a8ad69586ea5216aed4cfca016"
+      }
+    },
+    {
+      "id": "11-inner-05",
+      "goal": "另存試塊新版本",
+      "operation": "使用 File > Save As，選擇新檔名另存 .blend，保留來源外牙及既有小盒原檔。",
+      "context": "示範中檔案對話框的路徑與檔名由程式填入；其他圖形操作使用 Blender 事件。",
+      "visibleConfirmation": "另存後可看到試塊場景。",
+      "programReadback": "示範另存的場景 SHA-256 為 a312d1942c8198bff9ef97a18adc7a89d2f0eb882a890710dc11c8782cc74a80；自行操作的檔案雜湊會不同。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-inner-boolean-trial-v003/08-inner-06-saved.png",
+        "sha256": "cb71996dd5a09df96caaf0cb5ed97044f07f7510d6c6a352d2ed240bab48f392"
+      }
+    },
+    {
+      "id": "11-inner-06",
+      "goal": "重開新版本核對",
+      "operation": "關閉或離開前先確認另存完成，再重新開啟剛存的試塊版本，確認孔、物件及外框。",
+      "context": "示範以 GUI 重開，檔案欄位由程式填入；不要覆寫來源。",
+      "visibleConfirmation": "重開後畫面仍有試塊及內孔。",
+      "programReadback": "重開後程式讀回外框約 16 × 16 × 3 mm、非流形邊 0；未執行實體列印、量測或試配。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-inner-boolean-trial-v003/08-inner-07-reopened.png",
+        "sha256": "d59af582a16ea32770e24a244732cbafab7f5122629d7cb278b712ada40952b9"
+      }
+    }
+  ]
+}

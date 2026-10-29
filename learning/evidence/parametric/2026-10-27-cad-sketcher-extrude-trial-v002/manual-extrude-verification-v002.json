@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 1,
+  "id": "cad-sketcher-manual-extrude-verification-v002",
+  "methods": {
+    "sketch": "prior native UI recorded rectangle 60x40; loaded as copied file",
+    "extrude": "native simulated GUI: leave sketch, Ctrl+Shift+E, type 30 without unit, Enter",
+    "environment": "programmatic isolated addon enable and file-browser path filling, native confirmation",
+    "dimensions": "programmatic readback of evaluated mesh world bounds, not screenshots"
+  },
+  "unitScale": 0.001,
+  "cases": [
+    {
+      "stage": "confirmed-state.json",
+      "bounds": [
+        [
+          0.0,
+          60.0
+        ],
+        [
+          0.0,
+          40.0
+        ],
+        [
+          0.0,
+          30.0
+        ]
+      ],
+      "vertices": 8,
+      "faces": 6,
+      "modifiers": [
+        {
+          "name": "CAD Sketcher Convert",
+          "type": "NODES"
+        },
+        {
+          "name": "CAD_Sketcher Extrude",
+          "type": "NODES"
+        }
+      ],
+      "statePath": "learning/evidence/parametric/2026-10-27-cad-sketcher-extrude-trial-v002/confirmed-state.json"
+    },
+    {
+      "stage": "reopened-state.json",
+      "bounds": [
+        [
+          0.0,
+          60.0
+        ],
+        [
+          0.0,
+          40.0
+        ],
+        [
+          0.0,
+          30.0
+        ]
+      ],
+      "vertices": 8,
+      "faces": 6,
+      "modifiers": [
+        {
+          "name": "CAD Sketcher Convert",
+          "type": "NODES"
+        },
+        {
+          "name": "CAD_Sketcher Extrude",
+          "type": "NODES"
+        }
+      ],
+      "statePath": "learning/evidence/parametric/2026-10-27-cad-sketcher-extrude-trial-v002/reopened-state.json"
+    }
+  ],
+  "runner": {
+    "status": "completed",
+    "exitCode": 0,
+    "workspaceEndpointComparisonUnchanged": true
+  },
+  "failedTrials": [
+    {
+      "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-extrude-probe-v001",
+      "result": "click prematurely accepted approximately 3.9 mm, not target"
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-extrude-trial-v001",
+      "result": "typing 30mm yielded 0.03 scene units, not target; runner failed expected bounds"
+    }
+  ],
+  "limitations": [
+    "This is a solid block, not a hollow box, not a lid and not a two-part parameter-linked construction.",
+    "Numerical entry 30 was observed in this exact version and 0.001 unit scale; do not generalize to other tools or versions.",
+    "No physical print, measurement or fit was performed."
+  ],
+  "physicalMeasurements": null,
+  "fitResults": null,
+  "qualifiedClearanceMm": null,
+  "files": [
+    {
+      "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-extrude-trial-v002/EXTRUDE-01-opened-sketch.png",
+      "sha256": "4d1898ecc22882b8921795558f6dadbec38585b2f3cd595af5e69e144eef6f85",
+      "bytes": 179267
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-extrude-trial-v002/EXTRUDE-02-left-sketch.png",
+      "sha256": "4be731ed2a5072db8802d144a6e9e31c623633ac1d72d1edfe769f38db599c05",
+      "bytes": 177698
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-extrude-trial-v002/EXTRUDE-03-tool-invoked.png",
+      "sha256": "c22906fa830e47b9f23083ced37e4ac5a6ec6a0c3008bcd177e6348e5515df49",
+      "bytes": 179731
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-extrude-trial-v002/EXTRUDE-04-numeric-entry.png",
+      "sha256": "2eade80ff0fe73966c8b2cf5cafbab9e775458580eb850392181ab2dec68062c",
+      "bytes": 180702
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-extrude-trial-v002/EXTRUDE-05-confirmed.png",
+      "sha256": "0d924b33a67dfd3b4d92b04559f4a9ee2bee37ea81bea6d35ba1ed8bde153c75",
+      "bytes": 180833
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-extrude-trial-v002/EXTRUDE-06-saved.png",
+      "sha256": "30e41249f7d4718ba94705599b6474bc07fdae4dc3d7fbacabadfb1c840596e5",
+      "bytes": 186119
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-extrude-trial-v002/EXTRUDE-07-reopened.png",
+      "sha256": "5406efc2b7771d4e0fa0f47c30ed09b9b7d8a4fcf689d26c7bc8f570f96ce161",
+      "bytes": 179600
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-extrude-trial-v002/confirmed-check-state.json",
+      "sha256": "6dcde4efba882036e0cc08d927724d95c4b5716d27f4054165929716c16cdec0",
+      "bytes": 1503
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-extrude-trial-v002/confirmed-state.json",
+      "sha256": "d59a9f0ceedf9723cca101a03b62c31ab6a924a040cca690799edb4ea3926bde",
+      "bytes": 1497
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-extrude-trial-v002/left-sketch-state.json",
+      "sha256": "e33cf2dd46114e750a9ca1e48c4875ee4a382c2c2fa581a68ec63cf946114cf7",
+      "bytes": 1412
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-extrude-trial-v002/numeric-entry-state.json",
+      "sha256": "bc84da1c1e9f327aca6b1d12126b4282041610c74e5f5b1aad78f7cff7b817f6",
+      "bytes": 1508
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-extrude-trial-v002/opened-sketch-state.json",
+      "sha256": "88587b6f02b0a5475da0680118e340693c2499e012bcd596ebb4ff7e251b368c",
+      "bytes": 1422
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-extrude-trial-v002/reopened-state.json",
+      "sha256": "fed97d6819407f80093e1d9758980e2ebb6dd41b7fc7cb0ec5eb40ea94f28150",
+      "bytes": 1496
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-extrude-trial-v002/saved-state.json",
+      "sha256": "0304f63a48633e1f914625ff07ac087942e6f2f1548feac4e792a9aef8f3c66d",
+      "bytes": 1493
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-extrude-trial-v002/tool-invoked-state.json",
+      "sha256": "5740055d2b510d0210aba7113a8e52c91b2742ced5c87028f869e1ee4bc32cc7",
+      "bytes": 1521
+    },
+    {
+      "path": "learning/evidence/parametric/2026-10-27-cad-sketcher-extrude-trial-v002/demo-files/manual_sketch_extrude_60x40x30_v001.blend",
+      "sha256": "688a06f588bbe0728a7d0c866acbc307c44fa7cc1c71e467b0aa807af2084c2d",
+      "bytes": 125298
+    }
+  ]
+}

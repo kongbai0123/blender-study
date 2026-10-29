@@ -1,0 +1,246 @@
+{
+  "kind": "controlled-manual-box-updater-missing-fault-trial",
+  "method": "獨立 Blender 5.2.1 / CAD Sketcher 0.32.1 假專案與假 progress，先以受控面板完成 X80→90，再僅對假專案程式將 updater 改名使不可用；GUI 事件提交 X70 並人工目視錯誤。",
+  "programs": [
+    {
+      "path": "learning/tutor/guarded_manual_box_v001.py",
+      "sha256": "9dd50ba87227fc6ea77df4f6344b602ba245becfe4efe28d5343600a1282f067"
+    },
+    {
+      "path": "learning/tutor/manual_box_auto_update_v002.py",
+      "sha256": "cc39a2376c8abc41f61cb5beb796a83e22b63dc33b6b6aed5df9f135e83fc457"
+    },
+    {
+      "path": "learning/tutor/manual_box_reference_v001.json",
+      "sha256": "78f39a6ec422bb02b64fff64f70896c927a6ab449bcd84be9a03b6657bedae5c"
+    }
+  ],
+  "phases": {
+    "helper-unavailable": {
+      "outerMm": [
+        90,
+        50
+      ],
+      "bounds": {
+        "Body": [
+          [
+            0.0,
+            90.0
+          ],
+          [
+            0.0,
+            50.0
+          ],
+          [
+            0.0,
+            30.0
+          ]
+        ],
+        "Body.001": [
+          [
+            2.0,
+            88.0
+          ],
+          [
+            2.0,
+            48.0
+          ],
+          [
+            2.0,
+            30.0
+          ]
+        ],
+        "Cube": [
+          [
+            0.000518798828125,
+            89.99948120117188
+          ],
+          [
+            0.000324249267578125,
+            49.99967575073242
+          ],
+          [
+            26.00001335144043,
+            31.99998664855957
+          ]
+        ]
+      }
+    },
+    "fault-proposal": {
+      "outerMm": [
+        90,
+        50
+      ],
+      "bounds": {
+        "Body": [
+          [
+            0.0,
+            90.0
+          ],
+          [
+            0.0,
+            50.0
+          ],
+          [
+            0.0,
+            30.0
+          ]
+        ],
+        "Body.001": [
+          [
+            2.0,
+            88.0
+          ],
+          [
+            2.0,
+            48.0
+          ],
+          [
+            2.0,
+            30.0
+          ]
+        ],
+        "Cube": [
+          [
+            0.000518798828125,
+            89.99948120117188
+          ],
+          [
+            0.000324249267578125,
+            49.99967575073242
+          ],
+          [
+            26.00001335144043,
+            31.99998664855957
+          ]
+        ]
+      }
+    },
+    "fault-result": {
+      "outerMm": [
+        90,
+        50
+      ],
+      "bounds": {
+        "Body": [
+          [
+            0.0,
+            90.0
+          ],
+          [
+            0.0,
+            50.0
+          ],
+          [
+            0.0,
+            30.0
+          ]
+        ],
+        "Body.001": [
+          [
+            2.0,
+            88.0
+          ],
+          [
+            2.0,
+            48.0
+          ],
+          [
+            2.0,
+            30.0
+          ]
+        ],
+        "Cube": [
+          [
+            0.000518798828125,
+            89.99948120117188
+          ],
+          [
+            0.000324249267578125,
+            49.99967575073242
+          ],
+          [
+            26.00001335144043,
+            31.99998664855957
+          ]
+        ]
+      }
+    }
+  },
+  "proposedL": 70,
+  "missingHelperInjectedOnlyInFakeProject": true,
+  "reportedUnconfirmedRollbackSeenByHuman": true,
+  "screenResult": "回復未確認，請勿存檔，重開原副本",
+  "images": [
+    {
+      "file": "FAULT-01-helper-unavailable.png",
+      "sha256": "33a6ba3350fea8197a37fa8a87f95be9fe5df6fe59d6f057c69e209ce7d25332"
+    },
+    {
+      "file": "FAULT-02-proposal.png",
+      "sha256": "8f616b69ff3a1f6a79cb6fe11ae908556d39738a0a412438070ea8a63042eac8"
+    },
+    {
+      "file": "FAULT-03-result.png",
+      "sha256": "73b674c53505d4f0179ae62c32edf8f1d98399317e1fc6dc35f5926e610da532"
+    },
+    {
+      "file": "GUARD-01-opened.png",
+      "sha256": "ef1ad4605384ee621ef5e3f501c68611a3cee86a5bb6f91f80595b56203d54f8"
+    },
+    {
+      "file": "GUARD-02-outer-sketch.png",
+      "sha256": "1de32f144a69380cc467c2048ce5dedd73946b89bae43304601cb47565844cc8"
+    },
+    {
+      "file": "GUARD-03-script-open.png",
+      "sha256": "298e218b1b77b93b54ebd69ab46d5f833f1fa4ab1634650023d0123b92cc3428"
+    },
+    {
+      "file": "GUARD-04-script-run.png",
+      "sha256": "298e218b1b77b93b54ebd69ab46d5f833f1fa4ab1634650023d0123b92cc3428"
+    },
+    {
+      "file": "GUARD-05-viewport.png",
+      "sha256": "5920f6fd06405232d45c4df0b0a708c2734ae2aaea3b85c63d712cac767c0ef9"
+    },
+    {
+      "file": "GUARD-06-panel.png",
+      "sha256": "58f9607dd0014fbdcba970dc83fabbfefb32fd823f54e6ad667e2376f5667ed3"
+    },
+    {
+      "file": "GUARD-07-dialog.png",
+      "sha256": "7e9e2f875b6162bb047481e098d027d14b182c242125c5d58a6d6dba8df507a2"
+    },
+    {
+      "file": "GUARD-08-parameter-menu.png",
+      "sha256": "671a582bde4a5f446e9e71e0471afab68d43bcbc230511604929a77f6e6c9c1a"
+    },
+    {
+      "file": "GUARD-09-invalid-proposal.png",
+      "sha256": "496b0278604159057d487ffe27b76a6a2603ea43ece64629932875313c047cde"
+    },
+    {
+      "file": "GUARD-10-invalid-result.png",
+      "sha256": "8318d576b440a57c58266f4d54acfcd1dd56c7beb90f4f46ee9b0dc1f5c87a66"
+    },
+    {
+      "file": "GUARD-11-valid-proposal.png",
+      "sha256": "b1cd55bb0d52928f0b4a23f43ae38d3cf499d8da0bcd0485e9d29f3138d19da8"
+    },
+    {
+      "file": "GUARD-12-valid-result.png",
+      "sha256": "33a6ba3350fea8197a37fa8a87f95be9fe5df6fe59d6f057c69e209ce7d25332"
+    }
+  ],
+  "limitations": [
+    "此為假專案故障注入：更新與回滾都找不到 helper；回復是否完整不能確認，應依訊息勿存檔並重開原副本。",
+    "前後外框讀值恰相同只能支持此次抽樣外框未變，不能證明內部所有資料、拓撲或後續安全。",
+    "錯誤提示由人工目視原圖；程式未自動解析文字，runner完成僅表劇本結束。",
+    "此受控面板不攔截 Blender 原生欄位、Save 或 Export；程式重啟後面板是否保留未驗。",
+    "未做全面碰撞、實體列印、量測及試配；總間隙0.4 mm為試驗值。"
+  ],
+  "physicalMeasurements": null,
+  "fitResults": null,
+  "qualifiedClearanceMm": null
+}

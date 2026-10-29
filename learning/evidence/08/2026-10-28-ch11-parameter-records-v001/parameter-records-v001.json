@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "title": "第 11 章參數與五金來源紀錄",
+  "scope": "以既有示範讀值和已選五金資料整理文字與表格；這是文件教學，不冒稱新的 Blender GUI 示範，也不更新學員進度。",
+  "sections": [
+    {
+      "id": "11-04",
+      "title": "列印外牙路線與參數",
+      "case": "既有手工輪廓外牙草案及盒側介面；並非 ISO 牙型，也不是 M3 金屬螺絲的螺紋。",
+      "source": {
+        "path": "learning/evidence/08/2026-10-28-external-thread-from-hand-profile-gui-v001/demo-files/u11_hand_thread_draft_v001.blend",
+        "sha256": "2d73ed99fe56cfbd676447cc3035c0cb8245b3eebf5b1ac72dc3b3c418afce50",
+        "audit": "learning/evidence/08/2026-10-28-external-thread-from-hand-profile-gui-v001/independent-audit-v001.json"
+      },
+      "parameters": [
+        {"name": "用途", "value": "盒側保護蓋介面草案", "classification": "用途選定，未實體驗證"},
+        {"name": "截面三頂點", "value": "(4.8,0,0)、(6,0,0.3)、(4.8,0,0.6)", "unit": "mm", "classification": "GUI 手工輸入名義值；非尺寸約束"},
+        {"name": "Screw 軸與角", "value": "Z 軸；Angle 360°；Object Screw 關", "classification": "示範設定；接至盒側後軸轉為 X"},
+        {"name": "線數 n", "value": 1, "unit": "線", "classification": "單線草案"},
+        {"name": "Screw 每圈位移／導程 l", "value": 1, "unit": "mm", "classification": "本例 Angle 360° 且 Object Screw 關"},
+        {"name": "螺距 P", "value": 1, "unit": "mm", "classification": "本例單線，依 l=nP 對應；不可對多線直接照搬"},
+        {"name": "圈數與角向分段", "value": "Iterations 4；每圈 32 段", "classification": "數位示範設定"},
+        {"name": "獨立外牙世界外框", "value": "約 12 × 12 × 4.8", "unit": "mm", "classification": "數位 mesh 外框，不是標準公稱尺寸或實測"},
+        {"name": "帽徑向放量", "value": 0.2, "unit": "mm／半徑", "classification": "名義試驗值；不是已驗證合格間隙"},
+        {"name": "帽名義直徑差", "value": 0.4, "unit": "mm／直徑", "classification": "同一徑向放量換算；不是實體量測"},
+        {"name": "帽中心軸向端隙", "value": 0.2, "unit": "mm", "classification": "名義試驗值；局部切除端牙且未實體試配"}
+      ],
+      "studentAction": "將用途、P、n、l、軸向、徑向與直徑差分欄記錄；未選定值留空，再對照實際檔案及限制。",
+      "limitations": ["單線範例中的 l=P 不能擴大為所有螺紋規則。", "盒側帽徑向與軸向均為試驗值，未列印或試配。", "STL 三角化修訂與原表面可能有差異，不宣稱完全等同性。"]
+    },
+    {
+      "id": "11-06",
+      "title": "已選 M3 五金與柱孔草案",
+      "case": "原平面上蓋的四柱熱熔嵌件方案，與盒側自製列印牙／保護帽為不同分支。",
+      "source": {
+        "path": "learning/hardware-selection-v001.json",
+        "sha256": "f6b3f32cff1a6e7a0396353960a81087055859e4b399751e4991362b13f4c6dc",
+        "screwManufacturerUrl": "https://www.ettinger.de/en/product-datasheet/53f5b0ccb6bc15a136c57179f752fbfb/create",
+        "insertManufacturerUrl": "https://www.ruthex.de/en/products/ruthex-gewindeeinsatz-m3-100-stuck-rx-m3x5-7-messing-gewindebuchsen",
+        "insertDimensionTableUrl": "https://www.ruthex.de/cdn/shop/files/1Tabelle.PT05_eb2a30fa-5c34-46f8-b557-a6c432354560_1024x.jpg?v=1748341911"
+      },
+      "parameters": [
+        {"name": "螺絲", "value": "ETTINGER 001.16.342；ISO 4762 M3×10；A2/AISI 304", "classification": "已選原廠規格；強度等級待定，不推定 A2-70"},
+        {"name": "螺絲頭", "value": "直徑 5.5；高度 3；內六角 2.5", "unit": "mm", "classification": "原廠名義尺寸，未建五金實體"},
+        {"name": "熱熔嵌件", "value": "ruthex RX-M3x5.7；長 5.7；外徑 4.6；前端 3.9", "unit": "mm", "classification": "已選原廠名義規格"},
+        {"name": "原廠建議導孔／最小深度／W", "value": "Ø4.0；6.7；1.6", "unit": "mm", "classification": "供應商建議或最小名義基準；非本件實體合格判定"},
+        {"name": "四柱中心", "value": "X=±21；Y=±11", "unit": "mm", "classification": "自訂草案名義位置"},
+        {"name": "柱外徑與盲孔", "value": "柱 Ø8；孔 Ø4、深 9；孔底 Z=6", "unit": "mm", "classification": "數位幾何名義值；多邊形對點與對邊不同"},
+        {"name": "蓋穿孔", "value": 3.4, "unit": "mm／直徑", "classification": "本案試驗名義值，非 ISO 孔公差或已驗證配合"},
+        {"name": "螺絲末端至孔底", "value": 1, "unit": "mm", "classification": "Z=7 至 Z=6 的名義數位包絡，未旋合或量測"},
+        {"name": "肋頂至蓋唇", "value": 1, "unit": "mm", "classification": "Z=10 至 Z=11 的靜態外框差，未驗證實際裝配"},
+        {"name": "柱壁局部數位抽樣", "value": "Z=14.9，各柱 32 向約 1.99037", "unit": "mm", "classification": "只在指定高度與方向抽樣，不能據此宣稱實體符合 W 或承載合格"}
+      ],
+      "studentAction": "先核對五金料號與原廠表格，再把原廠推薦、設計名義值、試驗值和實測值分欄；實測空格保持空白。",
+      "limitations": ["目前沒有購入、列印、熱熔、量測或試配結果。", "材料、安裝溫度、扭矩與強度等級未確定。", "螺絲頭包絡只是名義幾何，不是實際五金或接觸模擬。"]
+    }
+  ],
+  "physicalPrint": null,
+  "physicalMeasurement": null,
+  "physicalInstallation": null,
+  "physicalFit": null,
+  "qualifiedClearance": null,
+  "qualifiedStrength": null
+}

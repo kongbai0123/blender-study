@@ -1,0 +1,876 @@
+{
+  "schemaVersion": 1,
+  "base": "learning/web/engineering-curriculum-v035.json",
+  "baseSha256": "d40ffc3102585947f1a19d2e50d072f343cf25685df9d7e8555dfd702bc4fa91",
+  "scope": "01-06原圖/GUI補拍與現場方法；沒有學員或實體結果",
+  "patches": {
+    "ch01-01-01-01": {
+      "evidenceStatus": "existing_demo",
+      "actions": [
+        "只辨認目前畫面：Quick Setup 有首次設定選項；Splash 有啟動卡片；Default 是未被卡片遮擋的預設場景；Existing 是已有模型或檔名的作品。"
+      ],
+      "success": "回報你看到的畫面種類或描述畫面。若是既有作品，先保留；這一步不要求出現 Camera、Cube、Light，也不丟棄未儲存內容。",
+      "limitations": [
+        "本圖只展示隔離 Blender 預設場景；學員可能是 Quick Setup、Splash 或既有檔案，仍依自己畫面辨認。"
+      ],
+      "detail": {
+        "steps": [
+          "開啟 Blender，等視窗完整出現；不要先點任何按鈕。",
+          "Quick Setup：中間有語言、快捷鍵等首次設定選項。Splash：中間有啟動卡片，列出 New File 與最近檔案。",
+          "Default：沒有卡片遮擋，中央有灰色方塊 Cube。Existing：標題列有檔名，畫面是已存在的作品。",
+          "把看到的是哪一種回報給助教，或直接描述畫面。",
+          "示範讀值：{\"mode\": \"OBJECT\", \"dimensions\": [2.0, 2.0, 2.0], \"scale\": [1.0, 1.0, 1.0], \"vertices\": 8, \"faces\": 6, \"selectionMode\": [true, false, false], \"selectedVertices\": null, \"selectedEdges\": null, \"selectedFaces\": null, \"selectedMedian\": null, \"worldBounds\": [[-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0]], \"hidden\": false, \"units\": \"METERS\", \"unitScale\": 1.0}"
+        ],
+        "why": "先確認起點，之後的操作才不會誤關提示或丟掉沒存的作品。"
+      },
+      "figures": [
+        {
+          "type": "screenshot",
+          "path": "learning/evidence/03/2026-10-28-edit-practice-gui-v001/EDIT-01-default.png",
+          "sha256": "7fefffe3d6e72145c228a60b7ed5bce3e42e9525182a5ac42463cc5c00e3a3f4",
+          "caption": "觀察隔離 Blender General 預設畫面；此圖不代表學員畫面。 原圖保留；讀值為助教示範，不是學員結果。"
+        }
+      ]
+    },
+    "ch03-edit-01": {
+      "evidenceStatus": "existing_demo",
+      "actions": [
+        "在 Scene Properties > Units 設 Unit System=Metric、Length=Millimeters、Unit Scale=0.001。",
+        "另存自己的練習副本 u04_edit_practice_v001.blend；隔離實拍實際名為 u03_edit_practice_v001.blend，兩者不可混稱。"
+      ],
+      "success": "Units 顯示 Metric／Millimeters／0.001；另存成功通知或重開後的實際檔名與預期一致。",
+      "limitations": [
+        "檔案欄位由程式填寫，其餘列出的建模操作為獨立 Blender GUI；存檔僅到隔離示範資料夾。"
+      ],
+      "detail": {
+        "steps": [
+          "在 Scene Properties > Units 設 Unit System=Metric、Length=Millimeters、Unit Scale=0.001。",
+          "另存自己的練習副本 u04_edit_practice_v001.blend；隔離實拍實際名為 u03_edit_practice_v001.blend，兩者不可混稱。",
+          "示範檔名 u03_edit_practice_v001.blend；學員範例另存到自己的 04 工作區並使用 u04 前綴。"
+        ],
+        "why": "Unit Scale 0.001 時 1 個 Blender 單位就是 1 mm，輸入數字最直覺。"
+      },
+      "figures": [
+        {
+          "type": "screenshot",
+          "path": "learning/evidence/03/2026-10-28-edit-practice-gui-v001/EDIT-02-units.png",
+          "sha256": "249151cac127f355174cceffd805e87ab6d86c8d09f214f192ff806372ca27f4",
+          "caption": "GUI 設定毫米顯示與 Unit Scale 0.001。 原圖保留；讀值為助教示範，不是學員結果。"
+        },
+        {
+          "type": "screenshot",
+          "path": "learning/evidence/03/2026-10-28-edit-practice-gui-v001/EDIT-03-saved-start.png",
+          "sha256": "93bf1fef5b41bc2556df40748890fef5d8e6165e30d25065869d2e77d85396d0",
+          "caption": "GUI 另存編輯練習副本；檔案欄位由程式填入。 原圖保留；讀值為助教示範，不是學員結果。"
+        }
+      ],
+      "artifacts": [
+        {
+          "path": "learning/evidence/03/2026-10-28-edit-practice-gui-v001/safe-summary-v001.json",
+          "sha256": "9dbadbf2af1b3b39e99e6392fb8979f6233c33e8746b3b502020e18b696a26af",
+          "label": "18 個 GUI 動作與幾何讀值安全摘要"
+        }
+      ]
+    },
+    "ch03-edit-02": {
+      "evidenceStatus": "existing_demo",
+      "actions": [
+        "在 N 側欄把 Cube 的 Dimensions 依序輸入 20mm、20mm、20mm。",
+        "Object > Apply > Scale（Ctrl+A > Scale）。"
+      ],
+      "success": "Dimensions 20 × 20 × 20 mm，Scale 1、1、1。",
+      "limitations": [
+        "檔案欄位由程式填寫，其餘列出的建模操作為獨立 Blender GUI；存檔僅到隔離示範資料夾。"
+      ],
+      "detail": {
+        "steps": [
+          "選 Cube，側欄 Dimensions 依序輸入 20mm、20mm、20mm。",
+          "這時 Scale 會變成 10。",
+          "點 Object > Apply > Scale，Scale 回到 1、尺寸仍是 20 mm。",
+          "示範讀值：{\"mode\": \"OBJECT\", \"dimensions\": [20.0, 20.0, 20.0], \"scale\": [1.0, 1.0, 1.0], \"vertices\": 8, \"faces\": 6, \"selectionMode\": [true, false, false], \"selectedVertices\": null, \"selectedEdges\": null, \"selectedFaces\": null, \"selectedMedian\": null, \"worldBounds\": [[-10.0, 10.0], [-10.0, 10.0], [-10.0, 10.0]], \"hidden\": false, \"units\": \"MILLIMETERS\", \"unitScale\": 0.0010000000474974513}"
+        ],
+        "why": "Scale 不是 1 時，內插與擠出的數值會被放大。"
+      },
+      "figures": [
+        {
+          "type": "screenshot",
+          "path": "learning/evidence/03/2026-10-28-edit-practice-gui-v001/EDIT-04-cube20.png",
+          "sha256": "23e7bd0894cb894c01b2f2f9fc93445b4478065ef02f5813d1611d01b54f8fe6",
+          "caption": "GUI 尺寸欄輸入 20 mm 並套用 Scale。 原圖保留；讀值為助教示範，不是學員結果。"
+        }
+      ],
+      "artifacts": [
+        {
+          "path": "learning/evidence/03/2026-10-28-edit-practice-gui-v001/safe-summary-v001.json",
+          "sha256": "9dbadbf2af1b3b39e99e6392fb8979f6233c33e8746b3b502020e18b696a26af",
+          "label": "18 個 GUI 動作與幾何讀值安全摘要"
+        }
+      ]
+    },
+    "ch03-edit-03": {
+      "evidenceStatus": "existing_demo",
+      "actions": [
+        "按 Tab（或左上模式選單）進 Edit Mode。",
+        "按主鍵盤上排 1、2、3 分別切到點、邊、面選取，每換一種就點一下方塊上的一個元素。"
+      ],
+      "success": "左上顯示 Edit Mode，能說出目前是點、邊或面選取。",
+      "limitations": [
+        "檔案欄位由程式填寫，其餘列出的建模操作為獨立 Blender GUI；存檔僅到隔離示範資料夾。"
+      ],
+      "detail": {
+        "steps": [
+          "滑鼠在 3D Viewport 內按 Tab，左上變成 Edit Mode。",
+          "按主鍵盤上排的 1：點選取；點一下方塊的一個角點。",
+          "按 2：邊選取，點一條邊；按 3：面選取，點一個面。",
+          "示範讀值：{\"mode\": \"EDIT\", \"dimensions\": [20.0, 20.0, 20.0], \"scale\": [1.0, 1.0, 1.0], \"vertices\": 8, \"faces\": 6, \"selectionMode\": [true, false, false], \"selectedVertices\": 1, \"selectedEdges\": 0, \"selectedFaces\": 0, \"selectedMedian\": [10.0, -10.0, 10.0], \"worldBounds\": [[-10.0, 10.0], [-10.0, 10.0], [-10.0, 10.0]], \"hidden\": false, \"units\": \"MILLIMETERS\", \"unitScale\": 0.0010000000474974513}",
+          "示範讀值：{\"mode\": \"EDIT\", \"dimensions\": [20.0, 20.0, 20.0], \"scale\": [1.0, 1.0, 1.0], \"vertices\": 8, \"faces\": 6, \"selectionMode\": [false, true, false], \"selectedVertices\": 2, \"selectedEdges\": 1, \"selectedFaces\": 0, \"selectedMedian\": [0.0, -10.0, 10.0], \"worldBounds\": [[-10.0, 10.0], [-10.0, 10.0], [-10.0, 10.0]], \"hidden\": false, \"units\": \"MILLIMETERS\", \"unitScale\": 0.0010000000474974513}",
+          "示範讀值：{\"mode\": \"EDIT\", \"dimensions\": [20.0, 20.0, 20.0], \"scale\": [1.0, 1.0, 1.0], \"vertices\": 8, \"faces\": 6, \"selectionMode\": [false, false, true], \"selectedVertices\": 4, \"selectedEdges\": 4, \"selectedFaces\": 1, \"selectedMedian\": [0.0, 0.0, 10.0], \"worldBounds\": [[-10.0, 10.0], [-10.0, 10.0], [-10.0, 10.0]], \"hidden\": false, \"units\": \"MILLIMETERS\", \"unitScale\": 0.0010000000474974513}"
+        ],
+        "why": "建模時要先選對「點、邊或面」，工具才會作用在對的地方。"
+      },
+      "figures": [
+        {
+          "type": "screenshot",
+          "path": "learning/evidence/03/2026-10-28-edit-practice-gui-v001/EDIT-05-vertex.png",
+          "sha256": "11cfb679a6e8ad854b21f03583e134f8dcf56ff8c6f4cf062c642fda0be47278",
+          "caption": "GUI 進 Edit Mode、頂點模式，點一個可見頂點。 原圖保留；讀值為助教示範，不是學員結果。"
+        },
+        {
+          "type": "screenshot",
+          "path": "learning/evidence/03/2026-10-28-edit-practice-gui-v001/EDIT-06-edge.png",
+          "sha256": "3db95ffd00a537bde39141ff773d8b1bb49be3029a561506758db2c0095165e8",
+          "caption": "GUI 切邊模式並點上方邊線。 原圖保留；讀值為助教示範，不是學員結果。"
+        },
+        {
+          "type": "screenshot",
+          "path": "learning/evidence/03/2026-10-28-edit-practice-gui-v001/EDIT-07-face.png",
+          "sha256": "20ca5eb1024caefb70b94142985824c68a53c6333192a70c2c7f36dbad631f32",
+          "caption": "GUI 切面模式並選中頂面。 原圖保留；讀值為助教示範，不是學員結果。"
+        }
+      ],
+      "artifacts": [
+        {
+          "path": "learning/evidence/03/2026-10-28-edit-practice-gui-v001/safe-summary-v001.json",
+          "sha256": "9dbadbf2af1b3b39e99e6392fb8979f6233c33e8746b3b502020e18b696a26af",
+          "label": "18 個 GUI 動作與幾何讀值安全摘要"
+        }
+      ]
+    },
+    "ch03-edit-04": {
+      "evidenceStatus": "existing_demo",
+      "actions": [
+        "點選方塊頂面，按 G、再按 Z，輸入 5mm 後按 Enter。",
+        "看 N 側欄 Item 的 Median Z，再按 Ctrl+Z 撤回。"
+      ],
+      "success": "移動後頂面 Median Z 由 10 mm 變成 15 mm；撤回後回到 10 mm。",
+      "limitations": [
+        "檔案欄位由程式填寫，其餘列出的建模操作為獨立 Blender GUI；存檔僅到隔離示範資料夾。"
+      ],
+      "detail": {
+        "steps": [
+          "在面選取模式點方塊頂面。",
+          "按 G，再按 Z（限制沿 Z 軸），輸入 5mm，按 Enter。",
+          "看側欄 Item 的 Median Z 從 10 變 15 mm，再按 Ctrl+Z 撤回。",
+          "示範讀值：{\"mode\": \"EDIT\", \"dimensions\": [20.0, 20.0, 25.0], \"scale\": [1.0, 1.0, 1.0], \"vertices\": 8, \"faces\": 6, \"selectionMode\": [false, false, true], \"selectedVertices\": 4, \"selectedEdges\": 4, \"selectedFaces\": 1, \"selectedMedian\": [0.0, 0.0, 15.0], \"worldBounds\": [[-10.0, 10.0], [-10.0, 10.0], [-10.0, 15.0]], \"hidden\": false, \"units\": \"MILLIMETERS\", \"unitScale\": 0.0010000000474974513}",
+          "示範讀值：{\"mode\": \"EDIT\", \"dimensions\": [20.0, 20.0, 20.0], \"scale\": [1.0, 1.0, 1.0], \"vertices\": 8, \"faces\": 6, \"selectionMode\": [false, false, true], \"selectedVertices\": 4, \"selectedEdges\": 4, \"selectedFaces\": 1, \"selectedMedian\": [0.0, 0.0, 10.0], \"worldBounds\": [[-10.0, 10.0], [-10.0, 10.0], [-10.0, 10.0]], \"hidden\": false, \"units\": \"MILLIMETERS\", \"unitScale\": 0.0010000000474974513}"
+        ],
+        "why": "G → 軸 → 數值，是精確移動的標準做法。"
+      },
+      "figures": [
+        {
+          "type": "screenshot",
+          "path": "learning/evidence/03/2026-10-28-edit-practice-gui-v001/EDIT-08-move-top.png",
+          "sha256": "f6f0bebda894dca6732e8fccc29b625e35b41b89975cad52e94dd79962906d56",
+          "caption": "GUI G Z 5mm；所選頂面的 Median Z 由10到15。 原圖保留；讀值為助教示範，不是學員結果。"
+        },
+        {
+          "type": "screenshot",
+          "path": "learning/evidence/03/2026-10-28-edit-practice-gui-v001/EDIT-09-undo-move.png",
+          "sha256": "9c9d08425a7784aff780d49610396de48db7e3ad0db6adbe6940fbf60b7bca97",
+          "caption": "GUI Ctrl+Z 撤回頂面移動。 原圖保留；讀值為助教示範，不是學員結果。"
+        }
+      ],
+      "artifacts": [
+        {
+          "path": "learning/evidence/03/2026-10-28-edit-practice-gui-v001/safe-summary-v001.json",
+          "sha256": "9dbadbf2af1b3b39e99e6392fb8979f6233c33e8746b3b502020e18b696a26af",
+          "label": "18 個 GUI 動作與幾何讀值安全摘要"
+        }
+      ]
+    },
+    "ch03-edit-05": {
+      "evidenceStatus": "existing_demo",
+      "actions": [
+        "按 I，輸入 3mm 後 Enter：頂面內側留下一圈 3 mm 寬的邊。",
+        "按 E，輸入 5mm 後 Enter：中間的面沿法向往上擠出。"
+      ],
+      "success": "頂面中間長出 14 × 14 mm、高 5 mm 的凸台；這是練習，不需保存。",
+      "limitations": [
+        "檔案欄位由程式填寫，其餘列出的建模操作為獨立 Blender GUI；存檔僅到隔離示範資料夾。"
+      ],
+      "detail": {
+        "steps": [
+          "頂面仍選取，按 I，輸入 3mm，按 Enter：頂面內側出現一圈新的邊。",
+          "按 E，輸入 5mm，按 Enter：中間的面往上長出凸台。",
+          "示範讀值：{\"mode\": \"EDIT\", \"dimensions\": [20.0, 20.0, 20.0], \"scale\": [1.0, 1.0, 1.0], \"vertices\": 12, \"faces\": 10, \"selectionMode\": [false, false, true], \"selectedVertices\": 4, \"selectedEdges\": 4, \"selectedFaces\": 1, \"selectedMedian\": [0.0, 0.0, 10.0], \"worldBounds\": [[-10.0, 10.0], [-10.0, 10.0], [-10.0, 10.0]], \"hidden\": false, \"units\": \"MILLIMETERS\", \"unitScale\": 0.0010000000474974513}",
+          "示範讀值：{\"mode\": \"EDIT\", \"dimensions\": [20.0, 20.0, 25.0], \"scale\": [1.0, 1.0, 1.0], \"vertices\": 16, \"faces\": 14, \"selectionMode\": [false, false, true], \"selectedVertices\": 4, \"selectedEdges\": 4, \"selectedFaces\": 1, \"selectedMedian\": [0.0, 0.0, 15.0], \"worldBounds\": [[-10.0, 10.0], [-10.0, 10.0], [-10.0, 15.0]], \"hidden\": false, \"units\": \"MILLIMETERS\", \"unitScale\": 0.0010000000474974513}"
+        ],
+        "why": "上蓋的唇邊就是用內插加擠出做的。"
+      },
+      "figures": [
+        {
+          "type": "screenshot",
+          "path": "learning/evidence/03/2026-10-28-edit-practice-gui-v001/EDIT-10-inset.png",
+          "sha256": "06d1e1781172dbb7d7c3eaacc4b5739afd4413698c1909220b7e88032445b1d0",
+          "caption": "GUI I 3mm，頂面內插；選中內面 XY 跨距應各14mm。 原圖保留；讀值為助教示範，不是學員結果。"
+        },
+        {
+          "type": "screenshot",
+          "path": "learning/evidence/03/2026-10-28-edit-practice-gui-v001/EDIT-11-extrude.png",
+          "sha256": "31067761ec394371fe1e28d0cea32cab020634b89e6559d7197c7a50dd2d96a0",
+          "caption": "GUI E 5mm，內面沿法向擠出。 原圖保留；讀值為助教示範，不是學員結果。"
+        }
+      ],
+      "artifacts": [
+        {
+          "path": "learning/evidence/03/2026-10-28-edit-practice-gui-v001/safe-summary-v001.json",
+          "sha256": "9dbadbf2af1b3b39e99e6392fb8979f6233c33e8746b3b502020e18b696a26af",
+          "label": "18 個 GUI 動作與幾何讀值安全摘要"
+        }
+      ]
+    },
+    "ch03-edit-06": {
+      "evidenceStatus": "existing_demo",
+      "actions": [
+        "按 Ctrl+Z 兩次撤回擠出與內插，按 Tab 回 Object Mode。",
+        "按 H（Object > Show/Hide > Hide Selected）隱藏方塊，再按 Alt+H（Show Hidden Objects）顯示回來。"
+      ],
+      "success": "方塊回到 20 mm 立方體；隱藏時從畫面消失，顯示後回來，Outliner 的眼睛圖示跟著變。",
+      "limitations": [
+        "檔案欄位由程式填寫，其餘列出的建模操作為獨立 Blender GUI；存檔僅到隔離示範資料夾。"
+      ],
+      "detail": {
+        "steps": [
+          "按 Ctrl+Z 兩次，凸台與內插都撤回。",
+          "按 Tab 回 Object Mode。",
+          "按 H 隱藏方塊，再按 Alt+H 顯示回來。",
+          "示範讀值：{\"mode\": \"EDIT\", \"dimensions\": [20.0, 20.0, 20.0], \"scale\": [1.0, 1.0, 1.0], \"vertices\": 8, \"faces\": 6, \"selectionMode\": [false, false, true], \"selectedVertices\": 4, \"selectedEdges\": 4, \"selectedFaces\": 1, \"selectedMedian\": [0.0, 0.0, 10.0], \"worldBounds\": [[-10.0, 10.0], [-10.0, 10.0], [-10.0, 10.0]], \"hidden\": false, \"units\": \"MILLIMETERS\", \"unitScale\": 0.0010000000474974513}",
+          "示範讀值：{\"mode\": \"OBJECT\", \"dimensions\": [20.0, 20.0, 20.0], \"scale\": [1.0, 1.0, 1.0], \"vertices\": 8, \"faces\": 6, \"selectionMode\": [false, false, true], \"selectedVertices\": null, \"selectedEdges\": null, \"selectedFaces\": null, \"selectedMedian\": null, \"worldBounds\": [[-10.0, 10.0], [-10.0, 10.0], [-10.0, 10.0]], \"hidden\": true, \"units\": \"MILLIMETERS\", \"unitScale\": 0.0010000000474974513}",
+          "示範讀值：{\"mode\": \"OBJECT\", \"dimensions\": [20.0, 20.0, 20.0], \"scale\": [1.0, 1.0, 1.0], \"vertices\": 8, \"faces\": 6, \"selectionMode\": [false, false, true], \"selectedVertices\": null, \"selectedEdges\": null, \"selectedFaces\": null, \"selectedMedian\": null, \"worldBounds\": [[-10.0, 10.0], [-10.0, 10.0], [-10.0, 10.0]], \"hidden\": false, \"units\": \"MILLIMETERS\", \"unitScale\": 0.0010000000474974513}"
+        ],
+        "why": "做上蓋時要先把盒體藏起來，才看得到蓋子底面。"
+      },
+      "figures": [
+        {
+          "type": "screenshot",
+          "path": "learning/evidence/03/2026-10-28-edit-practice-gui-v001/EDIT-12-undo-twice.png",
+          "sha256": "758cfef07c4d771be94e6e905647dc4606e26826639caf9b8fa59ebabf2bcfdb",
+          "caption": "GUI 兩次 Ctrl+Z，恢復原本方塊。 原圖保留；讀值為助教示範，不是學員結果。"
+        },
+        {
+          "type": "screenshot",
+          "path": "learning/evidence/03/2026-10-28-edit-practice-gui-v001/EDIT-13-hidden.png",
+          "sha256": "f1a07be0d61ec1422201268c76a52d6744b92be425737299af06bc6b0157545f",
+          "caption": "GUI H 隱藏物件。 原圖保留；讀值為助教示範，不是學員結果。"
+        },
+        {
+          "type": "screenshot",
+          "path": "learning/evidence/03/2026-10-28-edit-practice-gui-v001/EDIT-14-shown.png",
+          "sha256": "50eb09c5536ff26b34f240b0959c7b76c199626dbd4d2f032b14fe58988e9079",
+          "caption": "GUI Alt+H 顯示物件。 原圖保留；讀值為助教示範，不是學員結果。"
+        }
+      ],
+      "artifacts": [
+        {
+          "path": "learning/evidence/03/2026-10-28-edit-practice-gui-v001/safe-summary-v001.json",
+          "sha256": "9dbadbf2af1b3b39e99e6392fb8979f6233c33e8746b3b502020e18b696a26af",
+          "label": "18 個 GUI 動作與幾何讀值安全摘要"
+        }
+      ]
+    },
+    "ch03-edit-07": {
+      "evidenceStatus": "existing_demo",
+      "actions": [
+        "View > Viewpoint > Bottom，或按 Ctrl+Numpad7；Frame Selected 對焦。",
+        "用數字鍵盤2轉回傾斜視角，或自行使用滑鼠中鍵旋轉。"
+      ],
+      "success": "切到底部時視窗左上顯示 Bottom Orthographic，看得到方塊底面。",
+      "limitations": [
+        "檔案欄位由程式填寫，其餘列出的建模操作為獨立 Blender GUI；存檔僅到隔離示範資料夾。"
+      ],
+      "detail": {
+        "steps": [
+          "View > Viewpoint > Bottom，或按 Ctrl+Numpad7；Frame Selected 對焦。",
+          "用數字鍵盤2轉回傾斜視角，或自行使用滑鼠中鍵旋轉。",
+          "示範實際使用 Ctrl+Numpad7、Frame Selected 及兩次 Numpad2；未示範滑鼠中鍵。"
+        ],
+        "why": "在底面做唇邊前，要先學會切到底部視角。"
+      },
+      "figures": [
+        {
+          "type": "screenshot",
+          "path": "learning/evidence/03/2026-10-28-edit-practice-gui-v001/EDIT-15-bottom.png",
+          "sha256": "c0a53bf7265f8a1fecb0050d84f7444171d8088b7c937a286f8719144494df7c",
+          "caption": "GUI Ctrl+Numpad7 切底視；只改視角。 原圖保留；讀值為助教示範，不是學員結果。"
+        },
+        {
+          "type": "screenshot",
+          "path": "learning/evidence/03/2026-10-28-edit-practice-gui-v001/EDIT-16-orbit.png",
+          "sha256": "a83e50e3d13d4075d31471f385fb37cf727ee6b561f509ef4c110442f5850adc",
+          "caption": "GUI 數字鍵盤轉回傾斜視角。 原圖保留；讀值為助教示範，不是學員結果。"
+        }
+      ],
+      "artifacts": [
+        {
+          "path": "learning/evidence/03/2026-10-28-edit-practice-gui-v001/safe-summary-v001.json",
+          "sha256": "9dbadbf2af1b3b39e99e6392fb8979f6233c33e8746b3b502020e18b696a26af",
+          "label": "18 個 GUI 動作與幾何讀值安全摘要"
+        }
+      ]
+    },
+    "ch03-04-06-04": {
+      "evidenceStatus": "existing_demo",
+      "actions": [
+        "Tab 回 Object Mode，在 Outliner 把盒子改名為 Body（F2）。",
+        "File > Save（Ctrl+S）保存 u04_box_v001.blend，到教學頁以單元 04 登記（場景 .blend）。"
+      ],
+      "success": "Body 60 × 40 × 30 mm、壁與底 2 mm，已保存並登記；上蓋與匯出都從這份開始。",
+      "limitations": [
+        "原盒來源 SHA 已核對；此為隔離副本，不在學員工作區登記。登記方式另有隔離流程示範。"
+      ],
+      "detail": {
+        "steps": [
+          "按 Tab 回 Object Mode。",
+          "在 Outliner 點盒子，按 F2 改名 Body。",
+          "File > Save（Ctrl+S），再到教學頁以單元 04 登記 u04_box_v001.blend。",
+          "示範讀值：{\"active\": \"Body\", \"mode\": \"OBJECT\", \"dimensions\": [60.0, 40.0, 30.0], \"scale\": [1.0, 1.0, 1.0], \"sourceSha256\": \"b918ee87d26e289f4c8a2f6633beceb854c7d0511e3eddcc969a0696afcd2530\"}",
+          "示範讀值：{\"active\": \"Body\", \"mode\": \"OBJECT\", \"dimensions\": [60.0, 40.0, 30.0], \"scale\": [1.0, 1.0, 1.0], \"sourceSha256\": \"b918ee87d26e289f4c8a2f6633beceb854c7d0511e3eddcc969a0696afcd2530\"}",
+          "示範讀值：{\"active\": \"Body\", \"mode\": \"OBJECT\", \"dimensions\": [60.0, 40.0, 30.0], \"scale\": [1.0, 1.0, 1.0], \"sourceSha256\": \"b918ee87d26e289f4c8a2f6633beceb854c7d0511e3eddcc969a0696afcd2530\"}"
+        ],
+        "why": "之後的上蓋與匯出都從這份原盒開始。"
+      },
+      "figures": [
+        {
+          "type": "screenshot",
+          "path": "learning/evidence/03/2026-10-28-save-body-gui-v001/SAVE-02-renamed.png",
+          "sha256": "815d64f3cfa991c30c268577d8cea74b61cb2d54494c920801153adfad56dd83",
+          "caption": "GUI F2 將盒體改名 Body。 原圖保留；讀值為助教示範，不是學員結果。"
+        },
+        {
+          "type": "screenshot",
+          "path": "learning/evidence/03/2026-10-28-save-body-gui-v001/SAVE-03-saved.png",
+          "sha256": "ed09bb0ef3ece0d97698f5d59834bf2a15a41aa42eb85fab98e62b4d90d87ce2",
+          "caption": "GUI Save As 保存新版本；檔名與資料夾欄由程式填入。 原圖保留；讀值為助教示範，不是學員結果。"
+        },
+        {
+          "type": "screenshot",
+          "path": "learning/evidence/03/2026-10-28-save-body-gui-v001/SAVE-04-reopened.png",
+          "sha256": "8f2e3f6b7ab7b6fcea5b739bb08f65c0c290d83cda8a70e01ddc0acfa89df232",
+          "caption": "GUI 重開新版本，核對 Body 及原盒外框。 原圖保留；讀值為助教示範，不是學員結果。"
+        }
+      ],
+      "artifacts": [
+        {
+          "path": "learning/evidence/03/2026-10-28-save-body-gui-v001/safe-summary-v001.json",
+          "sha256": "11bbf8283daaef266e6aef8127443083e2471325bffb11a1ed5405a43c256a2c",
+          "label": "原盒改名、保存及重開讀值"
+        }
+      ]
+    },
+    "ch03-02-03-04": {
+      "evidenceStatus": "existing_demo",
+      "actions": [
+        "Add > Mesh > Cube 新增方塊，在 N 側欄把 Dimensions 設為 0.12、0.12、1.2 m。",
+        "Location 設為 0、0、1.1 m。"
+      ],
+      "success": "立柱從基座頂面（Z 0.5 m）往上到 Z 1.7 m。",
+      "limitations": [
+        "沿用 2026-10-22 的原始逐件操作圖與讀值，不是本輪重新拍攝；訊號站使用公尺單位。"
+      ],
+      "detail": {
+        "steps": [
+          "Add > Mesh > Cube 新增方塊。",
+          "Dimensions 設 0.12、0.12、1.2 m。",
+          "Location 設 0、0、1.1 m（基座頂 0.5 + 立柱一半 0.6）。",
+          "示範讀值：\"Cube.002 Location (0 m, 0 m, 1.1 m)、Dimensions (0.12 m, 0.12 m, 1.2 m)、Scale (0.06, 0.06, 0.6)；底面 Z 0.5 m、頂面 Z 1.7 m；基座頂面 Z 0.5 m。\""
+        ],
+        "why": "同樣用中心位置把立柱接在基座上。"
+      },
+      "figures": [
+        {
+          "type": "screenshot",
+          "path": "learning/evidence/02/2026-10-22-lesson02-demo-v001/02-03-02-post.png",
+          "sha256": "a17872962700afd6ad7cf42b99472731281a547e6eb284852654cd4752749f9c",
+          "caption": "同樣步驟新增立柱：Dimensions 0.12、0.12、1.2，Location Z 1.1 原圖保留；讀值為助教示範，不是學員結果。"
+        }
+      ]
+    },
+    "ch03-02-03-05": {
+      "evidenceStatus": "existing_demo",
+      "actions": [
+        "Add > Mesh > UV Sphere 新增球體，Dimensions 設為 0.5、0.5、0.5 m。",
+        "Location 設為 0、0、1.95 m。"
+      ],
+      "success": "球底接在立柱頂端（Z 1.7 m），球頂在 Z 2.2 m。",
+      "limitations": [
+        "沿用 2026-10-22 的原始逐件操作圖與讀值，不是本輪重新拍攝；訊號站使用公尺單位。"
+      ],
+      "detail": {
+        "steps": [
+          "Add > Mesh > UV Sphere 新增球體。",
+          "Dimensions 設 0.5、0.5、0.5 m。",
+          "Location 設 0、0、1.95 m（立柱頂 1.7 + 半徑 0.25）。",
+          "示範讀值：\"Sphere Location (0 m, 0 m, 1.95 m)、Dimensions (0.5 m, 0.5 m, 0.5 m)、Scale (0.25, 0.25, 0.25)；底面 Z 1.7 m、頂面 Z 2.2 m；立柱頂面 Z 1.7 m；場景物件：Camera、Cube、Cube.001、Cube.002、Light、Plane、Sphere。\""
+        ],
+        "why": "球的中心在立柱頂端往上一個半徑。"
+      },
+      "figures": [
+        {
+          "type": "screenshot",
+          "path": "learning/evidence/02/2026-10-22-lesson02-demo-v001/02-03-03-signal.png",
+          "sha256": "ff97adac4e842e40013102a164e49b21947f74d2853ecdd0448ff7f9775f5a91",
+          "caption": "Add > Mesh > UV Sphere 新增訊號球：直徑 0.5，Location Z 1.95 原圖保留；讀值為助教示範，不是學員結果。"
+        }
+      ]
+    },
+    "ch02-gap-terms": {
+      "evidenceStatus": "documented_lesson",
+      "actions": [
+        "對照原盒口內寬56與唇外寬55.6 mm，列總差56−55.6=0.4 mm。",
+        "只有同軸置中且對稱時，這個方向的名義單側為0.4÷2=0.2 mm。"
+      ],
+      "success": "能分清此為名義設計關係，尚未量測或試配。",
+      "limitations": [
+        "不將水平總差當法向或螺紋徑向間隙；0.4是試驗值。"
+      ],
+      "detail": {
+        "steps": [
+          "對照原盒口內寬56與唇外寬55.6 mm，列總差56−55.6=0.4 mm。",
+          "只有同軸置中且對稱時，這個方向的名義單側為0.4÷2=0.2 mm。"
+        ],
+        "why": "總間隙與單側間隙差一倍，紀錄時一定要寫清楚是哪一種。"
+      },
+      "artifacts": [
+        {
+          "path": "learning/journal/templates/printing-measurement-protocol-v001.json",
+          "sha256": "af3a956e68f823f9c1bf6e9492a880604d43f9229bf7f69b3f76453f68f2871a",
+          "label": "現場列印、量測與試配方法（沒有結果）"
+        },
+        {
+          "path": "learning/journal/templates/fit-coupon-records-v002.csv",
+          "sha256": "45e68186b975aeca0c926526781a4d2e7db823de7a211a91920e9d4870d8edf8",
+          "label": "六孔名義設計與空白實測 CSV"
+        }
+      ]
+    },
+    "ch02-04-01-01": {
+      "evidenceStatus": "documented_lesson",
+      "actions": [
+        "在空白條件欄寫下已知的印表機、材料、噴嘴、線寬、層高、切片版本與預定方向；未知保留空白。",
+        "將來源場景與STL的版本／SHA一併列入；後續變更條件時建立新紀錄。"
+      ],
+      "success": "每項都有內容或「待定」。",
+      "limitations": [
+        "示範沒有預填機型、材料、線寬或合格間隙；噴嘴不代線寬。"
+      ],
+      "detail": {
+        "steps": [
+          "在空白條件欄寫下已知的印表機、材料、噴嘴、線寬、層高、切片版本與預定方向；未知保留空白。",
+          "將來源場景與STL的版本／SHA一併列入；後續變更條件時建立新紀錄。"
+        ],
+        "why": "同一個模型換印表機或材料，印出來的尺寸會不同。"
+      },
+      "artifacts": [
+        {
+          "path": "learning/journal/templates/printing-measurement-protocol-v001.json",
+          "sha256": "af3a956e68f823f9c1bf6e9492a880604d43f9229bf7f69b3f76453f68f2871a",
+          "label": "現場列印、量測與試配方法（沒有結果）"
+        },
+        {
+          "path": "learning/journal/templates/fit-coupon-records-v002.csv",
+          "sha256": "45e68186b975aeca0c926526781a4d2e7db823de7a211a91920e9d4870d8edf8",
+          "label": "六孔名義設計與空白實測 CSV"
+        }
+      ]
+    },
+    "ch02-04-01-02": {
+      "evidenceStatus": "field_protocol_ready",
+      "actions": [
+        "確認可取得的量具及其量程、解析度和檢查狀態，依量具手冊核對零點。",
+        "記錄目前有／沒有的工具；缺少量具時保留測量欄，不估填數值。"
+      ],
+      "success": "知道之後的實測步驟能不能記數值。",
+      "limitations": [
+        "本步方法已備妥；沒有實物量具與現場校驗結果。"
+      ],
+      "detail": {
+        "steps": [
+          "確認可取得的量具及其量程、解析度和檢查狀態，依量具手冊核對零點。",
+          "記錄目前有／沒有的工具；缺少量具時保留測量欄，不估填數值。"
+        ],
+        "why": "量具的解析度決定你能分辨多小的差異。"
+      },
+      "artifacts": [
+        {
+          "path": "learning/journal/templates/printing-measurement-protocol-v001.json",
+          "sha256": "af3a956e68f823f9c1bf6e9492a880604d43f9229bf7f69b3f76453f68f2871a",
+          "label": "現場列印、量測與試配方法（沒有結果）"
+        },
+        {
+          "path": "learning/journal/templates/fit-coupon-records-v002.csv",
+          "sha256": "45e68186b975aeca0c926526781a4d2e7db823de7a211a91920e9d4870d8edf8",
+          "label": "六孔名義設計與空白實測 CSV"
+        }
+      ]
+    },
+    "ch02-05-01-01": {
+      "evidenceStatus": "documented_lesson",
+      "actions": [
+        "寫下同方向的總間隙＝孔寬−軸寬，辨認設計值與實測值。",
+        "對置中對稱的方孔／方軸，再寫單側＝總間隙÷2；非置中或法向關係另行處理。"
+      ],
+      "success": "能自己算一組例子。",
+      "limitations": [
+        "公式不會自行產生合格公差或實測資料。"
+      ],
+      "detail": {
+        "steps": [
+          "寫下同方向的總間隙＝孔寬−軸寬，辨認設計值與實測值。",
+          "對置中對稱的方孔／方軸，再寫單側＝總間隙÷2；非置中或法向關係另行處理。"
+        ],
+        "why": "之後試片、上蓋都用這兩個公式。"
+      },
+      "artifacts": [
+        {
+          "path": "learning/journal/templates/printing-measurement-protocol-v001.json",
+          "sha256": "af3a956e68f823f9c1bf6e9492a880604d43f9229bf7f69b3f76453f68f2871a",
+          "label": "現場列印、量測與試配方法（沒有結果）"
+        },
+        {
+          "path": "learning/journal/templates/fit-coupon-records-v002.csv",
+          "sha256": "45e68186b975aeca0c926526781a4d2e7db823de7a211a91920e9d4870d8edf8",
+          "label": "六孔名義設計與空白實測 CSV"
+        }
+      ]
+    },
+    "ch02-05-01-02": {
+      "evidenceStatus": "documented_lesson",
+      "actions": [
+        "開啟六孔名義設計 CSV；表中的量測、條件與手感欄尚未填。",
+        "另存到自己的05工作區新版本，之後只在實際操作後填寫；保留教材原範本。"
+      ],
+      "success": "自己的紀錄表在 workspaces/05，欄位看得懂，實測欄先空著。",
+      "limitations": [
+        "範本已列0.1～0.6mm設計試驗點；空欄不代表零，也不是實測。"
+      ],
+      "detail": {
+        "steps": [
+          "開啟六孔名義設計 CSV；表中的量測、條件與手感欄尚未填。",
+          "另存到自己的05工作區新版本，之後只在實際操作後填寫；保留教材原範本。"
+        ],
+        "why": "第 06 章的量測與試配都填在這份表。"
+      },
+      "artifacts": [
+        {
+          "path": "learning/journal/templates/printing-measurement-protocol-v001.json",
+          "sha256": "af3a956e68f823f9c1bf6e9492a880604d43f9229bf7f69b3f76453f68f2871a",
+          "label": "現場列印、量測與試配方法（沒有結果）"
+        },
+        {
+          "path": "learning/journal/templates/fit-coupon-records-v002.csv",
+          "sha256": "45e68186b975aeca0c926526781a4d2e7db823de7a211a91920e9d4870d8edf8",
+          "label": "六孔名義設計與空白實測 CSV"
+        }
+      ]
+    },
+    "ch06-04-07-03": {
+      "evidenceStatus": "field_protocol_ready",
+      "actions": [
+        "到教學頁「檔案版本」以單元 04 登記這個 STL（用途：列印／其他輸出，來源：u04_box_v001.blend）。",
+        "把 STL 拖進切片軟體看尺寸。"
+      ],
+      "success": "切片軟體顯示 60 × 40 × 30 mm；差 1000 倍時先回報，不要在切片軟體縮放。",
+      "limitations": [
+        "現場方法與空白紀錄已完成；本教材沒有代為切片、實印、量測或試配。",
+        "STL無單位標記，需在所用切片軟體核對mm尺寸；軟體介面依實際版本，不提供捏造畫面。",
+        "登記流程保存來源與輸出關聯，不證明模型或實體合格。"
+      ],
+      "detail": {
+        "steps": [
+          "回到教學頁上方的「檔案版本」分頁，在登記表選檔案與用途，按「登記這個檔案版本」。 單元 04，用途「列印／其他輸出」，來源選 u04_box_v001.blend。",
+          "把 STL 拖進切片軟體，看尺寸是否 60 × 40 × 30 mm。"
+        ],
+        "why": "尺寸差 1000 倍通常是單位設定問題，先回報不要硬縮放。"
+      },
+      "artifacts": [
+        {
+          "path": "learning/journal/templates/printing-measurement-protocol-v001.json",
+          "sha256": "af3a956e68f823f9c1bf6e9492a880604d43f9229bf7f69b3f76453f68f2871a",
+          "label": "現場列印、量測與試配方法（沒有結果）"
+        },
+        {
+          "path": "learning/journal/templates/fit-coupon-records-v002.csv",
+          "sha256": "45e68186b975aeca0c926526781a4d2e7db823de7a211a91920e9d4870d8edf8",
+          "label": "六孔名義設計與空白實測 CSV"
+        }
+      ]
+    },
+    "ch06-05-04-05": {
+      "evidenceStatus": "field_protocol_ready",
+      "actions": [
+        "以單元 05 登記兩份 STL（用途：列印／其他輸出；來源分別選插銷與孔板的 .blend）。"
+      ],
+      "success": "版本表中兩份 STL 各自關聯正確的來源。",
+      "limitations": [
+        "現場方法與空白紀錄已完成；本教材沒有代為切片、實印、量測或試配。",
+        "STL無單位標記，需在所用切片軟體核對mm尺寸；軟體介面依實際版本，不提供捏造畫面。",
+        "登記流程保存來源與輸出關聯，不證明模型或實體合格。"
+      ],
+      "detail": {
+        "steps": [
+          "回到教學頁上方的「檔案版本」分頁，在登記表選檔案與用途，按「登記這個檔案版本」。 單元 05，用途「列印／其他輸出」。",
+          "插銷 STL 的來源選 u05_fit_coupon_v001.blend，孔板 STL 選 u05_hole_plate_v001.blend。"
+        ],
+        "why": "每個列印檔都能追回來源場景。"
+      },
+      "artifacts": [
+        {
+          "path": "learning/journal/templates/printing-measurement-protocol-v001.json",
+          "sha256": "af3a956e68f823f9c1bf6e9492a880604d43f9229bf7f69b3f76453f68f2871a",
+          "label": "現場列印、量測與試配方法（沒有結果）"
+        },
+        {
+          "path": "learning/journal/templates/fit-coupon-records-v002.csv",
+          "sha256": "45e68186b975aeca0c926526781a4d2e7db823de7a211a91920e9d4870d8edf8",
+          "label": "六孔名義設計與空白實測 CSV"
+        }
+      ]
+    },
+    "ch06-fit-01": {
+      "evidenceStatus": "field_protocol_ready",
+      "actions": [
+        "把兩份 STL 拖進切片軟體，核對 10 × 10 × 8 與 96 × 26 × 4 mm，平放在列印床上。",
+        "在紀錄表寫下印表機、材料、噴嘴、層高、切片軟體與擺放方向後列印。"
+      ],
+      "success": "取得插銷與孔板實物，紀錄表的列印條件完整。",
+      "limitations": [
+        "現場方法與空白紀錄已完成；本教材沒有代為切片、實印、量測或試配。",
+        "STL無單位標記，需在所用切片軟體核對mm尺寸；軟體介面依實際版本，不提供捏造畫面。",
+        "登記流程保存來源與輸出關聯，不證明模型或實體合格。"
+      ],
+      "detail": {
+        "steps": [
+          "把兩份 STL 拖進切片軟體，平放在列印床上，核對尺寸。",
+          "在紀錄表寫下印表機、材料、噴嘴、層高、切片軟體與擺放方向。",
+          "開始列印。"
+        ],
+        "why": "列印條件不同，結果也不同；先記下來才比得出差異。"
+      },
+      "artifacts": [
+        {
+          "path": "learning/journal/templates/printing-measurement-protocol-v001.json",
+          "sha256": "af3a956e68f823f9c1bf6e9492a880604d43f9229bf7f69b3f76453f68f2871a",
+          "label": "現場列印、量測與試配方法（沒有結果）"
+        },
+        {
+          "path": "learning/journal/templates/fit-coupon-records-v002.csv",
+          "sha256": "45e68186b975aeca0c926526781a4d2e7db823de7a211a91920e9d4870d8edf8",
+          "label": "六孔名義設計與空白實測 CSV"
+        }
+      ]
+    },
+    "ch06-fit-02": {
+      "evidenceStatus": "field_protocol_ready",
+      "actions": [
+        "用卡尺量插銷 X、Y 各 2～3 處。",
+        "量六個孔的 X、Y 寬度（依凹點數 1～6 辨認；看不清楚時依孔中心由 X −35 到 +35 的順序），填入紀錄表。"
+      ],
+      "success": "每個孔都有實測寬度，並算出「孔實測 − 插銷實測」的實測總間隙。",
+      "limitations": [
+        "現場方法與空白紀錄已完成；本教材沒有代為切片、實印、量測或試配。",
+        "STL無單位標記，需在所用切片軟體核對mm尺寸；軟體介面依實際版本，不提供捏造畫面。",
+        "登記流程保存來源與輸出關聯，不證明模型或實體合格。"
+      ],
+      "detail": {
+        "steps": [
+          "用卡尺量插銷 X、Y 各 2～3 處，取平均。",
+          "量六個孔的 X、Y 寬度，依凹點數辨認孔號。",
+          "算出每孔「孔實測 − 插銷實測」。",
+          "凹點不清時，按孔中心 X=-35、-21、-7、7、21、35 mm 對應總間隙 0.1～0.6 mm；不要憑印糊的凹點猜值。"
+        ],
+        "why": "實際間隙常和設計值不同，這就是試片的目的。"
+      },
+      "artifacts": [
+        {
+          "path": "learning/journal/templates/printing-measurement-protocol-v001.json",
+          "sha256": "af3a956e68f823f9c1bf6e9492a880604d43f9229bf7f69b3f76453f68f2871a",
+          "label": "現場列印、量測與試配方法（沒有結果）"
+        },
+        {
+          "path": "learning/journal/templates/fit-coupon-records-v002.csv",
+          "sha256": "45e68186b975aeca0c926526781a4d2e7db823de7a211a91920e9d4870d8edf8",
+          "label": "六孔名義設計與空白實測 CSV"
+        }
+      ]
+    },
+    "ch06-fit-03": {
+      "evidenceStatus": "field_protocol_ready",
+      "actions": [
+        "把插銷依序插入 1～6 點孔，每孔試 2～3 次，方向保持一致。",
+        "記錄插不進、很緊、滑順或晃動。"
+      ],
+      "success": "六個孔都有試插手感紀錄。",
+      "limitations": [
+        "現場方法與空白紀錄已完成；本教材沒有代為切片、實印、量測或試配。",
+        "STL無單位標記，需在所用切片軟體核對mm尺寸；軟體介面依實際版本，不提供捏造畫面。",
+        "登記流程保存來源與輸出關聯，不證明模型或實體合格。"
+      ],
+      "detail": {
+        "steps": [
+          "同一個方向把插銷依序插進 1～6 點孔，每孔試 2～3 次。",
+          "記錄：插不進、很緊、滑順、晃動。"
+        ],
+        "why": "手感是選配合的直接依據。"
+      },
+      "artifacts": [
+        {
+          "path": "learning/journal/templates/printing-measurement-protocol-v001.json",
+          "sha256": "af3a956e68f823f9c1bf6e9492a880604d43f9229bf7f69b3f76453f68f2871a",
+          "label": "現場列印、量測與試配方法（沒有結果）"
+        },
+        {
+          "path": "learning/journal/templates/fit-coupon-records-v002.csv",
+          "sha256": "45e68186b975aeca0c926526781a4d2e7db823de7a211a91920e9d4870d8edf8",
+          "label": "六孔名義設計與空白實測 CSV"
+        }
+      ]
+    },
+    "ch06-fit-04": {
+      "evidenceStatus": "field_protocol_ready",
+      "actions": [
+        "從試插結果選出你要的配合（例如能順利開合又不晃的那一孔），寫下它的設計總間隙、實測值與選擇理由。"
+      ],
+      "success": "有現場資料時才記錄所選候選間隙或差值與理由；尚未取得資料則保持空白，教材方法已備妥。",
+      "limitations": [
+        "現場方法與空白紀錄已完成；本教材沒有代為切片、實印、量測或試配。",
+        "STL無單位標記，需在所用切片軟體核對mm尺寸；軟體介面依實際版本，不提供捏造畫面。",
+        "登記流程保存來源與輸出關聯，不證明模型或實體合格。"
+      ],
+      "detail": {
+        "steps": [
+          "在紀錄表找出你想要的配合，例如「能順利插拔又不晃」的那一孔。",
+          "寫下它的設計總間隙、實測值與選擇理由。"
+        ],
+        "why": "方孔插銷試片的觀察可作相同材料與工藝下的上蓋候選起點；環形唇邊仍需實際盒蓋試配，不自動轉成合格間隙。"
+      },
+      "artifacts": [
+        {
+          "path": "learning/journal/templates/printing-measurement-protocol-v001.json",
+          "sha256": "af3a956e68f823f9c1bf6e9492a880604d43f9229bf7f69b3f76453f68f2871a",
+          "label": "現場列印、量測與試配方法（沒有結果）"
+        },
+        {
+          "path": "learning/journal/templates/fit-coupon-records-v002.csv",
+          "sha256": "45e68186b975aeca0c926526781a4d2e7db823de7a211a91920e9d4870d8edf8",
+          "label": "六孔名義設計與空白實測 CSV"
+        }
+      ]
+    },
+    "ch06-04-08-01": {
+      "evidenceStatus": "field_protocol_ready",
+      "actions": [
+        "用 06-01 匯出的 u04_box_v001.stl 列印，列印條件與試片相同並記在紀錄表。"
+      ],
+      "success": "取得實體盒子。",
+      "limitations": [
+        "現場方法與空白紀錄已完成；本教材沒有代為切片、實印、量測或試配。",
+        "STL無單位標記，需在所用切片軟體核對mm尺寸；軟體介面依實際版本，不提供捏造畫面。",
+        "登記流程保存來源與輸出關聯，不證明模型或實體合格。"
+      ],
+      "detail": {
+        "steps": [
+          "用 u04_box_v001.stl 列印原盒。",
+          "列印條件與試片相同，記在紀錄表。"
+        ],
+        "why": "條件一致，盒子與試片的結果才能互相參照。"
+      },
+      "artifacts": [
+        {
+          "path": "learning/journal/templates/printing-measurement-protocol-v001.json",
+          "sha256": "af3a956e68f823f9c1bf6e9492a880604d43f9229bf7f69b3f76453f68f2871a",
+          "label": "現場列印、量測與試配方法（沒有結果）"
+        },
+        {
+          "path": "learning/journal/templates/fit-coupon-records-v002.csv",
+          "sha256": "45e68186b975aeca0c926526781a4d2e7db823de7a211a91920e9d4870d8edf8",
+          "label": "六孔名義設計與空白實測 CSV"
+        }
+      ]
+    },
+    "ch06-04-08-02": {
+      "evidenceStatus": "field_protocol_ready",
+      "actions": [
+        "量外長寬高、內腔、壁厚，各量 2–3 處。"
+      ],
+      "success": "每項都有數值。",
+      "limitations": [
+        "現場方法與空白紀錄已完成；本教材沒有代為切片、實印、量測或試配。",
+        "STL無單位標記，需在所用切片軟體核對mm尺寸；軟體介面依實際版本，不提供捏造畫面。",
+        "登記流程保存來源與輸出關聯，不證明模型或實體合格。"
+      ],
+      "detail": {
+        "steps": [
+          "用卡尺量外長、外寬、外高。",
+          "量內腔長寬與壁厚，每項量 2～3 處。"
+        ],
+        "why": "看實際尺寸和設計差多少。"
+      },
+      "artifacts": [
+        {
+          "path": "learning/journal/templates/printing-measurement-protocol-v001.json",
+          "sha256": "af3a956e68f823f9c1bf6e9492a880604d43f9229bf7f69b3f76453f68f2871a",
+          "label": "現場列印、量測與試配方法（沒有結果）"
+        },
+        {
+          "path": "learning/journal/templates/fit-coupon-records-v002.csv",
+          "sha256": "45e68186b975aeca0c926526781a4d2e7db823de7a211a91920e9d4870d8edf8",
+          "label": "六孔名義設計與空白實測 CSV"
+        }
+      ]
+    },
+    "ch06-04-08-03": {
+      "evidenceStatus": "field_protocol_ready",
+      "actions": [
+        "記下名義尺寸、實測值、差值與列印條件。"
+      ],
+      "success": "來源與條件、名義尺寸、各次實測及差值分欄；尚無實測時相關欄位保持空白。",
+      "limitations": [
+        "現場方法與空白紀錄已完成；本教材沒有代為切片、實印、量測或試配。",
+        "STL無單位標記，需在所用切片軟體核對mm尺寸；軟體介面依實際版本，不提供捏造畫面。",
+        "登記流程保存來源與輸出關聯，不證明模型或實體合格。"
+      ],
+      "detail": {
+        "steps": [
+          "在紀錄表每列寫：名義尺寸、實測值、差值、列印條件。"
+        ],
+        "why": "這些差值是第 12 章補償設計的依據。"
+      },
+      "artifacts": [
+        {
+          "path": "learning/journal/templates/printing-measurement-protocol-v001.json",
+          "sha256": "af3a956e68f823f9c1bf6e9492a880604d43f9229bf7f69b3f76453f68f2871a",
+          "label": "現場列印、量測與試配方法（沒有結果）"
+        },
+        {
+          "path": "learning/journal/templates/fit-coupon-records-v002.csv",
+          "sha256": "45e68186b975aeca0c926526781a4d2e7db823de7a211a91920e9d4870d8edf8",
+          "label": "六孔名義設計與空白實測 CSV"
+        }
+      ]
+    }
+  },
+  "learnerProgressChanged": false,
+  "physicalPrint": null,
+  "physicalMeasurement": null,
+  "physicalFit": null
+}

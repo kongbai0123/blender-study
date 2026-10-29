@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "blender": "5.2.1 LTS",
+  "construction": "geometry and save/open via isolated Blender GUI; file-browser fields set programmatically",
+  "records": [
+    {
+      "slug": "source",
+      "action": "GUI 開啟原盒的隔離副本並核對活動物件與尺寸。",
+      "observed": {
+        "active": "Cube",
+        "mode": "OBJECT",
+        "dimensions": [
+          60.0,
+          40.0,
+          30.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "sourceSha256": "b918ee87d26e289f4c8a2f6633beceb854c7d0511e3eddcc969a0696afcd2530"
+      },
+      "path": "learning/evidence/03/2026-10-28-save-body-gui-v001/SAVE-01-source.png",
+      "sha256": "60862b67ed14f2feff4bbe68ba3cc051b9c5bbf727a13b1f29d3f3dbb10f0e04"
+    },
+    {
+      "slug": "renamed",
+      "action": "GUI F2 將盒體改名 Body。",
+      "observed": {
+        "active": "Body",
+        "mode": "OBJECT",
+        "dimensions": [
+          60.0,
+          40.0,
+          30.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "sourceSha256": "b918ee87d26e289f4c8a2f6633beceb854c7d0511e3eddcc969a0696afcd2530"
+      },
+      "path": "learning/evidence/03/2026-10-28-save-body-gui-v001/SAVE-02-renamed.png",
+      "sha256": "815d64f3cfa991c30c268577d8cea74b61cb2d54494c920801153adfad56dd83"
+    },
+    {
+      "slug": "saved",
+      "action": "GUI Save As 保存新版本；檔名與資料夾欄由程式填入。",
+      "observed": {
+        "active": "Body",
+        "mode": "OBJECT",
+        "dimensions": [
+          60.0,
+          40.0,
+          30.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "sourceSha256": "b918ee87d26e289f4c8a2f6633beceb854c7d0511e3eddcc969a0696afcd2530"
+      },
+      "path": "learning/evidence/03/2026-10-28-save-body-gui-v001/SAVE-03-saved.png",
+      "sha256": "ed09bb0ef3ece0d97698f5d59834bf2a15a41aa42eb85fab98e62b4d90d87ce2"
+    },
+    {
+      "slug": "reopened",
+      "action": "GUI 重開新版本，核對 Body 及原盒外框。",
+      "observed": {
+        "active": "Body",
+        "mode": "OBJECT",
+        "dimensions": [
+          60.0,
+          40.0,
+          30.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "sourceSha256": "b918ee87d26e289f4c8a2f6633beceb854c7d0511e3eddcc969a0696afcd2530"
+      },
+      "path": "learning/evidence/03/2026-10-28-save-body-gui-v001/SAVE-04-reopened.png",
+      "sha256": "8f2e3f6b7ab7b6fcea5b739bb08f65c0c290d83cda8a70e01ddc0acfa89df232"
+    }
+  ],
+  "physicalPrint": null,
+  "physicalMeasurement": null,
+  "physicalFit": null
+}

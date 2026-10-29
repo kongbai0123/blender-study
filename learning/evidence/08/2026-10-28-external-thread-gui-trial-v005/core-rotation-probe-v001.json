@@ -1,0 +1,113 @@
+{
+  "tests": [
+    {
+      "coreRotationDegrees": 0,
+      "vertices": 701,
+      "edges": 1121,
+      "faces": 422,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "connectedComponents": 1,
+      "volumeMm3": 392.32460051041454,
+      "boundsMm": [
+        [
+          -6.0,
+          6.0
+        ],
+        [
+          -6.0,
+          6.0
+        ],
+        [
+          0.0,
+          4.599999904632568
+        ]
+      ],
+      "nonAdjacentBvhCandidatePairs": 5,
+      "minimumTriangleAreaMm2": 2.4214372831625743e-09,
+      "areaBelow1e-5Mm2": 496
+    },
+    {
+      "coreRotationDegrees": 2.8125,
+      "vertices": 709,
+      "edges": 1128,
+      "faces": 421,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "connectedComponents": 1,
+      "volumeMm3": 392.3355730740298,
+      "boundsMm": [
+        [
+          -6.000000953674316,
+          6.000000953674316
+        ],
+        [
+          -6.000000953674316,
+          6.000000953674316
+        ],
+        [
+          0.0,
+          4.599999904632568
+        ]
+      ],
+      "nonAdjacentBvhCandidatePairs": 0,
+      "minimumTriangleAreaMm2": 0.0036133256344825547,
+      "areaBelow1e-5Mm2": 0
+    },
+    {
+      "coreRotationDegrees": 5.625,
+      "vertices": 709,
+      "edges": 1128,
+      "faces": 421,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "connectedComponents": 1,
+      "volumeMm3": 392.33168209616764,
+      "boundsMm": [
+        [
+          -6.000000476837158,
+          6.000000476837158
+        ],
+        [
+          -6.000000476837158,
+          6.000000476837158
+        ],
+        [
+          0.0,
+          4.599999904632568
+        ]
+      ],
+      "nonAdjacentBvhCandidatePairs": 0,
+      "minimumTriangleAreaMm2": 0.004170458675893264,
+      "areaBelow1e-5Mm2": 0
+    },
+    {
+      "coreRotationDegrees": 8.4375,
+      "vertices": 709,
+      "edges": 1128,
+      "faces": 421,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "connectedComponents": 1,
+      "volumeMm3": 392.33252263357696,
+      "boundsMm": [
+        [
+          -6.0,
+          6.0
+        ],
+        [
+          -6.0,
+          6.0
+        ],
+        [
+          0.0,
+          4.599999904632568
+        ]
+      ],
+      "nonAdjacentBvhCandidatePairs": 0,
+      "minimumTriangleAreaMm2": 0.0036133996300346293,
+      "areaBelow1e-5Mm2": 0
+    }
+  ],
+  "caveat": "Exploratory diagnostic, not GUI; no-print/fit conclusion; zero candidate overlaps does not prove no geometric defects."
+}

@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "title": "製程補償空白紀錄",
+  "status": "template_no_compensation_approved",
+  "signConvention": "觀察差值＝實測−名義；欲估算模型變更方向時先考慮−觀察差值。此僅為線性初估，仍需重印、量測及驗證，且須避免與切片器補償重複。",
+  "records": [
+    {"featureAndDirection": null, "sourceMeasurementRecords": [], "nominalMm": null, "measuredMm": null, "measuredMinusNominalMm": null, "candidateModelAdjustmentMm": null, "slicerCompensationMm": null, "printer": null, "material": null, "orientation": null, "measurementDate": null, "validationPrint": null, "validationResult": null, "approved": null}
+  ],
+  "limitations": ["未有可追溯實測不填補償數值。", "不可由單個試片直接推定批量能力。", "合成教學範例如另行提供，必須清楚標為合成且不得填入實測欄。"]
+}

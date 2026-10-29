@@ -1,0 +1,392 @@
+{
+  "schemaVersion": 1,
+  "title": "從70×40未登記副本提出W80並拒絕",
+  "source": {
+    "path": "learning/evidence/parametric/2026-10-27-manual-box-guard-gui-trial-v004/demo-files/manual_guard_trial_70x40_v003.blend",
+    "sha256": "9942f712fe5f7bf88daa9b144de0b29fbae5a9dd8217acdb96a3df0f3aacad3f"
+  },
+  "records": [
+    {
+      "slug": "opened",
+      "action": "GUI 開啟未登記的70×40隔離副本，先核對盒、蓋及內腔。",
+      "observed": {
+        "sourceSha256": "9942f712fe5f7bf88daa9b144de0b29fbae5a9dd8217acdb96a3df0f3aacad3f",
+        "scriptHashes": {
+          "guarded_manual_box_v001.py": "9dd50ba87227fc6ea77df4f6344b602ba245becfe4efe28d5343600a1282f067",
+          "manual_box_auto_update_v002.py": "cc39a2376c8abc41f61cb5beb796a83e22b63dc33b6b6aed5df9f135e83fc457",
+          "manual_box_reference_v001.json": "78f39a6ec422bb02b64fff64f70896c927a6ab449bcd84be9a03b6657bedae5c"
+        },
+        "fixtureFileRegistered": false,
+        "activeSketch": "Body Sketch",
+        "bounds": {
+          "Body": [
+            [
+              0.0,
+              70.0
+            ],
+            [
+              0.0,
+              40.0
+            ],
+            [
+              0.0,
+              30.0
+            ]
+          ],
+          "Body.001": [
+            [
+              2.0,
+              68.0
+            ],
+            [
+              2.0,
+              38.0
+            ],
+            [
+              2.0,
+              30.0
+            ]
+          ],
+          "Cube": [
+            [
+              0.000518798828125,
+              69.99948120117188
+            ],
+            [
+              0.000324249267578125,
+              39.99967575073242
+            ],
+            [
+              26.00001335144043,
+              31.99998664855957
+            ]
+          ]
+        }
+      },
+      "screenshot": {
+        "path": "learning/evidence/parametric/2026-10-29-manual-guard-70x40-reject-v004/G7040-01-opened.png",
+        "sha256": "ca569d4aa52830aedb04b865b0dbaa043eee1514143bbaf160ae8ac5e64592d9"
+      }
+    },
+    {
+      "slug": "text-prepared",
+      "action": "程式載入隔離外部腳本；不是GUI開啟腳本的示範。",
+      "observed": {
+        "sourceSha256": "9942f712fe5f7bf88daa9b144de0b29fbae5a9dd8217acdb96a3df0f3aacad3f",
+        "scriptHashes": {
+          "guarded_manual_box_v001.py": "9dd50ba87227fc6ea77df4f6344b602ba245becfe4efe28d5343600a1282f067",
+          "manual_box_auto_update_v002.py": "cc39a2376c8abc41f61cb5beb796a83e22b63dc33b6b6aed5df9f135e83fc457",
+          "manual_box_reference_v001.json": "78f39a6ec422bb02b64fff64f70896c927a6ab449bcd84be9a03b6657bedae5c"
+        },
+        "fixtureFileRegistered": false,
+        "activeSketch": "Body Sketch",
+        "bounds": {
+          "Body": [
+            [
+              0.0,
+              70.0
+            ],
+            [
+              0.0,
+              40.0
+            ],
+            [
+              0.0,
+              30.0
+            ]
+          ],
+          "Body.001": [
+            [
+              2.0,
+              68.0
+            ],
+            [
+              2.0,
+              38.0
+            ],
+            [
+              2.0,
+              30.0
+            ]
+          ],
+          "Cube": [
+            [
+              0.000518798828125,
+              69.99948120117188
+            ],
+            [
+              0.000324249267578125,
+              39.99967575073242
+            ],
+            [
+              26.00001335144043,
+              31.99998664855957
+            ]
+          ]
+        }
+      },
+      "screenshot": {
+        "path": "learning/evidence/parametric/2026-10-29-manual-guard-70x40-reject-v004/G7040-02-text-prepared.png",
+        "sha256": "e2c7a84c7b247c5456822ea058d6ec5a4fbbacc9a3a7b2680626d233760924c7"
+      }
+    },
+    {
+      "slug": "panel-ready",
+      "action": "GUI Alt+P 註冊後回到3D Viewport，模型仍70×40。",
+      "observed": {
+        "sourceSha256": "9942f712fe5f7bf88daa9b144de0b29fbae5a9dd8217acdb96a3df0f3aacad3f",
+        "scriptHashes": {
+          "guarded_manual_box_v001.py": "9dd50ba87227fc6ea77df4f6344b602ba245becfe4efe28d5343600a1282f067",
+          "manual_box_auto_update_v002.py": "cc39a2376c8abc41f61cb5beb796a83e22b63dc33b6b6aed5df9f135e83fc457",
+          "manual_box_reference_v001.json": "78f39a6ec422bb02b64fff64f70896c927a6ab449bcd84be9a03b6657bedae5c"
+        },
+        "fixtureFileRegistered": false,
+        "activeSketch": "Body Sketch",
+        "bounds": {
+          "Body": [
+            [
+              0.0,
+              70.0
+            ],
+            [
+              0.0,
+              40.0
+            ],
+            [
+              0.0,
+              30.0
+            ]
+          ],
+          "Body.001": [
+            [
+              2.0,
+              68.0
+            ],
+            [
+              2.0,
+              38.0
+            ],
+            [
+              2.0,
+              30.0
+            ]
+          ],
+          "Cube": [
+            [
+              0.000518798828125,
+              69.99948120117188
+            ],
+            [
+              0.000324249267578125,
+              39.99967575073242
+            ],
+            [
+              26.00001335144043,
+              31.99998664855957
+            ]
+          ]
+        }
+      },
+      "screenshot": {
+        "path": "learning/evidence/parametric/2026-10-29-manual-guard-70x40-reject-v004/G7040-03-panel-ready.png",
+        "sha256": "cec035a78e59b03e93e80ba0cea89e8c0599cf276bae04924fd2116bb2eb5242"
+      }
+    },
+    {
+      "slug": "y80-proposal",
+      "action": "GUI 選寬度W並輸入80 mm，勾選確認；提交前外框仍70×40。",
+      "observed": {
+        "sourceSha256": "9942f712fe5f7bf88daa9b144de0b29fbae5a9dd8217acdb96a3df0f3aacad3f",
+        "scriptHashes": {
+          "guarded_manual_box_v001.py": "9dd50ba87227fc6ea77df4f6344b602ba245becfe4efe28d5343600a1282f067",
+          "manual_box_auto_update_v002.py": "cc39a2376c8abc41f61cb5beb796a83e22b63dc33b6b6aed5df9f135e83fc457",
+          "manual_box_reference_v001.json": "78f39a6ec422bb02b64fff64f70896c927a6ab449bcd84be9a03b6657bedae5c"
+        },
+        "fixtureFileRegistered": false,
+        "activeSketch": "Body Sketch",
+        "bounds": {
+          "Body": [
+            [
+              0.0,
+              70.0
+            ],
+            [
+              0.0,
+              40.0
+            ],
+            [
+              0.0,
+              30.0
+            ]
+          ],
+          "Body.001": [
+            [
+              2.0,
+              68.0
+            ],
+            [
+              2.0,
+              38.0
+            ],
+            [
+              2.0,
+              30.0
+            ]
+          ],
+          "Cube": [
+            [
+              0.000518798828125,
+              69.99948120117188
+            ],
+            [
+              0.000324249267578125,
+              39.99967575073242
+            ],
+            [
+              26.00001335144043,
+              31.99998664855957
+            ]
+          ]
+        }
+      },
+      "screenshot": {
+        "path": "learning/evidence/parametric/2026-10-29-manual-guard-70x40-reject-v004/G7040-04-y80-proposal.png",
+        "sha256": "88da49d6e9982e8b1020dbc5cc7101f1e6bcc3a1256b544b4c74176496c12442"
+      }
+    },
+    {
+      "slug": "y80-refused",
+      "action": "GUI 提交W80；核對拒絕訊息及盒、蓋70×40與內腔66×36保持。",
+      "observed": {
+        "sourceSha256": "9942f712fe5f7bf88daa9b144de0b29fbae5a9dd8217acdb96a3df0f3aacad3f",
+        "scriptHashes": {
+          "guarded_manual_box_v001.py": "9dd50ba87227fc6ea77df4f6344b602ba245becfe4efe28d5343600a1282f067",
+          "manual_box_auto_update_v002.py": "cc39a2376c8abc41f61cb5beb796a83e22b63dc33b6b6aed5df9f135e83fc457",
+          "manual_box_reference_v001.json": "78f39a6ec422bb02b64fff64f70896c927a6ab449bcd84be9a03b6657bedae5c"
+        },
+        "fixtureFileRegistered": false,
+        "activeSketch": "Body Sketch",
+        "bounds": {
+          "Body": [
+            [
+              0.0,
+              70.0
+            ],
+            [
+              0.0,
+              40.0
+            ],
+            [
+              0.0,
+              30.0
+            ]
+          ],
+          "Body.001": [
+            [
+              2.0,
+              68.0
+            ],
+            [
+              2.0,
+              38.0
+            ],
+            [
+              2.0,
+              30.0
+            ]
+          ],
+          "Cube": [
+            [
+              0.000518798828125,
+              69.99948120117188
+            ],
+            [
+              0.000324249267578125,
+              39.99967575073242
+            ],
+            [
+              26.00001335144043,
+              31.99998664855957
+            ]
+          ]
+        }
+      },
+      "screenshot": {
+        "path": "learning/evidence/parametric/2026-10-29-manual-guard-70x40-reject-v004/G7040-05-y80-refused.png",
+        "sha256": "596f7394d053858d7f021854c5668e5000321b6294c0f0b53151dad124480a1c"
+      }
+    },
+    {
+      "slug": "after-refusal",
+      "action": "關閉訊息後再次讀值；未保存、未登記或修改學員工作區。",
+      "observed": {
+        "sourceSha256": "9942f712fe5f7bf88daa9b144de0b29fbae5a9dd8217acdb96a3df0f3aacad3f",
+        "scriptHashes": {
+          "guarded_manual_box_v001.py": "9dd50ba87227fc6ea77df4f6344b602ba245becfe4efe28d5343600a1282f067",
+          "manual_box_auto_update_v002.py": "cc39a2376c8abc41f61cb5beb796a83e22b63dc33b6b6aed5df9f135e83fc457",
+          "manual_box_reference_v001.json": "78f39a6ec422bb02b64fff64f70896c927a6ab449bcd84be9a03b6657bedae5c"
+        },
+        "fixtureFileRegistered": false,
+        "activeSketch": "Body Sketch",
+        "bounds": {
+          "Body": [
+            [
+              0.0,
+              70.0
+            ],
+            [
+              0.0,
+              40.0
+            ],
+            [
+              0.0,
+              30.0
+            ]
+          ],
+          "Body.001": [
+            [
+              2.0,
+              68.0
+            ],
+            [
+              2.0,
+              38.0
+            ],
+            [
+              2.0,
+              30.0
+            ]
+          ],
+          "Cube": [
+            [
+              0.000518798828125,
+              69.99948120117188
+            ],
+            [
+              0.000324249267578125,
+              39.99967575073242
+            ],
+            [
+              26.00001335144043,
+              31.99998664855957
+            ]
+          ]
+        }
+      },
+      "screenshot": {
+        "path": "learning/evidence/parametric/2026-10-29-manual-guard-70x40-reject-v004/G7040-06-after-refusal.png",
+        "sha256": "c1a5a7778f560c6de8f58b04c9843aae25dadd2a80def9c50a40775c2bdef7f5"
+      }
+    }
+  ],
+  "limits": [
+    "副本、外部腳本文字及外掛啟用由程式準備，Alt+P、W80提案與提交為GUI事件。",
+    "70×40場景沿用原側欄，未重新示範切換分頁；原標註部分重疊，尺寸依實際讀值核對。",
+    "使用隔離假專案空白版本表，不寫學員工作區與進度；W30～70是範本形狀鍵計算範圍，非製造合格範圍。",
+    "前3次失敗保留：缺擴充根、重複Text名稱及evidence區保護均未繞過。"
+  ],
+  "physicalPrint": null,
+  "physicalMeasurement": null,
+  "physicalFit": null,
+  "learnerProgressChanged": false
+}

@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "title": "盒側外牙接合：三物件起始副本與獨立 GUI 開啟核對",
+  "scope": "程式將原有牙條 Append 到原盒／蓋副本後另存；沒有程式建立新幾何、移動、旋轉或布林。獨立 Blender GUI 實際開啟副本，欄位由程式填入。",
+  "sourceBox": {
+    "path": "learning/evidence/05/2026-10-22-lesson05-lid-demo-v001/demo-files/u05_lid_v001.blend",
+    "sha256": "ab08f331dcb26c5ffc6c6ca56c7c7f022df96791c4777e37c5f01a964fbed6ff"
+  },
+  "sourceThread": {
+    "path": "learning/evidence/08/2026-10-28-external-thread-gui-trial-v010/demo-files/u08_external_gui_draft_v003.blend",
+    "sha256": "5a0aea1af13f46e9bff1b14327aa199b6b34f421936fd5a516226fc13072ec04"
+  },
+  "prefab": {
+    "path": "learning/evidence/08/2026-10-29-external-thread-mount-prefab-v001/demo-files/u11_mount_prefab_v001.blend",
+    "sha256": "8cba18300231e4e923b07c0890258c8bf7ba943d4d72077519fc40e9d3826b73"
+  },
+  "guiScreenshot": {
+    "path": "learning/evidence/08/2026-10-29-external-thread-mount-prefab-v001/PREFAB-01-gui-open.png",
+    "sha256": "892889c550b761fae0206aa8acfa9fd4717d6084b7aff8fe67c24105dfefb6f8"
+  },
+  "guiReadback": {
+    "path": "learning/evidence/08/2026-10-29-external-thread-mount-prefab-v001/gui-reopen-readback-v001.json",
+    "sha256": "415790165360ca9ebedbccd59e67671c7885656ffc2d53dafd77dfa698398f09"
+  },
+  "independentAudit": {
+    "path": "learning/evidence/08/2026-10-29-external-thread-mount-prefab-v001/independent-audit-v001.json",
+    "sha256": "19272e70c3b3d1e28dc15152775708710905c08ef4f667915adb632bf5528ecd"
+  },
+  "runnerStatus": {
+    "path": "learning/evidence/08/2026-10-29-external-thread-mount-prefab-v001/runner-status.json",
+    "sha256": "63b9a749c557c80a21268281517e3b37067f6812455c846ae93dfbd0bd9e7f6a"
+  },
+  "scenario": {
+    "path": "learning/tutor/scenarios/external_thread_mount_prefab_v001.py",
+    "sha256": "142866e29a6efb5df3f040ed911861cf850a90898484edb3806e5b17f6a2934c"
+  },
+  "auditScript": {
+    "path": "learning/tutor/inspect_mount_prefab_v001.py",
+    "sha256": "0e8fcb4536b37938ac783440656377477a65c9113681a5c53a93c63679f0f88a"
+  },
+  "objects": {
+    "Body": {
+      "vertices": 16,
+      "faces": 14,
+      "worldBoundsMm": [
+        [
+          -30,
+          30
+        ],
+        [
+          -20,
+          20
+        ],
+        [
+          -15,
+          15
+        ]
+      ]
+    },
+    "Lid": {
+      "vertices": 24,
+      "faces": 22,
+      "worldBoundsMm": [
+        [
+          -30,
+          30
+        ],
+        [
+          -20,
+          20
+        ],
+        [
+          11,
+          17
+        ]
+      ]
+    },
+    "Thread_Core": {
+      "vertices": 707,
+      "faces": 419,
+      "locationMm": [
+        0,
+        0,
+        2.3
+      ],
+      "worldBoundsMm": [
+        [
+          -6,
+          6
+        ],
+        [
+          -6,
+          6
+        ],
+        [
+          -0.09999775886535645,
+          4.699997901916504
+        ]
+      ],
+      "rotationDegrees": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    }
+  },
+  "matchesPriorRun": "世界外框與牙條原點位置對照舊版 MNT-01；完整網格與矩陣另直接對照兩個來源檔，非以舊截圖推定。",
+  "visualNote": "牙條位於盒內，畫面部分被遮住；Outliner 與 N 側欄可看到物件名稱、初始位置及尺寸。新截圖由本次 GUI 實際重開後擷取，與歷史 MNT-01 的圖像 SHA 恰好一致。",
+  "limitations": [
+    "教學用的程式預備檔，不宣稱使用者手動完成 Append 或已完成本步。",
+    "原牙條是數位草案、非 ISO 螺紋；未旋轉、未對盒側移動、未加布林。",
+    "後續聯集與 STL 限制依第 11-12 和 11-17；實體及合格結果不推定。"
+  ],
+  "physicalPrint": null,
+  "physicalMeasurement": null,
+  "physicalFit": null,
+  "qualifiedClearance": null,
+  "qualifiedStrength": null
+}

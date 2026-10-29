@@ -1,0 +1,59 @@
+{
+  "label": "reopened-060",
+  "solver": "OKAY",
+  "dof": 0,
+  "dimensionValues": [
+    0.6000000238418579,
+    1.236931562423706
+  ],
+  "minX": 4.800000190734863,
+  "maxX": 6.0,
+  "minY": -2.4146001864622235e-10,
+  "maxY": 0.6000000238418579,
+  "fixedFlags": [
+    true,
+    true,
+    true,
+    false,
+    false,
+    false,
+    false,
+    false
+  ],
+  "constraints": [
+    {
+      "type": "EQUAL",
+      "name": "Equal",
+      "value": null,
+      "uid": "f7fc2478b7cbe132"
+    },
+    {
+      "type": "DISTANCE",
+      "name": "Distance",
+      "value": 0.6000000238418579,
+      "uid": "9f59a0b3ccf4b996"
+    },
+    {
+      "type": "DISTANCE",
+      "name": "Distance",
+      "value": 1.236931562423706,
+      "uid": "733e0136a4433c1e"
+    },
+    {
+      "type": "VERTICAL",
+      "name": "Vertical",
+      "value": null,
+      "uid": "95817b0205a37a7b"
+    }
+  ],
+  "checks": {
+    "solverOkay": true,
+    "fullyDefined": true,
+    "twoDimensions": true,
+    "baseDimension": true,
+    "baseHeight": true,
+    "fixedAnchorX": true,
+    "expectedApexX": true,
+    "equalAndVertical": true
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "sourceSha256": "3104b2e01e10150a451d236039044efaa60c45e612afa424121847c8858bcc76",
+  "blenderVersion": "5.2.1 LTS",
+  "cadSketcherVersion": "0.32.1",
+  "solver": "OKAY",
+  "dof": 0,
+  "constraints": [
+    {
+      "type": "EQUAL",
+      "value": null
+    },
+    {
+      "type": "DISTANCE",
+      "value": 0.6000000238418579
+    },
+    {
+      "type": "DISTANCE",
+      "value": 1.236931562423706
+    },
+    {
+      "type": "VERTICAL",
+      "value": null
+    }
+  ],
+  "fixedFlags": [
+    true,
+    true,
+    true,
+    false,
+    false,
+    false,
+    false,
+    false
+  ],
+  "coordinatesXYMm": [
+    [
+      4.800000190734863,
+      -2.4146001864622235e-10,
+      0.0
+    ],
+    [
+      6.0,
+      0.30000001192092896,
+      0.0
+    ],
+    [
+      4.800000190734863,
+      -2.4146001864622235e-10,
+      0.0
+    ],
+    [
+      6.0,
+      0.30000001192092896,
+      0.0
+    ],
+    [
+      4.800000190734863,
+      0.6000000238418579,
+      0.0
+    ],
+    [
+      6.0,
+      0.30000001192092896,
+      0.0
+    ],
+    [
+      4.800000190734863,
+      0.6000000238418579,
+      0.0
+    ],
+    [
+      4.800000190734863,
+      0.6000000238418579,
+      0.0
+    ],
+    [
+      4.800000190734863,
+      -2.4146001864622235e-10,
+      0.0
+    ]
+  ],
+  "boundsXYmm": [
+    [
+      4.800000190734863,
+      6.0
+    ],
+    [
+      -2.4146001864622235e-10,
+      0.6000000238418579
+    ]
+  ],
+  "baseDimensionMm": 0.6000000238418579,
+  "slopeDimensionMm": 1.236931562423706,
+  "physicalPrint": null,
+  "physicalMeasurement": null,
+  "physicalFit": null,
+  "limitations": [
+    "Sketch is planar XY and fixed point; it is not an XZ Screw output.",
+    "No physical fit, print, ISO thread or strength conclusion."
+  ]
+}

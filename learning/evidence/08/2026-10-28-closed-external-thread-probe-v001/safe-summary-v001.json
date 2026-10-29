@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "kind": "sanitized-derived-summary",
+  "privacy": "Derived from local evidence; local absolute paths and recent-file list excluded. Original PNGs are unmodified.",
+  "blender": "5.2.1 LTS",
+  "buildHash": "9e2066aef7ef",
+  "construction": "scripted radial graph with planar z-end caps; GUI is used for selection, inspection and save/reopen",
+  "modelParameters": {
+    "rootRadiusMm": 5,
+    "crestRadiusMm": 6,
+    "profileZMm": [
+      0,
+      0.3,
+      0.6
+    ],
+    "pitchMm": 1,
+    "starts": 1,
+    "clipPlaneZMm": [
+      0,
+      4
+    ],
+    "angularSegments": 32,
+    "axialIntervals": 80
+  },
+  "readback": {
+    "vertices": 2592,
+    "edges": 5152,
+    "polygons": 2562,
+    "zMinMaxMm": [
+      0.0,
+      4.0
+    ],
+    "radiusMinMaxMm": [
+      4.999999966893848,
+      6.0
+    ],
+    "phaseSampleRadiusMm": [
+      6.0,
+      6.0,
+      6.0,
+      6.0
+    ],
+    "boundaryEdges": 0,
+    "nonManifoldEdges": 0,
+    "signedVolumeMm3": 352.02662230733586
+  },
+  "checks": {
+    "vertexCount": true,
+    "boundsZ": true,
+    "rootRadius": true,
+    "crestRadius": true,
+    "fourCrestsAtSamePhase": true,
+    "zeroBoundaryAndNonmanifoldEdges": true,
+    "positiveVolume": true
+  },
+  "guiNonManifoldEdgesSelected": 0,
+  "independentAudit": {
+    "triangles": 5180,
+    "bvhPairCountIncludingAdjacency": 0,
+    "nonAdjacentBvhOverlaps": 0,
+    "limitations": [
+      "BVH overlap excludes triangle pairs sharing vertices; it is not a complete proof of no self-intersection",
+      "mesh normal, printability, tolerance and fit require separate checks",
+      "no physical result or user completion implied"
+    ]
+  },
+  "limitations": [
+    "programmatically generated, not hand-built GUI steps",
+    "clipped ends have incomplete thread; no counterpart, entry lead-in or fastener standard",
+    "non-manifold edge count is not a complete self-intersection or printability test",
+    "no material, clearance, slicing, print, fit or strength validation",
+    "The end-clipped model is not identical to the earlier open Screw surface.",
+    "GUI actions demonstrate inspection and save/reopen, not the manual construction of the mesh.",
+    "Workspace before/after snapshots matched; that does not prove there were no transient writes."
+  ],
+  "physical": {
+    "printed": false,
+    "fitTested": false,
+    "qualifiedClearanceMm": null,
+    "material": null,
+    "qualifiedStrength": null
+  },
+  "workspaceContentsUnchangedBeforeAfter": true,
+  "screenshots": [
+    {
+      "path": "learning/evidence/08/2026-10-28-closed-external-thread-probe-v001/08-CLOSED-01-programmatic-geometry.png",
+      "sha256": "bbd1b79b485efbfb5bc63a2ccd4397009bdfe2d6224401c1e2d6cce4bd1ca817",
+      "action": "程式產生閉合徑向螺旋草案及端面，原盒暫時隱藏；非 GUI 手工建模"
+    },
+    {
+      "path": "learning/evidence/08/2026-10-28-closed-external-thread-probe-v001/08-CLOSED-02-framed.png",
+      "sha256": "7369128ddf8ef7e784b15fe4ca357676b3948811a95bde4c438048aa9029253a",
+      "action": "GUI 透過 Frame Selected 與視角鍵觀察；數值與閉合性另以網格讀回"
+    },
+    {
+      "path": "learning/evidence/08/2026-10-28-closed-external-thread-probe-v001/08-CLOSED-03-non-manifold.png",
+      "sha256": "c55ccb1c1483f09e88ed27883d39645dbe94b9ee99063412f9dc6e6dff010415",
+      "action": "GUI 邊選取、清除選取、F3 > Select Non Manifold；讀回選取與實際邊數"
+    },
+    {
+      "path": "learning/evidence/08/2026-10-28-closed-external-thread-probe-v001/08-CLOSED-04-saved.png",
+      "sha256": "9f25cf54af513fd4e21ddc646081c9ed52eaa06675e74b8d8958fe08b8fb61b7",
+      "action": "GUI Save As 另存草案；檔案視窗路徑由程式填入"
+    },
+    {
+      "path": "learning/evidence/08/2026-10-28-closed-external-thread-probe-v001/08-CLOSED-05-reopened.png",
+      "sha256": "2c53e91d6b8f03b0c97e4a8bdc23b7a05b73a8e82d932328469892723a443985",
+      "action": "GUI Open 重開並讀回幾何；仍未做切片、列印或試配"
+    }
+  ],
+  "scene": {
+    "path": "learning/evidence/08/2026-10-28-closed-external-thread-probe-v001/demo-files/u08_closed_external_thread_probe_v001.blend",
+    "sha256": "dadb268dce5836f46d877d90a7ca0113de5280790f6d9611ce9a551422c4c700"
+  },
+  "sourceSceneSha256": "9bda36c10fd916ef9cbe688f5ca56dcf8cfa0adb83d684300e60196225589d8f",
+  "rawEvidenceHashes": {
+    "run.json": "da651bf3e121272ced91ddd0b7634c9b8ec634e97ef0af7c52064f57f5e8f898",
+    "runner-status.json": "fe7842e360266f91667fd96136f5c229ac1adf4b989e5dcc75fcbc60312c7d42",
+    "reopened-verification.json": "b1bb460fb61a136e6ae357f6f9da64dfe87545d98880561ce0a60ba8d944f78d",
+    "independent-geometry-audit-v001.json": "14ecf98e087a035d829f7ddeb529086668b9d149a121cfdc247b59f826c33ba8"
+  }
+}

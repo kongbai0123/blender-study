@@ -1,0 +1,574 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-29",
+  "scope": "第11章剩餘補查 part A：各小步在 8768 實際選取後閱讀主操作與詳細步驟；四步另以頁面示範紀錄抽查 typed 讀值；不是逐張目視原圖或在 Blender 重做。",
+  "curriculum": {
+    "path": "learning/web/engineering-curriculum-v037.json",
+    "sha256": "65b126ac3bfd88e12ce78697d2d1188036cc55d6e56ef72b7b654ed86eaab6a4"
+  },
+  "browser": "Chrome 新建驗證分頁，沒有確認、筆記或表單提交",
+  "sectionCounts": {
+    "11-04": 2,
+    "11-13": 13,
+    "11-14": 14,
+    "11-11": 14,
+    "11-12": 11,
+    "11-05": 2
+  },
+  "visitedCount": 56,
+  "sampledReadbackCount": 4,
+  "items": [
+    {
+      "id": "ch11-08-02-01",
+      "section": "11-04",
+      "checkedScope": [
+        "Cua 8768 實際選取小步",
+        "閱讀主操作和詳細步驟"
+      ],
+      "findings": []
+    },
+    {
+      "id": "ch11-08-02-02",
+      "section": "11-04",
+      "checkedScope": [
+        "Cua 8768 實際選取小步",
+        "閱讀主操作和詳細步驟"
+      ],
+      "findings": [
+        "11-14 的最終外牙已 Convert Mesh 並失去 Screw 修改器；在最終副本無法直接重新查看 Screw 設定，應分清轉換前版本或示範紀錄與轉換後幾何核對。"
+      ]
+    },
+    {
+      "id": "ch11-08-03-01",
+      "section": "11-05",
+      "checkedScope": [
+        "Cua 8768 實際選取小步",
+        "閱讀主操作和詳細步驟"
+      ],
+      "findings": []
+    },
+    {
+      "id": "ch11-08-03-02",
+      "section": "11-05",
+      "checkedScope": [
+        "Cua 8768 實際選取小步",
+        "閱讀主操作和詳細步驟"
+      ],
+      "findings": []
+    },
+    {
+      "id": "ch11-11-external-repaired-01",
+      "section": "11-11",
+      "checkedScope": [
+        "Cua 8768 實際選取小步",
+        "閱讀主操作和詳細步驟"
+      ],
+      "findings": []
+    },
+    {
+      "id": "ch11-11-external-repaired-02",
+      "section": "11-11",
+      "checkedScope": [
+        "Cua 8768 實際選取小步",
+        "閱讀主操作和詳細步驟"
+      ],
+      "findings": []
+    },
+    {
+      "id": "ch11-11-external-repaired-03",
+      "section": "11-11",
+      "checkedScope": [
+        "Cua 8768 實際選取小步",
+        "閱讀主操作和詳細步驟"
+      ],
+      "findings": []
+    },
+    {
+      "id": "ch11-11-external-repaired-04",
+      "section": "11-11",
+      "checkedScope": [
+        "Cua 8768 實際選取小步",
+        "閱讀主操作和詳細步驟"
+      ],
+      "findings": []
+    },
+    {
+      "id": "ch11-11-external-repaired-05",
+      "section": "11-11",
+      "checkedScope": [
+        "Cua 8768 實際選取小步",
+        "閱讀主操作和詳細步驟"
+      ],
+      "findings": []
+    },
+    {
+      "id": "ch11-11-external-repaired-06",
+      "section": "11-11",
+      "checkedScope": [
+        "Cua 8768 實際選取小步",
+        "閱讀主操作和詳細步驟"
+      ],
+      "findings": []
+    },
+    {
+      "id": "ch11-11-external-repaired-07",
+      "section": "11-11",
+      "checkedScope": [
+        "Cua 8768 實際選取小步",
+        "閱讀主操作和詳細步驟"
+      ],
+      "findings": []
+    },
+    {
+      "id": "ch11-11-external-repaired-08",
+      "section": "11-11",
+      "checkedScope": [
+        "Cua 8768 實際選取小步",
+        "閱讀主操作和詳細步驟"
+      ],
+      "findings": []
+    },
+    {
+      "id": "ch11-11-external-repaired-09",
+      "section": "11-11",
+      "checkedScope": [
+        "Cua 8768 實際選取小步",
+        "閱讀主操作和詳細步驟"
+      ],
+      "findings": []
+    },
+    {
+      "id": "ch11-11-external-repaired-10",
+      "section": "11-11",
+      "checkedScope": [
+        "Cua 8768 實際選取小步",
+        "閱讀主操作和詳細步驟"
+      ],
+      "findings": []
+    },
+    {
+      "id": "ch11-11-external-repaired-11",
+      "section": "11-11",
+      "checkedScope": [
+        "Cua 8768 實際選取小步",
+        "閱讀主操作和詳細步驟",
+        "實際切換示範紀錄；顯示讀值與 v037 typed demonstration 對照"
+      ],
+      "findings": [],
+      "sampledReadback": {
+        "kind": "readback",
+        "value": "程式讀回 707 點、419 面、單連通體、非流形邊 0、外框約 12 × 12 × 4.8 mm；這些讀值不證明無自交。",
+        "source": {
+          "path": "learning/lesson11_external_repaired_optional_steps_v001.json",
+          "sha256": "73220a37067b84b8ad614ab28af9759cd2758d7213fbf69748eb17407d39c0da"
+        }
+      }
+    },
+    {
+      "id": "ch11-11-external-repaired-12",
+      "section": "11-11",
+      "checkedScope": [
+        "Cua 8768 實際選取小步",
+        "閱讀主操作和詳細步驟"
+      ],
+      "findings": []
+    },
+    {
+      "id": "ch11-11-external-repaired-13",
+      "section": "11-11",
+      "checkedScope": [
+        "Cua 8768 實際選取小步",
+        "閱讀主操作和詳細步驟"
+      ],
+      "findings": []
+    },
+    {
+      "id": "ch11-11-external-repaired-14",
+      "section": "11-11",
+      "checkedScope": [
+        "Cua 8768 實際選取小步",
+        "閱讀主操作和詳細步驟"
+      ],
+      "findings": []
+    },
+    {
+      "id": "ch11-11-mount-v002-01",
+      "section": "11-12",
+      "checkedScope": [
+        "Cua 8768 實際選取小步",
+        "閱讀主操作和詳細步驟"
+      ],
+      "findings": [
+        "示範以程式載入牙條；教材未教學員 Append 或提供同時含原盒、上蓋、未旋轉牙條的可跟做起始副本。該場次僅能誠實視為觀察示範，待補起始條件。"
+      ]
+    },
+    {
+      "id": "ch11-11-mount-v002-02",
+      "section": "11-12",
+      "checkedScope": [
+        "Cua 8768 實際選取小步",
+        "閱讀主操作和詳細步驟"
+      ],
+      "findings": []
+    },
+    {
+      "id": "ch11-11-mount-v002-03",
+      "section": "11-12",
+      "checkedScope": [
+        "Cua 8768 實際選取小步",
+        "閱讀主操作和詳細步驟"
+      ],
+      "findings": []
+    },
+    {
+      "id": "ch11-11-mount-v002-04",
+      "section": "11-12",
+      "checkedScope": [
+        "Cua 8768 實際選取小步",
+        "閱讀主操作和詳細步驟"
+      ],
+      "findings": []
+    },
+    {
+      "id": "ch11-11-mount-v002-05",
+      "section": "11-12",
+      "checkedScope": [
+        "Cua 8768 實際選取小步",
+        "閱讀主操作和詳細步驟"
+      ],
+      "findings": []
+    },
+    {
+      "id": "ch11-11-mount-v002-06",
+      "section": "11-12",
+      "checkedScope": [
+        "Cua 8768 實際選取小步",
+        "閱讀主操作和詳細步驟"
+      ],
+      "findings": []
+    },
+    {
+      "id": "ch11-11-mount-v002-07",
+      "section": "11-12",
+      "checkedScope": [
+        "Cua 8768 實際選取小步",
+        "閱讀主操作和詳細步驟"
+      ],
+      "findings": []
+    },
+    {
+      "id": "ch11-11-mount-v002-08",
+      "section": "11-12",
+      "checkedScope": [
+        "Cua 8768 實際選取小步",
+        "閱讀主操作和詳細步驟",
+        "實際切換示範紀錄；顯示讀值與 v037 typed demonstration 對照"
+      ],
+      "findings": [],
+      "sampledReadback": {
+        "kind": "readback",
+        "value": "程式讀回 712 點、420 面、1 連通體、非流形邊 0；五條盒內壁射線命中 X≈28 mm。",
+        "source": {
+          "path": "learning/lesson11_external_mount_optional_steps_v002.json",
+          "sha256": "eb3b58b3763a7922dd5afc1a83b58a3e8c85f3445353ae07f12c2cdcc1309a6a"
+        }
+      }
+    },
+    {
+      "id": "ch11-11-mount-v002-09",
+      "section": "11-12",
+      "checkedScope": [
+        "Cua 8768 實際選取小步",
+        "閱讀主操作和詳細步驟"
+      ],
+      "findings": []
+    },
+    {
+      "id": "ch11-11-mount-v002-10",
+      "section": "11-12",
+      "checkedScope": [
+        "Cua 8768 實際選取小步",
+        "閱讀主操作和詳細步驟"
+      ],
+      "findings": []
+    },
+    {
+      "id": "ch11-11-mount-v002-11",
+      "section": "11-12",
+      "checkedScope": [
+        "Cua 8768 實際選取小步",
+        "閱讀主操作和詳細步驟"
+      ],
+      "findings": []
+    },
+    {
+      "id": "ch11-11-hand-profile-01",
+      "section": "11-13",
+      "checkedScope": [
+        "Cua 8768 實際選取小步",
+        "閱讀主操作和詳細步驟"
+      ],
+      "findings": [
+        "示範程式隱藏盒體，但學員缺少具體隱藏操作與 3D Cursor 原點／輪廓原點確認；若游標偏移，後續相對移動不保證絕對座標。"
+      ]
+    },
+    {
+      "id": "ch11-11-hand-profile-02",
+      "section": "11-13",
+      "checkedScope": [
+        "Cua 8768 實際選取小步",
+        "閱讀主操作和詳細步驟"
+      ],
+      "findings": []
+    },
+    {
+      "id": "ch11-11-hand-profile-03",
+      "section": "11-13",
+      "checkedScope": [
+        "Cua 8768 實際選取小步",
+        "閱讀主操作和詳細步驟",
+        "實際切換示範紀錄；顯示讀值與 v037 typed demonstration 對照"
+      ],
+      "findings": [],
+      "sampledReadback": {
+        "kind": "readback",
+        "value": "程式讀回約 (4.80000019,0,0) mm。",
+        "source": {
+          "path": "learning/lesson11_hand_profile_optional_steps_v001.json",
+          "sha256": "20616cfe3ff36bfd78ddaa479adc6aca3321d772a1b441e665768870e5648ef1"
+        }
+      }
+    },
+    {
+      "id": "ch11-11-hand-profile-04",
+      "section": "11-13",
+      "checkedScope": [
+        "Cua 8768 實際選取小步",
+        "閱讀主操作和詳細步驟"
+      ],
+      "findings": []
+    },
+    {
+      "id": "ch11-11-hand-profile-05",
+      "section": "11-13",
+      "checkedScope": [
+        "Cua 8768 實際選取小步",
+        "閱讀主操作和詳細步驟"
+      ],
+      "findings": []
+    },
+    {
+      "id": "ch11-11-hand-profile-06",
+      "section": "11-13",
+      "checkedScope": [
+        "Cua 8768 實際選取小步",
+        "閱讀主操作和詳細步驟"
+      ],
+      "findings": []
+    },
+    {
+      "id": "ch11-11-hand-profile-07",
+      "section": "11-13",
+      "checkedScope": [
+        "Cua 8768 實際選取小步",
+        "閱讀主操作和詳細步驟"
+      ],
+      "findings": []
+    },
+    {
+      "id": "ch11-11-hand-profile-08",
+      "section": "11-13",
+      "checkedScope": [
+        "Cua 8768 實際選取小步",
+        "閱讀主操作和詳細步驟"
+      ],
+      "findings": []
+    },
+    {
+      "id": "ch11-11-hand-profile-09",
+      "section": "11-13",
+      "checkedScope": [
+        "Cua 8768 實際選取小步",
+        "閱讀主操作和詳細步驟"
+      ],
+      "findings": []
+    },
+    {
+      "id": "ch11-11-hand-profile-10",
+      "section": "11-13",
+      "checkedScope": [
+        "Cua 8768 實際選取小步",
+        "閱讀主操作和詳細步驟"
+      ],
+      "findings": []
+    },
+    {
+      "id": "ch11-11-hand-profile-11",
+      "section": "11-13",
+      "checkedScope": [
+        "Cua 8768 實際選取小步",
+        "閱讀主操作和詳細步驟"
+      ],
+      "findings": []
+    },
+    {
+      "id": "ch11-11-hand-profile-12",
+      "section": "11-13",
+      "checkedScope": [
+        "Cua 8768 實際選取小步",
+        "閱讀主操作和詳細步驟"
+      ],
+      "findings": []
+    },
+    {
+      "id": "ch11-11-hand-profile-13",
+      "section": "11-13",
+      "checkedScope": [
+        "Cua 8768 實際選取小步",
+        "閱讀主操作和詳細步驟"
+      ],
+      "findings": []
+    },
+    {
+      "id": "ch11-11-hand-thread-01",
+      "section": "11-14",
+      "checkedScope": [
+        "Cua 8768 實際選取小步",
+        "閱讀主操作和詳細步驟"
+      ],
+      "findings": []
+    },
+    {
+      "id": "ch11-11-hand-thread-02",
+      "section": "11-14",
+      "checkedScope": [
+        "Cua 8768 實際選取小步",
+        "閱讀主操作和詳細步驟"
+      ],
+      "findings": []
+    },
+    {
+      "id": "ch11-11-hand-thread-03",
+      "section": "11-14",
+      "checkedScope": [
+        "Cua 8768 實際選取小步",
+        "閱讀主操作和詳細步驟"
+      ],
+      "findings": []
+    },
+    {
+      "id": "ch11-11-hand-thread-04",
+      "section": "11-14",
+      "checkedScope": [
+        "Cua 8768 實際選取小步",
+        "閱讀主操作和詳細步驟"
+      ],
+      "findings": []
+    },
+    {
+      "id": "ch11-11-hand-thread-05",
+      "section": "11-14",
+      "checkedScope": [
+        "Cua 8768 實際選取小步",
+        "閱讀主操作和詳細步驟"
+      ],
+      "findings": []
+    },
+    {
+      "id": "ch11-11-hand-thread-06",
+      "section": "11-14",
+      "checkedScope": [
+        "Cua 8768 實際選取小步",
+        "閱讀主操作和詳細步驟"
+      ],
+      "findings": []
+    },
+    {
+      "id": "ch11-11-hand-thread-07",
+      "section": "11-14",
+      "checkedScope": [
+        "Cua 8768 實際選取小步",
+        "閱讀主操作和詳細步驟",
+        "實際切換示範紀錄；顯示讀值與 v037 typed demonstration 對照"
+      ],
+      "findings": [],
+      "sampledReadback": {
+        "kind": "readback",
+        "value": "程式依實際頂點讀回旋轉後世界 X/Y 範圍約 ±4.9759 mm，Z 約 -0.1～4.7 mm；套用後旋轉欄為 0、Scale 為 1。",
+        "source": {
+          "path": "learning/lesson11_hand_thread_optional_steps_v002.json",
+          "sha256": "1627aef1d6c8ddc0ec311136e7207ee8c87de6696d68ef44aceebfb059d567bd"
+        }
+      }
+    },
+    {
+      "id": "ch11-11-hand-thread-08",
+      "section": "11-14",
+      "checkedScope": [
+        "Cua 8768 實際選取小步",
+        "閱讀主操作和詳細步驟"
+      ],
+      "findings": []
+    },
+    {
+      "id": "ch11-11-hand-thread-09",
+      "section": "11-14",
+      "checkedScope": [
+        "Cua 8768 實際選取小步",
+        "閱讀主操作和詳細步驟"
+      ],
+      "findings": []
+    },
+    {
+      "id": "ch11-11-hand-thread-10",
+      "section": "11-14",
+      "checkedScope": [
+        "Cua 8768 實際選取小步",
+        "閱讀主操作和詳細步驟"
+      ],
+      "findings": []
+    },
+    {
+      "id": "ch11-11-hand-thread-11",
+      "section": "11-14",
+      "checkedScope": [
+        "Cua 8768 實際選取小步",
+        "閱讀主操作和詳細步驟"
+      ],
+      "findings": []
+    },
+    {
+      "id": "ch11-11-hand-thread-12",
+      "section": "11-14",
+      "checkedScope": [
+        "Cua 8768 實際選取小步",
+        "閱讀主操作和詳細步驟"
+      ],
+      "findings": []
+    },
+    {
+      "id": "ch11-11-hand-thread-13",
+      "section": "11-14",
+      "checkedScope": [
+        "Cua 8768 實際選取小步",
+        "閱讀主操作和詳細步驟"
+      ],
+      "findings": []
+    },
+    {
+      "id": "ch11-11-hand-thread-14",
+      "section": "11-14",
+      "checkedScope": [
+        "Cua 8768 實際選取小步",
+        "閱讀主操作和詳細步驟"
+      ],
+      "findings": []
+    }
+  ],
+  "learnerProgressChanged": false,
+  "observedProgressSha256": "b66a08f1e444a47fb6575bbf9a581450bd4a9b1041d33382fbcdd53d7ca25bc1",
+  "physicalPrint": null,
+  "physicalMeasurement": null,
+  "physicalFit": null,
+  "qualifiedClearance": null
+}

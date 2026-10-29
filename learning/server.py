@@ -21,7 +21,7 @@ MAX_BODY = 65536
 # 不使用示意圖：教學圖片只來自 evidence 的實際截圖。
 FILE_ROOTS = ("evidence", "workspaces", "journal")
 FILE_EXTENSIONS = {".svg", ".png", ".jpg", ".jpeg", ".webp", ".gif", ".blend", ".blend1",
-                   ".stl", ".obj", ".mtl", ".3mf", ".ply", ".pdf", ".txt", ".md", ".json"}
+                   ".stl", ".obj", ".mtl", ".3mf", ".ply", ".pdf", ".txt", ".md", ".json", ".csv"}
 
 
 
@@ -36,12 +36,22 @@ def challenge_assets():
     except (OSError, ValueError):
         return set()
     paths = set()
+    def add(value, extensions):
+        path = value.get("path") if isinstance(value, dict) else None
+        if isinstance(path, str) and re.fullmatch(r"/(?:challenges|pilot)/[a-z0-9-]+\." + extensions, path):
+            paths.add(path)
     for item in data.get("chapters", []) if isinstance(data, dict) else []:
-        for key in ("drawing", "animation"):
-            value = item.get(key) if isinstance(item, dict) else None
-            path = value.get("path") if isinstance(value, dict) else None
-            if isinstance(path, str) and re.fullmatch(r"/(?:challenges|pilot)/[a-z0-9-]+\.(?:svg|gif)", path):
-                paths.add(path)
+        if not isinstance(item, dict):
+            continue
+        add(item.get("drawing"), r"(?:svg)")
+        add(item.get("animation"), r"(?:gif)")
+        add(item.get("screenshot"), r"(?:png)")
+        for drawing in item.get("supplementalDrawings", []):
+            add(drawing, r"(?:svg)")
+        for demo in item.get("demonstrations", []):
+            for step in demo.get("steps", []) if isinstance(demo, dict) else []:
+                if isinstance(step, dict):
+                    add(step.get("screenshot"), r"(?:png)")
     return paths
 
 class RequestError(ValueError):

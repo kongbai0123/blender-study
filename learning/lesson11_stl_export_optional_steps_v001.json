@@ -1,0 +1,1192 @@
+{
+  "schemaVersion": 1,
+  "title": "第 11 章：六件 STL 匯出、修訂與重新匯入",
+  "scope": "六個獨立 Blender GUI 選取及匯出、實際 GUI 重匯入，再以另一個 Blender 背景重匯入；不更新學員進度。",
+  "status": "已完成數位匯出與有限檢查，實體未驗證",
+  "items": [
+    {
+      "id": "hand-thread",
+      "title": "手工輪廓外牙",
+      "sourceScene": "learning/evidence/08/2026-10-28-external-thread-from-hand-profile-gui-v001/demo-files/u11_hand_thread_draft_v001.blend",
+      "sourceSha256": "2d73ed99fe56cfbd676447cc3035c0cb8245b3eebf5b1ac72dc3b3c418afce50",
+      "sourceObject": "Thread_Core",
+      "stl": "learning/evidence/08/2026-10-28-ch11-stl-hand-v001/demo-files/exports/u11_hand_thread_v001.stl",
+      "stlSha256": "2279efed9fa58fa8c4352e9deb304a367c038fae345d94ca908f6f4577561e59",
+      "stlBytes": 70584,
+      "binaryTriangles": 1410,
+      "binaryExactDuplicateTriangles": 0,
+      "boundsMm": [
+        [
+          -6.0,
+          6.0
+        ],
+        [
+          -6.0,
+          6.0
+        ],
+        [
+          -0.09999775886535645,
+          4.699997901916504
+        ]
+      ],
+      "dimensionsMm": [
+        12.0,
+        12.0,
+        4.79999566078186
+      ],
+      "guiReimport": {
+        "object": "u11_hand_thread_v001",
+        "vertices": 707,
+        "faces": 1410,
+        "triangles": 1410,
+        "boundsMm": [
+          [
+            -6.0,
+            6.0
+          ],
+          [
+            -6.0,
+            6.0
+          ],
+          [
+            -0.09999775886535645,
+            4.699997901916504
+          ]
+        ],
+        "signedVolumeMm3": 407.94219233524825,
+        "minimumTriangleAreaMm2": 0.02867393217346469,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0
+      },
+      "independentAudit": "learning/evidence/08/2026-10-28-ch11-stl-hand-v001/hand-thread-independent-audit-v001.json",
+      "independentReimport": {
+        "vertices": 707,
+        "faces": 1410,
+        "triangles": 1410,
+        "boundsMm": [
+          [
+            -6.0,
+            6.0
+          ],
+          [
+            -6.0,
+            6.0
+          ],
+          [
+            -0.09999775886535645,
+            4.699997901916504
+          ]
+        ],
+        "signedVolumeMm3": 407.94219233524825,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "components": 1,
+        "nonAdjacentBvhCandidates": 0,
+        "minimumTriangleAreaMm2": 0.02867393217346469
+      },
+      "exportOptions": {
+        "operator": "WM_OT_stl_export",
+        "globalScale": 1.0,
+        "sceneUnit": false,
+        "forwardAxis": "Y",
+        "upAxis": "Z",
+        "selectionOnly": true,
+        "applyModifiers": true,
+        "binary": true,
+        "batch": false
+      },
+      "importOptions": {
+        "operator": "WM_OT_stl_import",
+        "globalScale": 1.0,
+        "sceneUnit": false,
+        "forwardAxis": "Y",
+        "upAxis": "Z"
+      }
+    },
+    {
+      "id": "side-box-body-repaired",
+      "title": "盒側外牙盒體（三角化修訂）",
+      "sourceScene": "learning/evidence/08/2026-10-28-ch11-triangulate-sidebox-v001/demo-files/u11_side_box_triangulated_v001.blend",
+      "sourceSha256": "dd5c074510f1bd6f99e8fda244340cac59f11ddde9ff7ba869d6a1437fbd60ea",
+      "sourceObject": "Body",
+      "stl": "learning/evidence/08/2026-10-28-ch11-stl-repaired-sidebox-v001/demo-files/exports/u11_side_box_body_triangulated_v001.stl",
+      "stlSha256": "f93e5ef13d319081c31fef8b5cf30674dd66a5513d486a86731c0b2f76cdec93",
+      "stlBytes": 71084,
+      "binaryTriangles": 1420,
+      "binaryExactDuplicateTriangles": 0,
+      "boundsMm": [
+        [
+          -30.0,
+          34.29999542236328
+        ],
+        [
+          -20.0,
+          20.0
+        ],
+        [
+          -15.0,
+          15.0
+        ]
+      ],
+      "dimensionsMm": [
+        64.29999542236328,
+        40.0,
+        30.0
+      ],
+      "guiReimport": {
+        "object": "u11_side_box_body_triangulated_v001",
+        "vertices": 712,
+        "faces": 1420,
+        "triangles": 1420,
+        "boundsMm": [
+          [
+            -30.0,
+            34.29999542236328
+          ],
+          [
+            -20.0,
+            20.0
+          ],
+          [
+            -15.0,
+            15.0
+          ]
+        ],
+        "signedVolumeMm3": 15920.013963481457,
+        "minimumTriangleAreaMm2": 0.0019618411243882156,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0
+      },
+      "independentAudit": "learning/evidence/08/2026-10-28-ch11-stl-repaired-sidebox-v001/side-box-body-repaired-independent-audit-v001.json",
+      "independentReimport": {
+        "vertices": 712,
+        "faces": 1420,
+        "triangles": 1420,
+        "boundsMm": [
+          [
+            -30.0,
+            34.29999542236328
+          ],
+          [
+            -20.0,
+            20.0
+          ],
+          [
+            -15.0,
+            15.0
+          ]
+        ],
+        "signedVolumeMm3": 15920.013963481457,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "components": 1,
+        "nonAdjacentBvhCandidates": 0,
+        "minimumTriangleAreaMm2": 0.0019618411243882156
+      },
+      "exportOptions": {
+        "operator": "WM_OT_stl_export",
+        "globalScale": 1.0,
+        "sceneUnit": false,
+        "forwardAxis": "Y",
+        "upAxis": "Z",
+        "selectionOnly": true,
+        "applyModifiers": true,
+        "binary": true,
+        "batch": false
+      },
+      "importOptions": {
+        "operator": "WM_OT_stl_import",
+        "globalScale": 1.0,
+        "sceneUnit": false,
+        "forwardAxis": "Y",
+        "upAxis": "Z"
+      }
+    },
+    {
+      "id": "side-box-lid",
+      "title": "盒側外牙原平面蓋",
+      "sourceScene": "learning/evidence/08/2026-10-28-external-thread-mount-gui-v002/demo-files/u11_box_external_thread_draft_v002.blend",
+      "sourceSha256": "df2108d06250807a9fa593ce966ae09e42d0fc3b2bfad97c98d0c40f77378c54",
+      "sourceObject": "Lid",
+      "stl": "learning/evidence/08/2026-10-28-ch11-stl-sidebox-v002/demo-files/exports/u11_side_box_lid_v002.stl",
+      "stlSha256": "0b226cf405bc70f42b5ce28fee9f46cb55eff67b84c6d786c091a2043f5f2408",
+      "stlBytes": 2284,
+      "binaryTriangles": 44,
+      "binaryExactDuplicateTriangles": 0,
+      "boundsMm": [
+        [
+          -30.0,
+          30.0
+        ],
+        [
+          -20.0,
+          20.0
+        ],
+        [
+          11.0,
+          17.0
+        ]
+      ],
+      "dimensionsMm": [
+        60.0,
+        40.0,
+        6.0
+      ],
+      "guiReimport": {
+        "object": "u11_side_box_lid_v002",
+        "vertices": 24,
+        "faces": 44,
+        "triangles": 44,
+        "boundsMm": [
+          [
+            -30.0,
+            30.0
+          ],
+          [
+            -20.0,
+            20.0
+          ],
+          [
+            11.0,
+            17.0
+          ]
+        ],
+        "signedVolumeMm3": 6195.199951171875,
+        "minimumTriangleAreaMm2": 31.599998029877806,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0
+      },
+      "independentAudit": "learning/evidence/08/2026-10-28-ch11-stl-sidebox-v002/side-box-lid-independent-audit-v001.json",
+      "independentReimport": {
+        "vertices": 24,
+        "faces": 44,
+        "triangles": 44,
+        "boundsMm": [
+          [
+            -30.0,
+            30.0
+          ],
+          [
+            -20.0,
+            20.0
+          ],
+          [
+            11.0,
+            17.0
+          ]
+        ],
+        "signedVolumeMm3": 6195.199951171875,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "components": 1,
+        "nonAdjacentBvhCandidates": 0,
+        "minimumTriangleAreaMm2": 31.599998029877806
+      },
+      "exportOptions": {
+        "operator": "WM_OT_stl_export",
+        "globalScale": 1.0,
+        "sceneUnit": false,
+        "forwardAxis": "Y",
+        "upAxis": "Z",
+        "selectionOnly": true,
+        "applyModifiers": true,
+        "binary": true,
+        "batch": false
+      },
+      "importOptions": {
+        "operator": "WM_OT_stl_import",
+        "globalScale": 1.0,
+        "sceneUnit": false,
+        "forwardAxis": "Y",
+        "upAxis": "Z"
+      }
+    },
+    {
+      "id": "side-cap-repaired",
+      "title": "盒側保護帽（三角化修訂）",
+      "sourceScene": "learning/evidence/08/2026-10-28-ch11-triangulate-cap-v001/demo-files/u11_side_cap_triangulated_v001.blend",
+      "sourceSha256": "f2e6646b9ad27f0f4912c8c14cb4cc664f44700bb6a376fe0df46fad63844efc",
+      "sourceObject": "Side_Cap_Blank",
+      "stl": "learning/evidence/08/2026-10-28-ch11-stl-repaired-cap-v001/demo-files/exports/u11_side_cap_triangulated_v001.stl",
+      "stlSha256": "960e2105a61cccf2b86be3b18fc1336a36fa1d6495f670c2214372a0003d8683",
+      "stlBytes": 93584,
+      "binaryTriangles": 1870,
+      "binaryExactDuplicateTriangles": 0,
+      "boundsMm": [
+        [
+          30.299999237060547,
+          35.79999923706055
+        ],
+        [
+          -7.690725326538086,
+          7.690725326538086
+        ],
+        [
+          -7.690725326538086,
+          7.690725326538086
+        ]
+      ],
+      "dimensionsMm": [
+        5.5,
+        15.381450653076172,
+        15.381450653076172
+      ],
+      "guiReimport": {
+        "object": "u11_side_cap_triangulated_v001",
+        "vertices": 937,
+        "faces": 1870,
+        "triangles": 1870,
+        "boundsMm": [
+          [
+            30.299999237060547,
+            35.79999923706055
+          ],
+          [
+            -7.690725326538086,
+            7.690725326538086
+          ],
+          [
+            -7.690725326538086,
+            7.690725326538086
+          ]
+        ],
+        "signedVolumeMm3": 635.8133751102725,
+        "minimumTriangleAreaMm2": 6.793898476591481e-05,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0
+      },
+      "independentAudit": "learning/evidence/08/2026-10-28-ch11-stl-repaired-cap-v001/side-cap-repaired-independent-audit-v001.json",
+      "independentReimport": {
+        "vertices": 937,
+        "faces": 1870,
+        "triangles": 1870,
+        "boundsMm": [
+          [
+            30.299999237060547,
+            35.79999923706055
+          ],
+          [
+            -7.690725326538086,
+            7.690725326538086
+          ],
+          [
+            -7.690725326538086,
+            7.690725326538086
+          ]
+        ],
+        "signedVolumeMm3": 635.8133751102725,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "components": 1,
+        "nonAdjacentBvhCandidates": 0,
+        "minimumTriangleAreaMm2": 6.793898476591481e-05
+      },
+      "exportOptions": {
+        "operator": "WM_OT_stl_export",
+        "globalScale": 1.0,
+        "sceneUnit": false,
+        "forwardAxis": "Y",
+        "upAxis": "Z",
+        "selectionOnly": true,
+        "applyModifiers": true,
+        "binary": true,
+        "batch": false
+      },
+      "importOptions": {
+        "operator": "WM_OT_stl_import",
+        "globalScale": 1.0,
+        "sceneUnit": false,
+        "forwardAxis": "Y",
+        "upAxis": "Z"
+      }
+    },
+    {
+      "id": "four-boss-body",
+      "title": "四嵌件柱盒體",
+      "sourceScene": "learning/evidence/08/2026-10-28-four-insert-boss-gui-v001/demo-files/u11_four_insert_boss_box_v001.blend",
+      "sourceSha256": "70f6687edc450438d21ada9b61b9295cf24079c64884947b9c4081de88e23462",
+      "sourceObject": "Body",
+      "stl": "learning/evidence/08/2026-10-28-ch11-stl-fourboss-v001/demo-files/exports/u11_four_boss_body_v001.stl",
+      "stlSha256": "7ee3fcea65e837940efd42a9b2ad6427b43e92f1027867e5bae8073d6a697afc",
+      "stlBytes": 59084,
+      "binaryTriangles": 1180,
+      "binaryExactDuplicateTriangles": 0,
+      "boundsMm": [
+        [
+          -30.0,
+          30.0
+        ],
+        [
+          -20.0,
+          20.0
+        ],
+        [
+          -15.0,
+          15.0
+        ]
+      ],
+      "dimensionsMm": [
+        60.0,
+        40.0,
+        30.0
+      ],
+      "guiReimport": {
+        "object": "u11_four_boss_body_v001",
+        "vertices": 592,
+        "faces": 1180,
+        "triangles": 1180,
+        "boundsMm": [
+          [
+            -30.0,
+            30.0
+          ],
+          [
+            -20.0,
+            20.0
+          ],
+          [
+            -15.0,
+            15.0
+          ]
+        ],
+        "signedVolumeMm3": 21820.082164356987,
+        "minimumTriangleAreaMm2": 0.014994438553368664,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0
+      },
+      "independentAudit": "learning/evidence/08/2026-10-28-ch11-stl-fourboss-v001/four-boss-body-independent-audit-v001.json",
+      "independentReimport": {
+        "vertices": 592,
+        "faces": 1180,
+        "triangles": 1180,
+        "boundsMm": [
+          [
+            -30.0,
+            30.0
+          ],
+          [
+            -20.0,
+            20.0
+          ],
+          [
+            -15.0,
+            15.0
+          ]
+        ],
+        "signedVolumeMm3": 21820.082164356987,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "components": 1,
+        "nonAdjacentBvhCandidates": 0,
+        "minimumTriangleAreaMm2": 0.014994438553368664
+      },
+      "exportOptions": {
+        "operator": "WM_OT_stl_export",
+        "globalScale": 1.0,
+        "sceneUnit": false,
+        "forwardAxis": "Y",
+        "upAxis": "Z",
+        "selectionOnly": true,
+        "applyModifiers": true,
+        "binary": true,
+        "batch": false
+      },
+      "importOptions": {
+        "operator": "WM_OT_stl_import",
+        "globalScale": 1.0,
+        "sceneUnit": false,
+        "forwardAxis": "Y",
+        "upAxis": "Z"
+      }
+    },
+    {
+      "id": "four-boss-lid",
+      "title": "四嵌件柱穿孔蓋",
+      "sourceScene": "learning/evidence/08/2026-10-28-four-insert-boss-gui-v001/demo-files/u11_four_insert_boss_box_v001.blend",
+      "sourceSha256": "70f6687edc450438d21ada9b61b9295cf24079c64884947b9c4081de88e23462",
+      "sourceObject": "Lid",
+      "stl": "learning/evidence/08/2026-10-28-ch11-stl-fourboss-v001/demo-files/exports/u11_four_boss_lid_v001.stl",
+      "stlSha256": "6476bb18490bb1c7f07bd12570ba8e85b09045ccf5ef69b389b75d8ff51c01eb",
+      "stlBytes": 28684,
+      "binaryTriangles": 572,
+      "binaryExactDuplicateTriangles": 0,
+      "boundsMm": [
+        [
+          -30.0,
+          30.0
+        ],
+        [
+          -20.0,
+          20.0
+        ],
+        [
+          11.0,
+          17.0
+        ]
+      ],
+      "dimensionsMm": [
+        60.0,
+        40.0,
+        6.0
+      ],
+      "guiReimport": {
+        "object": "u11_four_boss_lid_v001",
+        "vertices": 280,
+        "faces": 572,
+        "triangles": 572,
+        "boundsMm": [
+          [
+            -30.0,
+            30.0
+          ],
+          [
+            -20.0,
+            20.0
+          ],
+          [
+            11.0,
+            17.0
+          ]
+        ],
+        "signedVolumeMm3": 6123.032143425295,
+        "minimumTriangleAreaMm2": 0.04643917129764151,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0
+      },
+      "independentAudit": "learning/evidence/08/2026-10-28-ch11-stl-fourboss-v001/four-boss-lid-independent-audit-v001.json",
+      "independentReimport": {
+        "vertices": 280,
+        "faces": 572,
+        "triangles": 572,
+        "boundsMm": [
+          [
+            -30.0,
+            30.0
+          ],
+          [
+            -20.0,
+            20.0
+          ],
+          [
+            11.0,
+            17.0
+          ]
+        ],
+        "signedVolumeMm3": 6123.032143425295,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "components": 1,
+        "nonAdjacentBvhCandidates": 0,
+        "minimumTriangleAreaMm2": 0.04643917129764151
+      },
+      "exportOptions": {
+        "operator": "WM_OT_stl_export",
+        "globalScale": 1.0,
+        "sceneUnit": false,
+        "forwardAxis": "Y",
+        "upAxis": "Z",
+        "selectionOnly": true,
+        "applyModifiers": true,
+        "binary": true,
+        "batch": false
+      },
+      "importOptions": {
+        "operator": "WM_OT_stl_import",
+        "globalScale": 1.0,
+        "sceneUnit": false,
+        "forwardAxis": "Y",
+        "upAxis": "Z"
+      }
+    }
+  ],
+  "repairRecords": {
+    "sidebox": {
+      "source": "learning/evidence/08/2026-10-28-external-thread-mount-gui-v002/demo-files/u11_box_external_thread_draft_v002.blend",
+      "sourceSha256": "df2108d06250807a9fa593ce966ae09e42d0fc3b2bfad97c98d0c40f77378c54",
+      "revised": "learning/evidence/08/2026-10-28-ch11-triangulate-sidebox-v001/demo-files/u11_side_box_triangulated_v001.blend",
+      "revisedSha256": "dd5c074510f1bd6f99e8fda244340cac59f11ddde9ff7ba869d6a1437fbd60ea",
+      "comparison": "learning/evidence/08/2026-10-28-ch11-triangulate-sidebox-v001/independent-comparison-v001.json",
+      "originalDuplicateGroups": 4,
+      "revisedDuplicateGroups": 0,
+      "sourceVolumeMm3": 15920.101637442687,
+      "revisedVolumeMm3": 15920.013963481457,
+      "bidirectionalSampleMaxMm": [
+        0.0068793222308158875,
+        0.0068793222308158875
+      ]
+    },
+    "cap": {
+      "source": "learning/evidence/08/2026-10-28-side-cap-relief-gui-v001/demo-files/u11_side_thread_cap_draft_v002.blend",
+      "sourceSha256": "d4cb9e6467eebff735443daa405c958c459dbe2f04fce8a8e98df5a4b70ee332",
+      "revised": "learning/evidence/08/2026-10-28-ch11-triangulate-cap-v001/demo-files/u11_side_cap_triangulated_v001.blend",
+      "revisedSha256": "f2e6646b9ad27f0f4912c8c14cb4cc664f44700bb6a376fe0df46fad63844efc",
+      "comparison": "learning/evidence/08/2026-10-28-ch11-triangulate-cap-v001/independent-comparison-v001.json",
+      "originalDuplicateGroups": 2,
+      "revisedDuplicateGroups": 0,
+      "sourceVolumeMm3": 635.9751089861402,
+      "revisedVolumeMm3": 635.8132877215129,
+      "bidirectionalSampleMaxMm": [
+        0.0019502900540828705,
+        0.0016181599348783493
+      ]
+    }
+  },
+  "failureHistory": [
+    {
+      "kind": "side-box-body",
+      "file": "learning/evidence/08/2026-10-28-ch11-stl-sidebox-v002/demo-files/exports/u11_side_box_body_v002.stl",
+      "exactOppositeWindingDuplicateTriangles": 4,
+      "nativeReimportNonManifoldEdges": 12
+    },
+    {
+      "kind": "side-cap",
+      "file": "learning/evidence/08/2026-10-28-ch11-stl-cap-v002/demo-files/exports/u11_side_cap_v002.stl",
+      "exactOppositeWindingDuplicateTriangles": 2,
+      "nativeReimportNonManifoldEdges": 6
+    }
+  ],
+  "limitations": [
+    "原始盒側 Body 與側帽各有反向重複三角形；新 STL 來自明確三角化的新 .blend，原版和失敗記錄保留。",
+    "重三角化改變部分非平面 n-gon 的表面；頂點與三角形重心的雙向取樣不是完整形狀或旋合等同性證明。",
+    "本次 STL 保留場景世界擺位且 STL 無內嵌長度單位；切片時需自行核對單位、位置與方向。",
+    "精確重複 0、非流形 0、有限 BVH 結果與檔案尺寸皆非列印或配合合格保證。",
+    "帽的徑向 0.2 mm／名義直徑差 0.4 mm、軸向 0.2 mm 均為草案試驗值；四柱蓋孔 Ø3.4 mm 亦未實體試配。",
+    "原始 v002 verification 的固定英文 interpretation 無論計數為何都寫 retains duplicates，是程式通用說明錯誤；以原檔精確數量與獨立稽核為準。",
+    "原始 runner-status 含使用者 Windows Recent 路徑，不可原樣公開。"
+  ],
+  "physicalPrint": null,
+  "physicalMeasurement": null,
+  "physicalFit": null,
+  "qualifiedClearance": null,
+  "qualifiedStrength": null,
+  "steps": [
+    {
+      "id": "11-stl-hand-thread-01",
+      "goal": "手工輪廓外牙：選取來源物件",
+      "operation": "開啟來源保護副本，在 Outliner 只選 Thread_Core 並聚焦。",
+      "context": "STL 沒有單位標記；示範以毫米解讀數字，保留來源世界座標。數位核對不代表列印、尺寸公差或試配合格。",
+      "visibleConfirmation": "畫面顯示選中的來源；Item 尺寸和世界外框在旋轉情況可能不同。",
+      "programReadback": "程式確認只選 Thread_Core；世界外框約 12 × 12 × 4.8 mm。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-ch11-stl-hand-v001/STL-01-hand-thread-selected.png",
+        "sha256": "8618e5305075a247a92549d34dae8bcba6b1392f9210e5e84c6818ca8624be76"
+      }
+    },
+    {
+      "id": "11-stl-hand-thread-02",
+      "goal": "手工輪廓外牙：開啟 STL 匯出",
+      "operation": "GUI 選 File > Export > STL。",
+      "context": "STL 沒有單位標記；示範以毫米解讀數字，保留來源世界座標。數位核對不代表列印、尺寸公差或試配合格。",
+      "visibleConfirmation": "畫面顯示實際 Blender 檔案選單。",
+      "programReadback": "匯出前仍維持單物件選取。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-ch11-stl-hand-v001/STL-02-hand-thread-menu.png",
+        "sha256": "4ffc8e843db9f345b09499de4e7a16c6bf4949c94f91e43f1e7b1c79315110d4"
+      }
+    },
+    {
+      "id": "11-stl-hand-thread-03",
+      "goal": "手工輪廓外牙：確認匯出選項",
+      "operation": "在檔案視窗確認 Selection Only 勾選、Scale 1、Scene Unit 不勾，按 Export STL。",
+      "context": "STL 沒有單位標記；示範以毫米解讀數字，保留來源世界座標。數位核對不代表列印、尺寸公差或試配合格。",
+      "visibleConfirmation": "原圖顯示檔名及實際選項；檔案路徑與名稱由程式填入。",
+      "programReadback": "讀回二進位、Selection Only、Scale 1、Scene Unit 關、Apply Modifiers、Y Forward／Z Up。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-ch11-stl-hand-v001/STL-03-hand-thread-options.png",
+        "sha256": "e7a24d8850fcaf1ca47cf8ca13615cf9d23995f7553211c173a70c0b4c049764"
+      }
+    },
+    {
+      "id": "11-stl-hand-thread-04",
+      "goal": "手工輪廓外牙：讀取 STL 實檔",
+      "operation": "匯出後直接解析二進位 STL 並比對來源世界外框。",
+      "context": "STL 沒有單位標記；示範以毫米解讀數字，保留來源世界座標。數位核對不代表列印、尺寸公差或試配合格。",
+      "visibleConfirmation": "畫面返回 Blender；三角形及雜湊由程式讀檔，不由照片推定。",
+      "programReadback": "STL 1410 個三角形、精確重複 0；SHA-256 2279efed9fa58fa8c4352e9deb304a367c038fae345d94ca908f6f4577561e59。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-ch11-stl-hand-v001/STL-04-hand-thread-binary.png",
+        "sha256": "ce55ed645cedc9cb0570f97f87d1154ebd1d2657502a45bf369a340f7434fa77"
+      }
+    },
+    {
+      "id": "11-stl-hand-thread-05",
+      "goal": "手工輪廓外牙：開啟重新匯入",
+      "operation": "GUI 隱藏原物件，F3 搜尋 Import STL，選剛才的檔案。",
+      "context": "STL 沒有單位標記；示範以毫米解讀數字，保留來源世界座標。數位核對不代表列印、尺寸公差或試配合格。",
+      "visibleConfirmation": "實際匯入對話框顯示 Scale 1、Scene Unit 不勾；路徑與檔名由程式填入。",
+      "programReadback": "程式讀回 Y Forward／Z Up；這是以本次假定的 mm 數值重匯入。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-ch11-stl-hand-v001/STL-05-hand-thread-import-options.png",
+        "sha256": "93e86e7c2cdc1893dacf9c5cbbe1a2038d6b0863dedfc473852fa41b7d491ac5"
+      }
+    },
+    {
+      "id": "11-stl-hand-thread-06",
+      "goal": "手工輪廓外牙：實際重匯入核對",
+      "operation": "確認 Import STL，選中新網格並聚焦，核對世界尺寸。",
+      "context": "STL 沒有單位標記；示範以毫米解讀數字，保留來源世界座標。數位核對不代表列印、尺寸公差或試配合格。",
+      "visibleConfirmation": "畫面顯示新匯入物件；其軸向尺寸不一定等同原物件旋轉前 Item 值。",
+      "programReadback": "GUI 重匯入 1410 三角形、非流形邊 0；另一獨立 Blender 重匯入 1410、非流形邊 0。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-ch11-stl-hand-v001/STL-06-hand-thread-reimported.png",
+        "sha256": "cb308b23454bd6192dd26fe0dc9309103e4a3d651ac61b6aeb7f84a3c635d7ae"
+      }
+    },
+    {
+      "id": "11-stl-sidebox-repair-01",
+      "goal": "盒側盒體：檢查原始重複三角形",
+      "operation": "在保護副本中選取目標，核對原始 mesh 的三角化；不要覆寫來源。",
+      "context": "源模型與修訂模型另存；此三角化改變非平面 n-gon 的表示，不宣稱幾何完全不變。",
+      "visibleConfirmation": "畫面是 GUI 選中的原模型；重複三角形本身未在此圖可視化。",
+      "programReadback": "原模型讀回 4 組同頂點索引的重複三角形，來自反向 n-gon 三角化。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-ch11-triangulate-sidebox-v001/FIX-01-source.png",
+        "sha256": "4433a3cf4fbc6003f0af0ef99c10f225a63a657a7d767683945ca528fffa0946"
+      }
+    },
+    {
+      "id": "11-stl-sidebox-repair-02",
+      "goal": "盒側盒體：明確重三角化",
+      "operation": "Tab 進 Edit Mode、A 全選、Ctrl+T；將多邊形明確三角化。",
+      "context": "源模型與修訂模型另存；此三角化改變非平面 n-gon 的表示，不宣稱幾何完全不變。",
+      "visibleConfirmation": "可見 Edit Mode 的三角網格；此步可能改變非共面多邊形的表面。",
+      "programReadback": "讀回重複 0、非流形邊 0；不能只憑此判斷可製造。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-ch11-triangulate-sidebox-v001/FIX-02-triangulated.png",
+        "sha256": "4c8181f24879244bbcc4797bf233a277794665f13361ea66f08536ccd1e80b27"
+      }
+    },
+    {
+      "id": "11-stl-sidebox-repair-03",
+      "goal": "盒側盒體：另存修訂副本",
+      "operation": "Tab 回物件模式，Save As 另存新的 .blend。",
+      "context": "源模型與修訂模型另存；此三角化改變非平面 n-gon 的表示，不宣稱幾何完全不變。",
+      "visibleConfirmation": "畫面為修訂網格；示範的檔案路徑和名稱由程式填入。",
+      "programReadback": "修訂檔 SHA-256 dd5c074510f1bd6f99e8fda244340cac59f11ddde9ff7ba869d6a1437fbd60ea；原檔未覆寫。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-ch11-triangulate-sidebox-v001/FIX-03-saved.png",
+        "sha256": "bac5e3d872fe3a828b842b458ac7f3d97907c90832ec7524524f564191239837"
+      }
+    },
+    {
+      "id": "11-stl-sidebox-repair-04",
+      "goal": "盒側盒體：重開並比較",
+      "operation": "重開修訂檔，另以背景 Blender 比較原始與修訂幾何。",
+      "context": "源模型與修訂模型另存；此三角化改變非平面 n-gon 的表示，不宣稱幾何完全不變。",
+      "visibleConfirmation": "畫面顯示重開後的物件；雙向取樣差異需看讀值。",
+      "programReadback": "雙向頂點與三角形重心取樣最大距 0.0068793222 / 0.0068793222 mm；這不是全表面最大差或合格公差。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-ch11-triangulate-sidebox-v001/FIX-04-reopened.png",
+        "sha256": "804ba149f9d28299e5a568bfb9030e8b3fea1313f5424511c04ce1987d520084"
+      }
+    },
+    {
+      "id": "11-stl-side-box-body-repaired-01",
+      "goal": "盒側外牙盒體（三角化修訂）：選取來源物件",
+      "operation": "開啟來源保護副本，在 Outliner 只選 Body 並聚焦。",
+      "context": "STL 沒有單位標記；示範以毫米解讀數字，保留來源世界座標。數位核對不代表列印、尺寸公差或試配合格。",
+      "visibleConfirmation": "畫面顯示選中的來源；Item 尺寸和世界外框在旋轉情況可能不同。",
+      "programReadback": "程式確認只選 Body；世界外框約 64.3 × 40 × 30 mm。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-ch11-stl-repaired-sidebox-v001/STL-01-side-box-body-repaired-selected.png",
+        "sha256": "d687dc5862b207f8913f6d86b0772e1acb342a3d4d90d19868483230085721c3"
+      }
+    },
+    {
+      "id": "11-stl-side-box-body-repaired-02",
+      "goal": "盒側外牙盒體（三角化修訂）：開啟 STL 匯出",
+      "operation": "GUI 選 File > Export > STL。",
+      "context": "STL 沒有單位標記；示範以毫米解讀數字，保留來源世界座標。數位核對不代表列印、尺寸公差或試配合格。",
+      "visibleConfirmation": "畫面顯示實際 Blender 檔案選單。",
+      "programReadback": "匯出前仍維持單物件選取。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-ch11-stl-repaired-sidebox-v001/STL-02-side-box-body-repaired-menu.png",
+        "sha256": "1329951ad63819e11244c78c8d6518a28779c5f94b95f424b334e1ad5987840f"
+      }
+    },
+    {
+      "id": "11-stl-side-box-body-repaired-03",
+      "goal": "盒側外牙盒體（三角化修訂）：確認匯出選項",
+      "operation": "在檔案視窗確認 Selection Only 勾選、Scale 1、Scene Unit 不勾，按 Export STL。",
+      "context": "STL 沒有單位標記；示範以毫米解讀數字，保留來源世界座標。數位核對不代表列印、尺寸公差或試配合格。",
+      "visibleConfirmation": "原圖顯示檔名及實際選項；檔案路徑與名稱由程式填入。",
+      "programReadback": "讀回二進位、Selection Only、Scale 1、Scene Unit 關、Apply Modifiers、Y Forward／Z Up。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-ch11-stl-repaired-sidebox-v001/STL-03-side-box-body-repaired-options.png",
+        "sha256": "56446717c9b0257ca266bd728cc6e6a710ee23d88752d49e487bb9811de7f252"
+      }
+    },
+    {
+      "id": "11-stl-side-box-body-repaired-04",
+      "goal": "盒側外牙盒體（三角化修訂）：讀取 STL 實檔",
+      "operation": "匯出後直接解析二進位 STL 並比對來源世界外框。",
+      "context": "STL 沒有單位標記；示範以毫米解讀數字，保留來源世界座標。數位核對不代表列印、尺寸公差或試配合格。",
+      "visibleConfirmation": "畫面返回 Blender；三角形及雜湊由程式讀檔，不由照片推定。",
+      "programReadback": "STL 1420 個三角形、精確重複 0；SHA-256 f93e5ef13d319081c31fef8b5cf30674dd66a5513d486a86731c0b2f76cdec93。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-ch11-stl-repaired-sidebox-v001/STL-04-side-box-body-repaired-binary.png",
+        "sha256": "06bfe76edab1067225a9eda790bae9051d6e04ff4dbaf8c01d29ce5005d5e076"
+      }
+    },
+    {
+      "id": "11-stl-side-box-body-repaired-05",
+      "goal": "盒側外牙盒體（三角化修訂）：開啟重新匯入",
+      "operation": "GUI 隱藏原物件，F3 搜尋 Import STL，選剛才的檔案。",
+      "context": "STL 沒有單位標記；示範以毫米解讀數字，保留來源世界座標。數位核對不代表列印、尺寸公差或試配合格。",
+      "visibleConfirmation": "實際匯入對話框顯示 Scale 1、Scene Unit 不勾；路徑與檔名由程式填入。",
+      "programReadback": "程式讀回 Y Forward／Z Up；這是以本次假定的 mm 數值重匯入。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-ch11-stl-repaired-sidebox-v001/STL-05-side-box-body-repaired-import-options.png",
+        "sha256": "d7eb3e0e7a2870897b841ca0f33ed09b8b38722f5d77f9273c81998b3ffaee17"
+      }
+    },
+    {
+      "id": "11-stl-side-box-body-repaired-06",
+      "goal": "盒側外牙盒體（三角化修訂）：實際重匯入核對",
+      "operation": "確認 Import STL，選中新網格並聚焦，核對世界尺寸。",
+      "context": "STL 沒有單位標記；示範以毫米解讀數字，保留來源世界座標。數位核對不代表列印、尺寸公差或試配合格。",
+      "visibleConfirmation": "畫面顯示新匯入物件；其軸向尺寸不一定等同原物件旋轉前 Item 值。",
+      "programReadback": "GUI 重匯入 1420 三角形、非流形邊 0；另一獨立 Blender 重匯入 1420、非流形邊 0。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-ch11-stl-repaired-sidebox-v001/STL-06-side-box-body-repaired-reimported.png",
+        "sha256": "9668d818c818e57c93e88ed16746784beb675594b1f20dd3b52ef2f35098b4d7"
+      }
+    },
+    {
+      "id": "11-stl-side-box-lid-01",
+      "goal": "盒側外牙原平面蓋：選取來源物件",
+      "operation": "開啟來源保護副本，在 Outliner 只選 Lid 並聚焦。",
+      "context": "STL 沒有單位標記；示範以毫米解讀數字，保留來源世界座標。數位核對不代表列印、尺寸公差或試配合格。",
+      "visibleConfirmation": "畫面顯示選中的來源；Item 尺寸和世界外框在旋轉情況可能不同。",
+      "programReadback": "程式確認只選 Lid；世界外框約 60 × 40 × 6 mm。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-ch11-stl-sidebox-v002/STL-07-side-box-lid-selected.png",
+        "sha256": "8e65966e789f741b91f6552fab180ea63f82b66700a1817f1b85019ce173279c"
+      }
+    },
+    {
+      "id": "11-stl-side-box-lid-02",
+      "goal": "盒側外牙原平面蓋：開啟 STL 匯出",
+      "operation": "GUI 選 File > Export > STL。",
+      "context": "STL 沒有單位標記；示範以毫米解讀數字，保留來源世界座標。數位核對不代表列印、尺寸公差或試配合格。",
+      "visibleConfirmation": "畫面顯示實際 Blender 檔案選單。",
+      "programReadback": "匯出前仍維持單物件選取。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-ch11-stl-sidebox-v002/STL-08-side-box-lid-menu.png",
+        "sha256": "43890eb7b80e3ea1de08e1e6aa430fed0cf2642c15511f7d1bc6dfb1e95ff281"
+      }
+    },
+    {
+      "id": "11-stl-side-box-lid-03",
+      "goal": "盒側外牙原平面蓋：確認匯出選項",
+      "operation": "在檔案視窗確認 Selection Only 勾選、Scale 1、Scene Unit 不勾，按 Export STL。",
+      "context": "STL 沒有單位標記；示範以毫米解讀數字，保留來源世界座標。數位核對不代表列印、尺寸公差或試配合格。",
+      "visibleConfirmation": "原圖顯示檔名及實際選項；檔案路徑與名稱由程式填入。",
+      "programReadback": "讀回二進位、Selection Only、Scale 1、Scene Unit 關、Apply Modifiers、Y Forward／Z Up。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-ch11-stl-sidebox-v002/STL-09-side-box-lid-options.png",
+        "sha256": "b54f130faeb9fd50a39304f339058531676040e6483cfc9345f8d93ee36fbce4"
+      }
+    },
+    {
+      "id": "11-stl-side-box-lid-04",
+      "goal": "盒側外牙原平面蓋：讀取 STL 實檔",
+      "operation": "匯出後直接解析二進位 STL 並比對來源世界外框。",
+      "context": "STL 沒有單位標記；示範以毫米解讀數字，保留來源世界座標。數位核對不代表列印、尺寸公差或試配合格。",
+      "visibleConfirmation": "畫面返回 Blender；三角形及雜湊由程式讀檔，不由照片推定。",
+      "programReadback": "STL 44 個三角形、精確重複 0；SHA-256 0b226cf405bc70f42b5ce28fee9f46cb55eff67b84c6d786c091a2043f5f2408。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-ch11-stl-sidebox-v002/STL-10-side-box-lid-binary.png",
+        "sha256": "909b8af492ca9811663d6f4e5f8bbc2a124e037ffe22af7e37e19a650d49f7ca"
+      }
+    },
+    {
+      "id": "11-stl-side-box-lid-05",
+      "goal": "盒側外牙原平面蓋：開啟重新匯入",
+      "operation": "GUI 隱藏原物件，F3 搜尋 Import STL，選剛才的檔案。",
+      "context": "STL 沒有單位標記；示範以毫米解讀數字，保留來源世界座標。數位核對不代表列印、尺寸公差或試配合格。",
+      "visibleConfirmation": "實際匯入對話框顯示 Scale 1、Scene Unit 不勾；路徑與檔名由程式填入。",
+      "programReadback": "程式讀回 Y Forward／Z Up；這是以本次假定的 mm 數值重匯入。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-ch11-stl-sidebox-v002/STL-11-side-box-lid-import-options.png",
+        "sha256": "85d6476fb1cbace4dfe2711c60f7dd22cabaafcd85ff660ce83ee9de7785fb56"
+      }
+    },
+    {
+      "id": "11-stl-side-box-lid-06",
+      "goal": "盒側外牙原平面蓋：實際重匯入核對",
+      "operation": "確認 Import STL，選中新網格並聚焦，核對世界尺寸。",
+      "context": "STL 沒有單位標記；示範以毫米解讀數字，保留來源世界座標。數位核對不代表列印、尺寸公差或試配合格。",
+      "visibleConfirmation": "畫面顯示新匯入物件；其軸向尺寸不一定等同原物件旋轉前 Item 值。",
+      "programReadback": "GUI 重匯入 44 三角形、非流形邊 0；另一獨立 Blender 重匯入 44、非流形邊 0。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-ch11-stl-sidebox-v002/STL-12-side-box-lid-reimported.png",
+        "sha256": "67c28aec53fb157132b30f0e8b13bfe309cfc367f5cbbee2ce9623dfdf2fc150"
+      }
+    },
+    {
+      "id": "11-stl-cap-repair-01",
+      "goal": "盒側帽：檢查原始重複三角形",
+      "operation": "在保護副本中選取目標，核對原始 mesh 的三角化；不要覆寫來源。",
+      "context": "源模型與修訂模型另存；此三角化改變非平面 n-gon 的表示，不宣稱幾何完全不變。",
+      "visibleConfirmation": "畫面是 GUI 選中的原模型；重複三角形本身未在此圖可視化。",
+      "programReadback": "原模型讀回 2 組同頂點索引的重複三角形，來自反向 n-gon 三角化。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-ch11-triangulate-cap-v001/FIX-01-source.png",
+        "sha256": "0abdf01e1fc346a4940db019e1c88e774204f889c793e48b6d8f0667f972dfcb"
+      }
+    },
+    {
+      "id": "11-stl-cap-repair-02",
+      "goal": "盒側帽：明確重三角化",
+      "operation": "Tab 進 Edit Mode、A 全選、Ctrl+T；將多邊形明確三角化。",
+      "context": "源模型與修訂模型另存；此三角化改變非平面 n-gon 的表示，不宣稱幾何完全不變。",
+      "visibleConfirmation": "可見 Edit Mode 的三角網格；此步可能改變非共面多邊形的表面。",
+      "programReadback": "讀回重複 0、非流形邊 0；不能只憑此判斷可製造。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-ch11-triangulate-cap-v001/FIX-02-triangulated.png",
+        "sha256": "5531d820096b2f96e32a18473e35cfeab8a9c7f002eb63ab2168cef012ee1bce"
+      }
+    },
+    {
+      "id": "11-stl-cap-repair-03",
+      "goal": "盒側帽：另存修訂副本",
+      "operation": "Tab 回物件模式，Save As 另存新的 .blend。",
+      "context": "源模型與修訂模型另存；此三角化改變非平面 n-gon 的表示，不宣稱幾何完全不變。",
+      "visibleConfirmation": "畫面為修訂網格；示範的檔案路徑和名稱由程式填入。",
+      "programReadback": "修訂檔 SHA-256 f2e6646b9ad27f0f4912c8c14cb4cc664f44700bb6a376fe0df46fad63844efc；原檔未覆寫。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-ch11-triangulate-cap-v001/FIX-03-saved.png",
+        "sha256": "1c072c9563b5e56b81b4af4489caef807a5a8823dd2805ca80252a85ef195ee0"
+      }
+    },
+    {
+      "id": "11-stl-cap-repair-04",
+      "goal": "盒側帽：重開並比較",
+      "operation": "重開修訂檔，另以背景 Blender 比較原始與修訂幾何。",
+      "context": "源模型與修訂模型另存；此三角化改變非平面 n-gon 的表示，不宣稱幾何完全不變。",
+      "visibleConfirmation": "畫面顯示重開後的物件；雙向取樣差異需看讀值。",
+      "programReadback": "雙向頂點與三角形重心取樣最大距 0.0019502901 / 0.0016181599 mm；這不是全表面最大差或合格公差。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-ch11-triangulate-cap-v001/FIX-04-reopened.png",
+        "sha256": "4682efd1fae14b1d43ef745fc763e94e77759f5632687682b28f5f4244e478ce"
+      }
+    },
+    {
+      "id": "11-stl-side-cap-repaired-01",
+      "goal": "盒側保護帽（三角化修訂）：選取來源物件",
+      "operation": "開啟來源保護副本，在 Outliner 只選 Side_Cap_Blank 並聚焦。",
+      "context": "STL 沒有單位標記；示範以毫米解讀數字，保留來源世界座標。數位核對不代表列印、尺寸公差或試配合格。",
+      "visibleConfirmation": "畫面顯示選中的來源；Item 尺寸和世界外框在旋轉情況可能不同。",
+      "programReadback": "程式確認只選 Side_Cap_Blank；世界外框約 5.5 × 15.3815 × 15.3815 mm。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-ch11-stl-repaired-cap-v001/STL-01-side-cap-repaired-selected.png",
+        "sha256": "0abdf01e1fc346a4940db019e1c88e774204f889c793e48b6d8f0667f972dfcb"
+      }
+    },
+    {
+      "id": "11-stl-side-cap-repaired-02",
+      "goal": "盒側保護帽（三角化修訂）：開啟 STL 匯出",
+      "operation": "GUI 選 File > Export > STL。",
+      "context": "STL 沒有單位標記；示範以毫米解讀數字，保留來源世界座標。數位核對不代表列印、尺寸公差或試配合格。",
+      "visibleConfirmation": "畫面顯示實際 Blender 檔案選單。",
+      "programReadback": "匯出前仍維持單物件選取。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-ch11-stl-repaired-cap-v001/STL-02-side-cap-repaired-menu.png",
+        "sha256": "617659ec94c4cb9e7e368ec042470a8192224a8467d50742e53abfcfbcf621f6"
+      }
+    },
+    {
+      "id": "11-stl-side-cap-repaired-03",
+      "goal": "盒側保護帽（三角化修訂）：確認匯出選項",
+      "operation": "在檔案視窗確認 Selection Only 勾選、Scale 1、Scene Unit 不勾，按 Export STL。",
+      "context": "STL 沒有單位標記；示範以毫米解讀數字，保留來源世界座標。數位核對不代表列印、尺寸公差或試配合格。",
+      "visibleConfirmation": "原圖顯示檔名及實際選項；檔案路徑與名稱由程式填入。",
+      "programReadback": "讀回二進位、Selection Only、Scale 1、Scene Unit 關、Apply Modifiers、Y Forward／Z Up。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-ch11-stl-repaired-cap-v001/STL-03-side-cap-repaired-options.png",
+        "sha256": "da4345d216c127f6907b22b222bc7830a08f03901f4c8a0a7a95752bf61c0fc0"
+      }
+    },
+    {
+      "id": "11-stl-side-cap-repaired-04",
+      "goal": "盒側保護帽（三角化修訂）：讀取 STL 實檔",
+      "operation": "匯出後直接解析二進位 STL 並比對來源世界外框。",
+      "context": "STL 沒有單位標記；示範以毫米解讀數字，保留來源世界座標。數位核對不代表列印、尺寸公差或試配合格。",
+      "visibleConfirmation": "畫面返回 Blender；三角形及雜湊由程式讀檔，不由照片推定。",
+      "programReadback": "STL 1870 個三角形、精確重複 0；SHA-256 960e2105a61cccf2b86be3b18fc1336a36fa1d6495f670c2214372a0003d8683。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-ch11-stl-repaired-cap-v001/STL-04-side-cap-repaired-binary.png",
+        "sha256": "000c8ba7689f2ca77e5e33960fe46763d47d887683fe612c7e5d253efa20e476"
+      }
+    },
+    {
+      "id": "11-stl-side-cap-repaired-05",
+      "goal": "盒側保護帽（三角化修訂）：開啟重新匯入",
+      "operation": "GUI 隱藏原物件，F3 搜尋 Import STL，選剛才的檔案。",
+      "context": "STL 沒有單位標記；示範以毫米解讀數字，保留來源世界座標。數位核對不代表列印、尺寸公差或試配合格。",
+      "visibleConfirmation": "實際匯入對話框顯示 Scale 1、Scene Unit 不勾；路徑與檔名由程式填入。",
+      "programReadback": "程式讀回 Y Forward／Z Up；這是以本次假定的 mm 數值重匯入。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-ch11-stl-repaired-cap-v001/STL-05-side-cap-repaired-import-options.png",
+        "sha256": "fe4e7bc9a38eec7b2d2c8c533839eebf22e7920cd65a0c5b865c38f8e362dac2"
+      }
+    },
+    {
+      "id": "11-stl-side-cap-repaired-06",
+      "goal": "盒側保護帽（三角化修訂）：實際重匯入核對",
+      "operation": "確認 Import STL，選中新網格並聚焦，核對世界尺寸。",
+      "context": "STL 沒有單位標記；示範以毫米解讀數字，保留來源世界座標。數位核對不代表列印、尺寸公差或試配合格。",
+      "visibleConfirmation": "畫面顯示新匯入物件；其軸向尺寸不一定等同原物件旋轉前 Item 值。",
+      "programReadback": "GUI 重匯入 1870 三角形、非流形邊 0；另一獨立 Blender 重匯入 1870、非流形邊 0。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-ch11-stl-repaired-cap-v001/STL-06-side-cap-repaired-reimported.png",
+        "sha256": "b93d917944f0cd663e4f98b137f581858d01e32de9204f5f963b3b0fbf8d8e71"
+      }
+    },
+    {
+      "id": "11-stl-four-boss-body-01",
+      "goal": "四嵌件柱盒體：選取來源物件",
+      "operation": "開啟來源保護副本，在 Outliner 只選 Body 並聚焦。",
+      "context": "STL 沒有單位標記；示範以毫米解讀數字，保留來源世界座標。數位核對不代表列印、尺寸公差或試配合格。",
+      "visibleConfirmation": "畫面顯示選中的來源；Item 尺寸和世界外框在旋轉情況可能不同。",
+      "programReadback": "程式確認只選 Body；世界外框約 60 × 40 × 30 mm。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-ch11-stl-fourboss-v001/STL-01-four-boss-body-selected.png",
+        "sha256": "f9c1a5548d39a15b749021e25918f0ea5338f9f7010703c8f61dea1a27fb9f07"
+      }
+    },
+    {
+      "id": "11-stl-four-boss-body-02",
+      "goal": "四嵌件柱盒體：開啟 STL 匯出",
+      "operation": "GUI 選 File > Export > STL。",
+      "context": "STL 沒有單位標記；示範以毫米解讀數字，保留來源世界座標。數位核對不代表列印、尺寸公差或試配合格。",
+      "visibleConfirmation": "畫面顯示實際 Blender 檔案選單。",
+      "programReadback": "匯出前仍維持單物件選取。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-ch11-stl-fourboss-v001/STL-02-four-boss-body-menu.png",
+        "sha256": "4e435a76a8c2593d92393fcc5c012ba9d34ebd18b77bf7978aadb5a1a756d572"
+      }
+    },
+    {
+      "id": "11-stl-four-boss-body-03",
+      "goal": "四嵌件柱盒體：確認匯出選項",
+      "operation": "在檔案視窗確認 Selection Only 勾選、Scale 1、Scene Unit 不勾，按 Export STL。",
+      "context": "STL 沒有單位標記；示範以毫米解讀數字，保留來源世界座標。數位核對不代表列印、尺寸公差或試配合格。",
+      "visibleConfirmation": "原圖顯示檔名及實際選項；檔案路徑與名稱由程式填入。",
+      "programReadback": "讀回二進位、Selection Only、Scale 1、Scene Unit 關、Apply Modifiers、Y Forward／Z Up。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-ch11-stl-fourboss-v001/STL-03-four-boss-body-options.png",
+        "sha256": "3cd1af4c0ae0a7778fbf62ad24ef44b1225342d911f7e2c182c697a1986aab45"
+      }
+    },
+    {
+      "id": "11-stl-four-boss-body-04",
+      "goal": "四嵌件柱盒體：讀取 STL 實檔",
+      "operation": "匯出後直接解析二進位 STL 並比對來源世界外框。",
+      "context": "STL 沒有單位標記；示範以毫米解讀數字，保留來源世界座標。數位核對不代表列印、尺寸公差或試配合格。",
+      "visibleConfirmation": "畫面返回 Blender；三角形及雜湊由程式讀檔，不由照片推定。",
+      "programReadback": "STL 1180 個三角形、精確重複 0；SHA-256 7ee3fcea65e837940efd42a9b2ad6427b43e92f1027867e5bae8073d6a697afc。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-ch11-stl-fourboss-v001/STL-04-four-boss-body-binary.png",
+        "sha256": "124bdbd8e98a6e081812904f70d8f0368593df5158b76830506d792a4dec9fc3"
+      }
+    },
+    {
+      "id": "11-stl-four-boss-body-05",
+      "goal": "四嵌件柱盒體：開啟重新匯入",
+      "operation": "GUI 隱藏原物件，F3 搜尋 Import STL，選剛才的檔案。",
+      "context": "STL 沒有單位標記；示範以毫米解讀數字，保留來源世界座標。數位核對不代表列印、尺寸公差或試配合格。",
+      "visibleConfirmation": "實際匯入對話框顯示 Scale 1、Scene Unit 不勾；路徑與檔名由程式填入。",
+      "programReadback": "程式讀回 Y Forward／Z Up；這是以本次假定的 mm 數值重匯入。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-ch11-stl-fourboss-v001/STL-05-four-boss-body-import-options.png",
+        "sha256": "f42f0b6e7699a59600c1c9ca3171cf46903d631ffd1f078f11d72d4592781c1e"
+      }
+    },
+    {
+      "id": "11-stl-four-boss-body-06",
+      "goal": "四嵌件柱盒體：實際重匯入核對",
+      "operation": "確認 Import STL，選中新網格並聚焦，核對世界尺寸。",
+      "context": "STL 沒有單位標記；示範以毫米解讀數字，保留來源世界座標。數位核對不代表列印、尺寸公差或試配合格。",
+      "visibleConfirmation": "畫面顯示新匯入物件；其軸向尺寸不一定等同原物件旋轉前 Item 值。",
+      "programReadback": "GUI 重匯入 1180 三角形、非流形邊 0；另一獨立 Blender 重匯入 1180、非流形邊 0。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-ch11-stl-fourboss-v001/STL-06-four-boss-body-reimported.png",
+        "sha256": "9829cf992171c8300457bffd0c716666aacd9d3237af1e0b57e5f1ae65ce22ac"
+      }
+    },
+    {
+      "id": "11-stl-four-boss-lid-01",
+      "goal": "四嵌件柱穿孔蓋：選取來源物件",
+      "operation": "開啟來源保護副本，在 Outliner 只選 Lid 並聚焦。",
+      "context": "STL 沒有單位標記；示範以毫米解讀數字，保留來源世界座標。數位核對不代表列印、尺寸公差或試配合格。",
+      "visibleConfirmation": "畫面顯示選中的來源；Item 尺寸和世界外框在旋轉情況可能不同。",
+      "programReadback": "程式確認只選 Lid；世界外框約 60 × 40 × 6 mm。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-ch11-stl-fourboss-v001/STL-07-four-boss-lid-selected.png",
+        "sha256": "f936b6a587fbf82f45ec95edfbaf8d86036ed061027c1aeb625d302e076c7a49"
+      }
+    },
+    {
+      "id": "11-stl-four-boss-lid-02",
+      "goal": "四嵌件柱穿孔蓋：開啟 STL 匯出",
+      "operation": "GUI 選 File > Export > STL。",
+      "context": "STL 沒有單位標記；示範以毫米解讀數字，保留來源世界座標。數位核對不代表列印、尺寸公差或試配合格。",
+      "visibleConfirmation": "畫面顯示實際 Blender 檔案選單。",
+      "programReadback": "匯出前仍維持單物件選取。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-ch11-stl-fourboss-v001/STL-08-four-boss-lid-menu.png",
+        "sha256": "b87e3adb8976948ef6a24847fb3f2ca3e13ac3c846ea40dcaba0d704858c85d7"
+      }
+    },
+    {
+      "id": "11-stl-four-boss-lid-03",
+      "goal": "四嵌件柱穿孔蓋：確認匯出選項",
+      "operation": "在檔案視窗確認 Selection Only 勾選、Scale 1、Scene Unit 不勾，按 Export STL。",
+      "context": "STL 沒有單位標記；示範以毫米解讀數字，保留來源世界座標。數位核對不代表列印、尺寸公差或試配合格。",
+      "visibleConfirmation": "原圖顯示檔名及實際選項；檔案路徑與名稱由程式填入。",
+      "programReadback": "讀回二進位、Selection Only、Scale 1、Scene Unit 關、Apply Modifiers、Y Forward／Z Up。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-ch11-stl-fourboss-v001/STL-09-four-boss-lid-options.png",
+        "sha256": "42de4ae482add9803b9d8f680371f48ca6c400373aa634eeedb857169ab741b8"
+      }
+    },
+    {
+      "id": "11-stl-four-boss-lid-04",
+      "goal": "四嵌件柱穿孔蓋：讀取 STL 實檔",
+      "operation": "匯出後直接解析二進位 STL 並比對來源世界外框。",
+      "context": "STL 沒有單位標記；示範以毫米解讀數字，保留來源世界座標。數位核對不代表列印、尺寸公差或試配合格。",
+      "visibleConfirmation": "畫面返回 Blender；三角形及雜湊由程式讀檔，不由照片推定。",
+      "programReadback": "STL 572 個三角形、精確重複 0；SHA-256 6476bb18490bb1c7f07bd12570ba8e85b09045ccf5ef69b389b75d8ff51c01eb。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-ch11-stl-fourboss-v001/STL-10-four-boss-lid-binary.png",
+        "sha256": "f528bf4b86669732adc08385e3b5bb218f8aab1209fb54df9c67b0ce33a70bb2"
+      }
+    },
+    {
+      "id": "11-stl-four-boss-lid-05",
+      "goal": "四嵌件柱穿孔蓋：開啟重新匯入",
+      "operation": "GUI 隱藏原物件，F3 搜尋 Import STL，選剛才的檔案。",
+      "context": "STL 沒有單位標記；示範以毫米解讀數字，保留來源世界座標。數位核對不代表列印、尺寸公差或試配合格。",
+      "visibleConfirmation": "實際匯入對話框顯示 Scale 1、Scene Unit 不勾；路徑與檔名由程式填入。",
+      "programReadback": "程式讀回 Y Forward／Z Up；這是以本次假定的 mm 數值重匯入。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-ch11-stl-fourboss-v001/STL-11-four-boss-lid-import-options.png",
+        "sha256": "7d21ba5bf7b5fddf8c92b629140fe51b6c8cdb449e91f3e9e68e4f9984eb6953"
+      }
+    },
+    {
+      "id": "11-stl-four-boss-lid-06",
+      "goal": "四嵌件柱穿孔蓋：實際重匯入核對",
+      "operation": "確認 Import STL，選中新網格並聚焦，核對世界尺寸。",
+      "context": "STL 沒有單位標記；示範以毫米解讀數字，保留來源世界座標。數位核對不代表列印、尺寸公差或試配合格。",
+      "visibleConfirmation": "畫面顯示新匯入物件；其軸向尺寸不一定等同原物件旋轉前 Item 值。",
+      "programReadback": "GUI 重匯入 572 三角形、非流形邊 0；另一獨立 Blender 重匯入 572、非流形邊 0。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-ch11-stl-fourboss-v001/STL-12-four-boss-lid-reimported.png",
+        "sha256": "51750519fd1a89d292e8b942b1edf3501e61c990537223b6face4d2c182af025"
+      }
+    }
+  ]
+}

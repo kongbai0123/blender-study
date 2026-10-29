@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "title": "07-02 整盒卡扣與蓋裙真實網格工程題圖",
+  "sourceScene": {
+    "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/demo-files/u07_cantilever_snap_v001.blend",
+    "sha256": "5fec09b934f2935839d615376beaf598962d47f1b7ac2504f2666c7880a26305"
+  },
+  "bodyRaw": {
+    "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/body_mesh.json",
+    "sha256": "f40578c09793b6418afaf6b3f5508016a7186022f46bf37695f0c9d25e6df86f"
+  },
+  "lidRaw": {
+    "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/lid_mesh.json",
+    "sha256": "54bcbdce1ca5ab3ee8b1118d6f5135c44ff2519fa2c5821b0ce30ed746c08dd8"
+  },
+  "sourceReadback": {
+    "path": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/geometry-draft-record-v001.json",
+    "sha256": "4f201124cbf51dc849c7978ee85f7ff5e58ca4273cdd9b006d3eba6c52521b7a"
+  },
+  "method": "以隔離背景 Blender 重開來源場景，取得 Body／Lid evaluated world-space loop triangles；各三角面的座標取五位小數後逐三角與當時 raw 比對，投影畫出所有三角邊，X=0 平面以三角面交線計算。五位數是資料比對，不是製造公差。",
+  "sceneMeshMatchesRaw": true,
+  "bodyBoundsMm": [
+    [
+      -30.0,
+      30.0
+    ],
+    [
+      -24.5,
+      20.0
+    ],
+    [
+      -15.0,
+      15.0
+    ]
+  ],
+  "lidBoundsMm": [
+    [
+      -30.0,
+      30.0
+    ],
+    [
+      -26.0,
+      20.0
+    ],
+    [
+      10.199999809265137,
+      17.200000762939453
+    ]
+  ],
+  "triangleCounts": {
+    "Body": 116,
+    "Lid": 48
+  },
+  "sectionSegments": {
+    "Body": 56,
+    "Lid": 26
+  },
+  "nominalMm": {
+    "boxCore": [
+      60,
+      40,
+      30
+    ],
+    "bodyBounds": [
+      60,
+      44.5,
+      30
+    ],
+    "lidBounds": [
+      60,
+      46,
+      7
+    ],
+    "lidPlate": [
+      60,
+      46,
+      2
+    ],
+    "geometricLengthZminus8To11": 19,
+    "straightArmThicknessY": 1.6,
+    "straightArmWidthX": 6,
+    "hookProjectionY": 1.2,
+    "hookFlangeProjectedOverlapY": 0.9,
+    "verticalHookFlangeGap": 0.2,
+    "armOuterFlangeGap": 0.3,
+    "hookSkirtGap": 0.3,
+    "skirtThicknessY": 1.5
+  },
+  "limitation": "未變形名義狀態；三方向均為所有邊投影而非可見線剔除，截面局部不是完整的公差設計或驗收圖；幾何L不等於力學有效長，u和投影重疊不等於所需撓度；不等於獨立試片分支。材料、允許應變、製造公差、實印、量測、試配、強度／配合合格待定。",
+  "drawing": {
+    "path": "learning/web/challenges/snapfit-box-lid-drawing-v001.svg",
+    "sha256": "03487ffba97d93abe83cce10c283cc0687d9ecbc2574434af88ad890374b5e59"
+  }
+}

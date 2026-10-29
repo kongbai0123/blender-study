@@ -1,0 +1,78 @@
+{
+  "label": "saved",
+  "mode": "OBJECT",
+  "active": "Body",
+  "activeSketch": null,
+  "objects": [
+    {
+      "name": "WP_XY",
+      "type": "EMPTY",
+      "hidden": true,
+      "selected": false,
+      "modifiers": []
+    },
+    {
+      "name": "WP_XZ",
+      "type": "EMPTY",
+      "hidden": true,
+      "selected": false,
+      "modifiers": []
+    },
+    {
+      "name": "WP_YZ",
+      "type": "EMPTY",
+      "hidden": true,
+      "selected": false,
+      "modifiers": []
+    },
+    {
+      "name": "Body Sketch",
+      "type": "CURVES",
+      "hidden": false,
+      "selected": false,
+      "modifiers": [],
+      "evaluationError": "Error: Object does not have geometry data\n"
+    },
+    {
+      "name": "Body XY",
+      "type": "EMPTY",
+      "hidden": true,
+      "selected": false,
+      "modifiers": []
+    },
+    {
+      "name": "Body",
+      "type": "MESH",
+      "hidden": false,
+      "selected": true,
+      "modifiers": [
+        {
+          "name": "CAD Sketcher Convert",
+          "type": "NODES"
+        },
+        {
+          "name": "CAD_Sketcher Extrude",
+          "type": "NODES"
+        }
+      ],
+      "evaluated": {
+        "vertices": 8,
+        "faces": 6,
+        "bounds": [
+          [
+            0.0,
+            60.0
+          ],
+          [
+            0.0,
+            40.0
+          ],
+          [
+            0.0,
+            30.0
+          ]
+        ]
+      }
+    }
+  ]
+}

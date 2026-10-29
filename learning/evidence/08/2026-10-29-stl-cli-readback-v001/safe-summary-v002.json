@@ -1,0 +1,370 @@
+{
+  "schemaVersion": 1,
+  "tool": {
+    "path": "learning/tutor/inspect_stl_v001.py",
+    "sha256": "1aeff57a65f2aff2d44e10540371481b4b42dc24056d6f530813197117f984c0"
+  },
+  "scope": "六次真實Python CLI子程序；JSON以ASCII編碼避免Windows cp950無法輸出合法Unicode檔名。非Blender GUI操作，不做製造合格判定。",
+  "records": [
+    {
+      "id": "hand-thread",
+      "sourceStl": "learning/evidence/08/2026-10-28-ch11-stl-public-hand-v001/demo-files/exports/u11_hand_thread_public_v001.stl",
+      "readback": {
+        "schemaVersion": 1,
+        "inputName": "u11_hand_thread_public_v001.stl",
+        "sha256": "2279efed9fa58fa8c4352e9deb304a367c038fae345d94ca908f6f4577561e59",
+        "bytes": 70584,
+        "binaryTriangles": 1410,
+        "unitInterpretation": "mm",
+        "worldCoordinateBoundsMm": [
+          [
+            -6.0,
+            6.0
+          ],
+          [
+            -6.0,
+            6.0
+          ],
+          [
+            -0.09999775886535645,
+            4.699997901916504
+          ]
+        ],
+        "worldDimensionsMm": [
+          12.0,
+          12.0,
+          4.79999566078186
+        ],
+        "exactCoordinateDuplicateGroups": 0,
+        "exactCoordinateDuplicateExcessTriangles": 0,
+        "zeroAreaFacets": 0,
+        "numericalComparison": {
+          "expectedWorldDimensionsMm": [
+            12.0,
+            12.0,
+            4.79999566078186
+          ],
+          "actualMinusExpectedMm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "absoluteNumericEpsilonMm": 0.0001,
+          "withinNumericEpsilon": true,
+          "meaning": "floating-point number comparison only; not a manufacturing tolerance"
+        },
+        "limitations": [
+          "Does not modify the input or weld coordinates; winding is ignored only when counting duplicate coordinates.",
+          "Does not check manifold topology, all self-intersections, thin walls, slicing, material, strength or fit.",
+          "STL has no unit declaration; mm is the explicit interpretation chosen by this command."
+        ],
+        "physicalPrint": null,
+        "physicalMeasurement": null,
+        "physicalFit": null,
+        "qualifiedClearance": null,
+        "qualifiedStrength": null
+      },
+      "exitCode": 0
+    },
+    {
+      "id": "side-box-body-repaired",
+      "sourceStl": "learning/evidence/08/2026-10-28-ch11-stl-public-sidebox-v001/demo-files/exports/u11_side_box_body_triangulated_public_v001.stl",
+      "readback": {
+        "schemaVersion": 1,
+        "inputName": "u11_side_box_body_triangulated_public_v001.stl",
+        "sha256": "f93e5ef13d319081c31fef8b5cf30674dd66a5513d486a86731c0b2f76cdec93",
+        "bytes": 71084,
+        "binaryTriangles": 1420,
+        "unitInterpretation": "mm",
+        "worldCoordinateBoundsMm": [
+          [
+            -30.0,
+            34.29999542236328
+          ],
+          [
+            -20.0,
+            20.0
+          ],
+          [
+            -15.0,
+            15.0
+          ]
+        ],
+        "worldDimensionsMm": [
+          64.29999542236328,
+          40.0,
+          30.0
+        ],
+        "exactCoordinateDuplicateGroups": 0,
+        "exactCoordinateDuplicateExcessTriangles": 0,
+        "zeroAreaFacets": 0,
+        "numericalComparison": {
+          "expectedWorldDimensionsMm": [
+            64.29999542236328,
+            40.0,
+            30.0
+          ],
+          "actualMinusExpectedMm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "absoluteNumericEpsilonMm": 0.0001,
+          "withinNumericEpsilon": true,
+          "meaning": "floating-point number comparison only; not a manufacturing tolerance"
+        },
+        "limitations": [
+          "Does not modify the input or weld coordinates; winding is ignored only when counting duplicate coordinates.",
+          "Does not check manifold topology, all self-intersections, thin walls, slicing, material, strength or fit.",
+          "STL has no unit declaration; mm is the explicit interpretation chosen by this command."
+        ],
+        "physicalPrint": null,
+        "physicalMeasurement": null,
+        "physicalFit": null,
+        "qualifiedClearance": null,
+        "qualifiedStrength": null
+      },
+      "exitCode": 0
+    },
+    {
+      "id": "side-box-lid",
+      "sourceStl": "learning/evidence/08/2026-10-28-ch11-stl-public-sidelid-v001/demo-files/exports/u11_side_box_lid_public_v001.stl",
+      "readback": {
+        "schemaVersion": 1,
+        "inputName": "u11_side_box_lid_public_v001.stl",
+        "sha256": "0b226cf405bc70f42b5ce28fee9f46cb55eff67b84c6d786c091a2043f5f2408",
+        "bytes": 2284,
+        "binaryTriangles": 44,
+        "unitInterpretation": "mm",
+        "worldCoordinateBoundsMm": [
+          [
+            -30.0,
+            30.0
+          ],
+          [
+            -20.0,
+            20.0
+          ],
+          [
+            11.0,
+            17.0
+          ]
+        ],
+        "worldDimensionsMm": [
+          60.0,
+          40.0,
+          6.0
+        ],
+        "exactCoordinateDuplicateGroups": 0,
+        "exactCoordinateDuplicateExcessTriangles": 0,
+        "zeroAreaFacets": 0,
+        "numericalComparison": {
+          "expectedWorldDimensionsMm": [
+            60.0,
+            40.0,
+            6.0
+          ],
+          "actualMinusExpectedMm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "absoluteNumericEpsilonMm": 0.0001,
+          "withinNumericEpsilon": true,
+          "meaning": "floating-point number comparison only; not a manufacturing tolerance"
+        },
+        "limitations": [
+          "Does not modify the input or weld coordinates; winding is ignored only when counting duplicate coordinates.",
+          "Does not check manifold topology, all self-intersections, thin walls, slicing, material, strength or fit.",
+          "STL has no unit declaration; mm is the explicit interpretation chosen by this command."
+        ],
+        "physicalPrint": null,
+        "physicalMeasurement": null,
+        "physicalFit": null,
+        "qualifiedClearance": null,
+        "qualifiedStrength": null
+      },
+      "exitCode": 0
+    },
+    {
+      "id": "side-cap-repaired",
+      "sourceStl": "learning/evidence/08/2026-10-28-ch11-stl-public-cap-v001/demo-files/exports/u11_side_cap_triangulated_public_v001.stl",
+      "readback": {
+        "schemaVersion": 1,
+        "inputName": "u11_side_cap_triangulated_public_v001.stl",
+        "sha256": "960e2105a61cccf2b86be3b18fc1336a36fa1d6495f670c2214372a0003d8683",
+        "bytes": 93584,
+        "binaryTriangles": 1870,
+        "unitInterpretation": "mm",
+        "worldCoordinateBoundsMm": [
+          [
+            30.299999237060547,
+            35.79999923706055
+          ],
+          [
+            -7.690725326538086,
+            7.690725326538086
+          ],
+          [
+            -7.690725326538086,
+            7.690725326538086
+          ]
+        ],
+        "worldDimensionsMm": [
+          5.5,
+          15.381450653076172,
+          15.381450653076172
+        ],
+        "exactCoordinateDuplicateGroups": 0,
+        "exactCoordinateDuplicateExcessTriangles": 0,
+        "zeroAreaFacets": 0,
+        "numericalComparison": {
+          "expectedWorldDimensionsMm": [
+            5.5,
+            15.381450653076172,
+            15.381450653076172
+          ],
+          "actualMinusExpectedMm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "absoluteNumericEpsilonMm": 0.0001,
+          "withinNumericEpsilon": true,
+          "meaning": "floating-point number comparison only; not a manufacturing tolerance"
+        },
+        "limitations": [
+          "Does not modify the input or weld coordinates; winding is ignored only when counting duplicate coordinates.",
+          "Does not check manifold topology, all self-intersections, thin walls, slicing, material, strength or fit.",
+          "STL has no unit declaration; mm is the explicit interpretation chosen by this command."
+        ],
+        "physicalPrint": null,
+        "physicalMeasurement": null,
+        "physicalFit": null,
+        "qualifiedClearance": null,
+        "qualifiedStrength": null
+      },
+      "exitCode": 0
+    },
+    {
+      "id": "four-boss-body",
+      "sourceStl": "learning/evidence/08/2026-10-28-ch11-stl-public-fourboss-v001/demo-files/exports/u11_four_boss_body_public_v001.stl",
+      "readback": {
+        "schemaVersion": 1,
+        "inputName": "u11_four_boss_body_public_v001.stl",
+        "sha256": "7ee3fcea65e837940efd42a9b2ad6427b43e92f1027867e5bae8073d6a697afc",
+        "bytes": 59084,
+        "binaryTriangles": 1180,
+        "unitInterpretation": "mm",
+        "worldCoordinateBoundsMm": [
+          [
+            -30.0,
+            30.0
+          ],
+          [
+            -20.0,
+            20.0
+          ],
+          [
+            -15.0,
+            15.0
+          ]
+        ],
+        "worldDimensionsMm": [
+          60.0,
+          40.0,
+          30.0
+        ],
+        "exactCoordinateDuplicateGroups": 0,
+        "exactCoordinateDuplicateExcessTriangles": 0,
+        "zeroAreaFacets": 0,
+        "numericalComparison": {
+          "expectedWorldDimensionsMm": [
+            60.0,
+            40.0,
+            30.0
+          ],
+          "actualMinusExpectedMm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "absoluteNumericEpsilonMm": 0.0001,
+          "withinNumericEpsilon": true,
+          "meaning": "floating-point number comparison only; not a manufacturing tolerance"
+        },
+        "limitations": [
+          "Does not modify the input or weld coordinates; winding is ignored only when counting duplicate coordinates.",
+          "Does not check manifold topology, all self-intersections, thin walls, slicing, material, strength or fit.",
+          "STL has no unit declaration; mm is the explicit interpretation chosen by this command."
+        ],
+        "physicalPrint": null,
+        "physicalMeasurement": null,
+        "physicalFit": null,
+        "qualifiedClearance": null,
+        "qualifiedStrength": null
+      },
+      "exitCode": 0
+    },
+    {
+      "id": "four-boss-lid",
+      "sourceStl": "learning/evidence/08/2026-10-28-ch11-stl-public-fourboss-v001/demo-files/exports/u11_four_boss_lid_public_v001.stl",
+      "readback": {
+        "schemaVersion": 1,
+        "inputName": "u11_four_boss_lid_public_v001.stl",
+        "sha256": "6476bb18490bb1c7f07bd12570ba8e85b09045ccf5ef69b389b75d8ff51c01eb",
+        "bytes": 28684,
+        "binaryTriangles": 572,
+        "unitInterpretation": "mm",
+        "worldCoordinateBoundsMm": [
+          [
+            -30.0,
+            30.0
+          ],
+          [
+            -20.0,
+            20.0
+          ],
+          [
+            11.0,
+            17.0
+          ]
+        ],
+        "worldDimensionsMm": [
+          60.0,
+          40.0,
+          6.0
+        ],
+        "exactCoordinateDuplicateGroups": 0,
+        "exactCoordinateDuplicateExcessTriangles": 0,
+        "zeroAreaFacets": 0,
+        "numericalComparison": {
+          "expectedWorldDimensionsMm": [
+            60.0,
+            40.0,
+            6.0
+          ],
+          "actualMinusExpectedMm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "absoluteNumericEpsilonMm": 0.0001,
+          "withinNumericEpsilon": true,
+          "meaning": "floating-point number comparison only; not a manufacturing tolerance"
+        },
+        "limitations": [
+          "Does not modify the input or weld coordinates; winding is ignored only when counting duplicate coordinates.",
+          "Does not check manifold topology, all self-intersections, thin walls, slicing, material, strength or fit.",
+          "STL has no unit declaration; mm is the explicit interpretation chosen by this command."
+        ],
+        "physicalPrint": null,
+        "physicalMeasurement": null,
+        "physicalFit": null,
+        "qualifiedClearance": null,
+        "qualifiedStrength": null
+      },
+      "exitCode": 0
+    }
+  ]
+}

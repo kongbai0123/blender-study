@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "title": "列印、量測與試配現場方法",
+  "status": "instructions_without_physical_results",
+  "conditionsToRecord": [
+    "printer",
+    "material",
+    "nozzleDiameterMm",
+    "lineWidthMm",
+    "layerHeightMm",
+    "slicerVersion",
+    "profile",
+    "orientation",
+    "sourceSceneSha256",
+    "stlSha256",
+    "date"
+  ],
+  "beforeSlicing": [
+    "核對件名、分支與來源版本，STL 數值按本教材 mm 解讀。",
+    "檢查包圍盒、接觸列印床的一面、壁厚與孔細節；方向與支撐仍是候選。",
+    "依材料與機台的已驗證設定建立副本；沒有資料時不編造溫度或速度。"
+  ],
+  "beforeMeasurement": [
+    "依量具手冊檢查量具與零點，記下量程、解析度與狀態。",
+    "排除毛邊及測量面的異物，保留原始件與量測位置說明。"
+  ],
+  "measurement": [
+    "每個功能尺寸在相同方向的2～3處量測，保留每次原始讀數。",
+    "外長寬高、內腔與壁厚分列；內孔 X/Y 開口尺寸與倒角不可混同。",
+    "差值定義為實測減名義；實測未取得時保持空白。"
+  ],
+  "fit": [
+    "插銷依六孔的凹點數或X中心位置辨認，插入方向一致，每孔記2～3次。",
+    "記錄不能插入、卡緊、可滑動、晃動等觀察，不把主觀手感當通用合格值。",
+    "選擇適合用途的候選間隙並寫理由；沒有可接受孔時不強選，回到尺寸、切片與製程查原因。"
+  ],
+  "limits": [
+    "0.4mm噴嘴不等於線寬或合格間隙。",
+    "單次試片不證明批次能力。",
+    "此檔是方法，不是已列印或已量測證據。"
+  ],
+  "physicalPrint": null,
+  "physicalMeasurement": null,
+  "physicalFit": null,
+  "qualifiedClearanceMm": null
+}

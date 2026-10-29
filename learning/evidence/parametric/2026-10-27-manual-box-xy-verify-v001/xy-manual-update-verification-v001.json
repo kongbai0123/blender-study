@@ -1,0 +1,176 @@
+{
+  "kind": "manual-sketch-xy-drivers-manual-update",
+  "method": "獨立 Blender 5.2.1／CAD Sketcher 0.32.1；GUI 從外框 Y 複製驅動器、貼內腔 Y 並設為來源減4；程式僅啟用插件、填檔案對話框與讀回狀態。GUI 將外框70×40→80×50；進內腔草圖按更新、另存並重開。",
+  "sourceDimensionsMm": [
+    70,
+    40,
+    30
+  ],
+  "modifiedDimensionsMm": [
+    80,
+    50,
+    30
+  ],
+  "beforeManualUpdate": {
+    "outerX": [
+      0,
+      80
+    ],
+    "outerY": [
+      0,
+      50
+    ],
+    "cutterX": [
+      2,
+      68
+    ],
+    "cutterY": [
+      2,
+      38
+    ]
+  },
+  "afterManualUpdateAndReopen": {
+    "outerX": [
+      0,
+      80
+    ],
+    "outerY": [
+      0,
+      50
+    ],
+    "cutterX": [
+      2,
+      78
+    ],
+    "cutterY": [
+      2,
+      48
+    ],
+    "cutterZ": [
+      2.000001907348633,
+      30
+    ],
+    "boundaryDifferencesX": [
+      2,
+      2
+    ],
+    "boundaryDifferencesY": [
+      2,
+      2
+    ],
+    "driversValid": 2
+  },
+  "images": [
+    {
+      "file": "2026-10-27-manual-box-y-driver-v002/Y-01-opened.png",
+      "sha256": "3cc2abe67e23b72cfa721255e255832eeb4e4ba7f11c4884e396670507fec1f9"
+    },
+    {
+      "file": "2026-10-27-manual-box-y-driver-v002/Y-02-source-menu.png",
+      "sha256": "c41c57cc0db0161045cab16371a4be214cab6a2b2af9ac8de0323fef6e95cd21"
+    },
+    {
+      "file": "2026-10-27-manual-box-y-driver-v002/Y-03-copied.png",
+      "sha256": "f446748e5c7882a88a2b798ef02682c2c8cef6e8b87fbd153f8a4723ef39d6ba"
+    },
+    {
+      "file": "2026-10-27-manual-box-y-driver-v002/Y-04-sketch-menu.png",
+      "sha256": "d75e8310edd9bcfca193aa2a3797733ae48cd2396a4d9bad6018a14d56a4170c"
+    },
+    {
+      "file": "2026-10-27-manual-box-y-driver-v002/Y-05-inner-sketch.png",
+      "sha256": "d3e9fab4e4bd33568ed001f39b9283fa09029aaaa9478e5453fdde519906eac7"
+    },
+    {
+      "file": "2026-10-27-manual-box-y-driver-v002/Y-06-target-menu.png",
+      "sha256": "33ae1ddbffd18d80108f7d350b36b3e3354d31e3e9aac86a051f982d83e74c8f"
+    },
+    {
+      "file": "2026-10-27-manual-box-y-driver-v002/Y-07-pasted.png",
+      "sha256": "6ab19c3477d9eb53846d8a5155329a0b4887793e8dc3030cc3d3c230c612a00e"
+    },
+    {
+      "file": "2026-10-27-manual-box-y-driver-v002/Y-08-edit-context.png",
+      "sha256": "ebefd3fd7acf03a3b1e0b57f1ef76e5af4c3def126172c70b9b880e45725a19e"
+    },
+    {
+      "file": "2026-10-27-manual-box-y-driver-v002/Y-09-edit-popup.png",
+      "sha256": "32b985d864ee57d6185756eb6dc683bc03b303b034159321617c68880cce530a"
+    },
+    {
+      "file": "2026-10-27-manual-box-y-driver-v002/Y-10-type-menu.png",
+      "sha256": "1ac68d62a745b1c7f40787c6f6899e87bf66dc6284ff3f553833e1862d0f6a6c"
+    },
+    {
+      "file": "2026-10-27-manual-box-y-driver-v002/Y-11-script-type.png",
+      "sha256": "b3ba8a9f6056464cbbd6f3a7e222cec3d467341add05cb8b3e7f138de14dba76"
+    },
+    {
+      "file": "2026-10-27-manual-box-y-driver-v002/Y-12-formula.png",
+      "sha256": "6c81a492e2a4ed6f3829dd70a58d633c1b8d5edee4415d8ef3c3d0757d7d987d"
+    },
+    {
+      "file": "2026-10-27-manual-box-y-driver-v002/Y-13-solve.png",
+      "sha256": "f80c1580477ce2b8c7b50dd3add2b97ad0d92cd4bdebcd9edcbd4c112daf05fe"
+    },
+    {
+      "file": "2026-10-27-manual-box-y-driver-v002/Y-14-saved.png",
+      "sha256": "d9d61769d6c93c604ccf4d493aa2709badfaee0f230bf1688cb3ed42782f7577"
+    },
+    {
+      "file": "2026-10-27-manual-box-xy-verify-v001/VERIFY-01-opened.png",
+      "sha256": "7c14915446333a91f445df040629c3b37e3a30e6eac4befeb732b27afd9edff3"
+    },
+    {
+      "file": "2026-10-27-manual-box-xy-verify-v001/VERIFY-02-leave-inner.png",
+      "sha256": "c52d5f3922b563ba0cfa8e10eceda0a947bcdda22b91d86ecb57f26d6369ef83"
+    },
+    {
+      "file": "2026-10-27-manual-box-xy-verify-v001/VERIFY-03-select-body.png",
+      "sha256": "6e963a70c91cfc51273fa6abd7b4805ddf527213ef7e02e97815c9889a9044ab"
+    },
+    {
+      "file": "2026-10-27-manual-box-xy-verify-v001/VERIFY-04-sketch-menu.png",
+      "sha256": "12cd87dc122677e0c7db29c7e86c5d84efcc98f418ca825ef37d367a935db6ff"
+    },
+    {
+      "file": "2026-10-27-manual-box-xy-verify-v001/VERIFY-05-outer-sketch.png",
+      "sha256": "a257d6c5fd5893741bf7f9097703ebe4117e05df8e0ae6984ac171437d89e0b7"
+    },
+    {
+      "file": "2026-10-27-manual-box-xy-verify-v001/VERIFY-06-outer-80x50.png",
+      "sha256": "02365cb298ebdee4af988fffcb219927ba9ce5f56ff65ee2d3324a9dc3baed93"
+    },
+    {
+      "file": "2026-10-27-manual-box-xy-verify-v001/VERIFY-07-inner-before-solve.png",
+      "sha256": "950ef1a4047ebea00e493f41f3d63d03509ece8de427ddf1d7935bcd6247ea4f"
+    },
+    {
+      "file": "2026-10-27-manual-box-xy-verify-v001/VERIFY-08-inner-after-solve.png",
+      "sha256": "f4c80bd0d33261947924670ceb30564b8885958d80114a47275e41c49ddc7293"
+    },
+    {
+      "file": "2026-10-27-manual-box-xy-verify-v001/VERIFY-09-saved.png",
+      "sha256": "080f04adc4f4b9ca4bd142e2dd81f1e06d4c1471941d93d11b8d954e5a9bcd4c"
+    },
+    {
+      "file": "2026-10-27-manual-box-xy-verify-v001/VERIFY-10-reopened.png",
+      "sha256": "722fa9bb3f0e82e0dc3fc88d9319e5ae0e4906354739b155cdafa6c77db46288"
+    }
+  ],
+  "scenes": [
+    {
+      "file": "2026-10-27-manual-box-y-driver-v002/demo-files/manual_box_xy_drivers_v001.blend",
+      "sha256": "6f4f42aaef1fd9e071efa226008ca19d4298fae43fe3e83a4e8cb22bde722f3a"
+    },
+    {
+      "file": "2026-10-27-manual-box-xy-verify-v001/demo-files/manual_box_xy_80x50_v002.blend",
+      "sha256": "4a1f17587a8158567d4f85b232e7ff3772a1c1eeb663c0ccb44b21622ee614cc"
+    }
+  ],
+  "limitations": [
+    "兩個尺寸驅動欄會更新，但幾何須進內腔草圖手動按更新，非自動更新。",
+    "2 mm 為外框與切割體界限差；尚未驗證布林後壁厚、閉合性。",
+    "尚未建立上蓋，未實際列印及試配；0.4 mm 為試驗值非合格值。"
+  ]
+}

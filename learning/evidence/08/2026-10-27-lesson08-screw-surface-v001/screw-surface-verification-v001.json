@@ -1,0 +1,346 @@
+{
+  "schemaVersion": 1,
+  "id": "lesson08-screw-surface-v001",
+  "createdAt": "2026-10-27T13:23:51.214124+08:00",
+  "description": "Single-start, open helical V-profile surface, dimensionally arbitrary tutorial geometry; not an ISO thread or printable solid.",
+  "sourceScene": {
+    "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/demo-files/u08_thread_reference_v001.blend",
+    "bytes": 97955,
+    "sha256": "9bda36c10fd916ef9cbe688f5ca56dcf8cfa0adb83d684300e60196225589d8f"
+  },
+  "outputScene": {
+    "path": "learning/evidence/08/2026-10-27-lesson08-screw-surface-v001/demo-files/u08_screw_surface_v001.blend",
+    "bytes": 112453,
+    "sha256": "fd61943b6199f9131ff34ef4ed21dc802884cf642356e58becbae9c75c4c7601"
+  },
+  "screenshots": [
+    {
+      "path": "learning/evidence/08/2026-10-27-lesson08-screw-surface-v001/08-02-01-profile.png",
+      "bytes": 148174,
+      "sha256": "f78222403bfbff0e5acf3e2fc35d0d34a86b565fb00241d417e3063c470f420b"
+    },
+    {
+      "path": "learning/evidence/08/2026-10-27-lesson08-screw-surface-v001/08-02-02-screw-added.png",
+      "bytes": 179673,
+      "sha256": "45bc678aa905d24ce39853fe2fc5b122c25d39e1e92e135632de78ff66618a91"
+    },
+    {
+      "path": "learning/evidence/08/2026-10-27-lesson08-screw-surface-v001/08-02-03-lead-one.png",
+      "bytes": 176153,
+      "sha256": "edba095de3711a1056698d23338060d4e63ea06fab909b4ee320de84b2a910b1"
+    },
+    {
+      "path": "learning/evidence/08/2026-10-27-lesson08-screw-surface-v001/08-02-04-four-iterations.png",
+      "bytes": 180761,
+      "sha256": "5b0b187bdb70d5653b3e4f55546c45b443881ef3ad87f6aecb6bdc5198566af0"
+    },
+    {
+      "path": "learning/evidence/08/2026-10-27-lesson08-screw-surface-v001/08-02-05-resolution.png",
+      "bytes": 181427,
+      "sha256": "233ba945c72f6831e3c70a58c0d38c2d9606d6ae2a22df6dabb5b055fca41f8c"
+    },
+    {
+      "path": "learning/evidence/08/2026-10-27-lesson08-screw-surface-v001/08-02-06-surface-verified.png",
+      "bytes": 356012,
+      "sha256": "fc1e42f175dc35f297efa4c07064f7366ca0e84ec0615d7e9a77f6a8df50836b"
+    },
+    {
+      "path": "learning/evidence/08/2026-10-27-lesson08-screw-surface-v001/08-02-07-saved.png",
+      "bytes": 360389,
+      "sha256": "44a0079d9beea54eab1e74fe85f743ff9c10b39510a8d1552564372f1d229b44"
+    },
+    {
+      "path": "learning/evidence/08/2026-10-27-lesson08-screw-surface-v001/08-02-08-reopened.png",
+      "bytes": 355842,
+      "sha256": "4c6b6f2d96bb5fd7de8a3529355198233a42cef8911da6a4e1c98bd499147314"
+    }
+  ],
+  "checks": [
+    {
+      "label": "screw-surface",
+      "checks": {
+        "angle360": true,
+        "offset1": true,
+        "iterations4": true,
+        "axisZ": true,
+        "objectScrewOff": true,
+        "resolution32": true,
+        "radii5to6": true,
+        "zSpan": true,
+        "fourTurnsPhase": true,
+        "isOpen": true
+      },
+      "settings": {
+        "name": "Screw",
+        "type": "SCREW",
+        "angle": 6.2831854820251465,
+        "screwOffset": 1.0,
+        "iterations": 4,
+        "steps": 32,
+        "renderSteps": 32,
+        "axis": "Z",
+        "useObjectScrewOffset": false,
+        "useMergeVertices": false
+      },
+      "evaluated": {
+        "vertices": 387,
+        "edges": 642,
+        "faces": 256,
+        "radiusMinMaxMm": [
+          4.999999722699926,
+          6.000000318206362
+        ],
+        "zMinMaxMm": [
+          0.0,
+          4.599999904632568
+        ],
+        "positiveXOuterPhaseZMm": [
+          0.30000001192092896,
+          1.2999999523162842,
+          2.299999952316284,
+          3.299999952316284,
+          4.300000190734863
+        ],
+        "boundaryEdges": 260,
+        "nonManifoldEdges": 260
+      },
+      "semantic": {
+        "demonstrationOnly": true,
+        "claimsISO": false,
+        "starts": 1,
+        "singleProfile": true,
+        "angleDegrees": 360,
+        "screwDisplacementPerRotationMm": 1,
+        "leadMm": 1,
+        "pitchMm": 1,
+        "iterationsIsStarts": false,
+        "revolutionTravelMm": 4,
+        "profileHeightMm": 0.6,
+        "overallZSpanMm": 4.6,
+        "effectiveEngagementMm": null,
+        "isWatertight": false,
+        "printed": false,
+        "fitTested": false,
+        "qualifiedClearanceMm": null
+      },
+      "file": {
+        "path": "learning/evidence/08/2026-10-27-lesson08-screw-surface-v001/screw-surface-verification.json",
+        "bytes": 1620,
+        "sha256": "d08230cb614ca63b5390d08042a4f56b14ea34f4a7d7fc302be9846eed4c6e63"
+      }
+    },
+    {
+      "label": "saved",
+      "checks": {
+        "angle360": true,
+        "offset1": true,
+        "iterations4": true,
+        "axisZ": true,
+        "objectScrewOff": true,
+        "resolution32": true,
+        "radii5to6": true,
+        "zSpan": true,
+        "fourTurnsPhase": true,
+        "isOpen": true
+      },
+      "settings": {
+        "name": "Screw",
+        "type": "SCREW",
+        "angle": 6.2831854820251465,
+        "screwOffset": 1.0,
+        "iterations": 4,
+        "steps": 32,
+        "renderSteps": 32,
+        "axis": "Z",
+        "useObjectScrewOffset": false,
+        "useMergeVertices": false
+      },
+      "evaluated": {
+        "vertices": 387,
+        "edges": 642,
+        "faces": 256,
+        "radiusMinMaxMm": [
+          4.999999722699926,
+          6.000000318206362
+        ],
+        "zMinMaxMm": [
+          0.0,
+          4.599999904632568
+        ],
+        "positiveXOuterPhaseZMm": [
+          0.30000001192092896,
+          1.2999999523162842,
+          2.299999952316284,
+          3.299999952316284,
+          4.300000190734863
+        ],
+        "boundaryEdges": 260,
+        "nonManifoldEdges": 260
+      },
+      "semantic": {
+        "demonstrationOnly": true,
+        "claimsISO": false,
+        "starts": 1,
+        "singleProfile": true,
+        "angleDegrees": 360,
+        "screwDisplacementPerRotationMm": 1,
+        "leadMm": 1,
+        "pitchMm": 1,
+        "iterationsIsStarts": false,
+        "revolutionTravelMm": 4,
+        "profileHeightMm": 0.6,
+        "overallZSpanMm": 4.6,
+        "effectiveEngagementMm": null,
+        "isWatertight": false,
+        "printed": false,
+        "fitTested": false,
+        "qualifiedClearanceMm": null
+      },
+      "file": {
+        "path": "learning/evidence/08/2026-10-27-lesson08-screw-surface-v001/saved-verification.json",
+        "bytes": 1612,
+        "sha256": "424604061f4b7e5bec7fdccfb11be9162abf5585bda2c2518c884849696b92b8"
+      }
+    },
+    {
+      "label": "reopened",
+      "checks": {
+        "angle360": true,
+        "offset1": true,
+        "iterations4": true,
+        "axisZ": true,
+        "objectScrewOff": true,
+        "resolution32": true,
+        "radii5to6": true,
+        "zSpan": true,
+        "fourTurnsPhase": true,
+        "isOpen": true
+      },
+      "settings": {
+        "name": "Screw",
+        "type": "SCREW",
+        "angle": 6.2831854820251465,
+        "screwOffset": 1.0,
+        "iterations": 4,
+        "steps": 32,
+        "renderSteps": 32,
+        "axis": "Z",
+        "useObjectScrewOffset": false,
+        "useMergeVertices": false
+      },
+      "evaluated": {
+        "vertices": 387,
+        "edges": 642,
+        "faces": 256,
+        "radiusMinMaxMm": [
+          4.999999722699926,
+          6.000000318206362
+        ],
+        "zMinMaxMm": [
+          0.0,
+          4.599999904632568
+        ],
+        "positiveXOuterPhaseZMm": [
+          0.30000001192092896,
+          1.2999999523162842,
+          2.299999952316284,
+          3.299999952316284,
+          4.300000190734863
+        ],
+        "boundaryEdges": 260,
+        "nonManifoldEdges": 260
+      },
+      "semantic": {
+        "demonstrationOnly": true,
+        "claimsISO": false,
+        "starts": 1,
+        "singleProfile": true,
+        "angleDegrees": 360,
+        "screwDisplacementPerRotationMm": 1,
+        "leadMm": 1,
+        "pitchMm": 1,
+        "iterationsIsStarts": false,
+        "revolutionTravelMm": 4,
+        "profileHeightMm": 0.6,
+        "overallZSpanMm": 4.6,
+        "effectiveEngagementMm": null,
+        "isWatertight": false,
+        "printed": false,
+        "fitTested": false,
+        "qualifiedClearanceMm": null
+      },
+      "file": {
+        "path": "learning/evidence/08/2026-10-27-lesson08-screw-surface-v001/reopened-verification.json",
+        "bytes": 1615,
+        "sha256": "00eadf24bd920938ec0e139f32382579cdfa883bd8f099f6c3a770f48ba8476f"
+      }
+    }
+  ],
+  "independentBodyGeometryCheck": {
+    "path": "learning/evidence/08/2026-10-27-lesson08-screw-surface-v001/independent-body-verification.json",
+    "bytes": 299,
+    "sha256": "71d5ef18e165d0f0794ca6b7a07dd87bb259ddc8029bbbb9998a9a75c6fab114"
+  },
+  "method": {
+    "sceneVisibilityAndInputProfile": "programmatic, explicitly not a GUI modelling demonstration",
+    "addModifierAndSettings": "native simulated Blender GUI events",
+    "filePathAndName": "programmatically filled Blender dialog fields; native confirm",
+    "verification": "Python evaluated mesh, phase, modifier RNA, boundary counts; fresh-process reference body comparison"
+  },
+  "runner": {
+    "status": "completed",
+    "exitCode": 0,
+    "runErrors": [],
+    "workspaceContentsUnchanged": true,
+    "comparisonScope": "workspace endpoint snapshots only"
+  },
+  "draft": {
+    "profilePointsMm": [
+      [
+        5,
+        0,
+        0
+      ],
+      [
+        6,
+        0,
+        0.3
+      ],
+      [
+        5,
+        0,
+        0.6
+      ]
+    ],
+    "axis": "Z",
+    "starts": 1,
+    "angleDegrees": 360,
+    "screwDisplacementMmPerRevolution": 1,
+    "leadMm": 1,
+    "pitchMm": 1,
+    "iterations": 4,
+    "rotationTravelMm": 4,
+    "profileAxialWidthMm": 0.6,
+    "overallSpanMm": 4.6,
+    "radiusMm": [
+      5,
+      6
+    ],
+    "stepsViewport": 32,
+    "stepsRender": 32,
+    "objectScrewEnabled": false,
+    "mergeEnabled": false
+  },
+  "limitations": [
+    "Programmatically prepared profile, so this is not fully hand-built GUI instruction.",
+    "One open profile generates an open ribbon with 260 boundary edges; no shaft or end caps and no printable or watertight solid.",
+    "Arbitrary values are not selected ISO specifications and not an approved fit or strength.",
+    "Screw=lead=pitch only under this example’s 360-degree, object-screw-off, single-start conditions.",
+    "No mating component, effective engagement length, material, slicer, print or fit evaluation.",
+    "Legacy v001 probe kept separately; no evidence overwritten."
+  ],
+  "physicalMeasurements": null,
+  "fitResults": null,
+  "qualifiedClearanceMm": null,
+  "strengthQualified": null
+}

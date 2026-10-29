@@ -1,0 +1,381 @@
+{
+  "schemaVersion": 1,
+  "kind": "isolated_blender_gui_blind_boss_draft",
+  "blenderVersion": "5.2.1 LTS",
+  "sourceScene": {
+    "relativePath": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/demo-files/u08_thread_reference_v001.blend",
+    "sha256": "9bda36c10fd916ef9cbe688f5ca56dcf8cfa0adb83d684300e60196225589d8f"
+  },
+  "outputScene": {
+    "relativePath": "learning/evidence/08/2026-10-28-manual-boss-gui-trial-v003/demo-files/u08_manual_boss_gui_v003.blend",
+    "sha256": "fdeaccd41f4c73d8dc2323528f5dc760b46c498083ff1408d58a1c4c5924f2ca"
+  },
+  "records": [
+    {
+      "seq": 1,
+      "action": "開啟獨立原盒參照副本，材料及五金待定",
+      "relativePath": "learning/evidence/08/2026-10-28-manual-boss-gui-trial-v003/08-BOSS-GUI-01-source.png",
+      "sha256": "ec7e64b88ad4485f4f1da654fa8af8b8cb9649dce473d9af0741b18b5423a6f7",
+      "observed": {
+        "active": "Body_Reference",
+        "mode": "OBJECT",
+        "unitScale": 0.0010000000474974513,
+        "dims": [
+          60.0,
+          40.0,
+          30.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "seq": 2,
+      "action": "隱藏原盒，F3 新增預設 32 邊圓柱",
+      "relativePath": "learning/evidence/08/2026-10-28-manual-boss-gui-trial-v003/08-BOSS-GUI-02-cylinder.png",
+      "sha256": "4c02696e52d95101011263292ac24e310f1004654d3dec1e1eeb87be5a1e79ee",
+      "observed": {
+        "active": "Cylinder",
+        "mode": "OBJECT",
+        "unitScale": 0.0010000000474974513,
+        "dims": [
+          1999.9998779296875,
+          1999.9998779296875,
+          1999.9998779296875
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "seq": 3,
+      "action": "S 0.004，Apply Scale，G Z 4 mm：外框 8 × 8 × 8 mm",
+      "relativePath": "learning/evidence/08/2026-10-28-manual-boss-gui-trial-v003/08-BOSS-GUI-03-scaled.png",
+      "sha256": "a6489d0d1191db186f9038975b278b2419b958adda8cf42038eeff4da78aba0b",
+      "observed": {
+        "active": "Cylinder",
+        "mode": "OBJECT",
+        "unitScale": 0.0010000000474974513,
+        "dims": [
+          8.000015258789062,
+          8.000015258789062,
+          8.000015258789062
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "location": [
+          0.0,
+          0.0,
+          4.0
+        ]
+      }
+    },
+    {
+      "seq": 4,
+      "action": "頂視 Edit Mode 面選取，取消選取後點柱頂面",
+      "relativePath": "learning/evidence/08/2026-10-28-manual-boss-gui-trial-v003/08-BOSS-GUI-04-top-selected.png",
+      "sha256": "6224252740dbdab9adddfce0fad140f408cb2a8c1b9d5414faec29d22bbe5a2f",
+      "observed": {
+        "active": "Cylinder",
+        "mode": "EDIT_MESH",
+        "unitScale": 0.0010000000474974513,
+        "dims": [
+          8.000015258789062,
+          8.000015258789062,
+          8.000015258789062
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "location": [
+          0.0,
+          0.0,
+          4.0
+        ],
+        "selectedFaces": 1,
+        "faceCenterZ": 8.000007629394531
+      }
+    },
+    {
+      "seq": 5,
+      "action": "柱頂 I 2 mm 內插出孔口草案",
+      "relativePath": "learning/evidence/08/2026-10-28-manual-boss-gui-trial-v003/08-BOSS-GUI-05-inset.png",
+      "sha256": "9e3d83d21ef5a4bb9cb45a9d9e27c473721b0f9bdbd9828296b85e1872e7a1c7",
+      "observed": {
+        "active": "Cylinder",
+        "mode": "EDIT_MESH",
+        "unitScale": 0.0010000000474974513,
+        "dims": [
+          8.000015258789062,
+          8.000015258789062,
+          8.000015258789062
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "location": [
+          0.0,
+          0.0,
+          4.0
+        ],
+        "selectedFaces": 1,
+        "faceCenterZ": 8.000007629394531
+      }
+    },
+    {
+      "seq": 6,
+      "action": "內插面 E −7 mm 建立盲孔；數位讀回",
+      "relativePath": "learning/evidence/08/2026-10-28-manual-boss-gui-trial-v003/08-BOSS-GUI-06-blind-hole.png",
+      "sha256": "3396a66b7cb7f66d93f6c148e3caab6ecfa9254729faa428be0c91a4f526b8cc",
+      "observed": {
+        "mode": "OBJECT",
+        "boundsMm": [
+          [
+            -4.000007629394531,
+            4.000007629394531
+          ],
+          [
+            -4.000007629394531,
+            4.000007629394531
+          ],
+          [
+            -7.62939453125e-06,
+            8.000007629394531
+          ]
+        ],
+        "dimensionsMm": [
+          8.000015258789062,
+          8.000015258789062,
+          8.000015258789062
+        ],
+        "vertices": 128,
+        "faces": 98,
+        "nonManifoldEdges": 0,
+        "signedVolumeMm3": 312.98989752853436,
+        "rays": {
+          "holeFloor": {
+            "x": 0,
+            "z": 1.0000076293945312,
+            "expectedZ": 1
+          },
+          "bossTop": {
+            "x": 3,
+            "z": 8.000007629394531,
+            "expectedZ": 8
+          },
+          "outside": {
+            "x": 5,
+            "z": null,
+            "expectedZ": null
+          }
+        },
+        "sourceSha256": "9bda36c10fd916ef9cbe688f5ca56dcf8cfa0adb83d684300e60196225589d8f",
+        "material": null,
+        "hardware": null,
+        "print": null,
+        "fit": null,
+        "qualifiedStrength": null,
+        "checks": {
+          "bounds": true,
+          "closed": true,
+          "positiveVolume": true,
+          "holeFloor": true,
+          "bossTop": true,
+          "outside": true
+        }
+      }
+    },
+    {
+      "seq": 7,
+      "action": "以新檔名另存 GUI 手工柱草案",
+      "relativePath": "learning/evidence/08/2026-10-28-manual-boss-gui-trial-v003/08-BOSS-GUI-07-saved.png",
+      "sha256": "ff6544b2f96bd966e2e63330cb4570a0d6195b8cfb22b365a6dd4b2204646e1d",
+      "observed": {
+        "mode": "OBJECT",
+        "boundsMm": [
+          [
+            -4.000007629394531,
+            4.000007629394531
+          ],
+          [
+            -4.000007629394531,
+            4.000007629394531
+          ],
+          [
+            -7.62939453125e-06,
+            8.000007629394531
+          ]
+        ],
+        "dimensionsMm": [
+          8.000015258789062,
+          8.000015258789062,
+          8.000015258789062
+        ],
+        "vertices": 128,
+        "faces": 98,
+        "nonManifoldEdges": 0,
+        "signedVolumeMm3": 312.98989752853436,
+        "rays": {
+          "holeFloor": {
+            "x": 0,
+            "z": 1.0000076293945312,
+            "expectedZ": 1
+          },
+          "bossTop": {
+            "x": 3,
+            "z": 8.000007629394531,
+            "expectedZ": 8
+          },
+          "outside": {
+            "x": 5,
+            "z": null,
+            "expectedZ": null
+          }
+        },
+        "sourceSha256": "9bda36c10fd916ef9cbe688f5ca56dcf8cfa0adb83d684300e60196225589d8f",
+        "material": null,
+        "hardware": null,
+        "print": null,
+        "fit": null,
+        "qualifiedStrength": null,
+        "checks": {
+          "bounds": true,
+          "closed": true,
+          "positiveVolume": true,
+          "holeFloor": true,
+          "bossTop": true,
+          "outside": true
+        }
+      }
+    },
+    {
+      "seq": 8,
+      "action": "重開新版本並讀回孔底與外框",
+      "relativePath": "learning/evidence/08/2026-10-28-manual-boss-gui-trial-v003/08-BOSS-GUI-08-reopened.png",
+      "sha256": "23328f895e59d937f33a1f0e9f5c351564b6d8d47c1b4ec9b1c0f1d2c79be748",
+      "observed": {
+        "mode": "OBJECT",
+        "boundsMm": [
+          [
+            -4.000007629394531,
+            4.000007629394531
+          ],
+          [
+            -4.000007629394531,
+            4.000007629394531
+          ],
+          [
+            -7.62939453125e-06,
+            8.000007629394531
+          ]
+        ],
+        "dimensionsMm": [
+          8.000015258789062,
+          8.000015258789062,
+          8.000015258789062
+        ],
+        "vertices": 128,
+        "faces": 98,
+        "nonManifoldEdges": 0,
+        "signedVolumeMm3": 312.98989752853436,
+        "rays": {
+          "holeFloor": {
+            "x": 0,
+            "z": 1.0000076293945312,
+            "expectedZ": 1
+          },
+          "bossTop": {
+            "x": 3,
+            "z": 8.000007629394531,
+            "expectedZ": 8
+          },
+          "outside": {
+            "x": 5,
+            "z": null,
+            "expectedZ": null
+          }
+        },
+        "sourceSha256": "9bda36c10fd916ef9cbe688f5ca56dcf8cfa0adb83d684300e60196225589d8f",
+        "material": null,
+        "hardware": null,
+        "print": null,
+        "fit": null,
+        "qualifiedStrength": null,
+        "checks": {
+          "bounds": true,
+          "closed": true,
+          "positiveVolume": true,
+          "holeFloor": true,
+          "bossTop": true,
+          "outside": true
+        }
+      }
+    }
+  ],
+  "geometryReadback": {
+    "outerDimensionsMm": [
+      8.000015258789062,
+      8.000015258789062,
+      8.000015258789062
+    ],
+    "oppositeVertexHoleWidthMm": 3.980661392211914,
+    "vertices": 128,
+    "faces": 98,
+    "nonManifoldEdges": 0,
+    "rays": {
+      "holeFloor": {
+        "x": 0,
+        "z": 1.0000076293945312,
+        "expectedZ": 1
+      },
+      "bossTop": {
+        "x": 3,
+        "z": 8.000007629394531,
+        "expectedZ": 8
+      },
+      "outside": {
+        "x": 5,
+        "z": null,
+        "expectedZ": null
+      }
+    }
+  },
+  "status": {
+    "material": null,
+    "hardware": null,
+    "print": null,
+    "measurement": null,
+    "fit": null,
+    "strengthQualification": null
+  },
+  "limitations": [
+    "Standalone boss; box is hidden and is not connected to this boss.",
+    "32-sided mesh; opposite-vertex opening is not a verified hardware hole.",
+    "The recorded non-manifold and three ray checks do not establish absence of self-intersections, manufacturability, or fit.",
+    "The file dialog location and name were entered programmatically; mesh changes were Blender GUI events.",
+    "v001 stopped on the unexpected default size; v002 geometry succeeded but its overhead view was unclear; v003 used an angled view."
+  ]
+}

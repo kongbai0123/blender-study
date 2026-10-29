@@ -98,3 +98,19 @@
 .sidebar-loading{font-size:11px;color:var(--muted)}.legacy-sidebar{margin:20px 0 12px;padding:12px 0;border-top:1px solid #d8e0e2}.legacy-sidebar>summary{cursor:pointer;font-size:12px;font-weight:700}.legacy-sidebar-heading{padding:12px 8px}.legacy-sidebar-heading h2{font-size:19px}.engineering-layout{grid-template-columns:minmax(0,1fr)}.engineering-desktop-navigation{display:none}.engineering-curriculum>.button{margin:4px 0 18px}
 @media(max-width:980px){.course-sidebar,.engineering-view .course-sidebar{display:none}.app-shell,.engineering-view .app-shell{grid-template-columns:minmax(0,1fr)}.engineering-mobile-navigation{display:block}}
 .workspace-picker{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 12px}.workspace-picker .button.selected{background:var(--ink,#1f2a30);color:#fff}
+.engineering-own-demonstration pre{max-height:380px;overflow:auto;white-space:pre-wrap;overflow-wrap:anywhere;font:11px/1.6 Consolas,monospace;background:#f3f6f7;border:1px solid var(--line);border-radius:6px;padding:10px}
+.engineering-quick{margin-top:16px}
+.engineering-quick h4{margin:0 0 6px}
+.engineering-quick-scroll{overflow-x:auto}
+.engineering-quick table{width:100%;border-collapse:collapse;font-size:13px}
+.engineering-quick th,.engineering-quick td{padding:7px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;line-height:1.6}
+.engineering-quick thead th{font-size:11px;font-weight:700;color:var(--muted)}
+.engineering-quick-section th{padding-top:12px;background:var(--tint)}
+.engineering-quick-section .link-button{font-size:13px;font-weight:700}
+.engineering-quick td .link-button{font-size:13px}
+.engineering-quick-keys{min-width:150px}
+.engineering-quick-keys kbd{display:block;width:fit-content;margin:0 0 4px}
+.engineering-quick .engineering-practice{margin:0;flex-wrap:nowrap}
+.engineering-quick .engineering-practice .button{white-space:nowrap}
+.engineering-practice{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:8px 0}
+.engineering-practice strong{font-size:12px}

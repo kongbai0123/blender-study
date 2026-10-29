@@ -1,0 +1,192 @@
+{
+  "kind": "partial-native-driver-gui-probe",
+  "method": "在隔離 Blender 複製固定盒體，CAD Sketcher 程式啟用；外框來源 Copy as New Driver，GUI 粘貼到 X 內腔約束，Edit Driver 選 Scripted Expression，輸入外長減4。檔案視窗路徑由程式填入。",
+  "learnerWorkspacesUnchanged": true,
+  "runnerCompleted": true,
+  "overallXYValidation": "failed: runner completion only means event sequence ended; required operations were not reached",
+  "xDriver": {
+    "expression": "slvs_c_b596b36138076155-4",
+    "valid": true,
+    "baseOuterLengthMm": 60,
+    "baseCavityLengthMm": 56,
+    "savedAndReopened": true,
+    "testedOuterDimensionChange": false
+  },
+  "failure": "嘗試切回外框草圖時沒有進入：XY-01 與狀態讀回 activeSketch null；之後未建立 Y 驅動器，X70、Y50 的輸入未生效。不可採用原 run 的那些動作標籤作為已完成敘述。",
+  "reopened": {
+    "outerBoundsMm": [
+      [
+        0.0,
+        60.0
+      ],
+      [
+        0.0,
+        40.0
+      ],
+      [
+        0.0,
+        30.0
+      ]
+    ],
+    "cutterBoundsMm": [
+      [
+        2.0,
+        58.0
+      ],
+      [
+        2.0,
+        38.0
+      ],
+      [
+        2.0,
+        30.0
+      ]
+    ],
+    "driverCount": 1
+  },
+  "images": [
+    {
+      "file": "EDIT-01-opened.png",
+      "sha256": "29d494f64e6b5cd4d977be94580e9c65753f51a3367b6bf2c8bfe2c00cca1b5f"
+    },
+    {
+      "file": "EDIT-02-context-menu.png",
+      "sha256": "530857d37c33c58c529edf05aad4be2785f9fe2344a040e13f447d249f28f433"
+    },
+    {
+      "file": "EDIT-03-body-sketch.png",
+      "sha256": "b76fcf743b4b819375965c72134738cfd88d4306964b6953b2fcca602a25d4dc"
+    },
+    {
+      "file": "EDIT-04-sidebar.png",
+      "sha256": "b29d9ed27db7cdcd709efdafb64de009264b4e27a74322f6a0283775e5287432"
+    },
+    {
+      "file": "DRIVER-01-source-context.png",
+      "sha256": "f082cfdebf178a42a45066de4d35b2a6195ae74f796dda9087120d628779ff02"
+    },
+    {
+      "file": "DRIVER-02-copy-source.png",
+      "sha256": "a378f364bf6fd994dd209d65f3d5a0140d29195a48bbe34855aa0fd93543c3a2"
+    },
+    {
+      "file": "DRIVER-03-select-cutter-menu.png",
+      "sha256": "ca496fdbb11bd961ab7dac0a07e57249305706d443e7b7e1808a68a5890942ef"
+    },
+    {
+      "file": "DRIVER-04-cutter-sketch.png",
+      "sha256": "edf810da62bd64c22e5f667703260a326b6717af1515734e90d85166faf55435"
+    },
+    {
+      "file": "DRIVER-05-target-context.png",
+      "sha256": "2b48235f1a861167d7275afe5a554c168f5460dd76610af9e4a69e324dbb2728"
+    },
+    {
+      "file": "DRIVER-06-pasted.png",
+      "sha256": "03f34c46ec1b314ef33928845d3c29cadf9409f88a8cbe520fbf4202e6ef59ee"
+    },
+    {
+      "file": "DRIVER-07-edit-context.png",
+      "sha256": "adc558a8dd59d7893beaa07bba4cb71ebcbfa3f062847dc8d1c0a949f98aec0c"
+    },
+    {
+      "file": "DRIVER-08-edit-popup.png",
+      "sha256": "4b4319fdb736d63bf53a4647932485521358d17de686ab7b372c16e8baee6700"
+    },
+    {
+      "file": "DRIVER-09-type-menu.png",
+      "sha256": "06edef2c2523d54244a0c196ecae006d95f55e51e91211e3303e0a52c33196a3"
+    },
+    {
+      "file": "DRIVER-10-script-type.png",
+      "sha256": "56246562b2c9d70e819943494de505b1d1b8f2f6c3803f709584cbc1c7cf4a78"
+    },
+    {
+      "file": "DRIVER-11-formula-attempt.png",
+      "sha256": "058bd4f5676582a6d27b3bea21495f90d2c001875e937cea8b94e2cbc7144bb1"
+    },
+    {
+      "file": "XY-01-outer-sketch.png",
+      "sha256": "93f846d811f3193f857f96c46abe4e7a55ccb5a1f1cdcdff0ed6eeb87e9cc21e"
+    },
+    {
+      "file": "XY-02-y-source-menu.png",
+      "sha256": "74aa4b6be8418794a1634fc804fbe82a15157f8667318a56d6ea234992dd7509"
+    },
+    {
+      "file": "XY-03-inner-sketch.png",
+      "sha256": "93f846d811f3193f857f96c46abe4e7a55ccb5a1f1cdcdff0ed6eeb87e9cc21e"
+    },
+    {
+      "file": "XY-04-y-target-menu.png",
+      "sha256": "74aa4b6be8418794a1634fc804fbe82a15157f8667318a56d6ea234992dd7509"
+    },
+    {
+      "file": "XY-05-y-pasted.png",
+      "sha256": "9b88cb61ecc55667751838b622ec359a0e4270a4ce47b6977cb8ec571eab28c2"
+    },
+    {
+      "file": "XY-06-y-edit-popup.png",
+      "sha256": "f9335af1cd43c077197b6162c26ffc782962c6e3e01c63b3c217de67234ddcf7"
+    },
+    {
+      "file": "XY-07-y-type-menu.png",
+      "sha256": "f9335af1cd43c077197b6162c26ffc782962c6e3e01c63b3c217de67234ddcf7"
+    },
+    {
+      "file": "XY-08-y-script-type.png",
+      "sha256": "d2d174a3b7d8daa8871756ab95faf19425f3ab1e9a06f829743fec1c3ece197d"
+    },
+    {
+      "file": "XY-09-y-formula.png",
+      "sha256": "7d2be8780a2074cdbb0737fd209161ac5c0b312f1aa5bcca87fec2b41b50b5e7"
+    },
+    {
+      "file": "XY-10-before-change-saved.png",
+      "sha256": "f69361d80df532442a393a8779e915356d8f0a2c8008a2163e622534e826a608"
+    },
+    {
+      "file": "XY-11-x70.png",
+      "sha256": "6db115c12817c504599762d906665705ffd02dd5153eca32b9c028a3c1635ec1"
+    },
+    {
+      "file": "XY-12-x70y50.png",
+      "sha256": "6db115c12817c504599762d906665705ffd02dd5153eca32b9c028a3c1635ec1"
+    },
+    {
+      "file": "XY-13-after-change-saved.png",
+      "sha256": "8d72cf9bfb289f017344468e5cc64129e15f40ae4ff257615ce577e6bc31e710"
+    },
+    {
+      "file": "XY-14-reopened.png",
+      "sha256": "8583533e1641cff63e8cbf9427838a36e64da846d2b0112a28e77968334ff6f5"
+    }
+  ],
+  "scenes": [
+    {
+      "file": "demo-files/manual_drivers_box_60x40_v001.blend",
+      "sha256": "0d697fdf4d20bd6ff6999be64296949e8bcb0f90e7245079c9c0ce4e76bca0ec",
+      "actualOuterMm": [
+        60,
+        40,
+        30
+      ],
+      "classification": "X 單驅動器草案，非完成版；70x50 字樣與實際不符"
+    },
+    {
+      "file": "demo-files/manual_drivers_box_70x50_v002.blend",
+      "sha256": "fe77918de7c1eb80bc9e2bfa17371b879e0ba1b33eef8451ad398ba61c8bd04e",
+      "actualOuterMm": [
+        60,
+        40,
+        30
+      ],
+      "classification": "X 單驅動器草案，非完成版；70x50 字樣與實際不符"
+    }
+  ],
+  "limitations": [
+    "無 X 尺寸變更測試、無 Y 驅動器及 Y 連動、無上蓋；不得宣稱雙軸或盒蓋連動。",
+    "檔名 manual_drivers_box_70x50_v002.blend 實際仍 60×40，是失敗探測，不可當完成版。",
+    "暫時未驗證閉合性、列印或實體試配；0.4 mm 間隙仍屬試驗值。"
+  ]
+}

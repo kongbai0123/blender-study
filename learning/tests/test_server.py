@@ -103,7 +103,7 @@ class DashboardTests(unittest.TestCase):
         challenges = self.learning / "web" / "challenges"
         challenges.mkdir()
         # 試教頁已併入練習題頁：只留轉址頁與共用樣式，圖與動畫要由目前題目資料引用才提供。
-        (challenges / "challenges-v005.json").write_text(json.dumps({"schemaVersion": 1, "chapters": [
+        (challenges / current_pointer().CHALLENGES.name).write_text(json.dumps({"schemaVersion": 1, "chapters": [
             {"chapterId": "ch03", "drawing": {"path": "/pilot/box-drawing-v002.svg"}, "animation": {"path": "/pilot/box-demo.gif"}}]}), encoding="utf-8")
         for name, content, status in (("box-lesson.html", "<title>pilot</title>", 200),
                                       ("box-lesson.css", "body {}", 200),
@@ -194,7 +194,8 @@ class DashboardTests(unittest.TestCase):
         original_figures = {event["figure"]["path"]: event["figure"] for lesson in catalog["lessons"]
                             for step in lesson["steps"] for event in step.get("operationRun", {}).get("events", [])}
         # 第 01 章章末的兩題觀察沿用 05-05 示範原圖，必須與原 run 的像素指紋一致。
-        observation = [step for step in curriculum["chapters"][0]["steps"] if step["id"] in ("ch01-observe-lip", "ch01-fit-surfaces")]
+        chapter_one = next(chapter for chapter in curriculum["chapters"] if chapter["id"] == "ch01")
+        observation = [step for step in chapter_one["steps"] if step["id"] in ("ch01-observe-lip", "ch01-fit-surfaces")]
         self.assertEqual(len(observation), 2)
         for figure in [figure for step in observation for figure in step["figures"]]:
             original = original_figures[figure["path"]]
@@ -532,6 +533,16 @@ class DashboardTests(unittest.TestCase):
         self.assertIn("image/svg+xml", headers["Content-Type"])
         for payload in ({"lessonId": "01", "target": "cmd.exe"}, {"lessonId": "99", "target": "workspace"}):
             self.assertEqual(self.post(payload, "/api/open")[0], 400)
+
+    def test_blank_csv_protocol_download_remains_in_approved_roots(self):
+        template = self.learning / "journal" / "blank.csv"
+        template.write_bytes(b"sample,measured_mm\npin,\n")
+        status, body, _ = self.request("GET", "/files/learning/journal/blank.csv")
+        self.assertEqual(status, 200)
+        self.assertEqual(body, b"sample,measured_mm\npin,\n")
+        for route in ("/files/learning/journal/../progress.json", "/files/learning/journal/%2e%2e/progress.json",
+                      "/files/learning/progress.csv", "/files/C:/Windows/blank.csv"):
+            self.assertEqual(self.request("GET", route)[0], 403, route)
 
 
 if __name__ == "__main__":

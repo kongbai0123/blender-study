@@ -1,0 +1,1336 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-29",
+  "curriculum": {
+    "path": "learning/web/engineering-curriculum-v036.json",
+    "sha256": "fceaf4cc951316bfa5e827cd2a4d2bebb713318ecb7f909ad646ba216975db09"
+  },
+  "scope": "ch05–08 所有主線及選修，歷史附錄排除",
+  "method": {
+    "browser": "Cua 新建專屬 Chrome 分頁，8767；iab 本子工作階段不可用",
+    "sectionsViewed": [
+      "05-01",
+      "05-02",
+      "06-01",
+      "06-02",
+      "06-03",
+      "06-04",
+      "06-05",
+      "07-01",
+      "07-02",
+      "07-03",
+      "07-04",
+      "08-01",
+      "08-02",
+      "08-03",
+      "08-04",
+      "08-05",
+      "08-06",
+      "08-07",
+      "08-08"
+    ],
+    "detailDomSteps": 96,
+    "allSixTabsViewedSteps": 30,
+    "challengePagesViewed": [
+      "ch05",
+      "ch06",
+      "ch07",
+      "ch08"
+    ],
+    "fileCheck": "對每個非附錄步驟明列 figures、artifacts、shortcuts.evidence 逐檔核對存在與 SHA；未自動追查 sourceSteps 所有原教材圖片或逐張目視。",
+    "progress": "只讀瀏覽；未送確認、筆記或版本登記。未執行列印、量測、試配。"
+  },
+  "findings": [
+    {
+      "severity": "high",
+      "ids": [
+        "ch05-05-03-11"
+      ],
+      "finding": "詳述 why 錯稱非流形邊檢查可確認可以列印；需限定檢查範圍。"
+    },
+    {
+      "severity": "high",
+      "ids": [
+        "ch05-05-02-03",
+        "ch05-05-03-12"
+      ],
+      "finding": "插銷修改後未指示保存即登記；孔板從未首存時僅說 Ctrl+S 未說明 Save As 路徑與檔名。"
+    },
+    {
+      "severity": "medium",
+      "ids": [
+        "ch05-05-03-06"
+      ],
+      "finding": "凹點刀具 2 mm 高、中心Z2.2、板頂Z2，板上1.2、板下0.8；不是一半露出。"
+    },
+    {
+      "severity": "medium",
+      "ids": [
+        "ch05-05-03-04",
+        "ch05-05-03-05"
+      ],
+      "finding": "小步標題寫複製，而動作與原示範為各自新增 Cube。"
+    },
+    {
+      "severity": "high",
+      "ids": [
+        "ch06-05-06-03"
+      ],
+      "finding": "成功及 why 說第08章會套用選定的間隙；手工蓋固定0.4 mm試驗值，沒有教完成個人間隙更新。"
+    },
+    {
+      "severity": "medium",
+      "ids": [
+        "ch06-05-04-02"
+      ],
+      "finding": "只教尺寸量測卻稱兩件為封閉網格；需逐件檢查並限定結果。"
+    },
+    {
+      "severity": "medium",
+      "ids": [
+        "ch07-sketch-01",
+        "ch07-sketch-02",
+        "ch07-sketch-03",
+        "ch07-sketch-04",
+        "ch07-solid-01"
+      ],
+      "finding": "對照 GUI 事件補空白場景前置、矩形60 Tab 40／Enter／Esc、標註及保留60×40起點；示範刪預設物件不可套用到既有作品。"
+    },
+    {
+      "severity": "medium",
+      "ids": [
+        "ch08-link-counterexample-01",
+        "ch08-driver-partial-01",
+        "ch08-manual-lid-cases-01",
+        "ch08-manual-lid-clamp-01"
+      ],
+      "finding": "不同場次60×40、80×50基準須明示重新開啟並另存個人副本；與前一步70×50或90×60／70×40結果不同。"
+    },
+    {
+      "severity": "medium",
+      "ids": [
+        "ch08-xy-safety-01",
+        "ch08-xy-safety-02"
+      ],
+      "finding": "兩個安全步驟在完成80×50後要求早期 Driver中間狀態；應作原圖回看而非破壞已完成結果。"
+    },
+    {
+      "severity": "medium",
+      "ids": [
+        "ch08-manual-lid-link-01",
+        "ch08-manual-lid-link-02"
+      ],
+      "finding": "形狀鍵中欄省略Key2新增與精確穿透框選方式，詳細步驟已有新增Key2；GUI原始事件可補12頂點選取與鍵位。"
+    },
+    {
+      "severity": "high",
+      "ids": [
+        "ch08-manual-guard-y-reject-01"
+      ],
+      "finding": "原教材上一步70×40，舊拒絕原圖與成功條件卻是另一個80×50場次；新增獨立70×40原圖和程式讀值並標明跨場次。"
+    },
+    {
+      "severity": "medium",
+      "ids": [
+        "ch08-manual-guard-y-reject-01",
+        "ch08-manual-guard-restart-01",
+        "ch08-manual-guard-xy-02",
+        "ch08-manual-guard-03",
+        "ch08-manual-guard-xy-01",
+        "ch08-manual-guard-02",
+        "ch08-manual-guard-01",
+        "ch08-manual-guard-restart-02",
+        "ch08-manual-guard-04"
+      ],
+      "finding": "詳述顯示尚未改寫 fallback；需補具體操作及前後分離讀值。第10步已有另存未登記副本，11步仍應重申重開哪個。"
+    },
+    {
+      "severity": "medium",
+      "ids": [
+        "ch08-guard-prepare-01"
+      ],
+      "finding": "本機來源 blend /files GET 200，但頁面缺明顯來源連結；evidence來源未 git tracked，公開前尚需安全及發布審查。"
+    },
+    {
+      "severity": "low",
+      "ids": [
+        "challenge-ch07"
+      ],
+      "finding": "題目待驗概括稱本章詳細文字與操作仍須逐步改寫及實測，應反映已有實拍與實際尚未驗證項。"
+    }
+  ],
+  "challengeDrawings": {
+    "ch05": "六孔插銷試片 v003；與05主線一致",
+    "ch06": "六孔插銷試片 v003；與06試片匯出部分一致，06另有原盒和上蓋步驟",
+    "ch07": "矩形60×40與80×40為不同保存狀態，頁面已有範圍說明",
+    "ch08": "80×50固定基準盒蓋，頁面說明非自動連動；失配照片為70×50另場次"
+  },
+  "draftCorrection": {
+    "path": "learning/patches/2026-10-29-ch05-ch08-corrections-draft-v001.json",
+    "sha256": "b195b6e42df0926d526b3cefe59e0fda68dd2524e55e09284ff07625e9659989",
+    "status": "供主作業編輯整合；新70×40示範原圖及摘要已納入"
+  },
+  "steps": [
+    {
+      "id": "ch05-05-02-01",
+      "chapter": "ch05",
+      "section": "05-01",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": true,
+      "listedFileHashesChecked": 2,
+      "listedFileFailures": [],
+      "hasDraftCorrection": false,
+      "indirectSourceStepLinks": 1
+    },
+    {
+      "id": "ch05-05-02-02",
+      "chapter": "ch05",
+      "section": "05-01",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": true,
+      "listedFileHashesChecked": 2,
+      "listedFileFailures": [],
+      "hasDraftCorrection": false,
+      "indirectSourceStepLinks": 1
+    },
+    {
+      "id": "ch05-05-02-03",
+      "chapter": "ch05",
+      "section": "05-01",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": true,
+      "listedFileHashesChecked": 1,
+      "listedFileFailures": [],
+      "hasDraftCorrection": true,
+      "indirectSourceStepLinks": 1
+    },
+    {
+      "id": "ch05-05-03-01",
+      "chapter": "ch05",
+      "section": "05-02",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": true,
+      "listedFileHashesChecked": 1,
+      "listedFileFailures": [],
+      "hasDraftCorrection": false,
+      "indirectSourceStepLinks": 1
+    },
+    {
+      "id": "ch05-05-03-02",
+      "chapter": "ch05",
+      "section": "05-02",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": true,
+      "listedFileHashesChecked": 1,
+      "listedFileFailures": [],
+      "hasDraftCorrection": false,
+      "indirectSourceStepLinks": 1
+    },
+    {
+      "id": "ch05-05-03-03",
+      "chapter": "ch05",
+      "section": "05-02",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": true,
+      "listedFileHashesChecked": 2,
+      "listedFileFailures": [],
+      "hasDraftCorrection": false,
+      "indirectSourceStepLinks": 1
+    },
+    {
+      "id": "ch05-05-03-04",
+      "chapter": "ch05",
+      "section": "05-02",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": true,
+      "listedFileHashesChecked": 2,
+      "listedFileFailures": [],
+      "hasDraftCorrection": true,
+      "indirectSourceStepLinks": 1
+    },
+    {
+      "id": "ch05-05-03-05",
+      "chapter": "ch05",
+      "section": "05-02",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": true,
+      "listedFileHashesChecked": 0,
+      "listedFileFailures": [],
+      "hasDraftCorrection": true,
+      "indirectSourceStepLinks": 1
+    },
+    {
+      "id": "ch05-05-03-06",
+      "chapter": "ch05",
+      "section": "05-02",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": true,
+      "listedFileHashesChecked": 0,
+      "listedFileFailures": [],
+      "hasDraftCorrection": true,
+      "indirectSourceStepLinks": 1
+    },
+    {
+      "id": "ch05-05-03-07",
+      "chapter": "ch05",
+      "section": "05-02",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": true,
+      "listedFileHashesChecked": 2,
+      "listedFileFailures": [],
+      "hasDraftCorrection": false,
+      "indirectSourceStepLinks": 1
+    },
+    {
+      "id": "ch05-05-03-08",
+      "chapter": "ch05",
+      "section": "05-02",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": true,
+      "listedFileHashesChecked": 0,
+      "listedFileFailures": [],
+      "hasDraftCorrection": false,
+      "indirectSourceStepLinks": 1
+    },
+    {
+      "id": "ch05-05-03-09",
+      "chapter": "ch05",
+      "section": "05-02",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": true,
+      "listedFileHashesChecked": 2,
+      "listedFileFailures": [],
+      "hasDraftCorrection": false,
+      "indirectSourceStepLinks": 1
+    },
+    {
+      "id": "ch05-05-03-10",
+      "chapter": "ch05",
+      "section": "05-02",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": true,
+      "listedFileHashesChecked": 0,
+      "listedFileFailures": [],
+      "hasDraftCorrection": false,
+      "indirectSourceStepLinks": 1
+    },
+    {
+      "id": "ch05-05-03-11",
+      "chapter": "ch05",
+      "section": "05-02",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": true,
+      "listedFileHashesChecked": 5,
+      "listedFileFailures": [],
+      "hasDraftCorrection": true,
+      "indirectSourceStepLinks": 1
+    },
+    {
+      "id": "ch05-05-03-12",
+      "chapter": "ch05",
+      "section": "05-02",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": true,
+      "listedFileHashesChecked": 5,
+      "listedFileFailures": [],
+      "hasDraftCorrection": true,
+      "indirectSourceStepLinks": 1
+    },
+    {
+      "id": "ch06-04-07-01",
+      "chapter": "ch06",
+      "section": "06-01",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": true,
+      "listedFileHashesChecked": 0,
+      "listedFileFailures": [],
+      "hasDraftCorrection": false,
+      "indirectSourceStepLinks": 1
+    },
+    {
+      "id": "ch06-04-07-02",
+      "chapter": "ch06",
+      "section": "06-01",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": true,
+      "listedFileHashesChecked": 1,
+      "listedFileFailures": [],
+      "hasDraftCorrection": false,
+      "indirectSourceStepLinks": 1
+    },
+    {
+      "id": "ch06-04-07-03",
+      "chapter": "ch06",
+      "section": "06-01",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": true,
+      "listedFileHashesChecked": 2,
+      "listedFileFailures": [],
+      "hasDraftCorrection": false,
+      "indirectSourceStepLinks": 1
+    },
+    {
+      "id": "ch06-05-04-01",
+      "chapter": "ch06",
+      "section": "06-02",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": true,
+      "listedFileHashesChecked": 2,
+      "listedFileFailures": [],
+      "hasDraftCorrection": false,
+      "indirectSourceStepLinks": 1
+    },
+    {
+      "id": "ch06-05-04-04",
+      "chapter": "ch06",
+      "section": "06-02",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": true,
+      "listedFileHashesChecked": 0,
+      "listedFileFailures": [],
+      "hasDraftCorrection": false,
+      "indirectSourceStepLinks": 1
+    },
+    {
+      "id": "ch06-05-04-02",
+      "chapter": "ch06",
+      "section": "06-02",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": true,
+      "listedFileHashesChecked": 3,
+      "listedFileFailures": [],
+      "hasDraftCorrection": true,
+      "indirectSourceStepLinks": 1
+    },
+    {
+      "id": "ch06-05-04-05",
+      "chapter": "ch06",
+      "section": "06-02",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": true,
+      "listedFileHashesChecked": 2,
+      "listedFileFailures": [],
+      "hasDraftCorrection": false,
+      "indirectSourceStepLinks": 1
+    },
+    {
+      "id": "ch06-fit-01",
+      "chapter": "ch06",
+      "section": "06-03",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": false,
+      "listedFileHashesChecked": 2,
+      "listedFileFailures": [],
+      "hasDraftCorrection": false,
+      "indirectSourceStepLinks": 1
+    },
+    {
+      "id": "ch06-fit-02",
+      "chapter": "ch06",
+      "section": "06-03",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": false,
+      "listedFileHashesChecked": 2,
+      "listedFileFailures": [],
+      "hasDraftCorrection": false,
+      "indirectSourceStepLinks": 1
+    },
+    {
+      "id": "ch06-fit-03",
+      "chapter": "ch06",
+      "section": "06-03",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": false,
+      "listedFileHashesChecked": 2,
+      "listedFileFailures": [],
+      "hasDraftCorrection": false,
+      "indirectSourceStepLinks": 1
+    },
+    {
+      "id": "ch06-fit-04",
+      "chapter": "ch06",
+      "section": "06-03",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": false,
+      "listedFileHashesChecked": 2,
+      "listedFileFailures": [],
+      "hasDraftCorrection": false,
+      "indirectSourceStepLinks": 1
+    },
+    {
+      "id": "ch06-04-08-01",
+      "chapter": "ch06",
+      "section": "06-04",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": false,
+      "listedFileHashesChecked": 2,
+      "listedFileFailures": [],
+      "hasDraftCorrection": false,
+      "indirectSourceStepLinks": 1
+    },
+    {
+      "id": "ch06-04-08-02",
+      "chapter": "ch06",
+      "section": "06-04",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": false,
+      "listedFileHashesChecked": 2,
+      "listedFileFailures": [],
+      "hasDraftCorrection": false,
+      "indirectSourceStepLinks": 1
+    },
+    {
+      "id": "ch06-04-08-03",
+      "chapter": "ch06",
+      "section": "06-04",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": false,
+      "listedFileHashesChecked": 2,
+      "listedFileFailures": [],
+      "hasDraftCorrection": false,
+      "indirectSourceStepLinks": 1
+    },
+    {
+      "id": "ch06-05-06-01",
+      "chapter": "ch06",
+      "section": "06-05",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": false,
+      "listedFileHashesChecked": 2,
+      "listedFileFailures": [],
+      "hasDraftCorrection": false,
+      "indirectSourceStepLinks": 1
+    },
+    {
+      "id": "ch06-05-06-02",
+      "chapter": "ch06",
+      "section": "06-05",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": false,
+      "listedFileHashesChecked": 0,
+      "listedFileFailures": [],
+      "hasDraftCorrection": false,
+      "indirectSourceStepLinks": 1
+    },
+    {
+      "id": "ch06-05-06-03",
+      "chapter": "ch06",
+      "section": "06-05",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": false,
+      "listedFileHashesChecked": 5,
+      "listedFileFailures": [],
+      "hasDraftCorrection": true,
+      "indirectSourceStepLinks": 1
+    },
+    {
+      "id": "ch07-setup-01",
+      "chapter": "ch07",
+      "section": "07-01",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": false,
+      "listedFileHashesChecked": 1,
+      "listedFileFailures": [],
+      "hasDraftCorrection": false,
+      "indirectSourceStepLinks": 0
+    },
+    {
+      "id": "ch07-setup-02",
+      "chapter": "ch07",
+      "section": "07-01",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": false,
+      "listedFileHashesChecked": 4,
+      "listedFileFailures": [],
+      "hasDraftCorrection": false,
+      "indirectSourceStepLinks": 0
+    },
+    {
+      "id": "ch07-setup-03",
+      "chapter": "ch07",
+      "section": "07-01",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": false,
+      "listedFileHashesChecked": 1,
+      "listedFileFailures": [],
+      "hasDraftCorrection": false,
+      "indirectSourceStepLinks": 1
+    },
+    {
+      "id": "ch07-sketch-01",
+      "chapter": "ch07",
+      "section": "07-02",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": false,
+      "listedFileHashesChecked": 2,
+      "listedFileFailures": [],
+      "hasDraftCorrection": true,
+      "indirectSourceStepLinks": 0
+    },
+    {
+      "id": "ch07-sketch-02",
+      "chapter": "ch07",
+      "section": "07-02",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": false,
+      "listedFileHashesChecked": 2,
+      "listedFileFailures": [],
+      "hasDraftCorrection": true,
+      "indirectSourceStepLinks": 0
+    },
+    {
+      "id": "ch07-sketch-03",
+      "chapter": "ch07",
+      "section": "07-02",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": false,
+      "listedFileHashesChecked": 2,
+      "listedFileFailures": [],
+      "hasDraftCorrection": true,
+      "indirectSourceStepLinks": 0
+    },
+    {
+      "id": "ch07-sketch-04",
+      "chapter": "ch07",
+      "section": "07-02",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": false,
+      "listedFileHashesChecked": 1,
+      "listedFileFailures": [],
+      "hasDraftCorrection": true,
+      "indirectSourceStepLinks": 0
+    },
+    {
+      "id": "ch07-solid-01",
+      "chapter": "ch07",
+      "section": "07-03",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": false,
+      "listedFileHashesChecked": 4,
+      "listedFileFailures": [],
+      "hasDraftCorrection": true,
+      "indirectSourceStepLinks": 0
+    },
+    {
+      "id": "ch07-solid-02",
+      "chapter": "ch07",
+      "section": "07-03",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": false,
+      "listedFileHashesChecked": 3,
+      "listedFileFailures": [],
+      "hasDraftCorrection": false,
+      "indirectSourceStepLinks": 0
+    },
+    {
+      "id": "ch07-solid-03",
+      "chapter": "ch07",
+      "section": "07-03",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": false,
+      "listedFileHashesChecked": 3,
+      "listedFileFailures": [],
+      "hasDraftCorrection": false,
+      "indirectSourceStepLinks": 0
+    },
+    {
+      "id": "ch07-solid-04",
+      "chapter": "ch07",
+      "section": "07-03",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": false,
+      "listedFileHashesChecked": 4,
+      "listedFileFailures": [],
+      "hasDraftCorrection": false,
+      "indirectSourceStepLinks": 0
+    },
+    {
+      "id": "ch07-cavity-01",
+      "chapter": "ch07",
+      "section": "07-04",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": false,
+      "listedFileHashesChecked": 4,
+      "listedFileFailures": [],
+      "hasDraftCorrection": false,
+      "indirectSourceStepLinks": 0
+    },
+    {
+      "id": "ch07-cavity-02",
+      "chapter": "ch07",
+      "section": "07-04",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": false,
+      "listedFileHashesChecked": 2,
+      "listedFileFailures": [],
+      "hasDraftCorrection": false,
+      "indirectSourceStepLinks": 0
+    },
+    {
+      "id": "ch07-cavity-03",
+      "chapter": "ch07",
+      "section": "07-04",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": false,
+      "listedFileHashesChecked": 3,
+      "listedFileFailures": [],
+      "hasDraftCorrection": false,
+      "indirectSourceStepLinks": 0
+    },
+    {
+      "id": "ch07-cavity-04",
+      "chapter": "ch07",
+      "section": "07-04",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": false,
+      "listedFileHashesChecked": 2,
+      "listedFileFailures": [],
+      "hasDraftCorrection": false,
+      "indirectSourceStepLinks": 0
+    },
+    {
+      "id": "ch07-cavity-05",
+      "chapter": "ch07",
+      "section": "07-04",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": false,
+      "listedFileHashesChecked": 2,
+      "listedFileFailures": [],
+      "hasDraftCorrection": false,
+      "indirectSourceStepLinks": 0
+    },
+    {
+      "id": "ch07-cavity-06",
+      "chapter": "ch07",
+      "section": "07-04",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": false,
+      "listedFileHashesChecked": 4,
+      "listedFileFailures": [],
+      "hasDraftCorrection": false,
+      "indirectSourceStepLinks": 0
+    },
+    {
+      "id": "ch08-param-plan",
+      "chapter": "ch08",
+      "section": "08-01",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": false,
+      "listedFileHashesChecked": 0,
+      "listedFileFailures": [],
+      "hasDraftCorrection": false,
+      "indirectSourceStepLinks": 0
+    },
+    {
+      "id": "ch08-link-counterexample-01",
+      "chapter": "ch08",
+      "section": "08-02",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": false,
+      "listedFileHashesChecked": 5,
+      "listedFileFailures": [],
+      "hasDraftCorrection": true,
+      "indirectSourceStepLinks": 0
+    },
+    {
+      "id": "ch08-link-counterexample-02",
+      "chapter": "ch08",
+      "section": "08-02",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": false,
+      "listedFileHashesChecked": 4,
+      "listedFileFailures": [],
+      "hasDraftCorrection": false,
+      "indirectSourceStepLinks": 0
+    },
+    {
+      "id": "ch08-link-counterexample-03",
+      "chapter": "ch08",
+      "section": "08-02",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": false,
+      "listedFileHashesChecked": 2,
+      "listedFileFailures": [],
+      "hasDraftCorrection": false,
+      "indirectSourceStepLinks": 0
+    },
+    {
+      "id": "ch08-link-counterexample-04",
+      "chapter": "ch08",
+      "section": "08-02",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": false,
+      "listedFileHashesChecked": 2,
+      "listedFileFailures": [],
+      "hasDraftCorrection": false,
+      "indirectSourceStepLinks": 0
+    },
+    {
+      "id": "ch08-link-counterexample-05",
+      "chapter": "ch08",
+      "section": "08-02",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": false,
+      "listedFileHashesChecked": 4,
+      "listedFileFailures": [],
+      "hasDraftCorrection": false,
+      "indirectSourceStepLinks": 0
+    },
+    {
+      "id": "ch08-driver-partial-01",
+      "chapter": "ch08",
+      "section": "08-03",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": false,
+      "listedFileHashesChecked": 7,
+      "listedFileFailures": [],
+      "hasDraftCorrection": true,
+      "indirectSourceStepLinks": 0
+    },
+    {
+      "id": "ch08-driver-partial-02",
+      "chapter": "ch08",
+      "section": "08-03",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": false,
+      "listedFileHashesChecked": 3,
+      "listedFileFailures": [],
+      "hasDraftCorrection": false,
+      "indirectSourceStepLinks": 0
+    },
+    {
+      "id": "ch08-driver-partial-03",
+      "chapter": "ch08",
+      "section": "08-03",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": false,
+      "listedFileHashesChecked": 3,
+      "listedFileFailures": [],
+      "hasDraftCorrection": false,
+      "indirectSourceStepLinks": 0
+    },
+    {
+      "id": "ch08-driver-partial-04",
+      "chapter": "ch08",
+      "section": "08-03",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": false,
+      "listedFileHashesChecked": 6,
+      "listedFileFailures": [],
+      "hasDraftCorrection": false,
+      "indirectSourceStepLinks": 0
+    },
+    {
+      "id": "ch08-x-refresh-01",
+      "chapter": "ch08",
+      "section": "08-03",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": false,
+      "listedFileHashesChecked": 5,
+      "listedFileFailures": [],
+      "hasDraftCorrection": false,
+      "indirectSourceStepLinks": 0
+    },
+    {
+      "id": "ch08-x-refresh-02",
+      "chapter": "ch08",
+      "section": "08-03",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": false,
+      "listedFileHashesChecked": 5,
+      "listedFileFailures": [],
+      "hasDraftCorrection": false,
+      "indirectSourceStepLinks": 0
+    },
+    {
+      "id": "ch08-x-refresh-03",
+      "chapter": "ch08",
+      "section": "08-03",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": false,
+      "listedFileHashesChecked": 5,
+      "listedFileFailures": [],
+      "hasDraftCorrection": false,
+      "indirectSourceStepLinks": 0
+    },
+    {
+      "id": "ch08-x-refresh-04",
+      "chapter": "ch08",
+      "section": "08-03",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": false,
+      "listedFileHashesChecked": 3,
+      "listedFileFailures": [],
+      "hasDraftCorrection": false,
+      "indirectSourceStepLinks": 0
+    },
+    {
+      "id": "ch08-xy-driver-01",
+      "chapter": "ch08",
+      "section": "08-04",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": false,
+      "listedFileHashesChecked": 6,
+      "listedFileFailures": [],
+      "hasDraftCorrection": false,
+      "indirectSourceStepLinks": 0
+    },
+    {
+      "id": "ch08-xy-driver-02",
+      "chapter": "ch08",
+      "section": "08-04",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": false,
+      "listedFileHashesChecked": 8,
+      "listedFileFailures": [],
+      "hasDraftCorrection": false,
+      "indirectSourceStepLinks": 0
+    },
+    {
+      "id": "ch08-xy-driver-03",
+      "chapter": "ch08",
+      "section": "08-04",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": false,
+      "listedFileHashesChecked": 4,
+      "listedFileFailures": [],
+      "hasDraftCorrection": false,
+      "indirectSourceStepLinks": 0
+    },
+    {
+      "id": "ch08-xy-driver-04",
+      "chapter": "ch08",
+      "section": "08-04",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": false,
+      "listedFileHashesChecked": 7,
+      "listedFileFailures": [],
+      "hasDraftCorrection": false,
+      "indirectSourceStepLinks": 0
+    },
+    {
+      "id": "ch08-xy-driver-05",
+      "chapter": "ch08",
+      "section": "08-04",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": false,
+      "listedFileHashesChecked": 6,
+      "listedFileFailures": [],
+      "hasDraftCorrection": false,
+      "indirectSourceStepLinks": 0
+    },
+    {
+      "id": "ch08-xy-safety-01",
+      "chapter": "ch08",
+      "section": "08-04",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": false,
+      "listedFileHashesChecked": 3,
+      "listedFileFailures": [],
+      "hasDraftCorrection": true,
+      "indirectSourceStepLinks": 0
+    },
+    {
+      "id": "ch08-xy-safety-02",
+      "chapter": "ch08",
+      "section": "08-04",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": false,
+      "listedFileHashesChecked": 2,
+      "listedFileFailures": [],
+      "hasDraftCorrection": true,
+      "indirectSourceStepLinks": 0
+    },
+    {
+      "id": "ch08-manual-lid-fixed-01",
+      "chapter": "ch08",
+      "section": "08-05",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": false,
+      "listedFileHashesChecked": 5,
+      "listedFileFailures": [],
+      "hasDraftCorrection": false,
+      "indirectSourceStepLinks": 0
+    },
+    {
+      "id": "ch08-manual-lid-fixed-02",
+      "chapter": "ch08",
+      "section": "08-05",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": false,
+      "listedFileHashesChecked": 4,
+      "listedFileFailures": [],
+      "hasDraftCorrection": false,
+      "indirectSourceStepLinks": 0
+    },
+    {
+      "id": "ch08-manual-lid-fixed-03",
+      "chapter": "ch08",
+      "section": "08-05",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": false,
+      "listedFileHashesChecked": 3,
+      "listedFileFailures": [],
+      "hasDraftCorrection": false,
+      "indirectSourceStepLinks": 0
+    },
+    {
+      "id": "ch08-manual-lid-fixed-04",
+      "chapter": "ch08",
+      "section": "08-05",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": false,
+      "listedFileHashesChecked": 5,
+      "listedFileFailures": [],
+      "hasDraftCorrection": false,
+      "indirectSourceStepLinks": 0
+    },
+    {
+      "id": "ch08-manual-lid-link-01",
+      "chapter": "ch08",
+      "section": "08-06",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": false,
+      "listedFileHashesChecked": 11,
+      "listedFileFailures": [],
+      "hasDraftCorrection": true,
+      "indirectSourceStepLinks": 0
+    },
+    {
+      "id": "ch08-manual-lid-link-02",
+      "chapter": "ch08",
+      "section": "08-06",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": false,
+      "listedFileHashesChecked": 10,
+      "listedFileFailures": [],
+      "hasDraftCorrection": true,
+      "indirectSourceStepLinks": 0
+    },
+    {
+      "id": "ch08-manual-lid-link-03",
+      "chapter": "ch08",
+      "section": "08-06",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": false,
+      "listedFileHashesChecked": 11,
+      "listedFileFailures": [],
+      "hasDraftCorrection": false,
+      "indirectSourceStepLinks": 0
+    },
+    {
+      "id": "ch08-manual-lid-link-04",
+      "chapter": "ch08",
+      "section": "08-06",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": false,
+      "listedFileHashesChecked": 11,
+      "listedFileFailures": [],
+      "hasDraftCorrection": false,
+      "indirectSourceStepLinks": 0
+    },
+    {
+      "id": "ch08-manual-lid-link-05",
+      "chapter": "ch08",
+      "section": "08-06",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": false,
+      "listedFileHashesChecked": 6,
+      "listedFileFailures": [],
+      "hasDraftCorrection": false,
+      "indirectSourceStepLinks": 0
+    },
+    {
+      "id": "ch08-manual-lid-link-06",
+      "chapter": "ch08",
+      "section": "08-06",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": false,
+      "listedFileHashesChecked": 6,
+      "listedFileFailures": [],
+      "hasDraftCorrection": false,
+      "indirectSourceStepLinks": 0
+    },
+    {
+      "id": "ch08-manual-lid-cases-01",
+      "chapter": "ch08",
+      "section": "08-07",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": false,
+      "listedFileHashesChecked": 6,
+      "listedFileFailures": [],
+      "hasDraftCorrection": true,
+      "indirectSourceStepLinks": 0
+    },
+    {
+      "id": "ch08-manual-lid-cases-02",
+      "chapter": "ch08",
+      "section": "08-07",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": false,
+      "listedFileHashesChecked": 3,
+      "listedFileFailures": [],
+      "hasDraftCorrection": false,
+      "indirectSourceStepLinks": 0
+    },
+    {
+      "id": "ch08-manual-lid-cases-03",
+      "chapter": "ch08",
+      "section": "08-07",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": false,
+      "listedFileHashesChecked": 6,
+      "listedFileFailures": [],
+      "hasDraftCorrection": false,
+      "indirectSourceStepLinks": 0
+    },
+    {
+      "id": "ch08-manual-lid-clamp-01",
+      "chapter": "ch08",
+      "section": "08-07",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": false,
+      "listedFileHashesChecked": 6,
+      "listedFileFailures": [],
+      "hasDraftCorrection": true,
+      "indirectSourceStepLinks": 0
+    },
+    {
+      "id": "ch08-manual-lid-clamp-02",
+      "chapter": "ch08",
+      "section": "08-07",
+      "track": "main",
+      "detailDomViewed": true,
+      "allSixTabsViewed": false,
+      "listedFileHashesChecked": 6,
+      "listedFileFailures": [],
+      "hasDraftCorrection": false,
+      "indirectSourceStepLinks": 0
+    },
+    {
+      "id": "ch08-guard-prepare-01",
+      "chapter": "ch08",
+      "section": "08-08",
+      "track": "optional",
+      "detailDomViewed": true,
+      "allSixTabsViewed": false,
+      "listedFileHashesChecked": 1,
+      "listedFileFailures": [],
+      "hasDraftCorrection": false,
+      "indirectSourceStepLinks": 0
+    },
+    {
+      "id": "ch08-manual-guard-restart-01",
+      "chapter": "ch08",
+      "section": "08-08",
+      "track": "optional",
+      "detailDomViewed": true,
+      "allSixTabsViewed": false,
+      "listedFileHashesChecked": 4,
+      "listedFileFailures": [],
+      "hasDraftCorrection": true,
+      "indirectSourceStepLinks": 0
+    },
+    {
+      "id": "ch08-manual-guard-01",
+      "chapter": "ch08",
+      "section": "08-08",
+      "track": "optional",
+      "detailDomViewed": true,
+      "allSixTabsViewed": true,
+      "listedFileHashesChecked": 6,
+      "listedFileFailures": [],
+      "hasDraftCorrection": true,
+      "indirectSourceStepLinks": 0
+    },
+    {
+      "id": "ch08-manual-guard-02",
+      "chapter": "ch08",
+      "section": "08-08",
+      "track": "optional",
+      "detailDomViewed": true,
+      "allSixTabsViewed": true,
+      "listedFileHashesChecked": 4,
+      "listedFileFailures": [],
+      "hasDraftCorrection": true,
+      "indirectSourceStepLinks": 0
+    },
+    {
+      "id": "ch08-manual-guard-03",
+      "chapter": "ch08",
+      "section": "08-08",
+      "track": "optional",
+      "detailDomViewed": true,
+      "allSixTabsViewed": true,
+      "listedFileHashesChecked": 3,
+      "listedFileFailures": [],
+      "hasDraftCorrection": true,
+      "indirectSourceStepLinks": 0
+    },
+    {
+      "id": "ch08-manual-guard-04",
+      "chapter": "ch08",
+      "section": "08-08",
+      "track": "optional",
+      "detailDomViewed": true,
+      "allSixTabsViewed": true,
+      "listedFileHashesChecked": 3,
+      "listedFileFailures": [],
+      "hasDraftCorrection": true,
+      "indirectSourceStepLinks": 0
+    },
+    {
+      "id": "ch08-manual-guard-xy-01",
+      "chapter": "ch08",
+      "section": "08-08",
+      "track": "optional",
+      "detailDomViewed": true,
+      "allSixTabsViewed": true,
+      "listedFileHashesChecked": 8,
+      "listedFileFailures": [],
+      "hasDraftCorrection": true,
+      "indirectSourceStepLinks": 0
+    },
+    {
+      "id": "ch08-manual-guard-xy-02",
+      "chapter": "ch08",
+      "section": "08-08",
+      "track": "optional",
+      "detailDomViewed": true,
+      "allSixTabsViewed": true,
+      "listedFileHashesChecked": 5,
+      "listedFileFailures": [],
+      "hasDraftCorrection": true,
+      "indirectSourceStepLinks": 0
+    },
+    {
+      "id": "ch08-manual-guard-y-reject-01",
+      "chapter": "ch08",
+      "section": "08-08",
+      "track": "optional",
+      "detailDomViewed": true,
+      "allSixTabsViewed": true,
+      "listedFileHashesChecked": 4,
+      "listedFileFailures": [],
+      "hasDraftCorrection": true,
+      "indirectSourceStepLinks": 0
+    },
+    {
+      "id": "ch08-guard-checkpoint-01",
+      "chapter": "ch08",
+      "section": "08-08",
+      "track": "optional",
+      "detailDomViewed": true,
+      "allSixTabsViewed": false,
+      "listedFileHashesChecked": 2,
+      "listedFileFailures": [],
+      "hasDraftCorrection": false,
+      "indirectSourceStepLinks": 0
+    },
+    {
+      "id": "ch08-manual-guard-restart-02",
+      "chapter": "ch08",
+      "section": "08-08",
+      "track": "optional",
+      "detailDomViewed": true,
+      "allSixTabsViewed": true,
+      "listedFileHashesChecked": 7,
+      "listedFileFailures": [],
+      "hasDraftCorrection": true,
+      "indirectSourceStepLinks": 0
+    }
+  ],
+  "limits": [
+    "30個小步完成六分頁切換；其他66個小步已看詳細步驟但未全部切換其他分頁；未逐張目視歷史圖片。",
+    "明列路徑本機 SHA 核對不等於公開發布隱私審查或 GitHub clone 可用。"
+  ],
+  "newEvidence": {
+    "summary": "learning/evidence/parametric/2026-10-29-manual-guard-70x40-reject-v004/safe-summary-v001.json",
+    "sha256": "ee193d07c25a74e662ef1596764f91a3bddd243158c8fa0431ae36c83088eb84",
+    "review": "6張真實圖均已目視；02圖可見本機Temp路徑，不納入新教學figures且未作公開審查。04可見W80當前40、05可見拒絕訊息；幾何前後尺寸是程式讀值。"
+  }
+}

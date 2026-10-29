@@ -1,0 +1,1073 @@
+{
+  "schemaVersion": 1,
+  "title": "CAD Sketcher 二維牙型：真約束、尺寸改動與還原",
+  "blenderVersion": "5.2.1 LTS",
+  "cadSketcherVersion": "0.32.1",
+  "environment": "使用隔離 Blender 與既有隔離 CAD Sketcher；程式啟用擴充套件、設定單位與調整視角。草圖建立、畫線、尺寸、相等、固定、修改與存檔使用 GUI 事件；檔案對話欄由程式填入。",
+  "geometry": "XY 平面三邊草圖；P1 X=4.8、Y≈0 固定，基邊為 0.6 mm、兩斜邊 Equal；斜邊約 1.23693156 mm。此高度不是螺距。",
+  "models": [
+    {
+      "role": "base",
+      "path": "learning/evidence/parametric/2026-10-28-cad-thread-triangle-trial-v001/demo-files/cad_thread_triangle_060_v001.blend",
+      "sha256": "15959bcb28fbe025e2d9b18292abe2aca44e95b38f4ba0a1ce764aed8d9e6731"
+    },
+    {
+      "role": "changed",
+      "path": "learning/evidence/parametric/2026-10-28-cad-thread-triangle-trial-v001/demo-files/cad_thread_triangle_080_v002.blend",
+      "sha256": "8811cfc5223560a5397324dc0d1a61657a42efd301c038c69c7d259fc36c9c70"
+    },
+    {
+      "role": "restored",
+      "path": "learning/evidence/parametric/2026-10-28-cad-thread-triangle-restore-v001/demo-files/cad_thread_triangle_060_restored_v003.blend",
+      "sha256": "f45cb87cb9084bb9ca92612d6dc8726c28f7abfd099954e14ea4964975dd8508"
+    }
+  ],
+  "independentAudit": {
+    "path": "learning/evidence/parametric/2026-10-28-cad-thread-triangle-restore-v001/independent-audit-v001.json",
+    "sha256": "5ec4481e979c1032f06f9d64728140596d33857b1b8c607f51215a8d6897ef68"
+  },
+  "verification": {
+    "base": {
+      "solver": "OKAY",
+      "dof": 0,
+      "dimensionValues": [
+        0.6000000238418579,
+        1.236931562423706
+      ],
+      "minX": 4.800000190734863,
+      "maxX": 6.0,
+      "minY": -2.4146001864622235e-10,
+      "maxY": 0.6000000238418579,
+      "checks": {
+        "solverOkay": true,
+        "fullyDefined": true,
+        "twoDimensions": true,
+        "baseDimension": true,
+        "baseHeight": true,
+        "fixedAnchorX": true,
+        "expectedApexX": true,
+        "equalAndVertical": true
+      },
+      "path": "learning/evidence/parametric/2026-10-28-cad-thread-triangle-trial-v001/base-060-verification.json",
+      "sha256": "7554e4b44688fd5f4dc86bb23d48914bb76e7dfbd7e7f3917e229749201a499d"
+    },
+    "changed": {
+      "solver": "OKAY",
+      "dof": 0,
+      "dimensionValues": [
+        0.800000011920929,
+        1.236931562423706
+      ],
+      "minX": 4.800000190734863,
+      "maxX": 5.970469951629639,
+      "minY": -2.4146001864622235e-10,
+      "maxY": 0.800000011920929,
+      "checks": {
+        "solverOkay": true,
+        "fullyDefined": true,
+        "twoDimensions": true,
+        "baseDimension": true,
+        "baseHeight": true,
+        "fixedAnchorX": true,
+        "expectedApexX": true,
+        "equalAndVertical": true
+      },
+      "path": "learning/evidence/parametric/2026-10-28-cad-thread-triangle-trial-v001/changed-080-verification.json",
+      "sha256": "eb34179aae73024941cd36dcf6c5c6f830267f40ac3933b22fae079f767f10b4"
+    },
+    "reopened_changed": {
+      "solver": "OKAY",
+      "dof": 0,
+      "dimensionValues": [
+        0.800000011920929,
+        1.236931562423706
+      ],
+      "minX": 4.800000190734863,
+      "maxX": 5.970469951629639,
+      "minY": -2.4146001864622235e-10,
+      "maxY": 0.800000011920929,
+      "checks": {
+        "solverOkay": true,
+        "fullyDefined": true,
+        "twoDimensions": true,
+        "baseDimension": true,
+        "baseHeight": true,
+        "fixedAnchorX": true,
+        "expectedApexX": true,
+        "equalAndVertical": true
+      },
+      "path": "learning/evidence/parametric/2026-10-28-cad-thread-triangle-trial-v001/reopened-080-verification.json",
+      "sha256": "d0147bdcd3c73cb58ae7919a5e4c8e5010ac5e12d3b6ba4c12dc237bbf964ea9"
+    },
+    "restored": {
+      "solver": "OKAY",
+      "dof": 0,
+      "dimensionValues": [
+        0.6000000238418579,
+        1.236931562423706
+      ],
+      "minX": 4.800000190734863,
+      "maxX": 6.0,
+      "minY": -2.4146001864622235e-10,
+      "maxY": 0.6000000238418579,
+      "checks": {
+        "solverOkay": true,
+        "fullyDefined": true,
+        "twoDimensions": true,
+        "baseDimension": true,
+        "baseHeight": true,
+        "fixedAnchorX": true,
+        "expectedApexX": true,
+        "equalAndVertical": true
+      },
+      "path": "learning/evidence/parametric/2026-10-28-cad-thread-triangle-restore-v001/restored-060-verification.json",
+      "sha256": "dc5a740b0c23212c0df5c3c1f0dc6b8d85ae4948b222489e8ed7e570f7bb4a5b"
+    },
+    "reopened_restored": {
+      "solver": "OKAY",
+      "dof": 0,
+      "dimensionValues": [
+        0.6000000238418579,
+        1.236931562423706
+      ],
+      "minX": 4.800000190734863,
+      "maxX": 6.0,
+      "minY": -2.4146001864622235e-10,
+      "maxY": 0.6000000238418579,
+      "checks": {
+        "solverOkay": true,
+        "fullyDefined": true,
+        "twoDimensions": true,
+        "baseDimension": true,
+        "baseHeight": true,
+        "fixedAnchorX": true,
+        "expectedApexX": true,
+        "equalAndVertical": true
+      },
+      "path": "learning/evidence/parametric/2026-10-28-cad-thread-triangle-restore-v001/reopened-060-verification.json",
+      "sha256": "fd46b6213be9cbfd7b63ffbafac7001fe712b51b8c04cd502aa68da3ef1fda5e"
+    }
+  },
+  "evidence": [
+    {
+      "sequence": 1,
+      "slug": "blank",
+      "image": "learning/evidence/parametric/2026-10-28-cad-thread-triangle-trial-v001/CADTRI-01-blank.png",
+      "sha256": "05a7f3df3c68f96b68cd57a25fddf2be8055b59856976b806a0503c4cc640d94",
+      "observed": {
+        "solver": "OKAY",
+        "dof": 0,
+        "constraints": [],
+        "fixedFlags": [
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "sequence": 2,
+      "slug": "first-point",
+      "image": "learning/evidence/parametric/2026-10-28-cad-thread-triangle-trial-v001/CADTRI-02-first-point.png",
+      "sha256": "af026044d17475eda39dabb90ae68b912ca67c0543e2475d3a18a93b474ab198",
+      "observed": {
+        "solver": "OKAY",
+        "dof": 0,
+        "constraints": [],
+        "fixedFlags": [
+          true,
+          true,
+          false
+        ]
+      }
+    },
+    {
+      "sequence": 3,
+      "slug": "second-point",
+      "image": "learning/evidence/parametric/2026-10-28-cad-thread-triangle-trial-v001/CADTRI-03-second-point.png",
+      "sha256": "17b3af52f12b3565c68084ac6bdef32f5e0cc2a94a20cf01655c4764ba7a5a3b",
+      "observed": {
+        "solver": "OKAY",
+        "dof": 0,
+        "constraints": [],
+        "fixedFlags": [
+          true,
+          true,
+          false,
+          false,
+          false
+        ]
+      }
+    },
+    {
+      "sequence": 4,
+      "slug": "third-point",
+      "image": "learning/evidence/parametric/2026-10-28-cad-thread-triangle-trial-v001/CADTRI-04-third-point.png",
+      "sha256": "8e184ef6cbe7d71839b45cd9c7b1af78ba228f433822980d123170a98eac3a9a",
+      "observed": {
+        "solver": "OKAY",
+        "dof": 0,
+        "constraints": [],
+        "fixedFlags": [
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      }
+    },
+    {
+      "sequence": 5,
+      "slug": "triangle",
+      "image": "learning/evidence/parametric/2026-10-28-cad-thread-triangle-trial-v001/CADTRI-05-triangle.png",
+      "sha256": "3aaa3b6e1ec4ebb08413fdc86f658a4953ae7e7e845f175da59ea758c3c3e229",
+      "observed": {
+        "solver": "OKAY",
+        "dof": 5,
+        "constraints": [
+          {
+            "type": "VERTICAL",
+            "name": "Vertical",
+            "value": null,
+            "uid": "95817b0205a37a7b"
+          }
+        ],
+        "fixedFlags": [
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      }
+    },
+    {
+      "sequence": 6,
+      "slug": "base-placement",
+      "image": "learning/evidence/parametric/2026-10-28-cad-thread-triangle-trial-v001/CADTRI-06-base-placement.png",
+      "sha256": "f1ac3ce3995ccc844e17d38419f3ded6d8069949b4412f797c4d4ebeae89dea3",
+      "observed": {
+        "solver": "OKAY",
+        "dof": 4,
+        "constraints": [
+          {
+            "type": "DISTANCE",
+            "name": "Distance",
+            "value": 0.6000000238418579,
+            "uid": "9f59a0b3ccf4b996"
+          },
+          {
+            "type": "VERTICAL",
+            "name": "Vertical",
+            "value": null,
+            "uid": "95817b0205a37a7b"
+          }
+        ],
+        "fixedFlags": [
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      }
+    },
+    {
+      "sequence": 7,
+      "slug": "base-dimension",
+      "image": "learning/evidence/parametric/2026-10-28-cad-thread-triangle-trial-v001/CADTRI-07-base-dimension.png",
+      "sha256": "dc111731ad6e41cd115b00d7e47bb452eb1ca73e2650c45858022d4e4d20c764",
+      "observed": {
+        "solver": "OKAY",
+        "dof": 4,
+        "constraints": [
+          {
+            "type": "DISTANCE",
+            "name": "Distance",
+            "value": 0.6000000238418579,
+            "uid": "9f59a0b3ccf4b996"
+          },
+          {
+            "type": "VERTICAL",
+            "name": "Vertical",
+            "value": null,
+            "uid": "95817b0205a37a7b"
+          }
+        ],
+        "fixedFlags": [
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      }
+    },
+    {
+      "sequence": 8,
+      "slug": "slope-dimension",
+      "image": "learning/evidence/parametric/2026-10-28-cad-thread-triangle-trial-v001/CADTRI-08-slope-dimension.png",
+      "sha256": "bceb182640aea5126c988e02dc5d0b75c808a4f13e7ca118eb831a2a1b93449c",
+      "observed": {
+        "solver": "OKAY",
+        "dof": 3,
+        "constraints": [
+          {
+            "type": "DISTANCE",
+            "name": "Distance",
+            "value": 0.6000000238418579,
+            "uid": "9f59a0b3ccf4b996"
+          },
+          {
+            "type": "DISTANCE",
+            "name": "Distance",
+            "value": 1.236931562423706,
+            "uid": "733e0136a4433c1e"
+          },
+          {
+            "type": "VERTICAL",
+            "name": "Vertical",
+            "value": null,
+            "uid": "95817b0205a37a7b"
+          }
+        ],
+        "fixedFlags": [
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      }
+    },
+    {
+      "sequence": 9,
+      "slug": "equal-sides",
+      "image": "learning/evidence/parametric/2026-10-28-cad-thread-triangle-trial-v001/CADTRI-09-equal-sides.png",
+      "sha256": "21b07998ba3cc168fb87ced0de4e6284d8e8ce624d7b7ef0ec1521bff8e4aa7d",
+      "observed": {
+        "solver": "OKAY",
+        "dof": 2,
+        "constraints": [
+          {
+            "type": "EQUAL",
+            "name": "Equal",
+            "value": null,
+            "uid": "f7fc2478b7cbe132"
+          },
+          {
+            "type": "DISTANCE",
+            "name": "Distance",
+            "value": 0.6000000238418579,
+            "uid": "9f59a0b3ccf4b996"
+          },
+          {
+            "type": "DISTANCE",
+            "name": "Distance",
+            "value": 1.236931562423706,
+            "uid": "733e0136a4433c1e"
+          },
+          {
+            "type": "VERTICAL",
+            "name": "Vertical",
+            "value": null,
+            "uid": "95817b0205a37a7b"
+          }
+        ],
+        "fixedFlags": [
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      }
+    },
+    {
+      "sequence": 10,
+      "slug": "anchor-selected",
+      "image": "learning/evidence/parametric/2026-10-28-cad-thread-triangle-trial-v001/CADTRI-10-anchor-selected.png",
+      "sha256": "440db43cb6df14b07b80fb6dfb56737c80edc7bb0cbd2f8fde620bdceeeb6310",
+      "observed": {
+        "solver": "OKAY",
+        "dof": 2,
+        "constraints": [
+          {
+            "type": "EQUAL",
+            "name": "Equal",
+            "value": null,
+            "uid": "f7fc2478b7cbe132"
+          },
+          {
+            "type": "DISTANCE",
+            "name": "Distance",
+            "value": 0.6000000238418579,
+            "uid": "9f59a0b3ccf4b996"
+          },
+          {
+            "type": "DISTANCE",
+            "name": "Distance",
+            "value": 1.236931562423706,
+            "uid": "733e0136a4433c1e"
+          },
+          {
+            "type": "VERTICAL",
+            "name": "Vertical",
+            "value": null,
+            "uid": "95817b0205a37a7b"
+          }
+        ],
+        "fixedFlags": [
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      }
+    },
+    {
+      "sequence": 11,
+      "slug": "anchor-menu",
+      "image": "learning/evidence/parametric/2026-10-28-cad-thread-triangle-trial-v001/CADTRI-11-anchor-menu.png",
+      "sha256": "ebace5a458f940400d178bc970770431856bc642e9287e79cb6836d91ebf67a1",
+      "observed": {
+        "solver": "OKAY",
+        "dof": 2,
+        "constraints": [
+          {
+            "type": "EQUAL",
+            "name": "Equal",
+            "value": null,
+            "uid": "f7fc2478b7cbe132"
+          },
+          {
+            "type": "DISTANCE",
+            "name": "Distance",
+            "value": 0.6000000238418579,
+            "uid": "9f59a0b3ccf4b996"
+          },
+          {
+            "type": "DISTANCE",
+            "name": "Distance",
+            "value": 1.236931562423706,
+            "uid": "733e0136a4433c1e"
+          },
+          {
+            "type": "VERTICAL",
+            "name": "Vertical",
+            "value": null,
+            "uid": "95817b0205a37a7b"
+          }
+        ],
+        "fixedFlags": [
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      }
+    },
+    {
+      "sequence": 12,
+      "slug": "anchor-coordinate",
+      "image": "learning/evidence/parametric/2026-10-28-cad-thread-triangle-trial-v001/CADTRI-12-anchor-coordinate.png",
+      "sha256": "4aff01fd49479501d84e1ff5542282fa236868b36c859290207ae540c8b7bbf0",
+      "observed": {
+        "solver": "OKAY",
+        "dof": 2,
+        "constraints": [
+          {
+            "type": "EQUAL",
+            "name": "Equal",
+            "value": null,
+            "uid": "f7fc2478b7cbe132"
+          },
+          {
+            "type": "DISTANCE",
+            "name": "Distance",
+            "value": 0.6000000238418579,
+            "uid": "9f59a0b3ccf4b996"
+          },
+          {
+            "type": "DISTANCE",
+            "name": "Distance",
+            "value": 1.236931562423706,
+            "uid": "733e0136a4433c1e"
+          },
+          {
+            "type": "VERTICAL",
+            "name": "Vertical",
+            "value": null,
+            "uid": "95817b0205a37a7b"
+          }
+        ],
+        "fixedFlags": [
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      }
+    },
+    {
+      "sequence": 13,
+      "slug": "anchor-menu-again",
+      "image": "learning/evidence/parametric/2026-10-28-cad-thread-triangle-trial-v001/CADTRI-13-anchor-menu-again.png",
+      "sha256": "a9c275af71267fba369923d1dd60d358637f5de7f212a22d740874d67e3c4d3f",
+      "observed": {
+        "solver": "OKAY",
+        "dof": 2,
+        "constraints": [
+          {
+            "type": "EQUAL",
+            "name": "Equal",
+            "value": null,
+            "uid": "f7fc2478b7cbe132"
+          },
+          {
+            "type": "DISTANCE",
+            "name": "Distance",
+            "value": 0.6000000238418579,
+            "uid": "9f59a0b3ccf4b996"
+          },
+          {
+            "type": "DISTANCE",
+            "name": "Distance",
+            "value": 1.236931562423706,
+            "uid": "733e0136a4433c1e"
+          },
+          {
+            "type": "VERTICAL",
+            "name": "Vertical",
+            "value": null,
+            "uid": "95817b0205a37a7b"
+          }
+        ],
+        "fixedFlags": [
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      }
+    },
+    {
+      "sequence": 14,
+      "slug": "anchor-fixed",
+      "image": "learning/evidence/parametric/2026-10-28-cad-thread-triangle-trial-v001/CADTRI-14-anchor-fixed.png",
+      "sha256": "4aff01fd49479501d84e1ff5542282fa236868b36c859290207ae540c8b7bbf0",
+      "observed": {
+        "solver": "OKAY",
+        "dof": 2,
+        "constraints": [
+          {
+            "type": "EQUAL",
+            "name": "Equal",
+            "value": null,
+            "uid": "f7fc2478b7cbe132"
+          },
+          {
+            "type": "DISTANCE",
+            "name": "Distance",
+            "value": 0.6000000238418579,
+            "uid": "9f59a0b3ccf4b996"
+          },
+          {
+            "type": "DISTANCE",
+            "name": "Distance",
+            "value": 1.236931562423706,
+            "uid": "733e0136a4433c1e"
+          },
+          {
+            "type": "VERTICAL",
+            "name": "Vertical",
+            "value": null,
+            "uid": "95817b0205a37a7b"
+          }
+        ],
+        "fixedFlags": [
+          true,
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      }
+    },
+    {
+      "sequence": 15,
+      "slug": "fixed-reopened",
+      "image": "learning/evidence/parametric/2026-10-28-cad-thread-triangle-trial-v001/CADTRI-15-fixed-reopened.png",
+      "sha256": "61a54c9ab679d7aa5ecb153ff37262788233bdd2b614e8c4eb8fde55d54a65f8",
+      "observed": {
+        "solver": "OKAY",
+        "dof": 0,
+        "constraints": [
+          {
+            "type": "EQUAL",
+            "name": "Equal",
+            "value": null,
+            "uid": "f7fc2478b7cbe132"
+          },
+          {
+            "type": "DISTANCE",
+            "name": "Distance",
+            "value": 0.6000000238418579,
+            "uid": "9f59a0b3ccf4b996"
+          },
+          {
+            "type": "DISTANCE",
+            "name": "Distance",
+            "value": 1.236931562423706,
+            "uid": "733e0136a4433c1e"
+          },
+          {
+            "type": "VERTICAL",
+            "name": "Vertical",
+            "value": null,
+            "uid": "95817b0205a37a7b"
+          }
+        ],
+        "fixedFlags": [
+          true,
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      }
+    },
+    {
+      "sequence": 16,
+      "slug": "saved-060",
+      "image": "learning/evidence/parametric/2026-10-28-cad-thread-triangle-trial-v001/CADTRI-16-saved-060.png",
+      "sha256": "ca9f07460a7ed7d5390b16e381f915277165dcaec9d450858f07027d9add08ca",
+      "observed": {
+        "solver": "OKAY",
+        "dof": 0,
+        "constraints": [
+          {
+            "type": "EQUAL",
+            "name": "Equal",
+            "value": null,
+            "uid": "f7fc2478b7cbe132"
+          },
+          {
+            "type": "DISTANCE",
+            "name": "Distance",
+            "value": 0.6000000238418579,
+            "uid": "9f59a0b3ccf4b996"
+          },
+          {
+            "type": "DISTANCE",
+            "name": "Distance",
+            "value": 1.236931562423706,
+            "uid": "733e0136a4433c1e"
+          },
+          {
+            "type": "VERTICAL",
+            "name": "Vertical",
+            "value": null,
+            "uid": "95817b0205a37a7b"
+          }
+        ],
+        "fixedFlags": [
+          true,
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      }
+    },
+    {
+      "sequence": 17,
+      "slug": "changed-080",
+      "image": "learning/evidence/parametric/2026-10-28-cad-thread-triangle-trial-v001/CADTRI-17-changed-080.png",
+      "sha256": "86646a25cb5cc53417c6bc1075b6a344eb40d3292a3f7b8193ed3a1217591474",
+      "observed": {
+        "solver": "OKAY",
+        "dof": 0,
+        "constraints": [
+          {
+            "type": "EQUAL",
+            "name": "Equal",
+            "value": null,
+            "uid": "f7fc2478b7cbe132"
+          },
+          {
+            "type": "DISTANCE",
+            "name": "Distance",
+            "value": 0.800000011920929,
+            "uid": "9f59a0b3ccf4b996"
+          },
+          {
+            "type": "DISTANCE",
+            "name": "Distance",
+            "value": 1.236931562423706,
+            "uid": "733e0136a4433c1e"
+          },
+          {
+            "type": "VERTICAL",
+            "name": "Vertical",
+            "value": null,
+            "uid": "95817b0205a37a7b"
+          }
+        ],
+        "fixedFlags": [
+          true,
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      }
+    },
+    {
+      "sequence": 18,
+      "slug": "saved-080",
+      "image": "learning/evidence/parametric/2026-10-28-cad-thread-triangle-trial-v001/CADTRI-18-saved-080.png",
+      "sha256": "87b59dc049a2fa62cc2ebfdd138a88b3c58c766f99688a66ff1642e81e996942",
+      "observed": {
+        "solver": "OKAY",
+        "dof": 0,
+        "constraints": [
+          {
+            "type": "EQUAL",
+            "name": "Equal",
+            "value": null,
+            "uid": "f7fc2478b7cbe132"
+          },
+          {
+            "type": "DISTANCE",
+            "name": "Distance",
+            "value": 0.800000011920929,
+            "uid": "9f59a0b3ccf4b996"
+          },
+          {
+            "type": "DISTANCE",
+            "name": "Distance",
+            "value": 1.236931562423706,
+            "uid": "733e0136a4433c1e"
+          },
+          {
+            "type": "VERTICAL",
+            "name": "Vertical",
+            "value": null,
+            "uid": "95817b0205a37a7b"
+          }
+        ],
+        "fixedFlags": [
+          true,
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      }
+    },
+    {
+      "sequence": 19,
+      "slug": "reopened-080",
+      "image": "learning/evidence/parametric/2026-10-28-cad-thread-triangle-trial-v001/CADTRI-19-reopened-080.png",
+      "sha256": "e63e05ecc21097c86d56e93572ecf21c89b1ad1ca5a4e9e52bf7665db9745739",
+      "observed": {
+        "solver": "OKAY",
+        "dof": 0,
+        "constraints": [
+          {
+            "type": "EQUAL",
+            "name": "Equal",
+            "value": null,
+            "uid": "f7fc2478b7cbe132"
+          },
+          {
+            "type": "DISTANCE",
+            "name": "Distance",
+            "value": 0.800000011920929,
+            "uid": "9f59a0b3ccf4b996"
+          },
+          {
+            "type": "DISTANCE",
+            "name": "Distance",
+            "value": 1.236931562423706,
+            "uid": "733e0136a4433c1e"
+          },
+          {
+            "type": "VERTICAL",
+            "name": "Vertical",
+            "value": null,
+            "uid": "95817b0205a37a7b"
+          }
+        ],
+        "fixedFlags": [
+          true,
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      }
+    },
+    {
+      "sequence": 20,
+      "slug": "source-080",
+      "image": "learning/evidence/parametric/2026-10-28-cad-thread-triangle-restore-v001/CADREST-01-source-080.png",
+      "sha256": "45f564c388287c0951531e4ee1ce253b35c74d86efc8ebcb0bc7f2e0630e6489",
+      "observed": {
+        "solver": "OKAY",
+        "dof": 0,
+        "constraints": [
+          {
+            "type": "EQUAL",
+            "name": "Equal",
+            "value": null,
+            "uid": "f7fc2478b7cbe132"
+          },
+          {
+            "type": "DISTANCE",
+            "name": "Distance",
+            "value": 0.800000011920929,
+            "uid": "9f59a0b3ccf4b996"
+          },
+          {
+            "type": "DISTANCE",
+            "name": "Distance",
+            "value": 1.236931562423706,
+            "uid": "733e0136a4433c1e"
+          },
+          {
+            "type": "VERTICAL",
+            "name": "Vertical",
+            "value": null,
+            "uid": "95817b0205a37a7b"
+          }
+        ],
+        "fixedFlags": [
+          true,
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      }
+    },
+    {
+      "sequence": 21,
+      "slug": "restored-060",
+      "image": "learning/evidence/parametric/2026-10-28-cad-thread-triangle-restore-v001/CADREST-02-restored-060.png",
+      "sha256": "04a289d2cd797a8448a82c7ae2550f8dfa87c730cce1a491d02ba868ebb983bf",
+      "observed": {
+        "solver": "OKAY",
+        "dof": 0,
+        "constraints": [
+          {
+            "type": "EQUAL",
+            "name": "Equal",
+            "value": null,
+            "uid": "f7fc2478b7cbe132"
+          },
+          {
+            "type": "DISTANCE",
+            "name": "Distance",
+            "value": 0.6000000238418579,
+            "uid": "9f59a0b3ccf4b996"
+          },
+          {
+            "type": "DISTANCE",
+            "name": "Distance",
+            "value": 1.236931562423706,
+            "uid": "733e0136a4433c1e"
+          },
+          {
+            "type": "VERTICAL",
+            "name": "Vertical",
+            "value": null,
+            "uid": "95817b0205a37a7b"
+          }
+        ],
+        "fixedFlags": [
+          true,
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      }
+    },
+    {
+      "sequence": 22,
+      "slug": "saved",
+      "image": "learning/evidence/parametric/2026-10-28-cad-thread-triangle-restore-v001/CADREST-03-saved.png",
+      "sha256": "1e296c4ae06960dfdf4c26f488a46ff2aa8abfac8ca54e93280566427c81ca84",
+      "observed": {
+        "solver": "OKAY",
+        "dof": 0,
+        "constraints": [
+          {
+            "type": "EQUAL",
+            "name": "Equal",
+            "value": null,
+            "uid": "f7fc2478b7cbe132"
+          },
+          {
+            "type": "DISTANCE",
+            "name": "Distance",
+            "value": 0.6000000238418579,
+            "uid": "9f59a0b3ccf4b996"
+          },
+          {
+            "type": "DISTANCE",
+            "name": "Distance",
+            "value": 1.236931562423706,
+            "uid": "733e0136a4433c1e"
+          },
+          {
+            "type": "VERTICAL",
+            "name": "Vertical",
+            "value": null,
+            "uid": "95817b0205a37a7b"
+          }
+        ],
+        "fixedFlags": [
+          true,
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      }
+    },
+    {
+      "sequence": 23,
+      "slug": "reopened",
+      "image": "learning/evidence/parametric/2026-10-28-cad-thread-triangle-restore-v001/CADREST-04-reopened.png",
+      "sha256": "7c5c13b458f17d71b03d819c167c1516c25cb3c6ca3789ac7260b8559dac479d",
+      "observed": {
+        "solver": "OKAY",
+        "dof": 0,
+        "constraints": [
+          {
+            "type": "EQUAL",
+            "name": "Equal",
+            "value": null,
+            "uid": "f7fc2478b7cbe132"
+          },
+          {
+            "type": "DISTANCE",
+            "name": "Distance",
+            "value": 0.6000000238418579,
+            "uid": "9f59a0b3ccf4b996"
+          },
+          {
+            "type": "DISTANCE",
+            "name": "Distance",
+            "value": 1.236931562423706,
+            "uid": "733e0136a4433c1e"
+          },
+          {
+            "type": "VERTICAL",
+            "name": "Vertical",
+            "value": null,
+            "uid": "95817b0205a37a7b"
+          }
+        ],
+        "fixedFlags": [
+          true,
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      }
+    }
+  ],
+  "limitations": [
+    "底邊 0.6→0.8 僅為二維截面尺寸的約束示範；0.6 和 0.8 不是 Screw 螺距。",
+    "頂點固定為草圖屬性，兩個 Distance、Equal、Vertical 為真正草圖約束；DoF0 不代表可製造。",
+    "目前是 XY 草圖，未證 XZ、未證 Screw 螺旋、未建立實體、未證 CAD 特徵樹。",
+    "來源 CAD 版本及測試 .blend 尚未完成公開審查；raw runner 含個人 Recent，不可公開。",
+    "非 ISO、未指定材料，未進行列印、量測、試配或強度判定。",
+    "還原版重開實拍顯示 Tool 'sketcher.slvs_select' not found for space 'VIEW_3D'；雖然讀回 solver OKAY、DoF0，其他草圖工具是否正常仍待確認。",
+    "部分截圖側欄斜邊尺寸欄太窄，文字看似「1.24 m」；視窗內標註顯示 1.237 mm，獨立數值約 1.23693156 mm，應展寬欄位或查看完整數值，不可據截字推斷單位。"
+  ],
+  "physicalPrint": null,
+  "physicalMeasurement": null,
+  "physicalFit": null,
+  "qualifiedStrength": null,
+  "qualifiedClearance": null,
+  "reopenWarning": {
+    "visibleScreenshot": "learning/evidence/parametric/2026-10-28-cad-thread-triangle-restore-v001/CADREST-04-reopened.png",
+    "message": "Tool 'sketcher.slvs_select' not found for space 'VIEW_3D'",
+    "status": "未釐清，不能推論其他工具正常"
+  },
+  "truncatedDimensionLabel": {
+    "visibleScreenshot": "learning/evidence/parametric/2026-10-28-cad-thread-triangle-trial-v001/CADTRI-08-slope-dimension.png",
+    "viewportText": "1.237 mm",
+    "independentValueMm": 1.236931562423706,
+    "status": "側欄寬度可能截斷單位字串"
+  }
+}

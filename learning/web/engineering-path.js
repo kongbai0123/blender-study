@@ -5,13 +5,15 @@
   const list = (value, ordered = false) => { const items = strings(value); const tag = ordered ? 'ol' : 'ul'; return items.length ? `<${tag}>${items.map((item) => `<li>${escape(item)}</li>`).join('')}</${tag}>` : ''; };
   const availability = (chapter) => typeof chapter?.availabilityLabel === 'string' && chapter.availabilityLabel.trim() ? chapter.availabilityLabel
     : ({ existing_reference: '有既有教材可參照', new_content_pending: '新內容待製作', mixed: '既有參照＋待補內容' }[chapter?.availability] || '內容狀態待核對');
-  // 主線小步計入進度；選修可以確認但不計入、不擋後面章節；待製作可以閱讀但不能確認、不計入；附錄是開發與驗證紀錄，只供查核。
+  // 主線小步計入進度；選修可以確認但不計入、不擋後面章節；待製作可以閱讀但不能確認、不計入；
+  // 速查（第 00 章）只供查閱、可留筆記但不能確認；附錄是開發與驗證紀錄，只供查核。
   const stepsOf = (chapter) => Array.isArray(chapter?.steps) ? chapter.steps : [];
   const learnerSteps = (chapter) => stepsOf(chapter).filter((step) => !step?.track);
   const optionalSteps = (chapter) => stepsOf(chapter).filter((step) => step?.track === 'optional');
   const appendixSteps = (chapter) => stepsOf(chapter).filter((step) => step?.track === 'appendix');
   const pendingSteps = (chapter) => stepsOf(chapter).filter((step) => step?.track === 'pending');
-  const TRACK_LABELS = { optional: '選修', pending: '待製作' };
+  const confirmable = (step) => !['pending', 'reference', 'appendix'].includes(step?.track);
+  const TRACK_LABELS = { optional: '選修', pending: '待製作', reference: '速查' };
 
   function safeFileUrl(path, extensions = ['json', 'md']) {
     if (typeof path !== 'string' || !/^learning\/(evidence|journal)\//.test(path) || /[\\:%?#\x00-\x20]/.test(path)) return null;
@@ -51,7 +53,7 @@
     if (!progress) return '<p>共用進度尚未讀取。</p>';
     const chapters = curriculum?.data?.chapters;
     const counts = Array.isArray(chapters) ? chapters.reduce((acc, chapter) => { const c = curriculumCounts(bootstrap, curriculum.data.id, chapter); acc.total += c.total; acc.done += c.done; acc.optional += optionalSteps(chapter).length; acc.pending += pendingSteps(chapter).length; return acc; }, { done: 0, total: 0, optional: 0, pending: 0 }) : null;
-    const extra = counts ? [counts.optional ? `選修 ${counts.optional} 步` : '', counts.pending ? `待製作 ${counts.pending} 步` : ''].filter(Boolean).join('、') : '';
+    const extra = counts ? [counts.optional ? `選修 ${counts.optional} 步` : '', counts.pending ? `${escape(curriculum?.data?.pendingLabel || '待製作')} ${counts.pending} 步` : ''].filter(Boolean).join('、') : '';
     const line = counts ? `${counts.done} / ${counts.total} 個主線小步已確認${extra ? `（另有${extra}，不計入）` : ''}` : '小步確認數：教材載入後顯示';
     return `<section class="engineering-progress" aria-label="共用進度"><div><strong>學習進度</strong><p>${line} · revision ${escape(progress.revision)}</p><p>確認與筆記都記在各小步；瀏覽章節不會新增完成紀錄。原教材的示範紀錄與排解說明顯示在各小步右欄的分頁。</p></div></section>`;
   }
@@ -145,11 +147,29 @@
   }
 
   function renderArtifacts(artifacts) {
-    const localScript = (item) => item?.type === 'python-script' && /^learning\/tutor\/guarded_box_parameters_v\d{3}\.py$/.test(item.path || '');
+    const localScript = (item) => item?.type === 'python-script' && /^learning\/tutor\/(?:guarded_box_parameters|guarded_manual_box|inspect_stl)_v\d{3}\.py$/.test(item.path || '');
     const items = (Array.isArray(artifacts) ? artifacts : []).filter((item) =>
-      item && (safeFileUrl(item.path, ['blend', 'json', 'png']) || localScript(item)) && /^[a-f0-9]{64}$/i.test(item.sha256 || ''));
+      item && (safeFileUrl(item.path, ['blend', 'json', 'png', 'stl', 'csv', 'md']) || localScript(item)) && /^[a-f0-9]{64}$/i.test(item.sha256 || ''));
     if (!items.length) return '';
-    return `<section class="engineering-references"><h5>檔案版本與驗證</h5><ul>${items.map((item) => `<li>${localScript(item) ? `<strong>${escape(item.label || '本機程式')}</strong><small>專案相對路徑：<code>${escape(item.path)}</code></small>` : `<a href="${escape(safeFileUrl(item.path, ['blend', 'json', 'png']))}" target="_blank" rel="noopener">${escape(item.label || item.path)}</a>`}<small>SHA-256 ${escape(item.sha256)}</small></li>`).join('')}</ul></section>`;
+    return `<section class="engineering-references"><h5>檔案版本與驗證</h5><ul>${items.map((item) => `<li>${localScript(item) ? `<strong>${escape(item.label || '本機程式')}</strong><small>專案相對路徑：<code>${escape(item.path)}</code></small>` : `<a href="${escape(safeFileUrl(item.path, ['blend', 'json', 'png', 'stl', 'csv', 'md']))}" target="_blank" rel="noopener">${escape(item.label || item.path)}</a>`}<small>SHA-256 ${escape(item.sha256)}</small></li>`).join('')}</ul></section>`;
+  }
+
+  function renderOwnDemonstration(step) {
+    const demo = step.demonstration;
+    if (!demo || typeof demo !== 'object' || Array.isArray(demo)) return '';
+    const figures = (Array.isArray(demo.figures) ? demo.figures : []).filter(item => item?.type === 'screenshot').map(renderFigure).join('');
+    const readings = (Array.isArray(demo?.readings) ? demo.readings : []).filter(item => item && item.kind === 'readback' && Object.hasOwn(item, 'value')).map(item => {
+      const label = escape(item.label || '程式讀回');
+      if (typeof item.value === 'string' || typeof item.value === 'number' || typeof item.value === 'boolean') return `<p><strong>${label}：</strong>${escape(item.value)}</p>`;
+      let value;
+      try { value = JSON.stringify(item.value, null, 2); } catch { return ''; }
+      return typeof value === 'string' ? `<details><summary>${label}（完整原始數值）</summary><pre>${escape(value)}</pre></details>` : '';
+    }).join('');
+    if (!figures && !readings) return '';
+    const source = demo?.source;
+    const origin = typeof source?.path === 'string' && /^[a-f0-9]{64}$/i.test(source.sha256 || '')
+      ? `<details><summary>本步讀值的來源版本</summary><p>${escape(source.path)}</p><code>SHA-256 ${escape(source.sha256)}</code></details>` : '';
+    return `<section class="engineering-own-demonstration"><h5>本小步的助教示範</h5><p>${escape(demo?.scope || '本步附圖是獨立示範參考；可見內容請對照原圖，其他數值須另有讀值來源。')}</p>${readings}${origin}${figures}</section>`;
   }
 
   const OBSERVED_KINDS = { scripted_description: '文字描述，請對照原圖', mixed: '混合紀錄：文字描述與讀回值', readback: '狀態讀回值' };
@@ -196,6 +216,8 @@
     existing_demo: '本小步附有助教示範原圖或讀值；請核對各圖的範圍',
     source_step_demo: '所屬原教材步驟有助教示範，本小步沒有單獨原圖；請展開下方的原教材示範紀錄核對',
     concept_only: '概念說明；尚無本步實拍',
+    documented_lesson: '方法、表格或來源已核對；本步不是實體實驗',
+    field_protocol_ready: '現場操作方法與空白紀錄已備妥；實體結果待進行',
     draft_pending_demo: '操作草案；實際示範待製作'
   };
 
@@ -235,38 +257,60 @@
     return `<section class="panel engineering-curriculum" role="status"><h3>新版逐步教材</h3><p>${escape(message)}原有路徑與學習進度仍可使用。</p>${curriculum?.error ? '<button type="button" class="button small" data-action="retry-curriculum">重新讀取分步教材</button>' : ''}</section>`;
   }
 
+  // 速查卡的「正式練習」：連到各章實際操作的小步；compact 用在速查表，只顯示節號。
+  function renderPractice(step, compact = false) {
+    const items = (Array.isArray(step?.practice) ? step.practice : []).filter((item) => item && /^ch\d{2}$/.test(item.chapterId || '') && typeof item.stepId === 'string');
+    if (!items.length) return compact ? '—' : '';
+    const buttons = items.map((item) => `<button type="button" class="button quiet small" data-goto-chapter="${escape(item.chapterId)}" data-goto-step="${escape(item.stepId)}"${compact ? ` title="${escape(item.label || item.stepId)}"` : ''}>${escape(compact ? item.sectionId || item.stepId : item.label || item.stepId)}</button>`).join('');
+    return compact ? `<span class="engineering-practice">${buttons}</span>` : `<div class="engineering-practice"><strong>正式練習：</strong>${buttons}</div>`;
+  }
+
+  // 速查章（kind: reference）的章頁以一張表列出全部卡片，取代小節目錄。
+  function renderQuickTable(chapter, detail) {
+    const keys = (step) => (Array.isArray(step.shortcuts) ? step.shortcuts : []).filter((item) => typeof item?.keys === 'string').map((item) => `<kbd>${escape(item.keys)}</kbd>`).join('') || '—';
+    const bodies = sectionsOf(detail).map((section) => `<tbody><tr class="engineering-quick-section"><th colspan="4"><button type="button" class="link-button" data-section-chapter="${escape(chapter.id)}" data-open-section="${escape(section.id)}">${escape(section.id)} ${escape(section.title)}</button></th></tr>${sectionSteps(detail, section.id).map((step) => `<tr><td class="engineering-quick-keys">${keys(step)}</td><td><button type="button" class="link-button" data-goto-chapter="${escape(chapter.id)}" data-goto-step="${escape(step.id)}">${escape(step.title)}</button></td><td>${escape(asStrings(step.context).join('；'))}</td><td>${renderPractice(step, true)}</td></tr>`).join('')}</tbody>`).join('');
+    return `<section class="panel engineering-quick"><h4>速查表</h4><p class="engineering-caption">點功能名稱看詳細說明、原圖與注意事項；「正式練習」連到各章實際操作的小步。</p><div class="engineering-quick-scroll"><table><thead><tr><th>按鍵</th><th>功能</th><th>在哪裡按</th><th>正式練習</th></tr></thead>${bodies}</table></div></section>`;
+  }
+
   // 章節頁：精簡總覽與小節目錄；功能、限制、原教材參照與附錄收在「本章補充」。
   function renderChapterPage(data, chapter, curriculum, bootstrap, ui) {
     const detail = curriculum?.data?.chapters?.find((item) => item.id === chapter.id);
     const index = data.chapters.findIndex((item) => item.id === chapter.id);
-    const previous = index > 0 ? data.chapters[index - 1] : null;
+    const reference = chapter.kind === 'reference';
+    // 速查章不是後面章節的先備學習。
+    const previous = data.chapters.slice(0, Math.max(index, 0)).reverse().find((item) => item.kind !== 'reference') || null;
     const counts = detail ? curriculumCounts(bootstrap, curriculum.data.id, detail) : null;
     const pending = detail ? learnerSteps(detail).find((step) => !isConfirmed(bootstrap, curriculum, chapter.id, step.id)) : null;
     const resume = pending ? `<button type="button" class="button primary small" data-goto-chapter="${escape(chapter.id)}" data-goto-step="${escape(pending.id)}">接續本章：${escape(pending.section ? pending.section + ' ' : '')}${escape(pending.title)}</button>` : (counts?.total ? '<p>本章主線小步都已確認。</p>' : '');
-    const toc = detail ? `<section class="panel engineering-toc"><h4>小節目錄</h4><ol>${sectionsOf(detail).map((section) => {
-      const own = sectionSteps(detail, section.id).filter((step) => step.track !== 'pending');
+    const toc = detail && reference ? renderQuickTable(chapter, detail) : detail ? `<section class="panel engineering-toc"><h4>小節目錄</h4><ol>${sectionsOf(detail).map((section) => {
+      const own = sectionSteps(detail, section.id).filter(confirmable);
       const done = own.filter((step) => isConfirmed(bootstrap, curriculum, chapter.id, step.id)).length;
-      return `<li><button type="button" data-section-chapter="${escape(chapter.id)}" data-open-section="${escape(section.id)}"><span>${escape(section.id)}</span><span>${escape(section.title)}${TRACK_LABELS[section.track] ? ` <em>${TRACK_LABELS[section.track]}</em>` : ''}</span><small>${own.length ? `${done} / ${own.length}` : '—'}</small></button></li>`;
+      return `<li><button type="button" data-section-chapter="${escape(chapter.id)}" data-open-section="${escape(section.id)}"><span>${escape(section.id)}</span><span>${escape(section.title)}${trackLabel(section) ? ` <em>${escape(trackLabel(section))}</em>` : ''}</span><small>${own.length ? `${done} / ${own.length}` : '—'}</small></button></li>`;
     }).join('')}</ol></section>` : curriculumNotice(curriculum);
     const appendix = detail ? appendixSteps(detail) : [];
     const history = asStrings(detail?.limitationHistory);
     const appendixBlock = appendix.length || history.length ? `<details class="engineering-appendix"><summary>${escape(detail.appendix?.title || '附錄：開發與驗證紀錄')}（${appendix.length} 項，不需操作、不計入進度）</summary>${detail.appendix?.summary ? `<p>${escape(detail.appendix.summary)}</p>` : ''}${appendix.map((step) => renderStep(step, chapter.id, curriculum, bootstrap, ui, true)).join('')}${history.length ? `<h4>本章歷次版本的限制紀錄</h4>${list(history)}` : ''}</details>` : '';
     const extra = `<details class="panel engineering-chapter-extra"><summary>本章補充（實作重點、功能與快捷、限制、原教材參照、備註）</summary><h4>實作內容</h4>${list(chapter.practice, true)}<h4>必要功能與快速操作</h4>${list(chapter.functions)}${renderShortcuts(chapter.shortcuts)}${asStrings(detail?.limitations).length ? `<h4>本章限制</h4>${list(asStrings(detail.limitations))}` : ''}${renderReferences(chapter.references, bootstrap)}${strings(chapter.notes).length ? `<h4>教學安排與待核對條件</h4>${list(chapter.notes)}` : ''}${appendixBlock}</details>`;
-    const pilot = `<section class="panel"><h4>本章練習題</h4><p>查看題目、提示、實際畫面與證據狀態；題目與主線小步分開記錄。</p><a class="button small" href="/challenges/index.html?chapter=${escape(chapter.id)}">開啟本章練習題</a></section>`;
-    return `<section class="panel engineering-chapter" aria-labelledby="engineering-chapter-title"><div class="heading-meta"><span class="eyebrow">第 ${escape(chapter.number || chapter.id.slice(2))} 章</span><span class="badge">${escape(availability(chapter))}</span>${counts ? `<span class="badge">${counts.done} / ${counts.total} 小步已確認</span>` : ''}</div><h3 id="engineering-chapter-title" tabindex="-1">${escape(chapter.title)}</h3><dl class="engineering-chapter-summary"><div><dt>學什麼</dt><dd>${escape(chapter.goal)}</dd></div><div><dt>做出</dt><dd>${escape(chapter.deliverable)}</dd></div>${previous ? `<div><dt>接續</dt><dd>第 ${escape(previous.number || previous.id.slice(2))} 章 ${escape(previous.title)} 的成果</dd></div>` : ''}</dl>${resume}</section>${pilot}${toc}${extra}`;
+    const pilot = reference ? '' : `<section class="panel"><h4>本章練習題</h4><p>查看題目、提示、實際畫面與證據狀態；題目與主線小步分開記錄。</p><a class="button small" href="/challenges/index.html?chapter=${escape(chapter.id)}">開啟本章練習題</a></section>`;
+    return `<section class="panel engineering-chapter" aria-labelledby="engineering-chapter-title"><div class="heading-meta"><span class="eyebrow">第 ${escape(chapter.number || chapter.id.slice(2))} 章</span><span class="badge">${escape(availability(chapter))}</span>${counts?.total ? `<span class="badge">${counts.done} / ${counts.total} 小步已確認</span>` : ''}</div><h3 id="engineering-chapter-title" tabindex="-1">${escape(chapter.title)}</h3><dl class="engineering-chapter-summary"><div><dt>學什麼</dt><dd>${escape(chapter.goal)}</dd></div><div><dt>${escape(chapter.deliverableLabel || '做出')}</dt><dd>${escape(chapter.deliverable)}</dd></div>${previous ? `<div><dt>${escape(chapter.prerequisiteLabel || '接續')}</dt><dd>${escape(chapter.prerequisiteSummary || `第 ${previous.number || previous.id.slice(2)} 章 ${previous.title} 的成果`)}</dd></div>` : ''}</dl>${resume}</section>${pilot}${toc}${extra}`;
   }
 
+  // 速查卡沒有確認表單，只留卡關筆記。
   function renderRecordPanel(step, chapterId, curriculum, bootstrap, ui) {
     const events = curriculumEvents(bootstrap, curriculum.data.id, chapterId, step.id);
     const confirmation = events.find((event) => event.type === 'engineering_step_confirmed');
     const notes = events.filter((event) => event.type === 'engineering_step_note' && typeof event.text === 'string');
     const confirmKey = draftKey('confirm', chapterId, step.id), noteKey = draftKey('note', chapterId, step.id);
     const confirmDraft = ui?.drafts?.get(confirmKey) || '', noteDraft = ui?.drafts?.get(noteKey) || '';
-    const confirmForm = confirmation ? `<p>已由學員確認這一小步。</p>${typeof confirmation.evidence === 'string' ? `<p class="engineering-record-text">${escape(confirmation.evidence)}</p>` : ''}` : `<form data-form="engineering-confirm" data-engineering-chapter="${escape(chapterId)}" data-engineering-step="${escape(step.id)}"><label>實際完成情況<textarea data-draft="${escape(confirmKey)}" rows="2" maxlength="10000" placeholder="寫下你實際看到或完成的情況">${escape(confirmDraft)}</textarea></label><button type="submit" class="button small" data-engineering-submit${ui?.busy || !confirmDraft.trim() ? ' disabled' : ''}>確認這一小步</button></form>`;
+    const confirmForm = step.track === 'reference' ? '' : confirmation ? `<p>已由學員確認這一小步。</p>${typeof confirmation.evidence === 'string' ? `<p class="engineering-record-text">${escape(confirmation.evidence)}</p>` : ''}` : `<form data-form="engineering-confirm" data-engineering-chapter="${escape(chapterId)}" data-engineering-step="${escape(step.id)}"><label>實際完成情況<textarea data-draft="${escape(confirmKey)}" rows="2" maxlength="10000" placeholder="寫下你實際看到或完成的情況">${escape(confirmDraft)}</textarea></label><button type="submit" class="button small" data-engineering-submit${ui?.busy || !confirmDraft.trim() ? ' disabled' : ''}>確認這一小步</button></form>`;
     return `<section class="engineering-record" aria-label="本小步學員紀錄">${confirmForm}<details class="engineering-note-box"${noteDraft.trim() ? ' open' : ''}><summary>卡關筆記${notes.length ? `（${notes.length}）` : ''}</summary><form data-form="engineering-note" data-engineering-chapter="${escape(chapterId)}" data-engineering-step="${escape(step.id)}"><label>卡在哪裡<textarea data-draft="${escape(noteKey)}" rows="2" maxlength="10000" placeholder="寫下你卡住的地方">${escape(noteDraft)}</textarea></label><button type="submit" class="button small" data-engineering-submit${ui?.busy || !noteDraft.trim() ? ' disabled' : ''}>保存卡關筆記</button></form>${notes.length ? `<ul class="engineering-record-notes">${notes.map((event) => `<li>${escape(event.text)}</li>`).join('')}</ul>` : ''}</details></section>`;
   }
 
   const PENDING_TEXT = '這一步需要的模型或示範還沒完成，現在只能閱讀；不能確認，也不計入主線進度。';
+  const REFERENCE_TEXT = '速查卡只供閱讀與查找，不需要確認，也不計入進度；要動手練習，請到各卡「正式練習」列出的小步。';
+  const trackLabel = (item) => typeof item?.pendingLabel === 'string' && item.track === 'pending' ? item.pendingLabel : TRACK_LABELS[item?.track];
+  const pendingNotice = (item) => `<p class="engineering-notice"><strong>${escape(trackLabel(item) || '待製作')}：</strong>${escape(item.pendingReason || PENDING_TEXT)}</p>`;
+  const referenceNotice = () => `<p class="engineering-notice"><strong>速查：</strong>${escape(REFERENCE_TEXT)}</p>`;
   const DETAIL_TABS = [['detail', '詳細步驟'], ['figures', '原圖'], ['shortcuts', '快捷鍵'], ['record', '示範紀錄'], ['notes', '注意'], ['help', '找不到按鈕']];
 
   // 右欄：目前小步的詳述，用分頁切換。
@@ -284,11 +328,12 @@
     } else if (active === 'shortcuts') {
       body = renderStepShortcuts(step.shortcuts) || empty('這一步沒有指定快捷鍵；依詳細步驟的選單操作即可。');
     } else if (active === 'record') {
-      body = (parts.record + renderArtifacts(step.artifacts)) || empty('這一步沒有原教材的助教示範紀錄。');
+      body = (renderOwnDemonstration(step) + parts.record + renderArtifacts(step.artifacts)) || empty(step.figures?.length ? '本步參考圖請看「原圖」；圖說說明適用範圍，其他紀錄依「詳細步驟」所列來源查核。' : '本步是文字方法，沒有另附 Blender 操作紀錄；請依「詳細步驟」及「注意」核對適用範圍。');
     } else if (active === 'notes') {
-      body = `${step.track === 'pending' ? `<p class="engineering-notice"><strong>待製作：</strong>${escape(PENDING_TEXT)}</p>` : ''}<p><strong>證據狀態：</strong>${escape(STATUS_LABELS[step.evidenceStatus] || '證據狀態待核對')}</p>${renderNotices(step.notices)}${asStrings(step.limitations).length ? `<h5>限制與待核對</h5>${list(asStrings(step.limitations))}` : ''}${parts.reviews}${references.length ? renderReferences(references, bootstrap) : ''}<p class="engineering-caption">小步代號 ${escape(step.id)}（在聊天中回報時可以引用）</p>`;
+      body = `${step.track === 'pending' ? pendingNotice(step) : step.track === 'reference' ? referenceNotice() : ''}<p><strong>證據狀態：</strong>${escape(STATUS_LABELS[step.evidenceStatus] || '證據狀態待核對')}</p>${renderNotices(step.notices)}${asStrings(step.limitations).length ? `<h5>限制與待核對</h5>${list(asStrings(step.limitations))}` : ''}${parts.reviews}${references.length ? renderReferences(references, bootstrap) : ''}<p class="engineering-caption">小步代號 ${escape(step.id)}（在聊天中回報時可以引用）</p>`;
     } else {
-      body = parts.help || empty('這一步沒有原教材的排解說明；畫面和描述不同時，用中欄的卡關筆記描述你看到的畫面。');
+      const own = list(asStrings(step.help));
+      body = (own ? `<section class="engineering-source-help"><h5>選單位置與排解</h5>${own}</section>` : '') + parts.help || empty('這一步沒有原教材的排解說明；畫面和描述不同時，用中欄的卡關筆記描述你看到的畫面。');
     }
     return `<aside class="panel engineering-detail" aria-label="小步詳述"><div class="engineering-detail-heading"><span class="eyebrow">詳述</span><strong>${escape(step.title)}</strong></div><div class="engineering-tabs" role="tablist">${DETAIL_TABS.map(([key, label]) => `<button type="button" role="tab" data-detail-tab="${key}" aria-selected="${key === active}">${escape(label)}</button>`).join('')}</div><div class="engineering-tab-body" role="tabpanel">${body}</div></aside>`;
   }
@@ -300,19 +345,19 @@
     const done = steps.filter((step) => isConfirmed(bootstrap, curriculum, chapter.id, step.id)).length;
     const selected = steps.find((step) => step.id === ui?.step) || steps.find((step) => step.track !== 'pending' && !isConfirmed(bootstrap, curriculum, chapter.id, step.id)) || steps[0];
     const optional = section.track === 'optional';
-    const trackBadge = (step) => TRACK_LABELS[step.track] && step.track !== section.track ? ` <em>${TRACK_LABELS[step.track]}</em>` : '';
+    const trackBadge = (step) => trackLabel(step) && step.track !== section.track ? ` <em>${escape(trackLabel(step))}</em>` : '';
     const rows = steps.map((step, index) => {
       const confirmed = isConfirmed(bootstrap, curriculum, chapter.id, step.id);
       const mark = confirmed ? '✓' : String(index + 1);
       if (step !== selected) return `<li class="engineering-step-row${confirmed ? ' done' : ''}"><button type="button" data-select-step="${escape(step.id)}"><span class="step-mark">${mark}</span>${escape(step.title)}${trackBadge(step)}</button></li>`;
       const answer = step.legacyActivity ? legacyAnswer(bootstrap, step.legacyActivity) : null;
-      return `<li class="engineering-step-row selected${confirmed ? ' done' : ''}" data-curriculum-step="${escape(step.id)}"><div class="engineering-step-current"><h4><span class="step-mark">${mark}</span>${escape(step.title)}${trackBadge(step)}</h4>${answer ? `<p class="engineering-notice"><strong>你在聊天中的回答已記錄：</strong>「${escape(answer)}」。這一小步還沒確認；確認請用下方表單。</p>` : ''}${step.goal ? `<p><strong>小目標：</strong>${escape(step.goal)}</p>` : ''}<h5>操作</h5>${list(step.actions, true)}${step.success ? `<p><strong>成功畫面：</strong>${escape(step.success)}</p>` : ''}${step.track === 'pending' ? `<p class="engineering-notice"><strong>待製作：</strong>${escape(PENDING_TEXT)}</p>` : renderRecordPanel(step, chapter.id, curriculum, bootstrap, ui)}</div></li>`;
+      return `<li class="engineering-step-row selected${confirmed ? ' done' : ''}" data-curriculum-step="${escape(step.id)}"><div class="engineering-step-current"><h4><span class="step-mark">${mark}</span>${escape(step.title)}${trackBadge(step)}</h4>${answer ? `<p class="engineering-notice"><strong>你在聊天中的回答已記錄：</strong>「${escape(answer)}」。這一小步還沒確認；確認請用下方表單。</p>` : ''}${step.goal ? `<p><strong>小目標：</strong>${escape(step.goal)}</p>` : ''}<h5>操作</h5>${list(step.actions, true)}${step.success ? `<p><strong>成功畫面：</strong>${escape(step.success)}</p>` : ''}${step.track === 'pending' ? pendingNotice(step) : `${step.track === 'reference' ? renderPractice(step) : ''}${renderRecordPanel(step, chapter.id, curriculum, bootstrap, ui)}`}</div></li>`;
     }).join('');
     const sequence = sectionSequence(curriculum);
     const position = sequence.findIndex((item) => item.chapter.id === chapter.id && item.section.id === section.id);
     const link = (item, label) => item ? `<button type="button" class="button quiet small" data-section-chapter="${escape(item.chapter.id)}" data-open-section="${escape(item.section.id)}">${label}</button>` : '<span></span>';
     const pager = `<nav class="engineering-pager" aria-label="小節切換">${link(sequence[position - 1], `← ${escape(sequence[position - 1]?.section.id || '')}`)}<button type="button" class="button quiet small" data-engineering-chapter="${escape(chapter.id)}">回第 ${escape(chapter.number || chapter.id.slice(2))} 章</button>${link(sequence[position + 1], `${escape(sequence[position + 1]?.section.id || '')} →`)}</nav>`;
-    const middle = `<section class="panel engineering-section-main"><div class="heading-meta"><span class="eyebrow">第 ${escape(chapter.number || chapter.id.slice(2))} 章 · 小節 ${escape(section.id)}</span>${TRACK_LABELS[section.track] ? `<span class="badge">${TRACK_LABELS[section.track]}</span>` : ''}<span class="badge">本節 ${done} / ${steps.filter((step) => step.track !== 'pending').length} 已確認</span></div><h3 id="engineering-section-title" tabindex="-1">${escape(section.id)} ${escape(section.title)}</h3>${optional ? '<p class="engineering-caption">選修：可以照做並確認，但不計入主線進度，也不擋住後面章節。</p>' : ''}${section.track === 'pending' ? `<p class="engineering-caption">待製作：${escape(PENDING_TEXT)}</p>` : ''}${typeof detail.detailNote === 'string' && detail.detailNote.trim() ? `<p class="engineering-caption">${escape(detail.detailNote)}</p>` : ''}<ol class="engineering-step-list">${rows}</ol>${pager}</section>`;
+    const middle = `<section class="panel engineering-section-main"><div class="heading-meta"><span class="eyebrow">第 ${escape(chapter.number || chapter.id.slice(2))} 章 · 小節 ${escape(section.id)}</span>${trackLabel(section) ? `<span class="badge">${escape(trackLabel(section))}</span>` : ''}${steps.some((step) => step.track !== 'reference') ? `<span class="badge">本節 ${done} / ${steps.filter(confirmable).length} 已確認</span>` : ''}</div><h3 id="engineering-section-title" tabindex="-1">${escape(section.id)} ${escape(section.title)}</h3>${optional ? '<p class="engineering-caption">選修：可以照做並確認，但不計入主線進度，也不擋住後面章節。</p>' : ''}${section.track === 'pending' ? pendingNotice(section) : ''}${section.track === 'reference' ? referenceNotice() : ''}${typeof detail.detailNote === 'string' && detail.detailNote.trim() ? `<p class="engineering-caption">${escape(detail.detailNote)}</p>` : ''}<ol class="engineering-step-list">${rows}</ol>${pager}</section>`;
     return `<nav class="engineering-breadcrumb" aria-label="目前位置"><button type="button" class="link-button" data-engineering-chapter="${escape(chapter.id)}">第 ${escape(chapter.number || chapter.id.slice(2))} 章 ${escape(chapter.title)}</button><span>›</span><span>${escape(section.id)} ${escape(section.title)}</span></nav><div class="engineering-section-page">${middle}${selected ? renderDetailPanel(selected, chapter.id, bootstrap, ui?.tab, ui?.sourceRecord) : ''}</div>`;
   }
 

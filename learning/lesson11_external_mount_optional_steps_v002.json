@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "title": "第 11 章選修：盒側外牙相位調整與接合幾何草案",
+  "scope": "獨立 Blender 相位調整的幾何示範；不更新學員進度，未驗證製造或配合。",
+  "sourceScene": "learning/evidence/05/2026-10-22-lesson05-lid-demo-v001/demo-files/u05_lid_v001.blend",
+  "sourceSha256": "ab08f331dcb26c5ffc6c6ca56c7c7f022df96791c4777e37c5f01a964fbed6ff",
+  "threadScene": "learning/evidence/08/2026-10-28-external-thread-gui-trial-v010/demo-files/u08_external_gui_draft_v003.blend",
+  "threadSceneSha256": "5a0aea1af13f46e9bff1b14327aa199b6b34f421936fd5a516226fc13072ec04",
+  "demonstrationScene": "learning/evidence/08/2026-10-28-external-thread-mount-gui-v002/demo-files/u11_box_external_thread_draft_v002.blend",
+  "demonstrationSceneSha256": "df2108d06250807a9fa593ce966ae09e42d0fc3b2bfad97c98d0c40f77378c54",
+  "limitations": [
+    "牙形是示範草案，非 ISO 螺紋，既有內牙試塊不是匹配對件。",
+    "初始截面與把牙條載入盒場景是程式處理；旋轉、移動、布林、另存及重開為 GUI 操作，檔案欄位由程式填寫。",
+    "修正版改變多邊形相位與芯柱高度，須保留 v005 原始問題與修訂紀錄。",
+    "零 BVH 候選與零非流形邊不能證明無自交；五條射線只是局部抽樣，蓋子間距僅為靜態外框距離。",
+    "材料、允許間隙、切片、實體列印、量測、試配與強度均待定。",
+    "保留名義嵌入 0.5 mm，牙條繞自身 X 軸轉 11.25°；比舊版更改接合相位，但仍有細長面。",
+    "三角形最小高度不是材料壁厚；數值對照與 BVH 不能證明更容易列印、配合或強度合格。"
+  ],
+  "physicalPrint": null,
+  "physicalMeasurement": null,
+  "physicalFit": null,
+  "qualifiedClearance": null,
+  "qualifiedStrength": null,
+  "steps": [
+    {
+      "id": "11-mount-v002-01",
+      "goal": "載入已檢查牙條",
+      "operation": "開啟小盒和上蓋原檔的複本；示範以程式載入已完成的 Thread_Core 物件，顯示盒體與上蓋，選取牙條。",
+      "context": "程式只載入既有物件、不重新生成牙條；不是 GUI Append 教學。",
+      "visibleConfirmation": "Outliner 顯示 Body、Lid 與 Thread_Core；牙條此時位於盒內，可能被盒體遮住。",
+      "programReadback": "程式讀回牙條 Z 約 -0.1～4.7 mm；盒體外框 60 × 40 × 30 mm，蓋子 Z 11～17 mm。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-external-thread-mount-gui-v002/MNT-01-appended.png",
+        "sha256": "892889c550b761fae0206aa8acfa9fd4717d6084b7aff8fe67c24105dfefb6f8"
+      }
+    },
+    {
+      "id": "11-mount-v002-02",
+      "goal": "轉向盒側",
+      "operation": "在 3D 視窗對牙條按 R、Y、90、Enter，將原本 Z 軸牙條轉至 X 軸。",
+      "context": "先確認 Thread_Core 被選中；旋轉是繞物件原點。",
+      "visibleConfirmation": "畫面以盒體為主，牙條可能被遮擋，不能僅憑畫面確認完整旋轉。",
+      "programReadback": "程式讀回牙條 X 約 -2.4～2.4 mm，原點 Z 仍約 2.3 mm。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-external-thread-mount-gui-v002/MNT-02-rotated.png",
+        "sha256": "a7b21f9fb910e156905b4a2206657ef0676aeb48dd7e558e36b014424e1b187f"
+      }
+    },
+    {
+      "goal": "調整牙條繞軸相位",
+      "operation": "在轉向後的牙條上按 R、X、11.25、Enter，繞世界 X 軸調整牙條相位。",
+      "context": "先完成繞 Y 旋轉 90°；X 軸是此時牙條的軸向。這會改變牙條與盒壁的相對角位置。",
+      "visibleConfirmation": "牙條仍可能被盒體遮住，無法僅憑此圖準確量角。",
+      "programReadback": "重開後獨立讀回物件旋轉矩陣，與 X 11.25°、Y 90° 的預期矩陣最大差約 1.14×10⁻⁷。",
+      "id": "11-mount-v002-03",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-external-thread-mount-gui-v002/MNT-03-phase.png",
+        "sha256": "b32c5e8be0b5c8df90da8cfa997d238ad7342696b2eed977f8287b924945aa3b"
+      }
+    },
+    {
+      "id": "11-mount-v002-04",
+      "goal": "移動到右側外壁",
+      "operation": "對牙條依序輸入 G X 31.9 mm、G Z -2.3 mm。",
+      "context": "沿用前一步旋轉的原點；名義根部需與盒壁重疊，而不是只相切。",
+      "visibleConfirmation": "右側外壁可見牙條；畫面無法精確判斷嵌入深度。",
+      "programReadback": "世界座標讀回牙條 X 約 29.5～34.3 mm、Y/Z 均約 ±6 mm；與外壁 X=30 有約 0.5 mm 重疊。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-external-thread-mount-gui-v002/MNT-04-placed.png",
+        "sha256": "cfb4189d665e2cb7204fe42a3535a750cfa73deca85a1ab6b400133601b21021"
+      }
+    },
+    {
+      "id": "11-mount-v002-05",
+      "goal": "檢查布林工具欄",
+      "operation": "選中 Body，F3 搜尋 Add Boolean Modifier，選 Union、Exact，嘗試指定 Thread_Core。",
+      "context": "Outliner 必須選盒體 Body，不是選上蓋或牙條。",
+      "visibleConfirmation": "修改器 Object 欄仍空白，為保留的第一次失敗畫面。",
+      "programReadback": "程式讀回 UNION、EXACT，但 operand 為空；不可在此時套用。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-external-thread-mount-gui-v002/MNT-05-assignment-probe.png",
+        "sha256": "ff815a3befc572ef9c74dfce79483fb04d834f6ccf7cac0604ef805d478fb1dd"
+      }
+    },
+    {
+      "id": "11-mount-v002-06",
+      "goal": "選擇牙條工具",
+      "operation": "在 Object 欄位搜尋 Thread_Core，從候選清單點選。",
+      "context": "接續上一步；輸入文字後必須確認選取生效。",
+      "visibleConfirmation": "修改器 Object 欄顯示工具名稱，視欄寬可能截斷。",
+      "programReadback": "程式讀回 operation UNION、solver EXACT、operand Thread_Core。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-external-thread-mount-gui-v002/MNT-06-preview.png",
+        "sha256": "bd090f4b7a134d343ef6163fd4e38383c578b543115491a7cef7c944ba373d06"
+      }
+    },
+    {
+      "id": "11-mount-v002-07",
+      "goal": "隱藏工具",
+      "operation": "在 Outliner 的 Thread_Core 旁點眼睛，保留工具資料並觀察布林預覽。",
+      "context": "先確認修改器物件欄正確；座標以自己的 Blender 版面為準。",
+      "visibleConfirmation": "工具顯示為隱藏，盒體上的牙條預覽仍可見。",
+      "programReadback": "劇本以 hide_get() 確認工具被隱藏；不代表工具被刪除。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-external-thread-mount-gui-v002/MNT-07-operand-hidden.png",
+        "sha256": "1be8129e42baa0710aab3215c9bcd65946907ca9f4c8d9d1d30e468bb97d2af5"
+      }
+    },
+    {
+      "id": "11-mount-v002-08",
+      "goal": "套用布林",
+      "operation": "在 Body 的 Boolean 修改器選單選 Apply，將外牙與盒體合併。",
+      "context": "再次確認 Union、Exact 與工具對象；操作於示範副本。",
+      "visibleConfirmation": "盒側顯示外牙；單張畫面不能證明所有牙面品質。",
+      "programReadback": "程式讀回 712 點、420 面、1 連通體、非流形邊 0；五條盒內壁射線命中 X≈28 mm。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-external-thread-mount-gui-v002/MNT-08-union.png",
+        "sha256": "fbd23ffadd17f71339f169db2dc4e490e61521763ed8af80d6c448fb2b84d66a"
+      }
+    },
+    {
+      "id": "11-mount-v002-09",
+      "goal": "聚焦檢視",
+      "operation": "按 F3 搜尋 Frame Selected，檢視盒側接口與上蓋。",
+      "context": "選中已合併的 Body；牙條為盒側接口，並非螺旋上蓋。",
+      "visibleConfirmation": "畫面可見外側牙條及名義關閉位置的上蓋。",
+      "programReadback": "盒體外框 X 約 -30～34.3 mm，Y ±20 mm、Z ±15 mm。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-external-thread-mount-gui-v002/MNT-09-framed.png",
+        "sha256": "1c2a16c75eb0f3ae758574d8c11e8200b368f0272c5eac980220a2aac37b1b64"
+      }
+    },
+    {
+      "id": "11-mount-v002-10",
+      "goal": "另存草案",
+      "operation": "使用 Save As，另存新版本；示範的檔案路徑與名稱由程式填入。",
+      "context": "保存原始小盒及牙條源檔；新草案仍需實際驗證。",
+      "visibleConfirmation": "另存後畫面為盒側接口，這不是檔案對話框截圖。",
+      "programReadback": "另存場景 SHA-256 見 demonstrationSceneSha256；未執行實體列印或試配。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-external-thread-mount-gui-v002/MNT-10-saved.png",
+        "sha256": "60998d87428c2a29df186f588a6418ad940a71e155eef79ae4de0da79771757a"
+      }
+    },
+    {
+      "id": "11-mount-v002-11",
+      "goal": "重開並獨立檢查",
+      "operation": "重開新場景；另以獨立 Blender 讀取網格、檢查邊界、連通、三角面和 BVH。",
+      "context": "檔案欄位由程式填入，重開後才進行獨立讀值；不更新學員進度。",
+      "visibleConfirmation": "重開後畫面仍有盒體、上蓋與盒側外牙。",
+      "programReadback": "獨立讀回單連通體、非流形邊 0、BVH 候選 0；最小三角高 0.00112596 mm、最短 mesh 邊 0.0146923 mm。細長面仍存在；三角形高不是壁厚，亦非製造或配合合格證明。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-external-thread-mount-gui-v002/MNT-11-reopened.png",
+        "sha256": "caf098369ad2f61910605428352e039d6327ed90d75e556c16a05f3018052a68"
+      }
+    }
+  ]
+}

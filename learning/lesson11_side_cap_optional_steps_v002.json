@@ -1,0 +1,248 @@
+{
+  "schemaVersion": 1,
+  "title": "第 11 章選修：盒側保護蓋的徑向與軸向端隙草案",
+  "sourceSummary": "learning/evidence/08/2026-10-28-side-thread-cap-gui-v001/demo-files/u11_side_thread_cap_draft_v001.blend",
+  "scene": "learning/evidence/08/2026-10-28-side-cap-relief-gui-v001/demo-files/u11_side_thread_cap_draft_v002.blend",
+  "sceneSha256": "d4cb9e6467eebff735443daa405c958c459dbe2f04fce8a8e98df5a4b70ee332",
+  "safeSummary": "learning/evidence/08/2026-10-28-side-cap-relief-gui-v001/safe-summary-v001.json",
+  "safeSummarySha256": "c1b34e73f6532f2a2b3076b07c7403a81e8741359cf9a5fab0af8c0ad7ef3fd3",
+  "scope": "提供本機程式預建起始場景供 GUI 差集跟做；未更新學員進度，預建場景未完成公開資料審查。",
+  "limitations": [
+    "這是盒側保護蓋，既有平面上蓋保留，非螺旋頂蓋。",
+    "軸向端隙 0.2 mm、徑向加 0.2 / 名義直徑差 0.4 mm 都是試驗值，非正式合格公差。",
+    "端面九個軸向射線顯示 X=34.5，這些只覆蓋有限位置；端面直徑內其他局部、實際變形與試配尚未核對。",
+    "relief 僅在 X=34.15–34.5 做差集，會局部修削末端牙；與 v001 的 216 個內壁對應射線比較，41 個差超過 0.0001 mm，最大約 0.00852 mm，可能涉及重三角化，不能宣稱中段網格完全不變。",
+    "正向向外離散 11 姿態布林交集為空，不代表連續旋轉、真實旋合或無自交；反向向外部分姿態有交集。",
+    "最小三角面積約 1.386e-5 mm²；1e-5 的篩選門檻並非合格標準，不能稱無細長面。",
+    "非 ISO 牙型、端牙截斷，材料、製程、列印、量測、試配與強度待定。"
+  ],
+  "physicalPrint": null,
+  "physicalMeasurement": null,
+  "physicalFit": null,
+  "qualifiedClearance": null,
+  "qualifiedStrength": null,
+  "steps": [
+    {
+      "id": "11-side-cap-01",
+      "goal": "準備原牙與試驗刀具",
+      "operation": "以 Blender 開啟本機 thread 起始場景的複本；確認選中 Side_Cap_Blank，Cap_Cutter_020 可見。",
+      "context": "此起始場景的刀具與毛坯由程式準備，不是 GUI 手工繪製；保留原始盒體與上蓋。",
+      "visibleConfirmation": "盒側可見帽體草案，Outliner 可見物件。",
+      "programReadback": "原牙工具相應頂點徑向差約 0.199999–0.2000004 mm，X 最大差約 0.00000382 mm；非全域法向公差。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-side-thread-cap-gui-v001/CAP-01-prepared.png",
+        "sha256": "29005e6df7e3b1479f32569ac4ef0f3fd8869af5799b7190505152dc629f150e"
+      }
+    },
+    {
+      "id": "11-side-cap-02",
+      "goal": "加入差集並確認對象",
+      "operation": "選中 Side_Cap_Blank，在物件模式 F3 搜尋 Add Boolean Modifier；Object 欄嘗試指定 Cap_Cutter_020。",
+      "context": "欄位若只輸入文字而未選清單項目，可能仍是空白。",
+      "visibleConfirmation": "修改器顯示 Difference 與 Exact。",
+      "programReadback": "本畫面以該步實際記錄判定，不假定初次輸入已成功。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-side-thread-cap-gui-v001/CAP-02-operand-probe.png",
+        "sha256": "1d1ef5ac003cdd83faa5bf1fec933919a8ad74192d11c7ab0d3a64f75da49258"
+      }
+    },
+    {
+      "id": "11-side-cap-03",
+      "goal": "確認修改器設定",
+      "operation": "確認 Difference、Exact 及 Object 為 Cap_Cutter_020，尚不要套用。",
+      "context": "切割工具預建且保留相位；材料和實際配合未定。",
+      "visibleConfirmation": "修改器 Object 指向刀具。",
+      "programReadback": "程式讀回 DIFFERENCE、EXACT 及 Cap_Cutter_020。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-side-thread-cap-gui-v001/CAP-03-difference-preview.png",
+        "sha256": "1d1ef5ac003cdd83faa5bf1fec933919a8ad74192d11c7ab0d3a64f75da49258"
+      }
+    },
+    {
+      "id": "11-side-cap-04",
+      "goal": "隱藏切割工具",
+      "operation": "在 Outliner 隱藏 Cap_Cutter_020，保留物件以便追溯。",
+      "context": "僅隱藏、不刪除。",
+      "visibleConfirmation": "切割工具眼睛變成隱藏狀態。",
+      "programReadback": "腳本確認工具隱藏。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-side-thread-cap-gui-v001/CAP-04-cutter-hidden.png",
+        "sha256": "48636f07a7dfc963ba9ec58ad4f9a7697964268c80d5de8ef1173ef51a8a558e"
+      }
+    },
+    {
+      "id": "11-side-cap-05",
+      "goal": "套用內牙差集",
+      "operation": "保持選中帽毛坯，在 Boolean 修改器選單選 Apply。",
+      "context": "先確認 Object 與 Difference，再套用；這只是幾何草案。",
+      "visibleConfirmation": "修改器移除，帽體保留。",
+      "programReadback": "程式讀回 806 頂點、448 面、非流形邊 0；不代表無自交。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-side-thread-cap-gui-v001/CAP-05-difference.png",
+        "sha256": "6a8e263fedef20aa14b7df7d355651f809d68b6b473ade43076d93267eb47b3c"
+      }
+    },
+    {
+      "id": "11-side-cap-06",
+      "goal": "放大觀察帽體",
+      "operation": "選中帽體，F3 搜尋 Frame Selected。",
+      "context": "此畫面從外側看，內部牙型不可由此畫面判定。",
+      "visibleConfirmation": "帽體被放大。",
+      "programReadback": "仍需從開口查看及執行數位抽樣。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-side-thread-cap-gui-v001/CAP-06-framed.png",
+        "sha256": "5bcbb6db1e44cf3189699039791199e8e5fffc0fc86a58b5d0283c1ec83a7f9a"
+      }
+    },
+    {
+      "id": "11-side-cap-07",
+      "goal": "另存零端隙對照版本",
+      "operation": "File > Save As 另存新版本，保留原盒。",
+      "context": "示範由程式填寫路徑及檔名。",
+      "visibleConfirmation": "畫面可見帽體場景。",
+      "programReadback": "這是 v001 零端面間隙對照版本，不是最終端隙版本。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-side-thread-cap-gui-v001/CAP-07-saved.png",
+        "sha256": "c8ec0c63b6107f4d8e2ee040b2e46c1985269eb1a815c089882d62cbbe7122f2"
+      }
+    },
+    {
+      "id": "11-side-cap-08",
+      "goal": "重開零端隙對照版本",
+      "operation": "重新開啟剛存的 v001 場景。",
+      "context": "保留 v001 作對照，牙端與帽內底均約 X=34.3。",
+      "visibleConfirmation": "重開後帽體仍在。",
+      "programReadback": "此版本沒有另外設計軸向端面間隙。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-side-thread-cap-gui-v001/CAP-08-reopened.png",
+        "sha256": "4c5d993124a29c2f35c41173da3b3f666eff6c84cee16cded6cb88c648da49d1"
+      }
+    },
+    {
+      "id": "11-side-cap-09",
+      "goal": "準備端隙刀具",
+      "operation": "以 Blender 開啟本機 relief 起始場景的複本；確認選中 Side_Cap_Blank，A_Relief_Cutter 可見。",
+      "context": "此起始場景基於 v001 已完成內牙，由程式新增端隙圓柱；本機檔尚未完成公開資料審查。",
+      "visibleConfirmation": "場景中保留原帽及 A_Relief_Cutter。",
+      "programReadback": "工具只在末端區間切削；會修削局部牙。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-side-cap-relief-gui-v001/REL-01-prepared.png",
+        "sha256": "2bf26681194cbf075e227534722f733805a5c9d0fa9e1a5c8e4e14b554f55ee4"
+      }
+    },
+    {
+      "id": "11-side-cap-10",
+      "goal": "加入端隙差集",
+      "operation": "選中 Side_Cap_Blank，F3 搜尋 Add Boolean Modifier，嘗試 Object 欄指定 A_Relief_Cutter。",
+      "context": "選清單項後仍須核對實際 Object。",
+      "visibleConfirmation": "修改器顯示 Difference 與 Exact。",
+      "programReadback": "若首次讀回物件為空，需重新選擇。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-side-cap-relief-gui-v001/REL-02-operand-probe.png",
+        "sha256": "22711c041f2de6731450dc71058f7f225efc4eeba0d3249a015275d3428a05c6"
+      }
+    },
+    {
+      "id": "11-side-cap-11",
+      "goal": "確認端隙修改器",
+      "operation": "確認 Difference、Exact，Object 是 A_Relief_Cutter。",
+      "context": "此時仍為預覽。",
+      "visibleConfirmation": "修改器可見目標刀具。",
+      "programReadback": "程式讀回 DIFFERENCE、EXACT 及 A_Relief_Cutter。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-side-cap-relief-gui-v001/REL-03-difference-preview.png",
+        "sha256": "22711c041f2de6731450dc71058f7f225efc4eeba0d3249a015275d3428a05c6"
+      }
+    },
+    {
+      "id": "11-side-cap-12",
+      "goal": "隱藏端隙刀具",
+      "operation": "在 Outliner 隱藏 A_Relief_Cutter，保留資料。",
+      "context": "不刪除刀具。",
+      "visibleConfirmation": "刀具顯示隱藏。",
+      "programReadback": "腳本確認隱藏。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-side-cap-relief-gui-v001/REL-04-cutter-hidden.png",
+        "sha256": "cd7c1398a78dff084b62c6b09da13e1d43735ea979258f0b47f2d38e77f74f53"
+      }
+    },
+    {
+      "id": "11-side-cap-13",
+      "goal": "套用端隙",
+      "operation": "在帽體 Boolean 修改器選單選 Apply。",
+      "context": "圓柱從末端局部去牙；不能說整個有效牙長縮短恰好 0.2 mm。",
+      "visibleConfirmation": "修改器移除，帽體保留。",
+      "programReadback": "中心軸射線至內底 X=34.5；端面九點均讀到該位置。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-side-cap-relief-gui-v001/REL-05-difference.png",
+        "sha256": "5c428da67a9560f22f397cf75f9db4a8c4f8017866a56cdd4e65f27208033637"
+      }
+    },
+    {
+      "id": "11-side-cap-14",
+      "goal": "另存端隙版本",
+      "operation": "另存 v002 為新檔，保留 v001。",
+      "context": "示範由程式填寫檔案視窗路徑與檔名。",
+      "visibleConfirmation": "另存完成可見帽體。",
+      "programReadback": "v002 場景 SHA 見本紀錄。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-side-cap-relief-gui-v001/REL-06-saved.png",
+        "sha256": "04e1cf9ed1b51e244b9b1d9bef51562870720cfa2ca3ed243573aec47044727d"
+      }
+    },
+    {
+      "id": "11-side-cap-15",
+      "goal": "重開端隙版本",
+      "operation": "重開 v002，確認帽體與內底讀值。",
+      "context": "原盒體及平面上蓋維持來源。",
+      "visibleConfirmation": "重開後帽體仍在。",
+      "programReadback": "獨立讀回非流形 0、BVH 候選 0；不能代表無細面或可製造。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-side-cap-relief-gui-v001/REL-07-reopened.png",
+        "sha256": "8db5e797a50ebf5482c3bede9366bd5c062d692289dec1701d6991a31d8ace14"
+      }
+    },
+    {
+      "id": "11-side-cap-16",
+      "goal": "查看開口",
+      "operation": "在獨立視窗暫時隱藏 Body 和 Lid，選帽體並以 Ctrl+數字鍵盤 3 看 −X 方向。",
+      "context": "隱藏僅限暫時檢視；此獨立檢視未另存。",
+      "visibleConfirmation": "可看見朝盒側的帽開口。",
+      "programReadback": "開口視圖本身不能驗證間隙或全部內牙。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-side-cap-relief-inspect-v001/RELV-01-opening.png",
+        "sha256": "d13699bbb3283df9d9cac70aae3613347a855b8e8380a942b7982a8b3d833d08"
+      }
+    },
+    {
+      "id": "11-side-cap-17",
+      "goal": "轉動觀察內牙",
+      "operation": "使用數字鍵盤 2、4 旋轉視角，觀察內部局部牙紋。",
+      "context": "局部畫面不能證明整條牙形或可旋合。",
+      "visibleConfirmation": "可看見部分內牙。",
+      "programReadback": "徑向與軸向試驗值、射線及離散運動檢查均非實印合格。",
+      "screenshot": {
+        "path": "learning/evidence/08/2026-10-28-side-cap-relief-inspect-v001/RELV-02-interior.png",
+        "sha256": "032da2ea8dd60433c1e6a9f1e92d4832d7e1b442c0cf7f95228ca61fd7726edf"
+      }
+    }
+  ],
+  "startingScenes": [
+    {
+      "kind": "thread",
+      "path": "learning/evidence/08/2026-10-28-side-cap-start-scenes-v001/side-cap-thread-start-v001.blend",
+      "sha256": "fca5955405bcb9c6cb84db308aad3cc11bd10ffea989129e109a1981bf279f5e",
+      "audit": "learning/evidence/08/2026-10-28-side-cap-start-scenes-v001/thread-start-audit-v001.json",
+      "auditSha256": "85a81d538f60ad0404d70b2eaeca8d0dca834ff87c51843bb1856eb85f7f8ee9",
+      "privacy": "本機跟做起始檔，尚未完成公開資料審查"
+    },
+    {
+      "kind": "relief",
+      "path": "learning/evidence/08/2026-10-28-side-cap-start-scenes-v001/side-cap-relief-start-v001.blend",
+      "sha256": "54ded1f3f61b3868f85655724b2145ab40ee064867aead75c45c9effeb9126bb",
+      "audit": "learning/evidence/08/2026-10-28-side-cap-start-scenes-v001/relief-start-audit-v001.json",
+      "auditSha256": "0202de599698a82fdfdabf433b73fdc6b529522960652f16132ac7150e3540a4",
+      "privacy": "本機跟做起始檔，尚未完成公開資料審查"
+    }
+  ]
+}

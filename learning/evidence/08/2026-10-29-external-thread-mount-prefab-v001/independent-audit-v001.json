@@ -1,0 +1,93 @@
+{
+  "sceneSha256": "8cba18300231e4e923b07c0890258c8bf7ba943d4d72077519fc40e9d3826b73",
+  "sourceBoxSha256": "ab08f331dcb26c5ffc6c6ca56c7c7f022df96791c4777e37c5f01a964fbed6ff",
+  "sourceThreadSha256": "5a0aea1af13f46e9bff1b14327aa199b6b34f421936fd5a516226fc13072ec04",
+  "exactComparisonToSources": {
+    "Body": {
+      "verts": true,
+      "faces": true,
+      "matrix": true,
+      "location": true,
+      "rotation": true,
+      "scale": true,
+      "vertexCount": 16,
+      "faceCount": 14
+    },
+    "Lid": {
+      "verts": true,
+      "faces": true,
+      "matrix": true,
+      "location": true,
+      "rotation": true,
+      "scale": true,
+      "vertexCount": 24,
+      "faceCount": 22
+    },
+    "Thread_Core": {
+      "verts": true,
+      "faces": true,
+      "matrix": true,
+      "location": true,
+      "rotation": true,
+      "scale": true,
+      "vertexCount": 707,
+      "faceCount": 419
+    }
+  },
+  "priorRunStep1": {
+    "stage": "appended",
+    "threadBounds": [
+      [
+        -6.0,
+        6.0
+      ],
+      [
+        -6.0,
+        6.0
+      ],
+      [
+        -0.09999775886535645,
+        4.699997901916504
+      ]
+    ],
+    "location": [
+      0.0,
+      0.0,
+      2.299999952316284
+    ],
+    "lidBounds": [
+      [
+        -30.0,
+        30.0
+      ],
+      [
+        -20.0,
+        20.0
+      ],
+      [
+        11.0,
+        17.0
+      ]
+    ],
+    "bodyBounds": [
+      [
+        -30.0,
+        30.0
+      ],
+      [
+        -20.0,
+        20.0
+      ],
+      [
+        -15.0,
+        15.0
+      ]
+    ]
+  },
+  "limits": "獨立背景重開；精確比對局部網格索引與矩陣，原版第1步僅有三物件外框與牙條位置可對照，非該歷史場景完整逐點證明。未實印、量測或試配。",
+  "physicalPrint": null,
+  "physicalMeasurement": null,
+  "physicalFit": null,
+  "qualifiedClearance": null,
+  "qualifiedStrength": null
+}

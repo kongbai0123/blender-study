@@ -1,0 +1,20 @@
+{
+  "startSha256": "415cbf110088be7821c445e8f9bd6946880d69fa54b114d4adf780e58c92582a",
+  "resultSha256": "70f6687edc450438d21ada9b61b9295cf24079c64884947b9c4081de88e23462",
+  "startToolFaceVertexFingerprints": {
+    "zz_Boss_Pillars": "03f08b71a27b207af1a5aeeeaa1a0a5f5902298b3f5920d2fba0b0d71d0ba541",
+    "zz_Boss_Ribs_X": "61addc9660ed0bee4579e506ab4802fadd3232197c3d8a9f70920f00d281c2e0",
+    "zz_Boss_Ribs_Y": "2d39f005555fdd208c87ca5422df2a788e65cbbe3ab1da28b3122c990b59ae7e",
+    "zz_Boss_Pilot_Tools": "f0647fe4561e8b64dc5fa233369b60d3da822b1eb391d82d97b627f707cb19de",
+    "zz_Boss_Lid_Tools": "9c44aaff6c51517d6f1260e248e2176154aeacad4ab36fa2f1a519afe07327d5"
+  },
+  "resultToolFaceVertexFingerprints": {
+    "zz_Boss_Pillars": "03f08b71a27b207af1a5aeeeaa1a0a5f5902298b3f5920d2fba0b0d71d0ba541",
+    "zz_Boss_Ribs_X": "61addc9660ed0bee4579e506ab4802fadd3232197c3d8a9f70920f00d281c2e0",
+    "zz_Boss_Ribs_Y": "2d39f005555fdd208c87ca5422df2a788e65cbbe3ab1da28b3122c990b59ae7e",
+    "zz_Boss_Pilot_Tools": "f0647fe4561e8b64dc5fa233369b60d3da822b1eb391d82d97b627f707cb19de",
+    "zz_Boss_Lid_Tools": "9c44aaff6c51517d6f1260e248e2176154aeacad4ab36fa2f1a519afe07327d5"
+  },
+  "allEqual": true,
+  "limit": "Rounded world face vertices; not a material, print or fit check."
+}

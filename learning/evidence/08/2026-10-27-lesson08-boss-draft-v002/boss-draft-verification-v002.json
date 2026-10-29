@@ -1,0 +1,278 @@
+{
+  "schemaVersion": 1,
+  "id": "lesson08-blind-boss-draft-v002",
+  "createdAt": "2026-10-27T13:26:01.854607+08:00",
+  "description": "Standalone closed blind-hole boss draft intended only to discuss geometry with future hardware; separate from box, no chosen fastener.",
+  "method": {
+    "geometry": "programmatic 32-segment mesh, not manual GUI modeling",
+    "viewSaveReopen": "native simulated Blender view controls and file dialog confirmation; file path filled programmatically",
+    "validation": "evaluated mesh and signed volume readback before save, after save and after reopen"
+  },
+  "sourceScene": {
+    "path": "learning/evidence/08/2026-10-25-lesson08-parameters-demo-v001/demo-files/u08_thread_reference_v001.blend",
+    "bytes": 97955,
+    "sha256": "9bda36c10fd916ef9cbe688f5ca56dcf8cfa0adb83d684300e60196225589d8f"
+  },
+  "outputScene": {
+    "path": "learning/evidence/08/2026-10-27-lesson08-boss-draft-v002/demo-files/u08_blind_boss_draft_v001.blend",
+    "bytes": 102539,
+    "sha256": "4df306ac6b7e3f57108cb0221fad62480ca47c80f77d5ccd3e91632a6d5c7320"
+  },
+  "screenshots": [
+    {
+      "path": "learning/evidence/08/2026-10-27-lesson08-boss-draft-v002/08-04-01-boss-draft.png",
+      "bytes": 160889,
+      "sha256": "73f87e8383b44db72ef06401537a653f74b742d0b413f3a4dcc4916a534787cf"
+    },
+    {
+      "path": "learning/evidence/08/2026-10-27-lesson08-boss-draft-v002/08-04-02-saved.png",
+      "bytes": 165172,
+      "sha256": "2d26b28a85c10822c74620625540115057f3bd66cbc615111ca0577a1f6962f1"
+    },
+    {
+      "path": "learning/evidence/08/2026-10-27-lesson08-boss-draft-v002/08-04-03-reopened.png",
+      "bytes": 160721,
+      "sha256": "98a98a08f6e3f0e72ca315d7ef7701182ae3203038eeafa27870c3c3dac82c66"
+    }
+  ],
+  "checks": [
+    {
+      "label": "before-save",
+      "checks": {
+        "outerBounds": true,
+        "holeBounds": true,
+        "closed": true,
+        "positiveVolume": true,
+        "polygonVolume": true,
+        "sourceReferenceExists": true,
+        "separateNotJoined": true
+      },
+      "measured": {
+        "label": "before-save",
+        "outerBounds": [
+          [
+            -4.0,
+            4.0
+          ],
+          [
+            -4.0,
+            4.0
+          ],
+          [
+            0.0,
+            8.0
+          ]
+        ],
+        "holeBounds": [
+          [
+            -2.0,
+            2.0
+          ],
+          [
+            -2.0,
+            2.0
+          ],
+          [
+            1.0,
+            8.0
+          ]
+        ],
+        "vertices": 128,
+        "faces": 98,
+        "nonManifoldEdges": 0,
+        "signedVolumeMm3": 312.14450376668685,
+        "segments": 32,
+        "outerVertexDiameterMm": 8,
+        "holeVertexDiameterMm": 4,
+        "outerFlatToFlatMm": 7.961477813377575,
+        "holeFlatToFlatMm": 3.9807389066887877,
+        "bottomMm": 1,
+        "holeDepthMm": 7,
+        "mechanicalHardware": null,
+        "physicalFit": null,
+        "qualifiedHoleDiameter": null,
+        "sourceSceneSha256": "9bda36c10fd916ef9cbe688f5ca56dcf8cfa0adb83d684300e60196225589d8f",
+        "standaloneNotJoinedToBox": true,
+        "checks": {
+          "outerBounds": true,
+          "holeBounds": true,
+          "closed": true,
+          "positiveVolume": true,
+          "polygonVolume": true,
+          "sourceReferenceExists": true,
+          "separateNotJoined": true
+        }
+      },
+      "file": {
+        "path": "learning/evidence/08/2026-10-27-lesson08-boss-draft-v002/before-save-verification.json",
+        "bytes": 1055,
+        "sha256": "ea731159e980aa13df75a7b367dd9e6e3c8737645148b8c4dda92367c77be9e1"
+      }
+    },
+    {
+      "label": "saved",
+      "checks": {
+        "outerBounds": true,
+        "holeBounds": true,
+        "closed": true,
+        "positiveVolume": true,
+        "polygonVolume": true,
+        "sourceReferenceExists": true,
+        "separateNotJoined": true
+      },
+      "measured": {
+        "label": "saved",
+        "outerBounds": [
+          [
+            -4.0,
+            4.0
+          ],
+          [
+            -4.0,
+            4.0
+          ],
+          [
+            0.0,
+            8.0
+          ]
+        ],
+        "holeBounds": [
+          [
+            -2.0,
+            2.0
+          ],
+          [
+            -2.0,
+            2.0
+          ],
+          [
+            1.0,
+            8.0
+          ]
+        ],
+        "vertices": 128,
+        "faces": 98,
+        "nonManifoldEdges": 0,
+        "signedVolumeMm3": 312.14450376668685,
+        "segments": 32,
+        "outerVertexDiameterMm": 8,
+        "holeVertexDiameterMm": 4,
+        "outerFlatToFlatMm": 7.961477813377575,
+        "holeFlatToFlatMm": 3.9807389066887877,
+        "bottomMm": 1,
+        "holeDepthMm": 7,
+        "mechanicalHardware": null,
+        "physicalFit": null,
+        "qualifiedHoleDiameter": null,
+        "sourceSceneSha256": "9bda36c10fd916ef9cbe688f5ca56dcf8cfa0adb83d684300e60196225589d8f",
+        "standaloneNotJoinedToBox": true,
+        "checks": {
+          "outerBounds": true,
+          "holeBounds": true,
+          "closed": true,
+          "positiveVolume": true,
+          "polygonVolume": true,
+          "sourceReferenceExists": true,
+          "separateNotJoined": true
+        }
+      },
+      "file": {
+        "path": "learning/evidence/08/2026-10-27-lesson08-boss-draft-v002/saved-verification.json",
+        "bytes": 1049,
+        "sha256": "b622a1b89fc877d3c93a674d251e69f9fc41973ed2a71dbbb294eebbf20cd3b3"
+      }
+    },
+    {
+      "label": "reopened",
+      "checks": {
+        "outerBounds": true,
+        "holeBounds": true,
+        "closed": true,
+        "positiveVolume": true,
+        "polygonVolume": true,
+        "sourceReferenceExists": true,
+        "separateNotJoined": true
+      },
+      "measured": {
+        "label": "reopened",
+        "outerBounds": [
+          [
+            -4.0,
+            4.0
+          ],
+          [
+            -4.0,
+            4.0
+          ],
+          [
+            0.0,
+            8.0
+          ]
+        ],
+        "holeBounds": [
+          [
+            -2.0,
+            2.0
+          ],
+          [
+            -2.0,
+            2.0
+          ],
+          [
+            1.0,
+            8.0
+          ]
+        ],
+        "vertices": 128,
+        "faces": 98,
+        "nonManifoldEdges": 0,
+        "signedVolumeMm3": 312.14450376668685,
+        "segments": 32,
+        "outerVertexDiameterMm": 8,
+        "holeVertexDiameterMm": 4,
+        "outerFlatToFlatMm": 7.961477813377575,
+        "holeFlatToFlatMm": 3.9807389066887877,
+        "bottomMm": 1,
+        "holeDepthMm": 7,
+        "mechanicalHardware": null,
+        "physicalFit": null,
+        "qualifiedHoleDiameter": null,
+        "sourceSceneSha256": "9bda36c10fd916ef9cbe688f5ca56dcf8cfa0adb83d684300e60196225589d8f",
+        "standaloneNotJoinedToBox": true,
+        "checks": {
+          "outerBounds": true,
+          "holeBounds": true,
+          "closed": true,
+          "positiveVolume": true,
+          "polygonVolume": true,
+          "sourceReferenceExists": true,
+          "separateNotJoined": true
+        }
+      },
+      "file": {
+        "path": "learning/evidence/08/2026-10-27-lesson08-boss-draft-v002/reopened-verification.json",
+        "bytes": 1052,
+        "sha256": "dfaf3e268a03772828127507707fab601b3728d0620f2e4ea53916a6a0a0e272"
+      }
+    }
+  ],
+  "runner": {
+    "status": "completed",
+    "exitCode": 0,
+    "runErrors": [],
+    "workspaceContentsUnchanged": true,
+    "comparisonScope": "workspace endpoint snapshots only"
+  },
+  "limitations": [
+    "No selected hardware, thread, hole fit, self-tapping, heat-set insert, torque, strength, print, or installation recommendation.",
+    "32-sided polygon: vertex-to-vertex outer and bore diameters are 8 and 4 mm; opposing-flat dimensions are smaller.",
+    "Pillar is independent and not unioned to the reference box; wall and fixing interactions are not modeled.",
+    "Blind hole bottom and exact dimensions are obtained from numerical mesh checks, not claimed from screenshot alone.",
+    "The geometry is programmatically constructed, not a completed manual GUI modeling tutorial.",
+    "Earlier v001 kept: object top cropped in screenshot, numeric checks passed."
+  ],
+  "physicalMeasurements": null,
+  "fitResults": null,
+  "qualifiedHoleDiameterMm": null,
+  "strengthQualified": null
+}
