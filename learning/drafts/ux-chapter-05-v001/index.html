@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>第 05 章小節頁草稿</title>
+<style>
+:root{--page:#f5f5f2;--surface:#fff;--ink:#1d3447;--muted:#627381;--line:#dfe5e7;--navy:#223b50;--accent:#bd541b;--orange:#eb7a35;--tint:#fff1e6;--green:#2f705d;--warn:#8a5a12;--warn-tint:#fdf5e4;--radius:14px;
+  font-family:"Microsoft JhengHei","Noto Sans TC",system-ui,sans-serif;color:var(--ink);background:var(--page);line-height:1.7}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth;scroll-padding-top:62px}
+body{margin:0;font-size:15px}
+button{font:inherit;color:inherit;cursor:pointer}
+a{color:var(--accent)}
+:focus-visible{outline:3px solid #f29b5c;outline-offset:2px}
+code{font-family:Consolas,monospace;font-size:.9em;background:#f1f3f4;padding:1px 5px;border-radius:4px;overflow-wrap:anywhere}
+kbd{display:inline-block;min-width:1.9em;padding:1px 7px;border:1px solid #c4d0d6;border-bottom-width:3px;border-radius:6px;background:#fff;font-family:Consolas,"Microsoft JhengHei",monospace;font-size:13px;text-align:center;line-height:1.5}
+.wrap{max-width:1440px;margin:0 auto;padding:0 24px}
+
+/* 頂部：章節欄開關＋麵包屑 */
+.top{position:sticky;top:0;z-index:15;height:var(--top-h);background:rgba(255,255,255,.97);border-bottom:1px solid var(--line);backdrop-filter:blur(6px)}
+.top-row{display:flex;align-items:center;gap:14px;height:100%;padding:0 20px}
+.nav-toggle{display:flex;align-items:center;gap:6px;border:1px solid var(--line);background:#fff;border-radius:8px;padding:3px 11px;font-size:14px}
+.nav-toggle:hover{border-color:var(--accent);color:var(--accent)}
+.crumb{color:var(--muted);font-size:14px;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.crumb b{color:var(--ink)}
+.badge{font-size:12px;padding:1px 9px;border-radius:99px;background:var(--warn-tint);color:var(--warn);border:1px solid #efd9a8;white-space:nowrap}
+
+/* 左側章節欄：沿用現行教學頁的章節樹，可隱藏 */
+:root{--top-h:50px;--nav-w:260px}
+.layout{display:grid;grid-template-columns:var(--nav-w) minmax(0,1fr)}
+/* 收合後只留編號：0、1、1.1 … 2、3 */
+:root{--rail-w:64px}
+.rail{display:none;list-style:none;margin:0;padding:0;text-align:center}
+.rail a{display:block;margin:2px 0;padding:4px 0;border-radius:8px;text-decoration:none;font-size:13px;color:var(--muted)}
+.rail a:hover{background:#e4e9eb;color:var(--ink)}
+.rail .r-ch{font-weight:700;font-size:15px;color:var(--ink)}
+.rail .r-ch.current{color:var(--accent);background:var(--tint)}
+.rail .r-sec[aria-current="page"]{background:var(--accent);color:#fff;font-weight:700}
+body.nav-hidden .layout{grid-template-columns:var(--rail-w) minmax(0,1fr)}
+body.nav-hidden .course-nav{padding:12px 6px 30px}
+body.nav-hidden .course-nav>:not(.rail){display:none}
+body.nav-hidden .rail{display:block}
+.course-nav{position:sticky;top:var(--top-h);height:calc(100vh - var(--top-h));overflow-y:auto;background:#eef1f2;border-right:1px solid var(--line);padding:18px 12px 30px;scrollbar-width:thin}
+.nav-kicker{font-size:12px;font-weight:700;color:var(--accent);margin:0 6px}
+.nav-title{font-size:22px;font-weight:700;margin:2px 6px 0}
+.nav-title small{font-size:13px;font-weight:400;color:var(--muted);margin-left:6px}
+.nav-total{font-size:12px;color:var(--muted);margin:0 6px 14px}
+.ch{margin-bottom:4px}
+.ch-btn{display:grid;grid-template-columns:30px 1fr;width:100%;text-align:left;border:1px solid transparent;background:none;border-radius:12px;padding:8px 8px}
+.ch-btn:hover{background:#e4e9eb}
+.ch.current>.ch-btn{background:var(--tint);border-color:#f2c9a8}
+.ch-num{color:var(--accent);font-weight:700;font-size:13px;padding-top:2px}
+.ch-name{font-weight:700;font-size:14px;line-height:1.5}
+.ch-sub{display:block;font-weight:400;font-size:12px;color:var(--muted)}
+.sec-list{list-style:none;margin:4px 0 8px;padding:0}
+.sec-list a{display:grid;grid-template-columns:44px 1fr auto;gap:4px;padding:5px 8px 5px 14px;border-radius:8px;text-decoration:none;color:var(--ink);font-size:13px;line-height:1.5}
+.sec-list a:hover{background:#e4e9eb}
+.sec-list .sid{color:var(--muted)}
+.sec-list .cnt{color:var(--muted);font-size:12px;padding-left:6px}
+.sec-list a[aria-current="page"]{background:var(--tint);color:var(--accent);font-weight:700}
+.nav-backdrop{display:none}
+@media (max-width:1099px){
+  .layout{grid-template-columns:minmax(0,1fr)}
+  .course-nav{position:fixed;left:0;top:var(--top-h);z-index:12;width:min(300px,86vw);box-shadow:4px 0 18px rgba(0,0,0,.15)}
+  body:not(.nav-open) .course-nav{display:none}
+  body.nav-open .nav-backdrop{display:block;position:fixed;inset:var(--top-h) 0 0 0;background:rgba(20,30,40,.3);z-index:11}
+}
+
+/* 重點 */
+.keypoint{margin:18px 0 12px;display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px}
+.keypoint h1{margin:0;font-size:22px}
+.keypoint p{margin:0;font-size:16px;font-weight:700;color:var(--navy)}
+.terms{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-bottom:6px}
+.terms .label{margin:0 4px 0 0}
+.term-chip{border:1px solid var(--line);background:var(--surface);border-radius:99px;padding:1px 11px;font-size:13px}
+.term-chip:hover,.term-chip[aria-expanded="true"]{border-color:var(--accent);background:var(--tint)}
+.term-def{margin:6px 0 0;padding:8px 14px;background:var(--tint);border-radius:10px;font-size:14px}
+.scope{font-size:12px;color:var(--muted);margin:4px 0 14px}
+
+/* 小步目錄：本節所有小步都在同一頁，點了直接捲過去 */
+.toc{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.toc a{display:flex;align-items:center;gap:8px;text-decoration:none;color:var(--ink);border:1px solid var(--line);background:var(--surface);border-radius:10px;padding:5px 12px;font-size:14px}
+.toc a:hover{border-color:var(--accent)}
+.dot{width:22px;height:22px;border-radius:50%;display:grid;place-items:center;font-size:11px;font-weight:700;background:var(--accent);color:#fff;flex:none}
+.dot.prep{background:#7a8a96;font-size:10px}
+
+/* 每個小步一張卡：左文字、右原圖 */
+.step{display:grid;grid-template-columns:minmax(330px,400px) minmax(0,1fr);gap:0;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);margin-bottom:16px;overflow:hidden}
+.step>*{min-width:0}
+.text{padding:18px 22px;border-right:1px solid var(--line)}
+.step-head{display:flex;align-items:center;gap:10px;margin-bottom:6px}
+.step-head h2{margin:0;font-size:18px}
+.lead{font-weight:700;color:var(--navy);margin:0 0 10px}
+.actions{margin:0 0 12px;padding-left:22px}
+.actions li{margin-bottom:6px}
+.label{font-size:12px;font-weight:700;letter-spacing:.05em;color:var(--accent);margin:12px 0 4px}
+.see{list-style:none;margin:0;padding:0}
+.see li{position:relative;padding-left:22px;margin-bottom:3px}
+.see li::before{content:"✓";position:absolute;left:2px;color:var(--green);font-weight:700}
+.pitfall{border-left:3px solid #e6b45c;background:var(--warn-tint);border-radius:0 8px 8px 0;padding:6px 12px;margin-bottom:6px;font-size:14px}
+.pitfall b{color:var(--warn)}
+details.more{margin-top:10px;border-top:1px dashed var(--line);padding-top:8px;font-size:14px}
+details.more summary{cursor:pointer;color:var(--muted)}
+details.more[open] summary{margin-bottom:6px}
+.alt{background:#f7f9fa;border-radius:10px;padding:10px 12px;margin-bottom:8px}
+.alt .mini{margin-top:8px}
+.source{font-size:12px;color:var(--muted);word-break:break-all}
+.source ul{padding-left:18px;margin:4px 0}
+.term{border-bottom:1px dotted var(--accent);cursor:help}
+
+/* 原圖 */
+.figure{padding:14px;background:#fbfbfa}
+.fig-tabs{display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap;align-items:center}
+.fig-tabs button{border:1px solid var(--line);background:#fff;border-radius:8px;padding:3px 12px;font-size:14px}
+.fig-tabs button[aria-selected="true"]{background:var(--navy);color:#fff;border-color:var(--navy)}
+.fig-tabs .arrow{color:var(--muted)}
+.shot{position:relative;border-radius:8px;overflow:hidden;background:#222;cursor:zoom-in;line-height:0}
+.shot img{width:100%;height:auto;display:block}
+.mark{position:absolute;border:3px solid var(--orange);border-radius:5px;box-shadow:0 0 0 2px rgba(0,0,0,.35);pointer-events:none}
+.mark span{position:absolute;z-index:2;left:-13px;top:-13px;width:22px;height:22px;border-radius:50%;background:var(--orange);color:#fff;font:700 12px/22px system-ui;text-align:center;box-shadow:0 1px 3px rgba(0,0,0,.4)}
+.mark.below span{top:50%;left:auto;right:-28px;transform:translateY(-50%)}
+.mark.hot{box-shadow:0 0 0 2px rgba(0,0,0,.35),0 0 0 9999px rgba(0,0,0,.35)}
+.legend{display:flex;flex-wrap:wrap;gap:4px 16px;margin:8px 2px 0;padding:0;list-style:none;font-size:14px}
+.legend li{display:flex;align-items:center;gap:6px}
+.legend .n{width:20px;height:20px;border-radius:50%;background:var(--orange);color:#fff;font:700 11px/20px system-ui;text-align:center}
+.caption{font-size:13px;color:var(--muted);margin:4px 2px 0}
+
+/* 節尾：前後節 */
+.pager{display:flex;justify-content:space-between;gap:12px;margin:8px 0 40px;flex-wrap:wrap}
+.pager a{flex:1 1 260px;text-decoration:none;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:10px 16px;color:var(--ink)}
+.pager a:hover{border-color:var(--accent)}
+.pager small{display:block;color:var(--muted)}
+.pager .next{text-align:right}
+
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:var(--navy);color:#fff;padding:8px 18px;border-radius:10px;font-size:14px;z-index:20}
+
+/* 放大檢視 */
+.lightbox{position:fixed;inset:0;background:rgba(10,16,22,.92);z-index:30;display:flex;flex-direction:column}
+.lb-top{display:flex;gap:12px;align-items:center;padding:10px 16px;color:#e7edf0;font-size:14px;flex-wrap:wrap}
+.lb-top .spacer{flex:1}
+.lb-top button,.lb-top a{background:#2a3843;color:#fff;border:1px solid #415260;border-radius:8px;padding:4px 12px;text-decoration:none;font-size:14px}
+.lb-body{flex:1;overflow:auto;display:flex;justify-content:center;align-items:flex-start;padding:0 16px 16px}
+.lb-body .shot{cursor:default;width:min(100%,1494px);flex:none}
+.lightbox.bare .mark{display:none}
+
+@media (max-width:1099px){
+  .step{grid-template-columns:minmax(0,1fr)}
+  .text{border-right:none;border-top:1px solid var(--line)}
+  .figure{order:-1}
+}
+@media (max-width:640px){
+  .wrap{padding:0 14px}
+  .badge{display:none}
+  .keypoint h1{font-size:19px}
+  .text{padding:14px 16px}
+}
+
+.empty-state{padding:22px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);margin-bottom:16px}
+.empty-state h2{margin:0 0 6px;font-size:20px}
+.empty-state p{margin:4px 0}
+.no-figure{color:var(--muted);padding:24px;text-align:center;display:grid;place-content:center;min-height:180px}
+#lesson-main{width:100%;min-width:0;outline:none}
+.nav-total small{display:block}
+@media(max-width:1099px){
+ body.nav-hidden .layout{grid-template-columns:minmax(0,1fr)}
+ body.nav-hidden .course-nav{padding:18px 12px 30px}
+ body.nav-hidden .course-nav>:not(.rail){display:revert}
+ body.nav-hidden .course-nav>.rail{display:none}
+}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="top-row">
+    <button class="nav-toggle" id="nav-toggle" aria-controls="course-nav"></button>
+    <div class="crumb">第 <span id="ch-num"></span> 章 <span id="ch-title"></span> › <b id="sec-title"></b></div>
+    <span class="badge">版面樣稿：不寫入學習進度</span>
+  </div>
+</header>
+
+<div class="layout">
+<nav class="course-nav" id="course-nav" aria-label="章節">
+  <div class="nav-kicker">主要教學章節</div>
+  <div class="nav-title">工程學習<small id="nav-count"></small></div>
+  <div class="nav-total" id="nav-total"></div>
+  <div id="chapters"></div>
+  <ul class="rail" id="rail" aria-label="章節編號"></ul>
+</nav>
+<div class="nav-backdrop" id="nav-backdrop"></div>
+
+<main class="wrap" id="lesson-main" tabindex="-1">
+  <section class="keypoint">
+    <h1 id="title"></h1>
+    <p id="key"></p>
+  </section>
+  <div class="terms" id="terms"><span class="label">名詞</span></div>
+  <div class="term-def" id="term-def" hidden></div>
+  <p class="scope" id="scope"></p>
+
+  <nav class="toc" id="toc" aria-label="本節小步"></nav>
+  <div id="steps"></div>
+  <nav class="pager" id="pager"></nav>
+</main>
+</div>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lb-caption" hidden>
+  <div class="lb-top">
+    <span id="lb-caption"></span>
+    <div class="spacer"></div>
+    <button id="lb-toggle">隱藏標註</button>
+    <a id="lb-raw" target="_blank" rel="noopener">開啟原始圖檔</a>
+    <button id="lb-close">關閉（Esc）</button>
+  </div>
+  <div class="lb-body" id="lb-body"></div>
+</div>
+<div class="toast" id="toast" role="status" hidden></div>
+
+<script src="course-outline.js"></script>
+<script src="sections/05-01.js"></script>
+<script src="sections/05-02.js"></script>
+<script>
+
+(() => {
+  "use strict";
+  const O = window.OUTLINE;
+  const C = O.chapters.find(c => c.id === "ch05");
+  const EVIDENCE_BASE = "../../";
+  const $ = id => document.getElementById(id);
+  const escape = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;" }[c]));
+  const STORE = "ux-chapter-01-v001:";
+  const read = key => { try { return localStorage.getItem(STORE + key); } catch { return null; } };
+  const write = (key, value) => { try { localStorage.setItem(STORE + key, value); } catch {} };
+  const narrow = matchMedia("(max-width:1099px)");
+  let S, currentId, toastTimer, previousFocus;
+  let savedOpen;
+  try { savedOpen = JSON.parse(read("expanded-chapters")); } catch {}
+  const expanded = new Set(Array.isArray(savedOpen) ? savedOpen.filter(id => O.chapters.some(c => c.id === id)) : [C.id]);
+  if (read("nav-hidden") === "1") document.body.classList.add("nav-hidden");
+  const shortId = id => id.split("-").map(Number).join(".");
+  const first = C.sections[0].id;
+  function toast(text) {
+    $("toast").textContent = text;
+    $("toast").hidden = false;
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => { $("toast").hidden = true; }, 2600);
+  }
+  function syncToggle() {
+    const shown = narrow.matches ? document.body.classList.contains("nav-open") : !document.body.classList.contains("nav-hidden");
+    $("nav-toggle").textContent = shown ? "« 收合章節" : "☰ 展開章節";
+    $("nav-toggle").setAttribute("aria-expanded", String(shown));
+  }
+  function closeDrawer() { document.body.classList.remove("nav-open"); syncToggle(); }
+  $("nav-toggle").onclick = () => {
+    if (narrow.matches) document.body.classList.toggle("nav-open");
+    else write("nav-hidden", document.body.classList.toggle("nav-hidden") ? "1" : "0");
+    syncToggle();
+  };
+  $("nav-backdrop").onclick = closeDrawer;
+  narrow.addEventListener("change", closeDrawer);
+  syncToggle();
+  function toggleChapter(id) {
+    expanded.has(id) ? expanded.delete(id) : expanded.add(id);
+    write("expanded-chapters", JSON.stringify([...expanded]));
+    renderNavigation();
+  }
+  function sectionLink(a, chapterId, sectionId) {
+    a.href = "#" + (chapterId === "ch00" ? currentId : sectionId);
+    a.onclick = e => {
+      if (chapterId === "ch00") {
+        e.preventDefault();
+        toast("第 00 章速查沿用正式教材，本輪草稿未改版。");
+        return;
+      }
+      if (chapterId !== C.id) {
+        e.preventDefault();
+        location.href = "../ux-chapter-" + chapterId.slice(2) + "-v001/index.html#" + sectionId;
+      } else {
+        closeDrawer();
+        if (currentId === sectionId) {
+          e.preventDefault();
+          window.scrollTo({ top:0, behavior:"smooth" });
+        }
+      }
+    };
+  }
+  function renderNavigation() {
+    $("nav-count").textContent = O.chapters.length + " 章";
+    $("nav-total").textContent = "0 / " + O.mainSteps + " 小步已確認";
+    $("nav-total").insertAdjacentHTML("beforeend","<small>草稿顯示值，未連接學習進度</small>");
+    $("chapters").replaceChildren();
+    const rail = $("rail"); rail.replaceChildren();
+    O.chapters.forEach(c => {
+      const current = c.id === C.id;
+      const open = expanded.has(c.id);
+      const wrap = document.createElement("div");
+      wrap.className = "ch" + (current ? " current" : "");
+      const sub = c.reference ? "速查：不需確認，不計入進度" : "0 / " + c.steps + " 小步已確認";
+      wrap.innerHTML = '<button class="ch-btn" aria-expanded="' + open + '"><span class="ch-num">' + escape(c.number) +
+        '</span><span class="ch-name">' + escape(c.title) + '<span class="ch-sub">' + escape(sub) + '</span></span></button><ul class="sec-list"></ul>';
+      wrap.querySelector("button").onclick = () => toggleChapter(c.id);
+      const list = wrap.querySelector(".sec-list"); list.hidden = !open;
+      c.sections.forEach(s => {
+        const li = document.createElement("li"), a = document.createElement("a");
+        a.innerHTML = '<span class="sid">' + escape(s.id) + '</span><span>' + escape(s.title) +
+          '</span><span class="cnt">' + (c.reference ? "" : "0/" + s.steps) + '</span>';
+        if (s.id === currentId) a.setAttribute("aria-current","page");
+        sectionLink(a,c.id,s.id); li.append(a); list.append(li);
+      });
+      $("chapters").append(wrap);
+      const head = document.createElement("li"), chapterLink = document.createElement("a");
+      chapterLink.className = "r-ch" + (current ? " current" : "");
+      chapterLink.href = "#" + c.sections[0].id;
+      chapterLink.title = c.number + " " + c.title;
+      chapterLink.textContent = Number(c.number);
+      chapterLink.setAttribute("aria-expanded",String(open));
+      chapterLink.dataset.ch = c.id;
+      chapterLink.onclick = e => { e.preventDefault(); toggleChapter(c.id); };
+      head.append(chapterLink); rail.append(head);
+      if (open) c.sections.forEach(s => {
+        const li = document.createElement("li"), a = document.createElement("a");
+        a.className = "r-sec"; a.title = s.id + " " + s.title; a.textContent = shortId(s.id);
+        if (s.id === currentId) a.setAttribute("aria-current","page");
+        sectionLink(a,c.id,s.id); li.append(a); rail.append(li);
+      });
+    });
+  }
+  function showGlossary(glossary) {
+    $("terms").innerHTML = '<span class="label">名詞</span>';
+    $("terms").hidden = !glossary.length;
+    $("term-def").hidden = true;
+    glossary.forEach(g => {
+      const b = document.createElement("button");
+      b.className = "term-chip"; b.textContent = g.label; b.setAttribute("aria-expanded","false");
+      b.onclick = () => {
+        const open = b.getAttribute("aria-expanded") === "true";
+        document.querySelectorAll(".term-chip").forEach(x => x.setAttribute("aria-expanded","false"));
+        $("term-def").hidden = open;
+        if (!open) {
+          b.setAttribute("aria-expanded","true");
+          $("term-def").textContent = g.label + "：" + g.text;
+        }
+      };
+      $("terms").append(b);
+    });
+  }
+  function linkTerms(root, glossary, seen) {
+    const walker = document.createTreeWalker(root,NodeFilter.SHOW_TEXT,{
+      acceptNode:n => n.parentElement.closest("kbd,.term,h2,b,summary") ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT
+    });
+    const nodes=[]; while(walker.nextNode()) nodes.push(walker.currentNode);
+    nodes.forEach(node => {
+      // Longest matching term first, then continue in the remaining text.
+      const text = node.nodeValue;
+      const matches = glossary.filter(g => !seen.has(g.term) && text.includes(g.term))
+        .map(g => ({g,at:text.indexOf(g.term)})).sort((a,b)=>a.at-b.at || b.g.term.length-a.g.term.length);
+      if (!matches.length) return;
+      const fragment = document.createDocumentFragment(); let offset=0;
+      matches.forEach(({g,at}) => {
+        if (at < offset || seen.has(g.term)) return;
+        fragment.append(document.createTextNode(text.slice(offset,at)));
+        const span = document.createElement("span"); span.className="term";
+        span.title=g.label+"："+g.text; span.textContent=g.term; fragment.append(span);
+        offset=at+g.term.length; seen.add(g.term);
+      });
+      fragment.append(document.createTextNode(text.slice(offset))); node.replaceWith(fragment);
+    });
+  }
+  function shot(fig) {
+    const box=document.createElement("div"); box.className="shot";
+    const [w,h]=fig.size;
+    box.innerHTML='<img src="'+escape(EVIDENCE_BASE+fig.path)+'" alt="'+escape(fig.caption)+'" width="'+w+'" height="'+h+'" loading="eager">' +
+      (fig.marks || []).map(m => {
+        const [x,y,mw,mh]=m.box;
+        return '<div class="mark'+(y<16?' below':'')+'" data-n="'+m.n+'" style="left:'+(x/w*100)+'%;top:'+(y/h*100)+'%;width:'+(mw/w*100)+'%;height:'+(mh/h*100)+'%"><span>'+m.n+'</span></div>';
+      }).join("");
+    box.tabIndex=0; box.setAttribute("role","button"); box.setAttribute("aria-label","放大原圖："+fig.caption); box.title="點一下放大";
+    box.onclick=()=>openLightbox(fig,box);
+    box.onkeydown=e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();openLightbox(fig,box);}};
+    // Lay out numbered badges in rendered pixels, keeping them separated at all widths.
+    const placeBadges=()=>{
+      if(!box.isConnected || !box.clientWidth)return;
+      const frame=box.getBoundingClientRect(),used=[];
+      box.querySelectorAll(".mark").forEach(mark=>{
+        const r=mark.getBoundingClientRect(),span=mark.querySelector("span"),size=22;
+        const candidates=[[r.left-11,r.top-11],[r.right-11,r.top-11],[r.left-11,r.bottom-11],[r.right-11,r.bottom-11]];
+        // Small adjacent fields can clamp every corner to the same point on mobile.
+        // Keep the box fixed; give its numbered badge nearby fallback positions.
+        for(const dx of [24,-24,48,-48,72,-72]) candidates.push([r.left-11+dx,r.top-11]);
+        const bounded=candidates.map(([x,y])=>[Math.max(frame.left+1,Math.min(x,frame.right-size-1)),Math.max(frame.top+1,Math.min(y,frame.bottom-size-1))]);
+        const [x,y]=bounded.find(([x,y])=>used.every(([a,b])=>x+size+2<=a || a+size+2<=x || y+size+2<=b || b+size+2<=y)) || bounded[0];
+        span.style.cssText="left:"+(x-r.left-3)+"px;top:"+(y-r.top-3)+"px;right:auto;transform:none";
+        used.push([x,y]);
+      });
+    };
+    new ResizeObserver(placeBadges).observe(box);
+    return box;
+  }
+  function legend(fig,host) {
+    const ul=document.createElement("ul"); ul.className="legend";
+    (fig.marks || []).forEach(m=>{
+      const li=document.createElement("li"); li.innerHTML='<span class="n">'+m.n+'</span>'+escape(m.label);
+      const mark=()=>host.querySelector('.mark[data-n="'+m.n+'"]');
+      li.onmouseenter=()=>mark()?.classList.add("hot");
+      li.onmouseleave=()=>mark()?.classList.remove("hot");
+      ul.append(li);
+    }); return ul;
+  }
+  function renderFigure(el,figs,k=0,note="本步尚無可用實拍。") {
+    el.replaceChildren();
+    if (!figs.length) {
+      el.innerHTML='<div class="no-figure">'+escape(note)+'</div>';
+      return;
+    }
+    if (figs.length>1) {
+      const tabs=document.createElement("div"); tabs.className="fig-tabs"; tabs.setAttribute("role","tablist");
+      tabs.setAttribute("aria-label","操作原圖序列");
+      figs.forEach((f,j)=>{
+        if(j) tabs.insertAdjacentHTML("beforeend",'<span class="arrow" aria-hidden="true">→</span>');
+        const b=document.createElement("button"); b.setAttribute("role","tab"); b.setAttribute("aria-selected",String(j===k));
+        b.tabIndex=j===k?0:-1; b.textContent=(j+1)+". "+(f.tab || "原圖");
+        b.onclick=()=>{renderFigure(el,figs,j);el.querySelectorAll('[role="tab"]')[j].focus({preventScroll:true});};
+        b.onkeydown=e=>{
+          if(!["ArrowLeft","ArrowRight","Home","End"].includes(e.key)) return;
+          e.preventDefault();
+          const next=e.key==="Home"?0:e.key==="End"?figs.length-1:(j+(e.key==="ArrowRight"?1:-1)+figs.length)%figs.length;
+          renderFigure(el,figs,next);el.querySelectorAll('[role="tab"]')[next].focus({preventScroll:true});
+        };
+        tabs.append(b);
+      }); el.append(tabs);
+    }
+    const s=shot(figs[k]); el.append(s,legend(figs[k],s));
+    const p=document.createElement("p"); p.className="caption";p.textContent=figs[k].caption+"　點圖可放大";el.append(p);
+  }
+  function renderCard(p,number,seen) {
+    const card=document.createElement("section");card.className="step";card.id=p.kind==="prep"?"step-prep":"step-"+number;
+    const badge=p.kind==="prep"?'<span class="dot prep">準備</span>':'<span class="dot">'+number+'</span>';
+    const keys=(p.keys || []).map(k=>'<kbd>'+escape(k)+'</kbd>').join("+");
+    const figs=[p.figure,...(p.figures || []),p.alternative?.figure].filter(Boolean);
+    card.innerHTML='<div class="text"><div class="step-head">'+badge+'<h2>'+escape(p.title)+'</h2></div>' +
+      '<p class="lead">'+escape(p.kind==="prep"?p.summary:p.lead)+(keys?'　'+keys:'')+'</p>' +
+      '<ol class="actions">'+(p.actions || []).map(a=>'<li>'+a+'</li>').join("")+'</ol>' +
+      '<div class="label">做完應該看到</div><ul class="see">'+(p.checks || []).map(c=>'<li>'+c+'</li>').join("")+'</ul>' +
+      ((p.pitfalls || []).length?'<div class="label">常見失誤</div>'+p.pitfalls.map(x=>'<div class="pitfall"><b>'+escape(x.title)+'</b>：'+x.text+'</div>').join(""):'')+
+      (p.locate?'<details class="more"><summary>找不到位置？</summary>'+escape(p.locate)+'</details>':'')+
+      '<details class="more"><summary>'+(p.alternative?'另一種方法、':'')+'示範來源</summary>'+
+      (p.alternative?'<div class="alt"><b>'+escape(p.alternative.title)+'</b><br>'+p.alternative.text+'<div class="mini"></div></div>':'')+
+      ((p.references || []).length?'<ul class="readbacks">'+p.references.map(r=>'<li><a href="'+escape(EVIDENCE_BASE+r.path)+'" target="_blank" rel="noopener">'+escape(r.label)+'</a></li>').join('')+'</ul>':'')+
+      '<div class="source">小步代號 <code>'+escape(p.stepId)+'</code><ul>'+figs.map(f=>'<li>'+escape(f.path)+'<br>SHA-256 '+escape(f.sha256)+'</li>').join("")+'</ul></div></details></div><figure class="figure" style="margin:0"></figure>';
+    $("steps").append(card);
+    renderFigure(card.querySelector(".figure"),p.figure?[p.figure]:(p.figures || []),0,p.figureNote);
+    if(p.alternative?.figure) renderFigure(card.querySelector(".mini"),[p.alternative.figure]);
+    linkTerms(card.querySelector(".text"),S.glossary || [],seen);
+    const a=document.createElement("a");a.href="#"+card.id;
+    a.innerHTML='<span class="dot'+(p.kind==="prep"?' prep':'')+'">'+(p.kind==="prep"?'準備':number)+'</span>'+escape(p.title);
+    a.onclick=e=>{e.preventDefault();card.scrollIntoView({behavior:"smooth",block:"start"});};
+    $("toc").append(a);
+  }
+  function renderPager(section) {
+    const i=C.sections.findIndex(s=>s.id===section?.id);
+    $("pager").replaceChildren(); if(i<0)return;
+    const prev=C.sections[i-1],next=C.sections[i+1];
+    if(!prev) $("pager").append(document.createElement("span"));
+    [prev,next].forEach((s,j)=>{
+      if(!s)return;
+      const a=document.createElement("a"); a.className=j?"next":"prev";
+      a.innerHTML='<small>'+(j?'下一節 →':'← 上一節')+'</small>'+escape(s.id+" "+s.title);
+      sectionLink(a,C.id,s.id);$("pager").append(a);
+    });
+  }
+  function closeLightbox(restore=true) {
+    $("lightbox").hidden=true; $("lb-body").replaceChildren();document.body.style.overflow="";
+    if(restore && previousFocus?.isConnected) previousFocus.focus({preventScroll:true});
+  }
+  function openLightbox(fig,opener) {
+    previousFocus=opener;$("lb-caption").textContent=fig.caption;$("lb-raw").href=EVIDENCE_BASE+fig.path;
+    const s=shot(fig);s.onclick=null;s.onkeydown=null;s.removeAttribute("role");s.removeAttribute("tabindex");s.removeAttribute("aria-label");s.title="";
+    $("lb-body").replaceChildren(s);$("lightbox").classList.remove("bare");$("lb-toggle").textContent="隱藏標註";
+    $("lightbox").hidden=false;document.body.style.overflow="hidden";$("lb-close").focus({preventScroll:true});
+  }
+  $("lb-close").onclick=()=>closeLightbox();
+  $("lb-toggle").onclick=()=>{
+    const bare=$("lightbox").classList.toggle("bare");$("lb-toggle").textContent=bare?"顯示標註":"隱藏標註";
+  };
+  document.addEventListener("keydown",e=>{
+    if(e.key==="Escape") {
+      if(!$("lightbox").hidden)closeLightbox();else if(document.body.classList.contains("nav-open")){closeDrawer();$("nav-toggle").focus();}
+    }
+    if(e.key==="Tab" && !$("lightbox").hidden) {
+      const items=[$("lb-toggle"),$("lb-raw"),$("lb-close")],i=items.indexOf(document.activeElement);
+      if(e.shiftKey && i<=0){e.preventDefault();items.at(-1).focus();}
+      else if(!e.shiftKey && (i<0 || i===items.length-1)){e.preventDefault();items[0].focus();}
+    }
+  });
+  function render() {
+    closeLightbox(false);closeDrawer();clearTimeout(toastTimer);$("toast").hidden=true;
+    currentId=location.hash.slice(1) || first;
+    const section=C.sections.find(s=>s.id===currentId);
+    S=section && window.SECTIONS?.[currentId];
+    $("ch-num").textContent=C.number;$("ch-title").textContent=C.title;
+    const title=section?section.id+" "+section.title:"找不到這個小節";
+    $("sec-title").textContent=title;$("title").textContent=title;document.title=title+"（小節頁草稿）";
+    $("key").textContent=S?.keyPoint || ""; $("scope").textContent=S?.scope?"ⓘ "+S.scope:"";
+    $("scope").hidden=!S?.scope;showGlossary(S?.glossary || []);
+    $("toc").replaceChildren();$("steps").replaceChildren();
+    if(S) {
+      const seen=new Set();
+      if(S.prep)renderCard({kind:"prep",...S.prep},0,seen);
+      (S.steps || []).forEach((s,i)=>renderCard({kind:"step",...s},i+1,seen));
+    } else {
+      const empty=document.createElement("section");empty.className="empty-state";
+      empty.innerHTML='<h2>'+(section?'本節尚未製作':'找不到這個小節')+'</h2><p>'+
+        (section?'這個小節的資料尚未載入，請返回本章第一節。':'請從左側章節欄選擇本章的小節。')+
+        '</p><p><a href="#'+escape(first)+'">返回本章第一節 →</a></p>';
+      $("steps").append(empty);
+    }
+    renderNavigation();renderPager(section);window.scrollTo({top:0,behavior:"instant"});
+  }
+  window.addEventListener("hashchange",render);
+  render();
+})();
+</script>
+</body>
+</html>

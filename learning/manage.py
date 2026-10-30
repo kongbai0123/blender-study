@@ -20,7 +20,7 @@ PROJECT = LEARNING.parent
 PROGRESS = LEARNING / "progress.json"
 CATALOG = LEARNING / "catalog.json"
 # 新版工程教材只在這裡指定目前版本；伺服器以固定網址提供，網頁不寫版本號。
-ENGINEERING_CURRICULUM = LEARNING / "web" / "engineering-curriculum-v038.json"
+ENGINEERING_CURRICULUM = LEARNING / "web" / "engineering-curriculum-v041.json"
 ENGINEERING_PATH = LEARNING / "web" / "engineering-path-v007.json"
 CHALLENGES = LEARNING / "web" / "challenges" / "challenges-v010.json"
 # 工程章節共用的個人工作區；不屬於原 01～09 單元，登記檔案時以 --workspace 指定。

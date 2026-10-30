@@ -1,35 +1,58 @@
 <!doctype html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="light">
-  <meta name="theme-color" content="#ed7a35">
-  <title>Blender 邊做邊學</title>
-  <link rel="stylesheet" href="/app.css">
-  <script src="/engineering-path.js" defer></script>
-  <script src="/app.js" defer></script>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blender 工程學習</title>
+<link rel="stylesheet" href="/chapter-pages-v001.css">
 </head>
 <body>
-  <a class="skip-link" href="#main-content">跳到本次操作</a>
-  <header class="site-header">
-    <div class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><path d="M10 9l11 8M5 18h14M9 29l11-8" stroke="currentColor" stroke-width="4" stroke-linecap="round"/><ellipse cx="25" cy="20" rx="10" ry="9" stroke="currentColor" stroke-width="4"/><circle cx="25" cy="20" r="4" fill="currentColor"/></svg></div>
-    <div class="brand-copy"><h1>Blender 邊做邊學</h1><p>從第一個場景，到有尺寸的作品</p></div>
-    <div class="header-actions"><span class="local-status" id="connection-status">正在讀取本機進度</span><button type="button" class="button quiet small" data-action="refresh">重新讀取</button><a class="button quiet small" href="/api/export" download>匯出紀錄</a></div>
-  </header>
-  <div id="notice" class="notice" role="status" aria-live="polite" hidden></div>
-  <div class="app-shell">
-    <aside class="course-sidebar" aria-label="課程章節導覽">
-      <div class="sidebar-heading chapter-sidebar-heading"><div class="eyebrow">主要教學章節</div><h2>工程學習 <span class="muted"><span id="engineering-chapter-count">—</span> 章</span></h2><p id="engineering-sidebar-progress">新版進度讀取中…</p></div>
-      <nav id="engineering-list" aria-label="新版工程章節"></nav>
-      <div class="sidebar-bottom"><span id="revision-label">共用進度讀取中…</span><p>網頁與聊天讀取同一份<br><code>learning/progress.json</code></p></div>
-    </aside>
-    <main class="main-content" id="main-content" tabindex="-1">
-      <nav class="view-tabs" aria-label="學習頁面"><button type="button" data-view="engineering" aria-current="page">新版教學章節</button><button type="button" data-view="journal">學習紀錄</button><button type="button" data-view="versions">檔案版本</button></nav>
-      <div id="view-content" aria-busy="true"><section class="empty-state"><span class="loading-dot" aria-hidden="true"></span><h2>正在讀取你的學習進度</h2><p>準備課程、操作步驟與專案中的檔案紀錄。</p></section></div>
-    </main>
+<header class="top">
+  <div class="top-row">
+    <button class="nav-toggle" id="nav-toggle" aria-controls="course-nav"></button>
+    <div class="crumb">第 <span id="ch-num"></span> 章 <span id="ch-title"></span> › <b id="sec-title"></b></div>
+    <span class="badge" id="release-version">正式教材</span><a id="legacy-section" href="/legacy.html">原版操作／確認／筆記 →</a>
   </div>
-  <footer class="site-footer">01～03 改編自 SECourses 第一講 · 毫米方塊與 04～09 工程單元為自編補充 · 圖片只使用專案內的實際截圖</footer>
-  <dialog id="copy-dialog" aria-labelledby="copy-title"><h2 id="copy-title">複製文字</h2><p>選取下方文字後，按 Ctrl＋C 複製。</p><textarea id="copy-text" rows="10" readonly aria-label="要複製的文字"></textarea><form method="dialog"><button class="button primary" value="close">完成</button></form></dialog>
+</header>
+
+<div class="layout">
+<nav class="course-nav" id="course-nav" aria-label="章節">
+  <div class="nav-kicker">主要教學章節</div>
+  <div class="nav-title">工程學習<small id="nav-count"></small></div>
+  <div class="nav-total" id="nav-total"></div>
+  <div class="portal-tools"><span id="progress-status" role="status">共用進度讀取中…</span><button id="refresh-progress" type="button">重新讀取進度</button><a href="/legacy.html#journal">學習紀錄</a><a href="/legacy.html#versions">檔案版本</a><a href="/legacy.html">原版教材查閱</a></div><div id="chapters"></div>
+  <ul class="rail" id="rail" aria-label="章節編號"></ul>
+</nav>
+<div class="nav-backdrop" id="nav-backdrop"></div>
+
+<main class="wrap" id="lesson-main" tabindex="-1">
+  <section class="keypoint">
+    <h1 id="title"></h1>
+    <p id="key"></p>
+  </section>
+  <div class="terms" id="terms"><span class="label">名詞</span></div>
+  <div class="term-def" id="term-def" hidden></div>
+  <p class="scope" id="scope"></p>
+
+  <details id="toc-fold" open><summary>本節操作索引</summary><nav class="toc" id="toc" aria-label="本節小步"></nav></details>
+  <div id="steps"></div>
+  <nav class="pager" id="pager"></nav>
+</main>
+</div>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lb-caption" hidden>
+  <div class="lb-top">
+    <span id="lb-caption"></span>
+    <div class="spacer"></div>
+    <button id="lb-toggle">隱藏標註</button>
+    <a id="lb-raw" target="_blank" rel="noopener">開啟原始圖檔</a>
+    <button id="lb-close">關閉（Esc）</button>
+  </div>
+  <div class="lb-body" id="lb-body"></div>
+</div>
+<div class="toast" id="toast" role="status" hidden></div>
+
+<script src="/chapter-pages-v001.js" defer></script>
 </body>
 </html>

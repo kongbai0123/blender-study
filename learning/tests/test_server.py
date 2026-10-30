@@ -142,7 +142,7 @@ class DashboardTests(unittest.TestCase):
         self.assertEqual(data["journal"], [{"path": "learning/journal/test.md", "title": "Test journal"}])
         status, health, _ = self.request("GET", "/api/health")
         self.assertEqual(status, 200)
-        self.assertEqual(health, {"application": "blender-guided-learning", "project": str(self.root), "ready": True})
+        self.assertEqual(health, {"application": "blender-guided-learning", "project": str(self.root), "ready": True, "chapterPageSchema": 1, "requestQueueSize": 128})
         status, exported, headers = self.request("GET", "/api/export")
         self.assertEqual(status, 200)
         self.assertEqual(exported, data["progress"])

@@ -251,7 +251,7 @@ class Handler(BaseHTTPRequestHandler):
             self._check_host()
             route = unquote(urlsplit(self.path).path)
             if route == "/api/health":
-                return self.send_json({"application": "blender-guided-learning", "project": str(manage.PROJECT), "ready": True})
+                return self.send_json({"application": "blender-guided-learning", "project": str(manage.PROJECT), "ready": True, "chapterPageSchema": 1, "requestQueueSize": self.server.request_queue_size})
             if route == "/api/bootstrap":
                 catalog, progress = manage.load_state()
                 return self.send_json({"projectRoot": str(manage.PROJECT), "catalog": catalog,
@@ -262,7 +262,7 @@ class Handler(BaseHTTPRequestHandler):
             if route == "/api/export":
                 _, progress = manage.load_state()
                 return self.send_json(progress, extra={"Content-Disposition": 'attachment; filename="Blender-learning-progress.json"'})
-            if route in ("/", "/index.html", "/app.js", "/app.css", "/engineering-path.js"):
+            if route in ("/", "/index.html", "/legacy.html", "/chapter-pages-v001.js", "/chapter-pages-v001.css", "/app.js", "/app.css", "/engineering-path.js"):
                 return self.file(WEB / ("index.html" if route in ("/", "/index.html") else route[1:]))
             # 工程教材以固定網址提供目前版本；版本只在 manage.py 指定，歷史版本不經網頁提供。
             if route == "/engineering-path.json":
@@ -307,6 +307,8 @@ class Handler(BaseHTTPRequestHandler):
             raise RequestError("找不到這個頁面。", 404)
         except RequestError as error:
             self.send_json({"error": str(error)}, error.status)
+        except (BrokenPipeError, ConnectionResetError, ConnectionAbortedError):
+            return
         except (OSError, ValueError, KeyError, TypeError) as error:
             self.log_error("讀取學習資料失敗：%s", error)
             self.send_json({"error": "讀取學習資料失敗：" + str(error)}, 500)
@@ -395,6 +397,11 @@ class Handler(BaseHTTPRequestHandler):
             self.send_json({"error": "操作未寫入：" + str(error)}, 400)
 
 
+class LearningHTTPServer(ThreadingHTTPServer):
+    """Allow image bursts and page scripts to connect while earlier requests drain."""
+    request_queue_size = 128
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--port", type=int, default=8766)
@@ -403,7 +410,7 @@ def main():
     if not 1024 <= args.port <= 65535:
         parser.error("port must be between 1024 and 65535")
     manage.load_state()
-    server = ThreadingHTTPServer(("127.0.0.1", args.port), Handler)
+    server = LearningHTTPServer(("127.0.0.1", args.port), Handler)
     print(f"Blender learning: http://127.0.0.1:{args.port}/", flush=True)
     if args.open:
         webbrowser.open(f"http://127.0.0.1:{args.port}/")

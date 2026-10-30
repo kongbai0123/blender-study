@@ -1,0 +1,500 @@
+{
+  "kind": "redacted_public_derivative",
+  "redacted_public_derivative": true,
+  "originalAvailableInPublicPackage": false,
+  "source": {
+    "path": "learning/evidence/chapters/2026-10-30-efficient-plate-coordinates-v002/run.json",
+    "sha256": "23c6a41c901df02cd9792f25c74e8759c463dac1c77ad920fd14be8fedbfb1c2"
+  },
+  "blender": "5.2.1 LTS",
+  "records": [
+    {
+      "step": "ch05-05-03-03",
+      "slug": "first-cutter",
+      "action": "F3 Add Cube；N輸入10.1×10.1×8mm，Apply Scale，再G X -35mm、G Y 2mm。Plate已H隱藏。",
+      "observed": {
+        "cutters": [
+          {
+            "name": "Cut_01",
+            "mesh": "Cube.001",
+            "location": [
+              -35.0,
+              2.0,
+              0.0
+            ],
+            "dimensions": [
+              10.100000381469727,
+              10.100000381469727,
+              8.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          }
+        ],
+        "plate": {
+          "dimensions": [
+            96.0,
+            26.0,
+            4.0
+          ],
+          "hidden": true
+        },
+        "active": "Cut_01",
+        "blender": "5.2.1 LTS",
+        "unitScale": 0.0010000000474974513,
+        "savedScene": {
+          "path": "learning/evidence/chapters/2026-10-30-efficient-plate-coordinates-v002/demo-files/first-cutter-v001.blend",
+          "sha256": "22b0c69285635f48899ceb713e30efd1490f95e04fd34977ce82f730007babb1"
+        },
+        "physicalPrint": null,
+        "physicalMeasurement": null,
+        "physicalFit": null
+      },
+      "file": "ch05-05-03-03-01-first-cutter.png",
+      "sha256": "bb90040b4b3fd618d0619dad26a32ceba1c0fe848594d39be1aa3d6c84d3a36c",
+      "width": 1494,
+      "height": 1019
+    },
+    {
+      "step": "ch05-05-03-04",
+      "slug": "six-equal",
+      "action": "Shift+D X 14mm，立刻Shift+R四次；六件先同尺寸，中心X=-35,-21,-7,7,21,35mm，Y=2mm。",
+      "observed": {
+        "cutters": [
+          {
+            "name": "Cut_01",
+            "mesh": "Cube.001",
+            "location": [
+              -35.0,
+              2.0,
+              0.0
+            ],
+            "dimensions": [
+              10.100000381469727,
+              10.100000381469727,
+              8.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          {
+            "name": "Cut_01.001",
+            "mesh": "Cube.002",
+            "location": [
+              -21.0,
+              2.0,
+              0.0
+            ],
+            "dimensions": [
+              10.100000381469727,
+              10.100000381469727,
+              8.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          {
+            "name": "Cut_01.002",
+            "mesh": "Cube.003",
+            "location": [
+              -7.0,
+              2.0,
+              0.0
+            ],
+            "dimensions": [
+              10.100000381469727,
+              10.100000381469727,
+              8.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          {
+            "name": "Cut_01.003",
+            "mesh": "Cube.004",
+            "location": [
+              7.0,
+              2.0,
+              0.0
+            ],
+            "dimensions": [
+              10.100000381469727,
+              10.100000381469727,
+              8.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          {
+            "name": "Cut_01.004",
+            "mesh": "Cube.005",
+            "location": [
+              21.0,
+              2.0,
+              0.0
+            ],
+            "dimensions": [
+              10.100000381469727,
+              10.100000381469727,
+              8.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          {
+            "name": "Cut_01.005",
+            "mesh": "Cube.006",
+            "location": [
+              35.0,
+              2.0,
+              0.0
+            ],
+            "dimensions": [
+              10.100000381469727,
+              10.100000381469727,
+              8.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          }
+        ],
+        "plate": {
+          "dimensions": [
+            96.0,
+            26.0,
+            4.0
+          ],
+          "hidden": true
+        },
+        "active": "Cut_01.005",
+        "blender": "5.2.1 LTS",
+        "unitScale": 0.0010000000474974513,
+        "savedScene": {
+          "path": "learning/evidence/chapters/2026-10-30-efficient-plate-coordinates-v002/demo-files/six-equal-v001.blend",
+          "sha256": "d98e83b02bcfaf5d25583085d3cb908fa6c8c04e36518b7ca6e56571f60f3777"
+        },
+        "physicalPrint": null,
+        "physicalMeasurement": null,
+        "physicalFit": null
+      },
+      "file": "ch05-05-03-04-01-six-equal.png",
+      "sha256": "4cdaa3e8b4470d4296e1aadd168c42bfc4f0d688d82e88589343a3a963f88dce",
+      "width": 1494,
+      "height": 1019
+    },
+    {
+      "step": "ch05-05-03-04",
+      "slug": "first-three-widths",
+      "action": "複製完成後，逐一選第2、第3件，N的X/Y改10.2、10.3mm，Z保持8mm並Apply Scale。",
+      "observed": {
+        "cutters": [
+          {
+            "name": "Cut_01",
+            "mesh": "Cube.001",
+            "location": [
+              -35.0,
+              2.0,
+              0.0
+            ],
+            "dimensions": [
+              10.100000381469727,
+              10.100000381469727,
+              8.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          {
+            "name": "Cut_01.001",
+            "mesh": "Cube.002",
+            "location": [
+              -21.0,
+              2.0,
+              0.0
+            ],
+            "dimensions": [
+              10.199999809265137,
+              10.199999809265137,
+              8.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          {
+            "name": "Cut_01.002",
+            "mesh": "Cube.003",
+            "location": [
+              -7.0,
+              2.0,
+              0.0
+            ],
+            "dimensions": [
+              10.300000190734863,
+              10.300000190734863,
+              8.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          {
+            "name": "Cut_01.003",
+            "mesh": "Cube.004",
+            "location": [
+              7.0,
+              2.0,
+              0.0
+            ],
+            "dimensions": [
+              10.100000381469727,
+              10.100000381469727,
+              8.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          {
+            "name": "Cut_01.004",
+            "mesh": "Cube.005",
+            "location": [
+              21.0,
+              2.0,
+              0.0
+            ],
+            "dimensions": [
+              10.100000381469727,
+              10.100000381469727,
+              8.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          {
+            "name": "Cut_01.005",
+            "mesh": "Cube.006",
+            "location": [
+              35.0,
+              2.0,
+              0.0
+            ],
+            "dimensions": [
+              10.100000381469727,
+              10.100000381469727,
+              8.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          }
+        ],
+        "plate": {
+          "dimensions": [
+            96.0,
+            26.0,
+            4.0
+          ],
+          "hidden": true
+        },
+        "active": "Cut_01.002",
+        "blender": "5.2.1 LTS",
+        "unitScale": 0.0010000000474974513,
+        "savedScene": {
+          "path": "learning/evidence/chapters/2026-10-30-efficient-plate-coordinates-v002/demo-files/first-three-widths-v001.blend",
+          "sha256": "1501bfe23905da8a2eb7314619eb53ad7157dbc3ae8e63d4de738c019dce6b4f"
+        },
+        "physicalPrint": null,
+        "physicalMeasurement": null,
+        "physicalFit": null
+      },
+      "file": "ch05-05-03-04-02-first-three-widths.png",
+      "sha256": "53dd367a848d6b31fde39e62e7e40ed01bf3d8ce0b22bf0e4f592aa060f2d320",
+      "width": 1494,
+      "height": 1019
+    },
+    {
+      "step": "ch05-05-03-05",
+      "slug": "six-varied",
+      "action": "第4～6件X/Y為10.4、10.5、10.6mm；六件位置及Y=2mm與正文相同，Z=8mm、Scale1。尚未進行Boolean。",
+      "observed": {
+        "cutters": [
+          {
+            "name": "Cut_01",
+            "mesh": "Cube.001",
+            "location": [
+              -35.0,
+              2.0,
+              0.0
+            ],
+            "dimensions": [
+              10.100000381469727,
+              10.100000381469727,
+              8.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          {
+            "name": "Cut_01.001",
+            "mesh": "Cube.002",
+            "location": [
+              -21.0,
+              2.0,
+              0.0
+            ],
+            "dimensions": [
+              10.199999809265137,
+              10.199999809265137,
+              8.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          {
+            "name": "Cut_01.002",
+            "mesh": "Cube.003",
+            "location": [
+              -7.0,
+              2.0,
+              0.0
+            ],
+            "dimensions": [
+              10.300000190734863,
+              10.300000190734863,
+              8.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          {
+            "name": "Cut_01.003",
+            "mesh": "Cube.004",
+            "location": [
+              7.0,
+              2.0,
+              0.0
+            ],
+            "dimensions": [
+              10.399999618530273,
+              10.399999618530273,
+              8.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          {
+            "name": "Cut_01.004",
+            "mesh": "Cube.005",
+            "location": [
+              21.0,
+              2.0,
+              0.0
+            ],
+            "dimensions": [
+              10.5,
+              10.5,
+              8.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          {
+            "name": "Cut_01.005",
+            "mesh": "Cube.006",
+            "location": [
+              35.0,
+              2.0,
+              0.0
+            ],
+            "dimensions": [
+              10.600000381469727,
+              10.600000381469727,
+              8.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          }
+        ],
+        "plate": {
+          "dimensions": [
+            96.0,
+            26.0,
+            4.0
+          ],
+          "hidden": true
+        },
+        "active": "Cut_01.005",
+        "blender": "5.2.1 LTS",
+        "unitScale": 0.0010000000474974513,
+        "savedScene": {
+          "path": "learning/evidence/chapters/2026-10-30-efficient-plate-coordinates-v002/demo-files/six-varied-v001.blend",
+          "sha256": "6f08cfa2050e37b6b3bf7b86847f8644152c2fe852b425f0523dffb917299b2f"
+        },
+        "physicalPrint": null,
+        "physicalMeasurement": null,
+        "physicalFit": null
+      },
+      "file": "ch05-05-03-05-01-six-varied.png",
+      "sha256": "63cfd3666f7368534bf629e86c6941b43dc53e43540d6393df8dd3d2f9f8ccfe",
+      "width": 1494,
+      "height": 1019
+    }
+  ],
+  "physicalPrint": null,
+  "physicalMeasurement": null,
+  "physicalFit": null
+}

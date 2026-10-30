@@ -1,0 +1,35 @@
+{
+  "retrieved": "2026-10-30",
+  "installed": "Blender 5.2.1 LTS",
+  "keymap": "Blender default",
+  "sources": [
+    {
+      "url": "https://docs.blender.org/manual/en/latest/interface/keymap/blender_default.html",
+      "retrieved": "2026-10-30",
+      "documentation": "Blender 5.2 LTS latest manual",
+      "status": "retrieved",
+      "notes": "F2 rename, F3 search, F9 adjust last operation; N sidebar; default keymap"
+    },
+    {
+      "url": "https://docs.blender.org/manual/en/latest/interface/operators.html",
+      "retrieved": "2026-10-30",
+      "documentation": "Blender 5.2 LTS latest manual",
+      "status": "retrieved",
+      "notes": "F3 menu search; Enter confirm, Esc cancel"
+    },
+    {
+      "url": "https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/array.html",
+      "retrieved": "2026-10-30",
+      "documentation": "Blender 5.2 LTS latest manual",
+      "status": "retrieved",
+      "notes": "Array supports repeated geometry; only use for identical dimensions, not unequal clearance cutters"
+    },
+    {
+      "url": "https://docs.blender.org/manual/en/latest/scene_layout/object/editing/duplicate.html",
+      "retrieved": "2026-10-30",
+      "documentation": "Blender 5.2 LTS latest manual",
+      "status": "retrieved",
+      "notes": "Shift+D creates an independent mesh copy but may share material data"
+    }
+  ]
+}

@@ -19,7 +19,7 @@ if (Test-Path -LiteralPath $taskRuntimePath) {
 foreach ($candidatePort in $taskCandidatePorts) {
     try {
         $health = Get-LearningJson -TaskUri "http://127.0.0.1:$candidatePort/api/health" -TaskTimeoutSec 1
-        if ($health.application -eq 'blender-guided-learning' -and $health.project -eq $taskProjectRoot -and (Test-LearningDefinitions -TaskLearningRoot $PSScriptRoot -TaskPort $candidatePort)) {
+        if ($health.application -eq 'blender-guided-learning' -and $health.project -eq $taskProjectRoot -and $health.chapterPageSchema -eq 1 -and (Test-LearningDefinitions -TaskLearningRoot $PSScriptRoot -TaskPort $candidatePort)) {
             $entryUrl = "http://127.0.0.1:$candidatePort/"
             if (-not $NoBrowser) { Start-Process $entryUrl }
             Write-Output $entryUrl

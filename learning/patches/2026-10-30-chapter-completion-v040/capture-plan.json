@@ -1,0 +1,304 @@
+{
+  "jobs": [
+    {
+      "stepId": "ch01-01-04-03",
+      "section": "01-04",
+      "title": "登記 v001 檢查點",
+      "source": "learning/evidence/01/2026-10-22-lesson01-demo-v001/demo-files/u01_basics_v001.blend",
+      "sourceSha256": "7f474fe084916fb96c91e7cb0d35248bb68ae6ada9fcdb5a542b11a96024af3f",
+      "role": "version_reference",
+      "purpose": "核對另存版本的場景與檔名；登記動作在教學頁完成，本圖不代表已登記。",
+      "view": "NUMPAD_1"
+    },
+    {
+      "stepId": "ch01-01-09-02",
+      "section": "01-09",
+      "title": "登記 v002",
+      "source": "learning/evidence/01/2026-10-22-lesson01-demo-v001/demo-files/u01_basics_v002.blend",
+      "sourceSha256": "7fe50641bcd45658e077ae0dad66bde9c25313082038f7ff42142b8d36df1c96",
+      "role": "version_reference",
+      "purpose": "核對另存版本的場景與檔名；登記動作在教學頁完成，本圖不代表已登記。",
+      "view": "NUMPAD_3"
+    },
+    {
+      "stepId": "ch02-04-01-01",
+      "section": "02-02",
+      "title": "記下列印條件",
+      "source": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/demo-files/u05_hole_plate_v001.blend",
+      "sourceSha256": "10bfffd651d1583d8704164288aa0757fa617f67a30e21176d7fc892aef3e692",
+      "role": "digital_preparation",
+      "purpose": "辨認試片、量測方向與名義尺寸；列印、卡尺量測及試配尚未執行。",
+      "view": "NUMPAD_7"
+    },
+    {
+      "stepId": "ch02-04-01-02",
+      "section": "02-02",
+      "title": "確認量具",
+      "source": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/demo-files/u05_hole_plate_v001.blend",
+      "sourceSha256": "10bfffd651d1583d8704164288aa0757fa617f67a30e21176d7fc892aef3e692",
+      "role": "digital_preparation",
+      "purpose": "辨認試片、量測方向與名義尺寸；列印、卡尺量測及試配尚未執行。",
+      "view": "NUMPAD_1"
+    },
+    {
+      "stepId": "ch02-05-01-01",
+      "section": "02-03",
+      "title": "寫下間隙公式",
+      "source": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/demo-files/u05_hole_plate_v001.blend",
+      "sourceSha256": "10bfffd651d1583d8704164288aa0757fa617f67a30e21176d7fc892aef3e692",
+      "role": "digital_preparation",
+      "purpose": "辨認試片、量測方向與名義尺寸；列印、卡尺量測及試配尚未執行。",
+      "view": "NUMPAD_3"
+    },
+    {
+      "stepId": "ch02-05-01-02",
+      "section": "02-03",
+      "title": "準備自己的紀錄表",
+      "source": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/demo-files/u05_hole_plate_v001.blend",
+      "sourceSha256": "10bfffd651d1583d8704164288aa0757fa617f67a30e21176d7fc892aef3e692",
+      "role": "digital_preparation",
+      "purpose": "辨認試片、量測方向與名義尺寸；列印、卡尺量測及試配尚未執行。",
+      "view": "NUMPAD_7"
+    },
+    {
+      "stepId": "ch03-02-01-01",
+      "section": "03-01",
+      "title": "分清範例與自己的檔",
+      "source": "learning/evidence/04/2026-10-22-lesson04-demo-v001/demo-files/u04_box_v001.blend",
+      "sourceSha256": "b918ee87d26e289f4c8a2f6633beceb854c7d0511e3eddcc969a0696afcd2530",
+      "role": "digital_preparation",
+      "purpose": "核對本步關聯場景的名義幾何與來源副本；結果不是實體量測或已登記紀錄。",
+      "view": "NUMPAD_1"
+    },
+    {
+      "stepId": "ch04-03-01-03",
+      "section": "04-01",
+      "title": "記下來源版本",
+      "source": "learning/evidence/04/2026-10-22-lesson04-demo-v001/demo-files/u04_box_v001.blend",
+      "sourceSha256": "b918ee87d26e289f4c8a2f6633beceb854c7d0511e3eddcc969a0696afcd2530",
+      "role": "version_reference",
+      "purpose": "核對本步關聯場景的名義幾何與來源副本；結果不是實體量測或已登記紀錄。",
+      "view": "NUMPAD_3"
+    },
+    {
+      "stepId": "ch06-04-07-03",
+      "section": "06-01",
+      "title": "登記並在切片軟體核對",
+      "source": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/demo-files/u05_hole_plate_v001.blend",
+      "sourceSha256": "10bfffd651d1583d8704164288aa0757fa617f67a30e21176d7fc892aef3e692",
+      "role": "version_reference",
+      "purpose": "辨認試片、量測方向與名義尺寸；列印、卡尺量測及試配尚未執行。",
+      "view": "NUMPAD_7"
+    },
+    {
+      "stepId": "ch06-05-04-05",
+      "section": "06-02",
+      "title": "登記兩份 STL",
+      "source": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/demo-files/u05_hole_plate_v001.blend",
+      "sourceSha256": "10bfffd651d1583d8704164288aa0757fa617f67a30e21176d7fc892aef3e692",
+      "role": "version_reference",
+      "purpose": "辨認試片、量測方向與名義尺寸；列印、卡尺量測及試配尚未執行。",
+      "view": "NUMPAD_1"
+    },
+    {
+      "stepId": "ch06-fit-01",
+      "section": "06-03",
+      "title": "切片並列印試片",
+      "source": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/demo-files/u05_hole_plate_v001.blend",
+      "sourceSha256": "10bfffd651d1583d8704164288aa0757fa617f67a30e21176d7fc892aef3e692",
+      "role": "physical_preparation",
+      "purpose": "辨認試片、量測方向與名義尺寸；列印、卡尺量測及試配尚未執行。",
+      "view": "NUMPAD_3"
+    },
+    {
+      "stepId": "ch06-fit-02",
+      "section": "06-03",
+      "title": "量測插銷與六孔",
+      "source": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/demo-files/u05_hole_plate_v001.blend",
+      "sourceSha256": "10bfffd651d1583d8704164288aa0757fa617f67a30e21176d7fc892aef3e692",
+      "role": "physical_preparation",
+      "purpose": "辨認試片、量測方向與名義尺寸；列印、卡尺量測及試配尚未執行。",
+      "view": "NUMPAD_7"
+    },
+    {
+      "stepId": "ch06-fit-03",
+      "section": "06-03",
+      "title": "逐孔試插",
+      "source": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/demo-files/u05_hole_plate_v001.blend",
+      "sourceSha256": "10bfffd651d1583d8704164288aa0757fa617f67a30e21176d7fc892aef3e692",
+      "role": "physical_preparation",
+      "purpose": "辨認試片、量測方向與名義尺寸；列印、卡尺量測及試配尚未執行。",
+      "view": "NUMPAD_1"
+    },
+    {
+      "stepId": "ch06-fit-04",
+      "section": "06-03",
+      "title": "選定自己的總間隙",
+      "source": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/demo-files/u05_hole_plate_v001.blend",
+      "sourceSha256": "10bfffd651d1583d8704164288aa0757fa617f67a30e21176d7fc892aef3e692",
+      "role": "physical_preparation",
+      "purpose": "辨認試片、量測方向與名義尺寸；列印、卡尺量測及試配尚未執行。",
+      "view": "NUMPAD_3"
+    },
+    {
+      "stepId": "ch06-04-08-01",
+      "section": "06-04",
+      "title": "列印原盒",
+      "source": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/demo-files/u05_hole_plate_v001.blend",
+      "sourceSha256": "10bfffd651d1583d8704164288aa0757fa617f67a30e21176d7fc892aef3e692",
+      "role": "physical_preparation",
+      "purpose": "辨認試片、量測方向與名義尺寸；列印、卡尺量測及試配尚未執行。",
+      "view": "NUMPAD_7"
+    },
+    {
+      "stepId": "ch06-04-08-02",
+      "section": "06-04",
+      "title": "量測尺寸",
+      "source": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/demo-files/u05_hole_plate_v001.blend",
+      "sourceSha256": "10bfffd651d1583d8704164288aa0757fa617f67a30e21176d7fc892aef3e692",
+      "role": "physical_preparation",
+      "purpose": "辨認試片、量測方向與名義尺寸；列印、卡尺量測及試配尚未執行。",
+      "view": "NUMPAD_1"
+    },
+    {
+      "stepId": "ch06-04-08-03",
+      "section": "06-04",
+      "title": "記錄差值",
+      "source": "learning/evidence/05/2026-10-22-lesson05-holes-demo-v002/demo-files/u05_hole_plate_v001.blend",
+      "sourceSha256": "10bfffd651d1583d8704164288aa0757fa617f67a30e21176d7fc892aef3e692",
+      "role": "physical_preparation",
+      "purpose": "辨認試片、量測方向與名義尺寸；列印、卡尺量測及試配尚未執行。",
+      "view": "NUMPAD_3"
+    },
+    {
+      "stepId": "ch07-setup-01",
+      "section": "07-01",
+      "title": "取得安裝檔並核對",
+      "source": "learning/evidence/04/2026-10-22-lesson04-demo-v001/demo-files/u04_box_v001.blend",
+      "sourceSha256": "b918ee87d26e289f4c8a2f6633beceb854c7d0511e3eddcc969a0696afcd2530",
+      "role": "digital_preparation",
+      "purpose": "核對本步關聯場景的名義幾何與來源副本；結果不是實體量測或已登記紀錄。",
+      "view": "NUMPAD_7"
+    },
+    {
+      "stepId": "ch07-setup-03",
+      "section": "07-01",
+      "title": "建立工作區與毫米草圖檔",
+      "source": "learning/evidence/04/2026-10-22-lesson04-demo-v001/demo-files/u04_box_v001.blend",
+      "sourceSha256": "b918ee87d26e289f4c8a2f6633beceb854c7d0511e3eddcc969a0696afcd2530",
+      "role": "digital_preparation",
+      "purpose": "核對本步關聯場景的名義幾何與來源副本；結果不是實體量測或已登記紀錄。",
+      "view": "NUMPAD_1"
+    },
+    {
+      "stepId": "ch08-param-plan",
+      "section": "08-01",
+      "title": "安排單一尺寸來源",
+      "source": "learning/evidence/parametric/2026-10-27-manual-lid-driver-y-v001/demo-files/manual_lid_shape_xy_driver_v001.blend",
+      "sourceSha256": "ddae8a3d3745146501d25527354352e6b71431b837c78c8269a43dc5e6a3dec6",
+      "role": "digital_preparation",
+      "purpose": "從參數盒副本辨認尺寸來源與盒蓋關係；實體紀錄表保持空白。",
+      "view": "NUMPAD_3"
+    },
+    {
+      "stepId": "ch09-06-03-03",
+      "section": "09-03",
+      "title": "保留試配欄位",
+      "source": "learning/evidence/04/2026-10-22-lesson04-demo-v001/demo-files/u04_box_v001.blend",
+      "sourceSha256": "b918ee87d26e289f4c8a2f6633beceb854c7d0511e3eddcc969a0696afcd2530",
+      "role": "digital_preparation",
+      "purpose": "核對本步關聯場景的名義幾何與來源副本；結果不是實體量測或已登記紀錄。",
+      "view": "NUMPAD_7"
+    },
+    {
+      "stepId": "ch10-07-01-02",
+      "section": "10-01",
+      "title": "辨認參數定義",
+      "source": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/demo-files/u07_cantilever_snap_v001.blend",
+      "sourceSha256": "5fec09b934f2935839d615376beaf598962d47f1b7ac2504f2666c7880a26305",
+      "role": "digital_preparation",
+      "purpose": "從卡扣幾何辨認梁長、方向與根部；未驗證材料、應變或強度。",
+      "view": "NUMPAD_1"
+    },
+    {
+      "stepId": "ch10-07-01-03",
+      "section": "10-01",
+      "title": "閱讀估算式",
+      "source": "learning/evidence/07/2026-10-25-lesson07-snap-demo-v001/demo-files/u07_cantilever_snap_v001.blend",
+      "sourceSha256": "5fec09b934f2935839d615376beaf598962d47f1b7ac2504f2666c7880a26305",
+      "role": "digital_preparation",
+      "purpose": "從卡扣幾何辨認梁長、方向與根部；未驗證材料、應變或強度。",
+      "view": "NUMPAD_3"
+    },
+    {
+      "stepId": "ch11-08-02-01",
+      "section": "11-04",
+      "title": "選定路線與參數",
+      "source": "learning/evidence/04/2026-10-22-lesson04-demo-v001/demo-files/u04_box_v001.blend",
+      "sourceSha256": "b918ee87d26e289f4c8a2f6633beceb854c7d0511e3eddcc969a0696afcd2530",
+      "role": "digital_preparation",
+      "purpose": "檢視規格對應的名義幾何；不代表實際五金、安裝、旋合或強度合格。",
+      "view": "NUMPAD_7"
+    },
+    {
+      "stepId": "ch11-08-04-01",
+      "section": "11-06",
+      "title": "記下五金規格",
+      "source": "learning/evidence/08/2026-10-28-four-insert-boss-gui-v001/demo-files/u11_four_insert_boss_box_v001.blend",
+      "sourceSha256": "70f6687edc450438d21ada9b61b9295cf24079c64884947b9c4081de88e23462",
+      "role": "digital_preparation",
+      "purpose": "檢視規格對應的名義幾何；不代表實際五金、安裝、旋合或強度合格。",
+      "view": "NUMPAD_1"
+    },
+    {
+      "stepId": "ch12-dimension-chain",
+      "section": "12-01",
+      "title": "從尺寸鏈查設計變更",
+      "source": "learning/evidence/parametric/2026-10-27-manual-lid-driver-y-v001/demo-files/manual_lid_shape_xy_driver_v001.blend",
+      "sourceSha256": "ddae8a3d3745146501d25527354352e6b71431b837c78c8269a43dc5e6a3dec6",
+      "role": "digital_preparation",
+      "purpose": "從參數盒副本辨認尺寸來源與盒蓋關係；實體紀錄表保持空白。",
+      "view": "NUMPAD_3"
+    },
+    {
+      "stepId": "ch12-09-01-01",
+      "section": "12-02",
+      "title": "合併實測紀錄",
+      "source": "learning/evidence/parametric/2026-10-27-manual-lid-driver-y-v001/demo-files/manual_lid_shape_xy_driver_v001.blend",
+      "sourceSha256": "ddae8a3d3745146501d25527354352e6b71431b837c78c8269a43dc5e6a3dec6",
+      "role": "digital_preparation",
+      "purpose": "從參數盒副本辨認尺寸來源與盒蓋關係；實體紀錄表保持空白。",
+      "view": "NUMPAD_7"
+    },
+    {
+      "stepId": "ch12-09-02-01",
+      "section": "12-03",
+      "title": "寫出補償值",
+      "source": "learning/evidence/parametric/2026-10-27-manual-lid-driver-y-v001/demo-files/manual_lid_shape_xy_driver_v001.blend",
+      "sourceSha256": "ddae8a3d3745146501d25527354352e6b71431b837c78c8269a43dc5e6a3dec6",
+      "role": "digital_preparation",
+      "purpose": "從參數盒副本辨認尺寸來源與盒蓋關係；實體紀錄表保持空白。",
+      "view": "NUMPAD_1"
+    },
+    {
+      "stepId": "ch12-09-03-01",
+      "section": "12-04",
+      "title": "組裝所有零件",
+      "source": "learning/evidence/parametric/2026-10-27-manual-lid-driver-y-v001/demo-files/manual_lid_shape_xy_driver_v001.blend",
+      "sourceSha256": "ddae8a3d3745146501d25527354352e6b71431b837c78c8269a43dc5e6a3dec6",
+      "role": "digital_preparation",
+      "purpose": "從參數盒副本辨認尺寸來源與盒蓋關係；實體紀錄表保持空白。",
+      "view": "NUMPAD_3"
+    },
+    {
+      "stepId": "ch12-09-03-02",
+      "section": "12-04",
+      "title": "核對檔案關聯",
+      "source": "learning/evidence/parametric/2026-10-27-manual-lid-driver-y-v001/demo-files/manual_lid_shape_xy_driver_v001.blend",
+      "sourceSha256": "ddae8a3d3745146501d25527354352e6b71431b837c78c8269a43dc5e6a3dec6",
+      "role": "digital_preparation",
+      "purpose": "從參數盒副本辨認尺寸來源與盒蓋關係；實體紀錄表保持空白。",
+      "view": "NUMPAD_7"
+    }
+  ]
+}
